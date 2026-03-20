@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-method",
+  "type": "registry:ui",
+  "title": "Method",
+  "description": "Method icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/method/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "method",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

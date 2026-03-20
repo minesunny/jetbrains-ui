@@ -1,0 +1,14 @@
+{
+  "name": "icons-nodes-types",
+  "type": "registry:ui",
+  "title": "Nodes Icons Types",
+  "description": "Shared types and utilities for Nodes icon components.",
+  "files": [
+    {
+      "path": "registry/icons/nodes/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/types.ts",
+      "content": "export type IconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';\nexport type IconMode = 'light' | 'dark';\n\nexport interface IconProps {\n  size?: IconSize;\n  mode?: IconMode;\n  className?: string;\n  /** Accessible label for the icon */\n  'aria-label'?: string;\n  /** Title element for the icon tooltip */\n  title?: string;\n  [key: string]: any;\n}\n\nexport interface SvgProps {\n  size: number;\n  className?: string;\n  title?: string;\n  role?: string;\n  'aria-label'?: string;\n  'aria-hidden'?: boolean;\n}\n\nexport const sizeMap: Record<IconSize, number> = {\n  xs: 12,\n  sm: 14,\n  md: 16,\n  lg: 20,\n  xl: 24,\n};\n\nexport const iconNames = [\n  'abstract-exception',\n  'add-any',\n  'alias',\n  'annotation',\n  'annotation-folder',\n  'class',\n  'class-abstract',\n  'class-anonymous',\n  'class-initializer',\n  'config',\n  'constant',\n  'controller',\n  'copy-of-folder',\n  'data-column',\n  'data-tables',\n  'desktop',\n  'edit-folder',\n  'enum',\n  'error-introduction',\n  'exception',\n  'exclude-root',\n  'excluded-generated',\n  'favorites',\n  'field',\n  'folder',\n  'function',\n  'generated',\n  'generated-source',\n  'generated-test-root',\n  'gvariable',\n  'home-folder',\n  'idea-project',\n  'include',\n  'interface',\n  'jdk',\n  'lambda',\n  'library',\n  'library-folder',\n  'local-scope',\n  'method',\n  'method-abstract',\n  'method-reference',\n  'model-class',\n  'module',\n  'module-group',\n  'module-java',\n  'module8x8',\n  'new-folder',\n  'package',\n  'parameter',\n  'plugin',\n  'pp-web',\n  'property',\n  'record',\n  'resource-bundle',\n  'resources-root',\n  'server',\n  'servlet',\n  'shared-scope',\n  'source-root',\n  'star',\n  'star-empty',\n  'static',\n  'template',\n  'test',\n  'test-group',\n  'test-ignored',\n  'test-resources-root',\n  'test-root',\n  'test-source-folder',\n  'text-area',\n  'type',\n  'unloaded-module',\n  'up-folder',\n  'variable',\n  'warning-introduction',\n  'web-resources',\n] as const;\n\nexport type IconName = (typeof iconNames)[number];"
+    }
+  ]
+}

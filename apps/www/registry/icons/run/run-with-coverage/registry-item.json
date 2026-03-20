@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-run-with-coverage",
+  "type": "registry:ui",
+  "title": "Run With Coverage",
+  "description": "Run With Coverage icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/run-with-coverage/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/run-with-coverage/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run-with-coverage",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

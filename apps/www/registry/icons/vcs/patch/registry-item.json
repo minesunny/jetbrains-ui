@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-patch",
+  "type": "registry:ui",
+  "title": "Patch",
+  "description": "Patch icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/patch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/patch/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "patch",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

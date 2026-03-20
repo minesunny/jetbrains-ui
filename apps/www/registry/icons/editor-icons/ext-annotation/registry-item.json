@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-ext-annotation",
+  "type": "registry:ui",
+  "title": "Ext Annotation",
+  "description": "Ext Annotation icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/ext-annotation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/ext-annotation/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ext-annotation",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

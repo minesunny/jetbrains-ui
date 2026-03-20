@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-changed-file",
+  "type": "registry:ui",
+  "title": "Changed File",
+  "description": "Changed File icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/changed-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/changed-file/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "changed-file",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

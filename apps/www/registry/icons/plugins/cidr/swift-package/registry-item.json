@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-swift-package",
+  "type": "registry:ui",
+  "title": "Swift Package",
+  "description": "Swift Package icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/swift-package/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/swift-package/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "swift-package",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

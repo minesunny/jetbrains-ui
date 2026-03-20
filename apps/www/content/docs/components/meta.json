@@ -1,0 +1,23 @@
+{
+  "title": "Components",
+  "description": "Components styled with JetBrains UI design system.",
+  "icon": "Component",
+  "root": true,
+  "pages": [
+    "---Components---",
+    "alert",
+    "button",
+    "checkbox",
+    "dropdown-menu",
+    "context-menu",
+    "input",
+    "radio",
+    "scroll-area",
+    "resizable",
+    "combo-box",
+    "tabs",
+    "tree",
+    "toggle",
+    "tooltip"
+  ]
+}

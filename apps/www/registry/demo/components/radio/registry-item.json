@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-radio",
+  "type": "registry:ui",
+  "title": "Radio Demo",
+  "description": "单选按钮组件的演示",
+  "dependencies": ["@radix-ui/react-radio-group"],
+  "registryDependencies": ["@jetbrains-ui/radio"],
+  "files": [
+    {
+      "path": "registry/demo/components/radio/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/radio.tsx"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "RadioGroup": {
+        "disabled": {
+          "value": false
+        },
+        "invalid": {
+          "value": false
+        }
+      }
+    }
+  }
+}

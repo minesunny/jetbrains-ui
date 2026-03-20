@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-ai-assistant-tool-window",
+  "type": "registry:ui",
+  "title": "Ai Assistant Tool Window",
+  "description": "Ai Assistant Tool Window icon from General Tool Windows category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/ai-assistant-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/ai-assistant-tool-window/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ai-assistant-tool-window",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

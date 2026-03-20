@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-column-gold-key-dot",
+  "type": "registry:ui",
+  "title": "Column Gold Key Dot",
+  "description": "Column Gold Key Dot icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/column-gold-key-dot/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/column-gold-key-dot/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "column-gold-key-dot",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

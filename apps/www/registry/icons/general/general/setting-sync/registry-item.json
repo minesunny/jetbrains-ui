@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-setting-sync",
+  "type": "registry:ui",
+  "title": "Setting Sync",
+  "description": "Setting Sync icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/setting-sync/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/setting-sync/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "setting-sync",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

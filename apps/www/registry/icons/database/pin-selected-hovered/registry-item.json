@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-pin-selected-hovered",
+  "type": "registry:ui",
+  "title": "Pin Selected Hovered",
+  "description": "Pin Selected Hovered icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/pin-selected-hovered/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/pin-selected-hovered/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "pin-selected-hovered",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

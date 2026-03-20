@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-kubernetes-helm-notes",
+  "type": "registry:ui",
+  "title": "Helm Notes",
+  "description": "Helm Notes icon from Plugins Kubernetes category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-notes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-notes/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type HelmNotesProps = IconProps;\n\nconst HelmNotesLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12 7.5a.5.5 0 0 0-1 0v.535a3.5 3.5 0 0 0-1.596.662l-.379-.379a.5.5 0 0 0-.707.707l.379.379A3.5 3.5 0 0 0 8.035 11H7.5a.5.5 0 0 0 0 1h.535c.085.593.319 1.138.662 1.596l-.379.379a.5.5 0 1 0 .707.707l.379-.379a3.5 3.5 0 0 0 1.596.662v.535a.5.5 0 0 0 1 0v-.535a3.5 3.5 0 0 0 1.596-.662l.379.379a.5.5 0 0 0 .707-.707l-.379-.379A3.5 3.5 0 0 0 14.965 12h.535a.5.5 0 0 0 0-1h-.535a3.5 3.5 0 0 0-.662-1.596l.379-.379a.5.5 0 0 0-.707-.707l-.379.379A3.5 3.5 0 0 0 12 8.035zm2 4a2.49 2.49 0 0 0-1.121-2.086A2.5 2.5 0 1 0 14 11.5\"\n      fill=\"#039BA1\"\n    />\n    <path\n      d=\"M3 5.414V13a2 2 0 0 0 2 2h2.257A5.5 5.5 0 0 1 13 6.207V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3 5.414V13a2 2 0 0 0 2 2h2.257a5.5 5.5 0 0 1-.657-1H5a1 1 0 0 1-1-1V6h2a2 2 0 0 0 2-2V2h3a1 1 0 0 1 1 1v3.022q.516.048 1 .185V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414m4-3L4.414 5H6a1 1 0 0 0 1-1z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst HelmNotesDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12 7.5a.5.5 0 0 0-1 0v.535a3.5 3.5 0 0 0-1.596.662l-.379-.379a.5.5 0 0 0-.707.707l.379.379A3.5 3.5 0 0 0 8.035 11H7.5a.5.5 0 0 0 0 1h.535c.085.593.319 1.138.662 1.596l-.379.379a.5.5 0 1 0 .707.707l.379-.379a3.5 3.5 0 0 0 1.596.662v.535a.5.5 0 0 0 1 0v-.535a3.5 3.5 0 0 0 1.596-.662l.379.379a.5.5 0 0 0 .707-.707l-.379-.379A3.5 3.5 0 0 0 14.965 12h.535a.5.5 0 0 0 0-1h-.535a3.5 3.5 0 0 0-.662-1.596l.379-.379a.5.5 0 0 0-.707-.707l-.379.379A3.5 3.5 0 0 0 12 8.035zm2 4a2.49 2.49 0 0 0-1.121-2.086A2.5 2.5 0 1 0 14 11.5\"\n      fill=\"#24A394\"\n    />\n    <path\n      d=\"M3 5.414V13a2 2 0 0 0 2 2h2.257A5.5 5.5 0 0 1 13 6.207V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414\"\n      fill=\"#43454A\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3 5.414V13a2 2 0 0 0 2 2h2.257a5.5 5.5 0 0 1-.657-1H5a1 1 0 0 1-1-1V6h2a2 2 0 0 0 2-2V2h3a1 1 0 0 1 1 1v3.022q.516.048 1 .185V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414m4-3L4.414 5H6a1 1 0 0 0 1-1z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const HelmNotes: React.FC<HelmNotesProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? HelmNotesLight : HelmNotesDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "helm-notes",
+      "icon",
+      "plugins",
+      "kubernetes",
+      "jetbrains"
+    ]
+  }
+}

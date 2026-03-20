@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-data-share",
+  "type": "registry:ui",
+  "title": "Data Share",
+  "description": "Data Share icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/data-share/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/data-share/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "data-share",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

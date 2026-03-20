@@ -1,0 +1,26 @@
+{
+  "name": "icons-nodes-library",
+  "type": "registry:ui",
+  "title": "Library",
+  "description": "Library icon from Nodes category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/library/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/library/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type LibraryProps = IconProps;\n\nconst LibraryLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11 6h3a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1zm-1-3H7v10h3zm1 4v6h3V7zM6 5v8H3V5z\"\n      fill=\"#6C707E\"\n    />\n    <path d=\"M7 3h3v10H7zM11 13V7h3v6zM6 13V5H3v8z\" fill=\"#EBECF0\" />\n  </svg>\n);\n\nconst LibraryDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11 6h3a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1zm-1-3H7v10h3zm1 4v6h3V7zM6 5v8H3V5z\"\n      fill=\"#CED0D6\"\n    />\n    <path d=\"M7 3h3v10H7zM11 13V7h3v6zM6 13V5H3v8z\" fill=\"#43454A\" />\n  </svg>\n);\n\nexport const Library: FC<LibraryProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? LibraryLight : LibraryDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "library",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

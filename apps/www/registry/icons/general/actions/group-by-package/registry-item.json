@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-actions-group-by-package",
+  "type": "registry:ui",
+  "title": "Group By Package",
+  "description": "Group By Package icon from General Actions category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/group-by-package/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-package/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "group-by-package",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-editor-left-align",
+  "type": "registry:ui",
+  "title": "Left Align",
+  "description": "Left Align icon from General Editor category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/editor/left-align/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/left-align/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "left-align",
+      "icon",
+      "general",
+      "editor",
+      "jetbrains"
+    ]
+  }
+}

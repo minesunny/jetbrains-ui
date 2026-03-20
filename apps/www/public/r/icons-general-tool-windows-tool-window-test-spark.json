@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-tool-window-test-spark",
+  "type": "registry:ui",
+  "title": "Tool Window Test Spark",
+  "description": "Tool Window Test Spark icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/tool-window-test-spark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-test-spark/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ToolWindowTestSparkProps = IconProps;\n\nconst ToolWindowTestSparkLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"m8.322 4.475.177.513.498-.218 4.009-1.767-1.72 4.01-.212.494.506.177 1.728.603-1.671 3.49-.149.312.239.249 1.106 1.162H2.5V3.166l1.162 1.107.25.239.31-.149 3.487-1.67z\"\n      stroke=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ToolWindowTestSparkDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"m8.322 4.475.177.513.498-.218 4.009-1.767-1.72 4.01-.212.494.506.177 1.728.603-1.671 3.49-.149.312.239.249 1.106 1.162H2.5V3.166l1.162 1.107.25.239.31-.149 3.487-1.67z\"\n      stroke=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const ToolWindowTestSpark: FC<ToolWindowTestSparkProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? ToolWindowTestSparkLight : ToolWindowTestSparkDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tool-window-test-spark",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

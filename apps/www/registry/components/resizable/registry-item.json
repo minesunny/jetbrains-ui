@@ -1,0 +1,38 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "resizable",
+  "type": "registry:ui",
+  "title": "Resizable",
+  "description": "Composable resizable panel layout with collapsible panels and min-size scroll fallback.",
+  "dependencies": [
+    "react-resizable-panels"
+  ],
+  "registryDependencies": [
+    "utils",
+    "scroll-area"
+  ],
+  "files": [
+    {
+      "path": "registry/components/resizable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/resizable.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "resizable",
+      "collapsible",
+      "layout",
+      "component"
+    ],
+    "category": "layout",
+    "docs": {
+      "description": "Composable resizable panel layout with collapsible panels and min-size scroll fallback.",
+      "features": [
+        "Collapsible panels with remembered size",
+        "Min-size aware scroll fallback",
+        "Composable API"
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-apache-derby",
+  "type": "registry:ui",
+  "title": "Apache Derby",
+  "description": "Apache Derby icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/apache-derby/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/apache-derby/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "apache-derby",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

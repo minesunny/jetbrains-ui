@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-inline-exact-words",
+  "type": "registry:ui",
+  "title": "Exact Words",
+  "description": "Exact Words icon from General Inline category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/inline/exact-words/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/exact-words/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ExactWordsProps = IconProps;\n\nconst ExactWordsLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"m2.703 3.9 2.34 7.313L7.273 3.9H8.61l2.262 7.313L13.156 3.9h1.359L11.543 13h-1.384L7.922 5.779 5.649 13H4.27L1.298 3.9z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ExactWordsDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"m2.703 3.9 2.34 7.313L7.273 3.9H8.61l2.262 7.313L13.156 3.9h1.359L11.543 13h-1.384L7.922 5.779 5.649 13H4.27L1.298 3.9z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const ExactWords: FC<ExactWordsProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ExactWordsLight : ExactWordsDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "exact-words",
+      "icon",
+      "general",
+      "inline",
+      "jetbrains"
+    ]
+  }
+}

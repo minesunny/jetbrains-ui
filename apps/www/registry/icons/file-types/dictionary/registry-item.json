@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-dictionary",
+  "type": "registry:ui",
+  "title": "Dictionary",
+  "description": "Dictionary icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/dictionary/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/dictionary/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dictionary",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

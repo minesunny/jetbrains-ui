@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-zoom-in",
+  "type": "registry:ui",
+  "title": "Zoom In",
+  "description": "Zoom In icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/zoom-in/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/zoom-in/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "zoom-in",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

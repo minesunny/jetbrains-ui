@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-tasks",
+  "type": "registry:ui",
+  "title": "Plugins Tasks Icons",
+  "description": "All 2 icons from the Plugins Tasks category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/tasks/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/tasks/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/tasks/start-timer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/tasks/start-timer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/tasks/stop-timer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/tasks/stop-timer/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "plugins",
+      "tasks",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-debug-target-controller",
+  "type": "registry:ui",
+  "title": "Debug Target Controller",
+  "description": "Debug Target Controller icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/debug-target-controller/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/debug-target-controller/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "debug-target-controller",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-setting-sync",
+  "type": "registry:ui",
+  "title": "General Setting Sync Icons",
+  "description": "All 5 icons from the General Setting Sync category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/setting-sync/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/index.ts"
+    },
+    {
+      "path": "registry/icons/general/setting-sync/conflict/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/conflict/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/setting-sync/local-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/local-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/setting-sync/remote-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/remote-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/setting-sync/status-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/status-disabled/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/setting-sync/status-enabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/status-enabled/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "setting-sync",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

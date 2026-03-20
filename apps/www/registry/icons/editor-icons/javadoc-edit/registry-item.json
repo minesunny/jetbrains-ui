@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-javadoc-edit",
+  "type": "registry:ui",
+  "title": "Javadoc Edit",
+  "description": "Javadoc Edit icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/javadoc-edit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/javadoc-edit/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "javadoc-edit",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

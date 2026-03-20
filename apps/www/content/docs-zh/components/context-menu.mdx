@@ -1,0 +1,40 @@
+---
+title: Context Menu
+description: 基于 JetBrains UI 设计风格的右键菜单组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-context-menu" />
+
+## 概述
+
+用于右键操作场景的 JetBrains 风格菜单组件。
+
+## 安装
+
+<ComponentInstallation name="context-menu" />
+
+## 用法
+
+```tsx
+import { Button } from '@/components/jetbrains-ui/buttons';
+import {
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuTrigger,
+} from '@/components/jetbrains-ui/context-menu';
+
+<ContextMenu>
+  <ContextMenuTrigger asChild>
+    <Button variant="secondary">Right Click</Button>
+  </ContextMenuTrigger>
+  <ContextMenuContent>
+    <ContextMenuItem>Rename</ContextMenuItem>
+    <ContextMenuItem>Reformat Code</ContextMenuItem>
+  </ContextMenuContent>
+</ContextMenu>;
+```

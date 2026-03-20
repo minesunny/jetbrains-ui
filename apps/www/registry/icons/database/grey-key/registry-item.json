@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-grey-key",
+  "type": "registry:ui",
+  "title": "Grey Key",
+  "description": "Grey Key icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/grey-key/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/grey-key/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "grey-key",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

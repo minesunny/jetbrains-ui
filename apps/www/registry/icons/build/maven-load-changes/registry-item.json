@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-maven-load-changes",
+  "type": "registry:ui",
+  "title": "Maven Load Changes",
+  "description": "Maven Load Changes icon from Build category.",
+  "registryDependencies": [
+    "icons-build-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/build/maven-load-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-load-changes/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "maven-load-changes",
+      "icon",
+      "build",
+      "jetbrains"
+    ]
+  }
+}

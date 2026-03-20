@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-qt",
+  "type": "registry:ui",
+  "title": "Qt",
+  "description": "Qt icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/qt/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/qt/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type QtProps = IconProps;\n\nconst QtLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M7.104 15.106q-.78 0-1.21-.39-.422-.39-.428-1.105l-.007-1.014h1.144l.007.949q0 .234.143.364.143.136.403.136h.682v1.06zM6.07 11.973a.7.7 0 0 0 .56-.26q.22-.267.33-.884.118-.624.118-1.716V7.787q0-1.092-.117-1.71-.11-.623-.332-.883a.7.7 0 0 0-.559-.267.7.7 0 0 0-.565.267q-.221.26-.338.883-.11.618-.11 1.71v1.326q0 1.092.11 1.716.117.618.338.884.221.26.565.26m0 1.183q-.76 0-1.287-.442-.519-.449-.793-1.346-.266-.897-.266-2.255V7.787q0-1.358.266-2.255.273-.897.793-1.34.527-.448 1.287-.448t1.28.442q.528.442.794 1.346.273.897.273 2.255v1.326q0 1.359-.273 2.262-.267.897-.793 1.339-.52.442-1.28.442M8.47 3.9h4.192v1.241h-1.45V13H9.906V5.142H8.469z\"\n      fill=\"#369650\"\n    />\n  </svg>\n);\n\nconst QtDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M7.104 15.106q-.78 0-1.21-.39-.422-.39-.428-1.105l-.007-1.014h1.144l.007.949q0 .234.143.364.143.136.403.136h.682v1.06zM6.07 11.973a.7.7 0 0 0 .56-.26q.22-.267.33-.884.118-.624.118-1.716V7.787q0-1.092-.117-1.71-.11-.623-.332-.883a.7.7 0 0 0-.559-.267.7.7 0 0 0-.565.267q-.221.26-.338.883-.11.618-.11 1.71v1.326q0 1.092.11 1.716.117.618.338.884.221.26.565.26m0 1.183q-.76 0-1.287-.442-.519-.449-.793-1.346-.266-.897-.266-2.255V7.787q0-1.358.266-2.255.273-.897.793-1.34.527-.448 1.287-.448t1.28.442q.528.442.794 1.346.273.897.273 2.255v1.326q0 1.359-.273 2.262-.267.897-.793 1.339-.52.442-1.28.442M8.47 3.9h4.192v1.241h-1.45V13H9.906V5.142H8.469z\"\n      fill=\"#57965C\"\n    />\n  </svg>\n);\n\nexport const Qt: React.FC<QtProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? QtLight : QtDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "qt",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

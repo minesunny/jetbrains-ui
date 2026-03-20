@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-recursive-method",
+  "type": "registry:ui",
+  "title": "Recursive Method",
+  "description": "Recursive Method icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/recursive-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/recursive-method/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "recursive-method",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

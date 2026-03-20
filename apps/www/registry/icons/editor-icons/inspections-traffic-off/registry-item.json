@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-inspections-traffic-off",
+  "type": "registry:ui",
+  "title": "Inspections Traffic Off",
+  "description": "Inspections Traffic Off icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/inspections-traffic-off/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-traffic-off/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "inspections-traffic-off",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

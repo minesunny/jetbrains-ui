@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-spring-listener",
+  "type": "registry:ui",
+  "title": "Listener",
+  "description": "Listener icon from Plugins Spring category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/listener/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/listener/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "listener",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

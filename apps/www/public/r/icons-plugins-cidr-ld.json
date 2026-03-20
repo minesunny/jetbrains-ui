@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-ld",
+  "type": "registry:ui",
+  "title": "Ld",
+  "description": "Ld icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/ld/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/ld/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type LdProps = IconProps;\n\nconst LdLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M3.834 3.9h1.209v7.97h2.366V13H3.834zM8.087 13V3.9h2.034q.794 0 1.32.423.533.416.793 1.28.267.858.266 2.184v1.326q0 1.327-.266 2.19-.26.86-.787 1.281-.525.417-1.32.416zm2.034-1.124a.78.78 0 0 0 .618-.293q.254-.298.377-.903.123-.611.123-1.567V7.787q0-.956-.123-1.56-.123-.61-.377-.903a.77.77 0 0 0-.618-.3H9.31v6.852z\"\n      fill=\"#369650\"\n    />\n  </svg>\n);\n\nconst LdDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M3.834 3.9h1.209v7.97h2.366V13H3.834zM8.087 13V3.9h2.034q.794 0 1.32.423.533.416.793 1.28.267.858.266 2.184v1.326q0 1.327-.266 2.19-.26.86-.787 1.281-.525.417-1.32.416zm2.034-1.124a.78.78 0 0 0 .618-.293q.254-.298.377-.903.123-.611.123-1.567V7.787q0-.956-.123-1.56-.123-.61-.377-.903a.77.77 0 0 0-.618-.3H9.31v6.852z\"\n      fill=\"#57965C\"\n    />\n  </svg>\n);\n\nexport const Ld: React.FC<LdProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? LdLight : LdDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ld",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

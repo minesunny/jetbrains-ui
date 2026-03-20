@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-status-error-dialog",
+  "type": "registry:ui",
+  "title": "Error Dialog",
+  "description": "Error Dialog icon from General Status category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/status/error-dialog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/error-dialog/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ErrorDialogProps = IconProps;\n\nconst ErrorDialogLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 28 28\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"14\" cy=\"14\" r=\"12\" fill=\"#E55765\" />\n    <path\n      d=\"M15 8a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0zM14 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nconst ErrorDialogDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 28 28\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\">\n      <circle cx=\"14\" cy=\"14\" r=\"12\" fill=\"#DB5C5C\" />\n      <path\n        d=\"M15 8a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0zM14 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3\"\n        fill=\"#fff\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H28V28H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const ErrorDialog: FC<ErrorDialogProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ErrorDialogLight : ErrorDialogDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "error-dialog",
+      "icon",
+      "general",
+      "status",
+      "jetbrains"
+    ]
+  }
+}

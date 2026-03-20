@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-locate",
+  "type": "registry:ui",
+  "title": "Locate",
+  "description": "Locate icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/locate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/locate/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "locate",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

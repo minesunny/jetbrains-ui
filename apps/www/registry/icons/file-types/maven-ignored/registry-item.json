@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-maven-ignored",
+  "type": "registry:ui",
+  "title": "Maven Ignored",
+  "description": "Maven Ignored icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/maven-ignored/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/maven-ignored/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "maven-ignored",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type ToolWindowPubServeProps = IconProps;
+
+const ToolWindowPubServeLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M13.707 13 10.39 9.683l.017-.004 2.286-.572L15 11.414V13zM9 9.517a2 2 0 0 1 1.164-.808l2.287-.572a1 1 0 0 1 .95.263l2.306 2.307a1 1 0 0 1 .293.707V13a1 1 0 0 1-1 1h-1v1a1 1 0 0 1-1 1h-1.586a1 1 0 0 1-.707-.293L8.4 13.4a1 1 0 0 1-.263-.95l.572-2.286q.09-.354.291-.647m.683.873L13 13.707V15h-1.586l-2.307-2.307.572-2.286zM2 6V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1m1-3v3h10V3z"
+      fill="#6C707E"
+    />
+    <path
+      d="M2 13v-3a1 1 0 0 1 1-1h5.143a3 3 0 0 0-.404.922l-.02.078H3v3h4.131a2 2 0 0 0 .462 1H3a1 1 0 0 1-1-1"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const ToolWindowPubServeDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M13.707 13 10.39 9.683l.017-.004 2.286-.572L15 11.414V13zM9 9.517a2 2 0 0 1 1.164-.808l2.287-.572a1 1 0 0 1 .95.263l2.306 2.307a1 1 0 0 1 .293.707V13a1 1 0 0 1-1 1h-1v1a1 1 0 0 1-1 1h-1.586a1 1 0 0 1-.707-.293L8.4 13.4a1 1 0 0 1-.263-.95l.572-2.286q.09-.354.291-.647m.683.873L13 13.707V15h-1.586l-2.307-2.307.572-2.286zM2 6V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1m1-3v3h10V3z"
+      fill="#CED0D6"
+    />
+    <path
+      d="M2 13v-3a1 1 0 0 1 1-1h5.143a3 3 0 0 0-.404.922l-.02.078H3v3h4.131a2 2 0 0 0 .462 1H3a1 1 0 0 1-1-1"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const ToolWindowPubServe: FC<ToolWindowPubServeProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? ToolWindowPubServeLight : ToolWindowPubServeDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

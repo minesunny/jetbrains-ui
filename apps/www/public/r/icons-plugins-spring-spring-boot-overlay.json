@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-spring-spring-boot-overlay",
+  "type": "registry:ui",
+  "title": "Spring Boot Overlay",
+  "description": "Spring Boot Overlay icon from Plugins Spring category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/spring-boot-overlay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-boot-overlay/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SpringBootOverlayProps = IconProps;\n\nconst SpringBootOverlayLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"12.5\" cy=\"12.5\" r=\"3.5\" fill=\"#EBECF0\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11.433 9.651a.5.5 0 0 1-.183.683c-.334.194-.62.463-.834.784a2.5 2.5 0 1 0 3.333-.784.5.5 0 1 1 .501-.865c.469.27.868.646 1.166 1.095a3.5 3.5 0 1 1-4.667-1.096.5.5 0 0 1 .684.183\"\n      fill=\"#6C707E\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.5 8a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst SpringBootOverlayDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"12.5\" cy=\"12.5\" r=\"3.5\" fill=\"#43454A\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11.433 9.651a.5.5 0 0 1-.183.683c-.334.194-.62.463-.834.784a2.5 2.5 0 1 0 3.333-.784.5.5 0 1 1 .501-.865c.469.27.868.646 1.166 1.095a3.5 3.5 0 1 1-4.667-1.096.5.5 0 0 1 .684.183\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.5 8a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const SpringBootOverlay: React.FC<SpringBootOverlayProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? SpringBootOverlayLight : SpringBootOverlayDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "spring-boot-overlay",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

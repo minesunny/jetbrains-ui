@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-mongo-field",
+  "type": "registry:ui",
+  "title": "Mongo Field",
+  "description": "Mongo Field icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/mongo-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/mongo-field/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "mongo-field",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

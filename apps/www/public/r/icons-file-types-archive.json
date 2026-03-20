@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-archive",
+  "type": "registry:ui",
+  "title": "Archive",
+  "description": "Archive icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/archive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/archive/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ArchiveProps = IconProps;\n\nconst ArchiveLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect\n      x=\"2.5\"\n      y=\"2.5\"\n      width=\"11\"\n      height=\"11\"\n      rx=\"1.5\"\n      fill=\"#EDF3FF\"\n      stroke=\"#3574F0\"\n    />\n    <rect x=\"6\" y=\"4\" width=\"2\" height=\"2\" rx=\".5\" fill=\"#3574F0\" />\n    <rect x=\"6\" y=\"8\" width=\"2\" height=\"2\" rx=\".5\" fill=\"#3574F0\" />\n    <rect x=\"8\" y=\"10\" width=\"2\" height=\"2\" rx=\".5\" fill=\"#3574F0\" />\n    <rect x=\"8\" y=\"6\" width=\"2\" height=\"2\" rx=\".5\" fill=\"#3574F0\" />\n  </svg>\n);\n\nconst ArchiveDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect\n      x=\"2.5\"\n      y=\"2.5\"\n      width=\"11\"\n      height=\"11\"\n      rx=\"1.5\"\n      fill=\"#25324D\"\n      stroke=\"#548AF7\"\n    />\n    <rect x=\"6\" y=\"4\" width=\"2\" height=\"2\" rx=\".5\" fill=\"#548AF7\" />\n    <rect x=\"6\" y=\"8\" width=\"2\" height=\"2\" rx=\".5\" fill=\"#548AF7\" />\n    <rect x=\"8\" y=\"10\" width=\"2\" height=\"2\" rx=\".5\" fill=\"#548AF7\" />\n    <rect x=\"8\" y=\"6\" width=\"2\" height=\"2\" rx=\".5\" fill=\"#548AF7\" />\n  </svg>\n);\n\nexport const Archive: FC<ArchiveProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ArchiveLight : ArchiveDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "archive",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

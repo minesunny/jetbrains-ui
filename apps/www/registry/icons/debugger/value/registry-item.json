@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-debugger-value",
+  "type": "registry:ui",
+  "title": "Value",
+  "description": "Value icon from Debugger category.",
+  "registryDependencies": [
+    "icons-debugger-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/debugger/value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/debugger/value/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "value",
+      "icon",
+      "debugger",
+      "jetbrains"
+    ]
+  }
+}

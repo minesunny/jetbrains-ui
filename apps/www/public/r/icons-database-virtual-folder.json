@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-virtual-folder",
+  "type": "registry:ui",
+  "title": "Virtual Folder",
+  "description": "Virtual Folder icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/virtual-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/virtual-folder/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type VirtualFolderProps = IconProps;\n\nconst VirtualFolderLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M2.634 2.5h3.488a.5.5 0 0 1 .36.154l1.623 1.692.149.154H13A1.5 1.5 0 0 1 14.5 6v6.134c0 .82-.569 1.366-1.134 1.366H2.634c-.565 0-1.134-.547-1.134-1.366V3.866c0-.768.5-1.297 1.027-1.36z\"\n      fill=\"#FAF5FF\"\n      stroke=\"#834DF0\"\n    />\n  </svg>\n);\n\nconst VirtualFolderDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M2.634 2.5h3.488a.5.5 0 0 1 .36.154l1.623 1.692.149.154H13A1.5 1.5 0 0 1 14.5 6v6.134c0 .82-.569 1.366-1.134 1.366H2.634c-.565 0-1.134-.547-1.134-1.366V3.866c0-.768.5-1.297 1.027-1.36z\"\n      fill=\"#2F2936\"\n      stroke=\"#A571E6\"\n    />\n  </svg>\n);\n\nexport const VirtualFolder: FC<VirtualFolderProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? VirtualFolderLight : VirtualFolderDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "virtual-folder",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

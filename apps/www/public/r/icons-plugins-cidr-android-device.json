@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-android-device",
+  "type": "registry:ui",
+  "title": "Android Device",
+  "description": "Android Device icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/android-device/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/android-device/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type AndroidDeviceProps = IconProps;\n\nconst AndroidDeviceLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M5 2h6a1 1 0 0 1 1 1v8q.509 0 .992.099l.008-.014V3a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2.1c.07-.348.178-.682.316-1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1\"\n      fill=\"#6C707E\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9.929 11.243a.5.5 0 0 0-.858.514l.596.993A4 4 0 0 0 8 16h8a4 4 0 0 0-1.667-3.25l.596-.993a.5.5 0 1 0-.858-.514l-.617 1.03A4 4 0 0 0 12 12a4 4 0 0 0-1.453.272zM10 14h1v1h-1zm4 0h-1v1h1z\"\n      fill=\"#55A76A\"\n    />\n  </svg>\n);\n\nconst AndroidDeviceDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M5 2h6a1 1 0 0 1 1 1v8q.509 0 .992.099l.008-.014V3a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2.1c.07-.348.178-.682.316-1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9.929 11.243a.5.5 0 0 0-.858.514l.596.993A4 4 0 0 0 8 16h8a4 4 0 0 0-1.667-3.25l.596-.993a.5.5 0 1 0-.858-.514l-.617 1.03A4 4 0 0 0 12 12a4 4 0 0 0-1.453.272zM10 14h1v1h-1zm4 0h-1v1h1z\"\n      fill=\"#57965C\"\n    />\n  </svg>\n);\n\nexport const AndroidDevice: React.FC<AndroidDeviceProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? AndroidDeviceLight : AndroidDeviceDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "android-device",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

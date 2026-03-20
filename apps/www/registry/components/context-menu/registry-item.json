@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "context-menu",
+  "type": "registry:ui",
+  "title": "Context Menu",
+  "description": "JetBrains-style context menu component built with Radix UI.",
+  "dependencies": ["radix-ui"],
+  "registryDependencies": ["utils", "tooltip"],
+  "files": [
+    {
+      "path": "registry/components/context-menu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/context-menu/index.tsx"
+    },
+    {
+      "path": "registry/components/context-menu/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/context-menu/index.css"
+    }
+  ],
+  "meta": {
+    "keywords": ["context-menu", "menu", "radix", "jetbrains", "ui", "组件"],
+    "category": "overlay",
+    "docs": {
+      "description": "JetBrains-style context menu component for right-click actions.",
+      "features": [
+        "Context menu content and item styles aligned with JetBrains tokens",
+        "Sub menus, checkbox and radio items",
+        "Shortcut slot support",
+        "Accessible keyboard interactions from Radix UI",
+        "Supports light and dark themes"
+      ]
+    }
+  }
+}

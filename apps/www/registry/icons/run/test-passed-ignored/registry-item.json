@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-test-passed-ignored",
+  "type": "registry:ui",
+  "title": "Test Passed Ignored",
+  "description": "Test Passed Ignored icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/test-passed-ignored/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/test-passed-ignored/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "test-passed-ignored",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

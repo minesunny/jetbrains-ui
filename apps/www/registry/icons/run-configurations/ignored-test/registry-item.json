@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-configurations-ignored-test",
+  "type": "registry:ui",
+  "title": "Ignored Test",
+  "description": "Ignored Test icon from Run Configurations category.",
+  "registryDependencies": [
+    "icons-run-configurations-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run-configurations/ignored-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run-configurations/ignored-test/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ignored-test",
+      "icon",
+      "run-configurations",
+      "jetbrains"
+    ]
+  }
+}

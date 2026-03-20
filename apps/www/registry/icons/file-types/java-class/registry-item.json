@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-java-class",
+  "type": "registry:ui",
+  "title": "Java Class",
+  "description": "Java Class icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/java-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/java-class/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "java-class",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

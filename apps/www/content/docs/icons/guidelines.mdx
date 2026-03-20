@@ -1,0 +1,94 @@
+---
+title: Icon Design Guidelines
+description: Canonical JetBrains Int UI icon design and export rules extracted from Figma.
+---
+
+## Source
+
+- Figma: [Int UI Icons (Community)](https://www.figma.com/design/ORTk5tFs6uFdioiFIXQIw8/Int-UI-Icons--Community-?node-id=5727-49148&t=pYH1moonGBr2DNEs-4)
+- Node: `Guidelines` (`5727:49148`)
+- Last extracted: March 3, 2026
+
+## General Rules
+
+1. Prefer outline icons whenever possible.
+2. Use a flat icon style.
+3. Keep details minimal but enough to convey meaning.
+4. Use a minimum geometry step of `0.5px`.
+5. Inner corner radius:
+   - `2px` for larger objects
+   - `1px` for smaller objects
+6. Remove excessive anchor points from paths.
+7. Use JetBrains Sans if a letterform is required in an icon (for example: class/interface markers).
+8. Enable `Clip content` to validate the real icon bounds.
+
+## Grid and Size Rules
+
+| Size    | Primary usage                                                         | Stroke  | Radius | Naming (light/dark)             | Extra guidance                                                                                                  |
+| ------- | --------------------------------------------------------------------- | ------- | ------ | ------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `20x20` | Main toolbar, tool windows                                            | `1.5px` | `2px`  | `name@20x20`, `name@20x20_dark` | Use inner stroke for larger forms, rounded end caps, keep strokes continuous unless a break improves legibility |
+| `16x16` | Default size for most UI elements (toolbars, trees, menus, and so on) | `1px`   | `2px`  | `name`, `name_dark`             | Use inner stroke for larger forms; when multiple objects exist, separate with cuts in strokes                   |
+| `14x14` | Gutter, status bar                                                    | `1px`   | `1px`  | `name@14x14`, `name@14x14_dark` | Keep shapes simple and compact                                                                                  |
+
+Additional grid notes from the frame:
+
+- Keep `1px` padding inside icon bounds.
+- Diagram labels show common content extents:
+  - `20x20` grid: `14px`, `16px`, `18px`
+  - `16x16` grid: `10px`, `12px`, `14px`
+
+The extent values above are interpreted from the grid annotation labels in the Figma diagram.
+
+## Color Style Rules
+
+To choose icon colors, search color styles in the Int UI Kit community file.
+
+- Color style groups:
+  - `General`
+  - `Solid`
+  - `Outline`
+- Search query examples from the guideline board:
+  - `li gree gen` -> light green general
+  - `da bl sol` -> dark blue solid
+  - `li ye out` -> light yellow outline
+
+## System Assets (for icon authoring)
+
+The guideline page includes reusable system components for consistency:
+
+- `guides@20x20` (light/dark)
+- `guides` (light/dark)
+- `stub@20x20`
+- `stub`
+- `dropdown` (light/dark)
+- `dropdownGutter` (light/dark)
+
+## Export Workflow (JB Variant Exporter)
+
+1. Install plugin `JB Variant Exporter` (development plugin import via `manifest.json`).
+2. Ensure component names follow pair naming:
+   - `iconName`
+   - `iconName_dark`
+3. Select icon components (or the whole artboard containing them).
+4. Run:
+   - `Plugins -> Development -> JB Variant Exporter -> Combine as Variants`
+5. Plugin behavior:
+   - Only paired components are combined.
+   - Unpaired components and non-icon objects are ignored.
+   - If no valid pair exists, Figma shows `Nothing to combine...`.
+6. Select produced variants and run:
+   - `Plugins -> Development -> JB Variant Exporter -> Export Selected`
+7. Choose export directory to generate `Exported Variants.zip`.
+8. Export behavior:
+   - Only variants with valid light/dark pairs are exported.
+   - If none exist, Figma shows `Nothing to export...`.
+
+## Implementation Contract for This Repository (Method 1)
+
+For SVG source plus code generation workflows in this repo:
+
+1. Keep SVG pairs complete by size and theme naming (`name`, `name_dark`, optional size suffixes).
+2. Enforce stroke/radius rules by icon size in design review before generation.
+3. Reject or report unpaired icons during generation.
+4. Preserve `0.5px` geometry precision when converting SVG to TSX.
+5. Use this document as the canonical rule set before adding or regenerating icon components.

@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-intention-bulb-grey",
+  "type": "registry:ui",
+  "title": "Intention Bulb Grey",
+  "description": "Intention Bulb Grey icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/intention-bulb-grey/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/intention-bulb-grey/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type IntentionBulbGreyProps = IconProps;\n\nconst IntentionBulbGreyLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path fill=\"#6C707E\" d=\"M5.701 12H10.300999999999998V13H5.701z\" />\n    <path d=\"M6 14h4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1\" fill=\"#6C707E\" />\n    <mask id=\"a\" fill=\"#fff\">\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M10.87 9.147a4.8 4.8 0 1 0-5.741 0L5.5 11h5z\"\n      />\n    </mask>\n    <path\n      d=\"m10.87 9.147-.598-.8-.307.229-.075.375zm-5.74 0 .98-.196-.075-.375-.307-.23zM5.5 11l-.98.196.16.804h.82zm5 0v1h.82l.16-.804zm1.3-5.7a3.8 3.8 0 0 1-1.528 3.046l1.197 1.603A5.8 5.8 0 0 0 13.8 5.3zM8 1.5a3.8 3.8 0 0 1 3.8 3.8h2A5.8 5.8 0 0 0 8-.5zM4.2 5.3A3.8 3.8 0 0 1 8 1.5v-2a5.8 5.8 0 0 0-5.8 5.8zm1.528 3.046A3.8 3.8 0 0 1 4.2 5.3h-2c0 1.903.918 3.593 2.33 4.648zm.753 2.458L6.11 8.95l-1.961.393.37 1.852zM10.5 10h-5v2h5zm-.61-1.049-.37 1.853 1.96.392.371-1.852z\"\n      fill=\"#6C707E\"\n      mask=\"url(#a)\"\n    />\n  </svg>\n);\n\nconst IntentionBulbGreyDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path fill=\"#CED0D6\" d=\"M5.701 12H10.300999999999998V13H5.701z\" />\n    <path d=\"M6 14h4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1\" fill=\"#CED0D6\" />\n    <mask id=\"a\" fill=\"#fff\">\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M10.87 9.147a4.8 4.8 0 1 0-5.741 0L5.5 11h5z\"\n      />\n    </mask>\n    <path\n      d=\"m10.87 9.147-.598-.8-.307.229-.075.375zm-5.74 0 .98-.196-.075-.375-.307-.23zM5.5 11l-.98.196.16.804h.82zm5 0v1h.82l.16-.804zm1.3-5.7a3.8 3.8 0 0 1-1.528 3.046l1.197 1.603A5.8 5.8 0 0 0 13.8 5.3zM8 1.5a3.8 3.8 0 0 1 3.8 3.8h2A5.8 5.8 0 0 0 8-.5zM4.2 5.3A3.8 3.8 0 0 1 8 1.5v-2a5.8 5.8 0 0 0-5.8 5.8zm1.528 3.046A3.8 3.8 0 0 1 4.2 5.3h-2c0 1.903.918 3.593 2.33 4.648zm.753 2.458L6.11 8.95l-1.961.393.37 1.852zM10.5 10h-5v2h5zm-.61-1.049-.37 1.853 1.96.392.371-1.852z\"\n      fill=\"#CED0D6\"\n      mask=\"url(#a)\"\n    />\n  </svg>\n);\n\nexport const IntentionBulbGrey: FC<IntentionBulbGreyProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? IntentionBulbGreyLight : IntentionBulbGreyDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "intention-bulb-grey",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

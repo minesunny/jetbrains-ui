@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-types",
+  "type": "registry:ui",
+  "title": "File Types Icons Types",
+  "description": "Shared types and utilities for File Types icon components.",
+  "files": [
+    {
+      "path": "registry/icons/file-types/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/types.ts"
+    }
+  ]
+}

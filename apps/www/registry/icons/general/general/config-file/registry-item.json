@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-config-file",
+  "type": "registry:ui",
+  "title": "Config File",
+  "description": "Config File icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/config-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/config-file/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "config-file",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

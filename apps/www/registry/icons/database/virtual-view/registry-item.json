@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-virtual-view",
+  "type": "registry:ui",
+  "title": "Virtual View",
+  "description": "Virtual View icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/virtual-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/virtual-view/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "virtual-view",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

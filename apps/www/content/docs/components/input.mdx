@@ -1,0 +1,82 @@
+---
+title: Input
+description: Input component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-input" />
+
+## Overview
+
+A JetBrains-style single-line text input component for forms and search fields.
+
+### Design Highlights
+
+- **JetBrains color system**: Built on JetBrains-inspired color tokens.
+- **Complete states**: Default, hover, focus, invalid, and disabled states.
+- **Compact size**: Optimized for dense settings and form layouts.
+- **Accessible by default**: Proper focus ring and keyboard support.
+
+## Installation
+
+<ComponentInstallation name="input" />
+
+## Usage
+
+```tsx
+import { Input } from '@/components/jetbrains-ui/input';
+
+<Input placeholder="Type here..." />;
+```
+
+### Invalid State
+
+```tsx
+<Input aria-invalid placeholder="Email is required" />
+```
+
+### Disabled State
+
+```tsx
+<Input disabled placeholder="Disabled input" />
+```
+
+## API Reference
+
+### Input
+
+<TypeTable
+  type={{
+    type: {
+      description: 'Native input type',
+      type: 'string',
+      required: false,
+      default: '"text"',
+    },
+    disabled: {
+      description: 'Whether the input is disabled',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    'aria-invalid': {
+      description: 'Whether the input is in an invalid state',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: 'Additional props passed to the input element',
+      type: 'React.ComponentProps<"input">',
+      required: false,
+    },
+  }}
+/>
+
+## Credits
+
+- Design inspired by [JetBrains UI Kit](https://jetbrains.design)
+- Built with React and Tailwind CSS

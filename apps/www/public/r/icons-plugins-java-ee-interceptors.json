@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-java-ee-interceptors",
+  "type": "registry:ui",
+  "title": "Interceptors",
+  "description": "Interceptors icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/interceptors/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/interceptors/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type InterceptorsProps = IconProps;\n\nconst InterceptorsLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" stroke=\"#6C707E\" />\n    <path\n      d=\"M10.526 5.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.145-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425\"\n      fill=\"#FFF4EB\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M10.526 5.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.145-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425m-.707.707c.699.7 1.086 1.468 1.165 2.162a2.2 2.2 0 0 1-.399 1.556L6.112 5.405a2.23 2.23 0 0 1 1.543-.391c.7.075 1.472.454 2.164 1.146m-4.415-.05 4.475 4.476a2.26 2.26 0 0 1-1.604.396c-.719-.085-1.49-.477-2.146-1.132-.648-.648-1.032-1.423-1.113-2.148a2.3 2.3 0 0 1 .388-1.591\"\n      fill=\"#E66D17\"\n    />\n  </svg>\n);\n\nconst InterceptorsDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" stroke=\"#CED0D6\" />\n    <path\n      d=\"M10.526 5.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.145-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425\"\n      fill=\"#45322B\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M10.526 5.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.145-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425m-.707.707c.699.7 1.086 1.468 1.165 2.162a2.2 2.2 0 0 1-.399 1.556L6.112 5.405a2.23 2.23 0 0 1 1.543-.391c.7.075 1.472.454 2.164 1.146m-4.415-.05 4.475 4.476a2.26 2.26 0 0 1-1.604.396c-.719-.085-1.49-.477-2.146-1.132-.648-.648-1.032-1.423-1.113-2.148a2.3 2.3 0 0 1 .388-1.591\"\n      fill=\"#C77D55\"\n    />\n  </svg>\n);\n\nexport const Interceptors: React.FC<InterceptorsProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? InterceptorsLight : InterceptorsDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "interceptors",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

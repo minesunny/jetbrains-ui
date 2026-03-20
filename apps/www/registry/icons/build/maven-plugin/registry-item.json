@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-maven-plugin",
+  "type": "registry:ui",
+  "title": "Maven Plugin",
+  "description": "Maven Plugin icon from Build category.",
+  "registryDependencies": [
+    "icons-build-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/build/maven-plugin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-plugin/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "maven-plugin",
+      "icon",
+      "build",
+      "jetbrains"
+    ]
+  }
+}

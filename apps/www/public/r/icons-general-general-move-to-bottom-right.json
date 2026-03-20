@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-general-move-to-bottom-right",
+  "type": "registry:ui",
+  "title": "Move To Bottom Right",
+  "description": "Move To Bottom Right icon from General General category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/move-to-bottom-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-to-bottom-right/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type MoveToBottomRightProps = IconProps;\n\nconst MoveToBottomRightLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M2 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2-1h8a1 1 0 0 1 1 1v5H8a1 1 0 0 0-1 1v3H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m4 10h4a1 1 0 0 0 1-1v-2H8z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst MoveToBottomRightDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M2 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2-1h8a1 1 0 0 1 1 1v5H8a1 1 0 0 0-1 1v3H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m4 10h4a1 1 0 0 0 1-1v-2H8z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const MoveToBottomRight: FC<MoveToBottomRightProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? MoveToBottomRightLight : MoveToBottomRightDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "move-to-bottom-right",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

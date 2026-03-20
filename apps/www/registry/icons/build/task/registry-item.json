@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-task",
+  "type": "registry:ui",
+  "title": "Task",
+  "description": "Task icon from Build category.",
+  "registryDependencies": [
+    "icons-build-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/build/task/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/task/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "task",
+      "icon",
+      "build",
+      "jetbrains"
+    ]
+  }
+}

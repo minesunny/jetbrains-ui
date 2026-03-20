@@ -1,0 +1,360 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons",
+  "type": "registry:ui",
+  "title": "Editor Icons Icons",
+  "description": "All 67 icons from the Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/index.ts"
+    },
+    {
+      "path": "registry/icons/editor-icons/actual-zoom/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/actual-zoom/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/back-trace/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/back-trace/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/bookmark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/bookmark/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/chessboard/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/chessboard/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/collapse-node/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/collapse-node/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/color-picker/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/color-picker/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/colors/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/colors/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/data-schema/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/data-schema/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/dropdown-gutter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/dropdown-gutter/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/editor-only/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/editor-only/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/editor-preview/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/editor-preview/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/editor-preview-vertical/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/editor-preview-vertical/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/expand-node/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/expand-node/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/ext-annotation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/ext-annotation/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/fit-content/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/fit-content/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/flame/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/flame/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/fold/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/fold/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/fold-bottom/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/fold-bottom/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/grid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/grid/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/implemented-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/implemented-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/implementing-functional-interface/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/implementing-functional-interface/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/implementing-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/implementing-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inaly-qarkus/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inaly-qarkus/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inlay-globe/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-globe/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inlay-micronaut/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-micronaut/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inlay-rename-in-comments/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-rename-in-comments/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inlay-rename-in-comments-active/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-rename-in-comments-active/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inlay-rename-in-no-code-files/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-rename-in-no-code-files/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inlay-rename-in-no-code-files-active/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-rename-in-no-code-files-active/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inlay-secured-shield/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-secured-shield/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inlay-settings/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-settings/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inlay-spring/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-spring/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inlay-web-inspector/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-web-inspector/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inspections-eye/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-eye/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inspections-mixed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-mixed/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inspections-ok/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-ok/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inspections-okempty/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-okempty/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inspections-pause/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-pause/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inspections-power-save-mode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-power-save-mode/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inspections-traffic-off/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-traffic-off/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/inspections-typos/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-typos/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/intention-bulb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/intention-bulb/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/intention-bulb-grey/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/intention-bulb-grey/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/javadoc-edit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/javadoc-edit/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/javadoc-read/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/javadoc-read/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/merge-callees/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/merge-callees/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/mnemonic/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/mnemonic/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/overriden-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/overriden-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/overriding-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/overriding-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/preview-only/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/preview-only/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/quickfix-bulb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/quickfix-bulb/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/quickfix-off-bulb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/quickfix-off-bulb/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/read-access/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/read-access/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/rec/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/rec/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/recursive-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/recursive-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/rerun/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/rerun/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/run/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/run/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/run-error/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/run-error/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/run-failed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/run-failed/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/run-success/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/run-success/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/sharp/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/sharp/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/sibling-inherited-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/sibling-inherited-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/suggested-refactoring-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/suggested-refactoring-disabled/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/unfold/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/unfold/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/write-access/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/write-access/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/zoom-in/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/zoom-in/index.tsx"
+    },
+    {
+      "path": "registry/icons/editor-icons/zoom-out/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/zoom-out/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "editor-icons",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

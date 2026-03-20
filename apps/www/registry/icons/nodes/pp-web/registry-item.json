@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-pp-web",
+  "type": "registry:ui",
+  "title": "Pp Web",
+  "description": "Pp Web icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/pp-web/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/pp-web/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "pp-web",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

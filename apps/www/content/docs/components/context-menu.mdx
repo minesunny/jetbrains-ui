@@ -1,0 +1,40 @@
+---
+title: Context Menu
+description: Context menu component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-context-menu" />
+
+## Overview
+
+A JetBrains-style context menu component for right-click actions.
+
+## Installation
+
+<ComponentInstallation name="context-menu" />
+
+## Usage
+
+```tsx
+import { Button } from '@/components/jetbrains-ui/buttons';
+import {
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuTrigger,
+} from '@/components/jetbrains-ui/context-menu';
+
+<ContextMenu>
+  <ContextMenuTrigger asChild>
+    <Button variant="secondary">Right Click</Button>
+  </ContextMenuTrigger>
+  <ContextMenuContent>
+    <ContextMenuItem>Rename</ContextMenuItem>
+    <ContextMenuItem>Reformat Code</ContextMenuItem>
+  </ContextMenuContent>
+</ContextMenu>;
+```

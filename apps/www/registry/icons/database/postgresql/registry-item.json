@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-postgresql",
+  "type": "registry:ui",
+  "title": "Postgresql",
+  "description": "Postgresql icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/postgresql/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/postgresql/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "postgresql",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

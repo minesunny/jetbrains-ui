@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-vue-js",
+  "type": "registry:ui",
+  "title": "Vue Js",
+  "description": "Vue Js icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/vue-js/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/vue-js/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type VueJsProps = IconProps;\n\nconst VueJsLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M9.732 2 8 5 6.268 2H.5L8 14.99 15.5 2z\" fill=\"#41B883\" />\n    <path d=\"M9.732 2 8 5 6.268 2H3.5L8 9.794 12.5 2z\" fill=\"#34495E\" />\n  </svg>\n);\n\nconst VueJsDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M9.732 2 8 5 6.268 2H.5L8 14.99 15.5 2z\" fill=\"#41B883\" />\n    <path d=\"M9.732 2 8 5 6.268 2H3.5L8 9.794 12.5 2z\" fill=\"#34495E\" />\n  </svg>\n);\n\nexport const VueJs: FC<VueJsProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? VueJsLight : VueJsDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "vue-js",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

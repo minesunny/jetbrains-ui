@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-unfreeze-all",
+  "type": "registry:ui",
+  "title": "Unfreeze All",
+  "description": "Unfreeze All icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/unfreeze-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/unfreeze-all/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "unfreeze-all",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

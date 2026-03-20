@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-grid",
+  "type": "registry:ui",
+  "title": "Grid",
+  "description": "Grid icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/grid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/grid/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "grid",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

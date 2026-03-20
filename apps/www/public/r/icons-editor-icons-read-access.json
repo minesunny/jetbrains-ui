@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-read-access",
+  "type": "registry:ui",
+  "title": "Read Access",
+  "description": "Read Access icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/read-access/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/read-access/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ReadAccessProps = IconProps;\n\nconst ReadAccessLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3.146 3.646a.5.5 0 1 1 .708.708L1.707 6.5h6a.5.5 0 1 1 0 1h-6l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"m7.706 5.5 1.86-3.248a.5.5 0 0 1 .868 0l2.433 4.25c.177.307.177.686 0 .994l-2.433 4.252a.5.5 0 0 1-.868 0L7.707 8.5H6.555l2.143 3.745a1.5 1.5 0 0 0 2.604 0l2.433-4.251a2 2 0 0 0 0-1.99L11.3 1.754a1.5 1.5 0 0 0-2.603 0L6.553 5.5z\"\n      fill=\"#369650\"\n    />\n  </svg>\n);\n\nconst ReadAccessDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3.146 3.646a.5.5 0 1 1 .708.708L1.707 6.5h6a.5.5 0 1 1 0 1h-6l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"m7.706 5.5 1.86-3.248a.5.5 0 0 1 .868 0l2.433 4.25c.177.307.177.686 0 .994l-2.433 4.252a.5.5 0 0 1-.868 0L7.707 8.5H6.555l2.143 3.745a1.5 1.5 0 0 0 2.604 0l2.433-4.251a2 2 0 0 0 0-1.99L11.3 1.754a1.5 1.5 0 0 0-2.603 0L6.553 5.5z\"\n      fill=\"#57965C\"\n    />\n  </svg>\n);\n\nexport const ReadAccess: FC<ReadAccessProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ReadAccessLight : ReadAccessDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "read-access",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

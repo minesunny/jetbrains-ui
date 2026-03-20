@@ -1,0 +1,98 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type CherryPickProps = IconProps;
+
+const CherryPickLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M6.5 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-2 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6m9-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-2 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+      fill="#6C707E"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.854 1.146a.5.5 0 0 0-.394-.144h-.002c-2.565.214-4.351 1.512-5.528 3.03C4.762 5.536 4.183 7.27 4.006 8.423a.5.5 0 0 0 .988.152c.156-1.012.677-2.58 1.726-3.932.714-.92 1.666-1.736 2.916-2.217l1.197-.554-.682.613c-.514.972-.665 1.996-.613 2.942.077 1.38.584 2.61 1.038 3.337a.5.5 0 0 0 .848-.53c-.38-.607-.822-1.676-.887-2.863-.065-1.17.237-2.438 1.317-3.518a.5.5 0 0 0 0-.708"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const CherryPickDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M6.5 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-2 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6m9-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-2 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+      fill="#CED0D6"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.854 1.146a.5.5 0 0 0-.394-.144h-.002c-2.565.214-4.351 1.512-5.528 3.03C4.762 5.536 4.183 7.27 4.006 8.423a.5.5 0 0 0 .988.152c.156-1.012.677-2.58 1.726-3.932.714-.92 1.666-1.736 2.916-2.217l1.197-.554-.682.613c-.514.972-.665 1.996-.613 2.942.077 1.38.584 2.61 1.038 3.337a.5.5 0 0 0 .848-.53c-.38-.607-.822-1.676-.887-2.863-.065-1.17.237-2.438 1.317-3.518a.5.5 0 0 0 0-.708"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const CherryPick: FC<CherryPickProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? CherryPickLight : CherryPickDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-bazel-bazel-error",
+  "type": "registry:ui",
+  "title": "Bazel Error",
+  "description": "Bazel Error icon from Plugins Bazel category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/bazel/bazel-error/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-error/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type BazelErrorProps = IconProps;\n\nconst BazelErrorLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path d=\"M4.5 1 8 4.5 4.5 8 1 4.5z\" fill=\"#76D275\" />\n    <path d=\"M1 4.5V8l3.5 3.5V8z\" fill=\"#43A047\" />\n    <path d=\"M11.5 1 15 4.5 11.5 8 8 4.5z\" fill=\"#76D275\" />\n    <path d=\"M8 11.5V15l-3.5-3.5V8z\" fill=\"#00701A\" />\n    <circle cx=\"12.5\" cy=\"12.5\" r=\"3.5\" fill=\"#E55765\" />\n    <path\n      d=\"M12.5 10a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5M12.5 15a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1\"\n      fill=\"#fff\"\n    />\n    <path\n      d=\"M11.352 8.148q.073-.02.147-.036V8zM15 8V4.5L11.5 8v.112a4.5 4.5 0 0 1 3.021.367z\"\n      fill=\"#43A047\"\n    />\n    <path\n      d=\"M11.5 8 8 4.5 4.5 8 8 11.5l.148-.148a4.51 4.51 0 0 1 3.204-3.204z\"\n      fill=\"#43A047\"\n    />\n  </svg>\n);\n\nconst BazelErrorDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path d=\"M4.5 1 8 4.5 4.5 8 1 4.5z\" fill=\"#76D275\" />\n    <path d=\"M1 4.5V8l3.5 3.5V8z\" fill=\"#43A047\" />\n    <path d=\"M11.5 1 15 4.5 11.5 8 8 4.5z\" fill=\"#76D275\" />\n    <path d=\"M8 11.5V15l-3.5-3.5V8z\" fill=\"#00701A\" />\n    <circle cx=\"12.5\" cy=\"12.5\" r=\"3.5\" fill=\"#DB5C5C\" />\n    <path\n      d=\"M12.5 10a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5M12.5 15a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1\"\n      fill=\"#fff\"\n    />\n    <path\n      d=\"M11.352 8.148q.073-.02.147-.036V8zM15 8V4.5L11.5 8v.112a4.5 4.5 0 0 1 3.021.367z\"\n      fill=\"#43A047\"\n    />\n    <path\n      d=\"M11.5 8 8 4.5 4.5 8 8 11.5l.148-.148a4.51 4.51 0 0 1 3.204-3.204z\"\n      fill=\"#43A047\"\n    />\n  </svg>\n);\n\nexport const BazelError: React.FC<BazelErrorProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? BazelErrorLight : BazelErrorDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "bazel-error",
+      "icon",
+      "plugins",
+      "bazel",
+      "jetbrains"
+    ]
+  }
+}

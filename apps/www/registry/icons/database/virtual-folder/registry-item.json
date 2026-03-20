@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-virtual-folder",
+  "type": "registry:ui",
+  "title": "Virtual Folder",
+  "description": "Virtual Folder icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/virtual-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/virtual-folder/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "virtual-folder",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

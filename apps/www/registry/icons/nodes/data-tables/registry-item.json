@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-data-tables",
+  "type": "registry:ui",
+  "title": "Data Tables",
+  "description": "Data Tables icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/data-tables/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/data-tables/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "data-tables",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

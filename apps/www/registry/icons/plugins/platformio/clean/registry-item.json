@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-platformio-clean",
+  "type": "registry:ui",
+  "title": "Clean",
+  "description": "Clean icon from Plugins Platformio category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/platformio/clean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/clean/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "clean",
+      "icon",
+      "plugins",
+      "platformio",
+      "jetbrains"
+    ]
+  }
+}

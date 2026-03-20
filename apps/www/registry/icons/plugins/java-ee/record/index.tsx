@@ -1,0 +1,110 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type RecordProps = IconProps;
+
+const RecordLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      d="M10.875 15.55q.759.45 1.707.45a3.3 3.3 0 0 0 1.624-.401q.725-.406 1.131-1.117.411-.715.411-1.605v-.541h-2.78v.962h1.61a1.7 1.7 0 0 1-.275.807q-.261.396-.71.619a2.24 2.24 0 0 1-.997.217q-.613 0-1.102-.31a2.15 2.15 0 0 1-.764-.864q-.27-.556-.27-1.267t.27-1.262q.276-.556.76-.865.487-.315 1.097-.314.483 0 .899.188.42.189.696.508.28.319.362.71h1.165a2.5 2.5 0 0 0-.517-1.247 3 3 0 0 0-1.121-.89A3.4 3.4 0 0 0 12.58 9q-.946 0-1.706.454-.759.45-1.189 1.252-.43.798-.43 1.794t.43 1.798a3.2 3.2 0 0 0 1.19 1.252"
+      fill="#208A3C"
+    />
+    <path
+      d="M14.967 8.683Q15 8.345 15 8a7 7 0 1 0-6.099 6.943 5 5 0 0 1-.096-.17l-.001-.002a4.74 4.74 0 0 1-.549-2.271c0-.812.177-1.576.55-2.267.37-.69.891-1.242 1.558-1.638A4.26 4.26 0 0 1 12.58 8a4.4 4.4 0 0 1 2.386.683"
+      fill="#EDF3FF"
+    />
+    <path
+      d="M14.967 8.683Q15 8.345 15 8a7 7 0 1 0-6.099 6.943 5 5 0 0 1-.096-.17l-.001-.002a4.5 4.5 0 0 1-.331-.79 6 6 0 1 1 5.523-5.759q.256.085.503.204.245.115.468.257"
+      fill="#3574F0"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8.91 10.048 8.081 8.66H6.7v2.84h-1v-7h2.885q.696 0 1.215.26.525.255.81.725.285.465.285 1.09 0 .62-.29 1.095a1.93 1.93 0 0 1-.82.735q-.29.139-.635.203l.386.63q-.359.36-.627.81M8.56 7.77q.39 0 .68-.145t.45-.415.16-.635q0-.36-.16-.625a1.06 1.06 0 0 0-.45-.415 1.5 1.5 0 0 0-.68-.145H6.7v2.38z"
+      fill="#3574F0"
+    />
+  </svg>
+);
+
+const RecordDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      d="M10.875 15.55q.759.45 1.707.45a3.3 3.3 0 0 0 1.624-.401q.725-.406 1.131-1.117.411-.715.411-1.605v-.541h-2.78v.962h1.61a1.7 1.7 0 0 1-.275.807q-.261.396-.71.619a2.24 2.24 0 0 1-.997.217q-.613 0-1.102-.31a2.15 2.15 0 0 1-.764-.864q-.27-.556-.27-1.267t.27-1.262q.276-.556.76-.865.487-.315 1.097-.314.483 0 .899.188.42.189.696.508.28.319.362.71h1.165a2.5 2.5 0 0 0-.517-1.247 3 3 0 0 0-1.121-.89A3.4 3.4 0 0 0 12.58 9q-.946 0-1.706.454-.759.45-1.189 1.252-.43.798-.43 1.794t.43 1.798a3.2 3.2 0 0 0 1.19 1.252"
+      fill="#57965C"
+    />
+    <path
+      d="M14.967 8.683Q15 8.345 15 8a7 7 0 1 0-6.099 6.943 5 5 0 0 1-.096-.17l-.001-.002a4.74 4.74 0 0 1-.549-2.271c0-.812.177-1.576.55-2.267.37-.69.891-1.242 1.558-1.638A4.26 4.26 0 0 1 12.58 8a4.4 4.4 0 0 1 2.386.683"
+      fill="#25324D"
+    />
+    <path
+      d="M14.967 8.683Q15 8.345 15 8a7 7 0 1 0-6.099 6.943 5 5 0 0 1-.096-.17l-.001-.002a4.5 4.5 0 0 1-.331-.79 6 6 0 1 1 5.523-5.759q.256.085.503.204.245.115.468.257"
+      fill="#548AF7"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8.91 10.048 8.081 8.66H6.7v2.84h-1v-7h2.885q.696 0 1.215.26.525.255.81.725.285.465.285 1.09 0 .62-.29 1.095a1.93 1.93 0 0 1-.82.735q-.29.139-.635.203l.386.63q-.359.36-.627.81M8.56 7.77q.39 0 .68-.145t.45-.415.16-.635q0-.36-.16-.625a1.06 1.06 0 0 0-.45-.415 1.5 1.5 0 0 0-.68-.145H6.7v2.38z"
+      fill="#548AF7"
+    />
+  </svg>
+);
+
+export const Record: React.FC<RecordProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? RecordLight : RecordDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

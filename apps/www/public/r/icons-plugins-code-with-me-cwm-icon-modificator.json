@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-code-with-me-cwm-icon-modificator",
+  "type": "registry:ui",
+  "title": "Cwm Icon Modificator",
+  "description": "Cwm Icon Modificator icon from Plugins Code With Me category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-icon-modificator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-icon-modificator/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type CwmIconModificatorProps = IconProps;\n\nconst CwmIconModificatorLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 17 17\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M4.5 8.5a4 4 0 0 1 3.873 3H11.5a1 1 0 1 1 0 2v1a1 1 0 1 1-2 0v-1H8.373a4 4 0 1 1-3.873-5Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z\"\n      fill=\"#6C707E\"\n      stroke=\"#fff\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nconst CwmIconModificatorDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 17 17\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M4.5 8.5a4 4 0 0 1 3.873 3H11.5a1 1 0 1 1 0 2v1a1 1 0 1 1-2 0v-1H8.373a4 4 0 1 1-3.873-5Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z\"\n      fill=\"#CED0D6\"\n      stroke=\"#27282E\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nexport const CwmIconModificator: React.FC<CwmIconModificatorProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? CwmIconModificatorLight : CwmIconModificatorDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cwm-icon-modificator",
+      "icon",
+      "plugins",
+      "code-with-me",
+      "jetbrains"
+    ]
+  }
+}

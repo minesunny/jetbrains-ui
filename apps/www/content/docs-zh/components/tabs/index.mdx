@@ -1,0 +1,18 @@
+---
+title: Tabs
+description: Tabs 组件变体。
+---
+
+<Cards>
+  {[
+    { title: 'Tabs', slug: 'base-tabs' },
+    { title: 'Dynamic Tabs', slug: 'dynamic-tabs' },
+  ].map(({ title, slug }) => (
+    <Card
+      key={slug}
+      href={`/docs/components/tabs/${slug}`}
+      title={title}
+      accent
+    />
+  ))}
+</Cards>

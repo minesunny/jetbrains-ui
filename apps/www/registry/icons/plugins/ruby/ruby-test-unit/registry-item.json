@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-ruby-ruby-test-unit",
+  "type": "registry:ui",
+  "title": "Ruby Test Unit",
+  "description": "Ruby Test Unit icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/ruby-test-unit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/ruby-test-unit/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ruby-test-unit",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

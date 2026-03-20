@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-tool-window-record-debug",
+  "type": "registry:ui",
+  "title": "Tool Window Record Debug",
+  "description": "Tool Window Record Debug icon from General Tool Windows category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/tool-window-record-debug/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-record-debug/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tool-window-record-debug",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

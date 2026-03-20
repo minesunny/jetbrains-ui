@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-properties",
+  "type": "registry:ui",
+  "title": "Properties",
+  "description": "Properties icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/properties/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/properties/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "properties",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

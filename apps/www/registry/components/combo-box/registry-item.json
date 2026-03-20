@@ -1,0 +1,58 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "combo-box",
+  "type": "registry:ui",
+  "title": "Combo Box",
+  "description": "JetBrains UI 风格的组合框组件，基于 Radix UI Select",
+  "dependencies": ["@radix-ui/react-select"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/components/combo-box/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/combo-box/index.tsx"
+    },
+    {
+      "path": "registry/components/combo-box/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/combo-box/index.css"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "combo-box",
+      "combobox",
+      "dropdown",
+      "jetbrains",
+      "ui",
+      "组件",
+      "组合框"
+    ],
+    "category": "selects",
+    "docs": {
+      "description": "JetBrains UI 风格的组合框组件，基于 Radix UI Select 构建，提供流畅的展开/收起动画效果。",
+      "features": [
+        "流畅的展开/收起动画",
+        "支持分组和标签",
+        "完整的键盘导航",
+        "支持禁用选项",
+        "支持无效状态",
+        "优秀的无障碍支持",
+        "支持亮色/暗色主题"
+      ]
+    },
+    "demoProps": {
+      "ComboBox": {
+        "state": {
+          "value": "default",
+          "options": {
+            "default": "default",
+            "active": "active",
+            "invalid": "invalid",
+            "disabled": "disabled"
+          }
+        }
+      }
+    }
+  }
+}

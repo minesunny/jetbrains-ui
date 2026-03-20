@@ -1,0 +1,37 @@
+{
+  "name": "demo-button",
+  "type": "registry:ui",
+  "title": "Button Demo",
+  "description": "Demo showing a button.",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/buttons"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/button/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/button.tsx",
+      "content": "import { Button, type ButtonProps } from '@/components/jetbrains-ui/button';\n\ninterface ButtonDemoProps {\n  variant: ButtonProps['variant'];\n  slim?: ButtonProps['slim'];\n  tooltip?: ButtonProps['tooltip'];\n}\n\nexport default function ButtonDemo({\n  variant,\n  slim = false,\n  tooltip,\n}: ButtonDemoProps) {\n  return (\n    <Button variant={variant} slim={slim} tooltip={tooltip}>\n      Button\n    </Button>\n  );\n}"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "Button": {
+        "variant": {
+          "value": "primary",
+          "options": {
+            "primary": "primary",
+            "secondary": "secondary"
+          }
+        },
+        "slim": {
+          "value": false
+        },
+        "tooltip": {
+          "value": ""
+        }
+      }
+    }
+  }
+}

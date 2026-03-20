@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-parameter",
+  "type": "registry:ui",
+  "title": "Parameter",
+  "description": "Parameter icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/parameter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/parameter/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "parameter",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

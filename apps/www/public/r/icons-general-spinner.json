@@ -1,0 +1,33 @@
+{
+  "name": "icons-general-spinner",
+  "type": "registry:ui",
+  "title": "General Spinner Icons",
+  "description": "All 1 icons from the General Spinner category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/spinner/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/spinner/index.ts",
+      "content": "export { Loader } from './loader';\nexport type { LoaderProps } from './loader';\nexport { iconNames } from '../types';\nexport type { IconName, IconMode, IconProps, IconSize } from '../types';"
+    },
+    {
+      "path": "registry/icons/general/spinner/loader/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/spinner/loader/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type LoaderProps = IconProps;\n\nconst LoaderLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect\n      opacity=\".93\"\n      x=\"2.35\"\n      y=\"3.764\"\n      width=\"2\"\n      height=\"4\"\n      rx=\"1\"\n      transform=\"rotate(-45 2.35 3.764)\"\n      fill=\"#A8ADBD\"\n    />\n    <rect\n      opacity=\".78\"\n      x=\"1\"\n      y=\"7\"\n      width=\"4\"\n      height=\"2\"\n      rx=\"1\"\n      fill=\"#A8ADBD\"\n    />\n    <rect\n      opacity=\".69\"\n      x=\"5.179\"\n      y=\"9.41\"\n      width=\"2\"\n      height=\"4\"\n      rx=\"1\"\n      transform=\"rotate(45 5.179 9.41)\"\n      fill=\"#A8ADBD\"\n    />\n    <rect\n      opacity=\".62\"\n      x=\"7\"\n      y=\"11\"\n      width=\"2\"\n      height=\"4\"\n      rx=\"1\"\n      fill=\"#A8ADBD\"\n    />\n    <rect\n      opacity=\".48\"\n      x=\"9.41\"\n      y=\"10.824\"\n      width=\"2\"\n      height=\"4\"\n      rx=\"1\"\n      transform=\"rotate(-45 9.41 10.824)\"\n      fill=\"#A8ADBD\"\n    />\n    <rect\n      opacity=\".38\"\n      x=\"11\"\n      y=\"7\"\n      width=\"4\"\n      height=\"2\"\n      rx=\"1\"\n      fill=\"#A8ADBD\"\n    />\n    <rect\n      opacity=\".3\"\n      x=\"12.238\"\n      y=\"2.35\"\n      width=\"2\"\n      height=\"4\"\n      rx=\"1\"\n      transform=\"rotate(45 12.238 2.35)\"\n      fill=\"#A8ADBD\"\n    />\n    <rect x=\"7\" y=\"1\" width=\"2\" height=\"4\" rx=\"1\" fill=\"#A8ADBD\" />\n  </svg>\n);\n\nconst LoaderDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect\n      opacity=\".93\"\n      x=\"2.35\"\n      y=\"3.764\"\n      width=\"2\"\n      height=\"4\"\n      rx=\"1\"\n      transform=\"rotate(-45 2.35 3.764)\"\n      fill=\"#6F737A\"\n    />\n    <rect\n      opacity=\".78\"\n      x=\"1\"\n      y=\"7\"\n      width=\"4\"\n      height=\"2\"\n      rx=\"1\"\n      fill=\"#6F737A\"\n    />\n    <rect\n      opacity=\".69\"\n      x=\"5.179\"\n      y=\"9.41\"\n      width=\"2\"\n      height=\"4\"\n      rx=\"1\"\n      transform=\"rotate(45 5.179 9.41)\"\n      fill=\"#6F737A\"\n    />\n    <rect\n      opacity=\".62\"\n      x=\"7\"\n      y=\"11\"\n      width=\"2\"\n      height=\"4\"\n      rx=\"1\"\n      fill=\"#6F737A\"\n    />\n    <rect\n      opacity=\".48\"\n      x=\"9.41\"\n      y=\"10.824\"\n      width=\"2\"\n      height=\"4\"\n      rx=\"1\"\n      transform=\"rotate(-45 9.41 10.824)\"\n      fill=\"#6F737A\"\n    />\n    <rect\n      opacity=\".38\"\n      x=\"11\"\n      y=\"7\"\n      width=\"4\"\n      height=\"2\"\n      rx=\"1\"\n      fill=\"#6F737A\"\n    />\n    <rect\n      opacity=\".3\"\n      x=\"12.238\"\n      y=\"2.35\"\n      width=\"2\"\n      height=\"4\"\n      rx=\"1\"\n      transform=\"rotate(45 12.238 2.35)\"\n      fill=\"#6F737A\"\n    />\n    <rect x=\"7\" y=\"1\" width=\"2\" height=\"4\" rx=\"1\" fill=\"#6F737A\" />\n  </svg>\n);\n\nexport const Loader: FC<LoaderProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? LoaderLight : LoaderDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "spinner",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-run-to-cursor",
+  "type": "registry:ui",
+  "title": "Run To Cursor",
+  "description": "Run To Cursor icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/run-to-cursor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/run-to-cursor/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run-to-cursor",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

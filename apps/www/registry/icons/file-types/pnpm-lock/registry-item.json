@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-pnpm-lock",
+  "type": "registry:ui",
+  "title": "Pnpm Lock",
+  "description": "Pnpm Lock icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/pnpm-lock/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/pnpm-lock/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "pnpm-lock",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

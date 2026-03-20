@@ -1,0 +1,95 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type CreateSequenceProps = IconProps;
+
+const CreateSequenceLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12.5 9a.5.5 0 0 1 .5.5V12h2.5a.5.5 0 0 1 0 1H13v2.5a.5.5 0 0 1-1 0V13H9.5a.5.5 0 0 1 0-1H12V9.5a.5.5 0 0 1 .5-.5"
+      fill="#3574F0"
+    />
+    <path
+      d="M1 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M5.275 10.294 7.7 8.063q.349-.324.506-.621.162-.302.162-.637 0-.319-.145-.566a1 1 0 0 0-.408-.382 1.3 1.3 0 0 0-.6-.136q-.36 0-.645.157a1.13 1.13 0 0 0-.442.43 1.26 1.26 0 0 0-.157.633h-.863q0-.57.276-1.02.276-.456.76-.714a2.3 2.3 0 0 1 1.089-.26q.57 0 1.028.234.464.234.723.642.264.408.263.918 0 .489-.255.943-.255.45-.803.948l-1.708 1.585h2.932V11h-4.14zM14 10.56q.19-.167.33-.381.28-.434.28-.986a1.8 1.8 0 0 0-.28-.994 1.85 1.85 0 0 0-.779-.676 2.3 2.3 0 0 0-.835-.218l1.681-1.576v-.68h-3.8v.744h2.75l-1.61 1.522v.667h.684q.267 0 .494.076A1.5 1.5 0 0 1 14 9.5zM11 10.67V9.5q0-.102.013-.2h-.743q.018.523.302.934.176.252.428.436M8.085 13A1.5 1.5 0 0 0 9.5 14h-8a.5.5 0 0 1 0-1zM1.293 6.677h1.415v4.322h.859V5.05h-.625q0 .28-.106.489a.77.77 0 0 1-.306.319.95.95 0 0 1-.468.11h-.769z"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const CreateSequenceDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12.5 9a.5.5 0 0 1 .5.5V12h2.5a.5.5 0 0 1 0 1H13v2.5a.5.5 0 0 1-1 0V13H9.5a.5.5 0 0 1 0-1H12V9.5a.5.5 0 0 1 .5-.5"
+      fill="#548AF7"
+    />
+    <path
+      d="M1 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M5.275 10.294 7.7 8.063q.349-.324.506-.621.162-.302.162-.637 0-.319-.145-.566a1 1 0 0 0-.408-.382 1.3 1.3 0 0 0-.6-.136q-.36 0-.645.157a1.13 1.13 0 0 0-.442.43 1.26 1.26 0 0 0-.157.633h-.863q0-.57.276-1.02.276-.456.76-.714a2.3 2.3 0 0 1 1.089-.26q.57 0 1.028.234.464.234.723.642.264.408.263.918 0 .489-.255.943-.255.45-.803.948l-1.708 1.585h2.932V11h-4.14zM14 10.56q.19-.167.33-.381.28-.434.28-.986a1.8 1.8 0 0 0-.28-.994 1.85 1.85 0 0 0-.779-.676 2.3 2.3 0 0 0-.835-.218l1.681-1.576v-.68h-3.8v.744h2.75l-1.61 1.522v.667h.684q.267 0 .494.076A1.5 1.5 0 0 1 14 9.5zM11 10.67V9.5q0-.102.013-.2h-.743q.018.523.302.934.176.252.428.436M8.085 13A1.5 1.5 0 0 0 9.5 14h-8a.5.5 0 0 1 0-1zM1.293 6.677h1.415v4.322h.859V5.05h-.625q0 .28-.106.489a.77.77 0 0 1-.306.319.95.95 0 0 1-.468.11h-.769z"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const CreateSequence: React.FC<CreateSequenceProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? CreateSequenceLight : CreateSequenceDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

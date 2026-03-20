@@ -1,0 +1,110 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type HanaProps = IconProps;
+
+const HanaLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1 1h14l-2.5 7H1z"
+      fill="#389FD6"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3.579 7.04A3.12 3.12 0 0 1 1.5 6.256l.637-.763c.441.364.903.595 1.463.595.441 0 .707-.175.707-.462v-.014c0-.273-.168-.413-.987-.623-.987-.252-1.624-.525-1.624-1.498v-.014C1.696 2.588 2.41 2 3.411 2c.714 0 1.323.224 1.82.623l-.56.812c-.434-.301-.861-.483-1.274-.483s-.63.189-.63.427v.014c0 .322.21.427 1.057.644.906.236 1.451.554 1.54 1.255l1.374-3.227h.994L9 5.045V2.1h2.002c1.169 0 1.876.693 1.876 1.694v.014c0 1.134-.882 1.722-1.981 1.722h-.819V7H8.705l-.448-1.099s-.498.282-1.022.282c-.525 0-1.05-.282-1.05-.282L5.737 7h-1.1l.113-.264c-.306.2-.708.304-1.171.304m2.99-2.091s.326.22.652.22c.325 0 .65-.22.65-.22l-.65-1.589zm4.363-.378h-.854V3.073h.833c.539 0 .875.259.875.742v.014c0 .42-.315.742-.854.742"
+      fill="#fff"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1 9v5h1v-1.999h1V14h2l.33-.988h1.34L7 14h2v-3l1 3h2l.33-.988h1.34L14 14h1l-1.5-5h-1L11 14V9h-1v3.001L9 9H8v5L6.5 9h-1L4 14V9H3v2.028H1.998L2 9zm5.332 2.996L6 11l-.334 1.001zM13 11l.332.996-.666.005z"
+      fill="#EDA200"
+    />
+  </svg>
+);
+
+const HanaDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1 1h14l-2.5 7H1z"
+      fill="#389FD6"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3.579 7.04A3.12 3.12 0 0 1 1.5 6.256l.637-.763c.441.364.903.595 1.463.595.441 0 .707-.175.707-.462v-.014c0-.273-.168-.413-.987-.623-.987-.252-1.624-.525-1.624-1.498v-.014C1.696 2.588 2.41 2 3.411 2c.714 0 1.323.224 1.82.623l-.56.812c-.434-.301-.861-.483-1.274-.483s-.63.189-.63.427v.014c0 .322.21.427 1.057.644.906.236 1.451.554 1.54 1.255l1.374-3.227h.994L9 5.045V2.1h2.002c1.169 0 1.876.693 1.876 1.694v.014c0 1.134-.882 1.722-1.981 1.722h-.819V7H8.705l-.448-1.099s-.498.282-1.022.282c-.525 0-1.05-.282-1.05-.282L5.737 7h-1.1l.113-.264c-.306.2-.708.304-1.171.304m2.99-2.091s.326.22.652.22c.325 0 .65-.22.65-.22l-.65-1.589zm4.363-.378h-.854V3.073h.833c.539 0 .875.259.875.742v.014c0 .42-.315.742-.854.742"
+      fill="#fff"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1 9v5h1v-1.999h1V14h2l.33-.988h1.34L7 14h2v-3l1 3h2l.33-.988h1.34L14 14h1l-1.5-5h-1L11 14V9h-1v3.001L9 9H8v5L6.5 9h-1L4 14V9H3v2.028H1.998L2 9zm5.332 2.996L6 11l-.334 1.001zM13 11l.332.996-.666.005z"
+      fill="#EDA200"
+    />
+  </svg>
+);
+
+export const Hana: FC<HanaProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? HanaLight : HanaDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

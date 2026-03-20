@@ -1,0 +1,21 @@
+{
+  "title": "图标",
+  "description": "JetBrains 风格图标组件。",
+  "icon": "Palette",
+  "root": true,
+  "pages": [
+    "general",
+    "plugins",
+    "breakpoints",
+    "build",
+    "database",
+    "debugger",
+    "editor-icons",
+    "file-types",
+    "nodes",
+    "run",
+    "run-configurations",
+    "terminal",
+    "vcs"
+  ]
+}

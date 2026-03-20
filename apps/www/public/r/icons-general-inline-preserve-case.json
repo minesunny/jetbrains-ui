@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-inline-preserve-case",
+  "type": "registry:ui",
+  "title": "Preserve Case",
+  "description": "Preserve Case icon from General Inline category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/inline/preserve-case/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/preserve-case/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type PreserveCaseProps = IconProps;\n\nconst PreserveCaseLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3.009 6.3h1.204L7.139 14H5.984l-.704-1.958H2.018L1.365 14H.182zm1.941 4.824L3.729 7.762l-.127-.473-.12.473-1.156 3.36zM11.509 6.3h1.204l2.926 7.7h-1.155l-.704-1.958h-3.261L9.864 14H8.681zm1.941 4.824-1.221-3.361-.127-.473-.12.473-1.155 3.36z\"\n      fill=\"#6C707E\"\n    />\n    <path d=\"m7 5.813 2.406-2.407L7 1\" stroke=\"#6C707E\" strokeLinecap=\"round\" />\n  </svg>\n);\n\nconst PreserveCaseDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3.009 6.3h1.204L7.139 14H5.984l-.704-1.958H2.018L1.365 14H.182zm1.941 4.824L3.729 7.762l-.127-.473-.12.473-1.156 3.36zM11.509 6.3h1.204l2.926 7.7h-1.155l-.704-1.958h-3.261L9.864 14H8.681zm1.941 4.824-1.221-3.361-.127-.473-.12.473-1.155 3.36z\"\n      fill=\"#CED0D6\"\n    />\n    <path d=\"m7 5.813 2.406-2.407L7 1\" stroke=\"#CED0D6\" strokeLinecap=\"round\" />\n  </svg>\n);\n\nexport const PreserveCase: FC<PreserveCaseProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? PreserveCaseLight : PreserveCaseDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "preserve-case",
+      "icon",
+      "general",
+      "inline",
+      "jetbrains"
+    ]
+  }
+}

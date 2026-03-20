@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-switch",
+  "type": "registry:ui",
+  "title": "Switch Demo",
+  "description": "Demo showing switch component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/switch"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/switch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/switch.tsx"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "Switch": {
+        "disabled": {
+          "value": false
+        }
+      }
+    }
+  }
+}

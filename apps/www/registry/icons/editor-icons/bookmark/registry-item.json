@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-bookmark",
+  "type": "registry:ui",
+  "title": "Bookmark",
+  "description": "Bookmark icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/bookmark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/bookmark/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "bookmark",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

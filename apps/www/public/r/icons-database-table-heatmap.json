@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-table-heatmap",
+  "type": "registry:ui",
+  "title": "Table Heatmap",
+  "description": "Table Heatmap icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/table-heatmap/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/table-heatmap/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type TableHeatmapProps = IconProps;\n\nconst TableHeatmapLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9.15 1.146a.5.5 0 1 1 .707.708l-.646.646 5.203 5.203a2 2 0 0 1 0 2.828l-3.878 3.88a2 2 0 0 1-2.829 0L2.504 9.206l-.647.647a.5.5 0 0 1-.707-.708zm4.557 7.264L8.504 3.207 3.211 8.5l5.203 5.203a1 1 0 0 0 1.414 0l3.88-3.879a1 1 0 0 0 0-1.414\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"m13.532 10 .175-.176A1 1 0 0 0 13.993 9H3.711l1 1z\"\n      fill=\"#3574F0\"\n    />\n    <path\n      d=\"m13.532 10-3.704 3.703a1 1 0 0 1-1.414 0L4.711 10z\"\n      fill=\"#EDF3FF\"\n    />\n    <path\n      d=\"M2.004 11.308c.17.223.379.503.586.808.243.36.48.741.653 1.092.182.368.26.638.26.792a1.5 1.5 0 0 1-3 0c0-.154.08-.424.262-.792.173-.351.41-.733.653-1.092.207-.305.416-.585.586-.808Z\"\n      fill=\"#EDF3FF\"\n      stroke=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst TableHeatmapDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9.15 1.146a.5.5 0 1 1 .707.708l-.646.646 5.203 5.203a2 2 0 0 1 0 2.828l-3.878 3.88a2 2 0 0 1-2.829 0L2.504 9.206l-.647.647a.5.5 0 0 1-.707-.708zm4.557 7.264L8.504 3.207 3.211 8.5l5.203 5.203a1 1 0 0 0 1.414 0l3.88-3.879a1 1 0 0 0 0-1.414\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"m13.532 10 .175-.176A1 1 0 0 0 13.993 9H3.711l1 1z\"\n      fill=\"#548AF7\"\n    />\n    <path\n      d=\"m13.532 10-3.704 3.703a1 1 0 0 1-1.414 0L4.711 10z\"\n      fill=\"#25324D\"\n    />\n    <path\n      d=\"M2.004 11.308c.17.223.379.503.586.808.243.36.48.741.653 1.092.182.368.26.638.26.792a1.5 1.5 0 0 1-3 0c0-.154.08-.424.262-.792.173-.351.41-.733.653-1.092.207-.305.416-.585.586-.808Z\"\n      fill=\"#25324D\"\n      stroke=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const TableHeatmap: FC<TableHeatmapProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? TableHeatmapLight : TableHeatmapDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "table-heatmap",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

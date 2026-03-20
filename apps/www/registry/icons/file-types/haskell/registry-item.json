@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-haskell",
+  "type": "registry:ui",
+  "title": "Haskell",
+  "description": "Haskell icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/haskell/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/haskell/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "haskell",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

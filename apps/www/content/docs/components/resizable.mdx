@@ -1,0 +1,89 @@
+---
+title: Resizable
+description: Resizable component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-resizable" />
+
+## Overview
+
+A composable resizable layout component with support for collapsible panels and min-size scroll fallback.
+
+## Installation
+
+<ComponentInstallation name="resizable" />
+
+## Usage
+
+```tsx
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from '@/components/jetbrains-ui/resizable';
+
+<ResizablePanelGroup direction="horizontal">
+  <ResizablePanel defaultSize={40} minSize={20} collapsible collapsedSize={0}>
+    A
+  </ResizablePanel>
+  <ResizableHandle />
+  <ResizablePanel defaultSize={60} minSize={30}>
+    B
+  </ResizablePanel>
+</ResizablePanelGroup>;
+```
+
+## Use Case: Collapsible Panel + Min-Size Scroll Fallback
+
+```tsx
+'use client';
+
+import * as React from 'react';
+
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from '@/components/jetbrains-ui/resizable';
+
+export function ResizableCollapsibleExample() {
+  const [collapse, setCollapse] = React.useState(false);
+
+  return (
+    <div className="space-y-3">
+      <button
+        type="button"
+        className="rounded border px-3 py-1 text-sm"
+        onClick={() => setCollapse((prev) => !prev)}
+      >
+        Toggle Panel A
+      </button>
+
+      <ResizablePanelGroup
+        direction="horizontal"
+        className="h-56 rounded-lg border"
+      >
+        <ResizablePanel
+          defaultSize={45}
+          minSize={20}
+          collapsible
+          collapse={collapse}
+          collapsedSize={0}
+        >
+          <div className="h-full min-w-[640px] p-3">
+            Content gets internal scroll when panel size reaches minSize.
+          </div>
+        </ResizablePanel>
+        <ResizableHandle withHandle />
+        <ResizablePanel defaultSize={55} minSize={25}>
+          <div className="h-full p-3">Panel B</div>
+        </ResizablePanel>
+      </ResizablePanelGroup>
+    </div>
+  );
+}
+```

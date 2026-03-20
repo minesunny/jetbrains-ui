@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-tidb",
+  "type": "registry:ui",
+  "title": "Tidb",
+  "description": "Tidb icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/tidb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/tidb/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type TidbProps = IconProps;\n\nconst TidbLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M1.5 4.5 8 .5l6.5 4v7l-6.5 4-6.5-4z\" fill=\"#E30C34\" />\n    <path\n      d=\"M8.002 3 3.68 5.49v2.528L5.84 6.76l.019 5.002L8.002 13V5.504l2.137-1.242zM12.325 5.48l-2.122 1.301v4.989l2.122-1.247z\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nconst TidbDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M1.5 4.5 8 .5l6.5 4v7l-6.5 4-6.5-4z\" fill=\"#E30C34\" />\n    <path\n      d=\"M8.002 3 3.68 5.49v2.528L5.84 6.76l.019 5.002L8.002 13V5.504l2.137-1.242zM12.325 5.48l-2.122 1.301v4.989l2.122-1.247z\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nexport const Tidb: FC<TidbProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? TidbLight : TidbDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tidb",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

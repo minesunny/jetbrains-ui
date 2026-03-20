@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-actual-zoom",
+  "type": "registry:ui",
+  "title": "Actual Zoom",
+  "description": "Actual Zoom icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/actual-zoom/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/actual-zoom/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "actual-zoom",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

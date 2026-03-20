@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-debugger-thread-running",
+  "type": "registry:ui",
+  "title": "Thread Running",
+  "description": "Thread Running icon from Debugger category.",
+  "registryDependencies": [
+    "icons-debugger-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/debugger/thread-running/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/debugger/thread-running/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "thread-running",
+      "icon",
+      "debugger",
+      "jetbrains"
+    ]
+  }
+}

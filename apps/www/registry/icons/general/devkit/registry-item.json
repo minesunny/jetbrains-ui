@@ -1,0 +1,41 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-devkit",
+  "type": "registry:ui",
+  "title": "General Devkit Icons",
+  "description": "All 3 icons from the General Devkit category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/devkit/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/index.ts"
+    },
+    {
+      "path": "registry/icons/general/devkit/add-sdk/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/add-sdk/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/devkit/plugin-v2/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/plugin-v2/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/devkit/sdk-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/sdk-closed/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "devkit",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

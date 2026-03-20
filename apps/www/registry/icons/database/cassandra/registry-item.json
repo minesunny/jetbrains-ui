@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-cassandra",
+  "type": "registry:ui",
+  "title": "Cassandra",
+  "description": "Cassandra icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/cassandra/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/cassandra/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cassandra",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

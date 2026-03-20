@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-preview-only",
+  "type": "registry:ui",
+  "title": "Preview Only",
+  "description": "Preview Only icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/preview-only/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/preview-only/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type PreviewOnlyProps = IconProps;\n\nconst PreviewOnlyLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect x=\"2.5\" y=\"2.5\" width=\"11\" height=\"11\" rx=\"1.5\" stroke=\"#6C707E\" />\n    <path\n      d=\"m2.357 9.5 1.826-1.825a1 1 0 0 1 1.38-.033L12 13.5\"\n      stroke=\"#6C707E\"\n    />\n    <circle cx=\"10\" cy=\"6\" r=\"1.5\" stroke=\"#6C707E\" />\n  </svg>\n);\n\nconst PreviewOnlyDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect x=\"2.5\" y=\"2.5\" width=\"11\" height=\"11\" rx=\"1.5\" stroke=\"#CED0D6\" />\n    <path\n      d=\"m2.357 9.5 1.826-1.825a1 1 0 0 1 1.38-.033L12 13.5\"\n      stroke=\"#CED0D6\"\n    />\n    <circle cx=\"10\" cy=\"6\" r=\"1.5\" stroke=\"#CED0D6\" />\n  </svg>\n);\n\nexport const PreviewOnly: FC<PreviewOnlyProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? PreviewOnlyLight : PreviewOnlyDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "preview-only",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

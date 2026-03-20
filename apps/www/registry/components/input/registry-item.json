@@ -1,0 +1,53 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input",
+  "type": "registry:ui",
+  "title": "Input",
+  "description": "JetBrains UI 风格的单行输入框组件，支持 invalid/disabled 等常见状态",
+  "dependencies": [],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/components/input/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/input/index.tsx"
+    },
+    {
+      "path": "registry/components/input/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/input/index.css"
+    }
+  ],
+  "meta": {
+    "keywords": ["input", "text-field", "jetbrains", "ui", "组件", "输入框"],
+    "category": "inputs",
+    "docs": {
+      "description": "JetBrains UI 风格的文本输入框组件，适用于表单和搜索场景，支持 hover/focus/invalid/disabled 状态。",
+      "features": [
+        "单行文本输入",
+        "支持 invalid 状态",
+        "支持 disabled 状态",
+        "基于 JetBrains 设计令牌",
+        "支持亮色/暗色主题"
+      ]
+    },
+    "demoProps": {
+      "Input": {
+        "type": {
+          "value": "text",
+          "options": {
+            "text": "text",
+            "email": "email",
+            "password": "password"
+          }
+        },
+        "disabled": {
+          "value": false
+        },
+        "invalid": {
+          "value": false
+        }
+      }
+    }
+  }
+}

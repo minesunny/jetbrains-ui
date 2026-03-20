@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-sbt-shell",
+  "type": "registry:ui",
+  "title": "Sbt Shell",
+  "description": "Sbt Shell icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/sbt-shell/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/sbt-shell/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SbtShellProps = IconProps;\n\nconst SbtShellLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.416a5 5 0 0 1-.316-1H3a1 1 0 0 1-1-1V6h12v1.416q.537.235 1 .584V4a2 2 0 0 0-2-2zm10 1H3a1 1 0 0 0-1 1v1h12V4a1 1 0 0 0-1-1\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"m9.852 9.47 2.743-.735a.5.5 0 0 1 .484.13l2.027 2.046a.5.5 0 0 1 .129.48l-.733 2.784a.5.5 0 0 1-.354.355l-2.743.735a.5.5 0 0 1-.484-.13l-2.027-2.046a.5.5 0 0 1-.129-.48l.733-2.784a.5.5 0 0 1 .354-.355Z\"\n      stroke=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst SbtShellDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.416a5 5 0 0 1-.316-1H3a1 1 0 0 1-1-1V6h12v1.416q.537.235 1 .584V4a2 2 0 0 0-2-2zm10 1H3a1 1 0 0 0-1 1v1h12V4a1 1 0 0 0-1-1\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"m9.852 9.47 2.743-.735a.5.5 0 0 1 .484.13l2.027 2.046a.5.5 0 0 1 .129.48l-.733 2.784a.5.5 0 0 1-.354.355l-2.743.735a.5.5 0 0 1-.484-.13l-2.027-2.046a.5.5 0 0 1-.129-.48l.733-2.784a.5.5 0 0 1 .354-.355Z\"\n      stroke=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const SbtShell: FC<SbtShellProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? SbtShellLight : SbtShellDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sbt-shell",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

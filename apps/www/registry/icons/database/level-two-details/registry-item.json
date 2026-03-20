@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-level-two-details",
+  "type": "registry:ui",
+  "title": "Level Two Details",
+  "description": "Level Two Details icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/level-two-details/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/level-two-details/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "level-two-details",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

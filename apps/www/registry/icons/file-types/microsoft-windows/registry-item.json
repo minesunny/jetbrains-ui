@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-microsoft-windows",
+  "type": "registry:ui",
+  "title": "Microsoft Windows",
+  "description": "Microsoft Windows icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/microsoft-windows/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/microsoft-windows/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "microsoft-windows",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-jpa-many-to-many",
+  "type": "registry:ui",
+  "title": "Many To Many",
+  "description": "Many To Many icon from Plugins Jpa category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/many-to-many/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/many-to-many/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ManyToManyProps = IconProps;\n\nconst ManyToManyLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"8\" cy=\"8\" r=\"4.5\" stroke=\"#6C707E\" />\n    <circle cx=\"11.5\" cy=\"4.5\" r=\"3\" fill=\"#FFF4EB\" stroke=\"#E66D17\" />\n    <circle cx=\"4.5\" cy=\"11.5\" r=\"3\" fill=\"#FFF4EB\" stroke=\"#E66D17\" />\n    <circle cx=\"4.5\" cy=\"11.5\" r=\"1.5\" fill=\"#6C707E\" />\n    <circle cx=\"11.5\" cy=\"4.5\" r=\"1.5\" fill=\"#6C707E\" />\n  </svg>\n);\n\nconst ManyToManyDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"8\" cy=\"8\" r=\"4.5\" stroke=\"#CED0D6\" />\n    <circle cx=\"11.5\" cy=\"4.5\" r=\"3\" fill=\"#45322B\" stroke=\"#C77D55\" />\n    <circle cx=\"4.5\" cy=\"11.5\" r=\"3\" fill=\"#45322B\" stroke=\"#C77D55\" />\n    <circle cx=\"4.5\" cy=\"11.5\" r=\"1.5\" fill=\"#CED0D6\" />\n    <circle cx=\"11.5\" cy=\"4.5\" r=\"1.5\" fill=\"#CED0D6\" />\n  </svg>\n);\n\nexport const ManyToMany: React.FC<ManyToManyProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ManyToManyLight : ManyToManyDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "many-to-many",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

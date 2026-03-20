@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-github-github",
+  "type": "registry:ui",
+  "title": "Github",
+  "description": "Github icon from Plugins Github category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/github/github/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/github/github/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "github",
+      "icon",
+      "plugins",
+      "github",
+      "jetbrains"
+    ]
+  }
+}

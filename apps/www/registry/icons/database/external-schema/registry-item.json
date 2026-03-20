@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-external-schema",
+  "type": "registry:ui",
+  "title": "External Schema",
+  "description": "External Schema icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/external-schema/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/external-schema/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "external-schema",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

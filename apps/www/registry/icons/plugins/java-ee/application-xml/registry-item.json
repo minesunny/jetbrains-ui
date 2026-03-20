@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-java-ee-application-xml",
+  "type": "registry:ui",
+  "title": "Application Xml",
+  "description": "Application Xml icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/application-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/application-xml/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "application-xml",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

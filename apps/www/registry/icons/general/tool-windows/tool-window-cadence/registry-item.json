@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-tool-window-cadence",
+  "type": "registry:ui",
+  "title": "Tool Window Cadence",
+  "description": "Tool Window Cadence icon from General Tool Windows category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/tool-window-cadence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-cadence/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tool-window-cadence",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

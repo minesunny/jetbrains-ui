@@ -1,0 +1,3715 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins",
+  "type": "registry:ui",
+  "title": "Plugins Icons",
+  "description": "All 707 icons from the Plugins category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/aop/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/aop/abstract-advice/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/abstract-advice/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/aop/after-advice/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/after-advice/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/aop/after-returning-advice/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/after-returning-advice/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/aop/after-throwing-advice/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/after-throwing-advice/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/aop/around-advice/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/around-advice/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/aop/before-advice/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/before-advice/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/aop/from-arrow/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/from-arrow/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/aop/pointcut/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/pointcut/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/aop/to-arrow/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/to-arrow/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bazel/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bazel/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/bazel/bazel/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bazel/bazel-config/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-config/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bazel/bazel-error/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-error/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bazel/bazel-reload/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-reload/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bazel/bazel-target/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-target/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bazel/bazel-warning/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-warning/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bazel/build-and-reload/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bazel/build-and-reload/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/arbitrary-cluster/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/arbitrary-cluster/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/aws-glue/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/aws-glue/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/chart-area/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-area/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/chart-area-range/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-area-range/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/chart-bar/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-bar/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/chart-bubble/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-bubble/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/chart-histogram/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-histogram/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/chart-line/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-line/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/chart-pie/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-pie/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/chart-scatter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-scatter/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/chart-stock/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-stock/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/cluster/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/cluster/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/dbt-utility/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/dbt-utility/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/flink/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/flink/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/py-spark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/py-spark/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/remote-file-systems/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/remote-file-systems/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/spark-run/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/spark-run/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/bdt/zeppelin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/zeppelin/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/action-qualified-names/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/action-qualified-names/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/add-executable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/add-executable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/add-library/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/add-library/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/add-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/add-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/android-device/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/android-device/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/app-code-project/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/app-code-project/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/app-code-workspace/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/app-code-workspace/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/application/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/application/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/application-extension/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/application-extension/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/assets/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/assets/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/auto-reload/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/auto-reload/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/boost-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/boost-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/c/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/c/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/c-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/c-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/catch-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/catch-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/class-cpp/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/class-cpp/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cmake/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cmake/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cmake-debug/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cmake-debug/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cmake-function/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cmake-function/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cmake-load-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cmake-load-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cmake-macro/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cmake-macro/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cmake-modificator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cmake-modificator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cmake-target-executable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cmake-target-executable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cocoa-pods/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cocoa-pods/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-actor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-actor/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-actor-extension/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-actor-extension/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-enum/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-enum/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-enum-const/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-enum-const/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-enum-extension/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-enum-extension/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-field-optional/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-field-optional/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-function/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-function/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-function-abstract/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-function-abstract/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-function-invocation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-function-invocation/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-global/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-global/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-local/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-local/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-member-abstract/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-member-abstract/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-operator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-operator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-parameter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-parameter/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-property/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-property/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-property-optional/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-property-optional/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-protocol/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-protocol/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-protocol-extension/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-protocol-extension/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-struct/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-struct/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-struct-extension/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-struct-extension/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-type/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-union/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-union/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/compilation-database-load-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/compilation-database-load-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cpp/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cpp/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cu/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/cuh/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cuh/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/custom-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/custom-folder/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/custom-gdb-run-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/custom-gdb-run-configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/custom-target/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/custom-target/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/debug-target-computer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/debug-target-computer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/debug-target-controller/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/debug-target-controller/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/dependency/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/dependency/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/doc-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/doc-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/executable-target/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/executable-target/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/extension-run-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/extension-run-configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/file-type-swift/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/file-type-swift/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/framework/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/framework/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/freeze/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/freeze/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/freeze-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/freeze-all/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/google-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/google-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/group/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/group/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/group-qualified-name/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/group-qualified-name/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/h/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/h/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/i-phone-device/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/i-phone-device/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/install/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/install/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/iocfile-type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/iocfile-type/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/ld/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/ld/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/library-target/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/library-target/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/load-swift-package-manager-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/load-swift-package-manager-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/local-swift-package-dependency/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/local-swift-package-dependency/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/location/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/location/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/m/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/m/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/makefile/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/makefile/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/makefile-app/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/makefile-app/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/makefile-load-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/makefile-load-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/metal/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/metal/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/mm/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/mm/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/module-target/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/module-target/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/modulemap/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/modulemap/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/namespace-cpp/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/namespace-cpp/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/ocd-run-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/ocd-run-configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/option-command/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/option-command/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/precedence-group/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/precedence-group/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/preprocess-defines/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/preprocess-defines/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/qt/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/qt/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/register/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/register/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/registers/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/registers/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/remote-swift-package-dependency/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/remote-swift-package-dependency/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/remote-tool-set/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/remote-tool-set/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/reset-cache-and-reload-projects/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/reset-cache-and-reload-projects/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/reset-mcu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/reset-mcu/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/return-value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/return-value/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/stm32-cube-mx/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/stm32-cube-mx/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/swift-lang/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/swift-lang/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/swift-package/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/swift-package/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/swift-package-dependency/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/swift-package-dependency/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/swift-package-manifest/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/swift-package-manifest/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/swift-package-run/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/swift-package-run/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/swift-package-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/swift-package-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/target/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/target/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/type-extension/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/type-extension/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/unfreeze/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/unfreeze/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/unfreeze-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/unfreeze-all/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/value-muted/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/value-muted/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/variables/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/variables/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/vcpkg/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/vcpkg/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/vhdl/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/vhdl/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/сode-assistant-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/сode-assistant-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/сode-assistant-class-extension/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/сode-assistant-class-extension/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/сode-assistant-macro/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/сode-assistant-macro/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/сode-assistant-member/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/сode-assistant-member/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/сode-assistant-member-optional/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/сode-assistant-member-optional/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/сode-assistant-namespace/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/сode-assistant-namespace/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/сore-dump-debug/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/сore-dump-debug/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/cidr/сrun-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/сrun-configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-cam-avatar-off/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-cam-avatar-off/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-cam-avatar-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-cam-avatar-on/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-cam-off/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-cam-off/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-cam-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-cam-on/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-disable-call/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-disable-call/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-enable-call/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-enable-call/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-icon-modificator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-icon-modificator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-icon-modificator-menu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-icon-modificator-menu/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-invite/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-invite/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-mic-avatar-off/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-mic-avatar-off/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-mic-avatar-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-mic-avatar-on/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-mic-off/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-mic-off/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-mic-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-mic-on/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-permission-edit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permission-edit/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-permission-full/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permission-full/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-permission-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permission-view/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-permissions/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permissions/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-permissions-denied/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permissions-denied/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-permissions-granted/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permissions-granted/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-screen-in-browser-off/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-screen-in-browser-off/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-screen-in-browser-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-screen-in-browser-on/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-screen-off/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-screen-off/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-screen-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-screen-on/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-share/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-share/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-verified/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-verified/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/dart/dart/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/dart/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/dart-remote/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/dart-remote/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/dart-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/dart-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/dart-web/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/dart-web/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/observatory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/observatory/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/warning-point/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/warning-point/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/databricks/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/databricks/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/databricks/run-as-workflow/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/databricks/run-as-workflow/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dev-containers/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dev-containers/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/dev-containers/dev-containers/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dev-containers/dev-containers/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-compose/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-compose-scaled-service-stopped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose-scaled-service-stopped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-compose-scaled-service-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose-scaled-service-up/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-compose-service-stopped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose-service-stopped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-compose-service-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose-service-up/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-registry/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-registry/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/full-line-completion/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/full-line-completion/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/full-line-completion/full-line-completion/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/full-line-completion/full-line-completion/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/full-line-completion/full-line-completion-outline/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/full-line-completion/full-line-completion-outline/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/github/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/github/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/github/github/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/github/github/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/github/github-warning/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/github/github-warning/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/gitlab/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/gitlab/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/gitlab/git-lab-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/gitlab/git-lab-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/gitlab/git-lab-warning/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/gitlab/git-lab-warning/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/apollo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/apollo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/attribute/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/attribute/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/enum/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/enum/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/fragment/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/fragment/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/graph-ql/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/graph-ql/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/graph-qlcongif/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/graph-qlcongif/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/graph-qlschema/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/graph-qlschema/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/interface/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/interface/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/mutation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/mutation/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/query/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/query/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/relay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/relay/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/scalar/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/scalar/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/subscription/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/subscription/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/type/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/graphql/variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/variable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/abstract-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/abstract-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/abstract-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/abstract-field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/abstract-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/abstract-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/abstract-property/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/abstract-property/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/annotation-type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/annotation-type/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/application-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/application-xml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/bean-factory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/bean-factory/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/bean-infrastructure/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/bean-infrastructure/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/bean-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/bean-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/bean-property/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/bean-property/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/build-on-frame-deactivation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/build-on-frame-deactivation/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/cdi/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/cdi/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/class-initializer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/class-initializer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/component/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/component/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/configuration-scan/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/configuration-scan/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/constraint-mappings/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/constraint-mappings/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/constraint-validator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/constraint-validator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/constraints/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/constraints/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/converter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/converter/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/decorator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/decorator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/deployments/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/deployments/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-artifact/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-artifact/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-business-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-business-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-cmp-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-cmp-field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-cmr-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-cmr-field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-create-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-create-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-finder-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-finder-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-jar-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-jar-xml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-module/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-primary-key-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-primary-key-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-reference/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-reference/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/embedded-attribute-overlay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/embedded-attribute-overlay/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/entity-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/entity-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/enum/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/enum/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/er-diagram/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/er-diagram/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/event/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/event/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/field-in-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/field-in-xml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/general/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/general/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/getter-in-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/getter-in-xml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/groovy/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/groovy/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/hibernate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/hibernate/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/home/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/home/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/inherited-attribute-overlay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/inherited-attribute-overlay/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/inteceptor-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/inteceptor-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/interceptor-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/interceptor-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/interceptors/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/interceptors/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/interface/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/interface/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/jakarta-ee/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/jakarta-ee/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/java-eeartifact/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/java-eeartifact/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/javaee-app-module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/javaee-app-module/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/jpa-facet/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/jpa-facet/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/lib-annotation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/lib-annotation/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/lib-validator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/lib-validator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/listener/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/listener/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/managed-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/managed-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/message-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/message-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/navigation-rule/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/navigation-rule/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-attribute/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-attribute/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-embeddable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-embeddable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-id/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-id/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-id-relationship/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-id-relationship/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-mapped-superclass/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-mapped-superclass/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-relationship/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-relationship/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-unit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-unit/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/property/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/property/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/publisher/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/publisher/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/record/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/record/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/remote/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/remote/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/renderer-kit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/renderer-kit/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/request-mapping/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/request-mapping/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/scheduled-event/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/scheduled-event/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/scopes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/scopes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/session-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/session-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/show-autowired-candidates/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/show-autowired-candidates/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/show-autowired-dependencies/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/show-autowired-dependencies/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/show-cacheable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/show-cacheable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/trait/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/trait/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/update-running-application/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/update-running-application/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/validator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/validator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/variable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-artifact/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-artifact/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-module/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-module-group/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-module-group/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-service/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-service/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-service-client/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-service-client/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-xml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/xml-service/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/xml-service/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/add-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/add-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/add-changeset/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/add-changeset/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/add-named-query/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/add-named-query/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/blaze-persistence-entity-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/blaze-persistence-entity-view/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/changeset/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/changeset/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/check-constraint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/check-constraint/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/column/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/converter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/converter/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/count/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/count/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/create-column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/create-column/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/create-constraint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/create-constraint/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/create-index/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/create-index/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/create-sequence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/create-sequence/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/create-table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/create-table/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/data-model/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/data-model/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/data-stores/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/data-stores/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/data-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/data-view/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/db-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/db-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/ddl-scripts/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/ddl-scripts/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/delete/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/delete/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/diff-liquibase-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/diff-liquibase-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/diff-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/diff-plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/drop-column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-column/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/drop-constraint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-constraint/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/drop-index/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-index/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/drop-sequence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-sequence/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/drop-table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-table/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/dto/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/dto/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/embedded/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/embedded/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/equals-and-hashcode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/equals-and-hashcode/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/explorer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/explorer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/file-transfer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/file-transfer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/find-collection/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/find-collection/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/find-instance/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/find-instance/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/flyway-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/flyway-plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/generic-ui/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/generic-ui/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/gold-key/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/gold-key/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/hibernate-event/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/hibernate-event/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/include/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/include/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/init-liquibase-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/init-liquibase-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/init-scripts/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/init-scripts/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/insight-navigate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/insight-navigate/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/java-module-root/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/java-module-root/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/liquibase/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/liquibase-mono/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase-mono/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/liquibase-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase-plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/liquibase-snapshot/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase-snapshot/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/liquibase-update/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase-update/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/mailer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/mailer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/main-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/main-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/many-to-many/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/many-to-many/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/many-to-one/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/many-to-one/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/minimalistic-mode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/minimalistic-mode/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/move-to-another-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/move-to-another-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/one-to-many/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/one-to-many/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/one-to-one/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/one-to-one/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-attribute/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-attribute/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-embeddable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-embeddable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-id/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-id/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-mapped-superclass/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-mapped-superclass/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-relationship/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-relationship/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-unit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-unit/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/project-properties/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/project-properties/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/projection/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/projection/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/query/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/query/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/query-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/query-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/reference-by/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/reference-by/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/reference-to/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/reference-to/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/remove/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/remove/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/rename-column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-column/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/rename-constraint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-constraint/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/rename-index/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-index/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/rename-sequence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-sequence/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/rename-table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-table/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/repository/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/repository/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/restore-from-ignore/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/restore-from-ignore/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/save/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/save/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/schema/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/schema/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/screens/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/screens/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/set-context/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/set-context/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/set-label/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/set-label/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/settings/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/settings/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/show-code/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/show-code/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/spring-icon/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/spring-icon/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/sql/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/sql/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/sql-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/sql-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/table/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/to-string/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/to-string/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/update/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/update/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/update-database/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/update-database/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/abstract-class-kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/abstract-class-kotlin/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/abstract-extension-function/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/abstract-extension-function/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/actual/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/actual/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/android/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/android/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/annotation-kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/annotation-kotlin/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/class-initializer-kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/class-initializer-kotlin/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/class-kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/class-kotlin/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/console/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/console/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/enum-kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/enum-kotlin/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/expect/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/expect/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/field-value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/field-value/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/field-variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/field-variable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/fir/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/fir/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/interface-kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/interface-kotlin/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/js/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/js/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/jvm/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/jvm/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin-gradle-script/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin-gradle-script/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin-js/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin-js/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin-modifier/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin-modifier/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin-notebooks/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin-notebooks/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin-notebooks-grey/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin-notebooks-grey/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin-notebooks-promo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin-notebooks-promo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin-script/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin-script/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin_activity/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin_activity/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/lambda/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/lambda/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/multiplatform/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/multiplatform/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/multiplatform-library/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/multiplatform-library/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/multiplatform-mobile/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/multiplatform-mobile/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/multiplatform-mobile-library/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/multiplatform-mobile-library/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/native/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/native/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/nodejs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/nodejs/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/object-kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/object-kotlin/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/pp-web/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/pp-web/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/type-alias/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/type-alias/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kotlin/value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/value/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/auto-refresh/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/auto-refresh/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/cluster-role/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/cluster-role/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/cluster-role-binding/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/cluster-role-binding/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/config-map/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/config-map/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/cron-jobs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/cron-jobs/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/custom-resource/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/custom-resource/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/custom-resource-definition/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/custom-resource-definition/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/custom-resources/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/custom-resources/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/daemon-set/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/daemon-set/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/debug-with-telepresence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/debug-with-telepresence/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/deployment/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/deployment/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/endpoints/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/endpoints/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/events/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/events/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/failed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/failed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/forward-ports/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/forward-ports/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/group/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/group/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/helm/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-archive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-archive/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-chart/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-chart/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-chart-lock/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-chart-lock/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-directory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-directory/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-notes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-notes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-requirments/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-requirments/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-requirments-lock/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-requirments-lock/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-undeployable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-undeployable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/helmvalues-schema/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helmvalues-schema/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/horizontal-pod-autoscaler/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/horizontal-pod-autoscaler/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/ingress/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/ingress/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/jobs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/jobs/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/kubernetes-j/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/kubernetes-j/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/kubernetes-y/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/kubernetes-y/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/kustomize/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/kustomize/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/limits/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/limits/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/mod-stop/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/mod-stop/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/namespace/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/namespace/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/namespaced-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/namespaced-mark/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/network/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/network/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/network-policy/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/network-policy/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/node/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/node/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/pending/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/pending/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/persistent-volume/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/persistent-volume/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/persistent-volume-claim/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/persistent-volume-claim/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/persistent-volumes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/persistent-volumes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/pod/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/pod/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/pod-security-policy/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/pod-security-policy/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/quota/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/quota/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/refresh-kubernetes-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/refresh-kubernetes-configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/replica-set/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/replica-set/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/role/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/role/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/role-binding/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/role-binding/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/service-account/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/service-account/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/services/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/services/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/show-logs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/show-logs/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/stateful-set/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/stateful-set/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/storage-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/storage-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/succeded/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/succeded/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/user/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/user/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/value-values/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/value-values/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/volume/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/volume/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/werf/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/werf/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/kubernetes/workloads/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/workloads/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/linux/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/linux/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/linux/linux/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/linux/linux/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/linux/linux-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/linux/linux-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/lombok/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/lombok/config/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/config/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/lombok/lombok/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/lombok/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/lombok/lombok-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/lombok-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/lombok/lombok-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/lombok-field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/lombok/lombok-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/lombok-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/meson/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/meson/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/meson/meson/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/meson/meson/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/meson/meson-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/meson/meson-plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/meson/meson-rc/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/meson/meson-rc/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/meson/meson-reload/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/meson/meson-reload/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/outsight/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/outsight/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/outsight/out-sight/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/outsight/out-sight/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/outsight/out-sight-color/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/outsight/out-sight-color/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/high-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/high-all/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/high-all-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/high-all-tree/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/high-all-tree-outline/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/high-all-tree-outline/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/low-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/low-all/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/low-all-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/low-all-tree/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/low-all-tree-outline/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/low-all-tree-outline/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/medium-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/medium-all/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/medium-all-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/medium-all-tree/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/medium-all-tree-outline/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/medium-all-tree-outline/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/safe-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/safe-all/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/safe-all-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/safe-all-tree/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/safe-all-tree-outline/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/safe-all-tree-outline/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/uncheched-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/uncheched-all/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/uncheched-all-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/uncheched-all-tree/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/package-checker/uncheched-all-tree-outline/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/uncheched-all-tree-outline/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/clean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/clean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/component-vendor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/component-vendor/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/electronic-board/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/electronic-board/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/mod-platform-io/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/mod-platform-io/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/platform-io/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/platform-io/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/software-framework/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/software-framework/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/rest/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/rest/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/rest/http_request/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/rest/http_request/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/action-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/action-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/alias-factory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/alias-factory/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/alias-sequence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/alias-sequence/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/assoc-column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/assoc-column/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/block/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/block/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/bundle-run-anything/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/bundle-run-anything/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/channel/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/channel/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/chef-cookbook/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/chef-cookbook/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/controller-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/controller-folder/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/controller-node/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/controller-node/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/db-hash/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/db-hash/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/endpoint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/endpoint/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/factory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/factory/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/haml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/haml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/hash-key/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/hash-key/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/helpers-folder-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/helpers-folder-closed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/incomplete-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/incomplete-closed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/jrails-module-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/jrails-module-closed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/jruby/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/jruby/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/jruby-run-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/jruby-run-configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/jruby-sdk-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/jruby-sdk-closed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/mailer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/mailer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/mailers-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/mailers-folder/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/migrations-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/migrations-closed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/model-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/model-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/module/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/not-defined/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/not-defined/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rails-module-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rails-module-closed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rails-server-run-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rails-server-run-configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rake-run-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rake-run-configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rake-task-def-node/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rake-task-def-node/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rbenv-run-anything/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rbenv-run-anything/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rbs-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rbs-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/reader/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/reader/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/resources/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/resources/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rhtml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rhtml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rjs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rjs/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rspec-run-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rspec-run-configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rspec-shared-group-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rspec-shared-group-closed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rspec-shared-group-ref/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rspec-shared-group-ref/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rspec-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rspec-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/ruby/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/ruby/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/ruby-gems/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/ruby-gems/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/ruby-module-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/ruby-module-closed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/ruby-remote/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/ruby-remote/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/ruby-script/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/ruby-script/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/ruby-test-unit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/ruby-test-unit/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/run-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/run-configuration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/run-rack-task/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/run-rack-task/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/run-spork-server/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/run-spork-server/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/run-with-type-tracker/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/run-with-type-tracker/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rvm-run-anything/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rvm-run-anything/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/rxml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rxml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/sequence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/sequence/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/slim/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/slim/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/step-definition-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/step-definition-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/structure-list-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/structure-list-view/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/symbol/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/symbol/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/system-dbfield/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/system-dbfield/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/test-unit-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/test-unit-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/trait/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/trait/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/undocumented-task/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/undocumented-task/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/variable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/web-root-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/web-root-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/writer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/writer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/ruby/zeus/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/zeus/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/scala/abstract-class-object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-class-object-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/abstract-class-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-class-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/abstract-field-variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-field-variable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/abstract-field-variable1/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-field-variable1/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/abstract-type-alias/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-type-alias/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/add-clause/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/add-clause/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/build-server-protocol/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/build-server-protocol/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/build-server-protocol-load-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/build-server-protocol-load-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/build-server-protocol-target/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/build-server-protocol-target/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/class-companion/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-companion/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/class-companion-swapped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-companion-swapped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/class-object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-object-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/class-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/compile-server/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/compile-server/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/enum-object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/enum-object-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/enum-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/enum-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/field-value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/field-value/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/field-value1/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/field-value1/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/field-variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/field-variable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/field-variable1/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/field-variable1/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/lambda/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/lambda/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/lightbend-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/lightbend-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/multiple-type-definitions/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/multiple-type-definitions/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/no-scala-sdk/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/no-scala-sdk/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/object-companion/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/object-companion/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/object-companion-swapped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/object-companion-swapped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/object-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/package-object/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/package-object/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/package-with-object/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/package-with-object/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/parameter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/parameter/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/pattern-value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/pattern-value/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/play2/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/play2/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/remove-clause/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/remove-clause/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/sbt-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/sbt-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-folder/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/sbt-icon/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-icon/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/sbt-load-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-load-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/sbt-shell/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-shell/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-console/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-console/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-html/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-html/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-script/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-script/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-sdk/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-sdk/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala16/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala16/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/trait-companion/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/trait-companion/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/trait-companion-swapped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/trait-companion-swapped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/trait-object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/trait-object-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/trait-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/trait-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/type-alias/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/type-alias/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/typed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/typed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/untyped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/untyped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/value/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/variable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/spring/abstract-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/abstract-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/factory-method-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/factory-method-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/file-set/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/file-set/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/implicit-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/implicit-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/infrastructure-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/infrastructure-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/integration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/integration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/jpa/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/jpa/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/listener/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/listener/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/prototype-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/prototype-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/request-mapping/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/request-mapping/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/show-autowired-dependencies/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/show-autowired-dependencies/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/show-cacheable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/show-cacheable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-batch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-batch/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-boot/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-boot/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-boot-application/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-boot-application/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-boot-endpoint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-boot-endpoint/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-boot-health/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-boot-health/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-boot-overlay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-boot-overlay/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-cloud/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-cloud/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-cloud-file-set/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-cloud-file-set/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-cloud-stream/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-cloud-stream/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-cloud-stream-file-set/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-cloud-stream-file-set/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-config/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-config/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-data/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-data/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-integration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-integration/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-java-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-java-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-java-config/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-java-config/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-models-dependency-graph/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-models-dependency-graph/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-profile/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-profile/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-property/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-property/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-repository-run-mongo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-repository-run-mongo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-security/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-security/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-session-factory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-session-factory/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-web/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-web/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-web-flow/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-web-flow/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-web-flow-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-web-flow-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/spring-web-services/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-web-services/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/transaction-manager/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/transaction-manager/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/spring/web-overlay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/web-overlay/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/stylus/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/stylus/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/stylus/stylus/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/stylus/stylus/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/tasks/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/tasks/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/tasks/start-timer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/tasks/start-timer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/tasks/stop-timer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/tasks/stop-timer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/toml/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/toml/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/toml/toml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/toml/toml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/uml/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/uml/add-note/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/add-note/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/uml/constructor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/constructor/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/uml/dependencies/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/dependencies/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/uml/edge-mod/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/edge-mod/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/uml/inner-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/inner-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/velocity/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/velocity/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/velocity/velocity/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/velocity/velocity/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/velocity/velocity-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/velocity/velocity-plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/velocity/west/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/velocity/west/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "plugins",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

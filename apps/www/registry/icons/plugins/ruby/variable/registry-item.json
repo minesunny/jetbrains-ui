@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-ruby-variable",
+  "type": "registry:ui",
+  "title": "Variable",
+  "description": "Variable icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/variable/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "variable",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

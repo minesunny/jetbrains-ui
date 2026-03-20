@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-add-executable",
+  "type": "registry:ui",
+  "title": "Add Executable",
+  "description": "Add Executable icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/add-executable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/add-executable/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "add-executable",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

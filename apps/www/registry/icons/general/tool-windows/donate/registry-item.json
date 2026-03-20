@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-donate",
+  "type": "registry:ui",
+  "title": "Donate",
+  "description": "Donate icon from General Tool Windows category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/donate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/donate/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "donate",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

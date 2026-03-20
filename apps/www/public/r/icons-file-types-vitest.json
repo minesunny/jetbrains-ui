@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-vitest",
+  "type": "registry:ui",
+  "title": "Vitest",
+  "description": "Vitest icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/vitest/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/vitest/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type VitestProps = IconProps;\n\nconst VitestLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"m12.007 5.426-3.825 5.53a.329.329 0 0 1-.598-.201l.153-3.053-2.472-.525a.33.33 0 0 1-.257-.356.3.3 0 0 1 .056-.149l3.825-5.53a.329.329 0 0 1 .598.201l-.153 3.053 2.472.524a.33.33 0 0 1 .257.357.3.3 0 0 1-.056.149\"\n      fill=\"#FCC72B\"\n    />\n    <path\n      d=\"M8.002 15.773a.77.77 0 0 1-.548-.227L3.84 11.932a.774.774 0 0 1 1.095-1.096l3.067 3.067 6.68-6.68a.775.775 0 0 1 1.095 1.095L8.55 15.546a.77.77 0 0 1-.547.227\"\n      fill=\"#729B1B\"\n    />\n    <path\n      d=\"M7.998 15.773a.77.77 0 0 0 .548-.227l3.614-3.614a.774.774 0 0 0-1.095-1.096l-3.067 3.067-6.68-6.68A.775.775 0 0 0 .222 8.317l7.229 7.228a.77.77 0 0 0 .547.227\"\n      fill=\"#729B1B\"\n      fillOpacity=\".5\"\n    />\n  </svg>\n);\n\nconst VitestDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"m12.007 5.426-3.825 5.53a.329.329 0 0 1-.598-.201l.153-3.053-2.472-.525a.33.33 0 0 1-.257-.356.3.3 0 0 1 .056-.149l3.825-5.53a.329.329 0 0 1 .598.201l-.153 3.053 2.472.524a.33.33 0 0 1 .257.357.3.3 0 0 1-.056.149\"\n      fill=\"#FCC72B\"\n    />\n    <path\n      d=\"M8.002 15.773a.77.77 0 0 1-.548-.227L3.84 11.932a.774.774 0 0 1 1.095-1.096l3.067 3.067 6.68-6.68a.775.775 0 0 1 1.095 1.095L8.55 15.546a.77.77 0 0 1-.547.227\"\n      fill=\"#729B1B\"\n    />\n    <path\n      d=\"M7.998 15.773a.77.77 0 0 0 .548-.227l3.614-3.614a.774.774 0 0 0-1.095-1.096l-3.067 3.067-6.68-6.68A.775.775 0 0 0 .222 8.317l7.229 7.228a.77.77 0 0 0 .547.227\"\n      fill=\"#729B1B\"\n      fillOpacity=\".5\"\n    />\n  </svg>\n);\n\nexport const Vitest: FC<VitestProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? VitestLight : VitestDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "vitest",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

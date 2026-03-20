@@ -1,0 +1,119 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type СRunConfigurationProps = IconProps;
+
+const СRunConfigurationLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9 9.502a1.5 1.5 0 0 1 2.294-1.272l4.002 2.497a1.5 1.5 0 0 1 0 2.546l-4.002 2.497A1.5 1.5 0 0 1 9 14.498zm1.765-.424a.5.5 0 0 0-.765.424v4.996a.5.5 0 0 0 .765.424l4.002-2.498a.5.5 0 0 0 0-.848z"
+      fill="#208A3C"
+    />
+    <path
+      d="M10 9.502a.5.5 0 0 1 .765-.424l4.002 2.498a.5.5 0 0 1 0 .848l-4.002 2.498a.5.5 0 0 1-.765-.424z"
+      fill="#F2FCF3"
+    />
+    <path
+      d="M15 9.364V5.161a2 2 0 0 0-1.008-1.737l-5-2.857a2 2 0 0 0-1.984 0l-5 2.857A2 2 0 0 0 1 5.161v5.679a2 2 0 0 0 1.008 1.736l5 2.857c.307.176.65.264.992.264V9.503c0-1.963 2.159-3.16 3.824-2.121z"
+      fill="#FAF5FF"
+    />
+    <path
+      d="M2.008 3.424A2 2 0 0 0 1 5.161v5.679a2 2 0 0 0 1.008 1.736l5 2.857c.307.176.65.264.992.264v-1a1 1 0 0 1-.496-.132l-5-2.857A1 1 0 0 1 2 10.84V5.16a1 1 0 0 1 .504-.867l5-2.858a1 1 0 0 1 .992 0l5 2.858A1 1 0 0 1 14 5.16v3.58l1 .623V5.161a2 2 0 0 0-1.008-1.737l-5-2.857a2 2 0 0 0-1.984 0z"
+      fill="#834DF0"
+    />
+    <path
+      d="M8 10.573C6.731 10.503 5.828 9.453 5.828 8c0-1.503.967-2.577 2.306-2.577.527 0 .996.153 1.366.41.204.141.377.314.513.51l.743-.618a3 3 0 0 0-.49-.502A3.4 3.4 0 0 0 8.134 4.5C6.215 4.5 4.79 5.994 4.79 8c0 1.96 1.36 3.43 3.211 3.498z"
+      fill="#834DF0"
+    />
+  </svg>
+);
+
+const СRunConfigurationDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9 9.502a1.5 1.5 0 0 1 2.294-1.272l4.002 2.497a1.5 1.5 0 0 1 0 2.546l-4.002 2.497A1.5 1.5 0 0 1 9 14.498zm1.765-.424a.5.5 0 0 0-.765.424v4.996a.5.5 0 0 0 .765.424l4.002-2.498a.5.5 0 0 0 0-.848z"
+      fill="#57965C"
+    />
+    <path
+      d="M10 9.502a.5.5 0 0 1 .765-.424l4.002 2.498a.5.5 0 0 1 0 .848l-4.002 2.498a.5.5 0 0 1-.765-.424z"
+      fill="#253627"
+    />
+    <path
+      d="M15 9.364V5.161a2 2 0 0 0-1.008-1.737l-5-2.857a2 2 0 0 0-1.984 0l-5 2.857A2 2 0 0 0 1 5.161v5.679a2 2 0 0 0 1.008 1.736l5 2.857c.307.176.65.264.992.264V9.503c0-1.963 2.159-3.16 3.824-2.121z"
+      fill="#2F2936"
+    />
+    <path
+      d="M2.008 3.424A2 2 0 0 0 1 5.161v5.679a2 2 0 0 0 1.008 1.736l5 2.857c.307.176.65.264.992.264v-1a1 1 0 0 1-.496-.132l-5-2.857A1 1 0 0 1 2 10.84V5.16a1 1 0 0 1 .504-.867l5-2.858a1 1 0 0 1 .992 0l5 2.858A1 1 0 0 1 14 5.16v3.58l1 .623V5.161a2 2 0 0 0-1.008-1.737l-5-2.857a2 2 0 0 0-1.984 0z"
+      fill="#A571E6"
+    />
+    <path
+      d="M8 10.573C6.731 10.503 5.828 9.453 5.828 8c0-1.503.967-2.577 2.306-2.577.527 0 .996.153 1.366.41.204.141.377.314.513.51l.743-.618a3 3 0 0 0-.49-.502A3.4 3.4 0 0 0 8.134 4.5C6.215 4.5 4.79 5.994 4.79 8c0 1.96 1.36 3.43 3.211 3.498z"
+      fill="#A571E6"
+    />
+  </svg>
+);
+
+export const СRunConfiguration: React.FC<СRunConfigurationProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? СRunConfigurationLight : СRunConfigurationDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

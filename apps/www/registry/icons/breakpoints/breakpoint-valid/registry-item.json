@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-breakpoint-valid",
+  "type": "registry:ui",
+  "title": "Breakpoint Valid",
+  "description": "Breakpoint Valid icon from Breakpoints category.",
+  "registryDependencies": [
+    "icons-breakpoints-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/breakpoint-valid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-valid/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "breakpoint-valid",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ]
+  }
+}

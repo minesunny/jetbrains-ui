@@ -1,0 +1,26 @@
+{
+  "name": "icons-nodes-shared-scope",
+  "type": "registry:ui",
+  "title": "Shared Scope",
+  "description": "Shared Scope icon from Nodes category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/shared-scope/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/shared-scope/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type SharedScopeProps = IconProps;\n\nconst SharedScopeLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14.5 11a1.5 1.5 0 1 0-1.489-1.315l-2.47 1.235a1.5 1.5 0 1 0 0 2.16l2.47 1.235q-.01.09-.011.185a1.5 1.5 0 1 0 .459-1.08l-2.47-1.235a1.5 1.5 0 0 0 0-.37l2.47-1.235c.27.26.636.42 1.041.42M10 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m5-2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0\"\n      fill=\"#3574F0\"\n    />\n    <path\n      d=\"M14.5 7q.222 0 .434.038A7.001 7.001 0 0 0 1 8a7 7 0 0 0 7 7v-1a2.5 2.5 0 0 1 2.618-4.236l1.422-.711A2.5 2.5 0 0 1 14.5 7\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      d=\"M8 2a6 6 0 0 1 5.928 5.066 2.5 2.5 0 0 1 1.006-.028A7.001 7.001 0 0 0 1 8a7 7 0 0 0 7 7v-1A6 6 0 0 1 8 2\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M10.474 9.697a3 3 0 1 0-3.223 1.209 2.5 2.5 0 0 1 3.223-1.209\"\n      fill=\"#EDF3FF\"\n    />\n    <path\n      d=\"M9.315 9.507A2 2 0 1 0 8 10a2.5 2.5 0 0 0-.748.906A3.001 3.001 0 0 1 8 5a3 3 0 0 1 2.474 4.697 2.5 2.5 0 0 0-1.159-.19\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst SharedScopeDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14.5 11a1.5 1.5 0 1 0-1.489-1.315l-2.47 1.235a1.5 1.5 0 1 0 0 2.16l2.47 1.235q-.01.09-.011.185a1.5 1.5 0 1 0 .459-1.08l-2.47-1.235a1.5 1.5 0 0 0 0-.37l2.47-1.235c.27.26.636.42 1.041.42M10 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m5-2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0\"\n      fill=\"#548AF7\"\n    />\n    <path\n      d=\"M14.5 7q.222 0 .434.038A7.001 7.001 0 0 0 1 8a7 7 0 0 0 7 7v-1a2.5 2.5 0 0 1 2.618-4.236l1.422-.711A2.5 2.5 0 0 1 14.5 7\"\n      fill=\"#43454A\"\n    />\n    <path\n      d=\"M8 2a6 6 0 0 1 5.928 5.066 2.5 2.5 0 0 1 1.006-.028A7.001 7.001 0 0 0 1 8a7 7 0 0 0 7 7v-1A6 6 0 0 1 8 2\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M10.474 9.697a3 3 0 1 0-3.223 1.209 2.5 2.5 0 0 1 3.223-1.209\"\n      fill=\"#25324D\"\n    />\n    <path\n      d=\"M9.315 9.507A2 2 0 1 0 8 10a2.5 2.5 0 0 0-.748.906A3.001 3.001 0 0 1 8 5a3 3 0 0 1 2.474 4.697 2.5 2.5 0 0 0-1.159-.19\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const SharedScope: FC<SharedScopeProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? SharedScopeLight : SharedScopeDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "shared-scope",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

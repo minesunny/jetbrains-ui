@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-denodo",
+  "type": "registry:ui",
+  "title": "Denodo",
+  "description": "Denodo icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/denodo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/denodo/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type DenodoProps = IconProps;\n\nconst DenodoLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M9.5 1h-3v3h3zM9.5 12h-3v3h3zM14.812 5.799l-1.5-2.598-2.598 1.5 1.5 2.598zM5.286 11.299l-1.5-2.598-2.598 1.5 1.5 2.598zM2.688 3.201l-1.5 2.598 2.598 1.5 1.5-2.598zM12.214 8.701l-1.5 2.598 2.598 1.5 1.5-2.598z\"\n      fill=\"#F05049\"\n    />\n    <path d=\"M6.5 6.5h3v3h-3z\" fill=\"#000\" />\n  </svg>\n);\n\nconst DenodoDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M9.5 1h-3v3h3zM9.5 12h-3v3h3zM14.812 5.799l-1.5-2.598-2.598 1.5 1.5 2.598zM5.286 11.299l-1.5-2.598-2.598 1.5 1.5 2.598zM2.688 3.201l-1.5 2.598 2.598 1.5 1.5-2.598zM12.214 8.701l-1.5 2.598 2.598 1.5 1.5-2.598z\"\n      fill=\"#EF5049\"\n    />\n    <path d=\"M6.5 6.5h3v3h-3z\" fill=\"#fff\" />\n  </svg>\n);\n\nexport const Denodo: FC<DenodoProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? DenodoLight : DenodoDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "denodo",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

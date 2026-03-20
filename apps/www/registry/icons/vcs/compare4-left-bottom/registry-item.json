@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-compare4-left-bottom",
+  "type": "registry:ui",
+  "title": "Compare4 Left Bottom",
+  "description": "Compare4 Left Bottom icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/compare4-left-bottom/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/compare4-left-bottom/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "compare4-left-bottom",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

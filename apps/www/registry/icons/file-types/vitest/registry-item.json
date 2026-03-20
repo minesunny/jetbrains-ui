@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-vitest",
+  "type": "registry:ui",
+  "title": "Vitest",
+  "description": "Vitest icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/vitest/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/vitest/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "vitest",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

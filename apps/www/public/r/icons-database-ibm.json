@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-ibm",
+  "type": "registry:ui",
+  "title": "Ibm",
+  "description": "Ibm icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/ibm/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/ibm/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type IbmProps = IconProps;\n\nconst IbmLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M1 5v1.162h.783v3.304h-.762v1.148h2.725V9.466h-.783V6.162h.762V5zM8.756 5.014v1.148h.783v3.304h-.761v1.148h1.942V7.42l1.157 3.193h.023l1.137-3.193v3.194H15V9.466h-.783V6.162h.762V5.014H12.79l-.906 2.56-.918-2.56z\"\n      fill=\"#000\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M4.111 5.014v1.14h.783v3.3h-.783v1.16h2.962c.525 0 .922-.387.922-.387l.311-.367c.089-.088.14-.386.14-.386l.031-.366c0-.183-.074-.388-.074-.388l-.162-.366c-.08-.189-.332-.387-.332-.387v-.358c0 .005.252-.19.332-.375l.162-.36s.074-.2.074-.38l-.032-.36s-.05-.293-.139-.38l-.311-.36s-.397-.38-.922-.38zm3.111 1.148H6.074v1.064h1.148zM6.074 8.388h1.148v1.064H6.074z\"\n      fill=\"#000\"\n    />\n  </svg>\n);\n\nconst IbmDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M1 5v1.162h.783v3.304h-.762v1.148h2.725V9.466h-.783V6.162h.762V5zM8.756 5.014v1.148h.783v3.304h-.761v1.148h1.942V7.42l1.157 3.193h.023l1.137-3.193v3.194H15V9.466h-.783V6.162h.762V5.014H12.79l-.906 2.56-.918-2.56z\"\n      fill=\"#fff\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M4.111 5.014v1.14h.783v3.3h-.783v1.16h2.962c.525 0 .922-.387.922-.387l.311-.367c.089-.088.14-.386.14-.386l.031-.366c0-.183-.074-.388-.074-.388l-.162-.366c-.08-.189-.332-.387-.332-.387v-.358c0 .005.252-.19.332-.375l.162-.36s.074-.2.074-.38l-.032-.36s-.05-.293-.139-.38l-.311-.36s-.397-.38-.922-.38zm3.111 1.148H6.074v1.064h1.148zM6.074 8.388h1.148v1.064H6.074z\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nexport const Ibm: FC<IbmProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? IbmLight : IbmDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ibm",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

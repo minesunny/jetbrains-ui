@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-inlay-secured-shield",
+  "type": "registry:ui",
+  "title": "Inlay Secured Shield",
+  "description": "Inlay Secured Shield icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/inlay-secured-shield/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-secured-shield/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type InlaySecuredShieldProps = IconProps;\n\nconst InlaySecuredShieldLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 12 12\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M8.854 4.854a.5.5 0 1 0-.708-.708L5.5 6.793 4.354 5.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z\"\n      fill=\"#818594\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11 6c0 4-5 6-5 6s-5-2-5-6V2l5-2 5 2zM2 6V2.677l4-1.6 4 1.6V6c0 1.552-.97 2.795-2.125 3.72A10.3 10.3 0 0 1 6 10.901 10.287 10.287 0 0 1 4.125 9.72C2.97 8.794 2 7.551 2 6\"\n      fill=\"#818594\"\n    />\n  </svg>\n);\n\nconst InlaySecuredShieldDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 12 12\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M8.854 4.854a.5.5 0 1 0-.708-.708L5.5 6.793 4.354 5.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z\"\n      fill=\"#9DA0A8\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11 6c0 4-5 6-5 6s-5-2-5-6V2l5-2 5 2zM2 6V2.677l4-1.6 4 1.6V6c0 1.552-.97 2.795-2.125 3.72A10.3 10.3 0 0 1 6 10.901 10.287 10.287 0 0 1 4.125 9.72C2.97 8.794 2 7.551 2 6\"\n      fill=\"#9DA0A8\"\n    />\n  </svg>\n);\n\nexport const InlaySecuredShield: FC<InlaySecuredShieldProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? InlaySecuredShieldLight : InlaySecuredShieldDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "inlay-secured-shield",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-kubernetes-cluster-role-binding",
+  "type": "registry:ui",
+  "title": "Cluster Role Binding",
+  "description": "Cluster Role Binding icon from Plugins Kubernetes category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kubernetes/cluster-role-binding/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/cluster-role-binding/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ClusterRoleBindingProps = IconProps;\n\nconst ClusterRoleBindingLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M11.562 10.148a.5.5 0 1 1-.707-.708l.677-.677a2.615 2.615 0 0 1 3.699.006 2.615 2.615 0 0 1 .006 3.699l-.677.677a.5.5 0 1 1-.708-.707l.678-.677a1.615 1.615 0 0 0-.006-2.285 1.615 1.615 0 0 0-2.285-.006zM10.148 10.855a.5.5 0 0 1 0 .707l-.678.677a1.615 1.615 0 0 0 .006 2.285 1.615 1.615 0 0 0 2.285.006l.677-.678a.5.5 0 0 1 .707.707l-.677.678a2.615 2.615 0 0 1-3.699-.006 2.615 2.615 0 0 1-.006-3.699l.677-.677a.5.5 0 0 1 .708 0\"\n      fill=\"#3574F0\"\n    />\n    <path\n      d=\"M13.854 10.854a.5.5 0 0 0-.708-.708l-3 3a.5.5 0 0 0 .708.708z\"\n      fill=\"#3574F0\"\n    />\n    <path\n      d=\"M14 3.5 8 1 2 3.5v5.679c0 1.766.892 3.057 2.032 4.079.839.751 1.86 1.395 2.797 1.987l.171.108v-1.978c0-.923.352-1.845 1.056-2.55l2.77-2.77A3.6 3.6 0 0 1 13.378 7H14z\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      d=\"M13 7.02V4.166L8 2.083 3 4.167v5.012c0 1.377.679 2.419 1.7 3.334.667.598 1.473 1.132 2.3 1.657v1.183l-.171-.108c-.937-.592-1.958-1.236-2.797-1.987C2.892 12.236 2 10.945 2 9.178V3.5L8 1l6 2.5V7h-.621q-.19 0-.379.02\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ClusterRoleBindingDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M11.562 10.148a.5.5 0 1 1-.707-.708l.677-.677a2.615 2.615 0 0 1 3.699.006 2.615 2.615 0 0 1 .006 3.699l-.677.677a.5.5 0 1 1-.708-.707l.678-.677a1.615 1.615 0 0 0-.006-2.285 1.615 1.615 0 0 0-2.285-.006zM10.148 10.855a.5.5 0 0 1 0 .707l-.678.677a1.615 1.615 0 0 0 .006 2.285 1.615 1.615 0 0 0 2.285.006l.677-.678a.5.5 0 0 1 .707.707l-.677.678a2.615 2.615 0 0 1-3.699-.006 2.615 2.615 0 0 1-.006-3.699l.677-.677a.5.5 0 0 1 .708 0\"\n      fill=\"#548AF7\"\n    />\n    <path\n      d=\"M13.854 10.854a.5.5 0 0 0-.708-.708l-3 3a.5.5 0 0 0 .708.708z\"\n      fill=\"#548AF7\"\n    />\n    <path\n      d=\"M14 3.5 8 1 2 3.5v5.679c0 1.766.892 3.057 2.032 4.079.839.751 1.86 1.395 2.797 1.987l.171.108v-1.978c0-.923.352-1.845 1.056-2.55l2.77-2.77A3.6 3.6 0 0 1 13.378 7H14z\"\n      fill=\"#43454A\"\n    />\n    <path\n      d=\"M13 7.02V4.166L8 2.083 3 4.167v5.012c0 1.377.679 2.419 1.7 3.334.667.598 1.473 1.132 2.3 1.657v1.183l-.171-.108c-.937-.592-1.958-1.236-2.797-1.987C2.892 12.236 2 10.945 2 9.178V3.5L8 1l6 2.5V7h-.621q-.19 0-.379.02\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const ClusterRoleBinding: React.FC<ClusterRoleBindingProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? ClusterRoleBindingLight : ClusterRoleBindingDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cluster-role-binding",
+      "icon",
+      "plugins",
+      "kubernetes",
+      "jetbrains"
+    ]
+  }
+}

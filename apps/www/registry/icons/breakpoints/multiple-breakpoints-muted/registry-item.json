@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-multiple-breakpoints-muted",
+  "type": "registry:ui",
+  "title": "Multiple Breakpoints Muted",
+  "description": "Multiple Breakpoints Muted icon from Breakpoints category.",
+  "registryDependencies": [
+    "icons-breakpoints-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/multiple-breakpoints-muted/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/multiple-breakpoints-muted/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "multiple-breakpoints-muted",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ]
+  }
+}

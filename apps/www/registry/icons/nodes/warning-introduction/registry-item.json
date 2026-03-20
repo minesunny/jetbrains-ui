@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-warning-introduction",
+  "type": "registry:ui",
+  "title": "Warning Introduction",
+  "description": "Warning Introduction icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/warning-introduction/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/warning-introduction/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "warning-introduction",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

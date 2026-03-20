@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-ruby-rspec-shared-group-closed",
+  "type": "registry:ui",
+  "title": "Rspec Shared Group Closed",
+  "description": "Rspec Shared Group Closed icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/rspec-shared-group-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rspec-shared-group-closed/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type RspecSharedGroupClosedProps = IconProps;\n\nconst RspecSharedGroupClosedLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M14.472 16q-.412 0-.748-.176a1.4 1.4 0 0 1-.528-.495 1.3 1.3 0 0 1-.193-.704l-.005-3.383h-.99l.005-.874h.616q.21 0 .336-.132a.45.45 0 0 0 .132-.335v-.908h.902v1.375h1.358l-.005.874h-1.359L14 14.538q0 .254.165.423.171.165.423.165h.765V16z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v2h-2.914v1.36H11v2.874h1V14H2.75C1.784 14 1 13.164 1 12.133z\"\n      fill=\"#F2FCF3\"\n    />\n    <path\n      d=\"m6.038 3 2.056 2H13a1 1 0 0 1 1 1v2h1V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14H12v-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867z\"\n      fill=\"#208A3C\"\n    />\n  </svg>\n);\n\nconst RspecSharedGroupClosedDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M14.472 16q-.412 0-.748-.176a1.4 1.4 0 0 1-.528-.495 1.3 1.3 0 0 1-.193-.704l-.005-3.383h-.99l.005-.874h.616q.21 0 .336-.132a.45.45 0 0 0 .132-.335v-.908h.902v1.375h1.358l-.005.874h-1.359L14 14.538q0 .254.165.423.171.165.423.165h.765V16z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v2h-2.914v1.36H11v2.874h1V14H2.75C1.784 14 1 13.164 1 12.133z\"\n      fill=\"#253627\"\n    />\n    <path\n      d=\"m6.038 3 2.056 2H13a1 1 0 0 1 1 1v2h1V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14H12v-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867z\"\n      fill=\"#57965C\"\n    />\n  </svg>\n);\n\nexport const RspecSharedGroupClosed: React.FC<RspecSharedGroupClosedProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? RspecSharedGroupClosedLight : RspecSharedGroupClosedDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "rspec-shared-group-closed",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

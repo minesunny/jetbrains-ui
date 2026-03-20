@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-progress-bar-pause-hovered",
+  "type": "registry:ui",
+  "title": "Pause Hovered",
+  "description": "Pause Hovered icon from General Progress Bar category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/progress-bar/pause-hovered/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/pause-hovered/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type PauseHoveredProps = IconProps;\n\nconst PauseHoveredLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle opacity=\".2\" cx=\"8\" cy=\"8\" r=\"8\" fill=\"#313547\" />\n    <path\n      d=\"M5.5 4a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-.5-.5M10.5 4a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-.5-.5\"\n      fill=\"#818594\"\n    />\n  </svg>\n);\n\nconst PauseHoveredDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle opacity=\".19\" cx=\"8\" cy=\"8\" r=\"8\" fill=\"#F0F1F2\" />\n    <path\n      d=\"M5.5 4a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-.5-.5M10.5 4a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-.5-.5\"\n      fill=\"#868A91\"\n    />\n  </svg>\n);\n\nexport const PauseHovered: FC<PauseHoveredProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? PauseHoveredLight : PauseHoveredDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "pause-hovered",
+      "icon",
+      "general",
+      "progress-bar",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-usages-filterdups",
+  "type": "registry:ui",
+  "title": "Filterdups",
+  "description": "Filterdups icon from General Usages category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/usages/filterdups/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/usages/filterdups/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "filterdups",
+      "icon",
+      "general",
+      "usages",
+      "jetbrains"
+    ]
+  }
+}

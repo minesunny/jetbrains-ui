@@ -1,0 +1,162 @@
+---
+title: Alert
+description: 基于 JetBrains UI 设计风格的警告确认弹窗组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-alert" />
+
+## 概述
+
+Alert 用于告知用户由用户或系统触发操作的状态。
+本组件基于 Radix `AlertDialog` 实现，内置状态图标通过 `type` 属性控制。
+
+## 安装
+
+<ComponentInstallation name="alert" />
+
+## 用法
+
+```tsx
+import {
+  Alert,
+  AlertAction,
+  AlertActions,
+  AlertCancel,
+  AlertContent,
+  AlertDescription,
+  AlertFooter,
+  AlertHeader,
+  AlertTitle,
+  AlertTrigger,
+} from '@/components/jetbrains-ui/alert';
+import { Button } from '@/components/jetbrains-ui/buttons';
+
+<Alert>
+  <AlertTrigger asChild>
+    <Button variant="secondary">打开弹窗</Button>
+  </AlertTrigger>
+  <AlertContent type="warning" size="auto" help check>
+    <AlertHeader>
+      <AlertTitle>标题</AlertTitle>
+      <AlertDescription>正文内容</AlertDescription>
+    </AlertHeader>
+
+    <AlertFooter>
+      <AlertActions>
+        <AlertCancel asChild>
+          <Button variant="secondary">取消</Button>
+        </AlertCancel>
+        <AlertAction asChild>
+          <Button>检查</Button>
+        </AlertAction>
+      </AlertActions>
+    </AlertFooter>
+  </AlertContent>
+</Alert>;
+```
+
+## 类型切换
+
+- 通过 `AlertContent` 的 `type` 切换内置图标和语义样式：
+  `info | error | warning | question`
+- 通过 `AlertContent`（或 demo 参数）上的 `help` 控制 `AlertFooter` 中 `QuestionMark` 图标显示。
+
+## 尺寸规则
+
+- 弹窗默认宽度遵循 Figma 规则：`370px`。
+- 使用 `size="default"` 时固定宽度 `370px`。
+- 使用 `size="wide"` 时固定宽度 `420px`。
+- 使用 `size="auto"`（默认）时，采用自适应宽度（`w-fit` + `min-width: 370px`），长文本或更宽按钮组会自然扩展弹窗宽度。
+- 内边距遵循 Figma：`top 20 / right 20 / bottom 66 / left 60`。
+- 高度由内容驱动：基础内容约 `150px`，启用 `check/help` 后按内容增长。
+- 操作按钮沿用 Button 默认尺寸：`72x28`。
+
+## API 参考
+
+### Alert
+
+<TypeTable
+  type={{
+    '...props': {
+      description: '传递给 Radix AlertDialog Root 的属性',
+      type: 'React.ComponentProps<typeof AlertDialog.Root>',
+      required: false,
+    },
+  }}
+/>
+
+### AlertContent
+
+<TypeTable
+  type={{
+    type: {
+      description: '带内置图标的语义类型',
+      type: '"info" | "error" | "warning" | "question"',
+      required: false,
+      default: '"info"',
+    },
+    size: {
+      description: '弹窗宽度模式',
+      type: '"default" | "wide" | "auto"',
+      required: false,
+      default: '"auto"',
+    },
+    help: {
+      description: '是否在 AlertFooter 显示帮助图标',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    check: {
+      description: '是否在 AlertHeader 显示“不再提示”复选框',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: '传递给 Radix AlertDialog Content 的属性',
+      type: 'React.ComponentProps<typeof AlertDialog.Content>',
+      required: false,
+    },
+  }}
+/>
+
+### AlertCancel
+
+<TypeTable
+  type={{
+    asChild: {
+      description: '是否用自定义元素渲染（通常配合 Button）',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: '传递给 Radix AlertDialog Cancel 的属性',
+      type: 'React.ComponentProps<typeof AlertDialog.Cancel>',
+      required: false,
+    },
+  }}
+/>
+
+### AlertAction
+
+<TypeTable
+  type={{
+    asChild: {
+      description: '是否用自定义元素渲染（通常配合主按钮）',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: '传递给 Radix AlertDialog Action 的属性',
+      type: 'React.ComponentProps<typeof AlertDialog.Action>',
+      required: false,
+    },
+  }}
+/>

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-class-initializer",
+  "type": "registry:ui",
+  "title": "Class Initializer",
+  "description": "Class Initializer icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/class-initializer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/class-initializer/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "class-initializer",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

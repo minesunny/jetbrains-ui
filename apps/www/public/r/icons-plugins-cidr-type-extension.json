@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-type-extension",
+  "type": "registry:ui",
+  "title": "Type Extension",
+  "description": "Type Extension icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/type-extension/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/type-extension/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type TypeExtensionProps = IconProps;\n\nconst TypeExtensionLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"2.5\"\n      y=\"2.5\"\n      width=\"11\"\n      height=\"11\"\n      rx=\"1.5\"\n      fill=\"#EDF3FF\"\n      stroke=\"#3574F0\"\n    />\n    <path d=\"M5.5 11.5h5v-1h-4v-2H10v-1H6.5v-2h4v-1h-5z\" fill=\"#3574F0\" />\n  </svg>\n);\n\nconst TypeExtensionDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"2.5\"\n      y=\"2.5\"\n      width=\"11\"\n      height=\"11\"\n      rx=\"1.5\"\n      fill=\"#25324D\"\n      stroke=\"#548AF7\"\n    />\n    <path d=\"M5.5 11.5h5v-1h-4v-2H10v-1H6.5v-2h4v-1h-5z\" fill=\"#548AF7\" />\n  </svg>\n);\n\nexport const TypeExtension: React.FC<TypeExtensionProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? TypeExtensionLight : TypeExtensionDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "type-extension",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

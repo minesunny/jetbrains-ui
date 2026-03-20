@@ -1,0 +1,56 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-platformio",
+  "type": "registry:ui",
+  "title": "Plugins Platformio Icons",
+  "description": "All 6 icons from the Plugins Platformio category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/platformio/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/clean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/clean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/component-vendor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/component-vendor/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/electronic-board/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/electronic-board/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/mod-platform-io/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/mod-platform-io/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/platform-io/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/platform-io/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/platformio/software-framework/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/software-framework/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "plugins",
+      "platformio",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

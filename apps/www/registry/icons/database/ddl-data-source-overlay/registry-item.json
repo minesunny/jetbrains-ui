@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-ddl-data-source-overlay",
+  "type": "registry:ui",
+  "title": "Ddl Data Source Overlay",
+  "description": "Ddl Data Source Overlay icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/ddl-data-source-overlay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/ddl-data-source-overlay/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ddl-data-source-overlay",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

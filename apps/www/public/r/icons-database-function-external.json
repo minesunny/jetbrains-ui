@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-function-external",
+  "type": "registry:ui",
+  "title": "Function External",
+  "description": "Function External icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/function-external/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/function-external/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type FunctionExternalProps = IconProps;\n\nconst FunctionExternalLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M14.937 8.941Q15 8.48 15 8a7 7 0 1 0-6.059 6.937L11.88 12H11.5a1.5 1.5 0 0 1 0-3h3.379z\"\n      fill=\"#EDF3FF\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6.5 5v6h1V9.04h2.495v-1H7.5V6h3V5z\"\n      fill=\"#3574F0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11 10.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0v-2.793l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 11H11.5a.5.5 0 0 1-.5-.5\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M10.361 13.518A6 6 0 1 1 13.917 9h.962l.058-.059Q15 8.48 15 8a7 7 0 1 0-6.059 6.937z\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst FunctionExternalDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M14.937 8.941Q15 8.48 15 8a7 7 0 1 0-6.059 6.937L11.88 12H11.5a1.5 1.5 0 0 1 0-3h3.379z\"\n      fill=\"#25324D\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6.5 5v6h1V9.04h2.495v-1H7.5V6h3V5z\"\n      fill=\"#548AF7\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11 10.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0v-2.793l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 11H11.5a.5.5 0 0 1-.5-.5\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M10.361 13.518A6 6 0 1 1 13.917 9h.962l.058-.059Q15 8.48 15 8a7 7 0 1 0-6.059 6.937z\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const FunctionExternal: FC<FunctionExternalProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? FunctionExternalLight : FunctionExternalDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "function-external",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

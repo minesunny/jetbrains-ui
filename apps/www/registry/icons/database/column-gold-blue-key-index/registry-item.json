@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-column-gold-blue-key-index",
+  "type": "registry:ui",
+  "title": "Column Gold Blue Key Index",
+  "description": "Column Gold Blue Key Index icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/column-gold-blue-key-index/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/column-gold-blue-key-index/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "column-gold-blue-key-index",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

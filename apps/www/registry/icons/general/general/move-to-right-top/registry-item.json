@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-move-to-right-top",
+  "type": "registry:ui",
+  "title": "Move To Right Top",
+  "description": "Move To Right Top icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/move-to-right-top/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-to-right-top/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "move-to-right-top",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

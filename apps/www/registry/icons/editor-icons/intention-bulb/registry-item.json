@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-intention-bulb",
+  "type": "registry:ui",
+  "title": "Intention Bulb",
+  "description": "Intention Bulb icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/intention-bulb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/intention-bulb/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "intention-bulb",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

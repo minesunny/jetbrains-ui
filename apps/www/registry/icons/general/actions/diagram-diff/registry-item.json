@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-actions-diagram-diff",
+  "type": "registry:ui",
+  "title": "Diagram Diff",
+  "description": "Diagram Diff icon from General Actions category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/diagram-diff/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/diagram-diff/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "diagram-diff",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

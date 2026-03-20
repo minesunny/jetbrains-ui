@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-gitlab-git-lab-logo",
+  "type": "registry:ui",
+  "title": "Git Lab Logo",
+  "description": "Git Lab Logo icon from Plugins Gitlab category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/gitlab/git-lab-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/gitlab/git-lab-logo/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "git-lab-logo",
+      "icon",
+      "plugins",
+      "gitlab",
+      "jetbrains"
+    ]
+  }
+}

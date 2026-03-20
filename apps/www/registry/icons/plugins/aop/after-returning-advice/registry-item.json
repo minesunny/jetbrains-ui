@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-aop-after-returning-advice",
+  "type": "registry:ui",
+  "title": "After Returning Advice",
+  "description": "After Returning Advice icon from Plugins Aop category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/aop/after-returning-advice/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/after-returning-advice/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "after-returning-advice",
+      "icon",
+      "plugins",
+      "aop",
+      "jetbrains"
+    ]
+  }
+}

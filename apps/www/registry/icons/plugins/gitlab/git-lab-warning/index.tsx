@@ -1,0 +1,159 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type GitLabWarningProps = IconProps;
+
+const GitLabWarningLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <g clipPath="url(#a)">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="m14.747 6.287.02.05a3.54 3.54 0 0 1-.165 2.891l-.428-.713c-1.211-2.02-4.139-2.02-5.35 0l-2.402 4.002a3 3 0 0 0-.305.69l-.783-.592-2.903-2.174-.017-.012-.007-.005a3.54 3.54 0 0 1-1.173-4.09l.019-.05 1.909-4.971a.5.5 0 0 1 .948.052l1.287 3.937h5.21l1.286-3.937a.5.5 0 0 1 .17-.256.51.51 0 0 1 .583-.032.5.5 0 0 1 .196.237z"
+        fill="#E24329"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="m14.748 6.287.02.05a3.54 3.54 0 0 1-.165 2.893l-.429-.715a3.08 3.08 0 0 0-1.62-1.333 6.4 6.4 0 0 1 2.194-.895"
+        fill="#FC6D26"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M7.222 11.192c-1.07.807-1.886 1.426-1.886 1.426l.784.593q.104-.354.306-.694z"
+        fill="#FCA326"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M1.253 6.284a6.4 6.4 0 0 1 2.561 1.154l3.892 2.94-.488.813-1.884 1.424-2.903-2.174-.017-.012-.007-.005a3.54 3.54 0 0 1-1.173-4.09z"
+        fill="#FC6D26"
+      />
+      <g clipPath="url(#b)" fill="#6C707E">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="m14.863 13.546-2.401-4.002a1.12 1.12 0 0 0-1.921 0L8.14 13.546A.96.96 0 0 0 8.963 15h5.077a.96.96 0 0 0 .823-1.454m.857-.514-2.4-4.002c-.824-1.373-2.813-1.373-3.637 0l-2.4 4.002C6.498 14.337 7.44 16 8.962 16h5.077c1.523 0 2.464-1.662 1.68-2.969"
+        />
+        <path d="M12 10h-1v2h1zM12 14v-1h-1v1z" />
+      </g>
+    </g>
+    <defs>
+      <clipPath id="a">
+        <path fill="#fff" d="M0 0H16V16H0z" />
+      </clipPath>
+      <clipPath id="b">
+        <path fill="#fff" transform="translate(7 8)" d="M0 0H9V8H0z" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+const GitLabWarningDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <g clipPath="url(#a)">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="m14.747 6.287.02.05a3.54 3.54 0 0 1-.165 2.891l-.428-.713c-1.211-2.02-4.139-2.02-5.35 0l-2.402 4.002a3 3 0 0 0-.305.69l-.783-.592-2.903-2.174-.017-.012-.007-.005a3.54 3.54 0 0 1-1.173-4.09l.019-.05 1.909-4.971a.5.5 0 0 1 .948.052l1.287 3.937h5.21l1.286-3.937a.5.5 0 0 1 .17-.256.51.51 0 0 1 .583-.032.5.5 0 0 1 .196.237z"
+        fill="#E24329"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="m14.748 6.287.02.05a3.54 3.54 0 0 1-.165 2.893l-.429-.715a3.08 3.08 0 0 0-1.62-1.333 6.4 6.4 0 0 1 2.194-.895"
+        fill="#FC6D26"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M7.222 11.192c-1.07.807-1.886 1.426-1.886 1.426l.784.593q.104-.354.306-.694z"
+        fill="#FCA326"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M1.253 6.284a6.4 6.4 0 0 1 2.561 1.154l3.892 2.94-.488.813-1.884 1.424-2.903-2.174-.017-.012-.007-.005a3.54 3.54 0 0 1-1.173-4.09z"
+        fill="#FC6D26"
+      />
+      <g clipPath="url(#b)" fill="#CED0D6">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="m14.863 13.546-2.401-4.002a1.12 1.12 0 0 0-1.921 0L8.14 13.546A.96.96 0 0 0 8.963 15h5.077a.96.96 0 0 0 .823-1.454m.857-.514-2.4-4.002c-.824-1.373-2.813-1.373-3.637 0l-2.4 4.002C6.498 14.337 7.44 16 8.962 16h5.077c1.523 0 2.464-1.662 1.68-2.969"
+        />
+        <path d="M12 10h-1v2h1zM12 14v-1h-1v1z" />
+      </g>
+    </g>
+    <defs>
+      <clipPath id="a">
+        <path fill="#fff" d="M0 0H16V16H0z" />
+      </clipPath>
+      <clipPath id="b">
+        <path fill="#fff" transform="translate(7 8)" d="M0 0H9V8H0z" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const GitLabWarning: React.FC<GitLabWarningProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? GitLabWarningLight : GitLabWarningDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

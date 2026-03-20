@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-comment-regular",
+  "type": "registry:ui",
+  "title": "Comment Regular",
+  "description": "Comment Regular icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/comment-regular/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/comment-regular/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "comment-regular",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

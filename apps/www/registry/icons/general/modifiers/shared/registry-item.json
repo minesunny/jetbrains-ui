@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-modifiers-shared",
+  "type": "registry:ui",
+  "title": "Shared",
+  "description": "Shared icon from General Modifiers category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/modifiers/shared/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/shared/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "shared",
+      "icon",
+      "general",
+      "modifiers",
+      "jetbrains"
+    ]
+  }
+}

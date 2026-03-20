@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-supertypes",
+  "type": "registry:ui",
+  "title": "Supertypes",
+  "description": "Supertypes icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/supertypes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/supertypes/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "supertypes",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

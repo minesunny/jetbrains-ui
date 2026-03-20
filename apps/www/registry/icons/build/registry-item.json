@@ -1,0 +1,140 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build",
+  "type": "registry:ui",
+  "title": "Build Icons",
+  "description": "All 23 icons from the Build category.",
+  "registryDependencies": [
+    "icons-build-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/build/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/index.ts"
+    },
+    {
+      "path": "registry/icons/build/build/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/build/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/dependency-analyzer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/dependency-analyzer/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/gradle/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/gradle/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/gradle-load-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/gradle-load-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/gradle-navigate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/gradle-navigate/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/gradle-subproject/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/gradle-subproject/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-bind/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-bind/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-bind-checksum/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-bind-checksum/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-checksum/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-checksum/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-children-projects/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-children-projects/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-flex/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-flex/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-load-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-load-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-module/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-parent-projects/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-parent-projects/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-plugin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-plugin/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-plugin-goal/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-plugin-goal/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-profiles/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-profiles/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/maven-project/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-project/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/task/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/task/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/task-group/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/task-group/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/toggle-offline-mode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/toggle-offline-mode/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/toggle-skip-tests-mode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/toggle-skip-tests-mode/index.tsx"
+    },
+    {
+      "path": "registry/icons/build/update-folders/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/update-folders/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "build",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

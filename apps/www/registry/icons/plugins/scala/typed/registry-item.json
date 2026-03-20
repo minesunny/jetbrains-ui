@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-scala-typed",
+  "type": "registry:ui",
+  "title": "Typed",
+  "description": "Typed icon from Plugins Scala category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/typed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/typed/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "typed",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

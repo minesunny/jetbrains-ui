@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-delete",
+  "type": "registry:ui",
+  "title": "Delete",
+  "description": "Delete icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/delete/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/delete/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "delete",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

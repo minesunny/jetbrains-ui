@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-debugger-add-to-watch",
+  "type": "registry:ui",
+  "title": "Add To Watch",
+  "description": "Add To Watch icon from Debugger category.",
+  "registryDependencies": [
+    "icons-debugger-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/debugger/add-to-watch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/debugger/add-to-watch/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "add-to-watch",
+      "icon",
+      "debugger",
+      "jetbrains"
+    ]
+  }
+}

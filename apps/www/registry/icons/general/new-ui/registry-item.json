@@ -1,0 +1,56 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-new-ui",
+  "type": "registry:ui",
+  "title": "General New Ui Icons",
+  "description": "All 6 icons from the General New Ui category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/new-ui/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/index.ts"
+    },
+    {
+      "path": "registry/icons/general/new-ui/dark-theme/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/dark-theme/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/new-ui/dark-theme-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/dark-theme-selected/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/new-ui/light-theme/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/light-theme/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/new-ui/light-theme-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/light-theme-selected/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/new-ui/system-theme/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/system-theme/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/new-ui/system-theme-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/system-theme-selected/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "new-ui",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

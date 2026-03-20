@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-code-assistant-enum",
+  "type": "registry:ui",
+  "title": "Code Assistant Enum",
+  "description": "Code Assistant Enum icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-enum/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-enum/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "code-assistant-enum",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

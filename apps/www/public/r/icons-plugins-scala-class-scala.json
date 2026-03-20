@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-scala-class-scala",
+  "type": "registry:ui",
+  "title": "Class Scala",
+  "description": "Class Scala icon from Plugins Scala category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/class-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-scala/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ClassScalaProps = IconProps;\n\nconst ClassScalaLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M15 8v.043l-4.65.464A1.5 1.5 0 0 0 9 10v4.93Q8.51 15 8 15a7 7 0 1 1 7-7\"\n      fill=\"#EDF3FF\"\n    />\n    <path\n      d=\"m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5\"\n      stroke=\"#DB3B4B\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n    <path\n      d=\"M9 10.425v.97a3.6 3.6 0 0 1-.868.105c-1.919 0-3.345-1.494-3.345-3.5s1.426-3.5 3.345-3.5c1.49 0 2.766.9 3.08 2.175h-1.015c-.315-.73-1.093-1.252-2.065-1.252-1.339 0-2.306 1.074-2.306 2.577s.967 2.577 2.306 2.577c.313 0 .605-.054.868-.152\"\n      fill=\"#3574F0\"\n    />\n    <path\n      d=\"M9 13.917Q8.511 14 8 14a6 6 0 1 1 5.998-5.857l1.002-.1V8a7 7 0 1 0-6 6.93z\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst ClassScalaDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M15 8v.043l-4.65.464A1.5 1.5 0 0 0 9 10v4.93Q8.51 15 8 15a7 7 0 1 1 7-7\"\n      fill=\"#25324D\"\n    />\n    <path\n      d=\"m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5\"\n      stroke=\"#DB5C5C\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n    <path\n      d=\"M9 10.425v.97a3.6 3.6 0 0 1-.868.105c-1.919 0-3.345-1.494-3.345-3.5s1.426-3.5 3.345-3.5c1.49 0 2.766.9 3.08 2.175h-1.015c-.315-.73-1.093-1.252-2.065-1.252-1.339 0-2.306 1.074-2.306 2.577s.967 2.577 2.306 2.577c.313 0 .605-.054.868-.152\"\n      fill=\"#548AF7\"\n    />\n    <path\n      d=\"M9 13.917Q8.511 14 8 14a6 6 0 1 1 5.998-5.857l1.002-.1V8a7 7 0 1 0-6 6.93z\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const ClassScala: React.FC<ClassScalaProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ClassScalaLight : ClassScalaDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "class-scala",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-breakpoint-field-muted-disabled",
+  "type": "registry:ui",
+  "title": "Breakpoint Field Muted Disabled",
+  "description": "Breakpoint Field Muted Disabled icon from Breakpoints category.",
+  "registryDependencies": [
+    "icons-breakpoints-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/breakpoint-field-muted-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-muted-disabled/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "breakpoint-field-muted-disabled",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ]
+  }
+}

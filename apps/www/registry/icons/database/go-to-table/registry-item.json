@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-go-to-table",
+  "type": "registry:ui",
+  "title": "Go To Table",
+  "description": "Go To Table icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/go-to-table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/go-to-table/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "go-to-table",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

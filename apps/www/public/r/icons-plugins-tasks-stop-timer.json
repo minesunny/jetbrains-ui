@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-tasks-stop-timer",
+  "type": "registry:ui",
+  "title": "Stop Timer",
+  "description": "Stop Timer icon from Plugins Tasks category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/tasks/stop-timer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/tasks/stop-timer/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type StopTimerProps = IconProps;\n\nconst StopTimerLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"9.5\"\n      y=\"9.5\"\n      width=\"6\"\n      height=\"6\"\n      rx=\"1.5\"\n      fill=\"#FFF7F7\"\n      stroke=\"#DB3B4B\"\n    />\n    <path\n      d=\"M5 1.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5M7.5 6a.5.5 0 0 1 1 0v3a.5.5 0 0 1-.243.429l-2.5 1.5a.5.5 0 1 1-.514-.858L7.5 8.717z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M8 15v-1a5 5 0 1 1 4.9-6h1.017A6.002 6.002 0 0 0 2 9a6 6 0 0 0 6 6\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst StopTimerDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"9.5\"\n      y=\"9.5\"\n      width=\"6\"\n      height=\"6\"\n      rx=\"1.5\"\n      fill=\"#402929\"\n      stroke=\"#DB5C5C\"\n    />\n    <path\n      d=\"M5 1.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5M7.5 6a.5.5 0 0 1 1 0v3a.5.5 0 0 1-.243.429l-2.5 1.5a.5.5 0 1 1-.514-.858L7.5 8.717z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M8 15v-1a5 5 0 1 1 4.9-6h1.017A6.002 6.002 0 0 0 2 9a6 6 0 0 0 6 6\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const StopTimer: React.FC<StopTimerProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? StopTimerLight : StopTimerDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "stop-timer",
+      "icon",
+      "plugins",
+      "tasks",
+      "jetbrains"
+    ]
+  }
+}

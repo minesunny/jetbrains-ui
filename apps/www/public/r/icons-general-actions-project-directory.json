@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-actions-project-directory",
+  "type": "registry:ui",
+  "title": "Project Directory",
+  "description": "Project Directory icon from General Actions category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/project-directory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/project-directory/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ProjectDirectoryProps = IconProps;\n\nconst ProjectDirectoryLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.5 9a.5.5 0 0 1 .5.5V12h2.5a.5.5 0 0 1 0 1H13v2.5a.5.5 0 0 1-1 0V13H9.5a.5.5 0 0 1 0-1H12V9.5a.5.5 0 0 1 .5-.5\"\n      fill=\"#3574F0\"\n    />\n    <path\n      d=\"M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14H8v-3a3 3 0 0 1 3-3h4V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      d=\"M6.122 3H2.633C2.405 3 2 3.258 2 3.867v8.266c0 .609.405.867.633.867H8v1H2.633C1.731 14 1 13.164 1 12.133V3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2h-1V6a1 1 0 0 0-1-1H8.04z\"\n      fill=\"#6C707E\"\n    />\n    <rect x=\"9\" y=\"8.998\" width=\"7\" height=\"7\" rx=\"1\" fill=\"#000\" />\n    <path\n      d=\"M10.5 14.498h2\"\n      stroke=\"#fff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nconst ProjectDirectoryDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.5 9a.5.5 0 0 1 .5.5V12h2.5a.5.5 0 0 1 0 1H13v2.5a.5.5 0 0 1-1 0V13H9.5a.5.5 0 0 1 0-1H12V9.5a.5.5 0 0 1 .5-.5\"\n      fill=\"#548AF7\"\n    />\n    <path\n      d=\"M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14H8v-3a3 3 0 0 1 3-3h4V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z\"\n      fill=\"#43454A\"\n    />\n    <path\n      d=\"M6.122 3H2.633C2.405 3 2 3.258 2 3.867v8.266c0 .609.405.867.633.867H8v1H2.633C1.731 14 1 13.164 1 12.133V3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2h-1V6a1 1 0 0 0-1-1H8.04z\"\n      fill=\"#CED0D6\"\n    />\n    <rect x=\"9\" y=\"8.998\" width=\"7\" height=\"7\" rx=\"1\" fill=\"#000\" />\n    <path\n      d=\"M10.5 14.498h2\"\n      stroke=\"#fff\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nexport const ProjectDirectory: FC<ProjectDirectoryProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? ProjectDirectoryLight : ProjectDirectoryDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "project-directory",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

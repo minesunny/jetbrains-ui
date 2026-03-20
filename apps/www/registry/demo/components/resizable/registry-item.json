@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-resizable",
+  "type": "registry:ui",
+  "title": "Resizable Demo",
+  "description": "Demo showing resizable component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/resizable"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/resizable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/resizable.tsx"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "ResizablePanelGroup": {
+        "direction": {
+          "value": "horizontal",
+          "options": {
+            "horizontal": "horizontal",
+            "vertical": "vertical"
+          }
+        }
+      }
+    }
+  }
+}

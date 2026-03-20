@@ -1,0 +1,97 @@
+---
+title: Button
+description: 基于 JetBrains UI 设计风格的 Button 组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-01-30
+---
+
+<ComponentPreview name="demo-button" />
+
+## 概述
+
+基于 JetBrains UI 设计风格的按钮组件，采用 Radix UI 的 Slot 模式实现。
+
+### 设计特点
+
+- **JetBrains 风格配色**：采用 JetBrains UI Kit 的颜色系统
+- **2 种变体**：primary 和 secondary 满足不同使用场景
+- **与 Figma 对齐的尺寸**：默认 `72x28`，slim `72x24`
+- **可选 Tooltip**：内置复用现有 Tooltip 组件
+- **完整状态支持**：hover、active、disabled、focus 状态
+- **无障碍支持**：完整的 focus-visible 状态
+
+## 安装
+
+<ComponentInstallation name="buttons" />
+
+## 用法
+
+```tsx
+import { Button } from '@/components/jetbrains-ui/buttons';
+
+export default function Demo() {
+  return (
+    <div className="flex items-center gap-2">
+      <Button>主要按钮</Button>
+      <Button variant="secondary">次要按钮</Button>
+      <Button slim>紧凑按钮</Button>
+      <Button tooltip="按钮提示">带提示按钮</Button>
+    </div>
+  );
+}
+```
+
+### 作为子组件渲染
+
+```tsx
+import Link from 'next/link';
+import { Button } from '@/components/jetbrains-ui/buttons';
+
+<Button asChild>
+  <Link href="/docs/installation">前往安装文档</Link>
+</Button>;
+```
+
+## API 参考
+
+### Button
+
+<TypeTable
+  type={{
+    variant: {
+      description: '按钮的变体样式',
+      type: '"primary" | "secondary"',
+      required: false,
+      default: 'primary',
+    },
+    asChild: {
+      description: '是否作为子组件渲染',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    slim: {
+      description: '是否使用 slim 尺寸（72x24）',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    tooltip: {
+      description: '悬停时显示的提示文案',
+      type: 'string',
+      required: false,
+    },
+    '...props': {
+      description: '传递给 button 元素的其他 props',
+      type: 'React.ComponentProps<"button">',
+      required: false,
+    },
+  }}
+/>
+
+## 致谢
+
+- 设计灵感来源于 [JetBrains UI Kit](https://jetbrains.design)
+- 基于 [Radix UI](https://radix-ui.com) 构建

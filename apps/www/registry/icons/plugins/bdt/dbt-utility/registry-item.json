@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-bdt-dbt-utility",
+  "type": "registry:ui",
+  "title": "Dbt Utility",
+  "description": "Dbt Utility icon from Plugins Bdt category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/bdt/dbt-utility/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/dbt-utility/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dbt-utility",
+      "icon",
+      "plugins",
+      "bdt",
+      "jetbrains"
+    ]
+  }
+}

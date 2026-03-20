@@ -1,0 +1,30 @@
+---
+title: Label
+description: 基于 JetBrains UI 设计风格的表单标签组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-label" />
+
+## 概述
+
+基于 JetBrains UI 设计风格的表单标签组件。
+
+## 安装
+
+<ComponentInstallation name="label" />
+
+## 用法
+
+```tsx
+import { Label } from '@/components/jetbrains-ui/label';
+import { Input } from '@/components/jetbrains-ui/input';
+
+<div className="grid gap-2">
+  <Label htmlFor="email">Email</Label>
+  <Input id="email" />
+</div>;
+```

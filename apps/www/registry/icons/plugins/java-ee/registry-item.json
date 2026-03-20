@@ -1,0 +1,486 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-java-ee",
+  "type": "registry:ui",
+  "title": "Plugins Java Ee Icons",
+  "description": "All 92 icons from the Plugins Java Ee category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/abstract-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/abstract-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/abstract-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/abstract-field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/abstract-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/abstract-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/abstract-property/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/abstract-property/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/annotation-type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/annotation-type/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/application-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/application-xml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/bean-factory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/bean-factory/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/bean-infrastructure/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/bean-infrastructure/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/bean-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/bean-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/bean-property/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/bean-property/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/build-on-frame-deactivation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/build-on-frame-deactivation/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/cdi/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/cdi/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/class-initializer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/class-initializer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/component/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/component/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/configuration-scan/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/configuration-scan/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/constraint-mappings/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/constraint-mappings/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/constraint-validator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/constraint-validator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/constraints/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/constraints/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/converter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/converter/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/decorator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/decorator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/deployments/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/deployments/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-artifact/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-artifact/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-business-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-business-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-cmp-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-cmp-field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-cmr-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-cmr-field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-create-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-create-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-finder-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-finder-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-jar-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-jar-xml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-module/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-primary-key-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-primary-key-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-reference/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-reference/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/embedded-attribute-overlay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/embedded-attribute-overlay/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/entity-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/entity-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/enum/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/enum/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/er-diagram/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/er-diagram/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/event/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/event/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/field-in-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/field-in-xml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/general/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/general/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/getter-in-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/getter-in-xml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/groovy/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/groovy/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/hibernate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/hibernate/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/home/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/home/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/inherited-attribute-overlay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/inherited-attribute-overlay/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/inteceptor-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/inteceptor-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/interceptor-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/interceptor-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/interceptors/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/interceptors/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/interface/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/interface/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/jakarta-ee/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/jakarta-ee/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/java-eeartifact/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/java-eeartifact/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/javaee-app-module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/javaee-app-module/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/jpa-facet/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/jpa-facet/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/lib-annotation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/lib-annotation/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/lib-validator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/lib-validator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/listener/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/listener/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/managed-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/managed-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/message-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/message-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/navigation-rule/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/navigation-rule/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-attribute/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-attribute/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-embeddable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-embeddable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-id/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-id/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-id-relationship/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-id-relationship/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-mapped-superclass/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-mapped-superclass/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-relationship/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-relationship/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-unit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-unit/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/property/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/property/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/publisher/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/publisher/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/record/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/record/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/remote/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/remote/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/renderer-kit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/renderer-kit/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/request-mapping/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/request-mapping/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/scheduled-event/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/scheduled-event/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/scopes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/scopes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/session-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/session-bean/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/show-autowired-candidates/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/show-autowired-candidates/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/show-autowired-dependencies/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/show-autowired-dependencies/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/show-cacheable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/show-cacheable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/trait/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/trait/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/update-running-application/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/update-running-application/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/validator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/validator/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/variable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-artifact/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-artifact/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-module/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-module-group/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-module-group/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-service/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-service/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-service-client/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-service-client/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/web-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-xml/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/java-ee/xml-service/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/xml-service/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "plugins",
+      "java-ee",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

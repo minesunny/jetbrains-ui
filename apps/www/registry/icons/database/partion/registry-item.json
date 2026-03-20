@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-partion",
+  "type": "registry:ui",
+  "title": "Partion",
+  "description": "Partion icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/partion/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/partion/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "partion",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

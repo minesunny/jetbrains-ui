@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-html",
+  "type": "registry:ui",
+  "title": "Html",
+  "description": "Html icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/html/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/html/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "html",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

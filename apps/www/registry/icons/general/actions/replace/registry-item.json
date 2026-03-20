@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-actions-replace",
+  "type": "registry:ui",
+  "title": "Replace",
+  "description": "Replace icon from General Actions category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/replace/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/replace/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "replace",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

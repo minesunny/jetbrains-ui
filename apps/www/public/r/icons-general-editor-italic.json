@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-editor-italic",
+  "type": "registry:ui",
+  "title": "Italic",
+  "description": "Italic icon from General Editor category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/editor/italic/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/italic/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ItalicProps = IconProps;\n\nconst ItalicLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6 3.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H9.401l-1.778 8H9.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h2.099l1.778-8H6.5a.5.5 0 0 1-.5-.5\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ItalicDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6 3.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H9.401l-1.778 8H9.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h2.099l1.778-8H6.5a.5.5 0 0 1-.5-.5\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const Italic: FC<ItalicProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ItalicLight : ItalicDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "italic",
+      "icon",
+      "general",
+      "editor",
+      "jetbrains"
+    ]
+  }
+}

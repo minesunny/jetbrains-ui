@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-java-ee-build-on-frame-deactivation",
+  "type": "registry:ui",
+  "title": "Build On Frame Deactivation",
+  "description": "Build On Frame Deactivation icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/build-on-frame-deactivation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/build-on-frame-deactivation/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type BuildOnFrameDeactivationProps = IconProps;\n\nconst BuildOnFrameDeactivationLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.854 15.854a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L12 14.293V8.5a.5.5 0 0 1 1 0v5.793l2.146-2.147a.5.5 0 0 1 .708.708z\"\n      fill=\"#369650\"\n    />\n    <path\n      d=\"M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.879l-.44-.44a1.5 1.5 0 0 1 2.122-2.12l.439.439V8.5A1.5 1.5 0 0 1 12.5 7H15V4a2 2 0 0 0-2-2z\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      d=\"M3 3h10a1 1 0 0 1 1 1v3h1V4a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.879l-.44-.44a1.5 1.5 0 0 1-.354-.56H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M3.5 5.5A.5.5 0 0 1 4 5h1a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5M7 5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst BuildOnFrameDeactivationDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.854 15.854a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L12 14.293V8.5a.5.5 0 0 1 1 0v5.793l2.146-2.147a.5.5 0 0 1 .708.708z\"\n      fill=\"#57965C\"\n    />\n    <path\n      d=\"M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.879l-.44-.44a1.5 1.5 0 0 1 2.122-2.12l.439.439V8.5A1.5 1.5 0 0 1 12.5 7H15V4a2 2 0 0 0-2-2z\"\n      fill=\"#43454A\"\n    />\n    <path\n      d=\"M3 3h10a1 1 0 0 1 1 1v3h1V4a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.879l-.44-.44a1.5 1.5 0 0 1-.354-.56H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M3.5 5.5A.5.5 0 0 1 4 5h1a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5M7 5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const BuildOnFrameDeactivation: React.FC<\n  BuildOnFrameDeactivationProps\n> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light'\n      ? BuildOnFrameDeactivationLight\n      : BuildOnFrameDeactivationDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "build-on-frame-deactivation",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

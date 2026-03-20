@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-jpa-persistence-embeddable",
+  "type": "registry:ui",
+  "title": "Persistence Embeddable",
+  "description": "Persistence Embeddable icon from Plugins Jpa category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/persistence-embeddable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-embeddable/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "persistence-embeddable",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

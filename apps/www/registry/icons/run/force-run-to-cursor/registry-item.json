@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-force-run-to-cursor",
+  "type": "registry:ui",
+  "title": "Force Run To Cursor",
+  "description": "Force Run To Cursor icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/force-run-to-cursor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/force-run-to-cursor/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "force-run-to-cursor",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

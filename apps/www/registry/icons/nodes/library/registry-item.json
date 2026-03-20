@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-library",
+  "type": "registry:ui",
+  "title": "Library",
+  "description": "Library icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/library/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/library/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "library",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

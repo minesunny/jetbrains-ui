@@ -1,0 +1,82 @@
+---
+title: Input
+description: 基于 JetBrains UI 设计风格的单行输入框组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-input" />
+
+## 概述
+
+JetBrains 风格的单行文本输入组件，适用于表单与搜索场景。
+
+### 设计特点
+
+- **JetBrains 风格配色**：基于 JetBrains 设计令牌实现。
+- **完整状态支持**：default、hover、focus、invalid、disabled。
+- **紧凑尺寸**：适合高密度设置页与表单布局。
+- **无障碍支持**：默认提供清晰的焦点样式与键盘可访问性。
+
+## 安装
+
+<ComponentInstallation name="input" />
+
+## 用法
+
+```tsx
+import { Input } from '@/components/jetbrains-ui/input';
+
+<Input placeholder="请输入内容..." />;
+```
+
+### 无效状态
+
+```tsx
+<Input aria-invalid placeholder="邮箱为必填项" />
+```
+
+### 禁用状态
+
+```tsx
+<Input disabled placeholder="禁用输入框" />
+```
+
+## API 参考
+
+### Input
+
+<TypeTable
+  type={{
+    type: {
+      description: '原生 input 类型',
+      type: 'string',
+      required: false,
+      default: '"text"',
+    },
+    disabled: {
+      description: '是否禁用输入框',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    'aria-invalid': {
+      description: '是否处于无效状态',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: '传递给 input 元素的其他属性',
+      type: 'React.ComponentProps<"input">',
+      required: false,
+    },
+  }}
+/>
+
+## 致谢
+
+- 设计灵感来源于 [JetBrains UI Kit](https://jetbrains.design)
+- 基于 React 与 Tailwind CSS 构建

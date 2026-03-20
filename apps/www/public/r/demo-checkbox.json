@@ -1,0 +1,43 @@
+{
+  "name": "demo-checkbox",
+  "type": "registry:ui",
+  "title": "Checkbox Demo",
+  "description": "复选框组件的演示",
+  "dependencies": [
+    "@radix-ui/react-checkbox"
+  ],
+  "registryDependencies": [
+    "@jetbrains-ui/checkbox"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/checkbox/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/checkbox.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { Checkbox } from '@/components/jetbrains-ui/checkbox';\n\ntype CheckboxState = 'unchecked' | 'checked' | 'indeterminate';\ntype CheckboxRootProps = React.ComponentPropsWithoutRef<typeof Checkbox>;\n\ninterface CheckboxDemoProps\n  extends Omit<\n    CheckboxRootProps,\n    'checked' | 'defaultChecked' | 'onCheckedChange'\n  > {\n  state: CheckboxState;\n  indeterminate?: boolean;\n  invalid?: boolean;\n  label?: React.ReactNode;\n  onCheckedChange?: CheckboxRootProps['onCheckedChange'];\n}\n\nconst getCheckedValue = (state: CheckboxState): boolean | 'indeterminate' => {\n  if (state === 'checked') return true;\n  if (state === 'indeterminate') return 'indeterminate';\n  return false;\n};\n\nconst normalizeState = (\n  state: CheckboxState,\n  indeterminate: boolean,\n): CheckboxState => {\n  if (!indeterminate && state === 'indeterminate') return 'unchecked';\n  return state;\n};\n\nconst getNextState = (\n  state: CheckboxState,\n  indeterminate: boolean,\n): CheckboxState => {\n  if (!indeterminate) {\n    return state === 'checked' ? 'unchecked' : 'checked';\n  }\n\n  if (state === 'unchecked') return 'checked';\n  if (state === 'checked') return 'indeterminate';\n  return 'unchecked';\n};\n\nexport default function CheckboxDemo({\n  state: initialState,\n  indeterminate = false,\n  invalid = false,\n  label = 'Checkbox label',\n  id = 'jb-checkbox-demo',\n  onCheckedChange,\n  ...props\n}: CheckboxDemoProps) {\n  const [state, setState] = React.useState<CheckboxState>(\n    normalizeState(initialState, indeterminate),\n  );\n\n  // 同步外部 props 变化\n  React.useEffect(() => {\n    setState(normalizeState(initialState, indeterminate));\n  }, [initialState, indeterminate]);\n\n  const checkedValue = getCheckedValue(state);\n  const ariaInvalid = invalid ? true : props['aria-invalid'];\n\n  const handleCheckedChange = () => {\n    setState((prev) => {\n      if (props.disabled) return prev;\n      const nextState = getNextState(prev, indeterminate);\n      onCheckedChange?.(getCheckedValue(nextState));\n      return nextState;\n    });\n  };\n\n  return (\n    <Checkbox\n      {...props}\n      id={id}\n      label={label}\n      indeterminate={indeterminate}\n      checked={checkedValue}\n      onCheckedChange={handleCheckedChange}\n      aria-invalid={ariaInvalid}\n    />\n  );\n}"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "Checkbox": {
+        "state": {
+          "value": "unchecked",
+          "options": {
+            "unchecked": "unchecked",
+            "checked": "checked",
+            "indeterminate": "indeterminate"
+          }
+        },
+        "disabled": {
+          "value": false
+        },
+        "indeterminate": {
+          "value": false
+        },
+        "invalid": {
+          "value": false
+        }
+      }
+    }
+  }
+}

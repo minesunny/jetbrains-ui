@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-svelte",
+  "type": "registry:ui",
+  "title": "Svelte",
+  "description": "Svelte icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/svelte/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/svelte/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "svelte",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

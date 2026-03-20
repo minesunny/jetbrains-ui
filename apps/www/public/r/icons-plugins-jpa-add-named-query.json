@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-jpa-add-named-query",
+  "type": "registry:ui",
+  "title": "Add Named Query",
+  "description": "Add Named Query icon from Plugins Jpa category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/add-named-query/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/add-named-query/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type AddNamedQueryProps = IconProps;\n\nconst AddNamedQueryLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"12\" cy=\"12\" r=\"2\" fill=\"#EBECF0\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M13.738 14.445a3 3 0 1 1 .707-.707l1.409 1.408a.5.5 0 0 1-.708.708zM14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0\"\n      fill=\"#6C707E\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3.5 9a.5.5 0 0 1 .5.5V12h2.5a.5.5 0 0 1 0 1H4v2.5a.5.5 0 0 1-1 0V13H.5a.5.5 0 0 1 0-1H3V9.5a.5.5 0 0 1 .5-.5\"\n      fill=\"#3574F0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M2 3.392h.017c.062-.388.29-.717.58-.979.34-.307.804-.561 1.335-.764C4.998 1.24 6.436 1 8 1s3.002.241 4.068.649c.53.203.995.457 1.335.764.29.262.518.591.58.98H14v5.142a4 4 0 0 0-1-.409v-.085l-.098.061a4.01 4.01 0 0 0-3.654.995q-.605.052-1.248.052c-1.165 0-2.261-.134-3.185-.37a1.5 1.5 0 0 0-1.77-.709L3 8.041v.044A1.5 1.5 0 0 0 2 9.5zm1 .21c0-.1.051-.251.268-.447.216-.195.557-.395 1.021-.572C5.215 2.229 6.526 2 8 2s2.786.23 3.71.583c.465.177.806.377 1.022.572.217.196.268.348.268.448s-.051.252-.268.447c-.216.196-.557.395-1.021.573-.925.353-2.237.582-3.711.582s-2.785-.229-3.71-.582c-.465-.178-.806-.377-1.022-.573C3.05 3.855 3 3.703 3 3.603m0 2.945v-1.45c.272.175.588.328.932.46 1.066.407 2.504.648 4.068.648s3.002-.241 4.068-.648c.344-.132.66-.285.932-.46v1.45c0 .1-.051.252-.268.447-.216.196-.557.395-1.021.572-.925.354-2.237.583-3.711.583s-2.785-.229-3.71-.583c-.465-.177-.806-.376-1.022-.572C3.05 6.8 3 6.646 3 6.547\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst AddNamedQueryDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"12\" cy=\"12\" r=\"2\" fill=\"#43454A\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M13.738 14.445a3 3 0 1 1 .707-.707l1.409 1.408a.5.5 0 0 1-.708.708zM14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3.5 9a.5.5 0 0 1 .5.5V12h2.5a.5.5 0 0 1 0 1H4v2.5a.5.5 0 0 1-1 0V13H.5a.5.5 0 0 1 0-1H3V9.5a.5.5 0 0 1 .5-.5\"\n      fill=\"#548AF7\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M2 3.392h.017c.062-.388.29-.717.58-.979.34-.307.804-.561 1.335-.764C4.998 1.24 6.436 1 8 1s3.002.241 4.068.649c.53.203.995.457 1.335.764.29.262.518.591.58.98H14v5.142a4 4 0 0 0-1-.409v-.085l-.098.061a4.01 4.01 0 0 0-3.654.995q-.605.052-1.248.052c-1.165 0-2.261-.134-3.185-.37a1.5 1.5 0 0 0-1.77-.709L3 8.041v.044A1.5 1.5 0 0 0 2 9.5zm1 .21c0-.1.051-.251.268-.447.216-.195.557-.395 1.021-.572C5.215 2.229 6.526 2 8 2s2.786.23 3.71.583c.465.177.806.377 1.022.572.217.196.268.348.268.448s-.051.252-.268.447c-.216.196-.557.395-1.021.573-.925.353-2.237.582-3.711.582s-2.785-.229-3.71-.582c-.465-.178-.806-.377-1.022-.573C3.05 3.855 3 3.703 3 3.603m0 2.945v-1.45c.272.175.588.328.932.46 1.066.407 2.504.648 4.068.648s3.002-.241 4.068-.648c.344-.132.66-.285.932-.46v1.45c0 .1-.051.252-.268.447-.216.196-.557.395-1.021.572-.925.354-2.237.583-3.711.583s-2.785-.229-3.71-.583c-.465-.177-.806-.376-1.022-.572C3.05 6.8 3 6.646 3 6.547\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const AddNamedQuery: React.FC<AddNamedQueryProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? AddNamedQueryLight : AddNamedQueryDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "add-named-query",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

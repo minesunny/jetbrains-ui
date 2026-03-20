@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-test-runner-watch",
+  "type": "registry:ui",
+  "title": "Test Runner Watch",
+  "description": "Test Runner Watch icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/test-runner-watch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/test-runner-watch/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "test-runner-watch",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

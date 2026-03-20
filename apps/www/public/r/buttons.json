@@ -1,0 +1,74 @@
+{
+  "name": "buttons",
+  "type": "registry:ui",
+  "title": "Buttons",
+  "description": "JetBrains UI 风格的按钮组件集合，当前包含 Button。",
+  "dependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/tooltip"
+  ],
+  "files": [
+    {
+      "path": "registry/components/button/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/buttons/index.tsx",
+      "content": "'use client';\n\nexport { Button, buttonVariants } from './button';\nexport type { ButtonProps } from './button';"
+    },
+    {
+      "path": "registry/components/button/button.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/buttons/button.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { Slot } from '@radix-ui/react-slot';\nimport { cva, type VariantProps } from 'class-variance-authority';\n\nimport { cn } from '@/lib/utils';\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipTrigger,\n} from '@/components/jetbrains-ui/tooltip';\nimport './index.css';\n\nconst buttonVariants = cva(\n  'jb-btn inline-flex items-center justify-center whitespace-nowrap rounded border text-[13px] leading-4 font-medium transition-[background-color,color,border-color,box-shadow] duration-150 ease-in-out focus-visible:outline-none disabled:pointer-events-none disabled:cursor-not-allowed',\n  {\n    variants: {\n      variant: {\n        primary: 'jb-btn--primary',\n        secondary: 'jb-btn--secondary',\n      },\n      size: {\n        default: 'h-7 min-w-[72px] gap-2 px-3',\n        slim: 'h-6 min-w-[72px] gap-2 px-3',\n      },\n    },\n    defaultVariants: {\n      variant: 'primary',\n      size: 'default',\n    },\n  },\n);\n\ntype ButtonVariant = NonNullable<\n  VariantProps<typeof buttonVariants>['variant']\n>;\n\ntype ButtonProps = React.ComponentProps<'button'> & {\n  variant?: ButtonVariant;\n  slim?: boolean;\n  tooltip?: string;\n  asChild?: boolean;\n};\n\nfunction Button({\n  className,\n  variant = 'primary',\n  slim = false,\n  tooltip,\n  asChild = false,\n  children,\n  ...props\n}: ButtonProps) {\n  const Comp = asChild ? Slot : 'button';\n  const size = slim ? 'slim' : 'default';\n\n  const button = (\n    <Comp\n      data-slot=\"jb-button\"\n      data-variant={variant}\n      data-slim={slim || undefined}\n      className={cn(buttonVariants({ variant, size }), className)}\n      {...props}\n    >\n      {children}\n    </Comp>\n  );\n\n  if (!tooltip) {\n    return button;\n  }\n\n  return (\n    <Tooltip>\n      <TooltipTrigger asChild>{button}</TooltipTrigger>\n      <TooltipContent>{tooltip}</TooltipContent>\n    </Tooltip>\n  );\n}\n\nexport { Button, buttonVariants, type ButtonProps };"
+    },
+    {
+      "path": "registry/components/button/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/buttons/index.css",
+      "content": ":root {\n  --jb-btn-primary-bg: var(--jb-blue-4);\n  --jb-btn-primary-bg-hover: var(--jb-blue-3);\n  --jb-btn-primary-bg-pressed: var(--jb-blue-2);\n  --jb-btn-primary-text: var(--jb-gray-14);\n  --jb-btn-primary-ring: var(--jb-blue-4);\n\n  --jb-btn-secondary-bg: transparent;\n  --jb-btn-secondary-bg-hover: var(--jb-gray-12);\n  --jb-btn-secondary-bg-pressed: var(--jb-gray-11);\n  --jb-btn-secondary-text: var(--jb-gray-1);\n  --jb-btn-secondary-border: var(--jb-gray-9);\n  --jb-btn-secondary-ring: var(--jb-blue-4);\n\n  --jb-btn-disabled-bg: var(--jb-gray-12);\n  --jb-btn-disabled-text: var(--jb-gray-8);\n  --jb-btn-focus-offset: var(--jb-gray-14);\n}\n\n.dark {\n  --jb-btn-primary-bg: var(--jb-blue-6);\n  --jb-btn-primary-bg-hover: var(--jb-blue-5);\n  --jb-btn-primary-bg-pressed: var(--jb-blue-4);\n  --jb-btn-primary-text: var(--jb-gray-14);\n  --jb-btn-primary-ring: var(--jb-blue-6);\n\n  --jb-btn-secondary-bg: var(--jb-gray-5);\n  --jb-btn-secondary-bg-hover: var(--jb-gray-6);\n  --jb-btn-secondary-bg-pressed: var(--jb-gray-4);\n  --jb-btn-secondary-text: var(--jb-gray-12);\n  --jb-btn-secondary-border: var(--jb-gray-5);\n  --jb-btn-secondary-ring: var(--jb-blue-6);\n\n  --jb-btn-disabled-bg: var(--jb-gray-4);\n  --jb-btn-disabled-text: var(--jb-gray-7);\n  --jb-btn-focus-offset: var(--jb-gray-2);\n}\n\n.jb-btn {\n  --jb-btn-border-disabled: transparent;\n  border-color: var(--jb-btn-border);\n  background-color: var(--jb-btn-bg);\n  color: var(--jb-btn-text);\n}\n\n.jb-btn:hover {\n  background-color: var(--jb-btn-bg-hover);\n  color: var(--jb-btn-text-hover);\n}\n\n.jb-btn:active {\n  background-color: var(--jb-btn-bg-active);\n  color: var(--jb-btn-text-active);\n}\n\n.jb-btn:focus-visible {\n  box-shadow:\n    0 0 0 2px var(--jb-btn-focus-offset),\n    0 0 0 4px var(--jb-btn-ring);\n}\n\n.jb-btn:disabled {\n  background-color: var(--jb-btn-bg-disabled);\n  color: var(--jb-btn-text-disabled);\n  border-color: var(--jb-btn-border-disabled);\n}\n\n.jb-btn:is(\n    [data-variant='primary'],\n    .jb-btn--primary\n  ) {\n  --jb-btn-bg: var(--jb-btn-primary-bg);\n  --jb-btn-text: var(--jb-btn-primary-text);\n  --jb-btn-border: transparent;\n  --jb-btn-bg-hover: var(--jb-btn-primary-bg-hover);\n  --jb-btn-text-hover: var(--jb-btn-primary-text);\n  --jb-btn-bg-active: var(--jb-btn-primary-bg-pressed);\n  --jb-btn-text-active: var(--jb-btn-primary-text);\n  --jb-btn-ring: var(--jb-btn-primary-ring);\n  --jb-btn-bg-disabled: var(--jb-btn-disabled-bg);\n  --jb-btn-text-disabled: var(--jb-btn-disabled-text);\n}\n\n.jb-btn:is(\n    [data-variant='secondary'],\n    .jb-btn--secondary\n  ) {\n  --jb-btn-bg: var(--jb-btn-secondary-bg);\n  --jb-btn-text: var(--jb-btn-secondary-text);\n  --jb-btn-border: var(--jb-btn-secondary-border);\n  --jb-btn-bg-hover: var(--jb-btn-secondary-bg-hover);\n  --jb-btn-text-hover: var(--jb-btn-secondary-text);\n  --jb-btn-bg-active: var(--jb-btn-secondary-bg-pressed);\n  --jb-btn-text-active: var(--jb-btn-secondary-text);\n  --jb-btn-ring: var(--jb-btn-secondary-ring);\n  --jb-btn-bg-disabled: var(--jb-btn-disabled-bg);\n  --jb-btn-text-disabled: var(--jb-btn-disabled-text);\n}"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "buttons",
+      "button",
+      "jetbrains",
+      "ui",
+      "组件",
+      "按钮"
+    ],
+    "category": "buttons",
+    "docs": {
+      "description": "JetBrains UI 风格的按钮组件集合，当前提供 Base Button，基于 Radix UI Slot 构建。",
+      "features": [
+        "2种颜色变体：primary、secondary",
+        "Figma 对齐尺寸：default 72x28 / slim 72x24",
+        "支持 slim 变量",
+        "支持 tooltip 文本提示",
+        "完整状态支持：hover、active、disabled、focus",
+        "支持 asChild 模式组合链接等元素",
+        "基于 JetBrains 设计令牌的样式实现",
+        "优秀的无障碍支持"
+      ]
+    },
+    "demoProps": {
+      "Button": {
+        "variant": {
+          "value": "primary",
+          "options": {
+            "primary": "primary",
+            "secondary": "secondary"
+          }
+        },
+        "slim": {
+          "value": false
+        },
+        "tooltip": {
+          "value": ""
+        }
+      }
+    }
+  }
+}

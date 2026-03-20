@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-jpa-persistence-unit",
+  "type": "registry:ui",
+  "title": "Persistence Unit",
+  "description": "Persistence Unit icon from Plugins Jpa category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/persistence-unit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-unit/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "persistence-unit",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

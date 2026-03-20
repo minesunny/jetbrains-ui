@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-terminal-types",
+  "type": "registry:ui",
+  "title": "Terminal Icons Types",
+  "description": "Shared types and utilities for Terminal icon components.",
+  "files": [
+    {
+      "path": "registry/icons/terminal/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/terminal/types.ts"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-stm32-cube-mx",
+  "type": "registry:ui",
+  "title": "Stm32 Cube Mx",
+  "description": "Stm32 Cube Mx icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/stm32-cube-mx/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/stm32-cube-mx/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "stm32-cube-mx",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

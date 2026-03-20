@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-breakpoint-field-dependent",
+  "type": "registry:ui",
+  "title": "Breakpoint Field Dependent",
+  "description": "Breakpoint Field Dependent icon from Breakpoints category.",
+  "registryDependencies": [
+    "icons-breakpoints-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/breakpoint-field-dependent/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-dependent/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "breakpoint-field-dependent",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ]
+  }
+}

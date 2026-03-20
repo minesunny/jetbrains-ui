@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-ai-assistant-feature-docs",
+  "type": "registry:ui",
+  "title": "Feature Docs",
+  "description": "Feature Docs icon from General Ai Assistant category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/ai-assistant/feature-docs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/feature-docs/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "feature-docs",
+      "icon",
+      "general",
+      "ai-assistant",
+      "jetbrains"
+    ]
+  }
+}

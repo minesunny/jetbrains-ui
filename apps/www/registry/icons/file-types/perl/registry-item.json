@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-perl",
+  "type": "registry:ui",
+  "title": "Perl",
+  "description": "Perl icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/perl/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/perl/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "perl",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

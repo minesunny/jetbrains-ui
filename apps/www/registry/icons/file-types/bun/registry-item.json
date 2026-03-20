@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-bun",
+  "type": "registry:ui",
+  "title": "Bun",
+  "description": "Bun icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/bun/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/bun/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "bun",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

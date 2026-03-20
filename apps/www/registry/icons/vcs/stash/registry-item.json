@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-stash",
+  "type": "registry:ui",
+  "title": "Stash",
+  "description": "Stash icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/stash/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/stash/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "stash",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

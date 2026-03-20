@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-static",
+  "type": "registry:ui",
+  "title": "Static",
+  "description": "Static icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/static/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/static/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "static",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

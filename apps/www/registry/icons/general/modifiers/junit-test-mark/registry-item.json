@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-modifiers-junit-test-mark",
+  "type": "registry:ui",
+  "title": "Junit Test Mark",
+  "description": "Junit Test Mark icon from General Modifiers category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/modifiers/junit-test-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/junit-test-mark/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "junit-test-mark",
+      "icon",
+      "general",
+      "modifiers",
+      "jetbrains"
+    ]
+  }
+}

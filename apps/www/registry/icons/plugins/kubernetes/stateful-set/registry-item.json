@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-kubernetes-stateful-set",
+  "type": "registry:ui",
+  "title": "Stateful Set",
+  "description": "Stateful Set icon from Plugins Kubernetes category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kubernetes/stateful-set/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/stateful-set/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "stateful-set",
+      "icon",
+      "plugins",
+      "kubernetes",
+      "jetbrains"
+    ]
+  }
+}

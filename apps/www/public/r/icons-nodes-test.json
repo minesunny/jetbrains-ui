@@ -1,0 +1,26 @@
+{
+  "name": "icons-nodes-test",
+  "type": "registry:ui",
+  "title": "Test",
+  "description": "Test icon from Nodes category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/test/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type TestProps = IconProps;\n\nconst TestLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" fill=\"#FFF7F7\" stroke=\"#DB3B4B\" />\n    <path\n      d=\"M8.462 11.5h.999v-.906h-.868a.56.56 0 0 1-.573-.573V6.82h1.44l.006-.906H8.02V4.5h-.944v.95a.444.444 0 0 1-.463.463h-.704l-.006.906h1.08l.006 3.295c0 .797.622 1.386 1.473 1.386\"\n      fill=\"#DB3B4B\"\n    />\n  </svg>\n);\n\nconst TestDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" fill=\"#402929\" stroke=\"#DB5C5C\" />\n    <path\n      d=\"M8.462 11.5h.999v-.906h-.868a.56.56 0 0 1-.573-.573V6.82h1.44l.006-.906H8.02V4.5h-.944v.95a.444.444 0 0 1-.463.463h-.704l-.006.906h1.08l.006 3.295c0 .797.622 1.386 1.473 1.386\"\n      fill=\"#DB5C5C\"\n    />\n  </svg>\n);\n\nexport const Test: FC<TestProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? TestLight : TestDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "test",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

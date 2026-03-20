@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-general-move-up",
+  "type": "registry:ui",
+  "title": "Move Up",
+  "description": "Move Up icon from General General category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/move-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-up/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type MoveUpProps = IconProps;\n\nconst MoveUpLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11.854 5.854a.5.5 0 0 1-.708.707L8.5 3.914v7.593a.5.5 0 0 1-1 0V3.914L4.854 6.561a.5.5 0 1 1-.708-.707l3.5-3.5L8 2l.354.354z\"\n      fill=\"#6C707E\"\n    />\n    <rect x=\"2\" y=\"13.007\" width=\"12\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n  </svg>\n);\n\nconst MoveUpDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11.854 5.854a.5.5 0 0 1-.708.707L8.5 3.914v7.593a.5.5 0 0 1-1 0V3.914L4.854 6.561a.5.5 0 1 1-.708-.707l3.5-3.5L8 2l.354.354z\"\n      fill=\"#CED0D6\"\n    />\n    <rect x=\"2\" y=\"13.007\" width=\"12\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n  </svg>\n);\n\nexport const MoveUp: FC<MoveUpProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? MoveUpLight : MoveUpDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "move-up",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

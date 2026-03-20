@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-modifiers-tab-alert",
+  "type": "registry:ui",
+  "title": "Tab Alert",
+  "description": "Tab Alert icon from General Modifiers category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/modifiers/tab-alert/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/tab-alert/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type TabAlertProps = IconProps;\n\nconst TabAlertLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M9 12.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0\" fill=\"#E66D17\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14.854 12.146a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L12 13.293V10.5a.5.5 0 0 1 1 0v2.793l1.146-1.147a.5.5 0 0 1 .708 0\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nconst TabAlertDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M9 12.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0\" fill=\"#F2C55C\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14.854 12.146a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L12 13.293V10.5a.5.5 0 0 1 1 0v2.793l1.146-1.147a.5.5 0 0 1 .708 0\"\n      fill=\"#1E1F22\"\n    />\n  </svg>\n);\n\nexport const TabAlert: FC<TabAlertProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? TabAlertLight : TabAlertDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tab-alert",
+      "icon",
+      "general",
+      "modifiers",
+      "jetbrains"
+    ]
+  }
+}

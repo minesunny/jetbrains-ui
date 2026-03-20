@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-maven-flex",
+  "type": "registry:ui",
+  "title": "Maven Flex",
+  "description": "Maven Flex icon from Build category.",
+  "registryDependencies": [
+    "icons-build-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/build/maven-flex/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-flex/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "maven-flex",
+      "icon",
+      "build",
+      "jetbrains"
+    ]
+  }
+}

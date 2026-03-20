@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-sqlselect-statement",
+  "type": "registry:ui",
+  "title": "Sqlselect Statement",
+  "description": "Sqlselect Statement icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/sqlselect-statement/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sqlselect-statement/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type SQLSelectStatementProps = IconProps;\n\nconst SQLSelectStatementLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M1.56 7.646a.5.5 0 0 0 0 .708l5.94 5.939V10.5H14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5H7.5V1.707z\"\n      fill=\"#EBECF0\"\n      stroke=\"#6C707E\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nconst SQLSelectStatementDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M1.56 7.646a.5.5 0 0 0 0 .708l5.94 5.939V10.5H14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5H7.5V1.707z\"\n      fill=\"#43454A\"\n      stroke=\"#CED0D6\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nexport const SQLSelectStatement: FC<SQLSelectStatementProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? SQLSelectStatementLight : SQLSelectStatementDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sqlselect-statement",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

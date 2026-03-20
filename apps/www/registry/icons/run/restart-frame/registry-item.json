@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-restart-frame",
+  "type": "registry:ui",
+  "title": "Restart Frame",
+  "description": "Restart Frame icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/restart-frame/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/restart-frame/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "restart-frame",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

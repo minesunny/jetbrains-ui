@@ -1,0 +1,108 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type DynamoDBProps = IconProps;
+
+const DynamoDBLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M9.806 14.976h.17l2.773-1.387.046-.066V2.453l-.046-.066L9.975 1h-.172z"
+      fill="#5294CF"
+    />
+    <path
+      d="M6.196 14.976h-.172l-2.772-1.387-.056-.097-.029-10.984.085-.122L6.024 1h.174z"
+      fill="#1F5B98"
+    />
+    <path d="M6.028 1h3.945v13.976H6.028z" fill="#2D72B8" />
+    <path
+      d="m14.201 7.674-.093-.02-1.339-.126-.02.01-2.776-.11H6.028l-2.776.11V5.421l-.003.002.003-.007 2.776-.643h3.945l2.776.643 1.021.543V5.61l.431-.047-.044-.087-1.366-.977-.042.014-2.776-.86H6.028l-2.776.86V2.386L1.8 4.087v1.486l.011-.009.42.046v.356l-.43.231v1.478l.01-.001.42.006v.62l-.362.006-.069-.007v1.48l.431.231v.36l-.413.046-.018-.014v1.486l1.452 1.7v-2.126l2.776.86h3.945l2.785-.862.037.016 1.347-.962.06-.096-.432-.048v-.353l-.056-.022-.923.497-.033.07-2.785.64H6.028l-2.776-.643V8.434l2.776.11v.003h3.945l2.776-.113.064.03 1.297-.113.091-.044-.43-.006v-.62z"
+      fill="#1A476F"
+    />
+    <path
+      d="M12.75 11.462v2.127l1.451-1.702v-1.475l-1.443 1.047zM12.75 10.564l.008-.002 1.444-.777V8.301l-1.453.133zM12.758 5.418l-.008-.002v2.122l1.451.136V6.19zM12.758 4.521l1.444 1.042V4.087l-1.453-1.701v2.127l.009.003z"
+      fill="#2D72B8"
+    />
+  </svg>
+);
+
+const DynamoDBDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M9.806 14.976h.17l2.773-1.387.046-.066V2.453l-.046-.066L9.975 1h-.172z"
+      fill="#5294CF"
+    />
+    <path
+      d="M6.196 14.976h-.172l-2.772-1.387-.056-.097-.029-10.984.085-.122L6.024 1h.174z"
+      fill="#1F5B98"
+    />
+    <path d="M6.028 1h3.945v13.976H6.028z" fill="#2D72B8" />
+    <path
+      d="m14.201 7.674-.093-.02-1.339-.126-.02.01-2.776-.11H6.028l-2.776.11V5.421l-.003.002.003-.007 2.776-.643h3.945l2.776.643 1.021.543V5.61l.431-.047-.044-.087-1.366-.977-.042.014-2.776-.86H6.028l-2.776.86V2.386L1.8 4.087v1.486l.011-.009.42.046v.356l-.43.231v1.478l.01-.001.42.006v.62l-.362.006-.069-.007v1.48l.431.231v.36l-.413.046-.018-.014v1.486l1.452 1.7v-2.126l2.776.86h3.945l2.785-.862.037.016 1.347-.962.06-.096-.432-.048v-.353l-.056-.022-.923.497-.033.07-2.785.64H6.028l-2.776-.643V8.434l2.776.11v.003h3.945l2.776-.113.064.03 1.297-.113.091-.044-.43-.006v-.62z"
+      fill="#1A476F"
+    />
+    <path
+      d="M12.75 11.462v2.127l1.451-1.702v-1.475l-1.443 1.047zM12.75 10.564l.008-.002 1.444-.777V8.301l-1.453.133zM12.758 5.418l-.008-.002v2.122l1.451.136V6.19zM12.758 4.521l1.444 1.042V4.087l-1.453-1.701v2.127l.009.003z"
+      fill="#2D72B8"
+    />
+  </svg>
+);
+
+export const DynamoDB: FC<DynamoDBProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? DynamoDBLight : DynamoDBDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

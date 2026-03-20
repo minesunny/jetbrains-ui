@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-back-trace",
+  "type": "registry:ui",
+  "title": "Back Trace",
+  "description": "Back Trace icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/back-trace/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/back-trace/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type BackTraceProps = IconProps;\n\nconst BackTraceLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M4 10.5a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1H4.707l8.147 8.147a.5.5 0 1 1-.708.707L4 4.707z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst BackTraceDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M4 10.5a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1H4.707l8.147 8.147a.5.5 0 1 1-.708.707L4 4.707z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const BackTrace: FC<BackTraceProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? BackTraceLight : BackTraceDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "back-trace",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-pin",
+  "type": "registry:ui",
+  "title": "Pin",
+  "description": "Pin icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/pin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/pin/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "pin",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

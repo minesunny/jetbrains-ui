@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-favorites",
+  "type": "registry:ui",
+  "title": "Favorites",
+  "description": "Favorites icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/favorites/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/favorites/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "favorites",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

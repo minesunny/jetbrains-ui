@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-actions-group-by-test-production",
+  "type": "registry:ui",
+  "title": "Group By Test Production",
+  "description": "Group By Test Production icon from General Actions category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/group-by-test-production/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-test-production/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "group-by-test-production",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

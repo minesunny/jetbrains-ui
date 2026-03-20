@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-list-key",
+  "type": "registry:ui",
+  "title": "List Key",
+  "description": "List Key icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/list-key/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/list-key/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ListKeyProps = IconProps;\n\nconst ListKeyLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\" fill=\"#6C707E\">\n      <path d=\"M5 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2v-1H5V3h2V2zM12 10.337a3.5 3.5 0 0 0-1-.302V3H9V2h2a1 1 0 0 1 1 1z\" />\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M12.95 14a2.5 2.5 0 1 1 0-1H16v1h-1v2h-1v-2zm-2.45 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nconst ListKeyDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\" fill=\"#CED0D6\">\n      <path d=\"M5 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2v-1H5V3h2V2zM12 10.337a3.5 3.5 0 0 0-1-.302V3H9V2h2a1 1 0 0 1 1 1z\" />\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M12.95 14a2.5 2.5 0 1 1 0-1H16v1h-1v2h-1v-2zm-2.45 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const ListKey: FC<ListKeyProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ListKeyLight : ListKeyDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "list-key",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

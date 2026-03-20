@@ -1,0 +1,56 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-dart",
+  "type": "registry:ui",
+  "title": "Plugins Dart Icons",
+  "description": "All 6 icons from the Plugins Dart category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/dart/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/dart/dart/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/dart/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/dart-remote/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/dart-remote/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/dart-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/dart-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/dart-web/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/dart-web/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/observatory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/observatory/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/dart/warning-point/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/warning-point/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "plugins",
+      "dart",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

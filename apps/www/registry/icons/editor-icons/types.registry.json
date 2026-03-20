@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-types",
+  "type": "registry:ui",
+  "title": "Editor Icons Icons Types",
+  "description": "Shared types and utilities for Editor Icons icon components.",
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/types.ts"
+    }
+  ]
+}

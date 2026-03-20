@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-inspections-power-save-mode",
+  "type": "registry:ui",
+  "title": "Inspections Power Save Mode",
+  "description": "Inspections Power Save Mode icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/inspections-power-save-mode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-power-save-mode/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "inspections-power-save-mode",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

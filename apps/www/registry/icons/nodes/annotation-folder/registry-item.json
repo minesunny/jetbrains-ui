@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-annotation-folder",
+  "type": "registry:ui",
+  "title": "Annotation Folder",
+  "description": "Annotation Folder icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/annotation-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/annotation-folder/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "annotation-folder",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

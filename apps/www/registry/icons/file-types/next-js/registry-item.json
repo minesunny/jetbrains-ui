@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-next-js",
+  "type": "registry:ui",
+  "title": "Next Js",
+  "description": "Next Js icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/next-js/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/next-js/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "next-js",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

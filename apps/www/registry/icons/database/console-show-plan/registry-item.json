@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-console-show-plan",
+  "type": "registry:ui",
+  "title": "Console Show Plan",
+  "description": "Console Show Plan icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/console-show-plan/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/console-show-plan/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "console-show-plan",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

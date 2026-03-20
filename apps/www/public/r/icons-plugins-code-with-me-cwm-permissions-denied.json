@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-code-with-me-cwm-permissions-denied",
+  "type": "registry:ui",
+  "title": "Cwm Permissions Denied",
+  "description": "Cwm Permissions Denied icon from Plugins Code With Me category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-permissions-denied/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permissions-denied/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type CwmPermissionsDeniedProps = IconProps;\n\nconst CwmPermissionsDeniedLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M10.146 10.146a.5.5 0 0 1 .708 0L13 12.293l2.146-2.147a.5.5 0 0 1 .708.708L13.707 13l2.147 2.146a.5.5 0 0 1-.708.708L13 13.707l-2.146 2.147a.5.5 0 0 1-.708-.708L12.293 13l-2.147-2.146a.5.5 0 0 1 0-.708\"\n      fill=\"#DB3B4B\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M5 11.5A4 4 0 0 0 8.969 8H11v1.085c.205.073.397.19.56.354l.44.44V8h1v2.5c0 .107.034.206.091.288l.909-.91V8h.5a.5.5 0 0 0 0-1H8.969A4 4 0 1 0 5 11.5m3-4a3 3 0 1 1-6 0 3 3 0 0 1 6 0\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst CwmPermissionsDeniedDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M10.146 10.146a.5.5 0 0 1 .708 0L13 12.293l2.146-2.147a.5.5 0 0 1 .708.708L13.707 13l2.147 2.146a.5.5 0 0 1-.708.708L13 13.707l-2.146 2.147a.5.5 0 0 1-.708-.708L12.293 13l-2.147-2.146a.5.5 0 0 1 0-.708\"\n      fill=\"#DB5C5C\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M5 11.5A4 4 0 0 0 8.969 8H11v1.085c.205.073.397.19.56.354l.44.44V8h1v2.5c0 .107.034.206.091.288l.909-.91V8h.5a.5.5 0 0 0 0-1H8.969A4 4 0 1 0 5 11.5m3-4a3 3 0 1 1-6 0 3 3 0 0 1 6 0\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const CwmPermissionsDenied: React.FC<CwmPermissionsDeniedProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? CwmPermissionsDeniedLight : CwmPermissionsDeniedDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cwm-permissions-denied",
+      "icon",
+      "plugins",
+      "code-with-me",
+      "jetbrains"
+    ]
+  }
+}

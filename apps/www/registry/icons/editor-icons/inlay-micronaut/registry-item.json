@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-inlay-micronaut",
+  "type": "registry:ui",
+  "title": "Inlay Micronaut",
+  "description": "Inlay Micronaut icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/inlay-micronaut/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-micronaut/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "inlay-micronaut",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

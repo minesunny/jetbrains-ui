@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-t-sqlt",
+  "type": "registry:ui",
+  "title": "T Sqlt",
+  "description": "T Sqlt icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/t-sqlt/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/t-sqlt/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type TSQLtProps = IconProps;\n\nconst TSQLtLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M8 3H1v9h7z\" fill=\"#E55765\" />\n    <path d=\"M13 3H9v4h4z\" fill=\"#55A76A\" />\n    <path d=\"M15 8H9v6h6z\" fill=\"#4682FA\" />\n  </svg>\n);\n\nconst TSQLtDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M8 3H1v9h7z\" fill=\"#DB5C5C\" />\n    <path d=\"M13 3H9v4h4z\" fill=\"#5FAD65\" />\n    <path d=\"M15 8H9v6h6z\" fill=\"#548AF7\" />\n  </svg>\n);\n\nexport const TSQLt: FC<TSQLtProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? TSQLtLight : TSQLtDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "t-sqlt",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

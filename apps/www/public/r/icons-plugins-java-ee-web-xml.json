@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-java-ee-web-xml",
+  "type": "registry:ui",
+  "title": "Web Xml",
+  "description": "Web Xml icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/web-xml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-xml/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type WebXmlProps = IconProps;\n\nconst WebXmlLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M10.713 14.71c-.241-.597-.404-1.362-.45-2.21H9.041c.164.98.803 1.798 1.672 2.21M11.678 14.428c-.207-.473-.365-1.143-.413-1.928h1.47c-.049.785-.207 1.455-.414 1.928-.119.271-.236.437-.322.525-.085-.088-.202-.254-.32-.525M11.678 9.572c-.207.473-.365 1.143-.413 1.928h1.47c-.049-.785-.207-1.455-.414-1.928-.119-.271-.236-.437-.322-.525-.085.088-.202.254-.32.525M13.286 14.71c.241-.597.404-1.362.45-2.21h1.222a3 3 0 0 1-1.672 2.21M13.736 11.5h1.222a3 3 0 0 0-1.672-2.21c.241.597.404 1.362.45 2.21M9.041 11.5h1.222c.046-.848.209-1.613.45-2.21A3 3 0 0 0 9.04 11.5\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0m-5.736.5c.046.848.208 1.613.45 2.21A3 3 0 0 1 9.04 12.5zm1.001 0c.048.785.207 1.455.414 1.928.118.271.236.437.321.525.085-.088.203-.254.321-.525.207-.473.366-1.143.414-1.928zm1.47-1h-1.47c.048-.785.207-1.455.414-1.928.118-.271.236-.437.321-.525.085.088.203.254.321.525.207.473.366 1.143.414 1.928m1.002 1c-.047.848-.21 1.613-.45 2.21a3 3 0 0 0 1.672-2.21zm1.222-1h-1.223c-.046-.848-.208-1.613-.45-2.21a3 3 0 0 1 1.673 2.21m-4.695 0H9.04a3 3 0 0 1 1.672-2.21c-.24.597-.403 1.362-.45 2.21\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M9.658 1.702a.6.6 0 0 1 .419.738L6.922 13.88a.6.6 0 0 1-1.157-.32L8.92 2.122a.6.6 0 0 1 .738-.419M5.319 5.51a.6.6 0 1 0-.75-.937L.039 8.197l4.53 3.624a.6.6 0 0 0 .75-.937L1.96 8.197zM12.585 7.034a5 5 0 0 1 2.99 1.471l.385-.308-4.53-3.624a.6.6 0 0 0-.75.937z\"\n      fill=\"#E66D17\"\n    />\n  </svg>\n);\n\nconst WebXmlDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M10.713 14.71c-.241-.597-.404-1.362-.45-2.21H9.041c.164.98.803 1.798 1.672 2.21M11.678 14.428c-.207-.473-.365-1.143-.413-1.928h1.47c-.049.785-.207 1.455-.414 1.928-.119.271-.236.437-.322.525-.085-.088-.202-.254-.32-.525M11.678 9.572c-.207.473-.365 1.143-.413 1.928h1.47c-.049-.785-.207-1.455-.414-1.928-.119-.271-.236-.437-.322-.525-.085.088-.202.254-.32.525M13.286 14.71c.241-.597.404-1.362.45-2.21h1.222a3 3 0 0 1-1.672 2.21M13.736 11.5h1.222a3 3 0 0 0-1.672-2.21c.241.597.404 1.362.45 2.21M9.041 11.5h1.222c.046-.848.209-1.613.45-2.21A3 3 0 0 0 9.04 11.5\"\n      fill=\"#43454A\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M16 12a4 4 0 1 0-8 0 4 4 0 0 0 8 0m-5.736.5c.046.848.208 1.613.45 2.21A3 3 0 0 1 9.04 12.5zm1.001 0c.048.785.207 1.455.414 1.928.118.271.236.437.321.525.085-.088.203-.254.321-.525.207-.473.366-1.143.414-1.928zm1.47-1h-1.47c.048-.785.207-1.455.414-1.928.118-.271.236-.437.321-.525.085.088.203.254.321.525.207.473.366 1.143.414 1.928m1.002 1c-.047.848-.21 1.613-.45 2.21a3 3 0 0 0 1.672-2.21zm1.222-1h-1.223c-.046-.848-.208-1.613-.45-2.21a3 3 0 0 1 1.673 2.21m-4.695 0H9.04a3 3 0 0 1 1.672-2.21c-.24.597-.403 1.362-.45 2.21\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M9.658 1.702a.6.6 0 0 1 .419.738L6.922 13.88a.6.6 0 0 1-1.157-.32L8.92 2.122a.6.6 0 0 1 .738-.419M5.319 5.51a.6.6 0 1 0-.75-.937L.039 8.197l4.53 3.624a.6.6 0 0 0 .75-.937L1.96 8.197zM12.585 7.034a5 5 0 0 1 2.99 1.471l.385-.308-4.53-3.624a.6.6 0 0 0-.75.937z\"\n      fill=\"#C77D55\"\n    />\n  </svg>\n);\n\nexport const WebXml: React.FC<WebXmlProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? WebXmlLight : WebXmlDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "web-xml",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

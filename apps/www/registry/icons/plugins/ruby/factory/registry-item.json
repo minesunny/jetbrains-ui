@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-ruby-factory",
+  "type": "registry:ui",
+  "title": "Factory",
+  "description": "Factory icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/factory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/factory/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "factory",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-general-preview-vertically",
+  "type": "registry:ui",
+  "title": "Preview Vertically",
+  "description": "Preview Vertically icon from General General category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/preview-vertically/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/preview-vertically/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type PreviewVerticallyProps = IconProps;\n\nconst PreviewVerticallyLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7 3h5a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H7zM6 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 11H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2z\"\n      fill=\"#6C707E\"\n    />\n    <rect x=\"8\" y=\"5\" width=\"4\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"8\" y=\"7.5\" width=\"4\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"8\" y=\"10\" width=\"4\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n  </svg>\n);\n\nconst PreviewVerticallyDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7 3h5a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H7zM6 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 11H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2z\"\n      fill=\"#CED0D6\"\n    />\n    <rect x=\"8\" y=\"5\" width=\"4\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"8\" y=\"7.5\" width=\"4\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"8\" y=\"10\" width=\"4\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n  </svg>\n);\n\nexport const PreviewVertically: FC<PreviewVerticallyProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? PreviewVerticallyLight : PreviewVerticallyDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "preview-vertically",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

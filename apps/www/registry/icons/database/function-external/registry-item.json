@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-function-external",
+  "type": "registry:ui",
+  "title": "Function External",
+  "description": "Function External icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/function-external/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/function-external/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "function-external",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

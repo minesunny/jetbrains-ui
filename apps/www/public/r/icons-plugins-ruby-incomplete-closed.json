@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-ruby-incomplete-closed",
+  "type": "registry:ui",
+  "title": "Incomplete Closed",
+  "description": "Incomplete Closed icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/incomplete-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/incomplete-closed/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type IncompleteClosedProps = IconProps;\n\nconst IncompleteClosedLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M1 12.133C1 13.164 1.731 14 2.633 14h10.734c.902 0 1.633-.836 1.633-1.867V8H1z\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v6.133C15 13.164 14.269 14 13.367 14H2.633C1.731 14 1 13.164 1 12.133zM2.633 3h3.489L8.04 5H13a1 1 0 0 1 1 1v2H2V3.867C2 3.258 2.405 3 2.633 3M14 9v3.133c0 .609-.405.867-.633.867H2.633C2.405 13 2 12.742 2 12.133V9z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst IncompleteClosedDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M1 12.133C1 13.164 1.731 14 2.633 14h10.734c.902 0 1.633-.836 1.633-1.867V8H1z\"\n      fill=\"#43454A\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v6.133C15 13.164 14.269 14 13.367 14H2.633C1.731 14 1 13.164 1 12.133zM2.633 3h3.489L8.04 5H13a1 1 0 0 1 1 1v2H2V3.867C2 3.258 2.405 3 2.633 3M14 9v3.133c0 .609-.405.867-.633.867H2.633C2.405 13 2 12.742 2 12.133V9z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const IncompleteClosed: React.FC<IncompleteClosedProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? IncompleteClosedLight : IncompleteClosedDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "incomplete-closed",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

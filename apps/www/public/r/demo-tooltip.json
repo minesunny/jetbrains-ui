@@ -1,0 +1,34 @@
+{
+  "name": "demo-tooltip",
+  "type": "registry:ui",
+  "title": "Tooltip Demo",
+  "description": "Demo showing tooltip component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/tooltip",
+    "@jetbrains-ui/buttons"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/tooltip/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/tooltip.tsx",
+      "content": "import {\n  Tooltip,\n  TooltipContent,\n  TooltipProvider,\n  TooltipTrigger,\n} from '@/components/jetbrains-ui/tooltip';\nimport { Button } from '@/components/jetbrains-ui/button';\n\ninterface TooltipDemoProps {\n  side: 'top' | 'right' | 'bottom' | 'left';\n}\n\nexport default function TooltipDemo({ side }: TooltipDemoProps) {\n  return (\n    <TooltipProvider>\n      <Tooltip>\n        <TooltipTrigger asChild>\n          <Button variant=\"secondary\">Hover Me</Button>\n        </TooltipTrigger>\n        <TooltipContent side={side}>Tooltip content</TooltipContent>\n      </Tooltip>\n    </TooltipProvider>\n  );\n}"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "Tooltip": {
+        "side": {
+          "value": "top",
+          "options": {
+            "top": "top",
+            "right": "right",
+            "bottom": "bottom",
+            "left": "left"
+          }
+        }
+      }
+    }
+  }
+}

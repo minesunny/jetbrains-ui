@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-sql",
+  "type": "registry:ui",
+  "title": "Sql",
+  "description": "Sql icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/sql/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/sql/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type SqlProps = IconProps;\n\nconst SqlLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M8 1.5c-3.038 0-5.5.941-5.5 2.103v8.831c0 1.162 2.462 2.103 5.5 2.103s5.5-.941 5.5-2.103V3.603C13.5 2.44 11.038 1.5 8 1.5\"\n      fill=\"#FAF5FF\"\n    />\n    <ellipse cx=\"8\" cy=\"3.603\" rx=\"5.5\" ry=\"2.103\" stroke=\"#834DF0\" />\n    <path\n      d=\"M13.5 12.434c0 1.162-2.462 2.103-5.5 2.103s-5.5-.941-5.5-2.103M13.5 9.49c0 1.162-2.462 2.103-5.5 2.103s-5.5-.941-5.5-2.103M13.5 6.547c0 1.16-2.462 2.102-5.5 2.102s-5.5-.941-5.5-2.102M13.5 3.392v9.126M2.5 3.392v9.126\"\n      stroke=\"#834DF0\"\n    />\n  </svg>\n);\n\nconst SqlDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M8 1.5c-3.038 0-5.5.941-5.5 2.103v8.831c0 1.162 2.462 2.103 5.5 2.103s5.5-.941 5.5-2.103V3.603C13.5 2.44 11.038 1.5 8 1.5\"\n      fill=\"#2F2936\"\n    />\n    <ellipse cx=\"8\" cy=\"3.603\" rx=\"5.5\" ry=\"2.103\" stroke=\"#B589EC\" />\n    <path\n      d=\"M13.5 12.434c0 1.162-2.462 2.103-5.5 2.103s-5.5-.941-5.5-2.103M13.5 9.49c0 1.162-2.462 2.103-5.5 2.103s-5.5-.941-5.5-2.103M13.5 6.547c0 1.16-2.462 2.102-5.5 2.102s-5.5-.941-5.5-2.102M13.5 3.392v9.126M2.5 3.392v9.126\"\n      stroke=\"#B589EC\"\n    />\n  </svg>\n);\n\nexport const Sql: FC<SqlProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? SqlLight : SqlDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sql",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

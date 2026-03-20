@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-code-with-me-cwm-permissions-granted",
+  "type": "registry:ui",
+  "title": "Cwm Permissions Granted",
+  "description": "Cwm Permissions Granted icon from Plugins Code With Me category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-permissions-granted/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permissions-granted/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type CwmPermissionsGrantedProps = IconProps;\n\nconst CwmPermissionsGrantedLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\" fillRule=\"evenodd\" clipRule=\"evenodd\">\n      <path\n        d=\"M8.969 8a4 4 0 1 1 0-1H14.5a.5.5 0 0 1 0 1H14v2.5a.5.5 0 0 1-1 0V8h-1v2.5a.5.5 0 0 1-1 0V8zM5 10.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6\"\n        fill=\"#6C707E\"\n      />\n      <path\n        d=\"M15.827 11.176a.6.6 0 0 1 0 .848l-3.797 3.797a.6.6 0 0 1-.848 0l-2.006-2.006a.6.6 0 1 1 .848-.848l1.582 1.581 3.373-3.372a.6.6 0 0 1 .848 0\"\n        fill=\"#369650\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nconst CwmPermissionsGrantedDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\" fillRule=\"evenodd\" clipRule=\"evenodd\">\n      <path\n        d=\"M8.969 8a4 4 0 1 1 0-1H14.5a.5.5 0 0 1 0 1H14v2.5a.5.5 0 0 1-1 0V8h-1v2.5a.5.5 0 0 1-1 0V8zM5 10.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6\"\n        fill=\"#CED0D6\"\n      />\n      <path\n        d=\"M15.827 11.176a.6.6 0 0 1 0 .848l-3.797 3.797a.6.6 0 0 1-.848 0l-2.006-2.006a.6.6 0 1 1 .848-.848l1.582 1.581 3.373-3.372a.6.6 0 0 1 .848 0\"\n        fill=\"#57965C\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const CwmPermissionsGranted: React.FC<CwmPermissionsGrantedProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? CwmPermissionsGrantedLight : CwmPermissionsGrantedDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cwm-permissions-granted",
+      "icon",
+      "plugins",
+      "code-with-me",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-nodejs-test-runner",
+  "type": "registry:ui",
+  "title": "Nodejs Test Runner",
+  "description": "Nodejs Test Runner icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/nodejs-test-runner/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/nodejs-test-runner/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "nodejs-test-runner",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

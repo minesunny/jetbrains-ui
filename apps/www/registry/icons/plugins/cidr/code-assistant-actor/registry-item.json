@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-code-assistant-actor",
+  "type": "registry:ui",
+  "title": "Code Assistant Actor",
+  "description": "Code Assistant Actor icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-actor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-actor/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "code-assistant-actor",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

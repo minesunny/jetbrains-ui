@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-spring-web-overlay",
+  "type": "registry:ui",
+  "title": "Web Overlay",
+  "description": "Web Overlay icon from Plugins Spring category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/web-overlay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/web-overlay/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "web-overlay",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

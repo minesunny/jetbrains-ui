@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-cmake-macro",
+  "type": "registry:ui",
+  "title": "Cmake Macro",
+  "description": "Cmake Macro icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/cmake-macro/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cmake-macro/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cmake-macro",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

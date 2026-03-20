@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-field",
+  "type": "registry:ui",
+  "title": "Field",
+  "description": "Field icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/field/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "field",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

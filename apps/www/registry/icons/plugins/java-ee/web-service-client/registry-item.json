@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-java-ee-web-service-client",
+  "type": "registry:ui",
+  "title": "Web Service Client",
+  "description": "Web Service Client icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/web-service-client/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/web-service-client/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "web-service-client",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

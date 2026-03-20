@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-css",
+  "type": "registry:ui",
+  "title": "Css",
+  "description": "Css icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/css/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/css/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type CssProps = IconProps;\n\nconst CssLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"m7.992 15-5.051-1.4L1.815 1h12.37l-1.127 12.599z\" fill=\"#4682FA\" />\n    <path\n      d=\"m4.257 5.121-.14-1.545h7.757l-.28 3.128-.037.415-.388 4.33-3.17.876-.006.002-3.173-.879-.216-2.426h1.554l.11 1.232 1.725.465h.002l1.727-.466.18-2.004H4.534l-.138-1.545h5.64l.14-1.583z\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nconst CssDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"m7.992 15-5.051-1.4L1.815 1h12.37l-1.127 12.599z\" fill=\"#548AF7\" />\n    <path\n      d=\"m4.257 5.121-.14-1.545h7.757l-.28 3.128-.037.415-.388 4.33-3.17.876-.006.002-3.173-.879-.216-2.426h1.554l.11 1.232 1.725.465h.002l1.727-.466.18-2.004H4.534l-.138-1.545h5.64l.14-1.583z\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nexport const Css: FC<CssProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? CssLight : CssDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "css",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

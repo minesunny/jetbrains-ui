@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-scala-abstract-class-object-scala",
+  "type": "registry:ui",
+  "title": "Abstract Class Object Scala",
+  "description": "Abstract Class Object Scala icon from Plugins Scala category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/abstract-class-object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-class-object-scala/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type AbstractClassObjectScalaProps = IconProps;\n\nconst AbstractClassObjectScalaLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M9 14.93V10a1.5 1.5 0 0 1 1.35-1.493L15 8.043V8H1a7 7 0 0 0 8 6.93\"\n      fill=\"#FFF4EB\"\n    />\n    <path d=\"M15 8H1a7 7 0 0 1 14 0\" fill=\"#EDF3FF\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M1.086 9.095A6.97 6.97 0 0 0 3.05 12.95a6.97 6.97 0 0 0 3.855 1.964l.156-.987a5.97 5.97 0 0 1-3.303-1.684A5.97 5.97 0 0 1 2.074 8.94z\"\n      fill=\"#E66D17\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m14.915 6.905-.988.155a5.97 5.97 0 0 0-1.684-3.303A5.97 5.97 0 0 0 8.94 2.074l.155-.988A6.97 6.97 0 0 1 12.95 3.05a6.97 6.97 0 0 1 1.965 3.855m-8.01-5.82.156.989c-1.21.19-2.37.75-3.303 1.683A5.97 5.97 0 0 0 2.074 7.06l-.988-.155A6.97 6.97 0 0 1 3.05 3.05a6.97 6.97 0 0 1 3.855-1.964\"\n      fill=\"#3574F0\"\n    />\n    <path\n      d=\"m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5\"\n      stroke=\"#DB3B4B\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n    <path\n      d=\"M9 11.395a3.6 3.6 0 0 1-.868.105c-1.919 0-3.345-1.494-3.345-3.5s1.426-3.5 3.345-3.5c1.49 0 2.766.9 3.08 2.175h-1.015c-.315-.73-1.093-1.252-2.065-1.252-1.339 0-2.306 1.074-2.306 2.577s.967 2.577 2.306 2.577c.313 0 .605-.054.868-.152z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst AbstractClassObjectScalaDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M9 14.93V10a1.5 1.5 0 0 1 1.35-1.493L15 8.043V8H1a7 7 0 0 0 8 6.93\"\n      fill=\"#45322B\"\n    />\n    <path d=\"M15 8H1a7 7 0 0 1 14 0\" fill=\"#25324D\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M1.086 9.095A6.97 6.97 0 0 0 3.05 12.95a6.97 6.97 0 0 0 3.855 1.964l.156-.987a5.97 5.97 0 0 1-3.303-1.684A5.97 5.97 0 0 1 2.074 8.94z\"\n      fill=\"#C77D55\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m14.915 6.905-.988.155a5.97 5.97 0 0 0-1.684-3.303A5.97 5.97 0 0 0 8.94 2.074l.155-.988A6.97 6.97 0 0 1 12.95 3.05a6.97 6.97 0 0 1 1.965 3.855m-8.01-5.82.156.989c-1.21.19-2.37.75-3.303 1.683A5.97 5.97 0 0 0 2.074 7.06l-.988-.155A6.97 6.97 0 0 1 3.05 3.05a6.97 6.97 0 0 1 3.855-1.964\"\n      fill=\"#548AF7\"\n    />\n    <path\n      d=\"m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5\"\n      stroke=\"#DB5C5C\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n    <path\n      d=\"M9 11.395a3.6 3.6 0 0 1-.868.105c-1.919 0-3.345-1.494-3.345-3.5s1.426-3.5 3.345-3.5c1.49 0 2.766.9 3.08 2.175h-1.015c-.315-.73-1.093-1.252-2.065-1.252-1.339 0-2.306 1.074-2.306 2.577s.967 2.577 2.306 2.577c.313 0 .605-.054.868-.152z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const AbstractClassObjectScala: React.FC<\n  AbstractClassObjectScalaProps\n> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light'\n      ? AbstractClassObjectScalaLight\n      : AbstractClassObjectScalaDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "abstract-class-object-scala",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

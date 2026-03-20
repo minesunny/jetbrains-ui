@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-spring-prototype-bean",
+  "type": "registry:ui",
+  "title": "Prototype Bean",
+  "description": "Prototype Bean icon from Plugins Spring category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/prototype-bean/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/prototype-bean/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type PrototypeBeanProps = IconProps;\n\nconst PrototypeBeanLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M10 9h1.035L15 14.435V9h1v7h-1.07L11 10.565V16h-1z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M14.909 8c-.275-1.573-1.158-3.127-2.488-4.457C9.556.678 5.603-.034 2.77 2.8s-2.02 6.936.72 9.675C5.051 14.037 7.041 15 9 15V8h2.544L14 11.367V8z\"\n      fill=\"#F2FCF3\"\n    />\n    <path\n      d=\"M14.909 8c-.275-1.573-1.158-3.127-2.488-4.457C9.556.678 5.603-.034 2.77 2.8s-2.02 6.936.72 9.675C5.051 14.037 7.041 15 9 15v-1.002q-.303 0-.606-.037c-1.455-.172-2.955-.953-4.196-2.194-1.236-1.235-2-2.743-2.163-4.205-.144-1.29.174-2.574 1.104-3.684L9 9.739V8.322L3.846 3.17c1.115-.943 2.372-1.273 3.63-1.138 1.429.153 2.93.915 4.237 2.22 1.165 1.167 1.91 2.475 2.175 3.749z\"\n      fill=\"#208A3C\"\n    />\n  </svg>\n);\n\nconst PrototypeBeanDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M10 9h1.035L15 14.435V9h1v7h-1.07L11 10.565V16h-1z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M14.909 8c-.275-1.573-1.158-3.127-2.488-4.457C9.556.678 5.603-.034 2.77 2.8s-2.02 6.936.72 9.675C5.051 14.037 7.041 15 9 15V8h2.544L14 11.367V8z\"\n      fill=\"#253627\"\n    />\n    <path\n      d=\"M14.909 8c-.275-1.573-1.158-3.127-2.488-4.457C9.556.678 5.603-.034 2.77 2.8s-2.02 6.936.72 9.675C5.051 14.037 7.041 15 9 15v-1.002q-.303 0-.606-.037c-1.455-.172-2.955-.953-4.196-2.194-1.236-1.235-2-2.743-2.163-4.205-.144-1.29.174-2.574 1.104-3.684L9 9.739V8.322L3.846 3.17c1.115-.943 2.372-1.273 3.63-1.138 1.429.153 2.93.915 4.237 2.22 1.165 1.167 1.91 2.475 2.175 3.749z\"\n      fill=\"#57965C\"\n    />\n  </svg>\n);\n\nexport const PrototypeBean: React.FC<PrototypeBeanProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? PrototypeBeanLight : PrototypeBeanDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "prototype-bean",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

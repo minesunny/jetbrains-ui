@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-status-success-dialog",
+  "type": "registry:ui",
+  "title": "Success Dialog",
+  "description": "Success Dialog icon from General Status category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/status/success-dialog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/success-dialog/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SuccessDialogProps = IconProps;\n\nconst SuccessDialogLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 28 28\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"14\" cy=\"14\" r=\"12\" fill=\"#55A76A\" />\n    <path\n      d=\"M20 10.5 12.5 18l-4-4\"\n      stroke=\"#fff\"\n      strokeWidth=\"2\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nconst SuccessDialogDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 28 28\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\">\n      <circle cx=\"14\" cy=\"14\" r=\"12\" fill=\"#57965C\" />\n      <path\n        d=\"M20 10.5 12.5 18l-4-4\"\n        stroke=\"#fff\"\n        strokeWidth=\"2\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H28V28H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const SuccessDialog: FC<SuccessDialogProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? SuccessDialogLight : SuccessDialogDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "success-dialog",
+      "icon",
+      "general",
+      "status",
+      "jetbrains"
+    ]
+  }
+}

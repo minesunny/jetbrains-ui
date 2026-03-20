@@ -1,0 +1,26 @@
+{
+  "name": "icons-run-view-breakpoints",
+  "type": "registry:ui",
+  "title": "View Breakpoints",
+  "description": "View Breakpoints icon from Run category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/view-breakpoints/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/view-breakpoints/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ViewBreakpointsProps = IconProps;\n\nconst ViewBreakpointsLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M6.5 5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z\"\n      fill=\"#FFF7F7\"\n      stroke=\"#DB3B4B\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.438 10.366a5 5 0 1 0-6.804-6.804 6 6 0 0 1 6.804 6.804\"\n      fill=\"#FFF7F7\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.49 9.132a4 4 0 1 0-5.62-5.62 6 6 0 0 0-1.236.05 5 5 0 1 1 6.804 6.804 6 6 0 0 0 .051-1.234\"\n      fill=\"#DB3B4B\"\n    />\n  </svg>\n);\n\nconst ViewBreakpointsDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M6.5 5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z\"\n      fill=\"#402929\"\n      stroke=\"#DB5C5C\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.438 10.366a5 5 0 1 0-6.804-6.804 6 6 0 0 1 6.804 6.804\"\n      fill=\"#402929\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.49 9.132a4 4 0 1 0-5.62-5.62 6 6 0 0 0-1.236.05 5 5 0 1 1 6.804 6.804 6 6 0 0 0 .051-1.234\"\n      fill=\"#DB5C5C\"\n    />\n  </svg>\n);\n\nexport const ViewBreakpoints: FC<ViewBreakpointsProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? ViewBreakpointsLight : ViewBreakpointsDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "view-breakpoints",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-scala-lambda",
+  "type": "registry:ui",
+  "title": "Lambda",
+  "description": "Lambda icon from Plugins Scala category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/lambda/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/lambda/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type LambdaProps = IconProps;\n\nconst LambdaLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" fill=\"#FFF4EB\" stroke=\"#E66D17\" />\n    <path\n      d=\"M5.636 4h.822c.976 0 1.464.577 1.774 1.363L10.845 12h-1.13L8.06 7.531 6.273 12H5.154l2.4-5.792-.37-.768c-.137-.297-.41-.523-.774-.523h-.774z\"\n      fill=\"#E66D17\"\n    />\n  </svg>\n);\n\nconst LambdaDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" fill=\"#45322B\" stroke=\"#C77D55\" />\n    <path\n      d=\"M5.636 4h.822c.976 0 1.464.577 1.774 1.363L10.845 12h-1.13L8.06 7.531 6.273 12H5.154l2.4-5.792-.37-.768c-.137-.297-.41-.523-.774-.523h-.774z\"\n      fill=\"#C77D55\"\n    />\n  </svg>\n);\n\nexport const Lambda: React.FC<LambdaProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? LambdaLight : LambdaDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "lambda",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

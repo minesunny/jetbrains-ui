@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-toggle-skip-tests-mode",
+  "type": "registry:ui",
+  "title": "Toggle Skip Tests Mode",
+  "description": "Toggle Skip Tests Mode icon from Build category.",
+  "registryDependencies": [
+    "icons-build-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/build/toggle-skip-tests-mode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/toggle-skip-tests-mode/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "toggle-skip-tests-mode",
+      "icon",
+      "build",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-extension-run-configuration",
+  "type": "registry:ui",
+  "title": "Extension Run Configuration",
+  "description": "Extension Run Configuration icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/extension-run-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/extension-run-configuration/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ExtensionRunConfigurationProps = IconProps;\n\nconst ExtensionRunConfigurationLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"1.5\"\n      y=\"1.5\"\n      width=\"13\"\n      height=\"13\"\n      rx=\"6.5\"\n      fill=\"#FFF4EB\"\n      stroke=\"#E66D17\"\n    />\n    <path d=\"M5.5 11.5h5v-1h-4v-2H10v-1H6.5v-2h4v-1h-5z\" fill=\"#E66D17\" />\n  </svg>\n);\n\nconst ExtensionRunConfigurationDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"1.5\"\n      y=\"1.5\"\n      width=\"13\"\n      height=\"13\"\n      rx=\"6.5\"\n      fill=\"#45322B\"\n      stroke=\"#C77D55\"\n    />\n    <path d=\"M5.5 11.5h5v-1h-4v-2H10v-1H6.5v-2h4v-1h-5z\" fill=\"#C77D55\" />\n  </svg>\n);\n\nexport const ExtensionRunConfiguration: React.FC<\n  ExtensionRunConfigurationProps\n> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light'\n      ? ExtensionRunConfigurationLight\n      : ExtensionRunConfigurationDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "extension-run-configuration",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

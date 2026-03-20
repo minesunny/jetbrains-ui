@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-actions-build-auto-reload-changes",
+  "type": "registry:ui",
+  "title": "Build Auto Reload Changes",
+  "description": "Build Auto Reload Changes icon from General Actions category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/build-auto-reload-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/build-auto-reload-changes/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type BuildAutoReloadChangesProps = IconProps;\n\nconst BuildAutoReloadChangesLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5.5a.5.5 0 0 0-1 0v2a.5.5 0 0 0 .146.354l1.415 1.414a.5.5 0 0 0 .707-.707L13 12.293z\"\n      fill=\"#4682FA\"\n    />\n    <path\n      d=\"M8 3a5 5 0 0 0-5 5v.293l1.146-1.146a.5.5 0 0 1 .708.707L2.5 10.207.146 7.854a.5.5 0 0 1 .708-.707L2 8.293V8a6 6 0 0 1 9.273-5.03.5.5 0 1 1-.546.838A4.97 4.97 0 0 0 8 3M8 13a4.97 4.97 0 0 1-2.727-.808.5.5 0 1 0-.546.837 5.97 5.97 0 0 0 3.527.966A4.5 4.5 0 0 1 8.027 13zM12.703 8.004a4.6 4.6 0 0 0-1.623.225.5.5 0 0 1 .066-.083L13.5 5.793l2.354 2.353a.5.5 0 0 1-.707.707L14 7.707V8q0 .128-.005.254A4.5 4.5 0 0 0 13 8.027v-.32z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst BuildAutoReloadChangesDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5.5a.5.5 0 0 0-1 0v2a.5.5 0 0 0 .146.354l1.415 1.414a.5.5 0 0 0 .707-.707L13 12.293z\"\n      fill=\"#548AF7\"\n    />\n    <path\n      d=\"M8 3a5 5 0 0 0-5 5v.293l1.146-1.146a.5.5 0 0 1 .708.707L2.5 10.207.146 7.854a.5.5 0 0 1 .708-.707L2 8.293V8a6 6 0 0 1 9.273-5.03.5.5 0 1 1-.546.838A4.97 4.97 0 0 0 8 3M8 13a4.97 4.97 0 0 1-2.727-.808.5.5 0 1 0-.546.837 5.97 5.97 0 0 0 3.527.966A4.5 4.5 0 0 1 8.027 13zM12.703 8.004a4.6 4.6 0 0 0-1.623.225.5.5 0 0 1 .066-.083L13.5 5.793l2.354 2.353a.5.5 0 0 1-.707.707L14 7.707V8q0 .128-.005.254A4.5 4.5 0 0 0 13 8.027v-.32z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const BuildAutoReloadChanges: FC<BuildAutoReloadChangesProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? BuildAutoReloadChangesLight : BuildAutoReloadChangesDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "build-auto-reload-changes",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

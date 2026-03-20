@@ -1,0 +1,45 @@
+---
+title: Scroll Area
+description: 基于 JetBrains UI 设计风格的滚动区域组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-scroll-area" />
+
+## 概述
+
+基于 JetBrains UI 设计风格的滚动区域组件，带自定义滚动条。
+
+- 内容超过可视区域高度时会出现纵向滚动。
+- 通过添加 `ScrollBar orientation="horizontal"` 可以启用横向滚动。
+- 使用 `ScrollViewport` 来定义真正可滚动的内容区域。
+
+## 安装
+
+<ComponentInstallation name="scroll-area" />
+
+## 用法
+
+```tsx
+import {
+  ScrollArea,
+  ScrollBar,
+  ScrollViewport,
+} from '@/components/jetbrains-ui/scroll-area';
+
+<ScrollArea className="h-40 w-80 rounded-md border">
+  <ScrollViewport className="h-full w-full p-3">
+    <div className="min-w-[480px] space-y-2 text-sm">
+      {Array.from({ length: 12 }).map((_, index) => (
+        <div key={index} className="rounded border px-3 py-2">
+          可滚动内容 {index + 1}
+        </div>
+      ))}
+    </div>
+  </ScrollViewport>
+  <ScrollBar orientation="horizontal" />
+</ScrollArea>;
+```

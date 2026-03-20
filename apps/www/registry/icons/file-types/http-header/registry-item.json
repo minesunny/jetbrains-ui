@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-http-header",
+  "type": "registry:ui",
+  "title": "Http Header",
+  "description": "Http Header icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/http-header/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/http-header/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "http-header",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

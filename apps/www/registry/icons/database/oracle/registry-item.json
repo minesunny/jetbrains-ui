@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-oracle",
+  "type": "registry:ui",
+  "title": "Oracle",
+  "description": "Oracle icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/oracle/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/oracle/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "oracle",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

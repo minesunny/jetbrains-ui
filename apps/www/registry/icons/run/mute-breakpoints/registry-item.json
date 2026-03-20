@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-mute-breakpoints",
+  "type": "registry:ui",
+  "title": "Mute Breakpoints",
+  "description": "Mute Breakpoints icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/mute-breakpoints/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/mute-breakpoints/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "mute-breakpoints",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

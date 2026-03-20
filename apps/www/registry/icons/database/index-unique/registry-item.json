@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-index-unique",
+  "type": "registry:ui",
+  "title": "Index Unique",
+  "description": "Index Unique icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/index-unique/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/index-unique/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "index-unique",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

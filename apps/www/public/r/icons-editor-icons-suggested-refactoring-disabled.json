@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-suggested-refactoring-disabled",
+  "type": "registry:ui",
+  "title": "Suggested Refactoring Disabled",
+  "description": "Suggested Refactoring Disabled icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/suggested-refactoring-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/suggested-refactoring-disabled/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type SuggestedRefactoringDisabledProps = IconProps;\n\nconst SuggestedRefactoringDisabledLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M4 14v-3l6.703-6.703a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414L7 14zm1-1v-1.586l4.354-4.353 1.585 1.585L6.586 13zm6.646-5.06 1.35-1.35-1.586-1.586-1.35 1.35zM1 9H0V0h3.035q1.053 0 1.728.36.675.354 1 .978.324.622.324 1.416 0 .795-.324 1.408-.325.614-.996.965-.167.086-.357.15l1.383 2.516-.813.813-1.698-3.137a6 6 0 0 1-.23.004H1zm2.017-4.51H1V1h2c.485 0 .875.04 1.17.189q.444.219.645.622.202.405.202.943 0 .54-.202.93a1.33 1.33 0 0 1-.64.596q-.438.21-1.158.21\"\n      fill=\"#C9CCD6\"\n    />\n  </svg>\n);\n\nconst SuggestedRefactoringDisabledDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M4 14v-3l6.703-6.703a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414L7 14zm1-1v-1.586l4.354-4.353 1.585 1.585L6.586 13zm6.646-5.06 1.35-1.35-1.586-1.586-1.35 1.35zM1 9H0V0h3.035q1.053 0 1.728.36.675.354 1 .978.324.622.324 1.416 0 .795-.324 1.408-.325.614-.996.965-.167.086-.357.15l1.383 2.516-.813.813-1.698-3.137a6 6 0 0 1-.23.004H1zm2.017-4.51H1V1h2c.485 0 .875.04 1.17.189q.444.219.645.622.202.405.202.943 0 .54-.202.93a1.33 1.33 0 0 1-.64.596q-.438.21-1.158.21\"\n      fill=\"#5A5D63\"\n    />\n  </svg>\n);\n\nexport const SuggestedRefactoringDisabled: FC<\n  SuggestedRefactoringDisabledProps\n> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light'\n      ? SuggestedRefactoringDisabledLight\n      : SuggestedRefactoringDisabledDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "suggested-refactoring-disabled",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-editor-header-level-up",
+  "type": "registry:ui",
+  "title": "Header Level Up",
+  "description": "Header Level Up icon from General Editor category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/editor/header-level-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/header-level-up/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "header-level-up",
+      "icon",
+      "general",
+      "editor",
+      "jetbrains"
+    ]
+  }
+}

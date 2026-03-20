@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-scala-sbt-shell",
+  "type": "registry:ui",
+  "title": "Sbt Shell",
+  "description": "Sbt Shell icon from Plugins Scala category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/sbt-shell/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-shell/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sbt-shell",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

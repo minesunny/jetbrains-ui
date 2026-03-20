@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-jupyter-notebook",
+  "type": "registry:ui",
+  "title": "Jupyter Notebook",
+  "description": "Jupyter Notebook icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/jupyter-notebook/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/jupyter-notebook/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type JupyterNotebookProps = IconProps;\n\nconst JupyterNotebookLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M13.657 5.752c-1.387-1.034-3.58-1.95-5.652-1.95-2.08 0-4.266.913-5.65 1.947-.187.14-.443-.052-.314-.248.613-.933 1.524-1.892 2.305-2.409A6.63 6.63 0 0 1 8.005 2c1.308 0 2.585.381 3.659 1.092.782.518 1.694 1.478 2.307 2.412.129.195-.127.388-.314.248M2.355 10.248c1.387 1.034 3.58 1.95 5.652 1.95 2.079 0 4.265-.913 5.65-1.947.187-.14.443.052.314.248-.613.933-1.524 1.892-2.306 2.409A6.63 6.63 0 0 1 8.007 14a6.63 6.63 0 0 1-3.659-1.092c-.782-.518-1.694-1.478-2.307-2.412-.129-.196.127-.388.314-.248\"\n      fill=\"#E66D17\"\n    />\n  </svg>\n);\n\nconst JupyterNotebookDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\" fill=\"#E08855\">\n      <path d=\"M13.657 5.752c-1.387-1.034-3.58-1.95-5.652-1.95-2.08 0-4.266.913-5.65 1.947-.187.14-.443-.052-.314-.248.613-.933 1.524-1.892 2.305-2.409A6.63 6.63 0 0 1 8.005 2c1.308 0 2.585.381 3.659 1.092.782.518 1.694 1.478 2.307 2.412.129.195-.127.388-.314.248M2.355 10.248c1.387 1.034 3.58 1.95 5.652 1.95 2.079 0 4.265-.913 5.65-1.947.187-.14.443.052.314.248-.613.933-1.524 1.892-2.306 2.409A6.63 6.63 0 0 1 8.007 14a6.63 6.63 0 0 1-3.659-1.092c-.782-.518-1.694-1.478-2.307-2.412-.129-.196.127-.388.314-.248\" />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const JupyterNotebook: FC<JupyterNotebookProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? JupyterNotebookLight : JupyterNotebookDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "jupyter-notebook",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-kubernetes-auto-refresh",
+  "type": "registry:ui",
+  "title": "Auto Refresh",
+  "description": "Auto Refresh icon from Plugins Kubernetes category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kubernetes/auto-refresh/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/auto-refresh/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type AutoRefreshProps = IconProps;\n\nconst AutoRefreshLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M3 8a5 5 0 0 1 7.727-4.192.5.5 0 0 0 .546-.837A6 6 0 0 0 2 8v.292L.854 7.147a.5.5 0 1 0-.708.707l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 1 0-.708-.707L3 8.293zM5.273 12.192A5 5 0 0 0 13 8v-.293l-1.146 1.146a.5.5 0 0 1-.707-.707l2-2a.5.5 0 0 1 .707 0l2 2a.5.5 0 0 1-.707.707L14 7.707V8a6 6 0 0 1-9.273 5.03.5.5 0 0 1 .546-.838\"\n      fill=\"#369650\"\n    />\n  </svg>\n);\n\nconst AutoRefreshDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M3 8a5 5 0 0 1 7.727-4.192.5.5 0 0 0 .546-.837A6 6 0 0 0 2 8v.292L.854 7.147a.5.5 0 1 0-.708.707l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 1 0-.708-.707L3 8.293zM5.273 12.192A5 5 0 0 0 13 8v-.293l-1.146 1.146a.5.5 0 0 1-.707-.707l2-2a.5.5 0 0 1 .707 0l2 2a.5.5 0 0 1-.707.707L14 7.707V8a6 6 0 0 1-9.273 5.03.5.5 0 0 1 .546-.838\"\n      fill=\"#57965C\"\n    />\n  </svg>\n);\n\nexport const AutoRefresh: React.FC<AutoRefreshProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? AutoRefreshLight : AutoRefreshDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "auto-refresh",
+      "icon",
+      "plugins",
+      "kubernetes",
+      "jetbrains"
+    ]
+  }
+}

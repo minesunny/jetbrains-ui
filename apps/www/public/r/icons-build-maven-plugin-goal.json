@@ -1,0 +1,26 @@
+{
+  "name": "icons-build-maven-plugin-goal",
+  "type": "registry:ui",
+  "title": "Maven Plugin Goal",
+  "description": "Maven Plugin Goal icon from Build category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-build-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/build/maven-plugin-goal/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-plugin-goal/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type MavenPluginGoalProps = IconProps;\n\nconst MavenPluginGoalLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9.05 12a2.5 2.5 0 0 1 2.45-2h2a.5.5 0 0 1 .5.5v.5h1.5a.5.5 0 0 1 0 1H14v2h1.5a.5.5 0 0 1 0 1H14v.5a.5.5 0 0 1-.5.5h-2a2.5 2.5 0 0 1-2.45-2H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm.95 1.5v-1a1.5 1.5 0 0 1 1.5-1.5H13v4h-1.5a1.5 1.5 0 0 1-1.5-1.5\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M15.224 6.499c.358-1.563 0-3.298-2.062-3.298-1.577 0-2.54.588-3.678 1.561-.197-.867-.8-1.53-2.035-1.556-1.265-.07-2.372.46-3.321 1.207.1-.453-.113-.926-.629-1.03-.454-.093-.9.183-.996.616l-1.828 8.19c-.097.433.193.858.647.95s.9-.185.996-.617l1.42-6.355.002-.003v.007c.71-.995 1.982-1.541 2.91-1.442.78.097 1.317.647 1.055 1.766L6.45 12.182c-.089.4.154.794.55.922V12.5a1.5 1.5 0 0 1 1.333-1.49 4 4 0 0 1 .193-.355l1-4.488c1.313-1.84 4.548-2.147 3.977.332L12.953 9h.547c.42 0 .8.173 1.072.45z\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst MavenPluginGoalDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9.05 12a2.5 2.5 0 0 1 2.45-2h2a.5.5 0 0 1 .5.5v.5h1.5a.5.5 0 0 1 0 1H14v2h1.5a.5.5 0 0 1 0 1H14v.5a.5.5 0 0 1-.5.5h-2a2.5 2.5 0 0 1-2.45-2H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm.95 1.5v-1a1.5 1.5 0 0 1 1.5-1.5H13v4h-1.5a1.5 1.5 0 0 1-1.5-1.5\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M15.224 6.499c.358-1.563 0-3.298-2.062-3.298-1.577 0-2.54.588-3.678 1.561-.197-.867-.8-1.53-2.035-1.556-1.265-.07-2.372.46-3.321 1.207.1-.453-.113-.926-.629-1.03-.454-.093-.9.183-.996.616l-1.828 8.19c-.097.433.193.858.647.95s.9-.185.996-.617l1.42-6.355.002-.003v.007c.71-.995 1.982-1.541 2.91-1.442.78.097 1.317.647 1.055 1.766L6.45 12.182c-.089.4.154.794.55.922V12.5a1.5 1.5 0 0 1 1.333-1.49 4 4 0 0 1 .193-.355l1-4.488c1.313-1.84 4.548-2.147 3.977.332L12.953 9h.547c.42 0 .8.173 1.072.45z\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const MavenPluginGoal: FC<MavenPluginGoalProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? MavenPluginGoalLight : MavenPluginGoalDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "maven-plugin-goal",
+      "icon",
+      "build",
+      "jetbrains"
+    ]
+  }
+}

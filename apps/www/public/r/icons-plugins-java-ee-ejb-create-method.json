@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-java-ee-ejb-create-method",
+  "type": "registry:ui",
+  "title": "Ejb Create Method",
+  "description": "Ejb Create Method icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-create-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-create-method/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type EjbCreateMethodProps = IconProps;\n\nconst EjbCreateMethodLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"m12 8 1.113 2.812 2.887.244-2.2 1.981.672 2.963L12 14.412 9.528 16l.672-2.963L8 11.056l2.887-.244z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M14.726 9.945a7 7 0 1 0-5.988 5.017l.357-1.574-1.764-1.59a1 1 0 0 1 .585-1.739l2.27-.191.884-2.236a1 1 0 0 1 1.86 0l.884 2.236z\"\n      fill=\"#FFF7F7\"\n    />\n    <path\n      d=\"M8.974 13.921a6 6 0 1 1 4.778-4.21l.062.157.912.077a7 7 0 1 0-5.988 5.017z\"\n      fill=\"#DB3B4B\"\n    />\n  </svg>\n);\n\nconst EjbCreateMethodDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"m12 8 1.113 2.812 2.887.244-2.2 1.981.672 2.963L12 14.412 9.528 16l.672-2.963L8 11.056l2.887-.244z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M14.726 9.945a7 7 0 1 0-5.988 5.017l.357-1.574-1.764-1.59a1 1 0 0 1 .585-1.739l2.27-.191.884-2.236a1 1 0 0 1 1.86 0l.884 2.236z\"\n      fill=\"#402929\"\n    />\n    <path\n      d=\"M8.974 13.921a6 6 0 1 1 4.778-4.21l.062.157.912.077a7 7 0 1 0-5.988 5.017z\"\n      fill=\"#DB5C5C\"\n    />\n  </svg>\n);\n\nexport const EjbCreateMethod: React.FC<EjbCreateMethodProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? EjbCreateMethodLight : EjbCreateMethodDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ejb-create-method",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

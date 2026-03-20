@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-mariadb",
+  "type": "registry:ui",
+  "title": "Mariadb",
+  "description": "Mariadb icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/mariadb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/mariadb/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "mariadb",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

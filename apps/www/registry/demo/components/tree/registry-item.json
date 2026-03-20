@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-tree",
+  "type": "registry:ui",
+  "title": "Tree Demo",
+  "description": "Demo showing tree component",
+  "dependencies": [],
+  "registryDependencies": ["@jetbrains-ui/tree"],
+  "files": [
+    {
+      "path": "registry/demo/components/tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/tree.tsx"
+    }
+  ],
+  "meta": {}
+}

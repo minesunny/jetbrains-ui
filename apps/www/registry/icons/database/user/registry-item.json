@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-user",
+  "type": "registry:ui",
+  "title": "User",
+  "description": "User icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/user/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/user/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "user",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

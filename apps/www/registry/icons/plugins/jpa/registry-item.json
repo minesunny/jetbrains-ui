@@ -1,0 +1,486 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-jpa",
+  "type": "registry:ui",
+  "title": "Plugins Jpa Icons",
+  "description": "All 92 icons from the Plugins Jpa category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/add-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/add-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/add-changeset/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/add-changeset/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/add-named-query/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/add-named-query/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/blaze-persistence-entity-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/blaze-persistence-entity-view/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/changeset/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/changeset/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/check-constraint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/check-constraint/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/column/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/converter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/converter/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/count/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/count/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/create-column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/create-column/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/create-constraint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/create-constraint/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/create-index/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/create-index/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/create-sequence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/create-sequence/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/create-table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/create-table/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/data-model/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/data-model/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/data-stores/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/data-stores/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/data-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/data-view/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/db-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/db-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/ddl-scripts/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/ddl-scripts/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/delete/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/delete/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/diff-liquibase-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/diff-liquibase-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/diff-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/diff-plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/drop-column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-column/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/drop-constraint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-constraint/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/drop-index/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-index/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/drop-sequence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-sequence/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/drop-table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-table/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/dto/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/dto/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/embedded/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/embedded/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/equals-and-hashcode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/equals-and-hashcode/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/explorer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/explorer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/file-transfer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/file-transfer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/find-collection/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/find-collection/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/find-instance/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/find-instance/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/flyway-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/flyway-plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/generic-ui/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/generic-ui/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/gold-key/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/gold-key/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/hibernate-event/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/hibernate-event/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/include/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/include/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/init-liquibase-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/init-liquibase-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/init-scripts/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/init-scripts/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/insight-navigate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/insight-navigate/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/java-module-root/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/java-module-root/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/liquibase/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/liquibase-mono/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase-mono/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/liquibase-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase-plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/liquibase-snapshot/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase-snapshot/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/liquibase-update/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase-update/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/mailer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/mailer/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/main-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/main-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/many-to-many/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/many-to-many/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/many-to-one/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/many-to-one/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/minimalistic-mode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/minimalistic-mode/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/move-to-another-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/move-to-another-changelog/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/one-to-many/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/one-to-many/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/one-to-one/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/one-to-one/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-attribute/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-attribute/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-embeddable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-embeddable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-id/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-id/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-mapped-superclass/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-mapped-superclass/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-relationship/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-relationship/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/persistence-unit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/persistence-unit/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/project-properties/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/project-properties/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/projection/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/projection/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/query/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/query/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/query-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/query-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/reference-by/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/reference-by/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/reference-to/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/reference-to/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/remove/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/remove/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/rename-column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-column/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/rename-constraint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-constraint/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/rename-index/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-index/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/rename-sequence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-sequence/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/rename-table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-table/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/repository/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/repository/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/restore-from-ignore/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/restore-from-ignore/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/save/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/save/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/schema/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/schema/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/screens/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/screens/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/set-context/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/set-context/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/set-label/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/set-label/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/settings/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/settings/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/show-code/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/show-code/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/spring-icon/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/spring-icon/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/sql/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/sql/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/sql-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/sql-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/table/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/to-string/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/to-string/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/update/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/update/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/jpa/update-database/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/update-database/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "plugins",
+      "jpa",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

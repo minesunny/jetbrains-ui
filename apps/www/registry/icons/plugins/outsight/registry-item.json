@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-outsight",
+  "type": "registry:ui",
+  "title": "Plugins Outsight Icons",
+  "description": "All 2 icons from the Plugins Outsight category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/outsight/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/outsight/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/outsight/out-sight/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/outsight/out-sight/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/outsight/out-sight-color/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/outsight/out-sight-color/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "plugins",
+      "outsight",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

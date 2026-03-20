@@ -1,0 +1,26 @@
+{
+  "name": "icons-run-step-out-code-block",
+  "type": "registry:ui",
+  "title": "Step Out Code Block",
+  "description": "Step Out Code Block icon from Run category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/step-out-code-block/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/step-out-code-block/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type StepOutCodeBlockProps = IconProps;\n\nconst StepOutCodeBlockLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect x=\"2\" y=\"13\" width=\"5\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8.854 5.354a.5.5 0 1 1-.708.707L6 3.914v6.593a.5.5 0 1 1-1 0V3.914L2.854 6.061a.5.5 0 1 1-.708-.707l3-3L5.5 2l.354.354z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M10.5 16a.5.5 0 0 0 0-1 .5.5 0 0 1-.5-.5v-1.64a1 1 0 0 0-.49-.86 1 1 0 0 0 .49-.86V9.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 0-1A1.5 1.5 0 0 0 9 9.5v1.64l-1.158.386a.5.5 0 0 0 0 .948L9 12.86v1.64a1.5 1.5 0 0 0 1.5 1.5M12.5 8a.5.5 0 0 0 0 1 .5.5 0 0 1 .5.5v1.64a1 1 0 0 0 .49.86 1 1 0 0 0-.49.86v1.64a.5.5 0 0 1-.5.5.5.5 0 0 0 0 1 1.5 1.5 0 0 0 1.5-1.5v-1.64l1.158-.386a.5.5 0 0 0 0-.948L14 11.14V9.5A1.5 1.5 0 0 0 12.5 8\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst StepOutCodeBlockDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\">\n      <rect x=\"2\" y=\"13\" width=\"5\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M8.854 5.354a.5.5 0 1 1-.708.707L6 3.914v6.593a.5.5 0 1 1-1 0V3.914L2.854 6.061a.5.5 0 1 1-.708-.707l3-3L5.5 2l.354.354z\"\n        fill=\"#CED0D6\"\n      />\n      <path\n        d=\"M10.5 16a.5.5 0 0 0 0-1 .5.5 0 0 1-.5-.5v-1.64a1 1 0 0 0-.49-.86 1 1 0 0 0 .49-.86V9.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 0-1A1.5 1.5 0 0 0 9 9.5v1.64l-1.158.386a.5.5 0 0 0 0 .948L9 12.86v1.64a1.5 1.5 0 0 0 1.5 1.5M12.5 8a.5.5 0 0 0 0 1 .5.5 0 0 1 .5.5v1.64a1 1 0 0 0 .49.86 1 1 0 0 0-.49.86v1.64a.5.5 0 0 1-.5.5.5.5 0 0 0 0 1 1.5 1.5 0 0 0 1.5-1.5v-1.64l1.158-.386a.5.5 0 0 0 0-.948L14 11.14V9.5A1.5 1.5 0 0 0 12.5 8\"\n        fill=\"#548AF7\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const StepOutCodeBlock: FC<StepOutCodeBlockProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? StepOutCodeBlockLight : StepOutCodeBlockDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "step-out-code-block",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

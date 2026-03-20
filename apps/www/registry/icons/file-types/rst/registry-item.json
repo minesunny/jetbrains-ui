@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-rst",
+  "type": "registry:ui",
+  "title": "Rst",
+  "description": "Rst icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/rst/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/rst/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "rst",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

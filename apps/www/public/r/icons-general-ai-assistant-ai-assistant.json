@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-ai-assistant-ai-assistant",
+  "type": "registry:ui",
+  "title": "Ai Assistant",
+  "description": "Ai Assistant icon from General Ai Assistant category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/ai-assistant/ai-assistant/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/ai-assistant/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type AiAssistantProps = IconProps;\n\nconst AiAssistantLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M9.242 14C5.048 14 2 11.79 2 8.774c0-2.42 2.048-4.161 4.871-4.161C9.274 4.613 11 5.677 11 7.226c0 1.451-1.468 2.21-3.274 1.532L7.984 8C6.823 7.645 6 7.952 6 8.742c0 .952 1.258 1.71 3.08 1.71 2.162 0 3.92-1.355 3.92-3.226C13 4.774 10.371 3 6.758 3c-.887 0-2.08.21-2.855.548-.548.226-.903 0-.903-.354 0-.275.194-.468.58-.63C4.356 2.227 5.678 2 6.759 2 10.952 2 14 4.21 14 7.226c0 2.42-2.048 4.161-4.871 4.161C6.726 11.387 5 10.323 5 8.742c0-1.42 1.468-2.145 3.274-1.516L8.016 8C9.177 8.387 10 8.065 10 7.226c0-.92-1.258-1.678-3.08-1.678C4.676 5.548 3 6.935 3 8.774 3 11.226 5.629 13 9.242 13c.887 0 2.08-.21 2.855-.548.548-.226.903 0 .903.354 0 .275-.194.468-.58.63-.775.338-2.097.564-3.178.564\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst AiAssistantDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M9.242 14C5.048 14 2 11.79 2 8.774c0-2.42 2.048-4.161 4.871-4.161C9.274 4.613 11 5.677 11 7.226c0 1.451-1.468 2.21-3.274 1.532L7.984 8C6.823 7.645 6 7.952 6 8.742c0 .952 1.258 1.71 3.08 1.71 2.162 0 3.92-1.355 3.92-3.226C13 4.774 10.371 3 6.758 3c-.887 0-2.08.21-2.855.548-.548.226-.903 0-.903-.354 0-.275.194-.468.58-.63C4.356 2.227 5.678 2 6.759 2 10.952 2 14 4.21 14 7.226c0 2.42-2.048 4.161-4.871 4.161C6.726 11.387 5 10.323 5 8.742c0-1.42 1.468-2.145 3.274-1.516L8.016 8C9.177 8.387 10 8.065 10 7.226c0-.92-1.258-1.678-3.08-1.678C4.676 5.548 3 6.935 3 8.774 3 11.226 5.629 13 9.242 13c.887 0 2.08-.21 2.855-.548.548-.226.903 0 .903.354 0 .275-.194.468-.58.63-.775.338-2.097.564-3.178.564\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const AiAssistant: FC<AiAssistantProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? AiAssistantLight : AiAssistantDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ai-assistant",
+      "icon",
+      "general",
+      "ai-assistant",
+      "jetbrains"
+    ]
+  }
+}

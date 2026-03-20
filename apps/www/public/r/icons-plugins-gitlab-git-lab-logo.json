@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-gitlab-git-lab-logo",
+  "type": "registry:ui",
+  "title": "Git Lab Logo",
+  "description": "Git Lab Logo icon from Plugins Gitlab category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/gitlab/git-lab-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/gitlab/git-lab-logo/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type GitLabLogoProps = IconProps;\n\nconst GitLabLogoLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"m14.767 6.337-.02-.05-1.905-4.973A.5.5 0 0 0 12.349 1a.5.5 0 0 0-.287.108.5.5 0 0 0-.169.256l-1.286 3.937h-5.21L4.11 1.365a.5.5 0 0 0-.948-.052l-1.91 4.97-.018.051a3.54 3.54 0 0 0 1.173 4.09l.007.005.017.012 2.903 2.174 1.436 1.087.875.66a.59.59 0 0 0 .711 0l.875-.66 1.436-1.087 2.92-2.187.008-.006a3.54 3.54 0 0 0 1.172-4.085\"\n      fill=\"#E24329\"\n    />\n    <path\n      d=\"m14.767 6.337-.02-.05a6.4 6.4 0 0 0-2.562 1.151L8 10.603l2.666 2.015 2.92-2.187.007-.006a3.54 3.54 0 0 0 1.174-4.088\"\n      fill=\"#FC6D26\"\n    />\n    <path\n      d=\"m5.336 12.618 1.436 1.087.875.66a.59.59 0 0 0 .711 0l.875-.66 1.436-1.087s-1.242-.94-2.667-2.015c-1.425 1.075-2.666 2.015-2.666 2.015\"\n      fill=\"#FCA326\"\n    />\n    <path\n      d=\"M3.814 7.438a6.4 6.4 0 0 0-2.561-1.154l-.02.05a3.54 3.54 0 0 0 1.174 4.09l.007.005.017.012 2.903 2.174L8 10.6z\"\n      fill=\"#FC6D26\"\n    />\n  </svg>\n);\n\nconst GitLabLogoDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"m14.767 6.337-.02-.05-1.905-4.973A.5.5 0 0 0 12.349 1a.5.5 0 0 0-.287.108.5.5 0 0 0-.169.256l-1.286 3.937h-5.21L4.11 1.365a.5.5 0 0 0-.948-.052l-1.91 4.97-.018.051a3.54 3.54 0 0 0 1.173 4.09l.007.005.017.012 2.903 2.174 1.436 1.087.875.66a.59.59 0 0 0 .711 0l.875-.66 1.436-1.087 2.92-2.187.008-.006a3.54 3.54 0 0 0 1.172-4.085\"\n      fill=\"#E24329\"\n    />\n    <path\n      d=\"m14.767 6.337-.02-.05a6.4 6.4 0 0 0-2.562 1.151L8 10.603l2.666 2.015 2.92-2.187.007-.006a3.54 3.54 0 0 0 1.174-4.088\"\n      fill=\"#FC6D26\"\n    />\n    <path\n      d=\"m5.336 12.618 1.436 1.087.875.66a.59.59 0 0 0 .711 0l.875-.66 1.436-1.087s-1.242-.94-2.667-2.015c-1.425 1.075-2.666 2.015-2.666 2.015\"\n      fill=\"#FCA326\"\n    />\n    <path\n      d=\"M3.814 7.438a6.4 6.4 0 0 0-2.561-1.154l-.02.05a3.54 3.54 0 0 0 1.174 4.09l.007.005.017.012 2.903 2.174L8 10.6z\"\n      fill=\"#FC6D26\"\n    />\n  </svg>\n);\n\nexport const GitLabLogo: React.FC<GitLabLogoProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? GitLabLogoLight : GitLabLogoDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "git-lab-logo",
+      "icon",
+      "plugins",
+      "gitlab",
+      "jetbrains"
+    ]
+  }
+}

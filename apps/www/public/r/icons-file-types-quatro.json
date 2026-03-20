@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-quatro",
+  "type": "registry:ui",
+  "title": "Quatro",
+  "description": "Quatro icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/quatro/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/quatro/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type QuatroProps = IconProps;\n\nconst QuatroLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7 1.07A7.005 7.005 0 0 0 1.07 7H7zM1.07 9A7 7 0 0 0 7 14.93V9zM9 14.93A7 7 0 0 0 14.929 9h-5.93zM14.929 7a7 7 0 0 0-5.93-5.93V7z\"\n      fill=\"#75AADB\"\n    />\n  </svg>\n);\n\nconst QuatroDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7 1.07A7.005 7.005 0 0 0 1.07 7H7zM1.07 9A7 7 0 0 0 7 14.93V9zM9 14.93A7 7 0 0 0 14.929 9h-5.93zM14.929 7a7 7 0 0 0-5.93-5.93V7z\"\n      fill=\"#75AADB\"\n    />\n  </svg>\n);\n\nexport const Quatro: FC<QuatroProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? QuatroLight : QuatroDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "quatro",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

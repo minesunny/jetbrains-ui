@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-run",
+  "type": "registry:ui",
+  "title": "Run",
+  "description": "Run icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/run/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/run/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

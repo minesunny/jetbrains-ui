@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-ruby-test-unit-file",
+  "type": "registry:ui",
+  "title": "Test Unit File",
+  "description": "Test Unit File icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/test-unit-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/test-unit-file/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type TestUnitFileProps = IconProps;\n\nconst TestUnitFileLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\" fillRule=\"evenodd\" clipRule=\"evenodd\">\n      <path\n        d=\"M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z\"\n        fill=\"#55A76A\"\n      />\n      <path\n        d=\"M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z\"\n        fill=\"#E55765\"\n      />\n    </g>\n    <path\n      d=\"M7.603 15.478.251 5.828a.5.5 0 0 1 .024-.636l3.428-3.856A1 1 0 0 1 4.45 1h7.102a1 1 0 0 1 .748.336l3.428 3.856a.5.5 0 0 1 .024.635l-2.59 3.4a1.4 1.4 0 0 0-1.662.103c-.511-.422-1.308-.474-1.87.066L6.931 11.99a1.4 1.4 0 0 0 0 2.018l1.493 1.437-.025.032a.5.5 0 0 1-.796 0\"\n      fill=\"#FFF7F7\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7.603 15.478.251 5.828a.5.5 0 0 1 .024-.636l3.428-3.856A1 1 0 0 1 4.45 1h7.102a1 1 0 0 1 .748.336l3.428 3.856a.5.5 0 0 1 .024.635l-2.59 3.4a1.37 1.37 0 0 0-1.124-.176L14.363 6h-2.996l-.951 3.013a1.38 1.38 0 0 0-.786.383l-.551.53L10.319 6H5.683l1.742 5.516-.494.475q-.178.174-.283.385L4.635 6H1.639l4.954 6.502a1.4 1.4 0 0 0 .338 1.507l1.493 1.437-.025.032a.5.5 0 0 1-.796 0M11.553 2l2.666 3H11.31l-1.5-3zM7.31 2h1.382l1.5 3H5.81zM4.45 2h1.742l-1.5 3H1.784z\"\n      fill=\"#DB3B4B\"\n    />\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" transform=\"translate(7 10)\" d=\"M0 0H9V6H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nconst TestUnitFileDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\" fillRule=\"evenodd\" clipRule=\"evenodd\">\n      <path\n        d=\"M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z\"\n        fill=\"#57965C\"\n      />\n      <path\n        d=\"M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z\"\n        fill=\"#DB5C5C\"\n      />\n    </g>\n    <path\n      d=\"M7.603 15.478.251 5.828a.5.5 0 0 1 .024-.636l3.428-3.856A1 1 0 0 1 4.45 1h7.102a1 1 0 0 1 .748.336l3.428 3.856a.5.5 0 0 1 .024.635l-2.59 3.4a1.4 1.4 0 0 0-1.662.103c-.511-.422-1.308-.474-1.87.066L6.931 11.99a1.4 1.4 0 0 0 0 2.018l1.493 1.437-.025.032a.5.5 0 0 1-.796 0\"\n      fill=\"#402929\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7.603 15.478.251 5.828a.5.5 0 0 1 .024-.636l3.428-3.856A1 1 0 0 1 4.45 1h7.102a1 1 0 0 1 .748.336l3.428 3.856a.5.5 0 0 1 .024.635l-2.59 3.4a1.37 1.37 0 0 0-1.124-.176L14.363 6h-2.996l-.951 3.013a1.38 1.38 0 0 0-.786.383l-.551.53L10.319 6H5.683l1.742 5.516-.494.475q-.178.174-.283.385L4.635 6H1.639l4.954 6.502a1.4 1.4 0 0 0 .338 1.507l1.493 1.437-.025.032a.5.5 0 0 1-.796 0M11.553 2l2.666 3H11.31l-1.5-3zM7.31 2h1.382l1.5 3H5.81zM4.45 2h1.742l-1.5 3H1.784z\"\n      fill=\"#DB5C5C\"\n    />\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" transform=\"translate(7 10)\" d=\"M0 0H9V6H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const TestUnitFile: React.FC<TestUnitFileProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? TestUnitFileLight : TestUnitFileDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "test-unit-file",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

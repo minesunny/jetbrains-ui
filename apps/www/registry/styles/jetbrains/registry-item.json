@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "styles-jetbrains-tokens",
+  "type": "registry:style",
+  "title": "JetBrains Design Tokens",
+  "description": "JetBrains UI 设计系统的完整 CSS 变量集合，包含颜色、排版、间距等",
+  "files": [
+    {
+      "path": "registry/styles/jetbrains/tokens.css",
+      "type": "registry:style",
+      "target": "styles/jetbrains-tokens.css"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "jetbrains",
+      "tokens",
+      "design-system",
+      "css-variables",
+      "typography",
+      "spacing",
+      "colors"
+    ],
+    "docs": {
+      "description": "JetBrains UI 设计系统的完整 CSS 变量集合，为所有 JetBrains 风格组件提供统一的设计语言。",
+      "features": [
+        "完整的颜色系统（Gray、Blue、Green、Yellow、Red、Orange、Teal、Purple）",
+        "亮色/暗色主题支持",
+        "Typography 排版系统（字体、大小、行高、字重、字间距）",
+        "Spacing 间距系统（基于 4px 单位）",
+        "Border Radius 圆角",
+        "Shadows 阴影",
+        "Transitions 过渡动画",
+        "Z-Index 层级",
+        "组件状态颜色（Button、Checkbox、Radio）"
+      ]
+    }
+  }
+}

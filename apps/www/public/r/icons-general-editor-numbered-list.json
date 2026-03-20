@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-editor-numbered-list",
+  "type": "registry:ui",
+  "title": "Numbered List",
+  "description": "Numbered List icon from General Editor category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/editor/numbered-list/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/numbered-list/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type NumberedListProps = IconProps;\n\nconst NumberedListLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5M7 7.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5M7.5 13a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1zM3.763 2.075A.5.5 0 0 1 4 2.5V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H3V3.309l-.276.138a.5.5 0 1 1-.448-.894l1-.5a.5.5 0 0 1 .487.022M3.5 8.5A1.5 1.5 0 0 0 2 10a.5.5 0 0 0 1 0 .5.5 0 0 1 1 0v.06a.56.56 0 0 1-.164.397l-1.69 1.69A.5.5 0 0 0 2.5 13h2a.5.5 0 0 0 0-1h-.793l.836-.836A1.56 1.56 0 0 0 5 10.061V10a1.5 1.5 0 0 0-1.5-1.5\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst NumberedListDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5M7 7.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5M7.5 13a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1zM3.763 2.075A.5.5 0 0 1 4 2.5V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H3V3.309l-.276.138a.5.5 0 1 1-.448-.894l1-.5a.5.5 0 0 1 .487.022M3.5 8.5A1.5 1.5 0 0 0 2 10a.5.5 0 0 0 1 0 .5.5 0 0 1 1 0v.06a.56.56 0 0 1-.164.397l-1.69 1.69A.5.5 0 0 0 2.5 13h2a.5.5 0 0 0 0-1h-.793l.836-.836A1.56 1.56 0 0 0 5 10.061V10a1.5 1.5 0 0 0-1.5-1.5\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const NumberedList: FC<NumberedListProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? NumberedListLight : NumberedListDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "numbered-list",
+      "icon",
+      "general",
+      "editor",
+      "jetbrains"
+    ]
+  }
+}

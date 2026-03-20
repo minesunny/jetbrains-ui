@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-docker-docker-compose",
+  "type": "registry:ui",
+  "title": "Docker Compose",
+  "description": "Docker Compose icon from Plugins Docker category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/docker/docker-compose/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type DockerComposeProps = IconProps;\n\nconst DockerComposeLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect x=\"7\" y=\"4\" width=\"3\" height=\"3\" rx=\"1\" fill=\"#3574F0\" />\n    <rect x=\"7\" width=\"3\" height=\"3\" rx=\"1\" fill=\"#3574F0\" />\n    <rect x=\"3\" y=\"4\" width=\"3\" height=\"3\" rx=\"1\" fill=\"#3574F0\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M15.251 7.039c-.039-.03-.4-.304-1.162-.304q-.303.002-.6.052c-.148-1.01-.984-1.504-1.022-1.526l-.205-.118-.134.194a2.7 2.7 0 0 0-.364.85c-.137.578-.054 1.12.24 1.584-.355.197-.923.245-1.037.25H1.966c-.539 0-.979.426-.953.963.033.69.13 1.6.4 2.212.488 1.104 1.03 1.814 1.934 2.244.902.43 1.458.576 2.752.576a9.4 9.4 0 0 0 1.743-.158 7.3 7.3 0 0 0 2.274-.826 6.3 6.3 0 0 0 1.553-1.27c.593-.673.996-1.787 1.302-2.634.078-.216.15-.415.216-.584h.132c.816 0 1.317-.327 1.594-.6.184-.175.327-.387.42-.623l.059-.17zM5.001 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst DockerComposeDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect x=\"7\" y=\"4\" width=\"3\" height=\"3\" rx=\"1\" fill=\"#548AF7\" />\n    <rect x=\"7\" width=\"3\" height=\"3\" rx=\"1\" fill=\"#548AF7\" />\n    <rect x=\"3\" y=\"4\" width=\"3\" height=\"3\" rx=\"1\" fill=\"#548AF7\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M15.251 7.039c-.039-.03-.4-.304-1.162-.304q-.303.002-.6.052c-.148-1.01-.984-1.504-1.022-1.526l-.205-.118-.134.194a2.7 2.7 0 0 0-.364.85c-.137.578-.054 1.12.24 1.584-.355.197-.923.245-1.037.25H1.966c-.539 0-.979.426-.953.963.033.69.13 1.6.4 2.212.488 1.104 1.03 1.814 1.934 2.244.902.43 1.458.576 2.752.576a9.4 9.4 0 0 0 1.743-.158 7.3 7.3 0 0 0 2.274-.826 6.3 6.3 0 0 0 1.553-1.27c.593-.673.996-1.787 1.302-2.634.078-.216.15-.415.216-.584h.132c.816 0 1.317-.327 1.594-.6.184-.175.327-.387.42-.623l.059-.17zM5.001 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const DockerCompose: React.FC<DockerComposeProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? DockerComposeLight : DockerComposeDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "docker-compose",
+      "icon",
+      "plugins",
+      "docker",
+      "jetbrains"
+    ]
+  }
+}

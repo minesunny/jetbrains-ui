@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox",
+  "type": "registry:ui",
+  "title": "Checkbox",
+  "description": "JetBrains UI 风格的复选框组件，基于 Radix UI，支持完整的状态矩阵",
+  "dependencies": ["@radix-ui/react-checkbox"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/components/checkbox/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/checkbox/index.tsx"
+    },
+    {
+      "path": "registry/components/checkbox/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/checkbox/index.css"
+    }
+  ],
+  "meta": {
+    "keywords": ["checkbox", "jetbrains", "ui", "组件", "复选框"],
+    "category": "checkboxes",
+    "docs": {
+      "description": "JetBrains UI 风格的复选框组件，基于 Radix UI 构建，提供流畅的勾选动画效果。支持完整的状态矩阵：选中维度（unchecked/checked/indeterminate）× 交互维度（default/hover/active/focus/invalid/disabled）。",
+      "features": [
+        "3种选中状态：unchecked、checked、indeterminate",
+        "6种交互状态：default、hover、active、focus、invalid、disabled",
+        "流畅的 SVG 路径动画",
+        "完整的键盘导航支持",
+        "优秀的无障碍支持",
+        "支持亮色/暗色主题"
+      ]
+    },
+    "demoProps": {
+      "Checkbox": {
+        "state": {
+          "value": "unchecked",
+          "options": {
+            "unchecked": "unchecked",
+            "checked": "checked",
+            "indeterminate": "indeterminate"
+          }
+        },
+        "disabled": {
+          "value": false
+        },
+        "invalid": {
+          "value": false
+        }
+      }
+    }
+  }
+}

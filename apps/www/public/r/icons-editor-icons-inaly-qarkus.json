@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-inaly-qarkus",
+  "type": "registry:ui",
+  "title": "Inaly Qarkus",
+  "description": "Inaly Qarkus icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/inaly-qarkus/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inaly-qarkus/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type InalyQarkusProps = IconProps;\n\nconst InalyQarkusLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 12 12\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6 2.667 9 1v3.333L12 6 9 7.667V4.902L6.5 6.29v2.765L9 7.666V11L6 9.334 3 11V7.667l2.5 1.388V6.291L3 4.902v2.765L0 6l3-1.666V1zm0 0L3.518 4.046 6 5.425l2.481-1.38h.001z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst InalyQarkusDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 12 12\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6 2.667 9 1v3.333L12 6 9 7.667V4.902L6.5 6.29v2.765L9 7.666V11L6 9.334 3 11V7.667l2.5 1.388V6.291L3 4.902v2.765L0 6l3-1.666V1zm0 0L3.518 4.046 6 5.425l2.481-1.38h.001z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const InalyQarkus: FC<InalyQarkusProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? InalyQarkusLight : InalyQarkusDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "inaly-qarkus",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

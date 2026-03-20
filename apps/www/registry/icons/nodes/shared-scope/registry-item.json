@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-shared-scope",
+  "type": "registry:ui",
+  "title": "Shared Scope",
+  "description": "Shared Scope icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/shared-scope/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/shared-scope/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "shared-scope",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

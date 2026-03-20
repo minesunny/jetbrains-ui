@@ -1,0 +1,32 @@
+---
+title: Plugins
+description: 聚合展示所有 Plugins 子分类图标，并支持搜索。
+---
+
+import { PluginsAllIconsGallery } from '@/components/docs/icons/plugins/plugins-all-icons-gallery';
+
+import { IconDetailPreview } from '@/components/docs/icons/icon-detail-preview';
+
+## Overview
+
+该页面聚合了全部插件子目录图标，支持统一检索和预览。
+
+### Usage
+
+<IconDetailPreview name="Bazel" category="bazel" />
+
+```tsx
+import { Bazel } from '@/components/jetbrains-ui/icons/plugins/bazel';
+
+<Bazel />
+
+<Bazel size="lg" mode="dark" />
+
+<Bazel aria-label="Bazel icon" />
+```
+
+## Browse Icons
+
+可按图标名或插件分类搜索；点击任意图标可查看导入代码和各尺寸预览。
+
+<PluginsAllIconsGallery />

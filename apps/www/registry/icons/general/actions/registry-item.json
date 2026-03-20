@@ -1,0 +1,231 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-actions",
+  "type": "registry:ui",
+  "title": "General Actions Icons",
+  "description": "All 41 icons from the General Actions category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/index.ts"
+    },
+    {
+      "path": "registry/icons/general/actions/add-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/add-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/build-auto-reload-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/build-auto-reload-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/checked/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/checked/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/deploy/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/deploy/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/diagram-diff/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/diagram-diff/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/diff-with-clipboard/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/diff-with-clipboard/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/gift/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/gift/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/group-by-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/group-by-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/group-by-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-method/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/group-by-module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-module/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/group-by-package/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-package/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/group-by-test-production/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-test-production/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/in-selection/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/in-selection/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/lightning/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/lightning/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/move-to-button/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/move-to-button/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/open-api/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/open-api/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/play-back/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/play-back/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/play-first/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/play-first/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/play-forward/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/play-forward/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/play-last/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/play-last/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/preview/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/preview/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/profile-cpu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/profile-cpu/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/profile-memory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/profile-memory/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/profile-red/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/profile-red/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/project-directory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/project-directory/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/replace/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/replace/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/report/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/report/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/restart-stop/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/restart-stop/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/run-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/run-all/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/select-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/select-all/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/shortcut-filter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/shortcut-filter/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/show-to-implement/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/show-to-implement/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/split/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/split/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/start-memory-profile/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/start-memory-profile/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/suggested-refactoring-bulb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/suggested-refactoring-bulb/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/swap-panels/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/swap-panels/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/synchronize-scrolling/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/synchronize-scrolling/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/toggle-visibility/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/toggle-visibility/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/unselect-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/unselect-all/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/actions/write-review/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/write-review/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "actions",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-space-tool-window",
+  "type": "registry:ui",
+  "title": "Space Tool Window",
+  "description": "Space Tool Window icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/space-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/space-tool-window/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SpaceToolWindowProps = IconProps;\n\nconst SpaceToolWindowLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M2.783 1.552c2.607-.29 8.43.521 11.558 5.388M2.783 1.552c1.738.58 4.953 2.78 6.691 5.388M2.783 1.552C.784 5.636 1.653 11.719 3.826 14.5M14.34 6.94c-1.825 5.214-7.474 7.56-10.515 7.56M14.34 6.94H9.474M3.826 14.5c2.462-1.303 5.214-4.519 5.648-7.56\"\n      stroke=\"#6C707E\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nconst SpaceToolWindowDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M2.783 1.552c2.607-.29 8.43.521 11.558 5.388M2.783 1.552c1.738.58 4.953 2.78 6.691 5.388M2.783 1.552C.784 5.636 1.653 11.719 3.826 14.5M14.34 6.94c-1.825 5.214-7.474 7.56-10.515 7.56M14.34 6.94H9.474M3.826 14.5c2.462-1.303 5.214-4.519 5.648-7.56\"\n      stroke=\"#CED0D6\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nexport const SpaceToolWindow: FC<SpaceToolWindowProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? SpaceToolWindowLight : SpaceToolWindowDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "space-tool-window",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

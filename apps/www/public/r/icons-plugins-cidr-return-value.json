@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-return-value",
+  "type": "registry:ui",
+  "title": "Return Value",
+  "description": "Return Value icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/return-value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/return-value/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ReturnValueProps = IconProps;\n\nconst ReturnValueLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M15 8c0 .766-.123 1.503-.35 2.193A3.5 3.5 0 0 0 13.5 10a3.5 3.5 0 0 0-2.45 1h-1.1a3.5 3.5 0 0 0-5.94 2.752A7 7 0 1 1 15 8\"\n      fill=\"#FFF7F7\"\n    />\n    <path\n      d=\"M4.122 12.579a6 6 0 1 1 9.535-2.575q.522.024.993.19c.227-.69.35-1.428.35-2.194a7 7 0 1 0-10.991 5.752 3.6 3.6 0 0 1 .113-1.173\"\n      fill=\"#DB3B4B\"\n    />\n    <path\n      d=\"M7.258 10.008a3.6 3.6 0 0 1 1.017.078V7.327H9.83V6.43H8.275v-.95c0-.36.246-.606.6-.606h1.006V4H8.778c-.903 0-1.52.571-1.52 1.406V6.43H6.121v.897h1.137z\"\n      fill=\"#DB3B4B\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7.5 16a2.5 2.5 0 0 0 2.45-3h1.1q-.05.243-.05.5a2.5 2.5 0 1 0 .5-1.5h-2a2.5 2.5 0 1 0-2 4m0-1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m6 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ReturnValueDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M15 8c0 .766-.123 1.503-.35 2.193A3.5 3.5 0 0 0 13.5 10a3.5 3.5 0 0 0-2.45 1h-1.1a3.5 3.5 0 0 0-5.94 2.752A7 7 0 1 1 15 8\"\n      fill=\"#402929\"\n    />\n    <path\n      d=\"M4.122 12.579a6 6 0 1 1 9.535-2.575q.522.024.993.19c.227-.69.35-1.428.35-2.194a7 7 0 1 0-10.991 5.752 3.6 3.6 0 0 1 .113-1.173\"\n      fill=\"#DB5C5C\"\n    />\n    <path\n      d=\"M7.258 10.008a3.6 3.6 0 0 1 1.017.078V7.327H9.83V6.43H8.275v-.95c0-.36.246-.606.6-.606h1.006V4H8.778c-.903 0-1.52.571-1.52 1.406V6.43H6.121v.897h1.137z\"\n      fill=\"#DB5C5C\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7.5 16a2.5 2.5 0 0 0 2.45-3h1.1q-.05.243-.05.5a2.5 2.5 0 1 0 .5-1.5h-2a2.5 2.5 0 1 0-2 4m0-1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m6 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const ReturnValue: React.FC<ReturnValueProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ReturnValueLight : ReturnValueDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "return-value",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

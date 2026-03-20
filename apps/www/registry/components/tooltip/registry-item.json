@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip",
+  "type": "registry:ui",
+  "title": "Tooltip",
+  "description": "JetBrains-style tooltip component.",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "registry/components/tooltip/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tooltip.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tooltip",
+      "jetbrains",
+      "ui",
+      "component"
+    ],
+    "category": "overlay",
+    "docs": {
+      "description": "JetBrains-style tooltip component.",
+      "features": [
+        "Composable API",
+        "Accessible by default",
+        "Supports light and dark themes"
+      ]
+    }
+  }
+}

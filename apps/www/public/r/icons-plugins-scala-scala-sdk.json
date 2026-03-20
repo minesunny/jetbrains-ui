@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-scala-scala-sdk",
+  "type": "registry:ui",
+  "title": "Scala Sdk",
+  "description": "Scala Sdk icon from Plugins Scala category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/scala-sdk/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-sdk/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ScalaSDKProps = IconProps;\n\nconst ScalaSDKLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2.043l-4.65.464A1.5 1.5 0 0 0 9 10v4H2.633C1.731 14 1 13.164 1 12.133z\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      d=\"m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5\"\n      stroke=\"#DB3B4B\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n    <path\n      d=\"M6.122 3H2.633C2.405 3 2 3.258 2 3.867v8.266c0 .609.405.867.633.867H9v1H2.633C1.731 14 1 13.164 1 12.133V3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2.043l-1 .1V6a1 1 0 0 0-1-1H8.04z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ScalaSDKDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2.043l-4.65.464A1.5 1.5 0 0 0 9 10v4H2.633C1.731 14 1 13.164 1 12.133z\"\n      fill=\"#43454A\"\n    />\n    <path\n      d=\"m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5\"\n      stroke=\"#DB5C5C\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n    <path\n      d=\"M6.122 3H2.633C2.405 3 2 3.258 2 3.867v8.266c0 .609.405.867.633.867H9v1H2.633C1.731 14 1 13.164 1 12.133V3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2.043l-1 .1V6a1 1 0 0 0-1-1H8.04z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const ScalaSDK: React.FC<ScalaSDKProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ScalaSDKLight : ScalaSDKDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "scala-sdk",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

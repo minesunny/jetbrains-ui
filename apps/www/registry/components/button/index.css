@@ -1,0 +1,98 @@
+:root {
+  --jb-btn-primary-bg: var(--jb-blue-4);
+  --jb-btn-primary-bg-hover: var(--jb-blue-3);
+  --jb-btn-primary-bg-pressed: var(--jb-blue-2);
+  --jb-btn-primary-text: var(--jb-gray-14);
+  --jb-btn-primary-ring: var(--jb-blue-4);
+
+  --jb-btn-secondary-bg: transparent;
+  --jb-btn-secondary-bg-hover: var(--jb-gray-12);
+  --jb-btn-secondary-bg-pressed: var(--jb-gray-11);
+  --jb-btn-secondary-text: var(--jb-gray-1);
+  --jb-btn-secondary-border: var(--jb-gray-9);
+  --jb-btn-secondary-ring: var(--jb-blue-4);
+
+  --jb-btn-disabled-bg: var(--jb-gray-12);
+  --jb-btn-disabled-text: var(--jb-gray-8);
+  --jb-btn-focus-offset: var(--jb-gray-14);
+}
+
+.dark {
+  --jb-btn-primary-bg: var(--jb-blue-6);
+  --jb-btn-primary-bg-hover: var(--jb-blue-5);
+  --jb-btn-primary-bg-pressed: var(--jb-blue-4);
+  --jb-btn-primary-text: var(--jb-gray-14);
+  --jb-btn-primary-ring: var(--jb-blue-6);
+
+  --jb-btn-secondary-bg: var(--jb-gray-5);
+  --jb-btn-secondary-bg-hover: var(--jb-gray-6);
+  --jb-btn-secondary-bg-pressed: var(--jb-gray-4);
+  --jb-btn-secondary-text: var(--jb-gray-12);
+  --jb-btn-secondary-border: var(--jb-gray-5);
+  --jb-btn-secondary-ring: var(--jb-blue-6);
+
+  --jb-btn-disabled-bg: var(--jb-gray-4);
+  --jb-btn-disabled-text: var(--jb-gray-7);
+  --jb-btn-focus-offset: var(--jb-gray-2);
+}
+
+.jb-btn {
+  --jb-btn-border-disabled: transparent;
+  border-color: var(--jb-btn-border);
+  background-color: var(--jb-btn-bg);
+  color: var(--jb-btn-text);
+}
+
+.jb-btn:hover {
+  background-color: var(--jb-btn-bg-hover);
+  color: var(--jb-btn-text-hover);
+}
+
+.jb-btn:active {
+  background-color: var(--jb-btn-bg-active);
+  color: var(--jb-btn-text-active);
+}
+
+.jb-btn:focus-visible {
+  box-shadow:
+    0 0 0 2px var(--jb-btn-focus-offset),
+    0 0 0 4px var(--jb-btn-ring);
+}
+
+.jb-btn:disabled {
+  background-color: var(--jb-btn-bg-disabled);
+  color: var(--jb-btn-text-disabled);
+  border-color: var(--jb-btn-border-disabled);
+}
+
+.jb-btn:is(
+    [data-variant='primary'],
+    .jb-btn--primary
+  ) {
+  --jb-btn-bg: var(--jb-btn-primary-bg);
+  --jb-btn-text: var(--jb-btn-primary-text);
+  --jb-btn-border: transparent;
+  --jb-btn-bg-hover: var(--jb-btn-primary-bg-hover);
+  --jb-btn-text-hover: var(--jb-btn-primary-text);
+  --jb-btn-bg-active: var(--jb-btn-primary-bg-pressed);
+  --jb-btn-text-active: var(--jb-btn-primary-text);
+  --jb-btn-ring: var(--jb-btn-primary-ring);
+  --jb-btn-bg-disabled: var(--jb-btn-disabled-bg);
+  --jb-btn-text-disabled: var(--jb-btn-disabled-text);
+}
+
+.jb-btn:is(
+    [data-variant='secondary'],
+    .jb-btn--secondary
+  ) {
+  --jb-btn-bg: var(--jb-btn-secondary-bg);
+  --jb-btn-text: var(--jb-btn-secondary-text);
+  --jb-btn-border: var(--jb-btn-secondary-border);
+  --jb-btn-bg-hover: var(--jb-btn-secondary-bg-hover);
+  --jb-btn-text-hover: var(--jb-btn-secondary-text);
+  --jb-btn-bg-active: var(--jb-btn-secondary-bg-pressed);
+  --jb-btn-text-active: var(--jb-btn-secondary-text);
+  --jb-btn-ring: var(--jb-btn-secondary-ring);
+  --jb-btn-bg-disabled: var(--jb-btn-disabled-bg);
+  --jb-btn-text-disabled: var(--jb-btn-disabled-text);
+}

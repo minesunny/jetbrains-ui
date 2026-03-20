@@ -1,0 +1,26 @@
+{
+  "name": "icons-run-test-runner-watch",
+  "type": "registry:ui",
+  "title": "Test Runner Watch",
+  "description": "Test Runner Watch icon from Run category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/test-runner-watch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/test-runner-watch/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type TestRunnerWatchProps = IconProps;\n\nconst TestRunnerWatchLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z\"\n      fill=\"#55A76A\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z\"\n      fill=\"#E55765\"\n    />\n    <path\n      d=\"M7.006 11.918C4.74 11.548 2.655 9.965 2 8c.75-2.25 3.375-4 6-4s5.25 1.75 6 4a4.9 4.9 0 0 1-.698 1.333 1.37 1.37 0 0 0-1.016-.326c.267-.316.485-.655.642-1.007C12.194 6.353 10.122 5 8 5S3.806 6.353 3.072 8c.73 1.637 2.78 2.983 4.888 3z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst TestRunnerWatchDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z\"\n      fill=\"#57965C\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z\"\n      fill=\"#DB5C5C\"\n    />\n    <path\n      d=\"M7.006 11.918C4.74 11.548 2.655 9.965 2 8c.75-2.25 3.375-4 6-4s5.25 1.75 6 4a4.9 4.9 0 0 1-.698 1.333 1.37 1.37 0 0 0-1.016-.326c.267-.316.485-.655.642-1.007C12.194 6.353 10.122 5 8 5S3.806 6.353 3.072 8c.73 1.637 2.78 2.983 4.888 3z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const TestRunnerWatch: FC<TestRunnerWatchProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? TestRunnerWatchLight : TestRunnerWatchDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "test-runner-watch",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

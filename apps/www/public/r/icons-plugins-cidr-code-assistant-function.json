@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-code-assistant-function",
+  "type": "registry:ui",
+  "title": "Code Assistant Function",
+  "description": "Code Assistant Function icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-function/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-function/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type CodeAssistantFunctionProps = IconProps;\n\nconst CodeAssistantFunctionLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"2.5\"\n      y=\"2.5\"\n      width=\"11\"\n      height=\"11\"\n      rx=\"1.5\"\n      fill=\"#FFF7F7\"\n      stroke=\"#DB3B4B\"\n    />\n    <path\n      d=\"M7.256 12h1.017V7.327h1.555V6.43H8.273v-.95c0-.36.246-.606.6-.606H9.88V4H8.776c-.903 0-1.52.571-1.52 1.406V6.43H6.12v.897h1.137z\"\n      fill=\"#DB3B4B\"\n    />\n  </svg>\n);\n\nconst CodeAssistantFunctionDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"2.5\"\n      y=\"2.5\"\n      width=\"11\"\n      height=\"11\"\n      rx=\"1.5\"\n      fill=\"#402929\"\n      stroke=\"#DB5C5C\"\n    />\n    <path\n      d=\"M7.256 12h1.017V7.327h1.555V6.43H8.273v-.95c0-.36.246-.606.6-.606H9.88V4H8.776c-.903 0-1.52.571-1.52 1.406V6.43H6.12v.897h1.137z\"\n      fill=\"#DB5C5C\"\n    />\n  </svg>\n);\n\nexport const CodeAssistantFunction: React.FC<CodeAssistantFunctionProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? CodeAssistantFunctionLight : CodeAssistantFunctionDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "code-assistant-function",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

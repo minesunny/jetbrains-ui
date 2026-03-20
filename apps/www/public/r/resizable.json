@@ -1,0 +1,38 @@
+{
+  "name": "resizable",
+  "type": "registry:ui",
+  "title": "Resizable",
+  "description": "Composable resizable panel layout with collapsible panels and min-size scroll fallback.",
+  "dependencies": [
+    "react-resizable-panels"
+  ],
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/scroll-area"
+  ],
+  "files": [
+    {
+      "path": "registry/components/resizable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/resizable.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport * as ResizablePrimitive from 'react-resizable-panels';\n\nimport {\n  ScrollArea,\n  ScrollBar,\n  ScrollViewport,\n} from '@/components/jetbrains-ui/scroll-area';\nimport { cn } from '@/lib/utils';\n\nconst PANEL_SIZE_EPSILON = 0.1;\n\ntype ResizablePanelProps = React.ComponentProps<\n  typeof ResizablePrimitive.Panel\n> & {\n  contentClassName?: string;\n  enableMinSizeScroll?: boolean;\n  collapse?: boolean;\n  collapsed?: boolean;\n};\n\nfunction assignRef<T>(ref: React.ForwardedRef<T>, value: T) {\n  if (typeof ref === 'function') {\n    ref(value);\n    return;\n  }\n\n  if (ref) {\n    ref.current = value;\n  }\n}\n\nfunction ResizablePanelGroup({\n  className,\n  ...props\n}: React.ComponentProps<typeof ResizablePrimitive.PanelGroup>) {\n  return (\n    <ResizablePrimitive.PanelGroup\n      data-slot=\"resizable-panel-group\"\n      className={cn(\n        'flex size-full overflow-hidden data-[panel-group-direction=vertical]:flex-col',\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nconst ResizablePanel = React.forwardRef<\n  React.ComponentRef<typeof ResizablePrimitive.Panel>,\n  ResizablePanelProps\n>(\n  (\n    {\n      className,\n      children,\n      contentClassName,\n      enableMinSizeScroll = true,\n      minSize,\n      collapsible,\n      collapsedSize = 0,\n      collapse,\n      collapsed,\n      onResize,\n      onCollapse,\n      onExpand,\n      defaultSize,\n      ...props\n    },\n    forwardedRef,\n  ) => {\n    const panelRef =\n      React.useRef<React.ComponentRef<typeof ResizablePrimitive.Panel>>(null);\n    const lastExpandedSizeRef = React.useRef<number | null>(\n      typeof defaultSize === 'number' ? defaultSize : null,\n    );\n    const [isCollapsed, setIsCollapsed] = React.useState(false);\n    const [isAtMinSize, setIsAtMinSize] = React.useState(false);\n\n    const mergedRef = React.useCallback(\n      (value: React.ComponentRef<typeof ResizablePrimitive.Panel> | null) => {\n        panelRef.current = value;\n        assignRef(forwardedRef, value);\n      },\n      [forwardedRef],\n    );\n\n    const collapseThreshold = collapsedSize + PANEL_SIZE_EPSILON;\n    const collapsedState = collapse ?? collapsed;\n\n    const handleResize = React.useCallback(\n      (nextSize: number, prevSize: number | undefined) => {\n        if (nextSize > collapseThreshold) {\n          lastExpandedSizeRef.current = nextSize;\n        }\n\n        if (typeof minSize === 'number') {\n          setIsAtMinSize(nextSize <= minSize + PANEL_SIZE_EPSILON);\n        }\n\n        onResize?.(nextSize, prevSize);\n      },\n      [collapseThreshold, minSize, onResize],\n    );\n\n    const handleCollapse = React.useCallback(() => {\n      setIsCollapsed(true);\n      setIsAtMinSize(false);\n      onCollapse?.();\n    }, [onCollapse]);\n\n    const handleExpand = React.useCallback(() => {\n      setIsCollapsed(false);\n\n      if (typeof minSize === 'number') {\n        const rememberedSize = lastExpandedSizeRef.current;\n        if (typeof rememberedSize === 'number') {\n          setIsAtMinSize(rememberedSize <= minSize + PANEL_SIZE_EPSILON);\n        }\n      }\n\n      const rememberedSize = lastExpandedSizeRef.current;\n      if (\n        collapsible &&\n        typeof rememberedSize === 'number' &&\n        rememberedSize > collapseThreshold\n      ) {\n        panelRef.current?.resize(rememberedSize);\n      }\n\n      onExpand?.();\n    }, [collapsible, collapseThreshold, minSize, onExpand]);\n\n    React.useEffect(() => {\n      if (!collapsible || typeof collapsedState !== 'boolean') {\n        return;\n      }\n\n      const panel = panelRef.current;\n      if (!panel) {\n        return;\n      }\n\n      if (collapsedState) {\n        if (!panel.isCollapsed()) {\n          panel.collapse();\n        }\n        return;\n      }\n\n      if (panel.isCollapsed()) {\n        panel.expand();\n      }\n    }, [collapsible, collapsedState]);\n\n    const shouldEnableScroll =\n      enableMinSizeScroll && !isCollapsed && isAtMinSize;\n\n    return (\n      <ResizablePrimitive.Panel\n        ref={mergedRef}\n        data-slot=\"resizable-panel\"\n        data-min-size-reached={shouldEnableScroll ? 'true' : 'false'}\n        className={cn('min-h-0 min-w-0', className)}\n        minSize={minSize}\n        collapsible={collapsible}\n        collapsedSize={collapsedSize}\n        defaultSize={defaultSize}\n        onResize={handleResize}\n        onCollapse={handleCollapse}\n        onExpand={handleExpand}\n        {...props}\n      >\n        {enableMinSizeScroll ? (\n          <ScrollArea className=\"size-full\">\n            <ScrollViewport\n              className={cn(\n                'size-full',\n                shouldEnableScroll ? 'overflow-auto' : 'overflow-hidden',\n                contentClassName,\n              )}\n            >\n              {children}\n            </ScrollViewport>\n            <ScrollBar orientation=\"horizontal\" />\n          </ScrollArea>\n        ) : (\n          children\n        )}\n      </ResizablePrimitive.Panel>\n    );\n  },\n);\n\nResizablePanel.displayName = 'ResizablePanel';\n\nfunction ResizableHandle({\n  className,\n  withHandle,\n  ...props\n}: React.ComponentProps<typeof ResizablePrimitive.PanelResizeHandle> & {\n  withHandle?: boolean;\n}) {\n  return (\n    <ResizablePrimitive.PanelResizeHandle\n      data-slot=\"resizable-handle\"\n      className={cn(\n        'bg-border relative flex w-px shrink-0 items-center justify-center after:absolute after:inset-y-0 after:left-1/2 after:w-1 after:-translate-x-1/2 focus-visible:ring-1 focus-visible:ring-offset-1 focus-visible:outline-hidden data-[panel-group-direction=vertical]:h-px data-[panel-group-direction=vertical]:w-full data-[panel-group-direction=vertical]:after:left-0 data-[panel-group-direction=vertical]:after:h-1 data-[panel-group-direction=vertical]:after:w-full data-[panel-group-direction=vertical]:after:-translate-y-1/2 data-[panel-group-direction=vertical]:after:translate-x-0',\n        className,\n      )}\n      {...props}\n    >\n      {withHandle && (\n        <div\n          className={cn(\n            'bg-border z-10 flex h-4 w-3 items-center justify-center rounded-xs border',\n          )}\n        >\n          <span className=\"bg-border-foreground/40 block h-2.5 w-1 rounded-full\" />\n        </div>\n      )}\n    </ResizablePrimitive.PanelResizeHandle>\n  );\n}\n\nexport { ResizablePanelGroup, ResizablePanel, ResizableHandle };"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "resizable",
+      "collapsible",
+      "layout",
+      "component"
+    ],
+    "category": "layout",
+    "docs": {
+      "description": "Composable resizable panel layout with collapsible panels and min-size scroll fallback.",
+      "features": [
+        "Collapsible panels with remembered size",
+        "Min-size aware scroll fallback",
+        "Composable API"
+      ]
+    }
+  }
+}

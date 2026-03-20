@@ -1,0 +1,26 @@
+{
+  "name": "icons-debugger-threads",
+  "type": "registry:ui",
+  "title": "Threads",
+  "description": "Threads icon from Debugger category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-debugger-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/debugger/threads/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/debugger/threads/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ThreadsProps = IconProps;\n\nconst ThreadsLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"m11.5 10.5 2 3h-11l2-3v-5l-2-3h11l-2 3z\"\n      fill=\"#EBECF0\"\n      stroke=\"#6C707E\"\n      strokeLinejoin=\"round\"\n    />\n    <path d=\"M4.5 5.5h7m-7 5h7\" stroke=\"#6C707E\" strokeLinejoin=\"round\" />\n  </svg>\n);\n\nconst ThreadsDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"m11.5 10.5 2 3h-11l2-3v-5l-2-3h11l-2 3z\"\n      fill=\"#43454A\"\n      stroke=\"#CED0D6\"\n      strokeLinejoin=\"round\"\n    />\n    <path d=\"M4.5 5.5h7m-7 5h7\" stroke=\"#CED0D6\" strokeLinejoin=\"round\" />\n  </svg>\n);\n\nexport const Threads: FC<ThreadsProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ThreadsLight : ThreadsDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "threads",
+      "icon",
+      "debugger",
+      "jetbrains"
+    ]
+  }
+}

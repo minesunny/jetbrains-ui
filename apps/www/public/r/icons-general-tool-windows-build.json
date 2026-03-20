@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-build",
+  "type": "registry:ui",
+  "title": "Build",
+  "description": "Build icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/build/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/build/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type BuildProps = IconProps;\n\nconst BuildLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3.6 1.5h-2v3.2h2l.8-.4h1.2l1 .8h2.2l1.6-1.2c1.2 0 2 0 4 1.4-1.2-3.8-3.6-3.8-4.8-3.8h-3l-1 .4H4.4z\"\n      stroke=\"#6C707E\"\n      strokeLinejoin=\"round\"\n    />\n    <path\n      d=\"M6 14.5h3.4V9.426a5 5 0 0 0-.404-1.97L8.8 7V5H6.6v2l-.196.457A5 5 0 0 0 6 9.427z\"\n      stroke=\"#6C707E\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nconst BuildDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3.6 1.5h-2v3.2h2l.8-.4h1.2l1 .8h2.2l1.6-1.2c1.2 0 2 0 4 1.4-1.2-3.8-3.6-3.8-4.8-3.8h-3l-1 .4H4.4z\"\n      stroke=\"#CED0D6\"\n      strokeLinejoin=\"round\"\n    />\n    <path\n      d=\"M6 14.5h3.4V9.426a5 5 0 0 0-.404-1.97L8.8 7V5H6.6v2l-.196.457A5 5 0 0 0 6 9.427z\"\n      stroke=\"#CED0D6\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nexport const Build: FC<BuildProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? BuildLight : BuildDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "build",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

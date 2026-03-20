@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-method-abstract",
+  "type": "registry:ui",
+  "title": "Method Abstract",
+  "description": "Method Abstract icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/method-abstract/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/method-abstract/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "method-abstract",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

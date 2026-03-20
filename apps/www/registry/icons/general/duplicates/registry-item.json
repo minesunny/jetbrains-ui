@@ -1,0 +1,46 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-duplicates",
+  "type": "registry:ui",
+  "title": "General Duplicates Icons",
+  "description": "All 4 icons from the General Duplicates category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/duplicates/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/duplicates/index.ts"
+    },
+    {
+      "path": "registry/icons/general/duplicates/send-to-the-left/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/duplicates/send-to-the-left-grayed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left-grayed/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/duplicates/send-to-the-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-right/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/duplicates/send-to-the-right-grayed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-right-grayed/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "duplicates",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

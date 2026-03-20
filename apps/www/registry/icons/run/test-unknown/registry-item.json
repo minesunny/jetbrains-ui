@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-test-unknown",
+  "type": "registry:ui",
+  "title": "Test Unknown",
+  "description": "Test Unknown icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/test-unknown/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/test-unknown/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "test-unknown",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

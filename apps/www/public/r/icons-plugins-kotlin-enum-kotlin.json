@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-kotlin-enum-kotlin",
+  "type": "registry:ui",
+  "title": "Enum Kotlin",
+  "description": "Enum Kotlin icon from Plugins Kotlin category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kotlin/enum-kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/enum-kotlin/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type EnumKotlinProps = IconProps;\n\nconst EnumKotlinLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path d=\"M15 8a7 7 0 1 0-7 7v-5a2 2 0 0 1 2-2z\" fill=\"#FAF5FF\" />\n    <path\n      d=\"M10 10h4.645l-1.97 1.97a.75.75 0 0 0 0 1.06l1.97 1.97H10z\"\n      fill=\"#FAF5FF\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9 10a1 1 0 0 1 1-1h5.248a.75.75 0 0 1 .53 1.28l-2.22 2.22 2.22 2.22a.75.75 0 0 1-.53 1.28H10a1 1 0 0 1-1-1zm5.645 0H10v5h4.645l-1.97-1.97a.75.75 0 0 1 0-1.06z\"\n      fill=\"#834DF0\"\n    />\n    <path\n      d=\"M8 11.5H5.49v-7h4.92v.915H6.48v2.1h3.59v.92H6.48v2.15H8z\"\n      fill=\"#834DF0\"\n    />\n    <path d=\"M8 14a6 6 0 1 1 6-6h1a7 7 0 1 0-7 7z\" fill=\"#834DF0\" />\n  </svg>\n);\n\nconst EnumKotlinDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path d=\"M15 8a7 7 0 1 0-7 7v-5a2 2 0 0 1 2-2z\" fill=\"#2F2936\" />\n    <path\n      d=\"M10 10h4.645l-1.97 1.97a.75.75 0 0 0 0 1.06l1.97 1.97H10z\"\n      fill=\"#2F2936\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9 10a1 1 0 0 1 1-1h5.248a.75.75 0 0 1 .53 1.28l-2.22 2.22 2.22 2.22a.75.75 0 0 1-.53 1.28H10a1 1 0 0 1-1-1zm5.645 0H10v5h4.645l-1.97-1.97a.75.75 0 0 1 0-1.06z\"\n      fill=\"#A571E6\"\n    />\n    <path\n      d=\"M8 11.5H5.49v-7h4.92v.915H6.48v2.1h3.59v.92H6.48v2.15H8z\"\n      fill=\"#A571E6\"\n    />\n    <path d=\"M8 14a6 6 0 1 1 6-6h1a7 7 0 1 0-7 7z\" fill=\"#A571E6\" />\n  </svg>\n);\n\nexport const EnumKotlin: React.FC<EnumKotlinProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? EnumKotlinLight : EnumKotlinDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "enum-kotlin",
+      "icon",
+      "plugins",
+      "kotlin",
+      "jetbrains"
+    ]
+  }
+}

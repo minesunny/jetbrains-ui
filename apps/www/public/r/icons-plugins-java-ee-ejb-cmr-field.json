@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-java-ee-ejb-cmr-field",
+  "type": "registry:ui",
+  "title": "Ejb Cmr Field",
+  "description": "Ejb Cmr Field icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-cmr-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-cmr-field/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type EjbCmrFieldProps = IconProps;\n\nconst EjbCmrFieldLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M8 14.413c-.524-.75-.873-1.603-.972-2.49-.141-1.269.24-2.566 1.276-3.602 1.024-1.024 2.292-1.432 3.564-1.296 1.136.122 2.216.668 3.114 1.482Q15 8.255 15 8a7 7 0 1 0-7 7z\"\n      fill=\"#FFF4EB\"\n    />\n    <path\n      d=\"M9.146 3.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708L10.64 7.067c-.554.1-1.093.313-1.593.644a.5.5 0 0 1 .1-.565L10.292 6H5.5a.5.5 0 0 1 0-1h4.793L9.146 3.854a.5.5 0 0 1 0-.708M7.237 10h-1.53l1.147-1.146a.5.5 0 1 0-.708-.708l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 11H7.02q.046-.508.217-1\"\n      fill=\"#E66D17\"\n    />\n    <path\n      d=\"M8.452 14.986A7.001 7.001 0 0 1 6.544 1.153a7 7 0 0 1 8.439 7.355 6.5 6.5 0 0 0-.987-.739 6 6 0 1 0-6.264 6.226q.309.528.72.991\"\n      fill=\"#E66D17\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14.526 9.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.144-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14.526 9.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.144-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425m-.707.708c.699.698 1.086 1.467 1.165 2.161a2.2 2.2 0 0 1-.399 1.556l-4.473-4.473a2.23 2.23 0 0 1 1.543-.391c.7.075 1.472.454 2.164 1.147m-4.415-.05 4.475 4.475a2.26 2.26 0 0 1-1.604.396c-.719-.085-1.49-.477-2.146-1.132-.648-.648-1.032-1.423-1.113-2.148a2.3 2.3 0 0 1 .388-1.591\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst EjbCmrFieldDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M8 14.413c-.524-.75-.873-1.603-.972-2.49-.141-1.269.24-2.566 1.276-3.602 1.024-1.024 2.292-1.432 3.564-1.296 1.136.122 2.216.668 3.114 1.482Q15 8.255 15 8a7 7 0 1 0-7 7z\"\n      fill=\"#45322B\"\n    />\n    <path\n      d=\"M9.146 3.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708L10.64 7.067c-.554.1-1.093.313-1.593.644a.5.5 0 0 1 .1-.565L10.292 6H5.5a.5.5 0 0 1 0-1h4.793L9.146 3.854a.5.5 0 0 1 0-.708M7.237 10h-1.53l1.147-1.146a.5.5 0 1 0-.708-.708l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 11H7.02q.046-.508.217-1\"\n      fill=\"#C77D55\"\n    />\n    <path\n      d=\"M8.452 14.986A7.001 7.001 0 0 1 6.544 1.153a7 7 0 0 1 8.439 7.355 6.5 6.5 0 0 0-.987-.739 6 6 0 1 0-6.264 6.226q.309.528.72.991\"\n      fill=\"#C77D55\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14.526 9.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.144-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425\"\n      fill=\"#43454A\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14.526 9.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.144-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425m-.707.708c.699.698 1.086 1.467 1.165 2.161a2.2 2.2 0 0 1-.399 1.556l-4.473-4.473a2.23 2.23 0 0 1 1.543-.391c.7.075 1.472.454 2.164 1.147m-4.415-.05 4.475 4.475a2.26 2.26 0 0 1-1.604.396c-.719-.085-1.49-.477-2.146-1.132-.648-.648-1.032-1.423-1.113-2.148a2.3 2.3 0 0 1 .388-1.591\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const EjbCmrField: React.FC<EjbCmrFieldProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? EjbCmrFieldLight : EjbCmrFieldDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ejb-cmr-field",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

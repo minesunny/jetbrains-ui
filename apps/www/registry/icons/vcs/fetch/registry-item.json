@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-fetch",
+  "type": "registry:ui",
+  "title": "Fetch",
+  "description": "Fetch icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/fetch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/fetch/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "fetch",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

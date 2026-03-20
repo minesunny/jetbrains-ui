@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-editor-preview-vertical",
+  "type": "registry:ui",
+  "title": "Editor Preview Vertical",
+  "description": "Editor Preview Vertical icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/editor-preview-vertical/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/editor-preview-vertical/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "editor-preview-vertical",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

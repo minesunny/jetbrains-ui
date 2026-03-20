@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-athena",
+  "type": "registry:ui",
+  "title": "Athena",
+  "description": "Athena icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/athena/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/athena/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type AthenaProps = IconProps;\n\nconst AthenaLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M8 11.7v3.4l-7-3.5v-2z\" fill=\"#9C5121\" />\n    <path d=\"M8 11.7v3.4l7-3.5v-2z\" fill=\"#FB8835\" />\n    <path d=\"M8 11.7 1 9.6l7-.824 7 .824z\" fill=\"#FFC39C\" />\n    <path d=\"M1.008 6.656v1.98l.893.175V6.656z\" fill=\"#9C5121\" />\n    <path d=\"M2.441 6.656v2.098l-.54.057V6.656z\" fill=\"#FB8835\" />\n    <path d=\"m2.436 8.915 1.123.219V4.138l-1.123.233z\" fill=\"#9C5121\" />\n    <path d=\"m4.69 8.993-1.131.141V4.138l1.131.137z\" fill=\"#FB8835\" />\n    <path d=\"m4.273 9.273 1.613.314V5.148l-1.613.168z\" fill=\"#9C5121\" />\n    <path\n      d=\"m6.914 9.41-1.028.177V5.148l1.028.086zM15.007 1.676v6.96l-.89.174V1.24z\"\n      fill=\"#FB8835\"\n    />\n    <path d=\"M13.129 1.469v7.195l.989.146V1.24z\" fill=\"#9C5121\" />\n    <path d=\"m13.628 8.905-1.205.234V1.646l1.205.476z\" fill=\"#FB8835\" />\n    <path d=\"m11.328 9.005 1.095.134V1.646l-1.095.268z\" fill=\"#9C5121\" />\n    <path d=\"m11.744 9.272-1.649.32V3.68l1.649.338z\" fill=\"#FB8835\" />\n    <path\n      d=\"m9.095 9.421 1 .171V3.68l-1 .142zM8 1.544V10l-1.088-.212V1.91z\"\n      fill=\"#9C5121\"\n    />\n    <path d=\"M8 1.542V10l1.108-.216V1.89z\" fill=\"#FB8835\" />\n  </svg>\n);\n\nconst AthenaDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M8 11.7v3.4l-7-3.5v-2z\" fill=\"#9C5121\" />\n    <path d=\"M8 11.7v3.4l7-3.5v-2z\" fill=\"#FB8835\" />\n    <path d=\"M8 11.7 1 9.6l7-.824 7 .824z\" fill=\"#FFC39C\" />\n    <path d=\"M1.008 6.656v1.98l.893.175V6.656z\" fill=\"#9C5121\" />\n    <path d=\"M2.441 6.656v2.098l-.54.057V6.656z\" fill=\"#FB8835\" />\n    <path d=\"m2.436 8.915 1.123.219V4.138l-1.123.233z\" fill=\"#9C5121\" />\n    <path d=\"m4.69 8.993-1.131.141V4.138l1.131.137z\" fill=\"#FB8835\" />\n    <path d=\"m4.273 9.273 1.613.314V5.148l-1.613.168z\" fill=\"#9C5121\" />\n    <path\n      d=\"m6.914 9.41-1.028.177V5.148l1.028.086zM15.007 1.676v6.96l-.89.174V1.24z\"\n      fill=\"#FB8835\"\n    />\n    <path d=\"M13.129 1.469v7.195l.989.146V1.24z\" fill=\"#9C5121\" />\n    <path d=\"m13.628 8.905-1.205.234V1.646l1.205.476z\" fill=\"#FB8835\" />\n    <path d=\"m11.328 9.005 1.095.134V1.646l-1.095.268z\" fill=\"#9C5121\" />\n    <path d=\"m11.744 9.272-1.649.32V3.68l1.649.338z\" fill=\"#FB8835\" />\n    <path\n      d=\"m9.095 9.421 1 .171V3.68l-1 .142zM8 1.544V10l-1.088-.212V1.91z\"\n      fill=\"#9C5121\"\n    />\n    <path d=\"M8 1.542V10l1.108-.216V1.89z\" fill=\"#FB8835\" />\n  </svg>\n);\n\nexport const Athena: FC<AthenaProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? AthenaLight : AthenaDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "athena",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

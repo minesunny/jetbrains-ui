@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-java-ee-persistence-relationship",
+  "type": "registry:ui",
+  "title": "Persistence Relationship",
+  "description": "Persistence Relationship icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-relationship/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-relationship/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "persistence-relationship",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

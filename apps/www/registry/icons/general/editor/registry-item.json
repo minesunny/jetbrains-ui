@@ -1,0 +1,116 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-editor",
+  "type": "registry:ui",
+  "title": "General Editor Icons",
+  "description": "All 18 icons from the General Editor category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/editor/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/index.ts"
+    },
+    {
+      "path": "registry/icons/general/editor/add-column-left/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/add-column-left/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/add-column-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/add-column-right/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/add-row-above/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/add-row-above/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/add-row-below/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/add-row-below/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/bold/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/bold/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/bullet-list/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/bullet-list/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/center-align/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/center-align/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/checkmark-list/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/checkmark-list/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/code-span/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/code-span/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/header-level-down/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/header-level-down/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/header-level-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/header-level-up/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/italic/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/italic/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/left-align/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/left-align/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/link/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/link/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/numbered-list/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/numbered-list/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/right-align/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/right-align/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/strike-through/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/strike-through/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/editor/table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/table/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "editor",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

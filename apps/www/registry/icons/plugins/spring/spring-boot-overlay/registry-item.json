@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-spring-spring-boot-overlay",
+  "type": "registry:ui",
+  "title": "Spring Boot Overlay",
+  "description": "Spring Boot Overlay icon from Plugins Spring category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/spring-boot-overlay/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-boot-overlay/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "spring-boot-overlay",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-project",
+  "type": "registry:ui",
+  "title": "Project",
+  "description": "Project icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/project/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/project/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ProjectProps = IconProps;\n\nconst ProjectLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 20 20\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3.25 3.25h4.388a.25.25 0 0 1 .16.058l2.722 2.268.209.174H17c.69 0 1.25.56 1.25 1.25v8.167c0 .9-.697 1.583-1.5 1.583H3.25c-.803 0-1.5-.683-1.5-1.583V4.833c0-.9.697-1.583 1.5-1.583Z\"\n      stroke=\"#6C707E\"\n      strokeWidth=\"1.5\"\n    />\n  </svg>\n);\n\nconst ProjectDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 20 20\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3.25 3.25h4.388a.25.25 0 0 1 .16.058l2.722 2.268.209.174H17c.69 0 1.25.56 1.25 1.25v8.167c0 .9-.697 1.583-1.5 1.583H3.25c-.803 0-1.5-.683-1.5-1.583V4.833c0-.9.697-1.583 1.5-1.583Z\"\n      stroke=\"#CED0D6\"\n      strokeWidth=\"1.5\"\n    />\n  </svg>\n);\n\nexport const Project: FC<ProjectProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ProjectLight : ProjectDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "project",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

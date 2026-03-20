@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-dynamo-db",
+  "type": "registry:ui",
+  "title": "Dynamo Db",
+  "description": "Dynamo Db icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/dynamo-db/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/dynamo-db/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dynamo-db",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

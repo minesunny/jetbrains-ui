@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-types",
+  "type": "registry:ui",
+  "title": "Plugins Icons Types",
+  "description": "Shared types and utilities for Plugins icon components.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/types.ts"
+    }
+  ]
+}

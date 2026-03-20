@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-data-schema",
+  "type": "registry:ui",
+  "title": "Data Schema",
+  "description": "Data Schema icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/data-schema/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/data-schema/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type DataSchemaProps = IconProps;\n\nconst DataSchemaLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M0 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v7c0-1.014-.378-1.94-1-2.646V5h-3v1q-.519.001-1 .126V5H5v7h1.535c.218.376.495.714.82 1H2a2 2 0 0 1-2-2zm5-1h4v2H5zM4 2H2a1 1 0 0 0-1 1v1h3zM1 5v6a1 1 0 0 0 1 1h2V5zm12-1V3a1 1 0 0 0-1-1h-2v2z\"\n      fill=\"#6C707E\"\n    />\n    <circle cx=\"10\" cy=\"10\" r=\"2\" fill=\"#EDF3FF\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11.738 12.445a3 3 0 1 1 .707-.707l1.409 1.408a.5.5 0 0 1-.708.708zM12 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst DataSchemaDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M0 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v7c0-1.014-.378-1.94-1-2.646V5h-3v1q-.519.001-1 .126V5H5v7h1.535c.218.376.495.714.82 1H2a2 2 0 0 1-2-2zm5-1h4v2H5zM4 2H2a1 1 0 0 0-1 1v1h3zM1 5v6a1 1 0 0 0 1 1h2V5zm12-1V3a1 1 0 0 0-1-1h-2v2z\"\n      fill=\"#CED0D6\"\n    />\n    <circle cx=\"10\" cy=\"10\" r=\"2\" fill=\"#25324D\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11.738 12.445a3 3 0 1 1 .707-.707l1.409 1.408a.5.5 0 0 1-.708.708zM12 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const DataSchema: FC<DataSchemaProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? DataSchemaLight : DataSchemaDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "data-schema",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

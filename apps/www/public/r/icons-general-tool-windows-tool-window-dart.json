@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-tool-window-dart",
+  "type": "registry:ui",
+  "title": "Tool Window Dart",
+  "description": "Tool Window Dart icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/tool-window-dart/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-dart/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ToolWindowDartProps = IconProps;\n\nconst ToolWindowDartLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7.985 1.865a1.5 1.5 0 0 1 1.536.363l4.833 4.833a.5.5 0 0 1 .146.353V11a.5.5 0 0 1-.5.5h-2.5V14a.5.5 0 0 1-.5.5H7.414a.5.5 0 0 1-.353-.146L2.228 9.52a1.5 1.5 0 0 1-.363-1.536l1.293-3.879a1.5 1.5 0 0 1 .948-.948z\"\n      stroke=\"#6C707E\"\n      strokeLinecap=\"round\"\n    />\n    <path\n      d=\"M3.5 10.5v-6a1 1 0 0 1 1-1h6\"\n      stroke=\"#6C707E\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nconst ToolWindowDartDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7.985 1.865a1.5 1.5 0 0 1 1.536.363l4.833 4.833a.5.5 0 0 1 .146.353V11a.5.5 0 0 1-.5.5h-2.5V14a.5.5 0 0 1-.5.5H7.414a.5.5 0 0 1-.353-.146L2.228 9.52a1.5 1.5 0 0 1-.363-1.536l1.293-3.879a1.5 1.5 0 0 1 .948-.948z\"\n      stroke=\"#CED0D6\"\n      strokeLinecap=\"round\"\n    />\n    <path\n      d=\"M3.5 10.5v-6a1 1 0 0 1 1-1h6\"\n      stroke=\"#CED0D6\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nexport const ToolWindowDart: FC<ToolWindowDartProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? ToolWindowDartLight : ToolWindowDartDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tool-window-dart",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

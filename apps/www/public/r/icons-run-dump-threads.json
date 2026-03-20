@@ -1,0 +1,26 @@
+{
+  "name": "icons-run-dump-threads",
+  "type": "registry:ui",
+  "title": "Dump Threads",
+  "description": "Dump Threads icon from Run category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/dump-threads/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/dump-threads/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type DumpThreadsProps = IconProps;\n\nconst DumpThreadsLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m11.123 5-.8-2H5.677l-.8 2H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM4.2 4H3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.2l-.549-1.371A1 1 0 0 0 10.323 2H5.677a1 1 0 0 0-.928.629z\"\n      fill=\"#6C707E\"\n    />\n    <circle cx=\"8\" cy=\"8.75\" r=\"2.5\" stroke=\"#6C707E\" />\n    <path fill=\"#6C707E\" d=\"M12 6H13V7H12z\" />\n  </svg>\n);\n\nconst DumpThreadsDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m11.123 5-.8-2H5.677l-.8 2H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM4.2 4H3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.2l-.549-1.371A1 1 0 0 0 10.323 2H5.677a1 1 0 0 0-.928.629z\"\n      fill=\"#CED0D6\"\n    />\n    <circle cx=\"8\" cy=\"8.75\" r=\"2.5\" stroke=\"#CED0D6\" />\n    <path fill=\"#CED0D6\" d=\"M12 6H13V7H12z\" />\n  </svg>\n);\n\nexport const DumpThreads: FC<DumpThreadsProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? DumpThreadsLight : DumpThreadsDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dump-threads",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

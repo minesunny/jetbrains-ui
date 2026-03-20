@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-magic-resolve-toolbar",
+  "type": "registry:ui",
+  "title": "Magic Resolve Toolbar",
+  "description": "Magic Resolve Toolbar icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/magic-resolve-toolbar/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/magic-resolve-toolbar/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "magic-resolve-toolbar",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

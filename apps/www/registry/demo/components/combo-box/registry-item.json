@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-combo-box",
+  "type": "registry:ui",
+  "title": "Combo Box Demo",
+  "description": "组合框组件的演示",
+  "dependencies": ["@radix-ui/react-select"],
+  "registryDependencies": ["@jetbrains-ui/combo-box"],
+  "files": [
+    {
+      "path": "registry/demo/components/combo-box/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/combo-box.tsx"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "ComboBox": {
+        "state": {
+          "value": "default",
+          "options": {
+            "default": "default",
+            "active": "active",
+            "invalid": "invalid",
+            "disabled": "disabled"
+          }
+        }
+      }
+    }
+  }
+}

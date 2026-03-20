@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-checkmark",
+  "type": "registry:ui",
+  "title": "Checkmark",
+  "description": "Checkmark icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/checkmark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/checkmark/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "checkmark",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

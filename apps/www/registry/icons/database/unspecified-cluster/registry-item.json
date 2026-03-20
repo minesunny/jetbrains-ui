@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-unspecified-cluster",
+  "type": "registry:ui",
+  "title": "Unspecified Cluster",
+  "description": "Unspecified Cluster icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/unspecified-cluster/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/unspecified-cluster/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "unspecified-cluster",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

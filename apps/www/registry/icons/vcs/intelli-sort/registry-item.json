@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-intelli-sort",
+  "type": "registry:ui",
+  "title": "Intelli Sort",
+  "description": "Intelli Sort icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/intelli-sort/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/intelli-sort/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "intelli-sort",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-windows",
+  "type": "registry:ui",
+  "title": "General Windows Icons",
+  "description": "All 16 icons from the General Windows category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/windows/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/index.ts"
+    },
+    {
+      "path": "registry/icons/general/windows/close/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/close/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/close-hover/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/close-hover/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/close-inactive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/close-inactive/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/close-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/close-small/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/collapse/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/collapse/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/help/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/help/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/help-inactive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/help-inactive/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/maximize/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/maximize/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/maximize-inactive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/maximize-inactive/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/maximize-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/maximize-small/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/minimize/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/minimize/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/minimize-inactive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/minimize-inactive/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/minimize-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/minimize-small/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/restore/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/restore/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/restore-inactive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/restore-inactive/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/restore-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/restore-small/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "windows",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

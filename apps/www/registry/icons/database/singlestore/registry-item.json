@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-singlestore",
+  "type": "registry:ui",
+  "title": "Singlestore",
+  "description": "Singlestore icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/singlestore/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/singlestore/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "singlestore",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

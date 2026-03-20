@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-comment-unread",
+  "type": "registry:ui",
+  "title": "Comment Unread",
+  "description": "Comment Unread icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/comment-unread/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/comment-unread/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "comment-unread",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

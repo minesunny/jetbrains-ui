@@ -1,0 +1,72 @@
+{
+  "name": "tabs",
+  "type": "registry:ui",
+  "title": "Tabs",
+  "description": "JetBrains UI 风格的标签页组件，基于 Radix UI Tabs 构建",
+  "dependencies": [
+    "@radix-ui/react-tabs"
+  ],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "registry/components/tabs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tabs/index.tsx",
+      "content": "'use client';\n\nexport { Tabs, TabsList, TabsTrigger, TabsContent } from './tabs';\nexport { DynamicTabs } from './dynamic-tabs';\nexport type { DynamicTabsItem, DynamicTabsProps } from './dynamic-tabs';"
+    },
+    {
+      "path": "registry/components/tabs/tabs.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tabs/tabs.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport * as TabsPrimitive from '@radix-ui/react-tabs';\n\nimport { cn } from '@/lib/utils';\nimport './index.css';\n\nconst Tabs = TabsPrimitive.Root;\n\nconst TabsList = React.forwardRef<\n  React.ComponentRef<typeof TabsPrimitive.List>,\n  React.ComponentPropsWithoutRef<typeof TabsPrimitive.List>\n>(({ className, ...props }, ref) => (\n  <TabsPrimitive.List\n    ref={ref}\n    className={cn(\n      'jb-tabs-list inline-flex h-8 items-center rounded-[4px] p-1',\n      className,\n    )}\n    {...props}\n  />\n));\nTabsList.displayName = TabsPrimitive.List.displayName;\n\nconst TabsTrigger = React.forwardRef<\n  React.ComponentRef<typeof TabsPrimitive.Trigger>,\n  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>\n>(({ className, ...props }, ref) => (\n  <TabsPrimitive.Trigger\n    ref={ref}\n    className={cn(\n      'jb-tabs-trigger inline-flex items-center justify-center whitespace-nowrap rounded-[3px] px-2.5 py-1 text-xs font-medium outline-none transition-[background-color,color,box-shadow] duration-100 ease-in-out disabled:pointer-events-none disabled:opacity-50',\n      className,\n    )}\n    {...props}\n  />\n));\nTabsTrigger.displayName = TabsPrimitive.Trigger.displayName;\n\nconst TabsContent = React.forwardRef<\n  React.ComponentRef<typeof TabsPrimitive.Content>,\n  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>\n>(({ className, ...props }, ref) => (\n  <TabsPrimitive.Content\n    ref={ref}\n    className={cn(\n      'jb-tabs-content mt-2 rounded-[4px] border p-3 text-xs font-normal outline-none',\n      className,\n    )}\n    {...props}\n  />\n));\nTabsContent.displayName = TabsPrimitive.Content.displayName;\n\nexport { Tabs, TabsList, TabsTrigger, TabsContent };"
+    },
+    {
+      "path": "registry/components/tabs/dynamic-tabs.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tabs/dynamic-tabs.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\n\nimport { cn } from '@/lib/utils';\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from './tabs';\n\nexport interface DynamicTabsItem {\n  value: string;\n  label: React.ReactNode;\n  content: React.ReactNode;\n  disabled?: boolean;\n  triggerClassName?: string;\n  contentClassName?: string;\n}\n\nexport interface DynamicTabsProps\n  extends Omit<\n    React.ComponentPropsWithoutRef<typeof Tabs>,\n    'children' | 'defaultValue' | 'value' | 'onValueChange'\n  > {\n  items: DynamicTabsItem[];\n  value?: string;\n  defaultValue?: string;\n  onValueChange?: (value: string) => void;\n  listClassName?: string;\n  triggerClassName?: string;\n  contentClassName?: string;\n  emptyContent?: React.ReactNode;\n}\n\nfunction DynamicTabs({\n  items,\n  className,\n  listClassName,\n  triggerClassName,\n  contentClassName,\n  value,\n  defaultValue,\n  onValueChange,\n  emptyContent = 'No tabs available.',\n  ...props\n}: DynamicTabsProps) {\n  const firstEnabledValue = React.useMemo(\n    () => items.find((item) => !item.disabled)?.value,\n    [items],\n  );\n\n  if (items.length === 0) {\n    return (\n      <div\n        data-slot=\"dynamic-tabs-empty\"\n        className={cn('text-muted-foreground text-sm', className)}\n      >\n        {emptyContent}\n      </div>\n    );\n  }\n\n  return (\n    <Tabs\n      className={className}\n      value={value}\n      defaultValue={defaultValue ?? firstEnabledValue}\n      onValueChange={onValueChange}\n      {...props}\n    >\n      <TabsList className={listClassName}>\n        {items.map((item) => (\n          <TabsTrigger\n            key={item.value}\n            value={item.value}\n            disabled={item.disabled}\n            className={cn(triggerClassName, item.triggerClassName)}\n          >\n            {item.label}\n          </TabsTrigger>\n        ))}\n      </TabsList>\n\n      {items.map((item) => (\n        <TabsContent\n          key={item.value}\n          value={item.value}\n          className={cn(contentClassName, item.contentClassName)}\n        >\n          {item.content}\n        </TabsContent>\n      ))}\n    </Tabs>\n  );\n}\n\nexport { DynamicTabs };"
+    },
+    {
+      "path": "registry/components/tabs/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/tabs/index.css",
+      "content": ".jb-tabs-list {\n  background: var(--jb-tabs-list-bg);\n}\n\n.jb-tabs-trigger {\n  color: var(--jb-tabs-trigger-text);\n}\n\n.jb-tabs-trigger:hover:not(:disabled) {\n  background: var(--jb-tabs-trigger-bg-hover);\n  color: var(--jb-tabs-trigger-text-hover);\n}\n\n.jb-tabs-trigger:focus-visible {\n  box-shadow: 0 0 0 2px var(--jb-tabs-trigger-ring);\n}\n\n.jb-tabs-trigger[data-state='active'] {\n  background: var(--jb-tabs-trigger-bg-active);\n  color: var(--jb-tabs-trigger-text-active);\n  box-shadow: var(--jb-tabs-trigger-shadow);\n}\n\n.jb-tabs-content {\n  border-color: var(--jb-tabs-content-border);\n  background: var(--jb-tabs-content-bg);\n  color: var(--jb-tabs-content-text);\n}\n\n.jb-tabs-content:focus-visible {\n  box-shadow: 0 0 0 2px var(--jb-tabs-trigger-ring);\n}"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tabs",
+      "navigation",
+      "jetbrains",
+      "ui",
+      "组件",
+      "标签页"
+    ],
+    "category": "navigation",
+    "docs": {
+      "description": "JetBrains UI 风格的标签页组件，包含 Tabs（Radix）和 DynamicTabs（数据驱动封装）。",
+      "features": [
+        "Tabs：直接使用 Radix API",
+        "DynamicTabs：通过 items 动态渲染",
+        "支持水平/垂直布局",
+        "支持受控与非受控模式",
+        "清晰的 active 状态反馈",
+        "基于 JetBrains 设计令牌",
+        "支持亮色/暗色主题"
+      ]
+    },
+    "demoProps": {
+      "Tabs": {
+        "orientation": {
+          "value": "horizontal",
+          "options": {
+            "horizontal": "horizontal",
+            "vertical": "vertical"
+          }
+        }
+      }
+    }
+  }
+}

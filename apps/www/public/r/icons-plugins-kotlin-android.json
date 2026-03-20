@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-kotlin-android",
+  "type": "registry:ui",
+  "title": "Android",
+  "description": "Android icon from Plugins Kotlin category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kotlin/android/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/android/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type AndroidProps = IconProps;\n\nconst AndroidLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M2.934 1.252a.5.5 0 0 0-.868.496l1.08 1.892A8 8 0 0 0 .224 8.118 8 8 0 0 0 0 10h16c0-.69-.088-1.36-.252-2a8 8 0 0 0-2.895-4.36l1.081-1.892a.5.5 0 0 0-.868-.496l-1.046 1.83A7.96 7.96 0 0 0 8 2a7.96 7.96 0 0 0-4.02 1.082zM11 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2M5 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2\"\n      fill=\"#55A76A\"\n    />\n  </svg>\n);\n\nconst AndroidDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M2.934 1.252a.5.5 0 0 0-.868.496l1.08 1.892A8 8 0 0 0 .224 8.118 8 8 0 0 0 0 10h16c0-.69-.088-1.36-.252-2a8 8 0 0 0-2.895-4.36l1.081-1.892a.5.5 0 0 0-.868-.496l-1.046 1.83A7.96 7.96 0 0 0 8 2a7.96 7.96 0 0 0-4.02 1.082zM11 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2M5 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2\"\n      fill=\"#57965C\"\n    />\n  </svg>\n);\n\nexport const Android: React.FC<AndroidProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? AndroidLight : AndroidDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "android",
+      "icon",
+      "plugins",
+      "kotlin",
+      "jetbrains"
+    ]
+  }
+}

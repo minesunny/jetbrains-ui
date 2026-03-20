@@ -1,0 +1,86 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type FreemakerProps = IconProps;
+
+const FreemakerLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.424 6.753a.566.566 0 0 0-.567-.567h-.511l.248-1.147A.61.61 0 1 0 9.4 4.782l-.304 1.41H7.563l.248-1.154a.61.61 0 1 0-1.193-.256l-.304 1.415h-.797a.566.566 0 1 0 0 1.133h.555L5.72 8.986h-.756a.564.564 0 0 0 0 1.127h.514l-.247 1.148a.61.61 0 1 0 1.193.257l.303-1.41H8.26l-.248 1.153a.61.61 0 1 0 1.193.257l.304-1.416h.8a.564.564 0 1 0 0-1.127h-.558l.352-1.656h.753a.566.566 0 0 0 .567-.566M8.504 8.98H6.968l.352-1.655h1.534zm-4.19-4.373a.6.6 0 0 1 .021.848L1.728 8.197l2.607 2.742a.6.6 0 0 1-.87.827l-3-3.155-.393-.414.393-.413 3-3.156a.6.6 0 0 1 .849-.021m7.373 7.18a.6.6 0 0 1-.022-.848l2.607-2.742-2.607-2.742a.6.6 0 0 1 .87-.827l3 3.156.393.413-.393.414-3 3.155a.6.6 0 0 1-.848.021"
+      fill="#3574F0"
+    />
+  </svg>
+);
+
+const FreemakerDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.424 6.753a.566.566 0 0 0-.567-.567h-.511l.248-1.147A.61.61 0 1 0 9.4 4.782l-.304 1.41H7.563l.248-1.154a.61.61 0 1 0-1.193-.256l-.304 1.415h-.797a.566.566 0 1 0 0 1.133h.555L5.72 8.986h-.756a.564.564 0 0 0 0 1.127h.514l-.247 1.148a.61.61 0 1 0 1.193.257l.303-1.41H8.26l-.248 1.153a.61.61 0 1 0 1.193.257l.304-1.416h.8a.564.564 0 1 0 0-1.127h-.558l.352-1.656h.753a.566.566 0 0 0 .567-.566M8.504 8.98H6.968l.352-1.655h1.534zm-4.19-4.373a.6.6 0 0 1 .021.848L1.728 8.197l2.607 2.742a.6.6 0 0 1-.87.827l-3-3.155-.393-.414.393-.413 3-3.156a.6.6 0 0 1 .849-.021m7.373 7.18a.6.6 0 0 1-.022-.848l2.607-2.742-2.607-2.742a.6.6 0 0 1 .87-.827l3 3.156.393.413-.393.414-3 3.155a.6.6 0 0 1-.848.021"
+      fill="#548AF7"
+    />
+  </svg>
+);
+
+export const Freemaker: FC<FreemakerProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? FreemakerLight : FreemakerDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

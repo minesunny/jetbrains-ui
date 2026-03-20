@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-code-with-me-cwm-verified",
+  "type": "registry:ui",
+  "title": "Cwm Verified",
+  "description": "Cwm Verified icon from Plugins Code With Me category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-verified/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-verified/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type CwmVerifiedProps = IconProps;\n\nconst CwmVerifiedLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M6.293 1.414a1 1 0 0 1 1.414 0l.5.5a2 2 0 0 0 1.414.586h.879a1 1 0 0 1 1 1v.879a2 2 0 0 0 .586 1.414l.611.611a1 1 0 0 1 .074 1.332l-.833 1.04a2 2 0 0 0-.438 1.25v.474a1 1 0 0 1-1 1h-.879a2 2 0 0 0-1.414.586l-.5.5a1 1 0 0 1-1.414 0l-.5-.5a2 2 0 0 0-1.414-.586H3.5a1 1 0 0 1-1-1v-.474a2 2 0 0 0-.438-1.249l-.833-1.04a1 1 0 0 1 .074-1.333l.611-.611A2 2 0 0 0 2.5 4.379V3.5a1 1 0 0 1 1-1h.879c.53 0 1.039-.211 1.414-.586z\"\n      fill=\"#F2FCF3\"\n      stroke=\"#208A3C\"\n    />\n    <path\n      d=\"m9.5 5.5-3 3L5 7\"\n      stroke=\"#208A3C\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nconst CwmVerifiedDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M6.293 1.414a1 1 0 0 1 1.414 0l.5.5a2 2 0 0 0 1.414.586h.879a1 1 0 0 1 1 1v.879a2 2 0 0 0 .586 1.414l.611.611a1 1 0 0 1 .074 1.332l-.833 1.04a2 2 0 0 0-.438 1.25v.474a1 1 0 0 1-1 1h-.879a2 2 0 0 0-1.414.586l-.5.5a1 1 0 0 1-1.414 0l-.5-.5a2 2 0 0 0-1.414-.586H3.5a1 1 0 0 1-1-1v-.474a2 2 0 0 0-.438-1.249l-.833-1.04a1 1 0 0 1 .074-1.333l.611-.611A2 2 0 0 0 2.5 4.379V3.5a1 1 0 0 1 1-1h.879c.53 0 1.039-.211 1.414-.586z\"\n      fill=\"#253627\"\n      stroke=\"#57965C\"\n    />\n    <path\n      d=\"m9.5 5.5-3 3L5 7\"\n      stroke=\"#57965C\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nexport const CwmVerified: React.FC<CwmVerifiedProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? CwmVerifiedLight : CwmVerifiedDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cwm-verified",
+      "icon",
+      "plugins",
+      "code-with-me",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-cdi-tool-window",
+  "type": "registry:ui",
+  "title": "Cdi Tool Window",
+  "description": "Cdi Tool Window icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/cdi-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/cdi-tool-window/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type CdiToolWindowProps = IconProps;\n\nconst CdiToolWindowLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.421 3.543c2.865 2.866 3.656 6.772.76 9.668-2.897 2.897-6.953 2.003-9.692-.736C.75 9.736-.065 5.634 2.77 2.8s6.787-2.122 9.652.743m-.708.709c1.312 1.312 2.09 2.806 2.253 4.227.143 1.253-.182 2.514-1.154 3.655L3.846 3.17c1.115-.943 2.372-1.273 3.63-1.138 1.429.153 2.93.915 4.237 2.22m-8.574-.374 8.964 8.964c-1.137.958-2.425 1.272-3.71 1.12-1.454-.173-2.954-.954-4.195-2.195-1.236-1.235-2-2.743-2.163-4.205-.144-1.29.174-2.574 1.104-3.684\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst CdiToolWindowDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.421 3.543c2.865 2.866 3.656 6.772.76 9.668-2.897 2.897-6.953 2.003-9.692-.736C.75 9.736-.065 5.634 2.77 2.8s6.787-2.122 9.652.743m-.708.709c1.312 1.312 2.09 2.806 2.253 4.227.143 1.253-.182 2.514-1.154 3.655L3.846 3.17c1.115-.943 2.372-1.273 3.63-1.138 1.429.153 2.93.915 4.237 2.22m-8.574-.374 8.964 8.964c-1.137.958-2.425 1.272-3.71 1.12-1.454-.173-2.954-.954-4.195-2.195-1.236-1.235-2-2.743-2.163-4.205-.144-1.29.174-2.574 1.104-3.684\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const CdiToolWindow: FC<CdiToolWindowProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? CdiToolWindowLight : CdiToolWindowDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cdi-tool-window",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

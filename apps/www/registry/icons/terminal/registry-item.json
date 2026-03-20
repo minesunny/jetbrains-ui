@@ -1,0 +1,45 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-terminal",
+  "type": "registry:ui",
+  "title": "Terminal Icons",
+  "description": "All 4 icons from the Terminal category.",
+  "registryDependencies": [
+    "icons-terminal-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/terminal/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/terminal/index.ts"
+    },
+    {
+      "path": "registry/icons/terminal/command/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/terminal/command/index.tsx"
+    },
+    {
+      "path": "registry/icons/terminal/file-format/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/terminal/file-format/index.tsx"
+    },
+    {
+      "path": "registry/icons/terminal/option/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/terminal/option/index.tsx"
+    },
+    {
+      "path": "registry/icons/terminal/other/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/terminal/other/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "terminal",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

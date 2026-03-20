@@ -1,0 +1,107 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type DiffWithClipboardProps = IconProps;
+
+const DiffWithClipboardLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
+      stroke="#3574F0"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M10.915 2H12a2 2 0 0 1 2 2v3.489a1.495 1.495 0 0 0-1-1.404V4a1 1 0 0 0-1-1h-1.085A1.5 1.5 0 0 1 9.5 4h-3a1.5 1.5 0 0 1-1.415-1H4a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1v1a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h1.085A1.5 1.5 0 0 1 6.5 1h3a1.5 1.5 0 0 1 1.415 1M6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"
+      fill="#6C707E"
+    />
+    <path
+      d="m7.879 10-.44.44a1.5 1.5 0 0 0-.354.56H5.5a.5.5 0 0 1 0-1zM9.879 8l-1 1H5.5a.5.5 0 0 1 0-1zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const DiffWithClipboardDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
+      stroke="#548AF7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M10.915 2H12a2 2 0 0 1 2 2v3.489a1.495 1.495 0 0 0-1-1.404V4a1 1 0 0 0-1-1h-1.085A1.5 1.5 0 0 1 9.5 4h-3a1.5 1.5 0 0 1-1.415-1H4a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1v1a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h1.085A1.5 1.5 0 0 1 6.5 1h3a1.5 1.5 0 0 1 1.415 1M6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"
+      fill="#CED0D6"
+    />
+    <path
+      d="m7.879 10-.44.44a1.5 1.5 0 0 0-.354.56H5.5a.5.5 0 0 1 0-1zM9.879 8l-1 1H5.5a.5.5 0 0 1 0-1zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const DiffWithClipboard: FC<DiffWithClipboardProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? DiffWithClipboardLight : DiffWithClipboardDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

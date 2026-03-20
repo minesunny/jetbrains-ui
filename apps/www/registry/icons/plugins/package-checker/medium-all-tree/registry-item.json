@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-package-checker-medium-all-tree",
+  "type": "registry:ui",
+  "title": "Medium All Tree",
+  "description": "Medium All Tree icon from Plugins Package Checker category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/package-checker/medium-all-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/medium-all-tree/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "medium-all-tree",
+      "icon",
+      "plugins",
+      "package-checker",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-windows-maximize-small",
+  "type": "registry:ui",
+  "title": "Maximize Small",
+  "description": "Maximize Small icon from General Windows category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/windows/maximize-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/maximize-small/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "maximize-small",
+      "icon",
+      "general",
+      "windows",
+      "jetbrains"
+    ]
+  }
+}

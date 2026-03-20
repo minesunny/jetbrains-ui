@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-rating-feedback-rating-focused-on",
+  "type": "registry:ui",
+  "title": "Feedback Rating Focused On",
+  "description": "Feedback Rating Focused On icon from General Rating category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/rating/feedback-rating-focused-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/rating/feedback-rating-focused-on/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type FeedbackRatingFocusedOnProps = IconProps;\n\nconst FeedbackRatingFocusedOnLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 32 32\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\">\n      <path\n        d=\"M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16\"\n        fill=\"#D4E2FF\"\n      />\n      <path\n        d=\"m16 3 3.439 8.267 8.925.716-6.8 5.825 2.078 8.71L16 21.85l-7.64 4.667 2.077-8.71-6.8-5.824 8.925-.716z\"\n        fill=\"#FFAF0F\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H32V32H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nconst FeedbackRatingFocusedOnDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 32 32\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\">\n      <g clipPath=\"url(#b)\">\n        <path\n          d=\"M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16\"\n          fill=\"#25324D\"\n        />\n        <path\n          d=\"m16 3 3.439 8.267 8.925.716-6.8 5.825 2.078 8.71L16 21.85l-7.64 4.667 2.077-8.71-6.8-5.824 8.925-.716z\"\n          fill=\"#F2C55C\"\n        />\n      </g>\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H32V32H0z\" />\n      </clipPath>\n      <clipPath id=\"b\">\n        <path fill=\"#fff\" d=\"M0 0H32V32H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const FeedbackRatingFocusedOn: FC<FeedbackRatingFocusedOnProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light'\n      ? FeedbackRatingFocusedOnLight\n      : FeedbackRatingFocusedOnDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "feedback-rating-focused-on",
+      "icon",
+      "general",
+      "rating",
+      "jetbrains"
+    ]
+  }
+}

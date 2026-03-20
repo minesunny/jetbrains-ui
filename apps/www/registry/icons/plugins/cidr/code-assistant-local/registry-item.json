@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-code-assistant-local",
+  "type": "registry:ui",
+  "title": "Code Assistant Local",
+  "description": "Code Assistant Local icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-local/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-local/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "code-assistant-local",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

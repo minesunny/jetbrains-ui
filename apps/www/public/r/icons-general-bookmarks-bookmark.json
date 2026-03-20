@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-bookmarks-bookmark",
+  "type": "registry:ui",
+  "title": "Bookmark",
+  "description": "Bookmark icon from General Bookmarks category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/bookmarks/bookmark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/bookmark/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type BookmarkProps = IconProps;\n\nconst BookmarkLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3 3.5a2 2 0 0 1 2-2h5.999a2 2 0 0 1 2 2v11.418a.5.5 0 0 1-.813.39L8 11.953 3.813 15.31a.5.5 0 0 1-.813-.39z\"\n      fill=\"#FFAF0F\"\n    />\n  </svg>\n);\n\nconst BookmarkDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3 3.5a2 2 0 0 1 2-2h5.999a2 2 0 0 1 2 2v11.418a.5.5 0 0 1-.813.39L8 11.953 3.813 15.31a.5.5 0 0 1-.813-.39z\"\n      fill=\"#F2C55C\"\n    />\n  </svg>\n);\n\nexport const Bookmark: FC<BookmarkProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? BookmarkLight : BookmarkDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "bookmark",
+      "icon",
+      "general",
+      "bookmarks",
+      "jetbrains"
+    ]
+  }
+}

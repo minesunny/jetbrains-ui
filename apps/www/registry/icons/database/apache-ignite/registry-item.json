@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-apache-ignite",
+  "type": "registry:ui",
+  "title": "Apache Ignite",
+  "description": "Apache Ignite icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/apache-ignite/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/apache-ignite/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "apache-ignite",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

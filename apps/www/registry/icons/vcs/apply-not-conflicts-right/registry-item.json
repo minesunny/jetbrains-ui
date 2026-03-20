@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-apply-not-conflicts-right",
+  "type": "registry:ui",
+  "title": "Apply Not Conflicts Right",
+  "description": "Apply Not Conflicts Right icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/apply-not-conflicts-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/apply-not-conflicts-right/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "apply-not-conflicts-right",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

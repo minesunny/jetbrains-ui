@@ -1,0 +1,695 @@
+[
+  {
+    "name": "autoscrollFromSource",
+    "componentName": "AutoscrollFromSource",
+    "fileName": "autoscroll-from-source",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "autoscrollToSource",
+    "componentName": "AutoscrollToSource",
+    "fileName": "autoscroll-to-source",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "chevronDownHovered",
+    "componentName": "ChevronDownHovered",
+    "fileName": "chevron-down-hovered",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "classHierarchy",
+    "componentName": "ClassHierarchy",
+    "fileName": "class-hierarchy",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "configFile",
+    "componentName": "ConfigFile",
+    "fileName": "config-file",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "add",
+    "componentName": "Add",
+    "fileName": "add",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "checkmark",
+    "componentName": "Checkmark",
+    "fileName": "checkmark",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "chevronDown",
+    "componentName": "ChevronDown",
+    "fileName": "chevron-down",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "chevronDownLarge",
+    "componentName": "ChevronDownLarge",
+    "fileName": "chevron-down-large",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "chevronLeft",
+    "componentName": "ChevronLeft",
+    "fileName": "chevron-left",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "chevronRight",
+    "componentName": "ChevronRight",
+    "fileName": "chevron-right",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "chevronUp",
+    "componentName": "ChevronUp",
+    "fileName": "chevron-up",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "chevronUpLarge",
+    "componentName": "ChevronUpLarge",
+    "fileName": "chevron-up-large",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "close",
+    "componentName": "Close",
+    "fileName": "close",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "closeSmall",
+    "componentName": "CloseSmall",
+    "fileName": "close-small",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "closeSmallHovered",
+    "componentName": "CloseSmallHovered",
+    "fileName": "close-small-hovered",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "collapseAll",
+    "componentName": "CollapseAll",
+    "fileName": "collapse-all",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "copy",
+    "componentName": "Copy",
+    "fileName": "copy",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "cut",
+    "componentName": "Cut",
+    "fileName": "cut",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "delete",
+    "componentName": "Delete",
+    "fileName": "delete",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "down",
+    "componentName": "Down",
+    "fileName": "down",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "download",
+    "componentName": "Download",
+    "fileName": "download",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "edit",
+    "componentName": "Edit",
+    "fileName": "edit",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "exit",
+    "componentName": "Exit",
+    "fileName": "exit",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "expandAll",
+    "componentName": "ExpandAll",
+    "fileName": "expand-all",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "export",
+    "componentName": "Export",
+    "fileName": "export",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "externalLink",
+    "componentName": "ExternalLink",
+    "fileName": "external-link",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "filter",
+    "componentName": "Filter",
+    "fileName": "filter",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "groups",
+    "componentName": "Groups",
+    "fileName": "groups",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "help",
+    "componentName": "Help",
+    "fileName": "help",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "hide",
+    "componentName": "Hide",
+    "fileName": "hide",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "history",
+    "componentName": "History",
+    "fileName": "history",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "import",
+    "componentName": "Import",
+    "fileName": "import",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "layout",
+    "componentName": "Layout",
+    "fileName": "layout",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "left",
+    "componentName": "Left",
+    "fileName": "left",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "listFiles",
+    "componentName": "ListFiles",
+    "fileName": "list-files",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "locate",
+    "componentName": "Locate",
+    "fileName": "locate",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "locked",
+    "componentName": "Locked",
+    "fileName": "locked",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "moreHorizontal",
+    "componentName": "MoreHorizontal",
+    "fileName": "more-horizontal",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "moreVertical",
+    "componentName": "MoreVertical",
+    "fileName": "more-vertical",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "moveDown",
+    "componentName": "MoveDown",
+    "fileName": "move-down",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "moveToBottomLeft",
+    "componentName": "MoveToBottomLeft",
+    "fileName": "move-to-bottom-left",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "moveToBottomRight",
+    "componentName": "MoveToBottomRight",
+    "fileName": "move-to-bottom-right",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "moveToLeftBottom",
+    "componentName": "MoveToLeftBottom",
+    "fileName": "move-to-left-bottom",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "moveToLeftTop",
+    "componentName": "MoveToLeftTop",
+    "fileName": "move-to-left-top",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "moveToRightBottom",
+    "componentName": "MoveToRightBottom",
+    "fileName": "move-to-right-bottom",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "moveToRightTop",
+    "componentName": "MoveToRightTop",
+    "fileName": "move-to-right-top",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "moveUp",
+    "componentName": "MoveUp",
+    "fileName": "move-up",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "open",
+    "componentName": "Open",
+    "fileName": "open",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "openInToolWindow",
+    "componentName": "OpenInToolWindow",
+    "fileName": "open-in-tool-window",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "openNewTab",
+    "componentName": "OpenNewTab",
+    "fileName": "open-new-tab",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "pagination",
+    "componentName": "Pagination",
+    "fileName": "pagination",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "paste",
+    "componentName": "Paste",
+    "fileName": "paste",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "previewHorizontally",
+    "componentName": "PreviewHorizontally",
+    "fileName": "preview-horizontally",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "previewVertically",
+    "componentName": "PreviewVertically",
+    "fileName": "preview-vertically",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "print",
+    "componentName": "Print",
+    "fileName": "print",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "projectStructure",
+    "componentName": "ProjectStructure",
+    "fileName": "project-structure",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "projectWideAnalysisOff",
+    "componentName": "ProjectWideAnalysisOff",
+    "fileName": "project-wide-analysis-off",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "projectWideAnalysisOn",
+    "componentName": "ProjectWideAnalysisOn",
+    "fileName": "project-wide-analysis-on",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "redo",
+    "componentName": "Redo",
+    "fileName": "redo",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "refresh",
+    "componentName": "Refresh",
+    "fileName": "refresh",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "remove",
+    "componentName": "Remove",
+    "fileName": "remove",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "right",
+    "componentName": "Right",
+    "fileName": "right",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "runAnything",
+    "componentName": "RunAnything",
+    "fileName": "run-anything",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "save",
+    "componentName": "Save",
+    "fileName": "save",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "scrollDown",
+    "componentName": "ScrollDown",
+    "fileName": "scroll-down",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "scrollUp",
+    "componentName": "ScrollUp",
+    "fileName": "scroll-up",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "search",
+    "componentName": "Search",
+    "fileName": "search",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "settings",
+    "componentName": "Settings",
+    "fileName": "settings",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "show",
+    "componentName": "Show",
+    "fileName": "show",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "showAsTree",
+    "componentName": "ShowAsTree",
+    "fileName": "show-as-tree",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "softWrap",
+    "componentName": "SoftWrap",
+    "fileName": "soft-wrap",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "sortBy",
+    "componentName": "SortBy",
+    "fileName": "sort-by",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "splitHorizontally",
+    "componentName": "SplitHorizontally",
+    "fileName": "split-horizontally",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "splitVertically",
+    "componentName": "SplitVertically",
+    "fileName": "split-vertically",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "undo",
+    "componentName": "Undo",
+    "fileName": "undo",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "unlocked",
+    "componentName": "Unlocked",
+    "fileName": "unlocked",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "up",
+    "componentName": "Up",
+    "fileName": "up",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "upload",
+    "componentName": "Upload",
+    "fileName": "upload",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "vcs",
+    "componentName": "Vcs",
+    "fileName": "vcs",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "graphLayout",
+    "componentName": "GraphLayout",
+    "fileName": "graph-layout",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "ideUpdate",
+    "componentName": "IdeUpdate",
+    "fileName": "ide-update",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "keyboard",
+    "componentName": "Keyboard",
+    "fileName": "keyboard",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "minimap",
+    "componentName": "Minimap",
+    "fileName": "minimap",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "pin",
+    "componentName": "Pin",
+    "fileName": "pin",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "pluginUpdate",
+    "componentName": "PluginUpdate",
+    "fileName": "plugin-update",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "projectConfigurable",
+    "componentName": "ProjectConfigurable",
+    "fileName": "project-configurable",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "questionMark",
+    "componentName": "QuestionMark",
+    "fileName": "question-mark",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "readerMode",
+    "componentName": "ReaderMode",
+    "fileName": "reader-mode",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "reformatCode",
+    "componentName": "ReformatCode",
+    "fileName": "reformat-code",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "separatorHorizontal",
+    "componentName": "SeparatorHorizontal",
+    "fileName": "separator-horizontal",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "settingSync",
+    "componentName": "SettingSync",
+    "fileName": "setting-sync",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "sortAlphabetically",
+    "componentName": "SortAlphabetically",
+    "fileName": "sort-alphabetically",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "sortByDuration",
+    "componentName": "SortByDuration",
+    "fileName": "sort-by-duration",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "sortByType",
+    "componentName": "SortByType",
+    "fileName": "sort-by-type",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "sortByUsage",
+    "componentName": "SortByUsage",
+    "fileName": "sort-by-usage",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "sortByVisibility",
+    "componentName": "SortByVisibility",
+    "fileName": "sort-by-visibility",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "subtypes",
+    "componentName": "Subtypes",
+    "fileName": "subtypes",
+    "hasLight": true,
+    "hasDark": true
+  },
+  {
+    "name": "supertypes",
+    "componentName": "Supertypes",
+    "fileName": "supertypes",
+    "hasLight": true,
+    "hasDark": true
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-module-group",
+  "type": "registry:ui",
+  "title": "Module Group",
+  "description": "Module Group icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/module-group/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/module-group/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "module-group",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+---
+title: Alert
+description: Alert dialog component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-alert" />
+
+## Overview
+
+An alert informs users about the status of user or system initiated operations.
+This component is built with Radix `AlertDialog` primitives, and built-in status icons are controlled by the `type` prop.
+
+## Installation
+
+<ComponentInstallation name="alert" />
+
+## Usage
+
+```tsx
+import {
+  Alert,
+  AlertAction,
+  AlertActions,
+  AlertCancel,
+  AlertContent,
+  AlertDescription,
+  AlertFooter,
+  AlertHeader,
+  AlertTitle,
+  AlertTrigger,
+} from '@/components/jetbrains-ui/alert';
+import { Button } from '@/components/jetbrains-ui/buttons';
+
+<Alert>
+  <AlertTrigger asChild>
+    <Button variant="secondary">Open Alert</Button>
+  </AlertTrigger>
+  <AlertContent type="warning" size="auto" help check>
+    <AlertHeader>
+      <AlertTitle>Title</AlertTitle>
+      <AlertDescription>Body text</AlertDescription>
+    </AlertHeader>
+
+    <AlertFooter>
+      <AlertActions>
+        <AlertCancel asChild>
+          <Button variant="secondary">Cancel</Button>
+        </AlertCancel>
+        <AlertAction asChild>
+          <Button>Review</Button>
+        </AlertAction>
+      </AlertActions>
+    </AlertFooter>
+  </AlertContent>
+</Alert>;
+```
+
+## Type Switching
+
+- Use `type` on `AlertContent` to switch built-in icon and semantic style:
+  `info | error | warning | question`
+- Use `help` on `AlertContent` (or demo props) to control the `QuestionMark` icon in `AlertFooter`.
+
+## Sizing Rules
+
+- Dialog default width follows Figma content guidance: `370px`.
+- Use `size="default"` for fixed `370px` width.
+- Use `size="wide"` for fixed `420px` width.
+- Use `size="auto"` (default) for adaptive width (`w-fit` + `min-width: 370px`), and let long text or wider button groups expand the dialog naturally.
+- Internal layout follows Figma paddings: `top 20 / right 20 / bottom 66 / left 60`.
+- Height is content-driven: base content is about `150px`, and optional `check/help` content increases height as needed.
+- Action and cancel buttons follow Button default size: `72x28`.
+
+## API Reference
+
+### Alert
+
+<TypeTable
+  type={{
+    '...props': {
+      description: 'Props passed to Radix AlertDialog Root',
+      type: 'React.ComponentProps<typeof AlertDialog.Root>',
+      required: false,
+    },
+  }}
+/>
+
+### AlertContent
+
+<TypeTable
+  type={{
+    type: {
+      description: 'Alert semantic type with built-in icon',
+      type: '"info" | "error" | "warning" | "question"',
+      required: false,
+      default: '"info"',
+    },
+    size: {
+      description: 'Dialog width mode',
+      type: '"default" | "wide" | "auto"',
+      required: false,
+      default: '"auto"',
+    },
+    help: {
+      description: 'Show help icon in AlertFooter',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    check: {
+      description: 'Show "Do not ask again" checkbox in AlertHeader',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: 'Props passed to Radix AlertDialog Content',
+      type: 'React.ComponentProps<typeof AlertDialog.Content>',
+      required: false,
+    },
+  }}
+/>
+
+### AlertCancel
+
+<TypeTable
+  type={{
+    asChild: {
+      description: 'Render custom element, usually Button',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: 'Props passed to Radix AlertDialog Cancel',
+      type: 'React.ComponentProps<typeof AlertDialog.Cancel>',
+      required: false,
+    },
+  }}
+/>
+
+### AlertAction
+
+<TypeTable
+  type={{
+    asChild: {
+      description: 'Render custom element, usually primary Button',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: 'Props passed to Radix AlertDialog Action',
+      type: 'React.ComponentProps<typeof AlertDialog.Action>',
+      required: false,
+    },
+  }}
+/>

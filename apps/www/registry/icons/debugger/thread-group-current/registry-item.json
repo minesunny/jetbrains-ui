@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-debugger-thread-group-current",
+  "type": "registry:ui",
+  "title": "Thread Group Current",
+  "description": "Thread Group Current icon from Debugger category.",
+  "registryDependencies": [
+    "icons-debugger-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/debugger/thread-group-current/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/debugger/thread-group-current/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "thread-group-current",
+      "icon",
+      "debugger",
+      "jetbrains"
+    ]
+  }
+}

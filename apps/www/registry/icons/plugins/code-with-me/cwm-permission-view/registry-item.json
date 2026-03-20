@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-code-with-me-cwm-permission-view",
+  "type": "registry:ui",
+  "title": "Cwm Permission View",
+  "description": "Cwm Permission View icon from Plugins Code With Me category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-permission-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permission-view/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cwm-permission-view",
+      "icon",
+      "plugins",
+      "code-with-me",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs",
+  "type": "registry:ui",
+  "title": "Tabs",
+  "description": "JetBrains UI 风格的标签页组件，基于 Radix UI Tabs 构建",
+  "dependencies": ["@radix-ui/react-tabs"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/components/tabs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tabs/index.tsx"
+    },
+    {
+      "path": "registry/components/tabs/tabs.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tabs/tabs.tsx"
+    },
+    {
+      "path": "registry/components/tabs/dynamic-tabs.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tabs/dynamic-tabs.tsx"
+    },
+    {
+      "path": "registry/components/tabs/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/tabs/index.css"
+    }
+  ],
+  "meta": {
+    "keywords": ["tabs", "navigation", "jetbrains", "ui", "组件", "标签页"],
+    "category": "navigation",
+    "docs": {
+      "description": "JetBrains UI 风格的标签页组件，包含 Tabs（Radix）和 DynamicTabs（数据驱动封装）。",
+      "features": [
+        "Tabs：直接使用 Radix API",
+        "DynamicTabs：通过 items 动态渲染",
+        "支持水平/垂直布局",
+        "支持受控与非受控模式",
+        "清晰的 active 状态反馈",
+        "基于 JetBrains 设计令牌",
+        "支持亮色/暗色主题"
+      ]
+    },
+    "demoProps": {
+      "Tabs": {
+        "orientation": {
+          "value": "horizontal",
+          "options": {
+            "horizontal": "horizontal",
+            "vertical": "vertical"
+          }
+        }
+      }
+    }
+  }
+}

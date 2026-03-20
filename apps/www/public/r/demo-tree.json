@@ -1,0 +1,19 @@
+{
+  "name": "demo-tree",
+  "type": "registry:ui",
+  "title": "Tree Demo",
+  "description": "Demo showing tree component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/tree"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/tree.tsx",
+      "content": "import { Tree, type TreeItemData } from '@/components/jetbrains-ui/tree';\n\nconst items: TreeItemData[] = [\n  {\n    id: 'src',\n    label: 'src',\n    children: [\n      {\n        id: 'src-components',\n        label: 'components',\n        children: [\n          { id: 'src-components-tree', label: 'tree.tsx' },\n          { id: 'src-components-context-menu', label: 'context-menu.tsx' },\n        ],\n      },\n      {\n        id: 'src-styles',\n        label: 'styles',\n        children: [{ id: 'src-styles-tree', label: 'tree.css' }],\n      },\n    ],\n  },\n  {\n    id: 'docs',\n    label: 'docs',\n    children: [\n      { id: 'docs-tree', label: 'tree.mdx' },\n      { id: 'docs-context-menu', label: 'context-menu.mdx' },\n    ],\n  },\n  {\n    id: 'package-json',\n    label: 'package.json',\n  },\n];\n\nexport default function TreeDemo() {\n  return (\n    <div className=\"w-full max-w-[360px] rounded-md border border-border p-2\">\n      <Tree\n        items={items}\n        defaultExpandedIds={['src', 'src-components', 'docs']}\n        defaultSelectedId=\"src-components-tree\"\n      />\n    </div>\n  );\n}"
+    }
+  ],
+  "meta": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-ruby-run-with-type-tracker",
+  "type": "registry:ui",
+  "title": "Run With Type Tracker",
+  "description": "Run With Type Tracker icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/run-with-type-tracker/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/run-with-type-tracker/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type RunWithTypeTrackerProps = IconProps;\n\nconst RunWithTypeTrackerLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\">\n      <path\n        d=\"M7.603 15.478.251 5.828a.5.5 0 0 1 .024-.636l3.428-3.856A1 1 0 0 1 4.45 1h7.102a1 1 0 0 1 .748.336l3.428 3.856a.5.5 0 0 1 .024.635l-2.07 2.716-1.858-1.16C10.159 6.343 8 7.541 8 9.504v6.171a.5.5 0 0 1-.397-.197\"\n        fill=\"#FFF7F7\"\n      />\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M7.603 15.478.251 5.828a.5.5 0 0 1 .024-.636l3.428-3.856A1 1 0 0 1 4.45 1h7.102a1 1 0 0 1 .748.336l3.428 3.856a.5.5 0 0 1 .024.635l-2.07 2.716-.851-.531L14.363 6h-2.996l-.334 1.058a2.45 2.45 0 0 0-1.048-.003L10.32 6H5.683L8 13.336v2.339a.5.5 0 0 1-.397-.197M11.553 2l2.666 3H11.31l-1.5-3zM7.31 2h1.382l1.5 3H5.81zM4.45 2h1.742l-1.5 3H1.784zm2.305 10.714L1.639 6h2.996z\"\n        fill=\"#DB3B4B\"\n      />\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M9 9.502a1.5 1.5 0 0 1 2.294-1.272l4.002 2.497a1.5 1.5 0 0 1 0 2.546l-4.002 2.497A1.5 1.5 0 0 1 9 14.498zm1.765-.424a.5.5 0 0 0-.765.424v4.996a.5.5 0 0 0 .765.424l4.002-2.498a.5.5 0 0 0 0-.848z\"\n        fill=\"#208A3C\"\n      />\n      <path\n        d=\"M10 9.502a.5.5 0 0 1 .765-.424l4.002 2.498a.5.5 0 0 1 0 .848l-4.002 2.498a.5.5 0 0 1-.765-.424z\"\n        fill=\"#F2FCF3\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nconst RunWithTypeTrackerDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\">\n      <g clipPath=\"url(#b)\">\n        <path\n          d=\"M7.603 15.478.251 5.828a.5.5 0 0 1 .024-.636l3.428-3.856A1 1 0 0 1 4.45 1h7.102a1 1 0 0 1 .748.336l3.428 3.856a.5.5 0 0 1 .024.635l-2.07 2.716-1.858-1.16C10.159 6.343 8 7.541 8 9.504v6.171a.5.5 0 0 1-.397-.197\"\n          fill=\"#402929\"\n        />\n        <path\n          fillRule=\"evenodd\"\n          clipRule=\"evenodd\"\n          d=\"M7.603 15.478.251 5.828a.5.5 0 0 1 .024-.636l3.428-3.856A1 1 0 0 1 4.45 1h7.102a1 1 0 0 1 .748.336l3.428 3.856a.5.5 0 0 1 .024.635l-2.07 2.716-.851-.531L14.363 6h-2.996l-.334 1.058a2.45 2.45 0 0 0-1.048-.003L10.32 6H5.683L8 13.336v2.339a.5.5 0 0 1-.397-.197M11.553 2l2.666 3H11.31l-1.5-3zM7.31 2h1.382l1.5 3H5.81zM4.45 2h1.742l-1.5 3H1.784zm2.305 10.714L1.639 6h2.996z\"\n          fill=\"#DB5C5C\"\n        />\n        <path\n          fillRule=\"evenodd\"\n          clipRule=\"evenodd\"\n          d=\"M9 9.502a1.5 1.5 0 0 1 2.294-1.272l4.002 2.497a1.5 1.5 0 0 1 0 2.546l-4.002 2.497A1.5 1.5 0 0 1 9 14.498zm1.765-.424a.5.5 0 0 0-.765.424v4.996a.5.5 0 0 0 .765.424l4.002-2.498a.5.5 0 0 0 0-.848z\"\n          fill=\"#57965C\"\n        />\n        <path\n          d=\"M10 9.502a.5.5 0 0 1 .765-.424l4.002 2.498a.5.5 0 0 1 0 .848l-4.002 2.498a.5.5 0 0 1-.765-.424z\"\n          fill=\"#253627\"\n        />\n      </g>\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n      <clipPath id=\"b\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const RunWithTypeTracker: React.FC<RunWithTypeTrackerProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? RunWithTypeTrackerLight : RunWithTypeTrackerDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run-with-type-tracker",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

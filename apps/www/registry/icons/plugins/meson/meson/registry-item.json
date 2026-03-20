@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-meson-meson",
+  "type": "registry:ui",
+  "title": "Meson",
+  "description": "Meson icon from Plugins Meson category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/meson/meson/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/meson/meson/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "meson",
+      "icon",
+      "plugins",
+      "meson",
+      "jetbrains"
+    ]
+  }
+}

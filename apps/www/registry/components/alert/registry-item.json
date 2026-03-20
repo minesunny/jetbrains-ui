@@ -1,0 +1,44 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert",
+  "type": "registry:ui",
+  "title": "Alert",
+  "description": "JetBrains-style alert dialog built on Radix AlertDialog with built-in status icons.",
+  "dependencies": ["radix-ui"],
+  "registryDependencies": [
+    "utils",
+    "buttons",
+    "tooltip",
+    "@jetbrains-ui/icons-general-status-information-dialog",
+    "@jetbrains-ui/icons-general-status-error-dialog",
+    "@jetbrains-ui/icons-general-status-warning-dialog",
+    "@jetbrains-ui/icons-general-status-question-dialog"
+  ],
+  "files": [
+    {
+      "path": "registry/components/alert/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/alert/index.tsx"
+    },
+    {
+      "path": "registry/components/alert/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/alert/index.css"
+    }
+  ],
+  "meta": {
+    "keywords": ["alert", "dialog", "jetbrains", "ui", "component"],
+    "category": "overlay",
+    "docs": {
+      "description": "JetBrains-style alert dialog component for confirmation and critical actions.",
+      "features": [
+        "Built on Radix AlertDialog",
+        "Built-in status icons",
+        "Alert types: info/error/warning/question",
+        "Token-driven light/dark theme support",
+        "Keyboard and screen-reader accessible",
+        "Composable trigger/content/action API"
+      ]
+    }
+  }
+}

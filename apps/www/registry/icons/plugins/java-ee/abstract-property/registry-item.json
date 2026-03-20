@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-java-ee-abstract-property",
+  "type": "registry:ui",
+  "title": "Abstract Property",
+  "description": "Abstract Property icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/abstract-property/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/abstract-property/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "abstract-property",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-scala-play2",
+  "type": "registry:ui",
+  "title": "Play2",
+  "description": "Play2 icon from Plugins Scala category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/play2/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/play2/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type Play2Props = IconProps;\n\nconst Play2Light: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"m4.39 1.742.359-.357a1.344 1.344 0 0 1 1.954.075l4.975 5.76a1.32 1.32 0 0 1-.012 1.74l-4.957 5.582c-.51.57-1.398.6-1.943.058l-.359-.357a1.32 1.32 0 0 1-.081-1.786L7.294 8.92a1.32 1.32 0 0 0 .018-1.677L4.297 3.5a1.303 1.303 0 0 1 .093-1.757\"\n      fill=\"#92D13D\"\n    />\n    <path\n      d=\"M7.289 8.931 4.32 12.468a1.32 1.32 0 0 0 .082 1.786l.359.357a1.34 1.34 0 0 0 1.942-.057l1.073-1.21a5.8 5.8 0 0 0 .632-2.644 5.84 5.84 0 0 0-.94-3.18c.22.45.163 1.008-.18 1.411\"\n      fill=\"#49691F\"\n    />\n  </svg>\n);\n\nconst Play2Dark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"m4.39 1.742.359-.357a1.344 1.344 0 0 1 1.954.075l4.975 5.76a1.32 1.32 0 0 1-.012 1.74l-4.957 5.582c-.51.57-1.398.6-1.943.058l-.359-.357a1.32 1.32 0 0 1-.081-1.786L7.294 8.92a1.32 1.32 0 0 0 .018-1.677L4.297 3.5a1.303 1.303 0 0 1 .093-1.757\"\n      fill=\"#92D13D\"\n    />\n    <path\n      d=\"M7.289 8.931 4.32 12.468a1.32 1.32 0 0 0 .082 1.786l.359.357a1.34 1.34 0 0 0 1.942-.057l1.073-1.21a5.8 5.8 0 0 0 .632-2.644 5.84 5.84 0 0 0-.94-3.18c.22.45.163 1.008-.18 1.411\"\n      fill=\"#49691F\"\n    />\n  </svg>\n);\n\nexport const Play2: React.FC<Play2Props> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? Play2Light : Play2Dark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "play2",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

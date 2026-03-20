@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-virtual-column",
+  "type": "registry:ui",
+  "title": "Virtual Column",
+  "description": "Virtual Column icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/virtual-column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/virtual-column/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "virtual-column",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

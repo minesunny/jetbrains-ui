@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-source-root",
+  "type": "registry:ui",
+  "title": "Source Root",
+  "description": "Source Root icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/source-root/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/source-root/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "source-root",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

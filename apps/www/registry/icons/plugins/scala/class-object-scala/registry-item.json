@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-scala-class-object-scala",
+  "type": "registry:ui",
+  "title": "Class Object Scala",
+  "description": "Class Object Scala icon from Plugins Scala category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/class-object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-object-scala/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "class-object-scala",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

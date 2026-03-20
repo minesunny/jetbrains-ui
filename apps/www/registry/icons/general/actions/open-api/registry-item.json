@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-actions-open-api",
+  "type": "registry:ui",
+  "title": "Open Api",
+  "description": "Open Api icon from General Actions category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/open-api/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/open-api/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "open-api",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

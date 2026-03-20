@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-dart-dart",
+  "type": "registry:ui",
+  "title": "Dart",
+  "description": "Dart icon from Plugins Dart category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/dart/dart/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/dart/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type DartProps = IconProps;\n\nconst DartLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m3.38 10.272-.007-6.898-2.182 4.552c-.255.543-.363 1.207.382 1.95l2.138 2.139c-.379-.38-.327-.998-.332-1.744m9.146-6.05-.511-.511c-.38-.38-.997-.327-1.743-.332l-6.899-.005L12 12h3V6.697z\"\n      fill=\"#01579B\"\n    />\n    <path\n      d=\"m3.375 3.373 6.897.006h.258c.63-.001 1.152-.003 1.486.332L9.878 1.573C9.134.829 8.47.936 7.926 1.191zM12.001 12 3.375 3.373l.006 6.898v.257c-.001.631-.002 1.152.332 1.486l.51.512L6.697 15H12z\"\n      fill=\"#29B6F6\"\n    />\n  </svg>\n);\n\nconst DartDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m3.38 10.272-.007-6.898-2.182 4.552c-.255.543-.363 1.207.382 1.95l2.138 2.139c-.379-.38-.327-.998-.332-1.744m9.146-6.05-.511-.511c-.38-.38-.997-.327-1.743-.332l-6.899-.005L12 12h3V6.697z\"\n      fill=\"#01579B\"\n    />\n    <path\n      d=\"m3.375 3.373 6.897.006h.258c.63-.001 1.152-.003 1.486.332L9.878 1.573C9.134.829 8.47.936 7.926 1.191zM12.001 12 3.375 3.373l.006 6.898v.257c-.001.631-.002 1.152.332 1.486l.51.512L6.697 15H12z\"\n      fill=\"#29B6F6\"\n    />\n  </svg>\n);\n\nexport const Dart: React.FC<DartProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? DartLight : DartDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dart",
+      "icon",
+      "plugins",
+      "dart",
+      "jetbrains"
+    ]
+  }
+}

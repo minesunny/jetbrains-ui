@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-dart-observatory",
+  "type": "registry:ui",
+  "title": "Observatory",
+  "description": "Observatory icon from Plugins Dart category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/dart/observatory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dart/observatory/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "observatory",
+      "icon",
+      "plugins",
+      "dart",
+      "jetbrains"
+    ]
+  }
+}

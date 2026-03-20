@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-scala-scala-sdk",
+  "type": "registry:ui",
+  "title": "Scala Sdk",
+  "description": "Scala Sdk icon from Plugins Scala category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/scala-sdk/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-sdk/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "scala-sdk",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

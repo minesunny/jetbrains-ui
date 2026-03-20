@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-implemented-method",
+  "type": "registry:ui",
+  "title": "Implemented Method",
+  "description": "Implemented Method icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/implemented-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/implemented-method/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "implemented-method",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

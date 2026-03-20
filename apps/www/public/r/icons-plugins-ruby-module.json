@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-ruby-module",
+  "type": "registry:ui",
+  "title": "Module",
+  "description": "Module icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/module/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ModuleProps = IconProps;\n\nconst ModuleLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"1.5\"\n      y=\"1.5\"\n      width=\"13\"\n      height=\"13\"\n      rx=\"6.5\"\n      fill=\"#F2FCF3\"\n      stroke=\"#208A3C\"\n    />\n    <path\n      d=\"M4.258 4.5h1.29l2.34 5.355.125.37.12-.37L10.428 4.5h1.31v7h-1.01V6.225l.005-.195-2.335 5.47h-.795L5.258 6.065l.005.16V11.5H4.258z\"\n      fill=\"#208A3C\"\n    />\n  </svg>\n);\n\nconst ModuleDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"1.5\"\n      y=\"1.5\"\n      width=\"13\"\n      height=\"13\"\n      rx=\"6.5\"\n      fill=\"#253627\"\n      stroke=\"#57965C\"\n    />\n    <path\n      d=\"M4.258 4.5h1.29l2.34 5.355.125.37.12-.37L10.428 4.5h1.31v7h-1.01V6.225l.005-.195-2.335 5.47h-.795L5.258 6.065l.005.16V11.5H4.258z\"\n      fill=\"#57965C\"\n    />\n  </svg>\n);\n\nexport const Module: React.FC<ModuleProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ModuleLight : ModuleDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "module",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

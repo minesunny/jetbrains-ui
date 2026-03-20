@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-freeze-all",
+  "type": "registry:ui",
+  "title": "Freeze All",
+  "description": "Freeze All icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/freeze-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/freeze-all/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type FreezeAllProps = IconProps;\n\nconst FreezeAllLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M8 1.5a.5.5 0 1 0-1 0v1.066l-.722-.482a.5.5 0 0 0-.555.832l1.278.852v3.366L4.085 5.451l-.099-1.532a.5.5 0 1 0-.998.064l.056.867-.923-.533a.5.5 0 1 0-.5.866l.923.533-.778.385a.5.5 0 0 0 .443.896l1.376-.68L6.5 8 3.585 9.683l-1.376-.68a.5.5 0 1 0-.443.896l.778.385-.923.533a.5.5 0 1 0 .5.866l.923-.533-.056.867a.5.5 0 0 0 .998.064l.099-1.532 2.916-1.683v3.366l-1.278.852a.5.5 0 0 0 .555.832l.723-.482V14.5a.5.5 0 0 0 1 0zM11 1.5a.5.5 0 1 0-1 0v13a.5.5 0 0 0 1 0zM14 1.5a.5.5 0 1 0-1 0v13a.5.5 0 0 0 1 0z\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst FreezeAllDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\" fill=\"#548AF7\">\n      <path d=\"M8 1.5a.5.5 0 1 0-1 0v1.066l-.722-.482a.5.5 0 0 0-.555.832l1.278.852v3.366L4.085 5.451l-.099-1.532a.5.5 0 1 0-.998.064l.056.867-.923-.533a.5.5 0 1 0-.5.866l.923.533-.778.385a.5.5 0 0 0 .443.896l1.376-.68L6.5 8 3.585 9.683l-1.376-.68a.5.5 0 1 0-.443.896l.778.385-.923.533a.5.5 0 1 0 .5.866l.923-.533-.056.867a.5.5 0 0 0 .998.064l.099-1.532 2.916-1.683v3.366l-1.278.852a.5.5 0 0 0 .555.832l.723-.482V14.5a.5.5 0 0 0 1 0zM11 1.5a.5.5 0 1 0-1 0v13a.5.5 0 0 0 1 0zM14 1.5a.5.5 0 1 0-1 0v13a.5.5 0 0 0 1 0z\" />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const FreezeAll: React.FC<FreezeAllProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? FreezeAllLight : FreezeAllDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "freeze-all",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-collapse-node",
+  "type": "registry:ui",
+  "title": "Collapse Node",
+  "description": "Collapse Node icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/collapse-node/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/collapse-node/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "collapse-node",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-package-json",
+  "type": "registry:ui",
+  "title": "Package Json",
+  "description": "Package Json icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/package-json/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/package-json/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "package-json",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

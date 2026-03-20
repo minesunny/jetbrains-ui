@@ -1,0 +1,20 @@
+{
+  "name": "demo-label",
+  "type": "registry:ui",
+  "title": "Label Demo",
+  "description": "Demo showing label component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/label",
+    "@jetbrains-ui/input"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/label/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/label.tsx",
+      "content": "import { Label } from '@/components/jetbrains-ui/label';\nimport { Input } from '@/components/jetbrains-ui/input';\n\nexport default function LabelDemo() {\n  return (\n    <div className=\"grid w-[280px] gap-2\">\n      <Label htmlFor=\"email\">Email</Label>\n      <Input id=\"email\" type=\"email\" placeholder=\"name@example.com\" />\n    </div>\n  );\n}"
+    }
+  ],
+  "meta": {}
+}

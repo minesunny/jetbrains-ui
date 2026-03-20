@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-toml",
+  "type": "registry:ui",
+  "title": "Plugins Toml Icons",
+  "description": "All 1 icons from the Plugins Toml category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/toml/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/toml/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/toml/toml/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/toml/toml/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "plugins",
+      "toml",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

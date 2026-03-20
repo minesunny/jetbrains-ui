@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-spring-spring-repository-run-mongo",
+  "type": "registry:ui",
+  "title": "Spring Repository Run Mongo",
+  "description": "Spring Repository Run Mongo icon from Plugins Spring category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/spring-repository-run-mongo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-repository-run-mongo/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SpringRepositoryRunMongoProps = IconProps;\n\nconst SpringRepositoryRunMongoLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M6.95 8.327a.2.2 0 0 1 0 .346l-3.15 1.82a.2.2 0 0 1-.3-.175V6.682a.2.2 0 0 1 .3-.174z\"\n      stroke=\"#6C707E\"\n    />\n    <path\n      d=\"M13.463 9c0 3.125-2.133 3.75-2.133 3.75s-.328-.312-.328-1.25V4s2.46 1.875 2.46 5\"\n      fill=\"#12924F\"\n    />\n    <path\n      d=\"M8.541 9c0 3.125 2.133 3.75 2.133 3.75s.328-.312.328-1.25V4S8.541 5.875 8.541 9\"\n      fill=\"#10AA50\"\n    />\n    <path\n      d=\"m10.674 12.75.164 1.25h.328l.164-1.25s-.328-.312-.328-1.25c0 .938-.328 1.25-.328 1.25\"\n      fill=\"#B8C4C2\"\n    />\n    <path\n      d=\"M0 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3.51a7.9 7.9 0 0 0-1-1.827V3a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v1h8.56a8.5 8.5 0 0 0-.776 1H1v6a1 1 0 0 0 1 1h6.31a4.3 4.3 0 0 0 .853 1H2a2 2 0 0 1-2-2z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst SpringRepositoryRunMongoDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M6.95 8.327a.2.2 0 0 1 0 .346l-3.15 1.82a.2.2 0 0 1-.3-.175V6.682a.2.2 0 0 1 .3-.174z\"\n      stroke=\"#CED0D6\"\n    />\n    <path\n      d=\"M13.463 9c0 3.125-2.133 3.75-2.133 3.75s-.328-.312-.328-1.25V4s2.46 1.875 2.46 5\"\n      fill=\"#12924F\"\n    />\n    <path\n      d=\"M8.541 9c0 3.125 2.133 3.75 2.133 3.75s.328-.312.328-1.25V4S8.541 5.875 8.541 9\"\n      fill=\"#10AA50\"\n    />\n    <path\n      d=\"m10.674 12.75.164 1.25h.328l.164-1.25s-.328-.312-.328-1.25c0 .938-.328 1.25-.328 1.25\"\n      fill=\"#B8C4C2\"\n    />\n    <path\n      d=\"M0 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3.51a7.9 7.9 0 0 0-1-1.827V3a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v1h8.56a8.5 8.5 0 0 0-.776 1H1v6a1 1 0 0 0 1 1h6.31a4.3 4.3 0 0 0 .853 1H2a2 2 0 0 1-2-2z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const SpringRepositoryRunMongo: React.FC<\n  SpringRepositoryRunMongoProps\n> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light'\n      ? SpringRepositoryRunMongoLight\n      : SpringRepositoryRunMongoDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "spring-repository-run-mongo",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-outgoing-push",
+  "type": "registry:ui",
+  "title": "Outgoing Push",
+  "description": "Outgoing Push icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/outgoing-push/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/outgoing-push/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "outgoing-push",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

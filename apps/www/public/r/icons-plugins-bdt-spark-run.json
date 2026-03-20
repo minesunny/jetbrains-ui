@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-bdt-spark-run",
+  "type": "registry:ui",
+  "title": "Spark Run",
+  "description": "Spark Run icon from Plugins Bdt category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/bdt/spark-run/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/spark-run/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SparkRunProps = IconProps;\n\nconst SparkRunLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7 7.502A1.5 1.5 0 0 1 9.294 6.23l4.002 2.497a1.5 1.5 0 0 1 0 2.546L9.294 13.77A1.5 1.5 0 0 1 7 12.498zm1.765-.424A.5.5 0 0 0 8 7.502v4.996a.5.5 0 0 0 .765.424l4.002-2.498a.5.5 0 0 0 0-.848z\"\n      fill=\"#208A3C\"\n    />\n    <path\n      d=\"M8 7.502a.5.5 0 0 1 .765-.424l4.002 2.498a.5.5 0 0 1 0 .848l-4.002 2.498A.5.5 0 0 1 8 12.498z\"\n      fill=\"#F2FCF3\"\n    />\n    <path\n      d=\"m5.1 8.716 1.047 5.145a.702.702 0 0 1-1.107-.422l-.814-4.007L.427 7.826A.699.699 0 0 1 .362 6.57l3.603-1.983.38-3.953a.701.701 0 0 1 1.158-.46L8.574 2.85l4.052-.898a.7.7 0 0 1 .786.978l-1.698 3.631-.854-.533 1.388-2.969-3.95.876L5.284 1.31 4.91 5.208 1.388 7.146z\"\n      fill=\"#E66D17\"\n    />\n  </svg>\n);\n\nconst SparkRunDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7 7.502A1.5 1.5 0 0 1 9.294 6.23l4.002 2.497a1.5 1.5 0 0 1 0 2.546L9.294 13.77A1.5 1.5 0 0 1 7 12.498zm1.765-.424A.5.5 0 0 0 8 7.502v4.996a.5.5 0 0 0 .765.424l4.002-2.498a.5.5 0 0 0 0-.848z\"\n      fill=\"#57965C\"\n    />\n    <path\n      d=\"M8 7.502a.5.5 0 0 1 .765-.424l4.002 2.498a.5.5 0 0 1 0 .848l-4.002 2.498A.5.5 0 0 1 8 12.498z\"\n      fill=\"#253627\"\n    />\n    <path\n      d=\"m5.1 8.716 1.047 5.145a.702.702 0 0 1-1.107-.422l-.814-4.007L.427 7.826A.699.699 0 0 1 .362 6.57l3.603-1.983.38-3.953a.701.701 0 0 1 1.158-.46L8.574 2.85l4.052-.898a.7.7 0 0 1 .786.978l-1.698 3.631-.854-.533 1.388-2.969-3.95.876L5.284 1.31 4.91 5.208 1.388 7.146z\"\n      fill=\"#C77D55\"\n    />\n  </svg>\n);\n\nexport const SparkRun: React.FC<SparkRunProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? SparkRunLight : SparkRunDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "spark-run",
+      "icon",
+      "plugins",
+      "bdt",
+      "jetbrains"
+    ]
+  }
+}

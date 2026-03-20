@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-restart",
+  "type": "registry:ui",
+  "title": "Restart",
+  "description": "Restart icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/restart/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/restart/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "restart",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

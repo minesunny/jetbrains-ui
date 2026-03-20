@@ -1,0 +1,6 @@
+{
+  "title": "Tabs",
+  "description": "Tabs docs with Tabs and Dynamic Tabs.",
+  "defaultOpen": false,
+  "pages": ["base-tabs", "dynamic-tabs"]
+}

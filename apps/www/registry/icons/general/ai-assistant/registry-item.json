@@ -1,0 +1,106 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-ai-assistant",
+  "type": "registry:ui",
+  "title": "General Ai Assistant Icons",
+  "description": "All 16 icons from the General Ai Assistant category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/ai-assistant/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/index.ts"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/ai-assistant/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/ai-assistant/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/ai-assistant-colored/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/ai-assistant-colored/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/ai-assistant-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/ai-assistant-disabled/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/attached/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/attached/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/dislike/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/dislike/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/dislike-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/dislike-selected/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/feature-answer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/feature-answer/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/feature-code-block/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/feature-code-block/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/feature-comment/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/feature-comment/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/feature-commit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/feature-commit/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/feature-context/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/feature-context/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/feature-docs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/feature-docs/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/like/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/like/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/like-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/like-selected/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/send/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/send/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/ai-assistant/send-to-editor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/send-to-editor/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "ai-assistant",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

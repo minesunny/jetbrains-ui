@@ -1,0 +1,97 @@
+---
+title: Button
+description: Button component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-01-30
+---
+
+<ComponentPreview name="demo-button" />
+
+## Overview
+
+A JetBrains-style button component built with the Radix UI Slot pattern.
+
+### Design Highlights
+
+- **JetBrains color system**: Uses colors inspired by the JetBrains UI Kit.
+- **2 variants**: `primary` and `secondary` for common button scenarios.
+- **Figma-aligned sizing**: default `72x28`, slim `72x24`.
+- **Optional tooltip**: Built-in tooltip via the existing Tooltip component.
+- **Complete states**: Hover, active, disabled, and focus states.
+- **Accessible by default**: Includes proper `focus-visible` styling.
+
+## Installation
+
+<ComponentInstallation name="buttons" />
+
+## Usage
+
+```tsx
+import { Button } from '@/components/jetbrains-ui/buttons';
+
+export default function Demo() {
+  return (
+    <div className="flex items-center gap-2">
+      <Button>Primary</Button>
+      <Button variant="secondary">Secondary</Button>
+      <Button slim>Slim</Button>
+      <Button tooltip="Button tooltip">With tooltip</Button>
+    </div>
+  );
+}
+```
+
+### As Child
+
+```tsx
+import Link from 'next/link';
+import { Button } from '@/components/jetbrains-ui/buttons';
+
+<Button asChild>
+  <Link href="/docs/installation">Go to Installation</Link>
+</Button>;
+```
+
+## API Reference
+
+### Button
+
+<TypeTable
+  type={{
+    variant: {
+      description: 'Visual style variant of the button',
+      type: '"primary" | "secondary"',
+      required: false,
+      default: 'primary',
+    },
+    asChild: {
+      description: 'Render as a child component',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    slim: {
+      description: 'Use slim button size (72x24)',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    tooltip: {
+      description: 'Tooltip text shown on hover',
+      type: 'string',
+      required: false,
+    },
+    '...props': {
+      description: 'Additional props passed to the button element',
+      type: 'React.ComponentProps<"button">',
+      required: false,
+    },
+  }}
+/>
+
+## Credits
+
+- Design inspired by [JetBrains UI Kit](https://jetbrains.design)
+- Built on [Radix UI](https://radix-ui.com)

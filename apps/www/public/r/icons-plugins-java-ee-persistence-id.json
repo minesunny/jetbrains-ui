@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-java-ee-persistence-id",
+  "type": "registry:ui",
+  "title": "Persistence Id",
+  "description": "Persistence Id icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-id/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-id/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type PersistenceIdProps = IconProps;\n\nconst PersistenceIdLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M14.777 6.24A3.5 3.5 0 0 0 12 12.663v1.082a7 7 0 1 1 2.777-7.505\"\n      fill=\"#FFF4EB\"\n    />\n    <path\n      d=\"M8.162 5q.678 0 1.196.247.523.248.81.725.288.471.288 1.115v3.939h-1.03V8.824h.265q0 .73-.258 1.259a1.84 1.84 0 0 1-.73.805q-.478.276-1.133.276-.57 0-1.024-.219a1.76 1.76 0 0 1-.707-.603 1.53 1.53 0 0 1-.259-.874q0-.465.242-.857.24-.39.667-.638.425-.253.96-.31l1.564-.168a.43.43 0 0 0 .293-.149q.11-.132.11-.391l.068 1.236-1.845.207q-.282.03-.506.161a.93.93 0 0 0-.34.351.94.94 0 0 0-.12.472q0 .28.15.5.149.217.413.339.264.12.61.12.471 0 .822-.189a1.35 1.35 0 0 0 .552-.535q.195-.345.195-.793V6.967q0-.328-.16-.575A1.06 1.06 0 0 0 8.804 6a1.5 1.5 0 0 0-.66-.138q-.375 0-.679.133-.3.127-.483.345a.95.95 0 0 0-.218.466H5.712q.07-.518.397-.926.333-.413.868-.644A2.9 2.9 0 0 1 8.162 5\"\n      fill=\"#E66D17\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1h-2zm1-2.45a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M11.86 12.593a6 6 0 1 1 1.799-6.59c.394.018.77.1 1.118.237A7 7 0 1 0 12 13.745v-1.082z\"\n      fill=\"#E66D17\"\n    />\n  </svg>\n);\n\nconst PersistenceIdDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M14.777 6.24A3.5 3.5 0 0 0 12 12.663v1.082a7 7 0 1 1 2.777-7.505\"\n      fill=\"#45322B\"\n    />\n    <path\n      d=\"M8.162 5q.678 0 1.196.247.523.248.81.725.288.471.288 1.115v3.939h-1.03V8.824h.265q0 .73-.258 1.259a1.84 1.84 0 0 1-.73.805q-.478.276-1.133.276-.57 0-1.024-.219a1.76 1.76 0 0 1-.707-.603 1.53 1.53 0 0 1-.259-.874q0-.465.242-.857.24-.39.667-.638.425-.253.96-.31l1.564-.168a.43.43 0 0 0 .293-.149q.11-.132.11-.391l.068 1.236-1.845.207q-.282.03-.506.161a.93.93 0 0 0-.34.351.94.94 0 0 0-.12.472q0 .28.15.5.149.217.413.339.264.12.61.12.471 0 .822-.189a1.35 1.35 0 0 0 .552-.535q.195-.345.195-.793V6.967q0-.328-.16-.575A1.06 1.06 0 0 0 8.804 6a1.5 1.5 0 0 0-.66-.138q-.375 0-.679.133-.3.127-.483.345a.95.95 0 0 0-.218.466H5.712q.07-.518.397-.926.333-.413.868-.644A2.9 2.9 0 0 1 8.162 5\"\n      fill=\"#C77D55\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1h-2zm1-2.45a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M11.86 12.593a6 6 0 1 1 1.799-6.59c.394.018.77.1 1.118.237A7 7 0 1 0 12 13.745v-1.082z\"\n      fill=\"#C77D55\"\n    />\n  </svg>\n);\n\nexport const PersistenceId: React.FC<PersistenceIdProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? PersistenceIdLight : PersistenceIdDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "persistence-id",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

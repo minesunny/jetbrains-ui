@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-terminal-file-format",
+  "type": "registry:ui",
+  "title": "File Format",
+  "description": "File Format icon from Terminal category.",
+  "registryDependencies": [
+    "icons-terminal-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/terminal/file-format/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/terminal/file-format/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "file-format",
+      "icon",
+      "terminal",
+      "jetbrains"
+    ]
+  }
+}

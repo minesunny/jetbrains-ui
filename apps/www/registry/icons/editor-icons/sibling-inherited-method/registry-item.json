@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-sibling-inherited-method",
+  "type": "registry:ui",
+  "title": "Sibling Inherited Method",
+  "description": "Sibling Inherited Method icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/sibling-inherited-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/sibling-inherited-method/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sibling-inherited-method",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

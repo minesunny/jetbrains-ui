@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-archive",
+  "type": "registry:ui",
+  "title": "Archive",
+  "description": "Archive icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/archive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/archive/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "archive",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

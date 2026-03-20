@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-outsight-out-sight-color",
+  "type": "registry:ui",
+  "title": "Out Sight Color",
+  "description": "Out Sight Color icon from Plugins Outsight category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/outsight/out-sight-color/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/outsight/out-sight-color/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "out-sight-color",
+      "icon",
+      "plugins",
+      "outsight",
+      "jetbrains"
+    ]
+  }
+}

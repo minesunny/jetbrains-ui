@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-actions-in-selection",
+  "type": "registry:ui",
+  "title": "In Selection",
+  "description": "In Selection icon from General Actions category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/in-selection/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/in-selection/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type InSelectionProps = IconProps;\n\nconst InSelectionLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 6a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zM2 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5\"\n      fill=\"#6C707E\"\n    />\n    <rect x=\"14\" y=\"15\" width=\"2\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"11\" y=\"15\" width=\"2\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"14\" y=\"8\" width=\"2\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"11\" y=\"8\" width=\"2\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M13 9.5a.5.5 0 0 1 1 0v5a.5.5 0 0 1-1 0z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst InSelectionDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 6a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zM2 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5\"\n      fill=\"#CED0D6\"\n    />\n    <rect x=\"14\" y=\"15\" width=\"2\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"11\" y=\"15\" width=\"2\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"14\" y=\"8\" width=\"2\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"11\" y=\"8\" width=\"2\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M13 9.5a.5.5 0 0 1 1 0v5a.5.5 0 0 1-1 0z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const InSelection: FC<InSelectionProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? InSelectionLight : InSelectionDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "in-selection",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

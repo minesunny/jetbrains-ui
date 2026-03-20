@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-ruby-db-hash",
+  "type": "registry:ui",
+  "title": "Db Hash",
+  "description": "Db Hash icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/db-hash/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/db-hash/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "db-hash",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

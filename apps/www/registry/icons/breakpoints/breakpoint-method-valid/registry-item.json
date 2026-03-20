@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-breakpoint-method-valid",
+  "type": "registry:ui",
+  "title": "Breakpoint Method Valid",
+  "description": "Breakpoint Method Valid icon from Breakpoints category.",
+  "registryDependencies": [
+    "icons-breakpoints-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/breakpoint-method-valid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-valid/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "breakpoint-method-valid",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-manifest",
+  "type": "registry:ui",
+  "title": "Manifest",
+  "description": "Manifest icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/manifest/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/manifest/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "manifest",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

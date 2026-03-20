@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-compare3-left-right",
+  "type": "registry:ui",
+  "title": "Compare3 Left Right",
+  "description": "Compare3 Left Right icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/compare3-left-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/compare3-left-right/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "compare3-left-right",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

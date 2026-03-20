@@ -1,0 +1,253 @@
+---
+title: Combo Box
+description: Combo box component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-01-31
+---
+
+<ComponentPreview name="demo-combo-box" />
+
+## Overview
+
+A combo box combines a drop-down list and an input field, allowing the user to select a value from the list or enter a custom value.
+This implementation is built on Radix UI Select with JetBrains UI styling and interaction states.
+
+### Design Highlights
+
+- **JetBrains color system**: Uses colors inspired by the JetBrains UI Kit.
+- **Smooth animation**: Soft open/close transition effects.
+- **Group support**: Supports grouped options and separators.
+- **Accessible by default**: Full keyboard navigation and `focus-visible` styling.
+
+## Installation
+
+<ComponentInstallation name="combo-box" />
+
+## Usage
+
+```tsx
+import {
+  ComboBox,
+  ComboBoxTrigger,
+  ComboBoxValue,
+  ComboBoxContent,
+  ComboBoxItem,
+} from '@/components/jetbrains-ui/combo-box';
+
+<ComboBox>
+  <ComboBoxTrigger size="md">
+    <ComboBoxValue placeholder="Select an option" />
+  </ComboBoxTrigger>
+  <ComboBoxContent>
+    <ComboBoxItem value="option1">Option 1</ComboBoxItem>
+    <ComboBoxItem value="option2">Option 2</ComboBoxItem>
+    <ComboBoxItem value="option3">Option 3</ComboBoxItem>
+  </ComboBoxContent>
+</ComboBox>;
+```
+
+### With Groups
+
+```tsx
+<ComboBox>
+  <ComboBoxTrigger size="md">
+    <ComboBoxValue placeholder="Select a fruit" />
+  </ComboBoxTrigger>
+  <ComboBoxContent>
+    <ComboBoxGroup>
+      <ComboBoxLabel>Fruits</ComboBoxLabel>
+      <ComboBoxItem value="apple">Apple</ComboBoxItem>
+      <ComboBoxItem value="banana">Banana</ComboBoxItem>
+    </ComboBoxGroup>
+    <ComboBoxSeparator />
+    <ComboBoxGroup>
+      <ComboBoxLabel>Vegetables</ComboBoxLabel>
+      <ComboBoxItem value="carrot">Carrot</ComboBoxItem>
+      <ComboBoxItem value="potato">Potato</ComboBoxItem>
+    </ComboBoxGroup>
+  </ComboBoxContent>
+</ComboBox>
+```
+
+### Controlled
+
+```tsx
+const [value, setValue] = React.useState('');
+
+<ComboBox value={value} onValueChange={setValue}>
+  <ComboBoxTrigger size="md">
+    <ComboBoxValue placeholder="Select an option" />
+  </ComboBoxTrigger>
+  <ComboBoxContent>
+    <ComboBoxItem value="option1">Option 1</ComboBoxItem>
+    <ComboBoxItem value="option2">Option 2</ComboBoxItem>
+  </ComboBoxContent>
+</ComboBox>;
+```
+
+### Invalid State
+
+```tsx
+<ComboBox>
+  <ComboBoxTrigger size="md" aria-invalid={true}>
+    <ComboBoxValue placeholder="Select an option" />
+  </ComboBoxTrigger>
+  <ComboBoxContent>
+    <ComboBoxItem value="option1">Option 1</ComboBoxItem>
+  </ComboBoxContent>
+</ComboBox>
+```
+
+### Active State
+
+```tsx
+<ComboBox>
+  <ComboBoxTrigger size="md" active>
+    <ComboBoxValue placeholder="Select an option" />
+  </ComboBoxTrigger>
+  <ComboBoxContent>
+    <ComboBoxItem value="option1">Option 1</ComboBoxItem>
+  </ComboBoxContent>
+</ComboBox>
+```
+
+### Disabled State
+
+```tsx
+<ComboBox disabled>
+  <ComboBoxTrigger size="md">
+    <ComboBoxValue placeholder="Select an option" />
+  </ComboBoxTrigger>
+  <ComboBoxContent>
+    <ComboBoxItem value="option1">Option 1</ComboBoxItem>
+  </ComboBoxContent>
+</ComboBox>
+```
+
+## Sizing Rules
+
+- Trigger size follows Figma default: `224x40`.
+- `size="fluid"` and `size="md"` currently share the same visual width (`224px`) for compatibility.
+- Dropdown content keeps a minimum width of `224px` to match the trigger.
+- Option row height is `28px`.
+
+## API Reference
+
+### ComboBox
+
+<TypeTable
+  type={{
+    value: {
+      description: 'Controlled selected value',
+      type: 'string',
+      required: false,
+    },
+    defaultValue: {
+      description: 'Default selected value',
+      type: 'string',
+      required: false,
+    },
+    onValueChange: {
+      description: 'Callback fired when selected value changes',
+      type: '(value: string) => void',
+      required: false,
+    },
+    open: {
+      description: 'Controlled open state',
+      type: 'boolean',
+      required: false,
+    },
+    defaultOpen: {
+      description: 'Default open state',
+      type: 'boolean',
+      required: false,
+    },
+    onOpenChange: {
+      description: 'Callback fired when open state changes',
+      type: '(open: boolean) => void',
+      required: false,
+    },
+    disabled: {
+      description: 'Whether the combo box is disabled',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    required: {
+      description: 'Whether the field is required',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    name: {
+      description: 'Form field name',
+      type: 'string',
+      required: false,
+    },
+  }}
+/>
+
+### ComboBoxTrigger
+
+<TypeTable
+  type={{
+    active: {
+      description: 'Force active trigger style (useful for static demos)',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    size: {
+      description: 'Trigger width preset',
+      type: "'fluid' | 'md'",
+      required: false,
+      default: "'fluid'",
+    },
+    'aria-invalid': {
+      description: 'Whether the trigger is in an invalid state',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: 'Additional props passed to the button element',
+      type: 'React.ComponentProps<"button">',
+      required: false,
+    },
+  }}
+/>
+
+### ComboBoxItem
+
+<TypeTable
+  type={{
+    value: {
+      description: 'Value of the item',
+      type: 'string',
+      required: true,
+    },
+    disabled: {
+      description: 'Whether this item is disabled',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    textValue: {
+      description: 'Text value used for typeahead search',
+      type: 'string',
+      required: false,
+    },
+    '...props': {
+      description: 'Additional props passed to the item element',
+      type: 'React.ComponentProps<"div">',
+      required: false,
+    },
+  }}
+/>
+
+## Credits
+
+- Design inspired by [JetBrains UI Kit](https://jetbrains.design)
+- Built on [Radix UI Select](https://radix-ui.com/primitives/docs/components/select)

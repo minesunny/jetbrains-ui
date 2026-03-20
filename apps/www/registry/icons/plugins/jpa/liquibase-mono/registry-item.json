@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-jpa-liquibase-mono",
+  "type": "registry:ui",
+  "title": "Liquibase Mono",
+  "description": "Liquibase Mono icon from Plugins Jpa category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/liquibase-mono/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/liquibase-mono/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "liquibase-mono",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

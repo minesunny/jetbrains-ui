@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-index-cluster",
+  "type": "registry:ui",
+  "title": "Index Cluster",
+  "description": "Index Cluster icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/index-cluster/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/index-cluster/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type IndexClusterProps = IconProps;\n\nconst IndexClusterLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M3.5 9.5v-6h4v6z\" stroke=\"#6C707E\" strokeLinejoin=\"round\" />\n    <path d=\"M4 5.5h3M4 7.5h3\" stroke=\"#6C707E\" />\n    <path\n      d=\"M2 3.5A1.5 1.5 0 0 1 3.5 2h9A1.5 1.5 0 0 1 14 3.5v3h1v-3A2.5 2.5 0 0 0 12.5 1h-9A2.5 2.5 0 0 0 1 3.5v9A2.5 2.5 0 0 0 3.5 15h7v-1h-7A1.5 1.5 0 0 1 2 12.5z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12 10h1.5a.5.5 0 0 1 .5.5V15h-1v-4h-1zM15.5 16h-4v-1h4z\"\n      fill=\"#3574F0\"\n    />\n    <path d=\"M12.5 7.5H14V9h-1.5z\" fill=\"#3574F0\" />\n  </svg>\n);\n\nconst IndexClusterDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M3.5 9.5v-6h4v6z\" stroke=\"#CED0D6\" strokeLinejoin=\"round\" />\n    <path d=\"M4 5.5h3M4 7.5h3\" stroke=\"#CED0D6\" />\n    <path\n      d=\"M2 3.5A1.5 1.5 0 0 1 3.5 2h9A1.5 1.5 0 0 1 14 3.5v3h1v-3A2.5 2.5 0 0 0 12.5 1h-9A2.5 2.5 0 0 0 1 3.5v9A2.5 2.5 0 0 0 3.5 15h7v-1h-7A1.5 1.5 0 0 1 2 12.5z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12 10h1.5a.5.5 0 0 1 .5.5V15h-1v-4h-1zM15.5 16h-4v-1h4z\"\n      fill=\"#548AF7\"\n    />\n    <path d=\"M12.5 7.5H14V9h-1.5z\" fill=\"#548AF7\" />\n  </svg>\n);\n\nexport const IndexCluster: FC<IndexClusterProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? IndexClusterLight : IndexClusterDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "index-cluster",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

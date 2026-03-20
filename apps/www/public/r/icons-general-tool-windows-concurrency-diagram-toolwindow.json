@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-concurrency-diagram-toolwindow",
+  "type": "registry:ui",
+  "title": "Concurrency Diagram Toolwindow",
+  "description": "Concurrency Diagram Toolwindow icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/concurrency-diagram-toolwindow/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/concurrency-diagram-toolwindow/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ConcurrencyDiagramToolwindowProps = IconProps;\n\nconst ConcurrencyDiagramToolwindowLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M2 8.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M9.5 13.536V9.464a1 1 0 0 1 1.588-.81l2.8 2.037a1 1 0 0 1 0 1.617l-2.8 2.037a1 1 0 0 1-1.588-.809Z\"\n      stroke=\"#6C707E\"\n    />\n    <path\n      d=\"M2 5.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5M2 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ConcurrencyDiagramToolwindowDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M2 8.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M9.5 13.536V9.464a1 1 0 0 1 1.588-.81l2.8 2.037a1 1 0 0 1 0 1.617l-2.8 2.037a1 1 0 0 1-1.588-.809Z\"\n      stroke=\"#CED0D6\"\n    />\n    <path\n      d=\"M2 5.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5M2 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const ConcurrencyDiagramToolwindow: FC<\n  ConcurrencyDiagramToolwindowProps\n> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light'\n      ? ConcurrencyDiagramToolwindowLight\n      : ConcurrencyDiagramToolwindowDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "concurrency-diagram-toolwindow",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

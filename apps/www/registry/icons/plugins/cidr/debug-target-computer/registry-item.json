@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-debug-target-computer",
+  "type": "registry:ui",
+  "title": "Debug Target Computer",
+  "description": "Debug Target Computer icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/debug-target-computer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/debug-target-computer/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "debug-target-computer",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

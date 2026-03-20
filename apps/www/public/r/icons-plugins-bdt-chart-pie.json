@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-bdt-chart-pie",
+  "type": "registry:ui",
+  "title": "Chart Pie",
+  "description": "Chart Pie icon from Plugins Bdt category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/bdt/chart-pie/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-pie/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ChartPieProps = IconProps;\n\nconst ChartPieLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M7.5 8.5h5.977A5.5 5.5 0 1 1 7.5 2.523z\"\n      fill=\"#EBECF0\"\n      stroke=\"#6C707E\"\n    />\n    <path\n      d=\"M9.5 1.523A5.5 5.5 0 0 1 14.477 6.5H9.5z\"\n      fill=\"#EDF3FF\"\n      stroke=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst ChartPieDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M7.5 8.5h5.977A5.5 5.5 0 1 1 7.5 2.523z\"\n      fill=\"#43454A\"\n      stroke=\"#CED0D6\"\n    />\n    <path\n      d=\"M9.5 1.523A5.5 5.5 0 0 1 14.477 6.5H9.5z\"\n      fill=\"#25324D\"\n      stroke=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const ChartPie: React.FC<ChartPieProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ChartPieLight : ChartPieDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "chart-pie",
+      "icon",
+      "plugins",
+      "bdt",
+      "jetbrains"
+    ]
+  }
+}

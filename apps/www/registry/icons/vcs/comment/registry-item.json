@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-comment",
+  "type": "registry:ui",
+  "title": "Comment",
+  "description": "Comment icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/comment/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/comment/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "comment",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

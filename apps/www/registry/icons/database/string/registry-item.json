@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-string",
+  "type": "registry:ui",
+  "title": "String",
+  "description": "String icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/string/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/string/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "string",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-attach-to-process",
+  "type": "registry:ui",
+  "title": "Attach To Process",
+  "description": "Attach To Process icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/attach-to-process/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/attach-to-process/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "attach-to-process",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

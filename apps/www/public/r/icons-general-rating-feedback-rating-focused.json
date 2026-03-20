@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-rating-feedback-rating-focused",
+  "type": "registry:ui",
+  "title": "Feedback Rating Focused",
+  "description": "Feedback Rating Focused icon from General Rating category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/rating/feedback-rating-focused/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/rating/feedback-rating-focused/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type FeedbackRatingFocusedProps = IconProps;\n\nconst FeedbackRatingFocusedLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 32 32\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\">\n      <circle cx=\"16\" cy=\"16\" r=\"16\" fill=\"#D4E2FF\" />\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M19.439 11.267 16 3l-3.438 8.267-8.925.716 6.8 5.825-2.078 8.71L16 21.85l7.642 4.667-2.078-8.71 6.8-5.824zm6.449 1.52-7.138-.572L16 5.604l-2.75 6.611-7.137.572 5.438 4.659L9.89 24.41 16 20.678l6.111 3.733-1.661-6.965z\"\n        fill=\"#A8ADBD\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H32V32H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nconst FeedbackRatingFocusedDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 32 32\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\">\n      <g clipPath=\"url(#b)\">\n        <circle cx=\"16\" cy=\"16\" r=\"16\" fill=\"#25324D\" />\n        <path\n          fillRule=\"evenodd\"\n          clipRule=\"evenodd\"\n          d=\"M19.439 11.267 16 3l-3.438 8.267-8.925.716 6.8 5.825-2.078 8.71L16 21.85l7.642 4.667-2.078-8.71 6.8-5.824zm6.449 1.52-7.138-.572L16 5.604l-2.75 6.611-7.137.572 5.438 4.659L9.89 24.41 16 20.678l6.111 3.733-1.661-6.965z\"\n          fill=\"#5A5D63\"\n        />\n      </g>\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H32V32H0z\" />\n      </clipPath>\n      <clipPath id=\"b\">\n        <path fill=\"#fff\" d=\"M0 0H32V32H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const FeedbackRatingFocused: FC<FeedbackRatingFocusedProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? FeedbackRatingFocusedLight : FeedbackRatingFocusedDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "feedback-rating-focused",
+      "icon",
+      "general",
+      "rating",
+      "jetbrains"
+    ]
+  }
+}

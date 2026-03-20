@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-kotlin-kotlin_activity",
+  "type": "registry:ui",
+  "title": "Kotlin_activity",
+  "description": "Kotlin_activity icon from Plugins Kotlin category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin_activity/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin_activity/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type Kotlin_activityProps = IconProps;\n\nconst Kotlin_activityLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M10 10h4.645l-1.97 1.97a.75.75 0 0 0 0 1.06l1.97 1.97H10z\"\n      fill=\"#FAF5FF\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9 10a1 1 0 0 1 1-1h5.248a.75.75 0 0 1 .53 1.28l-2.22 2.22 2.22 2.22a.75.75 0 0 1-.53 1.28H10a1 1 0 0 1-1-1zm5.645 0H10v5h4.645l-1.97-1.97a.75.75 0 0 1 0-1.06z\"\n      fill=\"#834DF0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M2.252 1.066a.5.5 0 0 1 .682.186l1.046 1.83A7.96 7.96 0 0 1 8 2c1.466 0 2.839.394 4.02 1.082l1.046-1.83a.5.5 0 1 1 .868.496l-1.08 1.892A8 8 0 0 1 15.747 8H11a1 1 0 1 0 0-2 1 1 0 0 0 0 2h-1a2 2 0 0 0-2 2H0a7.99 7.99 0 0 1 3.147-6.36L2.066 1.748a.5.5 0 0 1 .186-.682M6 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0\"\n      fill=\"#55A76A\"\n    />\n  </svg>\n);\n\nconst Kotlin_activityDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M10 10h4.645l-1.97 1.97a.75.75 0 0 0 0 1.06l1.97 1.97H10z\"\n      fill=\"#2F2936\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9 10a1 1 0 0 1 1-1h5.248a.75.75 0 0 1 .53 1.28l-2.22 2.22 2.22 2.22a.75.75 0 0 1-.53 1.28H10a1 1 0 0 1-1-1zm5.645 0H10v5h4.645l-1.97-1.97a.75.75 0 0 1 0-1.06z\"\n      fill=\"#A571E6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M2.252 1.066a.5.5 0 0 1 .682.186l1.046 1.83A7.96 7.96 0 0 1 8 2c1.466 0 2.839.394 4.02 1.082l1.046-1.83a.5.5 0 1 1 .868.496l-1.08 1.892A8 8 0 0 1 15.747 8H11a1 1 0 1 0 0-2 1 1 0 0 0 0 2h-1a2 2 0 0 0-2 2H0a7.99 7.99 0 0 1 3.147-6.36L2.066 1.748a.5.5 0 0 1 .186-.682M6 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0\"\n      fill=\"#57965C\"\n    />\n  </svg>\n);\n\nexport const Kotlin_activity: React.FC<Kotlin_activityProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? Kotlin_activityLight : Kotlin_activityDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "kotlin_activity",
+      "icon",
+      "plugins",
+      "kotlin",
+      "jetbrains"
+    ]
+  }
+}

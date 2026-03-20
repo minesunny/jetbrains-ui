@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-exposed",
+  "type": "registry:ui",
+  "title": "Exposed",
+  "description": "Exposed icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/exposed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/exposed/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "exposed",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

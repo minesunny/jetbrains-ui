@@ -1,0 +1,30 @@
+---
+title: Troubleshooting
+description: How to troubleshoot common issues with JetBrains UI.
+---
+
+## Verify your versions
+
+| Dependency       | Minimum recommended version |
+| ---------------- | --------------------------- |
+| **React**        | `>= 19`                     |
+| **Tailwind CSS** | `>= 4.1.0`                  |
+| **Radix UI**     | `>= 1.4.0`                  |
+
+Make sure your environment meets or exceeds these versions to ensure JetBrains UI remains compatible and stable.
+
+## Documentation display issues
+
+Certain browser extensions can interfere with how the documentation is rendered. If problems persist after disabling extensions, clear your browser cache and refresh the page.
+
+## The CLI installation does not respect aliases
+
+In some projects, components may not install in the desired location that you configured in the aliases in the `components.json` file. This is because we can't use a target path with aliases.
+
+We have filed an [issue on shadcn/ui](https://github.com/shadcn-ui/ui/issues/8169), Shadcn added it to the roadmap.
+
+For now, we recommend using the manual installation.
+
+## Other issues
+
+If you encounter any other problem, don't hesitate to [open an issue here](https://github.com/minesunny/jetbrains-ui/issues/new/choose).

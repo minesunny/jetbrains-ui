@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-modifiers-tab-alert",
+  "type": "registry:ui",
+  "title": "Tab Alert",
+  "description": "Tab Alert icon from General Modifiers category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/modifiers/tab-alert/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/tab-alert/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tab-alert",
+      "icon",
+      "general",
+      "modifiers",
+      "jetbrains"
+    ]
+  }
+}

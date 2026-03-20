@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-spring-spring-cloud-stream",
+  "type": "registry:ui",
+  "title": "Spring Cloud Stream",
+  "description": "Spring Cloud Stream icon from Plugins Spring category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/spring-cloud-stream/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-cloud-stream/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "spring-cloud-stream",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

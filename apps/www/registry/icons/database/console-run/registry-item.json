@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-console-run",
+  "type": "registry:ui",
+  "title": "Console Run",
+  "description": "Console Run icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/console-run/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/console-run/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "console-run",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

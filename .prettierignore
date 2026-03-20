@@ -1,0 +1,11 @@
+node_modules
+.next
+.turbo
+.vercel
+dist
+build
+out
+
+# Auto-generated files
+apps/www/.source
+apps/www/__registry__

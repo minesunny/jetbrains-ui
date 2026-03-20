@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-general-show",
+  "type": "registry:ui",
+  "title": "Show",
+  "description": "Show icon from General General category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/show/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/show/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ShowProps = IconProps;\n\nconst ShowLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"8\" cy=\"8\" r=\"2.5\" stroke=\"#6C707E\" />\n    <path\n      d=\"M8 3c1.634 0 3.286.585 4.652 1.535 1.315.915 2.331 2.147 2.816 3.465-.485 1.318-1.5 2.55-2.816 3.465C11.286 12.415 9.634 13 8 13s-3.286-.585-4.652-1.535C2.033 10.55 1.016 9.318.53 8c.485-1.318 1.502-2.55 2.817-3.465C4.714 3.585 6.366 3 8 3Z\"\n      stroke=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ShowDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"8\" cy=\"8\" r=\"2.5\" stroke=\"#CED0D6\" />\n    <path\n      d=\"M8 3c1.634 0 3.286.585 4.652 1.535 1.315.915 2.331 2.147 2.816 3.465-.485 1.318-1.5 2.55-2.816 3.465C11.286 12.415 9.634 13 8 13s-3.286-.585-4.652-1.535C2.033 10.55 1.016 9.318.53 8c.485-1.318 1.502-2.55 2.817-3.465C4.714 3.585 6.366 3 8 3Z\"\n      stroke=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const Show: FC<ShowProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ShowLight : ShowDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "show",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

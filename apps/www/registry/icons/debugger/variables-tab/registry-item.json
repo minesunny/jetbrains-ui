@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-debugger-variables-tab",
+  "type": "registry:ui",
+  "title": "Variables Tab",
+  "description": "Variables Tab icon from Debugger category.",
+  "registryDependencies": [
+    "icons-debugger-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/debugger/variables-tab/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/debugger/variables-tab/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "variables-tab",
+      "icon",
+      "debugger",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-tool-window-model-checker",
+  "type": "registry:ui",
+  "title": "Tool Window Model Checker",
+  "description": "Tool Window Model Checker icon from General Tool Windows category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/tool-window-model-checker/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-model-checker/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tool-window-model-checker",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

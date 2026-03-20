@@ -1,0 +1,26 @@
+{
+  "name": "icons-nodes-star",
+  "type": "registry:ui",
+  "title": "Star",
+  "description": "Star icon from Nodes category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/star/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/star/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type StarProps = IconProps;\n\nconst StarLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8.462 2.381a.5.5 0 0 0-.923 0l-1.47 3.534-3.815.306a.5.5 0 0 0-.285.878l2.906 2.49-.888 3.722a.5.5 0 0 0 .747.543L8 11.859l3.266 1.995a.5.5 0 0 0 .747-.543l-.888-3.722 2.907-2.49a.5.5 0 0 0-.285-.878l-3.815-.306z\"\n      fill=\"#FFAF0F\"\n    />\n  </svg>\n);\n\nconst StarDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8.462 2.381a.5.5 0 0 0-.923 0l-1.47 3.534-3.815.306a.5.5 0 0 0-.285.878l2.906 2.49-.888 3.722a.5.5 0 0 0 .747.543L8 11.859l3.266 1.995a.5.5 0 0 0 .747-.543l-.888-3.722 2.907-2.49a.5.5 0 0 0-.285-.878l-3.815-.306z\"\n      fill=\"#F2C55C\"\n    />\n  </svg>\n);\n\nexport const Star: FC<StarProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? StarLight : StarDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "star",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

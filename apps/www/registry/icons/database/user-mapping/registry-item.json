@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-user-mapping",
+  "type": "registry:ui",
+  "title": "User Mapping",
+  "description": "User Mapping icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/user-mapping/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/user-mapping/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "user-mapping",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

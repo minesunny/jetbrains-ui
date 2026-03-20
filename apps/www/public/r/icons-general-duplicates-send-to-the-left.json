@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-duplicates-send-to-the-left",
+  "type": "registry:ui",
+  "title": "Send To The Left",
+  "description": "Send To The Left icon from General Duplicates category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/duplicates/send-to-the-left/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SendToTheLeftProps = IconProps;\n\nconst SendToTheLeftLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M8.855 3.147a.5.5 0 0 1 0 .707L5.708 7h7.794a.5.5 0 1 1 0 1H5.708l3.147 3.147a.5.5 0 0 1-.708.707l-4-4a.5.5 0 0 1 0-.707l4-4a.5.5 0 0 1 .708 0\"\n      fill=\"#3574F0\"\n    />\n    <path\n      d=\"M2.499 11.5v-8\"\n      stroke=\"#6C707E\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nconst SendToTheLeftDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M8.855 3.147a.5.5 0 0 1 0 .707L5.708 7h7.794a.5.5 0 1 1 0 1H5.708l3.147 3.147a.5.5 0 0 1-.708.707l-4-4a.5.5 0 0 1 0-.707l4-4a.5.5 0 0 1 .708 0\"\n      fill=\"#548AF7\"\n    />\n    <path\n      d=\"M2.499 11.5v-8\"\n      stroke=\"#CED0D6\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nexport const SendToTheLeft: FC<SendToTheLeftProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? SendToTheLeftLight : SendToTheLeftDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "send-to-the-left",
+      "icon",
+      "general",
+      "duplicates",
+      "jetbrains"
+    ]
+  }
+}

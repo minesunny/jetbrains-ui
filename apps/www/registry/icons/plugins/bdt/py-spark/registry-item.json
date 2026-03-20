@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-bdt-py-spark",
+  "type": "registry:ui",
+  "title": "Py Spark",
+  "description": "Py Spark icon from Plugins Bdt category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/bdt/py-spark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/py-spark/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "py-spark",
+      "icon",
+      "plugins",
+      "bdt",
+      "jetbrains"
+    ]
+  }
+}

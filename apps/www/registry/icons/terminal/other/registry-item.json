@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-terminal-other",
+  "type": "registry:ui",
+  "title": "Other",
+  "description": "Other icon from Terminal category.",
+  "registryDependencies": [
+    "icons-terminal-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/terminal/other/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/terminal/other/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "other",
+      "icon",
+      "terminal",
+      "jetbrains"
+    ]
+  }
+}

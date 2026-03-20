@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-gvariable",
+  "type": "registry:ui",
+  "title": "Gvariable",
+  "description": "Gvariable icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/gvariable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/gvariable/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "gvariable",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

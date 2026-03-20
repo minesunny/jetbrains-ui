@@ -1,0 +1,26 @@
+{
+  "name": "icons-debugger-self-reference",
+  "type": "registry:ui",
+  "title": "Self Reference",
+  "description": "Self Reference icon from Debugger category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-debugger-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/debugger/self-reference/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/debugger/self-reference/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type SelfReferenceProps = IconProps;\n\nconst SelfReferenceLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"8\" cy=\"8\" r=\"7\" fill=\"#FFF4EB\" />\n    <path\n      d=\"M7.258 12h1.017V7.327H9.83V6.43H8.275v-.95c0-.36.246-.606.6-.606h1.006V4H8.778c-.903 0-1.52.571-1.52 1.406V6.43H6.121v.897h1.137z\"\n      fill=\"#E66D17\"\n    />\n    <path\n      d=\"M4.801 2.923a.5.5 0 1 0-.534-.846A7 7 0 1 0 12.9 3H15.5a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 1 0V3.528a6 6 0 1 1-7.199-.605\"\n      fill=\"#E66D17\"\n    />\n  </svg>\n);\n\nconst SelfReferenceDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"8\" cy=\"8\" r=\"7\" fill=\"#45322B\" />\n    <path\n      d=\"M7.258 12h1.017V7.327H9.83V6.43H8.275v-.95c0-.36.246-.606.6-.606h1.006V4H8.778c-.903 0-1.52.571-1.52 1.406V6.43H6.121v.897h1.137z\"\n      fill=\"#C77D55\"\n    />\n    <path\n      d=\"M4.801 2.923a.5.5 0 1 0-.534-.846A7 7 0 1 0 12.9 3H15.5a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 1 0V3.528a6 6 0 1 1-7.199-.605\"\n      fill=\"#C77D55\"\n    />\n  </svg>\n);\n\nexport const SelfReference: FC<SelfReferenceProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? SelfReferenceLight : SelfReferenceDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "self-reference",
+      "icon",
+      "debugger",
+      "jetbrains"
+    ]
+  }
+}

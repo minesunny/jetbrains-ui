@@ -1,0 +1,150 @@
+---
+title: Checkbox
+description: Checkbox component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-01-31
+---
+
+<ComponentPreview name="demo-checkbox" />
+
+## Overview
+
+Checkbox is used when you need to select multiple items in a list.
+Users can select all, any, or none of the items.
+This implementation is built on Radix UI Checkbox with JetBrains UI styling.
+
+### Design Highlights
+
+- **Complete state matrix**: Covers checked state and interaction state combinations.
+- **JetBrains color system**: Uses colors inspired by the JetBrains UI Kit.
+- **Smooth animation**: Elegant check animation with SVG path transitions.
+- **Accessible by default**: Full keyboard navigation and `focus-visible` styling.
+
+### State Matrix
+
+| Checked State | Interaction State                                |
+| ------------- | ------------------------------------------------ |
+| Unchecked     | Default, Hover, Active, Focus, Invalid, Disabled |
+| Checked       | Default, Hover, Active, Focus, Invalid, Disabled |
+| Indeterminate | Default, Hover, Active, Focus, Invalid, Disabled |
+
+## Sizing Rules
+
+- Checkbox control size is fixed at `16x16`.
+- When used with `label`, the field row keeps a minimum height of `32px`.
+- Check and indeterminate icons use a `14x14` drawing area.
+
+## Installation
+
+<ComponentInstallation name="checkbox" />
+
+## Usage
+
+```tsx
+<Checkbox defaultChecked />
+```
+
+### With Label
+
+```tsx
+<Checkbox label="Accept terms and conditions" />
+```
+
+### Indeterminate State
+
+```tsx
+const [checked, setChecked] = React.useState<boolean | 'indeterminate'>(false);
+
+<Checkbox indeterminate checked={checked} onCheckedChange={setChecked} />;
+```
+
+### Invalid State
+
+```tsx
+<Checkbox aria-invalid={true} />
+```
+
+### Disabled State
+
+```tsx
+<Checkbox disabled />
+<Checkbox disabled defaultChecked />
+```
+
+## API Reference
+
+### Checkbox
+
+<TypeTable
+  type={{
+    checked: {
+      description: 'Controlled checked state',
+      type: 'boolean | "indeterminate"',
+      required: false,
+    },
+    defaultChecked: {
+      description: 'Default checked state',
+      type: 'boolean | "indeterminate"',
+      required: false,
+      default: 'false',
+    },
+    onCheckedChange: {
+      description: 'Callback fired when checked state changes',
+      type: '(checked: boolean | "indeterminate") => void',
+      required: false,
+    },
+    indeterminate: {
+      description:
+        'Enable three-state mode (unchecked -> checked -> indeterminate)',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    label: {
+      description: 'Checkbox label text or custom React node',
+      type: 'React.ReactNode',
+      required: false,
+    },
+    disabled: {
+      description: 'Whether the checkbox is disabled',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    'aria-invalid': {
+      description: 'Whether the checkbox is in an invalid state',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    required: {
+      description: 'Whether the field is required',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    name: {
+      description: 'Form field name',
+      type: 'string',
+      required: false,
+    },
+    value: {
+      description: 'Form field value',
+      type: 'string',
+      required: false,
+      default: '"on"',
+    },
+    '...props': {
+      description: 'Additional props passed to the button element',
+      type: 'React.ComponentProps<"button">',
+      required: false,
+    },
+  }}
+/>
+
+## Credits
+
+- Design inspired by [JetBrains UI Kit](https://jetbrains.design)
+- Built on [Radix UI Checkbox](https://radix-ui.com/primitives/docs/components/checkbox)

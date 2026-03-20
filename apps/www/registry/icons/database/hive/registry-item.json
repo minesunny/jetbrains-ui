@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-hive",
+  "type": "registry:ui",
+  "title": "Hive",
+  "description": "Hive icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/hive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/hive/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "hive",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

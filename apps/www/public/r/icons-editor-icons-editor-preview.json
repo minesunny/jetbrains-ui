@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-editor-preview",
+  "type": "registry:ui",
+  "title": "Editor Preview",
+  "description": "Editor Preview icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/editor-preview/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/editor-preview/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type EditorPreviewProps = IconProps;\n\nconst EditorPreviewLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect x=\"1\" y=\"3\" width=\"5\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"1\" y=\"6\" width=\"5\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"1\" y=\"9\" width=\"5\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"1\" y=\"12\" width=\"5\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <path\n      d=\"M10 2.5h3A1.5 1.5 0 0 1 14.5 4v8a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 8.5 12V4A1.5 1.5 0 0 1 10 2.5Z\"\n      stroke=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst EditorPreviewDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect x=\"1\" y=\"3\" width=\"5\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"1\" y=\"6\" width=\"5\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"1\" y=\"9\" width=\"5\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"1\" y=\"12\" width=\"5\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <path\n      d=\"M10 2.5h3A1.5 1.5 0 0 1 14.5 4v8a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 8.5 12V4A1.5 1.5 0 0 1 10 2.5Z\"\n      stroke=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const EditorPreview: FC<EditorPreviewProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? EditorPreviewLight : EditorPreviewDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "editor-preview",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-chessboard",
+  "type": "registry:ui",
+  "title": "Chessboard",
+  "description": "Chessboard icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/chessboard/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/chessboard/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "chessboard",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

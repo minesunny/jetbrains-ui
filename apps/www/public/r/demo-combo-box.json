@@ -1,0 +1,35 @@
+{
+  "name": "demo-combo-box",
+  "type": "registry:ui",
+  "title": "Combo Box Demo",
+  "description": "组合框组件的演示",
+  "dependencies": [
+    "@radix-ui/react-select"
+  ],
+  "registryDependencies": [
+    "@jetbrains-ui/combo-box"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/combo-box/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/combo-box.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport {\n  ComboBox,\n  ComboBoxTrigger,\n  ComboBoxValue,\n  ComboBoxContent,\n  ComboBoxItem,\n  ComboBoxGroup,\n  ComboBoxLabel,\n  ComboBoxSeparator,\n} from '@/components/jetbrains-ui/combo-box';\n\ninterface ComboBoxDemoProps {\n  state?: 'default' | 'active' | 'invalid' | 'disabled';\n  disabled?: boolean;\n  invalid?: boolean;\n}\n\nexport default function ComboBoxDemo({\n  state = 'default',\n  disabled = false,\n  invalid = false,\n}: ComboBoxDemoProps) {\n  const isDisabled = state === 'disabled' || disabled;\n  const isInvalid = state === 'invalid' || invalid;\n  const isActive = state === 'active' && !isDisabled;\n\n  return (\n    <ComboBox disabled={isDisabled}>\n      <ComboBoxTrigger size=\"md\" aria-invalid={isInvalid} active={isActive}>\n        <ComboBoxValue placeholder=\"Text\" />\n      </ComboBoxTrigger>\n      <ComboBoxContent>\n        <ComboBoxGroup>\n          <ComboBoxLabel>Fruits</ComboBoxLabel>\n          <ComboBoxItem value=\"apple\">Apple</ComboBoxItem>\n          <ComboBoxItem value=\"banana\">Banana</ComboBoxItem>\n          <ComboBoxItem value=\"orange\">Orange</ComboBoxItem>\n        </ComboBoxGroup>\n        <ComboBoxSeparator />\n        <ComboBoxGroup>\n          <ComboBoxLabel>Vegetables</ComboBoxLabel>\n          <ComboBoxItem value=\"carrot\">Carrot</ComboBoxItem>\n          <ComboBoxItem value=\"potato\">Potato</ComboBoxItem>\n          <ComboBoxItem value=\"tomato\" disabled>\n            Tomato (Disabled)\n          </ComboBoxItem>\n        </ComboBoxGroup>\n      </ComboBoxContent>\n    </ComboBox>\n  );\n}"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "ComboBox": {
+        "state": {
+          "value": "default",
+          "options": {
+            "default": "default",
+            "active": "active",
+            "invalid": "invalid",
+            "disabled": "disabled"
+          }
+        }
+      }
+    }
+  }
+}

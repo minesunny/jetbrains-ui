@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-comment-resolved",
+  "type": "registry:ui",
+  "title": "Comment Resolved",
+  "description": "Comment Resolved icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/comment-resolved/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/comment-resolved/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "comment-resolved",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

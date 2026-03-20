@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-actions-profile-cpu",
+  "type": "registry:ui",
+  "title": "Profile Cpu",
+  "description": "Profile Cpu icon from General Actions category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/profile-cpu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/profile-cpu/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ProfileCPUProps = IconProps;\n\nconst ProfileCPULight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M11.5 11a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z\" fill=\"#6C707E\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9 15v-5a1 1 0 0 1 1-1h3.586a1 1 0 0 1 .707.293l1.414 1.414a1 1 0 0 1 .293.707V15a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1m1-5v5h1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1h1v-3.586L13.586 10zm3 5h-1v-1h1z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M1 8a7 7 0 1 1 13.978.564 2 2 0 0 0-.978-.52V8a6 6 0 1 0-6 6v1a7 7 0 0 1-7-7\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.243.429l-2.5 1.5a.5.5 0 0 1-.514-.858L7.5 7.717V5a.5.5 0 0 1 .5-.5\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ProfileCPUDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M11.5 11a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z\" fill=\"#CED0D6\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9 15v-5a1 1 0 0 1 1-1h3.586a1 1 0 0 1 .707.293l1.414 1.414a1 1 0 0 1 .293.707V15a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1m1-5v5h1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1h1v-3.586L13.586 10zm3 5h-1v-1h1z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M1 8a7 7 0 1 1 13.978.564 2 2 0 0 0-.978-.52V8a6 6 0 1 0-6 6v1a7 7 0 0 1-7-7\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.243.429l-2.5 1.5a.5.5 0 0 1-.514-.858L7.5 7.717V5a.5.5 0 0 1 .5-.5\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const ProfileCPU: FC<ProfileCPUProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ProfileCPULight : ProfileCPUDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "profile-cpu",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

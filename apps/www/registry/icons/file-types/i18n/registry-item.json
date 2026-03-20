@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-i18n",
+  "type": "registry:ui",
+  "title": "I18n",
+  "description": "I18n icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/i18n/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/i18n/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "i18n",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

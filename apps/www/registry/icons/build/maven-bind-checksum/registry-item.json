@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-maven-bind-checksum",
+  "type": "registry:ui",
+  "title": "Maven Bind Checksum",
+  "description": "Maven Bind Checksum icon from Build category.",
+  "registryDependencies": [
+    "icons-build-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/build/maven-bind-checksum/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/maven-bind-checksum/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "maven-bind-checksum",
+      "icon",
+      "build",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-object-browser",
+  "type": "registry:ui",
+  "title": "General Object Browser Icons",
+  "description": "All 10 icons from the General Object Browser category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/object-browser/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/index.ts"
+    },
+    {
+      "path": "registry/icons/general/object-browser/abbreviate-package-names/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/abbreviate-package-names/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/object-browser/compact-empty-packages/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/compact-empty-packages/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/object-browser/flatten-modules/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/flatten-modules/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/object-browser/flatten-packages/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/flatten-packages/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/object-browser/show-library-contents/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/show-library-contents/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/object-browser/show-members/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/show-members/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/object-browser/sort-alphabetically/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/sort-alphabetically/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/object-browser/sort-by-type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/sort-by-type/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/object-browser/sort-by-usage/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/sort-by-usage/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/object-browser/sort-by-visibility/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/sort-by-visibility/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "object-browser",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-сode-assistant-class-extension",
+  "type": "registry:ui",
+  "title": "Сode Assistant Class Extension",
+  "description": "Сode Assistant Class Extension icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/сode-assistant-class-extension/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/сode-assistant-class-extension/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "сode-assistant-class-extension",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

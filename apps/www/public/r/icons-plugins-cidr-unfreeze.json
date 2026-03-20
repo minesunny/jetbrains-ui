@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-unfreeze",
+  "type": "registry:ui",
+  "title": "Unfreeze",
+  "description": "Unfreeze icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/unfreeze/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/unfreeze/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type UnfreezeProps = IconProps;\n\nconst UnfreezeLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M8 14.5A4.5 4.5 0 0 1 3.5 10c0-1.83 1.162-3.966 2.407-5.709a27 27 0 0 1 1.687-2.116c.154-.175.293-.323.406-.446.113.123.252.271.406.446.461.522 1.074 1.259 1.687 2.116C11.338 6.034 12.5 8.171 12.5 10A4.5 4.5 0 0 1 8 14.5Z\"\n      fill=\"#F2FCF3\"\n      stroke=\"#208A3C\"\n    />\n  </svg>\n);\n\nconst UnfreezeDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\">\n      <path\n        d=\"M8 14.5A4.5 4.5 0 0 1 3.5 10c0-1.83 1.162-3.966 2.407-5.709a27 27 0 0 1 1.687-2.116c.154-.175.293-.323.406-.446.113.123.252.271.406.446.461.522 1.074 1.259 1.687 2.116C11.338 6.034 12.5 8.171 12.5 10A4.5 4.5 0 0 1 8 14.5Z\"\n        fill=\"#253627\"\n        stroke=\"#57965C\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const Unfreeze: React.FC<UnfreezeProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? UnfreezeLight : UnfreezeDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "unfreeze",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

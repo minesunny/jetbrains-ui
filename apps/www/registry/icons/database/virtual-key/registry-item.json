@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-virtual-key",
+  "type": "registry:ui",
+  "title": "Virtual Key",
+  "description": "Virtual Key icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/virtual-key/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/virtual-key/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "virtual-key",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

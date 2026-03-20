@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-dump-threads",
+  "type": "registry:ui",
+  "title": "Dump Threads",
+  "description": "Dump Threads icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/dump-threads/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/dump-threads/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dump-threads",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

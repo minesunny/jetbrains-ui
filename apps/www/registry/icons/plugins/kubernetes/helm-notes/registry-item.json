@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-kubernetes-helm-notes",
+  "type": "registry:ui",
+  "title": "Helm Notes",
+  "description": "Helm Notes icon from Plugins Kubernetes category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-notes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-notes/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "helm-notes",
+      "icon",
+      "plugins",
+      "kubernetes",
+      "jetbrains"
+    ]
+  }
+}

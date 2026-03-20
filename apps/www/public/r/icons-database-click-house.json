@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-click-house",
+  "type": "registry:ui",
+  "title": "Click House",
+  "description": "Click House icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/click-house/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/click-house/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ClickHouseProps = IconProps;\n\nconst ClickHouseLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M1 15h2v-3H1z\" fill=\"red\" />\n    <path\n      d=\"M4 15h2V1H4zM7 15h2V1H7zM10 15h2V1h-2zM13 9h2V6h-2zM3 1v11H1V1z\"\n      fill=\"#FC0\"\n    />\n  </svg>\n);\n\nconst ClickHouseDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M1 15h2v-3H1z\" fill=\"red\" />\n    <path\n      d=\"M4 15h2V1H4zM7 15h2V1H7zM10 15h2V1h-2zM13 9h2V6h-2zM3 1v11H1V1z\"\n      fill=\"#FC0\"\n    />\n  </svg>\n);\n\nexport const ClickHouse: FC<ClickHouseProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ClickHouseLight : ClickHouseDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "click-house",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

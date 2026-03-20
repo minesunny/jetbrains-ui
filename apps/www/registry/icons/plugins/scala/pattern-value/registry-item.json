@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-scala-pattern-value",
+  "type": "registry:ui",
+  "title": "Pattern Value",
+  "description": "Pattern Value icon from Plugins Scala category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/pattern-value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/pattern-value/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "pattern-value",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

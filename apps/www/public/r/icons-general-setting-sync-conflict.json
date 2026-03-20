@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-setting-sync-conflict",
+  "type": "registry:ui",
+  "title": "Conflict",
+  "description": "Conflict icon from General Setting Sync category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/setting-sync/conflict/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/conflict/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ConflictProps = IconProps;\n\nconst ConflictLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"7.5\" fill=\"#F7F8FA\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M10.846 10.102a.526.526 0 1 1-.744.744L7.5 8.244l-2.602 2.602a.526.526 0 0 1-.744-.744L6.756 7.5 4.154 4.897a.526.526 0 0 1 .744-.743L7.5 6.756l2.602-2.602a.526.526 0 0 1 .744.743L8.244 7.5z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ConflictDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"7.5\" cy=\"7.5\" r=\"7.5\" fill=\"#2B2D30\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M10.846 10.102a.526.526 0 1 1-.744.744L7.5 8.244l-2.602 2.602a.526.526 0 0 1-.744-.744L6.756 7.5 4.154 4.897a.526.526 0 0 1 .744-.743L7.5 6.756l2.602-2.602a.526.526 0 0 1 .744.743L8.244 7.5z\"\n      fill=\"#6F737A\"\n    />\n  </svg>\n);\n\nexport const Conflict: FC<ConflictProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ConflictLight : ConflictDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "conflict",
+      "icon",
+      "general",
+      "setting-sync",
+      "jetbrains"
+    ]
+  }
+}

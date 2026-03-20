@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tree",
+  "type": "registry:ui",
+  "title": "Tree",
+  "description": "JetBrains-style tree component with expandable items.",
+  "dependencies": [],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/components/tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tree/index.tsx"
+    },
+    {
+      "path": "registry/components/tree/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/tree/index.css"
+    }
+  ],
+  "meta": {
+    "keywords": ["tree", "hierarchy", "jetbrains", "ui", "组件"],
+    "category": "data-display",
+    "docs": {
+      "description": "JetBrains-style tree component for hierarchical data.",
+      "features": [
+        "Expandable and collapsible nested items",
+        "Selectable item states",
+        "State colors aligned with context menu items",
+        "Chevron expand icon from existing JetBrains icon set",
+        "Supports controlled and uncontrolled state"
+      ]
+    }
+  }
+}

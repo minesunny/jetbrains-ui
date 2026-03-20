@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-breakpoint-method-disabled",
+  "type": "registry:ui",
+  "title": "Breakpoint Method Disabled",
+  "description": "Breakpoint Method Disabled icon from Breakpoints category.",
+  "registryDependencies": [
+    "icons-breakpoints-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/breakpoint-method-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-disabled/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "breakpoint-method-disabled",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-kotlin-kotlin-notebooks-grey",
+  "type": "registry:ui",
+  "title": "Kotlin Notebooks Grey",
+  "description": "Kotlin Notebooks Grey icon from Plugins Kotlin category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kotlin/kotlin-notebooks-grey/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/kotlin-notebooks-grey/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "kotlin-notebooks-grey",
+      "icon",
+      "plugins",
+      "kotlin",
+      "jetbrains"
+    ]
+  }
+}

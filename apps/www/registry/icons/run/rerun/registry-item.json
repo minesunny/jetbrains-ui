@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-rerun",
+  "type": "registry:ui",
+  "title": "Rerun",
+  "description": "Rerun icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/rerun/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/rerun/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "rerun",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

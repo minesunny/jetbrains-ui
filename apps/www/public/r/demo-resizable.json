@@ -1,0 +1,32 @@
+{
+  "name": "demo-resizable",
+  "type": "registry:ui",
+  "title": "Resizable Demo",
+  "description": "Demo showing resizable component",
+  "dependencies": [],
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/resizable"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/resizable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/resizable.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\n\nimport {\n  ResizableHandle,\n  ResizablePanel,\n  ResizablePanelGroup,\n} from '@/components/jetbrains-ui/resizable';\nimport { cn } from '@/lib/utils';\n\ninterface ResizableDemoProps {\n  direction: 'horizontal' | 'vertical';\n}\n\nexport default function ResizableDemo({ direction }: ResizableDemoProps) {\n  const vertical = direction === 'vertical';\n  const [collapse, setCollapse] = React.useState(false);\n\n  return (\n    <div className=\"space-y-3\">\n      <div className=\"flex items-center justify-between\">\n        <p className=\"text-muted-foreground text-xs\">\n          Collapse keeps the previous size. Dragging to min size enables\n          internal scroll.\n        </p>\n        <button\n          type=\"button\"\n          onClick={() => setCollapse((prev) => !prev)}\n          className=\"border-border bg-background text-foreground hover:bg-accent inline-flex h-8 items-center rounded-md border px-3 text-xs font-medium transition-colors\"\n        >\n          {collapse ? 'Expand Panel A' : 'Collapse Panel A'}\n        </button>\n      </div>\n\n      <ResizablePanelGroup\n        direction={direction}\n        className={\n          vertical\n            ? 'h-72 w-[360px] rounded-lg border'\n            : 'h-48 w-[560px] rounded-lg border'\n        }\n      >\n        <ResizablePanel\n          defaultSize={45}\n          minSize={20}\n          collapsible\n          collapse={collapse}\n          collapsedSize={0}\n          onCollapse={() => setCollapse(true)}\n          onExpand={() => setCollapse(false)}\n        >\n          <div\n            className={cn(\n              'bg-muted/25 h-full p-3 text-sm',\n              vertical ? 'min-h-[340px]' : 'min-w-[600px]',\n            )}\n          >\n            <p className=\"mb-2 font-medium\">Panel A (collapsible)</p>\n            <p className=\"text-muted-foreground mb-3 text-xs\">\n              Resize this panel close to its minimum size to trigger inner\n              scrolling.\n            </p>\n            <div className=\"grid grid-cols-2 gap-2\">\n              {Array.from({ length: 18 }).map((_, index) => (\n                <div\n                  key={index}\n                  className=\"bg-background border-border rounded-sm border px-2 py-1 text-xs\"\n                >\n                  Item {index + 1}\n                </div>\n              ))}\n            </div>\n          </div>\n        </ResizablePanel>\n\n        <ResizableHandle withHandle />\n\n        <ResizablePanel defaultSize={55} minSize={25}>\n          <div className=\"bg-muted/10 h-full p-3 text-sm\">\n            <p className=\"mb-2 font-medium\">Panel B</p>\n            <p className=\"text-muted-foreground text-xs\">\n              This panel remains resizable and keeps standard behavior.\n            </p>\n            <div className=\"mt-3 space-y-2\">\n              {Array.from({ length: 6 }).map((_, index) => (\n                <div\n                  key={index}\n                  className=\"bg-background border-border rounded-sm border px-2 py-1 text-xs\"\n                >\n                  Log row {index + 1}\n                </div>\n              ))}\n            </div>\n          </div>\n        </ResizablePanel>\n      </ResizablePanelGroup>\n    </div>\n  );\n}"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "ResizablePanelGroup": {
+        "direction": {
+          "value": "horizontal",
+          "options": {
+            "horizontal": "horizontal",
+            "vertical": "vertical"
+          }
+        }
+      }
+    }
+  }
+}

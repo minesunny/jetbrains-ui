@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-bdt-chart-line",
+  "type": "registry:ui",
+  "title": "Chart Line",
+  "description": "Chart Line icon from Plugins Bdt category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/bdt/chart-line/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-line/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ChartLineProps = IconProps;\n\nconst ChartLineLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M1.5 2a.5.5 0 0 1 .5.5V13h12.5a.5.5 0 0 1 0 1H2a1 1 0 0 1-1-1V2.5a.5.5 0 0 1 .5-.5\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M14.854 4.854a.5.5 0 0 0-.708-.708L9.5 8.793 6.207 5.5a1 1 0 0 0-1.414 0L2 8.293v1.414l3.5-3.5L8.793 9.5a1 1 0 0 0 1.414 0z\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst ChartLineDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M1.5 2a.5.5 0 0 1 .5.5V13h12.5a.5.5 0 0 1 0 1H2a1 1 0 0 1-1-1V2.5a.5.5 0 0 1 .5-.5\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M14.854 4.854a.5.5 0 0 0-.708-.708L9.5 8.793 6.207 5.5a1 1 0 0 0-1.414 0L2 8.293v1.414l3.5-3.5L8.793 9.5a1 1 0 0 0 1.414 0z\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const ChartLine: React.FC<ChartLineProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ChartLineLight : ChartLineDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "chart-line",
+      "icon",
+      "plugins",
+      "bdt",
+      "jetbrains"
+    ]
+  }
+}

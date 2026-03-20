@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-breakpoint-field",
+  "type": "registry:ui",
+  "title": "Breakpoint Field",
+  "description": "Breakpoint Field icon from Breakpoints category.",
+  "registryDependencies": [
+    "icons-breakpoints-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/breakpoint-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "breakpoint-field",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ]
+  }
+}

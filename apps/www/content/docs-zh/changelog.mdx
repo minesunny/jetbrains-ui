@@ -1,0 +1,60 @@
+---
+title: 更新日志
+description: 最新更新与发布说明。
+---
+
+import {
+  Changelog,
+  ChangelogItem,
+  ChangelogItemDescription,
+  ChangelogItemTitle,
+  ChangelogItemVersion,
+} from '@/components/docs/changelog';
+
+<Changelog>
+  <ChangelogItem date="2026-03-21" major>
+    <ChangelogItemVersion>
+      <h2 id="1-0-0">
+        <a href="#1-0-0">1.0.0</a>
+      </h2>
+    </ChangelogItemVersion>
+
+    <ChangelogItemTitle>首个组件版本发布</ChangelogItemTitle>
+
+    <ChangelogItemDescription>
+      JetBrains UI 的第一批公开组件现已整理到文档站点，并通过 registry
+      提供安装入口。
+    </ChangelogItemDescription>
+
+    ### Components
+
+    - 当前已发布的核心组件包括：`Alert`、`Button`、`Checkbox`、
+      `ComboBox`、`ContextMenu`、`DropdownMenu`、`Input`、`Radio`、
+      `Resizable`、`ScrollArea`、`Tabs`、`Tree`、`Toggle` 和 `Tooltip`。
+    - 组合式基础构件也已提供：`Label`、`Separator` 和 `Switch`。
+    - Tabs 当前包含两种形态：基础 `Tabs` 与数据驱动的 `DynamicTabs`。
+
+    ### Icons
+
+    - 图标库现已纳入文档站点与 registry 源码体系，当前覆盖 13 个顶层分类：
+      `breakpoints`、`build`、`database`、`debugger`、`editor-icons`、
+      `file-types`、`general`、`nodes`、`plugins`、`run`、
+      `run-configurations`、`terminal` 和 `vcs`。
+    - 已为当前发布的图标集提供独立 gallery 页面，其中包含 21 个 `general`
+      子分类 gallery，以及 33 个 `plugins` 子分类 gallery。
+    - 图标文档现已包含用法预览、详情预览、可搜索 gallery、尺寸切换，以及默认跟随整站主题的
+      Light/Dark 预览模式。
+
+    ### Documentation
+
+    - 当前组件集已经补齐中英文文档。
+    - 每个已开放的组件页面都包含安装方式、用法示例和实时 demo。
+    - 文档目录已收敛到当前实际维护的组件范围。
+
+    ### Registry
+
+    - 已发布组件均提供对应的 registry 条目与 demo 条目，方便直接安装和预览。
+    - `DropdownMenu` 的 item 高度与间距已对齐 `ContextMenu`，统一菜单体系的尺寸节奏。
+
+  </ChangelogItem>
+</Changelog>

@@ -1,0 +1,107 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type LoadSwiftPackageManagerChangesProps = IconProps;
+
+const LoadSwiftPackageManagerChangesLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8.21 1.046a.5.5 0 0 0-.42 0l-6.5 3A.5.5 0 0 0 1 4.5v7.02a.5.5 0 0 0 .292.454l6.5 2.98A.5.5 0 0 0 8 15a5 5 0 0 1-.733-1.386L2 11.199V5.281l5.233 2.416a1.5 1.5 0 0 1 2.25-.33L14 5.28v2.135q.537.236 1 .584V4.5a.5.5 0 0 0-.29-.454zM2.693 4.5 8 2.05l5.307 2.45L8 6.95z"
+      fill="#6C707E"
+    />
+    <path
+      d="M14 7.416V5.281L9.482 7.366q.108.094.196.205A5 5 0 0 1 12 7c.71 0 1.387.149 2 .416M7.233 7.697 2 5.28V11.2l5.267 2.415a5 5 0 0 1-.216-.902 1.5 1.5 0 0 1 .35-1.192A1.5 1.5 0 0 1 7 10.5v-2c0-.296.085-.571.233-.803M8 2.05 2.693 4.5 8 6.95l5.307-2.45z"
+      fill="#EBECF0"
+    />
+    <path
+      d="M8.5 8a.5.5 0 0 1 .5.5v.826l.181-.164A4 4 0 0 1 12.001 8a4.005 4.005 0 0 1 3.96 3.43.5.5 0 1 1-.991.14 2.97 2.97 0 0 0-.849-1.691A3 3 0 0 0 12.002 9c-.83 0-1.579.335-2.122.879l-.009.009-.124.112h.754a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5M8.465 12.005a.5.5 0 0 1 .566.424c.093.656.4 1.244.848 1.692A3 3 0 0 0 12 15c.829 0 1.578-.335 2.122-.879l.008-.009.119-.112H13.5a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-.834l-.176.167A4 4 0 0 1 12 16a4 4 0 0 1-2.828-1.172 4 4 0 0 1-1.131-2.257.5.5 0 0 1 .424-.566"
+      fill="#3574F0"
+    />
+  </svg>
+);
+
+const LoadSwiftPackageManagerChangesDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8.21 1.046a.5.5 0 0 0-.42 0l-6.5 3A.5.5 0 0 0 1 4.5v7.02a.5.5 0 0 0 .292.454l6.5 2.98A.5.5 0 0 0 8 15a5 5 0 0 1-.733-1.386L2 11.199V5.281l5.233 2.416a1.5 1.5 0 0 1 2.25-.33L14 5.28v2.135q.537.236 1 .584V4.5a.5.5 0 0 0-.29-.454zM2.693 4.5 8 2.05l5.307 2.45L8 6.95z"
+      fill="#CED0D6"
+    />
+    <path
+      d="M14 7.416V5.281L9.482 7.366q.108.094.196.205A5 5 0 0 1 12 7c.71 0 1.387.149 2 .416M7.233 7.697 2 5.28V11.2l5.267 2.415a5 5 0 0 1-.216-.902 1.5 1.5 0 0 1 .35-1.192A1.5 1.5 0 0 1 7 10.5v-2c0-.296.085-.571.233-.803M8 2.05 2.693 4.5 8 6.95l5.307-2.45z"
+      fill="#43454A"
+    />
+    <path
+      d="M8.5 8a.5.5 0 0 1 .5.5v.826l.181-.164A4 4 0 0 1 12.001 8a4.005 4.005 0 0 1 3.96 3.43.5.5 0 1 1-.991.14 2.97 2.97 0 0 0-.849-1.691A3 3 0 0 0 12.002 9c-.83 0-1.579.335-2.122.879l-.009.009-.124.112h.754a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5M8.465 12.005a.5.5 0 0 1 .566.424c.093.656.4 1.244.848 1.692A3 3 0 0 0 12 15c.829 0 1.578-.335 2.122-.879l.008-.009.119-.112H13.5a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-.834l-.176.167A4 4 0 0 1 12 16a4 4 0 0 1-2.828-1.172 4 4 0 0 1-1.131-2.257.5.5 0 0 1 .424-.566"
+      fill="#548AF7"
+    />
+  </svg>
+);
+
+export const LoadSwiftPackageManagerChanges: React.FC<
+  LoadSwiftPackageManagerChangesProps
+> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light'
+      ? LoadSwiftPackageManagerChangesLight
+      : LoadSwiftPackageManagerChangesDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

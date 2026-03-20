@@ -1,0 +1,26 @@
+{
+  "name": "icons-run-smart-step-into",
+  "type": "registry:ui",
+  "title": "Smart Step Into",
+  "description": "Smart Step Into icon from Run category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/smart-step-into/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/smart-step-into/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type SmartStepIntoProps = IconProps;\n\nconst SmartStepIntoLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect x=\"9\" y=\"12\" width=\"6\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"9\" y=\"9\" width=\"6\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"9\" y=\"6\" width=\"6\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <rect x=\"9\" y=\"3\" width=\"6\" height=\"1\" rx=\".5\" fill=\"#6C707E\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M5.654 5.646a.5.5 0 1 0-.708.708L6.093 7.5H1.5a.5.5 0 0 0 0 1h4.593L4.946 9.646a.5.5 0 0 0 .708.708l2-2L8.007 8l-.353-.354z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst SmartStepIntoDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect x=\"9\" y=\"12\" width=\"6\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"9\" y=\"9\" width=\"6\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"9\" y=\"6\" width=\"6\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect x=\"9\" y=\"3\" width=\"6\" height=\"1\" rx=\".5\" fill=\"#CED0D6\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M5.654 5.646a.5.5 0 1 0-.708.708L6.093 7.5H1.5a.5.5 0 0 0 0 1h4.593L4.946 9.646a.5.5 0 0 0 .708.708l2-2L8.007 8l-.353-.354z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const SmartStepInto: FC<SmartStepIntoProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? SmartStepIntoLight : SmartStepIntoDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "smart-step-into",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

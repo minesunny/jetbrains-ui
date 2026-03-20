@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-scala-abstract-field-variable",
+  "type": "registry:ui",
+  "title": "Abstract Field Variable",
+  "description": "Abstract Field Variable icon from Plugins Scala category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/abstract-field-variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-field-variable/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type AbstractFieldVariableProps = IconProps;\n\nconst AbstractFieldVariableLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path d=\"M12.949 3.05a7 7 0 1 1-9.9 9.9 7 7 0 0 1 9.9-9.9\" fill=\"#FAF5FF\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m14.913 6.905-.987.155a5.97 5.97 0 0 0-1.684-3.303 5.97 5.97 0 0 0-3.303-1.683l.155-.988A6.97 6.97 0 0 1 12.95 3.05a6.97 6.97 0 0 1 1.964 3.855m-8.01-5.82.157.989c-1.21.19-2.37.75-3.304 1.683A5.97 5.97 0 0 0 2.073 7.06l-.988-.155A6.97 6.97 0 0 1 3.049 3.05a6.97 6.97 0 0 1 3.855-1.964m-5.818 8.01a6.97 6.97 0 0 0 1.964 3.855 6.97 6.97 0 0 0 3.855 1.964l.156-.987a5.97 5.97 0 0 1-3.304-1.684A5.97 5.97 0 0 1 2.073 8.94zm8.01 5.82-.156-.988a5.97 5.97 0 0 0 3.303-1.684 5.97 5.97 0 0 0 1.684-3.303l.987.155a6.97 6.97 0 0 1-1.964 3.855 6.97 6.97 0 0 1-3.855 1.964\"\n      fill=\"#834DF0\"\n    />\n    <path\n      d=\"M7.547 11.4h.92l2.355-6H9.791l-1.746 4.705L6.24 5.4H5.18z\"\n      fill=\"#834DF0\"\n    />\n  </svg>\n);\n\nconst AbstractFieldVariableDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path d=\"M12.949 3.05a7 7 0 1 1-9.9 9.9 7 7 0 0 1 9.9-9.9\" fill=\"#2F2936\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m14.913 6.905-.987.155a5.97 5.97 0 0 0-1.684-3.303 5.97 5.97 0 0 0-3.303-1.683l.155-.988A6.97 6.97 0 0 1 12.95 3.05a6.97 6.97 0 0 1 1.964 3.855m-8.01-5.82.157.989c-1.21.19-2.37.75-3.304 1.683A5.97 5.97 0 0 0 2.073 7.06l-.988-.155A6.97 6.97 0 0 1 3.049 3.05a6.97 6.97 0 0 1 3.855-1.964m-5.818 8.01a6.97 6.97 0 0 0 1.964 3.855 6.97 6.97 0 0 0 3.855 1.964l.156-.987a5.97 5.97 0 0 1-3.304-1.684A5.97 5.97 0 0 1 2.073 8.94zm8.01 5.82-.156-.988a5.97 5.97 0 0 0 3.303-1.684 5.97 5.97 0 0 0 1.684-3.303l.987.155a6.97 6.97 0 0 1-1.964 3.855 6.97 6.97 0 0 1-3.855 1.964\"\n      fill=\"#B589EC\"\n    />\n    <path\n      d=\"M7.547 11.4h.92l2.355-6H9.791l-1.746 4.705L6.24 5.4H5.18z\"\n      fill=\"#B589EC\"\n    />\n  </svg>\n);\n\nexport const AbstractFieldVariable: React.FC<AbstractFieldVariableProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? AbstractFieldVariableLight : AbstractFieldVariableDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "abstract-field-variable",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

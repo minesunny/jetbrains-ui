@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-foreign-table",
+  "type": "registry:ui",
+  "title": "Foreign Table",
+  "description": "Foreign Table icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/foreign-table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/foreign-table/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "foreign-table",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

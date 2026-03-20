@@ -1,0 +1,66 @@
+---
+title: Changelog
+description: Latest updates and announcements.
+---
+
+import {
+  Changelog,
+  ChangelogItem,
+  ChangelogItemDescription,
+  ChangelogItemTitle,
+  ChangelogItemVersion,
+} from '@/components/docs/changelog';
+
+<Changelog>
+  <ChangelogItem date="2026-03-21" major>
+    <ChangelogItemVersion>
+      <h2 id="1-0-0">
+        <a href="#1-0-0">1.0.0</a>
+      </h2>
+    </ChangelogItemVersion>
+
+    <ChangelogItemTitle>Initial component release</ChangelogItemTitle>
+
+    <ChangelogItemDescription>
+      The first public release of JetBrains UI is now documented in the site and
+      available through the registry.
+    </ChangelogItemDescription>
+
+    ### Components
+
+    - Core components are now available: `Alert`, `Button`, `Checkbox`,
+      `ComboBox`, `ContextMenu`, `DropdownMenu`, `Input`, `Radio`,
+      `Resizable`, `ScrollArea`, `Tabs`, `Tree`, `Toggle`, and `Tooltip`.
+    - Supporting building blocks are included for composition: `Label`,
+      `Separator`, and `Switch`.
+    - Tabs now ship in two forms: base `Tabs` and data-driven `DynamicTabs`.
+
+    ### Icons
+
+    - The icon library is now available in docs and registry-friendly source,
+      covering 13 top-level collections: `breakpoints`, `build`, `database`,
+      `debugger`, `editor-icons`, `file-types`, `general`, `nodes`, `plugins`,
+      `run`, `run-configurations`, `terminal`, and `vcs`.
+    - The docs include dedicated gallery pages for the released icon sets,
+      including 21 `general` sub-galleries and 33 `plugins` sub-galleries.
+    - Icon docs now ship with usage previews, detail previews, searchable
+      gallery views, size switching, and light/dark preview modes that follow
+      the current site theme by default.
+
+    ### Documentation
+
+    - English and Chinese docs are available for the current component set.
+    - Each documented component includes installation guidance, usage snippets,
+      and live demos.
+    - The docs structure has been trimmed to the components that are currently
+      maintained in the library.
+
+    ### Registry
+
+    - The registry now exposes installable component entries and demo entries
+      for the released components.
+    - Dropdown menu item sizing and spacing have been aligned with context menu
+      items for a more consistent menu system.
+
+  </ChangelogItem>
+</Changelog>

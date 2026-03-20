@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-reader-mode",
+  "type": "registry:ui",
+  "title": "Reader Mode",
+  "description": "Reader Mode icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/reader-mode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/reader-mode/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "reader-mode",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-ruby-undocumented-task",
+  "type": "registry:ui",
+  "title": "Undocumented Task",
+  "description": "Undocumented Task icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/undocumented-task/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/undocumented-task/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type UndocumentedTaskProps = IconProps;\n\nconst UndocumentedTaskLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M13 5a2 2 0 1 0-1.723-.984L7.5 7.793 5.914 6.207a2 2 0 0 0-2.828 0l-1.94 1.94a.5.5 0 1 0 .708.707L3 7.707 4.293 9l-1.147 1.146a.5.5 0 0 0 .708.708L5 9.707 6.293 11l-1.147 1.146a.5.5 0 0 0 .708.708L7 11.707 8.293 13l-1.147 1.146a.5.5 0 0 0 .708.708L9 13.707v-1.414L3.707 7l.086-.086a1 1 0 0 1 1.414 0l3.879 3.879q.104.105.17.227a2 2 0 0 1 .713-.734 2 2 0 0 0-.176-.2L8.207 8.5l3.777-3.777C12.282 4.9 12.629 5 13 5m0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2\"\n      fill=\"#DB3B4B\"\n    />\n    <path fill=\"#EBECF0\" d=\"M11 12H15V15H11z\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M15 11v-1a2 2 0 1 0-4 0v1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1m-3-1a1 1 0 1 1 2 0v1h-2zm-1 5v-3h4v3z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst UndocumentedTaskDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M13 5a2 2 0 1 0-1.723-.984L7.5 7.793 5.914 6.207a2 2 0 0 0-2.828 0l-1.94 1.94a.5.5 0 1 0 .708.707L3 7.707 4.293 9l-1.147 1.146a.5.5 0 0 0 .708.708L5 9.707 6.293 11l-1.147 1.146a.5.5 0 0 0 .708.708L7 11.707 8.293 13l-1.147 1.146a.5.5 0 0 0 .708.708L9 13.707v-1.414L3.707 7l.086-.086a1 1 0 0 1 1.414 0l3.879 3.879q.104.105.17.227a2 2 0 0 1 .713-.734 2 2 0 0 0-.176-.2L8.207 8.5l3.777-3.777C12.282 4.9 12.629 5 13 5m0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2\"\n      fill=\"#DB5C5C\"\n    />\n    <path fill=\"#43454A\" d=\"M11 12H15V15H11z\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M15 11v-1a2 2 0 1 0-4 0v1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1m-3-1a1 1 0 1 1 2 0v1h-2zm-1 5v-3h4v3z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const UndocumentedTask: React.FC<UndocumentedTaskProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? UndocumentedTaskLight : UndocumentedTaskDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "undocumented-task",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

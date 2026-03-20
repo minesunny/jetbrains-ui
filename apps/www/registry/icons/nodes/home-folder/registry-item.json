@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-home-folder",
+  "type": "registry:ui",
+  "title": "Home Folder",
+  "description": "Home Folder icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/home-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/home-folder/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "home-folder",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

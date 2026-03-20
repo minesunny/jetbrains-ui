@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-i-phone-device",
+  "type": "registry:ui",
+  "title": "I Phone Device",
+  "description": "I Phone Device icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/i-phone-device/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/i-phone-device/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type IPhoneDeviceProps = IconProps;\n\nconst IPhoneDeviceLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M11 2H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3.168q.058.219.148.469.11.293.23.531H5a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v5.069q-.27.07-.516.19l-.004.002q-.255.123-.48.295V3a1 1 0 0 0-1-1\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M14.874 14.455q-.16.367-.383.677-.302.423-.493.586-.295.267-.634.274-.243 0-.586-.137a1.7 1.7 0 0 0-.63-.137q-.303 0-.649.137-.346.138-.56.144-.325.015-.648-.281-.207-.177-.516-.607a4.2 4.2 0 0 1-.546-1.065A3.8 3.8 0 0 1 9 12.776q0-.703.31-1.212a1.8 1.8 0 0 1 1.526-.888q.257 0 .678.155.42.155.538.155.088 0 .597-.183.48-.17.81-.141.9.07 1.35.698-.804.479-.796 1.34.008.67.494 1.113.219.205.493.318-.06.168-.126.324M13.5 9.14q0 .525-.39.98c-.313.36-.691.567-1.102.534a1 1 0 0 1-.008-.132c0-.337.149-.696.413-.99q.198-.224.503-.372.305-.145.576-.16.009.07.008.14\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst IPhoneDeviceDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M11 2H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3.168q.058.219.148.469.11.293.23.531H5a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v5.069q-.27.07-.516.19l-.004.002q-.255.123-.48.295V3a1 1 0 0 0-1-1\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M14.874 14.455q-.16.367-.383.677-.302.423-.493.586-.295.267-.634.274-.243 0-.586-.137a1.7 1.7 0 0 0-.63-.137q-.303 0-.649.137-.346.138-.56.144-.325.015-.648-.281-.207-.177-.516-.607a4.2 4.2 0 0 1-.546-1.065A3.8 3.8 0 0 1 9 12.776q0-.703.31-1.212a1.8 1.8 0 0 1 1.526-.888q.257 0 .678.155.42.155.538.155.088 0 .597-.183.48-.17.81-.141.9.07 1.35.698-.804.479-.796 1.34.008.67.494 1.113.219.205.493.318-.06.168-.126.324M13.5 9.14q0 .525-.39.98c-.313.36-.691.567-1.102.534a1 1 0 0 1-.008-.132c0-.337.149-.696.413-.99q.198-.224.503-.372.305-.145.576-.16.009.07.008.14\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const IPhoneDevice: React.FC<IPhoneDeviceProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? IPhoneDeviceLight : IPhoneDeviceDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "i-phone-device",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

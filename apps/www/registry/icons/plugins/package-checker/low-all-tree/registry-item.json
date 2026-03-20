@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-package-checker-low-all-tree",
+  "type": "registry:ui",
+  "title": "Low All Tree",
+  "description": "Low All Tree icon from Plugins Package Checker category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/package-checker/low-all-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/low-all-tree/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "low-all-tree",
+      "icon",
+      "plugins",
+      "package-checker",
+      "jetbrains"
+    ]
+  }
+}

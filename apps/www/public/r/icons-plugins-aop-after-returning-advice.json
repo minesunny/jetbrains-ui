@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-aop-after-returning-advice",
+  "type": "registry:ui",
+  "title": "After Returning Advice",
+  "description": "After Returning Advice icon from Plugins Aop category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/aop/after-returning-advice/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/after-returning-advice/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type AfterReturningAdviceProps = IconProps;\n\nconst AfterReturningAdviceLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M14.943 7.107A7 7 0 1 0 8.83 14.95l-1.39-1.39a1.5 1.5 0 0 1 0-2.122l3-3a1.5 1.5 0 0 1 2.12 2.122l-.439.439H14V8.5a1.5 1.5 0 0 1 .943-1.393\"\n      fill=\"#FFF7F7\"\n    />\n    <path\n      d=\"M16 8.5a.5.5 0 0 0-1 0V11a1 1 0 0 1-1 1H9.707l2.147-2.146a.5.5 0 0 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L9.707 13H14a2 2 0 0 0 2-2z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M8.296 6.315c.34-.668.958-1.07 1.77-1.07 1.15 0 1.934.826 1.934 2.114v.726a1.5 1.5 0 0 0-.999 0v-.647c0-.82-.425-1.33-1.177-1.33-.804 0-1.33.573-1.33 1.482v2.795l-.37.37h-.618V7.437c0-.82-.431-1.33-1.177-1.33-.815 0-1.33.573-1.33 1.482v3.164H4V5.372h.962v.877c.32-.64.887-1.003 1.645-1.003.799 0 1.397.397 1.689 1.07\"\n      fill=\"#DB3B4B\"\n    />\n    <path\n      d=\"M1.07 9a7 7 0 0 0 7.76 5.951L7.876 14A6 6 0 0 1 2.082 9z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M14 8h.085c.144-.407.458-.734.858-.893A7.001 7.001 0 0 0 1.07 7h1.012A6.002 6.002 0 0 1 14 8\"\n      fill=\"#DB3B4B\"\n    />\n  </svg>\n);\n\nconst AfterReturningAdviceDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M14.943 7.107A7 7 0 1 0 8.83 14.95l-1.39-1.39a1.5 1.5 0 0 1 0-2.122l3-3a1.5 1.5 0 0 1 2.12 2.122l-.439.439H14V8.5a1.5 1.5 0 0 1 .943-1.393\"\n      fill=\"#402929\"\n    />\n    <path\n      d=\"M16 8.5a.5.5 0 0 0-1 0V11a1 1 0 0 1-1 1H9.707l2.147-2.146a.5.5 0 0 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L9.707 13H14a2 2 0 0 0 2-2z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M8.296 6.315c.34-.668.958-1.07 1.77-1.07 1.15 0 1.934.826 1.934 2.114v.726a1.5 1.5 0 0 0-.999 0v-.647c0-.82-.425-1.33-1.177-1.33-.804 0-1.33.573-1.33 1.482v2.795l-.37.37h-.618V7.437c0-.82-.431-1.33-1.177-1.33-.815 0-1.33.573-1.33 1.482v3.164H4V5.372h.962v.877c.32-.64.887-1.003 1.645-1.003.799 0 1.397.397 1.689 1.07\"\n      fill=\"#DB5C5C\"\n    />\n    <path\n      d=\"M1.07 9a7 7 0 0 0 7.76 5.951L7.876 14A6 6 0 0 1 2.082 9z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M14 8h.085c.144-.407.458-.734.858-.893A7.001 7.001 0 0 0 1.07 7h1.012A6.002 6.002 0 0 1 14 8\"\n      fill=\"#DB5C5C\"\n    />\n  </svg>\n);\n\nexport const AfterReturningAdvice: React.FC<AfterReturningAdviceProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? AfterReturningAdviceLight : AfterReturningAdviceDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "after-returning-advice",
+      "icon",
+      "plugins",
+      "aop",
+      "jetbrains"
+    ]
+  }
+}

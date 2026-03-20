@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-kubernetes-helm-chart-lock",
+  "type": "registry:ui",
+  "title": "Helm Chart Lock",
+  "description": "Helm Chart Lock icon from Plugins Kubernetes category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kubernetes/helm-chart-lock/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helm-chart-lock/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "helm-chart-lock",
+      "icon",
+      "plugins",
+      "kubernetes",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+---
+title: Dynamic Tabs
+description: 基于 Tabs 的数据驱动封装组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+## 概述
+
+`Dynamic Tabs` 由 `DynamicTabs` 组件实现，是对 `Tabs` 的封装，可通过 `items` 数组自动渲染触发器和内容区。
+
+## 用法
+
+### 基本用法
+
+```tsx
+import { DynamicTabs } from '@/components/jetbrains-ui/tabs';
+
+const items = [
+  { value: 'overview', label: '概览', content: '概览内容' },
+  { value: 'settings', label: '设置', content: '设置内容' },
+];
+
+<DynamicTabs items={items} defaultValue="overview" />;
+```
+
+### 受控模式
+
+```tsx
+const [value, setValue] = React.useState('overview');
+
+<DynamicTabs
+  items={items}
+  value={value}
+  onValueChange={setValue}
+  orientation="horizontal"
+/>;
+```
+
+## API 参考
+
+### DynamicTabs
+
+<TypeTable
+  type={{
+    items: {
+      description: '用于渲染触发器与内容区的数据源',
+      type: 'DynamicTabsItem[]',
+      required: true,
+    },
+    value: {
+      description: '受控激活标签值',
+      type: 'string',
+      required: false,
+    },
+    defaultValue: {
+      description: '默认激活标签值',
+      type: 'string',
+      required: false,
+    },
+    onValueChange: {
+      description: '标签切换时触发回调',
+      type: '(value: string) => void',
+      required: false,
+    },
+    orientation: {
+      description: '标签方向',
+      type: '"horizontal" | "vertical"',
+      required: false,
+      default: '"horizontal"',
+    },
+    listClassName: {
+      description: 'TabsList 额外 className',
+      type: 'string',
+      required: false,
+    },
+    triggerClassName: {
+      description: '所有 TabsTrigger 的额外 className',
+      type: 'string',
+      required: false,
+    },
+    contentClassName: {
+      description: '所有 TabsContent 的额外 className',
+      type: 'string',
+      required: false,
+    },
+    emptyContent: {
+      description: 'items 为空时的兜底内容',
+      type: 'React.ReactNode',
+      required: false,
+    },
+  }}
+/>
+
+### DynamicTabsItem
+
+<TypeTable
+  type={{
+    value: {
+      description: '用于触发器与内容匹配的唯一值',
+      type: 'string',
+      required: true,
+    },
+    label: {
+      description: '触发器显示内容',
+      type: 'React.ReactNode',
+      required: true,
+    },
+    content: {
+      description: '在 TabsContent 中渲染的内容',
+      type: 'React.ReactNode',
+      required: true,
+    },
+    disabled: {
+      description: '是否禁用该标签项',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    triggerClassName: {
+      description: '当前标签触发器的额外 className',
+      type: 'string',
+      required: false,
+    },
+    contentClassName: {
+      description: '当前标签内容区的额外 className',
+      type: 'string',
+      required: false,
+    },
+  }}
+/>

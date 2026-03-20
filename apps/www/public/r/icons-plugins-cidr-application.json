@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-application",
+  "type": "registry:ui",
+  "title": "Application",
+  "description": "Application icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/application/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/application/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ApplicationProps = IconProps;\n\nconst ApplicationLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M8.74 7.528H6.97L5.83 9.625h3.727zM12.748 9.625H15V7.528h-3.068zM1 7.528h2.613L2.475 9.625H1zM5.032 6.07l-2.831 5.767-.063 2.186 1.627-1.503 2.84-5.785zM5.391 5.339l1.573.664.422-.86c.243-.494.058-.964-.352-1.143-.438-.191-.942-.087-1.245.529zM11.212 12.54l.003.006c.423 1.136 1.503 1.797 2.412 1.268l-.737-1.995zM10.848 11.558l1.679-.722c-1.339-3.621-3.434-9.29-3.54-9.566-.077-.2-.632-.334-1.051-.16-.421.173-.742.619-.665.819.062.162 2.61 7.024 3.577 9.629\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ApplicationDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M8.74 7.528H6.97L5.83 9.625h3.727zM12.748 9.625H15V7.528h-3.068zM1 7.528h2.613L2.475 9.625H1zM5.032 6.07l-2.831 5.767-.063 2.186 1.627-1.503 2.84-5.785zM5.391 5.339l1.573.664.422-.86c.243-.494.058-.964-.352-1.143-.438-.191-.942-.087-1.245.529zM11.212 12.54l.003.006c.423 1.136 1.503 1.797 2.412 1.268l-.737-1.995zM10.848 11.558l1.679-.722c-1.339-3.621-3.434-9.29-3.54-9.566-.077-.2-.632-.334-1.051-.16-.421.173-.742.619-.665.819.062.162 2.61 7.024 3.577 9.629\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const Application: React.FC<ApplicationProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ApplicationLight : ApplicationDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "application",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-kotlin",
+  "type": "registry:ui",
+  "title": "Kotlin",
+  "description": "Kotlin icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/kotlin/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "kotlin",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

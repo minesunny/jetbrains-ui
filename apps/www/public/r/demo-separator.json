@@ -1,0 +1,31 @@
+{
+  "name": "demo-separator",
+  "type": "registry:ui",
+  "title": "Separator Demo",
+  "description": "Demo showing separator component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/separator"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/separator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/separator.tsx",
+      "content": "import { Separator } from '@/components/jetbrains-ui/separator';\n\ninterface SeparatorDemoProps {\n  orientation: 'horizontal' | 'vertical';\n}\n\nexport default function SeparatorDemo({ orientation }: SeparatorDemoProps) {\n  if (orientation === 'vertical') {\n    return (\n      <div className=\"flex h-16 items-center gap-3 text-sm\">\n        <span>Left</span>\n        <Separator orientation=\"vertical\" />\n        <span>Right</span>\n      </div>\n    );\n  }\n\n  return (\n    <div className=\"w-[320px] space-y-2 text-sm\">\n      <p>Top content</p>\n      <Separator />\n      <p>Bottom content</p>\n    </div>\n  );\n}"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "Separator": {
+        "orientation": {
+          "value": "horizontal",
+          "options": {
+            "horizontal": "horizontal",
+            "vertical": "vertical"
+          }
+        }
+      }
+    }
+  }
+}

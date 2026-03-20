@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-vite-js",
+  "type": "registry:ui",
+  "title": "Vite Js",
+  "description": "Vite Js icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/vite-js/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/vite-js/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ViteJSProps = IconProps;\n\nconst ViteJSLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\">\n      <path\n        d=\"m.975 2.898 6.586 12.031a.5.5 0 0 0 .878 0l6.586-12.031a.5.5 0 0 0-.506-.736l-6.452.874a.5.5 0 0 1-.134 0l-6.452-.874a.5.5 0 0 0-.506.736\"\n        fill=\"url(#b)\"\n      />\n      <path\n        d=\"m12.809 3.923-4.663 9.032c-.106.206-.418.097-.373-.13l.66-3.353a.2.2 0 0 0-.26-.228l-.858.29a.2.2 0 0 1-.261-.221l.397-2.415a.2.2 0 0 0-.247-.226l-1.433.363a.2.2 0 0 1-.248-.21l.464-5.655a.2.2 0 0 1 .166-.181L11.66.058a.2.2 0 0 1 .221.266l-1.256 3.399a.2.2 0 0 0 .228.265l1.74-.353a.2.2 0 0 1 .217.288\"\n        fill=\"url(#c)\"\n      />\n    </g>\n    <defs>\n      <linearGradient\n        id=\"b\"\n        x1=\".884\"\n        y1=\"1.592\"\n        x2=\"9.671\"\n        y2=\"12.877\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stopColor=\"#41D1FF\" />\n        <stop offset=\"1\" stopColor=\"#BD34FE\" />\n      </linearGradient>\n      <linearGradient\n        id=\"c\"\n        x1=\"7.599\"\n        y1=\".296\"\n        x2=\"9.212\"\n        y2=\"11.762\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stopColor=\"#FFEA83\" />\n        <stop offset=\".083\" stopColor=\"#FFDD35\" />\n        <stop offset=\"1\" stopColor=\"#FFA800\" />\n      </linearGradient>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nconst ViteJSDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 17\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M.968 2.927 7.56 15.148a.5.5 0 0 0 .88 0l6.593-12.221a.5.5 0 0 0-.509-.733l-6.456.886a.5.5 0 0 1-.136 0l-6.456-.886a.5.5 0 0 0-.508.733\"\n      fill=\"url(#a)\"\n    />\n    <path\n      d=\"m12.812 3.975-4.666 9.173c-.105.207-.418.099-.374-.129l.662-3.41a.2.2 0 0 0-.261-.227l-.857.294a.2.2 0 0 1-.263-.221l.398-2.459a.2.2 0 0 0-.247-.225l-1.432.368a.2.2 0 0 1-.25-.21l.465-5.744a.2.2 0 0 1 .166-.181L11.66.058a.2.2 0 0 1 .222.266l-1.26 3.46a.2.2 0 0 0 .229.263l1.742-.358a.2.2 0 0 1 .219.286\"\n      fill=\"url(#b)\"\n    />\n    <defs>\n      <linearGradient\n        id=\"a\"\n        x1=\".884\"\n        y1=\"1.615\"\n        x2=\"9.833\"\n        y2=\"12.94\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stopColor=\"#41D1FF\" />\n        <stop offset=\"1\" stopColor=\"#BD34FE\" />\n      </linearGradient>\n      <linearGradient\n        id=\"b\"\n        x1=\"7.599\"\n        y1=\".3\"\n        x2=\"9.259\"\n        y2=\"11.93\"\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stopColor=\"#FFEA83\" />\n        <stop offset=\".083\" stopColor=\"#FFDD35\" />\n        <stop offset=\"1\" stopColor=\"#FFA800\" />\n      </linearGradient>\n    </defs>\n  </svg>\n);\n\nexport const ViteJS: FC<ViteJSProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ViteJSLight : ViteJSDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "vite-js",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

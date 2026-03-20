@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-chameleon",
+  "type": "registry:ui",
+  "title": "Chameleon",
+  "description": "Chameleon icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/chameleon/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/chameleon/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "chameleon",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

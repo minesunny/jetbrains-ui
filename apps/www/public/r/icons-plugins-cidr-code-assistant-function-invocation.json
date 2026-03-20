@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-code-assistant-function-invocation",
+  "type": "registry:ui",
+  "title": "Code Assistant Function Invocation",
+  "description": "Code Assistant Function Invocation icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-function-invocation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-function-invocation/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type CodeAssistantFunctionInvocationProps = IconProps;\n\nconst CodeAssistantFunctionInvocationLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11.146 8.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L13.293 12H7.5a.5.5 0 0 1 0-1h5.793l-2.147-2.146a.5.5 0 0 1 0-.708\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M2 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4.879l-1.44-1.44a1.5 1.5 0 0 0-2.12 2.122l.439.439H7.5A1.5 1.5 0 0 0 6 11.5V14H4a2 2 0 0 1-2-2z\"\n      fill=\"#FFF7F7\"\n    />\n    <path\n      d=\"M2 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4.879l-1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2v1H4a2 2 0 0 1-2-2z\"\n      fill=\"#DB3B4B\"\n    />\n    <path\n      d=\"M8.275 7.327V10H7.5q-.123 0-.242.02V7.326H6.121V6.43h1.137V5.406C7.258 4.57 7.875 4 8.778 4h1.103v.874H8.875c-.354 0-.6.246-.6.606v.95H9.83v.897z\"\n      fill=\"#DB3B4B\"\n    />\n  </svg>\n);\n\nconst CodeAssistantFunctionInvocationDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11.146 8.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L13.293 12H7.5a.5.5 0 0 1 0-1h5.793l-2.147-2.146a.5.5 0 0 1 0-.708\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M2 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4.879l-1.44-1.44a1.5 1.5 0 0 0-2.12 2.122l.439.439H7.5A1.5 1.5 0 0 0 6 11.5V14H4a2 2 0 0 1-2-2z\"\n      fill=\"#402929\"\n    />\n    <path\n      d=\"M2 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4.879l-1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2v1H4a2 2 0 0 1-2-2z\"\n      fill=\"#DB5C5C\"\n    />\n    <path\n      d=\"M8.275 7.327V10H7.5q-.123 0-.242.02V7.326H6.121V6.43h1.137V5.406C7.258 4.57 7.875 4 8.778 4h1.103v.874H8.875c-.354 0-.6.246-.6.606v.95H9.83v.897z\"\n      fill=\"#DB5C5C\"\n    />\n  </svg>\n);\n\nexport const CodeAssistantFunctionInvocation: React.FC<\n  CodeAssistantFunctionInvocationProps\n> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light'\n      ? CodeAssistantFunctionInvocationLight\n      : CodeAssistantFunctionInvocationDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "code-assistant-function-invocation",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

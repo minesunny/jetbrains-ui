@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-inspections-pause",
+  "type": "registry:ui",
+  "title": "Inspections Pause",
+  "description": "Inspections Pause icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/inspections-pause/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inspections-pause/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "inspections-pause",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

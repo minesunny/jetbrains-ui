@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-elasticsearch",
+  "type": "registry:ui",
+  "title": "Elasticsearch",
+  "description": "Elasticsearch icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/elasticsearch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/elasticsearch/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "elasticsearch",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

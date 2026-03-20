@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-debugger-evaluation-result",
+  "type": "registry:ui",
+  "title": "Evaluation Result",
+  "description": "Evaluation Result icon from Debugger category.",
+  "registryDependencies": [
+    "icons-debugger-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/debugger/evaluation-result/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/debugger/evaluation-result/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "evaluation-result",
+      "icon",
+      "debugger",
+      "jetbrains"
+    ]
+  }
+}

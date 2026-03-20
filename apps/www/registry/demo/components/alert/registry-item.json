@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-alert",
+  "type": "registry:ui",
+  "title": "Alert Demo",
+  "description": "Demo showing alert dialog component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/alert",
+    "@jetbrains-ui/buttons",
+    "@jetbrains-ui/checkbox",
+    "@jetbrains-ui/icons-general-general-help"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/alert/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/alert.tsx"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "Alert": {
+        "type": {
+          "value": "info",
+          "options": {
+            "info": "info",
+            "error": "error",
+            "warning": "warning",
+            "question": "question"
+          }
+        },
+        "help": {
+          "value": true
+        }
+      }
+    }
+  }
+}

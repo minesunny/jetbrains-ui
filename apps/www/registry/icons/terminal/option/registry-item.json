@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-terminal-option",
+  "type": "registry:ui",
+  "title": "Option",
+  "description": "Option icon from Terminal category.",
+  "registryDependencies": [
+    "icons-terminal-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/terminal/option/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/terminal/option/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "option",
+      "icon",
+      "terminal",
+      "jetbrains"
+    ]
+  }
+}

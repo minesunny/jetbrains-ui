@@ -1,0 +1,25 @@
+---
+title: 组件
+description: 基于 JetBrains UI 设计系统的组件集合。
+---
+
+<Cards>
+  {[
+    { title: 'Alert', slug: 'alert' },
+    { title: 'Button', slug: 'button' },
+    { title: 'Checkbox', slug: 'checkbox' },
+    { title: 'Combo Box', slug: 'combo-box' },
+    { title: 'Context Menu', slug: 'context-menu' },
+    { title: 'Dropdown', slug: 'dropdown-menu' },
+    { title: 'Input Field', slug: 'input' },
+    { title: 'Radio Button', slug: 'radio' },
+    { title: 'Resizable', slug: 'resizable' },
+    { title: 'Scrollbar', slug: 'scroll-area' },
+    { title: 'Tab', slug: 'tabs' },
+    { title: 'Tree', slug: 'tree' },
+    { title: 'Toggle', slug: 'toggle' },
+    { title: 'Tooltip', slug: 'tooltip' },
+  ].map(({ title, slug }) => (
+    <Card key={slug} href={`/docs/components/${slug}`} title={title} accent />
+  ))}
+</Cards>

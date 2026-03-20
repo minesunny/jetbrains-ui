@@ -1,0 +1,82 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type MatchCaseProps = IconProps;
+
+const MatchCaseLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M4.516 13q-1.247 0-2.256-.61a4.35 4.35 0 0 1-1.585-1.688Q.1 9.63.1 8.3q0-1.33.575-2.402A4.3 4.3 0 0 1 4.515 3.6q1.03 0 1.924.409a3.94 3.94 0 0 1 1.47 1.11q.576.708.684 1.571H7.315q-.135-.525-.55-.96a2.9 2.9 0 0 0-1.003-.682A3.2 3.2 0 0 0 4.516 4.8q-.883 0-1.585.448a3.1 3.1 0 0 0-1.106 1.246Q1.43 7.294 1.43 8.3t.396 1.805q.403.798 1.106 1.246t1.585.448q.651 0 1.246-.247.594-.247 1.003-.675.415-.435.55-.96h1.278q-.108.863-.684 1.57a4 4 0 0 1-1.47 1.11A4.6 4.6 0 0 1 4.516 13M12.8 13q-.946 0-1.706-.454a3.24 3.24 0 0 1-1.195-1.247 3.66 3.66 0 0 1-.435-1.779q0-.98.435-1.772.435-.798 1.195-1.253a3.26 3.26 0 0 1 1.706-.454 3.65 3.65 0 0 1 1.45.279q.66.28 1.08.811.429.532.57 1.266h-1.253a1.6 1.6 0 0 0-.409-.662 1.8 1.8 0 0 0-.652-.409 2.2 2.2 0 0 0-.786-.143q-.582 0-1.048.3-.466.297-.729.83-.255.532-.255 1.207 0 .67.255 1.201.262.532.729.838.466.299 1.048.299.416 0 .786-.137.378-.143.652-.415.281-.273.409-.662H15.9a2.7 2.7 0 0 1-.576 1.246q-.435.533-1.092.824Q13.58 13 12.8 13"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const MatchCaseDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M4.516 13q-1.247 0-2.256-.61a4.35 4.35 0 0 1-1.585-1.688Q.1 9.63.1 8.3q0-1.33.575-2.402A4.3 4.3 0 0 1 4.515 3.6q1.03 0 1.924.409a3.94 3.94 0 0 1 1.47 1.11q.576.708.684 1.571H7.315q-.135-.525-.55-.96a2.9 2.9 0 0 0-1.003-.682A3.2 3.2 0 0 0 4.516 4.8q-.883 0-1.585.448a3.1 3.1 0 0 0-1.106 1.246Q1.43 7.294 1.43 8.3t.396 1.805q.403.798 1.106 1.246t1.585.448q.651 0 1.246-.247.594-.247 1.003-.675.415-.435.55-.96h1.278q-.108.863-.684 1.57a4 4 0 0 1-1.47 1.11A4.6 4.6 0 0 1 4.516 13M12.8 13q-.946 0-1.706-.454a3.24 3.24 0 0 1-1.195-1.247 3.66 3.66 0 0 1-.435-1.779q0-.98.435-1.772.435-.798 1.195-1.253a3.26 3.26 0 0 1 1.706-.454 3.65 3.65 0 0 1 1.45.279q.66.28 1.08.811.429.532.57 1.266h-1.253a1.6 1.6 0 0 0-.409-.662 1.8 1.8 0 0 0-.652-.409 2.2 2.2 0 0 0-.786-.143q-.582 0-1.048.3-.466.297-.729.83-.255.532-.255 1.207 0 .67.255 1.201.262.532.729.838.466.299 1.048.299.416 0 .786-.137.378-.143.652-.415.281-.273.409-.662H15.9a2.7 2.7 0 0 1-.576 1.246q-.435.533-1.092.824Q13.58 13 12.8 13"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const MatchCase: FC<MatchCaseProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? MatchCaseLight : MatchCaseDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

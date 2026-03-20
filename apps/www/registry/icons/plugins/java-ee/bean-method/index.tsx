@@ -1,0 +1,98 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type BeanMethodProps = IconProps;
+
+const BeanMethodLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      d="M8 10.062v-.061H7v6h1v-3.54q0-.526.188-.918.193-.392.544-.602c.238-.14.58-.211.893-.211q.433 0 .737.187.31.187.474.538t.164.825V16h1v-3.539q0-.526.193-.912c.129-.261.379-.462.613-.603q.351-.216.819-.216.433 0 .737.187.31.187.468.538c.11.234.17.51.17.825V16h1v-3.778q0-.708-.275-1.24a1.93 1.93 0 0 0-.76-.82 2.17 2.17 0 0 0-1.13-.292q-.697 0-1.216.34c-.325.21-.64.504-.832.88l-.05-.109a1.9 1.9 0 0 0-.737-.819 2.07 2.07 0 0 0-1.112-.292c-.452 0-.91.11-1.238.328q-.4.27-.65.736z"
+      fill="#6C707E"
+    />
+    <path
+      d="M15 9.074c.012-1.929-.947-3.899-2.579-5.53C9.556.677 5.603-.035 2.77 2.8s-2.02 6.936.72 9.675A9.2 9.2 0 0 0 6 14.278V9h2.908c.328-.092.666-.131.98-.131a3.07 3.07 0 0 1 1.954.664q.116-.088.23-.162a3.18 3.18 0 0 1 1.764-.502c.404 0 .796.065 1.164.204"
+      fill="#FFF4EB"
+    />
+    <path
+      d="M15 9.074c.012-1.929-.947-3.899-2.579-5.53C9.556.677 5.603-.035 2.77 2.8s-2.02 6.936.72 9.675A9.2 9.2 0 0 0 6 14.278v-1.13a8.4 8.4 0 0 1-1.802-1.381c-1.236-1.235-2-2.743-2.163-4.205-.144-1.29.174-2.574 1.104-3.684l5.123 5.123h.646c.217-.06.438-.098.654-.117L3.846 3.17c1.115-.943 2.372-1.273 3.63-1.138 1.429.153 2.93.915 4.237 2.22 1.312 1.313 2.09 2.807 2.253 4.228q.022.198.03.394c.347.016.684.08 1.004.201"
+      fill="#E66D17"
+    />
+  </svg>
+);
+
+const BeanMethodDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      d="M8 10.062v-.061H7v6h1v-3.54q0-.526.188-.918.193-.392.544-.602c.238-.14.58-.211.893-.211q.433 0 .737.187.31.187.474.538t.164.825V16h1v-3.539q0-.526.193-.912c.129-.261.379-.462.613-.603q.351-.216.819-.216.433 0 .737.187.31.187.468.538c.11.234.17.51.17.825V16h1v-3.778q0-.708-.275-1.24a1.93 1.93 0 0 0-.76-.82 2.17 2.17 0 0 0-1.13-.292q-.697 0-1.216.34c-.325.21-.64.504-.832.88l-.05-.109a1.9 1.9 0 0 0-.737-.819 2.07 2.07 0 0 0-1.112-.292c-.452 0-.91.11-1.238.328q-.4.27-.65.736z"
+      fill="#CED0D6"
+    />
+    <path
+      d="M15 9.074c.012-1.929-.947-3.899-2.579-5.53C9.556.677 5.603-.035 2.77 2.8s-2.02 6.936.72 9.675A9.2 9.2 0 0 0 6 14.278V9h2.908c.328-.092.666-.131.98-.131a3.07 3.07 0 0 1 1.954.664q.116-.088.23-.162a3.18 3.18 0 0 1 1.764-.502c.404 0 .796.065 1.164.204"
+      fill="#45322B"
+    />
+    <path
+      d="M15 9.074c.012-1.929-.947-3.899-2.579-5.53C9.556.677 5.603-.035 2.77 2.8s-2.02 6.936.72 9.675A9.2 9.2 0 0 0 6 14.278v-1.13a8.4 8.4 0 0 1-1.802-1.381c-1.236-1.235-2-2.743-2.163-4.205-.144-1.29.174-2.574 1.104-3.684l5.123 5.123h.646c.217-.06.438-.098.654-.117L3.846 3.17c1.115-.943 2.372-1.273 3.63-1.138 1.429.153 2.93.915 4.237 2.22 1.312 1.313 2.09 2.807 2.253 4.228q.022.198.03.394c.347.016.684.08 1.004.201"
+      fill="#C77D55"
+    />
+  </svg>
+);
+
+export const BeanMethod: React.FC<BeanMethodProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? BeanMethodLight : BeanMethodDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

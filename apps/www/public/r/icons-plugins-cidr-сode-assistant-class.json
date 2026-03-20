@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-сode-assistant-class",
+  "type": "registry:ui",
+  "title": "Сode Assistant Class",
+  "description": "Сode Assistant Class icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/сode-assistant-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/сode-assistant-class/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type СodeAssistantClassProps = IconProps;\n\nconst СodeAssistantClassLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"2.5\"\n      y=\"2.5\"\n      width=\"11\"\n      height=\"11\"\n      rx=\"1.5\"\n      fill=\"#EDF3FF\"\n      stroke=\"#3574F0\"\n    />\n    <path\n      d=\"M8.134 11.5c1.49 0 2.766-.9 3.08-2.175h-1.015c-.315.73-1.093 1.252-2.065 1.252-1.339 0-2.306-1.074-2.306-2.577s.967-2.577 2.306-2.577c.972 0 1.75.522 2.065 1.252h1.015C10.9 5.4 9.624 4.5 8.134 4.5 6.215 4.5 4.79 5.994 4.79 8s1.426 3.5 3.345 3.5\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst СodeAssistantClassDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"2.5\"\n      y=\"2.5\"\n      width=\"11\"\n      height=\"11\"\n      rx=\"1.5\"\n      fill=\"#25324D\"\n      stroke=\"#548AF7\"\n    />\n    <path\n      d=\"M8.134 11.5c1.49 0 2.766-.9 3.08-2.175h-1.015c-.315.73-1.093 1.252-2.065 1.252-1.339 0-2.306-1.074-2.306-2.577s.967-2.577 2.306-2.577c.972 0 1.75.522 2.065 1.252h1.015C10.9 5.4 9.624 4.5 8.134 4.5 6.215 4.5 4.79 5.994 4.79 8s1.426 3.5 3.345 3.5\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const СodeAssistantClass: React.FC<СodeAssistantClassProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? СodeAssistantClassLight : СodeAssistantClassDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "сode-assistant-class",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

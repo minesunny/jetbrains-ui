@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-types",
+  "type": "registry:ui",
+  "title": "Run Icons Types",
+  "description": "Shared types and utilities for Run icon components.",
+  "files": [
+    {
+      "path": "registry/icons/run/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/types.ts"
+    }
+  ]
+}

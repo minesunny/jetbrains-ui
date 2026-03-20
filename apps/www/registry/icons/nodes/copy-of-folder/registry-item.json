@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-copy-of-folder",
+  "type": "registry:ui",
+  "title": "Copy Of Folder",
+  "description": "Copy Of Folder icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/copy-of-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/copy-of-folder/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "copy-of-folder",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

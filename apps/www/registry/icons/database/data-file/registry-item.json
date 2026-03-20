@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-data-file",
+  "type": "registry:ui",
+  "title": "Data File",
+  "description": "Data File icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/data-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/data-file/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "data-file",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

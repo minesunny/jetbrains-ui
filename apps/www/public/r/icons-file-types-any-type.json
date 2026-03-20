@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-any-type",
+  "type": "registry:ui",
+  "title": "Any Type",
+  "description": "Any Type icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/any-type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/any-type/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type AnyTypeProps = IconProps;\n\nconst AnyTypeLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11 1H7.914a1.5 1.5 0 0 0-1.06.44L3.439 4.853A1.5 1.5 0 0 0 3 5.914V13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M4 13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H8v2.5A1.5 1.5 0 0 1 6.5 6H4zm.707-8L7 2.707V4.5a.5.5 0 0 1-.5.5z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M5 14a1 1 0 0 1-1-1V6h2.5A1.5 1.5 0 0 0 8 4.5V2h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1z\"\n      fill=\"#EBECF0\"\n    />\n    <path d=\"M7 2.707 4.707 5H6.5a.5.5 0 0 0 .5-.5z\" fill=\"#EBECF0\" />\n  </svg>\n);\n\nconst AnyTypeDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11 1H7.914a1.5 1.5 0 0 0-1.06.44L3.439 4.853A1.5 1.5 0 0 0 3 5.914V13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M4 13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H8v2.5A1.5 1.5 0 0 1 6.5 6H4zm.707-8L7 2.707V4.5a.5.5 0 0 1-.5.5z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M5 14a1 1 0 0 1-1-1V6h2.5A1.5 1.5 0 0 0 8 4.5V2h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1z\"\n      fill=\"#43454A\"\n    />\n    <path d=\"M7 2.707 4.707 5H6.5a.5.5 0 0 0 .5-.5z\" fill=\"#43454A\" />\n  </svg>\n);\n\nexport const AnyType: FC<AnyTypeProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? AnyTypeLight : AnyTypeDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "any-type",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

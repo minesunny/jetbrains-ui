@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-run-database-script",
+  "type": "registry:ui",
+  "title": "Run Database Script",
+  "description": "Run Database Script icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/run-database-script/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/run-database-script/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run-database-script",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-spring-spring-web-flow-file",
+  "type": "registry:ui",
+  "title": "Spring Web Flow File",
+  "description": "Spring Web Flow File icon from Plugins Spring category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/spring-web-flow-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-web-flow-file/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "spring-web-flow-file",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

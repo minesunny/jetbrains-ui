@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-operator-family",
+  "type": "registry:ui",
+  "title": "Operator Family",
+  "description": "Operator Family icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/operator-family/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/operator-family/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type OperatorFamilyProps = IconProps;\n\nconst OperatorFamilyLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M11 9h4.5v.945h-3.49V12H15v.945h-2.99V16H11z\" fill=\"#3574F0\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8 14a6 6 0 0 0 2-.341v1.051A7 7 0 1 1 15 8h-1a6 6 0 1 0-6 6\"\n      fill=\"#6C707E\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7.992 11C6.23 11 5 9.65 5 8.017V8c0-1.633 1.246-3 3.008-3S11 6.35 11 7.983V8c0 1.633-1.246 3-3.008 3m.016-.945c1.14 0 1.935-.911 1.935-2.038V8c0-1.127-.812-2.055-1.951-2.055s-1.935.911-1.935 2.038V8c0 1.127.812 2.055 1.951 2.055\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst OperatorFamilyDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M11 9h4.5v.945h-3.49V12H15v.945h-2.99V16H11z\" fill=\"#548AF7\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8 14a6 6 0 0 0 2-.341v1.051A7 7 0 1 1 15 8h-1a6 6 0 1 0-6 6\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7.992 11C6.23 11 5 9.65 5 8.017V8c0-1.633 1.246-3 3.008-3S11 6.35 11 7.983V8c0 1.633-1.246 3-3.008 3m.016-.945c1.14 0 1.935-.911 1.935-2.038V8c0-1.127-.812-2.055-1.951-2.055s-1.935.911-1.935 2.038V8c0 1.127.812 2.055 1.951 2.055\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const OperatorFamily: FC<OperatorFamilyProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? OperatorFamilyLight : OperatorFamilyDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "operator-family",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

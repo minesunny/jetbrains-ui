@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-kotlin-multiplatform",
+  "type": "registry:ui",
+  "title": "Multiplatform",
+  "description": "Multiplatform icon from Plugins Kotlin category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kotlin/multiplatform/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/multiplatform/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "multiplatform",
+      "icon",
+      "plugins",
+      "kotlin",
+      "jetbrains"
+    ]
+  }
+}

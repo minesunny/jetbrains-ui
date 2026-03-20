@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-compare3-middle-right",
+  "type": "registry:ui",
+  "title": "Compare3 Middle Right",
+  "description": "Compare3 Middle Right icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/compare3-middle-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/compare3-middle-right/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "compare3-middle-right",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

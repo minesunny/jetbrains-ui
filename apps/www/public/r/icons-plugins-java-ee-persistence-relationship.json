@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-java-ee-persistence-relationship",
+  "type": "registry:ui",
+  "title": "Persistence Relationship",
+  "description": "Persistence Relationship icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/persistence-relationship/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/persistence-relationship/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type PersistenceRelationshipProps = IconProps;\n\nconst PersistenceRelationshipLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"8\" cy=\"8\" r=\"4.5\" stroke=\"#6C707E\" />\n    <circle cx=\"11.5\" cy=\"4.5\" r=\"3\" fill=\"#FFF4EB\" stroke=\"#E66D17\" />\n    <circle cx=\"4.5\" cy=\"11.5\" r=\"3\" fill=\"#FFF4EB\" stroke=\"#E66D17\" />\n  </svg>\n);\n\nconst PersistenceRelationshipDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"8\" cy=\"8\" r=\"4.5\" stroke=\"#CED0D6\" />\n    <circle cx=\"11.5\" cy=\"4.5\" r=\"3\" fill=\"#45322B\" stroke=\"#C77D55\" />\n    <circle cx=\"4.5\" cy=\"11.5\" r=\"3\" fill=\"#45322B\" stroke=\"#C77D55\" />\n  </svg>\n);\n\nexport const PersistenceRelationship: React.FC<\n  PersistenceRelationshipProps\n> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light'\n      ? PersistenceRelationshipLight\n      : PersistenceRelationshipDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "persistence-relationship",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

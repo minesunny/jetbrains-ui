@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-collection-key",
+  "type": "registry:ui",
+  "title": "Collection Key",
+  "description": "Collection Key icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/collection-key/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/collection-key/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "collection-key",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

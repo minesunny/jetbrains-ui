@@ -1,0 +1,25 @@
+{
+  "title": "General",
+  "defaultOpen": false,
+  "pages": [
+    "tool-windows",
+    "actions",
+    "editor",
+    "ai-assistant",
+    "windows",
+    "inline",
+    "status",
+    "modifiers",
+    "access-modifiers",
+    "object-browser",
+    "setting-sync",
+    "progress-bar",
+    "bookmarks",
+    "usages",
+    "devkit",
+    "duplicates",
+    "new-ui",
+    "rating",
+    "spinner"
+  ]
+}

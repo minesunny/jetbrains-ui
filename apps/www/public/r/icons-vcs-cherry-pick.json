@@ -1,0 +1,26 @@
+{
+  "name": "icons-vcs-cherry-pick",
+  "type": "registry:ui",
+  "title": "Cherry Pick",
+  "description": "Cherry Pick icon from Vcs category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/cherry-pick/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/cherry-pick/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type CherryPickProps = IconProps;\n\nconst CherryPickLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6.5 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-2 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6m9-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-2 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6\"\n      fill=\"#6C707E\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11.854 1.146a.5.5 0 0 0-.394-.144h-.002c-2.565.214-4.351 1.512-5.528 3.03C4.762 5.536 4.183 7.27 4.006 8.423a.5.5 0 0 0 .988.152c.156-1.012.677-2.58 1.726-3.932.714-.92 1.666-1.736 2.916-2.217l1.197-.554-.682.613c-.514.972-.665 1.996-.613 2.942.077 1.38.584 2.61 1.038 3.337a.5.5 0 0 0 .848-.53c-.38-.607-.822-1.676-.887-2.863-.065-1.17.237-2.438 1.317-3.518a.5.5 0 0 0 0-.708\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst CherryPickDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6.5 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-2 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6m9-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-2 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M11.854 1.146a.5.5 0 0 0-.394-.144h-.002c-2.565.214-4.351 1.512-5.528 3.03C4.762 5.536 4.183 7.27 4.006 8.423a.5.5 0 0 0 .988.152c.156-1.012.677-2.58 1.726-3.932.714-.92 1.666-1.736 2.916-2.217l1.197-.554-.682.613c-.514.972-.665 1.996-.613 2.942.077 1.38.584 2.61 1.038 3.337a.5.5 0 0 0 .848-.53c-.38-.607-.822-1.676-.887-2.863-.065-1.17.237-2.438 1.317-3.518a.5.5 0 0 0 0-.708\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const CherryPick: FC<CherryPickProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? CherryPickLight : CherryPickDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cherry-pick",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

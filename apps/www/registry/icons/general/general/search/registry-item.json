@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-search",
+  "type": "registry:ui",
+  "title": "Search",
+  "description": "Search icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/search/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/search/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "search",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

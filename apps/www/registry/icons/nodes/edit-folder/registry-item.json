@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-edit-folder",
+  "type": "registry:ui",
+  "title": "Edit Folder",
+  "description": "Edit Folder icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/edit-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/edit-folder/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "edit-folder",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

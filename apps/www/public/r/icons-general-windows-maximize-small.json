@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-windows-maximize-small",
+  "type": "registry:ui",
+  "title": "Maximize Small",
+  "description": "Maximize Small icon from General Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/windows/maximize-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/maximize-small/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type MaximizeSmallProps = IconProps;\n\nconst MaximizeSmallLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path stroke=\"#A8ADBD\" d=\"M4.5 4.5H11.5V11.5H4.5z\" />\n  </svg>\n);\n\nconst MaximizeSmallDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path stroke=\"#CED0D6\" d=\"M4.5 4.5H11.5V11.5H4.5z\" />\n  </svg>\n);\n\nexport const MaximizeSmall: FC<MaximizeSmallProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? MaximizeSmallLight : MaximizeSmallDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "maximize-small",
+      "icon",
+      "general",
+      "windows",
+      "jetbrains"
+    ]
+  }
+}

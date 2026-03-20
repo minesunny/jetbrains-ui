@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-new-ui-light-theme-selected",
+  "type": "registry:ui",
+  "title": "Light Theme Selected",
+  "description": "Light Theme Selected icon from General New Ui category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/new-ui/light-theme-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/light-theme-selected/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "light-theme-selected",
+      "icon",
+      "general",
+      "new-ui",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-macro",
+  "type": "registry:ui",
+  "title": "Macro",
+  "description": "Macro icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/macro/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/macro/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "macro",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

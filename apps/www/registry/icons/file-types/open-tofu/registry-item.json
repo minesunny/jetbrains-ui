@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-open-tofu",
+  "type": "registry:ui",
+  "title": "Open Tofu",
+  "description": "Open Tofu icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/open-tofu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/open-tofu/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "open-tofu",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

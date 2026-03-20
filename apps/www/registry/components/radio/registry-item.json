@@ -1,0 +1,46 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio",
+  "type": "registry:ui",
+  "title": "Radio",
+  "description": "JetBrains UI 风格的单选按钮组件，基于 Radix UI，支持完整的状态矩阵",
+  "dependencies": ["@radix-ui/react-radio-group"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/components/radio/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/radio/index.tsx"
+    },
+    {
+      "path": "registry/components/radio/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/radio/index.css"
+    }
+  ],
+  "meta": {
+    "keywords": ["radio", "radio-group", "jetbrains", "ui", "组件", "单选按钮"],
+    "category": "radios",
+    "docs": {
+      "description": "JetBrains UI 风格的单选按钮组件，基于 Radix UI 构建，提供流畅的选中动画效果。支持完整的状态矩阵：选中维度（unchecked/checked）× 交互维度（default/hover/active/focus/invalid/disabled）。",
+      "features": [
+        "2种选中状态：unchecked、checked",
+        "6种交互状态：default、hover、active、focus、invalid、disabled",
+        "流畅的缩放动画",
+        "完整的键盘导航支持",
+        "优秀的无障碍支持",
+        "支持亮色/暗色主题"
+      ]
+    },
+    "demoProps": {
+      "RadioGroup": {
+        "disabled": {
+          "value": false
+        },
+        "invalid": {
+          "value": false
+        }
+      }
+    }
+  }
+}

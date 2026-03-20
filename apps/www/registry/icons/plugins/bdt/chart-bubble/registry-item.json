@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-bdt-chart-bubble",
+  "type": "registry:ui",
+  "title": "Chart Bubble",
+  "description": "Chart Bubble icon from Plugins Bdt category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/bdt/chart-bubble/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-bubble/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "chart-bubble",
+      "icon",
+      "plugins",
+      "bdt",
+      "jetbrains"
+    ]
+  }
+}

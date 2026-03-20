@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-file-format",
+  "type": "registry:ui",
+  "title": "File Format",
+  "description": "File Format icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/file-format/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/file-format/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type FileFormatProps = IconProps;\n\nconst FileFormatLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M12.5 15.5v-6M9.902 14l5.196-3m0 3-5.196-3\"\n      stroke=\"#3574F0\"\n      strokeLinecap=\"round\"\n    />\n    <path\n      d=\"M3 5.414V13a2 2 0 0 0 2 2h3.758A4.5 4.5 0 0 1 13 8.027V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3 5.414V13a2 2 0 0 0 2 2h3.758a4.5 4.5 0 0 1-.502-1H5a1 1 0 0 1-1-1V6h2a2 2 0 0 0 2-2V2h3a1 1 0 0 1 1 1v5.027a4.6 4.6 0 0 1 1 0V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414m4-3L4.414 5H6a1 1 0 0 0 1-1z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst FileFormatDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M12.5 15.5v-6M9.902 14l5.196-3m0 3-5.196-3\"\n      stroke=\"#548AF7\"\n      strokeLinecap=\"round\"\n    />\n    <path\n      d=\"M3 5.414V13a2 2 0 0 0 2 2h3.758A4.5 4.5 0 0 1 13 8.027V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414\"\n      fill=\"#43454A\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3 5.414V13a2 2 0 0 0 2 2h3.758a4.5 4.5 0 0 1-.502-1H5a1 1 0 0 1-1-1V6h2a2 2 0 0 0 2-2V2h3a1 1 0 0 1 1 1v5.027a4.6 4.6 0 0 1 1 0V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414m4-3L4.414 5H6a1 1 0 0 0 1-1z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const FileFormat: FC<FileFormatProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? FileFormatLight : FileFormatDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "file-format",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

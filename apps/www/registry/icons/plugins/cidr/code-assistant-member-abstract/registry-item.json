@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-code-assistant-member-abstract",
+  "type": "registry:ui",
+  "title": "Code Assistant Member Abstract",
+  "description": "Code Assistant Member Abstract icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/code-assistant-member-abstract/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-member-abstract/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "code-assistant-member-abstract",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

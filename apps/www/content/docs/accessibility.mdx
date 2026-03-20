@@ -1,0 +1,41 @@
+---
+title: Accessibility
+description: Accessibility considerations for JetBrains UI.
+---
+
+JetBrains UI components are built with accessibility in mind. All components are based on [Radix UI](https://www.radix-ui.com/) primitives, which provide robust accessibility support out of the box.
+
+## Built on Radix UI
+
+Radix UI primitives handle critical accessibility concerns including:
+
+- **Keyboard navigation**: Full keyboard support for all interactive components.
+- **ARIA attributes**: Correct roles, states, and properties are applied automatically.
+- **Focus management**: Proper focus trapping in modals, focus restoration, and logical tab order.
+- **Screen reader support**: Meaningful labels and announcements for assistive technologies.
+
+## Icons Accessibility
+
+All JetBrains icons support accessibility props:
+
+```tsx
+// Decorative icon (hidden from screen readers)
+<Add />
+
+// Meaningful icon (announced by screen readers)
+<Add aria-label="Add item" />
+```
+
+When `aria-label` is provided, the icon receives `role="img"`. Otherwise, it defaults to `role="presentation"` with `aria-hidden="true"`.
+
+## Prefers Reduced Motion
+
+`prefers-reduced-motion` is a CSS media query and system-level setting. If a user has enabled it, consider:
+
+- Avoiding large-scale movement (scale, translate, rotate).
+- Preferring subtle effects such as opacity fades.
+- Disabling parallax or auto-scrolling animations.
+
+## Conclusion
+
+By building on Radix UI and following standard accessibility patterns, JetBrains UI provides a solid accessible foundation. We recommend testing your implementations with screen readers and keyboard navigation to ensure the best experience for all users.

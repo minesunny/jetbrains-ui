@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-jpa-drop-sequence",
+  "type": "registry:ui",
+  "title": "Drop Sequence",
+  "description": "Drop Sequence icon from Plugins Jpa category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/drop-sequence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/drop-sequence/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "drop-sequence",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

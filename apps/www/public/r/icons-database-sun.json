@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-sun",
+  "type": "registry:ui",
+  "title": "Sun",
+  "description": "Sun icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/sun/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sun/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type SunProps = IconProps;\n\nconst SunLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7.169 1.445a1.19 1.19 0 0 0 0 1.683l2.755 2.753.737-.734-2.774-2.775.208-.21 2.776 2.775.737-.736-2.755-2.756a1.19 1.19 0 0 0-1.684 0M8.882 5.273a1.19 1.19 0 1 1-1.684 1.684L4.444 4.2l.737-.739 2.774 2.775.21-.207-2.776-2.774.737-.739zM10.742 8.846A1.19 1.19 0 0 1 9.06 7.163l2.756-2.756.737.737-2.775 2.775.209.208 2.774-2.774.738.737zM1.48 8.846a1.187 1.187 0 0 0 1.684 0L5.92 6.092l-.74-.739L2.408 8.13l-.208-.21 2.774-2.774-.737-.737-2.755 2.756a1.187 1.187 0 0 0 0 1.682M6.992 7.135a1.19 1.19 0 0 0-1.683 0L2.553 9.889l.739.738 2.773-2.775.21.21L3.5 10.836l.737.736 2.756-2.755a1.19 1.19 0 0 0 0-1.682M8.882 12.853a1.19 1.19 0 0 1-1.684 1.68l-2.754-2.756.737-.735 2.774 2.774.21-.209-2.776-2.775.737-.737zM7.169 9.024a1.19 1.19 0 0 0 0 1.683l2.755 2.753.737-.737L7.887 9.95l.208-.208 2.776 2.774.737-.737-2.755-2.754a1.186 1.186 0 0 0-1.684 0M14.57 7.133a1.187 1.187 0 0 0-1.681 0L10.133 9.89l.738.735 2.774-2.772.208.206-2.775 2.775.738.737 2.754-2.753a1.19 1.19 0 0 0 0-1.684\"\n      fill=\"#389FD6\"\n    />\n  </svg>\n);\n\nconst SunDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7.169 1.445a1.19 1.19 0 0 0 0 1.683l2.755 2.753.737-.734-2.774-2.775.208-.21 2.776 2.775.737-.736-2.755-2.756a1.19 1.19 0 0 0-1.684 0M8.882 5.273a1.19 1.19 0 1 1-1.684 1.684L4.444 4.2l.737-.739 2.774 2.775.21-.207-2.776-2.774.737-.739zM10.742 8.846A1.19 1.19 0 0 1 9.06 7.163l2.756-2.756.737.737-2.775 2.775.209.208 2.774-2.774.738.737zM1.48 8.846a1.187 1.187 0 0 0 1.684 0L5.92 6.092l-.74-.739L2.408 8.13l-.208-.21 2.774-2.774-.737-.737-2.755 2.756a1.187 1.187 0 0 0 0 1.682M6.992 7.135a1.19 1.19 0 0 0-1.683 0L2.553 9.889l.739.738 2.773-2.775.21.21L3.5 10.836l.737.736 2.756-2.755a1.19 1.19 0 0 0 0-1.682M8.882 12.853a1.19 1.19 0 0 1-1.684 1.68l-2.754-2.756.737-.735 2.774 2.774.21-.209-2.776-2.775.737-.737zM7.169 9.024a1.19 1.19 0 0 0 0 1.683l2.755 2.753.737-.737L7.887 9.95l.208-.208 2.776 2.774.737-.737-2.755-2.754a1.186 1.186 0 0 0-1.684 0M14.57 7.133a1.187 1.187 0 0 0-1.681 0L10.133 9.89l.738.735 2.774-2.772.208.206-2.775 2.775.738.737 2.754-2.753a1.19 1.19 0 0 0 0-1.684\"\n      fill=\"#5D87A1\"\n    />\n  </svg>\n);\n\nexport const Sun: FC<SunProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? SunLight : SunDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sun",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

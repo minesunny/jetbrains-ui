@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-merge-callees",
+  "type": "registry:ui",
+  "title": "Merge Callees",
+  "description": "Merge Callees icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/merge-callees/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/merge-callees/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "merge-callees",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

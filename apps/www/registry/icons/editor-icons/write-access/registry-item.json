@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-write-access",
+  "type": "registry:ui",
+  "title": "Write Access",
+  "description": "Write Access icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/write-access/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/write-access/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "write-access",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

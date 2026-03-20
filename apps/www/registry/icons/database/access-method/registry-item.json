@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-access-method",
+  "type": "registry:ui",
+  "title": "Access Method",
+  "description": "Access Method icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/access-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/access-method/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "access-method",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

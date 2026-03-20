@@ -1,0 +1,101 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type ToolWindowRecordDebugProps = IconProps;
+
+const ToolWindowRecordDebugLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path d="M13 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#6C707E" />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M16 13a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-1 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"
+      fill="#6C707E"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M10.69 4.435q.01-.117.01-.235a2.7 2.7 0 1 0-5.39.234c-.472.26-.877.627-1.184 1.067L2.017 4.36a.5.5 0 1 0-.475.88l2.135 1.154A3.5 3.5 0 0 0 3.5 7.5v1h-2.4a.5.5 0 1 0 0 1h2.4v.5c0 .49.078.96.223 1.402L1.53 12.667a.5.5 0 1 0 .5.866l2.11-1.218a4.5 4.5 0 0 0 5.087 2.016q-.166-.468-.212-.98A3.5 3.5 0 0 1 4.5 10V7.499a2.5 2.5 0 0 1 2.5-2.5h2a2.5 2.5 0 0 1 2.5 2.5v1.791A4 4 0 0 1 13 9c.702 0 1.362.18 1.935.498A.5.5 0 0 0 14.9 8.5h-2.4v-1c0-.386-.063-.758-.178-1.106l2.133-1.154a.5.5 0 0 0-.476-.88L11.872 5.5a3.5 3.5 0 0 0-1.182-1.065m-4.385-.366Q6.642 4 6.999 4h2q.358 0 .696.07a1.7 1.7 0 0 0-3.39-.001"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const ToolWindowRecordDebugDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path d="M13 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#CED0D6" />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M16 13a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-1 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"
+      fill="#CED0D6"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M10.69 4.435q.01-.117.01-.235a2.7 2.7 0 1 0-5.39.234c-.472.26-.877.627-1.184 1.067L2.017 4.36a.5.5 0 1 0-.475.88l2.135 1.154A3.5 3.5 0 0 0 3.5 7.5v1h-2.4a.5.5 0 1 0 0 1h2.4v.5c0 .49.078.96.223 1.402L1.53 12.667a.5.5 0 1 0 .5.866l2.11-1.218a4.5 4.5 0 0 0 5.087 2.016q-.166-.468-.212-.98A3.5 3.5 0 0 1 4.5 10V7.499a2.5 2.5 0 0 1 2.5-2.5h2a2.5 2.5 0 0 1 2.5 2.5v1.791A4 4 0 0 1 13 9c.702 0 1.362.18 1.935.498A.5.5 0 0 0 14.9 8.5h-2.4v-1c0-.386-.063-.758-.178-1.106l2.133-1.154a.5.5 0 0 0-.476-.88L11.872 5.5a3.5 3.5 0 0 0-1.182-1.065m-4.385-.366Q6.642 4 6.999 4h2q.358 0 .696.07a1.7 1.7 0 0 0-3.39-.001"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const ToolWindowRecordDebug: FC<ToolWindowRecordDebugProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? ToolWindowRecordDebugLight : ToolWindowRecordDebugDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

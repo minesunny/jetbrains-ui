@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-apache-phoenix",
+  "type": "registry:ui",
+  "title": "Apache Phoenix",
+  "description": "Apache Phoenix icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/apache-phoenix/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/apache-phoenix/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "apache-phoenix",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

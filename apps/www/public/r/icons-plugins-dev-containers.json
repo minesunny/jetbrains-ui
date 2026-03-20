@@ -1,0 +1,33 @@
+{
+  "name": "icons-plugins-dev-containers",
+  "type": "registry:ui",
+  "title": "Plugins Dev Containers Icons",
+  "description": "All 1 icons from the Plugins Dev Containers category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/dev-containers/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dev-containers/index.ts",
+      "content": "export { DevContainers } from './dev-containers';\nexport type { DevContainersProps } from './dev-containers';"
+    },
+    {
+      "path": "registry/icons/plugins/dev-containers/dev-containers/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/dev-containers/dev-containers/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type DevContainersProps = IconProps;\n\nconst DevContainersLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"m8 7.5 4.5-2M8 7.5l-4.5-2m4.5 2v5\"\n      stroke=\"#3574F0\"\n      strokeLinecap=\"round\"\n    />\n    <path\n      d=\"M14.5 11.52V4.5L8 1.5l-6.5 3v7.02L8 14.5z\"\n      stroke=\"#3574F0\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nconst DevContainersDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"m8 7.5 4.5-2M8 7.5l-4.5-2m4.5 2v5\"\n      stroke=\"#548AF7\"\n      strokeLinecap=\"round\"\n    />\n    <path\n      d=\"M14.5 11.52V4.5L8 1.5l-6.5 3v7.02L8 14.5z\"\n      stroke=\"#548AF7\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nexport const DevContainers: React.FC<DevContainersProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? DevContainersLight : DevContainersDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "plugins",
+      "dev-containers",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

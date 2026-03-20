@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-ai-assistant-feature-answer",
+  "type": "registry:ui",
+  "title": "Feature Answer",
+  "description": "Feature Answer icon from General Ai Assistant category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/ai-assistant/feature-answer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-assistant/feature-answer/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type FeatureAnswerProps = IconProps;\n\nconst FeatureAnswerLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" fill=\"#EDF3FF\" stroke=\"#3574F0\" />\n    <path\n      d=\"M7.592 8.521q.122-.275.297-.473.177-.198.473-.473.286-.258.451-.445.172-.187.286-.435.116-.253.116-.561 0-.346-.149-.616A1 1 0 0 0 8.66 5.1a1.2 1.2 0 0 0-.605-.148q-.38 0-.67.165a1.14 1.14 0 0 0-.52.612c-.106.28-.334.532-.633.532s-.55-.246-.49-.539a2.1 2.1 0 0 1 .245-.65q.297-.51.836-.792Q7.362 4 8.065 4q.672 0 1.183.258.512.26.792.732.28.468.275 1.078 0 .473-.149.836-.148.357-.363.6a7 7 0 0 1-.555.544q-.253.225-.396.38a1.5 1.5 0 0 0-.242.346 1 1 0 0 0-.044.11c-.088.274-.283.517-.572.517s-.54-.236-.5-.522a1.3 1.3 0 0 1 .098-.358\"\n      fill=\"#3574F0\"\n    />\n    <circle cx=\"8\" cy=\"10.75\" r=\".75\" fill=\"#3574F0\" />\n  </svg>\n);\n\nconst FeatureAnswerDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" fill=\"#25324D\" stroke=\"#548AF7\" />\n    <path\n      d=\"M7.592 8.521q.122-.275.297-.473.177-.198.473-.473.286-.258.451-.445.172-.187.286-.435.116-.253.116-.561 0-.346-.149-.616A1 1 0 0 0 8.66 5.1a1.2 1.2 0 0 0-.605-.148q-.38 0-.67.165a1.14 1.14 0 0 0-.52.612c-.106.28-.334.532-.633.532s-.55-.246-.49-.539a2.1 2.1 0 0 1 .245-.65q.297-.51.836-.792Q7.362 4 8.065 4q.672 0 1.183.258.512.26.792.732.28.468.275 1.078 0 .473-.149.836-.148.357-.363.6a7 7 0 0 1-.555.544q-.253.225-.396.38a1.5 1.5 0 0 0-.242.346 1 1 0 0 0-.044.11c-.088.274-.283.517-.572.517s-.54-.236-.5-.522a1.3 1.3 0 0 1 .098-.358\"\n      fill=\"#548AF7\"\n    />\n    <circle cx=\"8\" cy=\"10.75\" r=\".75\" fill=\"#548AF7\" />\n  </svg>\n);\n\nexport const FeatureAnswer: FC<FeatureAnswerProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? FeatureAnswerLight : FeatureAnswerDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "feature-answer",
+      "icon",
+      "general",
+      "ai-assistant",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "demo-dropdown-menu",
+  "type": "registry:ui",
+  "title": "Dropdown Menu Demo",
+  "description": "Demo showing dropdown menu component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/dropdown-menu",
+    "@jetbrains-ui/buttons"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/dropdown-menu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/dropdown-menu.tsx",
+      "content": "import {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuItem,\n  DropdownMenuLabel,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger,\n} from '@/components/jetbrains-ui/dropdown-menu';\nimport { Button } from '@/components/jetbrains-ui/button';\n\nexport default function DropdownMenuDemo() {\n  return (\n    <DropdownMenu>\n      <DropdownMenuTrigger asChild>\n        <Button variant=\"secondary\">Open Menu</Button>\n      </DropdownMenuTrigger>\n      <DropdownMenuContent align=\"start\" className=\"w-44\">\n        <DropdownMenuLabel>Account</DropdownMenuLabel>\n        <DropdownMenuSeparator />\n        <DropdownMenuItem>Profile</DropdownMenuItem>\n        <DropdownMenuItem>Settings</DropdownMenuItem>\n        <DropdownMenuItem>Logout</DropdownMenuItem>\n      </DropdownMenuContent>\n    </DropdownMenu>\n  );\n}"
+    }
+  ],
+  "meta": {}
+}

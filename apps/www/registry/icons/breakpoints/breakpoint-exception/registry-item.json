@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-breakpoint-exception",
+  "type": "registry:ui",
+  "title": "Breakpoint Exception",
+  "description": "Breakpoint Exception icon from Breakpoints category.",
+  "registryDependencies": [
+    "icons-breakpoints-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/breakpoint-exception/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-exception/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "breakpoint-exception",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ]
+  }
+}

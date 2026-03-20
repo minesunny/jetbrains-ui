@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-expand-all",
+  "type": "registry:ui",
+  "title": "Expand All",
+  "description": "Expand All icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/expand-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/expand-all/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "expand-all",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

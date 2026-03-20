@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-project-wide-analysis-on",
+  "type": "registry:ui",
+  "title": "Project Wide Analysis On",
+  "description": "Project Wide Analysis On icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/project-wide-analysis-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/project-wide-analysis-on/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "project-wide-analysis-on",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-collection-type",
+  "type": "registry:ui",
+  "title": "Collection Type",
+  "description": "Collection Type icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/collection-type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/collection-type/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type CollectionTypeProps = IconProps;\n\nconst CollectionTypeLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" fill=\"#EDF3FF\" stroke=\"#3574F0\" />\n    <circle cx=\"11\" cy=\"8\" r=\"1\" fill=\"#3574F0\" />\n    <circle cx=\"8\" cy=\"11\" r=\"1\" fill=\"#3574F0\" />\n    <circle cx=\"8\" cy=\"5\" r=\"1\" fill=\"#3574F0\" />\n    <circle cx=\"5\" cy=\"8\" r=\"1\" fill=\"#3574F0\" />\n  </svg>\n);\n\nconst CollectionTypeDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" fill=\"#25324D\" stroke=\"#548AF7\" />\n    <circle cx=\"11\" cy=\"8\" r=\"1\" fill=\"#548AF7\" />\n    <circle cx=\"8\" cy=\"11\" r=\"1\" fill=\"#548AF7\" />\n    <circle cx=\"8\" cy=\"5\" r=\"1\" fill=\"#548AF7\" />\n    <circle cx=\"5\" cy=\"8\" r=\"1\" fill=\"#548AF7\" />\n  </svg>\n);\n\nexport const CollectionType: FC<CollectionTypeProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? CollectionTypeLight : CollectionTypeDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "collection-type",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

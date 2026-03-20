@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-graphql-scalar",
+  "type": "registry:ui",
+  "title": "Scalar",
+  "description": "Scalar icon from Plugins Graphql category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/graphql/scalar/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/graphql/scalar/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ScalarProps = IconProps;\n\nconst ScalarLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"2.5\"\n      y=\"2.5\"\n      width=\"11\"\n      height=\"11\"\n      rx=\"1.5\"\n      fill=\"#EDF3FF\"\n      stroke=\"#3574F0\"\n    />\n    <path\n      d=\"M7.976 11.5q-.757 0-1.372-.242a2.4 2.4 0 0 1-.973-.672 1.64 1.64 0 0 1-.385-.986H6.31q.026.3.249.542.222.235.587.372.366.137.817.137.456 0 .803-.15.352-.15.542-.418.196-.267.196-.607a.92.92 0 0 0-.21-.614.9.9 0 0 0-.568-.32l-1.612-.294q-.771-.143-1.202-.62-.43-.484-.43-1.221 0-.53.3-.96.307-.438.855-.692.549-.255 1.254-.255.698 0 1.26.229.562.228.895.633t.359.901H9.34a.76.76 0 0 0-.215-.47 1.26 1.26 0 0 0-.51-.327 2.1 2.1 0 0 0-.718-.117q-.405 0-.718.137a1.17 1.17 0 0 0-.49.379.9.9 0 0 0-.17.535q0 .34.19.562.189.222.555.287l1.652.294q.51.09.875.359.372.268.561.666.196.398.196.869 0 .587-.34 1.057-.332.471-.92.738a3.1 3.1 0 0 1-1.312.268\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst ScalarDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\"2.5\"\n      y=\"2.5\"\n      width=\"11\"\n      height=\"11\"\n      rx=\"1.5\"\n      fill=\"#25324D\"\n      stroke=\"#548AF7\"\n    />\n    <path\n      d=\"M7.976 11.5q-.757 0-1.372-.242a2.4 2.4 0 0 1-.973-.672 1.64 1.64 0 0 1-.385-.986H6.31q.026.3.249.542.222.235.587.372.366.137.817.137.456 0 .803-.15.352-.15.542-.418.196-.267.196-.607a.92.92 0 0 0-.21-.614.9.9 0 0 0-.568-.32l-1.612-.294q-.771-.143-1.202-.62-.43-.484-.43-1.221 0-.53.3-.96.307-.438.855-.692.549-.255 1.254-.255.698 0 1.26.229.562.228.895.633t.359.901H9.34a.76.76 0 0 0-.215-.47 1.26 1.26 0 0 0-.51-.327 2.1 2.1 0 0 0-.718-.117q-.405 0-.718.137a1.17 1.17 0 0 0-.49.379.9.9 0 0 0-.17.535q0 .34.19.562.189.222.555.287l1.652.294q.51.09.875.359.372.268.561.666.196.398.196.869 0 .587-.34 1.057-.332.471-.92.738a3.1 3.1 0 0 1-1.312.268\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const Scalar: React.FC<ScalarProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ScalarLight : ScalarDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "scalar",
+      "icon",
+      "plugins",
+      "graphql",
+      "jetbrains"
+    ]
+  }
+}

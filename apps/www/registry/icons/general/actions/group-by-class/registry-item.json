@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-actions-group-by-class",
+  "type": "registry:ui",
+  "title": "Group By Class",
+  "description": "Group By Class icon from General Actions category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/group-by-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-class/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "group-by-class",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

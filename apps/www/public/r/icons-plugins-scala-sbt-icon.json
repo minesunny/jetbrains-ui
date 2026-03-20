@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-scala-sbt-icon",
+  "type": "registry:ui",
+  "title": "Sbt Icon",
+  "description": "Sbt Icon icon from Plugins Scala category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/sbt-icon/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-icon/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SbtIconProps = IconProps;\n\nconst SbtIconLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M8.683 2.55c.518-.138 1.07.01 1.45.39l2.928 2.927c.379.38.527.932.388 1.45l-1.072 3.998a1.5 1.5 0 0 1-1.062 1.062l-3.998 1.072a1.5 1.5 0 0 1-1.45-.389L2.94 10.134a1.5 1.5 0 0 1-.388-1.45l1.072-3.998a1.5 1.5 0 0 1 1.062-1.062z\"\n      stroke=\"#A46704\"\n    />\n  </svg>\n);\n\nconst SbtIconDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M8.683 2.55c.518-.138 1.07.01 1.45.39l2.928 2.927c.379.38.527.932.388 1.45l-1.072 3.998a1.5 1.5 0 0 1-1.062 1.062l-3.998 1.072a1.5 1.5 0 0 1-1.45-.389L2.94 10.134a1.5 1.5 0 0 1-.388-1.45l1.072-3.998a1.5 1.5 0 0 1 1.062-1.062z\"\n      stroke=\"#BA9752\"\n    />\n  </svg>\n);\n\nexport const SbtIcon: React.FC<SbtIconProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? SbtIconLight : SbtIconDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sbt-icon",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type FinalMarkProps = IconProps;
+
+const FinalMarkLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M1.502 1.502c-1.139 1.138-2.139 2.861-1 4s2.861.138 4-1c1.138-1.139 2.138-2.862 1-4-1.139-1.139-2.862-.139-4 1"
+      fill="#EBECF0"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1.092 3.832c-.169.483-.095.75.117.963s.48.286.963.117c.52-.182 1.11-.604 1.623-1.117S4.73 2.69 4.912 2.172c.169-.483.095-.75-.117-.963s-.48-.286-.963-.117c-.52.181-1.11.604-1.623 1.117s-.936 1.104-1.117 1.623m-.59 1.67c-1.139-1.139-.139-2.862 1-4 1.138-1.139 2.861-2.139 4-1s.138 2.861-1 4c-1.139 1.138-2.862 2.138-4 1"
+      fill="#6C707E"
+    />
+    <path
+      d="m4.55 5.801 1.673 1.115a.5.5 0 0 0 .693-.693L5.801 4.55a8.4 8.4 0 0 1-1.25 1.25"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const FinalMarkDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M1.502 1.502c-1.139 1.138-2.139 2.861-1 4s2.861.138 4-1c1.138-1.139 2.138-2.862 1-4-1.139-1.139-2.862-.139-4 1"
+      fill="#43454A"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1.092 3.832c-.169.483-.095.75.117.963s.48.286.963.117c.52-.182 1.11-.604 1.623-1.117S4.73 2.69 4.912 2.172c.169-.483.095-.75-.117-.963s-.48-.286-.963-.117c-.52.181-1.11.604-1.623 1.117s-.936 1.104-1.117 1.623m-.59 1.67c-1.139-1.139-.139-2.862 1-4 1.138-1.139 2.861-2.139 4-1s.138 2.861-1 4c-1.139 1.138-2.862 2.138-4 1"
+      fill="#CED0D6"
+    />
+    <path
+      d="m4.55 5.801 1.673 1.115a.5.5 0 0 0 .693-.693L5.801 4.55a8.4 8.4 0 0 1-1.25 1.25"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const FinalMark: FC<FinalMarkProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? FinalMarkLight : FinalMarkDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

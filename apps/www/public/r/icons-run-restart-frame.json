@@ -1,0 +1,26 @@
+{
+  "name": "icons-run-restart-frame",
+  "type": "registry:ui",
+  "title": "Restart Frame",
+  "description": "Restart Frame icon from Run category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/restart-frame/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/restart-frame/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type RestartFrameProps = IconProps;\n\nconst RestartFrameLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect\n      x=\"9.5\"\n      y=\"9.5\"\n      width=\"6\"\n      height=\"6\"\n      rx=\"1.5\"\n      fill=\"#EBECF0\"\n      stroke=\"#6C707E\"\n    />\n    <path\n      d=\"M14 1.5a.5.5 0 0 0-1 0v3.182A6 6 0 1 0 8 14v-1a5 5 0 1 1 4-8H9.5a.5.5 0 0 0 0 1H14z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst RestartFrameDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect\n      x=\"9.5\"\n      y=\"9.5\"\n      width=\"6\"\n      height=\"6\"\n      rx=\"1.5\"\n      fill=\"#43454A\"\n      stroke=\"#CED0D6\"\n    />\n    <path\n      d=\"M14 1.5a.5.5 0 0 0-1 0v3.182A6 6 0 1 0 8 14v-1a5 5 0 1 1 4-8H9.5a.5.5 0 0 0 0 1H14z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const RestartFrame: FC<RestartFrameProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? RestartFrameLight : RestartFrameDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "restart-frame",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

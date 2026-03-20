@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-scala-no-scala-sdk",
+  "type": "registry:ui",
+  "title": "No Scala Sdk",
+  "description": "No Scala Sdk icon from Plugins Scala category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/no-scala-sdk/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/no-scala-sdk/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "no-scala-sdk",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

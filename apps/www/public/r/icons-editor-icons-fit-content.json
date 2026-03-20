@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-fit-content",
+  "type": "registry:ui",
+  "title": "Fit Content",
+  "description": "Fit Content icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/fit-content/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/fit-content/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type FitContentProps = IconProps;\n\nconst FitContentLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect x=\"11\" y=\"7\" width=\"1\" height=\"4\" rx=\".5\" fill=\"#6C707E\" />\n    <rect\n      x=\"12\"\n      y=\"10\"\n      width=\"1\"\n      height=\"4\"\n      rx=\".5\"\n      transform=\"rotate(90 12 10)\"\n      fill=\"#6C707E\"\n    />\n    <rect x=\"4\" y=\"5\" width=\"1\" height=\"4\" rx=\".5\" fill=\"#6C707E\" />\n    <rect\n      x=\"8\"\n      y=\"5\"\n      width=\"1\"\n      height=\"4\"\n      rx=\".5\"\n      transform=\"rotate(90 8 5)\"\n      fill=\"#6C707E\"\n    />\n    <rect x=\"1.5\" y=\"2.5\" width=\"13\" height=\"11\" rx=\"1.5\" stroke=\"#6C707E\" />\n  </svg>\n);\n\nconst FitContentDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <rect x=\"11\" y=\"7\" width=\"1\" height=\"4\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect\n      x=\"12\"\n      y=\"10\"\n      width=\"1\"\n      height=\"4\"\n      rx=\".5\"\n      transform=\"rotate(90 12 10)\"\n      fill=\"#CED0D6\"\n    />\n    <rect x=\"4\" y=\"5\" width=\"1\" height=\"4\" rx=\".5\" fill=\"#CED0D6\" />\n    <rect\n      x=\"8\"\n      y=\"5\"\n      width=\"1\"\n      height=\"4\"\n      rx=\".5\"\n      transform=\"rotate(90 8 5)\"\n      fill=\"#CED0D6\"\n    />\n    <rect x=\"1.5\" y=\"2.5\" width=\"13\" height=\"11\" rx=\"1.5\" stroke=\"#CED0D6\" />\n  </svg>\n);\n\nexport const FitContent: FC<FitContentProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? FitContentLight : FitContentDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "fit-content",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

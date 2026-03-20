@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-index-fun",
+  "type": "registry:ui",
+  "title": "Index Fun",
+  "description": "Index Fun icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/index-fun/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/index-fun/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "index-fun",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

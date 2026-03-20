@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-openedge",
+  "type": "registry:ui",
+  "title": "Openedge",
+  "description": "Openedge icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/openedge/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/openedge/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "openedge",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

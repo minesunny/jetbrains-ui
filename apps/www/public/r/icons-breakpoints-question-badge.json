@@ -1,0 +1,26 @@
+{
+  "name": "icons-breakpoints-question-badge",
+  "type": "registry:ui",
+  "title": "Question Badge",
+  "description": "Question Badge icon from Breakpoints category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-breakpoints-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/question-badge/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/question-badge/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type QuestionBadgeProps = IconProps;\n\nconst QuestionBadgeLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 7 9\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3.5 0A3.5 3.5 0 0 0 .302 4.924l2.025 4.082h2.206l2.165-4.082A3.5 3.5 0 0 0 7 3.5 3.5 3.5 0 0 0 3.5 0\"\n      fill=\"#fff\"\n    />\n    <circle\n      cx=\"3.387\"\n      cy=\"8.22\"\n      r=\".579\"\n      fill=\"#6C707E\"\n      stroke=\"#6C707E\"\n      strokeWidth=\".2\"\n    />\n    <path\n      d=\"M4.155 2.35a1.23 1.23 0 0 0-.631-.159q-.382.002-.664.164a1.13 1.13 0 0 0-.437.455 1.3 1.3 0 0 0-.143.46c-.032.25-.234.484-.525.484h-.07a.5.5 0 0 1-.498-.518v-.011q.01-.099.027-.193.067-.395.256-.735v-.001q.306-.535.845-.827c.36-.198.767-.293 1.214-.293.436 0 .832.091 1.181.282.351.186.628.449.823.787q.294.512.292 1.15a2.27 2.27 0 0 1-.587 1.56l-.001.001-.587.56a7 7 0 0 0-.428.396q-.127.13-.217.312l-.001.002a.75.75 0 0 0-.08.348c0 .26-.21.47-.47.47h-.112a.497.497 0 0 1-.497-.496q-.001-.382.147-.703.14-.296.351-.522.199-.21.51-.482.309-.273.483-.463l.002-.002a1.5 1.5 0 0 0 .275-.418l.001-.003c.07-.15.11-.326.11-.532 0-.253-.053-.467-.152-.65a1.04 1.04 0 0 0-.414-.422z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst QuestionBadgeDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 7 9\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3.5 0A3.5 3.5 0 0 0 .302 4.924l2.025 4.082h2.206l2.165-4.082A3.5 3.5 0 0 0 7 3.5 3.5 3.5 0 0 0 3.5 0\"\n      fill=\"#1E1F22\"\n    />\n    <circle\n      cx=\"3.387\"\n      cy=\"8.22\"\n      r=\".579\"\n      fill=\"#CED0D6\"\n      stroke=\"#CED0D6\"\n      strokeWidth=\".2\"\n    />\n    <path\n      d=\"M4.155 2.35a1.23 1.23 0 0 0-.631-.159q-.382.002-.664.164a1.13 1.13 0 0 0-.437.455 1.3 1.3 0 0 0-.143.46c-.032.25-.234.484-.525.484h-.07a.5.5 0 0 1-.498-.518v-.011q.01-.099.027-.193.067-.395.256-.735v-.001q.306-.535.845-.827c.36-.198.767-.293 1.214-.293.436 0 .832.091 1.181.282.351.186.628.449.823.787q.294.512.292 1.15a2.27 2.27 0 0 1-.587 1.56l-.001.001-.587.56a7 7 0 0 0-.428.396q-.127.13-.217.312l-.001.002a.75.75 0 0 0-.08.348c0 .26-.21.47-.47.47h-.112a.497.497 0 0 1-.497-.496q-.001-.382.147-.703.14-.296.351-.522.199-.21.51-.482.309-.273.483-.463l.002-.002a1.5 1.5 0 0 0 .275-.418l.001-.003c.07-.15.11-.326.11-.532 0-.253-.053-.467-.152-.65a1.04 1.04 0 0 0-.414-.422z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const QuestionBadge: FC<QuestionBadgeProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? QuestionBadgeLight : QuestionBadgeDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "question-badge",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ]
+  }
+}

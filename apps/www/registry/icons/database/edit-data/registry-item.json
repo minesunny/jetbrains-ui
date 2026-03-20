@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-edit-data",
+  "type": "registry:ui",
+  "title": "Edit Data",
+  "description": "Edit Data icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/edit-data/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/edit-data/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "edit-data",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

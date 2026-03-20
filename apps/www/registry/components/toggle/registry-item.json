@@ -1,0 +1,38 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle",
+  "type": "registry:ui",
+  "title": "Toggle",
+  "description": "JetBrains-style toggle button component.",
+  "dependencies": [
+    "radix-ui",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "registry/components/toggle/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/toggle.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "toggle",
+      "jetbrains",
+      "ui",
+      "component"
+    ],
+    "category": "forms",
+    "docs": {
+      "description": "JetBrains-style toggle button component.",
+      "features": [
+        "Composable API",
+        "Accessible by default",
+        "Supports light and dark themes"
+      ]
+    }
+  }
+}

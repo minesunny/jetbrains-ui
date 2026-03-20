@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-console-show-plan",
+  "type": "registry:ui",
+  "title": "Console Show Plan",
+  "description": "Console Show Plan icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/console-show-plan/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/console-show-plan/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ConsoleShowPlanProps = IconProps;\n\nconst ConsoleShowPlanLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M5.5 0a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h2v2h-3a.5.5 0 0 0-.5.5V10H1.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5H5V8h6v2H9.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5H12V7.5a.5.5 0 0 0-.5-.5h-3V5h2a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5zM6 4V1h4v3zm-4 7v3h4v-3zm8 0v3h4v-3z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ConsoleShowPlanDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M5.5 0a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h2v2h-3a.5.5 0 0 0-.5.5V10H1.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5H5V8h6v2H9.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5H12V7.5a.5.5 0 0 0-.5-.5h-3V5h2a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5zM6 4V1h4v3zm-4 7v3h4v-3zm8 0v3h4v-3z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const ConsoleShowPlan: FC<ConsoleShowPlanProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? ConsoleShowPlanLight : ConsoleShowPlanDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "console-show-plan",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

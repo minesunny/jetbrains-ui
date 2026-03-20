@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-gradle-navigate",
+  "type": "registry:ui",
+  "title": "Gradle Navigate",
+  "description": "Gradle Navigate icon from Build category.",
+  "registryDependencies": [
+    "icons-build-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/build/gradle-navigate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/gradle-navigate/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "gradle-navigate",
+      "icon",
+      "build",
+      "jetbrains"
+    ]
+  }
+}

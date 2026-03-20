@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-java-ee-javaee-app-module",
+  "type": "registry:ui",
+  "title": "Javaee App Module",
+  "description": "Javaee App Module icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/javaee-app-module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/javaee-app-module/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type JavaeeAppModuleProps = IconProps;\n\nconst JavaeeAppModuleLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M11 9H7v7h4v-1H8v-2h2.5v-1H8v-2h3zM16 9h-4v7h4v-1h-3v-2h2.5v-1H13v-2h3z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2V8h8V4a2 2 0 0 0-2-2z\"\n      fill=\"#EDF3FF\"\n    />\n    <path\n      d=\"M2 4a2 2 0 0 1 2-2h8q.208 0 .403.04A2 2 0 0 1 14 4v4h-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2v1H4q-.103 0-.204-.01A2 2 0 0 1 2 12z\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst JavaeeAppModuleDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M11 9H7v7h4v-1H8v-2h2.5v-1H8v-2h3zM16 9h-4v7h4v-1h-3v-2h2.5v-1H13v-2h3z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2V8h8V4a2 2 0 0 0-2-2z\"\n      fill=\"#25324D\"\n    />\n    <path\n      d=\"M2 4a2 2 0 0 1 2-2h8q.208 0 .403.04A2 2 0 0 1 14 4v4h-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2v1H4q-.103 0-.204-.01A2 2 0 0 1 2 12z\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const JavaeeAppModule: React.FC<JavaeeAppModuleProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? JavaeeAppModuleLight : JavaeeAppModuleDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "javaee-app-module",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

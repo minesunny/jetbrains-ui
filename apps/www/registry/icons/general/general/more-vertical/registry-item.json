@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-more-vertical",
+  "type": "registry:ui",
+  "title": "More Vertical",
+  "description": "More Vertical icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/more-vertical/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/more-vertical/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "more-vertical",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

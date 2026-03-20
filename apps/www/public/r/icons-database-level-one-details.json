@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-level-one-details",
+  "type": "registry:ui",
+  "title": "Level One Details",
+  "description": "Level One Details icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/level-one-details/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/level-one-details/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type LevelOneDetailsProps = IconProps;\n\nconst LevelOneDetailsLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M8 12h4a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1\" fill=\"#F9D2B6\" />\n    <path\n      d=\"M9 2.5h2A1.5 1.5 0 0 1 12.5 4v8a1.5 1.5 0 0 1-1.5 1.5H9A1.5 1.5 0 0 1 7.5 12V4A1.5 1.5 0 0 1 9 2.5ZM8 11.5h4\"\n      stroke=\"#E66D17\"\n    />\n  </svg>\n);\n\nconst LevelOneDetailsDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path d=\"M8 12h4a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1\" fill=\"#825845\" />\n    <path\n      d=\"M9 2.5h2A1.5 1.5 0 0 1 12.5 4v8a1.5 1.5 0 0 1-1.5 1.5H9A1.5 1.5 0 0 1 7.5 12V4A1.5 1.5 0 0 1 9 2.5ZM8 11.5h4\"\n      stroke=\"#C77D55\"\n    />\n  </svg>\n);\n\nexport const LevelOneDetails: FC<LevelOneDetailsProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? LevelOneDetailsLight : LevelOneDetailsDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "level-one-details",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

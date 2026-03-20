@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-scala-abstract-field-variable",
+  "type": "registry:ui",
+  "title": "Abstract Field Variable",
+  "description": "Abstract Field Variable icon from Plugins Scala category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/abstract-field-variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-field-variable/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "abstract-field-variable",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-databricks",
+  "type": "registry:ui",
+  "title": "Databricks",
+  "description": "Databricks icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/databricks/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/databricks/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "databricks",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

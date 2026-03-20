@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-spring-spring-web-flow-file",
+  "type": "registry:ui",
+  "title": "Spring Web Flow File",
+  "description": "Spring Web Flow File icon from Plugins Spring category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/spring-web-flow-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-web-flow-file/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SpringWebFlowFileProps = IconProps;\n\nconst SpringWebFlowFileLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M10.077 2.44a.6.6 0 0 0-1.157-.319L5.765 13.56a.6.6 0 0 0 1.157.319zM5.412 4.667a.6.6 0 0 1-.093.843L1.96 8.197l3.359 2.687a.6.6 0 0 1-.75.937L.039 8.197l4.53-3.624a.6.6 0 0 1 .843.094M15.001 8.965 10.682 5.51a.6.6 0 0 1 .75-.937l4.53 3.624z\"\n      fill=\"#E66D17\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8.146 12.146a.5.5 0 0 0 .708.708L12 9.707V11a.5.5 0 0 0 1 0V8.5a.5.5 0 0 0-.5-.5H10a.5.5 0 0 0 0 1h1.293zM12.707 15l3.147-3.146a.5.5 0 0 0-.708-.708L12 14.293V13a.5.5 0 0 0-1 0v2.5a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 0-1z\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst SpringWebFlowFileDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M10.077 2.44a.6.6 0 0 0-1.157-.319L5.765 13.56a.6.6 0 0 0 1.157.319zM5.412 4.667a.6.6 0 0 1-.093.843L1.96 8.197l3.359 2.687a.6.6 0 0 1-.75.937L.039 8.197l4.53-3.624a.6.6 0 0 1 .843.094M15.001 8.965 10.682 5.51a.6.6 0 0 1 .75-.937l4.53 3.624z\"\n      fill=\"#C77D55\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8.146 12.146a.5.5 0 0 0 .708.708L12 9.707V11a.5.5 0 0 0 1 0V8.5a.5.5 0 0 0-.5-.5H10a.5.5 0 0 0 0 1h1.293zM12.707 15l3.147-3.146a.5.5 0 0 0-.708-.708L12 14.293V13a.5.5 0 0 0-1 0v2.5a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 0-1z\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const SpringWebFlowFile: React.FC<SpringWebFlowFileProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? SpringWebFlowFileLight : SpringWebFlowFileDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "spring-web-flow-file",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

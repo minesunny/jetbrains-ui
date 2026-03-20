@@ -1,0 +1,41 @@
+---
+title: 无障碍
+description: JetBrains UI 的无障碍实现说明。
+---
+
+JetBrains UI 组件在设计时已充分考虑无障碍能力。所有组件都基于 [Radix UI](https://www.radix-ui.com/) 原语构建，开箱即具备完善的可访问性支持。
+
+## 基于 Radix UI
+
+Radix UI 原语覆盖了关键无障碍能力，包括：
+
+- **键盘导航**：所有可交互组件都支持完整键盘操作。
+- **ARIA 属性**：自动应用正确的 role、state 和 property。
+- **焦点管理**：弹层焦点锁定、关闭后焦点恢复、合理的 Tab 顺序。
+- **读屏支持**：为辅助技术提供可理解的标签与提示。
+
+## 图标无障碍
+
+所有 JetBrains 图标都支持无障碍属性：
+
+```tsx
+// 装饰性图标（对读屏隐藏）
+<Add />
+
+// 语义图标（读屏可读）
+<Add aria-label="添加项目" />
+```
+
+当提供 `aria-label` 时，图标会使用 `role="img"`。否则默认 `role="presentation"` 且 `aria-hidden="true"`。
+
+## `prefers-reduced-motion`
+
+`prefers-reduced-motion` 是 CSS 媒体查询与系统级设置。若用户启用该偏好，建议：
+
+- 避免大幅位移动画（scale、translate、rotate）。
+- 优先使用轻量过渡（如 opacity）。
+- 关闭视差或自动滚动等强动效。
+
+## 总结
+
+JetBrains UI 在 Radix UI 基础上遵循标准无障碍模式，为应用提供稳健的可访问性基础。建议你在落地时继续通过键盘与读屏器进行实际验证，确保最终体验对所有用户都友好。

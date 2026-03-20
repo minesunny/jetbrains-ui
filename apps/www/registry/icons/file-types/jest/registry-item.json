@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-jest",
+  "type": "registry:ui",
+  "title": "Jest",
+  "description": "Jest icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/jest/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/jest/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "jest",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

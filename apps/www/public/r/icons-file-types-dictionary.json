@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-dictionary",
+  "type": "registry:ui",
+  "title": "Dictionary",
+  "description": "Dictionary icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/dictionary/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/dictionary/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type DictionaryProps = IconProps;\n\nconst DictionaryLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M4.995 3.9h1.554L8.258 13H6.952l-1.04-6.513-.065-.884h-.143l-.052.884L4.664 13H3.318zM4.28 9.581h2.919v1.105H4.28zm4.27 2.242 2.665-6.675h-2.47V3.9h3.861v1.177l-2.665 6.675h2.665V13H8.55z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst DictionaryDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M4.995 3.9h1.554L8.258 13H6.952l-1.04-6.513-.065-.884h-.143l-.052.884L4.664 13H3.318zM4.28 9.581h2.919v1.105H4.28zm4.27 2.242 2.665-6.675h-2.47V3.9h3.861v1.177l-2.665 6.675h2.665V13H8.55z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const Dictionary: FC<DictionaryProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? DictionaryLight : DictionaryDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dictionary",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

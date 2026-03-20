@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-tasks-stop-timer",
+  "type": "registry:ui",
+  "title": "Stop Timer",
+  "description": "Stop Timer icon from Plugins Tasks category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/tasks/stop-timer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/tasks/stop-timer/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "stop-timer",
+      "icon",
+      "plugins",
+      "tasks",
+      "jetbrains"
+    ]
+  }
+}

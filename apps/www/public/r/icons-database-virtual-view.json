@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-virtual-view",
+  "type": "registry:ui",
+  "title": "Virtual View",
+  "description": "Virtual View icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/virtual-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/virtual-view/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type VirtualViewProps = IconProps;\n\nconst VirtualViewLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M2 12V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v4.354A4 4 0 0 0 7.535 13H3a1 1 0 0 1-1-1\"\n      fill=\"#EEE0FF\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v7c0-1.014-.378-1.94-1-2.646V6h-3v1q-.519.001-1 .126V6H6v7h1.535c.218.376.495.714.82 1H3a2 2 0 0 1-2-2zm5-1h4v2H6zM5 3H3a1 1 0 0 0-1 1v1h3zM2 6v6a1 1 0 0 0 1 1h2V6zm12-1V4a1 1 0 0 0-1-1h-2v2z\"\n      fill=\"#955AE0\"\n    />\n    <circle cx=\"11\" cy=\"11\" r=\"2\" fill=\"#EDF3FF\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.738 13.445a3 3 0 1 1 .707-.707l1.409 1.408a.5.5 0 0 1-.708.708zM13 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst VirtualViewDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M2 12V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v4.354A4 4 0 0 0 7.535 13H3a1 1 0 0 1-1-1\"\n      fill=\"#2F2936\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v7c0-1.014-.378-1.94-1-2.646V6h-3v1q-.519.001-1 .126V6H6v7h1.535c.218.376.495.714.82 1H3a2 2 0 0 1-2-2zm5-1h4v2H6zM5 3H3a1 1 0 0 0-1 1v1h3zM2 6v6a1 1 0 0 0 1 1h2V6zm12-1V4a1 1 0 0 0-1-1h-2v2z\"\n      fill=\"#955AE0\"\n    />\n    <circle cx=\"11\" cy=\"11\" r=\"2\" fill=\"#25324D\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M12.738 13.445a3 3 0 1 1 .707-.707l1.409 1.408a.5.5 0 0 1-.708.708zM13 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const VirtualView: FC<VirtualViewProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? VirtualViewLight : VirtualViewDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "virtual-view",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

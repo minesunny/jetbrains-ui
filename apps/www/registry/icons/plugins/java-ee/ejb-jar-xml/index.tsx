@@ -1,0 +1,106 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type EjbJarXmlProps = IconProps;
+
+const EjbJarXmlLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M14.526 9.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.144-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425"
+      fill="#EBECF0"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M14.526 9.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.144-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425m-.707.708c.699.698 1.086 1.467 1.165 2.161a2.2 2.2 0 0 1-.399 1.556l-4.473-4.473a2.23 2.23 0 0 1 1.543-.391c.7.075 1.472.454 2.164 1.147m-4.415-.05 4.475 4.475a2.26 2.26 0 0 1-1.604.396c-.719-.085-1.49-.477-2.146-1.132-.648-.648-1.032-1.423-1.113-2.148a2.3 2.3 0 0 1 .388-1.591"
+      fill="#6C707E"
+    />
+    <path
+      d="M9.658 1.702a.6.6 0 0 1 .419.738L6.922 13.88a.6.6 0 0 1-1.157-.32L8.92 2.122a.6.6 0 0 1 .738-.419M5.319 5.51a.6.6 0 1 0-.75-.937L.039 8.197l4.53 3.624a.6.6 0 0 0 .75-.937L1.96 8.197zM12.834 7.233c.881.285 1.703.817 2.399 1.513l.018.018.709-.567-4.53-3.624a.6.6 0 0 0-.75.937z"
+      fill="#E66D17"
+    />
+  </svg>
+);
+
+const EjbJarXmlDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M14.526 9.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.144-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425"
+      fill="#43454A"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M14.526 9.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.144-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425m-.707.708c.699.698 1.086 1.467 1.165 2.161a2.2 2.2 0 0 1-.399 1.556l-4.473-4.473a2.23 2.23 0 0 1 1.543-.391c.7.075 1.472.454 2.164 1.147m-4.415-.05 4.475 4.475a2.26 2.26 0 0 1-1.604.396c-.719-.085-1.49-.477-2.146-1.132-.648-.648-1.032-1.423-1.113-2.148a2.3 2.3 0 0 1 .388-1.591"
+      fill="#CED0D6"
+    />
+    <path
+      d="M9.658 1.702a.6.6 0 0 1 .419.738L6.922 13.88a.6.6 0 0 1-1.157-.32L8.92 2.122a.6.6 0 0 1 .738-.419M5.319 5.51a.6.6 0 1 0-.75-.937L.039 8.197l4.53 3.624a.6.6 0 0 0 .75-.937L1.96 8.197zM12.834 7.233c.881.285 1.703.817 2.399 1.513l.018.018.709-.567-4.53-3.624a.6.6 0 0 0-.75.937z"
+      fill="#E66D17"
+    />
+  </svg>
+);
+
+export const EjbJarXml: React.FC<EjbJarXmlProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? EjbJarXmlLight : EjbJarXmlDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

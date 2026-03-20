@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-actions-replace",
+  "type": "registry:ui",
+  "title": "Replace",
+  "description": "Replace icon from General Actions category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/replace/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/replace/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ReplaceProps = IconProps;\n\nconst ReplaceLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M10.164 10.872a5.015 5.015 0 0 1-4.341.989l-.46-1.21A4 4 0 1 0 3.126 8H2.1a5 5 0 1 1 8.771 2.165l2.982 2.976a.5.5 0 0 1-.707.708z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3.665 9H2.57L0 16h1.075l.595-1.78h2.965l.64 1.78h1.05zm-.44 1.33 1.11 3.055H1.95L3 10.33l.11-.43z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ReplaceDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M10.164 10.872a5.015 5.015 0 0 1-4.341.989l-.46-1.21A4 4 0 1 0 3.126 8H2.1a5 5 0 1 1 8.771 2.165l2.982 2.976a.5.5 0 0 1-.707.708z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3.665 9H2.57L0 16h1.075l.595-1.78h2.965l.64 1.78h1.05zm-.44 1.33 1.11 3.055H1.95L3 10.33l.11-.43z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const Replace: FC<ReplaceProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ReplaceLight : ReplaceDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "replace",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-jpa-flyway-plugin-logo",
+  "type": "registry:ui",
+  "title": "Flyway Plugin Logo",
+  "description": "Flyway Plugin Logo icon from Plugins Jpa category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/flyway-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/flyway-plugin-logo/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "flyway-plugin-logo",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

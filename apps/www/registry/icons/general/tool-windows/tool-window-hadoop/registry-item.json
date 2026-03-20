@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-tool-window-hadoop",
+  "type": "registry:ui",
+  "title": "Tool Window Hadoop",
+  "description": "Tool Window Hadoop icon from General Tool Windows category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/tool-window-hadoop/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-hadoop/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tool-window-hadoop",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

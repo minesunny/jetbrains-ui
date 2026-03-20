@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-package-checker-medium-all-tree-outline",
+  "type": "registry:ui",
+  "title": "Medium All Tree Outline",
+  "description": "Medium All Tree Outline icon from Plugins Package Checker category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/package-checker/medium-all-tree-outline/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/medium-all-tree-outline/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "medium-all-tree-outline",
+      "icon",
+      "plugins",
+      "package-checker",
+      "jetbrains"
+    ]
+  }
+}

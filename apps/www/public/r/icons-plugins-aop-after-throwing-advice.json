@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-aop-after-throwing-advice",
+  "type": "registry:ui",
+  "title": "After Throwing Advice",
+  "description": "After Throwing Advice icon from Plugins Aop category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/aop/after-throwing-advice/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/aop/after-throwing-advice/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type AfterThrowingAdviceProps = IconProps;\n\nconst AfterThrowingAdviceLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M12.95 3.05c.76.76 1.31 1.653 1.647 2.603L7.919 14H8v1a7 7 0 1 1 4.95-11.95\"\n      fill=\"#FFF7F7\"\n    />\n    <path d=\"m10 13 4-5-.5 3H16l-4 5 .5-3z\" fill=\"#6C707E\" />\n    <path\n      d=\"M11.001 10.148v-2.71c0-.82-.425-1.33-1.177-1.33-.804 0-1.33.573-1.33 1.482v3.164h-.988V7.438c0-.82-.431-1.33-1.177-1.33-.815 0-1.33.573-1.33 1.482v3.164H4V5.372h.962v.877c.32-.64.887-1.003 1.645-1.003.799 0 1.397.397 1.689 1.07.34-.669.958-1.07 1.77-1.07 1.15 0 1.934.825 1.934 2.113v1.54z\"\n      fill=\"#DB3B4B\"\n    />\n    <path\n      d=\"M1.07 9A7 7 0 0 0 8 15v-1h-.081a6 6 0 0 1-5.837-5z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"m14.596 5.653-.76.95A6.002 6.002 0 0 0 2.082 7H1.07a7.002 7.002 0 0 1 13.526-1.347\"\n      fill=\"#DB3B4B\"\n    />\n  </svg>\n);\n\nconst AfterThrowingAdviceDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M12.95 3.05c.76.76 1.31 1.653 1.647 2.603L7.919 14H8v1a7 7 0 1 1 4.95-11.95\"\n      fill=\"#402929\"\n    />\n    <path d=\"m10 13 4-5-.5 3H16l-4 5 .5-3z\" fill=\"#CED0D6\" />\n    <path\n      d=\"M11.001 10.148v-2.71c0-.82-.425-1.33-1.177-1.33-.804 0-1.33.573-1.33 1.482v3.164h-.988V7.438c0-.82-.431-1.33-1.177-1.33-.815 0-1.33.573-1.33 1.482v3.164H4V5.372h.962v.877c.32-.64.887-1.003 1.645-1.003.799 0 1.397.397 1.689 1.07.34-.669.958-1.07 1.77-1.07 1.15 0 1.934.825 1.934 2.113v1.54z\"\n      fill=\"#DB5C5C\"\n    />\n    <path\n      d=\"M1.07 9A7 7 0 0 0 8 15v-1h-.081a6 6 0 0 1-5.837-5z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"m14.596 5.653-.76.95A6.002 6.002 0 0 0 2.082 7H1.07a7.002 7.002 0 0 1 13.526-1.347\"\n      fill=\"#DB5C5C\"\n    />\n  </svg>\n);\n\nexport const AfterThrowingAdvice: React.FC<AfterThrowingAdviceProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? AfterThrowingAdviceLight : AfterThrowingAdviceDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "after-throwing-advice",
+      "icon",
+      "plugins",
+      "aop",
+      "jetbrains"
+    ]
+  }
+}

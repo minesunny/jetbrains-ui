@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-t-sqlt",
+  "type": "registry:ui",
+  "title": "T Sqlt",
+  "description": "T Sqlt icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/t-sqlt/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/t-sqlt/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "t-sqlt",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

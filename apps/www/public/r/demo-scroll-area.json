@@ -1,0 +1,19 @@
+{
+  "name": "demo-scroll-area",
+  "type": "registry:ui",
+  "title": "Scroll Area Demo",
+  "description": "Demo showing scroll area component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/scroll-area"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/scroll-area/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/scroll-area.tsx",
+      "content": "import {\n  ScrollArea,\n  ScrollBar,\n  ScrollViewport,\n} from '@/components/jetbrains-ui/scroll-area';\n\nconst buildEntries = () =>\n  Array.from({ length: 12 }, (_, index) => ({\n    id: index + 1,\n    title: `Event ${String(index + 1).padStart(2, '0')}`,\n    detail:\n      index % 3 === 0\n        ? 'Background indexing completed for the workspace.'\n        : index % 3 === 1\n          ? 'Terminal session attached to the latest run configuration.'\n          : 'A long diagnostic row keeps horizontal scrolling visible in the preview panel.',\n  }));\n\nexport default function ScrollAreaDemo() {\n  const entries = buildEntries();\n\n  return (\n    <ScrollArea className=\"h-40 w-[320px] rounded-md border\">\n      <ScrollViewport className=\"h-full w-full p-3\">\n        <div className=\"min-w-[520px] space-y-2 text-sm\">\n          {entries.map((entry) => (\n            <div\n              key={entry.id}\n              className=\"rounded-[4px] border px-3 py-2 leading-4\"\n            >\n              <div className=\"font-medium\">{entry.title}</div>\n              <div className=\"text-muted-foreground mt-1 whitespace-nowrap\">\n                {entry.detail}\n              </div>\n            </div>\n          ))}\n        </div>\n      </ScrollViewport>\n      <ScrollBar orientation=\"horizontal\" />\n    </ScrollArea>\n  );\n}"
+    }
+  ],
+  "meta": {}
+}

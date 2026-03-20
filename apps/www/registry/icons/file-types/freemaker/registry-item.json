@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-freemaker",
+  "type": "registry:ui",
+  "title": "Freemaker",
+  "description": "Freemaker icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/freemaker/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/freemaker/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "freemaker",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

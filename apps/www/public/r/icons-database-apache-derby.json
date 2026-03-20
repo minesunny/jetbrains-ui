@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-apache-derby",
+  "type": "registry:ui",
+  "title": "Apache Derby",
+  "description": "Apache Derby icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/apache-derby/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/apache-derby/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ApacheDerbyProps = IconProps;\n\nconst ApacheDerbyLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7.318 9.203c5.754-4.583 7.654-2.42 7.654-2.42.04.107-.028.23-.028.23l-.003-.001c-.112.357-.985.837-2.34.891-1.16.046-2.164.166-2.81.26-.871.54-1.695 1.14-2.366 1.64-.045.033-.142.119-.28.24-.68.594-2.347 2.05-3.607 2.472-.978.327-1.8.39-2.229-.17a1.1 1.1 0 0 1-.255-.575C.782 10.039 3.169 9 3.169 9s.168.976.286 1.132c1.39-.096 3.174-.686 3.863-.929\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M3.174 8.856s-.926-3.42 1.347-4.723c.76-.435 2.235-.91 2.969-1.007s2.463-.405 3.351 1.062c.325.535.748 1.483.837 1.826-.929 1.013-7.475 2.777-8.504 2.842\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ApacheDerbyDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7.318 9.203c5.754-4.583 7.654-2.42 7.654-2.42.04.107-.028.23-.028.23l-.003-.001c-.112.357-.985.837-2.34.891-1.16.046-2.164.166-2.81.26-.871.54-1.695 1.14-2.366 1.64-.045.033-.142.119-.28.24-.68.594-2.347 2.05-3.607 2.472-.978.327-1.8.39-2.229-.17a1.1 1.1 0 0 1-.255-.575C.782 10.039 3.169 9 3.169 9s.168.976.286 1.132c1.39-.096 3.174-.686 3.863-.929\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      d=\"M3.174 8.856s-.926-3.42 1.347-4.723c.76-.435 2.235-.91 2.969-1.007s2.463-.405 3.351 1.062c.325.535.748 1.483.837 1.826-.929 1.013-7.475 2.777-8.504 2.842\"\n      fill=\"#EBECF0\"\n    />\n  </svg>\n);\n\nexport const ApacheDerby: FC<ApacheDerbyProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ApacheDerbyLight : ApacheDerbyDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "apache-derby",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

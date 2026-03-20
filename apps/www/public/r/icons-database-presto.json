@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-presto",
+  "type": "registry:ui",
+  "title": "Presto",
+  "description": "Presto icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/presto/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/presto/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type PrestoProps = IconProps;\n\nconst PrestoLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M5.212 3.28a.572.572 0 1 0 0-1.143.572.572 0 0 0 0 1.143M6.979 5.118a.643.643 0 1 0 0-1.286.643.643 0 0 0 0 1.286M9.46 6.242a.714.714 0 1 1-1.429 0 .714.714 0 0 1 1.429 0M10.512 8.794a.786.786 0 1 0 0-1.57.786.786 0 0 0 0 1.57M13.136 9.775a.857.857 0 1 1-1.714 0 .857.857 0 0 1 1.714 0\"\n      fill=\"#5890FF\"\n    />\n    <path\n      d=\"M2.18 2.709a.5.5 0 1 1-1.001 0 .5.5 0 0 1 1 0M4.018 4.475a.572.572 0 1 1-1.144 0 .572.572 0 0 1 1.144 0M5.213 6.885a.643.643 0 1 0 0-1.286.643.643 0 0 0 0 1.286M7.694 8.009a.714.714 0 1 1-1.429 0 .714.714 0 0 1 1.429 0M8.746 10.561a.786.786 0 1 0 0-1.571.786.786 0 0 0 0 1.571M11.37 11.542a.857.857 0 1 1-1.714 0 .857.857 0 0 1 1.714 0\"\n      fill=\"#0F2648\"\n    />\n    <path\n      d=\"M9.389 2.709a.643.643 0 1 1-1.286 0 .643.643 0 0 1 1.286 0M11.227 4.475a.714.714 0 1 1-1.429 0 .714.714 0 0 1 1.429 0M12.28 7.028a.786.786 0 1 0 0-1.571.786.786 0 0 0 0 1.57M14.903 8.009a.857.857 0 1 1-1.714 0 .857.857 0 0 1 1.714 0M5.213 10.347a.572.572 0 1 0 0-1.143.572.572 0 0 0 0 1.143M4.018 11.542a.572.572 0 1 1-1.144 0 .572.572 0 0 1 1.144 0M1.68 13.88a.572.572 0 1 0 0-1.143.572.572 0 0 0 0 1.143M5.784 13.309a.572.572 0 1 1-1.143 0 .572.572 0 0 1 1.143 0M8.746 13.88a.572.572 0 1 0 0-1.143.572.572 0 0 0 0 1.143M7.551 11.542a.572.572 0 1 1-1.143 0 .572.572 0 0 1 1.143 0\"\n      fill=\"#1EDCFF\"\n    />\n  </svg>\n);\n\nconst PrestoDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M5.212 3.28a.572.572 0 1 0 0-1.143.572.572 0 0 0 0 1.143M6.979 5.118a.643.643 0 1 0 0-1.286.643.643 0 0 0 0 1.286M9.46 6.242a.714.714 0 1 1-1.429 0 .714.714 0 0 1 1.429 0M10.512 8.794a.786.786 0 1 0 0-1.57.786.786 0 0 0 0 1.57M13.136 9.775a.857.857 0 1 1-1.714 0 .857.857 0 0 1 1.714 0\"\n      fill=\"#5890FF\"\n    />\n    <path\n      d=\"M2.18 2.709a.5.5 0 1 1-1.001 0 .5.5 0 0 1 1 0M4.018 4.475a.572.572 0 1 1-1.144 0 .572.572 0 0 1 1.144 0M5.213 6.885a.643.643 0 1 0 0-1.286.643.643 0 0 0 0 1.286M7.694 8.009a.714.714 0 1 1-1.429 0 .714.714 0 0 1 1.429 0M8.746 10.561a.786.786 0 1 0 0-1.571.786.786 0 0 0 0 1.571M11.37 11.542a.857.857 0 1 1-1.714 0 .857.857 0 0 1 1.714 0\"\n      fill=\"#0F2648\"\n    />\n    <path\n      d=\"M9.389 2.709a.643.643 0 1 1-1.286 0 .643.643 0 0 1 1.286 0M11.227 4.475a.714.714 0 1 1-1.429 0 .714.714 0 0 1 1.429 0M12.28 7.028a.786.786 0 1 0 0-1.571.786.786 0 0 0 0 1.57M14.903 8.009a.857.857 0 1 1-1.714 0 .857.857 0 0 1 1.714 0M5.213 10.347a.572.572 0 1 0 0-1.143.572.572 0 0 0 0 1.143M4.018 11.542a.572.572 0 1 1-1.144 0 .572.572 0 0 1 1.144 0M1.68 13.88a.572.572 0 1 0 0-1.143.572.572 0 0 0 0 1.143M5.784 13.309a.572.572 0 1 1-1.143 0 .572.572 0 0 1 1.143 0M8.746 13.88a.572.572 0 1 0 0-1.143.572.572 0 0 0 0 1.143M7.551 11.542a.572.572 0 1 1-1.143 0 .572.572 0 0 1 1.143 0\"\n      fill=\"#1EDCFF\"\n    />\n  </svg>\n);\n\nexport const Presto: FC<PrestoProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? PrestoLight : PrestoDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "presto",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

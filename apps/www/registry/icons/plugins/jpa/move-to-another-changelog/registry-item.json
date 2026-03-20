@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-jpa-move-to-another-changelog",
+  "type": "registry:ui",
+  "title": "Move To Another Changelog",
+  "description": "Move To Another Changelog icon from Plugins Jpa category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/move-to-another-changelog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/move-to-another-changelog/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "move-to-another-changelog",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

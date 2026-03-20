@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-spring-transaction-manager",
+  "type": "registry:ui",
+  "title": "Transaction Manager",
+  "description": "Transaction Manager icon from Plugins Spring category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/transaction-manager/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/transaction-manager/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "transaction-manager",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

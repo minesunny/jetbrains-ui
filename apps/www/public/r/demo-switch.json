@@ -1,0 +1,27 @@
+{
+  "name": "demo-switch",
+  "type": "registry:ui",
+  "title": "Switch Demo",
+  "description": "Demo showing switch component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/switch"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/switch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/switch.tsx",
+      "content": "import * as React from 'react';\nimport { Switch } from '@/components/jetbrains-ui/switch';\n\ninterface SwitchDemoProps {\n  disabled?: boolean;\n}\n\nexport default function SwitchDemo({ disabled = false }: SwitchDemoProps) {\n  const [checked, setChecked] = React.useState(true);\n\n  return (\n    <div className=\"flex items-center gap-3\">\n      <Switch\n        checked={checked}\n        onCheckedChange={setChecked}\n        disabled={disabled}\n      />\n      <span className=\"text-sm\">{checked ? 'Enabled' : 'Disabled'}</span>\n    </div>\n  );\n}"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "Switch": {
+        "disabled": {
+          "value": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-extension-run-configuration",
+  "type": "registry:ui",
+  "title": "Extension Run Configuration",
+  "description": "Extension Run Configuration icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/extension-run-configuration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/extension-run-configuration/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "extension-run-configuration",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

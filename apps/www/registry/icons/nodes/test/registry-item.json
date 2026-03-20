@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-test",
+  "type": "registry:ui",
+  "title": "Test",
+  "description": "Test icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/test/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "test",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

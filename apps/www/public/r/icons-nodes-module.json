@@ -1,0 +1,26 @@
+{
+  "name": "icons-nodes-module",
+  "type": "registry:ui",
+  "title": "Module",
+  "description": "Module icon from Nodes category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/module/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ModuleProps = IconProps;\n\nconst ModuleLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v2.17c-.313-.11-.65-.17-1-.17h-3a3 3 0 0 0-3 3v3H2.75C1.784 14 1 13.164 1 12.133z\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      d=\"M8.094 5H13a1 1 0 0 1 1 1v2c.35 0 .687.06 1 .17V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14H8v-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867h3.288z\"\n      fill=\"#6C707E\"\n    />\n    <rect\n      x=\"9.5\"\n      y=\"9.5\"\n      width=\"6\"\n      height=\"6\"\n      rx=\"1.5\"\n      fill=\"#EDF3FF\"\n      stroke=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst ModuleDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v2.17c-.313-.11-.65-.17-1-.17h-3a3 3 0 0 0-3 3v3H2.75C1.784 14 1 13.164 1 12.133z\"\n      fill=\"#43454A\"\n    />\n    <path\n      d=\"M8.094 5H13a1 1 0 0 1 1 1v2c.35 0 .687.06 1 .17V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14H8v-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867h3.288z\"\n      fill=\"#CED0D6\"\n    />\n    <rect\n      x=\"9.5\"\n      y=\"9.5\"\n      width=\"6\"\n      height=\"6\"\n      rx=\"1.5\"\n      fill=\"#25324D\"\n      stroke=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const Module: FC<ModuleProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ModuleLight : ModuleDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "module",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

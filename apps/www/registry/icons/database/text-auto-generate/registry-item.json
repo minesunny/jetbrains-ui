@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-text-auto-generate",
+  "type": "registry:ui",
+  "title": "Text Auto Generate",
+  "description": "Text Auto Generate icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/text-auto-generate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/text-auto-generate/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "text-auto-generate",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

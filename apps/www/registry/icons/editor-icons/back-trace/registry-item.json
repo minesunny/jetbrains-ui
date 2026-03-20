@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-back-trace",
+  "type": "registry:ui",
+  "title": "Back Trace",
+  "description": "Back Trace icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/back-trace/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/back-trace/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "back-trace",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

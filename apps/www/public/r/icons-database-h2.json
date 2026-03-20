@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-h2",
+  "type": "registry:ui",
+  "title": "H2",
+  "description": "H2 icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/h2/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/h2/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type H2Props = IconProps;\n\nconst H2Light: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path fill=\"#0600FF\" d=\"M1 3H15V13H1z\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14.002 11.065v.947h-3.273s1.61-3.187 1.786-3.539q.264-.527.264-.822 0-.226-.08-.339c-.053-.074-.134-.092-.242-.092-.11 0-.19.022-.243.104q-.08.125-.08.492v.528h-1.283v-.202q0-.468.05-.737.05-.27.244-.53.196-.261.507-.395a1.9 1.9 0 0 1 .748-.134q.854 0 1.292.41.437.41.437 1.039 0 .477-.246 1.01-.246.532-1.451 2.26z\"\n      fill=\"#fff\"\n    />\n    <path\n      d=\"M6.009 6.617h1.2v2.192H8.8V6.617H10v5.4H8.8v-2.008H7.21v2.008h-1.2z\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nconst H2Dark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path fill=\"#1F58FF\" d=\"M1 3H15V13H1z\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M14.002 11.065v.947h-3.273s1.61-3.187 1.786-3.539q.264-.527.264-.822 0-.226-.08-.339c-.053-.074-.134-.092-.242-.092-.11 0-.19.022-.243.104q-.08.125-.08.492v.528h-1.283v-.202q0-.468.05-.737.05-.27.244-.53.196-.261.507-.395a1.9 1.9 0 0 1 .748-.134q.854 0 1.292.41.437.41.437 1.039 0 .477-.246 1.01-.246.532-1.451 2.26z\"\n      fill=\"#fff\"\n    />\n    <path\n      d=\"M6.009 6.617h1.2v2.192H8.8V6.617H10v5.4H8.8v-2.008H7.21v2.008h-1.2z\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nexport const H2: FC<H2Props> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? H2Light : H2Dark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "h2",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

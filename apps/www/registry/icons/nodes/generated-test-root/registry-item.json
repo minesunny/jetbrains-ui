@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-generated-test-root",
+  "type": "registry:ui",
+  "title": "Generated Test Root",
+  "description": "Generated Test Root icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/generated-test-root/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/generated-test-root/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "generated-test-root",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

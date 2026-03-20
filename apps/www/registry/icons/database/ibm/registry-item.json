@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-ibm",
+  "type": "registry:ui",
+  "title": "Ibm",
+  "description": "Ibm icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/ibm/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/ibm/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ibm",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

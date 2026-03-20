@@ -1,0 +1,86 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type MicronautProps = IconProps;
+
+const MicronautLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M13.6 10.745c-.512.465-.697.657-1.264 1.052-.676.471-1.666.536-2.328.24-.543-.244-1.047-.787-.992-1.605-.817 1-1.882 1.77-2.918 1.77-.993 0-1.224-.893-1.224-.893l-.133 1.17s-.454 2.262-.464 2.339c-.025.338-.204.43-.524.549-.76.281-1.608.586-1.753.633 1-4.687 2.019-9.354 3-14h2.03c-.161.757-1.562 7.422-1.57 7.512-.082.8.56 1.05 1.218 1.05.537 0 2.259-.6 2.455-1.526C9.69 6.418 10.615 2.055 10.641 2h1.996c-.162.767-1.182 5.674-1.534 7.384q-.042.205-.034.414c-.024.363.252.667.572.765s.717.037 1.024-.131q.494-.278.953-.61.484-.359.91-.786a1.12 1.12 0 0 1 1.043-.247c-.68.675-1.305 1.342-1.972 1.956"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const MicronautDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M13.6 10.745c-.512.465-.697.657-1.264 1.052-.676.471-1.666.536-2.328.24-.543-.244-1.047-.787-.992-1.605-.817 1-1.882 1.77-2.918 1.77-.993 0-1.224-.893-1.224-.893l-.133 1.17s-.454 2.262-.464 2.339c-.025.338-.204.43-.524.549-.76.281-1.608.586-1.753.633 1-4.687 2.019-9.354 3-14h2.03c-.161.757-1.562 7.422-1.57 7.512-.082.8.56 1.05 1.218 1.05.537 0 2.259-.6 2.455-1.526C9.69 6.418 10.615 2.055 10.641 2h1.996c-.162.767-1.182 5.674-1.534 7.384q-.042.205-.034.414c-.024.363.252.667.572.765s.717.037 1.024-.131q.494-.278.953-.61.484-.359.91-.786a1.12 1.12 0 0 1 1.043-.247c-.68.675-1.305 1.342-1.972 1.956"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const Micronaut: FC<MicronautProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? MicronautLight : MicronautDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

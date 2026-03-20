@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-sqlselect-statement",
+  "type": "registry:ui",
+  "title": "Sqlselect Statement",
+  "description": "Sqlselect Statement icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/sqlselect-statement/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sqlselect-statement/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sqlselect-statement",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

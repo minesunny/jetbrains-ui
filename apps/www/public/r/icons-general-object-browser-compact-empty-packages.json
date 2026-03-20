@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-object-browser-compact-empty-packages",
+  "type": "registry:ui",
+  "title": "Compact Empty Packages",
+  "description": "Compact Empty Packages icon from General Object Browser category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/object-browser/compact-empty-packages/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/compact-empty-packages/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type CompactEmptyPackagesProps = IconProps;\n\nconst CompactEmptyPackagesLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M1 3v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H5.5l-1-1H2a1 1 0 0 0-1 1\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M1 7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H5.5l-1-1H2a1 1 0 0 0-1 1zm3.086-4H2v4h6V4H5.086z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M4.5 7.5v3m4 3h-3a1 1 0 0 1-1-1v-2m0 0h4\"\n      stroke=\"#6C707E\"\n      strokeLinecap=\"round\"\n    />\n    <path\n      d=\"m12.5 2.5-2 2m2-2 2 2m-2-2v11\"\n      stroke=\"#6C707E\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nconst CompactEmptyPackagesDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M1 3v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H5.5l-1-1H2a1 1 0 0 0-1 1\"\n      fill=\"#43454A\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M1 7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H5.5l-1-1H2a1 1 0 0 0-1 1zm3.086-4H2v4h6V4H5.086z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M4.5 7.5v3m4 3h-3a1 1 0 0 1-1-1v-2m0 0h4\"\n      stroke=\"#CED0D6\"\n      strokeLinecap=\"round\"\n    />\n    <path\n      d=\"m12.5 2.5-2 2m2-2 2 2m-2-2v11\"\n      stroke=\"#CED0D6\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n    />\n  </svg>\n);\n\nexport const CompactEmptyPackages: FC<CompactEmptyPackagesProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? CompactEmptyPackagesLight : CompactEmptyPackagesDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "compact-empty-packages",
+      "icon",
+      "general",
+      "object-browser",
+      "jetbrains"
+    ]
+  }
+}

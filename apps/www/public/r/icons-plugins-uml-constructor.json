@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-uml-constructor",
+  "type": "registry:ui",
+  "title": "Constructor",
+  "description": "Constructor icon from Plugins Uml category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/uml/constructor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/constructor/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ConstructorProps = IconProps;\n\nconst ConstructorLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"m12 8 1.113 2.812 2.887.244-2.2 1.981.672 2.963L12 14.412 9.528 16l.672-2.963L8 11.056l2.887-.244z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M15 8c0 .675-.095 1.327-.274 1.945l-.912-.077-.884-2.236a1 1 0 0 0-1.86 0l-.884 2.236-2.27.191a1 1 0 0 0-.585 1.74l1.764 1.589-.357 1.574A7 7 0 1 1 15 8\"\n      fill=\"#FFF7F7\"\n    />\n    <path\n      d=\"M8 14q.498 0 .974-.079l-.236 1.04a7 7 0 1 1 5.988-5.017l-.912-.076-.062-.157A6 6 0 1 0 8 14\"\n      fill=\"#DB3B4B\"\n    />\n    <path\n      d=\"M8.296 6.315c.34-.668.958-1.07 1.77-1.07 1.04 0 1.78.675 1.913 1.755a1 1 0 0 0-.909.632l-.069.174v-.368c0-.82-.425-1.33-1.177-1.33-.804 0-1.33.573-1.33 1.482v2.42l-.578.05a1 1 0 0 0-.41.126V7.438c0-.82-.431-1.33-1.177-1.33-.815 0-1.33.573-1.33 1.482v3.164H4V5.372h.962v.877c.32-.64.887-1.003 1.645-1.003.799 0 1.397.397 1.689 1.07\"\n      fill=\"#DB3B4B\"\n    />\n  </svg>\n);\n\nconst ConstructorDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"m12 8 1.113 2.812 2.887.244-2.2 1.981.672 2.963L12 14.412 9.528 16l.672-2.963L8 11.056l2.887-.244z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M15 8c0 .675-.095 1.327-.274 1.945l-.912-.077-.884-2.236a1 1 0 0 0-1.86 0l-.884 2.236-2.27.191a1 1 0 0 0-.585 1.74l1.764 1.589-.357 1.574A7 7 0 1 1 15 8\"\n      fill=\"#402929\"\n    />\n    <path\n      d=\"M8 14q.498 0 .974-.079l-.236 1.04a7 7 0 1 1 5.988-5.017l-.912-.076-.062-.157A6 6 0 1 0 8 14\"\n      fill=\"#DB5C5C\"\n    />\n    <path\n      d=\"M8.296 6.315c.34-.668.958-1.07 1.77-1.07 1.04 0 1.78.675 1.913 1.755a1 1 0 0 0-.909.632l-.069.174v-.368c0-.82-.425-1.33-1.177-1.33-.804 0-1.33.573-1.33 1.482v2.42l-.578.05a1 1 0 0 0-.41.126V7.438c0-.82-.431-1.33-1.177-1.33-.815 0-1.33.573-1.33 1.482v3.164H4V5.372h.962v.877c.32-.64.887-1.003 1.645-1.003.799 0 1.397.397 1.689 1.07\"\n      fill=\"#DB5C5C\"\n    />\n  </svg>\n);\n\nexport const Constructor: React.FC<ConstructorProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ConstructorLight : ConstructorDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "constructor",
+      "icon",
+      "plugins",
+      "uml",
+      "jetbrains"
+    ]
+  }
+}

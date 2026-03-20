@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-cidr-debug-target-controller",
+  "type": "registry:ui",
+  "title": "Debug Target Controller",
+  "description": "Debug Target Controller icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/debug-target-controller/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/debug-target-controller/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type DebugTargetControllerProps = IconProps;\n\nconst DebugTargetControllerLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\">\n      <path\n        d=\"M6 10q0 .127-.016.25A3 3 0 0 0 4 9.5c-.76 0-1.456.283-1.985.75A2 2 0 1 1 6 10M6 12.5a2 2 0 1 0-4 0v.5a2 2 0 1 0 4 0z\"\n        fill=\"#F2FCF3\"\n      />\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M6 10q0 .127-.016.25.21.185.382.405l.857-.571a.5.5 0 1 1 .554.832l-.934.623q.155.455.157.961v.5c0 .486-.116.946-.321 1.352l1.098.732a.5.5 0 1 1-.554.832l-1.138-.759A3 3 0 0 1 4 16a3 3 0 0 1-2.085-.843l-1.138.759a.5.5 0 1 1-.554-.832l1.098-.732A3 3 0 0 1 1 13v-.5c0-.336.055-.66.157-.96l-.934-.624a.5.5 0 0 1 .554-.832l.857.571q.172-.22.381-.405A2 2 0 1 1 6 10m-3.608 4.189.015.021c.366.48.943.79 1.593.79.651 0 1.23-.311 1.594-.793l.013-.016C5.854 13.86 6 13.447 6 13v-.5a2 2 0 1 0-4 0v.5c0 .445.146.857.392 1.189m.671-4.54a1 1 0 0 1 1.874 0 3 3 0 0 0-1.874 0\"\n        fill=\"#208A3C\"\n      />\n      <path\n        d=\"M8 13h2a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3.17a3 3 0 0 1 1.874 1.967 1.5 1.5 0 0 1 1.458 2.611L8 11.97z\"\n        fill=\"#EBECF0\"\n      />\n      <path\n        d=\"M12 4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2H1.5a.5.5 0 0 0 0 1H4v2c.35 0 .687.06 1 .17V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8v1h2a2 2 0 0 0 2-2h2.5a.5.5 0 1 0 0-1H12V8.5h2.5a.5.5 0 1 0 0-1H12V5h2.5a.5.5 0 1 0 0-1z\"\n        fill=\"#6C707E\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nconst DebugTargetControllerDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\">\n      <path\n        d=\"M6 10q0 .127-.016.25A3 3 0 0 0 4 9.5c-.76 0-1.456.283-1.985.75A2 2 0 1 1 6 10M6 12.5a2 2 0 1 0-4 0v.5a2 2 0 1 0 4 0z\"\n        fill=\"#253627\"\n      />\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M6 10q0 .127-.016.25.21.185.382.405l.857-.571a.5.5 0 1 1 .554.832l-.934.623q.155.455.157.961v.5c0 .486-.116.946-.321 1.352l1.098.732a.5.5 0 1 1-.554.832l-1.138-.759A3 3 0 0 1 4 16a3 3 0 0 1-2.085-.843l-1.138.759a.5.5 0 1 1-.554-.832l1.098-.732A3 3 0 0 1 1 13v-.5c0-.336.055-.66.157-.96l-.934-.624a.5.5 0 0 1 .554-.832l.857.571q.172-.22.381-.405A2 2 0 1 1 6 10m-3.608 4.189.015.021c.366.48.943.79 1.593.79.651 0 1.23-.311 1.594-.793l.013-.016C5.854 13.86 6 13.447 6 13v-.5a2 2 0 1 0-4 0v.5c0 .445.146.857.392 1.189m.671-4.54a1 1 0 0 1 1.874 0 3 3 0 0 0-1.874 0\"\n        fill=\"#57965C\"\n      />\n      <path\n        d=\"M8 13h2a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3.17a3 3 0 0 1 1.874 1.967 1.5 1.5 0 0 1 1.458 2.611L8 11.97z\"\n        fill=\"#43454A\"\n      />\n      <path\n        d=\"M12 4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2H1.5a.5.5 0 0 0 0 1H4v2c.35 0 .687.06 1 .17V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8v1h2a2 2 0 0 0 2-2h2.5a.5.5 0 1 0 0-1H12V8.5h2.5a.5.5 0 1 0 0-1H12V5h2.5a.5.5 0 1 0 0-1z\"\n        fill=\"#CED0D6\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const DebugTargetController: React.FC<DebugTargetControllerProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? DebugTargetControllerLight : DebugTargetControllerDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "debug-target-controller",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

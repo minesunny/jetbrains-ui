@@ -1,0 +1,26 @@
+{
+  "name": "icons-nodes-favorites",
+  "type": "registry:ui",
+  "title": "Favorites",
+  "description": "Favorites icon from Nodes category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/favorites/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/favorites/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type FavoritesProps = IconProps;\n\nconst FavoritesLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8 2.073a.5.5 0 0 1 .461.308l1.47 3.534 3.815.306a.5.5 0 0 1 .285.878l-2.906 2.49.888 3.722a.5.5 0 0 1-.747.543L8 11.859l-3.266 1.995a.5.5 0 0 1-.747-.543l.888-3.723-2.907-2.49a.5.5 0 0 1 .286-.877l3.814-.306 1.47-3.534A.5.5 0 0 1 8 2.073\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8 2.073a.5.5 0 0 1 .461.308l1.47 3.534 3.815.306a.5.5 0 0 1 .285.878l-2.906 2.49.888 3.722a.5.5 0 0 1-.747.543L8 11.859l-3.266 1.995a.5.5 0 0 1-.747-.543l.888-3.723-2.907-2.49a.5.5 0 0 1 .286-.877l3.814-.306 1.47-3.534A.5.5 0 0 1 8 2.073m0 1.802L6.874 6.581a.5.5 0 0 1-.421.306l-2.921.234 2.225 1.907a.5.5 0 0 1 .161.495l-.68 2.85 2.501-1.527a.5.5 0 0 1 .521 0l2.501 1.528-.68-2.85a.5.5 0 0 1 .161-.496l2.226-1.907-2.921-.234a.5.5 0 0 1-.422-.306z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst FavoritesDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8 2.073a.5.5 0 0 1 .461.308l1.47 3.534 3.815.306a.5.5 0 0 1 .285.878l-2.906 2.49.888 3.722a.5.5 0 0 1-.747.543L8 11.859l-3.266 1.995a.5.5 0 0 1-.747-.543l.888-3.723-2.907-2.49a.5.5 0 0 1 .286-.877l3.814-.306 1.47-3.534A.5.5 0 0 1 8 2.073\"\n      fill=\"#43454A\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8 2.073a.5.5 0 0 1 .461.308l1.47 3.534 3.815.306a.5.5 0 0 1 .285.878l-2.906 2.49.888 3.722a.5.5 0 0 1-.747.543L8 11.859l-3.266 1.995a.5.5 0 0 1-.747-.543l.888-3.723-2.907-2.49a.5.5 0 0 1 .286-.877l3.814-.306 1.47-3.534A.5.5 0 0 1 8 2.073m0 1.802L6.874 6.581a.5.5 0 0 1-.421.306l-2.921.234 2.225 1.907a.5.5 0 0 1 .161.495l-.68 2.85 2.501-1.527a.5.5 0 0 1 .521 0l2.501 1.528-.68-2.85a.5.5 0 0 1 .161-.496l2.226-1.907-2.921-.234a.5.5 0 0 1-.422-.306z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const Favorites: FC<FavoritesProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? FavoritesLight : FavoritesDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "favorites",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

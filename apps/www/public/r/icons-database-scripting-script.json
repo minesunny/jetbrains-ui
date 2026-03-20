@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-scripting-script",
+  "type": "registry:ui",
+  "title": "Scripting Script",
+  "description": "Scripting Script icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/scripting-script/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/scripting-script/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ScriptingScriptProps = IconProps;\n\nconst ScriptingScriptLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7.5 13.5H6m0 0h3m-3 0A1.5 1.5 0 0 1 4.5 12V4.5m0 0V4A1.5 1.5 0 0 0 3 2.5m1.5 2h-3V4A1.5 1.5 0 0 1 3 2.5m0 0h7.5a2 2 0 0 1 2 2V8\"\n      stroke=\"#6C707E\"\n      strokeLinejoin=\"round\"\n    />\n    <path\n      d=\"M14 11.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5M13.5 14a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1z\"\n      fill=\"#3574F0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M10 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5zm1 .5v5h4v-5z\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst ScriptingScriptDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M7.5 13.5H6m0 0h3m-3 0A1.5 1.5 0 0 1 4.5 12V4.5m0 0V4A1.5 1.5 0 0 0 3 2.5m1.5 2h-3V4A1.5 1.5 0 0 1 3 2.5m0 0h7.5a2 2 0 0 1 2 2V8\"\n      stroke=\"#CED0D6\"\n      strokeLinejoin=\"round\"\n    />\n    <path\n      d=\"M14 11.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5M13.5 14a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1z\"\n      fill=\"#548AF7\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M10 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5zm1 .5v5h4v-5z\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const ScriptingScript: FC<ScriptingScriptProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? ScriptingScriptLight : ScriptingScriptDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "scripting-script",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

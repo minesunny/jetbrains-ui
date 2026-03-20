@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-ruby-rake-task-def-node",
+  "type": "registry:ui",
+  "title": "Rake Task Def Node",
+  "description": "Rake Task Def Node icon from Plugins Ruby category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/rake-task-def-node/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rake-task-def-node/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "rake-task-def-node",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

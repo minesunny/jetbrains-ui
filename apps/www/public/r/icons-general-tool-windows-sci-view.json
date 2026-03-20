@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-sci-view",
+  "type": "registry:ui",
+  "title": "Sci View",
+  "description": "Sci View icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/sci-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/sci-view/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SciViewProps = IconProps;\n\nconst SciViewLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M4 11.5a.5.5 0 0 1 1 0v3a.5.5 0 0 1-1 0zM11 8.5a.5.5 0 0 1 1 0v6a.5.5 0 0 1-1 0zM7.5 7.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"m2 8 5.571-5.143L11 5l3-3\"\n      stroke=\"#6C707E\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nconst SciViewDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M4 11.5a.5.5 0 0 1 1 0v3a.5.5 0 0 1-1 0zM11 8.5a.5.5 0 0 1 1 0v6a.5.5 0 0 1-1 0zM7.5 7.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"m2 8 5.571-5.143L11 5l3-3\"\n      stroke=\"#CED0D6\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nexport const SciView: FC<SciViewProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? SciViewLight : SciViewDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sci-view",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

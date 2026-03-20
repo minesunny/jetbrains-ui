@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-status-warning-dialog",
+  "type": "registry:ui",
+  "title": "Warning Dialog",
+  "description": "Warning Dialog icon from General Status category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/status/warning-dialog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/warning-dialog/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type WarningDialogProps = IconProps;\n\nconst WarningDialogLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 28 28\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M12.72 2.742a1.475 1.475 0 0 1 2.56 0L26.8 22.774c.569.99-.142 2.226-1.28 2.226H2.48c-1.138 0-1.849-1.237-1.28-2.226z\"\n      fill=\"#FFAF0F\"\n    />\n    <path\n      d=\"M15 9a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0zM14 22a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nconst WarningDialogDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 28 28\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\">\n      <path\n        d=\"M12.72 2.742a1.475 1.475 0 0 1 2.56 0L26.8 22.774c.569.99-.142 2.226-1.28 2.226H2.48c-1.138 0-1.849-1.237-1.28-2.226z\"\n        fill=\"#F2C55C\"\n      />\n      <path\n        d=\"M15 9a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0zM14 22a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3\"\n        fill=\"#2B2D30\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H28V28H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const WarningDialog: FC<WarningDialogProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? WarningDialogLight : WarningDialogDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "warning-dialog",
+      "icon",
+      "general",
+      "status",
+      "jetbrains"
+    ]
+  }
+}

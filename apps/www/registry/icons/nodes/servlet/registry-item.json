@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-servlet",
+  "type": "registry:ui",
+  "title": "Servlet",
+  "description": "Servlet icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/servlet/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/servlet/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "servlet",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

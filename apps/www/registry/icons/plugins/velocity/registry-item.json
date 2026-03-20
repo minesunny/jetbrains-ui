@@ -1,0 +1,41 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-velocity",
+  "type": "registry:ui",
+  "title": "Plugins Velocity Icons",
+  "description": "All 3 icons from the Plugins Velocity category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/velocity/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/velocity/index.ts"
+    },
+    {
+      "path": "registry/icons/plugins/velocity/velocity/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/velocity/velocity/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/velocity/velocity-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/velocity/velocity-plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/velocity/west/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/velocity/west/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "plugins",
+      "velocity",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

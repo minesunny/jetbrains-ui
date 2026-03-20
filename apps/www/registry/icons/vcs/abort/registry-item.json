@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-abort",
+  "type": "registry:ui",
+  "title": "Abort",
+  "description": "Abort icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/abort/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/abort/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "abort",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

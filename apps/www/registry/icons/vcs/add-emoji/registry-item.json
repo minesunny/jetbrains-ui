@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-add-emoji",
+  "type": "registry:ui",
+  "title": "Add Emoji",
+  "description": "Add Emoji icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/add-emoji/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/add-emoji/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "add-emoji",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

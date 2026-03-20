@@ -1,0 +1,39 @@
+---
+title: Dropdown Menu
+description: Dropdown menu component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-dropdown-menu" />
+
+## Overview
+
+A JetBrains-style dropdown menu component.
+
+## Installation
+
+<ComponentInstallation name="dropdown-menu" />
+
+## Usage
+
+```tsx
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/jetbrains-ui/dropdown-menu';
+import { Button } from '@/components/jetbrains-ui/buttons';
+
+<DropdownMenu>
+  <DropdownMenuTrigger asChild>
+    <Button>Open Menu</Button>
+  </DropdownMenuTrigger>
+  <DropdownMenuContent>
+    <DropdownMenuItem>Profile</DropdownMenuItem>
+  </DropdownMenuContent>
+</DropdownMenu>;
+```

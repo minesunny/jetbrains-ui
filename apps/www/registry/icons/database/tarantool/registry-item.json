@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-tarantool",
+  "type": "registry:ui",
+  "title": "Tarantool",
+  "description": "Tarantool icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/tarantool/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/tarantool/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tarantool",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

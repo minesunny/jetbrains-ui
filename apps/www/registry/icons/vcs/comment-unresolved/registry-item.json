@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-comment-unresolved",
+  "type": "registry:ui",
+  "title": "Comment Unresolved",
+  "description": "Comment Unresolved icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/comment-unresolved/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/comment-unresolved/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "comment-unresolved",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

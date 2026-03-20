@@ -1,0 +1,105 @@
+---
+title: Tabs
+description: Tabs primitives built with Radix UI.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+## Overview
+
+`Tabs` exposes the standard composition API:
+
+- `Tabs`
+- `TabsList`
+- `TabsTrigger`
+- `TabsContent`
+
+## Usage
+
+### Basic
+
+```tsx
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+} from '@/components/jetbrains-ui/tabs';
+
+<Tabs defaultValue="overview">
+  <TabsList>
+    <TabsTrigger value="overview">Overview</TabsTrigger>
+    <TabsTrigger value="settings">Settings</TabsTrigger>
+  </TabsList>
+  <TabsContent value="overview">Overview content</TabsContent>
+  <TabsContent value="settings">Settings content</TabsContent>
+</Tabs>;
+```
+
+### Vertical Orientation
+
+```tsx
+<Tabs defaultValue="overview" orientation="vertical" className="flex gap-3">
+  <TabsList className="h-auto flex-col items-stretch">
+    <TabsTrigger value="overview">Overview</TabsTrigger>
+    <TabsTrigger value="settings">Settings</TabsTrigger>
+  </TabsList>
+  <TabsContent value="overview">Overview content</TabsContent>
+  <TabsContent value="settings">Settings content</TabsContent>
+</Tabs>
+```
+
+## API Reference
+
+### Tabs
+
+<TypeTable
+  type={{
+    value: {
+      description: 'Controlled active tab value',
+      type: 'string',
+      required: false,
+    },
+    defaultValue: {
+      description: 'Default active tab value',
+      type: 'string',
+      required: false,
+    },
+    onValueChange: {
+      description: 'Callback fired when active value changes',
+      type: '(value: string) => void',
+      required: false,
+    },
+    orientation: {
+      description: 'Orientation of tabs',
+      type: '"horizontal" | "vertical"',
+      required: false,
+      default: '"horizontal"',
+    },
+  }}
+/>
+
+### TabsTrigger
+
+<TypeTable
+  type={{
+    value: {
+      description: 'Value associated with the trigger',
+      type: 'string',
+      required: true,
+    },
+    disabled: {
+      description: 'Whether the trigger is disabled',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: 'Additional props passed to the button element',
+      type: 'React.ComponentProps<"button">',
+      required: false,
+    },
+  }}
+/>

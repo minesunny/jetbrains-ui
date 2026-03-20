@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-actions-play-back",
+  "type": "registry:ui",
+  "title": "Play Back",
+  "description": "Play Back icon from General Actions category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/play-back/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/play-back/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "play-back",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-debug",
+  "type": "registry:ui",
+  "title": "Debug",
+  "description": "Debug icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/debug/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/debug/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type DebugProps = IconProps;\n\nconst DebugLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M13.967 13.533a.5.5 0 1 0 .5-.866zm-2.217-1.28 2.217 1.28.5-.866-2.217-1.28zM14.9 9.5a.5.5 0 0 0 0-1zm-2.5 0h2.5v-1h-2.5zM14.455 5.24a.5.5 0 0 0-.476-.88zm-2.217 1.2 2.217-1.2-.476-.88-2.217 1.2zM2.03 13.533a.5.5 0 0 1-.5-.866zm2.22-1.282-2.22 1.282-.5-.866 2.22-1.282zM1.1 9.5a.5.5 0 0 1 0-1zm2.5 0H1.1v-1h2.5zM1.542 5.24a.5.5 0 0 1 .476-.88zm2.22 1.2-2.22-1.2.476-.88 2.22 1.2z\"\n      fill=\"#6C707E\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6.3 4.2a1.7 1.7 0 1 1 3.201.8h.999q.04 0 .08.002a2.7 2.7 0 1 0-5.158 0Q5.46 4.999 5.5 5h1c-.127-.238-.2-.51-.2-.8\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M4 7.5a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3V10a4 4 0 0 1-8 0z\"\n      stroke=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst DebugDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M13.967 13.533a.5.5 0 1 0 .5-.866zm-2.217-1.28 2.217 1.28.5-.866-2.217-1.28zM14.9 9.5a.5.5 0 0 0 0-1zm-2.5 0h2.5v-1h-2.5zM14.455 5.24a.5.5 0 0 0-.476-.88zm-2.217 1.2 2.217-1.2-.476-.88-2.217 1.2zM2.03 13.533a.5.5 0 0 1-.5-.866zm2.22-1.282-2.22 1.282-.5-.866 2.22-1.282zM1.1 9.5a.5.5 0 0 1 0-1zm2.5 0H1.1v-1h2.5zM1.542 5.24a.5.5 0 0 1 .476-.88zm2.22 1.2-2.22-1.2.476-.88 2.22 1.2z\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6.3 4.2a1.7 1.7 0 1 1 3.201.8h.999q.04 0 .08.002a2.7 2.7 0 1 0-5.158 0Q5.46 4.999 5.5 5h1c-.127-.238-.2-.51-.2-.8\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M4 7.5a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3V10a4 4 0 0 1-8 0z\"\n      stroke=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const Debug: FC<DebugProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? DebugLight : DebugDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "debug",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

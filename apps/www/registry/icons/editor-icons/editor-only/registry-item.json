@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-editor-only",
+  "type": "registry:ui",
+  "title": "Editor Only",
+  "description": "Editor Only icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/editor-only/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/editor-only/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "editor-only",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

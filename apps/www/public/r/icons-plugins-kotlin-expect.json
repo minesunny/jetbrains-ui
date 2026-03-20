@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-kotlin-expect",
+  "type": "registry:ui",
+  "title": "Expect",
+  "description": "Expect icon from Plugins Kotlin category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kotlin/expect/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/expect/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ExpectProps = IconProps;\n\nconst ExpectLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 17 17\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\".293\"\n      y=\"8.071\"\n      width=\"11\"\n      height=\"11\"\n      rx=\".5\"\n      transform=\"rotate(-45 .293 8.071)\"\n      fill=\"#FFF4EB\"\n      stroke=\"#E66D17\"\n    />\n    <path\n      d=\"M5.67 11.414h4.8v-.875H6.617V8.484h3.432v-.88H6.617V5.596h3.757v-.875H5.67z\"\n      fill=\"#E66D17\"\n    />\n  </svg>\n);\n\nconst ExpectDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 17 17\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <rect\n      x=\".293\"\n      y=\"8.071\"\n      width=\"11\"\n      height=\"11\"\n      rx=\".5\"\n      transform=\"rotate(-45 .293 8.071)\"\n      fill=\"#45322B\"\n      stroke=\"#C77D55\"\n    />\n    <path\n      d=\"M5.67 11.414h4.8v-.875H6.617V8.484h3.432v-.88H6.617V5.596h3.757v-.875H5.67z\"\n      fill=\"#E08855\"\n    />\n  </svg>\n);\n\nexport const Expect: React.FC<ExpectProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ExpectLight : ExpectDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "expect",
+      "icon",
+      "plugins",
+      "kotlin",
+      "jetbrains"
+    ]
+  }
+}

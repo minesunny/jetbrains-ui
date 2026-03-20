@@ -1,0 +1,133 @@
+---
+title: Dynamic Tabs
+description: Data-driven tabs wrapper built on top of Tabs.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+## Overview
+
+`Dynamic Tabs` is powered by the `DynamicTabs` component, a wrapper around `Tabs` that renders triggers and contents from an `items` array.
+
+## Usage
+
+### Basic
+
+```tsx
+import { DynamicTabs } from '@/components/jetbrains-ui/tabs';
+
+const items = [
+  { value: 'overview', label: 'Overview', content: 'Overview content' },
+  { value: 'settings', label: 'Settings', content: 'Settings content' },
+];
+
+<DynamicTabs items={items} defaultValue="overview" />;
+```
+
+### Controlled
+
+```tsx
+const [value, setValue] = React.useState('overview');
+
+<DynamicTabs
+  items={items}
+  value={value}
+  onValueChange={setValue}
+  orientation="horizontal"
+/>;
+```
+
+## API Reference
+
+### DynamicTabs
+
+<TypeTable
+  type={{
+    items: {
+      description: 'Data source used to render triggers and contents',
+      type: 'DynamicTabsItem[]',
+      required: true,
+    },
+    value: {
+      description: 'Controlled active tab value',
+      type: 'string',
+      required: false,
+    },
+    defaultValue: {
+      description: 'Default active tab value',
+      type: 'string',
+      required: false,
+    },
+    onValueChange: {
+      description: 'Callback fired when active value changes',
+      type: '(value: string) => void',
+      required: false,
+    },
+    orientation: {
+      description: 'Orientation of tabs',
+      type: '"horizontal" | "vertical"',
+      required: false,
+      default: '"horizontal"',
+    },
+    listClassName: {
+      description: 'Extra class name for TabsList',
+      type: 'string',
+      required: false,
+    },
+    triggerClassName: {
+      description: 'Extra class name for every TabsTrigger',
+      type: 'string',
+      required: false,
+    },
+    contentClassName: {
+      description: 'Extra class name for every TabsContent',
+      type: 'string',
+      required: false,
+    },
+    emptyContent: {
+      description: 'Fallback content when items is empty',
+      type: 'React.ReactNode',
+      required: false,
+    },
+  }}
+/>
+
+### DynamicTabsItem
+
+<TypeTable
+  type={{
+    value: {
+      description: 'Unique value for trigger/content matching',
+      type: 'string',
+      required: true,
+    },
+    label: {
+      description: 'Trigger label',
+      type: 'React.ReactNode',
+      required: true,
+    },
+    content: {
+      description: 'Content rendered in TabsContent',
+      type: 'React.ReactNode',
+      required: true,
+    },
+    disabled: {
+      description: 'Disable this tab item',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    triggerClassName: {
+      description: 'Extra class name for this item trigger',
+      type: 'string',
+      required: false,
+    },
+    contentClassName: {
+      description: 'Extra class name for this item content',
+      type: 'string',
+      required: false,
+    },
+  }}
+/>

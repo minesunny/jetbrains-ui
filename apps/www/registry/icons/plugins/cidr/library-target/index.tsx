@@ -1,0 +1,111 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type LibraryTargetProps = IconProps;
+
+const LibraryTargetLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9 15.076A7.03 7.03 0 0 1 12.528 9 7.03 7.03 0 0 1 16 15.072v.018c-2.066 1.194-4.73 1.237-7-.014m5-3.18a3.01 3.01 0 0 1-1.512 2.604 3.01 3.01 0 0 1-1.489-2.602v-.008c.886-.512 2.028-.53 3 .005"
+      fill="#39207C"
+    />
+    <path
+      d="M14.824 9.565A7 7 0 1 0 8 15a8.03 8.03 0 0 1 4.032-6.868l.501-.286.498.29a8 8 0 0 1 1.793 1.429"
+      fill="#FAF5FF"
+    />
+    <path
+      d="M14.824 9.565A7 7 0 1 0 8 15a8 8 0 0 1 .076-1H8a6 6 0 1 1 5.952-5.236q.468.37.872.801"
+      fill="#834DF0"
+    />
+    <path
+      d="M9.123 11h-.43c-.575 0-1.066-.139-1.317-.416Q7 10.167 7 9.199V5.993L6 6V5h2v4.2c0 .8.5.801 1.033.801h.454v.438q-.193.273-.364.561"
+      fill="#834DF0"
+    />
+  </svg>
+);
+
+const LibraryTargetDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9 15.076A7.03 7.03 0 0 1 12.528 9 7.03 7.03 0 0 1 16 15.072v.018c-2.066 1.194-4.73 1.237-7-.014m5-3.18a3.01 3.01 0 0 1-1.512 2.604 3.01 3.01 0 0 1-1.489-2.602v-.008c.886-.512 2.028-.53 3 .005"
+      fill="#fff"
+    />
+    <path
+      d="M14.824 9.565A7 7 0 1 0 8 15a8.03 8.03 0 0 1 4.032-6.868l.501-.286.498.29a8 8 0 0 1 1.793 1.429"
+      fill="#2F2936"
+    />
+    <path
+      d="M14.824 9.565A7 7 0 1 0 8 15a8 8 0 0 1 .076-1H8a6 6 0 1 1 5.952-5.236q.468.37.872.801"
+      fill="#A571E6"
+    />
+    <path
+      d="M9.123 11h-.43c-.575 0-1.066-.139-1.317-.416Q7 10.167 7 9.199V5.993L6 6V5h2v4.2c0 .8.5.801 1.033.801h.454v.438q-.193.273-.364.561"
+      fill="#A571E6"
+    />
+  </svg>
+);
+
+export const LibraryTarget: React.FC<LibraryTargetProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? LibraryTargetLight : LibraryTargetDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

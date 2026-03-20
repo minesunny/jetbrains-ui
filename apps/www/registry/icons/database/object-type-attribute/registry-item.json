@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-object-type-attribute",
+  "type": "registry:ui",
+  "title": "Object Type Attribute",
+  "description": "Object Type Attribute icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/object-type-attribute/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/object-type-attribute/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "object-type-attribute",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

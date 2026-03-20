@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-locked",
+  "type": "registry:ui",
+  "title": "Locked",
+  "description": "Locked icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/locked/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/locked/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "locked",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

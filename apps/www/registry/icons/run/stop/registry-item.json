@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-stop",
+  "type": "registry:ui",
+  "title": "Stop",
+  "description": "Stop icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/stop/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/stop/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "stop",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

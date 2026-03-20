@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-test-error",
+  "type": "registry:ui",
+  "title": "Test Error",
+  "description": "Test Error icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/test-error/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/test-error/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "test-error",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

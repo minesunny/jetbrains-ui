@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-code-with-me-cwm-mic-off",
+  "type": "registry:ui",
+  "title": "Cwm Mic Off",
+  "description": "Cwm Mic Off icon from Plugins Code With Me category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/code-with-me/cwm-mic-off/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-mic-off/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cwm-mic-off",
+      "icon",
+      "plugins",
+      "code-with-me",
+      "jetbrains"
+    ]
+  }
+}

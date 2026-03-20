@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-object-group",
+  "type": "registry:ui",
+  "title": "Object Group",
+  "description": "Object Group icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/object-group/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/object-group/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "object-group",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

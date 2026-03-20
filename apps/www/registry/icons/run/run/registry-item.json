@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-run",
+  "type": "registry:ui",
+  "title": "Run",
+  "description": "Run icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/run/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/run/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

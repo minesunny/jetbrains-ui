@@ -1,0 +1,33 @@
+{
+  "name": "demo-tabs",
+  "type": "registry:ui",
+  "title": "Tabs Demo",
+  "description": "标签页组件的演示",
+  "dependencies": [
+    "@radix-ui/react-tabs"
+  ],
+  "registryDependencies": [
+    "@jetbrains-ui/tabs"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/tabs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/tabs.tsx",
+      "content": "import {\n  DynamicTabs,\n  Tabs,\n  TabsContent,\n  TabsList,\n  TabsTrigger,\n} from '@/components/jetbrains-ui/tabs';\n\ninterface TabsDemoProps {\n  orientation: 'horizontal' | 'vertical';\n}\n\nexport default function TabsDemo({ orientation }: TabsDemoProps) {\n  const vertical = orientation === 'vertical';\n  const dynamicItems = [\n    {\n      value: 'logs',\n      label: 'Logs',\n      content: 'Read runtime logs and diagnostics from the latest execution.',\n    },\n    {\n      value: 'metrics',\n      label: 'Metrics',\n      content: 'Track CPU, memory, and latency metrics in one compact view.',\n    },\n    {\n      value: 'alerts',\n      label: 'Alerts',\n      content: 'Review active alerts and suggested troubleshooting actions.',\n    },\n  ];\n\n  return (\n    <div className=\"space-y-6\">\n      <div>\n        <p className=\"text-muted-foreground mb-2 text-xs\">\n          Tabs (Radix UI primitives)\n        </p>\n        <Tabs\n          defaultValue=\"overview\"\n          orientation={orientation}\n          className={\n            vertical\n              ? 'flex w-full max-w-[520px] gap-3'\n              : 'w-full max-w-[520px]'\n          }\n        >\n          <TabsList\n            className={vertical ? 'h-auto flex-col items-stretch' : undefined}\n          >\n            <TabsTrigger value=\"overview\">Overview</TabsTrigger>\n            <TabsTrigger value=\"details\">Details</TabsTrigger>\n            <TabsTrigger value=\"activity\">Activity</TabsTrigger>\n          </TabsList>\n\n          <div className=\"flex-1\">\n            <TabsContent value=\"overview\">\n              View project summary, status, and key indicators in one place.\n            </TabsContent>\n            <TabsContent value=\"details\">\n              Manage configuration and update advanced settings for this module.\n            </TabsContent>\n            <TabsContent value=\"activity\">\n              Check recent actions, build logs, and integration events.\n            </TabsContent>\n          </div>\n        </Tabs>\n      </div>\n\n      <div>\n        <p className=\"text-muted-foreground mb-2 text-xs\">\n          DynamicTabs (data-driven wrapper on top of Radix UI)\n        </p>\n        <DynamicTabs\n          orientation={orientation}\n          items={dynamicItems}\n          defaultValue=\"logs\"\n          className={\n            vertical\n              ? 'flex w-full max-w-[520px] gap-3'\n              : 'w-full max-w-[520px]'\n          }\n          listClassName={vertical ? 'h-auto flex-col items-stretch' : undefined}\n        />\n      </div>\n    </div>\n  );\n}"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "Tabs": {
+        "orientation": {
+          "value": "horizontal",
+          "options": {
+            "horizontal": "horizontal",
+            "vertical": "vertical"
+          }
+        }
+      }
+    }
+  }
+}

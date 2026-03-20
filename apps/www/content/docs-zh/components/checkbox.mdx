@@ -1,0 +1,149 @@
+---
+title: Checkbox
+description: 基于 JetBrains UI 设计风格的复选框组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-01-31
+---
+
+<ComponentPreview name="demo-checkbox" />
+
+## 概述
+
+Checkbox 用于在列表中选择多个项目。
+用户可以选择全部、部分或不选择任何项目。
+本实现基于 Radix UI Checkbox，并对齐 JetBrains UI 风格。
+
+### 设计特点
+
+- **完整状态矩阵**：支持选中维度与交互维度的完整组合。
+- **JetBrains 风格配色**：采用 JetBrains UI Kit 的颜色系统。
+- **流畅动画**：SVG 路径动画实现优雅的勾选效果。
+- **无障碍支持**：完整的键盘导航和 `focus-visible` 状态。
+
+### 状态矩阵
+
+| 选中状态 | 交互状态                           |
+| -------- | ---------------------------------- |
+| 未选中   | 默认、悬停、按下、聚焦、错误、禁用 |
+| 已选中   | 默认、悬停、按下、聚焦、错误、禁用 |
+| 半选中   | 默认、悬停、按下、聚焦、错误、禁用 |
+
+## 尺寸规则
+
+- Checkbox 控件尺寸固定为 `16x16`。
+- 配合 `label` 使用时，整行最小高度为 `32px`。
+- 勾选与半选图标使用 `14x14` 绘制区域。
+
+## 安装
+
+<ComponentInstallation name="checkbox" />
+
+## 用法
+
+```tsx
+<Checkbox defaultChecked />
+```
+
+### 搭配标签
+
+```tsx
+<Checkbox label="同意条款与条件" />
+```
+
+### 半选状态
+
+```tsx
+const [checked, setChecked] = React.useState<boolean | 'indeterminate'>(false);
+
+<Checkbox indeterminate checked={checked} onCheckedChange={setChecked} />;
+```
+
+### 错误状态
+
+```tsx
+<Checkbox aria-invalid={true} />
+```
+
+### 禁用状态
+
+```tsx
+<Checkbox disabled />
+<Checkbox disabled defaultChecked />
+```
+
+## API 参考
+
+### Checkbox
+
+<TypeTable
+  type={{
+    checked: {
+      description: '受控选中状态',
+      type: 'boolean | "indeterminate"',
+      required: false,
+    },
+    defaultChecked: {
+      description: '默认选中状态',
+      type: 'boolean | "indeterminate"',
+      required: false,
+      default: 'false',
+    },
+    onCheckedChange: {
+      description: '选中状态变化时的回调',
+      type: '(checked: boolean | "indeterminate") => void',
+      required: false,
+    },
+    indeterminate: {
+      description: '开启三态模式（未选中 -> 已选中 -> 半选中）',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    label: {
+      description: '复选框标签文案或自定义 React 节点',
+      type: 'React.ReactNode',
+      required: false,
+    },
+    disabled: {
+      description: '是否禁用',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    'aria-invalid': {
+      description: '是否处于错误状态',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    required: {
+      description: '是否必填',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    name: {
+      description: '表单字段名称',
+      type: 'string',
+      required: false,
+    },
+    value: {
+      description: '表单字段值',
+      type: 'string',
+      required: false,
+      default: '"on"',
+    },
+    '...props': {
+      description: '传递给 button 元素的其他 props',
+      type: 'React.ComponentProps<"button">',
+      required: false,
+    },
+  }}
+/>
+
+## 致谢
+
+- 设计灵感来源于 [JetBrains UI Kit](https://jetbrains.design)
+- 基于 [Radix UI Checkbox](https://radix-ui.com/primitives/docs/components/checkbox) 构建

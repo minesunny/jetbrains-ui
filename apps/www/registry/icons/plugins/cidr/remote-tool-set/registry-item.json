@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-remote-tool-set",
+  "type": "registry:ui",
+  "title": "Remote Tool Set",
+  "description": "Remote Tool Set icon from Plugins Cidr category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/remote-tool-set/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/remote-tool-set/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "remote-tool-set",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

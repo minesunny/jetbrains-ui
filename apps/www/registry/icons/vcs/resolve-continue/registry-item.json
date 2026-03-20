@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-resolve-continue",
+  "type": "registry:ui",
+  "title": "Resolve Continue",
+  "description": "Resolve Continue icon from Vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/resolve-continue/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/resolve-continue/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "resolve-continue",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

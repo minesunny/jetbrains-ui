@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-kubernetes-auto-refresh",
+  "type": "registry:ui",
+  "title": "Auto Refresh",
+  "description": "Auto Refresh icon from Plugins Kubernetes category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/kubernetes/auto-refresh/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/auto-refresh/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "auto-refresh",
+      "icon",
+      "plugins",
+      "kubernetes",
+      "jetbrains"
+    ]
+  }
+}

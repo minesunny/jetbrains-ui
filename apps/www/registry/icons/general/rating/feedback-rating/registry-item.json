@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-rating-feedback-rating",
+  "type": "registry:ui",
+  "title": "Feedback Rating",
+  "description": "Feedback Rating icon from General Rating category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/rating/feedback-rating/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/rating/feedback-rating/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "feedback-rating",
+      "icon",
+      "general",
+      "rating",
+      "jetbrains"
+    ]
+  }
+}

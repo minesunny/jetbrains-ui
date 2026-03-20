@@ -1,0 +1,46 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-rating",
+  "type": "registry:ui",
+  "title": "General Rating Icons",
+  "description": "All 4 icons from the General Rating category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/rating/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/rating/index.ts"
+    },
+    {
+      "path": "registry/icons/general/rating/feedback-rating/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/rating/feedback-rating/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/rating/feedback-rating-focused/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/rating/feedback-rating-focused/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/rating/feedback-rating-focused-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/rating/feedback-rating-focused-on/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/rating/feedback-rating-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/rating/feedback-rating-on/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "icons",
+      "general",
+      "rating",
+      "jetbrains",
+      "icon-pack"
+    ]
+  }
+}

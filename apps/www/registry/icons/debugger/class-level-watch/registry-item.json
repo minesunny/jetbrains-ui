@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-debugger-class-level-watch",
+  "type": "registry:ui",
+  "title": "Class Level Watch",
+  "description": "Class Level Watch icon from Debugger category.",
+  "registryDependencies": [
+    "icons-debugger-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/debugger/class-level-watch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/debugger/class-level-watch/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "class-level-watch",
+      "icon",
+      "debugger",
+      "jetbrains"
+    ]
+  }
+}

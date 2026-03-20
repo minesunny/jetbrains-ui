@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-resource-bundle",
+  "type": "registry:ui",
+  "title": "Resource Bundle",
+  "description": "Resource Bundle icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/resource-bundle/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/resource-bundle/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "resource-bundle",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

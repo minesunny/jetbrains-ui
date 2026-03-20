@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-external-link",
+  "type": "registry:ui",
+  "title": "External Link",
+  "description": "External Link icon from General General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/external-link/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/external-link/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "external-link",
+      "icon",
+      "general",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

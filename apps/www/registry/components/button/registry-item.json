@@ -1,0 +1,60 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "buttons",
+  "type": "registry:ui",
+  "title": "Buttons",
+  "description": "JetBrains UI 风格的按钮组件集合，当前包含 Button。",
+  "dependencies": ["@radix-ui/react-slot"],
+  "registryDependencies": ["utils", "tooltip"],
+  "files": [
+    {
+      "path": "registry/components/button/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/buttons/index.tsx"
+    },
+    {
+      "path": "registry/components/button/button.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/buttons/button.tsx"
+    },
+    {
+      "path": "registry/components/button/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/buttons/index.css"
+    }
+  ],
+  "meta": {
+    "keywords": ["buttons", "button", "jetbrains", "ui", "组件", "按钮"],
+    "category": "buttons",
+    "docs": {
+      "description": "JetBrains UI 风格的按钮组件集合，当前提供 Base Button，基于 Radix UI Slot 构建。",
+      "features": [
+        "2种颜色变体：primary、secondary",
+        "Figma 对齐尺寸：default 72x28 / slim 72x24",
+        "支持 slim 变量",
+        "支持 tooltip 文本提示",
+        "完整状态支持：hover、active、disabled、focus",
+        "支持 asChild 模式组合链接等元素",
+        "基于 JetBrains 设计令牌的样式实现",
+        "优秀的无障碍支持"
+      ]
+    },
+    "demoProps": {
+      "Button": {
+        "variant": {
+          "value": "primary",
+          "options": {
+            "primary": "primary",
+            "secondary": "secondary"
+          }
+        },
+        "slim": {
+          "value": false
+        },
+        "tooltip": {
+          "value": ""
+        }
+      }
+    }
+  }
+}

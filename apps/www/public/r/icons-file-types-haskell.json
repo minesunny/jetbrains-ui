@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-haskell",
+  "type": "registry:ui",
+  "title": "Haskell",
+  "description": "Haskell icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/haskell/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/haskell/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type HaskellProps = IconProps;\n\nconst HaskellLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M9.91 5.5H15V8h-3.818zM12.455 9.25H15v2.5h-1.273zM1 3h2.545l2.546 5H3.545zM6.09 8H3.546L1 13h2.545z\"\n      fill=\"#F07B3E\"\n    />\n    <path\n      d=\"M4.818 3h2.546l2.545 5H7.364zM7.364 8h2.545l2.546 5H9.909z\"\n      fill=\"#90623E\"\n    />\n    <path d=\"M9.91 8H7.363l-2.546 5h2.546z\" fill=\"#90623E\" />\n  </svg>\n);\n\nconst HaskellDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M9.91 5.5H15V8h-3.818zM12.455 9.25H15v2.5h-1.273zM1 3h2.545l2.546 5H3.545zM6.09 8H3.546L1 13h2.545z\"\n      fill=\"#F07B3E\"\n    />\n    <path\n      d=\"M4.818 3h2.546l2.545 5H7.364zM7.364 8h2.545l2.546 5H9.909z\"\n      fill=\"#90623E\"\n    />\n    <path d=\"M9.91 8H7.363l-2.546 5h2.546z\" fill=\"#90623E\" />\n  </svg>\n);\n\nexport const Haskell: FC<HaskellProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? HaskellLight : HaskellDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "haskell",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

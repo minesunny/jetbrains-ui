@@ -1,0 +1,26 @@
+{
+  "name": "icons-file-types-scss",
+  "type": "registry:ui",
+  "title": "Scss",
+  "description": "Scss icon from File Types category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/scss/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/scss/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ScssProps = IconProps;\n\nconst ScssLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1\"\n      fill=\"#4682FA\"\n    />\n    <path\n      d=\"M6.609 10.332a1.8 1.8 0 0 1-.053 1.15q-.022.053-.045.103-.123.253-.324.471c-.407.444-.975.612-1.218.47-.264-.152-.132-.778.34-1.276.507-.536 1.237-.881 1.237-.881l-.001-.002zm5.782-6.336c-.317-1.243-2.379-1.652-4.33-.959-1.16.413-2.418 1.06-3.321 1.906-1.075 1.005-1.246 1.88-1.176 2.245.25 1.29 2.017 2.133 2.743 2.758v.004c-.214.106-1.782.9-2.149 1.71-.387.856.062 1.47.359 1.553.92.256 1.865-.204 2.373-.962.49-.73.45-1.674.236-2.144a2.8 2.8 0 0 1 1.072-.061c1.228.143 1.468.91 1.422 1.23-.046.322-.303.498-.39.552-.085.053-.112.071-.104.11.01.058.05.056.123.044.101-.017.645-.261.668-.853.03-.752-.69-1.594-1.967-1.572-.525.01-.856.06-1.094.148l-.055-.06c-.789-.841-2.247-1.437-2.185-2.568.022-.412.165-1.495 2.802-2.809 2.16-1.076 3.89-.78 4.188-.123.427.937-.924 2.68-3.167 2.932-.855.095-1.305-.236-1.417-.36-.118-.129-.135-.135-.18-.11-.07.04-.025.154 0 .222.068.175.343.484.811.637.412.136 1.416.21 2.63-.26 1.358-.525 2.42-1.988 2.108-3.21\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nconst ScssDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1\"\n      fill=\"#548AF7\"\n    />\n    <path\n      d=\"M6.609 10.332a1.8 1.8 0 0 1-.053 1.15q-.022.053-.045.103-.123.253-.324.471c-.407.444-.975.612-1.218.47-.264-.152-.132-.778.34-1.276.507-.536 1.237-.881 1.237-.881l-.001-.002zm5.782-6.336c-.317-1.243-2.379-1.652-4.33-.959-1.16.413-2.418 1.06-3.321 1.906-1.075 1.005-1.246 1.88-1.176 2.245.25 1.29 2.017 2.133 2.743 2.758v.004c-.214.106-1.782.9-2.149 1.71-.387.856.062 1.47.359 1.553.92.256 1.865-.204 2.373-.962.49-.73.45-1.674.236-2.144a2.8 2.8 0 0 1 1.072-.061c1.228.143 1.468.91 1.422 1.23-.046.322-.303.498-.39.552-.085.053-.112.071-.104.11.01.058.05.056.123.044.101-.017.645-.261.668-.853.03-.752-.69-1.594-1.967-1.572-.525.01-.856.06-1.094.148l-.055-.06c-.789-.841-2.247-1.437-2.185-2.568.022-.412.165-1.495 2.802-2.809 2.16-1.076 3.89-.78 4.188-.123.427.937-.924 2.68-3.167 2.932-.855.095-1.305-.236-1.417-.36-.118-.129-.135-.135-.18-.11-.07.04-.025.154 0 .222.068.175.343.484.811.637.412.136 1.416.21 2.63-.26 1.358-.525 2.42-1.988 2.108-3.21\"\n      fill=\"#fff\"\n    />\n  </svg>\n);\n\nexport const Scss: FC<ScssProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ScssLight : ScssDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "scss",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-toolwindow-flink",
+  "type": "registry:ui",
+  "title": "Toolwindow Flink",
+  "description": "Toolwindow Flink icon from General Tool Windows category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/toolwindow-flink/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/toolwindow-flink/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "toolwindow-flink",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-netezza",
+  "type": "registry:ui",
+  "title": "Netezza",
+  "description": "Netezza icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/netezza/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/netezza/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "netezza",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

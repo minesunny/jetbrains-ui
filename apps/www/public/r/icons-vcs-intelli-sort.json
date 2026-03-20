@@ -1,0 +1,26 @@
+{
+  "name": "icons-vcs-intelli-sort",
+  "type": "registry:ui",
+  "title": "Intelli Sort",
+  "description": "Intelli Sort icon from Vcs category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/intelli-sort/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/intelli-sort/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type IntelliSortProps = IconProps;\n\nconst IntelliSortLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M1.146 10.654a.5.5 0 0 1 .708-.708L4 12.093V2.5a.5.5 0 0 1 1 0v9.593l2.146-2.147a.5.5 0 1 1 .708.708l-3 3-.354.353-.354-.353zM11 2.5a.5.5 0 0 1 1 0v1l-.004.062a2 2 0 0 1 0 3.876q.004.03.004.062v1l-.004.062a2 2 0 0 1 0 3.876q.004.03.004.062v1a.5.5 0 0 1-1 0v-1q0-.032.004-.062a2 2 0 0 1 0-3.876L11 8.5v-1q0-.032.004-.062a2 2 0 0 1 0-3.876L11 3.5zm.5 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m1 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst IntelliSortDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M1.146 10.654a.5.5 0 0 1 .708-.708L4 12.093V2.5a.5.5 0 0 1 1 0v9.593l2.146-2.147a.5.5 0 1 1 .708.708l-3 3-.354.353-.354-.353zM11 2.5a.5.5 0 0 1 1 0v1l-.004.062a2 2 0 0 1 0 3.876q.004.03.004.062v1l-.004.062a2 2 0 0 1 0 3.876q.004.03.004.062v1a.5.5 0 0 1-1 0v-1q0-.032.004-.062a2 2 0 0 1 0-3.876L11 8.5v-1q0-.032.004-.062a2 2 0 0 1 0-3.876L11 3.5zm.5 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m1 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const IntelliSort: FC<IntelliSortProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? IntelliSortLight : IntelliSortDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "intelli-sort",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

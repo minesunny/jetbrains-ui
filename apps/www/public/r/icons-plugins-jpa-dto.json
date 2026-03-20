@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-jpa-dto",
+  "type": "registry:ui",
+  "title": "Dto",
+  "description": "Dto icon from Plugins Jpa category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/dto/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/dto/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type DtoProps = IconProps;\n\nconst DtoLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" fill=\"#FFF4EB\" stroke=\"#E66D17\" />\n    <path\n      d=\"M5.5 4.5h2.553q.995 0 1.76.445.77.44 1.195 1.235.43.795.43 1.82t-.43 1.82a3.1 3.1 0 0 1-1.195 1.24q-.765.44-1.76.44H5.5zm2.548 6.085a2.35 2.35 0 0 0 1.23-.32q.534-.325.83-.91T10.403 8t-.295-1.355a2.16 2.16 0 0 0-.83-.905 2.3 2.3 0 0 0-1.23-.325H6.5v5.17z\"\n      fill=\"#E66D17\"\n    />\n  </svg>\n);\n\nconst DtoDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"8\" cy=\"8\" r=\"6.5\" fill=\"#45322B\" stroke=\"#C77D55\" />\n    <path\n      d=\"M5.5 4.5h2.553q.995 0 1.76.445.77.44 1.195 1.235.43.795.43 1.82t-.43 1.82a3.1 3.1 0 0 1-1.195 1.24q-.765.44-1.76.44H5.5zm2.548 6.085a2.35 2.35 0 0 0 1.23-.32q.534-.325.83-.91T10.403 8t-.295-1.355a2.16 2.16 0 0 0-.83-.905 2.3 2.3 0 0 0-1.23-.325H6.5v5.17z\"\n      fill=\"#C77D55\"\n    />\n  </svg>\n);\n\nexport const Dto: React.FC<DtoProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? DtoLight : DtoDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dto",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

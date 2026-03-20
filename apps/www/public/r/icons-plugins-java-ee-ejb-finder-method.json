@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-java-ee-ejb-finder-method",
+  "type": "registry:ui",
+  "title": "Ejb Finder Method",
+  "description": "Ejb Finder Method icon from Plugins Java Ee category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-finder-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-finder-method/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type EjbFinderMethodProps = IconProps;\n\nconst EjbFinderMethodLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"12\" cy=\"12\" r=\"2\" fill=\"#EBECF0\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M13.738 14.445a3 3 0 1 1 .707-.707l1.409 1.408a.5.5 0 0 1-.708.708zM14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M14.891 9.236Q15 8.634 15 8a7 7 0 1 0-5.764 6.891 4 4 0 1 1 5.655-5.655\"\n      fill=\"#FFF7F7\"\n    />\n    <path\n      d=\"M8.522 13.978a6 6 0 1 1 5.455-5.455c.34.192.647.433.914.713Q15 8.634 15 8a7 7 0 1 0-5.764 6.891 4 4 0 0 1-.714-.913\"\n      fill=\"#DB3B4B\"\n    />\n  </svg>\n);\n\nconst EjbFinderMethodDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <circle cx=\"12\" cy=\"12\" r=\"2\" fill=\"#43454A\" />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M13.738 14.445a3 3 0 1 1 .707-.707l1.409 1.408a.5.5 0 0 1-.708.708zM14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M14.891 9.236Q15 8.634 15 8a7 7 0 1 0-5.764 6.891 4 4 0 1 1 5.655-5.655\"\n      fill=\"#402929\"\n    />\n    <path\n      d=\"M8.522 13.978a6 6 0 1 1 5.455-5.455c.34.192.647.433.914.713Q15 8.634 15 8a7 7 0 1 0-5.764 6.891 4 4 0 0 1-.714-.913\"\n      fill=\"#DB5C5C\"\n    />\n  </svg>\n);\n\nexport const EjbFinderMethod: React.FC<EjbFinderMethodProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? EjbFinderMethodLight : EjbFinderMethodDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ejb-finder-method",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

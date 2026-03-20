@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-projection",
+  "type": "registry:ui",
+  "title": "Projection",
+  "description": "Projection icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/projection/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/projection/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ProjectionProps = IconProps;\n\nconst ProjectionLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5v-1H6V6h4v2h1V6h3v2h1V4a2 2 0 0 0-2-2zm7 1H6v2h4zM3 3h2v2H2V4a1 1 0 0 1 1-1m-1 9V6h3v7H3a1 1 0 0 1-1-1m12-8v1h-3V3h2a1 1 0 0 1 1 1\"\n      fill=\"#6C707E\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9 9h1v1H9zm3 1h-1V9h1zm2 0h-1V9h1zm1 0V9h1v1zm-5 1v1H9v-1zm5 1v-1h1v1zm-5 1v1H9v-1zm5 1v-1h1v1zm-6 1h1v1H9zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1z\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst ProjectionDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5v-1H6V6h4v2h1V6h3v2h1V4a2 2 0 0 0-2-2zm7 1H6v2h4zM3 3h2v2H2V4a1 1 0 0 1 1-1m-1 9V6h3v7H3a1 1 0 0 1-1-1m12-8v1h-3V3h2a1 1 0 0 1 1 1\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M9 9h1v1H9zm3 1h-1V9h1zm2 0h-1V9h1zm1 0V9h1v1zm-5 1v1H9v-1zm5 1v-1h1v1zm-5 1v1H9v-1zm5 1v-1h1v1zm-6 1h1v1H9zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1z\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const Projection: FC<ProjectionProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ProjectionLight : ProjectionDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "projection",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

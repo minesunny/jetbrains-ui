@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-exasol",
+  "type": "registry:ui",
+  "title": "Exasol",
+  "description": "Exasol icon from Database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/exasol/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/exasol/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "exasol",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

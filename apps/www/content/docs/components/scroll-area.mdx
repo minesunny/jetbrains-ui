@@ -1,0 +1,45 @@
+---
+title: Scroll Area
+description: Scroll area component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-scroll-area" />
+
+## Overview
+
+A JetBrains-style scroll area component with custom scrollbars.
+
+- Vertical scrolling is available when content exceeds the viewport height.
+- Horizontal scrolling can be enabled by adding `ScrollBar orientation="horizontal"`.
+- Use `ScrollViewport` to define the actual scrollable region.
+
+## Installation
+
+<ComponentInstallation name="scroll-area" />
+
+## Usage
+
+```tsx
+import {
+  ScrollArea,
+  ScrollBar,
+  ScrollViewport,
+} from '@/components/jetbrains-ui/scroll-area';
+
+<ScrollArea className="h-40 w-80 rounded-md border">
+  <ScrollViewport className="h-full w-full p-3">
+    <div className="min-w-[480px] space-y-2 text-sm">
+      {Array.from({ length: 12 }).map((_, index) => (
+        <div key={index} className="rounded border px-3 py-2">
+          Scrollable row {index + 1}
+        </div>
+      ))}
+    </div>
+  </ScrollViewport>
+  <ScrollBar orientation="horizontal" />
+</ScrollArea>;
+```

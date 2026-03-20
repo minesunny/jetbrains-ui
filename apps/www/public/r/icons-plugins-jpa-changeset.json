@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-jpa-changeset",
+  "type": "registry:ui",
+  "title": "Changeset",
+  "description": "Changeset icon from Plugins Jpa category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/changeset/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/changeset/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ChangesetProps = IconProps;\n\nconst ChangesetLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M5 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 5 8M5 10.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5\"\n      fill=\"#6C707E\"\n    />\n    <path\n      d=\"M12 3h-.5a.5.5 0 0 1 0-1h.5a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-.5a.5.5 0 0 1 0-1h.5a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M5 13.5a.5.5 0 0 0-.5-.5H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h.5a.5.5 0 0 0 0-1H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h.5a.5.5 0 0 0 .5-.5\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst ChangesetDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      d=\"M5 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 5 8M5 10.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5\"\n      fill=\"#CED0D6\"\n    />\n    <path\n      d=\"M12 3h-.5a.5.5 0 0 1 0-1h.5a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-.5a.5.5 0 0 1 0-1h.5a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M5 13.5a.5.5 0 0 0-.5-.5H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h.5a.5.5 0 0 0 0-1H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h.5a.5.5 0 0 0 .5-.5\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const Changeset: React.FC<ChangesetProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? ChangesetLight : ChangesetDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "changeset",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

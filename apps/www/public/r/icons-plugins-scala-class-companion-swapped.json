@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-scala-class-companion-swapped",
+  "type": "registry:ui",
+  "title": "Class Companion Swapped",
+  "description": "Class Companion Swapped icon from Plugins Scala category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/class-companion-swapped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-companion-swapped/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ClassCompanionSwappedProps = IconProps;\n\nconst ClassCompanionSwappedLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\">\n      <path\n        d=\"M7 13.5a6.5 6.5 0 0 1-6.48-6h12.96a6.5 6.5 0 0 1-6.48 6Z\"\n        fill=\"#EDF3FF\"\n        stroke=\"#3574F0\"\n      />\n      <path\n        d=\"M9.5 3.5 7 1 4.5 3.5\"\n        stroke=\"#6C707E\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H14V14H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nconst ClassCompanionSwappedDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 14 14\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <g clipPath=\"url(#a)\">\n      <path\n        d=\"M7 13.5a6.5 6.5 0 0 1-6.48-6h12.96a6.5 6.5 0 0 1-6.48 6Z\"\n        fill=\"#25324D\"\n        stroke=\"#548AF7\"\n      />\n      <path\n        d=\"M9.5 3.5 7 1 4.5 3.5\"\n        stroke=\"#CED0D6\"\n        strokeLinecap=\"round\"\n        strokeLinejoin=\"round\"\n      />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H14V14H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const ClassCompanionSwapped: React.FC<ClassCompanionSwappedProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? ClassCompanionSwappedLight : ClassCompanionSwappedDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "class-companion-swapped",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

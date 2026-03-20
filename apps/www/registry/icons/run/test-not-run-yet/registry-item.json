@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-test-not-run-yet",
+  "type": "registry:ui",
+  "title": "Test Not Run Yet",
+  "description": "Test Not Run Yet icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/test-not-run-yet/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/test-not-run-yet/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "test-not-run-yet",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

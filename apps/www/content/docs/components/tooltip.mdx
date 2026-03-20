@@ -1,0 +1,36 @@
+---
+title: Tooltip
+description: Tooltip component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-03-01
+---
+
+<ComponentPreview name="demo-tooltip" />
+
+## Overview
+
+A JetBrains-style tooltip component.
+
+## Installation
+
+<ComponentInstallation name="tooltip" />
+
+## Usage
+
+```tsx
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/jetbrains-ui/tooltip';
+
+<TooltipProvider>
+  <Tooltip>
+    <TooltipTrigger>Hover me</TooltipTrigger>
+    <TooltipContent>Tooltip content</TooltipContent>
+  </Tooltip>
+</TooltipProvider>;
+```

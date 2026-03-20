@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-test-paused",
+  "type": "registry:ui",
+  "title": "Test Paused",
+  "description": "Test Paused icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/test-paused/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/test-paused/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "test-paused",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

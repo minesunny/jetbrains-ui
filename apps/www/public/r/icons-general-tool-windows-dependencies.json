@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-dependencies",
+  "type": "registry:ui",
+  "title": "Dependencies",
+  "description": "Dependencies icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/dependencies/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/dependencies/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type DependenciesProps = IconProps;\n\nconst DependenciesLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M13.83 4.64a.5.5 0 0 1 0 .9L8.22 8.28a.5.5 0 0 1-.44 0L2.17 5.54a.5.5 0 0 1 0-.9l5.61-2.741a.5.5 0 0 1 .44 0z\"\n      stroke=\"#6C707E\"\n    />\n    <path\n      d=\"m14.276 8.317-5.84 2.836a1 1 0 0 1-.873 0L1.724 8.317M14.276 11.544l-5.84 2.836a1 1 0 0 1-.873 0l-5.839-2.836\"\n      stroke=\"#6C707E\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nconst DependenciesDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M13.83 4.64a.5.5 0 0 1 0 .9L8.22 8.28a.5.5 0 0 1-.44 0L2.17 5.54a.5.5 0 0 1 0-.9l5.61-2.741a.5.5 0 0 1 .44 0z\"\n      stroke=\"#CED0D6\"\n    />\n    <path\n      d=\"m14.276 8.317-5.84 2.836a1 1 0 0 1-.873 0L1.724 8.317M14.276 11.544l-5.84 2.836a1 1 0 0 1-.873 0l-5.839-2.836\"\n      stroke=\"#CED0D6\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nexport const Dependencies: FC<DependenciesProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? DependenciesLight : DependenciesDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dependencies",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

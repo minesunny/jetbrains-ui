@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-data-column",
+  "type": "registry:ui",
+  "title": "Data Column",
+  "description": "Data Column icon from Nodes category.",
+  "registryDependencies": [
+    "icons-nodes-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/nodes/data-column/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/data-column/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "data-column",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-breakpoint-unsuspendent-valid",
+  "type": "registry:ui",
+  "title": "Breakpoint Unsuspendent Valid",
+  "description": "Breakpoint Unsuspendent Valid icon from Breakpoints category.",
+  "registryDependencies": [
+    "icons-breakpoints-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/breakpoint-unsuspendent-valid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-unsuspendent-valid/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "breakpoint-unsuspendent-valid",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "icons-editor-icons-inlay-rename-in-comments",
+  "type": "registry:ui",
+  "title": "Inlay Rename In Comments",
+  "description": "Inlay Rename In Comments icon from Editor Icons category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/inlay-rename-in-comments/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/inlay-rename-in-comments/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type InlayRenameInCommentsProps = IconProps;\n\nconst InlayRenameInCommentsLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 12 12\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"m10.4 2-5 8M6.6 2l-5 8\"\n      stroke=\"#818594\"\n      strokeWidth=\"1.5\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nconst InlayRenameInCommentsDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 12 12\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"m10.4 2-5 8M6.6 2l-5 8\"\n      stroke=\"#9DA0A8\"\n      strokeWidth=\"1.5\"\n      strokeLinecap=\"round\"\n    />\n  </svg>\n);\n\nexport const InlayRenameInComments: FC<InlayRenameInCommentsProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? InlayRenameInCommentsLight : InlayRenameInCommentsDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "inlay-rename-in-comments",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

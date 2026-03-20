@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-color-picker",
+  "type": "registry:ui",
+  "title": "Color Picker",
+  "description": "Color Picker icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/color-picker/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/color-picker/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "color-picker",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

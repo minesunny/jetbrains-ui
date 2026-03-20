@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-view-breakpoints",
+  "type": "registry:ui",
+  "title": "View Breakpoints",
+  "description": "View Breakpoints icon from Run category.",
+  "registryDependencies": [
+    "icons-run-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/run/view-breakpoints/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/view-breakpoints/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "view-breakpoints",
+      "icon",
+      "run",
+      "jetbrains"
+    ]
+  }
+}

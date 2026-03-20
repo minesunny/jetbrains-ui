@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-tool-windows-tool-window-model-checker",
+  "type": "registry:ui",
+  "title": "Tool Window Model Checker",
+  "description": "Tool Window Model Checker icon from General Tool Windows category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/tool-window-model-checker/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-model-checker/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type ToolWindowModelCheckerProps = IconProps;\n\nconst ToolWindowModelCheckerLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\" fill=\"#6C707E\">\n      <path\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n        d=\"M15.827 11.176a.6.6 0 0 1 0 .848l-3.797 3.797a.6.6 0 0 1-.848 0l-2.006-2.006a.6.6 0 1 1 .848-.848l1.582 1.581 3.373-3.372a.6.6 0 0 1 .848 0\"\n      />\n      <path d=\"m10.442 12.03 3.356-3.242a1 1 0 0 0 .288-.702 1 1 0 0 0-.293-.707L8.707 2.293A1 1 0 0 0 8 2a1 1 0 0 0-.707.293l-5 5A1 1 0 0 0 2 8c0 .257.097.511.293.707l5 5a1 1 0 0 0 .824.286c.078.193.195.373.352.53l.317.317a2 2 0 0 1-2.2-.426l-5-5A2 2 0 0 1 1 8c0-.512.195-1.024.586-1.415l5-5C6.976 1.196 7.488 1 8 1s1.024.195 1.414.586L14.5 6.672c.39.39.586.902.586 1.414S14.891 9.109 14.5 9.5l-3.32 3.208-.449-.448a1.6 1.6 0 0 0-.289-.23\" />\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nconst ToolWindowModelCheckerDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <g clipPath=\"url(#a)\">\n      <g clipPath=\"url(#b)\" fill=\"#CED0D6\">\n        <path\n          fillRule=\"evenodd\"\n          clipRule=\"evenodd\"\n          d=\"M15.827 11.176a.6.6 0 0 1 0 .848l-3.797 3.797a.6.6 0 0 1-.848 0l-2.006-2.006a.6.6 0 1 1 .848-.848l1.582 1.581 3.373-3.372a.6.6 0 0 1 .848 0\"\n        />\n        <path d=\"m10.442 12.03 3.356-3.242a1 1 0 0 0 .288-.702 1 1 0 0 0-.293-.707L8.707 2.293A1 1 0 0 0 8 2a1 1 0 0 0-.707.293l-5 5A1 1 0 0 0 2 8c0 .257.097.511.293.707l5 5a1 1 0 0 0 .824.286c.078.193.195.373.352.53l.317.317a2 2 0 0 1-2.2-.426l-5-5A2 2 0 0 1 1 8c0-.512.195-1.024.586-1.415l5-5C6.976 1.196 7.488 1 8 1s1.024.195 1.414.586L14.5 6.672c.39.39.586.902.586 1.414S14.891 9.109 14.5 9.5l-3.32 3.208-.449-.448a1.6 1.6 0 0 0-.289-.23\" />\n      </g>\n    </g>\n    <defs>\n      <clipPath id=\"a\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n      <clipPath id=\"b\">\n        <path fill=\"#fff\" d=\"M0 0H16V16H0z\" />\n      </clipPath>\n    </defs>\n  </svg>\n);\n\nexport const ToolWindowModelChecker: FC<ToolWindowModelCheckerProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? ToolWindowModelCheckerLight : ToolWindowModelCheckerDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tool-window-model-checker",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

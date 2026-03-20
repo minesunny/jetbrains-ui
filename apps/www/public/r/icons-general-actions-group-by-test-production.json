@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-actions-group-by-test-production",
+  "type": "registry:ui",
+  "title": "Group By Test Production",
+  "description": "Group By Test Production icon from General Actions category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/actions/group-by-test-production/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-test-production/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type GroupByTestProductionProps = IconProps;\n\nconst GroupByTestProductionLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3.5 13.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1M12.5 13.5h1a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1h-1\"\n      stroke=\"#6C707E\"\n      strokeLinecap=\"round\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6.135 11.847 3.261 8.685a1.007 1.007 0 0 1 0-1.354l2.875-3.156A.497.497 0 0 1 7 4.513v6.996a.497.497 0 0 1-.865.338\"\n      fill=\"#E55765\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m9.865 4.175 2.874 3.162c.348.383.348.97 0 1.354l-2.875 3.157A.497.497 0 0 1 9 11.509V4.513c0-.457.558-.675.865-.338\"\n      fill=\"#55A76A\"\n    />\n  </svg>\n);\n\nconst GroupByTestProductionDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      d=\"M3.5 13.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1M12.5 13.5h1a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1h-1\"\n      stroke=\"#CED0D6\"\n      strokeLinecap=\"round\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M6.135 11.847 3.261 8.685a1.007 1.007 0 0 1 0-1.354l2.875-3.156A.497.497 0 0 1 7 4.513v6.996a.497.497 0 0 1-.865.338\"\n      fill=\"#E55765\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m9.865 4.175 2.874 3.162c.348.383.348.97 0 1.354l-2.875 3.157A.497.497 0 0 1 9 11.509V4.513c0-.457.558-.675.865-.338\"\n      fill=\"#55A76A\"\n    />\n  </svg>\n);\n\nexport const GroupByTestProduction: FC<GroupByTestProductionProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? GroupByTestProductionLight : GroupByTestProductionDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "group-by-test-production",
+      "icon",
+      "general",
+      "actions",
+      "jetbrains"
+    ]
+  }
+}

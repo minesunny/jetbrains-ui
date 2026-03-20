@@ -1,0 +1,31 @@
+---
+title: 故障排查
+description: JetBrains UI 常见问题与排查方式。
+---
+
+## 检查版本
+
+| 依赖项           | 建议最低版本 |
+| ---------------- | ------------ |
+| **React**        | `>= 19`      |
+| **Tailwind CSS** | `>= 4.1.0`   |
+| **Radix UI**     | `>= 1.4.0`   |
+
+请确保环境版本满足或高于以上要求，以保证 JetBrains UI 的兼容性与稳定性。
+
+## 文档显示异常
+
+某些浏览器扩展可能会影响文档渲染。若禁用扩展后问题仍存在，请清理浏览器缓存并刷新页面。
+
+## CLI 安装未按 aliases 生效
+
+在部分项目中，组件可能不会安装到你在 `components.json` aliases 中配置的位置。这是因为当前目标路径不支持通过 aliases 解析。
+
+我们已在 [shadcn/ui issue](https://github.com/shadcn-ui/ui/issues/8169) 中反馈该问题，且已被纳入路线图。
+
+在此之前，建议使用手动安装方式。
+
+## 其他问题
+
+若你遇到其他问题，欢迎在这里提交 issue：
+[https://github.com/minesunny/jetbrains-ui/issues/new/choose](https://github.com/minesunny/jetbrains-ui/issues/new/choose)

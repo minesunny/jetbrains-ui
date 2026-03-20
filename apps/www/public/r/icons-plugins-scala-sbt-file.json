@@ -1,0 +1,27 @@
+{
+  "name": "icons-plugins-scala-sbt-file",
+  "type": "registry:ui",
+  "title": "Sbt File",
+  "description": "Sbt File icon from Plugins Scala category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/scala/sbt-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-file/index.tsx",
+      "content": "import React from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type SbtFileProps = IconProps;\n\nconst SbtFileLight: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m9.249 12.737 2.027 2.045 2.742-.735.733-2.784-2.027-2.045-2.742.735zm1.316 2.75L8.54 13.44a1 1 0 0 1-.257-.958l.733-2.785a1 1 0 0 1 .708-.711l2.742-.735a1 1 0 0 1 .97.262l2.026 2.045a1 1 0 0 1 .257.958l-.733 2.785a1 1 0 0 1-.708.711l-2.742.735a1 1 0 0 1-.97-.262\"\n      fill=\"#A46704\"\n    />\n    <path\n      d=\"M3 13V5.414a1 1 0 0 1 .293-.707l3.414-3.414A1 1 0 0 1 7.414 1H11a2 2 0 0 1 2 2v4.1A5 5 0 0 0 8 15H5a2 2 0 0 1-2-2\"\n      fill=\"#EBECF0\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3 13V5.414a1 1 0 0 1 .293-.707l3.414-3.414A1 1 0 0 1 7.414 1H11a2 2 0 0 1 2 2v4.1a5 5 0 0 0-1-.1V3a1 1 0 0 0-1-1H8v2a2 2 0 0 1-2 2H4v7a1 1 0 0 0 1 1h2.416q.235.537.584 1H5a2 2 0 0 1-2-2m1.414-8L7 2.414V4a1 1 0 0 1-1 1z\"\n      fill=\"#6C707E\"\n    />\n  </svg>\n);\n\nconst SbtFileDark: React.FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title && <title>{title}</title>}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"m9.249 12.737 2.027 2.045 2.742-.735.733-2.784-2.027-2.045-2.742.735zm1.316 2.75L8.54 13.44a1 1 0 0 1-.257-.958l.733-2.785a1 1 0 0 1 .708-.711l2.742-.735a1 1 0 0 1 .97.262l2.026 2.045a1 1 0 0 1 .257.958l-.733 2.785a1 1 0 0 1-.708.711l-2.742.735a1 1 0 0 1-.97-.262\"\n      fill=\"#BA9752\"\n    />\n    <path\n      d=\"M3 13V5.414a1 1 0 0 1 .293-.707l3.414-3.414A1 1 0 0 1 7.414 1H11a2 2 0 0 1 2 2v4.1A5 5 0 0 0 8 15H5a2 2 0 0 1-2-2\"\n      fill=\"#43454A\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M3 13V5.414a1 1 0 0 1 .293-.707l3.414-3.414A1 1 0 0 1 7.414 1H11a2 2 0 0 1 2 2v4.1a5 5 0 0 0-1-.1V3a1 1 0 0 0-1-1H8v2a2 2 0 0 1-2 2H4v7a1 1 0 0 0 1 1h2.416q.235.537.584 1H5a2 2 0 0 1-2-2m1.414-8L7 2.414V4a1 1 0 0 1-1 1z\"\n      fill=\"#CED0D6\"\n    />\n  </svg>\n);\n\nexport const SbtFile: React.FC<SbtFileProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent = mode === 'light' ? SbtFileLight : SbtFileDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sbt-file",
+      "icon",
+      "plugins",
+      "scala",
+      "jetbrains"
+    ]
+  }
+}

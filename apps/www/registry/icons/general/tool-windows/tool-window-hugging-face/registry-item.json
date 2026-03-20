@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-tool-window-hugging-face",
+  "type": "registry:ui",
+  "title": "Tool Window Hugging Face",
+  "description": "Tool Window Hugging Face icon from General Tool Windows category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/tool-window-hugging-face/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-hugging-face/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tool-window-hugging-face",
+      "icon",
+      "general",
+      "tool-windows",
+      "jetbrains"
+    ]
+  }
+}

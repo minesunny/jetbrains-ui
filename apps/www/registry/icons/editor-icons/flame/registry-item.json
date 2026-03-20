@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-flame",
+  "type": "registry:ui",
+  "title": "Flame",
+  "description": "Flame icon from Editor Icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/flame/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/flame/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "flame",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

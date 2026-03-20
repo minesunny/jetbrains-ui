@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-input",
+  "type": "registry:ui",
+  "title": "Input Demo",
+  "description": "输入框组件的演示",
+  "dependencies": [],
+  "registryDependencies": ["@jetbrains-ui/input"],
+  "files": [
+    {
+      "path": "registry/demo/components/input/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/input.tsx"
+    }
+  ],
+  "meta": {
+    "demoProps": {
+      "Input": {
+        "type": {
+          "value": "text",
+          "options": {
+            "text": "text",
+            "email": "email",
+            "password": "password"
+          }
+        },
+        "disabled": {
+          "value": false
+        },
+        "invalid": {
+          "value": false
+        }
+      }
+    }
+  }
+}

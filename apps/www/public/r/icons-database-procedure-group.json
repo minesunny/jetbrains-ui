@@ -1,0 +1,26 @@
+{
+  "name": "icons-database-procedure-group",
+  "type": "registry:ui",
+  "title": "Procedure Group",
+  "description": "Procedure Group icon from Database category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/procedure-group/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/procedure-group/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../types';\n\nexport type ProcedureGroupProps = IconProps;\n\nconst ProcedureGroupLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"10\" cy=\"8\" r=\"5.5\" fill=\"#EDF3FF\" stroke=\"#3574F0\" />\n    <circle cx=\"6\" cy=\"8\" r=\"5.5\" fill=\"#EDF3FF\" stroke=\"#3574F0\" />\n    <path\n      d=\"M3.999 4.98h2.52q.61 0 1.07.224.465.223.714.636.255.412.254.955 0 .546-.258.958-.255.414-.722.641a2.5 2.5 0 0 1-1.093.228H4.98V11H4zm2.477 2.795q.318 0 .559-.116a.87.87 0 0 0 .37-.34q.129-.223.129-.52a1 1 0 0 0-.13-.516.84.84 0 0 0-.37-.336q-.24-.12-.558-.12H4.979v1.948z\"\n      fill=\"#3574F0\"\n    />\n  </svg>\n);\n\nconst ProcedureGroupDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <circle cx=\"10\" cy=\"8\" r=\"5.5\" fill=\"#25324D\" stroke=\"#548AF7\" />\n    <circle cx=\"6\" cy=\"8\" r=\"5.5\" fill=\"#25324D\" stroke=\"#548AF7\" />\n    <path\n      d=\"M3.999 4.98h2.52q.61 0 1.07.224.465.223.714.636.255.412.254.955 0 .546-.258.958-.255.414-.722.641a2.5 2.5 0 0 1-1.093.228H4.98V11H4zm2.477 2.795q.318 0 .559-.116a.87.87 0 0 0 .37-.34q.129-.223.129-.52a1 1 0 0 0-.13-.516.84.84 0 0 0-.37-.336q-.24-.12-.558-.12H4.979v1.948z\"\n      fill=\"#548AF7\"\n    />\n  </svg>\n);\n\nexport const ProcedureGroup: FC<ProcedureGroupProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? ProcedureGroupLight : ProcedureGroupDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "procedure-group",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

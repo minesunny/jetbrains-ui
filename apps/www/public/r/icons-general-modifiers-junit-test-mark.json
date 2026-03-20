@@ -1,0 +1,27 @@
+{
+  "name": "icons-general-modifiers-junit-test-mark",
+  "type": "registry:ui",
+  "title": "Junit Test Mark",
+  "description": "Junit Test Mark icon from General Modifiers category.",
+  "registryDependencies": [
+    "utils",
+    "@jetbrains-ui/icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/modifiers/junit-test-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/junit-test-mark/index.tsx",
+      "content": "import type { FC } from 'react';\nimport { cn } from '@/lib/utils';\nimport { type IconProps, type SvgProps, sizeMap } from '../../types';\n\nexport type JunitTestMarkProps = IconProps;\n\nconst JunitTestMarkLight: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M15.38 2.712a.4.4 0 0 1 0 .576l-2.703 2.6A.4.4 0 0 1 12 5.599V.404a.4.4 0 0 1 .677-.289z\"\n      fill=\"#55A76A\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7.623 3.288a.4.4 0 0 1 0-.576L10.322.116a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z\"\n      fill=\"#E55765\"\n    />\n  </svg>\n);\n\nconst JunitTestMarkDark: FC<SvgProps> = ({\n  size,\n  className,\n  title,\n  role,\n  'aria-label': ariaLabel,\n  'aria-hidden': ariaHidden,\n}) => (\n  <svg\n    width={size}\n    height={size}\n    viewBox=\"0 0 16 16\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    className={className}\n    role={role}\n    aria-label={ariaLabel}\n    aria-hidden={ariaHidden}\n  >\n    {title ? <title>{title}</title> : null}\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M15.38 2.712a.4.4 0 0 1 0 .576l-2.703 2.6A.4.4 0 0 1 12 5.599V.404a.4.4 0 0 1 .677-.289z\"\n      fill=\"#57965C\"\n    />\n    <path\n      fillRule=\"evenodd\"\n      clipRule=\"evenodd\"\n      d=\"M7.623 3.288a.4.4 0 0 1 0-.576L10.322.116a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z\"\n      fill=\"#DB5C5C\"\n    />\n  </svg>\n);\n\nexport const JunitTestMark: FC<JunitTestMarkProps> = ({\n  size = 'md',\n  mode = 'light',\n  className,\n  'aria-label': ariaLabel,\n  title,\n  ...props\n}) => {\n  const SvgComponent =\n    mode === 'light' ? JunitTestMarkLight : JunitTestMarkDark;\n\n  return (\n    <SvgComponent\n      size={sizeMap[size]}\n      className={cn('inline-block flex-shrink-0', className)}\n      title={title}\n      role={ariaLabel ? 'img' : 'presentation'}\n      aria-label={ariaLabel}\n      aria-hidden={!ariaLabel}\n      {...props}\n    />\n  );\n};"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "junit-test-mark",
+      "icon",
+      "general",
+      "modifiers",
+      "jetbrains"
+    ]
+  }
+}

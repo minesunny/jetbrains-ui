@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-jinja2",
+  "type": "registry:ui",
+  "title": "Jinja2",
+  "description": "Jinja2 icon from File Types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/jinja2/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/jinja2/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "jinja2",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

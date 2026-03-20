@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-lombok-lombok-field",
+  "type": "registry:ui",
+  "title": "Lombok Field",
+  "description": "Lombok Field icon from Plugins Lombok category.",
+  "registryDependencies": [
+    "icons-plugins-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/plugins/lombok/lombok-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/lombok-field/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "lombok-field",
+      "icon",
+      "plugins",
+      "lombok",
+      "jetbrains"
+    ]
+  }
+}

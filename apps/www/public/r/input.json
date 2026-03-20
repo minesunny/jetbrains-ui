@@ -1,0 +1,63 @@
+{
+  "name": "input",
+  "type": "registry:ui",
+  "title": "Input",
+  "description": "JetBrains UI 风格的单行输入框组件，支持 invalid/disabled 等常见状态",
+  "dependencies": [],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "registry/components/input/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/input/index.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\n\nimport { cn } from '@/lib/utils';\nimport './index.css';\n\nfunction Input({\n  className,\n  type = 'text',\n  ...props\n}: React.ComponentProps<'input'>) {\n  return (\n    <input\n      type={type}\n      data-slot=\"jb-input\"\n      className={cn(\n        'jb-input flex h-7 w-[240px] min-w-0 rounded-[4px] border px-2 py-1 text-xs leading-4 font-normal outline-none transition-[background-color,border-color,color,box-shadow] duration-150 ease-in-out disabled:cursor-not-allowed',\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nexport { Input };"
+    },
+    {
+      "path": "registry/components/input/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/input/index.css",
+      "content": ".jb-input {\n  border-color: var(--jb-input-border);\n  background: var(--jb-input-bg);\n  color: var(--jb-input-text);\n}\n\n.jb-input::placeholder {\n  color: var(--jb-input-placeholder);\n}\n\n.jb-input:hover:not(:disabled) {\n  background: var(--jb-input-bg-hover);\n  border-color: var(--jb-input-border-hover);\n}\n\n.jb-input:focus-visible {\n  border-color: var(--jb-input-border-active);\n  box-shadow: 0 0 0 2px var(--jb-input-ring);\n}\n\n.jb-input[aria-invalid='true'] {\n  border-color: var(--jb-input-border-invalid);\n}\n\n.jb-input[aria-invalid='true']:focus-visible {\n  box-shadow: 0 0 0 2px var(--jb-input-ring-invalid);\n}\n\n.jb-input:disabled {\n  cursor: not-allowed;\n  background: var(--jb-input-bg-disabled);\n  border-color: var(--jb-input-border-disabled);\n  color: var(--jb-input-text-disabled);\n}\n\n.jb-input:disabled::placeholder {\n  color: var(--jb-input-placeholder-disabled);\n}"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "input",
+      "text-field",
+      "jetbrains",
+      "ui",
+      "组件",
+      "输入框"
+    ],
+    "category": "inputs",
+    "docs": {
+      "description": "JetBrains UI 风格的文本输入框组件，适用于表单和搜索场景，支持 hover/focus/invalid/disabled 状态。",
+      "features": [
+        "单行文本输入",
+        "支持 invalid 状态",
+        "支持 disabled 状态",
+        "基于 JetBrains 设计令牌",
+        "支持亮色/暗色主题"
+      ]
+    },
+    "demoProps": {
+      "Input": {
+        "type": {
+          "value": "text",
+          "options": {
+            "text": "text",
+            "email": "email",
+            "password": "password"
+          }
+        },
+        "disabled": {
+          "value": false
+        },
+        "invalid": {
+          "value": false
+        }
+      }
+    }
+  }
+}
