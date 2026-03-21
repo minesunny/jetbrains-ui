@@ -4,14 +4,14 @@ description: 基于 JetBrains UI 设计风格的树形组件。
 author:
   name: minesunny
   url: https://github.com/minesunny
-releaseDate: 2025-03-01
+releaseDate: 2026-03-21
 ---
 
 <ComponentPreview name="demo-tree" />
 
 ## 概述
 
-用于层级数据展示的 JetBrains 风格树形组件。
+用于层级结构展示与导航的 JetBrains 风格树形组件。
 
 ## 安装
 
@@ -20,15 +20,77 @@ releaseDate: 2025-03-01
 ## 用法
 
 ```tsx
-import { Tree, type TreeItemData } from '@/components/jetbrains-ui/tree';
+import { Tree, TreeItem } from '@/components/jetbrains-ui/tree';
 
-const items: TreeItemData[] = [
-  {
-    id: 'src',
-    label: 'src',
-    children: [{ id: 'src-index', label: 'index.tsx' }],
-  },
-];
-
-<Tree items={items} defaultExpandedIds={['src']} />;
+function Example() {
+  return (
+    <Tree defaultExpandedIds={['root']}>
+      <TreeItem value="root" label="project">
+        <TreeItem value="src" label="src">
+          <TreeItem value="index" label="index.tsx" />
+        </TreeItem>
+      </TreeItem>
+    </Tree>
+  );
+}
 ```
+
+### DynamicTree
+
+<ComponentPreview name="demo-dynamic-tree" />
+
+```tsx
+import { DynamicTree } from '@/components/jetbrains-ui/tree';
+
+const dataLoader = {
+  async getItem(itemId: string) {
+    return {
+      label: itemId,
+      isFolder: itemId.startsWith('folder-'),
+    };
+  },
+  async getChildren(itemId: string) {
+    if (itemId === 'root') return ['folder-src', 'readme-md'];
+    if (itemId === 'folder-src') return ['index-tsx'];
+    return [];
+  },
+};
+
+function DynamicExample() {
+  return (
+    <DynamicTree
+      rootItemId="root"
+      dataLoader={dataLoader}
+      defaultExpandedIds={['folder-src']}
+      contextMenu={(node) => [
+        {
+          key: 'rename',
+          label: 'Rename',
+          iconName: 'edit',
+          onSelect: () => console.log('rename', node.id),
+        },
+        {
+          key: 'more',
+          label: 'More',
+          children: [
+            {
+              key: 'copy-path',
+              label: 'Copy Path',
+              iconName: 'copy',
+            },
+          ],
+        },
+      ]}
+    />
+  );
+}
+```
+
+## API 说明
+
+- `Tree`：根容器，支持受控和非受控的选中与展开状态。
+- `TreeItem`：静态树节点，支持子节点、图标和尾部内容。
+- `Tree.contextMenu`：静态树节点共享右键菜单回调。
+- `DynamicTree`：基于 `@headless-tree`，支持异步 `dataLoader` 和动态节点渲染。
+- `DynamicTree.contextMenu`：共享右键菜单回调，接收当前动态节点信息。
+- 内置选中、展开/收起与键盘交互，支持 `Enter`、`Space`、`ArrowLeft` 和 `ArrowRight`。

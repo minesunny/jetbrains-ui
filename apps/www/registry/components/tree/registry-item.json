@@ -3,14 +3,19 @@
   "name": "tree",
   "type": "registry:ui",
   "title": "Tree",
-  "description": "JetBrains-style tree component with expandable items.",
-  "dependencies": [],
-  "registryDependencies": ["utils"],
+  "description": "JetBrains-style tree view component with selectable and expandable items.",
+  "dependencies": ["@headless-tree/core", "@headless-tree/react"],
+  "registryDependencies": ["utils", "context-menu", "icons-components"],
   "files": [
     {
       "path": "registry/components/tree/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/tree/index.tsx"
+    },
+    {
+      "path": "registry/components/tree/dynamic-tree.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tree/dynamic-tree.tsx"
     },
     {
       "path": "registry/components/tree/index.css",
@@ -19,16 +24,18 @@
     }
   ],
   "meta": {
-    "keywords": ["tree", "hierarchy", "jetbrains", "ui", "组件"],
-    "category": "data-display",
+    "keywords": ["tree", "navigation", "jetbrains", "ui", "component"],
+    "category": "navigation",
     "docs": {
-      "description": "JetBrains-style tree component for hierarchical data.",
+      "description": "JetBrains-style tree view with nested hierarchy, selection and collapse controls.",
       "features": [
-        "Expandable and collapsible nested items",
-        "Selectable item states",
-        "State colors aligned with context menu items",
-        "Chevron expand icon from existing JetBrains icon set",
-        "Supports controlled and uncontrolled state"
+        "Nested tree structure",
+        "Dynamic tree rendering with @headless-tree",
+        "Async item and children loading",
+        "Shared context menu callback per tree item",
+        "Controlled and uncontrolled selected/expanded states",
+        "Keyboard support for selection and collapse",
+        "Token-driven light/dark theme support"
       ]
     }
   }

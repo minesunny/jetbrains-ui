@@ -3,51 +3,108 @@
 import * as React from 'react';
 
 import {
-  Tree,
-  TreeItem,
-  type TreeContextMenuItem,
-  type TreeContextMenuNode,
+  DynamicTree,
+  type DynamicTreeContextMenuItem,
+  type DynamicTreeContextMenuNode,
+  type DynamicTreeItemData,
 } from '@/registry/components/tree';
-import {
-  Ignored,
-  Markdown,
-  React as ReactFileType,
-} from '@/registry/icons/file-types';
+import { Markdown, React as ReactFileType } from '@/registry/icons/file-types';
 import { Folder } from '@/registry/icons/nodes';
 
-type TreeDemoState = 'default' | 'selected' | 'disabled' | 'collapsed';
+const dynamicItems: Record<string, DynamicTreeItemData> = {
+  'dynamic-root': {
+    label: 'jetbrains-ui',
+    isFolder: true,
+    icon: <Folder />,
+    endContent: '7',
+  },
+  'dynamic-src': {
+    label: 'src',
+    isFolder: true,
+    icon: <Folder />,
+    endContent: '4',
+  },
+  'dynamic-components': {
+    label: 'components',
+    isFolder: true,
+    icon: <Folder />,
+    endContent: '2',
+  },
+  'dynamic-tree-file': {
+    label: 'tree.tsx',
+    icon: <ReactFileType />,
+  },
+  'dynamic-dynamic-tree-file': {
+    label: 'dynamic-tree.tsx',
+    icon: <ReactFileType />,
+  },
+  'dynamic-lib': {
+    label: 'lib',
+    isFolder: true,
+    icon: <Folder />,
+    endContent: '1',
+  },
+  'dynamic-utils-file': {
+    label: 'utils.ts',
+    icon: <ReactFileType />,
+  },
+  'dynamic-readme': {
+    label: 'README.md',
+    icon: <Markdown />,
+  },
+  'dynamic-package': {
+    label: 'package.json',
+    icon: <ReactFileType />,
+  },
+};
 
-interface TreeDemoProps {
-  state?: TreeDemoState;
+const dynamicChildren: Record<string, string[]> = {
+  'dynamic-root': ['dynamic-src', 'dynamic-readme', 'dynamic-package'],
+  'dynamic-src': ['dynamic-components', 'dynamic-lib'],
+  'dynamic-components': ['dynamic-tree-file', 'dynamic-dynamic-tree-file'],
+  'dynamic-lib': ['dynamic-utils-file'],
+};
+
+function wait(ms: number) {
+  return new Promise<void>((resolve) => {
+    setTimeout(resolve, ms);
+  });
 }
 
-export default function TreeDemo({ state = 'default' }: TreeDemoProps) {
-  const initialSelectedId = state === 'selected' ? 'tree-file-banner' : null;
-  const [selectedId, setSelectedId] = React.useState<string | null>(
-    initialSelectedId,
-  );
+export default function DynamicTreeDemo() {
+  const [selectedId, setSelectedId] = React.useState<string | null>(null);
   const [lastAction, setLastAction] = React.useState(
     'Right click any node to open a shared context menu.',
   );
 
-  React.useEffect(() => {
-    setSelectedId(initialSelectedId);
-  }, [initialSelectedId]);
+  const dataLoader = React.useMemo(
+    () => ({
+      getItem: async (itemId: string) => {
+        await wait(120);
 
-  const lockBannerFile = state === 'disabled';
-  const defaultExpandedIds =
-    state === 'collapsed'
-      ? []
-      : ['tree-root', 'tree-components', 'tree-dialog'];
+        return (
+          dynamicItems[itemId] ?? {
+            label: itemId,
+          }
+        );
+      },
+      getChildren: async (itemId: string) => {
+        await wait(120);
+
+        return dynamicChildren[itemId] ?? [];
+      },
+    }),
+    [],
+  );
 
   const contextMenu = React.useCallback(
     ({
       id,
-      label,
-      hasChildren,
+      isFolder,
       disabled,
-    }: TreeContextMenuNode): TreeContextMenuItem[] => {
-      const items: TreeContextMenuItem[] = [
+      label,
+    }: DynamicTreeContextMenuNode): DynamicTreeContextMenuItem[] => {
+      const items: DynamicTreeContextMenuItem[] = [
         {
           key: 'rename',
           label: 'Rename',
@@ -58,7 +115,7 @@ export default function TreeDemo({ state = 'default' }: TreeDemoProps) {
         },
       ];
 
-      if (hasChildren) {
+      if (isFolder) {
         items.push(
           {
             key: 'new-file',
@@ -92,13 +149,13 @@ export default function TreeDemo({ state = 'default' }: TreeDemoProps) {
           children: [
             {
               key: 'favorite',
-              label: 'Favorite',
+              text: 'Favorite',
               iconName: 'check',
               onSelect: () => setLastAction(`Mark ${label} as favorite`),
             },
             {
               key: 'excluded',
-              label: 'Excluded',
+              text: 'Excluded',
               iconName: 'filter',
               onSelect: () => setLastAction(`Exclude ${label} from search`),
             },
@@ -108,14 +165,14 @@ export default function TreeDemo({ state = 'default' }: TreeDemoProps) {
           key: 'refresh',
           label: 'Reload Children',
           iconName: 'refresh',
-          disabled: !hasChildren,
+          disabled: !isFolder,
           onSelect: () => setLastAction(`Reload ${label}`),
         },
         {
           key: 'delete',
           label: 'Delete',
           iconName: 'trash',
-          disabled: id === 'tree-root',
+          disabled: id === 'dynamic-root',
           variant: 'destructive',
           onSelect: () => setLastAction(`Delete ${label}`),
         },
@@ -128,61 +185,15 @@ export default function TreeDemo({ state = 'default' }: TreeDemoProps) {
 
   return (
     <div className="w-[280px] space-y-2">
-      <Tree
+      <DynamicTree
         className="w-full"
+        rootItemId="dynamic-root"
+        dataLoader={dataLoader}
         selectedId={selectedId}
         onSelectedIdChange={setSelectedId}
-        defaultExpandedIds={defaultExpandedIds}
+        defaultExpandedIds={['dynamic-src']}
         contextMenu={contextMenu}
-      >
-        <TreeItem
-          value="tree-root"
-          label="jetbrains-ui"
-          icon={<Folder />}
-          endContent="12"
-        >
-          <TreeItem value="tree-git" label=".gitignore" icon={<Ignored />} />
-
-          <TreeItem
-            value="tree-components"
-            label="components"
-            icon={<Folder />}
-            endContent="4"
-          >
-            <TreeItem
-              value="tree-dialog"
-              label="dialog"
-              icon={<Folder />}
-              endContent="2"
-            >
-              <TreeItem
-                value="tree-file-banner"
-                label="banner.tsx"
-                icon={<ReactFileType />}
-                disabled={lockBannerFile}
-              />
-              <TreeItem
-                value="tree-file-rd-dialog"
-                label="rd-dialog.tsx"
-                icon={<ReactFileType />}
-              />
-            </TreeItem>
-
-            <TreeItem
-              value="tree-tree"
-              label="tree.tsx"
-              icon={<ReactFileType />}
-            />
-            <TreeItem
-              value="tree-toggle"
-              label="toggle.tsx"
-              icon={<ReactFileType />}
-            />
-          </TreeItem>
-
-          <TreeItem value="tree-readme" label="README.md" icon={<Markdown />} />
-        </TreeItem>
-      </Tree>
+      />
 
       <div className="rounded-[6px] border border-[var(--jb-gray-11)] bg-[var(--jb-gray-14)] px-3 py-2 text-xs text-[var(--jb-gray-7)] dark:border-[var(--jb-gray-4)] dark:bg-[var(--jb-gray-2)] dark:text-[var(--jb-gray-8)]">
         {lastAction}

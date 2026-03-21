@@ -1,6 +1,7 @@
 export {
   AddIcon,
   ChevronDownIcon,
+  ChevronRightIcon,
   ChevronUpIcon,
   CloseIcon,
   SearchIcon,

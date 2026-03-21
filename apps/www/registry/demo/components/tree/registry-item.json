@@ -13,5 +13,19 @@
       "target": "components/jetbrains-ui/demo/tree.tsx"
     }
   ],
-  "meta": {}
+  "meta": {
+    "demoProps": {
+      "Tree": {
+        "state": {
+          "value": "default",
+          "options": {
+            "default": "default",
+            "selected": "selected",
+            "disabled": "disabled",
+            "collapsed": "collapsed"
+          }
+        }
+      }
+    }
+  }
 }

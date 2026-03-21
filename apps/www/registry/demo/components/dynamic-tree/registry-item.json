@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-dynamic-tree",
+  "type": "registry:ui",
+  "title": "Dynamic Tree Demo",
+  "description": "Demo showing dynamic tree component",
+  "dependencies": [],
+  "registryDependencies": ["@jetbrains-ui/tree"],
+  "files": [
+    {
+      "path": "registry/demo/components/dynamic-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/dynamic-tree.tsx"
+    }
+  ],
+  "meta": {
+    "demoProps": {}
+  }
+}
