@@ -239,5 +239,6 @@ export const asyncDataLoaderFeature: FeatureImplementation = {
     },
   },
 
-  itemInstance: asyncDataLoaderItemInstance as FeatureImplementation['itemInstance'],
+  itemInstance:
+    asyncDataLoaderItemInstance as FeatureImplementation['itemInstance'],
 };
