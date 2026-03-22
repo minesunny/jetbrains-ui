@@ -1,0 +1,18 @@
+---
+title: Tree
+description: Tree component variants.
+---
+
+<Cards>
+  {[
+    { title: 'Tree', slug: 'tree' },
+    { title: 'Dynamic Tree', slug: 'dynamic-tree' },
+  ].map(({ title, slug }) => (
+    <Card
+      key={slug}
+      href={`/docs/components/tree/${slug}`}
+      title={title}
+      accent
+    />
+  ))}
+</Cards>

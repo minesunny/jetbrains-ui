@@ -246,6 +246,36 @@ export function RefreshIcon({ className, size = 16, ...props }: IconProps) {
   );
 }
 
+// Loader 图标
+export function LoaderIcon({ className, size = 16, ...props }: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn('inline-flex shrink-0 animate-spin', className)}
+      {...props}
+    >
+      <circle
+        cx="8"
+        cy="8"
+        r="5"
+        stroke="currentColor"
+        strokeWidth="2"
+        opacity="0.28"
+      />
+      <path
+        d="M8 3C10.7614 3 13 5.23858 13 8"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
 // Filter 图标
 export function FilterIcon({ className, size = 16, ...props }: IconProps) {
   return (

@@ -1,0 +1,6 @@
+{
+  "title": "Tree",
+  "description": "Tree docs with Tree and Dynamic Tree.",
+  "defaultOpen": false,
+  "pages": ["tree", "dynamic-tree"]
+}

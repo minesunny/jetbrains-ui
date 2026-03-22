@@ -1,0 +1,48 @@
+---
+title: Tree
+description: Static tree component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-03-21
+---
+
+<ComponentPreview name="demo-tree" />
+
+## Overview
+
+`Tree` provides a static tree view with expandable `TreeItem` nodes and shared selection state.
+
+## Installation
+
+<ComponentInstallation name="tree/tree" />
+
+## Usage
+
+```tsx
+import { Tree, TreeItem } from '@/components/jetbrains-ui/tree/tree';
+
+function Example() {
+  return (
+    <Tree width="220px" height="160px" defaultExpandedIds={['root']}>
+      <TreeItem value="root" label="project">
+        <TreeItem value="src" label="src">
+          <TreeItem value="index" label="index.tsx" />
+        </TreeItem>
+      </TreeItem>
+    </Tree>
+  );
+}
+```
+
+## Scrolling
+
+`Tree` already wraps its content with `ScrollArea`. Use `width` and `height` to constrain the viewport, and scrollbars appear automatically when the tree exceeds that boundary.
+
+## API Highlights
+
+- `Tree`: root container, supports controlled and uncontrolled selected and expanded state.
+- `TreeItem`: static tree node with optional children, icon and end content.
+- `width` and `height`: constrain the outer scroll area and enable scrolling when content overflows.
+- `scrollAreaClassName`: apply extra classes to the scroll container.
+- Built-in selection, collapse toggle and keyboard support with `Enter`, `Space`, `ArrowLeft` and `ArrowRight`.

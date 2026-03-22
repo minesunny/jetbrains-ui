@@ -1,9 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "tree",
+  "name": "tree/dynamic-tree",
   "type": "registry:ui",
-  "title": "Tree",
-  "description": "JetBrains-style tree view component with selectable and expandable items.",
+  "title": "Dynamic Tree",
+  "description": "JetBrains-style tree presenter for items created with @headless-tree.",
   "dependencies": ["@headless-tree/core", "@headless-tree/react"],
   "registryDependencies": [
     "utils",
@@ -12,21 +12,6 @@
     "context-menu"
   ],
   "files": [
-    {
-      "path": "registry/components/tree/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/tree/index.tsx"
-    },
-    {
-      "path": "registry/components/tree/tree/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/tree/tree/index.tsx"
-    },
-    {
-      "path": "registry/components/tree/tree/index.css",
-      "type": "registry:style",
-      "target": "components/jetbrains-ui/tree/tree/index.css"
-    },
     {
       "path": "registry/components/tree/dynamic-tree/index.tsx",
       "type": "registry:ui",
@@ -44,14 +29,24 @@
     }
   ],
   "meta": {
-    "keywords": ["tree", "navigation", "jetbrains", "ui", "component"],
+    "keywords": [
+      "dynamic-tree",
+      "tree",
+      "navigation",
+      "jetbrains",
+      "ui",
+      "component"
+    ],
     "category": "navigation",
     "docs": {
-      "description": "JetBrains-style static tree view with nested hierarchy, selection and collapse controls.",
+      "description": "JetBrains-style tree view that renders headless-tree items with a shared visual style.",
       "features": [
-        "Nested tree structure",
-        "Controlled and uncontrolled selected/expanded states",
-        "Keyboard support for selection and collapse",
+        "Render items from user-defined @headless-tree setup",
+        "Generic item typing for tree node data",
+        "Custom item prop support for different row types",
+        "Recommended asyncDataLoaderFeature with refreshable item cache",
+        "Loading and disclosure states for async trees",
+        "Built-in item context menu with refresh and delete actions",
         "Token-driven light/dark theme support"
       ]
     }

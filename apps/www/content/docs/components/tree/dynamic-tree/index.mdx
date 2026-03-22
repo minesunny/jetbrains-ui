@@ -1,0 +1,161 @@
+---
+title: Dynamic Tree
+description: Async tree component built on top of @headless-tree.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-03-21
+---
+
+<ComponentPreview name="demo-dynamic-tree" />
+
+## Overview
+
+`DynamicTree` is a presentational wrapper for `@headless-tree`. You provide `containerProps` and `items` from your own tree setup, and the component renders them with the JetBrains UI tree styles.
+
+## Installation
+
+<ComponentInstallation name="tree/dynamic-tree" />
+
+## Usage
+
+```tsx
+import * as React from 'react';
+import {
+  hotkeysCoreFeature,
+  selectionFeature,
+  type TreeDataLoader,
+} from '@headless-tree/core';
+import { useTree } from '@headless-tree/react';
+import {
+  type DynamicTreeItemProps,
+  DynamicTree,
+  DynamicTreeItemContextMenu,
+  asyncDataLoaderFeature,
+  type DynamicTreeItemData,
+} from '@/components/jetbrains-ui/tree/dynamic-tree';
+
+type FileTreeItem = DynamicTreeItemData & {
+  path: string;
+  isFolder?: boolean;
+};
+
+const ROOT_ID = 'root';
+
+const loadData = async (parentId: string | null) => {
+  if (parentId === null) {
+    return [
+      {
+        id: 'folder-src',
+        data: {
+          label: 'src',
+          path: '/src',
+          isFolder: true,
+        },
+      },
+      {
+        id: 'readme-md',
+        data: {
+          label: 'README.md',
+          path: '/README.md',
+        },
+      },
+    ];
+  }
+
+  if (parentId === 'folder-src') {
+    return [
+      {
+        id: 'index-tsx',
+        data: {
+          label: 'index.tsx',
+          path: '/src/index.tsx',
+        },
+      },
+    ];
+  }
+
+  return [];
+};
+
+function Example() {
+  const loadedItemsRef = React.useRef<Record<string, FileTreeItem>>({});
+  const FileItem = React.useCallback(
+    ({ item }: DynamicTreeItemProps<FileTreeItem>) => (
+      <div className="flex h-6 items-center gap-2 px-4 text-[13px]">
+        <span>{item.isFolder() ? 'DIR' : 'FILE'}</span>
+        <span className="truncate">
+          {item.getItemData()?.label ?? item.getId()}
+        </span>
+      </div>
+    ),
+    [],
+  );
+  const dataLoader = React.useMemo<TreeDataLoader<FileTreeItem>>(
+    () => ({
+      getItem: async (itemId) => {
+        const [realItemId] = itemId.split('@');
+
+        if (realItemId === ROOT_ID) {
+          return {
+            label: 'root',
+            isFolder: true,
+          } as FileTreeItem;
+        }
+
+        return (
+          loadedItemsRef.current[realItemId] ??
+          ({
+            label: realItemId,
+            path: realItemId,
+          } as FileTreeItem)
+        );
+      },
+      getChildrenWithData: async (itemId) =>
+        loadData(
+          itemId.split('@')[0] === ROOT_ID ? null : itemId.split('@')[0],
+        ),
+    }),
+    [],
+  );
+  const tree = useTree<FileTreeItem>({
+    rootItemId: ROOT_ID,
+    dataLoader,
+    isItemFolder: (item) => Boolean(item.getItemData()?.isFolder),
+    getItemName: (item) => item.getItemData()?.label ?? item.getId(),
+    onLoadedItem: (itemId, item) => {
+      loadedItemsRef.current[itemId] = item;
+    },
+    createLoadingItemData: () => ({}) as FileTreeItem,
+    features: [asyncDataLoaderFeature, selectionFeature, hotkeysCoreFeature],
+  });
+
+  return (
+    <DynamicTree<FileTreeItem>
+      containerProps={
+        tree.getContainerProps('Tree') as React.ComponentPropsWithoutRef<'div'>
+      }
+      items={tree.getItems()}
+      item={FileItem}
+      contextMenu={DynamicTreeItemContextMenu}
+      width="220px"
+      height="160px"
+    />
+  );
+}
+```
+
+## Scrolling
+
+`DynamicTree` already includes a `ScrollArea` wrapper. Use `width` and `height` to cap the visible viewport, and the tree scrolls once loaded items exceed the available space.
+
+## API Highlights
+
+- `DynamicTree<TItem>`: presentational layer that renders the tree from `containerProps` and `items`.
+- `asyncDataLoaderFeature`: recommended built-in async feature with refreshable item-data cache.
+- `DynamicTreeItemContextMenu`: built-in item context menu with refresh, clear-children and delete actions.
+- `item`: lets you replace the default `DynamicTreeItem` with your own item component.
+- `contextMenu`: replace the default shared item context menu, or pass `null` to disable it.
+- `containerProps` and `items`: provide these directly from your own `@headless-tree` setup.
+- `width` and `height`: constrain the outer scroll area and enable scrolling when content overflows.
+- Data loading, selection and keyboard behavior are defined by your own `@headless-tree` configuration.

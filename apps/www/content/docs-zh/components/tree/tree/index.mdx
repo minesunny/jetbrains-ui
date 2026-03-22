@@ -1,0 +1,48 @@
+---
+title: Tree
+description: 基于 JetBrains UI 设计风格的静态树形组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-03-21
+---
+
+<ComponentPreview name="demo-tree" />
+
+## 概述
+
+`Tree` 提供静态树视图，支持 `TreeItem` 展开和共享选中状态。
+
+## 安装
+
+<ComponentInstallation name="tree/tree" />
+
+## 用法
+
+```tsx
+import { Tree, TreeItem } from '@/components/jetbrains-ui/tree/tree';
+
+function Example() {
+  return (
+    <Tree width="220px" height="160px" defaultExpandedIds={['root']}>
+      <TreeItem value="root" label="project">
+        <TreeItem value="src" label="src">
+          <TreeItem value="index" label="index.tsx" />
+        </TreeItem>
+      </TreeItem>
+    </Tree>
+  );
+}
+```
+
+## 滚动
+
+`Tree` 内部已经包了一层 `ScrollArea`。通过 `width` 和 `height` 限制可视区域后，树内容超出边界时会自动出现滚动条。
+
+## API 说明
+
+- `Tree`：根容器，支持受控和非受控的选中与展开状态。
+- `TreeItem`：静态树节点，支持子节点、图标和尾部内容。
+- `width` 与 `height`：限制外层滚动区域尺寸，内容超出时启用滚动。
+- `scrollAreaClassName`：为滚动容器补充额外样式类。
+- 内置选中、展开/收起与键盘交互，支持 `Enter`、`Space`、`ArrowLeft` 和 `ArrowRight`。
