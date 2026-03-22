@@ -5,7 +5,7 @@
   "description": "Demo showing tree component",
   "dependencies": [],
   "registryDependencies": [
-    "@jetbrains-ui/tree"
+    "@jetbrains-ui/tree/tree"
   ],
   "files": [
     {

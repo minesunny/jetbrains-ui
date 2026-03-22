@@ -377,6 +377,7 @@ async function buildRegistry() {
 
         const filename = `${item.name}.json`;
         const filepath = path.join(process.cwd(), 'public/r', filename);
+        await fs.mkdir(path.dirname(filepath), { recursive: true });
         await fs.writeFile(
           filepath,
           JSON.stringify(

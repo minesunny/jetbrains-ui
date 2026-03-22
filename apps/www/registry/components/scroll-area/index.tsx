@@ -14,6 +14,7 @@ const ScrollArea = React.forwardRef<
   >
     {children}
     <ScrollAreaPrimitive.Corner />
+    <ScrollBar orientation="horizontal" />
     <ScrollBar orientation="vertical" />
   </ScrollAreaPrimitive.Root>
 ));

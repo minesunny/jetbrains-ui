@@ -5,7 +5,7 @@
   "title": "Dynamic Tree Demo",
   "description": "Demo showing dynamic tree component",
   "dependencies": [],
-  "registryDependencies": ["@jetbrains-ui/dynamic-tree"],
+  "registryDependencies": ["@jetbrains-ui/tree/dynamic-tree"],
   "files": [
     {
       "path": "registry/demo/components/tree/dynamic-tree/index.tsx",

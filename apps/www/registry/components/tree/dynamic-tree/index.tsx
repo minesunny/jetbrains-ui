@@ -2,14 +2,15 @@
 
 import * as React from 'react';
 
+import { type ItemInstance } from '@headless-tree/core';
 import {
-  asyncDataLoaderFeature,
-  hotkeysCoreFeature,
-  selectionFeature,
-  type ItemInstance,
-  type TreeDataLoader,
-} from '@headless-tree/core';
-import { useTree } from '@headless-tree/react';
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuLabel,
+  ContextMenuSeparator,
+  ContextMenuTrigger,
+} from '@/registry/components/context-menu';
 import {
   ChevronDownIcon,
   ChevronRightIcon,
@@ -18,71 +19,231 @@ import {
 import { ScrollArea, ScrollViewport } from '@/registry/components/scroll-area';
 import './index.css';
 
-const DYNAMIC_TREE_ROOT_ITEM_ID = '__jb-dynamic-tree-root__';
+export { asyncDataLoaderFeature } from './feature';
 
 export interface DynamicTreeItemData {
-  label: string;
+  label?: string;
   icon?: React.ReactNode;
   endContent?: React.ReactNode;
   disabled?: boolean;
   isFolder?: boolean;
 }
 
-export interface DynamicTreeLoadedItem<
+export interface DynamicTreeItemProps<
   TItem extends DynamicTreeItemData = DynamicTreeItemData,
 > {
-  id: string;
-  data: TItem;
+  item: ItemInstance<TItem>;
+  indent: number;
 }
 
-export type DynamicTreeLoadData<
+export interface DynamicTreeItemComponent<
   TItem extends DynamicTreeItemData = DynamicTreeItemData,
-> = (
-  itemId: string | null,
-) => DynamicTreeLoadedItem<TItem>[] | Promise<DynamicTreeLoadedItem<TItem>[]>;
+> {
+  (props: DynamicTreeItemProps<TItem>): React.ReactNode;
+}
+
+export interface DynamicTreeContextMenuProps<
+  TItem extends DynamicTreeItemData = DynamicTreeItemData,
+> {
+  item: ItemInstance<TItem>;
+}
+
+export interface DynamicTreeContextMenuComponent<
+  TItem extends DynamicTreeItemData = DynamicTreeItemData,
+> {
+  (props: DynamicTreeContextMenuProps<TItem>): React.ReactNode;
+}
 
 export interface DynamicTreeProps<
   TItem extends DynamicTreeItemData = DynamicTreeItemData,
 > extends Omit<
     React.ComponentPropsWithoutRef<'div'>,
-    'children' | 'className' | 'style'
+    'children' | 'className' | 'style' | 'contextMenu'
   > {
-  loadData: DynamicTreeLoadData<TItem>;
-  treeLabel?: string;
+  containerProps: React.ComponentPropsWithoutRef<'div'>;
+  items: ItemInstance<TItem>[];
   indent?: number;
+  item?: DynamicTreeItemComponent<TItem>;
+  contextMenu?: DynamicTreeContextMenuComponent<TItem> | null;
   width?: React.CSSProperties['width'];
   height?: React.CSSProperties['height'];
 }
-
-type ItemRowProps<TItem extends DynamicTreeItemData> = {
-  indent: number;
-  item: ItemInstance<TItem>;
-};
 
 type DynamicTreeItemButtonStyle = React.CSSProperties & {
   '--jb-tree-item-padding-left': string;
 };
 
-function DynamicTreeItemRow<TItem extends DynamicTreeItemData>({
+type DynamicTreeAsyncItemInstance<
+  TItem extends DynamicTreeItemData = DynamicTreeItemData,
+> = ItemInstance<TItem> & {
+  invalidateItemData?: (optimistic?: boolean) => Promise<void>;
+  invalidateChildrenIds?: (optimistic?: boolean) => Promise<void>;
+};
+
+type DynamicTreeMutableParentItem<
+  TItem extends DynamicTreeItemData = DynamicTreeItemData,
+> = ItemInstance<TItem> & {
+  updateCachedChildrenIds?: (
+    childrenIds: string[],
+    skipUpdateTree?: boolean,
+  ) => void;
+};
+
+type DynamicTreeMutableItem<
+  TItem extends DynamicTreeItemData = DynamicTreeItemData,
+> = ItemInstance<TItem> & {
+  clearCachedChildren?: (skipUpdateTree?: boolean) => void;
+};
+
+function canRefreshDynamicTreeItem<TItem extends DynamicTreeItemData>(
+  item: ItemInstance<TItem>,
+) {
+  const asyncItem = item as DynamicTreeAsyncItemInstance<TItem>;
+
+  return (
+    typeof asyncItem.invalidateItemData === 'function' ||
+    (item.isFolder() && typeof asyncItem.invalidateChildrenIds === 'function')
+  );
+}
+
+function canDeleteDynamicTreeItem<TItem extends DynamicTreeItemData>(
+  item: ItemInstance<TItem>,
+) {
+  const parent = item.getParent() as
+    | DynamicTreeMutableParentItem<TItem>
+    | undefined;
+
+  return typeof parent?.updateCachedChildrenIds === 'function';
+}
+
+function canClearDynamicTreeItemChildren<TItem extends DynamicTreeItemData>(
+  item: ItemInstance<TItem>,
+) {
+  const mutableItem = item as DynamicTreeMutableItem<TItem>;
+
+  return (
+    item.isFolder() && typeof mutableItem.clearCachedChildren === 'function'
+  );
+}
+
+async function refreshDynamicTreeItem<TItem extends DynamicTreeItemData>(
+  item: ItemInstance<TItem>,
+) {
+  const asyncItem = item as DynamicTreeAsyncItemInstance<TItem>;
+
+  if (typeof asyncItem.invalidateItemData === 'function') {
+    await asyncItem.invalidateItemData();
+  }
+
+  if (
+    item.isFolder() &&
+    typeof asyncItem.invalidateChildrenIds === 'function'
+  ) {
+    await asyncItem.invalidateChildrenIds();
+  }
+}
+
+function deleteDynamicTreeItem<TItem extends DynamicTreeItemData>(
+  item: ItemInstance<TItem>,
+) {
+  const parent = item.getParent() as
+    | DynamicTreeMutableParentItem<TItem>
+    | undefined;
+
+  if (typeof parent?.updateCachedChildrenIds !== 'function') {
+    return;
+  }
+
+  parent.updateCachedChildrenIds(
+    parent
+      .getChildren()
+      .filter((child) => child.getId() !== item.getId())
+      .map((child) => child.getId()),
+  );
+  parent.setFocused();
+}
+
+function clearDynamicTreeItemChildren<TItem extends DynamicTreeItemData>(
+  item: ItemInstance<TItem>,
+) {
+  const mutableItem = item as DynamicTreeMutableItem<TItem>;
+
+  if (
+    !item.isFolder() ||
+    typeof mutableItem.clearCachedChildren !== 'function'
+  ) {
+    return;
+  }
+
+  item.setFocused();
+
+  if (item.isExpanded()) {
+    item.collapse();
+  }
+
+  mutableItem.clearCachedChildren();
+}
+
+export interface DynamicTreeItemContextMenuProps<
+  TItem extends DynamicTreeItemData = DynamicTreeItemData,
+> extends DynamicTreeContextMenuProps<TItem> {}
+
+function DynamicTreeItemContextMenu<TItem extends DynamicTreeItemData>({
+  item,
+}: DynamicTreeItemContextMenuProps<TItem>) {
+  return (
+    <>
+      <ContextMenuLabel>
+        {item.getItemData()?.label ?? item.getId()}
+      </ContextMenuLabel>
+      <ContextMenuItem
+        inset
+        disabled={!canRefreshDynamicTreeItem(item)}
+        onSelect={() => {
+          void refreshDynamicTreeItem(item);
+        }}
+      >
+        Refresh
+      </ContextMenuItem>
+      <ContextMenuItem
+        inset
+        disabled={!canClearDynamicTreeItemChildren(item)}
+        onSelect={() => {
+          clearDynamicTreeItemChildren(item);
+        }}
+      >
+        Clear Children
+      </ContextMenuItem>
+      <ContextMenuSeparator />
+      <ContextMenuItem
+        inset
+        variant="destructive"
+        disabled={!canDeleteDynamicTreeItem(item)}
+        onSelect={() => {
+          deleteDynamicTreeItem(item);
+        }}
+      >
+        Delete
+      </ContextMenuItem>
+    </>
+  );
+}
+
+function DynamicTreeItem<TItem extends DynamicTreeItemData>({
   indent,
   item,
-}: ItemRowProps<TItem>) {
+}: DynamicTreeItemProps<TItem>) {
   const {
-    onClick: ignoredOnClick,
-    onDoubleClick: ignoredOnDoubleClick,
-    onKeyDown: resolvedOnKeyDown,
     style: resolvedStyle,
     tabIndex: resolvedTabIndex,
     ...resolvedProps
   } = item.getProps() as React.ComponentPropsWithoutRef<'div'>;
-  void ignoredOnClick;
-  void ignoredOnDoubleClick;
 
   return (
     <div
       data-slot="jb-tree-item"
       data-value={item.getId()}
-      className="jb-tree-item m-0 p-0"
+      className="jb-tree-item my-0.5 p-0"
     >
       <div
         {...resolvedProps}
@@ -135,18 +296,25 @@ function DynamicTreeItemRow<TItem extends DynamicTreeItemData>({
             className="jb-tree-item-disclosure relative z-10 inline-flex size-4 shrink-0 items-center justify-center border-0 bg-transparent p-0 outline-none disabled:cursor-not-allowed"
             aria-label={
               item.isLoading()
-                ? `Loading ${(item.getItemData() as TItem | null)?.label}`
+                ? `Loading ${(item.getItemData() as TItem | null)?.label ?? item.getId()}`
                 : item.isExpanded()
-                  ? `Collapse ${(item.getItemData() as TItem | null)?.label}`
-                  : `Expand ${(item.getItemData() as TItem | null)?.label}`
+                  ? `Collapse ${(item.getItemData() as TItem | null)?.label ?? item.getId()}`
+                  : `Expand ${(item.getItemData() as TItem | null)?.label ?? item.getId()}`
             }
             onClick={(event) => {
               event.stopPropagation();
+
               if ((item.getItemData() as TItem | null)?.disabled) {
                 return;
               }
+
               item.setFocused();
-              item.isExpanded() ? item.collapse() : item.expand();
+
+              if (item.isExpanded()) {
+                item.collapse();
+              } else {
+                item.expand();
+              }
             }}
             disabled={Boolean((item.getItemData() as TItem | null)?.disabled)}
           >
@@ -185,7 +353,7 @@ function DynamicTreeItemRow<TItem extends DynamicTreeItemData>({
             data-slot="jb-tree-item-label"
             className="jb-tree-item-label min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"
           >
-            {(item.getItemData() as TItem | null)?.label}
+            {(item.getItemData() as TItem | null)?.label ?? item.getId()}
           </span>
 
           {(item.getItemData() as TItem | null)?.endContent ? (
@@ -203,59 +371,25 @@ function DynamicTreeItemRow<TItem extends DynamicTreeItemData>({
 }
 
 function DynamicTree<TItem extends DynamicTreeItemData>({
-  loadData,
-  treeLabel = 'Tree',
+  containerProps,
+  items,
   indent = 16,
+  item: customItem,
+  contextMenu,
   width,
   height,
   ...props
 }: DynamicTreeProps<TItem>) {
-  const loadedItemsRef = React.useRef<Record<string, TItem>>({});
-
-  const dataLoader = React.useMemo<TreeDataLoader<TItem>>(
-    () => ({
-      getItem: async (itemId: string) => {
-        if (itemId === DYNAMIC_TREE_ROOT_ITEM_ID) {
-          return {
-            label: treeLabel,
-            isFolder: true,
-          } as TItem;
-        }
-
-        return (
-          loadedItemsRef.current[itemId] ??
-          ({
-            label: itemId,
-          } as TItem)
-        );
-      },
-      getChildrenWithData: async (itemId: string) =>
-        loadData(itemId === DYNAMIC_TREE_ROOT_ITEM_ID ? null : itemId),
-    }),
-    [loadData, treeLabel],
-  );
-
-  const tree = useTree<TItem>({
-    rootItemId: DYNAMIC_TREE_ROOT_ITEM_ID,
-    dataLoader,
-    isItemFolder: (item) => Boolean(item.getItemData()?.isFolder),
-    getItemName: (item) => item.getItemData()?.label ?? item.getId(),
-    onLoadedItem: (itemId, item) => {
-      loadedItemsRef.current[itemId] = item;
-    },
-    createLoadingItemData: () => ({}) as TItem,
-    features: [asyncDataLoaderFeature, selectionFeature, hotkeysCoreFeature],
-  });
-
-  const containerProps = tree.getContainerProps(
-    treeLabel,
-  ) as React.ComponentPropsWithoutRef<'div'>;
-  const items = tree.getItems();
+  const ItemComponent = customItem ?? DynamicTreeItem;
+  const ContextMenuComponent =
+    contextMenu === undefined
+      ? (DynamicTreeItemContextMenu as DynamicTreeContextMenuComponent<TItem>)
+      : contextMenu;
 
   return (
     <ScrollArea
       data-slot="jb-tree-scroll-area"
-      className="max-w-full"
+      className="max-w-full p-2"
       style={{ width, height }}
     >
       <ScrollViewport data-slot="jb-tree-scroll-viewport" className="size-full">
@@ -265,19 +399,54 @@ function DynamicTree<TItem extends DynamicTreeItemData>({
           className="jb-tree jb-dynamic-tree block w-full min-w-[244px] box-border py-2 text-[13px] leading-4 font-medium [font-family:var(--jb-font-sans),sans-serif]"
           {...props}
         >
-          {items.map((item) => (
-            <DynamicTreeItemRow
-              key={item.getKey()}
-              item={item}
-              indent={indent}
-            />
-          ))}
+          {items.map((item) => {
+            if (!ContextMenuComponent) {
+              return (
+                <ItemComponent
+                  key={item.getKey()}
+                  item={item}
+                  indent={indent}
+                />
+              );
+            }
+
+            return (
+              <ContextMenu key={item.getKey()}>
+                <ContextMenuTrigger
+                  asChild
+                  onContextMenu={(event) => {
+                    if ((item.getItemData() as TItem | null)?.disabled) {
+                      event.preventDefault();
+                      return;
+                    }
+
+                    item.setFocused();
+                    item.select();
+                  }}
+                >
+                  <div
+                    data-slot="jb-tree-item-context-trigger"
+                    data-value={item.getId()}
+                  >
+                    <ItemComponent item={item} indent={indent} />
+                  </div>
+                </ContextMenuTrigger>
+                <ContextMenuContent>
+                  {ContextMenuComponent({
+                    item,
+                  })}
+                </ContextMenuContent>
+              </ContextMenu>
+            );
+          })}
         </div>
       </ScrollViewport>
     </ScrollArea>
   );
 }
 
+export { DynamicTreeItemContextMenu };
+export { DynamicTreeItem };
 export { DynamicTree };
 
 export default DynamicTree;

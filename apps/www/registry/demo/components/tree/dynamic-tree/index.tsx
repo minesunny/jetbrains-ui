@@ -3,10 +3,16 @@
 import * as React from 'react';
 
 import {
+  hotkeysCoreFeature,
+  selectionFeature,
+  type TreeDataLoader,
+} from '@headless-tree/core';
+import { useTree } from '@headless-tree/react';
+import {
   DynamicTree,
+  DynamicTreeItemContextMenu,
+  asyncDataLoaderFeature,
   type DynamicTreeItemData,
-  type DynamicTreeLoadedItem,
-  type DynamicTreeLoadData,
 } from '@/registry/components/tree/dynamic-tree';
 import { Markdown, React as ReactFileType } from '@/registry/icons/file-types';
 import { Folder } from '@/registry/icons/nodes';
@@ -16,6 +22,12 @@ const DEMO_ROOT_ID = 'dynamic-root';
 type DemoTreeItem = DynamicTreeItemData & {
   kind: 'file' | 'folder';
   path: string;
+  isFolder?: boolean;
+};
+
+type DemoLoadedItem = {
+  id: string;
+  data: DemoTreeItem;
 };
 
 type DemoTreeItems = Record<string, Omit<DemoTreeItem, 'endContent'>>;
@@ -141,14 +153,15 @@ function resolveDemoItemData(
 }
 
 export default function DynamicTreeDemo() {
-  const loadData = React.useCallback<DynamicTreeLoadData<DemoTreeItem>>(
-    async (itemId) => {
+  const loadedItemsRef = React.useRef<Record<string, DemoTreeItem>>({});
+  const loadData = React.useCallback(
+    async (itemId: string | null): Promise<DemoLoadedItem[]> => {
       await wait(120);
 
       const parentId = itemId ?? DEMO_ROOT_ID;
 
       return (dynamicChildren[parentId] ?? []).map(
-        (childId): DynamicTreeLoadedItem<DemoTreeItem> => ({
+        (childId): DemoLoadedItem => ({
           id: childId,
           data: resolveDemoItemData(dynamicItems, dynamicChildren, childId),
         }),
@@ -156,13 +169,58 @@ export default function DynamicTreeDemo() {
     },
     [],
   );
+  const dataLoader = React.useMemo<TreeDataLoader<DemoTreeItem>>(
+    () => ({
+      getItem: async (itemId: string) => {
+        const [realItemId] = itemId.split('@');
+
+        if (realItemId === DEMO_ROOT_ID) {
+          return {
+            label: 'jetbrains-ui',
+            isFolder: true,
+          } as DemoTreeItem;
+        }
+
+        return (
+          loadedItemsRef.current[realItemId] ??
+          ({
+            label: realItemId,
+            kind: 'file',
+            path: realItemId,
+          } as DemoTreeItem)
+        );
+      },
+      getChildrenWithData: async (itemId: string) => {
+        const [realItemId] = itemId.split('@');
+
+        return loadData(realItemId === DEMO_ROOT_ID ? null : realItemId);
+      },
+    }),
+    [loadData],
+  );
+  const tree = useTree<DemoTreeItem>({
+    rootItemId: DEMO_ROOT_ID,
+    dataLoader,
+    isItemFolder: (item) => Boolean(item.getItemData()?.isFolder),
+    getItemName: (item) => item.getItemData()?.label ?? item.getId(),
+    onLoadedItem: (itemId, item) => {
+      loadedItemsRef.current[itemId] = item;
+    },
+    createLoadingItemData: () => ({}) as DemoTreeItem,
+    features: [asyncDataLoaderFeature, selectionFeature, hotkeysCoreFeature],
+  });
 
   return (
-    <div className="w-[280px]">
+    <div className="w-[280px] rounded border">
       <DynamicTree<DemoTreeItem>
-        width="220px"
-        height="120px"
-        loadData={loadData}
+        containerProps={
+          tree.getContainerProps(
+            'Tree',
+          ) as React.ComponentPropsWithoutRef<'div'>
+        }
+        items={tree.getItems()}
+        contextMenu={DynamicTreeItemContextMenu}
+        height="400px"
       />
     </div>
   );

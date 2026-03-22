@@ -5,7 +5,7 @@
   "title": "Tree Demo",
   "description": "Demo showing tree component",
   "dependencies": [],
-  "registryDependencies": ["@jetbrains-ui/tree"],
+  "registryDependencies": ["@jetbrains-ui/tree/tree"],
   "files": [
     {
       "path": "registry/demo/components/tree/tree/index.tsx",
