@@ -8,7 +8,7 @@
   "registryDependencies": ["@jetbrains-ui/tree"],
   "files": [
     {
-      "path": "registry/demo/components/tree/index.tsx",
+      "path": "registry/demo/components/tree/tree/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/demo/tree.tsx"
     }

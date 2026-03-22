@@ -1,0 +1,90 @@
+---
+title: Dynamic Tree
+description: 基于 @headless-tree 构建的异步树形组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-03-21
+---
+
+<ComponentPreview name="demo-dynamic-tree" />
+
+## 概述
+
+`DynamicTree` 按照 `@headless-tree` 的异步模式实现，只暴露一个 `loadData(parentId)` 接口。传入 `null` 时加载根层级，每次返回当前父节点下的 `{ id, data }[]` 即可。
+
+## 安装
+
+<ComponentInstallation name="dynamic-tree" />
+
+## 用法
+
+```tsx
+import {
+  DynamicTree,
+  type DynamicTreeItemData,
+  type DynamicTreeLoadData,
+} from '@/components/jetbrains-ui/tree/dynamic-tree';
+
+type FileTreeItem = DynamicTreeItemData & {
+  path: string;
+};
+
+const loadData: DynamicTreeLoadData<FileTreeItem> = async (parentId) => {
+  if (parentId === null) {
+    return [
+      {
+        id: 'folder-src',
+        data: {
+          label: 'src',
+          path: '/src',
+          isFolder: true,
+        },
+      },
+      {
+        id: 'readme-md',
+        data: {
+          label: 'README.md',
+          path: '/README.md',
+        },
+      },
+    ];
+  }
+
+  if (parentId === 'folder-src') {
+    return [
+      {
+        id: 'index-tsx',
+        data: {
+          label: 'index.tsx',
+          path: '/src/index.tsx',
+        },
+      },
+    ];
+  }
+
+  return [];
+};
+
+function Example() {
+  return (
+    <DynamicTree<FileTreeItem>
+      width="220px"
+      height="160px"
+      loadData={loadData}
+    />
+  );
+}
+```
+
+## 滚动
+
+`DynamicTree` 默认已经包裹了 `ScrollArea`。通过 `width` 和 `height` 约束可视区域后，已加载节点超出空间时会自动滚动。
+
+## API 说明
+
+- `DynamicTree<TItem>`：对你的节点数据类型做泛型约束，只要求包含树渲染需要的基础字段。
+- `loadData(parentId)`：唯一的数据入口。`parentId === null` 表示加载根层级。
+- `width` 与 `height`：限制外层滚动区域尺寸，内容超出时启用滚动。
+- `loadingLabel`：用于自定义子节点加载中的占位文案。
+- 选中、加载状态和键盘导航由 `@headless-tree` 在组件内部统一处理。

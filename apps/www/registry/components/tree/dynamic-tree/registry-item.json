@@ -1,0 +1,42 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dynamic-tree",
+  "type": "registry:ui",
+  "title": "Dynamic Tree",
+  "description": "JetBrains-style async tree component built on top of @headless-tree with a loadData API.",
+  "dependencies": ["@headless-tree/core", "@headless-tree/react"],
+  "registryDependencies": ["utils", "icons-components", "scroll-area"],
+  "files": [
+    {
+      "path": "registry/components/tree/dynamic-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tree/dynamic-tree/index.tsx"
+    },
+    {
+      "path": "registry/components/tree/dynamic-tree/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/tree/dynamic-tree/index.css"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dynamic-tree",
+      "tree",
+      "navigation",
+      "jetbrains",
+      "ui",
+      "component"
+    ],
+    "category": "navigation",
+    "docs": {
+      "description": "Async JetBrains-style tree view with lazy loading and selection support.",
+      "features": [
+        "Generic item typing for tree node data",
+        "Single loadData(parentId) data API",
+        "Async loading with @headless-tree",
+        "Keyboard support for selection and collapse",
+        "Token-driven light/dark theme support"
+      ]
+    }
+  }
+}

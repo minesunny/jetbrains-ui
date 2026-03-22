@@ -11,6 +11,7 @@ export {
   TrashIcon,
   EditIcon,
   RefreshIcon,
+  LoaderIcon,
   FilterIcon,
 } from './icons';
 

@@ -836,8 +836,8 @@
       ],
       "registryDependencies": [
         "utils",
-        "@jetbrains-ui/context-menu",
-        "@jetbrains-ui/icons-components"
+        "@jetbrains-ui/icons-components",
+        "@jetbrains-ui/scroll-area"
       ],
       "files": [
         {
@@ -846,14 +846,24 @@
           "target": "components/jetbrains-ui/tree/index.tsx"
         },
         {
-          "path": "registry/components/tree/dynamic-tree.tsx",
+          "path": "registry/components/tree/tree/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/tree/dynamic-tree.tsx"
+          "target": "components/jetbrains-ui/tree/tree/index.tsx"
         },
         {
-          "path": "registry/components/tree/index.css",
+          "path": "registry/components/tree/tree/index.css",
           "type": "registry:style",
-          "target": "components/jetbrains-ui/tree/index.css"
+          "target": "components/jetbrains-ui/tree/tree/index.css"
+        },
+        {
+          "path": "registry/components/tree/dynamic-tree/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/tree/dynamic-tree/index.tsx"
+        },
+        {
+          "path": "registry/components/tree/dynamic-tree/index.css",
+          "type": "registry:style",
+          "target": "components/jetbrains-ui/tree/dynamic-tree/index.css"
         }
       ],
       "meta": {
@@ -866,13 +876,58 @@
         ],
         "category": "navigation",
         "docs": {
-          "description": "JetBrains-style tree view with nested hierarchy, selection and collapse controls.",
+          "description": "JetBrains-style static tree view with nested hierarchy, selection and collapse controls.",
           "features": [
             "Nested tree structure",
-            "Dynamic tree rendering with @headless-tree",
-            "Async item and children loading",
-            "Shared context menu callback per tree item",
             "Controlled and uncontrolled selected/expanded states",
+            "Keyboard support for selection and collapse",
+            "Token-driven light/dark theme support"
+          ]
+        }
+      }
+    },
+    {
+      "name": "dynamic-tree",
+      "type": "registry:ui",
+      "title": "Dynamic Tree",
+      "description": "JetBrains-style async tree component built on top of @headless-tree with a loadData API.",
+      "dependencies": [
+        "@headless-tree/core",
+        "@headless-tree/react"
+      ],
+      "registryDependencies": [
+        "utils",
+        "@jetbrains-ui/icons-components",
+        "@jetbrains-ui/scroll-area"
+      ],
+      "files": [
+        {
+          "path": "registry/components/tree/dynamic-tree/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/tree/dynamic-tree/index.tsx"
+        },
+        {
+          "path": "registry/components/tree/dynamic-tree/index.css",
+          "type": "registry:style",
+          "target": "components/jetbrains-ui/tree/dynamic-tree/index.css"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "dynamic-tree",
+          "tree",
+          "navigation",
+          "jetbrains",
+          "ui",
+          "component"
+        ],
+        "category": "navigation",
+        "docs": {
+          "description": "Async JetBrains-style tree view with lazy loading and selection support.",
+          "features": [
+            "Generic item typing for tree node data",
+            "Single loadData(parentId) data API",
+            "Async loading with @headless-tree",
             "Keyboard support for selection and collapse",
             "Token-driven light/dark theme support"
           ]
@@ -1066,26 +1121,6 @@
         }
       ],
       "meta": {}
-    },
-    {
-      "name": "demo-dynamic-tree",
-      "type": "registry:ui",
-      "title": "Dynamic Tree Demo",
-      "description": "Demo showing dynamic tree component",
-      "dependencies": [],
-      "registryDependencies": [
-        "@jetbrains-ui/tree"
-      ],
-      "files": [
-        {
-          "path": "registry/demo/components/dynamic-tree/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/demo/dynamic-tree.tsx"
-        }
-      ],
-      "meta": {
-        "demoProps": {}
-      }
     },
     {
       "name": "demo-input",
@@ -1374,6 +1409,26 @@
       }
     },
     {
+      "name": "demo-dynamic-tree",
+      "type": "registry:ui",
+      "title": "Dynamic Tree Demo",
+      "description": "Demo showing dynamic tree component",
+      "dependencies": [],
+      "registryDependencies": [
+        "@jetbrains-ui/dynamic-tree"
+      ],
+      "files": [
+        {
+          "path": "registry/demo/components/tree/dynamic-tree/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/demo/dynamic-tree.tsx"
+        }
+      ],
+      "meta": {
+        "demoProps": {}
+      }
+    },
+    {
       "name": "demo-tree",
       "type": "registry:ui",
       "title": "Tree Demo",
@@ -1384,7 +1439,7 @@
       ],
       "files": [
         {
-          "path": "registry/demo/components/tree/index.tsx",
+          "path": "registry/demo/components/tree/tree/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/demo/tree.tsx"
         }

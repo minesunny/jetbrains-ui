@@ -5,7 +5,7 @@
   "title": "Tree",
   "description": "JetBrains-style tree view component with selectable and expandable items.",
   "dependencies": ["@headless-tree/core", "@headless-tree/react"],
-  "registryDependencies": ["utils", "context-menu", "icons-components"],
+  "registryDependencies": ["utils", "icons-components", "scroll-area"],
   "files": [
     {
       "path": "registry/components/tree/index.tsx",
@@ -13,26 +13,33 @@
       "target": "components/jetbrains-ui/tree/index.tsx"
     },
     {
-      "path": "registry/components/tree/dynamic-tree.tsx",
+      "path": "registry/components/tree/tree/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/tree/dynamic-tree.tsx"
+      "target": "components/jetbrains-ui/tree/tree/index.tsx"
     },
     {
-      "path": "registry/components/tree/index.css",
+      "path": "registry/components/tree/tree/index.css",
       "type": "registry:style",
-      "target": "components/jetbrains-ui/tree/index.css"
+      "target": "components/jetbrains-ui/tree/tree/index.css"
+    },
+    {
+      "path": "registry/components/tree/dynamic-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tree/dynamic-tree/index.tsx"
+    },
+    {
+      "path": "registry/components/tree/dynamic-tree/index.css",
+      "type": "registry:style",
+      "target": "components/jetbrains-ui/tree/dynamic-tree/index.css"
     }
   ],
   "meta": {
     "keywords": ["tree", "navigation", "jetbrains", "ui", "component"],
     "category": "navigation",
     "docs": {
-      "description": "JetBrains-style tree view with nested hierarchy, selection and collapse controls.",
+      "description": "JetBrains-style static tree view with nested hierarchy, selection and collapse controls.",
       "features": [
         "Nested tree structure",
-        "Dynamic tree rendering with @headless-tree",
-        "Async item and children loading",
-        "Shared context menu callback per tree item",
         "Controlled and uncontrolled selected/expanded states",
         "Keyboard support for selection and collapse",
         "Token-driven light/dark theme support"

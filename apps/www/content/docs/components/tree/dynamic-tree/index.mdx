@@ -1,0 +1,90 @@
+---
+title: Dynamic Tree
+description: Async tree component built on top of @headless-tree.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-03-21
+---
+
+<ComponentPreview name="demo-dynamic-tree" />
+
+## Overview
+
+`DynamicTree` follows the async `@headless-tree` pattern and renders nodes from a single `loadData(parentId)` function. Pass `null` to load the root level, and return `{ id, data }[]` for every folder.
+
+## Installation
+
+<ComponentInstallation name="dynamic-tree" />
+
+## Usage
+
+```tsx
+import {
+  DynamicTree,
+  type DynamicTreeItemData,
+  type DynamicTreeLoadData,
+} from '@/components/jetbrains-ui/tree/dynamic-tree';
+
+type FileTreeItem = DynamicTreeItemData & {
+  path: string;
+};
+
+const loadData: DynamicTreeLoadData<FileTreeItem> = async (parentId) => {
+  if (parentId === null) {
+    return [
+      {
+        id: 'folder-src',
+        data: {
+          label: 'src',
+          path: '/src',
+          isFolder: true,
+        },
+      },
+      {
+        id: 'readme-md',
+        data: {
+          label: 'README.md',
+          path: '/README.md',
+        },
+      },
+    ];
+  }
+
+  if (parentId === 'folder-src') {
+    return [
+      {
+        id: 'index-tsx',
+        data: {
+          label: 'index.tsx',
+          path: '/src/index.tsx',
+        },
+      },
+    ];
+  }
+
+  return [];
+};
+
+function Example() {
+  return (
+    <DynamicTree<FileTreeItem>
+      width="220px"
+      height="160px"
+      loadData={loadData}
+    />
+  );
+}
+```
+
+## Scrolling
+
+`DynamicTree` already includes a `ScrollArea` wrapper. Use `width` and `height` to cap the visible viewport, and the tree scrolls once loaded items exceed the available space.
+
+## API Highlights
+
+- `DynamicTree<TItem>`: generic over your item data shape as long as it includes the tree display fields.
+- `loadData(parentId)`: the only data entry point. `parentId === null` loads the root level.
+- `width` and `height`: constrain the outer scroll area and enable scrolling when content overflows.
+- `loadingLabel`: customizes the placeholder label while children are loading.
+- Selection, loading state and keyboard navigation are handled internally by `@headless-tree`.
