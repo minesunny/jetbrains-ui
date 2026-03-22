@@ -14,6 +14,8 @@ node_modules
 
 # Testing
 coverage
+!apps/www/registry/icons/general/tool-windows/coverage/
+!apps/www/registry/icons/general/tool-windows/coverage/**
 
 # Turbo
 .turbo
