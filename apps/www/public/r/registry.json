@@ -543,19 +543,23 @@
       "name": "resizable",
       "type": "registry:ui",
       "title": "Resizable",
-      "description": "Composable resizable panel layout with collapsible panels and min-size scroll fallback.",
+      "description": "Composable resizable panel layout with collapsible panels and remembered size.",
       "dependencies": [
         "react-resizable-panels"
       ],
       "registryDependencies": [
-        "utils",
-        "@jetbrains-ui/scroll-area"
+        "utils"
       ],
       "files": [
         {
           "path": "registry/components/resizable/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/resizable.tsx"
+          "target": "components/jetbrains-ui/resizable/index.tsx"
+        },
+        {
+          "path": "registry/components/resizable/index.css",
+          "type": "registry:style",
+          "target": "components/jetbrains-ui/resizable/index.css"
         }
       ],
       "meta": {
@@ -567,10 +571,9 @@
         ],
         "category": "layout",
         "docs": {
-          "description": "Composable resizable panel layout with collapsible panels and min-size scroll fallback.",
+          "description": "Composable resizable panel layout with collapsible panels and remembered size.",
           "features": [
             "Collapsible panels with remembered size",
-            "Min-size aware scroll fallback",
             "Composable API"
           ]
         }
@@ -1287,13 +1290,37 @@
       ],
       "meta": {
         "demoProps": {
-          "ResizablePanelGroup": {
+          "ResizableDemo": {
             "direction": {
               "value": "horizontal",
               "options": {
                 "horizontal": "horizontal",
                 "vertical": "vertical"
               }
+            },
+            "collapsed": {
+              "value": false
+            },
+            "collapsedSize": {
+              "value": "0",
+              "options": {
+                "0": "0",
+                "8": "8",
+                "16": "16",
+                "-1": "-1"
+              }
+            },
+            "defaultSize": {
+              "value": 45,
+              "min": 25,
+              "max": 75,
+              "step": 5
+            },
+            "minSize": {
+              "value": 20,
+              "min": 10,
+              "max": 40,
+              "step": 5
             }
           }
         }

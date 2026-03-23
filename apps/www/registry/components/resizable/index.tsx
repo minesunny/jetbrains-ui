@@ -3,22 +3,36 @@
 import * as React from 'react';
 import * as ResizablePrimitive from 'react-resizable-panels';
 
-import {
-  ScrollArea,
-  ScrollBar,
-  ScrollViewport,
-} from '@/registry/components/scroll-area';
 import { cn } from '@workspace/ui/lib/utils';
+import './index.css';
 
 const PANEL_SIZE_EPSILON = 0.1;
 
-type ResizablePanelProps = React.ComponentProps<
-  typeof ResizablePrimitive.Panel
+type ResizableOrientation = NonNullable<
+  React.ComponentPropsWithoutRef<typeof ResizablePrimitive.Group>['orientation']
+>;
+
+type ResizablePanelGroupProps = Omit<
+  React.ComponentPropsWithoutRef<typeof ResizablePrimitive.Group>,
+  'groupRef' | 'orientation'
 > & {
-  contentClassName?: string;
-  enableMinSizeScroll?: boolean;
-  collapse?: boolean;
+  direction?: ResizableOrientation;
+};
+
+type ResizablePanelProps = Omit<
+  React.ComponentPropsWithoutRef<typeof ResizablePrimitive.Panel>,
+  'collapsible' | 'panelRef' | 'onResize'
+> & {
   collapsed?: boolean;
+  onCollapse?: () => void;
+  onExpand?: () => void;
+  onResize?: (size: number, prevSize: number | undefined) => void;
+};
+
+type ResizableHandleProps = React.ComponentPropsWithoutRef<
+  typeof ResizablePrimitive.Separator
+> & {
+  withHandle?: boolean;
 };
 
 function assignRef<T>(ref: React.ForwardedRef<T>, value: T) {
@@ -32,36 +46,44 @@ function assignRef<T>(ref: React.ForwardedRef<T>, value: T) {
   }
 }
 
-function ResizablePanelGroup({
-  className,
-  ...props
-}: React.ComponentProps<typeof ResizablePrimitive.PanelGroup>) {
+const ResizablePanelGroup = React.forwardRef<
+  ResizablePrimitive.GroupImperativeHandle,
+  ResizablePanelGroupProps
+>(({ className, direction = 'horizontal', ...props }, forwardedRef) => {
+  const mergedRef = React.useCallback(
+    (value: ResizablePrimitive.GroupImperativeHandle | null) => {
+      assignRef(forwardedRef, value);
+    },
+    [forwardedRef],
+  );
+
   return (
-    <ResizablePrimitive.PanelGroup
+    <ResizablePrimitive.Group
+      groupRef={mergedRef}
+      orientation={direction}
       data-slot="resizable-panel-group"
       className={cn(
-        'flex size-full overflow-hidden data-[panel-group-direction=vertical]:flex-col',
+        'jb-resizable-panel-group flex h-full w-full overflow-hidden',
+        direction === 'vertical' && 'flex-col',
         className,
       )}
       {...props}
     />
   );
-}
+});
+
+ResizablePanelGroup.displayName = 'ResizablePanelGroup';
 
 const ResizablePanel = React.forwardRef<
-  React.ComponentRef<typeof ResizablePrimitive.Panel>,
+  ResizablePrimitive.PanelImperativeHandle,
   ResizablePanelProps
 >(
   (
     {
       className,
       children,
-      contentClassName,
-      enableMinSizeScroll = true,
       minSize,
-      collapsible,
       collapsedSize = 0,
-      collapse,
       collapsed,
       onResize,
       onCollapse,
@@ -72,69 +94,95 @@ const ResizablePanel = React.forwardRef<
     forwardedRef,
   ) => {
     const panelRef =
-      React.useRef<React.ComponentRef<typeof ResizablePrimitive.Panel>>(null);
+      React.useRef<ResizablePrimitive.PanelImperativeHandle | null>(null);
     const lastExpandedSizeRef = React.useRef<number | null>(
       typeof defaultSize === 'number' ? defaultSize : null,
     );
-    const [isCollapsed, setIsCollapsed] = React.useState(false);
-    const [isAtMinSize, setIsAtMinSize] = React.useState(false);
+    const lastCollapsedStateRef = React.useRef(false);
+    const resolvedCollapsedSize =
+      typeof collapsedSize === 'number' &&
+      Number.isFinite(collapsedSize) &&
+      collapsedSize >= 0
+        ? collapsedSize
+        : undefined;
+    const isCollapsible = typeof resolvedCollapsedSize === 'number';
+    const collapseThreshold = (resolvedCollapsedSize ?? 0) + PANEL_SIZE_EPSILON;
+    const [isCollapseModeEnabled, setIsCollapseModeEnabled] = React.useState(
+      Boolean(isCollapsible && collapsed),
+    );
 
     const mergedRef = React.useCallback(
-      (value: React.ComponentRef<typeof ResizablePrimitive.Panel> | null) => {
+      (value: ResizablePrimitive.PanelImperativeHandle | null) => {
         panelRef.current = value;
         assignRef(forwardedRef, value);
       },
       [forwardedRef],
     );
 
-    const collapseThreshold = collapsedSize + PANEL_SIZE_EPSILON;
-    const collapsedState = collapse ?? collapsed;
-
     const handleResize = React.useCallback(
-      (nextSize: number, prevSize: number | undefined) => {
-        if (nextSize > collapseThreshold) {
-          lastExpandedSizeRef.current = nextSize;
+      (
+        nextSize: ResizablePrimitive.PanelSize,
+        _id: string | number | undefined,
+        prevSize: ResizablePrimitive.PanelSize | undefined,
+      ) => {
+        const nextPercentage = nextSize.asPercentage;
+        const prevPercentage = prevSize?.asPercentage;
+
+        if (isCollapsible && nextPercentage > collapseThreshold) {
+          lastExpandedSizeRef.current = nextPercentage;
         }
 
-        if (typeof minSize === 'number') {
-          setIsAtMinSize(nextSize <= minSize + PANEL_SIZE_EPSILON);
+        if (isCollapsible) {
+          const isNowCollapsed =
+            Math.abs(nextPercentage - resolvedCollapsedSize) <=
+            PANEL_SIZE_EPSILON;
+          const wasCollapsed =
+            typeof prevPercentage === 'number'
+              ? Math.abs(prevPercentage - resolvedCollapsedSize) <=
+                PANEL_SIZE_EPSILON
+              : lastCollapsedStateRef.current;
+
+          if (isNowCollapsed && !wasCollapsed) {
+            onCollapse?.();
+          } else if (!isNowCollapsed && wasCollapsed) {
+            onExpand?.();
+          }
+
+          lastCollapsedStateRef.current = isNowCollapsed;
+        } else {
+          lastCollapsedStateRef.current = false;
         }
 
-        onResize?.(nextSize, prevSize);
+        onResize?.(nextPercentage, prevPercentage);
       },
-      [collapseThreshold, minSize, onResize],
+      [
+        collapseThreshold,
+        isCollapsible,
+        onCollapse,
+        onExpand,
+        onResize,
+        resolvedCollapsedSize,
+      ],
     );
 
-    const handleCollapse = React.useCallback(() => {
-      setIsCollapsed(true);
-      setIsAtMinSize(false);
-      onCollapse?.();
-    }, [onCollapse]);
-
-    const handleExpand = React.useCallback(() => {
-      setIsCollapsed(false);
-
-      if (typeof minSize === 'number') {
-        const rememberedSize = lastExpandedSizeRef.current;
-        if (typeof rememberedSize === 'number') {
-          setIsAtMinSize(rememberedSize <= minSize + PANEL_SIZE_EPSILON);
-        }
+    React.useEffect(() => {
+      if (!isCollapsible) {
+        setIsCollapseModeEnabled(false);
+        lastCollapsedStateRef.current = false;
+        return;
       }
 
-      const rememberedSize = lastExpandedSizeRef.current;
-      if (
-        collapsible &&
-        typeof rememberedSize === 'number' &&
-        rememberedSize > collapseThreshold
-      ) {
-        panelRef.current?.resize(rememberedSize);
+      if (collapsed) {
+        setIsCollapseModeEnabled(true);
       }
-
-      onExpand?.();
-    }, [collapsible, collapseThreshold, minSize, onExpand]);
+    }, [collapsed, isCollapsible]);
 
     React.useEffect(() => {
-      if (!collapsible || typeof collapsedState !== 'boolean') {
+      if (
+        !isCollapsible ||
+        !isCollapseModeEnabled ||
+        typeof collapsed !== 'boolean'
+      ) {
         return;
       }
 
@@ -143,52 +191,62 @@ const ResizablePanel = React.forwardRef<
         return;
       }
 
-      if (collapsedState) {
-        if (!panel.isCollapsed()) {
-          panel.collapse();
-        }
-        return;
-      }
-
-      if (panel.isCollapsed()) {
+      if (!collapsed) {
         panel.expand();
-      }
-    }, [collapsible, collapsedState]);
+        const rememberedSize = lastExpandedSizeRef.current;
 
-    const shouldEnableScroll =
-      enableMinSizeScroll && !isCollapsed && isAtMinSize;
+        const frameId = window.requestAnimationFrame(() => {
+          if (
+            typeof rememberedSize === 'number' &&
+            rememberedSize > collapseThreshold
+          ) {
+            panel.resize(rememberedSize);
+          }
+
+          setIsCollapseModeEnabled(false);
+        });
+
+        return () => {
+          window.cancelAnimationFrame(frameId);
+        };
+      }
+
+      let frameId = 0;
+
+      const collapsePanel = () => {
+        try {
+          panel.collapse();
+        } catch {
+          frameId = window.requestAnimationFrame(collapsePanel);
+        }
+      };
+
+      frameId = window.requestAnimationFrame(collapsePanel);
+
+      return () => {
+        window.cancelAnimationFrame(frameId);
+      };
+    }, [collapsed, isCollapsible, isCollapseModeEnabled]);
 
     return (
       <ResizablePrimitive.Panel
-        ref={mergedRef}
-        data-slot="resizable-panel"
-        data-min-size-reached={shouldEnableScroll ? 'true' : 'false'}
-        className={cn('min-h-0 min-w-0', className)}
+        panelRef={mergedRef}
         minSize={minSize}
-        collapsible={collapsible}
-        collapsedSize={collapsedSize}
+        collapsible={isCollapseModeEnabled}
+        collapsedSize={
+          isCollapseModeEnabled ? resolvedCollapsedSize : undefined
+        }
         defaultSize={defaultSize}
         onResize={handleResize}
-        onCollapse={handleCollapse}
-        onExpand={handleExpand}
         {...props}
       >
-        {enableMinSizeScroll ? (
-          <ScrollArea className="size-full">
-            <ScrollViewport
-              className={cn(
-                'size-full',
-                shouldEnableScroll ? 'overflow-auto' : 'overflow-hidden',
-                contentClassName,
-              )}
-            >
-              {children}
-            </ScrollViewport>
-            <ScrollBar orientation="horizontal" />
-          </ScrollArea>
-        ) : (
-          children
-        )}
+        <div
+          data-slot="resizable-panel"
+          data-panel-collapsible={isCollapseModeEnabled ? 'true' : undefined}
+          className={cn('jb-resizable-panel h-full min-h-0 min-w-0', className)}
+        >
+          {children}
+        </div>
       </ResizablePrimitive.Panel>
     );
   },
@@ -196,33 +254,47 @@ const ResizablePanel = React.forwardRef<
 
 ResizablePanel.displayName = 'ResizablePanel';
 
-function ResizableHandle({
+function ResizableSeparator({
   className,
-  withHandle,
   ...props
-}: React.ComponentProps<typeof ResizablePrimitive.PanelResizeHandle> & {
-  withHandle?: boolean;
-}) {
+}: React.ComponentPropsWithoutRef<typeof ResizablePrimitive.Separator>) {
   return (
-    <ResizablePrimitive.PanelResizeHandle
+    <ResizablePrimitive.Separator
       data-slot="resizable-handle"
       className={cn(
-        'bg-border relative flex w-px shrink-0 items-center justify-center after:absolute after:inset-y-0 after:left-1/2 after:w-1 after:-translate-x-1/2 focus-visible:ring-1 focus-visible:ring-offset-1 focus-visible:outline-hidden data-[panel-group-direction=vertical]:h-px data-[panel-group-direction=vertical]:w-full data-[panel-group-direction=vertical]:after:left-0 data-[panel-group-direction=vertical]:after:h-1 data-[panel-group-direction=vertical]:after:w-full data-[panel-group-direction=vertical]:after:-translate-y-1/2 data-[panel-group-direction=vertical]:after:translate-x-0',
+        "jb-resizable-handle relative flex w-px shrink-0 cursor-col-resize items-center justify-center outline-none transition-[background-color,box-shadow] duration-150 ease-in-out after:absolute after:inset-y-0 after:left-1/2 after:w-1 after:content-[''] after:-translate-x-1/2 focus-visible:z-[1] aria-[orientation=horizontal]:h-px aria-[orientation=horizontal]:w-full aria-[orientation=horizontal]:cursor-row-resize aria-[orientation=horizontal]:after:top-1/2 aria-[orientation=horizontal]:after:bottom-auto aria-[orientation=horizontal]:after:left-0 aria-[orientation=horizontal]:after:h-1 aria-[orientation=horizontal]:after:w-full aria-[orientation=horizontal]:after:translate-x-0 aria-[orientation=horizontal]:after:-translate-y-1/2 aria-[orientation=horizontal]:[&_.jb-resizable-handle__grip]:rotate-90",
         className,
       )}
       {...props}
-    >
-      {withHandle && (
-        <div
-          className={cn(
-            'bg-border z-10 flex h-4 w-3 items-center justify-center rounded-xs border',
-          )}
-        >
-          <span className="bg-border-foreground/40 block h-2.5 w-1 rounded-full" />
-        </div>
-      )}
-    </ResizablePrimitive.PanelResizeHandle>
+    />
   );
 }
 
-export { ResizablePanelGroup, ResizablePanel, ResizableHandle };
+function ResizableHandle({
+  className,
+  children,
+  withHandle,
+  ...props
+}: ResizableHandleProps) {
+  return (
+    <ResizableSeparator
+      data-with-handle={withHandle ? 'true' : undefined}
+      className={className}
+      {...props}
+    >
+      {children ??
+        (withHandle ? (
+          <div className="jb-resizable-handle__grip z-10 flex h-4 w-3 shrink-0 items-center justify-center rounded-[2px] border transition-[border-color,background-color,transform] duration-150 ease-in-out before:block before:h-2.5 before:w-1 before:rounded-full before:content-[''] before:transition-[background-color] before:duration-150 before:ease-in-out" />
+        ) : null)}
+    </ResizableSeparator>
+  );
+}
+
+export {
+  ResizablePanelGroup,
+  ResizablePanel,
+  ResizableHandle,
+  type ResizableHandleProps,
+  type ResizablePanelGroupProps,
+  type ResizablePanelProps,
+};

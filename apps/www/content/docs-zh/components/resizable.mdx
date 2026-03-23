@@ -11,7 +11,9 @@ releaseDate: 2025-03-01
 
 ## 概述
 
-可组合的可调整面板组件，支持面板折叠与最小尺寸触发滚动兜底。
+可组合的可调整面板组件，支持面板折叠与尺寸记忆。
+
+`collapsedSize` 默认值为 `0`；设为 `-1` 表示禁用折叠。`collapsed` 用于控制当前折叠状态。
 
 ## 安装
 
@@ -27,7 +29,7 @@ import {
 } from '@/components/jetbrains-ui/resizable';
 
 <ResizablePanelGroup direction="horizontal">
-  <ResizablePanel defaultSize={40} minSize={20} collapsible collapsedSize={0}>
+  <ResizablePanel defaultSize={40} minSize={20} collapsedSize={0}>
     A
   </ResizablePanel>
   <ResizableHandle />
@@ -37,7 +39,7 @@ import {
 </ResizablePanelGroup>;
 ```
 
-## 用例：可折叠面板 + 最小尺寸滚动兜底
+## 用例：可折叠面板
 
 ```tsx
 'use client';
@@ -51,14 +53,14 @@ import {
 } from '@/components/jetbrains-ui/resizable';
 
 export function ResizableCollapsibleExample() {
-  const [collapse, setCollapse] = React.useState(false);
+  const [collapsed, setCollapsed] = React.useState(false);
 
   return (
     <div className="space-y-3">
       <button
         type="button"
         className="rounded border px-3 py-1 text-sm"
-        onClick={() => setCollapse((prev) => !prev)}
+        onClick={() => setCollapsed((prev) => !prev)}
       >
         切换 Panel A
       </button>
@@ -70,13 +72,12 @@ export function ResizableCollapsibleExample() {
         <ResizablePanel
           defaultSize={45}
           minSize={20}
-          collapsible
-          collapse={collapse}
           collapsedSize={0}
+          collapsed={collapsed}
+          onCollapse={() => setCollapsed(true)}
+          onExpand={() => setCollapsed(false)}
         >
-          <div className="h-full min-w-[640px] p-3">
-            当面板缩到 minSize 时，内容会切换为面板内部滚动。
-          </div>
+          <div className="h-full p-3">Panel A</div>
         </ResizablePanel>
         <ResizableHandle withHandle />
         <ResizablePanel defaultSize={55} minSize={25}>
