@@ -11,7 +11,9 @@ releaseDate: 2025-03-01
 
 ## Overview
 
-A composable resizable layout component with support for collapsible panels and min-size scroll fallback.
+A composable resizable layout component with support for collapsible panels and remembered size.
+
+`collapsedSize` defaults to `0`. Use `-1` to disable collapse. Use `collapsed` to control the current collapsed state.
 
 ## Installation
 
@@ -27,7 +29,7 @@ import {
 } from '@/components/jetbrains-ui/resizable';
 
 <ResizablePanelGroup direction="horizontal">
-  <ResizablePanel defaultSize={40} minSize={20} collapsible collapsedSize={0}>
+  <ResizablePanel defaultSize={40} minSize={20} collapsedSize={0}>
     A
   </ResizablePanel>
   <ResizableHandle />
@@ -37,7 +39,7 @@ import {
 </ResizablePanelGroup>;
 ```
 
-## Use Case: Collapsible Panel + Min-Size Scroll Fallback
+## Use Case: Collapsible Panel
 
 ```tsx
 'use client';
@@ -51,14 +53,14 @@ import {
 } from '@/components/jetbrains-ui/resizable';
 
 export function ResizableCollapsibleExample() {
-  const [collapse, setCollapse] = React.useState(false);
+  const [collapsed, setCollapsed] = React.useState(false);
 
   return (
     <div className="space-y-3">
       <button
         type="button"
         className="rounded border px-3 py-1 text-sm"
-        onClick={() => setCollapse((prev) => !prev)}
+        onClick={() => setCollapsed((prev) => !prev)}
       >
         Toggle Panel A
       </button>
@@ -70,13 +72,12 @@ export function ResizableCollapsibleExample() {
         <ResizablePanel
           defaultSize={45}
           minSize={20}
-          collapsible
-          collapse={collapse}
           collapsedSize={0}
+          collapsed={collapsed}
+          onCollapse={() => setCollapsed(true)}
+          onExpand={() => setCollapsed(false)}
         >
-          <div className="h-full min-w-[640px] p-3">
-            Content gets internal scroll when panel size reaches minSize.
-          </div>
+          <div className="h-full p-3">Panel A</div>
         </ResizablePanel>
         <ResizableHandle withHandle />
         <ResizablePanel defaultSize={55} minSize={25}>

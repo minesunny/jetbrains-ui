@@ -17,13 +17,37 @@
   ],
   "meta": {
     "demoProps": {
-      "ResizablePanelGroup": {
+      "ResizableDemo": {
         "direction": {
           "value": "horizontal",
           "options": {
             "horizontal": "horizontal",
             "vertical": "vertical"
           }
+        },
+        "collapsed": {
+          "value": false
+        },
+        "collapsedSize": {
+          "value": "0",
+          "options": {
+            "-1": "-1",
+            "0": "0",
+            "8": "8",
+            "16": "16"
+          }
+        },
+        "defaultSize": {
+          "value": 45,
+          "min": 25,
+          "max": 75,
+          "step": 5
+        },
+        "minSize": {
+          "value": 20,
+          "min": 10,
+          "max": 40,
+          "step": 5
         }
       }
     }

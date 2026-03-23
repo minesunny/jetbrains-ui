@@ -39,7 +39,7 @@ export const ComponentWrapper = ({
           className,
         )}
       >
-        <motion.div className="relative size-full flex-1">
+        <motion.div className="relative min-h-0 min-w-0 flex-1">
           {!iframe && (
             <div className="absolute top-3 right-3 z-[9] bg-background flex items-center justify-end gap-2 p-1 rounded-[11px]">
               <OpenInV0Button
@@ -102,7 +102,7 @@ export const ComponentWrapper = ({
           ) : (
             <div
               key={key}
-              className="flex min-h-[400px] w-full items-center justify-center px-10 py-16"
+              className="flex min-h-[400px] min-w-0 w-full items-center justify-center px-10 py-16"
             >
               {children}
             </div>
