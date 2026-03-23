@@ -19,7 +19,7 @@
     "react": "^19.1.2",
     "react-day-picker": "8.10.1",
     "react-dom": "^19.1.2",
-    "react-resizable-panels": "^2.1.7",
+    "react-resizable-panels": "^4.7.5",
     "tailwind-merge": "^3.0.1",
     "tw-animate-css": "^1.2.4"
   },
