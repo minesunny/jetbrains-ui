@@ -5,13 +5,19 @@
   "title": "Thread Current",
   "description": "Thread Current icon from Debugger category.",
   "registryDependencies": [
-    "icons-debugger-types"
+    "icons-debugger-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/debugger/thread-current/index.tsx",
+      "path": "registry/icons/debugger/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/thread-current/index.tsx"
+      "target": "components/jetbrains-ui/icons/debugger/index.ts"
+    },
+    {
+      "path": "public/icons/debugger.svg",
+      "type": "registry:ui",
+      "target": "public/icons/debugger.svg"
     }
   ],
   "meta": {

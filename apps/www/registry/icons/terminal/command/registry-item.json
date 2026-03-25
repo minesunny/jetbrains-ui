@@ -5,13 +5,19 @@
   "title": "Command",
   "description": "Command icon from Terminal category.",
   "registryDependencies": [
-    "icons-terminal-types"
+    "icons-terminal-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/terminal/command/index.tsx",
+      "path": "registry/icons/terminal/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/terminal/command/index.tsx"
+      "target": "components/jetbrains-ui/icons/terminal/index.ts"
+    },
+    {
+      "path": "public/icons/terminal.svg",
+      "type": "registry:ui",
+      "target": "public/icons/terminal.svg"
     }
   ],
   "meta": {

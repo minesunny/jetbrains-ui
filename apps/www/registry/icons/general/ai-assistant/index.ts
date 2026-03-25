@@ -1,34 +1,137 @@
-export { AiAssistant } from './ai-assistant';
-export type { AiAssistantProps } from './ai-assistant';
-export { AiAssistantColored } from './ai-assistant-colored';
-export type { AiAssistantColoredProps } from './ai-assistant-colored';
-export { AiAssistantDisabled } from './ai-assistant-disabled';
-export type { AiAssistantDisabledProps } from './ai-assistant-disabled';
-export { Attached } from './attached';
-export type { AttachedProps } from './attached';
-export { Dislike } from './dislike';
-export type { DislikeProps } from './dislike';
-export { DislikeSelected } from './dislike-selected';
-export type { DislikeSelectedProps } from './dislike-selected';
-export { FeatureAnswer } from './feature-answer';
-export type { FeatureAnswerProps } from './feature-answer';
-export { FeatureCodeBlock } from './feature-code-block';
-export type { FeatureCodeBlockProps } from './feature-code-block';
-export { FeatureComment } from './feature-comment';
-export type { FeatureCommentProps } from './feature-comment';
-export { FeatureCommit } from './feature-commit';
-export type { FeatureCommitProps } from './feature-commit';
-export { FeatureContext } from './feature-context';
-export type { FeatureContextProps } from './feature-context';
-export { FeatureDocs } from './feature-docs';
-export type { FeatureDocsProps } from './feature-docs';
-export { Like } from './like';
-export type { LikeProps } from './like';
-export { LikeSelected } from './like-selected';
-export type { LikeSelectedProps } from './like-selected';
-export { Send } from './send';
-export type { SendProps } from './send';
-export { SendToEditor } from './send-to-editor';
-export type { SendToEditorProps } from './send-to-editor';
+import type { FC } from 'react';
+import { createSpriteIcon } from '@/registry/components/icons';
+import type { IconProps } from '../types';
+
+export type AiAssistantProps = IconProps;
+
+export const AiAssistant: FC<AiAssistantProps> = createSpriteIcon({
+  name: 'general/ai-assistant/ai-assistant',
+  viewBox: '0 0 16 16',
+  displayName: 'AiAssistant',
+});
+
+export type AiAssistantColoredProps = IconProps;
+
+export const AiAssistantColored: FC<AiAssistantColoredProps> = createSpriteIcon(
+  {
+    name: 'general/ai-assistant/ai-assistant-colored',
+    viewBox: '0 0 16 16',
+    displayName: 'AiAssistantColored',
+  },
+);
+
+export type AiAssistantDisabledProps = IconProps;
+
+export const AiAssistantDisabled: FC<AiAssistantDisabledProps> =
+  createSpriteIcon({
+    name: 'general/ai-assistant/ai-assistant-disabled',
+    viewBox: '0 0 16 16',
+    displayName: 'AiAssistantDisabled',
+  });
+
+export type AttachedProps = IconProps;
+
+export const Attached: FC<AttachedProps> = createSpriteIcon({
+  name: 'general/ai-assistant/attached',
+  viewBox: '0 0 16 16',
+  displayName: 'Attached',
+});
+
+export type DislikeProps = IconProps;
+
+export const Dislike: FC<DislikeProps> = createSpriteIcon({
+  name: 'general/ai-assistant/dislike',
+  viewBox: '0 0 16 16',
+  displayName: 'Dislike',
+});
+
+export type DislikeSelectedProps = IconProps;
+
+export const DislikeSelected: FC<DislikeSelectedProps> = createSpriteIcon({
+  name: 'general/ai-assistant/dislike-selected',
+  viewBox: '0 0 16 16',
+  displayName: 'DislikeSelected',
+});
+
+export type FeatureAnswerProps = IconProps;
+
+export const FeatureAnswer: FC<FeatureAnswerProps> = createSpriteIcon({
+  name: 'general/ai-assistant/feature-answer',
+  viewBox: '0 0 16 16',
+  displayName: 'FeatureAnswer',
+});
+
+export type FeatureCodeBlockProps = IconProps;
+
+export const FeatureCodeBlock: FC<FeatureCodeBlockProps> = createSpriteIcon({
+  name: 'general/ai-assistant/feature-code-block',
+  viewBox: '0 0 16 16',
+  displayName: 'FeatureCodeBlock',
+});
+
+export type FeatureCommentProps = IconProps;
+
+export const FeatureComment: FC<FeatureCommentProps> = createSpriteIcon({
+  name: 'general/ai-assistant/feature-comment',
+  viewBox: '0 0 16 16',
+  displayName: 'FeatureComment',
+});
+
+export type FeatureCommitProps = IconProps;
+
+export const FeatureCommit: FC<FeatureCommitProps> = createSpriteIcon({
+  name: 'general/ai-assistant/feature-commit',
+  viewBox: '0 0 16 16',
+  displayName: 'FeatureCommit',
+});
+
+export type FeatureContextProps = IconProps;
+
+export const FeatureContext: FC<FeatureContextProps> = createSpriteIcon({
+  name: 'general/ai-assistant/feature-context',
+  viewBox: '0 0 16 16',
+  displayName: 'FeatureContext',
+});
+
+export type FeatureDocsProps = IconProps;
+
+export const FeatureDocs: FC<FeatureDocsProps> = createSpriteIcon({
+  name: 'general/ai-assistant/feature-docs',
+  viewBox: '0 0 16 16',
+  displayName: 'FeatureDocs',
+});
+
+export type LikeProps = IconProps;
+
+export const Like: FC<LikeProps> = createSpriteIcon({
+  name: 'general/ai-assistant/like',
+  viewBox: '0 0 16 16',
+  displayName: 'Like',
+});
+
+export type LikeSelectedProps = IconProps;
+
+export const LikeSelected: FC<LikeSelectedProps> = createSpriteIcon({
+  name: 'general/ai-assistant/like-selected',
+  viewBox: '0 0 16 16',
+  displayName: 'LikeSelected',
+});
+
+export type SendProps = IconProps;
+
+export const Send: FC<SendProps> = createSpriteIcon({
+  name: 'general/ai-assistant/send',
+  viewBox: '0 0 16 16',
+  displayName: 'Send',
+});
+
+export type SendToEditorProps = IconProps;
+
+export const SendToEditor: FC<SendToEditorProps> = createSpriteIcon({
+  name: 'general/ai-assistant/send-to-editor',
+  viewBox: '0 0 16 16',
+  displayName: 'SendToEditor',
+});
+
 export { iconNames } from '../types';
 export type { IconName, IconMode, IconProps, IconSize } from '../types';

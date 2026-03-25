@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol viewBox="0 0 16 16" fill="none" id="command_light">
+    <path d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2z" fill="#EBECF0"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13 3H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" fill="#6C707E"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M7 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M4.126 5.167a.5.5 0 0 1 .708 0l1.98 1.98a.5.5 0 0 1 0 .707l-1.98 1.98a.5.5 0 1 1-.708-.708L5.753 7.5 4.126 5.874a.5.5 0 0 1 0-.707" fill="#6C707E"></path>
+  </symbol>
+  <symbol viewBox="0 0 16 16" fill="none" id="command_dark">
+    <path d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2z" fill="#43454A"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13 3H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" fill="#CED0D6"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M7 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M4.126 5.167a.5.5 0 0 1 .708 0l1.98 1.98a.5.5 0 0 1 0 .707l-1.98 1.98a.5.5 0 1 1-.708-.708L5.753 7.5 4.126 5.874a.5.5 0 0 1 0-.707" fill="#CED0D6"></path>
+  </symbol>
+  <symbol viewBox="0 0 16 16" fill="none" id="file-format_light">
+    <path d="M3 5.414V13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-1.999V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414" fill="#EBECF0"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3 13V5.414a1 1 0 0 1 .293-.707l3.414-3.414A1 1 0 0 1 7.414 1H11a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2m8 1a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H8v2a2 2 0 0 1-2 2H4v7a1 1 0 0 0 1 1zM4.414 5 7 2.414V4a1 1 0 0 1-1 1z" fill="#6C707E"></path>
+  </symbol>
+  <symbol viewBox="0 0 16 16" fill="none" id="file-format_dark">
+    <path d="M3 5.414V13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-1.999V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414" fill="#43454A"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3 13V5.414a1 1 0 0 1 .293-.707l3.414-3.414A1 1 0 0 1 7.414 1H11a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2m8 1a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H8v2a2 2 0 0 1-2 2H4v7a1 1 0 0 0 1 1zM4.414 5 7 2.414V4a1 1 0 0 1-1 1z" fill="#CED0D6"></path>
+  </symbol>
+  <symbol viewBox="0 0 16 16" fill="none" id="option_light">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 2a1 1 0 0 1 1-1h4.118l2 1H12a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H9.882l-2-1H4v5.5a.5.5 0 0 1-1 0zm1 6h4.118l2 1H12V3H9.882l-2-1H4z" fill="#6C707E"></path><path d="M8.118 8H4V2h3.882l2 1H12v6h-1.882z" fill="#EBECF0"></path>
+  </symbol>
+  <symbol viewBox="0 0 16 16" fill="none" id="option_dark">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 2a1 1 0 0 1 1-1h4.118l2 1H12a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H9.882l-2-1H4v5.5a.5.5 0 0 1-1 0zm1 6h4.118l2 1H12V3H9.882l-2-1H4z" fill="#CED0D6"></path><path d="M8.118 8H4V2h3.882l2 1H12v6h-1.882z" fill="#43454A"></path>
+  </symbol>
+  <symbol viewBox="0 0 16 16" fill="none" id="other_light">
+    <path d="m1.586 9.414 5 5a2 2 0 0 0 2.828 0l5-5a2 2 0 0 0 0-2.828l-5-5a2 2 0 0 0-2.828 0l-5 5a2 2 0 0 0 0 2.828" fill="#EBECF0"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m2.293 8.707 5 5a1 1 0 0 0 1.414 0l5-5a1 1 0 0 0 0-1.414l-5-5 .552-.552-.552.552a1 1 0 0 0-1.414 0l-.707-.707a2 2 0 0 1 2.828 0l5 5a2 2 0 0 1 0 2.828l-5 5a2 2 0 0 1-2.828 0l-5-5a2 2 0 0 1 0-2.828l5-5 .707.707-5 5a1 1 0 0 0 0 1.414" fill="#6C707E"></path>
+  </symbol>
+  <symbol viewBox="0 0 16 16" fill="none" id="other_dark">
+    <path d="m1.586 9.414 5 5a2 2 0 0 0 2.828 0l5-5a2 2 0 0 0 0-2.828l-5-5a2 2 0 0 0-2.828 0l-5 5a2 2 0 0 0 0 2.828" fill="#43454A"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m2.293 8.707 5 5a1 1 0 0 0 1.414 0l5-5a1 1 0 0 0 0-1.414l-5-5 .552-.552-.552.552a1 1 0 0 0-1.414 0l-.707-.707a2 2 0 0 1 2.828 0l5 5a2 2 0 0 1 0 2.828l-5 5a2 2 0 0 1-2.828 0l-5-5a2 2 0 0 1 0-2.828l5-5 .707.707-5 5a1 1 0 0 0 0 1.414" fill="#CED0D6"></path>
+  </symbol>
+</svg>

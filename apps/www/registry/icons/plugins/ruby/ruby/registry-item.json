@@ -5,13 +5,19 @@
   "title": "Ruby",
   "description": "Ruby icon from Plugins Ruby category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/ruby/ruby/index.tsx",
+      "path": "registry/icons/plugins/ruby/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/ruby/ruby/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/ruby/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {
@@ -19,7 +25,6 @@
       "ruby",
       "icon",
       "plugins",
-      "ruby",
       "jetbrains"
     ]
   }

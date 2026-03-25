@@ -5,7 +5,8 @@
   "title": "General Status Icons",
   "description": "All 13 icons from the General Status category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,69 +15,9 @@
       "target": "components/jetbrains-ui/icons/general/status/index.ts"
     },
     {
-      "path": "registry/icons/general/status/error/index.tsx",
+      "path": "public/icons/general.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/error/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/error-dialog/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/error-dialog/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/error-outline/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/error-outline/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/info/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/info/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/info-outline/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/info-outline/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/information-dialog/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/information-dialog/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/question-dialog/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/question-dialog/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/success/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/success/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/success-dialog/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/success-dialog/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/success-login/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/success-login/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/warning/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/warning/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/warning-dialog/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/warning-dialog/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/status/warning-outline/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/warning-outline/index.tsx"
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

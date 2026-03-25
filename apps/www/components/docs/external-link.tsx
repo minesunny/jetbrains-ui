@@ -1,6 +1,6 @@
 'use client';
 
-import { ExternalLinkIcon } from 'lucide-react';
+import { ExternalLinkIcon } from '@workspace/ui/components/icons/system-icons';
 import { motion } from 'motion/react';
 
 export const ExternalLink = ({

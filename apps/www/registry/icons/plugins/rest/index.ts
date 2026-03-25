@@ -1,2 +1,14 @@
-export { Http_request } from './http_request';
-export type { Http_requestProps } from './http_request';
+import type { FC } from 'react';
+import { createSpriteIcon } from '@/registry/components/icons';
+import type { IconProps } from '../types';
+
+export type HttprequestProps = IconProps;
+
+export const Httprequest: FC<HttprequestProps> = createSpriteIcon({
+  name: 'plugins/rest/http_request',
+  viewBox: '0 0 16 16',
+  displayName: 'Httprequest',
+});
+
+export { iconNames } from '../types';
+export type { IconName, IconMode, IconProps, IconSize } from '../types';

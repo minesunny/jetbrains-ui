@@ -5,13 +5,19 @@
   "title": "Run As Workflow",
   "description": "Run As Workflow icon from Plugins Databricks category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/databricks/run-as-workflow/index.tsx",
+      "path": "registry/icons/plugins/databricks/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/databricks/run-as-workflow/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/databricks/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

@@ -5,20 +5,25 @@
   "title": "Open New Tab",
   "description": "Open New Tab icon from General General category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/general/open-new-tab/index.tsx",
+      "path": "registry/icons/general/general/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/open-new-tab/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/general/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {
     "keywords": [
       "open-new-tab",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -5,13 +5,19 @@
   "title": "Stylus",
   "description": "Stylus icon from Plugins Stylus category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/stylus/stylus/index.tsx",
+      "path": "registry/icons/plugins/stylus/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/stylus/stylus/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/stylus/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {
@@ -19,7 +25,6 @@
       "stylus",
       "icon",
       "plugins",
-      "stylus",
       "jetbrains"
     ]
   }

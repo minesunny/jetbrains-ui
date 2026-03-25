@@ -5,13 +5,19 @@
   "title": "Docker Compose Scaled Service Up",
   "description": "Docker Compose Scaled Service Up icon from Plugins Docker category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/docker/docker-compose-scaled-service-up/index.tsx",
+      "path": "registry/icons/plugins/docker/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose-scaled-service-up/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/docker/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

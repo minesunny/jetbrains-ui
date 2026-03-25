@@ -5,13 +5,19 @@
   "title": "Service Account",
   "description": "Service Account icon from Plugins Kubernetes category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/kubernetes/service-account/index.tsx",
+      "path": "registry/icons/plugins/kubernetes/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/kubernetes/service-account/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

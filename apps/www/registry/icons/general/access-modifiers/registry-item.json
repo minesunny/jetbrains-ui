@@ -5,7 +5,8 @@
   "title": "General Access Modifiers Icons",
   "description": "All 4 icons from the General Access Modifiers category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,24 +15,9 @@
       "target": "components/jetbrains-ui/icons/general/access-modifiers/index.ts"
     },
     {
-      "path": "registry/icons/general/access-modifiers/access-local/index.tsx",
+      "path": "public/icons/general.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/access-modifiers/access-local/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/access-modifiers/access-private/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/access-modifiers/access-private/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/access-modifiers/access-protected/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/access-modifiers/access-protected/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/access-modifiers/access-public/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/access-modifiers/access-public/index.tsx"
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

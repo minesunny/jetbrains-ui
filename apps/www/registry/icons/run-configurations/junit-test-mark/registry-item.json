@@ -5,13 +5,19 @@
   "title": "Junit Test Mark",
   "description": "Junit Test Mark icon from Run Configurations category.",
   "registryDependencies": [
-    "icons-run-configurations-types"
+    "icons-run-configurations-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/run-configurations/junit-test-mark/index.tsx",
+      "path": "registry/icons/run-configurations/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/junit-test-mark/index.tsx"
+      "target": "components/jetbrains-ui/icons/run-configurations/index.ts"
+    },
+    {
+      "path": "public/icons/run-configurations.svg",
+      "type": "registry:ui",
+      "target": "public/icons/run-configurations.svg"
     }
   ],
   "meta": {

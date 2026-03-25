@@ -5,13 +5,19 @@
   "title": "Show Import Statements",
   "description": "Show Import Statements icon from General Usages category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/usages/show-import-statements/index.tsx",
+      "path": "registry/icons/general/usages/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/usages/show-import-statements/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/usages/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

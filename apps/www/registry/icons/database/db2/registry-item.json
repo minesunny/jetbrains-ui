@@ -5,13 +5,19 @@
   "title": "Db2",
   "description": "Db2 icon from Database category.",
   "registryDependencies": [
-    "icons-database-types"
+    "icons-database-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/database/db2/index.tsx",
+      "path": "registry/icons/database/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/db2/index.tsx"
+      "target": "components/jetbrains-ui/icons/database/index.ts"
+    },
+    {
+      "path": "public/icons/database.svg",
+      "type": "registry:ui",
+      "target": "public/icons/database.svg"
     }
   ],
   "meta": {

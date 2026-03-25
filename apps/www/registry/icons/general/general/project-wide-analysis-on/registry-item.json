@@ -5,20 +5,25 @@
   "title": "Project Wide Analysis On",
   "description": "Project Wide Analysis On icon from General General category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/general/project-wide-analysis-on/index.tsx",
+      "path": "registry/icons/general/general/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/project-wide-analysis-on/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/general/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {
     "keywords": [
       "project-wide-analysis-on",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

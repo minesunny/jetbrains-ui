@@ -5,13 +5,19 @@
   "title": "Velocity Plugin Logo",
   "description": "Velocity Plugin Logo icon from Plugins Velocity category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/velocity/velocity-plugin-logo/index.tsx",
+      "path": "registry/icons/plugins/velocity/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/velocity/velocity-plugin-logo/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/velocity/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

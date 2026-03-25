@@ -5,13 +5,19 @@
   "title": "Breakpoint Method Valid",
   "description": "Breakpoint Method Valid icon from Breakpoints category.",
   "registryDependencies": [
-    "icons-breakpoints-types"
+    "icons-breakpoints-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/breakpoints/breakpoint-method-valid/index.tsx",
+      "path": "registry/icons/breakpoints/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-valid/index.tsx"
+      "target": "components/jetbrains-ui/icons/breakpoints/index.ts"
+    },
+    {
+      "path": "public/icons/breakpoints.svg",
+      "type": "registry:ui",
+      "target": "public/icons/breakpoints.svg"
     }
   ],
   "meta": {

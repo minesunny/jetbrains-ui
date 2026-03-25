@@ -5,13 +5,19 @@
   "title": "Field Value",
   "description": "Field Value icon from Plugins Kotlin category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/kotlin/field-value/index.tsx",
+      "path": "registry/icons/plugins/kotlin/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/kotlin/field-value/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

@@ -5,7 +5,8 @@
   "title": "Plugins Linux Icons",
   "description": "All 2 icons from the Plugins Linux category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,14 +15,9 @@
       "target": "components/jetbrains-ui/icons/plugins/linux/index.ts"
     },
     {
-      "path": "registry/icons/plugins/linux/linux/index.tsx",
+      "path": "public/icons/plugins.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/linux/linux/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/linux/linux-logo/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/linux/linux-logo/index.tsx"
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

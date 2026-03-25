@@ -5,7 +5,8 @@
   "title": "Plugins Dev Containers Icons",
   "description": "All 1 icons from the Plugins Dev Containers category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,9 +15,9 @@
       "target": "components/jetbrains-ui/icons/plugins/dev-containers/index.ts"
     },
     {
-      "path": "registry/icons/plugins/dev-containers/dev-containers/index.tsx",
+      "path": "public/icons/plugins.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/dev-containers/dev-containers/index.tsx"
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

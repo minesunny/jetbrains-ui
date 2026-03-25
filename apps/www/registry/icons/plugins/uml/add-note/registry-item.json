@@ -5,13 +5,19 @@
   "title": "Add Note",
   "description": "Add Note icon from Plugins Uml category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/uml/add-note/index.tsx",
+      "path": "registry/icons/plugins/uml/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/uml/add-note/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/uml/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

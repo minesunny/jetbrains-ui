@@ -5,13 +5,19 @@
   "title": "Bazel Warning",
   "description": "Bazel Warning icon from Plugins Bazel category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/bazel/bazel-warning/index.tsx",
+      "path": "registry/icons/plugins/bazel/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-warning/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/bazel/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

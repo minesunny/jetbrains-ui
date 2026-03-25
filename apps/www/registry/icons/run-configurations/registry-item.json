@@ -5,7 +5,8 @@
   "title": "Run Configurations Icons",
   "description": "All 15 icons from the Run Configurations category.",
   "registryDependencies": [
-    "icons-run-configurations-types"
+    "icons-run-configurations-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,79 +15,9 @@
       "target": "components/jetbrains-ui/icons/run-configurations/index.ts"
     },
     {
-      "path": "registry/icons/run-configurations/application/index.tsx",
+      "path": "public/icons/run-configurations.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/application/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/application-remote/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/application-remote/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/compound/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/compound/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/ignored-test/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/ignored-test/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/invalid-configuration-layer/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/invalid-configuration-layer/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/java-scratch/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/java-scratch/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/java-script-debug-configuration/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/java-script-debug-configuration/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/java-script-remote/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/java-script-remote/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/junit/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/junit/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/junit-test-mark/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/junit-test-mark/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/php-local/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/php-local/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/php-remote/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/php-remote/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/php-web/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/php-web/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/run-http-request/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/run-http-request/index.tsx"
-    },
-    {
-      "path": "registry/icons/run-configurations/web-app/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/web-app/index.tsx"
+      "target": "public/icons/run-configurations.svg"
     }
   ],
   "meta": {

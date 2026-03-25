@@ -5,13 +5,19 @@
   "title": "Column Gold Blue Key",
   "description": "Column Gold Blue Key icon from Database category.",
   "registryDependencies": [
-    "icons-database-types"
+    "icons-database-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/database/column-gold-blue-key/index.tsx",
+      "path": "registry/icons/database/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-gold-blue-key/index.tsx"
+      "target": "components/jetbrains-ui/icons/database/index.ts"
+    },
+    {
+      "path": "public/icons/database.svg",
+      "type": "registry:ui",
+      "target": "public/icons/database.svg"
     }
   ],
   "meta": {

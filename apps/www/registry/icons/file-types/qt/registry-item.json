@@ -5,13 +5,19 @@
   "title": "Qt",
   "description": "Qt icon from File Types category.",
   "registryDependencies": [
-    "icons-file-types-types"
+    "icons-file-types-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/file-types/qt/index.tsx",
+      "path": "registry/icons/file-types/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/file-types/qt/index.tsx"
+      "target": "components/jetbrains-ui/icons/file-types/index.ts"
+    },
+    {
+      "path": "public/icons/file-types.svg",
+      "type": "registry:ui",
+      "target": "public/icons/file-types.svg"
     }
   ],
   "meta": {

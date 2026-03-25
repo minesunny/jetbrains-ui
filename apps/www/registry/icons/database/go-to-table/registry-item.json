@@ -5,13 +5,19 @@
   "title": "Go To Table",
   "description": "Go To Table icon from Database category.",
   "registryDependencies": [
-    "icons-database-types"
+    "icons-database-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/database/go-to-table/index.tsx",
+      "path": "registry/icons/database/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/go-to-table/index.tsx"
+      "target": "components/jetbrains-ui/icons/database/index.ts"
+    },
+    {
+      "path": "public/icons/database.svg",
+      "type": "registry:ui",
+      "target": "public/icons/database.svg"
     }
   ],
   "meta": {

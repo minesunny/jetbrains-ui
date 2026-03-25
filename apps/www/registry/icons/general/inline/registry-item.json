@@ -5,7 +5,8 @@
   "title": "General Inline Icons",
   "description": "All 18 icons from the General Inline category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,94 +15,9 @@
       "target": "components/jetbrains-ui/icons/general/inline/index.ts"
     },
     {
-      "path": "registry/icons/general/inline/browse/index.tsx",
+      "path": "public/icons/general.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/browse/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/collapse/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/collapse/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/copy/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/copy/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/exact-words/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/exact-words/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/expand/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/expand/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/filter-history/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/filter-history/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/inline-add/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/inline-add/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/inline-edit/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/inline-edit/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/inline-settings/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/inline-settings/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/match-case/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/match-case/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/new-line/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/new-line/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/preserve-case/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/preserve-case/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/refresh/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/refresh/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/regex/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/regex/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/search-history/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/search-history/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/sort-history/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/sort-history/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/statistics-panel/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/statistics-panel/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/inline/variables/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/variables/index.tsx"
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

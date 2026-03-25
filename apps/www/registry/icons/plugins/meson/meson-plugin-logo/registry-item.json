@@ -5,13 +5,19 @@
   "title": "Meson Plugin Logo",
   "description": "Meson Plugin Logo icon from Plugins Meson category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/meson/meson-plugin-logo/index.tsx",
+      "path": "registry/icons/plugins/meson/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/meson/meson-plugin-logo/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/meson/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

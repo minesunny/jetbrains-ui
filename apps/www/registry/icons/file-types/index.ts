@@ -1,252 +1,1017 @@
-export { ActionScript } from './action-script';
-export type { ActionScriptProps } from './action-script';
-export { AcyncAPI } from './acync-api';
-export type { AcyncAPIProps } from './acync-api';
-export { Amper } from './amper';
-export type { AmperProps } from './amper';
-export { AngularJS } from './angular-js';
-export type { AngularJSProps } from './angular-js';
-export { AngularJSMonochrome } from './angular-jsmonochrome';
-export type { AngularJSMonochromeProps } from './angular-jsmonochrome';
-export { AnyType } from './any-type';
-export type { AnyTypeProps } from './any-type';
-export { Api } from './api';
-export type { ApiProps } from './api';
-export { Archive } from './archive';
-export type { ArchiveProps } from './archive';
-export { AspectJ } from './aspect-j';
-export type { AspectJProps } from './aspect-j';
-export { AssemblerGo } from './assembler-go';
-export type { AssemblerGoProps } from './assembler-go';
-export { Bun } from './bun';
-export type { BunProps } from './bun';
-export { Chameleon } from './chameleon';
-export type { ChameleonProps } from './chameleon';
-export { ChangedFile } from './changed-file';
-export type { ChangedFileProps } from './changed-file';
-export { ChangedFiles } from './changed-files';
-export type { ChangedFilesProps } from './changed-files';
-export { Coffeescript } from './coffeescript';
-export type { CoffeescriptProps } from './coffeescript';
-export { ConditionalStatement } from './conditional-statement';
-export type { ConditionalStatementProps } from './conditional-statement';
-export { Contexts } from './contexts';
-export type { ContextsProps } from './contexts';
-export { ContextsModifier } from './contexts-modifier';
-export type { ContextsModifierProps } from './contexts-modifier';
-export { Css } from './css';
-export type { CssProps } from './css';
-export { Cucumber } from './cucumber';
-export type { CucumberProps } from './cucumber';
-export { CythonFile } from './cython-file';
-export type { CythonFileProps } from './cython-file';
-export { Deno } from './deno';
-export type { DenoProps } from './deno';
-export { Diagram } from './diagram';
-export type { DiagramProps } from './diagram';
-export { Dictionary } from './dictionary';
-export type { DictionaryProps } from './dictionary';
-export { Dts } from './dts';
-export type { DtsProps } from './dts';
-export { DtsProperty } from './dts-property';
-export type { DtsPropertyProps } from './dts-property';
-export { DtsSubNode } from './dts-sub-node';
-export type { DtsSubNodeProps } from './dts-sub-node';
-export { Eclipse } from './eclipse';
-export type { EclipseProps } from './eclipse';
-export { EditorConfig } from './editor-config';
-export type { EditorConfigProps } from './editor-config';
-export { Ejs } from './ejs';
-export type { EjsProps } from './ejs';
-export { Exposed } from './exposed';
-export type { ExposedProps } from './exposed';
-export { FastAPI } from './fast-api';
-export type { FastAPIProps } from './fast-api';
-export { Flask } from './flask';
-export type { FlaskProps } from './flask';
-export { Freemaker } from './freemaker';
-export type { FreemakerProps } from './freemaker';
-export { Haskell } from './haskell';
-export type { HaskellProps } from './haskell';
-export { Hook } from './hook';
-export type { HookProps } from './hook';
-export { Html } from './html';
-export type { HtmlProps } from './html';
-export { HttpHeader } from './http-header';
-export type { HttpHeaderProps } from './http-header';
-export { HttpRequestsRunConfiguration } from './http-requests-run-configuration';
-export type { HttpRequestsRunConfigurationProps } from './http-requests-run-configuration';
-export { I18n } from './i18n';
-export type { I18nProps } from './i18n';
-export { IdeaModule } from './idea-module';
-export type { IdeaModuleProps } from './idea-module';
-export { Idl } from './idl';
-export type { IdlProps } from './idl';
-export { Ignored } from './ignored';
-export type { IgnoredProps } from './ignored';
-export { Image } from './image';
-export type { ImageProps } from './image';
-export { Java } from './java';
-export type { JavaProps } from './java';
-export { JavaClass } from './java-class';
-export type { JavaClassProps } from './java-class';
-export { JavaScript } from './java-script';
-export type { JavaScriptProps } from './java-script';
-export { Jest } from './jest';
-export type { JestProps } from './jest';
-export { Jfr } from './jfr';
-export type { JfrProps } from './jfr';
-export { Jinja2 } from './jinja2';
-export type { Jinja2Props } from './jinja2';
-export { JsConfig } from './js-config';
-export type { JsConfigProps } from './js-config';
-export { JsDocClosure } from './js-doc-closure';
-export type { JsDocClosureProps } from './js-doc-closure';
-export { Json } from './json';
-export type { JsonProps } from './json';
-export { JsonSchema } from './json-schema';
-export type { JsonSchemaProps } from './json-schema';
-export { Jsp } from './jsp';
-export type { JspProps } from './jsp';
-export { Jspx } from './jspx';
-export type { JspxProps } from './jspx';
-export { JupyterNotebook } from './jupyter-notebook';
-export type { JupyterNotebookProps } from './jupyter-notebook';
-export { Kotlin } from './kotlin';
-export type { KotlinProps } from './kotlin';
-export { Less } from './less';
-export type { LessProps } from './less';
-export { Manifest } from './manifest';
-export type { ManifestProps } from './manifest';
-export { Markdown } from './markdown';
-export type { MarkdownProps } from './markdown';
-export { Maven } from './maven';
-export type { MavenProps } from './maven';
-export { MavenIgnored } from './maven-ignored';
-export type { MavenIgnoredProps } from './maven-ignored';
-export { Micronaut } from './micronaut';
-export type { MicronautProps } from './micronaut';
-export { MicrosoftWindows } from './microsoft-windows';
-export type { MicrosoftWindowsProps } from './microsoft-windows';
-export { Modified } from './modified';
-export type { ModifiedProps } from './modified';
-export { NextJS } from './next-js';
-export type { NextJSProps } from './next-js';
-export { NodejsTestRunner } from './nodejs-test-runner';
-export type { NodejsTestRunnerProps } from './nodejs-test-runner';
-export { NumPy } from './num-py';
-export type { NumPyProps } from './num-py';
-export { OpenRewrite } from './open-rewrite';
-export type { OpenRewriteProps } from './open-rewrite';
-export { OpenTofu } from './open-tofu';
-export type { OpenTofuProps } from './open-tofu';
-export { PackageJson } from './package-json';
-export type { PackageJsonProps } from './package-json';
-export { PackageLock } from './package-lock';
-export type { PackageLockProps } from './package-lock';
-export { Pandas } from './pandas';
-export type { PandasProps } from './pandas';
-export { Patch } from './patch';
-export type { PatchProps } from './patch';
-export { Perl } from './perl';
-export type { PerlProps } from './perl';
-export { Pnpm } from './pnpm';
-export type { PnpmProps } from './pnpm';
-export { PnpmLock } from './pnpm-lock';
-export type { PnpmLockProps } from './pnpm-lock';
-export { Polars } from './polars';
-export type { PolarsProps } from './polars';
-export { Prettier } from './prettier';
-export type { PrettierProps } from './prettier';
-export { Properties } from './properties';
-export type { PropertiesProps } from './properties';
-export { ProtoFile } from './proto-file';
-export type { ProtoFileProps } from './proto-file';
-export { ProtoMessage } from './proto-message';
-export type { ProtoMessageProps } from './proto-message';
-export { Protobuf } from './protobuf';
-export type { ProtobufProps } from './protobuf';
-export { PyTorch } from './py-torch';
-export type { PyTorchProps } from './py-torch';
-export { Python } from './python';
-export type { PythonProps } from './python';
-export { Qml } from './qml';
-export type { QmlProps } from './qml';
-export { Qrc } from './qrc';
-export type { QrcProps } from './qrc';
-export { Qt } from './qt';
-export type { QtProps } from './qt';
-export { Quatro } from './quatro';
-export type { QuatroProps } from './quatro';
-export { React } from './react';
-export type { ReactProps } from './react';
-export { Redoc } from './redoc';
-export type { RedocProps } from './redoc';
-export { Regexp } from './regexp';
-export type { RegexpProps } from './regexp';
-export { Rst } from './rst';
-export type { RstProps } from './rst';
-export { Sarif } from './sarif';
-export type { SarifProps } from './sarif';
-export { Sass } from './sass';
-export type { SassProps } from './sass';
-export { Scala } from './scala';
-export type { ScalaProps } from './scala';
-export { Scratch } from './scratch';
-export type { ScratchProps } from './scratch';
-export { Scratches } from './scratches';
-export type { ScratchesProps } from './scratches';
-export { Scss } from './scss';
-export type { ScssProps } from './scss';
-export { Shell } from './shell';
-export type { ShellProps } from './shell';
-export { SourceMap } from './source-map';
-export type { SourceMapProps } from './source-map';
-export { Sql } from './sql';
-export type { SqlProps } from './sql';
-export { Svelte } from './svelte';
-export type { SvelteProps } from './svelte';
-export { TeamCity } from './team-city';
-export type { TeamCityProps } from './team-city';
-export { TensorFlow } from './tensor-flow';
-export type { TensorFlowProps } from './tensor-flow';
-export { Terraform } from './terraform';
-export type { TerraformProps } from './terraform';
-export { Text } from './text';
-export type { TextProps } from './text';
-export { TsConfig } from './ts-config';
-export type { TsConfigProps } from './ts-config';
-export { TsDoc } from './ts-doc';
-export type { TsDocProps } from './ts-doc';
-export { UiForm } from './ui-form';
-export type { UiFormProps } from './ui-form';
-export { Unknown } from './unknown';
-export type { UnknownProps } from './unknown';
-export { ViteJS } from './vite-js';
-export type { ViteJSProps } from './vite-js';
-export { Vitest } from './vitest';
-export type { VitestProps } from './vitest';
-export { VueJs } from './vue-js';
-export type { VueJsProps } from './vue-js';
-export { Workspace } from './workspace';
-export type { WorkspaceProps } from './workspace';
-export { Wsdl } from './wsdl';
-export type { WsdlProps } from './wsdl';
-export { Xhtml } from './xhtml';
-export type { XhtmlProps } from './xhtml';
-export { Xml } from './xml';
-export type { XmlProps } from './xml';
-export { Xpath } from './xpath';
-export type { XpathProps } from './xpath';
-export { Xsd } from './xsd';
-export type { XsdProps } from './xsd';
-export { Xsl } from './xsl';
-export type { XslProps } from './xsl';
-export { Yaml } from './yaml';
-export type { YamlProps } from './yaml';
-export { Yarn } from './yarn';
-export type { YarnProps } from './yarn';
-export { YarnLock } from './yarn-lock';
-export type { YarnLockProps } from './yarn-lock';
+import type { FC } from 'react';
+import { createSpriteIcon } from '@/registry/components/icons';
+import type { IconProps } from './types';
+
+export type ActionScriptProps = IconProps;
+
+export const ActionScript: FC<ActionScriptProps> = createSpriteIcon({
+  name: 'file-types/action-script',
+  viewBox: '0 0 16 16',
+  displayName: 'ActionScript',
+});
+
+export type AcyncApiProps = IconProps;
+
+export const AcyncApi: FC<AcyncApiProps> = createSpriteIcon({
+  name: 'file-types/acync-api',
+  viewBox: '0 0 16 16',
+  displayName: 'AcyncApi',
+});
+
+export type AmperProps = IconProps;
+
+export const Amper: FC<AmperProps> = createSpriteIcon({
+  name: 'file-types/amper',
+  viewBox: '0 0 16 16',
+  displayName: 'Amper',
+});
+
+export type AngularJsProps = IconProps;
+
+export const AngularJs: FC<AngularJsProps> = createSpriteIcon({
+  name: 'file-types/angular-js',
+  viewBox: '0 0 16 16',
+  displayName: 'AngularJs',
+});
+
+export type AngularJsmonochromeProps = IconProps;
+
+export const AngularJsmonochrome: FC<AngularJsmonochromeProps> =
+  createSpriteIcon({
+    name: 'file-types/angular-jsmonochrome',
+    viewBox: '0 0 16 16',
+    displayName: 'AngularJsmonochrome',
+  });
+
+export type AnyTypeProps = IconProps;
+
+export const AnyType: FC<AnyTypeProps> = createSpriteIcon({
+  name: 'file-types/any-type',
+  viewBox: '0 0 16 16',
+  displayName: 'AnyType',
+});
+
+export type ApiProps = IconProps;
+
+export const Api: FC<ApiProps> = createSpriteIcon({
+  name: 'file-types/api',
+  viewBox: '0 0 16 16',
+  displayName: 'Api',
+});
+
+export type ArchiveProps = IconProps;
+
+export const Archive: FC<ArchiveProps> = createSpriteIcon({
+  name: 'file-types/archive',
+  viewBox: '0 0 16 16',
+  displayName: 'Archive',
+});
+
+export type AspectJProps = IconProps;
+
+export const AspectJ: FC<AspectJProps> = createSpriteIcon({
+  name: 'file-types/aspect-j',
+  viewBox: '0 0 16 16',
+  displayName: 'AspectJ',
+});
+
+export type AssemblerGoProps = IconProps;
+
+export const AssemblerGo: FC<AssemblerGoProps> = createSpriteIcon({
+  name: 'file-types/assembler-go',
+  viewBox: '0 0 14 14',
+  displayName: 'AssemblerGo',
+});
+
+export type BunProps = IconProps;
+
+export const Bun: FC<BunProps> = createSpriteIcon({
+  name: 'file-types/bun',
+  viewBox: '0 0 16 16',
+  displayName: 'Bun',
+});
+
+export type ChameleonProps = IconProps;
+
+export const Chameleon: FC<ChameleonProps> = createSpriteIcon({
+  name: 'file-types/chameleon',
+  viewBox: '0 0 16 16',
+  displayName: 'Chameleon',
+});
+
+export type ChangedFileProps = IconProps;
+
+export const ChangedFile: FC<ChangedFileProps> = createSpriteIcon({
+  name: 'file-types/changed-file',
+  viewBox: '0 0 16 16',
+  displayName: 'ChangedFile',
+});
+
+export type ChangedFilesProps = IconProps;
+
+export const ChangedFiles: FC<ChangedFilesProps> = createSpriteIcon({
+  name: 'file-types/changed-files',
+  viewBox: '0 0 16 16',
+  displayName: 'ChangedFiles',
+});
+
+export type CoffeescriptProps = IconProps;
+
+export const Coffeescript: FC<CoffeescriptProps> = createSpriteIcon({
+  name: 'file-types/coffeescript',
+  viewBox: '0 0 16 16',
+  displayName: 'Coffeescript',
+});
+
+export type ConditionalStatementProps = IconProps;
+
+export const ConditionalStatement: FC<ConditionalStatementProps> =
+  createSpriteIcon({
+    name: 'file-types/conditional-statement',
+    viewBox: '0 0 16 16',
+    displayName: 'ConditionalStatement',
+  });
+
+export type ContextsProps = IconProps;
+
+export const Contexts: FC<ContextsProps> = createSpriteIcon({
+  name: 'file-types/contexts',
+  viewBox: '0 0 16 16',
+  displayName: 'Contexts',
+});
+
+export type ContextsModifierProps = IconProps;
+
+export const ContextsModifier: FC<ContextsModifierProps> = createSpriteIcon({
+  name: 'file-types/contexts-modifier',
+  viewBox: '0 0 16 16',
+  displayName: 'ContextsModifier',
+});
+
+export type CssProps = IconProps;
+
+export const Css: FC<CssProps> = createSpriteIcon({
+  name: 'file-types/css',
+  viewBox: '0 0 16 16',
+  displayName: 'Css',
+});
+
+export type CucumberProps = IconProps;
+
+export const Cucumber: FC<CucumberProps> = createSpriteIcon({
+  name: 'file-types/cucumber',
+  viewBox: '0 0 16 16',
+  displayName: 'Cucumber',
+});
+
+export type CythonFileProps = IconProps;
+
+export const CythonFile: FC<CythonFileProps> = createSpriteIcon({
+  name: 'file-types/cython-file',
+  viewBox: '0 0 16 16',
+  displayName: 'CythonFile',
+});
+
+export type DenoProps = IconProps;
+
+export const Deno: FC<DenoProps> = createSpriteIcon({
+  name: 'file-types/deno',
+  viewBox: '0 0 16 16',
+  displayName: 'Deno',
+});
+
+export type DiagramProps = IconProps;
+
+export const Diagram: FC<DiagramProps> = createSpriteIcon({
+  name: 'file-types/diagram',
+  viewBox: '0 0 16 16',
+  displayName: 'Diagram',
+});
+
+export type DictionaryProps = IconProps;
+
+export const Dictionary: FC<DictionaryProps> = createSpriteIcon({
+  name: 'file-types/dictionary',
+  viewBox: '0 0 16 16',
+  displayName: 'Dictionary',
+});
+
+export type DtsProps = IconProps;
+
+export const Dts: FC<DtsProps> = createSpriteIcon({
+  name: 'file-types/dts',
+  viewBox: '0 0 16 16',
+  displayName: 'Dts',
+});
+
+export type DtsPropertyProps = IconProps;
+
+export const DtsProperty: FC<DtsPropertyProps> = createSpriteIcon({
+  name: 'file-types/dts-property',
+  viewBox: '0 0 16 16',
+  displayName: 'DtsProperty',
+});
+
+export type DtsSubNodeProps = IconProps;
+
+export const DtsSubNode: FC<DtsSubNodeProps> = createSpriteIcon({
+  name: 'file-types/dts-sub-node',
+  viewBox: '0 0 16 16',
+  displayName: 'DtsSubNode',
+});
+
+export type EclipseProps = IconProps;
+
+export const Eclipse: FC<EclipseProps> = createSpriteIcon({
+  name: 'file-types/eclipse',
+  viewBox: '0 0 16 16',
+  displayName: 'Eclipse',
+});
+
+export type EditorConfigProps = IconProps;
+
+export const EditorConfig: FC<EditorConfigProps> = createSpriteIcon({
+  name: 'file-types/editor-config',
+  viewBox: '0 0 16 16',
+  displayName: 'EditorConfig',
+});
+
+export type EjsProps = IconProps;
+
+export const Ejs: FC<EjsProps> = createSpriteIcon({
+  name: 'file-types/ejs',
+  viewBox: '0 0 16 16',
+  displayName: 'Ejs',
+});
+
+export type ExposedProps = IconProps;
+
+export const Exposed: FC<ExposedProps> = createSpriteIcon({
+  name: 'file-types/exposed',
+  viewBox: '0 0 16 16',
+  displayName: 'Exposed',
+});
+
+export type FastApiProps = IconProps;
+
+export const FastApi: FC<FastApiProps> = createSpriteIcon({
+  name: 'file-types/fast-api',
+  viewBox: '0 0 16 16',
+  displayName: 'FastApi',
+});
+
+export type FlaskProps = IconProps;
+
+export const Flask: FC<FlaskProps> = createSpriteIcon({
+  name: 'file-types/flask',
+  viewBox: '0 0 16 16',
+  displayName: 'Flask',
+});
+
+export type FreemakerProps = IconProps;
+
+export const Freemaker: FC<FreemakerProps> = createSpriteIcon({
+  name: 'file-types/freemaker',
+  viewBox: '0 0 16 16',
+  displayName: 'Freemaker',
+});
+
+export type HaskellProps = IconProps;
+
+export const Haskell: FC<HaskellProps> = createSpriteIcon({
+  name: 'file-types/haskell',
+  viewBox: '0 0 16 16',
+  displayName: 'Haskell',
+});
+
+export type HookProps = IconProps;
+
+export const Hook: FC<HookProps> = createSpriteIcon({
+  name: 'file-types/hook',
+  viewBox: '0 0 16 16',
+  displayName: 'Hook',
+});
+
+export type HtmlProps = IconProps;
+
+export const Html: FC<HtmlProps> = createSpriteIcon({
+  name: 'file-types/html',
+  viewBox: '0 0 16 16',
+  displayName: 'Html',
+});
+
+export type HttpHeaderProps = IconProps;
+
+export const HttpHeader: FC<HttpHeaderProps> = createSpriteIcon({
+  name: 'file-types/http-header',
+  viewBox: '0 0 16 16',
+  displayName: 'HttpHeader',
+});
+
+export type HttpRequestsRunConfigurationProps = IconProps;
+
+export const HttpRequestsRunConfiguration: FC<HttpRequestsRunConfigurationProps> =
+  createSpriteIcon({
+    name: 'file-types/http-requests-run-configuration',
+    viewBox: '0 0 16 16',
+    displayName: 'HttpRequestsRunConfiguration',
+  });
+
+export type I18nProps = IconProps;
+
+export const I18n: FC<I18nProps> = createSpriteIcon({
+  name: 'file-types/i18n',
+  viewBox: '0 0 16 16',
+  displayName: 'I18n',
+});
+
+export type IdeaModuleProps = IconProps;
+
+export const IdeaModule: FC<IdeaModuleProps> = createSpriteIcon({
+  name: 'file-types/idea-module',
+  viewBox: '0 0 16 16',
+  displayName: 'IdeaModule',
+});
+
+export type IdlProps = IconProps;
+
+export const Idl: FC<IdlProps> = createSpriteIcon({
+  name: 'file-types/idl',
+  viewBox: '0 0 16 16',
+  displayName: 'Idl',
+});
+
+export type IgnoredProps = IconProps;
+
+export const Ignored: FC<IgnoredProps> = createSpriteIcon({
+  name: 'file-types/ignored',
+  viewBox: '0 0 16 16',
+  displayName: 'Ignored',
+});
+
+export type ImageProps = IconProps;
+
+export const Image: FC<ImageProps> = createSpriteIcon({
+  name: 'file-types/image',
+  viewBox: '0 0 16 16',
+  displayName: 'Image',
+});
+
+export type JavaProps = IconProps;
+
+export const Java: FC<JavaProps> = createSpriteIcon({
+  name: 'file-types/java',
+  viewBox: '0 0 16 16',
+  displayName: 'Java',
+});
+
+export type JavaClassProps = IconProps;
+
+export const JavaClass: FC<JavaClassProps> = createSpriteIcon({
+  name: 'file-types/java-class',
+  viewBox: '0 0 16 16',
+  displayName: 'JavaClass',
+});
+
+export type JavaScriptProps = IconProps;
+
+export const JavaScript: FC<JavaScriptProps> = createSpriteIcon({
+  name: 'file-types/java-script',
+  viewBox: '0 0 16 16',
+  displayName: 'JavaScript',
+});
+
+export type JestProps = IconProps;
+
+export const Jest: FC<JestProps> = createSpriteIcon({
+  name: 'file-types/jest',
+  viewBox: '0 0 16 16',
+  displayName: 'Jest',
+});
+
+export type JfrProps = IconProps;
+
+export const Jfr: FC<JfrProps> = createSpriteIcon({
+  name: 'file-types/jfr',
+  viewBox: '0 0 16 16',
+  displayName: 'Jfr',
+});
+
+export type Jinja2Props = IconProps;
+
+export const Jinja2: FC<Jinja2Props> = createSpriteIcon({
+  name: 'file-types/jinja2',
+  viewBox: '0 0 16 16',
+  displayName: 'Jinja2',
+});
+
+export type JsConfigProps = IconProps;
+
+export const JsConfig: FC<JsConfigProps> = createSpriteIcon({
+  name: 'file-types/js-config',
+  viewBox: '0 0 16 16',
+  displayName: 'JsConfig',
+});
+
+export type JsDocClosureProps = IconProps;
+
+export const JsDocClosure: FC<JsDocClosureProps> = createSpriteIcon({
+  name: 'file-types/js-doc-closure',
+  viewBox: '0 0 16 16',
+  displayName: 'JsDocClosure',
+});
+
+export type JsonProps = IconProps;
+
+export const Json: FC<JsonProps> = createSpriteIcon({
+  name: 'file-types/json',
+  viewBox: '0 0 16 16',
+  displayName: 'Json',
+});
+
+export type JsonSchemaProps = IconProps;
+
+export const JsonSchema: FC<JsonSchemaProps> = createSpriteIcon({
+  name: 'file-types/json-schema',
+  viewBox: '0 0 16 16',
+  displayName: 'JsonSchema',
+});
+
+export type JspProps = IconProps;
+
+export const Jsp: FC<JspProps> = createSpriteIcon({
+  name: 'file-types/jsp',
+  viewBox: '0 0 16 16',
+  displayName: 'Jsp',
+});
+
+export type JspxProps = IconProps;
+
+export const Jspx: FC<JspxProps> = createSpriteIcon({
+  name: 'file-types/jspx',
+  viewBox: '0 0 16 16',
+  displayName: 'Jspx',
+});
+
+export type JupyterNotebookProps = IconProps;
+
+export const JupyterNotebook: FC<JupyterNotebookProps> = createSpriteIcon({
+  name: 'file-types/jupyter-notebook',
+  viewBox: '0 0 16 16',
+  displayName: 'JupyterNotebook',
+});
+
+export type KotlinProps = IconProps;
+
+export const Kotlin: FC<KotlinProps> = createSpriteIcon({
+  name: 'file-types/kotlin',
+  viewBox: '0 0 16 16',
+  displayName: 'Kotlin',
+});
+
+export type LessProps = IconProps;
+
+export const Less: FC<LessProps> = createSpriteIcon({
+  name: 'file-types/less',
+  viewBox: '0 0 16 16',
+  displayName: 'Less',
+});
+
+export type ManifestProps = IconProps;
+
+export const Manifest: FC<ManifestProps> = createSpriteIcon({
+  name: 'file-types/manifest',
+  viewBox: '0 0 16 16',
+  displayName: 'Manifest',
+});
+
+export type MarkdownProps = IconProps;
+
+export const Markdown: FC<MarkdownProps> = createSpriteIcon({
+  name: 'file-types/markdown',
+  viewBox: '0 0 16 16',
+  displayName: 'Markdown',
+});
+
+export type MavenProps = IconProps;
+
+export const Maven: FC<MavenProps> = createSpriteIcon({
+  name: 'file-types/maven',
+  viewBox: '0 0 16 16',
+  displayName: 'Maven',
+});
+
+export type MavenIgnoredProps = IconProps;
+
+export const MavenIgnored: FC<MavenIgnoredProps> = createSpriteIcon({
+  name: 'file-types/maven-ignored',
+  viewBox: '0 0 16 16',
+  displayName: 'MavenIgnored',
+});
+
+export type MicronautProps = IconProps;
+
+export const Micronaut: FC<MicronautProps> = createSpriteIcon({
+  name: 'file-types/micronaut',
+  viewBox: '0 0 16 16',
+  displayName: 'Micronaut',
+});
+
+export type MicrosoftWindowsProps = IconProps;
+
+export const MicrosoftWindows: FC<MicrosoftWindowsProps> = createSpriteIcon({
+  name: 'file-types/microsoft-windows',
+  viewBox: '0 0 16 16',
+  displayName: 'MicrosoftWindows',
+});
+
+export type ModifiedProps = IconProps;
+
+export const Modified: FC<ModifiedProps> = createSpriteIcon({
+  name: 'file-types/modified',
+  viewBox: '0 0 13 13',
+  displayName: 'Modified',
+});
+
+export type NextJsProps = IconProps;
+
+export const NextJs: FC<NextJsProps> = createSpriteIcon({
+  name: 'file-types/next-js',
+  viewBox: '0 0 16 16',
+  displayName: 'NextJs',
+});
+
+export type NodejsTestRunnerProps = IconProps;
+
+export const NodejsTestRunner: FC<NodejsTestRunnerProps> = createSpriteIcon({
+  name: 'file-types/nodejs-test-runner',
+  viewBox: '0 0 16 16',
+  displayName: 'NodejsTestRunner',
+});
+
+export type NumPyProps = IconProps;
+
+export const NumPy: FC<NumPyProps> = createSpriteIcon({
+  name: 'file-types/num-py',
+  viewBox: '0 0 16 16',
+  displayName: 'NumPy',
+});
+
+export type OpenRewriteProps = IconProps;
+
+export const OpenRewrite: FC<OpenRewriteProps> = createSpriteIcon({
+  name: 'file-types/open-rewrite',
+  viewBox: '0 0 16 16',
+  displayName: 'OpenRewrite',
+});
+
+export type OpenTofuProps = IconProps;
+
+export const OpenTofu: FC<OpenTofuProps> = createSpriteIcon({
+  name: 'file-types/open-tofu',
+  viewBox: '0 0 16 16',
+  displayName: 'OpenTofu',
+});
+
+export type PackageJsonProps = IconProps;
+
+export const PackageJson: FC<PackageJsonProps> = createSpriteIcon({
+  name: 'file-types/package-json',
+  viewBox: '0 0 16 16',
+  displayName: 'PackageJson',
+});
+
+export type PackageLockProps = IconProps;
+
+export const PackageLock: FC<PackageLockProps> = createSpriteIcon({
+  name: 'file-types/package-lock',
+  viewBox: '0 0 16 16',
+  displayName: 'PackageLock',
+});
+
+export type PandasProps = IconProps;
+
+export const Pandas: FC<PandasProps> = createSpriteIcon({
+  name: 'file-types/pandas',
+  viewBox: '0 0 16 16',
+  displayName: 'Pandas',
+});
+
+export type PatchProps = IconProps;
+
+export const Patch: FC<PatchProps> = createSpriteIcon({
+  name: 'file-types/patch',
+  viewBox: '0 0 16 16',
+  displayName: 'Patch',
+});
+
+export type PerlProps = IconProps;
+
+export const Perl: FC<PerlProps> = createSpriteIcon({
+  name: 'file-types/perl',
+  viewBox: '0 0 16 16',
+  displayName: 'Perl',
+});
+
+export type PnpmProps = IconProps;
+
+export const Pnpm: FC<PnpmProps> = createSpriteIcon({
+  name: 'file-types/pnpm',
+  viewBox: '0 0 16 16',
+  displayName: 'Pnpm',
+});
+
+export type PnpmLockProps = IconProps;
+
+export const PnpmLock: FC<PnpmLockProps> = createSpriteIcon({
+  name: 'file-types/pnpm-lock',
+  viewBox: '0 0 16 16',
+  displayName: 'PnpmLock',
+});
+
+export type PolarsProps = IconProps;
+
+export const Polars: FC<PolarsProps> = createSpriteIcon({
+  name: 'file-types/polars',
+  viewBox: '0 0 16 16',
+  displayName: 'Polars',
+});
+
+export type PrettierProps = IconProps;
+
+export const Prettier: FC<PrettierProps> = createSpriteIcon({
+  name: 'file-types/prettier',
+  viewBox: '0 0 16 16',
+  displayName: 'Prettier',
+});
+
+export type PropertiesProps = IconProps;
+
+export const Properties: FC<PropertiesProps> = createSpriteIcon({
+  name: 'file-types/properties',
+  viewBox: '0 0 16 16',
+  displayName: 'Properties',
+});
+
+export type ProtobufProps = IconProps;
+
+export const Protobuf: FC<ProtobufProps> = createSpriteIcon({
+  name: 'file-types/protobuf',
+  viewBox: '0 0 16 16',
+  displayName: 'Protobuf',
+});
+
+export type ProtoFileProps = IconProps;
+
+export const ProtoFile: FC<ProtoFileProps> = createSpriteIcon({
+  name: 'file-types/proto-file',
+  viewBox: '0 0 16 16',
+  displayName: 'ProtoFile',
+});
+
+export type ProtoMessageProps = IconProps;
+
+export const ProtoMessage: FC<ProtoMessageProps> = createSpriteIcon({
+  name: 'file-types/proto-message',
+  viewBox: '0 0 16 16',
+  displayName: 'ProtoMessage',
+});
+
+export type PythonProps = IconProps;
+
+export const Python: FC<PythonProps> = createSpriteIcon({
+  name: 'file-types/python',
+  viewBox: '0 0 16 16',
+  displayName: 'Python',
+});
+
+export type PyTorchProps = IconProps;
+
+export const PyTorch: FC<PyTorchProps> = createSpriteIcon({
+  name: 'file-types/py-torch',
+  viewBox: '0 0 16 16',
+  displayName: 'PyTorch',
+});
+
+export type QmlProps = IconProps;
+
+export const Qml: FC<QmlProps> = createSpriteIcon({
+  name: 'file-types/qml',
+  viewBox: '0 0 16 16',
+  displayName: 'Qml',
+});
+
+export type QrcProps = IconProps;
+
+export const Qrc: FC<QrcProps> = createSpriteIcon({
+  name: 'file-types/qrc',
+  viewBox: '0 0 16 16',
+  displayName: 'Qrc',
+});
+
+export type QtProps = IconProps;
+
+export const Qt: FC<QtProps> = createSpriteIcon({
+  name: 'file-types/qt',
+  viewBox: '0 0 16 16',
+  displayName: 'Qt',
+});
+
+export type QuatroProps = IconProps;
+
+export const Quatro: FC<QuatroProps> = createSpriteIcon({
+  name: 'file-types/quatro',
+  viewBox: '0 0 16 16',
+  displayName: 'Quatro',
+});
+
+export type ReactProps = IconProps;
+
+export const React: FC<ReactProps> = createSpriteIcon({
+  name: 'file-types/react',
+  viewBox: '0 0 16 16',
+  displayName: 'React',
+});
+
+export type ReactIconProps = IconProps;
+
+export const ReactIcon: FC<ReactIconProps> = createSpriteIcon({
+  name: 'file-types/react-icon',
+  viewBox: '0 0 16 16',
+  displayName: 'ReactIcon',
+});
+
+export type RedocProps = IconProps;
+
+export const Redoc: FC<RedocProps> = createSpriteIcon({
+  name: 'file-types/redoc',
+  viewBox: '0 0 16 16',
+  displayName: 'Redoc',
+});
+
+export type RegexpProps = IconProps;
+
+export const Regexp: FC<RegexpProps> = createSpriteIcon({
+  name: 'file-types/regexp',
+  viewBox: '0 0 16 16',
+  displayName: 'Regexp',
+});
+
+export type RstProps = IconProps;
+
+export const Rst: FC<RstProps> = createSpriteIcon({
+  name: 'file-types/rst',
+  viewBox: '0 0 16 16',
+  displayName: 'Rst',
+});
+
+export type SarifProps = IconProps;
+
+export const Sarif: FC<SarifProps> = createSpriteIcon({
+  name: 'file-types/sarif',
+  viewBox: '0 0 16 16',
+  displayName: 'Sarif',
+});
+
+export type SassProps = IconProps;
+
+export const Sass: FC<SassProps> = createSpriteIcon({
+  name: 'file-types/sass',
+  viewBox: '0 0 16 16',
+  displayName: 'Sass',
+});
+
+export type ScalaProps = IconProps;
+
+export const Scala: FC<ScalaProps> = createSpriteIcon({
+  name: 'file-types/scala',
+  viewBox: '0 0 16 16',
+  displayName: 'Scala',
+});
+
+export type ScratchProps = IconProps;
+
+export const Scratch: FC<ScratchProps> = createSpriteIcon({
+  name: 'file-types/scratch',
+  viewBox: '0 0 16 16',
+  displayName: 'Scratch',
+});
+
+export type ScratchesProps = IconProps;
+
+export const Scratches: FC<ScratchesProps> = createSpriteIcon({
+  name: 'file-types/scratches',
+  viewBox: '0 0 16 16',
+  displayName: 'Scratches',
+});
+
+export type ScssProps = IconProps;
+
+export const Scss: FC<ScssProps> = createSpriteIcon({
+  name: 'file-types/scss',
+  viewBox: '0 0 16 16',
+  displayName: 'Scss',
+});
+
+export type ShellProps = IconProps;
+
+export const Shell: FC<ShellProps> = createSpriteIcon({
+  name: 'file-types/shell',
+  viewBox: '0 0 16 16',
+  displayName: 'Shell',
+});
+
+export type SourceMapProps = IconProps;
+
+export const SourceMap: FC<SourceMapProps> = createSpriteIcon({
+  name: 'file-types/source-map',
+  viewBox: '0 0 16 16',
+  displayName: 'SourceMap',
+});
+
+export type SqlProps = IconProps;
+
+export const Sql: FC<SqlProps> = createSpriteIcon({
+  name: 'file-types/sql',
+  viewBox: '0 0 16 16',
+  displayName: 'Sql',
+});
+
+export type SvelteProps = IconProps;
+
+export const Svelte: FC<SvelteProps> = createSpriteIcon({
+  name: 'file-types/svelte',
+  viewBox: '0 0 16 16',
+  displayName: 'Svelte',
+});
+
+export type TeamCityProps = IconProps;
+
+export const TeamCity: FC<TeamCityProps> = createSpriteIcon({
+  name: 'file-types/team-city',
+  viewBox: '0 0 16 16',
+  displayName: 'TeamCity',
+});
+
+export type TensorFlowProps = IconProps;
+
+export const TensorFlow: FC<TensorFlowProps> = createSpriteIcon({
+  name: 'file-types/tensor-flow',
+  viewBox: '0 0 16 16',
+  displayName: 'TensorFlow',
+});
+
+export type TerraformProps = IconProps;
+
+export const Terraform: FC<TerraformProps> = createSpriteIcon({
+  name: 'file-types/terraform',
+  viewBox: '0 0 16 16',
+  displayName: 'Terraform',
+});
+
+export type TextProps = IconProps;
+
+export const Text: FC<TextProps> = createSpriteIcon({
+  name: 'file-types/text',
+  viewBox: '0 0 16 16',
+  displayName: 'Text',
+});
+
+export type TsConfigProps = IconProps;
+
+export const TsConfig: FC<TsConfigProps> = createSpriteIcon({
+  name: 'file-types/ts-config',
+  viewBox: '0 0 16 16',
+  displayName: 'TsConfig',
+});
+
+export type TsDocProps = IconProps;
+
+export const TsDoc: FC<TsDocProps> = createSpriteIcon({
+  name: 'file-types/ts-doc',
+  viewBox: '0 0 16 16',
+  displayName: 'TsDoc',
+});
+
+export type UiFormProps = IconProps;
+
+export const UiForm: FC<UiFormProps> = createSpriteIcon({
+  name: 'file-types/ui-form',
+  viewBox: '0 0 16 16',
+  displayName: 'UiForm',
+});
+
+export type UnknownProps = IconProps;
+
+export const Unknown: FC<UnknownProps> = createSpriteIcon({
+  name: 'file-types/unknown',
+  viewBox: '0 0 16 16',
+  displayName: 'Unknown',
+});
+
+export type ViteJsProps = IconProps;
+
+export const ViteJs: FC<ViteJsProps> = createSpriteIcon({
+  name: 'file-types/vite-js',
+  viewBox: { light: '0 0 16 16', dark: '0 0 16 17' },
+  displayName: 'ViteJs',
+});
+
+export type VitestProps = IconProps;
+
+export const Vitest: FC<VitestProps> = createSpriteIcon({
+  name: 'file-types/vitest',
+  viewBox: '0 0 16 16',
+  displayName: 'Vitest',
+});
+
+export type VueJsProps = IconProps;
+
+export const VueJs: FC<VueJsProps> = createSpriteIcon({
+  name: 'file-types/vue-js',
+  viewBox: '0 0 16 16',
+  displayName: 'VueJs',
+});
+
+export type WorkspaceProps = IconProps;
+
+export const Workspace: FC<WorkspaceProps> = createSpriteIcon({
+  name: 'file-types/workspace',
+  viewBox: '0 0 16 16',
+  displayName: 'Workspace',
+});
+
+export type WsdlProps = IconProps;
+
+export const Wsdl: FC<WsdlProps> = createSpriteIcon({
+  name: 'file-types/wsdl',
+  viewBox: '0 0 16 16',
+  displayName: 'Wsdl',
+});
+
+export type XhtmlProps = IconProps;
+
+export const Xhtml: FC<XhtmlProps> = createSpriteIcon({
+  name: 'file-types/xhtml',
+  viewBox: '0 0 16 16',
+  displayName: 'Xhtml',
+});
+
+export type XmlProps = IconProps;
+
+export const Xml: FC<XmlProps> = createSpriteIcon({
+  name: 'file-types/xml',
+  viewBox: '0 0 16 16',
+  displayName: 'Xml',
+});
+
+export type XpathProps = IconProps;
+
+export const Xpath: FC<XpathProps> = createSpriteIcon({
+  name: 'file-types/xpath',
+  viewBox: '0 0 16 16',
+  displayName: 'Xpath',
+});
+
+export type XsdProps = IconProps;
+
+export const Xsd: FC<XsdProps> = createSpriteIcon({
+  name: 'file-types/xsd',
+  viewBox: '0 0 16 16',
+  displayName: 'Xsd',
+});
+
+export type XslProps = IconProps;
+
+export const Xsl: FC<XslProps> = createSpriteIcon({
+  name: 'file-types/xsl',
+  viewBox: '0 0 16 16',
+  displayName: 'Xsl',
+});
+
+export type YamlProps = IconProps;
+
+export const Yaml: FC<YamlProps> = createSpriteIcon({
+  name: 'file-types/yaml',
+  viewBox: '0 0 16 16',
+  displayName: 'Yaml',
+});
+
+export type YarnProps = IconProps;
+
+export const Yarn: FC<YarnProps> = createSpriteIcon({
+  name: 'file-types/yarn',
+  viewBox: '0 0 16 16',
+  displayName: 'Yarn',
+});
+
+export type YarnLockProps = IconProps;
+
+export const YarnLock: FC<YarnLockProps> = createSpriteIcon({
+  name: 'file-types/yarn-lock',
+  viewBox: '0 0 16 16',
+  displayName: 'YarnLock',
+});
+
 export { iconNames } from './types';
 export type { IconName, IconMode, IconProps, IconSize } from './types';

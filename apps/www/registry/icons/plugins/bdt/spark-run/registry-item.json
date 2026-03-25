@@ -5,13 +5,19 @@
   "title": "Spark Run",
   "description": "Spark Run icon from Plugins Bdt category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/bdt/spark-run/index.tsx",
+      "path": "registry/icons/plugins/bdt/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/spark-run/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/bdt/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

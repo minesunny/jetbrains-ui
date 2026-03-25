@@ -5,7 +5,8 @@
   "title": "Plugins Databricks Icons",
   "description": "All 1 icons from the Plugins Databricks category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,9 +15,9 @@
       "target": "components/jetbrains-ui/icons/plugins/databricks/index.ts"
     },
     {
-      "path": "registry/icons/plugins/databricks/run-as-workflow/index.tsx",
+      "path": "public/icons/plugins.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/databricks/run-as-workflow/index.tsx"
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

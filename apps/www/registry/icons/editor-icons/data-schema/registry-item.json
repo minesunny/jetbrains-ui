@@ -5,13 +5,19 @@
   "title": "Data Schema",
   "description": "Data Schema icon from Editor Icons category.",
   "registryDependencies": [
-    "icons-editor-icons-types"
+    "icons-editor-icons-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/editor-icons/data-schema/index.tsx",
+      "path": "registry/icons/editor-icons/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/editor-icons/data-schema/index.tsx"
+      "target": "components/jetbrains-ui/icons/editor-icons/index.ts"
+    },
+    {
+      "path": "public/icons/editor-icons.svg",
+      "type": "registry:ui",
+      "target": "public/icons/editor-icons.svg"
     }
   ],
   "meta": {

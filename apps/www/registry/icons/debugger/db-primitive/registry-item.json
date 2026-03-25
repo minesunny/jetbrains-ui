@@ -5,13 +5,19 @@
   "title": "Db Primitive",
   "description": "Db Primitive icon from Debugger category.",
   "registryDependencies": [
-    "icons-debugger-types"
+    "icons-debugger-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/debugger/db-primitive/index.tsx",
+      "path": "registry/icons/debugger/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/db-primitive/index.tsx"
+      "target": "components/jetbrains-ui/icons/debugger/index.ts"
+    },
+    {
+      "path": "public/icons/debugger.svg",
+      "type": "registry:ui",
+      "target": "public/icons/debugger.svg"
     }
   ],
   "meta": {

@@ -5,13 +5,19 @@
   "title": "Full Line Completion Outline",
   "description": "Full Line Completion Outline icon from Plugins Full Line Completion category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/full-line-completion/full-line-completion-outline/index.tsx",
+      "path": "registry/icons/plugins/full-line-completion/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/full-line-completion/full-line-completion-outline/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/full-line-completion/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

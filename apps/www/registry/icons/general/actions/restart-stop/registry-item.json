@@ -5,13 +5,19 @@
   "title": "Restart Stop",
   "description": "Restart Stop icon from General Actions category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/actions/restart-stop/index.tsx",
+      "path": "registry/icons/general/actions/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/actions/restart-stop/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/actions/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

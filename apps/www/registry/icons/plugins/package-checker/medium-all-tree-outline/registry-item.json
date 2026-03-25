@@ -5,13 +5,19 @@
   "title": "Medium All Tree Outline",
   "description": "Medium All Tree Outline icon from Plugins Package Checker category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/package-checker/medium-all-tree-outline/index.tsx",
+      "path": "registry/icons/plugins/package-checker/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/medium-all-tree-outline/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

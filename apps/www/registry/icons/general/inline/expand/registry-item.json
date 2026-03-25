@@ -5,13 +5,19 @@
   "title": "Expand",
   "description": "Expand icon from General Inline category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/inline/expand/index.tsx",
+      "path": "registry/icons/general/inline/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/expand/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/inline/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

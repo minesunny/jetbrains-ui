@@ -5,13 +5,19 @@
   "title": "Filter History",
   "description": "Filter History icon from General Inline category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/inline/filter-history/index.tsx",
+      "path": "registry/icons/general/inline/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/filter-history/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/inline/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

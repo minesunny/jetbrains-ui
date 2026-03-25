@@ -5,13 +5,19 @@
   "title": "View Parameters",
   "description": "View Parameters icon from Database category.",
   "registryDependencies": [
-    "icons-database-types"
+    "icons-database-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/database/view-parameters/index.tsx",
+      "path": "registry/icons/database/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/view-parameters/index.tsx"
+      "target": "components/jetbrains-ui/icons/database/index.ts"
+    },
+    {
+      "path": "public/icons/database.svg",
+      "type": "registry:ui",
+      "target": "public/icons/database.svg"
     }
   ],
   "meta": {

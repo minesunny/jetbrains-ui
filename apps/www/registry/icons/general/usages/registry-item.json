@@ -5,7 +5,8 @@
   "title": "General Usages Icons",
   "description": "All 4 icons from the General Usages category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,24 +15,9 @@
       "target": "components/jetbrains-ui/icons/general/usages/index.ts"
     },
     {
-      "path": "registry/icons/general/usages/filterdups/index.tsx",
+      "path": "public/icons/general.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/usages/filterdups/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/usages/show-import-statements/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/usages/show-import-statements/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/usages/show-read-access/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/usages/show-read-access/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/usages/show-write-access/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/usages/show-write-access/index.tsx"
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

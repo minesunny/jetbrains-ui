@@ -5,7 +5,8 @@
   "title": "Plugins Bazel Icons",
   "description": "All 7 icons from the Plugins Bazel category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,39 +15,9 @@
       "target": "components/jetbrains-ui/icons/plugins/bazel/index.ts"
     },
     {
-      "path": "registry/icons/plugins/bazel/bazel/index.tsx",
+      "path": "public/icons/plugins.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bazel/bazel-config/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-config/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bazel/bazel-error/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-error/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bazel/bazel-reload/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-reload/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bazel/bazel-target/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-target/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bazel/bazel-warning/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bazel/bazel-warning/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bazel/build-and-reload/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bazel/build-and-reload/index.tsx"
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

@@ -5,20 +5,25 @@
   "title": "Sort By Visibility",
   "description": "Sort By Visibility icon from General General category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/general/sort-by-visibility/index.tsx",
+      "path": "registry/icons/general/general/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/sort-by-visibility/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/general/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {
     "keywords": [
       "sort-by-visibility",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -5,13 +5,19 @@
   "title": "Module8x8",
   "description": "Module8x8 icon from Nodes category.",
   "registryDependencies": [
-    "icons-nodes-types"
+    "icons-nodes-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/nodes/module8x8/index.tsx",
+      "path": "registry/icons/nodes/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/module8x8/index.tsx"
+      "target": "components/jetbrains-ui/icons/nodes/index.ts"
+    },
+    {
+      "path": "public/icons/nodes.svg",
+      "type": "registry:ui",
+      "target": "public/icons/nodes.svg"
     }
   ],
   "meta": {

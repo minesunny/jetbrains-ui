@@ -5,7 +5,8 @@
   "title": "General Duplicates Icons",
   "description": "All 4 icons from the General Duplicates category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,24 +15,9 @@
       "target": "components/jetbrains-ui/icons/general/duplicates/index.ts"
     },
     {
-      "path": "registry/icons/general/duplicates/send-to-the-left/index.tsx",
+      "path": "public/icons/general.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/duplicates/send-to-the-left-grayed/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left-grayed/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/duplicates/send-to-the-right/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-right/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/duplicates/send-to-the-right-grayed/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-right-grayed/index.tsx"
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

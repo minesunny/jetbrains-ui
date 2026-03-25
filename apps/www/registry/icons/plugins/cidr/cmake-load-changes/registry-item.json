@@ -5,13 +5,19 @@
   "title": "Cmake Load Changes",
   "description": "Cmake Load Changes icon from Plugins Cidr category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/cidr/cmake-load-changes/index.tsx",
+      "path": "registry/icons/plugins/cidr/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/cidr/cmake-load-changes/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/cidr/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

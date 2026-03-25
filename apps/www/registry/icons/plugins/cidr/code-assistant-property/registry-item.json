@@ -5,13 +5,19 @@
   "title": "Code Assistant Property",
   "description": "Code Assistant Property icon from Plugins Cidr category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/cidr/code-assistant-property/index.tsx",
+      "path": "registry/icons/plugins/cidr/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/cidr/code-assistant-property/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/cidr/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

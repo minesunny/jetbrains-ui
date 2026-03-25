@@ -5,13 +5,19 @@
   "title": "Build And Reload",
   "description": "Build And Reload icon from Plugins Bazel category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/bazel/build-and-reload/index.tsx",
+      "path": "registry/icons/plugins/bazel/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bazel/build-and-reload/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/bazel/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

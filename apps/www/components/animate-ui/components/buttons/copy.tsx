@@ -3,7 +3,10 @@
 import * as React from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { AnimatePresence, motion } from 'motion/react';
-import { CheckIcon, CopyIcon } from 'lucide-react';
+import {
+  CheckIcon,
+  CopyIcon,
+} from '@workspace/ui/components/icons/system-icons';
 
 import {
   Button as ButtonPrimitive,

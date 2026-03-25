@@ -5,13 +5,19 @@
   "title": "Scala16",
   "description": "Scala16 icon from Plugins Scala category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/scala/scala16/index.tsx",
+      "path": "registry/icons/plugins/scala/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/scala/scala16/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/scala/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

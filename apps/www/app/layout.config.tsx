@@ -1,5 +1,5 @@
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
-import { BookOpen } from 'lucide-react';
+import { BookOpen } from '@workspace/ui/components/icons/system-icons';
 import { getMessages, type Locale } from '@/lib/i18n/shared';
 
 /**

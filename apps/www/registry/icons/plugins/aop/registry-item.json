@@ -5,7 +5,8 @@
   "title": "Plugins Aop Icons",
   "description": "All 9 icons from the Plugins Aop category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,49 +15,9 @@
       "target": "components/jetbrains-ui/icons/plugins/aop/index.ts"
     },
     {
-      "path": "registry/icons/plugins/aop/abstract-advice/index.tsx",
+      "path": "public/icons/plugins.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/aop/abstract-advice/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/aop/after-advice/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/aop/after-advice/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/aop/after-returning-advice/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/aop/after-returning-advice/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/aop/after-throwing-advice/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/aop/after-throwing-advice/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/aop/around-advice/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/aop/around-advice/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/aop/before-advice/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/aop/before-advice/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/aop/from-arrow/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/aop/from-arrow/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/aop/pointcut/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/aop/pointcut/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/aop/to-arrow/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/aop/to-arrow/index.tsx"
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

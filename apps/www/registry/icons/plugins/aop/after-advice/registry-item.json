@@ -5,13 +5,19 @@
   "title": "After Advice",
   "description": "After Advice icon from Plugins Aop category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/aop/after-advice/index.tsx",
+      "path": "registry/icons/plugins/aop/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/aop/after-advice/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/aop/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

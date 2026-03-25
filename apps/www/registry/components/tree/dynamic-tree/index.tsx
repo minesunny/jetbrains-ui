@@ -11,11 +11,7 @@ import {
   ContextMenuSeparator,
   ContextMenuTrigger,
 } from '@/registry/components/context-menu';
-import {
-  ChevronDownIcon,
-  ChevronRightIcon,
-  LoaderIcon,
-} from '@/registry/components/icons';
+import { General } from '@/registry/components/icons';
 import { ScrollArea, ScrollViewport } from '@/registry/components/scroll-area';
 import './index.css';
 
@@ -319,14 +315,26 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
             disabled={Boolean((item.getItemData() as TItem | null)?.disabled)}
           >
             {item.isLoading() ? (
-              <LoaderIcon
-                className="size-4 [animation-duration:900ms]"
-                size={16}
+              <General
+                name="spinner/loader"
+                className="size-4 animate-spin [animation-duration:900ms]"
+                width={16}
+                height={16}
               />
             ) : item.isExpanded() ? (
-              <ChevronDownIcon className="size-4 scale-[0.78]" size={16} />
+              <General
+                name="general/chevron-down"
+                className="size-4 scale-[0.78]"
+                width={16}
+                height={16}
+              />
             ) : (
-              <ChevronRightIcon className="size-4 scale-[0.78]" size={16} />
+              <General
+                name="general/chevron-right"
+                className="size-4 scale-[0.78]"
+                width={16}
+                height={16}
+              />
             )}
           </button>
         ) : (

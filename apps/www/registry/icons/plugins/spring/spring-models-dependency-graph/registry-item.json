@@ -5,13 +5,19 @@
   "title": "Spring Models Dependency Graph",
   "description": "Spring Models Dependency Graph icon from Plugins Spring category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/spring/spring-models-dependency-graph/index.tsx",
+      "path": "registry/icons/plugins/spring/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/spring/spring-models-dependency-graph/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/spring/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

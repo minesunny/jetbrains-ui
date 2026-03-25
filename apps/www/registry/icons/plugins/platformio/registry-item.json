@@ -5,7 +5,8 @@
   "title": "Plugins Platformio Icons",
   "description": "All 6 icons from the Plugins Platformio category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,34 +15,9 @@
       "target": "components/jetbrains-ui/icons/plugins/platformio/index.ts"
     },
     {
-      "path": "registry/icons/plugins/platformio/clean/index.tsx",
+      "path": "public/icons/plugins.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/platformio/clean/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/platformio/component-vendor/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/platformio/component-vendor/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/platformio/electronic-board/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/platformio/electronic-board/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/platformio/mod-platform-io/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/platformio/mod-platform-io/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/platformio/platform-io/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/platformio/platform-io/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/platformio/software-framework/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/platformio/software-framework/index.tsx"
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

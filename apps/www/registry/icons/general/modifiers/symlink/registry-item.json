@@ -5,13 +5,19 @@
   "title": "Symlink",
   "description": "Symlink icon from General Modifiers category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/modifiers/symlink/index.tsx",
+      "path": "registry/icons/general/modifiers/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/modifiers/symlink/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/modifiers/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

@@ -4,12 +4,15 @@
   "type": "registry:ui",
   "title": "Tree",
   "description": "JetBrains-style tree view component with selectable and expandable items.",
-  "dependencies": ["@headless-tree/core", "@headless-tree/react"],
+  "dependencies": [
+    "@headless-tree/core",
+    "@headless-tree/react"
+  ],
   "registryDependencies": [
     "utils",
-    "icons-components",
     "scroll-area",
-    "context-menu"
+    "context-menu",
+    "icons-components"
   ],
   "files": [
     {

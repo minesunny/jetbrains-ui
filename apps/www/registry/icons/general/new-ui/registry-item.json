@@ -5,7 +5,8 @@
   "title": "General New Ui Icons",
   "description": "All 6 icons from the General New Ui category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,34 +15,9 @@
       "target": "components/jetbrains-ui/icons/general/new-ui/index.ts"
     },
     {
-      "path": "registry/icons/general/new-ui/dark-theme/index.tsx",
+      "path": "public/icons/general.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/new-ui/dark-theme/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/new-ui/dark-theme-selected/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/new-ui/dark-theme-selected/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/new-ui/light-theme/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/new-ui/light-theme/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/new-ui/light-theme-selected/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/new-ui/light-theme-selected/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/new-ui/system-theme/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/new-ui/system-theme/index.tsx"
-    },
-    {
-      "path": "registry/icons/general/new-ui/system-theme-selected/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/new-ui/system-theme-selected/index.tsx"
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

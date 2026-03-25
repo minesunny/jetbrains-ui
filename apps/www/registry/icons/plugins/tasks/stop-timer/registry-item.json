@@ -5,13 +5,19 @@
   "title": "Stop Timer",
   "description": "Stop Timer icon from Plugins Tasks category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/tasks/stop-timer/index.tsx",
+      "path": "registry/icons/plugins/tasks/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/tasks/stop-timer/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/tasks/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

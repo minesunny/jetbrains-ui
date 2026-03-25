@@ -5,13 +5,19 @@
   "title": "Kill Process",
   "description": "Kill Process icon from Run category.",
   "registryDependencies": [
-    "icons-run-types"
+    "icons-run-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/run/kill-process/index.tsx",
+      "path": "registry/icons/run/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run/kill-process/index.tsx"
+      "target": "components/jetbrains-ui/icons/run/index.ts"
+    },
+    {
+      "path": "public/icons/run.svg",
+      "type": "registry:ui",
+      "target": "public/icons/run.svg"
     }
   ],
   "meta": {

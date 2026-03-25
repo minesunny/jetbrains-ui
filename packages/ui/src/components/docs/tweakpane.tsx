@@ -18,8 +18,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@workspace/ui/components/ui/select';
+import { ChevronsUpDown } from '@workspace/ui/components/icons/system-icons';
 import { Switch } from '@workspace/ui/components/ui/switch';
-import { ChevronsUpDown } from 'lucide-react';
 
 type BaseBindNumber = { value: number };
 type BindNumberSlider = BaseBindNumber & {

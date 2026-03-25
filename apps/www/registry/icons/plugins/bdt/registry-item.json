@@ -5,7 +5,8 @@
   "title": "Plugins Bdt Icons",
   "description": "All 18 icons from the Plugins Bdt category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,94 +15,9 @@
       "target": "components/jetbrains-ui/icons/plugins/bdt/index.ts"
     },
     {
-      "path": "registry/icons/plugins/bdt/arbitrary-cluster/index.tsx",
+      "path": "public/icons/plugins.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/arbitrary-cluster/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/aws-glue/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/aws-glue/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/chart-area/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-area/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/chart-area-range/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-area-range/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/chart-bar/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-bar/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/chart-bubble/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-bubble/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/chart-histogram/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-histogram/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/chart-line/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-line/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/chart-pie/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-pie/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/chart-scatter/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-scatter/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/chart-stock/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/chart-stock/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/cluster/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/cluster/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/dbt-utility/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/dbt-utility/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/flink/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/flink/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/py-spark/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/py-spark/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/remote-file-systems/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/remote-file-systems/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/spark-run/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/spark-run/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/bdt/zeppelin/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/zeppelin/index.tsx"
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

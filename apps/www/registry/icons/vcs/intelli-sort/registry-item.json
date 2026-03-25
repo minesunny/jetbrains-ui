@@ -5,13 +5,19 @@
   "title": "Intelli Sort",
   "description": "Intelli Sort icon from Vcs category.",
   "registryDependencies": [
-    "icons-vcs-types"
+    "icons-vcs-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/vcs/intelli-sort/index.tsx",
+      "path": "registry/icons/vcs/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/intelli-sort/index.tsx"
+      "target": "components/jetbrains-ui/icons/vcs/index.ts"
+    },
+    {
+      "path": "public/icons/vcs.svg",
+      "type": "registry:ui",
+      "target": "public/icons/vcs.svg"
     }
   ],
   "meta": {

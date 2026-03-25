@@ -9,8 +9,8 @@ import {
   TabsTrigger,
   TabsContents,
 } from '@/components/radix/tabs';
+import { Loader } from '@workspace/ui/components/icons/system-icons';
 import { cn } from '@workspace/ui/lib/utils';
-import { Loader } from 'lucide-react';
 import { Suspense, useEffect, useMemo, useState } from 'react';
 import { DynamicCodeBlock } from '@/components/docs/dynamic-codeblock';
 import ReactIcon from '@workspace/ui/components/icons/react-icon';

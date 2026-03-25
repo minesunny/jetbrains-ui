@@ -5,13 +5,19 @@
   "title": "Loader",
   "description": "Loader icon from General Spinner category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/spinner/loader/index.tsx",
+      "path": "registry/icons/general/spinner/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/spinner/loader/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/spinner/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

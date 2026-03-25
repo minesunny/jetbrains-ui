@@ -5,13 +5,19 @@
   "title": "System Theme Selected",
   "description": "System Theme Selected icon from General New Ui category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/new-ui/system-theme-selected/index.tsx",
+      "path": "registry/icons/general/new-ui/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/new-ui/system-theme-selected/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/new-ui/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

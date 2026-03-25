@@ -5,13 +5,19 @@
   "title": "Remote Changes",
   "description": "Remote Changes icon from General Setting Sync category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/setting-sync/remote-changes/index.tsx",
+      "path": "registry/icons/general/setting-sync/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/setting-sync/remote-changes/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/setting-sync/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

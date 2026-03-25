@@ -5,13 +5,19 @@
   "title": "Generated Test Root",
   "description": "Generated Test Root icon from Nodes category.",
   "registryDependencies": [
-    "icons-nodes-types"
+    "icons-nodes-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/nodes/generated-test-root/index.tsx",
+      "path": "registry/icons/nodes/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/generated-test-root/index.tsx"
+      "target": "components/jetbrains-ui/icons/nodes/index.ts"
+    },
+    {
+      "path": "public/icons/nodes.svg",
+      "type": "registry:ui",
+      "target": "public/icons/nodes.svg"
     }
   ],
   "meta": {

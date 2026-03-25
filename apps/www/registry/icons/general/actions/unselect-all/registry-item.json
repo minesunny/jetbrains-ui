@@ -5,13 +5,19 @@
   "title": "Unselect All",
   "description": "Unselect All icon from General Actions category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/actions/unselect-all/index.tsx",
+      "path": "registry/icons/general/actions/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/actions/unselect-all/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/actions/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

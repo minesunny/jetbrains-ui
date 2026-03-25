@@ -5,13 +5,19 @@
   "title": "Makefile Tool Window",
   "description": "Makefile Tool Window icon from General Tool Windows category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/tool-windows/makefile-tool-window/index.tsx",
+      "path": "registry/icons/general/tool-windows/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/tool-windows/makefile-tool-window/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/tool-windows/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

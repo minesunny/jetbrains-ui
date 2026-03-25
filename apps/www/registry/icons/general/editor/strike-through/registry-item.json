@@ -5,13 +5,19 @@
   "title": "Strike Through",
   "description": "Strike Through icon from General Editor category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/editor/strike-through/index.tsx",
+      "path": "registry/icons/general/editor/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/editor/strike-through/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/editor/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

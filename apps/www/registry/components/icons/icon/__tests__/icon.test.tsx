@@ -1,151 +1,113 @@
 import { render } from '@testing-library/react';
-import { Icon, ThemedIcon } from '../index';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-describe('Icon', () => {
+import {
+  Icon,
+  SVG,
+  ThemedIcon,
+  normalizeIconPath,
+  resolveSpriteHref,
+} from '../index';
+
+let resolvedTheme: 'light' | 'dark' = 'light';
+
+vi.mock('next-themes', () => ({
+  useTheme: () => ({
+    resolvedTheme,
+  }),
+}));
+
+describe('SVG', () => {
+  beforeEach(() => {
+    resolvedTheme = 'light';
+  });
+
   it('renders an svg element', () => {
-    const { container } = render(<Icon name="feedback" />);
-    const svg = container.querySelector('svg');
-    expect(svg).toBeInTheDocument();
+    const { container } = render(<SVG name="breakpoints/breakpoint" />);
+    expect(container.querySelector('svg')).toBeInTheDocument();
   });
 
-  it('renders use element with correct href for light theme', () => {
-    const { container } = render(<Icon name="feedback" />);
+  it('uses the top category sprite path', () => {
+    const { container } = render(<SVG name="general/actions/add-file" />);
     const use = container.querySelector('use');
-    expect(use).toHaveAttribute(
-      'href',
-      '/icons/general.svg#icon-feedback-light',
+
+    expect(use).toHaveAttribute('href', '/icons/general.svg#add-file_light');
+  });
+
+  it('uses the resolved dark theme', () => {
+    resolvedTheme = 'dark';
+
+    const { container } = render(<SVG name="plugins/ruby/rhtml" />);
+    const use = container.querySelector('use');
+
+    expect(use).toHaveAttribute('href', '/icons/plugins.svg#rhtml_dark');
+  });
+
+  it('defaults width and height to 1em', () => {
+    const { container } = render(<SVG name="breakpoints/breakpoint" />);
+    const svg = container.querySelector('svg');
+
+    expect(svg).toHaveAttribute('width', '1em');
+    expect(svg).toHaveAttribute('height', '1em');
+  });
+
+  it('passes width, height and className through', () => {
+    const { container } = render(
+      <SVG
+        name="general/tool-windows/feedback"
+        width="16px"
+        height="20px"
+        className="my-icon"
+      />,
     );
+    const svg = container.querySelector('svg');
+
+    expect(svg).toHaveAttribute('width', '16px');
+    expect(svg).toHaveAttribute('height', '20px');
+    expect(svg).toHaveClass('my-icon');
   });
 
-  it('renders use element with correct href for dark theme', () => {
-    const { container } = render(<Icon name="feedback" theme="dark" />);
-    const use = container.querySelector('use');
-    expect(use).toHaveAttribute(
-      'href',
-      '/icons/general.svg#icon-feedback-dark',
+  it('returns null for an invalid icon path', () => {
+    const { container } = render(<SVG name="feedback" />);
+    expect(container.firstChild).toBeNull();
+  });
+});
+
+describe('compatibility exports', () => {
+  beforeEach(() => {
+    resolvedTheme = 'light';
+  });
+
+  it('renders Icon with size', () => {
+    const { container } = render(
+      <Icon name="breakpoints/breakpoint" size={24} />,
     );
-  });
-
-  it('defaults to light theme', () => {
-    const { container } = render(<Icon name="add" />);
-    const use = container.querySelector('use');
-    expect(use).toHaveAttribute('href', '/icons/general.svg#icon-add-light');
-  });
-
-  it('defaults to size 16', () => {
-    const { container } = render(<Icon name="add" />);
     const svg = container.querySelector('svg');
-    expect(svg).toHaveAttribute('width', '16');
-    expect(svg).toHaveAttribute('height', '16');
-  });
 
-  it('supports custom size', () => {
-    const { container } = render(<Icon name="add" size={24} />);
-    const svg = container.querySelector('svg');
     expect(svg).toHaveAttribute('width', '24');
     expect(svg).toHaveAttribute('height', '24');
   });
 
-  it('passes className through', () => {
-    const { container } = render(<Icon name="add" className="my-icon" />);
-    const svg = container.querySelector('svg');
-    expect(svg).toHaveClass('my-icon');
-  });
-
-  it('lowercases camelCase name (toLowerCase runs before regex)', () => {
-    // The implementation calls .toLowerCase() first, so 'graphQl' becomes 'graphql'
-    // and the camelCase regex (/([a-z])([A-Z])/) no longer matches
-    const { container } = render(<Icon name="graphQl" />);
-    const use = container.querySelector('use');
-    expect(use).toHaveAttribute(
-      'href',
-      '/icons/general.svg#icon-graphql-light',
-    );
-  });
-
-  it('normalizes name with spaces to kebab-case', () => {
-    const { container } = render(<Icon name="my icon name" />);
-    const use = container.querySelector('use');
-    expect(use).toHaveAttribute(
-      'href',
-      '/icons/general.svg#icon-my-icon-name-light',
-    );
-  });
-
-  it('normalizes name with underscores to kebab-case', () => {
-    const { container } = render(<Icon name="my_icon_name" />);
-    const use = container.querySelector('use');
-    expect(use).toHaveAttribute(
-      'href',
-      '/icons/general.svg#icon-my-icon-name-light',
-    );
-  });
-
-  it('removes special characters from name', () => {
-    const { container } = render(<Icon name="icon@v2!" />);
-    const use = container.querySelector('use');
-    expect(use).toHaveAttribute('href', '/icons/general.svg#icon-iconv2-light');
-  });
-
-  it('collapses multiple hyphens', () => {
-    const { container } = render(<Icon name="my--icon" />);
-    const use = container.querySelector('use');
-    expect(use).toHaveAttribute(
-      'href',
-      '/icons/general.svg#icon-my-icon-light',
-    );
-  });
-
-  it('forwards additional SVG props', () => {
+  it('renders ThemedIcon with the explicit theme', () => {
     const { container } = render(
-      <Icon name="add" data-testid="my-svg" aria-hidden="true" />,
+      <ThemedIcon name="plugins/ruby/rhtml" currentTheme="dark" />,
     );
-    const svg = container.querySelector('svg');
-    expect(svg).toHaveAttribute('data-testid', 'my-svg');
-    expect(svg).toHaveAttribute('aria-hidden', 'true');
-  });
+    const use = container.querySelector('use');
 
-  it('sets correct viewBox', () => {
-    const { container } = render(<Icon name="add" />);
-    const svg = container.querySelector('svg');
-    expect(svg).toHaveAttribute('viewBox', '0 0 88 44');
+    expect(use).toHaveAttribute('href', '/icons/plugins.svg#rhtml_dark');
   });
 });
 
-describe('ThemedIcon', () => {
-  it('renders with light theme', () => {
-    const { container } = render(
-      <ThemedIcon name="feedback" currentTheme="light" />,
-    );
-    const use = container.querySelector('use');
-    expect(use).toHaveAttribute(
-      'href',
-      '/icons/general.svg#icon-feedback-light',
+describe('helpers', () => {
+  it('normalizes path segments', () => {
+    expect(normalizeIconPath('general/toolWindows/My Icon')).toBe(
+      'general/tool-windows/my-icon',
     );
   });
 
-  it('renders with dark theme', () => {
-    const { container } = render(
-      <ThemedIcon name="feedback" currentTheme="dark" />,
+  it('resolves sprite href from the icon path', () => {
+    expect(resolveSpriteHref('general/actions/add-file', 'dark')).toBe(
+      '/icons/general.svg#add-file_dark',
     );
-    const use = container.querySelector('use');
-    expect(use).toHaveAttribute(
-      'href',
-      '/icons/general.svg#icon-feedback-dark',
-    );
-  });
-
-  it('passes size and className to Icon', () => {
-    const { container } = render(
-      <ThemedIcon
-        name="add"
-        currentTheme="light"
-        size={32}
-        className="themed"
-      />,
-    );
-    const svg = container.querySelector('svg');
-    expect(svg).toHaveAttribute('width', '32');
-    expect(svg).toHaveClass('themed');
   });
 });

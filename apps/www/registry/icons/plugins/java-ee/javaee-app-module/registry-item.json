@@ -5,13 +5,19 @@
   "title": "Javaee App Module",
   "description": "Javaee App Module icon from Plugins Java Ee category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/java-ee/javaee-app-module/index.tsx",
+      "path": "registry/icons/plugins/java-ee/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/java-ee/javaee-app-module/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

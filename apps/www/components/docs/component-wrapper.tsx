@@ -1,9 +1,13 @@
 'use client';
 
 import { OpenInV0Button } from '@workspace/ui/components/docs/open-in-v0-button';
+import {
+  Fullscreen,
+  RotateCcw,
+  SlidersHorizontal,
+} from '@workspace/ui/components/icons/system-icons';
 import { Button } from '@workspace/ui/components/ui/button';
 import { cn } from '@workspace/ui/lib/utils';
-import { Fullscreen, RotateCcw, SlidersHorizontal } from 'lucide-react';
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import Iframe from './iframe';

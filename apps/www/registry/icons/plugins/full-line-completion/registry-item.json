@@ -5,7 +5,8 @@
   "title": "Plugins Full Line Completion Icons",
   "description": "All 2 icons from the Plugins Full Line Completion category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,14 +15,9 @@
       "target": "components/jetbrains-ui/icons/plugins/full-line-completion/index.ts"
     },
     {
-      "path": "registry/icons/plugins/full-line-completion/full-line-completion/index.tsx",
+      "path": "public/icons/plugins.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/full-line-completion/full-line-completion/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/full-line-completion/full-line-completion-outline/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/full-line-completion/full-line-completion-outline/index.tsx"
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

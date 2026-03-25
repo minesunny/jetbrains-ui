@@ -5,13 +5,19 @@
   "title": "Group By Test Production",
   "description": "Group By Test Production icon from General Actions category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/actions/group-by-test-production/index.tsx",
+      "path": "registry/icons/general/actions/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/actions/group-by-test-production/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/actions/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

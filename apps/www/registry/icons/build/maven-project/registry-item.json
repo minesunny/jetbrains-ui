@@ -5,13 +5,19 @@
   "title": "Maven Project",
   "description": "Maven Project icon from Build category.",
   "registryDependencies": [
-    "icons-build-types"
+    "icons-build-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/build/maven-project/index.tsx",
+      "path": "registry/icons/build/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/build/maven-project/index.tsx"
+      "target": "components/jetbrains-ui/icons/build/index.ts"
+    },
+    {
+      "path": "public/icons/build.svg",
+      "type": "registry:ui",
+      "target": "public/icons/build.svg"
     }
   ],
   "meta": {

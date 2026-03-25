@@ -5,13 +5,19 @@
   "title": "Breakpoint Field Muted Dependent",
   "description": "Breakpoint Field Muted Dependent icon from Breakpoints category.",
   "registryDependencies": [
-    "icons-breakpoints-types"
+    "icons-breakpoints-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/breakpoints/breakpoint-field-muted-dependent/index.tsx",
+      "path": "registry/icons/breakpoints/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-muted-dependent/index.tsx"
+      "target": "components/jetbrains-ui/icons/breakpoints/index.ts"
+    },
+    {
+      "path": "public/icons/breakpoints.svg",
+      "type": "registry:ui",
+      "target": "public/icons/breakpoints.svg"
     }
   ],
   "meta": {

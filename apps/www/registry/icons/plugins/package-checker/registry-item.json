@@ -5,7 +5,8 @@
   "title": "Plugins Package Checker Icons",
   "description": "All 15 icons from the Plugins Package Checker category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,79 +15,9 @@
       "target": "components/jetbrains-ui/icons/plugins/package-checker/index.ts"
     },
     {
-      "path": "registry/icons/plugins/package-checker/high-all/index.tsx",
+      "path": "public/icons/plugins.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/high-all/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/high-all-tree/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/high-all-tree/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/high-all-tree-outline/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/high-all-tree-outline/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/low-all/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/low-all/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/low-all-tree/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/low-all-tree/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/low-all-tree-outline/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/low-all-tree-outline/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/medium-all/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/medium-all/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/medium-all-tree/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/medium-all-tree/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/medium-all-tree-outline/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/medium-all-tree-outline/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/safe-all/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/safe-all/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/safe-all-tree/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/safe-all-tree/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/safe-all-tree-outline/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/safe-all-tree-outline/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/uncheched-all/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/uncheched-all/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/uncheched-all-tree/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/uncheched-all-tree/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/package-checker/uncheched-all-tree-outline/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/package-checker/uncheched-all-tree-outline/index.tsx"
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

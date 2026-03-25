@@ -5,7 +5,8 @@
   "title": "Plugins Code With Me Icons",
   "description": "All 25 icons from the Plugins Code With Me category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
@@ -14,129 +15,9 @@
       "target": "components/jetbrains-ui/icons/plugins/code-with-me/index.ts"
     },
     {
-      "path": "registry/icons/plugins/code-with-me/cwm-cam-avatar-off/index.tsx",
+      "path": "public/icons/plugins.svg",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-cam-avatar-off/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-cam-avatar-on/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-cam-avatar-on/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-cam-off/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-cam-off/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-cam-on/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-cam-on/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-disable-call/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-disable-call/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-enable-call/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-enable-call/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-icon-modificator/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-icon-modificator/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-icon-modificator-menu/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-icon-modificator-menu/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-invite/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-invite/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-mic-avatar-off/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-mic-avatar-off/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-mic-avatar-on/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-mic-avatar-on/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-mic-off/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-mic-off/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-mic-on/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-mic-on/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-permission-edit/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permission-edit/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-permission-full/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permission-full/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-permission-view/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permission-view/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-permissions/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permissions/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-permissions-denied/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permissions-denied/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-permissions-granted/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permissions-granted/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-screen-in-browser-off/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-screen-in-browser-off/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-screen-in-browser-on/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-screen-in-browser-on/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-screen-off/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-screen-off/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-screen-on/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-screen-on/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-share/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-share/index.tsx"
-    },
-    {
-      "path": "registry/icons/plugins/code-with-me/cwm-verified/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-verified/index.tsx"
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {

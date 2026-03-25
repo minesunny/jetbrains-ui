@@ -5,13 +5,19 @@
   "title": "Pause",
   "description": "Pause icon from General Progress Bar category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-general-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/general/progress-bar/pause/index.tsx",
+      "path": "registry/icons/general/progress-bar/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/progress-bar/pause/index.tsx"
+      "target": "components/jetbrains-ui/icons/general/progress-bar/index.ts"
+    },
+    {
+      "path": "public/icons/general.svg",
+      "type": "registry:ui",
+      "target": "public/icons/general.svg"
     }
   ],
   "meta": {

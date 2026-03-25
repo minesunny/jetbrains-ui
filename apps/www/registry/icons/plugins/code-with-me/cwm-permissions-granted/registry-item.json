@@ -5,13 +5,19 @@
   "title": "Cwm Permissions Granted",
   "description": "Cwm Permissions Granted icon from Plugins Code With Me category.",
   "registryDependencies": [
-    "icons-plugins-types"
+    "icons-plugins-types",
+    "icons-components"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/code-with-me/cwm-permissions-granted/index.tsx",
+      "path": "registry/icons/plugins/code-with-me/index.ts",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permissions-granted/index.tsx"
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/index.ts"
+    },
+    {
+      "path": "public/icons/plugins.svg",
+      "type": "registry:ui",
+      "target": "public/icons/plugins.svg"
     }
   ],
   "meta": {
