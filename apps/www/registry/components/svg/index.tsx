@@ -49,21 +49,28 @@ export function SVG({
   'aria-label': ariaLabel,
 }: SVGProps) {
   const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
   const loader = ICON_REGISTRY[name];
   const LazyIcon = React.useMemo(
     () => (loader ? React.lazy(loader) : null),
     [loader],
   );
 
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
   if (!LazyIcon) {
     return null;
   }
+
+  const mode = mounted && resolvedTheme === 'dark' ? 'dark' : 'light';
 
   return (
     <React.Suspense fallback={null}>
       <LazyIcon
         size={toIconSize(size)}
-        mode={resolvedTheme === 'dark' ? 'dark' : 'light'}
+        mode={mode}
         className={className}
         title={title}
         aria-label={ariaLabel}

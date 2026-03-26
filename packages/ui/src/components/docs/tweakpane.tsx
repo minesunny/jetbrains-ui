@@ -10,7 +10,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from '@workspace/ui/components/jetbrains-ui/collapsible';
+} from '@workspace/ui/components/ui/collapsible';
 import {
   Select,
   SelectContent,
@@ -19,7 +19,25 @@ import {
   SelectValue,
 } from '@workspace/ui/components/ui/select';
 import { Switch } from '@workspace/ui/components/ui/switch';
-import { ChevronsUpDown } from '@workspace/ui/components/icons/lucide';
+
+function ChevronsUpDownIcon(props: React.ComponentProps<'svg'>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="m7 9 5-5 5 5" />
+      <path d="m7 15 5 5 5-5" />
+    </svg>
+  );
+}
 
 type BaseBindNumber = { value: number };
 type BindNumberSlider = BaseBindNumber & {
@@ -358,7 +376,7 @@ const renderNestedBinds = (
         <Label className="truncate text-current/80 block leading-[1.2]">
           {groupKey}
         </Label>
-        <ChevronsUpDown className="size-3.5 text-muted-foreground" />
+        <ChevronsUpDownIcon className="size-3.5 text-muted-foreground" />
       </CollapsibleTrigger>
 
       <CollapsibleContent {...(!initial ? { initial: false } : {})}>

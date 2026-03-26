@@ -1,10 +1,10 @@
 'use client';
 
 import { buttonVariants } from 'fumadocs-ui/components/ui/button';
-import { Languages } from '@workspace/ui/components/icons/lucide';
 import { cn } from '@workspace/ui/lib/utils';
 import { LOCALE_COOKIE, type Locale } from '@/lib/i18n/shared';
 import { useI18n } from '@/components/i18n-provider';
+import { SVG } from '@/registry/components/svg';
 
 function setLocaleCookie(locale: Locale) {
   document.cookie = `${LOCALE_COOKIE}=${locale}; Path=/; Max-Age=31536000; SameSite=Lax`;
@@ -29,7 +29,10 @@ export function LocaleSwitcher({ className }: { className?: string }) {
       role="group"
       aria-label={messages.nav.language}
     >
-      <Languages className="mx-1 size-3.5 text-fd-muted-foreground" />
+      <SVG
+        name="editor-icons/inlay-globe"
+        className="mx-1 size-3.5 text-fd-muted-foreground"
+      />
       <button
         type="button"
         onClick={() => applyLocale('en')}

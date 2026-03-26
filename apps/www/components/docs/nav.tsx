@@ -5,13 +5,13 @@ import Link from 'next/link';
 import { IconLogo } from '../icon-logo';
 import { buttonVariants } from 'fumadocs-ui/components/ui/button';
 import { cn } from '@workspace/ui/lib/utils';
-import { CommandIcon } from '@workspace/ui/components/icons/lucide';
 import { useSearchContext, useSidebar } from 'fumadocs-ui/provider';
 import { ThemeSwitcher } from '../animate/theme-switcher';
 import { GithubStarsLogo } from '@/components/animate-ui/primitives/animate/github-stars';
 import { Menu } from '@/components/animate-ui/icons/menu';
 import { useI18n } from '@/components/i18n-provider';
 import { LocaleSwitcher } from '@/components/locale-switcher';
+import { Command } from 'lucide-react';
 
 const NavItem = ({ title, url }: { title: string; url: string }) => {
   return (
@@ -79,7 +79,7 @@ export const Nav = () => {
 
             <div className="flex items-center gap-1">
               <kbd className="size-5 leading-none flex items-center justify-center border rounded-[4px] bg-background">
-                <CommandIcon className="size-2.5" />
+                <Command className="size-2.5" />
               </kbd>
               <kbd className="size-5 flex items-center justify-center border rounded-[4px] bg-background">
                 <span className="leading-none text-[0.625rem] pt-px">K</span>

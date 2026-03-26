@@ -1,17 +1,12 @@
-import JetBrainsUIIcon from '@workspace/ui/components/icons/jetbrainsui-icon';
 import BaseUIIcon from '@workspace/ui/components/icons/baseui-icon';
 import CommunityIcon from '@workspace/ui/components/icons/community-icon';
 import ImageIcon from '@workspace/ui/components/icons/image-icon';
 import HeadlessUIIcon from '@workspace/ui/components/icons/headlessui-icon';
 import RadixIcon from '@workspace/ui/components/icons/radix-icon';
 import type { BuildPageTreeOptions } from 'fumadocs-core/source';
-import {
-  Code,
-  SparklesIcon,
-  SquareMenu,
-  TypeIcon,
-} from '@workspace/ui/components/icons/lucide';
-import { LucideIcons } from '@/registry/icons/general/lucide-icons';
+import { SVG } from '@/registry/components/svg';
+import JetBrainsUIIcon from '@/lib/jetbrains-ui-icon';
+import { Search } from 'lucide-react';
 
 const Icon = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -63,7 +58,10 @@ export const attachSeparator: BuildPageTreeOptions['attachSeparator'] = (
       break;
     case 'Effects':
       node.name = (
-        <Separator icon={<SparklesIcon fill="currentColor" />} name="Effects" />
+        <Separator
+          icon={<SVG name="general/ai-assistant/ai-assistant" />}
+          name="Effects"
+        />
       );
       break;
     case 'Community':
@@ -76,23 +74,30 @@ export const attachSeparator: BuildPageTreeOptions['attachSeparator'] = (
       break;
     case 'Texts':
       node.name = (
-        <Separator icon={<TypeIcon strokeWidth={3} />} name="Texts" />
+        <Separator icon={<SVG name="file-types/text" />} name="Texts" />
       );
       break;
     case 'Icons':
       node.name = (
-        <Separator icon={<LucideIcons strokeWidth={2} />} name="Icons" />
+        <Separator icon={<Search strokeWidth={2} />} name="Icons" />
       );
       break;
     case 'Usage':
-      node.name = <Separator icon={<Code strokeWidth={3} />} name="Usage" />;
+      node.name = (
+        <Separator icon={<SVG name="terminal/command" />} name="Usage" />
+      );
       break;
     case 'Guide':
-      node.name = <Separator icon={<Code strokeWidth={2.5} />} name="Usage" />;
+      node.name = (
+        <Separator icon={<SVG name="terminal/command" />} name="Usage" />
+      );
       break;
     case 'Menu':
       node.name = (
-        <Separator icon={<SquareMenu strokeWidth={2} />} name="Menu" />
+        <Separator
+          icon={<SVG name="plugins/code-with-me/cwm-icon-modificator-menu" />}
+          name="Menu"
+        />
       );
       break;
   }

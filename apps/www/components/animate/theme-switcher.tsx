@@ -1,9 +1,9 @@
 'use client';
 
 import { Switch } from '@/components/radix/switch';
-import { Moon, Sun } from '@workspace/ui/components/icons/lucide';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { SVG } from '@/registry/components/svg';
 
 export const ThemeSwitcher = ({ className }: { className?: string }) => {
   const { resolvedTheme: theme, setTheme } = useTheme();
@@ -18,8 +18,8 @@ export const ThemeSwitcher = ({ className }: { className?: string }) => {
     isClient && (
       <Switch
         className={className}
-        leftIcon={<Sun />}
-        rightIcon={<Moon />}
+        leftIcon={<SVG name="general/new-ui/light-theme" />}
+        rightIcon={<SVG name="general/new-ui/dark-theme" />}
         checked={theme === 'dark'}
         onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
       />

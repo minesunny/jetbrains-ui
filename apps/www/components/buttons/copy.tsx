@@ -2,10 +2,10 @@
 
 import * as React from 'react';
 import { AnimatePresence, HTMLMotionProps, motion } from 'motion/react';
-import { CheckIcon, CopyIcon } from '@workspace/ui/components/icons/lucide';
 import { cva, type VariantProps } from 'class-variance-authority';
 
 import { cn } from '@workspace/ui/lib/utils';
+import { SVG } from '@/registry/components/svg';
 
 const buttonVariants = cva(
   "flex items-center justify-center rounded-md transition-[box-shadow,_color,_background-color,_border-color,_outline-color,_text-decoration-color,_fill,_stroke] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
@@ -61,7 +61,9 @@ function CopyButton({
   ...props
 }: CopyButtonProps) {
   const [localIsCopied, setLocalIsCopied] = React.useState(isCopied ?? false);
-  const Icon = localIsCopied ? CheckIcon : CopyIcon;
+  const iconName = localIsCopied
+    ? 'general/general/checkmark'
+    : 'general/general/copy';
 
   React.useEffect(() => {
     setLocalIsCopied(isCopied ?? false);
@@ -113,7 +115,7 @@ function CopyButton({
           exit={{ scale: 0, opacity: 0.4, filter: 'blur(4px)' }}
           transition={{ duration: 0.25 }}
         >
-          <Icon />
+          <SVG name={iconName} />
         </motion.span>
       </AnimatePresence>
     </motion.button>

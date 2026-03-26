@@ -16,8 +16,7 @@
     "components": "@/registry/components",
     "utils": "@workspace/ui/lib/utils",
     "ui": "@/registry/components",
-    "lib": "@/registry/lib",
-    "hooks": "@/registry/hooks"
+    "lib": "@/registry/lib"
   },
   "registries": {
     "@jetbrains-ui": "http://localhost:3000/r/{name}.json"

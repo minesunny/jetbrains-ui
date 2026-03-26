@@ -1,5 +1,5 @@
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
-import { BookOpen } from '@workspace/ui/components/icons/lucide';
+import { Bookmarks } from '@/registry/icons/general/bookmarks/bookmarks';
 import { getMessages, type Locale } from '@/lib/i18n/shared';
 
 /**
@@ -17,7 +17,7 @@ export function getBaseOptions(locale: Locale): BaseLayoutProps {
       {
         type: 'separator',
         name: messages.guide.title,
-        icon: <BookOpen fill="currentColor" strokeWidth={2.5} />,
+        icon: <Bookmarks />,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } as any,
       {

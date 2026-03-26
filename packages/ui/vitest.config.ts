@@ -7,7 +7,7 @@ export default defineConfig({
     setupFiles: ['./src/__tests__/setup.ts'],
     css: false,
     coverage: {
-      include: ['src/components/jetbrains-ui/**'],
+      include: ['src/components/ui/collapsible.tsx'],
     },
   },
 });

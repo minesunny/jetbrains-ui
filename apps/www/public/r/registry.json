@@ -1571,87 +1571,6 @@
       }
     },
     {
-      "name": "hooks-use-auto-height",
-      "type": "registry:hook",
-      "title": "useAutoHeight",
-      "description": "A hook that allows you to automatically adjust the height of an element based on its content.",
-      "files": [
-        {
-          "path": "registry/hooks/use-auto-height/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-auto-height.tsx"
-        }
-      ]
-    },
-    {
-      "name": "hooks-use-controlled-state",
-      "type": "registry:hook",
-      "title": "useControlledState",
-      "description": "A hook that allows you to control a state.",
-      "files": [
-        {
-          "path": "registry/hooks/use-controlled-state/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-controlled-state.tsx"
-        }
-      ]
-    },
-    {
-      "name": "hooks-use-data-state",
-      "type": "registry:hook",
-      "title": "useDataState",
-      "description": "A hook that allows you to get the data-state of an element.",
-      "files": [
-        {
-          "path": "registry/hooks/use-data-state/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-data-state.tsx"
-        }
-      ]
-    },
-    {
-      "name": "hooks-use-is-in-view",
-      "type": "registry:hook",
-      "title": "useIsInView",
-      "description": "A hook that allows you to check if an element is in view.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/hooks/use-is-in-view/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-is-in-view.tsx"
-        }
-      ]
-    },
-    {
-      "name": "hooks-use-mobile",
-      "type": "registry:hook",
-      "title": "useIsMobile",
-      "description": "A hook that detects whether viewport width is mobile.",
-      "files": [
-        {
-          "path": "registry/hooks/use-mobile/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-mobile.tsx"
-        }
-      ]
-    },
-    {
-      "name": "hooks-use-motion-value-state",
-      "type": "registry:hook",
-      "title": "useMotionValueState",
-      "description": "A hook that allows you to use a motion value state.",
-      "files": [
-        {
-          "path": "registry/hooks/use-motion-value-state/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-motion-value-state.tsx"
-        }
-      ]
-    },
-    {
       "name": "icons-breakpoints",
       "type": "registry:ui",
       "title": "Breakpoints Icons",
@@ -62135,19 +62054,6 @@
           "jetbrains"
         ]
       }
-    },
-    {
-      "name": "lib-get-strict-context",
-      "type": "registry:lib",
-      "title": "getStrictContext",
-      "description": "A hook that allows you to create a strict context.",
-      "files": [
-        {
-          "path": "registry/lib/get-strict-context/index.tsx",
-          "type": "registry:lib",
-          "target": "lib/get-strict-context.tsx"
-        }
-      ]
     },
     {
       "name": "styles-jetbrains-tokens",

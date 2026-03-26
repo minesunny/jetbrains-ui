@@ -1,10 +1,10 @@
+import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
 import {
-  CircleCheck,
+  CheckCircle2,
   CircleX,
   Info,
   TriangleAlert,
-} from '@workspace/ui/components/icons/lucide';
-import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
+} from 'lucide-react';
 
 import { cn } from '@workspace/ui/lib/utils';
 
@@ -45,7 +45,7 @@ export const Callout = forwardRef<HTMLDivElement, CalloutProps>(
             info: <Info className={iconClass} />,
             warning: <TriangleAlert className={iconClass} />,
             error: <CircleX className={iconClass} />,
-            success: <CircleCheck className={iconClass} />,
+            success: <CheckCircle2 className={iconClass} />,
           }[type]}
         <div className="flex flex-col gap-2 min-w-0 flex-1">
           {title && <p className="font-medium !my-0">{title}</p>}
