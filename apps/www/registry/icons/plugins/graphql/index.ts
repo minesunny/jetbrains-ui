@@ -1,134 +1,32 @@
-import type { FC } from 'react';
-import { createSpriteIcon } from '@/registry/components/icons';
-import type { IconProps } from '../types';
-
-export type ApolloProps = IconProps;
-
-export const Apollo: FC<ApolloProps> = createSpriteIcon({
-  name: 'plugins/graphql/apollo',
-  viewBox: '0 0 16 16',
-  displayName: 'Apollo',
-});
-
-export type AttributeProps = IconProps;
-
-export const Attribute: FC<AttributeProps> = createSpriteIcon({
-  name: 'plugins/graphql/attribute',
-  viewBox: '0 0 16 16',
-  displayName: 'Attribute',
-});
-
-export type EnumProps = IconProps;
-
-export const Enum: FC<EnumProps> = createSpriteIcon({
-  name: 'plugins/graphql/enum',
-  viewBox: '0 0 16 16',
-  displayName: 'Enum',
-});
-
-export type FieldProps = IconProps;
-
-export const Field: FC<FieldProps> = createSpriteIcon({
-  name: 'plugins/graphql/field',
-  viewBox: '0 0 16 16',
-  displayName: 'Field',
-});
-
-export type FragmentProps = IconProps;
-
-export const Fragment: FC<FragmentProps> = createSpriteIcon({
-  name: 'plugins/graphql/fragment',
-  viewBox: '0 0 16 16',
-  displayName: 'Fragment',
-});
-
-export type GraphQlProps = IconProps;
-
-export const GraphQl: FC<GraphQlProps> = createSpriteIcon({
-  name: 'plugins/graphql/graph-ql',
-  viewBox: '0 0 16 16',
-  displayName: 'GraphQl',
-});
-
-export type GraphQlcongifProps = IconProps;
-
-export const GraphQlcongif: FC<GraphQlcongifProps> = createSpriteIcon({
-  name: 'plugins/graphql/graph-qlcongif',
-  viewBox: '0 0 16 16',
-  displayName: 'GraphQlcongif',
-});
-
-export type GraphQlschemaProps = IconProps;
-
-export const GraphQlschema: FC<GraphQlschemaProps> = createSpriteIcon({
-  name: 'plugins/graphql/graph-qlschema',
-  viewBox: '0 0 16 16',
-  displayName: 'GraphQlschema',
-});
-
-export type InterfaceProps = IconProps;
-
-export const Interface: FC<InterfaceProps> = createSpriteIcon({
-  name: 'plugins/graphql/interface',
-  viewBox: '0 0 16 16',
-  displayName: 'Interface',
-});
-
-export type MutationProps = IconProps;
-
-export const Mutation: FC<MutationProps> = createSpriteIcon({
-  name: 'plugins/graphql/mutation',
-  viewBox: '0 0 16 16',
-  displayName: 'Mutation',
-});
-
-export type QueryProps = IconProps;
-
-export const Query: FC<QueryProps> = createSpriteIcon({
-  name: 'plugins/graphql/query',
-  viewBox: '0 0 16 16',
-  displayName: 'Query',
-});
-
-export type RelayProps = IconProps;
-
-export const Relay: FC<RelayProps> = createSpriteIcon({
-  name: 'plugins/graphql/relay',
-  viewBox: '0 0 16 16',
-  displayName: 'Relay',
-});
-
-export type ScalarProps = IconProps;
-
-export const Scalar: FC<ScalarProps> = createSpriteIcon({
-  name: 'plugins/graphql/scalar',
-  viewBox: '0 0 16 16',
-  displayName: 'Scalar',
-});
-
-export type SubscriptionProps = IconProps;
-
-export const Subscription: FC<SubscriptionProps> = createSpriteIcon({
-  name: 'plugins/graphql/subscription',
-  viewBox: '0 0 16 16',
-  displayName: 'Subscription',
-});
-
-export type TypeProps = IconProps;
-
-export const Type: FC<TypeProps> = createSpriteIcon({
-  name: 'plugins/graphql/type',
-  viewBox: '0 0 16 16',
-  displayName: 'Type',
-});
-
-export type VariableProps = IconProps;
-
-export const Variable: FC<VariableProps> = createSpriteIcon({
-  name: 'plugins/graphql/variable',
-  viewBox: '0 0 16 16',
-  displayName: 'Variable',
-});
-
-export { iconNames } from '../types';
-export type { IconName, IconMode, IconProps, IconSize } from '../types';
+export { Apollo } from './apollo';
+export type { ApolloProps } from './apollo';
+export { Attribute } from './attribute';
+export type { AttributeProps } from './attribute';
+export { Enum } from './enum';
+export type { EnumProps } from './enum';
+export { Field } from './field';
+export type { FieldProps } from './field';
+export { Fragment } from './fragment';
+export type { FragmentProps } from './fragment';
+export { GraphQL } from './graph-ql';
+export type { GraphQLProps } from './graph-ql';
+export { GraphQLCongif } from './graph-qlcongif';
+export type { GraphQLCongifProps } from './graph-qlcongif';
+export { GraphQLSchema } from './graph-qlschema';
+export type { GraphQLSchemaProps } from './graph-qlschema';
+export { Interface } from './interface';
+export type { InterfaceProps } from './interface';
+export { Mutation } from './mutation';
+export type { MutationProps } from './mutation';
+export { Query } from './query';
+export type { QueryProps } from './query';
+export { Relay } from './relay';
+export type { RelayProps } from './relay';
+export { Scalar } from './scalar';
+export type { ScalarProps } from './scalar';
+export { Subscription } from './subscription';
+export type { SubscriptionProps } from './subscription';
+export { Type } from './type';
+export type { TypeProps } from './type';
+export { Variable } from './variable';
+export type { VariableProps } from './variable';

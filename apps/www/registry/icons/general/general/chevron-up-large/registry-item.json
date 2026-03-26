@@ -5,25 +5,20 @@
   "title": "Chevron Up Large",
   "description": "Chevron Up Large icon from General General category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/general/index.ts",
+      "path": "registry/icons/general/general/chevron-up-large/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/general/chevron-up-large/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
       "chevron-up-large",
       "icon",
+      "general",
       "general",
       "jetbrains"
     ]

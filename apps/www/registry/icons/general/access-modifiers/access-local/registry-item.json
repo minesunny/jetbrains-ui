@@ -5,19 +5,13 @@
   "title": "Access Local",
   "description": "Access Local icon from General Access Modifiers category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/access-modifiers/index.ts",
+      "path": "registry/icons/general/access-modifiers/access-local/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/access-modifiers/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/access-modifiers/access-local/index.tsx"
     }
   ],
   "meta": {

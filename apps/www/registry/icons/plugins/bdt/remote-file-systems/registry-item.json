@@ -5,19 +5,13 @@
   "title": "Remote File Systems",
   "description": "Remote File Systems icon from Plugins Bdt category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/bdt/index.ts",
+      "path": "registry/icons/plugins/bdt/remote-file-systems/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/bdt/remote-file-systems/index.tsx"
     }
   ],
   "meta": {

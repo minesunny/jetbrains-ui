@@ -5,19 +5,13 @@
   "title": "Tool Window Model Checker",
   "description": "Tool Window Model Checker icon from General Tool Windows category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/tool-windows/index.ts",
+      "path": "registry/icons/general/tool-windows/tool-window-model-checker/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/tool-windows/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-model-checker/index.tsx"
     }
   ],
   "meta": {

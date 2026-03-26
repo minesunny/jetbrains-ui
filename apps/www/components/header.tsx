@@ -3,10 +3,10 @@
 import { motion } from 'motion/react';
 
 import { Logo } from '@/components/logo';
-import { GithubIcon } from '@workspace/ui/components/icons/system-icons';
 import XIcon from '@workspace/ui/components/icons/x-icon';
 import { useIsMobile } from '@workspace/ui/hooks/use-mobile';
 import { ThemeSwitcher } from './animate/theme-switcher';
+import { GithubIcon } from 'lucide-react';
 
 const LOGO_WRAPPER_VARIANTS = {
   center: {

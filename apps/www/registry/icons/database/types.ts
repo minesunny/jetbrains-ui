@@ -125,6 +125,7 @@ export const iconNames = [
   'hsqldb',
   'ibm',
   'impala',
+  'index',
   'index-cluster',
   'index-fun',
   'index-fun-unique',
@@ -245,8 +246,6 @@ export const iconNames = [
   'virtual-view',
   'warehouse',
   'yugabyte',
-  'db-index',
-  'index-icon',
 ] as const;
 
 export type IconName = (typeof iconNames)[number];

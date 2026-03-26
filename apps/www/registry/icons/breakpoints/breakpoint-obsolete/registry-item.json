@@ -5,19 +5,13 @@
   "title": "Breakpoint Obsolete",
   "description": "Breakpoint Obsolete icon from Breakpoints category.",
   "registryDependencies": [
-    "icons-breakpoints-types",
-    "icons-components"
+    "icons-breakpoints-types"
   ],
   "files": [
     {
-      "path": "registry/icons/breakpoints/index.ts",
+      "path": "registry/icons/breakpoints/breakpoint-obsolete/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/breakpoints/index.ts"
-    },
-    {
-      "path": "public/icons/breakpoints.svg",
-      "type": "registry:ui",
-      "target": "public/icons/breakpoints.svg"
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-obsolete/index.tsx"
     }
   ],
   "meta": {

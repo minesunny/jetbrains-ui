@@ -9,8 +9,7 @@
   ],
   "registryDependencies": [
     "utils",
-    "tooltip",
-    "icons-components"
+    "tooltip"
   ],
   "files": [
     {

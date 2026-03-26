@@ -5,19 +5,13 @@
   "title": "Collection Type",
   "description": "Collection Type icon from Database category.",
   "registryDependencies": [
-    "icons-database-types",
-    "icons-components"
+    "icons-database-types"
   ],
   "files": [
     {
-      "path": "registry/icons/database/index.ts",
+      "path": "registry/icons/database/collection-type/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/index.ts"
-    },
-    {
-      "path": "public/icons/database.svg",
-      "type": "registry:ui",
-      "target": "public/icons/database.svg"
+      "target": "components/jetbrains-ui/icons/database/collection-type/index.tsx"
     }
   ],
   "meta": {

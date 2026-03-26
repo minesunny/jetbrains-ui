@@ -1,0 +1,82 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type JestProps = IconProps;
+
+const JestLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M3.367 6.756a1.124 1.124 0 1 0 0 2.25 1.124 1.124 0 0 0 0-2.25m4.866-.01a1.124 1.124 0 1 0 0 2.248 1.124 1.124 0 0 0 0-2.249m4.847 0a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25m1.055 2.644a1.849 1.849 0 0 1-2.906-1.493l-1.145-.016a1.85 1.85 0 0 1-2.13 1.82c-.308.485-.675.93-1.094 1.324a6.3 6.3 0 0 1-2.212 1.372l-.148.053-.14-.072c-1.021-.525-1.508-1.636-1.199-2.658a1.8 1.8 0 0 1-.478-.12l-.154.32c-.304.624-.619 1.27-.735 1.971-.126.758-.175 2.139.905 2.884 1.47 1.018 3.03.245 4.836-.653.905-.448 1.836-.912 2.8-1.149.364-.09.734-.144 1.098-.196.673-.097 1.309-.188 1.84-.496a2.18 2.18 0 0 0 1.068-1.51c.079-.471.007-.954-.206-1.381M6.79.727l1.805 5.328q.12.024.239.065l1.795-3.63 1.792 3.651q.11-.042.229-.07L14.459.726z"
+      fill="#C63D14"
+    />
+  </svg>
+);
+
+const JestDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M3.367 6.756a1.124 1.124 0 1 0 0 2.25 1.124 1.124 0 0 0 0-2.25m4.866-.01a1.124 1.124 0 1 0 0 2.248 1.124 1.124 0 0 0 0-2.249m4.847 0a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25m1.055 2.644a1.849 1.849 0 0 1-2.906-1.493l-1.145-.016a1.85 1.85 0 0 1-2.13 1.82c-.308.485-.675.93-1.094 1.324a6.3 6.3 0 0 1-2.212 1.372l-.148.053-.14-.072c-1.021-.525-1.508-1.636-1.199-2.658a1.8 1.8 0 0 1-.478-.12l-.154.32c-.304.624-.619 1.27-.735 1.971-.126.758-.175 2.139.905 2.884 1.47 1.018 3.03.245 4.836-.653.905-.448 1.836-.912 2.8-1.149.364-.09.734-.144 1.098-.196.673-.097 1.309-.188 1.84-.496a2.18 2.18 0 0 0 1.068-1.51c.079-.471.007-.954-.206-1.381M6.79.727l1.805 5.328q.12.024.239.065l1.795-3.63 1.792 3.651q.11-.042.229-.07L14.459.726z"
+      fill="#C63D14"
+    />
+  </svg>
+);
+
+export const Jest: FC<JestProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? JestLight : JestDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

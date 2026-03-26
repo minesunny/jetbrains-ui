@@ -5,19 +5,13 @@
   "title": "Build Server Protocol Target",
   "description": "Build Server Protocol Target icon from Plugins Scala category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/scala/index.ts",
+      "path": "registry/icons/plugins/scala/build-server-protocol-target/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/scala/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/scala/build-server-protocol-target/index.tsx"
     }
   ],
   "meta": {

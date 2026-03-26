@@ -5,19 +5,13 @@
   "title": "Deno",
   "description": "Deno icon from File Types category.",
   "registryDependencies": [
-    "icons-file-types-types",
-    "icons-components"
+    "icons-file-types-types"
   ],
   "files": [
     {
-      "path": "registry/icons/file-types/index.ts",
+      "path": "registry/icons/file-types/deno/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/file-types/index.ts"
-    },
-    {
-      "path": "public/icons/file-types.svg",
-      "type": "registry:ui",
-      "target": "public/icons/file-types.svg"
+      "target": "components/jetbrains-ui/icons/file-types/deno/index.tsx"
     }
   ],
   "meta": {

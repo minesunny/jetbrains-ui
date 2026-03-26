@@ -5,19 +5,13 @@
   "title": "Show Write Access",
   "description": "Show Write Access icon from General Usages category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/usages/index.ts",
+      "path": "registry/icons/general/usages/show-write-access/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/usages/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/usages/show-write-access/index.tsx"
     }
   ],
   "meta": {

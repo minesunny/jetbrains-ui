@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 import { cn } from '@workspace/ui/lib/utils';
-import { General } from '@/registry/components/icons';
+import { ChevronDownIcon, ChevronRightIcon } from '@/registry/components/icons';
 import { ScrollArea, ScrollViewport } from '@/registry/components/scroll-area';
 import './index.css';
 
@@ -388,19 +388,9 @@ function TreeItem({
             disabled={disabled}
           >
             {expanded ? (
-              <General
-                name="general/chevron-down"
-                className="size-4 scale-[0.78]"
-                width={16}
-                height={16}
-              />
+              <ChevronDownIcon className="size-4 scale-[0.78]" size={16} />
             ) : (
-              <General
-                name="general/chevron-right"
-                className="size-4 scale-[0.78]"
-                width={16}
-                height={16}
-              />
+              <ChevronRightIcon className="size-4 scale-[0.78]" size={16} />
             )}
           </button>
         ) : (

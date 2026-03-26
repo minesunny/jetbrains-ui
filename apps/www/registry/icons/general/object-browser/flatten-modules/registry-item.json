@@ -5,19 +5,13 @@
   "title": "Flatten Modules",
   "description": "Flatten Modules icon from General Object Browser category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/object-browser/index.ts",
+      "path": "registry/icons/general/object-browser/flatten-modules/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/object-browser/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/object-browser/flatten-modules/index.tsx"
     }
   ],
   "meta": {

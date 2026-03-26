@@ -5,25 +5,20 @@
   "title": "Layout",
   "description": "Layout icon from General General category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/general/index.ts",
+      "path": "registry/icons/general/general/layout/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/general/layout/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
       "layout",
       "icon",
+      "general",
       "general",
       "jetbrains"
     ]

@@ -5,19 +5,13 @@
   "title": "Compound",
   "description": "Compound icon from Run Configurations category.",
   "registryDependencies": [
-    "icons-run-configurations-types",
-    "icons-components"
+    "icons-run-configurations-types"
   ],
   "files": [
     {
-      "path": "registry/icons/run-configurations/index.ts",
+      "path": "registry/icons/run-configurations/compound/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run-configurations/index.ts"
-    },
-    {
-      "path": "public/icons/run-configurations.svg",
-      "type": "registry:ui",
-      "target": "public/icons/run-configurations.svg"
+      "target": "components/jetbrains-ui/icons/run-configurations/compound/index.tsx"
     }
   ],
   "meta": {

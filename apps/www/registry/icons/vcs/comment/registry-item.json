@@ -5,19 +5,13 @@
   "title": "Comment",
   "description": "Comment icon from Vcs category.",
   "registryDependencies": [
-    "icons-vcs-types",
-    "icons-components"
+    "icons-vcs-types"
   ],
   "files": [
     {
-      "path": "registry/icons/vcs/index.ts",
+      "path": "registry/icons/vcs/comment/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/index.ts"
-    },
-    {
-      "path": "public/icons/vcs.svg",
-      "type": "registry:ui",
-      "target": "public/icons/vcs.svg"
+      "target": "components/jetbrains-ui/icons/vcs/comment/index.tsx"
     }
   ],
   "meta": {

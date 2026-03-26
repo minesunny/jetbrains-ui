@@ -5,8 +5,7 @@
   "title": "General Progress Bar Icons",
   "description": "All 6 icons from the General Progress Bar category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
@@ -15,9 +14,34 @@
       "target": "components/jetbrains-ui/icons/general/progress-bar/index.ts"
     },
     {
-      "path": "public/icons/general.svg",
+      "path": "registry/icons/general/progress-bar/pause/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/progress-bar/pause/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/progress-bar/pause-hovered/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/pause-hovered/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/progress-bar/resume/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/resume/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/progress-bar/resume-hovered/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/resume-hovered/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/progress-bar/stop/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/stop/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/progress-bar/stop-hovered/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/stop-hovered/index.tsx"
     }
   ],
   "meta": {

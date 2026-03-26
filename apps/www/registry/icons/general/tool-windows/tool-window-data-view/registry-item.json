@@ -5,19 +5,13 @@
   "title": "Tool Window Data View",
   "description": "Tool Window Data View icon from General Tool Windows category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/tool-windows/index.ts",
+      "path": "registry/icons/general/tool-windows/tool-window-data-view/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/tool-windows/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-data-view/index.tsx"
     }
   ],
   "meta": {

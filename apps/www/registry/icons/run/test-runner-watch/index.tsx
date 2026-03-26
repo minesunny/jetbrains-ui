@@ -1,0 +1,119 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type TestRunnerWatchProps = IconProps;
+
+const TestRunnerWatchLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
+      fill="#55A76A"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
+      fill="#E55765"
+    />
+    <path
+      d="M7.006 11.918C4.74 11.548 2.655 9.965 2 8c.75-2.25 3.375-4 6-4s5.25 1.75 6 4a4.9 4.9 0 0 1-.698 1.333 1.37 1.37 0 0 0-1.016-.326c.267-.316.485-.655.642-1.007C12.194 6.353 10.122 5 8 5S3.806 6.353 3.072 8c.73 1.637 2.78 2.983 4.888 3z"
+      fill="#6C707E"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const TestRunnerWatchDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
+      fill="#57965C"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
+      fill="#DB5C5C"
+    />
+    <path
+      d="M7.006 11.918C4.74 11.548 2.655 9.965 2 8c.75-2.25 3.375-4 6-4s5.25 1.75 6 4a4.9 4.9 0 0 1-.698 1.333 1.37 1.37 0 0 0-1.016-.326c.267-.316.485-.655.642-1.007C12.194 6.353 10.122 5 8 5S3.806 6.353 3.072 8c.73 1.637 2.78 2.983 4.888 3z"
+      fill="#CED0D6"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const TestRunnerWatch: FC<TestRunnerWatchProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? TestRunnerWatchLight : TestRunnerWatchDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

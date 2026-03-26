@@ -4,12 +4,10 @@ import * as React from 'react';
 import { AlertDialog as AlertPrimitive } from 'radix-ui';
 
 import { cn } from '@workspace/ui/lib/utils';
-import {
-  ErrorDialog,
-  InformationDialog,
-  QuestionDialog,
-  WarningDialog,
-} from '@/registry/icons/general/status';
+import { ErrorDialog } from '@/registry/icons/general/status/error-dialog';
+import { InformationDialog } from '@/registry/icons/general/status/information-dialog';
+import { QuestionDialog } from '@/registry/icons/general/status/question-dialog';
+import { WarningDialog } from '@/registry/icons/general/status/warning-dialog';
 import type { IconProps } from '@/registry/icons/general/types';
 import { QuestionMark } from '@/registry/icons/general/general';
 import { buttonVariants } from '@/registry/components/button';

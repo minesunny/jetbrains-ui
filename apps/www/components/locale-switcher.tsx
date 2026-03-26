@@ -1,7 +1,7 @@
 'use client';
 
 import { buttonVariants } from 'fumadocs-ui/components/ui/button';
-import { Languages } from '@workspace/ui/components/icons/system-icons';
+import { Languages } from 'lucide-react';
 import { cn } from '@workspace/ui/lib/utils';
 import { LOCALE_COOKIE, type Locale } from '@/lib/i18n/shared';
 import { useI18n } from '@/components/i18n-provider';

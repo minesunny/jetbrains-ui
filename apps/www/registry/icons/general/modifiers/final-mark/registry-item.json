@@ -5,19 +5,13 @@
   "title": "Final Mark",
   "description": "Final Mark icon from General Modifiers category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/modifiers/index.ts",
+      "path": "registry/icons/general/modifiers/final-mark/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/modifiers/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/modifiers/final-mark/index.tsx"
     }
   ],
   "meta": {

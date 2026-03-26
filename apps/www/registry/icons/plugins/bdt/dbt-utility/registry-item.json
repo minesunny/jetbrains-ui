@@ -5,19 +5,13 @@
   "title": "Dbt Utility",
   "description": "Dbt Utility icon from Plugins Bdt category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/bdt/index.ts",
+      "path": "registry/icons/plugins/bdt/dbt-utility/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/bdt/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/bdt/dbt-utility/index.tsx"
     }
   ],
   "meta": {

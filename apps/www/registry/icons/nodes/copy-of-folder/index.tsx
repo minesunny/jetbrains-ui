@@ -1,0 +1,102 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type CopyOfFolderProps = IconProps;
+
+const CopyOfFolderLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M2.75 4C1.784 4 1 4.836 1 5.867v6.266C1 13.164 1.784 14 2.75 14h8.5c.966 0 1.75-.836 1.75-1.867V8a2 2 0 0 0-2-2H8.5L6.736 4.283A1 1 0 0 0 6.038 4z"
+      fill="#EBECF0"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8.094 7 6.038 5H2.75c-.354 0-.75.326-.75.867v6.266c0 .54.396.867.75.867h8.5c.354 0 .75-.326.75-.867V8a1 1 0 0 0-1-1zM8.5 6H11a2 2 0 0 1 2 2v4.133C13 13.164 12.216 14 11.25 14h-8.5C1.784 14 1 13.164 1 12.133V5.867C1 4.836 1.784 4 2.75 4h3.288a1 1 0 0 1 .698.283z"
+      fill="#6C707E"
+    />
+    <path
+      d="M3 2.5a.5.5 0 0 0 .5.5h4.538l2.056 2H13a1 1 0 0 1 1 1v5.5a.5.5 0 0 0 1 0V6a2 2 0 0 0-2-2h-2.5L8.736 2.283A1 1 0 0 0 8.038 2H3.5a.5.5 0 0 0-.5.5"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const CopyOfFolderDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M2.75 4C1.784 4 1 4.836 1 5.867v6.266C1 13.164 1.784 14 2.75 14h8.5c.966 0 1.75-.836 1.75-1.867V8a2 2 0 0 0-2-2H8.5L6.736 4.283A1 1 0 0 0 6.038 4z"
+      fill="#43454A"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8.094 7 6.038 5H2.75c-.354 0-.75.326-.75.867v6.266c0 .54.396.867.75.867h8.5c.354 0 .75-.326.75-.867V8a1 1 0 0 0-1-1zM8.5 6H11a2 2 0 0 1 2 2v4.133C13 13.164 12.216 14 11.25 14h-8.5C1.784 14 1 13.164 1 12.133V5.867C1 4.836 1.784 4 2.75 4h3.288a1 1 0 0 1 .698.283z"
+      fill="#CED0D6"
+    />
+    <path
+      d="M3 2.5a.5.5 0 0 0 .5.5h4.538l2.056 2H13a1 1 0 0 1 1 1v5.5a.5.5 0 0 0 1 0V6a2 2 0 0 0-2-2h-2.5L8.736 2.283A1 1 0 0 0 8.038 2H3.5a.5.5 0 0 0-.5.5"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const CopyOfFolder: FC<CopyOfFolderProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? CopyOfFolderLight : CopyOfFolderDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

@@ -5,8 +5,7 @@
   "title": "Plugins Meson Icons",
   "description": "All 4 icons from the Plugins Meson category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
@@ -15,9 +14,24 @@
       "target": "components/jetbrains-ui/icons/plugins/meson/index.ts"
     },
     {
-      "path": "public/icons/plugins.svg",
+      "path": "registry/icons/plugins/meson/meson/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/meson/meson/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/meson/meson-plugin-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/meson/meson-plugin-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/meson/meson-rc/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/meson/meson-rc/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/meson/meson-reload/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/meson/meson-reload/index.tsx"
     }
   ],
   "meta": {

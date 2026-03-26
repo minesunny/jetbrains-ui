@@ -5,19 +5,13 @@
   "title": "Jrails Module Closed",
   "description": "Jrails Module Closed icon from Plugins Ruby category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/ruby/index.ts",
+      "path": "registry/icons/plugins/ruby/jrails-module-closed/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/ruby/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/ruby/jrails-module-closed/index.tsx"
     }
   ],
   "meta": {

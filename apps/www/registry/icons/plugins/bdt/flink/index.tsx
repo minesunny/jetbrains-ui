@@ -1,0 +1,198 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type FlinkProps = IconProps;
+
+const FlinkLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path fill="#FEAB6C" d="M5 2H6V3H5z" />
+    <path fill="#F9D88C" d="M6 2H7V3H6z" />
+    <path fill="#FE9E52" d="M7 2H8V3H7z" />
+    <path fill="#F9D88C" d="M8 2H9V3H8z" />
+    <path fill="#F9DD9D" d="M6 3H7V4H6z" />
+    <path fill="#FE9F52" d="M7 3H8V4H7z" />
+    <path fill="#F9D88C" d="M8 3H9V4H8z" />
+    <path fill="#F9D88C" d="M9 3H10V4H9z" />
+    <path fill="#FB5F81" d="M5 4H6V5H5z" />
+    <path fill="#F57C7C" d="M6 4H7V5H6z" />
+    <path fill="#FE9E52" d="M8 4H9V5H8z" />
+    <path fill="#F57C7C" d="M9 4H10V5H9z" />
+    <path fill="#FB5F81" d="M4 5H5V6H4z" />
+    <path fill="#F57B7C" d="M5 5H6V6H5z" />
+    <path fill="#F57B7C" d="M7 5H8V6H7z" />
+    <path fill="#C62E53" d="M9 5H10V6H9z" />
+    <path fill="#951B39" d="M10 5H11V6H10z" />
+    <path fill="#AE72B2" d="M3 6H4V7H3z" />
+    <path fill="#F57B7C" d="M6 6H7V7H6z" />
+    <path fill="#F57C7B" d="M8 6H9V7H8z" />
+    <path fill="#C54D5B" d="M9 6H10V7H9z" />
+    <path fill="#951B39" d="M1 7H2V8H1z" />
+    <path fill="#AE72B2" d="M4 7H5V8H4z" />
+    <path fill="#AE72B2" d="M6 7H7V8H6z" />
+    <path fill="#C54D5B" d="M7 7H8V8H7z" />
+    <path fill="#C62E53" d="M8 7H9V8H8z" />
+    <path fill="#B92D4E" d="M12 7H13V8H12z" />
+    <path fill="#A058A3" d="M5 8H6V9H5z" />
+    <path fill="#C62E53" d="M6 8H7V9H6z" />
+    <path fill="#9A3D70" d="M7 8H8V9H7z" />
+    <path d="M7 4h1v1H7z" fill="#F8416D" />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M7 6V5H6v1H4v1H3v1H2v1h1v1h1V9h1V8h1V6zM4 8V7h1v1zm0 0v1H3V8z"
+      fill="#F8416D"
+    />
+    <path d="M8 6v1H7V6zM8 6h1V5H8z" fill="#F8416D" />
+    <path fill="#9A3D70" d="M4 9H5V10H4z" />
+    <path fill="#9A3D70" d="M5 9H6V10H5z" />
+    <path fill="#951B39" d="M11 9H12V10H11z" />
+    <path fill="#9A3D70" d="M4 10H5V11H4z" />
+    <path fill="#961B39" d="M8 11H9V12H8z" />
+    <path fill="#C62E53" d="M10 11H11V12H10z" />
+    <path fill="#951B39" d="M12 11H13V12H12z" />
+    <path fill="#951B39" d="M1 12H2V13H1z" />
+    <path d="M3 7H2v1h1v1H2v3h1v1h1v-3H3V9h1V8H3z" fill="#A05AA5" />
+    <path fill="#961B39" d="M8 12H9V13H8z" />
+    <path fill="#CC5F00" d="M11 12H12V13H11z" />
+    <path fill="#FE9C00" d="M12 12H13V13H12z" />
+    <path fill="#951B39" d="M13 12H14V13H13z" />
+    <path fill="#961B39" d="M10 13H11V14H10z" />
+    <path fill="#C62E53" d="M11 13H12V14H11z" />
+    <path
+      d="M11 6h1v2h1v1h-2v1h2V9h1v2h-4v1H9v-1H8v2h2v1H3v-1h1v-2h2v-1h2V9h1V8h1V7h1zM3 13H2v-1h1zM13 13h-1v1h1z"
+      fill="#F8416C"
+    />
+    <path fill="#961B39" d="M3 14H4V15H3z" />
+    <path
+      d="M9 1H5v1H4v1h1v1H4v1H3v1H2v1h1V6h1V5h1V4h1V3H5V2h4v1h1v2h1v1h-1v1H9v1H8v1H6v1H5v1h1v-1h2V9h1V8h1V7h1V6h1v1h1V6h-1V5h-1V3h-1V2H9zM2 8H1v4h1zM14 8h-1v1h-1v1h1V9h1v2h-1v1h1v-1h1V9h-1zM12 11h-1v1H9v1h2v-1h1zM3 13H2v1h1zM13 13h1v1h-1zM13 15v-1H4v1z"
+      fill="#392A31"
+    />
+  </svg>
+);
+
+const FlinkDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path fill="#FEAB6C" d="M5 2H6V3H5z" />
+    <path fill="#F9D88C" d="M6 2H7V3H6z" />
+    <path fill="#FE9E52" d="M7 2H8V3H7z" />
+    <path fill="#F9D88C" d="M8 2H9V3H8z" />
+    <path fill="#F9DD9D" d="M6 3H7V4H6z" />
+    <path fill="#FE9F52" d="M7 3H8V4H7z" />
+    <path fill="#F9D88C" d="M8 3H9V4H8z" />
+    <path fill="#F9D88C" d="M9 3H10V4H9z" />
+    <path fill="#FB5F81" d="M5 4H6V5H5z" />
+    <path fill="#F57C7C" d="M6 4H7V5H6z" />
+    <path fill="#FE9E52" d="M8 4H9V5H8z" />
+    <path fill="#F57C7C" d="M9 4H10V5H9z" />
+    <path fill="#FB5F81" d="M4 5H5V6H4z" />
+    <path fill="#F57B7C" d="M5 5H6V6H5z" />
+    <path fill="#F57B7C" d="M7 5H8V6H7z" />
+    <path fill="#C62E53" d="M9 5H10V6H9z" />
+    <path fill="#951B39" d="M10 5H11V6H10z" />
+    <path fill="#AE72B2" d="M3 6H4V7H3z" />
+    <path fill="#F57B7C" d="M6 6H7V7H6z" />
+    <path fill="#F57C7B" d="M8 6H9V7H8z" />
+    <path fill="#C54D5B" d="M9 6H10V7H9z" />
+    <path fill="#951B39" d="M1 7H2V8H1z" />
+    <path fill="#AE72B2" d="M4 7H5V8H4z" />
+    <path fill="#AE72B2" d="M6 7H7V8H6z" />
+    <path fill="#C54D5B" d="M7 7H8V8H7z" />
+    <path fill="#C62E53" d="M8 7H9V8H8z" />
+    <path fill="#B92D4E" d="M12 7H13V8H12z" />
+    <path fill="#A058A3" d="M5 8H6V9H5z" />
+    <path fill="#C62E53" d="M6 8H7V9H6z" />
+    <path fill="#9A3D70" d="M7 8H8V9H7z" />
+    <path d="M7 4h1v1H7z" fill="#F8416D" />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M7 6V5H6v1H4v1H3v1H2v1h1v1h1V9h1V8h1V6zM4 8V7h1v1zm0 0v1H3V8z"
+      fill="#F8416D"
+    />
+    <path d="M8 6v1H7V6zM8 6h1V5H8z" fill="#F8416D" />
+    <path fill="#9A3D70" d="M4 9H5V10H4z" />
+    <path fill="#9A3D70" d="M5 9H6V10H5z" />
+    <path fill="#951B39" d="M11 9H12V10H11z" />
+    <path fill="#9A3D70" d="M4 10H5V11H4z" />
+    <path fill="#961B39" d="M8 11H9V12H8z" />
+    <path fill="#C62E53" d="M10 11H11V12H10z" />
+    <path fill="#951B39" d="M12 11H13V12H12z" />
+    <path fill="#951B39" d="M1 12H2V13H1z" />
+    <path d="M3 7H2v1h1v1H2v3h1v1h1v-3H3V9h1V8H3z" fill="#A05AA5" />
+    <path fill="#961B39" d="M8 12H9V13H8z" />
+    <path fill="#CC5F00" d="M11 12H12V13H11z" />
+    <path fill="#FE9C00" d="M12 12H13V13H12z" />
+    <path fill="#951B39" d="M13 12H14V13H13z" />
+    <path fill="#961B39" d="M10 13H11V14H10z" />
+    <path fill="#C62E53" d="M11 13H12V14H11z" />
+    <path
+      d="M11 6h1v2h1v1h-2v1h2V9h1v2h-4v1H9v-1H8v2h2v1H3v-1h1v-2h2v-1h2V9h1V8h1V7h1zM3 13H2v-1h1zM13 13h-1v1h1z"
+      fill="#F8416C"
+    />
+    <path fill="#961B39" d="M3 14H4V15H3z" />
+    <path
+      d="M9 1H5v1H4v1h1v1H4v1H3v1H2v1h1V6h1V5h1V4h1V3H5V2h4v1h1v2h1v1h-1v1H9v1H8v1H6v1H5v1h1v-1h2V9h1V8h1V7h1V6h1v1h1V6h-1V5h-1V3h-1V2H9zM2 8H1v4h1zM14 8h-1v1h-1v1h1V9h1v2h-1v1h1v-1h1V9h-1zM12 11h-1v1H9v1h2v-1h1zM3 13H2v1h1zM13 13h1v1h-1zM13 15v-1H4v1z"
+      fill="#392A31"
+    />
+  </svg>
+);
+
+export const Flink: React.FC<FlinkProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? FlinkLight : FlinkDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

@@ -1,0 +1,82 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type QtProps = IconProps;
+
+const QtLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M7.104 15.106q-.78 0-1.21-.39-.422-.39-.428-1.105l-.007-1.014h1.144l.007.949q0 .234.143.364.143.136.403.136h.682v1.06zM6.07 11.973a.7.7 0 0 0 .56-.26q.22-.267.33-.884.118-.624.118-1.716V7.787q0-1.092-.117-1.71-.11-.623-.332-.883a.7.7 0 0 0-.559-.267.7.7 0 0 0-.565.267q-.221.26-.338.883-.11.618-.11 1.71v1.326q0 1.092.11 1.716.117.618.338.884.221.26.565.26m0 1.183q-.76 0-1.287-.442-.519-.449-.793-1.346-.266-.897-.266-2.255V7.787q0-1.358.266-2.255.273-.897.793-1.34.527-.448 1.287-.448t1.28.442q.528.442.794 1.346.273.897.273 2.255v1.326q0 1.359-.273 2.262-.267.897-.793 1.339-.52.442-1.28.442M8.47 3.9h4.192v1.241h-1.45V13H9.906V5.142H8.469z"
+      fill="#369650"
+    />
+  </svg>
+);
+
+const QtDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M7.104 15.106q-.78 0-1.21-.39-.422-.39-.428-1.105l-.007-1.014h1.144l.007.949q0 .234.143.364.143.136.403.136h.682v1.06zM6.07 11.973a.7.7 0 0 0 .56-.26q.22-.267.33-.884.118-.624.118-1.716V7.787q0-1.092-.117-1.71-.11-.623-.332-.883a.7.7 0 0 0-.559-.267.7.7 0 0 0-.565.267q-.221.26-.338.883-.11.618-.11 1.71v1.326q0 1.092.11 1.716.117.618.338.884.221.26.565.26m0 1.183q-.76 0-1.287-.442-.519-.449-.793-1.346-.266-.897-.266-2.255V7.787q0-1.358.266-2.255.273-.897.793-1.34.527-.448 1.287-.448t1.28.442q.528.442.794 1.346.273.897.273 2.255v1.326q0 1.359-.273 2.262-.267.897-.793 1.339-.52.442-1.28.442M8.47 3.9h4.192v1.241h-1.45V13H9.906V5.142H8.469z"
+      fill="#57965C"
+    />
+  </svg>
+);
+
+export const Qt: FC<QtProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? QtLight : QtDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

@@ -5,19 +5,13 @@
   "title": "Virtual Key",
   "description": "Virtual Key icon from Database category.",
   "registryDependencies": [
-    "icons-database-types",
-    "icons-components"
+    "icons-database-types"
   ],
   "files": [
     {
-      "path": "registry/icons/database/index.ts",
+      "path": "registry/icons/database/virtual-key/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/index.ts"
-    },
-    {
-      "path": "public/icons/database.svg",
-      "type": "registry:ui",
-      "target": "public/icons/database.svg"
+      "target": "components/jetbrains-ui/icons/database/virtual-key/index.tsx"
     }
   ],
   "meta": {

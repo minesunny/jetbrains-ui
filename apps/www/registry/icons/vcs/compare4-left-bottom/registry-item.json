@@ -5,19 +5,13 @@
   "title": "Compare4 Left Bottom",
   "description": "Compare4 Left Bottom icon from Vcs category.",
   "registryDependencies": [
-    "icons-vcs-types",
-    "icons-components"
+    "icons-vcs-types"
   ],
   "files": [
     {
-      "path": "registry/icons/vcs/index.ts",
+      "path": "registry/icons/vcs/compare4-left-bottom/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/index.ts"
-    },
-    {
-      "path": "public/icons/vcs.svg",
-      "type": "registry:ui",
-      "target": "public/icons/vcs.svg"
+      "target": "components/jetbrains-ui/icons/vcs/compare4-left-bottom/index.tsx"
     }
   ],
   "meta": {

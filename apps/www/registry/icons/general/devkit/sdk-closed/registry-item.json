@@ -5,19 +5,13 @@
   "title": "Sdk Closed",
   "description": "Sdk Closed icon from General Devkit category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/devkit/index.ts",
+      "path": "registry/icons/general/devkit/sdk-closed/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/devkit/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/devkit/sdk-closed/index.tsx"
     }
   ],
   "meta": {

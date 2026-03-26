@@ -5,8 +5,7 @@
   "title": "Plugins Scala Icons",
   "description": "All 55 icons from the Plugins Scala category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
@@ -15,9 +14,279 @@
       "target": "components/jetbrains-ui/icons/plugins/scala/index.ts"
     },
     {
-      "path": "public/icons/plugins.svg",
+      "path": "registry/icons/plugins/scala/abstract-class-object-scala/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-class-object-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/abstract-class-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-class-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/abstract-field-variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-field-variable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/abstract-field-variable1/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-field-variable1/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/abstract-type-alias/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/abstract-type-alias/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/add-clause/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/add-clause/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/build-server-protocol/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/build-server-protocol/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/build-server-protocol-load-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/build-server-protocol-load-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/build-server-protocol-target/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/build-server-protocol-target/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/class-companion/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-companion/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/class-companion-swapped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-companion-swapped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/class-object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-object-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/class-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/class-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/compile-server/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/compile-server/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/enum-object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/enum-object-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/enum-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/enum-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/field-value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/field-value/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/field-value1/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/field-value1/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/field-variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/field-variable/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/field-variable1/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/field-variable1/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/lambda/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/lambda/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/lightbend-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/lightbend-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/multiple-type-definitions/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/multiple-type-definitions/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/no-scala-sdk/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/no-scala-sdk/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/object-companion/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/object-companion/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/object-companion-swapped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/object-companion-swapped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/object-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/package-object/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/package-object/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/package-with-object/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/package-with-object/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/parameter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/parameter/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/pattern-value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/pattern-value/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/play2/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/play2/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/remove-clause/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/remove-clause/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/sbt-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/sbt-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-folder/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/sbt-icon/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-icon/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/sbt-load-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-load-changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/sbt-shell/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/sbt-shell/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-console/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-console/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-file/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-html/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-html/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-logo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-logo/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-script/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-script/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-sdk/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-sdk/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala-test/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala-test/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/scala16/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/scala16/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/trait-companion/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/trait-companion/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/trait-companion-swapped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/trait-companion-swapped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/trait-object-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/trait-object-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/trait-scala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/trait-scala/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/type-alias/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/type-alias/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/typed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/typed/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/untyped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/untyped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/value/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/value/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/scala/variable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/scala/variable/index.tsx"
     }
   ],
   "meta": {

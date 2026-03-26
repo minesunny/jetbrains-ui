@@ -5,19 +5,13 @@
   "title": "Add File",
   "description": "Add File icon from General Actions category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/actions/index.ts",
+      "path": "registry/icons/general/actions/add-file/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/actions/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/actions/add-file/index.tsx"
     }
   ],
   "meta": {

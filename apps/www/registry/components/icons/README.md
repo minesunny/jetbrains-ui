@@ -1,187 +1,224 @@
-# Icons
+# Icon 组件
 
-`apps/www/registry/components/icons` 现在是统一的 sprite 使用入口。
+基于 General.svg 的图标组件系统，支持 light/dark 两种主题模式。
 
-`jetbrains-ui` 本身只产出 SVG sprite 文件：
+## 功能特性
 
-- `public/icons/breakpoints.svg`
-- `public/icons/build.svg`
-- `public/icons/database.svg`
-- `public/icons/debugger.svg`
-- `public/icons/editor-icons.svg`
-- `public/icons/file-types.svg`
-- `public/icons/general.svg`
-- `public/icons/nodes.svg`
-- `public/icons/plugins.svg`
-- `public/icons/run.svg`
-- `public/icons/run-configurations.svg`
-- `public/icons/terminal.svg`
-- `public/icons/vcs.svg`
+- ✅ 从单个 SVG sprite 文件加载所有图标
+- ✅ 支持 light/dark 两种主题模式
+- ✅ 可自定义大小和颜色
+- ✅ TypeScript 类型支持
+- ✅ 自动名称标准化（camelCase → kebab-case）
+- ✅ 包含 ThemedIcon 组件用于动态主题切换
 
-## `SVG`
+## 文件结构
 
-使用 `SVG` 渲染图标：
+```
+registry/components/icons/
+├── icon/
+│   └── index.tsx          # Icon 和 ThemedIcon 组件
+├── icon-names.ts          # 图标名称映射
+└── README.md              # 本文档
 
-```tsx
-import { SVG } from '@/registry/components/icons';
+public/icons/
+└── general.svg            # 图标 sprite 文件（自动生成）
 
-<SVG name="breakpoints/breakpoint" />
-<SVG name="general/actions/add-file" width="16px" height="16px" />
-<SVG name="plugins/ruby/rhtml" className="text-muted-foreground" />
+scripts/
+└── extract-icons.js       # SVG 转换脚本
 ```
 
-`name` 不是裸图标名，而是完整图标路径：
+## 使用方法
 
-- `breakpoints/breakpoint`
-- `general/general/chevron-down`
-- `general/tool-windows/feedback`
-- `plugins/ruby/rhtml`
-
-原因很简单：不同大类里有重名图标，裸名无法稳定定位到正确 sprite。
-
-组件会：
-
-- 从 `name` 的第一个路径段推导 sprite 文件
-- 取最后一个路径段作为 symbol 名
-- 使用 `next-themes` 的 `resolvedTheme`
-- 自动拼出 `/icons/<top-category>.svg#<icon-name>_<theme>`
-
-等价关系例如：
+### 1. 基础用法
 
 ```tsx
-<SVG name="breakpoints/breakpoint" />
+import { Icon } from '@/registry/components/icons/icon';
+
+// 默认 light 主题，16px
+<Icon name="feedback" />
+
+// 指定主题和大小
+<Icon name="graph-ql" theme="dark" size={20} />
+
+// 自定义颜色
+<Icon name="add" className="text-blue-500" />
 ```
 
-会解析成：
+### 2. 动态主题切换
 
 ```tsx
-<svg>
-  <use xlinkHref="/icons/breakpoints.svg#breakpoint_light" />
+import { Icon } from '@/registry/components/icons/icon';
+
+function MyComponent() {
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+
+  return (
+    <Icon
+      name="feedback"
+      theme={theme === 'dark' ? 'dark' : 'light'}
+      size={24}
+    />
+  );
+}
+```
+
+### 3. 使用 ThemedIcon 组件
+
+```tsx
+import { ThemedIcon } from '@/registry/components/icons/icon';
+
+function MyComponent() {
+  const currentTheme = useTheme(); // 你自己的主题 hook
+
+  return (
+    <ThemedIcon
+      name="feedback"
+      currentTheme={currentTheme}
+      size={32}
+    />
+  );
+}
+```
+
+## API 参考
+
+### Icon Props
+
+| 属性 | 类型 | 默认值 | 描述 |
+|------|------|--------|------|
+| `name` | `string` | - | 图标名称（会自动转换为 kebab-case） |
+| `theme` | `'light' \| 'dark'` | `'light'` | 主题模式 |
+| `size` | `number` | `16` | 图标大小（像素） |
+| `className` | `string` | - | 自定义 CSS 类名 |
+
+### ThemedIcon Props
+
+| 属性 | 类型 | 默认值 | 描述 |
+|------|------|--------|------|
+| `name` | `string` | - | 图标名称 |
+| `currentTheme` | `'light' \| 'dark'` | - | 当前主题 |
+| `size` | `number` | `16` | 图标大小 |
+| `className` | `string` | - | 自定义 CSS 类名 |
+
+## 可用图标
+
+共有 **239 个图标变体**（77 个唯一图标），包括：
+
+- `feedback` - 反馈图标
+- `rhtml` - R HTML 图标
+- `graph-ql` - GraphQL 图标
+- `bean-validator-tool-window` - Bean Validator 工具窗口
+- 等等...
+
+运行 `node scripts/extract-icons.js` 可以查看完整的图标列表。
+
+## 添加新图标
+
+### 方法 1：从 Figma 导出
+
+1. 在 Figma 中导出图标为 SVG
+2. 将 SVG 添加到 `General.svg` 文件中
+3. 运行转换脚本：
+   ```bash
+   node scripts/extract-icons.js
+   ```
+
+### 方法 2：手动添加到 sprite
+
+直接编辑 `public/icons/general.svg`，添加新的 `<symbol>` 元素：
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <!-- 现有图标... -->
+
+  <!-- 新图标 -->
+  <symbol id="icon-my-icon-light" viewBox="0 0 88 44">
+    <!-- SVG 内容 -->
+  </symbol>
+
+  <symbol id="icon-my-icon-dark" viewBox="0 0 88 44">
+    <!-- SVG 内容 -->
+  </symbol>
 </svg>
 ```
 
-假设当前主题是 `light`。
+## 转换 General.svg
 
-## 兼容导出
+如果你有新的 `General.svg` 文件，可以使用转换脚本：
 
-还保留了两个兼容导出：
+```bash
+# 将 General.svg 放在项目根目录
+node scripts/extract-icons.js
+```
 
-- `Icon`
-- `ThemedIcon`
+这会：
+1. 解析 `General.svg`
+2. 提取所有图标及其 light/dark 变体
+3. 生成 `public/icons/general.svg` sprite 文件
+4. 更新 `icon-names.ts` 映射文件
 
-但新的推荐入口是 `SVG`。
+## 样式定制
 
-## 分类包装器
-
-如果你已经确定了顶级大类，可以直接用分类包装器，避免每次都手写第一段路径：
+### Tailwind CSS 类
 
 ```tsx
-import {
-  Breakpoints,
-  General,
-  Plugins,
-  RunConfigurations,
-} from '@/registry/components/icons';
+// 大小
+<Icon name="feedback" size={20} className="w-5 h-5" />
 
-<Breakpoints name="breakpoint" />
-<General name="general/chevron-down" />
-<General name="tool-windows/feedback" />
-<Plugins name="ruby/rhtml" />
-<RunConfigurations name="application" />
+// 颜色
+<Icon name="feedback" className="text-blue-500 dark:text-blue-400" />
+
+// 旋转
+<Icon name="feedback" className="rotate-90" />
+
+// 动画
+<Icon name="feedback" className="hover:scale-110 transition-transform" />
 ```
 
-这些包装器只是补齐顶级路径段：
-
-- `<Breakpoints name="breakpoint" />` -> `breakpoints/breakpoint`
-- `<General name="tool-windows/feedback" />` -> `general/tool-windows/feedback`
-- `<General name="general/chevron-down" />` -> `general/general/chevron-down`
-- `<Plugins name="ruby/rhtml" />` -> `plugins/ruby/rhtml`
-
-当前提供的包装器有：
-
-- `Breakpoints`
-- `Build`
-- `Database`
-- `Debugger`
-- `EditorIcons`
-- `FileTypes`
-- `General`
-- `Nodes`
-- `Plugins`
-- `Run`
-- `RunConfigurations`
-- `Terminal`
-- `Vcs`
-
-## 消费者项目里的 sprite 配置
-
-如果使用当前仓库产出的静态 sprite 文件，直接通过：
+### 内联样式
 
 ```tsx
-<use xlinkHref="/icons/general.svg#chevron-down_light" />
+<Icon
+  name="feedback"
+  style={{
+    color: 'var(--my-color)',
+    opacity: 0.8,
+  }}
+/>
 ```
 
-这种路径方式即可，不强制要求 webpack 配置。
+## 性能优化
 
-如果你想要像 `mine-query-web` 那样，把 sprite 通过 `svg-sprite-loader` 注入到页面里，再用：
+- ✅ SVG sprite 技术：所有图标共享同一个 SVG 文件
+- ✅ 按需加载：只渲染使用的图标
+- ✅ 无额外的网络请求（除了 sprite 文件）
+- ✅ 支持服务端渲染
 
-```tsx
-<use xlinkHref="#chevron-down_light" />
-```
+## 浏览器支持
 
-这种写法，可以在自己的 Next.js 项目里加下面这段配置。
+- Chrome / Edge: ✅ 完全支持
+- Firefox: ✅ 完全支持
+- Safari: ✅ 完全支持
+- IE11: ❌ 不支持（需要 polyfill）
 
-`next.config.mjs`
+## 示例
 
-```js
-/** @type {import("next").NextConfig} */
-const nextConfig = {
-  webpack(config) {
-    const fileLoaderRule = config.module.rules.find((rule) =>
-      rule.test?.test?.('.svg'),
-    );
+查看 `apps/www/app/examples/icons/page.tsx` 获取完整的使用示例。
 
-    config.module.rules.push(
-      {
-        ...fileLoaderRule,
-        test: /\.svg$/i,
-        resourceQuery: /url/,
-      },
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'svg-sprite-loader',
-          },
-          {
-            loader: 'svgo-loader',
-          },
-        ],
-      },
-    );
+## 故障排除
 
-    fileLoaderRule.exclude = /\.svg$/i;
+### 图标不显示
 
-    return config;
-  },
-};
+1. 检查 `public/icons/general.svg` 是否存在
+2. 检查图标名称是否正确（会自动转换为 kebab-case）
+3. 打开浏览器开发者工具检查网络请求
 
-export default nextConfig;
-```
+### 主题不切换
 
-然后像 `mine-query-web` 一样在客户端预加载 sprite：
+1. 确保正确传递 `theme` 属性
+2. 检查 light/dark 版本的图标是否都存在于 sprite 文件中
 
-```tsx
-const requireAll = (
-  requireContext: ReturnType<typeof require.context>,
-): unknown[] => requireContext.keys().map(requireContext);
+### 图标模糊
 
-const req = require.context('/public/icons', true, /\.svg$/);
-requireAll(req);
-```
-
-这种模式下，`<use>` 可以只写 hash。
-
-## 当前仓库里的建议
-
-在 `jetbrains-ui` 里，优先使用当前 `SVG` 组件的 URL 片段模式，因为它直接消费 `public/icons/*.svg`，不要求额外 webpack loader。
+1. 确保 `viewBox` 与图标实际尺寸匹配
+2. 使用整数倍的大小（16, 20, 24, 32 等）

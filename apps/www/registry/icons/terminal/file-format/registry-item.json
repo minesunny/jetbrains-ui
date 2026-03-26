@@ -5,19 +5,13 @@
   "title": "File Format",
   "description": "File Format icon from Terminal category.",
   "registryDependencies": [
-    "icons-terminal-types",
-    "icons-components"
+    "icons-terminal-types"
   ],
   "files": [
     {
-      "path": "registry/icons/terminal/index.ts",
+      "path": "registry/icons/terminal/file-format/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/terminal/index.ts"
-    },
-    {
-      "path": "public/icons/terminal.svg",
-      "type": "registry:ui",
-      "target": "public/icons/terminal.svg"
+      "target": "components/jetbrains-ui/icons/terminal/file-format/index.tsx"
     }
   ],
   "meta": {

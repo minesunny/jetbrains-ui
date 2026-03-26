@@ -1,0 +1,87 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type FeatureAnswerProps = IconProps;
+
+const FeatureAnswerLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <circle cx="8" cy="8" r="6.5" fill="#EDF3FF" stroke="#3574F0" />
+    <path
+      d="M7.592 8.521q.122-.275.297-.473.177-.198.473-.473.286-.258.451-.445.172-.187.286-.435.116-.253.116-.561 0-.346-.149-.616A1 1 0 0 0 8.66 5.1a1.2 1.2 0 0 0-.605-.148q-.38 0-.67.165a1.14 1.14 0 0 0-.52.612c-.106.28-.334.532-.633.532s-.55-.246-.49-.539a2.1 2.1 0 0 1 .245-.65q.297-.51.836-.792Q7.362 4 8.065 4q.672 0 1.183.258.512.26.792.732.28.468.275 1.078 0 .473-.149.836-.148.357-.363.6a7 7 0 0 1-.555.544q-.253.225-.396.38a1.5 1.5 0 0 0-.242.346 1 1 0 0 0-.044.11c-.088.274-.283.517-.572.517s-.54-.236-.5-.522a1.3 1.3 0 0 1 .098-.358"
+      fill="#3574F0"
+    />
+    <circle cx="8" cy="10.75" r=".75" fill="#3574F0" />
+  </svg>
+);
+
+const FeatureAnswerDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <circle cx="8" cy="8" r="6.5" fill="#25324D" stroke="#548AF7" />
+    <path
+      d="M7.592 8.521q.122-.275.297-.473.177-.198.473-.473.286-.258.451-.445.172-.187.286-.435.116-.253.116-.561 0-.346-.149-.616A1 1 0 0 0 8.66 5.1a1.2 1.2 0 0 0-.605-.148q-.38 0-.67.165a1.14 1.14 0 0 0-.52.612c-.106.28-.334.532-.633.532s-.55-.246-.49-.539a2.1 2.1 0 0 1 .245-.65q.297-.51.836-.792Q7.362 4 8.065 4q.672 0 1.183.258.512.26.792.732.28.468.275 1.078 0 .473-.149.836-.148.357-.363.6a7 7 0 0 1-.555.544q-.253.225-.396.38a1.5 1.5 0 0 0-.242.346 1 1 0 0 0-.044.11c-.088.274-.283.517-.572.517s-.54-.236-.5-.522a1.3 1.3 0 0 1 .098-.358"
+      fill="#548AF7"
+    />
+    <circle cx="8" cy="10.75" r=".75" fill="#548AF7" />
+  </svg>
+);
+
+export const FeatureAnswer: FC<FeatureAnswerProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? FeatureAnswerLight : FeatureAnswerDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

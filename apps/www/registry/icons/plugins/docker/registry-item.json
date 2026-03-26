@@ -5,8 +5,7 @@
   "title": "Plugins Docker Icons",
   "description": "All 7 icons from the Plugins Docker category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
@@ -15,9 +14,39 @@
       "target": "components/jetbrains-ui/icons/plugins/docker/index.ts"
     },
     {
-      "path": "public/icons/plugins.svg",
+      "path": "registry/icons/plugins/docker/docker/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-compose/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-compose-scaled-service-stopped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose-scaled-service-stopped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-compose-scaled-service-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose-scaled-service-up/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-compose-service-stopped/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose-service-stopped/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-compose-service-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-compose-service-up/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/docker/docker-registry/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/docker/docker-registry/index.tsx"
     }
   ],
   "meta": {

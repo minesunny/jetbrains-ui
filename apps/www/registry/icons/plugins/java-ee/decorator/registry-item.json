@@ -5,19 +5,13 @@
   "title": "Decorator",
   "description": "Decorator icon from Plugins Java Ee category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/java-ee/index.ts",
+      "path": "registry/icons/plugins/java-ee/decorator/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/java-ee/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/decorator/index.tsx"
     }
   ],
   "meta": {

@@ -5,8 +5,7 @@
   "title": "General Bookmarks Icons",
   "description": "All 5 icons from the General Bookmarks category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
@@ -15,9 +14,29 @@
       "target": "components/jetbrains-ui/icons/general/bookmarks/index.ts"
     },
     {
-      "path": "public/icons/general.svg",
+      "path": "registry/icons/general/bookmarks/add-bookmarks-list/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/bookmarks/add-bookmarks-list/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/bookmarks/bookmark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/bookmark/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/bookmarks/bookmarks/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/bookmarks/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/bookmarks/bookmarks-list/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/bookmarks-list/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/bookmarks/mnemonic/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/mnemonic/index.tsx"
     }
   ],
   "meta": {

@@ -5,19 +5,13 @@
   "title": "Start Timer",
   "description": "Start Timer icon from Plugins Tasks category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/tasks/index.ts",
+      "path": "registry/icons/plugins/tasks/start-timer/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/tasks/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/tasks/start-timer/index.tsx"
     }
   ],
   "meta": {

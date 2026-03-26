@@ -5,19 +5,13 @@
   "title": "Status Disabled",
   "description": "Status Disabled icon from General Setting Sync category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/setting-sync/index.ts",
+      "path": "registry/icons/general/setting-sync/status-disabled/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/setting-sync/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/setting-sync/status-disabled/index.tsx"
     }
   ],
   "meta": {

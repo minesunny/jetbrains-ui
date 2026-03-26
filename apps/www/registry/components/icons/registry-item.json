@@ -3,8 +3,9 @@
   "name": "icons-components",
   "type": "registry:ui",
   "title": "Component Icons",
-  "description": "Sprite-based icon helpers.",
-  "dependencies": ["next-themes"],
+  "description": "Shared icon primitives used by JetBrains UI components.",
+  "dependencies": [],
+  "registryDependencies": ["utils"],
   "files": [
     {
       "path": "registry/components/icons/index.ts",
@@ -12,31 +13,21 @@
       "target": "components/jetbrains-ui/icons/index.ts"
     },
     {
-      "path": "registry/components/icons/icon/index.tsx",
+      "path": "registry/components/icons/icons.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/icon.tsx"
-    },
-    {
-      "path": "registry/components/icons/categories.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/categories.tsx"
-    },
-    {
-      "path": "registry/components/icons/general.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general.tsx"
+      "target": "components/jetbrains-ui/icons/icons.tsx"
     }
   ],
   "meta": {
     "keywords": ["icons", "jetbrains", "ui", "component"],
     "category": "icons",
     "docs": {
-      "description": "Sprite-based icon entrypoints for JetBrains SVG sprites.",
+      "description": "Shared icon primitives used by core JetBrains UI components.",
       "features": [
-        "Full-path sprite icon lookup",
-        "Theme-aware SVG helper",
-        "Top-category sprite files",
-        "Top-category convenience wrappers"
+        "Lightweight inline SVG icons",
+        "Shared sizing API",
+        "CurrentColor-based styling",
+        "Works as an internal dependency for registry components"
       ]
     }
   }

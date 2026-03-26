@@ -1,0 +1,82 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type CuhProps = IconProps;
+
+const CuhLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      d="M3.026 13.156q-.69 0-1.124-.41-.43-.416-.637-1.28t-.208-2.243V7.676q0-1.378.208-2.242.207-.864.637-1.274.435-.416 1.124-.416.63 0 1.04.318.416.312.63.975.216.663.26 1.716H3.866a6.7 6.7 0 0 0-.124-1.15q-.097-.442-.273-.65a.55.55 0 0 0-.442-.215q-.286 0-.474.312-.19.306-.28.956-.084.644-.084 1.67v1.547q0 1.028.084 1.677.09.644.28.956.188.306.474.306.267 0 .442-.209.176-.214.273-.656t.124-1.15h1.092q-.045 1.052-.26 1.716t-.63.981q-.41.312-1.04.312M7.747 13.156q-.65 0-1.073-.39-.421-.396-.63-1.196-.208-.806-.208-2.041V3.9H6.92v5.629q0 .89.091 1.476.091.585.273.87.183.28.462.28.286 0 .468-.28.182-.285.266-.87.091-.585.091-1.476V3.9h1.092v5.629q0 1.235-.208 2.041-.207.8-.637 1.196-.422.39-1.072.39M10.916 13V3.9H12v3.926h1.534V3.9h1.092V13h-1.092V8.846h-1.534V13z"
+      fill="#E66D17"
+    />
+  </svg>
+);
+
+const CuhDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      d="M3.026 13.156q-.69 0-1.124-.41-.43-.416-.637-1.28t-.208-2.243V7.676q0-1.378.208-2.242.207-.864.637-1.274.435-.416 1.124-.416.63 0 1.04.318.416.312.63.975.216.663.26 1.716H3.866a6.7 6.7 0 0 0-.124-1.15q-.097-.442-.273-.65a.55.55 0 0 0-.442-.215q-.286 0-.474.312-.19.306-.28.956-.084.644-.084 1.67v1.547q0 1.028.084 1.677.09.644.28.956.188.306.474.306.267 0 .442-.209.176-.214.273-.656t.124-1.15h1.092q-.045 1.052-.26 1.716t-.63.981q-.41.312-1.04.312M7.747 13.156q-.65 0-1.073-.39-.421-.396-.63-1.196-.208-.806-.208-2.041V3.9H6.92v5.629q0 .89.091 1.476.091.585.273.87.183.28.462.28.286 0 .468-.28.182-.285.266-.87.091-.585.091-1.476V3.9h1.092v5.629q0 1.235-.208 2.041-.207.8-.637 1.196-.422.39-1.072.39M10.916 13V3.9H12v3.926h1.534V3.9h1.092V13h-1.092V8.846h-1.534V13z"
+      fill="#E66D17"
+    />
+  </svg>
+);
+
+export const Cuh: React.FC<CuhProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? CuhLight : CuhDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

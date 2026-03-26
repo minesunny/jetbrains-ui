@@ -5,19 +5,13 @@
   "title": "Multiplatform Library",
   "description": "Multiplatform Library icon from Plugins Kotlin category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/kotlin/index.ts",
+      "path": "registry/icons/plugins/kotlin/multiplatform-library/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/kotlin/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/multiplatform-library/index.tsx"
     }
   ],
   "meta": {

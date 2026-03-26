@@ -5,19 +5,13 @@
   "title": "Unfreeze All",
   "description": "Unfreeze All icon from Plugins Cidr category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/cidr/index.ts",
+      "path": "registry/icons/plugins/cidr/unfreeze-all/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/cidr/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/cidr/unfreeze-all/index.tsx"
     }
   ],
   "meta": {

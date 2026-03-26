@@ -5,19 +5,13 @@
   "title": "Out Sight Color",
   "description": "Out Sight Color icon from Plugins Outsight category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/outsight/index.ts",
+      "path": "registry/icons/plugins/outsight/out-sight-color/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/outsight/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/outsight/out-sight-color/index.tsx"
     }
   ],
   "meta": {

@@ -1,0 +1,102 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type PhpRemoteProps = IconProps;
+
+const PhpRemoteLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M1.266 7.691H3.64q1.044.01 1.514.602.47.594.31 1.62-.062.47-.275.921a2.7 2.7 0 0 1-.566.815q-.442.46-.948.584a4.4 4.4 0 0 1-1.044.124H1.567l-.336 1.682H0zm1.036 1.01-.531 2.656q.052.009.106.009h.124q.85.009 1.417-.169.566-.186.761-1.292.16-.93-.319-1.072-.47-.14-1.177-.133-.107.01-.204.01h-.186zM6.865 6h1.222L7.74 7.691H8.84q.902.018 1.346.372.452.354.266 1.346l-.594 2.948h-1.24l.568-2.815q.088-.444-.054-.629-.142-.186-.61-.186l-.983-.009-.726 3.64H5.59zM11.762 7.69h2.373q1.045.01 1.514.603t.31 1.62q-.062.47-.274.921a2.7 2.7 0 0 1-.567.815q-.443.46-.947.584a4.4 4.4 0 0 1-1.045.124h-1.063l-.336 1.682h-1.23zm1.036 1.01-.531 2.657q.052.008.106.008h.124q.85.009 1.417-.168.566-.186.761-1.293.16-.93-.319-1.07-.469-.143-1.177-.134a3 3 0 0 1-.204.01h-.186z"
+      fill="#676BD7"
+    />
+    <path
+      d="M10.646 5.646a.5.5 0 0 0 .708.708zm.708.708 4.5-4.5-.708-.708-4.5 4.5z"
+      fill="#3574F0"
+    />
+    <path
+      d="M12.5 1.5h3v3"
+      stroke="#3574F0"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const PhpRemoteDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M1.266 7.691H3.64q1.044.01 1.514.602.47.594.31 1.62-.062.47-.275.921a2.7 2.7 0 0 1-.566.815q-.442.46-.948.584a4.4 4.4 0 0 1-1.044.124H1.567l-.336 1.682H0zm1.036 1.01-.531 2.656q.052.009.106.009h.124q.85.009 1.417-.169.566-.186.761-1.292.16-.93-.319-1.072-.47-.14-1.177-.133-.107.01-.204.01h-.186zM6.865 6h1.222L7.74 7.691H8.84q.902.018 1.346.372.452.354.266 1.346l-.594 2.948h-1.24l.568-2.815q.088-.444-.054-.629-.142-.186-.61-.186l-.983-.009-.726 3.64H5.59zM11.762 7.69h2.373q1.045.01 1.514.603t.31 1.62q-.062.47-.274.921a2.7 2.7 0 0 1-.567.815q-.443.46-.947.584a4.4 4.4 0 0 1-1.045.124h-1.063l-.336 1.682h-1.23zm1.036 1.01-.531 2.657q.052.008.106.008h.124q.85.009 1.417-.168.566-.186.761-1.293.16-.93-.319-1.07-.469-.143-1.177-.134a3 3 0 0 1-.204.01h-.186z"
+      fill="#999DF7"
+    />
+    <path
+      d="M10.646 5.646a.5.5 0 0 0 .708.708zm.708.708 4.5-4.5-.708-.708-4.5 4.5z"
+      fill="#3574F0"
+    />
+    <path
+      d="M12.5 1.5h3v3"
+      stroke="#3574F0"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const PhpRemote: FC<PhpRemoteProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? PhpRemoteLight : PhpRemoteDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

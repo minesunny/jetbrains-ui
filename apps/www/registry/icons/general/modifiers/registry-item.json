@@ -5,8 +5,7 @@
   "title": "General Modifiers Icons",
   "description": "All 9 icons from the General Modifiers category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
@@ -15,9 +14,49 @@
       "target": "components/jetbrains-ui/icons/general/modifiers/index.ts"
     },
     {
-      "path": "public/icons/general.svg",
+      "path": "registry/icons/general/modifiers/final-mark/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/modifiers/final-mark/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/modifiers/junit-test-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/junit-test-mark/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/modifiers/locked/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/locked/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/modifiers/process-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/process-mark/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/modifiers/runnable-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/runnable-mark/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/modifiers/shared/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/shared/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/modifiers/static-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/static-mark/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/modifiers/symlink/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/symlink/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/modifiers/tab-alert/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/tab-alert/index.tsx"
     }
   ],
   "meta": {

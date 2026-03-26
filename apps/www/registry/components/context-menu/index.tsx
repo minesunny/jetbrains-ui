@@ -2,9 +2,9 @@
 
 import * as React from 'react';
 import { ContextMenu as ContextMenuPrimitive } from 'radix-ui';
+import { CheckIcon, ChevronRightIcon, CircleIcon } from 'lucide-react';
 
 import { cn } from '@workspace/ui/lib/utils';
-import { General } from '@/registry/components/icons';
 import {
   Tooltip,
   TooltipContent,
@@ -130,12 +130,7 @@ function ContextMenuCheckboxItem({
     >
       <span className="jb-cmenu-item-indicator absolute left-2 inline-flex size-[14px] items-center justify-center">
         <ContextMenuPrimitive.ItemIndicator>
-          <General
-            name="general/checkmark"
-            className="jb-cmenu-check-icon size-3"
-            width={12}
-            height={12}
-          />
+          <CheckIcon className="jb-cmenu-check-icon size-3" />
         </ContextMenuPrimitive.ItemIndicator>
       </span>
       {children}
@@ -170,7 +165,7 @@ function ContextMenuRadioItem({
     >
       <span className="jb-cmenu-item-indicator absolute left-2 inline-flex size-[14px] items-center justify-center">
         <ContextMenuPrimitive.ItemIndicator>
-          <span className="jb-cmenu-radio-icon h-2 w-2 rounded-full bg-current" />
+          <CircleIcon className="jb-cmenu-radio-icon h-2 w-2 fill-current stroke-[3px]" />
         </ContextMenuPrimitive.ItemIndicator>
       </span>
       {children}
@@ -252,12 +247,7 @@ function ContextMenuSubTrigger({
       {...props}
     >
       {children}
-      <General
-        name="general/chevron-right"
-        className="jb-cmenu-sub-chevron ml-auto size-[14px]"
-        width={14}
-        height={14}
-      />
+      <ChevronRightIcon className="jb-cmenu-sub-chevron ml-auto size-[14px]" />
     </ContextMenuPrimitive.SubTrigger>
   );
 }

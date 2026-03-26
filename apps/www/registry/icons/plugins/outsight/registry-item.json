@@ -5,8 +5,7 @@
   "title": "Plugins Outsight Icons",
   "description": "All 2 icons from the Plugins Outsight category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
@@ -15,9 +14,14 @@
       "target": "components/jetbrains-ui/icons/plugins/outsight/index.ts"
     },
     {
-      "path": "public/icons/plugins.svg",
+      "path": "registry/icons/plugins/outsight/out-sight/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/outsight/out-sight/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/outsight/out-sight-color/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/outsight/out-sight-color/index.tsx"
     }
   ],
   "meta": {

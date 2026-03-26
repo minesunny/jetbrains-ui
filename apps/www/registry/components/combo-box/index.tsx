@@ -2,7 +2,8 @@
 
 import * as React from 'react';
 import * as SelectPrimitive from '@radix-ui/react-select';
-import { General } from '@/registry/components/icons';
+import { CheckIcon } from 'lucide-react';
+import { ChevronDown } from '@/registry/icons/general/general/chevron-down';
 
 import { cn } from '@workspace/ui/lib/utils';
 import './index.css';
@@ -47,12 +48,7 @@ const ComboBoxTrigger = React.forwardRef<
       className="jb-cbx-icon-area inline-flex h-full w-7 shrink-0 items-center justify-center self-stretch border-l"
     >
       <span className="jb-cbx-icon inline-flex transition-transform duration-150">
-        <General
-          name="general/chevron-down"
-          className="jb-cbx-icon-chevron"
-          width={16}
-          height={16}
-        />
+        <ChevronDown size="md" className="jb-cbx-icon-chevron" />
       </span>
     </SelectPrimitive.Icon>
   </SelectPrimitive.Trigger>
@@ -112,12 +108,7 @@ const ComboBoxItem = React.forwardRef<
   >
     <span className="jb-cbx-item-indicator absolute left-2 inline-flex h-[14px] w-[14px] items-center justify-center">
       <SelectPrimitive.ItemIndicator>
-        <General
-          name="general/checkmark"
-          className="jb-cbx-item-check h-3 w-3"
-          width={12}
-          height={12}
-        />
+        <CheckIcon className="jb-cbx-item-check h-3 w-3" />
       </SelectPrimitive.ItemIndicator>
     </span>
     <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>

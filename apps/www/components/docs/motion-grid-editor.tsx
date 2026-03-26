@@ -13,6 +13,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/registry/components/animate/tooltip';
+import { Trash2Icon } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -23,20 +24,19 @@ import { Button } from '@workspace/ui/components/ui/button';
 import { Input } from '@workspace/ui/components/ui/input';
 import { Label } from '@workspace/ui/components/ui/label';
 import { ScrollArea } from '@workspace/ui/components/ui/scroll-area';
+import { cn } from '@workspace/ui/lib/utils';
 import {
   ArrowLeftIcon,
   ArrowRightIcon,
-  CheckIcon,
   CopyIcon,
   PlusIcon,
   RotateCcwIcon,
   SaveIcon,
-  SquareRoundCorner,
-  Timer,
-  Trash2Icon,
+  CheckIcon,
   XIcon,
-} from '@workspace/ui/components/icons/system-icons';
-import { cn } from '@workspace/ui/lib/utils';
+  Timer,
+  SquareRoundCorner,
+} from 'lucide-react';
 import * as React from 'react';
 
 const GRID_SIZE = [7, 7] as [number, number];

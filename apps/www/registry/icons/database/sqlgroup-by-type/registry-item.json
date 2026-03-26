@@ -5,19 +5,13 @@
   "title": "Sqlgroup By Type",
   "description": "Sqlgroup By Type icon from Database category.",
   "registryDependencies": [
-    "icons-database-types",
-    "icons-components"
+    "icons-database-types"
   ],
   "files": [
     {
-      "path": "registry/icons/database/index.ts",
+      "path": "registry/icons/database/sqlgroup-by-type/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/index.ts"
-    },
-    {
-      "path": "public/icons/database.svg",
-      "type": "registry:ui",
-      "target": "public/icons/database.svg"
+      "target": "components/jetbrains-ui/icons/database/sqlgroup-by-type/index.tsx"
     }
   ],
   "meta": {

@@ -5,19 +5,13 @@
   "title": "Thread Running",
   "description": "Thread Running icon from Debugger category.",
   "registryDependencies": [
-    "icons-debugger-types",
-    "icons-components"
+    "icons-debugger-types"
   ],
   "files": [
     {
-      "path": "registry/icons/debugger/index.ts",
+      "path": "registry/icons/debugger/thread-running/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/index.ts"
-    },
-    {
-      "path": "public/icons/debugger.svg",
-      "type": "registry:ui",
-      "target": "public/icons/debugger.svg"
+      "target": "components/jetbrains-ui/icons/debugger/thread-running/index.tsx"
     }
   ],
   "meta": {

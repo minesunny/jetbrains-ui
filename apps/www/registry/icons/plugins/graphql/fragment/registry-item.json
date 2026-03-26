@@ -5,19 +5,13 @@
   "title": "Fragment",
   "description": "Fragment icon from Plugins Graphql category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/graphql/index.ts",
+      "path": "registry/icons/plugins/graphql/fragment/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/graphql/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/graphql/fragment/index.tsx"
     }
   ],
   "meta": {

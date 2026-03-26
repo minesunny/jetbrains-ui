@@ -120,6 +120,7 @@ export const iconNames = [
   'qrc',
   'qt',
   'quatro',
+  'react',
   'redoc',
   'regexp',
   'rst',
@@ -154,8 +155,6 @@ export const iconNames = [
   'yaml',
   'yarn',
   'yarn-lock',
-  'react-icon',
-  'react',
 ] as const;
 
 export type IconName = (typeof iconNames)[number];

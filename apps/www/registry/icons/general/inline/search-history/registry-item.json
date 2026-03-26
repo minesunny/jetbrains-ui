@@ -5,19 +5,13 @@
   "title": "Search History",
   "description": "Search History icon from General Inline category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/inline/index.ts",
+      "path": "registry/icons/general/inline/search-history/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/inline/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/inline/search-history/index.tsx"
     }
   ],
   "meta": {

@@ -5,8 +5,7 @@
   "title": "General Spinner Icons",
   "description": "All 1 icons from the General Spinner category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
@@ -15,9 +14,9 @@
       "target": "components/jetbrains-ui/icons/general/spinner/index.ts"
     },
     {
-      "path": "public/icons/general.svg",
+      "path": "registry/icons/general/spinner/loader/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/spinner/loader/index.tsx"
     }
   ],
   "meta": {

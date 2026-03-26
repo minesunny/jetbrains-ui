@@ -3,7 +3,8 @@
   "type": "registry:style",
   "dependencies": [
     "tw-animate-css",
-    "class-variance-authority"
+    "class-variance-authority",
+    "lucide-react"
   ],
   "registryDependencies": [
     "utils"

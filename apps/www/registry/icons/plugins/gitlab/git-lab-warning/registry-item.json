@@ -5,19 +5,13 @@
   "title": "Git Lab Warning",
   "description": "Git Lab Warning icon from Plugins Gitlab category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/gitlab/index.ts",
+      "path": "registry/icons/plugins/gitlab/git-lab-warning/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/gitlab/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/gitlab/git-lab-warning/index.tsx"
     }
   ],
   "meta": {

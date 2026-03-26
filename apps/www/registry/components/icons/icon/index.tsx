@@ -1,215 +1,109 @@
 'use client';
 
 import * as React from 'react';
-import { useTheme } from 'next-themes';
+import { cn } from '@workspace/ui/lib/utils';
 
-const TOP_LEVEL_ICON_GROUPS = [
-  'breakpoints',
-  'build',
-  'database',
-  'debugger',
-  'editor-icons',
-  'file-types',
-  'general',
-  'nodes',
-  'plugins',
-  'run',
-  'run-configurations',
-  'terminal',
-  'vcs',
-] as const;
-
-export type ResolvedTheme = 'light' | 'dark';
-export type SpriteIconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-
-export const spriteSizeMap: Record<SpriteIconSize, number> = {
-  xs: 12,
-  sm: 14,
-  md: 16,
-  lg: 20,
-  xl: 24,
-};
-
-type TopLevelIconGroup = (typeof TOP_LEVEL_ICON_GROUPS)[number];
-
-function normalizeSegment(segment: string) {
-  return segment
-    .trim()
-    .replace(/([a-z0-9])([A-Z])/g, '$1-$2')
-    .replace(/[\s_]+/g, '-')
-    .toLowerCase()
-    .replace(/[^a-z0-9-]/g, '')
-    .replace(/-+/g, '-')
-    .replace(/^-+|-+$/g, '');
-}
-
-export function normalizeIconPath(name: string) {
-  return name.split('/').map(normalizeSegment).filter(Boolean).join('/');
-}
-
-function isTopLevelIconGroup(value: string): value is TopLevelIconGroup {
-  return TOP_LEVEL_ICON_GROUPS.includes(value as TopLevelIconGroup);
-}
-
-function resolveTheme(theme: string | undefined): ResolvedTheme {
-  return theme === 'dark' ? 'dark' : 'light';
-}
-
-export function resolveSpriteHref(
-  name: string,
-  theme: ResolvedTheme,
-): string | null {
-  const segments = normalizeIconPath(name).split('/').filter(Boolean);
-  const topCategory = segments[0];
-  const symbolName = segments.at(-1);
-
-  if (!topCategory || !symbolName || segments.length < 2) {
-    return null;
-  }
-
-  if (!isTopLevelIconGroup(topCategory)) {
-    return null;
-  }
-
-  return `/icons/${topCategory}.svg#${symbolName}_${theme}`;
-}
-
-interface BaseSpriteProps
-  extends Omit<React.SVGProps<SVGSVGElement>, 'name' | 'width' | 'height'> {
-  className?: string;
-  height?: React.CSSProperties['height'];
+export interface IconProps extends Omit<React.SVGProps<SVGSVGElement>, 'name'> {
+  /**
+   * 图标名称
+   * @example 'feedback' | 'graph-ql' | 'add'
+   */
   name: string;
-  title?: string;
-  width?: React.CSSProperties['width'];
+  /**
+   * 主题模式
+   * @default 'light'
+   */
+  theme?: 'light' | 'dark';
+  /**
+   * 图标大小
+   * @default 16
+   */
+  size?: number;
+  /**
+   * CSS 类名
+   */
+  className?: string;
 }
 
-export type SVGProps = BaseSpriteProps;
-
-function warnInvalidIconName(name: string) {
-  if (process.env.NODE_ENV === 'production') {
-    return;
-  }
-
-  console.warn(
-    `[jetbrains-ui/icons] Invalid icon name "${name}". ` +
-      'Use a full icon path such as "breakpoints/breakpoint" or ' +
-      '"general/actions/add-file".',
-  );
-}
-
-function BaseSvg({
-  'aria-hidden': ariaHidden,
-  'aria-label': ariaLabel,
-  height = '1em',
-  href,
-  title,
-  width = '1em',
+/**
+ * Icon 组件 - 从 General.svg sprite 中渲染指定图标
+ *
+ * 该组件使用 SVG sprite 技术，通过 `<use>` 标签引用预定义的图标符号。
+ * 支持 light/dark 两种主题模式。
+ *
+ * @example
+ * ```tsx
+ * // 基础用法
+ * <Icon name="feedback" />
+ *
+ * // 指定主题和大小
+ * <Icon name="graph-ql" theme="dark" size={20} />
+ *
+ * // 使用自定义类名
+ * <Icon name="add" className="text-blue-500" />
+ *
+ * // 使用主题变量
+ * <Icon name="feedback" theme={theme === 'dark' ? 'dark' : 'light'} />
+ * ```
+ */
+export function Icon({
+  name,
+  theme = 'light',
+  size = 16,
+  className,
   ...props
-}: Omit<SVGProps, 'name'> & { href: string }) {
-  const isAccessible = Boolean(ariaLabel || title);
+}: IconProps) {
+  // 标准化图标名称：转换为 kebab-case
+  const normalizedName = name
+    .toLowerCase()
+    .replace(/([a-z])([A-Z])/g, '$1-$2') // camelCase to kebab-case
+    .replace(/[\s_]+/g, '-') // spaces and underscores to hyphens
+    .replace(/[^a-z0-9-]/g, '') // remove special characters
+    .replace(/-+/g, '-') // multiple hyphens to single
+    .trim();
+
+  const iconId = `icon-${normalizedName}-${theme}`;
 
   return (
     <svg
-      aria-hidden={ariaHidden ?? (isAccessible ? undefined : true)}
-      aria-label={ariaLabel}
-      height={height}
-      role={props.role ?? (isAccessible ? 'img' : 'presentation')}
-      width={width}
+      width={size}
+      height={size}
+      viewBox="0 0 88 44"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn(
+        'inline-flex shrink-0 align-middle',
+        // 添加默认样式以适应不同大小
+        size >= 20 && 'w-5 h-5',
+        size >= 24 && 'w-6 h-6',
+        size >= 32 && 'w-8 h-8',
+        className,
+      )}
       {...props}
     >
-      {title ? <title>{title}</title> : null}
-      <use href={href} xlinkHref={href} />
+      <use
+        href={`/icons/general.svg#${iconId}`}
+        style={{
+          width: '100%',
+          height: '100%',
+        }}
+      />
     </svg>
   );
 }
 
-export const SVG: React.FC<SVGProps> = ({ height, name, width, ...props }) => {
-  const { resolvedTheme } = useTheme();
-  const href = resolveSpriteHref(name, resolveTheme(resolvedTheme));
-
-  if (!href) {
-    warnInvalidIconName(name);
-    return null;
-  }
-
-  return <BaseSvg height={height} href={href} width={width} {...props} />;
-};
-
-export interface IconProps
-  extends Omit<BaseSpriteProps, 'height' | 'width' | 'name'> {
-  name: string;
-  size?: number | string;
-  theme?: ResolvedTheme;
-}
-
-export function Icon({ name, size = 16, theme, ...props }: IconProps) {
-  const { resolvedTheme } = useTheme();
-  const href = resolveSpriteHref(name, resolveTheme(theme ?? resolvedTheme));
-
-  if (!href) {
-    warnInvalidIconName(name);
-    return null;
-  }
-
-  return <BaseSvg height={size} href={href} width={size} {...props} />;
-}
-
+/**
+ * 动态主题图标组件 - 根据当前主题自动选择图标版本
+ */
 export interface ThemedIconProps extends Omit<IconProps, 'theme'> {
-  currentTheme: ResolvedTheme;
+  /**
+   * 当前主题 ('light' | 'dark')
+   */
+  currentTheme: 'light' | 'dark';
 }
 
 export function ThemedIcon({ currentTheme, ...props }: ThemedIconProps) {
   return <Icon {...props} theme={currentTheme} />;
 }
 
-export interface SpriteIconProps
-  extends Omit<BaseSpriteProps, 'height' | 'name' | 'width'> {
-  mode?: ResolvedTheme;
-  size?: SpriteIconSize;
-}
-
-export interface SpriteIconDefinition {
-  displayName?: string;
-  name: string;
-  viewBox: string | Record<ResolvedTheme, string>;
-}
-
-export function createSpriteIcon({
-  displayName,
-  name,
-  viewBox,
-}: SpriteIconDefinition): React.FC<SpriteIconProps> {
-  const SpriteIcon: React.FC<SpriteIconProps> = ({
-    mode,
-    size = 'md',
-    ...props
-  }) => {
-    const { resolvedTheme } = useTheme();
-    const theme = resolveTheme(mode ?? resolvedTheme);
-    const href = resolveSpriteHref(name, theme);
-
-    if (!href) {
-      warnInvalidIconName(name);
-      return null;
-    }
-
-    const resolvedViewBox =
-      typeof viewBox === 'string' ? viewBox : viewBox[theme];
-
-    return (
-      <BaseSvg
-        height={spriteSizeMap[size]}
-        href={href}
-        viewBox={resolvedViewBox}
-        width={spriteSizeMap[size]}
-        {...props}
-      />
-    );
-  };
-
-  SpriteIcon.displayName = displayName ?? name;
-
-  return SpriteIcon;
-}
-
-export default SVG;
+export default Icon;

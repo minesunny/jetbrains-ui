@@ -5,19 +5,13 @@
   "title": "Info Outline",
   "description": "Info Outline icon from General Status category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/status/index.ts",
+      "path": "registry/icons/general/status/info-outline/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/status/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/status/info-outline/index.tsx"
     }
   ],
   "meta": {

@@ -5,19 +5,13 @@
   "title": "Multiple Breakpoints Muted",
   "description": "Multiple Breakpoints Muted icon from Breakpoints category.",
   "registryDependencies": [
-    "icons-breakpoints-types",
-    "icons-components"
+    "icons-breakpoints-types"
   ],
   "files": [
     {
-      "path": "registry/icons/breakpoints/index.ts",
+      "path": "registry/icons/breakpoints/multiple-breakpoints-muted/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/breakpoints/index.ts"
-    },
-    {
-      "path": "public/icons/breakpoints.svg",
-      "type": "registry:ui",
-      "target": "public/icons/breakpoints.svg"
+      "target": "components/jetbrains-ui/icons/breakpoints/multiple-breakpoints-muted/index.tsx"
     }
   ],
   "meta": {

@@ -1,0 +1,211 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type ApachePhoenixProps = IconProps;
+
+const ApachePhoenixLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M4.454 4.439s-.7.039-1.059.619c.438-.308 1.059-.205 1.059-.205s.414.438.534.818c.346 1.105-1.561 2.501-1.647 4.387C3.22 12.771 5.611 15 8.281 15s4.382-2.597 4.382-4.716c0-2.483-1.134-3.778-1.212-5.95-.05-1.371.477-2.425 1.012-3.334-1.738.624-2.4 2.49-2.474 3.078-.342 2.68 1.462 4.254.935 7.061a2.65 2.65 0 0 1-2.574 2.152c-1.777 0-3.203-1.553-3.203-3.233S6.27 7.28 6.762 5.094c.571 0 .636-.284.636-.284s-.16 0-.235-.09c.366-.164.29-.5.29-.5s-.394.127-.913.042c0 0-.538-.485-1.194-.429-.613.053-.892.606-.892.606"
+      fill="url(#a)"
+    />
+    <path
+      d="M8.6 4.84c0-1.805 1.577-3.157 1.577-3.157s-.755 2.067-.611 3.453c.108 1.046.498 1.642.819 2.644.523 1.638 0 3.464 0 3.464s.134-1.933-.55-3.283c-.578-1.138-1.236-1.657-1.236-3.12"
+      fill="url(#b)"
+    />
+    <path
+      d="M7.42 8.965c-.695-.788-.266-3.324-.266-3.324s-.095 1.275.437 2.146c.341.559.852.846 1.353 1.524.74 1 1.172 2.373 1.172 2.373s-.45-.977-1.211-1.5c-.733-.503-1.009-.678-1.486-1.22"
+      fill="url(#c)"
+    />
+    <path
+      d="M7.713 7.125c-.67-2.051.887-4.291.887-4.291s-.67 1.184-.276 3.047C8.55 6.96 9.04 7.244 9.487 8.18c.873 1.828.735 3.163.735 3.163s-.32-1.156-1.047-2.182c-.552-.778-1.144-1.06-1.462-2.036"
+      fill="url(#d)"
+    />
+    <defs>
+      <linearGradient
+        id="a"
+        x1="3.337"
+        y1="8"
+        x2="12.663"
+        y2="8"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#FF9A34" />
+        <stop offset="1" stopColor="#EA222E" />
+      </linearGradient>
+      <linearGradient
+        id="b"
+        x1="7.023"
+        y1="1.683"
+        x2="10.617"
+        y2="11.684"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#FF9235" />
+        <stop offset=".449" stopColor="#EC3D2E" />
+        <stop offset=".538" stopColor="#ED402F" />
+        <stop offset="1" stopColor="#FE9133" />
+      </linearGradient>
+      <linearGradient
+        id="c"
+        x1="7.023"
+        y1="1.683"
+        x2="10.617"
+        y2="11.684"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#FF9235" />
+        <stop offset=".449" stopColor="#EC3D2E" />
+        <stop offset=".538" stopColor="#ED402F" />
+        <stop offset="1" stopColor="#FE9133" />
+      </linearGradient>
+      <linearGradient
+        id="d"
+        x1="7.023"
+        y1="1.683"
+        x2="10.617"
+        y2="11.684"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#FF9235" />
+        <stop offset=".449" stopColor="#EC3D2E" />
+        <stop offset=".538" stopColor="#ED402F" />
+        <stop offset="1" stopColor="#FE9133" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+const ApachePhoenixDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path
+      d="M4.454 4.439s-.7.039-1.059.619c.438-.308 1.059-.205 1.059-.205s.414.438.534.818c.346 1.105-1.561 2.501-1.647 4.387C3.22 12.771 5.611 15 8.281 15s4.382-2.597 4.382-4.716c0-2.483-1.134-3.778-1.212-5.95-.05-1.371.477-2.425 1.012-3.334-1.738.624-2.4 2.49-2.474 3.078-.342 2.68 1.462 4.254.935 7.061a2.65 2.65 0 0 1-2.574 2.152c-1.777 0-3.203-1.553-3.203-3.233S6.27 7.28 6.762 5.094c.571 0 .636-.284.636-.284s-.16 0-.235-.09c.366-.164.29-.5.29-.5s-.394.127-.913.042c0 0-.538-.485-1.194-.429-.613.053-.892.606-.892.606"
+      fill="url(#a)"
+    />
+    <path
+      d="M8.6 4.84c0-1.805 1.577-3.157 1.577-3.157s-.755 2.067-.611 3.453c.108 1.046.498 1.642.819 2.644.523 1.638 0 3.464 0 3.464s.134-1.933-.55-3.283c-.578-1.138-1.236-1.657-1.236-3.12"
+      fill="url(#b)"
+    />
+    <path
+      d="M7.42 8.965c-.695-.788-.266-3.324-.266-3.324s-.095 1.275.437 2.146c.341.559.852.846 1.353 1.524.74 1 1.172 2.373 1.172 2.373s-.45-.977-1.211-1.5c-.733-.503-1.009-.678-1.486-1.22"
+      fill="url(#c)"
+    />
+    <path
+      d="M7.713 7.125c-.67-2.051.887-4.291.887-4.291s-.67 1.184-.276 3.047C8.55 6.96 9.04 7.244 9.487 8.18c.873 1.828.735 3.163.735 3.163s-.32-1.156-1.047-2.182c-.552-.778-1.144-1.06-1.462-2.036"
+      fill="url(#d)"
+    />
+    <defs>
+      <linearGradient
+        id="a"
+        x1="3.337"
+        y1="8"
+        x2="12.663"
+        y2="8"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#FF9A34" />
+        <stop offset="1" stopColor="#EA222E" />
+      </linearGradient>
+      <linearGradient
+        id="b"
+        x1="7.023"
+        y1="1.683"
+        x2="10.617"
+        y2="11.684"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#FF9235" />
+        <stop offset=".449" stopColor="#EC3D2E" />
+        <stop offset=".538" stopColor="#ED402F" />
+        <stop offset="1" stopColor="#FE9133" />
+      </linearGradient>
+      <linearGradient
+        id="c"
+        x1="7.023"
+        y1="1.683"
+        x2="10.617"
+        y2="11.684"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#FF9235" />
+        <stop offset=".449" stopColor="#EC3D2E" />
+        <stop offset=".538" stopColor="#ED402F" />
+        <stop offset="1" stopColor="#FE9133" />
+      </linearGradient>
+      <linearGradient
+        id="d"
+        x1="7.023"
+        y1="1.683"
+        x2="10.617"
+        y2="11.684"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#FF9235" />
+        <stop offset=".449" stopColor="#EC3D2E" />
+        <stop offset=".538" stopColor="#ED402F" />
+        <stop offset="1" stopColor="#FE9133" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
+export const ApachePhoenix: FC<ApachePhoenixProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? ApachePhoenixLight : ApachePhoenixDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

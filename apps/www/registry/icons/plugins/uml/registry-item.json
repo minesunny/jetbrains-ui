@@ -5,8 +5,7 @@
   "title": "Plugins Uml Icons",
   "description": "All 5 icons from the Plugins Uml category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
@@ -15,9 +14,29 @@
       "target": "components/jetbrains-ui/icons/plugins/uml/index.ts"
     },
     {
-      "path": "public/icons/plugins.svg",
+      "path": "registry/icons/plugins/uml/add-note/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/uml/add-note/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/uml/constructor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/constructor/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/uml/dependencies/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/dependencies/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/uml/edge-mod/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/edge-mod/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/uml/inner-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/uml/inner-class/index.tsx"
     }
   ],
   "meta": {

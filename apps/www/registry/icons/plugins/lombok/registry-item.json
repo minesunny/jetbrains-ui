@@ -5,8 +5,7 @@
   "title": "Plugins Lombok Icons",
   "description": "All 5 icons from the Plugins Lombok category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
@@ -15,9 +14,29 @@
       "target": "components/jetbrains-ui/icons/plugins/lombok/index.ts"
     },
     {
-      "path": "public/icons/plugins.svg",
+      "path": "registry/icons/plugins/lombok/config/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/lombok/config/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/lombok/lombok/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/lombok/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/lombok/lombok-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/lombok-class/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/lombok/lombok-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/lombok-field/index.tsx"
+    },
+    {
+      "path": "registry/icons/plugins/lombok/lombok-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/lombok/lombok-method/index.tsx"
     }
   ],
   "meta": {

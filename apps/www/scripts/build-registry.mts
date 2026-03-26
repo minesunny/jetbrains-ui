@@ -142,6 +142,7 @@ async function buildRegistryFile() {
       dependencies: [
         'tw-animate-css',
         'class-variance-authority',
+        'lucide-react',
       ],
       registryDependencies: ['utils'],
       cssVars: {},

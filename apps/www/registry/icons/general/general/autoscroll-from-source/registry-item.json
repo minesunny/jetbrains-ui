@@ -5,25 +5,20 @@
   "title": "Autoscroll From Source",
   "description": "Autoscroll From Source icon from General General category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/general/index.ts",
+      "path": "registry/icons/general/general/autoscroll-from-source/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/general/autoscroll-from-source/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
       "autoscroll-from-source",
       "icon",
+      "general",
       "general",
       "jetbrains"
     ]

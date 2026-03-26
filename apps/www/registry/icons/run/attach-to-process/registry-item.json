@@ -5,19 +5,13 @@
   "title": "Attach To Process",
   "description": "Attach To Process icon from Run category.",
   "registryDependencies": [
-    "icons-run-types",
-    "icons-components"
+    "icons-run-types"
   ],
   "files": [
     {
-      "path": "registry/icons/run/index.ts",
+      "path": "registry/icons/run/attach-to-process/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run/index.ts"
-    },
-    {
-      "path": "public/icons/run.svg",
-      "type": "registry:ui",
-      "target": "public/icons/run.svg"
+      "target": "components/jetbrains-ui/icons/run/attach-to-process/index.tsx"
     }
   ],
   "meta": {

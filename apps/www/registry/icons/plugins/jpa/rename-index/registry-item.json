@@ -5,19 +5,13 @@
   "title": "Rename Index",
   "description": "Rename Index icon from Plugins Jpa category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/jpa/index.ts",
+      "path": "registry/icons/plugins/jpa/rename-index/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/jpa/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/jpa/rename-index/index.tsx"
     }
   ],
   "meta": {

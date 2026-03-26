@@ -1,11 +1,6 @@
+import { CircleCheck, CircleX, Info, TriangleAlert } from 'lucide-react';
 import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
 
-import {
-  CircleCheck,
-  CircleX,
-  Info,
-  TriangleAlert,
-} from '@workspace/ui/components/icons/system-icons';
 import { cn } from '@workspace/ui/lib/utils';
 
 type CalloutProps = Omit<

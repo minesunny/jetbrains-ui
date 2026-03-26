@@ -5,7 +5,7 @@
   "title": "Combo Box",
   "description": "JetBrains UI 风格的组合框组件，基于 Radix UI Select",
   "dependencies": ["@radix-ui/react-select"],
-  "registryDependencies": ["utils", "icons-components"],
+  "registryDependencies": ["utils"],
   "files": [
     {
       "path": "registry/components/combo-box/index.tsx",

@@ -1,0 +1,84 @@
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../types';
+
+export type SybaseProps = IconProps;
+
+const SybaseLight: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path fill="#355CFF" d="M1 1H15V15H1z" />
+    <path
+      d="M2.766 15c-1.146-1.158-1.632-2.88-1.741-4.502A11 11 0 0 1 1 9.753c0-1.374.25-2.687.643-3.577C3.056 2.969 6.19 1.178 9.06 1.013c1.439-.083 2.845.24 3.944 1.038 1.057.768 1.79 1.95 1.996 3.526v1.21a3 3 0 0 1-.175.622c-.2.498-.531.946-.978 1.393-1.003 1.002-2.347 1.01-3.162.614a1.76 1.76 0 0 1-1-1.75c.074-.717.609-1.331 1.511-1.462l.144.99c-.47.068-.635.334-.66.575a.76.76 0 0 0 .443.748c.473.23 1.348.247 2.017-.422.387-.388.623-.726.756-1.058.132-.328.178-.684.135-1.13-.136-1.43-.754-2.421-1.615-3.047-.873-.634-2.037-.922-3.298-.849-2.532.146-5.313 1.738-6.56 4.568-.384.87-.637 2.34-.535 3.851s.55 2.957 1.458 3.871l.77.699z"
+      fill="#fff"
+    />
+  </svg>
+);
+
+const SybaseDark: FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title ? <title>{title}</title> : null}
+    <path fill="#355CFF" d="M1 1H15V15H1z" />
+    <path
+      d="M2.766 15c-1.146-1.158-1.632-2.88-1.741-4.502A11 11 0 0 1 1 9.753c0-1.374.25-2.687.643-3.577C3.056 2.969 6.19 1.178 9.06 1.013c1.439-.083 2.845.24 3.944 1.038 1.057.768 1.79 1.95 1.996 3.526v1.21a3 3 0 0 1-.175.622c-.2.498-.531.946-.978 1.393-1.003 1.002-2.347 1.01-3.162.614a1.76 1.76 0 0 1-1-1.75c.074-.717.609-1.331 1.511-1.462l.144.99c-.47.068-.635.334-.66.575a.76.76 0 0 0 .443.748c.473.23 1.348.247 2.017-.422.387-.388.623-.726.756-1.058.132-.328.178-.684.135-1.13-.136-1.43-.754-2.421-1.615-3.047-.873-.634-2.037-.922-3.298-.849-2.532.146-5.313 1.738-6.56 4.568-.384.87-.637 2.34-.535 3.851s.55 2.957 1.458 3.871l.77.699z"
+      fill="#fff"
+    />
+  </svg>
+);
+
+export const Sybase: FC<SybaseProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? SybaseLight : SybaseDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

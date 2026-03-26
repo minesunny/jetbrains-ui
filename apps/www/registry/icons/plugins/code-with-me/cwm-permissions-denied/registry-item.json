@@ -5,19 +5,13 @@
   "title": "Cwm Permissions Denied",
   "description": "Cwm Permissions Denied icon from Plugins Code With Me category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/code-with-me/index.ts",
+      "path": "registry/icons/plugins/code-with-me/cwm-permissions-denied/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/code-with-me/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/code-with-me/cwm-permissions-denied/index.tsx"
     }
   ],
   "meta": {

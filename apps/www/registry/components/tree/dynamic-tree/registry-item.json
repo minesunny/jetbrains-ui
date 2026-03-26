@@ -4,15 +4,12 @@
   "type": "registry:ui",
   "title": "Dynamic Tree",
   "description": "JetBrains-style tree presenter for items created with @headless-tree.",
-  "dependencies": [
-    "@headless-tree/core",
-    "@headless-tree/react"
-  ],
+  "dependencies": ["@headless-tree/core", "@headless-tree/react"],
   "registryDependencies": [
     "utils",
+    "icons-components",
     "scroll-area",
-    "context-menu",
-    "icons-components"
+    "context-menu"
   ],
   "files": [
     {

@@ -5,19 +5,13 @@
   "title": "Github",
   "description": "Github icon from Plugins Github category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/github/index.ts",
+      "path": "registry/icons/plugins/github/github/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/github/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/github/github/index.tsx"
     }
   ],
   "meta": {
@@ -25,6 +19,7 @@
       "github",
       "icon",
       "plugins",
+      "github",
       "jetbrains"
     ]
   }

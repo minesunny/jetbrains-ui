@@ -5,19 +5,13 @@
   "title": "Favorites",
   "description": "Favorites icon from Nodes category.",
   "registryDependencies": [
-    "icons-nodes-types",
-    "icons-components"
+    "icons-nodes-types"
   ],
   "files": [
     {
-      "path": "registry/icons/nodes/index.ts",
+      "path": "registry/icons/nodes/favorites/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/index.ts"
-    },
-    {
-      "path": "public/icons/nodes.svg",
-      "type": "registry:ui",
-      "target": "public/icons/nodes.svg"
+      "target": "components/jetbrains-ui/icons/nodes/favorites/index.tsx"
     }
   ],
   "meta": {

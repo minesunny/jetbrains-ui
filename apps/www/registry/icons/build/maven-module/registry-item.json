@@ -5,19 +5,13 @@
   "title": "Maven Module",
   "description": "Maven Module icon from Build category.",
   "registryDependencies": [
-    "icons-build-types",
-    "icons-components"
+    "icons-build-types"
   ],
   "files": [
     {
-      "path": "registry/icons/build/index.ts",
+      "path": "registry/icons/build/maven-module/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/build/index.ts"
-    },
-    {
-      "path": "public/icons/build.svg",
-      "type": "registry:ui",
-      "target": "public/icons/build.svg"
+      "target": "components/jetbrains-ui/icons/build/maven-module/index.tsx"
     }
   ],
   "meta": {

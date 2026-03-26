@@ -1,0 +1,86 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type GraphQLProps = IconProps;
+
+const GraphQLLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9.5 2q0 .121-.019.239l3.017 1.645A1.5 1.5 0 1 1 14 6.414v3.171a1.5 1.5 0 1 1-1.502 2.531l-3.017 1.646q.02.116.019.238a1.5 1.5 0 1 1-2.981-.238l-3.017-1.646A1.5 1.5 0 1 1 2 9.585v-3.17a1.5 1.5 0 1 1 1.502-2.531L6.52 2.239A1.5 1.5 0 1 1 9.5 2M7.015 3.132l-.017-.016-3.017 1.646q.02.116.019.238a1.5 1.5 0 0 1-1 1.415v3.141zm.95.368L3.902 10h8.196L8.035 3.5zm1.02-.368L13 9.557V6.415a1.5 1.5 0 0 1-.981-1.653L9.002 3.116zM12 11H4q0 .121-.019.239l3.017 1.645A1.5 1.5 0 0 1 8 12.5c.385 0 .737.145 1.002.384l3.017-1.645A1.5 1.5 0 0 1 12 11"
+      fill="#DF0098"
+    />
+  </svg>
+);
+
+const GraphQLDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9.5 2q0 .121-.019.239l3.017 1.645A1.5 1.5 0 1 1 14 6.414v3.171a1.5 1.5 0 1 1-1.502 2.531l-3.017 1.646q.02.116.019.238a1.5 1.5 0 1 1-2.981-.238l-3.017-1.646A1.5 1.5 0 1 1 2 9.585v-3.17a1.5 1.5 0 1 1 1.502-2.531L6.52 2.239A1.5 1.5 0 1 1 9.5 2M7.015 3.132l-.017-.016-3.017 1.646q.02.116.019.238a1.5 1.5 0 0 1-1 1.415v3.141zm.95.368L3.902 10h8.196L8.035 3.5zm1.02-.368L13 9.557V6.415a1.5 1.5 0 0 1-.981-1.653L9.002 3.116zM12 11H4q0 .121-.019.239l3.017 1.645A1.5 1.5 0 0 1 8 12.5c.385 0 .737.145 1.002.384l3.017-1.645A1.5 1.5 0 0 1 12 11"
+      fill="#FF31CA"
+    />
+  </svg>
+);
+
+export const GraphQL: React.FC<GraphQLProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? GraphQLLight : GraphQLDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

@@ -5,19 +5,13 @@
   "title": "Persistent Volume",
   "description": "Persistent Volume icon from Plugins Kubernetes category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/kubernetes/index.ts",
+      "path": "registry/icons/plugins/kubernetes/persistent-volume/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/kubernetes/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/persistent-volume/index.tsx"
     }
   ],
   "meta": {

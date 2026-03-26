@@ -5,19 +5,13 @@
   "title": "Warning Point",
   "description": "Warning Point icon from Plugins Dart category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/dart/index.ts",
+      "path": "registry/icons/plugins/dart/warning-point/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/dart/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/dart/warning-point/index.tsx"
     }
   ],
   "meta": {

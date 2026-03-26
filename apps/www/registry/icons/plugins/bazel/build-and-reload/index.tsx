@@ -1,0 +1,109 @@
+import React from 'react';
+import { cn } from '@/lib/utils';
+import { type IconProps, type SvgProps, sizeMap } from '../../types';
+
+export type BuildAndReloadProps = IconProps;
+
+const BuildAndReloadLight: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <g clipPath="url(#a)">
+      <path
+        d="M8.5 8a.5.5 0 0 1 .5.5v.826l.181-.164A4 4 0 0 1 12.001 8a4.005 4.005 0 0 1 3.96 3.43.5.5 0 1 1-.991.14 2.97 2.97 0 0 0-.849-1.691A3 3 0 0 0 12.002 9c-.83 0-1.579.335-2.122.879l-.009.009-.124.112h.754a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5M8.465 12.005a.5.5 0 0 1 .566.424c.093.656.4 1.244.848 1.692A3 3 0 0 0 12 15c.829 0 1.578-.335 2.122-.879l.008-.009.119-.112H13.5a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-.834l-.176.167A4 4 0 0 1 12 16a4 4 0 0 1-2.828-1.172 4 4 0 0 1-1.131-2.257.5.5 0 0 1 .424-.566"
+        fill="#3574F0"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="m6.102 5.34-.676-.54H4.52l-.695.347a.5.5 0 0 1-.223.053h-2a.5.5 0 0 1-.5-.5V1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .223.053l.695.347h.985l.91-.364A.5.5 0 0 1 6.603 1H9.62c.601 0 1.605 0 2.615.533 1.04.548 2.012 1.618 2.643 3.616a.5.5 0 0 1-.763.56c-.978-.684-1.627-1-2.153-1.154-.474-.138-.874-.153-1.394-.155l-1.266.95V7h-1V5.6h-1.2V7a.5.5 0 0 1-.04.197l-.196.457a4.5 4.5 0 0 0-.364 1.772V14h.917c.156.357.352.693.583 1h-2a.5.5 0 0 1-.5-.5V9.426a5.5 5.5 0 0 1 .445-2.166l.155-.363zM9.602 2c.6 0 1.386.006 2.166.417.527.278 1.086.762 1.569 1.632a6 6 0 0 0-1.095-.454c-.67-.195-1.23-.195-1.819-.195h-.021a.5.5 0 0 0-.3.1l-1.334 1H6.652l-.738-.59a.5.5 0 0 0-.312-.11h-1.2a.5.5 0 0 0-.224.053l-.694.347H2.102V2h1.382l.694.347a.5.5 0 0 0 .224.053h1.2a.5.5 0 0 0 .185-.036L6.697 2z"
+        fill="#6C707E"
+      />
+    </g>
+    <defs>
+      <clipPath id="a">
+        <path fill="#fff" d="M0 0H16V16H0z" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+const BuildAndReloadDark: React.FC<SvgProps> = ({
+  size,
+  className,
+  title,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    {title && <title>{title}</title>}
+    <g clipPath="url(#a)">
+      <path
+        d="M8.5 8a.5.5 0 0 1 .5.5v.826l.181-.164A4 4 0 0 1 12.001 8a4.005 4.005 0 0 1 3.96 3.43.5.5 0 1 1-.991.14 2.97 2.97 0 0 0-.849-1.691A3 3 0 0 0 12.002 9c-.83 0-1.579.335-2.122.879l-.009.009-.124.112h.754a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5M8.465 12.005a.5.5 0 0 1 .566.424c.093.656.4 1.244.848 1.692A3 3 0 0 0 12 15c.829 0 1.578-.335 2.122-.879l.008-.009.119-.112H13.5a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-.834l-.176.167A4 4 0 0 1 12 16a4 4 0 0 1-2.828-1.172 4 4 0 0 1-1.131-2.257.5.5 0 0 1 .424-.566"
+        fill="#548AF7"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="m6.102 5.34-.676-.54H4.52l-.695.347a.5.5 0 0 1-.223.053h-2a.5.5 0 0 1-.5-.5V1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .223.053l.695.347h.985l.91-.364A.5.5 0 0 1 6.603 1H9.62c.601 0 1.605 0 2.615.533 1.04.548 2.012 1.618 2.643 3.616a.5.5 0 0 1-.763.56c-.978-.684-1.627-1-2.153-1.154-.474-.138-.874-.153-1.394-.155l-1.266.95V7h-1V5.6h-1.2V7a.5.5 0 0 1-.04.197l-.196.457a4.5 4.5 0 0 0-.364 1.772V14h.917c.156.357.352.693.583 1h-2a.5.5 0 0 1-.5-.5V9.426a5.5 5.5 0 0 1 .445-2.166l.155-.363zM9.602 2c.6 0 1.386.006 2.166.417.527.278 1.086.762 1.569 1.632a6 6 0 0 0-1.095-.454c-.67-.195-1.23-.195-1.819-.195h-.021a.5.5 0 0 0-.3.1l-1.334 1H6.652l-.738-.59a.5.5 0 0 0-.312-.11h-1.2a.5.5 0 0 0-.224.053l-.694.347H2.102V2h1.382l.694.347a.5.5 0 0 0 .224.053h1.2a.5.5 0 0 0 .185-.036L6.697 2z"
+        fill="#CED0D6"
+      />
+    </g>
+    <defs>
+      <clipPath id="a">
+        <path fill="#fff" d="M0 0H16V16H0z" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const BuildAndReload: React.FC<BuildAndReloadProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  title,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? BuildAndReloadLight : BuildAndReloadDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      title={title}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};

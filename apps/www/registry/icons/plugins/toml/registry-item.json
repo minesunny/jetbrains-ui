@@ -5,8 +5,7 @@
   "title": "Plugins Toml Icons",
   "description": "All 1 icons from the Plugins Toml category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
@@ -15,9 +14,9 @@
       "target": "components/jetbrains-ui/icons/plugins/toml/index.ts"
     },
     {
-      "path": "public/icons/plugins.svg",
+      "path": "registry/icons/plugins/toml/toml/index.tsx",
       "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/toml/toml/index.tsx"
     }
   ],
   "meta": {

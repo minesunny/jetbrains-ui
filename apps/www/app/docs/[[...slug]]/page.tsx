@@ -13,11 +13,8 @@ import { Metadata } from 'next';
 import { DocsAuthor } from '@/components/docs/docs-author';
 import { ViewOptions, LLMCopyButton } from '@/components/docs/page-actions';
 import { Footer } from '@workspace/ui/components/docs/footer';
-import {
-  ArrowLeft,
-  ArrowRight,
-} from '@workspace/ui/components/icons/system-icons';
 import { Button } from '@/components/animate-ui/components/buttons/button';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { findNeighbour } from 'fumadocs-core/server';
 import { getBaseOptions } from '@/app/layout.config';

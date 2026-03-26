@@ -5,19 +5,13 @@
   "title": "Inner Class",
   "description": "Inner Class icon from Plugins Uml category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/uml/index.ts",
+      "path": "registry/icons/plugins/uml/inner-class/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/uml/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/uml/inner-class/index.tsx"
     }
   ],
   "meta": {

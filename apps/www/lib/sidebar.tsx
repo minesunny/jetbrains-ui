@@ -1,7 +1,7 @@
 'use client';
 
+import { Component, Cuboid } from 'lucide-react';
 import { LucideIcons } from '@/registry/icons/general/lucide-icons';
-import { Component, Cuboid } from '@workspace/ui/components/icons/system-icons';
 import { cn } from '@workspace/ui/lib/utils';
 import { index } from '@/__registry__';
 import { Dancing_Script } from 'next/font/google';

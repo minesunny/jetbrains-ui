@@ -5,19 +5,13 @@
   "title": "Pause Hovered",
   "description": "Pause Hovered icon from General Progress Bar category.",
   "registryDependencies": [
-    "icons-general-types",
-    "icons-components"
+    "icons-general-types"
   ],
   "files": [
     {
-      "path": "registry/icons/general/progress-bar/index.ts",
+      "path": "registry/icons/general/progress-bar/pause-hovered/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/progress-bar/index.ts"
-    },
-    {
-      "path": "public/icons/general.svg",
-      "type": "registry:ui",
-      "target": "public/icons/general.svg"
+      "target": "components/jetbrains-ui/icons/general/progress-bar/pause-hovered/index.tsx"
     }
   ],
   "meta": {

@@ -5,19 +5,13 @@
   "title": "Hibernate Event",
   "description": "Hibernate Event icon from Plugins Jpa category.",
   "registryDependencies": [
-    "icons-plugins-types",
-    "icons-components"
+    "icons-plugins-types"
   ],
   "files": [
     {
-      "path": "registry/icons/plugins/jpa/index.ts",
+      "path": "registry/icons/plugins/jpa/hibernate-event/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/plugins/jpa/index.ts"
-    },
-    {
-      "path": "public/icons/plugins.svg",
-      "type": "registry:ui",
-      "target": "public/icons/plugins.svg"
+      "target": "components/jetbrains-ui/icons/plugins/jpa/hibernate-event/index.tsx"
     }
   ],
   "meta": {
