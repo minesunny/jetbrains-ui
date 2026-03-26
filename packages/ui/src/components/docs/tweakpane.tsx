@@ -19,7 +19,7 @@ import {
   SelectValue,
 } from '@workspace/ui/components/ui/select';
 import { Switch } from '@workspace/ui/components/ui/switch';
-import { ChevronsUpDown } from 'lucide-react';
+import { ChevronsUpDown } from '@workspace/ui/components/icons/lucide';
 
 type BaseBindNumber = { value: number };
 type BindNumberSlider = BaseBindNumber & {

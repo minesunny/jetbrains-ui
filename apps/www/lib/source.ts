@@ -8,7 +8,7 @@ import {
   type InferMetaType,
   type InferPageType,
 } from 'fumadocs-core/source';
-import { icons } from 'lucide-react';
+import { icons } from '@workspace/ui/components/icons/lucide';
 import { createElement } from 'react';
 import type { Locale } from '@/lib/i18n/shared';
 

@@ -13,7 +13,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/registry/components/animate/tooltip';
-import { Trash2Icon } from 'lucide-react';
+import { Trash2Icon } from '@workspace/ui/components/icons/lucide';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -36,7 +36,7 @@ import {
   XIcon,
   Timer,
   SquareRoundCorner,
-} from 'lucide-react';
+} from '@workspace/ui/components/icons/lucide';
 import * as React from 'react';
 
 const GRID_SIZE = [7, 7] as [number, number];

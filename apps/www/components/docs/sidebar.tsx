@@ -26,7 +26,7 @@ import { usePathname } from 'next/navigation';
 import { isActive } from 'fumadocs-ui/utils/is-active';
 import { AnimatePresence, motion } from 'motion/react';
 import { Separator } from '@/lib/attach-separator';
-import { SquareMenu } from 'lucide-react';
+import { SquareMenu } from '@workspace/ui/components/icons/lucide';
 import { useIsMobile } from '@workspace/ui/hooks/use-mobile';
 import { useI18n } from '@/components/i18n-provider';
 import { LocaleSwitcher } from '@/components/locale-switcher';

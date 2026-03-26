@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { IconLogo } from '../icon-logo';
 import { buttonVariants } from 'fumadocs-ui/components/ui/button';
 import { cn } from '@workspace/ui/lib/utils';
-import { CommandIcon } from 'lucide-react';
+import { CommandIcon } from '@workspace/ui/components/icons/lucide';
 import { useSearchContext, useSidebar } from 'fumadocs-ui/provider';
 import { ThemeSwitcher } from '../animate/theme-switcher';
 import { GithubStarsLogo } from '@/components/animate-ui/primitives/animate/github-stars';

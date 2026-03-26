@@ -10,11 +10,7 @@ export const index: Record<string, any> = {
     name: 'index',
     description: '',
     type: 'registry:style',
-    dependencies: [
-      'tw-animate-css',
-      'class-variance-authority',
-      'lucide-react',
-    ],
+    dependencies: ['tw-animate-css', 'class-variance-authority'],
     devDependencies: undefined,
     registryDependencies: ['utils'],
     files: [],

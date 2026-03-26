@@ -1,6 +1,6 @@
 'use client';
 
-import { Component, Cuboid } from 'lucide-react';
+import { Component, Cuboid } from '@workspace/ui/components/icons/lucide';
 import { LucideIcons } from '@/registry/icons/general/lucide-icons';
 import { cn } from '@workspace/ui/lib/utils';
 import { index } from '@/__registry__';

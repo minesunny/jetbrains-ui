@@ -5,7 +5,12 @@ import ImageIcon from '@workspace/ui/components/icons/image-icon';
 import HeadlessUIIcon from '@workspace/ui/components/icons/headlessui-icon';
 import RadixIcon from '@workspace/ui/components/icons/radix-icon';
 import type { BuildPageTreeOptions } from 'fumadocs-core/source';
-import { Code, SparklesIcon, SquareMenu, TypeIcon } from 'lucide-react';
+import {
+  Code,
+  SparklesIcon,
+  SquareMenu,
+  TypeIcon,
+} from '@workspace/ui/components/icons/lucide';
 import { LucideIcons } from '@/registry/icons/general/lucide-icons';
 
 const Icon = ({ children }: { children: React.ReactNode }) => {

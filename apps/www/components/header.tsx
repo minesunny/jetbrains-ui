@@ -6,7 +6,7 @@ import { Logo } from '@/components/logo';
 import XIcon from '@workspace/ui/components/icons/x-icon';
 import { useIsMobile } from '@workspace/ui/hooks/use-mobile';
 import { ThemeSwitcher } from './animate/theme-switcher';
-import { GithubIcon } from 'lucide-react';
+import { GithubIcon } from '@workspace/ui/components/icons/lucide';
 
 const LOGO_WRAPPER_VARIANTS = {
   center: {

@@ -1,7 +1,7 @@
 'use client';
 
 import { Switch } from '@/components/radix/switch';
-import { Moon, Sun } from 'lucide-react';
+import { Moon, Sun } from '@workspace/ui/components/icons/lucide';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
