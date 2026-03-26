@@ -1,0 +1,87 @@
+---
+title: SVG
+description: Theme-aware SVG icon wrapper for the JetBrains UI icon registry.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-03-26
+---
+
+<ComponentPreview name="demo-svg" />
+
+## Overview
+
+`SVG` resolves JetBrains UI icons by name and follows the current light or dark theme automatically.
+
+## Responsibility Boundary
+
+- `SVG` is only a top-level wrapper component.
+- It does not ship a fixed built-in icon set.
+- Concrete internal icon components should be registered based on your specific product scenario.
+
+## Installation
+
+<ComponentInstallation name="svg" />
+
+## Usage
+
+```tsx
+import { SVG } from '@/components/jetbrains-ui/svg';
+
+export function Example() {
+  return (
+    <div className="flex items-center gap-3">
+      <SVG name="breakpoints/breakpoint" />
+      <SVG name="database/access-method" size="lg" />
+      <SVG name="general/general/search" className="size-5" />
+    </div>
+  );
+}
+```
+
+## Naming
+
+- Use the icon path relative to `apps/www/registry/icons`, for example `general/general/search`.
+- When an icon basename is globally unique, the generated registry also exposes the short name alias.
+- Theme switching is internal. `SVG` does not expose a separate light or dark prop.
+
+## API Reference
+
+### SVG
+
+<TypeTable
+  type={{
+    name: {
+      description: 'Icon name from the generated registry',
+      type: 'string',
+      required: true,
+    },
+    size: {
+      description:
+        'Preset size token or a number mapped to the nearest icon size',
+      type: '"xs" | "sm" | "md" | "lg" | "xl" | number',
+      required: false,
+      default: '"md"',
+    },
+    className: {
+      description:
+        'Additional class names applied to the rendered icon component',
+      type: 'string',
+      required: false,
+    },
+    title: {
+      description: 'Accessible title passed to the icon component',
+      type: 'string',
+      required: false,
+    },
+    'aria-label': {
+      description: 'Accessible label for non-decorative icons',
+      type: 'string',
+      required: false,
+    },
+  }}
+/>
+
+## Registry Generation
+
+When you add or remove files under `apps/www/registry/icons`, run `pnpm registry:build` to regenerate `registry/components/svg/registry.ts`.

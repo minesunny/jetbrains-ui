@@ -257,7 +257,7 @@ export function AggregateIconsGallery({
                 <button
                   onClick={() => setExpandedIcon(isExpanded ? null : icon.key)}
                   className={cn(
-                    'w-full flex flex-col items-center p-3 border rounded-lg transition-all',
+                    'w-full aspect-square flex flex-col items-center justify-start p-3 border rounded-lg transition-all',
                     isExpanded
                       ? 'bg-fd-accent ring-2 ring-fd-ring'
                       : 'hover:bg-fd-accent/50',
@@ -266,10 +266,16 @@ export function AggregateIconsGallery({
                   <div className="flex items-center justify-center h-8 mb-1.5">
                     <IconComponent size={selectedSize} mode={selectedMode} />
                   </div>
-                  <span className="text-[10px] text-center text-fd-muted-foreground leading-tight break-all line-clamp-2 w-full">
+                  <span
+                    className="mt-0.5 block w-full truncate px-1 text-center text-[10px] leading-tight text-fd-muted-foreground"
+                    title={icon.name}
+                  >
                     {icon.name}
                   </span>
-                  <span className="mt-0.5 text-[9px] text-center text-fd-muted-foreground/80 leading-tight break-all line-clamp-1 w-full">
+                  <span
+                    className="mt-0.5 block w-full truncate px-1 text-center text-[9px] leading-tight text-fd-muted-foreground/80"
+                    title={icon.packLabel}
+                  >
                     {icon.packLabel}
                   </span>
                 </button>

@@ -11,12 +11,11 @@ import {
   ContextMenuSeparator,
   ContextMenuTrigger,
 } from '@/registry/components/context-menu';
-import {
-  ChevronDownIcon,
-  ChevronRightIcon,
-  LoaderIcon,
-} from '@/registry/components/icons';
 import { ScrollArea, ScrollViewport } from '@/registry/components/scroll-area';
+import { ChevronDown } from '@/registry/icons/general/general/chevron-down';
+import { Delete } from '@/registry/icons/general/general/delete';
+import { ChevronRight } from '@/registry/icons/general/general/chevron-right';
+import { Loader } from '@/registry/icons/general/spinner/loader';
 import './index.css';
 
 export { asyncDataLoaderFeature } from './feature';
@@ -223,7 +222,8 @@ function DynamicTreeItemContextMenu<TItem extends DynamicTreeItemData>({
           deleteDynamicTreeItem(item);
         }}
       >
-        Delete
+        <Delete className="shrink-0" size="md" />
+        <span>Delete</span>
       </ContextMenuItem>
     </>
   );
@@ -319,14 +319,14 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
             disabled={Boolean((item.getItemData() as TItem | null)?.disabled)}
           >
             {item.isLoading() ? (
-              <LoaderIcon
-                className="size-4 [animation-duration:900ms]"
-                size={16}
+              <Loader
+                className="animate-spin [animation-duration:900ms]"
+                size="md"
               />
             ) : item.isExpanded() ? (
-              <ChevronDownIcon className="size-4 scale-[0.78]" size={16} />
+              <ChevronDown className="scale-[0.78]" size="md" />
             ) : (
-              <ChevronRightIcon className="size-4 scale-[0.78]" size={16} />
+              <ChevronRight className="scale-[0.78]" size="md" />
             )}
           </button>
         ) : (

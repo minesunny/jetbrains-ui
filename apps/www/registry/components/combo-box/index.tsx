@@ -2,8 +2,8 @@
 
 import * as React from 'react';
 import * as SelectPrimitive from '@radix-ui/react-select';
-import { CheckIcon } from 'lucide-react';
 import { ChevronDown } from '@/registry/icons/general/general/chevron-down';
+import { Checkmark } from '@/registry/icons/general/general/checkmark';
 
 import { cn } from '@workspace/ui/lib/utils';
 import './index.css';
@@ -108,7 +108,7 @@ const ComboBoxItem = React.forwardRef<
   >
     <span className="jb-cbx-item-indicator absolute left-2 inline-flex h-[14px] w-[14px] items-center justify-center">
       <SelectPrimitive.ItemIndicator>
-        <CheckIcon className="jb-cbx-item-check h-3 w-3" />
+        <Checkmark size="xs" className="jb-cbx-item-check" />
       </SelectPrimitive.ItemIndicator>
     </span>
     <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
