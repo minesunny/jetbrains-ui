@@ -8,8 +8,7 @@
       "type": "registry:style",
       "dependencies": [
         "tw-animate-css",
-        "class-variance-authority",
-        "lucide-react"
+        "class-variance-authority"
       ],
       "registryDependencies": [
         "utils"
@@ -347,46 +346,6 @@
       }
     },
     {
-      "name": "icons-components",
-      "type": "registry:ui",
-      "title": "Component Icons",
-      "description": "Shared icon primitives used by JetBrains UI components.",
-      "dependencies": [],
-      "registryDependencies": [
-        "utils"
-      ],
-      "files": [
-        {
-          "path": "registry/components/icons/index.ts",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/index.ts"
-        },
-        {
-          "path": "registry/components/icons/icons.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/icons.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "icons",
-          "jetbrains",
-          "ui",
-          "component"
-        ],
-        "category": "icons",
-        "docs": {
-          "description": "Shared icon primitives used by core JetBrains UI components.",
-          "features": [
-            "Lightweight inline SVG icons",
-            "Shared sizing API",
-            "CurrentColor-based styling",
-            "Works as an internal dependency for registry components"
-          ]
-        }
-      }
-    },
-    {
       "name": "input",
       "type": "registry:ui",
       "title": "Input",
@@ -652,6 +611,45 @@
       }
     },
     {
+      "name": "svg",
+      "type": "registry:ui",
+      "title": "SVG",
+      "description": "Theme-aware SVG icon wrapper with a generated lazy icon registry.",
+      "dependencies": [
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/components/svg/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/svg/index.tsx"
+        },
+        {
+          "path": "registry/components/svg/registry.ts",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/svg/registry.ts"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "svg",
+          "icons",
+          "jetbrains",
+          "ui",
+          "component"
+        ],
+        "category": "icons",
+        "docs": {
+          "description": "Resolve JetBrains UI icons by name and follow the current light or dark theme automatically.",
+          "features": [
+            "Lazy icon loading by name",
+            "Automatic light and dark theme switching",
+            "Generated from apps/www/registry/icons"
+          ]
+        }
+      }
+    },
+    {
       "name": "switch",
       "type": "registry:ui",
       "title": "Switch",
@@ -839,9 +837,12 @@
       ],
       "registryDependencies": [
         "utils",
-        "@jetbrains-ui/icons-components",
         "@jetbrains-ui/scroll-area",
-        "@jetbrains-ui/context-menu"
+        "@jetbrains-ui/context-menu",
+        "@jetbrains-ui/icons-general-general-delete",
+        "@jetbrains-ui/icons-general-general-chevron-down",
+        "@jetbrains-ui/icons-general-general-chevron-right",
+        "@jetbrains-ui/icons-general-spinner-loader"
       ],
       "files": [
         {
@@ -906,9 +907,12 @@
       ],
       "registryDependencies": [
         "utils",
-        "@jetbrains-ui/icons-components",
         "@jetbrains-ui/scroll-area",
-        "@jetbrains-ui/context-menu"
+        "@jetbrains-ui/context-menu",
+        "@jetbrains-ui/icons-general-general-delete",
+        "@jetbrains-ui/icons-general-general-chevron-down",
+        "@jetbrains-ui/icons-general-general-chevron-right",
+        "@jetbrains-ui/icons-general-spinner-loader"
       ],
       "files": [
         {
@@ -962,8 +966,9 @@
       ],
       "registryDependencies": [
         "utils",
-        "@jetbrains-ui/icons-components",
-        "@jetbrains-ui/scroll-area"
+        "@jetbrains-ui/scroll-area",
+        "@jetbrains-ui/icons-general-general-chevron-down",
+        "@jetbrains-ui/icons-general-general-chevron-right"
       ],
       "files": [
         {
@@ -1375,6 +1380,24 @@
       }
     },
     {
+      "name": "demo-svg",
+      "type": "registry:ui",
+      "title": "SVG Demo",
+      "description": "Demo showing the SVG wrapper with multiple icon names.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@jetbrains-ui/svg"
+      ],
+      "files": [
+        {
+          "path": "registry/demo/components/svg/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/demo/svg.tsx"
+        }
+      ],
+      "meta": {}
+    },
+    {
       "name": "demo-switch",
       "type": "registry:ui",
       "title": "Switch Demo",
@@ -1546,87 +1569,6 @@
           }
         }
       }
-    },
-    {
-      "name": "hooks-use-auto-height",
-      "type": "registry:hook",
-      "title": "useAutoHeight",
-      "description": "A hook that allows you to automatically adjust the height of an element based on its content.",
-      "files": [
-        {
-          "path": "registry/hooks/use-auto-height/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-auto-height.tsx"
-        }
-      ]
-    },
-    {
-      "name": "hooks-use-controlled-state",
-      "type": "registry:hook",
-      "title": "useControlledState",
-      "description": "A hook that allows you to control a state.",
-      "files": [
-        {
-          "path": "registry/hooks/use-controlled-state/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-controlled-state.tsx"
-        }
-      ]
-    },
-    {
-      "name": "hooks-use-data-state",
-      "type": "registry:hook",
-      "title": "useDataState",
-      "description": "A hook that allows you to get the data-state of an element.",
-      "files": [
-        {
-          "path": "registry/hooks/use-data-state/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-data-state.tsx"
-        }
-      ]
-    },
-    {
-      "name": "hooks-use-is-in-view",
-      "type": "registry:hook",
-      "title": "useIsInView",
-      "description": "A hook that allows you to check if an element is in view.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/hooks/use-is-in-view/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-is-in-view.tsx"
-        }
-      ]
-    },
-    {
-      "name": "hooks-use-mobile",
-      "type": "registry:hook",
-      "title": "useIsMobile",
-      "description": "A hook that detects whether viewport width is mobile.",
-      "files": [
-        {
-          "path": "registry/hooks/use-mobile/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-mobile.tsx"
-        }
-      ]
-    },
-    {
-      "name": "hooks-use-motion-value-state",
-      "type": "registry:hook",
-      "title": "useMotionValueState",
-      "description": "A hook that allows you to use a motion value state.",
-      "files": [
-        {
-          "path": "registry/hooks/use-motion-value-state/index.tsx",
-          "type": "registry:hook",
-          "target": "hooks/use-motion-value-state.tsx"
-        }
-      ]
     },
     {
       "name": "icons-breakpoints",
@@ -62112,19 +62054,6 @@
           "jetbrains"
         ]
       }
-    },
-    {
-      "name": "lib-get-strict-context",
-      "type": "registry:lib",
-      "title": "getStrictContext",
-      "description": "A hook that allows you to create a strict context.",
-      "files": [
-        {
-          "path": "registry/lib/get-strict-context/index.tsx",
-          "type": "registry:lib",
-          "target": "lib/get-strict-context.tsx"
-        }
-      ]
     },
     {
       "name": "styles-jetbrains-tokens",

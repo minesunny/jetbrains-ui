@@ -10,11 +10,11 @@ import {
   TabsContents,
 } from '@/components/radix/tabs';
 import { cn } from '@workspace/ui/lib/utils';
-import { Loader } from 'lucide-react';
 import { Suspense, useEffect, useMemo, useState } from 'react';
 import { DynamicCodeBlock } from '@/components/docs/dynamic-codeblock';
 import ReactIcon from '@workspace/ui/components/icons/react-icon';
 import { type Binds, Tweakpane } from '@workspace/ui/components/docs/tweakpane';
+import { Loader2 } from 'lucide-react';
 
 interface ComponentPreviewProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string;
@@ -140,7 +140,7 @@ export function ComponentPreview({
               <Suspense
                 fallback={
                   <div className="flex items-center text-sm text-muted-foreground">
-                    <Loader className="mr-2 size-4 animate-spin" />
+                    <Loader2 className="mr-2 size-4 animate-spin" />
                     Loading...
                   </div>
                 }

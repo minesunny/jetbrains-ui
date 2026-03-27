@@ -5,7 +5,12 @@
   "title": "Tree",
   "description": "JetBrains-style static tree view with selectable and expandable items.",
   "dependencies": ["@headless-tree/core", "@headless-tree/react"],
-  "registryDependencies": ["utils", "icons-components", "scroll-area"],
+  "registryDependencies": [
+    "utils",
+    "scroll-area",
+    "icons-general-general-chevron-down",
+    "icons-general-general-chevron-right"
+  ],
   "files": [
     {
       "path": "registry/components/tree/tree/index.tsx",

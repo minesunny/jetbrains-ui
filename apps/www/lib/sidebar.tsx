@@ -1,10 +1,10 @@
 'use client';
 
-import { Component, Cuboid } from 'lucide-react';
-import { LucideIcons } from '@/registry/icons/general/lucide-icons';
 import { cn } from '@workspace/ui/lib/utils';
 import { index } from '@/__registry__';
 import { Dancing_Script } from 'next/font/google';
+import { SVG } from '@/registry/components/svg';
+import { Search } from 'lucide-react';
 
 const dancing = Dancing_Script({ subsets: ['latin'] });
 
@@ -40,7 +40,7 @@ export const SIDEBAR_TABS = [
     ),
     icon: (
       <div className="[&_svg]:size-full rounded-lg size-full text-muted-foreground max-md:bg-(--tab-color)/10 max-md:border max-md:p-1.5">
-        <Component />
+        <SVG name="plugins/java-ee/component" />
       </div>
     ),
     url: '/docs/components',
@@ -59,7 +59,7 @@ export const SIDEBAR_TABS = [
     ),
     icon: (
       <div className="[&_svg]:size-full rounded-lg size-full text-muted-foreground max-md:bg-(--tab-color)/10 max-md:border max-md:p-1.5">
-        <Cuboid />
+        <SVG name="general/general/layout" />
       </div>
     ),
     url: '/docs/primitives',
@@ -81,7 +81,7 @@ export const SIDEBAR_TABS = [
     description: <TabsDescription title="JetBrains Icons" count={99} />,
     icon: (
       <div className="[&_svg]:size-full rounded-lg size-full text-muted-foreground max-md:bg-(--tab-color)/10 max-md:border max-md:p-1.5">
-        <LucideIcons />
+        <Search />
       </div>
     ),
     url: '/docs/icons',

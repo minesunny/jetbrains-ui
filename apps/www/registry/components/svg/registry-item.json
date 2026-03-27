@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "svg",
+  "type": "registry:ui",
+  "title": "SVG",
+  "description": "Theme-aware SVG icon wrapper with a generated lazy icon registry.",
+  "dependencies": ["next-themes"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/components/svg/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/svg/index.tsx"
+    },
+    {
+      "path": "registry/components/svg/registry.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/svg/registry.ts"
+    }
+  ],
+  "meta": {
+    "keywords": ["svg", "icons", "jetbrains", "ui", "component"],
+    "category": "icons",
+    "docs": {
+      "description": "Resolve JetBrains UI icons by name and follow the current light or dark theme automatically.",
+      "features": [
+        "Lazy icon loading by name",
+        "Automatic light and dark theme switching",
+        "Generated from apps/www/registry/icons"
+      ]
+    }
+  }
+}

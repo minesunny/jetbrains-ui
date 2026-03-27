@@ -3,11 +3,11 @@
 import { OpenInV0Button } from '@workspace/ui/components/docs/open-in-v0-button';
 import { Button } from '@workspace/ui/components/ui/button';
 import { cn } from '@workspace/ui/lib/utils';
-import { Fullscreen, RotateCcw, SlidersHorizontal } from 'lucide-react';
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import Iframe from './iframe';
 import { useIsMobile } from '@workspace/ui/hooks/use-mobile';
+import { Maximize2, RotateCcw, Settings } from 'lucide-react';
 
 interface ComponentWrapperProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string;
@@ -57,7 +57,7 @@ export const ComponentWrapper = ({
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <RotateCcw aria-label="restart-btn" size={14} />
+                  <RotateCcw className="size-[14px]" aria-label="restart-btn" />
                 </motion.button>
               </Button>
 
@@ -73,7 +73,10 @@ export const ComponentWrapper = ({
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Fullscreen aria-label="fullscreen-btn" size={14} />
+                    <Maximize2
+                      className="size-[14px]"
+                      aria-label="fullscreen-btn"
+                    />
                   </motion.button>
                 </Button>
               )}
@@ -90,7 +93,7 @@ export const ComponentWrapper = ({
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <SlidersHorizontal aria-label="tweak-btn" size={14} />
+                    <Settings className="size-[14px]" aria-label="tweak-btn" />
                   </motion.button>
                 </Button>
               )}

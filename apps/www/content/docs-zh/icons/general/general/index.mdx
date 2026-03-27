@@ -1,0 +1,32 @@
+---
+title: General
+description: JetBrains General 图标组件，支持多种尺寸和 Light/Dark 主题。
+---
+
+import { JetBrainsIconsGallery } from '@/components/docs/icons/general/jetbrains-icons-gallery';
+
+import { IconDetailPreview } from '@/components/docs/icons/icon-detail-preview';
+
+## Overview
+
+来自 JetBrains UI 设计系统的 **100 个 General 图标**，以独立 React 组件形式提供，支持 TypeScript。
+
+### Usage
+
+<IconDetailPreview name="Search" category="general" />
+
+```tsx
+import { Search } from '@/components/jetbrains-ui/icons/general/general';
+
+<Search />
+
+<Search size="lg" mode="dark" />
+
+<Search aria-label="Search icon" />
+```
+
+## Browse Icons
+
+点击任意图标可查看导入代码和各尺寸预览。
+
+<JetBrainsIconsGallery />

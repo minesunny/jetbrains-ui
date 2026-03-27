@@ -1,13 +1,6 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import {
-  Check,
-  ChevronDown,
-  Copy,
-  ExternalLinkIcon,
-  MessageCircleIcon,
-} from 'lucide-react';
 import { cn } from '@workspace/ui/lib/utils';
 import { useCopyButton } from 'fumadocs-ui/utils/use-copy-button';
 import { buttonVariants } from 'fumadocs-ui/components/ui/button';
@@ -18,6 +11,13 @@ import {
 } from 'fumadocs-ui/components/ui/popover';
 import { cva } from 'class-variance-authority';
 import { useI18n } from '@/components/i18n-provider';
+import {
+  Check,
+  ChevronDown,
+  Copy,
+  ExternalLink,
+  MessageSquare,
+} from 'lucide-react';
 
 const cache = new Map<string, string>();
 
@@ -150,7 +150,7 @@ export function ViewOptions({
         href: `https://t3.chat/new?${new URLSearchParams({
           q,
         })}`,
-        icon: <MessageCircleIcon />,
+        icon: <MessageSquare />,
       },
     ];
   }, [githubUrl, markdownUrl, messages.pageActions]);
@@ -180,7 +180,7 @@ export function ViewOptions({
           >
             {item.icon}
             {item.title}
-            <ExternalLinkIcon className="text-fd-muted-foreground size-3.5 ms-auto" />
+            <ExternalLink className="text-fd-muted-foreground size-3.5 ms-auto" />
           </a>
         ))}
       </PopoverContent>

@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import { ContextMenu as ContextMenuPrimitive } from 'radix-ui';
-import { CheckIcon, ChevronRightIcon, CircleIcon } from 'lucide-react';
 
 import { cn } from '@workspace/ui/lib/utils';
 import {
@@ -11,6 +10,49 @@ import {
   TooltipTrigger,
 } from '@/registry/components/tooltip';
 import './index.css';
+
+function MenuCheckIcon({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+      {...props}
+    >
+      <path
+        d="m3.5 8 3 3 6-6"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function MenuChevronRightIcon({
+  className,
+  ...props
+}: React.ComponentProps<'svg'>) {
+  return (
+    <svg
+      viewBox="0 0 16 16"
+      fill="none"
+      aria-hidden="true"
+      className={className}
+      {...props}
+    >
+      <path
+        d="M6 4.5 9.5 8 6 11.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 function ContextMenu({
   ...props
@@ -130,7 +172,7 @@ function ContextMenuCheckboxItem({
     >
       <span className="jb-cmenu-item-indicator absolute left-2 inline-flex size-[14px] items-center justify-center">
         <ContextMenuPrimitive.ItemIndicator>
-          <CheckIcon className="jb-cmenu-check-icon size-3" />
+          <MenuCheckIcon className="jb-cmenu-check-icon size-3" />
         </ContextMenuPrimitive.ItemIndicator>
       </span>
       {children}
@@ -165,7 +207,7 @@ function ContextMenuRadioItem({
     >
       <span className="jb-cmenu-item-indicator absolute left-2 inline-flex size-[14px] items-center justify-center">
         <ContextMenuPrimitive.ItemIndicator>
-          <CircleIcon className="jb-cmenu-radio-icon h-2 w-2 fill-current stroke-[3px]" />
+          <span className="jb-cmenu-radio-icon size-2 rounded-full bg-current" />
         </ContextMenuPrimitive.ItemIndicator>
       </span>
       {children}
@@ -247,7 +289,7 @@ function ContextMenuSubTrigger({
       {...props}
     >
       {children}
-      <ChevronRightIcon className="jb-cmenu-sub-chevron ml-auto size-[14px]" />
+      <MenuChevronRightIcon className="jb-cmenu-sub-chevron ml-auto size-[14px]" />
     </ContextMenuPrimitive.SubTrigger>
   );
 }

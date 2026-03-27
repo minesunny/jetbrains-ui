@@ -7,6 +7,12 @@ import {
 
 const generalPacks: IconPackLoader[] = [
   {
+    id: 'general',
+    label: 'General',
+    importPath: '@/components/jetbrains-ui/icons/general/general',
+    load: () => import('@/registry/icons/general/general'),
+  },
+  {
     id: 'tool-windows',
     label: 'Tool Windows',
     importPath: '@/components/jetbrains-ui/icons/general/tool-windows',

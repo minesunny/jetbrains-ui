@@ -1,16 +1,22 @@
 import { docs, docsZh } from '@/.source';
-import { LucideIcons } from '@/registry/icons/general/lucide-icons';
 import { attachFile } from '@/lib/attach-file';
 import { attachSeparator } from '@/lib/attach-separator';
-import JetBrainsUIIcon from '@workspace/ui/components/icons/jetbrainsui-icon';
+import JetBrainsUIIcon from '@/lib/jetbrains-ui-icon';
 import {
   loader,
   type InferMetaType,
   type InferPageType,
 } from 'fumadocs-core/source';
-import { icons } from 'lucide-react';
 import { createElement } from 'react';
 import type { Locale } from '@/lib/i18n/shared';
+import { Component as JavaEeComponent } from '@/registry/icons/plugins/java-ee/component';
+import { Colors } from '@/registry/icons/editor-icons/colors';
+import { Search } from 'lucide-react';
+
+const docsIcons = {
+  Component: JavaEeComponent,
+  Palette: Colors,
+} as const;
 
 export const source = loader({
   baseUrl: '/docs',
@@ -21,9 +27,10 @@ export const source = loader({
   },
   icon(icon) {
     if (!icon) return;
-    if (icon in icons) return createElement(icons[icon as keyof typeof icons]);
+    if (icon in docsIcons)
+      return createElement(docsIcons[icon as keyof typeof docsIcons]);
     if (icon === 'JetBrainsUIIcon') return createElement(JetBrainsUIIcon);
-    if (icon === 'LucideIcons') return createElement(LucideIcons);
+    if (icon === 'LucideIcons') return createElement(Search);
   },
 });
 
@@ -36,9 +43,10 @@ export const sourceZh = loader({
   },
   icon(icon) {
     if (!icon) return;
-    if (icon in icons) return createElement(icons[icon as keyof typeof icons]);
+    if (icon in docsIcons)
+      return createElement(docsIcons[icon as keyof typeof docsIcons]);
     if (icon === 'JetBrainsUIIcon') return createElement(JetBrainsUIIcon);
-    if (icon === 'LucideIcons') return createElement(LucideIcons);
+    if (icon === 'LucideIcons') return createElement(Search);
   },
 });
 

@@ -13,7 +13,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/registry/components/animate/tooltip';
-import { Trash2Icon } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -25,19 +24,20 @@ import { Input } from '@workspace/ui/components/ui/input';
 import { Label } from '@workspace/ui/components/ui/label';
 import { ScrollArea } from '@workspace/ui/components/ui/scroll-area';
 import { cn } from '@workspace/ui/lib/utils';
-import {
-  ArrowLeftIcon,
-  ArrowRightIcon,
-  CopyIcon,
-  PlusIcon,
-  RotateCcwIcon,
-  SaveIcon,
-  CheckIcon,
-  XIcon,
-  Timer,
-  SquareRoundCorner,
-} from 'lucide-react';
 import * as React from 'react';
+import {
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  Copy,
+  LayoutGrid,
+  Plus,
+  RotateCcw,
+  Save,
+  Timer,
+  Trash2,
+  X,
+} from 'lucide-react';
 
 const GRID_SIZE = [7, 7] as [number, number];
 const GRID_SIZE_MAX = 20;
@@ -137,7 +137,7 @@ const MyAnimation = ({
                 setIsDeleting(false);
               }}
             >
-              <XIcon />
+              <X />
             </Button>
             <Button
               size="icon-xs"
@@ -149,7 +149,7 @@ const MyAnimation = ({
                 setIsDeleting(false);
               }}
             >
-              <CheckIcon />
+              <Check />
             </Button>
           </div>
         ) : (
@@ -162,7 +162,7 @@ const MyAnimation = ({
               setIsDeleting(true);
             }}
           >
-            <Trash2Icon />
+            <Trash2 />
           </Button>
         )}
       </div>
@@ -311,7 +311,7 @@ export const MotionGridEditor = () => {
             className="absolute top-1/2 -translate-y-1/2 right-2"
             onClick={createNewAnimation}
           >
-            <PlusIcon />
+            <Plus />
           </Button>
         </div>
         <div className="flex-1 flex flex-col gap-y-2 justify-between overflow-y-auto p-2">
@@ -382,7 +382,7 @@ export const MotionGridEditor = () => {
                 removeDotNotInGrid();
               }}
             />
-            <XIcon className="size-3 text-neutral-500 stroke-3" />
+            <X className="size-3 text-neutral-500" />
             <Input
               placeholder="Y"
               type="number"
@@ -570,7 +570,7 @@ export const MotionGridEditor = () => {
                           });
                         }}
                       >
-                        <PlusIcon />
+                        <Plus />
                       </Button>
                     </TooltipTrigger>
                     <TooltipContent>Add Frame</TooltipContent>
@@ -596,7 +596,7 @@ export const MotionGridEditor = () => {
                           });
                         }}
                       >
-                        <Trash2Icon />
+                        <Trash2 />
                       </Button>
                     </TooltipTrigger>
                     <TooltipContent>Remove Frame</TooltipContent>
@@ -611,7 +611,7 @@ export const MotionGridEditor = () => {
                         disabled={frames.length <= 1}
                         onClick={() => moveCurrentFrame(-1)}
                       >
-                        <ArrowLeftIcon />
+                        <ChevronLeft />
                       </Button>
                     </TooltipTrigger>
                     <TooltipContent>Move Frame Left</TooltipContent>
@@ -626,7 +626,7 @@ export const MotionGridEditor = () => {
                         disabled={frames.length <= 1}
                         onClick={() => moveCurrentFrame(1)}
                       >
-                        <ArrowRightIcon />
+                        <ChevronRight />
                       </Button>
                     </TooltipTrigger>
                     <TooltipContent>Move Frame Right</TooltipContent>
@@ -665,7 +665,7 @@ export const MotionGridEditor = () => {
                 </div>
                 <div className="relative flex-1 h-full bg-neutral-100 dark:bg-neutral-900 rounded-lg">
                   <div className="absolute inset-y-0 left-0 h-full aspect-square bg-neutral-200 dark:bg-neutral-800 rounded-l-lg flex items-center justify-center">
-                    <SquareRoundCorner className="size-5 text-neutral-400 dark:text-neutral-600" />
+                    <LayoutGrid className="size-5 text-neutral-400 dark:text-neutral-600" />
                   </div>
                   <Input
                     type="number"
@@ -723,7 +723,7 @@ export const MotionGridEditor = () => {
                     size="icon"
                     onClick={() => setFrames([[]])}
                   >
-                    <RotateCcwIcon />
+                    <RotateCcw />
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>Reset Animation</TooltipContent>
@@ -741,7 +741,7 @@ export const MotionGridEditor = () => {
                       }, 2000);
                     }}
                   >
-                    {isCopied ? <CheckIcon /> : <CopyIcon />}
+                    {isCopied ? <Check /> : <Copy />}
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>
@@ -793,7 +793,7 @@ export const MotionGridEditor = () => {
                       setTimeout(() => setIsSaved(false), 2000);
                     }}
                   >
-                    {isSaved ? <CheckIcon /> : <SaveIcon />}
+                    {isSaved ? <Check /> : <Save />}
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>Save Animation</TooltipContent>

@@ -1,6 +1,6 @@
 'use client';
 
-import { getStrictContext } from '@/registry/lib/get-strict-context';
+import { getStrictContext } from '@/lib/get-strict-context';
 import { cn } from '@workspace/ui/lib/utils';
 import { format } from 'date-fns';
 import { enUS } from 'date-fns/locale';

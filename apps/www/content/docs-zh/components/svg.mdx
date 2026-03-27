@@ -1,0 +1,85 @@
+---
+title: SVG
+description: 用于 JetBrains UI 图标 registry 的主题感知 SVG 包装组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-03-26
+---
+
+<ComponentPreview name="demo-svg" />
+
+## 概述
+
+`SVG` 通过名字懒加载 JetBrains UI 图标，并自动跟随当前明暗主题。
+
+## 职责边界
+
+- `SVG` 只提供顶层封装能力。
+- 它不内置固定图标集合。
+- 具体的内部 icon 组件需要由使用方根据业务场景自行注册。
+
+## 安装
+
+<ComponentInstallation name="svg" />
+
+## 用法
+
+```tsx
+import { SVG } from '@/components/jetbrains-ui/svg';
+
+export function Example() {
+  return (
+    <div className="flex items-center gap-3">
+      <SVG name="breakpoints/breakpoint" />
+      <SVG name="database/access-method" size="lg" />
+      <SVG name="general/general/search" className="size-5" />
+    </div>
+  );
+}
+```
+
+## 命名规则
+
+- 使用相对于 `apps/www/registry/icons` 的图标路径，例如 `general/general/search`。
+- 如果某个图标 basename 在全局唯一，生成后的 registry 也会提供短名别名。
+- 主题切换由组件内部处理，`SVG` 不再暴露单独的明暗主题参数。
+
+## API 参考
+
+### SVG
+
+<TypeTable
+  type={{
+    name: {
+      description: '生成后的 registry 中的图标名称',
+      type: 'string',
+      required: true,
+    },
+    size: {
+      description: '预设尺寸 token，或映射到最近图标尺寸的数字',
+      type: '"xs" | "sm" | "md" | "lg" | "xl" | number',
+      required: false,
+      default: '"md"',
+    },
+    className: {
+      description: '附加到图标组件上的类名',
+      type: 'string',
+      required: false,
+    },
+    title: {
+      description: '传递给图标组件的无障碍标题',
+      type: 'string',
+      required: false,
+    },
+    'aria-label': {
+      description: '非装饰性图标的无障碍标签',
+      type: 'string',
+      required: false,
+    },
+  }}
+/>
+
+## Registry 生成
+
+当你在 `apps/www/registry/icons` 下新增或删除图标文件后，运行 `pnpm registry:build` 重新生成 `registry/components/svg/registry.ts`。

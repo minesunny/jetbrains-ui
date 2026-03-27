@@ -2,6 +2,7 @@
   "title": "General",
   "defaultOpen": false,
   "pages": [
+    "general",
     "tool-windows",
     "actions",
     "editor",

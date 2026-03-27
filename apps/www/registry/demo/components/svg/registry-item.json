@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-svg",
+  "type": "registry:ui",
+  "title": "SVG Demo",
+  "description": "Demo showing the SVG wrapper with multiple icon names.",
+  "dependencies": [],
+  "registryDependencies": ["@jetbrains-ui/svg"],
+  "files": [
+    {
+      "path": "registry/demo/components/svg/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/svg.tsx"
+    }
+  ],
+  "meta": {}
+}

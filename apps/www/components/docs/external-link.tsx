@@ -1,7 +1,7 @@
 'use client';
 
-import { ExternalLinkIcon } from 'lucide-react';
 import { motion } from 'motion/react';
+import { ExternalLink as ExternalLinkIcon } from 'lucide-react';
 
 export const ExternalLink = ({
   href,

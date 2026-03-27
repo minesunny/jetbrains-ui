@@ -7,9 +7,12 @@
   "dependencies": ["@headless-tree/core", "@headless-tree/react"],
   "registryDependencies": [
     "utils",
-    "icons-components",
     "scroll-area",
-    "context-menu"
+    "context-menu",
+    "icons-general-general-delete",
+    "icons-general-general-chevron-down",
+    "icons-general-general-chevron-right",
+    "icons-general-spinner-loader"
   ],
   "files": [
     {

@@ -146,7 +146,10 @@ export function DatabaseIconsGallery() {
                   <div className="flex items-center justify-center h-8 mb-1.5">
                     <IconComponent size={selectedSize} mode={selectedMode} />
                   </div>
-                  <span className="text-[10px] text-center text-fd-muted-foreground leading-tight break-all line-clamp-2 w-full">
+                  <span
+                    className="mt-0.5 block w-full truncate px-1 text-center text-[10px] leading-tight text-fd-muted-foreground"
+                    title={iconName}
+                  >
                     {iconName}
                   </span>
                 </button>
