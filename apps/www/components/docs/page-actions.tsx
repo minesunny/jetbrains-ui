@@ -65,7 +65,7 @@ export function LLMCopyButton({
         }),
       )}
       onClick={onClick}
-      >
+    >
       {checked ? <Check /> : <Copy />}
       {messages.pageActions.copyMarkdown}
     </button>

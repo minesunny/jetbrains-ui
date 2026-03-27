@@ -78,9 +78,7 @@ export const attachSeparator: BuildPageTreeOptions['attachSeparator'] = (
       );
       break;
     case 'Icons':
-      node.name = (
-        <Separator icon={<Search strokeWidth={2} />} name="Icons" />
-      );
+      node.name = <Separator icon={<Search strokeWidth={2} />} name="Icons" />;
       break;
     case 'Usage':
       node.name = (

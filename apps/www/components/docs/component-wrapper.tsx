@@ -7,11 +7,7 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import Iframe from './iframe';
 import { useIsMobile } from '@workspace/ui/hooks/use-mobile';
-import {
-  Maximize2,
-  RotateCcw,
-  Settings,
-} from 'lucide-react';
+import { Maximize2, RotateCcw, Settings } from 'lucide-react';
 
 interface ComponentWrapperProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string;
@@ -77,7 +73,10 @@ export const ComponentWrapper = ({
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Maximize2 className="size-[14px]" aria-label="fullscreen-btn" />
+                    <Maximize2
+                      className="size-[14px]"
+                      aria-label="fullscreen-btn"
+                    />
                   </motion.button>
                 </Button>
               )}

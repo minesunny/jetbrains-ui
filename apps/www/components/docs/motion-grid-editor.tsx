@@ -741,11 +741,7 @@ export const MotionGridEditor = () => {
                       }, 2000);
                     }}
                   >
-                    {isCopied ? (
-                      <Check />
-                    ) : (
-                      <Copy />
-                    )}
+                    {isCopied ? <Check /> : <Copy />}
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>
@@ -797,11 +793,7 @@ export const MotionGridEditor = () => {
                       setTimeout(() => setIsSaved(false), 2000);
                     }}
                   >
-                    {isSaved ? (
-                      <Check />
-                    ) : (
-                      <Save />
-                    )}
+                    {isSaved ? <Check /> : <Save />}
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>Save Animation</TooltipContent>

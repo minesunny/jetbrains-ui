@@ -1,10 +1,5 @@
 import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
-import {
-  CheckCircle2,
-  CircleX,
-  Info,
-  TriangleAlert,
-} from 'lucide-react';
+import { CheckCircle2, CircleX, Info, TriangleAlert } from 'lucide-react';
 
 import { cn } from '@workspace/ui/lib/utils';
 
