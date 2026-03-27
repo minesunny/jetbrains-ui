@@ -29,6 +29,9 @@ out/
 /build
 dist
 
+# Registry Artifacts
+apps/www/__registry__/index.tsx
+
 
 # Debug
 npm-debug.log*

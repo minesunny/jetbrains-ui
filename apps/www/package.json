@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "pnpm registry:build:ci && next build",
     "dev": "CHOKIDAR_USEPOLLING=1 WATCHPACK_POLLING=true next dev",
     "start": "next start",
     "postinstall": "fumadocs-mdx",
+    "registry:build:ci": "tsx ./scripts/build-registry.mts",
     "registry:build": "pnpm format:write && tsx ./scripts/build-registry.mts && pnpm format:write",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
