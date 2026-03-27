@@ -73,11 +73,11 @@ export function ComponentPreview({
 
   const preview = useMemo(() => {
     const Component = index[name]?.component;
+    const demoProps = Component?.demoProps ?? {};
 
-    if (Object.keys(Component?.demoProps ?? {}).length !== 0) {
-      if (componentProps === null)
-        setComponentProps(unwrapValues(Component?.demoProps));
-      if (binds === null) setBinds(Component?.demoProps);
+    if (Object.keys(demoProps).length !== 0) {
+      if (componentProps === null) setComponentProps(unwrapValues(demoProps));
+      if (binds === null) setBinds(demoProps);
     }
 
     if (!Component) {
@@ -158,7 +158,7 @@ export function ComponentPreview({
             <div className="flex flex-col space-y-4">
               <div className="w-full rounded-md [&_pre]:my-0 [&_pre]:h-[400px] h-[450px] [&_pre]:overflow-auto">
                 <DynamicCodeBlock
-                  code={code}
+                  code={code ?? ''}
                   lang="tsx"
                   title={`${name}.tsx`}
                   icon={<ReactIcon />}
