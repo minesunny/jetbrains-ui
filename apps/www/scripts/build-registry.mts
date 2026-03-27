@@ -444,6 +444,7 @@ export const index: Record<string, any> = {`;
   index += `
   }`;
 
+  await fs.mkdir(path.join(process.cwd(), '__registry__'), { recursive: true });
   rimraf.sync(path.join(process.cwd(), '__registry__/index.tsx'));
   await fs.writeFile(path.join(process.cwd(), '__registry__/index.tsx'), index);
 }
