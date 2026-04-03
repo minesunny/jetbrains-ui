@@ -265,7 +265,13 @@ async function buildIconsRegistry() {
 }
 
 async function buildRegistryFile() {
-  const registryJsonContent = await fs.readFile(REGISTRY_JSON_PATH, 'utf-8');
+  await fs.mkdir(path.dirname(REGISTRY_JSON_PATH), { recursive: true });
+  let registryJsonContent: string;
+  try {
+    registryJsonContent = await fs.readFile(REGISTRY_JSON_PATH, 'utf-8');
+  } catch {
+    registryJsonContent = '{ "items": [] }';
+  }
   const registryData = JSON.parse(registryJsonContent);
   const registryFolderPath = path.join(process.cwd(), 'registry');
   const newItems = (await getRegistryItemsFromFolder(registryFolderPath)).map(
