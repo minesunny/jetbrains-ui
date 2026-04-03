@@ -63,6 +63,59 @@
       }
     },
     {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "JetBrains UI 风格的警告对话框组件，基于 Radix UI，用于需要用户确认的模态交互",
+      "dependencies": [
+        "@radix-ui/react-alert-dialog"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/alert-dialog/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/alert-dialog/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "alert-dialog",
+          "modal",
+          "confirmation",
+          "jetbrains",
+          "ui",
+          "组件",
+          "警告对话框"
+        ],
+        "category": "overlay",
+        "docs": {
+          "description": "JetBrains UI 风格的警告对话框组件，基于 Radix UI AlertDialog 构建。用于需要用户明确确认或取消的操作场景，如删除确认、不可逆操作等。",
+          "features": [
+            "模态遮罩层与居中面板",
+            "确认（Action）与取消（Cancel）按钮",
+            "完整的键盘导航与焦点陷阱",
+            "支持亮色/暗色主题",
+            "基于 JetBrains 设计令牌的样式",
+            "优秀的无障碍支持"
+          ]
+        },
+        "demoProps": {
+          "AlertDialog": {
+            "variant": {
+              "value": "default",
+              "options": {
+                "default": "default",
+                "destructive": "destructive"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
       "name": "buttons",
       "type": "registry:ui",
       "title": "Buttons",
@@ -1003,6 +1056,38 @@
             },
             "help": {
               "value": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "demo-alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog Demo",
+      "description": "警告对话框组件的演示",
+      "dependencies": [
+        "@radix-ui/react-alert-dialog"
+      ],
+      "registryDependencies": [
+        "@jetbrains-ui/alert-dialog"
+      ],
+      "files": [
+        {
+          "path": "registry/demo/components/alert-dialog/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/demo/alert-dialog.tsx"
+        }
+      ],
+      "meta": {
+        "demoProps": {
+          "AlertDialog": {
+            "variant": {
+              "value": "default",
+              "options": {
+                "default": "default",
+                "destructive": "destructive"
+              }
             }
           }
         }

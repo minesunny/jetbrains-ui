@@ -1,0 +1,112 @@
+---
+title: Alert Dialog 警告对话框
+description: 基于 JetBrains UI 设计风格的警告对话框组件。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-04-03
+---
+
+<ComponentPreview name="demo-alert-dialog" />
+
+## 概述
+
+Alert Dialog 是一种模态对话框，用于向用户展示重要内容并要求做出响应。
+本实现基于 Radix UI AlertDialog，并对齐 JetBrains UI 风格。
+
+### 设计特点
+
+- **模态遮罩层**：半透明背景，阻止与页面其余部分的交互。
+- **确认与取消按钮**：内置主要和次要样式的按钮。
+- **焦点陷阱**：对话框打开时键盘焦点被限制在对话框内。
+- **无障碍支持**：完整的键盘导航、ARIA 角色和屏幕阅读器支持。
+- **暗色模式**：完整支持亮色和暗色主题。
+
+## 安装
+
+<ComponentInstallation name="alert-dialog" />
+
+## 用法
+
+```tsx
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '@/registry/components/alert-dialog';
+```
+
+### 默认
+
+```tsx
+<AlertDialog>
+  <AlertDialogTrigger>打开</AlertDialogTrigger>
+  <AlertDialogContent>
+    <AlertDialogHeader>
+      <AlertDialogTitle>确定要继续吗？</AlertDialogTitle>
+      <AlertDialogDescription>此操作无法撤销。</AlertDialogDescription>
+    </AlertDialogHeader>
+    <AlertDialogFooter>
+      <AlertDialogCancel>取消</AlertDialogCancel>
+      <AlertDialogAction>确认</AlertDialogAction>
+    </AlertDialogFooter>
+  </AlertDialogContent>
+</AlertDialog>
+```
+
+### 危险操作
+
+```tsx
+<AlertDialogAction className="border-transparent bg-red-4 text-gray-14 hover:bg-red-3 active:bg-red-2 focus-visible:ring-red-4 dark:bg-red-7 dark:hover:bg-red-6 dark:active:bg-red-5 dark:focus-visible:ring-red-7">
+  删除
+</AlertDialogAction>
+```
+
+## API 参考
+
+### AlertDialog
+
+根组件，封装 Radix AlertDialog Root。
+
+### AlertDialogTrigger
+
+打开对话框的按钮，支持 `asChild`。
+
+### AlertDialogContent
+
+模态面板，包含遮罩层、边框、阴影和入场/出场动画。
+
+### AlertDialogHeader
+
+标题和描述的容器。
+
+### AlertDialogTitle
+
+对话框标题文本。
+
+### AlertDialogDescription
+
+描述操作后果的文本。
+
+### AlertDialogFooter
+
+操作按钮的容器，右对齐排列。
+
+### AlertDialogAction
+
+确认按钮，点击后关闭对话框。
+
+### AlertDialogCancel
+
+取消按钮，点击后关闭对话框。
+
+## 致谢
+
+- 设计灵感来源于 [JetBrains UI Kit](https://jetbrains.design)
+- 基于 [Radix UI AlertDialog](https://radix-ui.com/primitives/docs/components/alert-dialog) 构建

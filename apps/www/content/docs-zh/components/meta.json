@@ -5,6 +5,7 @@
   "root": true,
   "pages": [
     "---组件---",
+    "alert-dialog",
     "alert",
     "button",
     "checkbox",

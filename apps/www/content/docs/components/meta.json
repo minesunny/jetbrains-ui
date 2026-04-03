@@ -5,6 +5,7 @@
   "root": true,
   "pages": [
     "---Components---",
+    "alert-dialog",
     "alert",
     "button",
     "checkbox",

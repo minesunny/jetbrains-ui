@@ -19,13394 +19,3357 @@ export type IconLoader = () => Promise<{
 }>;
 
 export const ICON_REGISTRY: Record<string, IconLoader> = {
-  'abbreviate-package-names': () =>
-    import(
-      '@/registry/icons/general/object-browser/abbreviate-package-names'
-    ).then((mod) => ({ default: mod.AbbreviatePackageNames })),
-  abort: () =>
-    import('@/registry/icons/vcs/abort').then((mod) => ({
-      default: mod.Abort,
-    })),
-  'abstract-advice': () =>
-    import('@/registry/icons/plugins/aop/abstract-advice').then((mod) => ({
-      default: mod.AbstractAdvice,
-    })),
-  'abstract-bean': () =>
-    import('@/registry/icons/plugins/spring/abstract-bean').then((mod) => ({
-      default: mod.AbstractBean,
-    })),
-  'abstract-class': () =>
-    import('@/registry/icons/plugins/java-ee/abstract-class').then((mod) => ({
-      default: mod.AbstractClass,
-    })),
-  'abstract-class-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/abstract-class-kotlin').then(
-      (mod) => ({ default: mod.AbstractClassKotlin }),
-    ),
-  'abstract-class-object-scala': () =>
-    import('@/registry/icons/plugins/scala/abstract-class-object-scala').then(
-      (mod) => ({ default: mod.AbstractClassObjectScala }),
-    ),
-  'abstract-class-scala': () =>
-    import('@/registry/icons/plugins/scala/abstract-class-scala').then(
-      (mod) => ({ default: mod.AbstractClassScala }),
-    ),
-  'abstract-exception': () =>
-    import('@/registry/icons/nodes/abstract-exception').then((mod) => ({
-      default: mod.AbstractException,
-    })),
-  'abstract-extension-function': () =>
-    import('@/registry/icons/plugins/kotlin/abstract-extension-function').then(
-      (mod) => ({ default: mod.AbstractExtensionFunction }),
-    ),
-  'abstract-field': () =>
-    import('@/registry/icons/plugins/java-ee/abstract-field').then((mod) => ({
-      default: mod.AbstractField,
-    })),
-  'abstract-field-variable': () =>
-    import('@/registry/icons/plugins/scala/abstract-field-variable').then(
-      (mod) => ({ default: mod.AbstractFieldVariable }),
-    ),
-  'abstract-field-variable1': () =>
-    import('@/registry/icons/plugins/scala/abstract-field-variable1').then(
-      (mod) => ({ default: mod.AbstractFieldVariable1 }),
-    ),
-  'abstract-method': () =>
-    import('@/registry/icons/plugins/java-ee/abstract-method').then((mod) => ({
-      default: mod.AbstractMethod,
-    })),
-  'abstract-property': () =>
-    import('@/registry/icons/plugins/java-ee/abstract-property').then(
-      (mod) => ({ default: mod.AbstractProperty }),
-    ),
-  'abstract-type-alias': () =>
-    import('@/registry/icons/plugins/scala/abstract-type-alias').then(
-      (mod) => ({ default: mod.AbstractTypeAlias }),
-    ),
-  'access-local': () =>
-    import('@/registry/icons/general/access-modifiers/access-local').then(
-      (mod) => ({ default: mod.AccessLocal }),
-    ),
-  'access-method': () =>
-    import('@/registry/icons/database/access-method').then((mod) => ({
-      default: mod.AccessMethod,
-    })),
-  'access-private': () =>
-    import('@/registry/icons/general/access-modifiers/access-private').then(
-      (mod) => ({ default: mod.AccessPrivate }),
-    ),
-  'access-protected': () =>
-    import('@/registry/icons/general/access-modifiers/access-protected').then(
-      (mod) => ({ default: mod.AccessProtected }),
-    ),
-  'access-public': () =>
-    import('@/registry/icons/general/access-modifiers/access-public').then(
-      (mod) => ({ default: mod.AccessPublic }),
-    ),
-  'action-method': () =>
-    import('@/registry/icons/plugins/ruby/action-method').then((mod) => ({
-      default: mod.ActionMethod,
-    })),
-  'action-qualified-names': () =>
-    import('@/registry/icons/plugins/cidr/action-qualified-names').then(
-      (mod) => ({ default: mod.ActionQualifiedNames }),
-    ),
-  'action-script': () =>
-    import('@/registry/icons/file-types/action-script').then((mod) => ({
-      default: mod.ActionScript,
-    })),
-  actual: () =>
-    import('@/registry/icons/plugins/kotlin/actual').then((mod) => ({
-      default: mod.Actual,
-    })),
-  'actual-zoom': () =>
-    import('@/registry/icons/editor-icons/actual-zoom').then((mod) => ({
-      default: mod.ActualZoom,
-    })),
-  'acync-api': () =>
-    import('@/registry/icons/file-types/acync-api').then((mod) => ({
-      default: mod.AcyncAPI,
-    })),
-  'adapter-script': () =>
-    import('@/registry/icons/database/adapter-script').then((mod) => ({
-      default: mod.AdapterScript,
-    })),
-  add: () =>
-    import('@/registry/icons/general/general/add').then((mod) => ({
-      default: mod.Add,
-    })),
-  'add-any': () =>
-    import('@/registry/icons/nodes/add-any').then((mod) => ({
-      default: mod.AddAny,
-    })),
-  'add-bookmarks-list': () =>
-    import('@/registry/icons/general/bookmarks/add-bookmarks-list').then(
-      (mod) => ({ default: mod.AddBookmarksList }),
-    ),
-  'add-changelog': () =>
-    import('@/registry/icons/plugins/jpa/add-changelog').then((mod) => ({
-      default: mod.AddChangelog,
-    })),
-  'add-changeset': () =>
-    import('@/registry/icons/plugins/jpa/add-changeset').then((mod) => ({
-      default: mod.AddChangeset,
-    })),
-  'add-clause': () =>
-    import('@/registry/icons/plugins/scala/add-clause').then((mod) => ({
-      default: mod.AddClause,
-    })),
-  'add-column-left': () =>
-    import('@/registry/icons/general/editor/add-column-left').then((mod) => ({
-      default: mod.AddColumnLeft,
-    })),
-  'add-column-right': () =>
-    import('@/registry/icons/general/editor/add-column-right').then((mod) => ({
-      default: mod.AddColumnRight,
-    })),
-  'add-emoji': () =>
-    import('@/registry/icons/vcs/add-emoji').then((mod) => ({
-      default: mod.AddEmoji,
-    })),
-  'add-executable': () =>
-    import('@/registry/icons/plugins/cidr/add-executable').then((mod) => ({
-      default: mod.AddExecutable,
-    })),
-  'add-file': () =>
-    import('@/registry/icons/general/actions/add-file').then((mod) => ({
-      default: mod.AddFile,
-    })),
-  'add-library': () =>
-    import('@/registry/icons/plugins/cidr/add-library').then((mod) => ({
-      default: mod.AddLibrary,
-    })),
-  'add-named-query': () =>
-    import('@/registry/icons/plugins/jpa/add-named-query').then((mod) => ({
-      default: mod.AddNamedQuery,
-    })),
-  'add-note': () =>
-    import('@/registry/icons/plugins/uml/add-note').then((mod) => ({
-      default: mod.AddNote,
-    })),
-  'add-row-above': () =>
-    import('@/registry/icons/general/editor/add-row-above').then((mod) => ({
-      default: mod.AddRowAbove,
-    })),
-  'add-row-below': () =>
-    import('@/registry/icons/general/editor/add-row-below').then((mod) => ({
-      default: mod.AddRowBelow,
-    })),
-  'add-sdk': () =>
-    import('@/registry/icons/general/devkit/add-sdk').then((mod) => ({
-      default: mod.AddSDK,
-    })),
-  'add-test': () =>
-    import('@/registry/icons/plugins/cidr/add-test').then((mod) => ({
-      default: mod.AddTest,
-    })),
-  'add-to-watch': () =>
-    import('@/registry/icons/debugger/add-to-watch').then((mod) => ({
-      default: mod.AddToWatch,
-    })),
-  'after-advice': () =>
-    import('@/registry/icons/plugins/aop/after-advice').then((mod) => ({
-      default: mod.AfterAdvice,
-    })),
-  'after-returning-advice': () =>
-    import('@/registry/icons/plugins/aop/after-returning-advice').then(
-      (mod) => ({ default: mod.AfterReturningAdvice }),
-    ),
-  'after-throwing-advice': () =>
-    import('@/registry/icons/plugins/aop/after-throwing-advice').then(
-      (mod) => ({ default: mod.AfterThrowingAdvice }),
-    ),
-  aggregate: () =>
-    import('@/registry/icons/database/aggregate').then((mod) => ({
-      default: mod.Aggregate,
-    })),
-  'ai-assistant': () =>
-    import('@/registry/icons/general/ai-assistant/ai-assistant').then(
-      (mod) => ({ default: mod.AiAssistant }),
-    ),
-  'ai-assistant-colored': () =>
-    import('@/registry/icons/general/ai-assistant/ai-assistant-colored').then(
-      (mod) => ({ default: mod.AiAssistantColored }),
-    ),
-  'ai-assistant-disabled': () =>
-    import('@/registry/icons/general/ai-assistant/ai-assistant-disabled').then(
-      (mod) => ({ default: mod.AiAssistantDisabled }),
-    ),
-  'ai-assistant-tool-window': () =>
-    import(
-      '@/registry/icons/general/tool-windows/ai-assistant-tool-window'
-    ).then((mod) => ({ default: mod.AiAssistantToolWindow })),
-  alias: () =>
-    import('@/registry/icons/nodes/alias').then((mod) => ({
-      default: mod.Alias,
-    })),
-  'alias-factory': () =>
-    import('@/registry/icons/plugins/ruby/alias-factory').then((mod) => ({
-      default: mod.AliasFactory,
-    })),
-  'alias-sequence': () =>
-    import('@/registry/icons/plugins/ruby/alias-sequence').then((mod) => ({
-      default: mod.AliasSequence,
-    })),
-  'amazon-emr': () =>
-    import('@/registry/icons/general/tool-windows/amazon-emr').then((mod) => ({
-      default: mod.AmazonEMR,
-    })),
-  amper: () =>
-    import('@/registry/icons/file-types/amper').then((mod) => ({
-      default: mod.Amper,
-    })),
-  android: () =>
-    import('@/registry/icons/plugins/kotlin/android').then((mod) => ({
-      default: mod.Android,
-    })),
-  'android-device': () =>
-    import('@/registry/icons/plugins/cidr/android-device').then((mod) => ({
-      default: mod.AndroidDevice,
-    })),
-  'angular-js': () =>
-    import('@/registry/icons/file-types/angular-js').then((mod) => ({
-      default: mod.AngularJS,
-    })),
-  'angular-jsmonochrome': () =>
-    import('@/registry/icons/file-types/angular-jsmonochrome').then((mod) => ({
-      default: mod.AngularJSMonochrome,
-    })),
-  annotation: () =>
-    import('@/registry/icons/nodes/annotation').then((mod) => ({
-      default: mod.Annotation,
-    })),
-  'annotation-folder': () =>
-    import('@/registry/icons/nodes/annotation-folder').then((mod) => ({
-      default: mod.AnnotationFolder,
-    })),
-  'annotation-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/annotation-kotlin').then((mod) => ({
-      default: mod.AnnotationKotlin,
-    })),
-  'annotation-type': () =>
-    import('@/registry/icons/plugins/java-ee/annotation-type').then((mod) => ({
-      default: mod.AnnotationType,
-    })),
-  ant: () =>
-    import('@/registry/icons/general/tool-windows/ant').then((mod) => ({
-      default: mod.Ant,
-    })),
-  'any-type': () =>
-    import('@/registry/icons/file-types/any-type').then((mod) => ({
-      default: mod.AnyType,
-    })),
-  apache: () =>
-    import('@/registry/icons/database/apache').then((mod) => ({
-      default: mod.Apache,
-    })),
-  'apache-derby': () =>
-    import('@/registry/icons/database/apache-derby').then((mod) => ({
-      default: mod.ApacheDerby,
-    })),
-  'apache-ignite': () =>
-    import('@/registry/icons/database/apache-ignite').then((mod) => ({
-      default: mod.ApacheIgnite,
-    })),
-  'apache-phoenix': () =>
-    import('@/registry/icons/database/apache-phoenix').then((mod) => ({
-      default: mod.ApachePhoenix,
-    })),
-  api: () =>
-    import('@/registry/icons/file-types/api').then((mod) => ({
-      default: mod.Api,
-    })),
-  apollo: () =>
-    import('@/registry/icons/plugins/graphql/apollo').then((mod) => ({
-      default: mod.Apollo,
-    })),
-  'app-code-project': () =>
-    import('@/registry/icons/plugins/cidr/app-code-project').then((mod) => ({
-      default: mod.AppCodeProject,
-    })),
-  'app-code-workspace': () =>
-    import('@/registry/icons/plugins/cidr/app-code-workspace').then((mod) => ({
-      default: mod.AppCodeWorkspace,
-    })),
-  'app-engine-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/app-engine-tool-window').then(
-      (mod) => ({ default: mod.AppEngineToolWindow }),
-    ),
-  'application-extension': () =>
-    import('@/registry/icons/plugins/cidr/application-extension').then(
-      (mod) => ({ default: mod.ApplicationExtension }),
-    ),
-  'application-remote': () =>
-    import('@/registry/icons/run-configurations/application-remote').then(
-      (mod) => ({ default: mod.ApplicationRemote }),
-    ),
-  'application-xml': () =>
-    import('@/registry/icons/plugins/java-ee/application-xml').then((mod) => ({
-      default: mod.ApplicationXml,
-    })),
-  'apply-not-conflicts': () =>
-    import('@/registry/icons/vcs/apply-not-conflicts').then((mod) => ({
-      default: mod.ApplyNotConflicts,
-    })),
-  'apply-not-conflicts-left': () =>
-    import('@/registry/icons/vcs/apply-not-conflicts-left').then((mod) => ({
-      default: mod.ApplyNotConflictsLeft,
-    })),
-  'apply-not-conflicts-right': () =>
-    import('@/registry/icons/vcs/apply-not-conflicts-right').then((mod) => ({
-      default: mod.ApplyNotConflictsRight,
-    })),
-  'arbitrary-cluster': () =>
-    import('@/registry/icons/plugins/bdt/arbitrary-cluster').then((mod) => ({
-      default: mod.ArbitraryCluster,
-    })),
-  archive: () =>
-    import('@/registry/icons/file-types/archive').then((mod) => ({
-      default: mod.Archive,
-    })),
-  argument: () =>
-    import('@/registry/icons/database/argument').then((mod) => ({
-      default: mod.Argument,
-    })),
-  'around-advice': () =>
-    import('@/registry/icons/plugins/aop/around-advice').then((mod) => ({
-      default: mod.AroundAdvice,
-    })),
-  'arrow-left-right': () =>
-    import('@/registry/icons/vcs/arrow-left-right').then((mod) => ({
-      default: mod.ArrowLeftRight,
-    })),
-  'aspect-j': () =>
-    import('@/registry/icons/file-types/aspect-j').then((mod) => ({
-      default: mod.AspectJ,
-    })),
-  'assembler-go': () =>
-    import('@/registry/icons/file-types/assembler-go').then((mod) => ({
-      default: mod.AssemblerGo,
-    })),
-  assets: () =>
-    import('@/registry/icons/plugins/cidr/assets').then((mod) => ({
-      default: mod.Assets,
-    })),
-  'assoc-column': () =>
-    import('@/registry/icons/plugins/ruby/assoc-column').then((mod) => ({
-      default: mod.AssocColumn,
-    })),
-  athena: () =>
-    import('@/registry/icons/database/athena').then((mod) => ({
-      default: mod.Athena,
-    })),
-  'attach-to-process': () =>
-    import('@/registry/icons/run/attach-to-process').then((mod) => ({
-      default: mod.AttachToProcess,
-    })),
-  attached: () =>
-    import('@/registry/icons/general/ai-assistant/attached').then((mod) => ({
-      default: mod.Attached,
-    })),
-  attribute: () =>
-    import('@/registry/icons/plugins/graphql/attribute').then((mod) => ({
-      default: mod.Attribute,
-    })),
-  'auto-refresh': () =>
-    import('@/registry/icons/plugins/kubernetes/auto-refresh').then((mod) => ({
-      default: mod.AutoRefresh,
-    })),
-  'auto-reload': () =>
-    import('@/registry/icons/plugins/cidr/auto-reload').then((mod) => ({
-      default: mod.AutoReload,
-    })),
-  'autoscroll-from-source': () =>
-    import('@/registry/icons/general/general/autoscroll-from-source').then(
-      (mod) => ({ default: mod.AutoscrollFromSource }),
-    ),
-  'autoscroll-to-source': () =>
-    import('@/registry/icons/general/general/autoscroll-to-source').then(
-      (mod) => ({ default: mod.AutoscrollToSource }),
-    ),
-  'aws-glue': () =>
-    import('@/registry/icons/plugins/bdt/aws-glue').then((mod) => ({
-      default: mod.AwsGlue,
-    })),
-  'aws-glue-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/aws-glue-tool-window').then(
-      (mod) => ({ default: mod.AwsGlueToolWindow }),
-    ),
-  azure: () =>
-    import('@/registry/icons/database/azure').then((mod) => ({
-      default: mod.Azure,
-    })),
-  'back-trace': () =>
-    import('@/registry/icons/editor-icons/back-trace').then((mod) => ({
-      default: mod.BackTrace,
-    })),
-  bazel: () =>
-    import('@/registry/icons/plugins/bazel/bazel').then((mod) => ({
-      default: mod.Bazel,
-    })),
-  'bazel-config': () =>
-    import('@/registry/icons/plugins/bazel/bazel-config').then((mod) => ({
-      default: mod.BazelConfig,
-    })),
-  'bazel-error': () =>
-    import('@/registry/icons/plugins/bazel/bazel-error').then((mod) => ({
-      default: mod.BazelError,
-    })),
-  'bazel-reload': () =>
-    import('@/registry/icons/plugins/bazel/bazel-reload').then((mod) => ({
-      default: mod.BazelReload,
-    })),
-  'bazel-target': () =>
-    import('@/registry/icons/plugins/bazel/bazel-target').then((mod) => ({
-      default: mod.BazelTarget,
-    })),
-  'bazel-warning': () =>
-    import('@/registry/icons/plugins/bazel/bazel-warning').then((mod) => ({
-      default: mod.BazelWarning,
-    })),
-  bean: () =>
-    import('@/registry/icons/plugins/java-ee/bean').then((mod) => ({
-      default: mod.Bean,
-    })),
-  'bean-factory': () =>
-    import('@/registry/icons/plugins/java-ee/bean-factory').then((mod) => ({
-      default: mod.BeanFactory,
-    })),
-  'bean-infrastructure': () =>
-    import('@/registry/icons/plugins/java-ee/bean-infrastructure').then(
-      (mod) => ({ default: mod.BeanInfrastructure }),
-    ),
-  'bean-method': () =>
-    import('@/registry/icons/plugins/java-ee/bean-method').then((mod) => ({
-      default: mod.BeanMethod,
-    })),
-  'bean-property': () =>
-    import('@/registry/icons/plugins/java-ee/bean-property').then((mod) => ({
-      default: mod.BeanProperty,
-    })),
-  'before-advice': () =>
-    import('@/registry/icons/plugins/aop/before-advice').then((mod) => ({
-      default: mod.BeforeAdvice,
-    })),
-  'big-query': () =>
-    import('@/registry/icons/database/big-query').then((mod) => ({
-      default: mod.BigQuery,
-    })),
-  'binary-data': () =>
-    import('@/registry/icons/database/binary-data').then((mod) => ({
-      default: mod.BinaryData,
-    })),
-  'blaze-persistence-entity-view': () =>
-    import('@/registry/icons/plugins/jpa/blaze-persistence-entity-view').then(
-      (mod) => ({ default: mod.BlazePersistenceEntityView }),
-    ),
-  block: () =>
-    import('@/registry/icons/plugins/ruby/block').then((mod) => ({
-      default: mod.Block,
-    })),
-  'blue-key': () =>
-    import('@/registry/icons/database/blue-key').then((mod) => ({
-      default: mod.BlueKey,
-    })),
-  body: () =>
-    import('@/registry/icons/database/body').then((mod) => ({
-      default: mod.Body,
-    })),
-  bold: () =>
-    import('@/registry/icons/general/editor/bold').then((mod) => ({
-      default: mod.Bold,
-    })),
-  'bookmarks-list': () =>
-    import('@/registry/icons/general/bookmarks/bookmarks-list').then((mod) => ({
-      default: mod.BookmarksList,
-    })),
-  'boost-test': () =>
-    import('@/registry/icons/plugins/cidr/boost-test').then((mod) => ({
-      default: mod.BoostTest,
-    })),
-  branch: () =>
-    import('@/registry/icons/vcs/branch').then((mod) => ({
-      default: mod.Branch,
-    })),
-  breakpoint: () =>
-    import('@/registry/icons/breakpoints/breakpoint').then((mod) => ({
-      default: mod.Breakpoint,
-    })),
-  'breakpoint-dependent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-dependent').then((mod) => ({
-      default: mod.BreakpointDependent,
-    })),
-  'breakpoint-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-disabled').then((mod) => ({
-      default: mod.BreakpointDisabled,
-    })),
-  'breakpoint-exception': () =>
-    import('@/registry/icons/breakpoints/breakpoint-exception').then((mod) => ({
-      default: mod.BreakpointException,
-    })),
-  'breakpoint-exception-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-exception-disabled').then(
-      (mod) => ({ default: mod.BreakpointExceptionDisabled }),
-    ),
-  'breakpoint-field': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field').then((mod) => ({
-      default: mod.BreakpointField,
-    })),
-  'breakpoint-field-dependent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-dependent').then(
-      (mod) => ({ default: mod.BreakpointFieldDependent }),
-    ),
-  'breakpoint-field-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-disabled').then(
-      (mod) => ({ default: mod.BreakpointFieldDisabled }),
-    ),
-  'breakpoint-field-muted': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-muted').then(
-      (mod) => ({ default: mod.BreakpointFieldMuted }),
-    ),
-  'breakpoint-field-muted-dependent': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-field-muted-dependent'
-    ).then((mod) => ({ default: mod.BreakpointFieldMutedDependent })),
-  'breakpoint-field-muted-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-muted-disabled').then(
-      (mod) => ({ default: mod.BreakpointFieldMutedDisabled }),
-    ),
-  'breakpoint-field-unsuspendent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-unsuspendent').then(
-      (mod) => ({ default: mod.BreakpointFieldUnsuspendent }),
-    ),
-  'breakpoint-field-unsuspendent-disabled': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-field-unsuspendent-disabled'
-    ).then((mod) => ({ default: mod.BreakpointFieldUnsuspendentDisabled })),
-  'breakpoint-field-unsuspendent-valid': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-field-unsuspendent-valid'
-    ).then((mod) => ({ default: mod.BreakpointFieldUnsuspendentValid })),
-  'breakpoint-field-valid': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-valid').then(
-      (mod) => ({ default: mod.BreakpointFieldValid }),
-    ),
-  'breakpoint-invalid': () =>
-    import('@/registry/icons/breakpoints/breakpoint-invalid').then((mod) => ({
-      default: mod.BreakpointInvalid,
-    })),
-  'breakpoint-lambda': () =>
-    import('@/registry/icons/breakpoints/breakpoint-lambda').then((mod) => ({
-      default: mod.BreakpointLambda,
-    })),
-  'breakpoint-method': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method').then((mod) => ({
-      default: mod.BreakpointMethod,
-    })),
-  'breakpoint-method-dependent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method-dependent').then(
-      (mod) => ({ default: mod.BreakpointMethodDependent }),
-    ),
-  'breakpoint-method-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method-disabled').then(
-      (mod) => ({ default: mod.BreakpointMethodDisabled }),
-    ),
-  'breakpoint-method-muted': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method-muted').then(
-      (mod) => ({ default: mod.BreakpointMethodMuted }),
-    ),
-  'breakpoint-method-muted-dependent': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-method-muted-dependent'
-    ).then((mod) => ({ default: mod.BreakpointMethodMutedDependent })),
-  'breakpoint-method-muted-disabled': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-method-muted-disabled'
-    ).then((mod) => ({ default: mod.BreakpointMethodMutedDisabled })),
-  'breakpoint-method-unsuspendent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method-unsuspendent').then(
-      (mod) => ({ default: mod.BreakpointMethodUnsuspendent }),
-    ),
-  'breakpoint-method-unsuspendent-disabled': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-method-unsuspendent-disabled'
-    ).then((mod) => ({ default: mod.BreakpointMethodUnsuspendentDisabled })),
-  'breakpoint-method-unsuspendent-valid': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-method-unsuspendent-valid'
-    ).then((mod) => ({ default: mod.BreakpointMethodUnsuspendentValid })),
-  'breakpoint-method-valid': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method-valid').then(
-      (mod) => ({ default: mod.BreakpointMethodValid }),
-    ),
-  'breakpoint-muted': () =>
-    import('@/registry/icons/breakpoints/breakpoint-muted').then((mod) => ({
-      default: mod.BreakpointMuted,
-    })),
-  'breakpoint-muted-dependent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-muted-dependent').then(
-      (mod) => ({ default: mod.BreakpointMutedDependent }),
-    ),
-  'breakpoint-muted-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-muted-disabled').then(
-      (mod) => ({ default: mod.BreakpointMutedDisabled }),
-    ),
-  'breakpoint-obsolete': () =>
-    import('@/registry/icons/breakpoints/breakpoint-obsolete').then((mod) => ({
-      default: mod.BreakpointObsolete,
-    })),
-  'breakpoint-unsuspendent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-unsuspendent').then(
-      (mod) => ({ default: mod.BreakpointUnsuspendent }),
-    ),
-  'breakpoint-unsuspendent-disabled': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-unsuspendent-disabled'
-    ).then((mod) => ({ default: mod.BreakpointUnsuspendentDisabled })),
-  'breakpoint-unsuspendent-valid': () =>
-    import('@/registry/icons/breakpoints/breakpoint-unsuspendent-valid').then(
-      (mod) => ({ default: mod.BreakpointUnsuspendentValid }),
-    ),
-  'breakpoint-valid': () =>
-    import('@/registry/icons/breakpoints/breakpoint-valid').then((mod) => ({
-      default: mod.BreakpointValid,
-    })),
-  'breakpoints/breakpoint': () =>
-    import('@/registry/icons/breakpoints/breakpoint').then((mod) => ({
-      default: mod.Breakpoint,
-    })),
-  'breakpoints/breakpoint-dependent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-dependent').then((mod) => ({
-      default: mod.BreakpointDependent,
-    })),
-  'breakpoints/breakpoint-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-disabled').then((mod) => ({
-      default: mod.BreakpointDisabled,
-    })),
-  'breakpoints/breakpoint-exception': () =>
-    import('@/registry/icons/breakpoints/breakpoint-exception').then((mod) => ({
-      default: mod.BreakpointException,
-    })),
-  'breakpoints/breakpoint-exception-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-exception-disabled').then(
-      (mod) => ({ default: mod.BreakpointExceptionDisabled }),
-    ),
-  'breakpoints/breakpoint-field': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field').then((mod) => ({
-      default: mod.BreakpointField,
-    })),
-  'breakpoints/breakpoint-field-dependent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-dependent').then(
-      (mod) => ({ default: mod.BreakpointFieldDependent }),
-    ),
-  'breakpoints/breakpoint-field-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-disabled').then(
-      (mod) => ({ default: mod.BreakpointFieldDisabled }),
-    ),
-  'breakpoints/breakpoint-field-muted': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-muted').then(
-      (mod) => ({ default: mod.BreakpointFieldMuted }),
-    ),
-  'breakpoints/breakpoint-field-muted-dependent': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-field-muted-dependent'
-    ).then((mod) => ({ default: mod.BreakpointFieldMutedDependent })),
-  'breakpoints/breakpoint-field-muted-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-muted-disabled').then(
-      (mod) => ({ default: mod.BreakpointFieldMutedDisabled }),
-    ),
-  'breakpoints/breakpoint-field-unsuspendent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-unsuspendent').then(
-      (mod) => ({ default: mod.BreakpointFieldUnsuspendent }),
-    ),
-  'breakpoints/breakpoint-field-unsuspendent-disabled': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-field-unsuspendent-disabled'
-    ).then((mod) => ({ default: mod.BreakpointFieldUnsuspendentDisabled })),
-  'breakpoints/breakpoint-field-unsuspendent-valid': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-field-unsuspendent-valid'
-    ).then((mod) => ({ default: mod.BreakpointFieldUnsuspendentValid })),
-  'breakpoints/breakpoint-field-valid': () =>
-    import('@/registry/icons/breakpoints/breakpoint-field-valid').then(
-      (mod) => ({ default: mod.BreakpointFieldValid }),
-    ),
-  'breakpoints/breakpoint-invalid': () =>
-    import('@/registry/icons/breakpoints/breakpoint-invalid').then((mod) => ({
-      default: mod.BreakpointInvalid,
-    })),
-  'breakpoints/breakpoint-lambda': () =>
-    import('@/registry/icons/breakpoints/breakpoint-lambda').then((mod) => ({
-      default: mod.BreakpointLambda,
-    })),
-  'breakpoints/breakpoint-method': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method').then((mod) => ({
-      default: mod.BreakpointMethod,
-    })),
-  'breakpoints/breakpoint-method-dependent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method-dependent').then(
-      (mod) => ({ default: mod.BreakpointMethodDependent }),
-    ),
-  'breakpoints/breakpoint-method-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method-disabled').then(
-      (mod) => ({ default: mod.BreakpointMethodDisabled }),
-    ),
-  'breakpoints/breakpoint-method-muted': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method-muted').then(
-      (mod) => ({ default: mod.BreakpointMethodMuted }),
-    ),
-  'breakpoints/breakpoint-method-muted-dependent': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-method-muted-dependent'
-    ).then((mod) => ({ default: mod.BreakpointMethodMutedDependent })),
-  'breakpoints/breakpoint-method-muted-disabled': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-method-muted-disabled'
-    ).then((mod) => ({ default: mod.BreakpointMethodMutedDisabled })),
-  'breakpoints/breakpoint-method-unsuspendent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method-unsuspendent').then(
-      (mod) => ({ default: mod.BreakpointMethodUnsuspendent }),
-    ),
-  'breakpoints/breakpoint-method-unsuspendent-disabled': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-method-unsuspendent-disabled'
-    ).then((mod) => ({ default: mod.BreakpointMethodUnsuspendentDisabled })),
-  'breakpoints/breakpoint-method-unsuspendent-valid': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-method-unsuspendent-valid'
-    ).then((mod) => ({ default: mod.BreakpointMethodUnsuspendentValid })),
-  'breakpoints/breakpoint-method-valid': () =>
-    import('@/registry/icons/breakpoints/breakpoint-method-valid').then(
-      (mod) => ({ default: mod.BreakpointMethodValid }),
-    ),
-  'breakpoints/breakpoint-muted': () =>
-    import('@/registry/icons/breakpoints/breakpoint-muted').then((mod) => ({
-      default: mod.BreakpointMuted,
-    })),
-  'breakpoints/breakpoint-muted-dependent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-muted-dependent').then(
-      (mod) => ({ default: mod.BreakpointMutedDependent }),
-    ),
-  'breakpoints/breakpoint-muted-disabled': () =>
-    import('@/registry/icons/breakpoints/breakpoint-muted-disabled').then(
-      (mod) => ({ default: mod.BreakpointMutedDisabled }),
-    ),
-  'breakpoints/breakpoint-obsolete': () =>
-    import('@/registry/icons/breakpoints/breakpoint-obsolete').then((mod) => ({
-      default: mod.BreakpointObsolete,
-    })),
-  'breakpoints/breakpoint-unsuspendent': () =>
-    import('@/registry/icons/breakpoints/breakpoint-unsuspendent').then(
-      (mod) => ({ default: mod.BreakpointUnsuspendent }),
-    ),
-  'breakpoints/breakpoint-unsuspendent-disabled': () =>
-    import(
-      '@/registry/icons/breakpoints/breakpoint-unsuspendent-disabled'
-    ).then((mod) => ({ default: mod.BreakpointUnsuspendentDisabled })),
-  'breakpoints/breakpoint-unsuspendent-valid': () =>
-    import('@/registry/icons/breakpoints/breakpoint-unsuspendent-valid').then(
-      (mod) => ({ default: mod.BreakpointUnsuspendentValid }),
-    ),
-  'breakpoints/breakpoint-valid': () =>
-    import('@/registry/icons/breakpoints/breakpoint-valid').then((mod) => ({
-      default: mod.BreakpointValid,
-    })),
-  'breakpoints/multiple-breakpoints': () =>
-    import('@/registry/icons/breakpoints/multiple-breakpoints').then((mod) => ({
-      default: mod.MultipleBreakpoints,
-    })),
-  'breakpoints/multiple-breakpoints-disabled': () =>
-    import('@/registry/icons/breakpoints/multiple-breakpoints-disabled').then(
-      (mod) => ({ default: mod.MultipleBreakpointsDisabled }),
-    ),
-  'breakpoints/multiple-breakpoints-muted': () =>
-    import('@/registry/icons/breakpoints/multiple-breakpoints-muted').then(
-      (mod) => ({ default: mod.MultipleBreakpointsMuted }),
-    ),
-  'breakpoints/question-badge': () =>
-    import('@/registry/icons/breakpoints/question-badge').then((mod) => ({
-      default: mod.QuestionBadge,
-    })),
-  browse: () =>
-    import('@/registry/icons/general/inline/browse').then((mod) => ({
-      default: mod.Browse,
-    })),
-  'build-and-reload': () =>
-    import('@/registry/icons/plugins/bazel/build-and-reload').then((mod) => ({
-      default: mod.BuildAndReload,
-    })),
-  'build-auto-reload-changes': () =>
-    import('@/registry/icons/general/actions/build-auto-reload-changes').then(
-      (mod) => ({ default: mod.BuildAutoReloadChanges }),
-    ),
-  'build-on-frame-deactivation': () =>
-    import('@/registry/icons/plugins/java-ee/build-on-frame-deactivation').then(
-      (mod) => ({ default: mod.BuildOnFrameDeactivation }),
-    ),
-  'build-server-protocol-load-changes': () =>
-    import(
-      '@/registry/icons/plugins/scala/build-server-protocol-load-changes'
-    ).then((mod) => ({ default: mod.BuildServerProtocolLoadChanges })),
-  'build-server-protocol-target': () =>
-    import('@/registry/icons/plugins/scala/build-server-protocol-target').then(
-      (mod) => ({ default: mod.BuildServerProtocolTarget }),
-    ),
-  'build/build': () =>
-    import('@/registry/icons/build/build').then((mod) => ({
-      default: mod.Build,
-    })),
-  'build/dependency-analyzer': () =>
-    import('@/registry/icons/build/dependency-analyzer').then((mod) => ({
-      default: mod.DependencyAnalyzer,
-    })),
-  'build/gradle': () =>
-    import('@/registry/icons/build/gradle').then((mod) => ({
-      default: mod.Gradle,
-    })),
-  'build/gradle-load-changes': () =>
-    import('@/registry/icons/build/gradle-load-changes').then((mod) => ({
-      default: mod.GradleLoadChanges,
-    })),
-  'build/gradle-navigate': () =>
-    import('@/registry/icons/build/gradle-navigate').then((mod) => ({
-      default: mod.GradleNavigate,
-    })),
-  'build/gradle-subproject': () =>
-    import('@/registry/icons/build/gradle-subproject').then((mod) => ({
-      default: mod.GradleSubproject,
-    })),
-  'build/maven-bind': () =>
-    import('@/registry/icons/build/maven-bind').then((mod) => ({
-      default: mod.MavenBind,
-    })),
-  'build/maven-bind-checksum': () =>
-    import('@/registry/icons/build/maven-bind-checksum').then((mod) => ({
-      default: mod.MavenBindChecksum,
-    })),
-  'build/maven-checksum': () =>
-    import('@/registry/icons/build/maven-checksum').then((mod) => ({
-      default: mod.MavenChecksum,
-    })),
-  'build/maven-children-projects': () =>
-    import('@/registry/icons/build/maven-children-projects').then((mod) => ({
-      default: mod.MavenChildrenProjects,
-    })),
-  'build/maven-flex': () =>
-    import('@/registry/icons/build/maven-flex').then((mod) => ({
-      default: mod.MavenFlex,
-    })),
-  'build/maven-load-changes': () =>
-    import('@/registry/icons/build/maven-load-changes').then((mod) => ({
-      default: mod.MavenLoadChanges,
-    })),
-  'build/maven-module': () =>
-    import('@/registry/icons/build/maven-module').then((mod) => ({
-      default: mod.MavenModule,
-    })),
-  'build/maven-parent-projects': () =>
-    import('@/registry/icons/build/maven-parent-projects').then((mod) => ({
-      default: mod.MavenParentProjects,
-    })),
-  'build/maven-plugin': () =>
-    import('@/registry/icons/build/maven-plugin').then((mod) => ({
-      default: mod.MavenPlugin,
-    })),
-  'build/maven-plugin-goal': () =>
-    import('@/registry/icons/build/maven-plugin-goal').then((mod) => ({
-      default: mod.MavenPluginGoal,
-    })),
-  'build/maven-profiles': () =>
-    import('@/registry/icons/build/maven-profiles').then((mod) => ({
-      default: mod.MavenProfiles,
-    })),
-  'build/maven-project': () =>
-    import('@/registry/icons/build/maven-project').then((mod) => ({
-      default: mod.MavenProject,
-    })),
-  'build/task': () =>
-    import('@/registry/icons/build/task').then((mod) => ({
-      default: mod.Task,
-    })),
-  'build/task-group': () =>
-    import('@/registry/icons/build/task-group').then((mod) => ({
-      default: mod.TaskGroup,
-    })),
-  'build/toggle-offline-mode': () =>
-    import('@/registry/icons/build/toggle-offline-mode').then((mod) => ({
-      default: mod.ToggleOfflineMode,
-    })),
-  'build/toggle-skip-tests-mode': () =>
-    import('@/registry/icons/build/toggle-skip-tests-mode').then((mod) => ({
-      default: mod.ToggleSkipTestsMode,
-    })),
-  'build/update-folders': () =>
-    import('@/registry/icons/build/update-folders').then((mod) => ({
-      default: mod.UpdateFolders,
-    })),
-  'bullet-list': () =>
-    import('@/registry/icons/general/editor/bullet-list').then((mod) => ({
-      default: mod.BulletList,
-    })),
-  bun: () =>
-    import('@/registry/icons/file-types/bun').then((mod) => ({
-      default: mod.Bun,
-    })),
-  'bundle-run-anything': () =>
-    import('@/registry/icons/plugins/ruby/bundle-run-anything').then((mod) => ({
-      default: mod.BundleRunAnything,
-    })),
-  c: () =>
-    import('@/registry/icons/plugins/cidr/c').then((mod) => ({
-      default: mod.C,
-    })),
-  'c-test': () =>
-    import('@/registry/icons/plugins/cidr/c-test').then((mod) => ({
-      default: mod.CTest,
-    })),
-  cassandra: () =>
-    import('@/registry/icons/database/cassandra').then((mod) => ({
-      default: mod.Cassandra,
-    })),
-  'cassandra-file-type': () =>
-    import('@/registry/icons/database/cassandra-file-type').then((mod) => ({
-      default: mod.CassandraFileType,
-    })),
-  'catch-test': () =>
-    import('@/registry/icons/plugins/cidr/catch-test').then((mod) => ({
-      default: mod.CatchTest,
-    })),
-  cdi: () =>
-    import('@/registry/icons/plugins/java-ee/cdi').then((mod) => ({
-      default: mod.Cdi,
-    })),
-  'cdi-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/cdi-tool-window').then(
-      (mod) => ({ default: mod.CdiToolWindow }),
-    ),
-  'center-align': () =>
-    import('@/registry/icons/general/editor/center-align').then((mod) => ({
-      default: mod.CenterAlign,
-    })),
-  chameleon: () =>
-    import('@/registry/icons/file-types/chameleon').then((mod) => ({
-      default: mod.Chameleon,
-    })),
-  'changed-file': () =>
-    import('@/registry/icons/file-types/changed-file').then((mod) => ({
-      default: mod.ChangedFile,
-    })),
-  'changed-files': () =>
-    import('@/registry/icons/file-types/changed-files').then((mod) => ({
-      default: mod.ChangedFiles,
-    })),
-  changelist: () =>
-    import('@/registry/icons/vcs/changelist').then((mod) => ({
-      default: mod.Changelist,
-    })),
-  changelog: () =>
-    import('@/registry/icons/plugins/jpa/changelog').then((mod) => ({
-      default: mod.Changelog,
-    })),
-  changeset: () =>
-    import('@/registry/icons/plugins/jpa/changeset').then((mod) => ({
-      default: mod.Changeset,
-    })),
-  channel: () =>
-    import('@/registry/icons/plugins/ruby/channel').then((mod) => ({
-      default: mod.Channel,
-    })),
-  'chart-area': () =>
-    import('@/registry/icons/plugins/bdt/chart-area').then((mod) => ({
-      default: mod.ChartArea,
-    })),
-  'chart-area-range': () =>
-    import('@/registry/icons/plugins/bdt/chart-area-range').then((mod) => ({
-      default: mod.ChartAreaRange,
-    })),
-  'chart-bar': () =>
-    import('@/registry/icons/plugins/bdt/chart-bar').then((mod) => ({
-      default: mod.ChartBar,
-    })),
-  'chart-bubble': () =>
-    import('@/registry/icons/plugins/bdt/chart-bubble').then((mod) => ({
-      default: mod.ChartBubble,
-    })),
-  'chart-histogram': () =>
-    import('@/registry/icons/plugins/bdt/chart-histogram').then((mod) => ({
-      default: mod.ChartHistogram,
-    })),
-  'chart-line': () =>
-    import('@/registry/icons/plugins/bdt/chart-line').then((mod) => ({
-      default: mod.ChartLine,
-    })),
-  'chart-pie': () =>
-    import('@/registry/icons/plugins/bdt/chart-pie').then((mod) => ({
-      default: mod.ChartPie,
-    })),
-  'chart-scatter': () =>
-    import('@/registry/icons/plugins/bdt/chart-scatter').then((mod) => ({
-      default: mod.ChartScatter,
-    })),
-  'chart-stock': () =>
-    import('@/registry/icons/plugins/bdt/chart-stock').then((mod) => ({
-      default: mod.ChartStock,
-    })),
-  checked: () =>
-    import('@/registry/icons/general/actions/checked').then((mod) => ({
-      default: mod.Checked,
-    })),
-  'checkmark-list': () =>
-    import('@/registry/icons/general/editor/checkmark-list').then((mod) => ({
-      default: mod.CheckmarkList,
-    })),
-  'chef-cookbook': () =>
-    import('@/registry/icons/plugins/ruby/chef-cookbook').then((mod) => ({
-      default: mod.ChefCookbook,
-    })),
-  'cherry-pick': () =>
-    import('@/registry/icons/vcs/cherry-pick').then((mod) => ({
-      default: mod.CherryPick,
-    })),
-  chessboard: () =>
-    import('@/registry/icons/editor-icons/chessboard').then((mod) => ({
-      default: mod.Chessboard,
-    })),
-  'chevron-down': () =>
-    import('@/registry/icons/general/general/chevron-down').then((mod) => ({
-      default: mod.ChevronDown,
-    })),
-  'chevron-down-hovered': () =>
-    import('@/registry/icons/general/general/chevron-down-hovered').then(
-      (mod) => ({ default: mod.ChevronDownHovered }),
-    ),
-  'chevron-down-large': () =>
-    import('@/registry/icons/general/general/chevron-down-large').then(
-      (mod) => ({ default: mod.ChevronDownLarge }),
-    ),
-  'chevron-left': () =>
-    import('@/registry/icons/general/general/chevron-left').then((mod) => ({
-      default: mod.ChevronLeft,
-    })),
-  'chevron-right': () =>
-    import('@/registry/icons/general/general/chevron-right').then((mod) => ({
-      default: mod.ChevronRight,
-    })),
-  'chevron-up': () =>
-    import('@/registry/icons/general/general/chevron-up').then((mod) => ({
-      default: mod.ChevronUp,
-    })),
-  'chevron-up-large': () =>
-    import('@/registry/icons/general/general/chevron-up-large').then((mod) => ({
-      default: mod.ChevronUpLarge,
-    })),
-  'class-abstract': () =>
-    import('@/registry/icons/nodes/class-abstract').then((mod) => ({
-      default: mod.ClassAbstract,
-    })),
-  'class-anonymous': () =>
-    import('@/registry/icons/nodes/class-anonymous').then((mod) => ({
-      default: mod.ClassAnonymous,
-    })),
-  'class-companion': () =>
-    import('@/registry/icons/plugins/scala/class-companion').then((mod) => ({
-      default: mod.ClassCompanion,
-    })),
-  'class-companion-swapped': () =>
-    import('@/registry/icons/plugins/scala/class-companion-swapped').then(
-      (mod) => ({ default: mod.ClassCompanionSwapped }),
-    ),
-  'class-cpp': () =>
-    import('@/registry/icons/plugins/cidr/class-cpp').then((mod) => ({
-      default: mod.ClassCpp,
-    })),
-  'class-hierarchy': () =>
-    import('@/registry/icons/general/general/class-hierarchy').then((mod) => ({
-      default: mod.ClassHierarchy,
-    })),
-  'class-initializer-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/class-initializer-kotlin').then(
-      (mod) => ({ default: mod.ClassInitializerKotlin }),
-    ),
-  'class-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/class-kotlin').then((mod) => ({
-      default: mod.ClassKotlin,
-    })),
-  'class-level-watch': () =>
-    import('@/registry/icons/debugger/class-level-watch').then((mod) => ({
-      default: mod.ClassLevelWatch,
-    })),
-  'class-object-scala': () =>
-    import('@/registry/icons/plugins/scala/class-object-scala').then((mod) => ({
-      default: mod.ClassObjectScala,
-    })),
-  'class-scala': () =>
-    import('@/registry/icons/plugins/scala/class-scala').then((mod) => ({
-      default: mod.ClassScala,
-    })),
-  clean: () =>
-    import('@/registry/icons/plugins/platformio/clean').then((mod) => ({
-      default: mod.Clean,
-    })),
-  'click-house': () =>
-    import('@/registry/icons/database/click-house').then((mod) => ({
-      default: mod.ClickHouse,
-    })),
-  'close-hover': () =>
-    import('@/registry/icons/general/windows/close-hover').then((mod) => ({
-      default: mod.CloseHover,
-    })),
-  'close-inactive': () =>
-    import('@/registry/icons/general/windows/close-inactive').then((mod) => ({
-      default: mod.CloseInactive,
-    })),
-  'close-small-hovered': () =>
-    import('@/registry/icons/general/general/close-small-hovered').then(
-      (mod) => ({ default: mod.CloseSmallHovered }),
-    ),
-  cluster: () =>
-    import('@/registry/icons/plugins/bdt/cluster').then((mod) => ({
-      default: mod.Cluster,
-    })),
-  'cluster-role': () =>
-    import('@/registry/icons/plugins/kubernetes/cluster-role').then((mod) => ({
-      default: mod.ClusterRole,
-    })),
-  'cluster-role-binding': () =>
-    import('@/registry/icons/plugins/kubernetes/cluster-role-binding').then(
-      (mod) => ({ default: mod.ClusterRoleBinding }),
-    ),
-  cmake: () =>
-    import('@/registry/icons/plugins/cidr/cmake').then((mod) => ({
-      default: mod.CMake,
-    })),
-  'cmake-debug': () =>
-    import('@/registry/icons/plugins/cidr/cmake-debug').then((mod) => ({
-      default: mod.CMakeDebug,
-    })),
-  'cmake-function': () =>
-    import('@/registry/icons/plugins/cidr/cmake-function').then((mod) => ({
-      default: mod.CMakeFunction,
-    })),
-  'cmake-load-changes': () =>
-    import('@/registry/icons/plugins/cidr/cmake-load-changes').then((mod) => ({
-      default: mod.CMakeLoadChanges,
-    })),
-  'cmake-macro': () =>
-    import('@/registry/icons/plugins/cidr/cmake-macro').then((mod) => ({
-      default: mod.CMakeMacro,
-    })),
-  'cmake-modificator': () =>
-    import('@/registry/icons/plugins/cidr/cmake-modificator').then((mod) => ({
-      default: mod.CMakeModificator,
-    })),
-  'cmake-target-executable': () =>
-    import('@/registry/icons/plugins/cidr/cmake-target-executable').then(
-      (mod) => ({ default: mod.CMakeTargetExecutable }),
-    ),
-  'cmake-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/cmake-tool-window').then(
-      (mod) => ({ default: mod.CMakeToolWindow }),
-    ),
-  'cockroach-db': () =>
-    import('@/registry/icons/database/cockroach-db').then((mod) => ({
-      default: mod.CockroachDB,
-    })),
-  'cocoa-pods': () =>
-    import('@/registry/icons/plugins/cidr/cocoa-pods').then((mod) => ({
-      default: mod.CocoaPods,
-    })),
-  'code-assistant-actor': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-actor').then(
-      (mod) => ({ default: mod.CodeAssistantActor }),
-    ),
-  'code-assistant-actor-extension': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-actor-extension').then(
-      (mod) => ({ default: mod.CodeAssistantActorExtension }),
-    ),
-  'code-assistant-enum': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-enum').then((mod) => ({
-      default: mod.CodeAssistantEnum,
-    })),
-  'code-assistant-enum-const': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-enum-const').then(
-      (mod) => ({ default: mod.CodeAssistantEnumConst }),
-    ),
-  'code-assistant-enum-extension': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-enum-extension').then(
-      (mod) => ({ default: mod.CodeAssistantEnumExtension }),
-    ),
-  'code-assistant-field': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-field').then(
-      (mod) => ({ default: mod.CodeAssistantField }),
-    ),
-  'code-assistant-field-optional': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-field-optional').then(
-      (mod) => ({ default: mod.CodeAssistantFieldOptional }),
-    ),
-  'code-assistant-function': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-function').then(
-      (mod) => ({ default: mod.CodeAssistantFunction }),
-    ),
-  'code-assistant-function-abstract': () =>
-    import(
-      '@/registry/icons/plugins/cidr/code-assistant-function-abstract'
-    ).then((mod) => ({ default: mod.CodeAssistantFunctionAbstract })),
-  'code-assistant-function-invocation': () =>
-    import(
-      '@/registry/icons/plugins/cidr/code-assistant-function-invocation'
-    ).then((mod) => ({ default: mod.CodeAssistantFunctionInvocation })),
-  'code-assistant-global': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-global').then(
-      (mod) => ({ default: mod.CodeAssistantGlobal }),
-    ),
-  'code-assistant-local': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-local').then(
-      (mod) => ({ default: mod.CodeAssistantLocal }),
-    ),
-  'code-assistant-member-abstract': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-member-abstract').then(
-      (mod) => ({ default: mod.CodeAssistantMemberAbstract }),
-    ),
-  'code-assistant-operator': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-operator').then(
-      (mod) => ({ default: mod.CodeAssistantOperator }),
-    ),
-  'code-assistant-parameter': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-parameter').then(
-      (mod) => ({ default: mod.CodeAssistantParameter }),
-    ),
-  'code-assistant-property': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-property').then(
-      (mod) => ({ default: mod.CodeAssistantProperty }),
-    ),
-  'code-assistant-property-optional': () =>
-    import(
-      '@/registry/icons/plugins/cidr/code-assistant-property-optional'
-    ).then((mod) => ({ default: mod.CodeAssistantPropertyOptional })),
-  'code-assistant-protocol': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-protocol').then(
-      (mod) => ({ default: mod.CodeAssistantProtocol }),
-    ),
-  'code-assistant-protocol-extension': () =>
-    import(
-      '@/registry/icons/plugins/cidr/code-assistant-protocol-extension'
-    ).then((mod) => ({ default: mod.CodeAssistantProtocolExtension })),
-  'code-assistant-struct': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-struct').then(
-      (mod) => ({ default: mod.CodeAssistantStruct }),
-    ),
-  'code-assistant-struct-extension': () =>
-    import(
-      '@/registry/icons/plugins/cidr/code-assistant-struct-extension'
-    ).then((mod) => ({ default: mod.CodeAssistantStructExtension })),
-  'code-assistant-type': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-type').then((mod) => ({
-      default: mod.CodeAssistantType,
-    })),
-  'code-assistant-union': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-union').then(
-      (mod) => ({ default: mod.CodeAssistantUnion }),
-    ),
-  'code-span': () =>
-    import('@/registry/icons/general/editor/code-span').then((mod) => ({
-      default: mod.CodeSpan,
-    })),
-  coffeescript: () =>
-    import('@/registry/icons/file-types/coffeescript').then((mod) => ({
-      default: mod.Coffeescript,
-    })),
-  'collapse-all': () =>
-    import('@/registry/icons/general/general/collapse-all').then((mod) => ({
-      default: mod.CollapseAll,
-    })),
-  'collapse-node': () =>
-    import('@/registry/icons/editor-icons/collapse-node').then((mod) => ({
-      default: mod.CollapseNode,
-    })),
-  collation: () =>
-    import('@/registry/icons/database/collation').then((mod) => ({
-      default: mod.Collation,
-    })),
-  collection: () =>
-    import('@/registry/icons/database/collection').then((mod) => ({
-      default: mod.Collection,
-    })),
-  'collection-key': () =>
-    import('@/registry/icons/database/collection-key').then((mod) => ({
-      default: mod.CollectionKey,
-    })),
-  'collection-type': () =>
-    import('@/registry/icons/database/collection-type').then((mod) => ({
-      default: mod.CollectionType,
-    })),
-  'color-picker': () =>
-    import('@/registry/icons/editor-icons/color-picker').then((mod) => ({
-      default: mod.ColorPicker,
-    })),
-  colors: () =>
-    import('@/registry/icons/editor-icons/colors').then((mod) => ({
-      default: mod.Colors,
-    })),
-  'column-blue-key': () =>
-    import('@/registry/icons/database/column-blue-key').then((mod) => ({
-      default: mod.ColumnBlueKey,
-    })),
-  'column-blue-key-dot': () =>
-    import('@/registry/icons/database/column-blue-key-dot').then((mod) => ({
-      default: mod.ColumnBlueKeyDot,
-    })),
-  'column-blue-key-dot-index': () =>
-    import('@/registry/icons/database/column-blue-key-dot-index').then(
-      (mod) => ({ default: mod.ColumnBlueKeyDotIndex }),
-    ),
-  'column-blue-key-index': () =>
-    import('@/registry/icons/database/column-blue-key-index').then((mod) => ({
-      default: mod.ColumnBlueKeyIndex,
-    })),
-  'column-dot': () =>
-    import('@/registry/icons/database/column-dot').then((mod) => ({
-      default: mod.ColumnDot,
-    })),
-  'column-dot-index': () =>
-    import('@/registry/icons/database/column-dot-index').then((mod) => ({
-      default: mod.ColumnDotIndex,
-    })),
-  'column-filter': () =>
-    import('@/registry/icons/database/column-filter').then((mod) => ({
-      default: mod.ColumnFilter,
-    })),
-  'column-gold-blue-key': () =>
-    import('@/registry/icons/database/column-gold-blue-key').then((mod) => ({
-      default: mod.ColumnGoldBlueKey,
-    })),
-  'column-gold-blue-key-dot': () =>
-    import('@/registry/icons/database/column-gold-blue-key-dot').then(
-      (mod) => ({ default: mod.ColumnGoldBlueKeyDot }),
-    ),
-  'column-gold-blue-key-dot-index': () =>
-    import('@/registry/icons/database/column-gold-blue-key-dot-index').then(
-      (mod) => ({ default: mod.ColumnGoldBlueKeyDotIndex }),
-    ),
-  'column-gold-blue-key-index': () =>
-    import('@/registry/icons/database/column-gold-blue-key-index').then(
-      (mod) => ({ default: mod.ColumnGoldBlueKeyIndex }),
-    ),
-  'column-gold-key': () =>
-    import('@/registry/icons/database/column-gold-key').then((mod) => ({
-      default: mod.ColumnGoldKey,
-    })),
-  'column-gold-key-dot': () =>
-    import('@/registry/icons/database/column-gold-key-dot').then((mod) => ({
-      default: mod.ColumnGoldKeyDot,
-    })),
-  'column-gold-key-dot-index': () =>
-    import('@/registry/icons/database/column-gold-key-dot-index').then(
-      (mod) => ({ default: mod.ColumnGoldKeyDotIndex }),
-    ),
-  'column-gold-key-index': () =>
-    import('@/registry/icons/database/column-gold-key-index').then((mod) => ({
-      default: mod.ColumnGoldKeyIndex,
-    })),
-  'column-grey-key': () =>
-    import('@/registry/icons/database/column-grey-key').then((mod) => ({
-      default: mod.ColumnGreyKey,
-    })),
-  'column-index': () =>
-    import('@/registry/icons/database/column-index').then((mod) => ({
-      default: mod.ColumnIndex,
-    })),
-  command: () =>
-    import('@/registry/icons/terminal/command').then((mod) => ({
-      default: mod.Command,
-    })),
-  comment: () =>
-    import('@/registry/icons/vcs/comment').then((mod) => ({
-      default: mod.Comment,
-    })),
-  'comment-read': () =>
-    import('@/registry/icons/vcs/comment-read').then((mod) => ({
-      default: mod.CommentRead,
-    })),
-  'comment-regular': () =>
-    import('@/registry/icons/vcs/comment-regular').then((mod) => ({
-      default: mod.CommentRegular,
-    })),
-  'comment-resolved': () =>
-    import('@/registry/icons/vcs/comment-resolved').then((mod) => ({
-      default: mod.CommentResolved,
-    })),
-  'comment-unread': () =>
-    import('@/registry/icons/vcs/comment-unread').then((mod) => ({
-      default: mod.CommentUnread,
-    })),
-  'comment-unresolved': () =>
-    import('@/registry/icons/vcs/comment-unresolved').then((mod) => ({
-      default: mod.CommentUnresolved,
-    })),
-  'compact-empty-packages': () =>
-    import(
-      '@/registry/icons/general/object-browser/compact-empty-packages'
-    ).then((mod) => ({ default: mod.CompactEmptyPackages })),
-  'compare3-left-middle': () =>
-    import('@/registry/icons/vcs/compare3-left-middle').then((mod) => ({
-      default: mod.Compare3LeftMiddle,
-    })),
-  'compare3-left-right': () =>
-    import('@/registry/icons/vcs/compare3-left-right').then((mod) => ({
-      default: mod.Compare3LeftRight,
-    })),
-  'compare3-middle-right': () =>
-    import('@/registry/icons/vcs/compare3-middle-right').then((mod) => ({
-      default: mod.Compare3MiddleRight,
-    })),
-  'compare4-left-bottom': () =>
-    import('@/registry/icons/vcs/compare4-left-bottom').then((mod) => ({
-      default: mod.Compare4LeftBottom,
-    })),
-  'compare4-left-middle': () =>
-    import('@/registry/icons/vcs/compare4-left-middle').then((mod) => ({
-      default: mod.Compare4LeftMiddle,
-    })),
-  'compare4-left-right': () =>
-    import('@/registry/icons/vcs/compare4-left-right').then((mod) => ({
-      default: mod.Compare4LeftRight,
-    })),
-  'compare4-middle-bottom': () =>
-    import('@/registry/icons/vcs/compare4-middle-bottom').then((mod) => ({
-      default: mod.Compare4MiddleBottom,
-    })),
-  'compare4-middle-right': () =>
-    import('@/registry/icons/vcs/compare4-middle-right').then((mod) => ({
-      default: mod.Compare4MiddleRight,
-    })),
-  'compare4-right-bottom': () =>
-    import('@/registry/icons/vcs/compare4-right-bottom').then((mod) => ({
-      default: mod.Compare4RightBottom,
-    })),
-  'compilation-database-load-changes': () =>
-    import(
-      '@/registry/icons/plugins/cidr/compilation-database-load-changes'
-    ).then((mod) => ({ default: mod.CompilationDatabaseLoadChanges })),
-  'compile-server': () =>
-    import('@/registry/icons/plugins/scala/compile-server').then((mod) => ({
-      default: mod.CompileServer,
-    })),
-  component: () =>
-    import('@/registry/icons/plugins/java-ee/component').then((mod) => ({
-      default: mod.Component,
-    })),
-  'component-vendor': () =>
-    import('@/registry/icons/plugins/platformio/component-vendor').then(
-      (mod) => ({ default: mod.ComponentVendor }),
-    ),
-  compound: () =>
-    import('@/registry/icons/run-configurations/compound').then((mod) => ({
-      default: mod.Compound,
-    })),
-  'concurrency-diagram-toolwindow': () =>
-    import(
-      '@/registry/icons/general/tool-windows/concurrency-diagram-toolwindow'
-    ).then((mod) => ({ default: mod.ConcurrencyDiagramToolwindow })),
-  'conditional-statement': () =>
-    import('@/registry/icons/file-types/conditional-statement').then((mod) => ({
-      default: mod.ConditionalStatement,
-    })),
-  'config-file': () =>
-    import('@/registry/icons/general/general/config-file').then((mod) => ({
-      default: mod.ConfigFile,
-    })),
-  'config-map': () =>
-    import('@/registry/icons/plugins/kubernetes/config-map').then((mod) => ({
-      default: mod.ConfigMap,
-    })),
-  configuration: () =>
-    import('@/registry/icons/plugins/kubernetes/configuration').then((mod) => ({
-      default: mod.Configuration,
-    })),
-  'configuration-scan': () =>
-    import('@/registry/icons/plugins/java-ee/configuration-scan').then(
-      (mod) => ({ default: mod.ConfigurationScan }),
-    ),
-  conflict: () =>
-    import('@/registry/icons/general/setting-sync/conflict').then((mod) => ({
-      default: mod.Conflict,
-    })),
-  connector: () =>
-    import('@/registry/icons/database/connector').then((mod) => ({
-      default: mod.Connector,
-    })),
-  console: () =>
-    import('@/registry/icons/plugins/kotlin/console').then((mod) => ({
-      default: mod.Console,
-    })),
-  'console-run': () =>
-    import('@/registry/icons/database/console-run').then((mod) => ({
-      default: mod.ConsoleRun,
-    })),
-  'console-show-plan': () =>
-    import('@/registry/icons/database/console-show-plan').then((mod) => ({
-      default: mod.ConsoleShowPlan,
-    })),
-  constant: () =>
-    import('@/registry/icons/nodes/constant').then((mod) => ({
-      default: mod.Constant,
-    })),
-  'constraint-mappings': () =>
-    import('@/registry/icons/plugins/java-ee/constraint-mappings').then(
-      (mod) => ({ default: mod.ConstraintMappings }),
-    ),
-  'constraint-validator': () =>
-    import('@/registry/icons/plugins/java-ee/constraint-validator').then(
-      (mod) => ({ default: mod.ConstraintValidator }),
-    ),
-  constraints: () =>
-    import('@/registry/icons/plugins/java-ee/constraints').then((mod) => ({
-      default: mod.Constraints,
-    })),
-  constructor: () =>
-    import('@/registry/icons/plugins/uml/constructor').then((mod) => ({
-      default: mod.Constructor,
-    })),
-  contexts: () =>
-    import('@/registry/icons/file-types/contexts').then((mod) => ({
-      default: mod.Contexts,
-    })),
-  'contexts-modifier': () =>
-    import('@/registry/icons/file-types/contexts-modifier').then((mod) => ({
-      default: mod.ContextsModifier,
-    })),
-  controller: () =>
-    import('@/registry/icons/nodes/controller').then((mod) => ({
-      default: mod.Controller,
-    })),
-  'controller-folder': () =>
-    import('@/registry/icons/plugins/ruby/controller-folder').then((mod) => ({
-      default: mod.ControllerFolder,
-    })),
-  'controller-node': () =>
-    import('@/registry/icons/plugins/ruby/controller-node').then((mod) => ({
-      default: mod.ControllerNode,
-    })),
-  'copy-of-folder': () =>
-    import('@/registry/icons/nodes/copy-of-folder').then((mod) => ({
-      default: mod.CopyOfFolder,
-    })),
-  couchbase: () =>
-    import('@/registry/icons/database/couchbase').then((mod) => ({
-      default: mod.Couchbase,
-    })),
-  count: () =>
-    import('@/registry/icons/plugins/jpa/count').then((mod) => ({
-      default: mod.Count,
-    })),
-  coverage: () =>
-    import('@/registry/icons/general/tool-windows/coverage').then((mod) => ({
-      default: mod.Coverage,
-    })),
-  cpp: () =>
-    import('@/registry/icons/plugins/cidr/cpp').then((mod) => ({
-      default: mod.Cpp,
-    })),
-  'create-column': () =>
-    import('@/registry/icons/plugins/jpa/create-column').then((mod) => ({
-      default: mod.CreateColumn,
-    })),
-  'create-constraint': () =>
-    import('@/registry/icons/plugins/jpa/create-constraint').then((mod) => ({
-      default: mod.CreateConstraint,
-    })),
-  'create-index': () =>
-    import('@/registry/icons/plugins/jpa/create-index').then((mod) => ({
-      default: mod.CreateIndex,
-    })),
-  'create-sequence': () =>
-    import('@/registry/icons/plugins/jpa/create-sequence').then((mod) => ({
-      default: mod.CreateSequence,
-    })),
-  'create-table': () =>
-    import('@/registry/icons/plugins/jpa/create-table').then((mod) => ({
-      default: mod.CreateTable,
-    })),
-  'cron-jobs': () =>
-    import('@/registry/icons/plugins/kubernetes/cron-jobs').then((mod) => ({
-      default: mod.CronJobs,
-    })),
-  css: () =>
-    import('@/registry/icons/file-types/css').then((mod) => ({
-      default: mod.Css,
-    })),
-  cu: () =>
-    import('@/registry/icons/plugins/cidr/cu').then((mod) => ({
-      default: mod.Cu,
-    })),
-  cucumber: () =>
-    import('@/registry/icons/file-types/cucumber').then((mod) => ({
-      default: mod.Cucumber,
-    })),
-  cuh: () =>
-    import('@/registry/icons/plugins/cidr/cuh').then((mod) => ({
-      default: mod.Cuh,
-    })),
-  'current-branch': () =>
-    import('@/registry/icons/vcs/current-branch').then((mod) => ({
-      default: mod.CurrentBranch,
-    })),
-  'current-branch-favorite': () =>
-    import('@/registry/icons/vcs/current-branch-favorite').then((mod) => ({
-      default: mod.CurrentBranchFavorite,
-    })),
-  'custom-folder': () =>
-    import('@/registry/icons/plugins/cidr/custom-folder').then((mod) => ({
-      default: mod.CustomFolder,
-    })),
-  'custom-gdb-run-configuration': () =>
-    import('@/registry/icons/plugins/cidr/custom-gdb-run-configuration').then(
-      (mod) => ({ default: mod.CustomGdbRunConfiguration }),
-    ),
-  'custom-resource': () =>
-    import('@/registry/icons/plugins/kubernetes/custom-resource').then(
-      (mod) => ({ default: mod.CustomResource }),
-    ),
-  'custom-resource-definition': () =>
-    import(
-      '@/registry/icons/plugins/kubernetes/custom-resource-definition'
-    ).then((mod) => ({ default: mod.CustomResourceDefinition })),
-  'custom-resources': () =>
-    import('@/registry/icons/plugins/kubernetes/custom-resources').then(
-      (mod) => ({ default: mod.CustomResources }),
-    ),
-  'custom-target': () =>
-    import('@/registry/icons/plugins/cidr/custom-target').then((mod) => ({
-      default: mod.CustomTarget,
-    })),
-  cut: () =>
-    import('@/registry/icons/general/general/cut').then((mod) => ({
-      default: mod.Cut,
-    })),
-  'cwm-access': () =>
-    import('@/registry/icons/general/tool-windows/cwm-access').then((mod) => ({
-      default: mod.CwmAccess,
-    })),
-  'cwm-cam-avatar-off': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-cam-avatar-off').then(
-      (mod) => ({ default: mod.CwmCamAvatarOff }),
-    ),
-  'cwm-cam-avatar-on': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-cam-avatar-on').then(
-      (mod) => ({ default: mod.CwmCamAvatarOn }),
-    ),
-  'cwm-cam-off': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-cam-off').then((mod) => ({
-      default: mod.CwmCamOff,
-    })),
-  'cwm-cam-on': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-cam-on').then((mod) => ({
-      default: mod.CwmCamOn,
-    })),
-  'cwm-disable-call': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-disable-call').then(
-      (mod) => ({ default: mod.CwmDisableCall }),
-    ),
-  'cwm-enable-call': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-enable-call').then(
-      (mod) => ({ default: mod.CwmEnableCall }),
-    ),
-  'cwm-icon-modificator': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-icon-modificator').then(
-      (mod) => ({ default: mod.CwmIconModificator }),
-    ),
-  'cwm-icon-modificator-menu': () =>
-    import(
-      '@/registry/icons/plugins/code-with-me/cwm-icon-modificator-menu'
-    ).then((mod) => ({ default: mod.CwmIconModificatorMenu })),
-  'cwm-invite': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-invite').then((mod) => ({
-      default: mod.CwmInvite,
-    })),
-  'cwm-mic-avatar-off': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-mic-avatar-off').then(
-      (mod) => ({ default: mod.CwmMicAvatarOff }),
-    ),
-  'cwm-mic-avatar-on': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-mic-avatar-on').then(
-      (mod) => ({ default: mod.CwmMicAvatarOn }),
-    ),
-  'cwm-mic-off': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-mic-off').then((mod) => ({
-      default: mod.CwmMicOff,
-    })),
-  'cwm-mic-on': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-mic-on').then((mod) => ({
-      default: mod.CwmMicOn,
-    })),
-  'cwm-permission-edit': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-permission-edit').then(
-      (mod) => ({ default: mod.CwmPermissionEdit }),
-    ),
-  'cwm-permission-full': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-permission-full').then(
-      (mod) => ({ default: mod.CwmPermissionFull }),
-    ),
-  'cwm-permission-view': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-permission-view').then(
-      (mod) => ({ default: mod.CwmPermissionView }),
-    ),
-  'cwm-permissions': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-permissions').then(
-      (mod) => ({ default: mod.CwmPermissions }),
-    ),
-  'cwm-permissions-denied': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-permissions-denied').then(
-      (mod) => ({ default: mod.CwmPermissionsDenied }),
-    ),
-  'cwm-permissions-granted': () =>
-    import(
-      '@/registry/icons/plugins/code-with-me/cwm-permissions-granted'
-    ).then((mod) => ({ default: mod.CwmPermissionsGranted })),
-  'cwm-screen-in-browser-off': () =>
-    import(
-      '@/registry/icons/plugins/code-with-me/cwm-screen-in-browser-off'
-    ).then((mod) => ({ default: mod.CwmScreenInBrowserOff })),
-  'cwm-screen-in-browser-on': () =>
-    import(
-      '@/registry/icons/plugins/code-with-me/cwm-screen-in-browser-on'
-    ).then((mod) => ({ default: mod.CwmScreenInBrowserOn })),
-  'cwm-screen-off': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-screen-off').then(
-      (mod) => ({ default: mod.CwmScreenOff }),
-    ),
-  'cwm-screen-on': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-screen-on').then(
-      (mod) => ({ default: mod.CwmScreenOn }),
-    ),
-  'cwm-share': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-share').then((mod) => ({
-      default: mod.CwmShare,
-    })),
-  'cwm-users': () =>
-    import('@/registry/icons/general/tool-windows/cwm-users').then((mod) => ({
-      default: mod.CwmUsers,
-    })),
-  'cwm-verified': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-verified').then(
-      (mod) => ({ default: mod.CwmVerified }),
-    ),
-  cypress: () =>
-    import('@/registry/icons/general/tool-windows/cypress').then((mod) => ({
-      default: mod.Cypress,
-    })),
-  'cython-file': () =>
-    import('@/registry/icons/file-types/cython-file').then((mod) => ({
-      default: mod.CythonFile,
-    })),
-  'daemon-set': () =>
-    import('@/registry/icons/plugins/kubernetes/daemon-set').then((mod) => ({
-      default: mod.DaemonSet,
-    })),
-  'dark-theme': () =>
-    import('@/registry/icons/general/new-ui/dark-theme').then((mod) => ({
-      default: mod.DarkTheme,
-    })),
-  'dark-theme-selected': () =>
-    import('@/registry/icons/general/new-ui/dark-theme-selected').then(
-      (mod) => ({ default: mod.DarkThemeSelected }),
-    ),
-  dart: () =>
-    import('@/registry/icons/plugins/dart/dart').then((mod) => ({
-      default: mod.Dart,
-    })),
-  'dart-remote': () =>
-    import('@/registry/icons/plugins/dart/dart-remote').then((mod) => ({
-      default: mod.DartRemote,
-    })),
-  'dart-test': () =>
-    import('@/registry/icons/plugins/dart/dart-test').then((mod) => ({
-      default: mod.DartTest,
-    })),
-  'dart-web': () =>
-    import('@/registry/icons/plugins/dart/dart-web').then((mod) => ({
-      default: mod.DartWeb,
-    })),
-  'data-column': () =>
-    import('@/registry/icons/nodes/data-column').then((mod) => ({
-      default: mod.DataColumn,
-    })),
-  'data-file': () =>
-    import('@/registry/icons/database/data-file').then((mod) => ({
-      default: mod.DataFile,
-    })),
-  'data-model': () =>
-    import('@/registry/icons/plugins/jpa/data-model').then((mod) => ({
-      default: mod.DataModel,
-    })),
-  'data-share': () =>
-    import('@/registry/icons/database/data-share').then((mod) => ({
-      default: mod.DataShare,
-    })),
-  'data-stores': () =>
-    import('@/registry/icons/plugins/jpa/data-stores').then((mod) => ({
-      default: mod.DataStores,
-    })),
-  'data-structure': () =>
-    import('@/registry/icons/database/data-structure').then((mod) => ({
-      default: mod.DataStructure,
-    })),
-  'data-structure-key': () =>
-    import('@/registry/icons/database/data-structure-key').then((mod) => ({
-      default: mod.DataStructureKey,
-    })),
-  'data-tables': () =>
-    import('@/registry/icons/nodes/data-tables').then((mod) => ({
-      default: mod.DataTables,
-    })),
-  'data-view': () =>
-    import('@/registry/icons/plugins/jpa/data-view').then((mod) => ({
-      default: mod.DataView,
-    })),
-  database: () =>
-    import('@/registry/icons/database/database').then((mod) => ({
-      default: mod.Database,
-    })),
-  'database-changes': () =>
-    import('@/registry/icons/general/tool-windows/database-changes').then(
-      (mod) => ({ default: mod.DatabaseChanges }),
-    ),
-  'database-external': () =>
-    import('@/registry/icons/database/database-external').then((mod) => ({
-      default: mod.DatabaseExternal,
-    })),
-  'database-link': () =>
-    import('@/registry/icons/database/database-link').then((mod) => ({
-      default: mod.DatabaseLink,
-    })),
-  'database-objects-group': () =>
-    import('@/registry/icons/database/database-objects-group').then((mod) => ({
-      default: mod.DatabaseObjectsGroup,
-    })),
-  'database/access-method': () =>
-    import('@/registry/icons/database/access-method').then((mod) => ({
-      default: mod.AccessMethod,
-    })),
-  'database/adapter-script': () =>
-    import('@/registry/icons/database/adapter-script').then((mod) => ({
-      default: mod.AdapterScript,
-    })),
-  'database/aggregate': () =>
-    import('@/registry/icons/database/aggregate').then((mod) => ({
-      default: mod.Aggregate,
-    })),
-  'database/apache': () =>
-    import('@/registry/icons/database/apache').then((mod) => ({
-      default: mod.Apache,
-    })),
-  'database/apache-derby': () =>
-    import('@/registry/icons/database/apache-derby').then((mod) => ({
-      default: mod.ApacheDerby,
-    })),
-  'database/apache-ignite': () =>
-    import('@/registry/icons/database/apache-ignite').then((mod) => ({
-      default: mod.ApacheIgnite,
-    })),
-  'database/apache-phoenix': () =>
-    import('@/registry/icons/database/apache-phoenix').then((mod) => ({
-      default: mod.ApachePhoenix,
-    })),
-  'database/argument': () =>
-    import('@/registry/icons/database/argument').then((mod) => ({
-      default: mod.Argument,
-    })),
-  'database/athena': () =>
-    import('@/registry/icons/database/athena').then((mod) => ({
-      default: mod.Athena,
-    })),
-  'database/azure': () =>
-    import('@/registry/icons/database/azure').then((mod) => ({
-      default: mod.Azure,
-    })),
-  'database/big-query': () =>
-    import('@/registry/icons/database/big-query').then((mod) => ({
-      default: mod.BigQuery,
-    })),
-  'database/binary-data': () =>
-    import('@/registry/icons/database/binary-data').then((mod) => ({
-      default: mod.BinaryData,
-    })),
-  'database/blue-key': () =>
-    import('@/registry/icons/database/blue-key').then((mod) => ({
-      default: mod.BlueKey,
-    })),
-  'database/body': () =>
-    import('@/registry/icons/database/body').then((mod) => ({
-      default: mod.Body,
-    })),
-  'database/cassandra': () =>
-    import('@/registry/icons/database/cassandra').then((mod) => ({
-      default: mod.Cassandra,
-    })),
-  'database/cassandra-file-type': () =>
-    import('@/registry/icons/database/cassandra-file-type').then((mod) => ({
-      default: mod.CassandraFileType,
-    })),
-  'database/check-constraint': () =>
-    import('@/registry/icons/database/check-constraint').then((mod) => ({
-      default: mod.CheckConstraint,
-    })),
-  'database/click-house': () =>
-    import('@/registry/icons/database/click-house').then((mod) => ({
-      default: mod.ClickHouse,
-    })),
-  'database/cockroach-db': () =>
-    import('@/registry/icons/database/cockroach-db').then((mod) => ({
-      default: mod.CockroachDB,
-    })),
-  'database/collation': () =>
-    import('@/registry/icons/database/collation').then((mod) => ({
-      default: mod.Collation,
-    })),
-  'database/collection': () =>
-    import('@/registry/icons/database/collection').then((mod) => ({
-      default: mod.Collection,
-    })),
-  'database/collection-key': () =>
-    import('@/registry/icons/database/collection-key').then((mod) => ({
-      default: mod.CollectionKey,
-    })),
-  'database/collection-type': () =>
-    import('@/registry/icons/database/collection-type').then((mod) => ({
-      default: mod.CollectionType,
-    })),
-  'database/column': () =>
-    import('@/registry/icons/database/column').then((mod) => ({
-      default: mod.Column,
-    })),
-  'database/column-blue-key': () =>
-    import('@/registry/icons/database/column-blue-key').then((mod) => ({
-      default: mod.ColumnBlueKey,
-    })),
-  'database/column-blue-key-dot': () =>
-    import('@/registry/icons/database/column-blue-key-dot').then((mod) => ({
-      default: mod.ColumnBlueKeyDot,
-    })),
-  'database/column-blue-key-dot-index': () =>
-    import('@/registry/icons/database/column-blue-key-dot-index').then(
-      (mod) => ({ default: mod.ColumnBlueKeyDotIndex }),
-    ),
-  'database/column-blue-key-index': () =>
-    import('@/registry/icons/database/column-blue-key-index').then((mod) => ({
-      default: mod.ColumnBlueKeyIndex,
-    })),
-  'database/column-dot': () =>
-    import('@/registry/icons/database/column-dot').then((mod) => ({
-      default: mod.ColumnDot,
-    })),
-  'database/column-dot-index': () =>
-    import('@/registry/icons/database/column-dot-index').then((mod) => ({
-      default: mod.ColumnDotIndex,
-    })),
-  'database/column-filter': () =>
-    import('@/registry/icons/database/column-filter').then((mod) => ({
-      default: mod.ColumnFilter,
-    })),
-  'database/column-gold-blue-key': () =>
-    import('@/registry/icons/database/column-gold-blue-key').then((mod) => ({
-      default: mod.ColumnGoldBlueKey,
-    })),
-  'database/column-gold-blue-key-dot': () =>
-    import('@/registry/icons/database/column-gold-blue-key-dot').then(
-      (mod) => ({ default: mod.ColumnGoldBlueKeyDot }),
-    ),
-  'database/column-gold-blue-key-dot-index': () =>
-    import('@/registry/icons/database/column-gold-blue-key-dot-index').then(
-      (mod) => ({ default: mod.ColumnGoldBlueKeyDotIndex }),
-    ),
-  'database/column-gold-blue-key-index': () =>
-    import('@/registry/icons/database/column-gold-blue-key-index').then(
-      (mod) => ({ default: mod.ColumnGoldBlueKeyIndex }),
-    ),
-  'database/column-gold-key': () =>
-    import('@/registry/icons/database/column-gold-key').then((mod) => ({
-      default: mod.ColumnGoldKey,
-    })),
-  'database/column-gold-key-dot': () =>
-    import('@/registry/icons/database/column-gold-key-dot').then((mod) => ({
-      default: mod.ColumnGoldKeyDot,
-    })),
-  'database/column-gold-key-dot-index': () =>
-    import('@/registry/icons/database/column-gold-key-dot-index').then(
-      (mod) => ({ default: mod.ColumnGoldKeyDotIndex }),
-    ),
-  'database/column-gold-key-index': () =>
-    import('@/registry/icons/database/column-gold-key-index').then((mod) => ({
-      default: mod.ColumnGoldKeyIndex,
-    })),
-  'database/column-grey-key': () =>
-    import('@/registry/icons/database/column-grey-key').then((mod) => ({
-      default: mod.ColumnGreyKey,
-    })),
-  'database/column-index': () =>
-    import('@/registry/icons/database/column-index').then((mod) => ({
-      default: mod.ColumnIndex,
-    })),
-  'database/commit': () =>
-    import('@/registry/icons/database/commit').then((mod) => ({
-      default: mod.Commit,
-    })),
-  'database/connector': () =>
-    import('@/registry/icons/database/connector').then((mod) => ({
-      default: mod.Connector,
-    })),
-  'database/console-run': () =>
-    import('@/registry/icons/database/console-run').then((mod) => ({
-      default: mod.ConsoleRun,
-    })),
-  'database/console-show-plan': () =>
-    import('@/registry/icons/database/console-show-plan').then((mod) => ({
-      default: mod.ConsoleShowPlan,
-    })),
-  'database/couchbase': () =>
-    import('@/registry/icons/database/couchbase').then((mod) => ({
-      default: mod.Couchbase,
-    })),
-  'database/data-file': () =>
-    import('@/registry/icons/database/data-file').then((mod) => ({
-      default: mod.DataFile,
-    })),
-  'database/data-schema': () =>
-    import('@/registry/icons/database/data-schema').then((mod) => ({
-      default: mod.DataSchema,
-    })),
-  'database/data-share': () =>
-    import('@/registry/icons/database/data-share').then((mod) => ({
-      default: mod.DataShare,
-    })),
-  'database/data-structure': () =>
-    import('@/registry/icons/database/data-structure').then((mod) => ({
-      default: mod.DataStructure,
-    })),
-  'database/data-structure-key': () =>
-    import('@/registry/icons/database/data-structure-key').then((mod) => ({
-      default: mod.DataStructureKey,
-    })),
-  'database/database': () =>
-    import('@/registry/icons/database/database').then((mod) => ({
-      default: mod.Database,
-    })),
-  'database/database-external': () =>
-    import('@/registry/icons/database/database-external').then((mod) => ({
-      default: mod.DatabaseExternal,
-    })),
-  'database/database-link': () =>
-    import('@/registry/icons/database/database-link').then((mod) => ({
-      default: mod.DatabaseLink,
-    })),
-  'database/database-objects-group': () =>
-    import('@/registry/icons/database/database-objects-group').then((mod) => ({
-      default: mod.DatabaseObjectsGroup,
-    })),
-  'database/databricks': () =>
-    import('@/registry/icons/database/databricks').then((mod) => ({
-      default: mod.Databricks,
-    })),
-  'database/db-index': () =>
-    import('@/registry/icons/database/db-index').then((mod) => ({
-      default: mod.Index,
-    })),
-  'database/db2': () =>
-    import('@/registry/icons/database/db2').then((mod) => ({
-      default: mod.Db2,
-    })),
-  'database/ddl-data-source-overlay': () =>
-    import('@/registry/icons/database/ddl-data-source-overlay').then((mod) => ({
-      default: mod.DdlDataSourceOverlay,
-    })),
-  'database/ddl-dbms': () =>
-    import('@/registry/icons/database/ddl-dbms').then((mod) => ({
-      default: mod.DdlDbms,
-    })),
-  'database/default-constraint': () =>
-    import('@/registry/icons/database/default-constraint').then((mod) => ({
-      default: mod.DefaultConstraint,
-    })),
-  'database/denodo': () =>
-    import('@/registry/icons/database/denodo').then((mod) => ({
-      default: mod.Denodo,
-    })),
-  'database/document-db': () =>
-    import('@/registry/icons/database/document-db').then((mod) => ({
-      default: mod.DocumentDB,
-    })),
-  'database/duck-db': () =>
-    import('@/registry/icons/database/duck-db').then((mod) => ({
-      default: mod.DuckDB,
-    })),
-  'database/dynamo-db': () =>
-    import('@/registry/icons/database/dynamo-db').then((mod) => ({
-      default: mod.DynamoDB,
-    })),
-  'database/edit-data': () =>
-    import('@/registry/icons/database/edit-data').then((mod) => ({
-      default: mod.EditData,
-    })),
-  'database/editor-output': () =>
-    import('@/registry/icons/database/editor-output').then((mod) => ({
-      default: mod.EditorOutput,
-    })),
-  'database/elasticsearch': () =>
-    import('@/registry/icons/database/elasticsearch').then((mod) => ({
-      default: mod.Elasticsearch,
-    })),
-  'database/exasol': () =>
-    import('@/registry/icons/database/exasol').then((mod) => ({
-      default: mod.Exasol,
-    })),
-  'database/extension': () =>
-    import('@/registry/icons/database/extension').then((mod) => ({
-      default: mod.Extension,
-    })),
-  'database/external-schema': () =>
-    import('@/registry/icons/database/external-schema').then((mod) => ({
-      default: mod.ExternalSchema,
-    })),
-  'database/file-format': () =>
-    import('@/registry/icons/database/file-format').then((mod) => ({
-      default: mod.FileFormat,
-    })),
-  'database/firebird': () =>
-    import('@/registry/icons/database/firebird').then((mod) => ({
-      default: mod.Firebird,
-    })),
-  'database/foreign-datawrapper': () =>
-    import('@/registry/icons/database/foreign-datawrapper').then((mod) => ({
-      default: mod.ForeignDatawrapper,
-    })),
-  'database/foreign-partion-table': () =>
-    import('@/registry/icons/database/foreign-partion-table').then((mod) => ({
-      default: mod.ForeignPartionTable,
-    })),
-  'database/foreign-server': () =>
-    import('@/registry/icons/database/foreign-server').then((mod) => ({
-      default: mod.ForeignServer,
-    })),
-  'database/foreign-table': () =>
-    import('@/registry/icons/database/foreign-table').then((mod) => ({
-      default: mod.ForeignTable,
-    })),
-  'database/function': () =>
-    import('@/registry/icons/database/function').then((mod) => ({
-      default: mod.Function,
-    })),
-  'database/function-external': () =>
-    import('@/registry/icons/database/function-external').then((mod) => ({
-      default: mod.FunctionExternal,
-    })),
-  'database/function-run': () =>
-    import('@/registry/icons/database/function-run').then((mod) => ({
-      default: mod.FunctionRun,
-    })),
-  'database/go-to-table': () =>
-    import('@/registry/icons/database/go-to-table').then((mod) => ({
-      default: mod.GoToTable,
-    })),
-  'database/gold-key': () =>
-    import('@/registry/icons/database/gold-key').then((mod) => ({
-      default: mod.GoldKey,
-    })),
-  'database/google-cloud-dataproc': () =>
-    import('@/registry/icons/database/google-cloud-dataproc').then((mod) => ({
-      default: mod.GoogleCloudDataproc,
-    })),
-  'database/google-cloud-spanner': () =>
-    import('@/registry/icons/database/google-cloud-spanner').then((mod) => ({
-      default: mod.GoogleCloudSpanner,
-    })),
-  'database/greenplum': () =>
-    import('@/registry/icons/database/greenplum').then((mod) => ({
-      default: mod.Greenplum,
-    })),
-  'database/grey-key': () =>
-    import('@/registry/icons/database/grey-key').then((mod) => ({
-      default: mod.GreyKey,
-    })),
-  'database/h2': () =>
-    import('@/registry/icons/database/h2').then((mod) => ({ default: mod.H2 })),
-  'database/hana': () =>
-    import('@/registry/icons/database/hana').then((mod) => ({
-      default: mod.Hana,
-    })),
-  'database/hash-cluster': () =>
-    import('@/registry/icons/database/hash-cluster').then((mod) => ({
-      default: mod.HashCluster,
-    })),
-  'database/hash-table': () =>
-    import('@/registry/icons/database/hash-table').then((mod) => ({
-      default: mod.HashTable,
-    })),
-  'database/hash-table-key': () =>
-    import('@/registry/icons/database/hash-table-key').then((mod) => ({
-      default: mod.HashTableKey,
-    })),
-  'database/hive': () =>
-    import('@/registry/icons/database/hive').then((mod) => ({
-      default: mod.Hive,
-    })),
-  'database/hive-file-type': () =>
-    import('@/registry/icons/database/hive-file-type').then((mod) => ({
-      default: mod.HiveFileType,
-    })),
-  'database/hsqldb': () =>
-    import('@/registry/icons/database/hsqldb').then((mod) => ({
-      default: mod.Hsqldb,
-    })),
-  'database/ibm': () =>
-    import('@/registry/icons/database/ibm').then((mod) => ({
-      default: mod.Ibm,
-    })),
-  'database/impala': () =>
-    import('@/registry/icons/database/impala').then((mod) => ({
-      default: mod.Impala,
-    })),
-  'database/index-cluster': () =>
-    import('@/registry/icons/database/index-cluster').then((mod) => ({
-      default: mod.IndexCluster,
-    })),
-  'database/index-fun': () =>
-    import('@/registry/icons/database/index-fun').then((mod) => ({
-      default: mod.IndexFun,
-    })),
-  'database/index-fun-unique': () =>
-    import('@/registry/icons/database/index-fun-unique').then((mod) => ({
-      default: mod.IndexFunUnique,
-    })),
-  'database/index-icon': () =>
-    import('@/registry/icons/database/index-icon').then((mod) => ({
-      default: mod.Index,
-    })),
-  'database/index-unique': () =>
-    import('@/registry/icons/database/index-unique').then((mod) => ({
-      default: mod.IndexUnique,
-    })),
-  'database/informix': () =>
-    import('@/registry/icons/database/informix').then((mod) => ({
-      default: mod.Informix,
-    })),
-  'database/intersystem-cache': () =>
-    import('@/registry/icons/database/intersystem-cache').then((mod) => ({
-      default: mod.IntersystemCache,
-    })),
-  'database/json-document': () =>
-    import('@/registry/icons/database/json-document').then((mod) => ({
-      default: mod.JsonDocument,
-    })),
-  'database/json-document-key': () =>
-    import('@/registry/icons/database/json-document-key').then((mod) => ({
-      default: mod.JsonDocumentKey,
-    })),
-  'database/kill-data-source-process': () =>
-    import('@/registry/icons/database/kill-data-source-process').then(
-      (mod) => ({ default: mod.KillDataSourceProcess }),
-    ),
-  'database/level-auto': () =>
-    import('@/registry/icons/database/level-auto').then((mod) => ({
-      default: mod.LevelAuto,
-    })),
-  'database/level-one-declared': () =>
-    import('@/registry/icons/database/level-one-declared').then((mod) => ({
-      default: mod.LevelOneDeclared,
-    })),
-  'database/level-one-details': () =>
-    import('@/registry/icons/database/level-one-details').then((mod) => ({
-      default: mod.LevelOneDetails,
-    })),
-  'database/level-one-inherited': () =>
-    import('@/registry/icons/database/level-one-inherited').then((mod) => ({
-      default: mod.LevelOneInherited,
-    })),
-  'database/level-three-declared': () =>
-    import('@/registry/icons/database/level-three-declared').then((mod) => ({
-      default: mod.LevelThreeDeclared,
-    })),
-  'database/level-three-details': () =>
-    import('@/registry/icons/database/level-three-details').then((mod) => ({
-      default: mod.LevelThreeDetails,
-    })),
-  'database/level-three-inherited': () =>
-    import('@/registry/icons/database/level-three-inherited').then((mod) => ({
-      default: mod.LevelThreeInherited,
-    })),
-  'database/level-two-declared': () =>
-    import('@/registry/icons/database/level-two-declared').then((mod) => ({
-      default: mod.LevelTwoDeclared,
-    })),
-  'database/level-two-details': () =>
-    import('@/registry/icons/database/level-two-details').then((mod) => ({
-      default: mod.LevelTwoDetails,
-    })),
-  'database/level-two-inherited': () =>
-    import('@/registry/icons/database/level-two-inherited').then((mod) => ({
-      default: mod.LevelTwoInherited,
-    })),
-  'database/list': () =>
-    import('@/registry/icons/database/list').then((mod) => ({
-      default: mod.List,
-    })),
-  'database/list-key': () =>
-    import('@/registry/icons/database/list-key').then((mod) => ({
-      default: mod.ListKey,
-    })),
-  'database/locked': () =>
-    import('@/registry/icons/database/locked').then((mod) => ({
-      default: mod.Locked,
-    })),
-  'database/macro': () =>
-    import('@/registry/icons/database/macro').then((mod) => ({
-      default: mod.Macro,
-    })),
-  'database/manage-data-sources': () =>
-    import('@/registry/icons/database/manage-data-sources').then((mod) => ({
-      default: mod.ManageDataSources,
-    })),
-  'database/mariadb': () =>
-    import('@/registry/icons/database/mariadb').then((mod) => ({
-      default: mod.Mariadb,
-    })),
-  'database/materialized-log': () =>
-    import('@/registry/icons/database/materialized-log').then((mod) => ({
-      default: mod.MaterializedLog,
-    })),
-  'database/materialized-view': () =>
-    import('@/registry/icons/database/materialized-view').then((mod) => ({
-      default: mod.MaterializedView,
-    })),
-  'database/microsoft': () =>
-    import('@/registry/icons/database/microsoft').then((mod) => ({
-      default: mod.Microsoft,
-    })),
-  'database/mimer-sql': () =>
-    import('@/registry/icons/database/mimer-sql').then((mod) => ({
-      default: mod.MimerSQL,
-    })),
-  'database/mongo-db': () =>
-    import('@/registry/icons/database/mongo-db').then((mod) => ({
-      default: mod.MongoDB,
-    })),
-  'database/mongo-field': () =>
-    import('@/registry/icons/database/mongo-field').then((mod) => ({
-      default: mod.MongoField,
-    })),
-  'database/mongo-field-gold-key': () =>
-    import('@/registry/icons/database/mongo-field-gold-key').then((mod) => ({
-      default: mod.MongoFieldGoldKey,
-    })),
-  'database/mysql': () =>
-    import('@/registry/icons/database/mysql').then((mod) => ({
-      default: mod.Mysql,
-    })),
-  'database/netezza': () =>
-    import('@/registry/icons/database/netezza').then((mod) => ({
-      default: mod.Netezza,
-    })),
-  'database/object-group': () =>
-    import('@/registry/icons/database/object-group').then((mod) => ({
-      default: mod.ObjectGroup,
-    })),
-  'database/object-type-attribute': () =>
-    import('@/registry/icons/database/object-type-attribute').then((mod) => ({
-      default: mod.ObjectTypeAttribute,
-    })),
-  'database/openedge': () =>
-    import('@/registry/icons/database/openedge').then((mod) => ({
-      default: mod.Openedge,
-    })),
-  'database/operator': () =>
-    import('@/registry/icons/database/operator').then((mod) => ({
-      default: mod.Operator,
-    })),
-  'database/operator-class': () =>
-    import('@/registry/icons/database/operator-class').then((mod) => ({
-      default: mod.OperatorClass,
-    })),
-  'database/operator-family': () =>
-    import('@/registry/icons/database/operator-family').then((mod) => ({
-      default: mod.OperatorFamily,
-    })),
-  'database/oracle': () =>
-    import('@/registry/icons/database/oracle').then((mod) => ({
-      default: mod.Oracle,
-    })),
-  'database/package': () =>
-    import('@/registry/icons/database/package').then((mod) => ({
-      default: mod.Package,
-    })),
-  'database/partion': () =>
-    import('@/registry/icons/database/partion').then((mod) => ({
-      default: mod.Partion,
-    })),
-  'database/partion-table': () =>
-    import('@/registry/icons/database/partion-table').then((mod) => ({
-      default: mod.PartionTable,
-    })),
-  'database/pin': () =>
-    import('@/registry/icons/database/pin').then((mod) => ({
-      default: mod.Pin,
-    })),
-  'database/pin-hovered': () =>
-    import('@/registry/icons/database/pin-hovered').then((mod) => ({
-      default: mod.PinHovered,
-    })),
-  'database/pin-selected': () =>
-    import('@/registry/icons/database/pin-selected').then((mod) => ({
-      default: mod.PinSelected,
-    })),
-  'database/pin-selected-hovered': () =>
-    import('@/registry/icons/database/pin-selected-hovered').then((mod) => ({
-      default: mod.PinSelectedHovered,
-    })),
-  'database/postgresql': () =>
-    import('@/registry/icons/database/postgresql').then((mod) => ({
-      default: mod.Postgresql,
-    })),
-  'database/presto': () =>
-    import('@/registry/icons/database/presto').then((mod) => ({
-      default: mod.Presto,
-    })),
-  'database/preview-changes': () =>
-    import('@/registry/icons/database/preview-changes').then((mod) => ({
-      default: mod.PreviewChanges,
-    })),
-  'database/procedure': () =>
-    import('@/registry/icons/database/procedure').then((mod) => ({
-      default: mod.Procedure,
-    })),
-  'database/procedure-group': () =>
-    import('@/registry/icons/database/procedure-group').then((mod) => ({
-      default: mod.ProcedureGroup,
-    })),
-  'database/procedure-run': () =>
-    import('@/registry/icons/database/procedure-run').then((mod) => ({
-      default: mod.ProcedureRun,
-    })),
-  'database/projection': () =>
-    import('@/registry/icons/database/projection').then((mod) => ({
-      default: mod.Projection,
-    })),
-  'database/redis': () =>
-    import('@/registry/icons/database/redis').then((mod) => ({
-      default: mod.Redis,
-    })),
-  'database/redis-file-type': () =>
-    import('@/registry/icons/database/redis-file-type').then((mod) => ({
-      default: mod.RedisFileType,
-    })),
-  'database/redshift': () =>
-    import('@/registry/icons/database/redshift').then((mod) => ({
-      default: mod.Redshift,
-    })),
-  'database/refresh-materialized-view': () =>
-    import('@/registry/icons/database/refresh-materialized-view').then(
-      (mod) => ({ default: mod.RefreshMaterializedView }),
-    ),
-  'database/reset': () =>
-    import('@/registry/icons/database/reset').then((mod) => ({
-      default: mod.Reset,
-    })),
-  'database/role': () =>
-    import('@/registry/icons/database/role').then((mod) => ({
-      default: mod.Role,
-    })),
-  'database/rollback': () =>
-    import('@/registry/icons/database/rollback').then((mod) => ({
-      default: mod.Rollback,
-    })),
-  'database/routine': () =>
-    import('@/registry/icons/database/routine').then((mod) => ({
-      default: mod.Routine,
-    })),
-  'database/run-database-script': () =>
-    import('@/registry/icons/database/run-database-script').then((mod) => ({
-      default: mod.RunDatabaseScript,
-    })),
-  'database/scheduled-event': () =>
-    import('@/registry/icons/database/scheduled-event').then((mod) => ({
-      default: mod.ScheduledEvent,
-    })),
-  'database/schema': () =>
-    import('@/registry/icons/database/schema').then((mod) => ({
-      default: mod.Schema,
-    })),
-  'database/scripting-script': () =>
-    import('@/registry/icons/database/scripting-script').then((mod) => ({
-      default: mod.ScriptingScript,
-    })),
-  'database/scroll-down': () =>
-    import('@/registry/icons/database/scroll-down').then((mod) => ({
-      default: mod.ScrollDown,
-    })),
-  'database/scroll-up': () =>
-    import('@/registry/icons/database/scroll-up').then((mod) => ({
-      default: mod.ScrollUp,
-    })),
-  'database/sequence': () =>
-    import('@/registry/icons/database/sequence').then((mod) => ({
-      default: mod.Sequence,
-    })),
-  'database/server-objects-group': () =>
-    import('@/registry/icons/database/server-objects-group').then((mod) => ({
-      default: mod.ServerObjectsGroup,
-    })),
-  'database/set': () =>
-    import('@/registry/icons/database/set').then((mod) => ({
-      default: mod.Set,
-    })),
-  'database/set-key': () =>
-    import('@/registry/icons/database/set-key').then((mod) => ({
-      default: mod.SetKey,
-    })),
-  'database/single-record-view': () =>
-    import('@/registry/icons/database/single-record-view').then((mod) => ({
-      default: mod.SingleRecordView,
-    })),
-  'database/singlestore': () =>
-    import('@/registry/icons/database/singlestore').then((mod) => ({
-      default: mod.Singlestore,
-    })),
-  'database/snowflake': () =>
-    import('@/registry/icons/database/snowflake').then((mod) => ({
-      default: mod.Snowflake,
-    })),
-  'database/sorted-set': () =>
-    import('@/registry/icons/database/sorted-set').then((mod) => ({
-      default: mod.SortedSet,
-    })),
-  'database/sorted-set-key': () =>
-    import('@/registry/icons/database/sorted-set-key').then((mod) => ({
-      default: mod.SortedSetKey,
-    })),
-  'database/spark': () =>
-    import('@/registry/icons/database/spark').then((mod) => ({
-      default: mod.Spark,
-    })),
-  'database/sql-server': () =>
-    import('@/registry/icons/database/sql-server').then((mod) => ({
-      default: mod.SqlServer,
-    })),
-  'database/sqldmlstatement': () =>
-    import('@/registry/icons/database/sqldmlstatement').then((mod) => ({
-      default: mod.SQLDMLStatement,
-    })),
-  'database/sqlgroup-by-type': () =>
-    import('@/registry/icons/database/sqlgroup-by-type').then((mod) => ({
-      default: mod.SQLGroupByType,
-    })),
-  'database/sqlite': () =>
-    import('@/registry/icons/database/sqlite').then((mod) => ({
-      default: mod.Sqlite,
-    })),
-  'database/sqlother-statement': () =>
-    import('@/registry/icons/database/sqlother-statement').then((mod) => ({
-      default: mod.SQLOtherStatement,
-    })),
-  'database/sqlselect-statement': () =>
-    import('@/registry/icons/database/sqlselect-statement').then((mod) => ({
-      default: mod.SQLSelectStatement,
-    })),
-  'database/stream': () =>
-    import('@/registry/icons/database/stream').then((mod) => ({
-      default: mod.Stream,
-    })),
-  'database/stream-key': () =>
-    import('@/registry/icons/database/stream-key').then((mod) => ({
-      default: mod.StreamKey,
-    })),
-  'database/string': () =>
-    import('@/registry/icons/database/string').then((mod) => ({
-      default: mod.String,
-    })),
-  'database/string-key': () =>
-    import('@/registry/icons/database/string-key').then((mod) => ({
-      default: mod.StringKey,
-    })),
-  'database/submit-db': () =>
-    import('@/registry/icons/database/submit-db').then((mod) => ({
-      default: mod.SubmitDB,
-    })),
-  'database/sun': () =>
-    import('@/registry/icons/database/sun').then((mod) => ({
-      default: mod.Sun,
-    })),
-  'database/sybase': () =>
-    import('@/registry/icons/database/sybase').then((mod) => ({
-      default: mod.Sybase,
-    })),
-  'database/synonym': () =>
-    import('@/registry/icons/database/synonym').then((mod) => ({
-      default: mod.Synonym,
-    })),
-  'database/t-sqlt': () =>
-    import('@/registry/icons/database/t-sqlt').then((mod) => ({
-      default: mod.TSQLt,
-    })),
-  'database/table': () =>
-    import('@/registry/icons/database/table').then((mod) => ({
-      default: mod.Table,
-    })),
-  'database/table-heatmap': () =>
-    import('@/registry/icons/database/table-heatmap').then((mod) => ({
-      default: mod.TableHeatmap,
-    })),
-  'database/table-mapping': () =>
-    import('@/registry/icons/database/table-mapping').then((mod) => ({
-      default: mod.TableMapping,
-    })),
-  'database/tablespace': () =>
-    import('@/registry/icons/database/tablespace').then((mod) => ({
-      default: mod.Tablespace,
-    })),
-  'database/tarantool': () =>
-    import('@/registry/icons/database/tarantool').then((mod) => ({
-      default: mod.Tarantool,
-    })),
-  'database/teradata': () =>
-    import('@/registry/icons/database/teradata').then((mod) => ({
-      default: mod.Teradata,
-    })),
-  'database/text-auto-generate': () =>
-    import('@/registry/icons/database/text-auto-generate').then((mod) => ({
-      default: mod.TextAutoGenerate,
-    })),
-  'database/tibero': () =>
-    import('@/registry/icons/database/tibero').then((mod) => ({
-      default: mod.Tibero,
-    })),
-  'database/tidb': () =>
-    import('@/registry/icons/database/tidb').then((mod) => ({
-      default: mod.Tidb,
-    })),
-  'database/trigger': () =>
-    import('@/registry/icons/database/trigger').then((mod) => ({
-      default: mod.Trigger,
-    })),
-  'database/trino': () =>
-    import('@/registry/icons/database/trino').then((mod) => ({
-      default: mod.Trino,
-    })),
-  'database/udfscript': () =>
-    import('@/registry/icons/database/udfscript').then((mod) => ({
-      default: mod.UDFScript,
-    })),
-  'database/unspecified-cluster': () =>
-    import('@/registry/icons/database/unspecified-cluster').then((mod) => ({
-      default: mod.UnspecifiedCluster,
-    })),
-  'database/user': () =>
-    import('@/registry/icons/database/user').then((mod) => ({
-      default: mod.User,
-    })),
-  'database/user-driver': () =>
-    import('@/registry/icons/database/user-driver').then((mod) => ({
-      default: mod.UserDriver,
-    })),
-  'database/user-group': () =>
-    import('@/registry/icons/database/user-group').then((mod) => ({
-      default: mod.UserGroup,
-    })),
-  'database/user-mapping': () =>
-    import('@/registry/icons/database/user-mapping').then((mod) => ({
-      default: mod.UserMapping,
-    })),
-  'database/ut-plsql': () =>
-    import('@/registry/icons/database/ut-plsql').then((mod) => ({
-      default: mod.UtPLSQL,
-    })),
-  'database/vertica': () =>
-    import('@/registry/icons/database/vertica').then((mod) => ({
-      default: mod.Vertica,
-    })),
-  'database/view-parameters': () =>
-    import('@/registry/icons/database/view-parameters').then((mod) => ({
-      default: mod.ViewParameters,
-    })),
-  'database/virtual-column': () =>
-    import('@/registry/icons/database/virtual-column').then((mod) => ({
-      default: mod.VirtualColumn,
-    })),
-  'database/virtual-folder': () =>
-    import('@/registry/icons/database/virtual-folder').then((mod) => ({
-      default: mod.VirtualFolder,
-    })),
-  'database/virtual-key': () =>
-    import('@/registry/icons/database/virtual-key').then((mod) => ({
-      default: mod.VirtualKey,
-    })),
-  'database/virtual-view': () =>
-    import('@/registry/icons/database/virtual-view').then((mod) => ({
-      default: mod.VirtualView,
-    })),
-  'database/warehouse': () =>
-    import('@/registry/icons/database/warehouse').then((mod) => ({
-      default: mod.Warehouse,
-    })),
-  'database/yugabyte': () =>
-    import('@/registry/icons/database/yugabyte').then((mod) => ({
-      default: mod.Yugabyte,
-    })),
-  databricks: () =>
-    import('@/registry/icons/database/databricks').then((mod) => ({
-      default: mod.Databricks,
-    })),
-  'databricks-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/databricks-tool-window').then(
-      (mod) => ({ default: mod.DatabricksToolWindow }),
-    ),
-  'dataproc-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/dataproc-tool-window').then(
-      (mod) => ({ default: mod.DataprocToolWindow }),
-    ),
-  'db-array': () =>
-    import('@/registry/icons/debugger/db-array').then((mod) => ({
-      default: mod.DbArray,
-    })),
-  'db-changelog': () =>
-    import('@/registry/icons/plugins/jpa/db-changelog').then((mod) => ({
-      default: mod.DbChangelog,
-    })),
-  'db-hash': () =>
-    import('@/registry/icons/plugins/ruby/db-hash').then((mod) => ({
-      default: mod.DbHash,
-    })),
-  'db-index': () =>
-    import('@/registry/icons/database/db-index').then((mod) => ({
-      default: mod.Index,
-    })),
-  'db-primitive': () =>
-    import('@/registry/icons/debugger/db-primitive').then((mod) => ({
-      default: mod.DbPrimitive,
-    })),
-  db2: () =>
-    import('@/registry/icons/database/db2').then((mod) => ({
-      default: mod.Db2,
-    })),
-  dbms: () =>
-    import('@/registry/icons/general/tool-windows/dbms').then((mod) => ({
-      default: mod.Dbms,
-    })),
-  'dbt-utility': () =>
-    import('@/registry/icons/plugins/bdt/dbt-utility').then((mod) => ({
-      default: mod.DbtUtility,
-    })),
-  'ddl-data-source-overlay': () =>
-    import('@/registry/icons/database/ddl-data-source-overlay').then((mod) => ({
-      default: mod.DdlDataSourceOverlay,
-    })),
-  'ddl-dbms': () =>
-    import('@/registry/icons/database/ddl-dbms').then((mod) => ({
-      default: mod.DdlDbms,
-    })),
-  'ddl-scripts': () =>
-    import('@/registry/icons/plugins/jpa/ddl-scripts').then((mod) => ({
-      default: mod.DdlScripts,
-    })),
-  'debug-target-computer': () =>
-    import('@/registry/icons/plugins/cidr/debug-target-computer').then(
-      (mod) => ({ default: mod.DebugTargetComputer }),
-    ),
-  'debug-target-controller': () =>
-    import('@/registry/icons/plugins/cidr/debug-target-controller').then(
-      (mod) => ({ default: mod.DebugTargetController }),
-    ),
-  'debug-with-telepresence': () =>
-    import('@/registry/icons/plugins/kubernetes/debug-with-telepresence').then(
-      (mod) => ({ default: mod.DebugWithTelepresence }),
-    ),
-  'debugger/add-to-watch': () =>
-    import('@/registry/icons/debugger/add-to-watch').then((mod) => ({
-      default: mod.AddToWatch,
-    })),
-  'debugger/class-level-watch': () =>
-    import('@/registry/icons/debugger/class-level-watch').then((mod) => ({
-      default: mod.ClassLevelWatch,
-    })),
-  'debugger/db-array': () =>
-    import('@/registry/icons/debugger/db-array').then((mod) => ({
-      default: mod.DbArray,
-    })),
-  'debugger/db-primitive': () =>
-    import('@/registry/icons/debugger/db-primitive').then((mod) => ({
-      default: mod.DbPrimitive,
-    })),
-  'debugger/evaluation-result': () =>
-    import('@/registry/icons/debugger/evaluation-result').then((mod) => ({
-      default: mod.EvaluationResult,
-    })),
-  'debugger/frame': () =>
-    import('@/registry/icons/debugger/frame').then((mod) => ({
-      default: mod.Frame,
-    })),
-  'debugger/prompt-input': () =>
-    import('@/registry/icons/debugger/prompt-input').then((mod) => ({
-      default: mod.PromptInput,
-    })),
-  'debugger/prompt-input-history': () =>
-    import('@/registry/icons/debugger/prompt-input-history').then((mod) => ({
-      default: mod.PromptInputHistory,
-    })),
-  'debugger/self-reference': () =>
-    import('@/registry/icons/debugger/self-reference').then((mod) => ({
-      default: mod.SelfReference,
-    })),
-  'debugger/thread-at-breakpoint': () =>
-    import('@/registry/icons/debugger/thread-at-breakpoint').then((mod) => ({
-      default: mod.ThreadAtBreakpoint,
-    })),
-  'debugger/thread-current': () =>
-    import('@/registry/icons/debugger/thread-current').then((mod) => ({
-      default: mod.ThreadCurrent,
-    })),
-  'debugger/thread-frozen': () =>
-    import('@/registry/icons/debugger/thread-frozen').then((mod) => ({
-      default: mod.ThreadFrozen,
-    })),
-  'debugger/thread-group-current': () =>
-    import('@/registry/icons/debugger/thread-group-current').then((mod) => ({
-      default: mod.ThreadGroupCurrent,
-    })),
-  'debugger/thread-running': () =>
-    import('@/registry/icons/debugger/thread-running').then((mod) => ({
-      default: mod.ThreadRunning,
-    })),
-  'debugger/threads': () =>
-    import('@/registry/icons/debugger/threads').then((mod) => ({
-      default: mod.Threads,
-    })),
-  'debugger/value': () =>
-    import('@/registry/icons/debugger/value').then((mod) => ({
-      default: mod.Value,
-    })),
-  'debugger/variables-tab': () =>
-    import('@/registry/icons/debugger/variables-tab').then((mod) => ({
-      default: mod.VariablesTab,
-    })),
-  'debugger/watch-last-return-value': () =>
-    import('@/registry/icons/debugger/watch-last-return-value').then((mod) => ({
-      default: mod.WatchLastReturnValue,
-    })),
-  decorator: () =>
-    import('@/registry/icons/plugins/java-ee/decorator').then((mod) => ({
-      default: mod.Decorator,
-    })),
-  'default-constraint': () =>
-    import('@/registry/icons/database/default-constraint').then((mod) => ({
-      default: mod.DefaultConstraint,
-    })),
-  deno: () =>
-    import('@/registry/icons/file-types/deno').then((mod) => ({
-      default: mod.Deno,
-    })),
-  denodo: () =>
-    import('@/registry/icons/database/denodo').then((mod) => ({
-      default: mod.Denodo,
-    })),
-  dependency: () =>
-    import('@/registry/icons/plugins/cidr/dependency').then((mod) => ({
-      default: mod.Dependency,
-    })),
-  'dependency-analyzer': () =>
-    import('@/registry/icons/build/dependency-analyzer').then((mod) => ({
-      default: mod.DependencyAnalyzer,
-    })),
-  deploy: () =>
-    import('@/registry/icons/general/actions/deploy').then((mod) => ({
-      default: mod.Deploy,
-    })),
-  deployment: () =>
-    import('@/registry/icons/plugins/kubernetes/deployment').then((mod) => ({
-      default: mod.Deployment,
-    })),
-  deployments: () =>
-    import('@/registry/icons/plugins/java-ee/deployments').then((mod) => ({
-      default: mod.Deployments,
-    })),
-  desktop: () =>
-    import('@/registry/icons/nodes/desktop').then((mod) => ({
-      default: mod.Desktop,
-    })),
-  'dev-containers': () =>
-    import('@/registry/icons/plugins/dev-containers/dev-containers').then(
-      (mod) => ({ default: mod.DevContainers }),
-    ),
-  diagram: () =>
-    import('@/registry/icons/file-types/diagram').then((mod) => ({
-      default: mod.Diagram,
-    })),
-  'diagram-diff': () =>
-    import('@/registry/icons/general/actions/diagram-diff').then((mod) => ({
-      default: mod.DiagramDiff,
-    })),
-  dictionary: () =>
-    import('@/registry/icons/file-types/dictionary').then((mod) => ({
-      default: mod.Dictionary,
-    })),
-  diff: () =>
-    import('@/registry/icons/vcs/diff').then((mod) => ({ default: mod.Diff })),
-  'diff-liquibase-changelog': () =>
-    import('@/registry/icons/plugins/jpa/diff-liquibase-changelog').then(
-      (mod) => ({ default: mod.DiffLiquibaseChangelog }),
-    ),
-  'diff-plugin-logo': () =>
-    import('@/registry/icons/plugins/jpa/diff-plugin-logo').then((mod) => ({
-      default: mod.DiffPluginLogo,
-    })),
-  'diff-with-clipboard': () =>
-    import('@/registry/icons/general/actions/diff-with-clipboard').then(
-      (mod) => ({ default: mod.DiffWithClipboard }),
-    ),
-  'disable-editing': () =>
-    import('@/registry/icons/vcs/disable-editing').then((mod) => ({
-      default: mod.DisableEditing,
-    })),
-  dislike: () =>
-    import('@/registry/icons/general/ai-assistant/dislike').then((mod) => ({
-      default: mod.Dislike,
-    })),
-  'dislike-selected': () =>
-    import('@/registry/icons/general/ai-assistant/dislike-selected').then(
-      (mod) => ({ default: mod.DislikeSelected }),
-    ),
-  'doc-test': () =>
-    import('@/registry/icons/plugins/cidr/doc-test').then((mod) => ({
-      default: mod.DocTest,
-    })),
-  docker: () =>
-    import('@/registry/icons/plugins/docker/docker').then((mod) => ({
-      default: mod.Docker,
-    })),
-  'docker-compose': () =>
-    import('@/registry/icons/plugins/docker/docker-compose').then((mod) => ({
-      default: mod.DockerCompose,
-    })),
-  'docker-compose-scaled-service-stopped': () =>
-    import(
-      '@/registry/icons/plugins/docker/docker-compose-scaled-service-stopped'
-    ).then((mod) => ({ default: mod.DockerComposeScaledServiceStopped })),
-  'docker-compose-scaled-service-up': () =>
-    import(
-      '@/registry/icons/plugins/docker/docker-compose-scaled-service-up'
-    ).then((mod) => ({ default: mod.DockerComposeScaledServiceUp })),
-  'docker-compose-service-stopped': () =>
-    import(
-      '@/registry/icons/plugins/docker/docker-compose-service-stopped'
-    ).then((mod) => ({ default: mod.DockerComposeServiceStopped })),
-  'docker-compose-service-up': () =>
-    import('@/registry/icons/plugins/docker/docker-compose-service-up').then(
-      (mod) => ({ default: mod.DockerComposeServiceUp }),
-    ),
-  'docker-registry': () =>
-    import('@/registry/icons/plugins/docker/docker-registry').then((mod) => ({
-      default: mod.DockerRegistry,
-    })),
-  'document-db': () =>
-    import('@/registry/icons/database/document-db').then((mod) => ({
-      default: mod.DocumentDB,
-    })),
-  documentation: () =>
-    import('@/registry/icons/general/tool-windows/documentation').then(
-      (mod) => ({ default: mod.Documentation }),
-    ),
-  donate: () =>
-    import('@/registry/icons/general/tool-windows/donate').then((mod) => ({
-      default: mod.Donate,
-    })),
-  down: () =>
-    import('@/registry/icons/general/general/down').then((mod) => ({
-      default: mod.Down,
-    })),
-  download: () =>
-    import('@/registry/icons/general/general/download').then((mod) => ({
-      default: mod.Download,
-    })),
-  'drop-column': () =>
-    import('@/registry/icons/plugins/jpa/drop-column').then((mod) => ({
-      default: mod.DropColumn,
-    })),
-  'drop-constraint': () =>
-    import('@/registry/icons/plugins/jpa/drop-constraint').then((mod) => ({
-      default: mod.DropConstraint,
-    })),
-  'drop-index': () =>
-    import('@/registry/icons/plugins/jpa/drop-index').then((mod) => ({
-      default: mod.DropIndex,
-    })),
-  'drop-sequence': () =>
-    import('@/registry/icons/plugins/jpa/drop-sequence').then((mod) => ({
-      default: mod.DropSequence,
-    })),
-  'drop-table': () =>
-    import('@/registry/icons/plugins/jpa/drop-table').then((mod) => ({
-      default: mod.DropTable,
-    })),
-  'dropdown-gutter': () =>
-    import('@/registry/icons/editor-icons/dropdown-gutter').then((mod) => ({
-      default: mod.DropdownGutter,
-    })),
-  dto: () =>
-    import('@/registry/icons/plugins/jpa/dto').then((mod) => ({
-      default: mod.Dto,
-    })),
-  dts: () =>
-    import('@/registry/icons/file-types/dts').then((mod) => ({
-      default: mod.Dts,
-    })),
-  'dts-property': () =>
-    import('@/registry/icons/file-types/dts-property').then((mod) => ({
-      default: mod.DtsProperty,
-    })),
-  'dts-sub-node': () =>
-    import('@/registry/icons/file-types/dts-sub-node').then((mod) => ({
-      default: mod.DtsSubNode,
-    })),
-  'duck-db': () =>
-    import('@/registry/icons/database/duck-db').then((mod) => ({
-      default: mod.DuckDB,
-    })),
-  'dump-threads': () =>
-    import('@/registry/icons/run/dump-threads').then((mod) => ({
-      default: mod.DumpThreads,
-    })),
-  'dynamo-db': () =>
-    import('@/registry/icons/database/dynamo-db').then((mod) => ({
-      default: mod.DynamoDB,
-    })),
-  eclipse: () =>
-    import('@/registry/icons/file-types/eclipse').then((mod) => ({
-      default: mod.Eclipse,
-    })),
-  'edge-mod': () =>
-    import('@/registry/icons/plugins/uml/edge-mod').then((mod) => ({
-      default: mod.EdgeMod,
-    })),
-  edit: () =>
-    import('@/registry/icons/general/general/edit').then((mod) => ({
-      default: mod.Edit,
-    })),
-  'edit-data': () =>
-    import('@/registry/icons/database/edit-data').then((mod) => ({
-      default: mod.EditData,
-    })),
-  'edit-folder': () =>
-    import('@/registry/icons/nodes/edit-folder').then((mod) => ({
-      default: mod.EditFolder,
-    })),
-  'editor-config': () =>
-    import('@/registry/icons/file-types/editor-config').then((mod) => ({
-      default: mod.EditorConfig,
-    })),
-  'editor-icons/actual-zoom': () =>
-    import('@/registry/icons/editor-icons/actual-zoom').then((mod) => ({
-      default: mod.ActualZoom,
-    })),
-  'editor-icons/back-trace': () =>
-    import('@/registry/icons/editor-icons/back-trace').then((mod) => ({
-      default: mod.BackTrace,
-    })),
-  'editor-icons/bookmark': () =>
-    import('@/registry/icons/editor-icons/bookmark').then((mod) => ({
-      default: mod.Bookmark,
-    })),
-  'editor-icons/chessboard': () =>
-    import('@/registry/icons/editor-icons/chessboard').then((mod) => ({
-      default: mod.Chessboard,
-    })),
-  'editor-icons/collapse-node': () =>
-    import('@/registry/icons/editor-icons/collapse-node').then((mod) => ({
-      default: mod.CollapseNode,
-    })),
-  'editor-icons/color-picker': () =>
-    import('@/registry/icons/editor-icons/color-picker').then((mod) => ({
-      default: mod.ColorPicker,
-    })),
-  'editor-icons/colors': () =>
-    import('@/registry/icons/editor-icons/colors').then((mod) => ({
-      default: mod.Colors,
-    })),
-  'editor-icons/data-schema': () =>
-    import('@/registry/icons/editor-icons/data-schema').then((mod) => ({
-      default: mod.DataSchema,
-    })),
-  'editor-icons/dropdown-gutter': () =>
-    import('@/registry/icons/editor-icons/dropdown-gutter').then((mod) => ({
-      default: mod.DropdownGutter,
-    })),
-  'editor-icons/editor-only': () =>
-    import('@/registry/icons/editor-icons/editor-only').then((mod) => ({
-      default: mod.EditorOnly,
-    })),
-  'editor-icons/editor-preview': () =>
-    import('@/registry/icons/editor-icons/editor-preview').then((mod) => ({
-      default: mod.EditorPreview,
-    })),
-  'editor-icons/editor-preview-vertical': () =>
-    import('@/registry/icons/editor-icons/editor-preview-vertical').then(
-      (mod) => ({ default: mod.EditorPreviewVertical }),
-    ),
-  'editor-icons/expand-node': () =>
-    import('@/registry/icons/editor-icons/expand-node').then((mod) => ({
-      default: mod.ExpandNode,
-    })),
-  'editor-icons/ext-annotation': () =>
-    import('@/registry/icons/editor-icons/ext-annotation').then((mod) => ({
-      default: mod.ExtAnnotation,
-    })),
-  'editor-icons/fit-content': () =>
-    import('@/registry/icons/editor-icons/fit-content').then((mod) => ({
-      default: mod.FitContent,
-    })),
-  'editor-icons/flame': () =>
-    import('@/registry/icons/editor-icons/flame').then((mod) => ({
-      default: mod.Flame,
-    })),
-  'editor-icons/fold': () =>
-    import('@/registry/icons/editor-icons/fold').then((mod) => ({
-      default: mod.Fold,
-    })),
-  'editor-icons/fold-bottom': () =>
-    import('@/registry/icons/editor-icons/fold-bottom').then((mod) => ({
-      default: mod.FoldBottom,
-    })),
-  'editor-icons/grid': () =>
-    import('@/registry/icons/editor-icons/grid').then((mod) => ({
-      default: mod.Grid,
-    })),
-  'editor-icons/implemented-method': () =>
-    import('@/registry/icons/editor-icons/implemented-method').then((mod) => ({
-      default: mod.ImplementedMethod,
-    })),
-  'editor-icons/implementing-functional-interface': () =>
-    import(
-      '@/registry/icons/editor-icons/implementing-functional-interface'
-    ).then((mod) => ({ default: mod.ImplementingFunctionalInterface })),
-  'editor-icons/implementing-method': () =>
-    import('@/registry/icons/editor-icons/implementing-method').then((mod) => ({
-      default: mod.ImplementingMethod,
-    })),
-  'editor-icons/inaly-qarkus': () =>
-    import('@/registry/icons/editor-icons/inaly-qarkus').then((mod) => ({
-      default: mod.InalyQarkus,
-    })),
-  'editor-icons/inlay-globe': () =>
-    import('@/registry/icons/editor-icons/inlay-globe').then((mod) => ({
-      default: mod.InlayGlobe,
-    })),
-  'editor-icons/inlay-micronaut': () =>
-    import('@/registry/icons/editor-icons/inlay-micronaut').then((mod) => ({
-      default: mod.InlayMicronaut,
-    })),
-  'editor-icons/inlay-rename-in-comments': () =>
-    import('@/registry/icons/editor-icons/inlay-rename-in-comments').then(
-      (mod) => ({ default: mod.InlayRenameInComments }),
-    ),
-  'editor-icons/inlay-rename-in-comments-active': () =>
-    import(
-      '@/registry/icons/editor-icons/inlay-rename-in-comments-active'
-    ).then((mod) => ({ default: mod.InlayRenameInCommentsActive })),
-  'editor-icons/inlay-rename-in-no-code-files': () =>
-    import('@/registry/icons/editor-icons/inlay-rename-in-no-code-files').then(
-      (mod) => ({ default: mod.InlayRenameInNoCodeFiles }),
-    ),
-  'editor-icons/inlay-rename-in-no-code-files-active': () =>
-    import(
-      '@/registry/icons/editor-icons/inlay-rename-in-no-code-files-active'
-    ).then((mod) => ({ default: mod.InlayRenameInNoCodeFilesActive })),
-  'editor-icons/inlay-secured-shield': () =>
-    import('@/registry/icons/editor-icons/inlay-secured-shield').then(
-      (mod) => ({ default: mod.InlaySecuredShield }),
-    ),
-  'editor-icons/inlay-settings': () =>
-    import('@/registry/icons/editor-icons/inlay-settings').then((mod) => ({
-      default: mod.InlaySettings,
-    })),
-  'editor-icons/inlay-spring': () =>
-    import('@/registry/icons/editor-icons/inlay-spring').then((mod) => ({
-      default: mod.InlaySpring,
-    })),
-  'editor-icons/inlay-web-inspector': () =>
-    import('@/registry/icons/editor-icons/inlay-web-inspector').then((mod) => ({
-      default: mod.InlayWebInspector,
-    })),
-  'editor-icons/inspections-eye': () =>
-    import('@/registry/icons/editor-icons/inspections-eye').then((mod) => ({
-      default: mod.InspectionsEye,
-    })),
-  'editor-icons/inspections-mixed': () =>
-    import('@/registry/icons/editor-icons/inspections-mixed').then((mod) => ({
-      default: mod.InspectionsMixed,
-    })),
-  'editor-icons/inspections-ok': () =>
-    import('@/registry/icons/editor-icons/inspections-ok').then((mod) => ({
-      default: mod.InspectionsOK,
-    })),
-  'editor-icons/inspections-okempty': () =>
-    import('@/registry/icons/editor-icons/inspections-okempty').then((mod) => ({
-      default: mod.InspectionsOKEmpty,
-    })),
-  'editor-icons/inspections-pause': () =>
-    import('@/registry/icons/editor-icons/inspections-pause').then((mod) => ({
-      default: mod.InspectionsPause,
-    })),
-  'editor-icons/inspections-power-save-mode': () =>
-    import('@/registry/icons/editor-icons/inspections-power-save-mode').then(
-      (mod) => ({ default: mod.InspectionsPowerSaveMode }),
-    ),
-  'editor-icons/inspections-traffic-off': () =>
-    import('@/registry/icons/editor-icons/inspections-traffic-off').then(
-      (mod) => ({ default: mod.InspectionsTrafficOff }),
-    ),
-  'editor-icons/inspections-typos': () =>
-    import('@/registry/icons/editor-icons/inspections-typos').then((mod) => ({
-      default: mod.InspectionsTypos,
-    })),
-  'editor-icons/intention-bulb': () =>
-    import('@/registry/icons/editor-icons/intention-bulb').then((mod) => ({
-      default: mod.IntentionBulb,
-    })),
-  'editor-icons/intention-bulb-grey': () =>
-    import('@/registry/icons/editor-icons/intention-bulb-grey').then((mod) => ({
-      default: mod.IntentionBulbGrey,
-    })),
-  'editor-icons/javadoc-edit': () =>
-    import('@/registry/icons/editor-icons/javadoc-edit').then((mod) => ({
-      default: mod.JavadocEdit,
-    })),
-  'editor-icons/javadoc-read': () =>
-    import('@/registry/icons/editor-icons/javadoc-read').then((mod) => ({
-      default: mod.JavadocRead,
-    })),
-  'editor-icons/merge-callees': () =>
-    import('@/registry/icons/editor-icons/merge-callees').then((mod) => ({
-      default: mod.MergeCallees,
-    })),
-  'editor-icons/mnemonic': () =>
-    import('@/registry/icons/editor-icons/mnemonic').then((mod) => ({
-      default: mod.Mnemonic,
-    })),
-  'editor-icons/overriden-method': () =>
-    import('@/registry/icons/editor-icons/overriden-method').then((mod) => ({
-      default: mod.OverridenMethod,
-    })),
-  'editor-icons/overriding-method': () =>
-    import('@/registry/icons/editor-icons/overriding-method').then((mod) => ({
-      default: mod.OverridingMethod,
-    })),
-  'editor-icons/preview-only': () =>
-    import('@/registry/icons/editor-icons/preview-only').then((mod) => ({
-      default: mod.PreviewOnly,
-    })),
-  'editor-icons/quickfix-bulb': () =>
-    import('@/registry/icons/editor-icons/quickfix-bulb').then((mod) => ({
-      default: mod.QuickfixBulb,
-    })),
-  'editor-icons/quickfix-off-bulb': () =>
-    import('@/registry/icons/editor-icons/quickfix-off-bulb').then((mod) => ({
-      default: mod.QuickfixOffBulb,
-    })),
-  'editor-icons/read-access': () =>
-    import('@/registry/icons/editor-icons/read-access').then((mod) => ({
-      default: mod.ReadAccess,
-    })),
-  'editor-icons/rec': () =>
-    import('@/registry/icons/editor-icons/rec').then((mod) => ({
-      default: mod.Rec,
-    })),
-  'editor-icons/recursive-method': () =>
-    import('@/registry/icons/editor-icons/recursive-method').then((mod) => ({
-      default: mod.RecursiveMethod,
-    })),
-  'editor-icons/rerun': () =>
-    import('@/registry/icons/editor-icons/rerun').then((mod) => ({
-      default: mod.Rerun,
-    })),
-  'editor-icons/run': () =>
-    import('@/registry/icons/editor-icons/run').then((mod) => ({
-      default: mod.Run,
-    })),
-  'editor-icons/run-error': () =>
-    import('@/registry/icons/editor-icons/run-error').then((mod) => ({
-      default: mod.RunError,
-    })),
-  'editor-icons/run-failed': () =>
-    import('@/registry/icons/editor-icons/run-failed').then((mod) => ({
-      default: mod.RunFailed,
-    })),
-  'editor-icons/run-success': () =>
-    import('@/registry/icons/editor-icons/run-success').then((mod) => ({
-      default: mod.RunSuccess,
-    })),
-  'editor-icons/sharp': () =>
-    import('@/registry/icons/editor-icons/sharp').then((mod) => ({
-      default: mod.Sharp,
-    })),
-  'editor-icons/sibling-inherited-method': () =>
-    import('@/registry/icons/editor-icons/sibling-inherited-method').then(
-      (mod) => ({ default: mod.SiblingInheritedMethod }),
-    ),
-  'editor-icons/suggested-refactoring-disabled': () =>
-    import('@/registry/icons/editor-icons/suggested-refactoring-disabled').then(
-      (mod) => ({ default: mod.SuggestedRefactoringDisabled }),
-    ),
-  'editor-icons/unfold': () =>
-    import('@/registry/icons/editor-icons/unfold').then((mod) => ({
-      default: mod.Unfold,
-    })),
-  'editor-icons/write-access': () =>
-    import('@/registry/icons/editor-icons/write-access').then((mod) => ({
-      default: mod.WriteAccess,
-    })),
-  'editor-icons/zoom-in': () =>
-    import('@/registry/icons/editor-icons/zoom-in').then((mod) => ({
-      default: mod.ZoomIn,
-    })),
-  'editor-icons/zoom-out': () =>
-    import('@/registry/icons/editor-icons/zoom-out').then((mod) => ({
-      default: mod.ZoomOut,
-    })),
-  'editor-only': () =>
-    import('@/registry/icons/editor-icons/editor-only').then((mod) => ({
-      default: mod.EditorOnly,
-    })),
-  'editor-output': () =>
-    import('@/registry/icons/database/editor-output').then((mod) => ({
-      default: mod.EditorOutput,
-    })),
-  'editor-preview': () =>
-    import('@/registry/icons/editor-icons/editor-preview').then((mod) => ({
-      default: mod.EditorPreview,
-    })),
-  'editor-preview-vertical': () =>
-    import('@/registry/icons/editor-icons/editor-preview-vertical').then(
-      (mod) => ({ default: mod.EditorPreviewVertical }),
-    ),
-  'ejb-artifact': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-artifact').then((mod) => ({
-      default: mod.EjbArtifact,
-    })),
-  'ejb-business-method': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-business-method').then(
-      (mod) => ({ default: mod.EjbBusinessMethod }),
-    ),
-  'ejb-class': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-class').then((mod) => ({
-      default: mod.EjbClass,
-    })),
-  'ejb-cmp-field': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-cmp-field').then((mod) => ({
-      default: mod.EjbCmpField,
-    })),
-  'ejb-cmr-field': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-cmr-field').then((mod) => ({
-      default: mod.EjbCmrField,
-    })),
-  'ejb-create-method': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-create-method').then(
-      (mod) => ({ default: mod.EjbCreateMethod }),
-    ),
-  'ejb-finder-method': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-finder-method').then(
-      (mod) => ({ default: mod.EjbFinderMethod }),
-    ),
-  'ejb-jar-xml': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-jar-xml').then((mod) => ({
-      default: mod.EjbJarXml,
-    })),
-  'ejb-module': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-module').then((mod) => ({
-      default: mod.EjbModule,
-    })),
-  'ejb-primary-key-class': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-primary-key-class').then(
-      (mod) => ({ default: mod.EjbPrimaryKeyClass }),
-    ),
-  'ejb-reference': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-reference').then((mod) => ({
-      default: mod.EjbReference,
-    })),
-  ejs: () =>
-    import('@/registry/icons/file-types/ejs').then((mod) => ({
-      default: mod.Ejs,
-    })),
-  elasticsearch: () =>
-    import('@/registry/icons/database/elasticsearch').then((mod) => ({
-      default: mod.Elasticsearch,
-    })),
-  'electronic-board': () =>
-    import('@/registry/icons/plugins/platformio/electronic-board').then(
-      (mod) => ({ default: mod.ElectronicBoard }),
-    ),
-  embedded: () =>
-    import('@/registry/icons/plugins/jpa/embedded').then((mod) => ({
-      default: mod.Embedded,
-    })),
-  'embedded-attribute-overlay': () =>
-    import('@/registry/icons/plugins/java-ee/embedded-attribute-overlay').then(
-      (mod) => ({ default: mod.EmbeddedAttributeOverlay }),
-    ),
-  endpoint: () =>
-    import('@/registry/icons/plugins/ruby/endpoint').then((mod) => ({
-      default: mod.Endpoint,
-    })),
-  'entity-bean': () =>
-    import('@/registry/icons/plugins/java-ee/entity-bean').then((mod) => ({
-      default: mod.EntityBean,
-    })),
-  'enum-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/enum-kotlin').then((mod) => ({
-      default: mod.EnumKotlin,
-    })),
-  'enum-object-scala': () =>
-    import('@/registry/icons/plugins/scala/enum-object-scala').then((mod) => ({
-      default: mod.EnumObjectScala,
-    })),
-  'enum-scala': () =>
-    import('@/registry/icons/plugins/scala/enum-scala').then((mod) => ({
-      default: mod.EnumScala,
-    })),
-  'equals-and-hashcode': () =>
-    import('@/registry/icons/plugins/jpa/equals-and-hashcode').then((mod) => ({
-      default: mod.EqualsAndHashcode,
-    })),
-  'er-diagram': () =>
-    import('@/registry/icons/plugins/java-ee/er-diagram').then((mod) => ({
-      default: mod.ErDiagram,
-    })),
-  error: () =>
-    import('@/registry/icons/general/status/error').then((mod) => ({
-      default: mod.Error,
-    })),
-  'error-dialog': () =>
-    import('@/registry/icons/general/status/error-dialog').then((mod) => ({
-      default: mod.ErrorDialog,
-    })),
-  'error-introduction': () =>
-    import('@/registry/icons/nodes/error-introduction').then((mod) => ({
-      default: mod.ErrorIntroduction,
-    })),
-  'error-outline': () =>
-    import('@/registry/icons/general/status/error-outline').then((mod) => ({
-      default: mod.ErrorOutline,
-    })),
-  'evaluate-expression': () =>
-    import('@/registry/icons/run/evaluate-expression').then((mod) => ({
-      default: mod.EvaluateExpression,
-    })),
-  'evaluation-result': () =>
-    import('@/registry/icons/debugger/evaluation-result').then((mod) => ({
-      default: mod.EvaluationResult,
-    })),
-  event: () =>
-    import('@/registry/icons/plugins/java-ee/event').then((mod) => ({
-      default: mod.Event,
-    })),
-  events: () =>
-    import('@/registry/icons/plugins/kubernetes/events').then((mod) => ({
-      default: mod.Events,
-    })),
-  'exact-words': () =>
-    import('@/registry/icons/general/inline/exact-words').then((mod) => ({
-      default: mod.ExactWords,
-    })),
-  exasol: () =>
-    import('@/registry/icons/database/exasol').then((mod) => ({
-      default: mod.Exasol,
-    })),
-  exception: () =>
-    import('@/registry/icons/nodes/exception').then((mod) => ({
-      default: mod.Exception,
-    })),
-  'exception-analyzer': () =>
-    import('@/registry/icons/general/tool-windows/exception-analyzer').then(
-      (mod) => ({ default: mod.ExceptionAnalyzer }),
-    ),
-  'exclude-root': () =>
-    import('@/registry/icons/nodes/exclude-root').then((mod) => ({
-      default: mod.ExcludeRoot,
-    })),
-  'excluded-generated': () =>
-    import('@/registry/icons/nodes/excluded-generated').then((mod) => ({
-      default: mod.ExcludedGenerated,
-    })),
-  'executable-target': () =>
-    import('@/registry/icons/plugins/cidr/executable-target').then((mod) => ({
-      default: mod.ExecutableTarget,
-    })),
-  exit: () =>
-    import('@/registry/icons/general/general/exit').then((mod) => ({
-      default: mod.Exit,
-    })),
-  expand: () =>
-    import('@/registry/icons/general/inline/expand').then((mod) => ({
-      default: mod.Expand,
-    })),
-  'expand-all': () =>
-    import('@/registry/icons/general/general/expand-all').then((mod) => ({
-      default: mod.ExpandAll,
-    })),
-  'expand-node': () =>
-    import('@/registry/icons/editor-icons/expand-node').then((mod) => ({
-      default: mod.ExpandNode,
-    })),
-  expect: () =>
-    import('@/registry/icons/plugins/kotlin/expect').then((mod) => ({
-      default: mod.Expect,
-    })),
-  explorer: () =>
-    import('@/registry/icons/plugins/jpa/explorer').then((mod) => ({
-      default: mod.Explorer,
-    })),
-  export: () =>
-    import('@/registry/icons/general/general/export').then((mod) => ({
-      default: mod.Export,
-    })),
-  exposed: () =>
-    import('@/registry/icons/file-types/exposed').then((mod) => ({
-      default: mod.Exposed,
-    })),
-  'ext-annotation': () =>
-    import('@/registry/icons/editor-icons/ext-annotation').then((mod) => ({
-      default: mod.ExtAnnotation,
-    })),
-  extension: () =>
-    import('@/registry/icons/database/extension').then((mod) => ({
-      default: mod.Extension,
-    })),
-  'extension-run-configuration': () =>
-    import('@/registry/icons/plugins/cidr/extension-run-configuration').then(
-      (mod) => ({ default: mod.ExtensionRunConfiguration }),
-    ),
-  'external-link': () =>
-    import('@/registry/icons/general/general/external-link').then((mod) => ({
-      default: mod.ExternalLink,
-    })),
-  'external-schema': () =>
-    import('@/registry/icons/database/external-schema').then((mod) => ({
-      default: mod.ExternalSchema,
-    })),
-  factory: () =>
-    import('@/registry/icons/plugins/ruby/factory').then((mod) => ({
-      default: mod.Factory,
-    })),
-  'factory-method-bean': () =>
-    import('@/registry/icons/plugins/spring/factory-method-bean').then(
-      (mod) => ({ default: mod.FactoryMethodBean }),
-    ),
-  failed: () =>
-    import('@/registry/icons/plugins/kubernetes/failed').then((mod) => ({
-      default: mod.Failed,
-    })),
-  'failed-in-progress': () =>
-    import('@/registry/icons/run/failed-in-progress').then((mod) => ({
-      default: mod.FailedInProgress,
-    })),
-  'fast-api': () =>
-    import('@/registry/icons/file-types/fast-api').then((mod) => ({
-      default: mod.FastAPI,
-    })),
-  favorites: () =>
-    import('@/registry/icons/nodes/favorites').then((mod) => ({
-      default: mod.Favorites,
-    })),
-  'feature-answer': () =>
-    import('@/registry/icons/general/ai-assistant/feature-answer').then(
-      (mod) => ({ default: mod.FeatureAnswer }),
-    ),
-  'feature-code-block': () =>
-    import('@/registry/icons/general/ai-assistant/feature-code-block').then(
-      (mod) => ({ default: mod.FeatureCodeBlock }),
-    ),
-  'feature-comment': () =>
-    import('@/registry/icons/general/ai-assistant/feature-comment').then(
-      (mod) => ({ default: mod.FeatureComment }),
-    ),
-  'feature-commit': () =>
-    import('@/registry/icons/general/ai-assistant/feature-commit').then(
-      (mod) => ({ default: mod.FeatureCommit }),
-    ),
-  'feature-context': () =>
-    import('@/registry/icons/general/ai-assistant/feature-context').then(
-      (mod) => ({ default: mod.FeatureContext }),
-    ),
-  'feature-docs': () =>
-    import('@/registry/icons/general/ai-assistant/feature-docs').then(
-      (mod) => ({ default: mod.FeatureDocs }),
-    ),
-  feedback: () =>
-    import('@/registry/icons/general/tool-windows/feedback').then((mod) => ({
-      default: mod.Feedback,
-    })),
-  'feedback-rating': () =>
-    import('@/registry/icons/general/rating/feedback-rating').then((mod) => ({
-      default: mod.FeedbackRating,
-    })),
-  'feedback-rating-focused': () =>
-    import('@/registry/icons/general/rating/feedback-rating-focused').then(
-      (mod) => ({ default: mod.FeedbackRatingFocused }),
-    ),
-  'feedback-rating-focused-on': () =>
-    import('@/registry/icons/general/rating/feedback-rating-focused-on').then(
-      (mod) => ({ default: mod.FeedbackRatingFocusedOn }),
-    ),
-  'feedback-rating-on': () =>
-    import('@/registry/icons/general/rating/feedback-rating-on').then(
-      (mod) => ({ default: mod.FeedbackRatingOn }),
-    ),
-  fetch: () =>
-    import('@/registry/icons/vcs/fetch').then((mod) => ({
-      default: mod.Fetch,
-    })),
-  'field-in-xml': () =>
-    import('@/registry/icons/plugins/java-ee/field-in-xml').then((mod) => ({
-      default: mod.FieldInXml,
-    })),
-  'field-value1': () =>
-    import('@/registry/icons/plugins/scala/field-value1').then((mod) => ({
-      default: mod.FieldValue1,
-    })),
-  'field-variable1': () =>
-    import('@/registry/icons/plugins/scala/field-variable1').then((mod) => ({
-      default: mod.FieldVariable1,
-    })),
-  'file-set': () =>
-    import('@/registry/icons/plugins/spring/file-set').then((mod) => ({
-      default: mod.FileSet,
-    })),
-  'file-transfer': () =>
-    import('@/registry/icons/plugins/jpa/file-transfer').then((mod) => ({
-      default: mod.FileTransfer,
-    })),
-  'file-type-swift': () =>
-    import('@/registry/icons/plugins/cidr/file-type-swift').then((mod) => ({
-      default: mod.FileTypeSwift,
-    })),
-  'file-types/action-script': () =>
-    import('@/registry/icons/file-types/action-script').then((mod) => ({
-      default: mod.ActionScript,
-    })),
-  'file-types/acync-api': () =>
-    import('@/registry/icons/file-types/acync-api').then((mod) => ({
-      default: mod.AcyncAPI,
-    })),
-  'file-types/amper': () =>
-    import('@/registry/icons/file-types/amper').then((mod) => ({
-      default: mod.Amper,
-    })),
-  'file-types/angular-js': () =>
-    import('@/registry/icons/file-types/angular-js').then((mod) => ({
-      default: mod.AngularJS,
-    })),
-  'file-types/angular-jsmonochrome': () =>
-    import('@/registry/icons/file-types/angular-jsmonochrome').then((mod) => ({
-      default: mod.AngularJSMonochrome,
-    })),
-  'file-types/any-type': () =>
-    import('@/registry/icons/file-types/any-type').then((mod) => ({
-      default: mod.AnyType,
-    })),
-  'file-types/api': () =>
-    import('@/registry/icons/file-types/api').then((mod) => ({
-      default: mod.Api,
-    })),
-  'file-types/archive': () =>
-    import('@/registry/icons/file-types/archive').then((mod) => ({
-      default: mod.Archive,
-    })),
-  'file-types/aspect-j': () =>
-    import('@/registry/icons/file-types/aspect-j').then((mod) => ({
-      default: mod.AspectJ,
-    })),
-  'file-types/assembler-go': () =>
-    import('@/registry/icons/file-types/assembler-go').then((mod) => ({
-      default: mod.AssemblerGo,
-    })),
-  'file-types/bun': () =>
-    import('@/registry/icons/file-types/bun').then((mod) => ({
-      default: mod.Bun,
-    })),
-  'file-types/chameleon': () =>
-    import('@/registry/icons/file-types/chameleon').then((mod) => ({
-      default: mod.Chameleon,
-    })),
-  'file-types/changed-file': () =>
-    import('@/registry/icons/file-types/changed-file').then((mod) => ({
-      default: mod.ChangedFile,
-    })),
-  'file-types/changed-files': () =>
-    import('@/registry/icons/file-types/changed-files').then((mod) => ({
-      default: mod.ChangedFiles,
-    })),
-  'file-types/coffeescript': () =>
-    import('@/registry/icons/file-types/coffeescript').then((mod) => ({
-      default: mod.Coffeescript,
-    })),
-  'file-types/conditional-statement': () =>
-    import('@/registry/icons/file-types/conditional-statement').then((mod) => ({
-      default: mod.ConditionalStatement,
-    })),
-  'file-types/contexts': () =>
-    import('@/registry/icons/file-types/contexts').then((mod) => ({
-      default: mod.Contexts,
-    })),
-  'file-types/contexts-modifier': () =>
-    import('@/registry/icons/file-types/contexts-modifier').then((mod) => ({
-      default: mod.ContextsModifier,
-    })),
-  'file-types/css': () =>
-    import('@/registry/icons/file-types/css').then((mod) => ({
-      default: mod.Css,
-    })),
-  'file-types/cucumber': () =>
-    import('@/registry/icons/file-types/cucumber').then((mod) => ({
-      default: mod.Cucumber,
-    })),
-  'file-types/cython-file': () =>
-    import('@/registry/icons/file-types/cython-file').then((mod) => ({
-      default: mod.CythonFile,
-    })),
-  'file-types/deno': () =>
-    import('@/registry/icons/file-types/deno').then((mod) => ({
-      default: mod.Deno,
-    })),
-  'file-types/diagram': () =>
-    import('@/registry/icons/file-types/diagram').then((mod) => ({
-      default: mod.Diagram,
-    })),
-  'file-types/dictionary': () =>
-    import('@/registry/icons/file-types/dictionary').then((mod) => ({
-      default: mod.Dictionary,
-    })),
-  'file-types/dts': () =>
-    import('@/registry/icons/file-types/dts').then((mod) => ({
-      default: mod.Dts,
-    })),
-  'file-types/dts-property': () =>
-    import('@/registry/icons/file-types/dts-property').then((mod) => ({
-      default: mod.DtsProperty,
-    })),
-  'file-types/dts-sub-node': () =>
-    import('@/registry/icons/file-types/dts-sub-node').then((mod) => ({
-      default: mod.DtsSubNode,
-    })),
-  'file-types/eclipse': () =>
-    import('@/registry/icons/file-types/eclipse').then((mod) => ({
-      default: mod.Eclipse,
-    })),
-  'file-types/editor-config': () =>
-    import('@/registry/icons/file-types/editor-config').then((mod) => ({
-      default: mod.EditorConfig,
-    })),
-  'file-types/ejs': () =>
-    import('@/registry/icons/file-types/ejs').then((mod) => ({
-      default: mod.Ejs,
-    })),
-  'file-types/exposed': () =>
-    import('@/registry/icons/file-types/exposed').then((mod) => ({
-      default: mod.Exposed,
-    })),
-  'file-types/fast-api': () =>
-    import('@/registry/icons/file-types/fast-api').then((mod) => ({
-      default: mod.FastAPI,
-    })),
-  'file-types/flask': () =>
-    import('@/registry/icons/file-types/flask').then((mod) => ({
-      default: mod.Flask,
-    })),
-  'file-types/freemaker': () =>
-    import('@/registry/icons/file-types/freemaker').then((mod) => ({
-      default: mod.Freemaker,
-    })),
-  'file-types/haskell': () =>
-    import('@/registry/icons/file-types/haskell').then((mod) => ({
-      default: mod.Haskell,
-    })),
-  'file-types/hook': () =>
-    import('@/registry/icons/file-types/hook').then((mod) => ({
-      default: mod.Hook,
-    })),
-  'file-types/html': () =>
-    import('@/registry/icons/file-types/html').then((mod) => ({
-      default: mod.Html,
-    })),
-  'file-types/http-header': () =>
-    import('@/registry/icons/file-types/http-header').then((mod) => ({
-      default: mod.HttpHeader,
-    })),
-  'file-types/http-requests-run-configuration': () =>
-    import('@/registry/icons/file-types/http-requests-run-configuration').then(
-      (mod) => ({ default: mod.HttpRequestsRunConfiguration }),
-    ),
-  'file-types/i18n': () =>
-    import('@/registry/icons/file-types/i18n').then((mod) => ({
-      default: mod.I18n,
-    })),
-  'file-types/idea-module': () =>
-    import('@/registry/icons/file-types/idea-module').then((mod) => ({
-      default: mod.IdeaModule,
-    })),
-  'file-types/idl': () =>
-    import('@/registry/icons/file-types/idl').then((mod) => ({
-      default: mod.Idl,
-    })),
-  'file-types/ignored': () =>
-    import('@/registry/icons/file-types/ignored').then((mod) => ({
-      default: mod.Ignored,
-    })),
-  'file-types/image': () =>
-    import('@/registry/icons/file-types/image').then((mod) => ({
-      default: mod.Image,
-    })),
-  'file-types/java': () =>
-    import('@/registry/icons/file-types/java').then((mod) => ({
-      default: mod.Java,
-    })),
-  'file-types/java-class': () =>
-    import('@/registry/icons/file-types/java-class').then((mod) => ({
-      default: mod.JavaClass,
-    })),
-  'file-types/java-script': () =>
-    import('@/registry/icons/file-types/java-script').then((mod) => ({
-      default: mod.JavaScript,
-    })),
-  'file-types/jest': () =>
-    import('@/registry/icons/file-types/jest').then((mod) => ({
-      default: mod.Jest,
-    })),
-  'file-types/jfr': () =>
-    import('@/registry/icons/file-types/jfr').then((mod) => ({
-      default: mod.Jfr,
-    })),
-  'file-types/jinja2': () =>
-    import('@/registry/icons/file-types/jinja2').then((mod) => ({
-      default: mod.Jinja2,
-    })),
-  'file-types/js-config': () =>
-    import('@/registry/icons/file-types/js-config').then((mod) => ({
-      default: mod.JsConfig,
-    })),
-  'file-types/js-doc-closure': () =>
-    import('@/registry/icons/file-types/js-doc-closure').then((mod) => ({
-      default: mod.JsDocClosure,
-    })),
-  'file-types/json': () =>
-    import('@/registry/icons/file-types/json').then((mod) => ({
-      default: mod.Json,
-    })),
-  'file-types/json-schema': () =>
-    import('@/registry/icons/file-types/json-schema').then((mod) => ({
-      default: mod.JsonSchema,
-    })),
-  'file-types/jsp': () =>
-    import('@/registry/icons/file-types/jsp').then((mod) => ({
-      default: mod.Jsp,
-    })),
-  'file-types/jspx': () =>
-    import('@/registry/icons/file-types/jspx').then((mod) => ({
-      default: mod.Jspx,
-    })),
-  'file-types/jupyter-notebook': () =>
-    import('@/registry/icons/file-types/jupyter-notebook').then((mod) => ({
-      default: mod.JupyterNotebook,
-    })),
-  'file-types/kotlin': () =>
-    import('@/registry/icons/file-types/kotlin').then((mod) => ({
-      default: mod.Kotlin,
-    })),
-  'file-types/less': () =>
-    import('@/registry/icons/file-types/less').then((mod) => ({
-      default: mod.Less,
-    })),
-  'file-types/manifest': () =>
-    import('@/registry/icons/file-types/manifest').then((mod) => ({
-      default: mod.Manifest,
-    })),
-  'file-types/markdown': () =>
-    import('@/registry/icons/file-types/markdown').then((mod) => ({
-      default: mod.Markdown,
-    })),
-  'file-types/maven': () =>
-    import('@/registry/icons/file-types/maven').then((mod) => ({
-      default: mod.Maven,
-    })),
-  'file-types/maven-ignored': () =>
-    import('@/registry/icons/file-types/maven-ignored').then((mod) => ({
-      default: mod.MavenIgnored,
-    })),
-  'file-types/micronaut': () =>
-    import('@/registry/icons/file-types/micronaut').then((mod) => ({
-      default: mod.Micronaut,
-    })),
-  'file-types/microsoft-windows': () =>
-    import('@/registry/icons/file-types/microsoft-windows').then((mod) => ({
-      default: mod.MicrosoftWindows,
-    })),
-  'file-types/modified': () =>
-    import('@/registry/icons/file-types/modified').then((mod) => ({
-      default: mod.Modified,
-    })),
-  'file-types/next-js': () =>
-    import('@/registry/icons/file-types/next-js').then((mod) => ({
-      default: mod.NextJS,
-    })),
-  'file-types/nodejs-test-runner': () =>
-    import('@/registry/icons/file-types/nodejs-test-runner').then((mod) => ({
-      default: mod.NodejsTestRunner,
-    })),
-  'file-types/num-py': () =>
-    import('@/registry/icons/file-types/num-py').then((mod) => ({
-      default: mod.NumPy,
-    })),
-  'file-types/open-rewrite': () =>
-    import('@/registry/icons/file-types/open-rewrite').then((mod) => ({
-      default: mod.OpenRewrite,
-    })),
-  'file-types/open-tofu': () =>
-    import('@/registry/icons/file-types/open-tofu').then((mod) => ({
-      default: mod.OpenTofu,
-    })),
-  'file-types/package-json': () =>
-    import('@/registry/icons/file-types/package-json').then((mod) => ({
-      default: mod.PackageJson,
-    })),
-  'file-types/package-lock': () =>
-    import('@/registry/icons/file-types/package-lock').then((mod) => ({
-      default: mod.PackageLock,
-    })),
-  'file-types/pandas': () =>
-    import('@/registry/icons/file-types/pandas').then((mod) => ({
-      default: mod.Pandas,
-    })),
-  'file-types/patch': () =>
-    import('@/registry/icons/file-types/patch').then((mod) => ({
-      default: mod.Patch,
-    })),
-  'file-types/perl': () =>
-    import('@/registry/icons/file-types/perl').then((mod) => ({
-      default: mod.Perl,
-    })),
-  'file-types/pnpm': () =>
-    import('@/registry/icons/file-types/pnpm').then((mod) => ({
-      default: mod.Pnpm,
-    })),
-  'file-types/pnpm-lock': () =>
-    import('@/registry/icons/file-types/pnpm-lock').then((mod) => ({
-      default: mod.PnpmLock,
-    })),
-  'file-types/polars': () =>
-    import('@/registry/icons/file-types/polars').then((mod) => ({
-      default: mod.Polars,
-    })),
-  'file-types/prettier': () =>
-    import('@/registry/icons/file-types/prettier').then((mod) => ({
-      default: mod.Prettier,
-    })),
-  'file-types/properties': () =>
-    import('@/registry/icons/file-types/properties').then((mod) => ({
-      default: mod.Properties,
-    })),
-  'file-types/proto-file': () =>
-    import('@/registry/icons/file-types/proto-file').then((mod) => ({
-      default: mod.ProtoFile,
-    })),
-  'file-types/proto-message': () =>
-    import('@/registry/icons/file-types/proto-message').then((mod) => ({
-      default: mod.ProtoMessage,
-    })),
-  'file-types/protobuf': () =>
-    import('@/registry/icons/file-types/protobuf').then((mod) => ({
-      default: mod.Protobuf,
-    })),
-  'file-types/py-torch': () =>
-    import('@/registry/icons/file-types/py-torch').then((mod) => ({
-      default: mod.PyTorch,
-    })),
-  'file-types/python': () =>
-    import('@/registry/icons/file-types/python').then((mod) => ({
-      default: mod.Python,
-    })),
-  'file-types/qml': () =>
-    import('@/registry/icons/file-types/qml').then((mod) => ({
-      default: mod.Qml,
-    })),
-  'file-types/qrc': () =>
-    import('@/registry/icons/file-types/qrc').then((mod) => ({
-      default: mod.Qrc,
-    })),
-  'file-types/qt': () =>
-    import('@/registry/icons/file-types/qt').then((mod) => ({
-      default: mod.Qt,
-    })),
-  'file-types/quatro': () =>
-    import('@/registry/icons/file-types/quatro').then((mod) => ({
-      default: mod.Quatro,
-    })),
-  'file-types/react': () =>
-    import('@/registry/icons/file-types/react').then((mod) => ({
-      default: mod.React,
-    })),
-  'file-types/react-icon': () =>
-    import('@/registry/icons/file-types/react-icon').then((mod) => ({
-      default: mod.ReactFileType,
-    })),
-  'file-types/redoc': () =>
-    import('@/registry/icons/file-types/redoc').then((mod) => ({
-      default: mod.Redoc,
-    })),
-  'file-types/regexp': () =>
-    import('@/registry/icons/file-types/regexp').then((mod) => ({
-      default: mod.Regexp,
-    })),
-  'file-types/rst': () =>
-    import('@/registry/icons/file-types/rst').then((mod) => ({
-      default: mod.Rst,
-    })),
-  'file-types/sarif': () =>
-    import('@/registry/icons/file-types/sarif').then((mod) => ({
-      default: mod.Sarif,
-    })),
-  'file-types/sass': () =>
-    import('@/registry/icons/file-types/sass').then((mod) => ({
-      default: mod.Sass,
-    })),
-  'file-types/scala': () =>
-    import('@/registry/icons/file-types/scala').then((mod) => ({
-      default: mod.Scala,
-    })),
-  'file-types/scratch': () =>
-    import('@/registry/icons/file-types/scratch').then((mod) => ({
-      default: mod.Scratch,
-    })),
-  'file-types/scratches': () =>
-    import('@/registry/icons/file-types/scratches').then((mod) => ({
-      default: mod.Scratches,
-    })),
-  'file-types/scss': () =>
-    import('@/registry/icons/file-types/scss').then((mod) => ({
-      default: mod.Scss,
-    })),
-  'file-types/shell': () =>
-    import('@/registry/icons/file-types/shell').then((mod) => ({
-      default: mod.Shell,
-    })),
-  'file-types/source-map': () =>
-    import('@/registry/icons/file-types/source-map').then((mod) => ({
-      default: mod.SourceMap,
-    })),
-  'file-types/sql': () =>
-    import('@/registry/icons/file-types/sql').then((mod) => ({
-      default: mod.Sql,
-    })),
-  'file-types/svelte': () =>
-    import('@/registry/icons/file-types/svelte').then((mod) => ({
-      default: mod.Svelte,
-    })),
-  'file-types/team-city': () =>
-    import('@/registry/icons/file-types/team-city').then((mod) => ({
-      default: mod.TeamCity,
-    })),
-  'file-types/tensor-flow': () =>
-    import('@/registry/icons/file-types/tensor-flow').then((mod) => ({
-      default: mod.TensorFlow,
-    })),
-  'file-types/terraform': () =>
-    import('@/registry/icons/file-types/terraform').then((mod) => ({
-      default: mod.Terraform,
-    })),
-  'file-types/text': () =>
-    import('@/registry/icons/file-types/text').then((mod) => ({
-      default: mod.Text,
-    })),
-  'file-types/ts-config': () =>
-    import('@/registry/icons/file-types/ts-config').then((mod) => ({
-      default: mod.TsConfig,
-    })),
-  'file-types/ts-doc': () =>
-    import('@/registry/icons/file-types/ts-doc').then((mod) => ({
-      default: mod.TsDoc,
-    })),
-  'file-types/ui-form': () =>
-    import('@/registry/icons/file-types/ui-form').then((mod) => ({
-      default: mod.UiForm,
-    })),
-  'file-types/unknown': () =>
-    import('@/registry/icons/file-types/unknown').then((mod) => ({
-      default: mod.Unknown,
-    })),
-  'file-types/vite-js': () =>
-    import('@/registry/icons/file-types/vite-js').then((mod) => ({
-      default: mod.ViteJS,
-    })),
-  'file-types/vitest': () =>
-    import('@/registry/icons/file-types/vitest').then((mod) => ({
-      default: mod.Vitest,
-    })),
-  'file-types/vue-js': () =>
-    import('@/registry/icons/file-types/vue-js').then((mod) => ({
-      default: mod.VueJs,
-    })),
-  'file-types/workspace': () =>
-    import('@/registry/icons/file-types/workspace').then((mod) => ({
-      default: mod.Workspace,
-    })),
-  'file-types/wsdl': () =>
-    import('@/registry/icons/file-types/wsdl').then((mod) => ({
-      default: mod.Wsdl,
-    })),
-  'file-types/xhtml': () =>
-    import('@/registry/icons/file-types/xhtml').then((mod) => ({
-      default: mod.Xhtml,
-    })),
-  'file-types/xml': () =>
-    import('@/registry/icons/file-types/xml').then((mod) => ({
-      default: mod.Xml,
-    })),
-  'file-types/xpath': () =>
-    import('@/registry/icons/file-types/xpath').then((mod) => ({
-      default: mod.Xpath,
-    })),
-  'file-types/xsd': () =>
-    import('@/registry/icons/file-types/xsd').then((mod) => ({
-      default: mod.Xsd,
-    })),
-  'file-types/xsl': () =>
-    import('@/registry/icons/file-types/xsl').then((mod) => ({
-      default: mod.Xsl,
-    })),
-  'file-types/yaml': () =>
-    import('@/registry/icons/file-types/yaml').then((mod) => ({
-      default: mod.Yaml,
-    })),
-  'file-types/yarn': () =>
-    import('@/registry/icons/file-types/yarn').then((mod) => ({
-      default: mod.Yarn,
-    })),
-  'file-types/yarn-lock': () =>
-    import('@/registry/icons/file-types/yarn-lock').then((mod) => ({
-      default: mod.YarnLock,
-    })),
-  'file-unread': () =>
-    import('@/registry/icons/vcs/file-unread').then((mod) => ({
-      default: mod.FileUnread,
-    })),
-  filter: () =>
-    import('@/registry/icons/general/general/filter').then((mod) => ({
-      default: mod.Filter,
-    })),
-  'filter-history': () =>
-    import('@/registry/icons/general/inline/filter-history').then((mod) => ({
-      default: mod.FilterHistory,
-    })),
-  filterdups: () =>
-    import('@/registry/icons/general/usages/filterdups').then((mod) => ({
-      default: mod.Filterdups,
-    })),
-  'final-mark': () =>
-    import('@/registry/icons/general/modifiers/final-mark').then((mod) => ({
-      default: mod.FinalMark,
-    })),
-  find: () =>
-    import('@/registry/icons/general/tool-windows/find').then((mod) => ({
-      default: mod.Find,
-    })),
-  'find-collection': () =>
-    import('@/registry/icons/plugins/jpa/find-collection').then((mod) => ({
-      default: mod.FindCollection,
-    })),
-  'find-external-usages': () =>
-    import('@/registry/icons/general/tool-windows/find-external-usages').then(
-      (mod) => ({ default: mod.FindExternalUsages }),
-    ),
-  'find-instance': () =>
-    import('@/registry/icons/plugins/jpa/find-instance').then((mod) => ({
-      default: mod.FindInstance,
-    })),
-  fir: () =>
-    import('@/registry/icons/plugins/kotlin/fir').then((mod) => ({
-      default: mod.Fir,
-    })),
-  firebird: () =>
-    import('@/registry/icons/database/firebird').then((mod) => ({
-      default: mod.Firebird,
-    })),
-  'fit-content': () =>
-    import('@/registry/icons/editor-icons/fit-content').then((mod) => ({
-      default: mod.FitContent,
-    })),
-  flame: () =>
-    import('@/registry/icons/editor-icons/flame').then((mod) => ({
-      default: mod.Flame,
-    })),
-  flask: () =>
-    import('@/registry/icons/file-types/flask').then((mod) => ({
-      default: mod.Flask,
-    })),
-  'flatten-modules': () =>
-    import('@/registry/icons/general/object-browser/flatten-modules').then(
-      (mod) => ({ default: mod.FlattenModules }),
-    ),
-  'flatten-packages': () =>
-    import('@/registry/icons/general/object-browser/flatten-packages').then(
-      (mod) => ({ default: mod.FlattenPackages }),
-    ),
-  flink: () =>
-    import('@/registry/icons/plugins/bdt/flink').then((mod) => ({
-      default: mod.Flink,
-    })),
-  'flyway-plugin-logo': () =>
-    import('@/registry/icons/plugins/jpa/flyway-plugin-logo').then((mod) => ({
-      default: mod.FlywayPluginLogo,
-    })),
-  fold: () =>
-    import('@/registry/icons/editor-icons/fold').then((mod) => ({
-      default: mod.Fold,
-    })),
-  'fold-bottom': () =>
-    import('@/registry/icons/editor-icons/fold-bottom').then((mod) => ({
-      default: mod.FoldBottom,
-    })),
-  folder: () =>
-    import('@/registry/icons/nodes/folder').then((mod) => ({
-      default: mod.Folder,
-    })),
-  'force-run-to-cursor': () =>
-    import('@/registry/icons/run/force-run-to-cursor').then((mod) => ({
-      default: mod.ForceRunToCursor,
-    })),
-  'force-step-into': () =>
-    import('@/registry/icons/run/force-step-into').then((mod) => ({
-      default: mod.ForceStepInto,
-    })),
-  'force-step-over': () =>
-    import('@/registry/icons/run/force-step-over').then((mod) => ({
-      default: mod.ForceStepOver,
-    })),
-  'foreign-datawrapper': () =>
-    import('@/registry/icons/database/foreign-datawrapper').then((mod) => ({
-      default: mod.ForeignDatawrapper,
-    })),
-  'foreign-partion-table': () =>
-    import('@/registry/icons/database/foreign-partion-table').then((mod) => ({
-      default: mod.ForeignPartionTable,
-    })),
-  'foreign-server': () =>
-    import('@/registry/icons/database/foreign-server').then((mod) => ({
-      default: mod.ForeignServer,
-    })),
-  'foreign-table': () =>
-    import('@/registry/icons/database/foreign-table').then((mod) => ({
-      default: mod.ForeignTable,
-    })),
-  'forward-ports': () =>
-    import('@/registry/icons/plugins/kubernetes/forward-ports').then((mod) => ({
-      default: mod.ForwardPorts,
-    })),
-  fragment: () =>
-    import('@/registry/icons/plugins/graphql/fragment').then((mod) => ({
-      default: mod.Fragment,
-    })),
-  frame: () =>
-    import('@/registry/icons/debugger/frame').then((mod) => ({
-      default: mod.Frame,
-    })),
-  framework: () =>
-    import('@/registry/icons/plugins/cidr/framework').then((mod) => ({
-      default: mod.Framework,
-    })),
-  freemaker: () =>
-    import('@/registry/icons/file-types/freemaker').then((mod) => ({
-      default: mod.Freemaker,
-    })),
-  freeze: () =>
-    import('@/registry/icons/plugins/cidr/freeze').then((mod) => ({
-      default: mod.Freeze,
-    })),
-  'freeze-all': () =>
-    import('@/registry/icons/plugins/cidr/freeze-all').then((mod) => ({
-      default: mod.FreezeAll,
-    })),
-  'from-arrow': () =>
-    import('@/registry/icons/plugins/aop/from-arrow').then((mod) => ({
-      default: mod.FromArrow,
-    })),
-  'full-line-completion': () =>
-    import(
-      '@/registry/icons/plugins/full-line-completion/full-line-completion'
-    ).then((mod) => ({ default: mod.FullLineCompletion })),
-  'full-line-completion-outline': () =>
-    import(
-      '@/registry/icons/plugins/full-line-completion/full-line-completion-outline'
-    ).then((mod) => ({ default: mod.FullLineCompletionOutline })),
-  'function-external': () =>
-    import('@/registry/icons/database/function-external').then((mod) => ({
-      default: mod.FunctionExternal,
-    })),
-  'function-run': () =>
-    import('@/registry/icons/database/function-run').then((mod) => ({
-      default: mod.FunctionRun,
-    })),
-  general: () =>
-    import('@/registry/icons/plugins/java-ee/general').then((mod) => ({
-      default: mod.General,
-    })),
-  'general/access-modifiers/access-local': () =>
-    import('@/registry/icons/general/access-modifiers/access-local').then(
-      (mod) => ({ default: mod.AccessLocal }),
-    ),
-  'general/access-modifiers/access-private': () =>
-    import('@/registry/icons/general/access-modifiers/access-private').then(
-      (mod) => ({ default: mod.AccessPrivate }),
-    ),
-  'general/access-modifiers/access-protected': () =>
-    import('@/registry/icons/general/access-modifiers/access-protected').then(
-      (mod) => ({ default: mod.AccessProtected }),
-    ),
-  'general/access-modifiers/access-public': () =>
-    import('@/registry/icons/general/access-modifiers/access-public').then(
-      (mod) => ({ default: mod.AccessPublic }),
-    ),
-  'general/actions/add-file': () =>
-    import('@/registry/icons/general/actions/add-file').then((mod) => ({
-      default: mod.AddFile,
-    })),
-  'general/actions/build-auto-reload-changes': () =>
-    import('@/registry/icons/general/actions/build-auto-reload-changes').then(
-      (mod) => ({ default: mod.BuildAutoReloadChanges }),
-    ),
-  'general/actions/checked': () =>
-    import('@/registry/icons/general/actions/checked').then((mod) => ({
-      default: mod.Checked,
-    })),
-  'general/actions/deploy': () =>
-    import('@/registry/icons/general/actions/deploy').then((mod) => ({
-      default: mod.Deploy,
-    })),
-  'general/actions/diagram-diff': () =>
-    import('@/registry/icons/general/actions/diagram-diff').then((mod) => ({
-      default: mod.DiagramDiff,
-    })),
-  'general/actions/diff-with-clipboard': () =>
-    import('@/registry/icons/general/actions/diff-with-clipboard').then(
-      (mod) => ({ default: mod.DiffWithClipboard }),
-    ),
-  'general/actions/gift': () =>
-    import('@/registry/icons/general/actions/gift').then((mod) => ({
-      default: mod.Gift,
-    })),
-  'general/actions/group-by-class': () =>
-    import('@/registry/icons/general/actions/group-by-class').then((mod) => ({
-      default: mod.GroupByClass,
-    })),
-  'general/actions/group-by-file': () =>
-    import('@/registry/icons/general/actions/group-by-file').then((mod) => ({
-      default: mod.GroupByFile,
-    })),
-  'general/actions/group-by-method': () =>
-    import('@/registry/icons/general/actions/group-by-method').then((mod) => ({
-      default: mod.GroupByMethod,
-    })),
-  'general/actions/group-by-module': () =>
-    import('@/registry/icons/general/actions/group-by-module').then((mod) => ({
-      default: mod.GroupByModule,
-    })),
-  'general/actions/group-by-package': () =>
-    import('@/registry/icons/general/actions/group-by-package').then((mod) => ({
-      default: mod.GroupByPackage,
-    })),
-  'general/actions/group-by-test-production': () =>
-    import('@/registry/icons/general/actions/group-by-test-production').then(
-      (mod) => ({ default: mod.GroupByTestProduction }),
-    ),
-  'general/actions/in-selection': () =>
-    import('@/registry/icons/general/actions/in-selection').then((mod) => ({
-      default: mod.InSelection,
-    })),
-  'general/actions/lightning': () =>
-    import('@/registry/icons/general/actions/lightning').then((mod) => ({
-      default: mod.Lightning,
-    })),
-  'general/actions/move-to-button': () =>
-    import('@/registry/icons/general/actions/move-to-button').then((mod) => ({
-      default: mod.MoveToButton,
-    })),
-  'general/actions/open-api': () =>
-    import('@/registry/icons/general/actions/open-api').then((mod) => ({
-      default: mod.OpenApi,
-    })),
-  'general/actions/play-back': () =>
-    import('@/registry/icons/general/actions/play-back').then((mod) => ({
-      default: mod.PlayBack,
-    })),
-  'general/actions/play-first': () =>
-    import('@/registry/icons/general/actions/play-first').then((mod) => ({
-      default: mod.PlayFirst,
-    })),
-  'general/actions/play-forward': () =>
-    import('@/registry/icons/general/actions/play-forward').then((mod) => ({
-      default: mod.PlayForward,
-    })),
-  'general/actions/play-last': () =>
-    import('@/registry/icons/general/actions/play-last').then((mod) => ({
-      default: mod.PlayLast,
-    })),
-  'general/actions/preview': () =>
-    import('@/registry/icons/general/actions/preview').then((mod) => ({
-      default: mod.Preview,
-    })),
-  'general/actions/profile-cpu': () =>
-    import('@/registry/icons/general/actions/profile-cpu').then((mod) => ({
-      default: mod.ProfileCPU,
-    })),
-  'general/actions/profile-memory': () =>
-    import('@/registry/icons/general/actions/profile-memory').then((mod) => ({
-      default: mod.ProfileMemory,
-    })),
-  'general/actions/profile-red': () =>
-    import('@/registry/icons/general/actions/profile-red').then((mod) => ({
-      default: mod.ProfileRed,
-    })),
-  'general/actions/project-directory': () =>
-    import('@/registry/icons/general/actions/project-directory').then(
-      (mod) => ({ default: mod.ProjectDirectory }),
-    ),
-  'general/actions/replace': () =>
-    import('@/registry/icons/general/actions/replace').then((mod) => ({
-      default: mod.Replace,
-    })),
-  'general/actions/report': () =>
-    import('@/registry/icons/general/actions/report').then((mod) => ({
-      default: mod.Report,
-    })),
-  'general/actions/restart-stop': () =>
-    import('@/registry/icons/general/actions/restart-stop').then((mod) => ({
-      default: mod.RestartStop,
-    })),
-  'general/actions/run-all': () =>
-    import('@/registry/icons/general/actions/run-all').then((mod) => ({
-      default: mod.RunAll,
-    })),
-  'general/actions/select-all': () =>
-    import('@/registry/icons/general/actions/select-all').then((mod) => ({
-      default: mod.SelectAll,
-    })),
-  'general/actions/shortcut-filter': () =>
-    import('@/registry/icons/general/actions/shortcut-filter').then((mod) => ({
-      default: mod.ShortcutFilter,
-    })),
-  'general/actions/show-to-implement': () =>
-    import('@/registry/icons/general/actions/show-to-implement').then(
-      (mod) => ({ default: mod.ShowToImplement }),
-    ),
-  'general/actions/split': () =>
-    import('@/registry/icons/general/actions/split').then((mod) => ({
-      default: mod.Split,
-    })),
-  'general/actions/start-memory-profile': () =>
-    import('@/registry/icons/general/actions/start-memory-profile').then(
-      (mod) => ({ default: mod.StartMemoryProfile }),
-    ),
-  'general/actions/suggested-refactoring-bulb': () =>
-    import('@/registry/icons/general/actions/suggested-refactoring-bulb').then(
-      (mod) => ({ default: mod.SuggestedRefactoringBulb }),
-    ),
-  'general/actions/swap-panels': () =>
-    import('@/registry/icons/general/actions/swap-panels').then((mod) => ({
-      default: mod.SwapPanels,
-    })),
-  'general/actions/synchronize-scrolling': () =>
-    import('@/registry/icons/general/actions/synchronize-scrolling').then(
-      (mod) => ({ default: mod.SynchronizeScrolling }),
-    ),
-  'general/actions/toggle-visibility': () =>
-    import('@/registry/icons/general/actions/toggle-visibility').then(
-      (mod) => ({ default: mod.ToggleVisibility }),
-    ),
-  'general/actions/unselect-all': () =>
-    import('@/registry/icons/general/actions/unselect-all').then((mod) => ({
-      default: mod.UnselectAll,
-    })),
-  'general/actions/write-review': () =>
-    import('@/registry/icons/general/actions/write-review').then((mod) => ({
-      default: mod.WriteReview,
-    })),
-  'general/ai-assistant/ai-assistant': () =>
-    import('@/registry/icons/general/ai-assistant/ai-assistant').then(
-      (mod) => ({ default: mod.AiAssistant }),
-    ),
-  'general/ai-assistant/ai-assistant-colored': () =>
-    import('@/registry/icons/general/ai-assistant/ai-assistant-colored').then(
-      (mod) => ({ default: mod.AiAssistantColored }),
-    ),
-  'general/ai-assistant/ai-assistant-disabled': () =>
-    import('@/registry/icons/general/ai-assistant/ai-assistant-disabled').then(
-      (mod) => ({ default: mod.AiAssistantDisabled }),
-    ),
-  'general/ai-assistant/attached': () =>
-    import('@/registry/icons/general/ai-assistant/attached').then((mod) => ({
-      default: mod.Attached,
-    })),
-  'general/ai-assistant/dislike': () =>
-    import('@/registry/icons/general/ai-assistant/dislike').then((mod) => ({
-      default: mod.Dislike,
-    })),
-  'general/ai-assistant/dislike-selected': () =>
-    import('@/registry/icons/general/ai-assistant/dislike-selected').then(
-      (mod) => ({ default: mod.DislikeSelected }),
-    ),
-  'general/ai-assistant/feature-answer': () =>
-    import('@/registry/icons/general/ai-assistant/feature-answer').then(
-      (mod) => ({ default: mod.FeatureAnswer }),
-    ),
-  'general/ai-assistant/feature-code-block': () =>
-    import('@/registry/icons/general/ai-assistant/feature-code-block').then(
-      (mod) => ({ default: mod.FeatureCodeBlock }),
-    ),
-  'general/ai-assistant/feature-comment': () =>
-    import('@/registry/icons/general/ai-assistant/feature-comment').then(
-      (mod) => ({ default: mod.FeatureComment }),
-    ),
-  'general/ai-assistant/feature-commit': () =>
-    import('@/registry/icons/general/ai-assistant/feature-commit').then(
-      (mod) => ({ default: mod.FeatureCommit }),
-    ),
-  'general/ai-assistant/feature-context': () =>
-    import('@/registry/icons/general/ai-assistant/feature-context').then(
-      (mod) => ({ default: mod.FeatureContext }),
-    ),
-  'general/ai-assistant/feature-docs': () =>
-    import('@/registry/icons/general/ai-assistant/feature-docs').then(
-      (mod) => ({ default: mod.FeatureDocs }),
-    ),
-  'general/ai-assistant/like': () =>
-    import('@/registry/icons/general/ai-assistant/like').then((mod) => ({
-      default: mod.Like,
-    })),
-  'general/ai-assistant/like-selected': () =>
-    import('@/registry/icons/general/ai-assistant/like-selected').then(
-      (mod) => ({ default: mod.LikeSelected }),
-    ),
-  'general/ai-assistant/send': () =>
-    import('@/registry/icons/general/ai-assistant/send').then((mod) => ({
-      default: mod.Send,
-    })),
-  'general/ai-assistant/send-to-editor': () =>
-    import('@/registry/icons/general/ai-assistant/send-to-editor').then(
-      (mod) => ({ default: mod.SendToEditor }),
-    ),
-  'general/bookmarks/add-bookmarks-list': () =>
-    import('@/registry/icons/general/bookmarks/add-bookmarks-list').then(
-      (mod) => ({ default: mod.AddBookmarksList }),
-    ),
-  'general/bookmarks/bookmark': () =>
-    import('@/registry/icons/general/bookmarks/bookmark').then((mod) => ({
-      default: mod.Bookmark,
-    })),
-  'general/bookmarks/bookmarks': () =>
-    import('@/registry/icons/general/bookmarks/bookmarks').then((mod) => ({
-      default: mod.Bookmarks,
-    })),
-  'general/bookmarks/bookmarks-list': () =>
-    import('@/registry/icons/general/bookmarks/bookmarks-list').then((mod) => ({
-      default: mod.BookmarksList,
-    })),
-  'general/bookmarks/mnemonic': () =>
-    import('@/registry/icons/general/bookmarks/mnemonic').then((mod) => ({
-      default: mod.Mnemonic,
-    })),
-  'general/devkit/add-sdk': () =>
-    import('@/registry/icons/general/devkit/add-sdk').then((mod) => ({
-      default: mod.AddSDK,
-    })),
-  'general/devkit/plugin-v2': () =>
-    import('@/registry/icons/general/devkit/plugin-v2').then((mod) => ({
-      default: mod.PluginV2,
-    })),
-  'general/devkit/sdk-closed': () =>
-    import('@/registry/icons/general/devkit/sdk-closed').then((mod) => ({
-      default: mod.SdkClosed,
-    })),
-  'general/duplicates/send-to-the-left': () =>
-    import('@/registry/icons/general/duplicates/send-to-the-left').then(
-      (mod) => ({ default: mod.SendToTheLeft }),
-    ),
-  'general/duplicates/send-to-the-left-grayed': () =>
-    import('@/registry/icons/general/duplicates/send-to-the-left-grayed').then(
-      (mod) => ({ default: mod.SendToTheLeftGrayed }),
-    ),
-  'general/duplicates/send-to-the-right': () =>
-    import('@/registry/icons/general/duplicates/send-to-the-right').then(
-      (mod) => ({ default: mod.SendToTheRight }),
-    ),
-  'general/duplicates/send-to-the-right-grayed': () =>
-    import('@/registry/icons/general/duplicates/send-to-the-right-grayed').then(
-      (mod) => ({ default: mod.SendToTheRightGrayed }),
-    ),
-  'general/editor/add-column-left': () =>
-    import('@/registry/icons/general/editor/add-column-left').then((mod) => ({
-      default: mod.AddColumnLeft,
-    })),
-  'general/editor/add-column-right': () =>
-    import('@/registry/icons/general/editor/add-column-right').then((mod) => ({
-      default: mod.AddColumnRight,
-    })),
-  'general/editor/add-row-above': () =>
-    import('@/registry/icons/general/editor/add-row-above').then((mod) => ({
-      default: mod.AddRowAbove,
-    })),
-  'general/editor/add-row-below': () =>
-    import('@/registry/icons/general/editor/add-row-below').then((mod) => ({
-      default: mod.AddRowBelow,
-    })),
-  'general/editor/bold': () =>
-    import('@/registry/icons/general/editor/bold').then((mod) => ({
-      default: mod.Bold,
-    })),
-  'general/editor/bullet-list': () =>
-    import('@/registry/icons/general/editor/bullet-list').then((mod) => ({
-      default: mod.BulletList,
-    })),
-  'general/editor/center-align': () =>
-    import('@/registry/icons/general/editor/center-align').then((mod) => ({
-      default: mod.CenterAlign,
-    })),
-  'general/editor/checkmark-list': () =>
-    import('@/registry/icons/general/editor/checkmark-list').then((mod) => ({
-      default: mod.CheckmarkList,
-    })),
-  'general/editor/code-span': () =>
-    import('@/registry/icons/general/editor/code-span').then((mod) => ({
-      default: mod.CodeSpan,
-    })),
-  'general/editor/header-level-down': () =>
-    import('@/registry/icons/general/editor/header-level-down').then((mod) => ({
-      default: mod.HeaderLevelDown,
-    })),
-  'general/editor/header-level-up': () =>
-    import('@/registry/icons/general/editor/header-level-up').then((mod) => ({
-      default: mod.HeaderLevelUp,
-    })),
-  'general/editor/italic': () =>
-    import('@/registry/icons/general/editor/italic').then((mod) => ({
-      default: mod.Italic,
-    })),
-  'general/editor/left-align': () =>
-    import('@/registry/icons/general/editor/left-align').then((mod) => ({
-      default: mod.LeftAlign,
-    })),
-  'general/editor/link': () =>
-    import('@/registry/icons/general/editor/link').then((mod) => ({
-      default: mod.Link,
-    })),
-  'general/editor/numbered-list': () =>
-    import('@/registry/icons/general/editor/numbered-list').then((mod) => ({
-      default: mod.NumberedList,
-    })),
-  'general/editor/right-align': () =>
-    import('@/registry/icons/general/editor/right-align').then((mod) => ({
-      default: mod.RightAlign,
-    })),
-  'general/editor/strike-through': () =>
-    import('@/registry/icons/general/editor/strike-through').then((mod) => ({
-      default: mod.StrikeThrough,
-    })),
-  'general/editor/table': () =>
-    import('@/registry/icons/general/editor/table').then((mod) => ({
-      default: mod.Table,
-    })),
-  'general/general/add': () =>
-    import('@/registry/icons/general/general/add').then((mod) => ({
-      default: mod.Add,
-    })),
-  'general/general/autoscroll-from-source': () =>
-    import('@/registry/icons/general/general/autoscroll-from-source').then(
-      (mod) => ({ default: mod.AutoscrollFromSource }),
-    ),
-  'general/general/autoscroll-to-source': () =>
-    import('@/registry/icons/general/general/autoscroll-to-source').then(
-      (mod) => ({ default: mod.AutoscrollToSource }),
-    ),
-  'general/general/checkmark': () =>
-    import('@/registry/icons/general/general/checkmark').then((mod) => ({
-      default: mod.Checkmark,
-    })),
-  'general/general/chevron-down': () =>
-    import('@/registry/icons/general/general/chevron-down').then((mod) => ({
-      default: mod.ChevronDown,
-    })),
-  'general/general/chevron-down-hovered': () =>
-    import('@/registry/icons/general/general/chevron-down-hovered').then(
-      (mod) => ({ default: mod.ChevronDownHovered }),
-    ),
-  'general/general/chevron-down-large': () =>
-    import('@/registry/icons/general/general/chevron-down-large').then(
-      (mod) => ({ default: mod.ChevronDownLarge }),
-    ),
-  'general/general/chevron-left': () =>
-    import('@/registry/icons/general/general/chevron-left').then((mod) => ({
-      default: mod.ChevronLeft,
-    })),
-  'general/general/chevron-right': () =>
-    import('@/registry/icons/general/general/chevron-right').then((mod) => ({
-      default: mod.ChevronRight,
-    })),
-  'general/general/chevron-up': () =>
-    import('@/registry/icons/general/general/chevron-up').then((mod) => ({
-      default: mod.ChevronUp,
-    })),
-  'general/general/chevron-up-large': () =>
-    import('@/registry/icons/general/general/chevron-up-large').then((mod) => ({
-      default: mod.ChevronUpLarge,
-    })),
-  'general/general/class-hierarchy': () =>
-    import('@/registry/icons/general/general/class-hierarchy').then((mod) => ({
-      default: mod.ClassHierarchy,
-    })),
-  'general/general/close': () =>
-    import('@/registry/icons/general/general/close').then((mod) => ({
-      default: mod.Close,
-    })),
-  'general/general/close-small': () =>
-    import('@/registry/icons/general/general/close-small').then((mod) => ({
-      default: mod.CloseSmall,
-    })),
-  'general/general/close-small-hovered': () =>
-    import('@/registry/icons/general/general/close-small-hovered').then(
-      (mod) => ({ default: mod.CloseSmallHovered }),
-    ),
-  'general/general/collapse-all': () =>
-    import('@/registry/icons/general/general/collapse-all').then((mod) => ({
-      default: mod.CollapseAll,
-    })),
-  'general/general/config-file': () =>
-    import('@/registry/icons/general/general/config-file').then((mod) => ({
-      default: mod.ConfigFile,
-    })),
-  'general/general/copy': () =>
-    import('@/registry/icons/general/general/copy').then((mod) => ({
-      default: mod.Copy,
-    })),
-  'general/general/cut': () =>
-    import('@/registry/icons/general/general/cut').then((mod) => ({
-      default: mod.Cut,
-    })),
-  'general/general/delete': () =>
-    import('@/registry/icons/general/general/delete').then((mod) => ({
-      default: mod.Delete,
-    })),
-  'general/general/down': () =>
-    import('@/registry/icons/general/general/down').then((mod) => ({
-      default: mod.Down,
-    })),
-  'general/general/download': () =>
-    import('@/registry/icons/general/general/download').then((mod) => ({
-      default: mod.Download,
-    })),
-  'general/general/edit': () =>
-    import('@/registry/icons/general/general/edit').then((mod) => ({
-      default: mod.Edit,
-    })),
-  'general/general/exit': () =>
-    import('@/registry/icons/general/general/exit').then((mod) => ({
-      default: mod.Exit,
-    })),
-  'general/general/expand-all': () =>
-    import('@/registry/icons/general/general/expand-all').then((mod) => ({
-      default: mod.ExpandAll,
-    })),
-  'general/general/export': () =>
-    import('@/registry/icons/general/general/export').then((mod) => ({
-      default: mod.Export,
-    })),
-  'general/general/external-link': () =>
-    import('@/registry/icons/general/general/external-link').then((mod) => ({
-      default: mod.ExternalLink,
-    })),
-  'general/general/filter': () =>
-    import('@/registry/icons/general/general/filter').then((mod) => ({
-      default: mod.Filter,
-    })),
-  'general/general/graph-layout': () =>
-    import('@/registry/icons/general/general/graph-layout').then((mod) => ({
-      default: mod.GraphLayout,
-    })),
-  'general/general/groups': () =>
-    import('@/registry/icons/general/general/groups').then((mod) => ({
-      default: mod.Groups,
-    })),
-  'general/general/help': () =>
-    import('@/registry/icons/general/general/help').then((mod) => ({
-      default: mod.Help,
-    })),
-  'general/general/hide': () =>
-    import('@/registry/icons/general/general/hide').then((mod) => ({
-      default: mod.Hide,
-    })),
-  'general/general/history': () =>
-    import('@/registry/icons/general/general/history').then((mod) => ({
-      default: mod.History,
-    })),
-  'general/general/ide-update': () =>
-    import('@/registry/icons/general/general/ide-update').then((mod) => ({
-      default: mod.IdeUpdate,
-    })),
-  'general/general/import': () =>
-    import('@/registry/icons/general/general/import').then((mod) => ({
-      default: mod.Import,
-    })),
-  'general/general/keyboard': () =>
-    import('@/registry/icons/general/general/keyboard').then((mod) => ({
-      default: mod.Keyboard,
-    })),
-  'general/general/layout': () =>
-    import('@/registry/icons/general/general/layout').then((mod) => ({
-      default: mod.Layout,
-    })),
-  'general/general/left': () =>
-    import('@/registry/icons/general/general/left').then((mod) => ({
-      default: mod.Left,
-    })),
-  'general/general/list-files': () =>
-    import('@/registry/icons/general/general/list-files').then((mod) => ({
-      default: mod.ListFiles,
-    })),
-  'general/general/locate': () =>
-    import('@/registry/icons/general/general/locate').then((mod) => ({
-      default: mod.Locate,
-    })),
-  'general/general/locked': () =>
-    import('@/registry/icons/general/general/locked').then((mod) => ({
-      default: mod.Locked,
-    })),
-  'general/general/minimap': () =>
-    import('@/registry/icons/general/general/minimap').then((mod) => ({
-      default: mod.Minimap,
-    })),
-  'general/general/more-horizontal': () =>
-    import('@/registry/icons/general/general/more-horizontal').then((mod) => ({
-      default: mod.MoreHorizontal,
-    })),
-  'general/general/more-vertical': () =>
-    import('@/registry/icons/general/general/more-vertical').then((mod) => ({
-      default: mod.MoreVertical,
-    })),
-  'general/general/move-down': () =>
-    import('@/registry/icons/general/general/move-down').then((mod) => ({
-      default: mod.MoveDown,
-    })),
-  'general/general/move-to-bottom-left': () =>
-    import('@/registry/icons/general/general/move-to-bottom-left').then(
-      (mod) => ({ default: mod.MoveToBottomLeft }),
-    ),
-  'general/general/move-to-bottom-right': () =>
-    import('@/registry/icons/general/general/move-to-bottom-right').then(
-      (mod) => ({ default: mod.MoveToBottomRight }),
-    ),
-  'general/general/move-to-left-bottom': () =>
-    import('@/registry/icons/general/general/move-to-left-bottom').then(
-      (mod) => ({ default: mod.MoveToLeftBottom }),
-    ),
-  'general/general/move-to-left-top': () =>
-    import('@/registry/icons/general/general/move-to-left-top').then((mod) => ({
-      default: mod.MoveToLeftTop,
-    })),
-  'general/general/move-to-right-bottom': () =>
-    import('@/registry/icons/general/general/move-to-right-bottom').then(
-      (mod) => ({ default: mod.MoveToRightBottom }),
-    ),
-  'general/general/move-to-right-top': () =>
-    import('@/registry/icons/general/general/move-to-right-top').then(
-      (mod) => ({ default: mod.MoveToRightTop }),
-    ),
-  'general/general/move-up': () =>
-    import('@/registry/icons/general/general/move-up').then((mod) => ({
-      default: mod.MoveUp,
-    })),
-  'general/general/open': () =>
-    import('@/registry/icons/general/general/open').then((mod) => ({
-      default: mod.Open,
-    })),
-  'general/general/open-in-tool-window': () =>
-    import('@/registry/icons/general/general/open-in-tool-window').then(
-      (mod) => ({ default: mod.OpenInToolWindow }),
-    ),
-  'general/general/open-new-tab': () =>
-    import('@/registry/icons/general/general/open-new-tab').then((mod) => ({
-      default: mod.OpenNewTab,
-    })),
-  'general/general/pagination': () =>
-    import('@/registry/icons/general/general/pagination').then((mod) => ({
-      default: mod.Pagination,
-    })),
-  'general/general/paste': () =>
-    import('@/registry/icons/general/general/paste').then((mod) => ({
-      default: mod.Paste,
-    })),
-  'general/general/pin': () =>
-    import('@/registry/icons/general/general/pin').then((mod) => ({
-      default: mod.Pin,
-    })),
-  'general/general/plugin-update': () =>
-    import('@/registry/icons/general/general/plugin-update').then((mod) => ({
-      default: mod.PluginUpdate,
-    })),
-  'general/general/preview-horizontally': () =>
-    import('@/registry/icons/general/general/preview-horizontally').then(
-      (mod) => ({ default: mod.PreviewHorizontally }),
-    ),
-  'general/general/preview-vertically': () =>
-    import('@/registry/icons/general/general/preview-vertically').then(
-      (mod) => ({ default: mod.PreviewVertically }),
-    ),
-  'general/general/print': () =>
-    import('@/registry/icons/general/general/print').then((mod) => ({
-      default: mod.Print,
-    })),
-  'general/general/project-configurable': () =>
-    import('@/registry/icons/general/general/project-configurable').then(
-      (mod) => ({ default: mod.ProjectConfigurable }),
-    ),
-  'general/general/project-structure': () =>
-    import('@/registry/icons/general/general/project-structure').then(
-      (mod) => ({ default: mod.ProjectStructure }),
-    ),
-  'general/general/project-wide-analysis-off': () =>
-    import('@/registry/icons/general/general/project-wide-analysis-off').then(
-      (mod) => ({ default: mod.ProjectWideAnalysisOff }),
-    ),
-  'general/general/project-wide-analysis-on': () =>
-    import('@/registry/icons/general/general/project-wide-analysis-on').then(
-      (mod) => ({ default: mod.ProjectWideAnalysisOn }),
-    ),
-  'general/general/question-mark': () =>
-    import('@/registry/icons/general/general/question-mark').then((mod) => ({
-      default: mod.QuestionMark,
-    })),
-  'general/general/reader-mode': () =>
-    import('@/registry/icons/general/general/reader-mode').then((mod) => ({
-      default: mod.ReaderMode,
-    })),
-  'general/general/redo': () =>
-    import('@/registry/icons/general/general/redo').then((mod) => ({
-      default: mod.Redo,
-    })),
-  'general/general/reformat-code': () =>
-    import('@/registry/icons/general/general/reformat-code').then((mod) => ({
-      default: mod.ReformatCode,
-    })),
-  'general/general/refresh': () =>
-    import('@/registry/icons/general/general/refresh').then((mod) => ({
-      default: mod.Refresh,
-    })),
-  'general/general/remove': () =>
-    import('@/registry/icons/general/general/remove').then((mod) => ({
-      default: mod.Remove,
-    })),
-  'general/general/right': () =>
-    import('@/registry/icons/general/general/right').then((mod) => ({
-      default: mod.Right,
-    })),
-  'general/general/run-anything': () =>
-    import('@/registry/icons/general/general/run-anything').then((mod) => ({
-      default: mod.RunAnything,
-    })),
-  'general/general/save': () =>
-    import('@/registry/icons/general/general/save').then((mod) => ({
-      default: mod.Save,
-    })),
-  'general/general/scroll-down': () =>
-    import('@/registry/icons/general/general/scroll-down').then((mod) => ({
-      default: mod.ScrollDown,
-    })),
-  'general/general/scroll-up': () =>
-    import('@/registry/icons/general/general/scroll-up').then((mod) => ({
-      default: mod.ScrollUp,
-    })),
-  'general/general/search': () =>
-    import('@/registry/icons/general/general/search').then((mod) => ({
-      default: mod.Search,
-    })),
-  'general/general/separator-horizontal': () =>
-    import('@/registry/icons/general/general/separator-horizontal').then(
-      (mod) => ({ default: mod.SeparatorHorizontal }),
-    ),
-  'general/general/setting-sync': () =>
-    import('@/registry/icons/general/general/setting-sync').then((mod) => ({
-      default: mod.SettingSync,
-    })),
-  'general/general/settings': () =>
-    import('@/registry/icons/general/general/settings').then((mod) => ({
-      default: mod.Settings,
-    })),
-  'general/general/show': () =>
-    import('@/registry/icons/general/general/show').then((mod) => ({
-      default: mod.Show,
-    })),
-  'general/general/show-as-tree': () =>
-    import('@/registry/icons/general/general/show-as-tree').then((mod) => ({
-      default: mod.ShowAsTree,
-    })),
-  'general/general/soft-wrap': () =>
-    import('@/registry/icons/general/general/soft-wrap').then((mod) => ({
-      default: mod.SoftWrap,
-    })),
-  'general/general/sort-alphabetically': () =>
-    import('@/registry/icons/general/general/sort-alphabetically').then(
-      (mod) => ({ default: mod.SortAlphabetically }),
-    ),
-  'general/general/sort-by': () =>
-    import('@/registry/icons/general/general/sort-by').then((mod) => ({
-      default: mod.SortBy,
-    })),
-  'general/general/sort-by-duration': () =>
-    import('@/registry/icons/general/general/sort-by-duration').then((mod) => ({
-      default: mod.SortByDuration,
-    })),
-  'general/general/sort-by-type': () =>
-    import('@/registry/icons/general/general/sort-by-type').then((mod) => ({
-      default: mod.SortByType,
-    })),
-  'general/general/sort-by-usage': () =>
-    import('@/registry/icons/general/general/sort-by-usage').then((mod) => ({
-      default: mod.SortByUsage,
-    })),
-  'general/general/sort-by-visibility': () =>
-    import('@/registry/icons/general/general/sort-by-visibility').then(
-      (mod) => ({ default: mod.SortByVisibility }),
-    ),
-  'general/general/split-horizontally': () =>
-    import('@/registry/icons/general/general/split-horizontally').then(
-      (mod) => ({ default: mod.SplitHorizontally }),
-    ),
-  'general/general/split-vertically': () =>
-    import('@/registry/icons/general/general/split-vertically').then((mod) => ({
-      default: mod.SplitVertically,
-    })),
-  'general/general/subtypes': () =>
-    import('@/registry/icons/general/general/subtypes').then((mod) => ({
-      default: mod.Subtypes,
-    })),
-  'general/general/supertypes': () =>
-    import('@/registry/icons/general/general/supertypes').then((mod) => ({
-      default: mod.Supertypes,
-    })),
-  'general/general/undo': () =>
-    import('@/registry/icons/general/general/undo').then((mod) => ({
-      default: mod.Undo,
-    })),
-  'general/general/unlocked': () =>
-    import('@/registry/icons/general/general/unlocked').then((mod) => ({
-      default: mod.Unlocked,
-    })),
-  'general/general/up': () =>
-    import('@/registry/icons/general/general/up').then((mod) => ({
-      default: mod.Up,
-    })),
-  'general/general/upload': () =>
-    import('@/registry/icons/general/general/upload').then((mod) => ({
-      default: mod.Upload,
-    })),
-  'general/general/vcs': () =>
-    import('@/registry/icons/general/general/vcs').then((mod) => ({
-      default: mod.Vcs,
-    })),
-  'general/inline/browse': () =>
-    import('@/registry/icons/general/inline/browse').then((mod) => ({
-      default: mod.Browse,
-    })),
-  'general/inline/collapse': () =>
-    import('@/registry/icons/general/inline/collapse').then((mod) => ({
-      default: mod.Collapse,
-    })),
-  'general/inline/copy': () =>
-    import('@/registry/icons/general/inline/copy').then((mod) => ({
-      default: mod.Copy,
-    })),
-  'general/inline/exact-words': () =>
-    import('@/registry/icons/general/inline/exact-words').then((mod) => ({
-      default: mod.ExactWords,
-    })),
-  'general/inline/expand': () =>
-    import('@/registry/icons/general/inline/expand').then((mod) => ({
-      default: mod.Expand,
-    })),
-  'general/inline/filter-history': () =>
-    import('@/registry/icons/general/inline/filter-history').then((mod) => ({
-      default: mod.FilterHistory,
-    })),
-  'general/inline/inline-add': () =>
-    import('@/registry/icons/general/inline/inline-add').then((mod) => ({
-      default: mod.InlineAdd,
-    })),
-  'general/inline/inline-edit': () =>
-    import('@/registry/icons/general/inline/inline-edit').then((mod) => ({
-      default: mod.InlineEdit,
-    })),
-  'general/inline/inline-settings': () =>
-    import('@/registry/icons/general/inline/inline-settings').then((mod) => ({
-      default: mod.InlineSettings,
-    })),
-  'general/inline/match-case': () =>
-    import('@/registry/icons/general/inline/match-case').then((mod) => ({
-      default: mod.MatchCase,
-    })),
-  'general/inline/new-line': () =>
-    import('@/registry/icons/general/inline/new-line').then((mod) => ({
-      default: mod.NewLine,
-    })),
-  'general/inline/preserve-case': () =>
-    import('@/registry/icons/general/inline/preserve-case').then((mod) => ({
-      default: mod.PreserveCase,
-    })),
-  'general/inline/refresh': () =>
-    import('@/registry/icons/general/inline/refresh').then((mod) => ({
-      default: mod.Refresh,
-    })),
-  'general/inline/regex': () =>
-    import('@/registry/icons/general/inline/regex').then((mod) => ({
-      default: mod.Regex,
-    })),
-  'general/inline/search-history': () =>
-    import('@/registry/icons/general/inline/search-history').then((mod) => ({
-      default: mod.SearchHistory,
-    })),
-  'general/inline/sort-history': () =>
-    import('@/registry/icons/general/inline/sort-history').then((mod) => ({
-      default: mod.SortHistory,
-    })),
-  'general/inline/statistics-panel': () =>
-    import('@/registry/icons/general/inline/statistics-panel').then((mod) => ({
-      default: mod.StatisticsPanel,
-    })),
-  'general/inline/variables': () =>
-    import('@/registry/icons/general/inline/variables').then((mod) => ({
-      default: mod.Variables,
-    })),
-  'general/modifiers/final-mark': () =>
-    import('@/registry/icons/general/modifiers/final-mark').then((mod) => ({
-      default: mod.FinalMark,
-    })),
-  'general/modifiers/junit-test-mark': () =>
-    import('@/registry/icons/general/modifiers/junit-test-mark').then(
-      (mod) => ({ default: mod.JunitTestMark }),
-    ),
-  'general/modifiers/locked': () =>
-    import('@/registry/icons/general/modifiers/locked').then((mod) => ({
-      default: mod.Locked,
-    })),
-  'general/modifiers/process-mark': () =>
-    import('@/registry/icons/general/modifiers/process-mark').then((mod) => ({
-      default: mod.ProcessMark,
-    })),
-  'general/modifiers/runnable-mark': () =>
-    import('@/registry/icons/general/modifiers/runnable-mark').then((mod) => ({
-      default: mod.RunnableMark,
-    })),
-  'general/modifiers/shared': () =>
-    import('@/registry/icons/general/modifiers/shared').then((mod) => ({
-      default: mod.Shared,
-    })),
-  'general/modifiers/static-mark': () =>
-    import('@/registry/icons/general/modifiers/static-mark').then((mod) => ({
-      default: mod.StaticMark,
-    })),
-  'general/modifiers/symlink': () =>
-    import('@/registry/icons/general/modifiers/symlink').then((mod) => ({
-      default: mod.Symlink,
-    })),
-  'general/modifiers/tab-alert': () =>
-    import('@/registry/icons/general/modifiers/tab-alert').then((mod) => ({
-      default: mod.TabAlert,
-    })),
-  'general/new-ui/dark-theme': () =>
-    import('@/registry/icons/general/new-ui/dark-theme').then((mod) => ({
-      default: mod.DarkTheme,
-    })),
-  'general/new-ui/dark-theme-selected': () =>
-    import('@/registry/icons/general/new-ui/dark-theme-selected').then(
-      (mod) => ({ default: mod.DarkThemeSelected }),
-    ),
-  'general/new-ui/light-theme': () =>
-    import('@/registry/icons/general/new-ui/light-theme').then((mod) => ({
-      default: mod.LightTheme,
-    })),
-  'general/new-ui/light-theme-selected': () =>
-    import('@/registry/icons/general/new-ui/light-theme-selected').then(
-      (mod) => ({ default: mod.LightThemeSelected }),
-    ),
-  'general/new-ui/system-theme': () =>
-    import('@/registry/icons/general/new-ui/system-theme').then((mod) => ({
-      default: mod.SystemTheme,
-    })),
-  'general/new-ui/system-theme-selected': () =>
-    import('@/registry/icons/general/new-ui/system-theme-selected').then(
-      (mod) => ({ default: mod.SystemThemeSelected }),
-    ),
-  'general/object-browser/abbreviate-package-names': () =>
-    import(
-      '@/registry/icons/general/object-browser/abbreviate-package-names'
-    ).then((mod) => ({ default: mod.AbbreviatePackageNames })),
-  'general/object-browser/compact-empty-packages': () =>
-    import(
-      '@/registry/icons/general/object-browser/compact-empty-packages'
-    ).then((mod) => ({ default: mod.CompactEmptyPackages })),
-  'general/object-browser/flatten-modules': () =>
-    import('@/registry/icons/general/object-browser/flatten-modules').then(
-      (mod) => ({ default: mod.FlattenModules }),
-    ),
-  'general/object-browser/flatten-packages': () =>
-    import('@/registry/icons/general/object-browser/flatten-packages').then(
-      (mod) => ({ default: mod.FlattenPackages }),
-    ),
-  'general/object-browser/show-library-contents': () =>
-    import(
-      '@/registry/icons/general/object-browser/show-library-contents'
-    ).then((mod) => ({ default: mod.ShowLibraryContents })),
-  'general/object-browser/show-members': () =>
-    import('@/registry/icons/general/object-browser/show-members').then(
-      (mod) => ({ default: mod.ShowMembers }),
-    ),
-  'general/object-browser/sort-alphabetically': () =>
-    import('@/registry/icons/general/object-browser/sort-alphabetically').then(
-      (mod) => ({ default: mod.SortAlphabetically }),
-    ),
-  'general/object-browser/sort-by-type': () =>
-    import('@/registry/icons/general/object-browser/sort-by-type').then(
-      (mod) => ({ default: mod.SortByType }),
-    ),
-  'general/object-browser/sort-by-usage': () =>
-    import('@/registry/icons/general/object-browser/sort-by-usage').then(
-      (mod) => ({ default: mod.SortByUsage }),
-    ),
-  'general/object-browser/sort-by-visibility': () =>
-    import('@/registry/icons/general/object-browser/sort-by-visibility').then(
-      (mod) => ({ default: mod.SortByVisibility }),
-    ),
-  'general/progress-bar/pause': () =>
-    import('@/registry/icons/general/progress-bar/pause').then((mod) => ({
-      default: mod.Pause,
-    })),
-  'general/progress-bar/pause-hovered': () =>
-    import('@/registry/icons/general/progress-bar/pause-hovered').then(
-      (mod) => ({ default: mod.PauseHovered }),
-    ),
-  'general/progress-bar/resume': () =>
-    import('@/registry/icons/general/progress-bar/resume').then((mod) => ({
-      default: mod.Resume,
-    })),
-  'general/progress-bar/resume-hovered': () =>
-    import('@/registry/icons/general/progress-bar/resume-hovered').then(
-      (mod) => ({ default: mod.ResumeHovered }),
-    ),
-  'general/progress-bar/stop': () =>
-    import('@/registry/icons/general/progress-bar/stop').then((mod) => ({
-      default: mod.Stop,
-    })),
-  'general/progress-bar/stop-hovered': () =>
-    import('@/registry/icons/general/progress-bar/stop-hovered').then(
-      (mod) => ({ default: mod.StopHovered }),
-    ),
-  'general/rating/feedback-rating': () =>
-    import('@/registry/icons/general/rating/feedback-rating').then((mod) => ({
-      default: mod.FeedbackRating,
-    })),
-  'general/rating/feedback-rating-focused': () =>
-    import('@/registry/icons/general/rating/feedback-rating-focused').then(
-      (mod) => ({ default: mod.FeedbackRatingFocused }),
-    ),
-  'general/rating/feedback-rating-focused-on': () =>
-    import('@/registry/icons/general/rating/feedback-rating-focused-on').then(
-      (mod) => ({ default: mod.FeedbackRatingFocusedOn }),
-    ),
-  'general/rating/feedback-rating-on': () =>
-    import('@/registry/icons/general/rating/feedback-rating-on').then(
-      (mod) => ({ default: mod.FeedbackRatingOn }),
-    ),
-  'general/setting-sync/conflict': () =>
-    import('@/registry/icons/general/setting-sync/conflict').then((mod) => ({
-      default: mod.Conflict,
-    })),
-  'general/setting-sync/local-changes': () =>
-    import('@/registry/icons/general/setting-sync/local-changes').then(
-      (mod) => ({ default: mod.LocalChanges }),
-    ),
-  'general/setting-sync/remote-changes': () =>
-    import('@/registry/icons/general/setting-sync/remote-changes').then(
-      (mod) => ({ default: mod.RemoteChanges }),
-    ),
-  'general/setting-sync/status-disabled': () =>
-    import('@/registry/icons/general/setting-sync/status-disabled').then(
-      (mod) => ({ default: mod.StatusDisabled }),
-    ),
-  'general/setting-sync/status-enabled': () =>
-    import('@/registry/icons/general/setting-sync/status-enabled').then(
-      (mod) => ({ default: mod.StatusEnabled }),
-    ),
-  'general/spinner/loader': () =>
-    import('@/registry/icons/general/spinner/loader').then((mod) => ({
-      default: mod.Loader,
-    })),
-  'general/status/error': () =>
-    import('@/registry/icons/general/status/error').then((mod) => ({
-      default: mod.Error,
-    })),
-  'general/status/error-dialog': () =>
-    import('@/registry/icons/general/status/error-dialog').then((mod) => ({
-      default: mod.ErrorDialog,
-    })),
-  'general/status/error-outline': () =>
-    import('@/registry/icons/general/status/error-outline').then((mod) => ({
-      default: mod.ErrorOutline,
-    })),
-  'general/status/info': () =>
-    import('@/registry/icons/general/status/info').then((mod) => ({
-      default: mod.Info,
-    })),
-  'general/status/info-outline': () =>
-    import('@/registry/icons/general/status/info-outline').then((mod) => ({
-      default: mod.InfoOutline,
-    })),
-  'general/status/information-dialog': () =>
-    import('@/registry/icons/general/status/information-dialog').then(
-      (mod) => ({ default: mod.InformationDialog }),
-    ),
-  'general/status/question-dialog': () =>
-    import('@/registry/icons/general/status/question-dialog').then((mod) => ({
-      default: mod.QuestionDialog,
-    })),
-  'general/status/success': () =>
-    import('@/registry/icons/general/status/success').then((mod) => ({
-      default: mod.Success,
-    })),
-  'general/status/success-dialog': () =>
-    import('@/registry/icons/general/status/success-dialog').then((mod) => ({
-      default: mod.SuccessDialog,
-    })),
-  'general/status/success-login': () =>
-    import('@/registry/icons/general/status/success-login').then((mod) => ({
-      default: mod.SuccessLogin,
-    })),
-  'general/status/warning': () =>
-    import('@/registry/icons/general/status/warning').then((mod) => ({
-      default: mod.Warning,
-    })),
-  'general/status/warning-dialog': () =>
-    import('@/registry/icons/general/status/warning-dialog').then((mod) => ({
-      default: mod.WarningDialog,
-    })),
-  'general/status/warning-outline': () =>
-    import('@/registry/icons/general/status/warning-outline').then((mod) => ({
-      default: mod.WarningOutline,
-    })),
-  'general/tool-windows/ai-assistant-tool-window': () =>
-    import(
-      '@/registry/icons/general/tool-windows/ai-assistant-tool-window'
-    ).then((mod) => ({ default: mod.AiAssistantToolWindow })),
-  'general/tool-windows/amazon-emr': () =>
-    import('@/registry/icons/general/tool-windows/amazon-emr').then((mod) => ({
-      default: mod.AmazonEMR,
-    })),
-  'general/tool-windows/ant': () =>
-    import('@/registry/icons/general/tool-windows/ant').then((mod) => ({
-      default: mod.Ant,
-    })),
-  'general/tool-windows/app-engine-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/app-engine-tool-window').then(
-      (mod) => ({ default: mod.AppEngineToolWindow }),
-    ),
-  'general/tool-windows/aws-glue-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/aws-glue-tool-window').then(
-      (mod) => ({ default: mod.AwsGlueToolWindow }),
-    ),
-  'general/tool-windows/bookmarks': () =>
-    import('@/registry/icons/general/tool-windows/bookmarks').then((mod) => ({
-      default: mod.Bookmarks,
-    })),
-  'general/tool-windows/build': () =>
-    import('@/registry/icons/general/tool-windows/build').then((mod) => ({
-      default: mod.Build,
-    })),
-  'general/tool-windows/build-server-protocol': () =>
-    import('@/registry/icons/general/tool-windows/build-server-protocol').then(
-      (mod) => ({ default: mod.BuildServerProtocol }),
-    ),
-  'general/tool-windows/cdi-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/cdi-tool-window').then(
-      (mod) => ({ default: mod.CdiToolWindow }),
-    ),
-  'general/tool-windows/changes': () =>
-    import('@/registry/icons/general/tool-windows/changes').then((mod) => ({
-      default: mod.Changes,
-    })),
-  'general/tool-windows/cmake-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/cmake-tool-window').then(
-      (mod) => ({ default: mod.CMakeToolWindow }),
-    ),
-  'general/tool-windows/commit': () =>
-    import('@/registry/icons/general/tool-windows/commit').then((mod) => ({
-      default: mod.Commit,
-    })),
-  'general/tool-windows/concurrency-diagram-toolwindow': () =>
-    import(
-      '@/registry/icons/general/tool-windows/concurrency-diagram-toolwindow'
-    ).then((mod) => ({ default: mod.ConcurrencyDiagramToolwindow })),
-  'general/tool-windows/coverage': () =>
-    import('@/registry/icons/general/tool-windows/coverage').then((mod) => ({
-      default: mod.Coverage,
-    })),
-  'general/tool-windows/cwm-access': () =>
-    import('@/registry/icons/general/tool-windows/cwm-access').then((mod) => ({
-      default: mod.CwmAccess,
-    })),
-  'general/tool-windows/cwm-users': () =>
-    import('@/registry/icons/general/tool-windows/cwm-users').then((mod) => ({
-      default: mod.CwmUsers,
-    })),
-  'general/tool-windows/cypress': () =>
-    import('@/registry/icons/general/tool-windows/cypress').then((mod) => ({
-      default: mod.Cypress,
-    })),
-  'general/tool-windows/database-changes': () =>
-    import('@/registry/icons/general/tool-windows/database-changes').then(
-      (mod) => ({ default: mod.DatabaseChanges }),
-    ),
-  'general/tool-windows/databricks-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/databricks-tool-window').then(
-      (mod) => ({ default: mod.DatabricksToolWindow }),
-    ),
-  'general/tool-windows/dataproc-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/dataproc-tool-window').then(
-      (mod) => ({ default: mod.DataprocToolWindow }),
-    ),
-  'general/tool-windows/dbms': () =>
-    import('@/registry/icons/general/tool-windows/dbms').then((mod) => ({
-      default: mod.Dbms,
-    })),
-  'general/tool-windows/debug': () =>
-    import('@/registry/icons/general/tool-windows/debug').then((mod) => ({
-      default: mod.Debug,
-    })),
-  'general/tool-windows/dependencies': () =>
-    import('@/registry/icons/general/tool-windows/dependencies').then(
-      (mod) => ({ default: mod.Dependencies }),
-    ),
-  'general/tool-windows/documentation': () =>
-    import('@/registry/icons/general/tool-windows/documentation').then(
-      (mod) => ({ default: mod.Documentation }),
-    ),
-  'general/tool-windows/donate': () =>
-    import('@/registry/icons/general/tool-windows/donate').then((mod) => ({
-      default: mod.Donate,
-    })),
-  'general/tool-windows/endpoints': () =>
-    import('@/registry/icons/general/tool-windows/endpoints').then((mod) => ({
-      default: mod.Endpoints,
-    })),
-  'general/tool-windows/exception-analyzer': () =>
-    import('@/registry/icons/general/tool-windows/exception-analyzer').then(
-      (mod) => ({ default: mod.ExceptionAnalyzer }),
-    ),
-  'general/tool-windows/feedback': () =>
-    import('@/registry/icons/general/tool-windows/feedback').then((mod) => ({
-      default: mod.Feedback,
-    })),
-  'general/tool-windows/find': () =>
-    import('@/registry/icons/general/tool-windows/find').then((mod) => ({
-      default: mod.Find,
-    })),
-  'general/tool-windows/find-external-usages': () =>
-    import('@/registry/icons/general/tool-windows/find-external-usages').then(
-      (mod) => ({ default: mod.FindExternalUsages }),
-    ),
-  'general/tool-windows/git-lab-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/git-lab-tool-window').then(
-      (mod) => ({ default: mod.GitLabToolWindow }),
-    ),
-  'general/tool-windows/gradle': () =>
-    import('@/registry/icons/general/tool-windows/gradle').then((mod) => ({
-      default: mod.Gradle,
-    })),
-  'general/tool-windows/graph-qltool-window': () =>
-    import('@/registry/icons/general/tool-windows/graph-qltool-window').then(
-      (mod) => ({ default: mod.GraphQLToolWindow }),
-    ),
-  'general/tool-windows/hierarchy': () =>
-    import('@/registry/icons/general/tool-windows/hierarchy').then((mod) => ({
-      default: mod.Hierarchy,
-    })),
-  'general/tool-windows/hive': () =>
-    import('@/registry/icons/general/tool-windows/hive').then((mod) => ({
-      default: mod.Hive,
-    })),
-  'general/tool-windows/java-eetool-window': () =>
-    import('@/registry/icons/general/tool-windows/java-eetool-window').then(
-      (mod) => ({ default: mod.JavaEEToolWindow }),
-    ),
-  'general/tool-windows/jpa-console-tool-window': () =>
-    import(
-      '@/registry/icons/general/tool-windows/jpa-console-tool-window'
-    ).then((mod) => ({ default: mod.JpaConsoleToolWindow })),
-  'general/tool-windows/jpa-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/jpa-tool-window').then(
-      (mod) => ({ default: mod.JpaToolWindow }),
-    ),
-  'general/tool-windows/jupyter-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/jupyter-tool-window').then(
-      (mod) => ({ default: mod.JupyterToolWindow }),
-    ),
-  'general/tool-windows/kafka': () =>
-    import('@/registry/icons/general/tool-windows/kafka').then((mod) => ({
-      default: mod.Kafka,
-    })),
-  'general/tool-windows/kotlin-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/kotlin-tool-window').then(
-      (mod) => ({ default: mod.KotlinToolWindow }),
-    ),
-  'general/tool-windows/learn': () =>
-    import('@/registry/icons/general/tool-windows/learn').then((mod) => ({
-      default: mod.Learn,
-    })),
-  'general/tool-windows/makefile-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/makefile-tool-window').then(
-      (mod) => ({ default: mod.MakefileToolWindow }),
-    ),
-  'general/tool-windows/maven': () =>
-    import('@/registry/icons/general/tool-windows/maven').then((mod) => ({
-      default: mod.Maven,
-    })),
-  'general/tool-windows/messages': () =>
-    import('@/registry/icons/general/tool-windows/messages').then((mod) => ({
-      default: mod.Messages,
-    })),
-  'general/tool-windows/new-ui': () =>
-    import('@/registry/icons/general/tool-windows/new-ui').then((mod) => ({
-      default: mod.NewUI,
-    })),
-  'general/tool-windows/notifications': () =>
-    import('@/registry/icons/general/tool-windows/notifications').then(
-      (mod) => ({ default: mod.Notifications }),
-    ),
-  'general/tool-windows/npm': () =>
-    import('@/registry/icons/general/tool-windows/npm').then((mod) => ({
-      default: mod.Npm,
-    })),
-  'general/tool-windows/package-manager': () =>
-    import('@/registry/icons/general/tool-windows/package-manager').then(
-      (mod) => ({ default: mod.PackageManager }),
-    ),
-  'general/tool-windows/persistence': () =>
-    import('@/registry/icons/general/tool-windows/persistence').then((mod) => ({
-      default: mod.Persistence,
-    })),
-  'general/tool-windows/problems': () =>
-    import('@/registry/icons/general/tool-windows/problems').then((mod) => ({
-      default: mod.Problems,
-    })),
-  'general/tool-windows/profiler': () =>
-    import('@/registry/icons/general/tool-windows/profiler').then((mod) => ({
-      default: mod.Profiler,
-    })),
-  'general/tool-windows/profiler-android': () =>
-    import('@/registry/icons/general/tool-windows/profiler-android').then(
-      (mod) => ({ default: mod.ProfilerAndroid }),
-    ),
-  'general/tool-windows/project': () =>
-    import('@/registry/icons/general/tool-windows/project').then((mod) => ({
-      default: mod.Project,
-    })),
-  'general/tool-windows/pull-requests': () =>
-    import('@/registry/icons/general/tool-windows/pull-requests').then(
-      (mod) => ({ default: mod.PullRequests }),
-    ),
-  'general/tool-windows/python-console-tool-window': () =>
-    import(
-      '@/registry/icons/general/tool-windows/python-console-tool-window'
-    ).then((mod) => ({ default: mod.PythonConsoleToolWindow })),
-  'general/tool-windows/r-engine-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/r-engine-tool-window').then(
-      (mod) => ({ default: mod.REngineToolWindow }),
-    ),
-  'general/tool-windows/rebuild': () =>
-    import('@/registry/icons/general/tool-windows/rebuild').then((mod) => ({
-      default: mod.Rebuild,
-    })),
-  'general/tool-windows/repositories': () =>
-    import('@/registry/icons/general/tool-windows/repositories').then(
-      (mod) => ({ default: mod.Repositories }),
-    ),
-  'general/tool-windows/run': () =>
-    import('@/registry/icons/general/tool-windows/run').then((mod) => ({
-      default: mod.Run,
-    })),
-  'general/tool-windows/rust': () =>
-    import('@/registry/icons/general/tool-windows/rust').then((mod) => ({
-      default: mod.Rust,
-    })),
-  'general/tool-windows/sbt-icon': () =>
-    import('@/registry/icons/general/tool-windows/sbt-icon').then((mod) => ({
-      default: mod.SbtIcon,
-    })),
-  'general/tool-windows/sbt-shell': () =>
-    import('@/registry/icons/general/tool-windows/sbt-shell').then((mod) => ({
-      default: mod.SbtShell,
-    })),
-  'general/tool-windows/scala-profiler': () =>
-    import('@/registry/icons/general/tool-windows/scala-profiler').then(
-      (mod) => ({ default: mod.ScalaProfiler }),
-    ),
-  'general/tool-windows/sci-view': () =>
-    import('@/registry/icons/general/tool-windows/sci-view').then((mod) => ({
-      default: mod.SciView,
-    })),
-  'general/tool-windows/services': () =>
-    import('@/registry/icons/general/tool-windows/services').then((mod) => ({
-      default: mod.Services,
-    })),
-  'general/tool-windows/setting-sync': () =>
-    import('@/registry/icons/general/tool-windows/setting-sync').then(
-      (mod) => ({ default: mod.SettingSync }),
-    ),
-  'general/tool-windows/space-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/space-tool-window').then(
-      (mod) => ({ default: mod.SpaceToolWindow }),
-    ),
-  'general/tool-windows/spark': () =>
-    import('@/registry/icons/general/tool-windows/spark').then((mod) => ({
-      default: mod.Spark,
-    })),
-  'general/tool-windows/spring': () =>
-    import('@/registry/icons/general/tool-windows/spring').then((mod) => ({
-      default: mod.Spring,
-    })),
-  'general/tool-windows/statistics-event-log': () =>
-    import('@/registry/icons/general/tool-windows/statistics-event-log').then(
-      (mod) => ({ default: mod.StatisticsEventLog }),
-    ),
-  'general/tool-windows/structure': () =>
-    import('@/registry/icons/general/tool-windows/structure').then((mod) => ({
-      default: mod.Structure,
-    })),
-  'general/tool-windows/task': () =>
-    import('@/registry/icons/general/tool-windows/task').then((mod) => ({
-      default: mod.Task,
-    })),
-  'general/tool-windows/terminal': () =>
-    import('@/registry/icons/general/tool-windows/terminal').then((mod) => ({
-      default: mod.Terminal,
-    })),
-  'general/tool-windows/todo': () =>
-    import('@/registry/icons/general/tool-windows/todo').then((mod) => ({
-      default: mod.Todo,
-    })),
-  'general/tool-windows/tool-window-bazel': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-bazel').then(
-      (mod) => ({ default: mod.ToolWindowBazel }),
-    ),
-  'general/tool-windows/tool-window-bean-validator': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-bean-validator'
-    ).then((mod) => ({ default: mod.ToolWindowBeanValidator })),
-  'general/tool-windows/tool-window-big-data': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-big-data').then(
-      (mod) => ({ default: mod.ToolWindowBigData }),
-    ),
-  'general/tool-windows/tool-window-cadence': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-cadence').then(
-      (mod) => ({ default: mod.ToolWindowCadence }),
-    ),
-  'general/tool-windows/tool-window-cell-explorer': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-cell-explorer'
-    ).then((mod) => ({ default: mod.ToolWindowCellExplorer })),
-  'general/tool-windows/tool-window-check-details': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-check-details'
-    ).then((mod) => ({ default: mod.ToolWindowCheckDetails })),
-  'general/tool-windows/tool-window-clock': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-clock').then(
-      (mod) => ({ default: mod.ToolWindowClock }),
-    ),
-  'general/tool-windows/tool-window-dart': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-dart').then(
-      (mod) => ({ default: mod.ToolWindowDart }),
-    ),
-  'general/tool-windows/tool-window-data-view': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-data-view').then(
-      (mod) => ({ default: mod.ToolWindowDataView }),
-    ),
-  'general/tool-windows/tool-window-default': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-default').then(
-      (mod) => ({ default: mod.ToolWindowDefault }),
-    ),
-  'general/tool-windows/tool-window-django': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-django').then(
-      (mod) => ({ default: mod.ToolWindowDjango }),
-    ),
-  'general/tool-windows/tool-window-duplicates': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-duplicates').then(
-      (mod) => ({ default: mod.ToolWindowDuplicates }),
-    ),
-  'general/tool-windows/tool-window-edu-course-task': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-edu-course-task'
-    ).then((mod) => ({ default: mod.ToolWindowEduCourseTask })),
-  'general/tool-windows/tool-window-ejb': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-ejb').then(
-      (mod) => ({ default: mod.ToolWindowEJB }),
-    ),
-  'general/tool-windows/tool-window-hadoop': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-hadoop').then(
-      (mod) => ({ default: mod.ToolWindowHadoop }),
-    ),
-  'general/tool-windows/tool-window-hugging-face': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-hugging-face'
-    ).then((mod) => ({ default: mod.ToolWindowHuggingFace })),
-  'general/tool-windows/tool-window-jpab-structure': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-jpab-structure'
-    ).then((mod) => ({ default: mod.ToolWindowJPabStructure })),
-  'general/tool-windows/tool-window-json-path': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-json-path').then(
-      (mod) => ({ default: mod.ToolWindowJsonPath }),
-    ),
-  'general/tool-windows/tool-window-kotlin-notebooks': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-kotlin-notebooks'
-    ).then((mod) => ({ default: mod.ToolWindowKotlinNotebooks })),
-  'general/tool-windows/tool-window-kubernetes': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-kubernetes').then(
-      (mod) => ({ default: mod.ToolWindowKubernetes }),
-    ),
-  'general/tool-windows/tool-window-meson': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-meson').then(
-      (mod) => ({ default: mod.ToolWindowMeson }),
-    ),
-  'general/tool-windows/tool-window-model-checker': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-model-checker'
-    ).then((mod) => ({ default: mod.ToolWindowModelChecker })),
-  'general/tool-windows/tool-window-platform-io': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-platform-io'
-    ).then((mod) => ({ default: mod.ToolWindowPlatformIO })),
-  'general/tool-windows/tool-window-pub-serve': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-pub-serve').then(
-      (mod) => ({ default: mod.ToolWindowPubServe }),
-    ),
-  'general/tool-windows/tool-window-record-debug': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-record-debug'
-    ).then((mod) => ({ default: mod.ToolWindowRecordDebug })),
-  'general/tool-windows/tool-window-rgraph': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-rgraph').then(
-      (mod) => ({ default: mod.ToolWindowRGraph }),
-    ),
-  'general/tool-windows/tool-window-rhtml': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-rhtml').then(
-      (mod) => ({ default: mod.ToolWindowRHtml }),
-    ),
-  'general/tool-windows/tool-window-rpackages': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-rpackages').then(
-      (mod) => ({ default: mod.ToolWindowRPackages }),
-    ),
-  'general/tool-windows/tool-window-run-with-coverage': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-run-with-coverage'
-    ).then((mod) => ({ default: mod.ToolWindowRunWithCoverage })),
-  'general/tool-windows/tool-window-team-city': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-team-city').then(
-      (mod) => ({ default: mod.ToolWindowTeamCity }),
-    ),
-  'general/tool-windows/tool-window-test-spark': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-test-spark').then(
-      (mod) => ({ default: mod.ToolWindowTestSpark }),
-    ),
-  'general/tool-windows/tool-window-timer': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-timer').then(
-      (mod) => ({ default: mod.ToolWindowTimer }),
-    ),
-  'general/tool-windows/tool-window-type-trace-view': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-type-trace-view'
-    ).then((mod) => ({ default: mod.ToolWindowTypeTraceView })),
-  'general/tool-windows/tool-window-variable-view': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-variable-view'
-    ).then((mod) => ({ default: mod.ToolWindowVariableView })),
-  'general/tool-windows/tool-window-you-track': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-you-track').then(
-      (mod) => ({ default: mod.ToolWindowYouTrack }),
-    ),
-  'general/tool-windows/toolwindow-flink': () =>
-    import('@/registry/icons/general/tool-windows/toolwindow-flink').then(
-      (mod) => ({ default: mod.ToolwindowFlink }),
-    ),
-  'general/tool-windows/transfer': () =>
-    import('@/registry/icons/general/tool-windows/transfer').then((mod) => ({
-      default: mod.Transfer,
-    })),
-  'general/tool-windows/transfer-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/transfer-tool-window').then(
-      (mod) => ({ default: mod.TransferToolWindow }),
-    ),
-  'general/tool-windows/unknown': () =>
-    import('@/registry/icons/general/tool-windows/unknown').then((mod) => ({
-      default: mod.Unknown,
-    })),
-  'general/tool-windows/vcs': () =>
-    import('@/registry/icons/general/tool-windows/vcs').then((mod) => ({
-      default: mod.Vcs,
-    })),
-  'general/tool-windows/web': () =>
-    import('@/registry/icons/general/tool-windows/web').then((mod) => ({
-      default: mod.Web,
-    })),
-  'general/tool-windows/web-inspector': () =>
-    import('@/registry/icons/general/tool-windows/web-inspector').then(
-      (mod) => ({ default: mod.WebInspector }),
-    ),
-  'general/tool-windows/web-server': () =>
-    import('@/registry/icons/general/tool-windows/web-server').then((mod) => ({
-      default: mod.WebServer,
-    })),
-  'general/tool-windows/west-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/west-tool-window').then(
-      (mod) => ({ default: mod.WestToolWindow }),
-    ),
-  'general/tool-windows/writerside': () =>
-    import('@/registry/icons/general/tool-windows/writerside').then((mod) => ({
-      default: mod.Writerside,
-    })),
-  'general/tool-windows/writerside-preview': () =>
-    import('@/registry/icons/general/tool-windows/writerside-preview').then(
-      (mod) => ({ default: mod.WritersidePreview }),
-    ),
-  'general/usages/filterdups': () =>
-    import('@/registry/icons/general/usages/filterdups').then((mod) => ({
-      default: mod.Filterdups,
-    })),
-  'general/usages/show-import-statements': () =>
-    import('@/registry/icons/general/usages/show-import-statements').then(
-      (mod) => ({ default: mod.ShowImportStatements }),
-    ),
-  'general/usages/show-read-access': () =>
-    import('@/registry/icons/general/usages/show-read-access').then((mod) => ({
-      default: mod.ShowReadAccess,
-    })),
-  'general/usages/show-write-access': () =>
-    import('@/registry/icons/general/usages/show-write-access').then((mod) => ({
-      default: mod.ShowWriteAccess,
-    })),
-  'general/windows/close': () =>
-    import('@/registry/icons/general/windows/close').then((mod) => ({
-      default: mod.Close,
-    })),
-  'general/windows/close-hover': () =>
-    import('@/registry/icons/general/windows/close-hover').then((mod) => ({
-      default: mod.CloseHover,
-    })),
-  'general/windows/close-inactive': () =>
-    import('@/registry/icons/general/windows/close-inactive').then((mod) => ({
-      default: mod.CloseInactive,
-    })),
-  'general/windows/close-small': () =>
-    import('@/registry/icons/general/windows/close-small').then((mod) => ({
-      default: mod.CloseSmall,
-    })),
-  'general/windows/collapse': () =>
-    import('@/registry/icons/general/windows/collapse').then((mod) => ({
-      default: mod.Collapse,
-    })),
-  'general/windows/help': () =>
-    import('@/registry/icons/general/windows/help').then((mod) => ({
-      default: mod.Help,
-    })),
-  'general/windows/help-inactive': () =>
-    import('@/registry/icons/general/windows/help-inactive').then((mod) => ({
-      default: mod.HelpInactive,
-    })),
-  'general/windows/maximize': () =>
-    import('@/registry/icons/general/windows/maximize').then((mod) => ({
-      default: mod.Maximize,
-    })),
-  'general/windows/maximize-inactive': () =>
-    import('@/registry/icons/general/windows/maximize-inactive').then(
-      (mod) => ({ default: mod.MaximizeInactive }),
-    ),
-  'general/windows/maximize-small': () =>
-    import('@/registry/icons/general/windows/maximize-small').then((mod) => ({
-      default: mod.MaximizeSmall,
-    })),
-  'general/windows/minimize': () =>
-    import('@/registry/icons/general/windows/minimize').then((mod) => ({
-      default: mod.Minimize,
-    })),
-  'general/windows/minimize-inactive': () =>
-    import('@/registry/icons/general/windows/minimize-inactive').then(
-      (mod) => ({ default: mod.MinimizeInactive }),
-    ),
-  'general/windows/minimize-small': () =>
-    import('@/registry/icons/general/windows/minimize-small').then((mod) => ({
-      default: mod.MinimizeSmall,
-    })),
-  'general/windows/restore': () =>
-    import('@/registry/icons/general/windows/restore').then((mod) => ({
-      default: mod.Restore,
-    })),
-  'general/windows/restore-inactive': () =>
-    import('@/registry/icons/general/windows/restore-inactive').then((mod) => ({
-      default: mod.RestoreInactive,
-    })),
-  'general/windows/restore-small': () =>
-    import('@/registry/icons/general/windows/restore-small').then((mod) => ({
-      default: mod.RestoreSmall,
-    })),
-  generated: () =>
-    import('@/registry/icons/nodes/generated').then((mod) => ({
-      default: mod.Generated,
-    })),
-  'generated-source': () =>
-    import('@/registry/icons/nodes/generated-source').then((mod) => ({
-      default: mod.GeneratedSource,
-    })),
-  'generated-test-root': () =>
-    import('@/registry/icons/nodes/generated-test-root').then((mod) => ({
-      default: mod.GeneratedTestRoot,
-    })),
-  'generic-ui': () =>
-    import('@/registry/icons/plugins/jpa/generic-ui').then((mod) => ({
-      default: mod.GenericUI,
-    })),
-  'getter-in-xml': () =>
-    import('@/registry/icons/plugins/java-ee/getter-in-xml').then((mod) => ({
-      default: mod.GetterInXml,
-    })),
-  gift: () =>
-    import('@/registry/icons/general/actions/gift').then((mod) => ({
-      default: mod.Gift,
-    })),
-  'git-lab-logo': () =>
-    import('@/registry/icons/plugins/gitlab/git-lab-logo').then((mod) => ({
-      default: mod.GitLabLogo,
-    })),
-  'git-lab-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/git-lab-tool-window').then(
-      (mod) => ({ default: mod.GitLabToolWindow }),
-    ),
-  'git-lab-warning': () =>
-    import('@/registry/icons/plugins/gitlab/git-lab-warning').then((mod) => ({
-      default: mod.GitLabWarning,
-    })),
-  github: () =>
-    import('@/registry/icons/plugins/github/github').then((mod) => ({
-      default: mod.Github,
-    })),
-  'github-warning': () =>
-    import('@/registry/icons/plugins/github/github-warning').then((mod) => ({
-      default: mod.GithubWarning,
-    })),
-  'go-to-table': () =>
-    import('@/registry/icons/database/go-to-table').then((mod) => ({
-      default: mod.GoToTable,
-    })),
-  'google-cloud-dataproc': () =>
-    import('@/registry/icons/database/google-cloud-dataproc').then((mod) => ({
-      default: mod.GoogleCloudDataproc,
-    })),
-  'google-cloud-spanner': () =>
-    import('@/registry/icons/database/google-cloud-spanner').then((mod) => ({
-      default: mod.GoogleCloudSpanner,
-    })),
-  'google-test': () =>
-    import('@/registry/icons/plugins/cidr/google-test').then((mod) => ({
-      default: mod.GoogleTest,
-    })),
-  'gradle-load-changes': () =>
-    import('@/registry/icons/build/gradle-load-changes').then((mod) => ({
-      default: mod.GradleLoadChanges,
-    })),
-  'gradle-navigate': () =>
-    import('@/registry/icons/build/gradle-navigate').then((mod) => ({
-      default: mod.GradleNavigate,
-    })),
-  'gradle-subproject': () =>
-    import('@/registry/icons/build/gradle-subproject').then((mod) => ({
-      default: mod.GradleSubproject,
-    })),
-  'graph-layout': () =>
-    import('@/registry/icons/general/general/graph-layout').then((mod) => ({
-      default: mod.GraphLayout,
-    })),
-  'graph-ql': () =>
-    import('@/registry/icons/plugins/graphql/graph-ql').then((mod) => ({
-      default: mod.GraphQL,
-    })),
-  'graph-qlcongif': () =>
-    import('@/registry/icons/plugins/graphql/graph-qlcongif').then((mod) => ({
-      default: mod.GraphQLCongif,
-    })),
-  'graph-qlschema': () =>
-    import('@/registry/icons/plugins/graphql/graph-qlschema').then((mod) => ({
-      default: mod.GraphQLSchema,
-    })),
-  'graph-qltool-window': () =>
-    import('@/registry/icons/general/tool-windows/graph-qltool-window').then(
-      (mod) => ({ default: mod.GraphQLToolWindow }),
-    ),
-  greenplum: () =>
-    import('@/registry/icons/database/greenplum').then((mod) => ({
-      default: mod.Greenplum,
-    })),
-  'grey-key': () =>
-    import('@/registry/icons/database/grey-key').then((mod) => ({
-      default: mod.GreyKey,
-    })),
-  grid: () =>
-    import('@/registry/icons/editor-icons/grid').then((mod) => ({
-      default: mod.Grid,
-    })),
-  groovy: () =>
-    import('@/registry/icons/plugins/java-ee/groovy').then((mod) => ({
-      default: mod.Groovy,
-    })),
-  'group-by-class': () =>
-    import('@/registry/icons/general/actions/group-by-class').then((mod) => ({
-      default: mod.GroupByClass,
-    })),
-  'group-by-file': () =>
-    import('@/registry/icons/general/actions/group-by-file').then((mod) => ({
-      default: mod.GroupByFile,
-    })),
-  'group-by-method': () =>
-    import('@/registry/icons/general/actions/group-by-method').then((mod) => ({
-      default: mod.GroupByMethod,
-    })),
-  'group-by-module': () =>
-    import('@/registry/icons/general/actions/group-by-module').then((mod) => ({
-      default: mod.GroupByModule,
-    })),
-  'group-by-package': () =>
-    import('@/registry/icons/general/actions/group-by-package').then((mod) => ({
-      default: mod.GroupByPackage,
-    })),
-  'group-by-test-production': () =>
-    import('@/registry/icons/general/actions/group-by-test-production').then(
-      (mod) => ({ default: mod.GroupByTestProduction }),
-    ),
-  'group-qualified-name': () =>
-    import('@/registry/icons/plugins/cidr/group-qualified-name').then(
-      (mod) => ({ default: mod.GroupQualifiedName }),
-    ),
-  groups: () =>
-    import('@/registry/icons/general/general/groups').then((mod) => ({
-      default: mod.Groups,
-    })),
-  gvariable: () =>
-    import('@/registry/icons/nodes/gvariable').then((mod) => ({
-      default: mod.Gvariable,
-    })),
-  h: () =>
-    import('@/registry/icons/plugins/cidr/h').then((mod) => ({
-      default: mod.H,
-    })),
-  h2: () =>
-    import('@/registry/icons/database/h2').then((mod) => ({ default: mod.H2 })),
-  haml: () =>
-    import('@/registry/icons/plugins/ruby/haml').then((mod) => ({
-      default: mod.Haml,
-    })),
-  hana: () =>
-    import('@/registry/icons/database/hana').then((mod) => ({
-      default: mod.Hana,
-    })),
-  'hash-cluster': () =>
-    import('@/registry/icons/database/hash-cluster').then((mod) => ({
-      default: mod.HashCluster,
-    })),
-  'hash-key': () =>
-    import('@/registry/icons/plugins/ruby/hash-key').then((mod) => ({
-      default: mod.HashKey,
-    })),
-  'hash-table': () =>
-    import('@/registry/icons/database/hash-table').then((mod) => ({
-      default: mod.HashTable,
-    })),
-  'hash-table-key': () =>
-    import('@/registry/icons/database/hash-table-key').then((mod) => ({
-      default: mod.HashTableKey,
-    })),
-  haskell: () =>
-    import('@/registry/icons/file-types/haskell').then((mod) => ({
-      default: mod.Haskell,
-    })),
-  'header-level-down': () =>
-    import('@/registry/icons/general/editor/header-level-down').then((mod) => ({
-      default: mod.HeaderLevelDown,
-    })),
-  'header-level-up': () =>
-    import('@/registry/icons/general/editor/header-level-up').then((mod) => ({
-      default: mod.HeaderLevelUp,
-    })),
-  helm: () =>
-    import('@/registry/icons/plugins/kubernetes/helm').then((mod) => ({
-      default: mod.Helm,
-    })),
-  'helm-archive': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-archive').then((mod) => ({
-      default: mod.HelmArchive,
-    })),
-  'helm-chart': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-chart').then((mod) => ({
-      default: mod.HelmChart,
-    })),
-  'helm-chart-lock': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-chart-lock').then(
-      (mod) => ({ default: mod.HelmChartLock }),
-    ),
-  'helm-directory': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-directory').then(
-      (mod) => ({ default: mod.HelmDirectory }),
-    ),
-  'helm-notes': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-notes').then((mod) => ({
-      default: mod.HelmNotes,
-    })),
-  'helm-requirments': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-requirments').then(
-      (mod) => ({ default: mod.HelmRequirments }),
-    ),
-  'helm-requirments-lock': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-requirments-lock').then(
-      (mod) => ({ default: mod.HelmRequirmentsLock }),
-    ),
-  'helm-undeployable': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-undeployable').then(
-      (mod) => ({ default: mod.HelmUndeployable }),
-    ),
-  'helmvalues-schema': () =>
-    import('@/registry/icons/plugins/kubernetes/helmvalues-schema').then(
-      (mod) => ({ default: mod.HelmvaluesSchema }),
-    ),
-  'help-inactive': () =>
-    import('@/registry/icons/general/windows/help-inactive').then((mod) => ({
-      default: mod.HelpInactive,
-    })),
-  'helpers-folder-closed': () =>
-    import('@/registry/icons/plugins/ruby/helpers-folder-closed').then(
-      (mod) => ({ default: mod.HelpersFolderClosed }),
-    ),
-  hibernate: () =>
-    import('@/registry/icons/plugins/java-ee/hibernate').then((mod) => ({
-      default: mod.Hibernate,
-    })),
-  'hibernate-event': () =>
-    import('@/registry/icons/plugins/jpa/hibernate-event').then((mod) => ({
-      default: mod.HibernateEvent,
-    })),
-  hide: () =>
-    import('@/registry/icons/general/general/hide').then((mod) => ({
-      default: mod.Hide,
-    })),
-  hierarchy: () =>
-    import('@/registry/icons/general/tool-windows/hierarchy').then((mod) => ({
-      default: mod.Hierarchy,
-    })),
-  'high-all': () =>
-    import('@/registry/icons/plugins/package-checker/high-all').then((mod) => ({
-      default: mod.HighAll,
-    })),
-  'high-all-tree': () =>
-    import('@/registry/icons/plugins/package-checker/high-all-tree').then(
-      (mod) => ({ default: mod.HighAllTree }),
-    ),
-  'high-all-tree-outline': () =>
-    import(
-      '@/registry/icons/plugins/package-checker/high-all-tree-outline'
-    ).then((mod) => ({ default: mod.HighAllTreeOutline })),
-  history: () =>
-    import('@/registry/icons/general/general/history').then((mod) => ({
-      default: mod.History,
-    })),
-  'hive-file-type': () =>
-    import('@/registry/icons/database/hive-file-type').then((mod) => ({
-      default: mod.HiveFileType,
-    })),
-  home: () =>
-    import('@/registry/icons/plugins/java-ee/home').then((mod) => ({
-      default: mod.Home,
-    })),
-  'home-folder': () =>
-    import('@/registry/icons/nodes/home-folder').then((mod) => ({
-      default: mod.HomeFolder,
-    })),
-  hook: () =>
-    import('@/registry/icons/file-types/hook').then((mod) => ({
-      default: mod.Hook,
-    })),
-  'horizontal-pod-autoscaler': () =>
-    import(
-      '@/registry/icons/plugins/kubernetes/horizontal-pod-autoscaler'
-    ).then((mod) => ({ default: mod.HorizontalPodAutoscaler })),
-  hsqldb: () =>
-    import('@/registry/icons/database/hsqldb').then((mod) => ({
-      default: mod.Hsqldb,
-    })),
-  html: () =>
-    import('@/registry/icons/file-types/html').then((mod) => ({
-      default: mod.Html,
-    })),
-  http_request: () =>
-    import('@/registry/icons/plugins/rest/http_request').then((mod) => ({
-      default: mod.Http_request,
-    })),
-  'http-header': () =>
-    import('@/registry/icons/file-types/http-header').then((mod) => ({
-      default: mod.HttpHeader,
-    })),
-  'http-requests-run-configuration': () =>
-    import('@/registry/icons/file-types/http-requests-run-configuration').then(
-      (mod) => ({ default: mod.HttpRequestsRunConfiguration }),
-    ),
-  'i-phone-device': () =>
-    import('@/registry/icons/plugins/cidr/i-phone-device').then((mod) => ({
-      default: mod.IPhoneDevice,
-    })),
-  i18n: () =>
-    import('@/registry/icons/file-types/i18n').then((mod) => ({
-      default: mod.I18n,
-    })),
-  ibm: () =>
-    import('@/registry/icons/database/ibm').then((mod) => ({
-      default: mod.Ibm,
-    })),
-  'ide-update': () =>
-    import('@/registry/icons/general/general/ide-update').then((mod) => ({
-      default: mod.IdeUpdate,
-    })),
-  'idea-module': () =>
-    import('@/registry/icons/file-types/idea-module').then((mod) => ({
-      default: mod.IdeaModule,
-    })),
-  'idea-project': () =>
-    import('@/registry/icons/nodes/idea-project').then((mod) => ({
-      default: mod.IdeaProject,
-    })),
-  idl: () =>
-    import('@/registry/icons/file-types/idl').then((mod) => ({
-      default: mod.Idl,
-    })),
-  ignored: () =>
-    import('@/registry/icons/file-types/ignored').then((mod) => ({
-      default: mod.Ignored,
-    })),
-  'ignored-test': () =>
-    import('@/registry/icons/run-configurations/ignored-test').then((mod) => ({
-      default: mod.IgnoredTest,
-    })),
-  image: () =>
-    import('@/registry/icons/file-types/image').then((mod) => ({
-      default: mod.Image,
-    })),
-  impala: () =>
-    import('@/registry/icons/database/impala').then((mod) => ({
-      default: mod.Impala,
-    })),
-  'implemented-method': () =>
-    import('@/registry/icons/editor-icons/implemented-method').then((mod) => ({
-      default: mod.ImplementedMethod,
-    })),
-  'implementing-functional-interface': () =>
-    import(
-      '@/registry/icons/editor-icons/implementing-functional-interface'
-    ).then((mod) => ({ default: mod.ImplementingFunctionalInterface })),
-  'implementing-method': () =>
-    import('@/registry/icons/editor-icons/implementing-method').then((mod) => ({
-      default: mod.ImplementingMethod,
-    })),
-  'implicit-bean': () =>
-    import('@/registry/icons/plugins/spring/implicit-bean').then((mod) => ({
-      default: mod.ImplicitBean,
-    })),
-  import: () =>
-    import('@/registry/icons/general/general/import').then((mod) => ({
-      default: mod.Import,
-    })),
-  'in-selection': () =>
-    import('@/registry/icons/general/actions/in-selection').then((mod) => ({
-      default: mod.InSelection,
-    })),
-  'inaly-qarkus': () =>
-    import('@/registry/icons/editor-icons/inaly-qarkus').then((mod) => ({
-      default: mod.InalyQarkus,
-    })),
-  'incoming-update': () =>
-    import('@/registry/icons/vcs/incoming-update').then((mod) => ({
-      default: mod.IncomingUpdate,
-    })),
-  'incomplete-closed': () =>
-    import('@/registry/icons/plugins/ruby/incomplete-closed').then((mod) => ({
-      default: mod.IncompleteClosed,
-    })),
-  'index-cluster': () =>
-    import('@/registry/icons/database/index-cluster').then((mod) => ({
-      default: mod.IndexCluster,
-    })),
-  'index-fun': () =>
-    import('@/registry/icons/database/index-fun').then((mod) => ({
-      default: mod.IndexFun,
-    })),
-  'index-fun-unique': () =>
-    import('@/registry/icons/database/index-fun-unique').then((mod) => ({
-      default: mod.IndexFunUnique,
-    })),
-  'index-icon': () =>
-    import('@/registry/icons/database/index-icon').then((mod) => ({
-      default: mod.Index,
-    })),
-  'index-unique': () =>
-    import('@/registry/icons/database/index-unique').then((mod) => ({
-      default: mod.IndexUnique,
-    })),
-  info: () =>
-    import('@/registry/icons/general/status/info').then((mod) => ({
-      default: mod.Info,
-    })),
-  'info-outline': () =>
-    import('@/registry/icons/general/status/info-outline').then((mod) => ({
-      default: mod.InfoOutline,
-    })),
-  'information-dialog': () =>
-    import('@/registry/icons/general/status/information-dialog').then(
-      (mod) => ({ default: mod.InformationDialog }),
-    ),
-  informix: () =>
-    import('@/registry/icons/database/informix').then((mod) => ({
-      default: mod.Informix,
-    })),
-  'infrastructure-bean': () =>
-    import('@/registry/icons/plugins/spring/infrastructure-bean').then(
-      (mod) => ({ default: mod.InfrastructureBean }),
-    ),
-  ingress: () =>
-    import('@/registry/icons/plugins/kubernetes/ingress').then((mod) => ({
-      default: mod.Ingress,
-    })),
-  'inherited-attribute-overlay': () =>
-    import('@/registry/icons/plugins/java-ee/inherited-attribute-overlay').then(
-      (mod) => ({ default: mod.InheritedAttributeOverlay }),
-    ),
-  'init-liquibase-changelog': () =>
-    import('@/registry/icons/plugins/jpa/init-liquibase-changelog').then(
-      (mod) => ({ default: mod.InitLiquibaseChangelog }),
-    ),
-  'init-scripts': () =>
-    import('@/registry/icons/plugins/jpa/init-scripts').then((mod) => ({
-      default: mod.InitScripts,
-    })),
-  'inlay-globe': () =>
-    import('@/registry/icons/editor-icons/inlay-globe').then((mod) => ({
-      default: mod.InlayGlobe,
-    })),
-  'inlay-micronaut': () =>
-    import('@/registry/icons/editor-icons/inlay-micronaut').then((mod) => ({
-      default: mod.InlayMicronaut,
-    })),
-  'inlay-rename-in-comments': () =>
-    import('@/registry/icons/editor-icons/inlay-rename-in-comments').then(
-      (mod) => ({ default: mod.InlayRenameInComments }),
-    ),
-  'inlay-rename-in-comments-active': () =>
-    import(
-      '@/registry/icons/editor-icons/inlay-rename-in-comments-active'
-    ).then((mod) => ({ default: mod.InlayRenameInCommentsActive })),
-  'inlay-rename-in-no-code-files': () =>
-    import('@/registry/icons/editor-icons/inlay-rename-in-no-code-files').then(
-      (mod) => ({ default: mod.InlayRenameInNoCodeFiles }),
-    ),
-  'inlay-rename-in-no-code-files-active': () =>
-    import(
-      '@/registry/icons/editor-icons/inlay-rename-in-no-code-files-active'
-    ).then((mod) => ({ default: mod.InlayRenameInNoCodeFilesActive })),
-  'inlay-secured-shield': () =>
-    import('@/registry/icons/editor-icons/inlay-secured-shield').then(
-      (mod) => ({ default: mod.InlaySecuredShield }),
-    ),
-  'inlay-settings': () =>
-    import('@/registry/icons/editor-icons/inlay-settings').then((mod) => ({
-      default: mod.InlaySettings,
-    })),
-  'inlay-spring': () =>
-    import('@/registry/icons/editor-icons/inlay-spring').then((mod) => ({
-      default: mod.InlaySpring,
-    })),
-  'inlay-web-inspector': () =>
-    import('@/registry/icons/editor-icons/inlay-web-inspector').then((mod) => ({
-      default: mod.InlayWebInspector,
-    })),
-  'inline-add': () =>
-    import('@/registry/icons/general/inline/inline-add').then((mod) => ({
-      default: mod.InlineAdd,
-    })),
-  'inline-edit': () =>
-    import('@/registry/icons/general/inline/inline-edit').then((mod) => ({
-      default: mod.InlineEdit,
-    })),
-  'inline-settings': () =>
-    import('@/registry/icons/general/inline/inline-settings').then((mod) => ({
-      default: mod.InlineSettings,
-    })),
-  'inner-class': () =>
-    import('@/registry/icons/plugins/uml/inner-class').then((mod) => ({
-      default: mod.InnerClass,
-    })),
-  'insight-navigate': () =>
-    import('@/registry/icons/plugins/jpa/insight-navigate').then((mod) => ({
-      default: mod.InsightNavigate,
-    })),
-  'inspections-eye': () =>
-    import('@/registry/icons/editor-icons/inspections-eye').then((mod) => ({
-      default: mod.InspectionsEye,
-    })),
-  'inspections-mixed': () =>
-    import('@/registry/icons/editor-icons/inspections-mixed').then((mod) => ({
-      default: mod.InspectionsMixed,
-    })),
-  'inspections-ok': () =>
-    import('@/registry/icons/editor-icons/inspections-ok').then((mod) => ({
-      default: mod.InspectionsOK,
-    })),
-  'inspections-okempty': () =>
-    import('@/registry/icons/editor-icons/inspections-okempty').then((mod) => ({
-      default: mod.InspectionsOKEmpty,
-    })),
-  'inspections-pause': () =>
-    import('@/registry/icons/editor-icons/inspections-pause').then((mod) => ({
-      default: mod.InspectionsPause,
-    })),
-  'inspections-power-save-mode': () =>
-    import('@/registry/icons/editor-icons/inspections-power-save-mode').then(
-      (mod) => ({ default: mod.InspectionsPowerSaveMode }),
-    ),
-  'inspections-traffic-off': () =>
-    import('@/registry/icons/editor-icons/inspections-traffic-off').then(
-      (mod) => ({ default: mod.InspectionsTrafficOff }),
-    ),
-  'inspections-typos': () =>
-    import('@/registry/icons/editor-icons/inspections-typos').then((mod) => ({
-      default: mod.InspectionsTypos,
-    })),
-  install: () =>
-    import('@/registry/icons/plugins/cidr/install').then((mod) => ({
-      default: mod.Install,
-    })),
-  'inteceptor-method': () =>
-    import('@/registry/icons/plugins/java-ee/inteceptor-method').then(
-      (mod) => ({ default: mod.InteceptorMethod }),
-    ),
-  integration: () =>
-    import('@/registry/icons/plugins/spring/integration').then((mod) => ({
-      default: mod.Integration,
-    })),
-  'intelli-sort': () =>
-    import('@/registry/icons/vcs/intelli-sort').then((mod) => ({
-      default: mod.IntelliSort,
-    })),
-  'intention-bulb': () =>
-    import('@/registry/icons/editor-icons/intention-bulb').then((mod) => ({
-      default: mod.IntentionBulb,
-    })),
-  'intention-bulb-grey': () =>
-    import('@/registry/icons/editor-icons/intention-bulb-grey').then((mod) => ({
-      default: mod.IntentionBulbGrey,
-    })),
-  'interceptor-class': () =>
-    import('@/registry/icons/plugins/java-ee/interceptor-class').then(
-      (mod) => ({ default: mod.InterceptorClass }),
-    ),
-  interceptors: () =>
-    import('@/registry/icons/plugins/java-ee/interceptors').then((mod) => ({
-      default: mod.Interceptors,
-    })),
-  'interface-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/interface-kotlin').then((mod) => ({
-      default: mod.InterfaceKotlin,
-    })),
-  'intersystem-cache': () =>
-    import('@/registry/icons/database/intersystem-cache').then((mod) => ({
-      default: mod.IntersystemCache,
-    })),
-  'invalid-configuration-layer': () =>
-    import(
-      '@/registry/icons/run-configurations/invalid-configuration-layer'
-    ).then((mod) => ({ default: mod.InvalidConfigurationLayer })),
-  'iocfile-type': () =>
-    import('@/registry/icons/plugins/cidr/iocfile-type').then((mod) => ({
-      default: mod.IOCFileType,
-    })),
-  italic: () =>
-    import('@/registry/icons/general/editor/italic').then((mod) => ({
-      default: mod.Italic,
-    })),
-  'jakarta-ee': () =>
-    import('@/registry/icons/plugins/java-ee/jakarta-ee').then((mod) => ({
-      default: mod.JakartaEE,
-    })),
-  java: () =>
-    import('@/registry/icons/file-types/java').then((mod) => ({
-      default: mod.Java,
-    })),
-  'java-class': () =>
-    import('@/registry/icons/file-types/java-class').then((mod) => ({
-      default: mod.JavaClass,
-    })),
-  'java-eeartifact': () =>
-    import('@/registry/icons/plugins/java-ee/java-eeartifact').then((mod) => ({
-      default: mod.JavaEEArtifact,
-    })),
-  'java-eetool-window': () =>
-    import('@/registry/icons/general/tool-windows/java-eetool-window').then(
-      (mod) => ({ default: mod.JavaEEToolWindow }),
-    ),
-  'java-module-root': () =>
-    import('@/registry/icons/plugins/jpa/java-module-root').then((mod) => ({
-      default: mod.JavaModuleRoot,
-    })),
-  'java-scratch': () =>
-    import('@/registry/icons/run-configurations/java-scratch').then((mod) => ({
-      default: mod.JavaScratch,
-    })),
-  'java-script': () =>
-    import('@/registry/icons/file-types/java-script').then((mod) => ({
-      default: mod.JavaScript,
-    })),
-  'java-script-debug-configuration': () =>
-    import(
-      '@/registry/icons/run-configurations/java-script-debug-configuration'
-    ).then((mod) => ({ default: mod.JavaScriptDebugConfiguration })),
-  'java-script-remote': () =>
-    import('@/registry/icons/run-configurations/java-script-remote').then(
-      (mod) => ({ default: mod.JavaScriptRemote }),
-    ),
-  'javadoc-edit': () =>
-    import('@/registry/icons/editor-icons/javadoc-edit').then((mod) => ({
-      default: mod.JavadocEdit,
-    })),
-  'javadoc-read': () =>
-    import('@/registry/icons/editor-icons/javadoc-read').then((mod) => ({
-      default: mod.JavadocRead,
-    })),
-  'javaee-app-module': () =>
-    import('@/registry/icons/plugins/java-ee/javaee-app-module').then(
-      (mod) => ({ default: mod.JavaeeAppModule }),
-    ),
-  jdk: () =>
-    import('@/registry/icons/nodes/jdk').then((mod) => ({ default: mod.Jdk })),
-  jest: () =>
-    import('@/registry/icons/file-types/jest').then((mod) => ({
-      default: mod.Jest,
-    })),
-  jfr: () =>
-    import('@/registry/icons/file-types/jfr').then((mod) => ({
-      default: mod.Jfr,
-    })),
-  jinja2: () =>
-    import('@/registry/icons/file-types/jinja2').then((mod) => ({
-      default: mod.Jinja2,
-    })),
-  jobs: () =>
-    import('@/registry/icons/plugins/kubernetes/jobs').then((mod) => ({
-      default: mod.Jobs,
-    })),
-  jpa: () =>
-    import('@/registry/icons/plugins/spring/jpa').then((mod) => ({
-      default: mod.Jpa,
-    })),
-  'jpa-console-tool-window': () =>
-    import(
-      '@/registry/icons/general/tool-windows/jpa-console-tool-window'
-    ).then((mod) => ({ default: mod.JpaConsoleToolWindow })),
-  'jpa-facet': () =>
-    import('@/registry/icons/plugins/java-ee/jpa-facet').then((mod) => ({
-      default: mod.JpaFacet,
-    })),
-  'jpa-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/jpa-tool-window').then(
-      (mod) => ({ default: mod.JpaToolWindow }),
-    ),
-  'jrails-module-closed': () =>
-    import('@/registry/icons/plugins/ruby/jrails-module-closed').then(
-      (mod) => ({ default: mod.JrailsModuleClosed }),
-    ),
-  jruby: () =>
-    import('@/registry/icons/plugins/ruby/jruby').then((mod) => ({
-      default: mod.Jruby,
-    })),
-  'jruby-run-configuration': () =>
-    import('@/registry/icons/plugins/ruby/jruby-run-configuration').then(
-      (mod) => ({ default: mod.JrubyRunConfiguration }),
-    ),
-  'jruby-sdk-closed': () =>
-    import('@/registry/icons/plugins/ruby/jruby-sdk-closed').then((mod) => ({
-      default: mod.JrubySdkClosed,
-    })),
-  js: () =>
-    import('@/registry/icons/plugins/kotlin/js').then((mod) => ({
-      default: mod.Js,
-    })),
-  'js-config': () =>
-    import('@/registry/icons/file-types/js-config').then((mod) => ({
-      default: mod.JsConfig,
-    })),
-  'js-doc-closure': () =>
-    import('@/registry/icons/file-types/js-doc-closure').then((mod) => ({
-      default: mod.JsDocClosure,
-    })),
-  json: () =>
-    import('@/registry/icons/file-types/json').then((mod) => ({
-      default: mod.Json,
-    })),
-  'json-document': () =>
-    import('@/registry/icons/database/json-document').then((mod) => ({
-      default: mod.JsonDocument,
-    })),
-  'json-document-key': () =>
-    import('@/registry/icons/database/json-document-key').then((mod) => ({
-      default: mod.JsonDocumentKey,
-    })),
-  'json-schema': () =>
-    import('@/registry/icons/file-types/json-schema').then((mod) => ({
-      default: mod.JsonSchema,
-    })),
-  jsp: () =>
-    import('@/registry/icons/file-types/jsp').then((mod) => ({
-      default: mod.Jsp,
-    })),
-  jspx: () =>
-    import('@/registry/icons/file-types/jspx').then((mod) => ({
-      default: mod.Jspx,
-    })),
-  junit: () =>
-    import('@/registry/icons/run-configurations/junit').then((mod) => ({
-      default: mod.Junit,
-    })),
-  'jupyter-notebook': () =>
-    import('@/registry/icons/file-types/jupyter-notebook').then((mod) => ({
-      default: mod.JupyterNotebook,
-    })),
-  'jupyter-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/jupyter-tool-window').then(
-      (mod) => ({ default: mod.JupyterToolWindow }),
-    ),
-  jvm: () =>
-    import('@/registry/icons/plugins/kotlin/jvm').then((mod) => ({
-      default: mod.Jvm,
-    })),
-  kafka: () =>
-    import('@/registry/icons/general/tool-windows/kafka').then((mod) => ({
-      default: mod.Kafka,
-    })),
-  keyboard: () =>
-    import('@/registry/icons/general/general/keyboard').then((mod) => ({
-      default: mod.Keyboard,
-    })),
-  'kill-data-source-process': () =>
-    import('@/registry/icons/database/kill-data-source-process').then(
-      (mod) => ({ default: mod.KillDataSourceProcess }),
-    ),
-  'kill-process': () =>
-    import('@/registry/icons/run/kill-process').then((mod) => ({
-      default: mod.KillProcess,
-    })),
-  kotlin_activity: () =>
-    import('@/registry/icons/plugins/kotlin/kotlin_activity').then((mod) => ({
-      default: mod.Kotlin_activity,
-    })),
-  'kotlin-gradle-script': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-gradle-script').then(
-      (mod) => ({ default: mod.KotlinGradleScript }),
-    ),
-  'kotlin-js': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-js').then((mod) => ({
-      default: mod.KotlinJs,
-    })),
-  'kotlin-modifier': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-modifier').then((mod) => ({
-      default: mod.KotlinModifier,
-    })),
-  'kotlin-notebooks': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-notebooks').then((mod) => ({
-      default: mod.KotlinNotebooks,
-    })),
-  'kotlin-notebooks-grey': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-notebooks-grey').then(
-      (mod) => ({ default: mod.KotlinNotebooksGrey }),
-    ),
-  'kotlin-notebooks-promo': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-notebooks-promo').then(
-      (mod) => ({ default: mod.KotlinNotebooksPromo }),
-    ),
-  'kotlin-script': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-script').then((mod) => ({
-      default: mod.KotlinScript,
-    })),
-  'kotlin-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/kotlin-tool-window').then(
-      (mod) => ({ default: mod.KotlinToolWindow }),
-    ),
-  'kubernetes-j': () =>
-    import('@/registry/icons/plugins/kubernetes/kubernetes-j').then((mod) => ({
-      default: mod.KubernetesJ,
-    })),
-  'kubernetes-y': () =>
-    import('@/registry/icons/plugins/kubernetes/kubernetes-y').then((mod) => ({
-      default: mod.KubernetesY,
-    })),
-  kustomize: () =>
-    import('@/registry/icons/plugins/kubernetes/kustomize').then((mod) => ({
-      default: mod.Kustomize,
-    })),
-  layout: () =>
-    import('@/registry/icons/general/general/layout').then((mod) => ({
-      default: mod.Layout,
-    })),
-  ld: () =>
-    import('@/registry/icons/plugins/cidr/ld').then((mod) => ({
-      default: mod.Ld,
-    })),
-  learn: () =>
-    import('@/registry/icons/general/tool-windows/learn').then((mod) => ({
-      default: mod.Learn,
-    })),
-  left: () =>
-    import('@/registry/icons/general/general/left').then((mod) => ({
-      default: mod.Left,
-    })),
-  'left-align': () =>
-    import('@/registry/icons/general/editor/left-align').then((mod) => ({
-      default: mod.LeftAlign,
-    })),
-  less: () =>
-    import('@/registry/icons/file-types/less').then((mod) => ({
-      default: mod.Less,
-    })),
-  'level-auto': () =>
-    import('@/registry/icons/database/level-auto').then((mod) => ({
-      default: mod.LevelAuto,
-    })),
-  'level-one-declared': () =>
-    import('@/registry/icons/database/level-one-declared').then((mod) => ({
-      default: mod.LevelOneDeclared,
-    })),
-  'level-one-details': () =>
-    import('@/registry/icons/database/level-one-details').then((mod) => ({
-      default: mod.LevelOneDetails,
-    })),
-  'level-one-inherited': () =>
-    import('@/registry/icons/database/level-one-inherited').then((mod) => ({
-      default: mod.LevelOneInherited,
-    })),
-  'level-three-declared': () =>
-    import('@/registry/icons/database/level-three-declared').then((mod) => ({
-      default: mod.LevelThreeDeclared,
-    })),
-  'level-three-details': () =>
-    import('@/registry/icons/database/level-three-details').then((mod) => ({
-      default: mod.LevelThreeDetails,
-    })),
-  'level-three-inherited': () =>
-    import('@/registry/icons/database/level-three-inherited').then((mod) => ({
-      default: mod.LevelThreeInherited,
-    })),
-  'level-two-declared': () =>
-    import('@/registry/icons/database/level-two-declared').then((mod) => ({
-      default: mod.LevelTwoDeclared,
-    })),
-  'level-two-details': () =>
-    import('@/registry/icons/database/level-two-details').then((mod) => ({
-      default: mod.LevelTwoDetails,
-    })),
-  'level-two-inherited': () =>
-    import('@/registry/icons/database/level-two-inherited').then((mod) => ({
-      default: mod.LevelTwoInherited,
-    })),
-  'lib-annotation': () =>
-    import('@/registry/icons/plugins/java-ee/lib-annotation').then((mod) => ({
-      default: mod.LibAnnotation,
-    })),
-  'lib-validator': () =>
-    import('@/registry/icons/plugins/java-ee/lib-validator').then((mod) => ({
-      default: mod.LibValidator,
-    })),
-  library: () =>
-    import('@/registry/icons/nodes/library').then((mod) => ({
-      default: mod.Library,
-    })),
-  'library-folder': () =>
-    import('@/registry/icons/nodes/library-folder').then((mod) => ({
-      default: mod.LibraryFolder,
-    })),
-  'library-target': () =>
-    import('@/registry/icons/plugins/cidr/library-target').then((mod) => ({
-      default: mod.LibraryTarget,
-    })),
-  'light-theme': () =>
-    import('@/registry/icons/general/new-ui/light-theme').then((mod) => ({
-      default: mod.LightTheme,
-    })),
-  'light-theme-selected': () =>
-    import('@/registry/icons/general/new-ui/light-theme-selected').then(
-      (mod) => ({ default: mod.LightThemeSelected }),
-    ),
-  'lightbend-logo': () =>
-    import('@/registry/icons/plugins/scala/lightbend-logo').then((mod) => ({
-      default: mod.LightbendLogo,
-    })),
-  lightning: () =>
-    import('@/registry/icons/general/actions/lightning').then((mod) => ({
-      default: mod.Lightning,
-    })),
-  like: () =>
-    import('@/registry/icons/general/ai-assistant/like').then((mod) => ({
-      default: mod.Like,
-    })),
-  'like-selected': () =>
-    import('@/registry/icons/general/ai-assistant/like-selected').then(
-      (mod) => ({ default: mod.LikeSelected }),
-    ),
-  limits: () =>
-    import('@/registry/icons/plugins/kubernetes/limits').then((mod) => ({
-      default: mod.Limits,
-    })),
-  link: () =>
-    import('@/registry/icons/general/editor/link').then((mod) => ({
-      default: mod.Link,
-    })),
-  linux: () =>
-    import('@/registry/icons/plugins/linux/linux').then((mod) => ({
-      default: mod.Linux,
-    })),
-  'linux-logo': () =>
-    import('@/registry/icons/plugins/linux/linux-logo').then((mod) => ({
-      default: mod.LinuxLogo,
-    })),
-  liquibase: () =>
-    import('@/registry/icons/plugins/jpa/liquibase').then((mod) => ({
-      default: mod.Liquibase,
-    })),
-  'liquibase-mono': () =>
-    import('@/registry/icons/plugins/jpa/liquibase-mono').then((mod) => ({
-      default: mod.LiquibaseMono,
-    })),
-  'liquibase-plugin-logo': () =>
-    import('@/registry/icons/plugins/jpa/liquibase-plugin-logo').then(
-      (mod) => ({ default: mod.LiquibasePluginLogo }),
-    ),
-  'liquibase-snapshot': () =>
-    import('@/registry/icons/plugins/jpa/liquibase-snapshot').then((mod) => ({
-      default: mod.LiquibaseSnapshot,
-    })),
-  'liquibase-update': () =>
-    import('@/registry/icons/plugins/jpa/liquibase-update').then((mod) => ({
-      default: mod.LiquibaseUpdate,
-    })),
-  list: () =>
-    import('@/registry/icons/database/list').then((mod) => ({
-      default: mod.List,
-    })),
-  'list-files': () =>
-    import('@/registry/icons/general/general/list-files').then((mod) => ({
-      default: mod.ListFiles,
-    })),
-  'list-key': () =>
-    import('@/registry/icons/database/list-key').then((mod) => ({
-      default: mod.ListKey,
-    })),
-  'load-swift-package-manager-changes': () =>
-    import(
-      '@/registry/icons/plugins/cidr/load-swift-package-manager-changes'
-    ).then((mod) => ({ default: mod.LoadSwiftPackageManagerChanges })),
-  loader: () =>
-    import('@/registry/icons/general/spinner/loader').then((mod) => ({
-      default: mod.Loader,
-    })),
-  'local-changes': () =>
-    import('@/registry/icons/general/setting-sync/local-changes').then(
-      (mod) => ({ default: mod.LocalChanges }),
-    ),
-  'local-scope': () =>
-    import('@/registry/icons/nodes/local-scope').then((mod) => ({
-      default: mod.LocalScope,
-    })),
-  'local-swift-package-dependency': () =>
-    import('@/registry/icons/plugins/cidr/local-swift-package-dependency').then(
-      (mod) => ({ default: mod.LocalSwiftPackageDependency }),
-    ),
-  locate: () =>
-    import('@/registry/icons/general/general/locate').then((mod) => ({
-      default: mod.Locate,
-    })),
-  location: () =>
-    import('@/registry/icons/plugins/cidr/location').then((mod) => ({
-      default: mod.Location,
-    })),
-  lombok: () =>
-    import('@/registry/icons/plugins/lombok/lombok').then((mod) => ({
-      default: mod.Lombok,
-    })),
-  'lombok-class': () =>
-    import('@/registry/icons/plugins/lombok/lombok-class').then((mod) => ({
-      default: mod.LombokClass,
-    })),
-  'lombok-field': () =>
-    import('@/registry/icons/plugins/lombok/lombok-field').then((mod) => ({
-      default: mod.LombokField,
-    })),
-  'lombok-method': () =>
-    import('@/registry/icons/plugins/lombok/lombok-method').then((mod) => ({
-      default: mod.LombokMethod,
-    })),
-  'low-all': () =>
-    import('@/registry/icons/plugins/package-checker/low-all').then((mod) => ({
-      default: mod.LowAll,
-    })),
-  'low-all-tree': () =>
-    import('@/registry/icons/plugins/package-checker/low-all-tree').then(
-      (mod) => ({ default: mod.LowAllTree }),
-    ),
-  'low-all-tree-outline': () =>
-    import(
-      '@/registry/icons/plugins/package-checker/low-all-tree-outline'
-    ).then((mod) => ({ default: mod.LowAllTreeOutline })),
-  m: () =>
-    import('@/registry/icons/plugins/cidr/m').then((mod) => ({
-      default: mod.M,
-    })),
-  macro: () =>
-    import('@/registry/icons/database/macro').then((mod) => ({
-      default: mod.Macro,
-    })),
-  'magic-resolve-toolbar': () =>
-    import('@/registry/icons/vcs/magic-resolve-toolbar').then((mod) => ({
-      default: mod.MagicResolveToolbar,
-    })),
-  'mailers-folder': () =>
-    import('@/registry/icons/plugins/ruby/mailers-folder').then((mod) => ({
-      default: mod.MailersFolder,
-    })),
-  'main-changelog': () =>
-    import('@/registry/icons/plugins/jpa/main-changelog').then((mod) => ({
-      default: mod.MainChangelog,
-    })),
-  makefile: () =>
-    import('@/registry/icons/plugins/cidr/makefile').then((mod) => ({
-      default: mod.Makefile,
-    })),
-  'makefile-app': () =>
-    import('@/registry/icons/plugins/cidr/makefile-app').then((mod) => ({
-      default: mod.MakefileApp,
-    })),
-  'makefile-load-changes': () =>
-    import('@/registry/icons/plugins/cidr/makefile-load-changes').then(
-      (mod) => ({ default: mod.MakefileLoadChanges }),
-    ),
-  'makefile-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/makefile-tool-window').then(
-      (mod) => ({ default: mod.MakefileToolWindow }),
-    ),
-  'manage-data-sources': () =>
-    import('@/registry/icons/database/manage-data-sources').then((mod) => ({
-      default: mod.ManageDataSources,
-    })),
-  'managed-bean': () =>
-    import('@/registry/icons/plugins/java-ee/managed-bean').then((mod) => ({
-      default: mod.ManagedBean,
-    })),
-  manifest: () =>
-    import('@/registry/icons/file-types/manifest').then((mod) => ({
-      default: mod.Manifest,
-    })),
-  'many-to-many': () =>
-    import('@/registry/icons/plugins/jpa/many-to-many').then((mod) => ({
-      default: mod.ManyToMany,
-    })),
-  'many-to-one': () =>
-    import('@/registry/icons/plugins/jpa/many-to-one').then((mod) => ({
-      default: mod.ManyToOne,
-    })),
-  mariadb: () =>
-    import('@/registry/icons/database/mariadb').then((mod) => ({
-      default: mod.Mariadb,
-    })),
-  markdown: () =>
-    import('@/registry/icons/file-types/markdown').then((mod) => ({
-      default: mod.Markdown,
-    })),
-  'match-case': () =>
-    import('@/registry/icons/general/inline/match-case').then((mod) => ({
-      default: mod.MatchCase,
-    })),
-  'materialized-log': () =>
-    import('@/registry/icons/database/materialized-log').then((mod) => ({
-      default: mod.MaterializedLog,
-    })),
-  'materialized-view': () =>
-    import('@/registry/icons/database/materialized-view').then((mod) => ({
-      default: mod.MaterializedView,
-    })),
-  'maven-bind': () =>
-    import('@/registry/icons/build/maven-bind').then((mod) => ({
-      default: mod.MavenBind,
-    })),
-  'maven-bind-checksum': () =>
-    import('@/registry/icons/build/maven-bind-checksum').then((mod) => ({
-      default: mod.MavenBindChecksum,
-    })),
-  'maven-checksum': () =>
-    import('@/registry/icons/build/maven-checksum').then((mod) => ({
-      default: mod.MavenChecksum,
-    })),
-  'maven-children-projects': () =>
-    import('@/registry/icons/build/maven-children-projects').then((mod) => ({
-      default: mod.MavenChildrenProjects,
-    })),
-  'maven-flex': () =>
-    import('@/registry/icons/build/maven-flex').then((mod) => ({
-      default: mod.MavenFlex,
-    })),
-  'maven-ignored': () =>
-    import('@/registry/icons/file-types/maven-ignored').then((mod) => ({
-      default: mod.MavenIgnored,
-    })),
-  'maven-load-changes': () =>
-    import('@/registry/icons/build/maven-load-changes').then((mod) => ({
-      default: mod.MavenLoadChanges,
-    })),
-  'maven-module': () =>
-    import('@/registry/icons/build/maven-module').then((mod) => ({
-      default: mod.MavenModule,
-    })),
-  'maven-parent-projects': () =>
-    import('@/registry/icons/build/maven-parent-projects').then((mod) => ({
-      default: mod.MavenParentProjects,
-    })),
-  'maven-plugin': () =>
-    import('@/registry/icons/build/maven-plugin').then((mod) => ({
-      default: mod.MavenPlugin,
-    })),
-  'maven-plugin-goal': () =>
-    import('@/registry/icons/build/maven-plugin-goal').then((mod) => ({
-      default: mod.MavenPluginGoal,
-    })),
-  'maven-profiles': () =>
-    import('@/registry/icons/build/maven-profiles').then((mod) => ({
-      default: mod.MavenProfiles,
-    })),
-  'maven-project': () =>
-    import('@/registry/icons/build/maven-project').then((mod) => ({
-      default: mod.MavenProject,
-    })),
-  maximize: () =>
-    import('@/registry/icons/general/windows/maximize').then((mod) => ({
-      default: mod.Maximize,
-    })),
-  'maximize-inactive': () =>
-    import('@/registry/icons/general/windows/maximize-inactive').then(
-      (mod) => ({ default: mod.MaximizeInactive }),
-    ),
-  'maximize-small': () =>
-    import('@/registry/icons/general/windows/maximize-small').then((mod) => ({
-      default: mod.MaximizeSmall,
-    })),
-  'medium-all': () =>
-    import('@/registry/icons/plugins/package-checker/medium-all').then(
-      (mod) => ({ default: mod.MediumAll }),
-    ),
-  'medium-all-tree': () =>
-    import('@/registry/icons/plugins/package-checker/medium-all-tree').then(
-      (mod) => ({ default: mod.MediumAllTree }),
-    ),
-  'medium-all-tree-outline': () =>
-    import(
-      '@/registry/icons/plugins/package-checker/medium-all-tree-outline'
-    ).then((mod) => ({ default: mod.MediumAllTreeOutline })),
-  'merge-callees': () =>
-    import('@/registry/icons/editor-icons/merge-callees').then((mod) => ({
-      default: mod.MergeCallees,
-    })),
-  meson: () =>
-    import('@/registry/icons/plugins/meson/meson').then((mod) => ({
-      default: mod.Meson,
-    })),
-  'meson-plugin-logo': () =>
-    import('@/registry/icons/plugins/meson/meson-plugin-logo').then((mod) => ({
-      default: mod.MesonPluginLogo,
-    })),
-  'meson-rc': () =>
-    import('@/registry/icons/plugins/meson/meson-rc').then((mod) => ({
-      default: mod.MesonRC,
-    })),
-  'meson-reload': () =>
-    import('@/registry/icons/plugins/meson/meson-reload').then((mod) => ({
-      default: mod.MesonReload,
-    })),
-  'message-bean': () =>
-    import('@/registry/icons/plugins/java-ee/message-bean').then((mod) => ({
-      default: mod.MessageBean,
-    })),
-  messages: () =>
-    import('@/registry/icons/general/tool-windows/messages').then((mod) => ({
-      default: mod.Messages,
-    })),
-  metal: () =>
-    import('@/registry/icons/plugins/cidr/metal').then((mod) => ({
-      default: mod.Metal,
-    })),
-  'method-abstract': () =>
-    import('@/registry/icons/nodes/method-abstract').then((mod) => ({
-      default: mod.MethodAbstract,
-    })),
-  'method-reference': () =>
-    import('@/registry/icons/nodes/method-reference').then((mod) => ({
-      default: mod.MethodReference,
-    })),
-  micronaut: () =>
-    import('@/registry/icons/file-types/micronaut').then((mod) => ({
-      default: mod.Micronaut,
-    })),
-  microsoft: () =>
-    import('@/registry/icons/database/microsoft').then((mod) => ({
-      default: mod.Microsoft,
-    })),
-  'microsoft-windows': () =>
-    import('@/registry/icons/file-types/microsoft-windows').then((mod) => ({
-      default: mod.MicrosoftWindows,
-    })),
-  'migrations-closed': () =>
-    import('@/registry/icons/plugins/ruby/migrations-closed').then((mod) => ({
-      default: mod.MigrationsClosed,
-    })),
-  'mimer-sql': () =>
-    import('@/registry/icons/database/mimer-sql').then((mod) => ({
-      default: mod.MimerSQL,
-    })),
-  'minimalistic-mode': () =>
-    import('@/registry/icons/plugins/jpa/minimalistic-mode').then((mod) => ({
-      default: mod.MinimalisticMode,
-    })),
-  minimap: () =>
-    import('@/registry/icons/general/general/minimap').then((mod) => ({
-      default: mod.Minimap,
-    })),
-  minimize: () =>
-    import('@/registry/icons/general/windows/minimize').then((mod) => ({
-      default: mod.Minimize,
-    })),
-  'minimize-inactive': () =>
-    import('@/registry/icons/general/windows/minimize-inactive').then(
-      (mod) => ({ default: mod.MinimizeInactive }),
-    ),
-  'minimize-small': () =>
-    import('@/registry/icons/general/windows/minimize-small').then((mod) => ({
-      default: mod.MinimizeSmall,
-    })),
-  mm: () =>
-    import('@/registry/icons/plugins/cidr/mm').then((mod) => ({
-      default: mod.Mm,
-    })),
-  'mod-platform-io': () =>
-    import('@/registry/icons/plugins/platformio/mod-platform-io').then(
-      (mod) => ({ default: mod.ModPlatformIO }),
-    ),
-  'mod-stop': () =>
-    import('@/registry/icons/plugins/kubernetes/mod-stop').then((mod) => ({
-      default: mod.ModStop,
-    })),
-  modified: () =>
-    import('@/registry/icons/file-types/modified').then((mod) => ({
-      default: mod.Modified,
-    })),
-  'module-group': () =>
-    import('@/registry/icons/nodes/module-group').then((mod) => ({
-      default: mod.ModuleGroup,
-    })),
-  'module-java': () =>
-    import('@/registry/icons/nodes/module-java').then((mod) => ({
-      default: mod.ModuleJava,
-    })),
-  'module-target': () =>
-    import('@/registry/icons/plugins/cidr/module-target').then((mod) => ({
-      default: mod.ModuleTarget,
-    })),
-  module8x8: () =>
-    import('@/registry/icons/nodes/module8x8').then((mod) => ({
-      default: mod.Module8x8,
-    })),
-  modulemap: () =>
-    import('@/registry/icons/plugins/cidr/modulemap').then((mod) => ({
-      default: mod.Modulemap,
-    })),
-  'mongo-db': () =>
-    import('@/registry/icons/database/mongo-db').then((mod) => ({
-      default: mod.MongoDB,
-    })),
-  'mongo-field': () =>
-    import('@/registry/icons/database/mongo-field').then((mod) => ({
-      default: mod.MongoField,
-    })),
-  'mongo-field-gold-key': () =>
-    import('@/registry/icons/database/mongo-field-gold-key').then((mod) => ({
-      default: mod.MongoFieldGoldKey,
-    })),
-  'more-horizontal': () =>
-    import('@/registry/icons/general/general/more-horizontal').then((mod) => ({
-      default: mod.MoreHorizontal,
-    })),
-  'more-vertical': () =>
-    import('@/registry/icons/general/general/more-vertical').then((mod) => ({
-      default: mod.MoreVertical,
-    })),
-  'move-down': () =>
-    import('@/registry/icons/general/general/move-down').then((mod) => ({
-      default: mod.MoveDown,
-    })),
-  'move-to-another-changelog': () =>
-    import('@/registry/icons/plugins/jpa/move-to-another-changelog').then(
-      (mod) => ({ default: mod.MoveToAnotherChangelog }),
-    ),
-  'move-to-bottom-left': () =>
-    import('@/registry/icons/general/general/move-to-bottom-left').then(
-      (mod) => ({ default: mod.MoveToBottomLeft }),
-    ),
-  'move-to-bottom-right': () =>
-    import('@/registry/icons/general/general/move-to-bottom-right').then(
-      (mod) => ({ default: mod.MoveToBottomRight }),
-    ),
-  'move-to-button': () =>
-    import('@/registry/icons/general/actions/move-to-button').then((mod) => ({
-      default: mod.MoveToButton,
-    })),
-  'move-to-left-bottom': () =>
-    import('@/registry/icons/general/general/move-to-left-bottom').then(
-      (mod) => ({ default: mod.MoveToLeftBottom }),
-    ),
-  'move-to-left-top': () =>
-    import('@/registry/icons/general/general/move-to-left-top').then((mod) => ({
-      default: mod.MoveToLeftTop,
-    })),
-  'move-to-right-bottom': () =>
-    import('@/registry/icons/general/general/move-to-right-bottom').then(
-      (mod) => ({ default: mod.MoveToRightBottom }),
-    ),
-  'move-to-right-top': () =>
-    import('@/registry/icons/general/general/move-to-right-top').then(
-      (mod) => ({ default: mod.MoveToRightTop }),
-    ),
-  'move-up': () =>
-    import('@/registry/icons/general/general/move-up').then((mod) => ({
-      default: mod.MoveUp,
-    })),
-  multiplatform: () =>
-    import('@/registry/icons/plugins/kotlin/multiplatform').then((mod) => ({
-      default: mod.Multiplatform,
-    })),
-  'multiplatform-library': () =>
-    import('@/registry/icons/plugins/kotlin/multiplatform-library').then(
-      (mod) => ({ default: mod.MultiplatformLibrary }),
-    ),
-  'multiplatform-mobile': () =>
-    import('@/registry/icons/plugins/kotlin/multiplatform-mobile').then(
-      (mod) => ({ default: mod.MultiplatformMobile }),
-    ),
-  'multiplatform-mobile-library': () =>
-    import('@/registry/icons/plugins/kotlin/multiplatform-mobile-library').then(
-      (mod) => ({ default: mod.MultiplatformMobileLibrary }),
-    ),
-  'multiple-breakpoints': () =>
-    import('@/registry/icons/breakpoints/multiple-breakpoints').then((mod) => ({
-      default: mod.MultipleBreakpoints,
-    })),
-  'multiple-breakpoints-disabled': () =>
-    import('@/registry/icons/breakpoints/multiple-breakpoints-disabled').then(
-      (mod) => ({ default: mod.MultipleBreakpointsDisabled }),
-    ),
-  'multiple-breakpoints-muted': () =>
-    import('@/registry/icons/breakpoints/multiple-breakpoints-muted').then(
-      (mod) => ({ default: mod.MultipleBreakpointsMuted }),
-    ),
-  'multiple-type-definitions': () =>
-    import('@/registry/icons/plugins/scala/multiple-type-definitions').then(
-      (mod) => ({ default: mod.MultipleTypeDefinitions }),
-    ),
-  mutation: () =>
-    import('@/registry/icons/plugins/graphql/mutation').then((mod) => ({
-      default: mod.Mutation,
-    })),
-  'mute-breakpoints': () =>
-    import('@/registry/icons/run/mute-breakpoints').then((mod) => ({
-      default: mod.MuteBreakpoints,
-    })),
-  mysql: () =>
-    import('@/registry/icons/database/mysql').then((mod) => ({
-      default: mod.Mysql,
-    })),
-  namespace: () =>
-    import('@/registry/icons/plugins/kubernetes/namespace').then((mod) => ({
-      default: mod.Namespace,
-    })),
-  'namespace-cpp': () =>
-    import('@/registry/icons/plugins/cidr/namespace-cpp').then((mod) => ({
-      default: mod.NamespaceCpp,
-    })),
-  'namespaced-mark': () =>
-    import('@/registry/icons/plugins/kubernetes/namespaced-mark').then(
-      (mod) => ({ default: mod.NamespacedMark }),
-    ),
-  native: () =>
-    import('@/registry/icons/plugins/kotlin/native').then((mod) => ({
-      default: mod.Native,
-    })),
-  'navigation-rule': () =>
-    import('@/registry/icons/plugins/java-ee/navigation-rule').then((mod) => ({
-      default: mod.NavigationRule,
-    })),
-  netezza: () =>
-    import('@/registry/icons/database/netezza').then((mod) => ({
-      default: mod.Netezza,
-    })),
-  network: () =>
-    import('@/registry/icons/plugins/kubernetes/network').then((mod) => ({
-      default: mod.Network,
-    })),
-  'network-policy': () =>
-    import('@/registry/icons/plugins/kubernetes/network-policy').then(
-      (mod) => ({ default: mod.NetworkPolicy }),
-    ),
-  'new-folder': () =>
-    import('@/registry/icons/nodes/new-folder').then((mod) => ({
-      default: mod.NewFolder,
-    })),
-  'new-line': () =>
-    import('@/registry/icons/general/inline/new-line').then((mod) => ({
-      default: mod.NewLine,
-    })),
-  'new-ui': () =>
-    import('@/registry/icons/general/tool-windows/new-ui').then((mod) => ({
-      default: mod.NewUI,
-    })),
-  'next-js': () =>
-    import('@/registry/icons/file-types/next-js').then((mod) => ({
-      default: mod.NextJS,
-    })),
-  'no-scala-sdk': () =>
-    import('@/registry/icons/plugins/scala/no-scala-sdk').then((mod) => ({
-      default: mod.NoScalaSDK,
-    })),
-  node: () =>
-    import('@/registry/icons/plugins/kubernetes/node').then((mod) => ({
-      default: mod.Node,
-    })),
-  nodejs: () =>
-    import('@/registry/icons/plugins/kotlin/nodejs').then((mod) => ({
-      default: mod.Nodejs,
-    })),
-  'nodejs-test-runner': () =>
-    import('@/registry/icons/file-types/nodejs-test-runner').then((mod) => ({
-      default: mod.NodejsTestRunner,
-    })),
-  'nodes/abstract-exception': () =>
-    import('@/registry/icons/nodes/abstract-exception').then((mod) => ({
-      default: mod.AbstractException,
-    })),
-  'nodes/add-any': () =>
-    import('@/registry/icons/nodes/add-any').then((mod) => ({
-      default: mod.AddAny,
-    })),
-  'nodes/alias': () =>
-    import('@/registry/icons/nodes/alias').then((mod) => ({
-      default: mod.Alias,
-    })),
-  'nodes/annotation': () =>
-    import('@/registry/icons/nodes/annotation').then((mod) => ({
-      default: mod.Annotation,
-    })),
-  'nodes/annotation-folder': () =>
-    import('@/registry/icons/nodes/annotation-folder').then((mod) => ({
-      default: mod.AnnotationFolder,
-    })),
-  'nodes/class': () =>
-    import('@/registry/icons/nodes/class').then((mod) => ({
-      default: mod.Class,
-    })),
-  'nodes/class-abstract': () =>
-    import('@/registry/icons/nodes/class-abstract').then((mod) => ({
-      default: mod.ClassAbstract,
-    })),
-  'nodes/class-anonymous': () =>
-    import('@/registry/icons/nodes/class-anonymous').then((mod) => ({
-      default: mod.ClassAnonymous,
-    })),
-  'nodes/class-initializer': () =>
-    import('@/registry/icons/nodes/class-initializer').then((mod) => ({
-      default: mod.ClassInitializer,
-    })),
-  'nodes/config': () =>
-    import('@/registry/icons/nodes/config').then((mod) => ({
-      default: mod.Config,
-    })),
-  'nodes/constant': () =>
-    import('@/registry/icons/nodes/constant').then((mod) => ({
-      default: mod.Constant,
-    })),
-  'nodes/controller': () =>
-    import('@/registry/icons/nodes/controller').then((mod) => ({
-      default: mod.Controller,
-    })),
-  'nodes/copy-of-folder': () =>
-    import('@/registry/icons/nodes/copy-of-folder').then((mod) => ({
-      default: mod.CopyOfFolder,
-    })),
-  'nodes/data-column': () =>
-    import('@/registry/icons/nodes/data-column').then((mod) => ({
-      default: mod.DataColumn,
-    })),
-  'nodes/data-tables': () =>
-    import('@/registry/icons/nodes/data-tables').then((mod) => ({
-      default: mod.DataTables,
-    })),
-  'nodes/desktop': () =>
-    import('@/registry/icons/nodes/desktop').then((mod) => ({
-      default: mod.Desktop,
-    })),
-  'nodes/edit-folder': () =>
-    import('@/registry/icons/nodes/edit-folder').then((mod) => ({
-      default: mod.EditFolder,
-    })),
-  'nodes/enum': () =>
-    import('@/registry/icons/nodes/enum').then((mod) => ({
-      default: mod.Enum,
-    })),
-  'nodes/error-introduction': () =>
-    import('@/registry/icons/nodes/error-introduction').then((mod) => ({
-      default: mod.ErrorIntroduction,
-    })),
-  'nodes/exception': () =>
-    import('@/registry/icons/nodes/exception').then((mod) => ({
-      default: mod.Exception,
-    })),
-  'nodes/exclude-root': () =>
-    import('@/registry/icons/nodes/exclude-root').then((mod) => ({
-      default: mod.ExcludeRoot,
-    })),
-  'nodes/excluded-generated': () =>
-    import('@/registry/icons/nodes/excluded-generated').then((mod) => ({
-      default: mod.ExcludedGenerated,
-    })),
-  'nodes/favorites': () =>
-    import('@/registry/icons/nodes/favorites').then((mod) => ({
-      default: mod.Favorites,
-    })),
-  'nodes/field': () =>
-    import('@/registry/icons/nodes/field').then((mod) => ({
-      default: mod.Field,
-    })),
-  'nodes/folder': () =>
-    import('@/registry/icons/nodes/folder').then((mod) => ({
-      default: mod.Folder,
-    })),
-  'nodes/function': () =>
-    import('@/registry/icons/nodes/function').then((mod) => ({
-      default: mod.Function,
-    })),
-  'nodes/generated': () =>
-    import('@/registry/icons/nodes/generated').then((mod) => ({
-      default: mod.Generated,
-    })),
-  'nodes/generated-source': () =>
-    import('@/registry/icons/nodes/generated-source').then((mod) => ({
-      default: mod.GeneratedSource,
-    })),
-  'nodes/generated-test-root': () =>
-    import('@/registry/icons/nodes/generated-test-root').then((mod) => ({
-      default: mod.GeneratedTestRoot,
-    })),
-  'nodes/gvariable': () =>
-    import('@/registry/icons/nodes/gvariable').then((mod) => ({
-      default: mod.Gvariable,
-    })),
-  'nodes/home-folder': () =>
-    import('@/registry/icons/nodes/home-folder').then((mod) => ({
-      default: mod.HomeFolder,
-    })),
-  'nodes/idea-project': () =>
-    import('@/registry/icons/nodes/idea-project').then((mod) => ({
-      default: mod.IdeaProject,
-    })),
-  'nodes/include': () =>
-    import('@/registry/icons/nodes/include').then((mod) => ({
-      default: mod.Include,
-    })),
-  'nodes/interface': () =>
-    import('@/registry/icons/nodes/interface').then((mod) => ({
-      default: mod.Interface,
-    })),
-  'nodes/jdk': () =>
-    import('@/registry/icons/nodes/jdk').then((mod) => ({ default: mod.Jdk })),
-  'nodes/lambda': () =>
-    import('@/registry/icons/nodes/lambda').then((mod) => ({
-      default: mod.Lambda,
-    })),
-  'nodes/library': () =>
-    import('@/registry/icons/nodes/library').then((mod) => ({
-      default: mod.Library,
-    })),
-  'nodes/library-folder': () =>
-    import('@/registry/icons/nodes/library-folder').then((mod) => ({
-      default: mod.LibraryFolder,
-    })),
-  'nodes/local-scope': () =>
-    import('@/registry/icons/nodes/local-scope').then((mod) => ({
-      default: mod.LocalScope,
-    })),
-  'nodes/method': () =>
-    import('@/registry/icons/nodes/method').then((mod) => ({
-      default: mod.Method,
-    })),
-  'nodes/method-abstract': () =>
-    import('@/registry/icons/nodes/method-abstract').then((mod) => ({
-      default: mod.MethodAbstract,
-    })),
-  'nodes/method-reference': () =>
-    import('@/registry/icons/nodes/method-reference').then((mod) => ({
-      default: mod.MethodReference,
-    })),
-  'nodes/model-class': () =>
-    import('@/registry/icons/nodes/model-class').then((mod) => ({
-      default: mod.ModelClass,
-    })),
-  'nodes/module': () =>
-    import('@/registry/icons/nodes/module').then((mod) => ({
-      default: mod.Module,
-    })),
-  'nodes/module-group': () =>
-    import('@/registry/icons/nodes/module-group').then((mod) => ({
-      default: mod.ModuleGroup,
-    })),
-  'nodes/module-java': () =>
-    import('@/registry/icons/nodes/module-java').then((mod) => ({
-      default: mod.ModuleJava,
-    })),
-  'nodes/module8x8': () =>
-    import('@/registry/icons/nodes/module8x8').then((mod) => ({
-      default: mod.Module8x8,
-    })),
-  'nodes/new-folder': () =>
-    import('@/registry/icons/nodes/new-folder').then((mod) => ({
-      default: mod.NewFolder,
-    })),
-  'nodes/package': () =>
-    import('@/registry/icons/nodes/package').then((mod) => ({
-      default: mod.Package,
-    })),
-  'nodes/parameter': () =>
-    import('@/registry/icons/nodes/parameter').then((mod) => ({
-      default: mod.Parameter,
-    })),
-  'nodes/plugin': () =>
-    import('@/registry/icons/nodes/plugin').then((mod) => ({
-      default: mod.Plugin,
-    })),
-  'nodes/pp-web': () =>
-    import('@/registry/icons/nodes/pp-web').then((mod) => ({
-      default: mod.PpWeb,
-    })),
-  'nodes/property': () =>
-    import('@/registry/icons/nodes/property').then((mod) => ({
-      default: mod.Property,
-    })),
-  'nodes/record': () =>
-    import('@/registry/icons/nodes/record').then((mod) => ({
-      default: mod.Record,
-    })),
-  'nodes/resource-bundle': () =>
-    import('@/registry/icons/nodes/resource-bundle').then((mod) => ({
-      default: mod.ResourceBundle,
-    })),
-  'nodes/resources-root': () =>
-    import('@/registry/icons/nodes/resources-root').then((mod) => ({
-      default: mod.ResourcesRoot,
-    })),
-  'nodes/server': () =>
-    import('@/registry/icons/nodes/server').then((mod) => ({
-      default: mod.Server,
-    })),
-  'nodes/servlet': () =>
-    import('@/registry/icons/nodes/servlet').then((mod) => ({
-      default: mod.Servlet,
-    })),
-  'nodes/shared-scope': () =>
-    import('@/registry/icons/nodes/shared-scope').then((mod) => ({
-      default: mod.SharedScope,
-    })),
-  'nodes/source-root': () =>
-    import('@/registry/icons/nodes/source-root').then((mod) => ({
-      default: mod.SourceRoot,
-    })),
-  'nodes/star': () =>
-    import('@/registry/icons/nodes/star').then((mod) => ({
-      default: mod.Star,
-    })),
-  'nodes/star-empty': () =>
-    import('@/registry/icons/nodes/star-empty').then((mod) => ({
-      default: mod.StarEmpty,
-    })),
-  'nodes/static': () =>
-    import('@/registry/icons/nodes/static').then((mod) => ({
-      default: mod.Static,
-    })),
-  'nodes/template': () =>
-    import('@/registry/icons/nodes/template').then((mod) => ({
-      default: mod.Template,
-    })),
-  'nodes/test': () =>
-    import('@/registry/icons/nodes/test').then((mod) => ({
-      default: mod.Test,
-    })),
-  'nodes/test-group': () =>
-    import('@/registry/icons/nodes/test-group').then((mod) => ({
-      default: mod.TestGroup,
-    })),
-  'nodes/test-ignored': () =>
-    import('@/registry/icons/nodes/test-ignored').then((mod) => ({
-      default: mod.TestIgnored,
-    })),
-  'nodes/test-resources-root': () =>
-    import('@/registry/icons/nodes/test-resources-root').then((mod) => ({
-      default: mod.TestResourcesRoot,
-    })),
-  'nodes/test-root': () =>
-    import('@/registry/icons/nodes/test-root').then((mod) => ({
-      default: mod.TestRoot,
-    })),
-  'nodes/test-source-folder': () =>
-    import('@/registry/icons/nodes/test-source-folder').then((mod) => ({
-      default: mod.TestSourceFolder,
-    })),
-  'nodes/text-area': () =>
-    import('@/registry/icons/nodes/text-area').then((mod) => ({
-      default: mod.TextArea,
-    })),
-  'nodes/type': () =>
-    import('@/registry/icons/nodes/type').then((mod) => ({
-      default: mod.Type,
-    })),
-  'nodes/unloaded-module': () =>
-    import('@/registry/icons/nodes/unloaded-module').then((mod) => ({
-      default: mod.UnloadedModule,
-    })),
-  'nodes/up-folder': () =>
-    import('@/registry/icons/nodes/up-folder').then((mod) => ({
-      default: mod.UpFolder,
-    })),
-  'nodes/variable': () =>
-    import('@/registry/icons/nodes/variable').then((mod) => ({
-      default: mod.Variable,
-    })),
-  'nodes/warning-introduction': () =>
-    import('@/registry/icons/nodes/warning-introduction').then((mod) => ({
-      default: mod.WarningIntroduction,
-    })),
-  'nodes/web-resources': () =>
-    import('@/registry/icons/nodes/web-resources').then((mod) => ({
-      default: mod.WebResources,
-    })),
-  'not-defined': () =>
-    import('@/registry/icons/plugins/ruby/not-defined').then((mod) => ({
-      default: mod.NotDefined,
-    })),
-  notifications: () =>
-    import('@/registry/icons/general/tool-windows/notifications').then(
-      (mod) => ({ default: mod.Notifications }),
-    ),
-  npm: () =>
-    import('@/registry/icons/general/tool-windows/npm').then((mod) => ({
-      default: mod.Npm,
-    })),
-  'num-py': () =>
-    import('@/registry/icons/file-types/num-py').then((mod) => ({
-      default: mod.NumPy,
-    })),
-  'numbered-list': () =>
-    import('@/registry/icons/general/editor/numbered-list').then((mod) => ({
-      default: mod.NumberedList,
-    })),
-  'object-companion': () =>
-    import('@/registry/icons/plugins/scala/object-companion').then((mod) => ({
-      default: mod.ObjectCompanion,
-    })),
-  'object-companion-swapped': () =>
-    import('@/registry/icons/plugins/scala/object-companion-swapped').then(
-      (mod) => ({ default: mod.ObjectCompanionSwapped }),
-    ),
-  'object-group': () =>
-    import('@/registry/icons/database/object-group').then((mod) => ({
-      default: mod.ObjectGroup,
-    })),
-  'object-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/object-kotlin').then((mod) => ({
-      default: mod.ObjectKotlin,
-    })),
-  'object-scala': () =>
-    import('@/registry/icons/plugins/scala/object-scala').then((mod) => ({
-      default: mod.ObjectScala,
-    })),
-  'object-type-attribute': () =>
-    import('@/registry/icons/database/object-type-attribute').then((mod) => ({
-      default: mod.ObjectTypeAttribute,
-    })),
-  observatory: () =>
-    import('@/registry/icons/plugins/dart/observatory').then((mod) => ({
-      default: mod.Observatory,
-    })),
-  'ocd-run-configuration': () =>
-    import('@/registry/icons/plugins/cidr/ocd-run-configuration').then(
-      (mod) => ({ default: mod.OcdRunConfiguration }),
-    ),
-  'one-to-many': () =>
-    import('@/registry/icons/plugins/jpa/one-to-many').then((mod) => ({
-      default: mod.OneToMany,
-    })),
-  'one-to-one': () =>
-    import('@/registry/icons/plugins/jpa/one-to-one').then((mod) => ({
-      default: mod.OneToOne,
-    })),
-  open: () =>
-    import('@/registry/icons/general/general/open').then((mod) => ({
-      default: mod.Open,
-    })),
-  'open-api': () =>
-    import('@/registry/icons/general/actions/open-api').then((mod) => ({
-      default: mod.OpenApi,
-    })),
-  'open-in-tool-window': () =>
-    import('@/registry/icons/general/general/open-in-tool-window').then(
-      (mod) => ({ default: mod.OpenInToolWindow }),
-    ),
-  'open-new-tab': () =>
-    import('@/registry/icons/general/general/open-new-tab').then((mod) => ({
-      default: mod.OpenNewTab,
-    })),
-  'open-rewrite': () =>
-    import('@/registry/icons/file-types/open-rewrite').then((mod) => ({
-      default: mod.OpenRewrite,
-    })),
-  'open-tofu': () =>
-    import('@/registry/icons/file-types/open-tofu').then((mod) => ({
-      default: mod.OpenTofu,
-    })),
-  openedge: () =>
-    import('@/registry/icons/database/openedge').then((mod) => ({
-      default: mod.Openedge,
-    })),
-  operator: () =>
-    import('@/registry/icons/database/operator').then((mod) => ({
-      default: mod.Operator,
-    })),
-  'operator-class': () =>
-    import('@/registry/icons/database/operator-class').then((mod) => ({
-      default: mod.OperatorClass,
-    })),
-  'operator-family': () =>
-    import('@/registry/icons/database/operator-family').then((mod) => ({
-      default: mod.OperatorFamily,
-    })),
-  option: () =>
-    import('@/registry/icons/terminal/option').then((mod) => ({
-      default: mod.Option,
-    })),
-  'option-command': () =>
-    import('@/registry/icons/plugins/cidr/option-command').then((mod) => ({
-      default: mod.OptionCommand,
-    })),
-  oracle: () =>
-    import('@/registry/icons/database/oracle').then((mod) => ({
-      default: mod.Oracle,
-    })),
-  other: () =>
-    import('@/registry/icons/terminal/other').then((mod) => ({
-      default: mod.Other,
-    })),
-  'out-sight': () =>
-    import('@/registry/icons/plugins/outsight/out-sight').then((mod) => ({
-      default: mod.OutSight,
-    })),
-  'out-sight-color': () =>
-    import('@/registry/icons/plugins/outsight/out-sight-color').then((mod) => ({
-      default: mod.OutSightColor,
-    })),
-  'outgoing-push': () =>
-    import('@/registry/icons/vcs/outgoing-push').then((mod) => ({
-      default: mod.OutgoingPush,
-    })),
-  'overriden-method': () =>
-    import('@/registry/icons/editor-icons/overriden-method').then((mod) => ({
-      default: mod.OverridenMethod,
-    })),
-  'overriding-method': () =>
-    import('@/registry/icons/editor-icons/overriding-method').then((mod) => ({
-      default: mod.OverridingMethod,
-    })),
-  'package-json': () =>
-    import('@/registry/icons/file-types/package-json').then((mod) => ({
-      default: mod.PackageJson,
-    })),
-  'package-lock': () =>
-    import('@/registry/icons/file-types/package-lock').then((mod) => ({
-      default: mod.PackageLock,
-    })),
-  'package-manager': () =>
-    import('@/registry/icons/general/tool-windows/package-manager').then(
-      (mod) => ({ default: mod.PackageManager }),
-    ),
-  'package-object': () =>
-    import('@/registry/icons/plugins/scala/package-object').then((mod) => ({
-      default: mod.PackageObject,
-    })),
-  'package-with-object': () =>
-    import('@/registry/icons/plugins/scala/package-with-object').then(
-      (mod) => ({ default: mod.PackageWithObject }),
-    ),
-  pagination: () =>
-    import('@/registry/icons/general/general/pagination').then((mod) => ({
-      default: mod.Pagination,
-    })),
-  pandas: () =>
-    import('@/registry/icons/file-types/pandas').then((mod) => ({
-      default: mod.Pandas,
-    })),
-  partion: () =>
-    import('@/registry/icons/database/partion').then((mod) => ({
-      default: mod.Partion,
-    })),
-  'partion-table': () =>
-    import('@/registry/icons/database/partion-table').then((mod) => ({
-      default: mod.PartionTable,
-    })),
-  paste: () =>
-    import('@/registry/icons/general/general/paste').then((mod) => ({
-      default: mod.Paste,
-    })),
-  'pattern-value': () =>
-    import('@/registry/icons/plugins/scala/pattern-value').then((mod) => ({
-      default: mod.PatternValue,
-    })),
-  'pause-hovered': () =>
-    import('@/registry/icons/general/progress-bar/pause-hovered').then(
-      (mod) => ({ default: mod.PauseHovered }),
-    ),
-  pending: () =>
-    import('@/registry/icons/plugins/kubernetes/pending').then((mod) => ({
-      default: mod.Pending,
-    })),
-  perl: () =>
-    import('@/registry/icons/file-types/perl').then((mod) => ({
-      default: mod.Perl,
-    })),
-  persistence: () =>
-    import('@/registry/icons/general/tool-windows/persistence').then((mod) => ({
-      default: mod.Persistence,
-    })),
-  'persistence-id-relationship': () =>
-    import('@/registry/icons/plugins/java-ee/persistence-id-relationship').then(
-      (mod) => ({ default: mod.PersistenceIdRelationship }),
-    ),
-  'persistent-volume': () =>
-    import('@/registry/icons/plugins/kubernetes/persistent-volume').then(
-      (mod) => ({ default: mod.PersistentVolume }),
-    ),
-  'persistent-volume-claim': () =>
-    import('@/registry/icons/plugins/kubernetes/persistent-volume-claim').then(
-      (mod) => ({ default: mod.PersistentVolumeClaim }),
-    ),
-  'persistent-volumes': () =>
-    import('@/registry/icons/plugins/kubernetes/persistent-volumes').then(
-      (mod) => ({ default: mod.PersistentVolumes }),
-    ),
-  'php-local': () =>
-    import('@/registry/icons/run-configurations/php-local').then((mod) => ({
-      default: mod.PhpLocal,
-    })),
-  'php-remote': () =>
-    import('@/registry/icons/run-configurations/php-remote').then((mod) => ({
-      default: mod.PhpRemote,
-    })),
-  'php-web': () =>
-    import('@/registry/icons/run-configurations/php-web').then((mod) => ({
-      default: mod.PhpWeb,
-    })),
-  'pin-hovered': () =>
-    import('@/registry/icons/database/pin-hovered').then((mod) => ({
-      default: mod.PinHovered,
-    })),
-  'pin-selected': () =>
-    import('@/registry/icons/database/pin-selected').then((mod) => ({
-      default: mod.PinSelected,
-    })),
-  'pin-selected-hovered': () =>
-    import('@/registry/icons/database/pin-selected-hovered').then((mod) => ({
-      default: mod.PinSelectedHovered,
-    })),
-  'platform-io': () =>
-    import('@/registry/icons/plugins/platformio/platform-io').then((mod) => ({
-      default: mod.PlatformIO,
-    })),
-  'play-back': () =>
-    import('@/registry/icons/general/actions/play-back').then((mod) => ({
-      default: mod.PlayBack,
-    })),
-  'play-first': () =>
-    import('@/registry/icons/general/actions/play-first').then((mod) => ({
-      default: mod.PlayFirst,
-    })),
-  'play-forward': () =>
-    import('@/registry/icons/general/actions/play-forward').then((mod) => ({
-      default: mod.PlayForward,
-    })),
-  'play-last': () =>
-    import('@/registry/icons/general/actions/play-last').then((mod) => ({
-      default: mod.PlayLast,
-    })),
-  play2: () =>
-    import('@/registry/icons/plugins/scala/play2').then((mod) => ({
-      default: mod.Play2,
-    })),
-  plugin: () =>
-    import('@/registry/icons/nodes/plugin').then((mod) => ({
-      default: mod.Plugin,
-    })),
-  'plugin-logo': () =>
-    import('@/registry/icons/plugins/jpa/plugin-logo').then((mod) => ({
-      default: mod.PluginLogo,
-    })),
-  'plugin-update': () =>
-    import('@/registry/icons/general/general/plugin-update').then((mod) => ({
-      default: mod.PluginUpdate,
-    })),
-  'plugin-v2': () =>
-    import('@/registry/icons/general/devkit/plugin-v2').then((mod) => ({
-      default: mod.PluginV2,
-    })),
-  'plugins/aop/abstract-advice': () =>
-    import('@/registry/icons/plugins/aop/abstract-advice').then((mod) => ({
-      default: mod.AbstractAdvice,
-    })),
-  'plugins/aop/after-advice': () =>
-    import('@/registry/icons/plugins/aop/after-advice').then((mod) => ({
-      default: mod.AfterAdvice,
-    })),
-  'plugins/aop/after-returning-advice': () =>
-    import('@/registry/icons/plugins/aop/after-returning-advice').then(
-      (mod) => ({ default: mod.AfterReturningAdvice }),
-    ),
-  'plugins/aop/after-throwing-advice': () =>
-    import('@/registry/icons/plugins/aop/after-throwing-advice').then(
-      (mod) => ({ default: mod.AfterThrowingAdvice }),
-    ),
-  'plugins/aop/around-advice': () =>
-    import('@/registry/icons/plugins/aop/around-advice').then((mod) => ({
-      default: mod.AroundAdvice,
-    })),
-  'plugins/aop/before-advice': () =>
-    import('@/registry/icons/plugins/aop/before-advice').then((mod) => ({
-      default: mod.BeforeAdvice,
-    })),
-  'plugins/aop/from-arrow': () =>
-    import('@/registry/icons/plugins/aop/from-arrow').then((mod) => ({
-      default: mod.FromArrow,
-    })),
-  'plugins/aop/pointcut': () =>
-    import('@/registry/icons/plugins/aop/pointcut').then((mod) => ({
-      default: mod.Pointcut,
-    })),
-  'plugins/aop/to-arrow': () =>
-    import('@/registry/icons/plugins/aop/to-arrow').then((mod) => ({
-      default: mod.ToArrow,
-    })),
-  'plugins/bazel/bazel': () =>
-    import('@/registry/icons/plugins/bazel/bazel').then((mod) => ({
-      default: mod.Bazel,
-    })),
-  'plugins/bazel/bazel-config': () =>
-    import('@/registry/icons/plugins/bazel/bazel-config').then((mod) => ({
-      default: mod.BazelConfig,
-    })),
-  'plugins/bazel/bazel-error': () =>
-    import('@/registry/icons/plugins/bazel/bazel-error').then((mod) => ({
-      default: mod.BazelError,
-    })),
-  'plugins/bazel/bazel-reload': () =>
-    import('@/registry/icons/plugins/bazel/bazel-reload').then((mod) => ({
-      default: mod.BazelReload,
-    })),
-  'plugins/bazel/bazel-target': () =>
-    import('@/registry/icons/plugins/bazel/bazel-target').then((mod) => ({
-      default: mod.BazelTarget,
-    })),
-  'plugins/bazel/bazel-warning': () =>
-    import('@/registry/icons/plugins/bazel/bazel-warning').then((mod) => ({
-      default: mod.BazelWarning,
-    })),
-  'plugins/bazel/build-and-reload': () =>
-    import('@/registry/icons/plugins/bazel/build-and-reload').then((mod) => ({
-      default: mod.BuildAndReload,
-    })),
-  'plugins/bdt/arbitrary-cluster': () =>
-    import('@/registry/icons/plugins/bdt/arbitrary-cluster').then((mod) => ({
-      default: mod.ArbitraryCluster,
-    })),
-  'plugins/bdt/aws-glue': () =>
-    import('@/registry/icons/plugins/bdt/aws-glue').then((mod) => ({
-      default: mod.AwsGlue,
-    })),
-  'plugins/bdt/chart-area': () =>
-    import('@/registry/icons/plugins/bdt/chart-area').then((mod) => ({
-      default: mod.ChartArea,
-    })),
-  'plugins/bdt/chart-area-range': () =>
-    import('@/registry/icons/plugins/bdt/chart-area-range').then((mod) => ({
-      default: mod.ChartAreaRange,
-    })),
-  'plugins/bdt/chart-bar': () =>
-    import('@/registry/icons/plugins/bdt/chart-bar').then((mod) => ({
-      default: mod.ChartBar,
-    })),
-  'plugins/bdt/chart-bubble': () =>
-    import('@/registry/icons/plugins/bdt/chart-bubble').then((mod) => ({
-      default: mod.ChartBubble,
-    })),
-  'plugins/bdt/chart-histogram': () =>
-    import('@/registry/icons/plugins/bdt/chart-histogram').then((mod) => ({
-      default: mod.ChartHistogram,
-    })),
-  'plugins/bdt/chart-line': () =>
-    import('@/registry/icons/plugins/bdt/chart-line').then((mod) => ({
-      default: mod.ChartLine,
-    })),
-  'plugins/bdt/chart-pie': () =>
-    import('@/registry/icons/plugins/bdt/chart-pie').then((mod) => ({
-      default: mod.ChartPie,
-    })),
-  'plugins/bdt/chart-scatter': () =>
-    import('@/registry/icons/plugins/bdt/chart-scatter').then((mod) => ({
-      default: mod.ChartScatter,
-    })),
-  'plugins/bdt/chart-stock': () =>
-    import('@/registry/icons/plugins/bdt/chart-stock').then((mod) => ({
-      default: mod.ChartStock,
-    })),
-  'plugins/bdt/cluster': () =>
-    import('@/registry/icons/plugins/bdt/cluster').then((mod) => ({
-      default: mod.Cluster,
-    })),
-  'plugins/bdt/dbt-utility': () =>
-    import('@/registry/icons/plugins/bdt/dbt-utility').then((mod) => ({
-      default: mod.DbtUtility,
-    })),
-  'plugins/bdt/flink': () =>
-    import('@/registry/icons/plugins/bdt/flink').then((mod) => ({
-      default: mod.Flink,
-    })),
-  'plugins/bdt/py-spark': () =>
-    import('@/registry/icons/plugins/bdt/py-spark').then((mod) => ({
-      default: mod.PySpark,
-    })),
-  'plugins/bdt/remote-file-systems': () =>
-    import('@/registry/icons/plugins/bdt/remote-file-systems').then((mod) => ({
-      default: mod.RemoteFileSystems,
-    })),
-  'plugins/bdt/spark-run': () =>
-    import('@/registry/icons/plugins/bdt/spark-run').then((mod) => ({
-      default: mod.SparkRun,
-    })),
-  'plugins/bdt/zeppelin': () =>
-    import('@/registry/icons/plugins/bdt/zeppelin').then((mod) => ({
-      default: mod.Zeppelin,
-    })),
-  'plugins/cidr/action-qualified-names': () =>
-    import('@/registry/icons/plugins/cidr/action-qualified-names').then(
-      (mod) => ({ default: mod.ActionQualifiedNames }),
-    ),
-  'plugins/cidr/add-executable': () =>
-    import('@/registry/icons/plugins/cidr/add-executable').then((mod) => ({
-      default: mod.AddExecutable,
-    })),
-  'plugins/cidr/add-library': () =>
-    import('@/registry/icons/plugins/cidr/add-library').then((mod) => ({
-      default: mod.AddLibrary,
-    })),
-  'plugins/cidr/add-test': () =>
-    import('@/registry/icons/plugins/cidr/add-test').then((mod) => ({
-      default: mod.AddTest,
-    })),
-  'plugins/cidr/android-device': () =>
-    import('@/registry/icons/plugins/cidr/android-device').then((mod) => ({
-      default: mod.AndroidDevice,
-    })),
-  'plugins/cidr/app-code-project': () =>
-    import('@/registry/icons/plugins/cidr/app-code-project').then((mod) => ({
-      default: mod.AppCodeProject,
-    })),
-  'plugins/cidr/app-code-workspace': () =>
-    import('@/registry/icons/plugins/cidr/app-code-workspace').then((mod) => ({
-      default: mod.AppCodeWorkspace,
-    })),
-  'plugins/cidr/application': () =>
-    import('@/registry/icons/plugins/cidr/application').then((mod) => ({
-      default: mod.Application,
-    })),
-  'plugins/cidr/application-extension': () =>
-    import('@/registry/icons/plugins/cidr/application-extension').then(
-      (mod) => ({ default: mod.ApplicationExtension }),
-    ),
-  'plugins/cidr/assets': () =>
-    import('@/registry/icons/plugins/cidr/assets').then((mod) => ({
-      default: mod.Assets,
-    })),
-  'plugins/cidr/auto-reload': () =>
-    import('@/registry/icons/plugins/cidr/auto-reload').then((mod) => ({
-      default: mod.AutoReload,
-    })),
-  'plugins/cidr/boost-test': () =>
-    import('@/registry/icons/plugins/cidr/boost-test').then((mod) => ({
-      default: mod.BoostTest,
-    })),
-  'plugins/cidr/c': () =>
-    import('@/registry/icons/plugins/cidr/c').then((mod) => ({
-      default: mod.C,
-    })),
-  'plugins/cidr/c-test': () =>
-    import('@/registry/icons/plugins/cidr/c-test').then((mod) => ({
-      default: mod.CTest,
-    })),
-  'plugins/cidr/catch-test': () =>
-    import('@/registry/icons/plugins/cidr/catch-test').then((mod) => ({
-      default: mod.CatchTest,
-    })),
-  'plugins/cidr/class-cpp': () =>
-    import('@/registry/icons/plugins/cidr/class-cpp').then((mod) => ({
-      default: mod.ClassCpp,
-    })),
-  'plugins/cidr/cmake': () =>
-    import('@/registry/icons/plugins/cidr/cmake').then((mod) => ({
-      default: mod.CMake,
-    })),
-  'plugins/cidr/cmake-debug': () =>
-    import('@/registry/icons/plugins/cidr/cmake-debug').then((mod) => ({
-      default: mod.CMakeDebug,
-    })),
-  'plugins/cidr/cmake-function': () =>
-    import('@/registry/icons/plugins/cidr/cmake-function').then((mod) => ({
-      default: mod.CMakeFunction,
-    })),
-  'plugins/cidr/cmake-load-changes': () =>
-    import('@/registry/icons/plugins/cidr/cmake-load-changes').then((mod) => ({
-      default: mod.CMakeLoadChanges,
-    })),
-  'plugins/cidr/cmake-macro': () =>
-    import('@/registry/icons/plugins/cidr/cmake-macro').then((mod) => ({
-      default: mod.CMakeMacro,
-    })),
-  'plugins/cidr/cmake-modificator': () =>
-    import('@/registry/icons/plugins/cidr/cmake-modificator').then((mod) => ({
-      default: mod.CMakeModificator,
-    })),
-  'plugins/cidr/cmake-target-executable': () =>
-    import('@/registry/icons/plugins/cidr/cmake-target-executable').then(
-      (mod) => ({ default: mod.CMakeTargetExecutable }),
-    ),
-  'plugins/cidr/cocoa-pods': () =>
-    import('@/registry/icons/plugins/cidr/cocoa-pods').then((mod) => ({
-      default: mod.CocoaPods,
-    })),
-  'plugins/cidr/code-assistant-actor': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-actor').then(
-      (mod) => ({ default: mod.CodeAssistantActor }),
-    ),
-  'plugins/cidr/code-assistant-actor-extension': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-actor-extension').then(
-      (mod) => ({ default: mod.CodeAssistantActorExtension }),
-    ),
-  'plugins/cidr/code-assistant-enum': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-enum').then((mod) => ({
-      default: mod.CodeAssistantEnum,
-    })),
-  'plugins/cidr/code-assistant-enum-const': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-enum-const').then(
-      (mod) => ({ default: mod.CodeAssistantEnumConst }),
-    ),
-  'plugins/cidr/code-assistant-enum-extension': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-enum-extension').then(
-      (mod) => ({ default: mod.CodeAssistantEnumExtension }),
-    ),
-  'plugins/cidr/code-assistant-field': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-field').then(
-      (mod) => ({ default: mod.CodeAssistantField }),
-    ),
-  'plugins/cidr/code-assistant-field-optional': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-field-optional').then(
-      (mod) => ({ default: mod.CodeAssistantFieldOptional }),
-    ),
-  'plugins/cidr/code-assistant-function': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-function').then(
-      (mod) => ({ default: mod.CodeAssistantFunction }),
-    ),
-  'plugins/cidr/code-assistant-function-abstract': () =>
-    import(
-      '@/registry/icons/plugins/cidr/code-assistant-function-abstract'
-    ).then((mod) => ({ default: mod.CodeAssistantFunctionAbstract })),
-  'plugins/cidr/code-assistant-function-invocation': () =>
-    import(
-      '@/registry/icons/plugins/cidr/code-assistant-function-invocation'
-    ).then((mod) => ({ default: mod.CodeAssistantFunctionInvocation })),
-  'plugins/cidr/code-assistant-global': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-global').then(
-      (mod) => ({ default: mod.CodeAssistantGlobal }),
-    ),
-  'plugins/cidr/code-assistant-local': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-local').then(
-      (mod) => ({ default: mod.CodeAssistantLocal }),
-    ),
-  'plugins/cidr/code-assistant-member-abstract': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-member-abstract').then(
-      (mod) => ({ default: mod.CodeAssistantMemberAbstract }),
-    ),
-  'plugins/cidr/code-assistant-operator': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-operator').then(
-      (mod) => ({ default: mod.CodeAssistantOperator }),
-    ),
-  'plugins/cidr/code-assistant-parameter': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-parameter').then(
-      (mod) => ({ default: mod.CodeAssistantParameter }),
-    ),
-  'plugins/cidr/code-assistant-property': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-property').then(
-      (mod) => ({ default: mod.CodeAssistantProperty }),
-    ),
-  'plugins/cidr/code-assistant-property-optional': () =>
-    import(
-      '@/registry/icons/plugins/cidr/code-assistant-property-optional'
-    ).then((mod) => ({ default: mod.CodeAssistantPropertyOptional })),
-  'plugins/cidr/code-assistant-protocol': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-protocol').then(
-      (mod) => ({ default: mod.CodeAssistantProtocol }),
-    ),
-  'plugins/cidr/code-assistant-protocol-extension': () =>
-    import(
-      '@/registry/icons/plugins/cidr/code-assistant-protocol-extension'
-    ).then((mod) => ({ default: mod.CodeAssistantProtocolExtension })),
-  'plugins/cidr/code-assistant-struct': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-struct').then(
-      (mod) => ({ default: mod.CodeAssistantStruct }),
-    ),
-  'plugins/cidr/code-assistant-struct-extension': () =>
-    import(
-      '@/registry/icons/plugins/cidr/code-assistant-struct-extension'
-    ).then((mod) => ({ default: mod.CodeAssistantStructExtension })),
-  'plugins/cidr/code-assistant-type': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-type').then((mod) => ({
-      default: mod.CodeAssistantType,
-    })),
-  'plugins/cidr/code-assistant-union': () =>
-    import('@/registry/icons/plugins/cidr/code-assistant-union').then(
-      (mod) => ({ default: mod.CodeAssistantUnion }),
-    ),
-  'plugins/cidr/compilation-database-load-changes': () =>
-    import(
-      '@/registry/icons/plugins/cidr/compilation-database-load-changes'
-    ).then((mod) => ({ default: mod.CompilationDatabaseLoadChanges })),
-  'plugins/cidr/cpp': () =>
-    import('@/registry/icons/plugins/cidr/cpp').then((mod) => ({
-      default: mod.Cpp,
-    })),
-  'plugins/cidr/cu': () =>
-    import('@/registry/icons/plugins/cidr/cu').then((mod) => ({
-      default: mod.Cu,
-    })),
-  'plugins/cidr/cuh': () =>
-    import('@/registry/icons/plugins/cidr/cuh').then((mod) => ({
-      default: mod.Cuh,
-    })),
-  'plugins/cidr/custom-folder': () =>
-    import('@/registry/icons/plugins/cidr/custom-folder').then((mod) => ({
-      default: mod.CustomFolder,
-    })),
-  'plugins/cidr/custom-gdb-run-configuration': () =>
-    import('@/registry/icons/plugins/cidr/custom-gdb-run-configuration').then(
-      (mod) => ({ default: mod.CustomGdbRunConfiguration }),
-    ),
-  'plugins/cidr/custom-target': () =>
-    import('@/registry/icons/plugins/cidr/custom-target').then((mod) => ({
-      default: mod.CustomTarget,
-    })),
-  'plugins/cidr/debug-target-computer': () =>
-    import('@/registry/icons/plugins/cidr/debug-target-computer').then(
-      (mod) => ({ default: mod.DebugTargetComputer }),
-    ),
-  'plugins/cidr/debug-target-controller': () =>
-    import('@/registry/icons/plugins/cidr/debug-target-controller').then(
-      (mod) => ({ default: mod.DebugTargetController }),
-    ),
-  'plugins/cidr/dependency': () =>
-    import('@/registry/icons/plugins/cidr/dependency').then((mod) => ({
-      default: mod.Dependency,
-    })),
-  'plugins/cidr/doc-test': () =>
-    import('@/registry/icons/plugins/cidr/doc-test').then((mod) => ({
-      default: mod.DocTest,
-    })),
-  'plugins/cidr/executable-target': () =>
-    import('@/registry/icons/plugins/cidr/executable-target').then((mod) => ({
-      default: mod.ExecutableTarget,
-    })),
-  'plugins/cidr/extension-run-configuration': () =>
-    import('@/registry/icons/plugins/cidr/extension-run-configuration').then(
-      (mod) => ({ default: mod.ExtensionRunConfiguration }),
-    ),
-  'plugins/cidr/file-type-swift': () =>
-    import('@/registry/icons/plugins/cidr/file-type-swift').then((mod) => ({
-      default: mod.FileTypeSwift,
-    })),
-  'plugins/cidr/framework': () =>
-    import('@/registry/icons/plugins/cidr/framework').then((mod) => ({
-      default: mod.Framework,
-    })),
-  'plugins/cidr/freeze': () =>
-    import('@/registry/icons/plugins/cidr/freeze').then((mod) => ({
-      default: mod.Freeze,
-    })),
-  'plugins/cidr/freeze-all': () =>
-    import('@/registry/icons/plugins/cidr/freeze-all').then((mod) => ({
-      default: mod.FreezeAll,
-    })),
-  'plugins/cidr/google-test': () =>
-    import('@/registry/icons/plugins/cidr/google-test').then((mod) => ({
-      default: mod.GoogleTest,
-    })),
-  'plugins/cidr/group': () =>
-    import('@/registry/icons/plugins/cidr/group').then((mod) => ({
-      default: mod.Group,
-    })),
-  'plugins/cidr/group-qualified-name': () =>
-    import('@/registry/icons/plugins/cidr/group-qualified-name').then(
-      (mod) => ({ default: mod.GroupQualifiedName }),
-    ),
-  'plugins/cidr/h': () =>
-    import('@/registry/icons/plugins/cidr/h').then((mod) => ({
-      default: mod.H,
-    })),
-  'plugins/cidr/i-phone-device': () =>
-    import('@/registry/icons/plugins/cidr/i-phone-device').then((mod) => ({
-      default: mod.IPhoneDevice,
-    })),
-  'plugins/cidr/install': () =>
-    import('@/registry/icons/plugins/cidr/install').then((mod) => ({
-      default: mod.Install,
-    })),
-  'plugins/cidr/iocfile-type': () =>
-    import('@/registry/icons/plugins/cidr/iocfile-type').then((mod) => ({
-      default: mod.IOCFileType,
-    })),
-  'plugins/cidr/ld': () =>
-    import('@/registry/icons/plugins/cidr/ld').then((mod) => ({
-      default: mod.Ld,
-    })),
-  'plugins/cidr/library-target': () =>
-    import('@/registry/icons/plugins/cidr/library-target').then((mod) => ({
-      default: mod.LibraryTarget,
-    })),
-  'plugins/cidr/load-swift-package-manager-changes': () =>
-    import(
-      '@/registry/icons/plugins/cidr/load-swift-package-manager-changes'
-    ).then((mod) => ({ default: mod.LoadSwiftPackageManagerChanges })),
-  'plugins/cidr/local-swift-package-dependency': () =>
-    import('@/registry/icons/plugins/cidr/local-swift-package-dependency').then(
-      (mod) => ({ default: mod.LocalSwiftPackageDependency }),
-    ),
-  'plugins/cidr/location': () =>
-    import('@/registry/icons/plugins/cidr/location').then((mod) => ({
-      default: mod.Location,
-    })),
-  'plugins/cidr/m': () =>
-    import('@/registry/icons/plugins/cidr/m').then((mod) => ({
-      default: mod.M,
-    })),
-  'plugins/cidr/makefile': () =>
-    import('@/registry/icons/plugins/cidr/makefile').then((mod) => ({
-      default: mod.Makefile,
-    })),
-  'plugins/cidr/makefile-app': () =>
-    import('@/registry/icons/plugins/cidr/makefile-app').then((mod) => ({
-      default: mod.MakefileApp,
-    })),
-  'plugins/cidr/makefile-load-changes': () =>
-    import('@/registry/icons/plugins/cidr/makefile-load-changes').then(
-      (mod) => ({ default: mod.MakefileLoadChanges }),
-    ),
-  'plugins/cidr/metal': () =>
-    import('@/registry/icons/plugins/cidr/metal').then((mod) => ({
-      default: mod.Metal,
-    })),
-  'plugins/cidr/mm': () =>
-    import('@/registry/icons/plugins/cidr/mm').then((mod) => ({
-      default: mod.Mm,
-    })),
-  'plugins/cidr/module-target': () =>
-    import('@/registry/icons/plugins/cidr/module-target').then((mod) => ({
-      default: mod.ModuleTarget,
-    })),
-  'plugins/cidr/modulemap': () =>
-    import('@/registry/icons/plugins/cidr/modulemap').then((mod) => ({
-      default: mod.Modulemap,
-    })),
-  'plugins/cidr/namespace-cpp': () =>
-    import('@/registry/icons/plugins/cidr/namespace-cpp').then((mod) => ({
-      default: mod.NamespaceCpp,
-    })),
-  'plugins/cidr/ocd-run-configuration': () =>
-    import('@/registry/icons/plugins/cidr/ocd-run-configuration').then(
-      (mod) => ({ default: mod.OcdRunConfiguration }),
-    ),
-  'plugins/cidr/option-command': () =>
-    import('@/registry/icons/plugins/cidr/option-command').then((mod) => ({
-      default: mod.OptionCommand,
-    })),
-  'plugins/cidr/precedence-group': () =>
-    import('@/registry/icons/plugins/cidr/precedence-group').then((mod) => ({
-      default: mod.PrecedenceGroup,
-    })),
-  'plugins/cidr/preprocess-defines': () =>
-    import('@/registry/icons/plugins/cidr/preprocess-defines').then((mod) => ({
-      default: mod.PreprocessDefines,
-    })),
-  'plugins/cidr/qt': () =>
-    import('@/registry/icons/plugins/cidr/qt').then((mod) => ({
-      default: mod.Qt,
-    })),
-  'plugins/cidr/register': () =>
-    import('@/registry/icons/plugins/cidr/register').then((mod) => ({
-      default: mod.Register,
-    })),
-  'plugins/cidr/registers': () =>
-    import('@/registry/icons/plugins/cidr/registers').then((mod) => ({
-      default: mod.Registers,
-    })),
-  'plugins/cidr/remote-swift-package-dependency': () =>
-    import(
-      '@/registry/icons/plugins/cidr/remote-swift-package-dependency'
-    ).then((mod) => ({ default: mod.RemoteSwiftPackageDependency })),
-  'plugins/cidr/remote-tool-set': () =>
-    import('@/registry/icons/plugins/cidr/remote-tool-set').then((mod) => ({
-      default: mod.RemoteToolSet,
-    })),
-  'plugins/cidr/reset-cache-and-reload-projects': () =>
-    import(
-      '@/registry/icons/plugins/cidr/reset-cache-and-reload-projects'
-    ).then((mod) => ({ default: mod.ResetCacheAndReloadProjects })),
-  'plugins/cidr/reset-mcu': () =>
-    import('@/registry/icons/plugins/cidr/reset-mcu').then((mod) => ({
-      default: mod.ResetMcu,
-    })),
-  'plugins/cidr/return-value': () =>
-    import('@/registry/icons/plugins/cidr/return-value').then((mod) => ({
-      default: mod.ReturnValue,
-    })),
-  'plugins/cidr/stm32-cube-mx': () =>
-    import('@/registry/icons/plugins/cidr/stm32-cube-mx').then((mod) => ({
-      default: mod.STM32CubeMX,
-    })),
-  'plugins/cidr/swift-lang': () =>
-    import('@/registry/icons/plugins/cidr/swift-lang').then((mod) => ({
-      default: mod.SwiftLang,
-    })),
-  'plugins/cidr/swift-package': () =>
-    import('@/registry/icons/plugins/cidr/swift-package').then((mod) => ({
-      default: mod.SwiftPackage,
-    })),
-  'plugins/cidr/swift-package-dependency': () =>
-    import('@/registry/icons/plugins/cidr/swift-package-dependency').then(
-      (mod) => ({ default: mod.SwiftPackageDependency }),
-    ),
-  'plugins/cidr/swift-package-manifest': () =>
-    import('@/registry/icons/plugins/cidr/swift-package-manifest').then(
-      (mod) => ({ default: mod.SwiftPackageManifest }),
-    ),
-  'plugins/cidr/swift-package-run': () =>
-    import('@/registry/icons/plugins/cidr/swift-package-run').then((mod) => ({
-      default: mod.SwiftPackageRun,
-    })),
-  'plugins/cidr/swift-package-test': () =>
-    import('@/registry/icons/plugins/cidr/swift-package-test').then((mod) => ({
-      default: mod.SwiftPackageTest,
-    })),
-  'plugins/cidr/target': () =>
-    import('@/registry/icons/plugins/cidr/target').then((mod) => ({
-      default: mod.Target,
-    })),
-  'plugins/cidr/type-extension': () =>
-    import('@/registry/icons/plugins/cidr/type-extension').then((mod) => ({
-      default: mod.TypeExtension,
-    })),
-  'plugins/cidr/unfreeze': () =>
-    import('@/registry/icons/plugins/cidr/unfreeze').then((mod) => ({
-      default: mod.Unfreeze,
-    })),
-  'plugins/cidr/unfreeze-all': () =>
-    import('@/registry/icons/plugins/cidr/unfreeze-all').then((mod) => ({
-      default: mod.UnfreezeAll,
-    })),
-  'plugins/cidr/value-muted': () =>
-    import('@/registry/icons/plugins/cidr/value-muted').then((mod) => ({
-      default: mod.ValueMuted,
-    })),
-  'plugins/cidr/variables': () =>
-    import('@/registry/icons/plugins/cidr/variables').then((mod) => ({
-      default: mod.Variables,
-    })),
-  'plugins/cidr/vcpkg': () =>
-    import('@/registry/icons/plugins/cidr/vcpkg').then((mod) => ({
-      default: mod.VCPKG,
-    })),
-  'plugins/cidr/vhdl': () =>
-    import('@/registry/icons/plugins/cidr/vhdl').then((mod) => ({
-      default: mod.Vhdl,
-    })),
-  'plugins/cidr/сode-assistant-class': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-class').then(
-      (mod) => ({ default: mod.СodeAssistantClass }),
-    ),
-  'plugins/cidr/сode-assistant-class-extension': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-class-extension').then(
-      (mod) => ({ default: mod.СodeAssistantClassExtension }),
-    ),
-  'plugins/cidr/сode-assistant-macro': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-macro').then(
-      (mod) => ({ default: mod.СodeAssistantMacro }),
-    ),
-  'plugins/cidr/сode-assistant-member': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-member').then(
-      (mod) => ({ default: mod.СodeAssistantMember }),
-    ),
-  'plugins/cidr/сode-assistant-member-optional': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-member-optional').then(
-      (mod) => ({ default: mod.СodeAssistantMemberOptional }),
-    ),
-  'plugins/cidr/сode-assistant-namespace': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-namespace').then(
-      (mod) => ({ default: mod.СodeAssistantNamespace }),
-    ),
-  'plugins/cidr/сore-dump-debug': () =>
-    import('@/registry/icons/plugins/cidr/сore-dump-debug').then((mod) => ({
-      default: mod.СoreDumpDebug,
-    })),
-  'plugins/cidr/сrun-configuration': () =>
-    import('@/registry/icons/plugins/cidr/сrun-configuration').then((mod) => ({
-      default: mod.СRunConfiguration,
-    })),
-  'plugins/code-with-me/cwm-cam-avatar-off': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-cam-avatar-off').then(
-      (mod) => ({ default: mod.CwmCamAvatarOff }),
-    ),
-  'plugins/code-with-me/cwm-cam-avatar-on': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-cam-avatar-on').then(
-      (mod) => ({ default: mod.CwmCamAvatarOn }),
-    ),
-  'plugins/code-with-me/cwm-cam-off': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-cam-off').then((mod) => ({
-      default: mod.CwmCamOff,
-    })),
-  'plugins/code-with-me/cwm-cam-on': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-cam-on').then((mod) => ({
-      default: mod.CwmCamOn,
-    })),
-  'plugins/code-with-me/cwm-disable-call': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-disable-call').then(
-      (mod) => ({ default: mod.CwmDisableCall }),
-    ),
-  'plugins/code-with-me/cwm-enable-call': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-enable-call').then(
-      (mod) => ({ default: mod.CwmEnableCall }),
-    ),
-  'plugins/code-with-me/cwm-icon-modificator': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-icon-modificator').then(
-      (mod) => ({ default: mod.CwmIconModificator }),
-    ),
-  'plugins/code-with-me/cwm-icon-modificator-menu': () =>
-    import(
-      '@/registry/icons/plugins/code-with-me/cwm-icon-modificator-menu'
-    ).then((mod) => ({ default: mod.CwmIconModificatorMenu })),
-  'plugins/code-with-me/cwm-invite': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-invite').then((mod) => ({
-      default: mod.CwmInvite,
-    })),
-  'plugins/code-with-me/cwm-mic-avatar-off': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-mic-avatar-off').then(
-      (mod) => ({ default: mod.CwmMicAvatarOff }),
-    ),
-  'plugins/code-with-me/cwm-mic-avatar-on': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-mic-avatar-on').then(
-      (mod) => ({ default: mod.CwmMicAvatarOn }),
-    ),
-  'plugins/code-with-me/cwm-mic-off': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-mic-off').then((mod) => ({
-      default: mod.CwmMicOff,
-    })),
-  'plugins/code-with-me/cwm-mic-on': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-mic-on').then((mod) => ({
-      default: mod.CwmMicOn,
-    })),
-  'plugins/code-with-me/cwm-permission-edit': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-permission-edit').then(
-      (mod) => ({ default: mod.CwmPermissionEdit }),
-    ),
-  'plugins/code-with-me/cwm-permission-full': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-permission-full').then(
-      (mod) => ({ default: mod.CwmPermissionFull }),
-    ),
-  'plugins/code-with-me/cwm-permission-view': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-permission-view').then(
-      (mod) => ({ default: mod.CwmPermissionView }),
-    ),
-  'plugins/code-with-me/cwm-permissions': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-permissions').then(
-      (mod) => ({ default: mod.CwmPermissions }),
-    ),
-  'plugins/code-with-me/cwm-permissions-denied': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-permissions-denied').then(
-      (mod) => ({ default: mod.CwmPermissionsDenied }),
-    ),
-  'plugins/code-with-me/cwm-permissions-granted': () =>
-    import(
-      '@/registry/icons/plugins/code-with-me/cwm-permissions-granted'
-    ).then((mod) => ({ default: mod.CwmPermissionsGranted })),
-  'plugins/code-with-me/cwm-screen-in-browser-off': () =>
-    import(
-      '@/registry/icons/plugins/code-with-me/cwm-screen-in-browser-off'
-    ).then((mod) => ({ default: mod.CwmScreenInBrowserOff })),
-  'plugins/code-with-me/cwm-screen-in-browser-on': () =>
-    import(
-      '@/registry/icons/plugins/code-with-me/cwm-screen-in-browser-on'
-    ).then((mod) => ({ default: mod.CwmScreenInBrowserOn })),
-  'plugins/code-with-me/cwm-screen-off': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-screen-off').then(
-      (mod) => ({ default: mod.CwmScreenOff }),
-    ),
-  'plugins/code-with-me/cwm-screen-on': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-screen-on').then(
-      (mod) => ({ default: mod.CwmScreenOn }),
-    ),
-  'plugins/code-with-me/cwm-share': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-share').then((mod) => ({
-      default: mod.CwmShare,
-    })),
-  'plugins/code-with-me/cwm-verified': () =>
-    import('@/registry/icons/plugins/code-with-me/cwm-verified').then(
-      (mod) => ({ default: mod.CwmVerified }),
-    ),
-  'plugins/dart/dart': () =>
-    import('@/registry/icons/plugins/dart/dart').then((mod) => ({
-      default: mod.Dart,
-    })),
-  'plugins/dart/dart-remote': () =>
-    import('@/registry/icons/plugins/dart/dart-remote').then((mod) => ({
-      default: mod.DartRemote,
-    })),
-  'plugins/dart/dart-test': () =>
-    import('@/registry/icons/plugins/dart/dart-test').then((mod) => ({
-      default: mod.DartTest,
-    })),
-  'plugins/dart/dart-web': () =>
-    import('@/registry/icons/plugins/dart/dart-web').then((mod) => ({
-      default: mod.DartWeb,
-    })),
-  'plugins/dart/observatory': () =>
-    import('@/registry/icons/plugins/dart/observatory').then((mod) => ({
-      default: mod.Observatory,
-    })),
-  'plugins/dart/warning-point': () =>
-    import('@/registry/icons/plugins/dart/warning-point').then((mod) => ({
-      default: mod.WarningPoint,
-    })),
-  'plugins/databricks/run-as-workflow': () =>
-    import('@/registry/icons/plugins/databricks/run-as-workflow').then(
-      (mod) => ({ default: mod.RunAsWorkflow }),
-    ),
-  'plugins/dev-containers/dev-containers': () =>
-    import('@/registry/icons/plugins/dev-containers/dev-containers').then(
-      (mod) => ({ default: mod.DevContainers }),
-    ),
-  'plugins/docker/docker': () =>
-    import('@/registry/icons/plugins/docker/docker').then((mod) => ({
-      default: mod.Docker,
-    })),
-  'plugins/docker/docker-compose': () =>
-    import('@/registry/icons/plugins/docker/docker-compose').then((mod) => ({
-      default: mod.DockerCompose,
-    })),
-  'plugins/docker/docker-compose-scaled-service-stopped': () =>
-    import(
-      '@/registry/icons/plugins/docker/docker-compose-scaled-service-stopped'
-    ).then((mod) => ({ default: mod.DockerComposeScaledServiceStopped })),
-  'plugins/docker/docker-compose-scaled-service-up': () =>
-    import(
-      '@/registry/icons/plugins/docker/docker-compose-scaled-service-up'
-    ).then((mod) => ({ default: mod.DockerComposeScaledServiceUp })),
-  'plugins/docker/docker-compose-service-stopped': () =>
-    import(
-      '@/registry/icons/plugins/docker/docker-compose-service-stopped'
-    ).then((mod) => ({ default: mod.DockerComposeServiceStopped })),
-  'plugins/docker/docker-compose-service-up': () =>
-    import('@/registry/icons/plugins/docker/docker-compose-service-up').then(
-      (mod) => ({ default: mod.DockerComposeServiceUp }),
-    ),
-  'plugins/docker/docker-registry': () =>
-    import('@/registry/icons/plugins/docker/docker-registry').then((mod) => ({
-      default: mod.DockerRegistry,
-    })),
-  'plugins/full-line-completion/full-line-completion': () =>
-    import(
-      '@/registry/icons/plugins/full-line-completion/full-line-completion'
-    ).then((mod) => ({ default: mod.FullLineCompletion })),
-  'plugins/full-line-completion/full-line-completion-outline': () =>
-    import(
-      '@/registry/icons/plugins/full-line-completion/full-line-completion-outline'
-    ).then((mod) => ({ default: mod.FullLineCompletionOutline })),
-  'plugins/github/github': () =>
-    import('@/registry/icons/plugins/github/github').then((mod) => ({
-      default: mod.Github,
-    })),
-  'plugins/github/github-warning': () =>
-    import('@/registry/icons/plugins/github/github-warning').then((mod) => ({
-      default: mod.GithubWarning,
-    })),
-  'plugins/gitlab/git-lab-logo': () =>
-    import('@/registry/icons/plugins/gitlab/git-lab-logo').then((mod) => ({
-      default: mod.GitLabLogo,
-    })),
-  'plugins/gitlab/git-lab-warning': () =>
-    import('@/registry/icons/plugins/gitlab/git-lab-warning').then((mod) => ({
-      default: mod.GitLabWarning,
-    })),
-  'plugins/graphql/apollo': () =>
-    import('@/registry/icons/plugins/graphql/apollo').then((mod) => ({
-      default: mod.Apollo,
-    })),
-  'plugins/graphql/attribute': () =>
-    import('@/registry/icons/plugins/graphql/attribute').then((mod) => ({
-      default: mod.Attribute,
-    })),
-  'plugins/graphql/enum': () =>
-    import('@/registry/icons/plugins/graphql/enum').then((mod) => ({
-      default: mod.Enum,
-    })),
-  'plugins/graphql/field': () =>
-    import('@/registry/icons/plugins/graphql/field').then((mod) => ({
-      default: mod.Field,
-    })),
-  'plugins/graphql/fragment': () =>
-    import('@/registry/icons/plugins/graphql/fragment').then((mod) => ({
-      default: mod.Fragment,
-    })),
-  'plugins/graphql/graph-ql': () =>
-    import('@/registry/icons/plugins/graphql/graph-ql').then((mod) => ({
-      default: mod.GraphQL,
-    })),
-  'plugins/graphql/graph-qlcongif': () =>
-    import('@/registry/icons/plugins/graphql/graph-qlcongif').then((mod) => ({
-      default: mod.GraphQLCongif,
-    })),
-  'plugins/graphql/graph-qlschema': () =>
-    import('@/registry/icons/plugins/graphql/graph-qlschema').then((mod) => ({
-      default: mod.GraphQLSchema,
-    })),
-  'plugins/graphql/interface': () =>
-    import('@/registry/icons/plugins/graphql/interface').then((mod) => ({
-      default: mod.Interface,
-    })),
-  'plugins/graphql/mutation': () =>
-    import('@/registry/icons/plugins/graphql/mutation').then((mod) => ({
-      default: mod.Mutation,
-    })),
-  'plugins/graphql/query': () =>
-    import('@/registry/icons/plugins/graphql/query').then((mod) => ({
-      default: mod.Query,
-    })),
-  'plugins/graphql/relay': () =>
-    import('@/registry/icons/plugins/graphql/relay').then((mod) => ({
-      default: mod.Relay,
-    })),
-  'plugins/graphql/scalar': () =>
-    import('@/registry/icons/plugins/graphql/scalar').then((mod) => ({
-      default: mod.Scalar,
-    })),
-  'plugins/graphql/subscription': () =>
-    import('@/registry/icons/plugins/graphql/subscription').then((mod) => ({
-      default: mod.Subscription,
-    })),
-  'plugins/graphql/type': () =>
-    import('@/registry/icons/plugins/graphql/type').then((mod) => ({
-      default: mod.Type,
-    })),
-  'plugins/graphql/variable': () =>
-    import('@/registry/icons/plugins/graphql/variable').then((mod) => ({
-      default: mod.Variable,
-    })),
-  'plugins/java-ee/abstract-class': () =>
-    import('@/registry/icons/plugins/java-ee/abstract-class').then((mod) => ({
-      default: mod.AbstractClass,
-    })),
-  'plugins/java-ee/abstract-field': () =>
-    import('@/registry/icons/plugins/java-ee/abstract-field').then((mod) => ({
-      default: mod.AbstractField,
-    })),
-  'plugins/java-ee/abstract-method': () =>
-    import('@/registry/icons/plugins/java-ee/abstract-method').then((mod) => ({
-      default: mod.AbstractMethod,
-    })),
-  'plugins/java-ee/abstract-property': () =>
-    import('@/registry/icons/plugins/java-ee/abstract-property').then(
-      (mod) => ({ default: mod.AbstractProperty }),
-    ),
-  'plugins/java-ee/annotation-type': () =>
-    import('@/registry/icons/plugins/java-ee/annotation-type').then((mod) => ({
-      default: mod.AnnotationType,
-    })),
-  'plugins/java-ee/application-xml': () =>
-    import('@/registry/icons/plugins/java-ee/application-xml').then((mod) => ({
-      default: mod.ApplicationXml,
-    })),
-  'plugins/java-ee/bean': () =>
-    import('@/registry/icons/plugins/java-ee/bean').then((mod) => ({
-      default: mod.Bean,
-    })),
-  'plugins/java-ee/bean-factory': () =>
-    import('@/registry/icons/plugins/java-ee/bean-factory').then((mod) => ({
-      default: mod.BeanFactory,
-    })),
-  'plugins/java-ee/bean-infrastructure': () =>
-    import('@/registry/icons/plugins/java-ee/bean-infrastructure').then(
-      (mod) => ({ default: mod.BeanInfrastructure }),
-    ),
-  'plugins/java-ee/bean-method': () =>
-    import('@/registry/icons/plugins/java-ee/bean-method').then((mod) => ({
-      default: mod.BeanMethod,
-    })),
-  'plugins/java-ee/bean-property': () =>
-    import('@/registry/icons/plugins/java-ee/bean-property').then((mod) => ({
-      default: mod.BeanProperty,
-    })),
-  'plugins/java-ee/build-on-frame-deactivation': () =>
-    import('@/registry/icons/plugins/java-ee/build-on-frame-deactivation').then(
-      (mod) => ({ default: mod.BuildOnFrameDeactivation }),
-    ),
-  'plugins/java-ee/cdi': () =>
-    import('@/registry/icons/plugins/java-ee/cdi').then((mod) => ({
-      default: mod.Cdi,
-    })),
-  'plugins/java-ee/class': () =>
-    import('@/registry/icons/plugins/java-ee/class').then((mod) => ({
-      default: mod.Class,
-    })),
-  'plugins/java-ee/class-initializer': () =>
-    import('@/registry/icons/plugins/java-ee/class-initializer').then(
-      (mod) => ({ default: mod.ClassInitializer }),
-    ),
-  'plugins/java-ee/component': () =>
-    import('@/registry/icons/plugins/java-ee/component').then((mod) => ({
-      default: mod.Component,
-    })),
-  'plugins/java-ee/configuration-scan': () =>
-    import('@/registry/icons/plugins/java-ee/configuration-scan').then(
-      (mod) => ({ default: mod.ConfigurationScan }),
-    ),
-  'plugins/java-ee/constraint-mappings': () =>
-    import('@/registry/icons/plugins/java-ee/constraint-mappings').then(
-      (mod) => ({ default: mod.ConstraintMappings }),
-    ),
-  'plugins/java-ee/constraint-validator': () =>
-    import('@/registry/icons/plugins/java-ee/constraint-validator').then(
-      (mod) => ({ default: mod.ConstraintValidator }),
-    ),
-  'plugins/java-ee/constraints': () =>
-    import('@/registry/icons/plugins/java-ee/constraints').then((mod) => ({
-      default: mod.Constraints,
-    })),
-  'plugins/java-ee/converter': () =>
-    import('@/registry/icons/plugins/java-ee/converter').then((mod) => ({
-      default: mod.Converter,
-    })),
-  'plugins/java-ee/decorator': () =>
-    import('@/registry/icons/plugins/java-ee/decorator').then((mod) => ({
-      default: mod.Decorator,
-    })),
-  'plugins/java-ee/deployments': () =>
-    import('@/registry/icons/plugins/java-ee/deployments').then((mod) => ({
-      default: mod.Deployments,
-    })),
-  'plugins/java-ee/ejb-artifact': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-artifact').then((mod) => ({
-      default: mod.EjbArtifact,
-    })),
-  'plugins/java-ee/ejb-business-method': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-business-method').then(
-      (mod) => ({ default: mod.EjbBusinessMethod }),
-    ),
-  'plugins/java-ee/ejb-class': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-class').then((mod) => ({
-      default: mod.EjbClass,
-    })),
-  'plugins/java-ee/ejb-cmp-field': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-cmp-field').then((mod) => ({
-      default: mod.EjbCmpField,
-    })),
-  'plugins/java-ee/ejb-cmr-field': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-cmr-field').then((mod) => ({
-      default: mod.EjbCmrField,
-    })),
-  'plugins/java-ee/ejb-create-method': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-create-method').then(
-      (mod) => ({ default: mod.EjbCreateMethod }),
-    ),
-  'plugins/java-ee/ejb-finder-method': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-finder-method').then(
-      (mod) => ({ default: mod.EjbFinderMethod }),
-    ),
-  'plugins/java-ee/ejb-jar-xml': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-jar-xml').then((mod) => ({
-      default: mod.EjbJarXml,
-    })),
-  'plugins/java-ee/ejb-module': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-module').then((mod) => ({
-      default: mod.EjbModule,
-    })),
-  'plugins/java-ee/ejb-primary-key-class': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-primary-key-class').then(
-      (mod) => ({ default: mod.EjbPrimaryKeyClass }),
-    ),
-  'plugins/java-ee/ejb-reference': () =>
-    import('@/registry/icons/plugins/java-ee/ejb-reference').then((mod) => ({
-      default: mod.EjbReference,
-    })),
-  'plugins/java-ee/embedded-attribute-overlay': () =>
-    import('@/registry/icons/plugins/java-ee/embedded-attribute-overlay').then(
-      (mod) => ({ default: mod.EmbeddedAttributeOverlay }),
-    ),
-  'plugins/java-ee/entity-bean': () =>
-    import('@/registry/icons/plugins/java-ee/entity-bean').then((mod) => ({
-      default: mod.EntityBean,
-    })),
-  'plugins/java-ee/enum': () =>
-    import('@/registry/icons/plugins/java-ee/enum').then((mod) => ({
-      default: mod.Enum,
-    })),
-  'plugins/java-ee/er-diagram': () =>
-    import('@/registry/icons/plugins/java-ee/er-diagram').then((mod) => ({
-      default: mod.ErDiagram,
-    })),
-  'plugins/java-ee/event': () =>
-    import('@/registry/icons/plugins/java-ee/event').then((mod) => ({
-      default: mod.Event,
-    })),
-  'plugins/java-ee/field': () =>
-    import('@/registry/icons/plugins/java-ee/field').then((mod) => ({
-      default: mod.Field,
-    })),
-  'plugins/java-ee/field-in-xml': () =>
-    import('@/registry/icons/plugins/java-ee/field-in-xml').then((mod) => ({
-      default: mod.FieldInXml,
-    })),
-  'plugins/java-ee/general': () =>
-    import('@/registry/icons/plugins/java-ee/general').then((mod) => ({
-      default: mod.General,
-    })),
-  'plugins/java-ee/getter-in-xml': () =>
-    import('@/registry/icons/plugins/java-ee/getter-in-xml').then((mod) => ({
-      default: mod.GetterInXml,
-    })),
-  'plugins/java-ee/groovy': () =>
-    import('@/registry/icons/plugins/java-ee/groovy').then((mod) => ({
-      default: mod.Groovy,
-    })),
-  'plugins/java-ee/hibernate': () =>
-    import('@/registry/icons/plugins/java-ee/hibernate').then((mod) => ({
-      default: mod.Hibernate,
-    })),
-  'plugins/java-ee/home': () =>
-    import('@/registry/icons/plugins/java-ee/home').then((mod) => ({
-      default: mod.Home,
-    })),
-  'plugins/java-ee/inherited-attribute-overlay': () =>
-    import('@/registry/icons/plugins/java-ee/inherited-attribute-overlay').then(
-      (mod) => ({ default: mod.InheritedAttributeOverlay }),
-    ),
-  'plugins/java-ee/inteceptor-method': () =>
-    import('@/registry/icons/plugins/java-ee/inteceptor-method').then(
-      (mod) => ({ default: mod.InteceptorMethod }),
-    ),
-  'plugins/java-ee/interceptor-class': () =>
-    import('@/registry/icons/plugins/java-ee/interceptor-class').then(
-      (mod) => ({ default: mod.InterceptorClass }),
-    ),
-  'plugins/java-ee/interceptors': () =>
-    import('@/registry/icons/plugins/java-ee/interceptors').then((mod) => ({
-      default: mod.Interceptors,
-    })),
-  'plugins/java-ee/interface': () =>
-    import('@/registry/icons/plugins/java-ee/interface').then((mod) => ({
-      default: mod.Interface,
-    })),
-  'plugins/java-ee/jakarta-ee': () =>
-    import('@/registry/icons/plugins/java-ee/jakarta-ee').then((mod) => ({
-      default: mod.JakartaEE,
-    })),
-  'plugins/java-ee/java-eeartifact': () =>
-    import('@/registry/icons/plugins/java-ee/java-eeartifact').then((mod) => ({
-      default: mod.JavaEEArtifact,
-    })),
-  'plugins/java-ee/javaee-app-module': () =>
-    import('@/registry/icons/plugins/java-ee/javaee-app-module').then(
-      (mod) => ({ default: mod.JavaeeAppModule }),
-    ),
-  'plugins/java-ee/jpa-facet': () =>
-    import('@/registry/icons/plugins/java-ee/jpa-facet').then((mod) => ({
-      default: mod.JpaFacet,
-    })),
-  'plugins/java-ee/lib-annotation': () =>
-    import('@/registry/icons/plugins/java-ee/lib-annotation').then((mod) => ({
-      default: mod.LibAnnotation,
-    })),
-  'plugins/java-ee/lib-validator': () =>
-    import('@/registry/icons/plugins/java-ee/lib-validator').then((mod) => ({
-      default: mod.LibValidator,
-    })),
-  'plugins/java-ee/listener': () =>
-    import('@/registry/icons/plugins/java-ee/listener').then((mod) => ({
-      default: mod.Listener,
-    })),
-  'plugins/java-ee/managed-bean': () =>
-    import('@/registry/icons/plugins/java-ee/managed-bean').then((mod) => ({
-      default: mod.ManagedBean,
-    })),
-  'plugins/java-ee/message-bean': () =>
-    import('@/registry/icons/plugins/java-ee/message-bean').then((mod) => ({
-      default: mod.MessageBean,
-    })),
-  'plugins/java-ee/method': () =>
-    import('@/registry/icons/plugins/java-ee/method').then((mod) => ({
-      default: mod.Method,
-    })),
-  'plugins/java-ee/navigation-rule': () =>
-    import('@/registry/icons/plugins/java-ee/navigation-rule').then((mod) => ({
-      default: mod.NavigationRule,
-    })),
-  'plugins/java-ee/persistence-attribute': () =>
-    import('@/registry/icons/plugins/java-ee/persistence-attribute').then(
-      (mod) => ({ default: mod.PersistenceAttribute }),
-    ),
-  'plugins/java-ee/persistence-embeddable': () =>
-    import('@/registry/icons/plugins/java-ee/persistence-embeddable').then(
-      (mod) => ({ default: mod.PersistenceEmbeddable }),
-    ),
-  'plugins/java-ee/persistence-id': () =>
-    import('@/registry/icons/plugins/java-ee/persistence-id').then((mod) => ({
-      default: mod.PersistenceId,
-    })),
-  'plugins/java-ee/persistence-id-relationship': () =>
-    import('@/registry/icons/plugins/java-ee/persistence-id-relationship').then(
-      (mod) => ({ default: mod.PersistenceIdRelationship }),
-    ),
-  'plugins/java-ee/persistence-mapped-superclass': () =>
-    import(
-      '@/registry/icons/plugins/java-ee/persistence-mapped-superclass'
-    ).then((mod) => ({ default: mod.PersistenceMappedSuperclass })),
-  'plugins/java-ee/persistence-relationship': () =>
-    import('@/registry/icons/plugins/java-ee/persistence-relationship').then(
-      (mod) => ({ default: mod.PersistenceRelationship }),
-    ),
-  'plugins/java-ee/persistence-unit': () =>
-    import('@/registry/icons/plugins/java-ee/persistence-unit').then((mod) => ({
-      default: mod.PersistenceUnit,
-    })),
-  'plugins/java-ee/property': () =>
-    import('@/registry/icons/plugins/java-ee/property').then((mod) => ({
-      default: mod.Property,
-    })),
-  'plugins/java-ee/publisher': () =>
-    import('@/registry/icons/plugins/java-ee/publisher').then((mod) => ({
-      default: mod.Publisher,
-    })),
-  'plugins/java-ee/record': () =>
-    import('@/registry/icons/plugins/java-ee/record').then((mod) => ({
-      default: mod.Record,
-    })),
-  'plugins/java-ee/remote': () =>
-    import('@/registry/icons/plugins/java-ee/remote').then((mod) => ({
-      default: mod.Remote,
-    })),
-  'plugins/java-ee/renderer-kit': () =>
-    import('@/registry/icons/plugins/java-ee/renderer-kit').then((mod) => ({
-      default: mod.RendererKit,
-    })),
-  'plugins/java-ee/request-mapping': () =>
-    import('@/registry/icons/plugins/java-ee/request-mapping').then((mod) => ({
-      default: mod.RequestMapping,
-    })),
-  'plugins/java-ee/scheduled-event': () =>
-    import('@/registry/icons/plugins/java-ee/scheduled-event').then((mod) => ({
-      default: mod.ScheduledEvent,
-    })),
-  'plugins/java-ee/scopes': () =>
-    import('@/registry/icons/plugins/java-ee/scopes').then((mod) => ({
-      default: mod.Scopes,
-    })),
-  'plugins/java-ee/session-bean': () =>
-    import('@/registry/icons/plugins/java-ee/session-bean').then((mod) => ({
-      default: mod.SessionBean,
-    })),
-  'plugins/java-ee/show-autowired-candidates': () =>
-    import('@/registry/icons/plugins/java-ee/show-autowired-candidates').then(
-      (mod) => ({ default: mod.ShowAutowiredCandidates }),
-    ),
-  'plugins/java-ee/show-autowired-dependencies': () =>
-    import('@/registry/icons/plugins/java-ee/show-autowired-dependencies').then(
-      (mod) => ({ default: mod.ShowAutowiredDependencies }),
-    ),
-  'plugins/java-ee/show-cacheable': () =>
-    import('@/registry/icons/plugins/java-ee/show-cacheable').then((mod) => ({
-      default: mod.ShowCacheable,
-    })),
-  'plugins/java-ee/trait': () =>
-    import('@/registry/icons/plugins/java-ee/trait').then((mod) => ({
-      default: mod.Trait,
-    })),
-  'plugins/java-ee/update-running-application': () =>
-    import('@/registry/icons/plugins/java-ee/update-running-application').then(
-      (mod) => ({ default: mod.UpdateRunningApplication }),
-    ),
-  'plugins/java-ee/validator': () =>
-    import('@/registry/icons/plugins/java-ee/validator').then((mod) => ({
-      default: mod.Validator,
-    })),
-  'plugins/java-ee/variable': () =>
-    import('@/registry/icons/plugins/java-ee/variable').then((mod) => ({
-      default: mod.Variable,
-    })),
-  'plugins/java-ee/web-artifact': () =>
-    import('@/registry/icons/plugins/java-ee/web-artifact').then((mod) => ({
-      default: mod.WebArtifact,
-    })),
-  'plugins/java-ee/web-module': () =>
-    import('@/registry/icons/plugins/java-ee/web-module').then((mod) => ({
-      default: mod.WebModule,
-    })),
-  'plugins/java-ee/web-module-group': () =>
-    import('@/registry/icons/plugins/java-ee/web-module-group').then((mod) => ({
-      default: mod.WebModuleGroup,
-    })),
-  'plugins/java-ee/web-service': () =>
-    import('@/registry/icons/plugins/java-ee/web-service').then((mod) => ({
-      default: mod.WebService,
-    })),
-  'plugins/java-ee/web-service-client': () =>
-    import('@/registry/icons/plugins/java-ee/web-service-client').then(
-      (mod) => ({ default: mod.WebServiceClient }),
-    ),
-  'plugins/java-ee/web-xml': () =>
-    import('@/registry/icons/plugins/java-ee/web-xml').then((mod) => ({
-      default: mod.WebXml,
-    })),
-  'plugins/java-ee/xml-service': () =>
-    import('@/registry/icons/plugins/java-ee/xml-service').then((mod) => ({
-      default: mod.XmlService,
-    })),
-  'plugins/jpa/add-changelog': () =>
-    import('@/registry/icons/plugins/jpa/add-changelog').then((mod) => ({
-      default: mod.AddChangelog,
-    })),
-  'plugins/jpa/add-changeset': () =>
-    import('@/registry/icons/plugins/jpa/add-changeset').then((mod) => ({
-      default: mod.AddChangeset,
-    })),
-  'plugins/jpa/add-named-query': () =>
-    import('@/registry/icons/plugins/jpa/add-named-query').then((mod) => ({
-      default: mod.AddNamedQuery,
-    })),
-  'plugins/jpa/blaze-persistence-entity-view': () =>
-    import('@/registry/icons/plugins/jpa/blaze-persistence-entity-view').then(
-      (mod) => ({ default: mod.BlazePersistenceEntityView }),
-    ),
-  'plugins/jpa/changelog': () =>
-    import('@/registry/icons/plugins/jpa/changelog').then((mod) => ({
-      default: mod.Changelog,
-    })),
-  'plugins/jpa/changeset': () =>
-    import('@/registry/icons/plugins/jpa/changeset').then((mod) => ({
-      default: mod.Changeset,
-    })),
-  'plugins/jpa/check-constraint': () =>
-    import('@/registry/icons/plugins/jpa/check-constraint').then((mod) => ({
-      default: mod.CheckConstraint,
-    })),
-  'plugins/jpa/column': () =>
-    import('@/registry/icons/plugins/jpa/column').then((mod) => ({
-      default: mod.Column,
-    })),
-  'plugins/jpa/converter': () =>
-    import('@/registry/icons/plugins/jpa/converter').then((mod) => ({
-      default: mod.Converter,
-    })),
-  'plugins/jpa/count': () =>
-    import('@/registry/icons/plugins/jpa/count').then((mod) => ({
-      default: mod.Count,
-    })),
-  'plugins/jpa/create-column': () =>
-    import('@/registry/icons/plugins/jpa/create-column').then((mod) => ({
-      default: mod.CreateColumn,
-    })),
-  'plugins/jpa/create-constraint': () =>
-    import('@/registry/icons/plugins/jpa/create-constraint').then((mod) => ({
-      default: mod.CreateConstraint,
-    })),
-  'plugins/jpa/create-index': () =>
-    import('@/registry/icons/plugins/jpa/create-index').then((mod) => ({
-      default: mod.CreateIndex,
-    })),
-  'plugins/jpa/create-sequence': () =>
-    import('@/registry/icons/plugins/jpa/create-sequence').then((mod) => ({
-      default: mod.CreateSequence,
-    })),
-  'plugins/jpa/create-table': () =>
-    import('@/registry/icons/plugins/jpa/create-table').then((mod) => ({
-      default: mod.CreateTable,
-    })),
-  'plugins/jpa/data-model': () =>
-    import('@/registry/icons/plugins/jpa/data-model').then((mod) => ({
-      default: mod.DataModel,
-    })),
-  'plugins/jpa/data-stores': () =>
-    import('@/registry/icons/plugins/jpa/data-stores').then((mod) => ({
-      default: mod.DataStores,
-    })),
-  'plugins/jpa/data-view': () =>
-    import('@/registry/icons/plugins/jpa/data-view').then((mod) => ({
-      default: mod.DataView,
-    })),
-  'plugins/jpa/db-changelog': () =>
-    import('@/registry/icons/plugins/jpa/db-changelog').then((mod) => ({
-      default: mod.DbChangelog,
-    })),
-  'plugins/jpa/ddl-scripts': () =>
-    import('@/registry/icons/plugins/jpa/ddl-scripts').then((mod) => ({
-      default: mod.DdlScripts,
-    })),
-  'plugins/jpa/delete': () =>
-    import('@/registry/icons/plugins/jpa/delete').then((mod) => ({
-      default: mod.Delete,
-    })),
-  'plugins/jpa/diff-liquibase-changelog': () =>
-    import('@/registry/icons/plugins/jpa/diff-liquibase-changelog').then(
-      (mod) => ({ default: mod.DiffLiquibaseChangelog }),
-    ),
-  'plugins/jpa/diff-plugin-logo': () =>
-    import('@/registry/icons/plugins/jpa/diff-plugin-logo').then((mod) => ({
-      default: mod.DiffPluginLogo,
-    })),
-  'plugins/jpa/drop-column': () =>
-    import('@/registry/icons/plugins/jpa/drop-column').then((mod) => ({
-      default: mod.DropColumn,
-    })),
-  'plugins/jpa/drop-constraint': () =>
-    import('@/registry/icons/plugins/jpa/drop-constraint').then((mod) => ({
-      default: mod.DropConstraint,
-    })),
-  'plugins/jpa/drop-index': () =>
-    import('@/registry/icons/plugins/jpa/drop-index').then((mod) => ({
-      default: mod.DropIndex,
-    })),
-  'plugins/jpa/drop-sequence': () =>
-    import('@/registry/icons/plugins/jpa/drop-sequence').then((mod) => ({
-      default: mod.DropSequence,
-    })),
-  'plugins/jpa/drop-table': () =>
-    import('@/registry/icons/plugins/jpa/drop-table').then((mod) => ({
-      default: mod.DropTable,
-    })),
-  'plugins/jpa/dto': () =>
-    import('@/registry/icons/plugins/jpa/dto').then((mod) => ({
-      default: mod.Dto,
-    })),
-  'plugins/jpa/embedded': () =>
-    import('@/registry/icons/plugins/jpa/embedded').then((mod) => ({
-      default: mod.Embedded,
-    })),
-  'plugins/jpa/equals-and-hashcode': () =>
-    import('@/registry/icons/plugins/jpa/equals-and-hashcode').then((mod) => ({
-      default: mod.EqualsAndHashcode,
-    })),
-  'plugins/jpa/explorer': () =>
-    import('@/registry/icons/plugins/jpa/explorer').then((mod) => ({
-      default: mod.Explorer,
-    })),
-  'plugins/jpa/file-transfer': () =>
-    import('@/registry/icons/plugins/jpa/file-transfer').then((mod) => ({
-      default: mod.FileTransfer,
-    })),
-  'plugins/jpa/find-collection': () =>
-    import('@/registry/icons/plugins/jpa/find-collection').then((mod) => ({
-      default: mod.FindCollection,
-    })),
-  'plugins/jpa/find-instance': () =>
-    import('@/registry/icons/plugins/jpa/find-instance').then((mod) => ({
-      default: mod.FindInstance,
-    })),
-  'plugins/jpa/flyway-plugin-logo': () =>
-    import('@/registry/icons/plugins/jpa/flyway-plugin-logo').then((mod) => ({
-      default: mod.FlywayPluginLogo,
-    })),
-  'plugins/jpa/generic-ui': () =>
-    import('@/registry/icons/plugins/jpa/generic-ui').then((mod) => ({
-      default: mod.GenericUI,
-    })),
-  'plugins/jpa/gold-key': () =>
-    import('@/registry/icons/plugins/jpa/gold-key').then((mod) => ({
-      default: mod.GoldKey,
-    })),
-  'plugins/jpa/hibernate-event': () =>
-    import('@/registry/icons/plugins/jpa/hibernate-event').then((mod) => ({
-      default: mod.HibernateEvent,
-    })),
-  'plugins/jpa/include': () =>
-    import('@/registry/icons/plugins/jpa/include').then((mod) => ({
-      default: mod.Include,
-    })),
-  'plugins/jpa/init-liquibase-changelog': () =>
-    import('@/registry/icons/plugins/jpa/init-liquibase-changelog').then(
-      (mod) => ({ default: mod.InitLiquibaseChangelog }),
-    ),
-  'plugins/jpa/init-scripts': () =>
-    import('@/registry/icons/plugins/jpa/init-scripts').then((mod) => ({
-      default: mod.InitScripts,
-    })),
-  'plugins/jpa/insight-navigate': () =>
-    import('@/registry/icons/plugins/jpa/insight-navigate').then((mod) => ({
-      default: mod.InsightNavigate,
-    })),
-  'plugins/jpa/java-module-root': () =>
-    import('@/registry/icons/plugins/jpa/java-module-root').then((mod) => ({
-      default: mod.JavaModuleRoot,
-    })),
-  'plugins/jpa/liquibase': () =>
-    import('@/registry/icons/plugins/jpa/liquibase').then((mod) => ({
-      default: mod.Liquibase,
-    })),
-  'plugins/jpa/liquibase-mono': () =>
-    import('@/registry/icons/plugins/jpa/liquibase-mono').then((mod) => ({
-      default: mod.LiquibaseMono,
-    })),
-  'plugins/jpa/liquibase-plugin-logo': () =>
-    import('@/registry/icons/plugins/jpa/liquibase-plugin-logo').then(
-      (mod) => ({ default: mod.LiquibasePluginLogo }),
-    ),
-  'plugins/jpa/liquibase-snapshot': () =>
-    import('@/registry/icons/plugins/jpa/liquibase-snapshot').then((mod) => ({
-      default: mod.LiquibaseSnapshot,
-    })),
-  'plugins/jpa/liquibase-update': () =>
-    import('@/registry/icons/plugins/jpa/liquibase-update').then((mod) => ({
-      default: mod.LiquibaseUpdate,
-    })),
-  'plugins/jpa/mailer': () =>
-    import('@/registry/icons/plugins/jpa/mailer').then((mod) => ({
-      default: mod.Mailer,
-    })),
-  'plugins/jpa/main-changelog': () =>
-    import('@/registry/icons/plugins/jpa/main-changelog').then((mod) => ({
-      default: mod.MainChangelog,
-    })),
-  'plugins/jpa/many-to-many': () =>
-    import('@/registry/icons/plugins/jpa/many-to-many').then((mod) => ({
-      default: mod.ManyToMany,
-    })),
-  'plugins/jpa/many-to-one': () =>
-    import('@/registry/icons/plugins/jpa/many-to-one').then((mod) => ({
-      default: mod.ManyToOne,
-    })),
-  'plugins/jpa/minimalistic-mode': () =>
-    import('@/registry/icons/plugins/jpa/minimalistic-mode').then((mod) => ({
-      default: mod.MinimalisticMode,
-    })),
-  'plugins/jpa/move-to-another-changelog': () =>
-    import('@/registry/icons/plugins/jpa/move-to-another-changelog').then(
-      (mod) => ({ default: mod.MoveToAnotherChangelog }),
-    ),
-  'plugins/jpa/one-to-many': () =>
-    import('@/registry/icons/plugins/jpa/one-to-many').then((mod) => ({
-      default: mod.OneToMany,
-    })),
-  'plugins/jpa/one-to-one': () =>
-    import('@/registry/icons/plugins/jpa/one-to-one').then((mod) => ({
-      default: mod.OneToOne,
-    })),
-  'plugins/jpa/persistence-attribute': () =>
-    import('@/registry/icons/plugins/jpa/persistence-attribute').then(
-      (mod) => ({ default: mod.PersistenceAttribute }),
-    ),
-  'plugins/jpa/persistence-embeddable': () =>
-    import('@/registry/icons/plugins/jpa/persistence-embeddable').then(
-      (mod) => ({ default: mod.PersistenceEmbeddable }),
-    ),
-  'plugins/jpa/persistence-id': () =>
-    import('@/registry/icons/plugins/jpa/persistence-id').then((mod) => ({
-      default: mod.PersistenceId,
-    })),
-  'plugins/jpa/persistence-mapped-superclass': () =>
-    import('@/registry/icons/plugins/jpa/persistence-mapped-superclass').then(
-      (mod) => ({ default: mod.PersistenceMappedSuperclass }),
-    ),
-  'plugins/jpa/persistence-relationship': () =>
-    import('@/registry/icons/plugins/jpa/persistence-relationship').then(
-      (mod) => ({ default: mod.PersistenceRelationship }),
-    ),
-  'plugins/jpa/persistence-unit': () =>
-    import('@/registry/icons/plugins/jpa/persistence-unit').then((mod) => ({
-      default: mod.PersistenceUnit,
-    })),
-  'plugins/jpa/plugin-logo': () =>
-    import('@/registry/icons/plugins/jpa/plugin-logo').then((mod) => ({
-      default: mod.PluginLogo,
-    })),
-  'plugins/jpa/project-properties': () =>
-    import('@/registry/icons/plugins/jpa/project-properties').then((mod) => ({
-      default: mod.ProjectProperties,
-    })),
-  'plugins/jpa/projection': () =>
-    import('@/registry/icons/plugins/jpa/projection').then((mod) => ({
-      default: mod.Projection,
-    })),
-  'plugins/jpa/query': () =>
-    import('@/registry/icons/plugins/jpa/query').then((mod) => ({
-      default: mod.Query,
-    })),
-  'plugins/jpa/query-method': () =>
-    import('@/registry/icons/plugins/jpa/query-method').then((mod) => ({
-      default: mod.QueryMethod,
-    })),
-  'plugins/jpa/reference-by': () =>
-    import('@/registry/icons/plugins/jpa/reference-by').then((mod) => ({
-      default: mod.ReferenceBy,
-    })),
-  'plugins/jpa/reference-to': () =>
-    import('@/registry/icons/plugins/jpa/reference-to').then((mod) => ({
-      default: mod.ReferenceTo,
-    })),
-  'plugins/jpa/remove': () =>
-    import('@/registry/icons/plugins/jpa/remove').then((mod) => ({
-      default: mod.Remove,
-    })),
-  'plugins/jpa/rename-column': () =>
-    import('@/registry/icons/plugins/jpa/rename-column').then((mod) => ({
-      default: mod.RenameColumn,
-    })),
-  'plugins/jpa/rename-constraint': () =>
-    import('@/registry/icons/plugins/jpa/rename-constraint').then((mod) => ({
-      default: mod.RenameConstraint,
-    })),
-  'plugins/jpa/rename-index': () =>
-    import('@/registry/icons/plugins/jpa/rename-index').then((mod) => ({
-      default: mod.RenameIndex,
-    })),
-  'plugins/jpa/rename-sequence': () =>
-    import('@/registry/icons/plugins/jpa/rename-sequence').then((mod) => ({
-      default: mod.RenameSequence,
-    })),
-  'plugins/jpa/rename-table': () =>
-    import('@/registry/icons/plugins/jpa/rename-table').then((mod) => ({
-      default: mod.RenameTable,
-    })),
-  'plugins/jpa/repository': () =>
-    import('@/registry/icons/plugins/jpa/repository').then((mod) => ({
-      default: mod.Repository,
-    })),
-  'plugins/jpa/restore-from-ignore': () =>
-    import('@/registry/icons/plugins/jpa/restore-from-ignore').then((mod) => ({
-      default: mod.RestoreFromIgnore,
-    })),
-  'plugins/jpa/save': () =>
-    import('@/registry/icons/plugins/jpa/save').then((mod) => ({
-      default: mod.Save,
-    })),
-  'plugins/jpa/schema': () =>
-    import('@/registry/icons/plugins/jpa/schema').then((mod) => ({
-      default: mod.Schema,
-    })),
-  'plugins/jpa/screens': () =>
-    import('@/registry/icons/plugins/jpa/screens').then((mod) => ({
-      default: mod.Screens,
-    })),
-  'plugins/jpa/set-context': () =>
-    import('@/registry/icons/plugins/jpa/set-context').then((mod) => ({
-      default: mod.SetContext,
-    })),
-  'plugins/jpa/set-label': () =>
-    import('@/registry/icons/plugins/jpa/set-label').then((mod) => ({
-      default: mod.SetLabel,
-    })),
-  'plugins/jpa/settings': () =>
-    import('@/registry/icons/plugins/jpa/settings').then((mod) => ({
-      default: mod.Settings,
-    })),
-  'plugins/jpa/show-code': () =>
-    import('@/registry/icons/plugins/jpa/show-code').then((mod) => ({
-      default: mod.ShowCode,
-    })),
-  'plugins/jpa/spring-icon': () =>
-    import('@/registry/icons/plugins/jpa/spring-icon').then((mod) => ({
-      default: mod.SpringIcon,
-    })),
-  'plugins/jpa/sql': () =>
-    import('@/registry/icons/plugins/jpa/sql').then((mod) => ({
-      default: mod.Sql,
-    })),
-  'plugins/jpa/sql-file': () =>
-    import('@/registry/icons/plugins/jpa/sql-file').then((mod) => ({
-      default: mod.SqlFile,
-    })),
-  'plugins/jpa/table': () =>
-    import('@/registry/icons/plugins/jpa/table').then((mod) => ({
-      default: mod.Table,
-    })),
-  'plugins/jpa/to-string': () =>
-    import('@/registry/icons/plugins/jpa/to-string').then((mod) => ({
-      default: mod.ToString,
-    })),
-  'plugins/jpa/update': () =>
-    import('@/registry/icons/plugins/jpa/update').then((mod) => ({
-      default: mod.Update,
-    })),
-  'plugins/jpa/update-database': () =>
-    import('@/registry/icons/plugins/jpa/update-database').then((mod) => ({
-      default: mod.UpdateDatabase,
-    })),
-  'plugins/kotlin/abstract-class-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/abstract-class-kotlin').then(
-      (mod) => ({ default: mod.AbstractClassKotlin }),
-    ),
-  'plugins/kotlin/abstract-extension-function': () =>
-    import('@/registry/icons/plugins/kotlin/abstract-extension-function').then(
-      (mod) => ({ default: mod.AbstractExtensionFunction }),
-    ),
-  'plugins/kotlin/actual': () =>
-    import('@/registry/icons/plugins/kotlin/actual').then((mod) => ({
-      default: mod.Actual,
-    })),
-  'plugins/kotlin/android': () =>
-    import('@/registry/icons/plugins/kotlin/android').then((mod) => ({
-      default: mod.Android,
-    })),
-  'plugins/kotlin/annotation-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/annotation-kotlin').then((mod) => ({
-      default: mod.AnnotationKotlin,
-    })),
-  'plugins/kotlin/class-initializer-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/class-initializer-kotlin').then(
-      (mod) => ({ default: mod.ClassInitializerKotlin }),
-    ),
-  'plugins/kotlin/class-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/class-kotlin').then((mod) => ({
-      default: mod.ClassKotlin,
-    })),
-  'plugins/kotlin/console': () =>
-    import('@/registry/icons/plugins/kotlin/console').then((mod) => ({
-      default: mod.Console,
-    })),
-  'plugins/kotlin/enum-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/enum-kotlin').then((mod) => ({
-      default: mod.EnumKotlin,
-    })),
-  'plugins/kotlin/expect': () =>
-    import('@/registry/icons/plugins/kotlin/expect').then((mod) => ({
-      default: mod.Expect,
-    })),
-  'plugins/kotlin/field-value': () =>
-    import('@/registry/icons/plugins/kotlin/field-value').then((mod) => ({
-      default: mod.FieldValue,
-    })),
-  'plugins/kotlin/field-variable': () =>
-    import('@/registry/icons/plugins/kotlin/field-variable').then((mod) => ({
-      default: mod.FieldVariable,
-    })),
-  'plugins/kotlin/fir': () =>
-    import('@/registry/icons/plugins/kotlin/fir').then((mod) => ({
-      default: mod.Fir,
-    })),
-  'plugins/kotlin/interface-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/interface-kotlin').then((mod) => ({
-      default: mod.InterfaceKotlin,
-    })),
-  'plugins/kotlin/js': () =>
-    import('@/registry/icons/plugins/kotlin/js').then((mod) => ({
-      default: mod.Js,
-    })),
-  'plugins/kotlin/jvm': () =>
-    import('@/registry/icons/plugins/kotlin/jvm').then((mod) => ({
-      default: mod.Jvm,
-    })),
-  'plugins/kotlin/kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin').then((mod) => ({
-      default: mod.Kotlin,
-    })),
-  'plugins/kotlin/kotlin_activity': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin_activity').then((mod) => ({
-      default: mod.Kotlin_activity,
-    })),
-  'plugins/kotlin/kotlin-gradle-script': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-gradle-script').then(
-      (mod) => ({ default: mod.KotlinGradleScript }),
-    ),
-  'plugins/kotlin/kotlin-js': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-js').then((mod) => ({
-      default: mod.KotlinJs,
-    })),
-  'plugins/kotlin/kotlin-modifier': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-modifier').then((mod) => ({
-      default: mod.KotlinModifier,
-    })),
-  'plugins/kotlin/kotlin-notebooks': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-notebooks').then((mod) => ({
-      default: mod.KotlinNotebooks,
-    })),
-  'plugins/kotlin/kotlin-notebooks-grey': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-notebooks-grey').then(
-      (mod) => ({ default: mod.KotlinNotebooksGrey }),
-    ),
-  'plugins/kotlin/kotlin-notebooks-promo': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-notebooks-promo').then(
-      (mod) => ({ default: mod.KotlinNotebooksPromo }),
-    ),
-  'plugins/kotlin/kotlin-script': () =>
-    import('@/registry/icons/plugins/kotlin/kotlin-script').then((mod) => ({
-      default: mod.KotlinScript,
-    })),
-  'plugins/kotlin/lambda': () =>
-    import('@/registry/icons/plugins/kotlin/lambda').then((mod) => ({
-      default: mod.Lambda,
-    })),
-  'plugins/kotlin/multiplatform': () =>
-    import('@/registry/icons/plugins/kotlin/multiplatform').then((mod) => ({
-      default: mod.Multiplatform,
-    })),
-  'plugins/kotlin/multiplatform-library': () =>
-    import('@/registry/icons/plugins/kotlin/multiplatform-library').then(
-      (mod) => ({ default: mod.MultiplatformLibrary }),
-    ),
-  'plugins/kotlin/multiplatform-mobile': () =>
-    import('@/registry/icons/plugins/kotlin/multiplatform-mobile').then(
-      (mod) => ({ default: mod.MultiplatformMobile }),
-    ),
-  'plugins/kotlin/multiplatform-mobile-library': () =>
-    import('@/registry/icons/plugins/kotlin/multiplatform-mobile-library').then(
-      (mod) => ({ default: mod.MultiplatformMobileLibrary }),
-    ),
-  'plugins/kotlin/native': () =>
-    import('@/registry/icons/plugins/kotlin/native').then((mod) => ({
-      default: mod.Native,
-    })),
-  'plugins/kotlin/nodejs': () =>
-    import('@/registry/icons/plugins/kotlin/nodejs').then((mod) => ({
-      default: mod.Nodejs,
-    })),
-  'plugins/kotlin/object-kotlin': () =>
-    import('@/registry/icons/plugins/kotlin/object-kotlin').then((mod) => ({
-      default: mod.ObjectKotlin,
-    })),
-  'plugins/kotlin/pp-web': () =>
-    import('@/registry/icons/plugins/kotlin/pp-web').then((mod) => ({
-      default: mod.PpWeb,
-    })),
-  'plugins/kotlin/type-alias': () =>
-    import('@/registry/icons/plugins/kotlin/type-alias').then((mod) => ({
-      default: mod.TypeAlias,
-    })),
-  'plugins/kotlin/value': () =>
-    import('@/registry/icons/plugins/kotlin/value').then((mod) => ({
-      default: mod.Value,
-    })),
-  'plugins/kubernetes/auto-refresh': () =>
-    import('@/registry/icons/plugins/kubernetes/auto-refresh').then((mod) => ({
-      default: mod.AutoRefresh,
-    })),
-  'plugins/kubernetes/cluster-role': () =>
-    import('@/registry/icons/plugins/kubernetes/cluster-role').then((mod) => ({
-      default: mod.ClusterRole,
-    })),
-  'plugins/kubernetes/cluster-role-binding': () =>
-    import('@/registry/icons/plugins/kubernetes/cluster-role-binding').then(
-      (mod) => ({ default: mod.ClusterRoleBinding }),
-    ),
-  'plugins/kubernetes/config-map': () =>
-    import('@/registry/icons/plugins/kubernetes/config-map').then((mod) => ({
-      default: mod.ConfigMap,
-    })),
-  'plugins/kubernetes/configuration': () =>
-    import('@/registry/icons/plugins/kubernetes/configuration').then((mod) => ({
-      default: mod.Configuration,
-    })),
-  'plugins/kubernetes/cron-jobs': () =>
-    import('@/registry/icons/plugins/kubernetes/cron-jobs').then((mod) => ({
-      default: mod.CronJobs,
-    })),
-  'plugins/kubernetes/custom-resource': () =>
-    import('@/registry/icons/plugins/kubernetes/custom-resource').then(
-      (mod) => ({ default: mod.CustomResource }),
-    ),
-  'plugins/kubernetes/custom-resource-definition': () =>
-    import(
-      '@/registry/icons/plugins/kubernetes/custom-resource-definition'
-    ).then((mod) => ({ default: mod.CustomResourceDefinition })),
-  'plugins/kubernetes/custom-resources': () =>
-    import('@/registry/icons/plugins/kubernetes/custom-resources').then(
-      (mod) => ({ default: mod.CustomResources }),
-    ),
-  'plugins/kubernetes/daemon-set': () =>
-    import('@/registry/icons/plugins/kubernetes/daemon-set').then((mod) => ({
-      default: mod.DaemonSet,
-    })),
-  'plugins/kubernetes/debug-with-telepresence': () =>
-    import('@/registry/icons/plugins/kubernetes/debug-with-telepresence').then(
-      (mod) => ({ default: mod.DebugWithTelepresence }),
-    ),
-  'plugins/kubernetes/deployment': () =>
-    import('@/registry/icons/plugins/kubernetes/deployment').then((mod) => ({
-      default: mod.Deployment,
-    })),
-  'plugins/kubernetes/endpoints': () =>
-    import('@/registry/icons/plugins/kubernetes/endpoints').then((mod) => ({
-      default: mod.Endpoints,
-    })),
-  'plugins/kubernetes/events': () =>
-    import('@/registry/icons/plugins/kubernetes/events').then((mod) => ({
-      default: mod.Events,
-    })),
-  'plugins/kubernetes/failed': () =>
-    import('@/registry/icons/plugins/kubernetes/failed').then((mod) => ({
-      default: mod.Failed,
-    })),
-  'plugins/kubernetes/forward-ports': () =>
-    import('@/registry/icons/plugins/kubernetes/forward-ports').then((mod) => ({
-      default: mod.ForwardPorts,
-    })),
-  'plugins/kubernetes/group': () =>
-    import('@/registry/icons/plugins/kubernetes/group').then((mod) => ({
-      default: mod.Group,
-    })),
-  'plugins/kubernetes/helm': () =>
-    import('@/registry/icons/plugins/kubernetes/helm').then((mod) => ({
-      default: mod.Helm,
-    })),
-  'plugins/kubernetes/helm-archive': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-archive').then((mod) => ({
-      default: mod.HelmArchive,
-    })),
-  'plugins/kubernetes/helm-chart': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-chart').then((mod) => ({
-      default: mod.HelmChart,
-    })),
-  'plugins/kubernetes/helm-chart-lock': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-chart-lock').then(
-      (mod) => ({ default: mod.HelmChartLock }),
-    ),
-  'plugins/kubernetes/helm-directory': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-directory').then(
-      (mod) => ({ default: mod.HelmDirectory }),
-    ),
-  'plugins/kubernetes/helm-notes': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-notes').then((mod) => ({
-      default: mod.HelmNotes,
-    })),
-  'plugins/kubernetes/helm-requirments': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-requirments').then(
-      (mod) => ({ default: mod.HelmRequirments }),
-    ),
-  'plugins/kubernetes/helm-requirments-lock': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-requirments-lock').then(
-      (mod) => ({ default: mod.HelmRequirmentsLock }),
-    ),
-  'plugins/kubernetes/helm-undeployable': () =>
-    import('@/registry/icons/plugins/kubernetes/helm-undeployable').then(
-      (mod) => ({ default: mod.HelmUndeployable }),
-    ),
-  'plugins/kubernetes/helmvalues-schema': () =>
-    import('@/registry/icons/plugins/kubernetes/helmvalues-schema').then(
-      (mod) => ({ default: mod.HelmvaluesSchema }),
-    ),
-  'plugins/kubernetes/horizontal-pod-autoscaler': () =>
-    import(
-      '@/registry/icons/plugins/kubernetes/horizontal-pod-autoscaler'
-    ).then((mod) => ({ default: mod.HorizontalPodAutoscaler })),
-  'plugins/kubernetes/ingress': () =>
-    import('@/registry/icons/plugins/kubernetes/ingress').then((mod) => ({
-      default: mod.Ingress,
-    })),
-  'plugins/kubernetes/jobs': () =>
-    import('@/registry/icons/plugins/kubernetes/jobs').then((mod) => ({
-      default: mod.Jobs,
-    })),
-  'plugins/kubernetes/kubernetes-j': () =>
-    import('@/registry/icons/plugins/kubernetes/kubernetes-j').then((mod) => ({
-      default: mod.KubernetesJ,
-    })),
-  'plugins/kubernetes/kubernetes-y': () =>
-    import('@/registry/icons/plugins/kubernetes/kubernetes-y').then((mod) => ({
-      default: mod.KubernetesY,
-    })),
-  'plugins/kubernetes/kustomize': () =>
-    import('@/registry/icons/plugins/kubernetes/kustomize').then((mod) => ({
-      default: mod.Kustomize,
-    })),
-  'plugins/kubernetes/limits': () =>
-    import('@/registry/icons/plugins/kubernetes/limits').then((mod) => ({
-      default: mod.Limits,
-    })),
-  'plugins/kubernetes/mod-stop': () =>
-    import('@/registry/icons/plugins/kubernetes/mod-stop').then((mod) => ({
-      default: mod.ModStop,
-    })),
-  'plugins/kubernetes/namespace': () =>
-    import('@/registry/icons/plugins/kubernetes/namespace').then((mod) => ({
-      default: mod.Namespace,
-    })),
-  'plugins/kubernetes/namespaced-mark': () =>
-    import('@/registry/icons/plugins/kubernetes/namespaced-mark').then(
-      (mod) => ({ default: mod.NamespacedMark }),
-    ),
-  'plugins/kubernetes/network': () =>
-    import('@/registry/icons/plugins/kubernetes/network').then((mod) => ({
-      default: mod.Network,
-    })),
-  'plugins/kubernetes/network-policy': () =>
-    import('@/registry/icons/plugins/kubernetes/network-policy').then(
-      (mod) => ({ default: mod.NetworkPolicy }),
-    ),
-  'plugins/kubernetes/node': () =>
-    import('@/registry/icons/plugins/kubernetes/node').then((mod) => ({
-      default: mod.Node,
-    })),
-  'plugins/kubernetes/pending': () =>
-    import('@/registry/icons/plugins/kubernetes/pending').then((mod) => ({
-      default: mod.Pending,
-    })),
-  'plugins/kubernetes/persistent-volume': () =>
-    import('@/registry/icons/plugins/kubernetes/persistent-volume').then(
-      (mod) => ({ default: mod.PersistentVolume }),
-    ),
-  'plugins/kubernetes/persistent-volume-claim': () =>
-    import('@/registry/icons/plugins/kubernetes/persistent-volume-claim').then(
-      (mod) => ({ default: mod.PersistentVolumeClaim }),
-    ),
-  'plugins/kubernetes/persistent-volumes': () =>
-    import('@/registry/icons/plugins/kubernetes/persistent-volumes').then(
-      (mod) => ({ default: mod.PersistentVolumes }),
-    ),
-  'plugins/kubernetes/pod': () =>
-    import('@/registry/icons/plugins/kubernetes/pod').then((mod) => ({
-      default: mod.Pod,
-    })),
-  'plugins/kubernetes/pod-security-policy': () =>
-    import('@/registry/icons/plugins/kubernetes/pod-security-policy').then(
-      (mod) => ({ default: mod.PodSecurityPolicy }),
-    ),
-  'plugins/kubernetes/quota': () =>
-    import('@/registry/icons/plugins/kubernetes/quota').then((mod) => ({
-      default: mod.Quota,
-    })),
-  'plugins/kubernetes/refresh-kubernetes-configuration': () =>
-    import(
-      '@/registry/icons/plugins/kubernetes/refresh-kubernetes-configuration'
-    ).then((mod) => ({ default: mod.RefreshKubernetesConfiguration })),
-  'plugins/kubernetes/replica-set': () =>
-    import('@/registry/icons/plugins/kubernetes/replica-set').then((mod) => ({
-      default: mod.ReplicaSet,
-    })),
-  'plugins/kubernetes/role': () =>
-    import('@/registry/icons/plugins/kubernetes/role').then((mod) => ({
-      default: mod.Role,
-    })),
-  'plugins/kubernetes/role-binding': () =>
-    import('@/registry/icons/plugins/kubernetes/role-binding').then((mod) => ({
-      default: mod.RoleBinding,
-    })),
-  'plugins/kubernetes/service-account': () =>
-    import('@/registry/icons/plugins/kubernetes/service-account').then(
-      (mod) => ({ default: mod.ServiceAccount }),
-    ),
-  'plugins/kubernetes/services': () =>
-    import('@/registry/icons/plugins/kubernetes/services').then((mod) => ({
-      default: mod.Services,
-    })),
-  'plugins/kubernetes/show-logs': () =>
-    import('@/registry/icons/plugins/kubernetes/show-logs').then((mod) => ({
-      default: mod.ShowLogs,
-    })),
-  'plugins/kubernetes/stateful-set': () =>
-    import('@/registry/icons/plugins/kubernetes/stateful-set').then((mod) => ({
-      default: mod.StatefulSet,
-    })),
-  'plugins/kubernetes/storage-class': () =>
-    import('@/registry/icons/plugins/kubernetes/storage-class').then((mod) => ({
-      default: mod.StorageClass,
-    })),
-  'plugins/kubernetes/succeded': () =>
-    import('@/registry/icons/plugins/kubernetes/succeded').then((mod) => ({
-      default: mod.Succeded,
-    })),
-  'plugins/kubernetes/user': () =>
-    import('@/registry/icons/plugins/kubernetes/user').then((mod) => ({
-      default: mod.User,
-    })),
-  'plugins/kubernetes/value-values': () =>
-    import('@/registry/icons/plugins/kubernetes/value-values').then((mod) => ({
-      default: mod.ValueValues,
-    })),
-  'plugins/kubernetes/volume': () =>
-    import('@/registry/icons/plugins/kubernetes/volume').then((mod) => ({
-      default: mod.Volume,
-    })),
-  'plugins/kubernetes/werf': () =>
-    import('@/registry/icons/plugins/kubernetes/werf').then((mod) => ({
-      default: mod.Werf,
-    })),
-  'plugins/kubernetes/workloads': () =>
-    import('@/registry/icons/plugins/kubernetes/workloads').then((mod) => ({
-      default: mod.Workloads,
-    })),
-  'plugins/linux/linux': () =>
-    import('@/registry/icons/plugins/linux/linux').then((mod) => ({
-      default: mod.Linux,
-    })),
-  'plugins/linux/linux-logo': () =>
-    import('@/registry/icons/plugins/linux/linux-logo').then((mod) => ({
-      default: mod.LinuxLogo,
-    })),
-  'plugins/lombok/config': () =>
-    import('@/registry/icons/plugins/lombok/config').then((mod) => ({
-      default: mod.Config,
-    })),
-  'plugins/lombok/lombok': () =>
-    import('@/registry/icons/plugins/lombok/lombok').then((mod) => ({
-      default: mod.Lombok,
-    })),
-  'plugins/lombok/lombok-class': () =>
-    import('@/registry/icons/plugins/lombok/lombok-class').then((mod) => ({
-      default: mod.LombokClass,
-    })),
-  'plugins/lombok/lombok-field': () =>
-    import('@/registry/icons/plugins/lombok/lombok-field').then((mod) => ({
-      default: mod.LombokField,
-    })),
-  'plugins/lombok/lombok-method': () =>
-    import('@/registry/icons/plugins/lombok/lombok-method').then((mod) => ({
-      default: mod.LombokMethod,
-    })),
-  'plugins/meson/meson': () =>
-    import('@/registry/icons/plugins/meson/meson').then((mod) => ({
-      default: mod.Meson,
-    })),
-  'plugins/meson/meson-plugin-logo': () =>
-    import('@/registry/icons/plugins/meson/meson-plugin-logo').then((mod) => ({
-      default: mod.MesonPluginLogo,
-    })),
-  'plugins/meson/meson-rc': () =>
-    import('@/registry/icons/plugins/meson/meson-rc').then((mod) => ({
-      default: mod.MesonRC,
-    })),
-  'plugins/meson/meson-reload': () =>
-    import('@/registry/icons/plugins/meson/meson-reload').then((mod) => ({
-      default: mod.MesonReload,
-    })),
-  'plugins/outsight/out-sight': () =>
-    import('@/registry/icons/plugins/outsight/out-sight').then((mod) => ({
-      default: mod.OutSight,
-    })),
-  'plugins/outsight/out-sight-color': () =>
-    import('@/registry/icons/plugins/outsight/out-sight-color').then((mod) => ({
-      default: mod.OutSightColor,
-    })),
-  'plugins/package-checker/high-all': () =>
-    import('@/registry/icons/plugins/package-checker/high-all').then((mod) => ({
-      default: mod.HighAll,
-    })),
-  'plugins/package-checker/high-all-tree': () =>
-    import('@/registry/icons/plugins/package-checker/high-all-tree').then(
-      (mod) => ({ default: mod.HighAllTree }),
-    ),
-  'plugins/package-checker/high-all-tree-outline': () =>
-    import(
-      '@/registry/icons/plugins/package-checker/high-all-tree-outline'
-    ).then((mod) => ({ default: mod.HighAllTreeOutline })),
-  'plugins/package-checker/low-all': () =>
-    import('@/registry/icons/plugins/package-checker/low-all').then((mod) => ({
-      default: mod.LowAll,
-    })),
-  'plugins/package-checker/low-all-tree': () =>
-    import('@/registry/icons/plugins/package-checker/low-all-tree').then(
-      (mod) => ({ default: mod.LowAllTree }),
-    ),
-  'plugins/package-checker/low-all-tree-outline': () =>
-    import(
-      '@/registry/icons/plugins/package-checker/low-all-tree-outline'
-    ).then((mod) => ({ default: mod.LowAllTreeOutline })),
-  'plugins/package-checker/medium-all': () =>
-    import('@/registry/icons/plugins/package-checker/medium-all').then(
-      (mod) => ({ default: mod.MediumAll }),
-    ),
-  'plugins/package-checker/medium-all-tree': () =>
-    import('@/registry/icons/plugins/package-checker/medium-all-tree').then(
-      (mod) => ({ default: mod.MediumAllTree }),
-    ),
-  'plugins/package-checker/medium-all-tree-outline': () =>
-    import(
-      '@/registry/icons/plugins/package-checker/medium-all-tree-outline'
-    ).then((mod) => ({ default: mod.MediumAllTreeOutline })),
-  'plugins/package-checker/safe-all': () =>
-    import('@/registry/icons/plugins/package-checker/safe-all').then((mod) => ({
-      default: mod.SafeAll,
-    })),
-  'plugins/package-checker/safe-all-tree': () =>
-    import('@/registry/icons/plugins/package-checker/safe-all-tree').then(
-      (mod) => ({ default: mod.SafeAllTree }),
-    ),
-  'plugins/package-checker/safe-all-tree-outline': () =>
-    import(
-      '@/registry/icons/plugins/package-checker/safe-all-tree-outline'
-    ).then((mod) => ({ default: mod.SafeAllTreeOutline })),
-  'plugins/package-checker/uncheched-all': () =>
-    import('@/registry/icons/plugins/package-checker/uncheched-all').then(
-      (mod) => ({ default: mod.UnchechedAll }),
-    ),
-  'plugins/package-checker/uncheched-all-tree': () =>
-    import('@/registry/icons/plugins/package-checker/uncheched-all-tree').then(
-      (mod) => ({ default: mod.UnchechedAllTree }),
-    ),
-  'plugins/package-checker/uncheched-all-tree-outline': () =>
-    import(
-      '@/registry/icons/plugins/package-checker/uncheched-all-tree-outline'
-    ).then((mod) => ({ default: mod.UnchechedAllTreeOutline })),
-  'plugins/platformio/clean': () =>
-    import('@/registry/icons/plugins/platformio/clean').then((mod) => ({
-      default: mod.Clean,
-    })),
-  'plugins/platformio/component-vendor': () =>
-    import('@/registry/icons/plugins/platformio/component-vendor').then(
-      (mod) => ({ default: mod.ComponentVendor }),
-    ),
-  'plugins/platformio/electronic-board': () =>
-    import('@/registry/icons/plugins/platformio/electronic-board').then(
-      (mod) => ({ default: mod.ElectronicBoard }),
-    ),
-  'plugins/platformio/mod-platform-io': () =>
-    import('@/registry/icons/plugins/platformio/mod-platform-io').then(
-      (mod) => ({ default: mod.ModPlatformIO }),
-    ),
-  'plugins/platformio/platform-io': () =>
-    import('@/registry/icons/plugins/platformio/platform-io').then((mod) => ({
-      default: mod.PlatformIO,
-    })),
-  'plugins/platformio/software-framework': () =>
-    import('@/registry/icons/plugins/platformio/software-framework').then(
-      (mod) => ({ default: mod.SoftwareFramework }),
-    ),
-  'plugins/rest/http_request': () =>
-    import('@/registry/icons/plugins/rest/http_request').then((mod) => ({
-      default: mod.Http_request,
-    })),
-  'plugins/ruby/action-method': () =>
-    import('@/registry/icons/plugins/ruby/action-method').then((mod) => ({
-      default: mod.ActionMethod,
-    })),
-  'plugins/ruby/alias-factory': () =>
-    import('@/registry/icons/plugins/ruby/alias-factory').then((mod) => ({
-      default: mod.AliasFactory,
-    })),
-  'plugins/ruby/alias-sequence': () =>
-    import('@/registry/icons/plugins/ruby/alias-sequence').then((mod) => ({
-      default: mod.AliasSequence,
-    })),
-  'plugins/ruby/assoc-column': () =>
-    import('@/registry/icons/plugins/ruby/assoc-column').then((mod) => ({
-      default: mod.AssocColumn,
-    })),
-  'plugins/ruby/block': () =>
-    import('@/registry/icons/plugins/ruby/block').then((mod) => ({
-      default: mod.Block,
-    })),
-  'plugins/ruby/bundle-run-anything': () =>
-    import('@/registry/icons/plugins/ruby/bundle-run-anything').then((mod) => ({
-      default: mod.BundleRunAnything,
-    })),
-  'plugins/ruby/channel': () =>
-    import('@/registry/icons/plugins/ruby/channel').then((mod) => ({
-      default: mod.Channel,
-    })),
-  'plugins/ruby/chef-cookbook': () =>
-    import('@/registry/icons/plugins/ruby/chef-cookbook').then((mod) => ({
-      default: mod.ChefCookbook,
-    })),
-  'plugins/ruby/controller-folder': () =>
-    import('@/registry/icons/plugins/ruby/controller-folder').then((mod) => ({
-      default: mod.ControllerFolder,
-    })),
-  'plugins/ruby/controller-node': () =>
-    import('@/registry/icons/plugins/ruby/controller-node').then((mod) => ({
-      default: mod.ControllerNode,
-    })),
-  'plugins/ruby/db-hash': () =>
-    import('@/registry/icons/plugins/ruby/db-hash').then((mod) => ({
-      default: mod.DbHash,
-    })),
-  'plugins/ruby/endpoint': () =>
-    import('@/registry/icons/plugins/ruby/endpoint').then((mod) => ({
-      default: mod.Endpoint,
-    })),
-  'plugins/ruby/factory': () =>
-    import('@/registry/icons/plugins/ruby/factory').then((mod) => ({
-      default: mod.Factory,
-    })),
-  'plugins/ruby/haml': () =>
-    import('@/registry/icons/plugins/ruby/haml').then((mod) => ({
-      default: mod.Haml,
-    })),
-  'plugins/ruby/hash-key': () =>
-    import('@/registry/icons/plugins/ruby/hash-key').then((mod) => ({
-      default: mod.HashKey,
-    })),
-  'plugins/ruby/helpers-folder-closed': () =>
-    import('@/registry/icons/plugins/ruby/helpers-folder-closed').then(
-      (mod) => ({ default: mod.HelpersFolderClosed }),
-    ),
-  'plugins/ruby/incomplete-closed': () =>
-    import('@/registry/icons/plugins/ruby/incomplete-closed').then((mod) => ({
-      default: mod.IncompleteClosed,
-    })),
-  'plugins/ruby/jrails-module-closed': () =>
-    import('@/registry/icons/plugins/ruby/jrails-module-closed').then(
-      (mod) => ({ default: mod.JrailsModuleClosed }),
-    ),
-  'plugins/ruby/jruby': () =>
-    import('@/registry/icons/plugins/ruby/jruby').then((mod) => ({
-      default: mod.Jruby,
-    })),
-  'plugins/ruby/jruby-run-configuration': () =>
-    import('@/registry/icons/plugins/ruby/jruby-run-configuration').then(
-      (mod) => ({ default: mod.JrubyRunConfiguration }),
-    ),
-  'plugins/ruby/jruby-sdk-closed': () =>
-    import('@/registry/icons/plugins/ruby/jruby-sdk-closed').then((mod) => ({
-      default: mod.JrubySdkClosed,
-    })),
-  'plugins/ruby/mailer': () =>
-    import('@/registry/icons/plugins/ruby/mailer').then((mod) => ({
-      default: mod.Mailer,
-    })),
-  'plugins/ruby/mailers-folder': () =>
-    import('@/registry/icons/plugins/ruby/mailers-folder').then((mod) => ({
-      default: mod.MailersFolder,
-    })),
-  'plugins/ruby/migrations-closed': () =>
-    import('@/registry/icons/plugins/ruby/migrations-closed').then((mod) => ({
-      default: mod.MigrationsClosed,
-    })),
-  'plugins/ruby/model-class': () =>
-    import('@/registry/icons/plugins/ruby/model-class').then((mod) => ({
-      default: mod.ModelClass,
-    })),
-  'plugins/ruby/module': () =>
-    import('@/registry/icons/plugins/ruby/module').then((mod) => ({
-      default: mod.Module,
-    })),
-  'plugins/ruby/not-defined': () =>
-    import('@/registry/icons/plugins/ruby/not-defined').then((mod) => ({
-      default: mod.NotDefined,
-    })),
-  'plugins/ruby/rails-module-closed': () =>
-    import('@/registry/icons/plugins/ruby/rails-module-closed').then((mod) => ({
-      default: mod.RailsModuleClosed,
-    })),
-  'plugins/ruby/rails-server-run-configuration': () =>
-    import('@/registry/icons/plugins/ruby/rails-server-run-configuration').then(
-      (mod) => ({ default: mod.RailsServerRunConfiguration }),
-    ),
-  'plugins/ruby/rake-run-configuration': () =>
-    import('@/registry/icons/plugins/ruby/rake-run-configuration').then(
-      (mod) => ({ default: mod.RakeRunConfiguration }),
-    ),
-  'plugins/ruby/rake-task-def-node': () =>
-    import('@/registry/icons/plugins/ruby/rake-task-def-node').then((mod) => ({
-      default: mod.RakeTaskDefNode,
-    })),
-  'plugins/ruby/rbenv-run-anything': () =>
-    import('@/registry/icons/plugins/ruby/rbenv-run-anything').then((mod) => ({
-      default: mod.RbenvRunAnything,
-    })),
-  'plugins/ruby/rbs-file': () =>
-    import('@/registry/icons/plugins/ruby/rbs-file').then((mod) => ({
-      default: mod.RbsFile,
-    })),
-  'plugins/ruby/reader': () =>
-    import('@/registry/icons/plugins/ruby/reader').then((mod) => ({
-      default: mod.Reader,
-    })),
-  'plugins/ruby/resources': () =>
-    import('@/registry/icons/plugins/ruby/resources').then((mod) => ({
-      default: mod.Resources,
-    })),
-  'plugins/ruby/rhtml': () =>
-    import('@/registry/icons/plugins/ruby/rhtml').then((mod) => ({
-      default: mod.Rhtml,
-    })),
-  'plugins/ruby/rjs': () =>
-    import('@/registry/icons/plugins/ruby/rjs').then((mod) => ({
-      default: mod.Rjs,
-    })),
-  'plugins/ruby/rspec-run-configuration': () =>
-    import('@/registry/icons/plugins/ruby/rspec-run-configuration').then(
-      (mod) => ({ default: mod.RspecRunConfiguration }),
-    ),
-  'plugins/ruby/rspec-shared-group-closed': () =>
-    import('@/registry/icons/plugins/ruby/rspec-shared-group-closed').then(
-      (mod) => ({ default: mod.RspecSharedGroupClosed }),
-    ),
-  'plugins/ruby/rspec-shared-group-ref': () =>
-    import('@/registry/icons/plugins/ruby/rspec-shared-group-ref').then(
-      (mod) => ({ default: mod.RspecSharedGroupRef }),
-    ),
-  'plugins/ruby/rspec-test': () =>
-    import('@/registry/icons/plugins/ruby/rspec-test').then((mod) => ({
-      default: mod.RspecTest,
-    })),
-  'plugins/ruby/ruby': () =>
-    import('@/registry/icons/plugins/ruby/ruby').then((mod) => ({
-      default: mod.Ruby,
-    })),
-  'plugins/ruby/ruby-gems': () =>
-    import('@/registry/icons/plugins/ruby/ruby-gems').then((mod) => ({
-      default: mod.RubyGems,
-    })),
-  'plugins/ruby/ruby-module-closed': () =>
-    import('@/registry/icons/plugins/ruby/ruby-module-closed').then((mod) => ({
-      default: mod.RubyModuleClosed,
-    })),
-  'plugins/ruby/ruby-remote': () =>
-    import('@/registry/icons/plugins/ruby/ruby-remote').then((mod) => ({
-      default: mod.RubyRemote,
-    })),
-  'plugins/ruby/ruby-script': () =>
-    import('@/registry/icons/plugins/ruby/ruby-script').then((mod) => ({
-      default: mod.RubyScript,
-    })),
-  'plugins/ruby/ruby-test-unit': () =>
-    import('@/registry/icons/plugins/ruby/ruby-test-unit').then((mod) => ({
-      default: mod.RubyTestUnit,
-    })),
-  'plugins/ruby/run-configuration': () =>
-    import('@/registry/icons/plugins/ruby/run-configuration').then((mod) => ({
-      default: mod.RunConfiguration,
-    })),
-  'plugins/ruby/run-rack-task': () =>
-    import('@/registry/icons/plugins/ruby/run-rack-task').then((mod) => ({
-      default: mod.RunRackTask,
-    })),
-  'plugins/ruby/run-spork-server': () =>
-    import('@/registry/icons/plugins/ruby/run-spork-server').then((mod) => ({
-      default: mod.RunSporkServer,
-    })),
-  'plugins/ruby/run-with-type-tracker': () =>
-    import('@/registry/icons/plugins/ruby/run-with-type-tracker').then(
-      (mod) => ({ default: mod.RunWithTypeTracker }),
-    ),
-  'plugins/ruby/rvm-run-anything': () =>
-    import('@/registry/icons/plugins/ruby/rvm-run-anything').then((mod) => ({
-      default: mod.RvmRunAnything,
-    })),
-  'plugins/ruby/rxml': () =>
-    import('@/registry/icons/plugins/ruby/rxml').then((mod) => ({
-      default: mod.Rxml,
-    })),
-  'plugins/ruby/sequence': () =>
-    import('@/registry/icons/plugins/ruby/sequence').then((mod) => ({
-      default: mod.Sequence,
-    })),
-  'plugins/ruby/slim': () =>
-    import('@/registry/icons/plugins/ruby/slim').then((mod) => ({
-      default: mod.Slim,
-    })),
-  'plugins/ruby/step-definition-file': () =>
-    import('@/registry/icons/plugins/ruby/step-definition-file').then(
-      (mod) => ({ default: mod.StepDefinitionFile }),
-    ),
-  'plugins/ruby/structure-list-view': () =>
-    import('@/registry/icons/plugins/ruby/structure-list-view').then((mod) => ({
-      default: mod.StructureListView,
-    })),
-  'plugins/ruby/symbol': () =>
-    import('@/registry/icons/plugins/ruby/symbol').then((mod) => ({
-      default: mod.Symbol,
-    })),
-  'plugins/ruby/system-dbfield': () =>
-    import('@/registry/icons/plugins/ruby/system-dbfield').then((mod) => ({
-      default: mod.SystemDBField,
-    })),
-  'plugins/ruby/test-unit-file': () =>
-    import('@/registry/icons/plugins/ruby/test-unit-file').then((mod) => ({
-      default: mod.TestUnitFile,
-    })),
-  'plugins/ruby/trait': () =>
-    import('@/registry/icons/plugins/ruby/trait').then((mod) => ({
-      default: mod.Trait,
-    })),
-  'plugins/ruby/undocumented-task': () =>
-    import('@/registry/icons/plugins/ruby/undocumented-task').then((mod) => ({
-      default: mod.UndocumentedTask,
-    })),
-  'plugins/ruby/variable': () =>
-    import('@/registry/icons/plugins/ruby/variable').then((mod) => ({
-      default: mod.Variable,
-    })),
-  'plugins/ruby/web-root-file': () =>
-    import('@/registry/icons/plugins/ruby/web-root-file').then((mod) => ({
-      default: mod.WebRootFile,
-    })),
-  'plugins/ruby/writer': () =>
-    import('@/registry/icons/plugins/ruby/writer').then((mod) => ({
-      default: mod.Writer,
-    })),
-  'plugins/ruby/zeus': () =>
-    import('@/registry/icons/plugins/ruby/zeus').then((mod) => ({
-      default: mod.Zeus,
-    })),
-  'plugins/scala/abstract-class-object-scala': () =>
-    import('@/registry/icons/plugins/scala/abstract-class-object-scala').then(
-      (mod) => ({ default: mod.AbstractClassObjectScala }),
-    ),
-  'plugins/scala/abstract-class-scala': () =>
-    import('@/registry/icons/plugins/scala/abstract-class-scala').then(
-      (mod) => ({ default: mod.AbstractClassScala }),
-    ),
-  'plugins/scala/abstract-field-variable': () =>
-    import('@/registry/icons/plugins/scala/abstract-field-variable').then(
-      (mod) => ({ default: mod.AbstractFieldVariable }),
-    ),
-  'plugins/scala/abstract-field-variable1': () =>
-    import('@/registry/icons/plugins/scala/abstract-field-variable1').then(
-      (mod) => ({ default: mod.AbstractFieldVariable1 }),
-    ),
-  'plugins/scala/abstract-type-alias': () =>
-    import('@/registry/icons/plugins/scala/abstract-type-alias').then(
-      (mod) => ({ default: mod.AbstractTypeAlias }),
-    ),
-  'plugins/scala/add-clause': () =>
-    import('@/registry/icons/plugins/scala/add-clause').then((mod) => ({
-      default: mod.AddClause,
-    })),
-  'plugins/scala/build-server-protocol': () =>
-    import('@/registry/icons/plugins/scala/build-server-protocol').then(
-      (mod) => ({ default: mod.BuildServerProtocol }),
-    ),
-  'plugins/scala/build-server-protocol-load-changes': () =>
-    import(
-      '@/registry/icons/plugins/scala/build-server-protocol-load-changes'
-    ).then((mod) => ({ default: mod.BuildServerProtocolLoadChanges })),
-  'plugins/scala/build-server-protocol-target': () =>
-    import('@/registry/icons/plugins/scala/build-server-protocol-target').then(
-      (mod) => ({ default: mod.BuildServerProtocolTarget }),
-    ),
-  'plugins/scala/class-companion': () =>
-    import('@/registry/icons/plugins/scala/class-companion').then((mod) => ({
-      default: mod.ClassCompanion,
-    })),
-  'plugins/scala/class-companion-swapped': () =>
-    import('@/registry/icons/plugins/scala/class-companion-swapped').then(
-      (mod) => ({ default: mod.ClassCompanionSwapped }),
-    ),
-  'plugins/scala/class-object-scala': () =>
-    import('@/registry/icons/plugins/scala/class-object-scala').then((mod) => ({
-      default: mod.ClassObjectScala,
-    })),
-  'plugins/scala/class-scala': () =>
-    import('@/registry/icons/plugins/scala/class-scala').then((mod) => ({
-      default: mod.ClassScala,
-    })),
-  'plugins/scala/compile-server': () =>
-    import('@/registry/icons/plugins/scala/compile-server').then((mod) => ({
-      default: mod.CompileServer,
-    })),
-  'plugins/scala/enum-object-scala': () =>
-    import('@/registry/icons/plugins/scala/enum-object-scala').then((mod) => ({
-      default: mod.EnumObjectScala,
-    })),
-  'plugins/scala/enum-scala': () =>
-    import('@/registry/icons/plugins/scala/enum-scala').then((mod) => ({
-      default: mod.EnumScala,
-    })),
-  'plugins/scala/field-value': () =>
-    import('@/registry/icons/plugins/scala/field-value').then((mod) => ({
-      default: mod.FieldValue,
-    })),
-  'plugins/scala/field-value1': () =>
-    import('@/registry/icons/plugins/scala/field-value1').then((mod) => ({
-      default: mod.FieldValue1,
-    })),
-  'plugins/scala/field-variable': () =>
-    import('@/registry/icons/plugins/scala/field-variable').then((mod) => ({
-      default: mod.FieldVariable,
-    })),
-  'plugins/scala/field-variable1': () =>
-    import('@/registry/icons/plugins/scala/field-variable1').then((mod) => ({
-      default: mod.FieldVariable1,
-    })),
-  'plugins/scala/lambda': () =>
-    import('@/registry/icons/plugins/scala/lambda').then((mod) => ({
-      default: mod.Lambda,
-    })),
-  'plugins/scala/lightbend-logo': () =>
-    import('@/registry/icons/plugins/scala/lightbend-logo').then((mod) => ({
-      default: mod.LightbendLogo,
-    })),
-  'plugins/scala/multiple-type-definitions': () =>
-    import('@/registry/icons/plugins/scala/multiple-type-definitions').then(
-      (mod) => ({ default: mod.MultipleTypeDefinitions }),
-    ),
-  'plugins/scala/no-scala-sdk': () =>
-    import('@/registry/icons/plugins/scala/no-scala-sdk').then((mod) => ({
-      default: mod.NoScalaSDK,
-    })),
-  'plugins/scala/object-companion': () =>
-    import('@/registry/icons/plugins/scala/object-companion').then((mod) => ({
-      default: mod.ObjectCompanion,
-    })),
-  'plugins/scala/object-companion-swapped': () =>
-    import('@/registry/icons/plugins/scala/object-companion-swapped').then(
-      (mod) => ({ default: mod.ObjectCompanionSwapped }),
-    ),
-  'plugins/scala/object-scala': () =>
-    import('@/registry/icons/plugins/scala/object-scala').then((mod) => ({
-      default: mod.ObjectScala,
-    })),
-  'plugins/scala/package-object': () =>
-    import('@/registry/icons/plugins/scala/package-object').then((mod) => ({
-      default: mod.PackageObject,
-    })),
-  'plugins/scala/package-with-object': () =>
-    import('@/registry/icons/plugins/scala/package-with-object').then(
-      (mod) => ({ default: mod.PackageWithObject }),
-    ),
-  'plugins/scala/parameter': () =>
-    import('@/registry/icons/plugins/scala/parameter').then((mod) => ({
-      default: mod.Parameter,
-    })),
-  'plugins/scala/pattern-value': () =>
-    import('@/registry/icons/plugins/scala/pattern-value').then((mod) => ({
-      default: mod.PatternValue,
-    })),
-  'plugins/scala/play2': () =>
-    import('@/registry/icons/plugins/scala/play2').then((mod) => ({
-      default: mod.Play2,
-    })),
-  'plugins/scala/remove-clause': () =>
-    import('@/registry/icons/plugins/scala/remove-clause').then((mod) => ({
-      default: mod.RemoveClause,
-    })),
-  'plugins/scala/sbt-file': () =>
-    import('@/registry/icons/plugins/scala/sbt-file').then((mod) => ({
-      default: mod.SbtFile,
-    })),
-  'plugins/scala/sbt-folder': () =>
-    import('@/registry/icons/plugins/scala/sbt-folder').then((mod) => ({
-      default: mod.SbtFolder,
-    })),
-  'plugins/scala/sbt-icon': () =>
-    import('@/registry/icons/plugins/scala/sbt-icon').then((mod) => ({
-      default: mod.SbtIcon,
-    })),
-  'plugins/scala/sbt-load-changes': () =>
-    import('@/registry/icons/plugins/scala/sbt-load-changes').then((mod) => ({
-      default: mod.SbtLoadChanges,
-    })),
-  'plugins/scala/sbt-shell': () =>
-    import('@/registry/icons/plugins/scala/sbt-shell').then((mod) => ({
-      default: mod.SbtShell,
-    })),
-  'plugins/scala/scala-console': () =>
-    import('@/registry/icons/plugins/scala/scala-console').then((mod) => ({
-      default: mod.ScalaConsole,
-    })),
-  'plugins/scala/scala-file': () =>
-    import('@/registry/icons/plugins/scala/scala-file').then((mod) => ({
-      default: mod.ScalaFile,
-    })),
-  'plugins/scala/scala-html': () =>
-    import('@/registry/icons/plugins/scala/scala-html').then((mod) => ({
-      default: mod.ScalaHtml,
-    })),
-  'plugins/scala/scala-logo': () =>
-    import('@/registry/icons/plugins/scala/scala-logo').then((mod) => ({
-      default: mod.ScalaLogo,
-    })),
-  'plugins/scala/scala-script': () =>
-    import('@/registry/icons/plugins/scala/scala-script').then((mod) => ({
-      default: mod.ScalaScript,
-    })),
-  'plugins/scala/scala-sdk': () =>
-    import('@/registry/icons/plugins/scala/scala-sdk').then((mod) => ({
-      default: mod.ScalaSDK,
-    })),
-  'plugins/scala/scala-test': () =>
-    import('@/registry/icons/plugins/scala/scala-test').then((mod) => ({
-      default: mod.ScalaTest,
-    })),
-  'plugins/scala/scala16': () =>
-    import('@/registry/icons/plugins/scala/scala16').then((mod) => ({
-      default: mod.Scala16,
-    })),
-  'plugins/scala/trait-companion': () =>
-    import('@/registry/icons/plugins/scala/trait-companion').then((mod) => ({
-      default: mod.TraitCompanion,
-    })),
-  'plugins/scala/trait-companion-swapped': () =>
-    import('@/registry/icons/plugins/scala/trait-companion-swapped').then(
-      (mod) => ({ default: mod.TraitCompanionSwapped }),
-    ),
-  'plugins/scala/trait-object-scala': () =>
-    import('@/registry/icons/plugins/scala/trait-object-scala').then((mod) => ({
-      default: mod.TraitObjectScala,
-    })),
-  'plugins/scala/trait-scala': () =>
-    import('@/registry/icons/plugins/scala/trait-scala').then((mod) => ({
-      default: mod.TraitScala,
-    })),
-  'plugins/scala/type-alias': () =>
-    import('@/registry/icons/plugins/scala/type-alias').then((mod) => ({
-      default: mod.TypeAlias,
-    })),
-  'plugins/scala/typed': () =>
-    import('@/registry/icons/plugins/scala/typed').then((mod) => ({
-      default: mod.Typed,
-    })),
-  'plugins/scala/untyped': () =>
-    import('@/registry/icons/plugins/scala/untyped').then((mod) => ({
-      default: mod.Untyped,
-    })),
-  'plugins/scala/value': () =>
-    import('@/registry/icons/plugins/scala/value').then((mod) => ({
-      default: mod.Value,
-    })),
-  'plugins/scala/variable': () =>
-    import('@/registry/icons/plugins/scala/variable').then((mod) => ({
-      default: mod.Variable,
-    })),
-  'plugins/spring/abstract-bean': () =>
-    import('@/registry/icons/plugins/spring/abstract-bean').then((mod) => ({
-      default: mod.AbstractBean,
-    })),
-  'plugins/spring/factory-method-bean': () =>
-    import('@/registry/icons/plugins/spring/factory-method-bean').then(
-      (mod) => ({ default: mod.FactoryMethodBean }),
-    ),
-  'plugins/spring/file-set': () =>
-    import('@/registry/icons/plugins/spring/file-set').then((mod) => ({
-      default: mod.FileSet,
-    })),
-  'plugins/spring/implicit-bean': () =>
-    import('@/registry/icons/plugins/spring/implicit-bean').then((mod) => ({
-      default: mod.ImplicitBean,
-    })),
-  'plugins/spring/infrastructure-bean': () =>
-    import('@/registry/icons/plugins/spring/infrastructure-bean').then(
-      (mod) => ({ default: mod.InfrastructureBean }),
-    ),
-  'plugins/spring/integration': () =>
-    import('@/registry/icons/plugins/spring/integration').then((mod) => ({
-      default: mod.Integration,
-    })),
-  'plugins/spring/jpa': () =>
-    import('@/registry/icons/plugins/spring/jpa').then((mod) => ({
-      default: mod.Jpa,
-    })),
-  'plugins/spring/listener': () =>
-    import('@/registry/icons/plugins/spring/listener').then((mod) => ({
-      default: mod.Listener,
-    })),
-  'plugins/spring/prototype-bean': () =>
-    import('@/registry/icons/plugins/spring/prototype-bean').then((mod) => ({
-      default: mod.PrototypeBean,
-    })),
-  'plugins/spring/request-mapping': () =>
-    import('@/registry/icons/plugins/spring/request-mapping').then((mod) => ({
-      default: mod.RequestMapping,
-    })),
-  'plugins/spring/show-autowired-dependencies': () =>
-    import('@/registry/icons/plugins/spring/show-autowired-dependencies').then(
-      (mod) => ({ default: mod.ShowAutowiredDependencies }),
-    ),
-  'plugins/spring/show-cacheable': () =>
-    import('@/registry/icons/plugins/spring/show-cacheable').then((mod) => ({
-      default: mod.ShowCacheable,
-    })),
-  'plugins/spring/spring': () =>
-    import('@/registry/icons/plugins/spring/spring').then((mod) => ({
-      default: mod.Spring,
-    })),
-  'plugins/spring/spring-batch': () =>
-    import('@/registry/icons/plugins/spring/spring-batch').then((mod) => ({
-      default: mod.SpringBatch,
-    })),
-  'plugins/spring/spring-bean': () =>
-    import('@/registry/icons/plugins/spring/spring-bean').then((mod) => ({
-      default: mod.SpringBean,
-    })),
-  'plugins/spring/spring-boot': () =>
-    import('@/registry/icons/plugins/spring/spring-boot').then((mod) => ({
-      default: mod.SpringBoot,
-    })),
-  'plugins/spring/spring-boot-application': () =>
-    import('@/registry/icons/plugins/spring/spring-boot-application').then(
-      (mod) => ({ default: mod.SpringBootApplication }),
-    ),
-  'plugins/spring/spring-boot-endpoint': () =>
-    import('@/registry/icons/plugins/spring/spring-boot-endpoint').then(
-      (mod) => ({ default: mod.SpringBootEndpoint }),
-    ),
-  'plugins/spring/spring-boot-health': () =>
-    import('@/registry/icons/plugins/spring/spring-boot-health').then(
-      (mod) => ({ default: mod.SpringBootHealth }),
-    ),
-  'plugins/spring/spring-boot-overlay': () =>
-    import('@/registry/icons/plugins/spring/spring-boot-overlay').then(
-      (mod) => ({ default: mod.SpringBootOverlay }),
-    ),
-  'plugins/spring/spring-cloud': () =>
-    import('@/registry/icons/plugins/spring/spring-cloud').then((mod) => ({
-      default: mod.SpringCloud,
-    })),
-  'plugins/spring/spring-cloud-file-set': () =>
-    import('@/registry/icons/plugins/spring/spring-cloud-file-set').then(
-      (mod) => ({ default: mod.SpringCloudFileSet }),
-    ),
-  'plugins/spring/spring-cloud-stream': () =>
-    import('@/registry/icons/plugins/spring/spring-cloud-stream').then(
-      (mod) => ({ default: mod.SpringCloudStream }),
-    ),
-  'plugins/spring/spring-cloud-stream-file-set': () =>
-    import('@/registry/icons/plugins/spring/spring-cloud-stream-file-set').then(
-      (mod) => ({ default: mod.SpringCloudStreamFileSet }),
-    ),
-  'plugins/spring/spring-config': () =>
-    import('@/registry/icons/plugins/spring/spring-config').then((mod) => ({
-      default: mod.SpringConfig,
-    })),
-  'plugins/spring/spring-data': () =>
-    import('@/registry/icons/plugins/spring/spring-data').then((mod) => ({
-      default: mod.SpringData,
-    })),
-  'plugins/spring/spring-integration': () =>
-    import('@/registry/icons/plugins/spring/spring-integration').then(
-      (mod) => ({ default: mod.SpringIntegration }),
-    ),
-  'plugins/spring/spring-java-bean': () =>
-    import('@/registry/icons/plugins/spring/spring-java-bean').then((mod) => ({
-      default: mod.SpringJavaBean,
-    })),
-  'plugins/spring/spring-java-config': () =>
-    import('@/registry/icons/plugins/spring/spring-java-config').then(
-      (mod) => ({ default: mod.SpringJavaConfig }),
-    ),
-  'plugins/spring/spring-models-dependency-graph': () =>
-    import(
-      '@/registry/icons/plugins/spring/spring-models-dependency-graph'
-    ).then((mod) => ({ default: mod.SpringModelsDependencyGraph })),
-  'plugins/spring/spring-profile': () =>
-    import('@/registry/icons/plugins/spring/spring-profile').then((mod) => ({
-      default: mod.SpringProfile,
-    })),
-  'plugins/spring/spring-property': () =>
-    import('@/registry/icons/plugins/spring/spring-property').then((mod) => ({
-      default: mod.SpringProperty,
-    })),
-  'plugins/spring/spring-repository-run-mongo': () =>
-    import('@/registry/icons/plugins/spring/spring-repository-run-mongo').then(
-      (mod) => ({ default: mod.SpringRepositoryRunMongo }),
-    ),
-  'plugins/spring/spring-security': () =>
-    import('@/registry/icons/plugins/spring/spring-security').then((mod) => ({
-      default: mod.SpringSecurity,
-    })),
-  'plugins/spring/spring-session-factory': () =>
-    import('@/registry/icons/plugins/spring/spring-session-factory').then(
-      (mod) => ({ default: mod.SpringSessionFactory }),
-    ),
-  'plugins/spring/spring-web': () =>
-    import('@/registry/icons/plugins/spring/spring-web').then((mod) => ({
-      default: mod.SpringWeb,
-    })),
-  'plugins/spring/spring-web-flow': () =>
-    import('@/registry/icons/plugins/spring/spring-web-flow').then((mod) => ({
-      default: mod.SpringWebFlow,
-    })),
-  'plugins/spring/spring-web-flow-file': () =>
-    import('@/registry/icons/plugins/spring/spring-web-flow-file').then(
-      (mod) => ({ default: mod.SpringWebFlowFile }),
-    ),
-  'plugins/spring/spring-web-services': () =>
-    import('@/registry/icons/plugins/spring/spring-web-services').then(
-      (mod) => ({ default: mod.SpringWebServices }),
-    ),
-  'plugins/spring/transaction-manager': () =>
-    import('@/registry/icons/plugins/spring/transaction-manager').then(
-      (mod) => ({ default: mod.TransactionManager }),
-    ),
-  'plugins/spring/web-overlay': () =>
-    import('@/registry/icons/plugins/spring/web-overlay').then((mod) => ({
-      default: mod.WebOverlay,
-    })),
-  'plugins/stylus/stylus': () =>
-    import('@/registry/icons/plugins/stylus/stylus').then((mod) => ({
-      default: mod.Stylus,
-    })),
-  'plugins/tasks/start-timer': () =>
-    import('@/registry/icons/plugins/tasks/start-timer').then((mod) => ({
-      default: mod.StartTimer,
-    })),
-  'plugins/tasks/stop-timer': () =>
-    import('@/registry/icons/plugins/tasks/stop-timer').then((mod) => ({
-      default: mod.StopTimer,
-    })),
-  'plugins/toml/toml': () =>
-    import('@/registry/icons/plugins/toml/toml').then((mod) => ({
-      default: mod.Toml,
-    })),
-  'plugins/uml/add-note': () =>
-    import('@/registry/icons/plugins/uml/add-note').then((mod) => ({
-      default: mod.AddNote,
-    })),
-  'plugins/uml/constructor': () =>
-    import('@/registry/icons/plugins/uml/constructor').then((mod) => ({
-      default: mod.Constructor,
-    })),
-  'plugins/uml/dependencies': () =>
-    import('@/registry/icons/plugins/uml/dependencies').then((mod) => ({
-      default: mod.Dependencies,
-    })),
-  'plugins/uml/edge-mod': () =>
-    import('@/registry/icons/plugins/uml/edge-mod').then((mod) => ({
-      default: mod.EdgeMod,
-    })),
-  'plugins/uml/inner-class': () =>
-    import('@/registry/icons/plugins/uml/inner-class').then((mod) => ({
-      default: mod.InnerClass,
-    })),
-  'plugins/velocity/velocity': () =>
-    import('@/registry/icons/plugins/velocity/velocity').then((mod) => ({
-      default: mod.Velocity,
-    })),
-  'plugins/velocity/velocity-plugin-logo': () =>
-    import('@/registry/icons/plugins/velocity/velocity-plugin-logo').then(
-      (mod) => ({ default: mod.VelocityPluginLogo }),
-    ),
-  'plugins/velocity/west': () =>
-    import('@/registry/icons/plugins/velocity/west').then((mod) => ({
-      default: mod.West,
-    })),
-  pnpm: () =>
-    import('@/registry/icons/file-types/pnpm').then((mod) => ({
-      default: mod.Pnpm,
-    })),
-  'pnpm-lock': () =>
-    import('@/registry/icons/file-types/pnpm-lock').then((mod) => ({
-      default: mod.PnpmLock,
-    })),
-  pod: () =>
-    import('@/registry/icons/plugins/kubernetes/pod').then((mod) => ({
-      default: mod.Pod,
-    })),
-  'pod-security-policy': () =>
-    import('@/registry/icons/plugins/kubernetes/pod-security-policy').then(
-      (mod) => ({ default: mod.PodSecurityPolicy }),
-    ),
-  pointcut: () =>
-    import('@/registry/icons/plugins/aop/pointcut').then((mod) => ({
-      default: mod.Pointcut,
-    })),
-  polars: () =>
-    import('@/registry/icons/file-types/polars').then((mod) => ({
-      default: mod.Polars,
-    })),
-  postgresql: () =>
-    import('@/registry/icons/database/postgresql').then((mod) => ({
-      default: mod.Postgresql,
-    })),
-  'precedence-group': () =>
-    import('@/registry/icons/plugins/cidr/precedence-group').then((mod) => ({
-      default: mod.PrecedenceGroup,
-    })),
-  'preprocess-defines': () =>
-    import('@/registry/icons/plugins/cidr/preprocess-defines').then((mod) => ({
-      default: mod.PreprocessDefines,
-    })),
-  'preserve-case': () =>
-    import('@/registry/icons/general/inline/preserve-case').then((mod) => ({
-      default: mod.PreserveCase,
-    })),
-  presto: () =>
-    import('@/registry/icons/database/presto').then((mod) => ({
-      default: mod.Presto,
-    })),
-  prettier: () =>
-    import('@/registry/icons/file-types/prettier').then((mod) => ({
-      default: mod.Prettier,
-    })),
-  preview: () =>
-    import('@/registry/icons/general/actions/preview').then((mod) => ({
-      default: mod.Preview,
-    })),
-  'preview-changes': () =>
-    import('@/registry/icons/database/preview-changes').then((mod) => ({
-      default: mod.PreviewChanges,
-    })),
-  'preview-horizontally': () =>
-    import('@/registry/icons/general/general/preview-horizontally').then(
-      (mod) => ({ default: mod.PreviewHorizontally }),
-    ),
-  'preview-only': () =>
-    import('@/registry/icons/editor-icons/preview-only').then((mod) => ({
-      default: mod.PreviewOnly,
-    })),
-  'preview-vertically': () =>
-    import('@/registry/icons/general/general/preview-vertically').then(
-      (mod) => ({ default: mod.PreviewVertically }),
-    ),
-  print: () =>
-    import('@/registry/icons/general/general/print').then((mod) => ({
-      default: mod.Print,
-    })),
-  problems: () =>
-    import('@/registry/icons/general/tool-windows/problems').then((mod) => ({
-      default: mod.Problems,
-    })),
-  procedure: () =>
-    import('@/registry/icons/database/procedure').then((mod) => ({
-      default: mod.Procedure,
-    })),
-  'procedure-group': () =>
-    import('@/registry/icons/database/procedure-group').then((mod) => ({
-      default: mod.ProcedureGroup,
-    })),
-  'procedure-run': () =>
-    import('@/registry/icons/database/procedure-run').then((mod) => ({
-      default: mod.ProcedureRun,
-    })),
-  'process-mark': () =>
-    import('@/registry/icons/general/modifiers/process-mark').then((mod) => ({
-      default: mod.ProcessMark,
-    })),
-  profile: () =>
-    import('@/registry/icons/run/profile').then((mod) => ({
-      default: mod.Profile,
-    })),
-  'profile-cpu': () =>
-    import('@/registry/icons/general/actions/profile-cpu').then((mod) => ({
-      default: mod.ProfileCPU,
-    })),
-  'profile-memory': () =>
-    import('@/registry/icons/general/actions/profile-memory').then((mod) => ({
-      default: mod.ProfileMemory,
-    })),
-  'profile-red': () =>
-    import('@/registry/icons/general/actions/profile-red').then((mod) => ({
-      default: mod.ProfileRed,
-    })),
-  profiler: () =>
-    import('@/registry/icons/general/tool-windows/profiler').then((mod) => ({
-      default: mod.Profiler,
-    })),
-  'profiler-android': () =>
-    import('@/registry/icons/general/tool-windows/profiler-android').then(
-      (mod) => ({ default: mod.ProfilerAndroid }),
-    ),
-  project: () =>
-    import('@/registry/icons/general/tool-windows/project').then((mod) => ({
-      default: mod.Project,
-    })),
-  'project-configurable': () =>
-    import('@/registry/icons/general/general/project-configurable').then(
-      (mod) => ({ default: mod.ProjectConfigurable }),
-    ),
-  'project-directory': () =>
-    import('@/registry/icons/general/actions/project-directory').then(
-      (mod) => ({ default: mod.ProjectDirectory }),
-    ),
-  'project-properties': () =>
-    import('@/registry/icons/plugins/jpa/project-properties').then((mod) => ({
-      default: mod.ProjectProperties,
-    })),
-  'project-structure': () =>
-    import('@/registry/icons/general/general/project-structure').then(
-      (mod) => ({ default: mod.ProjectStructure }),
-    ),
-  'project-wide-analysis-off': () =>
-    import('@/registry/icons/general/general/project-wide-analysis-off').then(
-      (mod) => ({ default: mod.ProjectWideAnalysisOff }),
-    ),
-  'project-wide-analysis-on': () =>
-    import('@/registry/icons/general/general/project-wide-analysis-on').then(
-      (mod) => ({ default: mod.ProjectWideAnalysisOn }),
-    ),
-  'prompt-input': () =>
-    import('@/registry/icons/debugger/prompt-input').then((mod) => ({
-      default: mod.PromptInput,
-    })),
-  'prompt-input-history': () =>
-    import('@/registry/icons/debugger/prompt-input-history').then((mod) => ({
-      default: mod.PromptInputHistory,
-    })),
-  properties: () =>
-    import('@/registry/icons/file-types/properties').then((mod) => ({
-      default: mod.Properties,
-    })),
-  'proto-file': () =>
-    import('@/registry/icons/file-types/proto-file').then((mod) => ({
-      default: mod.ProtoFile,
-    })),
-  'proto-message': () =>
-    import('@/registry/icons/file-types/proto-message').then((mod) => ({
-      default: mod.ProtoMessage,
-    })),
-  protobuf: () =>
-    import('@/registry/icons/file-types/protobuf').then((mod) => ({
-      default: mod.Protobuf,
-    })),
-  'prototype-bean': () =>
-    import('@/registry/icons/plugins/spring/prototype-bean').then((mod) => ({
-      default: mod.PrototypeBean,
-    })),
-  publisher: () =>
-    import('@/registry/icons/plugins/java-ee/publisher').then((mod) => ({
-      default: mod.Publisher,
-    })),
-  'pull-requests': () =>
-    import('@/registry/icons/general/tool-windows/pull-requests').then(
-      (mod) => ({ default: mod.PullRequests }),
-    ),
-  push: () =>
-    import('@/registry/icons/vcs/push').then((mod) => ({ default: mod.Push })),
-  'py-spark': () =>
-    import('@/registry/icons/plugins/bdt/py-spark').then((mod) => ({
-      default: mod.PySpark,
-    })),
-  'py-torch': () =>
-    import('@/registry/icons/file-types/py-torch').then((mod) => ({
-      default: mod.PyTorch,
-    })),
-  python: () =>
-    import('@/registry/icons/file-types/python').then((mod) => ({
-      default: mod.Python,
-    })),
-  'python-console-tool-window': () =>
-    import(
-      '@/registry/icons/general/tool-windows/python-console-tool-window'
-    ).then((mod) => ({ default: mod.PythonConsoleToolWindow })),
-  qml: () =>
-    import('@/registry/icons/file-types/qml').then((mod) => ({
-      default: mod.Qml,
-    })),
-  qrc: () =>
-    import('@/registry/icons/file-types/qrc').then((mod) => ({
-      default: mod.Qrc,
-    })),
-  quatro: () =>
-    import('@/registry/icons/file-types/quatro').then((mod) => ({
-      default: mod.Quatro,
-    })),
-  'query-method': () =>
-    import('@/registry/icons/plugins/jpa/query-method').then((mod) => ({
-      default: mod.QueryMethod,
-    })),
-  'question-badge': () =>
-    import('@/registry/icons/breakpoints/question-badge').then((mod) => ({
-      default: mod.QuestionBadge,
-    })),
-  'question-dialog': () =>
-    import('@/registry/icons/general/status/question-dialog').then((mod) => ({
-      default: mod.QuestionDialog,
-    })),
-  'question-mark': () =>
-    import('@/registry/icons/general/general/question-mark').then((mod) => ({
-      default: mod.QuestionMark,
-    })),
-  'quickfix-bulb': () =>
-    import('@/registry/icons/editor-icons/quickfix-bulb').then((mod) => ({
-      default: mod.QuickfixBulb,
-    })),
-  'quickfix-off-bulb': () =>
-    import('@/registry/icons/editor-icons/quickfix-off-bulb').then((mod) => ({
-      default: mod.QuickfixOffBulb,
-    })),
-  quota: () =>
-    import('@/registry/icons/plugins/kubernetes/quota').then((mod) => ({
-      default: mod.Quota,
-    })),
-  'r-engine-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/r-engine-tool-window').then(
-      (mod) => ({ default: mod.REngineToolWindow }),
-    ),
-  'rails-module-closed': () =>
-    import('@/registry/icons/plugins/ruby/rails-module-closed').then((mod) => ({
-      default: mod.RailsModuleClosed,
-    })),
-  'rails-server-run-configuration': () =>
-    import('@/registry/icons/plugins/ruby/rails-server-run-configuration').then(
-      (mod) => ({ default: mod.RailsServerRunConfiguration }),
-    ),
-  'rake-run-configuration': () =>
-    import('@/registry/icons/plugins/ruby/rake-run-configuration').then(
-      (mod) => ({ default: mod.RakeRunConfiguration }),
-    ),
-  'rake-task-def-node': () =>
-    import('@/registry/icons/plugins/ruby/rake-task-def-node').then((mod) => ({
-      default: mod.RakeTaskDefNode,
-    })),
-  'rbenv-run-anything': () =>
-    import('@/registry/icons/plugins/ruby/rbenv-run-anything').then((mod) => ({
-      default: mod.RbenvRunAnything,
-    })),
-  'rbs-file': () =>
-    import('@/registry/icons/plugins/ruby/rbs-file').then((mod) => ({
-      default: mod.RbsFile,
-    })),
-  react: () =>
-    import('@/registry/icons/file-types/react').then((mod) => ({
-      default: mod.React,
-    })),
-  'react-icon': () =>
-    import('@/registry/icons/file-types/react-icon').then((mod) => ({
-      default: mod.ReactFileType,
-    })),
-  'read-access': () =>
-    import('@/registry/icons/editor-icons/read-access').then((mod) => ({
-      default: mod.ReadAccess,
-    })),
-  reader: () =>
-    import('@/registry/icons/plugins/ruby/reader').then((mod) => ({
-      default: mod.Reader,
-    })),
-  'reader-mode': () =>
-    import('@/registry/icons/general/general/reader-mode').then((mod) => ({
-      default: mod.ReaderMode,
-    })),
-  rebuild: () =>
-    import('@/registry/icons/general/tool-windows/rebuild').then((mod) => ({
-      default: mod.Rebuild,
-    })),
-  rec: () =>
-    import('@/registry/icons/editor-icons/rec').then((mod) => ({
-      default: mod.Rec,
-    })),
-  'recursive-method': () =>
-    import('@/registry/icons/editor-icons/recursive-method').then((mod) => ({
-      default: mod.RecursiveMethod,
-    })),
-  redis: () =>
-    import('@/registry/icons/database/redis').then((mod) => ({
-      default: mod.Redis,
-    })),
-  'redis-file-type': () =>
-    import('@/registry/icons/database/redis-file-type').then((mod) => ({
-      default: mod.RedisFileType,
-    })),
-  redo: () =>
-    import('@/registry/icons/general/general/redo').then((mod) => ({
-      default: mod.Redo,
-    })),
-  redoc: () =>
-    import('@/registry/icons/file-types/redoc').then((mod) => ({
-      default: mod.Redoc,
-    })),
-  redshift: () =>
-    import('@/registry/icons/database/redshift').then((mod) => ({
-      default: mod.Redshift,
-    })),
-  'reference-by': () =>
-    import('@/registry/icons/plugins/jpa/reference-by').then((mod) => ({
-      default: mod.ReferenceBy,
-    })),
-  'reference-to': () =>
-    import('@/registry/icons/plugins/jpa/reference-to').then((mod) => ({
-      default: mod.ReferenceTo,
-    })),
-  'reformat-code': () =>
-    import('@/registry/icons/general/general/reformat-code').then((mod) => ({
-      default: mod.ReformatCode,
-    })),
-  'refresh-kubernetes-configuration': () =>
-    import(
-      '@/registry/icons/plugins/kubernetes/refresh-kubernetes-configuration'
-    ).then((mod) => ({ default: mod.RefreshKubernetesConfiguration })),
-  'refresh-materialized-view': () =>
-    import('@/registry/icons/database/refresh-materialized-view').then(
-      (mod) => ({ default: mod.RefreshMaterializedView }),
-    ),
-  regex: () =>
-    import('@/registry/icons/general/inline/regex').then((mod) => ({
-      default: mod.Regex,
-    })),
-  regexp: () =>
-    import('@/registry/icons/file-types/regexp').then((mod) => ({
-      default: mod.Regexp,
-    })),
-  register: () =>
-    import('@/registry/icons/plugins/cidr/register').then((mod) => ({
-      default: mod.Register,
-    })),
-  registers: () =>
-    import('@/registry/icons/plugins/cidr/registers').then((mod) => ({
-      default: mod.Registers,
-    })),
-  relay: () =>
-    import('@/registry/icons/plugins/graphql/relay').then((mod) => ({
-      default: mod.Relay,
-    })),
-  remote: () =>
-    import('@/registry/icons/plugins/java-ee/remote').then((mod) => ({
-      default: mod.Remote,
-    })),
-  'remote-changes': () =>
-    import('@/registry/icons/general/setting-sync/remote-changes').then(
-      (mod) => ({ default: mod.RemoteChanges }),
-    ),
-  'remote-file-systems': () =>
-    import('@/registry/icons/plugins/bdt/remote-file-systems').then((mod) => ({
-      default: mod.RemoteFileSystems,
-    })),
-  'remote-swift-package-dependency': () =>
-    import(
-      '@/registry/icons/plugins/cidr/remote-swift-package-dependency'
-    ).then((mod) => ({ default: mod.RemoteSwiftPackageDependency })),
-  'remote-tool-set': () =>
-    import('@/registry/icons/plugins/cidr/remote-tool-set').then((mod) => ({
-      default: mod.RemoteToolSet,
-    })),
-  'remove-clause': () =>
-    import('@/registry/icons/plugins/scala/remove-clause').then((mod) => ({
-      default: mod.RemoveClause,
-    })),
-  'rename-column': () =>
-    import('@/registry/icons/plugins/jpa/rename-column').then((mod) => ({
-      default: mod.RenameColumn,
-    })),
-  'rename-constraint': () =>
-    import('@/registry/icons/plugins/jpa/rename-constraint').then((mod) => ({
-      default: mod.RenameConstraint,
-    })),
-  'rename-index': () =>
-    import('@/registry/icons/plugins/jpa/rename-index').then((mod) => ({
-      default: mod.RenameIndex,
-    })),
-  'rename-sequence': () =>
-    import('@/registry/icons/plugins/jpa/rename-sequence').then((mod) => ({
-      default: mod.RenameSequence,
-    })),
-  'rename-table': () =>
-    import('@/registry/icons/plugins/jpa/rename-table').then((mod) => ({
-      default: mod.RenameTable,
-    })),
-  'renderer-kit': () =>
-    import('@/registry/icons/plugins/java-ee/renderer-kit').then((mod) => ({
-      default: mod.RendererKit,
-    })),
-  replace: () =>
-    import('@/registry/icons/general/actions/replace').then((mod) => ({
-      default: mod.Replace,
-    })),
-  'replica-set': () =>
-    import('@/registry/icons/plugins/kubernetes/replica-set').then((mod) => ({
-      default: mod.ReplicaSet,
-    })),
-  report: () =>
-    import('@/registry/icons/general/actions/report').then((mod) => ({
-      default: mod.Report,
-    })),
-  repositories: () =>
-    import('@/registry/icons/general/tool-windows/repositories').then(
-      (mod) => ({ default: mod.Repositories }),
-    ),
-  repository: () =>
-    import('@/registry/icons/plugins/jpa/repository').then((mod) => ({
-      default: mod.Repository,
-    })),
-  'rerun-automatically': () =>
-    import('@/registry/icons/run/rerun-automatically').then((mod) => ({
-      default: mod.RerunAutomatically,
-    })),
-  reset: () =>
-    import('@/registry/icons/database/reset').then((mod) => ({
-      default: mod.Reset,
-    })),
-  'reset-cache-and-reload-projects': () =>
-    import(
-      '@/registry/icons/plugins/cidr/reset-cache-and-reload-projects'
-    ).then((mod) => ({ default: mod.ResetCacheAndReloadProjects })),
-  'reset-mcu': () =>
-    import('@/registry/icons/plugins/cidr/reset-mcu').then((mod) => ({
-      default: mod.ResetMcu,
-    })),
-  'resolve-continue': () =>
-    import('@/registry/icons/vcs/resolve-continue').then((mod) => ({
-      default: mod.ResolveContinue,
-    })),
-  'resource-bundle': () =>
-    import('@/registry/icons/nodes/resource-bundle').then((mod) => ({
-      default: mod.ResourceBundle,
-    })),
-  resources: () =>
-    import('@/registry/icons/plugins/ruby/resources').then((mod) => ({
-      default: mod.Resources,
-    })),
-  'resources-root': () =>
-    import('@/registry/icons/nodes/resources-root').then((mod) => ({
-      default: mod.ResourcesRoot,
-    })),
-  restart: () =>
-    import('@/registry/icons/run/restart').then((mod) => ({
-      default: mod.Restart,
-    })),
-  'restart-debug': () =>
-    import('@/registry/icons/run/restart-debug').then((mod) => ({
-      default: mod.RestartDebug,
-    })),
-  'restart-failed-tests': () =>
-    import('@/registry/icons/run/restart-failed-tests').then((mod) => ({
-      default: mod.RestartFailedTests,
-    })),
-  'restart-frame': () =>
-    import('@/registry/icons/run/restart-frame').then((mod) => ({
-      default: mod.RestartFrame,
-    })),
-  'restart-stop': () =>
-    import('@/registry/icons/general/actions/restart-stop').then((mod) => ({
-      default: mod.RestartStop,
-    })),
-  restore: () =>
-    import('@/registry/icons/general/windows/restore').then((mod) => ({
-      default: mod.Restore,
-    })),
-  'restore-from-ignore': () =>
-    import('@/registry/icons/plugins/jpa/restore-from-ignore').then((mod) => ({
-      default: mod.RestoreFromIgnore,
-    })),
-  'restore-inactive': () =>
-    import('@/registry/icons/general/windows/restore-inactive').then((mod) => ({
-      default: mod.RestoreInactive,
-    })),
-  'restore-small': () =>
-    import('@/registry/icons/general/windows/restore-small').then((mod) => ({
-      default: mod.RestoreSmall,
-    })),
-  'resume-hovered': () =>
-    import('@/registry/icons/general/progress-bar/resume-hovered').then(
-      (mod) => ({ default: mod.ResumeHovered }),
-    ),
-  'return-value': () =>
-    import('@/registry/icons/plugins/cidr/return-value').then((mod) => ({
-      default: mod.ReturnValue,
-    })),
-  revert: () =>
-    import('@/registry/icons/vcs/revert').then((mod) => ({
-      default: mod.Revert,
-    })),
-  rhtml: () =>
-    import('@/registry/icons/plugins/ruby/rhtml').then((mod) => ({
-      default: mod.Rhtml,
-    })),
-  right: () =>
-    import('@/registry/icons/general/general/right').then((mod) => ({
-      default: mod.Right,
-    })),
-  'right-align': () =>
-    import('@/registry/icons/general/editor/right-align').then((mod) => ({
-      default: mod.RightAlign,
-    })),
-  rjs: () =>
-    import('@/registry/icons/plugins/ruby/rjs').then((mod) => ({
-      default: mod.Rjs,
-    })),
-  'role-binding': () =>
-    import('@/registry/icons/plugins/kubernetes/role-binding').then((mod) => ({
-      default: mod.RoleBinding,
-    })),
-  rollback: () =>
-    import('@/registry/icons/database/rollback').then((mod) => ({
-      default: mod.Rollback,
-    })),
-  routine: () =>
-    import('@/registry/icons/database/routine').then((mod) => ({
-      default: mod.Routine,
-    })),
-  'rspec-run-configuration': () =>
-    import('@/registry/icons/plugins/ruby/rspec-run-configuration').then(
-      (mod) => ({ default: mod.RspecRunConfiguration }),
-    ),
-  'rspec-shared-group-closed': () =>
-    import('@/registry/icons/plugins/ruby/rspec-shared-group-closed').then(
-      (mod) => ({ default: mod.RspecSharedGroupClosed }),
-    ),
-  'rspec-shared-group-ref': () =>
-    import('@/registry/icons/plugins/ruby/rspec-shared-group-ref').then(
-      (mod) => ({ default: mod.RspecSharedGroupRef }),
-    ),
-  'rspec-test': () =>
-    import('@/registry/icons/plugins/ruby/rspec-test').then((mod) => ({
-      default: mod.RspecTest,
-    })),
-  rst: () =>
-    import('@/registry/icons/file-types/rst').then((mod) => ({
-      default: mod.Rst,
-    })),
-  ruby: () =>
-    import('@/registry/icons/plugins/ruby/ruby').then((mod) => ({
-      default: mod.Ruby,
-    })),
-  'ruby-gems': () =>
-    import('@/registry/icons/plugins/ruby/ruby-gems').then((mod) => ({
-      default: mod.RubyGems,
-    })),
-  'ruby-module-closed': () =>
-    import('@/registry/icons/plugins/ruby/ruby-module-closed').then((mod) => ({
-      default: mod.RubyModuleClosed,
-    })),
-  'ruby-remote': () =>
-    import('@/registry/icons/plugins/ruby/ruby-remote').then((mod) => ({
-      default: mod.RubyRemote,
-    })),
-  'ruby-script': () =>
-    import('@/registry/icons/plugins/ruby/ruby-script').then((mod) => ({
-      default: mod.RubyScript,
-    })),
-  'ruby-test-unit': () =>
-    import('@/registry/icons/plugins/ruby/ruby-test-unit').then((mod) => ({
-      default: mod.RubyTestUnit,
-    })),
-  'run-all': () =>
-    import('@/registry/icons/general/actions/run-all').then((mod) => ({
-      default: mod.RunAll,
-    })),
-  'run-anything': () =>
-    import('@/registry/icons/general/general/run-anything').then((mod) => ({
-      default: mod.RunAnything,
-    })),
-  'run-as-workflow': () =>
-    import('@/registry/icons/plugins/databricks/run-as-workflow').then(
-      (mod) => ({ default: mod.RunAsWorkflow }),
-    ),
-  'run-configuration': () =>
-    import('@/registry/icons/plugins/ruby/run-configuration').then((mod) => ({
-      default: mod.RunConfiguration,
-    })),
-  'run-configurations/application': () =>
-    import('@/registry/icons/run-configurations/application').then((mod) => ({
-      default: mod.Application,
-    })),
-  'run-configurations/application-remote': () =>
-    import('@/registry/icons/run-configurations/application-remote').then(
-      (mod) => ({ default: mod.ApplicationRemote }),
-    ),
-  'run-configurations/compound': () =>
-    import('@/registry/icons/run-configurations/compound').then((mod) => ({
-      default: mod.Compound,
-    })),
-  'run-configurations/ignored-test': () =>
-    import('@/registry/icons/run-configurations/ignored-test').then((mod) => ({
-      default: mod.IgnoredTest,
-    })),
-  'run-configurations/invalid-configuration-layer': () =>
-    import(
-      '@/registry/icons/run-configurations/invalid-configuration-layer'
-    ).then((mod) => ({ default: mod.InvalidConfigurationLayer })),
-  'run-configurations/java-scratch': () =>
-    import('@/registry/icons/run-configurations/java-scratch').then((mod) => ({
-      default: mod.JavaScratch,
-    })),
-  'run-configurations/java-script-debug-configuration': () =>
-    import(
-      '@/registry/icons/run-configurations/java-script-debug-configuration'
-    ).then((mod) => ({ default: mod.JavaScriptDebugConfiguration })),
-  'run-configurations/java-script-remote': () =>
-    import('@/registry/icons/run-configurations/java-script-remote').then(
-      (mod) => ({ default: mod.JavaScriptRemote }),
-    ),
-  'run-configurations/junit': () =>
-    import('@/registry/icons/run-configurations/junit').then((mod) => ({
-      default: mod.Junit,
-    })),
-  'run-configurations/junit-test-mark': () =>
-    import('@/registry/icons/run-configurations/junit-test-mark').then(
-      (mod) => ({ default: mod.JunitTestMark }),
-    ),
-  'run-configurations/php-local': () =>
-    import('@/registry/icons/run-configurations/php-local').then((mod) => ({
-      default: mod.PhpLocal,
-    })),
-  'run-configurations/php-remote': () =>
-    import('@/registry/icons/run-configurations/php-remote').then((mod) => ({
-      default: mod.PhpRemote,
-    })),
-  'run-configurations/php-web': () =>
-    import('@/registry/icons/run-configurations/php-web').then((mod) => ({
-      default: mod.PhpWeb,
-    })),
-  'run-configurations/run-http-request': () =>
-    import('@/registry/icons/run-configurations/run-http-request').then(
-      (mod) => ({ default: mod.RunHttpRequest }),
-    ),
-  'run-configurations/web-app': () =>
-    import('@/registry/icons/run-configurations/web-app').then((mod) => ({
-      default: mod.WebApp,
-    })),
-  'run-database-script': () =>
-    import('@/registry/icons/database/run-database-script').then((mod) => ({
-      default: mod.RunDatabaseScript,
-    })),
-  'run-error': () =>
-    import('@/registry/icons/editor-icons/run-error').then((mod) => ({
-      default: mod.RunError,
-    })),
-  'run-failed': () =>
-    import('@/registry/icons/editor-icons/run-failed').then((mod) => ({
-      default: mod.RunFailed,
-    })),
-  'run-http-request': () =>
-    import('@/registry/icons/run-configurations/run-http-request').then(
-      (mod) => ({ default: mod.RunHttpRequest }),
-    ),
-  'run-rack-task': () =>
-    import('@/registry/icons/plugins/ruby/run-rack-task').then((mod) => ({
-      default: mod.RunRackTask,
-    })),
-  'run-spork-server': () =>
-    import('@/registry/icons/plugins/ruby/run-spork-server').then((mod) => ({
-      default: mod.RunSporkServer,
-    })),
-  'run-success': () =>
-    import('@/registry/icons/editor-icons/run-success').then((mod) => ({
-      default: mod.RunSuccess,
-    })),
-  'run-to-cursor': () =>
-    import('@/registry/icons/run/run-to-cursor').then((mod) => ({
-      default: mod.RunToCursor,
-    })),
-  'run-with-coverage': () =>
-    import('@/registry/icons/run/run-with-coverage').then((mod) => ({
-      default: mod.RunWithCoverage,
-    })),
-  'run-with-type-tracker': () =>
-    import('@/registry/icons/plugins/ruby/run-with-type-tracker').then(
-      (mod) => ({ default: mod.RunWithTypeTracker }),
-    ),
-  'run/attach-to-process': () =>
-    import('@/registry/icons/run/attach-to-process').then((mod) => ({
-      default: mod.AttachToProcess,
-    })),
-  'run/debug': () =>
-    import('@/registry/icons/run/debug').then((mod) => ({
-      default: mod.Debug,
-    })),
-  'run/dump-threads': () =>
-    import('@/registry/icons/run/dump-threads').then((mod) => ({
-      default: mod.DumpThreads,
-    })),
-  'run/evaluate-expression': () =>
-    import('@/registry/icons/run/evaluate-expression').then((mod) => ({
-      default: mod.EvaluateExpression,
-    })),
-  'run/failed-in-progress': () =>
-    import('@/registry/icons/run/failed-in-progress').then((mod) => ({
-      default: mod.FailedInProgress,
-    })),
-  'run/force-run-to-cursor': () =>
-    import('@/registry/icons/run/force-run-to-cursor').then((mod) => ({
-      default: mod.ForceRunToCursor,
-    })),
-  'run/force-step-into': () =>
-    import('@/registry/icons/run/force-step-into').then((mod) => ({
-      default: mod.ForceStepInto,
-    })),
-  'run/force-step-over': () =>
-    import('@/registry/icons/run/force-step-over').then((mod) => ({
-      default: mod.ForceStepOver,
-    })),
-  'run/kill-process': () =>
-    import('@/registry/icons/run/kill-process').then((mod) => ({
-      default: mod.KillProcess,
-    })),
-  'run/mute-breakpoints': () =>
-    import('@/registry/icons/run/mute-breakpoints').then((mod) => ({
-      default: mod.MuteBreakpoints,
-    })),
-  'run/pause': () =>
-    import('@/registry/icons/run/pause').then((mod) => ({
-      default: mod.Pause,
-    })),
-  'run/profile': () =>
-    import('@/registry/icons/run/profile').then((mod) => ({
-      default: mod.Profile,
-    })),
-  'run/rerun': () =>
-    import('@/registry/icons/run/rerun').then((mod) => ({
-      default: mod.Rerun,
-    })),
-  'run/rerun-automatically': () =>
-    import('@/registry/icons/run/rerun-automatically').then((mod) => ({
-      default: mod.RerunAutomatically,
-    })),
-  'run/restart': () =>
-    import('@/registry/icons/run/restart').then((mod) => ({
-      default: mod.Restart,
-    })),
-  'run/restart-debug': () =>
-    import('@/registry/icons/run/restart-debug').then((mod) => ({
-      default: mod.RestartDebug,
-    })),
-  'run/restart-failed-tests': () =>
-    import('@/registry/icons/run/restart-failed-tests').then((mod) => ({
-      default: mod.RestartFailedTests,
-    })),
-  'run/restart-frame': () =>
-    import('@/registry/icons/run/restart-frame').then((mod) => ({
-      default: mod.RestartFrame,
-    })),
-  'run/resume': () =>
-    import('@/registry/icons/run/resume').then((mod) => ({
-      default: mod.Resume,
-    })),
-  'run/run': () =>
-    import('@/registry/icons/run/run').then((mod) => ({ default: mod.Run })),
-  'run/run-to-cursor': () =>
-    import('@/registry/icons/run/run-to-cursor').then((mod) => ({
-      default: mod.RunToCursor,
-    })),
-  'run/run-with-coverage': () =>
-    import('@/registry/icons/run/run-with-coverage').then((mod) => ({
-      default: mod.RunWithCoverage,
-    })),
-  'run/show-current-frame': () =>
-    import('@/registry/icons/run/show-current-frame').then((mod) => ({
-      default: mod.ShowCurrentFrame,
-    })),
-  'run/show-ignored': () =>
-    import('@/registry/icons/run/show-ignored').then((mod) => ({
-      default: mod.ShowIgnored,
-    })),
-  'run/show-passed': () =>
-    import('@/registry/icons/run/show-passed').then((mod) => ({
-      default: mod.ShowPassed,
-    })),
-  'run/smart-step-into': () =>
-    import('@/registry/icons/run/smart-step-into').then((mod) => ({
-      default: mod.SmartStepInto,
-    })),
-  'run/step-into': () =>
-    import('@/registry/icons/run/step-into').then((mod) => ({
-      default: mod.StepInto,
-    })),
-  'run/step-out': () =>
-    import('@/registry/icons/run/step-out').then((mod) => ({
-      default: mod.StepOut,
-    })),
-  'run/step-out-code-block': () =>
-    import('@/registry/icons/run/step-out-code-block').then((mod) => ({
-      default: mod.StepOutCodeBlock,
-    })),
-  'run/step-over': () =>
-    import('@/registry/icons/run/step-over').then((mod) => ({
-      default: mod.StepOver,
-    })),
-  'run/stop': () =>
-    import('@/registry/icons/run/stop').then((mod) => ({ default: mod.Stop })),
-  'run/test-custom': () =>
-    import('@/registry/icons/run/test-custom').then((mod) => ({
-      default: mod.TestCustom,
-    })),
-  'run/test-error': () =>
-    import('@/registry/icons/run/test-error').then((mod) => ({
-      default: mod.TestError,
-    })),
-  'run/test-failed': () =>
-    import('@/registry/icons/run/test-failed').then((mod) => ({
-      default: mod.TestFailed,
-    })),
-  'run/test-ignored': () =>
-    import('@/registry/icons/run/test-ignored').then((mod) => ({
-      default: mod.TestIgnored,
-    })),
-  'run/test-not-run-yet': () =>
-    import('@/registry/icons/run/test-not-run-yet').then((mod) => ({
-      default: mod.TestNotRunYet,
-    })),
-  'run/test-passed': () =>
-    import('@/registry/icons/run/test-passed').then((mod) => ({
-      default: mod.TestPassed,
-    })),
-  'run/test-passed-ignored': () =>
-    import('@/registry/icons/run/test-passed-ignored').then((mod) => ({
-      default: mod.TestPassedIgnored,
-    })),
-  'run/test-paused': () =>
-    import('@/registry/icons/run/test-paused').then((mod) => ({
-      default: mod.TestPaused,
-    })),
-  'run/test-runner-watch': () =>
-    import('@/registry/icons/run/test-runner-watch').then((mod) => ({
-      default: mod.TestRunnerWatch,
-    })),
-  'run/test-skipped': () =>
-    import('@/registry/icons/run/test-skipped').then((mod) => ({
-      default: mod.TestSkipped,
-    })),
-  'run/test-terminated': () =>
-    import('@/registry/icons/run/test-terminated').then((mod) => ({
-      default: mod.TestTerminated,
-    })),
-  'run/test-unknown': () =>
-    import('@/registry/icons/run/test-unknown').then((mod) => ({
-      default: mod.TestUnknown,
-    })),
-  'run/trace-stream': () =>
-    import('@/registry/icons/run/trace-stream').then((mod) => ({
-      default: mod.TraceStream,
-    })),
-  'run/view-breakpoints': () =>
-    import('@/registry/icons/run/view-breakpoints').then((mod) => ({
-      default: mod.ViewBreakpoints,
-    })),
-  'run/watch': () =>
-    import('@/registry/icons/run/watch').then((mod) => ({
-      default: mod.Watch,
-    })),
-  'runnable-mark': () =>
-    import('@/registry/icons/general/modifiers/runnable-mark').then((mod) => ({
-      default: mod.RunnableMark,
-    })),
-  rust: () =>
-    import('@/registry/icons/general/tool-windows/rust').then((mod) => ({
-      default: mod.Rust,
-    })),
-  'rvm-run-anything': () =>
-    import('@/registry/icons/plugins/ruby/rvm-run-anything').then((mod) => ({
-      default: mod.RvmRunAnything,
-    })),
-  rxml: () =>
-    import('@/registry/icons/plugins/ruby/rxml').then((mod) => ({
-      default: mod.Rxml,
-    })),
-  'safe-all': () =>
-    import('@/registry/icons/plugins/package-checker/safe-all').then((mod) => ({
-      default: mod.SafeAll,
-    })),
-  'safe-all-tree': () =>
-    import('@/registry/icons/plugins/package-checker/safe-all-tree').then(
-      (mod) => ({ default: mod.SafeAllTree }),
-    ),
-  'safe-all-tree-outline': () =>
-    import(
-      '@/registry/icons/plugins/package-checker/safe-all-tree-outline'
-    ).then((mod) => ({ default: mod.SafeAllTreeOutline })),
-  sarif: () =>
-    import('@/registry/icons/file-types/sarif').then((mod) => ({
-      default: mod.Sarif,
-    })),
-  sass: () =>
-    import('@/registry/icons/file-types/sass').then((mod) => ({
-      default: mod.Sass,
-    })),
-  'sbt-file': () =>
-    import('@/registry/icons/plugins/scala/sbt-file').then((mod) => ({
-      default: mod.SbtFile,
-    })),
-  'sbt-folder': () =>
-    import('@/registry/icons/plugins/scala/sbt-folder').then((mod) => ({
-      default: mod.SbtFolder,
-    })),
-  'sbt-load-changes': () =>
-    import('@/registry/icons/plugins/scala/sbt-load-changes').then((mod) => ({
-      default: mod.SbtLoadChanges,
-    })),
-  scala: () =>
-    import('@/registry/icons/file-types/scala').then((mod) => ({
-      default: mod.Scala,
-    })),
-  'scala-console': () =>
-    import('@/registry/icons/plugins/scala/scala-console').then((mod) => ({
-      default: mod.ScalaConsole,
-    })),
-  'scala-file': () =>
-    import('@/registry/icons/plugins/scala/scala-file').then((mod) => ({
-      default: mod.ScalaFile,
-    })),
-  'scala-html': () =>
-    import('@/registry/icons/plugins/scala/scala-html').then((mod) => ({
-      default: mod.ScalaHtml,
-    })),
-  'scala-logo': () =>
-    import('@/registry/icons/plugins/scala/scala-logo').then((mod) => ({
-      default: mod.ScalaLogo,
-    })),
-  'scala-profiler': () =>
-    import('@/registry/icons/general/tool-windows/scala-profiler').then(
-      (mod) => ({ default: mod.ScalaProfiler }),
-    ),
-  'scala-script': () =>
-    import('@/registry/icons/plugins/scala/scala-script').then((mod) => ({
-      default: mod.ScalaScript,
-    })),
-  'scala-sdk': () =>
-    import('@/registry/icons/plugins/scala/scala-sdk').then((mod) => ({
-      default: mod.ScalaSDK,
-    })),
-  'scala-test': () =>
-    import('@/registry/icons/plugins/scala/scala-test').then((mod) => ({
-      default: mod.ScalaTest,
-    })),
-  scala16: () =>
-    import('@/registry/icons/plugins/scala/scala16').then((mod) => ({
-      default: mod.Scala16,
-    })),
-  scalar: () =>
-    import('@/registry/icons/plugins/graphql/scalar').then((mod) => ({
-      default: mod.Scalar,
-    })),
-  'sci-view': () =>
-    import('@/registry/icons/general/tool-windows/sci-view').then((mod) => ({
-      default: mod.SciView,
-    })),
-  scopes: () =>
-    import('@/registry/icons/plugins/java-ee/scopes').then((mod) => ({
-      default: mod.Scopes,
-    })),
-  scratch: () =>
-    import('@/registry/icons/file-types/scratch').then((mod) => ({
-      default: mod.Scratch,
-    })),
-  scratches: () =>
-    import('@/registry/icons/file-types/scratches').then((mod) => ({
-      default: mod.Scratches,
-    })),
-  screens: () =>
-    import('@/registry/icons/plugins/jpa/screens').then((mod) => ({
-      default: mod.Screens,
-    })),
-  'scripting-script': () =>
-    import('@/registry/icons/database/scripting-script').then((mod) => ({
-      default: mod.ScriptingScript,
-    })),
-  scss: () =>
-    import('@/registry/icons/file-types/scss').then((mod) => ({
-      default: mod.Scss,
-    })),
-  'sdk-closed': () =>
-    import('@/registry/icons/general/devkit/sdk-closed').then((mod) => ({
-      default: mod.SdkClosed,
-    })),
-  search: () =>
-    import('@/registry/icons/general/general/search').then((mod) => ({
-      default: mod.Search,
-    })),
-  'search-history': () =>
-    import('@/registry/icons/general/inline/search-history').then((mod) => ({
-      default: mod.SearchHistory,
-    })),
-  'select-all': () =>
-    import('@/registry/icons/general/actions/select-all').then((mod) => ({
-      default: mod.SelectAll,
-    })),
-  'self-reference': () =>
-    import('@/registry/icons/debugger/self-reference').then((mod) => ({
-      default: mod.SelfReference,
-    })),
-  send: () =>
-    import('@/registry/icons/general/ai-assistant/send').then((mod) => ({
-      default: mod.Send,
-    })),
-  'send-to-editor': () =>
-    import('@/registry/icons/general/ai-assistant/send-to-editor').then(
-      (mod) => ({ default: mod.SendToEditor }),
-    ),
-  'send-to-the-left': () =>
-    import('@/registry/icons/general/duplicates/send-to-the-left').then(
-      (mod) => ({ default: mod.SendToTheLeft }),
-    ),
-  'send-to-the-left-grayed': () =>
-    import('@/registry/icons/general/duplicates/send-to-the-left-grayed').then(
-      (mod) => ({ default: mod.SendToTheLeftGrayed }),
-    ),
-  'send-to-the-right': () =>
-    import('@/registry/icons/general/duplicates/send-to-the-right').then(
-      (mod) => ({ default: mod.SendToTheRight }),
-    ),
-  'send-to-the-right-grayed': () =>
-    import('@/registry/icons/general/duplicates/send-to-the-right-grayed').then(
-      (mod) => ({ default: mod.SendToTheRightGrayed }),
-    ),
-  'separator-horizontal': () =>
-    import('@/registry/icons/general/general/separator-horizontal').then(
-      (mod) => ({ default: mod.SeparatorHorizontal }),
-    ),
-  server: () =>
-    import('@/registry/icons/nodes/server').then((mod) => ({
-      default: mod.Server,
-    })),
-  'server-objects-group': () =>
-    import('@/registry/icons/database/server-objects-group').then((mod) => ({
-      default: mod.ServerObjectsGroup,
-    })),
-  'service-account': () =>
-    import('@/registry/icons/plugins/kubernetes/service-account').then(
-      (mod) => ({ default: mod.ServiceAccount }),
-    ),
-  servlet: () =>
-    import('@/registry/icons/nodes/servlet').then((mod) => ({
-      default: mod.Servlet,
-    })),
-  'session-bean': () =>
-    import('@/registry/icons/plugins/java-ee/session-bean').then((mod) => ({
-      default: mod.SessionBean,
-    })),
-  set: () =>
-    import('@/registry/icons/database/set').then((mod) => ({
-      default: mod.Set,
-    })),
-  'set-context': () =>
-    import('@/registry/icons/plugins/jpa/set-context').then((mod) => ({
-      default: mod.SetContext,
-    })),
-  'set-key': () =>
-    import('@/registry/icons/database/set-key').then((mod) => ({
-      default: mod.SetKey,
-    })),
-  'set-label': () =>
-    import('@/registry/icons/plugins/jpa/set-label').then((mod) => ({
-      default: mod.SetLabel,
-    })),
-  shared: () =>
-    import('@/registry/icons/general/modifiers/shared').then((mod) => ({
-      default: mod.Shared,
-    })),
-  'shared-scope': () =>
-    import('@/registry/icons/nodes/shared-scope').then((mod) => ({
-      default: mod.SharedScope,
-    })),
-  sharp: () =>
-    import('@/registry/icons/editor-icons/sharp').then((mod) => ({
-      default: mod.Sharp,
-    })),
-  shell: () =>
-    import('@/registry/icons/file-types/shell').then((mod) => ({
-      default: mod.Shell,
-    })),
-  'shortcut-filter': () =>
-    import('@/registry/icons/general/actions/shortcut-filter').then((mod) => ({
-      default: mod.ShortcutFilter,
-    })),
-  show: () =>
-    import('@/registry/icons/general/general/show').then((mod) => ({
-      default: mod.Show,
-    })),
-  'show-as-tree': () =>
-    import('@/registry/icons/general/general/show-as-tree').then((mod) => ({
-      default: mod.ShowAsTree,
-    })),
-  'show-autowired-candidates': () =>
-    import('@/registry/icons/plugins/java-ee/show-autowired-candidates').then(
-      (mod) => ({ default: mod.ShowAutowiredCandidates }),
-    ),
-  'show-code': () =>
-    import('@/registry/icons/plugins/jpa/show-code').then((mod) => ({
-      default: mod.ShowCode,
-    })),
-  'show-current-frame': () =>
-    import('@/registry/icons/run/show-current-frame').then((mod) => ({
-      default: mod.ShowCurrentFrame,
-    })),
-  'show-ignored': () =>
-    import('@/registry/icons/run/show-ignored').then((mod) => ({
-      default: mod.ShowIgnored,
-    })),
-  'show-import-statements': () =>
-    import('@/registry/icons/general/usages/show-import-statements').then(
-      (mod) => ({ default: mod.ShowImportStatements }),
-    ),
-  'show-library-contents': () =>
-    import(
-      '@/registry/icons/general/object-browser/show-library-contents'
-    ).then((mod) => ({ default: mod.ShowLibraryContents })),
-  'show-logs': () =>
-    import('@/registry/icons/plugins/kubernetes/show-logs').then((mod) => ({
-      default: mod.ShowLogs,
-    })),
-  'show-members': () =>
-    import('@/registry/icons/general/object-browser/show-members').then(
-      (mod) => ({ default: mod.ShowMembers }),
-    ),
-  'show-passed': () =>
-    import('@/registry/icons/run/show-passed').then((mod) => ({
-      default: mod.ShowPassed,
-    })),
-  'show-read-access': () =>
-    import('@/registry/icons/general/usages/show-read-access').then((mod) => ({
-      default: mod.ShowReadAccess,
-    })),
-  'show-to-implement': () =>
-    import('@/registry/icons/general/actions/show-to-implement').then(
-      (mod) => ({ default: mod.ShowToImplement }),
-    ),
-  'show-write-access': () =>
-    import('@/registry/icons/general/usages/show-write-access').then((mod) => ({
-      default: mod.ShowWriteAccess,
-    })),
-  'sibling-inherited-method': () =>
-    import('@/registry/icons/editor-icons/sibling-inherited-method').then(
-      (mod) => ({ default: mod.SiblingInheritedMethod }),
-    ),
-  'single-record-view': () =>
-    import('@/registry/icons/database/single-record-view').then((mod) => ({
-      default: mod.SingleRecordView,
-    })),
-  singlestore: () =>
-    import('@/registry/icons/database/singlestore').then((mod) => ({
-      default: mod.Singlestore,
-    })),
-  'skip-commit': () =>
-    import('@/registry/icons/vcs/skip-commit').then((mod) => ({
-      default: mod.SkipCommit,
-    })),
-  slim: () =>
-    import('@/registry/icons/plugins/ruby/slim').then((mod) => ({
-      default: mod.Slim,
-    })),
-  'smart-step-into': () =>
-    import('@/registry/icons/run/smart-step-into').then((mod) => ({
-      default: mod.SmartStepInto,
-    })),
-  snowflake: () =>
-    import('@/registry/icons/database/snowflake').then((mod) => ({
-      default: mod.Snowflake,
-    })),
-  'soft-wrap': () =>
-    import('@/registry/icons/general/general/soft-wrap').then((mod) => ({
-      default: mod.SoftWrap,
-    })),
-  'software-framework': () =>
-    import('@/registry/icons/plugins/platformio/software-framework').then(
-      (mod) => ({ default: mod.SoftwareFramework }),
-    ),
-  'sort-by': () =>
-    import('@/registry/icons/general/general/sort-by').then((mod) => ({
-      default: mod.SortBy,
-    })),
-  'sort-by-duration': () =>
-    import('@/registry/icons/general/general/sort-by-duration').then((mod) => ({
-      default: mod.SortByDuration,
-    })),
-  'sort-history': () =>
-    import('@/registry/icons/general/inline/sort-history').then((mod) => ({
-      default: mod.SortHistory,
-    })),
-  'sorted-set': () =>
-    import('@/registry/icons/database/sorted-set').then((mod) => ({
-      default: mod.SortedSet,
-    })),
-  'sorted-set-key': () =>
-    import('@/registry/icons/database/sorted-set-key').then((mod) => ({
-      default: mod.SortedSetKey,
-    })),
-  'source-map': () =>
-    import('@/registry/icons/file-types/source-map').then((mod) => ({
-      default: mod.SourceMap,
-    })),
-  'source-root': () =>
-    import('@/registry/icons/nodes/source-root').then((mod) => ({
-      default: mod.SourceRoot,
-    })),
-  'space-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/space-tool-window').then(
-      (mod) => ({ default: mod.SpaceToolWindow }),
-    ),
-  'spark-run': () =>
-    import('@/registry/icons/plugins/bdt/spark-run').then((mod) => ({
-      default: mod.SparkRun,
-    })),
-  split: () =>
-    import('@/registry/icons/general/actions/split').then((mod) => ({
-      default: mod.Split,
-    })),
-  'split-horizontally': () =>
-    import('@/registry/icons/general/general/split-horizontally').then(
-      (mod) => ({ default: mod.SplitHorizontally }),
-    ),
-  'split-vertically': () =>
-    import('@/registry/icons/general/general/split-vertically').then((mod) => ({
-      default: mod.SplitVertically,
-    })),
-  'spring-batch': () =>
-    import('@/registry/icons/plugins/spring/spring-batch').then((mod) => ({
-      default: mod.SpringBatch,
-    })),
-  'spring-bean': () =>
-    import('@/registry/icons/plugins/spring/spring-bean').then((mod) => ({
-      default: mod.SpringBean,
-    })),
-  'spring-boot': () =>
-    import('@/registry/icons/plugins/spring/spring-boot').then((mod) => ({
-      default: mod.SpringBoot,
-    })),
-  'spring-boot-application': () =>
-    import('@/registry/icons/plugins/spring/spring-boot-application').then(
-      (mod) => ({ default: mod.SpringBootApplication }),
-    ),
-  'spring-boot-endpoint': () =>
-    import('@/registry/icons/plugins/spring/spring-boot-endpoint').then(
-      (mod) => ({ default: mod.SpringBootEndpoint }),
-    ),
-  'spring-boot-health': () =>
-    import('@/registry/icons/plugins/spring/spring-boot-health').then(
-      (mod) => ({ default: mod.SpringBootHealth }),
-    ),
-  'spring-boot-overlay': () =>
-    import('@/registry/icons/plugins/spring/spring-boot-overlay').then(
-      (mod) => ({ default: mod.SpringBootOverlay }),
-    ),
-  'spring-cloud': () =>
-    import('@/registry/icons/plugins/spring/spring-cloud').then((mod) => ({
-      default: mod.SpringCloud,
-    })),
-  'spring-cloud-file-set': () =>
-    import('@/registry/icons/plugins/spring/spring-cloud-file-set').then(
-      (mod) => ({ default: mod.SpringCloudFileSet }),
-    ),
-  'spring-cloud-stream': () =>
-    import('@/registry/icons/plugins/spring/spring-cloud-stream').then(
-      (mod) => ({ default: mod.SpringCloudStream }),
-    ),
-  'spring-cloud-stream-file-set': () =>
-    import('@/registry/icons/plugins/spring/spring-cloud-stream-file-set').then(
-      (mod) => ({ default: mod.SpringCloudStreamFileSet }),
-    ),
-  'spring-config': () =>
-    import('@/registry/icons/plugins/spring/spring-config').then((mod) => ({
-      default: mod.SpringConfig,
-    })),
-  'spring-data': () =>
-    import('@/registry/icons/plugins/spring/spring-data').then((mod) => ({
-      default: mod.SpringData,
-    })),
-  'spring-icon': () =>
-    import('@/registry/icons/plugins/jpa/spring-icon').then((mod) => ({
-      default: mod.SpringIcon,
-    })),
-  'spring-integration': () =>
-    import('@/registry/icons/plugins/spring/spring-integration').then(
-      (mod) => ({ default: mod.SpringIntegration }),
-    ),
-  'spring-java-bean': () =>
-    import('@/registry/icons/plugins/spring/spring-java-bean').then((mod) => ({
-      default: mod.SpringJavaBean,
-    })),
-  'spring-java-config': () =>
-    import('@/registry/icons/plugins/spring/spring-java-config').then(
-      (mod) => ({ default: mod.SpringJavaConfig }),
-    ),
-  'spring-models-dependency-graph': () =>
-    import(
-      '@/registry/icons/plugins/spring/spring-models-dependency-graph'
-    ).then((mod) => ({ default: mod.SpringModelsDependencyGraph })),
-  'spring-profile': () =>
-    import('@/registry/icons/plugins/spring/spring-profile').then((mod) => ({
-      default: mod.SpringProfile,
-    })),
-  'spring-property': () =>
-    import('@/registry/icons/plugins/spring/spring-property').then((mod) => ({
-      default: mod.SpringProperty,
-    })),
-  'spring-repository-run-mongo': () =>
-    import('@/registry/icons/plugins/spring/spring-repository-run-mongo').then(
-      (mod) => ({ default: mod.SpringRepositoryRunMongo }),
-    ),
-  'spring-security': () =>
-    import('@/registry/icons/plugins/spring/spring-security').then((mod) => ({
-      default: mod.SpringSecurity,
-    })),
-  'spring-session-factory': () =>
-    import('@/registry/icons/plugins/spring/spring-session-factory').then(
-      (mod) => ({ default: mod.SpringSessionFactory }),
-    ),
-  'spring-web': () =>
-    import('@/registry/icons/plugins/spring/spring-web').then((mod) => ({
-      default: mod.SpringWeb,
-    })),
-  'spring-web-flow': () =>
-    import('@/registry/icons/plugins/spring/spring-web-flow').then((mod) => ({
-      default: mod.SpringWebFlow,
-    })),
-  'spring-web-flow-file': () =>
-    import('@/registry/icons/plugins/spring/spring-web-flow-file').then(
-      (mod) => ({ default: mod.SpringWebFlowFile }),
-    ),
-  'spring-web-services': () =>
-    import('@/registry/icons/plugins/spring/spring-web-services').then(
-      (mod) => ({ default: mod.SpringWebServices }),
-    ),
-  'sql-file': () =>
-    import('@/registry/icons/plugins/jpa/sql-file').then((mod) => ({
-      default: mod.SqlFile,
-    })),
-  'sql-server': () =>
-    import('@/registry/icons/database/sql-server').then((mod) => ({
-      default: mod.SqlServer,
-    })),
-  sqldmlstatement: () =>
-    import('@/registry/icons/database/sqldmlstatement').then((mod) => ({
-      default: mod.SQLDMLStatement,
-    })),
-  'sqlgroup-by-type': () =>
-    import('@/registry/icons/database/sqlgroup-by-type').then((mod) => ({
-      default: mod.SQLGroupByType,
-    })),
-  sqlite: () =>
-    import('@/registry/icons/database/sqlite').then((mod) => ({
-      default: mod.Sqlite,
-    })),
-  'sqlother-statement': () =>
-    import('@/registry/icons/database/sqlother-statement').then((mod) => ({
-      default: mod.SQLOtherStatement,
-    })),
-  'sqlselect-statement': () =>
-    import('@/registry/icons/database/sqlselect-statement').then((mod) => ({
-      default: mod.SQLSelectStatement,
-    })),
-  star: () =>
-    import('@/registry/icons/nodes/star').then((mod) => ({
-      default: mod.Star,
-    })),
-  'star-empty': () =>
-    import('@/registry/icons/nodes/star-empty').then((mod) => ({
-      default: mod.StarEmpty,
-    })),
-  'start-memory-profile': () =>
-    import('@/registry/icons/general/actions/start-memory-profile').then(
-      (mod) => ({ default: mod.StartMemoryProfile }),
-    ),
-  'start-timer': () =>
-    import('@/registry/icons/plugins/tasks/start-timer').then((mod) => ({
-      default: mod.StartTimer,
-    })),
-  stash: () =>
-    import('@/registry/icons/vcs/stash').then((mod) => ({
-      default: mod.Stash,
-    })),
-  'stateful-set': () =>
-    import('@/registry/icons/plugins/kubernetes/stateful-set').then((mod) => ({
-      default: mod.StatefulSet,
-    })),
-  static: () =>
-    import('@/registry/icons/nodes/static').then((mod) => ({
-      default: mod.Static,
-    })),
-  'static-mark': () =>
-    import('@/registry/icons/general/modifiers/static-mark').then((mod) => ({
-      default: mod.StaticMark,
-    })),
-  'statistics-event-log': () =>
-    import('@/registry/icons/general/tool-windows/statistics-event-log').then(
-      (mod) => ({ default: mod.StatisticsEventLog }),
-    ),
-  'statistics-panel': () =>
-    import('@/registry/icons/general/inline/statistics-panel').then((mod) => ({
-      default: mod.StatisticsPanel,
-    })),
-  'status-disabled': () =>
-    import('@/registry/icons/general/setting-sync/status-disabled').then(
-      (mod) => ({ default: mod.StatusDisabled }),
-    ),
-  'status-enabled': () =>
-    import('@/registry/icons/general/setting-sync/status-enabled').then(
-      (mod) => ({ default: mod.StatusEnabled }),
-    ),
-  'step-definition-file': () =>
-    import('@/registry/icons/plugins/ruby/step-definition-file').then(
-      (mod) => ({ default: mod.StepDefinitionFile }),
-    ),
-  'step-into': () =>
-    import('@/registry/icons/run/step-into').then((mod) => ({
-      default: mod.StepInto,
-    })),
-  'step-out': () =>
-    import('@/registry/icons/run/step-out').then((mod) => ({
-      default: mod.StepOut,
-    })),
-  'step-out-code-block': () =>
-    import('@/registry/icons/run/step-out-code-block').then((mod) => ({
-      default: mod.StepOutCodeBlock,
-    })),
-  'step-over': () =>
-    import('@/registry/icons/run/step-over').then((mod) => ({
-      default: mod.StepOver,
-    })),
-  'stm32-cube-mx': () =>
-    import('@/registry/icons/plugins/cidr/stm32-cube-mx').then((mod) => ({
-      default: mod.STM32CubeMX,
-    })),
-  'stop-hovered': () =>
-    import('@/registry/icons/general/progress-bar/stop-hovered').then(
-      (mod) => ({ default: mod.StopHovered }),
-    ),
-  'stop-timer': () =>
-    import('@/registry/icons/plugins/tasks/stop-timer').then((mod) => ({
-      default: mod.StopTimer,
-    })),
-  'storage-class': () =>
-    import('@/registry/icons/plugins/kubernetes/storage-class').then((mod) => ({
-      default: mod.StorageClass,
-    })),
-  stream: () =>
-    import('@/registry/icons/database/stream').then((mod) => ({
-      default: mod.Stream,
-    })),
-  'stream-key': () =>
-    import('@/registry/icons/database/stream-key').then((mod) => ({
-      default: mod.StreamKey,
-    })),
-  'strike-through': () =>
-    import('@/registry/icons/general/editor/strike-through').then((mod) => ({
-      default: mod.StrikeThrough,
-    })),
-  string: () =>
-    import('@/registry/icons/database/string').then((mod) => ({
-      default: mod.String,
-    })),
-  'string-key': () =>
-    import('@/registry/icons/database/string-key').then((mod) => ({
-      default: mod.StringKey,
-    })),
-  structure: () =>
-    import('@/registry/icons/general/tool-windows/structure').then((mod) => ({
-      default: mod.Structure,
-    })),
-  'structure-list-view': () =>
-    import('@/registry/icons/plugins/ruby/structure-list-view').then((mod) => ({
-      default: mod.StructureListView,
-    })),
-  stylus: () =>
-    import('@/registry/icons/plugins/stylus/stylus').then((mod) => ({
-      default: mod.Stylus,
-    })),
-  'submit-db': () =>
-    import('@/registry/icons/database/submit-db').then((mod) => ({
-      default: mod.SubmitDB,
-    })),
-  subscription: () =>
-    import('@/registry/icons/plugins/graphql/subscription').then((mod) => ({
-      default: mod.Subscription,
-    })),
-  subtypes: () =>
-    import('@/registry/icons/general/general/subtypes').then((mod) => ({
-      default: mod.Subtypes,
-    })),
-  succeded: () =>
-    import('@/registry/icons/plugins/kubernetes/succeded').then((mod) => ({
-      default: mod.Succeded,
-    })),
-  success: () =>
-    import('@/registry/icons/general/status/success').then((mod) => ({
-      default: mod.Success,
-    })),
-  'success-dialog': () =>
-    import('@/registry/icons/general/status/success-dialog').then((mod) => ({
-      default: mod.SuccessDialog,
-    })),
-  'success-login': () =>
-    import('@/registry/icons/general/status/success-login').then((mod) => ({
-      default: mod.SuccessLogin,
-    })),
-  'suggested-refactoring-bulb': () =>
-    import('@/registry/icons/general/actions/suggested-refactoring-bulb').then(
-      (mod) => ({ default: mod.SuggestedRefactoringBulb }),
-    ),
-  'suggested-refactoring-disabled': () =>
-    import('@/registry/icons/editor-icons/suggested-refactoring-disabled').then(
-      (mod) => ({ default: mod.SuggestedRefactoringDisabled }),
-    ),
-  sun: () =>
-    import('@/registry/icons/database/sun').then((mod) => ({
-      default: mod.Sun,
-    })),
-  supertypes: () =>
-    import('@/registry/icons/general/general/supertypes').then((mod) => ({
-      default: mod.Supertypes,
-    })),
-  svelte: () =>
-    import('@/registry/icons/file-types/svelte').then((mod) => ({
-      default: mod.Svelte,
-    })),
-  'swap-panels': () =>
-    import('@/registry/icons/general/actions/swap-panels').then((mod) => ({
-      default: mod.SwapPanels,
-    })),
-  'swift-lang': () =>
-    import('@/registry/icons/plugins/cidr/swift-lang').then((mod) => ({
-      default: mod.SwiftLang,
-    })),
-  'swift-package': () =>
-    import('@/registry/icons/plugins/cidr/swift-package').then((mod) => ({
-      default: mod.SwiftPackage,
-    })),
-  'swift-package-dependency': () =>
-    import('@/registry/icons/plugins/cidr/swift-package-dependency').then(
-      (mod) => ({ default: mod.SwiftPackageDependency }),
-    ),
-  'swift-package-manifest': () =>
-    import('@/registry/icons/plugins/cidr/swift-package-manifest').then(
-      (mod) => ({ default: mod.SwiftPackageManifest }),
-    ),
-  'swift-package-run': () =>
-    import('@/registry/icons/plugins/cidr/swift-package-run').then((mod) => ({
-      default: mod.SwiftPackageRun,
-    })),
-  'swift-package-test': () =>
-    import('@/registry/icons/plugins/cidr/swift-package-test').then((mod) => ({
-      default: mod.SwiftPackageTest,
-    })),
-  sybase: () =>
-    import('@/registry/icons/database/sybase').then((mod) => ({
-      default: mod.Sybase,
-    })),
-  symbol: () =>
-    import('@/registry/icons/plugins/ruby/symbol').then((mod) => ({
-      default: mod.Symbol,
-    })),
-  symlink: () =>
-    import('@/registry/icons/general/modifiers/symlink').then((mod) => ({
-      default: mod.Symlink,
-    })),
-  'synchronize-scrolling': () =>
-    import('@/registry/icons/general/actions/synchronize-scrolling').then(
-      (mod) => ({ default: mod.SynchronizeScrolling }),
-    ),
-  synonym: () =>
-    import('@/registry/icons/database/synonym').then((mod) => ({
-      default: mod.Synonym,
-    })),
-  'system-dbfield': () =>
-    import('@/registry/icons/plugins/ruby/system-dbfield').then((mod) => ({
-      default: mod.SystemDBField,
-    })),
-  'system-theme': () =>
-    import('@/registry/icons/general/new-ui/system-theme').then((mod) => ({
-      default: mod.SystemTheme,
-    })),
-  'system-theme-selected': () =>
-    import('@/registry/icons/general/new-ui/system-theme-selected').then(
-      (mod) => ({ default: mod.SystemThemeSelected }),
-    ),
-  't-sqlt': () =>
-    import('@/registry/icons/database/t-sqlt').then((mod) => ({
-      default: mod.TSQLt,
-    })),
-  'tab-alert': () =>
-    import('@/registry/icons/general/modifiers/tab-alert').then((mod) => ({
-      default: mod.TabAlert,
-    })),
-  'table-heatmap': () =>
-    import('@/registry/icons/database/table-heatmap').then((mod) => ({
-      default: mod.TableHeatmap,
-    })),
-  'table-mapping': () =>
-    import('@/registry/icons/database/table-mapping').then((mod) => ({
-      default: mod.TableMapping,
-    })),
-  tablespace: () =>
-    import('@/registry/icons/database/tablespace').then((mod) => ({
-      default: mod.Tablespace,
-    })),
-  tarantool: () =>
-    import('@/registry/icons/database/tarantool').then((mod) => ({
-      default: mod.Tarantool,
-    })),
-  target: () =>
-    import('@/registry/icons/plugins/cidr/target').then((mod) => ({
-      default: mod.Target,
-    })),
-  'task-group': () =>
-    import('@/registry/icons/build/task-group').then((mod) => ({
-      default: mod.TaskGroup,
-    })),
-  'team-city': () =>
-    import('@/registry/icons/file-types/team-city').then((mod) => ({
-      default: mod.TeamCity,
-    })),
-  template: () =>
-    import('@/registry/icons/nodes/template').then((mod) => ({
-      default: mod.Template,
-    })),
-  'tensor-flow': () =>
-    import('@/registry/icons/file-types/tensor-flow').then((mod) => ({
-      default: mod.TensorFlow,
-    })),
-  teradata: () =>
-    import('@/registry/icons/database/teradata').then((mod) => ({
-      default: mod.Teradata,
-    })),
-  terminal: () =>
-    import('@/registry/icons/general/tool-windows/terminal').then((mod) => ({
-      default: mod.Terminal,
-    })),
-  'terminal/command': () =>
-    import('@/registry/icons/terminal/command').then((mod) => ({
-      default: mod.Command,
-    })),
-  'terminal/file-format': () =>
-    import('@/registry/icons/terminal/file-format').then((mod) => ({
-      default: mod.FileFormat,
-    })),
-  'terminal/option': () =>
-    import('@/registry/icons/terminal/option').then((mod) => ({
-      default: mod.Option,
-    })),
-  'terminal/other': () =>
-    import('@/registry/icons/terminal/other').then((mod) => ({
-      default: mod.Other,
-    })),
-  terraform: () =>
-    import('@/registry/icons/file-types/terraform').then((mod) => ({
-      default: mod.Terraform,
-    })),
-  test: () =>
-    import('@/registry/icons/nodes/test').then((mod) => ({
-      default: mod.Test,
-    })),
-  'test-custom': () =>
-    import('@/registry/icons/run/test-custom').then((mod) => ({
-      default: mod.TestCustom,
-    })),
-  'test-error': () =>
-    import('@/registry/icons/run/test-error').then((mod) => ({
-      default: mod.TestError,
-    })),
-  'test-failed': () =>
-    import('@/registry/icons/run/test-failed').then((mod) => ({
-      default: mod.TestFailed,
-    })),
-  'test-group': () =>
-    import('@/registry/icons/nodes/test-group').then((mod) => ({
-      default: mod.TestGroup,
-    })),
-  'test-not-run-yet': () =>
-    import('@/registry/icons/run/test-not-run-yet').then((mod) => ({
-      default: mod.TestNotRunYet,
-    })),
-  'test-passed': () =>
-    import('@/registry/icons/run/test-passed').then((mod) => ({
-      default: mod.TestPassed,
-    })),
-  'test-passed-ignored': () =>
-    import('@/registry/icons/run/test-passed-ignored').then((mod) => ({
-      default: mod.TestPassedIgnored,
-    })),
-  'test-paused': () =>
-    import('@/registry/icons/run/test-paused').then((mod) => ({
-      default: mod.TestPaused,
-    })),
-  'test-resources-root': () =>
-    import('@/registry/icons/nodes/test-resources-root').then((mod) => ({
-      default: mod.TestResourcesRoot,
-    })),
-  'test-root': () =>
-    import('@/registry/icons/nodes/test-root').then((mod) => ({
-      default: mod.TestRoot,
-    })),
-  'test-runner-watch': () =>
-    import('@/registry/icons/run/test-runner-watch').then((mod) => ({
-      default: mod.TestRunnerWatch,
-    })),
-  'test-skipped': () =>
-    import('@/registry/icons/run/test-skipped').then((mod) => ({
-      default: mod.TestSkipped,
-    })),
-  'test-source-folder': () =>
-    import('@/registry/icons/nodes/test-source-folder').then((mod) => ({
-      default: mod.TestSourceFolder,
-    })),
-  'test-terminated': () =>
-    import('@/registry/icons/run/test-terminated').then((mod) => ({
-      default: mod.TestTerminated,
-    })),
-  'test-unit-file': () =>
-    import('@/registry/icons/plugins/ruby/test-unit-file').then((mod) => ({
-      default: mod.TestUnitFile,
-    })),
-  'test-unknown': () =>
-    import('@/registry/icons/run/test-unknown').then((mod) => ({
-      default: mod.TestUnknown,
-    })),
-  text: () =>
-    import('@/registry/icons/file-types/text').then((mod) => ({
-      default: mod.Text,
-    })),
-  'text-area': () =>
-    import('@/registry/icons/nodes/text-area').then((mod) => ({
-      default: mod.TextArea,
-    })),
-  'text-auto-generate': () =>
-    import('@/registry/icons/database/text-auto-generate').then((mod) => ({
-      default: mod.TextAutoGenerate,
-    })),
-  'thread-at-breakpoint': () =>
-    import('@/registry/icons/debugger/thread-at-breakpoint').then((mod) => ({
-      default: mod.ThreadAtBreakpoint,
-    })),
-  'thread-current': () =>
-    import('@/registry/icons/debugger/thread-current').then((mod) => ({
-      default: mod.ThreadCurrent,
-    })),
-  'thread-frozen': () =>
-    import('@/registry/icons/debugger/thread-frozen').then((mod) => ({
-      default: mod.ThreadFrozen,
-    })),
-  'thread-group-current': () =>
-    import('@/registry/icons/debugger/thread-group-current').then((mod) => ({
-      default: mod.ThreadGroupCurrent,
-    })),
-  'thread-running': () =>
-    import('@/registry/icons/debugger/thread-running').then((mod) => ({
-      default: mod.ThreadRunning,
-    })),
-  threads: () =>
-    import('@/registry/icons/debugger/threads').then((mod) => ({
-      default: mod.Threads,
-    })),
-  tibero: () =>
-    import('@/registry/icons/database/tibero').then((mod) => ({
-      default: mod.Tibero,
-    })),
-  tidb: () =>
-    import('@/registry/icons/database/tidb').then((mod) => ({
-      default: mod.Tidb,
-    })),
-  'to-arrow': () =>
-    import('@/registry/icons/plugins/aop/to-arrow').then((mod) => ({
-      default: mod.ToArrow,
-    })),
-  'to-string': () =>
-    import('@/registry/icons/plugins/jpa/to-string').then((mod) => ({
-      default: mod.ToString,
-    })),
-  todo: () =>
-    import('@/registry/icons/general/tool-windows/todo').then((mod) => ({
-      default: mod.Todo,
-    })),
-  'toggle-offline-mode': () =>
-    import('@/registry/icons/build/toggle-offline-mode').then((mod) => ({
-      default: mod.ToggleOfflineMode,
-    })),
-  'toggle-skip-tests-mode': () =>
-    import('@/registry/icons/build/toggle-skip-tests-mode').then((mod) => ({
-      default: mod.ToggleSkipTestsMode,
-    })),
-  'toggle-visibility': () =>
-    import('@/registry/icons/general/actions/toggle-visibility').then(
-      (mod) => ({ default: mod.ToggleVisibility }),
-    ),
-  toml: () =>
-    import('@/registry/icons/plugins/toml/toml').then((mod) => ({
-      default: mod.Toml,
-    })),
-  'tool-window-bazel': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-bazel').then(
-      (mod) => ({ default: mod.ToolWindowBazel }),
-    ),
-  'tool-window-bean-validator': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-bean-validator'
-    ).then((mod) => ({ default: mod.ToolWindowBeanValidator })),
-  'tool-window-big-data': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-big-data').then(
-      (mod) => ({ default: mod.ToolWindowBigData }),
-    ),
-  'tool-window-cadence': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-cadence').then(
-      (mod) => ({ default: mod.ToolWindowCadence }),
-    ),
-  'tool-window-cell-explorer': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-cell-explorer'
-    ).then((mod) => ({ default: mod.ToolWindowCellExplorer })),
-  'tool-window-check-details': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-check-details'
-    ).then((mod) => ({ default: mod.ToolWindowCheckDetails })),
-  'tool-window-clock': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-clock').then(
-      (mod) => ({ default: mod.ToolWindowClock }),
-    ),
-  'tool-window-dart': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-dart').then(
-      (mod) => ({ default: mod.ToolWindowDart }),
-    ),
-  'tool-window-data-view': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-data-view').then(
-      (mod) => ({ default: mod.ToolWindowDataView }),
-    ),
-  'tool-window-default': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-default').then(
-      (mod) => ({ default: mod.ToolWindowDefault }),
-    ),
-  'tool-window-django': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-django').then(
-      (mod) => ({ default: mod.ToolWindowDjango }),
-    ),
-  'tool-window-duplicates': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-duplicates').then(
-      (mod) => ({ default: mod.ToolWindowDuplicates }),
-    ),
-  'tool-window-edu-course-task': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-edu-course-task'
-    ).then((mod) => ({ default: mod.ToolWindowEduCourseTask })),
-  'tool-window-ejb': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-ejb').then(
-      (mod) => ({ default: mod.ToolWindowEJB }),
-    ),
-  'tool-window-hadoop': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-hadoop').then(
-      (mod) => ({ default: mod.ToolWindowHadoop }),
-    ),
-  'tool-window-hugging-face': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-hugging-face'
-    ).then((mod) => ({ default: mod.ToolWindowHuggingFace })),
-  'tool-window-jpab-structure': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-jpab-structure'
-    ).then((mod) => ({ default: mod.ToolWindowJPabStructure })),
-  'tool-window-json-path': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-json-path').then(
-      (mod) => ({ default: mod.ToolWindowJsonPath }),
-    ),
-  'tool-window-kotlin-notebooks': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-kotlin-notebooks'
-    ).then((mod) => ({ default: mod.ToolWindowKotlinNotebooks })),
-  'tool-window-kubernetes': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-kubernetes').then(
-      (mod) => ({ default: mod.ToolWindowKubernetes }),
-    ),
-  'tool-window-meson': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-meson').then(
-      (mod) => ({ default: mod.ToolWindowMeson }),
-    ),
-  'tool-window-model-checker': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-model-checker'
-    ).then((mod) => ({ default: mod.ToolWindowModelChecker })),
-  'tool-window-platform-io': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-platform-io'
-    ).then((mod) => ({ default: mod.ToolWindowPlatformIO })),
-  'tool-window-pub-serve': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-pub-serve').then(
-      (mod) => ({ default: mod.ToolWindowPubServe }),
-    ),
-  'tool-window-record-debug': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-record-debug'
-    ).then((mod) => ({ default: mod.ToolWindowRecordDebug })),
-  'tool-window-rgraph': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-rgraph').then(
-      (mod) => ({ default: mod.ToolWindowRGraph }),
-    ),
-  'tool-window-rhtml': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-rhtml').then(
-      (mod) => ({ default: mod.ToolWindowRHtml }),
-    ),
-  'tool-window-rpackages': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-rpackages').then(
-      (mod) => ({ default: mod.ToolWindowRPackages }),
-    ),
-  'tool-window-run-with-coverage': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-run-with-coverage'
-    ).then((mod) => ({ default: mod.ToolWindowRunWithCoverage })),
-  'tool-window-team-city': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-team-city').then(
-      (mod) => ({ default: mod.ToolWindowTeamCity }),
-    ),
-  'tool-window-test-spark': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-test-spark').then(
-      (mod) => ({ default: mod.ToolWindowTestSpark }),
-    ),
-  'tool-window-timer': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-timer').then(
-      (mod) => ({ default: mod.ToolWindowTimer }),
-    ),
-  'tool-window-type-trace-view': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-type-trace-view'
-    ).then((mod) => ({ default: mod.ToolWindowTypeTraceView })),
-  'tool-window-variable-view': () =>
-    import(
-      '@/registry/icons/general/tool-windows/tool-window-variable-view'
-    ).then((mod) => ({ default: mod.ToolWindowVariableView })),
-  'tool-window-you-track': () =>
-    import('@/registry/icons/general/tool-windows/tool-window-you-track').then(
-      (mod) => ({ default: mod.ToolWindowYouTrack }),
-    ),
-  'toolwindow-flink': () =>
-    import('@/registry/icons/general/tool-windows/toolwindow-flink').then(
-      (mod) => ({ default: mod.ToolwindowFlink }),
-    ),
-  'trace-stream': () =>
-    import('@/registry/icons/run/trace-stream').then((mod) => ({
-      default: mod.TraceStream,
-    })),
-  'trait-companion': () =>
-    import('@/registry/icons/plugins/scala/trait-companion').then((mod) => ({
-      default: mod.TraitCompanion,
-    })),
-  'trait-companion-swapped': () =>
-    import('@/registry/icons/plugins/scala/trait-companion-swapped').then(
-      (mod) => ({ default: mod.TraitCompanionSwapped }),
-    ),
-  'trait-object-scala': () =>
-    import('@/registry/icons/plugins/scala/trait-object-scala').then((mod) => ({
-      default: mod.TraitObjectScala,
-    })),
-  'trait-scala': () =>
-    import('@/registry/icons/plugins/scala/trait-scala').then((mod) => ({
-      default: mod.TraitScala,
-    })),
-  'transaction-manager': () =>
-    import('@/registry/icons/plugins/spring/transaction-manager').then(
-      (mod) => ({ default: mod.TransactionManager }),
-    ),
-  transfer: () =>
-    import('@/registry/icons/general/tool-windows/transfer').then((mod) => ({
-      default: mod.Transfer,
-    })),
-  'transfer-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/transfer-tool-window').then(
-      (mod) => ({ default: mod.TransferToolWindow }),
-    ),
-  trigger: () =>
-    import('@/registry/icons/database/trigger').then((mod) => ({
-      default: mod.Trigger,
-    })),
-  trino: () =>
-    import('@/registry/icons/database/trino').then((mod) => ({
-      default: mod.Trino,
-    })),
-  'ts-config': () =>
-    import('@/registry/icons/file-types/ts-config').then((mod) => ({
-      default: mod.TsConfig,
-    })),
-  'ts-doc': () =>
-    import('@/registry/icons/file-types/ts-doc').then((mod) => ({
-      default: mod.TsDoc,
-    })),
-  'type-extension': () =>
-    import('@/registry/icons/plugins/cidr/type-extension').then((mod) => ({
-      default: mod.TypeExtension,
-    })),
-  typed: () =>
-    import('@/registry/icons/plugins/scala/typed').then((mod) => ({
-      default: mod.Typed,
-    })),
-  udfscript: () =>
-    import('@/registry/icons/database/udfscript').then((mod) => ({
-      default: mod.UDFScript,
-    })),
-  'ui-form': () =>
-    import('@/registry/icons/file-types/ui-form').then((mod) => ({
-      default: mod.UiForm,
-    })),
-  'uncheched-all': () =>
-    import('@/registry/icons/plugins/package-checker/uncheched-all').then(
-      (mod) => ({ default: mod.UnchechedAll }),
-    ),
-  'uncheched-all-tree': () =>
-    import('@/registry/icons/plugins/package-checker/uncheched-all-tree').then(
-      (mod) => ({ default: mod.UnchechedAllTree }),
-    ),
-  'uncheched-all-tree-outline': () =>
-    import(
-      '@/registry/icons/plugins/package-checker/uncheched-all-tree-outline'
-    ).then((mod) => ({ default: mod.UnchechedAllTreeOutline })),
-  undo: () =>
-    import('@/registry/icons/general/general/undo').then((mod) => ({
-      default: mod.Undo,
-    })),
-  'undocumented-task': () =>
-    import('@/registry/icons/plugins/ruby/undocumented-task').then((mod) => ({
-      default: mod.UndocumentedTask,
-    })),
-  unfold: () =>
-    import('@/registry/icons/editor-icons/unfold').then((mod) => ({
-      default: mod.Unfold,
-    })),
-  unfreeze: () =>
-    import('@/registry/icons/plugins/cidr/unfreeze').then((mod) => ({
-      default: mod.Unfreeze,
-    })),
-  'unfreeze-all': () =>
-    import('@/registry/icons/plugins/cidr/unfreeze-all').then((mod) => ({
-      default: mod.UnfreezeAll,
-    })),
-  'unloaded-module': () =>
-    import('@/registry/icons/nodes/unloaded-module').then((mod) => ({
-      default: mod.UnloadedModule,
-    })),
-  unlocked: () =>
-    import('@/registry/icons/general/general/unlocked').then((mod) => ({
-      default: mod.Unlocked,
-    })),
-  'unselect-all': () =>
-    import('@/registry/icons/general/actions/unselect-all').then((mod) => ({
-      default: mod.UnselectAll,
-    })),
-  unshelve: () =>
-    import('@/registry/icons/vcs/unshelve').then((mod) => ({
-      default: mod.Unshelve,
-    })),
-  'unspecified-cluster': () =>
-    import('@/registry/icons/database/unspecified-cluster').then((mod) => ({
-      default: mod.UnspecifiedCluster,
-    })),
-  untyped: () =>
-    import('@/registry/icons/plugins/scala/untyped').then((mod) => ({
-      default: mod.Untyped,
-    })),
-  up: () =>
-    import('@/registry/icons/general/general/up').then((mod) => ({
-      default: mod.Up,
-    })),
-  'up-folder': () =>
-    import('@/registry/icons/nodes/up-folder').then((mod) => ({
-      default: mod.UpFolder,
-    })),
-  'update-database': () =>
-    import('@/registry/icons/plugins/jpa/update-database').then((mod) => ({
-      default: mod.UpdateDatabase,
-    })),
-  'update-folders': () =>
-    import('@/registry/icons/build/update-folders').then((mod) => ({
-      default: mod.UpdateFolders,
-    })),
-  'update-running-application': () =>
-    import('@/registry/icons/plugins/java-ee/update-running-application').then(
-      (mod) => ({ default: mod.UpdateRunningApplication }),
-    ),
-  upload: () =>
-    import('@/registry/icons/general/general/upload').then((mod) => ({
-      default: mod.Upload,
-    })),
-  'user-driver': () =>
-    import('@/registry/icons/database/user-driver').then((mod) => ({
-      default: mod.UserDriver,
-    })),
-  'user-group': () =>
-    import('@/registry/icons/database/user-group').then((mod) => ({
-      default: mod.UserGroup,
-    })),
-  'user-mapping': () =>
-    import('@/registry/icons/database/user-mapping').then((mod) => ({
-      default: mod.UserMapping,
-    })),
-  'ut-plsql': () =>
-    import('@/registry/icons/database/ut-plsql').then((mod) => ({
-      default: mod.UtPLSQL,
-    })),
-  validator: () =>
-    import('@/registry/icons/plugins/java-ee/validator').then((mod) => ({
-      default: mod.Validator,
-    })),
-  'value-muted': () =>
-    import('@/registry/icons/plugins/cidr/value-muted').then((mod) => ({
-      default: mod.ValueMuted,
-    })),
-  'value-values': () =>
-    import('@/registry/icons/plugins/kubernetes/value-values').then((mod) => ({
-      default: mod.ValueValues,
-    })),
-  'variables-tab': () =>
-    import('@/registry/icons/debugger/variables-tab').then((mod) => ({
-      default: mod.VariablesTab,
-    })),
-  vcpkg: () =>
-    import('@/registry/icons/plugins/cidr/vcpkg').then((mod) => ({
-      default: mod.VCPKG,
-    })),
-  'vcs/abort': () =>
-    import('@/registry/icons/vcs/abort').then((mod) => ({
-      default: mod.Abort,
-    })),
-  'vcs/add-emoji': () =>
-    import('@/registry/icons/vcs/add-emoji').then((mod) => ({
-      default: mod.AddEmoji,
-    })),
-  'vcs/apply-not-conflicts': () =>
-    import('@/registry/icons/vcs/apply-not-conflicts').then((mod) => ({
-      default: mod.ApplyNotConflicts,
-    })),
-  'vcs/apply-not-conflicts-left': () =>
-    import('@/registry/icons/vcs/apply-not-conflicts-left').then((mod) => ({
-      default: mod.ApplyNotConflictsLeft,
-    })),
-  'vcs/apply-not-conflicts-right': () =>
-    import('@/registry/icons/vcs/apply-not-conflicts-right').then((mod) => ({
-      default: mod.ApplyNotConflictsRight,
-    })),
-  'vcs/arrow-left-right': () =>
-    import('@/registry/icons/vcs/arrow-left-right').then((mod) => ({
-      default: mod.ArrowLeftRight,
-    })),
-  'vcs/branch': () =>
-    import('@/registry/icons/vcs/branch').then((mod) => ({
-      default: mod.Branch,
-    })),
-  'vcs/changelist': () =>
-    import('@/registry/icons/vcs/changelist').then((mod) => ({
-      default: mod.Changelist,
-    })),
-  'vcs/changes': () =>
-    import('@/registry/icons/vcs/changes').then((mod) => ({
-      default: mod.Changes,
-    })),
-  'vcs/checkmark': () =>
-    import('@/registry/icons/vcs/checkmark').then((mod) => ({
-      default: mod.Checkmark,
-    })),
-  'vcs/cherry-pick': () =>
-    import('@/registry/icons/vcs/cherry-pick').then((mod) => ({
-      default: mod.CherryPick,
-    })),
-  'vcs/comment': () =>
-    import('@/registry/icons/vcs/comment').then((mod) => ({
-      default: mod.Comment,
-    })),
-  'vcs/comment-read': () =>
-    import('@/registry/icons/vcs/comment-read').then((mod) => ({
-      default: mod.CommentRead,
-    })),
-  'vcs/comment-regular': () =>
-    import('@/registry/icons/vcs/comment-regular').then((mod) => ({
-      default: mod.CommentRegular,
-    })),
-  'vcs/comment-resolved': () =>
-    import('@/registry/icons/vcs/comment-resolved').then((mod) => ({
-      default: mod.CommentResolved,
-    })),
-  'vcs/comment-unread': () =>
-    import('@/registry/icons/vcs/comment-unread').then((mod) => ({
-      default: mod.CommentUnread,
-    })),
-  'vcs/comment-unresolved': () =>
-    import('@/registry/icons/vcs/comment-unresolved').then((mod) => ({
-      default: mod.CommentUnresolved,
-    })),
-  'vcs/commit': () =>
-    import('@/registry/icons/vcs/commit').then((mod) => ({
-      default: mod.Commit,
-    })),
-  'vcs/compare3-left-middle': () =>
-    import('@/registry/icons/vcs/compare3-left-middle').then((mod) => ({
-      default: mod.Compare3LeftMiddle,
-    })),
-  'vcs/compare3-left-right': () =>
-    import('@/registry/icons/vcs/compare3-left-right').then((mod) => ({
-      default: mod.Compare3LeftRight,
-    })),
-  'vcs/compare3-middle-right': () =>
-    import('@/registry/icons/vcs/compare3-middle-right').then((mod) => ({
-      default: mod.Compare3MiddleRight,
-    })),
-  'vcs/compare4-left-bottom': () =>
-    import('@/registry/icons/vcs/compare4-left-bottom').then((mod) => ({
-      default: mod.Compare4LeftBottom,
-    })),
-  'vcs/compare4-left-middle': () =>
-    import('@/registry/icons/vcs/compare4-left-middle').then((mod) => ({
-      default: mod.Compare4LeftMiddle,
-    })),
-  'vcs/compare4-left-right': () =>
-    import('@/registry/icons/vcs/compare4-left-right').then((mod) => ({
-      default: mod.Compare4LeftRight,
-    })),
-  'vcs/compare4-middle-bottom': () =>
-    import('@/registry/icons/vcs/compare4-middle-bottom').then((mod) => ({
-      default: mod.Compare4MiddleBottom,
-    })),
-  'vcs/compare4-middle-right': () =>
-    import('@/registry/icons/vcs/compare4-middle-right').then((mod) => ({
-      default: mod.Compare4MiddleRight,
-    })),
-  'vcs/compare4-right-bottom': () =>
-    import('@/registry/icons/vcs/compare4-right-bottom').then((mod) => ({
-      default: mod.Compare4RightBottom,
-    })),
-  'vcs/current-branch': () =>
-    import('@/registry/icons/vcs/current-branch').then((mod) => ({
-      default: mod.CurrentBranch,
-    })),
-  'vcs/current-branch-favorite': () =>
-    import('@/registry/icons/vcs/current-branch-favorite').then((mod) => ({
-      default: mod.CurrentBranchFavorite,
-    })),
-  'vcs/diff': () =>
-    import('@/registry/icons/vcs/diff').then((mod) => ({ default: mod.Diff })),
-  'vcs/disable-editing': () =>
-    import('@/registry/icons/vcs/disable-editing').then((mod) => ({
-      default: mod.DisableEditing,
-    })),
-  'vcs/fetch': () =>
-    import('@/registry/icons/vcs/fetch').then((mod) => ({
-      default: mod.Fetch,
-    })),
-  'vcs/file-unread': () =>
-    import('@/registry/icons/vcs/file-unread').then((mod) => ({
-      default: mod.FileUnread,
-    })),
-  'vcs/incoming-update': () =>
-    import('@/registry/icons/vcs/incoming-update').then((mod) => ({
-      default: mod.IncomingUpdate,
-    })),
-  'vcs/intelli-sort': () =>
-    import('@/registry/icons/vcs/intelli-sort').then((mod) => ({
-      default: mod.IntelliSort,
-    })),
-  'vcs/magic-resolve-toolbar': () =>
-    import('@/registry/icons/vcs/magic-resolve-toolbar').then((mod) => ({
-      default: mod.MagicResolveToolbar,
-    })),
-  'vcs/outgoing-push': () =>
-    import('@/registry/icons/vcs/outgoing-push').then((mod) => ({
-      default: mod.OutgoingPush,
-    })),
-  'vcs/patch': () =>
-    import('@/registry/icons/vcs/patch').then((mod) => ({
-      default: mod.Patch,
-    })),
-  'vcs/push': () =>
-    import('@/registry/icons/vcs/push').then((mod) => ({ default: mod.Push })),
-  'vcs/resolve-continue': () =>
-    import('@/registry/icons/vcs/resolve-continue').then((mod) => ({
-      default: mod.ResolveContinue,
-    })),
-  'vcs/revert': () =>
-    import('@/registry/icons/vcs/revert').then((mod) => ({
-      default: mod.Revert,
-    })),
-  'vcs/skip-commit': () =>
-    import('@/registry/icons/vcs/skip-commit').then((mod) => ({
-      default: mod.SkipCommit,
-    })),
-  'vcs/stash': () =>
-    import('@/registry/icons/vcs/stash').then((mod) => ({
-      default: mod.Stash,
-    })),
-  'vcs/unshelve': () =>
-    import('@/registry/icons/vcs/unshelve').then((mod) => ({
-      default: mod.Unshelve,
-    })),
-  'vcs/update': () =>
-    import('@/registry/icons/vcs/update').then((mod) => ({
-      default: mod.Update,
-    })),
-  'vcs/vcs': () =>
-    import('@/registry/icons/vcs/vcs').then((mod) => ({ default: mod.Vcs })),
-  velocity: () =>
-    import('@/registry/icons/plugins/velocity/velocity').then((mod) => ({
-      default: mod.Velocity,
-    })),
-  'velocity-plugin-logo': () =>
-    import('@/registry/icons/plugins/velocity/velocity-plugin-logo').then(
-      (mod) => ({ default: mod.VelocityPluginLogo }),
-    ),
-  vertica: () =>
-    import('@/registry/icons/database/vertica').then((mod) => ({
-      default: mod.Vertica,
-    })),
-  vhdl: () =>
-    import('@/registry/icons/plugins/cidr/vhdl').then((mod) => ({
-      default: mod.Vhdl,
-    })),
-  'view-breakpoints': () =>
-    import('@/registry/icons/run/view-breakpoints').then((mod) => ({
-      default: mod.ViewBreakpoints,
-    })),
-  'view-parameters': () =>
-    import('@/registry/icons/database/view-parameters').then((mod) => ({
-      default: mod.ViewParameters,
-    })),
-  'virtual-column': () =>
-    import('@/registry/icons/database/virtual-column').then((mod) => ({
-      default: mod.VirtualColumn,
-    })),
-  'virtual-folder': () =>
-    import('@/registry/icons/database/virtual-folder').then((mod) => ({
-      default: mod.VirtualFolder,
-    })),
-  'virtual-key': () =>
-    import('@/registry/icons/database/virtual-key').then((mod) => ({
-      default: mod.VirtualKey,
-    })),
-  'virtual-view': () =>
-    import('@/registry/icons/database/virtual-view').then((mod) => ({
-      default: mod.VirtualView,
-    })),
-  'vite-js': () =>
-    import('@/registry/icons/file-types/vite-js').then((mod) => ({
-      default: mod.ViteJS,
-    })),
-  vitest: () =>
-    import('@/registry/icons/file-types/vitest').then((mod) => ({
-      default: mod.Vitest,
-    })),
-  volume: () =>
-    import('@/registry/icons/plugins/kubernetes/volume').then((mod) => ({
-      default: mod.Volume,
-    })),
-  'vue-js': () =>
-    import('@/registry/icons/file-types/vue-js').then((mod) => ({
-      default: mod.VueJs,
-    })),
-  warehouse: () =>
-    import('@/registry/icons/database/warehouse').then((mod) => ({
-      default: mod.Warehouse,
-    })),
-  warning: () =>
-    import('@/registry/icons/general/status/warning').then((mod) => ({
-      default: mod.Warning,
-    })),
-  'warning-dialog': () =>
-    import('@/registry/icons/general/status/warning-dialog').then((mod) => ({
-      default: mod.WarningDialog,
-    })),
-  'warning-introduction': () =>
-    import('@/registry/icons/nodes/warning-introduction').then((mod) => ({
-      default: mod.WarningIntroduction,
-    })),
-  'warning-outline': () =>
-    import('@/registry/icons/general/status/warning-outline').then((mod) => ({
-      default: mod.WarningOutline,
-    })),
-  'warning-point': () =>
-    import('@/registry/icons/plugins/dart/warning-point').then((mod) => ({
-      default: mod.WarningPoint,
-    })),
-  watch: () =>
-    import('@/registry/icons/run/watch').then((mod) => ({
-      default: mod.Watch,
-    })),
-  'watch-last-return-value': () =>
-    import('@/registry/icons/debugger/watch-last-return-value').then((mod) => ({
-      default: mod.WatchLastReturnValue,
-    })),
-  web: () =>
-    import('@/registry/icons/general/tool-windows/web').then((mod) => ({
-      default: mod.Web,
-    })),
-  'web-app': () =>
-    import('@/registry/icons/run-configurations/web-app').then((mod) => ({
-      default: mod.WebApp,
-    })),
-  'web-artifact': () =>
-    import('@/registry/icons/plugins/java-ee/web-artifact').then((mod) => ({
-      default: mod.WebArtifact,
-    })),
-  'web-inspector': () =>
-    import('@/registry/icons/general/tool-windows/web-inspector').then(
-      (mod) => ({ default: mod.WebInspector }),
-    ),
-  'web-module': () =>
-    import('@/registry/icons/plugins/java-ee/web-module').then((mod) => ({
-      default: mod.WebModule,
-    })),
-  'web-module-group': () =>
-    import('@/registry/icons/plugins/java-ee/web-module-group').then((mod) => ({
-      default: mod.WebModuleGroup,
-    })),
-  'web-overlay': () =>
-    import('@/registry/icons/plugins/spring/web-overlay').then((mod) => ({
-      default: mod.WebOverlay,
-    })),
-  'web-resources': () =>
-    import('@/registry/icons/nodes/web-resources').then((mod) => ({
-      default: mod.WebResources,
-    })),
-  'web-root-file': () =>
-    import('@/registry/icons/plugins/ruby/web-root-file').then((mod) => ({
-      default: mod.WebRootFile,
-    })),
-  'web-server': () =>
-    import('@/registry/icons/general/tool-windows/web-server').then((mod) => ({
-      default: mod.WebServer,
-    })),
-  'web-service': () =>
-    import('@/registry/icons/plugins/java-ee/web-service').then((mod) => ({
-      default: mod.WebService,
-    })),
-  'web-service-client': () =>
-    import('@/registry/icons/plugins/java-ee/web-service-client').then(
-      (mod) => ({ default: mod.WebServiceClient }),
-    ),
-  'web-xml': () =>
-    import('@/registry/icons/plugins/java-ee/web-xml').then((mod) => ({
-      default: mod.WebXml,
-    })),
-  werf: () =>
-    import('@/registry/icons/plugins/kubernetes/werf').then((mod) => ({
-      default: mod.Werf,
-    })),
-  west: () =>
-    import('@/registry/icons/plugins/velocity/west').then((mod) => ({
-      default: mod.West,
-    })),
-  'west-tool-window': () =>
-    import('@/registry/icons/general/tool-windows/west-tool-window').then(
-      (mod) => ({ default: mod.WestToolWindow }),
-    ),
-  workloads: () =>
-    import('@/registry/icons/plugins/kubernetes/workloads').then((mod) => ({
-      default: mod.Workloads,
-    })),
-  workspace: () =>
-    import('@/registry/icons/file-types/workspace').then((mod) => ({
-      default: mod.Workspace,
-    })),
-  'write-access': () =>
-    import('@/registry/icons/editor-icons/write-access').then((mod) => ({
-      default: mod.WriteAccess,
-    })),
-  'write-review': () =>
-    import('@/registry/icons/general/actions/write-review').then((mod) => ({
-      default: mod.WriteReview,
-    })),
-  writer: () =>
-    import('@/registry/icons/plugins/ruby/writer').then((mod) => ({
-      default: mod.Writer,
-    })),
-  writerside: () =>
-    import('@/registry/icons/general/tool-windows/writerside').then((mod) => ({
-      default: mod.Writerside,
-    })),
-  'writerside-preview': () =>
-    import('@/registry/icons/general/tool-windows/writerside-preview').then(
-      (mod) => ({ default: mod.WritersidePreview }),
-    ),
-  wsdl: () =>
-    import('@/registry/icons/file-types/wsdl').then((mod) => ({
-      default: mod.Wsdl,
-    })),
-  xhtml: () =>
-    import('@/registry/icons/file-types/xhtml').then((mod) => ({
-      default: mod.Xhtml,
-    })),
-  xml: () =>
-    import('@/registry/icons/file-types/xml').then((mod) => ({
-      default: mod.Xml,
-    })),
-  'xml-service': () =>
-    import('@/registry/icons/plugins/java-ee/xml-service').then((mod) => ({
-      default: mod.XmlService,
-    })),
-  xpath: () =>
-    import('@/registry/icons/file-types/xpath').then((mod) => ({
-      default: mod.Xpath,
-    })),
-  xsd: () =>
-    import('@/registry/icons/file-types/xsd').then((mod) => ({
-      default: mod.Xsd,
-    })),
-  xsl: () =>
-    import('@/registry/icons/file-types/xsl').then((mod) => ({
-      default: mod.Xsl,
-    })),
-  yaml: () =>
-    import('@/registry/icons/file-types/yaml').then((mod) => ({
-      default: mod.Yaml,
-    })),
-  yarn: () =>
-    import('@/registry/icons/file-types/yarn').then((mod) => ({
-      default: mod.Yarn,
-    })),
-  'yarn-lock': () =>
-    import('@/registry/icons/file-types/yarn-lock').then((mod) => ({
-      default: mod.YarnLock,
-    })),
-  yugabyte: () =>
-    import('@/registry/icons/database/yugabyte').then((mod) => ({
-      default: mod.Yugabyte,
-    })),
-  zeppelin: () =>
-    import('@/registry/icons/plugins/bdt/zeppelin').then((mod) => ({
-      default: mod.Zeppelin,
-    })),
-  zeus: () =>
-    import('@/registry/icons/plugins/ruby/zeus').then((mod) => ({
-      default: mod.Zeus,
-    })),
-  'zoom-in': () =>
-    import('@/registry/icons/editor-icons/zoom-in').then((mod) => ({
-      default: mod.ZoomIn,
-    })),
-  'zoom-out': () =>
-    import('@/registry/icons/editor-icons/zoom-out').then((mod) => ({
-      default: mod.ZoomOut,
-    })),
-  'сode-assistant-class': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-class').then(
-      (mod) => ({ default: mod.СodeAssistantClass }),
-    ),
-  'сode-assistant-class-extension': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-class-extension').then(
-      (mod) => ({ default: mod.СodeAssistantClassExtension }),
-    ),
-  'сode-assistant-macro': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-macro').then(
-      (mod) => ({ default: mod.СodeAssistantMacro }),
-    ),
-  'сode-assistant-member': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-member').then(
-      (mod) => ({ default: mod.СodeAssistantMember }),
-    ),
-  'сode-assistant-member-optional': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-member-optional').then(
-      (mod) => ({ default: mod.СodeAssistantMemberOptional }),
-    ),
-  'сode-assistant-namespace': () =>
-    import('@/registry/icons/plugins/cidr/сode-assistant-namespace').then(
-      (mod) => ({ default: mod.СodeAssistantNamespace }),
-    ),
-  'сore-dump-debug': () =>
-    import('@/registry/icons/plugins/cidr/сore-dump-debug').then((mod) => ({
-      default: mod.СoreDumpDebug,
-    })),
-  'сrun-configuration': () =>
-    import('@/registry/icons/plugins/cidr/сrun-configuration').then((mod) => ({
-      default: mod.СRunConfiguration,
-    })),
+  "abbreviate-package-names": () => import("@/registry/icons/general/object-browser/abbreviate-package-names").then((mod) => ({ default: mod.AbbreviatePackageNames })),
+  "abort": () => import("@/registry/icons/vcs/abort").then((mod) => ({ default: mod.Abort })),
+  "abstract-advice": () => import("@/registry/icons/plugins/aop/abstract-advice").then((mod) => ({ default: mod.AbstractAdvice })),
+  "abstract-bean": () => import("@/registry/icons/plugins/spring/abstract-bean").then((mod) => ({ default: mod.AbstractBean })),
+  "abstract-class": () => import("@/registry/icons/plugins/java-ee/abstract-class").then((mod) => ({ default: mod.AbstractClass })),
+  "abstract-class-kotlin": () => import("@/registry/icons/plugins/kotlin/abstract-class-kotlin").then((mod) => ({ default: mod.AbstractClassKotlin })),
+  "abstract-class-object-scala": () => import("@/registry/icons/plugins/scala/abstract-class-object-scala").then((mod) => ({ default: mod.AbstractClassObjectScala })),
+  "abstract-class-scala": () => import("@/registry/icons/plugins/scala/abstract-class-scala").then((mod) => ({ default: mod.AbstractClassScala })),
+  "abstract-exception": () => import("@/registry/icons/nodes/abstract-exception").then((mod) => ({ default: mod.AbstractException })),
+  "abstract-extension-function": () => import("@/registry/icons/plugins/kotlin/abstract-extension-function").then((mod) => ({ default: mod.AbstractExtensionFunction })),
+  "abstract-field": () => import("@/registry/icons/plugins/java-ee/abstract-field").then((mod) => ({ default: mod.AbstractField })),
+  "abstract-field-variable": () => import("@/registry/icons/plugins/scala/abstract-field-variable").then((mod) => ({ default: mod.AbstractFieldVariable })),
+  "abstract-field-variable1": () => import("@/registry/icons/plugins/scala/abstract-field-variable1").then((mod) => ({ default: mod.AbstractFieldVariable1 })),
+  "abstract-method": () => import("@/registry/icons/plugins/java-ee/abstract-method").then((mod) => ({ default: mod.AbstractMethod })),
+  "abstract-property": () => import("@/registry/icons/plugins/java-ee/abstract-property").then((mod) => ({ default: mod.AbstractProperty })),
+  "abstract-type-alias": () => import("@/registry/icons/plugins/scala/abstract-type-alias").then((mod) => ({ default: mod.AbstractTypeAlias })),
+  "access-local": () => import("@/registry/icons/general/access-modifiers/access-local").then((mod) => ({ default: mod.AccessLocal })),
+  "access-method": () => import("@/registry/icons/database/access-method").then((mod) => ({ default: mod.AccessMethod })),
+  "access-private": () => import("@/registry/icons/general/access-modifiers/access-private").then((mod) => ({ default: mod.AccessPrivate })),
+  "access-protected": () => import("@/registry/icons/general/access-modifiers/access-protected").then((mod) => ({ default: mod.AccessProtected })),
+  "access-public": () => import("@/registry/icons/general/access-modifiers/access-public").then((mod) => ({ default: mod.AccessPublic })),
+  "action-method": () => import("@/registry/icons/plugins/ruby/action-method").then((mod) => ({ default: mod.ActionMethod })),
+  "action-qualified-names": () => import("@/registry/icons/plugins/cidr/action-qualified-names").then((mod) => ({ default: mod.ActionQualifiedNames })),
+  "action-script": () => import("@/registry/icons/file-types/action-script").then((mod) => ({ default: mod.ActionScript })),
+  "actual": () => import("@/registry/icons/plugins/kotlin/actual").then((mod) => ({ default: mod.Actual })),
+  "actual-zoom": () => import("@/registry/icons/editor-icons/actual-zoom").then((mod) => ({ default: mod.ActualZoom })),
+  "acync-api": () => import("@/registry/icons/file-types/acync-api").then((mod) => ({ default: mod.AcyncAPI })),
+  "adapter-script": () => import("@/registry/icons/database/adapter-script").then((mod) => ({ default: mod.AdapterScript })),
+  "add": () => import("@/registry/icons/general/general/add").then((mod) => ({ default: mod.Add })),
+  "add-any": () => import("@/registry/icons/nodes/add-any").then((mod) => ({ default: mod.AddAny })),
+  "add-bookmarks-list": () => import("@/registry/icons/general/bookmarks/add-bookmarks-list").then((mod) => ({ default: mod.AddBookmarksList })),
+  "add-changelog": () => import("@/registry/icons/plugins/jpa/add-changelog").then((mod) => ({ default: mod.AddChangelog })),
+  "add-changeset": () => import("@/registry/icons/plugins/jpa/add-changeset").then((mod) => ({ default: mod.AddChangeset })),
+  "add-clause": () => import("@/registry/icons/plugins/scala/add-clause").then((mod) => ({ default: mod.AddClause })),
+  "add-column-left": () => import("@/registry/icons/general/editor/add-column-left").then((mod) => ({ default: mod.AddColumnLeft })),
+  "add-column-right": () => import("@/registry/icons/general/editor/add-column-right").then((mod) => ({ default: mod.AddColumnRight })),
+  "add-emoji": () => import("@/registry/icons/vcs/add-emoji").then((mod) => ({ default: mod.AddEmoji })),
+  "add-executable": () => import("@/registry/icons/plugins/cidr/add-executable").then((mod) => ({ default: mod.AddExecutable })),
+  "add-file": () => import("@/registry/icons/general/actions/add-file").then((mod) => ({ default: mod.AddFile })),
+  "add-library": () => import("@/registry/icons/plugins/cidr/add-library").then((mod) => ({ default: mod.AddLibrary })),
+  "add-named-query": () => import("@/registry/icons/plugins/jpa/add-named-query").then((mod) => ({ default: mod.AddNamedQuery })),
+  "add-note": () => import("@/registry/icons/plugins/uml/add-note").then((mod) => ({ default: mod.AddNote })),
+  "add-row-above": () => import("@/registry/icons/general/editor/add-row-above").then((mod) => ({ default: mod.AddRowAbove })),
+  "add-row-below": () => import("@/registry/icons/general/editor/add-row-below").then((mod) => ({ default: mod.AddRowBelow })),
+  "add-sdk": () => import("@/registry/icons/general/devkit/add-sdk").then((mod) => ({ default: mod.AddSDK })),
+  "add-test": () => import("@/registry/icons/plugins/cidr/add-test").then((mod) => ({ default: mod.AddTest })),
+  "add-to-watch": () => import("@/registry/icons/debugger/add-to-watch").then((mod) => ({ default: mod.AddToWatch })),
+  "after-advice": () => import("@/registry/icons/plugins/aop/after-advice").then((mod) => ({ default: mod.AfterAdvice })),
+  "after-returning-advice": () => import("@/registry/icons/plugins/aop/after-returning-advice").then((mod) => ({ default: mod.AfterReturningAdvice })),
+  "after-throwing-advice": () => import("@/registry/icons/plugins/aop/after-throwing-advice").then((mod) => ({ default: mod.AfterThrowingAdvice })),
+  "aggregate": () => import("@/registry/icons/database/aggregate").then((mod) => ({ default: mod.Aggregate })),
+  "ai-assistant": () => import("@/registry/icons/general/ai-assistant/ai-assistant").then((mod) => ({ default: mod.AiAssistant })),
+  "ai-assistant-colored": () => import("@/registry/icons/general/ai-assistant/ai-assistant-colored").then((mod) => ({ default: mod.AiAssistantColored })),
+  "ai-assistant-disabled": () => import("@/registry/icons/general/ai-assistant/ai-assistant-disabled").then((mod) => ({ default: mod.AiAssistantDisabled })),
+  "ai-assistant-tool-window": () => import("@/registry/icons/general/tool-windows/ai-assistant-tool-window").then((mod) => ({ default: mod.AiAssistantToolWindow })),
+  "alias": () => import("@/registry/icons/nodes/alias").then((mod) => ({ default: mod.Alias })),
+  "alias-factory": () => import("@/registry/icons/plugins/ruby/alias-factory").then((mod) => ({ default: mod.AliasFactory })),
+  "alias-sequence": () => import("@/registry/icons/plugins/ruby/alias-sequence").then((mod) => ({ default: mod.AliasSequence })),
+  "amazon-emr": () => import("@/registry/icons/general/tool-windows/amazon-emr").then((mod) => ({ default: mod.AmazonEMR })),
+  "amper": () => import("@/registry/icons/file-types/amper").then((mod) => ({ default: mod.Amper })),
+  "android": () => import("@/registry/icons/plugins/kotlin/android").then((mod) => ({ default: mod.Android })),
+  "android-device": () => import("@/registry/icons/plugins/cidr/android-device").then((mod) => ({ default: mod.AndroidDevice })),
+  "angular-js": () => import("@/registry/icons/file-types/angular-js").then((mod) => ({ default: mod.AngularJS })),
+  "angular-jsmonochrome": () => import("@/registry/icons/file-types/angular-jsmonochrome").then((mod) => ({ default: mod.AngularJSMonochrome })),
+  "annotation": () => import("@/registry/icons/nodes/annotation").then((mod) => ({ default: mod.Annotation })),
+  "annotation-folder": () => import("@/registry/icons/nodes/annotation-folder").then((mod) => ({ default: mod.AnnotationFolder })),
+  "annotation-kotlin": () => import("@/registry/icons/plugins/kotlin/annotation-kotlin").then((mod) => ({ default: mod.AnnotationKotlin })),
+  "annotation-type": () => import("@/registry/icons/plugins/java-ee/annotation-type").then((mod) => ({ default: mod.AnnotationType })),
+  "ant": () => import("@/registry/icons/general/tool-windows/ant").then((mod) => ({ default: mod.Ant })),
+  "any-type": () => import("@/registry/icons/file-types/any-type").then((mod) => ({ default: mod.AnyType })),
+  "apache": () => import("@/registry/icons/database/apache").then((mod) => ({ default: mod.Apache })),
+  "apache-derby": () => import("@/registry/icons/database/apache-derby").then((mod) => ({ default: mod.ApacheDerby })),
+  "apache-ignite": () => import("@/registry/icons/database/apache-ignite").then((mod) => ({ default: mod.ApacheIgnite })),
+  "apache-phoenix": () => import("@/registry/icons/database/apache-phoenix").then((mod) => ({ default: mod.ApachePhoenix })),
+  "api": () => import("@/registry/icons/file-types/api").then((mod) => ({ default: mod.Api })),
+  "apollo": () => import("@/registry/icons/plugins/graphql/apollo").then((mod) => ({ default: mod.Apollo })),
+  "app-code-project": () => import("@/registry/icons/plugins/cidr/app-code-project").then((mod) => ({ default: mod.AppCodeProject })),
+  "app-code-workspace": () => import("@/registry/icons/plugins/cidr/app-code-workspace").then((mod) => ({ default: mod.AppCodeWorkspace })),
+  "app-engine-tool-window": () => import("@/registry/icons/general/tool-windows/app-engine-tool-window").then((mod) => ({ default: mod.AppEngineToolWindow })),
+  "application-extension": () => import("@/registry/icons/plugins/cidr/application-extension").then((mod) => ({ default: mod.ApplicationExtension })),
+  "application-remote": () => import("@/registry/icons/run-configurations/application-remote").then((mod) => ({ default: mod.ApplicationRemote })),
+  "application-xml": () => import("@/registry/icons/plugins/java-ee/application-xml").then((mod) => ({ default: mod.ApplicationXml })),
+  "apply-not-conflicts": () => import("@/registry/icons/vcs/apply-not-conflicts").then((mod) => ({ default: mod.ApplyNotConflicts })),
+  "apply-not-conflicts-left": () => import("@/registry/icons/vcs/apply-not-conflicts-left").then((mod) => ({ default: mod.ApplyNotConflictsLeft })),
+  "apply-not-conflicts-right": () => import("@/registry/icons/vcs/apply-not-conflicts-right").then((mod) => ({ default: mod.ApplyNotConflictsRight })),
+  "arbitrary-cluster": () => import("@/registry/icons/plugins/bdt/arbitrary-cluster").then((mod) => ({ default: mod.ArbitraryCluster })),
+  "archive": () => import("@/registry/icons/file-types/archive").then((mod) => ({ default: mod.Archive })),
+  "argument": () => import("@/registry/icons/database/argument").then((mod) => ({ default: mod.Argument })),
+  "around-advice": () => import("@/registry/icons/plugins/aop/around-advice").then((mod) => ({ default: mod.AroundAdvice })),
+  "arrow-left-right": () => import("@/registry/icons/vcs/arrow-left-right").then((mod) => ({ default: mod.ArrowLeftRight })),
+  "aspect-j": () => import("@/registry/icons/file-types/aspect-j").then((mod) => ({ default: mod.AspectJ })),
+  "assembler-go": () => import("@/registry/icons/file-types/assembler-go").then((mod) => ({ default: mod.AssemblerGo })),
+  "assets": () => import("@/registry/icons/plugins/cidr/assets").then((mod) => ({ default: mod.Assets })),
+  "assoc-column": () => import("@/registry/icons/plugins/ruby/assoc-column").then((mod) => ({ default: mod.AssocColumn })),
+  "athena": () => import("@/registry/icons/database/athena").then((mod) => ({ default: mod.Athena })),
+  "attach-to-process": () => import("@/registry/icons/run/attach-to-process").then((mod) => ({ default: mod.AttachToProcess })),
+  "attached": () => import("@/registry/icons/general/ai-assistant/attached").then((mod) => ({ default: mod.Attached })),
+  "attribute": () => import("@/registry/icons/plugins/graphql/attribute").then((mod) => ({ default: mod.Attribute })),
+  "auto-refresh": () => import("@/registry/icons/plugins/kubernetes/auto-refresh").then((mod) => ({ default: mod.AutoRefresh })),
+  "auto-reload": () => import("@/registry/icons/plugins/cidr/auto-reload").then((mod) => ({ default: mod.AutoReload })),
+  "autoscroll-from-source": () => import("@/registry/icons/general/general/autoscroll-from-source").then((mod) => ({ default: mod.AutoscrollFromSource })),
+  "autoscroll-to-source": () => import("@/registry/icons/general/general/autoscroll-to-source").then((mod) => ({ default: mod.AutoscrollToSource })),
+  "aws-glue": () => import("@/registry/icons/plugins/bdt/aws-glue").then((mod) => ({ default: mod.AwsGlue })),
+  "aws-glue-tool-window": () => import("@/registry/icons/general/tool-windows/aws-glue-tool-window").then((mod) => ({ default: mod.AwsGlueToolWindow })),
+  "azure": () => import("@/registry/icons/database/azure").then((mod) => ({ default: mod.Azure })),
+  "back-trace": () => import("@/registry/icons/editor-icons/back-trace").then((mod) => ({ default: mod.BackTrace })),
+  "bazel": () => import("@/registry/icons/plugins/bazel/bazel").then((mod) => ({ default: mod.Bazel })),
+  "bazel-config": () => import("@/registry/icons/plugins/bazel/bazel-config").then((mod) => ({ default: mod.BazelConfig })),
+  "bazel-error": () => import("@/registry/icons/plugins/bazel/bazel-error").then((mod) => ({ default: mod.BazelError })),
+  "bazel-reload": () => import("@/registry/icons/plugins/bazel/bazel-reload").then((mod) => ({ default: mod.BazelReload })),
+  "bazel-target": () => import("@/registry/icons/plugins/bazel/bazel-target").then((mod) => ({ default: mod.BazelTarget })),
+  "bazel-warning": () => import("@/registry/icons/plugins/bazel/bazel-warning").then((mod) => ({ default: mod.BazelWarning })),
+  "bean": () => import("@/registry/icons/plugins/java-ee/bean").then((mod) => ({ default: mod.Bean })),
+  "bean-factory": () => import("@/registry/icons/plugins/java-ee/bean-factory").then((mod) => ({ default: mod.BeanFactory })),
+  "bean-infrastructure": () => import("@/registry/icons/plugins/java-ee/bean-infrastructure").then((mod) => ({ default: mod.BeanInfrastructure })),
+  "bean-method": () => import("@/registry/icons/plugins/java-ee/bean-method").then((mod) => ({ default: mod.BeanMethod })),
+  "bean-property": () => import("@/registry/icons/plugins/java-ee/bean-property").then((mod) => ({ default: mod.BeanProperty })),
+  "before-advice": () => import("@/registry/icons/plugins/aop/before-advice").then((mod) => ({ default: mod.BeforeAdvice })),
+  "big-query": () => import("@/registry/icons/database/big-query").then((mod) => ({ default: mod.BigQuery })),
+  "binary-data": () => import("@/registry/icons/database/binary-data").then((mod) => ({ default: mod.BinaryData })),
+  "blaze-persistence-entity-view": () => import("@/registry/icons/plugins/jpa/blaze-persistence-entity-view").then((mod) => ({ default: mod.BlazePersistenceEntityView })),
+  "block": () => import("@/registry/icons/plugins/ruby/block").then((mod) => ({ default: mod.Block })),
+  "blue-key": () => import("@/registry/icons/database/blue-key").then((mod) => ({ default: mod.BlueKey })),
+  "body": () => import("@/registry/icons/database/body").then((mod) => ({ default: mod.Body })),
+  "bold": () => import("@/registry/icons/general/editor/bold").then((mod) => ({ default: mod.Bold })),
+  "bookmarks-list": () => import("@/registry/icons/general/bookmarks/bookmarks-list").then((mod) => ({ default: mod.BookmarksList })),
+  "boost-test": () => import("@/registry/icons/plugins/cidr/boost-test").then((mod) => ({ default: mod.BoostTest })),
+  "branch": () => import("@/registry/icons/vcs/branch").then((mod) => ({ default: mod.Branch })),
+  "breakpoint": () => import("@/registry/icons/breakpoints/breakpoint").then((mod) => ({ default: mod.Breakpoint })),
+  "breakpoint-dependent": () => import("@/registry/icons/breakpoints/breakpoint-dependent").then((mod) => ({ default: mod.BreakpointDependent })),
+  "breakpoint-disabled": () => import("@/registry/icons/breakpoints/breakpoint-disabled").then((mod) => ({ default: mod.BreakpointDisabled })),
+  "breakpoint-exception": () => import("@/registry/icons/breakpoints/breakpoint-exception").then((mod) => ({ default: mod.BreakpointException })),
+  "breakpoint-exception-disabled": () => import("@/registry/icons/breakpoints/breakpoint-exception-disabled").then((mod) => ({ default: mod.BreakpointExceptionDisabled })),
+  "breakpoint-field": () => import("@/registry/icons/breakpoints/breakpoint-field").then((mod) => ({ default: mod.BreakpointField })),
+  "breakpoint-field-dependent": () => import("@/registry/icons/breakpoints/breakpoint-field-dependent").then((mod) => ({ default: mod.BreakpointFieldDependent })),
+  "breakpoint-field-disabled": () => import("@/registry/icons/breakpoints/breakpoint-field-disabled").then((mod) => ({ default: mod.BreakpointFieldDisabled })),
+  "breakpoint-field-muted": () => import("@/registry/icons/breakpoints/breakpoint-field-muted").then((mod) => ({ default: mod.BreakpointFieldMuted })),
+  "breakpoint-field-muted-dependent": () => import("@/registry/icons/breakpoints/breakpoint-field-muted-dependent").then((mod) => ({ default: mod.BreakpointFieldMutedDependent })),
+  "breakpoint-field-muted-disabled": () => import("@/registry/icons/breakpoints/breakpoint-field-muted-disabled").then((mod) => ({ default: mod.BreakpointFieldMutedDisabled })),
+  "breakpoint-field-unsuspendent": () => import("@/registry/icons/breakpoints/breakpoint-field-unsuspendent").then((mod) => ({ default: mod.BreakpointFieldUnsuspendent })),
+  "breakpoint-field-unsuspendent-disabled": () => import("@/registry/icons/breakpoints/breakpoint-field-unsuspendent-disabled").then((mod) => ({ default: mod.BreakpointFieldUnsuspendentDisabled })),
+  "breakpoint-field-unsuspendent-valid": () => import("@/registry/icons/breakpoints/breakpoint-field-unsuspendent-valid").then((mod) => ({ default: mod.BreakpointFieldUnsuspendentValid })),
+  "breakpoint-field-valid": () => import("@/registry/icons/breakpoints/breakpoint-field-valid").then((mod) => ({ default: mod.BreakpointFieldValid })),
+  "breakpoint-invalid": () => import("@/registry/icons/breakpoints/breakpoint-invalid").then((mod) => ({ default: mod.BreakpointInvalid })),
+  "breakpoint-lambda": () => import("@/registry/icons/breakpoints/breakpoint-lambda").then((mod) => ({ default: mod.BreakpointLambda })),
+  "breakpoint-method": () => import("@/registry/icons/breakpoints/breakpoint-method").then((mod) => ({ default: mod.BreakpointMethod })),
+  "breakpoint-method-dependent": () => import("@/registry/icons/breakpoints/breakpoint-method-dependent").then((mod) => ({ default: mod.BreakpointMethodDependent })),
+  "breakpoint-method-disabled": () => import("@/registry/icons/breakpoints/breakpoint-method-disabled").then((mod) => ({ default: mod.BreakpointMethodDisabled })),
+  "breakpoint-method-muted": () => import("@/registry/icons/breakpoints/breakpoint-method-muted").then((mod) => ({ default: mod.BreakpointMethodMuted })),
+  "breakpoint-method-muted-dependent": () => import("@/registry/icons/breakpoints/breakpoint-method-muted-dependent").then((mod) => ({ default: mod.BreakpointMethodMutedDependent })),
+  "breakpoint-method-muted-disabled": () => import("@/registry/icons/breakpoints/breakpoint-method-muted-disabled").then((mod) => ({ default: mod.BreakpointMethodMutedDisabled })),
+  "breakpoint-method-unsuspendent": () => import("@/registry/icons/breakpoints/breakpoint-method-unsuspendent").then((mod) => ({ default: mod.BreakpointMethodUnsuspendent })),
+  "breakpoint-method-unsuspendent-disabled": () => import("@/registry/icons/breakpoints/breakpoint-method-unsuspendent-disabled").then((mod) => ({ default: mod.BreakpointMethodUnsuspendentDisabled })),
+  "breakpoint-method-unsuspendent-valid": () => import("@/registry/icons/breakpoints/breakpoint-method-unsuspendent-valid").then((mod) => ({ default: mod.BreakpointMethodUnsuspendentValid })),
+  "breakpoint-method-valid": () => import("@/registry/icons/breakpoints/breakpoint-method-valid").then((mod) => ({ default: mod.BreakpointMethodValid })),
+  "breakpoint-muted": () => import("@/registry/icons/breakpoints/breakpoint-muted").then((mod) => ({ default: mod.BreakpointMuted })),
+  "breakpoint-muted-dependent": () => import("@/registry/icons/breakpoints/breakpoint-muted-dependent").then((mod) => ({ default: mod.BreakpointMutedDependent })),
+  "breakpoint-muted-disabled": () => import("@/registry/icons/breakpoints/breakpoint-muted-disabled").then((mod) => ({ default: mod.BreakpointMutedDisabled })),
+  "breakpoint-obsolete": () => import("@/registry/icons/breakpoints/breakpoint-obsolete").then((mod) => ({ default: mod.BreakpointObsolete })),
+  "breakpoint-unsuspendent": () => import("@/registry/icons/breakpoints/breakpoint-unsuspendent").then((mod) => ({ default: mod.BreakpointUnsuspendent })),
+  "breakpoint-unsuspendent-disabled": () => import("@/registry/icons/breakpoints/breakpoint-unsuspendent-disabled").then((mod) => ({ default: mod.BreakpointUnsuspendentDisabled })),
+  "breakpoint-unsuspendent-valid": () => import("@/registry/icons/breakpoints/breakpoint-unsuspendent-valid").then((mod) => ({ default: mod.BreakpointUnsuspendentValid })),
+  "breakpoint-valid": () => import("@/registry/icons/breakpoints/breakpoint-valid").then((mod) => ({ default: mod.BreakpointValid })),
+  "breakpoints/breakpoint": () => import("@/registry/icons/breakpoints/breakpoint").then((mod) => ({ default: mod.Breakpoint })),
+  "breakpoints/breakpoint-dependent": () => import("@/registry/icons/breakpoints/breakpoint-dependent").then((mod) => ({ default: mod.BreakpointDependent })),
+  "breakpoints/breakpoint-disabled": () => import("@/registry/icons/breakpoints/breakpoint-disabled").then((mod) => ({ default: mod.BreakpointDisabled })),
+  "breakpoints/breakpoint-exception": () => import("@/registry/icons/breakpoints/breakpoint-exception").then((mod) => ({ default: mod.BreakpointException })),
+  "breakpoints/breakpoint-exception-disabled": () => import("@/registry/icons/breakpoints/breakpoint-exception-disabled").then((mod) => ({ default: mod.BreakpointExceptionDisabled })),
+  "breakpoints/breakpoint-field": () => import("@/registry/icons/breakpoints/breakpoint-field").then((mod) => ({ default: mod.BreakpointField })),
+  "breakpoints/breakpoint-field-dependent": () => import("@/registry/icons/breakpoints/breakpoint-field-dependent").then((mod) => ({ default: mod.BreakpointFieldDependent })),
+  "breakpoints/breakpoint-field-disabled": () => import("@/registry/icons/breakpoints/breakpoint-field-disabled").then((mod) => ({ default: mod.BreakpointFieldDisabled })),
+  "breakpoints/breakpoint-field-muted": () => import("@/registry/icons/breakpoints/breakpoint-field-muted").then((mod) => ({ default: mod.BreakpointFieldMuted })),
+  "breakpoints/breakpoint-field-muted-dependent": () => import("@/registry/icons/breakpoints/breakpoint-field-muted-dependent").then((mod) => ({ default: mod.BreakpointFieldMutedDependent })),
+  "breakpoints/breakpoint-field-muted-disabled": () => import("@/registry/icons/breakpoints/breakpoint-field-muted-disabled").then((mod) => ({ default: mod.BreakpointFieldMutedDisabled })),
+  "breakpoints/breakpoint-field-unsuspendent": () => import("@/registry/icons/breakpoints/breakpoint-field-unsuspendent").then((mod) => ({ default: mod.BreakpointFieldUnsuspendent })),
+  "breakpoints/breakpoint-field-unsuspendent-disabled": () => import("@/registry/icons/breakpoints/breakpoint-field-unsuspendent-disabled").then((mod) => ({ default: mod.BreakpointFieldUnsuspendentDisabled })),
+  "breakpoints/breakpoint-field-unsuspendent-valid": () => import("@/registry/icons/breakpoints/breakpoint-field-unsuspendent-valid").then((mod) => ({ default: mod.BreakpointFieldUnsuspendentValid })),
+  "breakpoints/breakpoint-field-valid": () => import("@/registry/icons/breakpoints/breakpoint-field-valid").then((mod) => ({ default: mod.BreakpointFieldValid })),
+  "breakpoints/breakpoint-invalid": () => import("@/registry/icons/breakpoints/breakpoint-invalid").then((mod) => ({ default: mod.BreakpointInvalid })),
+  "breakpoints/breakpoint-lambda": () => import("@/registry/icons/breakpoints/breakpoint-lambda").then((mod) => ({ default: mod.BreakpointLambda })),
+  "breakpoints/breakpoint-method": () => import("@/registry/icons/breakpoints/breakpoint-method").then((mod) => ({ default: mod.BreakpointMethod })),
+  "breakpoints/breakpoint-method-dependent": () => import("@/registry/icons/breakpoints/breakpoint-method-dependent").then((mod) => ({ default: mod.BreakpointMethodDependent })),
+  "breakpoints/breakpoint-method-disabled": () => import("@/registry/icons/breakpoints/breakpoint-method-disabled").then((mod) => ({ default: mod.BreakpointMethodDisabled })),
+  "breakpoints/breakpoint-method-muted": () => import("@/registry/icons/breakpoints/breakpoint-method-muted").then((mod) => ({ default: mod.BreakpointMethodMuted })),
+  "breakpoints/breakpoint-method-muted-dependent": () => import("@/registry/icons/breakpoints/breakpoint-method-muted-dependent").then((mod) => ({ default: mod.BreakpointMethodMutedDependent })),
+  "breakpoints/breakpoint-method-muted-disabled": () => import("@/registry/icons/breakpoints/breakpoint-method-muted-disabled").then((mod) => ({ default: mod.BreakpointMethodMutedDisabled })),
+  "breakpoints/breakpoint-method-unsuspendent": () => import("@/registry/icons/breakpoints/breakpoint-method-unsuspendent").then((mod) => ({ default: mod.BreakpointMethodUnsuspendent })),
+  "breakpoints/breakpoint-method-unsuspendent-disabled": () => import("@/registry/icons/breakpoints/breakpoint-method-unsuspendent-disabled").then((mod) => ({ default: mod.BreakpointMethodUnsuspendentDisabled })),
+  "breakpoints/breakpoint-method-unsuspendent-valid": () => import("@/registry/icons/breakpoints/breakpoint-method-unsuspendent-valid").then((mod) => ({ default: mod.BreakpointMethodUnsuspendentValid })),
+  "breakpoints/breakpoint-method-valid": () => import("@/registry/icons/breakpoints/breakpoint-method-valid").then((mod) => ({ default: mod.BreakpointMethodValid })),
+  "breakpoints/breakpoint-muted": () => import("@/registry/icons/breakpoints/breakpoint-muted").then((mod) => ({ default: mod.BreakpointMuted })),
+  "breakpoints/breakpoint-muted-dependent": () => import("@/registry/icons/breakpoints/breakpoint-muted-dependent").then((mod) => ({ default: mod.BreakpointMutedDependent })),
+  "breakpoints/breakpoint-muted-disabled": () => import("@/registry/icons/breakpoints/breakpoint-muted-disabled").then((mod) => ({ default: mod.BreakpointMutedDisabled })),
+  "breakpoints/breakpoint-obsolete": () => import("@/registry/icons/breakpoints/breakpoint-obsolete").then((mod) => ({ default: mod.BreakpointObsolete })),
+  "breakpoints/breakpoint-unsuspendent": () => import("@/registry/icons/breakpoints/breakpoint-unsuspendent").then((mod) => ({ default: mod.BreakpointUnsuspendent })),
+  "breakpoints/breakpoint-unsuspendent-disabled": () => import("@/registry/icons/breakpoints/breakpoint-unsuspendent-disabled").then((mod) => ({ default: mod.BreakpointUnsuspendentDisabled })),
+  "breakpoints/breakpoint-unsuspendent-valid": () => import("@/registry/icons/breakpoints/breakpoint-unsuspendent-valid").then((mod) => ({ default: mod.BreakpointUnsuspendentValid })),
+  "breakpoints/breakpoint-valid": () => import("@/registry/icons/breakpoints/breakpoint-valid").then((mod) => ({ default: mod.BreakpointValid })),
+  "breakpoints/multiple-breakpoints": () => import("@/registry/icons/breakpoints/multiple-breakpoints").then((mod) => ({ default: mod.MultipleBreakpoints })),
+  "breakpoints/multiple-breakpoints-disabled": () => import("@/registry/icons/breakpoints/multiple-breakpoints-disabled").then((mod) => ({ default: mod.MultipleBreakpointsDisabled })),
+  "breakpoints/multiple-breakpoints-muted": () => import("@/registry/icons/breakpoints/multiple-breakpoints-muted").then((mod) => ({ default: mod.MultipleBreakpointsMuted })),
+  "breakpoints/question-badge": () => import("@/registry/icons/breakpoints/question-badge").then((mod) => ({ default: mod.QuestionBadge })),
+  "browse": () => import("@/registry/icons/general/inline/browse").then((mod) => ({ default: mod.Browse })),
+  "build-and-reload": () => import("@/registry/icons/plugins/bazel/build-and-reload").then((mod) => ({ default: mod.BuildAndReload })),
+  "build-auto-reload-changes": () => import("@/registry/icons/general/actions/build-auto-reload-changes").then((mod) => ({ default: mod.BuildAutoReloadChanges })),
+  "build-on-frame-deactivation": () => import("@/registry/icons/plugins/java-ee/build-on-frame-deactivation").then((mod) => ({ default: mod.BuildOnFrameDeactivation })),
+  "build-server-protocol-load-changes": () => import("@/registry/icons/plugins/scala/build-server-protocol-load-changes").then((mod) => ({ default: mod.BuildServerProtocolLoadChanges })),
+  "build-server-protocol-target": () => import("@/registry/icons/plugins/scala/build-server-protocol-target").then((mod) => ({ default: mod.BuildServerProtocolTarget })),
+  "build/build": () => import("@/registry/icons/build/build").then((mod) => ({ default: mod.Build })),
+  "build/dependency-analyzer": () => import("@/registry/icons/build/dependency-analyzer").then((mod) => ({ default: mod.DependencyAnalyzer })),
+  "build/gradle": () => import("@/registry/icons/build/gradle").then((mod) => ({ default: mod.Gradle })),
+  "build/gradle-load-changes": () => import("@/registry/icons/build/gradle-load-changes").then((mod) => ({ default: mod.GradleLoadChanges })),
+  "build/gradle-navigate": () => import("@/registry/icons/build/gradle-navigate").then((mod) => ({ default: mod.GradleNavigate })),
+  "build/gradle-subproject": () => import("@/registry/icons/build/gradle-subproject").then((mod) => ({ default: mod.GradleSubproject })),
+  "build/maven-bind": () => import("@/registry/icons/build/maven-bind").then((mod) => ({ default: mod.MavenBind })),
+  "build/maven-bind-checksum": () => import("@/registry/icons/build/maven-bind-checksum").then((mod) => ({ default: mod.MavenBindChecksum })),
+  "build/maven-checksum": () => import("@/registry/icons/build/maven-checksum").then((mod) => ({ default: mod.MavenChecksum })),
+  "build/maven-children-projects": () => import("@/registry/icons/build/maven-children-projects").then((mod) => ({ default: mod.MavenChildrenProjects })),
+  "build/maven-flex": () => import("@/registry/icons/build/maven-flex").then((mod) => ({ default: mod.MavenFlex })),
+  "build/maven-load-changes": () => import("@/registry/icons/build/maven-load-changes").then((mod) => ({ default: mod.MavenLoadChanges })),
+  "build/maven-module": () => import("@/registry/icons/build/maven-module").then((mod) => ({ default: mod.MavenModule })),
+  "build/maven-parent-projects": () => import("@/registry/icons/build/maven-parent-projects").then((mod) => ({ default: mod.MavenParentProjects })),
+  "build/maven-plugin": () => import("@/registry/icons/build/maven-plugin").then((mod) => ({ default: mod.MavenPlugin })),
+  "build/maven-plugin-goal": () => import("@/registry/icons/build/maven-plugin-goal").then((mod) => ({ default: mod.MavenPluginGoal })),
+  "build/maven-profiles": () => import("@/registry/icons/build/maven-profiles").then((mod) => ({ default: mod.MavenProfiles })),
+  "build/maven-project": () => import("@/registry/icons/build/maven-project").then((mod) => ({ default: mod.MavenProject })),
+  "build/task": () => import("@/registry/icons/build/task").then((mod) => ({ default: mod.Task })),
+  "build/task-group": () => import("@/registry/icons/build/task-group").then((mod) => ({ default: mod.TaskGroup })),
+  "build/toggle-offline-mode": () => import("@/registry/icons/build/toggle-offline-mode").then((mod) => ({ default: mod.ToggleOfflineMode })),
+  "build/toggle-skip-tests-mode": () => import("@/registry/icons/build/toggle-skip-tests-mode").then((mod) => ({ default: mod.ToggleSkipTestsMode })),
+  "build/update-folders": () => import("@/registry/icons/build/update-folders").then((mod) => ({ default: mod.UpdateFolders })),
+  "bullet-list": () => import("@/registry/icons/general/editor/bullet-list").then((mod) => ({ default: mod.BulletList })),
+  "bun": () => import("@/registry/icons/file-types/bun").then((mod) => ({ default: mod.Bun })),
+  "bundle-run-anything": () => import("@/registry/icons/plugins/ruby/bundle-run-anything").then((mod) => ({ default: mod.BundleRunAnything })),
+  "c": () => import("@/registry/icons/plugins/cidr/c").then((mod) => ({ default: mod.C })),
+  "c-test": () => import("@/registry/icons/plugins/cidr/c-test").then((mod) => ({ default: mod.CTest })),
+  "cassandra": () => import("@/registry/icons/database/cassandra").then((mod) => ({ default: mod.Cassandra })),
+  "cassandra-file-type": () => import("@/registry/icons/database/cassandra-file-type").then((mod) => ({ default: mod.CassandraFileType })),
+  "catch-test": () => import("@/registry/icons/plugins/cidr/catch-test").then((mod) => ({ default: mod.CatchTest })),
+  "cdi": () => import("@/registry/icons/plugins/java-ee/cdi").then((mod) => ({ default: mod.Cdi })),
+  "cdi-tool-window": () => import("@/registry/icons/general/tool-windows/cdi-tool-window").then((mod) => ({ default: mod.CdiToolWindow })),
+  "center-align": () => import("@/registry/icons/general/editor/center-align").then((mod) => ({ default: mod.CenterAlign })),
+  "chameleon": () => import("@/registry/icons/file-types/chameleon").then((mod) => ({ default: mod.Chameleon })),
+  "changed-file": () => import("@/registry/icons/file-types/changed-file").then((mod) => ({ default: mod.ChangedFile })),
+  "changed-files": () => import("@/registry/icons/file-types/changed-files").then((mod) => ({ default: mod.ChangedFiles })),
+  "changelist": () => import("@/registry/icons/vcs/changelist").then((mod) => ({ default: mod.Changelist })),
+  "changelog": () => import("@/registry/icons/plugins/jpa/changelog").then((mod) => ({ default: mod.Changelog })),
+  "changeset": () => import("@/registry/icons/plugins/jpa/changeset").then((mod) => ({ default: mod.Changeset })),
+  "channel": () => import("@/registry/icons/plugins/ruby/channel").then((mod) => ({ default: mod.Channel })),
+  "chart-area": () => import("@/registry/icons/plugins/bdt/chart-area").then((mod) => ({ default: mod.ChartArea })),
+  "chart-area-range": () => import("@/registry/icons/plugins/bdt/chart-area-range").then((mod) => ({ default: mod.ChartAreaRange })),
+  "chart-bar": () => import("@/registry/icons/plugins/bdt/chart-bar").then((mod) => ({ default: mod.ChartBar })),
+  "chart-bubble": () => import("@/registry/icons/plugins/bdt/chart-bubble").then((mod) => ({ default: mod.ChartBubble })),
+  "chart-histogram": () => import("@/registry/icons/plugins/bdt/chart-histogram").then((mod) => ({ default: mod.ChartHistogram })),
+  "chart-line": () => import("@/registry/icons/plugins/bdt/chart-line").then((mod) => ({ default: mod.ChartLine })),
+  "chart-pie": () => import("@/registry/icons/plugins/bdt/chart-pie").then((mod) => ({ default: mod.ChartPie })),
+  "chart-scatter": () => import("@/registry/icons/plugins/bdt/chart-scatter").then((mod) => ({ default: mod.ChartScatter })),
+  "chart-stock": () => import("@/registry/icons/plugins/bdt/chart-stock").then((mod) => ({ default: mod.ChartStock })),
+  "checked": () => import("@/registry/icons/general/actions/checked").then((mod) => ({ default: mod.Checked })),
+  "checkmark-list": () => import("@/registry/icons/general/editor/checkmark-list").then((mod) => ({ default: mod.CheckmarkList })),
+  "chef-cookbook": () => import("@/registry/icons/plugins/ruby/chef-cookbook").then((mod) => ({ default: mod.ChefCookbook })),
+  "cherry-pick": () => import("@/registry/icons/vcs/cherry-pick").then((mod) => ({ default: mod.CherryPick })),
+  "chessboard": () => import("@/registry/icons/editor-icons/chessboard").then((mod) => ({ default: mod.Chessboard })),
+  "chevron-down": () => import("@/registry/icons/general/general/chevron-down").then((mod) => ({ default: mod.ChevronDown })),
+  "chevron-down-hovered": () => import("@/registry/icons/general/general/chevron-down-hovered").then((mod) => ({ default: mod.ChevronDownHovered })),
+  "chevron-down-large": () => import("@/registry/icons/general/general/chevron-down-large").then((mod) => ({ default: mod.ChevronDownLarge })),
+  "chevron-left": () => import("@/registry/icons/general/general/chevron-left").then((mod) => ({ default: mod.ChevronLeft })),
+  "chevron-right": () => import("@/registry/icons/general/general/chevron-right").then((mod) => ({ default: mod.ChevronRight })),
+  "chevron-up": () => import("@/registry/icons/general/general/chevron-up").then((mod) => ({ default: mod.ChevronUp })),
+  "chevron-up-large": () => import("@/registry/icons/general/general/chevron-up-large").then((mod) => ({ default: mod.ChevronUpLarge })),
+  "class-abstract": () => import("@/registry/icons/nodes/class-abstract").then((mod) => ({ default: mod.ClassAbstract })),
+  "class-anonymous": () => import("@/registry/icons/nodes/class-anonymous").then((mod) => ({ default: mod.ClassAnonymous })),
+  "class-companion": () => import("@/registry/icons/plugins/scala/class-companion").then((mod) => ({ default: mod.ClassCompanion })),
+  "class-companion-swapped": () => import("@/registry/icons/plugins/scala/class-companion-swapped").then((mod) => ({ default: mod.ClassCompanionSwapped })),
+  "class-cpp": () => import("@/registry/icons/plugins/cidr/class-cpp").then((mod) => ({ default: mod.ClassCpp })),
+  "class-hierarchy": () => import("@/registry/icons/general/general/class-hierarchy").then((mod) => ({ default: mod.ClassHierarchy })),
+  "class-initializer-kotlin": () => import("@/registry/icons/plugins/kotlin/class-initializer-kotlin").then((mod) => ({ default: mod.ClassInitializerKotlin })),
+  "class-kotlin": () => import("@/registry/icons/plugins/kotlin/class-kotlin").then((mod) => ({ default: mod.ClassKotlin })),
+  "class-level-watch": () => import("@/registry/icons/debugger/class-level-watch").then((mod) => ({ default: mod.ClassLevelWatch })),
+  "class-object-scala": () => import("@/registry/icons/plugins/scala/class-object-scala").then((mod) => ({ default: mod.ClassObjectScala })),
+  "class-scala": () => import("@/registry/icons/plugins/scala/class-scala").then((mod) => ({ default: mod.ClassScala })),
+  "clean": () => import("@/registry/icons/plugins/platformio/clean").then((mod) => ({ default: mod.Clean })),
+  "click-house": () => import("@/registry/icons/database/click-house").then((mod) => ({ default: mod.ClickHouse })),
+  "close-hover": () => import("@/registry/icons/general/windows/close-hover").then((mod) => ({ default: mod.CloseHover })),
+  "close-inactive": () => import("@/registry/icons/general/windows/close-inactive").then((mod) => ({ default: mod.CloseInactive })),
+  "close-small-hovered": () => import("@/registry/icons/general/general/close-small-hovered").then((mod) => ({ default: mod.CloseSmallHovered })),
+  "cluster": () => import("@/registry/icons/plugins/bdt/cluster").then((mod) => ({ default: mod.Cluster })),
+  "cluster-role": () => import("@/registry/icons/plugins/kubernetes/cluster-role").then((mod) => ({ default: mod.ClusterRole })),
+  "cluster-role-binding": () => import("@/registry/icons/plugins/kubernetes/cluster-role-binding").then((mod) => ({ default: mod.ClusterRoleBinding })),
+  "cmake": () => import("@/registry/icons/plugins/cidr/cmake").then((mod) => ({ default: mod.CMake })),
+  "cmake-debug": () => import("@/registry/icons/plugins/cidr/cmake-debug").then((mod) => ({ default: mod.CMakeDebug })),
+  "cmake-function": () => import("@/registry/icons/plugins/cidr/cmake-function").then((mod) => ({ default: mod.CMakeFunction })),
+  "cmake-load-changes": () => import("@/registry/icons/plugins/cidr/cmake-load-changes").then((mod) => ({ default: mod.CMakeLoadChanges })),
+  "cmake-macro": () => import("@/registry/icons/plugins/cidr/cmake-macro").then((mod) => ({ default: mod.CMakeMacro })),
+  "cmake-modificator": () => import("@/registry/icons/plugins/cidr/cmake-modificator").then((mod) => ({ default: mod.CMakeModificator })),
+  "cmake-target-executable": () => import("@/registry/icons/plugins/cidr/cmake-target-executable").then((mod) => ({ default: mod.CMakeTargetExecutable })),
+  "cmake-tool-window": () => import("@/registry/icons/general/tool-windows/cmake-tool-window").then((mod) => ({ default: mod.CMakeToolWindow })),
+  "cockroach-db": () => import("@/registry/icons/database/cockroach-db").then((mod) => ({ default: mod.CockroachDB })),
+  "cocoa-pods": () => import("@/registry/icons/plugins/cidr/cocoa-pods").then((mod) => ({ default: mod.CocoaPods })),
+  "code-assistant-actor": () => import("@/registry/icons/plugins/cidr/code-assistant-actor").then((mod) => ({ default: mod.CodeAssistantActor })),
+  "code-assistant-actor-extension": () => import("@/registry/icons/plugins/cidr/code-assistant-actor-extension").then((mod) => ({ default: mod.CodeAssistantActorExtension })),
+  "code-assistant-enum": () => import("@/registry/icons/plugins/cidr/code-assistant-enum").then((mod) => ({ default: mod.CodeAssistantEnum })),
+  "code-assistant-enum-const": () => import("@/registry/icons/plugins/cidr/code-assistant-enum-const").then((mod) => ({ default: mod.CodeAssistantEnumConst })),
+  "code-assistant-enum-extension": () => import("@/registry/icons/plugins/cidr/code-assistant-enum-extension").then((mod) => ({ default: mod.CodeAssistantEnumExtension })),
+  "code-assistant-field": () => import("@/registry/icons/plugins/cidr/code-assistant-field").then((mod) => ({ default: mod.CodeAssistantField })),
+  "code-assistant-field-optional": () => import("@/registry/icons/plugins/cidr/code-assistant-field-optional").then((mod) => ({ default: mod.CodeAssistantFieldOptional })),
+  "code-assistant-function": () => import("@/registry/icons/plugins/cidr/code-assistant-function").then((mod) => ({ default: mod.CodeAssistantFunction })),
+  "code-assistant-function-abstract": () => import("@/registry/icons/plugins/cidr/code-assistant-function-abstract").then((mod) => ({ default: mod.CodeAssistantFunctionAbstract })),
+  "code-assistant-function-invocation": () => import("@/registry/icons/plugins/cidr/code-assistant-function-invocation").then((mod) => ({ default: mod.CodeAssistantFunctionInvocation })),
+  "code-assistant-global": () => import("@/registry/icons/plugins/cidr/code-assistant-global").then((mod) => ({ default: mod.CodeAssistantGlobal })),
+  "code-assistant-local": () => import("@/registry/icons/plugins/cidr/code-assistant-local").then((mod) => ({ default: mod.CodeAssistantLocal })),
+  "code-assistant-member-abstract": () => import("@/registry/icons/plugins/cidr/code-assistant-member-abstract").then((mod) => ({ default: mod.CodeAssistantMemberAbstract })),
+  "code-assistant-operator": () => import("@/registry/icons/plugins/cidr/code-assistant-operator").then((mod) => ({ default: mod.CodeAssistantOperator })),
+  "code-assistant-parameter": () => import("@/registry/icons/plugins/cidr/code-assistant-parameter").then((mod) => ({ default: mod.CodeAssistantParameter })),
+  "code-assistant-property": () => import("@/registry/icons/plugins/cidr/code-assistant-property").then((mod) => ({ default: mod.CodeAssistantProperty })),
+  "code-assistant-property-optional": () => import("@/registry/icons/plugins/cidr/code-assistant-property-optional").then((mod) => ({ default: mod.CodeAssistantPropertyOptional })),
+  "code-assistant-protocol": () => import("@/registry/icons/plugins/cidr/code-assistant-protocol").then((mod) => ({ default: mod.CodeAssistantProtocol })),
+  "code-assistant-protocol-extension": () => import("@/registry/icons/plugins/cidr/code-assistant-protocol-extension").then((mod) => ({ default: mod.CodeAssistantProtocolExtension })),
+  "code-assistant-struct": () => import("@/registry/icons/plugins/cidr/code-assistant-struct").then((mod) => ({ default: mod.CodeAssistantStruct })),
+  "code-assistant-struct-extension": () => import("@/registry/icons/plugins/cidr/code-assistant-struct-extension").then((mod) => ({ default: mod.CodeAssistantStructExtension })),
+  "code-assistant-type": () => import("@/registry/icons/plugins/cidr/code-assistant-type").then((mod) => ({ default: mod.CodeAssistantType })),
+  "code-assistant-union": () => import("@/registry/icons/plugins/cidr/code-assistant-union").then((mod) => ({ default: mod.CodeAssistantUnion })),
+  "code-span": () => import("@/registry/icons/general/editor/code-span").then((mod) => ({ default: mod.CodeSpan })),
+  "coffeescript": () => import("@/registry/icons/file-types/coffeescript").then((mod) => ({ default: mod.Coffeescript })),
+  "collapse-all": () => import("@/registry/icons/general/general/collapse-all").then((mod) => ({ default: mod.CollapseAll })),
+  "collapse-node": () => import("@/registry/icons/editor-icons/collapse-node").then((mod) => ({ default: mod.CollapseNode })),
+  "collation": () => import("@/registry/icons/database/collation").then((mod) => ({ default: mod.Collation })),
+  "collection": () => import("@/registry/icons/database/collection").then((mod) => ({ default: mod.Collection })),
+  "collection-key": () => import("@/registry/icons/database/collection-key").then((mod) => ({ default: mod.CollectionKey })),
+  "collection-type": () => import("@/registry/icons/database/collection-type").then((mod) => ({ default: mod.CollectionType })),
+  "color-picker": () => import("@/registry/icons/editor-icons/color-picker").then((mod) => ({ default: mod.ColorPicker })),
+  "colors": () => import("@/registry/icons/editor-icons/colors").then((mod) => ({ default: mod.Colors })),
+  "column-blue-key": () => import("@/registry/icons/database/column-blue-key").then((mod) => ({ default: mod.ColumnBlueKey })),
+  "column-blue-key-dot": () => import("@/registry/icons/database/column-blue-key-dot").then((mod) => ({ default: mod.ColumnBlueKeyDot })),
+  "column-blue-key-dot-index": () => import("@/registry/icons/database/column-blue-key-dot-index").then((mod) => ({ default: mod.ColumnBlueKeyDotIndex })),
+  "column-blue-key-index": () => import("@/registry/icons/database/column-blue-key-index").then((mod) => ({ default: mod.ColumnBlueKeyIndex })),
+  "column-dot": () => import("@/registry/icons/database/column-dot").then((mod) => ({ default: mod.ColumnDot })),
+  "column-dot-index": () => import("@/registry/icons/database/column-dot-index").then((mod) => ({ default: mod.ColumnDotIndex })),
+  "column-filter": () => import("@/registry/icons/database/column-filter").then((mod) => ({ default: mod.ColumnFilter })),
+  "column-gold-blue-key": () => import("@/registry/icons/database/column-gold-blue-key").then((mod) => ({ default: mod.ColumnGoldBlueKey })),
+  "column-gold-blue-key-dot": () => import("@/registry/icons/database/column-gold-blue-key-dot").then((mod) => ({ default: mod.ColumnGoldBlueKeyDot })),
+  "column-gold-blue-key-dot-index": () => import("@/registry/icons/database/column-gold-blue-key-dot-index").then((mod) => ({ default: mod.ColumnGoldBlueKeyDotIndex })),
+  "column-gold-blue-key-index": () => import("@/registry/icons/database/column-gold-blue-key-index").then((mod) => ({ default: mod.ColumnGoldBlueKeyIndex })),
+  "column-gold-key": () => import("@/registry/icons/database/column-gold-key").then((mod) => ({ default: mod.ColumnGoldKey })),
+  "column-gold-key-dot": () => import("@/registry/icons/database/column-gold-key-dot").then((mod) => ({ default: mod.ColumnGoldKeyDot })),
+  "column-gold-key-dot-index": () => import("@/registry/icons/database/column-gold-key-dot-index").then((mod) => ({ default: mod.ColumnGoldKeyDotIndex })),
+  "column-gold-key-index": () => import("@/registry/icons/database/column-gold-key-index").then((mod) => ({ default: mod.ColumnGoldKeyIndex })),
+  "column-grey-key": () => import("@/registry/icons/database/column-grey-key").then((mod) => ({ default: mod.ColumnGreyKey })),
+  "column-index": () => import("@/registry/icons/database/column-index").then((mod) => ({ default: mod.ColumnIndex })),
+  "command": () => import("@/registry/icons/terminal/command").then((mod) => ({ default: mod.Command })),
+  "comment": () => import("@/registry/icons/vcs/comment").then((mod) => ({ default: mod.Comment })),
+  "comment-read": () => import("@/registry/icons/vcs/comment-read").then((mod) => ({ default: mod.CommentRead })),
+  "comment-regular": () => import("@/registry/icons/vcs/comment-regular").then((mod) => ({ default: mod.CommentRegular })),
+  "comment-resolved": () => import("@/registry/icons/vcs/comment-resolved").then((mod) => ({ default: mod.CommentResolved })),
+  "comment-unread": () => import("@/registry/icons/vcs/comment-unread").then((mod) => ({ default: mod.CommentUnread })),
+  "comment-unresolved": () => import("@/registry/icons/vcs/comment-unresolved").then((mod) => ({ default: mod.CommentUnresolved })),
+  "compact-empty-packages": () => import("@/registry/icons/general/object-browser/compact-empty-packages").then((mod) => ({ default: mod.CompactEmptyPackages })),
+  "compare3-left-middle": () => import("@/registry/icons/vcs/compare3-left-middle").then((mod) => ({ default: mod.Compare3LeftMiddle })),
+  "compare3-left-right": () => import("@/registry/icons/vcs/compare3-left-right").then((mod) => ({ default: mod.Compare3LeftRight })),
+  "compare3-middle-right": () => import("@/registry/icons/vcs/compare3-middle-right").then((mod) => ({ default: mod.Compare3MiddleRight })),
+  "compare4-left-bottom": () => import("@/registry/icons/vcs/compare4-left-bottom").then((mod) => ({ default: mod.Compare4LeftBottom })),
+  "compare4-left-middle": () => import("@/registry/icons/vcs/compare4-left-middle").then((mod) => ({ default: mod.Compare4LeftMiddle })),
+  "compare4-left-right": () => import("@/registry/icons/vcs/compare4-left-right").then((mod) => ({ default: mod.Compare4LeftRight })),
+  "compare4-middle-bottom": () => import("@/registry/icons/vcs/compare4-middle-bottom").then((mod) => ({ default: mod.Compare4MiddleBottom })),
+  "compare4-middle-right": () => import("@/registry/icons/vcs/compare4-middle-right").then((mod) => ({ default: mod.Compare4MiddleRight })),
+  "compare4-right-bottom": () => import("@/registry/icons/vcs/compare4-right-bottom").then((mod) => ({ default: mod.Compare4RightBottom })),
+  "compilation-database-load-changes": () => import("@/registry/icons/plugins/cidr/compilation-database-load-changes").then((mod) => ({ default: mod.CompilationDatabaseLoadChanges })),
+  "compile-server": () => import("@/registry/icons/plugins/scala/compile-server").then((mod) => ({ default: mod.CompileServer })),
+  "component": () => import("@/registry/icons/plugins/java-ee/component").then((mod) => ({ default: mod.Component })),
+  "component-vendor": () => import("@/registry/icons/plugins/platformio/component-vendor").then((mod) => ({ default: mod.ComponentVendor })),
+  "compound": () => import("@/registry/icons/run-configurations/compound").then((mod) => ({ default: mod.Compound })),
+  "concurrency-diagram-toolwindow": () => import("@/registry/icons/general/tool-windows/concurrency-diagram-toolwindow").then((mod) => ({ default: mod.ConcurrencyDiagramToolwindow })),
+  "conditional-statement": () => import("@/registry/icons/file-types/conditional-statement").then((mod) => ({ default: mod.ConditionalStatement })),
+  "config-file": () => import("@/registry/icons/general/general/config-file").then((mod) => ({ default: mod.ConfigFile })),
+  "config-map": () => import("@/registry/icons/plugins/kubernetes/config-map").then((mod) => ({ default: mod.ConfigMap })),
+  "configuration": () => import("@/registry/icons/plugins/kubernetes/configuration").then((mod) => ({ default: mod.Configuration })),
+  "configuration-scan": () => import("@/registry/icons/plugins/java-ee/configuration-scan").then((mod) => ({ default: mod.ConfigurationScan })),
+  "conflict": () => import("@/registry/icons/general/setting-sync/conflict").then((mod) => ({ default: mod.Conflict })),
+  "connector": () => import("@/registry/icons/database/connector").then((mod) => ({ default: mod.Connector })),
+  "console": () => import("@/registry/icons/plugins/kotlin/console").then((mod) => ({ default: mod.Console })),
+  "console-run": () => import("@/registry/icons/database/console-run").then((mod) => ({ default: mod.ConsoleRun })),
+  "console-show-plan": () => import("@/registry/icons/database/console-show-plan").then((mod) => ({ default: mod.ConsoleShowPlan })),
+  "constant": () => import("@/registry/icons/nodes/constant").then((mod) => ({ default: mod.Constant })),
+  "constraint-mappings": () => import("@/registry/icons/plugins/java-ee/constraint-mappings").then((mod) => ({ default: mod.ConstraintMappings })),
+  "constraint-validator": () => import("@/registry/icons/plugins/java-ee/constraint-validator").then((mod) => ({ default: mod.ConstraintValidator })),
+  "constraints": () => import("@/registry/icons/plugins/java-ee/constraints").then((mod) => ({ default: mod.Constraints })),
+  "constructor": () => import("@/registry/icons/plugins/uml/constructor").then((mod) => ({ default: mod.Constructor })),
+  "contexts": () => import("@/registry/icons/file-types/contexts").then((mod) => ({ default: mod.Contexts })),
+  "contexts-modifier": () => import("@/registry/icons/file-types/contexts-modifier").then((mod) => ({ default: mod.ContextsModifier })),
+  "controller": () => import("@/registry/icons/nodes/controller").then((mod) => ({ default: mod.Controller })),
+  "controller-folder": () => import("@/registry/icons/plugins/ruby/controller-folder").then((mod) => ({ default: mod.ControllerFolder })),
+  "controller-node": () => import("@/registry/icons/plugins/ruby/controller-node").then((mod) => ({ default: mod.ControllerNode })),
+  "copy-of-folder": () => import("@/registry/icons/nodes/copy-of-folder").then((mod) => ({ default: mod.CopyOfFolder })),
+  "couchbase": () => import("@/registry/icons/database/couchbase").then((mod) => ({ default: mod.Couchbase })),
+  "count": () => import("@/registry/icons/plugins/jpa/count").then((mod) => ({ default: mod.Count })),
+  "coverage": () => import("@/registry/icons/general/tool-windows/coverage").then((mod) => ({ default: mod.Coverage })),
+  "cpp": () => import("@/registry/icons/plugins/cidr/cpp").then((mod) => ({ default: mod.Cpp })),
+  "create-column": () => import("@/registry/icons/plugins/jpa/create-column").then((mod) => ({ default: mod.CreateColumn })),
+  "create-constraint": () => import("@/registry/icons/plugins/jpa/create-constraint").then((mod) => ({ default: mod.CreateConstraint })),
+  "create-index": () => import("@/registry/icons/plugins/jpa/create-index").then((mod) => ({ default: mod.CreateIndex })),
+  "create-sequence": () => import("@/registry/icons/plugins/jpa/create-sequence").then((mod) => ({ default: mod.CreateSequence })),
+  "create-table": () => import("@/registry/icons/plugins/jpa/create-table").then((mod) => ({ default: mod.CreateTable })),
+  "cron-jobs": () => import("@/registry/icons/plugins/kubernetes/cron-jobs").then((mod) => ({ default: mod.CronJobs })),
+  "css": () => import("@/registry/icons/file-types/css").then((mod) => ({ default: mod.Css })),
+  "cu": () => import("@/registry/icons/plugins/cidr/cu").then((mod) => ({ default: mod.Cu })),
+  "cucumber": () => import("@/registry/icons/file-types/cucumber").then((mod) => ({ default: mod.Cucumber })),
+  "cuh": () => import("@/registry/icons/plugins/cidr/cuh").then((mod) => ({ default: mod.Cuh })),
+  "current-branch": () => import("@/registry/icons/vcs/current-branch").then((mod) => ({ default: mod.CurrentBranch })),
+  "current-branch-favorite": () => import("@/registry/icons/vcs/current-branch-favorite").then((mod) => ({ default: mod.CurrentBranchFavorite })),
+  "custom-folder": () => import("@/registry/icons/plugins/cidr/custom-folder").then((mod) => ({ default: mod.CustomFolder })),
+  "custom-gdb-run-configuration": () => import("@/registry/icons/plugins/cidr/custom-gdb-run-configuration").then((mod) => ({ default: mod.CustomGdbRunConfiguration })),
+  "custom-resource": () => import("@/registry/icons/plugins/kubernetes/custom-resource").then((mod) => ({ default: mod.CustomResource })),
+  "custom-resource-definition": () => import("@/registry/icons/plugins/kubernetes/custom-resource-definition").then((mod) => ({ default: mod.CustomResourceDefinition })),
+  "custom-resources": () => import("@/registry/icons/plugins/kubernetes/custom-resources").then((mod) => ({ default: mod.CustomResources })),
+  "custom-target": () => import("@/registry/icons/plugins/cidr/custom-target").then((mod) => ({ default: mod.CustomTarget })),
+  "cut": () => import("@/registry/icons/general/general/cut").then((mod) => ({ default: mod.Cut })),
+  "cwm-access": () => import("@/registry/icons/general/tool-windows/cwm-access").then((mod) => ({ default: mod.CwmAccess })),
+  "cwm-cam-avatar-off": () => import("@/registry/icons/plugins/code-with-me/cwm-cam-avatar-off").then((mod) => ({ default: mod.CwmCamAvatarOff })),
+  "cwm-cam-avatar-on": () => import("@/registry/icons/plugins/code-with-me/cwm-cam-avatar-on").then((mod) => ({ default: mod.CwmCamAvatarOn })),
+  "cwm-cam-off": () => import("@/registry/icons/plugins/code-with-me/cwm-cam-off").then((mod) => ({ default: mod.CwmCamOff })),
+  "cwm-cam-on": () => import("@/registry/icons/plugins/code-with-me/cwm-cam-on").then((mod) => ({ default: mod.CwmCamOn })),
+  "cwm-disable-call": () => import("@/registry/icons/plugins/code-with-me/cwm-disable-call").then((mod) => ({ default: mod.CwmDisableCall })),
+  "cwm-enable-call": () => import("@/registry/icons/plugins/code-with-me/cwm-enable-call").then((mod) => ({ default: mod.CwmEnableCall })),
+  "cwm-icon-modificator": () => import("@/registry/icons/plugins/code-with-me/cwm-icon-modificator").then((mod) => ({ default: mod.CwmIconModificator })),
+  "cwm-icon-modificator-menu": () => import("@/registry/icons/plugins/code-with-me/cwm-icon-modificator-menu").then((mod) => ({ default: mod.CwmIconModificatorMenu })),
+  "cwm-invite": () => import("@/registry/icons/plugins/code-with-me/cwm-invite").then((mod) => ({ default: mod.CwmInvite })),
+  "cwm-mic-avatar-off": () => import("@/registry/icons/plugins/code-with-me/cwm-mic-avatar-off").then((mod) => ({ default: mod.CwmMicAvatarOff })),
+  "cwm-mic-avatar-on": () => import("@/registry/icons/plugins/code-with-me/cwm-mic-avatar-on").then((mod) => ({ default: mod.CwmMicAvatarOn })),
+  "cwm-mic-off": () => import("@/registry/icons/plugins/code-with-me/cwm-mic-off").then((mod) => ({ default: mod.CwmMicOff })),
+  "cwm-mic-on": () => import("@/registry/icons/plugins/code-with-me/cwm-mic-on").then((mod) => ({ default: mod.CwmMicOn })),
+  "cwm-permission-edit": () => import("@/registry/icons/plugins/code-with-me/cwm-permission-edit").then((mod) => ({ default: mod.CwmPermissionEdit })),
+  "cwm-permission-full": () => import("@/registry/icons/plugins/code-with-me/cwm-permission-full").then((mod) => ({ default: mod.CwmPermissionFull })),
+  "cwm-permission-view": () => import("@/registry/icons/plugins/code-with-me/cwm-permission-view").then((mod) => ({ default: mod.CwmPermissionView })),
+  "cwm-permissions": () => import("@/registry/icons/plugins/code-with-me/cwm-permissions").then((mod) => ({ default: mod.CwmPermissions })),
+  "cwm-permissions-denied": () => import("@/registry/icons/plugins/code-with-me/cwm-permissions-denied").then((mod) => ({ default: mod.CwmPermissionsDenied })),
+  "cwm-permissions-granted": () => import("@/registry/icons/plugins/code-with-me/cwm-permissions-granted").then((mod) => ({ default: mod.CwmPermissionsGranted })),
+  "cwm-screen-in-browser-off": () => import("@/registry/icons/plugins/code-with-me/cwm-screen-in-browser-off").then((mod) => ({ default: mod.CwmScreenInBrowserOff })),
+  "cwm-screen-in-browser-on": () => import("@/registry/icons/plugins/code-with-me/cwm-screen-in-browser-on").then((mod) => ({ default: mod.CwmScreenInBrowserOn })),
+  "cwm-screen-off": () => import("@/registry/icons/plugins/code-with-me/cwm-screen-off").then((mod) => ({ default: mod.CwmScreenOff })),
+  "cwm-screen-on": () => import("@/registry/icons/plugins/code-with-me/cwm-screen-on").then((mod) => ({ default: mod.CwmScreenOn })),
+  "cwm-share": () => import("@/registry/icons/plugins/code-with-me/cwm-share").then((mod) => ({ default: mod.CwmShare })),
+  "cwm-users": () => import("@/registry/icons/general/tool-windows/cwm-users").then((mod) => ({ default: mod.CwmUsers })),
+  "cwm-verified": () => import("@/registry/icons/plugins/code-with-me/cwm-verified").then((mod) => ({ default: mod.CwmVerified })),
+  "cypress": () => import("@/registry/icons/general/tool-windows/cypress").then((mod) => ({ default: mod.Cypress })),
+  "cython-file": () => import("@/registry/icons/file-types/cython-file").then((mod) => ({ default: mod.CythonFile })),
+  "daemon-set": () => import("@/registry/icons/plugins/kubernetes/daemon-set").then((mod) => ({ default: mod.DaemonSet })),
+  "dark-theme": () => import("@/registry/icons/general/new-ui/dark-theme").then((mod) => ({ default: mod.DarkTheme })),
+  "dark-theme-selected": () => import("@/registry/icons/general/new-ui/dark-theme-selected").then((mod) => ({ default: mod.DarkThemeSelected })),
+  "dart": () => import("@/registry/icons/plugins/dart/dart").then((mod) => ({ default: mod.Dart })),
+  "dart-remote": () => import("@/registry/icons/plugins/dart/dart-remote").then((mod) => ({ default: mod.DartRemote })),
+  "dart-test": () => import("@/registry/icons/plugins/dart/dart-test").then((mod) => ({ default: mod.DartTest })),
+  "dart-web": () => import("@/registry/icons/plugins/dart/dart-web").then((mod) => ({ default: mod.DartWeb })),
+  "data-column": () => import("@/registry/icons/nodes/data-column").then((mod) => ({ default: mod.DataColumn })),
+  "data-file": () => import("@/registry/icons/database/data-file").then((mod) => ({ default: mod.DataFile })),
+  "data-model": () => import("@/registry/icons/plugins/jpa/data-model").then((mod) => ({ default: mod.DataModel })),
+  "data-share": () => import("@/registry/icons/database/data-share").then((mod) => ({ default: mod.DataShare })),
+  "data-stores": () => import("@/registry/icons/plugins/jpa/data-stores").then((mod) => ({ default: mod.DataStores })),
+  "data-structure": () => import("@/registry/icons/database/data-structure").then((mod) => ({ default: mod.DataStructure })),
+  "data-structure-key": () => import("@/registry/icons/database/data-structure-key").then((mod) => ({ default: mod.DataStructureKey })),
+  "data-tables": () => import("@/registry/icons/nodes/data-tables").then((mod) => ({ default: mod.DataTables })),
+  "data-view": () => import("@/registry/icons/plugins/jpa/data-view").then((mod) => ({ default: mod.DataView })),
+  "database": () => import("@/registry/icons/database/database").then((mod) => ({ default: mod.Database })),
+  "database-changes": () => import("@/registry/icons/general/tool-windows/database-changes").then((mod) => ({ default: mod.DatabaseChanges })),
+  "database-external": () => import("@/registry/icons/database/database-external").then((mod) => ({ default: mod.DatabaseExternal })),
+  "database-link": () => import("@/registry/icons/database/database-link").then((mod) => ({ default: mod.DatabaseLink })),
+  "database-objects-group": () => import("@/registry/icons/database/database-objects-group").then((mod) => ({ default: mod.DatabaseObjectsGroup })),
+  "database/access-method": () => import("@/registry/icons/database/access-method").then((mod) => ({ default: mod.AccessMethod })),
+  "database/adapter-script": () => import("@/registry/icons/database/adapter-script").then((mod) => ({ default: mod.AdapterScript })),
+  "database/aggregate": () => import("@/registry/icons/database/aggregate").then((mod) => ({ default: mod.Aggregate })),
+  "database/apache": () => import("@/registry/icons/database/apache").then((mod) => ({ default: mod.Apache })),
+  "database/apache-derby": () => import("@/registry/icons/database/apache-derby").then((mod) => ({ default: mod.ApacheDerby })),
+  "database/apache-ignite": () => import("@/registry/icons/database/apache-ignite").then((mod) => ({ default: mod.ApacheIgnite })),
+  "database/apache-phoenix": () => import("@/registry/icons/database/apache-phoenix").then((mod) => ({ default: mod.ApachePhoenix })),
+  "database/argument": () => import("@/registry/icons/database/argument").then((mod) => ({ default: mod.Argument })),
+  "database/athena": () => import("@/registry/icons/database/athena").then((mod) => ({ default: mod.Athena })),
+  "database/azure": () => import("@/registry/icons/database/azure").then((mod) => ({ default: mod.Azure })),
+  "database/big-query": () => import("@/registry/icons/database/big-query").then((mod) => ({ default: mod.BigQuery })),
+  "database/binary-data": () => import("@/registry/icons/database/binary-data").then((mod) => ({ default: mod.BinaryData })),
+  "database/blue-key": () => import("@/registry/icons/database/blue-key").then((mod) => ({ default: mod.BlueKey })),
+  "database/body": () => import("@/registry/icons/database/body").then((mod) => ({ default: mod.Body })),
+  "database/cassandra": () => import("@/registry/icons/database/cassandra").then((mod) => ({ default: mod.Cassandra })),
+  "database/cassandra-file-type": () => import("@/registry/icons/database/cassandra-file-type").then((mod) => ({ default: mod.CassandraFileType })),
+  "database/check-constraint": () => import("@/registry/icons/database/check-constraint").then((mod) => ({ default: mod.CheckConstraint })),
+  "database/click-house": () => import("@/registry/icons/database/click-house").then((mod) => ({ default: mod.ClickHouse })),
+  "database/cockroach-db": () => import("@/registry/icons/database/cockroach-db").then((mod) => ({ default: mod.CockroachDB })),
+  "database/collation": () => import("@/registry/icons/database/collation").then((mod) => ({ default: mod.Collation })),
+  "database/collection": () => import("@/registry/icons/database/collection").then((mod) => ({ default: mod.Collection })),
+  "database/collection-key": () => import("@/registry/icons/database/collection-key").then((mod) => ({ default: mod.CollectionKey })),
+  "database/collection-type": () => import("@/registry/icons/database/collection-type").then((mod) => ({ default: mod.CollectionType })),
+  "database/column": () => import("@/registry/icons/database/column").then((mod) => ({ default: mod.Column })),
+  "database/column-blue-key": () => import("@/registry/icons/database/column-blue-key").then((mod) => ({ default: mod.ColumnBlueKey })),
+  "database/column-blue-key-dot": () => import("@/registry/icons/database/column-blue-key-dot").then((mod) => ({ default: mod.ColumnBlueKeyDot })),
+  "database/column-blue-key-dot-index": () => import("@/registry/icons/database/column-blue-key-dot-index").then((mod) => ({ default: mod.ColumnBlueKeyDotIndex })),
+  "database/column-blue-key-index": () => import("@/registry/icons/database/column-blue-key-index").then((mod) => ({ default: mod.ColumnBlueKeyIndex })),
+  "database/column-dot": () => import("@/registry/icons/database/column-dot").then((mod) => ({ default: mod.ColumnDot })),
+  "database/column-dot-index": () => import("@/registry/icons/database/column-dot-index").then((mod) => ({ default: mod.ColumnDotIndex })),
+  "database/column-filter": () => import("@/registry/icons/database/column-filter").then((mod) => ({ default: mod.ColumnFilter })),
+  "database/column-gold-blue-key": () => import("@/registry/icons/database/column-gold-blue-key").then((mod) => ({ default: mod.ColumnGoldBlueKey })),
+  "database/column-gold-blue-key-dot": () => import("@/registry/icons/database/column-gold-blue-key-dot").then((mod) => ({ default: mod.ColumnGoldBlueKeyDot })),
+  "database/column-gold-blue-key-dot-index": () => import("@/registry/icons/database/column-gold-blue-key-dot-index").then((mod) => ({ default: mod.ColumnGoldBlueKeyDotIndex })),
+  "database/column-gold-blue-key-index": () => import("@/registry/icons/database/column-gold-blue-key-index").then((mod) => ({ default: mod.ColumnGoldBlueKeyIndex })),
+  "database/column-gold-key": () => import("@/registry/icons/database/column-gold-key").then((mod) => ({ default: mod.ColumnGoldKey })),
+  "database/column-gold-key-dot": () => import("@/registry/icons/database/column-gold-key-dot").then((mod) => ({ default: mod.ColumnGoldKeyDot })),
+  "database/column-gold-key-dot-index": () => import("@/registry/icons/database/column-gold-key-dot-index").then((mod) => ({ default: mod.ColumnGoldKeyDotIndex })),
+  "database/column-gold-key-index": () => import("@/registry/icons/database/column-gold-key-index").then((mod) => ({ default: mod.ColumnGoldKeyIndex })),
+  "database/column-grey-key": () => import("@/registry/icons/database/column-grey-key").then((mod) => ({ default: mod.ColumnGreyKey })),
+  "database/column-index": () => import("@/registry/icons/database/column-index").then((mod) => ({ default: mod.ColumnIndex })),
+  "database/commit": () => import("@/registry/icons/database/commit").then((mod) => ({ default: mod.Commit })),
+  "database/connector": () => import("@/registry/icons/database/connector").then((mod) => ({ default: mod.Connector })),
+  "database/console-run": () => import("@/registry/icons/database/console-run").then((mod) => ({ default: mod.ConsoleRun })),
+  "database/console-show-plan": () => import("@/registry/icons/database/console-show-plan").then((mod) => ({ default: mod.ConsoleShowPlan })),
+  "database/couchbase": () => import("@/registry/icons/database/couchbase").then((mod) => ({ default: mod.Couchbase })),
+  "database/data-file": () => import("@/registry/icons/database/data-file").then((mod) => ({ default: mod.DataFile })),
+  "database/data-schema": () => import("@/registry/icons/database/data-schema").then((mod) => ({ default: mod.DataSchema })),
+  "database/data-share": () => import("@/registry/icons/database/data-share").then((mod) => ({ default: mod.DataShare })),
+  "database/data-structure": () => import("@/registry/icons/database/data-structure").then((mod) => ({ default: mod.DataStructure })),
+  "database/data-structure-key": () => import("@/registry/icons/database/data-structure-key").then((mod) => ({ default: mod.DataStructureKey })),
+  "database/database": () => import("@/registry/icons/database/database").then((mod) => ({ default: mod.Database })),
+  "database/database-external": () => import("@/registry/icons/database/database-external").then((mod) => ({ default: mod.DatabaseExternal })),
+  "database/database-link": () => import("@/registry/icons/database/database-link").then((mod) => ({ default: mod.DatabaseLink })),
+  "database/database-objects-group": () => import("@/registry/icons/database/database-objects-group").then((mod) => ({ default: mod.DatabaseObjectsGroup })),
+  "database/databricks": () => import("@/registry/icons/database/databricks").then((mod) => ({ default: mod.Databricks })),
+  "database/db-index": () => import("@/registry/icons/database/db-index").then((mod) => ({ default: mod.Index })),
+  "database/db2": () => import("@/registry/icons/database/db2").then((mod) => ({ default: mod.Db2 })),
+  "database/ddl-data-source-overlay": () => import("@/registry/icons/database/ddl-data-source-overlay").then((mod) => ({ default: mod.DdlDataSourceOverlay })),
+  "database/ddl-dbms": () => import("@/registry/icons/database/ddl-dbms").then((mod) => ({ default: mod.DdlDbms })),
+  "database/default-constraint": () => import("@/registry/icons/database/default-constraint").then((mod) => ({ default: mod.DefaultConstraint })),
+  "database/denodo": () => import("@/registry/icons/database/denodo").then((mod) => ({ default: mod.Denodo })),
+  "database/document-db": () => import("@/registry/icons/database/document-db").then((mod) => ({ default: mod.DocumentDB })),
+  "database/duck-db": () => import("@/registry/icons/database/duck-db").then((mod) => ({ default: mod.DuckDB })),
+  "database/dynamo-db": () => import("@/registry/icons/database/dynamo-db").then((mod) => ({ default: mod.DynamoDB })),
+  "database/edit-data": () => import("@/registry/icons/database/edit-data").then((mod) => ({ default: mod.EditData })),
+  "database/editor-output": () => import("@/registry/icons/database/editor-output").then((mod) => ({ default: mod.EditorOutput })),
+  "database/elasticsearch": () => import("@/registry/icons/database/elasticsearch").then((mod) => ({ default: mod.Elasticsearch })),
+  "database/exasol": () => import("@/registry/icons/database/exasol").then((mod) => ({ default: mod.Exasol })),
+  "database/extension": () => import("@/registry/icons/database/extension").then((mod) => ({ default: mod.Extension })),
+  "database/external-schema": () => import("@/registry/icons/database/external-schema").then((mod) => ({ default: mod.ExternalSchema })),
+  "database/file-format": () => import("@/registry/icons/database/file-format").then((mod) => ({ default: mod.FileFormat })),
+  "database/firebird": () => import("@/registry/icons/database/firebird").then((mod) => ({ default: mod.Firebird })),
+  "database/foreign-datawrapper": () => import("@/registry/icons/database/foreign-datawrapper").then((mod) => ({ default: mod.ForeignDatawrapper })),
+  "database/foreign-partion-table": () => import("@/registry/icons/database/foreign-partion-table").then((mod) => ({ default: mod.ForeignPartionTable })),
+  "database/foreign-server": () => import("@/registry/icons/database/foreign-server").then((mod) => ({ default: mod.ForeignServer })),
+  "database/foreign-table": () => import("@/registry/icons/database/foreign-table").then((mod) => ({ default: mod.ForeignTable })),
+  "database/function": () => import("@/registry/icons/database/function").then((mod) => ({ default: mod.Function })),
+  "database/function-external": () => import("@/registry/icons/database/function-external").then((mod) => ({ default: mod.FunctionExternal })),
+  "database/function-run": () => import("@/registry/icons/database/function-run").then((mod) => ({ default: mod.FunctionRun })),
+  "database/go-to-table": () => import("@/registry/icons/database/go-to-table").then((mod) => ({ default: mod.GoToTable })),
+  "database/gold-key": () => import("@/registry/icons/database/gold-key").then((mod) => ({ default: mod.GoldKey })),
+  "database/google-cloud-dataproc": () => import("@/registry/icons/database/google-cloud-dataproc").then((mod) => ({ default: mod.GoogleCloudDataproc })),
+  "database/google-cloud-spanner": () => import("@/registry/icons/database/google-cloud-spanner").then((mod) => ({ default: mod.GoogleCloudSpanner })),
+  "database/greenplum": () => import("@/registry/icons/database/greenplum").then((mod) => ({ default: mod.Greenplum })),
+  "database/grey-key": () => import("@/registry/icons/database/grey-key").then((mod) => ({ default: mod.GreyKey })),
+  "database/h2": () => import("@/registry/icons/database/h2").then((mod) => ({ default: mod.H2 })),
+  "database/hana": () => import("@/registry/icons/database/hana").then((mod) => ({ default: mod.Hana })),
+  "database/hash-cluster": () => import("@/registry/icons/database/hash-cluster").then((mod) => ({ default: mod.HashCluster })),
+  "database/hash-table": () => import("@/registry/icons/database/hash-table").then((mod) => ({ default: mod.HashTable })),
+  "database/hash-table-key": () => import("@/registry/icons/database/hash-table-key").then((mod) => ({ default: mod.HashTableKey })),
+  "database/hive": () => import("@/registry/icons/database/hive").then((mod) => ({ default: mod.Hive })),
+  "database/hive-file-type": () => import("@/registry/icons/database/hive-file-type").then((mod) => ({ default: mod.HiveFileType })),
+  "database/hsqldb": () => import("@/registry/icons/database/hsqldb").then((mod) => ({ default: mod.Hsqldb })),
+  "database/ibm": () => import("@/registry/icons/database/ibm").then((mod) => ({ default: mod.Ibm })),
+  "database/impala": () => import("@/registry/icons/database/impala").then((mod) => ({ default: mod.Impala })),
+  "database/index-cluster": () => import("@/registry/icons/database/index-cluster").then((mod) => ({ default: mod.IndexCluster })),
+  "database/index-fun": () => import("@/registry/icons/database/index-fun").then((mod) => ({ default: mod.IndexFun })),
+  "database/index-fun-unique": () => import("@/registry/icons/database/index-fun-unique").then((mod) => ({ default: mod.IndexFunUnique })),
+  "database/index-icon": () => import("@/registry/icons/database/index-icon").then((mod) => ({ default: mod.Index })),
+  "database/index-unique": () => import("@/registry/icons/database/index-unique").then((mod) => ({ default: mod.IndexUnique })),
+  "database/informix": () => import("@/registry/icons/database/informix").then((mod) => ({ default: mod.Informix })),
+  "database/intersystem-cache": () => import("@/registry/icons/database/intersystem-cache").then((mod) => ({ default: mod.IntersystemCache })),
+  "database/json-document": () => import("@/registry/icons/database/json-document").then((mod) => ({ default: mod.JsonDocument })),
+  "database/json-document-key": () => import("@/registry/icons/database/json-document-key").then((mod) => ({ default: mod.JsonDocumentKey })),
+  "database/kill-data-source-process": () => import("@/registry/icons/database/kill-data-source-process").then((mod) => ({ default: mod.KillDataSourceProcess })),
+  "database/level-auto": () => import("@/registry/icons/database/level-auto").then((mod) => ({ default: mod.LevelAuto })),
+  "database/level-one-declared": () => import("@/registry/icons/database/level-one-declared").then((mod) => ({ default: mod.LevelOneDeclared })),
+  "database/level-one-details": () => import("@/registry/icons/database/level-one-details").then((mod) => ({ default: mod.LevelOneDetails })),
+  "database/level-one-inherited": () => import("@/registry/icons/database/level-one-inherited").then((mod) => ({ default: mod.LevelOneInherited })),
+  "database/level-three-declared": () => import("@/registry/icons/database/level-three-declared").then((mod) => ({ default: mod.LevelThreeDeclared })),
+  "database/level-three-details": () => import("@/registry/icons/database/level-three-details").then((mod) => ({ default: mod.LevelThreeDetails })),
+  "database/level-three-inherited": () => import("@/registry/icons/database/level-three-inherited").then((mod) => ({ default: mod.LevelThreeInherited })),
+  "database/level-two-declared": () => import("@/registry/icons/database/level-two-declared").then((mod) => ({ default: mod.LevelTwoDeclared })),
+  "database/level-two-details": () => import("@/registry/icons/database/level-two-details").then((mod) => ({ default: mod.LevelTwoDetails })),
+  "database/level-two-inherited": () => import("@/registry/icons/database/level-two-inherited").then((mod) => ({ default: mod.LevelTwoInherited })),
+  "database/list": () => import("@/registry/icons/database/list").then((mod) => ({ default: mod.List })),
+  "database/list-key": () => import("@/registry/icons/database/list-key").then((mod) => ({ default: mod.ListKey })),
+  "database/locked": () => import("@/registry/icons/database/locked").then((mod) => ({ default: mod.Locked })),
+  "database/macro": () => import("@/registry/icons/database/macro").then((mod) => ({ default: mod.Macro })),
+  "database/manage-data-sources": () => import("@/registry/icons/database/manage-data-sources").then((mod) => ({ default: mod.ManageDataSources })),
+  "database/mariadb": () => import("@/registry/icons/database/mariadb").then((mod) => ({ default: mod.Mariadb })),
+  "database/materialized-log": () => import("@/registry/icons/database/materialized-log").then((mod) => ({ default: mod.MaterializedLog })),
+  "database/materialized-view": () => import("@/registry/icons/database/materialized-view").then((mod) => ({ default: mod.MaterializedView })),
+  "database/microsoft": () => import("@/registry/icons/database/microsoft").then((mod) => ({ default: mod.Microsoft })),
+  "database/mimer-sql": () => import("@/registry/icons/database/mimer-sql").then((mod) => ({ default: mod.MimerSQL })),
+  "database/mongo-db": () => import("@/registry/icons/database/mongo-db").then((mod) => ({ default: mod.MongoDB })),
+  "database/mongo-field": () => import("@/registry/icons/database/mongo-field").then((mod) => ({ default: mod.MongoField })),
+  "database/mongo-field-gold-key": () => import("@/registry/icons/database/mongo-field-gold-key").then((mod) => ({ default: mod.MongoFieldGoldKey })),
+  "database/mysql": () => import("@/registry/icons/database/mysql").then((mod) => ({ default: mod.Mysql })),
+  "database/netezza": () => import("@/registry/icons/database/netezza").then((mod) => ({ default: mod.Netezza })),
+  "database/object-group": () => import("@/registry/icons/database/object-group").then((mod) => ({ default: mod.ObjectGroup })),
+  "database/object-type-attribute": () => import("@/registry/icons/database/object-type-attribute").then((mod) => ({ default: mod.ObjectTypeAttribute })),
+  "database/openedge": () => import("@/registry/icons/database/openedge").then((mod) => ({ default: mod.Openedge })),
+  "database/operator": () => import("@/registry/icons/database/operator").then((mod) => ({ default: mod.Operator })),
+  "database/operator-class": () => import("@/registry/icons/database/operator-class").then((mod) => ({ default: mod.OperatorClass })),
+  "database/operator-family": () => import("@/registry/icons/database/operator-family").then((mod) => ({ default: mod.OperatorFamily })),
+  "database/oracle": () => import("@/registry/icons/database/oracle").then((mod) => ({ default: mod.Oracle })),
+  "database/package": () => import("@/registry/icons/database/package").then((mod) => ({ default: mod.Package })),
+  "database/partion": () => import("@/registry/icons/database/partion").then((mod) => ({ default: mod.Partion })),
+  "database/partion-table": () => import("@/registry/icons/database/partion-table").then((mod) => ({ default: mod.PartionTable })),
+  "database/pin": () => import("@/registry/icons/database/pin").then((mod) => ({ default: mod.Pin })),
+  "database/pin-hovered": () => import("@/registry/icons/database/pin-hovered").then((mod) => ({ default: mod.PinHovered })),
+  "database/pin-selected": () => import("@/registry/icons/database/pin-selected").then((mod) => ({ default: mod.PinSelected })),
+  "database/pin-selected-hovered": () => import("@/registry/icons/database/pin-selected-hovered").then((mod) => ({ default: mod.PinSelectedHovered })),
+  "database/postgresql": () => import("@/registry/icons/database/postgresql").then((mod) => ({ default: mod.Postgresql })),
+  "database/presto": () => import("@/registry/icons/database/presto").then((mod) => ({ default: mod.Presto })),
+  "database/preview-changes": () => import("@/registry/icons/database/preview-changes").then((mod) => ({ default: mod.PreviewChanges })),
+  "database/procedure": () => import("@/registry/icons/database/procedure").then((mod) => ({ default: mod.Procedure })),
+  "database/procedure-group": () => import("@/registry/icons/database/procedure-group").then((mod) => ({ default: mod.ProcedureGroup })),
+  "database/procedure-run": () => import("@/registry/icons/database/procedure-run").then((mod) => ({ default: mod.ProcedureRun })),
+  "database/projection": () => import("@/registry/icons/database/projection").then((mod) => ({ default: mod.Projection })),
+  "database/redis": () => import("@/registry/icons/database/redis").then((mod) => ({ default: mod.Redis })),
+  "database/redis-file-type": () => import("@/registry/icons/database/redis-file-type").then((mod) => ({ default: mod.RedisFileType })),
+  "database/redshift": () => import("@/registry/icons/database/redshift").then((mod) => ({ default: mod.Redshift })),
+  "database/refresh-materialized-view": () => import("@/registry/icons/database/refresh-materialized-view").then((mod) => ({ default: mod.RefreshMaterializedView })),
+  "database/reset": () => import("@/registry/icons/database/reset").then((mod) => ({ default: mod.Reset })),
+  "database/role": () => import("@/registry/icons/database/role").then((mod) => ({ default: mod.Role })),
+  "database/rollback": () => import("@/registry/icons/database/rollback").then((mod) => ({ default: mod.Rollback })),
+  "database/routine": () => import("@/registry/icons/database/routine").then((mod) => ({ default: mod.Routine })),
+  "database/run-database-script": () => import("@/registry/icons/database/run-database-script").then((mod) => ({ default: mod.RunDatabaseScript })),
+  "database/scheduled-event": () => import("@/registry/icons/database/scheduled-event").then((mod) => ({ default: mod.ScheduledEvent })),
+  "database/schema": () => import("@/registry/icons/database/schema").then((mod) => ({ default: mod.Schema })),
+  "database/scripting-script": () => import("@/registry/icons/database/scripting-script").then((mod) => ({ default: mod.ScriptingScript })),
+  "database/scroll-down": () => import("@/registry/icons/database/scroll-down").then((mod) => ({ default: mod.ScrollDown })),
+  "database/scroll-up": () => import("@/registry/icons/database/scroll-up").then((mod) => ({ default: mod.ScrollUp })),
+  "database/sequence": () => import("@/registry/icons/database/sequence").then((mod) => ({ default: mod.Sequence })),
+  "database/server-objects-group": () => import("@/registry/icons/database/server-objects-group").then((mod) => ({ default: mod.ServerObjectsGroup })),
+  "database/set": () => import("@/registry/icons/database/set").then((mod) => ({ default: mod.Set })),
+  "database/set-key": () => import("@/registry/icons/database/set-key").then((mod) => ({ default: mod.SetKey })),
+  "database/single-record-view": () => import("@/registry/icons/database/single-record-view").then((mod) => ({ default: mod.SingleRecordView })),
+  "database/singlestore": () => import("@/registry/icons/database/singlestore").then((mod) => ({ default: mod.Singlestore })),
+  "database/snowflake": () => import("@/registry/icons/database/snowflake").then((mod) => ({ default: mod.Snowflake })),
+  "database/sorted-set": () => import("@/registry/icons/database/sorted-set").then((mod) => ({ default: mod.SortedSet })),
+  "database/sorted-set-key": () => import("@/registry/icons/database/sorted-set-key").then((mod) => ({ default: mod.SortedSetKey })),
+  "database/spark": () => import("@/registry/icons/database/spark").then((mod) => ({ default: mod.Spark })),
+  "database/sql-server": () => import("@/registry/icons/database/sql-server").then((mod) => ({ default: mod.SqlServer })),
+  "database/sqldmlstatement": () => import("@/registry/icons/database/sqldmlstatement").then((mod) => ({ default: mod.SQLDMLStatement })),
+  "database/sqlgroup-by-type": () => import("@/registry/icons/database/sqlgroup-by-type").then((mod) => ({ default: mod.SQLGroupByType })),
+  "database/sqlite": () => import("@/registry/icons/database/sqlite").then((mod) => ({ default: mod.Sqlite })),
+  "database/sqlother-statement": () => import("@/registry/icons/database/sqlother-statement").then((mod) => ({ default: mod.SQLOtherStatement })),
+  "database/sqlselect-statement": () => import("@/registry/icons/database/sqlselect-statement").then((mod) => ({ default: mod.SQLSelectStatement })),
+  "database/stream": () => import("@/registry/icons/database/stream").then((mod) => ({ default: mod.Stream })),
+  "database/stream-key": () => import("@/registry/icons/database/stream-key").then((mod) => ({ default: mod.StreamKey })),
+  "database/string": () => import("@/registry/icons/database/string").then((mod) => ({ default: mod.String })),
+  "database/string-key": () => import("@/registry/icons/database/string-key").then((mod) => ({ default: mod.StringKey })),
+  "database/submit-db": () => import("@/registry/icons/database/submit-db").then((mod) => ({ default: mod.SubmitDB })),
+  "database/sun": () => import("@/registry/icons/database/sun").then((mod) => ({ default: mod.Sun })),
+  "database/sybase": () => import("@/registry/icons/database/sybase").then((mod) => ({ default: mod.Sybase })),
+  "database/synonym": () => import("@/registry/icons/database/synonym").then((mod) => ({ default: mod.Synonym })),
+  "database/t-sqlt": () => import("@/registry/icons/database/t-sqlt").then((mod) => ({ default: mod.TSQLt })),
+  "database/table": () => import("@/registry/icons/database/table").then((mod) => ({ default: mod.Table })),
+  "database/table-heatmap": () => import("@/registry/icons/database/table-heatmap").then((mod) => ({ default: mod.TableHeatmap })),
+  "database/table-mapping": () => import("@/registry/icons/database/table-mapping").then((mod) => ({ default: mod.TableMapping })),
+  "database/tablespace": () => import("@/registry/icons/database/tablespace").then((mod) => ({ default: mod.Tablespace })),
+  "database/tarantool": () => import("@/registry/icons/database/tarantool").then((mod) => ({ default: mod.Tarantool })),
+  "database/teradata": () => import("@/registry/icons/database/teradata").then((mod) => ({ default: mod.Teradata })),
+  "database/text-auto-generate": () => import("@/registry/icons/database/text-auto-generate").then((mod) => ({ default: mod.TextAutoGenerate })),
+  "database/tibero": () => import("@/registry/icons/database/tibero").then((mod) => ({ default: mod.Tibero })),
+  "database/tidb": () => import("@/registry/icons/database/tidb").then((mod) => ({ default: mod.Tidb })),
+  "database/trigger": () => import("@/registry/icons/database/trigger").then((mod) => ({ default: mod.Trigger })),
+  "database/trino": () => import("@/registry/icons/database/trino").then((mod) => ({ default: mod.Trino })),
+  "database/udfscript": () => import("@/registry/icons/database/udfscript").then((mod) => ({ default: mod.UDFScript })),
+  "database/unspecified-cluster": () => import("@/registry/icons/database/unspecified-cluster").then((mod) => ({ default: mod.UnspecifiedCluster })),
+  "database/user": () => import("@/registry/icons/database/user").then((mod) => ({ default: mod.User })),
+  "database/user-driver": () => import("@/registry/icons/database/user-driver").then((mod) => ({ default: mod.UserDriver })),
+  "database/user-group": () => import("@/registry/icons/database/user-group").then((mod) => ({ default: mod.UserGroup })),
+  "database/user-mapping": () => import("@/registry/icons/database/user-mapping").then((mod) => ({ default: mod.UserMapping })),
+  "database/ut-plsql": () => import("@/registry/icons/database/ut-plsql").then((mod) => ({ default: mod.UtPLSQL })),
+  "database/vertica": () => import("@/registry/icons/database/vertica").then((mod) => ({ default: mod.Vertica })),
+  "database/view-parameters": () => import("@/registry/icons/database/view-parameters").then((mod) => ({ default: mod.ViewParameters })),
+  "database/virtual-column": () => import("@/registry/icons/database/virtual-column").then((mod) => ({ default: mod.VirtualColumn })),
+  "database/virtual-folder": () => import("@/registry/icons/database/virtual-folder").then((mod) => ({ default: mod.VirtualFolder })),
+  "database/virtual-key": () => import("@/registry/icons/database/virtual-key").then((mod) => ({ default: mod.VirtualKey })),
+  "database/virtual-view": () => import("@/registry/icons/database/virtual-view").then((mod) => ({ default: mod.VirtualView })),
+  "database/warehouse": () => import("@/registry/icons/database/warehouse").then((mod) => ({ default: mod.Warehouse })),
+  "database/yugabyte": () => import("@/registry/icons/database/yugabyte").then((mod) => ({ default: mod.Yugabyte })),
+  "databricks": () => import("@/registry/icons/database/databricks").then((mod) => ({ default: mod.Databricks })),
+  "databricks-tool-window": () => import("@/registry/icons/general/tool-windows/databricks-tool-window").then((mod) => ({ default: mod.DatabricksToolWindow })),
+  "dataproc-tool-window": () => import("@/registry/icons/general/tool-windows/dataproc-tool-window").then((mod) => ({ default: mod.DataprocToolWindow })),
+  "db-array": () => import("@/registry/icons/debugger/db-array").then((mod) => ({ default: mod.DbArray })),
+  "db-changelog": () => import("@/registry/icons/plugins/jpa/db-changelog").then((mod) => ({ default: mod.DbChangelog })),
+  "db-hash": () => import("@/registry/icons/plugins/ruby/db-hash").then((mod) => ({ default: mod.DbHash })),
+  "db-index": () => import("@/registry/icons/database/db-index").then((mod) => ({ default: mod.Index })),
+  "db-primitive": () => import("@/registry/icons/debugger/db-primitive").then((mod) => ({ default: mod.DbPrimitive })),
+  "db2": () => import("@/registry/icons/database/db2").then((mod) => ({ default: mod.Db2 })),
+  "dbms": () => import("@/registry/icons/general/tool-windows/dbms").then((mod) => ({ default: mod.Dbms })),
+  "dbt-utility": () => import("@/registry/icons/plugins/bdt/dbt-utility").then((mod) => ({ default: mod.DbtUtility })),
+  "ddl-data-source-overlay": () => import("@/registry/icons/database/ddl-data-source-overlay").then((mod) => ({ default: mod.DdlDataSourceOverlay })),
+  "ddl-dbms": () => import("@/registry/icons/database/ddl-dbms").then((mod) => ({ default: mod.DdlDbms })),
+  "ddl-scripts": () => import("@/registry/icons/plugins/jpa/ddl-scripts").then((mod) => ({ default: mod.DdlScripts })),
+  "debug-target-computer": () => import("@/registry/icons/plugins/cidr/debug-target-computer").then((mod) => ({ default: mod.DebugTargetComputer })),
+  "debug-target-controller": () => import("@/registry/icons/plugins/cidr/debug-target-controller").then((mod) => ({ default: mod.DebugTargetController })),
+  "debug-with-telepresence": () => import("@/registry/icons/plugins/kubernetes/debug-with-telepresence").then((mod) => ({ default: mod.DebugWithTelepresence })),
+  "debugger/add-to-watch": () => import("@/registry/icons/debugger/add-to-watch").then((mod) => ({ default: mod.AddToWatch })),
+  "debugger/class-level-watch": () => import("@/registry/icons/debugger/class-level-watch").then((mod) => ({ default: mod.ClassLevelWatch })),
+  "debugger/db-array": () => import("@/registry/icons/debugger/db-array").then((mod) => ({ default: mod.DbArray })),
+  "debugger/db-primitive": () => import("@/registry/icons/debugger/db-primitive").then((mod) => ({ default: mod.DbPrimitive })),
+  "debugger/evaluation-result": () => import("@/registry/icons/debugger/evaluation-result").then((mod) => ({ default: mod.EvaluationResult })),
+  "debugger/frame": () => import("@/registry/icons/debugger/frame").then((mod) => ({ default: mod.Frame })),
+  "debugger/prompt-input": () => import("@/registry/icons/debugger/prompt-input").then((mod) => ({ default: mod.PromptInput })),
+  "debugger/prompt-input-history": () => import("@/registry/icons/debugger/prompt-input-history").then((mod) => ({ default: mod.PromptInputHistory })),
+  "debugger/self-reference": () => import("@/registry/icons/debugger/self-reference").then((mod) => ({ default: mod.SelfReference })),
+  "debugger/thread-at-breakpoint": () => import("@/registry/icons/debugger/thread-at-breakpoint").then((mod) => ({ default: mod.ThreadAtBreakpoint })),
+  "debugger/thread-current": () => import("@/registry/icons/debugger/thread-current").then((mod) => ({ default: mod.ThreadCurrent })),
+  "debugger/thread-frozen": () => import("@/registry/icons/debugger/thread-frozen").then((mod) => ({ default: mod.ThreadFrozen })),
+  "debugger/thread-group-current": () => import("@/registry/icons/debugger/thread-group-current").then((mod) => ({ default: mod.ThreadGroupCurrent })),
+  "debugger/thread-running": () => import("@/registry/icons/debugger/thread-running").then((mod) => ({ default: mod.ThreadRunning })),
+  "debugger/threads": () => import("@/registry/icons/debugger/threads").then((mod) => ({ default: mod.Threads })),
+  "debugger/value": () => import("@/registry/icons/debugger/value").then((mod) => ({ default: mod.Value })),
+  "debugger/variables-tab": () => import("@/registry/icons/debugger/variables-tab").then((mod) => ({ default: mod.VariablesTab })),
+  "debugger/watch-last-return-value": () => import("@/registry/icons/debugger/watch-last-return-value").then((mod) => ({ default: mod.WatchLastReturnValue })),
+  "decorator": () => import("@/registry/icons/plugins/java-ee/decorator").then((mod) => ({ default: mod.Decorator })),
+  "default-constraint": () => import("@/registry/icons/database/default-constraint").then((mod) => ({ default: mod.DefaultConstraint })),
+  "deno": () => import("@/registry/icons/file-types/deno").then((mod) => ({ default: mod.Deno })),
+  "denodo": () => import("@/registry/icons/database/denodo").then((mod) => ({ default: mod.Denodo })),
+  "dependency": () => import("@/registry/icons/plugins/cidr/dependency").then((mod) => ({ default: mod.Dependency })),
+  "dependency-analyzer": () => import("@/registry/icons/build/dependency-analyzer").then((mod) => ({ default: mod.DependencyAnalyzer })),
+  "deploy": () => import("@/registry/icons/general/actions/deploy").then((mod) => ({ default: mod.Deploy })),
+  "deployment": () => import("@/registry/icons/plugins/kubernetes/deployment").then((mod) => ({ default: mod.Deployment })),
+  "deployments": () => import("@/registry/icons/plugins/java-ee/deployments").then((mod) => ({ default: mod.Deployments })),
+  "desktop": () => import("@/registry/icons/nodes/desktop").then((mod) => ({ default: mod.Desktop })),
+  "dev-containers": () => import("@/registry/icons/plugins/dev-containers/dev-containers").then((mod) => ({ default: mod.DevContainers })),
+  "diagram": () => import("@/registry/icons/file-types/diagram").then((mod) => ({ default: mod.Diagram })),
+  "diagram-diff": () => import("@/registry/icons/general/actions/diagram-diff").then((mod) => ({ default: mod.DiagramDiff })),
+  "dictionary": () => import("@/registry/icons/file-types/dictionary").then((mod) => ({ default: mod.Dictionary })),
+  "diff": () => import("@/registry/icons/vcs/diff").then((mod) => ({ default: mod.Diff })),
+  "diff-liquibase-changelog": () => import("@/registry/icons/plugins/jpa/diff-liquibase-changelog").then((mod) => ({ default: mod.DiffLiquibaseChangelog })),
+  "diff-plugin-logo": () => import("@/registry/icons/plugins/jpa/diff-plugin-logo").then((mod) => ({ default: mod.DiffPluginLogo })),
+  "diff-with-clipboard": () => import("@/registry/icons/general/actions/diff-with-clipboard").then((mod) => ({ default: mod.DiffWithClipboard })),
+  "disable-editing": () => import("@/registry/icons/vcs/disable-editing").then((mod) => ({ default: mod.DisableEditing })),
+  "dislike": () => import("@/registry/icons/general/ai-assistant/dislike").then((mod) => ({ default: mod.Dislike })),
+  "dislike-selected": () => import("@/registry/icons/general/ai-assistant/dislike-selected").then((mod) => ({ default: mod.DislikeSelected })),
+  "doc-test": () => import("@/registry/icons/plugins/cidr/doc-test").then((mod) => ({ default: mod.DocTest })),
+  "docker": () => import("@/registry/icons/plugins/docker/docker").then((mod) => ({ default: mod.Docker })),
+  "docker-compose": () => import("@/registry/icons/plugins/docker/docker-compose").then((mod) => ({ default: mod.DockerCompose })),
+  "docker-compose-scaled-service-stopped": () => import("@/registry/icons/plugins/docker/docker-compose-scaled-service-stopped").then((mod) => ({ default: mod.DockerComposeScaledServiceStopped })),
+  "docker-compose-scaled-service-up": () => import("@/registry/icons/plugins/docker/docker-compose-scaled-service-up").then((mod) => ({ default: mod.DockerComposeScaledServiceUp })),
+  "docker-compose-service-stopped": () => import("@/registry/icons/plugins/docker/docker-compose-service-stopped").then((mod) => ({ default: mod.DockerComposeServiceStopped })),
+  "docker-compose-service-up": () => import("@/registry/icons/plugins/docker/docker-compose-service-up").then((mod) => ({ default: mod.DockerComposeServiceUp })),
+  "docker-registry": () => import("@/registry/icons/plugins/docker/docker-registry").then((mod) => ({ default: mod.DockerRegistry })),
+  "document-db": () => import("@/registry/icons/database/document-db").then((mod) => ({ default: mod.DocumentDB })),
+  "documentation": () => import("@/registry/icons/general/tool-windows/documentation").then((mod) => ({ default: mod.Documentation })),
+  "donate": () => import("@/registry/icons/general/tool-windows/donate").then((mod) => ({ default: mod.Donate })),
+  "down": () => import("@/registry/icons/general/general/down").then((mod) => ({ default: mod.Down })),
+  "download": () => import("@/registry/icons/general/general/download").then((mod) => ({ default: mod.Download })),
+  "drop-column": () => import("@/registry/icons/plugins/jpa/drop-column").then((mod) => ({ default: mod.DropColumn })),
+  "drop-constraint": () => import("@/registry/icons/plugins/jpa/drop-constraint").then((mod) => ({ default: mod.DropConstraint })),
+  "drop-index": () => import("@/registry/icons/plugins/jpa/drop-index").then((mod) => ({ default: mod.DropIndex })),
+  "drop-sequence": () => import("@/registry/icons/plugins/jpa/drop-sequence").then((mod) => ({ default: mod.DropSequence })),
+  "drop-table": () => import("@/registry/icons/plugins/jpa/drop-table").then((mod) => ({ default: mod.DropTable })),
+  "dropdown-gutter": () => import("@/registry/icons/editor-icons/dropdown-gutter").then((mod) => ({ default: mod.DropdownGutter })),
+  "dto": () => import("@/registry/icons/plugins/jpa/dto").then((mod) => ({ default: mod.Dto })),
+  "dts": () => import("@/registry/icons/file-types/dts").then((mod) => ({ default: mod.Dts })),
+  "dts-property": () => import("@/registry/icons/file-types/dts-property").then((mod) => ({ default: mod.DtsProperty })),
+  "dts-sub-node": () => import("@/registry/icons/file-types/dts-sub-node").then((mod) => ({ default: mod.DtsSubNode })),
+  "duck-db": () => import("@/registry/icons/database/duck-db").then((mod) => ({ default: mod.DuckDB })),
+  "dump-threads": () => import("@/registry/icons/run/dump-threads").then((mod) => ({ default: mod.DumpThreads })),
+  "dynamo-db": () => import("@/registry/icons/database/dynamo-db").then((mod) => ({ default: mod.DynamoDB })),
+  "eclipse": () => import("@/registry/icons/file-types/eclipse").then((mod) => ({ default: mod.Eclipse })),
+  "edge-mod": () => import("@/registry/icons/plugins/uml/edge-mod").then((mod) => ({ default: mod.EdgeMod })),
+  "edit": () => import("@/registry/icons/general/general/edit").then((mod) => ({ default: mod.Edit })),
+  "edit-data": () => import("@/registry/icons/database/edit-data").then((mod) => ({ default: mod.EditData })),
+  "edit-folder": () => import("@/registry/icons/nodes/edit-folder").then((mod) => ({ default: mod.EditFolder })),
+  "editor-config": () => import("@/registry/icons/file-types/editor-config").then((mod) => ({ default: mod.EditorConfig })),
+  "editor-icons/actual-zoom": () => import("@/registry/icons/editor-icons/actual-zoom").then((mod) => ({ default: mod.ActualZoom })),
+  "editor-icons/back-trace": () => import("@/registry/icons/editor-icons/back-trace").then((mod) => ({ default: mod.BackTrace })),
+  "editor-icons/bookmark": () => import("@/registry/icons/editor-icons/bookmark").then((mod) => ({ default: mod.Bookmark })),
+  "editor-icons/chessboard": () => import("@/registry/icons/editor-icons/chessboard").then((mod) => ({ default: mod.Chessboard })),
+  "editor-icons/collapse-node": () => import("@/registry/icons/editor-icons/collapse-node").then((mod) => ({ default: mod.CollapseNode })),
+  "editor-icons/color-picker": () => import("@/registry/icons/editor-icons/color-picker").then((mod) => ({ default: mod.ColorPicker })),
+  "editor-icons/colors": () => import("@/registry/icons/editor-icons/colors").then((mod) => ({ default: mod.Colors })),
+  "editor-icons/data-schema": () => import("@/registry/icons/editor-icons/data-schema").then((mod) => ({ default: mod.DataSchema })),
+  "editor-icons/dropdown-gutter": () => import("@/registry/icons/editor-icons/dropdown-gutter").then((mod) => ({ default: mod.DropdownGutter })),
+  "editor-icons/editor-only": () => import("@/registry/icons/editor-icons/editor-only").then((mod) => ({ default: mod.EditorOnly })),
+  "editor-icons/editor-preview": () => import("@/registry/icons/editor-icons/editor-preview").then((mod) => ({ default: mod.EditorPreview })),
+  "editor-icons/editor-preview-vertical": () => import("@/registry/icons/editor-icons/editor-preview-vertical").then((mod) => ({ default: mod.EditorPreviewVertical })),
+  "editor-icons/expand-node": () => import("@/registry/icons/editor-icons/expand-node").then((mod) => ({ default: mod.ExpandNode })),
+  "editor-icons/ext-annotation": () => import("@/registry/icons/editor-icons/ext-annotation").then((mod) => ({ default: mod.ExtAnnotation })),
+  "editor-icons/fit-content": () => import("@/registry/icons/editor-icons/fit-content").then((mod) => ({ default: mod.FitContent })),
+  "editor-icons/flame": () => import("@/registry/icons/editor-icons/flame").then((mod) => ({ default: mod.Flame })),
+  "editor-icons/fold": () => import("@/registry/icons/editor-icons/fold").then((mod) => ({ default: mod.Fold })),
+  "editor-icons/fold-bottom": () => import("@/registry/icons/editor-icons/fold-bottom").then((mod) => ({ default: mod.FoldBottom })),
+  "editor-icons/grid": () => import("@/registry/icons/editor-icons/grid").then((mod) => ({ default: mod.Grid })),
+  "editor-icons/implemented-method": () => import("@/registry/icons/editor-icons/implemented-method").then((mod) => ({ default: mod.ImplementedMethod })),
+  "editor-icons/implementing-functional-interface": () => import("@/registry/icons/editor-icons/implementing-functional-interface").then((mod) => ({ default: mod.ImplementingFunctionalInterface })),
+  "editor-icons/implementing-method": () => import("@/registry/icons/editor-icons/implementing-method").then((mod) => ({ default: mod.ImplementingMethod })),
+  "editor-icons/inaly-qarkus": () => import("@/registry/icons/editor-icons/inaly-qarkus").then((mod) => ({ default: mod.InalyQarkus })),
+  "editor-icons/inlay-globe": () => import("@/registry/icons/editor-icons/inlay-globe").then((mod) => ({ default: mod.InlayGlobe })),
+  "editor-icons/inlay-micronaut": () => import("@/registry/icons/editor-icons/inlay-micronaut").then((mod) => ({ default: mod.InlayMicronaut })),
+  "editor-icons/inlay-rename-in-comments": () => import("@/registry/icons/editor-icons/inlay-rename-in-comments").then((mod) => ({ default: mod.InlayRenameInComments })),
+  "editor-icons/inlay-rename-in-comments-active": () => import("@/registry/icons/editor-icons/inlay-rename-in-comments-active").then((mod) => ({ default: mod.InlayRenameInCommentsActive })),
+  "editor-icons/inlay-rename-in-no-code-files": () => import("@/registry/icons/editor-icons/inlay-rename-in-no-code-files").then((mod) => ({ default: mod.InlayRenameInNoCodeFiles })),
+  "editor-icons/inlay-rename-in-no-code-files-active": () => import("@/registry/icons/editor-icons/inlay-rename-in-no-code-files-active").then((mod) => ({ default: mod.InlayRenameInNoCodeFilesActive })),
+  "editor-icons/inlay-secured-shield": () => import("@/registry/icons/editor-icons/inlay-secured-shield").then((mod) => ({ default: mod.InlaySecuredShield })),
+  "editor-icons/inlay-settings": () => import("@/registry/icons/editor-icons/inlay-settings").then((mod) => ({ default: mod.InlaySettings })),
+  "editor-icons/inlay-spring": () => import("@/registry/icons/editor-icons/inlay-spring").then((mod) => ({ default: mod.InlaySpring })),
+  "editor-icons/inlay-web-inspector": () => import("@/registry/icons/editor-icons/inlay-web-inspector").then((mod) => ({ default: mod.InlayWebInspector })),
+  "editor-icons/inspections-eye": () => import("@/registry/icons/editor-icons/inspections-eye").then((mod) => ({ default: mod.InspectionsEye })),
+  "editor-icons/inspections-mixed": () => import("@/registry/icons/editor-icons/inspections-mixed").then((mod) => ({ default: mod.InspectionsMixed })),
+  "editor-icons/inspections-ok": () => import("@/registry/icons/editor-icons/inspections-ok").then((mod) => ({ default: mod.InspectionsOK })),
+  "editor-icons/inspections-okempty": () => import("@/registry/icons/editor-icons/inspections-okempty").then((mod) => ({ default: mod.InspectionsOKEmpty })),
+  "editor-icons/inspections-pause": () => import("@/registry/icons/editor-icons/inspections-pause").then((mod) => ({ default: mod.InspectionsPause })),
+  "editor-icons/inspections-power-save-mode": () => import("@/registry/icons/editor-icons/inspections-power-save-mode").then((mod) => ({ default: mod.InspectionsPowerSaveMode })),
+  "editor-icons/inspections-traffic-off": () => import("@/registry/icons/editor-icons/inspections-traffic-off").then((mod) => ({ default: mod.InspectionsTrafficOff })),
+  "editor-icons/inspections-typos": () => import("@/registry/icons/editor-icons/inspections-typos").then((mod) => ({ default: mod.InspectionsTypos })),
+  "editor-icons/intention-bulb": () => import("@/registry/icons/editor-icons/intention-bulb").then((mod) => ({ default: mod.IntentionBulb })),
+  "editor-icons/intention-bulb-grey": () => import("@/registry/icons/editor-icons/intention-bulb-grey").then((mod) => ({ default: mod.IntentionBulbGrey })),
+  "editor-icons/javadoc-edit": () => import("@/registry/icons/editor-icons/javadoc-edit").then((mod) => ({ default: mod.JavadocEdit })),
+  "editor-icons/javadoc-read": () => import("@/registry/icons/editor-icons/javadoc-read").then((mod) => ({ default: mod.JavadocRead })),
+  "editor-icons/merge-callees": () => import("@/registry/icons/editor-icons/merge-callees").then((mod) => ({ default: mod.MergeCallees })),
+  "editor-icons/mnemonic": () => import("@/registry/icons/editor-icons/mnemonic").then((mod) => ({ default: mod.Mnemonic })),
+  "editor-icons/overriden-method": () => import("@/registry/icons/editor-icons/overriden-method").then((mod) => ({ default: mod.OverridenMethod })),
+  "editor-icons/overriding-method": () => import("@/registry/icons/editor-icons/overriding-method").then((mod) => ({ default: mod.OverridingMethod })),
+  "editor-icons/preview-only": () => import("@/registry/icons/editor-icons/preview-only").then((mod) => ({ default: mod.PreviewOnly })),
+  "editor-icons/quickfix-bulb": () => import("@/registry/icons/editor-icons/quickfix-bulb").then((mod) => ({ default: mod.QuickfixBulb })),
+  "editor-icons/quickfix-off-bulb": () => import("@/registry/icons/editor-icons/quickfix-off-bulb").then((mod) => ({ default: mod.QuickfixOffBulb })),
+  "editor-icons/read-access": () => import("@/registry/icons/editor-icons/read-access").then((mod) => ({ default: mod.ReadAccess })),
+  "editor-icons/rec": () => import("@/registry/icons/editor-icons/rec").then((mod) => ({ default: mod.Rec })),
+  "editor-icons/recursive-method": () => import("@/registry/icons/editor-icons/recursive-method").then((mod) => ({ default: mod.RecursiveMethod })),
+  "editor-icons/rerun": () => import("@/registry/icons/editor-icons/rerun").then((mod) => ({ default: mod.Rerun })),
+  "editor-icons/run": () => import("@/registry/icons/editor-icons/run").then((mod) => ({ default: mod.Run })),
+  "editor-icons/run-error": () => import("@/registry/icons/editor-icons/run-error").then((mod) => ({ default: mod.RunError })),
+  "editor-icons/run-failed": () => import("@/registry/icons/editor-icons/run-failed").then((mod) => ({ default: mod.RunFailed })),
+  "editor-icons/run-success": () => import("@/registry/icons/editor-icons/run-success").then((mod) => ({ default: mod.RunSuccess })),
+  "editor-icons/sharp": () => import("@/registry/icons/editor-icons/sharp").then((mod) => ({ default: mod.Sharp })),
+  "editor-icons/sibling-inherited-method": () => import("@/registry/icons/editor-icons/sibling-inherited-method").then((mod) => ({ default: mod.SiblingInheritedMethod })),
+  "editor-icons/suggested-refactoring-disabled": () => import("@/registry/icons/editor-icons/suggested-refactoring-disabled").then((mod) => ({ default: mod.SuggestedRefactoringDisabled })),
+  "editor-icons/unfold": () => import("@/registry/icons/editor-icons/unfold").then((mod) => ({ default: mod.Unfold })),
+  "editor-icons/write-access": () => import("@/registry/icons/editor-icons/write-access").then((mod) => ({ default: mod.WriteAccess })),
+  "editor-icons/zoom-in": () => import("@/registry/icons/editor-icons/zoom-in").then((mod) => ({ default: mod.ZoomIn })),
+  "editor-icons/zoom-out": () => import("@/registry/icons/editor-icons/zoom-out").then((mod) => ({ default: mod.ZoomOut })),
+  "editor-only": () => import("@/registry/icons/editor-icons/editor-only").then((mod) => ({ default: mod.EditorOnly })),
+  "editor-output": () => import("@/registry/icons/database/editor-output").then((mod) => ({ default: mod.EditorOutput })),
+  "editor-preview": () => import("@/registry/icons/editor-icons/editor-preview").then((mod) => ({ default: mod.EditorPreview })),
+  "editor-preview-vertical": () => import("@/registry/icons/editor-icons/editor-preview-vertical").then((mod) => ({ default: mod.EditorPreviewVertical })),
+  "ejb-artifact": () => import("@/registry/icons/plugins/java-ee/ejb-artifact").then((mod) => ({ default: mod.EjbArtifact })),
+  "ejb-business-method": () => import("@/registry/icons/plugins/java-ee/ejb-business-method").then((mod) => ({ default: mod.EjbBusinessMethod })),
+  "ejb-class": () => import("@/registry/icons/plugins/java-ee/ejb-class").then((mod) => ({ default: mod.EjbClass })),
+  "ejb-cmp-field": () => import("@/registry/icons/plugins/java-ee/ejb-cmp-field").then((mod) => ({ default: mod.EjbCmpField })),
+  "ejb-cmr-field": () => import("@/registry/icons/plugins/java-ee/ejb-cmr-field").then((mod) => ({ default: mod.EjbCmrField })),
+  "ejb-create-method": () => import("@/registry/icons/plugins/java-ee/ejb-create-method").then((mod) => ({ default: mod.EjbCreateMethod })),
+  "ejb-finder-method": () => import("@/registry/icons/plugins/java-ee/ejb-finder-method").then((mod) => ({ default: mod.EjbFinderMethod })),
+  "ejb-jar-xml": () => import("@/registry/icons/plugins/java-ee/ejb-jar-xml").then((mod) => ({ default: mod.EjbJarXml })),
+  "ejb-module": () => import("@/registry/icons/plugins/java-ee/ejb-module").then((mod) => ({ default: mod.EjbModule })),
+  "ejb-primary-key-class": () => import("@/registry/icons/plugins/java-ee/ejb-primary-key-class").then((mod) => ({ default: mod.EjbPrimaryKeyClass })),
+  "ejb-reference": () => import("@/registry/icons/plugins/java-ee/ejb-reference").then((mod) => ({ default: mod.EjbReference })),
+  "ejs": () => import("@/registry/icons/file-types/ejs").then((mod) => ({ default: mod.Ejs })),
+  "elasticsearch": () => import("@/registry/icons/database/elasticsearch").then((mod) => ({ default: mod.Elasticsearch })),
+  "electronic-board": () => import("@/registry/icons/plugins/platformio/electronic-board").then((mod) => ({ default: mod.ElectronicBoard })),
+  "embedded": () => import("@/registry/icons/plugins/jpa/embedded").then((mod) => ({ default: mod.Embedded })),
+  "embedded-attribute-overlay": () => import("@/registry/icons/plugins/java-ee/embedded-attribute-overlay").then((mod) => ({ default: mod.EmbeddedAttributeOverlay })),
+  "endpoint": () => import("@/registry/icons/plugins/ruby/endpoint").then((mod) => ({ default: mod.Endpoint })),
+  "entity-bean": () => import("@/registry/icons/plugins/java-ee/entity-bean").then((mod) => ({ default: mod.EntityBean })),
+  "enum-kotlin": () => import("@/registry/icons/plugins/kotlin/enum-kotlin").then((mod) => ({ default: mod.EnumKotlin })),
+  "enum-object-scala": () => import("@/registry/icons/plugins/scala/enum-object-scala").then((mod) => ({ default: mod.EnumObjectScala })),
+  "enum-scala": () => import("@/registry/icons/plugins/scala/enum-scala").then((mod) => ({ default: mod.EnumScala })),
+  "equals-and-hashcode": () => import("@/registry/icons/plugins/jpa/equals-and-hashcode").then((mod) => ({ default: mod.EqualsAndHashcode })),
+  "er-diagram": () => import("@/registry/icons/plugins/java-ee/er-diagram").then((mod) => ({ default: mod.ErDiagram })),
+  "error": () => import("@/registry/icons/general/status/error").then((mod) => ({ default: mod.Error })),
+  "error-dialog": () => import("@/registry/icons/general/status/error-dialog").then((mod) => ({ default: mod.ErrorDialog })),
+  "error-introduction": () => import("@/registry/icons/nodes/error-introduction").then((mod) => ({ default: mod.ErrorIntroduction })),
+  "error-outline": () => import("@/registry/icons/general/status/error-outline").then((mod) => ({ default: mod.ErrorOutline })),
+  "evaluate-expression": () => import("@/registry/icons/run/evaluate-expression").then((mod) => ({ default: mod.EvaluateExpression })),
+  "evaluation-result": () => import("@/registry/icons/debugger/evaluation-result").then((mod) => ({ default: mod.EvaluationResult })),
+  "event": () => import("@/registry/icons/plugins/java-ee/event").then((mod) => ({ default: mod.Event })),
+  "events": () => import("@/registry/icons/plugins/kubernetes/events").then((mod) => ({ default: mod.Events })),
+  "exact-words": () => import("@/registry/icons/general/inline/exact-words").then((mod) => ({ default: mod.ExactWords })),
+  "exasol": () => import("@/registry/icons/database/exasol").then((mod) => ({ default: mod.Exasol })),
+  "exception": () => import("@/registry/icons/nodes/exception").then((mod) => ({ default: mod.Exception })),
+  "exception-analyzer": () => import("@/registry/icons/general/tool-windows/exception-analyzer").then((mod) => ({ default: mod.ExceptionAnalyzer })),
+  "exclude-root": () => import("@/registry/icons/nodes/exclude-root").then((mod) => ({ default: mod.ExcludeRoot })),
+  "excluded-generated": () => import("@/registry/icons/nodes/excluded-generated").then((mod) => ({ default: mod.ExcludedGenerated })),
+  "executable-target": () => import("@/registry/icons/plugins/cidr/executable-target").then((mod) => ({ default: mod.ExecutableTarget })),
+  "exit": () => import("@/registry/icons/general/general/exit").then((mod) => ({ default: mod.Exit })),
+  "expand": () => import("@/registry/icons/general/inline/expand").then((mod) => ({ default: mod.Expand })),
+  "expand-all": () => import("@/registry/icons/general/general/expand-all").then((mod) => ({ default: mod.ExpandAll })),
+  "expand-node": () => import("@/registry/icons/editor-icons/expand-node").then((mod) => ({ default: mod.ExpandNode })),
+  "expect": () => import("@/registry/icons/plugins/kotlin/expect").then((mod) => ({ default: mod.Expect })),
+  "explorer": () => import("@/registry/icons/plugins/jpa/explorer").then((mod) => ({ default: mod.Explorer })),
+  "export": () => import("@/registry/icons/general/general/export").then((mod) => ({ default: mod.Export })),
+  "exposed": () => import("@/registry/icons/file-types/exposed").then((mod) => ({ default: mod.Exposed })),
+  "ext-annotation": () => import("@/registry/icons/editor-icons/ext-annotation").then((mod) => ({ default: mod.ExtAnnotation })),
+  "extension": () => import("@/registry/icons/database/extension").then((mod) => ({ default: mod.Extension })),
+  "extension-run-configuration": () => import("@/registry/icons/plugins/cidr/extension-run-configuration").then((mod) => ({ default: mod.ExtensionRunConfiguration })),
+  "external-link": () => import("@/registry/icons/general/general/external-link").then((mod) => ({ default: mod.ExternalLink })),
+  "external-schema": () => import("@/registry/icons/database/external-schema").then((mod) => ({ default: mod.ExternalSchema })),
+  "factory": () => import("@/registry/icons/plugins/ruby/factory").then((mod) => ({ default: mod.Factory })),
+  "factory-method-bean": () => import("@/registry/icons/plugins/spring/factory-method-bean").then((mod) => ({ default: mod.FactoryMethodBean })),
+  "failed": () => import("@/registry/icons/plugins/kubernetes/failed").then((mod) => ({ default: mod.Failed })),
+  "failed-in-progress": () => import("@/registry/icons/run/failed-in-progress").then((mod) => ({ default: mod.FailedInProgress })),
+  "fast-api": () => import("@/registry/icons/file-types/fast-api").then((mod) => ({ default: mod.FastAPI })),
+  "favorites": () => import("@/registry/icons/nodes/favorites").then((mod) => ({ default: mod.Favorites })),
+  "feature-answer": () => import("@/registry/icons/general/ai-assistant/feature-answer").then((mod) => ({ default: mod.FeatureAnswer })),
+  "feature-code-block": () => import("@/registry/icons/general/ai-assistant/feature-code-block").then((mod) => ({ default: mod.FeatureCodeBlock })),
+  "feature-comment": () => import("@/registry/icons/general/ai-assistant/feature-comment").then((mod) => ({ default: mod.FeatureComment })),
+  "feature-commit": () => import("@/registry/icons/general/ai-assistant/feature-commit").then((mod) => ({ default: mod.FeatureCommit })),
+  "feature-context": () => import("@/registry/icons/general/ai-assistant/feature-context").then((mod) => ({ default: mod.FeatureContext })),
+  "feature-docs": () => import("@/registry/icons/general/ai-assistant/feature-docs").then((mod) => ({ default: mod.FeatureDocs })),
+  "feedback": () => import("@/registry/icons/general/tool-windows/feedback").then((mod) => ({ default: mod.Feedback })),
+  "feedback-rating": () => import("@/registry/icons/general/rating/feedback-rating").then((mod) => ({ default: mod.FeedbackRating })),
+  "feedback-rating-focused": () => import("@/registry/icons/general/rating/feedback-rating-focused").then((mod) => ({ default: mod.FeedbackRatingFocused })),
+  "feedback-rating-focused-on": () => import("@/registry/icons/general/rating/feedback-rating-focused-on").then((mod) => ({ default: mod.FeedbackRatingFocusedOn })),
+  "feedback-rating-on": () => import("@/registry/icons/general/rating/feedback-rating-on").then((mod) => ({ default: mod.FeedbackRatingOn })),
+  "fetch": () => import("@/registry/icons/vcs/fetch").then((mod) => ({ default: mod.Fetch })),
+  "field-in-xml": () => import("@/registry/icons/plugins/java-ee/field-in-xml").then((mod) => ({ default: mod.FieldInXml })),
+  "field-value1": () => import("@/registry/icons/plugins/scala/field-value1").then((mod) => ({ default: mod.FieldValue1 })),
+  "field-variable1": () => import("@/registry/icons/plugins/scala/field-variable1").then((mod) => ({ default: mod.FieldVariable1 })),
+  "file-set": () => import("@/registry/icons/plugins/spring/file-set").then((mod) => ({ default: mod.FileSet })),
+  "file-transfer": () => import("@/registry/icons/plugins/jpa/file-transfer").then((mod) => ({ default: mod.FileTransfer })),
+  "file-type-swift": () => import("@/registry/icons/plugins/cidr/file-type-swift").then((mod) => ({ default: mod.FileTypeSwift })),
+  "file-types/action-script": () => import("@/registry/icons/file-types/action-script").then((mod) => ({ default: mod.ActionScript })),
+  "file-types/acync-api": () => import("@/registry/icons/file-types/acync-api").then((mod) => ({ default: mod.AcyncAPI })),
+  "file-types/amper": () => import("@/registry/icons/file-types/amper").then((mod) => ({ default: mod.Amper })),
+  "file-types/angular-js": () => import("@/registry/icons/file-types/angular-js").then((mod) => ({ default: mod.AngularJS })),
+  "file-types/angular-jsmonochrome": () => import("@/registry/icons/file-types/angular-jsmonochrome").then((mod) => ({ default: mod.AngularJSMonochrome })),
+  "file-types/any-type": () => import("@/registry/icons/file-types/any-type").then((mod) => ({ default: mod.AnyType })),
+  "file-types/api": () => import("@/registry/icons/file-types/api").then((mod) => ({ default: mod.Api })),
+  "file-types/archive": () => import("@/registry/icons/file-types/archive").then((mod) => ({ default: mod.Archive })),
+  "file-types/aspect-j": () => import("@/registry/icons/file-types/aspect-j").then((mod) => ({ default: mod.AspectJ })),
+  "file-types/assembler-go": () => import("@/registry/icons/file-types/assembler-go").then((mod) => ({ default: mod.AssemblerGo })),
+  "file-types/bun": () => import("@/registry/icons/file-types/bun").then((mod) => ({ default: mod.Bun })),
+  "file-types/chameleon": () => import("@/registry/icons/file-types/chameleon").then((mod) => ({ default: mod.Chameleon })),
+  "file-types/changed-file": () => import("@/registry/icons/file-types/changed-file").then((mod) => ({ default: mod.ChangedFile })),
+  "file-types/changed-files": () => import("@/registry/icons/file-types/changed-files").then((mod) => ({ default: mod.ChangedFiles })),
+  "file-types/coffeescript": () => import("@/registry/icons/file-types/coffeescript").then((mod) => ({ default: mod.Coffeescript })),
+  "file-types/conditional-statement": () => import("@/registry/icons/file-types/conditional-statement").then((mod) => ({ default: mod.ConditionalStatement })),
+  "file-types/contexts": () => import("@/registry/icons/file-types/contexts").then((mod) => ({ default: mod.Contexts })),
+  "file-types/contexts-modifier": () => import("@/registry/icons/file-types/contexts-modifier").then((mod) => ({ default: mod.ContextsModifier })),
+  "file-types/css": () => import("@/registry/icons/file-types/css").then((mod) => ({ default: mod.Css })),
+  "file-types/cucumber": () => import("@/registry/icons/file-types/cucumber").then((mod) => ({ default: mod.Cucumber })),
+  "file-types/cython-file": () => import("@/registry/icons/file-types/cython-file").then((mod) => ({ default: mod.CythonFile })),
+  "file-types/deno": () => import("@/registry/icons/file-types/deno").then((mod) => ({ default: mod.Deno })),
+  "file-types/diagram": () => import("@/registry/icons/file-types/diagram").then((mod) => ({ default: mod.Diagram })),
+  "file-types/dictionary": () => import("@/registry/icons/file-types/dictionary").then((mod) => ({ default: mod.Dictionary })),
+  "file-types/dts": () => import("@/registry/icons/file-types/dts").then((mod) => ({ default: mod.Dts })),
+  "file-types/dts-property": () => import("@/registry/icons/file-types/dts-property").then((mod) => ({ default: mod.DtsProperty })),
+  "file-types/dts-sub-node": () => import("@/registry/icons/file-types/dts-sub-node").then((mod) => ({ default: mod.DtsSubNode })),
+  "file-types/eclipse": () => import("@/registry/icons/file-types/eclipse").then((mod) => ({ default: mod.Eclipse })),
+  "file-types/editor-config": () => import("@/registry/icons/file-types/editor-config").then((mod) => ({ default: mod.EditorConfig })),
+  "file-types/ejs": () => import("@/registry/icons/file-types/ejs").then((mod) => ({ default: mod.Ejs })),
+  "file-types/exposed": () => import("@/registry/icons/file-types/exposed").then((mod) => ({ default: mod.Exposed })),
+  "file-types/fast-api": () => import("@/registry/icons/file-types/fast-api").then((mod) => ({ default: mod.FastAPI })),
+  "file-types/flask": () => import("@/registry/icons/file-types/flask").then((mod) => ({ default: mod.Flask })),
+  "file-types/freemaker": () => import("@/registry/icons/file-types/freemaker").then((mod) => ({ default: mod.Freemaker })),
+  "file-types/haskell": () => import("@/registry/icons/file-types/haskell").then((mod) => ({ default: mod.Haskell })),
+  "file-types/hook": () => import("@/registry/icons/file-types/hook").then((mod) => ({ default: mod.Hook })),
+  "file-types/html": () => import("@/registry/icons/file-types/html").then((mod) => ({ default: mod.Html })),
+  "file-types/http-header": () => import("@/registry/icons/file-types/http-header").then((mod) => ({ default: mod.HttpHeader })),
+  "file-types/http-requests-run-configuration": () => import("@/registry/icons/file-types/http-requests-run-configuration").then((mod) => ({ default: mod.HttpRequestsRunConfiguration })),
+  "file-types/i18n": () => import("@/registry/icons/file-types/i18n").then((mod) => ({ default: mod.I18n })),
+  "file-types/idea-module": () => import("@/registry/icons/file-types/idea-module").then((mod) => ({ default: mod.IdeaModule })),
+  "file-types/idl": () => import("@/registry/icons/file-types/idl").then((mod) => ({ default: mod.Idl })),
+  "file-types/ignored": () => import("@/registry/icons/file-types/ignored").then((mod) => ({ default: mod.Ignored })),
+  "file-types/image": () => import("@/registry/icons/file-types/image").then((mod) => ({ default: mod.Image })),
+  "file-types/java": () => import("@/registry/icons/file-types/java").then((mod) => ({ default: mod.Java })),
+  "file-types/java-class": () => import("@/registry/icons/file-types/java-class").then((mod) => ({ default: mod.JavaClass })),
+  "file-types/java-script": () => import("@/registry/icons/file-types/java-script").then((mod) => ({ default: mod.JavaScript })),
+  "file-types/jest": () => import("@/registry/icons/file-types/jest").then((mod) => ({ default: mod.Jest })),
+  "file-types/jfr": () => import("@/registry/icons/file-types/jfr").then((mod) => ({ default: mod.Jfr })),
+  "file-types/jinja2": () => import("@/registry/icons/file-types/jinja2").then((mod) => ({ default: mod.Jinja2 })),
+  "file-types/js-config": () => import("@/registry/icons/file-types/js-config").then((mod) => ({ default: mod.JsConfig })),
+  "file-types/js-doc-closure": () => import("@/registry/icons/file-types/js-doc-closure").then((mod) => ({ default: mod.JsDocClosure })),
+  "file-types/json": () => import("@/registry/icons/file-types/json").then((mod) => ({ default: mod.Json })),
+  "file-types/json-schema": () => import("@/registry/icons/file-types/json-schema").then((mod) => ({ default: mod.JsonSchema })),
+  "file-types/jsp": () => import("@/registry/icons/file-types/jsp").then((mod) => ({ default: mod.Jsp })),
+  "file-types/jspx": () => import("@/registry/icons/file-types/jspx").then((mod) => ({ default: mod.Jspx })),
+  "file-types/jupyter-notebook": () => import("@/registry/icons/file-types/jupyter-notebook").then((mod) => ({ default: mod.JupyterNotebook })),
+  "file-types/kotlin": () => import("@/registry/icons/file-types/kotlin").then((mod) => ({ default: mod.Kotlin })),
+  "file-types/less": () => import("@/registry/icons/file-types/less").then((mod) => ({ default: mod.Less })),
+  "file-types/manifest": () => import("@/registry/icons/file-types/manifest").then((mod) => ({ default: mod.Manifest })),
+  "file-types/markdown": () => import("@/registry/icons/file-types/markdown").then((mod) => ({ default: mod.Markdown })),
+  "file-types/maven": () => import("@/registry/icons/file-types/maven").then((mod) => ({ default: mod.Maven })),
+  "file-types/maven-ignored": () => import("@/registry/icons/file-types/maven-ignored").then((mod) => ({ default: mod.MavenIgnored })),
+  "file-types/micronaut": () => import("@/registry/icons/file-types/micronaut").then((mod) => ({ default: mod.Micronaut })),
+  "file-types/microsoft-windows": () => import("@/registry/icons/file-types/microsoft-windows").then((mod) => ({ default: mod.MicrosoftWindows })),
+  "file-types/modified": () => import("@/registry/icons/file-types/modified").then((mod) => ({ default: mod.Modified })),
+  "file-types/next-js": () => import("@/registry/icons/file-types/next-js").then((mod) => ({ default: mod.NextJS })),
+  "file-types/nodejs-test-runner": () => import("@/registry/icons/file-types/nodejs-test-runner").then((mod) => ({ default: mod.NodejsTestRunner })),
+  "file-types/num-py": () => import("@/registry/icons/file-types/num-py").then((mod) => ({ default: mod.NumPy })),
+  "file-types/open-rewrite": () => import("@/registry/icons/file-types/open-rewrite").then((mod) => ({ default: mod.OpenRewrite })),
+  "file-types/open-tofu": () => import("@/registry/icons/file-types/open-tofu").then((mod) => ({ default: mod.OpenTofu })),
+  "file-types/package-json": () => import("@/registry/icons/file-types/package-json").then((mod) => ({ default: mod.PackageJson })),
+  "file-types/package-lock": () => import("@/registry/icons/file-types/package-lock").then((mod) => ({ default: mod.PackageLock })),
+  "file-types/pandas": () => import("@/registry/icons/file-types/pandas").then((mod) => ({ default: mod.Pandas })),
+  "file-types/patch": () => import("@/registry/icons/file-types/patch").then((mod) => ({ default: mod.Patch })),
+  "file-types/perl": () => import("@/registry/icons/file-types/perl").then((mod) => ({ default: mod.Perl })),
+  "file-types/pnpm": () => import("@/registry/icons/file-types/pnpm").then((mod) => ({ default: mod.Pnpm })),
+  "file-types/pnpm-lock": () => import("@/registry/icons/file-types/pnpm-lock").then((mod) => ({ default: mod.PnpmLock })),
+  "file-types/polars": () => import("@/registry/icons/file-types/polars").then((mod) => ({ default: mod.Polars })),
+  "file-types/prettier": () => import("@/registry/icons/file-types/prettier").then((mod) => ({ default: mod.Prettier })),
+  "file-types/properties": () => import("@/registry/icons/file-types/properties").then((mod) => ({ default: mod.Properties })),
+  "file-types/proto-file": () => import("@/registry/icons/file-types/proto-file").then((mod) => ({ default: mod.ProtoFile })),
+  "file-types/proto-message": () => import("@/registry/icons/file-types/proto-message").then((mod) => ({ default: mod.ProtoMessage })),
+  "file-types/protobuf": () => import("@/registry/icons/file-types/protobuf").then((mod) => ({ default: mod.Protobuf })),
+  "file-types/py-torch": () => import("@/registry/icons/file-types/py-torch").then((mod) => ({ default: mod.PyTorch })),
+  "file-types/python": () => import("@/registry/icons/file-types/python").then((mod) => ({ default: mod.Python })),
+  "file-types/qml": () => import("@/registry/icons/file-types/qml").then((mod) => ({ default: mod.Qml })),
+  "file-types/qrc": () => import("@/registry/icons/file-types/qrc").then((mod) => ({ default: mod.Qrc })),
+  "file-types/qt": () => import("@/registry/icons/file-types/qt").then((mod) => ({ default: mod.Qt })),
+  "file-types/quatro": () => import("@/registry/icons/file-types/quatro").then((mod) => ({ default: mod.Quatro })),
+  "file-types/react": () => import("@/registry/icons/file-types/react").then((mod) => ({ default: mod.React })),
+  "file-types/react-icon": () => import("@/registry/icons/file-types/react-icon").then((mod) => ({ default: mod.ReactFileType })),
+  "file-types/redoc": () => import("@/registry/icons/file-types/redoc").then((mod) => ({ default: mod.Redoc })),
+  "file-types/regexp": () => import("@/registry/icons/file-types/regexp").then((mod) => ({ default: mod.Regexp })),
+  "file-types/rst": () => import("@/registry/icons/file-types/rst").then((mod) => ({ default: mod.Rst })),
+  "file-types/sarif": () => import("@/registry/icons/file-types/sarif").then((mod) => ({ default: mod.Sarif })),
+  "file-types/sass": () => import("@/registry/icons/file-types/sass").then((mod) => ({ default: mod.Sass })),
+  "file-types/scala": () => import("@/registry/icons/file-types/scala").then((mod) => ({ default: mod.Scala })),
+  "file-types/scratch": () => import("@/registry/icons/file-types/scratch").then((mod) => ({ default: mod.Scratch })),
+  "file-types/scratches": () => import("@/registry/icons/file-types/scratches").then((mod) => ({ default: mod.Scratches })),
+  "file-types/scss": () => import("@/registry/icons/file-types/scss").then((mod) => ({ default: mod.Scss })),
+  "file-types/shell": () => import("@/registry/icons/file-types/shell").then((mod) => ({ default: mod.Shell })),
+  "file-types/source-map": () => import("@/registry/icons/file-types/source-map").then((mod) => ({ default: mod.SourceMap })),
+  "file-types/sql": () => import("@/registry/icons/file-types/sql").then((mod) => ({ default: mod.Sql })),
+  "file-types/svelte": () => import("@/registry/icons/file-types/svelte").then((mod) => ({ default: mod.Svelte })),
+  "file-types/team-city": () => import("@/registry/icons/file-types/team-city").then((mod) => ({ default: mod.TeamCity })),
+  "file-types/tensor-flow": () => import("@/registry/icons/file-types/tensor-flow").then((mod) => ({ default: mod.TensorFlow })),
+  "file-types/terraform": () => import("@/registry/icons/file-types/terraform").then((mod) => ({ default: mod.Terraform })),
+  "file-types/text": () => import("@/registry/icons/file-types/text").then((mod) => ({ default: mod.Text })),
+  "file-types/ts-config": () => import("@/registry/icons/file-types/ts-config").then((mod) => ({ default: mod.TsConfig })),
+  "file-types/ts-doc": () => import("@/registry/icons/file-types/ts-doc").then((mod) => ({ default: mod.TsDoc })),
+  "file-types/ui-form": () => import("@/registry/icons/file-types/ui-form").then((mod) => ({ default: mod.UiForm })),
+  "file-types/unknown": () => import("@/registry/icons/file-types/unknown").then((mod) => ({ default: mod.Unknown })),
+  "file-types/vite-js": () => import("@/registry/icons/file-types/vite-js").then((mod) => ({ default: mod.ViteJS })),
+  "file-types/vitest": () => import("@/registry/icons/file-types/vitest").then((mod) => ({ default: mod.Vitest })),
+  "file-types/vue-js": () => import("@/registry/icons/file-types/vue-js").then((mod) => ({ default: mod.VueJs })),
+  "file-types/workspace": () => import("@/registry/icons/file-types/workspace").then((mod) => ({ default: mod.Workspace })),
+  "file-types/wsdl": () => import("@/registry/icons/file-types/wsdl").then((mod) => ({ default: mod.Wsdl })),
+  "file-types/xhtml": () => import("@/registry/icons/file-types/xhtml").then((mod) => ({ default: mod.Xhtml })),
+  "file-types/xml": () => import("@/registry/icons/file-types/xml").then((mod) => ({ default: mod.Xml })),
+  "file-types/xpath": () => import("@/registry/icons/file-types/xpath").then((mod) => ({ default: mod.Xpath })),
+  "file-types/xsd": () => import("@/registry/icons/file-types/xsd").then((mod) => ({ default: mod.Xsd })),
+  "file-types/xsl": () => import("@/registry/icons/file-types/xsl").then((mod) => ({ default: mod.Xsl })),
+  "file-types/yaml": () => import("@/registry/icons/file-types/yaml").then((mod) => ({ default: mod.Yaml })),
+  "file-types/yarn": () => import("@/registry/icons/file-types/yarn").then((mod) => ({ default: mod.Yarn })),
+  "file-types/yarn-lock": () => import("@/registry/icons/file-types/yarn-lock").then((mod) => ({ default: mod.YarnLock })),
+  "file-unread": () => import("@/registry/icons/vcs/file-unread").then((mod) => ({ default: mod.FileUnread })),
+  "filter": () => import("@/registry/icons/general/general/filter").then((mod) => ({ default: mod.Filter })),
+  "filter-history": () => import("@/registry/icons/general/inline/filter-history").then((mod) => ({ default: mod.FilterHistory })),
+  "filterdups": () => import("@/registry/icons/general/usages/filterdups").then((mod) => ({ default: mod.Filterdups })),
+  "final-mark": () => import("@/registry/icons/general/modifiers/final-mark").then((mod) => ({ default: mod.FinalMark })),
+  "find": () => import("@/registry/icons/general/tool-windows/find").then((mod) => ({ default: mod.Find })),
+  "find-collection": () => import("@/registry/icons/plugins/jpa/find-collection").then((mod) => ({ default: mod.FindCollection })),
+  "find-external-usages": () => import("@/registry/icons/general/tool-windows/find-external-usages").then((mod) => ({ default: mod.FindExternalUsages })),
+  "find-instance": () => import("@/registry/icons/plugins/jpa/find-instance").then((mod) => ({ default: mod.FindInstance })),
+  "fir": () => import("@/registry/icons/plugins/kotlin/fir").then((mod) => ({ default: mod.Fir })),
+  "firebird": () => import("@/registry/icons/database/firebird").then((mod) => ({ default: mod.Firebird })),
+  "fit-content": () => import("@/registry/icons/editor-icons/fit-content").then((mod) => ({ default: mod.FitContent })),
+  "flame": () => import("@/registry/icons/editor-icons/flame").then((mod) => ({ default: mod.Flame })),
+  "flask": () => import("@/registry/icons/file-types/flask").then((mod) => ({ default: mod.Flask })),
+  "flatten-modules": () => import("@/registry/icons/general/object-browser/flatten-modules").then((mod) => ({ default: mod.FlattenModules })),
+  "flatten-packages": () => import("@/registry/icons/general/object-browser/flatten-packages").then((mod) => ({ default: mod.FlattenPackages })),
+  "flink": () => import("@/registry/icons/plugins/bdt/flink").then((mod) => ({ default: mod.Flink })),
+  "flyway-plugin-logo": () => import("@/registry/icons/plugins/jpa/flyway-plugin-logo").then((mod) => ({ default: mod.FlywayPluginLogo })),
+  "fold": () => import("@/registry/icons/editor-icons/fold").then((mod) => ({ default: mod.Fold })),
+  "fold-bottom": () => import("@/registry/icons/editor-icons/fold-bottom").then((mod) => ({ default: mod.FoldBottom })),
+  "folder": () => import("@/registry/icons/nodes/folder").then((mod) => ({ default: mod.Folder })),
+  "force-run-to-cursor": () => import("@/registry/icons/run/force-run-to-cursor").then((mod) => ({ default: mod.ForceRunToCursor })),
+  "force-step-into": () => import("@/registry/icons/run/force-step-into").then((mod) => ({ default: mod.ForceStepInto })),
+  "force-step-over": () => import("@/registry/icons/run/force-step-over").then((mod) => ({ default: mod.ForceStepOver })),
+  "foreign-datawrapper": () => import("@/registry/icons/database/foreign-datawrapper").then((mod) => ({ default: mod.ForeignDatawrapper })),
+  "foreign-partion-table": () => import("@/registry/icons/database/foreign-partion-table").then((mod) => ({ default: mod.ForeignPartionTable })),
+  "foreign-server": () => import("@/registry/icons/database/foreign-server").then((mod) => ({ default: mod.ForeignServer })),
+  "foreign-table": () => import("@/registry/icons/database/foreign-table").then((mod) => ({ default: mod.ForeignTable })),
+  "forward-ports": () => import("@/registry/icons/plugins/kubernetes/forward-ports").then((mod) => ({ default: mod.ForwardPorts })),
+  "fragment": () => import("@/registry/icons/plugins/graphql/fragment").then((mod) => ({ default: mod.Fragment })),
+  "frame": () => import("@/registry/icons/debugger/frame").then((mod) => ({ default: mod.Frame })),
+  "framework": () => import("@/registry/icons/plugins/cidr/framework").then((mod) => ({ default: mod.Framework })),
+  "freemaker": () => import("@/registry/icons/file-types/freemaker").then((mod) => ({ default: mod.Freemaker })),
+  "freeze": () => import("@/registry/icons/plugins/cidr/freeze").then((mod) => ({ default: mod.Freeze })),
+  "freeze-all": () => import("@/registry/icons/plugins/cidr/freeze-all").then((mod) => ({ default: mod.FreezeAll })),
+  "from-arrow": () => import("@/registry/icons/plugins/aop/from-arrow").then((mod) => ({ default: mod.FromArrow })),
+  "full-line-completion": () => import("@/registry/icons/plugins/full-line-completion/full-line-completion").then((mod) => ({ default: mod.FullLineCompletion })),
+  "full-line-completion-outline": () => import("@/registry/icons/plugins/full-line-completion/full-line-completion-outline").then((mod) => ({ default: mod.FullLineCompletionOutline })),
+  "function-external": () => import("@/registry/icons/database/function-external").then((mod) => ({ default: mod.FunctionExternal })),
+  "function-run": () => import("@/registry/icons/database/function-run").then((mod) => ({ default: mod.FunctionRun })),
+  "general": () => import("@/registry/icons/plugins/java-ee/general").then((mod) => ({ default: mod.General })),
+  "general/access-modifiers/access-local": () => import("@/registry/icons/general/access-modifiers/access-local").then((mod) => ({ default: mod.AccessLocal })),
+  "general/access-modifiers/access-private": () => import("@/registry/icons/general/access-modifiers/access-private").then((mod) => ({ default: mod.AccessPrivate })),
+  "general/access-modifiers/access-protected": () => import("@/registry/icons/general/access-modifiers/access-protected").then((mod) => ({ default: mod.AccessProtected })),
+  "general/access-modifiers/access-public": () => import("@/registry/icons/general/access-modifiers/access-public").then((mod) => ({ default: mod.AccessPublic })),
+  "general/actions/add-file": () => import("@/registry/icons/general/actions/add-file").then((mod) => ({ default: mod.AddFile })),
+  "general/actions/build-auto-reload-changes": () => import("@/registry/icons/general/actions/build-auto-reload-changes").then((mod) => ({ default: mod.BuildAutoReloadChanges })),
+  "general/actions/checked": () => import("@/registry/icons/general/actions/checked").then((mod) => ({ default: mod.Checked })),
+  "general/actions/deploy": () => import("@/registry/icons/general/actions/deploy").then((mod) => ({ default: mod.Deploy })),
+  "general/actions/diagram-diff": () => import("@/registry/icons/general/actions/diagram-diff").then((mod) => ({ default: mod.DiagramDiff })),
+  "general/actions/diff-with-clipboard": () => import("@/registry/icons/general/actions/diff-with-clipboard").then((mod) => ({ default: mod.DiffWithClipboard })),
+  "general/actions/gift": () => import("@/registry/icons/general/actions/gift").then((mod) => ({ default: mod.Gift })),
+  "general/actions/group-by-class": () => import("@/registry/icons/general/actions/group-by-class").then((mod) => ({ default: mod.GroupByClass })),
+  "general/actions/group-by-file": () => import("@/registry/icons/general/actions/group-by-file").then((mod) => ({ default: mod.GroupByFile })),
+  "general/actions/group-by-method": () => import("@/registry/icons/general/actions/group-by-method").then((mod) => ({ default: mod.GroupByMethod })),
+  "general/actions/group-by-module": () => import("@/registry/icons/general/actions/group-by-module").then((mod) => ({ default: mod.GroupByModule })),
+  "general/actions/group-by-package": () => import("@/registry/icons/general/actions/group-by-package").then((mod) => ({ default: mod.GroupByPackage })),
+  "general/actions/group-by-test-production": () => import("@/registry/icons/general/actions/group-by-test-production").then((mod) => ({ default: mod.GroupByTestProduction })),
+  "general/actions/in-selection": () => import("@/registry/icons/general/actions/in-selection").then((mod) => ({ default: mod.InSelection })),
+  "general/actions/lightning": () => import("@/registry/icons/general/actions/lightning").then((mod) => ({ default: mod.Lightning })),
+  "general/actions/move-to-button": () => import("@/registry/icons/general/actions/move-to-button").then((mod) => ({ default: mod.MoveToButton })),
+  "general/actions/open-api": () => import("@/registry/icons/general/actions/open-api").then((mod) => ({ default: mod.OpenApi })),
+  "general/actions/play-back": () => import("@/registry/icons/general/actions/play-back").then((mod) => ({ default: mod.PlayBack })),
+  "general/actions/play-first": () => import("@/registry/icons/general/actions/play-first").then((mod) => ({ default: mod.PlayFirst })),
+  "general/actions/play-forward": () => import("@/registry/icons/general/actions/play-forward").then((mod) => ({ default: mod.PlayForward })),
+  "general/actions/play-last": () => import("@/registry/icons/general/actions/play-last").then((mod) => ({ default: mod.PlayLast })),
+  "general/actions/preview": () => import("@/registry/icons/general/actions/preview").then((mod) => ({ default: mod.Preview })),
+  "general/actions/profile-cpu": () => import("@/registry/icons/general/actions/profile-cpu").then((mod) => ({ default: mod.ProfileCPU })),
+  "general/actions/profile-memory": () => import("@/registry/icons/general/actions/profile-memory").then((mod) => ({ default: mod.ProfileMemory })),
+  "general/actions/profile-red": () => import("@/registry/icons/general/actions/profile-red").then((mod) => ({ default: mod.ProfileRed })),
+  "general/actions/project-directory": () => import("@/registry/icons/general/actions/project-directory").then((mod) => ({ default: mod.ProjectDirectory })),
+  "general/actions/replace": () => import("@/registry/icons/general/actions/replace").then((mod) => ({ default: mod.Replace })),
+  "general/actions/report": () => import("@/registry/icons/general/actions/report").then((mod) => ({ default: mod.Report })),
+  "general/actions/restart-stop": () => import("@/registry/icons/general/actions/restart-stop").then((mod) => ({ default: mod.RestartStop })),
+  "general/actions/run-all": () => import("@/registry/icons/general/actions/run-all").then((mod) => ({ default: mod.RunAll })),
+  "general/actions/select-all": () => import("@/registry/icons/general/actions/select-all").then((mod) => ({ default: mod.SelectAll })),
+  "general/actions/shortcut-filter": () => import("@/registry/icons/general/actions/shortcut-filter").then((mod) => ({ default: mod.ShortcutFilter })),
+  "general/actions/show-to-implement": () => import("@/registry/icons/general/actions/show-to-implement").then((mod) => ({ default: mod.ShowToImplement })),
+  "general/actions/split": () => import("@/registry/icons/general/actions/split").then((mod) => ({ default: mod.Split })),
+  "general/actions/start-memory-profile": () => import("@/registry/icons/general/actions/start-memory-profile").then((mod) => ({ default: mod.StartMemoryProfile })),
+  "general/actions/suggested-refactoring-bulb": () => import("@/registry/icons/general/actions/suggested-refactoring-bulb").then((mod) => ({ default: mod.SuggestedRefactoringBulb })),
+  "general/actions/swap-panels": () => import("@/registry/icons/general/actions/swap-panels").then((mod) => ({ default: mod.SwapPanels })),
+  "general/actions/synchronize-scrolling": () => import("@/registry/icons/general/actions/synchronize-scrolling").then((mod) => ({ default: mod.SynchronizeScrolling })),
+  "general/actions/toggle-visibility": () => import("@/registry/icons/general/actions/toggle-visibility").then((mod) => ({ default: mod.ToggleVisibility })),
+  "general/actions/unselect-all": () => import("@/registry/icons/general/actions/unselect-all").then((mod) => ({ default: mod.UnselectAll })),
+  "general/actions/write-review": () => import("@/registry/icons/general/actions/write-review").then((mod) => ({ default: mod.WriteReview })),
+  "general/ai-assistant/ai-assistant": () => import("@/registry/icons/general/ai-assistant/ai-assistant").then((mod) => ({ default: mod.AiAssistant })),
+  "general/ai-assistant/ai-assistant-colored": () => import("@/registry/icons/general/ai-assistant/ai-assistant-colored").then((mod) => ({ default: mod.AiAssistantColored })),
+  "general/ai-assistant/ai-assistant-disabled": () => import("@/registry/icons/general/ai-assistant/ai-assistant-disabled").then((mod) => ({ default: mod.AiAssistantDisabled })),
+  "general/ai-assistant/attached": () => import("@/registry/icons/general/ai-assistant/attached").then((mod) => ({ default: mod.Attached })),
+  "general/ai-assistant/dislike": () => import("@/registry/icons/general/ai-assistant/dislike").then((mod) => ({ default: mod.Dislike })),
+  "general/ai-assistant/dislike-selected": () => import("@/registry/icons/general/ai-assistant/dislike-selected").then((mod) => ({ default: mod.DislikeSelected })),
+  "general/ai-assistant/feature-answer": () => import("@/registry/icons/general/ai-assistant/feature-answer").then((mod) => ({ default: mod.FeatureAnswer })),
+  "general/ai-assistant/feature-code-block": () => import("@/registry/icons/general/ai-assistant/feature-code-block").then((mod) => ({ default: mod.FeatureCodeBlock })),
+  "general/ai-assistant/feature-comment": () => import("@/registry/icons/general/ai-assistant/feature-comment").then((mod) => ({ default: mod.FeatureComment })),
+  "general/ai-assistant/feature-commit": () => import("@/registry/icons/general/ai-assistant/feature-commit").then((mod) => ({ default: mod.FeatureCommit })),
+  "general/ai-assistant/feature-context": () => import("@/registry/icons/general/ai-assistant/feature-context").then((mod) => ({ default: mod.FeatureContext })),
+  "general/ai-assistant/feature-docs": () => import("@/registry/icons/general/ai-assistant/feature-docs").then((mod) => ({ default: mod.FeatureDocs })),
+  "general/ai-assistant/like": () => import("@/registry/icons/general/ai-assistant/like").then((mod) => ({ default: mod.Like })),
+  "general/ai-assistant/like-selected": () => import("@/registry/icons/general/ai-assistant/like-selected").then((mod) => ({ default: mod.LikeSelected })),
+  "general/ai-assistant/send": () => import("@/registry/icons/general/ai-assistant/send").then((mod) => ({ default: mod.Send })),
+  "general/ai-assistant/send-to-editor": () => import("@/registry/icons/general/ai-assistant/send-to-editor").then((mod) => ({ default: mod.SendToEditor })),
+  "general/bookmarks/add-bookmarks-list": () => import("@/registry/icons/general/bookmarks/add-bookmarks-list").then((mod) => ({ default: mod.AddBookmarksList })),
+  "general/bookmarks/bookmark": () => import("@/registry/icons/general/bookmarks/bookmark").then((mod) => ({ default: mod.Bookmark })),
+  "general/bookmarks/bookmarks": () => import("@/registry/icons/general/bookmarks/bookmarks").then((mod) => ({ default: mod.Bookmarks })),
+  "general/bookmarks/bookmarks-list": () => import("@/registry/icons/general/bookmarks/bookmarks-list").then((mod) => ({ default: mod.BookmarksList })),
+  "general/bookmarks/mnemonic": () => import("@/registry/icons/general/bookmarks/mnemonic").then((mod) => ({ default: mod.Mnemonic })),
+  "general/devkit/add-sdk": () => import("@/registry/icons/general/devkit/add-sdk").then((mod) => ({ default: mod.AddSDK })),
+  "general/devkit/plugin-v2": () => import("@/registry/icons/general/devkit/plugin-v2").then((mod) => ({ default: mod.PluginV2 })),
+  "general/devkit/sdk-closed": () => import("@/registry/icons/general/devkit/sdk-closed").then((mod) => ({ default: mod.SdkClosed })),
+  "general/duplicates/send-to-the-left": () => import("@/registry/icons/general/duplicates/send-to-the-left").then((mod) => ({ default: mod.SendToTheLeft })),
+  "general/duplicates/send-to-the-left-grayed": () => import("@/registry/icons/general/duplicates/send-to-the-left-grayed").then((mod) => ({ default: mod.SendToTheLeftGrayed })),
+  "general/duplicates/send-to-the-right": () => import("@/registry/icons/general/duplicates/send-to-the-right").then((mod) => ({ default: mod.SendToTheRight })),
+  "general/duplicates/send-to-the-right-grayed": () => import("@/registry/icons/general/duplicates/send-to-the-right-grayed").then((mod) => ({ default: mod.SendToTheRightGrayed })),
+  "general/editor/add-column-left": () => import("@/registry/icons/general/editor/add-column-left").then((mod) => ({ default: mod.AddColumnLeft })),
+  "general/editor/add-column-right": () => import("@/registry/icons/general/editor/add-column-right").then((mod) => ({ default: mod.AddColumnRight })),
+  "general/editor/add-row-above": () => import("@/registry/icons/general/editor/add-row-above").then((mod) => ({ default: mod.AddRowAbove })),
+  "general/editor/add-row-below": () => import("@/registry/icons/general/editor/add-row-below").then((mod) => ({ default: mod.AddRowBelow })),
+  "general/editor/bold": () => import("@/registry/icons/general/editor/bold").then((mod) => ({ default: mod.Bold })),
+  "general/editor/bullet-list": () => import("@/registry/icons/general/editor/bullet-list").then((mod) => ({ default: mod.BulletList })),
+  "general/editor/center-align": () => import("@/registry/icons/general/editor/center-align").then((mod) => ({ default: mod.CenterAlign })),
+  "general/editor/checkmark-list": () => import("@/registry/icons/general/editor/checkmark-list").then((mod) => ({ default: mod.CheckmarkList })),
+  "general/editor/code-span": () => import("@/registry/icons/general/editor/code-span").then((mod) => ({ default: mod.CodeSpan })),
+  "general/editor/header-level-down": () => import("@/registry/icons/general/editor/header-level-down").then((mod) => ({ default: mod.HeaderLevelDown })),
+  "general/editor/header-level-up": () => import("@/registry/icons/general/editor/header-level-up").then((mod) => ({ default: mod.HeaderLevelUp })),
+  "general/editor/italic": () => import("@/registry/icons/general/editor/italic").then((mod) => ({ default: mod.Italic })),
+  "general/editor/left-align": () => import("@/registry/icons/general/editor/left-align").then((mod) => ({ default: mod.LeftAlign })),
+  "general/editor/link": () => import("@/registry/icons/general/editor/link").then((mod) => ({ default: mod.Link })),
+  "general/editor/numbered-list": () => import("@/registry/icons/general/editor/numbered-list").then((mod) => ({ default: mod.NumberedList })),
+  "general/editor/right-align": () => import("@/registry/icons/general/editor/right-align").then((mod) => ({ default: mod.RightAlign })),
+  "general/editor/strike-through": () => import("@/registry/icons/general/editor/strike-through").then((mod) => ({ default: mod.StrikeThrough })),
+  "general/editor/table": () => import("@/registry/icons/general/editor/table").then((mod) => ({ default: mod.Table })),
+  "general/general/add": () => import("@/registry/icons/general/general/add").then((mod) => ({ default: mod.Add })),
+  "general/general/autoscroll-from-source": () => import("@/registry/icons/general/general/autoscroll-from-source").then((mod) => ({ default: mod.AutoscrollFromSource })),
+  "general/general/autoscroll-to-source": () => import("@/registry/icons/general/general/autoscroll-to-source").then((mod) => ({ default: mod.AutoscrollToSource })),
+  "general/general/checkmark": () => import("@/registry/icons/general/general/checkmark").then((mod) => ({ default: mod.Checkmark })),
+  "general/general/chevron-down": () => import("@/registry/icons/general/general/chevron-down").then((mod) => ({ default: mod.ChevronDown })),
+  "general/general/chevron-down-hovered": () => import("@/registry/icons/general/general/chevron-down-hovered").then((mod) => ({ default: mod.ChevronDownHovered })),
+  "general/general/chevron-down-large": () => import("@/registry/icons/general/general/chevron-down-large").then((mod) => ({ default: mod.ChevronDownLarge })),
+  "general/general/chevron-left": () => import("@/registry/icons/general/general/chevron-left").then((mod) => ({ default: mod.ChevronLeft })),
+  "general/general/chevron-right": () => import("@/registry/icons/general/general/chevron-right").then((mod) => ({ default: mod.ChevronRight })),
+  "general/general/chevron-up": () => import("@/registry/icons/general/general/chevron-up").then((mod) => ({ default: mod.ChevronUp })),
+  "general/general/chevron-up-large": () => import("@/registry/icons/general/general/chevron-up-large").then((mod) => ({ default: mod.ChevronUpLarge })),
+  "general/general/class-hierarchy": () => import("@/registry/icons/general/general/class-hierarchy").then((mod) => ({ default: mod.ClassHierarchy })),
+  "general/general/close": () => import("@/registry/icons/general/general/close").then((mod) => ({ default: mod.Close })),
+  "general/general/close-small": () => import("@/registry/icons/general/general/close-small").then((mod) => ({ default: mod.CloseSmall })),
+  "general/general/close-small-hovered": () => import("@/registry/icons/general/general/close-small-hovered").then((mod) => ({ default: mod.CloseSmallHovered })),
+  "general/general/collapse-all": () => import("@/registry/icons/general/general/collapse-all").then((mod) => ({ default: mod.CollapseAll })),
+  "general/general/config-file": () => import("@/registry/icons/general/general/config-file").then((mod) => ({ default: mod.ConfigFile })),
+  "general/general/copy": () => import("@/registry/icons/general/general/copy").then((mod) => ({ default: mod.Copy })),
+  "general/general/cut": () => import("@/registry/icons/general/general/cut").then((mod) => ({ default: mod.Cut })),
+  "general/general/delete": () => import("@/registry/icons/general/general/delete").then((mod) => ({ default: mod.Delete })),
+  "general/general/down": () => import("@/registry/icons/general/general/down").then((mod) => ({ default: mod.Down })),
+  "general/general/download": () => import("@/registry/icons/general/general/download").then((mod) => ({ default: mod.Download })),
+  "general/general/edit": () => import("@/registry/icons/general/general/edit").then((mod) => ({ default: mod.Edit })),
+  "general/general/exit": () => import("@/registry/icons/general/general/exit").then((mod) => ({ default: mod.Exit })),
+  "general/general/expand-all": () => import("@/registry/icons/general/general/expand-all").then((mod) => ({ default: mod.ExpandAll })),
+  "general/general/export": () => import("@/registry/icons/general/general/export").then((mod) => ({ default: mod.Export })),
+  "general/general/external-link": () => import("@/registry/icons/general/general/external-link").then((mod) => ({ default: mod.ExternalLink })),
+  "general/general/filter": () => import("@/registry/icons/general/general/filter").then((mod) => ({ default: mod.Filter })),
+  "general/general/graph-layout": () => import("@/registry/icons/general/general/graph-layout").then((mod) => ({ default: mod.GraphLayout })),
+  "general/general/groups": () => import("@/registry/icons/general/general/groups").then((mod) => ({ default: mod.Groups })),
+  "general/general/help": () => import("@/registry/icons/general/general/help").then((mod) => ({ default: mod.Help })),
+  "general/general/hide": () => import("@/registry/icons/general/general/hide").then((mod) => ({ default: mod.Hide })),
+  "general/general/history": () => import("@/registry/icons/general/general/history").then((mod) => ({ default: mod.History })),
+  "general/general/ide-update": () => import("@/registry/icons/general/general/ide-update").then((mod) => ({ default: mod.IdeUpdate })),
+  "general/general/import": () => import("@/registry/icons/general/general/import").then((mod) => ({ default: mod.Import })),
+  "general/general/keyboard": () => import("@/registry/icons/general/general/keyboard").then((mod) => ({ default: mod.Keyboard })),
+  "general/general/layout": () => import("@/registry/icons/general/general/layout").then((mod) => ({ default: mod.Layout })),
+  "general/general/left": () => import("@/registry/icons/general/general/left").then((mod) => ({ default: mod.Left })),
+  "general/general/list-files": () => import("@/registry/icons/general/general/list-files").then((mod) => ({ default: mod.ListFiles })),
+  "general/general/locate": () => import("@/registry/icons/general/general/locate").then((mod) => ({ default: mod.Locate })),
+  "general/general/locked": () => import("@/registry/icons/general/general/locked").then((mod) => ({ default: mod.Locked })),
+  "general/general/minimap": () => import("@/registry/icons/general/general/minimap").then((mod) => ({ default: mod.Minimap })),
+  "general/general/more-horizontal": () => import("@/registry/icons/general/general/more-horizontal").then((mod) => ({ default: mod.MoreHorizontal })),
+  "general/general/more-vertical": () => import("@/registry/icons/general/general/more-vertical").then((mod) => ({ default: mod.MoreVertical })),
+  "general/general/move-down": () => import("@/registry/icons/general/general/move-down").then((mod) => ({ default: mod.MoveDown })),
+  "general/general/move-to-bottom-left": () => import("@/registry/icons/general/general/move-to-bottom-left").then((mod) => ({ default: mod.MoveToBottomLeft })),
+  "general/general/move-to-bottom-right": () => import("@/registry/icons/general/general/move-to-bottom-right").then((mod) => ({ default: mod.MoveToBottomRight })),
+  "general/general/move-to-left-bottom": () => import("@/registry/icons/general/general/move-to-left-bottom").then((mod) => ({ default: mod.MoveToLeftBottom })),
+  "general/general/move-to-left-top": () => import("@/registry/icons/general/general/move-to-left-top").then((mod) => ({ default: mod.MoveToLeftTop })),
+  "general/general/move-to-right-bottom": () => import("@/registry/icons/general/general/move-to-right-bottom").then((mod) => ({ default: mod.MoveToRightBottom })),
+  "general/general/move-to-right-top": () => import("@/registry/icons/general/general/move-to-right-top").then((mod) => ({ default: mod.MoveToRightTop })),
+  "general/general/move-up": () => import("@/registry/icons/general/general/move-up").then((mod) => ({ default: mod.MoveUp })),
+  "general/general/open": () => import("@/registry/icons/general/general/open").then((mod) => ({ default: mod.Open })),
+  "general/general/open-in-tool-window": () => import("@/registry/icons/general/general/open-in-tool-window").then((mod) => ({ default: mod.OpenInToolWindow })),
+  "general/general/open-new-tab": () => import("@/registry/icons/general/general/open-new-tab").then((mod) => ({ default: mod.OpenNewTab })),
+  "general/general/pagination": () => import("@/registry/icons/general/general/pagination").then((mod) => ({ default: mod.Pagination })),
+  "general/general/paste": () => import("@/registry/icons/general/general/paste").then((mod) => ({ default: mod.Paste })),
+  "general/general/pin": () => import("@/registry/icons/general/general/pin").then((mod) => ({ default: mod.Pin })),
+  "general/general/plugin-update": () => import("@/registry/icons/general/general/plugin-update").then((mod) => ({ default: mod.PluginUpdate })),
+  "general/general/preview-horizontally": () => import("@/registry/icons/general/general/preview-horizontally").then((mod) => ({ default: mod.PreviewHorizontally })),
+  "general/general/preview-vertically": () => import("@/registry/icons/general/general/preview-vertically").then((mod) => ({ default: mod.PreviewVertically })),
+  "general/general/print": () => import("@/registry/icons/general/general/print").then((mod) => ({ default: mod.Print })),
+  "general/general/project-configurable": () => import("@/registry/icons/general/general/project-configurable").then((mod) => ({ default: mod.ProjectConfigurable })),
+  "general/general/project-structure": () => import("@/registry/icons/general/general/project-structure").then((mod) => ({ default: mod.ProjectStructure })),
+  "general/general/project-wide-analysis-off": () => import("@/registry/icons/general/general/project-wide-analysis-off").then((mod) => ({ default: mod.ProjectWideAnalysisOff })),
+  "general/general/project-wide-analysis-on": () => import("@/registry/icons/general/general/project-wide-analysis-on").then((mod) => ({ default: mod.ProjectWideAnalysisOn })),
+  "general/general/question-mark": () => import("@/registry/icons/general/general/question-mark").then((mod) => ({ default: mod.QuestionMark })),
+  "general/general/reader-mode": () => import("@/registry/icons/general/general/reader-mode").then((mod) => ({ default: mod.ReaderMode })),
+  "general/general/redo": () => import("@/registry/icons/general/general/redo").then((mod) => ({ default: mod.Redo })),
+  "general/general/reformat-code": () => import("@/registry/icons/general/general/reformat-code").then((mod) => ({ default: mod.ReformatCode })),
+  "general/general/refresh": () => import("@/registry/icons/general/general/refresh").then((mod) => ({ default: mod.Refresh })),
+  "general/general/remove": () => import("@/registry/icons/general/general/remove").then((mod) => ({ default: mod.Remove })),
+  "general/general/right": () => import("@/registry/icons/general/general/right").then((mod) => ({ default: mod.Right })),
+  "general/general/run-anything": () => import("@/registry/icons/general/general/run-anything").then((mod) => ({ default: mod.RunAnything })),
+  "general/general/save": () => import("@/registry/icons/general/general/save").then((mod) => ({ default: mod.Save })),
+  "general/general/scroll-down": () => import("@/registry/icons/general/general/scroll-down").then((mod) => ({ default: mod.ScrollDown })),
+  "general/general/scroll-up": () => import("@/registry/icons/general/general/scroll-up").then((mod) => ({ default: mod.ScrollUp })),
+  "general/general/search": () => import("@/registry/icons/general/general/search").then((mod) => ({ default: mod.Search })),
+  "general/general/separator-horizontal": () => import("@/registry/icons/general/general/separator-horizontal").then((mod) => ({ default: mod.SeparatorHorizontal })),
+  "general/general/setting-sync": () => import("@/registry/icons/general/general/setting-sync").then((mod) => ({ default: mod.SettingSync })),
+  "general/general/settings": () => import("@/registry/icons/general/general/settings").then((mod) => ({ default: mod.Settings })),
+  "general/general/show": () => import("@/registry/icons/general/general/show").then((mod) => ({ default: mod.Show })),
+  "general/general/show-as-tree": () => import("@/registry/icons/general/general/show-as-tree").then((mod) => ({ default: mod.ShowAsTree })),
+  "general/general/soft-wrap": () => import("@/registry/icons/general/general/soft-wrap").then((mod) => ({ default: mod.SoftWrap })),
+  "general/general/sort-alphabetically": () => import("@/registry/icons/general/general/sort-alphabetically").then((mod) => ({ default: mod.SortAlphabetically })),
+  "general/general/sort-by": () => import("@/registry/icons/general/general/sort-by").then((mod) => ({ default: mod.SortBy })),
+  "general/general/sort-by-duration": () => import("@/registry/icons/general/general/sort-by-duration").then((mod) => ({ default: mod.SortByDuration })),
+  "general/general/sort-by-type": () => import("@/registry/icons/general/general/sort-by-type").then((mod) => ({ default: mod.SortByType })),
+  "general/general/sort-by-usage": () => import("@/registry/icons/general/general/sort-by-usage").then((mod) => ({ default: mod.SortByUsage })),
+  "general/general/sort-by-visibility": () => import("@/registry/icons/general/general/sort-by-visibility").then((mod) => ({ default: mod.SortByVisibility })),
+  "general/general/split-horizontally": () => import("@/registry/icons/general/general/split-horizontally").then((mod) => ({ default: mod.SplitHorizontally })),
+  "general/general/split-vertically": () => import("@/registry/icons/general/general/split-vertically").then((mod) => ({ default: mod.SplitVertically })),
+  "general/general/subtypes": () => import("@/registry/icons/general/general/subtypes").then((mod) => ({ default: mod.Subtypes })),
+  "general/general/supertypes": () => import("@/registry/icons/general/general/supertypes").then((mod) => ({ default: mod.Supertypes })),
+  "general/general/undo": () => import("@/registry/icons/general/general/undo").then((mod) => ({ default: mod.Undo })),
+  "general/general/unlocked": () => import("@/registry/icons/general/general/unlocked").then((mod) => ({ default: mod.Unlocked })),
+  "general/general/up": () => import("@/registry/icons/general/general/up").then((mod) => ({ default: mod.Up })),
+  "general/general/upload": () => import("@/registry/icons/general/general/upload").then((mod) => ({ default: mod.Upload })),
+  "general/general/vcs": () => import("@/registry/icons/general/general/vcs").then((mod) => ({ default: mod.Vcs })),
+  "general/inline/browse": () => import("@/registry/icons/general/inline/browse").then((mod) => ({ default: mod.Browse })),
+  "general/inline/collapse": () => import("@/registry/icons/general/inline/collapse").then((mod) => ({ default: mod.Collapse })),
+  "general/inline/copy": () => import("@/registry/icons/general/inline/copy").then((mod) => ({ default: mod.Copy })),
+  "general/inline/exact-words": () => import("@/registry/icons/general/inline/exact-words").then((mod) => ({ default: mod.ExactWords })),
+  "general/inline/expand": () => import("@/registry/icons/general/inline/expand").then((mod) => ({ default: mod.Expand })),
+  "general/inline/filter-history": () => import("@/registry/icons/general/inline/filter-history").then((mod) => ({ default: mod.FilterHistory })),
+  "general/inline/inline-add": () => import("@/registry/icons/general/inline/inline-add").then((mod) => ({ default: mod.InlineAdd })),
+  "general/inline/inline-edit": () => import("@/registry/icons/general/inline/inline-edit").then((mod) => ({ default: mod.InlineEdit })),
+  "general/inline/inline-settings": () => import("@/registry/icons/general/inline/inline-settings").then((mod) => ({ default: mod.InlineSettings })),
+  "general/inline/match-case": () => import("@/registry/icons/general/inline/match-case").then((mod) => ({ default: mod.MatchCase })),
+  "general/inline/new-line": () => import("@/registry/icons/general/inline/new-line").then((mod) => ({ default: mod.NewLine })),
+  "general/inline/preserve-case": () => import("@/registry/icons/general/inline/preserve-case").then((mod) => ({ default: mod.PreserveCase })),
+  "general/inline/refresh": () => import("@/registry/icons/general/inline/refresh").then((mod) => ({ default: mod.Refresh })),
+  "general/inline/regex": () => import("@/registry/icons/general/inline/regex").then((mod) => ({ default: mod.Regex })),
+  "general/inline/search-history": () => import("@/registry/icons/general/inline/search-history").then((mod) => ({ default: mod.SearchHistory })),
+  "general/inline/sort-history": () => import("@/registry/icons/general/inline/sort-history").then((mod) => ({ default: mod.SortHistory })),
+  "general/inline/statistics-panel": () => import("@/registry/icons/general/inline/statistics-panel").then((mod) => ({ default: mod.StatisticsPanel })),
+  "general/inline/variables": () => import("@/registry/icons/general/inline/variables").then((mod) => ({ default: mod.Variables })),
+  "general/modifiers/final-mark": () => import("@/registry/icons/general/modifiers/final-mark").then((mod) => ({ default: mod.FinalMark })),
+  "general/modifiers/junit-test-mark": () => import("@/registry/icons/general/modifiers/junit-test-mark").then((mod) => ({ default: mod.JunitTestMark })),
+  "general/modifiers/locked": () => import("@/registry/icons/general/modifiers/locked").then((mod) => ({ default: mod.Locked })),
+  "general/modifiers/process-mark": () => import("@/registry/icons/general/modifiers/process-mark").then((mod) => ({ default: mod.ProcessMark })),
+  "general/modifiers/runnable-mark": () => import("@/registry/icons/general/modifiers/runnable-mark").then((mod) => ({ default: mod.RunnableMark })),
+  "general/modifiers/shared": () => import("@/registry/icons/general/modifiers/shared").then((mod) => ({ default: mod.Shared })),
+  "general/modifiers/static-mark": () => import("@/registry/icons/general/modifiers/static-mark").then((mod) => ({ default: mod.StaticMark })),
+  "general/modifiers/symlink": () => import("@/registry/icons/general/modifiers/symlink").then((mod) => ({ default: mod.Symlink })),
+  "general/modifiers/tab-alert": () => import("@/registry/icons/general/modifiers/tab-alert").then((mod) => ({ default: mod.TabAlert })),
+  "general/new-ui/dark-theme": () => import("@/registry/icons/general/new-ui/dark-theme").then((mod) => ({ default: mod.DarkTheme })),
+  "general/new-ui/dark-theme-selected": () => import("@/registry/icons/general/new-ui/dark-theme-selected").then((mod) => ({ default: mod.DarkThemeSelected })),
+  "general/new-ui/light-theme": () => import("@/registry/icons/general/new-ui/light-theme").then((mod) => ({ default: mod.LightTheme })),
+  "general/new-ui/light-theme-selected": () => import("@/registry/icons/general/new-ui/light-theme-selected").then((mod) => ({ default: mod.LightThemeSelected })),
+  "general/new-ui/system-theme": () => import("@/registry/icons/general/new-ui/system-theme").then((mod) => ({ default: mod.SystemTheme })),
+  "general/new-ui/system-theme-selected": () => import("@/registry/icons/general/new-ui/system-theme-selected").then((mod) => ({ default: mod.SystemThemeSelected })),
+  "general/object-browser/abbreviate-package-names": () => import("@/registry/icons/general/object-browser/abbreviate-package-names").then((mod) => ({ default: mod.AbbreviatePackageNames })),
+  "general/object-browser/compact-empty-packages": () => import("@/registry/icons/general/object-browser/compact-empty-packages").then((mod) => ({ default: mod.CompactEmptyPackages })),
+  "general/object-browser/flatten-modules": () => import("@/registry/icons/general/object-browser/flatten-modules").then((mod) => ({ default: mod.FlattenModules })),
+  "general/object-browser/flatten-packages": () => import("@/registry/icons/general/object-browser/flatten-packages").then((mod) => ({ default: mod.FlattenPackages })),
+  "general/object-browser/show-library-contents": () => import("@/registry/icons/general/object-browser/show-library-contents").then((mod) => ({ default: mod.ShowLibraryContents })),
+  "general/object-browser/show-members": () => import("@/registry/icons/general/object-browser/show-members").then((mod) => ({ default: mod.ShowMembers })),
+  "general/object-browser/sort-alphabetically": () => import("@/registry/icons/general/object-browser/sort-alphabetically").then((mod) => ({ default: mod.SortAlphabetically })),
+  "general/object-browser/sort-by-type": () => import("@/registry/icons/general/object-browser/sort-by-type").then((mod) => ({ default: mod.SortByType })),
+  "general/object-browser/sort-by-usage": () => import("@/registry/icons/general/object-browser/sort-by-usage").then((mod) => ({ default: mod.SortByUsage })),
+  "general/object-browser/sort-by-visibility": () => import("@/registry/icons/general/object-browser/sort-by-visibility").then((mod) => ({ default: mod.SortByVisibility })),
+  "general/progress-bar/pause": () => import("@/registry/icons/general/progress-bar/pause").then((mod) => ({ default: mod.Pause })),
+  "general/progress-bar/pause-hovered": () => import("@/registry/icons/general/progress-bar/pause-hovered").then((mod) => ({ default: mod.PauseHovered })),
+  "general/progress-bar/resume": () => import("@/registry/icons/general/progress-bar/resume").then((mod) => ({ default: mod.Resume })),
+  "general/progress-bar/resume-hovered": () => import("@/registry/icons/general/progress-bar/resume-hovered").then((mod) => ({ default: mod.ResumeHovered })),
+  "general/progress-bar/stop": () => import("@/registry/icons/general/progress-bar/stop").then((mod) => ({ default: mod.Stop })),
+  "general/progress-bar/stop-hovered": () => import("@/registry/icons/general/progress-bar/stop-hovered").then((mod) => ({ default: mod.StopHovered })),
+  "general/rating/feedback-rating": () => import("@/registry/icons/general/rating/feedback-rating").then((mod) => ({ default: mod.FeedbackRating })),
+  "general/rating/feedback-rating-focused": () => import("@/registry/icons/general/rating/feedback-rating-focused").then((mod) => ({ default: mod.FeedbackRatingFocused })),
+  "general/rating/feedback-rating-focused-on": () => import("@/registry/icons/general/rating/feedback-rating-focused-on").then((mod) => ({ default: mod.FeedbackRatingFocusedOn })),
+  "general/rating/feedback-rating-on": () => import("@/registry/icons/general/rating/feedback-rating-on").then((mod) => ({ default: mod.FeedbackRatingOn })),
+  "general/setting-sync/conflict": () => import("@/registry/icons/general/setting-sync/conflict").then((mod) => ({ default: mod.Conflict })),
+  "general/setting-sync/local-changes": () => import("@/registry/icons/general/setting-sync/local-changes").then((mod) => ({ default: mod.LocalChanges })),
+  "general/setting-sync/remote-changes": () => import("@/registry/icons/general/setting-sync/remote-changes").then((mod) => ({ default: mod.RemoteChanges })),
+  "general/setting-sync/status-disabled": () => import("@/registry/icons/general/setting-sync/status-disabled").then((mod) => ({ default: mod.StatusDisabled })),
+  "general/setting-sync/status-enabled": () => import("@/registry/icons/general/setting-sync/status-enabled").then((mod) => ({ default: mod.StatusEnabled })),
+  "general/spinner/loader": () => import("@/registry/icons/general/spinner/loader").then((mod) => ({ default: mod.Loader })),
+  "general/status/error": () => import("@/registry/icons/general/status/error").then((mod) => ({ default: mod.Error })),
+  "general/status/error-dialog": () => import("@/registry/icons/general/status/error-dialog").then((mod) => ({ default: mod.ErrorDialog })),
+  "general/status/error-outline": () => import("@/registry/icons/general/status/error-outline").then((mod) => ({ default: mod.ErrorOutline })),
+  "general/status/info": () => import("@/registry/icons/general/status/info").then((mod) => ({ default: mod.Info })),
+  "general/status/info-outline": () => import("@/registry/icons/general/status/info-outline").then((mod) => ({ default: mod.InfoOutline })),
+  "general/status/information-dialog": () => import("@/registry/icons/general/status/information-dialog").then((mod) => ({ default: mod.InformationDialog })),
+  "general/status/question-dialog": () => import("@/registry/icons/general/status/question-dialog").then((mod) => ({ default: mod.QuestionDialog })),
+  "general/status/success": () => import("@/registry/icons/general/status/success").then((mod) => ({ default: mod.Success })),
+  "general/status/success-dialog": () => import("@/registry/icons/general/status/success-dialog").then((mod) => ({ default: mod.SuccessDialog })),
+  "general/status/success-login": () => import("@/registry/icons/general/status/success-login").then((mod) => ({ default: mod.SuccessLogin })),
+  "general/status/warning": () => import("@/registry/icons/general/status/warning").then((mod) => ({ default: mod.Warning })),
+  "general/status/warning-dialog": () => import("@/registry/icons/general/status/warning-dialog").then((mod) => ({ default: mod.WarningDialog })),
+  "general/status/warning-outline": () => import("@/registry/icons/general/status/warning-outline").then((mod) => ({ default: mod.WarningOutline })),
+  "general/tool-windows/ai-assistant-tool-window": () => import("@/registry/icons/general/tool-windows/ai-assistant-tool-window").then((mod) => ({ default: mod.AiAssistantToolWindow })),
+  "general/tool-windows/amazon-emr": () => import("@/registry/icons/general/tool-windows/amazon-emr").then((mod) => ({ default: mod.AmazonEMR })),
+  "general/tool-windows/ant": () => import("@/registry/icons/general/tool-windows/ant").then((mod) => ({ default: mod.Ant })),
+  "general/tool-windows/app-engine-tool-window": () => import("@/registry/icons/general/tool-windows/app-engine-tool-window").then((mod) => ({ default: mod.AppEngineToolWindow })),
+  "general/tool-windows/aws-glue-tool-window": () => import("@/registry/icons/general/tool-windows/aws-glue-tool-window").then((mod) => ({ default: mod.AwsGlueToolWindow })),
+  "general/tool-windows/bookmarks": () => import("@/registry/icons/general/tool-windows/bookmarks").then((mod) => ({ default: mod.Bookmarks })),
+  "general/tool-windows/build": () => import("@/registry/icons/general/tool-windows/build").then((mod) => ({ default: mod.Build })),
+  "general/tool-windows/build-server-protocol": () => import("@/registry/icons/general/tool-windows/build-server-protocol").then((mod) => ({ default: mod.BuildServerProtocol })),
+  "general/tool-windows/cdi-tool-window": () => import("@/registry/icons/general/tool-windows/cdi-tool-window").then((mod) => ({ default: mod.CdiToolWindow })),
+  "general/tool-windows/changes": () => import("@/registry/icons/general/tool-windows/changes").then((mod) => ({ default: mod.Changes })),
+  "general/tool-windows/cmake-tool-window": () => import("@/registry/icons/general/tool-windows/cmake-tool-window").then((mod) => ({ default: mod.CMakeToolWindow })),
+  "general/tool-windows/commit": () => import("@/registry/icons/general/tool-windows/commit").then((mod) => ({ default: mod.Commit })),
+  "general/tool-windows/concurrency-diagram-toolwindow": () => import("@/registry/icons/general/tool-windows/concurrency-diagram-toolwindow").then((mod) => ({ default: mod.ConcurrencyDiagramToolwindow })),
+  "general/tool-windows/coverage": () => import("@/registry/icons/general/tool-windows/coverage").then((mod) => ({ default: mod.Coverage })),
+  "general/tool-windows/cwm-access": () => import("@/registry/icons/general/tool-windows/cwm-access").then((mod) => ({ default: mod.CwmAccess })),
+  "general/tool-windows/cwm-users": () => import("@/registry/icons/general/tool-windows/cwm-users").then((mod) => ({ default: mod.CwmUsers })),
+  "general/tool-windows/cypress": () => import("@/registry/icons/general/tool-windows/cypress").then((mod) => ({ default: mod.Cypress })),
+  "general/tool-windows/database-changes": () => import("@/registry/icons/general/tool-windows/database-changes").then((mod) => ({ default: mod.DatabaseChanges })),
+  "general/tool-windows/databricks-tool-window": () => import("@/registry/icons/general/tool-windows/databricks-tool-window").then((mod) => ({ default: mod.DatabricksToolWindow })),
+  "general/tool-windows/dataproc-tool-window": () => import("@/registry/icons/general/tool-windows/dataproc-tool-window").then((mod) => ({ default: mod.DataprocToolWindow })),
+  "general/tool-windows/dbms": () => import("@/registry/icons/general/tool-windows/dbms").then((mod) => ({ default: mod.Dbms })),
+  "general/tool-windows/debug": () => import("@/registry/icons/general/tool-windows/debug").then((mod) => ({ default: mod.Debug })),
+  "general/tool-windows/dependencies": () => import("@/registry/icons/general/tool-windows/dependencies").then((mod) => ({ default: mod.Dependencies })),
+  "general/tool-windows/documentation": () => import("@/registry/icons/general/tool-windows/documentation").then((mod) => ({ default: mod.Documentation })),
+  "general/tool-windows/donate": () => import("@/registry/icons/general/tool-windows/donate").then((mod) => ({ default: mod.Donate })),
+  "general/tool-windows/endpoints": () => import("@/registry/icons/general/tool-windows/endpoints").then((mod) => ({ default: mod.Endpoints })),
+  "general/tool-windows/exception-analyzer": () => import("@/registry/icons/general/tool-windows/exception-analyzer").then((mod) => ({ default: mod.ExceptionAnalyzer })),
+  "general/tool-windows/feedback": () => import("@/registry/icons/general/tool-windows/feedback").then((mod) => ({ default: mod.Feedback })),
+  "general/tool-windows/find": () => import("@/registry/icons/general/tool-windows/find").then((mod) => ({ default: mod.Find })),
+  "general/tool-windows/find-external-usages": () => import("@/registry/icons/general/tool-windows/find-external-usages").then((mod) => ({ default: mod.FindExternalUsages })),
+  "general/tool-windows/git-lab-tool-window": () => import("@/registry/icons/general/tool-windows/git-lab-tool-window").then((mod) => ({ default: mod.GitLabToolWindow })),
+  "general/tool-windows/gradle": () => import("@/registry/icons/general/tool-windows/gradle").then((mod) => ({ default: mod.Gradle })),
+  "general/tool-windows/graph-qltool-window": () => import("@/registry/icons/general/tool-windows/graph-qltool-window").then((mod) => ({ default: mod.GraphQLToolWindow })),
+  "general/tool-windows/hierarchy": () => import("@/registry/icons/general/tool-windows/hierarchy").then((mod) => ({ default: mod.Hierarchy })),
+  "general/tool-windows/hive": () => import("@/registry/icons/general/tool-windows/hive").then((mod) => ({ default: mod.Hive })),
+  "general/tool-windows/java-eetool-window": () => import("@/registry/icons/general/tool-windows/java-eetool-window").then((mod) => ({ default: mod.JavaEEToolWindow })),
+  "general/tool-windows/jpa-console-tool-window": () => import("@/registry/icons/general/tool-windows/jpa-console-tool-window").then((mod) => ({ default: mod.JpaConsoleToolWindow })),
+  "general/tool-windows/jpa-tool-window": () => import("@/registry/icons/general/tool-windows/jpa-tool-window").then((mod) => ({ default: mod.JpaToolWindow })),
+  "general/tool-windows/jupyter-tool-window": () => import("@/registry/icons/general/tool-windows/jupyter-tool-window").then((mod) => ({ default: mod.JupyterToolWindow })),
+  "general/tool-windows/kafka": () => import("@/registry/icons/general/tool-windows/kafka").then((mod) => ({ default: mod.Kafka })),
+  "general/tool-windows/kotlin-tool-window": () => import("@/registry/icons/general/tool-windows/kotlin-tool-window").then((mod) => ({ default: mod.KotlinToolWindow })),
+  "general/tool-windows/learn": () => import("@/registry/icons/general/tool-windows/learn").then((mod) => ({ default: mod.Learn })),
+  "general/tool-windows/makefile-tool-window": () => import("@/registry/icons/general/tool-windows/makefile-tool-window").then((mod) => ({ default: mod.MakefileToolWindow })),
+  "general/tool-windows/maven": () => import("@/registry/icons/general/tool-windows/maven").then((mod) => ({ default: mod.Maven })),
+  "general/tool-windows/messages": () => import("@/registry/icons/general/tool-windows/messages").then((mod) => ({ default: mod.Messages })),
+  "general/tool-windows/new-ui": () => import("@/registry/icons/general/tool-windows/new-ui").then((mod) => ({ default: mod.NewUI })),
+  "general/tool-windows/notifications": () => import("@/registry/icons/general/tool-windows/notifications").then((mod) => ({ default: mod.Notifications })),
+  "general/tool-windows/npm": () => import("@/registry/icons/general/tool-windows/npm").then((mod) => ({ default: mod.Npm })),
+  "general/tool-windows/package-manager": () => import("@/registry/icons/general/tool-windows/package-manager").then((mod) => ({ default: mod.PackageManager })),
+  "general/tool-windows/persistence": () => import("@/registry/icons/general/tool-windows/persistence").then((mod) => ({ default: mod.Persistence })),
+  "general/tool-windows/problems": () => import("@/registry/icons/general/tool-windows/problems").then((mod) => ({ default: mod.Problems })),
+  "general/tool-windows/profiler": () => import("@/registry/icons/general/tool-windows/profiler").then((mod) => ({ default: mod.Profiler })),
+  "general/tool-windows/profiler-android": () => import("@/registry/icons/general/tool-windows/profiler-android").then((mod) => ({ default: mod.ProfilerAndroid })),
+  "general/tool-windows/project": () => import("@/registry/icons/general/tool-windows/project").then((mod) => ({ default: mod.Project })),
+  "general/tool-windows/pull-requests": () => import("@/registry/icons/general/tool-windows/pull-requests").then((mod) => ({ default: mod.PullRequests })),
+  "general/tool-windows/python-console-tool-window": () => import("@/registry/icons/general/tool-windows/python-console-tool-window").then((mod) => ({ default: mod.PythonConsoleToolWindow })),
+  "general/tool-windows/r-engine-tool-window": () => import("@/registry/icons/general/tool-windows/r-engine-tool-window").then((mod) => ({ default: mod.REngineToolWindow })),
+  "general/tool-windows/rebuild": () => import("@/registry/icons/general/tool-windows/rebuild").then((mod) => ({ default: mod.Rebuild })),
+  "general/tool-windows/repositories": () => import("@/registry/icons/general/tool-windows/repositories").then((mod) => ({ default: mod.Repositories })),
+  "general/tool-windows/run": () => import("@/registry/icons/general/tool-windows/run").then((mod) => ({ default: mod.Run })),
+  "general/tool-windows/rust": () => import("@/registry/icons/general/tool-windows/rust").then((mod) => ({ default: mod.Rust })),
+  "general/tool-windows/sbt-icon": () => import("@/registry/icons/general/tool-windows/sbt-icon").then((mod) => ({ default: mod.SbtIcon })),
+  "general/tool-windows/sbt-shell": () => import("@/registry/icons/general/tool-windows/sbt-shell").then((mod) => ({ default: mod.SbtShell })),
+  "general/tool-windows/scala-profiler": () => import("@/registry/icons/general/tool-windows/scala-profiler").then((mod) => ({ default: mod.ScalaProfiler })),
+  "general/tool-windows/sci-view": () => import("@/registry/icons/general/tool-windows/sci-view").then((mod) => ({ default: mod.SciView })),
+  "general/tool-windows/services": () => import("@/registry/icons/general/tool-windows/services").then((mod) => ({ default: mod.Services })),
+  "general/tool-windows/setting-sync": () => import("@/registry/icons/general/tool-windows/setting-sync").then((mod) => ({ default: mod.SettingSync })),
+  "general/tool-windows/space-tool-window": () => import("@/registry/icons/general/tool-windows/space-tool-window").then((mod) => ({ default: mod.SpaceToolWindow })),
+  "general/tool-windows/spark": () => import("@/registry/icons/general/tool-windows/spark").then((mod) => ({ default: mod.Spark })),
+  "general/tool-windows/spring": () => import("@/registry/icons/general/tool-windows/spring").then((mod) => ({ default: mod.Spring })),
+  "general/tool-windows/statistics-event-log": () => import("@/registry/icons/general/tool-windows/statistics-event-log").then((mod) => ({ default: mod.StatisticsEventLog })),
+  "general/tool-windows/structure": () => import("@/registry/icons/general/tool-windows/structure").then((mod) => ({ default: mod.Structure })),
+  "general/tool-windows/task": () => import("@/registry/icons/general/tool-windows/task").then((mod) => ({ default: mod.Task })),
+  "general/tool-windows/terminal": () => import("@/registry/icons/general/tool-windows/terminal").then((mod) => ({ default: mod.Terminal })),
+  "general/tool-windows/todo": () => import("@/registry/icons/general/tool-windows/todo").then((mod) => ({ default: mod.Todo })),
+  "general/tool-windows/tool-window-bazel": () => import("@/registry/icons/general/tool-windows/tool-window-bazel").then((mod) => ({ default: mod.ToolWindowBazel })),
+  "general/tool-windows/tool-window-bean-validator": () => import("@/registry/icons/general/tool-windows/tool-window-bean-validator").then((mod) => ({ default: mod.ToolWindowBeanValidator })),
+  "general/tool-windows/tool-window-big-data": () => import("@/registry/icons/general/tool-windows/tool-window-big-data").then((mod) => ({ default: mod.ToolWindowBigData })),
+  "general/tool-windows/tool-window-cadence": () => import("@/registry/icons/general/tool-windows/tool-window-cadence").then((mod) => ({ default: mod.ToolWindowCadence })),
+  "general/tool-windows/tool-window-cell-explorer": () => import("@/registry/icons/general/tool-windows/tool-window-cell-explorer").then((mod) => ({ default: mod.ToolWindowCellExplorer })),
+  "general/tool-windows/tool-window-check-details": () => import("@/registry/icons/general/tool-windows/tool-window-check-details").then((mod) => ({ default: mod.ToolWindowCheckDetails })),
+  "general/tool-windows/tool-window-clock": () => import("@/registry/icons/general/tool-windows/tool-window-clock").then((mod) => ({ default: mod.ToolWindowClock })),
+  "general/tool-windows/tool-window-dart": () => import("@/registry/icons/general/tool-windows/tool-window-dart").then((mod) => ({ default: mod.ToolWindowDart })),
+  "general/tool-windows/tool-window-data-view": () => import("@/registry/icons/general/tool-windows/tool-window-data-view").then((mod) => ({ default: mod.ToolWindowDataView })),
+  "general/tool-windows/tool-window-default": () => import("@/registry/icons/general/tool-windows/tool-window-default").then((mod) => ({ default: mod.ToolWindowDefault })),
+  "general/tool-windows/tool-window-django": () => import("@/registry/icons/general/tool-windows/tool-window-django").then((mod) => ({ default: mod.ToolWindowDjango })),
+  "general/tool-windows/tool-window-duplicates": () => import("@/registry/icons/general/tool-windows/tool-window-duplicates").then((mod) => ({ default: mod.ToolWindowDuplicates })),
+  "general/tool-windows/tool-window-edu-course-task": () => import("@/registry/icons/general/tool-windows/tool-window-edu-course-task").then((mod) => ({ default: mod.ToolWindowEduCourseTask })),
+  "general/tool-windows/tool-window-ejb": () => import("@/registry/icons/general/tool-windows/tool-window-ejb").then((mod) => ({ default: mod.ToolWindowEJB })),
+  "general/tool-windows/tool-window-hadoop": () => import("@/registry/icons/general/tool-windows/tool-window-hadoop").then((mod) => ({ default: mod.ToolWindowHadoop })),
+  "general/tool-windows/tool-window-hugging-face": () => import("@/registry/icons/general/tool-windows/tool-window-hugging-face").then((mod) => ({ default: mod.ToolWindowHuggingFace })),
+  "general/tool-windows/tool-window-jpab-structure": () => import("@/registry/icons/general/tool-windows/tool-window-jpab-structure").then((mod) => ({ default: mod.ToolWindowJPabStructure })),
+  "general/tool-windows/tool-window-json-path": () => import("@/registry/icons/general/tool-windows/tool-window-json-path").then((mod) => ({ default: mod.ToolWindowJsonPath })),
+  "general/tool-windows/tool-window-kotlin-notebooks": () => import("@/registry/icons/general/tool-windows/tool-window-kotlin-notebooks").then((mod) => ({ default: mod.ToolWindowKotlinNotebooks })),
+  "general/tool-windows/tool-window-kubernetes": () => import("@/registry/icons/general/tool-windows/tool-window-kubernetes").then((mod) => ({ default: mod.ToolWindowKubernetes })),
+  "general/tool-windows/tool-window-meson": () => import("@/registry/icons/general/tool-windows/tool-window-meson").then((mod) => ({ default: mod.ToolWindowMeson })),
+  "general/tool-windows/tool-window-model-checker": () => import("@/registry/icons/general/tool-windows/tool-window-model-checker").then((mod) => ({ default: mod.ToolWindowModelChecker })),
+  "general/tool-windows/tool-window-platform-io": () => import("@/registry/icons/general/tool-windows/tool-window-platform-io").then((mod) => ({ default: mod.ToolWindowPlatformIO })),
+  "general/tool-windows/tool-window-pub-serve": () => import("@/registry/icons/general/tool-windows/tool-window-pub-serve").then((mod) => ({ default: mod.ToolWindowPubServe })),
+  "general/tool-windows/tool-window-record-debug": () => import("@/registry/icons/general/tool-windows/tool-window-record-debug").then((mod) => ({ default: mod.ToolWindowRecordDebug })),
+  "general/tool-windows/tool-window-rgraph": () => import("@/registry/icons/general/tool-windows/tool-window-rgraph").then((mod) => ({ default: mod.ToolWindowRGraph })),
+  "general/tool-windows/tool-window-rhtml": () => import("@/registry/icons/general/tool-windows/tool-window-rhtml").then((mod) => ({ default: mod.ToolWindowRHtml })),
+  "general/tool-windows/tool-window-rpackages": () => import("@/registry/icons/general/tool-windows/tool-window-rpackages").then((mod) => ({ default: mod.ToolWindowRPackages })),
+  "general/tool-windows/tool-window-run-with-coverage": () => import("@/registry/icons/general/tool-windows/tool-window-run-with-coverage").then((mod) => ({ default: mod.ToolWindowRunWithCoverage })),
+  "general/tool-windows/tool-window-team-city": () => import("@/registry/icons/general/tool-windows/tool-window-team-city").then((mod) => ({ default: mod.ToolWindowTeamCity })),
+  "general/tool-windows/tool-window-test-spark": () => import("@/registry/icons/general/tool-windows/tool-window-test-spark").then((mod) => ({ default: mod.ToolWindowTestSpark })),
+  "general/tool-windows/tool-window-timer": () => import("@/registry/icons/general/tool-windows/tool-window-timer").then((mod) => ({ default: mod.ToolWindowTimer })),
+  "general/tool-windows/tool-window-type-trace-view": () => import("@/registry/icons/general/tool-windows/tool-window-type-trace-view").then((mod) => ({ default: mod.ToolWindowTypeTraceView })),
+  "general/tool-windows/tool-window-variable-view": () => import("@/registry/icons/general/tool-windows/tool-window-variable-view").then((mod) => ({ default: mod.ToolWindowVariableView })),
+  "general/tool-windows/tool-window-you-track": () => import("@/registry/icons/general/tool-windows/tool-window-you-track").then((mod) => ({ default: mod.ToolWindowYouTrack })),
+  "general/tool-windows/toolwindow-flink": () => import("@/registry/icons/general/tool-windows/toolwindow-flink").then((mod) => ({ default: mod.ToolwindowFlink })),
+  "general/tool-windows/transfer": () => import("@/registry/icons/general/tool-windows/transfer").then((mod) => ({ default: mod.Transfer })),
+  "general/tool-windows/transfer-tool-window": () => import("@/registry/icons/general/tool-windows/transfer-tool-window").then((mod) => ({ default: mod.TransferToolWindow })),
+  "general/tool-windows/unknown": () => import("@/registry/icons/general/tool-windows/unknown").then((mod) => ({ default: mod.Unknown })),
+  "general/tool-windows/vcs": () => import("@/registry/icons/general/tool-windows/vcs").then((mod) => ({ default: mod.Vcs })),
+  "general/tool-windows/web": () => import("@/registry/icons/general/tool-windows/web").then((mod) => ({ default: mod.Web })),
+  "general/tool-windows/web-inspector": () => import("@/registry/icons/general/tool-windows/web-inspector").then((mod) => ({ default: mod.WebInspector })),
+  "general/tool-windows/web-server": () => import("@/registry/icons/general/tool-windows/web-server").then((mod) => ({ default: mod.WebServer })),
+  "general/tool-windows/west-tool-window": () => import("@/registry/icons/general/tool-windows/west-tool-window").then((mod) => ({ default: mod.WestToolWindow })),
+  "general/tool-windows/writerside": () => import("@/registry/icons/general/tool-windows/writerside").then((mod) => ({ default: mod.Writerside })),
+  "general/tool-windows/writerside-preview": () => import("@/registry/icons/general/tool-windows/writerside-preview").then((mod) => ({ default: mod.WritersidePreview })),
+  "general/usages/filterdups": () => import("@/registry/icons/general/usages/filterdups").then((mod) => ({ default: mod.Filterdups })),
+  "general/usages/show-import-statements": () => import("@/registry/icons/general/usages/show-import-statements").then((mod) => ({ default: mod.ShowImportStatements })),
+  "general/usages/show-read-access": () => import("@/registry/icons/general/usages/show-read-access").then((mod) => ({ default: mod.ShowReadAccess })),
+  "general/usages/show-write-access": () => import("@/registry/icons/general/usages/show-write-access").then((mod) => ({ default: mod.ShowWriteAccess })),
+  "general/windows/close": () => import("@/registry/icons/general/windows/close").then((mod) => ({ default: mod.Close })),
+  "general/windows/close-hover": () => import("@/registry/icons/general/windows/close-hover").then((mod) => ({ default: mod.CloseHover })),
+  "general/windows/close-inactive": () => import("@/registry/icons/general/windows/close-inactive").then((mod) => ({ default: mod.CloseInactive })),
+  "general/windows/close-small": () => import("@/registry/icons/general/windows/close-small").then((mod) => ({ default: mod.CloseSmall })),
+  "general/windows/collapse": () => import("@/registry/icons/general/windows/collapse").then((mod) => ({ default: mod.Collapse })),
+  "general/windows/help": () => import("@/registry/icons/general/windows/help").then((mod) => ({ default: mod.Help })),
+  "general/windows/help-inactive": () => import("@/registry/icons/general/windows/help-inactive").then((mod) => ({ default: mod.HelpInactive })),
+  "general/windows/maximize": () => import("@/registry/icons/general/windows/maximize").then((mod) => ({ default: mod.Maximize })),
+  "general/windows/maximize-inactive": () => import("@/registry/icons/general/windows/maximize-inactive").then((mod) => ({ default: mod.MaximizeInactive })),
+  "general/windows/maximize-small": () => import("@/registry/icons/general/windows/maximize-small").then((mod) => ({ default: mod.MaximizeSmall })),
+  "general/windows/minimize": () => import("@/registry/icons/general/windows/minimize").then((mod) => ({ default: mod.Minimize })),
+  "general/windows/minimize-inactive": () => import("@/registry/icons/general/windows/minimize-inactive").then((mod) => ({ default: mod.MinimizeInactive })),
+  "general/windows/minimize-small": () => import("@/registry/icons/general/windows/minimize-small").then((mod) => ({ default: mod.MinimizeSmall })),
+  "general/windows/restore": () => import("@/registry/icons/general/windows/restore").then((mod) => ({ default: mod.Restore })),
+  "general/windows/restore-inactive": () => import("@/registry/icons/general/windows/restore-inactive").then((mod) => ({ default: mod.RestoreInactive })),
+  "general/windows/restore-small": () => import("@/registry/icons/general/windows/restore-small").then((mod) => ({ default: mod.RestoreSmall })),
+  "generated": () => import("@/registry/icons/nodes/generated").then((mod) => ({ default: mod.Generated })),
+  "generated-source": () => import("@/registry/icons/nodes/generated-source").then((mod) => ({ default: mod.GeneratedSource })),
+  "generated-test-root": () => import("@/registry/icons/nodes/generated-test-root").then((mod) => ({ default: mod.GeneratedTestRoot })),
+  "generic-ui": () => import("@/registry/icons/plugins/jpa/generic-ui").then((mod) => ({ default: mod.GenericUI })),
+  "getter-in-xml": () => import("@/registry/icons/plugins/java-ee/getter-in-xml").then((mod) => ({ default: mod.GetterInXml })),
+  "gift": () => import("@/registry/icons/general/actions/gift").then((mod) => ({ default: mod.Gift })),
+  "git-lab-logo": () => import("@/registry/icons/plugins/gitlab/git-lab-logo").then((mod) => ({ default: mod.GitLabLogo })),
+  "git-lab-tool-window": () => import("@/registry/icons/general/tool-windows/git-lab-tool-window").then((mod) => ({ default: mod.GitLabToolWindow })),
+  "git-lab-warning": () => import("@/registry/icons/plugins/gitlab/git-lab-warning").then((mod) => ({ default: mod.GitLabWarning })),
+  "github": () => import("@/registry/icons/plugins/github/github").then((mod) => ({ default: mod.Github })),
+  "github-warning": () => import("@/registry/icons/plugins/github/github-warning").then((mod) => ({ default: mod.GithubWarning })),
+  "go-to-table": () => import("@/registry/icons/database/go-to-table").then((mod) => ({ default: mod.GoToTable })),
+  "google-cloud-dataproc": () => import("@/registry/icons/database/google-cloud-dataproc").then((mod) => ({ default: mod.GoogleCloudDataproc })),
+  "google-cloud-spanner": () => import("@/registry/icons/database/google-cloud-spanner").then((mod) => ({ default: mod.GoogleCloudSpanner })),
+  "google-test": () => import("@/registry/icons/plugins/cidr/google-test").then((mod) => ({ default: mod.GoogleTest })),
+  "gradle-load-changes": () => import("@/registry/icons/build/gradle-load-changes").then((mod) => ({ default: mod.GradleLoadChanges })),
+  "gradle-navigate": () => import("@/registry/icons/build/gradle-navigate").then((mod) => ({ default: mod.GradleNavigate })),
+  "gradle-subproject": () => import("@/registry/icons/build/gradle-subproject").then((mod) => ({ default: mod.GradleSubproject })),
+  "graph-layout": () => import("@/registry/icons/general/general/graph-layout").then((mod) => ({ default: mod.GraphLayout })),
+  "graph-ql": () => import("@/registry/icons/plugins/graphql/graph-ql").then((mod) => ({ default: mod.GraphQL })),
+  "graph-qlcongif": () => import("@/registry/icons/plugins/graphql/graph-qlcongif").then((mod) => ({ default: mod.GraphQLCongif })),
+  "graph-qlschema": () => import("@/registry/icons/plugins/graphql/graph-qlschema").then((mod) => ({ default: mod.GraphQLSchema })),
+  "graph-qltool-window": () => import("@/registry/icons/general/tool-windows/graph-qltool-window").then((mod) => ({ default: mod.GraphQLToolWindow })),
+  "greenplum": () => import("@/registry/icons/database/greenplum").then((mod) => ({ default: mod.Greenplum })),
+  "grey-key": () => import("@/registry/icons/database/grey-key").then((mod) => ({ default: mod.GreyKey })),
+  "grid": () => import("@/registry/icons/editor-icons/grid").then((mod) => ({ default: mod.Grid })),
+  "groovy": () => import("@/registry/icons/plugins/java-ee/groovy").then((mod) => ({ default: mod.Groovy })),
+  "group-by-class": () => import("@/registry/icons/general/actions/group-by-class").then((mod) => ({ default: mod.GroupByClass })),
+  "group-by-file": () => import("@/registry/icons/general/actions/group-by-file").then((mod) => ({ default: mod.GroupByFile })),
+  "group-by-method": () => import("@/registry/icons/general/actions/group-by-method").then((mod) => ({ default: mod.GroupByMethod })),
+  "group-by-module": () => import("@/registry/icons/general/actions/group-by-module").then((mod) => ({ default: mod.GroupByModule })),
+  "group-by-package": () => import("@/registry/icons/general/actions/group-by-package").then((mod) => ({ default: mod.GroupByPackage })),
+  "group-by-test-production": () => import("@/registry/icons/general/actions/group-by-test-production").then((mod) => ({ default: mod.GroupByTestProduction })),
+  "group-qualified-name": () => import("@/registry/icons/plugins/cidr/group-qualified-name").then((mod) => ({ default: mod.GroupQualifiedName })),
+  "groups": () => import("@/registry/icons/general/general/groups").then((mod) => ({ default: mod.Groups })),
+  "gvariable": () => import("@/registry/icons/nodes/gvariable").then((mod) => ({ default: mod.Gvariable })),
+  "h": () => import("@/registry/icons/plugins/cidr/h").then((mod) => ({ default: mod.H })),
+  "h2": () => import("@/registry/icons/database/h2").then((mod) => ({ default: mod.H2 })),
+  "haml": () => import("@/registry/icons/plugins/ruby/haml").then((mod) => ({ default: mod.Haml })),
+  "hana": () => import("@/registry/icons/database/hana").then((mod) => ({ default: mod.Hana })),
+  "hash-cluster": () => import("@/registry/icons/database/hash-cluster").then((mod) => ({ default: mod.HashCluster })),
+  "hash-key": () => import("@/registry/icons/plugins/ruby/hash-key").then((mod) => ({ default: mod.HashKey })),
+  "hash-table": () => import("@/registry/icons/database/hash-table").then((mod) => ({ default: mod.HashTable })),
+  "hash-table-key": () => import("@/registry/icons/database/hash-table-key").then((mod) => ({ default: mod.HashTableKey })),
+  "haskell": () => import("@/registry/icons/file-types/haskell").then((mod) => ({ default: mod.Haskell })),
+  "header-level-down": () => import("@/registry/icons/general/editor/header-level-down").then((mod) => ({ default: mod.HeaderLevelDown })),
+  "header-level-up": () => import("@/registry/icons/general/editor/header-level-up").then((mod) => ({ default: mod.HeaderLevelUp })),
+  "helm": () => import("@/registry/icons/plugins/kubernetes/helm").then((mod) => ({ default: mod.Helm })),
+  "helm-archive": () => import("@/registry/icons/plugins/kubernetes/helm-archive").then((mod) => ({ default: mod.HelmArchive })),
+  "helm-chart": () => import("@/registry/icons/plugins/kubernetes/helm-chart").then((mod) => ({ default: mod.HelmChart })),
+  "helm-chart-lock": () => import("@/registry/icons/plugins/kubernetes/helm-chart-lock").then((mod) => ({ default: mod.HelmChartLock })),
+  "helm-directory": () => import("@/registry/icons/plugins/kubernetes/helm-directory").then((mod) => ({ default: mod.HelmDirectory })),
+  "helm-notes": () => import("@/registry/icons/plugins/kubernetes/helm-notes").then((mod) => ({ default: mod.HelmNotes })),
+  "helm-requirments": () => import("@/registry/icons/plugins/kubernetes/helm-requirments").then((mod) => ({ default: mod.HelmRequirments })),
+  "helm-requirments-lock": () => import("@/registry/icons/plugins/kubernetes/helm-requirments-lock").then((mod) => ({ default: mod.HelmRequirmentsLock })),
+  "helm-undeployable": () => import("@/registry/icons/plugins/kubernetes/helm-undeployable").then((mod) => ({ default: mod.HelmUndeployable })),
+  "helmvalues-schema": () => import("@/registry/icons/plugins/kubernetes/helmvalues-schema").then((mod) => ({ default: mod.HelmvaluesSchema })),
+  "help-inactive": () => import("@/registry/icons/general/windows/help-inactive").then((mod) => ({ default: mod.HelpInactive })),
+  "helpers-folder-closed": () => import("@/registry/icons/plugins/ruby/helpers-folder-closed").then((mod) => ({ default: mod.HelpersFolderClosed })),
+  "hibernate": () => import("@/registry/icons/plugins/java-ee/hibernate").then((mod) => ({ default: mod.Hibernate })),
+  "hibernate-event": () => import("@/registry/icons/plugins/jpa/hibernate-event").then((mod) => ({ default: mod.HibernateEvent })),
+  "hide": () => import("@/registry/icons/general/general/hide").then((mod) => ({ default: mod.Hide })),
+  "hierarchy": () => import("@/registry/icons/general/tool-windows/hierarchy").then((mod) => ({ default: mod.Hierarchy })),
+  "high-all": () => import("@/registry/icons/plugins/package-checker/high-all").then((mod) => ({ default: mod.HighAll })),
+  "high-all-tree": () => import("@/registry/icons/plugins/package-checker/high-all-tree").then((mod) => ({ default: mod.HighAllTree })),
+  "high-all-tree-outline": () => import("@/registry/icons/plugins/package-checker/high-all-tree-outline").then((mod) => ({ default: mod.HighAllTreeOutline })),
+  "history": () => import("@/registry/icons/general/general/history").then((mod) => ({ default: mod.History })),
+  "hive-file-type": () => import("@/registry/icons/database/hive-file-type").then((mod) => ({ default: mod.HiveFileType })),
+  "home": () => import("@/registry/icons/plugins/java-ee/home").then((mod) => ({ default: mod.Home })),
+  "home-folder": () => import("@/registry/icons/nodes/home-folder").then((mod) => ({ default: mod.HomeFolder })),
+  "hook": () => import("@/registry/icons/file-types/hook").then((mod) => ({ default: mod.Hook })),
+  "horizontal-pod-autoscaler": () => import("@/registry/icons/plugins/kubernetes/horizontal-pod-autoscaler").then((mod) => ({ default: mod.HorizontalPodAutoscaler })),
+  "hsqldb": () => import("@/registry/icons/database/hsqldb").then((mod) => ({ default: mod.Hsqldb })),
+  "html": () => import("@/registry/icons/file-types/html").then((mod) => ({ default: mod.Html })),
+  "http_request": () => import("@/registry/icons/plugins/rest/http_request").then((mod) => ({ default: mod.Http_request })),
+  "http-header": () => import("@/registry/icons/file-types/http-header").then((mod) => ({ default: mod.HttpHeader })),
+  "http-requests-run-configuration": () => import("@/registry/icons/file-types/http-requests-run-configuration").then((mod) => ({ default: mod.HttpRequestsRunConfiguration })),
+  "i-phone-device": () => import("@/registry/icons/plugins/cidr/i-phone-device").then((mod) => ({ default: mod.IPhoneDevice })),
+  "i18n": () => import("@/registry/icons/file-types/i18n").then((mod) => ({ default: mod.I18n })),
+  "ibm": () => import("@/registry/icons/database/ibm").then((mod) => ({ default: mod.Ibm })),
+  "ide-update": () => import("@/registry/icons/general/general/ide-update").then((mod) => ({ default: mod.IdeUpdate })),
+  "idea-module": () => import("@/registry/icons/file-types/idea-module").then((mod) => ({ default: mod.IdeaModule })),
+  "idea-project": () => import("@/registry/icons/nodes/idea-project").then((mod) => ({ default: mod.IdeaProject })),
+  "idl": () => import("@/registry/icons/file-types/idl").then((mod) => ({ default: mod.Idl })),
+  "ignored": () => import("@/registry/icons/file-types/ignored").then((mod) => ({ default: mod.Ignored })),
+  "ignored-test": () => import("@/registry/icons/run-configurations/ignored-test").then((mod) => ({ default: mod.IgnoredTest })),
+  "image": () => import("@/registry/icons/file-types/image").then((mod) => ({ default: mod.Image })),
+  "impala": () => import("@/registry/icons/database/impala").then((mod) => ({ default: mod.Impala })),
+  "implemented-method": () => import("@/registry/icons/editor-icons/implemented-method").then((mod) => ({ default: mod.ImplementedMethod })),
+  "implementing-functional-interface": () => import("@/registry/icons/editor-icons/implementing-functional-interface").then((mod) => ({ default: mod.ImplementingFunctionalInterface })),
+  "implementing-method": () => import("@/registry/icons/editor-icons/implementing-method").then((mod) => ({ default: mod.ImplementingMethod })),
+  "implicit-bean": () => import("@/registry/icons/plugins/spring/implicit-bean").then((mod) => ({ default: mod.ImplicitBean })),
+  "import": () => import("@/registry/icons/general/general/import").then((mod) => ({ default: mod.Import })),
+  "in-selection": () => import("@/registry/icons/general/actions/in-selection").then((mod) => ({ default: mod.InSelection })),
+  "inaly-qarkus": () => import("@/registry/icons/editor-icons/inaly-qarkus").then((mod) => ({ default: mod.InalyQarkus })),
+  "incoming-update": () => import("@/registry/icons/vcs/incoming-update").then((mod) => ({ default: mod.IncomingUpdate })),
+  "incomplete-closed": () => import("@/registry/icons/plugins/ruby/incomplete-closed").then((mod) => ({ default: mod.IncompleteClosed })),
+  "index-cluster": () => import("@/registry/icons/database/index-cluster").then((mod) => ({ default: mod.IndexCluster })),
+  "index-fun": () => import("@/registry/icons/database/index-fun").then((mod) => ({ default: mod.IndexFun })),
+  "index-fun-unique": () => import("@/registry/icons/database/index-fun-unique").then((mod) => ({ default: mod.IndexFunUnique })),
+  "index-icon": () => import("@/registry/icons/database/index-icon").then((mod) => ({ default: mod.Index })),
+  "index-unique": () => import("@/registry/icons/database/index-unique").then((mod) => ({ default: mod.IndexUnique })),
+  "info": () => import("@/registry/icons/general/status/info").then((mod) => ({ default: mod.Info })),
+  "info-outline": () => import("@/registry/icons/general/status/info-outline").then((mod) => ({ default: mod.InfoOutline })),
+  "information-dialog": () => import("@/registry/icons/general/status/information-dialog").then((mod) => ({ default: mod.InformationDialog })),
+  "informix": () => import("@/registry/icons/database/informix").then((mod) => ({ default: mod.Informix })),
+  "infrastructure-bean": () => import("@/registry/icons/plugins/spring/infrastructure-bean").then((mod) => ({ default: mod.InfrastructureBean })),
+  "ingress": () => import("@/registry/icons/plugins/kubernetes/ingress").then((mod) => ({ default: mod.Ingress })),
+  "inherited-attribute-overlay": () => import("@/registry/icons/plugins/java-ee/inherited-attribute-overlay").then((mod) => ({ default: mod.InheritedAttributeOverlay })),
+  "init-liquibase-changelog": () => import("@/registry/icons/plugins/jpa/init-liquibase-changelog").then((mod) => ({ default: mod.InitLiquibaseChangelog })),
+  "init-scripts": () => import("@/registry/icons/plugins/jpa/init-scripts").then((mod) => ({ default: mod.InitScripts })),
+  "inlay-globe": () => import("@/registry/icons/editor-icons/inlay-globe").then((mod) => ({ default: mod.InlayGlobe })),
+  "inlay-micronaut": () => import("@/registry/icons/editor-icons/inlay-micronaut").then((mod) => ({ default: mod.InlayMicronaut })),
+  "inlay-rename-in-comments": () => import("@/registry/icons/editor-icons/inlay-rename-in-comments").then((mod) => ({ default: mod.InlayRenameInComments })),
+  "inlay-rename-in-comments-active": () => import("@/registry/icons/editor-icons/inlay-rename-in-comments-active").then((mod) => ({ default: mod.InlayRenameInCommentsActive })),
+  "inlay-rename-in-no-code-files": () => import("@/registry/icons/editor-icons/inlay-rename-in-no-code-files").then((mod) => ({ default: mod.InlayRenameInNoCodeFiles })),
+  "inlay-rename-in-no-code-files-active": () => import("@/registry/icons/editor-icons/inlay-rename-in-no-code-files-active").then((mod) => ({ default: mod.InlayRenameInNoCodeFilesActive })),
+  "inlay-secured-shield": () => import("@/registry/icons/editor-icons/inlay-secured-shield").then((mod) => ({ default: mod.InlaySecuredShield })),
+  "inlay-settings": () => import("@/registry/icons/editor-icons/inlay-settings").then((mod) => ({ default: mod.InlaySettings })),
+  "inlay-spring": () => import("@/registry/icons/editor-icons/inlay-spring").then((mod) => ({ default: mod.InlaySpring })),
+  "inlay-web-inspector": () => import("@/registry/icons/editor-icons/inlay-web-inspector").then((mod) => ({ default: mod.InlayWebInspector })),
+  "inline-add": () => import("@/registry/icons/general/inline/inline-add").then((mod) => ({ default: mod.InlineAdd })),
+  "inline-edit": () => import("@/registry/icons/general/inline/inline-edit").then((mod) => ({ default: mod.InlineEdit })),
+  "inline-settings": () => import("@/registry/icons/general/inline/inline-settings").then((mod) => ({ default: mod.InlineSettings })),
+  "inner-class": () => import("@/registry/icons/plugins/uml/inner-class").then((mod) => ({ default: mod.InnerClass })),
+  "insight-navigate": () => import("@/registry/icons/plugins/jpa/insight-navigate").then((mod) => ({ default: mod.InsightNavigate })),
+  "inspections-eye": () => import("@/registry/icons/editor-icons/inspections-eye").then((mod) => ({ default: mod.InspectionsEye })),
+  "inspections-mixed": () => import("@/registry/icons/editor-icons/inspections-mixed").then((mod) => ({ default: mod.InspectionsMixed })),
+  "inspections-ok": () => import("@/registry/icons/editor-icons/inspections-ok").then((mod) => ({ default: mod.InspectionsOK })),
+  "inspections-okempty": () => import("@/registry/icons/editor-icons/inspections-okempty").then((mod) => ({ default: mod.InspectionsOKEmpty })),
+  "inspections-pause": () => import("@/registry/icons/editor-icons/inspections-pause").then((mod) => ({ default: mod.InspectionsPause })),
+  "inspections-power-save-mode": () => import("@/registry/icons/editor-icons/inspections-power-save-mode").then((mod) => ({ default: mod.InspectionsPowerSaveMode })),
+  "inspections-traffic-off": () => import("@/registry/icons/editor-icons/inspections-traffic-off").then((mod) => ({ default: mod.InspectionsTrafficOff })),
+  "inspections-typos": () => import("@/registry/icons/editor-icons/inspections-typos").then((mod) => ({ default: mod.InspectionsTypos })),
+  "install": () => import("@/registry/icons/plugins/cidr/install").then((mod) => ({ default: mod.Install })),
+  "inteceptor-method": () => import("@/registry/icons/plugins/java-ee/inteceptor-method").then((mod) => ({ default: mod.InteceptorMethod })),
+  "integration": () => import("@/registry/icons/plugins/spring/integration").then((mod) => ({ default: mod.Integration })),
+  "intelli-sort": () => import("@/registry/icons/vcs/intelli-sort").then((mod) => ({ default: mod.IntelliSort })),
+  "intention-bulb": () => import("@/registry/icons/editor-icons/intention-bulb").then((mod) => ({ default: mod.IntentionBulb })),
+  "intention-bulb-grey": () => import("@/registry/icons/editor-icons/intention-bulb-grey").then((mod) => ({ default: mod.IntentionBulbGrey })),
+  "interceptor-class": () => import("@/registry/icons/plugins/java-ee/interceptor-class").then((mod) => ({ default: mod.InterceptorClass })),
+  "interceptors": () => import("@/registry/icons/plugins/java-ee/interceptors").then((mod) => ({ default: mod.Interceptors })),
+  "interface-kotlin": () => import("@/registry/icons/plugins/kotlin/interface-kotlin").then((mod) => ({ default: mod.InterfaceKotlin })),
+  "intersystem-cache": () => import("@/registry/icons/database/intersystem-cache").then((mod) => ({ default: mod.IntersystemCache })),
+  "invalid-configuration-layer": () => import("@/registry/icons/run-configurations/invalid-configuration-layer").then((mod) => ({ default: mod.InvalidConfigurationLayer })),
+  "iocfile-type": () => import("@/registry/icons/plugins/cidr/iocfile-type").then((mod) => ({ default: mod.IOCFileType })),
+  "italic": () => import("@/registry/icons/general/editor/italic").then((mod) => ({ default: mod.Italic })),
+  "jakarta-ee": () => import("@/registry/icons/plugins/java-ee/jakarta-ee").then((mod) => ({ default: mod.JakartaEE })),
+  "java": () => import("@/registry/icons/file-types/java").then((mod) => ({ default: mod.Java })),
+  "java-class": () => import("@/registry/icons/file-types/java-class").then((mod) => ({ default: mod.JavaClass })),
+  "java-eeartifact": () => import("@/registry/icons/plugins/java-ee/java-eeartifact").then((mod) => ({ default: mod.JavaEEArtifact })),
+  "java-eetool-window": () => import("@/registry/icons/general/tool-windows/java-eetool-window").then((mod) => ({ default: mod.JavaEEToolWindow })),
+  "java-module-root": () => import("@/registry/icons/plugins/jpa/java-module-root").then((mod) => ({ default: mod.JavaModuleRoot })),
+  "java-scratch": () => import("@/registry/icons/run-configurations/java-scratch").then((mod) => ({ default: mod.JavaScratch })),
+  "java-script": () => import("@/registry/icons/file-types/java-script").then((mod) => ({ default: mod.JavaScript })),
+  "java-script-debug-configuration": () => import("@/registry/icons/run-configurations/java-script-debug-configuration").then((mod) => ({ default: mod.JavaScriptDebugConfiguration })),
+  "java-script-remote": () => import("@/registry/icons/run-configurations/java-script-remote").then((mod) => ({ default: mod.JavaScriptRemote })),
+  "javadoc-edit": () => import("@/registry/icons/editor-icons/javadoc-edit").then((mod) => ({ default: mod.JavadocEdit })),
+  "javadoc-read": () => import("@/registry/icons/editor-icons/javadoc-read").then((mod) => ({ default: mod.JavadocRead })),
+  "javaee-app-module": () => import("@/registry/icons/plugins/java-ee/javaee-app-module").then((mod) => ({ default: mod.JavaeeAppModule })),
+  "jdk": () => import("@/registry/icons/nodes/jdk").then((mod) => ({ default: mod.Jdk })),
+  "jest": () => import("@/registry/icons/file-types/jest").then((mod) => ({ default: mod.Jest })),
+  "jfr": () => import("@/registry/icons/file-types/jfr").then((mod) => ({ default: mod.Jfr })),
+  "jinja2": () => import("@/registry/icons/file-types/jinja2").then((mod) => ({ default: mod.Jinja2 })),
+  "jobs": () => import("@/registry/icons/plugins/kubernetes/jobs").then((mod) => ({ default: mod.Jobs })),
+  "jpa": () => import("@/registry/icons/plugins/spring/jpa").then((mod) => ({ default: mod.Jpa })),
+  "jpa-console-tool-window": () => import("@/registry/icons/general/tool-windows/jpa-console-tool-window").then((mod) => ({ default: mod.JpaConsoleToolWindow })),
+  "jpa-facet": () => import("@/registry/icons/plugins/java-ee/jpa-facet").then((mod) => ({ default: mod.JpaFacet })),
+  "jpa-tool-window": () => import("@/registry/icons/general/tool-windows/jpa-tool-window").then((mod) => ({ default: mod.JpaToolWindow })),
+  "jrails-module-closed": () => import("@/registry/icons/plugins/ruby/jrails-module-closed").then((mod) => ({ default: mod.JrailsModuleClosed })),
+  "jruby": () => import("@/registry/icons/plugins/ruby/jruby").then((mod) => ({ default: mod.Jruby })),
+  "jruby-run-configuration": () => import("@/registry/icons/plugins/ruby/jruby-run-configuration").then((mod) => ({ default: mod.JrubyRunConfiguration })),
+  "jruby-sdk-closed": () => import("@/registry/icons/plugins/ruby/jruby-sdk-closed").then((mod) => ({ default: mod.JrubySdkClosed })),
+  "js": () => import("@/registry/icons/plugins/kotlin/js").then((mod) => ({ default: mod.Js })),
+  "js-config": () => import("@/registry/icons/file-types/js-config").then((mod) => ({ default: mod.JsConfig })),
+  "js-doc-closure": () => import("@/registry/icons/file-types/js-doc-closure").then((mod) => ({ default: mod.JsDocClosure })),
+  "json": () => import("@/registry/icons/file-types/json").then((mod) => ({ default: mod.Json })),
+  "json-document": () => import("@/registry/icons/database/json-document").then((mod) => ({ default: mod.JsonDocument })),
+  "json-document-key": () => import("@/registry/icons/database/json-document-key").then((mod) => ({ default: mod.JsonDocumentKey })),
+  "json-schema": () => import("@/registry/icons/file-types/json-schema").then((mod) => ({ default: mod.JsonSchema })),
+  "jsp": () => import("@/registry/icons/file-types/jsp").then((mod) => ({ default: mod.Jsp })),
+  "jspx": () => import("@/registry/icons/file-types/jspx").then((mod) => ({ default: mod.Jspx })),
+  "junit": () => import("@/registry/icons/run-configurations/junit").then((mod) => ({ default: mod.Junit })),
+  "jupyter-notebook": () => import("@/registry/icons/file-types/jupyter-notebook").then((mod) => ({ default: mod.JupyterNotebook })),
+  "jupyter-tool-window": () => import("@/registry/icons/general/tool-windows/jupyter-tool-window").then((mod) => ({ default: mod.JupyterToolWindow })),
+  "jvm": () => import("@/registry/icons/plugins/kotlin/jvm").then((mod) => ({ default: mod.Jvm })),
+  "kafka": () => import("@/registry/icons/general/tool-windows/kafka").then((mod) => ({ default: mod.Kafka })),
+  "keyboard": () => import("@/registry/icons/general/general/keyboard").then((mod) => ({ default: mod.Keyboard })),
+  "kill-data-source-process": () => import("@/registry/icons/database/kill-data-source-process").then((mod) => ({ default: mod.KillDataSourceProcess })),
+  "kill-process": () => import("@/registry/icons/run/kill-process").then((mod) => ({ default: mod.KillProcess })),
+  "kotlin_activity": () => import("@/registry/icons/plugins/kotlin/kotlin_activity").then((mod) => ({ default: mod.Kotlin_activity })),
+  "kotlin-gradle-script": () => import("@/registry/icons/plugins/kotlin/kotlin-gradle-script").then((mod) => ({ default: mod.KotlinGradleScript })),
+  "kotlin-js": () => import("@/registry/icons/plugins/kotlin/kotlin-js").then((mod) => ({ default: mod.KotlinJs })),
+  "kotlin-modifier": () => import("@/registry/icons/plugins/kotlin/kotlin-modifier").then((mod) => ({ default: mod.KotlinModifier })),
+  "kotlin-notebooks": () => import("@/registry/icons/plugins/kotlin/kotlin-notebooks").then((mod) => ({ default: mod.KotlinNotebooks })),
+  "kotlin-notebooks-grey": () => import("@/registry/icons/plugins/kotlin/kotlin-notebooks-grey").then((mod) => ({ default: mod.KotlinNotebooksGrey })),
+  "kotlin-notebooks-promo": () => import("@/registry/icons/plugins/kotlin/kotlin-notebooks-promo").then((mod) => ({ default: mod.KotlinNotebooksPromo })),
+  "kotlin-script": () => import("@/registry/icons/plugins/kotlin/kotlin-script").then((mod) => ({ default: mod.KotlinScript })),
+  "kotlin-tool-window": () => import("@/registry/icons/general/tool-windows/kotlin-tool-window").then((mod) => ({ default: mod.KotlinToolWindow })),
+  "kubernetes-j": () => import("@/registry/icons/plugins/kubernetes/kubernetes-j").then((mod) => ({ default: mod.KubernetesJ })),
+  "kubernetes-y": () => import("@/registry/icons/plugins/kubernetes/kubernetes-y").then((mod) => ({ default: mod.KubernetesY })),
+  "kustomize": () => import("@/registry/icons/plugins/kubernetes/kustomize").then((mod) => ({ default: mod.Kustomize })),
+  "layout": () => import("@/registry/icons/general/general/layout").then((mod) => ({ default: mod.Layout })),
+  "ld": () => import("@/registry/icons/plugins/cidr/ld").then((mod) => ({ default: mod.Ld })),
+  "learn": () => import("@/registry/icons/general/tool-windows/learn").then((mod) => ({ default: mod.Learn })),
+  "left": () => import("@/registry/icons/general/general/left").then((mod) => ({ default: mod.Left })),
+  "left-align": () => import("@/registry/icons/general/editor/left-align").then((mod) => ({ default: mod.LeftAlign })),
+  "less": () => import("@/registry/icons/file-types/less").then((mod) => ({ default: mod.Less })),
+  "level-auto": () => import("@/registry/icons/database/level-auto").then((mod) => ({ default: mod.LevelAuto })),
+  "level-one-declared": () => import("@/registry/icons/database/level-one-declared").then((mod) => ({ default: mod.LevelOneDeclared })),
+  "level-one-details": () => import("@/registry/icons/database/level-one-details").then((mod) => ({ default: mod.LevelOneDetails })),
+  "level-one-inherited": () => import("@/registry/icons/database/level-one-inherited").then((mod) => ({ default: mod.LevelOneInherited })),
+  "level-three-declared": () => import("@/registry/icons/database/level-three-declared").then((mod) => ({ default: mod.LevelThreeDeclared })),
+  "level-three-details": () => import("@/registry/icons/database/level-three-details").then((mod) => ({ default: mod.LevelThreeDetails })),
+  "level-three-inherited": () => import("@/registry/icons/database/level-three-inherited").then((mod) => ({ default: mod.LevelThreeInherited })),
+  "level-two-declared": () => import("@/registry/icons/database/level-two-declared").then((mod) => ({ default: mod.LevelTwoDeclared })),
+  "level-two-details": () => import("@/registry/icons/database/level-two-details").then((mod) => ({ default: mod.LevelTwoDetails })),
+  "level-two-inherited": () => import("@/registry/icons/database/level-two-inherited").then((mod) => ({ default: mod.LevelTwoInherited })),
+  "lib-annotation": () => import("@/registry/icons/plugins/java-ee/lib-annotation").then((mod) => ({ default: mod.LibAnnotation })),
+  "lib-validator": () => import("@/registry/icons/plugins/java-ee/lib-validator").then((mod) => ({ default: mod.LibValidator })),
+  "library": () => import("@/registry/icons/nodes/library").then((mod) => ({ default: mod.Library })),
+  "library-folder": () => import("@/registry/icons/nodes/library-folder").then((mod) => ({ default: mod.LibraryFolder })),
+  "library-target": () => import("@/registry/icons/plugins/cidr/library-target").then((mod) => ({ default: mod.LibraryTarget })),
+  "light-theme": () => import("@/registry/icons/general/new-ui/light-theme").then((mod) => ({ default: mod.LightTheme })),
+  "light-theme-selected": () => import("@/registry/icons/general/new-ui/light-theme-selected").then((mod) => ({ default: mod.LightThemeSelected })),
+  "lightbend-logo": () => import("@/registry/icons/plugins/scala/lightbend-logo").then((mod) => ({ default: mod.LightbendLogo })),
+  "lightning": () => import("@/registry/icons/general/actions/lightning").then((mod) => ({ default: mod.Lightning })),
+  "like": () => import("@/registry/icons/general/ai-assistant/like").then((mod) => ({ default: mod.Like })),
+  "like-selected": () => import("@/registry/icons/general/ai-assistant/like-selected").then((mod) => ({ default: mod.LikeSelected })),
+  "limits": () => import("@/registry/icons/plugins/kubernetes/limits").then((mod) => ({ default: mod.Limits })),
+  "link": () => import("@/registry/icons/general/editor/link").then((mod) => ({ default: mod.Link })),
+  "linux": () => import("@/registry/icons/plugins/linux/linux").then((mod) => ({ default: mod.Linux })),
+  "linux-logo": () => import("@/registry/icons/plugins/linux/linux-logo").then((mod) => ({ default: mod.LinuxLogo })),
+  "liquibase": () => import("@/registry/icons/plugins/jpa/liquibase").then((mod) => ({ default: mod.Liquibase })),
+  "liquibase-mono": () => import("@/registry/icons/plugins/jpa/liquibase-mono").then((mod) => ({ default: mod.LiquibaseMono })),
+  "liquibase-plugin-logo": () => import("@/registry/icons/plugins/jpa/liquibase-plugin-logo").then((mod) => ({ default: mod.LiquibasePluginLogo })),
+  "liquibase-snapshot": () => import("@/registry/icons/plugins/jpa/liquibase-snapshot").then((mod) => ({ default: mod.LiquibaseSnapshot })),
+  "liquibase-update": () => import("@/registry/icons/plugins/jpa/liquibase-update").then((mod) => ({ default: mod.LiquibaseUpdate })),
+  "list": () => import("@/registry/icons/database/list").then((mod) => ({ default: mod.List })),
+  "list-files": () => import("@/registry/icons/general/general/list-files").then((mod) => ({ default: mod.ListFiles })),
+  "list-key": () => import("@/registry/icons/database/list-key").then((mod) => ({ default: mod.ListKey })),
+  "load-swift-package-manager-changes": () => import("@/registry/icons/plugins/cidr/load-swift-package-manager-changes").then((mod) => ({ default: mod.LoadSwiftPackageManagerChanges })),
+  "loader": () => import("@/registry/icons/general/spinner/loader").then((mod) => ({ default: mod.Loader })),
+  "local-changes": () => import("@/registry/icons/general/setting-sync/local-changes").then((mod) => ({ default: mod.LocalChanges })),
+  "local-scope": () => import("@/registry/icons/nodes/local-scope").then((mod) => ({ default: mod.LocalScope })),
+  "local-swift-package-dependency": () => import("@/registry/icons/plugins/cidr/local-swift-package-dependency").then((mod) => ({ default: mod.LocalSwiftPackageDependency })),
+  "locate": () => import("@/registry/icons/general/general/locate").then((mod) => ({ default: mod.Locate })),
+  "location": () => import("@/registry/icons/plugins/cidr/location").then((mod) => ({ default: mod.Location })),
+  "lombok": () => import("@/registry/icons/plugins/lombok/lombok").then((mod) => ({ default: mod.Lombok })),
+  "lombok-class": () => import("@/registry/icons/plugins/lombok/lombok-class").then((mod) => ({ default: mod.LombokClass })),
+  "lombok-field": () => import("@/registry/icons/plugins/lombok/lombok-field").then((mod) => ({ default: mod.LombokField })),
+  "lombok-method": () => import("@/registry/icons/plugins/lombok/lombok-method").then((mod) => ({ default: mod.LombokMethod })),
+  "low-all": () => import("@/registry/icons/plugins/package-checker/low-all").then((mod) => ({ default: mod.LowAll })),
+  "low-all-tree": () => import("@/registry/icons/plugins/package-checker/low-all-tree").then((mod) => ({ default: mod.LowAllTree })),
+  "low-all-tree-outline": () => import("@/registry/icons/plugins/package-checker/low-all-tree-outline").then((mod) => ({ default: mod.LowAllTreeOutline })),
+  "m": () => import("@/registry/icons/plugins/cidr/m").then((mod) => ({ default: mod.M })),
+  "macro": () => import("@/registry/icons/database/macro").then((mod) => ({ default: mod.Macro })),
+  "magic-resolve-toolbar": () => import("@/registry/icons/vcs/magic-resolve-toolbar").then((mod) => ({ default: mod.MagicResolveToolbar })),
+  "mailers-folder": () => import("@/registry/icons/plugins/ruby/mailers-folder").then((mod) => ({ default: mod.MailersFolder })),
+  "main-changelog": () => import("@/registry/icons/plugins/jpa/main-changelog").then((mod) => ({ default: mod.MainChangelog })),
+  "makefile": () => import("@/registry/icons/plugins/cidr/makefile").then((mod) => ({ default: mod.Makefile })),
+  "makefile-app": () => import("@/registry/icons/plugins/cidr/makefile-app").then((mod) => ({ default: mod.MakefileApp })),
+  "makefile-load-changes": () => import("@/registry/icons/plugins/cidr/makefile-load-changes").then((mod) => ({ default: mod.MakefileLoadChanges })),
+  "makefile-tool-window": () => import("@/registry/icons/general/tool-windows/makefile-tool-window").then((mod) => ({ default: mod.MakefileToolWindow })),
+  "manage-data-sources": () => import("@/registry/icons/database/manage-data-sources").then((mod) => ({ default: mod.ManageDataSources })),
+  "managed-bean": () => import("@/registry/icons/plugins/java-ee/managed-bean").then((mod) => ({ default: mod.ManagedBean })),
+  "manifest": () => import("@/registry/icons/file-types/manifest").then((mod) => ({ default: mod.Manifest })),
+  "many-to-many": () => import("@/registry/icons/plugins/jpa/many-to-many").then((mod) => ({ default: mod.ManyToMany })),
+  "many-to-one": () => import("@/registry/icons/plugins/jpa/many-to-one").then((mod) => ({ default: mod.ManyToOne })),
+  "mariadb": () => import("@/registry/icons/database/mariadb").then((mod) => ({ default: mod.Mariadb })),
+  "markdown": () => import("@/registry/icons/file-types/markdown").then((mod) => ({ default: mod.Markdown })),
+  "match-case": () => import("@/registry/icons/general/inline/match-case").then((mod) => ({ default: mod.MatchCase })),
+  "materialized-log": () => import("@/registry/icons/database/materialized-log").then((mod) => ({ default: mod.MaterializedLog })),
+  "materialized-view": () => import("@/registry/icons/database/materialized-view").then((mod) => ({ default: mod.MaterializedView })),
+  "maven-bind": () => import("@/registry/icons/build/maven-bind").then((mod) => ({ default: mod.MavenBind })),
+  "maven-bind-checksum": () => import("@/registry/icons/build/maven-bind-checksum").then((mod) => ({ default: mod.MavenBindChecksum })),
+  "maven-checksum": () => import("@/registry/icons/build/maven-checksum").then((mod) => ({ default: mod.MavenChecksum })),
+  "maven-children-projects": () => import("@/registry/icons/build/maven-children-projects").then((mod) => ({ default: mod.MavenChildrenProjects })),
+  "maven-flex": () => import("@/registry/icons/build/maven-flex").then((mod) => ({ default: mod.MavenFlex })),
+  "maven-ignored": () => import("@/registry/icons/file-types/maven-ignored").then((mod) => ({ default: mod.MavenIgnored })),
+  "maven-load-changes": () => import("@/registry/icons/build/maven-load-changes").then((mod) => ({ default: mod.MavenLoadChanges })),
+  "maven-module": () => import("@/registry/icons/build/maven-module").then((mod) => ({ default: mod.MavenModule })),
+  "maven-parent-projects": () => import("@/registry/icons/build/maven-parent-projects").then((mod) => ({ default: mod.MavenParentProjects })),
+  "maven-plugin": () => import("@/registry/icons/build/maven-plugin").then((mod) => ({ default: mod.MavenPlugin })),
+  "maven-plugin-goal": () => import("@/registry/icons/build/maven-plugin-goal").then((mod) => ({ default: mod.MavenPluginGoal })),
+  "maven-profiles": () => import("@/registry/icons/build/maven-profiles").then((mod) => ({ default: mod.MavenProfiles })),
+  "maven-project": () => import("@/registry/icons/build/maven-project").then((mod) => ({ default: mod.MavenProject })),
+  "maximize": () => import("@/registry/icons/general/windows/maximize").then((mod) => ({ default: mod.Maximize })),
+  "maximize-inactive": () => import("@/registry/icons/general/windows/maximize-inactive").then((mod) => ({ default: mod.MaximizeInactive })),
+  "maximize-small": () => import("@/registry/icons/general/windows/maximize-small").then((mod) => ({ default: mod.MaximizeSmall })),
+  "medium-all": () => import("@/registry/icons/plugins/package-checker/medium-all").then((mod) => ({ default: mod.MediumAll })),
+  "medium-all-tree": () => import("@/registry/icons/plugins/package-checker/medium-all-tree").then((mod) => ({ default: mod.MediumAllTree })),
+  "medium-all-tree-outline": () => import("@/registry/icons/plugins/package-checker/medium-all-tree-outline").then((mod) => ({ default: mod.MediumAllTreeOutline })),
+  "merge-callees": () => import("@/registry/icons/editor-icons/merge-callees").then((mod) => ({ default: mod.MergeCallees })),
+  "meson": () => import("@/registry/icons/plugins/meson/meson").then((mod) => ({ default: mod.Meson })),
+  "meson-plugin-logo": () => import("@/registry/icons/plugins/meson/meson-plugin-logo").then((mod) => ({ default: mod.MesonPluginLogo })),
+  "meson-rc": () => import("@/registry/icons/plugins/meson/meson-rc").then((mod) => ({ default: mod.MesonRC })),
+  "meson-reload": () => import("@/registry/icons/plugins/meson/meson-reload").then((mod) => ({ default: mod.MesonReload })),
+  "message-bean": () => import("@/registry/icons/plugins/java-ee/message-bean").then((mod) => ({ default: mod.MessageBean })),
+  "messages": () => import("@/registry/icons/general/tool-windows/messages").then((mod) => ({ default: mod.Messages })),
+  "metal": () => import("@/registry/icons/plugins/cidr/metal").then((mod) => ({ default: mod.Metal })),
+  "method-abstract": () => import("@/registry/icons/nodes/method-abstract").then((mod) => ({ default: mod.MethodAbstract })),
+  "method-reference": () => import("@/registry/icons/nodes/method-reference").then((mod) => ({ default: mod.MethodReference })),
+  "micronaut": () => import("@/registry/icons/file-types/micronaut").then((mod) => ({ default: mod.Micronaut })),
+  "microsoft": () => import("@/registry/icons/database/microsoft").then((mod) => ({ default: mod.Microsoft })),
+  "microsoft-windows": () => import("@/registry/icons/file-types/microsoft-windows").then((mod) => ({ default: mod.MicrosoftWindows })),
+  "migrations-closed": () => import("@/registry/icons/plugins/ruby/migrations-closed").then((mod) => ({ default: mod.MigrationsClosed })),
+  "mimer-sql": () => import("@/registry/icons/database/mimer-sql").then((mod) => ({ default: mod.MimerSQL })),
+  "minimalistic-mode": () => import("@/registry/icons/plugins/jpa/minimalistic-mode").then((mod) => ({ default: mod.MinimalisticMode })),
+  "minimap": () => import("@/registry/icons/general/general/minimap").then((mod) => ({ default: mod.Minimap })),
+  "minimize": () => import("@/registry/icons/general/windows/minimize").then((mod) => ({ default: mod.Minimize })),
+  "minimize-inactive": () => import("@/registry/icons/general/windows/minimize-inactive").then((mod) => ({ default: mod.MinimizeInactive })),
+  "minimize-small": () => import("@/registry/icons/general/windows/minimize-small").then((mod) => ({ default: mod.MinimizeSmall })),
+  "mm": () => import("@/registry/icons/plugins/cidr/mm").then((mod) => ({ default: mod.Mm })),
+  "mod-platform-io": () => import("@/registry/icons/plugins/platformio/mod-platform-io").then((mod) => ({ default: mod.ModPlatformIO })),
+  "mod-stop": () => import("@/registry/icons/plugins/kubernetes/mod-stop").then((mod) => ({ default: mod.ModStop })),
+  "modified": () => import("@/registry/icons/file-types/modified").then((mod) => ({ default: mod.Modified })),
+  "module-group": () => import("@/registry/icons/nodes/module-group").then((mod) => ({ default: mod.ModuleGroup })),
+  "module-java": () => import("@/registry/icons/nodes/module-java").then((mod) => ({ default: mod.ModuleJava })),
+  "module-target": () => import("@/registry/icons/plugins/cidr/module-target").then((mod) => ({ default: mod.ModuleTarget })),
+  "module8x8": () => import("@/registry/icons/nodes/module8x8").then((mod) => ({ default: mod.Module8x8 })),
+  "modulemap": () => import("@/registry/icons/plugins/cidr/modulemap").then((mod) => ({ default: mod.Modulemap })),
+  "mongo-db": () => import("@/registry/icons/database/mongo-db").then((mod) => ({ default: mod.MongoDB })),
+  "mongo-field": () => import("@/registry/icons/database/mongo-field").then((mod) => ({ default: mod.MongoField })),
+  "mongo-field-gold-key": () => import("@/registry/icons/database/mongo-field-gold-key").then((mod) => ({ default: mod.MongoFieldGoldKey })),
+  "more-horizontal": () => import("@/registry/icons/general/general/more-horizontal").then((mod) => ({ default: mod.MoreHorizontal })),
+  "more-vertical": () => import("@/registry/icons/general/general/more-vertical").then((mod) => ({ default: mod.MoreVertical })),
+  "move-down": () => import("@/registry/icons/general/general/move-down").then((mod) => ({ default: mod.MoveDown })),
+  "move-to-another-changelog": () => import("@/registry/icons/plugins/jpa/move-to-another-changelog").then((mod) => ({ default: mod.MoveToAnotherChangelog })),
+  "move-to-bottom-left": () => import("@/registry/icons/general/general/move-to-bottom-left").then((mod) => ({ default: mod.MoveToBottomLeft })),
+  "move-to-bottom-right": () => import("@/registry/icons/general/general/move-to-bottom-right").then((mod) => ({ default: mod.MoveToBottomRight })),
+  "move-to-button": () => import("@/registry/icons/general/actions/move-to-button").then((mod) => ({ default: mod.MoveToButton })),
+  "move-to-left-bottom": () => import("@/registry/icons/general/general/move-to-left-bottom").then((mod) => ({ default: mod.MoveToLeftBottom })),
+  "move-to-left-top": () => import("@/registry/icons/general/general/move-to-left-top").then((mod) => ({ default: mod.MoveToLeftTop })),
+  "move-to-right-bottom": () => import("@/registry/icons/general/general/move-to-right-bottom").then((mod) => ({ default: mod.MoveToRightBottom })),
+  "move-to-right-top": () => import("@/registry/icons/general/general/move-to-right-top").then((mod) => ({ default: mod.MoveToRightTop })),
+  "move-up": () => import("@/registry/icons/general/general/move-up").then((mod) => ({ default: mod.MoveUp })),
+  "multiplatform": () => import("@/registry/icons/plugins/kotlin/multiplatform").then((mod) => ({ default: mod.Multiplatform })),
+  "multiplatform-library": () => import("@/registry/icons/plugins/kotlin/multiplatform-library").then((mod) => ({ default: mod.MultiplatformLibrary })),
+  "multiplatform-mobile": () => import("@/registry/icons/plugins/kotlin/multiplatform-mobile").then((mod) => ({ default: mod.MultiplatformMobile })),
+  "multiplatform-mobile-library": () => import("@/registry/icons/plugins/kotlin/multiplatform-mobile-library").then((mod) => ({ default: mod.MultiplatformMobileLibrary })),
+  "multiple-breakpoints": () => import("@/registry/icons/breakpoints/multiple-breakpoints").then((mod) => ({ default: mod.MultipleBreakpoints })),
+  "multiple-breakpoints-disabled": () => import("@/registry/icons/breakpoints/multiple-breakpoints-disabled").then((mod) => ({ default: mod.MultipleBreakpointsDisabled })),
+  "multiple-breakpoints-muted": () => import("@/registry/icons/breakpoints/multiple-breakpoints-muted").then((mod) => ({ default: mod.MultipleBreakpointsMuted })),
+  "multiple-type-definitions": () => import("@/registry/icons/plugins/scala/multiple-type-definitions").then((mod) => ({ default: mod.MultipleTypeDefinitions })),
+  "mutation": () => import("@/registry/icons/plugins/graphql/mutation").then((mod) => ({ default: mod.Mutation })),
+  "mute-breakpoints": () => import("@/registry/icons/run/mute-breakpoints").then((mod) => ({ default: mod.MuteBreakpoints })),
+  "mysql": () => import("@/registry/icons/database/mysql").then((mod) => ({ default: mod.Mysql })),
+  "namespace": () => import("@/registry/icons/plugins/kubernetes/namespace").then((mod) => ({ default: mod.Namespace })),
+  "namespace-cpp": () => import("@/registry/icons/plugins/cidr/namespace-cpp").then((mod) => ({ default: mod.NamespaceCpp })),
+  "namespaced-mark": () => import("@/registry/icons/plugins/kubernetes/namespaced-mark").then((mod) => ({ default: mod.NamespacedMark })),
+  "native": () => import("@/registry/icons/plugins/kotlin/native").then((mod) => ({ default: mod.Native })),
+  "navigation-rule": () => import("@/registry/icons/plugins/java-ee/navigation-rule").then((mod) => ({ default: mod.NavigationRule })),
+  "netezza": () => import("@/registry/icons/database/netezza").then((mod) => ({ default: mod.Netezza })),
+  "network": () => import("@/registry/icons/plugins/kubernetes/network").then((mod) => ({ default: mod.Network })),
+  "network-policy": () => import("@/registry/icons/plugins/kubernetes/network-policy").then((mod) => ({ default: mod.NetworkPolicy })),
+  "new-folder": () => import("@/registry/icons/nodes/new-folder").then((mod) => ({ default: mod.NewFolder })),
+  "new-line": () => import("@/registry/icons/general/inline/new-line").then((mod) => ({ default: mod.NewLine })),
+  "new-ui": () => import("@/registry/icons/general/tool-windows/new-ui").then((mod) => ({ default: mod.NewUI })),
+  "next-js": () => import("@/registry/icons/file-types/next-js").then((mod) => ({ default: mod.NextJS })),
+  "no-scala-sdk": () => import("@/registry/icons/plugins/scala/no-scala-sdk").then((mod) => ({ default: mod.NoScalaSDK })),
+  "node": () => import("@/registry/icons/plugins/kubernetes/node").then((mod) => ({ default: mod.Node })),
+  "nodejs": () => import("@/registry/icons/plugins/kotlin/nodejs").then((mod) => ({ default: mod.Nodejs })),
+  "nodejs-test-runner": () => import("@/registry/icons/file-types/nodejs-test-runner").then((mod) => ({ default: mod.NodejsTestRunner })),
+  "nodes/abstract-exception": () => import("@/registry/icons/nodes/abstract-exception").then((mod) => ({ default: mod.AbstractException })),
+  "nodes/add-any": () => import("@/registry/icons/nodes/add-any").then((mod) => ({ default: mod.AddAny })),
+  "nodes/alias": () => import("@/registry/icons/nodes/alias").then((mod) => ({ default: mod.Alias })),
+  "nodes/annotation": () => import("@/registry/icons/nodes/annotation").then((mod) => ({ default: mod.Annotation })),
+  "nodes/annotation-folder": () => import("@/registry/icons/nodes/annotation-folder").then((mod) => ({ default: mod.AnnotationFolder })),
+  "nodes/class": () => import("@/registry/icons/nodes/class").then((mod) => ({ default: mod.Class })),
+  "nodes/class-abstract": () => import("@/registry/icons/nodes/class-abstract").then((mod) => ({ default: mod.ClassAbstract })),
+  "nodes/class-anonymous": () => import("@/registry/icons/nodes/class-anonymous").then((mod) => ({ default: mod.ClassAnonymous })),
+  "nodes/class-initializer": () => import("@/registry/icons/nodes/class-initializer").then((mod) => ({ default: mod.ClassInitializer })),
+  "nodes/config": () => import("@/registry/icons/nodes/config").then((mod) => ({ default: mod.Config })),
+  "nodes/constant": () => import("@/registry/icons/nodes/constant").then((mod) => ({ default: mod.Constant })),
+  "nodes/controller": () => import("@/registry/icons/nodes/controller").then((mod) => ({ default: mod.Controller })),
+  "nodes/copy-of-folder": () => import("@/registry/icons/nodes/copy-of-folder").then((mod) => ({ default: mod.CopyOfFolder })),
+  "nodes/data-column": () => import("@/registry/icons/nodes/data-column").then((mod) => ({ default: mod.DataColumn })),
+  "nodes/data-tables": () => import("@/registry/icons/nodes/data-tables").then((mod) => ({ default: mod.DataTables })),
+  "nodes/desktop": () => import("@/registry/icons/nodes/desktop").then((mod) => ({ default: mod.Desktop })),
+  "nodes/edit-folder": () => import("@/registry/icons/nodes/edit-folder").then((mod) => ({ default: mod.EditFolder })),
+  "nodes/enum": () => import("@/registry/icons/nodes/enum").then((mod) => ({ default: mod.Enum })),
+  "nodes/error-introduction": () => import("@/registry/icons/nodes/error-introduction").then((mod) => ({ default: mod.ErrorIntroduction })),
+  "nodes/exception": () => import("@/registry/icons/nodes/exception").then((mod) => ({ default: mod.Exception })),
+  "nodes/exclude-root": () => import("@/registry/icons/nodes/exclude-root").then((mod) => ({ default: mod.ExcludeRoot })),
+  "nodes/excluded-generated": () => import("@/registry/icons/nodes/excluded-generated").then((mod) => ({ default: mod.ExcludedGenerated })),
+  "nodes/favorites": () => import("@/registry/icons/nodes/favorites").then((mod) => ({ default: mod.Favorites })),
+  "nodes/field": () => import("@/registry/icons/nodes/field").then((mod) => ({ default: mod.Field })),
+  "nodes/folder": () => import("@/registry/icons/nodes/folder").then((mod) => ({ default: mod.Folder })),
+  "nodes/function": () => import("@/registry/icons/nodes/function").then((mod) => ({ default: mod.Function })),
+  "nodes/generated": () => import("@/registry/icons/nodes/generated").then((mod) => ({ default: mod.Generated })),
+  "nodes/generated-source": () => import("@/registry/icons/nodes/generated-source").then((mod) => ({ default: mod.GeneratedSource })),
+  "nodes/generated-test-root": () => import("@/registry/icons/nodes/generated-test-root").then((mod) => ({ default: mod.GeneratedTestRoot })),
+  "nodes/gvariable": () => import("@/registry/icons/nodes/gvariable").then((mod) => ({ default: mod.Gvariable })),
+  "nodes/home-folder": () => import("@/registry/icons/nodes/home-folder").then((mod) => ({ default: mod.HomeFolder })),
+  "nodes/idea-project": () => import("@/registry/icons/nodes/idea-project").then((mod) => ({ default: mod.IdeaProject })),
+  "nodes/include": () => import("@/registry/icons/nodes/include").then((mod) => ({ default: mod.Include })),
+  "nodes/interface": () => import("@/registry/icons/nodes/interface").then((mod) => ({ default: mod.Interface })),
+  "nodes/jdk": () => import("@/registry/icons/nodes/jdk").then((mod) => ({ default: mod.Jdk })),
+  "nodes/lambda": () => import("@/registry/icons/nodes/lambda").then((mod) => ({ default: mod.Lambda })),
+  "nodes/library": () => import("@/registry/icons/nodes/library").then((mod) => ({ default: mod.Library })),
+  "nodes/library-folder": () => import("@/registry/icons/nodes/library-folder").then((mod) => ({ default: mod.LibraryFolder })),
+  "nodes/local-scope": () => import("@/registry/icons/nodes/local-scope").then((mod) => ({ default: mod.LocalScope })),
+  "nodes/method": () => import("@/registry/icons/nodes/method").then((mod) => ({ default: mod.Method })),
+  "nodes/method-abstract": () => import("@/registry/icons/nodes/method-abstract").then((mod) => ({ default: mod.MethodAbstract })),
+  "nodes/method-reference": () => import("@/registry/icons/nodes/method-reference").then((mod) => ({ default: mod.MethodReference })),
+  "nodes/model-class": () => import("@/registry/icons/nodes/model-class").then((mod) => ({ default: mod.ModelClass })),
+  "nodes/module": () => import("@/registry/icons/nodes/module").then((mod) => ({ default: mod.Module })),
+  "nodes/module-group": () => import("@/registry/icons/nodes/module-group").then((mod) => ({ default: mod.ModuleGroup })),
+  "nodes/module-java": () => import("@/registry/icons/nodes/module-java").then((mod) => ({ default: mod.ModuleJava })),
+  "nodes/module8x8": () => import("@/registry/icons/nodes/module8x8").then((mod) => ({ default: mod.Module8x8 })),
+  "nodes/new-folder": () => import("@/registry/icons/nodes/new-folder").then((mod) => ({ default: mod.NewFolder })),
+  "nodes/package": () => import("@/registry/icons/nodes/package").then((mod) => ({ default: mod.Package })),
+  "nodes/parameter": () => import("@/registry/icons/nodes/parameter").then((mod) => ({ default: mod.Parameter })),
+  "nodes/plugin": () => import("@/registry/icons/nodes/plugin").then((mod) => ({ default: mod.Plugin })),
+  "nodes/pp-web": () => import("@/registry/icons/nodes/pp-web").then((mod) => ({ default: mod.PpWeb })),
+  "nodes/property": () => import("@/registry/icons/nodes/property").then((mod) => ({ default: mod.Property })),
+  "nodes/record": () => import("@/registry/icons/nodes/record").then((mod) => ({ default: mod.Record })),
+  "nodes/resource-bundle": () => import("@/registry/icons/nodes/resource-bundle").then((mod) => ({ default: mod.ResourceBundle })),
+  "nodes/resources-root": () => import("@/registry/icons/nodes/resources-root").then((mod) => ({ default: mod.ResourcesRoot })),
+  "nodes/server": () => import("@/registry/icons/nodes/server").then((mod) => ({ default: mod.Server })),
+  "nodes/servlet": () => import("@/registry/icons/nodes/servlet").then((mod) => ({ default: mod.Servlet })),
+  "nodes/shared-scope": () => import("@/registry/icons/nodes/shared-scope").then((mod) => ({ default: mod.SharedScope })),
+  "nodes/source-root": () => import("@/registry/icons/nodes/source-root").then((mod) => ({ default: mod.SourceRoot })),
+  "nodes/star": () => import("@/registry/icons/nodes/star").then((mod) => ({ default: mod.Star })),
+  "nodes/star-empty": () => import("@/registry/icons/nodes/star-empty").then((mod) => ({ default: mod.StarEmpty })),
+  "nodes/static": () => import("@/registry/icons/nodes/static").then((mod) => ({ default: mod.Static })),
+  "nodes/template": () => import("@/registry/icons/nodes/template").then((mod) => ({ default: mod.Template })),
+  "nodes/test": () => import("@/registry/icons/nodes/test").then((mod) => ({ default: mod.Test })),
+  "nodes/test-group": () => import("@/registry/icons/nodes/test-group").then((mod) => ({ default: mod.TestGroup })),
+  "nodes/test-ignored": () => import("@/registry/icons/nodes/test-ignored").then((mod) => ({ default: mod.TestIgnored })),
+  "nodes/test-resources-root": () => import("@/registry/icons/nodes/test-resources-root").then((mod) => ({ default: mod.TestResourcesRoot })),
+  "nodes/test-root": () => import("@/registry/icons/nodes/test-root").then((mod) => ({ default: mod.TestRoot })),
+  "nodes/test-source-folder": () => import("@/registry/icons/nodes/test-source-folder").then((mod) => ({ default: mod.TestSourceFolder })),
+  "nodes/text-area": () => import("@/registry/icons/nodes/text-area").then((mod) => ({ default: mod.TextArea })),
+  "nodes/type": () => import("@/registry/icons/nodes/type").then((mod) => ({ default: mod.Type })),
+  "nodes/unloaded-module": () => import("@/registry/icons/nodes/unloaded-module").then((mod) => ({ default: mod.UnloadedModule })),
+  "nodes/up-folder": () => import("@/registry/icons/nodes/up-folder").then((mod) => ({ default: mod.UpFolder })),
+  "nodes/variable": () => import("@/registry/icons/nodes/variable").then((mod) => ({ default: mod.Variable })),
+  "nodes/warning-introduction": () => import("@/registry/icons/nodes/warning-introduction").then((mod) => ({ default: mod.WarningIntroduction })),
+  "nodes/web-resources": () => import("@/registry/icons/nodes/web-resources").then((mod) => ({ default: mod.WebResources })),
+  "not-defined": () => import("@/registry/icons/plugins/ruby/not-defined").then((mod) => ({ default: mod.NotDefined })),
+  "notifications": () => import("@/registry/icons/general/tool-windows/notifications").then((mod) => ({ default: mod.Notifications })),
+  "npm": () => import("@/registry/icons/general/tool-windows/npm").then((mod) => ({ default: mod.Npm })),
+  "num-py": () => import("@/registry/icons/file-types/num-py").then((mod) => ({ default: mod.NumPy })),
+  "numbered-list": () => import("@/registry/icons/general/editor/numbered-list").then((mod) => ({ default: mod.NumberedList })),
+  "object-companion": () => import("@/registry/icons/plugins/scala/object-companion").then((mod) => ({ default: mod.ObjectCompanion })),
+  "object-companion-swapped": () => import("@/registry/icons/plugins/scala/object-companion-swapped").then((mod) => ({ default: mod.ObjectCompanionSwapped })),
+  "object-group": () => import("@/registry/icons/database/object-group").then((mod) => ({ default: mod.ObjectGroup })),
+  "object-kotlin": () => import("@/registry/icons/plugins/kotlin/object-kotlin").then((mod) => ({ default: mod.ObjectKotlin })),
+  "object-scala": () => import("@/registry/icons/plugins/scala/object-scala").then((mod) => ({ default: mod.ObjectScala })),
+  "object-type-attribute": () => import("@/registry/icons/database/object-type-attribute").then((mod) => ({ default: mod.ObjectTypeAttribute })),
+  "observatory": () => import("@/registry/icons/plugins/dart/observatory").then((mod) => ({ default: mod.Observatory })),
+  "ocd-run-configuration": () => import("@/registry/icons/plugins/cidr/ocd-run-configuration").then((mod) => ({ default: mod.OcdRunConfiguration })),
+  "one-to-many": () => import("@/registry/icons/plugins/jpa/one-to-many").then((mod) => ({ default: mod.OneToMany })),
+  "one-to-one": () => import("@/registry/icons/plugins/jpa/one-to-one").then((mod) => ({ default: mod.OneToOne })),
+  "open": () => import("@/registry/icons/general/general/open").then((mod) => ({ default: mod.Open })),
+  "open-api": () => import("@/registry/icons/general/actions/open-api").then((mod) => ({ default: mod.OpenApi })),
+  "open-in-tool-window": () => import("@/registry/icons/general/general/open-in-tool-window").then((mod) => ({ default: mod.OpenInToolWindow })),
+  "open-new-tab": () => import("@/registry/icons/general/general/open-new-tab").then((mod) => ({ default: mod.OpenNewTab })),
+  "open-rewrite": () => import("@/registry/icons/file-types/open-rewrite").then((mod) => ({ default: mod.OpenRewrite })),
+  "open-tofu": () => import("@/registry/icons/file-types/open-tofu").then((mod) => ({ default: mod.OpenTofu })),
+  "openedge": () => import("@/registry/icons/database/openedge").then((mod) => ({ default: mod.Openedge })),
+  "operator": () => import("@/registry/icons/database/operator").then((mod) => ({ default: mod.Operator })),
+  "operator-class": () => import("@/registry/icons/database/operator-class").then((mod) => ({ default: mod.OperatorClass })),
+  "operator-family": () => import("@/registry/icons/database/operator-family").then((mod) => ({ default: mod.OperatorFamily })),
+  "option": () => import("@/registry/icons/terminal/option").then((mod) => ({ default: mod.Option })),
+  "option-command": () => import("@/registry/icons/plugins/cidr/option-command").then((mod) => ({ default: mod.OptionCommand })),
+  "oracle": () => import("@/registry/icons/database/oracle").then((mod) => ({ default: mod.Oracle })),
+  "other": () => import("@/registry/icons/terminal/other").then((mod) => ({ default: mod.Other })),
+  "out-sight": () => import("@/registry/icons/plugins/outsight/out-sight").then((mod) => ({ default: mod.OutSight })),
+  "out-sight-color": () => import("@/registry/icons/plugins/outsight/out-sight-color").then((mod) => ({ default: mod.OutSightColor })),
+  "outgoing-push": () => import("@/registry/icons/vcs/outgoing-push").then((mod) => ({ default: mod.OutgoingPush })),
+  "overriden-method": () => import("@/registry/icons/editor-icons/overriden-method").then((mod) => ({ default: mod.OverridenMethod })),
+  "overriding-method": () => import("@/registry/icons/editor-icons/overriding-method").then((mod) => ({ default: mod.OverridingMethod })),
+  "package-json": () => import("@/registry/icons/file-types/package-json").then((mod) => ({ default: mod.PackageJson })),
+  "package-lock": () => import("@/registry/icons/file-types/package-lock").then((mod) => ({ default: mod.PackageLock })),
+  "package-manager": () => import("@/registry/icons/general/tool-windows/package-manager").then((mod) => ({ default: mod.PackageManager })),
+  "package-object": () => import("@/registry/icons/plugins/scala/package-object").then((mod) => ({ default: mod.PackageObject })),
+  "package-with-object": () => import("@/registry/icons/plugins/scala/package-with-object").then((mod) => ({ default: mod.PackageWithObject })),
+  "pagination": () => import("@/registry/icons/general/general/pagination").then((mod) => ({ default: mod.Pagination })),
+  "pandas": () => import("@/registry/icons/file-types/pandas").then((mod) => ({ default: mod.Pandas })),
+  "partion": () => import("@/registry/icons/database/partion").then((mod) => ({ default: mod.Partion })),
+  "partion-table": () => import("@/registry/icons/database/partion-table").then((mod) => ({ default: mod.PartionTable })),
+  "paste": () => import("@/registry/icons/general/general/paste").then((mod) => ({ default: mod.Paste })),
+  "pattern-value": () => import("@/registry/icons/plugins/scala/pattern-value").then((mod) => ({ default: mod.PatternValue })),
+  "pause-hovered": () => import("@/registry/icons/general/progress-bar/pause-hovered").then((mod) => ({ default: mod.PauseHovered })),
+  "pending": () => import("@/registry/icons/plugins/kubernetes/pending").then((mod) => ({ default: mod.Pending })),
+  "perl": () => import("@/registry/icons/file-types/perl").then((mod) => ({ default: mod.Perl })),
+  "persistence": () => import("@/registry/icons/general/tool-windows/persistence").then((mod) => ({ default: mod.Persistence })),
+  "persistence-id-relationship": () => import("@/registry/icons/plugins/java-ee/persistence-id-relationship").then((mod) => ({ default: mod.PersistenceIdRelationship })),
+  "persistent-volume": () => import("@/registry/icons/plugins/kubernetes/persistent-volume").then((mod) => ({ default: mod.PersistentVolume })),
+  "persistent-volume-claim": () => import("@/registry/icons/plugins/kubernetes/persistent-volume-claim").then((mod) => ({ default: mod.PersistentVolumeClaim })),
+  "persistent-volumes": () => import("@/registry/icons/plugins/kubernetes/persistent-volumes").then((mod) => ({ default: mod.PersistentVolumes })),
+  "php-local": () => import("@/registry/icons/run-configurations/php-local").then((mod) => ({ default: mod.PhpLocal })),
+  "php-remote": () => import("@/registry/icons/run-configurations/php-remote").then((mod) => ({ default: mod.PhpRemote })),
+  "php-web": () => import("@/registry/icons/run-configurations/php-web").then((mod) => ({ default: mod.PhpWeb })),
+  "pin-hovered": () => import("@/registry/icons/database/pin-hovered").then((mod) => ({ default: mod.PinHovered })),
+  "pin-selected": () => import("@/registry/icons/database/pin-selected").then((mod) => ({ default: mod.PinSelected })),
+  "pin-selected-hovered": () => import("@/registry/icons/database/pin-selected-hovered").then((mod) => ({ default: mod.PinSelectedHovered })),
+  "platform-io": () => import("@/registry/icons/plugins/platformio/platform-io").then((mod) => ({ default: mod.PlatformIO })),
+  "play-back": () => import("@/registry/icons/general/actions/play-back").then((mod) => ({ default: mod.PlayBack })),
+  "play-first": () => import("@/registry/icons/general/actions/play-first").then((mod) => ({ default: mod.PlayFirst })),
+  "play-forward": () => import("@/registry/icons/general/actions/play-forward").then((mod) => ({ default: mod.PlayForward })),
+  "play-last": () => import("@/registry/icons/general/actions/play-last").then((mod) => ({ default: mod.PlayLast })),
+  "play2": () => import("@/registry/icons/plugins/scala/play2").then((mod) => ({ default: mod.Play2 })),
+  "plugin": () => import("@/registry/icons/nodes/plugin").then((mod) => ({ default: mod.Plugin })),
+  "plugin-logo": () => import("@/registry/icons/plugins/jpa/plugin-logo").then((mod) => ({ default: mod.PluginLogo })),
+  "plugin-update": () => import("@/registry/icons/general/general/plugin-update").then((mod) => ({ default: mod.PluginUpdate })),
+  "plugin-v2": () => import("@/registry/icons/general/devkit/plugin-v2").then((mod) => ({ default: mod.PluginV2 })),
+  "plugins/aop/abstract-advice": () => import("@/registry/icons/plugins/aop/abstract-advice").then((mod) => ({ default: mod.AbstractAdvice })),
+  "plugins/aop/after-advice": () => import("@/registry/icons/plugins/aop/after-advice").then((mod) => ({ default: mod.AfterAdvice })),
+  "plugins/aop/after-returning-advice": () => import("@/registry/icons/plugins/aop/after-returning-advice").then((mod) => ({ default: mod.AfterReturningAdvice })),
+  "plugins/aop/after-throwing-advice": () => import("@/registry/icons/plugins/aop/after-throwing-advice").then((mod) => ({ default: mod.AfterThrowingAdvice })),
+  "plugins/aop/around-advice": () => import("@/registry/icons/plugins/aop/around-advice").then((mod) => ({ default: mod.AroundAdvice })),
+  "plugins/aop/before-advice": () => import("@/registry/icons/plugins/aop/before-advice").then((mod) => ({ default: mod.BeforeAdvice })),
+  "plugins/aop/from-arrow": () => import("@/registry/icons/plugins/aop/from-arrow").then((mod) => ({ default: mod.FromArrow })),
+  "plugins/aop/pointcut": () => import("@/registry/icons/plugins/aop/pointcut").then((mod) => ({ default: mod.Pointcut })),
+  "plugins/aop/to-arrow": () => import("@/registry/icons/plugins/aop/to-arrow").then((mod) => ({ default: mod.ToArrow })),
+  "plugins/bazel/bazel": () => import("@/registry/icons/plugins/bazel/bazel").then((mod) => ({ default: mod.Bazel })),
+  "plugins/bazel/bazel-config": () => import("@/registry/icons/plugins/bazel/bazel-config").then((mod) => ({ default: mod.BazelConfig })),
+  "plugins/bazel/bazel-error": () => import("@/registry/icons/plugins/bazel/bazel-error").then((mod) => ({ default: mod.BazelError })),
+  "plugins/bazel/bazel-reload": () => import("@/registry/icons/plugins/bazel/bazel-reload").then((mod) => ({ default: mod.BazelReload })),
+  "plugins/bazel/bazel-target": () => import("@/registry/icons/plugins/bazel/bazel-target").then((mod) => ({ default: mod.BazelTarget })),
+  "plugins/bazel/bazel-warning": () => import("@/registry/icons/plugins/bazel/bazel-warning").then((mod) => ({ default: mod.BazelWarning })),
+  "plugins/bazel/build-and-reload": () => import("@/registry/icons/plugins/bazel/build-and-reload").then((mod) => ({ default: mod.BuildAndReload })),
+  "plugins/bdt/arbitrary-cluster": () => import("@/registry/icons/plugins/bdt/arbitrary-cluster").then((mod) => ({ default: mod.ArbitraryCluster })),
+  "plugins/bdt/aws-glue": () => import("@/registry/icons/plugins/bdt/aws-glue").then((mod) => ({ default: mod.AwsGlue })),
+  "plugins/bdt/chart-area": () => import("@/registry/icons/plugins/bdt/chart-area").then((mod) => ({ default: mod.ChartArea })),
+  "plugins/bdt/chart-area-range": () => import("@/registry/icons/plugins/bdt/chart-area-range").then((mod) => ({ default: mod.ChartAreaRange })),
+  "plugins/bdt/chart-bar": () => import("@/registry/icons/plugins/bdt/chart-bar").then((mod) => ({ default: mod.ChartBar })),
+  "plugins/bdt/chart-bubble": () => import("@/registry/icons/plugins/bdt/chart-bubble").then((mod) => ({ default: mod.ChartBubble })),
+  "plugins/bdt/chart-histogram": () => import("@/registry/icons/plugins/bdt/chart-histogram").then((mod) => ({ default: mod.ChartHistogram })),
+  "plugins/bdt/chart-line": () => import("@/registry/icons/plugins/bdt/chart-line").then((mod) => ({ default: mod.ChartLine })),
+  "plugins/bdt/chart-pie": () => import("@/registry/icons/plugins/bdt/chart-pie").then((mod) => ({ default: mod.ChartPie })),
+  "plugins/bdt/chart-scatter": () => import("@/registry/icons/plugins/bdt/chart-scatter").then((mod) => ({ default: mod.ChartScatter })),
+  "plugins/bdt/chart-stock": () => import("@/registry/icons/plugins/bdt/chart-stock").then((mod) => ({ default: mod.ChartStock })),
+  "plugins/bdt/cluster": () => import("@/registry/icons/plugins/bdt/cluster").then((mod) => ({ default: mod.Cluster })),
+  "plugins/bdt/dbt-utility": () => import("@/registry/icons/plugins/bdt/dbt-utility").then((mod) => ({ default: mod.DbtUtility })),
+  "plugins/bdt/flink": () => import("@/registry/icons/plugins/bdt/flink").then((mod) => ({ default: mod.Flink })),
+  "plugins/bdt/py-spark": () => import("@/registry/icons/plugins/bdt/py-spark").then((mod) => ({ default: mod.PySpark })),
+  "plugins/bdt/remote-file-systems": () => import("@/registry/icons/plugins/bdt/remote-file-systems").then((mod) => ({ default: mod.RemoteFileSystems })),
+  "plugins/bdt/spark-run": () => import("@/registry/icons/plugins/bdt/spark-run").then((mod) => ({ default: mod.SparkRun })),
+  "plugins/bdt/zeppelin": () => import("@/registry/icons/plugins/bdt/zeppelin").then((mod) => ({ default: mod.Zeppelin })),
+  "plugins/cidr/action-qualified-names": () => import("@/registry/icons/plugins/cidr/action-qualified-names").then((mod) => ({ default: mod.ActionQualifiedNames })),
+  "plugins/cidr/add-executable": () => import("@/registry/icons/plugins/cidr/add-executable").then((mod) => ({ default: mod.AddExecutable })),
+  "plugins/cidr/add-library": () => import("@/registry/icons/plugins/cidr/add-library").then((mod) => ({ default: mod.AddLibrary })),
+  "plugins/cidr/add-test": () => import("@/registry/icons/plugins/cidr/add-test").then((mod) => ({ default: mod.AddTest })),
+  "plugins/cidr/android-device": () => import("@/registry/icons/plugins/cidr/android-device").then((mod) => ({ default: mod.AndroidDevice })),
+  "plugins/cidr/app-code-project": () => import("@/registry/icons/plugins/cidr/app-code-project").then((mod) => ({ default: mod.AppCodeProject })),
+  "plugins/cidr/app-code-workspace": () => import("@/registry/icons/plugins/cidr/app-code-workspace").then((mod) => ({ default: mod.AppCodeWorkspace })),
+  "plugins/cidr/application": () => import("@/registry/icons/plugins/cidr/application").then((mod) => ({ default: mod.Application })),
+  "plugins/cidr/application-extension": () => import("@/registry/icons/plugins/cidr/application-extension").then((mod) => ({ default: mod.ApplicationExtension })),
+  "plugins/cidr/assets": () => import("@/registry/icons/plugins/cidr/assets").then((mod) => ({ default: mod.Assets })),
+  "plugins/cidr/auto-reload": () => import("@/registry/icons/plugins/cidr/auto-reload").then((mod) => ({ default: mod.AutoReload })),
+  "plugins/cidr/boost-test": () => import("@/registry/icons/plugins/cidr/boost-test").then((mod) => ({ default: mod.BoostTest })),
+  "plugins/cidr/c": () => import("@/registry/icons/plugins/cidr/c").then((mod) => ({ default: mod.C })),
+  "plugins/cidr/c-test": () => import("@/registry/icons/plugins/cidr/c-test").then((mod) => ({ default: mod.CTest })),
+  "plugins/cidr/catch-test": () => import("@/registry/icons/plugins/cidr/catch-test").then((mod) => ({ default: mod.CatchTest })),
+  "plugins/cidr/class-cpp": () => import("@/registry/icons/plugins/cidr/class-cpp").then((mod) => ({ default: mod.ClassCpp })),
+  "plugins/cidr/cmake": () => import("@/registry/icons/plugins/cidr/cmake").then((mod) => ({ default: mod.CMake })),
+  "plugins/cidr/cmake-debug": () => import("@/registry/icons/plugins/cidr/cmake-debug").then((mod) => ({ default: mod.CMakeDebug })),
+  "plugins/cidr/cmake-function": () => import("@/registry/icons/plugins/cidr/cmake-function").then((mod) => ({ default: mod.CMakeFunction })),
+  "plugins/cidr/cmake-load-changes": () => import("@/registry/icons/plugins/cidr/cmake-load-changes").then((mod) => ({ default: mod.CMakeLoadChanges })),
+  "plugins/cidr/cmake-macro": () => import("@/registry/icons/plugins/cidr/cmake-macro").then((mod) => ({ default: mod.CMakeMacro })),
+  "plugins/cidr/cmake-modificator": () => import("@/registry/icons/plugins/cidr/cmake-modificator").then((mod) => ({ default: mod.CMakeModificator })),
+  "plugins/cidr/cmake-target-executable": () => import("@/registry/icons/plugins/cidr/cmake-target-executable").then((mod) => ({ default: mod.CMakeTargetExecutable })),
+  "plugins/cidr/cocoa-pods": () => import("@/registry/icons/plugins/cidr/cocoa-pods").then((mod) => ({ default: mod.CocoaPods })),
+  "plugins/cidr/code-assistant-actor": () => import("@/registry/icons/plugins/cidr/code-assistant-actor").then((mod) => ({ default: mod.CodeAssistantActor })),
+  "plugins/cidr/code-assistant-actor-extension": () => import("@/registry/icons/plugins/cidr/code-assistant-actor-extension").then((mod) => ({ default: mod.CodeAssistantActorExtension })),
+  "plugins/cidr/code-assistant-enum": () => import("@/registry/icons/plugins/cidr/code-assistant-enum").then((mod) => ({ default: mod.CodeAssistantEnum })),
+  "plugins/cidr/code-assistant-enum-const": () => import("@/registry/icons/plugins/cidr/code-assistant-enum-const").then((mod) => ({ default: mod.CodeAssistantEnumConst })),
+  "plugins/cidr/code-assistant-enum-extension": () => import("@/registry/icons/plugins/cidr/code-assistant-enum-extension").then((mod) => ({ default: mod.CodeAssistantEnumExtension })),
+  "plugins/cidr/code-assistant-field": () => import("@/registry/icons/plugins/cidr/code-assistant-field").then((mod) => ({ default: mod.CodeAssistantField })),
+  "plugins/cidr/code-assistant-field-optional": () => import("@/registry/icons/plugins/cidr/code-assistant-field-optional").then((mod) => ({ default: mod.CodeAssistantFieldOptional })),
+  "plugins/cidr/code-assistant-function": () => import("@/registry/icons/plugins/cidr/code-assistant-function").then((mod) => ({ default: mod.CodeAssistantFunction })),
+  "plugins/cidr/code-assistant-function-abstract": () => import("@/registry/icons/plugins/cidr/code-assistant-function-abstract").then((mod) => ({ default: mod.CodeAssistantFunctionAbstract })),
+  "plugins/cidr/code-assistant-function-invocation": () => import("@/registry/icons/plugins/cidr/code-assistant-function-invocation").then((mod) => ({ default: mod.CodeAssistantFunctionInvocation })),
+  "plugins/cidr/code-assistant-global": () => import("@/registry/icons/plugins/cidr/code-assistant-global").then((mod) => ({ default: mod.CodeAssistantGlobal })),
+  "plugins/cidr/code-assistant-local": () => import("@/registry/icons/plugins/cidr/code-assistant-local").then((mod) => ({ default: mod.CodeAssistantLocal })),
+  "plugins/cidr/code-assistant-member-abstract": () => import("@/registry/icons/plugins/cidr/code-assistant-member-abstract").then((mod) => ({ default: mod.CodeAssistantMemberAbstract })),
+  "plugins/cidr/code-assistant-operator": () => import("@/registry/icons/plugins/cidr/code-assistant-operator").then((mod) => ({ default: mod.CodeAssistantOperator })),
+  "plugins/cidr/code-assistant-parameter": () => import("@/registry/icons/plugins/cidr/code-assistant-parameter").then((mod) => ({ default: mod.CodeAssistantParameter })),
+  "plugins/cidr/code-assistant-property": () => import("@/registry/icons/plugins/cidr/code-assistant-property").then((mod) => ({ default: mod.CodeAssistantProperty })),
+  "plugins/cidr/code-assistant-property-optional": () => import("@/registry/icons/plugins/cidr/code-assistant-property-optional").then((mod) => ({ default: mod.CodeAssistantPropertyOptional })),
+  "plugins/cidr/code-assistant-protocol": () => import("@/registry/icons/plugins/cidr/code-assistant-protocol").then((mod) => ({ default: mod.CodeAssistantProtocol })),
+  "plugins/cidr/code-assistant-protocol-extension": () => import("@/registry/icons/plugins/cidr/code-assistant-protocol-extension").then((mod) => ({ default: mod.CodeAssistantProtocolExtension })),
+  "plugins/cidr/code-assistant-struct": () => import("@/registry/icons/plugins/cidr/code-assistant-struct").then((mod) => ({ default: mod.CodeAssistantStruct })),
+  "plugins/cidr/code-assistant-struct-extension": () => import("@/registry/icons/plugins/cidr/code-assistant-struct-extension").then((mod) => ({ default: mod.CodeAssistantStructExtension })),
+  "plugins/cidr/code-assistant-type": () => import("@/registry/icons/plugins/cidr/code-assistant-type").then((mod) => ({ default: mod.CodeAssistantType })),
+  "plugins/cidr/code-assistant-union": () => import("@/registry/icons/plugins/cidr/code-assistant-union").then((mod) => ({ default: mod.CodeAssistantUnion })),
+  "plugins/cidr/compilation-database-load-changes": () => import("@/registry/icons/plugins/cidr/compilation-database-load-changes").then((mod) => ({ default: mod.CompilationDatabaseLoadChanges })),
+  "plugins/cidr/cpp": () => import("@/registry/icons/plugins/cidr/cpp").then((mod) => ({ default: mod.Cpp })),
+  "plugins/cidr/cu": () => import("@/registry/icons/plugins/cidr/cu").then((mod) => ({ default: mod.Cu })),
+  "plugins/cidr/cuh": () => import("@/registry/icons/plugins/cidr/cuh").then((mod) => ({ default: mod.Cuh })),
+  "plugins/cidr/custom-folder": () => import("@/registry/icons/plugins/cidr/custom-folder").then((mod) => ({ default: mod.CustomFolder })),
+  "plugins/cidr/custom-gdb-run-configuration": () => import("@/registry/icons/plugins/cidr/custom-gdb-run-configuration").then((mod) => ({ default: mod.CustomGdbRunConfiguration })),
+  "plugins/cidr/custom-target": () => import("@/registry/icons/plugins/cidr/custom-target").then((mod) => ({ default: mod.CustomTarget })),
+  "plugins/cidr/debug-target-computer": () => import("@/registry/icons/plugins/cidr/debug-target-computer").then((mod) => ({ default: mod.DebugTargetComputer })),
+  "plugins/cidr/debug-target-controller": () => import("@/registry/icons/plugins/cidr/debug-target-controller").then((mod) => ({ default: mod.DebugTargetController })),
+  "plugins/cidr/dependency": () => import("@/registry/icons/plugins/cidr/dependency").then((mod) => ({ default: mod.Dependency })),
+  "plugins/cidr/doc-test": () => import("@/registry/icons/plugins/cidr/doc-test").then((mod) => ({ default: mod.DocTest })),
+  "plugins/cidr/executable-target": () => import("@/registry/icons/plugins/cidr/executable-target").then((mod) => ({ default: mod.ExecutableTarget })),
+  "plugins/cidr/extension-run-configuration": () => import("@/registry/icons/plugins/cidr/extension-run-configuration").then((mod) => ({ default: mod.ExtensionRunConfiguration })),
+  "plugins/cidr/file-type-swift": () => import("@/registry/icons/plugins/cidr/file-type-swift").then((mod) => ({ default: mod.FileTypeSwift })),
+  "plugins/cidr/framework": () => import("@/registry/icons/plugins/cidr/framework").then((mod) => ({ default: mod.Framework })),
+  "plugins/cidr/freeze": () => import("@/registry/icons/plugins/cidr/freeze").then((mod) => ({ default: mod.Freeze })),
+  "plugins/cidr/freeze-all": () => import("@/registry/icons/plugins/cidr/freeze-all").then((mod) => ({ default: mod.FreezeAll })),
+  "plugins/cidr/google-test": () => import("@/registry/icons/plugins/cidr/google-test").then((mod) => ({ default: mod.GoogleTest })),
+  "plugins/cidr/group": () => import("@/registry/icons/plugins/cidr/group").then((mod) => ({ default: mod.Group })),
+  "plugins/cidr/group-qualified-name": () => import("@/registry/icons/plugins/cidr/group-qualified-name").then((mod) => ({ default: mod.GroupQualifiedName })),
+  "plugins/cidr/h": () => import("@/registry/icons/plugins/cidr/h").then((mod) => ({ default: mod.H })),
+  "plugins/cidr/i-phone-device": () => import("@/registry/icons/plugins/cidr/i-phone-device").then((mod) => ({ default: mod.IPhoneDevice })),
+  "plugins/cidr/install": () => import("@/registry/icons/plugins/cidr/install").then((mod) => ({ default: mod.Install })),
+  "plugins/cidr/iocfile-type": () => import("@/registry/icons/plugins/cidr/iocfile-type").then((mod) => ({ default: mod.IOCFileType })),
+  "plugins/cidr/ld": () => import("@/registry/icons/plugins/cidr/ld").then((mod) => ({ default: mod.Ld })),
+  "plugins/cidr/library-target": () => import("@/registry/icons/plugins/cidr/library-target").then((mod) => ({ default: mod.LibraryTarget })),
+  "plugins/cidr/load-swift-package-manager-changes": () => import("@/registry/icons/plugins/cidr/load-swift-package-manager-changes").then((mod) => ({ default: mod.LoadSwiftPackageManagerChanges })),
+  "plugins/cidr/local-swift-package-dependency": () => import("@/registry/icons/plugins/cidr/local-swift-package-dependency").then((mod) => ({ default: mod.LocalSwiftPackageDependency })),
+  "plugins/cidr/location": () => import("@/registry/icons/plugins/cidr/location").then((mod) => ({ default: mod.Location })),
+  "plugins/cidr/m": () => import("@/registry/icons/plugins/cidr/m").then((mod) => ({ default: mod.M })),
+  "plugins/cidr/makefile": () => import("@/registry/icons/plugins/cidr/makefile").then((mod) => ({ default: mod.Makefile })),
+  "plugins/cidr/makefile-app": () => import("@/registry/icons/plugins/cidr/makefile-app").then((mod) => ({ default: mod.MakefileApp })),
+  "plugins/cidr/makefile-load-changes": () => import("@/registry/icons/plugins/cidr/makefile-load-changes").then((mod) => ({ default: mod.MakefileLoadChanges })),
+  "plugins/cidr/metal": () => import("@/registry/icons/plugins/cidr/metal").then((mod) => ({ default: mod.Metal })),
+  "plugins/cidr/mm": () => import("@/registry/icons/plugins/cidr/mm").then((mod) => ({ default: mod.Mm })),
+  "plugins/cidr/module-target": () => import("@/registry/icons/plugins/cidr/module-target").then((mod) => ({ default: mod.ModuleTarget })),
+  "plugins/cidr/modulemap": () => import("@/registry/icons/plugins/cidr/modulemap").then((mod) => ({ default: mod.Modulemap })),
+  "plugins/cidr/namespace-cpp": () => import("@/registry/icons/plugins/cidr/namespace-cpp").then((mod) => ({ default: mod.NamespaceCpp })),
+  "plugins/cidr/ocd-run-configuration": () => import("@/registry/icons/plugins/cidr/ocd-run-configuration").then((mod) => ({ default: mod.OcdRunConfiguration })),
+  "plugins/cidr/option-command": () => import("@/registry/icons/plugins/cidr/option-command").then((mod) => ({ default: mod.OptionCommand })),
+  "plugins/cidr/precedence-group": () => import("@/registry/icons/plugins/cidr/precedence-group").then((mod) => ({ default: mod.PrecedenceGroup })),
+  "plugins/cidr/preprocess-defines": () => import("@/registry/icons/plugins/cidr/preprocess-defines").then((mod) => ({ default: mod.PreprocessDefines })),
+  "plugins/cidr/qt": () => import("@/registry/icons/plugins/cidr/qt").then((mod) => ({ default: mod.Qt })),
+  "plugins/cidr/register": () => import("@/registry/icons/plugins/cidr/register").then((mod) => ({ default: mod.Register })),
+  "plugins/cidr/registers": () => import("@/registry/icons/plugins/cidr/registers").then((mod) => ({ default: mod.Registers })),
+  "plugins/cidr/remote-swift-package-dependency": () => import("@/registry/icons/plugins/cidr/remote-swift-package-dependency").then((mod) => ({ default: mod.RemoteSwiftPackageDependency })),
+  "plugins/cidr/remote-tool-set": () => import("@/registry/icons/plugins/cidr/remote-tool-set").then((mod) => ({ default: mod.RemoteToolSet })),
+  "plugins/cidr/reset-cache-and-reload-projects": () => import("@/registry/icons/plugins/cidr/reset-cache-and-reload-projects").then((mod) => ({ default: mod.ResetCacheAndReloadProjects })),
+  "plugins/cidr/reset-mcu": () => import("@/registry/icons/plugins/cidr/reset-mcu").then((mod) => ({ default: mod.ResetMcu })),
+  "plugins/cidr/return-value": () => import("@/registry/icons/plugins/cidr/return-value").then((mod) => ({ default: mod.ReturnValue })),
+  "plugins/cidr/stm32-cube-mx": () => import("@/registry/icons/plugins/cidr/stm32-cube-mx").then((mod) => ({ default: mod.STM32CubeMX })),
+  "plugins/cidr/swift-lang": () => import("@/registry/icons/plugins/cidr/swift-lang").then((mod) => ({ default: mod.SwiftLang })),
+  "plugins/cidr/swift-package": () => import("@/registry/icons/plugins/cidr/swift-package").then((mod) => ({ default: mod.SwiftPackage })),
+  "plugins/cidr/swift-package-dependency": () => import("@/registry/icons/plugins/cidr/swift-package-dependency").then((mod) => ({ default: mod.SwiftPackageDependency })),
+  "plugins/cidr/swift-package-manifest": () => import("@/registry/icons/plugins/cidr/swift-package-manifest").then((mod) => ({ default: mod.SwiftPackageManifest })),
+  "plugins/cidr/swift-package-run": () => import("@/registry/icons/plugins/cidr/swift-package-run").then((mod) => ({ default: mod.SwiftPackageRun })),
+  "plugins/cidr/swift-package-test": () => import("@/registry/icons/plugins/cidr/swift-package-test").then((mod) => ({ default: mod.SwiftPackageTest })),
+  "plugins/cidr/target": () => import("@/registry/icons/plugins/cidr/target").then((mod) => ({ default: mod.Target })),
+  "plugins/cidr/type-extension": () => import("@/registry/icons/plugins/cidr/type-extension").then((mod) => ({ default: mod.TypeExtension })),
+  "plugins/cidr/unfreeze": () => import("@/registry/icons/plugins/cidr/unfreeze").then((mod) => ({ default: mod.Unfreeze })),
+  "plugins/cidr/unfreeze-all": () => import("@/registry/icons/plugins/cidr/unfreeze-all").then((mod) => ({ default: mod.UnfreezeAll })),
+  "plugins/cidr/value-muted": () => import("@/registry/icons/plugins/cidr/value-muted").then((mod) => ({ default: mod.ValueMuted })),
+  "plugins/cidr/variables": () => import("@/registry/icons/plugins/cidr/variables").then((mod) => ({ default: mod.Variables })),
+  "plugins/cidr/vcpkg": () => import("@/registry/icons/plugins/cidr/vcpkg").then((mod) => ({ default: mod.VCPKG })),
+  "plugins/cidr/vhdl": () => import("@/registry/icons/plugins/cidr/vhdl").then((mod) => ({ default: mod.Vhdl })),
+  "plugins/cidr/сode-assistant-class": () => import("@/registry/icons/plugins/cidr/сode-assistant-class").then((mod) => ({ default: mod.СodeAssistantClass })),
+  "plugins/cidr/сode-assistant-class-extension": () => import("@/registry/icons/plugins/cidr/сode-assistant-class-extension").then((mod) => ({ default: mod.СodeAssistantClassExtension })),
+  "plugins/cidr/сode-assistant-macro": () => import("@/registry/icons/plugins/cidr/сode-assistant-macro").then((mod) => ({ default: mod.СodeAssistantMacro })),
+  "plugins/cidr/сode-assistant-member": () => import("@/registry/icons/plugins/cidr/сode-assistant-member").then((mod) => ({ default: mod.СodeAssistantMember })),
+  "plugins/cidr/сode-assistant-member-optional": () => import("@/registry/icons/plugins/cidr/сode-assistant-member-optional").then((mod) => ({ default: mod.СodeAssistantMemberOptional })),
+  "plugins/cidr/сode-assistant-namespace": () => import("@/registry/icons/plugins/cidr/сode-assistant-namespace").then((mod) => ({ default: mod.СodeAssistantNamespace })),
+  "plugins/cidr/сore-dump-debug": () => import("@/registry/icons/plugins/cidr/сore-dump-debug").then((mod) => ({ default: mod.СoreDumpDebug })),
+  "plugins/cidr/сrun-configuration": () => import("@/registry/icons/plugins/cidr/сrun-configuration").then((mod) => ({ default: mod.СRunConfiguration })),
+  "plugins/code-with-me/cwm-cam-avatar-off": () => import("@/registry/icons/plugins/code-with-me/cwm-cam-avatar-off").then((mod) => ({ default: mod.CwmCamAvatarOff })),
+  "plugins/code-with-me/cwm-cam-avatar-on": () => import("@/registry/icons/plugins/code-with-me/cwm-cam-avatar-on").then((mod) => ({ default: mod.CwmCamAvatarOn })),
+  "plugins/code-with-me/cwm-cam-off": () => import("@/registry/icons/plugins/code-with-me/cwm-cam-off").then((mod) => ({ default: mod.CwmCamOff })),
+  "plugins/code-with-me/cwm-cam-on": () => import("@/registry/icons/plugins/code-with-me/cwm-cam-on").then((mod) => ({ default: mod.CwmCamOn })),
+  "plugins/code-with-me/cwm-disable-call": () => import("@/registry/icons/plugins/code-with-me/cwm-disable-call").then((mod) => ({ default: mod.CwmDisableCall })),
+  "plugins/code-with-me/cwm-enable-call": () => import("@/registry/icons/plugins/code-with-me/cwm-enable-call").then((mod) => ({ default: mod.CwmEnableCall })),
+  "plugins/code-with-me/cwm-icon-modificator": () => import("@/registry/icons/plugins/code-with-me/cwm-icon-modificator").then((mod) => ({ default: mod.CwmIconModificator })),
+  "plugins/code-with-me/cwm-icon-modificator-menu": () => import("@/registry/icons/plugins/code-with-me/cwm-icon-modificator-menu").then((mod) => ({ default: mod.CwmIconModificatorMenu })),
+  "plugins/code-with-me/cwm-invite": () => import("@/registry/icons/plugins/code-with-me/cwm-invite").then((mod) => ({ default: mod.CwmInvite })),
+  "plugins/code-with-me/cwm-mic-avatar-off": () => import("@/registry/icons/plugins/code-with-me/cwm-mic-avatar-off").then((mod) => ({ default: mod.CwmMicAvatarOff })),
+  "plugins/code-with-me/cwm-mic-avatar-on": () => import("@/registry/icons/plugins/code-with-me/cwm-mic-avatar-on").then((mod) => ({ default: mod.CwmMicAvatarOn })),
+  "plugins/code-with-me/cwm-mic-off": () => import("@/registry/icons/plugins/code-with-me/cwm-mic-off").then((mod) => ({ default: mod.CwmMicOff })),
+  "plugins/code-with-me/cwm-mic-on": () => import("@/registry/icons/plugins/code-with-me/cwm-mic-on").then((mod) => ({ default: mod.CwmMicOn })),
+  "plugins/code-with-me/cwm-permission-edit": () => import("@/registry/icons/plugins/code-with-me/cwm-permission-edit").then((mod) => ({ default: mod.CwmPermissionEdit })),
+  "plugins/code-with-me/cwm-permission-full": () => import("@/registry/icons/plugins/code-with-me/cwm-permission-full").then((mod) => ({ default: mod.CwmPermissionFull })),
+  "plugins/code-with-me/cwm-permission-view": () => import("@/registry/icons/plugins/code-with-me/cwm-permission-view").then((mod) => ({ default: mod.CwmPermissionView })),
+  "plugins/code-with-me/cwm-permissions": () => import("@/registry/icons/plugins/code-with-me/cwm-permissions").then((mod) => ({ default: mod.CwmPermissions })),
+  "plugins/code-with-me/cwm-permissions-denied": () => import("@/registry/icons/plugins/code-with-me/cwm-permissions-denied").then((mod) => ({ default: mod.CwmPermissionsDenied })),
+  "plugins/code-with-me/cwm-permissions-granted": () => import("@/registry/icons/plugins/code-with-me/cwm-permissions-granted").then((mod) => ({ default: mod.CwmPermissionsGranted })),
+  "plugins/code-with-me/cwm-screen-in-browser-off": () => import("@/registry/icons/plugins/code-with-me/cwm-screen-in-browser-off").then((mod) => ({ default: mod.CwmScreenInBrowserOff })),
+  "plugins/code-with-me/cwm-screen-in-browser-on": () => import("@/registry/icons/plugins/code-with-me/cwm-screen-in-browser-on").then((mod) => ({ default: mod.CwmScreenInBrowserOn })),
+  "plugins/code-with-me/cwm-screen-off": () => import("@/registry/icons/plugins/code-with-me/cwm-screen-off").then((mod) => ({ default: mod.CwmScreenOff })),
+  "plugins/code-with-me/cwm-screen-on": () => import("@/registry/icons/plugins/code-with-me/cwm-screen-on").then((mod) => ({ default: mod.CwmScreenOn })),
+  "plugins/code-with-me/cwm-share": () => import("@/registry/icons/plugins/code-with-me/cwm-share").then((mod) => ({ default: mod.CwmShare })),
+  "plugins/code-with-me/cwm-verified": () => import("@/registry/icons/plugins/code-with-me/cwm-verified").then((mod) => ({ default: mod.CwmVerified })),
+  "plugins/dart/dart": () => import("@/registry/icons/plugins/dart/dart").then((mod) => ({ default: mod.Dart })),
+  "plugins/dart/dart-remote": () => import("@/registry/icons/plugins/dart/dart-remote").then((mod) => ({ default: mod.DartRemote })),
+  "plugins/dart/dart-test": () => import("@/registry/icons/plugins/dart/dart-test").then((mod) => ({ default: mod.DartTest })),
+  "plugins/dart/dart-web": () => import("@/registry/icons/plugins/dart/dart-web").then((mod) => ({ default: mod.DartWeb })),
+  "plugins/dart/observatory": () => import("@/registry/icons/plugins/dart/observatory").then((mod) => ({ default: mod.Observatory })),
+  "plugins/dart/warning-point": () => import("@/registry/icons/plugins/dart/warning-point").then((mod) => ({ default: mod.WarningPoint })),
+  "plugins/databricks/run-as-workflow": () => import("@/registry/icons/plugins/databricks/run-as-workflow").then((mod) => ({ default: mod.RunAsWorkflow })),
+  "plugins/dev-containers/dev-containers": () => import("@/registry/icons/plugins/dev-containers/dev-containers").then((mod) => ({ default: mod.DevContainers })),
+  "plugins/docker/docker": () => import("@/registry/icons/plugins/docker/docker").then((mod) => ({ default: mod.Docker })),
+  "plugins/docker/docker-compose": () => import("@/registry/icons/plugins/docker/docker-compose").then((mod) => ({ default: mod.DockerCompose })),
+  "plugins/docker/docker-compose-scaled-service-stopped": () => import("@/registry/icons/plugins/docker/docker-compose-scaled-service-stopped").then((mod) => ({ default: mod.DockerComposeScaledServiceStopped })),
+  "plugins/docker/docker-compose-scaled-service-up": () => import("@/registry/icons/plugins/docker/docker-compose-scaled-service-up").then((mod) => ({ default: mod.DockerComposeScaledServiceUp })),
+  "plugins/docker/docker-compose-service-stopped": () => import("@/registry/icons/plugins/docker/docker-compose-service-stopped").then((mod) => ({ default: mod.DockerComposeServiceStopped })),
+  "plugins/docker/docker-compose-service-up": () => import("@/registry/icons/plugins/docker/docker-compose-service-up").then((mod) => ({ default: mod.DockerComposeServiceUp })),
+  "plugins/docker/docker-registry": () => import("@/registry/icons/plugins/docker/docker-registry").then((mod) => ({ default: mod.DockerRegistry })),
+  "plugins/full-line-completion/full-line-completion": () => import("@/registry/icons/plugins/full-line-completion/full-line-completion").then((mod) => ({ default: mod.FullLineCompletion })),
+  "plugins/full-line-completion/full-line-completion-outline": () => import("@/registry/icons/plugins/full-line-completion/full-line-completion-outline").then((mod) => ({ default: mod.FullLineCompletionOutline })),
+  "plugins/github/github": () => import("@/registry/icons/plugins/github/github").then((mod) => ({ default: mod.Github })),
+  "plugins/github/github-warning": () => import("@/registry/icons/plugins/github/github-warning").then((mod) => ({ default: mod.GithubWarning })),
+  "plugins/gitlab/git-lab-logo": () => import("@/registry/icons/plugins/gitlab/git-lab-logo").then((mod) => ({ default: mod.GitLabLogo })),
+  "plugins/gitlab/git-lab-warning": () => import("@/registry/icons/plugins/gitlab/git-lab-warning").then((mod) => ({ default: mod.GitLabWarning })),
+  "plugins/graphql/apollo": () => import("@/registry/icons/plugins/graphql/apollo").then((mod) => ({ default: mod.Apollo })),
+  "plugins/graphql/attribute": () => import("@/registry/icons/plugins/graphql/attribute").then((mod) => ({ default: mod.Attribute })),
+  "plugins/graphql/enum": () => import("@/registry/icons/plugins/graphql/enum").then((mod) => ({ default: mod.Enum })),
+  "plugins/graphql/field": () => import("@/registry/icons/plugins/graphql/field").then((mod) => ({ default: mod.Field })),
+  "plugins/graphql/fragment": () => import("@/registry/icons/plugins/graphql/fragment").then((mod) => ({ default: mod.Fragment })),
+  "plugins/graphql/graph-ql": () => import("@/registry/icons/plugins/graphql/graph-ql").then((mod) => ({ default: mod.GraphQL })),
+  "plugins/graphql/graph-qlcongif": () => import("@/registry/icons/plugins/graphql/graph-qlcongif").then((mod) => ({ default: mod.GraphQLCongif })),
+  "plugins/graphql/graph-qlschema": () => import("@/registry/icons/plugins/graphql/graph-qlschema").then((mod) => ({ default: mod.GraphQLSchema })),
+  "plugins/graphql/interface": () => import("@/registry/icons/plugins/graphql/interface").then((mod) => ({ default: mod.Interface })),
+  "plugins/graphql/mutation": () => import("@/registry/icons/plugins/graphql/mutation").then((mod) => ({ default: mod.Mutation })),
+  "plugins/graphql/query": () => import("@/registry/icons/plugins/graphql/query").then((mod) => ({ default: mod.Query })),
+  "plugins/graphql/relay": () => import("@/registry/icons/plugins/graphql/relay").then((mod) => ({ default: mod.Relay })),
+  "plugins/graphql/scalar": () => import("@/registry/icons/plugins/graphql/scalar").then((mod) => ({ default: mod.Scalar })),
+  "plugins/graphql/subscription": () => import("@/registry/icons/plugins/graphql/subscription").then((mod) => ({ default: mod.Subscription })),
+  "plugins/graphql/type": () => import("@/registry/icons/plugins/graphql/type").then((mod) => ({ default: mod.Type })),
+  "plugins/graphql/variable": () => import("@/registry/icons/plugins/graphql/variable").then((mod) => ({ default: mod.Variable })),
+  "plugins/java-ee/abstract-class": () => import("@/registry/icons/plugins/java-ee/abstract-class").then((mod) => ({ default: mod.AbstractClass })),
+  "plugins/java-ee/abstract-field": () => import("@/registry/icons/plugins/java-ee/abstract-field").then((mod) => ({ default: mod.AbstractField })),
+  "plugins/java-ee/abstract-method": () => import("@/registry/icons/plugins/java-ee/abstract-method").then((mod) => ({ default: mod.AbstractMethod })),
+  "plugins/java-ee/abstract-property": () => import("@/registry/icons/plugins/java-ee/abstract-property").then((mod) => ({ default: mod.AbstractProperty })),
+  "plugins/java-ee/annotation-type": () => import("@/registry/icons/plugins/java-ee/annotation-type").then((mod) => ({ default: mod.AnnotationType })),
+  "plugins/java-ee/application-xml": () => import("@/registry/icons/plugins/java-ee/application-xml").then((mod) => ({ default: mod.ApplicationXml })),
+  "plugins/java-ee/bean": () => import("@/registry/icons/plugins/java-ee/bean").then((mod) => ({ default: mod.Bean })),
+  "plugins/java-ee/bean-factory": () => import("@/registry/icons/plugins/java-ee/bean-factory").then((mod) => ({ default: mod.BeanFactory })),
+  "plugins/java-ee/bean-infrastructure": () => import("@/registry/icons/plugins/java-ee/bean-infrastructure").then((mod) => ({ default: mod.BeanInfrastructure })),
+  "plugins/java-ee/bean-method": () => import("@/registry/icons/plugins/java-ee/bean-method").then((mod) => ({ default: mod.BeanMethod })),
+  "plugins/java-ee/bean-property": () => import("@/registry/icons/plugins/java-ee/bean-property").then((mod) => ({ default: mod.BeanProperty })),
+  "plugins/java-ee/build-on-frame-deactivation": () => import("@/registry/icons/plugins/java-ee/build-on-frame-deactivation").then((mod) => ({ default: mod.BuildOnFrameDeactivation })),
+  "plugins/java-ee/cdi": () => import("@/registry/icons/plugins/java-ee/cdi").then((mod) => ({ default: mod.Cdi })),
+  "plugins/java-ee/class": () => import("@/registry/icons/plugins/java-ee/class").then((mod) => ({ default: mod.Class })),
+  "plugins/java-ee/class-initializer": () => import("@/registry/icons/plugins/java-ee/class-initializer").then((mod) => ({ default: mod.ClassInitializer })),
+  "plugins/java-ee/component": () => import("@/registry/icons/plugins/java-ee/component").then((mod) => ({ default: mod.Component })),
+  "plugins/java-ee/configuration-scan": () => import("@/registry/icons/plugins/java-ee/configuration-scan").then((mod) => ({ default: mod.ConfigurationScan })),
+  "plugins/java-ee/constraint-mappings": () => import("@/registry/icons/plugins/java-ee/constraint-mappings").then((mod) => ({ default: mod.ConstraintMappings })),
+  "plugins/java-ee/constraint-validator": () => import("@/registry/icons/plugins/java-ee/constraint-validator").then((mod) => ({ default: mod.ConstraintValidator })),
+  "plugins/java-ee/constraints": () => import("@/registry/icons/plugins/java-ee/constraints").then((mod) => ({ default: mod.Constraints })),
+  "plugins/java-ee/converter": () => import("@/registry/icons/plugins/java-ee/converter").then((mod) => ({ default: mod.Converter })),
+  "plugins/java-ee/decorator": () => import("@/registry/icons/plugins/java-ee/decorator").then((mod) => ({ default: mod.Decorator })),
+  "plugins/java-ee/deployments": () => import("@/registry/icons/plugins/java-ee/deployments").then((mod) => ({ default: mod.Deployments })),
+  "plugins/java-ee/ejb-artifact": () => import("@/registry/icons/plugins/java-ee/ejb-artifact").then((mod) => ({ default: mod.EjbArtifact })),
+  "plugins/java-ee/ejb-business-method": () => import("@/registry/icons/plugins/java-ee/ejb-business-method").then((mod) => ({ default: mod.EjbBusinessMethod })),
+  "plugins/java-ee/ejb-class": () => import("@/registry/icons/plugins/java-ee/ejb-class").then((mod) => ({ default: mod.EjbClass })),
+  "plugins/java-ee/ejb-cmp-field": () => import("@/registry/icons/plugins/java-ee/ejb-cmp-field").then((mod) => ({ default: mod.EjbCmpField })),
+  "plugins/java-ee/ejb-cmr-field": () => import("@/registry/icons/plugins/java-ee/ejb-cmr-field").then((mod) => ({ default: mod.EjbCmrField })),
+  "plugins/java-ee/ejb-create-method": () => import("@/registry/icons/plugins/java-ee/ejb-create-method").then((mod) => ({ default: mod.EjbCreateMethod })),
+  "plugins/java-ee/ejb-finder-method": () => import("@/registry/icons/plugins/java-ee/ejb-finder-method").then((mod) => ({ default: mod.EjbFinderMethod })),
+  "plugins/java-ee/ejb-jar-xml": () => import("@/registry/icons/plugins/java-ee/ejb-jar-xml").then((mod) => ({ default: mod.EjbJarXml })),
+  "plugins/java-ee/ejb-module": () => import("@/registry/icons/plugins/java-ee/ejb-module").then((mod) => ({ default: mod.EjbModule })),
+  "plugins/java-ee/ejb-primary-key-class": () => import("@/registry/icons/plugins/java-ee/ejb-primary-key-class").then((mod) => ({ default: mod.EjbPrimaryKeyClass })),
+  "plugins/java-ee/ejb-reference": () => import("@/registry/icons/plugins/java-ee/ejb-reference").then((mod) => ({ default: mod.EjbReference })),
+  "plugins/java-ee/embedded-attribute-overlay": () => import("@/registry/icons/plugins/java-ee/embedded-attribute-overlay").then((mod) => ({ default: mod.EmbeddedAttributeOverlay })),
+  "plugins/java-ee/entity-bean": () => import("@/registry/icons/plugins/java-ee/entity-bean").then((mod) => ({ default: mod.EntityBean })),
+  "plugins/java-ee/enum": () => import("@/registry/icons/plugins/java-ee/enum").then((mod) => ({ default: mod.Enum })),
+  "plugins/java-ee/er-diagram": () => import("@/registry/icons/plugins/java-ee/er-diagram").then((mod) => ({ default: mod.ErDiagram })),
+  "plugins/java-ee/event": () => import("@/registry/icons/plugins/java-ee/event").then((mod) => ({ default: mod.Event })),
+  "plugins/java-ee/field": () => import("@/registry/icons/plugins/java-ee/field").then((mod) => ({ default: mod.Field })),
+  "plugins/java-ee/field-in-xml": () => import("@/registry/icons/plugins/java-ee/field-in-xml").then((mod) => ({ default: mod.FieldInXml })),
+  "plugins/java-ee/general": () => import("@/registry/icons/plugins/java-ee/general").then((mod) => ({ default: mod.General })),
+  "plugins/java-ee/getter-in-xml": () => import("@/registry/icons/plugins/java-ee/getter-in-xml").then((mod) => ({ default: mod.GetterInXml })),
+  "plugins/java-ee/groovy": () => import("@/registry/icons/plugins/java-ee/groovy").then((mod) => ({ default: mod.Groovy })),
+  "plugins/java-ee/hibernate": () => import("@/registry/icons/plugins/java-ee/hibernate").then((mod) => ({ default: mod.Hibernate })),
+  "plugins/java-ee/home": () => import("@/registry/icons/plugins/java-ee/home").then((mod) => ({ default: mod.Home })),
+  "plugins/java-ee/inherited-attribute-overlay": () => import("@/registry/icons/plugins/java-ee/inherited-attribute-overlay").then((mod) => ({ default: mod.InheritedAttributeOverlay })),
+  "plugins/java-ee/inteceptor-method": () => import("@/registry/icons/plugins/java-ee/inteceptor-method").then((mod) => ({ default: mod.InteceptorMethod })),
+  "plugins/java-ee/interceptor-class": () => import("@/registry/icons/plugins/java-ee/interceptor-class").then((mod) => ({ default: mod.InterceptorClass })),
+  "plugins/java-ee/interceptors": () => import("@/registry/icons/plugins/java-ee/interceptors").then((mod) => ({ default: mod.Interceptors })),
+  "plugins/java-ee/interface": () => import("@/registry/icons/plugins/java-ee/interface").then((mod) => ({ default: mod.Interface })),
+  "plugins/java-ee/jakarta-ee": () => import("@/registry/icons/plugins/java-ee/jakarta-ee").then((mod) => ({ default: mod.JakartaEE })),
+  "plugins/java-ee/java-eeartifact": () => import("@/registry/icons/plugins/java-ee/java-eeartifact").then((mod) => ({ default: mod.JavaEEArtifact })),
+  "plugins/java-ee/javaee-app-module": () => import("@/registry/icons/plugins/java-ee/javaee-app-module").then((mod) => ({ default: mod.JavaeeAppModule })),
+  "plugins/java-ee/jpa-facet": () => import("@/registry/icons/plugins/java-ee/jpa-facet").then((mod) => ({ default: mod.JpaFacet })),
+  "plugins/java-ee/lib-annotation": () => import("@/registry/icons/plugins/java-ee/lib-annotation").then((mod) => ({ default: mod.LibAnnotation })),
+  "plugins/java-ee/lib-validator": () => import("@/registry/icons/plugins/java-ee/lib-validator").then((mod) => ({ default: mod.LibValidator })),
+  "plugins/java-ee/listener": () => import("@/registry/icons/plugins/java-ee/listener").then((mod) => ({ default: mod.Listener })),
+  "plugins/java-ee/managed-bean": () => import("@/registry/icons/plugins/java-ee/managed-bean").then((mod) => ({ default: mod.ManagedBean })),
+  "plugins/java-ee/message-bean": () => import("@/registry/icons/plugins/java-ee/message-bean").then((mod) => ({ default: mod.MessageBean })),
+  "plugins/java-ee/method": () => import("@/registry/icons/plugins/java-ee/method").then((mod) => ({ default: mod.Method })),
+  "plugins/java-ee/navigation-rule": () => import("@/registry/icons/plugins/java-ee/navigation-rule").then((mod) => ({ default: mod.NavigationRule })),
+  "plugins/java-ee/persistence-attribute": () => import("@/registry/icons/plugins/java-ee/persistence-attribute").then((mod) => ({ default: mod.PersistenceAttribute })),
+  "plugins/java-ee/persistence-embeddable": () => import("@/registry/icons/plugins/java-ee/persistence-embeddable").then((mod) => ({ default: mod.PersistenceEmbeddable })),
+  "plugins/java-ee/persistence-id": () => import("@/registry/icons/plugins/java-ee/persistence-id").then((mod) => ({ default: mod.PersistenceId })),
+  "plugins/java-ee/persistence-id-relationship": () => import("@/registry/icons/plugins/java-ee/persistence-id-relationship").then((mod) => ({ default: mod.PersistenceIdRelationship })),
+  "plugins/java-ee/persistence-mapped-superclass": () => import("@/registry/icons/plugins/java-ee/persistence-mapped-superclass").then((mod) => ({ default: mod.PersistenceMappedSuperclass })),
+  "plugins/java-ee/persistence-relationship": () => import("@/registry/icons/plugins/java-ee/persistence-relationship").then((mod) => ({ default: mod.PersistenceRelationship })),
+  "plugins/java-ee/persistence-unit": () => import("@/registry/icons/plugins/java-ee/persistence-unit").then((mod) => ({ default: mod.PersistenceUnit })),
+  "plugins/java-ee/property": () => import("@/registry/icons/plugins/java-ee/property").then((mod) => ({ default: mod.Property })),
+  "plugins/java-ee/publisher": () => import("@/registry/icons/plugins/java-ee/publisher").then((mod) => ({ default: mod.Publisher })),
+  "plugins/java-ee/record": () => import("@/registry/icons/plugins/java-ee/record").then((mod) => ({ default: mod.Record })),
+  "plugins/java-ee/remote": () => import("@/registry/icons/plugins/java-ee/remote").then((mod) => ({ default: mod.Remote })),
+  "plugins/java-ee/renderer-kit": () => import("@/registry/icons/plugins/java-ee/renderer-kit").then((mod) => ({ default: mod.RendererKit })),
+  "plugins/java-ee/request-mapping": () => import("@/registry/icons/plugins/java-ee/request-mapping").then((mod) => ({ default: mod.RequestMapping })),
+  "plugins/java-ee/scheduled-event": () => import("@/registry/icons/plugins/java-ee/scheduled-event").then((mod) => ({ default: mod.ScheduledEvent })),
+  "plugins/java-ee/scopes": () => import("@/registry/icons/plugins/java-ee/scopes").then((mod) => ({ default: mod.Scopes })),
+  "plugins/java-ee/session-bean": () => import("@/registry/icons/plugins/java-ee/session-bean").then((mod) => ({ default: mod.SessionBean })),
+  "plugins/java-ee/show-autowired-candidates": () => import("@/registry/icons/plugins/java-ee/show-autowired-candidates").then((mod) => ({ default: mod.ShowAutowiredCandidates })),
+  "plugins/java-ee/show-autowired-dependencies": () => import("@/registry/icons/plugins/java-ee/show-autowired-dependencies").then((mod) => ({ default: mod.ShowAutowiredDependencies })),
+  "plugins/java-ee/show-cacheable": () => import("@/registry/icons/plugins/java-ee/show-cacheable").then((mod) => ({ default: mod.ShowCacheable })),
+  "plugins/java-ee/trait": () => import("@/registry/icons/plugins/java-ee/trait").then((mod) => ({ default: mod.Trait })),
+  "plugins/java-ee/update-running-application": () => import("@/registry/icons/plugins/java-ee/update-running-application").then((mod) => ({ default: mod.UpdateRunningApplication })),
+  "plugins/java-ee/validator": () => import("@/registry/icons/plugins/java-ee/validator").then((mod) => ({ default: mod.Validator })),
+  "plugins/java-ee/variable": () => import("@/registry/icons/plugins/java-ee/variable").then((mod) => ({ default: mod.Variable })),
+  "plugins/java-ee/web-artifact": () => import("@/registry/icons/plugins/java-ee/web-artifact").then((mod) => ({ default: mod.WebArtifact })),
+  "plugins/java-ee/web-module": () => import("@/registry/icons/plugins/java-ee/web-module").then((mod) => ({ default: mod.WebModule })),
+  "plugins/java-ee/web-module-group": () => import("@/registry/icons/plugins/java-ee/web-module-group").then((mod) => ({ default: mod.WebModuleGroup })),
+  "plugins/java-ee/web-service": () => import("@/registry/icons/plugins/java-ee/web-service").then((mod) => ({ default: mod.WebService })),
+  "plugins/java-ee/web-service-client": () => import("@/registry/icons/plugins/java-ee/web-service-client").then((mod) => ({ default: mod.WebServiceClient })),
+  "plugins/java-ee/web-xml": () => import("@/registry/icons/plugins/java-ee/web-xml").then((mod) => ({ default: mod.WebXml })),
+  "plugins/java-ee/xml-service": () => import("@/registry/icons/plugins/java-ee/xml-service").then((mod) => ({ default: mod.XmlService })),
+  "plugins/jpa/add-changelog": () => import("@/registry/icons/plugins/jpa/add-changelog").then((mod) => ({ default: mod.AddChangelog })),
+  "plugins/jpa/add-changeset": () => import("@/registry/icons/plugins/jpa/add-changeset").then((mod) => ({ default: mod.AddChangeset })),
+  "plugins/jpa/add-named-query": () => import("@/registry/icons/plugins/jpa/add-named-query").then((mod) => ({ default: mod.AddNamedQuery })),
+  "plugins/jpa/blaze-persistence-entity-view": () => import("@/registry/icons/plugins/jpa/blaze-persistence-entity-view").then((mod) => ({ default: mod.BlazePersistenceEntityView })),
+  "plugins/jpa/changelog": () => import("@/registry/icons/plugins/jpa/changelog").then((mod) => ({ default: mod.Changelog })),
+  "plugins/jpa/changeset": () => import("@/registry/icons/plugins/jpa/changeset").then((mod) => ({ default: mod.Changeset })),
+  "plugins/jpa/check-constraint": () => import("@/registry/icons/plugins/jpa/check-constraint").then((mod) => ({ default: mod.CheckConstraint })),
+  "plugins/jpa/column": () => import("@/registry/icons/plugins/jpa/column").then((mod) => ({ default: mod.Column })),
+  "plugins/jpa/converter": () => import("@/registry/icons/plugins/jpa/converter").then((mod) => ({ default: mod.Converter })),
+  "plugins/jpa/count": () => import("@/registry/icons/plugins/jpa/count").then((mod) => ({ default: mod.Count })),
+  "plugins/jpa/create-column": () => import("@/registry/icons/plugins/jpa/create-column").then((mod) => ({ default: mod.CreateColumn })),
+  "plugins/jpa/create-constraint": () => import("@/registry/icons/plugins/jpa/create-constraint").then((mod) => ({ default: mod.CreateConstraint })),
+  "plugins/jpa/create-index": () => import("@/registry/icons/plugins/jpa/create-index").then((mod) => ({ default: mod.CreateIndex })),
+  "plugins/jpa/create-sequence": () => import("@/registry/icons/plugins/jpa/create-sequence").then((mod) => ({ default: mod.CreateSequence })),
+  "plugins/jpa/create-table": () => import("@/registry/icons/plugins/jpa/create-table").then((mod) => ({ default: mod.CreateTable })),
+  "plugins/jpa/data-model": () => import("@/registry/icons/plugins/jpa/data-model").then((mod) => ({ default: mod.DataModel })),
+  "plugins/jpa/data-stores": () => import("@/registry/icons/plugins/jpa/data-stores").then((mod) => ({ default: mod.DataStores })),
+  "plugins/jpa/data-view": () => import("@/registry/icons/plugins/jpa/data-view").then((mod) => ({ default: mod.DataView })),
+  "plugins/jpa/db-changelog": () => import("@/registry/icons/plugins/jpa/db-changelog").then((mod) => ({ default: mod.DbChangelog })),
+  "plugins/jpa/ddl-scripts": () => import("@/registry/icons/plugins/jpa/ddl-scripts").then((mod) => ({ default: mod.DdlScripts })),
+  "plugins/jpa/delete": () => import("@/registry/icons/plugins/jpa/delete").then((mod) => ({ default: mod.Delete })),
+  "plugins/jpa/diff-liquibase-changelog": () => import("@/registry/icons/plugins/jpa/diff-liquibase-changelog").then((mod) => ({ default: mod.DiffLiquibaseChangelog })),
+  "plugins/jpa/diff-plugin-logo": () => import("@/registry/icons/plugins/jpa/diff-plugin-logo").then((mod) => ({ default: mod.DiffPluginLogo })),
+  "plugins/jpa/drop-column": () => import("@/registry/icons/plugins/jpa/drop-column").then((mod) => ({ default: mod.DropColumn })),
+  "plugins/jpa/drop-constraint": () => import("@/registry/icons/plugins/jpa/drop-constraint").then((mod) => ({ default: mod.DropConstraint })),
+  "plugins/jpa/drop-index": () => import("@/registry/icons/plugins/jpa/drop-index").then((mod) => ({ default: mod.DropIndex })),
+  "plugins/jpa/drop-sequence": () => import("@/registry/icons/plugins/jpa/drop-sequence").then((mod) => ({ default: mod.DropSequence })),
+  "plugins/jpa/drop-table": () => import("@/registry/icons/plugins/jpa/drop-table").then((mod) => ({ default: mod.DropTable })),
+  "plugins/jpa/dto": () => import("@/registry/icons/plugins/jpa/dto").then((mod) => ({ default: mod.Dto })),
+  "plugins/jpa/embedded": () => import("@/registry/icons/plugins/jpa/embedded").then((mod) => ({ default: mod.Embedded })),
+  "plugins/jpa/equals-and-hashcode": () => import("@/registry/icons/plugins/jpa/equals-and-hashcode").then((mod) => ({ default: mod.EqualsAndHashcode })),
+  "plugins/jpa/explorer": () => import("@/registry/icons/plugins/jpa/explorer").then((mod) => ({ default: mod.Explorer })),
+  "plugins/jpa/file-transfer": () => import("@/registry/icons/plugins/jpa/file-transfer").then((mod) => ({ default: mod.FileTransfer })),
+  "plugins/jpa/find-collection": () => import("@/registry/icons/plugins/jpa/find-collection").then((mod) => ({ default: mod.FindCollection })),
+  "plugins/jpa/find-instance": () => import("@/registry/icons/plugins/jpa/find-instance").then((mod) => ({ default: mod.FindInstance })),
+  "plugins/jpa/flyway-plugin-logo": () => import("@/registry/icons/plugins/jpa/flyway-plugin-logo").then((mod) => ({ default: mod.FlywayPluginLogo })),
+  "plugins/jpa/generic-ui": () => import("@/registry/icons/plugins/jpa/generic-ui").then((mod) => ({ default: mod.GenericUI })),
+  "plugins/jpa/gold-key": () => import("@/registry/icons/plugins/jpa/gold-key").then((mod) => ({ default: mod.GoldKey })),
+  "plugins/jpa/hibernate-event": () => import("@/registry/icons/plugins/jpa/hibernate-event").then((mod) => ({ default: mod.HibernateEvent })),
+  "plugins/jpa/include": () => import("@/registry/icons/plugins/jpa/include").then((mod) => ({ default: mod.Include })),
+  "plugins/jpa/init-liquibase-changelog": () => import("@/registry/icons/plugins/jpa/init-liquibase-changelog").then((mod) => ({ default: mod.InitLiquibaseChangelog })),
+  "plugins/jpa/init-scripts": () => import("@/registry/icons/plugins/jpa/init-scripts").then((mod) => ({ default: mod.InitScripts })),
+  "plugins/jpa/insight-navigate": () => import("@/registry/icons/plugins/jpa/insight-navigate").then((mod) => ({ default: mod.InsightNavigate })),
+  "plugins/jpa/java-module-root": () => import("@/registry/icons/plugins/jpa/java-module-root").then((mod) => ({ default: mod.JavaModuleRoot })),
+  "plugins/jpa/liquibase": () => import("@/registry/icons/plugins/jpa/liquibase").then((mod) => ({ default: mod.Liquibase })),
+  "plugins/jpa/liquibase-mono": () => import("@/registry/icons/plugins/jpa/liquibase-mono").then((mod) => ({ default: mod.LiquibaseMono })),
+  "plugins/jpa/liquibase-plugin-logo": () => import("@/registry/icons/plugins/jpa/liquibase-plugin-logo").then((mod) => ({ default: mod.LiquibasePluginLogo })),
+  "plugins/jpa/liquibase-snapshot": () => import("@/registry/icons/plugins/jpa/liquibase-snapshot").then((mod) => ({ default: mod.LiquibaseSnapshot })),
+  "plugins/jpa/liquibase-update": () => import("@/registry/icons/plugins/jpa/liquibase-update").then((mod) => ({ default: mod.LiquibaseUpdate })),
+  "plugins/jpa/mailer": () => import("@/registry/icons/plugins/jpa/mailer").then((mod) => ({ default: mod.Mailer })),
+  "plugins/jpa/main-changelog": () => import("@/registry/icons/plugins/jpa/main-changelog").then((mod) => ({ default: mod.MainChangelog })),
+  "plugins/jpa/many-to-many": () => import("@/registry/icons/plugins/jpa/many-to-many").then((mod) => ({ default: mod.ManyToMany })),
+  "plugins/jpa/many-to-one": () => import("@/registry/icons/plugins/jpa/many-to-one").then((mod) => ({ default: mod.ManyToOne })),
+  "plugins/jpa/minimalistic-mode": () => import("@/registry/icons/plugins/jpa/minimalistic-mode").then((mod) => ({ default: mod.MinimalisticMode })),
+  "plugins/jpa/move-to-another-changelog": () => import("@/registry/icons/plugins/jpa/move-to-another-changelog").then((mod) => ({ default: mod.MoveToAnotherChangelog })),
+  "plugins/jpa/one-to-many": () => import("@/registry/icons/plugins/jpa/one-to-many").then((mod) => ({ default: mod.OneToMany })),
+  "plugins/jpa/one-to-one": () => import("@/registry/icons/plugins/jpa/one-to-one").then((mod) => ({ default: mod.OneToOne })),
+  "plugins/jpa/persistence-attribute": () => import("@/registry/icons/plugins/jpa/persistence-attribute").then((mod) => ({ default: mod.PersistenceAttribute })),
+  "plugins/jpa/persistence-embeddable": () => import("@/registry/icons/plugins/jpa/persistence-embeddable").then((mod) => ({ default: mod.PersistenceEmbeddable })),
+  "plugins/jpa/persistence-id": () => import("@/registry/icons/plugins/jpa/persistence-id").then((mod) => ({ default: mod.PersistenceId })),
+  "plugins/jpa/persistence-mapped-superclass": () => import("@/registry/icons/plugins/jpa/persistence-mapped-superclass").then((mod) => ({ default: mod.PersistenceMappedSuperclass })),
+  "plugins/jpa/persistence-relationship": () => import("@/registry/icons/plugins/jpa/persistence-relationship").then((mod) => ({ default: mod.PersistenceRelationship })),
+  "plugins/jpa/persistence-unit": () => import("@/registry/icons/plugins/jpa/persistence-unit").then((mod) => ({ default: mod.PersistenceUnit })),
+  "plugins/jpa/plugin-logo": () => import("@/registry/icons/plugins/jpa/plugin-logo").then((mod) => ({ default: mod.PluginLogo })),
+  "plugins/jpa/project-properties": () => import("@/registry/icons/plugins/jpa/project-properties").then((mod) => ({ default: mod.ProjectProperties })),
+  "plugins/jpa/projection": () => import("@/registry/icons/plugins/jpa/projection").then((mod) => ({ default: mod.Projection })),
+  "plugins/jpa/query": () => import("@/registry/icons/plugins/jpa/query").then((mod) => ({ default: mod.Query })),
+  "plugins/jpa/query-method": () => import("@/registry/icons/plugins/jpa/query-method").then((mod) => ({ default: mod.QueryMethod })),
+  "plugins/jpa/reference-by": () => import("@/registry/icons/plugins/jpa/reference-by").then((mod) => ({ default: mod.ReferenceBy })),
+  "plugins/jpa/reference-to": () => import("@/registry/icons/plugins/jpa/reference-to").then((mod) => ({ default: mod.ReferenceTo })),
+  "plugins/jpa/remove": () => import("@/registry/icons/plugins/jpa/remove").then((mod) => ({ default: mod.Remove })),
+  "plugins/jpa/rename-column": () => import("@/registry/icons/plugins/jpa/rename-column").then((mod) => ({ default: mod.RenameColumn })),
+  "plugins/jpa/rename-constraint": () => import("@/registry/icons/plugins/jpa/rename-constraint").then((mod) => ({ default: mod.RenameConstraint })),
+  "plugins/jpa/rename-index": () => import("@/registry/icons/plugins/jpa/rename-index").then((mod) => ({ default: mod.RenameIndex })),
+  "plugins/jpa/rename-sequence": () => import("@/registry/icons/plugins/jpa/rename-sequence").then((mod) => ({ default: mod.RenameSequence })),
+  "plugins/jpa/rename-table": () => import("@/registry/icons/plugins/jpa/rename-table").then((mod) => ({ default: mod.RenameTable })),
+  "plugins/jpa/repository": () => import("@/registry/icons/plugins/jpa/repository").then((mod) => ({ default: mod.Repository })),
+  "plugins/jpa/restore-from-ignore": () => import("@/registry/icons/plugins/jpa/restore-from-ignore").then((mod) => ({ default: mod.RestoreFromIgnore })),
+  "plugins/jpa/save": () => import("@/registry/icons/plugins/jpa/save").then((mod) => ({ default: mod.Save })),
+  "plugins/jpa/schema": () => import("@/registry/icons/plugins/jpa/schema").then((mod) => ({ default: mod.Schema })),
+  "plugins/jpa/screens": () => import("@/registry/icons/plugins/jpa/screens").then((mod) => ({ default: mod.Screens })),
+  "plugins/jpa/set-context": () => import("@/registry/icons/plugins/jpa/set-context").then((mod) => ({ default: mod.SetContext })),
+  "plugins/jpa/set-label": () => import("@/registry/icons/plugins/jpa/set-label").then((mod) => ({ default: mod.SetLabel })),
+  "plugins/jpa/settings": () => import("@/registry/icons/plugins/jpa/settings").then((mod) => ({ default: mod.Settings })),
+  "plugins/jpa/show-code": () => import("@/registry/icons/plugins/jpa/show-code").then((mod) => ({ default: mod.ShowCode })),
+  "plugins/jpa/spring-icon": () => import("@/registry/icons/plugins/jpa/spring-icon").then((mod) => ({ default: mod.SpringIcon })),
+  "plugins/jpa/sql": () => import("@/registry/icons/plugins/jpa/sql").then((mod) => ({ default: mod.Sql })),
+  "plugins/jpa/sql-file": () => import("@/registry/icons/plugins/jpa/sql-file").then((mod) => ({ default: mod.SqlFile })),
+  "plugins/jpa/table": () => import("@/registry/icons/plugins/jpa/table").then((mod) => ({ default: mod.Table })),
+  "plugins/jpa/to-string": () => import("@/registry/icons/plugins/jpa/to-string").then((mod) => ({ default: mod.ToString })),
+  "plugins/jpa/update": () => import("@/registry/icons/plugins/jpa/update").then((mod) => ({ default: mod.Update })),
+  "plugins/jpa/update-database": () => import("@/registry/icons/plugins/jpa/update-database").then((mod) => ({ default: mod.UpdateDatabase })),
+  "plugins/kotlin/abstract-class-kotlin": () => import("@/registry/icons/plugins/kotlin/abstract-class-kotlin").then((mod) => ({ default: mod.AbstractClassKotlin })),
+  "plugins/kotlin/abstract-extension-function": () => import("@/registry/icons/plugins/kotlin/abstract-extension-function").then((mod) => ({ default: mod.AbstractExtensionFunction })),
+  "plugins/kotlin/actual": () => import("@/registry/icons/plugins/kotlin/actual").then((mod) => ({ default: mod.Actual })),
+  "plugins/kotlin/android": () => import("@/registry/icons/plugins/kotlin/android").then((mod) => ({ default: mod.Android })),
+  "plugins/kotlin/annotation-kotlin": () => import("@/registry/icons/plugins/kotlin/annotation-kotlin").then((mod) => ({ default: mod.AnnotationKotlin })),
+  "plugins/kotlin/class-initializer-kotlin": () => import("@/registry/icons/plugins/kotlin/class-initializer-kotlin").then((mod) => ({ default: mod.ClassInitializerKotlin })),
+  "plugins/kotlin/class-kotlin": () => import("@/registry/icons/plugins/kotlin/class-kotlin").then((mod) => ({ default: mod.ClassKotlin })),
+  "plugins/kotlin/console": () => import("@/registry/icons/plugins/kotlin/console").then((mod) => ({ default: mod.Console })),
+  "plugins/kotlin/enum-kotlin": () => import("@/registry/icons/plugins/kotlin/enum-kotlin").then((mod) => ({ default: mod.EnumKotlin })),
+  "plugins/kotlin/expect": () => import("@/registry/icons/plugins/kotlin/expect").then((mod) => ({ default: mod.Expect })),
+  "plugins/kotlin/field-value": () => import("@/registry/icons/plugins/kotlin/field-value").then((mod) => ({ default: mod.FieldValue })),
+  "plugins/kotlin/field-variable": () => import("@/registry/icons/plugins/kotlin/field-variable").then((mod) => ({ default: mod.FieldVariable })),
+  "plugins/kotlin/fir": () => import("@/registry/icons/plugins/kotlin/fir").then((mod) => ({ default: mod.Fir })),
+  "plugins/kotlin/interface-kotlin": () => import("@/registry/icons/plugins/kotlin/interface-kotlin").then((mod) => ({ default: mod.InterfaceKotlin })),
+  "plugins/kotlin/js": () => import("@/registry/icons/plugins/kotlin/js").then((mod) => ({ default: mod.Js })),
+  "plugins/kotlin/jvm": () => import("@/registry/icons/plugins/kotlin/jvm").then((mod) => ({ default: mod.Jvm })),
+  "plugins/kotlin/kotlin": () => import("@/registry/icons/plugins/kotlin/kotlin").then((mod) => ({ default: mod.Kotlin })),
+  "plugins/kotlin/kotlin_activity": () => import("@/registry/icons/plugins/kotlin/kotlin_activity").then((mod) => ({ default: mod.Kotlin_activity })),
+  "plugins/kotlin/kotlin-gradle-script": () => import("@/registry/icons/plugins/kotlin/kotlin-gradle-script").then((mod) => ({ default: mod.KotlinGradleScript })),
+  "plugins/kotlin/kotlin-js": () => import("@/registry/icons/plugins/kotlin/kotlin-js").then((mod) => ({ default: mod.KotlinJs })),
+  "plugins/kotlin/kotlin-modifier": () => import("@/registry/icons/plugins/kotlin/kotlin-modifier").then((mod) => ({ default: mod.KotlinModifier })),
+  "plugins/kotlin/kotlin-notebooks": () => import("@/registry/icons/plugins/kotlin/kotlin-notebooks").then((mod) => ({ default: mod.KotlinNotebooks })),
+  "plugins/kotlin/kotlin-notebooks-grey": () => import("@/registry/icons/plugins/kotlin/kotlin-notebooks-grey").then((mod) => ({ default: mod.KotlinNotebooksGrey })),
+  "plugins/kotlin/kotlin-notebooks-promo": () => import("@/registry/icons/plugins/kotlin/kotlin-notebooks-promo").then((mod) => ({ default: mod.KotlinNotebooksPromo })),
+  "plugins/kotlin/kotlin-script": () => import("@/registry/icons/plugins/kotlin/kotlin-script").then((mod) => ({ default: mod.KotlinScript })),
+  "plugins/kotlin/lambda": () => import("@/registry/icons/plugins/kotlin/lambda").then((mod) => ({ default: mod.Lambda })),
+  "plugins/kotlin/multiplatform": () => import("@/registry/icons/plugins/kotlin/multiplatform").then((mod) => ({ default: mod.Multiplatform })),
+  "plugins/kotlin/multiplatform-library": () => import("@/registry/icons/plugins/kotlin/multiplatform-library").then((mod) => ({ default: mod.MultiplatformLibrary })),
+  "plugins/kotlin/multiplatform-mobile": () => import("@/registry/icons/plugins/kotlin/multiplatform-mobile").then((mod) => ({ default: mod.MultiplatformMobile })),
+  "plugins/kotlin/multiplatform-mobile-library": () => import("@/registry/icons/plugins/kotlin/multiplatform-mobile-library").then((mod) => ({ default: mod.MultiplatformMobileLibrary })),
+  "plugins/kotlin/native": () => import("@/registry/icons/plugins/kotlin/native").then((mod) => ({ default: mod.Native })),
+  "plugins/kotlin/nodejs": () => import("@/registry/icons/plugins/kotlin/nodejs").then((mod) => ({ default: mod.Nodejs })),
+  "plugins/kotlin/object-kotlin": () => import("@/registry/icons/plugins/kotlin/object-kotlin").then((mod) => ({ default: mod.ObjectKotlin })),
+  "plugins/kotlin/pp-web": () => import("@/registry/icons/plugins/kotlin/pp-web").then((mod) => ({ default: mod.PpWeb })),
+  "plugins/kotlin/type-alias": () => import("@/registry/icons/plugins/kotlin/type-alias").then((mod) => ({ default: mod.TypeAlias })),
+  "plugins/kotlin/value": () => import("@/registry/icons/plugins/kotlin/value").then((mod) => ({ default: mod.Value })),
+  "plugins/kubernetes/auto-refresh": () => import("@/registry/icons/plugins/kubernetes/auto-refresh").then((mod) => ({ default: mod.AutoRefresh })),
+  "plugins/kubernetes/cluster-role": () => import("@/registry/icons/plugins/kubernetes/cluster-role").then((mod) => ({ default: mod.ClusterRole })),
+  "plugins/kubernetes/cluster-role-binding": () => import("@/registry/icons/plugins/kubernetes/cluster-role-binding").then((mod) => ({ default: mod.ClusterRoleBinding })),
+  "plugins/kubernetes/config-map": () => import("@/registry/icons/plugins/kubernetes/config-map").then((mod) => ({ default: mod.ConfigMap })),
+  "plugins/kubernetes/configuration": () => import("@/registry/icons/plugins/kubernetes/configuration").then((mod) => ({ default: mod.Configuration })),
+  "plugins/kubernetes/cron-jobs": () => import("@/registry/icons/plugins/kubernetes/cron-jobs").then((mod) => ({ default: mod.CronJobs })),
+  "plugins/kubernetes/custom-resource": () => import("@/registry/icons/plugins/kubernetes/custom-resource").then((mod) => ({ default: mod.CustomResource })),
+  "plugins/kubernetes/custom-resource-definition": () => import("@/registry/icons/plugins/kubernetes/custom-resource-definition").then((mod) => ({ default: mod.CustomResourceDefinition })),
+  "plugins/kubernetes/custom-resources": () => import("@/registry/icons/plugins/kubernetes/custom-resources").then((mod) => ({ default: mod.CustomResources })),
+  "plugins/kubernetes/daemon-set": () => import("@/registry/icons/plugins/kubernetes/daemon-set").then((mod) => ({ default: mod.DaemonSet })),
+  "plugins/kubernetes/debug-with-telepresence": () => import("@/registry/icons/plugins/kubernetes/debug-with-telepresence").then((mod) => ({ default: mod.DebugWithTelepresence })),
+  "plugins/kubernetes/deployment": () => import("@/registry/icons/plugins/kubernetes/deployment").then((mod) => ({ default: mod.Deployment })),
+  "plugins/kubernetes/endpoints": () => import("@/registry/icons/plugins/kubernetes/endpoints").then((mod) => ({ default: mod.Endpoints })),
+  "plugins/kubernetes/events": () => import("@/registry/icons/plugins/kubernetes/events").then((mod) => ({ default: mod.Events })),
+  "plugins/kubernetes/failed": () => import("@/registry/icons/plugins/kubernetes/failed").then((mod) => ({ default: mod.Failed })),
+  "plugins/kubernetes/forward-ports": () => import("@/registry/icons/plugins/kubernetes/forward-ports").then((mod) => ({ default: mod.ForwardPorts })),
+  "plugins/kubernetes/group": () => import("@/registry/icons/plugins/kubernetes/group").then((mod) => ({ default: mod.Group })),
+  "plugins/kubernetes/helm": () => import("@/registry/icons/plugins/kubernetes/helm").then((mod) => ({ default: mod.Helm })),
+  "plugins/kubernetes/helm-archive": () => import("@/registry/icons/plugins/kubernetes/helm-archive").then((mod) => ({ default: mod.HelmArchive })),
+  "plugins/kubernetes/helm-chart": () => import("@/registry/icons/plugins/kubernetes/helm-chart").then((mod) => ({ default: mod.HelmChart })),
+  "plugins/kubernetes/helm-chart-lock": () => import("@/registry/icons/plugins/kubernetes/helm-chart-lock").then((mod) => ({ default: mod.HelmChartLock })),
+  "plugins/kubernetes/helm-directory": () => import("@/registry/icons/plugins/kubernetes/helm-directory").then((mod) => ({ default: mod.HelmDirectory })),
+  "plugins/kubernetes/helm-notes": () => import("@/registry/icons/plugins/kubernetes/helm-notes").then((mod) => ({ default: mod.HelmNotes })),
+  "plugins/kubernetes/helm-requirments": () => import("@/registry/icons/plugins/kubernetes/helm-requirments").then((mod) => ({ default: mod.HelmRequirments })),
+  "plugins/kubernetes/helm-requirments-lock": () => import("@/registry/icons/plugins/kubernetes/helm-requirments-lock").then((mod) => ({ default: mod.HelmRequirmentsLock })),
+  "plugins/kubernetes/helm-undeployable": () => import("@/registry/icons/plugins/kubernetes/helm-undeployable").then((mod) => ({ default: mod.HelmUndeployable })),
+  "plugins/kubernetes/helmvalues-schema": () => import("@/registry/icons/plugins/kubernetes/helmvalues-schema").then((mod) => ({ default: mod.HelmvaluesSchema })),
+  "plugins/kubernetes/horizontal-pod-autoscaler": () => import("@/registry/icons/plugins/kubernetes/horizontal-pod-autoscaler").then((mod) => ({ default: mod.HorizontalPodAutoscaler })),
+  "plugins/kubernetes/ingress": () => import("@/registry/icons/plugins/kubernetes/ingress").then((mod) => ({ default: mod.Ingress })),
+  "plugins/kubernetes/jobs": () => import("@/registry/icons/plugins/kubernetes/jobs").then((mod) => ({ default: mod.Jobs })),
+  "plugins/kubernetes/kubernetes-j": () => import("@/registry/icons/plugins/kubernetes/kubernetes-j").then((mod) => ({ default: mod.KubernetesJ })),
+  "plugins/kubernetes/kubernetes-y": () => import("@/registry/icons/plugins/kubernetes/kubernetes-y").then((mod) => ({ default: mod.KubernetesY })),
+  "plugins/kubernetes/kustomize": () => import("@/registry/icons/plugins/kubernetes/kustomize").then((mod) => ({ default: mod.Kustomize })),
+  "plugins/kubernetes/limits": () => import("@/registry/icons/plugins/kubernetes/limits").then((mod) => ({ default: mod.Limits })),
+  "plugins/kubernetes/mod-stop": () => import("@/registry/icons/plugins/kubernetes/mod-stop").then((mod) => ({ default: mod.ModStop })),
+  "plugins/kubernetes/namespace": () => import("@/registry/icons/plugins/kubernetes/namespace").then((mod) => ({ default: mod.Namespace })),
+  "plugins/kubernetes/namespaced-mark": () => import("@/registry/icons/plugins/kubernetes/namespaced-mark").then((mod) => ({ default: mod.NamespacedMark })),
+  "plugins/kubernetes/network": () => import("@/registry/icons/plugins/kubernetes/network").then((mod) => ({ default: mod.Network })),
+  "plugins/kubernetes/network-policy": () => import("@/registry/icons/plugins/kubernetes/network-policy").then((mod) => ({ default: mod.NetworkPolicy })),
+  "plugins/kubernetes/node": () => import("@/registry/icons/plugins/kubernetes/node").then((mod) => ({ default: mod.Node })),
+  "plugins/kubernetes/pending": () => import("@/registry/icons/plugins/kubernetes/pending").then((mod) => ({ default: mod.Pending })),
+  "plugins/kubernetes/persistent-volume": () => import("@/registry/icons/plugins/kubernetes/persistent-volume").then((mod) => ({ default: mod.PersistentVolume })),
+  "plugins/kubernetes/persistent-volume-claim": () => import("@/registry/icons/plugins/kubernetes/persistent-volume-claim").then((mod) => ({ default: mod.PersistentVolumeClaim })),
+  "plugins/kubernetes/persistent-volumes": () => import("@/registry/icons/plugins/kubernetes/persistent-volumes").then((mod) => ({ default: mod.PersistentVolumes })),
+  "plugins/kubernetes/pod": () => import("@/registry/icons/plugins/kubernetes/pod").then((mod) => ({ default: mod.Pod })),
+  "plugins/kubernetes/pod-security-policy": () => import("@/registry/icons/plugins/kubernetes/pod-security-policy").then((mod) => ({ default: mod.PodSecurityPolicy })),
+  "plugins/kubernetes/quota": () => import("@/registry/icons/plugins/kubernetes/quota").then((mod) => ({ default: mod.Quota })),
+  "plugins/kubernetes/refresh-kubernetes-configuration": () => import("@/registry/icons/plugins/kubernetes/refresh-kubernetes-configuration").then((mod) => ({ default: mod.RefreshKubernetesConfiguration })),
+  "plugins/kubernetes/replica-set": () => import("@/registry/icons/plugins/kubernetes/replica-set").then((mod) => ({ default: mod.ReplicaSet })),
+  "plugins/kubernetes/role": () => import("@/registry/icons/plugins/kubernetes/role").then((mod) => ({ default: mod.Role })),
+  "plugins/kubernetes/role-binding": () => import("@/registry/icons/plugins/kubernetes/role-binding").then((mod) => ({ default: mod.RoleBinding })),
+  "plugins/kubernetes/service-account": () => import("@/registry/icons/plugins/kubernetes/service-account").then((mod) => ({ default: mod.ServiceAccount })),
+  "plugins/kubernetes/services": () => import("@/registry/icons/plugins/kubernetes/services").then((mod) => ({ default: mod.Services })),
+  "plugins/kubernetes/show-logs": () => import("@/registry/icons/plugins/kubernetes/show-logs").then((mod) => ({ default: mod.ShowLogs })),
+  "plugins/kubernetes/stateful-set": () => import("@/registry/icons/plugins/kubernetes/stateful-set").then((mod) => ({ default: mod.StatefulSet })),
+  "plugins/kubernetes/storage-class": () => import("@/registry/icons/plugins/kubernetes/storage-class").then((mod) => ({ default: mod.StorageClass })),
+  "plugins/kubernetes/succeded": () => import("@/registry/icons/plugins/kubernetes/succeded").then((mod) => ({ default: mod.Succeded })),
+  "plugins/kubernetes/user": () => import("@/registry/icons/plugins/kubernetes/user").then((mod) => ({ default: mod.User })),
+  "plugins/kubernetes/value-values": () => import("@/registry/icons/plugins/kubernetes/value-values").then((mod) => ({ default: mod.ValueValues })),
+  "plugins/kubernetes/volume": () => import("@/registry/icons/plugins/kubernetes/volume").then((mod) => ({ default: mod.Volume })),
+  "plugins/kubernetes/werf": () => import("@/registry/icons/plugins/kubernetes/werf").then((mod) => ({ default: mod.Werf })),
+  "plugins/kubernetes/workloads": () => import("@/registry/icons/plugins/kubernetes/workloads").then((mod) => ({ default: mod.Workloads })),
+  "plugins/linux/linux": () => import("@/registry/icons/plugins/linux/linux").then((mod) => ({ default: mod.Linux })),
+  "plugins/linux/linux-logo": () => import("@/registry/icons/plugins/linux/linux-logo").then((mod) => ({ default: mod.LinuxLogo })),
+  "plugins/lombok/config": () => import("@/registry/icons/plugins/lombok/config").then((mod) => ({ default: mod.Config })),
+  "plugins/lombok/lombok": () => import("@/registry/icons/plugins/lombok/lombok").then((mod) => ({ default: mod.Lombok })),
+  "plugins/lombok/lombok-class": () => import("@/registry/icons/plugins/lombok/lombok-class").then((mod) => ({ default: mod.LombokClass })),
+  "plugins/lombok/lombok-field": () => import("@/registry/icons/plugins/lombok/lombok-field").then((mod) => ({ default: mod.LombokField })),
+  "plugins/lombok/lombok-method": () => import("@/registry/icons/plugins/lombok/lombok-method").then((mod) => ({ default: mod.LombokMethod })),
+  "plugins/meson/meson": () => import("@/registry/icons/plugins/meson/meson").then((mod) => ({ default: mod.Meson })),
+  "plugins/meson/meson-plugin-logo": () => import("@/registry/icons/plugins/meson/meson-plugin-logo").then((mod) => ({ default: mod.MesonPluginLogo })),
+  "plugins/meson/meson-rc": () => import("@/registry/icons/plugins/meson/meson-rc").then((mod) => ({ default: mod.MesonRC })),
+  "plugins/meson/meson-reload": () => import("@/registry/icons/plugins/meson/meson-reload").then((mod) => ({ default: mod.MesonReload })),
+  "plugins/outsight/out-sight": () => import("@/registry/icons/plugins/outsight/out-sight").then((mod) => ({ default: mod.OutSight })),
+  "plugins/outsight/out-sight-color": () => import("@/registry/icons/plugins/outsight/out-sight-color").then((mod) => ({ default: mod.OutSightColor })),
+  "plugins/package-checker/high-all": () => import("@/registry/icons/plugins/package-checker/high-all").then((mod) => ({ default: mod.HighAll })),
+  "plugins/package-checker/high-all-tree": () => import("@/registry/icons/plugins/package-checker/high-all-tree").then((mod) => ({ default: mod.HighAllTree })),
+  "plugins/package-checker/high-all-tree-outline": () => import("@/registry/icons/plugins/package-checker/high-all-tree-outline").then((mod) => ({ default: mod.HighAllTreeOutline })),
+  "plugins/package-checker/low-all": () => import("@/registry/icons/plugins/package-checker/low-all").then((mod) => ({ default: mod.LowAll })),
+  "plugins/package-checker/low-all-tree": () => import("@/registry/icons/plugins/package-checker/low-all-tree").then((mod) => ({ default: mod.LowAllTree })),
+  "plugins/package-checker/low-all-tree-outline": () => import("@/registry/icons/plugins/package-checker/low-all-tree-outline").then((mod) => ({ default: mod.LowAllTreeOutline })),
+  "plugins/package-checker/medium-all": () => import("@/registry/icons/plugins/package-checker/medium-all").then((mod) => ({ default: mod.MediumAll })),
+  "plugins/package-checker/medium-all-tree": () => import("@/registry/icons/plugins/package-checker/medium-all-tree").then((mod) => ({ default: mod.MediumAllTree })),
+  "plugins/package-checker/medium-all-tree-outline": () => import("@/registry/icons/plugins/package-checker/medium-all-tree-outline").then((mod) => ({ default: mod.MediumAllTreeOutline })),
+  "plugins/package-checker/safe-all": () => import("@/registry/icons/plugins/package-checker/safe-all").then((mod) => ({ default: mod.SafeAll })),
+  "plugins/package-checker/safe-all-tree": () => import("@/registry/icons/plugins/package-checker/safe-all-tree").then((mod) => ({ default: mod.SafeAllTree })),
+  "plugins/package-checker/safe-all-tree-outline": () => import("@/registry/icons/plugins/package-checker/safe-all-tree-outline").then((mod) => ({ default: mod.SafeAllTreeOutline })),
+  "plugins/package-checker/uncheched-all": () => import("@/registry/icons/plugins/package-checker/uncheched-all").then((mod) => ({ default: mod.UnchechedAll })),
+  "plugins/package-checker/uncheched-all-tree": () => import("@/registry/icons/plugins/package-checker/uncheched-all-tree").then((mod) => ({ default: mod.UnchechedAllTree })),
+  "plugins/package-checker/uncheched-all-tree-outline": () => import("@/registry/icons/plugins/package-checker/uncheched-all-tree-outline").then((mod) => ({ default: mod.UnchechedAllTreeOutline })),
+  "plugins/platformio/clean": () => import("@/registry/icons/plugins/platformio/clean").then((mod) => ({ default: mod.Clean })),
+  "plugins/platformio/component-vendor": () => import("@/registry/icons/plugins/platformio/component-vendor").then((mod) => ({ default: mod.ComponentVendor })),
+  "plugins/platformio/electronic-board": () => import("@/registry/icons/plugins/platformio/electronic-board").then((mod) => ({ default: mod.ElectronicBoard })),
+  "plugins/platformio/mod-platform-io": () => import("@/registry/icons/plugins/platformio/mod-platform-io").then((mod) => ({ default: mod.ModPlatformIO })),
+  "plugins/platformio/platform-io": () => import("@/registry/icons/plugins/platformio/platform-io").then((mod) => ({ default: mod.PlatformIO })),
+  "plugins/platformio/software-framework": () => import("@/registry/icons/plugins/platformio/software-framework").then((mod) => ({ default: mod.SoftwareFramework })),
+  "plugins/rest/http_request": () => import("@/registry/icons/plugins/rest/http_request").then((mod) => ({ default: mod.Http_request })),
+  "plugins/ruby/action-method": () => import("@/registry/icons/plugins/ruby/action-method").then((mod) => ({ default: mod.ActionMethod })),
+  "plugins/ruby/alias-factory": () => import("@/registry/icons/plugins/ruby/alias-factory").then((mod) => ({ default: mod.AliasFactory })),
+  "plugins/ruby/alias-sequence": () => import("@/registry/icons/plugins/ruby/alias-sequence").then((mod) => ({ default: mod.AliasSequence })),
+  "plugins/ruby/assoc-column": () => import("@/registry/icons/plugins/ruby/assoc-column").then((mod) => ({ default: mod.AssocColumn })),
+  "plugins/ruby/block": () => import("@/registry/icons/plugins/ruby/block").then((mod) => ({ default: mod.Block })),
+  "plugins/ruby/bundle-run-anything": () => import("@/registry/icons/plugins/ruby/bundle-run-anything").then((mod) => ({ default: mod.BundleRunAnything })),
+  "plugins/ruby/channel": () => import("@/registry/icons/plugins/ruby/channel").then((mod) => ({ default: mod.Channel })),
+  "plugins/ruby/chef-cookbook": () => import("@/registry/icons/plugins/ruby/chef-cookbook").then((mod) => ({ default: mod.ChefCookbook })),
+  "plugins/ruby/controller-folder": () => import("@/registry/icons/plugins/ruby/controller-folder").then((mod) => ({ default: mod.ControllerFolder })),
+  "plugins/ruby/controller-node": () => import("@/registry/icons/plugins/ruby/controller-node").then((mod) => ({ default: mod.ControllerNode })),
+  "plugins/ruby/db-hash": () => import("@/registry/icons/plugins/ruby/db-hash").then((mod) => ({ default: mod.DbHash })),
+  "plugins/ruby/endpoint": () => import("@/registry/icons/plugins/ruby/endpoint").then((mod) => ({ default: mod.Endpoint })),
+  "plugins/ruby/factory": () => import("@/registry/icons/plugins/ruby/factory").then((mod) => ({ default: mod.Factory })),
+  "plugins/ruby/haml": () => import("@/registry/icons/plugins/ruby/haml").then((mod) => ({ default: mod.Haml })),
+  "plugins/ruby/hash-key": () => import("@/registry/icons/plugins/ruby/hash-key").then((mod) => ({ default: mod.HashKey })),
+  "plugins/ruby/helpers-folder-closed": () => import("@/registry/icons/plugins/ruby/helpers-folder-closed").then((mod) => ({ default: mod.HelpersFolderClosed })),
+  "plugins/ruby/incomplete-closed": () => import("@/registry/icons/plugins/ruby/incomplete-closed").then((mod) => ({ default: mod.IncompleteClosed })),
+  "plugins/ruby/jrails-module-closed": () => import("@/registry/icons/plugins/ruby/jrails-module-closed").then((mod) => ({ default: mod.JrailsModuleClosed })),
+  "plugins/ruby/jruby": () => import("@/registry/icons/plugins/ruby/jruby").then((mod) => ({ default: mod.Jruby })),
+  "plugins/ruby/jruby-run-configuration": () => import("@/registry/icons/plugins/ruby/jruby-run-configuration").then((mod) => ({ default: mod.JrubyRunConfiguration })),
+  "plugins/ruby/jruby-sdk-closed": () => import("@/registry/icons/plugins/ruby/jruby-sdk-closed").then((mod) => ({ default: mod.JrubySdkClosed })),
+  "plugins/ruby/mailer": () => import("@/registry/icons/plugins/ruby/mailer").then((mod) => ({ default: mod.Mailer })),
+  "plugins/ruby/mailers-folder": () => import("@/registry/icons/plugins/ruby/mailers-folder").then((mod) => ({ default: mod.MailersFolder })),
+  "plugins/ruby/migrations-closed": () => import("@/registry/icons/plugins/ruby/migrations-closed").then((mod) => ({ default: mod.MigrationsClosed })),
+  "plugins/ruby/model-class": () => import("@/registry/icons/plugins/ruby/model-class").then((mod) => ({ default: mod.ModelClass })),
+  "plugins/ruby/module": () => import("@/registry/icons/plugins/ruby/module").then((mod) => ({ default: mod.Module })),
+  "plugins/ruby/not-defined": () => import("@/registry/icons/plugins/ruby/not-defined").then((mod) => ({ default: mod.NotDefined })),
+  "plugins/ruby/rails-module-closed": () => import("@/registry/icons/plugins/ruby/rails-module-closed").then((mod) => ({ default: mod.RailsModuleClosed })),
+  "plugins/ruby/rails-server-run-configuration": () => import("@/registry/icons/plugins/ruby/rails-server-run-configuration").then((mod) => ({ default: mod.RailsServerRunConfiguration })),
+  "plugins/ruby/rake-run-configuration": () => import("@/registry/icons/plugins/ruby/rake-run-configuration").then((mod) => ({ default: mod.RakeRunConfiguration })),
+  "plugins/ruby/rake-task-def-node": () => import("@/registry/icons/plugins/ruby/rake-task-def-node").then((mod) => ({ default: mod.RakeTaskDefNode })),
+  "plugins/ruby/rbenv-run-anything": () => import("@/registry/icons/plugins/ruby/rbenv-run-anything").then((mod) => ({ default: mod.RbenvRunAnything })),
+  "plugins/ruby/rbs-file": () => import("@/registry/icons/plugins/ruby/rbs-file").then((mod) => ({ default: mod.RbsFile })),
+  "plugins/ruby/reader": () => import("@/registry/icons/plugins/ruby/reader").then((mod) => ({ default: mod.Reader })),
+  "plugins/ruby/resources": () => import("@/registry/icons/plugins/ruby/resources").then((mod) => ({ default: mod.Resources })),
+  "plugins/ruby/rhtml": () => import("@/registry/icons/plugins/ruby/rhtml").then((mod) => ({ default: mod.Rhtml })),
+  "plugins/ruby/rjs": () => import("@/registry/icons/plugins/ruby/rjs").then((mod) => ({ default: mod.Rjs })),
+  "plugins/ruby/rspec-run-configuration": () => import("@/registry/icons/plugins/ruby/rspec-run-configuration").then((mod) => ({ default: mod.RspecRunConfiguration })),
+  "plugins/ruby/rspec-shared-group-closed": () => import("@/registry/icons/plugins/ruby/rspec-shared-group-closed").then((mod) => ({ default: mod.RspecSharedGroupClosed })),
+  "plugins/ruby/rspec-shared-group-ref": () => import("@/registry/icons/plugins/ruby/rspec-shared-group-ref").then((mod) => ({ default: mod.RspecSharedGroupRef })),
+  "plugins/ruby/rspec-test": () => import("@/registry/icons/plugins/ruby/rspec-test").then((mod) => ({ default: mod.RspecTest })),
+  "plugins/ruby/ruby": () => import("@/registry/icons/plugins/ruby/ruby").then((mod) => ({ default: mod.Ruby })),
+  "plugins/ruby/ruby-gems": () => import("@/registry/icons/plugins/ruby/ruby-gems").then((mod) => ({ default: mod.RubyGems })),
+  "plugins/ruby/ruby-module-closed": () => import("@/registry/icons/plugins/ruby/ruby-module-closed").then((mod) => ({ default: mod.RubyModuleClosed })),
+  "plugins/ruby/ruby-remote": () => import("@/registry/icons/plugins/ruby/ruby-remote").then((mod) => ({ default: mod.RubyRemote })),
+  "plugins/ruby/ruby-script": () => import("@/registry/icons/plugins/ruby/ruby-script").then((mod) => ({ default: mod.RubyScript })),
+  "plugins/ruby/ruby-test-unit": () => import("@/registry/icons/plugins/ruby/ruby-test-unit").then((mod) => ({ default: mod.RubyTestUnit })),
+  "plugins/ruby/run-configuration": () => import("@/registry/icons/plugins/ruby/run-configuration").then((mod) => ({ default: mod.RunConfiguration })),
+  "plugins/ruby/run-rack-task": () => import("@/registry/icons/plugins/ruby/run-rack-task").then((mod) => ({ default: mod.RunRackTask })),
+  "plugins/ruby/run-spork-server": () => import("@/registry/icons/plugins/ruby/run-spork-server").then((mod) => ({ default: mod.RunSporkServer })),
+  "plugins/ruby/run-with-type-tracker": () => import("@/registry/icons/plugins/ruby/run-with-type-tracker").then((mod) => ({ default: mod.RunWithTypeTracker })),
+  "plugins/ruby/rvm-run-anything": () => import("@/registry/icons/plugins/ruby/rvm-run-anything").then((mod) => ({ default: mod.RvmRunAnything })),
+  "plugins/ruby/rxml": () => import("@/registry/icons/plugins/ruby/rxml").then((mod) => ({ default: mod.Rxml })),
+  "plugins/ruby/sequence": () => import("@/registry/icons/plugins/ruby/sequence").then((mod) => ({ default: mod.Sequence })),
+  "plugins/ruby/slim": () => import("@/registry/icons/plugins/ruby/slim").then((mod) => ({ default: mod.Slim })),
+  "plugins/ruby/step-definition-file": () => import("@/registry/icons/plugins/ruby/step-definition-file").then((mod) => ({ default: mod.StepDefinitionFile })),
+  "plugins/ruby/structure-list-view": () => import("@/registry/icons/plugins/ruby/structure-list-view").then((mod) => ({ default: mod.StructureListView })),
+  "plugins/ruby/symbol": () => import("@/registry/icons/plugins/ruby/symbol").then((mod) => ({ default: mod.Symbol })),
+  "plugins/ruby/system-dbfield": () => import("@/registry/icons/plugins/ruby/system-dbfield").then((mod) => ({ default: mod.SystemDBField })),
+  "plugins/ruby/test-unit-file": () => import("@/registry/icons/plugins/ruby/test-unit-file").then((mod) => ({ default: mod.TestUnitFile })),
+  "plugins/ruby/trait": () => import("@/registry/icons/plugins/ruby/trait").then((mod) => ({ default: mod.Trait })),
+  "plugins/ruby/undocumented-task": () => import("@/registry/icons/plugins/ruby/undocumented-task").then((mod) => ({ default: mod.UndocumentedTask })),
+  "plugins/ruby/variable": () => import("@/registry/icons/plugins/ruby/variable").then((mod) => ({ default: mod.Variable })),
+  "plugins/ruby/web-root-file": () => import("@/registry/icons/plugins/ruby/web-root-file").then((mod) => ({ default: mod.WebRootFile })),
+  "plugins/ruby/writer": () => import("@/registry/icons/plugins/ruby/writer").then((mod) => ({ default: mod.Writer })),
+  "plugins/ruby/zeus": () => import("@/registry/icons/plugins/ruby/zeus").then((mod) => ({ default: mod.Zeus })),
+  "plugins/scala/abstract-class-object-scala": () => import("@/registry/icons/plugins/scala/abstract-class-object-scala").then((mod) => ({ default: mod.AbstractClassObjectScala })),
+  "plugins/scala/abstract-class-scala": () => import("@/registry/icons/plugins/scala/abstract-class-scala").then((mod) => ({ default: mod.AbstractClassScala })),
+  "plugins/scala/abstract-field-variable": () => import("@/registry/icons/plugins/scala/abstract-field-variable").then((mod) => ({ default: mod.AbstractFieldVariable })),
+  "plugins/scala/abstract-field-variable1": () => import("@/registry/icons/plugins/scala/abstract-field-variable1").then((mod) => ({ default: mod.AbstractFieldVariable1 })),
+  "plugins/scala/abstract-type-alias": () => import("@/registry/icons/plugins/scala/abstract-type-alias").then((mod) => ({ default: mod.AbstractTypeAlias })),
+  "plugins/scala/add-clause": () => import("@/registry/icons/plugins/scala/add-clause").then((mod) => ({ default: mod.AddClause })),
+  "plugins/scala/build-server-protocol": () => import("@/registry/icons/plugins/scala/build-server-protocol").then((mod) => ({ default: mod.BuildServerProtocol })),
+  "plugins/scala/build-server-protocol-load-changes": () => import("@/registry/icons/plugins/scala/build-server-protocol-load-changes").then((mod) => ({ default: mod.BuildServerProtocolLoadChanges })),
+  "plugins/scala/build-server-protocol-target": () => import("@/registry/icons/plugins/scala/build-server-protocol-target").then((mod) => ({ default: mod.BuildServerProtocolTarget })),
+  "plugins/scala/class-companion": () => import("@/registry/icons/plugins/scala/class-companion").then((mod) => ({ default: mod.ClassCompanion })),
+  "plugins/scala/class-companion-swapped": () => import("@/registry/icons/plugins/scala/class-companion-swapped").then((mod) => ({ default: mod.ClassCompanionSwapped })),
+  "plugins/scala/class-object-scala": () => import("@/registry/icons/plugins/scala/class-object-scala").then((mod) => ({ default: mod.ClassObjectScala })),
+  "plugins/scala/class-scala": () => import("@/registry/icons/plugins/scala/class-scala").then((mod) => ({ default: mod.ClassScala })),
+  "plugins/scala/compile-server": () => import("@/registry/icons/plugins/scala/compile-server").then((mod) => ({ default: mod.CompileServer })),
+  "plugins/scala/enum-object-scala": () => import("@/registry/icons/plugins/scala/enum-object-scala").then((mod) => ({ default: mod.EnumObjectScala })),
+  "plugins/scala/enum-scala": () => import("@/registry/icons/plugins/scala/enum-scala").then((mod) => ({ default: mod.EnumScala })),
+  "plugins/scala/field-value": () => import("@/registry/icons/plugins/scala/field-value").then((mod) => ({ default: mod.FieldValue })),
+  "plugins/scala/field-value1": () => import("@/registry/icons/plugins/scala/field-value1").then((mod) => ({ default: mod.FieldValue1 })),
+  "plugins/scala/field-variable": () => import("@/registry/icons/plugins/scala/field-variable").then((mod) => ({ default: mod.FieldVariable })),
+  "plugins/scala/field-variable1": () => import("@/registry/icons/plugins/scala/field-variable1").then((mod) => ({ default: mod.FieldVariable1 })),
+  "plugins/scala/lambda": () => import("@/registry/icons/plugins/scala/lambda").then((mod) => ({ default: mod.Lambda })),
+  "plugins/scala/lightbend-logo": () => import("@/registry/icons/plugins/scala/lightbend-logo").then((mod) => ({ default: mod.LightbendLogo })),
+  "plugins/scala/multiple-type-definitions": () => import("@/registry/icons/plugins/scala/multiple-type-definitions").then((mod) => ({ default: mod.MultipleTypeDefinitions })),
+  "plugins/scala/no-scala-sdk": () => import("@/registry/icons/plugins/scala/no-scala-sdk").then((mod) => ({ default: mod.NoScalaSDK })),
+  "plugins/scala/object-companion": () => import("@/registry/icons/plugins/scala/object-companion").then((mod) => ({ default: mod.ObjectCompanion })),
+  "plugins/scala/object-companion-swapped": () => import("@/registry/icons/plugins/scala/object-companion-swapped").then((mod) => ({ default: mod.ObjectCompanionSwapped })),
+  "plugins/scala/object-scala": () => import("@/registry/icons/plugins/scala/object-scala").then((mod) => ({ default: mod.ObjectScala })),
+  "plugins/scala/package-object": () => import("@/registry/icons/plugins/scala/package-object").then((mod) => ({ default: mod.PackageObject })),
+  "plugins/scala/package-with-object": () => import("@/registry/icons/plugins/scala/package-with-object").then((mod) => ({ default: mod.PackageWithObject })),
+  "plugins/scala/parameter": () => import("@/registry/icons/plugins/scala/parameter").then((mod) => ({ default: mod.Parameter })),
+  "plugins/scala/pattern-value": () => import("@/registry/icons/plugins/scala/pattern-value").then((mod) => ({ default: mod.PatternValue })),
+  "plugins/scala/play2": () => import("@/registry/icons/plugins/scala/play2").then((mod) => ({ default: mod.Play2 })),
+  "plugins/scala/remove-clause": () => import("@/registry/icons/plugins/scala/remove-clause").then((mod) => ({ default: mod.RemoveClause })),
+  "plugins/scala/sbt-file": () => import("@/registry/icons/plugins/scala/sbt-file").then((mod) => ({ default: mod.SbtFile })),
+  "plugins/scala/sbt-folder": () => import("@/registry/icons/plugins/scala/sbt-folder").then((mod) => ({ default: mod.SbtFolder })),
+  "plugins/scala/sbt-icon": () => import("@/registry/icons/plugins/scala/sbt-icon").then((mod) => ({ default: mod.SbtIcon })),
+  "plugins/scala/sbt-load-changes": () => import("@/registry/icons/plugins/scala/sbt-load-changes").then((mod) => ({ default: mod.SbtLoadChanges })),
+  "plugins/scala/sbt-shell": () => import("@/registry/icons/plugins/scala/sbt-shell").then((mod) => ({ default: mod.SbtShell })),
+  "plugins/scala/scala-console": () => import("@/registry/icons/plugins/scala/scala-console").then((mod) => ({ default: mod.ScalaConsole })),
+  "plugins/scala/scala-file": () => import("@/registry/icons/plugins/scala/scala-file").then((mod) => ({ default: mod.ScalaFile })),
+  "plugins/scala/scala-html": () => import("@/registry/icons/plugins/scala/scala-html").then((mod) => ({ default: mod.ScalaHtml })),
+  "plugins/scala/scala-logo": () => import("@/registry/icons/plugins/scala/scala-logo").then((mod) => ({ default: mod.ScalaLogo })),
+  "plugins/scala/scala-script": () => import("@/registry/icons/plugins/scala/scala-script").then((mod) => ({ default: mod.ScalaScript })),
+  "plugins/scala/scala-sdk": () => import("@/registry/icons/plugins/scala/scala-sdk").then((mod) => ({ default: mod.ScalaSDK })),
+  "plugins/scala/scala-test": () => import("@/registry/icons/plugins/scala/scala-test").then((mod) => ({ default: mod.ScalaTest })),
+  "plugins/scala/scala16": () => import("@/registry/icons/plugins/scala/scala16").then((mod) => ({ default: mod.Scala16 })),
+  "plugins/scala/trait-companion": () => import("@/registry/icons/plugins/scala/trait-companion").then((mod) => ({ default: mod.TraitCompanion })),
+  "plugins/scala/trait-companion-swapped": () => import("@/registry/icons/plugins/scala/trait-companion-swapped").then((mod) => ({ default: mod.TraitCompanionSwapped })),
+  "plugins/scala/trait-object-scala": () => import("@/registry/icons/plugins/scala/trait-object-scala").then((mod) => ({ default: mod.TraitObjectScala })),
+  "plugins/scala/trait-scala": () => import("@/registry/icons/plugins/scala/trait-scala").then((mod) => ({ default: mod.TraitScala })),
+  "plugins/scala/type-alias": () => import("@/registry/icons/plugins/scala/type-alias").then((mod) => ({ default: mod.TypeAlias })),
+  "plugins/scala/typed": () => import("@/registry/icons/plugins/scala/typed").then((mod) => ({ default: mod.Typed })),
+  "plugins/scala/untyped": () => import("@/registry/icons/plugins/scala/untyped").then((mod) => ({ default: mod.Untyped })),
+  "plugins/scala/value": () => import("@/registry/icons/plugins/scala/value").then((mod) => ({ default: mod.Value })),
+  "plugins/scala/variable": () => import("@/registry/icons/plugins/scala/variable").then((mod) => ({ default: mod.Variable })),
+  "plugins/spring/abstract-bean": () => import("@/registry/icons/plugins/spring/abstract-bean").then((mod) => ({ default: mod.AbstractBean })),
+  "plugins/spring/factory-method-bean": () => import("@/registry/icons/plugins/spring/factory-method-bean").then((mod) => ({ default: mod.FactoryMethodBean })),
+  "plugins/spring/file-set": () => import("@/registry/icons/plugins/spring/file-set").then((mod) => ({ default: mod.FileSet })),
+  "plugins/spring/implicit-bean": () => import("@/registry/icons/plugins/spring/implicit-bean").then((mod) => ({ default: mod.ImplicitBean })),
+  "plugins/spring/infrastructure-bean": () => import("@/registry/icons/plugins/spring/infrastructure-bean").then((mod) => ({ default: mod.InfrastructureBean })),
+  "plugins/spring/integration": () => import("@/registry/icons/plugins/spring/integration").then((mod) => ({ default: mod.Integration })),
+  "plugins/spring/jpa": () => import("@/registry/icons/plugins/spring/jpa").then((mod) => ({ default: mod.Jpa })),
+  "plugins/spring/listener": () => import("@/registry/icons/plugins/spring/listener").then((mod) => ({ default: mod.Listener })),
+  "plugins/spring/prototype-bean": () => import("@/registry/icons/plugins/spring/prototype-bean").then((mod) => ({ default: mod.PrototypeBean })),
+  "plugins/spring/request-mapping": () => import("@/registry/icons/plugins/spring/request-mapping").then((mod) => ({ default: mod.RequestMapping })),
+  "plugins/spring/show-autowired-dependencies": () => import("@/registry/icons/plugins/spring/show-autowired-dependencies").then((mod) => ({ default: mod.ShowAutowiredDependencies })),
+  "plugins/spring/show-cacheable": () => import("@/registry/icons/plugins/spring/show-cacheable").then((mod) => ({ default: mod.ShowCacheable })),
+  "plugins/spring/spring": () => import("@/registry/icons/plugins/spring/spring").then((mod) => ({ default: mod.Spring })),
+  "plugins/spring/spring-batch": () => import("@/registry/icons/plugins/spring/spring-batch").then((mod) => ({ default: mod.SpringBatch })),
+  "plugins/spring/spring-bean": () => import("@/registry/icons/plugins/spring/spring-bean").then((mod) => ({ default: mod.SpringBean })),
+  "plugins/spring/spring-boot": () => import("@/registry/icons/plugins/spring/spring-boot").then((mod) => ({ default: mod.SpringBoot })),
+  "plugins/spring/spring-boot-application": () => import("@/registry/icons/plugins/spring/spring-boot-application").then((mod) => ({ default: mod.SpringBootApplication })),
+  "plugins/spring/spring-boot-endpoint": () => import("@/registry/icons/plugins/spring/spring-boot-endpoint").then((mod) => ({ default: mod.SpringBootEndpoint })),
+  "plugins/spring/spring-boot-health": () => import("@/registry/icons/plugins/spring/spring-boot-health").then((mod) => ({ default: mod.SpringBootHealth })),
+  "plugins/spring/spring-boot-overlay": () => import("@/registry/icons/plugins/spring/spring-boot-overlay").then((mod) => ({ default: mod.SpringBootOverlay })),
+  "plugins/spring/spring-cloud": () => import("@/registry/icons/plugins/spring/spring-cloud").then((mod) => ({ default: mod.SpringCloud })),
+  "plugins/spring/spring-cloud-file-set": () => import("@/registry/icons/plugins/spring/spring-cloud-file-set").then((mod) => ({ default: mod.SpringCloudFileSet })),
+  "plugins/spring/spring-cloud-stream": () => import("@/registry/icons/plugins/spring/spring-cloud-stream").then((mod) => ({ default: mod.SpringCloudStream })),
+  "plugins/spring/spring-cloud-stream-file-set": () => import("@/registry/icons/plugins/spring/spring-cloud-stream-file-set").then((mod) => ({ default: mod.SpringCloudStreamFileSet })),
+  "plugins/spring/spring-config": () => import("@/registry/icons/plugins/spring/spring-config").then((mod) => ({ default: mod.SpringConfig })),
+  "plugins/spring/spring-data": () => import("@/registry/icons/plugins/spring/spring-data").then((mod) => ({ default: mod.SpringData })),
+  "plugins/spring/spring-integration": () => import("@/registry/icons/plugins/spring/spring-integration").then((mod) => ({ default: mod.SpringIntegration })),
+  "plugins/spring/spring-java-bean": () => import("@/registry/icons/plugins/spring/spring-java-bean").then((mod) => ({ default: mod.SpringJavaBean })),
+  "plugins/spring/spring-java-config": () => import("@/registry/icons/plugins/spring/spring-java-config").then((mod) => ({ default: mod.SpringJavaConfig })),
+  "plugins/spring/spring-models-dependency-graph": () => import("@/registry/icons/plugins/spring/spring-models-dependency-graph").then((mod) => ({ default: mod.SpringModelsDependencyGraph })),
+  "plugins/spring/spring-profile": () => import("@/registry/icons/plugins/spring/spring-profile").then((mod) => ({ default: mod.SpringProfile })),
+  "plugins/spring/spring-property": () => import("@/registry/icons/plugins/spring/spring-property").then((mod) => ({ default: mod.SpringProperty })),
+  "plugins/spring/spring-repository-run-mongo": () => import("@/registry/icons/plugins/spring/spring-repository-run-mongo").then((mod) => ({ default: mod.SpringRepositoryRunMongo })),
+  "plugins/spring/spring-security": () => import("@/registry/icons/plugins/spring/spring-security").then((mod) => ({ default: mod.SpringSecurity })),
+  "plugins/spring/spring-session-factory": () => import("@/registry/icons/plugins/spring/spring-session-factory").then((mod) => ({ default: mod.SpringSessionFactory })),
+  "plugins/spring/spring-web": () => import("@/registry/icons/plugins/spring/spring-web").then((mod) => ({ default: mod.SpringWeb })),
+  "plugins/spring/spring-web-flow": () => import("@/registry/icons/plugins/spring/spring-web-flow").then((mod) => ({ default: mod.SpringWebFlow })),
+  "plugins/spring/spring-web-flow-file": () => import("@/registry/icons/plugins/spring/spring-web-flow-file").then((mod) => ({ default: mod.SpringWebFlowFile })),
+  "plugins/spring/spring-web-services": () => import("@/registry/icons/plugins/spring/spring-web-services").then((mod) => ({ default: mod.SpringWebServices })),
+  "plugins/spring/transaction-manager": () => import("@/registry/icons/plugins/spring/transaction-manager").then((mod) => ({ default: mod.TransactionManager })),
+  "plugins/spring/web-overlay": () => import("@/registry/icons/plugins/spring/web-overlay").then((mod) => ({ default: mod.WebOverlay })),
+  "plugins/stylus/stylus": () => import("@/registry/icons/plugins/stylus/stylus").then((mod) => ({ default: mod.Stylus })),
+  "plugins/tasks/start-timer": () => import("@/registry/icons/plugins/tasks/start-timer").then((mod) => ({ default: mod.StartTimer })),
+  "plugins/tasks/stop-timer": () => import("@/registry/icons/plugins/tasks/stop-timer").then((mod) => ({ default: mod.StopTimer })),
+  "plugins/toml/toml": () => import("@/registry/icons/plugins/toml/toml").then((mod) => ({ default: mod.Toml })),
+  "plugins/uml/add-note": () => import("@/registry/icons/plugins/uml/add-note").then((mod) => ({ default: mod.AddNote })),
+  "plugins/uml/constructor": () => import("@/registry/icons/plugins/uml/constructor").then((mod) => ({ default: mod.Constructor })),
+  "plugins/uml/dependencies": () => import("@/registry/icons/plugins/uml/dependencies").then((mod) => ({ default: mod.Dependencies })),
+  "plugins/uml/edge-mod": () => import("@/registry/icons/plugins/uml/edge-mod").then((mod) => ({ default: mod.EdgeMod })),
+  "plugins/uml/inner-class": () => import("@/registry/icons/plugins/uml/inner-class").then((mod) => ({ default: mod.InnerClass })),
+  "plugins/velocity/velocity": () => import("@/registry/icons/plugins/velocity/velocity").then((mod) => ({ default: mod.Velocity })),
+  "plugins/velocity/velocity-plugin-logo": () => import("@/registry/icons/plugins/velocity/velocity-plugin-logo").then((mod) => ({ default: mod.VelocityPluginLogo })),
+  "plugins/velocity/west": () => import("@/registry/icons/plugins/velocity/west").then((mod) => ({ default: mod.West })),
+  "pnpm": () => import("@/registry/icons/file-types/pnpm").then((mod) => ({ default: mod.Pnpm })),
+  "pnpm-lock": () => import("@/registry/icons/file-types/pnpm-lock").then((mod) => ({ default: mod.PnpmLock })),
+  "pod": () => import("@/registry/icons/plugins/kubernetes/pod").then((mod) => ({ default: mod.Pod })),
+  "pod-security-policy": () => import("@/registry/icons/plugins/kubernetes/pod-security-policy").then((mod) => ({ default: mod.PodSecurityPolicy })),
+  "pointcut": () => import("@/registry/icons/plugins/aop/pointcut").then((mod) => ({ default: mod.Pointcut })),
+  "polars": () => import("@/registry/icons/file-types/polars").then((mod) => ({ default: mod.Polars })),
+  "postgresql": () => import("@/registry/icons/database/postgresql").then((mod) => ({ default: mod.Postgresql })),
+  "precedence-group": () => import("@/registry/icons/plugins/cidr/precedence-group").then((mod) => ({ default: mod.PrecedenceGroup })),
+  "preprocess-defines": () => import("@/registry/icons/plugins/cidr/preprocess-defines").then((mod) => ({ default: mod.PreprocessDefines })),
+  "preserve-case": () => import("@/registry/icons/general/inline/preserve-case").then((mod) => ({ default: mod.PreserveCase })),
+  "presto": () => import("@/registry/icons/database/presto").then((mod) => ({ default: mod.Presto })),
+  "prettier": () => import("@/registry/icons/file-types/prettier").then((mod) => ({ default: mod.Prettier })),
+  "preview": () => import("@/registry/icons/general/actions/preview").then((mod) => ({ default: mod.Preview })),
+  "preview-changes": () => import("@/registry/icons/database/preview-changes").then((mod) => ({ default: mod.PreviewChanges })),
+  "preview-horizontally": () => import("@/registry/icons/general/general/preview-horizontally").then((mod) => ({ default: mod.PreviewHorizontally })),
+  "preview-only": () => import("@/registry/icons/editor-icons/preview-only").then((mod) => ({ default: mod.PreviewOnly })),
+  "preview-vertically": () => import("@/registry/icons/general/general/preview-vertically").then((mod) => ({ default: mod.PreviewVertically })),
+  "print": () => import("@/registry/icons/general/general/print").then((mod) => ({ default: mod.Print })),
+  "problems": () => import("@/registry/icons/general/tool-windows/problems").then((mod) => ({ default: mod.Problems })),
+  "procedure": () => import("@/registry/icons/database/procedure").then((mod) => ({ default: mod.Procedure })),
+  "procedure-group": () => import("@/registry/icons/database/procedure-group").then((mod) => ({ default: mod.ProcedureGroup })),
+  "procedure-run": () => import("@/registry/icons/database/procedure-run").then((mod) => ({ default: mod.ProcedureRun })),
+  "process-mark": () => import("@/registry/icons/general/modifiers/process-mark").then((mod) => ({ default: mod.ProcessMark })),
+  "profile": () => import("@/registry/icons/run/profile").then((mod) => ({ default: mod.Profile })),
+  "profile-cpu": () => import("@/registry/icons/general/actions/profile-cpu").then((mod) => ({ default: mod.ProfileCPU })),
+  "profile-memory": () => import("@/registry/icons/general/actions/profile-memory").then((mod) => ({ default: mod.ProfileMemory })),
+  "profile-red": () => import("@/registry/icons/general/actions/profile-red").then((mod) => ({ default: mod.ProfileRed })),
+  "profiler": () => import("@/registry/icons/general/tool-windows/profiler").then((mod) => ({ default: mod.Profiler })),
+  "profiler-android": () => import("@/registry/icons/general/tool-windows/profiler-android").then((mod) => ({ default: mod.ProfilerAndroid })),
+  "project": () => import("@/registry/icons/general/tool-windows/project").then((mod) => ({ default: mod.Project })),
+  "project-configurable": () => import("@/registry/icons/general/general/project-configurable").then((mod) => ({ default: mod.ProjectConfigurable })),
+  "project-directory": () => import("@/registry/icons/general/actions/project-directory").then((mod) => ({ default: mod.ProjectDirectory })),
+  "project-properties": () => import("@/registry/icons/plugins/jpa/project-properties").then((mod) => ({ default: mod.ProjectProperties })),
+  "project-structure": () => import("@/registry/icons/general/general/project-structure").then((mod) => ({ default: mod.ProjectStructure })),
+  "project-wide-analysis-off": () => import("@/registry/icons/general/general/project-wide-analysis-off").then((mod) => ({ default: mod.ProjectWideAnalysisOff })),
+  "project-wide-analysis-on": () => import("@/registry/icons/general/general/project-wide-analysis-on").then((mod) => ({ default: mod.ProjectWideAnalysisOn })),
+  "prompt-input": () => import("@/registry/icons/debugger/prompt-input").then((mod) => ({ default: mod.PromptInput })),
+  "prompt-input-history": () => import("@/registry/icons/debugger/prompt-input-history").then((mod) => ({ default: mod.PromptInputHistory })),
+  "properties": () => import("@/registry/icons/file-types/properties").then((mod) => ({ default: mod.Properties })),
+  "proto-file": () => import("@/registry/icons/file-types/proto-file").then((mod) => ({ default: mod.ProtoFile })),
+  "proto-message": () => import("@/registry/icons/file-types/proto-message").then((mod) => ({ default: mod.ProtoMessage })),
+  "protobuf": () => import("@/registry/icons/file-types/protobuf").then((mod) => ({ default: mod.Protobuf })),
+  "prototype-bean": () => import("@/registry/icons/plugins/spring/prototype-bean").then((mod) => ({ default: mod.PrototypeBean })),
+  "publisher": () => import("@/registry/icons/plugins/java-ee/publisher").then((mod) => ({ default: mod.Publisher })),
+  "pull-requests": () => import("@/registry/icons/general/tool-windows/pull-requests").then((mod) => ({ default: mod.PullRequests })),
+  "push": () => import("@/registry/icons/vcs/push").then((mod) => ({ default: mod.Push })),
+  "py-spark": () => import("@/registry/icons/plugins/bdt/py-spark").then((mod) => ({ default: mod.PySpark })),
+  "py-torch": () => import("@/registry/icons/file-types/py-torch").then((mod) => ({ default: mod.PyTorch })),
+  "python": () => import("@/registry/icons/file-types/python").then((mod) => ({ default: mod.Python })),
+  "python-console-tool-window": () => import("@/registry/icons/general/tool-windows/python-console-tool-window").then((mod) => ({ default: mod.PythonConsoleToolWindow })),
+  "qml": () => import("@/registry/icons/file-types/qml").then((mod) => ({ default: mod.Qml })),
+  "qrc": () => import("@/registry/icons/file-types/qrc").then((mod) => ({ default: mod.Qrc })),
+  "quatro": () => import("@/registry/icons/file-types/quatro").then((mod) => ({ default: mod.Quatro })),
+  "query-method": () => import("@/registry/icons/plugins/jpa/query-method").then((mod) => ({ default: mod.QueryMethod })),
+  "question-badge": () => import("@/registry/icons/breakpoints/question-badge").then((mod) => ({ default: mod.QuestionBadge })),
+  "question-dialog": () => import("@/registry/icons/general/status/question-dialog").then((mod) => ({ default: mod.QuestionDialog })),
+  "question-mark": () => import("@/registry/icons/general/general/question-mark").then((mod) => ({ default: mod.QuestionMark })),
+  "quickfix-bulb": () => import("@/registry/icons/editor-icons/quickfix-bulb").then((mod) => ({ default: mod.QuickfixBulb })),
+  "quickfix-off-bulb": () => import("@/registry/icons/editor-icons/quickfix-off-bulb").then((mod) => ({ default: mod.QuickfixOffBulb })),
+  "quota": () => import("@/registry/icons/plugins/kubernetes/quota").then((mod) => ({ default: mod.Quota })),
+  "r-engine-tool-window": () => import("@/registry/icons/general/tool-windows/r-engine-tool-window").then((mod) => ({ default: mod.REngineToolWindow })),
+  "rails-module-closed": () => import("@/registry/icons/plugins/ruby/rails-module-closed").then((mod) => ({ default: mod.RailsModuleClosed })),
+  "rails-server-run-configuration": () => import("@/registry/icons/plugins/ruby/rails-server-run-configuration").then((mod) => ({ default: mod.RailsServerRunConfiguration })),
+  "rake-run-configuration": () => import("@/registry/icons/plugins/ruby/rake-run-configuration").then((mod) => ({ default: mod.RakeRunConfiguration })),
+  "rake-task-def-node": () => import("@/registry/icons/plugins/ruby/rake-task-def-node").then((mod) => ({ default: mod.RakeTaskDefNode })),
+  "rbenv-run-anything": () => import("@/registry/icons/plugins/ruby/rbenv-run-anything").then((mod) => ({ default: mod.RbenvRunAnything })),
+  "rbs-file": () => import("@/registry/icons/plugins/ruby/rbs-file").then((mod) => ({ default: mod.RbsFile })),
+  "react": () => import("@/registry/icons/file-types/react").then((mod) => ({ default: mod.React })),
+  "react-icon": () => import("@/registry/icons/file-types/react-icon").then((mod) => ({ default: mod.ReactFileType })),
+  "read-access": () => import("@/registry/icons/editor-icons/read-access").then((mod) => ({ default: mod.ReadAccess })),
+  "reader": () => import("@/registry/icons/plugins/ruby/reader").then((mod) => ({ default: mod.Reader })),
+  "reader-mode": () => import("@/registry/icons/general/general/reader-mode").then((mod) => ({ default: mod.ReaderMode })),
+  "rebuild": () => import("@/registry/icons/general/tool-windows/rebuild").then((mod) => ({ default: mod.Rebuild })),
+  "rec": () => import("@/registry/icons/editor-icons/rec").then((mod) => ({ default: mod.Rec })),
+  "recursive-method": () => import("@/registry/icons/editor-icons/recursive-method").then((mod) => ({ default: mod.RecursiveMethod })),
+  "redis": () => import("@/registry/icons/database/redis").then((mod) => ({ default: mod.Redis })),
+  "redis-file-type": () => import("@/registry/icons/database/redis-file-type").then((mod) => ({ default: mod.RedisFileType })),
+  "redo": () => import("@/registry/icons/general/general/redo").then((mod) => ({ default: mod.Redo })),
+  "redoc": () => import("@/registry/icons/file-types/redoc").then((mod) => ({ default: mod.Redoc })),
+  "redshift": () => import("@/registry/icons/database/redshift").then((mod) => ({ default: mod.Redshift })),
+  "reference-by": () => import("@/registry/icons/plugins/jpa/reference-by").then((mod) => ({ default: mod.ReferenceBy })),
+  "reference-to": () => import("@/registry/icons/plugins/jpa/reference-to").then((mod) => ({ default: mod.ReferenceTo })),
+  "reformat-code": () => import("@/registry/icons/general/general/reformat-code").then((mod) => ({ default: mod.ReformatCode })),
+  "refresh-kubernetes-configuration": () => import("@/registry/icons/plugins/kubernetes/refresh-kubernetes-configuration").then((mod) => ({ default: mod.RefreshKubernetesConfiguration })),
+  "refresh-materialized-view": () => import("@/registry/icons/database/refresh-materialized-view").then((mod) => ({ default: mod.RefreshMaterializedView })),
+  "regex": () => import("@/registry/icons/general/inline/regex").then((mod) => ({ default: mod.Regex })),
+  "regexp": () => import("@/registry/icons/file-types/regexp").then((mod) => ({ default: mod.Regexp })),
+  "register": () => import("@/registry/icons/plugins/cidr/register").then((mod) => ({ default: mod.Register })),
+  "registers": () => import("@/registry/icons/plugins/cidr/registers").then((mod) => ({ default: mod.Registers })),
+  "relay": () => import("@/registry/icons/plugins/graphql/relay").then((mod) => ({ default: mod.Relay })),
+  "remote": () => import("@/registry/icons/plugins/java-ee/remote").then((mod) => ({ default: mod.Remote })),
+  "remote-changes": () => import("@/registry/icons/general/setting-sync/remote-changes").then((mod) => ({ default: mod.RemoteChanges })),
+  "remote-file-systems": () => import("@/registry/icons/plugins/bdt/remote-file-systems").then((mod) => ({ default: mod.RemoteFileSystems })),
+  "remote-swift-package-dependency": () => import("@/registry/icons/plugins/cidr/remote-swift-package-dependency").then((mod) => ({ default: mod.RemoteSwiftPackageDependency })),
+  "remote-tool-set": () => import("@/registry/icons/plugins/cidr/remote-tool-set").then((mod) => ({ default: mod.RemoteToolSet })),
+  "remove-clause": () => import("@/registry/icons/plugins/scala/remove-clause").then((mod) => ({ default: mod.RemoveClause })),
+  "rename-column": () => import("@/registry/icons/plugins/jpa/rename-column").then((mod) => ({ default: mod.RenameColumn })),
+  "rename-constraint": () => import("@/registry/icons/plugins/jpa/rename-constraint").then((mod) => ({ default: mod.RenameConstraint })),
+  "rename-index": () => import("@/registry/icons/plugins/jpa/rename-index").then((mod) => ({ default: mod.RenameIndex })),
+  "rename-sequence": () => import("@/registry/icons/plugins/jpa/rename-sequence").then((mod) => ({ default: mod.RenameSequence })),
+  "rename-table": () => import("@/registry/icons/plugins/jpa/rename-table").then((mod) => ({ default: mod.RenameTable })),
+  "renderer-kit": () => import("@/registry/icons/plugins/java-ee/renderer-kit").then((mod) => ({ default: mod.RendererKit })),
+  "replace": () => import("@/registry/icons/general/actions/replace").then((mod) => ({ default: mod.Replace })),
+  "replica-set": () => import("@/registry/icons/plugins/kubernetes/replica-set").then((mod) => ({ default: mod.ReplicaSet })),
+  "report": () => import("@/registry/icons/general/actions/report").then((mod) => ({ default: mod.Report })),
+  "repositories": () => import("@/registry/icons/general/tool-windows/repositories").then((mod) => ({ default: mod.Repositories })),
+  "repository": () => import("@/registry/icons/plugins/jpa/repository").then((mod) => ({ default: mod.Repository })),
+  "rerun-automatically": () => import("@/registry/icons/run/rerun-automatically").then((mod) => ({ default: mod.RerunAutomatically })),
+  "reset": () => import("@/registry/icons/database/reset").then((mod) => ({ default: mod.Reset })),
+  "reset-cache-and-reload-projects": () => import("@/registry/icons/plugins/cidr/reset-cache-and-reload-projects").then((mod) => ({ default: mod.ResetCacheAndReloadProjects })),
+  "reset-mcu": () => import("@/registry/icons/plugins/cidr/reset-mcu").then((mod) => ({ default: mod.ResetMcu })),
+  "resolve-continue": () => import("@/registry/icons/vcs/resolve-continue").then((mod) => ({ default: mod.ResolveContinue })),
+  "resource-bundle": () => import("@/registry/icons/nodes/resource-bundle").then((mod) => ({ default: mod.ResourceBundle })),
+  "resources": () => import("@/registry/icons/plugins/ruby/resources").then((mod) => ({ default: mod.Resources })),
+  "resources-root": () => import("@/registry/icons/nodes/resources-root").then((mod) => ({ default: mod.ResourcesRoot })),
+  "restart": () => import("@/registry/icons/run/restart").then((mod) => ({ default: mod.Restart })),
+  "restart-debug": () => import("@/registry/icons/run/restart-debug").then((mod) => ({ default: mod.RestartDebug })),
+  "restart-failed-tests": () => import("@/registry/icons/run/restart-failed-tests").then((mod) => ({ default: mod.RestartFailedTests })),
+  "restart-frame": () => import("@/registry/icons/run/restart-frame").then((mod) => ({ default: mod.RestartFrame })),
+  "restart-stop": () => import("@/registry/icons/general/actions/restart-stop").then((mod) => ({ default: mod.RestartStop })),
+  "restore": () => import("@/registry/icons/general/windows/restore").then((mod) => ({ default: mod.Restore })),
+  "restore-from-ignore": () => import("@/registry/icons/plugins/jpa/restore-from-ignore").then((mod) => ({ default: mod.RestoreFromIgnore })),
+  "restore-inactive": () => import("@/registry/icons/general/windows/restore-inactive").then((mod) => ({ default: mod.RestoreInactive })),
+  "restore-small": () => import("@/registry/icons/general/windows/restore-small").then((mod) => ({ default: mod.RestoreSmall })),
+  "resume-hovered": () => import("@/registry/icons/general/progress-bar/resume-hovered").then((mod) => ({ default: mod.ResumeHovered })),
+  "return-value": () => import("@/registry/icons/plugins/cidr/return-value").then((mod) => ({ default: mod.ReturnValue })),
+  "revert": () => import("@/registry/icons/vcs/revert").then((mod) => ({ default: mod.Revert })),
+  "rhtml": () => import("@/registry/icons/plugins/ruby/rhtml").then((mod) => ({ default: mod.Rhtml })),
+  "right": () => import("@/registry/icons/general/general/right").then((mod) => ({ default: mod.Right })),
+  "right-align": () => import("@/registry/icons/general/editor/right-align").then((mod) => ({ default: mod.RightAlign })),
+  "rjs": () => import("@/registry/icons/plugins/ruby/rjs").then((mod) => ({ default: mod.Rjs })),
+  "role-binding": () => import("@/registry/icons/plugins/kubernetes/role-binding").then((mod) => ({ default: mod.RoleBinding })),
+  "rollback": () => import("@/registry/icons/database/rollback").then((mod) => ({ default: mod.Rollback })),
+  "routine": () => import("@/registry/icons/database/routine").then((mod) => ({ default: mod.Routine })),
+  "rspec-run-configuration": () => import("@/registry/icons/plugins/ruby/rspec-run-configuration").then((mod) => ({ default: mod.RspecRunConfiguration })),
+  "rspec-shared-group-closed": () => import("@/registry/icons/plugins/ruby/rspec-shared-group-closed").then((mod) => ({ default: mod.RspecSharedGroupClosed })),
+  "rspec-shared-group-ref": () => import("@/registry/icons/plugins/ruby/rspec-shared-group-ref").then((mod) => ({ default: mod.RspecSharedGroupRef })),
+  "rspec-test": () => import("@/registry/icons/plugins/ruby/rspec-test").then((mod) => ({ default: mod.RspecTest })),
+  "rst": () => import("@/registry/icons/file-types/rst").then((mod) => ({ default: mod.Rst })),
+  "ruby": () => import("@/registry/icons/plugins/ruby/ruby").then((mod) => ({ default: mod.Ruby })),
+  "ruby-gems": () => import("@/registry/icons/plugins/ruby/ruby-gems").then((mod) => ({ default: mod.RubyGems })),
+  "ruby-module-closed": () => import("@/registry/icons/plugins/ruby/ruby-module-closed").then((mod) => ({ default: mod.RubyModuleClosed })),
+  "ruby-remote": () => import("@/registry/icons/plugins/ruby/ruby-remote").then((mod) => ({ default: mod.RubyRemote })),
+  "ruby-script": () => import("@/registry/icons/plugins/ruby/ruby-script").then((mod) => ({ default: mod.RubyScript })),
+  "ruby-test-unit": () => import("@/registry/icons/plugins/ruby/ruby-test-unit").then((mod) => ({ default: mod.RubyTestUnit })),
+  "run-all": () => import("@/registry/icons/general/actions/run-all").then((mod) => ({ default: mod.RunAll })),
+  "run-anything": () => import("@/registry/icons/general/general/run-anything").then((mod) => ({ default: mod.RunAnything })),
+  "run-as-workflow": () => import("@/registry/icons/plugins/databricks/run-as-workflow").then((mod) => ({ default: mod.RunAsWorkflow })),
+  "run-configuration": () => import("@/registry/icons/plugins/ruby/run-configuration").then((mod) => ({ default: mod.RunConfiguration })),
+  "run-configurations/application": () => import("@/registry/icons/run-configurations/application").then((mod) => ({ default: mod.Application })),
+  "run-configurations/application-remote": () => import("@/registry/icons/run-configurations/application-remote").then((mod) => ({ default: mod.ApplicationRemote })),
+  "run-configurations/compound": () => import("@/registry/icons/run-configurations/compound").then((mod) => ({ default: mod.Compound })),
+  "run-configurations/ignored-test": () => import("@/registry/icons/run-configurations/ignored-test").then((mod) => ({ default: mod.IgnoredTest })),
+  "run-configurations/invalid-configuration-layer": () => import("@/registry/icons/run-configurations/invalid-configuration-layer").then((mod) => ({ default: mod.InvalidConfigurationLayer })),
+  "run-configurations/java-scratch": () => import("@/registry/icons/run-configurations/java-scratch").then((mod) => ({ default: mod.JavaScratch })),
+  "run-configurations/java-script-debug-configuration": () => import("@/registry/icons/run-configurations/java-script-debug-configuration").then((mod) => ({ default: mod.JavaScriptDebugConfiguration })),
+  "run-configurations/java-script-remote": () => import("@/registry/icons/run-configurations/java-script-remote").then((mod) => ({ default: mod.JavaScriptRemote })),
+  "run-configurations/junit": () => import("@/registry/icons/run-configurations/junit").then((mod) => ({ default: mod.Junit })),
+  "run-configurations/junit-test-mark": () => import("@/registry/icons/run-configurations/junit-test-mark").then((mod) => ({ default: mod.JunitTestMark })),
+  "run-configurations/php-local": () => import("@/registry/icons/run-configurations/php-local").then((mod) => ({ default: mod.PhpLocal })),
+  "run-configurations/php-remote": () => import("@/registry/icons/run-configurations/php-remote").then((mod) => ({ default: mod.PhpRemote })),
+  "run-configurations/php-web": () => import("@/registry/icons/run-configurations/php-web").then((mod) => ({ default: mod.PhpWeb })),
+  "run-configurations/run-http-request": () => import("@/registry/icons/run-configurations/run-http-request").then((mod) => ({ default: mod.RunHttpRequest })),
+  "run-configurations/web-app": () => import("@/registry/icons/run-configurations/web-app").then((mod) => ({ default: mod.WebApp })),
+  "run-database-script": () => import("@/registry/icons/database/run-database-script").then((mod) => ({ default: mod.RunDatabaseScript })),
+  "run-error": () => import("@/registry/icons/editor-icons/run-error").then((mod) => ({ default: mod.RunError })),
+  "run-failed": () => import("@/registry/icons/editor-icons/run-failed").then((mod) => ({ default: mod.RunFailed })),
+  "run-http-request": () => import("@/registry/icons/run-configurations/run-http-request").then((mod) => ({ default: mod.RunHttpRequest })),
+  "run-rack-task": () => import("@/registry/icons/plugins/ruby/run-rack-task").then((mod) => ({ default: mod.RunRackTask })),
+  "run-spork-server": () => import("@/registry/icons/plugins/ruby/run-spork-server").then((mod) => ({ default: mod.RunSporkServer })),
+  "run-success": () => import("@/registry/icons/editor-icons/run-success").then((mod) => ({ default: mod.RunSuccess })),
+  "run-to-cursor": () => import("@/registry/icons/run/run-to-cursor").then((mod) => ({ default: mod.RunToCursor })),
+  "run-with-coverage": () => import("@/registry/icons/run/run-with-coverage").then((mod) => ({ default: mod.RunWithCoverage })),
+  "run-with-type-tracker": () => import("@/registry/icons/plugins/ruby/run-with-type-tracker").then((mod) => ({ default: mod.RunWithTypeTracker })),
+  "run/attach-to-process": () => import("@/registry/icons/run/attach-to-process").then((mod) => ({ default: mod.AttachToProcess })),
+  "run/debug": () => import("@/registry/icons/run/debug").then((mod) => ({ default: mod.Debug })),
+  "run/dump-threads": () => import("@/registry/icons/run/dump-threads").then((mod) => ({ default: mod.DumpThreads })),
+  "run/evaluate-expression": () => import("@/registry/icons/run/evaluate-expression").then((mod) => ({ default: mod.EvaluateExpression })),
+  "run/failed-in-progress": () => import("@/registry/icons/run/failed-in-progress").then((mod) => ({ default: mod.FailedInProgress })),
+  "run/force-run-to-cursor": () => import("@/registry/icons/run/force-run-to-cursor").then((mod) => ({ default: mod.ForceRunToCursor })),
+  "run/force-step-into": () => import("@/registry/icons/run/force-step-into").then((mod) => ({ default: mod.ForceStepInto })),
+  "run/force-step-over": () => import("@/registry/icons/run/force-step-over").then((mod) => ({ default: mod.ForceStepOver })),
+  "run/kill-process": () => import("@/registry/icons/run/kill-process").then((mod) => ({ default: mod.KillProcess })),
+  "run/mute-breakpoints": () => import("@/registry/icons/run/mute-breakpoints").then((mod) => ({ default: mod.MuteBreakpoints })),
+  "run/pause": () => import("@/registry/icons/run/pause").then((mod) => ({ default: mod.Pause })),
+  "run/profile": () => import("@/registry/icons/run/profile").then((mod) => ({ default: mod.Profile })),
+  "run/rerun": () => import("@/registry/icons/run/rerun").then((mod) => ({ default: mod.Rerun })),
+  "run/rerun-automatically": () => import("@/registry/icons/run/rerun-automatically").then((mod) => ({ default: mod.RerunAutomatically })),
+  "run/restart": () => import("@/registry/icons/run/restart").then((mod) => ({ default: mod.Restart })),
+  "run/restart-debug": () => import("@/registry/icons/run/restart-debug").then((mod) => ({ default: mod.RestartDebug })),
+  "run/restart-failed-tests": () => import("@/registry/icons/run/restart-failed-tests").then((mod) => ({ default: mod.RestartFailedTests })),
+  "run/restart-frame": () => import("@/registry/icons/run/restart-frame").then((mod) => ({ default: mod.RestartFrame })),
+  "run/resume": () => import("@/registry/icons/run/resume").then((mod) => ({ default: mod.Resume })),
+  "run/run": () => import("@/registry/icons/run/run").then((mod) => ({ default: mod.Run })),
+  "run/run-to-cursor": () => import("@/registry/icons/run/run-to-cursor").then((mod) => ({ default: mod.RunToCursor })),
+  "run/run-with-coverage": () => import("@/registry/icons/run/run-with-coverage").then((mod) => ({ default: mod.RunWithCoverage })),
+  "run/show-current-frame": () => import("@/registry/icons/run/show-current-frame").then((mod) => ({ default: mod.ShowCurrentFrame })),
+  "run/show-ignored": () => import("@/registry/icons/run/show-ignored").then((mod) => ({ default: mod.ShowIgnored })),
+  "run/show-passed": () => import("@/registry/icons/run/show-passed").then((mod) => ({ default: mod.ShowPassed })),
+  "run/smart-step-into": () => import("@/registry/icons/run/smart-step-into").then((mod) => ({ default: mod.SmartStepInto })),
+  "run/step-into": () => import("@/registry/icons/run/step-into").then((mod) => ({ default: mod.StepInto })),
+  "run/step-out": () => import("@/registry/icons/run/step-out").then((mod) => ({ default: mod.StepOut })),
+  "run/step-out-code-block": () => import("@/registry/icons/run/step-out-code-block").then((mod) => ({ default: mod.StepOutCodeBlock })),
+  "run/step-over": () => import("@/registry/icons/run/step-over").then((mod) => ({ default: mod.StepOver })),
+  "run/stop": () => import("@/registry/icons/run/stop").then((mod) => ({ default: mod.Stop })),
+  "run/test-custom": () => import("@/registry/icons/run/test-custom").then((mod) => ({ default: mod.TestCustom })),
+  "run/test-error": () => import("@/registry/icons/run/test-error").then((mod) => ({ default: mod.TestError })),
+  "run/test-failed": () => import("@/registry/icons/run/test-failed").then((mod) => ({ default: mod.TestFailed })),
+  "run/test-ignored": () => import("@/registry/icons/run/test-ignored").then((mod) => ({ default: mod.TestIgnored })),
+  "run/test-not-run-yet": () => import("@/registry/icons/run/test-not-run-yet").then((mod) => ({ default: mod.TestNotRunYet })),
+  "run/test-passed": () => import("@/registry/icons/run/test-passed").then((mod) => ({ default: mod.TestPassed })),
+  "run/test-passed-ignored": () => import("@/registry/icons/run/test-passed-ignored").then((mod) => ({ default: mod.TestPassedIgnored })),
+  "run/test-paused": () => import("@/registry/icons/run/test-paused").then((mod) => ({ default: mod.TestPaused })),
+  "run/test-runner-watch": () => import("@/registry/icons/run/test-runner-watch").then((mod) => ({ default: mod.TestRunnerWatch })),
+  "run/test-skipped": () => import("@/registry/icons/run/test-skipped").then((mod) => ({ default: mod.TestSkipped })),
+  "run/test-terminated": () => import("@/registry/icons/run/test-terminated").then((mod) => ({ default: mod.TestTerminated })),
+  "run/test-unknown": () => import("@/registry/icons/run/test-unknown").then((mod) => ({ default: mod.TestUnknown })),
+  "run/trace-stream": () => import("@/registry/icons/run/trace-stream").then((mod) => ({ default: mod.TraceStream })),
+  "run/view-breakpoints": () => import("@/registry/icons/run/view-breakpoints").then((mod) => ({ default: mod.ViewBreakpoints })),
+  "run/watch": () => import("@/registry/icons/run/watch").then((mod) => ({ default: mod.Watch })),
+  "runnable-mark": () => import("@/registry/icons/general/modifiers/runnable-mark").then((mod) => ({ default: mod.RunnableMark })),
+  "rust": () => import("@/registry/icons/general/tool-windows/rust").then((mod) => ({ default: mod.Rust })),
+  "rvm-run-anything": () => import("@/registry/icons/plugins/ruby/rvm-run-anything").then((mod) => ({ default: mod.RvmRunAnything })),
+  "rxml": () => import("@/registry/icons/plugins/ruby/rxml").then((mod) => ({ default: mod.Rxml })),
+  "safe-all": () => import("@/registry/icons/plugins/package-checker/safe-all").then((mod) => ({ default: mod.SafeAll })),
+  "safe-all-tree": () => import("@/registry/icons/plugins/package-checker/safe-all-tree").then((mod) => ({ default: mod.SafeAllTree })),
+  "safe-all-tree-outline": () => import("@/registry/icons/plugins/package-checker/safe-all-tree-outline").then((mod) => ({ default: mod.SafeAllTreeOutline })),
+  "sarif": () => import("@/registry/icons/file-types/sarif").then((mod) => ({ default: mod.Sarif })),
+  "sass": () => import("@/registry/icons/file-types/sass").then((mod) => ({ default: mod.Sass })),
+  "sbt-file": () => import("@/registry/icons/plugins/scala/sbt-file").then((mod) => ({ default: mod.SbtFile })),
+  "sbt-folder": () => import("@/registry/icons/plugins/scala/sbt-folder").then((mod) => ({ default: mod.SbtFolder })),
+  "sbt-load-changes": () => import("@/registry/icons/plugins/scala/sbt-load-changes").then((mod) => ({ default: mod.SbtLoadChanges })),
+  "scala": () => import("@/registry/icons/file-types/scala").then((mod) => ({ default: mod.Scala })),
+  "scala-console": () => import("@/registry/icons/plugins/scala/scala-console").then((mod) => ({ default: mod.ScalaConsole })),
+  "scala-file": () => import("@/registry/icons/plugins/scala/scala-file").then((mod) => ({ default: mod.ScalaFile })),
+  "scala-html": () => import("@/registry/icons/plugins/scala/scala-html").then((mod) => ({ default: mod.ScalaHtml })),
+  "scala-logo": () => import("@/registry/icons/plugins/scala/scala-logo").then((mod) => ({ default: mod.ScalaLogo })),
+  "scala-profiler": () => import("@/registry/icons/general/tool-windows/scala-profiler").then((mod) => ({ default: mod.ScalaProfiler })),
+  "scala-script": () => import("@/registry/icons/plugins/scala/scala-script").then((mod) => ({ default: mod.ScalaScript })),
+  "scala-sdk": () => import("@/registry/icons/plugins/scala/scala-sdk").then((mod) => ({ default: mod.ScalaSDK })),
+  "scala-test": () => import("@/registry/icons/plugins/scala/scala-test").then((mod) => ({ default: mod.ScalaTest })),
+  "scala16": () => import("@/registry/icons/plugins/scala/scala16").then((mod) => ({ default: mod.Scala16 })),
+  "scalar": () => import("@/registry/icons/plugins/graphql/scalar").then((mod) => ({ default: mod.Scalar })),
+  "sci-view": () => import("@/registry/icons/general/tool-windows/sci-view").then((mod) => ({ default: mod.SciView })),
+  "scopes": () => import("@/registry/icons/plugins/java-ee/scopes").then((mod) => ({ default: mod.Scopes })),
+  "scratch": () => import("@/registry/icons/file-types/scratch").then((mod) => ({ default: mod.Scratch })),
+  "scratches": () => import("@/registry/icons/file-types/scratches").then((mod) => ({ default: mod.Scratches })),
+  "screens": () => import("@/registry/icons/plugins/jpa/screens").then((mod) => ({ default: mod.Screens })),
+  "scripting-script": () => import("@/registry/icons/database/scripting-script").then((mod) => ({ default: mod.ScriptingScript })),
+  "scss": () => import("@/registry/icons/file-types/scss").then((mod) => ({ default: mod.Scss })),
+  "sdk-closed": () => import("@/registry/icons/general/devkit/sdk-closed").then((mod) => ({ default: mod.SdkClosed })),
+  "search": () => import("@/registry/icons/general/general/search").then((mod) => ({ default: mod.Search })),
+  "search-history": () => import("@/registry/icons/general/inline/search-history").then((mod) => ({ default: mod.SearchHistory })),
+  "select-all": () => import("@/registry/icons/general/actions/select-all").then((mod) => ({ default: mod.SelectAll })),
+  "self-reference": () => import("@/registry/icons/debugger/self-reference").then((mod) => ({ default: mod.SelfReference })),
+  "send": () => import("@/registry/icons/general/ai-assistant/send").then((mod) => ({ default: mod.Send })),
+  "send-to-editor": () => import("@/registry/icons/general/ai-assistant/send-to-editor").then((mod) => ({ default: mod.SendToEditor })),
+  "send-to-the-left": () => import("@/registry/icons/general/duplicates/send-to-the-left").then((mod) => ({ default: mod.SendToTheLeft })),
+  "send-to-the-left-grayed": () => import("@/registry/icons/general/duplicates/send-to-the-left-grayed").then((mod) => ({ default: mod.SendToTheLeftGrayed })),
+  "send-to-the-right": () => import("@/registry/icons/general/duplicates/send-to-the-right").then((mod) => ({ default: mod.SendToTheRight })),
+  "send-to-the-right-grayed": () => import("@/registry/icons/general/duplicates/send-to-the-right-grayed").then((mod) => ({ default: mod.SendToTheRightGrayed })),
+  "separator-horizontal": () => import("@/registry/icons/general/general/separator-horizontal").then((mod) => ({ default: mod.SeparatorHorizontal })),
+  "server": () => import("@/registry/icons/nodes/server").then((mod) => ({ default: mod.Server })),
+  "server-objects-group": () => import("@/registry/icons/database/server-objects-group").then((mod) => ({ default: mod.ServerObjectsGroup })),
+  "service-account": () => import("@/registry/icons/plugins/kubernetes/service-account").then((mod) => ({ default: mod.ServiceAccount })),
+  "servlet": () => import("@/registry/icons/nodes/servlet").then((mod) => ({ default: mod.Servlet })),
+  "session-bean": () => import("@/registry/icons/plugins/java-ee/session-bean").then((mod) => ({ default: mod.SessionBean })),
+  "set": () => import("@/registry/icons/database/set").then((mod) => ({ default: mod.Set })),
+  "set-context": () => import("@/registry/icons/plugins/jpa/set-context").then((mod) => ({ default: mod.SetContext })),
+  "set-key": () => import("@/registry/icons/database/set-key").then((mod) => ({ default: mod.SetKey })),
+  "set-label": () => import("@/registry/icons/plugins/jpa/set-label").then((mod) => ({ default: mod.SetLabel })),
+  "shared": () => import("@/registry/icons/general/modifiers/shared").then((mod) => ({ default: mod.Shared })),
+  "shared-scope": () => import("@/registry/icons/nodes/shared-scope").then((mod) => ({ default: mod.SharedScope })),
+  "sharp": () => import("@/registry/icons/editor-icons/sharp").then((mod) => ({ default: mod.Sharp })),
+  "shell": () => import("@/registry/icons/file-types/shell").then((mod) => ({ default: mod.Shell })),
+  "shortcut-filter": () => import("@/registry/icons/general/actions/shortcut-filter").then((mod) => ({ default: mod.ShortcutFilter })),
+  "show": () => import("@/registry/icons/general/general/show").then((mod) => ({ default: mod.Show })),
+  "show-as-tree": () => import("@/registry/icons/general/general/show-as-tree").then((mod) => ({ default: mod.ShowAsTree })),
+  "show-autowired-candidates": () => import("@/registry/icons/plugins/java-ee/show-autowired-candidates").then((mod) => ({ default: mod.ShowAutowiredCandidates })),
+  "show-code": () => import("@/registry/icons/plugins/jpa/show-code").then((mod) => ({ default: mod.ShowCode })),
+  "show-current-frame": () => import("@/registry/icons/run/show-current-frame").then((mod) => ({ default: mod.ShowCurrentFrame })),
+  "show-ignored": () => import("@/registry/icons/run/show-ignored").then((mod) => ({ default: mod.ShowIgnored })),
+  "show-import-statements": () => import("@/registry/icons/general/usages/show-import-statements").then((mod) => ({ default: mod.ShowImportStatements })),
+  "show-library-contents": () => import("@/registry/icons/general/object-browser/show-library-contents").then((mod) => ({ default: mod.ShowLibraryContents })),
+  "show-logs": () => import("@/registry/icons/plugins/kubernetes/show-logs").then((mod) => ({ default: mod.ShowLogs })),
+  "show-members": () => import("@/registry/icons/general/object-browser/show-members").then((mod) => ({ default: mod.ShowMembers })),
+  "show-passed": () => import("@/registry/icons/run/show-passed").then((mod) => ({ default: mod.ShowPassed })),
+  "show-read-access": () => import("@/registry/icons/general/usages/show-read-access").then((mod) => ({ default: mod.ShowReadAccess })),
+  "show-to-implement": () => import("@/registry/icons/general/actions/show-to-implement").then((mod) => ({ default: mod.ShowToImplement })),
+  "show-write-access": () => import("@/registry/icons/general/usages/show-write-access").then((mod) => ({ default: mod.ShowWriteAccess })),
+  "sibling-inherited-method": () => import("@/registry/icons/editor-icons/sibling-inherited-method").then((mod) => ({ default: mod.SiblingInheritedMethod })),
+  "single-record-view": () => import("@/registry/icons/database/single-record-view").then((mod) => ({ default: mod.SingleRecordView })),
+  "singlestore": () => import("@/registry/icons/database/singlestore").then((mod) => ({ default: mod.Singlestore })),
+  "skip-commit": () => import("@/registry/icons/vcs/skip-commit").then((mod) => ({ default: mod.SkipCommit })),
+  "slim": () => import("@/registry/icons/plugins/ruby/slim").then((mod) => ({ default: mod.Slim })),
+  "smart-step-into": () => import("@/registry/icons/run/smart-step-into").then((mod) => ({ default: mod.SmartStepInto })),
+  "snowflake": () => import("@/registry/icons/database/snowflake").then((mod) => ({ default: mod.Snowflake })),
+  "soft-wrap": () => import("@/registry/icons/general/general/soft-wrap").then((mod) => ({ default: mod.SoftWrap })),
+  "software-framework": () => import("@/registry/icons/plugins/platformio/software-framework").then((mod) => ({ default: mod.SoftwareFramework })),
+  "sort-by": () => import("@/registry/icons/general/general/sort-by").then((mod) => ({ default: mod.SortBy })),
+  "sort-by-duration": () => import("@/registry/icons/general/general/sort-by-duration").then((mod) => ({ default: mod.SortByDuration })),
+  "sort-history": () => import("@/registry/icons/general/inline/sort-history").then((mod) => ({ default: mod.SortHistory })),
+  "sorted-set": () => import("@/registry/icons/database/sorted-set").then((mod) => ({ default: mod.SortedSet })),
+  "sorted-set-key": () => import("@/registry/icons/database/sorted-set-key").then((mod) => ({ default: mod.SortedSetKey })),
+  "source-map": () => import("@/registry/icons/file-types/source-map").then((mod) => ({ default: mod.SourceMap })),
+  "source-root": () => import("@/registry/icons/nodes/source-root").then((mod) => ({ default: mod.SourceRoot })),
+  "space-tool-window": () => import("@/registry/icons/general/tool-windows/space-tool-window").then((mod) => ({ default: mod.SpaceToolWindow })),
+  "spark-run": () => import("@/registry/icons/plugins/bdt/spark-run").then((mod) => ({ default: mod.SparkRun })),
+  "split": () => import("@/registry/icons/general/actions/split").then((mod) => ({ default: mod.Split })),
+  "split-horizontally": () => import("@/registry/icons/general/general/split-horizontally").then((mod) => ({ default: mod.SplitHorizontally })),
+  "split-vertically": () => import("@/registry/icons/general/general/split-vertically").then((mod) => ({ default: mod.SplitVertically })),
+  "spring-batch": () => import("@/registry/icons/plugins/spring/spring-batch").then((mod) => ({ default: mod.SpringBatch })),
+  "spring-bean": () => import("@/registry/icons/plugins/spring/spring-bean").then((mod) => ({ default: mod.SpringBean })),
+  "spring-boot": () => import("@/registry/icons/plugins/spring/spring-boot").then((mod) => ({ default: mod.SpringBoot })),
+  "spring-boot-application": () => import("@/registry/icons/plugins/spring/spring-boot-application").then((mod) => ({ default: mod.SpringBootApplication })),
+  "spring-boot-endpoint": () => import("@/registry/icons/plugins/spring/spring-boot-endpoint").then((mod) => ({ default: mod.SpringBootEndpoint })),
+  "spring-boot-health": () => import("@/registry/icons/plugins/spring/spring-boot-health").then((mod) => ({ default: mod.SpringBootHealth })),
+  "spring-boot-overlay": () => import("@/registry/icons/plugins/spring/spring-boot-overlay").then((mod) => ({ default: mod.SpringBootOverlay })),
+  "spring-cloud": () => import("@/registry/icons/plugins/spring/spring-cloud").then((mod) => ({ default: mod.SpringCloud })),
+  "spring-cloud-file-set": () => import("@/registry/icons/plugins/spring/spring-cloud-file-set").then((mod) => ({ default: mod.SpringCloudFileSet })),
+  "spring-cloud-stream": () => import("@/registry/icons/plugins/spring/spring-cloud-stream").then((mod) => ({ default: mod.SpringCloudStream })),
+  "spring-cloud-stream-file-set": () => import("@/registry/icons/plugins/spring/spring-cloud-stream-file-set").then((mod) => ({ default: mod.SpringCloudStreamFileSet })),
+  "spring-config": () => import("@/registry/icons/plugins/spring/spring-config").then((mod) => ({ default: mod.SpringConfig })),
+  "spring-data": () => import("@/registry/icons/plugins/spring/spring-data").then((mod) => ({ default: mod.SpringData })),
+  "spring-icon": () => import("@/registry/icons/plugins/jpa/spring-icon").then((mod) => ({ default: mod.SpringIcon })),
+  "spring-integration": () => import("@/registry/icons/plugins/spring/spring-integration").then((mod) => ({ default: mod.SpringIntegration })),
+  "spring-java-bean": () => import("@/registry/icons/plugins/spring/spring-java-bean").then((mod) => ({ default: mod.SpringJavaBean })),
+  "spring-java-config": () => import("@/registry/icons/plugins/spring/spring-java-config").then((mod) => ({ default: mod.SpringJavaConfig })),
+  "spring-models-dependency-graph": () => import("@/registry/icons/plugins/spring/spring-models-dependency-graph").then((mod) => ({ default: mod.SpringModelsDependencyGraph })),
+  "spring-profile": () => import("@/registry/icons/plugins/spring/spring-profile").then((mod) => ({ default: mod.SpringProfile })),
+  "spring-property": () => import("@/registry/icons/plugins/spring/spring-property").then((mod) => ({ default: mod.SpringProperty })),
+  "spring-repository-run-mongo": () => import("@/registry/icons/plugins/spring/spring-repository-run-mongo").then((mod) => ({ default: mod.SpringRepositoryRunMongo })),
+  "spring-security": () => import("@/registry/icons/plugins/spring/spring-security").then((mod) => ({ default: mod.SpringSecurity })),
+  "spring-session-factory": () => import("@/registry/icons/plugins/spring/spring-session-factory").then((mod) => ({ default: mod.SpringSessionFactory })),
+  "spring-web": () => import("@/registry/icons/plugins/spring/spring-web").then((mod) => ({ default: mod.SpringWeb })),
+  "spring-web-flow": () => import("@/registry/icons/plugins/spring/spring-web-flow").then((mod) => ({ default: mod.SpringWebFlow })),
+  "spring-web-flow-file": () => import("@/registry/icons/plugins/spring/spring-web-flow-file").then((mod) => ({ default: mod.SpringWebFlowFile })),
+  "spring-web-services": () => import("@/registry/icons/plugins/spring/spring-web-services").then((mod) => ({ default: mod.SpringWebServices })),
+  "sql-file": () => import("@/registry/icons/plugins/jpa/sql-file").then((mod) => ({ default: mod.SqlFile })),
+  "sql-server": () => import("@/registry/icons/database/sql-server").then((mod) => ({ default: mod.SqlServer })),
+  "sqldmlstatement": () => import("@/registry/icons/database/sqldmlstatement").then((mod) => ({ default: mod.SQLDMLStatement })),
+  "sqlgroup-by-type": () => import("@/registry/icons/database/sqlgroup-by-type").then((mod) => ({ default: mod.SQLGroupByType })),
+  "sqlite": () => import("@/registry/icons/database/sqlite").then((mod) => ({ default: mod.Sqlite })),
+  "sqlother-statement": () => import("@/registry/icons/database/sqlother-statement").then((mod) => ({ default: mod.SQLOtherStatement })),
+  "sqlselect-statement": () => import("@/registry/icons/database/sqlselect-statement").then((mod) => ({ default: mod.SQLSelectStatement })),
+  "star": () => import("@/registry/icons/nodes/star").then((mod) => ({ default: mod.Star })),
+  "star-empty": () => import("@/registry/icons/nodes/star-empty").then((mod) => ({ default: mod.StarEmpty })),
+  "start-memory-profile": () => import("@/registry/icons/general/actions/start-memory-profile").then((mod) => ({ default: mod.StartMemoryProfile })),
+  "start-timer": () => import("@/registry/icons/plugins/tasks/start-timer").then((mod) => ({ default: mod.StartTimer })),
+  "stash": () => import("@/registry/icons/vcs/stash").then((mod) => ({ default: mod.Stash })),
+  "stateful-set": () => import("@/registry/icons/plugins/kubernetes/stateful-set").then((mod) => ({ default: mod.StatefulSet })),
+  "static": () => import("@/registry/icons/nodes/static").then((mod) => ({ default: mod.Static })),
+  "static-mark": () => import("@/registry/icons/general/modifiers/static-mark").then((mod) => ({ default: mod.StaticMark })),
+  "statistics-event-log": () => import("@/registry/icons/general/tool-windows/statistics-event-log").then((mod) => ({ default: mod.StatisticsEventLog })),
+  "statistics-panel": () => import("@/registry/icons/general/inline/statistics-panel").then((mod) => ({ default: mod.StatisticsPanel })),
+  "status-disabled": () => import("@/registry/icons/general/setting-sync/status-disabled").then((mod) => ({ default: mod.StatusDisabled })),
+  "status-enabled": () => import("@/registry/icons/general/setting-sync/status-enabled").then((mod) => ({ default: mod.StatusEnabled })),
+  "step-definition-file": () => import("@/registry/icons/plugins/ruby/step-definition-file").then((mod) => ({ default: mod.StepDefinitionFile })),
+  "step-into": () => import("@/registry/icons/run/step-into").then((mod) => ({ default: mod.StepInto })),
+  "step-out": () => import("@/registry/icons/run/step-out").then((mod) => ({ default: mod.StepOut })),
+  "step-out-code-block": () => import("@/registry/icons/run/step-out-code-block").then((mod) => ({ default: mod.StepOutCodeBlock })),
+  "step-over": () => import("@/registry/icons/run/step-over").then((mod) => ({ default: mod.StepOver })),
+  "stm32-cube-mx": () => import("@/registry/icons/plugins/cidr/stm32-cube-mx").then((mod) => ({ default: mod.STM32CubeMX })),
+  "stop-hovered": () => import("@/registry/icons/general/progress-bar/stop-hovered").then((mod) => ({ default: mod.StopHovered })),
+  "stop-timer": () => import("@/registry/icons/plugins/tasks/stop-timer").then((mod) => ({ default: mod.StopTimer })),
+  "storage-class": () => import("@/registry/icons/plugins/kubernetes/storage-class").then((mod) => ({ default: mod.StorageClass })),
+  "stream": () => import("@/registry/icons/database/stream").then((mod) => ({ default: mod.Stream })),
+  "stream-key": () => import("@/registry/icons/database/stream-key").then((mod) => ({ default: mod.StreamKey })),
+  "strike-through": () => import("@/registry/icons/general/editor/strike-through").then((mod) => ({ default: mod.StrikeThrough })),
+  "string": () => import("@/registry/icons/database/string").then((mod) => ({ default: mod.String })),
+  "string-key": () => import("@/registry/icons/database/string-key").then((mod) => ({ default: mod.StringKey })),
+  "structure": () => import("@/registry/icons/general/tool-windows/structure").then((mod) => ({ default: mod.Structure })),
+  "structure-list-view": () => import("@/registry/icons/plugins/ruby/structure-list-view").then((mod) => ({ default: mod.StructureListView })),
+  "stylus": () => import("@/registry/icons/plugins/stylus/stylus").then((mod) => ({ default: mod.Stylus })),
+  "submit-db": () => import("@/registry/icons/database/submit-db").then((mod) => ({ default: mod.SubmitDB })),
+  "subscription": () => import("@/registry/icons/plugins/graphql/subscription").then((mod) => ({ default: mod.Subscription })),
+  "subtypes": () => import("@/registry/icons/general/general/subtypes").then((mod) => ({ default: mod.Subtypes })),
+  "succeded": () => import("@/registry/icons/plugins/kubernetes/succeded").then((mod) => ({ default: mod.Succeded })),
+  "success": () => import("@/registry/icons/general/status/success").then((mod) => ({ default: mod.Success })),
+  "success-dialog": () => import("@/registry/icons/general/status/success-dialog").then((mod) => ({ default: mod.SuccessDialog })),
+  "success-login": () => import("@/registry/icons/general/status/success-login").then((mod) => ({ default: mod.SuccessLogin })),
+  "suggested-refactoring-bulb": () => import("@/registry/icons/general/actions/suggested-refactoring-bulb").then((mod) => ({ default: mod.SuggestedRefactoringBulb })),
+  "suggested-refactoring-disabled": () => import("@/registry/icons/editor-icons/suggested-refactoring-disabled").then((mod) => ({ default: mod.SuggestedRefactoringDisabled })),
+  "sun": () => import("@/registry/icons/database/sun").then((mod) => ({ default: mod.Sun })),
+  "supertypes": () => import("@/registry/icons/general/general/supertypes").then((mod) => ({ default: mod.Supertypes })),
+  "svelte": () => import("@/registry/icons/file-types/svelte").then((mod) => ({ default: mod.Svelte })),
+  "swap-panels": () => import("@/registry/icons/general/actions/swap-panels").then((mod) => ({ default: mod.SwapPanels })),
+  "swift-lang": () => import("@/registry/icons/plugins/cidr/swift-lang").then((mod) => ({ default: mod.SwiftLang })),
+  "swift-package": () => import("@/registry/icons/plugins/cidr/swift-package").then((mod) => ({ default: mod.SwiftPackage })),
+  "swift-package-dependency": () => import("@/registry/icons/plugins/cidr/swift-package-dependency").then((mod) => ({ default: mod.SwiftPackageDependency })),
+  "swift-package-manifest": () => import("@/registry/icons/plugins/cidr/swift-package-manifest").then((mod) => ({ default: mod.SwiftPackageManifest })),
+  "swift-package-run": () => import("@/registry/icons/plugins/cidr/swift-package-run").then((mod) => ({ default: mod.SwiftPackageRun })),
+  "swift-package-test": () => import("@/registry/icons/plugins/cidr/swift-package-test").then((mod) => ({ default: mod.SwiftPackageTest })),
+  "sybase": () => import("@/registry/icons/database/sybase").then((mod) => ({ default: mod.Sybase })),
+  "symbol": () => import("@/registry/icons/plugins/ruby/symbol").then((mod) => ({ default: mod.Symbol })),
+  "symlink": () => import("@/registry/icons/general/modifiers/symlink").then((mod) => ({ default: mod.Symlink })),
+  "synchronize-scrolling": () => import("@/registry/icons/general/actions/synchronize-scrolling").then((mod) => ({ default: mod.SynchronizeScrolling })),
+  "synonym": () => import("@/registry/icons/database/synonym").then((mod) => ({ default: mod.Synonym })),
+  "system-dbfield": () => import("@/registry/icons/plugins/ruby/system-dbfield").then((mod) => ({ default: mod.SystemDBField })),
+  "system-theme": () => import("@/registry/icons/general/new-ui/system-theme").then((mod) => ({ default: mod.SystemTheme })),
+  "system-theme-selected": () => import("@/registry/icons/general/new-ui/system-theme-selected").then((mod) => ({ default: mod.SystemThemeSelected })),
+  "t-sqlt": () => import("@/registry/icons/database/t-sqlt").then((mod) => ({ default: mod.TSQLt })),
+  "tab-alert": () => import("@/registry/icons/general/modifiers/tab-alert").then((mod) => ({ default: mod.TabAlert })),
+  "table-heatmap": () => import("@/registry/icons/database/table-heatmap").then((mod) => ({ default: mod.TableHeatmap })),
+  "table-mapping": () => import("@/registry/icons/database/table-mapping").then((mod) => ({ default: mod.TableMapping })),
+  "tablespace": () => import("@/registry/icons/database/tablespace").then((mod) => ({ default: mod.Tablespace })),
+  "tarantool": () => import("@/registry/icons/database/tarantool").then((mod) => ({ default: mod.Tarantool })),
+  "target": () => import("@/registry/icons/plugins/cidr/target").then((mod) => ({ default: mod.Target })),
+  "task-group": () => import("@/registry/icons/build/task-group").then((mod) => ({ default: mod.TaskGroup })),
+  "team-city": () => import("@/registry/icons/file-types/team-city").then((mod) => ({ default: mod.TeamCity })),
+  "template": () => import("@/registry/icons/nodes/template").then((mod) => ({ default: mod.Template })),
+  "tensor-flow": () => import("@/registry/icons/file-types/tensor-flow").then((mod) => ({ default: mod.TensorFlow })),
+  "teradata": () => import("@/registry/icons/database/teradata").then((mod) => ({ default: mod.Teradata })),
+  "terminal": () => import("@/registry/icons/general/tool-windows/terminal").then((mod) => ({ default: mod.Terminal })),
+  "terminal/command": () => import("@/registry/icons/terminal/command").then((mod) => ({ default: mod.Command })),
+  "terminal/file-format": () => import("@/registry/icons/terminal/file-format").then((mod) => ({ default: mod.FileFormat })),
+  "terminal/option": () => import("@/registry/icons/terminal/option").then((mod) => ({ default: mod.Option })),
+  "terminal/other": () => import("@/registry/icons/terminal/other").then((mod) => ({ default: mod.Other })),
+  "terraform": () => import("@/registry/icons/file-types/terraform").then((mod) => ({ default: mod.Terraform })),
+  "test": () => import("@/registry/icons/nodes/test").then((mod) => ({ default: mod.Test })),
+  "test-custom": () => import("@/registry/icons/run/test-custom").then((mod) => ({ default: mod.TestCustom })),
+  "test-error": () => import("@/registry/icons/run/test-error").then((mod) => ({ default: mod.TestError })),
+  "test-failed": () => import("@/registry/icons/run/test-failed").then((mod) => ({ default: mod.TestFailed })),
+  "test-group": () => import("@/registry/icons/nodes/test-group").then((mod) => ({ default: mod.TestGroup })),
+  "test-not-run-yet": () => import("@/registry/icons/run/test-not-run-yet").then((mod) => ({ default: mod.TestNotRunYet })),
+  "test-passed": () => import("@/registry/icons/run/test-passed").then((mod) => ({ default: mod.TestPassed })),
+  "test-passed-ignored": () => import("@/registry/icons/run/test-passed-ignored").then((mod) => ({ default: mod.TestPassedIgnored })),
+  "test-paused": () => import("@/registry/icons/run/test-paused").then((mod) => ({ default: mod.TestPaused })),
+  "test-resources-root": () => import("@/registry/icons/nodes/test-resources-root").then((mod) => ({ default: mod.TestResourcesRoot })),
+  "test-root": () => import("@/registry/icons/nodes/test-root").then((mod) => ({ default: mod.TestRoot })),
+  "test-runner-watch": () => import("@/registry/icons/run/test-runner-watch").then((mod) => ({ default: mod.TestRunnerWatch })),
+  "test-skipped": () => import("@/registry/icons/run/test-skipped").then((mod) => ({ default: mod.TestSkipped })),
+  "test-source-folder": () => import("@/registry/icons/nodes/test-source-folder").then((mod) => ({ default: mod.TestSourceFolder })),
+  "test-terminated": () => import("@/registry/icons/run/test-terminated").then((mod) => ({ default: mod.TestTerminated })),
+  "test-unit-file": () => import("@/registry/icons/plugins/ruby/test-unit-file").then((mod) => ({ default: mod.TestUnitFile })),
+  "test-unknown": () => import("@/registry/icons/run/test-unknown").then((mod) => ({ default: mod.TestUnknown })),
+  "text": () => import("@/registry/icons/file-types/text").then((mod) => ({ default: mod.Text })),
+  "text-area": () => import("@/registry/icons/nodes/text-area").then((mod) => ({ default: mod.TextArea })),
+  "text-auto-generate": () => import("@/registry/icons/database/text-auto-generate").then((mod) => ({ default: mod.TextAutoGenerate })),
+  "thread-at-breakpoint": () => import("@/registry/icons/debugger/thread-at-breakpoint").then((mod) => ({ default: mod.ThreadAtBreakpoint })),
+  "thread-current": () => import("@/registry/icons/debugger/thread-current").then((mod) => ({ default: mod.ThreadCurrent })),
+  "thread-frozen": () => import("@/registry/icons/debugger/thread-frozen").then((mod) => ({ default: mod.ThreadFrozen })),
+  "thread-group-current": () => import("@/registry/icons/debugger/thread-group-current").then((mod) => ({ default: mod.ThreadGroupCurrent })),
+  "thread-running": () => import("@/registry/icons/debugger/thread-running").then((mod) => ({ default: mod.ThreadRunning })),
+  "threads": () => import("@/registry/icons/debugger/threads").then((mod) => ({ default: mod.Threads })),
+  "tibero": () => import("@/registry/icons/database/tibero").then((mod) => ({ default: mod.Tibero })),
+  "tidb": () => import("@/registry/icons/database/tidb").then((mod) => ({ default: mod.Tidb })),
+  "to-arrow": () => import("@/registry/icons/plugins/aop/to-arrow").then((mod) => ({ default: mod.ToArrow })),
+  "to-string": () => import("@/registry/icons/plugins/jpa/to-string").then((mod) => ({ default: mod.ToString })),
+  "todo": () => import("@/registry/icons/general/tool-windows/todo").then((mod) => ({ default: mod.Todo })),
+  "toggle-offline-mode": () => import("@/registry/icons/build/toggle-offline-mode").then((mod) => ({ default: mod.ToggleOfflineMode })),
+  "toggle-skip-tests-mode": () => import("@/registry/icons/build/toggle-skip-tests-mode").then((mod) => ({ default: mod.ToggleSkipTestsMode })),
+  "toggle-visibility": () => import("@/registry/icons/general/actions/toggle-visibility").then((mod) => ({ default: mod.ToggleVisibility })),
+  "toml": () => import("@/registry/icons/plugins/toml/toml").then((mod) => ({ default: mod.Toml })),
+  "tool-window-bazel": () => import("@/registry/icons/general/tool-windows/tool-window-bazel").then((mod) => ({ default: mod.ToolWindowBazel })),
+  "tool-window-bean-validator": () => import("@/registry/icons/general/tool-windows/tool-window-bean-validator").then((mod) => ({ default: mod.ToolWindowBeanValidator })),
+  "tool-window-big-data": () => import("@/registry/icons/general/tool-windows/tool-window-big-data").then((mod) => ({ default: mod.ToolWindowBigData })),
+  "tool-window-cadence": () => import("@/registry/icons/general/tool-windows/tool-window-cadence").then((mod) => ({ default: mod.ToolWindowCadence })),
+  "tool-window-cell-explorer": () => import("@/registry/icons/general/tool-windows/tool-window-cell-explorer").then((mod) => ({ default: mod.ToolWindowCellExplorer })),
+  "tool-window-check-details": () => import("@/registry/icons/general/tool-windows/tool-window-check-details").then((mod) => ({ default: mod.ToolWindowCheckDetails })),
+  "tool-window-clock": () => import("@/registry/icons/general/tool-windows/tool-window-clock").then((mod) => ({ default: mod.ToolWindowClock })),
+  "tool-window-dart": () => import("@/registry/icons/general/tool-windows/tool-window-dart").then((mod) => ({ default: mod.ToolWindowDart })),
+  "tool-window-data-view": () => import("@/registry/icons/general/tool-windows/tool-window-data-view").then((mod) => ({ default: mod.ToolWindowDataView })),
+  "tool-window-default": () => import("@/registry/icons/general/tool-windows/tool-window-default").then((mod) => ({ default: mod.ToolWindowDefault })),
+  "tool-window-django": () => import("@/registry/icons/general/tool-windows/tool-window-django").then((mod) => ({ default: mod.ToolWindowDjango })),
+  "tool-window-duplicates": () => import("@/registry/icons/general/tool-windows/tool-window-duplicates").then((mod) => ({ default: mod.ToolWindowDuplicates })),
+  "tool-window-edu-course-task": () => import("@/registry/icons/general/tool-windows/tool-window-edu-course-task").then((mod) => ({ default: mod.ToolWindowEduCourseTask })),
+  "tool-window-ejb": () => import("@/registry/icons/general/tool-windows/tool-window-ejb").then((mod) => ({ default: mod.ToolWindowEJB })),
+  "tool-window-hadoop": () => import("@/registry/icons/general/tool-windows/tool-window-hadoop").then((mod) => ({ default: mod.ToolWindowHadoop })),
+  "tool-window-hugging-face": () => import("@/registry/icons/general/tool-windows/tool-window-hugging-face").then((mod) => ({ default: mod.ToolWindowHuggingFace })),
+  "tool-window-jpab-structure": () => import("@/registry/icons/general/tool-windows/tool-window-jpab-structure").then((mod) => ({ default: mod.ToolWindowJPabStructure })),
+  "tool-window-json-path": () => import("@/registry/icons/general/tool-windows/tool-window-json-path").then((mod) => ({ default: mod.ToolWindowJsonPath })),
+  "tool-window-kotlin-notebooks": () => import("@/registry/icons/general/tool-windows/tool-window-kotlin-notebooks").then((mod) => ({ default: mod.ToolWindowKotlinNotebooks })),
+  "tool-window-kubernetes": () => import("@/registry/icons/general/tool-windows/tool-window-kubernetes").then((mod) => ({ default: mod.ToolWindowKubernetes })),
+  "tool-window-meson": () => import("@/registry/icons/general/tool-windows/tool-window-meson").then((mod) => ({ default: mod.ToolWindowMeson })),
+  "tool-window-model-checker": () => import("@/registry/icons/general/tool-windows/tool-window-model-checker").then((mod) => ({ default: mod.ToolWindowModelChecker })),
+  "tool-window-platform-io": () => import("@/registry/icons/general/tool-windows/tool-window-platform-io").then((mod) => ({ default: mod.ToolWindowPlatformIO })),
+  "tool-window-pub-serve": () => import("@/registry/icons/general/tool-windows/tool-window-pub-serve").then((mod) => ({ default: mod.ToolWindowPubServe })),
+  "tool-window-record-debug": () => import("@/registry/icons/general/tool-windows/tool-window-record-debug").then((mod) => ({ default: mod.ToolWindowRecordDebug })),
+  "tool-window-rgraph": () => import("@/registry/icons/general/tool-windows/tool-window-rgraph").then((mod) => ({ default: mod.ToolWindowRGraph })),
+  "tool-window-rhtml": () => import("@/registry/icons/general/tool-windows/tool-window-rhtml").then((mod) => ({ default: mod.ToolWindowRHtml })),
+  "tool-window-rpackages": () => import("@/registry/icons/general/tool-windows/tool-window-rpackages").then((mod) => ({ default: mod.ToolWindowRPackages })),
+  "tool-window-run-with-coverage": () => import("@/registry/icons/general/tool-windows/tool-window-run-with-coverage").then((mod) => ({ default: mod.ToolWindowRunWithCoverage })),
+  "tool-window-team-city": () => import("@/registry/icons/general/tool-windows/tool-window-team-city").then((mod) => ({ default: mod.ToolWindowTeamCity })),
+  "tool-window-test-spark": () => import("@/registry/icons/general/tool-windows/tool-window-test-spark").then((mod) => ({ default: mod.ToolWindowTestSpark })),
+  "tool-window-timer": () => import("@/registry/icons/general/tool-windows/tool-window-timer").then((mod) => ({ default: mod.ToolWindowTimer })),
+  "tool-window-type-trace-view": () => import("@/registry/icons/general/tool-windows/tool-window-type-trace-view").then((mod) => ({ default: mod.ToolWindowTypeTraceView })),
+  "tool-window-variable-view": () => import("@/registry/icons/general/tool-windows/tool-window-variable-view").then((mod) => ({ default: mod.ToolWindowVariableView })),
+  "tool-window-you-track": () => import("@/registry/icons/general/tool-windows/tool-window-you-track").then((mod) => ({ default: mod.ToolWindowYouTrack })),
+  "toolwindow-flink": () => import("@/registry/icons/general/tool-windows/toolwindow-flink").then((mod) => ({ default: mod.ToolwindowFlink })),
+  "trace-stream": () => import("@/registry/icons/run/trace-stream").then((mod) => ({ default: mod.TraceStream })),
+  "trait-companion": () => import("@/registry/icons/plugins/scala/trait-companion").then((mod) => ({ default: mod.TraitCompanion })),
+  "trait-companion-swapped": () => import("@/registry/icons/plugins/scala/trait-companion-swapped").then((mod) => ({ default: mod.TraitCompanionSwapped })),
+  "trait-object-scala": () => import("@/registry/icons/plugins/scala/trait-object-scala").then((mod) => ({ default: mod.TraitObjectScala })),
+  "trait-scala": () => import("@/registry/icons/plugins/scala/trait-scala").then((mod) => ({ default: mod.TraitScala })),
+  "transaction-manager": () => import("@/registry/icons/plugins/spring/transaction-manager").then((mod) => ({ default: mod.TransactionManager })),
+  "transfer": () => import("@/registry/icons/general/tool-windows/transfer").then((mod) => ({ default: mod.Transfer })),
+  "transfer-tool-window": () => import("@/registry/icons/general/tool-windows/transfer-tool-window").then((mod) => ({ default: mod.TransferToolWindow })),
+  "trigger": () => import("@/registry/icons/database/trigger").then((mod) => ({ default: mod.Trigger })),
+  "trino": () => import("@/registry/icons/database/trino").then((mod) => ({ default: mod.Trino })),
+  "ts-config": () => import("@/registry/icons/file-types/ts-config").then((mod) => ({ default: mod.TsConfig })),
+  "ts-doc": () => import("@/registry/icons/file-types/ts-doc").then((mod) => ({ default: mod.TsDoc })),
+  "type-extension": () => import("@/registry/icons/plugins/cidr/type-extension").then((mod) => ({ default: mod.TypeExtension })),
+  "typed": () => import("@/registry/icons/plugins/scala/typed").then((mod) => ({ default: mod.Typed })),
+  "udfscript": () => import("@/registry/icons/database/udfscript").then((mod) => ({ default: mod.UDFScript })),
+  "ui-form": () => import("@/registry/icons/file-types/ui-form").then((mod) => ({ default: mod.UiForm })),
+  "uncheched-all": () => import("@/registry/icons/plugins/package-checker/uncheched-all").then((mod) => ({ default: mod.UnchechedAll })),
+  "uncheched-all-tree": () => import("@/registry/icons/plugins/package-checker/uncheched-all-tree").then((mod) => ({ default: mod.UnchechedAllTree })),
+  "uncheched-all-tree-outline": () => import("@/registry/icons/plugins/package-checker/uncheched-all-tree-outline").then((mod) => ({ default: mod.UnchechedAllTreeOutline })),
+  "undo": () => import("@/registry/icons/general/general/undo").then((mod) => ({ default: mod.Undo })),
+  "undocumented-task": () => import("@/registry/icons/plugins/ruby/undocumented-task").then((mod) => ({ default: mod.UndocumentedTask })),
+  "unfold": () => import("@/registry/icons/editor-icons/unfold").then((mod) => ({ default: mod.Unfold })),
+  "unfreeze": () => import("@/registry/icons/plugins/cidr/unfreeze").then((mod) => ({ default: mod.Unfreeze })),
+  "unfreeze-all": () => import("@/registry/icons/plugins/cidr/unfreeze-all").then((mod) => ({ default: mod.UnfreezeAll })),
+  "unloaded-module": () => import("@/registry/icons/nodes/unloaded-module").then((mod) => ({ default: mod.UnloadedModule })),
+  "unlocked": () => import("@/registry/icons/general/general/unlocked").then((mod) => ({ default: mod.Unlocked })),
+  "unselect-all": () => import("@/registry/icons/general/actions/unselect-all").then((mod) => ({ default: mod.UnselectAll })),
+  "unshelve": () => import("@/registry/icons/vcs/unshelve").then((mod) => ({ default: mod.Unshelve })),
+  "unspecified-cluster": () => import("@/registry/icons/database/unspecified-cluster").then((mod) => ({ default: mod.UnspecifiedCluster })),
+  "untyped": () => import("@/registry/icons/plugins/scala/untyped").then((mod) => ({ default: mod.Untyped })),
+  "up": () => import("@/registry/icons/general/general/up").then((mod) => ({ default: mod.Up })),
+  "up-folder": () => import("@/registry/icons/nodes/up-folder").then((mod) => ({ default: mod.UpFolder })),
+  "update-database": () => import("@/registry/icons/plugins/jpa/update-database").then((mod) => ({ default: mod.UpdateDatabase })),
+  "update-folders": () => import("@/registry/icons/build/update-folders").then((mod) => ({ default: mod.UpdateFolders })),
+  "update-running-application": () => import("@/registry/icons/plugins/java-ee/update-running-application").then((mod) => ({ default: mod.UpdateRunningApplication })),
+  "upload": () => import("@/registry/icons/general/general/upload").then((mod) => ({ default: mod.Upload })),
+  "user-driver": () => import("@/registry/icons/database/user-driver").then((mod) => ({ default: mod.UserDriver })),
+  "user-group": () => import("@/registry/icons/database/user-group").then((mod) => ({ default: mod.UserGroup })),
+  "user-mapping": () => import("@/registry/icons/database/user-mapping").then((mod) => ({ default: mod.UserMapping })),
+  "ut-plsql": () => import("@/registry/icons/database/ut-plsql").then((mod) => ({ default: mod.UtPLSQL })),
+  "validator": () => import("@/registry/icons/plugins/java-ee/validator").then((mod) => ({ default: mod.Validator })),
+  "value-muted": () => import("@/registry/icons/plugins/cidr/value-muted").then((mod) => ({ default: mod.ValueMuted })),
+  "value-values": () => import("@/registry/icons/plugins/kubernetes/value-values").then((mod) => ({ default: mod.ValueValues })),
+  "variables-tab": () => import("@/registry/icons/debugger/variables-tab").then((mod) => ({ default: mod.VariablesTab })),
+  "vcpkg": () => import("@/registry/icons/plugins/cidr/vcpkg").then((mod) => ({ default: mod.VCPKG })),
+  "vcs/abort": () => import("@/registry/icons/vcs/abort").then((mod) => ({ default: mod.Abort })),
+  "vcs/add-emoji": () => import("@/registry/icons/vcs/add-emoji").then((mod) => ({ default: mod.AddEmoji })),
+  "vcs/apply-not-conflicts": () => import("@/registry/icons/vcs/apply-not-conflicts").then((mod) => ({ default: mod.ApplyNotConflicts })),
+  "vcs/apply-not-conflicts-left": () => import("@/registry/icons/vcs/apply-not-conflicts-left").then((mod) => ({ default: mod.ApplyNotConflictsLeft })),
+  "vcs/apply-not-conflicts-right": () => import("@/registry/icons/vcs/apply-not-conflicts-right").then((mod) => ({ default: mod.ApplyNotConflictsRight })),
+  "vcs/arrow-left-right": () => import("@/registry/icons/vcs/arrow-left-right").then((mod) => ({ default: mod.ArrowLeftRight })),
+  "vcs/branch": () => import("@/registry/icons/vcs/branch").then((mod) => ({ default: mod.Branch })),
+  "vcs/changelist": () => import("@/registry/icons/vcs/changelist").then((mod) => ({ default: mod.Changelist })),
+  "vcs/changes": () => import("@/registry/icons/vcs/changes").then((mod) => ({ default: mod.Changes })),
+  "vcs/checkmark": () => import("@/registry/icons/vcs/checkmark").then((mod) => ({ default: mod.Checkmark })),
+  "vcs/cherry-pick": () => import("@/registry/icons/vcs/cherry-pick").then((mod) => ({ default: mod.CherryPick })),
+  "vcs/comment": () => import("@/registry/icons/vcs/comment").then((mod) => ({ default: mod.Comment })),
+  "vcs/comment-read": () => import("@/registry/icons/vcs/comment-read").then((mod) => ({ default: mod.CommentRead })),
+  "vcs/comment-regular": () => import("@/registry/icons/vcs/comment-regular").then((mod) => ({ default: mod.CommentRegular })),
+  "vcs/comment-resolved": () => import("@/registry/icons/vcs/comment-resolved").then((mod) => ({ default: mod.CommentResolved })),
+  "vcs/comment-unread": () => import("@/registry/icons/vcs/comment-unread").then((mod) => ({ default: mod.CommentUnread })),
+  "vcs/comment-unresolved": () => import("@/registry/icons/vcs/comment-unresolved").then((mod) => ({ default: mod.CommentUnresolved })),
+  "vcs/commit": () => import("@/registry/icons/vcs/commit").then((mod) => ({ default: mod.Commit })),
+  "vcs/compare3-left-middle": () => import("@/registry/icons/vcs/compare3-left-middle").then((mod) => ({ default: mod.Compare3LeftMiddle })),
+  "vcs/compare3-left-right": () => import("@/registry/icons/vcs/compare3-left-right").then((mod) => ({ default: mod.Compare3LeftRight })),
+  "vcs/compare3-middle-right": () => import("@/registry/icons/vcs/compare3-middle-right").then((mod) => ({ default: mod.Compare3MiddleRight })),
+  "vcs/compare4-left-bottom": () => import("@/registry/icons/vcs/compare4-left-bottom").then((mod) => ({ default: mod.Compare4LeftBottom })),
+  "vcs/compare4-left-middle": () => import("@/registry/icons/vcs/compare4-left-middle").then((mod) => ({ default: mod.Compare4LeftMiddle })),
+  "vcs/compare4-left-right": () => import("@/registry/icons/vcs/compare4-left-right").then((mod) => ({ default: mod.Compare4LeftRight })),
+  "vcs/compare4-middle-bottom": () => import("@/registry/icons/vcs/compare4-middle-bottom").then((mod) => ({ default: mod.Compare4MiddleBottom })),
+  "vcs/compare4-middle-right": () => import("@/registry/icons/vcs/compare4-middle-right").then((mod) => ({ default: mod.Compare4MiddleRight })),
+  "vcs/compare4-right-bottom": () => import("@/registry/icons/vcs/compare4-right-bottom").then((mod) => ({ default: mod.Compare4RightBottom })),
+  "vcs/current-branch": () => import("@/registry/icons/vcs/current-branch").then((mod) => ({ default: mod.CurrentBranch })),
+  "vcs/current-branch-favorite": () => import("@/registry/icons/vcs/current-branch-favorite").then((mod) => ({ default: mod.CurrentBranchFavorite })),
+  "vcs/diff": () => import("@/registry/icons/vcs/diff").then((mod) => ({ default: mod.Diff })),
+  "vcs/disable-editing": () => import("@/registry/icons/vcs/disable-editing").then((mod) => ({ default: mod.DisableEditing })),
+  "vcs/fetch": () => import("@/registry/icons/vcs/fetch").then((mod) => ({ default: mod.Fetch })),
+  "vcs/file-unread": () => import("@/registry/icons/vcs/file-unread").then((mod) => ({ default: mod.FileUnread })),
+  "vcs/incoming-update": () => import("@/registry/icons/vcs/incoming-update").then((mod) => ({ default: mod.IncomingUpdate })),
+  "vcs/intelli-sort": () => import("@/registry/icons/vcs/intelli-sort").then((mod) => ({ default: mod.IntelliSort })),
+  "vcs/magic-resolve-toolbar": () => import("@/registry/icons/vcs/magic-resolve-toolbar").then((mod) => ({ default: mod.MagicResolveToolbar })),
+  "vcs/outgoing-push": () => import("@/registry/icons/vcs/outgoing-push").then((mod) => ({ default: mod.OutgoingPush })),
+  "vcs/patch": () => import("@/registry/icons/vcs/patch").then((mod) => ({ default: mod.Patch })),
+  "vcs/push": () => import("@/registry/icons/vcs/push").then((mod) => ({ default: mod.Push })),
+  "vcs/resolve-continue": () => import("@/registry/icons/vcs/resolve-continue").then((mod) => ({ default: mod.ResolveContinue })),
+  "vcs/revert": () => import("@/registry/icons/vcs/revert").then((mod) => ({ default: mod.Revert })),
+  "vcs/skip-commit": () => import("@/registry/icons/vcs/skip-commit").then((mod) => ({ default: mod.SkipCommit })),
+  "vcs/stash": () => import("@/registry/icons/vcs/stash").then((mod) => ({ default: mod.Stash })),
+  "vcs/unshelve": () => import("@/registry/icons/vcs/unshelve").then((mod) => ({ default: mod.Unshelve })),
+  "vcs/update": () => import("@/registry/icons/vcs/update").then((mod) => ({ default: mod.Update })),
+  "vcs/vcs": () => import("@/registry/icons/vcs/vcs").then((mod) => ({ default: mod.Vcs })),
+  "velocity": () => import("@/registry/icons/plugins/velocity/velocity").then((mod) => ({ default: mod.Velocity })),
+  "velocity-plugin-logo": () => import("@/registry/icons/plugins/velocity/velocity-plugin-logo").then((mod) => ({ default: mod.VelocityPluginLogo })),
+  "vertica": () => import("@/registry/icons/database/vertica").then((mod) => ({ default: mod.Vertica })),
+  "vhdl": () => import("@/registry/icons/plugins/cidr/vhdl").then((mod) => ({ default: mod.Vhdl })),
+  "view-breakpoints": () => import("@/registry/icons/run/view-breakpoints").then((mod) => ({ default: mod.ViewBreakpoints })),
+  "view-parameters": () => import("@/registry/icons/database/view-parameters").then((mod) => ({ default: mod.ViewParameters })),
+  "virtual-column": () => import("@/registry/icons/database/virtual-column").then((mod) => ({ default: mod.VirtualColumn })),
+  "virtual-folder": () => import("@/registry/icons/database/virtual-folder").then((mod) => ({ default: mod.VirtualFolder })),
+  "virtual-key": () => import("@/registry/icons/database/virtual-key").then((mod) => ({ default: mod.VirtualKey })),
+  "virtual-view": () => import("@/registry/icons/database/virtual-view").then((mod) => ({ default: mod.VirtualView })),
+  "vite-js": () => import("@/registry/icons/file-types/vite-js").then((mod) => ({ default: mod.ViteJS })),
+  "vitest": () => import("@/registry/icons/file-types/vitest").then((mod) => ({ default: mod.Vitest })),
+  "volume": () => import("@/registry/icons/plugins/kubernetes/volume").then((mod) => ({ default: mod.Volume })),
+  "vue-js": () => import("@/registry/icons/file-types/vue-js").then((mod) => ({ default: mod.VueJs })),
+  "warehouse": () => import("@/registry/icons/database/warehouse").then((mod) => ({ default: mod.Warehouse })),
+  "warning": () => import("@/registry/icons/general/status/warning").then((mod) => ({ default: mod.Warning })),
+  "warning-dialog": () => import("@/registry/icons/general/status/warning-dialog").then((mod) => ({ default: mod.WarningDialog })),
+  "warning-introduction": () => import("@/registry/icons/nodes/warning-introduction").then((mod) => ({ default: mod.WarningIntroduction })),
+  "warning-outline": () => import("@/registry/icons/general/status/warning-outline").then((mod) => ({ default: mod.WarningOutline })),
+  "warning-point": () => import("@/registry/icons/plugins/dart/warning-point").then((mod) => ({ default: mod.WarningPoint })),
+  "watch": () => import("@/registry/icons/run/watch").then((mod) => ({ default: mod.Watch })),
+  "watch-last-return-value": () => import("@/registry/icons/debugger/watch-last-return-value").then((mod) => ({ default: mod.WatchLastReturnValue })),
+  "web": () => import("@/registry/icons/general/tool-windows/web").then((mod) => ({ default: mod.Web })),
+  "web-app": () => import("@/registry/icons/run-configurations/web-app").then((mod) => ({ default: mod.WebApp })),
+  "web-artifact": () => import("@/registry/icons/plugins/java-ee/web-artifact").then((mod) => ({ default: mod.WebArtifact })),
+  "web-inspector": () => import("@/registry/icons/general/tool-windows/web-inspector").then((mod) => ({ default: mod.WebInspector })),
+  "web-module": () => import("@/registry/icons/plugins/java-ee/web-module").then((mod) => ({ default: mod.WebModule })),
+  "web-module-group": () => import("@/registry/icons/plugins/java-ee/web-module-group").then((mod) => ({ default: mod.WebModuleGroup })),
+  "web-overlay": () => import("@/registry/icons/plugins/spring/web-overlay").then((mod) => ({ default: mod.WebOverlay })),
+  "web-resources": () => import("@/registry/icons/nodes/web-resources").then((mod) => ({ default: mod.WebResources })),
+  "web-root-file": () => import("@/registry/icons/plugins/ruby/web-root-file").then((mod) => ({ default: mod.WebRootFile })),
+  "web-server": () => import("@/registry/icons/general/tool-windows/web-server").then((mod) => ({ default: mod.WebServer })),
+  "web-service": () => import("@/registry/icons/plugins/java-ee/web-service").then((mod) => ({ default: mod.WebService })),
+  "web-service-client": () => import("@/registry/icons/plugins/java-ee/web-service-client").then((mod) => ({ default: mod.WebServiceClient })),
+  "web-xml": () => import("@/registry/icons/plugins/java-ee/web-xml").then((mod) => ({ default: mod.WebXml })),
+  "werf": () => import("@/registry/icons/plugins/kubernetes/werf").then((mod) => ({ default: mod.Werf })),
+  "west": () => import("@/registry/icons/plugins/velocity/west").then((mod) => ({ default: mod.West })),
+  "west-tool-window": () => import("@/registry/icons/general/tool-windows/west-tool-window").then((mod) => ({ default: mod.WestToolWindow })),
+  "workloads": () => import("@/registry/icons/plugins/kubernetes/workloads").then((mod) => ({ default: mod.Workloads })),
+  "workspace": () => import("@/registry/icons/file-types/workspace").then((mod) => ({ default: mod.Workspace })),
+  "write-access": () => import("@/registry/icons/editor-icons/write-access").then((mod) => ({ default: mod.WriteAccess })),
+  "write-review": () => import("@/registry/icons/general/actions/write-review").then((mod) => ({ default: mod.WriteReview })),
+  "writer": () => import("@/registry/icons/plugins/ruby/writer").then((mod) => ({ default: mod.Writer })),
+  "writerside": () => import("@/registry/icons/general/tool-windows/writerside").then((mod) => ({ default: mod.Writerside })),
+  "writerside-preview": () => import("@/registry/icons/general/tool-windows/writerside-preview").then((mod) => ({ default: mod.WritersidePreview })),
+  "wsdl": () => import("@/registry/icons/file-types/wsdl").then((mod) => ({ default: mod.Wsdl })),
+  "xhtml": () => import("@/registry/icons/file-types/xhtml").then((mod) => ({ default: mod.Xhtml })),
+  "xml": () => import("@/registry/icons/file-types/xml").then((mod) => ({ default: mod.Xml })),
+  "xml-service": () => import("@/registry/icons/plugins/java-ee/xml-service").then((mod) => ({ default: mod.XmlService })),
+  "xpath": () => import("@/registry/icons/file-types/xpath").then((mod) => ({ default: mod.Xpath })),
+  "xsd": () => import("@/registry/icons/file-types/xsd").then((mod) => ({ default: mod.Xsd })),
+  "xsl": () => import("@/registry/icons/file-types/xsl").then((mod) => ({ default: mod.Xsl })),
+  "yaml": () => import("@/registry/icons/file-types/yaml").then((mod) => ({ default: mod.Yaml })),
+  "yarn": () => import("@/registry/icons/file-types/yarn").then((mod) => ({ default: mod.Yarn })),
+  "yarn-lock": () => import("@/registry/icons/file-types/yarn-lock").then((mod) => ({ default: mod.YarnLock })),
+  "yugabyte": () => import("@/registry/icons/database/yugabyte").then((mod) => ({ default: mod.Yugabyte })),
+  "zeppelin": () => import("@/registry/icons/plugins/bdt/zeppelin").then((mod) => ({ default: mod.Zeppelin })),
+  "zeus": () => import("@/registry/icons/plugins/ruby/zeus").then((mod) => ({ default: mod.Zeus })),
+  "zoom-in": () => import("@/registry/icons/editor-icons/zoom-in").then((mod) => ({ default: mod.ZoomIn })),
+  "zoom-out": () => import("@/registry/icons/editor-icons/zoom-out").then((mod) => ({ default: mod.ZoomOut })),
+  "сode-assistant-class": () => import("@/registry/icons/plugins/cidr/сode-assistant-class").then((mod) => ({ default: mod.СodeAssistantClass })),
+  "сode-assistant-class-extension": () => import("@/registry/icons/plugins/cidr/сode-assistant-class-extension").then((mod) => ({ default: mod.СodeAssistantClassExtension })),
+  "сode-assistant-macro": () => import("@/registry/icons/plugins/cidr/сode-assistant-macro").then((mod) => ({ default: mod.СodeAssistantMacro })),
+  "сode-assistant-member": () => import("@/registry/icons/plugins/cidr/сode-assistant-member").then((mod) => ({ default: mod.СodeAssistantMember })),
+  "сode-assistant-member-optional": () => import("@/registry/icons/plugins/cidr/сode-assistant-member-optional").then((mod) => ({ default: mod.СodeAssistantMemberOptional })),
+  "сode-assistant-namespace": () => import("@/registry/icons/plugins/cidr/сode-assistant-namespace").then((mod) => ({ default: mod.СodeAssistantNamespace })),
+  "сore-dump-debug": () => import("@/registry/icons/plugins/cidr/сore-dump-debug").then((mod) => ({ default: mod.СoreDumpDebug })),
+  "сrun-configuration": () => import("@/registry/icons/plugins/cidr/сrun-configuration").then((mod) => ({ default: mod.СRunConfiguration })),
 };
