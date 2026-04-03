@@ -39,5 +39,11 @@ Treat generated outputs (`.next/`, `__registry__/`, `public/r/`) as build artifa
 ## Commits
 
 - Conventional Commits (enforced by commitlint): `feat:`, `fix:`, `refactor:`, `docs:`, `chore:`
+- Commit message format: use a one-line conventional-commit subject, then a blank line, then reference the related issue with `Closes #<number>` (or `Fixes #<number>`, `Resolves #<number>`). Example:
+  ```
+  feat: add AlertDialog component
+
+  Closes #11
+  ```
 - Pre-push hook runs `pnpm lint && pnpm build`
 - When changing components/primitives/icons, include related docs/demo updates and run `pnpm registry:build`

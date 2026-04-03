@@ -4,10 +4,45 @@ import * as React from 'react';
 import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
 
 import { cn } from '@workspace/ui/lib/utils';
+import { buttonVariants } from '@/registry/components/button';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/registry/components/tooltip';
 
 const AlertDialog = AlertDialogPrimitive.Root;
 
-const AlertDialogTrigger = AlertDialogPrimitive.Trigger;
+type AlertDialogTriggerProps = React.ComponentProps<
+  typeof AlertDialogPrimitive.Trigger
+> & {
+  tooltip?: string;
+};
+
+function AlertDialogTrigger({
+  className,
+  tooltip,
+  ...props
+}: AlertDialogTriggerProps) {
+  const trigger = (
+    <AlertDialogPrimitive.Trigger
+      data-slot="alert-dialog-trigger"
+      className={cn(buttonVariants({ variant: 'secondary' }), className)}
+      {...props}
+    />
+  );
+
+  if (!tooltip) {
+    return trigger;
+  }
+
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>{trigger}</TooltipTrigger>
+      <TooltipContent>{tooltip}</TooltipContent>
+    </Tooltip>
+  );
+}
 
 const AlertDialogPortal = AlertDialogPrimitive.Portal;
 
@@ -159,4 +194,5 @@ export {
   AlertDialogDescription,
   AlertDialogAction,
   AlertDialogCancel,
+  type AlertDialogTriggerProps,
 };

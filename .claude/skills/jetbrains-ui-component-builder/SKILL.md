@@ -27,6 +27,43 @@ Follow the same pattern as `buttons` and `checkbox`:
 - Only create `index.css` when the component needs CSS custom properties, keyframe animations, or complex pseudo-element styles that cannot be expressed as utility classes.
 - Non-color styles (layout/spacing/size/position/motion) always stay in TSX class strings.
 
+## Trigger Component Pattern
+
+Dialog-like components (AlertDialog, Alert, etc.) should wrap their Trigger primitive as a **named function component** (not a simple alias). Follow this pattern:
+
+```tsx
+type AlertDialogTriggerProps = React.ComponentProps<typeof AlertDialogPrimitive.Trigger> & {
+  tooltip?: string;
+};
+
+function AlertDialogTrigger({ className, tooltip, ...props }: AlertDialogTriggerProps) {
+  const trigger = (
+    <AlertDialogPrimitive.Trigger
+      data-slot="alert-dialog-trigger"
+      className={cn(buttonVariants({ variant: 'secondary' }), className)}
+      {...props}
+    />
+  );
+
+  if (!tooltip) {
+    return trigger;
+  }
+
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>{trigger}</TooltipTrigger>
+      <TooltipContent>{tooltip}</TooltipContent>
+    </Tooltip>
+  );
+}
+```
+
+Key points:
+- Add `data-slot="<component>-trigger"` for CSS targeting.
+- Use `buttonVariants({ variant: 'secondary' })` as default styling.
+- Support optional `tooltip` prop that wraps the trigger in a `<Tooltip>`.
+- Export the props type alongside the component (e.g. `type AlertDialogTriggerProps`).
+
 ## Workflow A: Add A New Component
 
 1. Define component contract from Figma.
