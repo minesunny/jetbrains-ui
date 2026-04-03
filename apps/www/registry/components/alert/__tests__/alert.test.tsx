@@ -40,7 +40,7 @@ describe('Alert context props', () => {
       </Alert>,
     );
 
-    const footer = document.querySelector('[data-slot="jb-alert-footer"]');
+    const footer = document.querySelector('[data-slot="alert-footer"]');
     expect(footer?.querySelector('svg')).toBeInTheDocument();
   });
 
@@ -60,7 +60,7 @@ describe('Alert context props', () => {
     expect(
       screen.queryByRole('checkbox', { name: 'Do not ask again' }),
     ).not.toBeInTheDocument();
-    const footer = document.querySelector('[data-slot="jb-alert-footer"]');
+    const footer = document.querySelector('[data-slot="alert-footer"]');
     expect(footer?.querySelector('svg')).not.toBeInTheDocument();
   });
 
@@ -77,15 +77,16 @@ describe('Alert context props', () => {
       </Alert>,
     );
 
-    const header = document.querySelector('[data-slot="jb-alert-header"]');
-    const footer = document.querySelector('[data-slot="jb-alert-footer"]');
+    const header = document.querySelector('[data-slot="alert-header"]');
+    const footer = document.querySelector('[data-slot="alert-footer"]');
 
-    expect(header).toHaveClass('gap-2');
+    expect(header).toHaveClass('gap-ui-control');
     expect(footer).toHaveClass('absolute');
-    expect(footer).toHaveClass('bottom-[13px]');
-    expect(footer).toHaveClass('left-[19px]');
-    expect(footer).toHaveClass('right-[19px]');
+    expect(footer).toHaveClass('bottom-ui-alert-footer');
+    expect(footer).toHaveClass('left-ui-alert-footer');
+    expect(footer).toHaveClass('right-ui-alert-footer');
     expect(footer).toHaveClass('h-10');
     expect(footer).toHaveClass('shrink-0');
+    expect(footer).toHaveClass('gap-ui-actions');
   });
 });

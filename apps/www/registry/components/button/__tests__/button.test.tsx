@@ -24,12 +24,9 @@ describe('Button', () => {
     ).toBeInTheDocument();
   });
 
-  it('renders data-slot="jb-button"', () => {
+  it('renders data-slot="button"', () => {
     render(<Button>Test</Button>);
-    expect(screen.getByRole('button')).toHaveAttribute(
-      'data-slot',
-      'jb-button',
-    );
+    expect(screen.getByRole('button')).toHaveAttribute('data-slot', 'button');
   });
 
   it('uses a single default size without data-size attribute', () => {
@@ -38,20 +35,21 @@ describe('Button', () => {
     expect(button).not.toHaveAttribute('data-size');
     expect(button).not.toHaveAttribute('data-slim');
     expect(button.className).toContain('h-7');
+    expect(button.className).toContain('text-ui-default');
   });
 
   it('applies primary variant by default', () => {
     render(<Button>Primary</Button>);
     const btn = screen.getByRole('button');
     expect(btn).toHaveAttribute('data-variant', 'primary');
-    expect(btn.className).toContain('jb-btn--primary');
+    expect(btn.className).toContain('bg-blue-4');
   });
 
   it('applies secondary variant', () => {
     render(<Button variant="secondary">Secondary</Button>);
     const btn = screen.getByRole('button');
     expect(btn).toHaveAttribute('data-variant', 'secondary');
-    expect(btn.className).toContain('jb-btn--secondary');
+    expect(btn.className).toContain('bg-transparent');
   });
 
   it('passes className through', () => {
@@ -111,7 +109,7 @@ describe('Button', () => {
     const link = screen.getByRole('link', { name: 'Link Button' });
     expect(link).toBeInTheDocument();
     expect(link).toHaveAttribute('href', '/test');
-    expect(link).toHaveAttribute('data-slot', 'jb-button');
+    expect(link).toHaveAttribute('data-slot', 'button');
   });
 
   it('forwards additional HTML attributes', () => {
@@ -135,17 +133,17 @@ describe('buttonVariants', () => {
 
   it('includes primary-specific classes for primary variant', () => {
     const result = buttonVariants({ variant: 'primary' });
-    expect(result).toContain('jb-btn--primary');
+    expect(result).toContain('bg-blue-4');
   });
 
   it('includes secondary-specific classes for secondary variant', () => {
     const result = buttonVariants({ variant: 'secondary' });
-    expect(result).toContain('jb-btn--secondary');
+    expect(result).toContain('bg-transparent');
   });
 
   it('defaults to primary variant when no variant specified', () => {
     const result = buttonVariants({});
-    expect(result).toContain('jb-btn--primary');
+    expect(result).toContain('bg-blue-4');
   });
 
   it('uses slim size classes when slim is true', () => {

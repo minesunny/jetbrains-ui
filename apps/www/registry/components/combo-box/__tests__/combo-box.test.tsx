@@ -48,7 +48,9 @@ async function openComboBox(user: ReturnType<typeof userEvent.setup>) {
 describe('ComboBox', () => {
   it('renders trigger', () => {
     renderComboBox();
-    expect(screen.getByRole('combobox')).toBeInTheDocument();
+    const trigger = screen.getByRole('combobox');
+    expect(trigger).toBeInTheDocument();
+    expect(trigger.className).toContain('text-ui-default');
   });
 
   it('shows placeholder text', () => {
@@ -211,7 +213,9 @@ describe('ComboBoxTrigger', () => {
       </ComboBox>,
     );
 
-    expect(screen.getByRole('combobox')).toHaveClass('jb-cbx-trigger--size-md');
+    expect(screen.getByRole('combobox')).toHaveClass(
+      'combo-box-trigger--size-md',
+    );
   });
 });
 

@@ -31,6 +31,7 @@ dist
 
 # Registry Artifacts
 apps/www/__registry__/index.tsx
+apps/www/public/r/
 
 
 # Debug

@@ -43,15 +43,13 @@ describe('Resizable', () => {
 
     expect(
       screen.getByText('Panel A').closest('[data-slot="resizable-panel"]'),
-    ).toHaveClass('jb-resizable-panel');
+    ).toHaveClass('resizable-panel');
 
     const handle = screen.getByRole('separator');
     expect(handle).toHaveAttribute('data-slot', 'resizable-handle');
-    expect(handle).toHaveClass('jb-resizable-handle');
+    expect(handle).toHaveClass('resizable-handle');
     expect(handle).toHaveAttribute('data-with-handle', 'true');
-    expect(
-      handle.querySelector('.jb-resizable-handle__grip'),
-    ).toBeInTheDocument();
+    expect(handle.querySelector('.resizable-handle__grip')).toBeInTheDocument();
   });
 
   it('renders panel content directly without the scroll viewport wrapper', () => {
@@ -73,7 +71,7 @@ describe('Resizable', () => {
     const handle = screen.getByRole('separator');
     expect(screen.getByText('Custom Grip')).toBeInTheDocument();
     expect(
-      handle.querySelector('.jb-resizable-handle__grip'),
+      handle.querySelector('.resizable-handle__grip'),
     ).not.toBeInTheDocument();
   });
 

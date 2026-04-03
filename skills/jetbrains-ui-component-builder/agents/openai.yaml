@@ -1,4 +1,0 @@
-interface:
-  display_name: "JetBrains UI Component Builder"
-  short_description: "Implement JetBrains UI registry components and docs."
-  default_prompt: "Use $jetbrains-ui-component-builder to implement or update a jetbrains-ui component with registry, demo, and bilingual docs."

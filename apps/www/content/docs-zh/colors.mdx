@@ -1,0 +1,67 @@
+---
+title: 颜色
+description: JetBrains UI 的颜色层级、语义 token 和主题实现建议。
+---
+
+## 来源
+
+- Figma: [Int UI Kit (Community) - UI Colors](https://www.figma.com/design/Nvs9fjI2tnvgXIHlHtT8yz/Int-UI-Kit--Community-?node-id=7128-43811&t=a8XXYFCWgPGD6mk5-4)
+- 节点：`UI Colors` (`7128:43811`)
+- 官方参考：[Platform Theme Colors](https://plugins.jetbrains.com/docs/intellij/platform-theme-colors.html)
+- 最后校对：2026 年 3 月 28 日
+
+JetBrains UI 的颜色系统可以分成两层：
+
+1. 调色板 token：例如 `gray`、`blue`、`green`、`yellow`、`red`、`orange`、`purple`、`teal` 这类编号色阶。
+2. 语义 token：例如 `--foreground`、`--input-bg`、`--alert-info-border`、`--tree-item-selected-bg` 这类直接描述 UI 角色的变量。
+
+## 调色板规则
+
+- 不要把编号 token 当成固定品牌色。相同 token 名在亮色和暗色主题下可能对应不同十六进制值。
+- `gray` 用于文本、背景、分隔线、边框和中性表面。
+- `blue` 用于主操作、链接、焦点环和选中态。
+- `green`、`yellow`、`red` 分别对应成功、警告、错误或危险态。
+- `orange`、`purple`、`teal` 更适合作为辅助强调色或分类色，而不是默认交互主色。
+
+## 调色板家族
+
+| 家族     | Figma 里的典型用途                               |
+| -------- | ------------------------------------------------ |
+| `gray`   | 主次文本、提示、分隔线、工具窗口表面、编辑器背景 |
+| `blue`   | 主按钮、链接、焦点描边、选中项、激活图标         |
+| `green`  | 成功状态和确认反馈                               |
+| `yellow` | 警告状态和注意提示                               |
+| `red`    | 错误状态、危险操作和错误图标                     |
+| `orange` | 暖色次级强调                                     |
+| `purple` | 强调或特定分类语义                               |
+| `teal`   | 强调或特定分类语义                               |
+
+## 组件中优先使用语义 Token
+
+IntelliJ 官方更推荐使用具名、可适配主题的颜色，而不是在组件里直接写死颜色值。在这个仓库里可以理解为：
+
+- 可复用组件优先使用语义 token，例如 `bg-input-bg`、`text-input-text`、`border-alert-info-border`。
+- 只有在视觉确实要直接对齐某个色板色阶时，才使用原始调色板 token，例如 `bg-blue-4`、`text-gray-14`。
+- 亮色和暗色的差异应该尽量放在 token 定义层，而不是散落在每个组件里。
+
+## 本仓库中的实现
+
+当前 token 分两层落地：
+
+- 原始调色板变量定义在 [tokens.css](/Users/mine/WebstormProjects/jetbrains-ui/apps/www/registry/styles/jetbrains/tokens.css)。
+- Tailwind 风格的 token utility 映射定义在 [globals.css](/Users/mine/WebstormProjects/jetbrains-ui/apps/www/app/globals.css)。
+
+因此既可以写调色板类，也可以写语义类：
+
+```tsx
+<div className="bg-blue-4 text-gray-14" />
+<div className="border-input-border bg-input-bg text-input-text" />
+<div className="focus-visible:ring-2 focus-visible:ring-input-ring" />
+```
+
+## 建议
+
+- 组件代码优先使用语义 token。
+- 调色板 token 更适合文档示例、状态色块或明确的色板驱动视觉。
+- 不要在组件里直接写十六进制颜色；如果这个值重要，先把它提升成 token。
+- 新增颜色映射时一定同时检查亮色和暗色主题。

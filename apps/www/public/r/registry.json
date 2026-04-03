@@ -38,11 +38,6 @@
           "path": "registry/components/alert/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/alert/index.tsx"
-        },
-        {
-          "path": "registry/components/alert/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/alert/index.css"
         }
       ],
       "meta": {
@@ -84,16 +79,6 @@
           "path": "registry/components/button/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/buttons/index.tsx"
-        },
-        {
-          "path": "registry/components/button/button.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/buttons/button.tsx"
-        },
-        {
-          "path": "registry/components/button/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/buttons/index.css"
         }
       ],
       "meta": {
@@ -154,11 +139,6 @@
           "path": "registry/components/checkbox/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/checkbox/index.tsx"
-        },
-        {
-          "path": "registry/components/checkbox/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/checkbox/index.css"
         }
       ],
       "meta": {
@@ -217,11 +197,6 @@
           "path": "registry/components/combo-box/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/combo-box/index.tsx"
-        },
-        {
-          "path": "registry/components/combo-box/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/combo-box/index.css"
         }
       ],
       "meta": {
@@ -279,11 +254,6 @@
           "path": "registry/components/context-menu/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/context-menu/index.tsx"
-        },
-        {
-          "path": "registry/components/context-menu/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/context-menu/index.css"
         }
       ],
       "meta": {
@@ -359,11 +329,6 @@
           "path": "registry/components/input/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/input/index.tsx"
-        },
-        {
-          "path": "registry/components/input/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/input/index.css"
         }
       ],
       "meta": {
@@ -458,11 +423,6 @@
           "path": "registry/components/radio/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/radio/index.tsx"
-        },
-        {
-          "path": "registry/components/radio/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/radio/index.css"
         }
       ],
       "meta": {
@@ -514,11 +474,6 @@
           "path": "registry/components/resizable/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/resizable/index.tsx"
-        },
-        {
-          "path": "registry/components/resizable/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/resizable/index.css"
         }
       ],
       "meta": {
@@ -711,11 +666,6 @@
           "path": "registry/components/tabs/dynamic-tabs.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/tabs/dynamic-tabs.tsx"
-        },
-        {
-          "path": "registry/components/tabs/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/tabs/index.css"
         }
       ],
       "meta": {
@@ -791,6 +741,44 @@
       }
     },
     {
+      "name": "toolbar",
+      "type": "registry:ui",
+      "title": "Toolbar",
+      "description": "JetBrains-style toolbar primitives built from Toolbar and ToolbarItem.",
+      "dependencies": [],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/toolbar/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/toolbar/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "toolbar",
+          "action bar",
+          "jetbrains",
+          "ui",
+          "component"
+        ],
+        "category": "navigation",
+        "docs": {
+          "description": "JetBrains-style toolbar primitives with a minimal API: direction on Toolbar and direct separator orientation on ToolbarItem.",
+          "features": [
+            "Only two primitives: Toolbar and ToolbarItem",
+            "Single direction entry point: horizontal, vertical, or floating",
+            "Direct separator orientation on each item using horizontal or vertical",
+            "Figma-aligned 26px item geometry and compact spacing",
+            "Accessible toolbar semantics and focus states",
+            "Supports light and dark themes"
+          ]
+        }
+      }
+    },
+    {
       "name": "tooltip",
       "type": "registry:ui",
       "title": "Tooltip",
@@ -856,11 +844,6 @@
           "target": "components/jetbrains-ui/tree/tree/index.tsx"
         },
         {
-          "path": "registry/components/tree/tree/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/tree/tree/index.css"
-        },
-        {
           "path": "registry/components/tree/dynamic-tree/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/tree/dynamic-tree/index.tsx"
@@ -869,11 +852,6 @@
           "path": "registry/components/tree/dynamic-tree/feature.ts",
           "type": "registry:lib",
           "target": "components/jetbrains-ui/tree/dynamic-tree/feature.ts"
-        },
-        {
-          "path": "registry/components/tree/dynamic-tree/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/tree/dynamic-tree/index.css"
         }
       ],
       "meta": {
@@ -924,11 +902,6 @@
           "path": "registry/components/tree/dynamic-tree/feature.ts",
           "type": "registry:lib",
           "target": "components/jetbrains-ui/tree/dynamic-tree/feature.ts"
-        },
-        {
-          "path": "registry/components/tree/dynamic-tree/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/tree/dynamic-tree/index.css"
         }
       ],
       "meta": {
@@ -975,11 +948,6 @@
           "path": "registry/components/tree/tree/index.tsx",
           "type": "registry:ui",
           "target": "components/jetbrains-ui/tree/tree/index.tsx"
-        },
-        {
-          "path": "registry/components/tree/tree/index.css",
-          "type": "registry:style",
-          "target": "components/jetbrains-ui/tree/tree/index.css"
         }
       ],
       "meta": {
@@ -1484,6 +1452,24 @@
           }
         }
       }
+    },
+    {
+      "name": "demo-toolbar",
+      "type": "registry:ui",
+      "title": "Toolbar Demo",
+      "description": "Demo showing toolbar variants and compact actions.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@jetbrains-ui/toolbar"
+      ],
+      "files": [
+        {
+          "path": "registry/demo/components/toolbar/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/demo/toolbar.tsx"
+        }
+      ],
+      "meta": {}
     },
     {
       "name": "demo-tooltip",

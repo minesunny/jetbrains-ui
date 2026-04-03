@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 
-import { Tree, TreeItem } from '@/registry/components/tree';
+import { Tree, TreeItem } from '@/registry/components/tree/tree';
 import {
   Ignored,
   Markdown,

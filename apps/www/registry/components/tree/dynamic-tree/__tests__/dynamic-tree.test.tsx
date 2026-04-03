@@ -36,7 +36,7 @@ type DynamicTreeLoadedItem<
   data: TItem;
 };
 
-const DYNAMIC_TREE_ROOT_ITEM_ID = '__jb-dynamic-tree-test-root__';
+const DYNAMIC_TREE_ROOT_ITEM_ID = '__dynamic-tree-test-root__';
 
 function createLoadData(fixture: TreeFixture) {
   return vi.fn(
@@ -163,7 +163,7 @@ describe('DynamicTree', () => {
     );
 
     const scrollArea = document.querySelector(
-      '[data-slot="jb-tree-scroll-area"]',
+      '[data-slot="tree-scroll-area"]',
     ) as HTMLElement;
 
     expect(scrollArea.style.width).toBe('260px');
@@ -191,7 +191,7 @@ describe('DynamicTree', () => {
 
     const disclosure = await waitFor(() => {
       const element = document.querySelector(
-        '[data-slot="jb-tree-item-disclosure"][data-value="src"]',
+        '[data-slot="tree-item-disclosure"][data-value="src"]',
       ) as HTMLButtonElement | null;
 
       expect(element).toBeTruthy();
@@ -239,7 +239,7 @@ describe('DynamicTree', () => {
     await screen.findByText('src');
 
     const disclosure = document.querySelector(
-      '[data-slot="jb-tree-item-disclosure"][data-value="src"]',
+      '[data-slot="tree-item-disclosure"][data-value="src"]',
     ) as HTMLButtonElement;
 
     await user.click(disclosure);
@@ -265,7 +265,7 @@ describe('DynamicTree', () => {
     await screen.findByText('src');
 
     const disclosure = document.querySelector(
-      '[data-slot="jb-tree-item-disclosure"][data-value="src"]',
+      '[data-slot="tree-item-disclosure"][data-value="src"]',
     ) as HTMLButtonElement;
 
     await user.click(disclosure);
@@ -273,7 +273,7 @@ describe('DynamicTree', () => {
     await screen.findByText('index.tsx');
 
     const indexItem = document.querySelector(
-      '[data-slot="jb-tree-item-button"][data-value="index"]',
+      '[data-slot="tree-item-button"][data-value="index"]',
     ) as HTMLDivElement;
 
     await user.click(indexItem);
@@ -310,7 +310,7 @@ describe('DynamicTree', () => {
     await screen.findByText('README.md');
 
     const readmeItem = document.querySelector(
-      '[data-slot="jb-tree-item-button"][data-value="readme"]',
+      '[data-slot="tree-item-button"][data-value="readme"]',
     ) as HTMLDivElement;
 
     expect(readmeItem).toHaveAttribute('data-disabled', 'true');
@@ -339,7 +339,7 @@ describe('DynamicTree', () => {
     await screen.findByText('src');
 
     const srcItem = document.querySelector(
-      '[data-slot="jb-tree-item-button"][data-value="src"]',
+      '[data-slot="tree-item-button"][data-value="src"]',
     ) as HTMLDivElement;
 
     fireEvent.contextMenu(srcItem);
@@ -361,7 +361,7 @@ describe('DynamicTree', () => {
     await screen.findByText('src');
 
     const srcItem = document.querySelector(
-      '[data-slot="jb-tree-item-button"][data-value="src"]',
+      '[data-slot="tree-item-button"][data-value="src"]',
     ) as HTMLDivElement;
 
     fireEvent.contextMenu(srcItem);
@@ -381,7 +381,7 @@ describe('DynamicTree', () => {
     await screen.findByText('src');
 
     const srcItem = document.querySelector(
-      '[data-slot="jb-tree-item-button"][data-value="src"]',
+      '[data-slot="tree-item-button"][data-value="src"]',
     ) as HTMLDivElement;
 
     fireEvent.contextMenu(srcItem);
@@ -401,14 +401,14 @@ describe('DynamicTree', () => {
     await screen.findByText('src');
 
     const disclosure = document.querySelector(
-      '[data-slot="jb-tree-item-disclosure"][data-value="src"]',
+      '[data-slot="tree-item-disclosure"][data-value="src"]',
     ) as HTMLButtonElement;
 
     await user.click(disclosure);
     expect(await screen.findByText('index.tsx')).toBeInTheDocument();
 
     const srcItem = document.querySelector(
-      '[data-slot="jb-tree-item-button"][data-value="src"]',
+      '[data-slot="tree-item-button"][data-value="src"]',
     ) as HTMLDivElement;
 
     fireEvent.contextMenu(srcItem);
@@ -440,14 +440,14 @@ describe('DynamicTree', () => {
     await screen.findByText('src');
 
     let disclosure = document.querySelector(
-      '[data-slot="jb-tree-item-disclosure"][data-value="src"]',
+      '[data-slot="tree-item-disclosure"][data-value="src"]',
     ) as HTMLButtonElement;
 
     await user.click(disclosure);
     expect(await screen.findByText('index.tsx')).toBeInTheDocument();
 
     const srcItem = document.querySelector(
-      '[data-slot="jb-tree-item-button"][data-value="src"]',
+      '[data-slot="tree-item-button"][data-value="src"]',
     ) as HTMLDivElement;
 
     fireEvent.contextMenu(srcItem);
@@ -460,7 +460,7 @@ describe('DynamicTree', () => {
     nextFixture.children.src = ['util'];
 
     disclosure = document.querySelector(
-      '[data-slot="jb-tree-item-disclosure"][data-value="src"]',
+      '[data-slot="tree-item-disclosure"][data-value="src"]',
     ) as HTMLButtonElement;
 
     await user.click(disclosure);

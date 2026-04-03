@@ -11,16 +11,6 @@
       "path": "registry/components/button/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/buttons/index.tsx"
-    },
-    {
-      "path": "registry/components/button/button.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/buttons/button.tsx"
-    },
-    {
-      "path": "registry/components/button/index.css",
-      "type": "registry:style",
-      "target": "components/jetbrains-ui/buttons/index.css"
     }
   ],
   "meta": {

@@ -22,6 +22,9 @@ export type I18nMessages = {
     title: string;
     introduction: string;
     installation: string;
+    colors: string;
+    typography: string;
+    spacing: string;
     accessibility: string;
     mcp: string;
     troubleshooting: string;
@@ -65,6 +68,9 @@ const MESSAGES: Record<Locale, I18nMessages> = {
       title: 'Guide',
       introduction: 'Introduction',
       installation: 'Installation',
+      colors: 'Colors',
+      typography: 'Typography',
+      spacing: 'Spacing',
       accessibility: 'Accessibility',
       mcp: 'MCP',
       troubleshooting: 'Troubleshooting',
@@ -106,6 +112,9 @@ const MESSAGES: Record<Locale, I18nMessages> = {
       title: '指南',
       introduction: '介绍',
       installation: '安装',
+      colors: '颜色',
+      typography: '排版',
+      spacing: '间距',
       accessibility: '无障碍',
       mcp: 'MCP',
       troubleshooting: '故障排查',

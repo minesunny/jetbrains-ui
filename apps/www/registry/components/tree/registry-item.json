@@ -26,11 +26,6 @@
       "target": "components/jetbrains-ui/tree/tree/index.tsx"
     },
     {
-      "path": "registry/components/tree/tree/index.css",
-      "type": "registry:style",
-      "target": "components/jetbrains-ui/tree/tree/index.css"
-    },
-    {
       "path": "registry/components/tree/dynamic-tree/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/tree/dynamic-tree/index.tsx"
@@ -39,11 +34,6 @@
       "path": "registry/components/tree/dynamic-tree/feature.ts",
       "type": "registry:lib",
       "target": "components/jetbrains-ui/tree/dynamic-tree/feature.ts"
-    },
-    {
-      "path": "registry/components/tree/dynamic-tree/index.css",
-      "type": "registry:style",
-      "target": "components/jetbrains-ui/tree/dynamic-tree/index.css"
     }
   ],
   "meta": {

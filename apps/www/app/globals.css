@@ -238,6 +238,322 @@
 
   --color-sidebar-ring: var(--sidebar-ring);
 
+  /* JetBrains Palette */
+  --color-gray-1: var(--gray-1);
+  --color-gray-2: var(--gray-2);
+  --color-gray-3: var(--gray-3);
+  --color-gray-4: var(--gray-4);
+  --color-gray-5: var(--gray-5);
+  --color-gray-6: var(--gray-6);
+  --color-gray-7: var(--gray-7);
+  --color-gray-8: var(--gray-8);
+  --color-gray-9: var(--gray-9);
+  --color-gray-10: var(--gray-10);
+  --color-gray-11: var(--gray-11);
+  --color-gray-12: var(--gray-12);
+  --color-gray-13: var(--gray-13);
+  --color-gray-14: var(--gray-14);
+
+  --color-blue-1: var(--blue-1);
+  --color-blue-2: var(--blue-2);
+  --color-blue-3: var(--blue-3);
+  --color-blue-4: var(--blue-4);
+  --color-blue-5: var(--blue-5);
+  --color-blue-6: var(--blue-6);
+  --color-blue-7: var(--blue-7);
+  --color-blue-8: var(--blue-8);
+  --color-blue-9: var(--blue-9);
+  --color-blue-10: var(--blue-10);
+  --color-blue-11: var(--blue-11);
+  --color-blue-12: var(--blue-12);
+  --color-blue-13: var(--blue-13);
+
+  --color-green-1: var(--green-1);
+  --color-green-2: var(--green-2);
+  --color-green-3: var(--green-3);
+  --color-green-4: var(--green-4);
+  --color-green-5: var(--green-5);
+  --color-green-6: var(--green-6);
+  --color-green-7: var(--green-7);
+  --color-green-8: var(--green-8);
+  --color-green-9: var(--green-9);
+  --color-green-10: var(--green-10);
+  --color-green-11: var(--green-11);
+
+  --color-yellow-1: var(--yellow-1);
+  --color-yellow-2: var(--yellow-2);
+  --color-yellow-3: var(--yellow-3);
+  --color-yellow-4: var(--yellow-4);
+  --color-yellow-5: var(--yellow-5);
+  --color-yellow-6: var(--yellow-6);
+  --color-yellow-7: var(--yellow-7);
+  --color-yellow-8: var(--yellow-8);
+  --color-yellow-9: var(--yellow-9);
+  --color-yellow-10: var(--yellow-10);
+
+  --color-red-1: var(--red-1);
+  --color-red-2: var(--red-2);
+  --color-red-3: var(--red-3);
+  --color-red-4: var(--red-4);
+  --color-red-5: var(--red-5);
+  --color-red-6: var(--red-6);
+  --color-red-7: var(--red-7);
+  --color-red-8: var(--red-8);
+  --color-red-9: var(--red-9);
+  --color-red-10: var(--red-10);
+  --color-red-11: var(--red-11);
+  --color-red-12: var(--red-12);
+
+  --color-orange-1: var(--orange-1);
+  --color-orange-2: var(--orange-2);
+  --color-orange-3: var(--orange-3);
+  --color-orange-4: var(--orange-4);
+  --color-orange-5: var(--orange-5);
+  --color-orange-6: var(--orange-6);
+  --color-orange-7: var(--orange-7);
+  --color-orange-8: var(--orange-8);
+  --color-orange-9: var(--orange-9);
+
+  --color-teal-1: var(--teal-1);
+  --color-teal-2: var(--teal-2);
+  --color-teal-3: var(--teal-3);
+  --color-teal-4: var(--teal-4);
+  --color-teal-5: var(--teal-5);
+  --color-teal-6: var(--teal-6);
+  --color-teal-7: var(--teal-7);
+  --color-teal-8: var(--teal-8);
+  --color-teal-9: var(--teal-9);
+
+  --color-purple-1: var(--purple-1);
+  --color-purple-2: var(--purple-2);
+  --color-purple-3: var(--purple-3);
+  --color-purple-4: var(--purple-4);
+  --color-purple-5: var(--purple-5);
+  --color-purple-6: var(--purple-6);
+  --color-purple-7: var(--purple-7);
+  --color-purple-8: var(--purple-8);
+  --color-purple-9: var(--purple-9);
+  --color-purple-10: var(--purple-10);
+
+  /* JetBrains Semantic Color Bridge */
+  --color-alert-bg: var(--alert-bg);
+  --color-alert-border: var(--alert-border);
+  --color-alert-description: var(--alert-description);
+  --color-alert-destructive-bg: var(--alert-destructive-bg);
+  --color-alert-destructive-border: var(--alert-destructive-border);
+  --color-alert-destructive-text: var(--alert-destructive-text);
+  --color-alert-info-bg: var(--alert-info-bg);
+  --color-alert-info-border: var(--alert-info-border);
+  --color-alert-info-text: var(--alert-info-text);
+  --color-alert-text: var(--alert-text);
+  --color-alert-warning-bg: var(--alert-warning-bg);
+  --color-alert-warning-border: var(--alert-warning-border);
+  --color-alert-warning-text: var(--alert-warning-text);
+  --color-checkbox-checked-bg: var(--checkbox-checked-bg);
+  --color-checkbox-checked-bg-active: var(--checkbox-checked-bg-active);
+  --color-checkbox-checked-bg-disabled: var(--checkbox-checked-bg-disabled);
+  --color-checkbox-checked-bg-hover: var(--checkbox-checked-bg-hover);
+  --color-checkbox-checked-border: var(--checkbox-checked-border);
+  --color-checkbox-checked-border-active: var(--checkbox-checked-border-active);
+  --color-checkbox-checked-border-disabled: var(
+    --checkbox-checked-border-disabled
+  );
+  --color-checkbox-checked-border-hover: var(--checkbox-checked-border-hover);
+  --color-checkbox-checked-border-invalid: var(
+    --checkbox-checked-border-invalid
+  );
+  --color-checkbox-checked-icon: var(--checkbox-checked-icon);
+  --color-checkbox-checked-icon-disabled: var(--checkbox-checked-icon-disabled);
+  --color-checkbox-checked-ring: var(--checkbox-checked-ring);
+  --color-checkbox-checked-ring-invalid: var(--checkbox-checked-ring-invalid);
+  --color-checkbox-indeterminate-bg: var(--checkbox-indeterminate-bg);
+  --color-checkbox-indeterminate-bg-active: var(
+    --checkbox-indeterminate-bg-active
+  );
+  --color-checkbox-indeterminate-bg-disabled: var(
+    --checkbox-indeterminate-bg-disabled
+  );
+  --color-checkbox-indeterminate-bg-hover: var(
+    --checkbox-indeterminate-bg-hover
+  );
+  --color-checkbox-indeterminate-border: var(--checkbox-indeterminate-border);
+  --color-checkbox-indeterminate-border-active: var(
+    --checkbox-indeterminate-border-active
+  );
+  --color-checkbox-indeterminate-border-disabled: var(
+    --checkbox-indeterminate-border-disabled
+  );
+  --color-checkbox-indeterminate-border-hover: var(
+    --checkbox-indeterminate-border-hover
+  );
+  --color-checkbox-indeterminate-border-invalid: var(
+    --checkbox-indeterminate-border-invalid
+  );
+  --color-checkbox-indeterminate-icon: var(--checkbox-indeterminate-icon);
+  --color-checkbox-indeterminate-icon-disabled: var(
+    --checkbox-indeterminate-icon-disabled
+  );
+  --color-checkbox-indeterminate-ring: var(--checkbox-indeterminate-ring);
+  --color-checkbox-indeterminate-ring-invalid: var(
+    --checkbox-indeterminate-ring-invalid
+  );
+  --color-checkbox-label: var(--checkbox-label);
+  --color-checkbox-label-disabled: var(--checkbox-label-disabled);
+  --color-checkbox-unchecked-bg: var(--checkbox-unchecked-bg);
+  --color-checkbox-unchecked-bg-active: var(--checkbox-unchecked-bg-active);
+  --color-checkbox-unchecked-bg-disabled: var(--checkbox-unchecked-bg-disabled);
+  --color-checkbox-unchecked-bg-hover: var(--checkbox-unchecked-bg-hover);
+  --color-checkbox-unchecked-border: var(--checkbox-unchecked-border);
+  --color-checkbox-unchecked-border-active: var(
+    --checkbox-unchecked-border-active
+  );
+  --color-checkbox-unchecked-border-disabled: var(
+    --checkbox-unchecked-border-disabled
+  );
+  --color-checkbox-unchecked-border-hover: var(
+    --checkbox-unchecked-border-hover
+  );
+  --color-checkbox-unchecked-border-invalid: var(
+    --checkbox-unchecked-border-invalid
+  );
+  --color-checkbox-unchecked-ring: var(--checkbox-unchecked-ring);
+  --color-checkbox-unchecked-ring-invalid: var(
+    --checkbox-unchecked-ring-invalid
+  );
+  --color-combo-box-trigger-border-invalid-focus: var(
+    --combo-box-trigger-border-invalid-focus
+  );
+  --color-combo-box-trigger-border-invalid-soft: var(
+    --combo-box-trigger-border-invalid-soft
+  );
+  --color-context-menu-item-danger: var(--context-menu-item-danger);
+  --color-context-menu-item-danger-bg-hover: var(
+    --context-menu-item-danger-bg-hover
+  );
+  --color-input-bg: var(--input-bg);
+  --color-input-bg-disabled: var(--input-bg-disabled);
+  --color-input-bg-hover: var(--input-bg-hover);
+  --color-input-border: var(--input-border);
+  --color-input-border-active: var(--input-border-active);
+  --color-input-border-disabled: var(--input-border-disabled);
+  --color-input-border-hover: var(--input-border-hover);
+  --color-input-border-invalid: var(--input-border-invalid);
+  --color-input-placeholder: var(--input-placeholder);
+  --color-input-placeholder-disabled: var(--input-placeholder-disabled);
+  --color-input-ring: var(--input-ring);
+  --color-input-ring-invalid: var(--input-ring-invalid);
+  --color-input-text: var(--input-text);
+  --color-input-text-disabled: var(--input-text-disabled);
+  --color-radio-checked-bg: var(--radio-checked-bg);
+  --color-radio-checked-bg-active: var(--radio-checked-bg-active);
+  --color-radio-checked-bg-disabled: var(--radio-checked-bg-disabled);
+  --color-radio-checked-bg-hover: var(--radio-checked-bg-hover);
+  --color-radio-checked-bg-invalid: var(--radio-checked-bg-invalid);
+  --color-radio-checked-border: var(--radio-checked-border);
+  --color-radio-checked-border-active: var(--radio-checked-border-active);
+  --color-radio-checked-border-disabled: var(--radio-checked-border-disabled);
+  --color-radio-checked-border-hover: var(--radio-checked-border-hover);
+  --color-radio-checked-border-invalid: var(--radio-checked-border-invalid);
+  --color-radio-checked-indicator: var(--radio-checked-indicator);
+  --color-radio-checked-indicator-active: var(--radio-checked-indicator-active);
+  --color-radio-checked-indicator-disabled: var(
+    --radio-checked-indicator-disabled
+  );
+  --color-radio-checked-indicator-hover: var(--radio-checked-indicator-hover);
+  --color-radio-checked-indicator-invalid: var(
+    --radio-checked-indicator-invalid
+  );
+  --color-radio-checked-ring: var(--radio-checked-ring);
+  --color-radio-checked-ring-invalid: var(--radio-checked-ring-invalid);
+  --color-radio-unchecked-bg: var(--radio-unchecked-bg);
+  --color-radio-unchecked-bg-active: var(--radio-unchecked-bg-active);
+  --color-radio-unchecked-bg-disabled: var(--radio-unchecked-bg-disabled);
+  --color-radio-unchecked-bg-hover: var(--radio-unchecked-bg-hover);
+  --color-radio-unchecked-bg-invalid: var(--radio-unchecked-bg-invalid);
+  --color-radio-unchecked-border: var(--radio-unchecked-border);
+  --color-radio-unchecked-border-active: var(--radio-unchecked-border-active);
+  --color-radio-unchecked-border-disabled: var(
+    --radio-unchecked-border-disabled
+  );
+  --color-radio-unchecked-border-hover: var(--radio-unchecked-border-hover);
+  --color-radio-unchecked-border-invalid: var(--radio-unchecked-border-invalid);
+  --color-radio-unchecked-ring: var(--radio-unchecked-ring);
+  --color-radio-unchecked-ring-invalid: var(--radio-unchecked-ring-invalid);
+  --color-resizable-grip-bg: var(--resizable-grip-bg);
+  --color-resizable-grip-bg-hover: var(--resizable-grip-bg-hover);
+  --color-resizable-grip-bg-pressed: var(--resizable-grip-bg-pressed);
+  --color-resizable-grip-border: var(--resizable-grip-border);
+  --color-resizable-grip-border-hover: var(--resizable-grip-border-hover);
+  --color-resizable-grip-border-pressed: var(--resizable-grip-border-pressed);
+  --color-resizable-grip-indicator: var(--resizable-grip-indicator);
+  --color-resizable-grip-indicator-hover: var(--resizable-grip-indicator-hover);
+  --color-resizable-grip-indicator-pressed: var(
+    --resizable-grip-indicator-pressed
+  );
+  --color-resizable-handle-bg: var(--resizable-handle-bg);
+  --color-resizable-handle-bg-hover: var(--resizable-handle-bg-hover);
+  --color-resizable-handle-bg-pressed: var(--resizable-handle-bg-pressed);
+  --color-resizable-handle-focus-offset: var(--resizable-handle-focus-offset);
+  --color-resizable-handle-ring: var(--resizable-handle-ring);
+  --color-select-content-bg: var(--select-content-bg);
+  --color-select-content-border: var(--select-content-border);
+  --color-select-item-bg: var(--select-item-bg);
+  --color-select-item-bg-hover: var(--select-item-bg-hover);
+  --color-select-item-bg-selected: var(--select-item-bg-selected);
+  --color-select-item-icon: var(--select-item-icon);
+  --color-select-item-text: var(--select-item-text);
+  --color-select-item-text-disabled: var(--select-item-text-disabled);
+  --color-select-item-text-hover: var(--select-item-text-hover);
+  --color-select-item-text-selected: var(--select-item-text-selected);
+  --color-select-label-text: var(--select-label-text);
+  --color-select-separator: var(--select-separator);
+  --color-select-trigger-bg: var(--select-trigger-bg);
+  --color-select-trigger-bg-active: var(--select-trigger-bg-active);
+  --color-select-trigger-bg-disabled: var(--select-trigger-bg-disabled);
+  --color-select-trigger-bg-hover: var(--select-trigger-bg-hover);
+  --color-select-trigger-border: var(--select-trigger-border);
+  --color-select-trigger-border-active: var(--select-trigger-border-active);
+  --color-select-trigger-border-disabled: var(--select-trigger-border-disabled);
+  --color-select-trigger-border-hover: var(--select-trigger-border-hover);
+  --color-select-trigger-icon: var(--select-trigger-icon);
+  --color-select-trigger-placeholder: var(--select-trigger-placeholder);
+  --color-select-trigger-text: var(--select-trigger-text);
+  --color-select-trigger-text-disabled: var(--select-trigger-text-disabled);
+  --color-tabs-content-bg: var(--tabs-content-bg);
+  --color-tabs-content-border: var(--tabs-content-border);
+  --color-tabs-content-text: var(--tabs-content-text);
+  --color-tabs-list-bg: var(--tabs-list-bg);
+  --color-tabs-trigger-bg-active: var(--tabs-trigger-bg-active);
+  --color-tabs-trigger-bg-hover: var(--tabs-trigger-bg-hover);
+  --color-tabs-trigger-ring: var(--tabs-trigger-ring);
+  --color-tabs-trigger-text: var(--tabs-trigger-text);
+  --color-tabs-trigger-text-active: var(--tabs-trigger-text-active);
+  --color-tabs-trigger-text-hover: var(--tabs-trigger-text-hover);
+  --color-toolbar-bg: var(--toolbar-bg);
+  --color-toolbar-border: var(--toolbar-border);
+  --color-toolbar-disabled: var(--toolbar-disabled);
+  --color-toolbar-floating-bg: var(--toolbar-floating-bg);
+  --color-toolbar-floating-border: var(--toolbar-floating-border);
+  --color-toolbar-focus-offset: var(--toolbar-focus-offset);
+  --color-toolbar-focus-ring: var(--toolbar-focus-ring);
+  --color-toolbar-item-bg-hover: var(--toolbar-item-bg-hover);
+  --color-toolbar-separator: var(--toolbar-separator);
+  --color-toolbar-text: var(--toolbar-text);
+  --color-toolbar-text-hover: var(--toolbar-text-hover);
+  --color-tree-bg: var(--tree-bg);
+  --color-tree-disabled-text: var(--tree-disabled-text);
+  --color-tree-disclosure: var(--tree-disclosure);
+  --color-tree-disclosure-hover: var(--tree-disclosure-hover);
+  --color-tree-focus-ring: var(--tree-focus-ring);
+  --color-tree-focus-ring-offset: var(--tree-focus-ring-offset);
+  --color-tree-icon: var(--tree-icon);
+  --color-tree-item-active-bg: var(--tree-item-active-bg);
+  --color-tree-item-hover-bg: var(--tree-item-hover-bg);
+  --color-tree-item-selected-bg: var(--tree-item-selected-bg);
+  --color-tree-item-selected-text: var(--tree-item-selected-text);
+  --color-tree-muted: var(--tree-muted);
+  --color-tree-text: var(--tree-text);
+
   --breakpoint-3xl: 1670px;
 
   --radius-2xl: calc(var(--radius) + 8px);
@@ -254,7 +570,21 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    font-size: var(--typography-ui-default-font-size);
+    line-height: var(--typography-ui-default-line-height);
+    font-weight: var(--typography-ui-default-font-weight);
     overscroll-behavior: none;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
   }
 
   #nd-sidebar {

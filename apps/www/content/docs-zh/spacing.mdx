@@ -1,0 +1,145 @@
+---
+title: 间距
+description: JetBrains UI 的布局节奏、分组规则和常见控件间距约定。
+---
+
+## 来源
+
+- Figma: [Int UI Kit (Community) - Inside a control](https://www.figma.com/design/Nvs9fjI2tnvgXIHlHtT8yz/Int-UI-Kit--Community-?node-id=8029-88886&t=a8XXYFCWgPGD6mk5-4)
+- Figma 标题区：[Spacing header](https://www.figma.com/design/Nvs9fjI2tnvgXIHlHtT8yz/Int-UI-Kit--Community-?node-id=8012-75166&t=a8XXYFCWgPGD6mk5-4)
+- 官方参考：[Layout](https://plugins.jetbrains.com/docs/intellij/layout.html)
+- 相关官方参考：[Group Header](https://plugins.jetbrains.com/docs/intellij/group-header.html)
+- 最后校对：2026 年 3 月 28 日
+
+JetBrains UI 的间距首先服务于结构表达。它的重点不是“留白好看”，而是通过对齐、层级和留白，把依赖关系和分组关系讲清楚。
+
+## 核心规则
+
+- 能共用列对齐的独立控件，尽量放在同一条对齐线上。
+- 用垂直和水平 inset 来表达控件之间的关系。
+- 相关控件之间的距离应该明显小于不相关区块之间的距离。
+- 能靠留白解决层级时，优先不要加额外边框或容器。
+- 小规模相关内容可以用 group header；如果页面已经变得过大，就应该拆成更清晰的区块、标签页或 master-detail 结构。
+
+## Figma 参考尺寸
+
+| 场景                     | Figma 参考值                                                                          |
+| ------------------------ | ------------------------------------------------------------------------------------- |
+| 独立的带标签输入控件     | 控件块内部上下各 `6px` inset                                                          |
+| 独立按钮或复选框行       | 控件块内部上下各 `8px` inset                                                          |
+| Group header             | 标题内容上下各保留 `6px` 呼吸空间                                                     |
+| 组、表格或列表的标题标签 | 标签下方保留 `6px` 间距                                                               |
+| 成组输入框               | 相关行沿用同一套 `6px` 节奏                                                           |
+| 成组复选框               | 相关行沿用同一套 `8px` 节奏                                                           |
+| 带 hint 的控件           | 在主标签下为 hint 预留第二行空间                                                      |
+| 对话框 footer            | 左右外边距 `20px`，帮助区和选项内容之间 `16px`，操作按钮之间 `12px`，按钮区上下 `8px` |
+
+## 本仓库中的实现
+
+间距 token 定义在 [tokens.css](/Users/mine/WebstormProjects/jetbrains-ui/apps/www/registry/styles/jetbrains/tokens.css)，并采用 `4px` 作为基础单位：
+
+- `--space-1` = `4px`
+- `--space-1_5` = `6px`
+- `--space-2` = `8px`
+- `--space-3` = `12px`
+- `--space-4` = `16px`
+- `--space-5` = `20px`
+
+能选最近的 token 时，优先不要再引入新的任意像素值。
+
+## 预设 Utility Class
+
+为了在组件里保持一致的间距节奏，仓库提供了一组常用 spacing 预设：
+
+| Utility class          | 含义（对应 token）              |
+| ---------------------- | ------------------------------- |
+| `p-ui-surface`         | `4px` 容器内边距（`--space-1`） |
+| `p-ui-section`         | `8px` 区块内边距                |
+| `p-ui-panel`           | `12px` 面板内边距               |
+| `px-ui-control`        | `12px` 控件左右内边距           |
+| `px-ui-item`           | `8px` 列表项左右内边距          |
+| `px-ui-tab`            | `10px` 标签页左右内边距         |
+| `px-ui-compact`        | `6px` 紧凑左右内边距            |
+| `px-ui-tight`          | `4px` 紧凑左右内边距            |
+| `px-ui-toolbar-item`   | `5px` 工具栏 item 左右内边距    |
+| `py-ui-item`           | `4px` 列表项上下内边距          |
+| `py-ui-label`          | `6px` 标签行上下内边距          |
+| `py-ui-control-row`    | `8px` 控件行上下内边距          |
+| `py-ui-compact`        | `6px` 紧凑上下内边距            |
+| `py-ui-tight`          | `4px` 紧凑上下内边距            |
+| `py-ui-toolbar-item`   | `5px` 工具栏 item 上下内边距    |
+| `pl-ui-control`        | `12px` 控件左侧缩进             |
+| `pl-ui-item`           | `8px` 列表项左侧缩进            |
+| `pl-ui-item-indicator` | `28px` 带指示器的列表项缩进     |
+| `pl-ui-section`        | `32px` 区块左侧缩进             |
+| `pr-ui-item`           | `8px` 列表项右侧缩进            |
+| `pr-ui-sub-trigger`    | `6px` 子菜单触发项右侧缩进      |
+| `pr-ui-section`        | `16px` 区块右侧缩进             |
+| `pr-ui-hairline`       | `2px` 细线级右侧缩进            |
+| `gap-ui-control`       | `8px` 控件间距                  |
+| `gap-ui-compact`       | `6px` 紧凑间距                  |
+| `gap-ui-tight`         | `4px` 紧凑间距                  |
+| `gap-ui-hairline`      | `2px` 细线级间距                |
+| `gap-ui-actions`       | `12px` 组间距或操作按钮间距     |
+| `mt-ui-control-row`    | `8px` 顶部外边距（控件节奏）    |
+| `my-ui-hairline`       | `2px` 垂直外边距                |
+
+常见写法：
+
+```tsx
+<div className="px-ui-item py-ui-label text-ui-medium-semibold">Label</div>
+<button className="gap-ui-control px-ui-control text-ui-default">OK</button>
+```
+
+## 组件专用预设
+
+部分组件需要专用的间距辅助类（例如 alert 对话框布局）：
+
+| Utility class            | 含义（对应 token）                         |
+| ------------------------ | ------------------------------------------ |
+| `pt-ui-alert`            | `20px` alert 顶部内边距                    |
+| `pr-ui-alert`            | `20px` alert 右侧内边距                    |
+| `pl-ui-alert`            | `60px` alert 左侧内边距                    |
+| `pb-ui-alert`            | `66px` alert 底部内边距                    |
+| `left-ui-alert-icon`     | `19px` alert 图标左侧定位                  |
+| `top-ui-alert-icon`      | `19px` alert 图标顶部定位                  |
+| `left-ui-alert-footer`   | `19px` alert footer 左侧定位               |
+| `right-ui-alert-footer`  | `19px` alert footer 右侧定位               |
+| `bottom-ui-alert-footer` | `13px` alert footer 底部定位               |
+| `pl-ui-control-focus`    | `11px` 控件获得 2px 边框时的左侧内边距调整 |
+
+## 额外 Utility
+
+| Utility class              | 含义                             |
+| -------------------------- | -------------------------------- |
+| `mx-ui-surface`            | `4px` 水平外边距                 |
+| `-mx-ui-surface`           | `-4px` 水平外边距（分割线外扩）  |
+| `my-ui-surface`            | `4px` 垂直外边距                 |
+| `h-ui-hairline`            | `1px` 细线高度                   |
+| `w-ui-hairline`            | `1px` 细线宽度                   |
+| `h-ui-scrollbar`           | `6px` 滚动条厚度                 |
+| `w-ui-scrollbar`           | `6px` 滚动条厚度                 |
+| `size-ui-item-icon`        | `14px` 菜单图标占位              |
+| `min-w-ui-button`          | `72px` 按钮最小宽度              |
+| `w-ui-input`               | `240px` 输入框宽度               |
+| `w-ui-combo`               | `224px` combo 触发器宽度         |
+| `min-w-ui-combo`           | `224px` combo 内容最小宽度       |
+| `min-w-ui-context-menu`    | `220px` 右键菜单最小宽度         |
+| `min-w-ui-context-submenu` | `196px` 右键子菜单最小宽度       |
+| `min-w-ui-dropdown`        | `128px` dropdown 最小宽度        |
+| `min-w-ui-tree`            | `244px` 树组件最小宽度           |
+| `w-ui-alert`               | `370px` 默认 alert 宽度          |
+| `w-ui-alert-wide`          | `420px` 宽版 alert 宽度          |
+| `min-w-ui-alert`           | `370px` alert 最小宽度           |
+| `max-w-ui-alert`           | `480px` alert 最大宽度           |
+| `min-w-ui-toolbar-item`    | `26px` 工具栏 item 最小宽度      |
+| `min-h-ui-toolbar-item`    | `26px` 工具栏 item 最小高度      |
+| `left-ui-tree-overlay`     | `12px` 树条目 overlay 左侧 inset |
+| `right-ui-tree-overlay`    | `12px` 树条目 overlay 右侧 inset |
+
+## 建议
+
+- 先用对齐和间距解决结构问题，再考虑分割线。
+- 紧凑控件内部优先复用 `6px` 和 `8px` 两套节奏。
+- 把对话框 footer 当成独立布局区域处理，左右锚点要清晰。
+- 尽量复用 token 化的间距值，不要把裸像素散落在组件里。

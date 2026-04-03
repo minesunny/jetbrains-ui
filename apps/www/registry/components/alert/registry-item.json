@@ -19,11 +19,6 @@
       "path": "registry/components/alert/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/alert/index.tsx"
-    },
-    {
-      "path": "registry/components/alert/index.css",
-      "type": "registry:style",
-      "target": "components/jetbrains-ui/alert/index.css"
     }
   ],
   "meta": {

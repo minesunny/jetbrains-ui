@@ -1,0 +1,145 @@
+---
+title: Spacing
+description: JetBrains UI layout rhythm, grouping rules, and common control spacing.
+---
+
+## Source
+
+- Figma: [Int UI Kit (Community) - Inside a control](https://www.figma.com/design/Nvs9fjI2tnvgXIHlHtT8yz/Int-UI-Kit--Community-?node-id=8029-88886&t=a8XXYFCWgPGD6mk5-4)
+- Figma header: [Spacing header](https://www.figma.com/design/Nvs9fjI2tnvgXIHlHtT8yz/Int-UI-Kit--Community-?node-id=8012-75166&t=a8XXYFCWgPGD6mk5-4)
+- Official reference: [Layout](https://plugins.jetbrains.com/docs/intellij/layout.html)
+- Related official reference: [Group Header](https://plugins.jetbrains.com/docs/intellij/group-header.html)
+- Last reviewed: March 28, 2026
+
+JetBrains UI spacing is primarily structural. The goal is to show dependency, grouping, and hierarchy with alignment and whitespace before adding extra borders or containers.
+
+## Core Rules
+
+- Align independent controls to shared columns whenever possible.
+- Use vertical and horizontal insets to show relationships between controls.
+- Keep related controls visually closer to each other than to unrelated sections.
+- Prefer whitespace over extra decoration. Add borders or filled containers only when spacing alone is not enough.
+- Use group headers for smaller related sections. When a screen grows too large, split it into clearer sections, tabs, or a master-detail layout.
+
+## Figma Reference Sizes
+
+| Context                           | Reference from the Figma page                                                                                                                     |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Separate labeled input            | `6px` top and bottom inset inside the control block                                                                                               |
+| Separate button or checkbox row   | `8px` top and bottom inset inside the control block                                                                                               |
+| Group header                      | `6px` breathing room above and below the header content                                                                                           |
+| Label for a group, table, or list | `6px` gap below the label                                                                                                                         |
+| Grouped text inputs               | Keep related rows on the same `6px` rhythm                                                                                                        |
+| Grouped checkbox rows             | Keep related rows on the same `8px` rhythm                                                                                                        |
+| Control with hint                 | Reserve a second line for the hint inside a taller control block                                                                                  |
+| Dialog footer                     | `20px` outer horizontal inset, `16px` gap between help and option content, `12px` between action buttons, `8px` vertical inset around the buttons |
+
+## Implementation in This Repository
+
+Spacing tokens live in [tokens.css](/Users/mine/WebstormProjects/jetbrains-ui/apps/www/registry/styles/jetbrains/tokens.css) and use a `4px` base unit:
+
+- `--space-1` = `4px`
+- `--space-1_5` = `6px`
+- `--space-2` = `8px`
+- `--space-3` = `12px`
+- `--space-4` = `16px`
+- `--space-5` = `20px`
+
+Use the nearest token instead of introducing arbitrary values whenever possible.
+
+## Preset Utility Classes
+
+To keep spacing consistent across components, the registry provides a small set of spacing presets:
+
+| Utility class          | Meaning (token)                     |
+| ---------------------- | ----------------------------------- |
+| `p-ui-surface`         | `4px` surface padding (`--space-1`) |
+| `p-ui-section`         | `8px` section padding               |
+| `p-ui-panel`           | `12px` panel padding                |
+| `px-ui-control`        | `12px` inline control padding       |
+| `px-ui-item`           | `8px` inline item padding           |
+| `px-ui-tab`            | `10px` inline tab padding           |
+| `px-ui-compact`        | `6px` compact inline padding        |
+| `px-ui-tight`          | `4px` tight inline padding          |
+| `px-ui-toolbar-item`   | `5px` toolbar item inline padding   |
+| `py-ui-item`           | `4px` item row padding              |
+| `py-ui-label`          | `6px` label row padding             |
+| `py-ui-control-row`    | `8px` control row padding           |
+| `py-ui-compact`        | `6px` compact block padding         |
+| `py-ui-tight`          | `4px` tight block padding           |
+| `py-ui-toolbar-item`   | `5px` toolbar item block padding    |
+| `pl-ui-control`        | `12px` control left inset           |
+| `pl-ui-item`           | `8px` item left inset               |
+| `pl-ui-item-indicator` | `28px` item inset with indicator    |
+| `pl-ui-section`        | `32px` section left inset           |
+| `pr-ui-item`           | `8px` item right inset              |
+| `pr-ui-sub-trigger`    | `6px` sub trigger right inset       |
+| `pr-ui-section`        | `16px` section right inset          |
+| `pr-ui-hairline`       | `2px` hairline right inset          |
+| `gap-ui-control`       | `8px` control gap                   |
+| `gap-ui-compact`       | `6px` compact gap                   |
+| `gap-ui-tight`         | `4px` tight gap                     |
+| `gap-ui-hairline`      | `2px` hairline gap                  |
+| `gap-ui-actions`       | `12px` group/action gap             |
+| `mt-ui-control-row`    | `8px` top margin (control rhythm)   |
+| `my-ui-hairline`       | `2px` vertical margin               |
+
+Typical usage:
+
+```tsx
+<div className="px-ui-item py-ui-label text-ui-medium-semibold">Label</div>
+<button className="gap-ui-control px-ui-control text-ui-default">OK</button>
+```
+
+## Component-Specific Presets
+
+Some components use dedicated spacing helpers (for example alert dialog layout):
+
+| Utility class            | Meaning (token)                                  |
+| ------------------------ | ------------------------------------------------ |
+| `pt-ui-alert`            | `20px` alert top inset                           |
+| `pr-ui-alert`            | `20px` alert right inset                         |
+| `pl-ui-alert`            | `60px` alert left inset                          |
+| `pb-ui-alert`            | `66px` alert bottom inset                        |
+| `left-ui-alert-icon`     | `19px` alert icon left position                  |
+| `top-ui-alert-icon`      | `19px` alert icon top position                   |
+| `left-ui-alert-footer`   | `19px` alert footer left position                |
+| `right-ui-alert-footer`  | `19px` alert footer right position               |
+| `bottom-ui-alert-footer` | `13px` alert footer bottom position              |
+| `pl-ui-control-focus`    | `11px` control left inset when focus border is 2 |
+
+## Additional Utilities
+
+| Utility class              | Meaning                                    |
+| -------------------------- | ------------------------------------------ |
+| `mx-ui-surface`            | `4px` horizontal margin                    |
+| `-mx-ui-surface`           | `-4px` horizontal margin (separator bleed) |
+| `my-ui-surface`            | `4px` vertical margin                      |
+| `h-ui-hairline`            | `1px` hairline height                      |
+| `w-ui-hairline`            | `1px` hairline width                       |
+| `h-ui-scrollbar`           | `6px` scrollbar thickness                  |
+| `w-ui-scrollbar`           | `6px` scrollbar thickness                  |
+| `size-ui-item-icon`        | `14px` menu item icon size                 |
+| `min-w-ui-button`          | `72px` minimum button width                |
+| `w-ui-input`               | `240px` input width                        |
+| `w-ui-combo`               | `224px` combo trigger width                |
+| `min-w-ui-combo`           | `224px` combo content minimum width        |
+| `min-w-ui-context-menu`    | `220px` context menu minimum width         |
+| `min-w-ui-context-submenu` | `196px` context submenu minimum width      |
+| `min-w-ui-dropdown`        | `128px` dropdown minimum width             |
+| `min-w-ui-tree`            | `244px` tree minimum width                 |
+| `w-ui-alert`               | `370px` default alert width                |
+| `w-ui-alert-wide`          | `420px` wide alert width                   |
+| `min-w-ui-alert`           | `370px` alert minimum width                |
+| `max-w-ui-alert`           | `480px` alert maximum width                |
+| `min-w-ui-toolbar-item`    | `26px` toolbar item minimum width          |
+| `min-h-ui-toolbar-item`    | `26px` toolbar item minimum height         |
+| `left-ui-tree-overlay`     | `12px` tree overlay left inset             |
+| `right-ui-tree-overlay`    | `12px` tree overlay right inset            |
+
+## Recommendations
+
+- Start with alignment and spacing before reaching for dividers.
+- Keep compact controls on consistent `6px` or `8px` internal rhythms.
+- Treat dialog footers as a dedicated layout zone with clear left and right anchors.
+- Reuse tokenized spacing values instead of scattering raw pixel literals across components.

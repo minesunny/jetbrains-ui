@@ -4,7 +4,6 @@ import * as React from 'react';
 import * as ResizablePrimitive from 'react-resizable-panels';
 
 import { cn } from '@workspace/ui/lib/utils';
-import './index.css';
 
 const PANEL_SIZE_EPSILON = 0.1;
 
@@ -63,7 +62,7 @@ const ResizablePanelGroup = React.forwardRef<
       orientation={direction}
       data-slot="resizable-panel-group"
       className={cn(
-        'jb-resizable-panel-group flex h-full w-full overflow-hidden',
+        'resizable-panel-group flex h-full w-full overflow-hidden',
         direction === 'vertical' && 'flex-col',
         className,
       )}
@@ -243,7 +242,7 @@ const ResizablePanel = React.forwardRef<
         <div
           data-slot="resizable-panel"
           data-panel-collapsible={isCollapseModeEnabled ? 'true' : undefined}
-          className={cn('jb-resizable-panel h-full min-h-0 min-w-0', className)}
+          className={cn('resizable-panel h-full min-h-0 min-w-0', className)}
         >
           {children}
         </div>
@@ -262,7 +261,10 @@ function ResizableSeparator({
     <ResizablePrimitive.Separator
       data-slot="resizable-handle"
       className={cn(
-        "jb-resizable-handle relative flex w-px shrink-0 cursor-col-resize items-center justify-center outline-none transition-[background-color,box-shadow] duration-150 ease-in-out after:absolute after:inset-y-0 after:left-1/2 after:w-1 after:content-[''] after:-translate-x-1/2 focus-visible:z-[1] aria-[orientation=horizontal]:h-px aria-[orientation=horizontal]:w-full aria-[orientation=horizontal]:cursor-row-resize aria-[orientation=horizontal]:after:top-1/2 aria-[orientation=horizontal]:after:bottom-auto aria-[orientation=horizontal]:after:left-0 aria-[orientation=horizontal]:after:h-1 aria-[orientation=horizontal]:after:w-full aria-[orientation=horizontal]:after:translate-x-0 aria-[orientation=horizontal]:after:-translate-y-1/2 aria-[orientation=horizontal]:[&_.jb-resizable-handle__grip]:rotate-90",
+        'resizable-handle group relative flex shrink-0 cursor-col-resize items-center justify-center bg-resizable-handle-bg outline-none transition-[background-color,box-shadow] duration-150 ease-in-out hover:bg-resizable-handle-bg-hover active:bg-resizable-handle-bg-pressed focus-visible:z-[1] focus-visible:ring-2 focus-visible:ring-resizable-handle-ring focus-visible:ring-offset-2 focus-visible:ring-offset-resizable-handle-focus-offset',
+        "[&[data-separator='hover']]:bg-resizable-handle-bg-hover [&[data-separator='drag']]:bg-resizable-handle-bg-pressed",
+        "[&[data-separator='hover']_.resizable-handle__grip]:border-resizable-grip-border-hover [&[data-separator='hover']_.resizable-handle__grip]:bg-resizable-grip-bg-hover [&[data-separator='hover']_.resizable-handle__grip::before]:bg-resizable-grip-indicator-hover",
+        "[&[data-separator='drag']_.resizable-handle__grip]:border-resizable-grip-border-pressed [&[data-separator='drag']_.resizable-handle__grip]:bg-resizable-grip-bg-pressed [&[data-separator='drag']_.resizable-handle__grip::before]:bg-resizable-grip-indicator-pressed",
         className,
       )}
       {...props}
@@ -284,7 +286,7 @@ function ResizableHandle({
     >
       {children ??
         (withHandle ? (
-          <div className="jb-resizable-handle__grip z-10 flex h-4 w-3 shrink-0 items-center justify-center rounded-[2px] border transition-[border-color,background-color,transform] duration-150 ease-in-out before:block before:h-2.5 before:w-1 before:rounded-full before:content-[''] before:transition-[background-color] before:duration-150 before:ease-in-out" />
+          <div className="resizable-handle__grip z-10 flex h-4 w-3 shrink-0 items-center justify-center rounded-[2px] border border-resizable-grip-border bg-resizable-grip-bg transition-[border-color,background-color,transform] duration-150 ease-in-out before:block before:h-2.5 before:w-1 before:rounded-full before:bg-resizable-grip-indicator before:content-[''] before:transition-[background-color] before:duration-150 before:ease-in-out group-hover:border-resizable-grip-border-hover group-hover:bg-resizable-grip-bg-hover group-hover:before:bg-resizable-grip-indicator-hover group-active:border-resizable-grip-border-pressed group-active:bg-resizable-grip-bg-pressed group-active:before:bg-resizable-grip-indicator-pressed" />
         ) : null)}
     </ResizableSeparator>
   );

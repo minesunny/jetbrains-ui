@@ -21,11 +21,6 @@
       "path": "registry/components/tabs/dynamic-tabs.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/tabs/dynamic-tabs.tsx"
-    },
-    {
-      "path": "registry/components/tabs/index.css",
-      "type": "registry:style",
-      "target": "components/jetbrains-ui/tabs/index.css"
     }
   ],
   "meta": {
