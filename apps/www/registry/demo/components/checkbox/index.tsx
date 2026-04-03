@@ -50,7 +50,7 @@ export default function CheckboxDemo({
   indeterminate = false,
   invalid = false,
   label = 'Checkbox label',
-  id = 'jb-checkbox-demo',
+  id = 'checkbox-demo',
   onCheckedChange,
   ...props
 }: CheckboxDemoProps) {
@@ -76,14 +76,18 @@ export default function CheckboxDemo({
   };
 
   return (
-    <Checkbox
-      {...props}
-      id={id}
-      label={label}
-      indeterminate={indeterminate}
-      checked={checkedValue}
-      onCheckedChange={handleCheckedChange}
-      aria-invalid={ariaInvalid}
-    />
+    <div className="flex min-h-8 items-center gap-ui-control text-gray-1 dark:text-gray-12">
+      <Checkbox
+        {...props}
+        id={id}
+        indeterminate={indeterminate}
+        checked={checkedValue}
+        onCheckedChange={handleCheckedChange}
+        aria-invalid={ariaInvalid}
+      />
+      <label htmlFor={id} className="text-[13px] leading-4 font-medium">
+        {label}
+      </label>
+    </div>
   );
 }

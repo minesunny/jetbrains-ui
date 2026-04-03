@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Checkbox } from '../index';
+import { Checked, UnselectAll } from '@/registry/icons/general/actions';
 
 describe('Checkbox', () => {
   it('renders without crashing', () => {
@@ -82,24 +83,6 @@ describe('Checkbox', () => {
     expect(Checkbox.displayName).toBeDefined();
   });
 
-  it('supports string label', () => {
-    render(<Checkbox label="Accept terms and conditions" />);
-    expect(
-      screen.getByRole('checkbox', { name: 'Accept terms and conditions' }),
-    ).toBeInTheDocument();
-  });
-
-  it('supports custom label node', () => {
-    render(
-      <Checkbox
-        aria-label="test"
-        label={<span data-testid="custom-label">Custom label</span>}
-      />,
-    );
-
-    expect(screen.getByTestId('custom-label')).toBeInTheDocument();
-  });
-
   it('cycles through three states when indeterminate is enabled', async () => {
     const user = userEvent.setup();
     const { container } = render(<Checkbox aria-label="test" indeterminate />);
@@ -110,7 +93,7 @@ describe('Checkbox', () => {
     expect(checkbox).toHaveAttribute('data-state', 'checked');
     await user.click(checkbox);
     expect(checkbox).toHaveAttribute('data-state', 'indeterminate');
-    expect(container.querySelector('svg rect')).toBeInTheDocument();
+    expect(container.querySelector('svg path')).toBeInTheDocument();
     await user.click(checkbox);
     expect(checkbox).toHaveAttribute('data-state', 'unchecked');
   });

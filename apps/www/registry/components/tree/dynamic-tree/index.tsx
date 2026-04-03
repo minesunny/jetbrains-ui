@@ -16,7 +16,6 @@ import { ChevronDown } from '@/registry/icons/general/general/chevron-down';
 import { Delete } from '@/registry/icons/general/general/delete';
 import { ChevronRight } from '@/registry/icons/general/general/chevron-right';
 import { Loader } from '@/registry/icons/general/spinner/loader';
-import './index.css';
 
 export { asyncDataLoaderFeature } from './feature';
 
@@ -69,7 +68,7 @@ export interface DynamicTreeProps<
 }
 
 type DynamicTreeItemButtonStyle = React.CSSProperties & {
-  '--jb-tree-item-padding-left': string;
+  '--tree-item-padding-left': string;
 };
 
 type DynamicTreeAsyncItemInstance<
@@ -241,13 +240,13 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
 
   return (
     <div
-      data-slot="jb-tree-item"
+      data-slot="tree-item"
       data-value={item.getId()}
-      className="jb-tree-item my-0.5 p-0"
+      className="tree-item my-ui-hairline p-0"
     >
       <div
         {...resolvedProps}
-        data-slot="jb-tree-item-button"
+        data-slot="tree-item-button"
         data-value={item.getId()}
         data-has-children={item.isFolder() ? 'true' : undefined}
         data-selected={item.isSelected() ? 'true' : undefined}
@@ -271,29 +270,31 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
         style={
           {
             ...resolvedStyle,
-            '--jb-tree-item-padding-left': `${
+            '--tree-item-padding-left': `${
               16 +
               item.getItemMeta().level * indent +
               Math.max(0, item.getItemMeta().level - 1) * 2
             }px`,
           } as DynamicTreeItemButtonStyle
         }
-        className="jb-tree-item-button relative box-border flex h-6 w-full min-w-0 cursor-default items-center gap-0.5 pr-4 pl-[var(--jb-tree-item-padding-left)] select-none outline-none transition-[color] duration-150 ease-in-out data-[disabled=true]:cursor-not-allowed"
+        className={
+          "tree-item-button relative box-border flex h-6 w-full min-w-0 cursor-default items-center gap-ui-hairline pr-ui-section pl-[var(--tree-item-padding-left)] select-none text-gray-1 outline-none transition-[color] duration-150 ease-in-out data-[disabled=true]:cursor-not-allowed data-[disabled=true]:text-gray-8 data-[selected=true]:text-gray-1 [&_.tree-item-disclosure]:text-gray-7 [&_.tree-item-icon]:text-gray-6 [&[data-selected='true']_.tree-item-disclosure]:text-current [&[data-selected='true']_.tree-item-icon]:text-current [&[data-disabled='true']_.tree-item-disclosure]:text-gray-8 [&:not([data-selected='true']):not([data-disabled='true'])_.tree-item-disclosure:hover]:text-gray-5 [&:hover:not([data-disabled='true']):not([data-selected='true'])_.tree-item-overlay]:bg-gray-12 [&:active:not([data-disabled='true']):not([data-selected='true'])_.tree-item-overlay]:bg-gray-11 [&[data-selected='true']_.tree-item-overlay]:bg-blue-11 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-2 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-blue-4 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-offset-1 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-offset-white dark:text-gray-12 dark:data-[disabled=true]:text-gray-7 dark:data-[selected=true]:text-gray-12 dark:[&_.tree-item-disclosure]:text-gray-10 dark:[&_.tree-item-icon]:text-gray-10 dark:[&[data-disabled=true]_.tree-item-disclosure]:text-gray-7 dark:[&:not([data-selected=true]):not([data-disabled=true])_.tree-item-disclosure:hover]:text-gray-12 dark:[&:hover:not([data-disabled=true]):not([data-selected=true])_.tree-item-overlay]:bg-gray-3 dark:[&:active:not([data-disabled=true]):not([data-selected=true])_.tree-item-overlay]:bg-gray-4 dark:[&[data-selected=true]_.tree-item-overlay]:bg-blue-2 dark:[&:focus-visible:not([data-disabled=true])_.tree-item-overlay]:ring-blue-6 dark:[&:focus-visible:not([data-disabled=true])_.tree-item-overlay]:ring-offset-gray-2"
+        }
       >
         <span
           aria-hidden="true"
-          data-slot="jb-tree-item-overlay"
-          className="jb-tree-item-overlay pointer-events-none absolute inset-y-0 left-3 right-3 rounded-[4px] transition-[background-color,box-shadow] duration-150 ease-in-out"
+          data-slot="tree-item-overlay"
+          className="tree-item-overlay pointer-events-none absolute inset-y-0 left-ui-tree-overlay right-ui-tree-overlay rounded-[4px] bg-transparent transition-[background-color,box-shadow] duration-150 ease-in-out"
         />
 
         {item.isFolder() ? (
           <button
-            data-slot="jb-tree-item-disclosure"
+            data-slot="tree-item-disclosure"
             data-value={item.getId()}
             data-expanded={item.isExpanded() ? 'true' : undefined}
             data-loading={item.isLoading() ? 'true' : undefined}
             type="button"
-            className="jb-tree-item-disclosure relative z-10 inline-flex size-4 shrink-0 items-center justify-center border-0 bg-transparent p-0 outline-none disabled:cursor-not-allowed"
+            className="tree-item-disclosure relative z-10 inline-flex size-4 shrink-0 items-center justify-center border-0 bg-transparent p-0 outline-none disabled:cursor-not-allowed"
             aria-label={
               item.isLoading()
                 ? `Loading ${(item.getItemData() as TItem | null)?.label ?? item.getId()}`
@@ -331,35 +332,35 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
           </button>
         ) : (
           <span
-            data-slot="jb-tree-item-disclosure-placeholder"
+            data-slot="tree-item-disclosure-placeholder"
             aria-hidden="true"
-            className="jb-tree-item-disclosure-placeholder relative z-10 inline-flex size-4 shrink-0 items-center justify-center"
+            className="tree-item-disclosure-placeholder relative z-10 inline-flex size-4 shrink-0 items-center justify-center"
           />
         )}
         <span
-          data-slot="jb-tree-item-content"
-          className="jb-tree-item-content relative z-10 inline-flex h-5 min-w-0 flex-1 items-center gap-1.5"
+          data-slot="tree-item-content"
+          className="tree-item-content relative z-10 inline-flex h-5 min-w-0 flex-1 items-center gap-ui-compact"
         >
           {(item.getItemData() as TItem | null)?.icon ? (
             <span
-              data-slot="jb-tree-item-icon"
-              className="jb-tree-item-icon inline-flex size-4 shrink-0 items-center justify-center [&>svg]:size-4"
+              data-slot="tree-item-icon"
+              className="tree-item-icon inline-flex size-4 shrink-0 items-center justify-center [&>svg]:size-4"
             >
               {(item.getItemData() as TItem | null)?.icon}
             </span>
           ) : null}
 
           <span
-            data-slot="jb-tree-item-label"
-            className="jb-tree-item-label min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"
+            data-slot="tree-item-label"
+            className="tree-item-label min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"
           >
             {(item.getItemData() as TItem | null)?.label ?? item.getId()}
           </span>
 
           {(item.getItemData() as TItem | null)?.endContent ? (
             <span
-              data-slot="jb-tree-item-end"
-              className="jb-tree-item-end ml-auto pr-0.5 text-[13px] leading-4 font-medium"
+              data-slot="tree-item-end"
+              className="tree-item-end ml-auto pr-ui-hairline text-[13px] leading-4 font-medium text-gray-7 dark:text-gray-7"
             >
               {(item.getItemData() as TItem | null)?.endContent}
             </span>
@@ -388,15 +389,15 @@ function DynamicTree<TItem extends DynamicTreeItemData>({
 
   return (
     <ScrollArea
-      data-slot="jb-tree-scroll-area"
-      className="max-w-full p-2"
+      data-slot="tree-scroll-area"
+      className="max-w-full p-ui-section"
       style={{ width, height }}
     >
-      <ScrollViewport data-slot="jb-tree-scroll-viewport" className="size-full">
+      <ScrollViewport data-slot="tree-scroll-viewport" className="size-full">
         <div
           {...containerProps}
-          data-slot="jb-tree"
-          className="jb-tree jb-dynamic-tree block w-full min-w-[244px] box-border py-2 text-[13px] leading-4 font-medium [font-family:var(--jb-font-sans),sans-serif]"
+          data-slot="tree"
+          className="tree dynamic-tree block w-full min-w-ui-tree box-border bg-transparent py-ui-control-row text-[13px] leading-4 font-medium text-gray-1 dark:text-gray-12 [font-family:var(--font-sans),sans-serif]"
           {...props}
         >
           {items.map((item) => {
@@ -425,7 +426,7 @@ function DynamicTree<TItem extends DynamicTreeItemData>({
                   }}
                 >
                   <div
-                    data-slot="jb-tree-item-context-trigger"
+                    data-slot="tree-item-context-trigger"
                     data-value={item.getId()}
                   >
                     <ItemComponent item={item} indent={indent} />

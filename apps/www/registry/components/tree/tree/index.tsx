@@ -6,7 +6,6 @@ import { cn } from '@workspace/ui/lib/utils';
 import { ChevronDown } from '@/registry/icons/general/general/chevron-down';
 import { ChevronRight } from '@/registry/icons/general/general/chevron-right';
 import { ScrollArea, ScrollViewport } from '@/registry/components/scroll-area';
-import './index.css';
 
 type TreeContextValue = {
   selectedId: string | null;
@@ -44,7 +43,7 @@ const TreeLevelContext = React.createContext(1);
 const GROUP_COLLAPSE_DURATION = 180;
 
 type TreeItemButtonStyle = React.CSSProperties & {
-  '--jb-tree-item-padding-left': string;
+  '--tree-item-padding-left': string;
 };
 
 function useTreeContext() {
@@ -160,10 +159,10 @@ function Tree({
 
   const treeList = (
     <ul
-      data-slot="jb-tree"
+      data-slot="tree"
       role="tree"
       className={cn(
-        'jb-tree jb-static-tree m-0 list-none p-0 block w-full min-w-[244px] box-border py-2 text-[13px] leading-4 font-medium [font-family:var(--jb-font-sans),sans-serif]',
+        'static-tree m-0 block w-full min-w-ui-tree list-none box-border bg-transparent p-0 py-ui-control-row text-[13px] leading-4 font-medium text-gray-1 dark:text-gray-12 [font-family:var(--font-sans),sans-serif]',
         className,
       )}
       style={style}
@@ -178,14 +177,11 @@ function Tree({
   return (
     <TreeContext.Provider value={contextValue}>
       <ScrollArea
-        data-slot="jb-tree-scroll-area"
+        data-slot="tree-scroll-area"
         className={cn('max-w-full', scrollAreaClassName)}
         style={{ width, height }}
       >
-        <ScrollViewport
-          data-slot="jb-tree-scroll-viewport"
-          className="size-full"
-        >
+        <ScrollViewport data-slot="tree-scroll-viewport" className="size-full">
           {treeList}
         </ScrollViewport>
       </ScrollArea>
@@ -220,7 +216,7 @@ function TreeItem({
 
   const rowPaddingLeft = 16 + (level - 1) * indent + Math.max(0, level - 2) * 2;
   const resolvedItemButtonStyle: TreeItemButtonStyle = {
-    '--jb-tree-item-padding-left': `${rowPaddingLeft}px`,
+    '--tree-item-padding-left': `${rowPaddingLeft}px`,
   };
 
   const clearGroupAnimationHandles = React.useCallback(() => {
@@ -339,13 +335,13 @@ function TreeItem({
 
   return (
     <li
-      data-slot="jb-tree-item"
+      data-slot="tree-item"
       data-value={value}
-      className="jb-tree-item m-0 list-none p-0"
+      className="tree-item m-0 list-none p-0"
       {...props}
     >
       <div
-        data-slot="jb-tree-item-button"
+        data-slot="tree-item-button"
         data-value={value}
         data-has-children={hasChildren ? 'true' : undefined}
         data-selected={selected ? 'true' : undefined}
@@ -359,7 +355,28 @@ function TreeItem({
         aria-disabled={disabled ? true : undefined}
         tabIndex={disabled ? -1 : 0}
         className={cn(
-          'jb-tree-item-button relative box-border flex h-6 w-full min-w-0 cursor-default items-center gap-0.5 pr-4 pl-[var(--jb-tree-item-padding-left)] select-none outline-none transition-[color] duration-150 ease-in-out',
+          'tree-item-button relative box-border flex h-6 w-full min-w-0 cursor-default items-center gap-ui-hairline pr-ui-section pl-[var(--tree-item-padding-left)] select-none text-gray-1 outline-none transition-[color] duration-150 ease-in-out',
+          'data-[disabled=true]:cursor-not-allowed data-[disabled=true]:text-gray-8',
+          'data-[selected=true]:text-gray-1',
+          '[&_.tree-item-disclosure]:text-gray-7 [&_.tree-item-icon]:text-gray-6',
+          "[&[data-selected='true']_.tree-item-disclosure]:text-current [&[data-selected='true']_.tree-item-icon]:text-current",
+          "[&[data-disabled='true']_.tree-item-disclosure]:text-gray-8",
+          '[&:not([data-selected=true]):not([data-disabled=true])_.tree-item-disclosure:hover]:text-gray-5',
+          '[&:hover:not([data-disabled=true]):not([data-selected=true])_.tree-item-overlay]:bg-gray-12',
+          '[&:active:not([data-disabled=true]):not([data-selected=true])_.tree-item-overlay]:bg-gray-11',
+          "[&[data-selected='true']_.tree-item-overlay]:bg-blue-11",
+          '[&:focus-visible:not([data-disabled=true])_.tree-item-overlay]:ring-2 [&:focus-visible:not([data-disabled=true])_.tree-item-overlay]:ring-blue-4 [&:focus-visible:not([data-disabled=true])_.tree-item-overlay]:ring-offset-1 [&:focus-visible:not([data-disabled=true])_.tree-item-overlay]:ring-offset-white',
+          // dark
+          'dark:text-gray-12',
+          'dark:data-[disabled=true]:text-gray-7',
+          'dark:data-[selected=true]:text-gray-12',
+          'dark:[&_.tree-item-disclosure]:text-gray-10 dark:[&_.tree-item-icon]:text-gray-10',
+          'dark:[&[data-disabled=true]_.tree-item-disclosure]:text-gray-7',
+          'dark:[&:not([data-selected=true]):not([data-disabled=true])_.tree-item-disclosure:hover]:text-gray-12',
+          'dark:[&:hover:not([data-disabled=true]):not([data-selected=true])_.tree-item-overlay]:bg-gray-3',
+          'dark:[&:active:not([data-disabled=true]):not([data-selected=true])_.tree-item-overlay]:bg-gray-4',
+          "dark:[&[data-selected='true']_.tree-item-overlay]:bg-blue-2",
+          'dark:[&:focus-visible:not([data-disabled=true])_.tree-item-overlay]:ring-blue-6 dark:[&:focus-visible:not([data-disabled=true])_.tree-item-overlay]:ring-offset-gray-2',
           className,
         )}
         style={resolvedItemButtonStyle}
@@ -371,17 +388,17 @@ function TreeItem({
       >
         <span
           aria-hidden="true"
-          data-slot="jb-tree-item-overlay"
-          className="jb-tree-item-overlay pointer-events-none absolute inset-y-0 left-3 right-3 rounded-[4px] transition-[background-color,box-shadow] duration-150 ease-in-out"
+          data-slot="tree-item-overlay"
+          className="tree-item-overlay pointer-events-none absolute inset-y-0 left-ui-tree-overlay right-ui-tree-overlay rounded-[4px] bg-transparent transition-[background-color,box-shadow] duration-150 ease-in-out"
         />
 
         {hasChildren ? (
           <button
-            data-slot="jb-tree-item-disclosure"
+            data-slot="tree-item-disclosure"
             data-value={value}
             data-expanded={expanded ? 'true' : undefined}
             type="button"
-            className="jb-tree-item-disclosure relative z-10 inline-flex size-4 shrink-0 items-center justify-center border-0 bg-transparent p-0 outline-none"
+            className="tree-item-disclosure relative z-10 inline-flex size-4 shrink-0 items-center justify-center border-0 bg-transparent p-0 outline-none disabled:cursor-not-allowed"
             aria-label={
               expanded ? `Collapse ${textLabel}` : `Expand ${textLabel}`
             }
@@ -396,36 +413,36 @@ function TreeItem({
           </button>
         ) : (
           <span
-            data-slot="jb-tree-item-disclosure-placeholder"
+            data-slot="tree-item-disclosure-placeholder"
             aria-hidden="true"
-            className="jb-tree-item-disclosure-placeholder relative z-10 inline-flex size-4 shrink-0 items-center justify-center"
+            className="tree-item-disclosure-placeholder relative z-10 inline-flex size-4 shrink-0 items-center justify-center"
           />
         )}
 
         <span
-          data-slot="jb-tree-item-content"
-          className="jb-tree-item-content relative z-10 inline-flex h-5 min-w-0 flex-1 items-center gap-1.5"
+          data-slot="tree-item-content"
+          className="tree-item-content relative z-10 inline-flex h-5 min-w-0 flex-1 items-center gap-ui-compact"
         >
           {icon ? (
             <span
-              data-slot="jb-tree-item-icon"
-              className="jb-tree-item-icon inline-flex size-4 shrink-0 items-center justify-center [&>svg]:size-4"
+              data-slot="tree-item-icon"
+              className="tree-item-icon inline-flex size-4 shrink-0 items-center justify-center [&>svg]:size-4"
             >
               {icon}
             </span>
           ) : null}
 
           <span
-            data-slot="jb-tree-item-label"
-            className="jb-tree-item-label min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"
+            data-slot="tree-item-label"
+            className="tree-item-label min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"
           >
             {label}
           </span>
 
           {endContent ? (
             <span
-              data-slot="jb-tree-item-end"
-              className="jb-tree-item-end ml-auto pr-0.5 text-[13px] leading-4 font-medium"
+              data-slot="tree-item-end"
+              className="tree-item-end ml-auto pr-ui-hairline text-[13px] leading-4 font-medium text-gray-7 dark:text-gray-7"
             >
               {endContent}
             </span>
@@ -436,10 +453,10 @@ function TreeItem({
       {hasChildren && keepGroupMounted ? (
         <TreeLevelContext.Provider value={level + 1}>
           <div
-            data-slot="jb-tree-group-motion"
+            data-slot="tree-group-motion"
             data-expanded={groupExpanded ? 'true' : undefined}
             data-collapsing={isCollapsing ? 'true' : undefined}
-            className="jb-tree-group-motion"
+            className="tree-group-motion grid min-h-0 grid-rows-[0fr] translate-y-[-2px] opacity-0 pointer-events-none transition-[grid-template-rows,opacity,transform] ease-[var(--ease-out)] [transition-duration:170ms,140ms,170ms] data-[expanded=true]:grid-rows-[1fr] data-[expanded=true]:translate-y-0 data-[expanded=true]:opacity-100 data-[expanded=true]:pointer-events-auto"
             onTransitionEnd={() => {
               if (!groupExpanded) {
                 setKeepGroupMounted(false);
@@ -448,10 +465,10 @@ function TreeItem({
             }}
           >
             <ul
-              data-slot="jb-tree-group"
+              data-slot="tree-group"
               role="group"
               aria-hidden={!expanded}
-              className="jb-tree-group m-0 list-none p-0"
+              className="tree-group m-0 min-h-0 list-none overflow-hidden p-0"
             >
               {children}
             </ul>

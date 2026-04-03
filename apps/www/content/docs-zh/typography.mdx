@@ -1,0 +1,84 @@
+---
+title: 排版
+description: JetBrains UI 的界面排版和编辑器排版体系。
+---
+
+## 来源
+
+- Figma: [Int UI Kit (Community) - Typography / Styles](https://www.figma.com/design/Nvs9fjI2tnvgXIHlHtT8yz/Int-UI-Kit--Community-?node-id=7989-86302&t=a8XXYFCWgPGD6mk5-4)
+- Figma 标题区：[Typography header](https://www.figma.com/design/Nvs9fjI2tnvgXIHlHtT8yz/Int-UI-Kit--Community-?node-id=7989-88720&t=a8XXYFCWgPGD6mk5-4)
+- 官方参考：[Typography](https://plugins.jetbrains.com/docs/intellij/typography.html#ui-font)
+- 最后校对：2026 年 3 月 28 日
+
+JetBrains UI 主要使用两套字体系：
+
+- `Inter`：用于常规界面文本
+- `JetBrains Mono`：用于编辑器风格文本和代码相关内容
+
+IntelliJ 官方文档还强调，UI 字体大小本身属于系统设置。默认 UI 字号是 `13px`，如果需要自定义大小，应该围绕这个基准做受控偏移，而不是随意引入新的独立字号。
+
+## 关于字重的重要说明
+
+Figma 参考页里专门标注：所有被标为 `Medium` 的样式，在实际实现里都应该按 `Regular` 处理，因为 Figma 和 IntelliJ IDE 的渲染结果并不完全一致。
+
+## UI 文本样式
+
+| 样式               | 字体  | Figma 字号 / 行高 | 实现字重   | 典型用途                             |
+| ------------------ | ----- | ----------------- | ---------- | ------------------------------------ |
+| `H1`               | Inter | `20 / 24`         | `Semibold` | 页面标题、对话框标题、一级区块标题   |
+| `H2`               | Inter | `16 / 20`         | `Semibold` | 区块标题、面板标题                   |
+| `Default`          | Inter | `13 / 16`         | `Regular`  | 标签、输入框、树、表格和常规 UI 文本 |
+| `Default semibold` | Inter | `13 / 16`         | `Semibold` | 强调标签和紧凑型标题                 |
+| `Paragraph`        | Inter | `13 / 18`         | `Regular`  | 多行说明文本和帮助文案               |
+| `Medium`           | Inter | `12 / 16`         | `Regular`  | 紧凑次级文本和高密度列表             |
+| `Medium semibold`  | Inter | `12 / 16`         | `Semibold` | 小型分组标题和强调型小文本           |
+
+## Editor 文本样式
+
+| 样式           | 字体           | Figma 字号 / 行高 | 实现字重  | 典型用途                         |
+| -------------- | -------------- | ----------------- | --------- | -------------------------------- |
+| `Default`      | JetBrains Mono | `13 / 22`         | `Regular` | 代码块、行内代码、编辑器风格文本 |
+| `Default bold` | JetBrains Mono | `13 / 22`         | `Bold`    | 需要强调的代码内容               |
+| `Small`        | JetBrains Mono | `12 / 22`         | `Regular` | 行号和紧凑型代码元信息           |
+| `Small bold`   | JetBrains Mono | `12 / 22`         | `Bold`    | 需要强调的小号编辑器文本         |
+
+## 本仓库中的实现
+
+排版 token 定义在 [tokens.css](/Users/mine/WebstormProjects/jetbrains-ui/apps/www/registry/styles/jetbrains/tokens.css)：
+
+- `--font-sans`：UI 字体
+- `--font-mono`：编辑器字体
+- `--text-*`：字号 token
+- `--tracking-*`：字间距 token
+- `text-ui-*` 和 `text-editor-*`：可直接复用的排版样式 class
+
+当前可用的 utility class：
+
+| 样式                  | Utility class              |
+| --------------------- | -------------------------- |
+| `H1`                  | `text-ui-h1`               |
+| `H2`                  | `text-ui-h2`               |
+| `Default`             | `text-ui-default`          |
+| `Default semibold`    | `text-ui-default-semibold` |
+| `Paragraph`           | `text-ui-paragraph`        |
+| `Medium`              | `text-ui-medium`           |
+| `Medium semibold`     | `text-ui-medium-semibold`  |
+| `Editor Default`      | `text-editor-default`      |
+| `Editor Default bold` | `text-editor-default-bold` |
+| `Editor Small`        | `text-editor-small`        |
+| `Editor Small bold`   | `text-editor-small-bold`   |
+
+典型写法：
+
+```tsx
+<h1 className="text-ui-h1">Settings</h1>
+<p className="text-ui-paragraph">这里放帮助说明。</p>
+<code className="text-editor-default">const ready = true;</code>
+```
+
+## 建议
+
+- 组件、表单、菜单和文档正文默认使用 UI 字体。
+- 只有在代码、代码预览或编辑器相关界面里才使用编辑器字体。
+- 尽量复用文档里定义好的字号和行高组合，不要随意拼新的排版规则。
+- 如果必须做自定义字号，也应当把它视为默认 UI 字号的受控偏移，而不是新的独立体系。

@@ -11,11 +11,6 @@
       "path": "registry/components/input/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/input/index.tsx"
-    },
-    {
-      "path": "registry/components/input/index.css",
-      "type": "registry:style",
-      "target": "components/jetbrains-ui/input/index.css"
     }
   ],
   "meta": {

@@ -15,7 +15,7 @@ describe('DynamicTreeDemo', () => {
 
     const disclosure = await waitFor(() => {
       const element = document.querySelector(
-        '[data-slot="jb-tree-item-disclosure"][data-value="dynamic-src"]',
+        '[data-slot="tree-item-disclosure"][data-value="dynamic-src"]',
       ) as HTMLButtonElement | null;
 
       expect(element).toBeTruthy();

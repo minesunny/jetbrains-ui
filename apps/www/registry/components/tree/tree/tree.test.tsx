@@ -25,7 +25,7 @@ describe('Tree', () => {
     );
 
     const scrollArea = document.querySelector(
-      '[data-slot="jb-tree-scroll-area"]',
+      '[data-slot="tree-scroll-area"]',
     ) as HTMLElement;
 
     expect(scrollArea.style.width).toBe('240px');
@@ -44,7 +44,7 @@ describe('Tree', () => {
     );
 
     const disclosure = document.querySelector(
-      '[data-slot="jb-tree-item-disclosure"][data-value="root"]',
+      '[data-slot="tree-item-disclosure"][data-value="root"]',
     ) as HTMLButtonElement;
 
     await user.click(disclosure);
@@ -68,7 +68,7 @@ describe('Tree', () => {
     );
 
     const item = document.querySelector(
-      '[data-slot="jb-tree-item-button"][data-value="child"]',
+      '[data-slot="tree-item-button"][data-value="child"]',
     ) as HTMLDivElement;
 
     await user.click(item);
@@ -87,7 +87,7 @@ describe('Tree', () => {
     );
 
     const item = document.querySelector(
-      '[data-slot="jb-tree-item-button"][data-value="root"]',
+      '[data-slot="tree-item-button"][data-value="root"]',
     ) as HTMLDivElement;
 
     await user.click(item);
@@ -108,7 +108,7 @@ describe('Tree', () => {
     );
 
     const parent = document.querySelector(
-      '[data-slot="jb-tree-item-button"][data-value="root"]',
+      '[data-slot="tree-item-button"][data-value="root"]',
     ) as HTMLDivElement;
 
     parent.focus();

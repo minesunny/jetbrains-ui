@@ -11,11 +11,6 @@
       "path": "registry/components/combo-box/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/combo-box/index.tsx"
-    },
-    {
-      "path": "registry/components/combo-box/index.css",
-      "type": "registry:style",
-      "target": "components/jetbrains-ui/combo-box/index.css"
     }
   ],
   "meta": {

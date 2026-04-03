@@ -31,6 +31,21 @@ export function getBaseOptions(locale: Locale): BaseLayoutProps {
         secondary: false,
       },
       {
+        text: messages.guide.colors,
+        url: '/docs/colors',
+        secondary: false,
+      },
+      {
+        text: messages.guide.typography,
+        url: '/docs/typography',
+        secondary: false,
+      },
+      {
+        text: messages.guide.spacing,
+        url: '/docs/spacing',
+        secondary: false,
+      },
+      {
         text: messages.guide.accessibility,
         url: '/docs/accessibility',
         secondary: false,

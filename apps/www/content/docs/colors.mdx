@@ -1,0 +1,67 @@
+---
+title: Colors
+description: JetBrains UI color ramps, semantic tokens, and theme-aware implementation guidance.
+---
+
+## Source
+
+- Figma: [Int UI Kit (Community) - UI Colors](https://www.figma.com/design/Nvs9fjI2tnvgXIHlHtT8yz/Int-UI-Kit--Community-?node-id=7128-43811&t=a8XXYFCWgPGD6mk5-4)
+- Node: `UI Colors` (`7128:43811`)
+- Official reference: [Platform Theme Colors](https://plugins.jetbrains.com/docs/intellij/platform-theme-colors.html)
+- Last reviewed: March 28, 2026
+
+JetBrains UI uses a two-layer color system:
+
+1. Palette tokens define numbered ramps such as `gray`, `blue`, `green`, `yellow`, `red`, `orange`, `purple`, and `teal`.
+2. Semantic tokens define UI roles such as `--foreground`, `--input-bg`, `--alert-info-border`, and `--tree-item-selected-bg`.
+
+## Palette Rules
+
+- Treat numbered tokens as theme-relative ramps, not fixed brand hex values. The same token name can resolve to a different hex in light and dark themes.
+- Use `gray` for text, backgrounds, separators, borders, and neutral surfaces.
+- Use `blue` for primary actions, links, focus rings, and selected states.
+- Use `green`, `yellow`, and `red` for success, warning, and destructive or error states.
+- Use `orange`, `purple`, and `teal` as supporting accents or category colors, not as the default interaction color.
+
+## Palette Families
+
+| Family   | Typical use in the Figma reference                                                     |
+| -------- | -------------------------------------------------------------------------------------- |
+| `gray`   | Primary and secondary text, hints, separators, tool window surfaces, editor background |
+| `blue`   | Primary buttons, links, focus outlines, selected items, active icons                   |
+| `green`  | Success states and confirmation cues                                                   |
+| `yellow` | Warning states and caution highlights                                                  |
+| `red`    | Error states, destructive actions, and error icons                                     |
+| `orange` | Warm secondary emphasis                                                                |
+| `purple` | Accent or category-specific emphasis                                                   |
+| `teal`   | Accent or category-specific emphasis                                                   |
+
+## Semantic Tokens First
+
+The official IntelliJ guidance favors theme-aware named colors over hardcoded values. In this repository that means:
+
+- Prefer semantic tokens for reusable component styling, for example `bg-input-bg`, `text-input-text`, or `border-alert-info-border`.
+- Use raw palette tokens only when the design is intentionally tied to a palette swatch, for example `bg-blue-4` or `text-gray-14`.
+- Keep light and dark behavior in token definitions instead of branching inside every component.
+
+## Implementation in This Repository
+
+The current token stack is split into two parts:
+
+- Raw palette variables live in [tokens.css](/Users/mine/WebstormProjects/jetbrains-ui/apps/www/registry/styles/jetbrains/tokens.css).
+- Tailwind token utilities are exposed through [globals.css](/Users/mine/WebstormProjects/jetbrains-ui/apps/www/app/globals.css).
+
+That enables both palette and semantic classes:
+
+```tsx
+<div className="bg-blue-4 text-gray-14" />
+<div className="border-input-border bg-input-bg text-input-text" />
+<div className="focus-visible:ring-2 focus-visible:ring-input-ring" />
+```
+
+## Recommendations
+
+- Prefer semantic tokens in component code.
+- Use palette tokens for documentation samples, status chips, or one-off swatch-driven visuals.
+- Avoid hardcoded hex values in components. If a value matters, define a token for it first.
+- Review both themes whenever adding a new palette or semantic mapping.

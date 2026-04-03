@@ -45,8 +45,8 @@ const ScrollBar = React.forwardRef<
     orientation={orientation}
     className={cn(
       'flex select-none data-[state=hidden]:animate-fd-fade-out',
-      orientation === 'vertical' && 'h-full w-1.5',
-      orientation === 'horizontal' && 'h-1.5 flex-col',
+      orientation === 'vertical' && 'h-full w-ui-scrollbar',
+      orientation === 'horizontal' && 'h-ui-scrollbar flex-col',
       className,
     )}
     {...props}

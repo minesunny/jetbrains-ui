@@ -1,263 +1,307 @@
 /**
  * JetBrains Design Tokens
  * JetBrains UI 风格的设计变量
- * 使用 --jb- 前缀避免与现有设计系统冲突
+ * 使用无 `jb` 前缀的 CSS 自定义属性命名
  */
 
 @layer base {
   :root {
     /* ===== Gray 灰色系 ===== */
-    --jb-gray-1: #000000;
-    --jb-gray-2: #27282e;
-    --jb-gray-3: #383a42;
-    --jb-gray-4: #494b57;
-    --jb-gray-5: #5a5d6b;
-    --jb-gray-6: #6c707e;
-    --jb-gray-7: #818594;
-    --jb-gray-8: #a8adbd;
-    --jb-gray-9: #c9ccd6;
-    --jb-gray-10: #d3d5db;
-    --jb-gray-11: #dfe1e5;
-    --jb-gray-12: #ebecf0;
-    --jb-gray-13: #f7f8fa;
-    --jb-gray-14: #ffffff;
+    --gray-1: #000000;
+    --gray-2: #27282e;
+    --gray-3: #383a42;
+    --gray-4: #494b57;
+    --gray-5: #5a5d6b;
+    --gray-6: #6c707e;
+    --gray-7: #818594;
+    --gray-8: #a8adbd;
+    --gray-9: #c9ccd6;
+    --gray-10: #d3d5db;
+    --gray-11: #dfe1e5;
+    --gray-12: #ebecf0;
+    --gray-13: #f7f8fa;
+    --gray-14: #ffffff;
 
     /* ===== Blue 蓝色系 ===== */
-    --jb-blue-1: #2e55a3;
-    --jb-blue-2: #315fbd;
-    --jb-blue-3: #3369d6;
-    --jb-blue-4: #3574f0;
-    --jb-blue-5: #4682fa;
-    --jb-blue-6: #588cf3;
-    --jb-blue-7: #709cf5;
-    --jb-blue-8: #88adf7;
-    --jb-blue-9: #a0bdf8;
-    --jb-blue-10: #c2d6fc;
-    --jb-blue-11: #d4e2ff;
-    --jb-blue-12: #edf3ff;
-    --jb-blue-13: #f5f8fe;
+    --blue-1: #2e55a3;
+    --blue-2: #315fbd;
+    --blue-3: #3369d6;
+    --blue-4: #3574f0;
+    --blue-5: #4682fa;
+    --blue-6: #588cf3;
+    --blue-7: #709cf5;
+    --blue-8: #88adf7;
+    --blue-9: #a0bdf8;
+    --blue-10: #c2d6fc;
+    --blue-11: #d4e2ff;
+    --blue-12: #edf3ff;
+    --blue-13: #f5f8fe;
 
     /* ===== Green 绿色系 ===== */
-    --jb-green-1: #1e6b33;
-    --jb-green-2: #1f7536;
-    --jb-green-3: #1f8039;
-    --jb-green-4: #208a3c;
-    --jb-green-5: #369650;
-    --jb-green-6: #55a76a;
-    --jb-green-7: #89c398;
-    --jb-green-8: #afdbb8;
-    --jb-green-9: #c5e5cc;
-    --jb-green-10: #e3f7e7;
-    --jb-green-11: #f2fcf3;
+    --green-1: #1e6b33;
+    --green-2: #1f7536;
+    --green-3: #1f8039;
+    --green-4: #208a3c;
+    --green-5: #369650;
+    --green-6: #55a76a;
+    --green-7: #89c398;
+    --green-8: #afdbb8;
+    --green-9: #c5e5cc;
+    --green-10: #e3f7e7;
+    --green-11: #f2fcf3;
 
     /* ===== Yellow 黄色系 ===== */
-    --jb-yellow-1: #a46704;
-    --jb-yellow-2: #c27d04;
-    --jb-yellow-3: #df9303;
-    --jb-yellow-4: #ffaf0f;
-    --jb-yellow-5: #fdbd3d;
-    --jb-yellow-6: #fed277;
-    --jb-yellow-7: #fee6b1;
-    --jb-yellow-8: #fff1d1;
-    --jb-yellow-9: #fff5db;
-    --jb-yellow-10: #fffaeb;
+    --yellow-1: #a46704;
+    --yellow-2: #c27d04;
+    --yellow-3: #df9303;
+    --yellow-4: #ffaf0f;
+    --yellow-5: #fdbd3d;
+    --yellow-6: #fed277;
+    --yellow-7: #fee6b1;
+    --yellow-8: #fff1d1;
+    --yellow-9: #fff5db;
+    --yellow-10: #fffaeb;
 
     /* ===== Red 红色系 ===== */
-    --jb-red-1: #ad2b38;
-    --jb-red-2: #bc303e;
-    --jb-red-3: #cc3645;
-    --jb-red-4: #db3b4b;
-    --jb-red-5: #e55765;
-    --jb-red-6: #e46a76;
-    --jb-red-7: #ed99a1;
-    --jb-red-8: #f2b6bb;
-    --jb-red-9: #fad4d8;
-    --jb-red-10: #ffebec;
-    --jb-red-11: #fff2f3;
-    --jb-red-12: #fff7f7;
+    --red-1: #ad2b38;
+    --red-2: #bc303e;
+    --red-3: #cc3645;
+    --red-4: #db3b4b;
+    --red-5: #e55765;
+    --red-6: #e46a76;
+    --red-7: #ed99a1;
+    --red-8: #f2b6bb;
+    --red-9: #fad4d8;
+    --red-10: #ffebec;
+    --red-11: #fff2f3;
+    --red-12: #fff7f7;
 
     /* ===== Orange 橙色系 ===== */
-    --jb-orange-1: #a14916;
-    --jb-orange-2: #b85516;
-    --jb-orange-3: #ce6117;
-    --jb-orange-4: #e56d17;
-    --jb-orange-5: #ec8f4c;
-    --jb-orange-6: #f2b181;
-    --jb-orange-7: #f9d2b6;
-    --jb-orange-8: #ffefe3;
-    --jb-orange-9: #fff4eb;
+    --orange-1: #a14916;
+    --orange-2: #b85516;
+    --orange-3: #ce6117;
+    --orange-4: #e56d17;
+    --orange-5: #ec8f4c;
+    --orange-6: #f2b181;
+    --orange-7: #f9d2b6;
+    --orange-8: #ffefe3;
+    --orange-9: #fff4eb;
 
     /* ===== Teal 青色系 ===== */
-    --jb-teal-1: #096a6e;
-    --jb-teal-2: #077a7f;
-    --jb-teal-3: #058b90;
-    --jb-teal-4: #039ba1;
-    --jb-teal-5: #3fb3b8;
-    --jb-teal-6: #7bcccf;
-    --jb-teal-7: #b6e4e5;
-    --jb-teal-8: #daf4f5;
-    --jb-teal-9: #f2fcfc;
+    --teal-1: #096a6e;
+    --teal-2: #077a7f;
+    --teal-3: #058b90;
+    --teal-4: #039ba1;
+    --teal-5: #3fb3b8;
+    --teal-6: #7bcccf;
+    --teal-7: #b6e4e5;
+    --teal-8: #daf4f5;
+    --teal-9: #f2fcfc;
 
     /* ===== Purple 紫色系 ===== */
-    --jb-purple-1: #55339c;
-    --jb-purple-2: #643cb8;
-    --jb-purple-3: #7444d4;
-    --jb-purple-4: #834df0;
-    --jb-purple-5: #a177f4;
-    --jb-purple-6: #bfa1f8;
-    --jb-purple-7: #dccbfb;
-    --jb-purple-8: #efe5ff;
-    --jb-purple-9: #f5edff;
-    --jb-purple-10: #faf5ff;
+    --purple-1: #55339c;
+    --purple-2: #643cb8;
+    --purple-3: #7444d4;
+    --purple-4: #834df0;
+    --purple-5: #a177f4;
+    --purple-6: #bfa1f8;
+    --purple-7: #dccbfb;
+    --purple-8: #efe5ff;
+    --purple-9: #f5edff;
+    --purple-10: #faf5ff;
 
     /* ===== Semantic Variables 语义变量 ===== */
-    --jb-foreground: var(--jb-gray-12);
-    --jb-background: var(--jb-gray-2);
-    --jb-border: var(--jb-gray-8);
+    --foreground: var(--gray-12);
+    --background: var(--gray-2);
+    --border: var(--gray-8);
 
     /* ===== Typography 排版系统 ===== */
     /* Font Family 字体家族 */
-    --jb-font-sans:
+    --font-sans:
       'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    --jb-font-mono:
+    --font-mono:
       'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo,
       Consolas, 'Liberation Mono', monospace;
 
     /* Font Size 字体大小 */
-    --jb-text-xs: 11px;
-    --jb-text-sm: 12px;
-    --jb-text-base: 13px;
-    --jb-text-md: 14px;
-    --jb-text-lg: 16px;
-    --jb-text-xl: 18px;
-    --jb-text-2xl: 20px;
-    --jb-text-3xl: 24px;
-    --jb-text-4xl: 28px;
-    --jb-text-5xl: 32px;
+    --text-xs: 11px;
+    --text-sm: 12px;
+    --text-base: 13px;
+    --text-md: 14px;
+    --text-lg: 16px;
+    --text-xl: 18px;
+    --text-2xl: 20px;
+    --text-3xl: 24px;
+    --text-4xl: 28px;
+    --text-5xl: 32px;
 
     /* Line Height 行高 */
-    --jb-leading-none: 1;
-    --jb-leading-tight: 1.2;
-    --jb-leading-snug: 1.3;
-    --jb-leading-normal: 1.4;
-    --jb-leading-relaxed: 1.5;
-    --jb-leading-loose: 1.6;
+    --leading-none: 1;
+    --leading-tight: 1.2;
+    --leading-snug: 1.3;
+    --leading-normal: 1.4;
+    --leading-relaxed: 1.5;
+    --leading-loose: 1.6;
 
     /* Font Weight 字重 */
-    --jb-font-normal: 400;
-    --jb-font-medium: 500;
-    --jb-font-semibold: 600;
-    --jb-font-bold: 700;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
 
     /* Letter Spacing 字间距 */
-    --jb-tracking-tighter: -0.02em;
-    --jb-tracking-tight: -0.01em;
-    --jb-tracking-normal: 0;
-    --jb-tracking-wide: 0.01em;
-    --jb-tracking-wider: 0.02em;
+    --tracking-tighter: -0.02em;
+    --tracking-tight: -0.01em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.01em;
+    --tracking-wider: 0.02em;
+
+    /* Typography Styles 排版样式别名 */
+    --typography-ui-h1-font-size: var(--text-2xl);
+    --typography-ui-h1-line-height: 24px;
+    --typography-ui-h1-font-weight: var(--font-semibold);
+
+    --typography-ui-h2-font-size: var(--text-lg);
+    --typography-ui-h2-line-height: 20px;
+    --typography-ui-h2-font-weight: var(--font-semibold);
+
+    --typography-ui-default-font-size: var(--text-base);
+    --typography-ui-default-line-height: 16px;
+    --typography-ui-default-font-weight: var(--font-medium);
+
+    --typography-ui-default-semibold-font-size: var(--text-base);
+    --typography-ui-default-semibold-line-height: 16px;
+    --typography-ui-default-semibold-font-weight: var(--font-semibold);
+
+    --typography-ui-default-underlined-font-size: var(--text-base);
+    --typography-ui-default-underlined-line-height: 16px;
+    --typography-ui-default-underlined-font-weight: var(--font-medium);
+
+    --typography-ui-paragraph-font-size: var(--text-base);
+    --typography-ui-paragraph-line-height: 18px;
+    --typography-ui-paragraph-font-weight: var(--font-medium);
+
+    --typography-ui-medium-font-size: var(--text-sm);
+    --typography-ui-medium-line-height: 16px;
+    --typography-ui-medium-font-weight: var(--font-medium);
+
+    --typography-ui-medium-semibold-font-size: var(--text-sm);
+    --typography-ui-medium-semibold-line-height: 16px;
+    --typography-ui-medium-semibold-font-weight: var(--font-semibold);
+
+    --typography-editor-default-font-size: var(--text-base);
+    --typography-editor-default-line-height: 22px;
+    --typography-editor-default-font-weight: var(--font-medium);
+
+    --typography-editor-default-bold-font-size: var(--text-base);
+    --typography-editor-default-bold-line-height: 22px;
+    --typography-editor-default-bold-font-weight: var(--font-bold);
+
+    --typography-editor-small-font-size: var(--text-sm);
+    --typography-editor-small-line-height: 22px;
+    --typography-editor-small-font-weight: var(--font-medium);
+
+    --typography-editor-small-bold-font-size: var(--text-sm);
+    --typography-editor-small-bold-line-height: 22px;
+    --typography-editor-small-bold-font-weight: var(--font-bold);
 
     /* ===== Spacing 间距系统 ===== */
     /* Base Unit: 4px */
-    --jb-space-0: 0;
-    --jb-space-px: 1px;
-    --jb-space-0_5: 2px;
-    --jb-space-1: 4px;
-    --jb-space-1_5: 6px;
-    --jb-space-2: 8px;
-    --jb-space-2_5: 10px;
-    --jb-space-3: 12px;
-    --jb-space-3_5: 14px;
-    --jb-space-4: 16px;
-    --jb-space-5: 20px;
-    --jb-space-6: 24px;
-    --jb-space-7: 28px;
-    --jb-space-8: 32px;
-    --jb-space-9: 36px;
-    --jb-space-10: 40px;
-    --jb-space-12: 48px;
-    --jb-space-14: 56px;
-    --jb-space-16: 64px;
-    --jb-space-20: 80px;
-    --jb-space-24: 96px;
+    --space-0: 0;
+    --space-px: 1px;
+    --space-0_5: 2px;
+    --space-1: 4px;
+    --space-1_5: 6px;
+    --space-2: 8px;
+    --space-2_5: 10px;
+    --space-3: 12px;
+    --space-3_5: 14px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 28px;
+    --space-8: 32px;
+    --space-9: 36px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-14: 56px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+
+    /* ===== Sizes 控件尺寸 ===== */
+    --size-button-min: 72px;
+    --size-input: 240px;
+    --size-combo: 224px;
+    --size-context-menu: 220px;
+    --size-context-submenu: 196px;
+    --size-dropdown-menu: 128px;
+    --size-tree-min: 244px;
+    --size-alert-default: 370px;
+    --size-alert-wide: 420px;
+    --size-alert-max: 480px;
+    --size-toolbar-item: 26px;
+    --size-menu-icon: 14px;
+    --size-scrollbar: 6px;
 
     /* ===== Border Radius 圆角 ===== */
-    --jb-radius-none: 0;
-    --jb-radius-sm: 2px;
-    --jb-radius-default: 3px;
-    --jb-radius-md: 4px;
-    --jb-radius-lg: 6px;
-    --jb-radius-xl: 8px;
-    --jb-radius-2xl: 12px;
-    --jb-radius-3xl: 16px;
-    --jb-radius-full: 9999px;
+    --radius-none: 0;
+    --radius-sm: 2px;
+    --radius-default: 3px;
+    --radius-md: 4px;
+    --radius-lg: 6px;
+    --radius-xl: 8px;
+    --radius-2xl: 12px;
+    --radius-3xl: 16px;
+    --radius-full: 9999px;
 
     /* ===== Shadows 阴影 ===== */
-    --jb-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --jb-shadow-default:
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-default:
       0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --jb-shadow-md:
+    --shadow-md:
       0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --jb-shadow-lg:
+    --shadow-lg:
       0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --jb-shadow-xl:
+    --shadow-xl:
       0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 
     /* ===== Transitions 过渡动画 ===== */
-    --jb-transition-fast: 100ms;
-    --jb-transition-normal: 150ms;
-    --jb-transition-slow: 200ms;
-    --jb-transition-slower: 300ms;
+    --transition-fast: 100ms;
+    --transition-normal: 150ms;
+    --transition-slow: 200ms;
+    --transition-slower: 300ms;
 
-    --jb-ease-default: cubic-bezier(0.4, 0, 0.2, 1);
-    --jb-ease-in: cubic-bezier(0.4, 0, 1, 1);
-    --jb-ease-out: cubic-bezier(0, 0, 0.2, 1);
-    --jb-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
 
     /* ===== Z-Index 层级 ===== */
-    --jb-z-dropdown: 1000;
-    --jb-z-sticky: 1020;
-    --jb-z-fixed: 1030;
-    --jb-z-modal-backdrop: 1040;
-    --jb-z-modal: 1050;
-    --jb-z-popover: 1060;
-    --jb-z-tooltip: 1070;
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
 
     /* ===== JetBrains Button Specific 按钮专用变量 ===== */
-    --jb-button-radius-sm: 4px;
-    --jb-button-radius-md: 6px;
-    --jb-button-radius-lg: 8px;
+    --button-radius-sm: 4px;
+    --button-radius-md: 6px;
+    --button-radius-lg: 8px;
 
-    --jb-button-hover-scale: 1.02;
-    --jb-button-tap-scale: 0.98;
+    --button-hover-scale: 1.02;
+    --button-tap-scale: 0.98;
 
-    --jb-button-transition-fast: 150ms;
-    --jb-button-transition-normal: 200ms;
+    --button-transition-fast: 150ms;
+    --button-transition-normal: 200ms;
 
     /* ===== Opacity 透明度 ===== */
-    --jb-opacity-disabled: 0.5;
-    --jb-opacity-hover: 0.9;
-    --jb-opacity-active: 0.8;
-
-    /* ===== Button State Colors (Light) 按钮状态颜色 ===== */
-    /* Primary */
-    --jb-btn-primary-bg: var(--jb-blue-4);
-    --jb-btn-primary-bg-hover: var(--jb-blue-3);
-    --jb-btn-primary-bg-pressed: var(--jb-blue-2);
-    --jb-btn-primary-text: var(--jb-gray-14);
-    --jb-btn-primary-ring: var(--jb-blue-4);
-
-    /* Secondary */
-    --jb-btn-secondary-bg: transparent;
-    --jb-btn-secondary-bg-hover: var(--jb-gray-12);
-    --jb-btn-secondary-bg-pressed: var(--jb-gray-11);
-    --jb-btn-secondary-text: var(--jb-gray-1);
-    --jb-btn-secondary-border: var(--jb-gray-9);
-    --jb-btn-secondary-ring: var(--jb-blue-4);
-
-    /* Disabled */
-    --jb-btn-disabled-bg: var(--jb-gray-12);
-    --jb-btn-disabled-text: var(--jb-gray-8);
+    --opacity-disabled: 0.5;
+    --opacity-hover: 0.9;
+    --opacity-active: 0.8;
 
     /* ===== Checkbox State Colors (Light) 复选框状态颜色 ===== */
     /*
@@ -268,55 +312,63 @@
 
     /* --- Unchecked 未选中状态 --- */
     /* Default */
-    --jb-checkbox-unchecked-bg: var(--jb-gray-14);
-    --jb-checkbox-unchecked-border: var(--jb-gray-8);
+    --checkbox-unchecked-bg: var(--gray-14);
+    --checkbox-unchecked-border: var(--gray-8);
     /* Hover */
-    --jb-checkbox-unchecked-bg-hover: var(--jb-gray-14);
-    --jb-checkbox-unchecked-border-hover: var(--jb-gray-6);
+    --checkbox-unchecked-bg-hover: var(--gray-14);
+    --checkbox-unchecked-border-hover: var(--gray-6);
     /* Active/Pressed */
-    --jb-checkbox-unchecked-bg-active: var(--jb-gray-12);
-    --jb-checkbox-unchecked-border-active: var(--jb-gray-5);
+    --checkbox-unchecked-bg-active: var(--gray-12);
+    --checkbox-unchecked-border-active: var(--gray-5);
     /* Focus */
-    --jb-checkbox-unchecked-ring: var(--jb-blue-4);
+    --checkbox-unchecked-ring: var(--blue-4);
     /* Invalid */
-    --jb-checkbox-unchecked-bg-invalid: var(--jb-gray-14);
-    --jb-checkbox-unchecked-border-invalid: var(--jb-red-4);
-    --jb-checkbox-unchecked-ring-invalid: var(--jb-red-4);
+    --checkbox-unchecked-bg-invalid: var(--gray-14);
+    --checkbox-unchecked-border-invalid: var(--red-4);
+    --checkbox-unchecked-ring-invalid: var(--red-4);
     /* Disabled */
-    --jb-checkbox-unchecked-bg-disabled: var(--jb-gray-13);
-    --jb-checkbox-unchecked-border-disabled: var(--jb-gray-11);
+    --checkbox-unchecked-bg-disabled: var(--gray-13);
+    --checkbox-unchecked-border-disabled: var(--gray-11);
 
     /* --- Checked 选中状态 --- */
     /* Default */
-    --jb-checkbox-checked-bg: var(--jb-blue-4);
-    --jb-checkbox-checked-border: var(--jb-blue-4);
-    --jb-checkbox-checked-icon: var(--jb-gray-14);
+    --checkbox-checked-bg: var(--blue-4);
+    --checkbox-checked-border: var(--blue-4);
+    --checkbox-checked-icon: var(--gray-14);
     /* Hover */
-    --jb-checkbox-checked-bg-hover: var(--jb-blue-3);
-    --jb-checkbox-checked-border-hover: var(--jb-blue-3);
+    --checkbox-checked-bg-hover: var(--blue-3);
+    --checkbox-checked-border-hover: var(--blue-3);
     /* Active/Pressed */
-    --jb-checkbox-checked-bg-active: var(--jb-blue-2);
-    --jb-checkbox-checked-border-active: var(--jb-blue-2);
+    --checkbox-checked-bg-active: var(--blue-2);
+    --checkbox-checked-border-active: var(--blue-2);
     /* Focus */
-    --jb-checkbox-checked-ring: var(--jb-blue-4);
+    --checkbox-checked-ring: var(--blue-4);
     /* Invalid */
-    --jb-checkbox-checked-bg-invalid: var(--jb-blue-4);
-    --jb-checkbox-checked-border-invalid: var(--jb-blue-4);
-    --jb-checkbox-checked-icon-invalid: var(--jb-gray-14);
-    --jb-checkbox-checked-ring-invalid: var(--jb-red-4);
+    --checkbox-checked-bg-invalid: var(--blue-4);
+    --checkbox-checked-border-invalid: var(--blue-4);
+    --checkbox-checked-icon-invalid: var(--gray-14);
+    --checkbox-checked-ring-invalid: var(--red-4);
     /* Disabled */
-    --jb-checkbox-checked-bg-disabled: var(--jb-gray-9);
-    --jb-checkbox-checked-border-disabled: var(--jb-gray-9);
-    --jb-checkbox-checked-icon-disabled: var(--jb-gray-14);
+    --checkbox-checked-bg-disabled: var(--gray-9);
+    --checkbox-checked-border-disabled: var(--gray-9);
+    --checkbox-checked-icon-disabled: var(--gray-14);
 
     /* --- Indeterminate 不确定状态 (继承 checked 的大部分样式) --- */
-    --jb-checkbox-indeterminate-bg: var(--jb-blue-4);
-    --jb-checkbox-indeterminate-border: var(--jb-blue-4);
-    --jb-checkbox-indeterminate-icon: var(--jb-gray-14);
-    --jb-checkbox-indeterminate-bg-hover: var(--jb-blue-3);
-    --jb-checkbox-indeterminate-bg-active: var(--jb-blue-2);
-    --jb-checkbox-indeterminate-bg-disabled: var(--jb-gray-9);
-    --jb-checkbox-indeterminate-icon-disabled: var(--jb-gray-14);
+    --checkbox-indeterminate-bg: var(--blue-4);
+    --checkbox-indeterminate-border: var(--blue-4);
+    --checkbox-indeterminate-icon: var(--gray-14);
+    --checkbox-indeterminate-bg-hover: var(--blue-3);
+    --checkbox-indeterminate-border-hover: var(--blue-3);
+    --checkbox-indeterminate-bg-active: var(--blue-2);
+    --checkbox-indeterminate-border-active: var(--blue-2);
+    --checkbox-indeterminate-ring: var(--blue-4);
+    --checkbox-indeterminate-border-invalid: var(--blue-4);
+    --checkbox-indeterminate-ring-invalid: var(--red-4);
+    --checkbox-indeterminate-bg-disabled: var(--gray-9);
+    --checkbox-indeterminate-border-disabled: var(--gray-9);
+    --checkbox-indeterminate-icon-disabled: var(--gray-14);
+    --checkbox-label: var(--gray-1);
+    --checkbox-label-disabled: var(--gray-8);
 
     /* ===== Radio Button State Colors (Light) 单选按钮状态颜色 ===== */
     /*
@@ -327,297 +379,314 @@
 
     /* --- Unchecked 未选中状态 --- */
     /* Default */
-    --jb-radio-unchecked-bg: var(--jb-gray-14);
-    --jb-radio-unchecked-border: var(--jb-gray-8);
+    --radio-unchecked-bg: var(--gray-14);
+    --radio-unchecked-border: var(--gray-8);
     /* Hover */
-    --jb-radio-unchecked-bg-hover: var(--jb-gray-13);
-    --jb-radio-unchecked-border-hover: var(--jb-gray-6);
+    --radio-unchecked-bg-hover: var(--gray-13);
+    --radio-unchecked-border-hover: var(--gray-6);
     /* Active/Pressed */
-    --jb-radio-unchecked-bg-active: var(--jb-gray-12);
-    --jb-radio-unchecked-border-active: var(--jb-gray-5);
+    --radio-unchecked-bg-active: var(--gray-12);
+    --radio-unchecked-border-active: var(--gray-5);
     /* Focus */
-    --jb-radio-unchecked-ring: var(--jb-blue-4);
+    --radio-unchecked-ring: var(--blue-4);
     /* Invalid */
-    --jb-radio-unchecked-bg-invalid: var(--jb-gray-14);
-    --jb-radio-unchecked-border-invalid: var(--jb-red-4);
-    --jb-radio-unchecked-ring-invalid: var(--jb-red-4);
+    --radio-unchecked-bg-invalid: var(--gray-14);
+    --radio-unchecked-border-invalid: var(--red-4);
+    --radio-unchecked-ring-invalid: var(--red-4);
     /* Disabled */
-    --jb-radio-unchecked-bg-disabled: var(--jb-gray-12);
-    --jb-radio-unchecked-border-disabled: var(--jb-gray-10);
+    --radio-unchecked-bg-disabled: var(--gray-12);
+    --radio-unchecked-border-disabled: var(--gray-10);
 
     /* --- Checked 选中状态 --- */
     /* Default */
-    --jb-radio-checked-bg: var(--jb-gray-14);
-    --jb-radio-checked-border: var(--jb-blue-4);
-    --jb-radio-checked-indicator: var(--jb-blue-4);
+    --radio-checked-bg: var(--gray-14);
+    --radio-checked-border: var(--blue-4);
+    --radio-checked-indicator: var(--blue-4);
     /* Hover */
-    --jb-radio-checked-bg-hover: var(--jb-gray-13);
-    --jb-radio-checked-border-hover: var(--jb-blue-3);
-    --jb-radio-checked-indicator-hover: var(--jb-blue-3);
+    --radio-checked-bg-hover: var(--gray-13);
+    --radio-checked-border-hover: var(--blue-3);
+    --radio-checked-indicator-hover: var(--blue-3);
     /* Active/Pressed */
-    --jb-radio-checked-bg-active: var(--jb-gray-12);
-    --jb-radio-checked-border-active: var(--jb-blue-2);
-    --jb-radio-checked-indicator-active: var(--jb-blue-2);
+    --radio-checked-bg-active: var(--gray-12);
+    --radio-checked-border-active: var(--blue-2);
+    --radio-checked-indicator-active: var(--blue-2);
     /* Focus */
-    --jb-radio-checked-ring: var(--jb-blue-4);
+    --radio-checked-ring: var(--blue-4);
     /* Invalid */
-    --jb-radio-checked-bg-invalid: var(--jb-gray-14);
-    --jb-radio-checked-border-invalid: var(--jb-red-4);
-    --jb-radio-checked-indicator-invalid: var(--jb-red-4);
-    --jb-radio-checked-ring-invalid: var(--jb-red-4);
+    --radio-checked-bg-invalid: var(--gray-14);
+    --radio-checked-border-invalid: var(--red-4);
+    --radio-checked-indicator-invalid: var(--red-4);
+    --radio-checked-ring-invalid: var(--red-4);
     /* Disabled */
-    --jb-radio-checked-bg-disabled: var(--jb-gray-12);
-    --jb-radio-checked-border-disabled: var(--jb-gray-10);
-    --jb-radio-checked-indicator-disabled: var(--jb-gray-8);
+    --radio-checked-bg-disabled: var(--gray-12);
+    --radio-checked-border-disabled: var(--gray-10);
+    --radio-checked-indicator-disabled: var(--gray-8);
 
     /* ===== Select/Combobox State Colors (Light) 下拉选择框状态颜色 ===== */
     /* Trigger 触发器 */
-    --jb-select-trigger-bg: var(--jb-gray-14);
-    --jb-select-trigger-bg-hover: var(--jb-gray-13);
-    --jb-select-trigger-bg-active: var(--jb-gray-12);
-    --jb-select-trigger-border: var(--jb-gray-8);
-    --jb-select-trigger-border-hover: var(--jb-gray-6);
-    --jb-select-trigger-border-active: var(--jb-blue-4);
-    --jb-select-trigger-text: var(--jb-gray-1);
-    --jb-select-trigger-placeholder: var(--jb-gray-7);
-    --jb-select-trigger-icon: var(--jb-gray-6);
-    --jb-select-trigger-ring: var(--jb-blue-4);
+    --select-trigger-bg: var(--gray-14);
+    --select-trigger-bg-hover: var(--gray-13);
+    --select-trigger-bg-active: var(--gray-12);
+    --select-trigger-border: var(--gray-8);
+    --select-trigger-border-hover: var(--gray-6);
+    --select-trigger-border-active: var(--blue-4);
+    --select-trigger-text: var(--gray-1);
+    --select-trigger-placeholder: var(--gray-7);
+    --select-trigger-icon: var(--gray-6);
+    --select-trigger-ring: var(--blue-4);
     /* Trigger Invalid */
-    --jb-select-trigger-border-invalid: var(--jb-red-4);
-    --jb-select-trigger-ring-invalid: var(--jb-red-4);
+    --select-trigger-border-invalid: var(--red-4);
+    --select-trigger-ring-invalid: var(--red-4);
     /* Trigger Disabled */
-    --jb-select-trigger-bg-disabled: var(--jb-gray-12);
-    --jb-select-trigger-border-disabled: var(--jb-gray-10);
-    --jb-select-trigger-text-disabled: var(--jb-gray-8);
+    --select-trigger-bg-disabled: var(--gray-12);
+    --select-trigger-border-disabled: var(--gray-10);
+    --select-trigger-text-disabled: var(--gray-8);
 
     /* Content 下拉内容 */
-    --jb-select-content-bg: var(--jb-gray-14);
-    --jb-select-content-border: var(--jb-gray-9);
-    --jb-select-content-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --select-content-bg: var(--gray-14);
+    --select-content-border: var(--gray-9);
+    --select-content-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
     /* Item 选项 */
-    --jb-select-item-bg: transparent;
-    --jb-select-item-bg-hover: var(--jb-gray-12);
-    --jb-select-item-bg-selected: var(--jb-blue-12);
-    --jb-select-item-text: var(--jb-gray-1);
-    --jb-select-item-text-hover: var(--jb-gray-1);
-    --jb-select-item-text-selected: var(--jb-blue-1);
-    --jb-select-item-icon: var(--jb-blue-4);
+    --select-item-bg: transparent;
+    --select-item-bg-hover: var(--gray-12);
+    --select-item-bg-selected: var(--blue-12);
+    --select-item-text: var(--gray-1);
+    --select-item-text-hover: var(--gray-1);
+    --select-item-text-selected: var(--blue-1);
+    --select-item-icon: var(--blue-4);
     /* Item Disabled */
-    --jb-select-item-text-disabled: var(--jb-gray-8);
+    --select-item-text-disabled: var(--gray-8);
 
     /* Group Label */
-    --jb-select-label-text: var(--jb-gray-6);
+    --select-label-text: var(--gray-6);
 
     /* Separator */
-    --jb-select-separator: var(--jb-gray-11);
+    --select-separator: var(--gray-11);
 
     /* Scroll Button */
-    --jb-select-scroll-btn-bg: var(--jb-gray-13);
-    --jb-select-scroll-btn-icon: var(--jb-gray-6);
+    --select-scroll-btn-bg: var(--gray-13);
+    --select-scroll-btn-icon: var(--gray-6);
 
     /* ===== Input/Textarea State Colors (Light) 输入类组件状态颜色 ===== */
-    --jb-input-bg: var(--jb-gray-14);
-    --jb-input-bg-hover: var(--jb-gray-13);
-    --jb-input-border: var(--jb-gray-8);
-    --jb-input-border-hover: var(--jb-gray-6);
-    --jb-input-border-active: var(--jb-blue-4);
-    --jb-input-text: var(--jb-gray-1);
-    --jb-input-placeholder: var(--jb-gray-7);
-    --jb-input-ring: var(--jb-blue-4);
-    --jb-input-border-invalid: var(--jb-red-4);
-    --jb-input-ring-invalid: var(--jb-red-4);
-    --jb-input-bg-disabled: var(--jb-gray-12);
-    --jb-input-border-disabled: var(--jb-gray-10);
-    --jb-input-text-disabled: var(--jb-gray-8);
-    --jb-input-placeholder-disabled: var(--jb-gray-8);
+    --input-bg: var(--gray-14);
+    --input-bg-hover: var(--gray-13);
+    --input-border: var(--gray-8);
+    --input-border-hover: var(--gray-6);
+    --input-border-active: var(--blue-4);
+    --input-text: var(--gray-1);
+    --input-placeholder: var(--gray-7);
+    --input-ring: var(--blue-4);
+    --input-border-invalid: var(--red-4);
+    --input-ring-invalid: var(--red-4);
+    --input-bg-disabled: var(--gray-12);
+    --input-border-disabled: var(--gray-10);
+    --input-text-disabled: var(--gray-8);
+    --input-placeholder-disabled: var(--gray-8);
 
     /* ===== Alert State Colors (Light) 提示组件颜色 ===== */
-    --jb-alert-bg: var(--jb-gray-14);
-    --jb-alert-border: var(--jb-gray-10);
-    --jb-alert-text: var(--jb-gray-2);
-    --jb-alert-description: var(--jb-gray-5);
-    --jb-alert-icon-default: var(--jb-gray-2);
+    --alert-bg: var(--gray-14);
+    --alert-border: var(--gray-10);
+    --alert-text: var(--gray-2);
+    --alert-description: var(--gray-5);
 
-    --jb-alert-info-bg: var(--jb-gray-14);
-    --jb-alert-info-border: var(--jb-blue-8);
-    --jb-alert-info-text: var(--jb-gray-2);
-    --jb-alert-icon-info: var(--jb-blue-3);
+    --alert-info-bg: var(--gray-14);
+    --alert-info-border: var(--blue-8);
+    --alert-info-text: var(--gray-2);
 
-    --jb-alert-success-bg: var(--jb-gray-14);
-    --jb-alert-success-border: var(--jb-green-7);
-    --jb-alert-success-text: var(--jb-gray-2);
-    --jb-alert-icon-success: var(--jb-green-3);
+    --alert-warning-bg: var(--gray-14);
+    --alert-warning-border: var(--yellow-6);
+    --alert-warning-text: var(--gray-2);
 
-    --jb-alert-warning-bg: var(--jb-gray-14);
-    --jb-alert-warning-border: var(--jb-yellow-6);
-    --jb-alert-warning-text: var(--jb-gray-2);
-    --jb-alert-icon-warning: #8a5700;
-
-    --jb-alert-destructive-bg: var(--jb-gray-14);
-    --jb-alert-destructive-border: var(--jb-red-7);
-    --jb-alert-destructive-text: var(--jb-gray-2);
-    --jb-alert-icon-destructive: var(--jb-red-4);
-
-    --jb-alert-action-bg: transparent;
-    --jb-alert-action-bg-hover: transparent;
-    --jb-alert-action-border: transparent;
-    --jb-alert-action-text: var(--jb-blue-4);
-    --jb-alert-action-text-hover: var(--jb-blue-3);
-    --jb-alert-action-ring: var(--jb-blue-4);
-
+    --alert-destructive-bg: var(--gray-14);
+    --alert-destructive-border: var(--red-7);
+    --alert-destructive-text: var(--gray-2);
     /* ===== Tabs State Colors (Light) 标签页状态颜色 ===== */
-    --jb-tabs-list-bg: var(--jb-gray-12);
-    --jb-tabs-trigger-text: var(--jb-gray-6);
-    --jb-tabs-trigger-text-hover: var(--jb-gray-1);
-    --jb-tabs-trigger-bg-hover: var(--jb-gray-11);
-    --jb-tabs-trigger-bg-active: var(--jb-gray-14);
-    --jb-tabs-trigger-text-active: var(--jb-gray-1);
-    --jb-tabs-trigger-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
-    --jb-tabs-trigger-ring: var(--jb-blue-4);
-    --jb-tabs-content-bg: var(--jb-gray-14);
-    --jb-tabs-content-border: var(--jb-gray-10);
-    --jb-tabs-content-text: var(--jb-gray-2);
+    --tabs-list-bg: var(--gray-12);
+    --tabs-trigger-text: var(--gray-6);
+    --tabs-trigger-text-hover: var(--gray-1);
+    --tabs-trigger-bg-hover: var(--gray-11);
+    --tabs-trigger-bg-active: var(--gray-14);
+    --tabs-trigger-text-active: var(--gray-1);
+    --tabs-trigger-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
+    --tabs-trigger-ring: var(--blue-4);
+    --tabs-content-bg: var(--gray-14);
+    --tabs-content-border: var(--gray-10);
+    --tabs-content-text: var(--gray-2);
+
+    /* ===== Combo Box State Colors (Light) 组合框状态颜色 ===== */
+    --combo-box-trigger-border-invalid-soft: var(--red-9);
+    --combo-box-trigger-border-invalid-focus: var(--red-4);
+
+    /* ===== Context Menu State Colors (Light) 上下文菜单状态颜色 ===== */
+    --context-menu-item-danger: var(--red-3);
+    --context-menu-item-danger-bg-hover: var(--red-10);
+
+    /* ===== Tree State Colors (Light) 树组件状态颜色 ===== */
+    --tree-bg: transparent;
+    --tree-text: var(--gray-1);
+    --tree-muted: var(--gray-7);
+    --tree-icon: var(--gray-6);
+    --tree-disclosure: var(--gray-7);
+    --tree-disclosure-hover: var(--gray-5);
+    --tree-item-hover-bg: var(--gray-12);
+    --tree-item-active-bg: var(--gray-11);
+    --tree-item-selected-bg: var(--blue-11);
+    --tree-item-selected-text: var(--gray-1);
+    --tree-focus-ring: var(--blue-4);
+    --tree-focus-ring-offset: var(--gray-14);
+    --tree-disabled-text: var(--gray-8);
+
+    /* ===== Resizable State Colors (Light) 可调整面板状态颜色 ===== */
+    --resizable-handle-bg: var(--gray-10);
+    --resizable-handle-bg-hover: var(--blue-9);
+    --resizable-handle-bg-pressed: var(--blue-4);
+    --resizable-handle-ring: var(--blue-4);
+    --resizable-handle-focus-offset: var(--gray-14);
+    --resizable-grip-bg: var(--gray-14);
+    --resizable-grip-bg-hover: var(--blue-13);
+    --resizable-grip-bg-pressed: var(--blue-13);
+    --resizable-grip-border: var(--gray-9);
+    --resizable-grip-border-hover: var(--blue-8);
+    --resizable-grip-border-pressed: var(--blue-8);
+    --resizable-grip-indicator: var(--gray-7);
+    --resizable-grip-indicator-hover: var(--blue-3);
+    --resizable-grip-indicator-pressed: var(--blue-3);
+
+    /* ===== Toolbar State Colors (Light) 工具栏状态颜色 ===== */
+    --toolbar-bg: transparent;
+    --toolbar-border: transparent;
+    --toolbar-shadow: none;
+    --toolbar-text: var(--gray-6);
+    --toolbar-text-hover: var(--gray-2);
+    --toolbar-item-bg-hover: var(--gray-12);
+    --toolbar-focus-ring: var(--blue-4);
+    --toolbar-focus-offset: var(--gray-14);
+    --toolbar-separator: var(--gray-10);
+    --toolbar-disabled: var(--gray-8);
+    --toolbar-floating-bg: color-mix(in srgb, var(--gray-14) 94%, transparent);
+    --toolbar-floating-border: var(--gray-10);
+    --toolbar-floating-shadow: 0 3px 10px rgba(39, 40, 46, 0.12);
   }
 
   .dark {
     /* ===== Gray 灰色系（暗色模式）===== */
-    --jb-gray-1: #1e1f22;
-    --jb-gray-2: #2b2d30;
-    --jb-gray-3: #393b40;
-    --jb-gray-4: #43454a;
-    --jb-gray-5: #4e5157;
-    --jb-gray-6: #5a5d63;
-    --jb-gray-7: #6f737a;
-    --jb-gray-8: #868a91;
-    --jb-gray-9: #9da0a8;
-    --jb-gray-10: #b4b8bf;
-    --jb-gray-11: #ced0d6;
-    --jb-gray-12: #dfe1e5;
-    --jb-gray-13: #f0f1f2;
-    --jb-gray-14: #ffffff;
+    --gray-1: #1e1f22;
+    --gray-2: #2b2d30;
+    --gray-3: #393b40;
+    --gray-4: #43454a;
+    --gray-5: #4e5157;
+    --gray-6: #5a5d63;
+    --gray-7: #6f737a;
+    --gray-8: #868a91;
+    --gray-9: #9da0a8;
+    --gray-10: #b4b8bf;
+    --gray-11: #ced0d6;
+    --gray-12: #dfe1e5;
+    --gray-13: #f0f1f2;
+    --gray-14: #ffffff;
 
     /* ===== Blue 蓝色系（暗色模式）===== */
-    --jb-blue-1: #25324d;
-    --jb-blue-2: #2e436e;
-    --jb-blue-3: #35538f;
-    --jb-blue-4: #375fad;
-    --jb-blue-5: #366ace;
-    --jb-blue-6: #3574f0;
-    --jb-blue-7: #467ff2;
-    --jb-blue-8: #548af7;
-    --jb-blue-9: #6b9bfa;
-    --jb-blue-10: #83acfc;
-    --jb-blue-11: #99bbff;
-    --jb-blue-12: #b5ceff;
-    --jb-blue-13: #d1e0ff;
+    --blue-1: #25324d;
+    --blue-2: #2e436e;
+    --blue-3: #35538f;
+    --blue-4: #375fad;
+    --blue-5: #366ace;
+    --blue-6: #3574f0;
+    --blue-7: #467ff2;
+    --blue-8: #548af7;
+    --blue-9: #6b9bfa;
+    --blue-10: #83acfc;
+    --blue-11: #99bbff;
+    --blue-12: #b5ceff;
+    --blue-13: #d1e0ff;
 
     /* ===== Green 绿色系（暗色模式）===== */
-    --jb-green-1: #253627;
-    --jb-green-2: #273828;
-    --jb-green-3: #375239;
-    --jb-green-4: #436946;
-    --jb-green-5: #4e8052;
-    --jb-green-6: #57965c;
-    --jb-green-7: #5fad65;
-    --jb-green-8: #73bd79;
-    --jb-green-9: #89cc8e;
-    --jb-green-10: #a0dba5;
-    --jb-green-11: #b9ebbd;
-    --jb-green-12: #d4fad7;
+    --green-1: #253627;
+    --green-2: #273828;
+    --green-3: #375239;
+    --green-4: #436946;
+    --green-5: #4e8052;
+    --green-6: #57965c;
+    --green-7: #5fad65;
+    --green-8: #73bd79;
+    --green-9: #89cc8e;
+    --green-10: #a0dba5;
+    --green-11: #b9ebbd;
+    --green-12: #d4fad7;
 
     /* ===== Yellow 黄色系（暗色模式）===== */
-    --jb-yellow-1: #3d3223;
-    --jb-yellow-2: #5e4d33;
-    --jb-yellow-3: #826a41;
-    --jb-yellow-4: #9e814a;
-    --jb-yellow-5: #ba9752;
-    --jb-yellow-6: #d6ae58;
-    --jb-yellow-7: #f2c55c;
-    --jb-yellow-8: #f5d273;
-    --jb-yellow-9: #f7de8b;
-    --jb-yellow-10: #fceba4;
-    --jb-yellow-11: #fff6bd;
+    --yellow-1: #3d3223;
+    --yellow-2: #5e4d33;
+    --yellow-3: #826a41;
+    --yellow-4: #9e814a;
+    --yellow-5: #ba9752;
+    --yellow-6: #d6ae58;
+    --yellow-7: #f2c55c;
+    --yellow-8: #f5d273;
+    --yellow-9: #f7de8b;
+    --yellow-10: #fceba4;
+    --yellow-11: #fff6bd;
 
     /* ===== Red 红色系（暗色模式）===== */
-    --jb-red-1: #402929;
-    --jb-red-2: #472b2b;
-    --jb-red-3: #5e3838;
-    --jb-red-4: #7a4343;
-    --jb-red-5: #9c4e4e;
-    --jb-red-6: #bd5757;
-    --jb-red-7: #db5c5c;
-    --jb-red-8: #e37774;
-    --jb-red-9: #eb938d;
-    --jb-red-10: #f2b1aa;
-    --jb-red-11: #f7ccc6;
-    --jb-red-12: #fae3de;
+    --red-1: #402929;
+    --red-2: #472b2b;
+    --red-3: #5e3838;
+    --red-4: #7a4343;
+    --red-5: #9c4e4e;
+    --red-6: #bd5757;
+    --red-7: #db5c5c;
+    --red-8: #e37774;
+    --red-9: #eb938d;
+    --red-10: #f2b1aa;
+    --red-11: #f7ccc6;
+    --red-12: #fae3de;
 
     /* ===== Orange 橙色系（暗色模式）===== */
-    --jb-orange-1: #45322b;
-    --jb-orange-2: #614438;
-    --jb-orange-3: #825845;
-    --jb-orange-4: #a36b4e;
-    --jb-orange-5: #c27a53;
-    --jb-orange-6: #e08855;
-    --jb-orange-7: #e5986c;
-    --jb-orange-8: #f0ac81;
-    --jb-orange-9: #f5bd98;
-    --jb-orange-10: #faceaf;
-    --jb-orange-11: #ffdfc7;
+    --orange-1: #45322b;
+    --orange-2: #614438;
+    --orange-3: #825845;
+    --orange-4: #a36b4e;
+    --orange-5: #c27a53;
+    --orange-6: #e08855;
+    --orange-7: #e5986c;
+    --orange-8: #f0ac81;
+    --orange-9: #f5bd98;
+    --orange-10: #faceaf;
+    --orange-11: #ffdfc7;
 
     /* ===== Purple 紫色系（暗色模式）===== */
-    --jb-purple-1: #2f2936;
-    --jb-purple-2: #3b3147;
-    --jb-purple-3: #433358;
-    --jb-purple-4: #583d7a;
-    --jb-purple-5: #6c469c;
-    --jb-purple-6: #8150be;
-    --jb-purple-7: #955ae0;
-    --jb-purple-8: #a571e6;
-    --jb-purple-9: #b589ec;
-    --jb-purple-10: #c4a0f3;
-    --jb-purple-11: #d4b8f9;
-    --jb-purple-12: #e4ceff;
+    --purple-1: #2f2936;
+    --purple-2: #3b3147;
+    --purple-3: #433358;
+    --purple-4: #583d7a;
+    --purple-5: #6c469c;
+    --purple-6: #8150be;
+    --purple-7: #955ae0;
+    --purple-8: #a571e6;
+    --purple-9: #b589ec;
+    --purple-10: #c4a0f3;
+    --purple-11: #d4b8f9;
+    --purple-12: #e4ceff;
 
     /* ===== Teal 青色系（暗色模式）===== */
-    --jb-teal-1: #1d3838;
-    --jb-teal-2: #1d3d3b;
-    --jb-teal-3: #1e4d4a;
-    --jb-teal-4: #20635d;
-    --jb-teal-5: #21786f;
-    --jb-teal-6: #238e82;
-    --jb-teal-7: #24a394;
-    --jb-teal-8: #42b1a4;
-    --jb-teal-9: #60c0b5;
-    --jb-teal-10: #7dcec5;
-    --jb-teal-11: #9bddd6;
-    --jb-teal-12: #b9ebe6;
+    --teal-1: #1d3838;
+    --teal-2: #1d3d3b;
+    --teal-3: #1e4d4a;
+    --teal-4: #20635d;
+    --teal-5: #21786f;
+    --teal-6: #238e82;
+    --teal-7: #24a394;
+    --teal-8: #42b1a4;
+    --teal-9: #60c0b5;
+    --teal-10: #7dcec5;
+    --teal-11: #9bddd6;
+    --teal-12: #b9ebe6;
 
     /* ===== Semantic Variables 语义变量（暗色模式）===== */
-    --jb-foreground: var(--jb-gray-12);
-    --jb-background: var(--jb-gray-2);
-    --jb-border: var(--jb-gray-8);
-
-    /* ===== Button State Colors (Dark) 按钮状态颜色 ===== */
-    /* Primary */
-    --jb-btn-primary-bg: var(--jb-blue-6);
-    --jb-btn-primary-bg-hover: var(--jb-blue-5);
-    --jb-btn-primary-bg-pressed: var(--jb-blue-4);
-    --jb-btn-primary-text: var(--jb-gray-14);
-    --jb-btn-primary-ring: var(--jb-blue-6);
-
-    /* Secondary */
-    --jb-btn-secondary-bg: var(--jb-gray-5);
-    --jb-btn-secondary-bg-hover: var(--jb-gray-6);
-    --jb-btn-secondary-bg-pressed: var(--jb-gray-4);
-    --jb-btn-secondary-text: var(--jb-gray-12);
-    --jb-btn-secondary-border: var(--jb-gray-5);
-    --jb-btn-secondary-ring: var(--jb-blue-6);
-
-    /* Disabled */
-    --jb-btn-disabled-bg: var(--jb-gray-4);
-    --jb-btn-disabled-text: var(--jb-gray-7);
+    --foreground: var(--gray-12);
+    --background: var(--gray-2);
+    --border: var(--gray-8);
 
     /* ===== Checkbox State Colors (Dark) 复选框状态颜色 ===== */
     /*
@@ -628,55 +697,63 @@
 
     /* --- Unchecked 未选中状态 --- */
     /* Default */
-    --jb-checkbox-unchecked-bg: transparent;
-    --jb-checkbox-unchecked-border: var(--jb-gray-6);
+    --checkbox-unchecked-bg: transparent;
+    --checkbox-unchecked-border: var(--gray-6);
     /* Hover */
-    --jb-checkbox-unchecked-bg-hover: transparent;
-    --jb-checkbox-unchecked-border-hover: var(--jb-gray-7);
+    --checkbox-unchecked-bg-hover: transparent;
+    --checkbox-unchecked-border-hover: var(--gray-7);
     /* Active/Pressed */
-    --jb-checkbox-unchecked-bg-active: transparent;
-    --jb-checkbox-unchecked-border-active: var(--jb-gray-8);
+    --checkbox-unchecked-bg-active: transparent;
+    --checkbox-unchecked-border-active: var(--gray-8);
     /* Focus */
-    --jb-checkbox-unchecked-ring: var(--jb-blue-6);
+    --checkbox-unchecked-ring: var(--blue-6);
     /* Invalid */
-    --jb-checkbox-unchecked-bg-invalid: transparent;
-    --jb-checkbox-unchecked-border-invalid: var(--jb-red-7);
-    --jb-checkbox-unchecked-ring-invalid: var(--jb-red-7);
+    --checkbox-unchecked-bg-invalid: transparent;
+    --checkbox-unchecked-border-invalid: var(--red-7);
+    --checkbox-unchecked-ring-invalid: var(--red-7);
     /* Disabled */
-    --jb-checkbox-unchecked-bg-disabled: var(--jb-gray-3);
-    --jb-checkbox-unchecked-border-disabled: var(--jb-gray-6);
+    --checkbox-unchecked-bg-disabled: var(--gray-3);
+    --checkbox-unchecked-border-disabled: var(--gray-6);
 
     /* --- Checked 选中状态 --- */
     /* Default */
-    --jb-checkbox-checked-bg: var(--jb-blue-6);
-    --jb-checkbox-checked-border: var(--jb-blue-6);
-    --jb-checkbox-checked-icon: var(--jb-gray-14);
+    --checkbox-checked-bg: var(--blue-6);
+    --checkbox-checked-border: var(--blue-6);
+    --checkbox-checked-icon: var(--gray-14);
     /* Hover */
-    --jb-checkbox-checked-bg-hover: var(--jb-blue-5);
-    --jb-checkbox-checked-border-hover: var(--jb-blue-5);
+    --checkbox-checked-bg-hover: var(--blue-5);
+    --checkbox-checked-border-hover: var(--blue-5);
     /* Active/Pressed */
-    --jb-checkbox-checked-bg-active: var(--jb-blue-4);
-    --jb-checkbox-checked-border-active: var(--jb-blue-4);
+    --checkbox-checked-bg-active: var(--blue-4);
+    --checkbox-checked-border-active: var(--blue-4);
     /* Focus */
-    --jb-checkbox-checked-ring: var(--jb-blue-6);
+    --checkbox-checked-ring: var(--blue-6);
     /* Invalid */
-    --jb-checkbox-checked-bg-invalid: var(--jb-blue-6);
-    --jb-checkbox-checked-border-invalid: var(--jb-blue-6);
-    --jb-checkbox-checked-icon-invalid: var(--jb-gray-14);
-    --jb-checkbox-checked-ring-invalid: var(--jb-red-7);
+    --checkbox-checked-bg-invalid: var(--blue-6);
+    --checkbox-checked-border-invalid: var(--blue-6);
+    --checkbox-checked-icon-invalid: var(--gray-14);
+    --checkbox-checked-ring-invalid: var(--red-7);
     /* Disabled */
-    --jb-checkbox-checked-bg-disabled: var(--jb-gray-3);
-    --jb-checkbox-checked-border-disabled: var(--jb-gray-3);
-    --jb-checkbox-checked-icon-disabled: var(--jb-gray-8);
+    --checkbox-checked-bg-disabled: var(--gray-3);
+    --checkbox-checked-border-disabled: var(--gray-3);
+    --checkbox-checked-icon-disabled: var(--gray-8);
 
     /* --- Indeterminate 不确定状态 (继承 checked 的大部分样式) --- */
-    --jb-checkbox-indeterminate-bg: var(--jb-blue-6);
-    --jb-checkbox-indeterminate-border: var(--jb-blue-6);
-    --jb-checkbox-indeterminate-icon: var(--jb-gray-14);
-    --jb-checkbox-indeterminate-bg-hover: var(--jb-blue-5);
-    --jb-checkbox-indeterminate-bg-active: var(--jb-blue-4);
-    --jb-checkbox-indeterminate-bg-disabled: var(--jb-gray-3);
-    --jb-checkbox-indeterminate-icon-disabled: var(--jb-gray-8);
+    --checkbox-indeterminate-bg: var(--blue-6);
+    --checkbox-indeterminate-border: var(--blue-6);
+    --checkbox-indeterminate-icon: var(--gray-14);
+    --checkbox-indeterminate-bg-hover: var(--blue-5);
+    --checkbox-indeterminate-border-hover: var(--blue-5);
+    --checkbox-indeterminate-bg-active: var(--blue-4);
+    --checkbox-indeterminate-border-active: var(--blue-4);
+    --checkbox-indeterminate-ring: var(--blue-6);
+    --checkbox-indeterminate-border-invalid: var(--blue-6);
+    --checkbox-indeterminate-ring-invalid: var(--red-7);
+    --checkbox-indeterminate-bg-disabled: var(--gray-3);
+    --checkbox-indeterminate-border-disabled: var(--gray-3);
+    --checkbox-indeterminate-icon-disabled: var(--gray-8);
+    --checkbox-label: var(--gray-12);
+    --checkbox-label-disabled: var(--gray-7);
 
     /* ===== Radio Button State Colors (Dark) 单选按钮状态颜色 ===== */
     /*
@@ -687,156 +764,604 @@
 
     /* --- Unchecked 未选中状态 --- */
     /* Default */
-    --jb-radio-unchecked-bg: var(--jb-gray-3);
-    --jb-radio-unchecked-border: var(--jb-gray-6);
+    --radio-unchecked-bg: var(--gray-3);
+    --radio-unchecked-border: var(--gray-6);
     /* Hover */
-    --jb-radio-unchecked-bg-hover: var(--jb-gray-4);
-    --jb-radio-unchecked-border-hover: var(--jb-gray-7);
+    --radio-unchecked-bg-hover: var(--gray-4);
+    --radio-unchecked-border-hover: var(--gray-7);
     /* Active/Pressed */
-    --jb-radio-unchecked-bg-active: var(--jb-gray-5);
-    --jb-radio-unchecked-border-active: var(--jb-gray-8);
+    --radio-unchecked-bg-active: var(--gray-5);
+    --radio-unchecked-border-active: var(--gray-8);
     /* Focus */
-    --jb-radio-unchecked-ring: var(--jb-blue-6);
+    --radio-unchecked-ring: var(--blue-6);
     /* Invalid */
-    --jb-radio-unchecked-bg-invalid: var(--jb-gray-3);
-    --jb-radio-unchecked-border-invalid: var(--jb-red-7);
-    --jb-radio-unchecked-ring-invalid: var(--jb-red-7);
+    --radio-unchecked-bg-invalid: var(--gray-3);
+    --radio-unchecked-border-invalid: var(--red-7);
+    --radio-unchecked-ring-invalid: var(--red-7);
     /* Disabled */
-    --jb-radio-unchecked-bg-disabled: var(--jb-gray-4);
-    --jb-radio-unchecked-border-disabled: var(--jb-gray-5);
+    --radio-unchecked-bg-disabled: var(--gray-4);
+    --radio-unchecked-border-disabled: var(--gray-5);
 
     /* --- Checked 选中状态 --- */
     /* Default */
-    --jb-radio-checked-bg: var(--jb-gray-3);
-    --jb-radio-checked-border: var(--jb-blue-6);
-    --jb-radio-checked-indicator: var(--jb-blue-6);
+    --radio-checked-bg: var(--gray-3);
+    --radio-checked-border: var(--blue-6);
+    --radio-checked-indicator: var(--blue-6);
     /* Hover */
-    --jb-radio-checked-bg-hover: var(--jb-gray-4);
-    --jb-radio-checked-border-hover: var(--jb-blue-5);
-    --jb-radio-checked-indicator-hover: var(--jb-blue-5);
+    --radio-checked-bg-hover: var(--gray-4);
+    --radio-checked-border-hover: var(--blue-5);
+    --radio-checked-indicator-hover: var(--blue-5);
     /* Active/Pressed */
-    --jb-radio-checked-bg-active: var(--jb-gray-5);
-    --jb-radio-checked-border-active: var(--jb-blue-4);
-    --jb-radio-checked-indicator-active: var(--jb-blue-4);
+    --radio-checked-bg-active: var(--gray-5);
+    --radio-checked-border-active: var(--blue-4);
+    --radio-checked-indicator-active: var(--blue-4);
     /* Focus */
-    --jb-radio-checked-ring: var(--jb-blue-6);
+    --radio-checked-ring: var(--blue-6);
     /* Invalid */
-    --jb-radio-checked-bg-invalid: var(--jb-gray-3);
-    --jb-radio-checked-border-invalid: var(--jb-red-7);
-    --jb-radio-checked-indicator-invalid: var(--jb-red-7);
-    --jb-radio-checked-ring-invalid: var(--jb-red-7);
+    --radio-checked-bg-invalid: var(--gray-3);
+    --radio-checked-border-invalid: var(--red-7);
+    --radio-checked-indicator-invalid: var(--red-7);
+    --radio-checked-ring-invalid: var(--red-7);
     /* Disabled */
-    --jb-radio-checked-bg-disabled: var(--jb-gray-4);
-    --jb-radio-checked-border-disabled: var(--jb-gray-5);
-    --jb-radio-checked-indicator-disabled: var(--jb-gray-7);
+    --radio-checked-bg-disabled: var(--gray-4);
+    --radio-checked-border-disabled: var(--gray-5);
+    --radio-checked-indicator-disabled: var(--gray-7);
 
     /* ===== Select/Combobox State Colors (Dark) 下拉选择框状态颜色 ===== */
     /* Trigger 触发器 */
-    --jb-select-trigger-bg: var(--jb-gray-3);
-    --jb-select-trigger-bg-hover: var(--jb-gray-4);
-    --jb-select-trigger-bg-active: var(--jb-gray-5);
-    --jb-select-trigger-border: var(--jb-gray-6);
-    --jb-select-trigger-border-hover: var(--jb-gray-7);
-    --jb-select-trigger-border-active: var(--jb-blue-6);
-    --jb-select-trigger-text: var(--jb-gray-12);
-    --jb-select-trigger-placeholder: var(--jb-gray-8);
-    --jb-select-trigger-icon: var(--jb-gray-8);
-    --jb-select-trigger-ring: var(--jb-blue-6);
+    --select-trigger-bg: var(--gray-3);
+    --select-trigger-bg-hover: var(--gray-4);
+    --select-trigger-bg-active: var(--gray-5);
+    --select-trigger-border: var(--gray-6);
+    --select-trigger-border-hover: var(--gray-7);
+    --select-trigger-border-active: var(--blue-6);
+    --select-trigger-text: var(--gray-12);
+    --select-trigger-placeholder: var(--gray-8);
+    --select-trigger-icon: var(--gray-8);
+    --select-trigger-ring: var(--blue-6);
     /* Trigger Invalid */
-    --jb-select-trigger-border-invalid: var(--jb-red-7);
-    --jb-select-trigger-ring-invalid: var(--jb-red-7);
+    --select-trigger-border-invalid: var(--red-7);
+    --select-trigger-ring-invalid: var(--red-7);
     /* Trigger Disabled */
-    --jb-select-trigger-bg-disabled: var(--jb-gray-4);
-    --jb-select-trigger-border-disabled: var(--jb-gray-5);
-    --jb-select-trigger-text-disabled: var(--jb-gray-7);
+    --select-trigger-bg-disabled: var(--gray-4);
+    --select-trigger-border-disabled: var(--gray-5);
+    --select-trigger-text-disabled: var(--gray-7);
 
     /* Content 下拉内容 */
-    --jb-select-content-bg: var(--jb-gray-2);
-    --jb-select-content-border: var(--jb-gray-5);
-    --jb-select-content-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --select-content-bg: var(--gray-2);
+    --select-content-border: var(--gray-5);
+    --select-content-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 
     /* Item 选项 */
-    --jb-select-item-bg: transparent;
-    --jb-select-item-bg-hover: var(--jb-gray-4);
-    --jb-select-item-bg-selected: var(--jb-blue-2);
-    --jb-select-item-text: var(--jb-gray-12);
-    --jb-select-item-text-hover: var(--jb-gray-12);
-    --jb-select-item-text-selected: var(--jb-gray-12);
-    --jb-select-item-icon: var(--jb-blue-6);
+    --select-item-bg: transparent;
+    --select-item-bg-hover: var(--gray-4);
+    --select-item-bg-selected: var(--blue-2);
+    --select-item-text: var(--gray-12);
+    --select-item-text-hover: var(--gray-12);
+    --select-item-text-selected: var(--gray-12);
+    --select-item-icon: var(--blue-6);
     /* Item Disabled */
-    --jb-select-item-text-disabled: var(--jb-gray-7);
+    --select-item-text-disabled: var(--gray-7);
 
     /* Group Label */
-    --jb-select-label-text: var(--jb-gray-8);
+    --select-label-text: var(--gray-8);
 
     /* Separator */
-    --jb-select-separator: var(--jb-gray-5);
+    --select-separator: var(--gray-5);
 
     /* Scroll Button */
-    --jb-select-scroll-btn-bg: var(--jb-gray-3);
-    --jb-select-scroll-btn-icon: var(--jb-gray-8);
+    --select-scroll-btn-bg: var(--gray-3);
+    --select-scroll-btn-icon: var(--gray-8);
 
     /* ===== Input/Textarea State Colors (Dark) 输入类组件状态颜色 ===== */
-    --jb-input-bg: var(--jb-gray-3);
-    --jb-input-bg-hover: var(--jb-gray-4);
-    --jb-input-border: var(--jb-gray-6);
-    --jb-input-border-hover: var(--jb-gray-7);
-    --jb-input-border-active: var(--jb-blue-6);
-    --jb-input-text: var(--jb-gray-12);
-    --jb-input-placeholder: var(--jb-gray-8);
-    --jb-input-ring: var(--jb-blue-6);
-    --jb-input-border-invalid: var(--jb-red-7);
-    --jb-input-ring-invalid: var(--jb-red-7);
-    --jb-input-bg-disabled: var(--jb-gray-4);
-    --jb-input-border-disabled: var(--jb-gray-5);
-    --jb-input-text-disabled: var(--jb-gray-7);
-    --jb-input-placeholder-disabled: var(--jb-gray-7);
+    --input-bg: var(--gray-3);
+    --input-bg-hover: var(--gray-4);
+    --input-border: var(--gray-6);
+    --input-border-hover: var(--gray-7);
+    --input-border-active: var(--blue-6);
+    --input-text: var(--gray-12);
+    --input-placeholder: var(--gray-8);
+    --input-ring: var(--blue-6);
+    --input-border-invalid: var(--red-7);
+    --input-ring-invalid: var(--red-7);
+    --input-bg-disabled: var(--gray-4);
+    --input-border-disabled: var(--gray-5);
+    --input-text-disabled: var(--gray-7);
+    --input-placeholder-disabled: var(--gray-7);
 
     /* ===== Alert State Colors (Dark) 提示组件颜色 ===== */
-    --jb-alert-bg: var(--jb-gray-3);
-    --jb-alert-border: var(--jb-gray-6);
-    --jb-alert-text: var(--jb-gray-12);
-    --jb-alert-description: var(--jb-gray-9);
-    --jb-alert-icon-default: var(--jb-gray-12);
+    --alert-bg: var(--gray-3);
+    --alert-border: var(--gray-6);
+    --alert-text: var(--gray-12);
+    --alert-description: var(--gray-9);
 
-    --jb-alert-info-bg: var(--jb-gray-3);
-    --jb-alert-info-border: var(--jb-blue-7);
-    --jb-alert-info-text: var(--jb-gray-12);
-    --jb-alert-icon-info: var(--jb-blue-10);
+    --alert-info-bg: var(--gray-3);
+    --alert-info-border: var(--blue-7);
+    --alert-info-text: var(--gray-12);
 
-    --jb-alert-success-bg: var(--jb-gray-3);
-    --jb-alert-success-border: var(--jb-green-7);
-    --jb-alert-success-text: var(--jb-gray-12);
-    --jb-alert-icon-success: var(--jb-green-10);
+    --alert-warning-bg: var(--gray-3);
+    --alert-warning-border: var(--yellow-7);
+    --alert-warning-text: var(--gray-12);
 
-    --jb-alert-warning-bg: var(--jb-gray-3);
-    --jb-alert-warning-border: var(--jb-yellow-7);
-    --jb-alert-warning-text: var(--jb-gray-12);
-    --jb-alert-icon-warning: var(--jb-yellow-10);
-
-    --jb-alert-destructive-bg: var(--jb-gray-3);
-    --jb-alert-destructive-border: var(--jb-red-8);
-    --jb-alert-destructive-text: var(--jb-gray-12);
-    --jb-alert-icon-destructive: var(--jb-red-10);
-
-    --jb-alert-action-bg: transparent;
-    --jb-alert-action-bg-hover: transparent;
-    --jb-alert-action-border: transparent;
-    --jb-alert-action-text: var(--jb-blue-10);
-    --jb-alert-action-text-hover: var(--jb-blue-11);
-    --jb-alert-action-ring: var(--jb-blue-6);
-
+    --alert-destructive-bg: var(--gray-3);
+    --alert-destructive-border: var(--red-8);
+    --alert-destructive-text: var(--gray-12);
     /* ===== Tabs State Colors (Dark) 标签页状态颜色 ===== */
-    --jb-tabs-list-bg: var(--jb-gray-4);
-    --jb-tabs-trigger-text: var(--jb-gray-8);
-    --jb-tabs-trigger-text-hover: var(--jb-gray-12);
-    --jb-tabs-trigger-bg-hover: var(--jb-gray-5);
-    --jb-tabs-trigger-bg-active: var(--jb-gray-3);
-    --jb-tabs-trigger-text-active: var(--jb-gray-12);
-    --jb-tabs-trigger-shadow: 0 1px 2px rgb(0 0 0 / 0.32);
-    --jb-tabs-trigger-ring: var(--jb-blue-6);
-    --jb-tabs-content-bg: var(--jb-gray-3);
-    --jb-tabs-content-border: var(--jb-gray-5);
-    --jb-tabs-content-text: var(--jb-gray-11);
+    --tabs-list-bg: var(--gray-4);
+    --tabs-trigger-text: var(--gray-8);
+    --tabs-trigger-text-hover: var(--gray-12);
+    --tabs-trigger-bg-hover: var(--gray-5);
+    --tabs-trigger-bg-active: var(--gray-3);
+    --tabs-trigger-text-active: var(--gray-12);
+    --tabs-trigger-shadow: 0 1px 2px rgb(0 0 0 / 0.32);
+    --tabs-trigger-ring: var(--blue-6);
+    --tabs-content-bg: var(--gray-3);
+    --tabs-content-border: var(--gray-5);
+    --tabs-content-text: var(--gray-11);
+
+    /* ===== Combo Box State Colors (Dark) 组合框状态颜色 ===== */
+    --combo-box-trigger-border-invalid-soft: var(--red-3);
+    --combo-box-trigger-border-invalid-focus: var(--red-7);
+
+    /* ===== Context Menu State Colors (Dark) 上下文菜单状态颜色 ===== */
+    --context-menu-item-danger: var(--red-7);
+    --context-menu-item-danger-bg-hover: color-mix(
+      in srgb,
+      var(--red-3) 16%,
+      transparent
+    );
+
+    /* ===== Tree State Colors (Dark) 树组件状态颜色 ===== */
+    --tree-bg: transparent;
+    --tree-text: var(--gray-12);
+    --tree-muted: var(--gray-7);
+    --tree-icon: var(--gray-10);
+    --tree-disclosure: var(--gray-10);
+    --tree-disclosure-hover: var(--gray-12);
+    --tree-item-hover-bg: var(--gray-3);
+    --tree-item-active-bg: var(--gray-4);
+    --tree-item-selected-bg: var(--blue-2);
+    --tree-item-selected-text: var(--gray-12);
+    --tree-focus-ring: var(--blue-6);
+    --tree-focus-ring-offset: var(--gray-2);
+    --tree-disabled-text: var(--gray-7);
+
+    /* ===== Resizable State Colors (Dark) 可调整面板状态颜色 ===== */
+    --resizable-handle-bg: var(--gray-5);
+    --resizable-handle-bg-hover: var(--blue-7);
+    --resizable-handle-bg-pressed: var(--blue-6);
+    --resizable-handle-ring: var(--blue-6);
+    --resizable-handle-focus-offset: var(--gray-2);
+    --resizable-grip-bg: var(--gray-2);
+    --resizable-grip-bg-hover: var(--gray-3);
+    --resizable-grip-bg-pressed: var(--gray-3);
+    --resizable-grip-border: var(--gray-5);
+    --resizable-grip-border-hover: var(--blue-6);
+    --resizable-grip-border-pressed: var(--blue-6);
+    --resizable-grip-indicator: var(--gray-8);
+    --resizable-grip-indicator-hover: var(--gray-14);
+    --resizable-grip-indicator-pressed: var(--gray-14);
+
+    /* ===== Toolbar State Colors (Dark) 工具栏状态颜色 ===== */
+    --toolbar-text: var(--gray-10);
+    --toolbar-text-hover: var(--gray-12);
+    --toolbar-item-bg-hover: var(--gray-4);
+    --toolbar-focus-ring: var(--blue-6);
+    --toolbar-focus-offset: var(--gray-2);
+    --toolbar-separator: var(--gray-5);
+    --toolbar-disabled: var(--gray-7);
+    --toolbar-floating-bg: color-mix(in srgb, var(--gray-2) 94%, transparent);
+    --toolbar-floating-border: var(--gray-5);
+    --toolbar-floating-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
+  }
+}
+
+@layer utilities {
+  .font-ui {
+    font-family: var(--font-sans);
+  }
+
+  .font-editor {
+    font-family: var(--font-mono);
+  }
+
+  .text-ui-h1 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-ui-h1-font-size);
+    line-height: var(--typography-ui-h1-line-height);
+    font-weight: var(--typography-ui-h1-font-weight);
+  }
+
+  .text-ui-h2 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-ui-h2-font-size);
+    line-height: var(--typography-ui-h2-line-height);
+    font-weight: var(--typography-ui-h2-font-weight);
+  }
+
+  .text-ui-default {
+    font-family: var(--font-sans);
+    font-size: var(--typography-ui-default-font-size);
+    line-height: var(--typography-ui-default-line-height);
+    font-weight: var(--typography-ui-default-font-weight);
+  }
+
+  .text-ui-default-semibold {
+    font-family: var(--font-sans);
+    font-size: var(--typography-ui-default-semibold-font-size);
+    line-height: var(--typography-ui-default-semibold-line-height);
+    font-weight: var(--typography-ui-default-semibold-font-weight);
+  }
+
+  .text-ui-default-underlined {
+    font-family: var(--font-sans);
+    font-size: var(--typography-ui-default-underlined-font-size);
+    line-height: var(--typography-ui-default-underlined-line-height);
+    font-weight: var(--typography-ui-default-underlined-font-weight);
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+  }
+
+  .text-ui-paragraph {
+    font-family: var(--font-sans);
+    font-size: var(--typography-ui-paragraph-font-size);
+    line-height: var(--typography-ui-paragraph-line-height);
+    font-weight: var(--typography-ui-paragraph-font-weight);
+  }
+
+  .text-ui-medium {
+    font-family: var(--font-sans);
+    font-size: var(--typography-ui-medium-font-size);
+    line-height: var(--typography-ui-medium-line-height);
+    font-weight: var(--typography-ui-medium-font-weight);
+  }
+
+  .text-ui-medium-semibold {
+    font-family: var(--font-sans);
+    font-size: var(--typography-ui-medium-semibold-font-size);
+    line-height: var(--typography-ui-medium-semibold-line-height);
+    font-weight: var(--typography-ui-medium-semibold-font-weight);
+  }
+
+  .text-editor-default {
+    font-family: var(--font-mono);
+    font-size: var(--typography-editor-default-font-size);
+    line-height: var(--typography-editor-default-line-height);
+    font-weight: var(--typography-editor-default-font-weight);
+  }
+
+  .text-editor-default-bold {
+    font-family: var(--font-mono);
+    font-size: var(--typography-editor-default-bold-font-size);
+    line-height: var(--typography-editor-default-bold-line-height);
+    font-weight: var(--typography-editor-default-bold-font-weight);
+  }
+
+  .text-editor-small {
+    font-family: var(--font-mono);
+    font-size: var(--typography-editor-small-font-size);
+    line-height: var(--typography-editor-small-line-height);
+    font-weight: var(--typography-editor-small-font-weight);
+  }
+
+  .text-editor-small-bold {
+    font-family: var(--font-mono);
+    font-size: var(--typography-editor-small-bold-font-size);
+    line-height: var(--typography-editor-small-bold-line-height);
+    font-weight: var(--typography-editor-small-bold-font-weight);
+  }
+
+  .p-ui-surface {
+    padding: var(--space-1);
+  }
+
+  .p-ui-section {
+    padding: var(--space-2);
+  }
+
+  .p-ui-panel {
+    padding: var(--space-3);
+  }
+
+  .px-ui-control {
+    padding-inline: var(--space-3);
+  }
+
+  .px-ui-compact {
+    padding-inline: var(--space-1_5);
+  }
+
+  .px-ui-tight {
+    padding-inline: var(--space-1);
+  }
+
+  .px-ui-toolbar-item {
+    padding-inline: calc(var(--space-1) + var(--space-px));
+  }
+
+  .px-ui-item {
+    padding-inline: var(--space-2);
+  }
+
+  .px-ui-tab {
+    padding-inline: var(--space-2_5);
+  }
+
+  .py-ui-item {
+    padding-block: var(--space-1);
+  }
+
+  .py-ui-compact {
+    padding-block: var(--space-1_5);
+  }
+
+  .py-ui-tight {
+    padding-block: var(--space-1);
+  }
+
+  .py-ui-toolbar-item {
+    padding-block: calc(var(--space-1) + var(--space-px));
+  }
+
+  .py-ui-label {
+    padding-block: var(--space-1_5);
+  }
+
+  .py-ui-control-row {
+    padding-block: var(--space-2);
+  }
+
+  .pl-ui-control {
+    padding-inline-start: var(--space-3);
+  }
+
+  .pl-ui-item {
+    padding-inline-start: var(--space-2);
+  }
+
+  .pl-ui-item-indicator {
+    padding-inline-start: var(--space-7);
+  }
+
+  .pl-ui-section {
+    padding-inline-start: var(--space-8);
+  }
+
+  .pl-ui-control-focus {
+    padding-inline-start: calc(var(--space-3) - var(--space-px));
+  }
+
+  .pl-ui-alert {
+    padding-inline-start: calc(var(--space-12) + var(--space-3));
+  }
+
+  .pr-ui-item {
+    padding-inline-end: var(--space-2);
+  }
+
+  .pr-ui-sub-trigger {
+    padding-inline-end: var(--space-1_5);
+  }
+
+  .pr-ui-section {
+    padding-inline-end: var(--space-4);
+  }
+
+  .pr-ui-hairline {
+    padding-inline-end: var(--space-0_5);
+  }
+
+  .pr-ui-alert {
+    padding-inline-end: var(--space-5);
+  }
+
+  .pt-ui-alert {
+    padding-block-start: var(--space-5);
+  }
+
+  .pb-ui-alert {
+    padding-block-end: calc(var(--space-16) + var(--space-0_5));
+  }
+
+  .left-ui-alert-icon {
+    left: calc(var(--space-4) + var(--space-0_5) + var(--space-px));
+  }
+
+  .top-ui-alert-icon {
+    top: calc(var(--space-4) + var(--space-0_5) + var(--space-px));
+  }
+
+  .left-ui-alert-footer {
+    left: calc(var(--space-4) + var(--space-0_5) + var(--space-px));
+  }
+
+  .right-ui-alert-footer {
+    right: calc(var(--space-4) + var(--space-0_5) + var(--space-px));
+  }
+
+  .bottom-ui-alert-footer {
+    bottom: calc(var(--space-3) + var(--space-px));
+  }
+
+  .gap-ui-control {
+    gap: var(--space-2);
+  }
+
+  .gap-ui-compact {
+    gap: var(--space-1_5);
+  }
+
+  .gap-ui-tight {
+    gap: var(--space-1);
+  }
+
+  .gap-ui-hairline {
+    gap: var(--space-0_5);
+  }
+
+  .gap-ui-actions {
+    gap: var(--space-3);
+  }
+
+  .mt-ui-control-row {
+    margin-block-start: var(--space-2);
+  }
+
+  .my-ui-hairline {
+    margin-block: var(--space-0_5);
+  }
+
+  .mx-ui-surface {
+    margin-inline: var(--space-1);
+  }
+
+  .\-mx-ui-surface {
+    margin-inline: calc(var(--space-1) * -1);
+  }
+
+  .my-ui-surface {
+    margin-block: var(--space-1);
+  }
+
+  .h-ui-hairline {
+    height: var(--space-px);
+  }
+
+  .w-ui-hairline {
+    width: var(--space-px);
+  }
+
+  .h-ui-scrollbar {
+    height: var(--size-scrollbar);
+  }
+
+  .w-ui-scrollbar {
+    width: var(--size-scrollbar);
+  }
+
+  .size-ui-item-icon {
+    width: var(--size-menu-icon);
+    height: var(--size-menu-icon);
+  }
+
+  .min-w-ui-button {
+    min-width: var(--size-button-min);
+  }
+
+  .w-ui-input {
+    width: var(--size-input);
+  }
+
+  .w-ui-combo {
+    width: var(--size-combo);
+  }
+
+  .min-w-ui-combo {
+    min-width: var(--size-combo);
+  }
+
+  .min-w-ui-context-menu {
+    min-width: var(--size-context-menu);
+  }
+
+  .min-w-ui-context-submenu {
+    min-width: var(--size-context-submenu);
+  }
+
+  .min-w-ui-dropdown {
+    min-width: var(--size-dropdown-menu);
+  }
+
+  .min-w-ui-tree {
+    min-width: var(--size-tree-min);
+  }
+
+  .w-ui-alert {
+    width: var(--size-alert-default);
+  }
+
+  .w-ui-alert-wide {
+    width: var(--size-alert-wide);
+  }
+
+  .min-w-ui-alert {
+    min-width: var(--size-alert-default);
+  }
+
+  .max-w-ui-alert {
+    max-width: var(--size-alert-max);
+  }
+
+  .min-w-ui-toolbar-item {
+    min-width: var(--size-toolbar-item);
+  }
+
+  .min-h-ui-toolbar-item {
+    min-height: var(--size-toolbar-item);
+  }
+
+  .left-ui-tree-overlay {
+    left: var(--space-3);
+  }
+
+  .right-ui-tree-overlay {
+    right: var(--space-3);
+  }
+
+  .toolbar-item-separator-vertical::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    right: calc(var(--space-px) * -1);
+    top: calc(var(--space-1) + var(--space-px));
+    bottom: calc(var(--space-1) + var(--space-px));
+    width: var(--space-px);
+    background-color: var(--toolbar-separator);
+  }
+
+  .toolbar-item-separator-horizontal::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    bottom: calc(var(--space-px) * -1);
+    left: calc(var(--space-1) + var(--space-px));
+    right: calc(var(--space-1) + var(--space-px));
+    height: var(--space-px);
+    background-color: var(--toolbar-separator);
+  }
+
+  .resizable-handle {
+    width: var(--space-px);
+  }
+
+  .resizable-handle::after {
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: 50%;
+    width: var(--space-1);
+    transform: translateX(-50%);
+  }
+
+  .resizable-handle[aria-orientation='horizontal'],
+  .resizable-handle[data-orientation='horizontal'] {
+    height: var(--space-px);
+    width: 100%;
+    cursor: row-resize;
+  }
+
+  .resizable-handle[aria-orientation='horizontal']::after,
+  .resizable-handle[data-orientation='horizontal']::after {
+    inset-block: auto;
+    inset-inline-start: 0;
+    inset-block-start: 50%;
+    width: 100%;
+    height: var(--space-1);
+    transform: translateY(-50%);
+  }
+
+  .resizable-handle[aria-orientation='horizontal'] .resizable-handle__grip,
+  .resizable-handle[data-orientation='horizontal'] .resizable-handle__grip {
+    transform: rotate(90deg);
   }
 }

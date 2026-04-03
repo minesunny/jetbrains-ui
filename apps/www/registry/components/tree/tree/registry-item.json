@@ -16,11 +16,6 @@
       "path": "registry/components/tree/tree/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/tree/tree/index.tsx"
-    },
-    {
-      "path": "registry/components/tree/tree/index.css",
-      "type": "registry:style",
-      "target": "components/jetbrains-ui/tree/tree/index.css"
     }
   ],
   "meta": {
