@@ -5,7 +5,7 @@
   "title": "Alert Dialog Demo",
   "description": "警告对话框组件的演示",
   "dependencies": ["@radix-ui/react-alert-dialog"],
-  "registryDependencies": ["@jetbrains-ui/alert-dialog"],
+  "registryDependencies": ["@jetbrains-ui/alert-dialog", "@jetbrains-ui/buttons"],
   "files": [
     {
       "path": "registry/demo/components/alert-dialog/index.tsx",

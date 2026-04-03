@@ -36,7 +36,15 @@
       ]
     },
     "demoProps": {
-      "AlertDialog": {}
+      "AlertDialog": {
+        "variant": {
+          "value": "default",
+          "options": {
+            "default": "default",
+            "destructive": "destructive"
+          }
+        }
+      }
     }
   }
 }

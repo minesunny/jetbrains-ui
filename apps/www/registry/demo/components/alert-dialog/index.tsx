@@ -12,6 +12,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/registry/components/alert-dialog';
+import { Button } from '@/registry/components/button';
 
 type AlertDialogVariant = 'default' | 'destructive';
 
@@ -27,9 +28,9 @@ export default function AlertDialogDemo({
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <button className="inline-flex h-7 items-center justify-center rounded border border-gray-9 bg-transparent px-3 text-ui-default text-gray-1 transition-[background-color,color,border-color,box-shadow] duration-150 ease-in-out hover:bg-gray-12 hover:text-gray-1 active:bg-gray-11 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-gray-5 dark:bg-gray-5 dark:text-gray-12 dark:hover:bg-gray-6 dark:focus-visible:ring-blue-6 dark:focus-visible:ring-offset-gray-2">
+        <Button variant="secondary">
           {isDestructive ? 'Delete Account' : 'Show Dialog'}
-        </button>
+        </Button>
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
