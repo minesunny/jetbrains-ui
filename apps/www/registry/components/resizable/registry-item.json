@@ -11,7 +11,7 @@
     {
       "path": "registry/components/resizable/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/resizable/index.tsx"
+      "target": "components/jetbrains-ui/resizable.tsx"
     }
   ],
   "meta": {

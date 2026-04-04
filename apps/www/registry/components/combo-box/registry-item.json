@@ -11,7 +11,7 @@
     {
       "path": "registry/components/combo-box/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/combo-box/index.tsx"
+      "target": "components/jetbrains-ui/combo-box.tsx"
     }
   ],
   "meta": {

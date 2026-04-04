@@ -9,7 +9,7 @@
     {
       "path": "registry/components/input/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/input/index.tsx"
+      "target": "components/jetbrains-ui/input.tsx"
     }
   ],
   "meta": {
