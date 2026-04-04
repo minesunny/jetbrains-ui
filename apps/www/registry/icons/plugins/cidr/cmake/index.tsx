@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, sizeMap } from '../../types';
 
 export type CMakeProps = SvgProps;
 
