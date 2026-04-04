@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-DataGrip/serverObjectsGroup",
+  "type": "registry:ui",
+  "title": "DataGrip/serverObjectsGroup",
+  "description": "DataGrip/serverObjectsGroup icon from database category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Database/DataGrip/serverObjectsGroup/serverObjectsGroup_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Database/DataGrip/serverObjectsGroup/serverObjectsGroup_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "DataGrip/serverObjectsGroup",
+      "icon",
+      "database",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

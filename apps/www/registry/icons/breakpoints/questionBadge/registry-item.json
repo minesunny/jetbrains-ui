@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-questionBadge",
+  "type": "registry:ui",
+  "title": "QuestionBadge",
+  "description": "QuestionBadge icon from breakpoints category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Breakpoints/questionBadge/questionBadge_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Breakpoints/questionBadge/questionBadge_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "questionBadge",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

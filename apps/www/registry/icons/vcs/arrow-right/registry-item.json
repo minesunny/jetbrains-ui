@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-arrow-right",
+  "type": "registry:ui",
+  "title": "Arrow Right",
+  "description": "Arrow Right icon from vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/arrow-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/arrow-right/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "arrow-right",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

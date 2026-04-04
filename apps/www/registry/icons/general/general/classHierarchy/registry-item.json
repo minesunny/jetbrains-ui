@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-General/classHierarchy",
+  "type": "registry:ui",
+  "title": "General/classHierarchy",
+  "description": "General/classHierarchy icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/General/classHierarchy/classHierarchy_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/General/classHierarchy/classHierarchy_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "General/classHierarchy",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-Gutter/gutter/mnemonic",
+  "type": "registry:ui",
+  "title": "Gutter/gutter/mnemonic",
+  "description": "Gutter/gutter/mnemonic icon from editor-icons category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/mnemonic/mnemonic_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/mnemonic/mnemonic_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Gutter/gutter/mnemonic",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

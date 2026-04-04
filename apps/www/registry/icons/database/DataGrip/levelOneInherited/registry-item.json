@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-DataGrip/levelOneInherited",
+  "type": "registry:ui",
+  "title": "DataGrip/levelOneInherited",
+  "description": "DataGrip/levelOneInherited icon from database category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Database/DataGrip/levelOneInherited/levelOneInherited_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Database/DataGrip/levelOneInherited/levelOneInherited_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "DataGrip/levelOneInherited",
+      "icon",
+      "database",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

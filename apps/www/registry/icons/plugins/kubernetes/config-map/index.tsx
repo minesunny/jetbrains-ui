@@ -22,7 +22,6 @@ const ConfigMapLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5M6 6.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M7 12q0 .514.1 1H2.5a.5.5 0 0 1 0-1zM8 9a5 5 0 0 0-.584 1H6.5a.5.5 0 0 1 0-1z"
       fill="#6C707E"
@@ -61,7 +60,6 @@ const ConfigMapDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5M6 6.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M7 12q0 .514.1 1H2.5a.5.5 0 0 1 0-1zM8 9a5 5 0 0 0-.584 1H6.5a.5.5 0 0 1 0-1z"
       fill="#CED0D6"

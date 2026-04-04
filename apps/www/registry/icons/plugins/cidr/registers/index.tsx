@@ -22,7 +22,6 @@ const RegistersLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15 10.5a.5.5 0 0 0-.658-.474l-1.5.5a.5.5 0 1 0 .316.948l.842-.28V15h-.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H15z"
       fill="#6C707E"
@@ -68,7 +67,6 @@ const RegistersDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15 10.5a.5.5 0 0 0-.658-.474l-1.5.5a.5.5 0 1 0 .316.948l.842-.28V15h-.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H15z"
       fill="#CED0D6"

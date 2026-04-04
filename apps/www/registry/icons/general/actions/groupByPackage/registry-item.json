@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-actions/groupByPackage",
+  "type": "registry:ui",
+  "title": "Actions/groupByPackage",
+  "description": "Actions/groupByPackage icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/actions/groupByPackage/groupByPackage_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/actions/groupByPackage/groupByPackage_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "actions/groupByPackage",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

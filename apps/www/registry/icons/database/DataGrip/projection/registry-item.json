@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-DataGrip/projection",
+  "type": "registry:ui",
+  "title": "DataGrip/projection",
+  "description": "DataGrip/projection icon from database category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Database/DataGrip/projection/projection_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Database/DataGrip/projection/projection_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "DataGrip/projection",
+      "icon",
+      "database",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-VCS/vcs/vcs",
+  "type": "registry:ui",
+  "title": "VCS/vcs/vcs",
+  "description": "VCS/vcs/vcs icon from vcs category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/VCS/VCS/vcs/vcs/vcs_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/VCS/VCS/vcs/vcs/vcs_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "VCS/vcs/vcs",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

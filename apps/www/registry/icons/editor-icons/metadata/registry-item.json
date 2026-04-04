@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-metadata",
+  "type": "registry:ui",
+  "title": "Metadata",
+  "description": "Metadata icon from editor-icons category.",
+  "registryDependencies": [
+    "icons-editor-icons-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/editor-icons/metadata/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/editor-icons/metadata/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "metadata",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ]
+  }
+}

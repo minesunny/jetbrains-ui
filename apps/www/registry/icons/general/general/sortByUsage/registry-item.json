@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-General/sortByUsage",
+  "type": "registry:ui",
+  "title": "General/sortByUsage",
+  "description": "General/sortByUsage icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/General/sortByUsage/sortByUsage_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/General/sortByUsage/sortByUsage_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "General/sortByUsage",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

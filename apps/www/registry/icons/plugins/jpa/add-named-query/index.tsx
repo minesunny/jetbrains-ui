@@ -22,7 +22,6 @@ const AddNamedQueryLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="12" cy="12" r="2" fill="#EBECF0" />
     <path
       fillRule="evenodd"
@@ -63,7 +62,6 @@ const AddNamedQueryDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="12" cy="12" r="2" fill="#43454A" />
     <path
       fillRule="evenodd"

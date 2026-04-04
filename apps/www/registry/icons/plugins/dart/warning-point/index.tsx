@@ -22,7 +22,6 @@ const WarningPointLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path d="M3 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" fill="#FFAF0F" />
     </g>
@@ -52,7 +51,6 @@ const WarningPointDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path d="M3 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" fill="#F2C55C" />
     </g>

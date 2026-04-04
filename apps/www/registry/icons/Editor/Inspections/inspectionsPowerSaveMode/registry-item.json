@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-Inspections/inspectionsPowerSaveMode",
+  "type": "registry:ui",
+  "title": "Inspections/inspectionsPowerSaveMode",
+  "description": "Inspections/inspectionsPowerSaveMode icon from editor-icons category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsPowerSaveMode/inspectionsPowerSaveMode_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsPowerSaveMode/inspectionsPowerSaveMode_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Inspections/inspectionsPowerSaveMode",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

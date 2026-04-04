@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-Tool_Windows/spaceToolWindow",
+  "type": "registry:ui",
+  "title": "Tool_Windows/spaceToolWindow",
+  "description": "Tool_Windows/spaceToolWindow icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/Tool_Windows/spaceToolWindow/spaceToolWindow_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Tool_Windows/spaceToolWindow/spaceToolWindow_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Tool_Windows/spaceToolWindow",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-Providers/providers/netezza",
+  "type": "registry:ui",
+  "title": "Providers/providers/netezza",
+  "description": "Providers/providers/netezza icon from database category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Database/Providers/providers/netezza/netezza_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Database/Providers/providers/netezza/netezza_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Providers/providers/netezza",
+      "icon",
+      "database",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

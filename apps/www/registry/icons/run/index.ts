@@ -90,5 +90,5 @@ export { ViewBreakpoints } from './view-breakpoints';
 export type { ViewBreakpointsProps } from './view-breakpoints';
 export { Watch } from './watch';
 export type { WatchProps } from './watch';
-export { iconNames } from './types';
-export type { IconName, IconMode, IconProps, IconSize } from './types';
+export { svgNames } from './types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';

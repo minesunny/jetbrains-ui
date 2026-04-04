@@ -22,7 +22,6 @@ const RvmRunAnythingLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M4.5 10.5 7 8 4.48 5.52" stroke="#6C707E" strokeLinecap="round" />
     <path
       d="M3 3h10a1 1 0 0 1 1 1v4.038c.36.07.695.24.969.491l.031.029V4a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.908l-.787-1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1"
@@ -61,7 +60,6 @@ const RvmRunAnythingDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M4.5 10.5 7 8 4.48 5.52" stroke="#CED0D6" strokeLinecap="round" />
     <path
       d="M3 3h10a1 1 0 0 1 1 1v4.038c.36.07.695.24.969.491l.031.029V4a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.908l-.787-1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1"

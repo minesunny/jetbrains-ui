@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-nodes/dataColumn",
+  "type": "registry:ui",
+  "title": "Nodes/dataColumn",
+  "description": "Nodes/dataColumn icon from nodes category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Nodes/nodes/dataColumn/dataColumn_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/nodes/dataColumn/dataColumn_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "nodes/dataColumn",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

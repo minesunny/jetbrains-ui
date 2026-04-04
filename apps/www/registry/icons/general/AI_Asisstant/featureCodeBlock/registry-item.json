@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-AI_Asisstant/featureCodeBlock",
+  "type": "registry:ui",
+  "title": "AI_Asisstant/featureCodeBlock",
+  "description": "AI_Asisstant/featureCodeBlock icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/AI_Asisstant/featureCodeBlock/featureCodeBlock_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/AI_Asisstant/featureCodeBlock/featureCodeBlock_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "AI_Asisstant/featureCodeBlock",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

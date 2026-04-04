@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-DataGrip/pin",
+  "type": "registry:ui",
+  "title": "DataGrip/pin",
+  "description": "DataGrip/pin icon from database category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Database/DataGrip/pin/pin_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Database/DataGrip/pin/pin_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "DataGrip/pin",
+      "icon",
+      "database",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-contextsModifier",
+  "type": "registry:ui",
+  "title": "ContextsModifier",
+  "description": "ContextsModifier icon from file-types category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/File_Types/contextsModifier/contextsModifier_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/File_Types/contextsModifier/contextsModifier_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "contextsModifier",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

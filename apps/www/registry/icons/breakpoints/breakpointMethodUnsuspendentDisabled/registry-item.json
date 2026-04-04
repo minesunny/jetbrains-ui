@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-breakpointMethodUnsuspendentDisabled",
+  "type": "registry:ui",
+  "title": "BreakpointMethodUnsuspendentDisabled",
+  "description": "BreakpointMethodUnsuspendentDisabled icon from breakpoints category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Breakpoints/breakpointMethodUnsuspendentDisabled/breakpointMethodUnsuspendentDisabled_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Breakpoints/breakpointMethodUnsuspendentDisabled/breakpointMethodUnsuspendentDisabled_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "breakpointMethodUnsuspendentDisabled",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

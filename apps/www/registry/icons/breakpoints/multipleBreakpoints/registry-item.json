@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-multipleBreakpoints",
+  "type": "registry:ui",
+  "title": "MultipleBreakpoints",
+  "description": "MultipleBreakpoints icon from breakpoints category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Breakpoints/multipleBreakpoints/multipleBreakpoints_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Breakpoints/multipleBreakpoints/multipleBreakpoints_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "multipleBreakpoints",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-Layout/previewOnly",
+  "type": "registry:ui",
+  "title": "Layout/previewOnly",
+  "description": "Layout/previewOnly icon from editor-icons category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Editor/Layout/previewOnly/previewOnly_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Editor/Layout/previewOnly/previewOnly_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Layout/previewOnly",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

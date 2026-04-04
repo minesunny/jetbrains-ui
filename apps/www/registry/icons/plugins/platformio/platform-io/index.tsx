@@ -22,7 +22,6 @@ const PlatformIOLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.992 15V3.706a9.3 9.3 0 0 1 2.181.27l.415-1.44a.81.81 0 0 1-.41-.7.845.845 0 0 1 1.69 0 .827.827 0 0 1-.77.813l-.421 1.468c1.6.505 3.321 1.629 3.321 4.132-.012 3.495-4.89 6.75-6.006 6.75"
       fill="#CE6117"
@@ -68,7 +67,6 @@ const PlatformIODark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.992 15V3.706a9.3 9.3 0 0 1 2.181.27l.415-1.44a.81.81 0 0 1-.41-.7.845.845 0 0 1 1.69 0 .827.827 0 0 1-.77.813l-.421 1.468c1.6.505 3.321 1.629 3.321 4.132-.012 3.495-4.89 6.75-6.006 6.75"
       fill="#A36B4E"

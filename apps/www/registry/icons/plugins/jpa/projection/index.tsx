@@ -22,7 +22,6 @@ const ProjectionLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#F2FCF3" stroke="#208A3C" />
     <path
       d="M6 4.98h2.52q.61 0 1.07.224.465.224.714.636.255.414.254.955 0 .546-.258.959-.255.413-.722.64a2.5 2.5 0 0 1-1.093.229H6.98V11H6zm2.477 2.795q.318 0 .559-.116a.87.87 0 0 0 .37-.34q.129-.222.129-.52a1 1 0 0 0-.13-.516.84.84 0 0 0-.37-.335q-.24-.12-.558-.12H6.98v1.947z"
@@ -49,7 +48,6 @@ const ProjectionDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#253627" stroke="#57965C" />
     <path
       d="M6 4.98h2.52q.61 0 1.07.224.465.224.714.636.255.414.254.955 0 .546-.258.959-.255.413-.722.64a2.5 2.5 0 0 1-1.093.229H6.98V11H6zm2.477 2.795q.318 0 .559-.116a.87.87 0 0 0 .37-.34q.129-.222.129-.52a1 1 0 0 0-.13-.516.84.84 0 0 0-.37-.335q-.24-.12-.558-.12H6.98v1.947z"

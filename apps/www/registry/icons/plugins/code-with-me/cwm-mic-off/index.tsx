@@ -22,7 +22,6 @@ const CwmMicOffLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M10.898 8.777Q11 8.404 11 8V4a3 3 0 0 0-5.842-.963l.845.845A2 2 0 0 1 10 4v3.879z"
       fill="#DB3B4B"
@@ -62,7 +61,6 @@ const CwmMicOffDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M10.898 8.777Q11 8.404 11 8V4a3 3 0 0 0-5.842-.963l.845.845A2 2 0 0 1 10 4v3.879z"
       fill="#DB5C5C"

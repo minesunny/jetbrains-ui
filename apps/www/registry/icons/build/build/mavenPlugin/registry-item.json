@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-build/mavenPlugin",
+  "type": "registry:ui",
+  "title": "Build/mavenPlugin",
+  "description": "Build/mavenPlugin icon from build category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Build/build/mavenPlugin/mavenPlugin_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Build/build/mavenPlugin/mavenPlugin_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "build/mavenPlugin",
+      "icon",
+      "build",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

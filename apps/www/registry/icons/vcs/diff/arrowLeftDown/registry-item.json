@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-Diff/arrowLeftDown",
+  "type": "registry:ui",
+  "title": "Diff/arrowLeftDown",
+  "description": "Diff/arrowLeftDown icon from vcs category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/VCS/Diff/arrowLeftDown/arrowLeftDown_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/VCS/Diff/arrowLeftDown/arrowLeftDown_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Diff/arrowLeftDown",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

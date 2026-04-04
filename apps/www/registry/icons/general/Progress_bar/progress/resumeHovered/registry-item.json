@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-Progress_bar/progress/resumeHovered",
+  "type": "registry:ui",
+  "title": "Progress_bar/progress/resumeHovered",
+  "description": "Progress_bar/progress/resumeHovered icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/Progress_bar/progress/resumeHovered/resumeHovered_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Progress_bar/progress/resumeHovered/resumeHovered_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Progress_bar/progress/resumeHovered",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-idl",
+  "type": "registry:ui",
+  "title": "Idl",
+  "description": "Idl icon from file-types category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/File_Types/idl/idl_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/File_Types/idl/idl_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "idl",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

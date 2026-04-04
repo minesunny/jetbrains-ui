@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-nodes/library",
+  "type": "registry:ui",
+  "title": "Nodes/library",
+  "description": "Nodes/library icon from nodes category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Nodes/nodes/library/library_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/nodes/library/library_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "nodes/library",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

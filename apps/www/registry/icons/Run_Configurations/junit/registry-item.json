@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-configurations-junit",
+  "type": "registry:ui",
+  "title": "Junit",
+  "description": "Junit icon from run-configurations category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run_Configurations/junit/junit_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Run_Configurations/junit/junit_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "junit",
+      "icon",
+      "run-configurations",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

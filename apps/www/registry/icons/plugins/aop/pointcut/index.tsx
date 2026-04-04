@@ -22,7 +22,6 @@ const PointcutLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2.1 3.375C2.035 3.57 2 3.782 2 4v8a2 2 0 0 0 2 2h8c.311 0 .606-.071.868-.198l-6.815-3.408a1 1 0 0 1-.435-.423z"
       fill="#4682FA"
@@ -52,7 +51,6 @@ const PointcutDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2.1 3.375C2.035 3.57 2 3.782 2 4v8a2 2 0 0 0 2 2h8c.311 0 .606-.071.868-.198l-6.815-3.408a1 1 0 0 1-.435-.423z"
       fill="#548AF7"

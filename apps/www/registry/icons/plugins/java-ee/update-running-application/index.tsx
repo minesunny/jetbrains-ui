@@ -22,7 +22,6 @@ const UpdateRunningApplicationLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M13.5 1.5v4h-.6m-3.4 0h3.4m0 0a5.5 5.5 0 1 0 0 5"
       stroke="#6C707E"
@@ -49,7 +48,6 @@ const UpdateRunningApplicationDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M13.5 1.5v4h-.6m-3.4 0h3.4m0 0a5.5 5.5 0 1 0 0 5"
       stroke="#CED0D6"

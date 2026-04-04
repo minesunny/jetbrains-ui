@@ -22,7 +22,6 @@ const MesonLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8.053 1.582c3.917 2.4 6.35 6.666 6.442 11.304-3.857 2.116-8.75 2.194-12.99-.03C1.63 8.208 4.105 3.95 8.054 1.582Z"
       stroke="#39207C"
@@ -52,7 +51,6 @@ const MesonDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8.053 1.582c3.917 2.4 6.35 6.666 6.442 11.304-3.857 2.116-8.75 2.194-12.99-.03C1.63 8.208 4.105 3.95 8.054 1.582Z"
       stroke="#fff"

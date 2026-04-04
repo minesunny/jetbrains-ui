@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-Gutter/gutter/rerun",
+  "type": "registry:ui",
+  "title": "Gutter/gutter/rerun",
+  "description": "Gutter/gutter/rerun icon from editor-icons category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/rerun/rerun_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/rerun/rerun_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Gutter/gutter/rerun",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

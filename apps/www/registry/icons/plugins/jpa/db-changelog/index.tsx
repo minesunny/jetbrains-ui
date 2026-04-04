@@ -22,7 +22,6 @@ const DbChangelogLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M12 12h2v-1h-2zM12 14h2v-1h-2z" fill="#3574F0" />
     <path
       fillRule="evenodd"
@@ -57,7 +56,6 @@ const DbChangelogDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M12 12h2v-1h-2zM12 14h2v-1h-2z" fill="#548AF7" />
     <path
       fillRule="evenodd"

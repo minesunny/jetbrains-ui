@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-nodes/resourceBundle",
+  "type": "registry:ui",
+  "title": "Nodes/resourceBundle",
+  "description": "Nodes/resourceBundle icon from nodes category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Nodes/nodes/resourceBundle/resourceBundle_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/nodes/resourceBundle/resourceBundle_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "nodes/resourceBundle",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

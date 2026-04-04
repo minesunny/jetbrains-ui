@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-configurations-invalidConfigurationLayer",
+  "type": "registry:ui",
+  "title": "InvalidConfigurationLayer",
+  "description": "InvalidConfigurationLayer icon from run-configurations category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run_Configurations/invalidConfigurationLayer/invalidConfigurationLayer_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Run_Configurations/invalidConfigurationLayer/invalidConfigurationLayer_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "invalidConfigurationLayer",
+      "icon",
+      "run-configurations",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

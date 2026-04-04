@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-Object_Browser/sortAlphabetically",
+  "type": "registry:ui",
+  "title": "Object_Browser/sortAlphabetically",
+  "description": "Object_Browser/sortAlphabetically icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/Object_Browser/sortAlphabetically/sortAlphabetically_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Object_Browser/sortAlphabetically/sortAlphabetically_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Object_Browser/sortAlphabetically",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

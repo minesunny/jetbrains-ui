@@ -22,7 +22,6 @@ const CwmIconModificatorLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M4.5 8.5a4 4 0 0 1 3.873 3H11.5a1 1 0 1 1 0 2v1a1 1 0 1 1-2 0v-1H8.373a4 4 0 1 1-3.873-5Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
       fill="#6C707E"
@@ -50,7 +49,6 @@ const CwmIconModificatorDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M4.5 8.5a4 4 0 0 1 3.873 3H11.5a1 1 0 1 1 0 2v1a1 1 0 1 1-2 0v-1H8.373a4 4 0 1 1-3.873-5Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
       fill="#CED0D6"

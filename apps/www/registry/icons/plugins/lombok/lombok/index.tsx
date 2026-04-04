@@ -22,7 +22,6 @@ const LombokLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3 8v-.5a2.5 2.5 0 0 1 5 0V8a6 6 0 0 0 5.627 5.989A7 7 0 0 1 3 8"
       fill="#E55765"
@@ -52,7 +51,6 @@ const LombokDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3 8v-.5a2.5 2.5 0 0 1 5 0V8a6 6 0 0 0 5.627 5.989A7 7 0 0 1 3 8"
       fill="#DB5C5C"

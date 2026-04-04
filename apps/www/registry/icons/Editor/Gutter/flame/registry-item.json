@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-Gutter/flame",
+  "type": "registry:ui",
+  "title": "Gutter/flame",
+  "description": "Gutter/flame icon from editor-icons category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Editor/Gutter/flame/flame_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/flame/flame_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Gutter/flame",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

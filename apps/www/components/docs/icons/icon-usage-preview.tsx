@@ -2,12 +2,12 @@
 
 import React, { useState } from 'react';
 import { Search, ConfigFile, Copy } from '@/registry/icons/general/general';
-import type { IconSize } from '@/registry/icons/general/types';
+import type { SvgSize } from '@/registry/icons/general/types';
 import { cn } from '@workspace/ui/lib/utils';
 import { useIconMode } from '@/components/docs/icons/use-icon-mode';
 
-const sizes: IconSize[] = ['xs', 'sm', 'md', 'lg', 'xl'];
-const sizeLabels: Record<IconSize, string> = {
+const sizes: SvgSize[] = ['xs', 'sm', 'md', 'lg', 'xl'];
+const sizeLabels: Record<SvgSize, string> = {
   xs: '12px',
   sm: '14px',
   md: '16px',
@@ -16,7 +16,7 @@ const sizeLabels: Record<IconSize, string> = {
 };
 
 export function IconUsagePreview() {
-  const [size, setSize] = useState<IconSize>('md');
+  const [size, setSize] = useState<SvgSize>('md');
   const [mode, setMode] = useIconMode();
 
   return (

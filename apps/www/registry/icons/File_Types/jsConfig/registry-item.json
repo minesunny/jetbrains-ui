@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-jsConfig",
+  "type": "registry:ui",
+  "title": "JsConfig",
+  "description": "JsConfig icon from file-types category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/File_Types/jsConfig/jsConfig_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/File_Types/jsConfig/jsConfig_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "jsConfig",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

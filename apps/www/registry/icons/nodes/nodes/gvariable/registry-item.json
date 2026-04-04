@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-nodes/gvariable",
+  "type": "registry:ui",
+  "title": "Nodes/gvariable",
+  "description": "Nodes/gvariable icon from nodes category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Nodes/nodes/gvariable/gvariable_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/nodes/gvariable/gvariable_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "nodes/gvariable",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-run/restartFrame",
+  "type": "registry:ui",
+  "title": "Run/restartFrame",
+  "description": "Run/restartFrame icon from run category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run/run/restartFrame/restartFrame_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Run/run/restartFrame/restartFrame_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run/restartFrame",
+      "icon",
+      "run",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

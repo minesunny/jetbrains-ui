@@ -16,10 +16,10 @@ describe('DynamicTreeDemo', () => {
     const disclosure = await waitFor(() => {
       const element = document.querySelector(
         '[data-slot="tree-item-disclosure"][data-value="dynamic-src"]',
-      ) as HTMLButtonElement | null;
+      ) as HTMLElement | null;
 
       expect(element).toBeTruthy();
-      return element as HTMLButtonElement;
+      return element as HTMLElement;
     });
 
     await user.click(disclosure);

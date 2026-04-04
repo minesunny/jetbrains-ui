@@ -22,7 +22,6 @@ const SpringConfigLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M9.658 1.702a.6.6 0 0 1 .419.738L6.922 13.88a.6.6 0 0 1-1.157-.32L8.92 2.122a.6.6 0 0 1 .738-.419M5.412 4.667a.6.6 0 0 1-.093.843L1.96 8.197l3.359 2.687a.6.6 0 0 1-.75.937L.039 8.197l4.53-3.624a.6.6 0 0 1 .843.094M14.946 7.386l-.518 1.123L10.68 5.51a.6.6 0 0 1 .75-.937z"
       fill="#E66D17"
@@ -52,7 +51,6 @@ const SpringConfigDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M9.658 1.702a.6.6 0 0 1 .419.738L6.922 13.88a.6.6 0 0 1-1.157-.32L8.92 2.122a.6.6 0 0 1 .738-.419M5.412 4.667a.6.6 0 0 1-.093.843L1.96 8.197l3.359 2.687a.6.6 0 0 1-.75.937L.039 8.197l4.53-3.624a.6.6 0 0 1 .843.094M14.946 7.386l-.518 1.123L10.68 5.51a.6.6 0 0 1 .75-.937z"
       fill="#C77D55"

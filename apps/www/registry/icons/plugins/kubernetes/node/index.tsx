@@ -22,7 +22,6 @@ const NodeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#EBECF0" d="M3 3H13V6H3z" />
     <path fill="#EBECF0" d="M3 10H13V13H3z" />
     <path d="M4 4h2v1H4z" fill="#6C707E" />
@@ -60,7 +59,6 @@ const NodeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#43454A" d="M3 3H13V6H3z" />
     <path fill="#43454A" d="M3 10H13V13H3z" />
     <path d="M4 4h2v1H4z" fill="#CED0D6" />

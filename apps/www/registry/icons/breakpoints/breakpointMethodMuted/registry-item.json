@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-breakpointMethodMuted",
+  "type": "registry:ui",
+  "title": "BreakpointMethodMuted",
+  "description": "BreakpointMethodMuted icon from breakpoints category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Breakpoints/breakpointMethodMuted/breakpointMethodMuted_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Breakpoints/breakpointMethodMuted/breakpointMethodMuted_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "breakpointMethodMuted",
+      "icon",
+      "breakpoints",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

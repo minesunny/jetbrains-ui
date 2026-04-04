@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-fileTypes/kotlin",
+  "type": "registry:ui",
+  "title": "FileTypes/kotlin",
+  "description": "FileTypes/kotlin icon from file-types category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/File_Types/fileTypes/kotlin/kotlin_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/kotlin/kotlin_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "fileTypes/kotlin",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

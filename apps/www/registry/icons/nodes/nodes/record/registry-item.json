@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-nodes/record",
+  "type": "registry:ui",
+  "title": "Nodes/record",
+  "description": "Nodes/record icon from nodes category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Nodes/nodes/record/record_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/nodes/record/record_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "nodes/record",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

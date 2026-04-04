@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-ai-asisstant-dislike-selected",
+  "type": "registry:ui",
+  "title": "Dislike Selected",
+  "description": "Dislike Selected icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/ai-asisstant/dislike-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/dislike-selected/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "dislike-selected",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

@@ -22,7 +22,6 @@ const RemoteSwiftPackageDependencyLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m8 1.5 6.5 3v3.169a5 5 0 0 0-6.942 6.628L1.5 11.52V4.5z"
       fill="#FFF4EB"
@@ -64,7 +63,6 @@ const RemoteSwiftPackageDependencyDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m8 1.5 6.5 3v3.169a5 5 0 0 0-6.942 6.628L1.5 11.52V4.5z"
       fill="#45322B"

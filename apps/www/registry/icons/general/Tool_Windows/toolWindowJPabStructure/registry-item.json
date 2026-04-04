@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-Tool_Windows/toolWindowJPabStructure",
+  "type": "registry:ui",
+  "title": "Tool_Windows/toolWindowJPabStructure",
+  "description": "Tool_Windows/toolWindowJPabStructure icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/Tool_Windows/toolWindowJPabStructure/toolWindowJPabStructure_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Tool_Windows/toolWindowJPabStructure/toolWindowJPabStructure_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Tool_Windows/toolWindowJPabStructure",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

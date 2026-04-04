@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-VCS/vcs/changesUpdate",
+  "type": "registry:ui",
+  "title": "VCS/vcs/changesUpdate",
+  "description": "VCS/vcs/changesUpdate icon from vcs category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/VCS/VCS/vcs/changesUpdate/changesUpdate_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/VCS/VCS/vcs/changesUpdate/changesUpdate_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "VCS/vcs/changesUpdate",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

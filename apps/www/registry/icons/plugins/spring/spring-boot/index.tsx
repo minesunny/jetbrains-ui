@@ -22,7 +22,6 @@ const SpringBootLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="12.5" cy="12.5" r="3.5" fill="#EBECF0" />
     <path
       fillRule="evenodd"
@@ -65,7 +64,6 @@ const SpringBootDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="12.5" cy="12.5" r="3.5" fill="#43454A" />
     <path
       fillRule="evenodd"

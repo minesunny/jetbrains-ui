@@ -22,7 +22,6 @@ const TransactionManagerLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M6 10a1 1 0 0 1 1-1h5.5a1 1 0 0 1 1 1v2.25a3.75 3.75 0 1 1-7.5 0z"
       fill="#EDF3FF"
@@ -62,7 +61,6 @@ const TransactionManagerDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7 9.5h5.5a.5.5 0 0 1 .5.5v2.25a3.25 3.25 0 0 1-6.5 0V10a.5.5 0 0 1 .5-.5Z"
       fill="#25324D"

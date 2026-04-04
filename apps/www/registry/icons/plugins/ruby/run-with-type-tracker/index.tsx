@@ -22,7 +22,6 @@ const RunWithTypeTrackerLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M7.603 15.478.251 5.828a.5.5 0 0 1 .024-.636l3.428-3.856A1 1 0 0 1 4.45 1h7.102a1 1 0 0 1 .748.336l3.428 3.856a.5.5 0 0 1 .024.635l-2.07 2.716-1.858-1.16C10.159 6.343 8 7.541 8 9.504v6.171a.5.5 0 0 1-.397-.197"
@@ -71,7 +70,6 @@ const RunWithTypeTrackerDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <g clipPath="url(#b)">
         <path

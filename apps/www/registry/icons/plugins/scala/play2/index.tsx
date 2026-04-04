@@ -22,7 +22,6 @@ const Play2Light: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m4.39 1.742.359-.357a1.344 1.344 0 0 1 1.954.075l4.975 5.76a1.32 1.32 0 0 1-.012 1.74l-4.957 5.582c-.51.57-1.398.6-1.943.058l-.359-.357a1.32 1.32 0 0 1-.081-1.786L7.294 8.92a1.32 1.32 0 0 0 .018-1.677L4.297 3.5a1.303 1.303 0 0 1 .093-1.757"
       fill="#92D13D"
@@ -52,7 +51,6 @@ const Play2Dark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m4.39 1.742.359-.357a1.344 1.344 0 0 1 1.954.075l4.975 5.76a1.32 1.32 0 0 1-.012 1.74l-4.957 5.582c-.51.57-1.398.6-1.943.058l-.359-.357a1.32 1.32 0 0 1-.081-1.786L7.294 8.92a1.32 1.32 0 0 0 .018-1.677L4.297 3.5a1.303 1.303 0 0 1 .093-1.757"
       fill="#92D13D"

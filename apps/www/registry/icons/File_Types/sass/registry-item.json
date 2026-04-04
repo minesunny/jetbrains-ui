@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-sass",
+  "type": "registry:ui",
+  "title": "Sass",
+  "description": "Sass icon from file-types category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/File_Types/sass/sass_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/File_Types/sass/sass_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "sass",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-configurations-compound",
+  "type": "registry:ui",
+  "title": "Compound",
+  "description": "Compound icon from run-configurations category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run_Configurations/compound/compound_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Run_Configurations/compound/compound_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "compound",
+      "icon",
+      "run-configurations",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

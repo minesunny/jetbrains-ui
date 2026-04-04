@@ -22,7 +22,6 @@ const CodeAssistantEnumLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="2.5"
       y="2.5"
@@ -54,7 +53,6 @@ const CodeAssistantEnumDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="2.5"
       y="2.5"

@@ -22,7 +22,6 @@ const LimitsLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3 6.5h5A1.5 1.5 0 0 1 9.5 8v4A1.5 1.5 0 0 1 8 13.5H3A1.5 1.5 0 0 1 1.5 12V8A1.5 1.5 0 0 1 3 6.5Z"
       fill="#EBECF0"
@@ -53,7 +52,6 @@ const LimitsDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3 6.5h5A1.5 1.5 0 0 1 9.5 8v4A1.5 1.5 0 0 1 8 13.5H3A1.5 1.5 0 0 1 1.5 12V8A1.5 1.5 0 0 1 3 6.5Z"
       fill="#43454A"

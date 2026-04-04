@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-configurations-applicationRemote",
+  "type": "registry:ui",
+  "title": "ApplicationRemote",
+  "description": "ApplicationRemote icon from run-configurations category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run_Configurations/applicationRemote/applicationRemote_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Run_Configurations/applicationRemote/applicationRemote_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "applicationRemote",
+      "icon",
+      "run-configurations",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

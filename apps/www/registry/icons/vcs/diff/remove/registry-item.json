@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-Diff/remove",
+  "type": "registry:ui",
+  "title": "Diff/remove",
+  "description": "Diff/remove icon from vcs category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/VCS/Diff/remove/remove_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/VCS/Diff/remove/remove_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Diff/remove",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

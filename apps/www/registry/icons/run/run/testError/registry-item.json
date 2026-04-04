@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-run/testError",
+  "type": "registry:ui",
+  "title": "Run/testError",
+  "description": "Run/testError icon from run category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run/run/testError/testError_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Run/run/testError/testError_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run/testError",
+      "icon",
+      "run",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

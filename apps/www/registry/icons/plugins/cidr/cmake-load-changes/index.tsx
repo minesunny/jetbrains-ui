@@ -22,7 +22,6 @@ const CMakeLoadChangesLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m7.363 11.565-1.886-.808L.615 15h7.386a5 5 0 0 1-.95-2.289 1.5 1.5 0 0 1 .312-1.147"
       fill="url(#a)"
@@ -95,7 +94,6 @@ const CMakeLoadChangesDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m7.363 11.565-1.886-.808L.615 15h7.386a5 5 0 0 1-.95-2.289 1.5 1.5 0 0 1 .312-1.147"
       fill="url(#a)"

@@ -22,7 +22,6 @@ const PodLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.5 11.52V4.5L8 1.5l-6.5 3v7.02L8 14.5z"
       fill="#EBECF0"
@@ -56,7 +55,6 @@ const PodDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.5 11.52V4.5L8 1.5l-6.5 3v7.02L8 14.5z"
       fill="#43454A"

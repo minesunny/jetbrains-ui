@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-t-sq-lt",
+  "type": "registry:ui",
+  "title": "T Sq Lt",
+  "description": "T Sq Lt icon from database category.",
+  "registryDependencies": [
+    "icons-database-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/database/t-sq-lt/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/t-sq-lt/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "t-sq-lt",
+      "icon",
+      "database",
+      "jetbrains"
+    ]
+  }
+}

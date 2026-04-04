@@ -22,7 +22,6 @@ const AbstractClassObjectScalaLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M9 14.93V10a1.5 1.5 0 0 1 1.35-1.493L15 8.043V8H1a7 7 0 0 0 8 6.93"
       fill="#FFF4EB"
@@ -71,7 +70,6 @@ const AbstractClassObjectScalaDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M9 14.93V10a1.5 1.5 0 0 1 1.35-1.493L15 8.043V8H1a7 7 0 0 0 8 6.93"
       fill="#45322B"

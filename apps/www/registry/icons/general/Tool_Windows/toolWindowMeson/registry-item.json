@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-Tool_Windows/toolWindowMeson",
+  "type": "registry:ui",
+  "title": "Tool_Windows/toolWindowMeson",
+  "description": "Tool_Windows/toolWindowMeson icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/Tool_Windows/toolWindowMeson/toolWindowMeson_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Tool_Windows/toolWindowMeson/toolWindowMeson_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Tool_Windows/toolWindowMeson",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

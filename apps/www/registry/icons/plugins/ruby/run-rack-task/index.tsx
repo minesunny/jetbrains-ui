@@ -22,7 +22,6 @@ const RunRackTaskLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2.5 11.5V13a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5v-1.5M2.5 6.5V8a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V6.5M2.5 1.5V3a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V1.5"
       stroke="#6C707E"
@@ -49,7 +48,6 @@ const RunRackTaskDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2.5 11.5V13a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5v-1.5M2.5 6.5V8a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V6.5M2.5 1.5V3a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V1.5"
       stroke="#CED0D6"

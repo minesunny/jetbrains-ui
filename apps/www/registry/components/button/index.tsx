@@ -7,7 +7,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@workspace/ui/lib/utils';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded border text-ui-default transition-[background-color,color,border-color,box-shadow] duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-14 disabled:pointer-events-none disabled:cursor-not-allowed disabled:border-transparent disabled:bg-gray-12 disabled:text-gray-8 dark:focus-visible:ring-blue-6 dark:focus-visible:ring-offset-gray-2 dark:disabled:bg-gray-4 dark:disabled:text-gray-7',
+  'inline-flex items-center justify-center whitespace-nowrap rounded border font-sans text-[13px] leading-4 font-medium transition-[background-color,color,border-color,box-shadow] duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-14 disabled:pointer-events-none disabled:cursor-not-allowed disabled:border-transparent disabled:bg-gray-12 disabled:text-gray-8 dark:focus-visible:ring-blue-6 dark:focus-visible:ring-offset-gray-2 dark:disabled:bg-gray-4 dark:disabled:text-gray-7',
   {
     variants: {
       variant: {
@@ -17,8 +17,8 @@ const buttonVariants = cva(
           'border-gray-9 bg-transparent text-gray-1 hover:bg-gray-12 hover:text-gray-1 active:bg-gray-11 active:text-gray-1 dark:border-gray-5 dark:bg-gray-5 dark:text-gray-12 dark:hover:bg-gray-6 dark:hover:text-gray-12 dark:active:bg-gray-4 dark:active:text-gray-12',
       },
       size: {
-        default: 'h-7 min-w-ui-button gap-ui-control px-ui-control',
-        slim: 'h-6 min-w-ui-button gap-ui-control px-ui-control',
+        default: 'h-7 min-w-[72px] gap-2 px-3',
+        slim: 'h-6 min-w-[72px] gap-2 px-3',
       },
     },
     defaultVariants: {

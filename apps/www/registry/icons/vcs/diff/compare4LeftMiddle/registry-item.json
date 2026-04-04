@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-Diff/compare4LeftMiddle",
+  "type": "registry:ui",
+  "title": "Diff/compare4LeftMiddle",
+  "description": "Diff/compare4LeftMiddle icon from vcs category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/VCS/Diff/compare4LeftMiddle/compare4LeftMiddle_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/VCS/Diff/compare4LeftMiddle/compare4LeftMiddle_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Diff/compare4LeftMiddle",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

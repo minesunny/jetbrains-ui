@@ -22,7 +22,6 @@ const ChannelLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.854 1.146a.5.5 0 0 0-.708.708L12.293 3H2.5a.5.5 0 0 0 0 1h9.793l-1.147 1.146a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708z"
       fill="#6C707E"
@@ -58,7 +57,6 @@ const ChannelDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.854 1.146a.5.5 0 0 0-.708.708L12.293 3H2.5a.5.5 0 0 0 0 1h9.793l-1.147 1.146a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708z"
       fill="#CED0D6"

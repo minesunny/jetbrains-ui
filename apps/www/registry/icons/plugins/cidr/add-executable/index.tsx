@@ -22,7 +22,6 @@ const AddExecutableLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M14.464 10.692a7 7 0 1 0-7.069 4.283L12 5.763z" fill="#EDF3FF" />
     <path
       fillRule="evenodd"
@@ -103,7 +102,6 @@ const AddExecutableDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M14.464 10.692a7 7 0 1 0-7.069 4.283L12 5.763z" fill="#25324D" />
     <path
       fillRule="evenodd"

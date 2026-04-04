@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-duplicates/sendToTheRight",
+  "type": "registry:ui",
+  "title": "Duplicates/sendToTheRight",
+  "description": "Duplicates/sendToTheRight icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/duplicates/sendToTheRight/sendToTheRight_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/duplicates/sendToTheRight/sendToTheRight_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "duplicates/sendToTheRight",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

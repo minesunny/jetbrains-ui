@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-run/restartDebug",
+  "type": "registry:ui",
+  "title": "Run/restartDebug",
+  "description": "Run/restartDebug icon from run category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run/run/restartDebug/restartDebug_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Run/run/restartDebug/restartDebug_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run/restartDebug",
+      "icon",
+      "run",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

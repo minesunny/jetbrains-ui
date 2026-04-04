@@ -22,7 +22,6 @@ const AfterReturningAdviceLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.943 7.107A7 7 0 1 0 8.83 14.95l-1.39-1.39a1.5 1.5 0 0 1 0-2.122l3-3a1.5 1.5 0 0 1 2.12 2.122l-.439.439H14V8.5a1.5 1.5 0 0 1 .943-1.393"
       fill="#FFF7F7"
@@ -64,7 +63,6 @@ const AfterReturningAdviceDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.943 7.107A7 7 0 1 0 8.83 14.95l-1.39-1.39a1.5 1.5 0 0 1 0-2.122l3-3a1.5 1.5 0 0 1 2.12 2.122l-.439.439H14V8.5a1.5 1.5 0 0 1 .943-1.393"
       fill="#402929"

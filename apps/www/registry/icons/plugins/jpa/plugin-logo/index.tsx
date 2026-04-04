@@ -22,7 +22,6 @@ const PluginLogoLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.35 18.75a7.21 7.21 0 0 1-3.487-7.824.18.18 0 0 0 0-.113.65.65 0 0 0-.638.313 7.363 7.363 0 0 0 2.5 9.537 2.59 2.59 0 0 1 1.625-1.912Z"
       fill="#F68E1E"
@@ -110,7 +109,6 @@ const PluginLogoDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.35 18.75a7.21 7.21 0 0 1-3.487-7.824.18.18 0 0 0 0-.113.65.65 0 0 0-.638.313 7.363 7.363 0 0 0 2.5 9.537 2.59 2.59 0 0 1 1.625-1.912Z"
       fill="#F68E1E"

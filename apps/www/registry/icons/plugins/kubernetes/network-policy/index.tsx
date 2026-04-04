@@ -22,7 +22,6 @@ const NetworkPolicyLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#EDF3FF" d="M11 12H15V15H11z" />
     <path
       fillRule="evenodd"
@@ -55,7 +54,6 @@ const NetworkPolicyDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#25324D" d="M11 12H15V15H11z" />
     <path
       fillRule="evenodd"

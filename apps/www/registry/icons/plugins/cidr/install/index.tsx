@@ -22,7 +22,6 @@ const InstallLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 1a.5.5 0 0 1 .5.5v5.293l1.646-1.646a.5.5 0 1 1 .707.707L8 8.707 5.146 5.854a.5.5 0 1 1 .708-.707L7.5 6.793V1.5A.5.5 0 0 1 8 1M6 12H4v1h2z"
       fill="#369650"
@@ -54,7 +53,6 @@ const InstallDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 1a.5.5 0 0 1 .5.5v5.293l1.646-1.646a.5.5 0 1 1 .707.707L8 8.707 5.146 5.854a.5.5 0 1 1 .708-.707L7.5 6.793V1.5A.5.5 0 0 1 8 1M6 12H4v1h2z"
       fill="#57965C"

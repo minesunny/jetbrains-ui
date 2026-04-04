@@ -22,7 +22,6 @@ const MakefileAppLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M10 10h1.46L13 12.5l1.5-2.5H16v6h-1v-4.625l-1.59 2.621h-.719L11 11.377V16h-1z"
       fill="#3574F0"
@@ -60,7 +59,6 @@ const MakefileAppDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M10 10h1.46L13 12.5l1.5-2.5H16v6h-1v-4.625l-1.59 2.621h-.719L11 11.377V16h-1z"

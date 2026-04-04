@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-run/stepOut",
+  "type": "registry:ui",
+  "title": "Run/stepOut",
+  "description": "Run/stepOut icon from run category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run/run/stepOut/stepOut_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Run/run/stepOut/stepOut_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run/stepOut",
+      "icon",
+      "run",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -50,7 +50,9 @@ describe('ComboBox', () => {
     renderComboBox();
     const trigger = screen.getByRole('combobox');
     expect(trigger).toBeInTheDocument();
-    expect(trigger.className).toContain('text-ui-default');
+    expect(trigger.className).toContain(
+      'font-sans text-[13px] leading-4 font-medium',
+    );
   });
 
   it('shows placeholder text', () => {

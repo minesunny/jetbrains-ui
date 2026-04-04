@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-actions/suggestedRefactoringBulb",
+  "type": "registry:ui",
+  "title": "Actions/suggestedRefactoringBulb",
+  "description": "Actions/suggestedRefactoringBulb icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/actions/suggestedRefactoringBulb/suggestedRefactoringBulb_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/actions/suggestedRefactoringBulb/suggestedRefactoringBulb_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "actions/suggestedRefactoringBulb",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

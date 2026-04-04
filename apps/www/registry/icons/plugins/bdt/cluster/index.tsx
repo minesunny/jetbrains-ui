@@ -22,7 +22,6 @@ const ClusterLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M9 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0M3 7.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M13 7.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M5 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2M12 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
       fill="#EBECF0"
@@ -54,7 +53,6 @@ const ClusterDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M9 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0M3 7.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M13 7.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M5 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2M12 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
       fill="#43454A"

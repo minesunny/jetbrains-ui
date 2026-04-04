@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-rerunAutomatically",
+  "type": "registry:ui",
+  "title": "RerunAutomatically",
+  "description": "RerunAutomatically icon from run category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run/rerunAutomatically/rerunAutomatically_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Run/rerunAutomatically/rerunAutomatically_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "rerunAutomatically",
+      "icon",
+      "run",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

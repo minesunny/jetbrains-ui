@@ -22,7 +22,6 @@ const ActionMethodLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M8 1a7 7 0 0 0 0 14 5 5 0 0 1 7-7 7 7 0 0 0-7-7" fill="#FFF7F7" />
     <path
       d="M7.403 13.97a6 6 0 1 1 6.568-6.567c.368.158.713.36 1.029.597a7 7 0 1 0-7 7 5 5 0 0 1-.597-1.03"
@@ -63,7 +62,6 @@ const ActionMethodDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M8 1a7 7 0 0 0 0 14 5 5 0 0 1 7-7 7 7 0 0 0-7-7" fill="#402929" />
     <path
       d="M7.403 13.97a6 6 0 1 1 6.568-6.567c.368.158.713.36 1.029.597a7 7 0 1 0-7 7 5 5 0 0 1-.597-1.03"

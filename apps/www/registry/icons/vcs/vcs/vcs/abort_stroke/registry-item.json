@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-VCS/vcs/abort_stroke",
+  "type": "registry:ui",
+  "title": "VCS/vcs/abort_stroke",
+  "description": "VCS/vcs/abort_stroke icon from vcs category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/VCS/VCS/vcs/abort_stroke/abort_stroke.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "VCS/vcs/abort_stroke",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ],
+    "hasLight": false,
+    "hasDark": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-general-windows-menu",
+  "type": "registry:ui",
+  "title": "Windows Menu",
+  "description": "Windows Menu icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/general/windows-menu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/windows-menu/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "windows-menu",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

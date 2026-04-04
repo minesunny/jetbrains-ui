@@ -1,0 +1,310 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons",
+  "type": "registry:ui",
+  "title": "EditorIcons Icons",
+  "description": "All icons from the editor-icons category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Editor/Editor/editor/inlayGlobe/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/inlayRenameInComments/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/inlayRenameInCommentsActive/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/inlayRenameInNoCodeFiles/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/inlayRenameInNoCodeFilesActive/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/inlaySecuredShield/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/inlaySettings/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/intentionBulb/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/intentionBulbGrey/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/quickfixBulb/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/quickfixOffBulb/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/inalyQarkus/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/inlayMicronaut/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/inlaySpring/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/inlayWebInspector/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/dataSchema/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/dbms/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/dropdownGutter/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/flame/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/bookmark/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/colors/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/extAnnotation/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/fold/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/foldBottom/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/javadocEdit/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/javadocRead/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/mnemonic/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/readAccess/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/rerun/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/run/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/runError/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/runFailed/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/runSuccess/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/suggestedRefactoringBulb/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/suggestedRefactoringDisabled/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/unfold/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/writeAccess/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/implementedMethod/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/implementingFunctionalInterface/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/implementingMethod/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/metadata/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/overridenMethod/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/overridingMethod/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/overridingProperty/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/recursiveMethod/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/sharp/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/siblingInheritedMethod/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Image_Toolbar/image/actualZoom/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Image_Toolbar/image/chessboard/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Image_Toolbar/image/colorPicker/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Image_Toolbar/image/fitContent/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Image_Toolbar/image/grid/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Image_Toolbar/image/zoomIn/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Image_Toolbar/image/zoomOut/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsError/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsErrorEmpty/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsEye/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsMixed/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsOK/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsOKEmpty/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsPause/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsPowerSaveMode/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsTrafficOff/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsTypos/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsWarning/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsWarningEmpty/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Layout/editorOnly/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Layout/editorPreview/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Layout/editorPreviewVertical/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Layout/previewOnly/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Profiler/profiler/backTrace/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Profiler/profiler/collapseNode/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Profiler/profiler/expandNode/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Profiler/profiler/mergeCallees/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Editor/Profiler/rec/registry-item.json",
+      "type": "registry:item"
+    }
+  ]
+}

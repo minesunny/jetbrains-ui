@@ -22,7 +22,6 @@ const DebugTargetComputerLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H8v-.03l.332-.222a1.5 1.5 0 0 0-1.458-2.611A3 3 0 0 0 2 7.764z"
       fill="#EBECF0"
@@ -62,7 +61,6 @@ const DebugTargetComputerDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H8v-.03l.332-.222a1.5 1.5 0 0 0-1.458-2.611A3 3 0 0 0 2 7.764z"
       fill="#43454A"

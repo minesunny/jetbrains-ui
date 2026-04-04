@@ -22,7 +22,6 @@ const AbstractTypeAliasLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M12.949 3.05a7 7 0 1 1-9.9 9.9 7 7 0 0 1 9.9-9.9" fill="#FAF5FF" />
     <path
       fillRule="evenodd"
@@ -55,7 +54,6 @@ const AbstractTypeAliasDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M12.949 3.05a7 7 0 1 1-9.9 9.9 7 7 0 0 1 9.9-9.9" fill="#2F2936" />
     <path
       fillRule="evenodd"

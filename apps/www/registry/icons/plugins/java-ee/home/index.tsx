@@ -22,7 +22,6 @@ const HomeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.161 8.632a.5.5 0 0 1 .678 0l2.5 2.305a.5.5 0 0 1 .161.368v3.694a.5.5 0 0 1-.5.501h-5a.5.5 0 0 1-.5-.501v-3.694c0-.14.059-.274.161-.368z"
       fill="#EBECF0"
@@ -62,7 +61,6 @@ const HomeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.161 8.632a.5.5 0 0 1 .678 0l2.5 2.305a.5.5 0 0 1 .161.368v3.694a.5.5 0 0 1-.5.501h-5a.5.5 0 0 1-.5-.501v-3.694c0-.14.059-.274.161-.368z"
       fill="#43454A"

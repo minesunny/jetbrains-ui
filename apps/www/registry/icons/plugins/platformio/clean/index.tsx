@@ -22,7 +22,6 @@ const CleanLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M8.936 10.143 7.63 14.488a6.5 6.5 0 0 1-6.12-6.12l4.345-1.305z"
@@ -85,7 +84,6 @@ const CleanDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M8.936 10.143 7.63 14.488a6.5 6.5 0 0 1-6.12-6.12l4.345-1.305z"

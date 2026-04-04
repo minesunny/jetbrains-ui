@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-Inspections/inspectionsError",
+  "type": "registry:ui",
+  "title": "Inspections/inspectionsError",
+  "description": "Inspections/inspectionsError icon from editor-icons category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsError/inspectionsError.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Inspections/inspectionsError",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ],
+    "hasLight": false,
+    "hasDark": false
+  }
+}

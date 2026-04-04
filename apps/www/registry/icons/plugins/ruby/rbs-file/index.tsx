@@ -22,7 +22,6 @@ const RbsFileLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m2 8 .879-.879a3 3 0 0 1 4.242 0L8.88 8.88a3 3 0 0 0 4.242 0L14 8"
       stroke="#E55765"
@@ -49,7 +48,6 @@ const RbsFileDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m2 8 .879-.879a3 3 0 0 1 4.242 0L8.88 8.88a3 3 0 0 0 4.242 0L14 8"
       stroke="#DB5C5C"

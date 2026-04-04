@@ -11,17 +11,16 @@ import {
   AlertHeader,
   AlertTitle,
   AlertTrigger,
-  type AlertType,
 } from '@/registry/components/alert';
 import { Button } from '@/registry/components/button';
 
 interface AlertDemoProps {
-  type?: AlertType;
+  type?: 'info' | 'error' | 'warning' | 'question';
   help?: boolean;
 }
 
 const typeConfig: Record<
-  AlertType,
+  'info' | 'error' | 'warning' | 'question',
   {
     title: string;
     description: string;

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-DataGrip/columnGoldBlueKeyDotIndex",
+  "type": "registry:ui",
+  "title": "DataGrip/columnGoldBlueKeyDotIndex",
+  "description": "DataGrip/columnGoldBlueKeyDotIndex icon from database category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Database/DataGrip/columnGoldBlueKeyDotIndex/columnGoldBlueKeyDotIndex_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Database/DataGrip/columnGoldBlueKeyDotIndex/columnGoldBlueKeyDotIndex_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "DataGrip/columnGoldBlueKeyDotIndex",
+      "icon",
+      "database",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

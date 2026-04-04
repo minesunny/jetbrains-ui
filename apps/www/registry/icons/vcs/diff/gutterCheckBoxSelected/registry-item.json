@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-Diff/gutterCheckBoxSelected",
+  "type": "registry:ui",
+  "title": "Diff/gutterCheckBoxSelected",
+  "description": "Diff/gutterCheckBoxSelected icon from vcs category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/VCS/Diff/gutterCheckBoxSelected/gutterCheckBoxSelected_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/VCS/Diff/gutterCheckBoxSelected/gutterCheckBoxSelected_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Diff/gutterCheckBoxSelected",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -22,7 +22,6 @@ const EjbCmpFieldLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.237 14.959A2.06 2.06 0 0 1 7 13.996V9.999c0-1.135.895-1.893 1.725-2.308C9.615 7.246 10.774 7 12 7c1.097 0 2.141.197 2.986.557a7 7 0 1 0-7.75 7.402"
       fill="#FFF4EB"
@@ -58,7 +57,6 @@ const EjbCmpFieldDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.237 14.959A2.06 2.06 0 0 1 7 13.996V9.999c0-1.135.895-1.893 1.725-2.308C9.615 7.246 10.774 7 12 7c1.097 0 2.141.197 2.986.557a7 7 0 1 0-7.75 7.402"
       fill="#45322B"

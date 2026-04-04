@@ -22,7 +22,6 @@ const LambdaLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#FFF4EB" stroke="#E66D17" />
     <path
       d="M5.832 4h.821c.976 0 1.464.577 1.774 1.363L11.04 12H9.91L8.255 7.531 6.47 12h-1.12l2.4-5.792-.37-.768c-.137-.297-.41-.523-.773-.523h-.774z"
@@ -49,7 +48,6 @@ const LambdaDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#45322B" stroke="#C77D55" />
     <path
       d="M5.832 4h.821c.976 0 1.464.577 1.774 1.363L11.04 12H9.91L8.255 7.531 6.47 12h-1.12l2.4-5.792-.37-.768c-.137-.297-.41-.523-.773-.523h-.774z"

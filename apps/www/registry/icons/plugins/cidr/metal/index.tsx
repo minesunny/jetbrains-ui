@@ -22,7 +22,6 @@ const MetalLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M6.5 8.594 1 2v12h2V7.213L8.5 14V9l5 5H16L6.5 4.5z"
       fill="#6C707E"
@@ -48,7 +47,6 @@ const MetalDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M6.5 8.594 1 2v12h2V7.213L8.5 14V9l5 5H16L6.5 4.5z"
       fill="#CED0D6"

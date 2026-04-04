@@ -22,7 +22,6 @@ const FullLineCompletionOutlineLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" stroke="#6C707E" />
     <path
       d="M10.827 9.964a.75.75 0 0 1-.863.863l-3.526-.587a.75.75 0 0 1-.407-1.27l2.938-2.94a.75.75 0 0 1 1.27.408z"
@@ -49,7 +48,6 @@ const FullLineCompletionOutlineDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" stroke="#CED0D6" />
     <path
       d="M10.827 9.964a.75.75 0 0 1-.863.863l-3.526-.587a.75.75 0 0 1-.407-1.27l2.938-2.94a.75.75 0 0 1 1.27.408z"

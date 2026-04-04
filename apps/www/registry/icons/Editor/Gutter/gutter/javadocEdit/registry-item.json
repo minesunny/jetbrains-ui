@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-Gutter/gutter/javadocEdit",
+  "type": "registry:ui",
+  "title": "Gutter/gutter/javadocEdit",
+  "description": "Gutter/gutter/javadocEdit icon from editor-icons category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/javadocEdit/javadocEdit_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Editor/Gutter/gutter/javadocEdit/javadocEdit_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Gutter/gutter/javadocEdit",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

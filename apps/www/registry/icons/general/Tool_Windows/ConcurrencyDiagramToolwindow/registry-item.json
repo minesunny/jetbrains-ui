@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-Tool_Windows/ConcurrencyDiagramToolwindow",
+  "type": "registry:ui",
+  "title": "Tool_Windows/ConcurrencyDiagramToolwindow",
+  "description": "Tool_Windows/ConcurrencyDiagramToolwindow icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/Tool_Windows/ConcurrencyDiagramToolwindow/ConcurrencyDiagramToolwindow_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Tool_Windows/ConcurrencyDiagramToolwindow/ConcurrencyDiagramToolwindow_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Tool_Windows/ConcurrencyDiagramToolwindow",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -2,10 +2,10 @@
 
 import {
   AggregateIconsGallery,
-  type IconPackLoader,
+  type SvgPackLoader,
 } from '@/components/docs/icons/aggregate-icons-gallery';
 
-const generalPacks: IconPackLoader[] = [
+const generalPacks: SvgPackLoader[] = [
   {
     id: 'general',
     label: 'General',

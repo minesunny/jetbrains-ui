@@ -22,7 +22,6 @@ const ChartAreaLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2 2.5a.5.5 0 0 0-1 0V13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1H2z"
       fill="#6C707E"
@@ -56,7 +55,6 @@ const ChartAreaDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2 2.5a.5.5 0 0 0-1 0V13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1H2z"
       fill="#CED0D6"

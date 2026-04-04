@@ -22,7 +22,6 @@ const SpringRepositoryRunMongoLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M6.95 8.327a.2.2 0 0 1 0 .346l-3.15 1.82a.2.2 0 0 1-.3-.175V6.682a.2.2 0 0 1 .3-.174z"
       stroke="#6C707E"
@@ -64,7 +63,6 @@ const SpringRepositoryRunMongoDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M6.95 8.327a.2.2 0 0 1 0 .346l-3.15 1.82a.2.2 0 0 1-.3-.175V6.682a.2.2 0 0 1 .3-.174z"
       stroke="#CED0D6"

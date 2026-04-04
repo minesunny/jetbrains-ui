@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-Access_Modifiers/accessPublic",
+  "type": "registry:ui",
+  "title": "Access_Modifiers/accessPublic",
+  "description": "Access_Modifiers/accessPublic icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/Access_Modifiers/accessPublic/accessPublic_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Access_Modifiers/accessPublic/accessPublic_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Access_Modifiers/accessPublic",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

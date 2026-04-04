@@ -22,7 +22,6 @@ const PersistenceIdLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.777 6.24A3.5 3.5 0 0 0 12 12.663v1.082a7 7 0 1 1 2.777-7.505"
       fill="#FFF4EB"
@@ -62,7 +61,6 @@ const PersistenceIdDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.777 6.24A3.5 3.5 0 0 0 12 12.663v1.082a7 7 0 1 1 2.777-7.505"
       fill="#45322B"

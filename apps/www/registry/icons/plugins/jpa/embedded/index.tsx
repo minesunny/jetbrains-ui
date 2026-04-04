@@ -22,7 +22,6 @@ const EmbeddedLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.668 12.99a5 5 0 1 1 5.321-5.322c-.308.145-.64.247-.99.297A4 4 0 1 0 7.966 12c-.05.349-.152.681-.297.99"
       fill="#6C707E"
@@ -57,7 +56,6 @@ const EmbeddedDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.668 12.99a5 5 0 1 1 5.321-5.322c-.308.145-.64.247-.99.297A4 4 0 1 0 7.966 12c-.05.349-.152.681-.297.99"
       fill="#CED0D6"

@@ -44,5 +44,5 @@ export { ToggleSkipTestsMode } from './toggle-skip-tests-mode';
 export type { ToggleSkipTestsModeProps } from './toggle-skip-tests-mode';
 export { UpdateFolders } from './update-folders';
 export type { UpdateFoldersProps } from './update-folders';
-export { iconNames } from './types';
-export type { IconName, IconMode, IconProps, IconSize } from './types';
+export { svgNames } from './types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';

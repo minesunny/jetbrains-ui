@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-windows/windows/maximizeSmall",
+  "type": "registry:ui",
+  "title": "Windows/windows/maximizeSmall",
+  "description": "Windows/windows/maximizeSmall icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/windows/windows/maximizeSmall/maximizeSmall_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/windows/windows/maximizeSmall/maximizeSmall_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "windows/windows/maximizeSmall",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

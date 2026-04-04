@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-httpRequestsRunConfiguration",
+  "type": "registry:ui",
+  "title": "HttpRequestsRunConfiguration",
+  "description": "HttpRequestsRunConfiguration icon from file-types category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/File_Types/httpRequestsRunConfiguration/httpRequestsRunConfiguration_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/File_Types/httpRequestsRunConfiguration/httpRequestsRunConfiguration_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "httpRequestsRunConfiguration",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

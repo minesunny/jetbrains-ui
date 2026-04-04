@@ -1,0 +1,52 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-nodes-Alphabet",
+  "type": "registry:ui",
+  "title": "Alphabet",
+  "description": "Alphabet icon from nodes category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Nodes/Alphabet/Alphabet_Letter-@.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/Alphabet/Alphabet_Letter-C.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/Alphabet/Alphabet_Letter-V.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/Alphabet/Alphabet_Letter-f.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/Alphabet/Alphabet_Letter-m.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/Alphabet/Alphabet_Letter-p.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/Alphabet/Alphabet_Letter-t.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/Alphabet/Alphabet_Letter-ƛ.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Alphabet",
+      "icon",
+      "nodes",
+      "jetbrains"
+    ],
+    "hasLight": false,
+    "hasDark": false
+  }
+}

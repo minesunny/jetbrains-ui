@@ -22,7 +22,6 @@ const SpringCloudFileSetLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3 11V5.828a2 2 0 0 1 .586-1.414l2.828-2.828A2 2 0 0 1 7.828 1H10a2 2 0 0 1 2 2v6.032a3.806 3.806 0 0 0-3.616 1.586A3.25 3.25 0 0 0 6.087 13H5a2 2 0 0 1-2-2"
       fill="#EBECF0"
@@ -68,7 +67,6 @@ const SpringCloudFileSetDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3 11V5.828a2 2 0 0 1 .586-1.414l2.828-2.828A2 2 0 0 1 7.828 1H10a2 2 0 0 1 2 2v6.032a3.806 3.806 0 0 0-3.616 1.586A3.25 3.25 0 0 0 6.087 13H5a2 2 0 0 1-2-2"
       fill="#43454A"

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-mavenBind",
+  "type": "registry:ui",
+  "title": "MavenBind",
+  "description": "MavenBind icon from build category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Build/mavenBind/mavenBind_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Build/mavenBind/mavenBind_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "mavenBind",
+      "icon",
+      "build",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

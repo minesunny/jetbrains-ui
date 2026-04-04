@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-Tool_Windows/jpaConsoleToolWindow",
+  "type": "registry:ui",
+  "title": "Tool_Windows/jpaConsoleToolWindow",
+  "description": "Tool_Windows/jpaConsoleToolWindow icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/Tool_Windows/jpaConsoleToolWindow/jpaConsoleToolWindow_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Tool_Windows/jpaConsoleToolWindow/jpaConsoleToolWindow_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Tool_Windows/jpaConsoleToolWindow",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

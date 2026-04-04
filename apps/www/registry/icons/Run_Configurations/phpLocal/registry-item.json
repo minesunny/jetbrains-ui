@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-configurations-phpLocal",
+  "type": "registry:ui",
+  "title": "PhpLocal",
+  "description": "PhpLocal icon from run-configurations category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run_Configurations/phpLocal/phpLocal_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Run_Configurations/phpLocal/phpLocal_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "phpLocal",
+      "icon",
+      "run-configurations",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

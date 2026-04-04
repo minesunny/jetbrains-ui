@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-build/taskGroup",
+  "type": "registry:ui",
+  "title": "Build/taskGroup",
+  "description": "Build/taskGroup icon from build category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Build/build/taskGroup/taskGroup_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Build/build/taskGroup/taskGroup_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "build/taskGroup",
+      "icon",
+      "build",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

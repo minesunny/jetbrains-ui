@@ -22,7 +22,6 @@ const DockerComposeScaledServiceStoppedLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect x="7" y="4" width="3" height="3" rx="1" fill="#A8ADBD" />
     <rect x="7" width="3" height="3" rx="1" fill="#A8ADBD" />
     <rect x="3" y="4" width="3" height="3" rx="1" fill="#A8ADBD" />
@@ -53,7 +52,6 @@ const DockerComposeScaledServiceStoppedDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect x="7" y="4" width="3" height="3" rx="1" fill="#6F737A" />
     <rect x="7" width="3" height="3" rx="1" fill="#6F737A" />
     <rect x="3" y="4" width="3" height="3" rx="1" fill="#6F737A" />

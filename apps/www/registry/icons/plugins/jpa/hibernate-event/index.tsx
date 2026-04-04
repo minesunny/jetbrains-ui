@@ -22,7 +22,6 @@ const HibernateEventLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m10 13 4-5-.5 3H16l-4 5 .5-3z" fill="#4682FA" />
     <path
       fillRule="evenodd"
@@ -51,7 +50,6 @@ const HibernateEventDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m10 13 4-5-.5 3H16l-4 5 .5-3z" fill="#548AF7" />
     <path
       fillRule="evenodd"

@@ -22,7 +22,6 @@ const VelocityPluginLogoLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M31.5 20c0 6.351-5.149 11.5-11.5 11.5S8.5 26.351 8.5 20 13.649 8.5 20 8.5 31.5 13.649 31.5 20Z"
       stroke="#6C707E"
@@ -56,7 +55,6 @@ const VelocityPluginLogoDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M31.5 20c0 6.351-5.149 11.5-11.5 11.5S8.5 26.351 8.5 20 13.649 8.5 20 8.5 31.5 13.649 31.5 20Z"
       stroke="#CED0D6"

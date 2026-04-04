@@ -22,7 +22,6 @@ const CTestLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m8 .52.768 7.385-3.281 2.856-.01-.004L.615 15z" fill="url(#a)" />
     <path
       d="M12.326 9.004 8 .52l.987 9.493.642-.617c.562-.54 1.359-.488 1.87-.066a1.44 1.44 0 0 1 .827-.326"
@@ -100,7 +99,6 @@ const CTestDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m8 .52.768 7.385-3.281 2.856-.01-.004L.615 15z" fill="url(#a)" />
     <path
       d="M12.326 9.004 8 .52l.987 9.493.642-.617c.562-.54 1.359-.488 1.87-.066a1.44 1.44 0 0 1 .827-.326"

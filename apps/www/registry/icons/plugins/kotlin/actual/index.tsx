@@ -22,7 +22,6 @@ const ActualLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x=".293"
       y="8.071"
@@ -58,7 +57,6 @@ const ActualDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x=".293"
       y="8.071"

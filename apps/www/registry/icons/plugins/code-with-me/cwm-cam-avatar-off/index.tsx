@@ -22,7 +22,6 @@ const CwmCamAvatarOffLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="6.5" cy="6.5" r="6.5" fill="#F7F8FA" />
     <path
       fillRule="evenodd"
@@ -55,7 +54,6 @@ const CwmCamAvatarOffDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="6.5" cy="6.5" r="6.5" fill="#2B2D30" />
     <path
       fillRule="evenodd"

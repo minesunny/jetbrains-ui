@@ -22,7 +22,6 @@ const SpringCloudLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m13.275 12.458.148.752.764.053c.461.031.813.408.813.862a.876.876 0 0 1-.875.875H9.25a1.248 1.248 0 0 1-.138-2.49l.533-.057.248-.476a1.811 1.811 0 0 1 3.382.481"
       fill="#EBECF0"
@@ -62,7 +61,6 @@ const SpringCloudDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m13.275 12.458.148.752.764.053c.461.031.813.408.813.862a.876.876 0 0 1-.875.875H9.25a1.248 1.248 0 0 1-.138-2.49l.533-.057.248-.476a1.811 1.811 0 0 1 3.382.481"
       fill="#43454A"

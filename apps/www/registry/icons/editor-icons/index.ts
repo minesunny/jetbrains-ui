@@ -132,5 +132,5 @@ export { ZoomIn } from './zoom-in';
 export type { ZoomInProps } from './zoom-in';
 export { ZoomOut } from './zoom-out';
 export type { ZoomOutProps } from './zoom-out';
-export { iconNames } from './types';
-export type { IconName, IconMode, IconProps, IconSize } from './types';
+export { svgNames } from './types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';

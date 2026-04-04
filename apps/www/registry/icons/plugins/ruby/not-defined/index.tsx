@@ -22,7 +22,6 @@ const NotDefinedLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 1a7 7 0 1 0 4 12.746V12h-1.583v-.94c0-.56.12-1.096.395-1.58l.003-.007c.277-.478.67-.851 1.16-1.105A3.4 3.4 0 0 1 13.573 8c.497 0 .978.088 1.421.29Q15 8.144 15 8a7 7 0 0 0-7-7"
       fill="#EDF3FF"
@@ -56,7 +55,6 @@ const NotDefinedDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 1a7 7 0 1 0 4 12.746V12h-1.583v-.94c0-.56.12-1.096.395-1.58l.003-.007c.277-.478.67-.851 1.16-1.105A3.4 3.4 0 0 1 13.573 8c.497 0 .978.088 1.421.29Q15 8.144 15 8a7 7 0 0 0-7-7"
       fill="#25324D"

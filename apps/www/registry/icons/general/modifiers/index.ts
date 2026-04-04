@@ -16,5 +16,5 @@ export { Symlink } from './symlink';
 export type { SymlinkProps } from './symlink';
 export { TabAlert } from './tab-alert';
 export type { TabAlertProps } from './tab-alert';
-export { iconNames } from '../types';
-export type { IconName, IconMode, IconProps, IconSize } from '../types';
+export { svgNames } from '../types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

@@ -22,7 +22,6 @@ const VCPKGLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M18.547 14.106c-6.65-2.356-11.405.645-14.16 4.099-.105.127-.306.048-.281-.12.16-.915.538-2.706 1.277-4.345 3.004-6.662 10.995-9.901 15.75-9.734s10.45 3.28 8.474 7.672c-1.743 3.884-4.104 4.895-11.06 2.428"
       fill="url(#a)"
@@ -106,7 +105,6 @@ const VCPKGDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M18.547 14.106c-6.65-2.356-11.405.645-14.16 4.099-.105.127-.306.048-.281-.12.16-.915.538-2.706 1.277-4.345 3.004-6.662 10.995-9.901 15.75-9.734s10.45 3.28 8.474 7.672c-1.743 3.884-4.104 4.895-11.06 2.428"
       fill="url(#a)"

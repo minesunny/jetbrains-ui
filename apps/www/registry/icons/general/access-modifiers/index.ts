@@ -6,5 +6,5 @@ export { AccessProtected } from './access-protected';
 export type { AccessProtectedProps } from './access-protected';
 export { AccessPublic } from './access-public';
 export type { AccessPublicProps } from './access-public';
-export { iconNames } from '../types';
-export type { IconName, IconMode, IconProps, IconSize } from '../types';
+export { svgNames } from '../types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

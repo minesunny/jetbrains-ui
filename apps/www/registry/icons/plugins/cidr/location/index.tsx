@@ -22,7 +22,6 @@ const LocationLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.646 1.355 9.09 14.492l-1.61-5.63-.077-.266-.266-.076L1.52 6.91z"
       stroke="#6C707E"
@@ -48,7 +47,6 @@ const LocationDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.646 1.355 9.09 14.492l-1.61-5.63-.077-.266-.266-.076L1.52 6.91z"
       stroke="#CED0D6"

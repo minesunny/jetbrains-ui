@@ -22,7 +22,6 @@ const UnfreezeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 14.5A4.5 4.5 0 0 1 3.5 10c0-1.83 1.162-3.966 2.407-5.709a27 27 0 0 1 1.687-2.116c.154-.175.293-.323.406-.446.113.123.252.271.406.446.461.522 1.074 1.259 1.687 2.116C11.338 6.034 12.5 8.171 12.5 10A4.5 4.5 0 0 1 8 14.5Z"
       fill="#F2FCF3"
@@ -49,7 +48,6 @@ const UnfreezeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M8 14.5A4.5 4.5 0 0 1 3.5 10c0-1.83 1.162-3.966 2.407-5.709a27 27 0 0 1 1.687-2.116c.154-.175.293-.323.406-.446.113.123.252.271.406.446.461.522 1.074 1.259 1.687 2.116C11.338 6.034 12.5 8.171 12.5 10A4.5 4.5 0 0 1 8 14.5Z"

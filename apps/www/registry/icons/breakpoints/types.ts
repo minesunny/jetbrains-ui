@@ -1,12 +1,14 @@
 import type React from 'react';
 
+export type SvgSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export type SvgMode = 'light' | 'dark';
 
-export type SvgProps = React.ComponentProps<'svg'> & {
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-  mode?: 'light' | 'dark';
+export type SvgProps = Omit<React.ComponentProps<'svg'>, 'size'> & {
+  size?: SvgSize | number;
+  mode?: SvgMode;
 };
 
-export const sizeMap: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number> = {
+export const sizeMap: Record<SvgSize | number, number> = {
   xs: 12,
   sm: 14,
   md: 16,
@@ -14,7 +16,7 @@ export const sizeMap: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number> = {
   xl: 24,
 };
 
-export const iconNames = [
+export const svgNames = [
   'breakpoint',
   'breakpoint-dependent',
   'breakpoint-disabled',
@@ -56,4 +58,4 @@ export const iconNames = [
   'question-badge',
 ] as const;
 
-export type IconName = (typeof iconNames)[number];
+export type SvgName = (typeof svgNames)[number];

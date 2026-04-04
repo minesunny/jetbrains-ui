@@ -22,7 +22,6 @@ const FieldVariableLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#FAF5FF" stroke="#834DF0" />
     <path
       d="M7.547 11h.92l2.355-6H9.791L8.045 9.705 6.24 5H5.18z"
@@ -49,7 +48,6 @@ const FieldVariableDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#2F2936" stroke="#A571E6" />
     <path
       d="M7.547 11h.92l2.355-6H9.791L8.045 9.705 6.24 5H5.18z"

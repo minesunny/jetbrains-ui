@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-build/toggleOfflineMode",
+  "type": "registry:ui",
+  "title": "Build/toggleOfflineMode",
+  "description": "Build/toggleOfflineMode icon from build category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Build/build/toggleOfflineMode/toggleOfflineMode_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Build/build/toggleOfflineMode/toggleOfflineMode_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "build/toggleOfflineMode",
+      "icon",
+      "build",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

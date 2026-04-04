@@ -22,7 +22,6 @@ const ZeusLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M6 4H4v1h2z" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -57,7 +56,6 @@ const ZeusDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M6 4H4v1h2z" fill="#CED0D6" />
     <path
       fillRule="evenodd"

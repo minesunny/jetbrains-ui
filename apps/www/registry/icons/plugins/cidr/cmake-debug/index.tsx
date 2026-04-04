@@ -22,7 +22,6 @@ const CMakeDebugLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m8 .52.768 7.385-3.281 2.856-.01-.004L.615 15z" fill="url(#a)" />
     <path
       d="M14 10q0 .127-.015.25A3 3 0 0 0 12 9.5c-.76 0-1.456.283-1.985.75A2 2 0 1 1 14 10M14 12.5a2 2 0 1 0-4 0v.5a2 2 0 1 0 4 0z"
@@ -98,7 +97,6 @@ const CMakeDebugDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m8 .52.768 7.385-3.281 2.856-.01-.004L.615 15z" fill="url(#a)" />
     <path
       d="M14 10q0 .127-.015.25A3 3 0 0 0 12 9.5c-.76 0-1.456.283-1.985.75A2 2 0 1 1 14 10M14 12.5a2 2 0 1 0-4 0v.5a2 2 0 1 0 4 0z"

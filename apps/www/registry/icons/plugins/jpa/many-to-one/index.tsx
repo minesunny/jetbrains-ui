@@ -22,7 +22,6 @@ const ManyToOneLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="4.5" stroke="#6C707E" />
     <circle cx="11.5" cy="4.5" r="3" fill="#FFF4EB" stroke="#E66D17" />
     <circle cx="4.5" cy="11.5" r="3" fill="#FFF4EB" stroke="#E66D17" />
@@ -48,7 +47,6 @@ const ManyToOneDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="4.5" stroke="#CED0D6" />
     <circle cx="11.5" cy="4.5" r="3" fill="#45322B" stroke="#C77D55" />
     <circle cx="4.5" cy="11.5" r="3" fill="#45322B" stroke="#C77D55" />

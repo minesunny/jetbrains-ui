@@ -3,10 +3,10 @@
 import * as React from 'react';
 import { useTheme } from 'next-themes';
 
-import { SVG_REGISTRY } from './registry';
-import type { SvgProps, IconSize } from '@/registry/icons/general/types';
+import { SVG_REGISTRY } from './svg-registry';
+import type { SvgProps, SvgSize } from '@/registry/icons/general/types';
 
-const iconPixelSizeMap: Record<IconSize, number> = {
+const iconPixelSizeMap: Record<SvgSize, number> = {
   xs: 12,
   sm: 14,
   md: 16,
@@ -16,7 +16,7 @@ const iconPixelSizeMap: Record<IconSize, number> = {
 
 const ARTBOARD_RATIO = 14 / 16;
 
-function toIconSize(size: IconSize | number = 'md'): IconSize {
+function toIconSize(size: SvgSize | number = 'md'): SvgSize {
   if (typeof size !== 'number') {
     return size;
   }
@@ -30,7 +30,7 @@ function toIconSize(size: IconSize | number = 'md'): IconSize {
 
 export type SVGProps = Pick<SvgProps, 'className' | 'aria-label'> & {
   name: string;
-  size?: IconSize | number;
+  size?: SvgSize | number;
 };
 
 export function SVG({

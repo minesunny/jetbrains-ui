@@ -22,7 +22,6 @@ const CMakeTargetExecutableLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" stroke="#6C707E" />
     <path d="M4.5 10.5 7 8 4.48 5.52" stroke="#6C707E" strokeLinecap="round" />
   </svg>
@@ -46,7 +45,6 @@ const CMakeTargetExecutableDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" stroke="#CED0D6" />
     <path d="M4.5 10.5 7 8 4.48 5.52" stroke="#CED0D6" strokeLinecap="round" />
   </svg>

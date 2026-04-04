@@ -22,7 +22,6 @@ const ConstructorLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m12 8 1.113 2.812 2.887.244-2.2 1.981.672 2.963L12 14.412 9.528 16l.672-2.963L8 11.056l2.887-.244z"
       fill="#6C707E"
@@ -60,7 +59,6 @@ const ConstructorDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m12 8 1.113 2.812 2.887.244-2.2 1.981.672 2.963L12 14.412 9.528 16l.672-2.963L8 11.056l2.887-.244z"
       fill="#CED0D6"

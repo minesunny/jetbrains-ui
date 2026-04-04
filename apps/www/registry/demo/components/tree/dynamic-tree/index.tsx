@@ -1,7 +1,6 @@
 'use client';
 
 import * as React from 'react';
-
 import {
   hotkeysCoreFeature,
   selectionFeature,
@@ -30,7 +29,7 @@ type DemoLoadedItem = {
 type DemoTreeItems = Record<string, Omit<DemoTreeItem, 'endContent'>>;
 type DemoTreeChildren = Record<string, string[]>;
 
-const dynamicItems: DemoTreeItems = {
+const initialItems: DemoTreeItems = {
   [DEMO_ROOT_ID]: {
     label: 'jetbrains-ui',
     kind: 'folder',
@@ -91,24 +90,30 @@ const dynamicItems: DemoTreeItems = {
   },
 };
 
-const dynamicChildren: DemoTreeChildren = {
+const initialChildren: DemoTreeChildren = {
   [DEMO_ROOT_ID]: ['dynamic-src', 'dynamic-readme', 'dynamic-package'],
   'dynamic-src': ['dynamic-components', 'dynamic-lib'],
   'dynamic-components': ['dynamic-tree-file', 'dynamic-dynamic-tree-file'],
   'dynamic-lib': ['dynamic-utils-file'],
 };
 
-function countDescendants(children: DemoTreeChildren, itemId: string) {
+function countDescendants(
+  children: DemoTreeChildren,
+  itemId: string,
+  visited?: Set<string>,
+) {
+  const seen = visited ?? new Set<string>();
   const queue = [...(children[itemId] ?? [])];
   let count = 0;
 
   while (queue.length > 0) {
     const currentId = queue.shift();
 
-    if (!currentId) {
+    if (!currentId || seen.has(currentId)) {
       continue;
     }
 
+    seen.add(currentId);
     count += 1;
     queue.push(...(children[currentId] ?? []));
   }
@@ -151,16 +156,17 @@ function resolveDemoItemData(
 
 export default function DynamicTreeDemo() {
   const loadedItemsRef = React.useRef<Record<string, DemoTreeItem>>({});
+
   const loadData = React.useCallback(
     async (itemId: string | null): Promise<DemoLoadedItem[]> => {
       await wait(120);
 
       const parentId = itemId ?? DEMO_ROOT_ID;
 
-      return (dynamicChildren[parentId] ?? []).map(
+      return (initialChildren[parentId] ?? []).map(
         (childId): DemoLoadedItem => ({
           id: childId,
-          data: resolveDemoItemData(dynamicItems, dynamicChildren, childId),
+          data: resolveDemoItemData(initialItems, initialChildren, childId),
         }),
       );
     },

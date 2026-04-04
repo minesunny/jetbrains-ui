@@ -22,7 +22,6 @@ const AfterThrowingAdviceLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.95 3.05c.76.76 1.31 1.653 1.647 2.603L7.919 14H8v1a7 7 0 1 1 4.95-11.95"
       fill="#FFF7F7"
@@ -61,7 +60,6 @@ const AfterThrowingAdviceDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.95 3.05c.76.76 1.31 1.653 1.647 2.603L7.919 14H8v1a7 7 0 1 1 4.95-11.95"
       fill="#402929"

@@ -22,7 +22,6 @@ const CwmInviteLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.708 9.586a.5.5 0 0 1 0-.707l1.343-1.343A3.243 3.243 0 0 0 8.465 2.95L7.122 4.293a.5.5 0 0 1-.707-.707l1.343-1.343a4.243 4.243 0 0 1 6 6l-1.343 1.343a.5.5 0 0 1-.707 0"
       fill="#6C707E"
@@ -56,7 +55,6 @@ const CwmInviteDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.708 9.586a.5.5 0 0 1 0-.707l1.343-1.343A3.243 3.243 0 0 0 8.465 2.95L7.122 4.293a.5.5 0 0 1-.707-.707l1.343-1.343a4.243 4.243 0 0 1 6 6l-1.343 1.343a.5.5 0 0 1-.707 0"
       fill="#CED0D6"

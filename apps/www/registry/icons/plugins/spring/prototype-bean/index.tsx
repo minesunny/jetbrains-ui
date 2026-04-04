@@ -22,7 +22,6 @@ const PrototypeBeanLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M10 9h1.035L15 14.435V9h1v7h-1.07L11 10.565V16h-1z"
       fill="#6C707E"
@@ -56,7 +55,6 @@ const PrototypeBeanDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M10 9h1.035L15 14.435V9h1v7h-1.07L11 10.565V16h-1z"
       fill="#CED0D6"

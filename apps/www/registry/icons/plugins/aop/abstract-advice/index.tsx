@@ -22,7 +22,6 @@ const AbstractAdviceLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.95 3.05a7 7 0 1 1-9.898 9.9 7 7 0 0 1 9.899-9.9"
       fill="#FFF7F7"
@@ -53,7 +52,6 @@ const AbstractAdviceDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.95 3.05a7 7 0 1 1-9.898 9.9 7 7 0 0 1 9.899-9.9"
       fill="#402929"

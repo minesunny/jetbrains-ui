@@ -261,10 +261,15 @@ function ResizableSeparator({
     <ResizablePrimitive.Separator
       data-slot="resizable-handle"
       className={cn(
-        'resizable-handle group relative flex shrink-0 cursor-col-resize items-center justify-center bg-resizable-handle-bg outline-none transition-[background-color,box-shadow] duration-150 ease-in-out hover:bg-resizable-handle-bg-hover active:bg-resizable-handle-bg-pressed focus-visible:z-[1] focus-visible:ring-2 focus-visible:ring-resizable-handle-ring focus-visible:ring-offset-2 focus-visible:ring-offset-resizable-handle-focus-offset',
-        "[&[data-separator='hover']]:bg-resizable-handle-bg-hover [&[data-separator='drag']]:bg-resizable-handle-bg-pressed",
-        "[&[data-separator='hover']_.resizable-handle__grip]:border-resizable-grip-border-hover [&[data-separator='hover']_.resizable-handle__grip]:bg-resizable-grip-bg-hover [&[data-separator='hover']_.resizable-handle__grip::before]:bg-resizable-grip-indicator-hover",
-        "[&[data-separator='drag']_.resizable-handle__grip]:border-resizable-grip-border-pressed [&[data-separator='drag']_.resizable-handle__grip]:bg-resizable-grip-bg-pressed [&[data-separator='drag']_.resizable-handle__grip::before]:bg-resizable-grip-indicator-pressed",
+        'resizable-handle group relative flex w-px shrink-0 cursor-col-resize items-center justify-center bg-gray-10 dark:bg-gray-5 outline-none transition-[background-color,box-shadow] duration-150 ease-in-out hover:bg-gray-8 dark:hover:bg-gray-6 active:bg-gray-7 dark:active:bg-gray-7 focus-visible:z-[1] focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0',
+        /* Hit area expansion for vertical (default) orientation */
+        'after:pointer-events-none after:absolute after:inset-block-0 after:inset-inline-start-1/2 after:w-1 after:-translate-x-1/2 after:content-[""]',
+        /* Horizontal orientation: switch to row-resize cursor and dimensions */
+        "aria-[orientation='horizontal']:h-px aria-[orientation='horizontal']:w-full aria-[orientation='horizontal']:cursor-row-resize aria-[orientation='horizontal']:after:inset-block-start-1/2 aria-[orientation='horizontal']:after:inset-inline-0 aria-[orientation='horizontal']:after:h-1 aria-[orientation='horizontal']:after:w-full aria-[orientation='horizontal']:after:-translate-x-0 aria-[orientation='horizontal']:after:-translate-y-1/2",
+        /* Separator interaction states */
+        "[&[data-separator='hover']]:bg-gray-8 dark:[&[data-separator='hover']]:bg-gray-6 [&[data-separator='drag']]:bg-gray-7 dark:[&[data-separator='drag']]:bg-gray-7",
+        "[&[data-separator='hover']_.resizable-handle__grip]:border-gray-6 dark:[&[data-separator='hover']_.resizable-handle__grip]:border-gray-7 [&[data-separator='hover']_.resizable-handle__grip]:bg-gray-11 dark:[&[data-separator='hover']_.resizable-handle__grip]:bg-gray-4 [&[data-separator='hover']_.resizable-handle__grip::before]:bg-gray-5 dark:[&[data-separator='hover']_.resizable-handle__grip::before]:bg-gray-9",
+        "[&[data-separator='drag']_.resizable-handle__grip]:border-gray-5 dark:[&[data-separator='drag']_.resizable-handle__grip]:border-gray-8 [&[data-separator='drag']_.resizable-handle__grip]:bg-gray-10 dark:[&[data-separator='drag']_.resizable-handle__grip]:bg-gray-5 [&[data-separator='drag']_.resizable-handle__grip::before]:bg-gray-4 dark:[&[data-separator='drag']_.resizable-handle__grip::before]:bg-gray-10",
         className,
       )}
       {...props}
@@ -286,7 +291,7 @@ function ResizableHandle({
     >
       {children ??
         (withHandle ? (
-          <div className="resizable-handle__grip z-10 flex h-4 w-3 shrink-0 items-center justify-center rounded-[2px] border border-resizable-grip-border bg-resizable-grip-bg transition-[border-color,background-color,transform] duration-150 ease-in-out before:block before:h-2.5 before:w-1 before:rounded-full before:bg-resizable-grip-indicator before:content-[''] before:transition-[background-color] before:duration-150 before:ease-in-out group-hover:border-resizable-grip-border-hover group-hover:bg-resizable-grip-bg-hover group-hover:before:bg-resizable-grip-indicator-hover group-active:border-resizable-grip-border-pressed group-active:bg-resizable-grip-bg-pressed group-active:before:bg-resizable-grip-indicator-pressed" />
+          <div className="resizable-handle__grip z-10 flex h-4 w-3 shrink-0 items-center justify-center rounded-[2px] border border-gray-8 dark:border-gray-6 bg-gray-12 dark:bg-gray-3 transition-[border-color,background-color,transform] duration-150 ease-in-out before:block before:h-2.5 before:w-1 before:rounded-full before:bg-gray-7 dark:before:bg-gray-8 before:content-[''] before:transition-[background-color] before:duration-150 before:ease-in-out group-hover:border-gray-6 dark:group-hover:border-gray-7 group-hover:bg-gray-11 dark:group-hover:bg-gray-4 group-hover:before:bg-gray-5 dark:group-hover:before:bg-gray-9 group-active:border-gray-5 dark:group-active:border-gray-8 group-active:bg-gray-10 dark:group-active:bg-gray-5 group-active:before:bg-gray-4 dark:group-active:before:bg-gray-10" />
         ) : null)}
     </ResizableSeparator>
   );

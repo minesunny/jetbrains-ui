@@ -30,5 +30,5 @@ export { RestoreInactive } from './restore-inactive';
 export type { RestoreInactiveProps } from './restore-inactive';
 export { RestoreSmall } from './restore-small';
 export type { RestoreSmallProps } from './restore-small';
-export { iconNames } from '../types';
-export type { IconName, IconMode, IconProps, IconSize } from '../types';
+export { svgNames } from '../types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

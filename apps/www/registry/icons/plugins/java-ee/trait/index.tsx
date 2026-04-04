@@ -22,7 +22,6 @@ const TraitLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.967 8.683Q15 8.345 15 8a7 7 0 1 0-6.099 6.943 5 5 0 0 1-.096-.17l-.001-.002a4.74 4.74 0 0 1-.549-2.271c0-.812.177-1.576.55-2.267.37-.69.891-1.242 1.558-1.638A4.26 4.26 0 0 1 12.58 8a4.4 4.4 0 0 1 2.386.683"
       fill="#F2FCF3"
@@ -56,7 +55,6 @@ const TraitDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.967 8.683Q15 8.345 15 8a7 7 0 1 0-6.099 6.943 5 5 0 0 1-.096-.17l-.001-.002a4.74 4.74 0 0 1-.549-2.271c0-.812.177-1.576.55-2.267.37-.69.891-1.242 1.558-1.638A4.26 4.26 0 0 1 12.58 8a4.4 4.4 0 0 1 2.386.683"
       fill="#253627"

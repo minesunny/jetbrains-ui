@@ -80,5 +80,5 @@ export { UnselectAll } from './unselect-all';
 export type { UnselectAllProps } from './unselect-all';
 export { WriteReview } from './write-review';
 export type { WriteReviewProps } from './write-review';
-export { iconNames } from '../types';
-export type { IconName, IconMode, IconProps, IconSize } from '../types';
+export { svgNames } from '../types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

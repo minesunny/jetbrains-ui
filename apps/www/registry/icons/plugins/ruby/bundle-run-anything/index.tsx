@@ -22,7 +22,6 @@ const BundleRunAnythingLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m8 1.5 6.5 3v3.707A2 2 0 0 0 13.613 8h-3.226c-.502 0-.986.189-1.356.53L7.484 9.952a1.5 1.5 0 0 0-.162 2.033l1.635 2.075L8 14.5l-6.5-2.98V4.5z"
       fill="#EBECF0"
@@ -66,7 +65,6 @@ const BundleRunAnythingDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m8 1.5 6.5 3v3.707A2 2 0 0 0 13.613 8h-3.226c-.502 0-.986.189-1.356.53L7.484 9.952a1.5 1.5 0 0 0-.162 2.033l1.635 2.075L8 14.5l-6.5-2.98V4.5z"
       fill="#43454A"

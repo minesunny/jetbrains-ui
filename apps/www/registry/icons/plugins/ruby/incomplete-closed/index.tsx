@@ -22,7 +22,6 @@ const IncompleteClosedLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1 12.133C1 13.164 1.731 14 2.633 14h10.734c.902 0 1.633-.836 1.633-1.867V8H1z"
       fill="#EBECF0"
@@ -54,7 +53,6 @@ const IncompleteClosedDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1 12.133C1 13.164 1.731 14 2.633 14h10.734c.902 0 1.633-.836 1.633-1.867V8H1z"
       fill="#43454A"

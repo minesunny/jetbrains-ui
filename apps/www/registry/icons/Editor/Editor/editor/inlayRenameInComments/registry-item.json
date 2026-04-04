@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-Editor/editor/inlayRenameInComments",
+  "type": "registry:ui",
+  "title": "Editor/editor/inlayRenameInComments",
+  "description": "Editor/editor/inlayRenameInComments icon from editor-icons category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Editor/Editor/editor/inlayRenameInComments/inlayRenameInComments_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Editor/Editor/editor/inlayRenameInComments/inlayRenameInComments_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Editor/editor/inlayRenameInComments",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

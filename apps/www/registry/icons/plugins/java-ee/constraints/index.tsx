@@ -22,7 +22,6 @@ const ConstraintsLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.895 7.923c-.29-1.547-1.166-3.072-2.474-4.38C9.556.678 5.603-.034 2.77 2.8s-2.02 6.936.72 9.675c1.278 1.278 2.842 2.154 4.442 2.431a5 5 0 0 1 6.964-6.984"
       fill="#FFF4EB"
@@ -65,7 +64,6 @@ const ConstraintsDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.895 7.923c-.29-1.547-1.166-3.072-2.474-4.38C9.556.678 5.603-.034 2.77 2.8s-2.02 6.936.72 9.675c1.278 1.278 2.842 2.154 4.442 2.431a5 5 0 0 1 6.964-6.984"
       fill="#45322B"

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-Access_Modifiers/accessLocal",
+  "type": "registry:ui",
+  "title": "Access_Modifiers/accessLocal",
+  "description": "Access_Modifiers/accessLocal icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/Access_Modifiers/accessLocal/accessLocal_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Access_Modifiers/accessLocal/accessLocal_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Access_Modifiers/accessLocal",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

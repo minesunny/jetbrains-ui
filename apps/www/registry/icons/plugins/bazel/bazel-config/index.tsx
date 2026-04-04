@@ -22,7 +22,6 @@ const BazelConfigLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M4.5 1 8 4.5 4.5 8 1 4.5z" fill="#76D275" />
     <path d="M1 4.5V8l3.5 3.5V8z" fill="#43A047" />
     <path d="M11.999 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#6C707E" />
@@ -72,7 +71,6 @@ const BazelConfigDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M4.5 1 8 4.5 4.5 8 1 4.5z" fill="#76D275" />
     <path d="M1 4.5V8l3.5 3.5V8z" fill="#43A047" />
     <path d="M11.999 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#CED0D6" />

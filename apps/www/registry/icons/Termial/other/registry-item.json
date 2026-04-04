@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-terminal-other",
+  "type": "registry:ui",
+  "title": "Other",
+  "description": "Other icon from terminal category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Termial/other/other_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Termial/other/other_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "other",
+      "icon",
+      "terminal",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -22,7 +22,6 @@ const FlinkLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#FEAB6C" d="M5 2H6V3H5z" />
     <path fill="#F9D88C" d="M6 2H7V3H6z" />
     <path fill="#FE9E52" d="M7 2H8V3H7z" />
@@ -106,7 +105,6 @@ const FlinkDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#FEAB6C" d="M5 2H6V3H5z" />
     <path fill="#F9D88C" d="M6 2H7V3H6z" />
     <path fill="#FE9E52" d="M7 2H8V3H7z" />

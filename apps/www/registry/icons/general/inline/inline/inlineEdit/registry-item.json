@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-inline/inline/inlineEdit",
+  "type": "registry:ui",
+  "title": "Inline/inline/inlineEdit",
+  "description": "Inline/inline/inlineEdit icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/inline/inline/inlineEdit/inlineEdit_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/inline/inline/inlineEdit/inlineEdit_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "inline/inline/inlineEdit",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

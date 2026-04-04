@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-Collaboration_Tools/commentUnread",
+  "type": "registry:ui",
+  "title": "Collaboration_Tools/commentUnread",
+  "description": "Collaboration_Tools/commentUnread icon from vcs category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/VCS/Collaboration_Tools/commentUnread/commentUnread_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/VCS/Collaboration_Tools/commentUnread/commentUnread_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Collaboration_Tools/commentUnread",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -22,7 +22,6 @@ const SpringBootEndpointLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 2c-1.458 0-2.794.52-3.834 1.384a.5.5 0 0 1-.64-.768 7 7 0 1 1 0 10.769.5.5 0 1 1 .64-.77A6 6 0 1 0 8 2"
       fill="#E66D17"
@@ -54,7 +53,6 @@ const SpringBootEndpointDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 2c-1.458 0-2.794.52-3.834 1.384a.5.5 0 0 1-.64-.768 7 7 0 1 1 0 10.769.5.5 0 1 1 .64-.77A6 6 0 1 0 8 2"
       fill="#C77D55"

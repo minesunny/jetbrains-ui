@@ -1,0 +1,514 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types",
+  "type": "registry:ui",
+  "title": "FileTypes Icons",
+  "description": "All icons from the file-types category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/File_Types/actionScript/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/acyncAPI/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/amper/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/angularJS/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/angularJSMonochrome/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/anyType/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/api/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/aspectJ/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/assemblerGo/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/bun/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/chameleon/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/changedFile/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/changedFiles/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/coffeescript/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/conditionalStatement/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/contexts/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/contextsModifier/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/cythonFile/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/deno/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/dictionary/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/dts/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/dtsProperty/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/dtsSubNode/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/ejs/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/exposed/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fastAPI/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/angularJS/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/archive/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/css/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/cucumber/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/diagram/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/eclipse/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/editorConfig/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/freemaker/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/html/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/ideaModule/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/ignored/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/image/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/java/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/javaScript/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/jest/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/json/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/kotlin/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/less/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/manifest/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/markdown/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/maven/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/mavenIgnored/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/modified/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/patch/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/properties/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/protobuf/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/python/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/react/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/scala/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/scratch/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/scratches/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/scss/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/shell/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/sourceMap/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/sql/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/terraform/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/text/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/unknown/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/vueJs/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/xml/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/xsl/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/yaml/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/fileTypes/yarn/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/flask/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/haskell/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/hook/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/httpHeader/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/httpRequestsRunConfiguration/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/i18n/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/idl/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/javaClass/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/jfr/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/jinja2/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/jsConfig/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/jsDocClosure/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/jsonSchema/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/jsp/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/jspx/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/jupyterNotebook/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/micronaut/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/microsoftWindows/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/nextJS/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/nodejsTestRunner/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/numPy/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/openRewrite/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/openTofu/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/packageJson/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/packageLock/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/pandas/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/perl/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/pnpm/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/pnpmLock/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/polars/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/prettier/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/protoFile/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/protoMessage/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/pyTorch/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/qml/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/qrc/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/qt/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/quatro/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/redoc/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/regexp/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/rst/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/sarif/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/sass/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/svelte/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/teamCity/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/tensorFlow/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/tsConfig/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/tsDoc/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/uiForm/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/viteJS/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/vitest/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/workspace/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/wsdl/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/xhtml/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/xpath/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/xsd/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/File_Types/yarnLock/registry-item.json",
+      "type": "registry:item"
+    }
+  ]
+}

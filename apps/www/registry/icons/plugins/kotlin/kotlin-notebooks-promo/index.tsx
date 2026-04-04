@@ -22,7 +22,6 @@ const KotlinNotebooksPromoLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M13.558 2.746A2 2 0 0 0 12 2H4a2 2 0 0 0-2 2v7.428l4.42-5.403a.75.75 0 0 1 1.204.06L9.062 8.24z"
       fill="url(#a)"
@@ -78,7 +77,6 @@ const KotlinNotebooksPromoDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M13.558 2.746A2 2 0 0 0 12 2H4a2 2 0 0 0-2 2v7.428l4.42-5.403a.75.75 0 0 1 1.204.06L9.062 8.24z"
       fill="url(#a)"

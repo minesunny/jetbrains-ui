@@ -22,7 +22,6 @@ const AndroidDeviceLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M5 2h6a1 1 0 0 1 1 1v8q.509 0 .992.099l.008-.014V3a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2.1c.07-.348.178-.682.316-1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1"
       fill="#6C707E"
@@ -54,7 +53,6 @@ const AndroidDeviceDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M5 2h6a1 1 0 0 1 1 1v8q.509 0 .992.099l.008-.014V3a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2.1c.07-.348.178-.682.316-1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1"
       fill="#CED0D6"

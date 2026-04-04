@@ -22,7 +22,6 @@ const ReturnValueLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15 8c0 .766-.123 1.503-.35 2.193A3.5 3.5 0 0 0 13.5 10a3.5 3.5 0 0 0-2.45 1h-1.1a3.5 3.5 0 0 0-5.94 2.752A7 7 0 1 1 15 8"
       fill="#FFF7F7"
@@ -62,7 +61,6 @@ const ReturnValueDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15 8c0 .766-.123 1.503-.35 2.193A3.5 3.5 0 0 0 13.5 10a3.5 3.5 0 0 0-2.45 1h-1.1a3.5 3.5 0 0 0-5.94 2.752A7 7 0 1 1 15 8"
       fill="#402929"

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-windows/windows/maximizeInactive",
+  "type": "registry:ui",
+  "title": "Windows/windows/maximizeInactive",
+  "description": "Windows/windows/maximizeInactive icon from general category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/General/windows/windows/maximizeInactive/maximizeInactive_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/windows/windows/maximizeInactive/maximizeInactive_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "windows/windows/maximizeInactive",
+      "icon",
+      "general",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

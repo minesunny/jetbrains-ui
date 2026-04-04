@@ -34,5 +34,5 @@ export { StrikeThrough } from './strike-through';
 export type { StrikeThroughProps } from './strike-through';
 export { Table } from './table';
 export type { TableProps } from './table';
-export { iconNames } from '../types';
-export type { IconName, IconMode, IconProps, IconSize } from '../types';
+export { svgNames } from '../types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

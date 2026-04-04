@@ -22,7 +22,6 @@ const EjbCmrFieldLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 14.413c-.524-.75-.873-1.603-.972-2.49-.141-1.269.24-2.566 1.276-3.602 1.024-1.024 2.292-1.432 3.564-1.296 1.136.122 2.216.668 3.114 1.482Q15 8.255 15 8a7 7 0 1 0-7 7z"
       fill="#FFF4EB"
@@ -68,7 +67,6 @@ const EjbCmrFieldDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 14.413c-.524-.75-.873-1.603-.972-2.49-.141-1.269.24-2.566 1.276-3.602 1.024-1.024 2.292-1.432 3.564-1.296 1.136.122 2.216.668 3.114 1.482Q15 8.255 15 8a7 7 0 1 0-7 7z"
       fill="#45322B"

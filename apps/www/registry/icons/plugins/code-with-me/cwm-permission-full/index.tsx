@@ -22,7 +22,6 @@ const CwmPermissionFullLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="1.5"
       y="2.5"
@@ -58,7 +57,6 @@ const CwmPermissionFullDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="1.5"
       y="2.5"

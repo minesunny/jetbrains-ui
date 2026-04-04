@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-run-run/widget/rerun/stroke",
+  "type": "registry:ui",
+  "title": "Run/widget/rerun/stroke",
+  "description": "Run/widget/rerun/stroke icon from run category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Run/run/widget/rerun/stroke/stroke.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "run/widget/rerun/stroke",
+      "icon",
+      "run",
+      "jetbrains"
+    ],
+    "hasLight": false,
+    "hasDark": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-arrow-left-down",
+  "type": "registry:ui",
+  "title": "Arrow Left Down",
+  "description": "Arrow Left Down icon from vcs category.",
+  "registryDependencies": [
+    "icons-vcs-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/vcs/arrow-left-down/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/arrow-left-down/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "arrow-left-down",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

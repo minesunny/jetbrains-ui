@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-build/toggleSkipTestsMode",
+  "type": "registry:ui",
+  "title": "Build/toggleSkipTestsMode",
+  "description": "Build/toggleSkipTestsMode icon from build category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Build/build/toggleSkipTestsMode/toggleSkipTestsMode_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Build/build/toggleSkipTestsMode/toggleSkipTestsMode_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "build/toggleSkipTestsMode",
+      "icon",
+      "build",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

@@ -22,7 +22,6 @@ const DebugTargetControllerLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M6 10q0 .127-.016.25A3 3 0 0 0 4 9.5c-.76 0-1.456.283-1.985.75A2 2 0 1 1 6 10M6 12.5a2 2 0 1 0-4 0v.5a2 2 0 1 0 4 0z"
@@ -69,7 +68,6 @@ const DebugTargetControllerDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M6 10q0 .127-.016.25A3 3 0 0 0 4 9.5c-.76 0-1.456.283-1.985.75A2 2 0 1 1 6 10M6 12.5a2 2 0 1 0-4 0v.5a2 2 0 1 0 4 0z"

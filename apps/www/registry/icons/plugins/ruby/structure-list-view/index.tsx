@@ -22,7 +22,6 @@ const StructureListViewLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect x="2.5" y="1.5" width="11" height="13" rx="1.5" stroke="#6C707E" />
     <rect x="5" y="5" width="6" height="1" rx=".5" fill="#6C707E" />
     <rect x="5" y="7.5" width="6" height="1" rx=".5" fill="#6C707E" />
@@ -48,7 +47,6 @@ const StructureListViewDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect x="2.5" y="1.5" width="11" height="13" rx="1.5" stroke="#CED0D6" />
     <rect x="5" y="5" width="6" height="1" rx=".5" fill="#CED0D6" />
     <rect x="5" y="7.5" width="6" height="1" rx=".5" fill="#CED0D6" />

@@ -22,7 +22,6 @@ const HashKeyLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3.035a3.5 3.5 0 0 1 6.628-2H14V4a2 2 0 0 0-2-2z"
@@ -69,7 +68,6 @@ const HashKeyDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3.035a3.5 3.5 0 0 1 6.628-2H14V4a2 2 0 0 0-2-2z"

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-raiting-feedback-rating-focused",
+  "type": "registry:ui",
+  "title": "Feedback Rating Focused",
+  "description": "Feedback Rating Focused icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/raiting/feedback-rating-focused/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating-focused/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "feedback-rating-focused",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

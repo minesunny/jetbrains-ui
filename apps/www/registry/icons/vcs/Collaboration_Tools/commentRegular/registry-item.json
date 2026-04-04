@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-Collaboration_Tools/commentRegular",
+  "type": "registry:ui",
+  "title": "Collaboration_Tools/commentRegular",
+  "description": "Collaboration_Tools/commentRegular icon from vcs category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/VCS/Collaboration_Tools/commentRegular/commentRegular_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/VCS/Collaboration_Tools/commentRegular/commentRegular_Theme-Light.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Collaboration_Tools/commentRegular",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ],
+    "hasLight": true,
+    "hasDark": true
+  }
+}

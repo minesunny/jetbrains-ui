@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-editor-icons-Inspections/inspectionsErrorEmpty",
+  "type": "registry:ui",
+  "title": "Inspections/inspectionsErrorEmpty",
+  "description": "Inspections/inspectionsErrorEmpty icon from editor-icons category.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/icons/Editor/Inspections/inspectionsErrorEmpty/inspectionsErrorEmpty.svg",
+      "type": "registry:source"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "Inspections/inspectionsErrorEmpty",
+      "icon",
+      "editor-icons",
+      "jetbrains"
+    ],
+    "hasLight": false,
+    "hasDark": false
+  }
+}

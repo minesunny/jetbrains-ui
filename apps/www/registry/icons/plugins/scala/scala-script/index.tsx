@@ -22,7 +22,6 @@ const ScalaScriptLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5"
       stroke="#DB3B4B"
@@ -56,7 +55,6 @@ const ScalaScriptDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5"
       stroke="#DB5C5C"

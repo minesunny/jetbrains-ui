@@ -22,7 +22,6 @@ const FileTransferLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.854 6.854a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L11 4.707V11.5a.5.5 0 0 0 1 0V4.707l2.146 2.147a.5.5 0 0 0 .708 0M7.854 9.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L4 11.293V4.5a.5.5 0 0 1 1 0v6.793l2.146-2.147a.5.5 0 0 1 .708 0"
       fill="#6C707E"
@@ -48,7 +47,6 @@ const FileTransferDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.854 6.854a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L11 4.707V11.5a.5.5 0 0 0 1 0V4.707l2.146 2.147a.5.5 0 0 0 .708 0M7.854 9.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L4 11.293V4.5a.5.5 0 0 1 1 0v6.793l2.146-2.147a.5.5 0 0 1 .708 0"
       fill="#CED0D6"

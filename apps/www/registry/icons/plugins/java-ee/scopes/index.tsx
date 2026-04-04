@@ -22,7 +22,6 @@ const ScopesLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="7" cy="7" r="4.5" stroke="#6C707E" />
     <path d="m10.2 10.2 3.3 3.296" stroke="#6C707E" strokeLinecap="round" />
   </svg>
@@ -46,7 +45,6 @@ const ScopesDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="7" cy="7" r="4.5" stroke="#CED0D6" />
     <path d="m10.2 10.2 3.3 3.296" stroke="#CED0D6" strokeLinecap="round" />
   </svg>

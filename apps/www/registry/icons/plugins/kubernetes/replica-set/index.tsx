@@ -22,7 +22,6 @@ const ReplicaSetLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#EBECF0" d="M2 6H10V14H2z" />
     <rect x="1.5" y="5.5" width="9" height="9" rx="1.5" stroke="#6C707E" />
     <path
@@ -56,7 +55,6 @@ const ReplicaSetDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#43454A" d="M2 6H10V14H2z" />
     <rect x="1.5" y="5.5" width="9" height="9" rx="1.5" stroke="#CED0D6" />
     <path

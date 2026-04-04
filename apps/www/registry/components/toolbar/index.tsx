@@ -25,8 +25,8 @@ const Toolbar = React.forwardRef<
         'data-[direction=floating]:border-gray-10 data-[direction=floating]:bg-[color-mix(in_srgb,var(--gray-14)_94%,transparent)] data-[direction=floating]:shadow-[0_3px_10px_rgba(39,40,46,0.12)]',
         'dark:data-[direction=floating]:border-gray-5 dark:data-[direction=floating]:bg-[color-mix(in_srgb,var(--gray-2)_94%,transparent)] dark:data-[direction=floating]:shadow-[0_6px_18px_rgba(0,0,0,0.32)]',
         orientation === 'horizontal'
-          ? 'flex-row items-center gap-0 px-ui-tight py-ui-compact'
-          : 'flex-col items-center gap-0 px-ui-compact py-ui-tight',
+          ? 'flex-row items-center gap-0 px-1 py-1.5'
+          : 'flex-col items-center gap-0 px-1.5 py-1',
         className,
       )}
       {...props}
@@ -48,7 +48,7 @@ const ToolbarItem = React.forwardRef<
       data-slot="toolbar-item"
       data-separator={separator}
       className={cn(
-        'relative inline-flex min-h-ui-toolbar-item min-w-ui-toolbar-item shrink-0 items-center justify-center gap-ui-tight rounded-[4px] border border-transparent px-ui-toolbar-item py-ui-toolbar-item text-ui-default text-gray-6 outline-none transition-[background-color,border-color,color,box-shadow,opacity] duration-150 ease-out',
+        'relative inline-flex min-h-[26px] min-w-[26px] shrink-0 items-center justify-center gap-1 rounded-[4px] border border-transparent px-[5px] py-[5px] font-sans text-[13px] leading-4 font-medium text-gray-6 outline-none transition-[background-color,border-color,color,box-shadow,opacity] duration-150 ease-out',
         'hover:bg-gray-12 hover:text-gray-2',
         'focus-visible:z-[1] focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-1 focus-visible:ring-offset-white',
         'disabled:pointer-events-none disabled:cursor-not-allowed disabled:text-gray-8',
