@@ -8,6 +8,10 @@ vi.mock('next-themes', () => ({
   }),
 }));
 
+vi.mock('@/registry/icons/general/types', () => ({
+  IconSize: ['xs', 'sm', 'md', 'lg', 'xl'],
+}));
+
 vi.mock('../registry', async () => {
   const React = await import('react');
 
