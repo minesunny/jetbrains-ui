@@ -7,7 +7,6 @@ export type STM32CubeMXProps = SvgProps;
 const STM32CubeMXLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +47,6 @@ const STM32CubeMXLight: React.FC<SvgProps> = ({
 const STM32CubeMXDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -91,7 +89,6 @@ export const STM32CubeMX: React.FC<STM32CubeMXProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? STM32CubeMXLight : STM32CubeMXDark;
@@ -100,7 +97,6 @@ export const STM32CubeMX: React.FC<STM32CubeMXProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

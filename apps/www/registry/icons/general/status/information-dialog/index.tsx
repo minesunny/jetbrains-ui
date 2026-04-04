@@ -7,7 +7,6 @@ export type InformationDialogProps = SvgProps;
 const InformationDialogLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const InformationDialogLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="14" cy="14" r="12" fill="#4682FA" />
     <path
       d="M13 20a1 1 0 1 0 2 0v-6a1 1 0 1 0-2 0zM14 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"
@@ -35,7 +33,6 @@ const InformationDialogLight: FC<SvgProps> = ({
 const InformationDialogDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const InformationDialogDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <circle cx="14" cy="14" r="12" fill="#548AF7" />
       <path
@@ -72,7 +68,6 @@ export const InformationDialog: FC<InformationDialogProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -82,7 +77,6 @@ export const InformationDialog: FC<InformationDialogProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

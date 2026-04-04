@@ -7,7 +7,6 @@ export type PinSelectedProps = SvgProps;
 const PinSelectedLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PinSelectedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5 2.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5.996.996 0 0 0-.985 1.137l.212 1.492c.047.323.245.584.496.736 1.019.617 1.455 1.564 1.643 2.277a.24.24 0 0 1-.053.232.42.42 0 0 1-.313.126H4a.42.42 0 0 1-.312-.126.24.24 0 0 1-.054-.232c.188-.713.624-1.66 1.643-2.277.251-.152.45-.412.495-.735l.213-1.493A.996.996 0 0 0 5 4.5a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5Z"
       stroke="#3574F0"
@@ -35,7 +33,6 @@ const PinSelectedLight: FC<SvgProps> = ({
 const PinSelectedDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const PinSelectedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5 2.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5.996.996 0 0 0-.985 1.137l.212 1.492c.047.323.245.584.496.736 1.019.617 1.455 1.564 1.643 2.277a.24.24 0 0 1-.053.232.42.42 0 0 1-.313.126H4a.42.42 0 0 1-.312-.126.24.24 0 0 1-.054-.232c.188-.713.624-1.66 1.643-2.277.251-.152.45-.412.495-.735l.213-1.493A.996.996 0 0 0 5 4.5a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5Z"
       stroke="#548AF7"
@@ -65,7 +61,6 @@ export const PinSelected: FC<PinSelectedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PinSelectedLight : PinSelectedDark;
@@ -74,7 +69,6 @@ export const PinSelected: FC<PinSelectedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

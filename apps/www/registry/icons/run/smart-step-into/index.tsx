@@ -7,7 +7,6 @@ export type SmartStepIntoProps = SvgProps;
 const SmartStepIntoLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SmartStepIntoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="9" y="12" width="6" height="1" rx=".5" fill="#6C707E" />
     <rect x="9" y="9" width="6" height="1" rx=".5" fill="#6C707E" />
     <rect x="9" y="6" width="6" height="1" rx=".5" fill="#6C707E" />
@@ -40,7 +38,6 @@ const SmartStepIntoLight: FC<SvgProps> = ({
 const SmartStepIntoDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const SmartStepIntoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="9" y="12" width="6" height="1" rx=".5" fill="#CED0D6" />
     <rect x="9" y="9" width="6" height="1" rx=".5" fill="#CED0D6" />
     <rect x="9" y="6" width="6" height="1" rx=".5" fill="#CED0D6" />
@@ -75,7 +71,6 @@ export const SmartStepInto: FC<SmartStepIntoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const SmartStepInto: FC<SmartStepIntoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ShowCurrentFrameProps = SvgProps;
 const ShowCurrentFrameLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ShowCurrentFrameLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="3" width="12" height="1" rx=".5" fill="#6C707E" />
     <rect x="2.5" y="6.5" width="11" height="3" rx=".5" stroke="#3574F0" />
     <rect x="2" y="12" width="12" height="1" rx=".5" fill="#6C707E" />
@@ -33,7 +31,6 @@ const ShowCurrentFrameLight: FC<SvgProps> = ({
 const ShowCurrentFrameDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -49,7 +46,6 @@ const ShowCurrentFrameDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="3" width="12" height="1" rx=".5" fill="#CED0D6" />
     <rect x="2.5" y="6.5" width="11" height="3" rx=".5" stroke="#548AF7" />
     <rect x="2" y="12" width="12" height="1" rx=".5" fill="#CED0D6" />
@@ -61,7 +57,6 @@ export const ShowCurrentFrame: FC<ShowCurrentFrameProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -71,7 +66,6 @@ export const ShowCurrentFrame: FC<ShowCurrentFrameProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

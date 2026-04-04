@@ -7,7 +7,6 @@ export type CompactEmptyPackagesProps = SvgProps;
 const CompactEmptyPackagesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CompactEmptyPackagesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 3v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H5.5l-1-1H2a1 1 0 0 0-1 1"
       fill="#EBECF0"
@@ -51,7 +49,6 @@ const CompactEmptyPackagesLight: FC<SvgProps> = ({
 const CompactEmptyPackagesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -67,7 +64,6 @@ const CompactEmptyPackagesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 3v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H5.5l-1-1H2a1 1 0 0 0-1 1"
       fill="#43454A"
@@ -97,7 +93,6 @@ export const CompactEmptyPackages: FC<CompactEmptyPackagesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -107,7 +102,6 @@ export const CompactEmptyPackages: FC<CompactEmptyPackagesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type CollationProps = SvgProps;
 const CollationLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CollationLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 3.5h5M9.5 8h5M9.5 12.5h5"
       stroke="#6C707E"
@@ -42,7 +40,6 @@ const CollationLight: FC<SvgProps> = ({
 const CollationDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const CollationDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 3.5h5M9.5 8h5M9.5 12.5h5"
       stroke="#CED0D6"
@@ -79,7 +75,6 @@ export const Collation: FC<CollationProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CollationLight : CollationDark;
@@ -88,7 +83,6 @@ export const Collation: FC<CollationProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

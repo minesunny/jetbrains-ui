@@ -7,7 +7,6 @@ export type ChevronDownLargeProps = SvgProps;
 const ChevronDownLargeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ChevronDownLargeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.5 5.75 8 10.25l-4.5-4.5"
       stroke="#6C707E"
@@ -35,7 +33,6 @@ const ChevronDownLargeLight: FC<SvgProps> = ({
 const ChevronDownLargeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const ChevronDownLargeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.5 5.75 8 10.25l-4.5-4.5"
       stroke="#CED0D6"
@@ -65,7 +61,6 @@ export const ChevronDownLarge: FC<ChevronDownLargeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -75,7 +70,6 @@ export const ChevronDownLarge: FC<ChevronDownLargeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

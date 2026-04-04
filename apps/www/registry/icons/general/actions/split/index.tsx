@@ -7,7 +7,6 @@ export type SplitProps = SvgProps;
 const SplitLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SplitLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 5.5v-3h3M13.5 5.5v-3h-3"
       stroke="#6C707E"
@@ -43,7 +41,6 @@ const SplitLight: FC<SvgProps> = ({
 const SplitDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const SplitDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 5.5v-3h3M13.5 5.5v-3h-3"
       stroke="#CED0D6"
@@ -81,7 +77,6 @@ export const Split: FC<SplitProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SplitLight : SplitDark;
@@ -90,7 +85,6 @@ export const Split: FC<SplitProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

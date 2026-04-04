@@ -7,7 +7,6 @@ export type AddLibraryProps = SvgProps;
 const AddLibraryLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +86,6 @@ const AddLibraryLight: React.FC<SvgProps> = ({
 const AddLibraryDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -169,7 +167,6 @@ export const AddLibrary: React.FC<AddLibraryProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AddLibraryLight : AddLibraryDark;
@@ -178,7 +175,6 @@ export const AddLibrary: React.FC<AddLibraryProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

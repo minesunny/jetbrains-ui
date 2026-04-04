@@ -7,7 +7,6 @@ export type RestartDebugProps = SvgProps;
 const RestartDebugLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RestartDebugLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M14 10q0 .127-.015.25A3 3 0 0 0 12 9.5c-.76 0-1.456.283-1.985.75A2 2 0 1 1 14 10M14 12.5a2 2 0 1 0-4 0v.5a2 2 0 1 0 4 0z"
@@ -51,7 +49,6 @@ const RestartDebugLight: FC<SvgProps> = ({
 const RestartDebugDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -67,7 +64,6 @@ const RestartDebugDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <g clipPath="url(#b)">
         <path
@@ -102,7 +98,6 @@ export const RestartDebug: FC<RestartDebugProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RestartDebugLight : RestartDebugDark;
@@ -111,7 +106,6 @@ export const RestartDebug: FC<RestartDebugProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

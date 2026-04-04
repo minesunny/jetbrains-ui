@@ -7,7 +7,6 @@ export type SortByUsageProps = SvgProps;
 const SortByUsageLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SortByUsageLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.385 2.12h1.2l-5.06 7h-1.2zM9.65 5.4q-.5 0-.895-.215a1.55 1.55 0 0 1-.61-.6 1.77 1.77 0 0 1-.22-.885q0-.495.22-.88.22-.39.61-.605Q9.149 2 9.65 2q.51 0 .9.215.395.215.615.605.225.385.225.88t-.225.885a1.54 1.54 0 0 1-.615.6q-.39.215-.9.215m.005-.885a.708.708 0 0 0 .665-.39.9.9 0 0 0 .095-.425.9.9 0 0 0-.095-.425.68.68 0 0 0-.27-.285.75.75 0 0 0-.395-.105.75.75 0 0 0-.395.105.7.7 0 0 0-.265.285.9.9 0 0 0-.095.425q0 .24.095.425a.7.7 0 0 0 .265.29q.174.1.395.1M13.26 9.24q-.505 0-.895-.215a1.6 1.6 0 0 1-.615-.6 1.77 1.77 0 0 1-.22-.885q0-.495.22-.88.225-.39.615-.605t.895-.215.9.215q.4.215.62.605.22.385.22.88t-.22.885a1.54 1.54 0 0 1-.62.6 1.85 1.85 0 0 1-.9.215m0-.885q.225 0 .4-.1a.7.7 0 0 0 .27-.29.9.9 0 0 0 .1-.425.9.9 0 0 0-.1-.42.67.67 0 0 0-.27-.29.76.76 0 0 0-.4-.105.75.75 0 0 0-.395.105.7.7 0 0 0-.265.29.9.9 0 0 0-.095.42q0 .24.095.425a.7.7 0 0 0 .265.29q.175.1.395.1"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const SortByUsageLight: FC<SvgProps> = ({
 const SortByUsageDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const SortByUsageDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.385 2.12h1.2l-5.06 7h-1.2zM9.65 5.4q-.5 0-.895-.215a1.55 1.55 0 0 1-.61-.6 1.77 1.77 0 0 1-.22-.885q0-.495.22-.88.22-.39.61-.605Q9.149 2 9.65 2q.51 0 .9.215.395.215.615.605.225.385.225.88t-.225.885a1.54 1.54 0 0 1-.615.6q-.39.215-.9.215m.005-.885a.708.708 0 0 0 .665-.39.9.9 0 0 0 .095-.425.9.9 0 0 0-.095-.425.68.68 0 0 0-.27-.285.75.75 0 0 0-.395-.105.75.75 0 0 0-.395.105.7.7 0 0 0-.265.285.9.9 0 0 0-.095.425q0 .24.095.425a.7.7 0 0 0 .265.29q.174.1.395.1M13.26 9.24q-.505 0-.895-.215a1.6 1.6 0 0 1-.615-.6 1.77 1.77 0 0 1-.22-.885q0-.495.22-.88.225-.39.615-.605t.895-.215.9.215q.4.215.62.605.22.385.22.88t-.22.885a1.54 1.54 0 0 1-.62.6 1.85 1.85 0 0 1-.9.215m0-.885q.225 0 .4-.1a.7.7 0 0 0 .27-.29.9.9 0 0 0 .1-.425.9.9 0 0 0-.1-.42.67.67 0 0 0-.27-.29.76.76 0 0 0-.4-.105.75.75 0 0 0-.395.105.7.7 0 0 0-.265.29.9.9 0 0 0-.095.42q0 .24.095.425a.7.7 0 0 0 .265.29q.175.1.395.1"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const SortByUsage: FC<SortByUsageProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SortByUsageLight : SortByUsageDark;
@@ -84,7 +79,6 @@ export const SortByUsage: FC<SortByUsageProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

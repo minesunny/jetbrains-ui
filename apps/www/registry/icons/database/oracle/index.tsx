@@ -7,7 +7,6 @@ export type OracleProps = SvgProps;
 const OracleLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const OracleLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#F80000" d="M1 1H15V15H1z" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const OracleLight: FC<SvgProps> = ({
 const OracleDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const OracleDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#F80000" d="M1 1H15V15H1z" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const Oracle: FC<OracleProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? OracleLight : OracleDark;
@@ -78,7 +73,6 @@ export const Oracle: FC<OracleProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

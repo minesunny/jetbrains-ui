@@ -7,7 +7,6 @@ export type XslProps = SvgProps;
 const XslLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const XslLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 4.5 5 8l-3.5 3.5m13 0L11 8l3.5-3.5m-5-2-3 11"
       stroke="#369650"
@@ -36,7 +34,6 @@ const XslLight: FC<SvgProps> = ({
 const XslDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const XslDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 4.5 5 8l-3.5 3.5m13 0L11 8l3.5-3.5m-5-2-3 11"
       stroke="#57965C"
@@ -67,7 +63,6 @@ export const Xsl: FC<XslProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? XslLight : XslDark;
@@ -76,7 +71,6 @@ export const Xsl: FC<XslProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

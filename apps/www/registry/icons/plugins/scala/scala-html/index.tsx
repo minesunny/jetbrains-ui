@@ -7,7 +7,6 @@ export type ScalaHtmlProps = SvgProps;
 const ScalaHtmlLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -40,7 +39,6 @@ const ScalaHtmlLight: React.FC<SvgProps> = ({
 const ScalaHtmlDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -75,7 +73,6 @@ export const ScalaHtml: React.FC<ScalaHtmlProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ScalaHtmlLight : ScalaHtmlDark;
@@ -84,7 +81,6 @@ export const ScalaHtml: React.FC<ScalaHtmlProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

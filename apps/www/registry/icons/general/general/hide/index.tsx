@@ -7,7 +7,6 @@ export type HideProps = SvgProps;
 const HideLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const HideLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2.5 7.5h11" stroke="#6C707E" strokeLinecap="round" />
   </svg>
 );
@@ -31,7 +29,6 @@ const HideLight: FC<SvgProps> = ({
 const HideDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +44,6 @@ const HideDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2.5 7.5h11" stroke="#CED0D6" strokeLinecap="round" />
   </svg>
 );
@@ -57,7 +53,6 @@ export const Hide: FC<HideProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? HideLight : HideDark;
@@ -66,7 +61,6 @@ export const Hide: FC<HideProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

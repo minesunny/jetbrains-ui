@@ -7,7 +7,6 @@ export type KubernetesJProps = SvgProps;
 const KubernetesJLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -44,7 +43,6 @@ const KubernetesJLight: React.FC<SvgProps> = ({
 const KubernetesJDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -90,7 +88,6 @@ export const KubernetesJ: React.FC<KubernetesJProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? KubernetesJLight : KubernetesJDark;
@@ -99,7 +96,6 @@ export const KubernetesJ: React.FC<KubernetesJProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

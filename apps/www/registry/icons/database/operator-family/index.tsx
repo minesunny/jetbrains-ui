@@ -7,7 +7,6 @@ export type OperatorFamilyProps = SvgProps;
 const OperatorFamilyLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const OperatorFamilyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11 9h4.5v.945h-3.49V12H15v.945h-2.99V16H11z" fill="#3574F0" />
     <path
       fillRule="evenodd"
@@ -43,7 +41,6 @@ const OperatorFamilyLight: FC<SvgProps> = ({
 const OperatorFamilyDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const OperatorFamilyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11 9h4.5v.945h-3.49V12H15v.945h-2.99V16H11z" fill="#548AF7" />
     <path
       fillRule="evenodd"
@@ -81,7 +77,6 @@ export const OperatorFamily: FC<OperatorFamilyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -91,7 +86,6 @@ export const OperatorFamily: FC<OperatorFamilyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

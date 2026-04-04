@@ -7,7 +7,6 @@ export type IndexFunUniqueProps = SvgProps;
 const IndexFunUniqueLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const IndexFunUniqueLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.225 16.12q-.825 0-1.465-.35a2.5 2.5 0 0 1-.995-.99 2.9 2.9 0 0 1-.355-1.45V9h1.015v4.325q0 .55.225.98t.63.665q.41.235.945.235.525 0 .92-.235.4-.24.62-.665a2.1 2.1 0 0 0 .22-.98V9H16v4.33a2.9 2.9 0 0 1-.355 1.45 2.5 2.5 0 0 1-.98.99q-.625.35-1.44.35"
       fill="#6C707E"
@@ -38,7 +36,6 @@ const IndexFunUniqueLight: FC<SvgProps> = ({
 const IndexFunUniqueDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const IndexFunUniqueDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.225 16.12q-.825 0-1.465-.35a2.5 2.5 0 0 1-.995-.99 2.9 2.9 0 0 1-.355-1.45V9h1.015v4.325q0 .55.225.98t.63.665q.41.235.945.235.525 0 .92-.235.4-.24.62-.665a2.1 2.1 0 0 0 .22-.98V9H16v4.33a2.9 2.9 0 0 1-.355 1.45 2.5 2.5 0 0 1-.98.99q-.625.35-1.44.35"
       fill="#CED0D6"
@@ -71,7 +67,6 @@ export const IndexFunUnique: FC<IndexFunUniqueProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +76,6 @@ export const IndexFunUnique: FC<IndexFunUniqueProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

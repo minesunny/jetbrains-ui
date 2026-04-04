@@ -7,7 +7,6 @@ export type YarnLockProps = SvgProps;
 const YarnLockLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const YarnLockLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#EBECF0" d="M11 12H15V15H11z" />
     <path
       fillRule="evenodd"
@@ -41,7 +39,6 @@ const YarnLockLight: FC<SvgProps> = ({
 const YarnLockDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -57,7 +54,6 @@ const YarnLockDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#43454A" d="M11 12H15V15H11z" />
     <path
       fillRule="evenodd"
@@ -77,7 +73,6 @@ export const YarnLock: FC<YarnLockProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? YarnLockLight : YarnLockDark;
@@ -86,7 +81,6 @@ export const YarnLock: FC<YarnLockProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

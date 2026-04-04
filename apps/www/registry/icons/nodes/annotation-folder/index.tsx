@@ -7,7 +7,6 @@ export type AnnotationFolderProps = SvgProps;
 const AnnotationFolderLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AnnotationFolderLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m10 16 2.31-6.3h1.28l2.39 6.3h-1.091l-.571-1.602h-2.673L11.109 16zm3.977-2.547-.928-2.556-.104-.387-.104.387-.878 2.556z"
       fill="#6C707E"
@@ -42,7 +40,6 @@ const AnnotationFolderLight: FC<SvgProps> = ({
 const AnnotationFolderDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const AnnotationFolderDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m10 16 2.31-6.3h1.28l2.39 6.3h-1.091l-.571-1.602h-2.673L11.109 16zm3.977-2.547-.928-2.556-.104-.387-.104.387-.878 2.556z"
       fill="#CED0D6"
@@ -79,7 +75,6 @@ export const AnnotationFolder: FC<AnnotationFolderProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -89,7 +84,6 @@ export const AnnotationFolder: FC<AnnotationFolderProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

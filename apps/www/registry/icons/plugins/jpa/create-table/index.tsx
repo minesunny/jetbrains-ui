@@ -7,7 +7,6 @@ export type CreateTableProps = SvgProps;
 const CreateTableLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const CreateTableLight: React.FC<SvgProps> = ({
 const CreateTableDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -82,7 +80,6 @@ export const CreateTable: React.FC<CreateTableProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CreateTableLight : CreateTableDark;
@@ -91,7 +88,6 @@ export const CreateTable: React.FC<CreateTableProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

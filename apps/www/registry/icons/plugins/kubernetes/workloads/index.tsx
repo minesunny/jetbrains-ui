@@ -7,7 +7,6 @@ export type WorkloadsProps = SvgProps;
 const WorkloadsLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -102,7 +101,6 @@ const WorkloadsLight: React.FC<SvgProps> = ({
 const WorkloadsDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -199,7 +197,6 @@ export const Workloads: React.FC<WorkloadsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? WorkloadsLight : WorkloadsDark;
@@ -208,7 +205,6 @@ export const Workloads: React.FC<WorkloadsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

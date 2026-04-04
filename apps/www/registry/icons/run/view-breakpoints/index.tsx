@@ -7,7 +7,6 @@ export type ViewBreakpointsProps = SvgProps;
 const ViewBreakpointsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ViewBreakpointsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6.5 5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z"
       fill="#FFF7F7"
@@ -47,7 +45,6 @@ const ViewBreakpointsLight: FC<SvgProps> = ({
 const ViewBreakpointsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +60,6 @@ const ViewBreakpointsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6.5 5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z"
       fill="#402929"
@@ -89,7 +85,6 @@ export const ViewBreakpoints: FC<ViewBreakpointsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -99,7 +94,6 @@ export const ViewBreakpoints: FC<ViewBreakpointsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

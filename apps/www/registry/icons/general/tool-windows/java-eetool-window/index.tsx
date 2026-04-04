@@ -7,7 +7,6 @@ export type JavaEEToolWindowProps = SvgProps;
 const JavaEEToolWindowLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const JavaEEToolWindowLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4 3h8a1 1 0 0 1 1 1v4h1V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2v-1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1"
       fill="#6C707E"
@@ -38,7 +36,6 @@ const JavaEEToolWindowLight: FC<SvgProps> = ({
 const JavaEEToolWindowDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const JavaEEToolWindowDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4 3h8a1 1 0 0 1 1 1v4h1V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2v-1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1"
       fill="#CED0D6"
@@ -71,7 +67,6 @@ export const JavaEEToolWindow: FC<JavaEEToolWindowProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +76,6 @@ export const JavaEEToolWindow: FC<JavaEEToolWindowProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

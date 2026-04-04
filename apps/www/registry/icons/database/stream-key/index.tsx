@@ -7,7 +7,6 @@ export type StreamKeyProps = SvgProps;
 const StreamKeyLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const StreamKeyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#6C707E">
       <path d="M1.124 4.17a.5.5 0 0 1 .705-.046L6.26 8l-4.43 3.876a.5.5 0 0 1-.658-.752L4.74 8 1.17 4.876a.5.5 0 0 1-.047-.705" />
       <path d="M5.624 4.17a.5.5 0 0 1 .705-.046L10.76 8l-4.43 3.876a.5.5 0 0 1-.658-.752L9.24 8 5.67 4.876a.5.5 0 0 1-.047-.705M10.124 4.17a.5.5 0 0 1 .705-.046L15.26 8l-2.897 2.536a3.5 3.5 0 0 0-1.023-.435L13.741 8l-3.57-3.124a.5.5 0 0 1-.047-.705" />
@@ -44,7 +42,6 @@ const StreamKeyLight: FC<SvgProps> = ({
 const StreamKeyDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const StreamKeyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#CED0D6">
       <path d="M1.124 4.17a.5.5 0 0 1 .705-.046L6.26 8l-4.43 3.876a.5.5 0 0 1-.658-.752L4.74 8 1.17 4.876a.5.5 0 0 1-.047-.705" />
       <path d="M5.624 4.17a.5.5 0 0 1 .705-.046L10.76 8l-4.43 3.876a.5.5 0 0 1-.658-.752L9.24 8 5.67 4.876a.5.5 0 0 1-.047-.705M10.124 4.17a.5.5 0 0 1 .705-.046L15.26 8l-2.897 2.536a3.5 3.5 0 0 0-1.023-.435L13.741 8l-3.57-3.124a.5.5 0 0 1-.047-.705" />
@@ -83,7 +79,6 @@ export const StreamKey: FC<StreamKeyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? StreamKeyLight : StreamKeyDark;
@@ -92,7 +87,6 @@ export const StreamKey: FC<StreamKeyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

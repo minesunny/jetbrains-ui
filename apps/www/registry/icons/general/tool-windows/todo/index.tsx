@@ -7,7 +7,6 @@ export type TodoProps = SvgProps;
 const TodoLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TodoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M5.5 11.5h8" stroke="#6C707E" strokeLinecap="round" />
     <ellipse cx="2.7" cy="11.5" rx=".7" ry=".7" fill="#6C707E" />
     <path d="M5.5 8h8" stroke="#6C707E" strokeLinecap="round" />
@@ -36,7 +34,6 @@ const TodoLight: FC<SvgProps> = ({
 const TodoDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const TodoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M5.5 11.5h8" stroke="#CED0D6" strokeLinecap="round" />
     <ellipse cx="2.7" cy="11.5" rx=".7" ry=".7" fill="#CED0D6" />
     <path d="M5.5 8h8" stroke="#CED0D6" strokeLinecap="round" />
@@ -67,7 +63,6 @@ export const Todo: FC<TodoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TodoLight : TodoDark;
@@ -76,7 +71,6 @@ export const Todo: FC<TodoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

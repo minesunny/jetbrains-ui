@@ -7,7 +7,6 @@ export type SkipCommitProps = SvgProps;
 const SkipCommitLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SkipCommitLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11.5 12.5v-9" stroke="#6C707E" strokeLinecap="round" />
     <path
       d="M4 12.5 8.5 8 4 3.5"
@@ -37,7 +35,6 @@ const SkipCommitLight: FC<SvgProps> = ({
 const SkipCommitDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const SkipCommitDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11.5 12.5v-9" stroke="#CED0D6" strokeLinecap="round" />
     <path
       d="M4 12.5 8.5 8 4 3.5"
@@ -69,7 +65,6 @@ export const SkipCommit: FC<SkipCommitProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SkipCommitLight : SkipCommitDark;
@@ -78,7 +73,6 @@ export const SkipCommit: FC<SkipCommitProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type BuildProps = SvgProps;
 const BuildLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const BuildLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3.6 1.5h-2v3.2h2l.8-.4h1.2l1 .8h2.2l1.6-1.2c1.2 0 2 0 4 1.4-1.2-3.8-3.6-3.8-4.8-3.8h-3l-1 .4H4.4z"
       stroke="#6C707E"
@@ -40,7 +38,6 @@ const BuildLight: FC<SvgProps> = ({
 const BuildDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const BuildDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3.6 1.5h-2v3.2h2l.8-.4h1.2l1 .8h2.2l1.6-1.2c1.2 0 2 0 4 1.4-1.2-3.8-3.6-3.8-4.8-3.8h-3l-1 .4H4.4z"
       stroke="#CED0D6"
@@ -75,7 +71,6 @@ export const Build: FC<BuildProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? BuildLight : BuildDark;
@@ -84,7 +79,6 @@ export const Build: FC<BuildProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

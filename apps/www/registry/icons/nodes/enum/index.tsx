@@ -7,7 +7,6 @@ export type EnumProps = SvgProps;
 const EnumLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const EnumLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#FAF5FF" stroke="#834DF0" />
     <path
       d="M5.49 11.5h5.02v-.915H6.48v-2.15h3.59v-.92H6.48v-2.1h3.93V4.5H5.49z"
@@ -35,7 +33,6 @@ const EnumLight: FC<SvgProps> = ({
 const EnumDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const EnumDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#2F2936" stroke="#A571E6" />
     <path
       d="M5.49 11.5h5.02v-.915H6.48v-2.15h3.59v-.92H6.48v-2.1h3.93V4.5H5.49z"
@@ -65,7 +61,6 @@ export const Enum: FC<EnumProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? EnumLight : EnumDark;
@@ -74,7 +69,6 @@ export const Enum: FC<EnumProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

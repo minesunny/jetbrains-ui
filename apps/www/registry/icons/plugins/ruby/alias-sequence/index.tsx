@@ -7,7 +7,6 @@ export type AliasSequenceProps = SvgProps;
 const AliasSequenceLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +60,6 @@ const AliasSequenceLight: React.FC<SvgProps> = ({
 const AliasSequenceDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -117,7 +115,6 @@ export const AliasSequence: React.FC<AliasSequenceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -127,7 +124,6 @@ export const AliasSequence: React.FC<AliasSequenceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

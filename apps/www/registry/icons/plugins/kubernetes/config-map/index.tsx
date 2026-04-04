@@ -7,7 +7,6 @@ export type ConfigMapProps = SvgProps;
 const ConfigMapLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +46,6 @@ const ConfigMapLight: React.FC<SvgProps> = ({
 const ConfigMapDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -89,7 +87,6 @@ export const ConfigMap: React.FC<ConfigMapProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ConfigMapLight : ConfigMapDark;
@@ -98,7 +95,6 @@ export const ConfigMap: React.FC<ConfigMapProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

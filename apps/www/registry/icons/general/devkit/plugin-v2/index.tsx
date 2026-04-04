@@ -7,7 +7,6 @@ export type PluginV2Props = SvgProps;
 const PluginV2Light: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PluginV2Light: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.32 16v-.857l2.382-2.375q.354-.361.587-.641t.35-.537q.12-.26.119-.55 0-.333-.155-.573a1 1 0 0 0-.419-.371 1.34 1.34 0 0 0-.6-.132q-.351 0-.614.145a1 1 0 0 0-.409.405 1.3 1.3 0 0 0-.141.624h-1.127q0-.647.297-1.13t.816-.745a2.6 2.6 0 0 1 1.194-.267q.682 0 1.198.26t.803.708q.29.45.29 1.022 0 .385-.145.76-.146.37-.513.826-.368.456-1.025 1.1l-1.248 1.282v.05H16V16z"
       fill="#3574F0"
@@ -40,7 +38,6 @@ const PluginV2Light: FC<SvgProps> = ({
 const PluginV2Dark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const PluginV2Dark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.32 16v-.857l2.382-2.375q.354-.361.587-.641t.35-.537q.12-.26.119-.55 0-.333-.155-.573a1 1 0 0 0-.419-.371 1.34 1.34 0 0 0-.6-.132q-.351 0-.614.145a1 1 0 0 0-.409.405 1.3 1.3 0 0 0-.141.624h-1.127q0-.647.297-1.13t.816-.745a2.6 2.6 0 0 1 1.194-.267q.682 0 1.198.26t.803.708q.29.45.29 1.022 0 .385-.145.76-.146.37-.513.826-.368.456-1.025 1.1l-1.248 1.282v.05H16V16z"
       fill="#548AF7"
@@ -75,7 +71,6 @@ export const PluginV2: FC<PluginV2Props> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PluginV2Light : PluginV2Dark;
@@ -84,7 +79,6 @@ export const PluginV2: FC<PluginV2Props> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

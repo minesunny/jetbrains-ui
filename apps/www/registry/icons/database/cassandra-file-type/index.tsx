@@ -7,7 +7,6 @@ export type CassandraFileTypeProps = SvgProps;
 const CassandraFileTypeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CassandraFileTypeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       opacity=".8"
       d="M2.742 7.977c-.025-.448.17-.885.537-1.28q.147-.094.299-.18c.364-.206.738-.402 1.114-.588.536-.264 1.107-.41 1.688-.504.27-.043.543-.073.815-.1a6 6 0 0 1 .582-.035q.471-.001.942.017.315.013.627.055c.293.04.588.085.879.148.762.165 1.48.469 2.172.85l.182.103q.212.271.293.58A9 9 0 0 0 12 7c-1.226 0-2.386.246-3.276.691C7.894 8.106 7 8.865 7 10v.265a5 5 0 0 1-.28-.018l-.102-.01c-.183-.02-.364-.038-.545-.064a8 8 0 0 1-.572-.1 13 13 0 0 1-.862-.22c-1.12-.408-1.853-1.077-1.897-1.876"
@@ -58,7 +56,6 @@ const CassandraFileTypeLight: FC<SvgProps> = ({
 const CassandraFileTypeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -74,7 +71,6 @@ const CassandraFileTypeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       opacity=".8"
       d="M2.742 7.977c-.025-.448.17-.885.537-1.28q.147-.094.299-.18c.364-.206.738-.402 1.114-.588.536-.264 1.107-.41 1.688-.504.27-.043.543-.073.815-.1a6 6 0 0 1 .582-.035q.471-.001.942.017.315.013.627.055c.293.04.588.085.879.148.762.165 1.48.469 2.172.85l.182.103q.212.271.293.58A9 9 0 0 0 12 7c-1.226 0-2.386.246-3.276.691C7.894 8.106 7 8.865 7 10v.265a5 5 0 0 1-.28-.018l-.102-.01c-.183-.02-.364-.038-.545-.064a8 8 0 0 1-.572-.1 13 13 0 0 1-.862-.22c-1.12-.408-1.853-1.077-1.897-1.876"
@@ -111,7 +107,6 @@ export const CassandraFileType: FC<CassandraFileTypeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -121,7 +116,6 @@ export const CassandraFileType: FC<CassandraFileTypeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

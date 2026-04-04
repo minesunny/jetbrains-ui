@@ -7,7 +7,6 @@ export type ColorPickerProps = SvgProps;
 const ColorPickerLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ColorPickerLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m11.95 7.801 2.092-2.094a1.035 1.035 0 0 0 .006-1.474l-1.72-1.72c-.41-.41-1.033-.473-1.442-.056L8.74 4.591m3.21 3.21-3.21-3.21m3.21 3.21L6.8 12.94 3.047 14.08a.5.5 0 0 1-.623-.625L3.56 9.759l5.18-5.168"
       stroke="#6C707E"
@@ -44,7 +42,6 @@ const ColorPickerLight: FC<SvgProps> = ({
 const ColorPickerDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const ColorPickerDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m11.95 7.801 2.092-2.094a1.035 1.035 0 0 0 .006-1.474l-1.72-1.72c-.41-.41-1.033-.473-1.442-.056L8.74 4.591m3.21 3.21-3.21-3.21m3.21 3.21L6.8 12.94 3.047 14.08a.5.5 0 0 1-.623-.625L3.56 9.759l5.18-5.168"
       stroke="#CED0D6"
@@ -83,7 +79,6 @@ export const ColorPicker: FC<ColorPickerProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ColorPickerLight : ColorPickerDark;
@@ -92,7 +87,6 @@ export const ColorPicker: FC<ColorPickerProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

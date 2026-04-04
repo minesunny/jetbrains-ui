@@ -7,7 +7,6 @@ export type GroupsProps = SvgProps;
 const GroupsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const GroupsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="1.5" y="1.5" width="5" height="5" rx=".5" stroke="#6C707E" />
     <rect x="1.5" y="8.5" width="5" height="5" rx=".5" stroke="#6C707E" />
     <rect x="8.5" y="8.5" width="5" height="5" rx=".5" stroke="#6C707E" />
@@ -34,7 +32,6 @@ const GroupsLight: FC<SvgProps> = ({
 const GroupsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const GroupsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="1.5" y="1.5" width="5" height="5" rx=".5" stroke="#CED0D6" />
     <rect x="1.5" y="8.5" width="5" height="5" rx=".5" stroke="#CED0D6" />
     <rect x="8.5" y="8.5" width="5" height="5" rx=".5" stroke="#CED0D6" />
@@ -63,7 +59,6 @@ export const Groups: FC<GroupsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? GroupsLight : GroupsDark;
@@ -72,7 +67,6 @@ export const Groups: FC<GroupsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

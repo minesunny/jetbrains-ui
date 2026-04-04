@@ -7,7 +7,6 @@ export type ScalaLogoProps = SvgProps;
 const ScalaLogoLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -40,7 +39,6 @@ const ScalaLogoLight: React.FC<SvgProps> = ({
 const ScalaLogoDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -75,7 +73,6 @@ export const ScalaLogo: React.FC<ScalaLogoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ScalaLogoLight : ScalaLogoDark;
@@ -84,7 +81,6 @@ export const ScalaLogo: React.FC<ScalaLogoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type TestNotRunYetProps = SvgProps;
 const TestNotRunYetLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TestNotRunYetLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="2" fill="#818594" />
   </svg>
 );
@@ -31,7 +29,6 @@ const TestNotRunYetLight: FC<SvgProps> = ({
 const TestNotRunYetDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +44,6 @@ const TestNotRunYetDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="2" fill="#CED0D6" />
   </svg>
 );
@@ -57,7 +53,6 @@ export const TestNotRunYet: FC<TestNotRunYetProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -67,7 +62,6 @@ export const TestNotRunYet: FC<TestNotRunYetProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

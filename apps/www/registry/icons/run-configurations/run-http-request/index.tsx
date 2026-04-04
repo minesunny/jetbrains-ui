@@ -7,7 +7,6 @@ export type RunHttpRequestProps = SvgProps;
 const RunHttpRequestLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RunHttpRequestLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6.865 8h1.222L7.74 9.683H8.84q.902.018 1.346.37.452.352.266 1.34l-.594 2.933h-1.24l.568-2.802q.088-.44-.054-.625t-.61-.185l-.983-.01-.726 3.622H5.59z"
       fill="#676BD7"
@@ -48,7 +46,6 @@ const RunHttpRequestLight: FC<SvgProps> = ({
 const RunHttpRequestDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -64,7 +61,6 @@ const RunHttpRequestDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6.865 8h1.222L7.74 9.683H8.84q.902.018 1.346.37.452.352.266 1.34l-.594 2.933h-1.24l.568-2.802q.088-.44-.054-.625t-.61-.185l-.983-.01-.726 3.622H5.59z"
       fill="#999DF7"
@@ -91,7 +87,6 @@ export const RunHttpRequest: FC<RunHttpRequestProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -101,7 +96,6 @@ export const RunHttpRequest: FC<RunHttpRequestProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type EditorOnlyProps = SvgProps;
 const EditorOnlyLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const EditorOnlyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="3" y="3" width="10" height="1" rx=".5" fill="#6C707E" />
     <rect x="3" y="6" width="10" height="1" rx=".5" fill="#6C707E" />
     <rect x="3" y="9" width="10" height="1" rx=".5" fill="#6C707E" />
@@ -34,7 +32,6 @@ const EditorOnlyLight: FC<SvgProps> = ({
 const EditorOnlyDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const EditorOnlyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="3" y="3" width="10" height="1" rx=".5" fill="#CED0D6" />
     <rect x="3" y="6" width="10" height="1" rx=".5" fill="#CED0D6" />
     <rect x="3" y="9" width="10" height="1" rx=".5" fill="#CED0D6" />
@@ -63,7 +59,6 @@ export const EditorOnly: FC<EditorOnlyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? EditorOnlyLight : EditorOnlyDark;
@@ -72,7 +67,6 @@ export const EditorOnly: FC<EditorOnlyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

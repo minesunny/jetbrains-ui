@@ -7,7 +7,6 @@ export type SiblingInheritedMethodProps = SvgProps;
 const SiblingInheritedMethodLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SiblingInheritedMethodLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path d="M10 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0" fill="#F2FCF3" />
       <path d="M5.5 4v6M4 9.5h3m-3-5h3" stroke="#208A3C" />
@@ -55,7 +53,6 @@ const SiblingInheritedMethodLight: FC<SvgProps> = ({
 const SiblingInheritedMethodDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -71,7 +68,6 @@ const SiblingInheritedMethodDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path d="M10 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0" fill="#253627" />
       <path d="M5.5 4v6M4 9.5h3m-3-5h3" stroke="#57965C" />
@@ -105,7 +101,6 @@ export const SiblingInheritedMethod: FC<SiblingInheritedMethodProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -115,7 +110,6 @@ export const SiblingInheritedMethod: FC<SiblingInheritedMethodProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type CollectionTypeProps = SvgProps;
 const CollectionTypeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CollectionTypeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#EDF3FF" stroke="#3574F0" />
     <circle cx="11" cy="8" r="1" fill="#3574F0" />
     <circle cx="8" cy="11" r="1" fill="#3574F0" />
@@ -35,7 +33,6 @@ const CollectionTypeLight: FC<SvgProps> = ({
 const CollectionTypeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const CollectionTypeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#25324D" stroke="#548AF7" />
     <circle cx="11" cy="8" r="1" fill="#548AF7" />
     <circle cx="8" cy="11" r="1" fill="#548AF7" />
@@ -65,7 +61,6 @@ export const CollectionType: FC<CollectionTypeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -75,7 +70,6 @@ export const CollectionType: FC<CollectionTypeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

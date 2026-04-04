@@ -7,7 +7,6 @@ export type ToolWindowBazelProps = SvgProps;
 const ToolWindowBazelLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowBazelLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.5 4.707v3.086l-6.5 6.5-6.5-6.5V4.707l3-3 3.5 3.5 3.5-3.5z"
       stroke="#6C707E"
@@ -42,7 +40,6 @@ const ToolWindowBazelLight: FC<SvgProps> = ({
 const ToolWindowBazelDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const ToolWindowBazelDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.5 4.707v3.086l-6.5 6.5-6.5-6.5V4.707l3-3 3.5 3.5 3.5-3.5z"
       stroke="#CED0D6"
@@ -79,7 +75,6 @@ export const ToolWindowBazel: FC<ToolWindowBazelProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -89,7 +84,6 @@ export const ToolWindowBazel: FC<ToolWindowBazelProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

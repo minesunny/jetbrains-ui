@@ -7,7 +7,6 @@ export type SetLabelProps = SvgProps;
 const SetLabelLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -37,7 +36,6 @@ const SetLabelLight: React.FC<SvgProps> = ({
 const SetLabelDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -69,7 +67,6 @@ export const SetLabel: React.FC<SetLabelProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SetLabelLight : SetLabelDark;
@@ -78,7 +75,6 @@ export const SetLabel: React.FC<SetLabelProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type RestoreFromIgnoreProps = SvgProps;
 const RestoreFromIgnoreLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const RestoreFromIgnoreLight: React.FC<SvgProps> = ({
 const RestoreFromIgnoreDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +85,6 @@ export const RestoreFromIgnore: React.FC<RestoreFromIgnoreProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -97,7 +94,6 @@ export const RestoreFromIgnore: React.FC<RestoreFromIgnoreProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

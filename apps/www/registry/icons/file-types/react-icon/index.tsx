@@ -7,7 +7,6 @@ export type ReactFileTypeProps = SvgProps;
 const ReactFileTypeLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -37,7 +36,6 @@ const ReactFileTypeLight: React.FC<SvgProps> = ({
 const ReactFileTypeDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -69,7 +67,6 @@ export const ReactFileType: React.FC<ReactFileTypeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -79,7 +76,6 @@ export const ReactFileType: React.FC<ReactFileTypeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

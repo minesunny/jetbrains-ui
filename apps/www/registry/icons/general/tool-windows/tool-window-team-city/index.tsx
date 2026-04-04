@@ -7,7 +7,6 @@ export type ToolWindowTeamCityProps = SvgProps;
 const ToolWindowTeamCityLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowTeamCityLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4 11h4v1H4zM5 5H3.2V3.997L7.803 4v1H6.001v4H5zM10.566 3.997c-1.505 0-2.558 1.143-2.558 2.533v.017L8 6.538c0 1.407 1.07 2.517 2.517 2.517.946 0 1.513-.337 2.015-.872l-.691-.69c-.387.353-.732.575-1.291.575-.84 0-1.423-.699-1.423-1.538v-.016c0-.84.592-1.522 1.423-1.522.493 0 .88.206 1.258.551l.69-.79c-.452-.452-1.003-.756-1.932-.756"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const ToolWindowTeamCityLight: FC<SvgProps> = ({
 const ToolWindowTeamCityDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ToolWindowTeamCityDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4 11h4v1H4zM5 5H3.2V3.997L7.803 4v1H6.001v4H5zM10.566 3.997c-1.505 0-2.558 1.143-2.558 2.533v.017L8 6.538c0 1.407 1.07 2.517 2.517 2.517.946 0 1.513-.337 2.015-.872l-.691-.69c-.387.353-.732.575-1.291.575-.84 0-1.423-.699-1.423-1.538v-.016c0-.84.592-1.522 1.423-1.522.493 0 .88.206 1.258.551l.69-.79c-.452-.452-1.003-.756-1.932-.756"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const ToolWindowTeamCity: FC<ToolWindowTeamCityProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const ToolWindowTeamCity: FC<ToolWindowTeamCityProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

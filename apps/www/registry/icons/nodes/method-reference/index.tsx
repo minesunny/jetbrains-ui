@@ -7,7 +7,6 @@ export type MethodReferenceProps = SvgProps;
 const MethodReferenceLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MethodReferenceLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#FFF7F7" stroke="#DB3B4B" />
     <path d="m6 4 .211-.106a4 4 0 0 1 3.578 0L10 4" stroke="#DB3B4B" />
     <path
@@ -36,7 +34,6 @@ const MethodReferenceLight: FC<SvgProps> = ({
 const MethodReferenceDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const MethodReferenceDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#402929" stroke="#DB5C5C" />
     <path d="m6 4 .211-.106a4 4 0 0 1 3.578 0L10 4" stroke="#DB5C5C" />
     <path
@@ -67,7 +63,6 @@ export const MethodReference: FC<MethodReferenceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const MethodReference: FC<MethodReferenceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

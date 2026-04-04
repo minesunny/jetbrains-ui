@@ -7,7 +7,6 @@ export type EnumKotlinProps = SvgProps;
 const EnumKotlinLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const EnumKotlinLight: React.FC<SvgProps> = ({
 const EnumKotlinDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +85,6 @@ export const EnumKotlin: React.FC<EnumKotlinProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? EnumKotlinLight : EnumKotlinDark;
@@ -96,7 +93,6 @@ export const EnumKotlin: React.FC<EnumKotlinProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

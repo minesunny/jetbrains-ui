@@ -7,7 +7,6 @@ export type CollapseNodeProps = SvgProps;
 const CollapseNodeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CollapseNodeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2.5 4a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" fill="#000" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const CollapseNodeLight: FC<SvgProps> = ({
 const CollapseNodeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const CollapseNodeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2.5 4a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" fill="#CED0D6" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const CollapseNode: FC<CollapseNodeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CollapseNodeLight : CollapseNodeDark;
@@ -78,7 +73,6 @@ export const CollapseNode: FC<CollapseNodeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

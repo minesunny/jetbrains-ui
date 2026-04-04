@@ -7,7 +7,6 @@ export type QuestionBadgeProps = SvgProps;
 const QuestionBadgeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const QuestionBadgeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3.5 0A3.5 3.5 0 0 0 .302 4.924l2.025 4.082h2.206l2.165-4.082A3.5 3.5 0 0 0 7 3.5 3.5 3.5 0 0 0 3.5 0"
       fill="#fff"
@@ -46,7 +44,6 @@ const QuestionBadgeLight: FC<SvgProps> = ({
 const QuestionBadgeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -62,7 +59,6 @@ const QuestionBadgeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3.5 0A3.5 3.5 0 0 0 .302 4.924l2.025 4.082h2.206l2.165-4.082A3.5 3.5 0 0 0 7 3.5 3.5 3.5 0 0 0 3.5 0"
       fill="#1E1F22"
@@ -87,7 +83,6 @@ export const QuestionBadge: FC<QuestionBadgeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -97,7 +92,6 @@ export const QuestionBadge: FC<QuestionBadgeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type TablespaceProps = SvgProps;
 const TablespaceLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TablespaceLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14H8v-4a2 2 0 0 1 2-2h5V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z"
       fill="#EBECF0"
@@ -44,7 +42,6 @@ const TablespaceLight: FC<SvgProps> = ({
 const TablespaceDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const TablespaceDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14H8v-4a2 2 0 0 1 2-2h5V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z"
       fill="#43454A"
@@ -83,7 +79,6 @@ export const Tablespace: FC<TablespaceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TablespaceLight : TablespaceDark;
@@ -92,7 +87,6 @@ export const Tablespace: FC<TablespaceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

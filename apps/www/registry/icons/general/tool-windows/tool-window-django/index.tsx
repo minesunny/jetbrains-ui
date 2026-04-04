@@ -7,7 +7,6 @@ export type ToolWindowDjangoProps = SvgProps;
 const ToolWindowDjangoLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowDjangoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6.586 3h2.128v9.756c-1.09.206-1.892.287-2.76.287C3.353 13.041 2 11.88 2 9.65c0-2.15 1.435-3.545 3.66-3.545.345 0 .608.028.926.109zm.074 4.971a2.1 2.1 0 0 0-.717-.108c-1.077 0-1.699.656-1.699 1.807 0 1.12.595 1.74 1.685 1.74.236 0 .427-.014.731-.055z"
       fill="#6C707E"
@@ -38,7 +36,6 @@ const ToolWindowDjangoLight: FC<SvgProps> = ({
 const ToolWindowDjangoDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const ToolWindowDjangoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6.586 3h2.128v9.756c-1.09.206-1.892.287-2.76.287C3.353 13.041 2 11.88 2 9.65c0-2.15 1.435-3.545 3.66-3.545.345 0 .608.028.926.109zm.074 4.971a2.1 2.1 0 0 0-.717-.108c-1.077 0-1.699.656-1.699 1.807 0 1.12.595 1.74 1.685 1.74.236 0 .427-.014.731-.055z"
       fill="#CED0D6"
@@ -71,7 +67,6 @@ export const ToolWindowDjango: FC<ToolWindowDjangoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +76,6 @@ export const ToolWindowDjango: FC<ToolWindowDjangoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

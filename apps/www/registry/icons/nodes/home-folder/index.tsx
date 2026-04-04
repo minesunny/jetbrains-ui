@@ -7,7 +7,6 @@ export type HomeFolderProps = SvgProps;
 const HomeFolderLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const HomeFolderLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.668 2.632a.5.5 0 0 1 .664 0l5 4.443a.5.5 0 0 1 .168.374V13a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-2a1.5 1.5 0 0 0-3 0v2a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V7.45a.5.5 0 0 1 .168-.375z"
       fill="#EBECF0"
@@ -37,7 +35,6 @@ const HomeFolderLight: FC<SvgProps> = ({
 const HomeFolderDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const HomeFolderDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.668 2.632a.5.5 0 0 1 .664 0l5 4.443a.5.5 0 0 1 .168.374V13a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-2a1.5 1.5 0 0 0-3 0v2a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V7.45a.5.5 0 0 1 .168-.375z"
       fill="#43454A"
@@ -69,7 +65,6 @@ export const HomeFolder: FC<HomeFolderProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? HomeFolderLight : HomeFolderDark;
@@ -78,7 +73,6 @@ export const HomeFolder: FC<HomeFolderProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

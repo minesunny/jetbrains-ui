@@ -7,7 +7,6 @@ export type StaticMarkProps = SvgProps;
 const StaticMarkLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const StaticMarkLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m.294 12.709 2.997 2.997a1.003 1.003 0 0 0 1.418 0l2.997-2.997a1.003 1.003 0 0 0 0-1.418L4.71 8.294a1.003 1.003 0 0 0-1.418 0L.294 11.29a1.003 1.003 0 0 0 0 1.418"
       fill="#EBECF0"
@@ -40,7 +38,6 @@ const StaticMarkLight: FC<SvgProps> = ({
 const StaticMarkDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const StaticMarkDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m.294 12.709 2.997 2.997a1.003 1.003 0 0 0 1.418 0l2.997-2.997a1.003 1.003 0 0 0 0-1.418L4.71 8.294a1.003 1.003 0 0 0-1.418 0L.294 11.29a1.003 1.003 0 0 0 0 1.418"
       fill="#43454A"
@@ -75,7 +71,6 @@ export const StaticMark: FC<StaticMarkProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? StaticMarkLight : StaticMarkDark;
@@ -84,7 +79,6 @@ export const StaticMark: FC<StaticMarkProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

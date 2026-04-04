@@ -7,7 +7,6 @@ export type SortedSetProps = SvgProps;
 const SortedSetLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SortedSetLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.605 8.855q.398.345.383.923l-.03 1.792v.091q.012.679.315 1.191.04.07.086.135.319.457.844.713.608.3 1.41.3H6.5v-1.005h-.88q-.712 0-1.132-.397-.413-.39-.398-1.05l.03-1.778q.015-.697-.412-1.185-.427-.495-1.155-.63.728-.052 1.155-.532.427-.488.412-1.253l-.03-1.567q-.007-.735.443-1.163.457-.435 1.237-.435h.73V2h-.737q-.862 0-1.5.315t-.983.9q-.337.585-.322 1.365l.03 1.583q.015.577-.383.922-.397.345-1.072.345H1v1.08h.533q.675 0 1.072.345"
       fill="#6C707E"
@@ -42,7 +40,6 @@ const SortedSetLight: FC<SvgProps> = ({
 const SortedSetDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const SortedSetDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.605 8.855q.398.345.383.923l-.03 1.792v.091q.012.679.315 1.191.04.07.086.135.319.457.844.713.608.3 1.41.3H6.5v-1.005h-.88q-.712 0-1.132-.397-.413-.39-.398-1.05l.03-1.778q.015-.697-.412-1.185-.427-.495-1.155-.63.728-.052 1.155-.532.427-.488.412-1.253l-.03-1.567q-.007-.735.443-1.163.457-.435 1.237-.435h.73V2h-.737q-.862 0-1.5.315t-.983.9q-.337.585-.322 1.365l.03 1.583q.015.577-.383.922-.397.345-1.072.345H1v1.08h.533q.675 0 1.072.345"
       fill="#CED0D6"
@@ -79,7 +75,6 @@ export const SortedSet: FC<SortedSetProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SortedSetLight : SortedSetDark;
@@ -88,7 +83,6 @@ export const SortedSet: FC<SortedSetProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

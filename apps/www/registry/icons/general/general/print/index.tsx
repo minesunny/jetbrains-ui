@@ -7,7 +7,6 @@ export type PrintProps = SvgProps;
 const PrintLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PrintLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M13 7h-1v1h1z" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const PrintLight: FC<SvgProps> = ({
 const PrintDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const PrintDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M13 7h-1v1h1z" fill="#CED0D6" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const Print: FC<PrintProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PrintLight : PrintDark;
@@ -78,7 +73,6 @@ export const Print: FC<PrintProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

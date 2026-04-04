@@ -7,7 +7,6 @@ export type ReplicaSetProps = SvgProps;
 const ReplicaSetLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const ReplicaSetLight: React.FC<SvgProps> = ({
 const ReplicaSetDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -79,7 +77,6 @@ export const ReplicaSet: React.FC<ReplicaSetProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ReplicaSetLight : ReplicaSetDark;
@@ -88,7 +85,6 @@ export const ReplicaSet: React.FC<ReplicaSetProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

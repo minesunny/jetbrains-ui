@@ -7,7 +7,6 @@ export type HaskellProps = SvgProps;
 const HaskellLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const HaskellLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.91 5.5H15V8h-3.818zM12.455 9.25H15v2.5h-1.273zM1 3h2.545l2.546 5H3.545zM6.09 8H3.546L1 13h2.545z"
       fill="#F07B3E"
@@ -39,7 +37,6 @@ const HaskellLight: FC<SvgProps> = ({
 const HaskellDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +52,6 @@ const HaskellDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.91 5.5H15V8h-3.818zM12.455 9.25H15v2.5h-1.273zM1 3h2.545l2.546 5H3.545zM6.09 8H3.546L1 13h2.545z"
       fill="#F07B3E"
@@ -73,7 +69,6 @@ export const Haskell: FC<HaskellProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? HaskellLight : HaskellDark;
@@ -82,7 +77,6 @@ export const Haskell: FC<HaskellProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

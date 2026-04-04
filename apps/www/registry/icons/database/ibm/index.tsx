@@ -7,7 +7,6 @@ export type IbmProps = SvgProps;
 const IbmLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const IbmLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 5v1.162h.783v3.304h-.762v1.148h2.725V9.466h-.783V6.162h.762V5zM8.756 5.014v1.148h.783v3.304h-.761v1.148h1.942V7.42l1.157 3.193h.023l1.137-3.193v3.194H15V9.466h-.783V6.162h.762V5.014H12.79l-.906 2.56-.918-2.56z"
       fill="#000"
@@ -40,7 +38,6 @@ const IbmLight: FC<SvgProps> = ({
 const IbmDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const IbmDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 5v1.162h.783v3.304h-.762v1.148h2.725V9.466h-.783V6.162h.762V5zM8.756 5.014v1.148h.783v3.304h-.761v1.148h1.942V7.42l1.157 3.193h.023l1.137-3.193v3.194H15V9.466h-.783V6.162h.762V5.014H12.79l-.906 2.56-.918-2.56z"
       fill="#fff"
@@ -75,7 +71,6 @@ export const Ibm: FC<IbmProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? IbmLight : IbmDark;
@@ -84,7 +79,6 @@ export const Ibm: FC<IbmProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

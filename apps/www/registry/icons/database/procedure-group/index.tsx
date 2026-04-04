@@ -7,7 +7,6 @@ export type ProcedureGroupProps = SvgProps;
 const ProcedureGroupLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ProcedureGroupLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="10" cy="8" r="5.5" fill="#EDF3FF" stroke="#3574F0" />
     <circle cx="6" cy="8" r="5.5" fill="#EDF3FF" stroke="#3574F0" />
     <path
@@ -36,7 +34,6 @@ const ProcedureGroupLight: FC<SvgProps> = ({
 const ProcedureGroupDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const ProcedureGroupDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="10" cy="8" r="5.5" fill="#25324D" stroke="#548AF7" />
     <circle cx="6" cy="8" r="5.5" fill="#25324D" stroke="#548AF7" />
     <path
@@ -67,7 +63,6 @@ export const ProcedureGroup: FC<ProcedureGroupProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const ProcedureGroup: FC<ProcedureGroupProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

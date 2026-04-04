@@ -7,7 +7,6 @@ export type NodejsTestRunnerProps = SvgProps;
 const NodejsTestRunnerLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const NodejsTestRunnerLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.003 15.893c-.212 0-.422-.056-.607-.163l-1.93-1.143c-.289-.16-.148-.218-.053-.25.384-.136.462-.166.873-.399.043-.024.1-.016.144.01l1.138.675 1.108 1.067-.064.037a1.2 1.2 0 0 1-.61.162zM15 10.96v-6.3a1.22 1.22 0 0 0-.607-1.054L8.612.266a1.27 1.27 0 0 0-1.216 0l-5.79 3.339C1.233 3.819 1 4.225 1 4.659v6.673c0 .433.232.838.607 1.056l1.517.874c.735.362.999.362 1.333.362 1.087 0 1.712-.659 1.712-1.805v-6.59a.166.166 0 0 0-.166-.166h-.732a.165.165 0 0 0-.168.166v6.587c0 .51-.526 1.016-1.386.586l-1.584-.915a.18.18 0 0 1-.09-.155V4.66c0-.064.036-.126.092-.158l5.78-3.335a.18.18 0 0 1 .178 0L13.874 4.5c.055.033.09.093.09.16v5.304z"
       fill="#369650"
@@ -50,7 +48,6 @@ const NodejsTestRunnerLight: FC<SvgProps> = ({
 const NodejsTestRunnerDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -66,7 +63,6 @@ const NodejsTestRunnerDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.003 15.893c-.212 0-.422-.056-.607-.163l-1.93-1.143c-.289-.16-.148-.218-.053-.25.384-.136.462-.166.873-.399.043-.024.1-.016.144.01l1.138.675 1.108 1.067-.064.037a1.2 1.2 0 0 1-.61.162zM15 10.96v-6.3a1.22 1.22 0 0 0-.607-1.054L8.612.266a1.27 1.27 0 0 0-1.216 0l-5.79 3.339C1.233 3.819 1 4.225 1 4.659v6.673c0 .433.232.838.607 1.056l1.517.874c.735.362.999.362 1.333.362 1.087 0 1.712-.659 1.712-1.805v-6.59a.166.166 0 0 0-.166-.166h-.732a.165.165 0 0 0-.168.166v6.587c0 .51-.526 1.016-1.386.586l-1.584-.915a.18.18 0 0 1-.09-.155V4.66c0-.064.036-.126.092-.158l5.78-3.335a.18.18 0 0 1 .178 0L13.874 4.5c.055.033.09.093.09.16v5.304z"
       fill="#57965C"
@@ -95,7 +91,6 @@ export const NodejsTestRunner: FC<NodejsTestRunnerProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -105,7 +100,6 @@ export const NodejsTestRunner: FC<NodejsTestRunnerProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

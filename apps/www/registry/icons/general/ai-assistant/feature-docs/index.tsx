@@ -7,7 +7,6 @@ export type FeatureDocsProps = SvgProps;
 const FeatureDocsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FeatureDocsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 1 0v-9a.5.5 0 0 0-.5-.5M4.5 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zM4 7.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M4.5 10a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"
       fill="#3574F0"
@@ -34,7 +32,6 @@ const FeatureDocsLight: FC<SvgProps> = ({
 const FeatureDocsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const FeatureDocsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 1 0v-9a.5.5 0 0 0-.5-.5M4.5 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zM4 7.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M4.5 10a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"
       fill="#548AF7"
@@ -63,7 +59,6 @@ export const FeatureDocs: FC<FeatureDocsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FeatureDocsLight : FeatureDocsDark;
@@ -72,7 +67,6 @@ export const FeatureDocs: FC<FeatureDocsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

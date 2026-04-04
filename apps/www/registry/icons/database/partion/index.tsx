@@ -7,7 +7,6 @@ export type PartionProps = SvgProps;
 const PartionLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PartionLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 2.5a5.5 5.5 0 0 1 5.477 5H7.5v5.976A5.499 5.499 0 0 1 8 2.5Z"
       stroke="#3574F0"
@@ -35,7 +33,6 @@ const PartionLight: FC<SvgProps> = ({
 const PartionDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const PartionDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 2.5a5.5 5.5 0 0 1 5.477 5H7.5v5.976A5.499 5.499 0 0 1 8 2.5Z"
       stroke="#548AF7"
@@ -65,7 +61,6 @@ export const Partion: FC<PartionProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PartionLight : PartionDark;
@@ -74,7 +69,6 @@ export const Partion: FC<PartionProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

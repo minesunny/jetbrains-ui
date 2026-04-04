@@ -7,7 +7,6 @@ export type DarkThemeSelectedProps = SvgProps;
 const DarkThemeSelectedLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DarkThemeSelectedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6.158 1.765a6 6 0 0 0 8.075 8.076A6.501 6.501 0 0 1 1.5 8c0-2.95 1.966-5.44 4.658-6.235Z"
       fill="#EDF3FF"
@@ -35,7 +33,6 @@ const DarkThemeSelectedLight: FC<SvgProps> = ({
 const DarkThemeSelectedDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const DarkThemeSelectedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6.158 1.765a6 6 0 0 0 8.075 8.076A6.501 6.501 0 0 1 1.5 8c0-2.95 1.966-5.44 4.658-6.235Z"
       fill="#25324D"
@@ -65,7 +61,6 @@ export const DarkThemeSelected: FC<DarkThemeSelectedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -75,7 +70,6 @@ export const DarkThemeSelected: FC<DarkThemeSelectedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

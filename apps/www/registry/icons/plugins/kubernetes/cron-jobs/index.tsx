@@ -7,7 +7,6 @@ export type CronJobsProps = SvgProps;
 const CronJobsLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +60,6 @@ const CronJobsLight: React.FC<SvgProps> = ({
 const CronJobsDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -116,7 +114,6 @@ export const CronJobs: React.FC<CronJobsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CronJobsLight : CronJobsDark;
@@ -125,7 +122,6 @@ export const CronJobs: React.FC<CronJobsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

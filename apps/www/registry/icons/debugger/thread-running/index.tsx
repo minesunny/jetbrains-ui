@@ -7,7 +7,6 @@ export type ThreadRunningProps = SvgProps;
 const ThreadRunningLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ThreadRunningLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M13.5 7.134a1 1 0 0 1 0 1.732l-9 5.196a1 1 0 0 1-1.5-.866V2.804a1 1 0 0 1 1.5-.866z"
@@ -42,7 +40,6 @@ const ThreadRunningLight: FC<SvgProps> = ({
 const ThreadRunningDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const ThreadRunningDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M13.5 7.134a1 1 0 0 1 0 1.732l-9 5.196a1 1 0 0 1-1.5-.866V2.804a1 1 0 0 1 1.5-.866z"
@@ -79,7 +75,6 @@ export const ThreadRunning: FC<ThreadRunningProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -89,7 +84,6 @@ export const ThreadRunning: FC<ThreadRunningProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

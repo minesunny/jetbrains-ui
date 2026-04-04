@@ -7,7 +7,6 @@ export type InspectionsPauseProps = SvgProps;
 const InspectionsPauseLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const InspectionsPauseLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.5 4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5zM9.5 4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"
       stroke="#6C707E"
@@ -34,7 +32,6 @@ const InspectionsPauseLight: FC<SvgProps> = ({
 const InspectionsPauseDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const InspectionsPauseDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.5 3.916a.5.5 0 0 1 .5-.5h2.04a.5.5 0 0 1 .5.5V11a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5zM9.545 3.916a.5.5 0 0 1 .5-.5h1.936a.5.5 0 0 1 .5.5V11a.5.5 0 0 1-.5.5h-1.936a.5.5 0 0 1-.5-.5z"
       stroke="#CED0D6"
@@ -63,7 +59,6 @@ export const InspectionsPause: FC<InspectionsPauseProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -73,7 +68,6 @@ export const InspectionsPause: FC<InspectionsPauseProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

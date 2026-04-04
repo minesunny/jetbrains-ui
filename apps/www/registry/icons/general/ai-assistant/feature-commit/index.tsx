@@ -7,7 +7,6 @@ export type FeatureCommitProps = SvgProps;
 const FeatureCommitLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FeatureCommitLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" fill="#EDF3FF" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const FeatureCommitLight: FC<SvgProps> = ({
 const FeatureCommitDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const FeatureCommitDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" fill="#25324D" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const FeatureCommit: FC<FeatureCommitProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -79,7 +74,6 @@ export const FeatureCommit: FC<FeatureCommitProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

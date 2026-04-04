@@ -7,7 +7,6 @@ export type RightAlignProps = SvgProps;
 const RightAlignLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RightAlignLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.5 3a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zM13.5 6a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1zM13.5 12a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1zM14 9.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5"
       fill="#6C707E"
@@ -34,7 +32,6 @@ const RightAlignLight: FC<SvgProps> = ({
 const RightAlignDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const RightAlignDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.5 3a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zM13.5 6a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1zM13.5 12a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1zM14 9.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5"
       fill="#CED0D6"
@@ -63,7 +59,6 @@ export const RightAlign: FC<RightAlignProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RightAlignLight : RightAlignDark;
@@ -72,7 +67,6 @@ export const RightAlign: FC<RightAlignProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

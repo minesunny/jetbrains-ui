@@ -7,7 +7,6 @@ export type ManageDataSourcesProps = SvgProps;
 const ManageDataSourcesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ManageDataSourcesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11.998 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#3574F0" />
     <path
       fillRule="evenodd"
@@ -49,7 +47,6 @@ const ManageDataSourcesLight: FC<SvgProps> = ({
 const ManageDataSourcesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -65,7 +62,6 @@ const ManageDataSourcesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11.998 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#548AF7" />
     <path
       fillRule="evenodd"
@@ -93,7 +89,6 @@ export const ManageDataSources: FC<ManageDataSourcesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -103,7 +98,6 @@ export const ManageDataSources: FC<ManageDataSourcesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

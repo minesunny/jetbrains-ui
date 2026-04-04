@@ -7,7 +7,6 @@ export type BookmarksProps = SvgProps;
 const BookmarksLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const BookmarksLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5.5 1a.5.5 0 0 0 0 1H12a1 1 0 0 1 1 1v9.5a.5.5 0 0 0 1 0V3a2 2 0 0 0-2-2z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const BookmarksLight: FC<SvgProps> = ({
 const BookmarksDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const BookmarksDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5.5 1a.5.5 0 0 0 0 1H12a1 1 0 0 1 1 1v9.5a.5.5 0 0 0 1 0V3a2 2 0 0 0-2-2z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const Bookmarks: FC<BookmarksProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? BookmarksLight : BookmarksDark;
@@ -84,7 +79,6 @@ export const Bookmarks: FC<BookmarksProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

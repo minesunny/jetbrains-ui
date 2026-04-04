@@ -7,7 +7,6 @@ export type VueJsProps = SvgProps;
 const VueJsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const VueJsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M9.732 2 8 5 6.268 2H.5L8 14.99 15.5 2z" fill="#41B883" />
     <path d="M9.732 2 8 5 6.268 2H3.5L8 9.794 12.5 2z" fill="#34495E" />
   </svg>
@@ -32,7 +30,6 @@ const VueJsLight: FC<SvgProps> = ({
 const VueJsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +45,6 @@ const VueJsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M9.732 2 8 5 6.268 2H.5L8 14.99 15.5 2z" fill="#41B883" />
     <path d="M9.732 2 8 5 6.268 2H3.5L8 9.794 12.5 2z" fill="#34495E" />
   </svg>
@@ -59,7 +55,6 @@ export const VueJs: FC<VueJsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? VueJsLight : VueJsDark;
@@ -68,7 +63,6 @@ export const VueJs: FC<VueJsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

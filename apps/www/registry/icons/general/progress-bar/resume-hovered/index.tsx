@@ -7,7 +7,6 @@ export type ResumeHoveredProps = SvgProps;
 const ResumeHoveredLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ResumeHoveredLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle opacity=".2" cx="8" cy="8" r="8" fill="#313547" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const ResumeHoveredLight: FC<SvgProps> = ({
 const ResumeHoveredDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const ResumeHoveredDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle opacity=".19" cx="8" cy="8" r="8" fill="#F0F1F2" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const ResumeHovered: FC<ResumeHoveredProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -79,7 +74,6 @@ export const ResumeHovered: FC<ResumeHoveredProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

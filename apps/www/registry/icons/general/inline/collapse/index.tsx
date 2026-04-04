@@ -7,7 +7,6 @@ export type CollapseProps = SvgProps;
 const CollapseLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CollapseLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 14.5 6 10m8.5-8.5L10 6M2.5 9.5h4v4m7-7h-4v-4"
       stroke="#A8ADBD"
@@ -36,7 +34,6 @@ const CollapseLight: FC<SvgProps> = ({
 const CollapseDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const CollapseDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 14.5 6 10m8.5-8.5L10 6M2.5 9.5h4v4m7-7h-4v-4"
       stroke="#868A91"
@@ -67,7 +63,6 @@ export const Collapse: FC<CollapseProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CollapseLight : CollapseDark;
@@ -76,7 +71,6 @@ export const Collapse: FC<CollapseProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

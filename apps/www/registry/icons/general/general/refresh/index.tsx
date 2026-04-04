@@ -7,7 +7,6 @@ export type RefreshProps = SvgProps;
 const RefreshLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RefreshLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 9V8A5.5 5.5 0 0 1 11 3.39M5 12.61A5.5 5.5 0 0 0 13.5 8V7"
       stroke="#6C707E"
@@ -40,7 +38,6 @@ const RefreshLight: FC<SvgProps> = ({
 const RefreshDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const RefreshDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 9V8A5.5 5.5 0 0 1 11 3.39M5 12.61A5.5 5.5 0 0 0 13.5 8V7"
       stroke="#CED0D6"
@@ -75,7 +71,6 @@ export const Refresh: FC<RefreshProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RefreshLight : RefreshDark;
@@ -84,7 +79,6 @@ export const Refresh: FC<RefreshProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

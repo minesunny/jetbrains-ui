@@ -7,7 +7,6 @@ export type ProfileMemoryProps = SvgProps;
 const ProfileMemoryLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ProfileMemoryLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M4 4v8a2 2 0 0 0 2 2h2v-4a2 2 0 0 1 2-2h2V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2"
@@ -53,7 +51,6 @@ const ProfileMemoryLight: FC<SvgProps> = ({
 const ProfileMemoryDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -69,7 +66,6 @@ const ProfileMemoryDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M4 4v8a2 2 0 0 0 2 2h2v-4a2 2 0 0 1 2-2h2V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2"
@@ -101,7 +97,6 @@ export const ProfileMemory: FC<ProfileMemoryProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -111,7 +106,6 @@ export const ProfileMemory: FC<ProfileMemoryProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

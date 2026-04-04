@@ -7,7 +7,6 @@ export type InfoProps = SvgProps;
 const InfoLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const InfoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="7" fill="#4682FA" />
     <path
       d="M7 11a1 1 0 1 0 2 0V8.5a1 1 0 1 0-2 0zM8 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
@@ -35,7 +33,6 @@ const InfoLight: FC<SvgProps> = ({
 const InfoDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const InfoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="7" fill="#548AF7" />
     <path
       d="M7 11a1 1 0 1 0 2 0V8.5a1 1 0 1 0-2 0zM8 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
@@ -65,7 +61,6 @@ export const Info: FC<InfoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? InfoLight : InfoDark;
@@ -74,7 +69,6 @@ export const Info: FC<InfoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

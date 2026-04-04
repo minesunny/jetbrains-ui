@@ -7,7 +7,6 @@ export type AbbreviatePackageNamesProps = SvgProps;
 const AbbreviatePackageNamesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AbbreviatePackageNamesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14H3v-2a2 2 0 0 1 2-2h5V8h3.007l-.002 2.11q.379-.088.777-.087c.425 0 .835.074 1.218.229V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z"
       fill="#EBECF0"
@@ -58,7 +56,6 @@ const AbbreviatePackageNamesLight: FC<SvgProps> = ({
 const AbbreviatePackageNamesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -74,7 +71,6 @@ const AbbreviatePackageNamesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14H3v-2a2 2 0 0 1 2-2h5V8h3.007l-.002 2.11q.379-.088.777-.087c.425 0 .835.074 1.218.229V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z"
       fill="#43454A"
@@ -111,7 +107,6 @@ export const AbbreviatePackageNames: FC<AbbreviatePackageNamesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -121,7 +116,6 @@ export const AbbreviatePackageNames: FC<AbbreviatePackageNamesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

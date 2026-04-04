@@ -7,7 +7,6 @@ export type ResolveContinueProps = SvgProps;
 const ResolveContinueLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ResolveContinueLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.5 12.5 13 8 8.5 3.5m-5 9L8 8 3.5 3.5"
       stroke="#6C707E"
@@ -36,7 +34,6 @@ const ResolveContinueLight: FC<SvgProps> = ({
 const ResolveContinueDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const ResolveContinueDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.5 12.5 13 8 8.5 3.5m-5 9L8 8 3.5 3.5"
       stroke="#CED0D6"
@@ -67,7 +63,6 @@ export const ResolveContinue: FC<ResolveContinueProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const ResolveContinue: FC<ResolveContinueProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

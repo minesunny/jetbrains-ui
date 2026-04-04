@@ -7,7 +7,6 @@ export type FitContentProps = SvgProps;
 const FitContentLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FitContentLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="11" y="7" width="1" height="4" rx=".5" fill="#6C707E" />
     <rect
       x="12"
@@ -51,7 +49,6 @@ const FitContentLight: FC<SvgProps> = ({
 const FitContentDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -67,7 +64,6 @@ const FitContentDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="11" y="7" width="1" height="4" rx=".5" fill="#CED0D6" />
     <rect
       x="12"
@@ -97,7 +93,6 @@ export const FitContent: FC<FitContentProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FitContentLight : FitContentDark;
@@ -106,7 +101,6 @@ export const FitContent: FC<FitContentProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

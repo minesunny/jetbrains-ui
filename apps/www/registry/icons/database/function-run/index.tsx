@@ -7,7 +7,6 @@ export type FunctionRunProps = SvgProps;
 const FunctionRunLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FunctionRunLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 9.504c0-1.963 2.159-3.16 3.824-2.12L14.88 9.29Q15 8.663 15 8a7 7 0 1 0-6.952 7A2.6 2.6 0 0 1 8 14.5z"
       fill="#EDF3FF"
@@ -54,7 +52,6 @@ const FunctionRunLight: FC<SvgProps> = ({
 const FunctionRunDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -70,7 +67,6 @@ const FunctionRunDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 9.504c0-1.963 2.159-3.16 3.824-2.12L14.88 9.29Q15 8.663 15 8a7 7 0 1 0-6.952 7A2.6 2.6 0 0 1 8 14.5z"
       fill="#25324D"
@@ -103,7 +99,6 @@ export const FunctionRun: FC<FunctionRunProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FunctionRunLight : FunctionRunDark;
@@ -112,7 +107,6 @@ export const FunctionRun: FC<FunctionRunProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

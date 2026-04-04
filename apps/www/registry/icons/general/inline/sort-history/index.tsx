@@ -7,7 +7,6 @@ export type SortHistoryProps = SvgProps;
 const SortHistoryLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SortHistoryLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 3.5h9m-9 4h7m-7 4h5"
       stroke="#6C707E"
@@ -37,7 +35,6 @@ const SortHistoryLight: FC<SvgProps> = ({
 const SortHistoryDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const SortHistoryDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 3.5h9m-9 4h7m-7 4h5"
       stroke="#CED0D6"
@@ -69,7 +65,6 @@ export const SortHistory: FC<SortHistoryProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SortHistoryLight : SortHistoryDark;
@@ -78,7 +73,6 @@ export const SortHistory: FC<SortHistoryProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

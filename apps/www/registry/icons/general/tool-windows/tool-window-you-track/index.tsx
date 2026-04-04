@@ -7,7 +7,6 @@ export type ToolWindowYouTrackProps = SvgProps;
 const ToolWindowYouTrackLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowYouTrackLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4 11h4v1H4zM10 5H8.2V3.997L12.801 4v1H11v4h-1zM5 7.144 3.035 4h1.18L5.5 6.057 6.786 4h1.179L6 7.144V9H5z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const ToolWindowYouTrackLight: FC<SvgProps> = ({
 const ToolWindowYouTrackDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ToolWindowYouTrackDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4 11h4v1H4zM10 5H8.2V3.997L12.801 4v1H11v4h-1zM5 7.144 3.035 4h1.18L5.5 6.057 6.786 4h1.179L6 7.144V9H5z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const ToolWindowYouTrack: FC<ToolWindowYouTrackProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const ToolWindowYouTrack: FC<ToolWindowYouTrackProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type CwmMicOnProps = SvgProps;
 const CwmMicOnLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const CwmMicOnLight: React.FC<SvgProps> = ({
 const CwmMicOnDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +85,6 @@ export const CwmMicOn: React.FC<CwmMicOnProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CwmMicOnLight : CwmMicOnDark;
@@ -96,7 +93,6 @@ export const CwmMicOn: React.FC<CwmMicOnProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

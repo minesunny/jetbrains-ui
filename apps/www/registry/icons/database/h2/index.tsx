@@ -7,7 +7,6 @@ export type H2Props = SvgProps;
 const H2Light: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const H2Light: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#0600FF" d="M1 3H15V13H1z" />
     <path
       fillRule="evenodd"
@@ -41,7 +39,6 @@ const H2Light: FC<SvgProps> = ({
 const H2Dark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -57,7 +54,6 @@ const H2Dark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#1F58FF" d="M1 3H15V13H1z" />
     <path
       fillRule="evenodd"
@@ -77,7 +73,6 @@ export const H2: FC<H2Props> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? H2Light : H2Dark;
@@ -86,7 +81,6 @@ export const H2: FC<H2Props> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

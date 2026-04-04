@@ -7,7 +7,6 @@ export type CMakeToolWindowProps = SvgProps;
 const CMakeToolWindowLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CMakeToolWindowLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M14.568 14.501H1.431l6.568-12.88z" stroke="#6C707E" />
     <path d="m5.486 10.761 3.281-2.856.463 4.452z" stroke="#6C707E" />
   </svg>
@@ -32,7 +30,6 @@ const CMakeToolWindowLight: FC<SvgProps> = ({
 const CMakeToolWindowDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +45,6 @@ const CMakeToolWindowDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M14.568 14.501H1.431l6.568-12.88z" stroke="#CED0D6" />
     <path d="m5.486 10.761 3.281-2.856.463 4.452z" stroke="#CED0D6" />
   </svg>
@@ -59,7 +55,6 @@ export const CMakeToolWindow: FC<CMakeToolWindowProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -69,7 +64,6 @@ export const CMakeToolWindow: FC<CMakeToolWindowProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

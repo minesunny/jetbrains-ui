@@ -7,7 +7,6 @@ export type VCPKGProps = SvgProps;
 const VCPKGLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -92,7 +91,6 @@ const VCPKGLight: React.FC<SvgProps> = ({
 const VCPKGDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -179,7 +177,6 @@ export const VCPKG: React.FC<VCPKGProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? VCPKGLight : VCPKGDark;
@@ -188,7 +185,6 @@ export const VCPKG: React.FC<VCPKGProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

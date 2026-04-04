@@ -7,7 +7,6 @@ export type UnshelveProps = SvgProps;
 const UnshelveLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const UnshelveLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.354 4.854a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 2.707V8.5a.5.5 0 0 0 1 0V2.707l2.146 2.147a.5.5 0 0 0 .708 0"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const UnshelveLight: FC<SvgProps> = ({
 const UnshelveDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const UnshelveDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.354 4.854a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 2.707V8.5a.5.5 0 0 0 1 0V2.707l2.146 2.147a.5.5 0 0 0 .708 0"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const Unshelve: FC<UnshelveProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? UnshelveLight : UnshelveDark;
@@ -84,7 +79,6 @@ export const Unshelve: FC<UnshelveProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

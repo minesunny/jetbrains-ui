@@ -7,7 +7,6 @@ export type SpringCloudFileSetProps = SvgProps;
 const SpringCloudFileSetLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +53,6 @@ const SpringCloudFileSetLight: React.FC<SvgProps> = ({
 const SpringCloudFileSetDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -103,7 +101,6 @@ export const SpringCloudFileSet: React.FC<SpringCloudFileSetProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -113,7 +110,6 @@ export const SpringCloudFileSet: React.FC<SpringCloudFileSetProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

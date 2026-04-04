@@ -7,7 +7,6 @@ export type ExposedProps = SvgProps;
 const ExposedLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ExposedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M7.039 9.299c1.85 0 3.35-.814 3.35-1.818s-1.5-1.819-3.35-1.819-3.35.814-3.35 1.819 1.5 1.818 3.35 1.818"
@@ -299,7 +297,6 @@ const ExposedLight: FC<SvgProps> = ({
 const ExposedDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -315,7 +312,6 @@ const ExposedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M7.039 9.299c1.85 0 3.35-.814 3.35-1.818s-1.5-1.819-3.35-1.819-3.35.814-3.35 1.819 1.5 1.818 3.35 1.818"
@@ -593,7 +589,6 @@ export const Exposed: FC<ExposedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ExposedLight : ExposedDark;
@@ -602,7 +597,6 @@ export const Exposed: FC<ExposedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

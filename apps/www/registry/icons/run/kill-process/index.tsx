@@ -7,7 +7,6 @@ export type KillProcessProps = SvgProps;
 const KillProcessLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const KillProcessLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.5 11.087 11.087 14.5H4.913L1.5 11.087V4.913L4.913 1.5h6.174L14.5 4.913z"
       stroke="#DB3B4B"
@@ -40,7 +38,6 @@ const KillProcessLight: FC<SvgProps> = ({
 const KillProcessDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const KillProcessDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.5 11.087 11.087 14.5H4.913L1.5 11.087V4.913L4.913 1.5h6.174L14.5 4.913z"
       stroke="#DB5C5C"
@@ -75,7 +71,6 @@ export const KillProcess: FC<KillProcessProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? KillProcessLight : KillProcessDark;
@@ -84,7 +79,6 @@ export const KillProcess: FC<KillProcessProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type CodeAssistantEnumConstProps = SvgProps;
 const CodeAssistantEnumConstLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -40,7 +39,6 @@ const CodeAssistantEnumConstLight: React.FC<SvgProps> = ({
 const CodeAssistantEnumConstDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -75,7 +73,6 @@ export const CodeAssistantEnumConst: React.FC<CodeAssistantEnumConstProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +82,6 @@ export const CodeAssistantEnumConst: React.FC<CodeAssistantEnumConstProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

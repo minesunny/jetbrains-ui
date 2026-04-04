@@ -7,7 +7,6 @@ export type ScopesProps = SvgProps;
 const ScopesLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -32,7 +31,6 @@ const ScopesLight: React.FC<SvgProps> = ({
 const ScopesDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +57,6 @@ export const Scopes: React.FC<ScopesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ScopesLight : ScopesDark;
@@ -68,7 +65,6 @@ export const Scopes: React.FC<ScopesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

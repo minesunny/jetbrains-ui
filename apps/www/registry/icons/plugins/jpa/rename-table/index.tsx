@@ -7,7 +7,6 @@ export type RenameTableProps = SvgProps;
 const RenameTableLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const RenameTableLight: React.FC<SvgProps> = ({
 const RenameTableDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -82,7 +80,6 @@ export const RenameTable: React.FC<RenameTableProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RenameTableLight : RenameTableDark;
@@ -91,7 +88,6 @@ export const RenameTable: React.FC<RenameTableProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

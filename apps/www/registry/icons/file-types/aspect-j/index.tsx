@@ -7,7 +7,6 @@ export type AspectJProps = SvgProps;
 const AspectJLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AspectJLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m3.603 13 1.92-10.5h1.815L9.295 13H7.863L6.528 4.773l-.098-.698-.097.697L5.073 13zm1.11-2.722V9.1h3.36v1.178z"
       fill="#E66D17"
@@ -38,7 +36,6 @@ const AspectJLight: FC<SvgProps> = ({
 const AspectJDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const AspectJDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m3.603 13 1.92-10.5h1.815L9.295 13H7.863L6.528 4.773l-.098-.698-.097.697L5.073 13zm1.11-2.722V9.1h3.36v1.178z"
       fill="#E08855"
@@ -71,7 +67,6 @@ export const AspectJ: FC<AspectJProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AspectJLight : AspectJDark;
@@ -80,7 +75,6 @@ export const AspectJ: FC<AspectJProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

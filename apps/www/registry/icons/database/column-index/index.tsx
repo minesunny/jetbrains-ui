@@ -7,7 +7,6 @@ export type ColumnIndexProps = SvgProps;
 const ColumnIndexLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ColumnIndexLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2 4a1 1 0 0 1 1-1h2v10H3a1 1 0 0 1-1-1z" fill="#EDF3FF" />
     <path
       d="M6 14h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6v1h7a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6z"
@@ -41,7 +39,6 @@ const ColumnIndexLight: FC<SvgProps> = ({
 const ColumnIndexDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -57,7 +54,6 @@ const ColumnIndexDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path d="M2 4a1 1 0 0 1 1-1h2v10H3a1 1 0 0 1-1-1z" fill="#25324D" />
       <path
@@ -84,7 +80,6 @@ export const ColumnIndex: FC<ColumnIndexProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ColumnIndexLight : ColumnIndexDark;
@@ -93,7 +88,6 @@ export const ColumnIndex: FC<ColumnIndexProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

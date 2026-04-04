@@ -7,7 +7,6 @@ export type DebugProps = SvgProps;
 const DebugLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DebugLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.967 13.533a.5.5 0 1 0 .5-.866zm-2.217-1.28 2.217 1.28.5-.866-2.217-1.28zM14.9 9.5a.5.5 0 0 0 0-1zm-2.5 0h2.5v-1h-2.5zM14.455 5.24a.5.5 0 0 0-.476-.88zm-2.217 1.2 2.217-1.2-.476-.88-2.217 1.2zM2.03 13.533a.5.5 0 0 1-.5-.866zm2.22-1.282-2.22 1.282-.5-.866 2.22-1.282zM1.1 9.5a.5.5 0 0 1 0-1zm2.5 0H1.1v-1h2.5zM1.542 5.24a.5.5 0 0 1 .476-.88zm2.22 1.2-2.22-1.2.476-.88 2.22 1.2z"
       fill="#6C707E"
@@ -44,7 +42,6 @@ const DebugLight: FC<SvgProps> = ({
 const DebugDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const DebugDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.967 13.533a.5.5 0 1 0 .5-.866zm-2.217-1.28 2.217 1.28.5-.866-2.217-1.28zM14.9 9.5a.5.5 0 0 0 0-1zm-2.5 0h2.5v-1h-2.5zM14.455 5.24a.5.5 0 0 0-.476-.88zm-2.217 1.2 2.217-1.2-.476-.88-2.217 1.2zM2.03 13.533a.5.5 0 0 1-.5-.866zm2.22-1.282-2.22 1.282-.5-.866 2.22-1.282zM1.1 9.5a.5.5 0 0 1 0-1zm2.5 0H1.1v-1h2.5zM1.542 5.24a.5.5 0 0 1 .476-.88zm2.22 1.2-2.22-1.2.476-.88 2.22 1.2z"
       fill="#CED0D6"
@@ -83,7 +79,6 @@ export const Debug: FC<DebugProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DebugLight : DebugDark;
@@ -92,7 +87,6 @@ export const Debug: FC<DebugProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

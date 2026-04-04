@@ -7,7 +7,6 @@ export type InlayRenameInNoCodeFilesProps = SvgProps;
 const InlayRenameInNoCodeFilesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const InlayRenameInNoCodeFilesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="1" y="5" width="10" height="1.5" rx=".75" fill="#818594" />
     <rect x="1" y="9" width="6" height="1.5" rx=".75" fill="#818594" />
     <rect x="1" y="1" width="10" height="1.5" rx=".75" fill="#818594" />
@@ -33,7 +31,6 @@ const InlayRenameInNoCodeFilesLight: FC<SvgProps> = ({
 const InlayRenameInNoCodeFilesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -49,7 +46,6 @@ const InlayRenameInNoCodeFilesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="1" y="5" width="10" height="1.5" rx=".75" fill="#9DA0A8" />
     <rect x="1" y="9" width="6" height="1.5" rx=".75" fill="#9DA0A8" />
     <rect x="1" y="1" width="10" height="1.5" rx=".75" fill="#9DA0A8" />
@@ -61,7 +57,6 @@ export const InlayRenameInNoCodeFiles: FC<InlayRenameInNoCodeFilesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -73,7 +68,6 @@ export const InlayRenameInNoCodeFiles: FC<InlayRenameInNoCodeFilesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

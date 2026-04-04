@@ -7,7 +7,6 @@ export type CwmScreenOnProps = SvgProps;
 const CwmScreenOnLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const CwmScreenOnLight: React.FC<SvgProps> = ({
 const CwmScreenOnDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +85,6 @@ export const CwmScreenOn: React.FC<CwmScreenOnProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CwmScreenOnLight : CwmScreenOnDark;
@@ -96,7 +93,6 @@ export const CwmScreenOn: React.FC<CwmScreenOnProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

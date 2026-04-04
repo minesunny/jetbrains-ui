@@ -7,7 +7,6 @@ export type ShowPassedProps = SvgProps;
 const ShowPassedLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ShowPassedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
       stroke="#6C707E"
@@ -37,7 +35,6 @@ const ShowPassedLight: FC<SvgProps> = ({
 const ShowPassedDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const ShowPassedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
       stroke="#CED0D6"
@@ -69,7 +65,6 @@ export const ShowPassed: FC<ShowPassedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ShowPassedLight : ShowPassedDark;
@@ -78,7 +73,6 @@ export const ShowPassed: FC<ShowPassedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type MagicResolveToolbarProps = SvgProps;
 const MagicResolveToolbarLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MagicResolveToolbarLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.793 13.793-.586-.586a1 1 0 0 1 0-1.414l6.586-6.586a1 1 0 0 1 1.414 0l.586.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1-1.414 0M9.5 8.5l-2-2M10.5 2.5v-1M13.5 5.5h1m-3 4 1 1m-6-6-1-1"
       stroke="#6C707E"
@@ -36,7 +34,6 @@ const MagicResolveToolbarLight: FC<SvgProps> = ({
 const MagicResolveToolbarDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const MagicResolveToolbarDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.793 13.793-.586-.586a1 1 0 0 1 0-1.414l6.586-6.586a1 1 0 0 1 1.414 0l.586.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1-1.414 0M9.5 8.5l-2-2M10.5 2.5v-1M13.5 5.5h1m-3 4 1 1m-6-6-1-1"
       stroke="#CED0D6"
@@ -67,7 +63,6 @@ export const MagicResolveToolbar: FC<MagicResolveToolbarProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const MagicResolveToolbar: FC<MagicResolveToolbarProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ClickHouseProps = SvgProps;
 const ClickHouseLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ClickHouseLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M1 15h2v-3H1z" fill="red" />
     <path
       d="M4 15h2V1H4zM7 15h2V1H7zM10 15h2V1h-2zM13 9h2V6h-2zM3 1v11H1V1z"
@@ -35,7 +33,6 @@ const ClickHouseLight: FC<SvgProps> = ({
 const ClickHouseDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const ClickHouseDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M1 15h2v-3H1z" fill="red" />
     <path
       d="M4 15h2V1H4zM7 15h2V1H7zM10 15h2V1h-2zM13 9h2V6h-2zM3 1v11H1V1z"
@@ -65,7 +61,6 @@ export const ClickHouse: FC<ClickHouseProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ClickHouseLight : ClickHouseDark;
@@ -74,7 +69,6 @@ export const ClickHouse: FC<ClickHouseProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

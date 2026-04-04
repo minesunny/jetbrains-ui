@@ -7,7 +7,6 @@ export type DenodoProps = SvgProps;
 const DenodoLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DenodoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 1h-3v3h3zM9.5 12h-3v3h3zM14.812 5.799l-1.5-2.598-2.598 1.5 1.5 2.598zM5.286 11.299l-1.5-2.598-2.598 1.5 1.5 2.598zM2.688 3.201l-1.5 2.598 2.598 1.5 1.5-2.598zM12.214 8.701l-1.5 2.598 2.598 1.5 1.5-2.598z"
       fill="#F05049"
@@ -35,7 +33,6 @@ const DenodoLight: FC<SvgProps> = ({
 const DenodoDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const DenodoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 1h-3v3h3zM9.5 12h-3v3h3zM14.812 5.799l-1.5-2.598-2.598 1.5 1.5 2.598zM5.286 11.299l-1.5-2.598-2.598 1.5 1.5 2.598zM2.688 3.201l-1.5 2.598 2.598 1.5 1.5-2.598zM12.214 8.701l-1.5 2.598 2.598 1.5 1.5-2.598z"
       fill="#EF5049"
@@ -65,7 +61,6 @@ export const Denodo: FC<DenodoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DenodoLight : DenodoDark;
@@ -74,7 +69,6 @@ export const Denodo: FC<DenodoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

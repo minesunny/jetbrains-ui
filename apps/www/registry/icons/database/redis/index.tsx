@@ -7,7 +7,6 @@ export type RedisProps = SvgProps;
 const RedisLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RedisLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.451 11.252c-.747.39-4.617 1.981-5.441 2.41s-1.282.426-1.933.115c-.65-.311-4.77-1.975-5.511-2.33-.37-.177-.566-.326-.566-.467V9.564s5.362-1.167 6.228-1.477 1.166-.322 1.902-.052c.737.27 5.142 1.064 5.87 1.33v1.396c0 .14-.168.293-.549.491"
       fill="#A42122"
@@ -60,7 +58,6 @@ const RedisLight: FC<SvgProps> = ({
 const RedisDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -76,7 +73,6 @@ const RedisDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.451 11.252c-.747.39-4.617 1.981-5.441 2.41s-1.282.426-1.933.115c-.65-.311-4.77-1.975-5.511-2.33-.37-.177-.566-.326-.566-.467V9.564s5.362-1.167 6.228-1.477 1.166-.322 1.902-.052c.737.27 5.142 1.064 5.87 1.33v1.396c0 .14-.168.293-.549.491"
       fill="#A42122"
@@ -115,7 +111,6 @@ export const Redis: FC<RedisProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RedisLight : RedisDark;
@@ -124,7 +119,6 @@ export const Redis: FC<RedisProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

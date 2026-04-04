@@ -7,7 +7,6 @@ export type AbstractFieldVariable1Props = SvgProps;
 const AbstractFieldVariable1Light: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -41,7 +40,6 @@ const AbstractFieldVariable1Light: React.FC<SvgProps> = ({
 const AbstractFieldVariable1Dark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -77,7 +75,6 @@ export const AbstractFieldVariable1: React.FC<AbstractFieldVariable1Props> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -87,7 +84,6 @@ export const AbstractFieldVariable1: React.FC<AbstractFieldVariable1Props> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

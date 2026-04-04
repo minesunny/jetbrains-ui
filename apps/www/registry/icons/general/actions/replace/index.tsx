@@ -7,7 +7,6 @@ export type ReplaceProps = SvgProps;
 const ReplaceLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ReplaceLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M10.164 10.872a5.015 5.015 0 0 1-4.341.989l-.46-1.21A4 4 0 1 0 3.126 8H2.1a5 5 0 1 1 8.771 2.165l2.982 2.976a.5.5 0 0 1-.707.708z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const ReplaceLight: FC<SvgProps> = ({
 const ReplaceDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ReplaceDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M10.164 10.872a5.015 5.015 0 0 1-4.341.989l-.46-1.21A4 4 0 1 0 3.126 8H2.1a5 5 0 1 1 8.771 2.165l2.982 2.976a.5.5 0 0 1-.707.708z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const Replace: FC<ReplaceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ReplaceLight : ReplaceDark;
@@ -84,7 +79,6 @@ export const Replace: FC<ReplaceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

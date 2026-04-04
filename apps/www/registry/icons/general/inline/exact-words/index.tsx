@@ -7,7 +7,6 @@ export type ExactWordsProps = SvgProps;
 const ExactWordsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ExactWordsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.703 3.9 2.34 7.313L7.273 3.9H8.61l2.262 7.313L13.156 3.9h1.359L11.543 13h-1.384L7.922 5.779 5.649 13H4.27L1.298 3.9z"
       fill="#6C707E"
@@ -34,7 +32,6 @@ const ExactWordsLight: FC<SvgProps> = ({
 const ExactWordsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const ExactWordsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.703 3.9 2.34 7.313L7.273 3.9H8.61l2.262 7.313L13.156 3.9h1.359L11.543 13h-1.384L7.922 5.779 5.649 13H4.27L1.298 3.9z"
       fill="#CED0D6"
@@ -63,7 +59,6 @@ export const ExactWords: FC<ExactWordsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ExactWordsLight : ExactWordsDark;
@@ -72,7 +67,6 @@ export const ExactWords: FC<ExactWordsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

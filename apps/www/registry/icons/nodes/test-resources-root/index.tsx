@@ -7,7 +7,6 @@ export type TestResourcesRootProps = SvgProps;
 const TestResourcesRootLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TestResourcesRootLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.75 2C1.784 2 1 2.836 1 3.867v7.095l1.628-1.566c.562-.54 1.36-.488 1.871-.066.511-.423 1.31-.476 1.871.064l1.705 1.638A1.5 1.5 0 0 1 9.5 10H15V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2z"
       fill="#F2FCF3"
@@ -56,7 +54,6 @@ const TestResourcesRootLight: FC<SvgProps> = ({
 const TestResourcesRootDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -72,7 +69,6 @@ const TestResourcesRootDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.75 2C1.784 2 1 2.836 1 3.867v7.095l1.628-1.566c.562-.54 1.36-.488 1.871-.066.511-.423 1.31-.476 1.871.064l1.705 1.638A1.5 1.5 0 0 1 9.5 10H15V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2z"
       fill="#253627"
@@ -107,7 +103,6 @@ export const TestResourcesRoot: FC<TestResourcesRootProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -117,7 +112,6 @@ export const TestResourcesRoot: FC<TestResourcesRootProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

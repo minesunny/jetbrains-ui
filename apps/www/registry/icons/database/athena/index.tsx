@@ -7,7 +7,6 @@ export type AthenaProps = SvgProps;
 const AthenaLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AthenaLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 11.7v3.4l-7-3.5v-2z" fill="#9C5121" />
     <path d="M8 11.7v3.4l7-3.5v-2z" fill="#FB8835" />
     <path d="M8 11.7 1 9.6l7-.824 7 .824z" fill="#FFC39C" />
@@ -51,7 +49,6 @@ const AthenaLight: FC<SvgProps> = ({
 const AthenaDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -67,7 +64,6 @@ const AthenaDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 11.7v3.4l-7-3.5v-2z" fill="#9C5121" />
     <path d="M8 11.7v3.4l7-3.5v-2z" fill="#FB8835" />
     <path d="M8 11.7 1 9.6l7-.824 7 .824z" fill="#FFC39C" />
@@ -97,7 +93,6 @@ export const Athena: FC<AthenaProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AthenaLight : AthenaDark;
@@ -106,7 +101,6 @@ export const Athena: FC<AthenaProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

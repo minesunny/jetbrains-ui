@@ -7,7 +7,6 @@ export type RunConfigurationProps = SvgProps;
 const RunConfigurationLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +55,6 @@ const RunConfigurationLight: React.FC<SvgProps> = ({
 const RunConfigurationDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -107,7 +105,6 @@ export const RunConfiguration: React.FC<RunConfigurationProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -117,7 +114,6 @@ export const RunConfiguration: React.FC<RunConfigurationProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

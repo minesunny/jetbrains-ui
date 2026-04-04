@@ -7,7 +7,6 @@ export type MultipleBreakpointsDisabledProps = SvgProps;
 const MultipleBreakpointsDisabledLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MultipleBreakpointsDisabledLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 0a4.5 4.5 0 0 0-4.475 4.025c.517.049 1.013.169 1.478.35a3 3 0 1 1 3.121 3.122c.182.466.302.961.351 1.478A4.5 4.5 0 0 0 9.5 0"
       fill="#E55765"
@@ -40,7 +38,6 @@ const MultipleBreakpointsDisabledLight: FC<SvgProps> = ({
 const MultipleBreakpointsDisabledDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const MultipleBreakpointsDisabledDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 0a4.5 4.5 0 0 0-4.475 4.025c.517.049 1.013.169 1.478.35a3 3 0 1 1 3.121 3.122c.182.466.302.961.351 1.478A4.5 4.5 0 0 0 9.5 0"
       fill="#DB5C5C"
@@ -77,7 +73,6 @@ export const MultipleBreakpointsDisabled: FC<
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -89,7 +84,6 @@ export const MultipleBreakpointsDisabled: FC<
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

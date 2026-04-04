@@ -7,7 +7,6 @@ export type LocalChangesProps = SvgProps;
 const LocalChangesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const LocalChangesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="7.5" cy="8" r="2.5" fill="#6C707E" />
   </svg>
 );
@@ -31,7 +29,6 @@ const LocalChangesLight: FC<SvgProps> = ({
 const LocalChangesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +44,6 @@ const LocalChangesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="7.5" cy="8" r="2.5" fill="#6C707E" />
   </svg>
 );
@@ -57,7 +53,6 @@ export const LocalChanges: FC<LocalChangesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? LocalChangesLight : LocalChangesDark;
@@ -66,7 +61,6 @@ export const LocalChanges: FC<LocalChangesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

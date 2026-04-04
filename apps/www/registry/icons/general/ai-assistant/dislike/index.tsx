@@ -7,7 +7,6 @@ export type DislikeProps = SvgProps;
 const DislikeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DislikeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.5 9a1.5 1.5 0 0 1-1.5 1.5h-1.5v-8H13A1.5 1.5 0 0 1 14.5 4zM6.5 10.5H3A1.5 1.5 0 0 1 1.5 9V5.692c0-.426.181-.832.498-1.116l1.887-1.693a1.5 1.5 0 0 1 1.002-.384H11.5v8.293l-3.465 3.446A.9.9 0 0 1 6.5 13.6z"
       stroke="#6C707E"
@@ -34,7 +32,6 @@ const DislikeLight: FC<SvgProps> = ({
 const DislikeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const DislikeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.5 9a1.5 1.5 0 0 1-1.5 1.5h-1.5v-8H13A1.5 1.5 0 0 1 14.5 4zM6.5 10.5H3A1.5 1.5 0 0 1 1.5 9V5.692c0-.426.181-.832.498-1.116l1.887-1.693a1.5 1.5 0 0 1 1.002-.384H11.5v8.293l-3.465 3.446A.9.9 0 0 1 6.5 13.6z"
       stroke="#CED0D6"
@@ -63,7 +59,6 @@ export const Dislike: FC<DislikeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DislikeLight : DislikeDark;
@@ -72,7 +67,6 @@ export const Dislike: FC<DislikeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

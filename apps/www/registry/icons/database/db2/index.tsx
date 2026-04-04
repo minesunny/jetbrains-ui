@@ -7,7 +7,6 @@ export type Db2Props = SvgProps;
 const Db2Light: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const Db2Light: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#020303" d="M1 1H15V8H1z" />
     <path fill="#59A869" d="M1 8H15V15H1z" />
     <path
@@ -42,7 +40,6 @@ const Db2Light: FC<SvgProps> = ({
 const Db2Dark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const Db2Dark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#020303" d="M1 1H15V8H1z" />
     <path fill="#499C54" d="M1 8H15V15H1z" />
     <path
@@ -79,7 +75,6 @@ export const Db2: FC<Db2Props> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? Db2Light : Db2Dark;
@@ -88,7 +83,6 @@ export const Db2: FC<Db2Props> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

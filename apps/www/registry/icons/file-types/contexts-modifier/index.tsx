@@ -7,7 +7,6 @@ export type ContextsModifierProps = SvgProps;
 const ContextsModifierLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ContextsModifierLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M10.5 8a.5.5 0 0 0 0 1H15v4.5a.5.5 0 0 0 1 0V9a1 1 0 0 0-1-1z"
       fill="#3574F0"
@@ -41,7 +39,6 @@ const ContextsModifierLight: FC<SvgProps> = ({
 const ContextsModifierDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -57,7 +54,6 @@ const ContextsModifierDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M10.5 8a.5.5 0 0 0 0 1H15v4.5a.5.5 0 0 0 1 0V9a1 1 0 0 0-1-1z"
       fill="#548AF7"
@@ -77,7 +73,6 @@ export const ContextsModifier: FC<ContextsModifierProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -87,7 +82,6 @@ export const ContextsModifier: FC<ContextsModifierProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

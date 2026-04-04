@@ -7,7 +7,6 @@ export type ColumnGoldKeyDotProps = SvgProps;
 const ColumnGoldKeyDotLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ColumnGoldKeyDotLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 3h2v8.05c.619.632 1 1.496 1 2.45v.5h6v-1H6V3h7a1 1 0 0 1 1 1v2.035c.353.051.69.154 1 .302V4a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v6.337c.31-.148.647-.251 1-.302V4a1 1 0 0 1 1-1"
       fill="#6C707E"
@@ -50,7 +48,6 @@ const ColumnGoldKeyDotLight: FC<SvgProps> = ({
 const ColumnGoldKeyDotDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -66,7 +63,6 @@ const ColumnGoldKeyDotDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 3h2v8.05c.619.632 1 1.496 1 2.45v.5h6v-1H6V3h7a1 1 0 0 1 1 1v2.035c.353.051.69.154 1 .302V4a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v6.337c.31-.148.647-.251 1-.302V4a1 1 0 0 1 1-1"
       fill="#CED0D6"
@@ -95,7 +91,6 @@ export const ColumnGoldKeyDot: FC<ColumnGoldKeyDotProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -105,7 +100,6 @@ export const ColumnGoldKeyDot: FC<ColumnGoldKeyDotProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

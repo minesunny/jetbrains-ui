@@ -7,7 +7,6 @@ export type RspecRunConfigurationProps = SvgProps;
 const RspecRunConfigurationLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -62,7 +61,6 @@ const RspecRunConfigurationLight: React.FC<SvgProps> = ({
 const RspecRunConfigurationDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -119,7 +117,6 @@ export const RspecRunConfiguration: React.FC<RspecRunConfigurationProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -129,7 +126,6 @@ export const RspecRunConfiguration: React.FC<RspecRunConfigurationProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ApplicationProps = SvgProps;
 const ApplicationLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ApplicationLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x="1.5"
       y="2.5"
@@ -40,7 +38,6 @@ const ApplicationLight: FC<SvgProps> = ({
 const ApplicationDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ApplicationDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" stroke="#548AF7">
       <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" fill="#25324D" />
       <path d="M4 5.5h1M7 5.5h1" strokeLinecap="round" />
@@ -74,7 +70,6 @@ export const Application: FC<ApplicationProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ApplicationLight : ApplicationDark;
@@ -83,7 +78,6 @@ export const Application: FC<ApplicationProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

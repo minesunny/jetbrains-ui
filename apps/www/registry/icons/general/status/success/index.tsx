@@ -7,7 +7,6 @@ export type SuccessProps = SvgProps;
 const SuccessLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SuccessLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="7" fill="#55A76A" />
     <path
       d="M4.5 8 7 10.5 11.5 6"
@@ -38,7 +36,6 @@ const SuccessLight: FC<SvgProps> = ({
 const SuccessDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const SuccessDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="7" fill="#57965C" />
     <path
       d="M4.5 8 7 10.5 11.5 6"
@@ -71,7 +67,6 @@ export const Success: FC<SuccessProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SuccessLight : SuccessDark;
@@ -80,7 +75,6 @@ export const Success: FC<SuccessProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

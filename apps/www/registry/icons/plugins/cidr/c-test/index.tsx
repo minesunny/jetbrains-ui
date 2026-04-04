@@ -7,7 +7,6 @@ export type CTestProps = SvgProps;
 const CTestLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -86,7 +85,6 @@ const CTestLight: React.FC<SvgProps> = ({
 const CTestDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -167,7 +165,6 @@ export const CTest: React.FC<CTestProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CTestLight : CTestDark;
@@ -176,7 +173,6 @@ export const CTest: React.FC<CTestProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

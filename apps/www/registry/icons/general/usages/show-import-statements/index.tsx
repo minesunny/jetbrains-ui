@@ -7,7 +7,6 @@ export type ShowImportStatementsProps = SvgProps;
 const ShowImportStatementsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ShowImportStatementsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="7" y="2" width="2" height="2" rx="1" fill="#6C707E" />
     <rect x="8" y="6" width="1" height="8" rx=".5" fill="#6C707E" />
     <rect x="5" y="6" width="4" height="1" rx=".5" fill="#6C707E" />
@@ -34,7 +32,6 @@ const ShowImportStatementsLight: FC<SvgProps> = ({
 const ShowImportStatementsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const ShowImportStatementsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="7" y="2" width="2" height="2" rx="1" fill="#CED0D6" />
     <rect x="8" y="6" width="1" height="8" rx=".5" fill="#CED0D6" />
     <rect x="5" y="6" width="4" height="1" rx=".5" fill="#CED0D6" />
@@ -63,7 +59,6 @@ export const ShowImportStatements: FC<ShowImportStatementsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -73,7 +68,6 @@ export const ShowImportStatements: FC<ShowImportStatementsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

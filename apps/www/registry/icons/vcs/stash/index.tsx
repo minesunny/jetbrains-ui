@@ -7,7 +7,6 @@ export type StashProps = SvgProps;
 const StashLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const StashLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.646 5.146a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 7.293V1.5a.5.5 0 0 0-1 0v5.793L5.354 5.146a.5.5 0 0 0-.708 0"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const StashLight: FC<SvgProps> = ({
 const StashDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const StashDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.646 5.146a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 7.293V1.5a.5.5 0 0 0-1 0v5.793L5.354 5.146a.5.5 0 0 0-.708 0"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const Stash: FC<StashProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? StashLight : StashDark;
@@ -84,7 +79,6 @@ export const Stash: FC<StashProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

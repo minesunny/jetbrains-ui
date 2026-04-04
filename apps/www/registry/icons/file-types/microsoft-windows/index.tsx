@@ -7,7 +7,6 @@ export type MicrosoftWindowsProps = SvgProps;
 const MicrosoftWindowsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MicrosoftWindowsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.001 2h5.001v5H2zm6.002 0h4.998v5H8.003zM2 7.999h5v5.002L2 13zm6.002 0H13v5.002H8.002"
       fill="#6C707E"
@@ -34,7 +32,6 @@ const MicrosoftWindowsLight: FC<SvgProps> = ({
 const MicrosoftWindowsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const MicrosoftWindowsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.001 2h5.001v5H2zm6.002 0h4.998v5H8.003zM2 7.999h5v5.002L2 13zm6.002 0H13v5.002H8.002"
       fill="#CED0D6"
@@ -63,7 +59,6 @@ export const MicrosoftWindows: FC<MicrosoftWindowsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -73,7 +68,6 @@ export const MicrosoftWindows: FC<MicrosoftWindowsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

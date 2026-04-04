@@ -7,7 +7,6 @@ export type NamespacedMarkProps = SvgProps;
 const NamespacedMarkLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -32,7 +31,6 @@ const NamespacedMarkLight: React.FC<SvgProps> = ({
 const NamespacedMarkDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +57,6 @@ export const NamespacedMark: React.FC<NamespacedMarkProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -69,7 +66,6 @@ export const NamespacedMark: React.FC<NamespacedMarkProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

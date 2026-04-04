@@ -7,7 +7,6 @@ export type InfrastructureBeanProps = SvgProps;
 const InfrastructureBeanLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +50,6 @@ const InfrastructureBeanLight: React.FC<SvgProps> = ({
 const InfrastructureBeanDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -97,7 +95,6 @@ export const InfrastructureBean: React.FC<InfrastructureBeanProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -107,7 +104,6 @@ export const InfrastructureBean: React.FC<InfrastructureBeanProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

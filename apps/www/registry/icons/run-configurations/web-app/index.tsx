@@ -7,7 +7,6 @@ export type WebAppProps = SvgProps;
 const WebAppLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const WebAppLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.416A5 5 0 0 1 15 8V4a2 2 0 0 0-2-2z"
       fill="#EBECF0"
@@ -52,7 +50,6 @@ const WebAppLight: FC<SvgProps> = ({
 const WebAppDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -68,7 +65,6 @@ const WebAppDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.416A5 5 0 0 1 15 8V4a2 2 0 0 0-2-2z"
@@ -106,7 +102,6 @@ export const WebApp: FC<WebAppProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? WebAppLight : WebAppDark;
@@ -115,7 +110,6 @@ export const WebApp: FC<WebAppProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

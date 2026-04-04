@@ -7,7 +7,6 @@ export type DocumentationProps = SvgProps;
 const DocumentationLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DocumentationLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="3.5" width="9" height="10" rx="1.5" stroke="#6C707E" />
     <rect x="5" y="10" width="4" height="1" rx=".5" fill="#6C707E" />
     <rect x="5" y="8" width="4" height="1" rx=".5" fill="#6C707E" />
@@ -40,7 +38,6 @@ const DocumentationLight: FC<SvgProps> = ({
 const DocumentationDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const DocumentationDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="3.5" width="9" height="10" rx="1.5" stroke="#CED0D6" />
     <rect x="5" y="10" width="4" height="1" rx=".5" fill="#CED0D6" />
     <rect x="5" y="8" width="4" height="1" rx=".5" fill="#CED0D6" />
@@ -75,7 +71,6 @@ export const Documentation: FC<DocumentationProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const Documentation: FC<DocumentationProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

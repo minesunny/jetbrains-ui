@@ -7,7 +7,6 @@ export type AutoRefreshProps = SvgProps;
 const AutoRefreshLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -34,7 +33,6 @@ const AutoRefreshLight: React.FC<SvgProps> = ({
 const AutoRefreshDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +61,6 @@ export const AutoRefresh: React.FC<AutoRefreshProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AutoRefreshLight : AutoRefreshDark;
@@ -72,7 +69,6 @@ export const AutoRefresh: React.FC<AutoRefreshProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

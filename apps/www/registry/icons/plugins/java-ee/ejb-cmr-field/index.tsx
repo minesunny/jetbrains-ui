@@ -7,7 +7,6 @@ export type EjbCmrFieldProps = SvgProps;
 const EjbCmrFieldLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +53,6 @@ const EjbCmrFieldLight: React.FC<SvgProps> = ({
 const EjbCmrFieldDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -103,7 +101,6 @@ export const EjbCmrField: React.FC<EjbCmrFieldProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? EjbCmrFieldLight : EjbCmrFieldDark;
@@ -112,7 +109,6 @@ export const EjbCmrField: React.FC<EjbCmrFieldProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

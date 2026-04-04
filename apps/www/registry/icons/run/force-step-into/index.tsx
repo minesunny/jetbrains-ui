@@ -7,7 +7,6 @@ export type ForceStepIntoProps = SvgProps;
 const ForceStepIntoLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ForceStepIntoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="14" width="12" height="1" rx=".5" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const ForceStepIntoLight: FC<SvgProps> = ({
 const ForceStepIntoDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const ForceStepIntoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="14" width="12" height="1" rx=".5" fill="#CED0D6" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const ForceStepInto: FC<ForceStepIntoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -79,7 +74,6 @@ export const ForceStepInto: FC<ForceStepIntoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

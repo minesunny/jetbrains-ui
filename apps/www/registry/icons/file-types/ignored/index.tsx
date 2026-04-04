@@ -7,7 +7,6 @@ export type IgnoredProps = SvgProps;
 const IgnoredLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const IgnoredLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#EBECF0" stroke="#6C707E" />
     <path d="m3.5 12.5 9-9" stroke="#6C707E" />
   </svg>
@@ -32,7 +30,6 @@ const IgnoredLight: FC<SvgProps> = ({
 const IgnoredDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +45,6 @@ const IgnoredDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#43454A" stroke="#CED0D6" />
     <path d="m3.5 12.5 9-9" stroke="#CED0D6" />
   </svg>
@@ -59,7 +55,6 @@ export const Ignored: FC<IgnoredProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? IgnoredLight : IgnoredDark;
@@ -68,7 +63,6 @@ export const Ignored: FC<IgnoredProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

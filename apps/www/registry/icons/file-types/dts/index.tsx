@@ -7,7 +7,6 @@ export type DtsProps = SvgProps;
 const DtsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DtsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12 2a2 2 0 0 1 2 2v3.054a3.6 3.6 0 0 0-3.175 1.002l-2.77 2.77A3.6 3.6 0 0 0 7.055 14H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"
       fill="#3574F0"
@@ -46,7 +44,6 @@ const DtsLight: FC<SvgProps> = ({
 const DtsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -62,7 +59,6 @@ const DtsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12 2a2 2 0 0 1 2 2v3.054a3.6 3.6 0 0 0-3.175 1.002l-2.77 2.77A3.6 3.6 0 0 0 7.055 14H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"
       fill="#548AF7"
@@ -87,7 +83,6 @@ export const Dts: FC<DtsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DtsLight : DtsDark;
@@ -96,7 +91,6 @@ export const Dts: FC<DtsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ShortcutFilterProps = SvgProps;
 const ShortcutFilterLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ShortcutFilterLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x=".5"
       y="13.5"
@@ -61,7 +59,6 @@ const ShortcutFilterLight: FC<SvgProps> = ({
 const ShortcutFilterDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -77,7 +74,6 @@ const ShortcutFilterDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x=".5"
       y="13.5"
@@ -117,7 +113,6 @@ export const ShortcutFilter: FC<ShortcutFilterProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -127,7 +122,6 @@ export const ShortcutFilter: FC<ShortcutFilterProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

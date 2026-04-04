@@ -7,7 +7,6 @@ export type RunSporkServerProps = SvgProps;
 const RunSporkServerLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -49,7 +48,6 @@ const RunSporkServerLight: React.FC<SvgProps> = ({
 const RunSporkServerDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -93,7 +91,6 @@ export const RunSporkServer: React.FC<RunSporkServerProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -103,7 +100,6 @@ export const RunSporkServer: React.FC<RunSporkServerProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

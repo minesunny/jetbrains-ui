@@ -7,7 +7,6 @@ export type SynonymProps = SvgProps;
 const SynonymLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SynonymLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.707 9.586a.5.5 0 0 1 0-.707l1.344-1.344A3.243 3.243 0 0 0 8.465 2.95L7.12 4.293a.5.5 0 0 1-.707-.707l1.344-1.344a4.243 4.243 0 0 1 6 6l-1.344 1.344a.5.5 0 0 1-.707 0"
       fill="#6C707E"
@@ -42,7 +40,6 @@ const SynonymLight: FC<SvgProps> = ({
 const SynonymDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const SynonymDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.707 9.586a.5.5 0 0 1 0-.707l1.344-1.344A3.243 3.243 0 0 0 8.465 2.95L7.12 4.293a.5.5 0 0 1-.707-.707l1.344-1.344a4.243 4.243 0 0 1 6 6l-1.344 1.344a.5.5 0 0 1-.707 0"
       fill="#CED0D6"
@@ -79,7 +75,6 @@ export const Synonym: FC<SynonymProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SynonymLight : SynonymDark;
@@ -88,7 +83,6 @@ export const Synonym: FC<SynonymProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

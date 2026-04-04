@@ -7,7 +7,6 @@ export type VirtualKeyProps = SvgProps;
 const VirtualKeyLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const VirtualKeyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M7.5 1.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Z" stroke="#955AE0" />
     <path
       d="M7.5 8.5v6M8 13.5h2.5M8 11.5h2.5"
@@ -36,7 +34,6 @@ const VirtualKeyLight: FC<SvgProps> = ({
 const VirtualKeyDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const VirtualKeyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M7.5 1.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Z" stroke="#B589EC" />
     <path
       d="M7.5 8.5v6M8 13.5h2.5M8 11.5h2.5"
@@ -67,7 +63,6 @@ export const VirtualKey: FC<VirtualKeyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? VirtualKeyLight : VirtualKeyDark;
@@ -76,7 +71,6 @@ export const VirtualKey: FC<VirtualKeyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

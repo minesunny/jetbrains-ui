@@ -7,7 +7,6 @@ export type SystemDBFieldProps = SvgProps;
 const SystemDBFieldLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +49,6 @@ const SystemDBFieldLight: React.FC<SvgProps> = ({
 const SystemDBFieldDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -102,7 +100,6 @@ export const SystemDBField: React.FC<SystemDBFieldProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -112,7 +109,6 @@ export const SystemDBField: React.FC<SystemDBFieldProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

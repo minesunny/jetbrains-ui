@@ -7,7 +7,6 @@ export type InspectionsOKEmptyProps = SvgProps;
 const InspectionsOKEmptyLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const InspectionsOKEmptyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       clipRule="evenodd"
       d="M13.202 5.146a.5.5 0 0 1 0 .708L6.5 12.556 2.842 8.847a.5.5 0 0 1-.004-.698l.805-.834a.5.5 0 0 1 .717-.003L6.5 9.5 11.646 4.3a.5.5 0 0 1 .71-.001z"
@@ -37,7 +35,6 @@ const InspectionsOKEmptyLight: FC<SvgProps> = ({
 const InspectionsOKEmptyDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const InspectionsOKEmptyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       clipRule="evenodd"
       d="M13.202 5.146a.5.5 0 0 1 0 .708L6.5 12.556 2.842 8.847a.5.5 0 0 1-.004-.698l.805-.834a.5.5 0 0 1 .717-.003L6.5 9.5 11.646 4.3a.5.5 0 0 1 .71-.001z"
@@ -69,7 +65,6 @@ export const InspectionsOKEmpty: FC<InspectionsOKEmptyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -79,7 +74,6 @@ export const InspectionsOKEmpty: FC<InspectionsOKEmptyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

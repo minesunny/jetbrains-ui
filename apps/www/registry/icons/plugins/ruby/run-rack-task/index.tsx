@@ -7,7 +7,6 @@ export type RunRackTaskProps = SvgProps;
 const RunRackTaskLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -35,7 +34,6 @@ const RunRackTaskLight: React.FC<SvgProps> = ({
 const RunRackTaskDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -65,7 +63,6 @@ export const RunRackTask: React.FC<RunRackTaskProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RunRackTaskLight : RunRackTaskDark;
@@ -74,7 +71,6 @@ export const RunRackTask: React.FC<RunRackTaskProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

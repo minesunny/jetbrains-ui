@@ -7,7 +7,6 @@ export type RubyRemoteProps = SvgProps;
 const RubyRemoteLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +53,6 @@ const RubyRemoteLight: React.FC<SvgProps> = ({
 const RubyRemoteDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -103,7 +101,6 @@ export const RubyRemote: React.FC<RubyRemoteProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RubyRemoteLight : RubyRemoteDark;
@@ -112,7 +109,6 @@ export const RubyRemote: React.FC<RubyRemoteProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type EditProps = SvgProps;
 const EditLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const EditLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m11.597 7.655 2.091-2.095a1.035 1.035 0 0 0 .007-1.474l-1.668-1.772-.005-.005a1.05 1.05 0 0 0-1.489.002L8.387 4.444m3.21 3.21-3.21-3.21m3.21 3.21L5.74 13.5H2.5v-3.18l5.887-5.876"
       stroke="#6C707E"
@@ -35,7 +33,6 @@ const EditLight: FC<SvgProps> = ({
 const EditDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const EditDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m11.597 7.655 2.091-2.095a1.035 1.035 0 0 0 .007-1.474l-1.668-1.772-.005-.005a1.05 1.05 0 0 0-1.489.002L8.387 4.444m3.21 3.21-3.21-3.21m3.21 3.21L5.74 13.5H2.5v-3.18l5.887-5.876"
       stroke="#CED0D6"
@@ -65,7 +61,6 @@ export const Edit: FC<EditProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? EditLight : EditDark;
@@ -74,7 +69,6 @@ export const Edit: FC<EditProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

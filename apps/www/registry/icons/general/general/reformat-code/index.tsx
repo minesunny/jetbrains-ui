@@ -7,7 +7,6 @@ export type ReformatCodeProps = SvgProps;
 const ReformatCodeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ReformatCodeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="12" width="12" height="1" rx=".5" fill="#6C707E" />
     <rect x="6" y="6" width="8" height="1" rx=".5" fill="#6C707E" />
     <rect x="6" y="9" width="8" height="1" rx=".5" fill="#6C707E" />
@@ -38,7 +36,6 @@ const ReformatCodeLight: FC<SvgProps> = ({
 const ReformatCodeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const ReformatCodeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="12" width="12" height="1" rx=".5" fill="#CED0D6" />
     <rect x="6" y="6" width="8" height="1" rx=".5" fill="#CED0D6" />
     <rect x="6" y="9" width="8" height="1" rx=".5" fill="#CED0D6" />
@@ -71,7 +67,6 @@ export const ReformatCode: FC<ReformatCodeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ReformatCodeLight : ReformatCodeDark;
@@ -80,7 +75,6 @@ export const ReformatCode: FC<ReformatCodeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

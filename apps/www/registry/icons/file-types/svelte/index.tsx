@@ -7,7 +7,6 @@ export type SvelteProps = SvgProps;
 const SvelteLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SvelteLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M13.081 2.853C11.781.993 9.213.44 7.357 1.623l-3.26 2.078a3.74 3.74 0 0 0-1.694 2.505q-.063.346-.063.7c.002.637.158 1.265.456 1.829a3.8 3.8 0 0 0-.56 1.398 3.99 3.99 0 0 0 .684 3.015c1.3 1.86 3.874 2.411 5.724 1.229l3.257-2.078a3.73 3.73 0 0 0 1.69-2.507q.063-.346.062-.698c0-.637-.155-1.264-.45-1.828a3.76 3.76 0 0 0 .621-2.095c0-.83-.26-1.64-.743-2.316z"
@@ -45,7 +43,6 @@ const SvelteLight: FC<SvgProps> = ({
 const SvelteDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const SvelteDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M13.081 2.853C11.781.993 9.213.44 7.357 1.623l-3.26 2.078a3.74 3.74 0 0 0-1.694 2.505q-.063.346-.063.7c.002.637.158 1.265.456 1.829a3.8 3.8 0 0 0-.56 1.398 3.99 3.99 0 0 0 .684 3.015c1.3 1.86 3.874 2.411 5.724 1.229l3.257-2.078a3.73 3.73 0 0 0 1.69-2.507q.063-.346.062-.698c0-.637-.155-1.264-.45-1.828a3.76 3.76 0 0 0 .621-2.095c0-.83-.26-1.64-.743-2.316z"
@@ -85,7 +81,6 @@ export const Svelte: FC<SvelteProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SvelteLight : SvelteDark;
@@ -94,7 +89,6 @@ export const Svelte: FC<SvelteProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

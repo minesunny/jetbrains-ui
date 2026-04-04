@@ -7,7 +7,6 @@ export type WritersideProps = SvgProps;
 const WritersideLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const WritersideLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="3.5" width="10" height="10" rx="1.5" stroke="#6C707E" />
     <rect
       x="5"
@@ -45,7 +43,6 @@ const WritersideLight: FC<SvgProps> = ({
 const WritersideDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const WritersideDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" stroke="#CED0D6">
       <rect x="2.5" y="3.5" width="10" height="10" rx="1.5" />
       <rect x="5" y="10.25" width="4" height=".5" rx=".25" strokeWidth=".5" />
@@ -80,7 +76,6 @@ export const Writerside: FC<WritersideProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? WritersideLight : WritersideDark;
@@ -89,7 +84,6 @@ export const Writerside: FC<WritersideProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

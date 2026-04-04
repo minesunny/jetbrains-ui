@@ -7,7 +7,6 @@ export type OperatorClassProps = SvgProps;
 const OperatorClassLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const OperatorClassLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.925 16a3.24 3.24 0 0 1-2.899-1.71 3.74 3.74 0 0 1-.429-1.79q0-.986.43-1.783.435-.803 1.195-1.26A3.24 3.24 0 0 1 12.925 9a3.6 3.6 0 0 1 1.437.274q.637.269 1.06.81.422.536.578 1.319h-1.04a2 2 0 0 0-.449-.81 1.9 1.9 0 0 0-.715-.483 2.3 2.3 0 0 0-.87-.163q-.644 0-1.158.326-.507.326-.793.908-.285.58-.286 1.319 0 .732.286 1.313.286.58.793.914.514.326 1.157.326.462 0 .871-.157.41-.163.715-.49.306-.326.449-.809H16a2.95 2.95 0 0 1-.585 1.3 2.8 2.8 0 0 1-1.08.822q-.642.28-1.41.281"
       fill="#3574F0"
@@ -44,7 +42,6 @@ const OperatorClassLight: FC<SvgProps> = ({
 const OperatorClassDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const OperatorClassDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.925 16a3.24 3.24 0 0 1-2.899-1.71 3.74 3.74 0 0 1-.429-1.79q0-.986.43-1.783.435-.803 1.195-1.26A3.24 3.24 0 0 1 12.925 9a3.6 3.6 0 0 1 1.437.274q.637.269 1.06.81.422.536.578 1.319h-1.04a2 2 0 0 0-.449-.81 1.9 1.9 0 0 0-.715-.483 2.3 2.3 0 0 0-.87-.163q-.644 0-1.158.326-.507.326-.793.908-.285.58-.286 1.319 0 .732.286 1.313.286.58.793.914.514.326 1.157.326.462 0 .871-.157.41-.163.715-.49.306-.326.449-.809H16a2.95 2.95 0 0 1-.585 1.3 2.8 2.8 0 0 1-1.08.822q-.642.28-1.41.281"
       fill="#548AF7"
@@ -83,7 +79,6 @@ export const OperatorClass: FC<OperatorClassProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -93,7 +88,6 @@ export const OperatorClass: FC<OperatorClassProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type CheckmarkListProps = SvgProps;
 const CheckmarkListLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CheckmarkListLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.773 6.288a.75.75 0 0 0-1.061-1.06L7 8.938 5.28 7.22A.75.75 0 0 0 4.22 8.28l2.25 2.25a.75.75 0 0 0 1.06 0z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const CheckmarkListLight: FC<SvgProps> = ({
 const CheckmarkListDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const CheckmarkListDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.773 6.288a.75.75 0 0 0-1.061-1.06L7 8.938 5.28 7.22A.75.75 0 0 0 4.22 8.28l2.25 2.25a.75.75 0 0 0 1.06 0z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const CheckmarkList: FC<CheckmarkListProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const CheckmarkList: FC<CheckmarkListProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

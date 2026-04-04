@@ -7,7 +7,6 @@ export type IndexClusterProps = SvgProps;
 const IndexClusterLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const IndexClusterLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M3.5 9.5v-6h4v6z" stroke="#6C707E" strokeLinejoin="round" />
     <path d="M4 5.5h3M4 7.5h3" stroke="#6C707E" />
     <path
@@ -43,7 +41,6 @@ const IndexClusterLight: FC<SvgProps> = ({
 const IndexClusterDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const IndexClusterDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M3.5 9.5v-6h4v6z" stroke="#CED0D6" strokeLinejoin="round" />
     <path d="M4 5.5h3M4 7.5h3" stroke="#CED0D6" />
     <path
@@ -81,7 +77,6 @@ export const IndexCluster: FC<IndexClusterProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? IndexClusterLight : IndexClusterDark;
@@ -90,7 +85,6 @@ export const IndexCluster: FC<IndexClusterProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

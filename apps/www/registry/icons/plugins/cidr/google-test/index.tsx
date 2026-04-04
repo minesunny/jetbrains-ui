@@ -7,7 +7,6 @@ export type GoogleTestProps = SvgProps;
 const GoogleTestLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +57,6 @@ const GoogleTestLight: React.FC<SvgProps> = ({
 const GoogleTestDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -111,7 +109,6 @@ export const GoogleTest: React.FC<GoogleTestProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? GoogleTestLight : GoogleTestDark;
@@ -120,7 +117,6 @@ export const GoogleTest: React.FC<GoogleTestProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

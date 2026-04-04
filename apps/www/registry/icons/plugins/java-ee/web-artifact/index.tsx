@@ -7,7 +7,6 @@ export type WebArtifactProps = SvgProps;
 const WebArtifactLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -76,7 +75,6 @@ const WebArtifactLight: React.FC<SvgProps> = ({
 const WebArtifactDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -147,7 +145,6 @@ export const WebArtifact: React.FC<WebArtifactProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? WebArtifactLight : WebArtifactDark;
@@ -156,7 +153,6 @@ export const WebArtifact: React.FC<WebArtifactProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

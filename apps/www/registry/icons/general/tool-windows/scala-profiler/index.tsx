@@ -7,7 +7,6 @@ export type ScalaProfilerProps = SvgProps;
 const ScalaProfilerLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ScalaProfilerLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5"
       stroke="#6C707E"
@@ -46,7 +44,6 @@ const ScalaProfilerLight: FC<SvgProps> = ({
 const ScalaProfilerDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -62,7 +59,6 @@ const ScalaProfilerDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5"
@@ -94,7 +90,6 @@ export const ScalaProfiler: FC<ScalaProfilerProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -104,7 +99,6 @@ export const ScalaProfiler: FC<ScalaProfilerProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

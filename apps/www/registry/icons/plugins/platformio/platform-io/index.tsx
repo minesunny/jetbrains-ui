@@ -7,7 +7,6 @@ export type PlatformIOProps = SvgProps;
 const PlatformIOLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +53,6 @@ const PlatformIOLight: React.FC<SvgProps> = ({
 const PlatformIODark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -103,7 +101,6 @@ export const PlatformIO: React.FC<PlatformIOProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PlatformIOLight : PlatformIODark;
@@ -112,7 +109,6 @@ export const PlatformIO: React.FC<PlatformIOProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

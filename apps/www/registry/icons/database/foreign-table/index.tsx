@@ -7,7 +7,6 @@ export type ForeignTableProps = SvgProps;
 const ForeignTableLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ForeignTableLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h6.879L11 12.879v-.964A1.5 1.5 0 0 1 11.5 9H15V4a2 2 0 0 0-2-2z"
       fill="#EBECF0"
@@ -46,7 +44,6 @@ const ForeignTableLight: FC<SvgProps> = ({
 const ForeignTableDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -62,7 +59,6 @@ const ForeignTableDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h6.879L11 12.879v-.964A1.5 1.5 0 0 1 11.5 9H15V4a2 2 0 0 0-2-2z"
       fill="#43454A"
@@ -87,7 +83,6 @@ export const ForeignTable: FC<ForeignTableProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ForeignTableLight : ForeignTableDark;
@@ -96,7 +91,6 @@ export const ForeignTable: FC<ForeignTableProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ToolWindowCheckDetailsProps = SvgProps;
 const ToolWindowCheckDetailsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowCheckDetailsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.5 2.5h3M8.5 7.5h6M5.5 12.5h9M7.5 4.5 3 9 .5 6.5"
       stroke="#6C707E"
@@ -36,7 +34,6 @@ const ToolWindowCheckDetailsLight: FC<SvgProps> = ({
 const ToolWindowCheckDetailsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const ToolWindowCheckDetailsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.5 2.5h3M8.5 7.5h6M5.5 12.5h9M7.5 4.5 3 9 .5 6.5"
       stroke="#CED0D6"
@@ -67,7 +63,6 @@ export const ToolWindowCheckDetails: FC<ToolWindowCheckDetailsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const ToolWindowCheckDetails: FC<ToolWindowCheckDetailsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

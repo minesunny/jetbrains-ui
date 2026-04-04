@@ -7,7 +7,6 @@ export type EclipseProps = SvgProps;
 const EclipseLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const EclipseLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.853 9.81H2.707q.426 1.463 1.583 2.621 1.847 1.847 4.443 1.846.518 0 1.007-.074 1.955-.295 3.423-1.771 1.165-1.159 1.595-2.622H4.853M3.67 6.895H2.547a7 7 0 0 0-.082.756H15a7 7 0 0 0-.082-.756M2.466 8.353q.02.387.082.755h12.369000000000002q.063-.368.083-.755M14.758 6.193q-.428-1.467-1.595-2.634-1.464-1.462-3.413-1.757a7 7 0 0 0-1.017-.076q-2.597 0-4.443 1.833-1.158 1.167-1.584 2.634"
       fill="#2C2255"
@@ -85,7 +83,6 @@ const EclipseLight: FC<SvgProps> = ({
 const EclipseDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -101,7 +98,6 @@ const EclipseDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.853 9.81H2.707q.426 1.463 1.583 2.622 1.847 1.845 4.443 1.845.518 0 1.007-.074 1.955-.295 3.423-1.771 1.165-1.159 1.595-2.622H4.853M3.67 6.895H2.547a7 7 0 0 0-.082.756H15a7 7 0 0 0-.082-.756M2.466 8.353q.02.387.082.755h12.369000000000002q.063-.369.083-.755M14.758 6.193q-.428-1.467-1.595-2.634-1.464-1.462-3.413-1.757a7 7 0 0 0-1.017-.076q-2.597 0-4.443 1.833-1.158 1.167-1.584 2.634"
       fill="#2C2255"
@@ -169,7 +165,6 @@ export const Eclipse: FC<EclipseProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? EclipseLight : EclipseDark;
@@ -178,7 +173,6 @@ export const Eclipse: FC<EclipseProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

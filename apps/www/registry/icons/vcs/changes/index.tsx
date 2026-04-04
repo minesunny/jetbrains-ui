@@ -7,7 +7,6 @@ export type ChangesProps = SvgProps;
 const ChangesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ChangesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="5" width="7" height="1" rx=".5" fill="#6C707E" />
     <rect x="2" y="8" width="5" height="1" rx=".5" fill="#6C707E" />
     <rect x="2" y="2" width="12" height="1" rx=".5" fill="#6C707E" />
@@ -39,7 +37,6 @@ const ChangesLight: FC<SvgProps> = ({
 const ChangesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +52,6 @@ const ChangesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="5" width="7" height="1" rx=".5" fill="#CED0D6" />
     <rect x="2" y="8" width="5" height="1" rx=".5" fill="#CED0D6" />
     <rect x="2" y="2" width="12" height="1" rx=".5" fill="#CED0D6" />
@@ -73,7 +69,6 @@ export const Changes: FC<ChangesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ChangesLight : ChangesDark;
@@ -82,7 +77,6 @@ export const Changes: FC<ChangesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

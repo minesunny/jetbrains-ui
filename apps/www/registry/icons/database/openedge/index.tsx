@@ -7,7 +7,6 @@ export type OpenedgeProps = SvgProps;
 const OpenedgeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const OpenedgeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M4.714 14.263v-3.807l-3.193 1.842z" fill="#5CE400" />
     <path
       d="M6.188 9.596V15l3.255-1.903V7.754L4.714 4.991 1.521 6.895z"
@@ -39,7 +37,6 @@ const OpenedgeLight: FC<SvgProps> = ({
 const OpenedgeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +52,6 @@ const OpenedgeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M4.714 14.263v-3.807l-3.193 1.842z" fill="#5CE400" />
     <path
       d="M6.188 9.596V15l3.255-1.903V7.754L4.714 4.991 1.521 6.895z"
@@ -73,7 +69,6 @@ export const Openedge: FC<OpenedgeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? OpenedgeLight : OpenedgeDark;
@@ -82,7 +77,6 @@ export const Openedge: FC<OpenedgeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

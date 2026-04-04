@@ -7,7 +7,6 @@ export type SharpProps = SvgProps;
 const SharpLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SharpLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.5 13.5 3-13M8.5 13.5l3-13M2 3.5h11.5M.5 10.5H12"
       stroke="#6C707E"
@@ -35,7 +33,6 @@ const SharpLight: FC<SvgProps> = ({
 const SharpDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const SharpDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.5 13.5 3-13M8.5 13.5l3-13M2 3.5h11.5M.5 10.5H12"
       stroke="#CED0D6"
@@ -65,7 +61,6 @@ export const Sharp: FC<SharpProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SharpLight : SharpDark;
@@ -74,7 +69,6 @@ export const Sharp: FC<SharpProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

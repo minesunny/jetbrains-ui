@@ -7,7 +7,6 @@ export type HtmlProps = SvgProps;
 const HtmlLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const HtmlLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6.368 4.974a.6.6 0 1 0-.737-.948L.522 8l5.11 3.974a.6.6 0 0 0 .736-.948L2.477 8zM9.631 4.974a.6.6 0 0 1 .737-.948L15.478 8l-5.11 3.974a.6.6 0 0 1-.737-.948L13.523 8z"
       fill="#369650"
@@ -34,7 +32,6 @@ const HtmlLight: FC<SvgProps> = ({
 const HtmlDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const HtmlDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6.368 4.974a.6.6 0 1 0-.737-.948L.522 8l5.11 3.974a.6.6 0 0 0 .736-.948L2.477 8zM9.631 4.974a.6.6 0 0 1 .737-.948L15.478 8l-5.11 3.974a.6.6 0 0 1-.737-.948L13.523 8z"
       fill="#57965C"
@@ -63,7 +59,6 @@ export const Html: FC<HtmlProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? HtmlLight : HtmlDark;
@@ -72,7 +67,6 @@ export const Html: FC<HtmlProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

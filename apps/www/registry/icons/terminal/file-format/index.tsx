@@ -7,7 +7,6 @@ export type FileFormatProps = SvgProps;
 const FileFormatLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FileFormatLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 5.414V13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-1.999V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414"
       fill="#EBECF0"
@@ -40,7 +38,6 @@ const FileFormatLight: FC<SvgProps> = ({
 const FileFormatDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const FileFormatDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 5.414V13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-1.999V3a2 2 0 0 0-2-2H7.414a1 1 0 0 0-.707.293L3.293 4.707A1 1 0 0 0 3 5.414"
       fill="#43454A"
@@ -75,7 +71,6 @@ export const FileFormat: FC<FileFormatProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FileFormatLight : FileFormatDark;
@@ -84,7 +79,6 @@ export const FileFormat: FC<FileFormatProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

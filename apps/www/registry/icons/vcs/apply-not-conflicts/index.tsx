@@ -7,7 +7,6 @@ export type ApplyNotConflictsProps = SvgProps;
 const ApplyNotConflictsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ApplyNotConflictsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m4.5 2.5 3 3-3 3m-4 0 3-3-3-3M11.5 13.5l-3-3 3-3m4 0-3 3 3 3"
       stroke="#6C707E"
@@ -35,7 +33,6 @@ const ApplyNotConflictsLight: FC<SvgProps> = ({
 const ApplyNotConflictsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const ApplyNotConflictsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m4.5 2.5 3 3-3 3m-4 0 3-3-3-3M11.5 13.5l-3-3 3-3m4 0-3 3 3 3"
       stroke="#CED0D6"
@@ -65,7 +61,6 @@ export const ApplyNotConflicts: FC<ApplyNotConflictsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -75,7 +70,6 @@ export const ApplyNotConflicts: FC<ApplyNotConflictsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

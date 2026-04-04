@@ -7,7 +7,6 @@ export type InformixProps = SvgProps;
 const InformixLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const InformixLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.783 1.393a1.5 1.5 0 0 0-1.566 0L2.746 4.128a1.5 1.5 0 0 0-.718 1.28v5.102a1.5 1.5 0 0 0 .798 1.325l4.471 2.371a1.5 1.5 0 0 0 1.346.03l4.494-2.133a.5.5 0 0 0-.43-.904l-4.493 2.134a.5.5 0 0 1-.448-.01l-4.472-2.371a.5.5 0 0 1-.266-.442V5.407a.5.5 0 0 1 .24-.426l4.47-2.735a.5.5 0 0 1 .522 0l4.528 2.772a.5.5 0 0 1 .24.427V7.24h-.182a.2.2 0 0 0-.179.29l.677 1.352a.2.2 0 0 0 .357 0l.677-1.352a.2.2 0 0 0-.179-.29h-.172V5.445a1.5 1.5 0 0 0-.717-1.28z"
       fill="#DB5860"
@@ -50,7 +48,6 @@ const InformixLight: FC<SvgProps> = ({
 const InformixDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -66,7 +63,6 @@ const InformixDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.783 1.393a1.5 1.5 0 0 0-1.566 0L2.746 4.128a1.5 1.5 0 0 0-.718 1.28v5.102a1.5 1.5 0 0 0 .798 1.325l4.471 2.371a1.5 1.5 0 0 0 1.346.03l4.494-2.133a.5.5 0 0 0-.43-.904l-4.493 2.134a.5.5 0 0 1-.448-.01l-4.472-2.371a.5.5 0 0 1-.266-.442V5.407a.5.5 0 0 1 .24-.426l4.47-2.735a.5.5 0 0 1 .522 0l4.528 2.772a.5.5 0 0 1 .24.427V7.24h-.182a.2.2 0 0 0-.179.29l.677 1.352a.2.2 0 0 0 .357 0l.677-1.352a.2.2 0 0 0-.179-.29h-.172V5.445a1.5 1.5 0 0 0-.717-1.28z"
       fill="#DB5860"
@@ -95,7 +91,6 @@ export const Informix: FC<InformixProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? InformixLight : InformixDark;
@@ -104,7 +99,6 @@ export const Informix: FC<InformixProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

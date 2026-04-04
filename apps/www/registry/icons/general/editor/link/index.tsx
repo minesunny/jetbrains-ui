@@ -7,7 +7,6 @@ export type LinkProps = SvgProps;
 const LinkLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const LinkLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.097 3.197a4.036 4.036 0 0 1 5.707 5.707l-.951.95a.5.5 0 0 1-.707-.707l.95-.95a3.035 3.035 0 0 0-4.292-4.293l-.951.95a.5.5 0 1 1-.707-.707zM4.853 6.147a.5.5 0 0 1 0 .707l-.95.95a3.036 3.036 0 1 0 4.294 4.292l.95-.95a.5.5 0 1 1 .707.708l-.95.95a4.036 4.036 0 1 1-5.707-5.708l.949-.949a.5.5 0 0 1 .707 0"
       fill="#6C707E"
@@ -38,7 +36,6 @@ const LinkLight: FC<SvgProps> = ({
 const LinkDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const LinkDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.097 3.197a4.036 4.036 0 0 1 5.707 5.707l-.951.95a.5.5 0 0 1-.707-.707l.95-.95a3.035 3.035 0 0 0-4.292-4.293l-.951.95a.5.5 0 1 1-.707-.707zM4.853 6.147a.5.5 0 0 1 0 .707l-.95.95a3.036 3.036 0 1 0 4.294 4.292l.95-.95a.5.5 0 1 1 .707.708l-.95.95a4.036 4.036 0 1 1-5.707-5.708l.949-.949a.5.5 0 0 1 .707 0"
       fill="#CED0D6"
@@ -71,7 +67,6 @@ export const Link: FC<LinkProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? LinkLight : LinkDark;
@@ -80,7 +75,6 @@ export const Link: FC<LinkProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

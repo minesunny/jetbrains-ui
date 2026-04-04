@@ -7,7 +7,6 @@ export type DocumentDBProps = SvgProps;
 const DocumentDBLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DocumentDBLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.34 2.352c-.266.235-.34.428-.34.566 0 .143.078.348.35.6.27.25.687.503 1.24.729C4.695 4.697 6.252 5 7.993 5s3.298-.303 4.402-.753c.554-.226.97-.479 1.24-.729.272-.252.35-.457.35-.6 0-.138-.073-.33-.34-.566s-.681-.469-1.236-.675C11.303 1.265 9.742 1 7.993 1s-3.31.265-4.417.677c-.555.206-.969.44-1.235.675"
       fill="url(#a)"
@@ -122,7 +120,6 @@ const DocumentDBLight: FC<SvgProps> = ({
 const DocumentDBDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -138,7 +135,6 @@ const DocumentDBDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.34 2.352c-.266.235-.34.428-.34.566 0 .143.078.348.35.6.27.25.687.503 1.24.729C4.695 4.697 6.252 5 7.993 5s3.298-.303 4.402-.753c.554-.226.97-.479 1.24-.729.272-.252.35-.457.35-.6 0-.138-.073-.33-.34-.566s-.681-.469-1.236-.675C11.303 1.265 9.742 1 7.993 1s-3.31.265-4.417.677c-.555.206-.969.44-1.235.675"
       fill="url(#a)"
@@ -239,7 +235,6 @@ export const DocumentDB: FC<DocumentDBProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DocumentDBLight : DocumentDBDark;
@@ -248,7 +243,6 @@ export const DocumentDB: FC<DocumentDBProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

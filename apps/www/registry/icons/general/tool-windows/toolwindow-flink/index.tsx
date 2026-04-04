@@ -7,7 +7,6 @@ export type ToolwindowFlinkProps = SvgProps;
 const ToolwindowFlinkLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolwindowFlinkLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6 1h3v1H6zM6 3H5V2h1zM6 4V3h1v1zM5 5V4h1v1zM4 6V5h1v1zM3 7V6h1v1zM2 9V7h1v2zM2 13H1V9h1zM3 14H2v-1h1z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const ToolwindowFlinkLight: FC<SvgProps> = ({
 const ToolwindowFlinkDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ToolwindowFlinkDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6 1h3v1H6zM6 3H5V2h1zM6 4V3h1v1zM5 5V4h1v1zM4 6V5h1v1zM3 7V6h1v1zM2 9V7h1v2zM2 13H1V9h1zM3 14H2v-1h1z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const ToolwindowFlink: FC<ToolwindowFlinkProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const ToolwindowFlink: FC<ToolwindowFlinkProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

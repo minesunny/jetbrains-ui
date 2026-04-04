@@ -7,7 +7,6 @@ export type MinimizeSmallProps = SvgProps;
 const MinimizeSmallLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MinimizeSmallLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#A8ADBD" d="M4 12H12V13H4z" />
   </svg>
 );
@@ -31,7 +29,6 @@ const MinimizeSmallLight: FC<SvgProps> = ({
 const MinimizeSmallDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +44,6 @@ const MinimizeSmallDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#CED0D6" d="M4 12H12V13H4z" />
   </svg>
 );
@@ -57,7 +53,6 @@ export const MinimizeSmall: FC<MinimizeSmallProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -67,7 +62,6 @@ export const MinimizeSmall: FC<MinimizeSmallProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

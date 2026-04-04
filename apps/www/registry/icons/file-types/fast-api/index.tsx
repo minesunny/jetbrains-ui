@@ -7,7 +7,6 @@ export type FastAPIProps = SvgProps;
 const FastAPILight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FastAPILight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="7" fill="#019486" />
     <path d="M7.5 4 4 12l7-5H8l4-3z" fill="#fff" />
   </svg>
@@ -32,7 +30,6 @@ const FastAPILight: FC<SvgProps> = ({
 const FastAPIDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +45,6 @@ const FastAPIDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="7" fill="#019486" />
     <path d="M7.5 4 4 12l7-5H8l4-3z" fill="#fff" />
   </svg>
@@ -59,7 +55,6 @@ export const FastAPI: FC<FastAPIProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FastAPILight : FastAPIDark;
@@ -68,7 +63,6 @@ export const FastAPI: FC<FastAPIProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

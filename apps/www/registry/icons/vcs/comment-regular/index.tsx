@@ -7,7 +7,6 @@ export type CommentRegularProps = SvgProps;
 const CommentRegularLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CommentRegularLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4 2.5h8A1.5 1.5 0 0 1 13.5 4v9.96l-4.187-3.35A.5.5 0 0 0 9 10.5H4A1.5 1.5 0 0 1 2.5 9V4A1.5 1.5 0 0 1 4 2.5Z"
       fill="#EBECF0"
@@ -36,7 +34,6 @@ const CommentRegularLight: FC<SvgProps> = ({
 const CommentRegularDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const CommentRegularDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4 2.5h8A1.5 1.5 0 0 1 13.5 4v9.96l-4.187-3.35A.5.5 0 0 0 9 10.5H4A1.5 1.5 0 0 1 2.5 9V4A1.5 1.5 0 0 1 4 2.5Z"
       fill="#43454A"
@@ -67,7 +63,6 @@ export const CommentRegular: FC<CommentRegularProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const CommentRegular: FC<CommentRegularProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

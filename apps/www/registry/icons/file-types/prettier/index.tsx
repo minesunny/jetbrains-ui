@@ -7,7 +7,6 @@ export type PrettierProps = SvgProps;
 const PrettierLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PrettierLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="3" y="2" width="8" height="1" rx=".5" fill="#588CF3" />
     <rect x="3" y="4" width="5" height="1" rx=".5" fill="#588CF3" />
     <rect x="3" y="6" width="3" height="1" rx=".5" fill="#834DF0" />
@@ -43,7 +41,6 @@ const PrettierLight: FC<SvgProps> = ({
 const PrettierDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const PrettierDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="3" y="2" width="8" height="1" rx=".5" fill="#548AF7" />
     <rect x="3" y="4" width="5" height="1" rx=".5" fill="#548AF7" />
     <rect x="3" y="6" width="3" height="1" rx=".5" fill="#A571E6" />
@@ -81,7 +77,6 @@ export const Prettier: FC<PrettierProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PrettierLight : PrettierDark;
@@ -90,7 +85,6 @@ export const Prettier: FC<PrettierProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type AliasFactoryProps = SvgProps;
 const AliasFactoryLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +50,6 @@ const AliasFactoryLight: React.FC<SvgProps> = ({
 const AliasFactoryDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -97,7 +95,6 @@ export const AliasFactory: React.FC<AliasFactoryProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AliasFactoryLight : AliasFactoryDark;
@@ -106,7 +103,6 @@ export const AliasFactory: React.FC<AliasFactoryProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type WarningIntroductionProps = SvgProps;
 const WarningIntroductionLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const WarningIntroductionLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.566 1.768a.5.5 0 0 1 .869 0l6.276 10.984a.5.5 0 0 1-.435.748H1.724a.5.5 0 0 1-.435-.748z"
       fill="#FFFAEB"
@@ -39,7 +37,6 @@ const WarningIntroductionLight: FC<SvgProps> = ({
 const WarningIntroductionDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +52,6 @@ const WarningIntroductionDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.566 1.768a.5.5 0 0 1 .869 0l6.276 10.984a.5.5 0 0 1-.435.748H1.724a.5.5 0 0 1-.435-.748z"
       fill="#3D3223"
@@ -73,7 +69,6 @@ export const WarningIntroduction: FC<WarningIntroductionProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -83,7 +78,6 @@ export const WarningIntroduction: FC<WarningIntroductionProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

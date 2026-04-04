@@ -7,7 +7,6 @@ export type ControllerNodeProps = SvgProps;
 const ControllerNodeLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +55,6 @@ const ControllerNodeLight: React.FC<SvgProps> = ({
 const ControllerNodeDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -107,7 +105,6 @@ export const ControllerNode: React.FC<ControllerNodeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -117,7 +114,6 @@ export const ControllerNode: React.FC<ControllerNodeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

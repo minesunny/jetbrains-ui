@@ -7,7 +7,6 @@ export type AddNamedQueryProps = SvgProps;
 const AddNamedQueryLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -49,7 +48,6 @@ const AddNamedQueryLight: React.FC<SvgProps> = ({
 const AddNamedQueryDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -93,7 +91,6 @@ export const AddNamedQuery: React.FC<AddNamedQueryProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -103,7 +100,6 @@ export const AddNamedQuery: React.FC<AddNamedQueryProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

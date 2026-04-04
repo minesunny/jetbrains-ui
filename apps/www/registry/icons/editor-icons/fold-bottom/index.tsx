@@ -7,7 +7,6 @@ export type FoldBottomProps = SvgProps;
 const FoldBottomLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FoldBottomLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="m9 7.25-3.5-3.5L2 7.25" stroke="#A8ADBD" strokeLinecap="round" />
   </svg>
 );
@@ -31,7 +29,6 @@ const FoldBottomLight: FC<SvgProps> = ({
 const FoldBottomDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +44,6 @@ const FoldBottomDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="m9 7.25-3.5-3.5L2 7.25" stroke="#6F737A" strokeLinecap="round" />
   </svg>
 );
@@ -57,7 +53,6 @@ export const FoldBottom: FC<FoldBottomProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FoldBottomLight : FoldBottomDark;
@@ -66,7 +61,6 @@ export const FoldBottom: FC<FoldBottomProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

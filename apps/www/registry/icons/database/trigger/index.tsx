@@ -7,7 +7,6 @@ export type TriggerProps = SvgProps;
 const TriggerLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TriggerLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.5 13.5h2v-11h-2zM6.37 13.088l1.932.518 2.33-8.694-1.933-.517z"
       stroke="#6C707E"
@@ -40,7 +38,6 @@ const TriggerLight: FC<SvgProps> = ({
 const TriggerDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const TriggerDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.5 13.5h2v-11h-2zM6.37 13.088l1.932.518 2.33-8.694-1.933-.517z"
       stroke="#CED0D6"
@@ -75,7 +71,6 @@ export const Trigger: FC<TriggerProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TriggerLight : TriggerDark;
@@ -84,7 +79,6 @@ export const Trigger: FC<TriggerProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

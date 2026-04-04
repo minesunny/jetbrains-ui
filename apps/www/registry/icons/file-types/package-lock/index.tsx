@@ -7,7 +7,6 @@ export type PackageLockProps = SvgProps;
 const PackageLockLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PackageLockLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path d="M1 15V1h14v14z" fill="#C12127" />
       <path d="M3 3h10v10h-2V5H8v8H3z" fill="#fff" />
@@ -39,7 +37,6 @@ const PackageLockLight: FC<SvgProps> = ({
 const PackageLockDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +52,6 @@ const PackageLockDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path d="M1 15V1h14v14z" fill="#C12127" />
       <path d="M3 3h10v10h-2V5H8v8H3z" fill="#fff" />
@@ -73,7 +69,6 @@ export const PackageLock: FC<PackageLockProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PackageLockLight : PackageLockDark;
@@ -82,7 +77,6 @@ export const PackageLock: FC<PackageLockProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

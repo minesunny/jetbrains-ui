@@ -7,7 +7,6 @@ export type NextJSProps = SvgProps;
 const NextJSLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const NextJSLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11 4.5a.5.5 0 0 0-1 0v4.396l.993 1.604H11z" fill="#000" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const NextJSLight: FC<SvgProps> = ({
 const NextJSDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const NextJSDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11 4.5a.5.5 0 0 0-1 0v4.396l.993 1.604H11z" fill="#fff" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const NextJS: FC<NextJSProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? NextJSLight : NextJSDark;
@@ -78,7 +73,6 @@ export const NextJS: FC<NextJSProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

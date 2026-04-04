@@ -7,7 +7,6 @@ export type SqliteProps = SvgProps;
 const SqliteLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SqliteLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.83 1.62H3.067A1.07 1.07 0 0 0 2 2.687v9.663c0 .587.48 1.067 1.068 1.067h5.77c-.065-2.871.915-8.443 2.991-11.797"
       fill="#0F80CC"
@@ -38,7 +36,6 @@ const SqliteLight: FC<SvgProps> = ({
 const SqliteDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const SqliteDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.83 1.62H3.067A1.07 1.07 0 0 0 2 2.687v9.663c0 .587.48 1.067 1.068 1.067h5.77c-.065-2.871.915-8.443 2.991-11.797"
       fill="#0F80CC"
@@ -71,7 +67,6 @@ export const Sqlite: FC<SqliteProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SqliteLight : SqliteDark;
@@ -80,7 +75,6 @@ export const Sqlite: FC<SqliteProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

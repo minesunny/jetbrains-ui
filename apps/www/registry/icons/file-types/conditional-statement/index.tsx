@@ -7,7 +7,6 @@ export type ConditionalStatementProps = SvgProps;
 const ConditionalStatementLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ConditionalStatementLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 10.5v3h3M13.5 10.5v3h-3"
       stroke="#6C707E"
@@ -43,7 +41,6 @@ const ConditionalStatementLight: FC<SvgProps> = ({
 const ConditionalStatementDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const ConditionalStatementDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 10.5v3h3M13.5 10.5v3h-3"
       stroke="#CED0D6"
@@ -81,7 +77,6 @@ export const ConditionalStatement: FC<ConditionalStatementProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -91,7 +86,6 @@ export const ConditionalStatement: FC<ConditionalStatementProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

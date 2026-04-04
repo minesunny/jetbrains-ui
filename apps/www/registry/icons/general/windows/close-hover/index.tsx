@@ -7,7 +7,6 @@ export type CloseHoverProps = SvgProps;
 const CloseHoverLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CloseHoverLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       transform="rotate(45 3.758 3.05)"
       fill="#fff"
@@ -40,7 +38,6 @@ const CloseHoverLight: FC<SvgProps> = ({
 const CloseHoverDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const CloseHoverDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       transform="rotate(45 3.758 3.05)"
       fill="#fff"
@@ -75,7 +71,6 @@ export const CloseHover: FC<CloseHoverProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CloseHoverLight : CloseHoverDark;
@@ -84,7 +79,6 @@ export const CloseHover: FC<CloseHoverProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

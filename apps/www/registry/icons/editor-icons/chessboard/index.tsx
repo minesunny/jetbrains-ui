@@ -7,7 +7,6 @@ export type ChessboardProps = SvgProps;
 const ChessboardLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ChessboardLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path stroke="#6C707E" d="M2.5 2.5H5.5V5.5H2.5z" />
     <path stroke="#6C707E" d="M2.5 10.5H5.5V13.5H2.5z" />
     <path stroke="#6C707E" d="M6.5 6.5H9.5V9.5H6.5z" />
@@ -35,7 +33,6 @@ const ChessboardLight: FC<SvgProps> = ({
 const ChessboardDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const ChessboardDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path stroke="#CED0D6" d="M2.5 2.5H5.5V5.5H2.5z" />
     <path stroke="#CED0D6" d="M2.5 10.5H5.5V13.5H2.5z" />
     <path stroke="#CED0D6" d="M6.5 6.5H9.5V9.5H6.5z" />
@@ -65,7 +61,6 @@ export const Chessboard: FC<ChessboardProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ChessboardLight : ChessboardDark;
@@ -74,7 +69,6 @@ export const Chessboard: FC<ChessboardProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

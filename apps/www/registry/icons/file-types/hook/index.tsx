@@ -7,7 +7,6 @@ export type HookProps = SvgProps;
 const HookLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const HookLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.5 3.5V10a4.5 4.5 0 1 1-9 0V7.5l2 2"
       stroke="#6C707E"
@@ -37,7 +35,6 @@ const HookLight: FC<SvgProps> = ({
 const HookDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const HookDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.5 3.5V10a4.5 4.5 0 1 1-9 0V7.5l2 2"
       stroke="#CED0D6"
@@ -69,7 +65,6 @@ export const Hook: FC<HookProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? HookLight : HookDark;
@@ -78,7 +73,6 @@ export const Hook: FC<HookProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

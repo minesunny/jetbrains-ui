@@ -7,7 +7,6 @@ export type FlinkProps = SvgProps;
 const FlinkLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -92,7 +91,6 @@ const FlinkLight: React.FC<SvgProps> = ({
 const FlinkDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -179,7 +177,6 @@ export const Flink: React.FC<FlinkProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FlinkLight : FlinkDark;
@@ -188,7 +185,6 @@ export const Flink: React.FC<FlinkProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

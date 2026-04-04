@@ -7,7 +7,6 @@ export type CMakeProps = SvgProps;
 const CMakeLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -78,7 +77,6 @@ const CMakeLight: React.FC<SvgProps> = ({
 const CMakeDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -151,7 +149,6 @@ export const CMake: React.FC<CMakeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CMakeLight : CMakeDark;
@@ -160,7 +157,6 @@ export const CMake: React.FC<CMakeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

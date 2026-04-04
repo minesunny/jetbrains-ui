@@ -7,7 +7,6 @@ export type ConfigFileProps = SvgProps;
 const ConfigFileLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ConfigFileLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11.998 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -49,7 +47,6 @@ const ConfigFileLight: FC<SvgProps> = ({
 const ConfigFileDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -65,7 +62,6 @@ const ConfigFileDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11.998 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#CED0D6" />
     <path
       fillRule="evenodd"
@@ -93,7 +89,6 @@ export const ConfigFile: FC<ConfigFileProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ConfigFileLight : ConfigFileDark;
@@ -102,7 +97,6 @@ export const ConfigFile: FC<ConfigFileProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

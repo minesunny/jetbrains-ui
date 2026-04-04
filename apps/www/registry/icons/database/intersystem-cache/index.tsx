@@ -7,7 +7,6 @@ export type IntersystemCacheProps = SvgProps;
 const IntersystemCacheLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const IntersystemCacheLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.01 2.283 5 1.264v12.68l3.99 2.009v-2.236l-1.98-.99z"
       fill="#2E2A94"
@@ -38,7 +36,6 @@ const IntersystemCacheLight: FC<SvgProps> = ({
 const IntersystemCacheDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const IntersystemCacheDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.01 2.283 5 1.264v12.68l3.99 2.009v-2.236l-1.98-.99z"
       fill="#4387FB"
@@ -71,7 +67,6 @@ export const IntersystemCache: FC<IntersystemCacheProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +76,6 @@ export const IntersystemCache: FC<IntersystemCacheProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

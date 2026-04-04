@@ -7,7 +7,6 @@ export type ThreadFrozenProps = SvgProps;
 const ThreadFrozenLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ThreadFrozenLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" stroke="#6C707E">
       <rect x="3.5" y="2.5" width="3" height="11" rx=".5" />
       <rect x="9.5" y="2.5" width="3" height="11" rx=".5" />
@@ -39,7 +37,6 @@ const ThreadFrozenLight: FC<SvgProps> = ({
 const ThreadFrozenDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +52,6 @@ const ThreadFrozenDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" stroke="#CED0D6">
       <rect x="3.5" y="2.5" width="3" height="11" rx=".5" />
       <rect x="9.5" y="2.5" width="3" height="11" rx=".5" />
@@ -73,7 +69,6 @@ export const ThreadFrozen: FC<ThreadFrozenProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ThreadFrozenLight : ThreadFrozenDark;
@@ -82,7 +77,6 @@ export const ThreadFrozen: FC<ThreadFrozenProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

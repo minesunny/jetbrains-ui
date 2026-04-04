@@ -7,7 +7,6 @@ export type SequenceProps = SvgProps;
 const SequenceLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SequenceLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.709 6.678H1.293v-.71h.77a.95.95 0 0 0 .467-.11.77.77 0 0 0 .306-.32q.105-.207.106-.488h.625V11h-.859zm2.566 3.616 2.427-2.23q.348-.324.505-.621.162-.302.162-.638 0-.318-.145-.565a1 1 0 0 0-.408-.383 1.3 1.3 0 0 0-.599-.136q-.36 0-.646.158a1.13 1.13 0 0 0-.442.429 1.26 1.26 0 0 0-.157.633h-.863q0-.57.276-1.02.277-.454.761-.714a2.3 2.3 0 0 1 1.088-.259q.57 0 1.029.234.463.234.722.641.264.409.264.918 0 .489-.255.944-.255.45-.804.948l-1.708 1.585h2.932V11h-4.14zm7.155.808a2.5 2.5 0 0 1-1.088-.23 1.9 1.9 0 0 1-.77-.637 1.7 1.7 0 0 1-.301-.935h.87q.022.306.196.544t.464.374.637.136q.375 0 .667-.149.294-.153.46-.42.165-.273.165-.608 0-.345-.17-.617a1.14 1.14 0 0 0-.463-.425 1.46 1.46 0 0 0-.676-.152h-.684v-.668l1.61-1.521h-2.75V5.05h3.8v.68L12.43 7.574v-.276q.628-.012 1.122.226.497.237.777.675.28.434.28.995 0 .552-.28.986a1.9 1.9 0 0 1-.777.68 2.5 2.5 0 0 1-1.122.242"
       fill="#6C707E"
@@ -35,7 +33,6 @@ const SequenceLight: FC<SvgProps> = ({
 const SequenceDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const SequenceDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.709 6.678H1.293v-.71h.77a.95.95 0 0 0 .467-.11.77.77 0 0 0 .306-.32q.105-.207.106-.488h.625V11h-.859zm2.566 3.616 2.427-2.23q.348-.324.505-.621.162-.302.162-.638 0-.318-.145-.565a1 1 0 0 0-.408-.383 1.3 1.3 0 0 0-.599-.136q-.36 0-.646.158a1.13 1.13 0 0 0-.442.429 1.26 1.26 0 0 0-.157.633h-.863q0-.57.276-1.02.277-.454.761-.714a2.3 2.3 0 0 1 1.088-.259q.57 0 1.029.234.463.234.722.641.264.409.264.918 0 .489-.255.944-.255.45-.804.948l-1.708 1.585h2.932V11h-4.14zm7.155.808a2.5 2.5 0 0 1-1.088-.23 1.9 1.9 0 0 1-.77-.637 1.7 1.7 0 0 1-.301-.935h.87q.022.306.196.544t.464.374.637.136q.375 0 .667-.149.294-.153.46-.42.165-.273.165-.608 0-.345-.17-.617a1.14 1.14 0 0 0-.463-.425 1.46 1.46 0 0 0-.676-.152h-.684v-.668l1.61-1.521h-2.75V5.05h3.8v.68L12.43 7.574v-.276q.628-.012 1.122.226.497.237.777.675.28.434.28.995 0 .552-.28.986a1.9 1.9 0 0 1-.777.68 2.5 2.5 0 0 1-1.122.242"
       fill="#CED0D6"
@@ -65,7 +61,6 @@ export const Sequence: FC<SequenceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SequenceLight : SequenceDark;
@@ -74,7 +69,6 @@ export const Sequence: FC<SequenceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

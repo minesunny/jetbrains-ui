@@ -7,7 +7,6 @@ export type AccessPublicProps = SvgProps;
 const AccessPublicLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AccessPublicLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#F2FCF3" d="M6 8H10V11H6z" />
     <path
       d="M9.5 7V6a1.5 1.5 0 0 1 3 0v1.5M6 7.5h4a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5"
@@ -37,7 +35,6 @@ const AccessPublicLight: FC<SvgProps> = ({
 const AccessPublicDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const AccessPublicDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#253627" d="M6 8H10V11H6z" />
     <path
       d="M9.5 7V6a1.5 1.5 0 0 1 3 0v1.5M6 7.5h4a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5"
@@ -69,7 +65,6 @@ export const AccessPublic: FC<AccessPublicProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AccessPublicLight : AccessPublicDark;
@@ -78,7 +73,6 @@ export const AccessPublic: FC<AccessPublicProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

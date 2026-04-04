@@ -7,7 +7,6 @@ export type RerunProps = SvgProps;
 const RerunLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RerunLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.356 6.26a1 1 0 0 1 0 1.512L3.158 12.27a1 1 0 0 1-1.655-.756V2.516a1 1 0 0 1 1.655-.756z"
       fill="#F2FCF3"
@@ -45,7 +43,6 @@ const RerunLight: FC<SvgProps> = ({
 const RerunDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const RerunDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.356 6.26a1 1 0 0 1 0 1.512L3.158 12.27a1 1 0 0 1-1.655-.756V2.516a1 1 0 0 1 1.655-.756z"
       fill="#253627"
@@ -85,7 +81,6 @@ export const Rerun: FC<RerunProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RerunLight : RerunDark;
@@ -94,7 +89,6 @@ export const Rerun: FC<RerunProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

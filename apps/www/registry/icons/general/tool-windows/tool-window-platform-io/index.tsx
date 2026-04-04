@@ -7,7 +7,6 @@ export type ToolWindowPlatformIOProps = SvgProps;
 const ToolWindowPlatformIOLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowPlatformIOLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5.115 8.177a.745.745 0 1 0 .77.744.76.76 0 0 0-.77-.744M10.996 8.154a.745.745 0 1 0 .77.745.76.76 0 0 0-.77-.745"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const ToolWindowPlatformIOLight: FC<SvgProps> = ({
 const ToolWindowPlatformIODark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ToolWindowPlatformIODark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5.115 8.177a.745.745 0 1 0 .77.744.76.76 0 0 0-.77-.744M10.996 8.154a.745.745 0 1 0 .77.745.76.76 0 0 0-.77-.745"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const ToolWindowPlatformIO: FC<ToolWindowPlatformIOProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const ToolWindowPlatformIO: FC<ToolWindowPlatformIOProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

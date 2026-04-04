@@ -7,7 +7,6 @@ export type GridProps = SvgProps;
 const GridLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const GridLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="11" y="2" width="1" height="12" rx=".5" fill="#6C707E" />
     <rect
       x="14"
@@ -50,7 +48,6 @@ const GridLight: FC<SvgProps> = ({
 const GridDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -66,7 +63,6 @@ const GridDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="11" y="2" width="1" height="12" rx=".5" fill="#CED0D6" />
     <rect
       x="14"
@@ -95,7 +91,6 @@ export const Grid: FC<GridProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? GridLight : GridDark;
@@ -104,7 +99,6 @@ export const Grid: FC<GridProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

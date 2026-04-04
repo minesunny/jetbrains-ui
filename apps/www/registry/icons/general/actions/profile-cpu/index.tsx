@@ -7,7 +7,6 @@ export type ProfileCPUProps = SvgProps;
 const ProfileCPULight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ProfileCPULight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11.5 11a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -45,7 +43,6 @@ const ProfileCPULight: FC<SvgProps> = ({
 const ProfileCPUDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const ProfileCPUDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11.5 11a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" fill="#CED0D6" />
     <path
       fillRule="evenodd"
@@ -85,7 +81,6 @@ export const ProfileCPU: FC<ProfileCPUProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ProfileCPULight : ProfileCPUDark;
@@ -94,7 +89,6 @@ export const ProfileCPU: FC<ProfileCPUProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

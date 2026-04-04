@@ -7,7 +7,6 @@ export type SuccessDialogProps = SvgProps;
 const SuccessDialogLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SuccessDialogLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="14" cy="14" r="12" fill="#55A76A" />
     <path
       d="M20 10.5 12.5 18l-4-4"
@@ -38,7 +36,6 @@ const SuccessDialogLight: FC<SvgProps> = ({
 const SuccessDialogDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const SuccessDialogDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <circle cx="14" cy="14" r="12" fill="#57965C" />
       <path
@@ -78,7 +74,6 @@ export const SuccessDialog: FC<SuccessDialogProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -88,7 +83,6 @@ export const SuccessDialog: FC<SuccessDialogProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

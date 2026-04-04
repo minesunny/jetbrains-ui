@@ -7,7 +7,6 @@ export type JrubyProps = SvgProps;
 const JrubyLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +51,6 @@ const JrubyLight: React.FC<SvgProps> = ({
 const JrubyDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -99,7 +97,6 @@ export const Jruby: React.FC<JrubyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? JrubyLight : JrubyDark;
@@ -108,7 +105,6 @@ export const Jruby: React.FC<JrubyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

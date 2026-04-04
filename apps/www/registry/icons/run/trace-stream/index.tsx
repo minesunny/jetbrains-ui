@@ -7,7 +7,6 @@ export type TraceStreamProps = SvgProps;
 const TraceStreamLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TraceStreamLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="3" width="4" height="1" rx=".5" fill="#6C707E" />
     <rect x="10" y="7.5" width="4" height="1" rx=".5" fill="#6C707E" />
     <rect x="10" y="12" width="4" height="1" rx=".5" fill="#6C707E" />
@@ -39,7 +37,6 @@ const TraceStreamLight: FC<SvgProps> = ({
 const TraceStreamDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +52,6 @@ const TraceStreamDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="3" width="4" height="1" rx=".5" fill="#CED0D6" />
     <rect x="10" y="7.5" width="4" height="1" rx=".5" fill="#CED0D6" />
     <rect x="10" y="12" width="4" height="1" rx=".5" fill="#CED0D6" />
@@ -73,7 +69,6 @@ export const TraceStream: FC<TraceStreamProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TraceStreamLight : TraceStreamDark;
@@ -82,7 +77,6 @@ export const TraceStream: FC<TraceStreamProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

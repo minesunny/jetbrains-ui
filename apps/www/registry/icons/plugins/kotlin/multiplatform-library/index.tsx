@@ -7,7 +7,6 @@ export type MultiplatformLibraryProps = SvgProps;
 const MultiplatformLibraryLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -45,7 +44,6 @@ const MultiplatformLibraryLight: React.FC<SvgProps> = ({
 const MultiplatformLibraryDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -85,7 +83,6 @@ export const MultiplatformLibrary: React.FC<MultiplatformLibraryProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -95,7 +92,6 @@ export const MultiplatformLibrary: React.FC<MultiplatformLibraryProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

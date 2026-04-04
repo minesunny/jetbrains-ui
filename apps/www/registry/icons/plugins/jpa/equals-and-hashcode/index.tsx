@@ -7,7 +7,6 @@ export type EqualsAndHashcodeProps = SvgProps;
 const EqualsAndHashcodeLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +52,6 @@ const EqualsAndHashcodeLight: React.FC<SvgProps> = ({
 const EqualsAndHashcodeDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -101,7 +99,6 @@ export const EqualsAndHashcode: React.FC<EqualsAndHashcodeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -111,7 +108,6 @@ export const EqualsAndHashcode: React.FC<EqualsAndHashcodeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ScalaConsoleProps = SvgProps;
 const ScalaConsoleLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const ScalaConsoleLight: React.FC<SvgProps> = ({
 const ScalaConsoleDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -79,7 +77,6 @@ export const ScalaConsole: React.FC<ScalaConsoleProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ScalaConsoleLight : ScalaConsoleDark;
@@ -88,7 +85,6 @@ export const ScalaConsole: React.FC<ScalaConsoleProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

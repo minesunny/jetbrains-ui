@@ -7,7 +7,6 @@ export type ChartBubbleProps = SvgProps;
 const ChartBubbleLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -37,7 +36,6 @@ const ChartBubbleLight: React.FC<SvgProps> = ({
 const ChartBubbleDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -69,7 +67,6 @@ export const ChartBubble: React.FC<ChartBubbleProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ChartBubbleLight : ChartBubbleDark;
@@ -78,7 +75,6 @@ export const ChartBubble: React.FC<ChartBubbleProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type TabAlertProps = SvgProps;
 const TabAlertLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TabAlertLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M9 12.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0" fill="#E66D17" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const TabAlertLight: FC<SvgProps> = ({
 const TabAlertDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const TabAlertDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M9 12.5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0" fill="#F2C55C" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const TabAlert: FC<TabAlertProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TabAlertLight : TabAlertDark;
@@ -78,7 +73,6 @@ export const TabAlert: FC<TabAlertProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

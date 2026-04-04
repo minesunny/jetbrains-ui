@@ -7,7 +7,6 @@ export type BuildServerProtocolLoadChangesProps = SvgProps;
 const BuildServerProtocolLoadChangesLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -49,7 +48,6 @@ const BuildServerProtocolLoadChangesLight: React.FC<SvgProps> = ({
 const BuildServerProtocolLoadChangesDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -95,7 +93,6 @@ export const BuildServerProtocolLoadChanges: React.FC<
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -107,7 +104,6 @@ export const BuildServerProtocolLoadChanges: React.FC<
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type AccessMethodProps = SvgProps;
 const AccessMethodLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AccessMethodLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.43 4.98H8.49L10.758 11H9.756l-.53-1.484H6.75L6.26 11H5.236zm1.522 3.75-.903-2.507-.095-.374-.095.374-.855 2.507z"
       fill="#6C707E"
@@ -47,7 +45,6 @@ const AccessMethodLight: FC<SvgProps> = ({
 const AccessMethodDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +60,6 @@ const AccessMethodDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.43 4.98H8.49L10.758 11H9.756l-.53-1.484H6.75L6.26 11H5.236zm1.522 3.75-.903-2.507-.095-.374-.095.374-.855 2.507z"
       fill="#CED0D6"
@@ -89,7 +85,6 @@ export const AccessMethod: FC<AccessMethodProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AccessMethodLight : AccessMethodDark;
@@ -98,7 +93,6 @@ export const AccessMethod: FC<AccessMethodProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

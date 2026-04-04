@@ -7,7 +7,6 @@ export type CassandraProps = SvgProps;
 const CassandraLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CassandraLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g opacity=".8" fill="#BBE6FB">
       <path d="M3.279 6.698c-.366.394-.562.83-.537 1.28.044.798.777 1.467 1.897 1.875q.427.124.862.22.284.06.572.1.27.038.545.063l.103.01a7.306 7.306 0 0 0 1.439-.028h.004a7.7 7.7 0 0 0 1.975-.463 5.8 5.8 0 0 0 1.366-.733 4.7 4.7 0 0 0 .944-.912q.268-.345.467-.742l-.002-.056a1.5 1.5 0 0 0-.335-.85l-.182-.102c-.692-.381-1.41-.685-2.172-.85-.29-.063-.586-.107-.88-.148a7 7 0 0 0-.626-.055 22 22 0 0 0-.942-.017 6 6 0 0 0-.582.035c-.272.027-.544.057-.815.1-.58.095-1.152.24-1.688.504q-.566.28-1.114.587a6 6 0 0 0-.3.182M12.47 8.487a.06.06 0 0 1 .023-.029z" />
     </g>
@@ -52,7 +50,6 @@ const CassandraLight: FC<SvgProps> = ({
 const CassandraDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -68,7 +65,6 @@ const CassandraDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g opacity=".8" fill="#BBE6FB">
       <path d="M3.279 6.698c-.366.394-.562.83-.537 1.28.044.798.777 1.467 1.897 1.875q.427.124.862.22.284.06.572.1.27.038.545.063l.103.01a7.306 7.306 0 0 0 1.439-.028h.004a7.7 7.7 0 0 0 1.975-.463 5.8 5.8 0 0 0 1.366-.733 4.7 4.7 0 0 0 .944-.912q.268-.345.467-.742l-.002-.056a1.5 1.5 0 0 0-.335-.85l-.182-.102c-.692-.381-1.41-.685-2.172-.85-.29-.063-.586-.107-.88-.148a7 7 0 0 0-.626-.055 22 22 0 0 0-.942-.017 6 6 0 0 0-.582.035c-.272.027-.544.057-.815.1-.58.095-1.152.24-1.688.504q-.566.28-1.114.587a6 6 0 0 0-.3.182M12.47 8.487a.06.06 0 0 1 .023-.029z" />
     </g>
@@ -99,7 +95,6 @@ export const Cassandra: FC<CassandraProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CassandraLight : CassandraDark;
@@ -108,7 +103,6 @@ export const Cassandra: FC<CassandraProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}
