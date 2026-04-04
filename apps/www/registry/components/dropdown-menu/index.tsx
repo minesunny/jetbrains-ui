@@ -136,7 +136,7 @@ function DropdownMenuItem({
       data-inset={inset || undefined}
       data-variant={variant}
       className={cn(
-        "focus:bg-accent focus:text-accent-foreground relative flex min-h-6 w-full cursor-default select-none items-center gap-ui-control rounded-[3px] px-ui-item py-ui-item text-sm leading-4 font-normal outline-none transition-[background-color,color] duration-75 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-']):size-4",
+        "focus:bg-blue-11 focus:text-gray-1 dark:focus:bg-blue-2 dark:focus:text-gray-12 relative flex min-h-6 w-full cursor-default select-none items-center gap-ui-control rounded-[3px] px-ui-item py-ui-item text-sm leading-4 font-normal outline-none transition-[background-color,color] duration-75 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-']):size-4",
         "data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground data-[inset]:pl-ui-item-indicator",
         className,
       )}
@@ -277,7 +277,7 @@ function DropdownMenuSubTrigger({
       data-slot="dropdown-menu-sub-trigger"
       data-inset={inset || undefined}
       className={cn(
-        'focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground relative flex min-h-6 w-full cursor-default select-none items-center gap-ui-control rounded-[3px] pl-ui-item py-ui-item pr-ui-sub-trigger text-ui-default outline-none transition-[background-color,color] duration-75 data-[inset]:pl-ui-item-indicator data-[disabled]:pointer-events-none',
+        'focus:bg-blue-11 focus:text-gray-1 dark:focus:bg-blue-2 dark:focus:text-gray-12 data-[state=open]:bg-blue-11 data-[state=open]:text-gray-1 dark:data-[state=open]:bg-blue-2 dark:data-[state=open]:text-gray-12 relative flex min-h-6 w-full cursor-default select-none items-center gap-ui-control rounded-[3px] pl-ui-item py-ui-item pr-ui-sub-trigger text-ui-default outline-none transition-[background-color,color] duration-75 data-[inset]:pl-ui-item-indicator data-[disabled]:pointer-events-none',
         className,
       )}
       {...props}

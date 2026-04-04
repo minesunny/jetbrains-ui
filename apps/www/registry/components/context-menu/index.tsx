@@ -4,6 +4,7 @@ import * as React from 'react';
 import { ContextMenu as ContextMenuPrimitive } from 'radix-ui';
 
 import { cn } from '@workspace/ui/lib/utils';
+import { SVG } from '@/registry/components/svg';
 import {
   Tooltip,
   TooltipContent,
@@ -132,11 +133,14 @@ function ContextMenuGroup({
 
 function ContextMenuItem({
   className,
+  children,
   inset,
+  icon,
   variant = 'default',
   ...props
 }: React.ComponentProps<typeof ContextMenuPrimitive.Item> & {
   inset?: boolean;
+  icon?: string;
   variant?: 'default' | 'destructive';
 }) {
   return (
@@ -146,13 +150,13 @@ function ContextMenuItem({
       data-variant={variant}
       className={cn(
         'relative flex min-h-6 w-full cursor-default select-none items-center gap-ui-control rounded-[3px] bg-transparent px-ui-item py-ui-item text-ui-default text-gray-1 outline-none transition-[background-color,color] duration-75',
-        'data-[highlighted]:bg-gray-12 data-[highlighted]:text-gray-1',
-        'data-[state=open]:bg-gray-12 data-[state=open]:text-gray-1',
+        'data-[highlighted]:bg-blue-11 data-[highlighted]:text-gray-1',
+        'data-[state=open]:bg-blue-11 data-[state=open]:text-gray-1',
         'data-[state=checked]:bg-blue-12 data-[state=checked]:text-blue-1',
         'data-[disabled]:pointer-events-none data-[disabled]:text-gray-8',
         'dark:text-gray-12',
-        'dark:data-[highlighted]:bg-gray-4 dark:data-[highlighted]:text-gray-12',
-        'dark:data-[state=open]:bg-gray-4 dark:data-[state=open]:text-gray-12',
+        'dark:data-[highlighted]:bg-blue-2 dark:data-[highlighted]:text-gray-12',
+        'dark:data-[state=open]:bg-blue-2 dark:data-[state=open]:text-gray-12',
         'dark:data-[state=checked]:bg-blue-2 dark:data-[state=checked]:text-gray-12',
         'dark:data-[disabled]:text-gray-7',
         'data-[inset]:pl-ui-item-indicator',
@@ -161,7 +165,16 @@ function ContextMenuItem({
         className,
       )}
       {...props}
-    />
+    >
+      {icon ? (
+        <span className="inline-flex size-4 shrink-0 items-center justify-center">
+          <SVG name={icon} size="md" />
+        </span>
+      ) : (
+        <span className="inline-flex size-4 shrink-0" />
+      )}
+      {children}
+    </ContextMenuPrimitive.Item>
   );
 }
 
@@ -316,13 +329,13 @@ function ContextMenuSubTrigger({
       data-inset={inset || undefined}
       className={cn(
         'relative flex min-h-6 w-full cursor-default select-none items-center gap-ui-control rounded-[3px] bg-transparent pl-ui-item py-ui-item pr-ui-sub-trigger text-ui-default text-gray-1 outline-none transition-[background-color,color] duration-75',
-        'data-[highlighted]:bg-gray-12 data-[highlighted]:text-gray-1',
-        'data-[state=open]:bg-gray-12 data-[state=open]:text-gray-1',
+        'data-[highlighted]:bg-blue-11 data-[highlighted]:text-gray-1',
+        'data-[state=open]:bg-blue-11 data-[state=open]:text-gray-1',
         'data-[state=checked]:bg-blue-12 data-[state=checked]:text-blue-1',
         'data-[disabled]:pointer-events-none data-[disabled]:text-gray-8',
         'dark:text-gray-12',
-        'dark:data-[highlighted]:bg-gray-4 dark:data-[highlighted]:text-gray-12',
-        'dark:data-[state=open]:bg-gray-4 dark:data-[state=open]:text-gray-12',
+        'dark:data-[highlighted]:bg-blue-2 dark:data-[highlighted]:text-gray-12',
+        'dark:data-[state=open]:bg-blue-2 dark:data-[state=open]:text-gray-12',
         'dark:data-[state=checked]:bg-blue-2 dark:data-[state=checked]:text-gray-12',
         'dark:data-[disabled]:text-gray-7',
         'data-[inset]:pl-ui-item-indicator',
