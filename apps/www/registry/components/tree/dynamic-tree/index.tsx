@@ -3,7 +3,6 @@
 import * as React from 'react';
 
 import { type ItemInstance } from '@headless-tree/core';
-import { ScrollArea, ScrollViewport } from '@/registry/components/scroll-area';
 import { SVG } from '@/registry/components/svg';
 
 export { asyncDataLoaderFeature } from './feature';
@@ -31,7 +30,10 @@ export interface DynamicTreeItemComponent<
 
 export interface DynamicTreeProps<
   TItem extends DynamicTreeItemData = DynamicTreeItemData,
-> extends Omit<React.ComponentPropsWithoutRef<'div'>, 'children' | 'className' | 'style'> {
+> extends Omit<
+    React.ComponentPropsWithoutRef<'div'>,
+    'children' | 'className' | 'style'
+  > {
   containerProps: React.ComponentPropsWithoutRef<'div'>;
   items: ItemInstance<TItem>[];
   indent?: number;
@@ -222,28 +224,17 @@ function DynamicTree<TItem extends DynamicTreeItemData>({
   const ItemComponent = customItem ?? DynamicTreeItem;
 
   return (
-    <ScrollArea
-      data-slot="tree-scroll-area"
-      className="max-w-full p-ui-section"
+    <div
+      {...containerProps}
+      data-slot="tree"
+      className="tree dynamic-tree block w-full min-w-ui-tree box-border bg-transparent py-ui-control-row text-ui-default text-gray-1 dark:text-gray-12"
       style={{ width, height }}
+      {...props}
     >
-      <ScrollViewport data-slot="tree-scroll-viewport" className="size-full">
-        <div
-          {...containerProps}
-          data-slot="tree"
-          className="tree dynamic-tree block w-full min-w-ui-tree box-border bg-transparent py-ui-control-row text-ui-default text-gray-1 dark:text-gray-12"
-          {...props}
-        >
-          {items.map((item) => (
-            <ItemComponent
-              key={item.getKey()}
-              item={item}
-              indent={indent}
-            />
-          ))}
-        </div>
-      </ScrollViewport>
-    </ScrollArea>
+      {items.map((item) => (
+        <ItemComponent key={item.getKey()} item={item} indent={indent} />
+      ))}
+    </div>
   );
 }
 

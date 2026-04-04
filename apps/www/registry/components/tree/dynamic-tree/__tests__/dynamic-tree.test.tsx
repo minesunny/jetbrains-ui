@@ -1,10 +1,5 @@
 import * as React from 'react';
-import {
-  act,
-  render,
-  screen,
-  waitFor,
-} from '@testing-library/react';
+import { act, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {
   hotkeysCoreFeature,
@@ -156,12 +151,12 @@ describe('DynamicTree', () => {
       />,
     );
 
-    const scrollArea = document.querySelector(
-      '[data-slot="tree-scroll-area"]',
+    const tree = document.querySelector(
+      '[data-slot="tree"]',
     ) as HTMLElement;
 
-    expect(scrollArea.style.width).toBe('260px');
-    expect(scrollArea.style.height).toBe('140px');
+    expect(tree.style.width).toBe('260px');
+    expect(tree.style.height).toBe('140px');
   });
 
   it('loads and renders root nodes from loadData', async () => {
