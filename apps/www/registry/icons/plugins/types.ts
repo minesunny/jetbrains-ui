@@ -8,7 +8,7 @@ export interface IconProps {
   'aria-label'?: string;
   /** Title element for the icon tooltip */
   title?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 export interface SvgProps {
