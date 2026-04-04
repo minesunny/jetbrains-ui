@@ -13,7 +13,7 @@ export const sizeMap: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number> = {
   xl: 24,
 };
 
-export const SvgNames = [
+export const iconNames = [
   'abbreviate-package-names',
   'access-local',
   'access-private',
@@ -405,4 +405,4 @@ export const SvgNames = [
   'writerside-preview',
 ] as const;
 
-export type SvgName = (typeof SvgNames)[number];
+export type IconName = (typeof iconNames)[number];
