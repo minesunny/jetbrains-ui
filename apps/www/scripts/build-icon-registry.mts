@@ -127,7 +127,7 @@ export type IconLoader = () => Promise<{
   default: ComponentType<IconComponentProps>;
 }>;
 
-export const ICON_REGISTRY: Record<string, IconLoader> = {
+export const SVG_REGISTRY: Record<string, IconLoader> = {
 ${lines.join('\n')}
 };
 `;
