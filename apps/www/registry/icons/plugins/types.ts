@@ -1,13 +1,12 @@
 import type React from 'react';
-export type IconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
 
 export type SvgProps = React.ComponentProps<'svg'> & {
-  size?: IconSize;
-  mode?: IconMode;
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  mode?: 'light' | 'dark';
 };
 
-export const sizeMap: Record<IconSize, number> = {
+export const sizeMap: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number> = {
   xs: 12,
   sm: 14,
   md: 16,
