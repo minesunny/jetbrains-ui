@@ -22,7 +22,6 @@ const ResetCacheAndReloadProjectsLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2.621 9V8a5.5 5.5 0 0 1 8.5-4.61M5.121 12.61a5.5 5.5 0 0 0 8.5-4.61V7"
       stroke="#DB3B4B"
@@ -54,7 +53,6 @@ const ResetCacheAndReloadProjectsDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2.621 9V8a5.5 5.5 0 0 1 8.5-4.61M5.121 12.61a5.5 5.5 0 0 0 8.5-4.61V7"
       stroke="#DB5C5C"

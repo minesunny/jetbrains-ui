@@ -22,7 +22,6 @@ const EdgeModLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.5 10.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM2.5 1.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z"
       stroke="#6C707E"
@@ -49,7 +48,6 @@ const EdgeModDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.5 10.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM2.5 1.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z"
       stroke="#CED0D6"

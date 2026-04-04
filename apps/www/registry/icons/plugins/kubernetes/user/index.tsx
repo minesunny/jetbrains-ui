@@ -22,7 +22,6 @@ const UserLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6M2.103 13.008C2.399 11.303 3.548 8 8 8s5.6 3.303 5.897 5.008c.094.544-.345.992-.897.992H3c-.553 0-.992-.448-.897-.992"
       fill="#EBECF0"
@@ -54,7 +53,6 @@ const UserDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6M2.103 13.008C2.399 11.303 3.548 8 8 8s5.6 3.303 5.897 5.008c.094.544-.345.992-.897.992H3c-.553 0-.992-.448-.897-.992"
       fill="#43454A"

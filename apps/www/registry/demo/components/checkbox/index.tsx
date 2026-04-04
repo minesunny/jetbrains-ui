@@ -76,7 +76,7 @@ export default function CheckboxDemo({
   };
 
   return (
-    <div className="flex min-h-8 items-center gap-ui-control text-gray-1 dark:text-gray-12">
+    <div className="flex min-h-8 items-center gap-2 text-gray-1 dark:text-gray-12">
       <Checkbox
         {...props}
         id={id}

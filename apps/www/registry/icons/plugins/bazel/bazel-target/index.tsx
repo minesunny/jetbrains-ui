@@ -22,7 +22,6 @@ const BazelTargetLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="m10.75 9 1.75 1.75L14.25 9 16 10.75v1.75L12.5 16 9 12.5v-1.75z"
@@ -69,7 +68,6 @@ const BazelTargetDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="m10.75 9 1.75 1.75L14.25 9 16 10.75v1.75L12.5 16 9 12.5v-1.75z"

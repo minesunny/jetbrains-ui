@@ -22,7 +22,6 @@ const HelmChartLockLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -66,7 +65,6 @@ const HelmChartLockDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         fillRule="evenodd"

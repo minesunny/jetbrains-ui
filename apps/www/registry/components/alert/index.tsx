@@ -4,22 +4,16 @@ import * as React from 'react';
 import { AlertDialog as AlertPrimitive } from 'radix-ui';
 
 import { cn } from '@workspace/ui/lib/utils';
-import { ErrorDialog } from '@/registry/icons/general/status/error-dialog';
-import { InformationDialog } from '@/registry/icons/general/status/information-dialog';
-import { QuestionDialog } from '@/registry/icons/general/status/question-dialog';
-import { WarningDialog } from '@/registry/icons/general/status/warning-dialog';
-import type { SvgProps } from '@/registry/icons/general/types';
+import { SVG } from '@/registry/components/svg';
 import { QuestionMark } from '@/registry/icons/general/general';
 import { buttonVariants } from '@/registry/components/button';
 import { Checkbox } from '@/registry/components/checkbox';
 
-type AlertType = 'info' | 'error' | 'warning' | 'question';
-type AlertSize = 'default' | 'wide' | 'auto';
 type AlertContentContextValue = {
   help: boolean;
   check: boolean;
-  type: AlertType;
-  size: AlertSize;
+  type: 'info' | 'error' | 'warning' | 'question';
+  size: 'default' | 'wide' | 'auto';
 };
 
 const AlertContentContext = React.createContext<AlertContentContextValue>({
@@ -29,18 +23,7 @@ const AlertContentContext = React.createContext<AlertContentContextValue>({
   size: 'auto',
 });
 
-const alertTypeIcons: Record<AlertType, React.ComponentType<SvgProps>> = {
-  info: InformationDialog,
-  error: ErrorDialog,
-  warning: WarningDialog,
-  question: QuestionDialog,
-};
 
-const alertSizeClassMap: Record<AlertSize, string> = {
-  default: 'w-ui-alert',
-  wide: 'w-ui-alert-wide',
-  auto: 'w-fit min-w-ui-alert',
-};
 
 function Alert({ ...props }: React.ComponentProps<typeof AlertPrimitive.Root>) {
   return <AlertPrimitive.Root data-slot="alert" {...props} />;
@@ -89,12 +72,12 @@ function AlertContent({
   check = false,
   ...props
 }: React.ComponentProps<typeof AlertPrimitive.Content> & {
-  type?: AlertType;
-  size?: AlertSize;
+  type?: 'info' | 'error' | 'warning' | 'question';
+  size?: 'default' | 'wide' | 'auto';
   help?: boolean;
   check?: boolean;
 }) {
-  const AlertIcon = alertTypeIcons[type];
+  const iconName = `general/status/${type === 'info' ? 'information' : type}-dialog`;
   const contentContextValue = React.useMemo(
     () => ({
       help,
@@ -114,15 +97,15 @@ function AlertContent({
           data-type={type}
           data-size={size}
           className={cn(
-            "fixed left-1/2 top-1/2 z-[var(--z-modal)] flex max-w-[calc(100vw-2rem)] -translate-x-1/2 -translate-y-1/2 flex-col rounded-[8px] border border-alert-info-border bg-alert-info-bg pb-ui-alert pl-ui-alert pr-ui-alert pt-ui-alert text-alert-info-text opacity-0 shadow-[var(--shadow-xl)] outline-none transition-[opacity,transform] duration-150 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=closed]:scale-95 data-[state=closed]:opacity-0 [&[data-type='error']]:border-alert-destructive-border [&[data-type='error']]:bg-alert-destructive-bg [&[data-type='error']]:text-alert-destructive-text [&[data-type='warning']]:border-alert-warning-border [&[data-type='warning']]:bg-alert-warning-bg [&[data-type='warning']]:text-alert-warning-text [&[data-type='question']]:border-alert-border [&[data-type='question']]:bg-alert-bg [&[data-type='question']]:text-alert-text",
-            alertSizeClassMap[size],
+            "fixed left-1/2 top-1/2 z-[var(--z-modal)] flex max-w-[calc(100vw-2rem)] -translate-x-1/2 -translate-y-1/2 flex-col rounded-[8px] border border-blue-11 bg-blue-13 pb-[66px] pl-[60px] pr-5 pt-5 text-gray-1 opacity-0 shadow-[var(--shadow-xl)] outline-none transition-[opacity,transform] duration-150 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=closed]:scale-95 data-[state=closed]:opacity-0 dark:border-blue-2 dark:bg-blue-1 dark:text-gray-12 [&[data-type='error']]:border-red-9 [&[data-type='error']]:bg-red-11 [&[data-type='error']]:text-gray-1 dark:[&[data-type='error']]:border-red-3 dark:[&[data-type='error']]:bg-red-1 dark:[&[data-type='error']]:text-gray-12 [&[data-type='warning']]:border-yellow-9 [&[data-type='warning']]:bg-yellow-11 [&[data-type='warning']]:text-gray-1 dark:[&[data-type='warning']]:border-yellow-3 dark:[&[data-type='warning']]:bg-yellow-1 dark:[&[data-type='warning']]:text-gray-12 [&[data-type='question']]:border-blue-11 [&[data-type='question']]:bg-blue-13 [&[data-type='question']]:text-gray-1 dark:[&[data-type='question']]:border-blue-2 dark:[&[data-type='question']]:bg-blue-1 dark:[&[data-type='question']]:text-gray-12 data-[size=default]:w-[370px] data-[size=wide]:w-[420px] data-[size=auto]:w-fit data-[size=auto]:min-w-[370px]",
             className,
           )}
           {...props}
         >
-          <AlertIcon
-            className="absolute left-ui-alert-icon top-ui-alert-icon shrink-0"
+          <SVG
+            name={iconName}
             size="lg"
+            className="absolute left-[18px] top-[18px] shrink-0"
           />
           {children}
         </AlertPrimitive.Content>
@@ -142,14 +125,14 @@ function AlertHeader({
     <div
       data-slot="alert-header"
       className={cn(
-        'alert-header flex min-h-0 flex-col items-start gap-ui-control',
+        'flex min-h-0 flex-col items-start gap-2',
         className,
       )}
       {...props}
     >
       {children}
       {check && (
-        <div className="flex items-center gap-ui-control py-ui-control-row">
+        <div className="flex items-center gap-2 py-2">
           <Checkbox id="alert-do-not-ask" />
           <label
             htmlFor="alert-do-not-ask"
@@ -173,8 +156,8 @@ function AlertTitle({
     <AlertPrimitive.Title
       data-slot="alert-title"
       className={cn(
-        'alert-title w-full text-base font-semibold leading-5',
-        size === 'auto' && 'max-w-ui-alert',
+        'w-full text-base font-semibold leading-5',
+        size === 'auto' && 'max-w-[480px]',
         className,
       )}
       {...props}
@@ -195,8 +178,8 @@ function AlertDescription({
     <AlertPrimitive.Description
       data-slot="alert-description"
       className={cn(
-        'w-full text-[13px] leading-[18px] font-medium text-alert-description',
-        size === 'auto' && 'max-w-ui-alert',
+        'w-full text-[13px] leading-[18px] font-medium text-gray-7 dark:text-gray-8',
+        size === 'auto' && 'max-w-[480px]',
         className,
       )}
       {...props}
@@ -217,7 +200,7 @@ function AlertFooter({
     <div
       data-slot="alert-footer"
       className={cn(
-        'alert-footer absolute bottom-ui-alert-footer left-ui-alert-footer right-ui-alert-footer flex h-10 shrink-0 items-center gap-ui-actions',
+        'absolute bottom-[16px] left-[18px] right-[18px] flex h-10 shrink-0 items-center gap-3',
         className,
       )}
       {...props}
@@ -233,7 +216,7 @@ function AlertActions({ className, ...props }: React.ComponentProps<'div'>) {
     <div
       data-slot="alert-actions"
       className={cn(
-        'alert-actions ml-auto inline-flex items-center justify-end gap-ui-actions',
+        'ml-auto inline-flex items-center justify-end gap-3',
         className,
       )}
       {...props}
@@ -287,6 +270,4 @@ export {
   AlertActions,
   AlertCancel,
   AlertAction,
-  type AlertType,
-  type AlertSize,
 };

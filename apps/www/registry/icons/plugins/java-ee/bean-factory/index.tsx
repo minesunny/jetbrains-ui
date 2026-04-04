@@ -22,7 +22,6 @@ const BeanFactoryLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15.121 11.296a.5.5 0 0 1 .379.485V15a.5.5 0 0 1-.5.5H9a.5.5 0 0 1-.5-.5v-2.36l2 .5v-1.5l2 .5v-1.5z"
       fill="#EBECF0"
@@ -57,7 +56,6 @@ const BeanFactoryDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15.121 11.296a.5.5 0 0 1 .379.485V15a.5.5 0 0 1-.5.5H9a.5.5 0 0 1-.5-.5v-2.36l2 .5v-1.5l2 .5v-1.5z"
       fill="#43454A"

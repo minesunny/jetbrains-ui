@@ -22,7 +22,6 @@ const RunAsWorkflowLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         fillRule="evenodd"
@@ -65,7 +64,6 @@ const RunAsWorkflowDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         fillRule="evenodd"

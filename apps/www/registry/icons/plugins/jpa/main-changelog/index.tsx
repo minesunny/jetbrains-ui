@@ -22,7 +22,6 @@ const MainChangelogLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M16 13.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" fill="#4682FA" />
     <path
       d="M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h6.035a3.5 3.5 0 0 1 0-1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v6.035a3.5 3.5 0 0 1 1 0V4a2 2 0 0 0-2-2z"
@@ -53,7 +52,6 @@ const MainChangelogDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M16 13.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" fill="#548AF7" />
     <path
       d="M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h6.035a3.5 3.5 0 0 1 0-1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v6.035a3.5 3.5 0 0 1 1 0V4a2 2 0 0 0-2-2z"

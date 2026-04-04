@@ -22,7 +22,6 @@ const CwmShareLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M3.5 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M14 12.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
       fill="#EBECF0"
@@ -54,7 +53,6 @@ const CwmShareDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M3.5 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M14 12.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
       fill="#43454A"

@@ -22,7 +22,6 @@ const InnerClassLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#EDF3FF" stroke="#3574F0" />
     <path
       fillRule="evenodd"
@@ -51,7 +50,6 @@ const InnerClassDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#25324D" stroke="#548AF7" />
     <path
       fillRule="evenodd"

@@ -22,7 +22,6 @@ const GraphQLCongifLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M11.999 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -63,7 +62,6 @@ const GraphQLCongifDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M11.999 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#CED0D6" />
     <path
       fillRule="evenodd"

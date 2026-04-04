@@ -22,7 +22,6 @@ const RemoveLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -50,7 +49,6 @@ const RemoveDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       fillRule="evenodd"
       clipRule="evenodd"

@@ -22,7 +22,6 @@ const ChartAreaRangeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m9.5 3.14 4.5 3.6v3.72l-3.875-3.1a1 1 0 0 0-1.25 0L4.5 10.86l-2.5-2V5.14l1.875 1.5a1 1 0 0 0 1.25 0z"
       fill="#EDF3FF"
@@ -56,7 +55,6 @@ const ChartAreaRangeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m9.5 3.14 4.5 3.6v3.72l-3.875-3.1a1 1 0 0 0-1.25 0L4.5 10.86l-2.5-2V5.14l1.875 1.5a1 1 0 0 0 1.25 0z"
       fill="#25324D"

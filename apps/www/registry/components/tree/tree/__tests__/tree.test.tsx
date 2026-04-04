@@ -1,7 +1,7 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { Tree, TreeItem } from './index';
+import { Tree, TreeItem } from '..';
 
 describe('Tree', () => {
   it('renders root items and keeps nested items collapsed by default', () => {

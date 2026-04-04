@@ -22,7 +22,6 @@ const SpringBatchLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m14.052 10.909-2.551-1.87-2.552 1.87 2.552 1.87z" fill="#EBECF0" />
     <path
       fillRule="evenodd"
@@ -63,7 +62,6 @@ const SpringBatchDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m14.052 10.909-2.551-1.87-2.552 1.87 2.552 1.87z" fill="#43454A" />
     <path
       fillRule="evenodd"

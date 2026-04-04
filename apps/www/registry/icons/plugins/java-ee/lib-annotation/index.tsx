@@ -22,7 +22,6 @@ const LibAnnotationLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M12 10h1v5h-1zM10 11h1v4h-1zM15 12h-1v3h1z" fill="#EDF3FF" />
     <path
       fillRule="evenodd"
@@ -63,7 +62,6 @@ const LibAnnotationDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M12 10h1v5h-1zM10 11h1v4h-1zM15 12h-1v3h1z" fill="#25324D" />
     <path
       fillRule="evenodd"

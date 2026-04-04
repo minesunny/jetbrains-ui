@@ -22,7 +22,6 @@ const ElectronicBoardLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect x="4" y="4" width="8" height="8" rx="1" fill="#EBECF0" />
     <path
       fillRule="evenodd"
@@ -57,7 +56,6 @@ const ElectronicBoardDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect x="4" y="4" width="8" height="8" rx="1" fill="#43454A" />
     <path
       fillRule="evenodd"

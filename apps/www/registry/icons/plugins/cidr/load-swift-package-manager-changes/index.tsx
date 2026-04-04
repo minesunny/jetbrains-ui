@@ -22,7 +22,6 @@ const LoadSwiftPackageManagerChangesLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -58,7 +57,6 @@ const LoadSwiftPackageManagerChangesDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       fillRule="evenodd"
       clipRule="evenodd"

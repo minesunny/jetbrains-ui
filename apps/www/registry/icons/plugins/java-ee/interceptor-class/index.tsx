@@ -22,7 +22,6 @@ const InterceptorClassLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.65 10.193a7 7 0 1 0-4.456 4.456 3.5 3.5 0 0 1 4.456-4.456"
       fill="#EDF3FF"
@@ -57,7 +56,6 @@ const InterceptorClassDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.65 10.193a7 7 0 1 0-4.456 4.456 3.5 3.5 0 0 1 4.456-4.456"
       fill="#25324D"

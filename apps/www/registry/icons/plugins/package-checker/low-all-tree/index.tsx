@@ -22,7 +22,6 @@ const LowAllTreeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -50,7 +49,6 @@ const LowAllTreeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       fillRule="evenodd"
       clipRule="evenodd"

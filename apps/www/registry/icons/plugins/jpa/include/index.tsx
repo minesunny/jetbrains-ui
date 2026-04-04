@@ -22,7 +22,6 @@ const IncludeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -54,7 +53,6 @@ const IncludeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       fillRule="evenodd"
       clipRule="evenodd"

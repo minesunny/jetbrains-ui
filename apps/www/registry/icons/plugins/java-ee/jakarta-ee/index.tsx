@@ -22,7 +22,6 @@ const JakartaEELight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.234 14.188 0 11.344s3.156 1.797 4.594 4.64c2.484-2.218 6.64-1.796 6.64-1.796"
       fill="#4682FA"
@@ -56,7 +55,6 @@ const JakartaEEDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.234 14.188 0 11.344s3.156 1.797 4.594 4.64c2.484-2.218 6.64-1.796 6.64-1.796"
       fill="#548AF7"

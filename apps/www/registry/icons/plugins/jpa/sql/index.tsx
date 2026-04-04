@@ -22,7 +22,6 @@ const SqlLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 1.5c-3.038 0-5.5.941-5.5 2.103v8.831c0 1.162 2.462 2.103 5.5 2.103s5.5-.941 5.5-2.103V3.603C13.5 2.44 11.038 1.5 8 1.5"
       fill="#FAF5FF"
@@ -53,7 +52,6 @@ const SqlDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 1.5c-3.038 0-5.5.941-5.5 2.103v8.831c0 1.162 2.462 2.103 5.5 2.103s5.5-.941 5.5-2.103V3.603C13.5 2.44 11.038 1.5 8 1.5"
       fill="#2F2936"

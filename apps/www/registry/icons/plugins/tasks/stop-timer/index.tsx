@@ -22,7 +22,6 @@ const StopTimerLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="9.5"
       y="9.5"
@@ -61,7 +60,6 @@ const StopTimerDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="9.5"
       y="9.5"

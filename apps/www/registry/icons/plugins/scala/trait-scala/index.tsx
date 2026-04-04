@@ -22,7 +22,6 @@ const TraitScalaLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15 8.043V8a7 7 0 1 0-6 6.93V10a1.5 1.5 0 0 1 1.35-1.493z"
       fill="#F2FCF3"
@@ -64,7 +63,6 @@ const TraitScalaDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15 8.043V8a7 7 0 1 0-6 6.93V10a1.5 1.5 0 0 1 1.35-1.493z"
       fill="#253627"

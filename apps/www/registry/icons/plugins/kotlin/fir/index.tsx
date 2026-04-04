@@ -22,7 +22,6 @@ const FirLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#6C707E" d="M7 13H9V15H7z" />
     <path
       d="M12.805 5.805A.7.7 0 0 1 12.31 7H11l1.805 1.805A.7.7 0 0 1 12.31 10H11l1.805 1.805A.7.7 0 0 1 12.31 13H3.69a.7.7 0 0 1-.495-1.195L5 10H3.69a.7.7 0 0 1-.495-1.195L5 7H3.69a.7.7 0 0 1-.495-1.195l4.451-4.452a.5.5 0 0 1 .707 0z"
@@ -55,7 +54,6 @@ const FirDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#CED0D6" d="M7 13H9V15H7z" />
     <path
       d="M12.805 5.805A.7.7 0 0 1 12.31 7H11l1.805 1.805A.7.7 0 0 1 12.31 10H11l1.805 1.805A.7.7 0 0 1 12.31 13H3.69a.7.7 0 0 1-.495-1.195L5 10H3.69a.7.7 0 0 1-.495-1.195L5 7H3.69a.7.7 0 0 1-.495-1.195l4.451-4.452a.5.5 0 0 1 .707 0z"

@@ -22,7 +22,6 @@ const GroovyLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="2.5"
       y="2.5"
@@ -57,7 +56,6 @@ const GroovyDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="2.5"
       y="2.5"

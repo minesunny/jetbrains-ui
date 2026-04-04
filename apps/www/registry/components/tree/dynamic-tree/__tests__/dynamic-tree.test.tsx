@@ -151,9 +151,7 @@ describe('DynamicTree', () => {
       />,
     );
 
-    const tree = document.querySelector(
-      '[data-slot="tree"]',
-    ) as HTMLElement;
+    const tree = document.querySelector('[data-slot="tree"]') as HTMLElement;
 
     expect(tree.style.width).toBe('260px');
     expect(tree.style.height).toBe('140px');

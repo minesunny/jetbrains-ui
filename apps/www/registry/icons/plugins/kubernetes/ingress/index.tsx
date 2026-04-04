@@ -22,7 +22,6 @@ const IngressLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m12.293 11-1.646-1.647a.5.5 0 0 1 .707-.707l2.5 2.5a.5.5 0 0 1 0 .707l-2.5 2.5a.5.5 0 1 1-.707-.707L12.293 12H9.5a.5.5 0 0 1-.393-.191L3.757 5H2.5a.5.5 0 0 1 0-1H4a.5.5 0 0 1 .393.191L9.743 11z"
       fill="#6C707E"
@@ -52,7 +51,6 @@ const IngressDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m12.293 11-1.646-1.647a.5.5 0 0 1 .707-.707l2.5 2.5a.5.5 0 0 1 0 .707l-2.5 2.5a.5.5 0 1 1-.707-.707L12.293 12H9.5a.5.5 0 0 1-.393-.191L3.757 5H2.5a.5.5 0 0 1 0-1H4a.5.5 0 0 1 .393.191L9.743 11z"
       fill="#CED0D6"

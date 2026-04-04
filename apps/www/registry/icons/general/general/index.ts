@@ -196,5 +196,5 @@ export { Upload } from './upload';
 export type { UploadProps } from './upload';
 export { Vcs } from './vcs';
 export type { VcsProps } from './vcs';
-export { iconNames } from '../types';
-export type { IconName, IconMode, IconProps, IconSize } from '../types';
+export { svgNames } from '../types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

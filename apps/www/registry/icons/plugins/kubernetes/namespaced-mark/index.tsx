@@ -22,7 +22,6 @@ const NamespacedMarkLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="4" cy="12" r="3.5" stroke="#6C707E" />
     <circle cx="4" cy="12" r="2" fill="#3574F0" />
   </svg>
@@ -46,7 +45,6 @@ const NamespacedMarkDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="4" cy="12" r="3.5" stroke="#CED0D6" />
     <circle cx="4" cy="12" r="2" fill="#548AF7" />
   </svg>

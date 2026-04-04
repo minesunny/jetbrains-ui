@@ -22,7 +22,6 @@ const VelocityLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3.5 8V1.5m0 6.5A4.5 4.5 0 0 0 8 12.5M3.5 8A4.5 4.5 0 0 1 8 3.5m0 0h6.5M8 3.5A4.5 4.5 0 0 1 12.5 8m0 0v6.5m0-6.5A4.5 4.5 0 0 1 8 12.5m0 0H1.5"
       stroke="#6C707E"
@@ -49,7 +48,6 @@ const VelocityDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3.5 8V1.5m0 6.5A4.5 4.5 0 0 0 8 12.5M3.5 8A4.5 4.5 0 0 1 8 3.5m0 0h6.5M8 3.5A4.5 4.5 0 0 1 12.5 8m0 0v6.5m0-6.5A4.5 4.5 0 0 1 8 12.5m0 0H1.5"
       stroke="#CED0D6"

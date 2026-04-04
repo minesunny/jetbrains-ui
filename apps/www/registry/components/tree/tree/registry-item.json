@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tree",
+  "type": "registry:ui",
+  "title": "Tree",
+  "description": "JetBrains-style static tree view with nested hierarchy, selection and collapse controls.",
+  "dependencies": [],
+  "registryDependencies": [
+    "scroll-area",
+    "icons-general-general-chevron-down",
+    "icons-general-general-chevron-right"
+  ],
+  "files": [
+    {
+      "path": "registry/components/tree/tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tree/tree.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": ["tree", "navigation", "jetbrains", "ui", "component"],
+    "category": "navigation",
+    "docs": {
+      "description": "JetBrains-style static tree view with nested hierarchy, selection and collapse controls.",
+      "features": [
+        "Nested tree structure",
+        "Controlled and uncontrolled selected/expanded states",
+        "Keyboard support for selection and collapse",
+        "Token-driven light/dark theme support"
+      ]
+    }
+  }
+}

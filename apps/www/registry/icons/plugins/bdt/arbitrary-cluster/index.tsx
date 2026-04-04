@@ -22,7 +22,6 @@ const ArbitraryClusterLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M11.999 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#3574F0" />
     <path
       fillRule="evenodd"
@@ -67,7 +66,6 @@ const ArbitraryClusterDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M11.999 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#548AF7" />
     <path
       fillRule="evenodd"

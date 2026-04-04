@@ -22,7 +22,6 @@ const DeploymentsLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m9.5 10.5 3 3m0 0V11m0 2.5H10M9.5 7.5h6m0 0-2 2m2-2-2-2M9.5 4.5l3-3m0 0V4m0-2.5H10"
       stroke="#369650"
@@ -58,7 +57,6 @@ const DeploymentsDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m9.5 10.5 3 3m0 0V11m0 2.5H10M9.5 7.5h6m0 0-2 2m2-2-2-2M9.5 4.5l3-3m0 0V4m0-2.5H10"
       stroke="#57965C"

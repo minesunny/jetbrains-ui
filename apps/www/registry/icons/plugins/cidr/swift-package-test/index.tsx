@@ -22,7 +22,6 @@ const SwiftPackageTestLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m8 1.5 6.5 3v5.98l-1.13-1.086c-.562-.54-1.36-.487-1.87-.064-.512-.422-1.31-.474-1.87.066l-2.7 2.595a1.4 1.4 0 0 0 0 2.018l.001.001L1.5 11.52V4.5z"
       fill="#FFF4EB"
@@ -66,7 +65,6 @@ const SwiftPackageTestDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m8 1.5 6.5 3v5.98l-1.13-1.086c-.562-.54-1.36-.487-1.87-.064-.512-.422-1.31-.474-1.87.066l-2.7 2.595a1.4 1.4 0 0 0 0 2.018l.001.001L1.5 11.52V4.5z"
       fill="#45322B"

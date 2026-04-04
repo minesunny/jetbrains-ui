@@ -22,7 +22,6 @@ const RbenvRunAnythingLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.146 7.854a.5.5 0 0 0 .707 0L15.208 4.5l-3.354-3.354a.5.5 0 0 0-.707.708L13.293 4H6.5a.5.5 0 1 0 0 1h6.793l-2.147 2.146a.5.5 0 0 0 0 .708M2.914 12h4.419l-.011-.014a1.5 1.5 0 0 1-.32-.986H2.913l2.147-2.146a.5.5 0 1 0-.707-.708L1 11.5l3.354 3.354a.5.5 0 0 0 .707-.708z"
       fill="#6C707E"
@@ -60,7 +59,6 @@ const RbenvRunAnythingDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.146 7.854a.5.5 0 0 0 .707 0L15.208 4.5l-3.354-3.354a.5.5 0 0 0-.707.708L13.293 4H6.5a.5.5 0 1 0 0 1h6.793l-2.147 2.146a.5.5 0 0 0 0 .708M2.914 12h4.419l-.011-.014a1.5 1.5 0 0 1-.32-.986H2.913l2.147-2.146a.5.5 0 1 0-.707-.708L1 11.5l3.354 3.354a.5.5 0 0 0 .707-.708z"
       fill="#CED0D6"

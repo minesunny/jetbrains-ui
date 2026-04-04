@@ -22,7 +22,6 @@ const RemoteLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.9 9.19q.099-.58.1-1.19a7 7 0 1 0-5 6.71V9h3.622c.437 0 .87.062 1.277.19"
       fill="#F2FCF3"
@@ -59,7 +58,6 @@ const RemoteDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.9 9.19q.099-.58.1-1.19a7 7 0 1 0-5 6.71V9h3.622c.437 0 .87.062 1.277.19"
       fill="#253627"

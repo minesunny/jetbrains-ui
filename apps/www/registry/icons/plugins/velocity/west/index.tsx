@@ -22,7 +22,6 @@ const WestLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m4 12-3 1 1.907 2z" fill="#7929D2" />
     <path d="m4 12 6.5-6.5L14 10z" fill="url(#a)" />
     <path d="M4 12 6 2l4.5 3.5z" fill="url(#b)" />
@@ -95,7 +94,6 @@ const WestDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m4 12-3 1 1.907 2z" fill="#AF7FE4" />
     <path d="m4 12 6.5-6.5L14 10z" fill="url(#a)" />
     <path d="M4 12 6 2l4.5 3.5z" fill="url(#b)" />

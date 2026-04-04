@@ -22,7 +22,6 @@ const CodeAssistantFieldOptionalLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="1.5"
       y="1.5"
@@ -59,7 +58,6 @@ const CodeAssistantFieldOptionalDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="1.5"
       y="1.5"

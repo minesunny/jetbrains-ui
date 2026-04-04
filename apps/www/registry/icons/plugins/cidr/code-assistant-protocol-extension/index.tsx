@@ -22,7 +22,6 @@ const CodeAssistantProtocolExtensionLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M11 16h5v-1h-4v-2h3.5v-1h-3.51v-2H16V9h-5z" fill="#3574F0" />
     <path
       d="M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h6V8h4V4a2 2 0 0 0-2-2z"
@@ -57,7 +56,6 @@ const CodeAssistantProtocolExtensionDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M11 16h5v-1h-4v-2h3.5v-1h-3.51v-2H16V9h-5z" fill="#548AF7" />
     <path
       d="M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h6V8h4V4a2 2 0 0 0-2-2z"

@@ -22,7 +22,6 @@ const NamespaceLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3 4a1 1 0 0 1 1-1h2a.5.5 0 0 0 0-1H4a2 2 0 0 0-2 2v1.5a.5.5 0 0 0 1 0zM13 4v1.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2h-1.5a.5.5 0 0 0 0 1H12a1 1 0 0 1 1 1M10.5 13H12a1 1 0 0 0 1-1v-1.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2h-1.5a.5.5 0 0 1 0-1M4 13a1 1 0 0 1-1-1v-1.5a.5.5 0 0 0-1 0V12a2 2 0 0 0 2 2h1.5a.5.5 0 0 0 0-1z"
       fill="#6C707E"
@@ -48,7 +47,6 @@ const NamespaceDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3 4a1 1 0 0 1 1-1h2a.5.5 0 0 0 0-1H4a2 2 0 0 0-2 2v1.5a.5.5 0 0 0 1 0zM13 4v1.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2h-1.5a.5.5 0 0 0 0 1H12a1 1 0 0 1 1 1M10.5 13H12a1 1 0 0 0 1-1v-1.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2h-1.5a.5.5 0 0 1 0-1M4 13a1 1 0 0 1-1-1v-1.5a.5.5 0 0 0-1 0V12a2 2 0 0 0 2 2h1.5a.5.5 0 0 0 0-1z"
       fill="#CED0D6"

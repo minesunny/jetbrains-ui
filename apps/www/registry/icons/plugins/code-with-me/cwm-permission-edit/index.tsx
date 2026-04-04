@@ -22,7 +22,6 @@ const CwmPermissionEditLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect x="2" y="12" width="8" height="1" rx=".5" fill="#E66D17" />
     <rect x="2" y="6" width="8" height="1" rx=".5" fill="#E66D17" />
     <rect x="2" y="9" width="12" height="1" rx=".5" fill="#E66D17" />
@@ -48,7 +47,6 @@ const CwmPermissionEditDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect x="2" y="12" width="8" height="1" rx=".5" fill="#F2C55C" />
     <rect x="2" y="6" width="8" height="1" rx=".5" fill="#F2C55C" />
     <rect x="2" y="9" width="12" height="1" rx=".5" fill="#F2C55C" />

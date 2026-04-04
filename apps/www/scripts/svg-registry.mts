@@ -7,7 +7,7 @@ const ICONS_REGISTRY_PATH = path.join(
   'registry',
   'components',
   'svg',
-  'registry.ts',
+  'svg-registry.ts',
 );
 
 type IconComponentEntry = {
@@ -112,11 +112,11 @@ function buildIconsRegistrySource(iconEntries: IconComponentEntry[]) {
 
 import type { ComponentType } from 'react';
 
-export type IconLoader = () => Promise<{
-  default: ComponentType<{ size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'; mode?: 'light' | 'dark' }>;
+export type SvgLoader = () => Promise<{
+  default: ComponentType<{ size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'; mode?: 'light' | 'dark'; className?: string; 'aria-label'?: string }>;
 }>;
 
-export const SVG_REGISTRY: Record<string, IconLoader> = {
+export const SVG_REGISTRY: Record<string, SvgLoader> = {
 ${lines.join('\n')}
 };
 `;

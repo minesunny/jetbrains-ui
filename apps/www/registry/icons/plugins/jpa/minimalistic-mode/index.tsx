@@ -22,7 +22,6 @@ const MinimalisticModeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M12 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#3574F0" />
     <path
       fillRule="evenodd"
@@ -63,7 +62,6 @@ const MinimalisticModeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path d="M12 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#548AF7" />
       <path

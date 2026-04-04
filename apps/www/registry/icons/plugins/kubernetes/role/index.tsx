@@ -22,7 +22,6 @@ const RoleLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m4 5 4-1.5L12 5v3c0 3-4 5-4 5s-4-2-4-5z" fill="#EBECF0" />
     <path
       d="M4 3a1 1 0 0 0-1 1v1.5a.5.5 0 0 1-1 0V4a2 2 0 0 1 2-2h1.5a.5.5 0 0 1 0 1zM13 5.5V4a1 1 0 0 0-1-1h-1.5a.5.5 0 0 1 0-1H12a2 2 0 0 1 2 2v1.5a.5.5 0 0 1-1 0M12 13h-1.5a.5.5 0 0 0 0 1H12a2 2 0 0 0 2-2v-1.5a.5.5 0 0 0-1 0V12a1 1 0 0 1-1 1M3 12a1 1 0 0 0 1 1h1.5a.5.5 0 0 1 0 1H4a2 2 0 0 1-2-2v-1.5a.5.5 0 0 1 1 0z"
@@ -55,7 +54,6 @@ const RoleDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m4 5 4-1.5L12 5v3c0 3-4 5-4 5s-4-2-4-5z" fill="#43454A" />
     <path
       d="M4 3a1 1 0 0 0-1 1v1.5a.5.5 0 0 1-1 0V4a2 2 0 0 1 2-2h1.5a.5.5 0 0 1 0 1zM13 5.5V4a1 1 0 0 0-1-1h-1.5a.5.5 0 0 1 0-1H12a2 2 0 0 1 2 2v1.5a.5.5 0 0 1-1 0M12 13h-1.5a.5.5 0 0 0 0 1H12a2 2 0 0 0 2-2v-1.5a.5.5 0 0 0-1 0V12a1 1 0 0 1-1 1M3 12a1 1 0 0 0 1 1h1.5a.5.5 0 0 1 0 1H4a2 2 0 0 1-2-2v-1.5a.5.5 0 0 1 1 0z"

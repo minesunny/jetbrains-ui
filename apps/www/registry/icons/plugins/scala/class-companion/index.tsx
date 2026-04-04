@@ -22,7 +22,6 @@ const ClassCompanionLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M7 .5a6.5 6.5 0 0 1 6.48 6H.52A6.5 6.5 0 0 1 7 .5Z"
@@ -62,7 +61,6 @@ const ClassCompanionDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M7 .5a6.5 6.5 0 0 1 6.48 6H.52A6.5 6.5 0 0 1 7 .5Z"

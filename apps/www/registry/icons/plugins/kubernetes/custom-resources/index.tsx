@@ -22,7 +22,6 @@ const CustomResourcesLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M5.5 2.5a2 2 0 1 1 4 0v1h3v3h1a2 2 0 1 1 0 4h-1v3h-10v-3h1a2 2 0 1 0 0-4h-1v-3h3z"
       fill="#EDF3FF"
@@ -57,7 +56,6 @@ const CustomResourcesDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M5.5 2.5a2 2 0 1 1 4 0v1h3v3h1a2 2 0 1 1 0 4h-1v3h-10v-3h1a2 2 0 1 0 0-4h-1v-3h3z"
       fill="#25324D"

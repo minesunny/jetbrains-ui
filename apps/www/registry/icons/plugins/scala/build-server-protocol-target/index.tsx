@@ -22,7 +22,6 @@ const BuildServerProtocolTargetLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v5h-1v-.5c0-.384-.146-.768-.44-1.06l-4-4A1.5 1.5 0 0 0 7 6.5V7H5.5a1.5 1.5 0 1 0 0 3h1.585a1.5 1.5 0 0 0 .354 1.56L9.88 14H2.633C1.731 14 1 13.164 1 12.133z"
       fill="#EDF3FF"
@@ -58,7 +57,6 @@ const BuildServerProtocolTargetDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v5h-1v-.5c0-.384-.146-.768-.44-1.06l-4-4A1.5 1.5 0 0 0 7 6.5V7H5.5a1.5 1.5 0 1 0 0 3h1.585a1.5 1.5 0 0 0 .354 1.56L9.88 14H2.633C1.731 14 1 13.164 1 12.133z"
       fill="#25324D"

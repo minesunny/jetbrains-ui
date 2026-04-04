@@ -22,7 +22,6 @@ const HelpersFolderClosedLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M10.992 9.7H12v2.615h2.997V9.7h1.008V16h-1.008v-2.745H12V16h-1.008z"
       fill="#3574F0"
@@ -56,7 +55,6 @@ const HelpersFolderClosedDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M10.992 9.7H12v2.615h2.997V9.7h1.008V16h-1.008v-2.745H12V16h-1.008z"
       fill="#548AF7"

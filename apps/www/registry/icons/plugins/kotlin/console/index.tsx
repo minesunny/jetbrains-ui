@@ -22,7 +22,6 @@ const ConsoleLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M4.126 5.167a.5.5 0 0 1 .708 0L7.167 7.5 4.834 9.833a.5.5 0 0 1-.708-.707L5.753 7.5 4.126 5.874a.5.5 0 0 1 0-.707M7.5 10a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"
       fill="#6C707E"
@@ -54,7 +53,6 @@ const ConsoleDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M4.126 5.167a.5.5 0 0 1 .708 0L7.167 7.5 4.834 9.833a.5.5 0 0 1-.708-.707L5.753 7.5 4.126 5.874a.5.5 0 0 1 0-.707M7.5 10a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"
       fill="#CED0D6"

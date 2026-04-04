@@ -22,7 +22,6 @@ const GraphQLSchemaLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m14.133 6.991-1.389-.793a1.5 1.5 0 0 0-1.488 0l-.937.535A1 1 0 0 1 10 6V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-.867.991M8 8.058l-.244.14A1.5 1.5 0 0 0 7 9.5V14H2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1z"
       fill="#EBECF0"
@@ -58,7 +57,6 @@ const GraphQLSchemaDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m14.133 6.991-1.389-.793a1.5 1.5 0 0 0-1.488 0l-.937.535A1 1 0 0 1 10 6V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-.867.991M8 8.058l-.244.14A1.5 1.5 0 0 0 7 9.5V14H2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1z"
       fill="#43454A"

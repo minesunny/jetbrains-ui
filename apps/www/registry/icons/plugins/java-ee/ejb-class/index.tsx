@@ -22,7 +22,6 @@ const EjbClassLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.982 8.507Q15 8.255 15 8a7 7 0 1 0-6.548 6.986c-.773-.872-1.299-1.94-1.424-3.062-.141-1.27.24-2.567 1.276-3.603 1.024-1.024 2.292-1.432 3.564-1.296 1.136.122 2.216.668 3.114 1.482"
       fill="#EDF3FF"
@@ -68,7 +67,6 @@ const EjbClassDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.982 8.507Q15 8.255 15 8a7 7 0 1 0-6.548 6.986c-.773-.872-1.299-1.94-1.424-3.062-.141-1.27.24-2.567 1.276-3.603 1.024-1.024 2.292-1.432 3.564-1.296 1.136.122 2.216.668 3.114 1.482"
       fill="#25324D"

@@ -22,7 +22,6 @@ const ExplorerLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="4" cy="11" r="2" fill="#EDF3FF" />
     <path
       fillRule="evenodd"
@@ -56,7 +55,6 @@ const ExplorerDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <circle cx="4" cy="11" r="2" fill="#25324D" />
       <path

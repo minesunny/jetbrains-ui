@@ -22,7 +22,6 @@ const RubyModuleClosedLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2.558l-.031-.029c-.37-.34-.854-.529-1.356-.529h-3.226c-.502 0-.986.189-1.356.53L7.484 9.952a1.5 1.5 0 0 0-.162 2.033L8.908 14H2.633C1.731 14 1 13.164 1 12.133z"
       fill="#EBECF0"
@@ -64,7 +63,6 @@ const RubyModuleClosedDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2.558l-.031-.029c-.37-.34-.854-.529-1.356-.529h-3.226c-.502 0-.986.189-1.356.53L7.484 9.952a1.5 1.5 0 0 0-.162 2.033L8.908 14H2.633C1.731 14 1 13.164 1 12.133z"
       fill="#43454A"

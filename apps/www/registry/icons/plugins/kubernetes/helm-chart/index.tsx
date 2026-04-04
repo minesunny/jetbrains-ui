@@ -22,7 +22,6 @@ const HelmChartLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3.257A5.5 5.5 0 0 0 6 11.5V14H3a2 2 0 0 1-2-2z"
       fill="#EBECF0"
@@ -60,7 +59,6 @@ const HelmChartDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3.257A5.5 5.5 0 0 0 6 11.5V14H3a2 2 0 0 1-2-2z"

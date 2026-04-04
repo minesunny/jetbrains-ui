@@ -430,5 +430,5 @@ export { Warehouse } from './warehouse';
 export type { WarehouseProps } from './warehouse';
 export { Yugabyte } from './yugabyte';
 export type { YugabyteProps } from './yugabyte';
-export { iconNames } from './types';
-export type { IconName, IconMode, IconProps, IconSize } from './types';
+export { svgNames } from './types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';

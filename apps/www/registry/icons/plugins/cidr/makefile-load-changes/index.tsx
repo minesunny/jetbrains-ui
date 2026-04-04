@@ -22,7 +22,6 @@ const MakefileLoadChangesLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M4.086 3 8 6.914 11.914 3H14v4.416q.537.236 1 .584V3a1 1 0 0 0-1-1h-2.086a1 1 0 0 0-.707.293L8 5.5 4.793 2.293A1 1 0 0 0 4.086 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V8l2 2V8.586l-3-3V13H2V3z"
@@ -59,7 +58,6 @@ const MakefileLoadChangesDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M4.086 3 8 6.914 11.914 3H14v4.416q.537.236 1 .584V3a1 1 0 0 0-1-1h-2.086a1 1 0 0 0-.707.293L8 5.5 4.793 2.293A1 1 0 0 0 4.086 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V8l2 2V8.586l-3-3V13H2V3z"

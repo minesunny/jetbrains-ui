@@ -8,5 +8,5 @@ export { BookmarksList } from './bookmarks-list';
 export type { BookmarksListProps } from './bookmarks-list';
 export { Mnemonic } from './mnemonic';
 export type { MnemonicProps } from './mnemonic';
-export { iconNames } from '../types';
-export type { IconName, IconMode, IconProps, IconSize } from '../types';
+export { svgNames } from '../types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

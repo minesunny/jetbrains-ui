@@ -22,7 +22,6 @@ const WebArtifactLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3.294 10.709 1.293 8.708a1 1 0 0 1 0-1.414l2-2.001a1 1 0 0 1 1.415 0l2 2a1 1 0 0 1 0 1.415l-2 2a1 1 0 0 1-1.414 0"
       fill="#EDF3FF"
@@ -90,7 +89,6 @@ const WebArtifactDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3.294 10.709 1.293 8.708a1 1 0 0 1 0-1.414l2-2.001a1 1 0 0 1 1.415 0l2 2a1 1 0 0 1 0 1.415l-2 2a1 1 0 0 1-1.414 0"
       fill="#25324D"

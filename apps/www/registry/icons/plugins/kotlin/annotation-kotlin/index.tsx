@@ -22,7 +22,6 @@ const AnnotationKotlinLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M8 8h8v8H8z" fill="#F2FCF3" />
     <path
       d="M10 10h4.645l-1.97 1.97a.75.75 0 0 0 0 1.06l1.97 1.97H10z"
@@ -64,7 +63,6 @@ const AnnotationKotlinDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M8 8h8v8H8z" fill="#253627" />
     <path
       d="M10 10h4.645l-1.97 1.97a.75.75 0 0 0 0 1.06l1.97 1.97H10z"

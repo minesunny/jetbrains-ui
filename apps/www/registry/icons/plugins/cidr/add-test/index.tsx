@@ -22,7 +22,6 @@ const AddTestLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M14.464 10.692a7 7 0 1 0-7.069 4.283L12 5.763z" fill="#EDF3FF" />
     <path
       d="M13.83 9.424Q13.998 8.737 14 8a6 6 0 1 0-6.117 5.999l-.488.975a7 7 0 1 1 7.069-4.283z"
@@ -101,7 +100,6 @@ const AddTestDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M14.464 10.692a7 7 0 1 0-7.069 4.283L12 5.763z" fill="#25324D" />
     <path
       d="M13.83 9.424Q13.998 8.737 14 8a6 6 0 1 0-6.117 5.999l-.488.975a7 7 0 1 1 7.069-4.283z"

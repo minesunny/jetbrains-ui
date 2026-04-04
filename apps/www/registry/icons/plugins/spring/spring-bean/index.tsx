@@ -22,7 +22,6 @@ const SpringBeanLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.421 3.543c2.865 2.866 3.656 6.772.76 9.668-2.897 2.897-6.953 2.003-9.692-.736C.75 9.736-.065 5.634 2.77 2.8s6.787-2.122 9.652.743"
       fill="#F2FCF3"
@@ -54,7 +53,6 @@ const SpringBeanDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.421 3.543c2.865 2.866 3.656 6.772.76 9.668-2.897 2.897-6.953 2.003-9.692-.736C.75 9.736-.065 5.634 2.77 2.8s6.787-2.122 9.652.743"
       fill="#253627"

@@ -22,7 +22,6 @@ const BeanPropertyLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.87 9c-.843 0-1.507.371-1.887.998v-.875H10V16h1.003v-2.48c.384.607 1.039.965 1.868.965 1.458 0 2.476-1.115 2.476-2.742S14.33 9 12.871 9m-.21 4.585c-.976 0-1.657-.752-1.657-1.842S11.683 9.9 12.66 9.9c.972 0 1.642.752 1.642 1.842s-.67 1.842-1.642 1.842"
       fill="#6C707E"
@@ -56,7 +55,6 @@ const BeanPropertyDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12.87 9c-.843 0-1.507.371-1.887.998v-.875H10V16h1.003v-2.48c.384.607 1.039.965 1.868.965 1.458 0 2.476-1.115 2.476-2.742S14.33 9 12.871 9m-.21 4.585c-.976 0-1.657-.752-1.657-1.842S11.683 9.9 12.66 9.9c.972 0 1.642.752 1.642 1.842s-.67 1.842-1.642 1.842"
       fill="#CED0D6"

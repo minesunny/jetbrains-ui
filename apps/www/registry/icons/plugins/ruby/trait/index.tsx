@@ -22,7 +22,6 @@ const TraitLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8" fill="#F2FCF3" />
     <path
       fillRule="evenodd"
@@ -57,7 +56,6 @@ const TraitDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8" fill="#253627" />
     <path
       fillRule="evenodd"

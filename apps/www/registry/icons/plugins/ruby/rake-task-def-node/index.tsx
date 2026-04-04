@@ -22,7 +22,6 @@ const RakeTaskDefNodeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 1a7 7 0 1 0 .83 13.951l-1.39-1.39a1.5 1.5 0 0 1 0-2.122l.792-.793a2.5 2.5 0 0 1 3.248-.247l2.96-2.96c.148-.148.32-.26.504-.332A7 7 0 0 0 8 1"
       fill="#FFF7F7"
@@ -60,7 +59,6 @@ const RakeTaskDefNodeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 1a7 7 0 1 0 .83 13.951l-1.39-1.39a1.5 1.5 0 0 1 0-2.122l.792-.793a2.5 2.5 0 0 1 3.248-.247l2.96-2.96c.148-.148.32-.26.504-.332A7 7 0 0 0 8 1"
       fill="#402929"

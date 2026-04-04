@@ -22,7 +22,6 @@ const DiffLiquibaseChangelogLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
       stroke="#3574F0"
@@ -56,7 +55,6 @@ const DiffLiquibaseChangelogDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
       stroke="#548AF7"

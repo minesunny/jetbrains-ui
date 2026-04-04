@@ -22,7 +22,6 @@ const HibernateLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m3.962 1 2.693 4.664-2.694 4.67-2.691-4.67z" fill="#59666C" />
     <path d="M9.348 1H3.963l2.693 4.664h5.386z" fill="#BCAE79" />
     <path d="m12.039 15-2.693-4.664 2.694-4.67 2.69 4.67z" fill="#59666C" />
@@ -48,7 +47,6 @@ const HibernateDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m3.962 1 2.693 4.664-2.694 4.67-2.691-4.67z" fill="#59666C" />
     <path d="M9.348 1H3.963l2.693 4.664h5.386z" fill="#BCAE79" />
     <path d="m12.039 15-2.693-4.664 2.694-4.67 2.69 4.67z" fill="#59666C" />

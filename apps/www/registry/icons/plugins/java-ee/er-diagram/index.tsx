@@ -22,7 +22,6 @@ const ErDiagramLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1.5 10.5v4h5v-4zM9.5 10.5v4h5v-4z"
       stroke="#6C707E"
@@ -55,7 +54,6 @@ const ErDiagramDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1.5 10.5v4h5v-4zM9.5 10.5v4h5v-4z"
       stroke="#CED0D6"

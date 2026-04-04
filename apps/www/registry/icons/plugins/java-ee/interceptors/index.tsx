@@ -22,7 +22,6 @@ const InterceptorsLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" stroke="#6C707E" />
     <path
       d="M10.526 5.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.145-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425"
@@ -55,7 +54,6 @@ const InterceptorsDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" stroke="#CED0D6" />
     <path
       d="M10.526 5.453c1.638 1.638 2.09 3.87.434 5.525s-3.972 1.145-5.538-.42c-1.565-1.566-2.03-3.91-.411-5.53 1.62-1.619 3.878-1.212 5.515.425"

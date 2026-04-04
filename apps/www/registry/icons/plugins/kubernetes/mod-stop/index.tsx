@@ -22,7 +22,6 @@ const ModStopLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="9.5"
       y="9.5"
@@ -53,7 +52,6 @@ const ModStopDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="9.5"
       y="9.5"

@@ -22,7 +22,6 @@ const SuccededLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="7" fill="#55A76A" />
     <path
       d="m4.266 8.39 2.541 2.647 4.795-5.201"
@@ -52,7 +51,6 @@ const SuccededDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="7" fill="#5FAD65" />
     <path
       d="m4.266 8.39 2.541 2.647 4.795-5.201"

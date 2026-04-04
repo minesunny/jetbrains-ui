@@ -22,7 +22,6 @@ const AwsGlueLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m12.773 5.144 1.23.37v1.59l-1.23-.089z" fill="#F58435" />
     <path
       d="M11.113 5.397v1.716l1.659-.098V5.144zM3.219 4.276 2 4.656v2.496l1.219-.098z"
@@ -57,7 +56,6 @@ const AwsGlueDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="m12.773 5.144 1.23.37v1.59l-1.23-.089z" fill="#F58435" />
     <path
       d="M11.113 5.397v1.716l1.659-.098V5.144zM3.219 4.276 2 4.656v2.496l1.219-.098z"

@@ -22,7 +22,6 @@ const SpringIntegrationLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8.854 11.146a.5.5 0 0 0-.708 0l-1.5 1.5a.5.5 0 0 0 .708.708L8 12.707v.793a2.5 2.5 0 0 0 2.5 2.5h3a2.5 2.5 0 0 0 2.5-2.5v-1a.5.5 0 0 0-1 0v1a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-.793l.646.647a.5.5 0 0 0 .708-.708z"
       fill="#3574F0"
@@ -61,7 +60,6 @@ const SpringIntegrationDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8.854 11.146a.5.5 0 0 0-.708 0l-1.5 1.5a.5.5 0 0 0 .708.708L8 12.707v.793a2.5 2.5 0 0 0 2.5 2.5h3a2.5 2.5 0 0 0 2.5-2.5v-1a.5.5 0 0 0-1 0v1a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-.793l.646.647a.5.5 0 0 0 .708-.708z"
       fill="#548AF7"

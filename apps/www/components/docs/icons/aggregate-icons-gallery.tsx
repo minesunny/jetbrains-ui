@@ -4,46 +4,43 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { cn } from '@workspace/ui/lib/utils';
 import { useIconMode } from '@/components/docs/icons/use-icon-mode';
 
-type IconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-type IconMode = 'light' | 'dark';
-type IconModule = Record<string, unknown>;
-type IconComponent = React.ComponentType<{
-  size?: IconSize;
-  mode?: IconMode;
+type SvgSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+type SvgMode = 'light' | 'dark';
+type SvgModule = Record<string, unknown>;
+type SvgComponent = React.ComponentType<{
+  size?: SvgSize;
+  mode?: SvgMode;
 }>;
 
-export type IconPackLoader = {
+export type SvgPackLoader = {
   id: string;
   label: string;
   importPath: string;
-  load: () => Promise<IconModule>;
+  load: () => Promise<SvgModule>;
 };
 
-type IconEntry = {
+type SvgEntry = {
   key: string;
   name: string;
   packId: string;
   packLabel: string;
   importPath: string;
-  component: IconComponent;
+  component: SvgComponent;
 };
 
-function isIconExport(
+function isSvgExport(
   name: string,
   value: unknown,
 ): value is React.ComponentType<{
-  size?: IconSize;
-  mode?: IconMode;
+  size?: SvgSize;
+  mode?: SvgMode;
 }> {
   return !name.endsWith('Props') && typeof value === 'function';
 }
 
-function extractIconsFromPack(
-  pack: IconPackLoader,
-  mod: IconModule,
-): IconEntry[] {
-  return Object.entries(mod).reduce<IconEntry[]>((acc, [name, value]) => {
-    if (!isIconExport(name, value)) return acc;
+function extractSvgsFromPack(pack: SvgPackLoader, mod: SvgModule): SvgEntry[] {
+  return Object.entries(mod).reduce<SvgEntry[]>((acc, [name, value]) => {
+    if (!isSvgExport(name, value)) return acc;
 
     acc.push({
       key: `${pack.id}:${name}`,
@@ -80,15 +77,15 @@ export function AggregateIconsGallery({
   searchPlaceholder = 'Search icons or category...',
   emptyText = 'No icons found',
 }: {
-  packs: readonly IconPackLoader[];
+  packs: readonly SvgPackLoader[];
   searchPlaceholder?: string;
   emptyText?: string;
 }) {
-  const [selectedSize, setSelectedSize] = useState<IconSize>('md');
+  const [selectedSize, setSelectedSize] = useState<SvgSize>('md');
   const [selectedMode, setSelectedMode] = useIconMode();
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedIcon, setExpandedIcon] = useState<string | null>(null);
-  const [allIcons, setAllIcons] = useState<IconEntry[]>([]);
+  const [allIcons, setAllIcons] = useState<SvgEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
 
@@ -102,7 +99,7 @@ export function AggregateIconsGallery({
         const loaded = await Promise.all(
           packs.map(async (pack) => {
             const mod = await pack.load();
-            return extractIconsFromPack(pack, mod);
+            return extractSvgsFromPack(pack, mod);
           }),
         );
 

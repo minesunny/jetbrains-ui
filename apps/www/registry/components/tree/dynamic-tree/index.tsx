@@ -5,7 +5,7 @@ import * as React from 'react';
 import { type ItemInstance } from '@headless-tree/core';
 import { SVG } from '@/registry/components/svg';
 
-export { asyncDataLoaderFeature } from './dynamic-tree-feature';
+export { asyncDataLoaderFeature } from './feature';
 
 export interface DynamicTreeItemData {
   label?: string;
@@ -73,7 +73,7 @@ function TreeItemDisclosure({
             : `Expand ${itemLabel}`
       }
       aria-disabled={isDisabled ? true : undefined}
-      className="tree-item-disclosure relative z-10 inline-flex size-4 shrink-0 items-center justify-center cursor-default outline-none disabled:cursor-not-allowed"
+      className="relative z-10 inline-flex size-4 shrink-0 items-center justify-center cursor-default outline-none disabled:cursor-not-allowed"
       onClick={(event) => {
         event.stopPropagation();
         onToggle();
@@ -121,7 +121,7 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
     <div
       data-slot="tree-item"
       data-value={item.getId()}
-      className="tree-item my-ui-hairline p-0"
+      className="my-0.5 w-full p-0"
     >
       <div
         {...resolvedProps}
@@ -141,7 +141,7 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
         style={
           {
             ...resolvedStyle,
-            '--tree-item-padding-left': `${
+            paddingLeft: `${
               16 +
               item.getItemMeta().level * indent +
               Math.max(0, item.getItemMeta().level - 1) * 2
@@ -149,13 +149,13 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
           } as React.CSSProperties
         }
         className={
-          "tree-item-button relative box-border flex h-6 w-full min-w-0 cursor-default items-center gap-ui-hairline pr-ui-section pl-[var(--tree-item-padding-left)] select-none text-gray-1 outline-none transition-[background-color,color] duration-75 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:text-gray-8 [&_.tree-item-disclosure]:text-gray-7 [&_.tree-item-icon]:text-gray-6 [&:focus_.tree-item-disclosure]:text-current [&:focus_.tree-item-icon]:text-current [&[data-disabled='true']_.tree-item-disclosure]:text-gray-8 [&:hover:not([data-disabled='true'])_.tree-item-overlay]:bg-blue-11 [&:focus_.tree-item-overlay]:bg-blue-11 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-2 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-blue-4 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-offset-1 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-offset-white dark:text-gray-12 dark:data-[disabled=true]:text-gray-7 dark:[&_.tree-item-disclosure]:text-gray-10 dark:[&_.tree-item-icon]:text-gray-10 dark:[&[data-disabled=true]_.tree-item-disclosure]:text-gray-7 dark:[&:hover:not([data-disabled='true'])_.tree-item-overlay]:bg-blue-2 dark:[&:focus_.tree-item-overlay]:bg-blue-2 dark:[&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-blue-6 dark:[&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-offset-gray-2"
+          "relative box-border flex h-6 w-full min-w-0 cursor-default items-center gap-0.5 pr-4 select-none text-gray-1 outline-none transition-[background-color,color] duration-75 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:text-gray-8 [&_[data-slot=tree-item-disclosure]]:text-gray-7 [&_[data-slot=tree-item-icon]]:text-gray-6 [&:focus_[data-slot=tree-item-disclosure]]:text-current [&:focus_[data-slot=tree-item-icon]]:text-current [&[data-disabled='true']_[data-slot=tree-item-disclosure]]:text-gray-8 [&:hover:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:bg-blue-11 [&:focus_[data-slot=tree-item-overlay]]:bg-blue-11 [&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-2 [&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-blue-4 [&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-offset-1 [&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-offset-white dark:text-gray-12 dark:data-[disabled=true]:text-gray-7 dark:[&_[data-slot=tree-item-disclosure]]:text-gray-10 dark:[&_[data-slot=tree-item-icon]]:text-gray-10 dark:[&[data-disabled=true]_[data-slot=tree-item-disclosure]]:text-gray-7 dark:[&:hover:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:bg-blue-2 dark:[&:focus_[data-slot=tree-item-overlay]]:bg-blue-2 dark:[&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-blue-6 dark:[&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-offset-gray-2"
         }
       >
         <span
           aria-hidden="true"
           data-slot="tree-item-overlay"
-          className="tree-item-overlay pointer-events-none absolute inset-y-0 left-ui-tree-overlay right-ui-tree-overlay rounded-[4px] bg-transparent transition-[background-color,box-shadow] duration-150 ease-in-out"
+          className="pointer-events-none absolute inset-y-0 left-3 right-3 rounded-[4px] bg-transparent transition-[background-color,box-shadow] duration-150 ease-in-out"
         />
 
         {item.isFolder() ? (
@@ -175,17 +175,17 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
           <span
             data-slot="tree-item-disclosure-placeholder"
             aria-hidden="true"
-            className="tree-item-disclosure-placeholder relative z-10 inline-flex size-4 shrink-0 items-center justify-center"
+            className="relative z-10 inline-flex size-4 shrink-0 items-center justify-center"
           />
         )}
         <span
           data-slot="tree-item-content"
-          className="tree-item-content relative z-10 inline-flex h-5 min-w-0 flex-1 items-center gap-ui-compact"
+          className="relative z-10 inline-flex h-5 min-w-0 flex-1 items-center gap-1.5"
         >
           {itemData?.icon ? (
             <span
               data-slot="tree-item-icon"
-              className="tree-item-icon inline-flex size-4 shrink-0 items-center justify-center"
+              className="inline-flex size-4 shrink-0 items-center justify-center"
             >
               <SVG name={itemData.icon} size="md" />
             </span>
@@ -193,7 +193,7 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
 
           <span
             data-slot="tree-item-label"
-            className="tree-item-label min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"
+            className="min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"
           >
             {itemLabel}
           </span>
@@ -201,7 +201,7 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
           {itemData?.endContent ? (
             <span
               data-slot="tree-item-end"
-              className="tree-item-end ml-auto pr-ui-hairline text-[13px] leading-4 font-medium text-gray-7 dark:text-gray-7"
+              className="ml-auto pr-0.5 text-[13px] leading-4 font-medium text-gray-7 dark:text-gray-7"
             >
               {itemData.endContent}
             </span>
@@ -227,7 +227,7 @@ function DynamicTree<TItem extends DynamicTreeItemData>({
     <div
       {...containerProps}
       data-slot="tree"
-      className="tree dynamic-tree block w-full min-w-ui-tree box-border bg-transparent py-ui-control-row text-ui-default text-gray-1 dark:text-gray-12"
+      className="block w-full min-w-[244px] box-border bg-transparent py-2 font-sans text-[13px] leading-4 font-medium text-gray-1 dark:text-gray-12"
       style={{ width, height }}
       {...props}
     >

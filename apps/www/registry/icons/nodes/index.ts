@@ -152,5 +152,5 @@ export { WarningIntroduction } from './warning-introduction';
 export type { WarningIntroductionProps } from './warning-introduction';
 export { WebResources } from './web-resources';
 export type { WebResourcesProps } from './web-resources';
-export { iconNames } from './types';
-export type { IconName, IconMode, IconProps, IconSize } from './types';
+export { svgNames } from './types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';

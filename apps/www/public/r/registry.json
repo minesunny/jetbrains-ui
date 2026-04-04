@@ -25,8 +25,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "utils",
-        "@jetbrains-ui/buttons",
+        "@jetbrains-ui/button",
         "@jetbrains-ui/tooltip",
         "@jetbrains-ui/icons-general-status-information-dialog",
         "@jetbrains-ui/icons-general-status-error-dialog",
@@ -37,7 +36,7 @@
         {
           "path": "registry/components/alert/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/alert/index.tsx"
+          "target": "components/jetbrains-ui/alert.tsx"
         }
       ],
       "meta": {
@@ -63,22 +62,18 @@
       }
     },
     {
-      "name": "buttons",
+      "name": "button",
       "type": "registry:ui",
       "title": "Buttons",
       "description": "JetBrains UI 风格的按钮组件集合，当前包含 Button。",
       "dependencies": [
         "@radix-ui/react-slot"
       ],
-      "registryDependencies": [
-        "utils",
-        "@jetbrains-ui/tooltip"
-      ],
       "files": [
         {
           "path": "registry/components/button/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/buttons/index.tsx"
+          "target": "components/jetbrains-ui/button.tsx"
         }
       ],
       "meta": {
@@ -131,14 +126,11 @@
       "dependencies": [
         "@radix-ui/react-checkbox"
       ],
-      "registryDependencies": [
-        "utils"
-      ],
       "files": [
         {
           "path": "registry/components/checkbox/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/checkbox/index.tsx"
+          "target": "components/jetbrains-ui/checkbox.tsx"
         }
       ],
       "meta": {
@@ -189,14 +181,11 @@
       "dependencies": [
         "@radix-ui/react-select"
       ],
-      "registryDependencies": [
-        "utils"
-      ],
       "files": [
         {
           "path": "registry/components/combo-box/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/combo-box/index.tsx"
+          "target": "components/jetbrains-ui/combo-box.tsx"
         }
       ],
       "meta": {
@@ -245,15 +234,11 @@
       "dependencies": [
         "radix-ui"
       ],
-      "registryDependencies": [
-        "utils",
-        "@jetbrains-ui/tooltip"
-      ],
       "files": [
         {
           "path": "registry/components/context-menu/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/context-menu/index.tsx"
+          "target": "components/jetbrains-ui/context-menu.tsx"
         }
       ],
       "meta": {
@@ -287,7 +272,6 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "utils",
         "@jetbrains-ui/tooltip"
       ],
       "files": [
@@ -321,14 +305,11 @@
       "title": "Input",
       "description": "JetBrains UI 风格的单行输入框组件，支持 invalid/disabled 等常见状态",
       "dependencies": [],
-      "registryDependencies": [
-        "utils"
-      ],
       "files": [
         {
           "path": "registry/components/input/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/input/index.tsx"
+          "target": "components/jetbrains-ui/input.tsx"
         }
       ],
       "meta": {
@@ -379,9 +360,6 @@
       "dependencies": [
         "radix-ui"
       ],
-      "registryDependencies": [
-        "utils"
-      ],
       "files": [
         {
           "path": "registry/components/label/index.tsx",
@@ -415,14 +393,11 @@
       "dependencies": [
         "@radix-ui/react-radio-group"
       ],
-      "registryDependencies": [
-        "utils"
-      ],
       "files": [
         {
           "path": "registry/components/radio/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/radio/index.tsx"
+          "target": "components/jetbrains-ui/radio.tsx"
         }
       ],
       "meta": {
@@ -466,14 +441,11 @@
       "dependencies": [
         "react-resizable-panels"
       ],
-      "registryDependencies": [
-        "utils"
-      ],
       "files": [
         {
           "path": "registry/components/resizable/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/resizable/index.tsx"
+          "target": "components/jetbrains-ui/resizable.tsx"
         }
       ],
       "meta": {
@@ -500,9 +472,6 @@
       "description": "JetBrains-style custom scroll area component.",
       "dependencies": [
         "radix-ui"
-      ],
-      "registryDependencies": [
-        "utils"
       ],
       "files": [
         {
@@ -536,9 +505,6 @@
       "description": "JetBrains-style visual separator component.",
       "dependencies": [
         "radix-ui"
-      ],
-      "registryDependencies": [
-        "utils"
       ],
       "files": [
         {
@@ -577,12 +543,7 @@
         {
           "path": "registry/components/svg/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/svg/index.tsx"
-        },
-        {
-          "path": "registry/components/svg/registry.ts",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/svg/registry.ts"
+          "target": "components/jetbrains-ui/svg.tsx"
         }
       ],
       "meta": {
@@ -611,9 +572,6 @@
       "description": "JetBrains-style switch toggle component.",
       "dependencies": [
         "radix-ui"
-      ],
-      "registryDependencies": [
-        "utils"
       ],
       "files": [
         {
@@ -647,9 +605,6 @@
       "description": "JetBrains UI 风格的标签页组件，基于 Radix UI Tabs 构建",
       "dependencies": [
         "@radix-ui/react-tabs"
-      ],
-      "registryDependencies": [
-        "utils"
       ],
       "files": [
         {
@@ -712,9 +667,6 @@
         "radix-ui",
         "class-variance-authority"
       ],
-      "registryDependencies": [
-        "utils"
-      ],
       "files": [
         {
           "path": "registry/components/toggle/index.tsx",
@@ -746,14 +698,11 @@
       "title": "Toolbar",
       "description": "JetBrains-style toolbar primitives built from Toolbar and ToolbarItem.",
       "dependencies": [],
-      "registryDependencies": [
-        "utils"
-      ],
       "files": [
         {
           "path": "registry/components/toolbar/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/toolbar/index.tsx"
+          "target": "components/jetbrains-ui/toolbar.tsx"
         }
       ],
       "meta": {
@@ -786,9 +735,6 @@
       "dependencies": [
         "radix-ui"
       ],
-      "registryDependencies": [
-        "utils"
-      ],
       "files": [
         {
           "path": "registry/components/tooltip/index.tsx",
@@ -815,16 +761,15 @@
       }
     },
     {
-      "name": "tree",
+      "name": "trees",
       "type": "registry:ui",
-      "title": "Tree",
-      "description": "JetBrains-style tree view component with selectable and expandable items.",
+      "title": "Trees",
+      "description": "JetBrains-style tree view components including static tree and dynamic async tree.",
       "dependencies": [
         "@headless-tree/core",
         "@headless-tree/react"
       ],
       "registryDependencies": [
-        "utils",
         "@jetbrains-ui/scroll-area",
         "@jetbrains-ui/context-menu",
         "@jetbrains-ui/icons-general-general-delete",
@@ -834,19 +779,14 @@
       ],
       "files": [
         {
-          "path": "registry/components/tree/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/tree/index.tsx"
-        },
-        {
           "path": "registry/components/tree/tree/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/tree/tree/index.tsx"
+          "target": "components/jetbrains-ui/tree/tree.tsx"
         },
         {
           "path": "registry/components/tree/dynamic-tree/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/tree/dynamic-tree/index.tsx"
+          "target": "components/jetbrains-ui/tree/dynamic-tree.tsx"
         },
         {
           "path": "registry/components/tree/dynamic-tree/feature.ts",
@@ -864,9 +804,10 @@
         ],
         "category": "navigation",
         "docs": {
-          "description": "JetBrains-style static tree view with nested hierarchy, selection and collapse controls.",
+          "description": "JetBrains-style tree view components including static tree and dynamic async tree.",
           "features": [
-            "Nested tree structure",
+            "Static nested tree structure",
+            "Dynamic async tree with data loading",
             "Controlled and uncontrolled selected/expanded states",
             "Keyboard support for selection and collapse",
             "Token-driven light/dark theme support"
@@ -875,16 +816,15 @@
       }
     },
     {
-      "name": "tree/dynamic-tree",
+      "name": "dynamic-tree",
       "type": "registry:ui",
       "title": "Dynamic Tree",
-      "description": "JetBrains-style tree presenter for items created with @headless-tree.",
+      "description": "Async tree component built on top of @headless-tree with JetBrains UI styling.",
       "dependencies": [
         "@headless-tree/core",
         "@headless-tree/react"
       ],
       "registryDependencies": [
-        "utils",
         "@jetbrains-ui/scroll-area",
         "@jetbrains-ui/context-menu",
         "@jetbrains-ui/icons-general-general-delete",
@@ -896,7 +836,7 @@
         {
           "path": "registry/components/tree/dynamic-tree/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/tree/dynamic-tree/index.tsx"
+          "target": "components/jetbrains-ui/tree/dynamic-tree.tsx"
         },
         {
           "path": "registry/components/tree/dynamic-tree/feature.ts",
@@ -906,8 +846,9 @@
       ],
       "meta": {
         "keywords": [
-          "dynamic-tree",
           "tree",
+          "dynamic",
+          "async",
           "navigation",
           "jetbrains",
           "ui",
@@ -915,30 +856,23 @@
         ],
         "category": "navigation",
         "docs": {
-          "description": "JetBrains-style tree view that renders headless-tree items with a shared visual style.",
+          "description": "Async tree component built on top of @headless-tree.",
           "features": [
-            "Render items from user-defined @headless-tree setup",
-            "Generic item typing for tree node data",
-            "Custom item prop support for different row types",
-            "Recommended asyncDataLoaderFeature with refreshable item cache",
-            "Loading and disclosure states for async trees",
-            "Built-in item context menu with refresh and delete actions",
+            "Async data loading with caching",
+            "Customizable item component",
+            "Built-in context menu support",
             "Token-driven light/dark theme support"
           ]
         }
       }
     },
     {
-      "name": "tree/tree",
+      "name": "tree",
       "type": "registry:ui",
       "title": "Tree",
-      "description": "JetBrains-style static tree view with selectable and expandable items.",
-      "dependencies": [
-        "@headless-tree/core",
-        "@headless-tree/react"
-      ],
+      "description": "JetBrains-style static tree view with nested hierarchy, selection and collapse controls.",
+      "dependencies": [],
       "registryDependencies": [
-        "utils",
         "@jetbrains-ui/scroll-area",
         "@jetbrains-ui/icons-general-general-chevron-down",
         "@jetbrains-ui/icons-general-general-chevron-right"
@@ -947,7 +881,7 @@
         {
           "path": "registry/components/tree/tree/index.tsx",
           "type": "registry:ui",
-          "target": "components/jetbrains-ui/tree/tree/index.tsx"
+          "target": "components/jetbrains-ui/tree/tree.tsx"
         }
       ],
       "meta": {
@@ -1511,7 +1445,7 @@
       "description": "Demo showing dynamic tree component",
       "dependencies": [],
       "registryDependencies": [
-        "@jetbrains-ui/tree/dynamic-tree"
+        "@jetbrains-ui/dynamic-tree"
       ],
       "files": [
         {
@@ -1531,7 +1465,7 @@
       "description": "Demo showing tree component",
       "dependencies": [],
       "registryDependencies": [
-        "@jetbrains-ui/tree/tree"
+        "@jetbrains-ui/tree"
       ],
       "files": [
         {
@@ -62078,6 +62012,39 @@
           ]
         }
       }
+    },
+    {
+      "name": "styles-jetbrains-theme",
+      "type": "registry:style",
+      "title": "JetBrains Theme (Tailwind v4)",
+      "description": "Tailwind v4 @theme 桥接，使 JetBrains tokens 在 Tailwind 工具类中可用（如 bg-gray-1）",
+      "files": [
+        {
+          "path": "registry/styles/jetbrains/theme.css",
+          "type": "registry:style",
+          "target": "styles/jetbrains-theme.css"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "jetbrains",
+          "theme",
+          "tailwind",
+          "css-variables",
+          "design-system"
+        ],
+        "docs": {
+          "description": "Tailwind v4 @theme 桥接文件，将 JetBrains tokens 注册到 Tailwind 的设计系统中。",
+          "features": [
+            "将 JetBrains 颜色调色板注册为 Tailwind 颜色工具类（bg-gray-1, text-blue-5 等）",
+            "将 JetBrains 语义颜色注册为 Tailwind 颜色工具类（bg-alert-bg, border-checkbox-checked-border 等）",
+            "需要在 tokens.css 之后导入"
+          ]
+        }
+      },
+      "registryDependencies": [
+        "@jetbrains-ui/styles-jetbrains-tokens"
+      ]
     }
   ]
 }

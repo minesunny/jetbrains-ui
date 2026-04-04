@@ -22,7 +22,6 @@ const RunSporkServerLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M4 4h2v1H4z" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -63,7 +62,6 @@ const RunSporkServerDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M4 4h2v1H4z" fill="#CED0D6" />
     <path
       fillRule="evenodd"

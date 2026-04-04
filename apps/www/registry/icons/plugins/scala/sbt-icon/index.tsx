@@ -22,7 +22,6 @@ const SbtIconLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8.683 2.55c.518-.138 1.07.01 1.45.39l2.928 2.927c.379.38.527.932.388 1.45l-1.072 3.998a1.5 1.5 0 0 1-1.062 1.062l-3.998 1.072a1.5 1.5 0 0 1-1.45-.389L2.94 10.134a1.5 1.5 0 0 1-.388-1.45l1.072-3.998a1.5 1.5 0 0 1 1.062-1.062z"
       stroke="#A46704"
@@ -48,7 +47,6 @@ const SbtIconDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8.683 2.55c.518-.138 1.07.01 1.45.39l2.928 2.927c.379.38.527.932.388 1.45l-1.072 3.998a1.5 1.5 0 0 1-1.062 1.062l-3.998 1.072a1.5 1.5 0 0 1-1.45-.389L2.94 10.134a1.5 1.5 0 0 1-.388-1.45l1.072-3.998a1.5 1.5 0 0 1 1.062-1.062z"
       stroke="#BA9752"

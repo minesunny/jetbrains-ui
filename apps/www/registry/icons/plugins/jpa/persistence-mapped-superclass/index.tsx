@@ -22,7 +22,6 @@ const PersistenceMappedSuperclassLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M16 13.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" fill="#E66D17" />
     <path
       fillRule="evenodd"
@@ -51,7 +50,6 @@ const PersistenceMappedSuperclassDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M16 13.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" fill="#C77D55" />
     <path
       fillRule="evenodd"

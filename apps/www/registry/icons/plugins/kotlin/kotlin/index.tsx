@@ -22,7 +22,6 @@ const KotlinLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M13.334 12.631a.5.5 0 0 1-.338.869H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h9.996a.5.5 0 0 1 .338.869L8.684 7.63a.5.5 0 0 0 0 .738z"
       fill="#FAF5FF"
@@ -54,7 +53,6 @@ const KotlinDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M13.334 12.631a.5.5 0 0 1-.338.869H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h9.996a.5.5 0 0 1 .338.869L8.684 7.63a.5.5 0 0 0 0 .738z"
       fill="#2F2936"

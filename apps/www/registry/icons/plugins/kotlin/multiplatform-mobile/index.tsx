@@ -22,7 +22,6 @@ const MultiplatformMobileLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M6.5 12a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -51,7 +50,6 @@ const MultiplatformMobileDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M6.5 12a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z" fill="#CED0D6" />
     <path
       fillRule="evenodd"

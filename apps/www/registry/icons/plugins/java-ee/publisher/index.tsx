@@ -22,7 +22,6 @@ const PublisherLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M8 12.401 9.064 14H6.934z" fill="#EBECF0" />
     <path
       fillRule="evenodd"
@@ -67,7 +66,6 @@ const PublisherDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M8 12.401 9.064 14H6.934z" fill="#43454A" />
     <path
       fillRule="evenodd"

@@ -22,7 +22,6 @@ const EqualsAndHashcodeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M14.947 9.724a.5.5 0 1 0-.894-.447L13.19 11H10.5a.5.5 0 0 0 0 1h2.191l-.5 1H10.5a.5.5 0 0 0 0 1h1.191l-.638 1.277a.5.5 0 1 0 .894.447L12.81 14H15.5a.5.5 0 0 0 0-1h-2.19l.5-1h1.69a.5.5 0 0 0 0-1h-1.19z"
@@ -67,7 +66,6 @@ const EqualsAndHashcodeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M14.947 9.724a.5.5 0 1 0-.894-.447L13.19 11H10.5a.5.5 0 0 0 0 1h2.191l-.5 1H10.5a.5.5 0 0 0 0 1h1.191l-.638 1.277a.5.5 0 1 0 .894.447L12.81 14H15.5a.5.5 0 0 0 0-1h-2.19l.5-1h1.69a.5.5 0 0 0 0-1h-1.19z"

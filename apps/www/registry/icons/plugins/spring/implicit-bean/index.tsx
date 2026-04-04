@@ -22,7 +22,6 @@ const ImplicitBeanLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#EBECF0" d="M11 12H15V15H11z" />
     <path
       fillRule="evenodd"
@@ -59,7 +58,6 @@ const ImplicitBeanDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path fill="#43454A" d="M11 12H15V15H11z" />
     <path
       fillRule="evenodd"

@@ -22,7 +22,6 @@ const MailerLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.93 9q.07-.49.07-1a7 7 0 1 0-8 6.93V11a2 2 0 0 1 2-2z"
       fill="#EDF3FF"
@@ -62,7 +61,6 @@ const MailerDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M14.93 9q.07-.49.07-1a7 7 0 1 0-8 6.93V11a2 2 0 0 1 2-2z"
       fill="#25324D"

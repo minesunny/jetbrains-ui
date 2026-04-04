@@ -22,7 +22,6 @@ const ValidatorLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.5 3.5h3M8.5 8h6M5.5 12.5h9"
       stroke="#6C707E"
@@ -56,7 +55,6 @@ const ValidatorDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.5 3.5h3M8.5 8h6M5.5 12.5h9"
       stroke="#CED0D6"

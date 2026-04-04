@@ -22,7 +22,6 @@ const ObservatoryLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M4 1.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M8 5.5a.5.5 0 0 1 .5.5v2.134a1 1 0 1 1-1 0V6a.5.5 0 0 1 .5-.5"
       fill="#6C707E"
@@ -54,7 +53,6 @@ const ObservatoryDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M4 1.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M8 5.5a.5.5 0 0 1 .5.5v2.134a1 1 0 1 1-1 0V6a.5.5 0 0 1 .5-.5"
       fill="#CED0D6"

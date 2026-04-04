@@ -24,5 +24,5 @@ export { WarningDialog } from './warning-dialog';
 export type { WarningDialogProps } from './warning-dialog';
 export { WarningOutline } from './warning-outline';
 export type { WarningOutlineProps } from './warning-outline';
-export { iconNames } from '../types';
-export type { IconName, IconMode, IconProps, IconSize } from '../types';
+export { svgNames } from '../types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

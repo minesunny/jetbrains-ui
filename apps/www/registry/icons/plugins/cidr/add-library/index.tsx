@@ -22,7 +22,6 @@ const AddLibraryLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M14.464 10.692a7 7 0 1 0-7.069 4.283L12 5.763z" fill="#EDF3FF" />
     <path
       d="m9.487 10.79-.105.21h-.688c-.576 0-1.067-.139-1.318-.416Q7 10.167 7 9.199V5.993L6 6V5h2v4.2c0 .8.5.801 1.033.801h.454z"
@@ -101,7 +100,6 @@ const AddLibraryDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M14.464 10.692a7 7 0 1 0-7.069 4.283L12 5.763z" fill="#25324D" />
     <path
       d="m9.487 10.79-.105.21h-.688c-.576 0-1.067-.139-1.318-.416Q7 10.167 7 9.199V5.993L6 6V5h2v4.2c0 .8.5.801 1.033.801h.454z"

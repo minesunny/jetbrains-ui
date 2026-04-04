@@ -22,7 +22,6 @@ const ModelClassLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M15 8a7 7 0 1 0-7 7v-5a2 2 0 0 1 2-2z" fill="#EDF3FF" />
     <path d="M8 14a6 6 0 1 1 6-6h1a7 7 0 1 0-7 7z" fill="#3574F0" />
     <path
@@ -56,7 +55,6 @@ const ModelClassDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M15 8a7 7 0 1 0-7 7v-5a2 2 0 0 1 2-2z" fill="#25324D" />
     <path d="M8 14a6 6 0 1 1 6-6h1a7 7 0 1 0-7 7z" fill="#548AF7" />
     <path

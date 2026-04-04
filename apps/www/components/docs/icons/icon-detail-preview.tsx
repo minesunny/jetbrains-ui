@@ -66,12 +66,12 @@ import * as RunIcons from '@/registry/icons/run';
 import * as RunConfigurationsIcons from '@/registry/icons/run-configurations';
 import * as TerminalIcons from '@/registry/icons/terminal';
 import * as VcsIcons from '@/registry/icons/vcs';
-import type { IconSize } from '@/registry/icons/general/types';
+import type { SvgSize } from '@/registry/icons/general/types';
 import { cn } from '@workspace/ui/lib/utils';
 import { useIconMode } from '@/components/docs/icons/use-icon-mode';
 
-const sizes: IconSize[] = ['xs', 'sm', 'md', 'lg', 'xl'];
-const sizeLabels: Record<IconSize, string> = {
+const sizes: SvgSize[] = ['xs', 'sm', 'md', 'lg', 'xl'];
+const sizeLabels: Record<SvgSize, string> = {
   xs: '12px',
   sm: '14px',
   md: '16px',

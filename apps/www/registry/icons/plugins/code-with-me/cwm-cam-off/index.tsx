@@ -22,7 +22,6 @@ const CwmCamOffLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.414 11.414 4 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h6c.552 0 1.052-.224 1.414-.586M13.4 10.8A1 1 0 0 0 15 10V6a1 1 0 0 0-1.6-.8L12 6.25V6a2 2 0 0 0-2-2H6.121l5.365 5.364z"
       fill="#FFF7F7"
@@ -54,7 +53,6 @@ const CwmCamOffDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.414 11.414 4 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h6c.552 0 1.052-.224 1.414-.586M13.4 10.8A1 1 0 0 0 15 10V6a1 1 0 0 0-1.6-.8L12 6.25V6a2 2 0 0 0-2-2H6.121l5.365 5.364z"
       fill="#402929"

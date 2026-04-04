@@ -22,7 +22,6 @@ const CppLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12 2.5q0-.105.014-.206L8.992.567a2 2 0 0 0-1.984 0l-5 2.857A2 2 0 0 0 1 5.161v5.678a2 2 0 0 0 1.008 1.737l5 2.857a2 2 0 0 0 1.984 0l3.022-1.727A2 2 0 0 1 12 13.5V13h-.5a1.5 1.5 0 0 1 0-3h.5V6h-.5a1.5 1.5 0 0 1 0-3h.5z"
       fill="#FAF5FF"
@@ -60,7 +59,6 @@ const CppDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M12 2.5q0-.105.014-.206L8.992.567a2 2 0 0 0-1.984 0l-5 2.857A2 2 0 0 0 1 5.161v5.678a2 2 0 0 0 1.008 1.737l5 2.857a2 2 0 0 0 1.984 0l3.022-1.727A2 2 0 0 1 12 13.5V13h-.5a1.5 1.5 0 0 1 0-3h.5V6h-.5a1.5 1.5 0 0 1 0-3h.5z"
       fill="#2F2936"

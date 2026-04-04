@@ -22,7 +22,6 @@ const SpringCloudStreamFileSetLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         fillRule="evenodd"
@@ -72,7 +71,6 @@ const SpringCloudStreamFileSetDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         fillRule="evenodd"

@@ -22,7 +22,6 @@ const EnumObjectScalaLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M15 8A7 7 0 1 0 1 8z" fill="#FAF5FF" />
     <path d="M14 8h1A7 7 0 1 0 1 8h1a6 6 0 1 1 12 0" fill="#834DF0" />
     <path
@@ -64,7 +63,6 @@ const EnumObjectScalaDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M15 8A7 7 0 1 0 1 8z" fill="#2F2936" />
     <path d="M14 8h1A7 7 0 1 0 1 8h1a6 6 0 1 1 12 0" fill="#A571E6" />
     <path

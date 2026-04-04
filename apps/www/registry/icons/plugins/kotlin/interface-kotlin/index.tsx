@@ -22,7 +22,6 @@ const InterfaceKotlinLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M15 8a7 7 0 1 0-7 7v-5a2 2 0 0 1 2-2z" fill="#F2FCF3" />
     <path d="M10 4.5v1H8.5v6H6v-1h1.5v-5H6v-1z" fill="#208A3C" />
     <path
@@ -57,7 +56,6 @@ const InterfaceKotlinDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M15 8a7 7 0 1 0-7 7v-5a2 2 0 0 1 2-2z" fill="#253627" />
     <path d="M10 4.5v1H8.5v6H6v-1h1.5v-5H6v-1z" fill="#57965C" />
     <path

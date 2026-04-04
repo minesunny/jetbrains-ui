@@ -35,7 +35,9 @@ describe('Button', () => {
     expect(button).not.toHaveAttribute('data-size');
     expect(button).not.toHaveAttribute('data-slim');
     expect(button.className).toContain('h-7');
-    expect(button.className).toContain('text-ui-default');
+    expect(button.className).toContain(
+      'font-sans text-[13px] leading-4 font-medium',
+    );
   });
 
   it('applies primary variant by default', () => {

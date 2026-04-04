@@ -22,7 +22,6 @@ const CheckConstraintLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.5 2.5h3M8.5 7.5h6M5.5 12.5h9M7.5 4.5 3 9 .5 6.5"
       stroke="#6C707E"
@@ -50,7 +49,6 @@ const CheckConstraintDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11.5 2.5h3M8.5 7.5h6M5.5 12.5h9M7.5 4.5 3 9 .5 6.5"
       stroke="#CED0D6"

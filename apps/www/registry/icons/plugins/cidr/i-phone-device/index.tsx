@@ -22,7 +22,6 @@ const IPhoneDeviceLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11 2H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3.168q.058.219.148.469.11.293.23.531H5a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v5.069q-.27.07-.516.19l-.004.002q-.255.123-.48.295V3a1 1 0 0 0-1-1"
       fill="#6C707E"
@@ -52,7 +51,6 @@ const IPhoneDeviceDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M11 2H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3.168q.058.219.148.469.11.293.23.531H5a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v5.069q-.27.07-.516.19l-.004.002q-.255.123-.48.295V3a1 1 0 0 0-1-1"
       fill="#CED0D6"

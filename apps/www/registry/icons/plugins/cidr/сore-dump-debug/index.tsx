@@ -22,7 +22,6 @@ const СoreDumpDebugLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M13 1H8v6h6V2a1 1 0 0 0-1-1M7 14H2a1 1 0 0 1-1-1V8h6z"
       fill="#EBECF0"
@@ -77,7 +76,6 @@ const СoreDumpDebugDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M13 1H8v6h6V2a1 1 0 0 0-1-1M7 14H2a1 1 0 0 1-1-1V8h6z"
       fill="#43454A"

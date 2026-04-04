@@ -22,7 +22,6 @@ const ShowCodeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m11.597 7.655 2.091-2.095a1.035 1.035 0 0 0 .007-1.474l-1.668-1.772-.005-.005a1.05 1.05 0 0 0-1.489.002L8.387 4.444m3.21 3.21-3.21-3.21m3.21 3.21L5.74 13.5H2.5v-3.18l5.887-5.876"
       stroke="#6C707E"
@@ -49,7 +48,6 @@ const ShowCodeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m11.597 7.655 2.091-2.095a1.035 1.035 0 0 0 .007-1.474l-1.668-1.772-.005-.005a1.05 1.05 0 0 0-1.489.002L8.387 4.444m3.21 3.21-3.21-3.21m3.21 3.21L5.74 13.5H2.5v-3.18l5.887-5.876"
       stroke="#CED0D6"

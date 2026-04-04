@@ -22,7 +22,6 @@ const FileSetLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3 5.828V11a2 2 0 0 0 2 2h5a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H7.828a2 2 0 0 0-1.414.586L3.586 4.414A2 2 0 0 0 3 5.828"
       fill="#EBECF0"
@@ -58,7 +57,6 @@ const FileSetDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M3 5.828V11a2 2 0 0 0 2 2h5a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H7.828a2 2 0 0 0-1.414.586L3.586 4.414A2 2 0 0 0 3 5.828"
       fill="#43454A"

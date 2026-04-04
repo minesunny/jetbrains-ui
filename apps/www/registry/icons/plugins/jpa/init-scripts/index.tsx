@@ -22,7 +22,6 @@ const InitScriptsLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M4.5 4.5V4A1.5 1.5 0 0 0 3 2.5m1.5 2V12A1.5 1.5 0 0 0 6 13.5h2m-3.5-9h-3V4A1.5 1.5 0 0 1 3 2.5m0 0h7.5a2 2 0 0 1 2 2V8"
       stroke="#3574F0"
@@ -55,7 +54,6 @@ const InitScriptsDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M4.5 4.5V4A1.5 1.5 0 0 0 3 2.5m1.5 2V12A1.5 1.5 0 0 0 6 13.5h2m-3.5-9h-3V4A1.5 1.5 0 0 1 3 2.5m0 0h7.5a2 2 0 0 1 2 2V8"
       stroke="#548AF7"

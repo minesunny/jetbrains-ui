@@ -22,7 +22,6 @@ const RemoteFileSystemsLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8.5 13v2.5m0 0h4m-4 0h-5"
       stroke="#6C707E"
@@ -57,7 +56,6 @@ const RemoteFileSystemsDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8.5 13v2.5m0 0h4m-4 0h-5"
       stroke="#CED0D6"

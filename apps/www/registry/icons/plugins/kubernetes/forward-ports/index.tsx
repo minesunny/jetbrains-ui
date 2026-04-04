@@ -22,7 +22,6 @@ const ForwardPortsLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="11.5"
       y="6.5"
@@ -59,7 +58,6 @@ const ForwardPortsDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <rect
       x="11.5"
       y="6.5"

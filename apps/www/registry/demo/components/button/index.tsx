@@ -5,10 +5,7 @@ interface ButtonDemoProps {
   slim?: ButtonProps['slim'];
 }
 
-export default function ButtonDemo({
-  variant,
-  slim = false,
-}: ButtonDemoProps) {
+export default function ButtonDemo({ variant, slim = false }: ButtonDemoProps) {
   return (
     <Button variant={variant} slim={slim}>
       Button

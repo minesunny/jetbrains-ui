@@ -34,5 +34,5 @@ export { StatisticsPanel } from './statistics-panel';
 export type { StatisticsPanelProps } from './statistics-panel';
 export { Variables } from './variables';
 export type { VariablesProps } from './variables';
-export { iconNames } from '../types';
-export type { IconName, IconMode, IconProps, IconSize } from '../types';
+export { svgNames } from '../types';
+export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

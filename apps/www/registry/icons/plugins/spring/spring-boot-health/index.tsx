@@ -22,7 +22,6 @@ const SpringBootHealthLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1.5 8h3L7 2.5l2 11L11.5 8h3"
       stroke="#E66D17"
@@ -50,7 +49,6 @@ const SpringBootHealthDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1.5 8h3L7 2.5l2 11L11.5 8h3"
       stroke="#C77D55"

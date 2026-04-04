@@ -22,7 +22,6 @@ const ModPlatformIOLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M13 16v-5.647q.554.003 1.09.135l.208-.72a.4.4 0 0 1-.205-.35.422.422 0 0 1 .845 0 .413.413 0 0 1-.385.407l-.21.733c.8.253 1.66.815 1.66 2.067C15.997 14.372 13.557 16 13 16"
@@ -71,7 +70,6 @@ const ModPlatformIODark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <path
         d="M13 16v-5.647q.554.003 1.09.135l.208-.72a.4.4 0 0 1-.205-.35.422.422 0 0 1 .845 0 .413.413 0 0 1-.385.407l-.21.733c.8.253 1.66.815 1.66 2.067C15.997 14.372 13.557 16 13 16"

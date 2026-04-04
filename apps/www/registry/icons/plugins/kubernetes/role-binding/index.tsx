@@ -22,7 +22,6 @@ const RoleBindingLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 3.5 4 5v3c0 1.856 1.53 3.329 2.698 4.183L12 6.88V5z"
       fill="#EBECF0"
@@ -60,7 +59,6 @@ const RoleBindingDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 3.5 4 5v3c0 1.856 1.53 3.329 2.698 4.183L12 6.88V5z"
       fill="#43454A"

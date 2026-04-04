@@ -22,7 +22,6 @@ const FailedLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="7" fill="#E55765" />
     <path d="M8 4.5V8" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" />
     <circle cx="7.998" cy="11.1" r="1.1" fill="#fff" />
@@ -47,7 +46,6 @@ const FailedDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#DB5C5C" stroke="#DB5C5C" />
     <path d="M8 4.5V8" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" />
     <circle cx="7.998" cy="11.1" r="1.1" fill="#fff" />

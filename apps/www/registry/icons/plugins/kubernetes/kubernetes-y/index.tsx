@@ -22,7 +22,6 @@ const KubernetesYLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.956 1.208a.9.9 0 0 0-.36.096L2.72 3.629a.92.92 0 0 0-.503.627l-1.193 5.22a.9.9 0 0 0 .183.785l3.37 4.189a.93.93 0 0 0 .726.343h5.404c.282 0 .55-.132.727-.347l3.368-4.19a.9.9 0 0 0 .175-.781L13.775 4.25a.93.93 0 0 0-.503-.627l-4.868-2.32a.94.94 0 0 0-.452-.096z"
       fill="#3574F0"
@@ -54,7 +53,6 @@ const KubernetesYDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.956 1.208a.9.9 0 0 0-.36.096L2.72 3.629a.92.92 0 0 0-.503.627l-1.193 5.22a.9.9 0 0 0 .183.785l3.37 4.189a.93.93 0 0 0 .726.343h5.404c.282 0 .55-.132.727-.347l3.368-4.19a.9.9 0 0 0 .175-.781L13.775 4.25a.93.93 0 0 0-.503-.627l-4.868-2.32a.94.94 0 0 0-.452-.096z"
       fill="#548AF7"

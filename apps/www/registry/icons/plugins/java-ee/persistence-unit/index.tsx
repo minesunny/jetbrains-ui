@@ -22,7 +22,6 @@ const PersistenceUnitLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14H7V9.999c0-1.135.895-1.893 1.725-2.308C9.615 7.246 10.774 7 12 7c1.103 0 2.153.2 3 .563V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z"
       fill="#EBECF0"
@@ -58,7 +57,6 @@ const PersistenceUnitDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14H7V9.999c0-1.135.895-1.893 1.725-2.308C9.615 7.246 10.774 7 12 7c1.103 0 2.153.2 3 .563V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z"
       fill="#43454A"

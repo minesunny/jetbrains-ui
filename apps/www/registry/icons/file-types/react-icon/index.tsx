@@ -22,7 +22,6 @@ const ReactFileTypeLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M8 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#3FA1C4" />
     <path
       fillRule="evenodd"
@@ -51,7 +50,6 @@ const ReactFileTypeDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M8 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#81D8F7" />
     <path
       fillRule="evenodd"

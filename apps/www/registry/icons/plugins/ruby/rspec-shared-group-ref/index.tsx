@@ -22,7 +22,6 @@ const RspecSharedGroupRefLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15 9v3.133C15 13.164 14.216 14 13.25 14H2.75C1.784 14 1 13.164 1 12.133V3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8 3.513c.003.38.15.758.44 1.048.292.293.676.439 1.06.439H11v2.5A1.5 1.5 0 0 0 12.5 9z"
       fill="#F2FCF3"
@@ -58,7 +57,6 @@ const RspecSharedGroupRefDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15 9v3.133C15 13.164 14.216 14 13.25 14H2.75C1.784 14 1 13.164 1 12.133V3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8 3.513c.003.38.15.758.44 1.048.292.293.676.439 1.06.439H11v2.5A1.5 1.5 0 0 0 12.5 9z"
       fill="#253627"

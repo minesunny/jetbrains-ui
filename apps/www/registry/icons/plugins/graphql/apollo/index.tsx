@@ -22,7 +22,6 @@ const ApolloLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 2a6 6 0 1 0 4.243 10.243.5.5 0 0 1 .707.707 7 7 0 1 1-1.261-10.9 1 1 0 1 1-.671.763A5.97 5.97 0 0 0 8 2"
       fill="#000"
@@ -54,7 +53,6 @@ const ApolloDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M8 2a6 6 0 1 0 4.243 10.243.5.5 0 0 1 .707.707 7 7 0 1 1-1.261-10.9 1 1 0 1 1-.671.763A5.97 5.97 0 0 0 8 2"
       fill="#fff"

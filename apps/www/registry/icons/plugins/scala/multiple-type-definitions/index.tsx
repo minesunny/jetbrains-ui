@@ -22,7 +22,6 @@ const MultipleTypeDefinitionsLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <circle cx="5" cy="11" r="4.5" fill="#EDF3FF" stroke="#3574F0" />
       <path
@@ -68,7 +67,6 @@ const MultipleTypeDefinitionsDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <g clipPath="url(#a)">
       <circle cx="5" cy="11" r="4.5" fill="#25324D" stroke="#548AF7" />
       <path

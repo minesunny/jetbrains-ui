@@ -22,7 +22,6 @@ const ChartPieLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.5 8.5h5.977A5.5 5.5 0 1 1 7.5 2.523z"
       fill="#EBECF0"
@@ -54,7 +53,6 @@ const ChartPieDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.5 8.5h5.977A5.5 5.5 0 1 1 7.5 2.523z"
       fill="#43454A"

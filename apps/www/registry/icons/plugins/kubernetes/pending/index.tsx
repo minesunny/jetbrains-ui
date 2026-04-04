@@ -22,7 +22,6 @@ const PendingLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#EDF3FF" stroke="#3574F0" />
     <path
       d="M4.5 8h7m0 0-3 3m3-3-3-3"
@@ -51,7 +50,6 @@ const PendingDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <circle cx="8" cy="8" r="6.5" fill="#25324D" stroke="#548AF7" />
     <path
       d="M4.5 8h7m0 0-3 3m3-3-3-3"

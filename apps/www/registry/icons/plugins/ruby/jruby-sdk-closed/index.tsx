@@ -22,7 +22,6 @@ const JrubySdkClosedLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v3.324a1.16 1.16 0 0 0-.762-.198 1.16 1.16 0 0 0-1.65-1.018l-5.915 2.759h-.002a1.16 1.16 0 0 0-.67 1.018v.007c-.01.427.216.838.61 1.05l.784.424.296.634H2.633C1.731 14 1 13.164 1 12.133z"
       fill="#EBECF0"
@@ -74,7 +73,6 @@ const JrubySdkClosedDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v3.324a1.16 1.16 0 0 0-.762-.198 1.16 1.16 0 0 0-1.65-1.018l-5.915 2.759h-.002a1.16 1.16 0 0 0-.67 1.018v.007c-.01.427.216.838.61 1.05l.784.424.296.634H2.633C1.731 14 1 13.164 1 12.133z"
       fill="#43454A"

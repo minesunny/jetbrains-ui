@@ -22,7 +22,6 @@ const CMakeFunctionLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M14.464 10.692a7 7 0 1 0-7.069 4.283L12 5.763z" fill="#FFF7F7" />
     <path
       d="M7.258 12h1.017V7.327H9.83V6.43H8.275v-.95c0-.36.246-.606.6-.606h1.006V4H8.778c-.903 0-1.52.571-1.52 1.406V6.43H6.121v.897h1.137z"
@@ -101,7 +100,6 @@ const CMakeFunctionDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path d="M14.464 10.692a7 7 0 1 0-7.069 4.283L12 5.763z" fill="#402929" />
     <path
       d="M7.258 12h1.017V7.327H9.83V6.43H8.275v-.95c0-.36.246-.606.6-.606h1.006V4H8.778c-.903 0-1.52.571-1.52 1.406V6.43H6.121v.897h1.137z"

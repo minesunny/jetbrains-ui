@@ -22,7 +22,6 @@ const ChefCookbookLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M10.089 1.317 9.64 2.749A5.51 5.51 0 0 1 13.41 7h1.52a7.01 7.01 0 0 0-4.84-5.683M5.912 14.683A7 7 0 0 1 1 8h1.5a5.5 5.5 0 0 0 3.859 5.251zM8 5a3 3 0 0 0-2.599 4.5l1.3-.75A1.5 1.5 0 0 1 8 6.5zM9.118 9h1.711a3 3 0 0 1-1.934 1.864l-.447-1.432c.261-.082.492-.233.67-.432"
       fill="#E66D17"
@@ -56,7 +55,6 @@ const ChefCookbookDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M10.089 1.317 9.64 2.749A5.51 5.51 0 0 1 13.41 7h1.52a7.01 7.01 0 0 0-4.84-5.683M5.912 14.683A7 7 0 0 1 1 8h1.5a5.5 5.5 0 0 0 3.859 5.251zM8 5a3 3 0 0 0-2.599 4.5l1.3-.75A1.5 1.5 0 0 1 8 6.5zM9.118 9h1.711a3 3 0 0 1-1.934 1.864l-.447-1.432c.261-.082.492-.233.67-.432"
       fill="#E08855"

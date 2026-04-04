@@ -22,7 +22,6 @@ const RubyGemsLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.256 1.001a1.5 1.5 0 0 1 1.488 0l5 2.857a1.5 1.5 0 0 1 .756 1.303v5.678a1.5 1.5 0 0 1-.756 1.303l-5 2.857a1.5 1.5 0 0 1-1.488 0l-5-2.857a1.5 1.5 0 0 1-.756-1.303V5.16a1.5 1.5 0 0 1 .756-1.303z"
       fill="#FFF7F7"
@@ -53,7 +52,6 @@ const RubyGemsDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M7.256 1.001a1.5 1.5 0 0 1 1.488 0l5 2.857a1.5 1.5 0 0 1 .756 1.303v5.678a1.5 1.5 0 0 1-.756 1.303l-5 2.857a1.5 1.5 0 0 1-1.488 0l-5-2.857a1.5 1.5 0 0 1-.756-1.303V5.16a1.5 1.5 0 0 1 .756-1.303z"
       fill="#402929"

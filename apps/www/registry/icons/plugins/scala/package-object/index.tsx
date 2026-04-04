@@ -22,7 +22,6 @@ const PackageObjectLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15 8q0 .51-.07 1h-2.016l-.707-.707A1 1 0 0 0 11.5 8H9a2 2 0 0 0-2 2v4.929A7.002 7.002 0 0 1 8 1a7 7 0 0 1 7 7"
       fill="#FFF4EB"
@@ -62,7 +61,6 @@ const PackageObjectDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="M15 8q0 .51-.07 1h-2.016l-.707-.707A1 1 0 0 0 11.5 8H9a2 2 0 0 0-2 2v4.929A7.002 7.002 0 0 1 8 1a7 7 0 0 1 7 7"
       fill="#45322B"

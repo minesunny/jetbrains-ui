@@ -22,7 +22,6 @@ const DevContainersLight: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m8 7.5 4.5-2M8 7.5l-4.5-2m4.5 2v5"
       stroke="#3574F0"
@@ -55,7 +54,6 @@ const DevContainersDark: React.FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title && <title>{title}</title>}
     <path
       d="m8 7.5 4.5-2M8 7.5l-4.5-2m4.5 2v5"
       stroke="#548AF7"
