@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type PushProps = IconProps;
+export type PushProps = SvgProps;
 
 const PushLight: FC<SvgProps> = ({
   size,

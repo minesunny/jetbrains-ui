@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type DataTablesProps = IconProps;
+export type DataTablesProps = SvgProps;
 
 const DataTablesLight: FC<SvgProps> = ({
   size,

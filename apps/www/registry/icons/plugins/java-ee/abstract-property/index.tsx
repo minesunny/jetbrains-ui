@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type AbstractPropertyProps = IconProps;
+export type AbstractPropertyProps = SvgProps;
 
 const AbstractPropertyLight: React.FC<SvgProps> = ({
   size,

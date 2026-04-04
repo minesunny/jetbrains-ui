@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type DbHashProps = IconProps;
+export type DbHashProps = SvgProps;
 
 const DbHashLight: React.FC<SvgProps> = ({
   size,

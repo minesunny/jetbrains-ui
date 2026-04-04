@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type HeaderLevelUpProps = IconProps;
+export type HeaderLevelUpProps = SvgProps;
 
 const HeaderLevelUpLight: FC<SvgProps> = ({
   size,

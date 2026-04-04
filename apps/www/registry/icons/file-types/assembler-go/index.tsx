@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type AssemblerGoProps = IconProps;
+export type AssemblerGoProps = SvgProps;
 
 const AssemblerGoLight: FC<SvgProps> = ({
   size,

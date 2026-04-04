@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type InlayGlobeProps = IconProps;
+export type InlayGlobeProps = SvgProps;
 
 const InlayGlobeLight: FC<SvgProps> = ({
   size,

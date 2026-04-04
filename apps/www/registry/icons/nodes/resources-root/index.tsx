@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type ResourcesRootProps = IconProps;
+export type ResourcesRootProps = SvgProps;
 
 const ResourcesRootLight: FC<SvgProps> = ({
   size,

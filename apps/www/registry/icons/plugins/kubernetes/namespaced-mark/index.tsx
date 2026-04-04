@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type NamespacedMarkProps = IconProps;
+export type NamespacedMarkProps = SvgProps;
 
 const NamespacedMarkLight: React.FC<SvgProps> = ({
   size,

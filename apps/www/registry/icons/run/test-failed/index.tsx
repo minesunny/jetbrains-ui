@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type TestFailedProps = IconProps;
+export type TestFailedProps = SvgProps;
 
 const TestFailedLight: FC<SvgProps> = ({
   size,

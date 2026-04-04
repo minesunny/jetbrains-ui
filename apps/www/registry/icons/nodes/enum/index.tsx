@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type EnumProps = IconProps;
+export type EnumProps = SvgProps;
 
 const EnumLight: FC<SvgProps> = ({
   size,

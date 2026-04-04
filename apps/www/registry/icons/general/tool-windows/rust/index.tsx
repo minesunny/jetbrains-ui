@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type RustProps = IconProps;
+export type RustProps = SvgProps;
 
 const RustLight: FC<SvgProps> = ({
   size,

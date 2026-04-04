@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type RestartDebugProps = IconProps;
+export type RestartDebugProps = SvgProps;
 
 const RestartDebugLight: FC<SvgProps> = ({
   size,

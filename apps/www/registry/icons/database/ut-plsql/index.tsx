@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type UtPLSQLProps = IconProps;
+export type UtPLSQLProps = SvgProps;
 
 const UtPLSQLLight: FC<SvgProps> = ({
   size,

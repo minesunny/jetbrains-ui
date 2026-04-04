@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type RspecSharedGroupClosedProps = IconProps;
+export type RspecSharedGroupClosedProps = SvgProps;
 
 const RspecSharedGroupClosedLight: React.FC<SvgProps> = ({
   size,

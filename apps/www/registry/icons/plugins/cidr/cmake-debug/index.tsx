@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type CMakeDebugProps = IconProps;
+export type CMakeDebugProps = SvgProps;
 
 const CMakeDebugLight: React.FC<SvgProps> = ({
   size,

@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type TransactionManagerProps = IconProps;
+export type TransactionManagerProps = SvgProps;
 
 const TransactionManagerLight: React.FC<SvgProps> = ({
   size,

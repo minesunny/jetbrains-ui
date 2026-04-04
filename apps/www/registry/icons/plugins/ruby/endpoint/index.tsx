@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type EndpointProps = IconProps;
+export type EndpointProps = SvgProps;
 
 const EndpointLight: React.FC<SvgProps> = ({
   size,

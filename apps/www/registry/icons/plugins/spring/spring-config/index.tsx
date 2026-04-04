@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type SpringConfigProps = IconProps;
+export type SpringConfigProps = SvgProps;
 
 const SpringConfigLight: React.FC<SvgProps> = ({
   size,

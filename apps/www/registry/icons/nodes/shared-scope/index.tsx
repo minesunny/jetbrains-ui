@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type SharedScopeProps = IconProps;
+export type SharedScopeProps = SvgProps;
 
 const SharedScopeLight: FC<SvgProps> = ({
   size,

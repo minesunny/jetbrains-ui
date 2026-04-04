@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type AiAssistantProps = IconProps;
+export type AiAssistantProps = SvgProps;
 
 const AiAssistantLight: FC<SvgProps> = ({
   size,

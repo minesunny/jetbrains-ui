@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type H2Props = IconProps;
+export type H2Props = SvgProps;
 
 const H2Light: FC<SvgProps> = ({
   size,

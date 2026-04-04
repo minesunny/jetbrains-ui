@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type LombokMethodProps = IconProps;
+export type LombokMethodProps = SvgProps;
 
 const LombokMethodLight: React.FC<SvgProps> = ({
   size,

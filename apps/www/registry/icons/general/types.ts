@@ -1,21 +1,11 @@
 import type React from 'react';
-export type IconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-export type IconMode = 'light' | 'dark';
 
-export interface IconProps {
-  size?: IconSize;
-  mode?: IconMode;
-  className?: string;
-  /** Accessible label for the icon */
-  'aria-label'?: string;
-  /** Title element for the icon tooltip */
-  title?: string;
-  [key: string]: unknown;
-}
+export type SvgProps = React.ComponentProps<'svg'> & {
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  mode?: 'light' | 'dark';
+};
 
-export type SvgProps = React.ComponentProps<"svg">;
-
-export const sizeMap: Record<IconSize, number> = {
+export const sizeMap: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number> = {
   xs: 12,
   sm: 14,
   md: 16,
