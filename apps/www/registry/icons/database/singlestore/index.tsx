@@ -7,7 +7,6 @@ export type SinglestoreProps = SvgProps;
 const SinglestoreLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SinglestoreLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.317 1c1.5.417 2.866 1.468 3.433 2.753.867 2.086.666 4.722-.283 6.291-.8 1.285-2.034 1.969-3.45 1.952-2.2-.016-3.983-1.769-4-3.971 0-2.203 1.733-4.021 4-4.021.367 0 .895.05 1.495.3 0 0-.431-.255-1.539-.426-3.183-.418-6.939 1.994-6.072 7.55C3.1 13.566 5.4 15.018 8.017 15c3.85-.017 7-3.17 6.983-7.042C15 4.254 11.983 1.1 8.317 1"
       fill="url(#a)"
@@ -64,7 +62,6 @@ const SinglestoreLight: FC<SvgProps> = ({
 const SinglestoreDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -80,7 +77,6 @@ const SinglestoreDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.317 1c1.5.417 2.866 1.468 3.433 2.753.867 2.086.666 4.722-.283 6.291-.8 1.285-2.034 1.969-3.45 1.952-2.2-.016-3.983-1.769-4-3.971 0-2.203 1.733-4.021 4-4.021.367 0 .895.05 1.495.3 0 0-.431-.255-1.539-.426-3.183-.418-6.939 1.994-6.072 7.55C3.1 13.566 5.4 15.018 8.017 15c3.85-.017 7-3.17 6.983-7.042C15 4.254 11.983 1.1 8.317 1"
       fill="url(#a)"
@@ -123,7 +119,6 @@ export const Singlestore: FC<SinglestoreProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SinglestoreLight : SinglestoreDark;
@@ -132,7 +127,6 @@ export const Singlestore: FC<SinglestoreProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

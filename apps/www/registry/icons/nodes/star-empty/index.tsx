@@ -7,7 +7,6 @@ export type StarEmptyProps = SvgProps;
 const StarEmptyLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const StarEmptyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -36,7 +34,6 @@ const StarEmptyLight: FC<SvgProps> = ({
 const StarEmptyDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const StarEmptyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -67,7 +63,6 @@ export const StarEmpty: FC<StarEmptyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? StarEmptyLight : StarEmptyDark;
@@ -76,7 +71,6 @@ export const StarEmpty: FC<StarEmptyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

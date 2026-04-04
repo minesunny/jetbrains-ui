@@ -7,7 +7,6 @@ export type ExternalSchemaProps = SvgProps;
 const ExternalSchemaLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ExternalSchemaLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -46,7 +44,6 @@ const ExternalSchemaLight: FC<SvgProps> = ({
 const ExternalSchemaDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -62,7 +59,6 @@ const ExternalSchemaDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -87,7 +83,6 @@ export const ExternalSchema: FC<ExternalSchemaProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -97,7 +92,6 @@ export const ExternalSchema: FC<ExternalSchemaProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

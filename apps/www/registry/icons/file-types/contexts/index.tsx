@@ -7,7 +7,6 @@ export type ContextsProps = SvgProps;
 const ContextsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ContextsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x="2.5"
       y="4.5"
@@ -44,7 +42,6 @@ const ContextsLight: FC<SvgProps> = ({
 const ContextsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const ContextsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x="2.5"
       y="4.5"
@@ -83,7 +79,6 @@ export const Contexts: FC<ContextsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ContextsLight : ContextsDark;
@@ -92,7 +87,6 @@ export const Contexts: FC<ContextsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

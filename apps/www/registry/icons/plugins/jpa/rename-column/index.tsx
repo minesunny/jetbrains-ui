@@ -7,7 +7,6 @@ export type RenameColumnProps = SvgProps;
 const RenameColumnLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -43,7 +42,6 @@ const RenameColumnLight: React.FC<SvgProps> = ({
 const RenameColumnDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -88,7 +86,6 @@ export const RenameColumn: React.FC<RenameColumnProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RenameColumnLight : RenameColumnDark;
@@ -97,7 +94,6 @@ export const RenameColumn: React.FC<RenameColumnProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

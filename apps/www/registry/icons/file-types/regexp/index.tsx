@@ -7,7 +7,6 @@ export type RegexpProps = SvgProps;
 const RegexpLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RegexpLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x="2.5"
       y="2.5"
@@ -48,7 +46,6 @@ const RegexpLight: FC<SvgProps> = ({
 const RegexpDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -64,7 +61,6 @@ const RegexpDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x="2.5"
       y="2.5"
@@ -88,7 +84,6 @@ export const Regexp: FC<RegexpProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RegexpLight : RegexpDark;
@@ -97,7 +92,6 @@ export const Regexp: FC<RegexpProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

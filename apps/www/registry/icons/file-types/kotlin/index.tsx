@@ -7,7 +7,6 @@ export type KotlinProps = SvgProps;
 const KotlinLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const KotlinLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.053 12.631a.5.5 0 0 1-.338.869H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h9.715a.5.5 0 0 1 .338.869L8.403 7.63a.5.5 0 0 0 0 .738z"
       fill="#FAF5FF"
@@ -35,7 +33,6 @@ const KotlinLight: FC<SvgProps> = ({
 const KotlinDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const KotlinDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.053 12.631a.5.5 0 0 1-.338.869H3a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h9.715a.5.5 0 0 1 .338.869L8.403 7.63a.5.5 0 0 0 0 .738z"
       fill="#2F2936"
@@ -65,7 +61,6 @@ export const Kotlin: FC<KotlinProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? KotlinLight : KotlinDark;
@@ -74,7 +69,6 @@ export const Kotlin: FC<KotlinProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

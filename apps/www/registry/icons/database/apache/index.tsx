@@ -7,7 +7,6 @@ export type ApacheProps = SvgProps;
 const ApacheLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ApacheLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.206 1.022c-.319.054-.906.32-1.66.747l.13 1.066a12 12 0 0 1 1.538-.9c-.02.009-.035.02-.055.029-.157.077-.636.335-1.427.914.49.16 1.268.349 1.91.474.563-.937.384-1.535.384-1.535s-.171-.905-.82-.795"
       fill="url(#a)"
@@ -150,7 +148,6 @@ const ApacheLight: FC<SvgProps> = ({
 const ApacheDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -166,7 +163,6 @@ const ApacheDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.206 1.022c-.319.054-.906.32-1.66.747l.13 1.066a12 12 0 0 1 1.538-.9c-.02.009-.035.02-.055.029-.157.077-.636.335-1.427.914.49.16 1.268.349 1.91.474.563-.937.384-1.535.384-1.535s-.171-.905-.82-.795"
       fill="url(#a)"
@@ -330,7 +326,6 @@ export const Apache: FC<ApacheProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ApacheLight : ApacheDark;
@@ -339,7 +334,6 @@ export const Apache: FC<ApacheProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

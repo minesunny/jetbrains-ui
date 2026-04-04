@@ -7,7 +7,6 @@ export type ToolWindowTypeTraceViewProps = SvgProps;
 const ToolWindowTypeTraceViewLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowTypeTraceViewLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" stroke="#6C707E" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const ToolWindowTypeTraceViewLight: FC<SvgProps> = ({
 const ToolWindowTypeTraceViewDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const ToolWindowTypeTraceViewDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" stroke="#CED0D6" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const ToolWindowTypeTraceView: FC<ToolWindowTypeTraceViewProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +76,6 @@ export const ToolWindowTypeTraceView: FC<ToolWindowTypeTraceViewProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

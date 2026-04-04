@@ -7,7 +7,6 @@ export type MergeCalleesProps = SvgProps;
 const MergeCalleesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MergeCalleesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3.146 3.854a.5.5 0 1 1 .708-.708L12 11.293V5.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1 0-1h5.793z"
       fill="#6C707E"
@@ -34,7 +32,6 @@ const MergeCalleesLight: FC<SvgProps> = ({
 const MergeCalleesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const MergeCalleesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3.146 3.854a.5.5 0 1 1 .708-.708L12 11.293V5.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1 0-1h5.793z"
       fill="#CED0D6"
@@ -63,7 +59,6 @@ export const MergeCallees: FC<MergeCalleesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? MergeCalleesLight : MergeCalleesDark;
@@ -72,7 +67,6 @@ export const MergeCallees: FC<MergeCalleesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

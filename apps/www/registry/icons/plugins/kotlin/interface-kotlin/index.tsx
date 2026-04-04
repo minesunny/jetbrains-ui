@@ -7,7 +7,6 @@ export type InterfaceKotlinProps = SvgProps;
 const InterfaceKotlinLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -43,7 +42,6 @@ const InterfaceKotlinLight: React.FC<SvgProps> = ({
 const InterfaceKotlinDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -81,7 +79,6 @@ export const InterfaceKotlin: React.FC<InterfaceKotlinProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -91,7 +88,6 @@ export const InterfaceKotlin: React.FC<InterfaceKotlinProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

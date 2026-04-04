@@ -7,7 +7,6 @@ export type ObservatoryProps = SvgProps;
 const ObservatoryLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -40,7 +39,6 @@ const ObservatoryLight: React.FC<SvgProps> = ({
 const ObservatoryDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -75,7 +73,6 @@ export const Observatory: React.FC<ObservatoryProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ObservatoryLight : ObservatoryDark;
@@ -84,7 +81,6 @@ export const Observatory: React.FC<ObservatoryProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

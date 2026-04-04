@@ -7,7 +7,6 @@ export type RollbackProps = SvgProps;
 const RollbackLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RollbackLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.7 2a.5.5 0 0 1 1 0v1.816a6 6 0 1 1-1.119 6.761.5.5 0 1 1 .903-.43A5 5 0 1 0 4.43 4.5H6.2a.5.5 0 0 1 0 1H2.7z"
       fill="#DB3B4B"
@@ -34,7 +32,6 @@ const RollbackLight: FC<SvgProps> = ({
 const RollbackDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const RollbackDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.7 2a.5.5 0 0 1 1 0v1.816a6 6 0 1 1-1.119 6.761.5.5 0 1 1 .903-.43A5 5 0 1 0 4.43 4.5H6.2a.5.5 0 0 1 0 1H2.7z"
       fill="#DB5C5C"
@@ -63,7 +59,6 @@ export const Rollback: FC<RollbackProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RollbackLight : RollbackDark;
@@ -72,7 +67,6 @@ export const Rollback: FC<RollbackProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

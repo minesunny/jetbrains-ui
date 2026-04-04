@@ -7,7 +7,6 @@ export type ForceStepOverProps = SvgProps;
 const ForceStepOverLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ForceStepOverLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="13" width="12" height="1" rx=".5" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const ForceStepOverLight: FC<SvgProps> = ({
 const ForceStepOverDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const ForceStepOverDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="13" width="12" height="1" rx=".5" fill="#CED0D6" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const ForceStepOver: FC<ForceStepOverProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -79,7 +74,6 @@ export const ForceStepOver: FC<ForceStepOverProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type SpringDataProps = SvgProps;
 const SpringDataLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +47,6 @@ const SpringDataLight: React.FC<SvgProps> = ({
 const SpringDataDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -91,7 +89,6 @@ export const SpringData: React.FC<SpringDataProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SpringDataLight : SpringDataDark;
@@ -100,7 +97,6 @@ export const SpringData: React.FC<SpringDataProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type UnknownProps = SvgProps;
 const UnknownLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const UnknownLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -36,7 +34,6 @@ const UnknownLight: FC<SvgProps> = ({
 const UnknownDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const UnknownDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -67,7 +63,6 @@ export const Unknown: FC<UnknownProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? UnknownLight : UnknownDark;
@@ -76,7 +71,6 @@ export const Unknown: FC<UnknownProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

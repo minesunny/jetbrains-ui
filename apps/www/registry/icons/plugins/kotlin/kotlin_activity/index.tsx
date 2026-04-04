@@ -7,7 +7,6 @@ export type Kotlin_activityProps = SvgProps;
 const Kotlin_activityLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const Kotlin_activityLight: React.FC<SvgProps> = ({
 const Kotlin_activityDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +85,6 @@ export const Kotlin_activity: React.FC<Kotlin_activityProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -97,7 +94,6 @@ export const Kotlin_activity: React.FC<Kotlin_activityProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

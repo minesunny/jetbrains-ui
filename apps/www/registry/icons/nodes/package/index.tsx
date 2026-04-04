@@ -7,7 +7,6 @@ export type PackageProps = SvgProps;
 const PackageLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PackageLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -42,7 +40,6 @@ const PackageLight: FC<SvgProps> = ({
 const PackageDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const PackageDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -79,7 +75,6 @@ export const Package: FC<PackageProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PackageLight : PackageDark;
@@ -88,7 +83,6 @@ export const Package: FC<PackageProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type LocationProps = SvgProps;
 const LocationLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -34,7 +33,6 @@ const LocationLight: React.FC<SvgProps> = ({
 const LocationDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +61,6 @@ export const Location: React.FC<LocationProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? LocationLight : LocationDark;
@@ -72,7 +69,6 @@ export const Location: React.FC<LocationProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

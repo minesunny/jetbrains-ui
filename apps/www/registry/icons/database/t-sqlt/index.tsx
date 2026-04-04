@@ -7,7 +7,6 @@ export type TSQLtProps = SvgProps;
 const TSQLtLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TSQLtLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 3H1v9h7z" fill="#E55765" />
     <path d="M13 3H9v4h4z" fill="#55A76A" />
     <path d="M15 8H9v6h6z" fill="#4682FA" />
@@ -33,7 +31,6 @@ const TSQLtLight: FC<SvgProps> = ({
 const TSQLtDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -49,7 +46,6 @@ const TSQLtDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 3H1v9h7z" fill="#DB5C5C" />
     <path d="M13 3H9v4h4z" fill="#5FAD65" />
     <path d="M15 8H9v6h6z" fill="#548AF7" />
@@ -61,7 +57,6 @@ export const TSQLt: FC<TSQLtProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TSQLtLight : TSQLtDark;
@@ -70,7 +65,6 @@ export const TSQLt: FC<TSQLtProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

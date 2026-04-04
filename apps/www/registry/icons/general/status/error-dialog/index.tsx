@@ -7,7 +7,6 @@ export type ErrorDialogProps = SvgProps;
 const ErrorDialogLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ErrorDialogLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="14" cy="14" r="12" fill="#E55765" />
     <path
       d="M15 8a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0zM14 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
@@ -35,7 +33,6 @@ const ErrorDialogLight: FC<SvgProps> = ({
 const ErrorDialogDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const ErrorDialogDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <circle cx="14" cy="14" r="12" fill="#DB5C5C" />
       <path
@@ -72,7 +68,6 @@ export const ErrorDialog: FC<ErrorDialogProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ErrorDialogLight : ErrorDialogDark;
@@ -81,7 +76,6 @@ export const ErrorDialog: FC<ErrorDialogProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

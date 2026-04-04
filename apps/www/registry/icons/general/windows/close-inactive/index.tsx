@@ -7,7 +7,6 @@ export type CloseInactiveProps = SvgProps;
 const CloseInactiveLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CloseInactiveLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       transform="rotate(45 3.758 3.05)"
       fill="#818594"
@@ -40,7 +38,6 @@ const CloseInactiveLight: FC<SvgProps> = ({
 const CloseInactiveDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const CloseInactiveDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       transform="rotate(45 3.758 3.05)"
       fill="#6F737A"
@@ -75,7 +71,6 @@ export const CloseInactive: FC<CloseInactiveProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const CloseInactive: FC<CloseInactiveProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

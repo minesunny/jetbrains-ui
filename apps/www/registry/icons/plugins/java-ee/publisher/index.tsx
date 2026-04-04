@@ -7,7 +7,6 @@ export type PublisherProps = SvgProps;
 const PublisherLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +52,6 @@ const PublisherLight: React.FC<SvgProps> = ({
 const PublisherDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -101,7 +99,6 @@ export const Publisher: React.FC<PublisherProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PublisherLight : PublisherDark;
@@ -110,7 +107,6 @@ export const Publisher: React.FC<PublisherProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

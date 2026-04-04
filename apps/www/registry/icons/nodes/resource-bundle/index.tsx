@@ -7,7 +7,6 @@ export type ResourceBundleProps = SvgProps;
 const ResourceBundleLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ResourceBundleLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="14" y="9" width="2" height="7" rx="1" fill="#55A76A" />
     <rect x="11" y="11" width="2" height="5" rx="1" fill="#FFAF0F" />
     <rect x="8" y="13" width="2" height="3" rx="1" fill="#E55765" />
@@ -41,7 +39,6 @@ const ResourceBundleLight: FC<SvgProps> = ({
 const ResourceBundleDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -57,7 +54,6 @@ const ResourceBundleDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="14" y="9" width="2" height="7" rx="1" fill="#57965C" />
     <rect x="11" y="11" width="2" height="5" rx="1" fill="#F2C55C" />
     <rect x="8" y="13" width="2" height="3" rx="1" fill="#DB5C5C" />
@@ -77,7 +73,6 @@ export const ResourceBundle: FC<ResourceBundleProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -87,7 +82,6 @@ export const ResourceBundle: FC<ResourceBundleProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

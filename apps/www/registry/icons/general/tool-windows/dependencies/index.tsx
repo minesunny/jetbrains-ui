@@ -7,7 +7,6 @@ export type DependenciesProps = SvgProps;
 const DependenciesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DependenciesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.83 4.64a.5.5 0 0 1 0 .9L8.22 8.28a.5.5 0 0 1-.44 0L2.17 5.54a.5.5 0 0 1 0-.9l5.61-2.741a.5.5 0 0 1 .44 0z"
       stroke="#6C707E"
@@ -39,7 +37,6 @@ const DependenciesLight: FC<SvgProps> = ({
 const DependenciesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +52,6 @@ const DependenciesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13.83 4.64a.5.5 0 0 1 0 .9L8.22 8.28a.5.5 0 0 1-.44 0L2.17 5.54a.5.5 0 0 1 0-.9l5.61-2.741a.5.5 0 0 1 .44 0z"
       stroke="#CED0D6"
@@ -73,7 +69,6 @@ export const Dependencies: FC<DependenciesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DependenciesLight : DependenciesDark;
@@ -82,7 +77,6 @@ export const Dependencies: FC<DependenciesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

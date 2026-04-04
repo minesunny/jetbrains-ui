@@ -7,7 +7,6 @@ export type IdeUpdateProps = SvgProps;
 const IdeUpdateLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const IdeUpdateLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#E66D17">
       <path d="m8.5 5.207 2.646 2.647a.5.5 0 0 0 .708-.708l-3.5-3.5a.5.5 0 0 0-.708 0l-3.5 3.5a.5.5 0 1 0 .708.708L7.5 5.207V12a.5.5 0 0 0 1 0z" />
       <path
@@ -43,7 +41,6 @@ const IdeUpdateLight: FC<SvgProps> = ({
 const IdeUpdateDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const IdeUpdateDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#E08855">
       <path d="m8.5 5.207 2.646 2.647a.5.5 0 0 0 .708-.708l-3.5-3.5a.5.5 0 0 0-.708 0l-3.5 3.5a.5.5 0 1 0 .708.708L7.5 5.207V12a.5.5 0 0 0 1 0z" />
       <path
@@ -81,7 +77,6 @@ export const IdeUpdate: FC<IdeUpdateProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? IdeUpdateLight : IdeUpdateDark;
@@ -90,7 +85,6 @@ export const IdeUpdate: FC<IdeUpdateProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

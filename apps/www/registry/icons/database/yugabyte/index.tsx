@@ -7,7 +7,6 @@ export type YugabyteProps = SvgProps;
 const YugabyteLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const YugabyteLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -40,7 +38,6 @@ const YugabyteLight: FC<SvgProps> = ({
 const YugabyteDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const YugabyteDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -75,7 +71,6 @@ export const Yugabyte: FC<YugabyteProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? YugabyteLight : YugabyteDark;
@@ -84,7 +79,6 @@ export const Yugabyte: FC<YugabyteProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

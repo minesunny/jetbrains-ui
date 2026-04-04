@@ -7,7 +7,6 @@ export type InlayRenameInCommentsProps = SvgProps;
 const InlayRenameInCommentsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const InlayRenameInCommentsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m10.4 2-5 8M6.6 2l-5 8"
       stroke="#818594"
@@ -36,7 +34,6 @@ const InlayRenameInCommentsLight: FC<SvgProps> = ({
 const InlayRenameInCommentsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const InlayRenameInCommentsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m10.4 2-5 8M6.6 2l-5 8"
       stroke="#9DA0A8"
@@ -67,7 +63,6 @@ export const InlayRenameInComments: FC<InlayRenameInCommentsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const InlayRenameInComments: FC<InlayRenameInCommentsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ConstantProps = SvgProps;
 const ConstantLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ConstantLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m.586 6.586 6-6a2 2 0 0 1 2.828 0l6 6a2 2 0 0 1 0 2.828l-6 6a2 2 0 0 1-2.828 0l-6-6a2 2 0 0 1 0-2.828"
       fill="#FFF4EB"
@@ -44,7 +42,6 @@ const ConstantLight: FC<SvgProps> = ({
 const ConstantDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const ConstantDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m.586 6.586 6-6a2 2 0 0 1 2.828 0l6 6a2 2 0 0 1 0 2.828l-6 6a2 2 0 0 1-2.828 0l-6-6a2 2 0 0 1 0-2.828"
       fill="#45322B"
@@ -83,7 +79,6 @@ export const Constant: FC<ConstantProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ConstantLight : ConstantDark;
@@ -92,7 +87,6 @@ export const Constant: FC<ConstantProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

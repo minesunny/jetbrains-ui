@@ -7,7 +7,6 @@ export type ToolWindowRunWithCoverageProps = SvgProps;
 const ToolWindowRunWithCoverageLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowRunWithCoverageLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#6C707E">
       <path
         fillRule="evenodd"
@@ -43,7 +41,6 @@ const ToolWindowRunWithCoverageLight: FC<SvgProps> = ({
 const ToolWindowRunWithCoverageDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const ToolWindowRunWithCoverageDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <g clipPath="url(#b)" fill="#CED0D6">
         <path
@@ -86,7 +82,6 @@ export const ToolWindowRunWithCoverage: FC<ToolWindowRunWithCoverageProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -98,7 +93,6 @@ export const ToolWindowRunWithCoverage: FC<ToolWindowRunWithCoverageProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

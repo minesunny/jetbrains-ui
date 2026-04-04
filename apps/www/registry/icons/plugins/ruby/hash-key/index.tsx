@@ -7,7 +7,6 @@ export type HashKeyProps = SvgProps;
 const HashKeyLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +54,6 @@ const HashKeyLight: React.FC<SvgProps> = ({
 const HashKeyDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -105,7 +103,6 @@ export const HashKey: React.FC<HashKeyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? HashKeyLight : HashKeyDark;
@@ -114,7 +111,6 @@ export const HashKey: React.FC<HashKeyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

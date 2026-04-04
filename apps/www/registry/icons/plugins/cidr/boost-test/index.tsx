@@ -7,7 +7,6 @@ export type BoostTestProps = SvgProps;
 const BoostTestLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +51,6 @@ const BoostTestLight: React.FC<SvgProps> = ({
 const BoostTestDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -99,7 +97,6 @@ export const BoostTest: React.FC<BoostTestProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? BoostTestLight : BoostTestDark;
@@ -108,7 +105,6 @@ export const BoostTest: React.FC<BoostTestProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

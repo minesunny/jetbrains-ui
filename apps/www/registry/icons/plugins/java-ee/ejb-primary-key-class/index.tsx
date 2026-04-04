@@ -7,7 +7,6 @@ export type EjbPrimaryKeyClassProps = SvgProps;
 const EjbPrimaryKeyClassLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +47,6 @@ const EjbPrimaryKeyClassLight: React.FC<SvgProps> = ({
 const EjbPrimaryKeyClassDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -91,7 +89,6 @@ export const EjbPrimaryKeyClass: React.FC<EjbPrimaryKeyClassProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -101,7 +98,6 @@ export const EjbPrimaryKeyClass: React.FC<EjbPrimaryKeyClassProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ChangelistProps = SvgProps;
 const ChangelistLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ChangelistLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#6C707E" />
     <rect x="5" y="5" width="6" height="1" rx=".5" fill="#6C707E" />
     <rect x="5" y="7.5" width="6" height="1" rx=".5" fill="#6C707E" />
@@ -34,7 +32,6 @@ const ChangelistLight: FC<SvgProps> = ({
 const ChangelistDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const ChangelistDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#CED0D6" />
     <rect x="5" y="5" width="6" height="1" rx=".5" fill="#CED0D6" />
     <rect x="5" y="7.5" width="6" height="1" rx=".5" fill="#CED0D6" />
@@ -63,7 +59,6 @@ export const Changelist: FC<ChangelistProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ChangelistLight : ChangelistDark;
@@ -72,7 +67,6 @@ export const Changelist: FC<ChangelistProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

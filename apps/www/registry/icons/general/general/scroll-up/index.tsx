@@ -7,7 +7,6 @@ export type ScrollUpProps = SvgProps;
 const ScrollUpLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ScrollUpLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 3a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1zM1.5 7.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zM1.5 12a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zM11 12.5a.5.5 0 0 0 1 0V6.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.707 0l-3 3a.5.5 0 0 0 .707.708L11 6.707z"
       fill="#6C707E"
@@ -34,7 +32,6 @@ const ScrollUpLight: FC<SvgProps> = ({
 const ScrollUpDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const ScrollUpDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 3a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1zM1.5 7.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zM1.5 12a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zM11 12.5a.5.5 0 0 0 1 0V6.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.707 0l-3 3a.5.5 0 0 0 .707.708L11 6.707z"
       fill="#CED0D6"
@@ -63,7 +59,6 @@ export const ScrollUp: FC<ScrollUpProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ScrollUpLight : ScrollUpDark;
@@ -72,7 +67,6 @@ export const ScrollUp: FC<ScrollUpProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type UnfreezeProps = SvgProps;
 const UnfreezeLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -35,7 +34,6 @@ const UnfreezeLight: React.FC<SvgProps> = ({
 const UnfreezeDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -72,7 +70,6 @@ export const Unfreeze: React.FC<UnfreezeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? UnfreezeLight : UnfreezeDark;
@@ -81,7 +78,6 @@ export const Unfreeze: React.FC<UnfreezeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

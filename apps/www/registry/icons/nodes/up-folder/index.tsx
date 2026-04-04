@@ -7,7 +7,6 @@ export type UpFolderProps = SvgProps;
 const UpFolderLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const UpFolderLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.5 9A1.5 1.5 0 0 1 11 7.5V5H8V3.514l-1.264-1.23A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h10.5c.966 0 1.75-.836 1.75-1.867V9z"
       fill="#EBECF0"
@@ -44,7 +42,6 @@ const UpFolderLight: FC<SvgProps> = ({
 const UpFolderDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const UpFolderDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.5 9A1.5 1.5 0 0 1 11 7.5V5H8V3.514l-1.264-1.23A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h10.5c.966 0 1.75-.836 1.75-1.867V9z"
       fill="#43454A"
@@ -83,7 +79,6 @@ export const UpFolder: FC<UpFolderProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? UpFolderLight : UpFolderDark;
@@ -92,7 +87,6 @@ export const UpFolder: FC<UpFolderProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

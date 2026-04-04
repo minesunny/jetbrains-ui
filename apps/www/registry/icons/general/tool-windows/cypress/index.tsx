@@ -7,7 +7,6 @@ export type CypressProps = SvgProps;
 const CypressLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CypressLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 15q.145 0 .29-.006c.5-.02.946-.335 1.137-.8l3.488-8.506h-1.052l-1.351 3.43-1.362-3.43H8.036l1.91 4.682-1.391 3.38-.03.072c-.047.114-.156.168-.277.172h-.004a6 6 0 1 1 3.244-1.111l.581.814A7 7 0 1 0 8 15"
       fill="#6C707E"
@@ -38,7 +36,6 @@ const CypressLight: FC<SvgProps> = ({
 const CypressDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const CypressDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 15q.145 0 .29-.006c.5-.02.946-.335 1.137-.8l3.488-8.506h-1.052l-1.351 3.43-1.362-3.43H8.036l1.91 4.682-1.391 3.38-.03.072c-.047.114-.156.168-.277.172h-.004a6 6 0 1 1 3.244-1.111l.581.814A7 7 0 1 0 8 15"
       fill="#CED0D6"
@@ -71,7 +67,6 @@ export const Cypress: FC<CypressProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CypressLight : CypressDark;
@@ -80,7 +75,6 @@ export const Cypress: FC<CypressProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

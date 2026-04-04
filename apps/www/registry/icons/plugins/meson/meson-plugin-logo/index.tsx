@@ -7,7 +7,6 @@ export type MesonPluginLogoProps = SvgProps;
 const MesonPluginLogoLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -34,7 +33,6 @@ const MesonPluginLogoLight: React.FC<SvgProps> = ({
 const MesonPluginLogoDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +61,6 @@ export const MesonPluginLogo: React.FC<MesonPluginLogoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -73,7 +70,6 @@ export const MesonPluginLogo: React.FC<MesonPluginLogoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

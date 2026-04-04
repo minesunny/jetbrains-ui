@@ -7,7 +7,6 @@ export type ServicesProps = SvgProps;
 const ServicesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ServicesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M15.212 7.5a1 1 0 0 1 0 1L12.039 14a1 1 0 0 1-.867.5H4.828a1 1 0 0 1-.867-.5L.788 8.5a1 1 0 0 1 0-1L3.961 2a1 1 0 0 1 .867-.5h6.344a1 1 0 0 1 .867.5z"
       stroke="#6C707E"
@@ -38,7 +36,6 @@ const ServicesLight: FC<SvgProps> = ({
 const ServicesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const ServicesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M15.212 7.5a1 1 0 0 1 0 1L12.039 14a1 1 0 0 1-.867.5H4.828a1 1 0 0 1-.867-.5L.788 8.5a1 1 0 0 1 0-1L3.961 2a1 1 0 0 1 .867-.5h6.344a1 1 0 0 1 .867.5z"
       stroke="#CED0D6"
@@ -71,7 +67,6 @@ export const Services: FC<ServicesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ServicesLight : ServicesDark;
@@ -80,7 +75,6 @@ export const Services: FC<ServicesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type DartTestProps = SvgProps;
 const DartTestLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +53,6 @@ const DartTestLight: React.FC<SvgProps> = ({
 const DartTestDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -103,7 +101,6 @@ export const DartTest: React.FC<DartTestProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DartTestLight : DartTestDark;
@@ -112,7 +109,6 @@ export const DartTest: React.FC<DartTestProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

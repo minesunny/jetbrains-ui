@@ -7,7 +7,6 @@ export type NotDefinedProps = SvgProps;
 const NotDefinedLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const NotDefinedLight: React.FC<SvgProps> = ({
 const NotDefinedDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -79,7 +77,6 @@ export const NotDefined: React.FC<NotDefinedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? NotDefinedLight : NotDefinedDark;
@@ -88,7 +85,6 @@ export const NotDefined: React.FC<NotDefinedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

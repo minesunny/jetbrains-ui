@@ -7,7 +7,6 @@ export type JunitTestMarkProps = SvgProps;
 const JunitTestMarkLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const JunitTestMarkLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -42,7 +40,6 @@ const JunitTestMarkLight: FC<SvgProps> = ({
 const JunitTestMarkDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const JunitTestMarkDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fillRule="evenodd" clipRule="evenodd">
       <path
         d="M15.38 2.712a.4.4 0 0 1 0 .576l-2.703 2.6A.4.4 0 0 1 12 5.599V.404a.4.4 0 0 1 .677-.289z"
@@ -82,7 +78,6 @@ export const JunitTestMark: FC<JunitTestMarkProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -92,7 +87,6 @@ export const JunitTestMark: FC<JunitTestMarkProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

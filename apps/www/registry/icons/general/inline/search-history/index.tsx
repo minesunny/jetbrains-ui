@@ -7,7 +7,6 @@ export type SearchHistoryProps = SvgProps;
 const SearchHistoryLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SearchHistoryLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m8.5 10.497 3 2.999M9.5 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"
       stroke="#6C707E"
@@ -36,7 +34,6 @@ const SearchHistoryLight: FC<SvgProps> = ({
 const SearchHistoryDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const SearchHistoryDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m8.5 10.497 3 2.999M9.5 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"
       stroke="#CED0D6"
@@ -67,7 +63,6 @@ export const SearchHistory: FC<SearchHistoryProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const SearchHistory: FC<SearchHistoryProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

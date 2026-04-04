@@ -7,7 +7,6 @@ export type ServiceAccountProps = SvgProps;
 const ServiceAccountLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +47,6 @@ const ServiceAccountLight: React.FC<SvgProps> = ({
 const ServiceAccountDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -91,7 +89,6 @@ export const ServiceAccount: React.FC<ServiceAccountProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -101,7 +98,6 @@ export const ServiceAccount: React.FC<ServiceAccountProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

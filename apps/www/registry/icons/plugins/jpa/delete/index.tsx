@@ -7,7 +7,6 @@ export type DeleteProps = SvgProps;
 const DeleteLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +47,6 @@ const DeleteLight: React.FC<SvgProps> = ({
 const DeleteDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -91,7 +89,6 @@ export const Delete: React.FC<DeleteProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DeleteLight : DeleteDark;
@@ -100,7 +97,6 @@ export const Delete: React.FC<DeleteProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

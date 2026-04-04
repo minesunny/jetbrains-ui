@@ -7,7 +7,6 @@ export type OpenApiProps = SvgProps;
 const OpenApiLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const OpenApiLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M16 2a2 2 0 1 1-4 0 2 2 0 0 1 4 0M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"
       fill="#EBECF0"
@@ -56,7 +54,6 @@ const OpenApiLight: FC<SvgProps> = ({
 const OpenApiDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -72,7 +69,6 @@ const OpenApiDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M16 2a2 2 0 1 1-4 0 2 2 0 0 1 4 0M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"
       fill="#43454A"
@@ -107,7 +103,6 @@ export const OpenApi: FC<OpenApiProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? OpenApiLight : OpenApiDark;
@@ -116,7 +111,6 @@ export const OpenApi: FC<OpenApiProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

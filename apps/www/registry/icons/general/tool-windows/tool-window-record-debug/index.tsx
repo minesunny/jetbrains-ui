@@ -7,7 +7,6 @@ export type ToolWindowRecordDebugProps = SvgProps;
 const ToolWindowRecordDebugLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowRecordDebugLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M13 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -43,7 +41,6 @@ const ToolWindowRecordDebugLight: FC<SvgProps> = ({
 const ToolWindowRecordDebugDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const ToolWindowRecordDebugDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M13 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#CED0D6" />
     <path
       fillRule="evenodd"
@@ -81,7 +77,6 @@ export const ToolWindowRecordDebug: FC<ToolWindowRecordDebugProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -91,7 +86,6 @@ export const ToolWindowRecordDebug: FC<ToolWindowRecordDebugProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

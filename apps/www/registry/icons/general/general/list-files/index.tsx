@@ -7,7 +7,6 @@ export type ListFilesProps = SvgProps;
 const ListFilesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ListFilesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="1.5" width="11" height="13" rx="1.5" stroke="#6C707E" />
     <rect x="5" y="5" width="6" height="1" rx=".5" fill="#6C707E" />
     <rect x="5" y="7.5" width="6" height="1" rx=".5" fill="#6C707E" />
@@ -34,7 +32,6 @@ const ListFilesLight: FC<SvgProps> = ({
 const ListFilesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const ListFilesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="1.5" width="11" height="13" rx="1.5" stroke="#CED0D6" />
     <rect x="5" y="5" width="6" height="1" rx=".5" fill="#CED0D6" />
     <rect x="5" y="7.5" width="6" height="1" rx=".5" fill="#CED0D6" />
@@ -63,7 +59,6 @@ export const ListFiles: FC<ListFilesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ListFilesLight : ListFilesDark;
@@ -72,7 +67,6 @@ export const ListFiles: FC<ListFilesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

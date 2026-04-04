@@ -7,7 +7,6 @@ export type ToolWindowJPabStructureProps = SvgProps;
 const ToolWindowJPabStructureLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowJPabStructureLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M15 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0M5.057 6.232a.5.5 0 1 0 .886-.464zm.75-5.237L6.275.82a.5.5 0 0 0-.901-.076zm.727 3.388a.5.5 0 1 0 .937-.348zm-1.43-.922.498.051zm.234-2.292 1.196 3.214.937-.348L6.275.82zM5.5 6l.443-.232v.001l-.001-.003-.012-.025-.05-.115a4 4 0 0 1-.152-.464 4.6 4.6 0 0 1-.126-1.65l-.995-.103a5.6 5.6 0 0 0 .154 2.008 5 5 0 0 0 .263.746l.032.066v.002l.001.001zm.102-2.488c.074-.713.238-1.29.383-1.684a5 5 0 0 1 .255-.584l-.433-.25-.433-.249v.001l-.002.002-.002.004-.029.053-.073.146c-.06.125-.139.305-.223.534a8 8 0 0 0-.438 1.924z"
@@ -57,7 +55,6 @@ const ToolWindowJPabStructureLight: FC<SvgProps> = ({
 const ToolWindowJPabStructureDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -73,7 +70,6 @@ const ToolWindowJPabStructureDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M15 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0M5.057 6.232a.5.5 0 1 0 .886-.464zm.75-5.237L6.275.82a.5.5 0 0 0-.901-.076zm.727 3.388a.5.5 0 1 0 .937-.348zm-1.43-.922.498.051zm.234-2.292 1.196 3.214.937-.348L6.275.82zM5.5 6l.443-.232v.001l-.001-.003-.012-.025-.05-.115a4 4 0 0 1-.152-.464 4.6 4.6 0 0 1-.126-1.65l-.995-.103a5.6 5.6 0 0 0 .154 2.008 5 5 0 0 0 .263.746l.032.066v.002l.001.001zm.102-2.488c.074-.713.238-1.29.383-1.684a5 5 0 0 1 .255-.584l-.433-.25-.433-.249v.001l-.002.002-.002.004-.029.053-.073.146c-.06.125-.139.305-.223.534a8 8 0 0 0-.438 1.924z"
@@ -109,7 +105,6 @@ export const ToolWindowJPabStructure: FC<ToolWindowJPabStructureProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -121,7 +116,6 @@ export const ToolWindowJPabStructure: FC<ToolWindowJPabStructureProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

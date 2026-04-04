@@ -7,7 +7,6 @@ export type CdiProps = SvgProps;
 const CdiLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +49,6 @@ const CdiLight: React.FC<SvgProps> = ({
 const CdiDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -95,7 +93,6 @@ export const Cdi: React.FC<CdiProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CdiLight : CdiDark;
@@ -104,7 +101,6 @@ export const Cdi: React.FC<CdiProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

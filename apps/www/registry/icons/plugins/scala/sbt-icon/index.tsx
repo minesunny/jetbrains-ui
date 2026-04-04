@@ -7,7 +7,6 @@ export type SbtIconProps = SvgProps;
 const SbtIconLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -34,7 +33,6 @@ const SbtIconLight: React.FC<SvgProps> = ({
 const SbtIconDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +61,6 @@ export const SbtIcon: React.FC<SbtIconProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SbtIconLight : SbtIconDark;
@@ -72,7 +69,6 @@ export const SbtIcon: React.FC<SbtIconProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

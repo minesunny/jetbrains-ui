@@ -7,7 +7,6 @@ export type LiquibaseUpdateProps = SvgProps;
 const LiquibaseUpdateLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const LiquibaseUpdateLight: React.FC<SvgProps> = ({
 const LiquibaseUpdateDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -79,7 +77,6 @@ export const LiquibaseUpdate: React.FC<LiquibaseUpdateProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -89,7 +86,6 @@ export const LiquibaseUpdate: React.FC<LiquibaseUpdateProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

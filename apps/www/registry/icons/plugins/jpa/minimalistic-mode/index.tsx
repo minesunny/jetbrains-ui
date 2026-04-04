@@ -7,7 +7,6 @@ export type MinimalisticModeProps = SvgProps;
 const MinimalisticModeLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -49,7 +48,6 @@ const MinimalisticModeLight: React.FC<SvgProps> = ({
 const MinimalisticModeDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -100,7 +98,6 @@ export const MinimalisticMode: React.FC<MinimalisticModeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -110,7 +107,6 @@ export const MinimalisticMode: React.FC<MinimalisticModeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

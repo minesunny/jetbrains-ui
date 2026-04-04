@@ -7,7 +7,6 @@ export type OptionCommandProps = SvgProps;
 const OptionCommandLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +49,6 @@ const OptionCommandLight: React.FC<SvgProps> = ({
 const OptionCommandDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -95,7 +93,6 @@ export const OptionCommand: React.FC<OptionCommandProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -105,7 +102,6 @@ export const OptionCommand: React.FC<OptionCommandProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

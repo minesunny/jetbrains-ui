@@ -7,7 +7,6 @@ export type AttributeProps = SvgProps;
 const AttributeLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -35,7 +34,6 @@ const AttributeLight: React.FC<SvgProps> = ({
 const AttributeDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -65,7 +63,6 @@ export const Attribute: React.FC<AttributeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AttributeLight : AttributeDark;
@@ -74,7 +71,6 @@ export const Attribute: React.FC<AttributeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

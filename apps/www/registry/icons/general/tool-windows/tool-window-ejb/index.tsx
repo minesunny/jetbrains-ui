@@ -7,7 +7,6 @@ export type ToolWindowEJBProps = SvgProps;
 const ToolWindowEJBLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowEJBLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12 3H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3.273q.18.519.462 1H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3.771a5.6 5.6 0 0 0-1-.481V4a1 1 0 0 0-1-1"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const ToolWindowEJBLight: FC<SvgProps> = ({
 const ToolWindowEJBDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ToolWindowEJBDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12 3H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3.273q.18.519.462 1H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3.771a5.6 5.6 0 0 0-1-.481V4a1 1 0 0 0-1-1"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const ToolWindowEJB: FC<ToolWindowEJBProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const ToolWindowEJB: FC<ToolWindowEJBProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

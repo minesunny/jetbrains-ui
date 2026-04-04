@@ -7,7 +7,6 @@ export type DonateProps = SvgProps;
 const DonateLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DonateLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.992 14.931h1.024V16h-1.024zm0-7.931h1.024v1.209h-1.024zm.367 8.118q-.739 0-1.313-.265a2.17 2.17 0 0 1-.891-.75 2 2 0 0 1-.329-1.112h1.26a.96.96 0 0 0 .161.549q.162.24.456.372t.671.132q.363 0 .642-.117a.97.97 0 0 0 .426-.338.87.87 0 0 0 .152-.505.931.931 0 0 0-.789-.936l-1.18-.196a2.1 2.1 0 0 1-.868-.348 1.85 1.85 0 0 1-.568-.671 2 2 0 0 1-.196-.887q0-.584.299-1.044.303-.46.838-.72.539-.26 1.22-.26.69 0 1.23.255.543.25.842.7.304.452.314 1.035h-1.26a.83.83 0 0 0-.141-.475.88.88 0 0 0-.392-.324 1.34 1.34 0 0 0-.579-.117q-.328 0-.578.112a.9.9 0 0 0-.392.309.8.8 0 0 0-.137.465q0 .315.2.54.202.225.53.284l1.147.186a2.06 2.06 0 0 1 1.519 1.102q.22.432.22.926 0 .593-.318 1.074a2.16 2.16 0 0 1-.892.754q-.569.27-1.303.27"
       fill="#6C707E"
@@ -38,7 +36,6 @@ const DonateLight: FC<SvgProps> = ({
 const DonateDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const DonateDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.992 14.931h1.024V16h-1.024zm0-7.931h1.024v1.209h-1.024zm.367 8.118q-.739 0-1.313-.265a2.17 2.17 0 0 1-.891-.75 2 2 0 0 1-.329-1.112h1.26a.96.96 0 0 0 .161.549q.162.24.456.372t.671.132q.363 0 .642-.117a.97.97 0 0 0 .426-.338.87.87 0 0 0 .152-.505.931.931 0 0 0-.789-.936l-1.18-.196a2.1 2.1 0 0 1-.868-.348 1.85 1.85 0 0 1-.568-.671 2 2 0 0 1-.196-.887q0-.584.299-1.044.303-.46.838-.72.539-.26 1.22-.26.69 0 1.23.255.543.25.842.7.304.452.314 1.035h-1.26a.83.83 0 0 0-.141-.475.88.88 0 0 0-.392-.324 1.34 1.34 0 0 0-.579-.117q-.328 0-.578.112a.9.9 0 0 0-.392.309.8.8 0 0 0-.137.465q0 .315.2.54.202.225.53.284l1.147.186a2.06 2.06 0 0 1 1.519 1.102q.22.432.22.926 0 .593-.318 1.074a2.16 2.16 0 0 1-.892.754q-.569.27-1.303.27"
       fill="#CED0D6"
@@ -71,7 +67,6 @@ export const Donate: FC<DonateProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DonateLight : DonateDark;
@@ -80,7 +75,6 @@ export const Donate: FC<DonateProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

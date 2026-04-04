@@ -7,7 +7,6 @@ export type BunProps = SvgProps;
 const BunLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const BunLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.533 8.474c0 2.797-2.925 5.064-6.533 5.064s-6.533-2.267-6.533-5.064c0-1.735 1.12-3.267 2.84-4.175C6.03 3.39 7.1 2.459 8 2.459s1.669.76 3.692 1.84c1.721.908 2.841 2.44 2.841 4.175"
       fill="#FBF0DF"
@@ -84,7 +82,6 @@ const BunLight: FC<SvgProps> = ({
 const BunDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -100,7 +97,6 @@ const BunDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.533 8.474c0 2.797-2.925 5.064-6.533 5.064s-6.533-2.267-6.533-5.064c0-1.735 1.12-3.267 2.84-4.175C6.03 3.39 7.1 2.459 8 2.459s1.669.76 3.692 1.84c1.721.908 2.841 2.44 2.841 4.175"
       fill="#FBF0DF"
@@ -163,7 +159,6 @@ export const Bun: FC<BunProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? BunLight : BunDark;
@@ -172,7 +167,6 @@ export const Bun: FC<BunProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

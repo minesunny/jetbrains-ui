@@ -7,7 +7,6 @@ export type DatabaseObjectsGroupProps = SvgProps;
 const DatabaseObjectsGroupLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DatabaseObjectsGroupLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14H7v-4c0-1.135.894-1.894 1.724-2.309C9.614 7.246 10.774 7 12 7c1.103 0 2.153.2 3 .564V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z"
       fill="#EBECF0"
@@ -44,7 +42,6 @@ const DatabaseObjectsGroupLight: FC<SvgProps> = ({
 const DatabaseObjectsGroupDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const DatabaseObjectsGroupDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14H7v-4c0-1.135.894-1.894 1.724-2.309C9.614 7.246 10.774 7 12 7c1.103 0 2.153.2 3 .564V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z"
       fill="#43454A"
@@ -83,7 +79,6 @@ export const DatabaseObjectsGroup: FC<DatabaseObjectsGroupProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -93,7 +88,6 @@ export const DatabaseObjectsGroup: FC<DatabaseObjectsGroupProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

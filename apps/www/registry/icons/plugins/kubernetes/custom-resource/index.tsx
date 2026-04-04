@@ -7,7 +7,6 @@ export type CustomResourceProps = SvgProps;
 const CustomResourceLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -38,7 +37,6 @@ const CustomResourceLight: React.FC<SvgProps> = ({
 const CustomResourceDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -71,7 +69,6 @@ export const CustomResource: React.FC<CustomResourceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +78,6 @@ export const CustomResource: React.FC<CustomResourceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

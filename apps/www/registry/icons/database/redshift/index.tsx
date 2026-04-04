@@ -7,7 +7,6 @@ export type RedshiftProps = SvgProps;
 const RedshiftLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RedshiftLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m6.784 1-2.13.913v12.174l2.13.913zM2.828 3.009l-1.218.426v9.13l1.218.487zM13.176 3.009l-1.827.608v8.827l1.826.608z"
       fill="#1B5A9A"
@@ -39,7 +37,6 @@ const RedshiftLight: FC<SvgProps> = ({
 const RedshiftDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +52,6 @@ const RedshiftDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m6.784 1-2.13.913v12.174l2.13.913zM2.828 3.009l-1.218.426v9.13l1.218.487zM13.176 3.009l-1.827.608v8.827l1.826.608z"
       fill="#1B5A9A"
@@ -73,7 +69,6 @@ export const Redshift: FC<RedshiftProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RedshiftLight : RedshiftDark;
@@ -82,7 +77,6 @@ export const Redshift: FC<RedshiftProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

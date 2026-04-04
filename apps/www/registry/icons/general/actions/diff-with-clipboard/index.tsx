@@ -7,7 +7,6 @@ export type DiffWithClipboardProps = SvgProps;
 const DiffWithClipboardLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DiffWithClipboardLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
       stroke="#3574F0"
@@ -46,7 +44,6 @@ const DiffWithClipboardLight: FC<SvgProps> = ({
 const DiffWithClipboardDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -62,7 +59,6 @@ const DiffWithClipboardDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
       stroke="#548AF7"
@@ -87,7 +83,6 @@ export const DiffWithClipboard: FC<DiffWithClipboardProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -97,7 +92,6 @@ export const DiffWithClipboard: FC<DiffWithClipboardProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

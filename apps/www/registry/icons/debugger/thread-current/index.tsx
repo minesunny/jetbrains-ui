@@ -7,7 +7,6 @@ export type ThreadCurrentProps = SvgProps;
 const ThreadCurrentLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ThreadCurrentLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="m2.5 8.25 3.5 3.5 7.5-7.5"
@@ -44,7 +42,6 @@ const ThreadCurrentLight: FC<SvgProps> = ({
 const ThreadCurrentDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const ThreadCurrentDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="m2.5 8.25 3.5 3.5 7.5-7.5"
@@ -83,7 +79,6 @@ export const ThreadCurrent: FC<ThreadCurrentProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -93,7 +88,6 @@ export const ThreadCurrent: FC<ThreadCurrentProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

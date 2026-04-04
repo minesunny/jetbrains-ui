@@ -7,7 +7,6 @@ export type PaginationProps = SvgProps;
 const PaginationLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PaginationLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M1.5 2.5h13M1.5 13.5h13" stroke="#6C707E" strokeLinecap="round" />
     <path
       d="m4.5 5-3 3 3 3m7-6 3 3-3 3"
@@ -37,7 +35,6 @@ const PaginationLight: FC<SvgProps> = ({
 const PaginationDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const PaginationDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M1.5 2.5h13M1.5 13.5h13" stroke="#CED0D6" strokeLinecap="round" />
     <path
       d="m4.5 5-3 3 3 3m7-6 3 3-3 3"
@@ -69,7 +65,6 @@ export const Pagination: FC<PaginationProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PaginationLight : PaginationDark;
@@ -78,7 +73,6 @@ export const Pagination: FC<PaginationProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type MongoDBProps = SvgProps;
 const MongoDBLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MongoDBLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.75 8c0 5-3.25 6-3.25 6s-.5-.5-.5-2V0s3.75 3 3.75 8"
       fill="#12924F"
@@ -42,7 +40,6 @@ const MongoDBLight: FC<SvgProps> = ({
 const MongoDBDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const MongoDBDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.75 8c0 5-3.25 6-3.25 6s-.5-.5-.5-2V0s3.75 3 3.75 8"
       fill="#12924F"
@@ -79,7 +75,6 @@ export const MongoDB: FC<MongoDBProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? MongoDBLight : MongoDBDark;
@@ -88,7 +83,6 @@ export const MongoDB: FC<MongoDBProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

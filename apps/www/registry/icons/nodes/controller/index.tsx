@@ -7,7 +7,6 @@ export type ControllerProps = SvgProps;
 const ControllerLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ControllerLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 1a7 7 0 0 0 0 14 5 5 0 0 1 7-7 7 7 0 0 0-7-7" fill="#EDF3FF" />
     <path
       d="M7.403 13.97a6 6 0 1 1 6.568-6.567c.368.158.713.36 1.029.597a7 7 0 1 0-7 7 5 5 0 0 1-.597-1.03"
@@ -52,7 +50,6 @@ const ControllerLight: FC<SvgProps> = ({
 const ControllerDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -68,7 +65,6 @@ const ControllerDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 1a7 7 0 0 0 0 14 5 5 0 0 1 7-7 7 7 0 0 0-7-7" fill="#25324D" />
     <path
       d="M7.403 13.97a6 6 0 1 1 6.568-6.567c.368.158.713.36 1.029.597a7 7 0 1 0-7 7 5 5 0 0 1-.597-1.03"
@@ -99,7 +95,6 @@ export const Controller: FC<ControllerProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ControllerLight : ControllerDark;
@@ -108,7 +103,6 @@ export const Controller: FC<ControllerProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

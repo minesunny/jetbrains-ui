@@ -7,7 +7,6 @@ export type ManagedBeanProps = SvgProps;
 const ManagedBeanLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -40,7 +39,6 @@ const ManagedBeanLight: React.FC<SvgProps> = ({
 const ManagedBeanDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -75,7 +73,6 @@ export const ManagedBean: React.FC<ManagedBeanProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ManagedBeanLight : ManagedBeanDark;
@@ -84,7 +81,6 @@ export const ManagedBean: React.FC<ManagedBeanProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

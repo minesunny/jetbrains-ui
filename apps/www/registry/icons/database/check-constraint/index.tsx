@@ -7,7 +7,6 @@ export type CheckConstraintProps = SvgProps;
 const CheckConstraintLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CheckConstraintLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.5 3.5h3M8.5 8h6M5.5 12.5h9"
       stroke="#6C707E"
@@ -37,7 +35,6 @@ const CheckConstraintLight: FC<SvgProps> = ({
 const CheckConstraintDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const CheckConstraintDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.5 3.5h3M8.5 8h6M5.5 12.5h9"
       stroke="#CED0D6"
@@ -69,7 +65,6 @@ export const CheckConstraint: FC<CheckConstraintProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -79,7 +74,6 @@ export const CheckConstraint: FC<CheckConstraintProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

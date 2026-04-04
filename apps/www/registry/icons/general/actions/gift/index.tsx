@@ -7,7 +7,6 @@ export type GiftProps = SvgProps;
 const GiftLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const GiftLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2 5h11v1H2zM4 7h7v6H4z" fill="#EDF3FF" />
     <path
       d="M7.5 4V3A1.5 1.5 0 1 0 6 4.5h1a.5.5 0 0 0 .5-.5ZM7.5 3v1.5H9A1.5 1.5 0 1 0 7.5 3Z"
@@ -42,7 +40,6 @@ const GiftLight: FC<SvgProps> = ({
 const GiftDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const GiftDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2 5h11v1H2zM4 7h7v6H4z" fill="#25324D" />
     <path
       d="M7.5 4V3A1.5 1.5 0 1 0 6 4.5h1a.5.5 0 0 0 .5-.5ZM7.5 3v1.5H9A1.5 1.5 0 1 0 7.5 3Z"
@@ -79,7 +75,6 @@ export const Gift: FC<GiftProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? GiftLight : GiftDark;
@@ -88,7 +83,6 @@ export const Gift: FC<GiftProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

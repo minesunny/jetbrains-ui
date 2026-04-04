@@ -7,7 +7,6 @@ export type ForwardPortsProps = SvgProps;
 const ForwardPortsLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -45,7 +44,6 @@ const ForwardPortsLight: React.FC<SvgProps> = ({
 const ForwardPortsDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -85,7 +83,6 @@ export const ForwardPorts: React.FC<ForwardPortsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ForwardPortsLight : ForwardPortsDark;
@@ -94,7 +91,6 @@ export const ForwardPorts: React.FC<ForwardPortsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

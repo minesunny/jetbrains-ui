@@ -7,7 +7,6 @@ export type SearchProps = SvgProps;
 const SearchLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SearchLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="7" cy="7" r="4.5" stroke="#6C707E" />
     <path d="m10.2 10.2 3.3 3.296" stroke="#6C707E" strokeLinecap="round" />
   </svg>
@@ -32,7 +30,6 @@ const SearchLight: FC<SvgProps> = ({
 const SearchDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +45,6 @@ const SearchDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="7" cy="7" r="4.5" stroke="#CED0D6" />
     <path d="m10.2 10.2 3.3 3.296" stroke="#CED0D6" strokeLinecap="round" />
   </svg>
@@ -59,7 +55,6 @@ export const Search: FC<SearchProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SearchLight : SearchDark;
@@ -68,7 +63,6 @@ export const Search: FC<SearchProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

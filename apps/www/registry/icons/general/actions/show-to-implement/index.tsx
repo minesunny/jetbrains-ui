@@ -7,7 +7,6 @@ export type ShowToImplementProps = SvgProps;
 const ShowToImplementLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ShowToImplementLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m11 4.121-.44.44a1.5 1.5 0 0 1-2.12-2.122l1.237-1.237A7 7 0 1 0 14.929 9H12.5A1.5 1.5 0 0 1 11 7.5z"
       fill="#F2FCF3"
@@ -51,7 +49,6 @@ const ShowToImplementLight: FC<SvgProps> = ({
 const ShowToImplementDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -67,7 +64,6 @@ const ShowToImplementDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m11 4.121-.44.44a1.5 1.5 0 0 1-2.12-2.122l1.237-1.237A7 7 0 1 0 14.929 9H12.5A1.5 1.5 0 0 1 11 7.5z"
       fill="#253627"
@@ -97,7 +93,6 @@ export const ShowToImplement: FC<ShowToImplementProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -107,7 +102,6 @@ export const ShowToImplement: FC<ShowToImplementProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

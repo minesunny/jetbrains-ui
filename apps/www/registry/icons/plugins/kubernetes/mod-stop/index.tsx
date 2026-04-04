@@ -7,7 +7,6 @@ export type ModStopProps = SvgProps;
 const ModStopLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -39,7 +38,6 @@ const ModStopLight: React.FC<SvgProps> = ({
 const ModStopDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -73,7 +71,6 @@ export const ModStop: React.FC<ModStopProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ModStopLight : ModStopDark;
@@ -82,7 +79,6 @@ export const ModStop: React.FC<ModStopProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

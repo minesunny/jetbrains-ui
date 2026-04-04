@@ -7,7 +7,6 @@ export type ImplementingFunctionalInterfaceProps = SvgProps;
 const ImplementingFunctionalInterfaceLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ImplementingFunctionalInterfaceLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M10 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0" fill="#FFF7F7" />
     <path
       fillRule="evenodd"
@@ -45,7 +43,6 @@ const ImplementingFunctionalInterfaceLight: FC<SvgProps> = ({
 const ImplementingFunctionalInterfaceDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const ImplementingFunctionalInterfaceDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M10 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0" fill="#402929" />
     <path
       fillRule="evenodd"
@@ -87,7 +83,6 @@ export const ImplementingFunctionalInterface: FC<
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -99,7 +94,6 @@ export const ImplementingFunctionalInterface: FC<
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

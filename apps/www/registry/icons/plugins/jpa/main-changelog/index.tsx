@@ -7,7 +7,6 @@ export type MainChangelogProps = SvgProps;
 const MainChangelogLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -39,7 +38,6 @@ const MainChangelogLight: React.FC<SvgProps> = ({
 const MainChangelogDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -73,7 +71,6 @@ export const MainChangelog: React.FC<MainChangelogProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -83,7 +80,6 @@ export const MainChangelog: React.FC<MainChangelogProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

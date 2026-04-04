@@ -7,7 +7,6 @@ export type OutSightColorProps = SvgProps;
 const OutSightColorLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -66,7 +65,6 @@ const OutSightColorLight: React.FC<SvgProps> = ({
 const OutSightColorDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -127,7 +125,6 @@ export const OutSightColor: React.FC<OutSightColorProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -137,7 +134,6 @@ export const OutSightColor: React.FC<OutSightColorProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

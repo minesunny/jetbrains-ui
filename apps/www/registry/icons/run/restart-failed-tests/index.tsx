@@ -7,7 +7,6 @@ export type RestartFailedTestsProps = SvgProps;
 const RestartFailedTestsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RestartFailedTestsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="12.5" cy="11.5" r="3.5" fill="#E55765" />
     <path
       d="M12.5 9a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5M12.5 14a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"
@@ -39,7 +37,6 @@ const RestartFailedTestsLight: FC<SvgProps> = ({
 const RestartFailedTestsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +52,6 @@ const RestartFailedTestsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="12.5" cy="11.5" r="3.5" fill="#DB5C5C" />
     <path
       d="M12.5 9a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5M12.5 14a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"
@@ -73,7 +69,6 @@ export const RestartFailedTests: FC<RestartFailedTestsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -83,7 +78,6 @@ export const RestartFailedTests: FC<RestartFailedTestsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

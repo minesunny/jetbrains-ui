@@ -7,7 +7,6 @@ export type RakeTaskDefNodeProps = SvgProps;
 const RakeTaskDefNodeLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const RakeTaskDefNodeLight: React.FC<SvgProps> = ({
 const RakeTaskDefNodeDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +85,6 @@ export const RakeTaskDefNode: React.FC<RakeTaskDefNodeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -97,7 +94,6 @@ export const RakeTaskDefNode: React.FC<RakeTaskDefNodeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

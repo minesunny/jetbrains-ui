@@ -7,7 +7,6 @@ export type JsDocClosureProps = SvgProps;
 const JsDocClosureLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const JsDocClosureLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M9 12a3 3 0 1 0 3-3v3z" fill="#55A76A" />
     <path d="M4 9a3 3 0 1 0 3 3H4z" fill="#FFAF0F" />
     <path d="M12 7a3 3 0 1 0-3-3h3z" fill="#E55765" />
@@ -34,7 +32,6 @@ const JsDocClosureLight: FC<SvgProps> = ({
 const JsDocClosureDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const JsDocClosureDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M9 12a3 3 0 1 0 3-3v3z" fill="#57965C" />
     <path d="M4 9a3 3 0 1 0 3 3H4z" fill="#F2C55C" />
     <path d="M12 7a3 3 0 1 0-3-3h3z" fill="#DB5C5C" />
@@ -63,7 +59,6 @@ export const JsDocClosure: FC<JsDocClosureProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? JsDocClosureLight : JsDocClosureDark;
@@ -72,7 +67,6 @@ export const JsDocClosure: FC<JsDocClosureProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

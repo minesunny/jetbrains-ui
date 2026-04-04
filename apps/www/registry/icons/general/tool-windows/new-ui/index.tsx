@@ -7,7 +7,6 @@ export type NewUIProps = SvgProps;
 const NewUILight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const NewUILight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M7.5 2.565c.493 1.573 1.172 2.817 2.155 3.793.983.974 2.237 1.65 3.828 2.141-1.591.492-2.845 1.168-3.828 2.143-.983.976-1.662 2.219-2.155 3.792-.493-1.573-1.171-2.816-2.154-3.792-.983-.975-2.237-1.65-3.83-2.143 1.593-.492 2.847-1.166 3.83-2.141s1.66-2.22 2.154-3.793Z"
@@ -45,7 +43,6 @@ const NewUILight: FC<SvgProps> = ({
 const NewUIDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const NewUIDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M7.5 2.565c.493 1.573 1.172 2.817 2.155 3.793.983.974 2.237 1.65 3.828 2.141-1.591.492-2.845 1.168-3.828 2.143-.983.976-1.662 2.219-2.155 3.792-.493-1.573-1.171-2.816-2.154-3.792-.983-.975-2.237-1.65-3.83-2.143 1.593-.492 2.847-1.166 3.83-2.141s1.66-2.22 2.154-3.793Z"
@@ -85,7 +81,6 @@ export const NewUI: FC<NewUIProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? NewUILight : NewUIDark;
@@ -94,7 +89,6 @@ export const NewUI: FC<NewUIProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

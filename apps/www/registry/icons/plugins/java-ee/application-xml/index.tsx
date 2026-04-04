@@ -7,7 +7,6 @@ export type ApplicationXmlProps = SvgProps;
 const ApplicationXmlLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -40,7 +39,6 @@ const ApplicationXmlLight: React.FC<SvgProps> = ({
 const ApplicationXmlDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -75,7 +73,6 @@ export const ApplicationXml: React.FC<ApplicationXmlProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +82,6 @@ export const ApplicationXml: React.FC<ApplicationXmlProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

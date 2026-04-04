@@ -7,7 +7,6 @@ export type MessagesProps = SvgProps;
 const MessagesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MessagesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="12" width="12" height="1" rx=".5" fill="#6C707E" />
     <rect x="2" y="9" width="10" height="1" rx=".5" fill="#6C707E" />
     <rect x="2" y="6" width="9" height="1" rx=".5" fill="#6C707E" />
@@ -34,7 +32,6 @@ const MessagesLight: FC<SvgProps> = ({
 const MessagesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const MessagesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#CED0D6">
       <rect x="2" y="12" width="12" height="1" rx=".5" />
       <rect x="2" y="9" width="10" height="1" rx=".5" />
@@ -70,7 +66,6 @@ export const Messages: FC<MessagesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? MessagesLight : MessagesDark;
@@ -79,7 +74,6 @@ export const Messages: FC<MessagesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

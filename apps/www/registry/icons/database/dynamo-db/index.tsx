@@ -7,7 +7,6 @@ export type DynamoDBProps = SvgProps;
 const DynamoDBLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DynamoDBLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.806 14.976h.17l2.773-1.387.046-.066V2.453l-.046-.066L9.975 1h-.172z"
       fill="#5294CF"
@@ -47,7 +45,6 @@ const DynamoDBLight: FC<SvgProps> = ({
 const DynamoDBDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +60,6 @@ const DynamoDBDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.806 14.976h.17l2.773-1.387.046-.066V2.453l-.046-.066L9.975 1h-.172z"
       fill="#5294CF"
@@ -89,7 +85,6 @@ export const DynamoDB: FC<DynamoDBProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DynamoDBLight : DynamoDBDark;
@@ -98,7 +93,6 @@ export const DynamoDB: FC<DynamoDBProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

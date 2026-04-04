@@ -7,7 +7,6 @@ export type ModifiedProps = SvgProps;
 const ModifiedLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ModifiedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="6.5" cy="6.5" r="3" fill="#4682FA" />
   </svg>
 );
@@ -31,7 +29,6 @@ const ModifiedLight: FC<SvgProps> = ({
 const ModifiedDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +44,6 @@ const ModifiedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="6.5" cy="6.5" r="3" fill="#548AF7" />
   </svg>
 );
@@ -57,7 +53,6 @@ export const Modified: FC<ModifiedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ModifiedLight : ModifiedDark;
@@ -66,7 +61,6 @@ export const Modified: FC<ModifiedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

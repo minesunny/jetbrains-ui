@@ -7,7 +7,6 @@ export type ShowMembersProps = SvgProps;
 const ShowMembersLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ShowMembersLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 3h1.243A5.5 5.5 0 1 0 3 10.743V9.5A6.5 6.5 0 0 1 9.5 3"
       fill="#FFF7F7"
@@ -40,7 +38,6 @@ const ShowMembersLight: FC<SvgProps> = ({
 const ShowMembersDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ShowMembersDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 3h1.243A5.5 5.5 0 1 0 3 10.743V9.5A6.5 6.5 0 0 1 9.5 3"
       fill="#402929"
@@ -75,7 +71,6 @@ export const ShowMembers: FC<ShowMembersProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ShowMembersLight : ShowMembersDark;
@@ -84,7 +79,6 @@ export const ShowMembers: FC<ShowMembersProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

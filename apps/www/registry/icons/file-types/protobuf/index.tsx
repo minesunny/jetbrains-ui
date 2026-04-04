@@ -7,7 +7,6 @@ export type ProtobufProps = SvgProps;
 const ProtobufLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ProtobufLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="m12.512 12.247 1.363-1.84L12.091 8l-3.147 4.247z" fill="#FFC107" />
     <path
       d="M15.363 8.398a.65.65 0 0 0 0-.796l-2.852-3.849H8.944l4.931 6.655z"
@@ -40,7 +38,6 @@ const ProtobufLight: FC<SvgProps> = ({
 const ProtobufDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ProtobufDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="m12.512 12.247 1.363-1.84L12.091 8l-3.147 4.247z" fill="#FFC107" />
     <path
       d="M15.363 8.398a.65.65 0 0 0 0-.796l-2.852-3.849H8.944l4.931 6.655z"
@@ -75,7 +71,6 @@ export const Protobuf: FC<ProtobufProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ProtobufLight : ProtobufDark;
@@ -84,7 +79,6 @@ export const Protobuf: FC<ProtobufProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

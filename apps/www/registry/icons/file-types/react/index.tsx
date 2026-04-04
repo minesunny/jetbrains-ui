@@ -7,7 +7,6 @@ export type ReactProps = SvgProps;
 const ReactLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ReactLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#3FA1C4" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const ReactLight: FC<SvgProps> = ({
 const ReactDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const ReactDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#81D8F7" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const React: FC<ReactProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ReactLight : ReactDark;
@@ -78,7 +73,6 @@ export const React: FC<ReactProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

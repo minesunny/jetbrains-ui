@@ -7,7 +7,6 @@ export type FullLineCompletionProps = SvgProps;
 const FullLineCompletionLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -35,7 +34,6 @@ const FullLineCompletionLight: React.FC<SvgProps> = ({
 const FullLineCompletionDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -65,7 +63,6 @@ export const FullLineCompletion: React.FC<FullLineCompletionProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -75,7 +72,6 @@ export const FullLineCompletion: React.FC<FullLineCompletionProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ProtoMessageProps = SvgProps;
 const ProtoMessageLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ProtoMessageLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x="2.5"
       y="2.5"
@@ -43,7 +41,6 @@ const ProtoMessageLight: FC<SvgProps> = ({
 const ProtoMessageDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const ProtoMessageDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x="2.5"
       y="2.5"
@@ -81,7 +77,6 @@ export const ProtoMessage: FC<ProtoMessageProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ProtoMessageLight : ProtoMessageDark;
@@ -90,7 +85,6 @@ export const ProtoMessage: FC<ProtoMessageProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

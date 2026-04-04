@@ -7,7 +7,6 @@ export type JsConfigProps = SvgProps;
 const JsConfigLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const JsConfigLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11.998 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -47,7 +45,6 @@ const JsConfigLight: FC<SvgProps> = ({
 const JsConfigDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +60,6 @@ const JsConfigDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M11.998 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#CED0D6" />
     <path
       fillRule="evenodd"
@@ -89,7 +85,6 @@ export const JsConfig: FC<JsConfigProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? JsConfigLight : JsConfigDark;
@@ -98,7 +93,6 @@ export const JsConfig: FC<JsConfigProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ValidatorProps = SvgProps;
 const ValidatorLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const ValidatorLight: React.FC<SvgProps> = ({
 const ValidatorDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -79,7 +77,6 @@ export const Validator: React.FC<ValidatorProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ValidatorLight : ValidatorDark;
@@ -88,7 +85,6 @@ export const Validator: React.FC<ValidatorProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

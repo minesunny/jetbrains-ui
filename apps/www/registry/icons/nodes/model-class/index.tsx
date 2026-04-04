@@ -7,7 +7,6 @@ export type ModelClassProps = SvgProps;
 const ModelClassLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ModelClassLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M15 8a7 7 0 1 0-7 7v-5a2 2 0 0 1 2-2z" fill="#EDF3FF" />
     <path d="M15 8a7 7 0 1 0-7 7v-1a6 6 0 1 1 6-6z" fill="#3574F0" />
     <path
@@ -42,7 +40,6 @@ const ModelClassLight: FC<SvgProps> = ({
 const ModelClassDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const ModelClassDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M15 8a7 7 0 1 0-7 7v-5a2 2 0 0 1 2-2z" fill="#25324D" />
     <path d="M15 8a7 7 0 1 0-7 7v-1a6 6 0 1 1 6-6z" fill="#548AF7" />
     <path
@@ -79,7 +75,6 @@ export const ModelClass: FC<ModelClassProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ModelClassLight : ModelClassDark;
@@ -88,7 +83,6 @@ export const ModelClass: FC<ModelClassProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

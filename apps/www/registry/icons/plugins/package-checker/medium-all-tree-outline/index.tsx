@@ -7,7 +7,6 @@ export type MediumAllTreeOutlineProps = SvgProps;
 const MediumAllTreeOutlineLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -39,7 +38,6 @@ const MediumAllTreeOutlineLight: React.FC<SvgProps> = ({
 const MediumAllTreeOutlineDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -73,7 +71,6 @@ export const MediumAllTreeOutline: React.FC<MediumAllTreeOutlineProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -83,7 +80,6 @@ export const MediumAllTreeOutline: React.FC<MediumAllTreeOutlineProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

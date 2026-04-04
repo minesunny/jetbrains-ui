@@ -7,7 +7,6 @@ export type ColumnDotIndexProps = SvgProps;
 const ColumnDotIndexLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ColumnDotIndexLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 3a1 1 0 0 0-1 1v6.035Q2.245 10 2.5 10c.98 0 1.865.402 2.5 1.05V3z"
       fill="#EDF3FF"
@@ -48,7 +46,6 @@ const ColumnDotIndexLight: FC<SvgProps> = ({
 const ColumnDotIndexDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -64,7 +61,6 @@ const ColumnDotIndexDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M3 3a1 1 0 0 0-1 1v6.035Q2.245 10 2.5 10c.98 0 1.865.402 2.5 1.05V3z"
@@ -98,7 +94,6 @@ export const ColumnDotIndex: FC<ColumnDotIndexProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -108,7 +103,6 @@ export const ColumnDotIndex: FC<ColumnDotIndexProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

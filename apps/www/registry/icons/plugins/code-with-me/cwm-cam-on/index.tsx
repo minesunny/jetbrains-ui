@@ -7,7 +7,6 @@ export type CwmCamOnProps = SvgProps;
 const CwmCamOnLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -40,7 +39,6 @@ const CwmCamOnLight: React.FC<SvgProps> = ({
 const CwmCamOnDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -75,7 +73,6 @@ export const CwmCamOn: React.FC<CwmCamOnProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CwmCamOnLight : CwmCamOnDark;
@@ -84,7 +81,6 @@ export const CwmCamOn: React.FC<CwmCamOnProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

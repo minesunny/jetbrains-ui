@@ -7,7 +7,6 @@ export type SortedSetKeyProps = SvgProps;
 const SortedSetKeyLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SortedSetKeyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#6C707E">
       <path d="M2.988 9.778q.015-.578-.383-.923-.397-.345-1.072-.345H1V7.43h.533q.675 0 1.072-.345.398-.345.383-.922l-.03-1.583q-.015-.78.322-1.365.345-.585.983-.9T5.763 2H6.5v1.005h-.73q-.78 0-1.237.435-.45.427-.443 1.163l.03 1.567q.015.765-.412 1.253-.427.48-1.155.532.728.135 1.155.63.427.488.412 1.185l-.03 1.777q-.015.66.398 1.05.42.398 1.132.398h.88V14h-.887q-.802 0-1.41-.3-.6-.292-.93-.848-.322-.547-.315-1.282zM13.015 9.778q-.015-.578.382-.923.398-.345 1.072-.345H15V7.43h-.53q-.675 0-1.073-.345t-.383-.922l.03-1.583q.015-.78-.33-1.365a2.24 2.24 0 0 0-.975-.9Q11.103 2 10.24 2H9.5v1.005h.732q.78 0 1.23.435.457.428.45 1.163l-.03 1.567q-.015.765.412 1.253.427.48 1.156.532-.728.135-1.155.63-.428.488-.413 1.185l.009.517c.435.189.824.463 1.146.801z" />
       <path d="M10 9.92V8.854l-2.537-.923L10 7.01V5.946L6 7.4v1.065z" />
@@ -44,7 +42,6 @@ const SortedSetKeyLight: FC<SvgProps> = ({
 const SortedSetKeyDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const SortedSetKeyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#CED0D6">
       <path d="M2.988 9.778q.015-.578-.383-.923-.397-.345-1.072-.345H1V7.43h.533q.675 0 1.072-.345.398-.345.383-.922l-.03-1.583q-.015-.78.322-1.365.345-.585.983-.9T5.763 2H6.5v1.005h-.73q-.78 0-1.237.435-.45.427-.443 1.163l.03 1.567q.015.765-.412 1.253-.427.48-1.155.532.728.135 1.155.63.427.488.412 1.185l-.03 1.777q-.015.66.398 1.05.42.398 1.132.398h.88V14h-.887q-.802 0-1.41-.3-.6-.292-.93-.848-.322-.547-.315-1.282zM13.015 9.778q-.015-.578.382-.923.398-.345 1.072-.345H15V7.43h-.53q-.675 0-1.073-.345t-.383-.922l.03-1.583q.015-.78-.33-1.365a2.24 2.24 0 0 0-.975-.9Q11.103 2 10.24 2H9.5v1.005h.732q.78 0 1.23.435.457.428.45 1.163l-.03 1.567q-.015.765.412 1.253.427.48 1.156.532-.728.135-1.155.63-.428.488-.413 1.185l.009.517c.435.189.824.463 1.146.801z" />
       <path d="M10 9.92V8.854l-2.537-.923L10 7.01V5.946L6 7.4v1.065z" />
@@ -83,7 +79,6 @@ export const SortedSetKey: FC<SortedSetKeyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SortedSetKeyLight : SortedSetKeyDark;
@@ -92,7 +87,6 @@ export const SortedSetKey: FC<SortedSetKeyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

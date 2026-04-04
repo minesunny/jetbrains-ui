@@ -7,7 +7,6 @@ export type SessionBeanProps = SvgProps;
 const SessionBeanLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +46,6 @@ const SessionBeanLight: React.FC<SvgProps> = ({
 const SessionBeanDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -89,7 +87,6 @@ export const SessionBean: React.FC<SessionBeanProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SessionBeanLight : SessionBeanDark;
@@ -98,7 +95,6 @@ export const SessionBean: React.FC<SessionBeanProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

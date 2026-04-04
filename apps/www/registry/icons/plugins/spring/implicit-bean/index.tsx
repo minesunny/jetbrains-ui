@@ -7,7 +7,6 @@ export type ImplicitBeanProps = SvgProps;
 const ImplicitBeanLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -45,7 +44,6 @@ const ImplicitBeanLight: React.FC<SvgProps> = ({
 const ImplicitBeanDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -85,7 +83,6 @@ export const ImplicitBean: React.FC<ImplicitBeanProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ImplicitBeanLight : ImplicitBeanDark;
@@ -94,7 +91,6 @@ export const ImplicitBean: React.FC<ImplicitBeanProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type MoreHorizontalProps = SvgProps;
 const MoreHorizontalLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MoreHorizontalLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="3" cy="8" r="1" transform="rotate(-90 3 8)" fill="#6C707E" />
     <circle cx="8" cy="8" r="1" transform="rotate(-90 8 8)" fill="#6C707E" />
     <circle cx="13" cy="8" r="1" transform="rotate(-90 13 8)" fill="#6C707E" />
@@ -33,7 +31,6 @@ const MoreHorizontalLight: FC<SvgProps> = ({
 const MoreHorizontalDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -49,7 +46,6 @@ const MoreHorizontalDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="3" cy="8" r="1" transform="rotate(-90 3 8)" fill="#CED0D6" />
     <circle cx="8" cy="8" r="1" transform="rotate(-90 8 8)" fill="#CED0D6" />
     <circle cx="13" cy="8" r="1" transform="rotate(-90 13 8)" fill="#CED0D6" />
@@ -61,7 +57,6 @@ export const MoreHorizontal: FC<MoreHorizontalProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -71,7 +66,6 @@ export const MoreHorizontal: FC<MoreHorizontalProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

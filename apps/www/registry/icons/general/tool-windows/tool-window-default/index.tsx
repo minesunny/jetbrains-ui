@@ -7,7 +7,6 @@ export type ToolWindowDefaultProps = SvgProps;
 const ToolWindowDefaultLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowDefaultLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" stroke="#6C707E" />
   </svg>
 );
@@ -31,7 +29,6 @@ const ToolWindowDefaultLight: FC<SvgProps> = ({
 const ToolWindowDefaultDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +44,6 @@ const ToolWindowDefaultDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" stroke="#CED0D6" />
   </svg>
 );
@@ -57,7 +53,6 @@ export const ToolWindowDefault: FC<ToolWindowDefaultProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -67,7 +62,6 @@ export const ToolWindowDefault: FC<ToolWindowDefaultProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

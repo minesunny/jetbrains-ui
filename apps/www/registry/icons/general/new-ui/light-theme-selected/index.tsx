@@ -7,7 +7,6 @@ export type LightThemeSelectedProps = SvgProps;
 const LightThemeSelectedLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const LightThemeSelectedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M8.5 1a.5.5 0 0 0-1 0v2.025a5 5 0 0 1 1 0zM3.404 2.697l1.432 1.432a5 5 0 0 0-.707.707L2.697 3.404a.5.5 0 0 1 .707-.707M3.025 7.5H1a.5.5 0 0 0 0 1h2.025a5 5 0 0 1 0-1M2.697 12.596l1.432-1.432q.318.39.707.707l-1.432 1.432a.5.5 0 1 1-.707-.707M7.5 12.975V15a.5.5 0 0 0 1 0v-2.025a5 5 0 0 1-1 0M12.596 13.303l-1.432-1.432q.39-.317.707-.707l1.432 1.432a.5.5 0 1 1-.707.707M12.975 8.5H15a.5.5 0 0 0 0-1h-2.025a5 5 0 0 1 0 1M13.303 3.404l-1.432 1.432a5 5 0 0 0-.707-.707l1.432-1.432a.5.5 0 1 1 .707.707"
@@ -48,7 +46,6 @@ const LightThemeSelectedLight: FC<SvgProps> = ({
 const LightThemeSelectedDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -64,7 +61,6 @@ const LightThemeSelectedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M8.5 1a.5.5 0 0 0-1 0v2.025a5 5 0 0 1 1 0zM3.404 2.697l1.432 1.432a5 5 0 0 0-.707.707L2.697 3.404a.5.5 0 0 1 .707-.707M3.025 7.5H1a.5.5 0 0 0 0 1h2.025a5 5 0 0 1 0-1M2.697 12.596l1.432-1.432q.318.39.707.707l-1.432 1.432a.5.5 0 1 1-.707-.707M7.5 12.975V15a.5.5 0 0 0 1 0v-2.025a5 5 0 0 1-1 0M12.596 13.303l-1.432-1.432q.39-.317.707-.707l1.432 1.432a.5.5 0 1 1-.707.707M12.975 8.5H15a.5.5 0 0 0 0-1h-2.025a5 5 0 0 1 0 1M13.303 3.404l-1.432 1.432a5 5 0 0 0-.707-.707l1.432-1.432a.5.5 0 1 1 .707.707"
@@ -91,7 +87,6 @@ export const LightThemeSelected: FC<LightThemeSelectedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -101,7 +96,6 @@ export const LightThemeSelected: FC<LightThemeSelectedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

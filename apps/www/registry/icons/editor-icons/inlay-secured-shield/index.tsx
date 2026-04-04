@@ -7,7 +7,6 @@ export type InlaySecuredShieldProps = SvgProps;
 const InlaySecuredShieldLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const InlaySecuredShieldLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.854 4.854a.5.5 0 1 0-.708-.708L5.5 6.793 4.354 5.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"
       fill="#818594"
@@ -40,7 +38,6 @@ const InlaySecuredShieldLight: FC<SvgProps> = ({
 const InlaySecuredShieldDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const InlaySecuredShieldDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.854 4.854a.5.5 0 1 0-.708-.708L5.5 6.793 4.354 5.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"
       fill="#9DA0A8"
@@ -75,7 +71,6 @@ export const InlaySecuredShield: FC<InlaySecuredShieldProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const InlaySecuredShield: FC<InlaySecuredShieldProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

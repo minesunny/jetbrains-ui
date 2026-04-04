@@ -7,7 +7,6 @@ export type TestPassedIgnoredProps = SvgProps;
 const TestPassedIgnoredLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TestPassedIgnoredLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="m3 7.5 3 3L12.5 4"
@@ -50,7 +48,6 @@ const TestPassedIgnoredLight: FC<SvgProps> = ({
 const TestPassedIgnoredDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -66,7 +63,6 @@ const TestPassedIgnoredDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <g clipPath="url(#b)">
         <path
@@ -100,7 +96,6 @@ export const TestPassedIgnored: FC<TestPassedIgnoredProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -110,7 +105,6 @@ export const TestPassedIgnored: FC<TestPassedIgnoredProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

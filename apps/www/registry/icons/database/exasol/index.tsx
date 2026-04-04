@@ -7,7 +7,6 @@ export type ExasolProps = SvgProps;
 const ExasolLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ExasolLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m10.5 9.15-2 2.6L11 15h4zM10.5 7.85l-2-2.6L11 2h4z"
       fill="#6E6E6E"
@@ -35,7 +33,6 @@ const ExasolLight: FC<SvgProps> = ({
 const ExasolDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const ExasolDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m10.5 9.15-2 2.6L11 15h4zM10.5 7.85l-2-2.6L11 2h4z"
       fill="#CED0D6"
@@ -65,7 +61,6 @@ export const Exasol: FC<ExasolProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ExasolLight : ExasolDark;
@@ -74,7 +69,6 @@ export const Exasol: FC<ExasolProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

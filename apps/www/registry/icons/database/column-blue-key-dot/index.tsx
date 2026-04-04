@@ -7,7 +7,6 @@ export type ColumnBlueKeyDotProps = SvgProps;
 const ColumnBlueKeyDotLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ColumnBlueKeyDotLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -50,7 +48,6 @@ const ColumnBlueKeyDotLight: FC<SvgProps> = ({
 const ColumnBlueKeyDotDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -66,7 +63,6 @@ const ColumnBlueKeyDotDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         fillRule="evenodd"
@@ -102,7 +98,6 @@ export const ColumnBlueKeyDot: FC<ColumnBlueKeyDotProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -112,7 +107,6 @@ export const ColumnBlueKeyDot: FC<ColumnBlueKeyDotProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

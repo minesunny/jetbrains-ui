@@ -7,7 +7,6 @@ export type DdlScriptsProps = SvgProps;
 const DdlScriptsLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +47,6 @@ const DdlScriptsLight: React.FC<SvgProps> = ({
 const DdlScriptsDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -91,7 +89,6 @@ export const DdlScripts: React.FC<DdlScriptsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DdlScriptsLight : DdlScriptsDark;
@@ -100,7 +97,6 @@ export const DdlScripts: React.FC<DdlScriptsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type RoleBindingProps = SvgProps;
 const RoleBindingLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const RoleBindingLight: React.FC<SvgProps> = ({
 const RoleBindingDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +85,6 @@ export const RoleBinding: React.FC<RoleBindingProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RoleBindingLight : RoleBindingDark;
@@ -96,7 +93,6 @@ export const RoleBinding: React.FC<RoleBindingProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type TidbProps = SvgProps;
 const TidbLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TidbLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M1.5 4.5 8 .5l6.5 4v7l-6.5 4-6.5-4z" fill="#E30C34" />
     <path
       d="M8.002 3 3.68 5.49v2.528L5.84 6.76l.019 5.002L8.002 13V5.504l2.137-1.242zM12.325 5.48l-2.122 1.301v4.989l2.122-1.247z"
@@ -35,7 +33,6 @@ const TidbLight: FC<SvgProps> = ({
 const TidbDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const TidbDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M1.5 4.5 8 .5l6.5 4v7l-6.5 4-6.5-4z" fill="#E30C34" />
     <path
       d="M8.002 3 3.68 5.49v2.528L5.84 6.76l.019 5.002L8.002 13V5.504l2.137-1.242zM12.325 5.48l-2.122 1.301v4.989l2.122-1.247z"
@@ -65,7 +61,6 @@ export const Tidb: FC<TidbProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TidbLight : TidbDark;
@@ -74,7 +69,6 @@ export const Tidb: FC<TidbProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

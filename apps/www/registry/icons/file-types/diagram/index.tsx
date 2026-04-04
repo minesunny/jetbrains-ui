@@ -7,7 +7,6 @@ export type DiagramProps = SvgProps;
 const DiagramLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DiagramLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M1.5 13.5h13M1.5 2.5h13" stroke="#6C707E" strokeLinecap="round" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const DiagramLight: FC<SvgProps> = ({
 const DiagramDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const DiagramDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M1.5 13.5h13M1.5 2.5h13" stroke="#CED0D6" strokeLinecap="round" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const Diagram: FC<DiagramProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DiagramLight : DiagramDark;
@@ -78,7 +73,6 @@ export const Diagram: FC<DiagramProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type MavenBindChecksumProps = SvgProps;
 const MavenBindChecksumLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MavenBindChecksumLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M15.224 6.499c.358-1.563 0-3.298-2.062-3.298-1.577 0-2.539.588-3.677 1.561-.198-.867-.802-1.53-2.036-1.556-1.265-.07-2.372.46-3.321 1.207.1-.453-.113-.926-.629-1.03-.454-.093-.9.183-.996.616L1.775 7.26a3 3 0 0 1 1.766-.212l.197-.882.002-.003v.007c.71-.995 1.982-1.541 2.91-1.442.78.097 1.317.647 1.055 1.766l-.988 4.478.016.027h1.159a4 4 0 0 1 .164-.175l.556-.556.915-4.102c1.312-1.84 4.547-2.147 3.977.332l-.11.501c.56.003 1.12.135 1.632.397z"
       fill="#3574F0"
@@ -49,7 +47,6 @@ const MavenBindChecksumLight: FC<SvgProps> = ({
 const MavenBindChecksumDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -65,7 +62,6 @@ const MavenBindChecksumDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M15.224 6.499c.358-1.563 0-3.298-2.062-3.298-1.577 0-2.539.588-3.677 1.561-.198-.867-.802-1.53-2.036-1.556-1.265-.07-2.372.46-3.321 1.207.1-.453-.113-.926-.629-1.03-.454-.093-.9.183-.996.616L1.775 7.26a3 3 0 0 1 1.766-.212l.197-.882.002-.003v.007c.71-.995 1.982-1.541 2.91-1.442.78.097 1.317.647 1.055 1.766l-.988 4.478.016.027h1.159a4 4 0 0 1 .164-.175l.556-.556.915-4.102c1.312-1.84 4.547-2.147 3.977.332l-.11.501c.56.003 1.12.135 1.632.397z"
       fill="#548AF7"
@@ -93,7 +89,6 @@ export const MavenBindChecksum: FC<MavenBindChecksumProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -103,7 +98,6 @@ export const MavenBindChecksum: FC<MavenBindChecksumProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

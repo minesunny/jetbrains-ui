@@ -7,7 +7,6 @@ export type LockedProps = SvgProps;
 const LockedLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const LockedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#EBECF0" d="M11 12H15V15H11z" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const LockedLight: FC<SvgProps> = ({
 const LockedDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const LockedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#43454A" d="M11 12H15V15H11z" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const Locked: FC<LockedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? LockedLight : LockedDark;
@@ -78,7 +73,6 @@ export const Locked: FC<LockedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

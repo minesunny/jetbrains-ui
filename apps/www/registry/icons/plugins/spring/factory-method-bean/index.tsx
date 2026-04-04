@@ -7,7 +7,6 @@ export type FactoryMethodBeanProps = SvgProps;
 const FactoryMethodBeanLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -57,7 +56,6 @@ const FactoryMethodBeanLight: React.FC<SvgProps> = ({
 const FactoryMethodBeanDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -109,7 +107,6 @@ export const FactoryMethodBean: React.FC<FactoryMethodBeanProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -119,7 +116,6 @@ export const FactoryMethodBean: React.FC<FactoryMethodBeanProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

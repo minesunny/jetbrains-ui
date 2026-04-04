@@ -7,7 +7,6 @@ export type OpenTofuProps = SvgProps;
 const OpenTofuLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const OpenTofuLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8.5 7.82 14 5.281V11.2l-5.5 2.522z" fill="#fff" />
     <path
       d="M2.693 4.5 8 2.05l5.307 2.45L8 6.95zM7.5 7.82v5.9L2 11.2V5.281z"
@@ -45,7 +43,6 @@ const OpenTofuLight: FC<SvgProps> = ({
 const OpenTofuDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const OpenTofuDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8.5 7.82 14 5.281V11.2l-5.5 2.522z" fill="#fff" />
     <path
       d="M2.693 4.5 8 2.05l5.307 2.45L8 6.95zM7.5 7.82v5.9L2 11.2V5.281z"
@@ -85,7 +81,6 @@ export const OpenTofu: FC<OpenTofuProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? OpenTofuLight : OpenTofuDark;
@@ -94,7 +89,6 @@ export const OpenTofu: FC<OpenTofuProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

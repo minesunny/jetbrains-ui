@@ -7,7 +7,6 @@ export type FunctionProps = SvgProps;
 const FunctionLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FunctionLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#EDF3FF" stroke="#3574F0" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const FunctionLight: FC<SvgProps> = ({
 const FunctionDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const FunctionDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#25324D" stroke="#548AF7" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const Function: FC<FunctionProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FunctionLight : FunctionDark;
@@ -78,7 +73,6 @@ export const Function: FC<FunctionProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

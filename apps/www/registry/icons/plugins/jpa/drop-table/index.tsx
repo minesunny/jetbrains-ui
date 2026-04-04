@@ -7,7 +7,6 @@ export type DropTableProps = SvgProps;
 const DropTableLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const DropTableLight: React.FC<SvgProps> = ({
 const DropTableDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -82,7 +80,6 @@ export const DropTable: React.FC<DropTableProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DropTableLight : DropTableDark;
@@ -91,7 +88,6 @@ export const DropTable: React.FC<DropTableProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

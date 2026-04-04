@@ -7,7 +7,6 @@ export type HiveProps = SvgProps;
 const HiveLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const HiveLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.54 10.582a4.1 4.1 0 0 1-.86-.849l-.004.017c-.024.115-.056.273.072.472.102.158.539.553.539.553zM10.05 5.665c-.098-.07-.19-.213-.29-.366-.149-.228-.313-.48-.532-.557-.107-.009-.192-.024-.273-.039a1.5 1.5 0 0 0-.633-.002q.077-.037.153-.076c.107-.055.215-.11.332-.145a.7.7 0 0 1 .267.007l.068.01c.028-.012.045-.027.039-.05-.284-.161-.756-.222-1.222-.282a8 8 0 0 1-.763-.122q.25.006.506.01c.567.006 1.133.012 1.55.135.31.254.47.669.617 1.049.06.152.116.299.18.428"
       fill="#000"
@@ -57,7 +55,6 @@ const HiveLight: FC<SvgProps> = ({
 const HiveDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -73,7 +70,6 @@ const HiveDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.54 10.582a4.1 4.1 0 0 1-.86-.849l-.004.017c-.024.115-.056.273.072.472.102.158.539.553.539.553zM10.05 5.665c-.098-.07-.19-.213-.29-.366-.149-.228-.313-.48-.532-.557-.107-.009-.192-.024-.273-.039a1.5 1.5 0 0 0-.633-.002q.077-.037.153-.076c.107-.055.215-.11.332-.145a.7.7 0 0 1 .267.007l.068.01c.028-.012.045-.027.039-.05-.284-.161-.756-.222-1.222-.282a8 8 0 0 1-.763-.122q.25.006.506.01c.567.006 1.133.012 1.55.135.31.254.47.669.617 1.049.06.152.116.299.18.428"
       fill="#000"
@@ -109,7 +105,6 @@ export const Hive: FC<HiveProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? HiveLight : HiveDark;
@@ -118,7 +113,6 @@ export const Hive: FC<HiveProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

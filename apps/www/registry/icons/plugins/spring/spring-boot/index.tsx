@@ -7,7 +7,6 @@ export type SpringBootProps = SvgProps;
 const SpringBootLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +50,6 @@ const SpringBootLight: React.FC<SvgProps> = ({
 const SpringBootDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -97,7 +95,6 @@ export const SpringBoot: React.FC<SpringBootProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SpringBootLight : SpringBootDark;
@@ -106,7 +103,6 @@ export const SpringBoot: React.FC<SpringBootProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

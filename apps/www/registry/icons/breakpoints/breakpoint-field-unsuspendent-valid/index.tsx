@@ -7,7 +7,6 @@ export type BreakpointFieldUnsuspendentValidProps = SvgProps;
 const BreakpointFieldUnsuspendentValidLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const BreakpointFieldUnsuspendentValidLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -41,7 +39,6 @@ const BreakpointFieldUnsuspendentValidLight: FC<SvgProps> = ({
 const BreakpointFieldUnsuspendentValidDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -57,7 +54,6 @@ const BreakpointFieldUnsuspendentValidDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -79,7 +75,6 @@ export const BreakpointFieldUnsuspendentValid: FC<
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -91,7 +86,6 @@ export const BreakpointFieldUnsuspendentValid: FC<
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type AccessPrivateProps = SvgProps;
 const AccessPrivateLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AccessPrivateLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#FFF7F7" d="M6 8H10V11H6z" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const AccessPrivateLight: FC<SvgProps> = ({
 const AccessPrivateDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const AccessPrivateDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#402929" d="M6 8H10V11H6z" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const AccessPrivate: FC<AccessPrivateProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -79,7 +74,6 @@ export const AccessPrivate: FC<AccessPrivateProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ArrowLeftRightProps = SvgProps;
 const ArrowLeftRightLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ArrowLeftRightLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 7.5h13m-13 0 4 4m-4-4 4-4m9 4-4 4m4-4-4-4"
       stroke="#6C707E"
@@ -35,7 +33,6 @@ const ArrowLeftRightLight: FC<SvgProps> = ({
 const ArrowLeftRightDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const ArrowLeftRightDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 7.5h13m-13 0 4 4m-4-4 4-4m9 4-4 4m4-4-4-4"
       stroke="#CED0D6"
@@ -65,7 +61,6 @@ export const ArrowLeftRight: FC<ArrowLeftRightProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -75,7 +70,6 @@ export const ArrowLeftRight: FC<ArrowLeftRightProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

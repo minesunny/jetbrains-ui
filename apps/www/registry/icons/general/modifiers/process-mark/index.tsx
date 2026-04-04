@@ -7,7 +7,6 @@ export type ProcessMarkProps = SvgProps;
 const ProcessMarkLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ProcessMarkLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" fill="#4682FA" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const ProcessMarkLight: FC<SvgProps> = ({
 const ProcessMarkDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const ProcessMarkDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" fill="#548AF7" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const ProcessMark: FC<ProcessMarkProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ProcessMarkLight : ProcessMarkDark;
@@ -78,7 +73,6 @@ export const ProcessMark: FC<ProcessMarkProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type VitestProps = SvgProps;
 const VitestLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const VitestLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m12.007 5.426-3.825 5.53a.329.329 0 0 1-.598-.201l.153-3.053-2.472-.525a.33.33 0 0 1-.257-.356.3.3 0 0 1 .056-.149l3.825-5.53a.329.329 0 0 1 .598.201l-.153 3.053 2.472.524a.33.33 0 0 1 .257.357.3.3 0 0 1-.056.149"
       fill="#FCC72B"
@@ -43,7 +41,6 @@ const VitestLight: FC<SvgProps> = ({
 const VitestDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const VitestDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m12.007 5.426-3.825 5.53a.329.329 0 0 1-.598-.201l.153-3.053-2.472-.525a.33.33 0 0 1-.257-.356.3.3 0 0 1 .056-.149l3.825-5.53a.329.329 0 0 1 .598.201l-.153 3.053 2.472.524a.33.33 0 0 1 .257.357.3.3 0 0 1-.056.149"
       fill="#FCC72B"
@@ -81,7 +77,6 @@ export const Vitest: FC<VitestProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? VitestLight : VitestDark;
@@ -90,7 +85,6 @@ export const Vitest: FC<VitestProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type FilterHistoryProps = SvgProps;
 const FilterHistoryLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FilterHistoryLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.5 2.5h-11l4 5V14l3-2V7.5z"
       stroke="#6C707E"
@@ -37,7 +35,6 @@ const FilterHistoryLight: FC<SvgProps> = ({
 const FilterHistoryDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const FilterHistoryDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.5 2.5h-11l4 5V14l3-2V7.5z"
       stroke="#CED0D6"
@@ -69,7 +65,6 @@ export const FilterHistory: FC<FilterHistoryProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -79,7 +74,6 @@ export const FilterHistory: FC<FilterHistoryProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

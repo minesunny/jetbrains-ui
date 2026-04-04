@@ -7,7 +7,6 @@ export type RunErrorProps = SvgProps;
 const RunErrorLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RunErrorLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M10.968 6.096Q11 5.802 11 5.5a5.5 5.5 0 1 0-5 5.478V7.502c0-1.963 2.159-3.16 3.824-2.12z"
       fill="#E55765"
@@ -51,7 +49,6 @@ const RunErrorLight: FC<SvgProps> = ({
 const RunErrorDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -67,7 +64,6 @@ const RunErrorDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M10.968 6.096Q11 5.802 11 5.5a5.5 5.5 0 1 0-5 5.478V7.502c0-1.963 2.159-3.16 3.824-2.12z"
       fill="#E55765"
@@ -97,7 +93,6 @@ export const RunError: FC<RunErrorProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RunErrorLight : RunErrorDark;
@@ -106,7 +101,6 @@ export const RunError: FC<RunErrorProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type OneToManyProps = SvgProps;
 const OneToManyLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -34,7 +33,6 @@ const OneToManyLight: React.FC<SvgProps> = ({
 const OneToManyDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +61,6 @@ export const OneToMany: React.FC<OneToManyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? OneToManyLight : OneToManyDark;
@@ -72,7 +69,6 @@ export const OneToMany: React.FC<OneToManyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

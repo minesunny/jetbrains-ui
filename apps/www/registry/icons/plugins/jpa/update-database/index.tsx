@@ -7,7 +7,6 @@ export type UpdateDatabaseProps = SvgProps;
 const UpdateDatabaseLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +46,6 @@ const UpdateDatabaseLight: React.FC<SvgProps> = ({
 const UpdateDatabaseDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -89,7 +87,6 @@ export const UpdateDatabase: React.FC<UpdateDatabaseProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -99,7 +96,6 @@ export const UpdateDatabase: React.FC<UpdateDatabaseProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

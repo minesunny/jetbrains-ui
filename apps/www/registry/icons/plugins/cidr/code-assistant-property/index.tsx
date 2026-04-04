@@ -7,7 +7,6 @@ export type CodeAssistantPropertyProps = SvgProps;
 const CodeAssistantPropertyLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -43,7 +42,6 @@ const CodeAssistantPropertyLight: React.FC<SvgProps> = ({
 const CodeAssistantPropertyDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -81,7 +79,6 @@ export const CodeAssistantProperty: React.FC<CodeAssistantPropertyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -91,7 +88,6 @@ export const CodeAssistantProperty: React.FC<CodeAssistantPropertyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

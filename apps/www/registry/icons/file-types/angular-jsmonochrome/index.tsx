@@ -7,7 +7,6 @@ export type AngularJSMonochromeProps = SvgProps;
 const AngularJSMonochromeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AngularJSMonochromeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.43 10.575 2 3.772l4.574-2.117zM6.353 9.025h3.294L8 5.016zM8 14.342l-3.137-1.78.639-1.545h4.996l.639 1.546zM13.57 10.575 14 3.772 9.426 1.654z"
       fill="#0F0F11"
@@ -34,7 +32,6 @@ const AngularJSMonochromeLight: FC<SvgProps> = ({
 const AngularJSMonochromeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const AngularJSMonochromeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.43 10.575 2 3.772l4.574-2.117zM6.353 9.025h3.294L8 5.016zM8 14.342l-3.137-1.78.639-1.545h4.996l.639 1.546zM13.57 10.575 14 3.772 9.426 1.654z"
       fill="#fff"
@@ -63,7 +59,6 @@ export const AngularJSMonochrome: FC<AngularJSMonochromeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -73,7 +68,6 @@ export const AngularJSMonochrome: FC<AngularJSMonochromeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

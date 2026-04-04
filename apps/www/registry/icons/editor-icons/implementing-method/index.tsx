@@ -7,7 +7,6 @@ export type ImplementingMethodProps = SvgProps;
 const ImplementingMethodLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ImplementingMethodLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M10 7a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0" fill="#F2FCF3" />
     <path
       fillRule="evenodd"
@@ -47,7 +45,6 @@ const ImplementingMethodLight: FC<SvgProps> = ({
 const ImplementingMethodDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +60,6 @@ const ImplementingMethodDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M10 7a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0" fill="#253627" />
     <path
       fillRule="evenodd"
@@ -89,7 +85,6 @@ export const ImplementingMethod: FC<ImplementingMethodProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -99,7 +94,6 @@ export const ImplementingMethod: FC<ImplementingMethodProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

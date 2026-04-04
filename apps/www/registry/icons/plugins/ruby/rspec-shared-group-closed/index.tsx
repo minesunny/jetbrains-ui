@@ -7,7 +7,6 @@ export type RspecSharedGroupClosedProps = SvgProps;
 const RspecSharedGroupClosedLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const RspecSharedGroupClosedLight: React.FC<SvgProps> = ({
 const RspecSharedGroupClosedDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -79,7 +77,6 @@ export const RspecSharedGroupClosed: React.FC<RspecSharedGroupClosedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -89,7 +86,6 @@ export const RspecSharedGroupClosed: React.FC<RspecSharedGroupClosedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

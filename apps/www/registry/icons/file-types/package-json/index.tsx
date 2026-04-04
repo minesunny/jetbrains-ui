@@ -7,7 +7,6 @@ export type PackageJsonProps = SvgProps;
 const PackageJsonLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PackageJsonLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path d="M12 15.5 8.5 14v-4L12 8.5l3.5 1.5v4z" fill="#EBECF0" />
       <path
@@ -47,7 +45,6 @@ const PackageJsonLight: FC<SvgProps> = ({
 const PackageJsonDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +60,6 @@ const PackageJsonDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path d="M12 15.5 8.5 14v-4L12 8.5l3.5 1.5v4z" fill="#43454A" />
       <path
@@ -89,7 +85,6 @@ export const PackageJson: FC<PackageJsonProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PackageJsonLight : PackageJsonDark;
@@ -98,7 +93,6 @@ export const PackageJson: FC<PackageJsonProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

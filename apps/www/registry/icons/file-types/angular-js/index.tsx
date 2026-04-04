@@ -7,7 +7,6 @@ export type AngularJSProps = SvgProps;
 const AngularJSLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AngularJSLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2.43 10.575 2 3.772l4.574-2.117z" fill="url(#a)" />
     <path d="M2.43 10.575 2 3.772l4.574-2.117z" fill="url(#b)" />
     <path d="M6.353 9.025h3.294L8 5.016z" fill="url(#c)" />
@@ -128,7 +126,6 @@ const AngularJSLight: FC<SvgProps> = ({
 const AngularJSDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -144,7 +141,6 @@ const AngularJSDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2.43 10.575 2 3.772l4.574-2.117z" fill="url(#a)" />
     <path d="M2.43 10.575 2 3.772l4.574-2.117z" fill="url(#b)" />
     <path d="M6.353 9.025h3.294L8 5.016z" fill="url(#c)" />
@@ -251,7 +247,6 @@ export const AngularJS: FC<AngularJSProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AngularJSLight : AngularJSDark;
@@ -260,7 +255,6 @@ export const AngularJS: FC<AngularJSProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

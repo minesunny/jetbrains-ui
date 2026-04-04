@@ -7,7 +7,6 @@ export type HelpersFolderClosedProps = SvgProps;
 const HelpersFolderClosedLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const HelpersFolderClosedLight: React.FC<SvgProps> = ({
 const HelpersFolderClosedDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -79,7 +77,6 @@ export const HelpersFolderClosed: React.FC<HelpersFolderClosedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -89,7 +86,6 @@ export const HelpersFolderClosed: React.FC<HelpersFolderClosedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

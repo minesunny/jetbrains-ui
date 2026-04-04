@@ -7,7 +7,6 @@ export type RedocProps = SvgProps;
 const RedocLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RedocLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.5 7a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zM4.5 9a.5.5 0 0 0 0 1H7a.5.5 0 0 0 0-1zM4.5 11a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const RedocLight: FC<SvgProps> = ({
 const RedocDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const RedocDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.5 7a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zM4.5 9a.5.5 0 0 0 0 1H7a.5.5 0 0 0 0-1zM4.5 11a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const Redoc: FC<RedocProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RedocLight : RedocDark;
@@ -84,7 +79,6 @@ export const Redoc: FC<RedocProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

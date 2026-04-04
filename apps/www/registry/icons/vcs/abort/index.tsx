@@ -7,7 +7,6 @@ export type AbortProps = SvgProps;
 const AbortLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AbortLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.146 13.146a.5.5 0 0 0 .708.708L8 8.707l5.147 5.147a.5.5 0 0 0 .707-.707L8.707 8l5.147-5.146a.5.5 0 0 0-.708-.708L8 7.293 2.854 2.147a.5.5 0 0 0-.707.707L7.293 8z"
       fill="#6C707E"
@@ -34,7 +32,6 @@ const AbortLight: FC<SvgProps> = ({
 const AbortDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const AbortDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.146 13.146a.5.5 0 0 0 .708.708L8 8.707l5.147 5.147a.5.5 0 0 0 .707-.707L8.707 8l5.147-5.146a.5.5 0 0 0-.708-.708L8 7.293 2.854 2.147a.5.5 0 0 0-.707.707L7.293 8z"
       fill="#CED0D6"
@@ -63,7 +59,6 @@ export const Abort: FC<AbortProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AbortLight : AbortDark;
@@ -72,7 +67,6 @@ export const Abort: FC<AbortProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

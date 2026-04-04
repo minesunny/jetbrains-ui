@@ -7,7 +7,6 @@ export type ToolWindowClockProps = SvgProps;
 const ToolWindowClockLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowClockLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 6v3l-2.5 1.5"
       stroke="#6C707E"
@@ -38,7 +36,6 @@ const ToolWindowClockLight: FC<SvgProps> = ({
 const ToolWindowClockDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const ToolWindowClockDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 6v3l-2.5 1.5"
       stroke="#CED0D6"
@@ -71,7 +67,6 @@ export const ToolWindowClock: FC<ToolWindowClockProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +76,6 @@ export const ToolWindowClock: FC<ToolWindowClockProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

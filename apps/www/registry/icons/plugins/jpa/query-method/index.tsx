@@ -7,7 +7,6 @@ export type QueryMethodProps = SvgProps;
 const QueryMethodLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -35,7 +34,6 @@ const QueryMethodLight: React.FC<SvgProps> = ({
 const QueryMethodDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -65,7 +63,6 @@ export const QueryMethod: React.FC<QueryMethodProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? QueryMethodLight : QueryMethodDark;
@@ -74,7 +71,6 @@ export const QueryMethod: React.FC<QueryMethodProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type GenericUIProps = SvgProps;
 const GenericUILight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -36,7 +35,6 @@ const GenericUILight: React.FC<SvgProps> = ({
 const GenericUIDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -74,7 +72,6 @@ export const GenericUI: React.FC<GenericUIProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? GenericUILight : GenericUIDark;
@@ -83,7 +80,6 @@ export const GenericUI: React.FC<GenericUIProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

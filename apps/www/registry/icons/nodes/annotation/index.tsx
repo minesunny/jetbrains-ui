@@ -7,7 +7,6 @@ export type AnnotationProps = SvgProps;
 const AnnotationLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AnnotationLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="7" fill="#F2FCF3" />
     <path
       d="M9.73 5.385v.974H9.7c-.345-.669-.984-1.054-1.829-1.054-1.488 0-2.607 1.174-2.607 2.735s1.119 2.736 2.607 2.736c.94 0 1.717-.437 2.132-1.122.439.682 1.257 1.098 2.286 1.098 1.633 0 2.711-1.15 2.711-2.832C15 4.114 11.854 1 8 1S1 4.186 1 8.08C1 11.886 4.146 15 8 15c1.85 0 3.516-.764 4.433-1.593l-.724-.797A5.63 5.63 0 0 1 8 13.994c-3.299 0-5.994-2.663-5.994-5.914C2.006 4.741 4.7 2.006 8 2.006s5.994 2.663 5.994 5.914c0 1.11-.668 1.866-1.705 1.866-.942 0-1.634-.595-1.634-1.464V5.385zM7.96 9.891c-.966 0-1.69-.797-1.69-1.85 0-1.055.724-1.851 1.69-1.851.965 0 1.69.796 1.69 1.85s-.725 1.85-1.69 1.85"
@@ -35,7 +33,6 @@ const AnnotationLight: FC<SvgProps> = ({
 const AnnotationDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const AnnotationDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="7" fill="#253627" />
     <path
       d="M9.73 5.385v.974H9.7c-.345-.669-.984-1.054-1.829-1.054-1.488 0-2.607 1.174-2.607 2.735s1.119 2.736 2.607 2.736c.94 0 1.717-.437 2.132-1.122.439.682 1.257 1.098 2.286 1.098 1.633 0 2.711-1.15 2.711-2.832C15 4.114 11.854 1 8 1S1 4.186 1 8.08C1 11.886 4.146 15 8 15c1.85 0 3.516-.764 4.433-1.593l-.724-.797A5.63 5.63 0 0 1 8 13.994c-3.299 0-5.994-2.663-5.994-5.914C2.006 4.741 4.7 2.006 8 2.006s5.994 2.663 5.994 5.914c0 1.11-.668 1.866-1.705 1.866-.942 0-1.634-.595-1.634-1.464V5.385zM7.96 9.891c-.966 0-1.69-.797-1.69-1.85 0-1.055.724-1.851 1.69-1.851.965 0 1.69.796 1.69 1.85s-.725 1.85-1.69 1.85"
@@ -65,7 +61,6 @@ export const Annotation: FC<AnnotationProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AnnotationLight : AnnotationDark;
@@ -74,7 +69,6 @@ export const Annotation: FC<AnnotationProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

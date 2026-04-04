@@ -7,7 +7,6 @@ export type ShowAsTreeProps = SvgProps;
 const ShowAsTreeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ShowAsTreeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.934 2.49h1.989q.034.001.06.026l.926.99.146.154H14a.51.51 0 0 1 .51.51v2.737c0 .408-.268.603-.444.603H8.934c-.176 0-.444-.195-.444-.603V3.093c0-.408.268-.603.444-.603ZM8.934 10.49h1.989q.034.001.06.026l.926.99.146.154H14a.51.51 0 0 1 .51.51v2.737c0 .409-.268.603-.444.603H8.934c-.176 0-.444-.194-.444-.603v-3.814c0-.409.268-.603.444-.603Z"
       stroke="#6C707E"
@@ -40,7 +38,6 @@ const ShowAsTreeLight: FC<SvgProps> = ({
 const ShowAsTreeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ShowAsTreeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.934 2.49h1.989q.034.001.06.026l.926.99.146.154H14a.51.51 0 0 1 .51.51v2.737c0 .408-.268.603-.444.603H8.934c-.176 0-.444-.195-.444-.603V3.093c0-.408.268-.603.444-.603ZM8.934 10.49h1.989q.034.001.06.026l.926.99.146.154H14a.51.51 0 0 1 .51.51v2.737c0 .409-.268.603-.444.603H8.934c-.176 0-.444-.194-.444-.603v-3.814c0-.409.268-.603.444-.603Z"
       stroke="#CED0D6"
@@ -75,7 +71,6 @@ export const ShowAsTree: FC<ShowAsTreeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ShowAsTreeLight : ShowAsTreeDark;
@@ -84,7 +79,6 @@ export const ShowAsTree: FC<ShowAsTreeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

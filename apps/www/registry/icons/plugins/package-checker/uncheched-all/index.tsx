@@ -7,7 +7,6 @@ export type UnchechedAllProps = SvgProps;
 const UnchechedAllLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -36,7 +35,6 @@ const UnchechedAllLight: React.FC<SvgProps> = ({
 const UnchechedAllDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -67,7 +65,6 @@ export const UnchechedAll: React.FC<UnchechedAllProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? UnchechedAllLight : UnchechedAllDark;
@@ -76,7 +73,6 @@ export const UnchechedAll: React.FC<UnchechedAllProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

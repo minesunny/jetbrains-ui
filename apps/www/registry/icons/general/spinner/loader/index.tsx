@@ -7,7 +7,6 @@ export type LoaderProps = SvgProps;
 const LoaderLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const LoaderLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       opacity=".93"
       x="2.35"
@@ -98,7 +96,6 @@ const LoaderLight: FC<SvgProps> = ({
 const LoaderDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -114,7 +111,6 @@ const LoaderDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       opacity=".93"
       x="2.35"
@@ -191,7 +187,6 @@ export const Loader: FC<LoaderProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? LoaderLight : LoaderDark;
@@ -200,7 +195,6 @@ export const Loader: FC<LoaderProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

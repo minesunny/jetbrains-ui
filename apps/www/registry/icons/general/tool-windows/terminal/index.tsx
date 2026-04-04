@@ -7,7 +7,6 @@ export type TerminalProps = SvgProps;
 const TerminalLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TerminalLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" stroke="#6C707E" />
     <path
       d="M7.5 10.5h3M4.48 9.48 6.46 7.5 4.48 5.52"
@@ -36,7 +34,6 @@ const TerminalLight: FC<SvgProps> = ({
 const TerminalDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const TerminalDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" stroke="#CED0D6" />
     <path
       d="M7.5 10.5h3M4.48 9.48 6.46 7.5 4.48 5.52"
@@ -67,7 +63,6 @@ export const Terminal: FC<TerminalProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TerminalLight : TerminalDark;
@@ -76,7 +71,6 @@ export const Terminal: FC<TerminalProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

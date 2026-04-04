@@ -7,7 +7,6 @@ export type DecoratorProps = SvgProps;
 const DecoratorLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -49,7 +48,6 @@ const DecoratorLight: React.FC<SvgProps> = ({
 const DecoratorDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -93,7 +91,6 @@ export const Decorator: React.FC<DecoratorProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DecoratorLight : DecoratorDark;
@@ -102,7 +99,6 @@ export const Decorator: React.FC<DecoratorProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

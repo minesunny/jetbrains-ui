@@ -7,7 +7,6 @@ export type MakefileAppProps = SvgProps;
 const MakefileAppLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const MakefileAppLight: React.FC<SvgProps> = ({
 const MakefileAppDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -94,7 +92,6 @@ export const MakefileApp: React.FC<MakefileAppProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? MakefileAppLight : MakefileAppDark;
@@ -103,7 +100,6 @@ export const MakefileApp: React.FC<MakefileAppProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

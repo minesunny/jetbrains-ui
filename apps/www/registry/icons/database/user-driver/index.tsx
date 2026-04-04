@@ -7,7 +7,6 @@ export type UserDriverProps = SvgProps;
 const UserDriverLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const UserDriverLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2.5 11.5v-7" stroke="#6C707E" strokeLinecap="round" />
     <path d="M13.5 11.5v-7" stroke="#3574F0" strokeLinecap="round" />
     <path d="M4.5 2.5h7" stroke="#6C707E" strokeLinecap="round" />
@@ -43,7 +41,6 @@ const UserDriverLight: FC<SvgProps> = ({
 const UserDriverDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const UserDriverDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M2.5 11.5v-7" stroke="#CED0D6" strokeLinecap="round" />
     <path d="M13.5 11.5v-7" stroke="#548AF7" strokeLinecap="round" />
     <path d="M4.5 2.5h7" stroke="#CED0D6" strokeLinecap="round" />
@@ -81,7 +77,6 @@ export const UserDriver: FC<UserDriverProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? UserDriverLight : UserDriverDark;
@@ -90,7 +85,6 @@ export const UserDriver: FC<UserDriverProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

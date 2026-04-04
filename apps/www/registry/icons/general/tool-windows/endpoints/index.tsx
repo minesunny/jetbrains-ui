@@ -7,7 +7,6 @@ export type EndpointsProps = SvgProps;
 const EndpointsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const EndpointsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 2c-1.458 0-2.794.52-3.834 1.384a.5.5 0 0 1-.64-.768 7 7 0 1 1 0 10.769.5.5 0 1 1 .64-.77A6 6 0 1 0 8 2"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const EndpointsLight: FC<SvgProps> = ({
 const EndpointsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const EndpointsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 2c-1.458 0-2.794.52-3.834 1.384a.5.5 0 0 1-.64-.768 7 7 0 1 1 0 10.769.5.5 0 1 1 .64-.77A6 6 0 1 0 8 2"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const Endpoints: FC<EndpointsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? EndpointsLight : EndpointsDark;
@@ -84,7 +79,6 @@ export const Endpoints: FC<EndpointsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

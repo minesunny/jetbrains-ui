@@ -7,7 +7,6 @@ export type FindProps = SvgProps;
 const FindLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FindLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="7" cy="7" r="4.5" stroke="#6C707E" />
     <path d="m10.2 10.2 3.3 3.296" stroke="#6C707E" strokeLinecap="round" />
   </svg>
@@ -32,7 +30,6 @@ const FindLight: FC<SvgProps> = ({
 const FindDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +45,6 @@ const FindDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="7" cy="7" r="4.5" stroke="#CED0D6" />
     <path d="m10.2 10.2 3.3 3.296" stroke="#CED0D6" strokeLinecap="round" />
   </svg>
@@ -59,7 +55,6 @@ export const Find: FC<FindProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FindLight : FindDark;
@@ -68,7 +63,6 @@ export const Find: FC<FindProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

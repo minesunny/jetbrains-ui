@@ -7,7 +7,6 @@ export type UnfoldProps = SvgProps;
 const UnfoldLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const UnfoldLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="m4 9 3.5-3.5L4 2" stroke="#A8ADBD" strokeLinecap="round" />
   </svg>
 );
@@ -31,7 +29,6 @@ const UnfoldLight: FC<SvgProps> = ({
 const UnfoldDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +44,6 @@ const UnfoldDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="m3 8 3.5-3.5L3 1" stroke="#6F737A" strokeLinecap="round" />
   </svg>
 );
@@ -57,7 +53,6 @@ export const Unfold: FC<UnfoldProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? UnfoldLight : UnfoldDark;
@@ -66,7 +61,6 @@ export const Unfold: FC<UnfoldProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

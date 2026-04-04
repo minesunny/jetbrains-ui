@@ -7,7 +7,6 @@ export type ConflictProps = SvgProps;
 const ConflictLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ConflictLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="7.5" cy="7.5" r="7.5" fill="#F7F8FA" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const ConflictLight: FC<SvgProps> = ({
 const ConflictDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const ConflictDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="7.5" cy="7.5" r="7.5" fill="#2B2D30" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const Conflict: FC<ConflictProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ConflictLight : ConflictDark;
@@ -78,7 +73,6 @@ export const Conflict: FC<ConflictProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

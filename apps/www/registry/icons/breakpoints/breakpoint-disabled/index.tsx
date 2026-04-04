@@ -7,7 +7,6 @@ export type BreakpointDisabledProps = SvgProps;
 const BreakpointDisabledLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const BreakpointDisabledLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7 .75a6.25 6.25 0 1 1 0 12.5A6.25 6.25 0 0 1 7 .75Z"
       stroke="#E55765"
@@ -35,7 +33,6 @@ const BreakpointDisabledLight: FC<SvgProps> = ({
 const BreakpointDisabledDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const BreakpointDisabledDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7 .75a6.25 6.25 0 1 1 0 12.5A6.25 6.25 0 0 1 7 .75Z"
       stroke="#DB5C5C"
@@ -65,7 +61,6 @@ export const BreakpointDisabled: FC<BreakpointDisabledProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -75,7 +70,6 @@ export const BreakpointDisabled: FC<BreakpointDisabledProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

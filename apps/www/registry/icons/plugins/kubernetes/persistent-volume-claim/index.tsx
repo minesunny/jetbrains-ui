@@ -7,7 +7,6 @@ export type PersistentVolumeClaimProps = SvgProps;
 const PersistentVolumeClaimLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const PersistentVolumeClaimLight: React.FC<SvgProps> = ({
 const PersistentVolumeClaimDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -79,7 +77,6 @@ export const PersistentVolumeClaim: React.FC<PersistentVolumeClaimProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -89,7 +86,6 @@ export const PersistentVolumeClaim: React.FC<PersistentVolumeClaimProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

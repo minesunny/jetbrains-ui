@@ -7,7 +7,6 @@ export type ScriptingScriptProps = SvgProps;
 const ScriptingScriptLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ScriptingScriptLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.5 13.5H6m0 0h3m-3 0A1.5 1.5 0 0 1 4.5 12V4.5m0 0V4A1.5 1.5 0 0 0 3 2.5m1.5 2h-3V4A1.5 1.5 0 0 1 3 2.5m0 0h7.5a2 2 0 0 1 2 2V8"
       stroke="#6C707E"
@@ -45,7 +43,6 @@ const ScriptingScriptLight: FC<SvgProps> = ({
 const ScriptingScriptDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const ScriptingScriptDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.5 13.5H6m0 0h3m-3 0A1.5 1.5 0 0 1 4.5 12V4.5m0 0V4A1.5 1.5 0 0 0 3 2.5m1.5 2h-3V4A1.5 1.5 0 0 1 3 2.5m0 0h7.5a2 2 0 0 1 2 2V8"
       stroke="#CED0D6"
@@ -85,7 +81,6 @@ export const ScriptingScript: FC<ScriptingScriptProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -95,7 +90,6 @@ export const ScriptingScript: FC<ScriptingScriptProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

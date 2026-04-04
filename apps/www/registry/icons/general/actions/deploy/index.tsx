@@ -7,7 +7,6 @@ export type DeployProps = SvgProps;
 const DeployLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DeployLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 7.5h13m0 0-3-3m3 3-3 3M8.5 11.5v3m0 0h-3m3 0-4-4M8.5 3.5v-3m0 0h-3m3 0-4 4"
       stroke="#208A3C"
@@ -36,7 +34,6 @@ const DeployLight: FC<SvgProps> = ({
 const DeployDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const DeployDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 7.5h13m0 0-3-3m3 3-3 3M8.5 11.5v3m0 0h-3m3 0-4-4M8.5 3.5v-3m0 0h-3m3 0-4 4"
       stroke="#57965C"
@@ -67,7 +63,6 @@ export const Deploy: FC<DeployProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? DeployLight : DeployDark;
@@ -76,7 +71,6 @@ export const Deploy: FC<DeployProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

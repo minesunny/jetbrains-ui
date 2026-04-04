@@ -7,7 +7,6 @@ export type RedoProps = SvgProps;
 const RedoLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RedoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 10.5s0-5 5-5C10 5.5 14 10 14 10m-2.5.5h3v-3"
       stroke="#6C707E"
@@ -35,7 +33,6 @@ const RedoLight: FC<SvgProps> = ({
 const RedoDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const RedoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 10.5s0-5 5-5C10 5.5 14 10 14 10m-2.5.5h3v-3"
       stroke="#CED0D6"
@@ -65,7 +61,6 @@ export const Redo: FC<RedoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RedoLight : RedoDark;
@@ -74,7 +69,6 @@ export const Redo: FC<RedoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

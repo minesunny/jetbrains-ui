@@ -7,7 +7,6 @@ export type TransactionManagerProps = SvgProps;
 const TransactionManagerLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +47,6 @@ const TransactionManagerLight: React.FC<SvgProps> = ({
 const TransactionManagerDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -92,7 +90,6 @@ export const TransactionManager: React.FC<TransactionManagerProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -102,7 +99,6 @@ export const TransactionManager: React.FC<TransactionManagerProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

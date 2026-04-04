@@ -7,7 +7,6 @@ export type ObjectScalaProps = SvgProps;
 const ObjectScalaLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +47,6 @@ const ObjectScalaLight: React.FC<SvgProps> = ({
 const ObjectScalaDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -91,7 +89,6 @@ export const ObjectScala: React.FC<ObjectScalaProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ObjectScalaLight : ObjectScalaDark;
@@ -100,7 +97,6 @@ export const ObjectScala: React.FC<ObjectScalaProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

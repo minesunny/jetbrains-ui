@@ -7,7 +7,6 @@ export type ZoomInProps = SvgProps;
 const ZoomInLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ZoomInLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="7.5" y="4" width="1" height="8" rx=".5" fill="#6C707E" />
     <rect
       x="12"
@@ -41,7 +39,6 @@ const ZoomInLight: FC<SvgProps> = ({
 const ZoomInDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -57,7 +54,6 @@ const ZoomInDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="7.5" y="4" width="1" height="8" rx=".5" fill="#CED0D6" />
     <rect
       x="12"
@@ -77,7 +73,6 @@ export const ZoomIn: FC<ZoomInProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ZoomInLight : ZoomInDark;
@@ -86,7 +81,6 @@ export const ZoomIn: FC<ZoomInProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

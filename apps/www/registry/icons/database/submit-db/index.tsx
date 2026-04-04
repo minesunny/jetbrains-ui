@@ -7,7 +7,6 @@ export type SubmitDBProps = SvgProps;
 const SubmitDBLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SubmitDBLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.5 7.5 5.5-5 5.5 5h-4v6h-3v-6z"
       stroke="#369650"
@@ -35,7 +33,6 @@ const SubmitDBLight: FC<SvgProps> = ({
 const SubmitDBDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const SubmitDBDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.5 7.5 5.5-5 5.5 5h-4v6h-3v-6z"
       stroke="#57965C"
@@ -65,7 +61,6 @@ export const SubmitDB: FC<SubmitDBProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SubmitDBLight : SubmitDBDark;
@@ -74,7 +69,6 @@ export const SubmitDB: FC<SubmitDBProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

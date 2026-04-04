@@ -7,7 +7,6 @@ export type SymbolProps = SvgProps;
 const SymbolLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -39,7 +38,6 @@ const SymbolLight: React.FC<SvgProps> = ({
 const SymbolDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -73,7 +71,6 @@ export const Symbol: React.FC<SymbolProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SymbolLight : SymbolDark;
@@ -82,7 +79,6 @@ export const Symbol: React.FC<SymbolProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

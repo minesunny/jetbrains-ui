@@ -7,7 +7,6 @@ export type InspectionsTrafficOffProps = SvgProps;
 const InspectionsTrafficOffLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const InspectionsTrafficOffLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 5A1.5 1.5 0 0 0 8 6.5V7H7v1h1v4h1V8h1.25V7H9v-.5a.5.5 0 0 1 .5-.5h.75V5z"
       fill="#6C707E"
@@ -44,7 +42,6 @@ const InspectionsTrafficOffLight: FC<SvgProps> = ({
 const InspectionsTrafficOffDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const InspectionsTrafficOffDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 5A1.5 1.5 0 0 0 8 6.5V7H7v1h1v4h1V8h1.25V7H9v-.5a.5.5 0 0 1 .5-.5h.75V5z"
       fill="#CED0D6"
@@ -83,7 +79,6 @@ export const InspectionsTrafficOff: FC<InspectionsTrafficOffProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -93,7 +88,6 @@ export const InspectionsTrafficOff: FC<InspectionsTrafficOffProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

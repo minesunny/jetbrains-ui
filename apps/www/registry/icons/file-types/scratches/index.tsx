@@ -7,7 +7,6 @@ export type ScratchesProps = SvgProps;
 const ScratchesLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ScratchesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.027 3H2.5a.5.5 0 0 0 0 1h5.527a4.6 4.6 0 0 1 0-1M8.758 6H2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .145-.021c-.341-.28-.64-.61-.887-.979M2.5 12a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zM2.5 9a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const ScratchesLight: FC<SvgProps> = ({
 const ScratchesDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ScratchesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.027 3H2.5a.5.5 0 0 0 0 1h5.527a4.6 4.6 0 0 1 0-1M8.758 6H2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .145-.021c-.341-.28-.64-.61-.887-.979M2.5 12a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zM2.5 9a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const Scratches: FC<ScratchesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ScratchesLight : ScratchesDark;
@@ -84,7 +79,6 @@ export const Scratches: FC<ScratchesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

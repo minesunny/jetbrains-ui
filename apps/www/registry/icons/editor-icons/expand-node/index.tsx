@@ -7,7 +7,6 @@ export type ExpandNodeProps = SvgProps;
 const ExpandNodeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ExpandNodeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5 2.5a.5.5 0 0 0-1 0V4H2.5a.5.5 0 0 0 0 1H4v1.5a.5.5 0 0 0 1 0V5h1.5a.5.5 0 0 0 0-1H5z"
       fill="#000"
@@ -40,7 +38,6 @@ const ExpandNodeLight: FC<SvgProps> = ({
 const ExpandNodeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ExpandNodeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5 2.5a.5.5 0 0 0-1 0V4H2.5a.5.5 0 0 0 0 1H4v1.5a.5.5 0 0 0 1 0V5h1.5a.5.5 0 0 0 0-1H5z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const ExpandNode: FC<ExpandNodeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ExpandNodeLight : ExpandNodeDark;
@@ -84,7 +79,6 @@ export const ExpandNode: FC<ExpandNodeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

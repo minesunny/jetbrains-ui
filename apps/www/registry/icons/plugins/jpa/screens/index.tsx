@@ -7,7 +7,6 @@ export type ScreensProps = SvgProps;
 const ScreensLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -39,7 +38,6 @@ const ScreensLight: React.FC<SvgProps> = ({
 const ScreensDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -73,7 +71,6 @@ export const Screens: React.FC<ScreensProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ScreensLight : ScreensDark;
@@ -82,7 +79,6 @@ export const Screens: React.FC<ScreensProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

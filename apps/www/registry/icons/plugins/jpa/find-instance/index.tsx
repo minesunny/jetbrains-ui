@@ -7,7 +7,6 @@ export type FindInstanceProps = SvgProps;
 const FindInstanceLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -45,7 +44,6 @@ const FindInstanceLight: React.FC<SvgProps> = ({
 const FindInstanceDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -85,7 +83,6 @@ export const FindInstance: React.FC<FindInstanceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FindInstanceLight : FindInstanceDark;
@@ -94,7 +91,6 @@ export const FindInstance: React.FC<FindInstanceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

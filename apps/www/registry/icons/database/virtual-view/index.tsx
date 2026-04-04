@@ -7,7 +7,6 @@ export type VirtualViewProps = SvgProps;
 const VirtualViewLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const VirtualViewLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2 12V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v4.354A4 4 0 0 0 7.535 13H3a1 1 0 0 1-1-1"
       fill="#EEE0FF"
@@ -47,7 +45,6 @@ const VirtualViewLight: FC<SvgProps> = ({
 const VirtualViewDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +60,6 @@ const VirtualViewDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2 12V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v4.354A4 4 0 0 0 7.535 13H3a1 1 0 0 1-1-1"
       fill="#2F2936"
@@ -89,7 +85,6 @@ export const VirtualView: FC<VirtualViewProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? VirtualViewLight : VirtualViewDark;
@@ -98,7 +93,6 @@ export const VirtualView: FC<VirtualViewProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

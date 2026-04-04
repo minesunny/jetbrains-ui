@@ -7,7 +7,6 @@ export type RestartFrameProps = SvgProps;
 const RestartFrameLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RestartFrameLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x="9.5"
       y="9.5"
@@ -43,7 +41,6 @@ const RestartFrameLight: FC<SvgProps> = ({
 const RestartFrameDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const RestartFrameDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect
       x="9.5"
       y="9.5"
@@ -81,7 +77,6 @@ export const RestartFrame: FC<RestartFrameProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RestartFrameLight : RestartFrameDark;
@@ -90,7 +85,6 @@ export const RestartFrame: FC<RestartFrameProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

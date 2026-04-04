@@ -7,7 +7,6 @@ export type HighAllProps = SvgProps;
 const HighAllLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -36,7 +35,6 @@ const HighAllLight: React.FC<SvgProps> = ({
 const HighAllDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -67,7 +65,6 @@ export const HighAll: React.FC<HighAllProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? HighAllLight : HighAllDark;
@@ -76,7 +73,6 @@ export const HighAll: React.FC<HighAllProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

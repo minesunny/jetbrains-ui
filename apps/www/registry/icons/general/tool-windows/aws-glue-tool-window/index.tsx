@@ -7,7 +7,6 @@ export type AwsGlueToolWindowProps = SvgProps;
 const AwsGlueToolWindowLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AwsGlueToolWindowLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.005 6.606V1l1.746.848v4.914zM2 4.656l1.28-.38L5 4.529v2.623l-1.72-.098L2 7.152zM11 5.397v1.716l1.71-.098V5.144zM12.71 5.144v1.871l1.29.088V5.514zM8.005 1l-1.756.868v4.904l1.756-.166z"
       fill="#6C707E"
@@ -44,7 +42,6 @@ const AwsGlueToolWindowLight: FC<SvgProps> = ({
 const AwsGlueToolWindowDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const AwsGlueToolWindowDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.005 6.606V1l1.746.848v4.914zM2 4.656l1.28-.38L5 4.529v2.623l-1.72-.098L2 7.152zM11 5.397v1.716l1.71-.098V5.144zM12.71 5.144v1.871l1.29.088V5.514zM8.005 1l-1.756.868v4.904l1.756-.166z"
       fill="#CED0D6"
@@ -83,7 +79,6 @@ export const AwsGlueToolWindow: FC<AwsGlueToolWindowProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -93,7 +88,6 @@ export const AwsGlueToolWindow: FC<AwsGlueToolWindowProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

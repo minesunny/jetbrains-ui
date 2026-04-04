@@ -7,7 +7,6 @@ export type StatusEnabledProps = SvgProps;
 const StatusEnabledLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const StatusEnabledLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
       stroke="#55A76A"
@@ -36,7 +34,6 @@ const StatusEnabledLight: FC<SvgProps> = ({
 const StatusEnabledDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const StatusEnabledDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
       stroke="#57965C"
@@ -67,7 +63,6 @@ export const StatusEnabled: FC<StatusEnabledProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const StatusEnabled: FC<StatusEnabledProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

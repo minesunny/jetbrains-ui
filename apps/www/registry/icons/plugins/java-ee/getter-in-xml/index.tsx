@@ -7,7 +7,6 @@ export type GetterInXmlProps = SvgProps;
 const GetterInXmlLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +47,6 @@ const GetterInXmlLight: React.FC<SvgProps> = ({
 const GetterInXmlDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -91,7 +89,6 @@ export const GetterInXml: React.FC<GetterInXmlProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? GetterInXmlLight : GetterInXmlDark;
@@ -100,7 +97,6 @@ export const GetterInXml: React.FC<GetterInXmlProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type FeedbackRatingFocusedProps = SvgProps;
 const FeedbackRatingFocusedLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FeedbackRatingFocusedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <circle cx="16" cy="16" r="16" fill="#D4E2FF" />
       <path
@@ -44,7 +42,6 @@ const FeedbackRatingFocusedLight: FC<SvgProps> = ({
 const FeedbackRatingFocusedDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const FeedbackRatingFocusedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <g clipPath="url(#b)">
         <circle cx="16" cy="16" r="16" fill="#25324D" />
@@ -88,7 +84,6 @@ export const FeedbackRatingFocused: FC<FeedbackRatingFocusedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -98,7 +93,6 @@ export const FeedbackRatingFocused: FC<FeedbackRatingFocusedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

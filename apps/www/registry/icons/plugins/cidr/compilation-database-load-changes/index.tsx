@@ -7,7 +7,6 @@ export type CompilationDatabaseLoadChangesProps = SvgProps;
 const CompilationDatabaseLoadChangesLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +46,6 @@ const CompilationDatabaseLoadChangesLight: React.FC<SvgProps> = ({
 const CompilationDatabaseLoadChangesDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -91,7 +89,6 @@ export const CompilationDatabaseLoadChanges: React.FC<
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -103,7 +100,6 @@ export const CompilationDatabaseLoadChanges: React.FC<
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type LevelTwoInheritedProps = SvgProps;
 const LevelTwoInheritedLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const LevelTwoInheritedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 8h4v4a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z" fill="#C9CCD6" />
     <path
       d="M9 2.5h2A1.5 1.5 0 0 1 12.5 4v8a1.5 1.5 0 0 1-1.5 1.5H9A1.5 1.5 0 0 1 7.5 12V4A1.5 1.5 0 0 1 9 2.5ZM8 7.5h4"
@@ -35,7 +33,6 @@ const LevelTwoInheritedLight: FC<SvgProps> = ({
 const LevelTwoInheritedDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const LevelTwoInheritedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 8h4v4a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z" fill="#5A5D63" />
     <path
       d="M9 2.5h2A1.5 1.5 0 0 1 12.5 4v8a1.5 1.5 0 0 1-1.5 1.5H9A1.5 1.5 0 0 1 7.5 12V4A1.5 1.5 0 0 1 9 2.5ZM8 7.5h4"
@@ -65,7 +61,6 @@ export const LevelTwoInherited: FC<LevelTwoInheritedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -75,7 +70,6 @@ export const LevelTwoInherited: FC<LevelTwoInheritedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

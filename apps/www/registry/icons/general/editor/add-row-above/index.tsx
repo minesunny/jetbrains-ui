@@ -7,7 +7,6 @@ export type AddRowAboveProps = SvgProps;
 const AddRowAboveLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AddRowAboveLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 1.5a.5.5 0 0 0-1 0V3H5.5a.5.5 0 0 0 0 1H7v1.5a.5.5 0 0 0 1 0V4h1.5a.5.5 0 0 0 0-1H8z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const AddRowAboveLight: FC<SvgProps> = ({
 const AddRowAboveDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const AddRowAboveDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 1.5a.5.5 0 0 0-1 0V3H5.5a.5.5 0 0 0 0 1H7v1.5a.5.5 0 0 0 1 0V4h1.5a.5.5 0 0 0 0-1H8z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const AddRowAbove: FC<AddRowAboveProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AddRowAboveLight : AddRowAboveDark;
@@ -84,7 +79,6 @@ export const AddRowAbove: FC<AddRowAboveProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

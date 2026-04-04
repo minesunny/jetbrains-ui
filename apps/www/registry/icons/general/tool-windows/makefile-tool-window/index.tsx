@@ -7,7 +7,6 @@ export type MakefileToolWindowProps = SvgProps;
 const MakefileToolWindowLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MakefileToolWindowLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2 2.5h2.086a.5.5 0 0 1 .353.146L8 6.207l3.56-3.56a.5.5 0 0 1 .354-.147H14a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V6.793l-3.5 3.5-3.5-3.5V13a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5Z"
       stroke="#6C707E"
@@ -34,7 +32,6 @@ const MakefileToolWindowLight: FC<SvgProps> = ({
 const MakefileToolWindowDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const MakefileToolWindowDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2 2.5h2.086a.5.5 0 0 1 .353.146L8 6.207l3.56-3.56a.5.5 0 0 1 .354-.147H14a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V6.793l-3.5 3.5-3.5-3.5V13a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5Z"
       stroke="#CED0D6"
@@ -63,7 +59,6 @@ export const MakefileToolWindow: FC<MakefileToolWindowProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -73,7 +68,6 @@ export const MakefileToolWindow: FC<MakefileToolWindowProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type GraphQLProps = SvgProps;
 const GraphQLLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -36,7 +35,6 @@ const GraphQLLight: React.FC<SvgProps> = ({
 const GraphQLDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -67,7 +65,6 @@ export const GraphQL: React.FC<GraphQLProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? GraphQLLight : GraphQLDark;
@@ -76,7 +73,6 @@ export const GraphQL: React.FC<GraphQLProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

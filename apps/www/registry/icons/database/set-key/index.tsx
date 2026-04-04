@@ -7,7 +7,6 @@ export type SetKeyProps = SvgProps;
 const SetKeyLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SetKeyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#6C707E">
       <path
         fillRule="evenodd"
@@ -43,7 +41,6 @@ const SetKeyLight: FC<SvgProps> = ({
 const SetKeyDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const SetKeyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#CED0D6">
       <path
         fillRule="evenodd"
@@ -81,7 +77,6 @@ export const SetKey: FC<SetKeyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SetKeyLight : SetKeyDark;
@@ -90,7 +85,6 @@ export const SetKey: FC<SetKeyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

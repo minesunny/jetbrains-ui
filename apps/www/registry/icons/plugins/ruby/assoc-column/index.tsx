@@ -7,7 +7,6 @@ export type AssocColumnProps = SvgProps;
 const AssocColumnLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -45,7 +44,6 @@ const AssocColumnLight: React.FC<SvgProps> = ({
 const AssocColumnDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -92,7 +90,6 @@ export const AssocColumn: React.FC<AssocColumnProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AssocColumnLight : AssocColumnDark;
@@ -101,7 +98,6 @@ export const AssocColumn: React.FC<AssocColumnProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type CwmMicAvatarOffProps = SvgProps;
 const CwmMicAvatarOffLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -38,7 +37,6 @@ const CwmMicAvatarOffLight: React.FC<SvgProps> = ({
 const CwmMicAvatarOffDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -71,7 +69,6 @@ export const CwmMicAvatarOff: React.FC<CwmMicAvatarOffProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +78,6 @@ export const CwmMicAvatarOff: React.FC<CwmMicAvatarOffProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

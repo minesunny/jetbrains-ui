@@ -7,7 +7,6 @@ export type SystemThemeSelectedProps = SvgProps;
 const SystemThemeSelectedLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SystemThemeSelectedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 8A6.5 6.5 0 0 0 8 14.5v-13A6.5 6.5 0 0 0 1.5 8"
       fill="#EDF3FF"
@@ -36,7 +34,6 @@ const SystemThemeSelectedLight: FC<SvgProps> = ({
 const SystemThemeSelectedDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const SystemThemeSelectedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 8A6.5 6.5 0 0 0 8 14.5v-13A6.5 6.5 0 0 0 1.5 8"
       fill="#25324D"
@@ -67,7 +63,6 @@ export const SystemThemeSelected: FC<SystemThemeSelectedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const SystemThemeSelected: FC<SystemThemeSelectedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

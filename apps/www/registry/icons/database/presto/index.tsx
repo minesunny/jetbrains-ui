@@ -7,7 +7,6 @@ export type PrestoProps = SvgProps;
 const PrestoLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PrestoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5.212 3.28a.572.572 0 1 0 0-1.143.572.572 0 0 0 0 1.143M6.979 5.118a.643.643 0 1 0 0-1.286.643.643 0 0 0 0 1.286M9.46 6.242a.714.714 0 1 1-1.429 0 .714.714 0 0 1 1.429 0M10.512 8.794a.786.786 0 1 0 0-1.57.786.786 0 0 0 0 1.57M13.136 9.775a.857.857 0 1 1-1.714 0 .857.857 0 0 1 1.714 0"
       fill="#5890FF"
@@ -42,7 +40,6 @@ const PrestoLight: FC<SvgProps> = ({
 const PrestoDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const PrestoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5.212 3.28a.572.572 0 1 0 0-1.143.572.572 0 0 0 0 1.143M6.979 5.118a.643.643 0 1 0 0-1.286.643.643 0 0 0 0 1.286M9.46 6.242a.714.714 0 1 1-1.429 0 .714.714 0 0 1 1.429 0M10.512 8.794a.786.786 0 1 0 0-1.57.786.786 0 0 0 0 1.57M13.136 9.775a.857.857 0 1 1-1.714 0 .857.857 0 0 1 1.714 0"
       fill="#5890FF"
@@ -79,7 +75,6 @@ export const Presto: FC<PrestoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PrestoLight : PrestoDark;
@@ -88,7 +83,6 @@ export const Presto: FC<PrestoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

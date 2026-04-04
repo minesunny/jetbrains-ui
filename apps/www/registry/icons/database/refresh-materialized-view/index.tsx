@@ -7,7 +7,6 @@ export type RefreshMaterializedViewProps = SvgProps;
 const RefreshMaterializedViewLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RefreshMaterializedViewLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M2.474 3.342a.5.5 0 0 0-.948 0l-1.5 4.5a.5.5 0 1 0 .948.316L2 5.081l2.526 7.577a.5.5 0 0 0 .948 0L8 5.081l.642 1.926c.42.039.789.251 1.036.564q.087-.045.177-.088l-1.38-4.141a.5.5 0 0 0-.95 0L5 10.919zM12.303 7.01q.517.03 1 .162L14 5.082l.964 2.89a5 5 0 0 1 .603.524.5.5 0 0 0 .408-.654l-1.5-4.5a.5.5 0 0 0-.95 0z"
@@ -45,7 +43,6 @@ const RefreshMaterializedViewLight: FC<SvgProps> = ({
 const RefreshMaterializedViewDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const RefreshMaterializedViewDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M2.474 3.342a.5.5 0 0 0-.948 0l-1.5 4.5a.5.5 0 1 0 .948.316L2 5.081l2.526 7.577a.5.5 0 0 0 .948 0L8 5.081l.642 1.926c.42.039.789.251 1.036.564q.087-.045.177-.088l-1.38-4.141a.5.5 0 0 0-.95 0L5 10.919zM12.303 7.01q.517.03 1 .162L14 5.082l.964 2.89a5 5 0 0 1 .603.524.5.5 0 0 0 .408-.654l-1.5-4.5a.5.5 0 0 0-.95 0z"
@@ -85,7 +81,6 @@ export const RefreshMaterializedView: FC<RefreshMaterializedViewProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -97,7 +92,6 @@ export const RefreshMaterializedView: FC<RefreshMaterializedViewProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

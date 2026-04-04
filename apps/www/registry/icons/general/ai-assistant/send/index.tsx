@@ -7,7 +7,6 @@ export type SendProps = SvgProps;
 const SendLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SendLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 8h-6l-1 6.5 12-6.5-12-6.5.692 4.5"
       stroke="#6C707E"
@@ -36,7 +34,6 @@ const SendLight: FC<SvgProps> = ({
 const SendDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const SendDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M9.5 8h-6l-1 6.5 12-6.5-12-6.5.692 4.5"
       stroke="#CED0D6"
@@ -67,7 +63,6 @@ export const Send: FC<SendProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SendLight : SendDark;
@@ -76,7 +71,6 @@ export const Send: FC<SendProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

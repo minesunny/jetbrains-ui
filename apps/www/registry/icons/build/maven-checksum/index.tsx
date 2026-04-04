@@ -7,7 +7,6 @@ export type MavenChecksumProps = SvgProps;
 const MavenChecksumLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MavenChecksumLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M15.224 6.499c.358-1.563 0-3.298-2.062-3.298-1.577 0-2.539.588-3.677 1.561-.198-.867-.802-1.53-2.036-1.556-1.265-.07-2.372.46-3.321 1.207.1-.453-.113-.926-.629-1.03-.454-.093-.9.183-.996.616L1.775 7.26a3 3 0 0 1 1.766-.212l.197-.882.002-.003v.007c.71-.995 1.982-1.541 2.91-1.442.78.097 1.317.647 1.055 1.766l-.988 4.478c.18.3.283.651.283 1.027v1.104a1 1 0 0 0 .116.03c.454.091.9-.186.995-.618l1.416-6.35c1.312-1.84 4.547-2.146 3.977.333l-1.252 5.684c-.095.432.196.856.65.947s.899-.186.995-.618z"
       fill="#3574F0"
@@ -41,7 +39,6 @@ const MavenChecksumLight: FC<SvgProps> = ({
 const MavenChecksumDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -57,7 +54,6 @@ const MavenChecksumDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M15.224 6.499c.358-1.563 0-3.298-2.062-3.298-1.577 0-2.539.588-3.677 1.561-.198-.867-.802-1.53-2.036-1.556-1.265-.07-2.372.46-3.321 1.207.1-.453-.113-.926-.629-1.03-.454-.093-.9.183-.996.616L1.775 7.26a3 3 0 0 1 1.766-.212l.197-.882.002-.003v.007c.71-.995 1.982-1.541 2.91-1.442.78.097 1.317.647 1.055 1.766l-.988 4.478c.18.3.283.651.283 1.027v1.104a1 1 0 0 0 .116.03c.454.091.9-.186.995-.618l1.416-6.35c1.312-1.84 4.547-2.146 3.977.333l-1.252 5.684c-.095.432.196.856.65.947s.899-.186.995-.618z"
       fill="#548AF7"
@@ -77,7 +73,6 @@ export const MavenChecksum: FC<MavenChecksumProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -87,7 +82,6 @@ export const MavenChecksum: FC<MavenChecksumProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

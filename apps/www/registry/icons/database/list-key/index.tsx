@@ -7,7 +7,6 @@ export type ListKeyProps = SvgProps;
 const ListKeyLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ListKeyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#6C707E">
       <path d="M5 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2v-1H5V3h2V2zM12 10.337a3.5 3.5 0 0 0-1-.302V3H9V2h2a1 1 0 0 1 1 1z" />
       <path
@@ -43,7 +41,6 @@ const ListKeyLight: FC<SvgProps> = ({
 const ListKeyDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const ListKeyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#CED0D6">
       <path d="M5 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2v-1H5V3h2V2zM12 10.337a3.5 3.5 0 0 0-1-.302V3H9V2h2a1 1 0 0 1 1 1z" />
       <path
@@ -81,7 +77,6 @@ export const ListKey: FC<ListKeyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ListKeyLight : ListKeyDark;
@@ -90,7 +85,6 @@ export const ListKey: FC<ListKeyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

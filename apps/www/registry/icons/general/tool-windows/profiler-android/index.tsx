@@ -7,7 +7,6 @@ export type ProfilerAndroidProps = SvgProps;
 const ProfilerAndroidLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ProfilerAndroidLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#6C707E">
       <path d="M1.5 10a6.5 6.5 0 0 1 13 0 1.5 1.5 0 0 1 .988.371q.012-.19.012-.371a7.5 7.5 0 0 0-15 0c0 1.16.377 2.68.866 3.73.079.168.25.27.435.27h5.615q.236-.537.584-1H2.14c-.37-.913-.64-2.11-.64-3" />
       <path d="M9.786 10.027a1.8 1.8 0 0 0-.095-.844l2.466-1.98a.6.6 0 1 0-.751-.936l-2.478 1.99A1.8 1.8 0 1 0 8 11.6h.003a1.5 1.5 0 0 1 .373-1.094.8.8 0 1 1 .278-.245l.074-.047c.33-.199.707-.255 1.058-.187" />
@@ -44,7 +42,6 @@ const ProfilerAndroidLight: FC<SvgProps> = ({
 const ProfilerAndroidDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const ProfilerAndroidDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <g clipPath="url(#b)" fill="#CED0D6">
         <path d="M1.5 10a6.5 6.5 0 0 1 13 0 1.5 1.5 0 0 1 .988.371q.012-.19.012-.371a7.5 7.5 0 0 0-15 0c0 1.16.377 2.68.866 3.73.079.168.25.27.435.27h5.615q.236-.537.584-1H2.14c-.37-.913-.64-2.11-.64-3" />
@@ -88,7 +84,6 @@ export const ProfilerAndroid: FC<ProfilerAndroidProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -98,7 +93,6 @@ export const ProfilerAndroid: FC<ProfilerAndroidProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

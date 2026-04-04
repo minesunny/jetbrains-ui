@@ -7,7 +7,6 @@ export type AbstractExtensionFunctionProps = SvgProps;
 const AbstractExtensionFunctionLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +58,6 @@ const AbstractExtensionFunctionLight: React.FC<SvgProps> = ({
 const AbstractExtensionFunctionDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -97,7 +95,6 @@ export const AbstractExtensionFunction: React.FC<
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -109,7 +106,6 @@ export const AbstractExtensionFunction: React.FC<
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

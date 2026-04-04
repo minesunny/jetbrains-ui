@@ -7,7 +7,6 @@ export type СoreDumpDebugProps = SvgProps;
 const СoreDumpDebugLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -63,7 +62,6 @@ const СoreDumpDebugLight: React.FC<SvgProps> = ({
 const СoreDumpDebugDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -121,7 +119,6 @@ export const СoreDumpDebug: React.FC<СoreDumpDebugProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -131,7 +128,6 @@ export const СoreDumpDebug: React.FC<СoreDumpDebugProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

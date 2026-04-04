@@ -7,7 +7,6 @@ export type ComponentVendorProps = SvgProps;
 const ComponentVendorLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -43,7 +42,6 @@ const ComponentVendorLight: React.FC<SvgProps> = ({
 const ComponentVendorDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -81,7 +79,6 @@ export const ComponentVendor: React.FC<ComponentVendorProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -91,7 +88,6 @@ export const ComponentVendor: React.FC<ComponentVendorProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

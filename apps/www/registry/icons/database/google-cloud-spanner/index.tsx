@@ -7,7 +7,6 @@ export type GoogleCloudSpannerProps = SvgProps;
 const GoogleCloudSpannerLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const GoogleCloudSpannerLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m.284 8.496 3.428 6A1 1 0 0 0 4.58 15h6.84a1 1 0 0 0 .868-.504l3.428-6a1 1 0 0 0 0-.992l-3.428-6A1 1 0 0 0 11.42 1H4.58a1 1 0 0 0-.868.504l-3.428 6a1 1 0 0 0 0 .992"
       fill="#4485F9"
@@ -43,7 +41,6 @@ const GoogleCloudSpannerLight: FC<SvgProps> = ({
 const GoogleCloudSpannerDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -59,7 +56,6 @@ const GoogleCloudSpannerDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m.284 8.496 3.428 6A1 1 0 0 0 4.58 15h6.84a1 1 0 0 0 .868-.504l3.428-6a1 1 0 0 0 0-.992l-3.428-6A1 1 0 0 0 11.42 1H4.58a1 1 0 0 0-.868.504l-3.428 6a1 1 0 0 0 0 .992"
       fill="#4485F9"
@@ -81,7 +77,6 @@ export const GoogleCloudSpanner: FC<GoogleCloudSpannerProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -91,7 +86,6 @@ export const GoogleCloudSpanner: FC<GoogleCloudSpannerProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

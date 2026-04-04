@@ -7,7 +7,6 @@ export type EditorOutputProps = SvgProps;
 const EditorOutputLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const EditorOutputLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 2a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1zM2.5 13a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const EditorOutputLight: FC<SvgProps> = ({
 const EditorOutputDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const EditorOutputDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 2a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1zM2.5 13a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const EditorOutput: FC<EditorOutputProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? EditorOutputLight : EditorOutputDark;
@@ -84,7 +79,6 @@ export const EditorOutput: FC<EditorOutputProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

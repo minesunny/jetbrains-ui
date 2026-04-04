@@ -7,7 +7,6 @@ export type CythonFileProps = SvgProps;
 const CythonFileLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CythonFileLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.952 4c-.33.002-.644.03-.922.078-.816.143-.964.441-.964.992v.727h1.93v.243H5.34c-.56 0-1.052.333-1.205.968-.177.726-.185 1.18 0 1.94.137.564.465.967 1.025.967h.664v-.872c0-.63.55-1.186 1.205-1.186h1.928a.967.967 0 0 0 .965-.97V5.07c0-.517-.442-.906-.965-.992A6 6 0 0 0 7.952 4m-1.043.585a.364.364 0 0 1 0 .727.364.364 0 0 1 0-.727"
       fill="url(#a)"
@@ -68,7 +66,6 @@ const CythonFileLight: FC<SvgProps> = ({
 const CythonFileDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -84,7 +81,6 @@ const CythonFileDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.952 4c-.33.002-.644.03-.922.078-.816.143-.964.441-.964.992v.727h1.93v.243H5.34c-.56 0-1.052.333-1.205.968-.177.726-.185 1.18 0 1.94.137.564.465.967 1.025.967h.664v-.872c0-.63.55-1.186 1.205-1.186h1.928a.967.967 0 0 0 .965-.97V5.07c0-.517-.442-.906-.965-.992A6 6 0 0 0 7.952 4m-1.043.585a.364.364 0 0 1 0 .727.364.364 0 0 1 0-.727"
       fill="url(#a)"
@@ -131,7 +127,6 @@ export const CythonFile: FC<CythonFileProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CythonFileLight : CythonFileDark;
@@ -140,7 +135,6 @@ export const CythonFile: FC<CythonFileProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

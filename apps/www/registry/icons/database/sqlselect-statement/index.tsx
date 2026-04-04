@@ -7,7 +7,6 @@ export type SQLSelectStatementProps = SvgProps;
 const SQLSelectStatementLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SQLSelectStatementLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.56 7.646a.5.5 0 0 0 0 .708l5.94 5.939V10.5H14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5H7.5V1.707z"
       fill="#EBECF0"
@@ -36,7 +34,6 @@ const SQLSelectStatementLight: FC<SvgProps> = ({
 const SQLSelectStatementDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const SQLSelectStatementDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.56 7.646a.5.5 0 0 0 0 .708l5.94 5.939V10.5H14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5H7.5V1.707z"
       fill="#43454A"
@@ -67,7 +63,6 @@ export const SQLSelectStatement: FC<SQLSelectStatementProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -77,7 +72,6 @@ export const SQLSelectStatement: FC<SQLSelectStatementProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

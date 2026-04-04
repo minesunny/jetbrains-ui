@@ -7,7 +7,6 @@ export type ScrollDownProps = SvgProps;
 const ScrollDownLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ScrollDownLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 3.5h4M1.5 8h4m-4 4.5h13"
       stroke="#6C707E"
@@ -42,7 +40,6 @@ const ScrollDownLight: FC<SvgProps> = ({
 const ScrollDownDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const ScrollDownDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.5 3.5h4M1.5 8h4m-4 4.5h13"
       stroke="#CED0D6"
@@ -79,7 +75,6 @@ export const ScrollDown: FC<ScrollDownProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ScrollDownLight : ScrollDownDark;
@@ -88,7 +83,6 @@ export const ScrollDown: FC<ScrollDownProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

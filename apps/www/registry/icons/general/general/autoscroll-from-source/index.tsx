@@ -7,7 +7,6 @@ export type AutoscrollFromSourceProps = SvgProps;
 const AutoscrollFromSourceLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AutoscrollFromSourceLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14 5.5a.5.5 0 0 1-1 0V3H3v2.5a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5z"
       fill="#6C707E"
@@ -38,7 +36,6 @@ const AutoscrollFromSourceLight: FC<SvgProps> = ({
 const AutoscrollFromSourceDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const AutoscrollFromSourceDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14 5.5a.5.5 0 0 1-1 0V3H3v2.5a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5z"
       fill="#CED0D6"
@@ -71,7 +67,6 @@ export const AutoscrollFromSource: FC<AutoscrollFromSourceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +76,6 @@ export const AutoscrollFromSource: FC<AutoscrollFromSourceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

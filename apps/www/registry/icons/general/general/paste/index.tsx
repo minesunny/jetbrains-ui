@@ -7,7 +7,6 @@ export type PasteProps = SvgProps;
 const PasteLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PasteLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5M5.5 10a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const PasteLight: FC<SvgProps> = ({
 const PasteDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const PasteDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5M5.5 10a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const Paste: FC<PasteProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PasteLight : PasteDark;
@@ -84,7 +79,6 @@ export const Paste: FC<PasteProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

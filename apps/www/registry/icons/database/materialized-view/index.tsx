@@ -7,7 +7,6 @@ export type MaterializedViewProps = SvgProps;
 const MaterializedViewLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MaterializedViewLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fillRule="evenodd" clipRule="evenodd">
       <path
         d="M14 6h-3v3h-1V6H6v3H5V6H2v6a1 1 0 0 0 1 1h1v1H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5h-1zM5 3H3a1 1 0 0 0-1 1v1h3zm1 0v2h4V3zm5 0v2h3V4a1 1 0 0 0-1-1z"
@@ -45,7 +43,6 @@ const MaterializedViewLight: FC<SvgProps> = ({
 const MaterializedViewDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const MaterializedViewDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fillRule="evenodd" clipRule="evenodd">
       <path
         d="M14 6h-3v3h-1V6H6v3H5V6H2v6a1 1 0 0 0 1 1h1v1H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5h-1zM5 3H3a1 1 0 0 0-1 1v1h3zm1 0v2h4V3zm5 0v2h3V4a1 1 0 0 0-1-1z"
@@ -85,7 +81,6 @@ export const MaterializedView: FC<MaterializedViewProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -95,7 +90,6 @@ export const MaterializedView: FC<MaterializedViewProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

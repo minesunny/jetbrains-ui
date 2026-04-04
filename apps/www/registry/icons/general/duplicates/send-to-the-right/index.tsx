@@ -7,7 +7,6 @@ export type SendToTheRightProps = SvgProps;
 const SendToTheRightLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SendToTheRightLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.146 3.147a.5.5 0 0 0 0 .707L10.293 7H2.499a.5.5 0 0 0 0 1h7.794l-3.147 3.147a.5.5 0 1 0 .708.707l4-4a.5.5 0 0 0 0-.707l-4-4a.5.5 0 0 0-.708 0"
       fill="#369650"
@@ -40,7 +38,6 @@ const SendToTheRightLight: FC<SvgProps> = ({
 const SendToTheRightDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const SendToTheRightDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.146 3.147a.5.5 0 0 0 0 .707L10.293 7H2.499a.5.5 0 0 0 0 1h7.794l-3.147 3.147a.5.5 0 1 0 .708.707l4-4a.5.5 0 0 0 0-.707l-4-4a.5.5 0 0 0-.708 0"
       fill="#57965C"
@@ -75,7 +71,6 @@ export const SendToTheRight: FC<SendToTheRightProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const SendToTheRight: FC<SendToTheRightProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

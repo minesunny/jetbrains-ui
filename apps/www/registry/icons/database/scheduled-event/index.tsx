@@ -7,7 +7,6 @@ export type ScheduledEventProps = SvgProps;
 const ScheduledEventLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ScheduledEventLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" stroke="#6C707E" />
     <path d="M12.472 8.5A4.5 4.5 0 0 1 8.5 12.47V8.5z" stroke="#6C707E" />
   </svg>
@@ -32,7 +30,6 @@ const ScheduledEventLight: FC<SvgProps> = ({
 const ScheduledEventDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +45,6 @@ const ScheduledEventDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" stroke="#CED0D6" />
     <path d="M12.472 8.5A4.5 4.5 0 0 1 8.5 12.47V8.5z" stroke="#CED0D6" />
   </svg>
@@ -59,7 +55,6 @@ export const ScheduledEvent: FC<ScheduledEventProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -69,7 +64,6 @@ export const ScheduledEvent: FC<ScheduledEventProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type PnpmLockProps = SvgProps;
 const PnpmLockLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PnpmLockLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#EBECF0" d="M11 12H15V15H11z" />
     <path
       fillRule="evenodd"
@@ -42,7 +40,6 @@ const PnpmLockLight: FC<SvgProps> = ({
 const PnpmLockDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const PnpmLockDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path fill="#43454A" d="M11 12H15V15H11z" />
     <path
       fillRule="evenodd"
@@ -79,7 +75,6 @@ export const PnpmLock: FC<PnpmLockProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PnpmLockLight : PnpmLockDark;
@@ -88,7 +83,6 @@ export const PnpmLock: FC<PnpmLockProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

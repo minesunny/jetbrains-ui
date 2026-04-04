@@ -7,7 +7,6 @@ export type EvaluateExpressionProps = SvgProps;
 const EvaluateExpressionLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const EvaluateExpressionLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#6C707E" />
     <rect x="4.5" y="4.5" width="7" height="2" rx=".5" stroke="#6C707E" />
     <rect x="4.3" y="8" width="1.4" height="1.4" rx=".7" fill="#6C707E" />
@@ -38,7 +36,6 @@ const EvaluateExpressionLight: FC<SvgProps> = ({
 const EvaluateExpressionDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const EvaluateExpressionDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#CED0D6" />
     <rect x="4.5" y="4.5" width="7" height="2" rx=".5" stroke="#CED0D6" />
     <rect x="4.3" y="8" width="1.4" height="1.4" rx=".7" fill="#CED0D6" />
@@ -71,7 +67,6 @@ export const EvaluateExpression: FC<EvaluateExpressionProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +76,6 @@ export const EvaluateExpression: FC<EvaluateExpressionProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type PersistenceUnitProps = SvgProps;
 const PersistenceUnitLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -44,7 +43,6 @@ const PersistenceUnitLight: React.FC<SvgProps> = ({
 const PersistenceUnitDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -83,7 +81,6 @@ export const PersistenceUnit: React.FC<PersistenceUnitProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -93,7 +90,6 @@ export const PersistenceUnit: React.FC<PersistenceUnitProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

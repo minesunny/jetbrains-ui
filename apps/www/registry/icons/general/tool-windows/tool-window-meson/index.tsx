@@ -7,7 +7,6 @@ export type ToolWindowMesonProps = SvgProps;
 const ToolWindowMesonLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowMesonLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.053 1.582c3.917 2.4 6.35 6.666 6.442 11.304-3.857 2.116-8.75 2.194-12.99-.03C1.63 8.208 4.105 3.95 8.054 1.582Z"
       stroke="#6C707E"
@@ -38,7 +36,6 @@ const ToolWindowMesonLight: FC<SvgProps> = ({
 const ToolWindowMesonDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const ToolWindowMesonDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.053 1.582c3.917 2.4 6.35 6.666 6.442 11.304-3.857 2.116-8.75 2.194-12.99-.03C1.63 8.208 4.105 3.95 8.054 1.582Z"
       stroke="#CED0D6"
@@ -71,7 +67,6 @@ export const ToolWindowMeson: FC<ToolWindowMesonProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -81,7 +76,6 @@ export const ToolWindowMeson: FC<ToolWindowMesonProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

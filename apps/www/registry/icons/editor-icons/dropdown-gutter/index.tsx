@@ -7,7 +7,6 @@ export type DropdownGutterProps = SvgProps;
 const DropdownGutterLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const DropdownGutterLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M15 11v4h-4z" fill="#6C707E" />
   </svg>
 );
@@ -31,7 +29,6 @@ const DropdownGutterLight: FC<SvgProps> = ({
 const DropdownGutterDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +44,6 @@ const DropdownGutterDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M15 11v4h-4z" fill="#CED0D6" />
   </svg>
 );
@@ -57,7 +53,6 @@ export const DropdownGutter: FC<DropdownGutterProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -67,7 +62,6 @@ export const DropdownGutter: FC<DropdownGutterProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type MavenModuleProps = SvgProps;
 const MavenModuleLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MavenModuleLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v4.008a3.502 3.502 0 0 0-1.983.446c-.377-.298-.84-.437-1.333-.45a3.34 3.34 0 0 0-1.54.298 1.5 1.5 0 0 0-.476-.181c-.744-.151-1.543.293-1.724 1.1v.002L7.316 14H2.75C1.784 14 1 13.164 1 12.133z"
       fill="#EBECF0"
@@ -42,7 +40,6 @@ const MavenModuleLight: FC<SvgProps> = ({
 const MavenModuleDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const MavenModuleDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v4.008a3.502 3.502 0 0 0-1.983.446c-.377-.298-.84-.437-1.333-.45a3.34 3.34 0 0 0-1.54.298 1.5 1.5 0 0 0-.476-.181c-.744-.151-1.543.293-1.724 1.1v.002L7.316 14H2.75C1.784 14 1 13.164 1 12.133z"
@@ -86,7 +82,6 @@ export const MavenModule: FC<MavenModuleProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? MavenModuleLight : MavenModuleDark;
@@ -95,7 +90,6 @@ export const MavenModule: FC<MavenModuleProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

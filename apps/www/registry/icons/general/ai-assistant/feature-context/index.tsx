@@ -7,7 +7,6 @@ export type FeatureContextProps = SvgProps;
 const FeatureContextLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FeatureContextLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="9" r="5.042" stroke="#3574F0" strokeWidth=".917" />
     <circle cx="8" cy="3.5" r="2" fill="#EDF3FF" stroke="#3574F0" />
     <circle cx="3.5" cy="11.5" r="2" fill="#EDF3FF" stroke="#3574F0" />
@@ -34,7 +32,6 @@ const FeatureContextLight: FC<SvgProps> = ({
 const FeatureContextDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const FeatureContextDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="9" r="5.042" stroke="#548AF7" strokeWidth=".917" />
     <circle cx="8" cy="3.5" r="2" fill="#25324D" stroke="#548AF7" />
     <circle cx="3.5" cy="11.5" r="2" fill="#25324D" stroke="#548AF7" />
@@ -63,7 +59,6 @@ export const FeatureContext: FC<FeatureContextProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -73,7 +68,6 @@ export const FeatureContext: FC<FeatureContextProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

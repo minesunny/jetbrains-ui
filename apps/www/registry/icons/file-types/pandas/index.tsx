@@ -7,7 +7,6 @@ export type PandasProps = SvgProps;
 const PandasLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PandasLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="11" y="1" width="2" height="10" rx=".5" fill="#130754" />
     <rect x="2" y="5" width="2" height="10" rx=".5" fill="#130754" />
     <rect x="5" y="1" width="2" height="4" rx=".5" fill="#130754" />
@@ -38,7 +36,6 @@ const PandasLight: FC<SvgProps> = ({
 const PandasDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const PandasDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="11" y="1" width="2" height="10" rx=".5" fill="#fff" />
     <rect x="2" y="5" width="2" height="10" rx=".5" fill="#fff" />
     <rect x="5" y="1" width="2" height="4" rx=".5" fill="#fff" />
@@ -71,7 +67,6 @@ export const Pandas: FC<PandasProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PandasLight : PandasDark;
@@ -80,7 +75,6 @@ export const Pandas: FC<PandasProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

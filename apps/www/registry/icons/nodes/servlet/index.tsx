@@ -7,7 +7,6 @@ export type ServletProps = SvgProps;
 const ServletLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ServletLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M4 4h2v1H4z" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -50,7 +48,6 @@ const ServletLight: FC<SvgProps> = ({
 const ServletDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -66,7 +63,6 @@ const ServletDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M4 4h2v1H4z" fill="#CED0D6" />
     <path
       fillRule="evenodd"
@@ -95,7 +91,6 @@ export const Servlet: FC<ServletProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ServletLight : ServletDark;
@@ -104,7 +99,6 @@ export const Servlet: FC<ServletProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type SwapPanelsProps = SvgProps;
 const SwapPanelsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SwapPanelsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 7a5 5 0 0 1 5-5 .5.5 0 0 0 0-1 6 6 0 0 0-6 6v.293L.854 6.147a.5.5 0 0 0-.708.707l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.707L3 7.293zM8 15a.5.5 0 0 1 0-1 5 5 0 0 0 5-5v-.293l-1.147 1.146a.5.5 0 1 1-.707-.707l2-2a.5.5 0 0 1 .707 0l2 2a.5.5 0 0 1-.707.707L14 8.707V9a6 6 0 0 1-6 6"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const SwapPanelsLight: FC<SvgProps> = ({
 const SwapPanelsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const SwapPanelsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 7a5 5 0 0 1 5-5 .5.5 0 0 0 0-1 6 6 0 0 0-6 6v.293L.854 6.147a.5.5 0 0 0-.708.707l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.707L3 7.293zM8 15a.5.5 0 0 1 0-1 5 5 0 0 0 5-5v-.293l-1.147 1.146a.5.5 0 1 1-.707-.707l2-2a.5.5 0 0 1 .707 0l2 2a.5.5 0 0 1-.707.707L14 8.707V9a6 6 0 0 1-6 6"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const SwapPanels: FC<SwapPanelsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SwapPanelsLight : SwapPanelsDark;
@@ -84,7 +79,6 @@ export const SwapPanels: FC<SwapPanelsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

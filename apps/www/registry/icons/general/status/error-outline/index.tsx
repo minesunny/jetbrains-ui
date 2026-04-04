@@ -7,7 +7,6 @@ export type ErrorOutlineProps = SvgProps;
 const ErrorOutlineLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ErrorOutlineLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" stroke="#6C707E" />
     <path
       d="M9 5a1 1 0 0 0-2 0v3a1 1 0 1 0 2 0zM8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
@@ -35,7 +33,6 @@ const ErrorOutlineLight: FC<SvgProps> = ({
 const ErrorOutlineDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const ErrorOutlineDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" stroke="#CED0D6" />
     <path
       d="M9 5a1 1 0 0 0-2 0v3a1 1 0 1 0 2 0zM8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
@@ -65,7 +61,6 @@ export const ErrorOutline: FC<ErrorOutlineProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ErrorOutlineLight : ErrorOutlineDark;
@@ -74,7 +69,6 @@ export const ErrorOutline: FC<ErrorOutlineProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

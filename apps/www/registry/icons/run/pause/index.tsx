@@ -7,7 +7,6 @@ export type PauseProps = SvgProps;
 const PauseLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PauseLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="3.5" y="2.5" width="3" height="11" rx=".5" stroke="#6C707E" />
     <rect x="9.5" y="2.5" width="3" height="11" rx=".5" stroke="#6C707E" />
   </svg>
@@ -32,7 +30,6 @@ const PauseLight: FC<SvgProps> = ({
 const PauseDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +45,6 @@ const PauseDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="3.5" y="2.5" width="3" height="11" rx=".5" stroke="#CED0D6" />
     <rect x="9.5" y="2.5" width="3" height="11" rx=".5" stroke="#CED0D6" />
   </svg>
@@ -59,7 +55,6 @@ export const Pause: FC<PauseProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PauseLight : PauseDark;
@@ -68,7 +63,6 @@ export const Pause: FC<PauseProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

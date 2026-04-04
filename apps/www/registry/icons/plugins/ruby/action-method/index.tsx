@@ -7,7 +7,6 @@ export type ActionMethodProps = SvgProps;
 const ActionMethodLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -49,7 +48,6 @@ const ActionMethodLight: React.FC<SvgProps> = ({
 const ActionMethodDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -93,7 +91,6 @@ export const ActionMethod: React.FC<ActionMethodProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ActionMethodLight : ActionMethodDark;
@@ -102,7 +99,6 @@ export const ActionMethod: React.FC<ActionMethodProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

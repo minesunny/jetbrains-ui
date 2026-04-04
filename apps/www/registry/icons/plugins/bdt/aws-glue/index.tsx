@@ -7,7 +7,6 @@ export type AwsGlueProps = SvgProps;
 const AwsGlueLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -43,7 +42,6 @@ const AwsGlueLight: React.FC<SvgProps> = ({
 const AwsGlueDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -83,7 +81,6 @@ export const AwsGlue: React.FC<AwsGlueProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AwsGlueLight : AwsGlueDark;
@@ -92,7 +89,6 @@ export const AwsGlue: React.FC<AwsGlueProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

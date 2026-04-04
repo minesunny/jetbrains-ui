@@ -7,7 +7,6 @@ export type ToolWindowHuggingFaceProps = SvgProps;
 const ToolWindowHuggingFaceLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowHuggingFaceLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 10.661c-.596-.004-1.058-.185-1.409-.455-.692-.532-.95-1.41-.95-1.95 0-.432.297-.285.77-.052.42.207.977.482 1.59.484.613-.002 1.17-.277 1.59-.484.473-.233.77-.38.77.052 0 .54-.258 1.418-.95 1.95-.351.27-.813.45-1.41.455M12.247 7.123a.584.584 0 1 0 0-1.169.584.584 0 0 0 0 1.169M4.403 6.538a.584.584 0 1 1-1.169 0 .584.584 0 0 1 1.17 0M10.184 6.284c.099.035.172.14.242.241.094.136.182.263.316.191a.906.906 0 0 0 .376-1.226.91.91 0 0 0-1.23-.375.906.906 0 0 0-.375 1.226c.062.117.2.062.347.004.114-.046.233-.093.324-.061M5.66 6.525c.07-.1.143-.206.242-.241.09-.032.21.015.325.061.146.058.284.113.346-.004a.906.906 0 0 0-.375-1.226.91.91 0 0 0-1.23.375.906.906 0 0 0 .376 1.226c.134.072.222-.055.316-.19"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const ToolWindowHuggingFaceLight: FC<SvgProps> = ({
 const ToolWindowHuggingFaceDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ToolWindowHuggingFaceDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8 10.661c-.596-.004-1.058-.185-1.409-.455-.692-.532-.95-1.41-.95-1.95 0-.432.297-.285.77-.052.42.207.977.482 1.59.484.613-.002 1.17-.277 1.59-.484.473-.233.77-.38.77.052 0 .54-.258 1.418-.95 1.95-.351.27-.813.45-1.41.455M12.247 7.123a.584.584 0 1 0 0-1.169.584.584 0 0 0 0 1.169M4.403 6.538a.584.584 0 1 1-1.169 0 .584.584 0 0 1 1.17 0M10.184 6.284c.099.035.172.14.242.241.094.136.182.263.316.191a.906.906 0 0 0 .376-1.226.91.91 0 0 0-1.23-.375.906.906 0 0 0-.375 1.226c.062.117.2.062.347.004.114-.046.233-.093.324-.061M5.66 6.525c.07-.1.143-.206.242-.241.09-.032.21.015.325.061.146.058.284.113.346-.004a.906.906 0 0 0-.375-1.226.91.91 0 0 0-1.23.375.906.906 0 0 0 .376 1.226c.134.072.222-.055.316-.19"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const ToolWindowHuggingFace: FC<ToolWindowHuggingFaceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const ToolWindowHuggingFace: FC<ToolWindowHuggingFaceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

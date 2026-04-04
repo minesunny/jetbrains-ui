@@ -7,7 +7,6 @@ export type ServerObjectsGroupProps = SvgProps;
 const ServerObjectsGroupLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ServerObjectsGroupLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2H8.5A1.5 1.5 0 0 0 7 9.5V14H2.633C1.731 14 1 13.164 1 12.133z"
       fill="#EBECF0"
@@ -44,7 +42,6 @@ const ServerObjectsGroupLight: FC<SvgProps> = ({
 const ServerObjectsGroupDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const ServerObjectsGroupDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2H8.5A1.5 1.5 0 0 0 7 9.5V14H2.633C1.731 14 1 13.164 1 12.133z"
       fill="#43454A"
@@ -83,7 +79,6 @@ export const ServerObjectsGroup: FC<ServerObjectsGroupProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -93,7 +88,6 @@ export const ServerObjectsGroup: FC<ServerObjectsGroupProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

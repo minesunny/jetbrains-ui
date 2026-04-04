@@ -7,7 +7,6 @@ export type InterfaceProps = SvgProps;
 const InterfaceLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const InterfaceLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#F2FCF3" stroke="#208A3C" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const InterfaceLight: FC<SvgProps> = ({
 const InterfaceDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const InterfaceDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="8" cy="8" r="6.5" fill="#253627" stroke="#57965C" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const Interface: FC<InterfaceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? InterfaceLight : InterfaceDark;
@@ -78,7 +73,6 @@ export const Interface: FC<InterfaceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

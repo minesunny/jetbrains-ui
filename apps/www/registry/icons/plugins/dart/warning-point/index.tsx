@@ -7,7 +7,6 @@ export type WarningPointProps = SvgProps;
 const WarningPointLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -38,7 +37,6 @@ const WarningPointLight: React.FC<SvgProps> = ({
 const WarningPointDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -71,7 +69,6 @@ export const WarningPoint: React.FC<WarningPointProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? WarningPointLight : WarningPointDark;
@@ -80,7 +77,6 @@ export const WarningPoint: React.FC<WarningPointProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

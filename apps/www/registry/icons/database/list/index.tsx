@@ -7,7 +7,6 @@ export type ListProps = SvgProps;
 const ListLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ListLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2v-1H5V3h2V2zM9 3h2v10H9v1h2a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H9z"
       fill="#6C707E"
@@ -34,7 +32,6 @@ const ListLight: FC<SvgProps> = ({
 const ListDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const ListDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M5 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2v-1H5V3h2V2zM9 3h2v10H9v1h2a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H9z"
       fill="#CED0D6"
@@ -63,7 +59,6 @@ export const List: FC<ListProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ListLight : ListDark;
@@ -72,7 +67,6 @@ export const List: FC<ListProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type CommitProps = SvgProps;
 const CommitLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CommitLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
       stroke="#55A76A"
@@ -36,7 +34,6 @@ const CommitLight: FC<SvgProps> = ({
 const CommitDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const CommitDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
       stroke="#57965C"
@@ -67,7 +63,6 @@ export const Commit: FC<CommitProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CommitLight : CommitDark;
@@ -76,7 +71,6 @@ export const Commit: FC<CommitProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

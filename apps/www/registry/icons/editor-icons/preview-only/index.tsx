@@ -7,7 +7,6 @@ export type PreviewOnlyProps = SvgProps;
 const PreviewOnlyLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PreviewOnlyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#6C707E" />
     <path
       d="m2.357 9.5 1.826-1.825a1 1 0 0 1 1.38-.033L12 13.5"
@@ -36,7 +34,6 @@ const PreviewOnlyLight: FC<SvgProps> = ({
 const PreviewOnlyDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const PreviewOnlyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#CED0D6" />
     <path
       d="m2.357 9.5 1.826-1.825a1 1 0 0 1 1.38-.033L12 13.5"
@@ -67,7 +63,6 @@ export const PreviewOnly: FC<PreviewOnlyProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PreviewOnlyLight : PreviewOnlyDark;
@@ -76,7 +71,6 @@ export const PreviewOnly: FC<PreviewOnlyProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

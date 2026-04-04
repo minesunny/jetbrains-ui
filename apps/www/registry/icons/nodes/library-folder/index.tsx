@@ -7,7 +7,6 @@ export type LibraryFolderProps = SvgProps;
 const LibraryFolderLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const LibraryFolderLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v3.268a2 2 0 0 0-.177-.091A2 2 0 0 0 13 8h-1a2 2 0 0 0-1.732 1H10a2 2 0 0 0-2 2v3H2.75C1.784 14 1 13.164 1 12.133z"
       fill="#EBECF0"
@@ -45,7 +43,6 @@ const LibraryFolderLight: FC<SvgProps> = ({
 const LibraryFolderDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const LibraryFolderDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v3.268a2 2 0 0 0-.177-.091A2 2 0 0 0 13 8h-1a2 2 0 0 0-1.732 1H10a2 2 0 0 0-2 2v3H2.75C1.784 14 1 13.164 1 12.133z"
       fill="#43454A"
@@ -85,7 +81,6 @@ export const LibraryFolder: FC<LibraryFolderProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -95,7 +90,6 @@ export const LibraryFolder: FC<LibraryFolderProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

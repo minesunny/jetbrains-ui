@@ -7,7 +7,6 @@ export type FeedbackProps = SvgProps;
 const FeedbackLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FeedbackLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13 8.121V10a1 1 0 0 1-1 1H7a1 1 0 0 0-.568.177L3 13.547V5a1 1 0 0 1 1-1h4.879l1-1H4a2 2 0 0 0-2 2v9.5a.5.5 0 0 0 .784.412L7 12h5a2 2 0 0 0 2-2V7.121z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const FeedbackLight: FC<SvgProps> = ({
 const FeedbackDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const FeedbackDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M13 8.121V10a1 1 0 0 1-1 1H7a1 1 0 0 0-.568.177L3 13.547V5a1 1 0 0 1 1-1h4.879l1-1H4a2 2 0 0 0-2 2v9.5a.5.5 0 0 0 .784.412L7 12h5a2 2 0 0 0 2-2V7.121z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const Feedback: FC<FeedbackProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FeedbackLight : FeedbackDark;
@@ -84,7 +79,6 @@ export const Feedback: FC<FeedbackProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ClusterRoleProps = SvgProps;
 const ClusterRoleLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -35,7 +34,6 @@ const ClusterRoleLight: React.FC<SvgProps> = ({
 const ClusterRoleDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -65,7 +63,6 @@ export const ClusterRole: React.FC<ClusterRoleProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ClusterRoleLight : ClusterRoleDark;
@@ -74,7 +71,6 @@ export const ClusterRole: React.FC<ClusterRoleProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

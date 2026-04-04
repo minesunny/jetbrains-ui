@@ -7,7 +7,6 @@ export type FunctionExternalProps = SvgProps;
 const FunctionExternalLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FunctionExternalLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.937 8.941Q15 8.48 15 8a7 7 0 1 0-6.059 6.937L11.88 12H11.5a1.5 1.5 0 0 1 0-3h3.379z"
       fill="#EDF3FF"
@@ -50,7 +48,6 @@ const FunctionExternalLight: FC<SvgProps> = ({
 const FunctionExternalDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -66,7 +63,6 @@ const FunctionExternalDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.937 8.941Q15 8.48 15 8a7 7 0 1 0-6.059 6.937L11.88 12H11.5a1.5 1.5 0 0 1 0-3h3.379z"
       fill="#25324D"
@@ -95,7 +91,6 @@ export const FunctionExternal: FC<FunctionExternalProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -105,7 +100,6 @@ export const FunctionExternal: FC<FunctionExternalProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

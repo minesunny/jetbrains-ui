@@ -7,7 +7,6 @@ export type NoScalaSDKProps = SvgProps;
 const NoScalaSDKLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -44,7 +43,6 @@ const NoScalaSDKLight: React.FC<SvgProps> = ({
 const NoScalaSDKDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -83,7 +81,6 @@ export const NoScalaSDK: React.FC<NoScalaSDKProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? NoScalaSDKLight : NoScalaSDKDark;
@@ -92,7 +89,6 @@ export const NoScalaSDK: React.FC<NoScalaSDKProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type GitLabLogoProps = SvgProps;
 const GitLabLogoLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const GitLabLogoLight: React.FC<SvgProps> = ({
 const GitLabLogoDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +85,6 @@ export const GitLabLogo: React.FC<GitLabLogoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? GitLabLogoLight : GitLabLogoDark;
@@ -96,7 +93,6 @@ export const GitLabLogo: React.FC<GitLabLogoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

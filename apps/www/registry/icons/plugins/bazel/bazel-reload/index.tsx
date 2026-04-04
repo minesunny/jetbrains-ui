@@ -7,7 +7,6 @@ export type BazelReloadProps = SvgProps;
 const BazelReloadLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +55,6 @@ const BazelReloadLight: React.FC<SvgProps> = ({
 const BazelReloadDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -107,7 +105,6 @@ export const BazelReload: React.FC<BazelReloadProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? BazelReloadLight : BazelReloadDark;
@@ -116,7 +113,6 @@ export const BazelReload: React.FC<BazelReloadProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

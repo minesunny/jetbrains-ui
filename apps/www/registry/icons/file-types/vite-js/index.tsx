@@ -7,7 +7,6 @@ export type ViteJSProps = SvgProps;
 const ViteJSLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ViteJSLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="m.975 2.898 6.586 12.031a.5.5 0 0 0 .878 0l6.586-12.031a.5.5 0 0 0-.506-.736l-6.452.874a.5.5 0 0 1-.134 0l-6.452-.874a.5.5 0 0 0-.506.736"
@@ -68,7 +66,6 @@ const ViteJSLight: FC<SvgProps> = ({
 const ViteJSDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -84,7 +81,6 @@ const ViteJSDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M.968 2.927 7.56 15.148a.5.5 0 0 0 .88 0l6.593-12.221a.5.5 0 0 0-.509-.733l-6.456.886a.5.5 0 0 1-.136 0l-6.456-.886a.5.5 0 0 0-.508.733"
       fill="url(#a)"
@@ -126,7 +122,6 @@ export const ViteJS: FC<ViteJSProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ViteJSLight : ViteJSDark;
@@ -135,7 +130,6 @@ export const ViteJS: FC<ViteJSProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

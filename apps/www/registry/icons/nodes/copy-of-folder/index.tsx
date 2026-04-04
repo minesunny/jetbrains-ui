@@ -7,7 +7,6 @@ export type CopyOfFolderProps = SvgProps;
 const CopyOfFolderLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CopyOfFolderLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.75 4C1.784 4 1 4.836 1 5.867v6.266C1 13.164 1.784 14 2.75 14h8.5c.966 0 1.75-.836 1.75-1.867V8a2 2 0 0 0-2-2H8.5L6.736 4.283A1 1 0 0 0 6.038 4z"
       fill="#EBECF0"
@@ -44,7 +42,6 @@ const CopyOfFolderLight: FC<SvgProps> = ({
 const CopyOfFolderDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const CopyOfFolderDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.75 4C1.784 4 1 4.836 1 5.867v6.266C1 13.164 1.784 14 2.75 14h8.5c.966 0 1.75-.836 1.75-1.867V8a2 2 0 0 0-2-2H8.5L6.736 4.283A1 1 0 0 0 6.038 4z"
       fill="#43454A"
@@ -83,7 +79,6 @@ export const CopyOfFolder: FC<CopyOfFolderProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CopyOfFolderLight : CopyOfFolderDark;
@@ -92,7 +87,6 @@ export const CopyOfFolder: FC<CopyOfFolderProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

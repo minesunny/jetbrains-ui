@@ -7,7 +7,6 @@ export type TarantoolProps = SvgProps;
 const TarantoolLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TarantoolLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.583 9.824a2.556 2.556 0 0 1 0-3.614L9.11 4.683a2.556 2.556 0 0 1 3.614 0l1.527 1.527a2.556 2.556 0 0 1 0 3.614l-1.527 1.528a2.556 2.556 0 0 1-3.614 0z"
       fill="url(#a)"
@@ -68,7 +66,6 @@ const TarantoolLight: FC<SvgProps> = ({
 const TarantoolDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -84,7 +81,6 @@ const TarantoolDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7.583 9.824a2.556 2.556 0 0 1 0-3.614L9.11 4.683a2.556 2.556 0 0 1 3.614 0l1.527 1.527a2.556 2.556 0 0 1 0 3.614l-1.527 1.528a2.556 2.556 0 0 1-3.614 0z"
       fill="url(#a)"
@@ -131,7 +127,6 @@ export const Tarantool: FC<TarantoolProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TarantoolLight : TarantoolDark;
@@ -140,7 +135,6 @@ export const Tarantool: FC<TarantoolProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

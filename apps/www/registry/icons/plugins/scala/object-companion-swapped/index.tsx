@@ -7,7 +7,6 @@ export type ObjectCompanionSwappedProps = SvgProps;
 const ObjectCompanionSwappedLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -48,7 +47,6 @@ const ObjectCompanionSwappedLight: React.FC<SvgProps> = ({
 const ObjectCompanionSwappedDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -91,7 +89,6 @@ export const ObjectCompanionSwapped: React.FC<ObjectCompanionSwappedProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -101,7 +98,6 @@ export const ObjectCompanionSwapped: React.FC<ObjectCompanionSwappedProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type StreamProps = SvgProps;
 const StreamLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const StreamLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.124 4.17a.5.5 0 0 1 .705-.046L6.26 8l-4.43 3.876a.5.5 0 0 1-.658-.752L4.74 8 1.17 4.876a.5.5 0 0 1-.047-.705"
       fill="#6C707E"
@@ -42,7 +40,6 @@ const StreamLight: FC<SvgProps> = ({
 const StreamDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const StreamDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.124 4.17a.5.5 0 0 1 .705-.046L6.26 8l-4.43 3.876a.5.5 0 0 1-.658-.752L4.74 8 1.17 4.876a.5.5 0 0 1-.047-.705"
       fill="#CED0D6"
@@ -79,7 +75,6 @@ export const Stream: FC<StreamProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? StreamLight : StreamDark;
@@ -88,7 +83,6 @@ export const Stream: FC<StreamProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

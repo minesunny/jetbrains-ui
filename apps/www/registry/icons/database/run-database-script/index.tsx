@@ -7,7 +7,6 @@ export type RunDatabaseScriptProps = SvgProps;
 const RunDatabaseScriptLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RunDatabaseScriptLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         fillRule="evenodd"
@@ -53,7 +51,6 @@ const RunDatabaseScriptLight: FC<SvgProps> = ({
 const RunDatabaseScriptDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -69,7 +66,6 @@ const RunDatabaseScriptDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         fillRule="evenodd"
@@ -101,7 +97,6 @@ export const RunDatabaseScript: FC<RunDatabaseScriptProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -111,7 +106,6 @@ export const RunDatabaseScript: FC<RunDatabaseScriptProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type HelmRequirmentsLockProps = SvgProps;
 const HelmRequirmentsLockLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -44,7 +43,6 @@ const HelmRequirmentsLockLight: React.FC<SvgProps> = ({
 const HelmRequirmentsLockDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -83,7 +81,6 @@ export const HelmRequirmentsLock: React.FC<HelmRequirmentsLockProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -93,7 +90,6 @@ export const HelmRequirmentsLock: React.FC<HelmRequirmentsLockProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

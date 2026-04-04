@@ -7,7 +7,6 @@ export type RedisFileTypeProps = SvgProps;
 const RedisFileTypeLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RedisFileTypeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7 13.74V10c0-1.003.698-1.712 1.433-2.15-.344-.035-.664.042-1.205.236C6.362 8.397 1 9.564 1 9.564v1.415c0 .142.195.291.566.468.383.184 1.667.716 2.909 1.23A128 128 0 0 1 7 13.742"
       fill="#A42122"
@@ -66,7 +64,6 @@ const RedisFileTypeLight: FC<SvgProps> = ({
 const RedisFileTypeDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -82,7 +79,6 @@ const RedisFileTypeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M7 13.74V10c0-1.003.698-1.712 1.433-2.15-.344-.035-.664.042-1.205.236C6.362 8.397 1 9.564 1 9.564v1.415c0 .142.195.291.566.468.383.184 1.667.716 2.909 1.23A128 128 0 0 1 7 13.742"
       fill="#A42122"
@@ -127,7 +123,6 @@ export const RedisFileType: FC<RedisFileTypeProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -137,7 +132,6 @@ export const RedisFileType: FC<RedisFileTypeProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type LinuxLogoProps = SvgProps;
 const LinuxLogoLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +59,6 @@ const LinuxLogoLight: React.FC<SvgProps> = ({
 const LinuxLogoDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -115,7 +113,6 @@ export const LinuxLogo: React.FC<LinuxLogoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? LinuxLogoLight : LinuxLogoDark;
@@ -124,7 +121,6 @@ export const LinuxLogo: React.FC<LinuxLogoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

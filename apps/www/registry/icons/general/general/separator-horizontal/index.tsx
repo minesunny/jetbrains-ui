@@ -7,7 +7,6 @@ export type SeparatorHorizontalProps = SvgProps;
 const SeparatorHorizontalLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SeparatorHorizontalLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 7.5a.5.5 0 0 1 .5-.5H4v1H1.5a.5.5 0 0 1-.5-.5M6 7h3v1H6zM11 7h2.5a.5.5 0 1 1 0 1H11z"
       fill="#6C707E"
@@ -34,7 +32,6 @@ const SeparatorHorizontalLight: FC<SvgProps> = ({
 const SeparatorHorizontalDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const SeparatorHorizontalDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1 7.5a.5.5 0 0 1 .5-.5H4v1H1.5a.5.5 0 0 1-.5-.5M6 7h3v1H6zM11 7h2.5a.5.5 0 1 1 0 1H11z"
       fill="#CED0D6"
@@ -63,7 +59,6 @@ export const SeparatorHorizontal: FC<SeparatorHorizontalProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -73,7 +68,6 @@ export const SeparatorHorizontal: FC<SeparatorHorizontalProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

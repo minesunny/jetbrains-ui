@@ -7,7 +7,6 @@ export type CoffeescriptProps = SvgProps;
 const CoffeescriptLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const CoffeescriptLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6 1a2 2 0 1 0 0 4h.243c.966 0 1.823-.618 2.129-1.534l.205-.616c.17-.508.644-.85 1.18-.85H10a1 1 0 1 1 0 2 .5.5 0 0 0 0 1 2 2 0 1 0 0-4h-.243c-.966 0-1.823.618-2.129 1.534l-.205.616c-.17.508-.644.85-1.18.85H6a1 1 0 0 1 0-2 .5.5 0 0 0 0-1"
       fill="#C27D04"
@@ -45,7 +43,6 @@ const CoffeescriptLight: FC<SvgProps> = ({
 const CoffeescriptDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -61,7 +58,6 @@ const CoffeescriptDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M6 1a2 2 0 1 0 0 4h.243c.966 0 1.823-.618 2.129-1.534l.205-.616c.17-.508.644-.85 1.18-.85H10a1 1 0 1 1 0 2 .5.5 0 0 0 0 1 2 2 0 1 0 0-4h-.243c-.966 0-1.823.618-2.129 1.534l-.205.616c-.17.508-.644.85-1.18.85H6a1 1 0 0 1 0-2 .5.5 0 0 0 0-1"
       fill="#D6AE58"
@@ -85,7 +81,6 @@ export const Coffeescript: FC<CoffeescriptProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? CoffeescriptLight : CoffeescriptDark;
@@ -94,7 +89,6 @@ export const Coffeescript: FC<CoffeescriptProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

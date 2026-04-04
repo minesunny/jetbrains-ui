@@ -7,7 +7,6 @@ export type FinalMarkProps = SvgProps;
 const FinalMarkLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const FinalMarkLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.502 1.502c-1.139 1.138-2.139 2.861-1 4s2.861.138 4-1c1.138-1.139 2.138-2.862 1-4-1.139-1.139-2.862-.139-4 1"
       fill="#EBECF0"
@@ -44,7 +42,6 @@ const FinalMarkLight: FC<SvgProps> = ({
 const FinalMarkDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -60,7 +57,6 @@ const FinalMarkDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M1.502 1.502c-1.139 1.138-2.139 2.861-1 4s2.861.138 4-1c1.138-1.139 2.138-2.862 1-4-1.139-1.139-2.862-.139-4 1"
       fill="#43454A"
@@ -83,7 +79,6 @@ export const FinalMark: FC<FinalMarkProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? FinalMarkLight : FinalMarkDark;
@@ -92,7 +87,6 @@ export const FinalMark: FC<FinalMarkProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

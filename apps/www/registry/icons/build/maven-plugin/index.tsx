@@ -7,7 +7,6 @@ export type MavenPluginProps = SvgProps;
 const MavenPluginLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MavenPluginLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.796 11c1.137 0 1.334.958 1.137 1.82l-.634 2.824a.463.463 0 0 1-.548.342.44.44 0 0 1-.358-.523l.591-2.642c.315-1.368-1.469-1.2-2.192-.184l-.682 3.01a.463.463 0 0 1-.58.334.44.44 0 0 1-.336-.518l.594-2.644c.144-.618-.152-.922-.582-.975-.512-.055-1.213.247-1.604.796l-.686 3.01a.463.463 0 0 1-.55.34.44.44 0 0 1-.356-.523l.91-4.026c.053-.239.299-.391.55-.34.283.057.4.318.346.569.523-.413 1.133-.705 1.83-.667.681.014 1.014.38 1.123.86.627-.538 1.158-.862 2.027-.862"
       fill="#3574F0"
@@ -48,7 +46,6 @@ const MavenPluginLight: FC<SvgProps> = ({
 const MavenPluginDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -64,7 +61,6 @@ const MavenPluginDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M14.796 11c1.137 0 1.334.958 1.137 1.82l-.634 2.824a.463.463 0 0 1-.548.342.44.44 0 0 1-.358-.523l.591-2.642c.315-1.368-1.469-1.2-2.192-.184l-.682 3.01a.463.463 0 0 1-.58.334.44.44 0 0 1-.336-.518l.594-2.644c.144-.618-.152-.922-.582-.975-.512-.055-1.213.247-1.604.796l-.686 3.01a.463.463 0 0 1-.55.34.44.44 0 0 1-.356-.523l.91-4.026c.053-.239.299-.391.55-.34.283.057.4.318.346.569.523-.413 1.133-.705 1.83-.667.681.014 1.014.38 1.123.86.627-.538 1.158-.862 2.027-.862"
@@ -98,7 +94,6 @@ export const MavenPlugin: FC<MavenPluginProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? MavenPluginLight : MavenPluginDark;
@@ -107,7 +102,6 @@ export const MavenPlugin: FC<MavenPluginProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

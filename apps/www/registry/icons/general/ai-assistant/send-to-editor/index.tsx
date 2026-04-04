@@ -7,7 +7,6 @@ export type SendToEditorProps = SvgProps;
 const SendToEditorLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const SendToEditorLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M2.5 3a.5.5 0 0 0 0 1h10a.5.5 0 0 0 0-1zM2.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM2 9.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M2.5 12a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"
       fill="#6C707E"
@@ -38,7 +36,6 @@ const SendToEditorLight: FC<SvgProps> = ({
 const SendToEditorDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const SendToEditorDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M2.5 3a.5.5 0 0 0 0 1h10a.5.5 0 0 0 0-1zM2.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM2 9.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M2.5 12a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"
@@ -78,7 +74,6 @@ export const SendToEditor: FC<SendToEditorProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? SendToEditorLight : SendToEditorDark;
@@ -87,7 +82,6 @@ export const SendToEditor: FC<SendToEditorProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

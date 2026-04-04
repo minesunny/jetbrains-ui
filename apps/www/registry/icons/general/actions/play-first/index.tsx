@@ -7,7 +7,6 @@ export type PlayFirstProps = SvgProps;
 const PlayFirstLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PlayFirstLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.5 12.5v-9M12 12.5 7.5 8 12 3.5"
       stroke="#6C707E"
@@ -35,7 +33,6 @@ const PlayFirstLight: FC<SvgProps> = ({
 const PlayFirstDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const PlayFirstDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.5 12.5v-9M12 12.5 7.5 8 12 3.5"
       stroke="#CED0D6"
@@ -65,7 +61,6 @@ export const PlayFirst: FC<PlayFirstProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PlayFirstLight : PlayFirstDark;
@@ -74,7 +69,6 @@ export const PlayFirst: FC<PlayFirstProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

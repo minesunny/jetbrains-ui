@@ -7,7 +7,6 @@ export type TestGroupProps = SvgProps;
 const TestGroupLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TestGroupLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.472 16q-.412 0-.748-.176a1.4 1.4 0 0 1-.528-.495 1.3 1.3 0 0 1-.193-.704l-.005-3.383h-.99l.005-.874h.616q.21 0 .336-.132a.45.45 0 0 0 .132-.336v-.907h.902v1.375h1.358l-.005.874h-1.359L14 14.537q0 .254.165.423.171.165.423.165h.765V16z"
       fill="#6C707E"
@@ -42,7 +40,6 @@ const TestGroupLight: FC<SvgProps> = ({
 const TestGroupDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const TestGroupDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.472 16q-.412 0-.748-.176a1.4 1.4 0 0 1-.528-.495 1.3 1.3 0 0 1-.193-.704l-.005-3.383h-.99l.005-.874h.616q.21 0 .336-.132a.45.45 0 0 0 .132-.336v-.907h.902v1.375h1.358l-.005.874h-1.359L14 14.537q0 .254.165.423.171.165.423.165h.765V16z"
       fill="#CED0D6"
@@ -79,7 +75,6 @@ export const TestGroup: FC<TestGroupProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TestGroupLight : TestGroupDark;
@@ -88,7 +83,6 @@ export const TestGroup: FC<TestGroupProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

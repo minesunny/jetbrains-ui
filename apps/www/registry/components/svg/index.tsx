@@ -28,7 +28,7 @@ function toIconSize(size: IconSize | number = 'md'): IconSize {
   return 'xl';
 }
 
-export type SVGProps = Pick<SvgProps, 'className' | 'title' | 'aria-label'> & {
+export type SVGProps = Pick<SvgProps, 'className' | 'aria-label'> & {
   name: string;
   size?: IconSize | number;
 };
@@ -37,7 +37,6 @@ export function SVG({
   name,
   size = 'md',
   className,
-  title,
   'aria-label': ariaLabel,
 }: SVGProps) {
   const { resolvedTheme } = useTheme();
@@ -78,7 +77,6 @@ export function SVG({
             size={iconSize}
             mode={mode}
             className={className}
-            title={title}
             aria-label={ariaLabel}
           />
         </span>

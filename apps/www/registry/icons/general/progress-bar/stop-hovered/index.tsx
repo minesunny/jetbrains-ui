@@ -7,7 +7,6 @@ export type StopHoveredProps = SvgProps;
 const StopHoveredLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const StopHoveredLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle opacity=".2" cx="8" cy="8" r="8" fill="#313547" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const StopHoveredLight: FC<SvgProps> = ({
 const StopHoveredDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const StopHoveredDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle opacity=".19" cx="8" cy="8" r="8" fill="#F0F1F2" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const StopHovered: FC<StopHoveredProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? StopHoveredLight : StopHoveredDark;
@@ -78,7 +73,6 @@ export const StopHovered: FC<StopHoveredProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

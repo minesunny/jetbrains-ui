@@ -7,7 +7,6 @@ export type WarningDialogProps = SvgProps;
 const WarningDialogLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const WarningDialogLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.72 2.742a1.475 1.475 0 0 1 2.56 0L26.8 22.774c.569.99-.142 2.226-1.28 2.226H2.48c-1.138 0-1.849-1.237-1.28-2.226z"
       fill="#FFAF0F"
@@ -38,7 +36,6 @@ const WarningDialogLight: FC<SvgProps> = ({
 const WarningDialogDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -54,7 +51,6 @@ const WarningDialogDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M12.72 2.742a1.475 1.475 0 0 1 2.56 0L26.8 22.774c.569.99-.142 2.226-1.28 2.226H2.48c-1.138 0-1.849-1.237-1.28-2.226z"
@@ -78,7 +74,6 @@ export const WarningDialog: FC<WarningDialogProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -88,7 +83,6 @@ export const WarningDialog: FC<WarningDialogProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

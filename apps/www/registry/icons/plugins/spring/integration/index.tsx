@@ -7,7 +7,6 @@ export type IntegrationProps = SvgProps;
 const IntegrationLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +51,6 @@ const IntegrationLight: React.FC<SvgProps> = ({
 const IntegrationDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -99,7 +97,6 @@ export const Integration: React.FC<IntegrationProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? IntegrationLight : IntegrationDark;
@@ -108,7 +105,6 @@ export const Integration: React.FC<IntegrationProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

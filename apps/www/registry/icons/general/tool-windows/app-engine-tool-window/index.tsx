@@ -7,7 +7,6 @@ export type AppEngineToolWindowProps = SvgProps;
 const AppEngineToolWindowLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AppEngineToolWindowLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M8.905 4.618a3.5 3.5 0 0 0-1.81 0l.31-1.24A.5.5 0 0 1 7.89 3h.22a.5.5 0 0 1 .485.379zM11.5 8H13v-.61a.5.5 0 0 0-.379-.485l-1.436-.359c.202.443.315.935.315 1.454M4.5 8c0-.519.113-1.011.315-1.454l-1.436.36A.5.5 0 0 0 3 7.39V8zM9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
       fill="#6C707E"
@@ -46,7 +44,6 @@ const AppEngineToolWindowLight: FC<SvgProps> = ({
 const AppEngineToolWindowDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -62,7 +59,6 @@ const AppEngineToolWindowDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)" fill="#CED0D6">
       <path d="M8.905 4.618a3.5 3.5 0 0 0-1.81 0l.31-1.24A.5.5 0 0 1 7.89 3h.22a.5.5 0 0 1 .485.379zM11.5 8H13v-.61a.5.5 0 0 0-.379-.485l-1.436-.359c.202.443.315.935.315 1.454M4.5 8c0-.519.113-1.011.315-1.454l-1.436.36A.5.5 0 0 0 3 7.39V8zM9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
       <path
@@ -89,7 +85,6 @@ export const AppEngineToolWindow: FC<AppEngineToolWindowProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -99,7 +94,6 @@ export const AppEngineToolWindow: FC<AppEngineToolWindowProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

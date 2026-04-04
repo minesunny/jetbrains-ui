@@ -7,7 +7,6 @@ export type PreserveCaseProps = SvgProps;
 const PreserveCaseLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PreserveCaseLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3.009 6.3h1.204L7.139 14H5.984l-.704-1.958H2.018L1.365 14H.182zm1.941 4.824L3.729 7.762l-.127-.473-.12.473-1.156 3.36zM11.509 6.3h1.204l2.926 7.7h-1.155l-.704-1.958h-3.261L9.864 14H8.681zm1.941 4.824-1.221-3.361-.127-.473-.12.473-1.155 3.36z"
       fill="#6C707E"
@@ -35,7 +33,6 @@ const PreserveCaseLight: FC<SvgProps> = ({
 const PreserveCaseDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -51,7 +48,6 @@ const PreserveCaseDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3.009 6.3h1.204L7.139 14H5.984l-.704-1.958H2.018L1.365 14H.182zm1.941 4.824L3.729 7.762l-.127-.473-.12.473-1.156 3.36zM11.509 6.3h1.204l2.926 7.7h-1.155l-.704-1.958h-3.261L9.864 14H8.681zm1.941 4.824-1.221-3.361-.127-.473-.12.473-1.155 3.36z"
       fill="#CED0D6"
@@ -65,7 +61,6 @@ export const PreserveCase: FC<PreserveCaseProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PreserveCaseLight : PreserveCaseDark;
@@ -74,7 +69,6 @@ export const PreserveCase: FC<PreserveCaseProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

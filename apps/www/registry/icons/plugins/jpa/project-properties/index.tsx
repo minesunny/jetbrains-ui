@@ -7,7 +7,6 @@ export type ProjectPropertiesProps = SvgProps;
 const ProjectPropertiesLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +54,6 @@ const ProjectPropertiesLight: React.FC<SvgProps> = ({
 const ProjectPropertiesDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -112,7 +110,6 @@ export const ProjectProperties: React.FC<ProjectPropertiesProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -122,7 +119,6 @@ export const ProjectProperties: React.FC<ProjectPropertiesProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

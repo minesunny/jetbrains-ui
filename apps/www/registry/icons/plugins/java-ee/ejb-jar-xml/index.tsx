@@ -7,7 +7,6 @@ export type EjbJarXmlProps = SvgProps;
 const EjbJarXmlLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const EjbJarXmlLight: React.FC<SvgProps> = ({
 const EjbJarXmlDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +85,6 @@ export const EjbJarXml: React.FC<EjbJarXmlProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? EjbJarXmlLight : EjbJarXmlDark;
@@ -96,7 +93,6 @@ export const EjbJarXml: React.FC<EjbJarXmlProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

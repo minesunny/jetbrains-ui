@@ -7,7 +7,6 @@ export type BazelTargetProps = SvgProps;
 const BazelTargetLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -55,7 +54,6 @@ const BazelTargetLight: React.FC<SvgProps> = ({
 const BazelTargetDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -105,7 +103,6 @@ export const BazelTarget: React.FC<BazelTargetProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? BazelTargetLight : BazelTargetDark;
@@ -114,7 +111,6 @@ export const BazelTarget: React.FC<BazelTargetProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

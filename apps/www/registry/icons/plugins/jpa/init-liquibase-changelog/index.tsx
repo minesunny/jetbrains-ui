@@ -7,7 +7,6 @@ export type InitLiquibaseChangelogProps = SvgProps;
 const InitLiquibaseChangelogLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -42,7 +41,6 @@ const InitLiquibaseChangelogLight: React.FC<SvgProps> = ({
 const InitLiquibaseChangelogDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -79,7 +77,6 @@ export const InitLiquibaseChangelog: React.FC<InitLiquibaseChangelogProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -89,7 +86,6 @@ export const InitLiquibaseChangelog: React.FC<InitLiquibaseChangelogProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

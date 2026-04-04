@@ -7,7 +7,6 @@ export type RecProps = SvgProps;
 const RecLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const RecLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6" fill="#E55765" />
     <path
       fillRule="evenodd"
@@ -37,7 +35,6 @@ const RecLight: FC<SvgProps> = ({
 const RecDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -53,7 +50,6 @@ const RecDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6" fill="#DB5C5C" />
     <path
       fillRule="evenodd"
@@ -69,7 +65,6 @@ export const Rec: FC<RecProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? RecLight : RecDark;
@@ -78,7 +73,6 @@ export const Rec: FC<RecProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

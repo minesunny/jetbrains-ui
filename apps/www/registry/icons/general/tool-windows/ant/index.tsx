@@ -7,7 +7,6 @@ export type AntProps = SvgProps;
 const AntLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const AntLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.4 14.4v-3.6799999999999997l-1.994-.841M3.598 14.4v-3.6799999999999997l1.994-.841M12.4 4.4v2.4L10 8.4M3.6 4.4v2.4L6 8.4"
       stroke="#6C707E"
@@ -46,7 +44,6 @@ const AntLight: FC<SvgProps> = ({
 const AntDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -62,7 +59,6 @@ const AntDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M12.4 14.4v-3.6799999999999997l-1.994-.841M3.598 14.4v-3.6799999999999997l1.994-.841M12.4 4.4v2.4L10 8.4M3.6 4.4v2.4L6 8.4"
       stroke="#CED0D6"
@@ -87,7 +83,6 @@ export const Ant: FC<AntProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? AntLight : AntDark;
@@ -96,7 +91,6 @@ export const Ant: FC<AntProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

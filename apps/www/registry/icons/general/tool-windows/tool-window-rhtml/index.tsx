@@ -7,7 +7,6 @@ export type ToolWindowRHtmlProps = SvgProps;
 const ToolWindowRHtmlLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ToolWindowRHtmlLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.558 10.437C15.208 9.7 15.71 8.871 16 8c-1-3-4.5-5.5-8-5.5S1 5 0 8c.86 2.582 3.573 4.794 6.544 5.36a1.5 1.5 0 0 1 .099-1 8.2 8.2 0 0 1-3.01-1.306C2.446 10.227 1.534 9.142 1.067 8c.467-1.142 1.379-2.227 2.568-3.054C4.928 4.046 6.482 3.5 8 3.5s3.072.545 4.366 1.446c1.189.827 2.101 1.912 2.568 3.054a6.3 6.3 0 0 1-1.084 1.728z"
       fill="#6C707E"
@@ -40,7 +38,6 @@ const ToolWindowRHtmlLight: FC<SvgProps> = ({
 const ToolWindowRHtmlDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -56,7 +53,6 @@ const ToolWindowRHtmlDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M14.558 10.437C15.208 9.7 15.71 8.871 16 8c-1-3-4.5-5.5-8-5.5S1 5 0 8c.86 2.582 3.573 4.794 6.544 5.36a1.5 1.5 0 0 1 .099-1 8.2 8.2 0 0 1-3.01-1.306C2.446 10.227 1.534 9.142 1.067 8c.467-1.142 1.379-2.227 2.568-3.054C4.928 4.046 6.482 3.5 8 3.5s3.072.545 4.366 1.446c1.189.827 2.101 1.912 2.568 3.054a6.3 6.3 0 0 1-1.084 1.728z"
       fill="#CED0D6"
@@ -75,7 +71,6 @@ export const ToolWindowRHtml: FC<ToolWindowRHtmlProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -85,7 +80,6 @@ export const ToolWindowRHtml: FC<ToolWindowRHtmlProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ApacheIgniteProps = SvgProps;
 const ApacheIgniteLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ApacheIgniteLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.583 12.09s1.982-1.941.734-4.104c-.434-.753-.882-1.229-1.324-1.698-.52-.552-1.031-1.096-1.503-2.072C8.672 2.525 9.573 1 9.573 1S6.288 2.192 6.385 4.52C6.46 6.332 7.952 7.44 9.244 8.4c.41.306.8.596 1.12.89 1.219 1.122 1.219 2.8 1.219 2.8"
       fill="#ED1C24"
@@ -42,7 +40,6 @@ const ApacheIgniteLight: FC<SvgProps> = ({
 const ApacheIgniteDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -58,7 +55,6 @@ const ApacheIgniteDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M11.583 12.09s1.982-1.941.734-4.104c-.434-.753-.882-1.229-1.324-1.698-.52-.552-1.031-1.096-1.503-2.072C8.672 2.525 9.573 1 9.573 1S6.288 2.192 6.385 4.52C6.46 6.332 7.952 7.44 9.244 8.4c.41.306.8.596 1.12.89 1.219 1.122 1.219 2.8 1.219 2.8"
       fill="#ED1C24"
@@ -79,7 +75,6 @@ export const ApacheIgnite: FC<ApacheIgniteProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? ApacheIgniteLight : ApacheIgniteDark;
@@ -88,7 +83,6 @@ export const ApacheIgnite: FC<ApacheIgniteProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

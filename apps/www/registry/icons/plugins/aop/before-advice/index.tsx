@@ -7,7 +7,6 @@ export type BeforeAdviceProps = SvgProps;
 const BeforeAdviceLight: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -46,7 +45,6 @@ const BeforeAdviceLight: React.FC<SvgProps> = ({
 const BeforeAdviceDark: React.FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -87,7 +85,6 @@ export const BeforeAdvice: React.FC<BeforeAdviceProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? BeforeAdviceLight : BeforeAdviceDark;
@@ -96,7 +93,6 @@ export const BeforeAdvice: React.FC<BeforeAdviceProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type HeaderLevelDownProps = SvgProps;
 const HeaderLevelDownLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const HeaderLevelDownLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 4.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0V8h4v3.5a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-1 0V7H3zM13 4.5a.5.5 0 0 0-1 0v5.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L13 10.293z"
       fill="#6C707E"
@@ -34,7 +32,6 @@ const HeaderLevelDownLight: FC<SvgProps> = ({
 const HeaderLevelDownDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -50,7 +47,6 @@ const HeaderLevelDownDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M3 4.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0V8h4v3.5a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-1 0V7H3zM13 4.5a.5.5 0 0 0-1 0v5.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L13 10.293z"
       fill="#CED0D6"
@@ -63,7 +59,6 @@ export const HeaderLevelDown: FC<HeaderLevelDownProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -73,7 +68,6 @@ export const HeaderLevelDown: FC<HeaderLevelDownProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

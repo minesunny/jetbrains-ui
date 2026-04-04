@@ -7,7 +7,6 @@ export type MaximizeSmallProps = SvgProps;
 const MaximizeSmallLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const MaximizeSmallLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path stroke="#A8ADBD" d="M4.5 4.5H11.5V11.5H4.5z" />
   </svg>
 );
@@ -31,7 +29,6 @@ const MaximizeSmallLight: FC<SvgProps> = ({
 const MaximizeSmallDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -47,7 +44,6 @@ const MaximizeSmallDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path stroke="#CED0D6" d="M4.5 4.5H11.5V11.5H4.5z" />
   </svg>
 );
@@ -57,7 +53,6 @@ export const MaximizeSmall: FC<MaximizeSmallProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -67,7 +62,6 @@ export const MaximizeSmall: FC<MaximizeSmallProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

@@ -7,7 +7,6 @@ export type ApachePhoenixProps = SvgProps;
 const ApachePhoenixLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ApachePhoenixLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.454 4.439s-.7.039-1.059.619c.438-.308 1.059-.205 1.059-.205s.414.438.534.818c.346 1.105-1.561 2.501-1.647 4.387C3.22 12.771 5.611 15 8.281 15s4.382-2.597 4.382-4.716c0-2.483-1.134-3.778-1.212-5.95-.05-1.371.477-2.425 1.012-3.334-1.738.624-2.4 2.49-2.474 3.078-.342 2.68 1.462 4.254.935 7.061a2.65 2.65 0 0 1-2.574 2.152c-1.777 0-3.203-1.553-3.203-3.233S6.27 7.28 6.762 5.094c.571 0 .636-.284.636-.284s-.16 0-.235-.09c.366-.164.29-.5.29-.5s-.394.127-.913.042c0 0-.538-.485-1.194-.429-.613.053-.892.606-.892.606"
       fill="url(#a)"
@@ -98,7 +96,6 @@ const ApachePhoenixLight: FC<SvgProps> = ({
 const ApachePhoenixDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -114,7 +111,6 @@ const ApachePhoenixDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.454 4.439s-.7.039-1.059.619c.438-.308 1.059-.205 1.059-.205s.414.438.534.818c.346 1.105-1.561 2.501-1.647 4.387C3.22 12.771 5.611 15 8.281 15s4.382-2.597 4.382-4.716c0-2.483-1.134-3.778-1.212-5.95-.05-1.371.477-2.425 1.012-3.334-1.738.624-2.4 2.49-2.474 3.078-.342 2.68 1.462 4.254.935 7.061a2.65 2.65 0 0 1-2.574 2.152c-1.777 0-3.203-1.553-3.203-3.233S6.27 7.28 6.762 5.094c.571 0 .636-.284.636-.284s-.16 0-.235-.09c.366-.164.29-.5.29-.5s-.394.127-.913.042c0 0-.538-.485-1.194-.429-.613.053-.892.606-.892.606"
       fill="url(#a)"
@@ -191,7 +187,6 @@ export const ApachePhoenix: FC<ApachePhoenixProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -201,7 +196,6 @@ export const ApachePhoenix: FC<ApachePhoenixProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

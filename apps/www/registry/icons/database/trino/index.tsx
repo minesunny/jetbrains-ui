@@ -7,7 +7,6 @@ export type TrinoProps = SvgProps;
 const TrinoLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const TrinoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M6.256 14.184c.235-.157-.382-.098-.433-.203a4 4 0 0 1-.723-.13c-.443-.113-1.493-.823-1.604-1.49-.11-.665 0-1.959.47-2.717.299-.465.684-.869 1.134-1.19 0 0-.914-2.174-.994-3.817C4.026 2.995 4.145.054 5.231 0s.894 2.685.722 4.466c-.11 1.183-.074 3.54 0 4.726 1.941-.566 2.9-.092 2.9-.092s.031-1.532.444-1.444l-.65-.217c.155-.805.558-2.476 1.39-3.632 1.133-1.573 2.306-3.192 3.075-2.733.768.458-.208 2.098-.887 2.951s-1.857 2.134-2.25 2.818a12 12 0 0 0-.678 1.412c.7.36 1.271.924 1.64 1.62.53 1.096.581 2.456.294 3.03a2.08 2.08 0 0 1-1.437 1.025c-.338.026-1.77.38-1.77.38z"
@@ -63,7 +61,6 @@ const TrinoLight: FC<SvgProps> = ({
 const TrinoDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -79,7 +76,6 @@ const TrinoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <path
         d="M6.256 14.184c.235-.157-.382-.098-.433-.203a4 4 0 0 1-.723-.13c-.443-.113-1.493-.823-1.604-1.49-.11-.665 0-1.959.47-2.717.299-.465.684-.869 1.134-1.19 0 0-.914-2.174-.994-3.817C4.026 2.995 4.145.054 5.231 0s.894 2.685.722 4.466A23 23 0 0 0 5.9 8.024 5 5 0 0 1 7.31 7.79q.635-.014 1.256.118s.338-2.527 1.47-4.1c1.133-1.573 2.306-3.192 3.075-2.733.768.458-.208 2.098-.887 2.951s-1.857 2.134-2.25 2.818a12 12 0 0 0-.678 1.412c.7.36 1.271.924 1.64 1.62.53 1.096.581 2.456.294 3.03a2.08 2.08 0 0 1-1.437 1.025c-.338.026-1.77.38-1.77.38z"
@@ -140,7 +136,6 @@ export const Trino: FC<TrinoProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? TrinoLight : TrinoDark;
@@ -149,7 +144,6 @@ export const Trino: FC<TrinoProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

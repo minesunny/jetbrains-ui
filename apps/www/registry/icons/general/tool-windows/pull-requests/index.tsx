@@ -7,7 +7,6 @@ export type PullRequestsProps = SvgProps;
 const PullRequestsLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const PullRequestsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="12.25" cy="12" r="2" stroke="#6C707E" />
     <path d="M12.25 10V5.6a1.6 1.6 0 0 0-1.6-1.6H8" stroke="#6C707E" />
     <path d="m9.75 6-2-2 2-2" stroke="#6C707E" strokeLinecap="round" />
@@ -36,7 +34,6 @@ const PullRequestsLight: FC<SvgProps> = ({
 const PullRequestsDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -52,7 +49,6 @@ const PullRequestsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <circle cx="12.25" cy="12" r="2" stroke="#CED0D6" />
     <path d="M12.25 10V5.6a1.6 1.6 0 0 0-1.6-1.6H8" stroke="#CED0D6" />
     <path d="m9.75 6-2-2 2-2" stroke="#CED0D6" strokeLinecap="round" />
@@ -67,7 +63,6 @@ export const PullRequests: FC<PullRequestsProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent = mode === 'light' ? PullRequestsLight : PullRequestsDark;
@@ -76,7 +71,6 @@ export const PullRequests: FC<PullRequestsProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

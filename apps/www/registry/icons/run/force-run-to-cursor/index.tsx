@@ -7,7 +7,6 @@ export type ForceRunToCursorProps = SvgProps;
 const ForceRunToCursorLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const ForceRunToCursorLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="13" y="14" width="2" height="1" rx=".5" fill="#6C707E" />
     <rect x="10" y="14" width="2" height="1" rx=".5" fill="#6C707E" />
     <rect x="13" y="7" width="2" height="1" rx=".5" fill="#6C707E" />
@@ -46,7 +44,6 @@ const ForceRunToCursorLight: FC<SvgProps> = ({
 const ForceRunToCursorDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -62,7 +59,6 @@ const ForceRunToCursorDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="13" y="14" width="2" height="1" rx=".5" fill="#CED0D6" />
     <rect x="10" y="14" width="2" height="1" rx=".5" fill="#CED0D6" />
     <rect x="13" y="7" width="2" height="1" rx=".5" fill="#CED0D6" />
@@ -87,7 +83,6 @@ export const ForceRunToCursor: FC<ForceRunToCursorProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -97,7 +92,6 @@ export const ForceRunToCursor: FC<ForceRunToCursorProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

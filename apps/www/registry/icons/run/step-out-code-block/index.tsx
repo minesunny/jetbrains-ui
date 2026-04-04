@@ -7,7 +7,6 @@ export type StepOutCodeBlockProps = SvgProps;
 const StepOutCodeBlockLight: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -23,7 +22,6 @@ const StepOutCodeBlockLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <rect x="2" y="13" width="5" height="1" rx=".5" fill="#6C707E" />
     <path
       fillRule="evenodd"
@@ -41,7 +39,6 @@ const StepOutCodeBlockLight: FC<SvgProps> = ({
 const StepOutCodeBlockDark: FC<SvgProps> = ({
   size,
   className,
-  title,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
@@ -57,7 +54,6 @@ const StepOutCodeBlockDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    {title ? <title>{title}</title> : null}
     <g clipPath="url(#a)">
       <rect x="2" y="13" width="5" height="1" rx=".5" fill="#CED0D6" />
       <path
@@ -84,7 +80,6 @@ export const StepOutCodeBlock: FC<StepOutCodeBlockProps> = ({
   mode = 'light',
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
 }) => {
   const SvgComponent =
@@ -94,7 +89,6 @@ export const StepOutCodeBlock: FC<StepOutCodeBlockProps> = ({
     <SvgComponent
       size={sizeMap[size]}
       className={cn('inline-block flex-shrink-0', className)}
-      title={title}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}
