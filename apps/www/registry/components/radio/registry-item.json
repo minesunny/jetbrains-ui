@@ -11,7 +11,7 @@
     {
       "path": "registry/components/radio/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/radio/index.tsx"
+      "target": "components/jetbrains-ui/radio.tsx"
     }
   ],
   "meta": {

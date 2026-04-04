@@ -11,7 +11,7 @@
     {
       "path": "registry/components/checkbox/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/checkbox/index.tsx"
+      "target": "components/jetbrains-ui/checkbox.tsx"
     }
   ],
   "meta": {
