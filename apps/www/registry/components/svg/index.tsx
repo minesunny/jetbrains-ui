@@ -4,7 +4,7 @@ import * as React from 'react';
 import { useTheme } from 'next-themes';
 
 import {
-  ICON_REGISTRY,
+  SVG_REGISTRY,
   type IconComponentProps,
   type IconSize,
 } from './registry';
@@ -48,7 +48,7 @@ export function SVG({
 }: SVGProps) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
-  const loader = ICON_REGISTRY[name];
+  const loader = SVG_REGISTRY[name];
   const LazyIcon = React.useMemo(
     () => (loader ? React.lazy(loader) : null),
     [loader],

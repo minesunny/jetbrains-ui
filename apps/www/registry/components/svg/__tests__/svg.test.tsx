@@ -39,7 +39,7 @@ vi.mock('../registry', async () => {
   }
 
   return {
-    ICON_REGISTRY: {
+    SVG_REGISTRY: {
       search: () => Promise.resolve({ default: MockIcon }),
     },
   };
