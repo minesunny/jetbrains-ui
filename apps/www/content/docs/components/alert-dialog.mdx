@@ -1,0 +1,114 @@
+---
+title: Alert Dialog
+description: Alert Dialog component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-04-03
+---
+
+<ComponentPreview name="demo-alert-dialog" />
+
+## Overview
+
+Alert Dialog is a modal dialog that interrupts the user with important content
+and expects a response. It is built on Radix UI AlertDialog with JetBrains UI styling.
+
+### Design Highlights
+
+- **Modal overlay**: Semi-transparent backdrop that blocks interaction with the rest of the page.
+- **Action & Cancel buttons**: Built-in primary and secondary styled buttons.
+- **Focus trap**: Keyboard focus is trapped within the dialog when open.
+- **Accessible by default**: Full keyboard navigation, ARIA roles, and screen reader support.
+- **Dark mode**: Full support for light and dark themes.
+
+## Installation
+
+<ComponentInstallation name="alert-dialog" />
+
+## Usage
+
+```tsx
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '@/registry/components/alert-dialog';
+```
+
+### Default
+
+```tsx
+<AlertDialog>
+  <AlertDialogTrigger>Open</AlertDialogTrigger>
+  <AlertDialogContent>
+    <AlertDialogHeader>
+      <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+      <AlertDialogDescription>
+        This action cannot be undone.
+      </AlertDialogDescription>
+    </AlertDialogHeader>
+    <AlertDialogFooter>
+      <AlertDialogCancel>Cancel</AlertDialogCancel>
+      <AlertDialogAction>Confirm</AlertDialogAction>
+    </AlertDialogFooter>
+  </AlertDialogContent>
+</AlertDialog>
+```
+
+### Destructive
+
+```tsx
+<AlertDialogAction className="border-transparent bg-red-4 text-gray-14 hover:bg-red-3 active:bg-red-2 focus-visible:ring-red-4 dark:bg-red-7 dark:hover:bg-red-6 dark:active:bg-red-5 dark:focus-visible:ring-red-7">
+  Delete
+</AlertDialogAction>
+```
+
+## API Reference
+
+### AlertDialog
+
+Root component — wraps Radix AlertDialog Root.
+
+### AlertDialogTrigger
+
+The button that opens the dialog. Supports `asChild`.
+
+### AlertDialogContent
+
+The modal panel. Includes overlay, border, shadow, and entry/exit animations.
+
+### AlertDialogHeader
+
+Container for title and description.
+
+### AlertDialogTitle
+
+Dialog heading text.
+
+### AlertDialogDescription
+
+Descriptive text explaining the consequence of the action.
+
+### AlertDialogFooter
+
+Container for action buttons, aligned to end.
+
+### AlertDialogAction
+
+The confirmation button. Closes the dialog on click.
+
+### AlertDialogCancel
+
+The cancellation button. Closes the dialog on click.
+
+## Credits
+
+- Design inspired by [JetBrains UI Kit](https://jetbrains.design)
+- Built on [Radix UI AlertDialog](https://radix-ui.com/primitives/docs/components/alert-dialog)
