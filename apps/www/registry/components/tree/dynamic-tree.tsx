@@ -5,7 +5,7 @@ import * as React from 'react';
 import { type ItemInstance } from '@headless-tree/core';
 import { SVG } from '@/registry/components/svg';
 
-export { asyncDataLoaderFeature } from './feature';
+export { asyncDataLoaderFeature } from './dynamic-tree-feature';
 
 export interface DynamicTreeItemData {
   label?: string;

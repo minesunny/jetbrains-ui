@@ -14,7 +14,7 @@ import {
   type DynamicTreeItemComponent,
   type DynamicTreeItemProps,
   type DynamicTreeItemData,
-} from '../index';
+} from '@/registry/components/tree/dynamic-tree';
 
 type TreeFixture = {
   items: Record<string, DynamicTreeItemData>;

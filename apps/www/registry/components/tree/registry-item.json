@@ -25,14 +25,14 @@
       "target": "components/jetbrains-ui/tree/tree.tsx"
     },
     {
-      "path": "registry/components/tree/dynamic-tree/index.tsx",
+      "path": "registry/components/tree/dynamic-tree.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/tree/dynamic-tree/index.tsx"
+      "target": "components/jetbrains-ui/tree/dynamic-tree.tsx"
     },
     {
-      "path": "registry/components/tree/dynamic-tree/feature.ts",
+      "path": "registry/components/tree/dynamic-tree-feature.ts",
       "type": "registry:lib",
-      "target": "components/jetbrains-ui/tree/dynamic-tree/feature.ts"
+      "target": "components/jetbrains-ui/tree/dynamic-tree-feature.ts"
     }
   ],
   "meta": {
