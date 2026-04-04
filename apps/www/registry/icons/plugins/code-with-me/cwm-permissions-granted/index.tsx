@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type CwmPermissionsGrantedProps = IconProps;
+export type CwmPermissionsGrantedProps = SvgProps;
 
 const CwmPermissionsGrantedLight: React.FC<SvgProps> = ({
   size,

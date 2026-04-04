@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type VCPKGProps = IconProps;
+export type VCPKGProps = SvgProps;
 
 const VCPKGLight: React.FC<SvgProps> = ({
   size,

@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type PrecedenceGroupProps = IconProps;
+export type PrecedenceGroupProps = SvgProps;
 
 const PrecedenceGroupLight: React.FC<SvgProps> = ({
   size,

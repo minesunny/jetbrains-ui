@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type DataViewProps = IconProps;
+export type DataViewProps = SvgProps;
 
 const DataViewLight: React.FC<SvgProps> = ({
   size,

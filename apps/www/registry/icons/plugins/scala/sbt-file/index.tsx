@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type SbtFileProps = IconProps;
+export type SbtFileProps = SvgProps;
 
 const SbtFileLight: React.FC<SvgProps> = ({
   size,

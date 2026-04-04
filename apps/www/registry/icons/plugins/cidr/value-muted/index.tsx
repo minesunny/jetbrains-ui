@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type ValueMutedProps = IconProps;
+export type ValueMutedProps = SvgProps;
 
 const ValueMutedLight: React.FC<SvgProps> = ({
   size,

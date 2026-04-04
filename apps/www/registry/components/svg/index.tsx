@@ -4,7 +4,7 @@ import * as React from 'react';
 import { useTheme } from 'next-themes';
 
 import { SVG_REGISTRY } from './registry';
-import type { IconProps, IconSize } from '@/registry/icons/general/types';
+import type { SvgProps, IconSize } from '@/registry/icons/general/types';
 
 const iconPixelSizeMap: Record<IconSize, number> = {
   xs: 12,
@@ -28,7 +28,7 @@ function toIconSize(size: IconSize | number = 'md'): IconSize {
   return 'xl';
 }
 
-export type SVGProps = Pick<IconProps, 'className' | 'title' | 'aria-label'> & {
+export type SVGProps = Pick<SvgProps, 'className' | 'title' | 'aria-label'> & {
   name: string;
   size?: IconSize | number;
 };

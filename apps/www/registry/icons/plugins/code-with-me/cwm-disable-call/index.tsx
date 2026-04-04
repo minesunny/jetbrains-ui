@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type CwmDisableCallProps = IconProps;
+export type CwmDisableCallProps = SvgProps;
 
 const CwmDisableCallLight: React.FC<SvgProps> = ({
   size,

@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type ClusterRoleProps = IconProps;
+export type ClusterRoleProps = SvgProps;
 
 const ClusterRoleLight: React.FC<SvgProps> = ({
   size,

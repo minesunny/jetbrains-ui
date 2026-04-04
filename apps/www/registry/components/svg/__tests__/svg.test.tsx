@@ -9,7 +9,7 @@ vi.mock('next-themes', () => ({
 }));
 
 vi.mock('@/registry/icons/general/types', () => ({
-  IconSize: ['xs', 'sm', 'md', 'lg', 'xl'],
+  SvgProps: {},
 }));
 
 vi.mock('../registry', async () => {

@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type JavaScratchProps = IconProps;
+export type JavaScratchProps = SvgProps;
 
 const JavaScratchLight: FC<SvgProps> = ({
   size,

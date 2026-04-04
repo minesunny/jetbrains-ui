@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type ValidatorProps = IconProps;
+export type ValidatorProps = SvgProps;
 
 const ValidatorLight: React.FC<SvgProps> = ({
   size,

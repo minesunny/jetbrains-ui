@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type ChartStockProps = IconProps;
+export type ChartStockProps = SvgProps;
 
 const ChartStockLight: React.FC<SvgProps> = ({
   size,

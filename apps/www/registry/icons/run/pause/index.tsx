@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type PauseProps = IconProps;
+export type PauseProps = SvgProps;
 
 const PauseLight: FC<SvgProps> = ({
   size,

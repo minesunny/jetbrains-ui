@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type PolarsProps = IconProps;
+export type PolarsProps = SvgProps;
 
 const PolarsLight: FC<SvgProps> = ({
   size,

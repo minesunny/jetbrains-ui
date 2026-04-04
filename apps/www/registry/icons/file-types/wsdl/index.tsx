@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type WsdlProps = IconProps;
+export type WsdlProps = SvgProps;
 
 const WsdlLight: FC<SvgProps> = ({
   size,

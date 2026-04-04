@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type InlineAddProps = IconProps;
+export type InlineAddProps = SvgProps;
 
 const InlineAddLight: FC<SvgProps> = ({
   size,

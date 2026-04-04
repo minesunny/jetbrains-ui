@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type PlayForwardProps = IconProps;
+export type PlayForwardProps = SvgProps;
 
 const PlayForwardLight: FC<SvgProps> = ({
   size,

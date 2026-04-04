@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type SuccededProps = IconProps;
+export type SuccededProps = SvgProps;
 
 const SuccededLight: React.FC<SvgProps> = ({
   size,

@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type ExcludedGeneratedProps = IconProps;
+export type ExcludedGeneratedProps = SvgProps;
 
 const ExcludedGeneratedLight: FC<SvgProps> = ({
   size,

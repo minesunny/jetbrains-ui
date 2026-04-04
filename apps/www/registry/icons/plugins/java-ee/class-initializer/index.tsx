@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type ClassInitializerProps = IconProps;
+export type ClassInitializerProps = SvgProps;
 
 const ClassInitializerLight: React.FC<SvgProps> = ({
   size,

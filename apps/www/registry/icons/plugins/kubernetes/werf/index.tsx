@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type WerfProps = IconProps;
+export type WerfProps = SvgProps;
 
 const WerfLight: React.FC<SvgProps> = ({
   size,

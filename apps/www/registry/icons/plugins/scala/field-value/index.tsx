@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type FieldValueProps = IconProps;
+export type FieldValueProps = SvgProps;
 
 const FieldValueLight: React.FC<SvgProps> = ({
   size,

@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type CwmCamAvatarOffProps = IconProps;
+export type CwmCamAvatarOffProps = SvgProps;
 
 const CwmCamAvatarOffLight: React.FC<SvgProps> = ({
   size,

@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type ThreadRunningProps = IconProps;
+export type ThreadRunningProps = SvgProps;
 
 const ThreadRunningLight: FC<SvgProps> = ({
   size,

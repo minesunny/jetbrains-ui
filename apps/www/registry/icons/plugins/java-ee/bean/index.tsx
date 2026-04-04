@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type BeanProps = IconProps;
+export type BeanProps = SvgProps;
 
 const BeanLight: React.FC<SvgProps> = ({
   size,

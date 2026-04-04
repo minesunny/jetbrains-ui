@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type PrintProps = IconProps;
+export type PrintProps = SvgProps;
 
 const PrintLight: FC<SvgProps> = ({
   size,

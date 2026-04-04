@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type RailsServerRunConfigurationProps = IconProps;
+export type RailsServerRunConfigurationProps = SvgProps;
 
 const RailsServerRunConfigurationLight: React.FC<SvgProps> = ({
   size,

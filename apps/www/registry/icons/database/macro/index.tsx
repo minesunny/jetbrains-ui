@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type MacroProps = IconProps;
+export type MacroProps = SvgProps;
 
 const MacroLight: FC<SvgProps> = ({
   size,

@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type GetterInXmlProps = IconProps;
+export type GetterInXmlProps = SvgProps;
 
 const GetterInXmlLight: React.FC<SvgProps> = ({
   size,

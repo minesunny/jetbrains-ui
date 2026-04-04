@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type LibraryFolderProps = IconProps;
+export type LibraryFolderProps = SvgProps;
 
 const LibraryFolderLight: FC<SvgProps> = ({
   size,

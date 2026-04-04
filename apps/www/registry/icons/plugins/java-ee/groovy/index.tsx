@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../../types';
 
-export type GroovyProps = IconProps;
+export type GroovyProps = SvgProps;
 
 const GroovyLight: React.FC<SvgProps> = ({
   size,

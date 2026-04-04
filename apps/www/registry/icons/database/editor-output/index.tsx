@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
+import { type SvgProps, type SvgProps, sizeMap } from '../types';
 
-export type EditorOutputProps = IconProps;
+export type EditorOutputProps = SvgProps;
 
 const EditorOutputLight: FC<SvgProps> = ({
   size,
