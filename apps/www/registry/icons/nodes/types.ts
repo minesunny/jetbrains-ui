@@ -1,3 +1,4 @@
+import type React from 'react';
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type IconMode = 'light' | 'dark';
 
@@ -12,14 +13,7 @@ export interface IconProps {
   [key: string]: unknown;
 }
 
-export interface SvgProps {
-  size: number;
-  className?: string;
-  title?: string;
-  role?: string;
-  'aria-label'?: string;
-  'aria-hidden'?: boolean;
-}
+export type SvgProps = React.ComponentProps<"svg">;
 
 export const sizeMap: Record<IconSize, number> = {
   xs: 12,
