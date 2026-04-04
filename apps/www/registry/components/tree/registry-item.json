@@ -20,9 +20,9 @@
       "target": "components/jetbrains-ui/tree/index.tsx"
     },
     {
-      "path": "registry/components/tree/tree/index.tsx",
+      "path": "registry/components/tree/tree.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/tree/tree/index.tsx"
+      "target": "components/jetbrains-ui/tree/tree.tsx"
     },
     {
       "path": "registry/components/tree/dynamic-tree/index.tsx",
