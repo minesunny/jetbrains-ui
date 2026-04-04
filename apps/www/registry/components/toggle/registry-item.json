@@ -8,9 +8,6 @@
     "radix-ui",
     "class-variance-authority"
   ],
-  "registryDependencies": [
-    "utils"
-  ],
   "files": [
     {
       "path": "registry/components/toggle/index.tsx",

@@ -4,11 +4,6 @@ import * as React from 'react';
 import { DropdownMenu as DropdownMenuPrimitive } from 'radix-ui';
 
 import { cn } from '@workspace/ui/lib/utils';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from '@/registry/components/tooltip';
 
 function MenuCheckIcon({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
@@ -69,27 +64,14 @@ function DropdownMenuPortal({
 
 type DropdownMenuTriggerProps = React.ComponentProps<
   typeof DropdownMenuPrimitive.Trigger
-> & {
-  tooltip?: string;
-};
+>;
 
-function DropdownMenuTrigger({ tooltip, ...props }: DropdownMenuTriggerProps) {
-  const trigger = (
+function DropdownMenuTrigger({ ...props }: DropdownMenuTriggerProps) {
+  return (
     <DropdownMenuPrimitive.Trigger
       data-slot="dropdown-menu-trigger"
       {...props}
     />
-  );
-
-  if (!tooltip) {
-    return trigger;
-  }
-
-  return (
-    <Tooltip>
-      <TooltipTrigger asChild>{trigger}</TooltipTrigger>
-      <TooltipContent>{tooltip}</TooltipContent>
-    </Tooltip>
   );
 }
 

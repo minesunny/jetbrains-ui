@@ -84,4 +84,6 @@ export function Example() {
 
 ## Registry Generation
 
-When you add or remove files under `apps/www/registry/icons`, run `pnpm registry:build` to regenerate `registry/components/svg/registry.ts`.
+When you add or remove files under `apps/www/registry/icons`, run `pnpm icons:build` to regenerate `registry/components/svg/registry.ts`.
+
+This step runs automatically before `pnpm dev` and `pnpm build` via `predev` / `prebuild` hooks, so you typically only need to run it manually when working with the registry file directly.

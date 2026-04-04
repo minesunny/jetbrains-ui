@@ -42,13 +42,16 @@ These rules apply to `apps/www/registry/icons/**`.
    - example: `pnpm --filter jetbrains-ui icons:generate:public -- --target build,general/actions --clean`
 3. If `general/*` targets were regenerated, verify the follow-up migration script output:
    - `apps/www/scripts/migrate-general-registry-to-folders.mjs`
-4. Rebuild registry artifacts:
+4. Rebuild icon registry:
+   - `pnpm --filter jetbrains-ui icons:build`
+   - Note: this also runs automatically via `predev` / `prebuild` hooks
+5. Rebuild registry artifacts:
    - `pnpm --filter jetbrains-ui registry:build`
-5. If category/subcategory structure changed, update docs metadata and galleries:
+6. If category/subcategory structure changed, update docs metadata and galleries:
    - `apps/www/content/docs/icons/**`
    - `apps/www/content/docs-zh/icons/**`
    - `apps/www/components/docs/icons/**`
-6. Validate before commit:
+7. Validate before commit:
    - `pnpm --filter jetbrains-ui lint`
    - `pnpm --filter jetbrains-ui build`
 

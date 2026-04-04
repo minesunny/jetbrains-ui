@@ -49,7 +49,10 @@ export function SVG({
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
   const loader = ICON_REGISTRY[name];
-  const LazyIcon = loader ? React.lazy(loader) : null;
+  const LazyIcon = React.useMemo(
+    () => (loader ? React.lazy(loader) : null),
+    [loader],
+  );
 
   React.useEffect(() => {
     setMounted(true);
