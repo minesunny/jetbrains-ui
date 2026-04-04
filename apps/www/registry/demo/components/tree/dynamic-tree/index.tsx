@@ -10,12 +10,9 @@ import {
 import { useTree } from '@headless-tree/react';
 import {
   DynamicTree,
-  DynamicTreeItemContextMenu,
   asyncDataLoaderFeature,
   type DynamicTreeItemData,
 } from '@/registry/components/tree/dynamic-tree';
-import { Markdown, React as ReactFileType } from '@/registry/icons/file-types';
-import { Folder } from '@/registry/icons/nodes';
 
 const DEMO_ROOT_ID = 'dynamic-root';
 
@@ -39,58 +36,58 @@ const dynamicItems: DemoTreeItems = {
     kind: 'folder',
     path: '/jetbrains-ui',
     isFolder: true,
-    icon: <Folder />,
+    icon: 'folder',
   },
   'dynamic-src': {
     label: 'src',
     kind: 'folder',
     path: '/jetbrains-ui/src',
     isFolder: true,
-    icon: <Folder />,
+    icon: 'folder',
   },
   'dynamic-components': {
     label: 'components',
     kind: 'folder',
     path: '/jetbrains-ui/src/components',
     isFolder: true,
-    icon: <Folder />,
+    icon: 'folder',
   },
   'dynamic-tree-file': {
     label: 'tree.tsx',
     kind: 'file',
     path: '/jetbrains-ui/src/components/tree.tsx',
-    icon: <ReactFileType />,
+    icon: 'react',
   },
   'dynamic-dynamic-tree-file': {
     label: 'dynamic-tree.tsx',
     kind: 'file',
     path: '/jetbrains-ui/src/components/dynamic-tree.tsx',
-    icon: <ReactFileType />,
+    icon: 'react',
   },
   'dynamic-lib': {
     label: 'lib',
     kind: 'folder',
     path: '/jetbrains-ui/src/lib',
     isFolder: true,
-    icon: <Folder />,
+    icon: 'folder',
   },
   'dynamic-utils-file': {
     label: 'utils.ts',
     kind: 'file',
     path: '/jetbrains-ui/src/lib/utils.ts',
-    icon: <ReactFileType />,
+    icon: 'react',
   },
   'dynamic-readme': {
     label: 'README.md',
     kind: 'file',
     path: '/jetbrains-ui/README.md',
-    icon: <Markdown />,
+    icon: 'markdown',
   },
   'dynamic-package': {
     label: 'package.json',
     kind: 'file',
     path: '/jetbrains-ui/package.json',
-    icon: <ReactFileType />,
+    icon: 'react',
   },
 };
 
@@ -219,7 +216,6 @@ export default function DynamicTreeDemo() {
           ) as React.ComponentPropsWithoutRef<'div'>
         }
         items={tree.getItems()}
-        contextMenu={DynamicTreeItemContextMenu}
         height="400px"
       />
     </div>

@@ -3,25 +3,14 @@
 import * as React from 'react';
 
 import { type ItemInstance } from '@headless-tree/core';
-import {
-  ContextMenu,
-  ContextMenuContent,
-  ContextMenuItem,
-  ContextMenuLabel,
-  ContextMenuSeparator,
-  ContextMenuTrigger,
-} from '@/registry/components/context-menu';
 import { ScrollArea, ScrollViewport } from '@/registry/components/scroll-area';
-import { ChevronDown } from '@/registry/icons/general/general/chevron-down';
-import { Delete } from '@/registry/icons/general/general/delete';
-import { ChevronRight } from '@/registry/icons/general/general/chevron-right';
-import { Loader } from '@/registry/icons/general/spinner/loader';
+import { SVG } from '@/registry/components/svg';
 
 export { asyncDataLoaderFeature } from './feature';
 
 export interface DynamicTreeItemData {
   label?: string;
-  icon?: React.ReactNode;
+  icon?: string;
   endContent?: React.ReactNode;
   disabled?: boolean;
   isFolder?: boolean;
@@ -40,191 +29,75 @@ export interface DynamicTreeItemComponent<
   (props: DynamicTreeItemProps<TItem>): React.ReactNode;
 }
 
-export interface DynamicTreeContextMenuProps<
-  TItem extends DynamicTreeItemData = DynamicTreeItemData,
-> {
-  item: ItemInstance<TItem>;
-}
-
-export interface DynamicTreeContextMenuComponent<
-  TItem extends DynamicTreeItemData = DynamicTreeItemData,
-> {
-  (props: DynamicTreeContextMenuProps<TItem>): React.ReactNode;
-}
-
 export interface DynamicTreeProps<
   TItem extends DynamicTreeItemData = DynamicTreeItemData,
-> extends Omit<
-    React.ComponentPropsWithoutRef<'div'>,
-    'children' | 'className' | 'style' | 'contextMenu'
-  > {
+> extends Omit<React.ComponentPropsWithoutRef<'div'>, 'children' | 'className' | 'style'> {
   containerProps: React.ComponentPropsWithoutRef<'div'>;
   items: ItemInstance<TItem>[];
   indent?: number;
   item?: DynamicTreeItemComponent<TItem>;
-  contextMenu?: DynamicTreeContextMenuComponent<TItem> | null;
   width?: React.CSSProperties['width'];
   height?: React.CSSProperties['height'];
 }
 
-type DynamicTreeItemButtonStyle = React.CSSProperties & {
-  '--tree-item-padding-left': string;
-};
-
-type DynamicTreeAsyncItemInstance<
-  TItem extends DynamicTreeItemData = DynamicTreeItemData,
-> = ItemInstance<TItem> & {
-  invalidateItemData?: (optimistic?: boolean) => Promise<void>;
-  invalidateChildrenIds?: (optimistic?: boolean) => Promise<void>;
-};
-
-type DynamicTreeMutableParentItem<
-  TItem extends DynamicTreeItemData = DynamicTreeItemData,
-> = ItemInstance<TItem> & {
-  updateCachedChildrenIds?: (
-    childrenIds: string[],
-    skipUpdateTree?: boolean,
-  ) => void;
-};
-
-type DynamicTreeMutableItem<
-  TItem extends DynamicTreeItemData = DynamicTreeItemData,
-> = ItemInstance<TItem> & {
-  clearCachedChildren?: (skipUpdateTree?: boolean) => void;
-};
-
-function canRefreshDynamicTreeItem<TItem extends DynamicTreeItemData>(
-  item: ItemInstance<TItem>,
-) {
-  const asyncItem = item as DynamicTreeAsyncItemInstance<TItem>;
-
+function TreeItemDisclosure({
+  itemId,
+  itemLabel,
+  isLoading,
+  isExpanded,
+  isDisabled,
+  onToggle,
+}: {
+  itemId: string;
+  itemLabel: string;
+  isLoading: boolean;
+  isExpanded: boolean;
+  isDisabled?: boolean;
+  onToggle: () => void;
+}) {
   return (
-    typeof asyncItem.invalidateItemData === 'function' ||
-    (item.isFolder() && typeof asyncItem.invalidateChildrenIds === 'function')
-  );
-}
-
-function canDeleteDynamicTreeItem<TItem extends DynamicTreeItemData>(
-  item: ItemInstance<TItem>,
-) {
-  const parent = item.getParent() as
-    | DynamicTreeMutableParentItem<TItem>
-    | undefined;
-
-  return typeof parent?.updateCachedChildrenIds === 'function';
-}
-
-function canClearDynamicTreeItemChildren<TItem extends DynamicTreeItemData>(
-  item: ItemInstance<TItem>,
-) {
-  const mutableItem = item as DynamicTreeMutableItem<TItem>;
-
-  return (
-    item.isFolder() && typeof mutableItem.clearCachedChildren === 'function'
-  );
-}
-
-async function refreshDynamicTreeItem<TItem extends DynamicTreeItemData>(
-  item: ItemInstance<TItem>,
-) {
-  const asyncItem = item as DynamicTreeAsyncItemInstance<TItem>;
-
-  if (typeof asyncItem.invalidateItemData === 'function') {
-    await asyncItem.invalidateItemData();
-  }
-
-  if (
-    item.isFolder() &&
-    typeof asyncItem.invalidateChildrenIds === 'function'
-  ) {
-    await asyncItem.invalidateChildrenIds();
-  }
-}
-
-function deleteDynamicTreeItem<TItem extends DynamicTreeItemData>(
-  item: ItemInstance<TItem>,
-) {
-  const parent = item.getParent() as
-    | DynamicTreeMutableParentItem<TItem>
-    | undefined;
-
-  if (typeof parent?.updateCachedChildrenIds !== 'function') {
-    return;
-  }
-
-  parent.updateCachedChildrenIds(
-    parent
-      .getChildren()
-      .filter((child) => child.getId() !== item.getId())
-      .map((child) => child.getId()),
-  );
-  parent.setFocused();
-}
-
-function clearDynamicTreeItemChildren<TItem extends DynamicTreeItemData>(
-  item: ItemInstance<TItem>,
-) {
-  const mutableItem = item as DynamicTreeMutableItem<TItem>;
-
-  if (
-    !item.isFolder() ||
-    typeof mutableItem.clearCachedChildren !== 'function'
-  ) {
-    return;
-  }
-
-  item.setFocused();
-
-  if (item.isExpanded()) {
-    item.collapse();
-  }
-
-  mutableItem.clearCachedChildren();
-}
-
-export interface DynamicTreeItemContextMenuProps<
-  TItem extends DynamicTreeItemData = DynamicTreeItemData,
-> extends DynamicTreeContextMenuProps<TItem> {}
-
-function DynamicTreeItemContextMenu<TItem extends DynamicTreeItemData>({
-  item,
-}: DynamicTreeItemContextMenuProps<TItem>) {
-  return (
-    <>
-      <ContextMenuLabel>
-        {item.getItemData()?.label ?? item.getId()}
-      </ContextMenuLabel>
-      <ContextMenuItem
-        inset
-        disabled={!canRefreshDynamicTreeItem(item)}
-        onSelect={() => {
-          void refreshDynamicTreeItem(item);
-        }}
-      >
-        Refresh
-      </ContextMenuItem>
-      <ContextMenuItem
-        inset
-        disabled={!canClearDynamicTreeItemChildren(item)}
-        onSelect={() => {
-          clearDynamicTreeItemChildren(item);
-        }}
-      >
-        Clear Children
-      </ContextMenuItem>
-      <ContextMenuSeparator />
-      <ContextMenuItem
-        inset
-        variant="destructive"
-        disabled={!canDeleteDynamicTreeItem(item)}
-        onSelect={() => {
-          deleteDynamicTreeItem(item);
-        }}
-      >
-        <Delete className="shrink-0" size="md" />
-        <span>Delete</span>
-      </ContextMenuItem>
-    </>
+    <span
+      data-slot="tree-item-disclosure"
+      data-value={itemId}
+      data-expanded={isExpanded ? 'true' : undefined}
+      data-loading={isLoading ? 'true' : undefined}
+      role="button"
+      tabIndex={isDisabled ? -1 : 0}
+      aria-label={
+        isLoading
+          ? `Loading ${itemLabel}`
+          : isExpanded
+            ? `Collapse ${itemLabel}`
+            : `Expand ${itemLabel}`
+      }
+      aria-disabled={isDisabled ? true : undefined}
+      className="tree-item-disclosure relative z-10 inline-flex size-4 shrink-0 items-center justify-center cursor-default outline-none disabled:cursor-not-allowed"
+      onClick={(event) => {
+        event.stopPropagation();
+        onToggle();
+      }}
+      onKeyDown={(event) => {
+        if (isDisabled) return;
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          onToggle();
+        }
+      }}
+    >
+      <SVG
+        name={
+          isLoading
+            ? 'general/spinner/loader'
+            : isExpanded
+              ? 'chevron-down'
+              : 'chevron-right'
+        }
+        size="md"
+        className={
+          isLoading ? 'animate-spin [animation-duration:900ms]' : undefined
+        }
+      />
+    </span>
   );
 }
 
@@ -238,6 +111,10 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
     ...resolvedProps
   } = item.getProps() as React.ComponentPropsWithoutRef<'div'>;
 
+  const itemData = item.getItemData() as TItem | null;
+  const itemLabel = itemData?.label ?? item.getId();
+  const isDisabled = itemData?.disabled;
+
   return (
     <div
       data-slot="tree-item"
@@ -250,23 +127,15 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
         data-value={item.getId()}
         data-has-children={item.isFolder() ? 'true' : undefined}
         data-selected={item.isSelected() ? 'true' : undefined}
-        data-disabled={
-          (item.getItemData() as TItem | null)?.disabled ? 'true' : undefined
-        }
+        data-disabled={isDisabled ? 'true' : undefined}
         data-expanded={
           item.isFolder() && item.isExpanded() ? 'true' : undefined
         }
         data-loading={item.isLoading() ? 'true' : undefined}
         aria-selected={item.isSelected()}
-        aria-disabled={
-          (item.getItemData() as TItem | null)?.disabled ? true : undefined
-        }
+        aria-disabled={isDisabled ? true : undefined}
         aria-busy={item.isLoading() ? true : undefined}
-        tabIndex={
-          (item.getItemData() as TItem | null)?.disabled
-            ? -1
-            : (resolvedTabIndex ?? -1)
-        }
+        tabIndex={isDisabled ? -1 : (resolvedTabIndex ?? -1)}
         style={
           {
             ...resolvedStyle,
@@ -275,10 +144,10 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
               item.getItemMeta().level * indent +
               Math.max(0, item.getItemMeta().level - 1) * 2
             }px`,
-          } as DynamicTreeItemButtonStyle
+          } as React.CSSProperties
         }
         className={
-          "tree-item-button relative box-border flex h-6 w-full min-w-0 cursor-default items-center gap-ui-hairline pr-ui-section pl-[var(--tree-item-padding-left)] select-none text-gray-1 outline-none transition-[color] duration-150 ease-in-out data-[disabled=true]:cursor-not-allowed data-[disabled=true]:text-gray-8 data-[selected=true]:text-gray-1 [&_.tree-item-disclosure]:text-gray-7 [&_.tree-item-icon]:text-gray-6 [&[data-selected='true']_.tree-item-disclosure]:text-current [&[data-selected='true']_.tree-item-icon]:text-current [&[data-disabled='true']_.tree-item-disclosure]:text-gray-8 [&:not([data-selected='true']):not([data-disabled='true'])_.tree-item-disclosure:hover]:text-gray-5 [&:hover:not([data-disabled='true']):not([data-selected='true'])_.tree-item-overlay]:bg-gray-12 [&:active:not([data-disabled='true']):not([data-selected='true'])_.tree-item-overlay]:bg-gray-11 [&[data-selected='true']_.tree-item-overlay]:bg-blue-11 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-2 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-blue-4 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-offset-1 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-offset-white dark:text-gray-12 dark:data-[disabled=true]:text-gray-7 dark:data-[selected=true]:text-gray-12 dark:[&_.tree-item-disclosure]:text-gray-10 dark:[&_.tree-item-icon]:text-gray-10 dark:[&[data-disabled=true]_.tree-item-disclosure]:text-gray-7 dark:[&:not([data-selected=true]):not([data-disabled=true])_.tree-item-disclosure:hover]:text-gray-12 dark:[&:hover:not([data-disabled=true]):not([data-selected=true])_.tree-item-overlay]:bg-gray-3 dark:[&:active:not([data-disabled=true]):not([data-selected=true])_.tree-item-overlay]:bg-gray-4 dark:[&[data-selected=true]_.tree-item-overlay]:bg-blue-2 dark:[&:focus-visible:not([data-disabled=true])_.tree-item-overlay]:ring-blue-6 dark:[&:focus-visible:not([data-disabled=true])_.tree-item-overlay]:ring-offset-gray-2"
+          "tree-item-button relative box-border flex h-6 w-full min-w-0 cursor-default items-center gap-ui-hairline pr-ui-section pl-[var(--tree-item-padding-left)] select-none text-gray-1 outline-none transition-[background-color,color] duration-75 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:text-gray-8 [&_.tree-item-disclosure]:text-gray-7 [&_.tree-item-icon]:text-gray-6 [&:focus_.tree-item-disclosure]:text-current [&:focus_.tree-item-icon]:text-current [&[data-disabled='true']_.tree-item-disclosure]:text-gray-8 [&:hover:not([data-disabled='true'])_.tree-item-overlay]:bg-blue-11 [&:focus_.tree-item-overlay]:bg-blue-11 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-2 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-blue-4 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-offset-1 [&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-offset-white dark:text-gray-12 dark:data-[disabled=true]:text-gray-7 dark:[&_.tree-item-disclosure]:text-gray-10 dark:[&_.tree-item-icon]:text-gray-10 dark:[&[data-disabled=true]_.tree-item-disclosure]:text-gray-7 dark:[&:hover:not([data-disabled='true'])_.tree-item-overlay]:bg-blue-2 dark:[&:focus_.tree-item-overlay]:bg-blue-2 dark:[&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-blue-6 dark:[&:focus-visible:not([data-disabled='true'])_.tree-item-overlay]:ring-offset-gray-2"
         }
       >
         <span
@@ -288,48 +157,18 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
         />
 
         {item.isFolder() ? (
-          <button
-            data-slot="tree-item-disclosure"
-            data-value={item.getId()}
-            data-expanded={item.isExpanded() ? 'true' : undefined}
-            data-loading={item.isLoading() ? 'true' : undefined}
-            type="button"
-            className="tree-item-disclosure relative z-10 inline-flex size-4 shrink-0 items-center justify-center border-0 bg-transparent p-0 outline-none disabled:cursor-not-allowed"
-            aria-label={
-              item.isLoading()
-                ? `Loading ${(item.getItemData() as TItem | null)?.label ?? item.getId()}`
-                : item.isExpanded()
-                  ? `Collapse ${(item.getItemData() as TItem | null)?.label ?? item.getId()}`
-                  : `Expand ${(item.getItemData() as TItem | null)?.label ?? item.getId()}`
-            }
-            onClick={(event) => {
-              event.stopPropagation();
-
-              if ((item.getItemData() as TItem | null)?.disabled) {
-                return;
-              }
-
+          <TreeItemDisclosure
+            itemId={item.getId()}
+            itemLabel={itemLabel}
+            isLoading={item.isLoading()}
+            isExpanded={item.isExpanded()}
+            isDisabled={isDisabled}
+            onToggle={() => {
+              if (isDisabled) return;
               item.setFocused();
-
-              if (item.isExpanded()) {
-                item.collapse();
-              } else {
-                item.expand();
-              }
+              item.isExpanded() ? item.collapse() : item.expand();
             }}
-            disabled={Boolean((item.getItemData() as TItem | null)?.disabled)}
-          >
-            {item.isLoading() ? (
-              <Loader
-                className="animate-spin [animation-duration:900ms]"
-                size="md"
-              />
-            ) : item.isExpanded() ? (
-              <ChevronDown className="scale-[0.78]" size="md" />
-            ) : (
-              <ChevronRight className="scale-[0.78]" size="md" />
-            )}
-          </button>
+          />
         ) : (
           <span
             data-slot="tree-item-disclosure-placeholder"
@@ -341,12 +180,12 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
           data-slot="tree-item-content"
           className="tree-item-content relative z-10 inline-flex h-5 min-w-0 flex-1 items-center gap-ui-compact"
         >
-          {(item.getItemData() as TItem | null)?.icon ? (
+          {itemData?.icon ? (
             <span
               data-slot="tree-item-icon"
-              className="tree-item-icon inline-flex size-4 shrink-0 items-center justify-center [&>svg]:size-4"
+              className="tree-item-icon inline-flex size-4 shrink-0 items-center justify-center"
             >
-              {(item.getItemData() as TItem | null)?.icon}
+              <SVG name={itemData.icon} size="md" />
             </span>
           ) : null}
 
@@ -354,15 +193,15 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
             data-slot="tree-item-label"
             className="tree-item-label min-w-0 overflow-hidden text-ellipsis whitespace-nowrap"
           >
-            {(item.getItemData() as TItem | null)?.label ?? item.getId()}
+            {itemLabel}
           </span>
 
-          {(item.getItemData() as TItem | null)?.endContent ? (
+          {itemData?.endContent ? (
             <span
               data-slot="tree-item-end"
               className="tree-item-end ml-auto pr-ui-hairline text-[13px] leading-4 font-medium text-gray-7 dark:text-gray-7"
             >
-              {(item.getItemData() as TItem | null)?.endContent}
+              {itemData.endContent}
             </span>
           ) : null}
         </span>
@@ -376,16 +215,11 @@ function DynamicTree<TItem extends DynamicTreeItemData>({
   items,
   indent = 16,
   item: customItem,
-  contextMenu,
   width,
   height,
   ...props
 }: DynamicTreeProps<TItem>) {
   const ItemComponent = customItem ?? DynamicTreeItem;
-  const ContextMenuComponent =
-    contextMenu === undefined
-      ? (DynamicTreeItemContextMenu as DynamicTreeContextMenuComponent<TItem>)
-      : contextMenu;
 
   return (
     <ScrollArea
@@ -397,56 +231,22 @@ function DynamicTree<TItem extends DynamicTreeItemData>({
         <div
           {...containerProps}
           data-slot="tree"
-          className="tree dynamic-tree block w-full min-w-ui-tree box-border bg-transparent py-ui-control-row text-[13px] leading-4 font-medium text-gray-1 dark:text-gray-12 [font-family:var(--font-sans),sans-serif]"
+          className="tree dynamic-tree block w-full min-w-ui-tree box-border bg-transparent py-ui-control-row text-ui-default text-gray-1 dark:text-gray-12"
           {...props}
         >
-          {items.map((item) => {
-            if (!ContextMenuComponent) {
-              return (
-                <ItemComponent
-                  key={item.getKey()}
-                  item={item}
-                  indent={indent}
-                />
-              );
-            }
-
-            return (
-              <ContextMenu key={item.getKey()}>
-                <ContextMenuTrigger
-                  asChild
-                  onContextMenu={(event) => {
-                    if ((item.getItemData() as TItem | null)?.disabled) {
-                      event.preventDefault();
-                      return;
-                    }
-
-                    item.setFocused();
-                    item.select();
-                  }}
-                >
-                  <div
-                    data-slot="tree-item-context-trigger"
-                    data-value={item.getId()}
-                  >
-                    <ItemComponent item={item} indent={indent} />
-                  </div>
-                </ContextMenuTrigger>
-                <ContextMenuContent>
-                  {ContextMenuComponent({
-                    item,
-                  })}
-                </ContextMenuContent>
-              </ContextMenu>
-            );
-          })}
+          {items.map((item) => (
+            <ItemComponent
+              key={item.getKey()}
+              item={item}
+              indent={indent}
+            />
+          ))}
         </div>
       </ScrollViewport>
     </ScrollArea>
   );
 }
 
-export { DynamicTreeItemContextMenu };
 export { DynamicTreeItem };
 export { DynamicTree };
 
