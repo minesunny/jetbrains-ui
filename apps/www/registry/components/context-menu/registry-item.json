@@ -5,7 +5,6 @@
   "title": "Context Menu",
   "description": "JetBrains-style context menu component built with Radix UI.",
   "dependencies": ["radix-ui"],
-  "registryDependencies": ["utils", "tooltip"],
   "files": [
     {
       "path": "registry/components/context-menu/index.tsx",

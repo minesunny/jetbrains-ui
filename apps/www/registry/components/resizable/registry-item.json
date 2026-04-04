@@ -4,8 +4,9 @@
   "type": "registry:ui",
   "title": "Resizable",
   "description": "Composable resizable panel layout with collapsible panels and remembered size.",
-  "dependencies": ["react-resizable-panels"],
-  "registryDependencies": ["utils"],
+  "dependencies": [
+    "react-resizable-panels"
+  ],
   "files": [
     {
       "path": "registry/components/resizable/index.tsx",
@@ -14,7 +15,12 @@
     }
   ],
   "meta": {
-    "keywords": ["resizable", "collapsible", "layout", "component"],
+    "keywords": [
+      "resizable",
+      "collapsible",
+      "layout",
+      "component"
+    ],
     "category": "layout",
     "docs": {
       "description": "Composable resizable panel layout with collapsible panels and remembered size.",

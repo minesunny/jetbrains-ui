@@ -7,9 +7,6 @@
   "dependencies": [
     "radix-ui"
   ],
-  "registryDependencies": [
-    "utils"
-  ],
   "files": [
     {
       "path": "registry/components/separator/index.tsx",

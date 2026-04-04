@@ -5,11 +5,6 @@ import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 
 import { cn } from '@workspace/ui/lib/utils';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from '@/registry/components/tooltip';
 
 const buttonVariants = cva(
   'inline-flex items-center justify-center whitespace-nowrap rounded border text-ui-default transition-[background-color,color,border-color,box-shadow] duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-14 disabled:pointer-events-none disabled:cursor-not-allowed disabled:border-transparent disabled:bg-gray-12 disabled:text-gray-8 dark:focus-visible:ring-blue-6 dark:focus-visible:ring-offset-gray-2 dark:disabled:bg-gray-4 dark:disabled:text-gray-7',
@@ -40,7 +35,6 @@ type ButtonVariant = NonNullable<
 type ButtonProps = React.ComponentProps<'button'> & {
   variant?: ButtonVariant;
   slim?: boolean;
-  tooltip?: string;
   asChild?: boolean;
 };
 
@@ -48,7 +42,6 @@ function Button({
   className,
   variant = 'primary',
   slim = false,
-  tooltip,
   asChild = false,
   children,
   ...props
@@ -56,7 +49,7 @@ function Button({
   const Comp = asChild ? Slot : 'button';
   const size = slim ? 'slim' : 'default';
 
-  const button = (
+  return (
     <Comp
       data-slot="button"
       data-variant={variant}
@@ -66,17 +59,6 @@ function Button({
     >
       {children}
     </Comp>
-  );
-
-  if (!tooltip) {
-    return button;
-  }
-
-  return (
-    <Tooltip>
-      <TooltipTrigger asChild>{button}</TooltipTrigger>
-      <TooltipContent>{tooltip}</TooltipContent>
-    </Tooltip>
   );
 }
 

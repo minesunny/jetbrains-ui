@@ -3,9 +3,10 @@
   "name": "checkbox",
   "type": "registry:ui",
   "title": "Checkbox",
-  "description": "JetBrains UI 风格的复选框组件，基于 Radix UI，支持完整的状态矩阵",
-  "dependencies": ["@radix-ui/react-checkbox"],
-  "registryDependencies": ["utils"],
+  "description": "JetBrains UI \u98ce\u683c\u7684\u590d\u9009\u6846\u7ec4\u4ef6\uff0c\u57fa\u4e8e Radix UI\uff0c\u652f\u6301\u5b8c\u6574\u7684\u72b6\u6001\u77e9\u9635",
+  "dependencies": [
+    "@radix-ui/react-checkbox"
+  ],
   "files": [
     {
       "path": "registry/components/checkbox/index.tsx",
@@ -14,17 +15,23 @@
     }
   ],
   "meta": {
-    "keywords": ["checkbox", "jetbrains", "ui", "组件", "复选框"],
+    "keywords": [
+      "checkbox",
+      "jetbrains",
+      "ui",
+      "\u7ec4\u4ef6",
+      "\u590d\u9009\u6846"
+    ],
     "category": "checkboxes",
     "docs": {
-      "description": "JetBrains UI 风格的复选框组件，基于 Radix UI 构建，提供流畅的勾选动画效果。支持完整的状态矩阵：选中维度（unchecked/checked/indeterminate）× 交互维度（default/hover/active/focus/invalid/disabled）。",
+      "description": "JetBrains UI \u98ce\u683c\u7684\u590d\u9009\u6846\u7ec4\u4ef6\uff0c\u57fa\u4e8e Radix UI \u6784\u5efa\uff0c\u63d0\u4f9b\u6d41\u7545\u7684\u52fe\u9009\u52a8\u753b\u6548\u679c\u3002\u652f\u6301\u5b8c\u6574\u7684\u72b6\u6001\u77e9\u9635\uff1a\u9009\u4e2d\u7ef4\u5ea6\uff08unchecked/checked/indeterminate\uff09\u00d7 \u4ea4\u4e92\u7ef4\u5ea6\uff08default/hover/active/focus/invalid/disabled\uff09\u3002",
       "features": [
-        "3种选中状态：unchecked、checked、indeterminate",
-        "6种交互状态：default、hover、active、focus、invalid、disabled",
-        "流畅的 SVG 路径动画",
-        "完整的键盘导航支持",
-        "优秀的无障碍支持",
-        "支持亮色/暗色主题"
+        "3\u79cd\u9009\u4e2d\u72b6\u6001\uff1aunchecked\u3001checked\u3001indeterminate",
+        "6\u79cd\u4ea4\u4e92\u72b6\u6001\uff1adefault\u3001hover\u3001active\u3001focus\u3001invalid\u3001disabled",
+        "\u6d41\u7545\u7684 SVG \u8def\u5f84\u52a8\u753b",
+        "\u5b8c\u6574\u7684\u952e\u76d8\u5bfc\u822a\u652f\u6301",
+        "\u4f18\u79c0\u7684\u65e0\u969c\u788d\u652f\u6301",
+        "\u652f\u6301\u4eae\u8272/\u6697\u8272\u4e3b\u9898"
       ]
     },
     "demoProps": {

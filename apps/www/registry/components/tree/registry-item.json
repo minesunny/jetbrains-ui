@@ -6,7 +6,6 @@
   "description": "JetBrains-style tree view component with selectable and expandable items.",
   "dependencies": ["@headless-tree/core", "@headless-tree/react"],
   "registryDependencies": [
-    "utils",
     "scroll-area",
     "context-menu",
     "icons-general-general-delete",

@@ -69,17 +69,6 @@ describe('Button', () => {
     expect(btn.className).toContain('h-6');
   });
 
-  it('renders tooltip content when tooltip prop is provided', async () => {
-    const user = userEvent.setup();
-    render(<Button tooltip="Button tooltip">With Tooltip</Button>);
-
-    const btn = screen.getByRole('button', { name: 'With Tooltip' });
-    await user.hover(btn);
-    expect(
-      await screen.findByRole('tooltip', { name: 'Button tooltip' }),
-    ).toBeInTheDocument();
-  });
-
   it('fires onClick handler', async () => {
     const user = userEvent.setup();
     const onClick = vi.fn();

@@ -5,11 +5,6 @@ import { ContextMenu as ContextMenuPrimitive } from 'radix-ui';
 
 import { cn } from '@workspace/ui/lib/utils';
 import { SVG } from '@/registry/components/svg';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from '@/registry/components/tooltip';
 
 function MenuCheckIcon({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
@@ -62,17 +57,14 @@ function ContextMenu({
 
 type ContextMenuTriggerProps = React.ComponentProps<
   typeof ContextMenuPrimitive.Trigger
-> & {
-  tooltip?: string;
-};
+>;
 
 function ContextMenuTrigger({
   className,
   asChild,
-  tooltip,
   ...props
 }: ContextMenuTriggerProps) {
-  const trigger = (
+  return (
     <ContextMenuPrimitive.Trigger
       data-slot="context-menu-trigger"
       asChild={asChild}
@@ -83,17 +75,6 @@ function ContextMenuTrigger({
       )}
       {...props}
     />
-  );
-
-  if (!tooltip) {
-    return trigger;
-  }
-
-  return (
-    <Tooltip>
-      <TooltipTrigger asChild>{trigger}</TooltipTrigger>
-      <TooltipContent>{tooltip}</TooltipContent>
-    </Tooltip>
   );
 }
 

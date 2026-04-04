@@ -5,6 +5,9 @@
   "scripts": {
     "build": "pnpm registry:build:ci && next build",
     "dev": "CHOKIDAR_USEPOLLING=1 WATCHPACK_POLLING=true next dev",
+    "icons:build": "tsx ./scripts/build-icon-registry.mts",
+    "predev": "pnpm icons:build",
+    "prebuild": "pnpm icons:build",
     "start": "next start",
     "postinstall": "fumadocs-mdx",
     "registry:build:ci": "tsx ./scripts/build-registry.mts",

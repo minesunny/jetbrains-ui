@@ -6,8 +6,7 @@
   "description": "JetBrains-style alert dialog built on Radix AlertDialog with built-in status icons.",
   "dependencies": ["radix-ui"],
   "registryDependencies": [
-    "utils",
-    "buttons",
+    "button",
     "tooltip",
     "@jetbrains-ui/icons-general-status-information-dialog",
     "@jetbrains-ui/icons-general-status-error-dialog",

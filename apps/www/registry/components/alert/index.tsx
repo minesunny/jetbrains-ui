@@ -12,11 +12,6 @@ import type { IconProps } from '@/registry/icons/general/types';
 import { QuestionMark } from '@/registry/icons/general/general';
 import { buttonVariants } from '@/registry/components/button';
 import { Checkbox } from '@/registry/components/checkbox';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from '@/registry/components/tooltip';
 
 type AlertType = 'info' | 'error' | 'warning' | 'question';
 type AlertSize = 'default' | 'wide' | 'auto';
@@ -51,28 +46,15 @@ function Alert({ ...props }: React.ComponentProps<typeof AlertPrimitive.Root>) {
   return <AlertPrimitive.Root data-slot="alert" {...props} />;
 }
 
-type AlertTriggerProps = React.ComponentProps<typeof AlertPrimitive.Trigger> & {
-  tooltip?: string;
-};
+type AlertTriggerProps = React.ComponentProps<typeof AlertPrimitive.Trigger>;
 
-function AlertTrigger({ className, tooltip, ...props }: AlertTriggerProps) {
-  const trigger = (
+function AlertTrigger({ className, ...props }: AlertTriggerProps) {
+  return (
     <AlertPrimitive.Trigger
       data-slot="alert-trigger"
       className={cn(buttonVariants({ variant: 'secondary' }), className)}
       {...props}
     />
-  );
-
-  if (!tooltip) {
-    return trigger;
-  }
-
-  return (
-    <Tooltip>
-      <TooltipTrigger asChild>{trigger}</TooltipTrigger>
-      <TooltipContent>{tooltip}</TooltipContent>
-    </Tooltip>
   );
 }
 
