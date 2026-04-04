@@ -5,7 +5,7 @@
   "scripts": {
     "build": "pnpm registry:build:ci && next build",
     "dev": "CHOKIDAR_USEPOLLING=1 WATCHPACK_POLLING=true next dev",
-    "icons:build": "tsx ./scripts/build-icon-registry.mts",
+    "icons:build": "tsx ./scripts/svg-registry.mts",
     "predev": "pnpm icons:build",
     "prebuild": "pnpm icons:build",
     "start": "next start",
