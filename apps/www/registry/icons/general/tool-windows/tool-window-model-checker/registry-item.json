@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-model-checker",
   "type": "registry:ui",
   "title": "Tool Window Model Checker",
-  "description": "Tool Window Model Checker icon from General Tool Windows category.",
+  "description": "Tool Window Model Checker icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-model-checker",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

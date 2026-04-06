@@ -3,7 +3,7 @@
   "name": "icons-file-types-nodejs-test-runner",
   "type": "registry:ui",
   "title": "Nodejs Test Runner",
-  "description": "Nodejs Test Runner icon from File Types category.",
+  "description": "Nodejs Test Runner icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

@@ -31,14 +31,14 @@ const AmperLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="4.748"
-        y1="4.751"
-        x2="14.516"
-        y2="14.514"
+        x1={4.748}
+        y1={4.751}
+        x2={14.516}
+        y2={14.514}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".212" stopColor="#3BEA62" />
-        <stop offset=".753" stopColor="#087CFA" />
+        <stop offset={0.212} stopColor="#3BEA62" />
+        <stop offset={0.753} stopColor="#087CFA" />
       </linearGradient>
     </defs>
   </svg>
@@ -71,14 +71,14 @@ const AmperDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="4.748"
-        y1="4.751"
-        x2="14.516"
-        y2="14.514"
+        x1={4.748}
+        y1={4.751}
+        x2={14.516}
+        y2={14.514}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".212" stopColor="#3BEA62" />
-        <stop offset=".753" stopColor="#087CFA" />
+        <stop offset={0.212} stopColor="#3BEA62" />
+        <stop offset={0.753} stopColor="#087CFA" />
       </linearGradient>
     </defs>
   </svg>

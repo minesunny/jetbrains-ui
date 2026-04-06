@@ -3,7 +3,7 @@
   "name": "icons-general-general-vcs",
   "type": "registry:ui",
   "title": "Vcs",
-  "description": "Vcs icon from General General category.",
+  "description": "Vcs icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "vcs",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -29,7 +29,7 @@ const RunSuccessLight: FC<SvgProps> = ({
     <path
       d="m2.5 5.5 2 2 4-4"
       stroke="#fff"
-      strokeWidth="1.2"
+      strokeWidth={1.2}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -71,7 +71,7 @@ const RunSuccessDark: FC<SvgProps> = ({
     <path
       d="m2.5 5.5 2 2 4-4"
       stroke="#fff"
-      strokeWidth="1.2"
+      strokeWidth={1.2}
       strokeLinecap="round"
       strokeLinejoin="round"
     />

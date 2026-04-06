@@ -3,7 +3,7 @@
   "name": "icons-vcs-checkmark",
   "type": "registry:ui",
   "title": "Checkmark",
-  "description": "Checkmark icon from Vcs category.",
+  "description": "Checkmark icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

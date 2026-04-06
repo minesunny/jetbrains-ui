@@ -3,7 +3,7 @@
   "name": "icons-general-actions-add-file",
   "type": "registry:ui",
   "title": "Add File",
-  "description": "Add File icon from General Actions category.",
+  "description": "Add File icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "add-file",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

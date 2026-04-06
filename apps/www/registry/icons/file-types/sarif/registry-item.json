@@ -3,7 +3,7 @@
   "name": "icons-file-types-sarif",
   "type": "registry:ui",
   "title": "Sarif",
-  "description": "Sarif icon from File Types category.",
+  "description": "Sarif icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

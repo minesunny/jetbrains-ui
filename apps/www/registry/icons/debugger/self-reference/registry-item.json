@@ -3,7 +3,7 @@
   "name": "icons-debugger-self-reference",
   "type": "registry:ui",
   "title": "Self Reference",
-  "description": "Self Reference icon from Debugger category.",
+  "description": "Self Reference icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

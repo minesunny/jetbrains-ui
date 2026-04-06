@@ -3,7 +3,7 @@
   "name": "icons-file-types-xml",
   "type": "registry:ui",
   "title": "Xml",
-  "description": "Xml icon from File Types category.",
+  "description": "Xml icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

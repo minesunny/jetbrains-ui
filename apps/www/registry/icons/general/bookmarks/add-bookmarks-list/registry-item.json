@@ -3,7 +3,7 @@
   "name": "icons-general-bookmarks-add-bookmarks-list",
   "type": "registry:ui",
   "title": "Add Bookmarks List",
-  "description": "Add Bookmarks List icon from General Bookmarks category.",
+  "description": "Add Bookmarks List icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "add-bookmarks-list",
       "icon",
       "general",
-      "bookmarks",
       "jetbrains"
     ]
   }

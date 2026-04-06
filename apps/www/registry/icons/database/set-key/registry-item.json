@@ -3,7 +3,7 @@
   "name": "icons-database-set-key",
   "type": "registry:ui",
   "title": "Set Key",
-  "description": "Set Key icon from Database category.",
+  "description": "Set Key icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-database-table-heatmap",
   "type": "registry:ui",
   "title": "Table Heatmap",
-  "description": "Table Heatmap icon from Database category.",
+  "description": "Table Heatmap icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

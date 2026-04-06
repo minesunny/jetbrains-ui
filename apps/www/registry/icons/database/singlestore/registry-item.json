@@ -3,7 +3,7 @@
   "name": "icons-database-singlestore",
   "type": "registry:ui",
   "title": "Singlestore",
-  "description": "Singlestore icon from Database category.",
+  "description": "Singlestore icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

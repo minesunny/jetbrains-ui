@@ -45,36 +45,36 @@ const EclipseLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="8.733"
-        y1="15.129"
-        x2="8.733"
-        y2="5.689"
+        x1={8.733}
+        y1={15.129}
+        x2={8.733}
+        y2={5.689}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".872" stopColor="#2C2255" />
+        <stop offset={0.303} stopColor="#473788" />
+        <stop offset={0.872} stopColor="#2C2255" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="8.733"
-        y1="15.13"
-        x2="8.733"
-        y2="5.689"
+        x1={8.733}
+        y1={15.13}
+        x2={8.733}
+        y2={5.689}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".872" stopColor="#2C2255" />
+        <stop offset={0.303} stopColor="#473788" />
+        <stop offset={0.872} stopColor="#2C2255" />
       </linearGradient>
       <linearGradient
         id="c"
-        x1="8.733"
-        y1="15.129"
-        x2="8.733"
-        y2="5.689"
+        x1={8.733}
+        y1={15.129}
+        x2={8.733}
+        y2={5.689}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".863" stopColor="#2C2255" />
+        <stop offset={0.303} stopColor="#473788" />
+        <stop offset={0.863} stopColor="#2C2255" />
       </linearGradient>
     </defs>
   </svg>
@@ -125,36 +125,36 @@ const EclipseDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="8.733"
-        y1="15.129"
-        x2="8.733"
-        y2="5.689"
+        x1={8.733}
+        y1={15.129}
+        x2={8.733}
+        y2={5.689}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".872" stopColor="#2C2255" />
+        <stop offset={0.303} stopColor="#473788" />
+        <stop offset={0.872} stopColor="#2C2255" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="8.733"
-        y1="15.13"
-        x2="8.733"
-        y2="5.689"
+        x1={8.733}
+        y1={15.13}
+        x2={8.733}
+        y2={5.689}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".872" stopColor="#2C2255" />
+        <stop offset={0.303} stopColor="#473788" />
+        <stop offset={0.872} stopColor="#2C2255" />
       </linearGradient>
       <linearGradient
         id="c"
-        x1="8.733"
-        y1="15.129"
-        x2="8.733"
-        y2="5.689"
+        x1={8.733}
+        y1={15.129}
+        x2={8.733}
+        y2={5.689}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".863" stopColor="#2C2255" />
+        <stop offset={0.303} stopColor="#473788" />
+        <stop offset={0.863} stopColor="#2C2255" />
       </linearGradient>
     </defs>
   </svg>

@@ -3,7 +3,7 @@
   "name": "icons-general-actions-run-all",
   "type": "registry:ui",
   "title": "Run All",
-  "description": "Run All icon from General Actions category.",
+  "description": "Run All icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "run-all",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

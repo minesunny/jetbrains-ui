@@ -3,7 +3,7 @@
   "name": "icons-file-types-idea-module",
   "type": "registry:ui",
   "title": "Idea Module",
-  "description": "Idea Module icon from File Types category.",
+  "description": "Idea Module icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

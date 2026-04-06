@@ -3,7 +3,7 @@
   "name": "icons-build-maven-bind",
   "type": "registry:ui",
   "title": "Maven Bind",
-  "description": "Maven Bind icon from Build category.",
+  "description": "Maven Bind icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

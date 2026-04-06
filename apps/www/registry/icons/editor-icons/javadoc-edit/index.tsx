@@ -25,7 +25,7 @@ const JavadocEditLight: FC<SvgProps> = ({
     <path
       d="m10.597 6.655 2.091-2.095a1.035 1.035 0 0 0 .007-1.474l-1.668-1.772-.005-.005a1.05 1.05 0 0 0-1.489.002L7.387 3.444m3.21 3.21-3.21-3.21m3.21 3.21L4.74 12.5H1.5V9.32l5.887-5.876"
       stroke="#6C707E"
-      strokeMiterlimit="10"
+      strokeMiterlimit={10}
     />
   </svg>
 );
@@ -51,7 +51,7 @@ const JavadocEditDark: FC<SvgProps> = ({
     <path
       d="m10.597 6.655 2.091-2.095a1.035 1.035 0 0 0 .007-1.474l-1.668-1.772-.005-.005a1.05 1.05 0 0 0-1.489.002L7.387 3.444m3.21 3.21-3.21-3.21m3.21 3.21L4.74 12.5H1.5V9.32l5.887-5.876"
       stroke="#CED0D6"
-      strokeMiterlimit="10"
+      strokeMiterlimit={10}
     />
   </svg>
 );

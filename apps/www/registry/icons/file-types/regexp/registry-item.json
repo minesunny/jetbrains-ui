@@ -3,7 +3,7 @@
   "name": "icons-file-types-regexp",
   "type": "registry:ui",
   "title": "Regexp",
-  "description": "Regexp icon from File Types category.",
+  "description": "Regexp icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

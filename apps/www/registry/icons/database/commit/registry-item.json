@@ -3,7 +3,7 @@
   "name": "icons-database-commit",
   "type": "registry:ui",
   "title": "Commit",
-  "description": "Commit icon from Database category.",
+  "description": "Commit icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

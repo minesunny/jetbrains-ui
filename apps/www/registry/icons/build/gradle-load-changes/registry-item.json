@@ -3,7 +3,7 @@
   "name": "icons-build-gradle-load-changes",
   "type": "registry:ui",
   "title": "Gradle Load Changes",
-  "description": "Gradle Load Changes icon from Build category.",
+  "description": "Gradle Load Changes icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

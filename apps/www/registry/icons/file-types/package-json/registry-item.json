@@ -3,7 +3,7 @@
   "name": "icons-file-types-package-json",
   "type": "registry:ui",
   "title": "Package Json",
-  "description": "Package Json icon from File Types category.",
+  "description": "Package Json icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

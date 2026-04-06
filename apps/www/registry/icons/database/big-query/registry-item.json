@@ -3,7 +3,7 @@
   "name": "icons-database-big-query",
   "type": "registry:ui",
   "title": "Big Query",
-  "description": "Big Query icon from Database category.",
+  "description": "Big Query icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

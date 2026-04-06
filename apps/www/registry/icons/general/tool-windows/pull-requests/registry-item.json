@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-pull-requests",
   "type": "registry:ui",
   "title": "Pull Requests",
-  "description": "Pull Requests icon from General Tool Windows category.",
+  "description": "Pull Requests icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "pull-requests",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

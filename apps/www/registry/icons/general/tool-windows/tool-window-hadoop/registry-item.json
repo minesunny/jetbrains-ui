@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-hadoop",
   "type": "registry:ui",
   "title": "Tool Window Hadoop",
-  "description": "Tool Window Hadoop icon from General Tool Windows category.",
+  "description": "Tool Window Hadoop icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-hadoop",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

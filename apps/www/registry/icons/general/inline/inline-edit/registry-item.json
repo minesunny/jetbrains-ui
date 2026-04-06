@@ -3,7 +3,7 @@
   "name": "icons-general-inline-inline-edit",
   "type": "registry:ui",
   "title": "Inline Edit",
-  "description": "Inline Edit icon from General Inline category.",
+  "description": "Inline Edit icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "inline-edit",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

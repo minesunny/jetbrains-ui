@@ -3,7 +3,7 @@
   "name": "icons-build-task-group",
   "type": "registry:ui",
   "title": "Task Group",
-  "description": "Task Group icon from Build category.",
+  "description": "Task Group icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

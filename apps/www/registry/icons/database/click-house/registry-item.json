@@ -3,7 +3,7 @@
   "name": "icons-database-click-house",
   "type": "registry:ui",
   "title": "Click House",
-  "description": "Click House icon from Database category.",
+  "description": "Click House icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

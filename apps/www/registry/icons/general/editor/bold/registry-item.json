@@ -3,7 +3,7 @@
   "name": "icons-general-editor-bold",
   "type": "registry:ui",
   "title": "Bold",
-  "description": "Bold icon from General Editor category.",
+  "description": "Bold icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "bold",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-database-locked",
   "type": "registry:ui",
   "title": "Locked",
-  "description": "Locked icon from Database category.",
+  "description": "Locked icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

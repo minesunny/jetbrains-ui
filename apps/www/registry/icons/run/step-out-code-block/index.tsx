@@ -22,7 +22,7 @@ const StepOutCodeBlockLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="13" width="5" height="1" rx=".5" fill="#6C707E" />
+    <rect x={2} y={13} width={5} height={1} rx={0.5} fill="#6C707E" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -55,7 +55,7 @@ const StepOutCodeBlockDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <g clipPath="url(#a)">
-      <rect x="2" y="13" width="5" height="1" rx=".5" fill="#CED0D6" />
+      <rect x={2} y={13} width={5} height={1} rx={0.5} fill="#CED0D6" />
       <path
         fillRule="evenodd"
         clipRule="evenodd"

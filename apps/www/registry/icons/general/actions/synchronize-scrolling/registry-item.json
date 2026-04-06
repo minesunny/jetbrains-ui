@@ -3,7 +3,7 @@
   "name": "icons-general-actions-synchronize-scrolling",
   "type": "registry:ui",
   "title": "Synchronize Scrolling",
-  "description": "Synchronize Scrolling icon from General Actions category.",
+  "description": "Synchronize Scrolling icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "synchronize-scrolling",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

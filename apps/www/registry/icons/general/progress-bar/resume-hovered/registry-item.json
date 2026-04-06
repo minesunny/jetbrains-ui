@@ -3,7 +3,7 @@
   "name": "icons-general-progress-bar-resume-hovered",
   "type": "registry:ui",
   "title": "Resume Hovered",
-  "description": "Resume Hovered icon from General Progress Bar category.",
+  "description": "Resume Hovered icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "resume-hovered",
       "icon",
       "general",
-      "progress-bar",
       "jetbrains"
     ]
   }

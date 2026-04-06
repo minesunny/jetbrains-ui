@@ -22,7 +22,7 @@ const RestartFailedTestsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="12.5" cy="11.5" r="3.5" fill="#E55765" />
+    <circle cx={12.5} cy={11.5} r={3.5} fill="#E55765" />
     <path
       d="M12.5 9a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5M12.5 14a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"
       fill="#fff"
@@ -52,7 +52,7 @@ const RestartFailedTestsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="12.5" cy="11.5" r="3.5" fill="#DB5C5C" />
+    <circle cx={12.5} cy={11.5} r={3.5} fill="#DB5C5C" />
     <path
       d="M12.5 9a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5M12.5 14a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"
       fill="#fff"

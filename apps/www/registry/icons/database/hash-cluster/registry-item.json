@@ -3,7 +3,7 @@
   "name": "icons-database-hash-cluster",
   "type": "registry:ui",
   "title": "Hash Cluster",
-  "description": "Hash Cluster icon from Database category.",
+  "description": "Hash Cluster icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

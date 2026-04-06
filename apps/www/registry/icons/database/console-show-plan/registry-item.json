@@ -3,7 +3,7 @@
   "name": "icons-database-console-show-plan",
   "type": "registry:ui",
   "title": "Console Show Plan",
-  "description": "Console Show Plan icon from Database category.",
+  "description": "Console Show Plan icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

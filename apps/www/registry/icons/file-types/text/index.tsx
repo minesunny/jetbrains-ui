@@ -22,10 +22,10 @@ const TextLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="12" width="8" height="1" rx=".5" fill="#6C707E" />
-    <rect x="2" y="6" width="8" height="1" rx=".5" fill="#6C707E" />
-    <rect x="2" y="9" width="12" height="1" rx=".5" fill="#6C707E" />
-    <rect x="2" y="3" width="12" height="1" rx=".5" fill="#6C707E" />
+    <rect x={2} y={12} width={8} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={2} y={6} width={8} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={2} y={9} width={12} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={2} y={3} width={12} height={1} rx={0.5} fill="#6C707E" />
   </svg>
 );
 
@@ -47,10 +47,10 @@ const TextDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="12" width="8" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="2" y="6" width="8" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="2" y="9" width="12" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="2" y="3" width="12" height="1" rx=".5" fill="#CED0D6" />
+    <rect x={2} y={12} width={8} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={2} y={6} width={8} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={2} y={9} width={12} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={2} y={3} width={12} height={1} rx={0.5} fill="#CED0D6" />
   </svg>
 );
 

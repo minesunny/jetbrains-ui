@@ -30,5 +30,3 @@ export { Send } from './send';
 export type { SendProps } from './send';
 export { SendToEditor } from './send-to-editor';
 export type { SendToEditorProps } from './send-to-editor';
-export { svgNames } from '../types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

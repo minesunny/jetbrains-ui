@@ -3,7 +3,7 @@
   "name": "icons-general-windows-close",
   "type": "registry:ui",
   "title": "Close",
-  "description": "Close icon from General Windows category.",
+  "description": "Close icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "close",
       "icon",
       "general",
-      "windows",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-general-inline-new-line",
   "type": "registry:ui",
   "title": "New Line",
-  "description": "New Line icon from General Inline category.",
+  "description": "New Line icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "new-line",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

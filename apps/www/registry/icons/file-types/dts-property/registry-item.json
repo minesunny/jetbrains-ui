@@ -3,7 +3,7 @@
   "name": "icons-file-types-dts-property",
   "type": "registry:ui",
   "title": "Dts Property",
-  "description": "Dts Property icon from File Types category.",
+  "description": "Dts Property icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

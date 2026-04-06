@@ -3,7 +3,7 @@
   "name": "icons-vcs-comment-read",
   "type": "registry:ui",
   "title": "Comment Read",
-  "description": "Comment Read icon from Vcs category.",
+  "description": "Comment Read icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

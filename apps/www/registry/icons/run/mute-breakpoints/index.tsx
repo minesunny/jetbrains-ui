@@ -35,11 +35,11 @@ const MuteBreakpointsLight: FC<SvgProps> = ({
       fill="#DB3B4B"
     />
     <rect
-      x="13.657"
-      y="1.636"
-      width="1"
-      height="17"
-      rx=".5"
+      x={13.657}
+      y={1.636}
+      width={1}
+      height={17}
+      rx={0.5}
       transform="rotate(45 13.657 1.636)"
       fill="#6C707E"
     />
@@ -77,11 +77,11 @@ const MuteBreakpointsDark: FC<SvgProps> = ({
       fill="#DB5C5C"
     />
     <rect
-      x="13.657"
-      y="1.636"
-      width="1"
-      height="17"
-      rx=".5"
+      x={13.657}
+      y={1.636}
+      width={1}
+      height={17}
+      rx={0.5}
       transform="rotate(45 13.657 1.636)"
       fill="#CED0D6"
     />

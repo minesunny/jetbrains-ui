@@ -3,7 +3,7 @@
   "name": "icons-general-editor-italic",
   "type": "registry:ui",
   "title": "Italic",
-  "description": "Italic icon from General Editor category.",
+  "description": "Italic icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "italic",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

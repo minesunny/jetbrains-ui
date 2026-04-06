@@ -3,7 +3,7 @@
   "name": "icons-general-actions-diagram-diff",
   "type": "registry:ui",
   "title": "Diagram Diff",
-  "description": "Diagram Diff icon from General Actions category.",
+  "description": "Diagram Diff icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "diagram-diff",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

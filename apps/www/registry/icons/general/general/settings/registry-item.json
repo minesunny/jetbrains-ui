@@ -3,7 +3,7 @@
   "name": "icons-general-general-settings",
   "type": "registry:ui",
   "title": "Settings",
-  "description": "Settings icon from General General category.",
+  "description": "Settings icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "settings",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

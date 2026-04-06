@@ -3,7 +3,7 @@
   "name": "icons-general-general-undo",
   "type": "registry:ui",
   "title": "Undo",
-  "description": "Undo icon from General General category.",
+  "description": "Undo icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "undo",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

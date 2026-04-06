@@ -3,7 +3,7 @@
   "name": "icons-general-status-warning-outline",
   "type": "registry:ui",
   "title": "Warning Outline",
-  "description": "Warning Outline icon from General Status category.",
+  "description": "Warning Outline icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "warning-outline",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

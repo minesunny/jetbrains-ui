@@ -3,7 +3,7 @@
   "name": "icons-vcs-abort",
   "type": "registry:ui",
   "title": "Abort",
-  "description": "Abort icon from Vcs category.",
+  "description": "Abort icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

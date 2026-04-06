@@ -3,7 +3,7 @@
   "name": "icons-general-general-chevron-down",
   "type": "registry:ui",
   "title": "Chevron Down",
-  "description": "Chevron Down icon from General General category.",
+  "description": "Chevron Down icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "chevron-down",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

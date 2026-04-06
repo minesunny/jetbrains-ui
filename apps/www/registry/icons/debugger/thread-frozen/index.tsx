@@ -23,8 +23,8 @@ const ThreadFrozenLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <g clipPath="url(#a)" stroke="#6C707E">
-      <rect x="3.5" y="2.5" width="3" height="11" rx=".5" />
-      <rect x="9.5" y="2.5" width="3" height="11" rx=".5" />
+      <rect x={3.5} y={2.5} width={3} height={11} rx={0.5} />
+      <rect x={9.5} y={2.5} width={3} height={11} rx={0.5} />
     </g>
     <defs>
       <clipPath id="a">
@@ -53,8 +53,8 @@ const ThreadFrozenDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <g clipPath="url(#a)" stroke="#CED0D6">
-      <rect x="3.5" y="2.5" width="3" height="11" rx=".5" />
-      <rect x="9.5" y="2.5" width="3" height="11" rx=".5" />
+      <rect x={3.5} y={2.5} width={3} height={11} rx={0.5} />
+      <rect x={9.5} y={2.5} width={3} height={11} rx={0.5} />
     </g>
     <defs>
       <clipPath id="a">

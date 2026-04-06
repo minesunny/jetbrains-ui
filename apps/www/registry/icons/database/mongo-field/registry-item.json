@@ -3,7 +3,7 @@
   "name": "icons-database-mongo-field",
   "type": "registry:ui",
   "title": "Mongo Field",
-  "description": "Mongo Field icon from Database category.",
+  "description": "Mongo Field icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

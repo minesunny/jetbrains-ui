@@ -10,5 +10,3 @@ export { Stop } from './stop';
 export type { StopProps } from './stop';
 export { StopHovered } from './stop-hovered';
 export type { StopHoveredProps } from './stop-hovered';
-export { svgNames } from '../types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

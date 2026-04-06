@@ -3,7 +3,7 @@
   "name": "icons-vcs-disable-editing",
   "type": "registry:ui",
   "title": "Disable Editing",
-  "description": "Disable Editing icon from Vcs category.",
+  "description": "Disable Editing icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

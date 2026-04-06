@@ -3,7 +3,7 @@
   "name": "icons-general-actions-show-to-implement",
   "type": "registry:ui",
   "title": "Show To Implement",
-  "description": "Show To Implement icon from General Actions category.",
+  "description": "Show To Implement icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "show-to-implement",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

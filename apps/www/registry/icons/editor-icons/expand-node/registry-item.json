@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-expand-node",
   "type": "registry:ui",
   "title": "Expand Node",
-  "description": "Expand Node icon from Editor Icons category.",
+  "description": "Expand Node icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

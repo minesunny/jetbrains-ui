@@ -3,7 +3,7 @@
   "name": "icons-general-rating-feedback-rating-focused",
   "type": "registry:ui",
   "title": "Feedback Rating Focused",
-  "description": "Feedback Rating Focused icon from General Rating category.",
+  "description": "Feedback Rating Focused icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "feedback-rating-focused",
       "icon",
       "general",
-      "rating",
       "jetbrains"
     ]
   }

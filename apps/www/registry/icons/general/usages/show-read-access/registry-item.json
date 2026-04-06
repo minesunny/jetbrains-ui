@@ -3,7 +3,7 @@
   "name": "icons-general-usages-show-read-access",
   "type": "registry:ui",
   "title": "Show Read Access",
-  "description": "Show Read Access icon from General Usages category.",
+  "description": "Show Read Access icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "show-read-access",
       "icon",
       "general",
-      "usages",
       "jetbrains"
     ]
   }

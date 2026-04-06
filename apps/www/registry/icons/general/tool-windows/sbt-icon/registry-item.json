@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-sbt-icon",
   "type": "registry:ui",
   "title": "Sbt Icon",
-  "description": "Sbt Icon icon from General Tool Windows category.",
+  "description": "Sbt Icon icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "sbt-icon",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

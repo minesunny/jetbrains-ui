@@ -22,11 +22,11 @@ const SuccessLoginLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="24" cy="24" r="22" fill="#55A76A" />
+    <circle cx={24} cy={24} r={22} fill="#55A76A" />
     <path
       d="m15 24 7 7 12-13"
       stroke="#fff"
-      strokeWidth="3"
+      strokeWidth={3}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -51,11 +51,11 @@ const SuccessLoginDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="24" cy="24" r="22" fill="#57965C" />
+    <circle cx={24} cy={24} r={22} fill="#57965C" />
     <path
       d="m15 24 7 7 12-13"
       stroke="#fff"
-      strokeWidth="3"
+      strokeWidth={3}
       strokeLinecap="round"
       strokeLinejoin="round"
     />

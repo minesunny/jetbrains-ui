@@ -3,7 +3,7 @@
   "name": "icons-general-general-down",
   "type": "registry:ui",
   "title": "Down",
-  "description": "Down icon from General General category.",
+  "description": "Down icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "down",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

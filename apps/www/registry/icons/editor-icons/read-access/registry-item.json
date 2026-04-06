@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-read-access",
   "type": "registry:ui",
   "title": "Read Access",
-  "description": "Read Access icon from Editor Icons category.",
+  "description": "Read Access icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

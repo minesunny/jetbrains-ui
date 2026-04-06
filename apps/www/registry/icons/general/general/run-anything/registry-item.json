@@ -3,7 +3,7 @@
   "name": "icons-general-general-run-anything",
   "type": "registry:ui",
   "title": "Run Anything",
-  "description": "Run Anything icon from General General category.",
+  "description": "Run Anything icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "run-anything",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

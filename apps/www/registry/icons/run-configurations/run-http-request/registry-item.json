@@ -3,7 +3,7 @@
   "name": "icons-run-configurations-run-http-request",
   "type": "registry:ui",
   "title": "Run Http Request",
-  "description": "Run Http Request icon from Run Configurations category.",
+  "description": "Run Http Request icon from run-configurations category.",
   "registryDependencies": [
     "icons-run-configurations-types"
   ],

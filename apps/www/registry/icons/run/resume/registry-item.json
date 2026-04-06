@@ -3,7 +3,7 @@
   "name": "icons-run-resume",
   "type": "registry:ui",
   "title": "Resume",
-  "description": "Resume icon from Run category.",
+  "description": "Resume icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

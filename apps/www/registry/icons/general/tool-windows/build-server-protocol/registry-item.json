@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-build-server-protocol",
   "type": "registry:ui",
   "title": "Build Server Protocol",
-  "description": "Build Server Protocol icon from General Tool Windows category.",
+  "description": "Build Server Protocol icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "build-server-protocol",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

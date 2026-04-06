@@ -3,7 +3,7 @@
   "name": "icons-file-types-source-map",
   "type": "registry:ui",
   "title": "Source Map",
-  "description": "Source Map icon from File Types category.",
+  "description": "Source Map icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-obsolete",
   "type": "registry:ui",
   "title": "Breakpoint Obsolete",
-  "description": "Breakpoint Obsolete icon from Breakpoints category.",
+  "description": "Breakpoint Obsolete icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

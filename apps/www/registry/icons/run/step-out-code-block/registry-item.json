@@ -3,7 +3,7 @@
   "name": "icons-run-step-out-code-block",
   "type": "registry:ui",
   "title": "Step Out Code Block",
-  "description": "Step Out Code Block icon from Run category.",
+  "description": "Step Out Code Block icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

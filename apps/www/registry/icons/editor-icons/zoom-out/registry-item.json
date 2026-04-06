@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-zoom-out",
   "type": "registry:ui",
   "title": "Zoom Out",
-  "description": "Zoom Out icon from Editor Icons category.",
+  "description": "Zoom Out icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

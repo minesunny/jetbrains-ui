@@ -3,7 +3,7 @@
   "name": "icons-general-general-groups",
   "type": "registry:ui",
   "title": "Groups",
-  "description": "Groups icon from General General category.",
+  "description": "Groups icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "groups",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

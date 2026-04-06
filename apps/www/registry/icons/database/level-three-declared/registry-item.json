@@ -3,7 +3,7 @@
   "name": "icons-database-level-three-declared",
   "type": "registry:ui",
   "title": "Level Three Declared",
-  "description": "Level Three Declared icon from Database category.",
+  "description": "Level Three Declared icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

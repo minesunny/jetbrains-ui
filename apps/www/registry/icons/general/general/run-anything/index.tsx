@@ -22,12 +22,12 @@ const RunAnythingLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" stroke="#6C707E" />
+    <rect x={1.5} y={2.5} width={13} height={11} rx={1.5} stroke="#6C707E" />
     <path
       d="M7.95 9.327a.2.2 0 0 1 0 .346l-3.15 1.82a.2.2 0 0 1-.3-.175V7.682a.2.2 0 0 1 .3-.174z"
       stroke="#6C707E"
     />
-    <path stroke="#6C707E" strokeWidth=".5" d="M1.25 5.25H14.75V5.75H1.25z" />
+    <path stroke="#6C707E" strokeWidth={0.5} d="M1.25 5.25H14.75V5.75H1.25z" />
   </svg>
 );
 
@@ -49,12 +49,12 @@ const RunAnythingDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" stroke="#CED0D6" />
+    <rect x={1.5} y={2.5} width={13} height={11} rx={1.5} stroke="#CED0D6" />
     <path
       d="M7.95 9.327a.2.2 0 0 1 0 .346l-3.15 1.82a.2.2 0 0 1-.3-.175V7.682a.2.2 0 0 1 .3-.174z"
       stroke="#CED0D6"
     />
-    <path stroke="#CED0D6" strokeWidth=".5" d="M1.25 5.25H14.75V5.75H1.25z" />
+    <path stroke="#CED0D6" strokeWidth={0.5} d="M1.25 5.25H14.75V5.75H1.25z" />
   </svg>
 );
 

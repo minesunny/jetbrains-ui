@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-django",
   "type": "registry:ui",
   "title": "Tool Window Django",
-  "description": "Tool Window Django icon from General Tool Windows category.",
+  "description": "Tool Window Django icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-django",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

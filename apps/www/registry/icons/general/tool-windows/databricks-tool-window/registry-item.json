@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-databricks-tool-window",
   "type": "registry:ui",
   "title": "Databricks Tool Window",
-  "description": "Databricks Tool Window icon from General Tool Windows category.",
+  "description": "Databricks Tool Window icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "databricks-tool-window",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

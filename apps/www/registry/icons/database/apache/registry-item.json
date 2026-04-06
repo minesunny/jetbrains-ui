@@ -3,7 +3,7 @@
   "name": "icons-database-apache",
   "type": "registry:ui",
   "title": "Apache",
-  "description": "Apache icon from Database category.",
+  "description": "Apache icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-spring",
   "type": "registry:ui",
   "title": "Spring",
-  "description": "Spring icon from General Tool Windows category.",
+  "description": "Spring icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "spring",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

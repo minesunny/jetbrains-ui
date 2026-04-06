@@ -3,7 +3,7 @@
   "name": "icons-database-apache-ignite",
   "type": "registry:ui",
   "title": "Apache Ignite",
-  "description": "Apache Ignite icon from Database category.",
+  "description": "Apache Ignite icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

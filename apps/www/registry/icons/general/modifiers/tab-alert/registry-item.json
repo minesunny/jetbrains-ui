@@ -3,7 +3,7 @@
   "name": "icons-general-modifiers-tab-alert",
   "type": "registry:ui",
   "title": "Tab Alert",
-  "description": "Tab Alert icon from General Modifiers category.",
+  "description": "Tab Alert icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tab-alert",
       "icon",
       "general",
-      "modifiers",
       "jetbrains"
     ]
   }

@@ -23,11 +23,11 @@ const ChameleonLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#F2FCF3"
       stroke="#208A3C"
     />
@@ -57,11 +57,11 @@ const ChameleonDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#253627"
       stroke="#57965C"
     />

@@ -3,7 +3,7 @@
   "name": "icons-database-binary-data",
   "type": "registry:ui",
   "title": "Binary Data",
-  "description": "Binary Data icon from Database category.",
+  "description": "Binary Data icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-file-types-jest",
   "type": "registry:ui",
   "title": "Jest",
-  "description": "Jest icon from File Types category.",
+  "description": "Jest icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

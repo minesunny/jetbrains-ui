@@ -3,7 +3,7 @@
   "name": "icons-file-types-jspx",
   "type": "registry:ui",
   "title": "Jspx",
-  "description": "Jspx icon from File Types category.",
+  "description": "Jspx icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

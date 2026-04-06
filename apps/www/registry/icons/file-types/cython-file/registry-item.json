@@ -3,7 +3,7 @@
   "name": "icons-file-types-cython-file",
   "type": "registry:ui",
   "title": "Cython File",
-  "description": "Cython File icon from File Types category.",
+  "description": "Cython File icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

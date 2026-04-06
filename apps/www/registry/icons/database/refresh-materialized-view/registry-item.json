@@ -3,7 +3,7 @@
   "name": "icons-database-refresh-materialized-view",
   "type": "registry:ui",
   "title": "Refresh Materialized View",
-  "description": "Refresh Materialized View icon from Database category.",
+  "description": "Refresh Materialized View icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

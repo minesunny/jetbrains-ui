@@ -3,7 +3,7 @@
   "name": "icons-general-access-modifiers-access-public",
   "type": "registry:ui",
   "title": "Access Public",
-  "description": "Access Public icon from General Access Modifiers category.",
+  "description": "Access Public icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "access-public",
       "icon",
       "general",
-      "access-modifiers",
       "jetbrains"
     ]
   }

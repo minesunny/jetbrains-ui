@@ -3,7 +3,7 @@
   "name": "icons-file-types-conditional-statement",
   "type": "registry:ui",
   "title": "Conditional Statement",
-  "description": "Conditional Statement icon from File Types category.",
+  "description": "Conditional Statement icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-actions-unselect-all",
   "type": "registry:ui",
   "title": "Unselect All",
-  "description": "Unselect All icon from General Actions category.",
+  "description": "Unselect All icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "unselect-all",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

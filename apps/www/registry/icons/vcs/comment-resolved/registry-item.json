@@ -3,7 +3,7 @@
   "name": "icons-vcs-comment-resolved",
   "type": "registry:ui",
   "title": "Comment Resolved",
-  "description": "Comment Resolved icon from Vcs category.",
+  "description": "Comment Resolved icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

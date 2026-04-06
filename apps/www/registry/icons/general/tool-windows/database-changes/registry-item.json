@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-database-changes",
   "type": "registry:ui",
   "title": "Database Changes",
-  "description": "Database Changes icon from General Tool Windows category.",
+  "description": "Database Changes icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "database-changes",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

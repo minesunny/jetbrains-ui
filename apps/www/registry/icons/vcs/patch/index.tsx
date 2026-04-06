@@ -29,11 +29,11 @@ const PatchLight: FC<SvgProps> = ({
       fill="#6C707E"
     />
     <rect
-      x="13"
-      y="13"
-      width="1"
-      height="10"
-      rx=".5"
+      x={13}
+      y={13}
+      width={1}
+      height={10}
+      rx={0.5}
       transform="rotate(90 13 13)"
       fill="#6C707E"
     />
@@ -65,11 +65,11 @@ const PatchDark: FC<SvgProps> = ({
       fill="#CED0D6"
     />
     <rect
-      x="13"
-      y="13"
-      width="1"
-      height="10"
-      rx=".5"
+      x={13}
+      y={13}
+      width={1}
+      height={10}
+      rx={0.5}
       transform="rotate(90 13 13)"
       fill="#CED0D6"
     />

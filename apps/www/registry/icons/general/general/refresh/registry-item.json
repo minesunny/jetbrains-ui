@@ -3,7 +3,7 @@
   "name": "icons-general-general-refresh",
   "type": "registry:ui",
   "title": "Refresh",
-  "description": "Refresh icon from General General category.",
+  "description": "Refresh icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "refresh",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

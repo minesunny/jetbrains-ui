@@ -3,7 +3,7 @@
   "name": "icons-file-types-rst",
   "type": "registry:ui",
   "title": "Rst",
-  "description": "Rst icon from File Types category.",
+  "description": "Rst icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

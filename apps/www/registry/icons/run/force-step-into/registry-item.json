@@ -3,7 +3,7 @@
   "name": "icons-run-force-step-into",
   "type": "registry:ui",
   "title": "Force Step Into",
-  "description": "Force Step Into icon from Run category.",
+  "description": "Force Step Into icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

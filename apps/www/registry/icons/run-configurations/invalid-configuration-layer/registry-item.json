@@ -3,7 +3,7 @@
   "name": "icons-run-configurations-invalid-configuration-layer",
   "type": "registry:ui",
   "title": "Invalid Configuration Layer",
-  "description": "Invalid Configuration Layer icon from Run Configurations category.",
+  "description": "Invalid Configuration Layer icon from run-configurations category.",
   "registryDependencies": [
     "icons-run-configurations-types"
   ],

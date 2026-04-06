@@ -3,7 +3,7 @@
   "name": "icons-general-general-project-wide-analysis-on",
   "type": "registry:ui",
   "title": "Project Wide Analysis On",
-  "description": "Project Wide Analysis On icon from General General category.",
+  "description": "Project Wide Analysis On icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "project-wide-analysis-on",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

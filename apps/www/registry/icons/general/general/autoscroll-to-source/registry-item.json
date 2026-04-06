@@ -3,7 +3,7 @@
   "name": "icons-general-general-autoscroll-to-source",
   "type": "registry:ui",
   "title": "Autoscroll To Source",
-  "description": "Autoscroll To Source icon from General General category.",
+  "description": "Autoscroll To Source icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "autoscroll-to-source",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

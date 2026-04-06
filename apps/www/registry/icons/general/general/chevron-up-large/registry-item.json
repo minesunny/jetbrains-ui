@@ -3,7 +3,7 @@
   "name": "icons-general-general-chevron-up-large",
   "type": "registry:ui",
   "title": "Chevron Up Large",
-  "description": "Chevron Up Large icon from General General category.",
+  "description": "Chevron Up Large icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "chevron-up-large",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

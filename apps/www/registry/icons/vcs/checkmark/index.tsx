@@ -25,7 +25,7 @@ const CheckmarkLight: FC<SvgProps> = ({
     <path
       d="m1.5 7.25 3.5 3.5 7.5-7.5"
       stroke="#fff"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
     />
   </svg>
@@ -52,7 +52,7 @@ const CheckmarkDark: FC<SvgProps> = ({
     <path
       d="m1.5 7.25 3.5 3.5 7.5-7.5"
       stroke="#fff"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
     />
   </svg>

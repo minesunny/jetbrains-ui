@@ -3,7 +3,7 @@
   "name": "icons-file-types-svelte",
   "type": "registry:ui",
   "title": "Svelte",
-  "description": "Svelte icon from File Types category.",
+  "description": "Svelte icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

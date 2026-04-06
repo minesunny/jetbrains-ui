@@ -3,7 +3,7 @@
   "name": "icons-vcs-revert",
   "type": "registry:ui",
   "title": "Revert",
-  "description": "Revert icon from Vcs category.",
+  "description": "Revert icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

@@ -23,11 +23,11 @@ const ContextsLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="4.5"
-      width="9"
-      height="9"
-      rx="1.5"
+      x={2.5}
+      y={4.5}
+      width={9}
+      height={9}
+      rx={1.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
@@ -58,11 +58,11 @@ const ContextsDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="4.5"
-      width="9"
-      height="9"
-      rx="1.5"
+      x={2.5}
+      y={4.5}
+      width={9}
+      height={9}
+      rx={1.5}
       fill="#2E436E"
       stroke="#548AF7"
     />

@@ -3,7 +3,7 @@
   "name": "icons-general-status-success-dialog",
   "type": "registry:ui",
   "title": "Success Dialog",
-  "description": "Success Dialog icon from General Status category.",
+  "description": "Success Dialog icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "success-dialog",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

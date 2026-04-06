@@ -3,7 +3,7 @@
   "name": "icons-file-types-idl",
   "type": "registry:ui",
   "title": "Idl",
-  "description": "Idl icon from File Types category.",
+  "description": "Idl icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

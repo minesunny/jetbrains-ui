@@ -3,7 +3,7 @@
   "name": "icons-file-types-dictionary",
   "type": "registry:ui",
   "title": "Dictionary",
-  "description": "Dictionary icon from File Types category.",
+  "description": "Dictionary icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

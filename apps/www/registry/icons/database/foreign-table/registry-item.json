@@ -3,7 +3,7 @@
   "name": "icons-database-foreign-table",
   "type": "registry:ui",
   "title": "Foreign Table",
-  "description": "Foreign Table icon from Database category.",
+  "description": "Foreign Table icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

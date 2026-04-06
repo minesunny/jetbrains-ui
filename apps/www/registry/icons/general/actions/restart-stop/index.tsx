@@ -23,11 +23,11 @@ const RestartStopLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="9.5"
-      y="9.5"
-      width="6"
-      height="6"
-      rx="1.5"
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1.5}
       fill="#FFF7F7"
       stroke="#DB3B4B"
     />
@@ -57,11 +57,11 @@ const RestartStopDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="9.5"
-      y="9.5"
-      width="6"
-      height="6"
-      rx="1.5"
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1.5}
       fill="#402929"
       stroke="#DB5C5C"
     />

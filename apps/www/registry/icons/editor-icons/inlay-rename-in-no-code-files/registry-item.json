@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inlay-rename-in-no-code-files",
   "type": "registry:ui",
   "title": "Inlay Rename In No Code Files",
-  "description": "Inlay Rename In No Code Files icon from Editor Icons category.",
+  "description": "Inlay Rename In No Code Files icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

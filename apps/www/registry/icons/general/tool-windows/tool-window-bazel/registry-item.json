@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-bazel",
   "type": "registry:ui",
   "title": "Tool Window Bazel",
-  "description": "Tool Window Bazel icon from General Tool Windows category.",
+  "description": "Tool Window Bazel icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-bazel",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

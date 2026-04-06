@@ -3,7 +3,7 @@
   "name": "icons-general-windows-help",
   "type": "registry:ui",
   "title": "Help",
-  "description": "Help icon from General Windows category.",
+  "description": "Help icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "help",
       "icon",
       "general",
-      "windows",
       "jetbrains"
     ]
   }

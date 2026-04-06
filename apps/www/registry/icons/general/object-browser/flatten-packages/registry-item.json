@@ -3,7 +3,7 @@
   "name": "icons-general-object-browser-flatten-packages",
   "type": "registry:ui",
   "title": "Flatten Packages",
-  "description": "Flatten Packages icon from General Object Browser category.",
+  "description": "Flatten Packages icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "flatten-packages",
       "icon",
       "general",
-      "object-browser",
       "jetbrains"
     ]
   }

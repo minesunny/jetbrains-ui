@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inlay-spring",
   "type": "registry:ui",
   "title": "Inlay Spring",
-  "description": "Inlay Spring icon from Editor Icons category.",
+  "description": "Inlay Spring icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

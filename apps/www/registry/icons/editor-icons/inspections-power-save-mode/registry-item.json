@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inspections-power-save-mode",
   "type": "registry:ui",
   "title": "Inspections Power Save Mode",
-  "description": "Inspections Power Save Mode icon from Editor Icons category.",
+  "description": "Inspections Power Save Mode icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

@@ -22,7 +22,7 @@ const ResumeHoveredLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle opacity=".2" cx="8" cy="8" r="8" fill="#313547" />
+    <circle opacity={0.2} cx={8} cy={8} r={8} fill="#313547" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -50,7 +50,7 @@ const ResumeHoveredDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle opacity=".19" cx="8" cy="8" r="8" fill="#F0F1F2" />
+    <circle opacity={0.19} cx={8} cy={8} r={8} fill="#F0F1F2" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

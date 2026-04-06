@@ -3,7 +3,7 @@
   "name": "icons-file-types-any-type",
   "type": "registry:ui",
   "title": "Any Type",
-  "description": "Any Type icon from File Types category.",
+  "description": "Any Type icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type MimerSQLProps = SvgProps;
+export type MimerSqlProps = SvgProps;
 
-const MimerSQLLight: FC<SvgProps> = ({
+const MimerSqlLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -37,7 +37,7 @@ const MimerSQLLight: FC<SvgProps> = ({
   </svg>
 );
 
-const MimerSQLDark: FC<SvgProps> = ({
+const MimerSqlDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -70,14 +70,14 @@ const MimerSQLDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const MimerSQL: FC<MimerSQLProps> = ({
+export const MimerSql: FC<MimerSqlProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? MimerSQLLight : MimerSQLDark;
+  const SvgComponent = mode === 'light' ? MimerSqlLight : MimerSqlDark;
 
   return (
     <SvgComponent

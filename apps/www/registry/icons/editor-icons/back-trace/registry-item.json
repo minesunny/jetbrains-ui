@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-back-trace",
   "type": "registry:ui",
   "title": "Back Trace",
-  "description": "Back Trace icon from Editor Icons category.",
+  "description": "Back Trace icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

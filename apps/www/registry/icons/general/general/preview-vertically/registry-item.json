@@ -3,7 +3,7 @@
   "name": "icons-general-general-preview-vertically",
   "type": "registry:ui",
   "title": "Preview Vertically",
-  "description": "Preview Vertically icon from General General category.",
+  "description": "Preview Vertically icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "preview-vertically",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

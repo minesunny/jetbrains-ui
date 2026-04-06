@@ -3,7 +3,7 @@
   "name": "icons-file-types-chameleon",
   "type": "registry:ui",
   "title": "Chameleon",
-  "description": "Chameleon icon from File Types category.",
+  "description": "Chameleon icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

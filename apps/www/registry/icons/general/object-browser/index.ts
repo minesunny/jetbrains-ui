@@ -18,5 +18,3 @@ export { SortByUsage } from './sort-by-usage';
 export type { SortByUsageProps } from './sort-by-usage';
 export { SortByVisibility } from './sort-by-visibility';
 export type { SortByVisibilityProps } from './sort-by-visibility';
-export { svgNames } from '../types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

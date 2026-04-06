@@ -3,7 +3,7 @@
   "name": "icons-general-actions-lightning",
   "type": "registry:ui",
   "title": "Lightning",
-  "description": "Lightning icon from General Actions category.",
+  "description": "Lightning icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "lightning",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

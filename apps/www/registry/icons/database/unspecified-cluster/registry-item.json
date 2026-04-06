@@ -3,7 +3,7 @@
   "name": "icons-database-unspecified-cluster",
   "type": "registry:ui",
   "title": "Unspecified Cluster",
-  "description": "Unspecified Cluster icon from Database category.",
+  "description": "Unspecified Cluster icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

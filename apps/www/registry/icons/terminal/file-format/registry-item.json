@@ -3,7 +3,7 @@
   "name": "icons-terminal-file-format",
   "type": "registry:ui",
   "title": "File Format",
-  "description": "File Format icon from Terminal category.",
+  "description": "File Format icon from terminal category.",
   "registryDependencies": [
     "icons-terminal-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-debugger-prompt-input-history",
   "type": "registry:ui",
   "title": "Prompt Input History",
-  "description": "Prompt Input History icon from Debugger category.",
+  "description": "Prompt Input History icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

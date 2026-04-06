@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type FastAPIProps = SvgProps;
+export type FastApiProps = SvgProps;
 
-const FastAPILight: FC<SvgProps> = ({
+const FastApiLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -22,12 +22,12 @@ const FastAPILight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="7" fill="#019486" />
+    <circle cx={8} cy={8} r={7} fill="#019486" />
     <path d="M7.5 4 4 12l7-5H8l4-3z" fill="#fff" />
   </svg>
 );
 
-const FastAPIDark: FC<SvgProps> = ({
+const FastApiDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -45,19 +45,19 @@ const FastAPIDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="7" fill="#019486" />
+    <circle cx={8} cy={8} r={7} fill="#019486" />
     <path d="M7.5 4 4 12l7-5H8l4-3z" fill="#fff" />
   </svg>
 );
 
-export const FastAPI: FC<FastAPIProps> = ({
+export const FastApi: FC<FastApiProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? FastAPILight : FastAPIDark;
+  const SvgComponent = mode === 'light' ? FastApiLight : FastApiDark;
 
   return (
     <SvgComponent

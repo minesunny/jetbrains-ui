@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-ant",
   "type": "registry:ui",
   "title": "Ant",
-  "description": "Ant icon from General Tool Windows category.",
+  "description": "Ant icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "ant",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

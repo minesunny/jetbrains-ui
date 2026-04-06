@@ -3,7 +3,7 @@
   "name": "icons-debugger-watch-last-return-value",
   "type": "registry:ui",
   "title": "Watch Last Return Value",
-  "description": "Watch Last Return Value icon from Debugger category.",
+  "description": "Watch Last Return Value icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

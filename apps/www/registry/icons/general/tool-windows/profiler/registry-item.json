@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-profiler",
   "type": "registry:ui",
   "title": "Profiler",
-  "description": "Profiler icon from General Tool Windows category.",
+  "description": "Profiler icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "profiler",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

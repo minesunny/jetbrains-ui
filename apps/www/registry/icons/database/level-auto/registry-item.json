@@ -3,7 +3,7 @@
   "name": "icons-database-level-auto",
   "type": "registry:ui",
   "title": "Level Auto",
-  "description": "Level Auto icon from Database category.",
+  "description": "Level Auto icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

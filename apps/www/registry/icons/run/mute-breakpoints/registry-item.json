@@ -3,7 +3,7 @@
   "name": "icons-run-mute-breakpoints",
   "type": "registry:ui",
   "title": "Mute Breakpoints",
-  "description": "Mute Breakpoints icon from Run category.",
+  "description": "Mute Breakpoints icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

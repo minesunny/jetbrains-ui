@@ -3,7 +3,7 @@
   "name": "icons-file-types-workspace",
   "type": "registry:ui",
   "title": "Workspace",
-  "description": "Workspace icon from File Types category.",
+  "description": "Workspace icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

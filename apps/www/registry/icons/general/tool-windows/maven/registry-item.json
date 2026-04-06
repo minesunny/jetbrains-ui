@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-maven",
   "type": "registry:ui",
   "title": "Maven",
-  "description": "Maven icon from General Tool Windows category.",
+  "description": "Maven icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "maven",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

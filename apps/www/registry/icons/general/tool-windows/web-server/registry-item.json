@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-web-server",
   "type": "registry:ui",
   "title": "Web Server",
-  "description": "Web Server icon from General Tool Windows category.",
+  "description": "Web Server icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "web-server",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

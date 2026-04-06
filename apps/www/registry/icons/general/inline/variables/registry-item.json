@@ -3,7 +3,7 @@
   "name": "icons-general-inline-variables",
   "type": "registry:ui",
   "title": "Variables",
-  "description": "Variables icon from General Inline category.",
+  "description": "Variables icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "variables",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

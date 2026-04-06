@@ -3,7 +3,7 @@
   "name": "icons-file-types-image",
   "type": "registry:ui",
   "title": "Image",
-  "description": "Image icon from File Types category.",
+  "description": "Image icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

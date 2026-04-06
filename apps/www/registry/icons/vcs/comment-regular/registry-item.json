@@ -3,7 +3,7 @@
   "name": "icons-vcs-comment-regular",
   "type": "registry:ui",
   "title": "Comment Regular",
-  "description": "Comment Regular icon from Vcs category.",
+  "description": "Comment Regular icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

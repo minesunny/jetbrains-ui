@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-package-manager",
   "type": "registry:ui",
   "title": "Package Manager",
-  "description": "Package Manager icon from General Tool Windows category.",
+  "description": "Package Manager icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "package-manager",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

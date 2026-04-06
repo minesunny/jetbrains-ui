@@ -3,7 +3,7 @@
   "name": "icons-database-pin-selected-hovered",
   "type": "registry:ui",
   "title": "Pin Selected Hovered",
-  "description": "Pin Selected Hovered icon from Database category.",
+  "description": "Pin Selected Hovered icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

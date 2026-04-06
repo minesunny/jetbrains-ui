@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-concurrency-diagram-toolwindow",
   "type": "registry:ui",
   "title": "Concurrency Diagram Toolwindow",
-  "description": "Concurrency Diagram Toolwindow icon from General Tool Windows category.",
+  "description": "Concurrency Diagram Toolwindow icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "concurrency-diagram-toolwindow",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

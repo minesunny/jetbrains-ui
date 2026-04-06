@@ -3,7 +3,7 @@
   "name": "icons-build-maven-project",
   "type": "registry:ui",
   "title": "Maven Project",
-  "description": "Maven Project icon from Build category.",
+  "description": "Maven Project icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

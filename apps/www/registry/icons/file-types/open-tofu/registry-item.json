@@ -3,7 +3,7 @@
   "name": "icons-file-types-open-tofu",
   "type": "registry:ui",
   "title": "Open Tofu",
-  "description": "Open Tofu icon from File Types category.",
+  "description": "Open Tofu icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

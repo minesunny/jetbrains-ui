@@ -3,7 +3,7 @@
   "name": "icons-general-editor-link",
   "type": "registry:ui",
   "title": "Link",
-  "description": "Link icon from General Editor category.",
+  "description": "Link icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "link",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

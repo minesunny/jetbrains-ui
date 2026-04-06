@@ -3,7 +3,7 @@
   "name": "icons-database-operator-class",
   "type": "registry:ui",
   "title": "Operator Class",
-  "description": "Operator Class icon from Database category.",
+  "description": "Operator Class icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

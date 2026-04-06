@@ -3,7 +3,7 @@
   "name": "icons-database-mysql",
   "type": "registry:ui",
   "title": "Mysql",
-  "description": "Mysql icon from Database category.",
+  "description": "Mysql icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

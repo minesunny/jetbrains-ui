@@ -3,7 +3,7 @@
   "name": "icons-database-ibm",
   "type": "registry:ui",
   "title": "Ibm",
-  "description": "Ibm icon from Database category.",
+  "description": "Ibm icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

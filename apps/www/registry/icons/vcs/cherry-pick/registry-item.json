@@ -3,7 +3,7 @@
   "name": "icons-vcs-cherry-pick",
   "type": "registry:ui",
   "title": "Cherry Pick",
-  "description": "Cherry Pick icon from Vcs category.",
+  "description": "Cherry Pick icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

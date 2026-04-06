@@ -3,7 +3,7 @@
   "name": "icons-general-actions-checked",
   "type": "registry:ui",
   "title": "Checked",
-  "description": "Checked icon from General Actions category.",
+  "description": "Checked icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "checked",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

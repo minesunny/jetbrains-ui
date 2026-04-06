@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-quickfix-bulb",
   "type": "registry:ui",
   "title": "Quickfix Bulb",
-  "description": "Quickfix Bulb icon from Editor Icons category.",
+  "description": "Quickfix Bulb icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

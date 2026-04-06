@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-task",
   "type": "registry:ui",
   "title": "Task",
-  "description": "Task icon from General Tool Windows category.",
+  "description": "Task icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "task",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

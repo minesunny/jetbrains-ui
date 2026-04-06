@@ -3,7 +3,7 @@
   "name": "icons-file-types-haskell",
   "type": "registry:ui",
   "title": "Haskell",
-  "description": "Haskell icon from File Types category.",
+  "description": "Haskell icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

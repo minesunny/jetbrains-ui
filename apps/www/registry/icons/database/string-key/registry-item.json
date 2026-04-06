@@ -3,7 +3,7 @@
   "name": "icons-database-string-key",
   "type": "registry:ui",
   "title": "String Key",
-  "description": "String Key icon from Database category.",
+  "description": "String Key icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

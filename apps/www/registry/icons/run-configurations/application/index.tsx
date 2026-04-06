@@ -23,11 +23,11 @@ const ApplicationLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="1.5"
-      y="2.5"
-      width="13"
-      height="11"
-      rx="1.5"
+      x={1.5}
+      y={2.5}
+      width={13}
+      height={11}
+      rx={1.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
@@ -54,7 +54,7 @@ const ApplicationDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <g clipPath="url(#a)" stroke="#548AF7">
-      <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" fill="#25324D" />
+      <rect x={1.5} y={2.5} width={13} height={11} rx={1.5} fill="#25324D" />
       <path d="M4 5.5h1M7 5.5h1" strokeLinecap="round" />
     </g>
     <defs>

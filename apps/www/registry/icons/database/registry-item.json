@@ -14,6 +14,31 @@
       "target": "components/jetbrains-ui/icons/database/index.ts"
     },
     {
+      "path": "registry/icons/database/sqldml-statement/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sqldml-statement/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/sql-group-by-type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sql-group-by-type/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/sql-other-statement/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sql-other-statement/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/sql-select-statement/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sql-select-statement/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/udf-script/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/udf-script/index.tsx"
+    },
+    {
       "path": "registry/icons/database/access-method/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/access-method/index.tsx"
@@ -29,44 +54,9 @@
       "target": "components/jetbrains-ui/icons/database/aggregate/index.tsx"
     },
     {
-      "path": "registry/icons/database/apache/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/apache/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/apache-derby/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/apache-derby/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/apache-ignite/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/apache-ignite/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/apache-phoenix/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/apache-phoenix/index.tsx"
-    },
-    {
       "path": "registry/icons/database/argument/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/argument/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/athena/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/athena/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/azure/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/azure/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/big-query/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/big-query/index.tsx"
     },
     {
       "path": "registry/icons/database/binary-data/index.tsx",
@@ -84,11 +74,6 @@
       "target": "components/jetbrains-ui/icons/database/body/index.tsx"
     },
     {
-      "path": "registry/icons/database/cassandra/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/cassandra/index.tsx"
-    },
-    {
       "path": "registry/icons/database/cassandra-file-type/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/cassandra-file-type/index.tsx"
@@ -97,16 +82,6 @@
       "path": "registry/icons/database/check-constraint/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/check-constraint/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/click-house/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/click-house/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/cockroach-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/cockroach-db/index.tsx"
     },
     {
       "path": "registry/icons/database/collation/index.tsx",
@@ -239,11 +214,6 @@
       "target": "components/jetbrains-ui/icons/database/console-show-plan/index.tsx"
     },
     {
-      "path": "registry/icons/database/couchbase/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/couchbase/index.tsx"
-    },
-    {
       "path": "registry/icons/database/data-file/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/data-file/index.tsx"
@@ -289,21 +259,6 @@
       "target": "components/jetbrains-ui/icons/database/database-objects-group/index.tsx"
     },
     {
-      "path": "registry/icons/database/databricks/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/databricks/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/db-index/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/db-index/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/db2/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/db2/index.tsx"
-    },
-    {
       "path": "registry/icons/database/ddl-data-source-overlay/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/ddl-data-source-overlay/index.tsx"
@@ -319,26 +274,6 @@
       "target": "components/jetbrains-ui/icons/database/default-constraint/index.tsx"
     },
     {
-      "path": "registry/icons/database/denodo/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/denodo/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/document-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/document-db/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/duck-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/duck-db/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/dynamo-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/dynamo-db/index.tsx"
-    },
-    {
       "path": "registry/icons/database/edit-data/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/edit-data/index.tsx"
@@ -347,16 +282,6 @@
       "path": "registry/icons/database/editor-output/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/editor-output/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/elasticsearch/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/elasticsearch/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/exasol/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/exasol/index.tsx"
     },
     {
       "path": "registry/icons/database/extension/index.tsx",
@@ -372,11 +297,6 @@
       "path": "registry/icons/database/file-format/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/file-format/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/firebird/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/firebird/index.tsx"
     },
     {
       "path": "registry/icons/database/foreign-datawrapper/index.tsx",
@@ -424,34 +344,9 @@
       "target": "components/jetbrains-ui/icons/database/gold-key/index.tsx"
     },
     {
-      "path": "registry/icons/database/google-cloud-dataproc/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/google-cloud-dataproc/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/google-cloud-spanner/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/google-cloud-spanner/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/greenplum/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/greenplum/index.tsx"
-    },
-    {
       "path": "registry/icons/database/grey-key/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/grey-key/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/h2/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/h2/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/hana/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/hana/index.tsx"
     },
     {
       "path": "registry/icons/database/hash-cluster/index.tsx",
@@ -469,29 +364,14 @@
       "target": "components/jetbrains-ui/icons/database/hash-table-key/index.tsx"
     },
     {
-      "path": "registry/icons/database/hive/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/hive/index.tsx"
-    },
-    {
       "path": "registry/icons/database/hive-file-type/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/hive-file-type/index.tsx"
     },
     {
-      "path": "registry/icons/database/hsqldb/index.tsx",
+      "path": "registry/icons/database/index-icon/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/hsqldb/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/ibm/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/ibm/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/impala/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/impala/index.tsx"
+      "target": "components/jetbrains-ui/icons/database/index-icon/index.tsx"
     },
     {
       "path": "registry/icons/database/index-cluster/index.tsx",
@@ -512,16 +392,6 @@
       "path": "registry/icons/database/index-unique/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/index-unique/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/informix/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/informix/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/intersystem-cache/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/intersystem-cache/index.tsx"
     },
     {
       "path": "registry/icons/database/json-document/index.tsx",
@@ -614,11 +484,6 @@
       "target": "components/jetbrains-ui/icons/database/manage-data-sources/index.tsx"
     },
     {
-      "path": "registry/icons/database/mariadb/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/mariadb/index.tsx"
-    },
-    {
       "path": "registry/icons/database/materialized-log/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/materialized-log/index.tsx"
@@ -627,21 +492,6 @@
       "path": "registry/icons/database/materialized-view/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/materialized-view/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/microsoft/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/microsoft/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/mimer-sql/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/mimer-sql/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/mongo-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/mongo-db/index.tsx"
     },
     {
       "path": "registry/icons/database/mongo-field/index.tsx",
@@ -654,16 +504,6 @@
       "target": "components/jetbrains-ui/icons/database/mongo-field-gold-key/index.tsx"
     },
     {
-      "path": "registry/icons/database/mysql/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/mysql/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/netezza/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/netezza/index.tsx"
-    },
-    {
       "path": "registry/icons/database/object-group/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/object-group/index.tsx"
@@ -672,11 +512,6 @@
       "path": "registry/icons/database/object-type-attribute/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/object-type-attribute/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/openedge/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/openedge/index.tsx"
     },
     {
       "path": "registry/icons/database/operator/index.tsx",
@@ -692,11 +527,6 @@
       "path": "registry/icons/database/operator-family/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/operator-family/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/oracle/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/oracle/index.tsx"
     },
     {
       "path": "registry/icons/database/package/index.tsx",
@@ -734,16 +564,6 @@
       "target": "components/jetbrains-ui/icons/database/pin-selected-hovered/index.tsx"
     },
     {
-      "path": "registry/icons/database/postgresql/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/postgresql/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/presto/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/presto/index.tsx"
-    },
-    {
       "path": "registry/icons/database/preview-changes/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/preview-changes/index.tsx"
@@ -769,19 +589,9 @@
       "target": "components/jetbrains-ui/icons/database/projection/index.tsx"
     },
     {
-      "path": "registry/icons/database/redis/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/redis/index.tsx"
-    },
-    {
       "path": "registry/icons/database/redis-file-type/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/redis-file-type/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/redshift/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/redshift/index.tsx"
     },
     {
       "path": "registry/icons/database/refresh-materialized-view/index.tsx",
@@ -864,16 +674,6 @@
       "target": "components/jetbrains-ui/icons/database/single-record-view/index.tsx"
     },
     {
-      "path": "registry/icons/database/singlestore/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/singlestore/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/snowflake/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/snowflake/index.tsx"
-    },
-    {
       "path": "registry/icons/database/sorted-set/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/sorted-set/index.tsx"
@@ -882,41 +682,6 @@
       "path": "registry/icons/database/sorted-set-key/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/sorted-set-key/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/spark/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/spark/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/sql-server/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sql-server/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/sqldmlstatement/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sqldmlstatement/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/sqlgroup-by-type/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sqlgroup-by-type/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/sqlite/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sqlite/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/sqlother-statement/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sqlother-statement/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/sqlselect-statement/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sqlselect-statement/index.tsx"
     },
     {
       "path": "registry/icons/database/stream/index.tsx",
@@ -944,24 +709,9 @@
       "target": "components/jetbrains-ui/icons/database/submit-db/index.tsx"
     },
     {
-      "path": "registry/icons/database/sun/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sun/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/sybase/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sybase/index.tsx"
-    },
-    {
       "path": "registry/icons/database/synonym/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/synonym/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/t-sqlt/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/t-sqlt/index.tsx"
     },
     {
       "path": "registry/icons/database/table/index.tsx",
@@ -984,44 +734,14 @@
       "target": "components/jetbrains-ui/icons/database/tablespace/index.tsx"
     },
     {
-      "path": "registry/icons/database/tarantool/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/tarantool/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/teradata/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/teradata/index.tsx"
-    },
-    {
       "path": "registry/icons/database/text-auto-generate/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/text-auto-generate/index.tsx"
     },
     {
-      "path": "registry/icons/database/tibero/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/tibero/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/tidb/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/tidb/index.tsx"
-    },
-    {
       "path": "registry/icons/database/trigger/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/trigger/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/trino/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/trino/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/udfscript/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/udfscript/index.tsx"
     },
     {
       "path": "registry/icons/database/unspecified-cluster/index.tsx",
@@ -1049,16 +769,6 @@
       "target": "components/jetbrains-ui/icons/database/user-mapping/index.tsx"
     },
     {
-      "path": "registry/icons/database/ut-plsql/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/ut-plsql/index.tsx"
-    },
-    {
-      "path": "registry/icons/database/vertica/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/vertica/index.tsx"
-    },
-    {
       "path": "registry/icons/database/view-parameters/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/view-parameters/index.tsx"
@@ -1084,6 +794,291 @@
       "target": "components/jetbrains-ui/icons/database/virtual-view/index.tsx"
     },
     {
+      "path": "registry/icons/database/denodo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/denodo/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/apache/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/apache/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/apache-derby/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/apache-derby/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/apache-ignite/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/apache-ignite/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/apache-phoenix/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/apache-phoenix/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/athena/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/athena/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/azure/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/azure/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/big-query/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/big-query/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/cassandra/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/cassandra/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/click-house/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/click-house/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/cockroach-db/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/cockroach-db/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/couchbase/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/couchbase/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/databricks/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/databricks/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/db2/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/db2/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/document-db/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/document-db/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/duck-db/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/duck-db/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/dynamo-db/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/dynamo-db/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/elasticsearch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/elasticsearch/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/exasol/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/exasol/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/firebird/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/firebird/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/google-cloud-dataproc/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/google-cloud-dataproc/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/google-cloud-spanner/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/google-cloud-spanner/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/greenplum/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/greenplum/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/h2/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/h2/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/hana/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/hana/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/hive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/hive/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/hsqldb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/hsqldb/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/ibm/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/ibm/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/impala/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/impala/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/informix/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/informix/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/intersystem-cache/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/intersystem-cache/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/mariadb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/mariadb/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/microsoft/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/microsoft/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/mimer-sql/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/mimer-sql/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/mongo-db/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/mongo-db/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/mysql/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/mysql/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/netezza/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/netezza/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/openedge/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/openedge/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/oracle/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/oracle/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/postgresql/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/postgresql/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/presto/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/presto/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/redshift/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/redshift/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/singlestore/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/singlestore/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/snowflake/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/snowflake/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/spark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/spark/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/sql-server/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sql-server/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/sqlite/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sqlite/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/sun/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sun/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/sybase/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/sybase/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/t-sq-lt/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/t-sq-lt/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/tarantool/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/tarantool/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/teradata/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/teradata/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/tibero/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/tibero/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/tidb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/tidb/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/trino/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/trino/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/ut-plsql/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/ut-plsql/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/vertica/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/vertica/index.tsx"
+    },
+    {
       "path": "registry/icons/database/warehouse/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/warehouse/index.tsx"
@@ -1092,14 +1087,11 @@
       "path": "registry/icons/database/yugabyte/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/database/yugabyte/index.tsx"
+    },
+    {
+      "path": "registry/icons/database/redis/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/redis/index.tsx"
     }
-  ],
-  "meta": {
-    "keywords": [
-      "icons",
-      "database",
-      "jetbrains",
-      "icon-pack"
-    ]
-  }
+  ]
 }

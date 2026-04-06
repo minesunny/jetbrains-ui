@@ -29,8 +29,8 @@ const VcsLight: FC<SvgProps> = ({
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <circle cx="10.5" cy="6" r="2" stroke="#6C707E" />
-    <circle cx="4.5" cy="4" r="2" stroke="#6C707E" />
+    <circle cx={10.5} cy={6} r={2} stroke="#6C707E" />
+    <circle cx={4.5} cy={4} r={2} stroke="#6C707E" />
   </svg>
 );
 
@@ -59,8 +59,8 @@ const VcsDark: FC<SvgProps> = ({
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <circle cx="10.5" cy="6" r="2" stroke="#CED0D6" />
-    <circle cx="4.5" cy="4" r="2" stroke="#CED0D6" />
+    <circle cx={10.5} cy={6} r={2} stroke="#CED0D6" />
+    <circle cx={4.5} cy={4} r={2} stroke="#CED0D6" />
   </svg>
 );
 

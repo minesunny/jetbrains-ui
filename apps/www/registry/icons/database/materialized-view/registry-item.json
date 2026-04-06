@@ -3,7 +3,7 @@
   "name": "icons-database-materialized-view",
   "type": "registry:ui",
   "title": "Materialized View",
-  "description": "Materialized View icon from Database category.",
+  "description": "Materialized View icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

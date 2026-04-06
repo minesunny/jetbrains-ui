@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-json-path",
   "type": "registry:ui",
   "title": "Tool Window Json Path",
-  "description": "Tool Window Json Path icon from General Tool Windows category.",
+  "description": "Tool Window Json Path icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-json-path",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

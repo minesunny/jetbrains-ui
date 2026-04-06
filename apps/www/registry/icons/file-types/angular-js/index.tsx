@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type AngularJSProps = SvgProps;
+export type AngularJsProps = SvgProps;
 
-const AngularJSLight: FC<SvgProps> = ({
+const AngularJsLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -33,97 +33,97 @@ const AngularJSLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="14"
-        y1="10.313"
-        x2="8"
-        y2="14.813"
+        x1={14}
+        y1={10.313}
+        x2={8}
+        y2={14.813}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".01" stopColor="#9225F2" />
-        <stop offset=".989" stopColor="#F41049" />
+        <stop offset={0.01} stopColor="#9225F2" />
+        <stop offset={0.989} stopColor="#F41049" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="2"
-        y1="1.655"
-        x2="11.047"
-        y2="10.703"
+        x1={2}
+        y1={1.655}
+        x2={11.047}
+        y2={10.703}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F933C2" />
-        <stop offset="1" stopColor="#F932BE" stopOpacity="0" />
+        <stop offset={1} stopColor="#F932BE" stopOpacity={0} />
       </linearGradient>
       <linearGradient
         id="c"
-        x1="14"
-        y1="10.313"
-        x2="8"
-        y2="14.813"
+        x1={14}
+        y1={10.313}
+        x2={8}
+        y2={14.813}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".01" stopColor="#9225F2" />
-        <stop offset=".989" stopColor="#F41049" />
+        <stop offset={0.01} stopColor="#9225F2" />
+        <stop offset={0.989} stopColor="#F41049" />
       </linearGradient>
       <linearGradient
         id="d"
-        x1="2"
-        y1="1.655"
-        x2="11.047"
-        y2="10.703"
+        x1={2}
+        y1={1.655}
+        x2={11.047}
+        y2={10.703}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F933C2" />
-        <stop offset="1" stopColor="#F932BE" stopOpacity="0" />
+        <stop offset={1} stopColor="#F932BE" stopOpacity={0} />
       </linearGradient>
       <linearGradient
         id="e"
-        x1="14"
-        y1="10.313"
-        x2="8"
-        y2="14.813"
+        x1={14}
+        y1={10.313}
+        x2={8}
+        y2={14.813}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".01" stopColor="#9225F2" />
-        <stop offset=".989" stopColor="#F41049" />
+        <stop offset={0.01} stopColor="#9225F2" />
+        <stop offset={0.989} stopColor="#F41049" />
       </linearGradient>
       <linearGradient
         id="f"
-        x1="2"
-        y1="1.655"
-        x2="11.047"
-        y2="10.703"
+        x1={2}
+        y1={1.655}
+        x2={11.047}
+        y2={10.703}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F933C2" />
-        <stop offset="1" stopColor="#F932BE" stopOpacity="0" />
+        <stop offset={1} stopColor="#F932BE" stopOpacity={0} />
       </linearGradient>
       <linearGradient
         id="g"
-        x1="14"
-        y1="10.313"
-        x2="8"
-        y2="14.813"
+        x1={14}
+        y1={10.313}
+        x2={8}
+        y2={14.813}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".01" stopColor="#9225F2" />
-        <stop offset=".989" stopColor="#F41049" />
+        <stop offset={0.01} stopColor="#9225F2" />
+        <stop offset={0.989} stopColor="#F41049" />
       </linearGradient>
       <linearGradient
         id="h"
-        x1="2"
-        y1="1.655"
-        x2="11.047"
-        y2="10.703"
+        x1={2}
+        y1={1.655}
+        x2={11.047}
+        y2={10.703}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F933C2" />
-        <stop offset="1" stopColor="#F932BE" stopOpacity="0" />
+        <stop offset={1} stopColor="#F932BE" stopOpacity={0} />
       </linearGradient>
     </defs>
   </svg>
 );
 
-const AngularJSDark: FC<SvgProps> = ({
+const AngularJsDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -152,104 +152,104 @@ const AngularJSDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="14"
-        y1="10.313"
-        x2="8"
-        y2="14.813"
+        x1={14}
+        y1={10.313}
+        x2={8}
+        y2={14.813}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".01" stopColor="#9225F2" />
-        <stop offset=".989" stopColor="#F41049" />
+        <stop offset={0.01} stopColor="#9225F2" />
+        <stop offset={0.989} stopColor="#F41049" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="2"
-        y1="1.655"
-        x2="11.047"
-        y2="10.703"
+        x1={2}
+        y1={1.655}
+        x2={11.047}
+        y2={10.703}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F933C2" />
-        <stop offset="1" stopColor="#F932BE" stopOpacity="0" />
+        <stop offset={1} stopColor="#F932BE" stopOpacity={0} />
       </linearGradient>
       <linearGradient
         id="c"
-        x1="14"
-        y1="10.313"
-        x2="8"
-        y2="14.813"
+        x1={14}
+        y1={10.313}
+        x2={8}
+        y2={14.813}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".01" stopColor="#9225F2" />
-        <stop offset=".989" stopColor="#F41049" />
+        <stop offset={0.01} stopColor="#9225F2" />
+        <stop offset={0.989} stopColor="#F41049" />
       </linearGradient>
       <linearGradient
         id="d"
-        x1="2"
-        y1="1.655"
-        x2="11.047"
-        y2="10.703"
+        x1={2}
+        y1={1.655}
+        x2={11.047}
+        y2={10.703}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F933C2" />
-        <stop offset="1" stopColor="#F932BE" stopOpacity="0" />
+        <stop offset={1} stopColor="#F932BE" stopOpacity={0} />
       </linearGradient>
       <linearGradient
         id="e"
-        x1="14"
-        y1="10.313"
-        x2="8"
-        y2="14.813"
+        x1={14}
+        y1={10.313}
+        x2={8}
+        y2={14.813}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".01" stopColor="#9225F2" />
-        <stop offset=".989" stopColor="#F41049" />
+        <stop offset={0.01} stopColor="#9225F2" />
+        <stop offset={0.989} stopColor="#F41049" />
       </linearGradient>
       <linearGradient
         id="f"
-        x1="2"
-        y1="1.655"
-        x2="11.047"
-        y2="10.703"
+        x1={2}
+        y1={1.655}
+        x2={11.047}
+        y2={10.703}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F933C2" />
-        <stop offset="1" stopColor="#F932BE" stopOpacity="0" />
+        <stop offset={1} stopColor="#F932BE" stopOpacity={0} />
       </linearGradient>
       <linearGradient
         id="g"
-        x1="14"
-        y1="10.313"
-        x2="8"
-        y2="14.813"
+        x1={14}
+        y1={10.313}
+        x2={8}
+        y2={14.813}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".01" stopColor="#9225F2" />
-        <stop offset=".989" stopColor="#F41049" />
+        <stop offset={0.01} stopColor="#9225F2" />
+        <stop offset={0.989} stopColor="#F41049" />
       </linearGradient>
       <linearGradient
         id="h"
-        x1="2"
-        y1="1.655"
-        x2="11.047"
-        y2="10.703"
+        x1={2}
+        y1={1.655}
+        x2={11.047}
+        y2={10.703}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F933C2" />
-        <stop offset="1" stopColor="#F932BE" stopOpacity="0" />
+        <stop offset={1} stopColor="#F932BE" stopOpacity={0} />
       </linearGradient>
     </defs>
   </svg>
 );
 
-export const AngularJS: FC<AngularJSProps> = ({
+export const AngularJs: FC<AngularJsProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? AngularJSLight : AngularJSDark;
+  const SvgComponent = mode === 'light' ? AngularJsLight : AngularJsDark;
 
   return (
     <SvgComponent

@@ -22,27 +22,27 @@ const FitContentLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="11" y="7" width="1" height="4" rx=".5" fill="#6C707E" />
+    <rect x={11} y={7} width={1} height={4} rx={0.5} fill="#6C707E" />
     <rect
-      x="12"
-      y="10"
-      width="1"
-      height="4"
-      rx=".5"
+      x={12}
+      y={10}
+      width={1}
+      height={4}
+      rx={0.5}
       transform="rotate(90 12 10)"
       fill="#6C707E"
     />
-    <rect x="4" y="5" width="1" height="4" rx=".5" fill="#6C707E" />
+    <rect x={4} y={5} width={1} height={4} rx={0.5} fill="#6C707E" />
     <rect
-      x="8"
-      y="5"
-      width="1"
-      height="4"
-      rx=".5"
+      x={8}
+      y={5}
+      width={1}
+      height={4}
+      rx={0.5}
       transform="rotate(90 8 5)"
       fill="#6C707E"
     />
-    <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" stroke="#6C707E" />
+    <rect x={1.5} y={2.5} width={13} height={11} rx={1.5} stroke="#6C707E" />
   </svg>
 );
 
@@ -64,27 +64,27 @@ const FitContentDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="11" y="7" width="1" height="4" rx=".5" fill="#CED0D6" />
+    <rect x={11} y={7} width={1} height={4} rx={0.5} fill="#CED0D6" />
     <rect
-      x="12"
-      y="10"
-      width="1"
-      height="4"
-      rx=".5"
+      x={12}
+      y={10}
+      width={1}
+      height={4}
+      rx={0.5}
       transform="rotate(90 12 10)"
       fill="#CED0D6"
     />
-    <rect x="4" y="5" width="1" height="4" rx=".5" fill="#CED0D6" />
+    <rect x={4} y={5} width={1} height={4} rx={0.5} fill="#CED0D6" />
     <rect
-      x="8"
-      y="5"
-      width="1"
-      height="4"
-      rx=".5"
+      x={8}
+      y={5}
+      width={1}
+      height={4}
+      rx={0.5}
       transform="rotate(90 8 5)"
       fill="#CED0D6"
     />
-    <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" stroke="#CED0D6" />
+    <rect x={1.5} y={2.5} width={13} height={11} rx={1.5} stroke="#CED0D6" />
   </svg>
 );
 

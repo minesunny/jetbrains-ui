@@ -3,7 +3,7 @@
   "name": "icons-general-progress-bar-stop-hovered",
   "type": "registry:ui",
   "title": "Stop Hovered",
-  "description": "Stop Hovered icon from General Progress Bar category.",
+  "description": "Stop Hovered icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "stop-hovered",
       "icon",
       "general",
-      "progress-bar",
       "jetbrains"
     ]
   }

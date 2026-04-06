@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../../types';
 
-export type NewUIProps = SvgProps;
+export type NewUiProps = SvgProps;
 
-const NewUILight: FC<SvgProps> = ({
+const NewUiLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -40,7 +40,7 @@ const NewUILight: FC<SvgProps> = ({
   </svg>
 );
 
-const NewUIDark: FC<SvgProps> = ({
+const NewUiDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -76,14 +76,14 @@ const NewUIDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const NewUI: FC<NewUIProps> = ({
+export const NewUi: FC<NewUiProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? NewUILight : NewUIDark;
+  const SvgComponent = mode === 'light' ? NewUiLight : NewUiDark;
 
   return (
     <SvgComponent

@@ -3,7 +3,7 @@
   "name": "icons-general-status-warning-dialog",
   "type": "registry:ui",
   "title": "Warning Dialog",
-  "description": "Warning Dialog icon from General Status category.",
+  "description": "Warning Dialog icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "warning-dialog",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

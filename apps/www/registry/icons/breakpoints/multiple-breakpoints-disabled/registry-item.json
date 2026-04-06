@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-multiple-breakpoints-disabled",
   "type": "registry:ui",
   "title": "Multiple Breakpoints Disabled",
-  "description": "Multiple Breakpoints Disabled icon from Breakpoints category.",
+  "description": "Multiple Breakpoints Disabled icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-question-badge",
   "type": "registry:ui",
   "title": "Question Badge",
-  "description": "Question Badge icon from Breakpoints category.",
+  "description": "Question Badge icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

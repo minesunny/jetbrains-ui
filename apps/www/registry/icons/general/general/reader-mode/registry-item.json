@@ -3,7 +3,7 @@
   "name": "icons-general-general-reader-mode",
   "type": "registry:ui",
   "title": "Reader Mode",
-  "description": "Reader Mode icon from General General category.",
+  "description": "Reader Mode icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "reader-mode",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -3,7 +3,7 @@
   "name": "icons-database-console-run",
   "type": "registry:ui",
   "title": "Console Run",
-  "description": "Console Run icon from Database category.",
+  "description": "Console Run icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

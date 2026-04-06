@@ -3,7 +3,7 @@
   "name": "icons-file-types-perl",
   "type": "registry:ui",
   "title": "Perl",
-  "description": "Perl icon from File Types category.",
+  "description": "Perl icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

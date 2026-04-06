@@ -3,7 +3,7 @@
   "name": "icons-database-procedure-run",
   "type": "registry:ui",
   "title": "Procedure Run",
-  "description": "Procedure Run icon from Database category.",
+  "description": "Procedure Run icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

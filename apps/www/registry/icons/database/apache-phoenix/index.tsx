@@ -41,53 +41,53 @@ const ApachePhoenixLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="3.337"
-        y1="8"
-        x2="12.663"
-        y2="8"
+        x1={3.337}
+        y1={8}
+        x2={12.663}
+        y2={8}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF9A34" />
-        <stop offset="1" stopColor="#EA222E" />
+        <stop offset={1} stopColor="#EA222E" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="7.023"
-        y1="1.683"
-        x2="10.617"
-        y2="11.684"
+        x1={7.023}
+        y1={1.683}
+        x2={10.617}
+        y2={11.684}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF9235" />
-        <stop offset=".449" stopColor="#EC3D2E" />
-        <stop offset=".538" stopColor="#ED402F" />
-        <stop offset="1" stopColor="#FE9133" />
+        <stop offset={0.449} stopColor="#EC3D2E" />
+        <stop offset={0.538} stopColor="#ED402F" />
+        <stop offset={1} stopColor="#FE9133" />
       </linearGradient>
       <linearGradient
         id="c"
-        x1="7.023"
-        y1="1.683"
-        x2="10.617"
-        y2="11.684"
+        x1={7.023}
+        y1={1.683}
+        x2={10.617}
+        y2={11.684}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF9235" />
-        <stop offset=".449" stopColor="#EC3D2E" />
-        <stop offset=".538" stopColor="#ED402F" />
-        <stop offset="1" stopColor="#FE9133" />
+        <stop offset={0.449} stopColor="#EC3D2E" />
+        <stop offset={0.538} stopColor="#ED402F" />
+        <stop offset={1} stopColor="#FE9133" />
       </linearGradient>
       <linearGradient
         id="d"
-        x1="7.023"
-        y1="1.683"
-        x2="10.617"
-        y2="11.684"
+        x1={7.023}
+        y1={1.683}
+        x2={10.617}
+        y2={11.684}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF9235" />
-        <stop offset=".449" stopColor="#EC3D2E" />
-        <stop offset=".538" stopColor="#ED402F" />
-        <stop offset="1" stopColor="#FE9133" />
+        <stop offset={0.449} stopColor="#EC3D2E" />
+        <stop offset={0.538} stopColor="#ED402F" />
+        <stop offset={1} stopColor="#FE9133" />
       </linearGradient>
     </defs>
   </svg>
@@ -130,53 +130,53 @@ const ApachePhoenixDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="3.337"
-        y1="8"
-        x2="12.663"
-        y2="8"
+        x1={3.337}
+        y1={8}
+        x2={12.663}
+        y2={8}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF9A34" />
-        <stop offset="1" stopColor="#EA222E" />
+        <stop offset={1} stopColor="#EA222E" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="7.023"
-        y1="1.683"
-        x2="10.617"
-        y2="11.684"
+        x1={7.023}
+        y1={1.683}
+        x2={10.617}
+        y2={11.684}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF9235" />
-        <stop offset=".449" stopColor="#EC3D2E" />
-        <stop offset=".538" stopColor="#ED402F" />
-        <stop offset="1" stopColor="#FE9133" />
+        <stop offset={0.449} stopColor="#EC3D2E" />
+        <stop offset={0.538} stopColor="#ED402F" />
+        <stop offset={1} stopColor="#FE9133" />
       </linearGradient>
       <linearGradient
         id="c"
-        x1="7.023"
-        y1="1.683"
-        x2="10.617"
-        y2="11.684"
+        x1={7.023}
+        y1={1.683}
+        x2={10.617}
+        y2={11.684}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF9235" />
-        <stop offset=".449" stopColor="#EC3D2E" />
-        <stop offset=".538" stopColor="#ED402F" />
-        <stop offset="1" stopColor="#FE9133" />
+        <stop offset={0.449} stopColor="#EC3D2E" />
+        <stop offset={0.538} stopColor="#ED402F" />
+        <stop offset={1} stopColor="#FE9133" />
       </linearGradient>
       <linearGradient
         id="d"
-        x1="7.023"
-        y1="1.683"
-        x2="10.617"
-        y2="11.684"
+        x1={7.023}
+        y1={1.683}
+        x2={10.617}
+        y2={11.684}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF9235" />
-        <stop offset=".449" stopColor="#EC3D2E" />
-        <stop offset=".538" stopColor="#ED402F" />
-        <stop offset="1" stopColor="#FE9133" />
+        <stop offset={0.449} stopColor="#EC3D2E" />
+        <stop offset={0.538} stopColor="#ED402F" />
+        <stop offset={1} stopColor="#FE9133" />
       </linearGradient>
     </defs>
   </svg>

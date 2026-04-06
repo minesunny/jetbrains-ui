@@ -3,7 +3,7 @@
   "name": "icons-file-types-vitest",
   "type": "registry:ui",
   "title": "Vitest",
-  "description": "Vitest icon from File Types category.",
+  "description": "Vitest icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

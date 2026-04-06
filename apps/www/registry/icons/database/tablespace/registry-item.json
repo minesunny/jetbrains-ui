@@ -3,7 +3,7 @@
   "name": "icons-database-tablespace",
   "type": "registry:ui",
   "title": "Tablespace",
-  "description": "Tablespace icon from Database category.",
+  "description": "Tablespace icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

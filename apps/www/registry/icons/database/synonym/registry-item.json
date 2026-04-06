@@ -3,7 +3,7 @@
   "name": "icons-database-synonym",
   "type": "registry:ui",
   "title": "Synonym",
-  "description": "Synonym icon from Database category.",
+  "description": "Synonym icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

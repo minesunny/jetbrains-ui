@@ -3,7 +3,7 @@
   "name": "icons-run-configurations-junit-test-mark",
   "type": "registry:ui",
   "title": "Junit Test Mark",
-  "description": "Junit Test Mark icon from Run Configurations category.",
+  "description": "Junit Test Mark icon from run-configurations category.",
   "registryDependencies": [
     "icons-run-configurations-types"
   ],

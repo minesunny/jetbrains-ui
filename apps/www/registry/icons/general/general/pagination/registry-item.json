@@ -3,7 +3,7 @@
   "name": "icons-general-general-pagination",
   "type": "registry:ui",
   "title": "Pagination",
-  "description": "Pagination icon from General General category.",
+  "description": "Pagination icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "pagination",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

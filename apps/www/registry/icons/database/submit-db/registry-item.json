@@ -3,7 +3,7 @@
   "name": "icons-database-submit-db",
   "type": "registry:ui",
   "title": "Submit Db",
-  "description": "Submit Db icon from Database category.",
+  "description": "Submit Db icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

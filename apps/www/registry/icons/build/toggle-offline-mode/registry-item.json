@@ -3,7 +3,7 @@
   "name": "icons-build-toggle-offline-mode",
   "type": "registry:ui",
   "title": "Toggle Offline Mode",
-  "description": "Toggle Offline Mode icon from Build category.",
+  "description": "Toggle Offline Mode icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

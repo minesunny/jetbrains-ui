@@ -3,7 +3,7 @@
   "name": "icons-general-access-modifiers-access-local",
   "type": "registry:ui",
   "title": "Access Local",
-  "description": "Access Local icon from General Access Modifiers category.",
+  "description": "Access Local icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "access-local",
       "icon",
       "general",
-      "access-modifiers",
       "jetbrains"
     ]
   }

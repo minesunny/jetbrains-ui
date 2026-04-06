@@ -3,7 +3,7 @@
   "name": "icons-run-run",
   "type": "registry:ui",
   "title": "Run",
-  "description": "Run icon from Run category.",
+  "description": "Run icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

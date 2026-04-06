@@ -3,7 +3,7 @@
   "name": "icons-vcs-changes",
   "type": "registry:ui",
   "title": "Changes",
-  "description": "Changes icon from Vcs category.",
+  "description": "Changes icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

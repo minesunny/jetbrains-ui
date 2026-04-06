@@ -22,7 +22,7 @@ const ModifiedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="6.5" cy="6.5" r="3" fill="#4682FA" />
+    <circle cx={6.5} cy={6.5} r={3} fill="#4682FA" />
   </svg>
 );
 
@@ -44,7 +44,7 @@ const ModifiedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="6.5" cy="6.5" r="3" fill="#548AF7" />
+    <circle cx={6.5} cy={6.5} r={3} fill="#548AF7" />
   </svg>
 );
 

@@ -3,7 +3,7 @@
   "name": "icons-vcs-patch",
   "type": "registry:ui",
   "title": "Patch",
-  "description": "Patch icon from Vcs category.",
+  "description": "Patch icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

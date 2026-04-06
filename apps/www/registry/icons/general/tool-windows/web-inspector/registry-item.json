@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-web-inspector",
   "type": "registry:ui",
   "title": "Web Inspector",
-  "description": "Web Inspector icon from General Tool Windows category.",
+  "description": "Web Inspector icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "web-inspector",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

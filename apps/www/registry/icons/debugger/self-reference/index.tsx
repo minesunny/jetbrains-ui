@@ -22,7 +22,7 @@ const SelfReferenceLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="7" fill="#FFF4EB" />
+    <circle cx={8} cy={8} r={7} fill="#FFF4EB" />
     <path
       d="M7.258 12h1.017V7.327H9.83V6.43H8.275v-.95c0-.36.246-.606.6-.606h1.006V4H8.778c-.903 0-1.52.571-1.52 1.406V6.43H6.121v.897h1.137z"
       fill="#E66D17"
@@ -52,7 +52,7 @@ const SelfReferenceDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="7" fill="#45322B" />
+    <circle cx={8} cy={8} r={7} fill="#45322B" />
     <path
       d="M7.258 12h1.017V7.327H9.83V6.43H8.275v-.95c0-.36.246-.606.6-.606h1.006V4H8.778c-.903 0-1.52.571-1.52 1.406V6.43H6.121v.897h1.137z"
       fill="#C77D55"

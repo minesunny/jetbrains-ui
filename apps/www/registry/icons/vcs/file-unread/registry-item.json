@@ -3,7 +3,7 @@
   "name": "icons-vcs-file-unread",
   "type": "registry:ui",
   "title": "File Unread",
-  "description": "File Unread icon from Vcs category.",
+  "description": "File Unread icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

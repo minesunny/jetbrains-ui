@@ -3,7 +3,7 @@
   "name": "icons-file-types-manifest",
   "type": "registry:ui",
   "title": "Manifest",
-  "description": "Manifest icon from File Types category.",
+  "description": "Manifest icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

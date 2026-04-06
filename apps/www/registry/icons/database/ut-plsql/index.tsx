@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type UtPLSQLProps = SvgProps;
+export type UtPlsqlProps = SvgProps;
 
-const UtPLSQLLight: FC<SvgProps> = ({
+const UtPlsqlLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -31,7 +31,7 @@ const UtPLSQLLight: FC<SvgProps> = ({
   </svg>
 );
 
-const UtPLSQLDark: FC<SvgProps> = ({
+const UtPlsqlDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -58,14 +58,14 @@ const UtPLSQLDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const UtPLSQL: FC<UtPLSQLProps> = ({
+export const UtPlsql: FC<UtPlsqlProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? UtPLSQLLight : UtPLSQLDark;
+  const SvgComponent = mode === 'light' ? UtPlsqlLight : UtPlsqlDark;
 
   return (
     <SvgComponent

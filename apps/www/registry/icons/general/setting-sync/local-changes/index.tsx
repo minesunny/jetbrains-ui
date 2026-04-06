@@ -22,7 +22,7 @@ const LocalChangesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="7.5" cy="8" r="2.5" fill="#6C707E" />
+    <circle cx={7.5} cy={8} r={2.5} fill="#6C707E" />
   </svg>
 );
 
@@ -44,7 +44,7 @@ const LocalChangesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="7.5" cy="8" r="2.5" fill="#6C707E" />
+    <circle cx={7.5} cy={8} r={2.5} fill="#6C707E" />
   </svg>
 );
 

@@ -3,7 +3,7 @@
   "name": "icons-debugger-variables-tab",
   "type": "registry:ui",
   "title": "Variables Tab",
-  "description": "Variables Tab icon from Debugger category.",
+  "description": "Variables Tab icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-implementing-method",
   "type": "registry:ui",
   "title": "Implementing Method",
-  "description": "Implementing Method icon from Editor Icons category.",
+  "description": "Implementing Method icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

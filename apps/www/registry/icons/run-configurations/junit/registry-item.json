@@ -3,7 +3,7 @@
   "name": "icons-run-configurations-junit",
   "type": "registry:ui",
   "title": "Junit",
-  "description": "Junit icon from Run Configurations category.",
+  "description": "Junit icon from run-configurations category.",
   "registryDependencies": [
     "icons-run-configurations-types"
   ],

@@ -22,7 +22,7 @@ const ErrorOutlineLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" stroke="#6C707E" />
+    <circle cx={8} cy={8} r={6.5} stroke="#6C707E" />
     <path
       d="M9 5a1 1 0 0 0-2 0v3a1 1 0 1 0 2 0zM8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
       fill="#6C707E"
@@ -48,7 +48,7 @@ const ErrorOutlineDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" stroke="#CED0D6" />
+    <circle cx={8} cy={8} r={6.5} stroke="#CED0D6" />
     <path
       d="M9 5a1 1 0 0 0-2 0v3a1 1 0 1 0 2 0zM8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
       fill="#CED0D6"

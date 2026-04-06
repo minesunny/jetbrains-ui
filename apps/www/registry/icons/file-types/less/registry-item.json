@@ -3,7 +3,7 @@
   "name": "icons-file-types-less",
   "type": "registry:ui",
   "title": "Less",
-  "description": "Less icon from File Types category.",
+  "description": "Less icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

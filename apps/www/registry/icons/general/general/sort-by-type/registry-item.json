@@ -3,7 +3,7 @@
   "name": "icons-general-general-sort-by-type",
   "type": "registry:ui",
   "title": "Sort By Type",
-  "description": "Sort By Type icon from General General category.",
+  "description": "Sort By Type icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "sort-by-type",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

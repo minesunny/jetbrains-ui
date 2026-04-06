@@ -33,11 +33,11 @@ const ModuleGroupLight: FC<SvgProps> = ({
       fill="#6C707E"
     />
     <rect
-      x="9.5"
-      y="9.5"
-      width="6"
-      height="6"
-      rx="1"
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
@@ -75,11 +75,11 @@ const ModuleGroupDark: FC<SvgProps> = ({
       fill="#CED0D6"
     />
     <rect
-      x="9.5"
-      y="9.5"
-      width="6"
-      height="6"
-      rx="1"
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1}
       fill="#25324D"
       stroke="#548AF7"
     />

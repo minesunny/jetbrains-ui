@@ -3,7 +3,7 @@
   "name": "icons-database-firebird",
   "type": "registry:ui",
   "title": "Firebird",
-  "description": "Firebird icon from Database category.",
+  "description": "Firebird icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

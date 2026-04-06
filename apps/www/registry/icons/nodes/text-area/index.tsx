@@ -23,11 +23,11 @@ const TextAreaLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#EBECF0"
       stroke="#6C707E"
     />
@@ -59,11 +59,11 @@ const TextAreaDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#43454A"
       stroke="#CED0D6"
     />

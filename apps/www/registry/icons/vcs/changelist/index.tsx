@@ -22,10 +22,10 @@ const ChangelistLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#6C707E" />
-    <rect x="5" y="5" width="6" height="1" rx=".5" fill="#6C707E" />
-    <rect x="5" y="7.5" width="6" height="1" rx=".5" fill="#6C707E" />
-    <rect x="5" y="10" width="6" height="1" rx=".5" fill="#6C707E" />
+    <rect x={2.5} y={2.5} width={11} height={11} rx={1.5} stroke="#6C707E" />
+    <rect x={5} y={5} width={6} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={5} y={7.5} width={6} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={5} y={10} width={6} height={1} rx={0.5} fill="#6C707E" />
   </svg>
 );
 
@@ -47,10 +47,10 @@ const ChangelistDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#CED0D6" />
-    <rect x="5" y="5" width="6" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="5" y="7.5" width="6" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="5" y="10" width="6" height="1" rx=".5" fill="#CED0D6" />
+    <rect x={2.5} y={2.5} width={11} height={11} rx={1.5} stroke="#CED0D6" />
+    <rect x={5} y={5} width={6} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={5} y={7.5} width={6} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={5} y={10} width={6} height={1} rx={0.5} fill="#CED0D6" />
   </svg>
 );
 

@@ -3,7 +3,7 @@
   "name": "icons-general-general-setting-sync",
   "type": "registry:ui",
   "title": "Setting Sync",
-  "description": "Setting Sync icon from General General category.",
+  "description": "Setting Sync icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "setting-sync",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

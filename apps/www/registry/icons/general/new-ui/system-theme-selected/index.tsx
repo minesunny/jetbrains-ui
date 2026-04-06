@@ -27,7 +27,7 @@ const SystemThemeSelectedLight: FC<SvgProps> = ({
       fill="#EDF3FF"
     />
     <path d="M8 2v12" stroke="#3574F0" />
-    <circle cx="8" cy="8" r="6.5" stroke="#3574F0" />
+    <circle cx={8} cy={8} r={6.5} stroke="#3574F0" />
   </svg>
 );
 
@@ -54,7 +54,7 @@ const SystemThemeSelectedDark: FC<SvgProps> = ({
       fill="#25324D"
     />
     <path d="M8 2v12" stroke="#548AF7" />
-    <circle cx="8" cy="8" r="6.5" stroke="#548AF7" />
+    <circle cx={8} cy={8} r={6.5} stroke="#548AF7" />
   </svg>
 );
 

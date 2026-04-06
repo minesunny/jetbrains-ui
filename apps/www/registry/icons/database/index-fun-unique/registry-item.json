@@ -3,7 +3,7 @@
   "name": "icons-database-index-fun-unique",
   "type": "registry:ui",
   "title": "Index Fun Unique",
-  "description": "Index Fun Unique icon from Database category.",
+  "description": "Index Fun Unique icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

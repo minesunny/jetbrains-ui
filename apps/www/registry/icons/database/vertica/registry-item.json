@@ -3,7 +3,7 @@
   "name": "icons-database-vertica",
   "type": "registry:ui",
   "title": "Vertica",
-  "description": "Vertica icon from Database category.",
+  "description": "Vertica icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

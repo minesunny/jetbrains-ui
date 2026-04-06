@@ -3,7 +3,7 @@
   "name": "icons-file-types-scss",
   "type": "registry:ui",
   "title": "Scss",
-  "description": "Scss icon from File Types category.",
+  "description": "Scss icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

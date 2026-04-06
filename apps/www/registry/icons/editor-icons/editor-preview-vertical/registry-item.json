@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-editor-preview-vertical",
   "type": "registry:ui",
   "title": "Editor Preview Vertical",
-  "description": "Editor Preview Vertical icon from Editor Icons category.",
+  "description": "Editor Preview Vertical icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

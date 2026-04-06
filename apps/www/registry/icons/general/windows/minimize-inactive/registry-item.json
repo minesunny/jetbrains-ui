@@ -3,7 +3,7 @@
   "name": "icons-general-windows-minimize-inactive",
   "type": "registry:ui",
   "title": "Minimize Inactive",
-  "description": "Minimize Inactive icon from General Windows category.",
+  "description": "Minimize Inactive icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "minimize-inactive",
       "icon",
       "general",
-      "windows",
       "jetbrains"
     ]
   }

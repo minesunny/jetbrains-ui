@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type InspectionsOKProps = SvgProps;
+export type InspectionsOkProps = SvgProps;
 
-const InspectionsOKLight: FC<SvgProps> = ({
+const InspectionsOkLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -25,14 +25,14 @@ const InspectionsOKLight: FC<SvgProps> = ({
     <path
       d="m3 8.5 3 3L12.5 5"
       stroke="#55A76A"
-      strokeWidth="2"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
   </svg>
 );
 
-const InspectionsOKDark: FC<SvgProps> = ({
+const InspectionsOkDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -53,14 +53,14 @@ const InspectionsOKDark: FC<SvgProps> = ({
     <path
       d="m3 8.5 3 3L12.5 5"
       stroke="#57965C"
-      strokeWidth="2"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
   </svg>
 );
 
-export const InspectionsOK: FC<InspectionsOKProps> = ({
+export const InspectionsOk: FC<InspectionsOkProps> = ({
   size = 'md',
   mode = 'light',
   className,
@@ -68,7 +68,7 @@ export const InspectionsOK: FC<InspectionsOKProps> = ({
   ...props
 }) => {
   const SvgComponent =
-    mode === 'light' ? InspectionsOKLight : InspectionsOKDark;
+    mode === 'light' ? InspectionsOkLight : InspectionsOkDark;
 
   return (
     <SvgComponent

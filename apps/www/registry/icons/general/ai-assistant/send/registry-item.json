@@ -3,7 +3,7 @@
   "name": "icons-general-ai-assistant-send",
   "type": "registry:ui",
   "title": "Send",
-  "description": "Send icon from General Ai Assistant category.",
+  "description": "Send icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "send",
       "icon",
       "general",
-      "ai-assistant",
       "jetbrains"
     ]
   }

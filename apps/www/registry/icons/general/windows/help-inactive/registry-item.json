@@ -3,7 +3,7 @@
   "name": "icons-general-windows-help-inactive",
   "type": "registry:ui",
   "title": "Help Inactive",
-  "description": "Help Inactive icon from General Windows category.",
+  "description": "Help Inactive icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "help-inactive",
       "icon",
       "general",
-      "windows",
       "jetbrains"
     ]
   }

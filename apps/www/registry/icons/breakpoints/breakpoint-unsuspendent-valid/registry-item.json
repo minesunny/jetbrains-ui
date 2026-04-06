@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-unsuspendent-valid",
   "type": "registry:ui",
   "title": "Breakpoint Unsuspendent Valid",
-  "description": "Breakpoint Unsuspendent Valid icon from Breakpoints category.",
+  "description": "Breakpoint Unsuspendent Valid icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-run-rerun-automatically",
   "type": "registry:ui",
   "title": "Rerun Automatically",
-  "description": "Rerun Automatically icon from Run category.",
+  "description": "Rerun Automatically icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

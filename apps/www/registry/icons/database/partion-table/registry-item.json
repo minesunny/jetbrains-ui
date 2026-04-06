@@ -3,7 +3,7 @@
   "name": "icons-database-partion-table",
   "type": "registry:ui",
   "title": "Partion Table",
-  "description": "Partion Table icon from Database category.",
+  "description": "Partion Table icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

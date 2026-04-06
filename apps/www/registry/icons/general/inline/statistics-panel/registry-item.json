@@ -3,7 +3,7 @@
   "name": "icons-general-inline-statistics-panel",
   "type": "registry:ui",
   "title": "Statistics Panel",
-  "description": "Statistics Panel icon from General Inline category.",
+  "description": "Statistics Panel icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "statistics-panel",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

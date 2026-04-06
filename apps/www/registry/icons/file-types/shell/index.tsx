@@ -23,11 +23,11 @@ const ShellLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="1.5"
-      y="2.5"
-      width="13"
-      height="11"
-      rx="1.5"
+      x={1.5}
+      y={2.5}
+      width={13}
+      height={11}
+      rx={1.5}
       fill="#EBECF0"
       stroke="#6C707E"
     />
@@ -54,11 +54,11 @@ const ShellDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="1.5"
-      y="2.5"
-      width="13"
-      height="11"
-      rx="1.5"
+      x={1.5}
+      y={2.5}
+      width={13}
+      height={11}
+      rx={1.5}
       fill="#43454A"
       stroke="#CED0D6"
     />

@@ -3,7 +3,7 @@
   "name": "icons-build-maven-parent-projects",
   "type": "registry:ui",
   "title": "Maven Parent Projects",
-  "description": "Maven Parent Projects icon from Build category.",
+  "description": "Maven Parent Projects icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

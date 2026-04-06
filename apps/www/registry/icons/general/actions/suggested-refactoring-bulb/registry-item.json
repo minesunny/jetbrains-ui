@@ -3,7 +3,7 @@
   "name": "icons-general-actions-suggested-refactoring-bulb",
   "type": "registry:ui",
   "title": "Suggested Refactoring Bulb",
-  "description": "Suggested Refactoring Bulb icon from General Actions category.",
+  "description": "Suggested Refactoring Bulb icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "suggested-refactoring-bulb",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

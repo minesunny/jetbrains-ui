@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-exception-disabled",
   "type": "registry:ui",
   "title": "Breakpoint Exception Disabled",
-  "description": "Breakpoint Exception Disabled icon from Breakpoints category.",
+  "description": "Breakpoint Exception Disabled icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

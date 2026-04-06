@@ -3,7 +3,7 @@
   "name": "icons-database-denodo",
   "type": "registry:ui",
   "title": "Denodo",
-  "description": "Denodo icon from Database category.",
+  "description": "Denodo icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

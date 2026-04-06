@@ -3,7 +3,7 @@
   "name": "icons-general-actions-preview",
   "type": "registry:ui",
   "title": "Preview",
-  "description": "Preview icon from General Actions category.",
+  "description": "Preview icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "preview",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

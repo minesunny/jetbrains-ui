@@ -3,7 +3,7 @@
   "name": "icons-general-modifiers-process-mark",
   "type": "registry:ui",
   "title": "Process Mark",
-  "description": "Process Mark icon from General Modifiers category.",
+  "description": "Process Mark icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "process-mark",
       "icon",
       "general",
-      "modifiers",
       "jetbrains"
     ]
   }

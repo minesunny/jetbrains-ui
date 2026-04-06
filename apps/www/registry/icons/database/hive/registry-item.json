@@ -3,7 +3,7 @@
   "name": "icons-database-hive",
   "type": "registry:ui",
   "title": "Hive",
-  "description": "Hive icon from Database category.",
+  "description": "Hive icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

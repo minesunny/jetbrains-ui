@@ -3,7 +3,7 @@
   "name": "icons-database-netezza",
   "type": "registry:ui",
   "title": "Netezza",
-  "description": "Netezza icon from Database category.",
+  "description": "Netezza icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

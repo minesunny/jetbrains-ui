@@ -3,7 +3,7 @@
   "name": "icons-database-connector",
   "type": "registry:ui",
   "title": "Connector",
-  "description": "Connector icon from Database category.",
+  "description": "Connector icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

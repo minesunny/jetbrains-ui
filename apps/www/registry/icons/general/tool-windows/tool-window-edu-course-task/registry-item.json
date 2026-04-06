@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-edu-course-task",
   "type": "registry:ui",
   "title": "Tool Window Edu Course Task",
-  "description": "Tool Window Edu Course Task icon from General Tool Windows category.",
+  "description": "Tool Window Edu Course Task icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-edu-course-task",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

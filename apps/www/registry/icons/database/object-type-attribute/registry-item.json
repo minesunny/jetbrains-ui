@@ -3,7 +3,7 @@
   "name": "icons-database-object-type-attribute",
   "type": "registry:ui",
   "title": "Object Type Attribute",
-  "description": "Object Type Attribute icon from Database category.",
+  "description": "Object Type Attribute icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-ext-annotation",
   "type": "registry:ui",
   "title": "Ext Annotation",
-  "description": "Ext Annotation icon from Editor Icons category.",
+  "description": "Ext Annotation icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

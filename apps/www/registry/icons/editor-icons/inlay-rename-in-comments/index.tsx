@@ -25,7 +25,7 @@ const InlayRenameInCommentsLight: FC<SvgProps> = ({
     <path
       d="m10.4 2-5 8M6.6 2l-5 8"
       stroke="#818594"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
     />
   </svg>
@@ -52,7 +52,7 @@ const InlayRenameInCommentsDark: FC<SvgProps> = ({
     <path
       d="m10.4 2-5 8M6.6 2l-5 8"
       stroke="#9DA0A8"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
     />
   </svg>

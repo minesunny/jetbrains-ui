@@ -3,7 +3,7 @@
   "name": "icons-database-mimer-sql",
   "type": "registry:ui",
   "title": "Mimer Sql",
-  "description": "Mimer Sql icon from Database category.",
+  "description": "Mimer Sql icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

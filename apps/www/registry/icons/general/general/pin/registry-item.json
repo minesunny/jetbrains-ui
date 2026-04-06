@@ -3,7 +3,7 @@
   "name": "icons-general-general-pin",
   "type": "registry:ui",
   "title": "Pin",
-  "description": "Pin icon from General General category.",
+  "description": "Pin icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "pin",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

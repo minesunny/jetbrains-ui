@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-fit-content",
   "type": "registry:ui",
   "title": "Fit Content",
-  "description": "Fit Content icon from Editor Icons category.",
+  "description": "Fit Content icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

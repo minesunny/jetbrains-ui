@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-team-city",
   "type": "registry:ui",
   "title": "Tool Window Team City",
-  "description": "Tool Window Team City icon from General Tool Windows category.",
+  "description": "Tool Window Team City icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-team-city",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

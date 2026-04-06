@@ -3,7 +3,7 @@
   "name": "icons-database-argument",
   "type": "registry:ui",
   "title": "Argument",
-  "description": "Argument icon from Database category.",
+  "description": "Argument icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

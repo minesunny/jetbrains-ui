@@ -3,7 +3,7 @@
   "name": "icons-general-status-error",
   "type": "registry:ui",
   "title": "Error",
-  "description": "Error icon from General Status category.",
+  "description": "Error icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "error",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

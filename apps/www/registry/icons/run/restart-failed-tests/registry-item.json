@@ -3,7 +3,7 @@
   "name": "icons-run-restart-failed-tests",
   "type": "registry:ui",
   "title": "Restart Failed Tests",
-  "description": "Restart Failed Tests icon from Run category.",
+  "description": "Restart Failed Tests icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

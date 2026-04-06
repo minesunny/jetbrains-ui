@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-toolwindow-flink",
   "type": "registry:ui",
   "title": "Toolwindow Flink",
-  "description": "Toolwindow Flink icon from General Tool Windows category.",
+  "description": "Toolwindow Flink icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "toolwindow-flink",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

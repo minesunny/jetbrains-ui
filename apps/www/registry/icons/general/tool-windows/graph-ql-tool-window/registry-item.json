@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-graph-ql-tool-window",
+  "type": "registry:ui",
+  "title": "Graph Ql Tool Window",
+  "description": "Graph Ql Tool Window icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/graph-ql-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/graph-ql-tool-window/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "graph-ql-tool-window",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

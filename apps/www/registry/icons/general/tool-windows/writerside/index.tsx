@@ -22,15 +22,15 @@ const WritersideLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2.5" y="3.5" width="10" height="10" rx="1.5" stroke="#6C707E" />
+    <rect x={2.5} y={3.5} width={10} height={10} rx={1.5} stroke="#6C707E" />
     <rect
-      x="5"
-      y="10.25"
-      width="4"
-      height=".5"
-      rx=".25"
+      x={5}
+      y={10.25}
+      width={4}
+      height={0.5}
+      rx={0.25}
       stroke="#6C707E"
-      strokeWidth=".5"
+      strokeWidth={0.5}
     />
     <path
       d="M4.5 1.5H12A2.5 2.5 0 0 1 14.5 4v7.5"
@@ -59,8 +59,15 @@ const WritersideDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <g clipPath="url(#a)" stroke="#CED0D6">
-      <rect x="2.5" y="3.5" width="10" height="10" rx="1.5" />
-      <rect x="5" y="10.25" width="4" height=".5" rx=".25" strokeWidth=".5" />
+      <rect x={2.5} y={3.5} width={10} height={10} rx={1.5} />
+      <rect
+        x={5}
+        y={10.25}
+        width={4}
+        height={0.5}
+        rx={0.25}
+        strokeWidth={0.5}
+      />
       <path d="M4.5 1.5H12A2.5 2.5 0 0 1 14.5 4v7.5" strokeLinecap="round" />
     </g>
     <defs>

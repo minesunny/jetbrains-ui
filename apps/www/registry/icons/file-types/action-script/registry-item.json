@@ -3,7 +3,7 @@
   "name": "icons-file-types-action-script",
   "type": "registry:ui",
   "title": "Action Script",
-  "description": "Action Script icon from File Types category.",
+  "description": "Action Script icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

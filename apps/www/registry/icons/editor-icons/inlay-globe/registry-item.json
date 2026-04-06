@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inlay-globe",
   "type": "registry:ui",
   "title": "Inlay Globe",
-  "description": "Inlay Globe icon from Editor Icons category.",
+  "description": "Inlay Globe icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

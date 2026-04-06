@@ -3,7 +3,7 @@
   "name": "icons-general-actions-shortcut-filter",
   "type": "registry:ui",
   "title": "Shortcut Filter",
-  "description": "Shortcut Filter icon from General Actions category.",
+  "description": "Shortcut Filter icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "shortcut-filter",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-file-types-xsd",
   "type": "registry:ui",
   "title": "Xsd",
-  "description": "Xsd icon from File Types category.",
+  "description": "Xsd icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

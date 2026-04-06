@@ -3,7 +3,7 @@
   "name": "icons-run-configurations-compound",
   "type": "registry:ui",
   "title": "Compound",
-  "description": "Compound icon from Run Configurations category.",
+  "description": "Compound icon from run-configurations category.",
   "registryDependencies": [
     "icons-run-configurations-types"
   ],

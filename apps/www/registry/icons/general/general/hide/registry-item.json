@@ -3,7 +3,7 @@
   "name": "icons-general-general-hide",
   "type": "registry:ui",
   "title": "Hide",
-  "description": "Hide icon from General General category.",
+  "description": "Hide icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "hide",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

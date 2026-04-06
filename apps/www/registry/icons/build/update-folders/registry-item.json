@@ -3,7 +3,7 @@
   "name": "icons-build-update-folders",
   "type": "registry:ui",
   "title": "Update Folders",
-  "description": "Update Folders icon from Build category.",
+  "description": "Update Folders icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

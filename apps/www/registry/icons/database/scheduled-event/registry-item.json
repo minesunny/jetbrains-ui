@@ -3,7 +3,7 @@
   "name": "icons-database-scheduled-event",
   "type": "registry:ui",
   "title": "Scheduled Event",
-  "description": "Scheduled Event icon from Database category.",
+  "description": "Scheduled Event icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

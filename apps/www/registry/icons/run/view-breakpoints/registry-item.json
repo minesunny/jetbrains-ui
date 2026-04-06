@@ -3,7 +3,7 @@
   "name": "icons-run-view-breakpoints",
   "type": "registry:ui",
   "title": "View Breakpoints",
-  "description": "View Breakpoints icon from Run category.",
+  "description": "View Breakpoints icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

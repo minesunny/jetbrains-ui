@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-run-failed",
   "type": "registry:ui",
   "title": "Run Failed",
-  "description": "Run Failed icon from Editor Icons category.",
+  "description": "Run Failed icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

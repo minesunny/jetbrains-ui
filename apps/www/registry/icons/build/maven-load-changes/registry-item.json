@@ -3,7 +3,7 @@
   "name": "icons-build-maven-load-changes",
   "type": "registry:ui",
   "title": "Maven Load Changes",
-  "description": "Maven Load Changes icon from Build category.",
+  "description": "Maven Load Changes icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

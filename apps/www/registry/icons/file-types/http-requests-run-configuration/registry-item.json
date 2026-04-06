@@ -3,7 +3,7 @@
   "name": "icons-file-types-http-requests-run-configuration",
   "type": "registry:ui",
   "title": "Http Requests Run Configuration",
-  "description": "Http Requests Run Configuration icon from File Types category.",
+  "description": "Http Requests Run Configuration icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

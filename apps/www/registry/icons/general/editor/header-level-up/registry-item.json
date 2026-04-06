@@ -3,7 +3,7 @@
   "name": "icons-general-editor-header-level-up",
   "type": "registry:ui",
   "title": "Header Level Up",
-  "description": "Header Level Up icon from General Editor category.",
+  "description": "Header Level Up icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "header-level-up",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

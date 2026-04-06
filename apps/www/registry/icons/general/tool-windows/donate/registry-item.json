@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-donate",
   "type": "registry:ui",
   "title": "Donate",
-  "description": "Donate icon from General Tool Windows category.",
+  "description": "Donate icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "donate",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

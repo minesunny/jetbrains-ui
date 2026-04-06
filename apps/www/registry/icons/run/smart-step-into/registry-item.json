@@ -3,7 +3,7 @@
   "name": "icons-run-smart-step-into",
   "type": "registry:ui",
   "title": "Smart Step Into",
-  "description": "Smart Step Into icon from Run category.",
+  "description": "Smart Step Into icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

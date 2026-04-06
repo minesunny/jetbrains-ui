@@ -3,7 +3,7 @@
   "name": "icons-nodes-record",
   "type": "registry:ui",
   "title": "Record",
-  "description": "Record icon from Nodes category.",
+  "description": "Record icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

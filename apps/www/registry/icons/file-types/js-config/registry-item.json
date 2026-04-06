@@ -3,7 +3,7 @@
   "name": "icons-file-types-js-config",
   "type": "registry:ui",
   "title": "Js Config",
-  "description": "Js Config icon from File Types category.",
+  "description": "Js Config icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

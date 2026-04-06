@@ -3,7 +3,7 @@
   "name": "icons-general-spinner-loader",
   "type": "registry:ui",
   "title": "Loader",
-  "description": "Loader icon from General Spinner category.",
+  "description": "Loader icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "loader",
       "icon",
       "general",
-      "spinner",
       "jetbrains"
     ]
   }

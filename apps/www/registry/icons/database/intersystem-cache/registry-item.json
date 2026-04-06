@@ -3,7 +3,7 @@
   "name": "icons-database-intersystem-cache",
   "type": "registry:ui",
   "title": "Intersystem Cache",
-  "description": "Intersystem Cache icon from Database category.",
+  "description": "Intersystem Cache icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

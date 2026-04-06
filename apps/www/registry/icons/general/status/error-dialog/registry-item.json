@@ -3,7 +3,7 @@
   "name": "icons-general-status-error-dialog",
   "type": "registry:ui",
   "title": "Error Dialog",
-  "description": "Error Dialog icon from General Status category.",
+  "description": "Error Dialog icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "error-dialog",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

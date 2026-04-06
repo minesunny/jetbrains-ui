@@ -3,7 +3,7 @@
   "name": "icons-build-gradle-subproject",
   "type": "registry:ui",
   "title": "Gradle Subproject",
-  "description": "Gradle Subproject icon from Build category.",
+  "description": "Gradle Subproject icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

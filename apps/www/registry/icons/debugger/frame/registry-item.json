@@ -3,7 +3,7 @@
   "name": "icons-debugger-frame",
   "type": "registry:ui",
   "title": "Frame",
-  "description": "Frame icon from Debugger category.",
+  "description": "Frame icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

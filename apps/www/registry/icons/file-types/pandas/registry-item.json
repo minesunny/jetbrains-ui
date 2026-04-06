@@ -3,7 +3,7 @@
   "name": "icons-file-types-pandas",
   "type": "registry:ui",
   "title": "Pandas",
-  "description": "Pandas icon from File Types category.",
+  "description": "Pandas icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

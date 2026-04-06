@@ -22,7 +22,7 @@ const FlattenModulesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="11" y="5" width="3" height="3" rx="1" fill="#4682FA" />
+    <rect x={11} y={5} width={3} height={3} rx={1} fill="#4682FA" />
     <path
       d="M11 14a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"
       fill="#4682FA"
@@ -56,7 +56,7 @@ const FlattenModulesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="11" y="5" width="3" height="3" rx="1" fill="#548AF7" />
+    <rect x={11} y={5} width={3} height={3} rx={1} fill="#548AF7" />
     <path
       d="M11 14a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"
       fill="#548AF7"

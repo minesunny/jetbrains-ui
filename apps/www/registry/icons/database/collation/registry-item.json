@@ -3,7 +3,7 @@
   "name": "icons-database-collation",
   "type": "registry:ui",
   "title": "Collation",
-  "description": "Collation icon from Database category.",
+  "description": "Collation icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

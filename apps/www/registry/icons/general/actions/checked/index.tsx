@@ -25,7 +25,7 @@ const CheckedLight: FC<SvgProps> = ({
     <path
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
       stroke="#6C707E"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -53,7 +53,7 @@ const CheckedDark: FC<SvgProps> = ({
     <path
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
       stroke="#CED0D6"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />

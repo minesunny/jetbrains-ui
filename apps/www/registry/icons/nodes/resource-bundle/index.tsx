@@ -22,9 +22,9 @@ const ResourceBundleLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="14" y="9" width="2" height="7" rx="1" fill="#55A76A" />
-    <rect x="11" y="11" width="2" height="5" rx="1" fill="#FFAF0F" />
-    <rect x="8" y="13" width="2" height="3" rx="1" fill="#E55765" />
+    <rect x={14} y={9} width={2} height={7} rx={1} fill="#55A76A" />
+    <rect x={11} y={11} width={2} height={5} rx={1} fill="#FFAF0F" />
+    <rect x={8} y={13} width={2} height={3} rx={1} fill="#E55765" />
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2a2 2 0 0 0-2 2h-1a2 2 0 0 0-2 2H9a2 2 0 0 0-2 2H2.633C1.731 14 1 13.164 1 12.133z"
       fill="#EBECF0"
@@ -54,9 +54,9 @@ const ResourceBundleDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="14" y="9" width="2" height="7" rx="1" fill="#57965C" />
-    <rect x="11" y="11" width="2" height="5" rx="1" fill="#F2C55C" />
-    <rect x="8" y="13" width="2" height="3" rx="1" fill="#DB5C5C" />
+    <rect x={14} y={9} width={2} height={7} rx={1} fill="#57965C" />
+    <rect x={11} y={11} width={2} height={5} rx={1} fill="#F2C55C" />
+    <rect x={8} y={13} width={2} height={3} rx={1} fill="#DB5C5C" />
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2a2 2 0 0 0-2 2h-1a2 2 0 0 0-2 2H9a2 2 0 0 0-2 2H2.633C1.731 14 1 13.164 1 12.133z"
       fill="#43454A"

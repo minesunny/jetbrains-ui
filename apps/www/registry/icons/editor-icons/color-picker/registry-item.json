@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-color-picker",
   "type": "registry:ui",
   "title": "Color Picker",
-  "description": "Color Picker icon from Editor Icons category.",
+  "description": "Color Picker icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

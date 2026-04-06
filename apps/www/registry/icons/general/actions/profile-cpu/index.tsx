@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../../types';
 
-export type ProfileCPUProps = SvgProps;
+export type ProfileCpuProps = SvgProps;
 
-const ProfileCPULight: FC<SvgProps> = ({
+const ProfileCpuLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -40,7 +40,7 @@ const ProfileCPULight: FC<SvgProps> = ({
   </svg>
 );
 
-const ProfileCPUDark: FC<SvgProps> = ({
+const ProfileCpuDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -76,14 +76,14 @@ const ProfileCPUDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const ProfileCPU: FC<ProfileCPUProps> = ({
+export const ProfileCpu: FC<ProfileCpuProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? ProfileCPULight : ProfileCPUDark;
+  const SvgComponent = mode === 'light' ? ProfileCpuLight : ProfileCpuDark;
 
   return (
     <SvgComponent

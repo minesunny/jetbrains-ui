@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type CockroachDBProps = SvgProps;
+export type CockroachDbProps = SvgProps;
 
-const CockroachDBLight: FC<SvgProps> = ({
+const CockroachDbLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -31,22 +31,22 @@ const CockroachDBLight: FC<SvgProps> = ({
     <defs>
       <radialGradient
         id="a"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientTransform="matrix(-5.7351 8.76523 -7.10142 -4.54417 10.608 5.44)"
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#4AF7EE" />
-        <stop offset=".339" stopColor="#5EA6F2" />
-        <stop offset=".688" stopColor="#746EF7" />
-        <stop offset="1" stopColor="#6A99FB" />
+        <stop offset={0.339} stopColor="#5EA6F2" />
+        <stop offset={0.688} stopColor="#746EF7" />
+        <stop offset={1} stopColor="#6A99FB" />
       </radialGradient>
     </defs>
   </svg>
 );
 
-const CockroachDBDark: FC<SvgProps> = ({
+const CockroachDbDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -73,29 +73,29 @@ const CockroachDBDark: FC<SvgProps> = ({
     <defs>
       <radialGradient
         id="a"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientTransform="matrix(-5.7351 8.76523 -7.10142 -4.54417 10.608 5.44)"
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#4AF7EE" />
-        <stop offset=".339" stopColor="#5EA6F2" />
-        <stop offset=".688" stopColor="#746EF7" />
-        <stop offset="1" stopColor="#6A99FB" />
+        <stop offset={0.339} stopColor="#5EA6F2" />
+        <stop offset={0.688} stopColor="#746EF7" />
+        <stop offset={1} stopColor="#6A99FB" />
       </radialGradient>
     </defs>
   </svg>
 );
 
-export const CockroachDB: FC<CockroachDBProps> = ({
+export const CockroachDb: FC<CockroachDbProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? CockroachDBLight : CockroachDBDark;
+  const SvgComponent = mode === 'light' ? CockroachDbLight : CockroachDbDark;
 
   return (
     <SvgComponent

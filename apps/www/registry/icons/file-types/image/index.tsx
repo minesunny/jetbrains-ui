@@ -23,11 +23,11 @@ const ImageLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
@@ -35,7 +35,7 @@ const ImageLight: FC<SvgProps> = ({
       d="m2.5 9.336 1.682-1.667A1 1 0 0 1 5.56 7.64l6.426 5.86"
       stroke="#3574F0"
     />
-    <circle cx="10" cy="6" r="1.5" stroke="#3574F0" />
+    <circle cx={10} cy={6} r={1.5} stroke="#3574F0" />
   </svg>
 );
 
@@ -58,11 +58,11 @@ const ImageDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#25324D"
       stroke="#548AF7"
     />
@@ -70,7 +70,7 @@ const ImageDark: FC<SvgProps> = ({
       d="m2.5 9.336 1.682-1.667A1 1 0 0 1 5.56 7.64l6.426 5.86"
       stroke="#548AF7"
     />
-    <circle cx="10" cy="6" r="1.5" stroke="#548AF7" />
+    <circle cx={10} cy={6} r={1.5} stroke="#548AF7" />
   </svg>
 );
 

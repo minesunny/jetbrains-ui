@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type DynamoDBProps = SvgProps;
+export type DynamoDbProps = SvgProps;
 
-const DynamoDBLight: FC<SvgProps> = ({
+const DynamoDbLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -42,7 +42,7 @@ const DynamoDBLight: FC<SvgProps> = ({
   </svg>
 );
 
-const DynamoDBDark: FC<SvgProps> = ({
+const DynamoDbDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -80,14 +80,14 @@ const DynamoDBDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const DynamoDB: FC<DynamoDBProps> = ({
+export const DynamoDb: FC<DynamoDbProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? DynamoDBLight : DynamoDBDark;
+  const SvgComponent = mode === 'light' ? DynamoDbLight : DynamoDbDark;
 
   return (
     <SvgComponent

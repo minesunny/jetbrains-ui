@@ -3,7 +3,7 @@
   "name": "icons-general-status-success",
   "type": "registry:ui",
   "title": "Success",
-  "description": "Success icon from General Status category.",
+  "description": "Success icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "success",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

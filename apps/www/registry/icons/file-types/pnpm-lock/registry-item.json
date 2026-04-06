@@ -3,7 +3,7 @@
   "name": "icons-file-types-pnpm-lock",
   "type": "registry:ui",
   "title": "Pnpm Lock",
-  "description": "Pnpm Lock icon from File Types category.",
+  "description": "Pnpm Lock icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

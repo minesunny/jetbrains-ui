@@ -3,7 +3,7 @@
   "name": "icons-vcs-resolve-continue",
   "type": "registry:ui",
   "title": "Resolve Continue",
-  "description": "Resolve Continue icon from Vcs category.",
+  "description": "Resolve Continue icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

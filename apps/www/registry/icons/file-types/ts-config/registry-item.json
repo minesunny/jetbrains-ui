@@ -3,7 +3,7 @@
   "name": "icons-file-types-ts-config",
   "type": "registry:ui",
   "title": "Ts Config",
-  "description": "Ts Config icon from File Types category.",
+  "description": "Ts Config icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

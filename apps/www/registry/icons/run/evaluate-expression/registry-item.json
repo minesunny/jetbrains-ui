@@ -3,7 +3,7 @@
   "name": "icons-run-evaluate-expression",
   "type": "registry:ui",
   "title": "Evaluate Expression",
-  "description": "Evaluate Expression icon from Run category.",
+  "description": "Evaluate Expression icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

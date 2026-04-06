@@ -3,7 +3,7 @@
   "name": "icons-general-progress-bar-stop",
   "type": "registry:ui",
   "title": "Stop",
-  "description": "Stop icon from General Progress Bar category.",
+  "description": "Stop icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "stop",
       "icon",
       "general",
-      "progress-bar",
       "jetbrains"
     ]
   }

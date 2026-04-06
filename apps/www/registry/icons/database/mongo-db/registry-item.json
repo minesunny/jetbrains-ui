@@ -3,7 +3,7 @@
   "name": "icons-database-mongo-db",
   "type": "registry:ui",
   "title": "Mongo Db",
-  "description": "Mongo Db icon from Database category.",
+  "description": "Mongo Db icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

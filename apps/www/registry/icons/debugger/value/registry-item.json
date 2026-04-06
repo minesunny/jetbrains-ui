@@ -3,7 +3,7 @@
   "name": "icons-debugger-value",
   "type": "registry:ui",
   "title": "Value",
-  "description": "Value icon from Debugger category.",
+  "description": "Value icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-inline-match-case",
   "type": "registry:ui",
   "title": "Match Case",
-  "description": "Match Case icon from General Inline category.",
+  "description": "Match Case icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "match-case",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-terminal-other",
   "type": "registry:ui",
   "title": "Other",
-  "description": "Other icon from Terminal category.",
+  "description": "Other icon from terminal category.",
   "registryDependencies": [
     "icons-terminal-types"
   ],

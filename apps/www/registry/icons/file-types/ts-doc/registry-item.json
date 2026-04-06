@@ -3,7 +3,7 @@
   "name": "icons-file-types-ts-doc",
   "type": "registry:ui",
   "title": "Ts Doc",
-  "description": "Ts Doc icon from File Types category.",
+  "description": "Ts Doc icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

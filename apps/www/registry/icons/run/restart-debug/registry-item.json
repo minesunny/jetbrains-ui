@@ -3,7 +3,7 @@
   "name": "icons-run-restart-debug",
   "type": "registry:ui",
   "title": "Restart Debug",
-  "description": "Restart Debug icon from Run category.",
+  "description": "Restart Debug icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

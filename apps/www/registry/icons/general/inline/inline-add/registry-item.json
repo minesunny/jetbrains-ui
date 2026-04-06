@@ -3,7 +3,7 @@
   "name": "icons-general-inline-inline-add",
   "type": "registry:ui",
   "title": "Inline Add",
-  "description": "Inline Add icon from General Inline category.",
+  "description": "Inline Add icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "inline-add",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

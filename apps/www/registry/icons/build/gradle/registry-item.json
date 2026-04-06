@@ -3,7 +3,7 @@
   "name": "icons-build-gradle",
   "type": "registry:ui",
   "title": "Gradle",
-  "description": "Gradle icon from Build category.",
+  "description": "Gradle icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

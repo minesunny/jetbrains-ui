@@ -3,7 +3,7 @@
   "name": "icons-database-database-link",
   "type": "registry:ui",
   "title": "Database Link",
-  "description": "Database Link icon from Database category.",
+  "description": "Database Link icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

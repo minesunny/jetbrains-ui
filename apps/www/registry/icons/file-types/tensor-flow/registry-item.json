@@ -3,7 +3,7 @@
   "name": "icons-file-types-tensor-flow",
   "type": "registry:ui",
   "title": "Tensor Flow",
-  "description": "Tensor Flow icon from File Types category.",
+  "description": "Tensor Flow icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

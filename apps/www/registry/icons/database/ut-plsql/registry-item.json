@@ -3,7 +3,7 @@
   "name": "icons-database-ut-plsql",
   "type": "registry:ui",
   "title": "Ut Plsql",
-  "description": "Ut Plsql icon from Database category.",
+  "description": "Ut Plsql icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

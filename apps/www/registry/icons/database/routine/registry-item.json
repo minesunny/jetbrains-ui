@@ -3,7 +3,7 @@
   "name": "icons-database-routine",
   "type": "registry:ui",
   "title": "Routine",
-  "description": "Routine icon from Database category.",
+  "description": "Routine icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

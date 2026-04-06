@@ -3,7 +3,7 @@
   "name": "icons-database-column-gold-blue-key-dot",
   "type": "registry:ui",
   "title": "Column Gold Blue Key Dot",
-  "description": "Column Gold Blue Key Dot icon from Database category.",
+  "description": "Column Gold Blue Key Dot icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

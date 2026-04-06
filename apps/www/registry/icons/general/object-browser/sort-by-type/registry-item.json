@@ -3,7 +3,7 @@
   "name": "icons-general-object-browser-sort-by-type",
   "type": "registry:ui",
   "title": "Sort By Type",
-  "description": "Sort By Type icon from General Object Browser category.",
+  "description": "Sort By Type icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "sort-by-type",
       "icon",
       "general",
-      "object-browser",
       "jetbrains"
     ]
   }

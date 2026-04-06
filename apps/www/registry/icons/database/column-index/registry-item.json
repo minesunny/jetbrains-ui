@@ -3,7 +3,7 @@
   "name": "icons-database-column-index",
   "type": "registry:ui",
   "title": "Column Index",
-  "description": "Column Index icon from Database category.",
+  "description": "Column Index icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

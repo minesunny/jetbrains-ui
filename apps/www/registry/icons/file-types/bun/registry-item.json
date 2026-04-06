@@ -3,7 +3,7 @@
   "name": "icons-file-types-bun",
   "type": "registry:ui",
   "title": "Bun",
-  "description": "Bun icon from File Types category.",
+  "description": "Bun icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

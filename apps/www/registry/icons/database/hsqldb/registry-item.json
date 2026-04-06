@@ -3,7 +3,7 @@
   "name": "icons-database-hsqldb",
   "type": "registry:ui",
   "title": "Hsqldb",
-  "description": "Hsqldb icon from Database category.",
+  "description": "Hsqldb icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

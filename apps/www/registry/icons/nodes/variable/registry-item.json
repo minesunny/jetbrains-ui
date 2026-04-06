@@ -3,7 +3,7 @@
   "name": "icons-nodes-variable",
   "type": "registry:ui",
   "title": "Variable",
-  "description": "Variable icon from Nodes category.",
+  "description": "Variable icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

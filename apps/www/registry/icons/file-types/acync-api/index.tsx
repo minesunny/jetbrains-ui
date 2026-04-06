@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type AcyncAPIProps = SvgProps;
+export type AcyncApiProps = SvgProps;
 
-const AcyncAPILight: FC<SvgProps> = ({
+const AcyncApiLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -35,7 +35,7 @@ const AcyncAPILight: FC<SvgProps> = ({
   </svg>
 );
 
-const AcyncAPIDark: FC<SvgProps> = ({
+const AcyncApiDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -66,14 +66,14 @@ const AcyncAPIDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const AcyncAPI: FC<AcyncAPIProps> = ({
+export const AcyncApi: FC<AcyncApiProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? AcyncAPILight : AcyncAPIDark;
+  const SvgComponent = mode === 'light' ? AcyncApiLight : AcyncApiDark;
 
   return (
     <SvgComponent

@@ -3,7 +3,7 @@
   "name": "icons-general-ai-assistant-feature-context",
   "type": "registry:ui",
   "title": "Feature Context",
-  "description": "Feature Context icon from General Ai Assistant category.",
+  "description": "Feature Context icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "feature-context",
       "icon",
       "general",
-      "ai-assistant",
       "jetbrains"
     ]
   }

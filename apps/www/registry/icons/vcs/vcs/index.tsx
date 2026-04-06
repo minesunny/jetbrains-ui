@@ -22,7 +22,7 @@ const VcsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="4.5" cy="4" r="2" stroke="#6C707E" />
+    <circle cx={4.5} cy={4} r={2} stroke="#6C707E" />
     <path d="M4.5 11.5h4a2 2 0 0 0 2-2V8" stroke="#6C707E" />
     <path
       d="M4.5 6.5v8"
@@ -30,7 +30,7 @@ const VcsLight: FC<SvgProps> = ({
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <circle cx="10.5" cy="6" r="2" stroke="#6C707E" />
+    <circle cx={10.5} cy={6} r={2} stroke="#6C707E" />
   </svg>
 );
 
@@ -52,7 +52,7 @@ const VcsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="4.5" cy="4" r="2" stroke="#CED0D6" />
+    <circle cx={4.5} cy={4} r={2} stroke="#CED0D6" />
     <path d="M4.5 11.5h4a2 2 0 0 0 2-2V8" stroke="#CED0D6" />
     <path
       d="M4.5 6.5v8"
@@ -60,7 +60,7 @@ const VcsDark: FC<SvgProps> = ({
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <circle cx="10.5" cy="6" r="2" stroke="#CED0D6" />
+    <circle cx={10.5} cy={6} r={2} stroke="#CED0D6" />
   </svg>
 );
 

@@ -3,7 +3,7 @@
   "name": "icons-general-actions-profile-memory",
   "type": "registry:ui",
   "title": "Profile Memory",
-  "description": "Profile Memory icon from General Actions category.",
+  "description": "Profile Memory icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "profile-memory",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

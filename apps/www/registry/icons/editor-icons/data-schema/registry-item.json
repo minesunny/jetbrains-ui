@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-data-schema",
   "type": "registry:ui",
   "title": "Data Schema",
-  "description": "Data Schema icon from Editor Icons category.",
+  "description": "Data Schema icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

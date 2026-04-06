@@ -3,7 +3,7 @@
   "name": "icons-general-general-import",
   "type": "registry:ui",
   "title": "Import",
-  "description": "Import icon from General General category.",
+  "description": "Import icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "import",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

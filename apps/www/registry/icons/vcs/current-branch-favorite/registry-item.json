@@ -3,7 +3,7 @@
   "name": "icons-vcs-current-branch-favorite",
   "type": "registry:ui",
   "title": "Current Branch Favorite",
-  "description": "Current Branch Favorite icon from Vcs category.",
+  "description": "Current Branch Favorite icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

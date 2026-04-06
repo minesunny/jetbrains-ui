@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-overriden-method",
   "type": "registry:ui",
   "title": "Overriden Method",
-  "description": "Overriden Method icon from Editor Icons category.",
+  "description": "Overriden Method icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

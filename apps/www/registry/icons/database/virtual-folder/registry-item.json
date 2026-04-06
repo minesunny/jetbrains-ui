@@ -3,7 +3,7 @@
   "name": "icons-database-virtual-folder",
   "type": "registry:ui",
   "title": "Virtual Folder",
-  "description": "Virtual Folder icon from Database category.",
+  "description": "Virtual Folder icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

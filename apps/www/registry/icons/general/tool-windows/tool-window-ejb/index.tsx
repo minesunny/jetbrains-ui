@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../../types';
 
-export type ToolWindowEJBProps = SvgProps;
+export type ToolWindowEjbProps = SvgProps;
 
-const ToolWindowEJBLight: FC<SvgProps> = ({
+const ToolWindowEjbLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -35,7 +35,7 @@ const ToolWindowEJBLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ToolWindowEJBDark: FC<SvgProps> = ({
+const ToolWindowEjbDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -66,7 +66,7 @@ const ToolWindowEJBDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const ToolWindowEJB: FC<ToolWindowEJBProps> = ({
+export const ToolWindowEjb: FC<ToolWindowEjbProps> = ({
   size = 'md',
   mode = 'light',
   className,
@@ -74,7 +74,7 @@ export const ToolWindowEJB: FC<ToolWindowEJBProps> = ({
   ...props
 }) => {
   const SvgComponent =
-    mode === 'light' ? ToolWindowEJBLight : ToolWindowEJBDark;
+    mode === 'light' ? ToolWindowEjbLight : ToolWindowEjbDark;
 
   return (
     <SvgComponent

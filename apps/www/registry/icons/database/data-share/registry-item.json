@@ -3,7 +3,7 @@
   "name": "icons-database-data-share",
   "type": "registry:ui",
   "title": "Data Share",
-  "description": "Data Share icon from Database category.",
+  "description": "Data Share icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

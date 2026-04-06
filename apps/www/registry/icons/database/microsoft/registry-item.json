@@ -3,7 +3,7 @@
   "name": "icons-database-microsoft",
   "type": "registry:ui",
   "title": "Microsoft",
-  "description": "Microsoft icon from Database category.",
+  "description": "Microsoft icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

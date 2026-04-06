@@ -3,7 +3,7 @@
   "name": "icons-database-virtual-key",
   "type": "registry:ui",
   "title": "Virtual Key",
-  "description": "Virtual Key icon from Database category.",
+  "description": "Virtual Key icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

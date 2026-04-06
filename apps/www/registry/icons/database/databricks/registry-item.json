@@ -3,7 +3,7 @@
   "name": "icons-database-databricks",
   "type": "registry:ui",
   "title": "Databricks",
-  "description": "Databricks icon from Database category.",
+  "description": "Databricks icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

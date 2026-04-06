@@ -3,7 +3,7 @@
   "name": "icons-general-general-checkmark",
   "type": "registry:ui",
   "title": "Checkmark",
-  "description": "Checkmark icon from General General category.",
+  "description": "Checkmark icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "checkmark",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

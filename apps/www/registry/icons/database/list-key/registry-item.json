@@ -3,7 +3,7 @@
   "name": "icons-database-list-key",
   "type": "registry:ui",
   "title": "List Key",
-  "description": "List Key icon from Database category.",
+  "description": "List Key icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-ai-assistant-like",
   "type": "registry:ui",
   "title": "Like",
-  "description": "Like icon from General Ai Assistant category.",
+  "description": "Like icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "like",
       "icon",
       "general",
-      "ai-assistant",
       "jetbrains"
     ]
   }

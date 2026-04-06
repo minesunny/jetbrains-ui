@@ -3,7 +3,7 @@
   "name": "icons-general-editor-add-row-above",
   "type": "registry:ui",
   "title": "Add Row Above",
-  "description": "Add Row Above icon from General Editor category.",
+  "description": "Add Row Above icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "add-row-above",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

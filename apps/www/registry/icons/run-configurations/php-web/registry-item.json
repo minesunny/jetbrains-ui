@@ -3,7 +3,7 @@
   "name": "icons-run-configurations-php-web",
   "type": "registry:ui",
   "title": "Php Web",
-  "description": "Php Web icon from Run Configurations category.",
+  "description": "Php Web icon from run-configurations category.",
   "registryDependencies": [
     "icons-run-configurations-types"
   ],

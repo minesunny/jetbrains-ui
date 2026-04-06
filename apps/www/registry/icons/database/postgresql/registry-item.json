@@ -3,7 +3,7 @@
   "name": "icons-database-postgresql",
   "type": "registry:ui",
   "title": "Postgresql",
-  "description": "Postgresql icon from Database category.",
+  "description": "Postgresql icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

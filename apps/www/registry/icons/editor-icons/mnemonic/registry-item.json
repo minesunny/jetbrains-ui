@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-mnemonic",
   "type": "registry:ui",
   "title": "Mnemonic",
-  "description": "Mnemonic icon from Editor Icons category.",
+  "description": "Mnemonic icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

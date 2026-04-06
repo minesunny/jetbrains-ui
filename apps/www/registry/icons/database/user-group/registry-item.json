@@ -3,7 +3,7 @@
   "name": "icons-database-user-group",
   "type": "registry:ui",
   "title": "User Group",
-  "description": "User Group icon from Database category.",
+  "description": "User Group icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

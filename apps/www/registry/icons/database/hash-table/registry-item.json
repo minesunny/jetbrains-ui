@@ -3,7 +3,7 @@
   "name": "icons-database-hash-table",
   "type": "registry:ui",
   "title": "Hash Table",
-  "description": "Hash Table icon from Database category.",
+  "description": "Hash Table icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

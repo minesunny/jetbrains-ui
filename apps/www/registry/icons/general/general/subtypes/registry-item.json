@@ -3,7 +3,7 @@
   "name": "icons-general-general-subtypes",
   "type": "registry:ui",
   "title": "Subtypes",
-  "description": "Subtypes icon from General General category.",
+  "description": "Subtypes icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "subtypes",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

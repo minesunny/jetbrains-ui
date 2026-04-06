@@ -39,25 +39,25 @@ const CythonFileLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="4"
-        y1="4"
-        x2="8.408"
-        y2="7.798"
+        x1={4}
+        y1={4}
+        x2={8.408}
+        y2={7.798}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#5A9FD4" />
-        <stop offset="1" stopColor="#306998" />
+        <stop offset={1} stopColor="#306998" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="9.033"
-        y1="10.944"
-        x2="7.46"
-        y2="8.715"
+        x1={9.033}
+        y1={10.944}
+        x2={7.46}
+        y2={8.715}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F4C20E" />
-        <stop offset="1" stopColor="#FBDC3E" />
+        <stop offset={1} stopColor="#FBDC3E" />
       </linearGradient>
     </defs>
   </svg>
@@ -98,25 +98,25 @@ const CythonFileDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="4"
-        y1="4"
-        x2="8.408"
-        y2="7.798"
+        x1={4}
+        y1={4}
+        x2={8.408}
+        y2={7.798}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#5A9FD4" />
-        <stop offset="1" stopColor="#306998" />
+        <stop offset={1} stopColor="#306998" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="9.033"
-        y1="10.944"
-        x2="7.46"
-        y2="8.715"
+        x1={9.033}
+        y1={10.944}
+        x2={7.46}
+        y2={8.715}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F4C20E" />
-        <stop offset="1" stopColor="#FBDC3E" />
+        <stop offset={1} stopColor="#FBDC3E" />
       </linearGradient>
     </defs>
   </svg>

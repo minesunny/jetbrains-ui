@@ -3,7 +3,7 @@
   "name": "icons-nodes-home-folder",
   "type": "registry:ui",
   "title": "Home Folder",
-  "description": "Home Folder icon from Nodes category.",
+  "description": "Home Folder icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

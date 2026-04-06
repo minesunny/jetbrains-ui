@@ -3,7 +3,7 @@
   "name": "icons-general-general-open",
   "type": "registry:ui",
   "title": "Open",
-  "description": "Open icon from General General category.",
+  "description": "Open icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "open",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

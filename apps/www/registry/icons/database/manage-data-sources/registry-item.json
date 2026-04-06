@@ -3,7 +3,7 @@
   "name": "icons-database-manage-data-sources",
   "type": "registry:ui",
   "title": "Manage Data Sources",
-  "description": "Manage Data Sources icon from Database category.",
+  "description": "Manage Data Sources icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

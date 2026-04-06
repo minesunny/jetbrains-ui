@@ -3,7 +3,7 @@
   "name": "icons-database-exasol",
   "type": "registry:ui",
   "title": "Exasol",
-  "description": "Exasol icon from Database category.",
+  "description": "Exasol icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

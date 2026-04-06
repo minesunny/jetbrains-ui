@@ -3,7 +3,7 @@
   "name": "icons-general-general-supertypes",
   "type": "registry:ui",
   "title": "Supertypes",
-  "description": "Supertypes icon from General General category.",
+  "description": "Supertypes icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "supertypes",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

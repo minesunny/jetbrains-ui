@@ -3,7 +3,7 @@
   "name": "icons-run-trace-stream",
   "type": "registry:ui",
   "title": "Trace Stream",
-  "description": "Trace Stream icon from Run category.",
+  "description": "Trace Stream icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

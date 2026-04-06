@@ -3,7 +3,7 @@
   "name": "icons-build-maven-profiles",
   "type": "registry:ui",
   "title": "Maven Profiles",
-  "description": "Maven Profiles icon from Build category.",
+  "description": "Maven Profiles icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

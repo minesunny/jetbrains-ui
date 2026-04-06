@@ -3,7 +3,7 @@
   "name": "icons-database-document-db",
   "type": "registry:ui",
   "title": "Document Db",
-  "description": "Document Db icon from Database category.",
+  "description": "Document Db icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

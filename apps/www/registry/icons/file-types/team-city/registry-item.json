@@ -3,7 +3,7 @@
   "name": "icons-file-types-team-city",
   "type": "registry:ui",
   "title": "Team City",
-  "description": "Team City icon from File Types category.",
+  "description": "Team City icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

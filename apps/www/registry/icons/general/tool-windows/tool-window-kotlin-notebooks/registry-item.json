@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-kotlin-notebooks",
   "type": "registry:ui",
   "title": "Tool Window Kotlin Notebooks",
-  "description": "Tool Window Kotlin Notebooks icon from General Tool Windows category.",
+  "description": "Tool Window Kotlin Notebooks icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-kotlin-notebooks",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

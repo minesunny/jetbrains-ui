@@ -22,12 +22,12 @@ const PreviewOnlyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#6C707E" />
+    <rect x={2.5} y={2.5} width={11} height={11} rx={1.5} stroke="#6C707E" />
     <path
       d="m2.357 9.5 1.826-1.825a1 1 0 0 1 1.38-.033L12 13.5"
       stroke="#6C707E"
     />
-    <circle cx="10" cy="6" r="1.5" stroke="#6C707E" />
+    <circle cx={10} cy={6} r={1.5} stroke="#6C707E" />
   </svg>
 );
 
@@ -49,12 +49,12 @@ const PreviewOnlyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#CED0D6" />
+    <rect x={2.5} y={2.5} width={11} height={11} rx={1.5} stroke="#CED0D6" />
     <path
       d="m2.357 9.5 1.826-1.825a1 1 0 0 1 1.38-.033L12 13.5"
       stroke="#CED0D6"
     />
-    <circle cx="10" cy="6" r="1.5" stroke="#CED0D6" />
+    <circle cx={10} cy={6} r={1.5} stroke="#CED0D6" />
   </svg>
 );
 

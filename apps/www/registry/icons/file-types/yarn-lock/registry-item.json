@@ -3,7 +3,7 @@
   "name": "icons-file-types-yarn-lock",
   "type": "registry:ui",
   "title": "Yarn Lock",
-  "description": "Yarn Lock icon from File Types category.",
+  "description": "Yarn Lock icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

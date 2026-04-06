@@ -3,7 +3,7 @@
   "name": "icons-database-sorted-set",
   "type": "registry:ui",
   "title": "Sorted Set",
-  "description": "Sorted Set icon from Database category.",
+  "description": "Sorted Set icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

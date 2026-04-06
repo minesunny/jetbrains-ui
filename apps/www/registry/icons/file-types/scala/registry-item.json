@@ -3,7 +3,7 @@
   "name": "icons-file-types-scala",
   "type": "registry:ui",
   "title": "Scala",
-  "description": "Scala icon from File Types category.",
+  "description": "Scala icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

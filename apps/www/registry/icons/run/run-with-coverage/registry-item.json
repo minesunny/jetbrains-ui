@@ -3,7 +3,7 @@
   "name": "icons-run-run-with-coverage",
   "type": "registry:ui",
   "title": "Run With Coverage",
-  "description": "Run With Coverage icon from Run category.",
+  "description": "Run With Coverage icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

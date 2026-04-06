@@ -3,7 +3,7 @@
   "name": "icons-vcs-update",
   "type": "registry:ui",
   "title": "Update",
-  "description": "Update icon from Vcs category.",
+  "description": "Update icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

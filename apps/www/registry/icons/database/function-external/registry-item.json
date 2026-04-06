@@ -3,7 +3,7 @@
   "name": "icons-database-function-external",
   "type": "registry:ui",
   "title": "Function External",
-  "description": "Function External icon from Database category.",
+  "description": "Function External icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-file-types-py-torch",
   "type": "registry:ui",
   "title": "Py Torch",
-  "description": "Py Torch icon from File Types category.",
+  "description": "Py Torch icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

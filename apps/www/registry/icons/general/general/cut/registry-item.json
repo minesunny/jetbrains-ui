@@ -3,7 +3,7 @@
   "name": "icons-general-general-cut",
   "type": "registry:ui",
   "title": "Cut",
-  "description": "Cut icon from General General category.",
+  "description": "Cut icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "cut",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

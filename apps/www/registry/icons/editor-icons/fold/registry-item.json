@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-fold",
   "type": "registry:ui",
   "title": "Fold",
-  "description": "Fold icon from Editor Icons category.",
+  "description": "Fold icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

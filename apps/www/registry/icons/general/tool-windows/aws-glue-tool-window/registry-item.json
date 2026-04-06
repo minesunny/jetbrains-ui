@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-aws-glue-tool-window",
   "type": "registry:ui",
   "title": "Aws Glue Tool Window",
-  "description": "Aws Glue Tool Window icon from General Tool Windows category.",
+  "description": "Aws Glue Tool Window icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "aws-glue-tool-window",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

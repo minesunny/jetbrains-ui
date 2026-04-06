@@ -3,7 +3,7 @@
   "name": "icons-nodes-shared-scope",
   "type": "registry:ui",
   "title": "Shared Scope",
-  "description": "Shared Scope icon from Nodes category.",
+  "description": "Shared Scope icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

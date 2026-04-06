@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inlay-rename-in-comments-active",
   "type": "registry:ui",
   "title": "Inlay Rename In Comments Active",
-  "description": "Inlay Rename In Comments Active icon from Editor Icons category.",
+  "description": "Inlay Rename In Comments Active icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

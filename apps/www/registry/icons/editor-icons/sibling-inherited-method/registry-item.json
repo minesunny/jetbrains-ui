@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-sibling-inherited-method",
   "type": "registry:ui",
   "title": "Sibling Inherited Method",
-  "description": "Sibling Inherited Method icon from Editor Icons category.",
+  "description": "Sibling Inherited Method icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

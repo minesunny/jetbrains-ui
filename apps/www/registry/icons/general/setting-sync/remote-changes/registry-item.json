@@ -3,7 +3,7 @@
   "name": "icons-general-setting-sync-remote-changes",
   "type": "registry:ui",
   "title": "Remote Changes",
-  "description": "Remote Changes icon from General Setting Sync category.",
+  "description": "Remote Changes icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "remote-changes",
       "icon",
       "general",
-      "setting-sync",
       "jetbrains"
     ]
   }

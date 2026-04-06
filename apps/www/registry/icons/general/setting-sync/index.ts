@@ -8,5 +8,3 @@ export { StatusDisabled } from './status-disabled';
 export type { StatusDisabledProps } from './status-disabled';
 export { StatusEnabled } from './status-enabled';
 export type { StatusEnabledProps } from './status-enabled';
-export { svgNames } from '../types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

@@ -3,7 +3,7 @@
   "name": "icons-database-package",
   "type": "registry:ui",
   "title": "Package",
-  "description": "Package icon from Database category.",
+  "description": "Package icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

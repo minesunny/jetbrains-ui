@@ -3,7 +3,7 @@
   "name": "icons-general-status-error-outline",
   "type": "registry:ui",
   "title": "Error Outline",
-  "description": "Error Outline icon from General Status category.",
+  "description": "Error Outline icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "error-outline",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

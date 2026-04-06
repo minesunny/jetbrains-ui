@@ -3,7 +3,7 @@
   "name": "icons-general-ai-assistant-attached",
   "type": "registry:ui",
   "title": "Attached",
-  "description": "Attached icon from General Ai Assistant category.",
+  "description": "Attached icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "attached",
       "icon",
       "general",
-      "ai-assistant",
       "jetbrains"
     ]
   }

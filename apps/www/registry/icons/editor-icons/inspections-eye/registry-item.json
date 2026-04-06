@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inspections-eye",
   "type": "registry:ui",
   "title": "Inspections Eye",
-  "description": "Inspections Eye icon from Editor Icons category.",
+  "description": "Inspections Eye icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-database-azure",
   "type": "registry:ui",
   "title": "Azure",
-  "description": "Azure icon from Database category.",
+  "description": "Azure icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

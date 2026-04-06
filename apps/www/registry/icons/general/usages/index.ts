@@ -6,5 +6,3 @@ export { ShowReadAccess } from './show-read-access';
 export type { ShowReadAccessProps } from './show-read-access';
 export { ShowWriteAccess } from './show-write-access';
 export type { ShowWriteAccessProps } from './show-write-access';
-export { svgNames } from '../types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

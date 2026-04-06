@@ -22,9 +22,9 @@ const MoreHorizontalLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="3" cy="8" r="1" transform="rotate(-90 3 8)" fill="#6C707E" />
-    <circle cx="8" cy="8" r="1" transform="rotate(-90 8 8)" fill="#6C707E" />
-    <circle cx="13" cy="8" r="1" transform="rotate(-90 13 8)" fill="#6C707E" />
+    <circle cx={3} cy={8} r={1} transform="rotate(-90 3 8)" fill="#6C707E" />
+    <circle cx={8} cy={8} r={1} transform="rotate(-90 8 8)" fill="#6C707E" />
+    <circle cx={13} cy={8} r={1} transform="rotate(-90 13 8)" fill="#6C707E" />
   </svg>
 );
 
@@ -46,9 +46,9 @@ const MoreHorizontalDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="3" cy="8" r="1" transform="rotate(-90 3 8)" fill="#CED0D6" />
-    <circle cx="8" cy="8" r="1" transform="rotate(-90 8 8)" fill="#CED0D6" />
-    <circle cx="13" cy="8" r="1" transform="rotate(-90 13 8)" fill="#CED0D6" />
+    <circle cx={3} cy={8} r={1} transform="rotate(-90 3 8)" fill="#CED0D6" />
+    <circle cx={8} cy={8} r={1} transform="rotate(-90 8 8)" fill="#CED0D6" />
+    <circle cx={13} cy={8} r={1} transform="rotate(-90 13 8)" fill="#CED0D6" />
   </svg>
 );
 

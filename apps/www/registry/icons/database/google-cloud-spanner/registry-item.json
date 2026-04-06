@@ -3,7 +3,7 @@
   "name": "icons-database-google-cloud-spanner",
   "type": "registry:ui",
   "title": "Google Cloud Spanner",
-  "description": "Google Cloud Spanner icon from Database category.",
+  "description": "Google Cloud Spanner icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

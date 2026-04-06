@@ -3,7 +3,7 @@
   "name": "icons-file-types-open-rewrite",
   "type": "registry:ui",
   "title": "Open Rewrite",
-  "description": "Open Rewrite icon from File Types category.",
+  "description": "Open Rewrite icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

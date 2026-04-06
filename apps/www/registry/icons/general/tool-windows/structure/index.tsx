@@ -22,9 +22,9 @@ const StructureLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="8.5" y="8.5" width="5" height="5" rx=".5" stroke="#6C707E" />
-    <rect x="1.5" y="8.5" width="5" height="5" rx=".5" stroke="#6C707E" />
-    <rect x="1.5" y="1.5" width="5" height="5" rx=".5" stroke="#6C707E" />
+    <rect x={8.5} y={8.5} width={5} height={5} rx={0.5} stroke="#6C707E" />
+    <rect x={1.5} y={8.5} width={5} height={5} rx={0.5} stroke="#6C707E" />
+    <rect x={1.5} y={1.5} width={5} height={5} rx={0.5} stroke="#6C707E" />
   </svg>
 );
 
@@ -46,9 +46,9 @@ const StructureDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="8.5" y="8.5" width="5" height="5" rx=".5" stroke="#CED0D6" />
-    <rect x="1.5" y="8.5" width="5" height="5" rx=".5" stroke="#CED0D6" />
-    <rect x="1.5" y="1.5" width="5" height="5" rx=".5" stroke="#CED0D6" />
+    <rect x={8.5} y={8.5} width={5} height={5} rx={0.5} stroke="#CED0D6" />
+    <rect x={1.5} y={8.5} width={5} height={5} rx={0.5} stroke="#CED0D6" />
+    <rect x={1.5} y={1.5} width={5} height={5} rx={0.5} stroke="#CED0D6" />
   </svg>
 );
 

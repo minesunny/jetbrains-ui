@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../../types';
 
-export type ToolWindowPlatformIOProps = SvgProps;
+export type ToolWindowPlatformIoProps = SvgProps;
 
-const ToolWindowPlatformIOLight: FC<SvgProps> = ({
+const ToolWindowPlatformIoLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -35,7 +35,7 @@ const ToolWindowPlatformIOLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ToolWindowPlatformIODark: FC<SvgProps> = ({
+const ToolWindowPlatformIoDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -66,7 +66,7 @@ const ToolWindowPlatformIODark: FC<SvgProps> = ({
   </svg>
 );
 
-export const ToolWindowPlatformIO: FC<ToolWindowPlatformIOProps> = ({
+export const ToolWindowPlatformIo: FC<ToolWindowPlatformIoProps> = ({
   size = 'md',
   mode = 'light',
   className,
@@ -74,7 +74,7 @@ export const ToolWindowPlatformIO: FC<ToolWindowPlatformIOProps> = ({
   ...props
 }) => {
   const SvgComponent =
-    mode === 'light' ? ToolWindowPlatformIOLight : ToolWindowPlatformIODark;
+    mode === 'light' ? ToolWindowPlatformIoLight : ToolWindowPlatformIoDark;
 
   return (
     <SvgComponent

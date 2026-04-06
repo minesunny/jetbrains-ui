@@ -3,7 +3,7 @@
   "name": "icons-general-general-reformat-code",
   "type": "registry:ui",
   "title": "Reformat Code",
-  "description": "Reformat Code icon from General General category.",
+  "description": "Reformat Code icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "reformat-code",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -3,7 +3,7 @@
   "name": "icons-file-types-qml",
   "type": "registry:ui",
   "title": "Qml",
-  "description": "Qml icon from File Types category.",
+  "description": "Qml icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

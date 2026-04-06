@@ -3,7 +3,7 @@
   "name": "icons-general-actions-select-all",
   "type": "registry:ui",
   "title": "Select All",
-  "description": "Select All icon from General Actions category.",
+  "description": "Select All icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "select-all",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

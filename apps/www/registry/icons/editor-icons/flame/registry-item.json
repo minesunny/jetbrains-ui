@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-flame",
   "type": "registry:ui",
   "title": "Flame",
-  "description": "Flame icon from Editor Icons category.",
+  "description": "Flame icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

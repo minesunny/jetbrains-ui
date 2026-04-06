@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-rerun",
   "type": "registry:ui",
   "title": "Rerun",
-  "description": "Rerun icon from Editor Icons category.",
+  "description": "Rerun icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

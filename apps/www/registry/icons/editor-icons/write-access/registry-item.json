@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-write-access",
   "type": "registry:ui",
   "title": "Write Access",
-  "description": "Write Access icon from Editor Icons category.",
+  "description": "Write Access icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

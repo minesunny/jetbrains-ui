@@ -3,7 +3,7 @@
   "name": "icons-file-types-terraform",
   "type": "registry:ui",
   "title": "Terraform",
-  "description": "Terraform icon from File Types category.",
+  "description": "Terraform icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

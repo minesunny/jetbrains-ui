@@ -3,7 +3,7 @@
   "name": "icons-file-types-i18n",
   "type": "registry:ui",
   "title": "I18n",
-  "description": "I18n icon from File Types category.",
+  "description": "I18n icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

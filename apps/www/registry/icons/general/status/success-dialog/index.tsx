@@ -22,11 +22,11 @@ const SuccessDialogLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="14" cy="14" r="12" fill="#55A76A" />
+    <circle cx={14} cy={14} r={12} fill="#55A76A" />
     <path
       d="M20 10.5 12.5 18l-4-4"
       stroke="#fff"
-      strokeWidth="2"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -52,11 +52,11 @@ const SuccessDialogDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <g clipPath="url(#a)">
-      <circle cx="14" cy="14" r="12" fill="#57965C" />
+      <circle cx={14} cy={14} r={12} fill="#57965C" />
       <path
         d="M20 10.5 12.5 18l-4-4"
         stroke="#fff"
-        strokeWidth="2"
+        strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
       />

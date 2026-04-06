@@ -3,7 +3,7 @@
   "name": "icons-file-types-microsoft-windows",
   "type": "registry:ui",
   "title": "Microsoft Windows",
-  "description": "Microsoft Windows icon from File Types category.",
+  "description": "Microsoft Windows icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

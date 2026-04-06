@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type IndexProps = SvgProps;
+export type IndexIconProps = SvgProps;
 
-const IndexLight: FC<SvgProps> = ({
+const IndexIconLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -29,7 +29,7 @@ const IndexLight: FC<SvgProps> = ({
   </svg>
 );
 
-const IndexDark: FC<SvgProps> = ({
+const IndexIconDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -54,14 +54,14 @@ const IndexDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const Index: FC<IndexProps> = ({
+export const IndexIcon: FC<IndexIconProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? IndexLight : IndexDark;
+  const SvgComponent = mode === 'light' ? IndexIconLight : IndexIconDark;
 
   return (
     <SvgComponent

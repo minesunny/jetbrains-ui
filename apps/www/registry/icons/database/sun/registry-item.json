@@ -3,7 +3,7 @@
   "name": "icons-database-sun",
   "type": "registry:ui",
   "title": "Sun",
-  "description": "Sun icon from Database category.",
+  "description": "Sun icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

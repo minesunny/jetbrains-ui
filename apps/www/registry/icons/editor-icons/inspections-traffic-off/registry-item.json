@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inspections-traffic-off",
   "type": "registry:ui",
   "title": "Inspections Traffic Off",
-  "description": "Inspections Traffic Off icon from Editor Icons category.",
+  "description": "Inspections Traffic Off icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

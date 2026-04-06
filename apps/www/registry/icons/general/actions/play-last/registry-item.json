@@ -3,7 +3,7 @@
   "name": "icons-general-actions-play-last",
   "type": "registry:ui",
   "title": "Play Last",
-  "description": "Play Last icon from General Actions category.",
+  "description": "Play Last icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "play-last",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

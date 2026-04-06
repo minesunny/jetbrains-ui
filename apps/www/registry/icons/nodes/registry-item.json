@@ -14,14 +14,44 @@
       "target": "components/jetbrains-ui/icons/nodes/index.ts"
     },
     {
-      "path": "registry/icons/nodes/abstract-exception/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/abstract-exception/index.tsx"
-    },
-    {
       "path": "registry/icons/nodes/add-any/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/add-any/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/config/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/config/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/copy-of-folder/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/copy-of-folder/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/data-tables/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/data-tables/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/idea-project/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/idea-project/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/include/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/include/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/local-scope/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/local-scope/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/abstract-exception/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/abstract-exception/index.tsx"
     },
     {
       "path": "registry/icons/nodes/alias/index.tsx",
@@ -59,11 +89,6 @@
       "target": "components/jetbrains-ui/icons/nodes/class-initializer/index.tsx"
     },
     {
-      "path": "registry/icons/nodes/config/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/config/index.tsx"
-    },
-    {
       "path": "registry/icons/nodes/constant/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/constant/index.tsx"
@@ -74,19 +99,9 @@
       "target": "components/jetbrains-ui/icons/nodes/controller/index.tsx"
     },
     {
-      "path": "registry/icons/nodes/copy-of-folder/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/copy-of-folder/index.tsx"
-    },
-    {
       "path": "registry/icons/nodes/data-column/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/data-column/index.tsx"
-    },
-    {
-      "path": "registry/icons/nodes/data-tables/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/data-tables/index.tsx"
     },
     {
       "path": "registry/icons/nodes/desktop/index.tsx",
@@ -169,16 +184,6 @@
       "target": "components/jetbrains-ui/icons/nodes/home-folder/index.tsx"
     },
     {
-      "path": "registry/icons/nodes/idea-project/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/idea-project/index.tsx"
-    },
-    {
-      "path": "registry/icons/nodes/include/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/include/index.tsx"
-    },
-    {
       "path": "registry/icons/nodes/interface/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/interface/index.tsx"
@@ -202,11 +207,6 @@
       "path": "registry/icons/nodes/library-folder/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/library-folder/index.tsx"
-    },
-    {
-      "path": "registry/icons/nodes/local-scope/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/local-scope/index.tsx"
     },
     {
       "path": "registry/icons/nodes/method/index.tsx",
@@ -234,6 +234,11 @@
       "target": "components/jetbrains-ui/icons/nodes/module/index.tsx"
     },
     {
+      "path": "registry/icons/nodes/module8x8/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/module8x8/index.tsx"
+    },
+    {
       "path": "registry/icons/nodes/module-group/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/module-group/index.tsx"
@@ -242,11 +247,6 @@
       "path": "registry/icons/nodes/module-java/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/module-java/index.tsx"
-    },
-    {
-      "path": "registry/icons/nodes/module8x8/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/module8x8/index.tsx"
     },
     {
       "path": "registry/icons/nodes/new-folder/index.tsx",
@@ -269,11 +269,6 @@
       "target": "components/jetbrains-ui/icons/nodes/plugin/index.tsx"
     },
     {
-      "path": "registry/icons/nodes/pp-web/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/pp-web/index.tsx"
-    },
-    {
       "path": "registry/icons/nodes/property/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/property/index.tsx"
@@ -294,19 +289,9 @@
       "target": "components/jetbrains-ui/icons/nodes/resources-root/index.tsx"
     },
     {
-      "path": "registry/icons/nodes/server/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/server/index.tsx"
-    },
-    {
       "path": "registry/icons/nodes/servlet/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/servlet/index.tsx"
-    },
-    {
-      "path": "registry/icons/nodes/shared-scope/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/shared-scope/index.tsx"
     },
     {
       "path": "registry/icons/nodes/source-root/index.tsx",
@@ -329,19 +314,9 @@
       "target": "components/jetbrains-ui/icons/nodes/static/index.tsx"
     },
     {
-      "path": "registry/icons/nodes/template/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/template/index.tsx"
-    },
-    {
       "path": "registry/icons/nodes/test/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/test/index.tsx"
-    },
-    {
-      "path": "registry/icons/nodes/test-group/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/test-group/index.tsx"
     },
     {
       "path": "registry/icons/nodes/test-ignored/index.tsx",
@@ -362,11 +337,6 @@
       "path": "registry/icons/nodes/test-source-folder/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/test-source-folder/index.tsx"
-    },
-    {
-      "path": "registry/icons/nodes/text-area/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/text-area/index.tsx"
     },
     {
       "path": "registry/icons/nodes/type/index.tsx",
@@ -394,17 +364,39 @@
       "target": "components/jetbrains-ui/icons/nodes/warning-introduction/index.tsx"
     },
     {
+      "path": "registry/icons/nodes/pp-web/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/pp-web/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/server/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/server/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/shared-scope/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/shared-scope/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/template/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/template/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/test-group/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/test-group/index.tsx"
+    },
+    {
+      "path": "registry/icons/nodes/text-area/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/text-area/index.tsx"
+    },
+    {
       "path": "registry/icons/nodes/web-resources/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/nodes/web-resources/index.tsx"
     }
-  ],
-  "meta": {
-    "keywords": [
-      "icons",
-      "nodes",
-      "jetbrains",
-      "icon-pack"
-    ]
-  }
+  ]
 }

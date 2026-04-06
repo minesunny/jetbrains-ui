@@ -25,7 +25,7 @@ const AttachedLight: FC<SvgProps> = ({
     <path
       d="m9.5 5.5-5.586 5.586a1.4 1.4 0 0 0-.414 1A1.41 1.41 0 0 0 4.914 13.5a1.4 1.4 0 0 0 1-.414l5.757-5.757a2.82 2.82 0 0 0 .828-2 2.82 2.82 0 0 0-.828-2 2.82 2.82 0 0 0-2-.828 2.82 2.82 0 0 0-2 .828L2.999 8.001"
       stroke="#6C707E"
-      strokeMiterlimit="10"
+      strokeMiterlimit={10}
       strokeLinecap="round"
     />
   </svg>
@@ -53,7 +53,7 @@ const AttachedDark: FC<SvgProps> = ({
       <path
         d="m9.5 5.5-5.586 5.586a1.4 1.4 0 0 0-.414 1A1.41 1.41 0 0 0 4.914 13.5a1.4 1.4 0 0 0 1-.414l5.757-5.757a2.82 2.82 0 0 0 .828-2 2.82 2.82 0 0 0-.828-2 2.82 2.82 0 0 0-2-.828 2.82 2.82 0 0 0-2 .828L2.999 8.001"
         stroke="#CED0D6"
-        strokeMiterlimit="10"
+        strokeMiterlimit={10}
         strokeLinecap="round"
       />
     </g>

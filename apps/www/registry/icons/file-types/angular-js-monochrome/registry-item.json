@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-angular-js-monochrome",
+  "type": "registry:ui",
+  "title": "Angular Js Monochrome",
+  "description": "Angular Js Monochrome icon from file-types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/angular-js-monochrome/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/angular-js-monochrome/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "angular-js-monochrome",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

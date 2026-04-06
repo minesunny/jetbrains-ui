@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-invalid",
   "type": "registry:ui",
   "title": "Breakpoint Invalid",
-  "description": "Breakpoint Invalid icon from Breakpoints category.",
+  "description": "Breakpoint Invalid icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-general-history",
   "type": "registry:ui",
   "title": "History",
-  "description": "History icon from General General category.",
+  "description": "History icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "history",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

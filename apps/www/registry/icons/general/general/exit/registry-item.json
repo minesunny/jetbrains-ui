@@ -3,7 +3,7 @@
   "name": "icons-general-general-exit",
   "type": "registry:ui",
   "title": "Exit",
-  "description": "Exit icon from General General category.",
+  "description": "Exit icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "exit",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

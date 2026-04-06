@@ -22,9 +22,9 @@ const InlayRenameInNoCodeFilesActiveLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="1" y="5" width="10" height="1.5" rx=".75" fill="#3574F0" />
-    <rect x="1" y="9" width="6" height="1.5" rx=".75" fill="#3574F0" />
-    <rect x="1" y="1" width="10" height="1.5" rx=".75" fill="#3574F0" />
+    <rect x={1} y={5} width={10} height={1.5} rx={0.75} fill="#3574F0" />
+    <rect x={1} y={9} width={6} height={1.5} rx={0.75} fill="#3574F0" />
+    <rect x={1} y={1} width={10} height={1.5} rx={0.75} fill="#3574F0" />
   </svg>
 );
 
@@ -46,9 +46,9 @@ const InlayRenameInNoCodeFilesActiveDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="1" y="5" width="10" height="1.5" rx=".75" fill="#548AF7" />
-    <rect x="1" y="9" width="6" height="1.5" rx=".75" fill="#548AF7" />
-    <rect x="1" y="1" width="10" height="1.5" rx=".75" fill="#548AF7" />
+    <rect x={1} y={5} width={10} height={1.5} rx={0.75} fill="#548AF7" />
+    <rect x={1} y={9} width={6} height={1.5} rx={0.75} fill="#548AF7" />
+    <rect x={1} y={1} width={10} height={1.5} rx={0.75} fill="#548AF7" />
   </svg>
 );
 

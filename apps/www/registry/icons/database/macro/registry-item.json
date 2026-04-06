@@ -3,7 +3,7 @@
   "name": "icons-database-macro",
   "type": "registry:ui",
   "title": "Macro",
-  "description": "Macro icon from Database category.",
+  "description": "Macro icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

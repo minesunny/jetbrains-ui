@@ -3,7 +3,7 @@
   "name": "icons-general-general-save",
   "type": "registry:ui",
   "title": "Save",
-  "description": "Save icon from General General category.",
+  "description": "Save icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "save",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

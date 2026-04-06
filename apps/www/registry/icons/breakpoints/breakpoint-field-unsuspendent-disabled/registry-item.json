@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-field-unsuspendent-disabled",
   "type": "registry:ui",
   "title": "Breakpoint Field Unsuspendent Disabled",
-  "description": "Breakpoint Field Unsuspendent Disabled icon from Breakpoints category.",
+  "description": "Breakpoint Field Unsuspendent Disabled icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

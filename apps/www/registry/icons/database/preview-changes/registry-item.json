@@ -3,7 +3,7 @@
   "name": "icons-database-preview-changes",
   "type": "registry:ui",
   "title": "Preview Changes",
-  "description": "Preview Changes icon from Database category.",
+  "description": "Preview Changes icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

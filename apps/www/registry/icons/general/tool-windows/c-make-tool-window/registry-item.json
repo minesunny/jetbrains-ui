@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-c-make-tool-window",
+  "type": "registry:ui",
+  "title": "C Make Tool Window",
+  "description": "C Make Tool Window icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/c-make-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/c-make-tool-window/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "c-make-tool-window",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

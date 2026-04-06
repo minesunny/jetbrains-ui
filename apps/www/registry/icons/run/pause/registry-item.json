@@ -3,7 +3,7 @@
   "name": "icons-run-pause",
   "type": "registry:ui",
   "title": "Pause",
-  "description": "Pause icon from Run category.",
+  "description": "Pause icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

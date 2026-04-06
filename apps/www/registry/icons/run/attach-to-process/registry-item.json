@@ -3,7 +3,7 @@
   "name": "icons-run-attach-to-process",
   "type": "registry:ui",
   "title": "Attach To Process",
-  "description": "Attach To Process icon from Run category.",
+  "description": "Attach To Process icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-general-separator-horizontal",
   "type": "registry:ui",
   "title": "Separator Horizontal",
-  "description": "Separator Horizontal icon from General General category.",
+  "description": "Separator Horizontal icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "separator-horizontal",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

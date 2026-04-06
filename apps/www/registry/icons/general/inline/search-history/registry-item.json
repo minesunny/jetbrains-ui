@@ -3,7 +3,7 @@
   "name": "icons-general-inline-search-history",
   "type": "registry:ui",
   "title": "Search History",
-  "description": "Search History icon from General Inline category.",
+  "description": "Search History icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "search-history",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

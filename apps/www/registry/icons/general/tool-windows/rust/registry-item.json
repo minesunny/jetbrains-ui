@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-rust",
   "type": "registry:ui",
   "title": "Rust",
-  "description": "Rust icon from General Tool Windows category.",
+  "description": "Rust icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "rust",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-file-types-markdown",
   "type": "registry:ui",
   "title": "Markdown",
-  "description": "Markdown icon from File Types category.",
+  "description": "Markdown icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

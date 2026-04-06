@@ -3,7 +3,7 @@
   "name": "icons-build-dependency-analyzer",
   "type": "registry:ui",
   "title": "Dependency Analyzer",
-  "description": "Dependency Analyzer icon from Build category.",
+  "description": "Dependency Analyzer icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

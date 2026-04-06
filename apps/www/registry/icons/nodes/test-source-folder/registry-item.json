@@ -3,7 +3,7 @@
   "name": "icons-nodes-test-source-folder",
   "type": "registry:ui",
   "title": "Test Source Folder",
-  "description": "Test Source Folder icon from Nodes category.",
+  "description": "Test Source Folder icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

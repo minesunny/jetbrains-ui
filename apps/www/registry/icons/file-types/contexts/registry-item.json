@@ -3,7 +3,7 @@
   "name": "icons-file-types-contexts",
   "type": "registry:ui",
   "title": "Contexts",
-  "description": "Contexts icon from File Types category.",
+  "description": "Contexts icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

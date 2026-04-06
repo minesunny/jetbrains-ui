@@ -3,7 +3,7 @@
   "name": "icons-database-object-group",
   "type": "registry:ui",
   "title": "Object Group",
-  "description": "Object Group icon from Database category.",
+  "description": "Object Group icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-database-redis",
   "type": "registry:ui",
   "title": "Redis",
-  "description": "Redis icon from Database category.",
+  "description": "Redis icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

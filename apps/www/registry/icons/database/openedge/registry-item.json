@@ -3,7 +3,7 @@
   "name": "icons-database-openedge",
   "type": "registry:ui",
   "title": "Openedge",
-  "description": "Openedge icon from Database category.",
+  "description": "Openedge icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

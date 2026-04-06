@@ -37,27 +37,27 @@ const TarantoolLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="15"
-        y1="7.87"
-        x2="1"
-        y2="7.87"
+        x1={15}
+        y1={7.87}
+        x2={1}
+        y2={7.87}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF0D2A" />
-        <stop offset=".417" stopColor="#FF0D2A" stopOpacity=".55" />
-        <stop offset="1" stopColor="#FF0D2A" />
+        <stop offset={0.417} stopColor="#FF0D2A" stopOpacity={0.55} />
+        <stop offset={1} stopColor="#FF0D2A" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="15"
-        y1="7.87"
-        x2="1"
-        y2="7.87"
+        x1={15}
+        y1={7.87}
+        x2={1}
+        y2={7.87}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF0D2A" />
-        <stop offset=".417" stopColor="#FF0D2A" stopOpacity=".55" />
-        <stop offset="1" stopColor="#FF0D2A" />
+        <stop offset={0.417} stopColor="#FF0D2A" stopOpacity={0.55} />
+        <stop offset={1} stopColor="#FF0D2A" />
       </linearGradient>
     </defs>
   </svg>
@@ -96,27 +96,27 @@ const TarantoolDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="15"
-        y1="7.87"
-        x2="1"
-        y2="7.87"
+        x1={15}
+        y1={7.87}
+        x2={1}
+        y2={7.87}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF0D2A" />
-        <stop offset=".417" stopColor="#FF0D2A" stopOpacity=".55" />
-        <stop offset="1" stopColor="#FF0D2A" />
+        <stop offset={0.417} stopColor="#FF0D2A" stopOpacity={0.55} />
+        <stop offset={1} stopColor="#FF0D2A" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="15"
-        y1="7.87"
-        x2="1"
-        y2="7.87"
+        x1={15}
+        y1={7.87}
+        x2={1}
+        y2={7.87}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF0D2A" />
-        <stop offset=".417" stopColor="#FF0D2A" stopOpacity=".55" />
-        <stop offset="1" stopColor="#FF0D2A" />
+        <stop offset={0.417} stopColor="#FF0D2A" stopOpacity={0.55} />
+        <stop offset={1} stopColor="#FF0D2A" />
       </linearGradient>
     </defs>
   </svg>

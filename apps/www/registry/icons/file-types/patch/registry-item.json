@@ -3,7 +3,7 @@
   "name": "icons-file-types-patch",
   "type": "registry:ui",
   "title": "Patch",
-  "description": "Patch icon from File Types category.",
+  "description": "Patch icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-file-types-scratches",
   "type": "registry:ui",
   "title": "Scratches",
-  "description": "Scratches icon from File Types category.",
+  "description": "Scratches icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

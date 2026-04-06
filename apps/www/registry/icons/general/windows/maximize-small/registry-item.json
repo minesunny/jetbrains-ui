@@ -3,7 +3,7 @@
   "name": "icons-general-windows-maximize-small",
   "type": "registry:ui",
   "title": "Maximize Small",
-  "description": "Maximize Small icon from General Windows category.",
+  "description": "Maximize Small icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "maximize-small",
       "icon",
       "general",
-      "windows",
       "jetbrains"
     ]
   }

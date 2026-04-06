@@ -23,11 +23,11 @@ const MnemonicLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="1.5"
-      y="1.5"
-      width="13"
-      height="13"
-      rx="1.5"
+      x={1.5}
+      y={1.5}
+      width={13}
+      height={13}
+      rx={1.5}
       fill="#FFFAEB"
       stroke="#FFAF0F"
     />
@@ -53,11 +53,11 @@ const MnemonicDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="1.5"
-      y="1.5"
-      width="13"
-      height="13"
-      rx="1.5"
+      x={1.5}
+      y={1.5}
+      width={13}
+      height={13}
+      rx={1.5}
       fill="#3D3223"
       stroke="#F2C55C"
     />

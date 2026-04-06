@@ -3,7 +3,7 @@
   "name": "icons-general-devkit-plugin-v2",
   "type": "registry:ui",
   "title": "Plugin V2",
-  "description": "Plugin V2 icon from General Devkit category.",
+  "description": "Plugin V2 icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "plugin-v2",
       "icon",
       "general",
-      "devkit",
       "jetbrains"
     ]
   }

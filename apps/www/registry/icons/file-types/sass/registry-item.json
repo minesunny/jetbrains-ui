@@ -3,7 +3,7 @@
   "name": "icons-file-types-sass",
   "type": "registry:ui",
   "title": "Sass",
-  "description": "Sass icon from File Types category.",
+  "description": "Sass icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

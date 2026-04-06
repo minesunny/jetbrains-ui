@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-types-react",
+  "type": "registry:ui",
+  "title": "React",
+  "description": "React icon from file-types category.",
+  "registryDependencies": [
+    "icons-file-types-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-types/react/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/file-types/react/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "react",
+      "icon",
+      "file-types",
+      "jetbrains"
+    ]
+  }
+}

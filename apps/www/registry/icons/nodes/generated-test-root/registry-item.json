@@ -3,7 +3,7 @@
   "name": "icons-nodes-generated-test-root",
   "type": "registry:ui",
   "title": "Generated Test Root",
-  "description": "Generated Test Root icon from Nodes category.",
+  "description": "Generated Test Root icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

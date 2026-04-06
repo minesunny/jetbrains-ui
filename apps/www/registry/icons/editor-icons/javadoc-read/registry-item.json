@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-javadoc-read",
   "type": "registry:ui",
   "title": "Javadoc Read",
-  "description": "Javadoc Read icon from Editor Icons category.",
+  "description": "Javadoc Read icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

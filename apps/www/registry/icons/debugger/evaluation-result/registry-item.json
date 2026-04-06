@@ -3,7 +3,7 @@
   "name": "icons-debugger-evaluation-result",
   "type": "registry:ui",
   "title": "Evaluation Result",
-  "description": "Evaluation Result icon from Debugger category.",
+  "description": "Evaluation Result icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

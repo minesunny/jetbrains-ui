@@ -22,10 +22,10 @@ const EditorPreviewLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="1" y="3" width="5" height="1" rx=".5" fill="#6C707E" />
-    <rect x="1" y="6" width="5" height="1" rx=".5" fill="#6C707E" />
-    <rect x="1" y="9" width="5" height="1" rx=".5" fill="#6C707E" />
-    <rect x="1" y="12" width="5" height="1" rx=".5" fill="#6C707E" />
+    <rect x={1} y={3} width={5} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={1} y={6} width={5} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={1} y={9} width={5} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={1} y={12} width={5} height={1} rx={0.5} fill="#6C707E" />
     <path
       d="M10 2.5h3A1.5 1.5 0 0 1 14.5 4v8a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 8.5 12V4A1.5 1.5 0 0 1 10 2.5Z"
       stroke="#6C707E"
@@ -51,10 +51,10 @@ const EditorPreviewDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="1" y="3" width="5" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="1" y="6" width="5" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="1" y="9" width="5" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="1" y="12" width="5" height="1" rx=".5" fill="#CED0D6" />
+    <rect x={1} y={3} width={5} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={1} y={6} width={5} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={1} y={9} width={5} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={1} y={12} width={5} height={1} rx={0.5} fill="#CED0D6" />
     <path
       d="M10 2.5h3A1.5 1.5 0 0 1 14.5 4v8a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 8.5 12V4A1.5 1.5 0 0 1 10 2.5Z"
       stroke="#CED0D6"

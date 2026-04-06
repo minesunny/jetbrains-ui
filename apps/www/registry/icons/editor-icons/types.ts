@@ -53,7 +53,7 @@ export const svgNames = [
   'inspections-eye',
   'inspections-mixed',
   'inspections-ok',
-  'inspections-okempty',
+  'inspections-ok-empty',
   'inspections-pause',
   'inspections-power-save-mode',
   'inspections-traffic-off',

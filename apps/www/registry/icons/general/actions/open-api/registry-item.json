@@ -3,7 +3,7 @@
   "name": "icons-general-actions-open-api",
   "type": "registry:ui",
   "title": "Open Api",
-  "description": "Open Api icon from General Actions category.",
+  "description": "Open Api icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "open-api",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

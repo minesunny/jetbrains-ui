@@ -3,7 +3,7 @@
   "name": "icons-database-kill-data-source-process",
   "type": "registry:ui",
   "title": "Kill Data Source Process",
-  "description": "Kill Data Source Process icon from Database category.",
+  "description": "Kill Data Source Process icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

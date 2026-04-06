@@ -6,5 +6,3 @@ export { SendToTheRight } from './send-to-the-right';
 export type { SendToTheRightProps } from './send-to-the-right';
 export { SendToTheRightGrayed } from './send-to-the-right-grayed';
 export type { SendToTheRightGrayedProps } from './send-to-the-right-grayed';
-export { svgNames } from '../types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

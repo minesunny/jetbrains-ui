@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-dropdown-gutter",
   "type": "registry:ui",
   "title": "Dropdown Gutter",
-  "description": "Dropdown Gutter icon from Editor Icons category.",
+  "description": "Dropdown Gutter icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

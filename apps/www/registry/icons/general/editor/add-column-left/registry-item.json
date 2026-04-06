@@ -3,7 +3,7 @@
   "name": "icons-general-editor-add-column-left",
   "type": "registry:ui",
   "title": "Add Column Left",
-  "description": "Add Column Left icon from General Editor category.",
+  "description": "Add Column Left icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "add-column-left",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

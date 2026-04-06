@@ -3,7 +3,7 @@
   "name": "icons-run-failed-in-progress",
   "type": "registry:ui",
   "title": "Failed In Progress",
-  "description": "Failed In Progress icon from Run category.",
+  "description": "Failed In Progress icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

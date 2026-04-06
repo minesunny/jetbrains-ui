@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type ViteJSProps = SvgProps;
+export type ViteJsProps = SvgProps;
 
-const ViteJSLight: FC<SvgProps> = ({
+const ViteJsLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -35,26 +35,26 @@ const ViteJSLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="b"
-        x1=".884"
-        y1="1.592"
-        x2="9.671"
-        y2="12.877"
+        x1={0.884}
+        y1={1.592}
+        x2={9.671}
+        y2={12.877}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#41D1FF" />
-        <stop offset="1" stopColor="#BD34FE" />
+        <stop offset={1} stopColor="#BD34FE" />
       </linearGradient>
       <linearGradient
         id="c"
-        x1="7.599"
-        y1=".296"
-        x2="9.212"
-        y2="11.762"
+        x1={7.599}
+        y1={0.296}
+        x2={9.212}
+        y2={11.762}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FFEA83" />
-        <stop offset=".083" stopColor="#FFDD35" />
-        <stop offset="1" stopColor="#FFA800" />
+        <stop offset={0.083} stopColor="#FFDD35" />
+        <stop offset={1} stopColor="#FFA800" />
       </linearGradient>
       <clipPath id="a">
         <path fill="#fff" d="M0 0H16V16H0z" />
@@ -63,7 +63,7 @@ const ViteJSLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ViteJSDark: FC<SvgProps> = ({
+const ViteJsDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -73,7 +73,7 @@ const ViteJSDark: FC<SvgProps> = ({
   <svg
     width={size}
     height={size}
-    viewBox="0 0 16 17"
+    viewBox="0 0 16 16"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className={className}
@@ -92,39 +92,39 @@ const ViteJSDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1=".884"
-        y1="1.615"
-        x2="9.833"
-        y2="12.94"
+        x1={0.884}
+        y1={1.615}
+        x2={9.833}
+        y2={12.94}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#41D1FF" />
-        <stop offset="1" stopColor="#BD34FE" />
+        <stop offset={1} stopColor="#BD34FE" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="7.599"
-        y1=".3"
-        x2="9.259"
-        y2="11.93"
+        x1={7.599}
+        y1={0.3}
+        x2={9.259}
+        y2={11.93}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FFEA83" />
-        <stop offset=".083" stopColor="#FFDD35" />
-        <stop offset="1" stopColor="#FFA800" />
+        <stop offset={0.083} stopColor="#FFDD35" />
+        <stop offset={1} stopColor="#FFA800" />
       </linearGradient>
     </defs>
   </svg>
 );
 
-export const ViteJS: FC<ViteJSProps> = ({
+export const ViteJs: FC<ViteJsProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? ViteJSLight : ViteJSDark;
+  const SvgComponent = mode === 'light' ? ViteJsLight : ViteJsDark;
 
   return (
     <SvgComponent

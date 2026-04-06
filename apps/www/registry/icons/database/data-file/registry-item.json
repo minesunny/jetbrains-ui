@@ -3,7 +3,7 @@
   "name": "icons-database-data-file",
   "type": "registry:ui",
   "title": "Data File",
-  "description": "Data File icon from Database category.",
+  "description": "Data File icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

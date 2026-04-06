@@ -3,7 +3,7 @@
   "name": "icons-vcs-apply-not-conflicts-left",
   "type": "registry:ui",
   "title": "Apply Not Conflicts Left",
-  "description": "Apply Not Conflicts Left icon from Vcs category.",
+  "description": "Apply Not Conflicts Left icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

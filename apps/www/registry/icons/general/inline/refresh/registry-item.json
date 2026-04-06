@@ -3,7 +3,7 @@
   "name": "icons-general-inline-refresh",
   "type": "registry:ui",
   "title": "Refresh",
-  "description": "Refresh icon from General Inline category.",
+  "description": "Refresh icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "refresh",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

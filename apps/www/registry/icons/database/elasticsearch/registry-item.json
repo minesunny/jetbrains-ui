@@ -3,7 +3,7 @@
   "name": "icons-database-elasticsearch",
   "type": "registry:ui",
   "title": "Elasticsearch",
-  "description": "Elasticsearch icon from Database category.",
+  "description": "Elasticsearch icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

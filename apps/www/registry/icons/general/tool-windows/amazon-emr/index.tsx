@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../../types';
 
-export type AmazonEMRProps = SvgProps;
+export type AmazonEmrProps = SvgProps;
 
-const AmazonEMRLight: FC<SvgProps> = ({
+const AmazonEmrLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -41,7 +41,7 @@ const AmazonEMRLight: FC<SvgProps> = ({
   </svg>
 );
 
-const AmazonEMRDark: FC<SvgProps> = ({
+const AmazonEmrDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -78,14 +78,14 @@ const AmazonEMRDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const AmazonEMR: FC<AmazonEMRProps> = ({
+export const AmazonEmr: FC<AmazonEmrProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? AmazonEMRLight : AmazonEMRDark;
+  const SvgComponent = mode === 'light' ? AmazonEmrLight : AmazonEmrDark;
 
   return (
     <SvgComponent

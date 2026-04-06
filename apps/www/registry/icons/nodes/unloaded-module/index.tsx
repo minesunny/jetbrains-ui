@@ -35,11 +35,11 @@ const UnloadedModuleLight: FC<SvgProps> = ({
       fill="#E66D17"
     />
     <rect
-      x="9.5"
-      y="9.5"
-      width="6"
-      height="6"
-      rx="1.5"
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
@@ -77,11 +77,11 @@ const UnloadedModuleDark: FC<SvgProps> = ({
       fill="#C77D55"
     />
     <rect
-      x="9.5"
-      y="9.5"
-      width="6"
-      height="6"
-      rx="1.5"
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1.5}
       fill="#25324D"
       stroke="#548AF7"
     />

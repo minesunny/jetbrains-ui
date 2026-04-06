@@ -3,7 +3,7 @@
   "name": "icons-debugger-add-to-watch",
   "type": "registry:ui",
   "title": "Add To Watch",
-  "description": "Add To Watch icon from Debugger category.",
+  "description": "Add To Watch icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

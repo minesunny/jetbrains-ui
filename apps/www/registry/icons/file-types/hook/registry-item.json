@@ -3,7 +3,7 @@
   "name": "icons-file-types-hook",
   "type": "registry:ui",
   "title": "Hook",
-  "description": "Hook icon from File Types category.",
+  "description": "Hook icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

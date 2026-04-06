@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-tool-window-j-pab-structure",
+  "type": "registry:ui",
+  "title": "Tool Window J Pab Structure",
+  "description": "Tool Window J Pab Structure icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/tool-window-j-pab-structure/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-j-pab-structure/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tool-window-j-pab-structure",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}
