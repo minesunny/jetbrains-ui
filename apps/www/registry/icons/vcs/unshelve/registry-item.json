@@ -3,7 +3,7 @@
   "name": "icons-vcs-unshelve",
   "type": "registry:ui",
   "title": "Unshelve",
-  "description": "Unshelve icon from Vcs category.",
+  "description": "Unshelve icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-database-edit-data",
   "type": "registry:ui",
   "title": "Edit Data",
-  "description": "Edit Data icon from Database category.",
+  "description": "Edit Data icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

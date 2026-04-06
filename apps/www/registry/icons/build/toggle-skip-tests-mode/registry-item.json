@@ -3,7 +3,7 @@
   "name": "icons-build-toggle-skip-tests-mode",
   "type": "registry:ui",
   "title": "Toggle Skip Tests Mode",
-  "description": "Toggle Skip Tests Mode icon from Build category.",
+  "description": "Toggle Skip Tests Mode icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

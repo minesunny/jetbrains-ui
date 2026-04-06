@@ -3,7 +3,7 @@
   "name": "icons-vcs-push",
   "type": "registry:ui",
   "title": "Push",
-  "description": "Push icon from Vcs category.",
+  "description": "Push icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

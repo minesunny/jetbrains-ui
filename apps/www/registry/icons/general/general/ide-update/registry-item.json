@@ -3,7 +3,7 @@
   "name": "icons-general-general-ide-update",
   "type": "registry:ui",
   "title": "Ide Update",
-  "description": "Ide Update icon from General General category.",
+  "description": "Ide Update icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "ide-update",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

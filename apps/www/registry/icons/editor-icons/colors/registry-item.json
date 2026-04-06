@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-colors",
   "type": "registry:ui",
   "title": "Colors",
-  "description": "Colors icon from Editor Icons category.",
+  "description": "Colors icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

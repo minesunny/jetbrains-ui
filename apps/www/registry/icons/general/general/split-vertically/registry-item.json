@@ -3,7 +3,7 @@
   "name": "icons-general-general-split-vertically",
   "type": "registry:ui",
   "title": "Split Vertically",
-  "description": "Split Vertically icon from General General category.",
+  "description": "Split Vertically icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "split-vertically",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

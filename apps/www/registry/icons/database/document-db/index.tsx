@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type DocumentDBProps = SvgProps;
+export type DocumentDbProps = SvgProps;
 
-const DocumentDBLight: FC<SvgProps> = ({
+const DocumentDbLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -49,75 +49,75 @@ const DocumentDBLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="0"
-        y1="16"
-        x2="16"
-        y2="0"
+        x1={0}
+        y1={16}
+        x2={16}
+        y2={0}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#2E27AD" />
-        <stop offset="1" stopColor="#527FFF" />
+        <stop offset={1} stopColor="#527FFF" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="0"
-        y1="16"
-        x2="16"
-        y2="0"
+        x1={0}
+        y1={16}
+        x2={16}
+        y2={0}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#2E27AD" />
-        <stop offset="1" stopColor="#527FFF" />
+        <stop offset={1} stopColor="#527FFF" />
       </linearGradient>
       <linearGradient
         id="c"
-        x1="0"
-        y1="16"
-        x2="16"
-        y2="0"
+        x1={0}
+        y1={16}
+        x2={16}
+        y2={0}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#2E27AD" />
-        <stop offset="1" stopColor="#527FFF" />
+        <stop offset={1} stopColor="#527FFF" />
       </linearGradient>
       <linearGradient
         id="d"
-        x1="0"
-        y1="16"
-        x2="16"
-        y2="0"
+        x1={0}
+        y1={16}
+        x2={16}
+        y2={0}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#2E27AD" />
-        <stop offset="1" stopColor="#527FFF" />
+        <stop offset={1} stopColor="#527FFF" />
       </linearGradient>
       <linearGradient
         id="e"
-        x1="0"
-        y1="16"
-        x2="16"
-        y2="0"
+        x1={0}
+        y1={16}
+        x2={16}
+        y2={0}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#2E27AD" />
-        <stop offset="1" stopColor="#527FFF" />
+        <stop offset={1} stopColor="#527FFF" />
       </linearGradient>
       <linearGradient
         id="f"
-        x1="0"
-        y1="16"
-        x2="16"
-        y2="0"
+        x1={0}
+        y1={16}
+        x2={16}
+        y2={0}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#2E27AD" />
-        <stop offset="1" stopColor="#527FFF" />
+        <stop offset={1} stopColor="#527FFF" />
       </linearGradient>
     </defs>
   </svg>
 );
 
-const DocumentDBDark: FC<SvgProps> = ({
+const DocumentDbDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -162,82 +162,82 @@ const DocumentDBDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="15.5"
-        y1="0"
-        x2="-.489"
-        y2="15.418"
+        x1={15.5}
+        y1={0}
+        x2={-0.489}
+        y2={15.418}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#548AF7" />
-        <stop offset="1" stopColor="#366ACF" />
+        <stop offset={1} stopColor="#366ACF" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="15.5"
-        y1="0"
-        x2="-.489"
-        y2="15.418"
+        x1={15.5}
+        y1={0}
+        x2={-0.489}
+        y2={15.418}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#548AF7" />
-        <stop offset="1" stopColor="#366ACF" />
+        <stop offset={1} stopColor="#366ACF" />
       </linearGradient>
       <linearGradient
         id="c"
-        x1="15.5"
-        y1="0"
-        x2="-.489"
-        y2="15.418"
+        x1={15.5}
+        y1={0}
+        x2={-0.489}
+        y2={15.418}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#548AF7" />
-        <stop offset="1" stopColor="#366ACF" />
+        <stop offset={1} stopColor="#366ACF" />
       </linearGradient>
       <linearGradient
         id="d"
-        x1="15.5"
-        y1="0"
-        x2="-.489"
-        y2="15.418"
+        x1={15.5}
+        y1={0}
+        x2={-0.489}
+        y2={15.418}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#548AF7" />
-        <stop offset="1" stopColor="#366ACF" />
+        <stop offset={1} stopColor="#366ACF" />
       </linearGradient>
       <linearGradient
         id="e"
-        x1="15.5"
-        y1="0"
-        x2="-.489"
-        y2="15.418"
+        x1={15.5}
+        y1={0}
+        x2={-0.489}
+        y2={15.418}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#548AF7" />
-        <stop offset="1" stopColor="#366ACF" />
+        <stop offset={1} stopColor="#366ACF" />
       </linearGradient>
       <linearGradient
         id="f"
-        x1="15.5"
-        y1="0"
-        x2="-.489"
-        y2="15.418"
+        x1={15.5}
+        y1={0}
+        x2={-0.489}
+        y2={15.418}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#548AF7" />
-        <stop offset="1" stopColor="#366ACF" />
+        <stop offset={1} stopColor="#366ACF" />
       </linearGradient>
     </defs>
   </svg>
 );
 
-export const DocumentDB: FC<DocumentDBProps> = ({
+export const DocumentDb: FC<DocumentDbProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? DocumentDBLight : DocumentDBDark;
+  const SvgComponent = mode === 'light' ? DocumentDbLight : DocumentDbDark;
 
   return (
     <SvgComponent

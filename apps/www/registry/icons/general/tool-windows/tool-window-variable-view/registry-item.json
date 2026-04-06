@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-variable-view",
   "type": "registry:ui",
   "title": "Tool Window Variable View",
-  "description": "Tool Window Variable View icon from General Tool Windows category.",
+  "description": "Tool Window Variable View icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-variable-view",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

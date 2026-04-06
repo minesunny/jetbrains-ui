@@ -29,7 +29,7 @@ const RunErrorLight: FC<SvgProps> = ({
     <path
       d="M5.5 2.5V6"
       stroke="#fff"
-      strokeWidth="1.2"
+      strokeWidth={1.2}
       strokeLinecap="round"
     />
     <path d="M6.25 8.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0" fill="#fff" />
@@ -71,7 +71,7 @@ const RunErrorDark: FC<SvgProps> = ({
     <path
       d="M5.5 2.5V6"
       stroke="#fff"
-      strokeWidth="1.2"
+      strokeWidth={1.2}
       strokeLinecap="round"
     />
     <path d="M6.25 8.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0" fill="#fff" />

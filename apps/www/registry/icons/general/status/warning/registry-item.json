@@ -3,7 +3,7 @@
   "name": "icons-general-status-warning",
   "type": "registry:ui",
   "title": "Warning",
-  "description": "Warning icon from General Status category.",
+  "description": "Warning icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "warning",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

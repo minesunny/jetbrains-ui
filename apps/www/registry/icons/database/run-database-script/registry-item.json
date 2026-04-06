@@ -3,7 +3,7 @@
   "name": "icons-database-run-database-script",
   "type": "registry:ui",
   "title": "Run Database Script",
-  "description": "Run Database Script icon from Database category.",
+  "description": "Run Database Script icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

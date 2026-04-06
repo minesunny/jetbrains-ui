@@ -3,7 +3,7 @@
   "name": "icons-file-types-deno",
   "type": "registry:ui",
   "title": "Deno",
-  "description": "Deno icon from File Types category.",
+  "description": "Deno icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

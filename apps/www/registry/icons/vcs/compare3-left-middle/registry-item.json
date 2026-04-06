@@ -3,7 +3,7 @@
   "name": "icons-vcs-compare3-left-middle",
   "type": "registry:ui",
   "title": "Compare3 Left Middle",
-  "description": "Compare3 Left Middle icon from Vcs category.",
+  "description": "Compare3 Left Middle icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

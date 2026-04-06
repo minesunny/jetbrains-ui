@@ -3,7 +3,7 @@
   "name": "icons-database-impala",
   "type": "registry:ui",
   "title": "Impala",
-  "description": "Impala icon from Database category.",
+  "description": "Impala icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

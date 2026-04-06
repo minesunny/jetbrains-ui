@@ -3,7 +3,7 @@
   "name": "icons-database-redis-file-type",
   "type": "registry:ui",
   "title": "Redis File Type",
-  "description": "Redis File Type icon from Database category.",
+  "description": "Redis File Type icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

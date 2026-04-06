@@ -3,7 +3,7 @@
   "name": "icons-build-maven-plugin-goal",
   "type": "registry:ui",
   "title": "Maven Plugin Goal",
-  "description": "Maven Plugin Goal icon from Build category.",
+  "description": "Maven Plugin Goal icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

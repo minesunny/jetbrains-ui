@@ -3,7 +3,7 @@
   "name": "icons-general-general-export",
   "type": "registry:ui",
   "title": "Export",
-  "description": "Export icon from General General category.",
+  "description": "Export icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "export",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

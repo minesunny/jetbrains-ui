@@ -3,7 +3,7 @@
   "name": "icons-database-grey-key",
   "type": "registry:ui",
   "title": "Grey Key",
-  "description": "Grey Key icon from Database category.",
+  "description": "Grey Key icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

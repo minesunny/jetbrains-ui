@@ -3,7 +3,7 @@
   "name": "icons-file-types-sql",
   "type": "registry:ui",
   "title": "Sql",
-  "description": "Sql icon from File Types category.",
+  "description": "Sql icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

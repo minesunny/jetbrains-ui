@@ -22,9 +22,9 @@ const TraceStreamLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="3" width="4" height="1" rx=".5" fill="#6C707E" />
-    <rect x="10" y="7.5" width="4" height="1" rx=".5" fill="#6C707E" />
-    <rect x="10" y="12" width="4" height="1" rx=".5" fill="#6C707E" />
+    <rect x={2} y={3} width={4} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={10} y={7.5} width={4} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={10} y={12} width={4} height={1} rx={0.5} fill="#6C707E" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -52,9 +52,9 @@ const TraceStreamDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="3" width="4" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="10" y="7.5" width="4" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="10" y="12" width="4" height="1" rx=".5" fill="#CED0D6" />
+    <rect x={2} y={3} width={4} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={10} y={7.5} width={4} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={10} y={12} width={4} height={1} rx={0.5} fill="#CED0D6" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type NextJSProps = SvgProps;
+export type NextJsProps = SvgProps;
 
-const NextJSLight: FC<SvgProps> = ({
+const NextJsLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -32,7 +32,7 @@ const NextJSLight: FC<SvgProps> = ({
   </svg>
 );
 
-const NextJSDark: FC<SvgProps> = ({
+const NextJsDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -60,14 +60,14 @@ const NextJSDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const NextJS: FC<NextJSProps> = ({
+export const NextJs: FC<NextJsProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? NextJSLight : NextJSDark;
+  const SvgComponent = mode === 'light' ? NextJsLight : NextJsDark;
 
   return (
     <SvgComponent

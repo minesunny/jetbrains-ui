@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type SQLSelectStatementProps = SvgProps;
+export type SqlOtherStatementProps = SvgProps;
 
-const SQLSelectStatementLight: FC<SvgProps> = ({
+const SqlOtherStatementLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -23,15 +23,13 @@ const SQLSelectStatementLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path
-      d="M1.56 7.646a.5.5 0 0 0 0 .708l5.94 5.939V10.5H14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5H7.5V1.707z"
-      fill="#EBECF0"
+      d="M6.94 1.94a1.5 1.5 0 0 1 2.12 0l5 5a1.5 1.5 0 0 1 0 2.12l-5 5a1.5 1.5 0 0 1-2.12 0l-5-5a1.5 1.5 0 0 1 0-2.12z"
       stroke="#6C707E"
-      strokeLinecap="round"
     />
   </svg>
 );
 
-const SQLSelectStatementDark: FC<SvgProps> = ({
+const SqlOtherStatementDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -50,15 +48,13 @@ const SQLSelectStatementDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path
-      d="M1.56 7.646a.5.5 0 0 0 0 .708l5.94 5.939V10.5H14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5H7.5V1.707z"
-      fill="#43454A"
+      d="M6.94 1.94a1.5 1.5 0 0 1 2.12 0l5 5a1.5 1.5 0 0 1 0 2.12l-5 5a1.5 1.5 0 0 1-2.12 0l-5-5a1.5 1.5 0 0 1 0-2.12z"
       stroke="#CED0D6"
-      strokeLinecap="round"
     />
   </svg>
 );
 
-export const SQLSelectStatement: FC<SQLSelectStatementProps> = ({
+export const SqlOtherStatement: FC<SqlOtherStatementProps> = ({
   size = 'md',
   mode = 'light',
   className,
@@ -66,7 +62,7 @@ export const SQLSelectStatement: FC<SQLSelectStatementProps> = ({
   ...props
 }) => {
   const SvgComponent =
-    mode === 'light' ? SQLSelectStatementLight : SQLSelectStatementDark;
+    mode === 'light' ? SqlOtherStatementLight : SqlOtherStatementDark;
 
   return (
     <SvgComponent

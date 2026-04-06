@@ -3,7 +3,7 @@
   "name": "icons-general-inline-expand",
   "type": "registry:ui",
   "title": "Expand",
-  "description": "Expand icon from General Inline category.",
+  "description": "Expand icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "expand",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

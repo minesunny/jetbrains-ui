@@ -22,7 +22,7 @@ const IdeaProjectLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="9" y="9" width="7" height="7" rx="1" fill="#000" />
+    <rect x={9} y={9} width={7} height={7} rx={1} fill="#000" />
     <path
       d="M10.5 14.5h2"
       stroke="#fff"
@@ -58,7 +58,7 @@ const IdeaProjectDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="9" y="9" width="7" height="7" rx="1" fill="#000" />
+    <rect x={9} y={9} width={7} height={7} rx={1} fill="#000" />
     <path
       d="M10.5 14.5h2"
       stroke="#CED0D6"

@@ -3,7 +3,7 @@
   "name": "icons-file-types-exposed",
   "type": "registry:ui",
   "title": "Exposed",
-  "description": "Exposed icon from File Types category.",
+  "description": "Exposed icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

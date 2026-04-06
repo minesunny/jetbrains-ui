@@ -3,7 +3,7 @@
   "name": "icons-file-types-jupyter-notebook",
   "type": "registry:ui",
   "title": "Jupyter Notebook",
-  "description": "Jupyter Notebook icon from File Types category.",
+  "description": "Jupyter Notebook icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

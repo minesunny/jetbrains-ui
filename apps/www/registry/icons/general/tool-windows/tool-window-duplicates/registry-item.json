@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-duplicates",
   "type": "registry:ui",
   "title": "Tool Window Duplicates",
-  "description": "Tool Window Duplicates icon from General Tool Windows category.",
+  "description": "Tool Window Duplicates icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-duplicates",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

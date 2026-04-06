@@ -22,7 +22,7 @@ const LocalScopeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#EBECF0" stroke="#6C707E" />
+    <circle cx={8} cy={8} r={6.5} fill="#EBECF0" stroke="#6C707E" />
     <path
       d="M8 5.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
       fill="#EDF3FF"
@@ -49,7 +49,7 @@ const LocalScopeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#43454A" stroke="#CED0D6" />
+    <circle cx={8} cy={8} r={6.5} fill="#43454A" stroke="#CED0D6" />
     <path
       d="M8 5.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
       fill="#25324D"

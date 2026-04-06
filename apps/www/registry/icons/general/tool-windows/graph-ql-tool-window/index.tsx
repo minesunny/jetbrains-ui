@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../../types';
 
-export type GraphQLToolWindowProps = SvgProps;
+export type GraphQlToolWindowProps = SvgProps;
 
-const GraphQLToolWindowLight: FC<SvgProps> = ({
+const GraphQlToolWindowLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -31,7 +31,7 @@ const GraphQLToolWindowLight: FC<SvgProps> = ({
   </svg>
 );
 
-const GraphQLToolWindowDark: FC<SvgProps> = ({
+const GraphQlToolWindowDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -58,7 +58,7 @@ const GraphQLToolWindowDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const GraphQLToolWindow: FC<GraphQLToolWindowProps> = ({
+export const GraphQlToolWindow: FC<GraphQlToolWindowProps> = ({
   size = 'md',
   mode = 'light',
   className,
@@ -66,7 +66,7 @@ export const GraphQLToolWindow: FC<GraphQLToolWindowProps> = ({
   ...props
 }) => {
   const SvgComponent =
-    mode === 'light' ? GraphQLToolWindowLight : GraphQLToolWindowDark;
+    mode === 'light' ? GraphQlToolWindowLight : GraphQlToolWindowDark;
 
   return (
     <SvgComponent

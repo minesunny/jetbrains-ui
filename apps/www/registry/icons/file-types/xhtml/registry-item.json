@@ -3,7 +3,7 @@
   "name": "icons-file-types-xhtml",
   "type": "registry:ui",
   "title": "Xhtml",
-  "description": "Xhtml icon from File Types category.",
+  "description": "Xhtml icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

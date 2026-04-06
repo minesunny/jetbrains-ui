@@ -22,7 +22,7 @@ const InfoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="7" fill="#4682FA" />
+    <circle cx={8} cy={8} r={7} fill="#4682FA" />
     <path
       d="M7 11a1 1 0 1 0 2 0V8.5a1 1 0 1 0-2 0zM8 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
       fill="#fff"
@@ -48,7 +48,7 @@ const InfoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="7" fill="#548AF7" />
+    <circle cx={8} cy={8} r={7} fill="#548AF7" />
     <path
       d="M7 11a1 1 0 1 0 2 0V8.5a1 1 0 1 0-2 0zM8 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
       fill="#fff"

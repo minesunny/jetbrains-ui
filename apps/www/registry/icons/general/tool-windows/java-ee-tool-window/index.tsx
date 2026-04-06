@@ -1,10 +1,10 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../types';
+import { type SvgProps, sizeMap } from '../../types';
 
-export type SQLGroupByTypeProps = SvgProps;
+export type JavaEeToolWindowProps = SvgProps;
 
-const SQLGroupByTypeLight: FC<SvgProps> = ({
+const JavaEeToolWindowLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -23,14 +23,17 @@ const SQLGroupByTypeLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path
-      d="M3.5 13.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1M12.5 13.5h1a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1h-1M4.5 8h7M4.5 10.5h7M4.5 5.5h7"
-      stroke="#6C707E"
-      strokeLinecap="round"
+      d="M4 3h8a1 1 0 0 1 1 1v4h1V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2v-1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1"
+      fill="#6C707E"
+    />
+    <path
+      d="M7 9h4v1H8v2h2.5v1H8v2h3v1H7zM12 16V9h4v1h-3v2h2.5v1H13v2h3v1z"
+      fill="#6C707E"
     />
   </svg>
 );
 
-const SQLGroupByTypeDark: FC<SvgProps> = ({
+const JavaEeToolWindowDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -49,14 +52,17 @@ const SQLGroupByTypeDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path
-      d="M3.5 13.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1M12.5 13.5h1a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1h-1M4.5 8h7M4.5 10.5h7M4.5 5.5h7"
-      stroke="#CED0D6"
-      strokeLinecap="round"
+      d="M4 3h8a1 1 0 0 1 1 1v4h1V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2v-1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1"
+      fill="#CED0D6"
+    />
+    <path
+      d="M7 9h4v1H8v2h2.5v1H8v2h3v1H7zM12 16V9h4v1h-3v2h2.5v1H13v2h3v1z"
+      fill="#CED0D6"
     />
   </svg>
 );
 
-export const SQLGroupByType: FC<SQLGroupByTypeProps> = ({
+export const JavaEeToolWindow: FC<JavaEeToolWindowProps> = ({
   size = 'md',
   mode = 'light',
   className,
@@ -64,7 +70,7 @@ export const SQLGroupByType: FC<SQLGroupByTypeProps> = ({
   ...props
 }) => {
   const SvgComponent =
-    mode === 'light' ? SQLGroupByTypeLight : SQLGroupByTypeDark;
+    mode === 'light' ? JavaEeToolWindowLight : JavaEeToolWindowDark;
 
   return (
     <SvgComponent

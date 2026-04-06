@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type SQLDMLStatementProps = SvgProps;
+export type TSqLtProps = SvgProps;
 
-const SQLDMLStatementLight: FC<SvgProps> = ({
+const TSqLtLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -22,16 +22,13 @@ const SQLDMLStatementLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <path
-      d="M14.44 7.646a.5.5 0 0 1 0 .708L8.5 14.293V10.5H2a.5.5 0 0 1-.5-.5V6a.5.5 0 0 1 .5-.5h6.5V1.707z"
-      fill="#EBECF0"
-      stroke="#6C707E"
-      strokeLinecap="round"
-    />
+    <path d="M8 3H1v9h7z" fill="#E55765" />
+    <path d="M13 3H9v4h4z" fill="#55A76A" />
+    <path d="M15 8H9v6h6z" fill="#4682FA" />
   </svg>
 );
 
-const SQLDMLStatementDark: FC<SvgProps> = ({
+const TSqLtDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -49,24 +46,20 @@ const SQLDMLStatementDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <path
-      d="M14.44 7.646a.5.5 0 0 1 0 .708L8.5 14.293V10.5H2a.5.5 0 0 1-.5-.5V6a.5.5 0 0 1 .5-.5h6.5V1.707z"
-      fill="#43454A"
-      stroke="#CED0D6"
-      strokeLinecap="round"
-    />
+    <path d="M8 3H1v9h7z" fill="#DB5C5C" />
+    <path d="M13 3H9v4h4z" fill="#5FAD65" />
+    <path d="M15 8H9v6h6z" fill="#548AF7" />
   </svg>
 );
 
-export const SQLDMLStatement: FC<SQLDMLStatementProps> = ({
+export const TSqLt: FC<TSqLtProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent =
-    mode === 'light' ? SQLDMLStatementLight : SQLDMLStatementDark;
+  const SvgComponent = mode === 'light' ? TSqLtLight : TSqLtDark;
 
   return (
     <SvgComponent

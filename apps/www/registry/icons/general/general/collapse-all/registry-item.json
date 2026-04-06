@@ -3,7 +3,7 @@
   "name": "icons-general-general-collapse-all",
   "type": "registry:ui",
   "title": "Collapse All",
-  "description": "Collapse All icon from General General category.",
+  "description": "Collapse All icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "collapse-all",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

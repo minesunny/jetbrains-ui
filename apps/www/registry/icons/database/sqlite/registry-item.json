@@ -3,7 +3,7 @@
   "name": "icons-database-sqlite",
   "type": "registry:ui",
   "title": "Sqlite",
-  "description": "Sqlite icon from Database category.",
+  "description": "Sqlite icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

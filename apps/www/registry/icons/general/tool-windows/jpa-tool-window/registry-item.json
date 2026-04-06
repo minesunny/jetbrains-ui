@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-jpa-tool-window",
   "type": "registry:ui",
   "title": "Jpa Tool Window",
-  "description": "Jpa Tool Window icon from General Tool Windows category.",
+  "description": "Jpa Tool Window icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "jpa-tool-window",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

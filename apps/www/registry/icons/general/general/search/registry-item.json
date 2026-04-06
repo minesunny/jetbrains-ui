@@ -3,7 +3,7 @@
   "name": "icons-general-general-search",
   "type": "registry:ui",
   "title": "Search",
-  "description": "Search icon from General General category.",
+  "description": "Search icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "search",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

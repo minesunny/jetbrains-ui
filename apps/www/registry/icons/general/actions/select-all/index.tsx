@@ -29,7 +29,7 @@ const SelectAllLight: FC<SvgProps> = ({
     <path
       d="M4.75 7.75 7 10l4.242-4.242"
       stroke="#6C707E"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -61,7 +61,7 @@ const SelectAllDark: FC<SvgProps> = ({
     <path
       d="M4.75 7.75 7 10l4.242-4.242"
       stroke="#CED0D6"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
     />

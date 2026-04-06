@@ -23,29 +23,29 @@ const ShortcutFilterLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x=".5"
-      y="13.5"
-      width="2"
-      height="2"
-      rx=".5"
+      x={0.5}
+      y={13.5}
+      width={2}
+      height={2}
+      rx={0.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
     <rect
-      x="4.5"
-      y="13.5"
-      width="2"
-      height="2"
-      rx=".5"
+      x={4.5}
+      y={13.5}
+      width={2}
+      height={2}
+      rx={0.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
     <rect
-      x="2.5"
-      y="9.5"
-      width="2"
-      height="2"
-      rx=".5"
+      x={2.5}
+      y={9.5}
+      width={2}
+      height={2}
+      rx={0.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
@@ -75,29 +75,29 @@ const ShortcutFilterDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x=".5"
-      y="13.5"
-      width="2"
-      height="2"
-      rx=".5"
+      x={0.5}
+      y={13.5}
+      width={2}
+      height={2}
+      rx={0.5}
       fill="#25324D"
       stroke="#548AF7"
     />
     <rect
-      x="4.5"
-      y="13.5"
-      width="2"
-      height="2"
-      rx=".5"
+      x={4.5}
+      y={13.5}
+      width={2}
+      height={2}
+      rx={0.5}
       fill="#25324D"
       stroke="#548AF7"
     />
     <rect
-      x="2.5"
-      y="9.5"
-      width="2"
-      height="2"
-      rx=".5"
+      x={2.5}
+      y={9.5}
+      width={2}
+      height={2}
+      rx={0.5}
       fill="#25324D"
       stroke="#548AF7"
     />

@@ -3,7 +3,7 @@
   "name": "icons-database-table-mapping",
   "type": "registry:ui",
   "title": "Table Mapping",
-  "description": "Table Mapping icon from Database category.",
+  "description": "Table Mapping icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-nodes-annotation",
   "type": "registry:ui",
   "title": "Annotation",
-  "description": "Annotation icon from Nodes category.",
+  "description": "Annotation icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-zoom-in",
   "type": "registry:ui",
   "title": "Zoom In",
-  "description": "Zoom In icon from Editor Icons category.",
+  "description": "Zoom In icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

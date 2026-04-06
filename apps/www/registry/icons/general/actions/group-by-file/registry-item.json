@@ -3,7 +3,7 @@
   "name": "icons-general-actions-group-by-file",
   "type": "registry:ui",
   "title": "Group By File",
-  "description": "Group By File icon from General Actions category.",
+  "description": "Group By File icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "group-by-file",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

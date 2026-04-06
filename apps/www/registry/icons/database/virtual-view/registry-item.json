@@ -3,7 +3,7 @@
   "name": "icons-database-virtual-view",
   "type": "registry:ui",
   "title": "Virtual View",
-  "description": "Virtual View icon from Database category.",
+  "description": "Virtual View icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

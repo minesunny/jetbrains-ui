@@ -3,7 +3,7 @@
   "name": "icons-database-materialized-log",
   "type": "registry:ui",
   "title": "Materialized Log",
-  "description": "Materialized Log icon from Database category.",
+  "description": "Materialized Log icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

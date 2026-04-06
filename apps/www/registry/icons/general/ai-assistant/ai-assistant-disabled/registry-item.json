@@ -3,7 +3,7 @@
   "name": "icons-general-ai-assistant-ai-assistant-disabled",
   "type": "registry:ui",
   "title": "Ai Assistant Disabled",
-  "description": "Ai Assistant Disabled icon from General Ai Assistant category.",
+  "description": "Ai Assistant Disabled icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "ai-assistant-disabled",
       "icon",
       "general",
-      "ai-assistant",
       "jetbrains"
     ]
   }

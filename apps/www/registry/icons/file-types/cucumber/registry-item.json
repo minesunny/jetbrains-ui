@@ -3,7 +3,7 @@
   "name": "icons-file-types-cucumber",
   "type": "registry:ui",
   "title": "Cucumber",
-  "description": "Cucumber icon from File Types category.",
+  "description": "Cucumber icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

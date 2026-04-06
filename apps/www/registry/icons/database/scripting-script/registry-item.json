@@ -3,7 +3,7 @@
   "name": "icons-database-scripting-script",
   "type": "registry:ui",
   "title": "Scripting Script",
-  "description": "Scripting Script icon from Database category.",
+  "description": "Scripting Script icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

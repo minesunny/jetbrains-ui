@@ -3,7 +3,7 @@
   "name": "icons-run-debug",
   "type": "registry:ui",
   "title": "Debug",
-  "description": "Debug icon from Run category.",
+  "description": "Debug icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

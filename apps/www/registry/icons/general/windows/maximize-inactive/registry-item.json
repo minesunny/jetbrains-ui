@@ -3,7 +3,7 @@
   "name": "icons-general-windows-maximize-inactive",
   "type": "registry:ui",
   "title": "Maximize Inactive",
-  "description": "Maximize Inactive icon from General Windows category.",
+  "description": "Maximize Inactive icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "maximize-inactive",
       "icon",
       "general",
-      "windows",
       "jetbrains"
     ]
   }

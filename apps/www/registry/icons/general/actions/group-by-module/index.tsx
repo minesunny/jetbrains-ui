@@ -28,11 +28,11 @@ const GroupByModuleLight: FC<SvgProps> = ({
       strokeLinecap="round"
     />
     <rect
-      x="4.5"
-      y="4.5"
-      width="7"
-      height="7"
-      rx="1.5"
+      x={4.5}
+      y={4.5}
+      width={7}
+      height={7}
+      rx={1.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
@@ -63,11 +63,11 @@ const GroupByModuleDark: FC<SvgProps> = ({
       strokeLinecap="round"
     />
     <rect
-      x="4.5"
-      y="4.5"
-      width="7"
-      height="7"
-      rx="1.5"
+      x={4.5}
+      y={4.5}
+      width={7}
+      height={7}
+      rx={1.5}
       fill="#25324D"
       stroke="#548AF7"
     />

@@ -3,7 +3,7 @@
   "name": "icons-file-types-contexts-modifier",
   "type": "registry:ui",
   "title": "Contexts Modifier",
-  "description": "Contexts Modifier icon from File Types category.",
+  "description": "Contexts Modifier icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

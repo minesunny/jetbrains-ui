@@ -3,7 +3,7 @@
   "name": "icons-general-general-move-to-left-top",
   "type": "registry:ui",
   "title": "Move To Left Top",
-  "description": "Move To Left Top icon from General General category.",
+  "description": "Move To Left Top icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "move-to-left-top",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

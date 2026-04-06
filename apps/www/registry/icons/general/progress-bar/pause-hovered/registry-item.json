@@ -3,7 +3,7 @@
   "name": "icons-general-progress-bar-pause-hovered",
   "type": "registry:ui",
   "title": "Pause Hovered",
-  "description": "Pause Hovered icon from General Progress Bar category.",
+  "description": "Pause Hovered icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "pause-hovered",
       "icon",
       "general",
-      "progress-bar",
       "jetbrains"
     ]
   }

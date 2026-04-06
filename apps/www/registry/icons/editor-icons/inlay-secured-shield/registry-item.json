@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inlay-secured-shield",
   "type": "registry:ui",
   "title": "Inlay Secured Shield",
-  "description": "Inlay Secured Shield icon from Editor Icons category.",
+  "description": "Inlay Secured Shield icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

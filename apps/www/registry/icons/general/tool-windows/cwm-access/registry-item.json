@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-cwm-access",
   "type": "registry:ui",
   "title": "Cwm Access",
-  "description": "Cwm Access icon from General Tool Windows category.",
+  "description": "Cwm Access icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "cwm-access",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

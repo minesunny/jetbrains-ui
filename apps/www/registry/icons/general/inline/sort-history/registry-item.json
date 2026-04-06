@@ -3,7 +3,7 @@
   "name": "icons-general-inline-sort-history",
   "type": "registry:ui",
   "title": "Sort History",
-  "description": "Sort History icon from General Inline category.",
+  "description": "Sort History icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "sort-history",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

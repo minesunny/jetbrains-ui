@@ -3,7 +3,7 @@
   "name": "icons-general-editor-strike-through",
   "type": "registry:ui",
   "title": "Strike Through",
-  "description": "Strike Through icon from General Editor category.",
+  "description": "Strike Through icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "strike-through",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

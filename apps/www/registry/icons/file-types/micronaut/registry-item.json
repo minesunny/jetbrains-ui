@@ -3,7 +3,7 @@
   "name": "icons-file-types-micronaut",
   "type": "registry:ui",
   "title": "Micronaut",
-  "description": "Micronaut icon from File Types category.",
+  "description": "Micronaut icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

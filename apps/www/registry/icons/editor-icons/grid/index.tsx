@@ -22,23 +22,23 @@ const GridLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="11" y="2" width="1" height="12" rx=".5" fill="#6C707E" />
+    <rect x={11} y={2} width={1} height={12} rx={0.5} fill="#6C707E" />
     <rect
-      x="14"
-      y="11"
-      width="1"
-      height="12"
-      rx=".5"
+      x={14}
+      y={11}
+      width={1}
+      height={12}
+      rx={0.5}
       transform="rotate(90 14 11)"
       fill="#6C707E"
     />
-    <rect x="4" y="2" width="1" height="12" rx=".5" fill="#6C707E" />
+    <rect x={4} y={2} width={1} height={12} rx={0.5} fill="#6C707E" />
     <rect
-      x="14"
-      y="4"
-      width="1"
-      height="12"
-      rx=".5"
+      x={14}
+      y={4}
+      width={1}
+      height={12}
+      rx={0.5}
       transform="rotate(90 14 4)"
       fill="#6C707E"
     />
@@ -63,23 +63,23 @@ const GridDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="11" y="2" width="1" height="12" rx=".5" fill="#CED0D6" />
+    <rect x={11} y={2} width={1} height={12} rx={0.5} fill="#CED0D6" />
     <rect
-      x="14"
-      y="11"
-      width="1"
-      height="12"
-      rx=".5"
+      x={14}
+      y={11}
+      width={1}
+      height={12}
+      rx={0.5}
       transform="rotate(90 14 11)"
       fill="#CED0D6"
     />
-    <rect x="4" y="2" width="1" height="12" rx=".5" fill="#CED0D6" />
+    <rect x={4} y={2} width={1} height={12} rx={0.5} fill="#CED0D6" />
     <rect
-      x="14"
-      y="4"
-      width="1"
-      height="12"
-      rx=".5"
+      x={14}
+      y={4}
+      width={1}
+      height={12}
+      rx={0.5}
       transform="rotate(90 14 4)"
       fill="#CED0D6"
     />

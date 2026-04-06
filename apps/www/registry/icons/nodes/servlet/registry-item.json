@@ -3,7 +3,7 @@
   "name": "icons-nodes-servlet",
   "type": "registry:ui",
   "title": "Servlet",
-  "description": "Servlet icon from Nodes category.",
+  "description": "Servlet icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-file-types-flask",
   "type": "registry:ui",
   "title": "Flask",
-  "description": "Flask icon from File Types category.",
+  "description": "Flask icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

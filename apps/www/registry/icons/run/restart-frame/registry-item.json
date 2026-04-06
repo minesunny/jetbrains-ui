@@ -3,7 +3,7 @@
   "name": "icons-run-restart-frame",
   "type": "registry:ui",
   "title": "Restart Frame",
-  "description": "Restart Frame icon from Run category.",
+  "description": "Restart Frame icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

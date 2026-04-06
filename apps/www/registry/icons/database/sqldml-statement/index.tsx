@@ -1,10 +1,10 @@
-import React from 'react';
+import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type IndexProps = SvgProps;
+export type SqldmlStatementProps = SvgProps;
 
-const IndexLight: React.FC<SvgProps> = ({
+const SqldmlStatementLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -23,13 +23,15 @@ const IndexLight: React.FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path
-      d="M7 2a.5.5 0 0 0-.5.5v.974a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V2.5A.5.5 0 0 0 8 2zM4.5 6.5A.5.5 0 0 1 5 6h2.5a.5.5 0 0 1 .5.5V14h2.5a.5.5 0 0 1 0 1h-6a.5.5 0 0 1 0-1H7V7H5a.5.5 0 0 1-.5-.5"
-      fill="#3574F0"
+      d="M14.44 7.646a.5.5 0 0 1 0 .708L8.5 14.293V10.5H2a.5.5 0 0 1-.5-.5V6a.5.5 0 0 1 .5-.5h6.5V1.707z"
+      fill="#EBECF0"
+      stroke="#6C707E"
+      strokeLinecap="round"
     />
   </svg>
 );
 
-const IndexDark: React.FC<SvgProps> = ({
+const SqldmlStatementDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -48,20 +50,23 @@ const IndexDark: React.FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path
-      d="M7 2a.5.5 0 0 0-.5.5v.974a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V2.5A.5.5 0 0 0 8 2zM4.5 6.5A.5.5 0 0 1 5 6h2.5a.5.5 0 0 1 .5.5V14h2.5a.5.5 0 0 1 0 1h-6a.5.5 0 0 1 0-1H7V7H5a.5.5 0 0 1-.5-.5"
-      fill="#548AF7"
+      d="M14.44 7.646a.5.5 0 0 1 0 .708L8.5 14.293V10.5H2a.5.5 0 0 1-.5-.5V6a.5.5 0 0 1 .5-.5h6.5V1.707z"
+      fill="#43454A"
+      stroke="#CED0D6"
+      strokeLinecap="round"
     />
   </svg>
 );
 
-export const Index: React.FC<IndexProps> = ({
+export const SqldmlStatement: FC<SqldmlStatementProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? IndexLight : IndexDark;
+  const SvgComponent =
+    mode === 'light' ? SqldmlStatementLight : SqldmlStatementDark;
 
   return (
     <SvgComponent

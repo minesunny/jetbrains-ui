@@ -3,7 +3,7 @@
   "name": "icons-general-editor-bullet-list",
   "type": "registry:ui",
   "title": "Bullet List",
-  "description": "Bullet List icon from General Editor category.",
+  "description": "Bullet List icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "bullet-list",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

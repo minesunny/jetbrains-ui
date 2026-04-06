@@ -22,10 +22,10 @@ const ReformatCodeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="12" width="12" height="1" rx=".5" fill="#6C707E" />
-    <rect x="6" y="6" width="8" height="1" rx=".5" fill="#6C707E" />
-    <rect x="6" y="9" width="8" height="1" rx=".5" fill="#6C707E" />
-    <rect x="2" y="3" width="12" height="1" rx=".5" fill="#6C707E" />
+    <rect x={2} y={12} width={12} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={6} y={6} width={8} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={6} y={9} width={8} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={2} y={3} width={12} height={1} rx={0.5} fill="#6C707E" />
     <path
       d="M2.8 6.1a.5.5 0 0 0-.8.4v3a.5.5 0 0 0 .8.4l2-1.5a.5.5 0 0 0 0-.8z"
       fill="#4682FA"
@@ -51,10 +51,10 @@ const ReformatCodeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="12" width="12" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="6" y="6" width="8" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="6" y="9" width="8" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="2" y="3" width="12" height="1" rx=".5" fill="#CED0D6" />
+    <rect x={2} y={12} width={12} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={6} y={6} width={8} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={6} y={9} width={8} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={2} y={3} width={12} height={1} rx={0.5} fill="#CED0D6" />
     <path
       d="M2.8 6.1a.5.5 0 0 0-.8.4v3a.5.5 0 0 0 .8.4l2-1.5a.5.5 0 0 0 0-.8z"
       fill="#548AF7"

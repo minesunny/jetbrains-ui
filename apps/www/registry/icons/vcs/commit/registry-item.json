@@ -3,7 +3,7 @@
   "name": "icons-vcs-commit",
   "type": "registry:ui",
   "title": "Commit",
-  "description": "Commit icon from Vcs category.",
+  "description": "Commit icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

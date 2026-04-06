@@ -3,7 +3,7 @@
   "name": "icons-database-default-constraint",
   "type": "registry:ui",
   "title": "Default Constraint",
-  "description": "Default Constraint icon from Database category.",
+  "description": "Default Constraint icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

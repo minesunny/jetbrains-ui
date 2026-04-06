@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-platform-io",
   "type": "registry:ui",
   "title": "Tool Window Platform Io",
-  "description": "Tool Window Platform Io icon from General Tool Windows category.",
+  "description": "Tool Window Platform Io icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-platform-io",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

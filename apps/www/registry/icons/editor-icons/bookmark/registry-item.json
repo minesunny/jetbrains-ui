@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-bookmark",
   "type": "registry:ui",
   "title": "Bookmark",
-  "description": "Bookmark icon from Editor Icons category.",
+  "description": "Bookmark icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

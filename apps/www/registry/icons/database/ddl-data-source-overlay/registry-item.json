@@ -3,7 +3,7 @@
   "name": "icons-database-ddl-data-source-overlay",
   "type": "registry:ui",
   "title": "Ddl Data Source Overlay",
-  "description": "Ddl Data Source Overlay icon from Database category.",
+  "description": "Ddl Data Source Overlay icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-nodes-test-ignored",
   "type": "registry:ui",
   "title": "Test Ignored",
-  "description": "Test Ignored icon from Nodes category.",
+  "description": "Test Ignored icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

@@ -21,7 +21,7 @@ export const svgNames = [
   'acync-api',
   'amper',
   'angular-js',
-  'angular-jsmonochrome',
+  'angular-js-monochrome',
   'any-type',
   'api',
   'archive',

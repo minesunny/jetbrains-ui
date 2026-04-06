@@ -3,7 +3,7 @@
   "name": "icons-file-types-kotlin",
   "type": "registry:ui",
   "title": "Kotlin",
-  "description": "Kotlin icon from File Types category.",
+  "description": "Kotlin icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

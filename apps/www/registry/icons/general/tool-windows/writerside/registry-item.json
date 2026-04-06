@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-writerside",
   "type": "registry:ui",
   "title": "Writerside",
-  "description": "Writerside icon from General Tool Windows category.",
+  "description": "Writerside icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "writerside",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -23,11 +23,11 @@ const HttpHeaderLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
@@ -57,11 +57,11 @@ const HttpHeaderDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#25324D"
       stroke="#548AF7"
     />

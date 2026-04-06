@@ -3,7 +3,7 @@
   "name": "icons-database-stream-key",
   "type": "registry:ui",
   "title": "Stream Key",
-  "description": "Stream Key icon from Database category.",
+  "description": "Stream Key icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-inline-filter-history",
   "type": "registry:ui",
   "title": "Filter History",
-  "description": "Filter History icon from General Inline category.",
+  "description": "Filter History icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "filter-history",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

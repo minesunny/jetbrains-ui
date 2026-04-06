@@ -22,7 +22,7 @@ const ErrorDialogLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="14" cy="14" r="12" fill="#E55765" />
+    <circle cx={14} cy={14} r={12} fill="#E55765" />
     <path
       d="M15 8a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0zM14 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
       fill="#fff"
@@ -49,7 +49,7 @@ const ErrorDialogDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <g clipPath="url(#a)">
-      <circle cx="14" cy="14" r="12" fill="#DB5C5C" />
+      <circle cx={14} cy={14} r={12} fill="#DB5C5C" />
       <path
         d="M15 8a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0zM14 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
         fill="#fff"

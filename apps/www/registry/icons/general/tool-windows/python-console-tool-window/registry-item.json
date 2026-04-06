@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-python-console-tool-window",
   "type": "registry:ui",
   "title": "Python Console Tool Window",
-  "description": "Python Console Tool Window icon from General Tool Windows category.",
+  "description": "Python Console Tool Window icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "python-console-tool-window",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

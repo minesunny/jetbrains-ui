@@ -3,7 +3,7 @@
   "name": "icons-vcs-vcs",
   "type": "registry:ui",
   "title": "Vcs",
-  "description": "Vcs icon from Vcs category.",
+  "description": "Vcs icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

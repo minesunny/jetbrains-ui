@@ -3,7 +3,7 @@
   "name": "icons-general-actions-move-to-button",
   "type": "registry:ui",
   "title": "Move To Button",
-  "description": "Move To Button icon from General Actions category.",
+  "description": "Move To Button icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "move-to-button",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-database-foreign-datawrapper",
   "type": "registry:ui",
   "title": "Foreign Datawrapper",
-  "description": "Foreign Datawrapper icon from Database category.",
+  "description": "Foreign Datawrapper icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

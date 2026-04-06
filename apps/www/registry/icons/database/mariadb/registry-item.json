@@ -3,7 +3,7 @@
   "name": "icons-database-mariadb",
   "type": "registry:ui",
   "title": "Mariadb",
-  "description": "Mariadb icon from Database category.",
+  "description": "Mariadb icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

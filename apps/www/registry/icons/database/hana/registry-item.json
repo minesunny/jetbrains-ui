@@ -3,7 +3,7 @@
   "name": "icons-database-hana",
   "type": "registry:ui",
   "title": "Hana",
-  "description": "Hana icon from Database category.",
+  "description": "Hana icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

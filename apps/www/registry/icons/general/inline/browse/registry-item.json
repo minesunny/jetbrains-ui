@@ -3,7 +3,7 @@
   "name": "icons-general-inline-browse",
   "type": "registry:ui",
   "title": "Browse",
-  "description": "Browse icon from General Inline category.",
+  "description": "Browse icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "browse",
       "icon",
       "general",
-      "inline",
       "jetbrains"
     ]
   }

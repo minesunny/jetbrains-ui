@@ -3,7 +3,7 @@
   "name": "icons-database-column-dot-index",
   "type": "registry:ui",
   "title": "Column Dot Index",
-  "description": "Column Dot Index icon from Database category.",
+  "description": "Column Dot Index icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

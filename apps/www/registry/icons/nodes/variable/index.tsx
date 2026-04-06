@@ -22,7 +22,7 @@ const VariableLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#FFF4EB" stroke="#E66D17" />
+    <circle cx={8} cy={8} r={6.5} fill="#FFF4EB" stroke="#E66D17" />
     <path
       d="M7.546 11.4h.92l2.355-6H9.79l-1.746 4.705L6.239 5.4H5.18z"
       fill="#E66D17"
@@ -48,7 +48,7 @@ const VariableDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#45322B" stroke="#C77D55" />
+    <circle cx={8} cy={8} r={6.5} fill="#45322B" stroke="#C77D55" />
     <path
       d="M7.546 11.4h.92l2.355-6H9.79l-1.746 4.705L6.239 5.4H5.18z"
       fill="#C77D55"

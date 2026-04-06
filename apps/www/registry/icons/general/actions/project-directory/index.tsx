@@ -36,7 +36,7 @@ const ProjectDirectoryLight: FC<SvgProps> = ({
       d="M6.122 3H2.633C2.405 3 2 3.258 2 3.867v8.266c0 .609.405.867.633.867H8v1H2.633C1.731 14 1 13.164 1 12.133V3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2h-1V6a1 1 0 0 0-1-1H8.04z"
       fill="#6C707E"
     />
-    <rect x="9" y="8.998" width="7" height="7" rx="1" fill="#000" />
+    <rect x={9} y={8.998} width={7} height={7} rx={1} fill="#000" />
     <path
       d="M10.5 14.498h2"
       stroke="#fff"
@@ -78,7 +78,7 @@ const ProjectDirectoryDark: FC<SvgProps> = ({
       d="M6.122 3H2.633C2.405 3 2 3.258 2 3.867v8.266c0 .609.405.867.633.867H8v1H2.633C1.731 14 1 13.164 1 12.133V3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2h-1V6a1 1 0 0 0-1-1H8.04z"
       fill="#CED0D6"
     />
-    <rect x="9" y="8.998" width="7" height="7" rx="1" fill="#000" />
+    <rect x={9} y={8.998} width={7} height={7} rx={1} fill="#000" />
     <path
       d="M10.5 14.498h2"
       stroke="#fff"

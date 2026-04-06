@@ -3,7 +3,7 @@
   "name": "icons-run-watch",
   "type": "registry:ui",
   "title": "Watch",
-  "description": "Watch icon from Run category.",
+  "description": "Watch icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

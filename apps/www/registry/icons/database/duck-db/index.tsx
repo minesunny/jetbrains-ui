@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type DuckDBProps = SvgProps;
+export type DuckDbProps = SvgProps;
 
-const DuckDBLight: FC<SvgProps> = ({
+const DuckDbLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -35,7 +35,7 @@ const DuckDBLight: FC<SvgProps> = ({
   </svg>
 );
 
-const DuckDBDark: FC<SvgProps> = ({
+const DuckDbDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -66,14 +66,14 @@ const DuckDBDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const DuckDB: FC<DuckDBProps> = ({
+export const DuckDb: FC<DuckDbProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? DuckDBLight : DuckDBDark;
+  const SvgComponent = mode === 'light' ? DuckDbLight : DuckDbDark;
 
   return (
     <SvgComponent

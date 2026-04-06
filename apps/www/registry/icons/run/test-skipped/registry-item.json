@@ -3,7 +3,7 @@
   "name": "icons-run-test-skipped",
   "type": "registry:ui",
   "title": "Test Skipped",
-  "description": "Test Skipped icon from Run category.",
+  "description": "Test Skipped icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

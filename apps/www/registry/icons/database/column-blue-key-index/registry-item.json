@@ -3,7 +3,7 @@
   "name": "icons-database-column-blue-key-index",
   "type": "registry:ui",
   "title": "Column Blue Key Index",
-  "description": "Column Blue Key Index icon from Database category.",
+  "description": "Column Blue Key Index icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

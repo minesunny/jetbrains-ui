@@ -22,7 +22,7 @@ const InterfaceLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#F2FCF3" stroke="#208A3C" />
+    <circle cx={8} cy={8} r={6.5} fill="#F2FCF3" stroke="#208A3C" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -50,7 +50,7 @@ const InterfaceDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#253627" stroke="#57965C" />
+    <circle cx={8} cy={8} r={6.5} fill="#253627" stroke="#57965C" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

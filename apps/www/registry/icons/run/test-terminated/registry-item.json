@@ -3,7 +3,7 @@
   "name": "icons-run-test-terminated",
   "type": "registry:ui",
   "title": "Test Terminated",
-  "description": "Test Terminated icon from Run category.",
+  "description": "Test Terminated icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

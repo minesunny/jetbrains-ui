@@ -3,7 +3,7 @@
   "name": "icons-general-setting-sync-conflict",
   "type": "registry:ui",
   "title": "Conflict",
-  "description": "Conflict icon from General Setting Sync category.",
+  "description": "Conflict icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "conflict",
       "icon",
       "general",
-      "setting-sync",
       "jetbrains"
     ]
   }

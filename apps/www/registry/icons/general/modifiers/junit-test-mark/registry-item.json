@@ -3,7 +3,7 @@
   "name": "icons-general-modifiers-junit-test-mark",
   "type": "registry:ui",
   "title": "Junit Test Mark",
-  "description": "Junit Test Mark icon from General Modifiers category.",
+  "description": "Junit Test Mark icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "junit-test-mark",
       "icon",
       "general",
-      "modifiers",
       "jetbrains"
     ]
   }

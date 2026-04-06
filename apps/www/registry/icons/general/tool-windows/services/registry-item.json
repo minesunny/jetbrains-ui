@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-services",
   "type": "registry:ui",
   "title": "Services",
-  "description": "Services icon from General Tool Windows category.",
+  "description": "Services icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "services",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

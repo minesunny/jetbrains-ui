@@ -3,7 +3,7 @@
   "name": "icons-general-usages-show-write-access",
   "type": "registry:ui",
   "title": "Show Write Access",
-  "description": "Show Write Access icon from General Usages category.",
+  "description": "Show Write Access icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "show-write-access",
       "icon",
       "general",
-      "usages",
       "jetbrains"
     ]
   }

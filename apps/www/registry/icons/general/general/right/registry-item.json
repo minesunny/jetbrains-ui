@@ -3,7 +3,7 @@
   "name": "icons-general-general-right",
   "type": "registry:ui",
   "title": "Right",
-  "description": "Right icon from General General category.",
+  "description": "Right icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "right",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

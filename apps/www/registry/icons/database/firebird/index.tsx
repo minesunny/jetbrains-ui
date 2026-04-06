@@ -35,25 +35,25 @@ const FirebirdLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="14.819"
-        y1="14.841"
-        x2="14.819"
-        y2="1.289"
+        x1={14.819}
+        y1={14.841}
+        x2={14.819}
+        y2={1.289}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F40A0B" />
-        <stop offset="1" stopColor="#F5E710" />
+        <stop offset={1} stopColor="#F5E710" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="14.819"
-        y1="14.841"
-        x2="14.819"
-        y2="1.289"
+        x1={14.819}
+        y1={14.841}
+        x2={14.819}
+        y2={1.289}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F40A0B" />
-        <stop offset="1" stopColor="#F5E710" />
+        <stop offset={1} stopColor="#F5E710" />
       </linearGradient>
     </defs>
   </svg>
@@ -90,25 +90,25 @@ const FirebirdDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="14.819"
-        y1="14.841"
-        x2="14.819"
-        y2="1.289"
+        x1={14.819}
+        y1={14.841}
+        x2={14.819}
+        y2={1.289}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F40A0B" />
-        <stop offset="1" stopColor="#F5E710" />
+        <stop offset={1} stopColor="#F5E710" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="14.819"
-        y1="14.841"
-        x2="14.819"
-        y2="1.289"
+        x1={14.819}
+        y1={14.841}
+        x2={14.819}
+        y2={1.289}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#F40A0B" />
-        <stop offset="1" stopColor="#F5E710" />
+        <stop offset={1} stopColor="#F5E710" />
       </linearGradient>
     </defs>
   </svg>

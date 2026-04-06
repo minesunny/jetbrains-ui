@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-muted-dependent",
   "type": "registry:ui",
   "title": "Breakpoint Muted Dependent",
-  "description": "Breakpoint Muted Dependent icon from Breakpoints category.",
+  "description": "Breakpoint Muted Dependent icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

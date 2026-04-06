@@ -3,7 +3,7 @@
   "name": "icons-file-types-yarn",
   "type": "registry:ui",
   "title": "Yarn",
-  "description": "Yarn icon from File Types category.",
+  "description": "Yarn icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

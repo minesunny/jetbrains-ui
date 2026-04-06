@@ -3,7 +3,7 @@
   "name": "icons-database-h2",
   "type": "registry:ui",
   "title": "H2",
-  "description": "H2 icon from Database category.",
+  "description": "H2 icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

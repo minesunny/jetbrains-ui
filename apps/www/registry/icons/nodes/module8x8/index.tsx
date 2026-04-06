@@ -23,11 +23,11 @@ const Module8x8Light: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x=".5"
-      y=".5"
-      width="7"
-      height="7"
-      rx="1.5"
+      x={0.5}
+      y={0.5}
+      width={7}
+      height={7}
+      rx={1.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
@@ -53,11 +53,11 @@ const Module8x8Dark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x=".5"
-      y=".5"
-      width="7"
-      height="7"
-      rx="1.5"
+      x={0.5}
+      y={0.5}
+      width={7}
+      height={7}
+      rx={1.5}
       fill="#25324D"
       stroke="#548AF7"
     />

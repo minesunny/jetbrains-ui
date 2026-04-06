@@ -3,7 +3,7 @@
   "name": "icons-nodes-module8x8",
   "type": "registry:ui",
   "title": "Module8x8",
-  "description": "Module8x8 icon from Nodes category.",
+  "description": "Module8x8 icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

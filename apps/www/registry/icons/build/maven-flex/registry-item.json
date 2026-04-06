@@ -3,7 +3,7 @@
   "name": "icons-build-maven-flex",
   "type": "registry:ui",
   "title": "Maven Flex",
-  "description": "Maven Flex icon from Build category.",
+  "description": "Maven Flex icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

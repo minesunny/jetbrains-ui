@@ -22,9 +22,9 @@ const MoreVerticalLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="3" r="1" fill="#6C707E" />
-    <circle cx="8" cy="8" r="1" fill="#6C707E" />
-    <circle cx="8" cy="13" r="1" fill="#6C707E" />
+    <circle cx={8} cy={3} r={1} fill="#6C707E" />
+    <circle cx={8} cy={8} r={1} fill="#6C707E" />
+    <circle cx={8} cy={13} r={1} fill="#6C707E" />
   </svg>
 );
 
@@ -46,9 +46,9 @@ const MoreVerticalDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="3" r="1" fill="#CED0D6" />
-    <circle cx="8" cy="8" r="1" fill="#CED0D6" />
-    <circle cx="8" cy="13" r="1" fill="#CED0D6" />
+    <circle cx={8} cy={3} r={1} fill="#CED0D6" />
+    <circle cx={8} cy={8} r={1} fill="#CED0D6" />
+    <circle cx={8} cy={13} r={1} fill="#CED0D6" />
   </svg>
 );
 

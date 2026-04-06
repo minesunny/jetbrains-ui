@@ -3,7 +3,7 @@
   "name": "icons-file-types-package-lock",
   "type": "registry:ui",
   "title": "Package Lock",
-  "description": "Package Lock icon from File Types category.",
+  "description": "Package Lock icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

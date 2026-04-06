@@ -3,7 +3,7 @@
   "name": "icons-file-types-polars",
   "type": "registry:ui",
   "title": "Polars",
-  "description": "Polars icon from File Types category.",
+  "description": "Polars icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

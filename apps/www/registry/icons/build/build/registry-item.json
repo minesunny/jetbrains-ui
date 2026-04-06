@@ -3,7 +3,7 @@
   "name": "icons-build-build",
   "type": "registry:ui",
   "title": "Build",
-  "description": "Build icon from Build category.",
+  "description": "Build icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

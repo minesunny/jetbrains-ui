@@ -3,7 +3,7 @@
   "name": "icons-nodes-property",
   "type": "registry:ui",
   "title": "Property",
-  "description": "Property icon from Nodes category.",
+  "description": "Property icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

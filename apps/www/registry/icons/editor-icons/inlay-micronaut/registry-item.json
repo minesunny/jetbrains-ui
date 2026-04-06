@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inlay-micronaut",
   "type": "registry:ui",
   "title": "Inlay Micronaut",
-  "description": "Inlay Micronaut icon from Editor Icons category.",
+  "description": "Inlay Micronaut icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

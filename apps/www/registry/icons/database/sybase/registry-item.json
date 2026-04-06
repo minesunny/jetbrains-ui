@@ -3,7 +3,7 @@
   "name": "icons-database-sybase",
   "type": "registry:ui",
   "title": "Sybase",
-  "description": "Sybase icon from Database category.",
+  "description": "Sybase icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

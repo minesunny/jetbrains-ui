@@ -3,7 +3,7 @@
   "name": "icons-file-types-jfr",
   "type": "registry:ui",
   "title": "Jfr",
-  "description": "Jfr icon from File Types category.",
+  "description": "Jfr icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

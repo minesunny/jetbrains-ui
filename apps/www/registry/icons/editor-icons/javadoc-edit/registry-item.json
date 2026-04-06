@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-javadoc-edit",
   "type": "registry:ui",
   "title": "Javadoc Edit",
-  "description": "Javadoc Edit icon from Editor Icons category.",
+  "description": "Javadoc Edit icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-database-athena",
   "type": "registry:ui",
   "title": "Athena",
-  "description": "Athena icon from Database category.",
+  "description": "Athena icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

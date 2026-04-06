@@ -25,7 +25,7 @@ const BreakpointMethodMutedDisabledLight: FC<SvgProps> = ({
     <path
       d="M6.823 1.237a.25.25 0 0 1 .354 0l5.586 5.586a.25.25 0 0 1 0 .354l-5.586 5.586a.25.25 0 0 1-.354 0L1.237 7.177a.25.25 0 0 1 0-.354z"
       stroke="#6C707E"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
     />
   </svg>
 );
@@ -51,7 +51,7 @@ const BreakpointMethodMutedDisabledDark: FC<SvgProps> = ({
     <path
       d="M6.823 1.237a.25.25 0 0 1 .354 0l5.586 5.586a.25.25 0 0 1 0 .354l-5.586 5.586a.25.25 0 0 1-.354 0L1.237 7.177a.25.25 0 0 1 0-.354z"
       stroke="#CED0D6"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
     />
   </svg>
 );

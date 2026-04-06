@@ -3,7 +3,7 @@
   "name": "icons-run-test-custom",
   "type": "registry:ui",
   "title": "Test Custom",
-  "description": "Test Custom icon from Run category.",
+  "description": "Test Custom icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

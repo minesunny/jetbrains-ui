@@ -33,27 +33,27 @@ const SinglestoreLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="12.584"
-        y1="1"
-        x2="2.364"
-        y2="9.997"
+        x1={12.584}
+        y1={1}
+        x2={2.364}
+        y2={9.997}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#E859FF" />
-        <stop offset=".404" stopColor="#A000F0" />
-        <stop offset="1" stopColor="#8B01D0" />
+        <stop offset={0.404} stopColor="#A000F0" />
+        <stop offset={1} stopColor="#8B01D0" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="6.192"
-        y1="-.813"
-        x2="12.403"
-        y2="5.491"
+        x1={6.192}
+        y1={-0.813}
+        x2={12.403}
+        y2={5.491}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".035" stopColor="#E762F5" />
-        <stop offset=".513" stopColor="#9913D4" />
-        <stop offset="1" stopColor="#680AB4" />
+        <stop offset={0.035} stopColor="#E762F5" />
+        <stop offset={0.513} stopColor="#9913D4" />
+        <stop offset={1} stopColor="#680AB4" />
       </linearGradient>
     </defs>
   </svg>
@@ -88,27 +88,27 @@ const SinglestoreDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="a"
-        x1="12.584"
-        y1="1"
-        x2="2.364"
-        y2="9.997"
+        x1={12.584}
+        y1={1}
+        x2={2.364}
+        y2={9.997}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#E859FF" />
-        <stop offset=".404" stopColor="#A000F0" />
-        <stop offset="1" stopColor="#8B01D0" />
+        <stop offset={0.404} stopColor="#A000F0" />
+        <stop offset={1} stopColor="#8B01D0" />
       </linearGradient>
       <linearGradient
         id="b"
-        x1="6.192"
-        y1="-.813"
-        x2="12.403"
-        y2="5.491"
+        x1={6.192}
+        y1={-0.813}
+        x2={12.403}
+        y2={5.491}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".035" stopColor="#E762F5" />
-        <stop offset=".513" stopColor="#9913D4" />
-        <stop offset="1" stopColor="#680AB4" />
+        <stop offset={0.035} stopColor="#E762F5" />
+        <stop offset={0.513} stopColor="#9913D4" />
+        <stop offset={1} stopColor="#680AB4" />
       </linearGradient>
     </defs>
   </svg>

@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-chessboard",
   "type": "registry:ui",
   "title": "Chessboard",
-  "description": "Chessboard icon from Editor Icons category.",
+  "description": "Chessboard icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

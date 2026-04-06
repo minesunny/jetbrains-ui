@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-scala-profiler",
   "type": "registry:ui",
   "title": "Scala Profiler",
-  "description": "Scala Profiler icon from General Tool Windows category.",
+  "description": "Scala Profiler icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "scala-profiler",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

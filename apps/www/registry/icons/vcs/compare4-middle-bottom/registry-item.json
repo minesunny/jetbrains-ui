@@ -3,7 +3,7 @@
   "name": "icons-vcs-compare4-middle-bottom",
   "type": "registry:ui",
   "title": "Compare4 Middle Bottom",
-  "description": "Compare4 Middle Bottom icon from Vcs category.",
+  "description": "Compare4 Middle Bottom icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

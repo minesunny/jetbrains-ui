@@ -3,7 +3,7 @@
   "name": "icons-general-devkit-sdk-closed",
   "type": "registry:ui",
   "title": "Sdk Closed",
-  "description": "Sdk Closed icon from General Devkit category.",
+  "description": "Sdk Closed icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "sdk-closed",
       "icon",
       "general",
-      "devkit",
       "jetbrains"
     ]
   }

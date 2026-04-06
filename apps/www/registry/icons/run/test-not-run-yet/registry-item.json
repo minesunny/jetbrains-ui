@@ -3,7 +3,7 @@
   "name": "icons-run-test-not-run-yet",
   "type": "registry:ui",
   "title": "Test Not Run Yet",
-  "description": "Test Not Run Yet icon from Run category.",
+  "description": "Test Not Run Yet icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

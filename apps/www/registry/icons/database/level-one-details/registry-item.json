@@ -3,7 +3,7 @@
   "name": "icons-database-level-one-details",
   "type": "registry:ui",
   "title": "Level One Details",
-  "description": "Level One Details icon from Database category.",
+  "description": "Level One Details icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-database-apache-derby",
   "type": "registry:ui",
   "title": "Apache Derby",
-  "description": "Apache Derby icon from Database category.",
+  "description": "Apache Derby icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

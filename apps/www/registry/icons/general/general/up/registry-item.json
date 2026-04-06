@@ -3,7 +3,7 @@
   "name": "icons-general-general-up",
   "type": "registry:ui",
   "title": "Up",
-  "description": "Up icon from General General category.",
+  "description": "Up icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "up",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

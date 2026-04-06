@@ -3,7 +3,7 @@
   "name": "icons-general-general-add",
   "type": "registry:ui",
   "title": "Add",
-  "description": "Add icon from General General category.",
+  "description": "Add icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "add",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

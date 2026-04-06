@@ -3,7 +3,7 @@
   "name": "icons-run-dump-threads",
   "type": "registry:ui",
   "title": "Dump Threads",
-  "description": "Dump Threads icon from Run category.",
+  "description": "Dump Threads icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

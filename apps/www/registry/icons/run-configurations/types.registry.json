@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icons-run-configurations-types",
   "type": "registry:ui",
-  "title": "Run Configurations Icons Types",
-  "description": "Shared types and utilities for Run Configurations icon components.",
+  "title": "RunConfigurations Icons Types",
+  "description": "Shared types and utilities for RunConfigurations icon components.",
   "files": [
     {
       "path": "registry/icons/run-configurations/types.ts",

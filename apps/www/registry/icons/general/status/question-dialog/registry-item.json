@@ -3,7 +3,7 @@
   "name": "icons-general-status-question-dialog",
   "type": "registry:ui",
   "title": "Question Dialog",
-  "description": "Question Dialog icon from General Status category.",
+  "description": "Question Dialog icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "question-dialog",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

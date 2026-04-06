@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-npm",
   "type": "registry:ui",
   "title": "Npm",
-  "description": "Npm icon from General Tool Windows category.",
+  "description": "Npm icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "npm",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

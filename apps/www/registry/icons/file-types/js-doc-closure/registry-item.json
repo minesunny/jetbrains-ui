@@ -3,7 +3,7 @@
   "name": "icons-file-types-js-doc-closure",
   "type": "registry:ui",
   "title": "Js Doc Closure",
-  "description": "Js Doc Closure icon from File Types category.",
+  "description": "Js Doc Closure icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

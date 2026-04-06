@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-hierarchy",
   "type": "registry:ui",
   "title": "Hierarchy",
-  "description": "Hierarchy icon from General Tool Windows category.",
+  "description": "Hierarchy icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "hierarchy",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

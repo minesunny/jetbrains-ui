@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-field-muted",
   "type": "registry:ui",
   "title": "Breakpoint Field Muted",
-  "description": "Breakpoint Field Muted icon from Breakpoints category.",
+  "description": "Breakpoint Field Muted icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

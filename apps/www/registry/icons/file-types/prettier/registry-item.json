@@ -3,7 +3,7 @@
   "name": "icons-file-types-prettier",
   "type": "registry:ui",
   "title": "Prettier",
-  "description": "Prettier icon from File Types category.",
+  "description": "Prettier icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

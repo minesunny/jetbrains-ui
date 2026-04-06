@@ -3,7 +3,7 @@
   "name": "icons-general-general-copy",
   "type": "registry:ui",
   "title": "Copy",
-  "description": "Copy icon from General General category.",
+  "description": "Copy icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "copy",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -23,18 +23,18 @@ const ArchiveLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#EDF3FF"
       stroke="#3574F0"
     />
-    <rect x="6" y="4" width="2" height="2" rx=".5" fill="#3574F0" />
-    <rect x="6" y="8" width="2" height="2" rx=".5" fill="#3574F0" />
-    <rect x="8" y="10" width="2" height="2" rx=".5" fill="#3574F0" />
-    <rect x="8" y="6" width="2" height="2" rx=".5" fill="#3574F0" />
+    <rect x={6} y={4} width={2} height={2} rx={0.5} fill="#3574F0" />
+    <rect x={6} y={8} width={2} height={2} rx={0.5} fill="#3574F0" />
+    <rect x={8} y={10} width={2} height={2} rx={0.5} fill="#3574F0" />
+    <rect x={8} y={6} width={2} height={2} rx={0.5} fill="#3574F0" />
   </svg>
 );
 
@@ -57,18 +57,18 @@ const ArchiveDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#25324D"
       stroke="#548AF7"
     />
-    <rect x="6" y="4" width="2" height="2" rx=".5" fill="#548AF7" />
-    <rect x="6" y="8" width="2" height="2" rx=".5" fill="#548AF7" />
-    <rect x="8" y="10" width="2" height="2" rx=".5" fill="#548AF7" />
-    <rect x="8" y="6" width="2" height="2" rx=".5" fill="#548AF7" />
+    <rect x={6} y={4} width={2} height={2} rx={0.5} fill="#548AF7" />
+    <rect x={6} y={8} width={2} height={2} rx={0.5} fill="#548AF7" />
+    <rect x={8} y={10} width={2} height={2} rx={0.5} fill="#548AF7" />
+    <rect x={8} y={6} width={2} height={2} rx={0.5} fill="#548AF7" />
   </svg>
 );
 

@@ -3,7 +3,7 @@
   "name": "icons-file-types-wsdl",
   "type": "registry:ui",
   "title": "Wsdl",
-  "description": "Wsdl icon from File Types category.",
+  "description": "Wsdl icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

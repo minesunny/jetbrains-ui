@@ -3,7 +3,7 @@
   "name": "icons-general-bookmarks-mnemonic",
   "type": "registry:ui",
   "title": "Mnemonic",
-  "description": "Mnemonic icon from General Bookmarks category.",
+  "description": "Mnemonic icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "mnemonic",
       "icon",
       "general",
-      "bookmarks",
       "jetbrains"
     ]
   }

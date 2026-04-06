@@ -22,10 +22,10 @@ const CopyLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2.5" y="3.5" width="9" height="10" rx="1.5" stroke="#A8ADBD" />
-    <rect x="5" y="10" width="4" height="1" rx=".5" fill="#A8ADBD" />
-    <rect x="5" y="8" width="4" height="1" rx=".5" fill="#A8ADBD" />
-    <rect x="5" y="6" width="4" height="1" rx=".5" fill="#A8ADBD" />
+    <rect x={2.5} y={3.5} width={9} height={10} rx={1.5} stroke="#A8ADBD" />
+    <rect x={5} y={10} width={4} height={1} rx={0.5} fill="#A8ADBD" />
+    <rect x={5} y={8} width={4} height={1} rx={0.5} fill="#A8ADBD" />
+    <rect x={5} y={6} width={4} height={1} rx={0.5} fill="#A8ADBD" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -53,10 +53,10 @@ const CopyDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2.5" y="3.5" width="9" height="10" rx="1.5" stroke="#868A91" />
-    <rect x="5" y="10" width="4" height="1" rx=".5" fill="#868A91" />
-    <rect x="5" y="8" width="4" height="1" rx=".5" fill="#868A91" />
-    <rect x="5" y="6" width="4" height="1" rx=".5" fill="#868A91" />
+    <rect x={2.5} y={3.5} width={9} height={10} rx={1.5} stroke="#868A91" />
+    <rect x={5} y={10} width={4} height={1} rx={0.5} fill="#868A91" />
+    <rect x={5} y={8} width={4} height={1} rx={0.5} fill="#868A91" />
+    <rect x={5} y={6} width={4} height={1} rx={0.5} fill="#868A91" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

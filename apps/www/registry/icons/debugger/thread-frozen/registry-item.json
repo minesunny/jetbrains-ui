@@ -3,7 +3,7 @@
   "name": "icons-debugger-thread-frozen",
   "type": "registry:ui",
   "title": "Thread Frozen",
-  "description": "Thread Frozen icon from Debugger category.",
+  "description": "Thread Frozen icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

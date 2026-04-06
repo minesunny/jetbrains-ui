@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-dependencies",
   "type": "registry:ui",
   "title": "Dependencies",
-  "description": "Dependencies icon from General Tool Windows category.",
+  "description": "Dependencies icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "dependencies",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

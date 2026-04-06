@@ -3,7 +3,7 @@
   "name": "icons-database-foreign-server",
   "type": "registry:ui",
   "title": "Foreign Server",
-  "description": "Foreign Server icon from Database category.",
+  "description": "Foreign Server icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

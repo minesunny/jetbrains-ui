@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-editor-only",
   "type": "registry:ui",
   "title": "Editor Only",
-  "description": "Editor Only icon from Editor Icons category.",
+  "description": "Editor Only icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

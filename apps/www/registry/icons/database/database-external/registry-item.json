@@ -3,7 +3,7 @@
   "name": "icons-database-database-external",
   "type": "registry:ui",
   "title": "Database External",
-  "description": "Database External icon from Database category.",
+  "description": "Database External icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

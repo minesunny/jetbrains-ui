@@ -3,7 +3,7 @@
   "name": "icons-database-procedure",
   "type": "registry:ui",
   "title": "Procedure",
-  "description": "Procedure icon from Database category.",
+  "description": "Procedure icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-database-mongo-field-gold-key",
   "type": "registry:ui",
   "title": "Mongo Field Gold Key",
-  "description": "Mongo Field Gold Key icon from Database category.",
+  "description": "Mongo Field Gold Key icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

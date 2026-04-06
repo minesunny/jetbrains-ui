@@ -3,7 +3,7 @@
   "name": "icons-database-access-method",
   "type": "registry:ui",
   "title": "Access Method",
-  "description": "Access Method icon from Database category.",
+  "description": "Access Method icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

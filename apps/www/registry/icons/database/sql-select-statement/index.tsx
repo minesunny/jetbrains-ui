@@ -1,10 +1,10 @@
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../types';
+import { type SvgProps, sizeMap } from '../types';
 
-export type CoverageProps = SvgProps;
+export type SqlSelectStatementProps = SvgProps;
 
-const CoverageLight: FC<SvgProps> = ({
+const SqlSelectStatementLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -23,19 +23,15 @@ const CoverageLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path
-      d="M13.5 3.833v5.346c0 1.571-.786 2.737-1.866 3.706-.802.718-1.786 1.342-2.73 1.937l-.904.58-.904-.58c-.944-.595-1.928-1.219-2.73-1.937C3.286 11.916 2.5 10.75 2.5 9.179V3.833L8 1.542z"
-      stroke="#6C707E"
-    />
-    <path
-      d="M5.5 8.5 7 10l3.5-3.5"
+      d="M1.56 7.646a.5.5 0 0 0 0 .708l5.94 5.939V10.5H14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5H7.5V1.707z"
+      fill="#EBECF0"
       stroke="#6C707E"
       strokeLinecap="round"
-      strokeLinejoin="round"
     />
   </svg>
 );
 
-const CoverageDark: FC<SvgProps> = ({
+const SqlSelectStatementDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -54,26 +50,23 @@ const CoverageDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path
-      d="M13.5 3.833v5.346c0 1.571-.786 2.737-1.866 3.706-.802.718-1.786 1.342-2.73 1.937l-.904.58-.904-.58c-.944-.595-1.928-1.219-2.73-1.937C3.286 11.916 2.5 10.75 2.5 9.179V3.833L8 1.542z"
-      stroke="#CED0D6"
-    />
-    <path
-      d="M5.5 8.5 7 10l3.5-3.5"
+      d="M1.56 7.646a.5.5 0 0 0 0 .708l5.94 5.939V10.5H14a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5H7.5V1.707z"
+      fill="#43454A"
       stroke="#CED0D6"
       strokeLinecap="round"
-      strokeLinejoin="round"
     />
   </svg>
 );
 
-export const Coverage: FC<CoverageProps> = ({
+export const SqlSelectStatement: FC<SqlSelectStatementProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? CoverageLight : CoverageDark;
+  const SvgComponent =
+    mode === 'light' ? SqlSelectStatementLight : SqlSelectStatementDark;
 
   return (
     <SvgComponent

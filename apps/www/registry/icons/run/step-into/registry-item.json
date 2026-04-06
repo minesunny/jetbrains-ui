@@ -3,7 +3,7 @@
   "name": "icons-run-step-into",
   "type": "registry:ui",
   "title": "Step Into",
-  "description": "Step Into icon from Run category.",
+  "description": "Step Into icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

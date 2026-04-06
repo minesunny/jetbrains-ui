@@ -3,7 +3,7 @@
   "name": "icons-nodes-edit-folder",
   "type": "registry:ui",
   "title": "Edit Folder",
-  "description": "Edit Folder icon from Nodes category.",
+  "description": "Edit Folder icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

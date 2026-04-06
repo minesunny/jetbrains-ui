@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-collapse-node",
   "type": "registry:ui",
   "title": "Collapse Node",
-  "description": "Collapse Node icon from Editor Icons category.",
+  "description": "Collapse Node icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

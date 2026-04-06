@@ -3,7 +3,7 @@
   "name": "icons-vcs-magic-resolve-toolbar",
   "type": "registry:ui",
   "title": "Magic Resolve Toolbar",
-  "description": "Magic Resolve Toolbar icon from Vcs category.",
+  "description": "Magic Resolve Toolbar icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

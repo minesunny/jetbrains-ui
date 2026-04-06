@@ -3,7 +3,7 @@
   "name": "icons-debugger-thread-group-current",
   "type": "registry:ui",
   "title": "Thread Group Current",
-  "description": "Thread Group Current icon from Debugger category.",
+  "description": "Thread Group Current icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

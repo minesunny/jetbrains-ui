@@ -3,7 +3,7 @@
   "name": "icons-database-go-to-table",
   "type": "registry:ui",
   "title": "Go To Table",
-  "description": "Go To Table icon from Database category.",
+  "description": "Go To Table icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

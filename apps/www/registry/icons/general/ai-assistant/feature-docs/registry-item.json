@@ -3,7 +3,7 @@
   "name": "icons-general-ai-assistant-feature-docs",
   "type": "registry:ui",
   "title": "Feature Docs",
-  "description": "Feature Docs icon from General Ai Assistant category.",
+  "description": "Feature Docs icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "feature-docs",
       "icon",
       "general",
-      "ai-assistant",
       "jetbrains"
     ]
   }

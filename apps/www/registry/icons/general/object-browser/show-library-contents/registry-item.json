@@ -3,7 +3,7 @@
   "name": "icons-general-object-browser-show-library-contents",
   "type": "registry:ui",
   "title": "Show Library Contents",
-  "description": "Show Library Contents icon from General Object Browser category.",
+  "description": "Show Library Contents icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "show-library-contents",
       "icon",
       "general",
-      "object-browser",
       "jetbrains"
     ]
   }

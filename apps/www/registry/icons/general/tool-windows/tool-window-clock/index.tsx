@@ -28,7 +28,7 @@ const ToolWindowClockLight: FC<SvgProps> = ({
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <circle cx="8" cy="9" r="5.5" stroke="#6C707E" />
+    <circle cx={8} cy={9} r={5.5} stroke="#6C707E" />
     <path d="M5.5 1.5h5" stroke="#6C707E" strokeLinecap="round" />
   </svg>
 );
@@ -57,7 +57,7 @@ const ToolWindowClockDark: FC<SvgProps> = ({
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <circle cx="8" cy="9" r="5.5" stroke="#CED0D6" />
+    <circle cx={8} cy={9} r={5.5} stroke="#CED0D6" />
     <path d="M5.5 1.5h5" stroke="#CED0D6" strokeLinecap="round" />
   </svg>
 );

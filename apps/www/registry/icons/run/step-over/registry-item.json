@@ -3,7 +3,7 @@
   "name": "icons-run-step-over",
   "type": "registry:ui",
   "title": "Step Over",
-  "description": "Step Over icon from Run category.",
+  "description": "Step Over icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

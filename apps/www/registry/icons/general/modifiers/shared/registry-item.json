@@ -3,7 +3,7 @@
   "name": "icons-general-modifiers-shared",
   "type": "registry:ui",
   "title": "Shared",
-  "description": "Shared icon from General Modifiers category.",
+  "description": "Shared icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "shared",
       "icon",
       "general",
-      "modifiers",
       "jetbrains"
     ]
   }

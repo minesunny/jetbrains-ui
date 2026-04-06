@@ -3,7 +3,7 @@
   "name": "icons-run-show-ignored",
   "type": "registry:ui",
   "title": "Show Ignored",
-  "description": "Show Ignored icon from Run category.",
+  "description": "Show Ignored icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

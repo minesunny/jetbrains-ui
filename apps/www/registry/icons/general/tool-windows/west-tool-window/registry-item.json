@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-west-tool-window",
   "type": "registry:ui",
   "title": "West Tool Window",
-  "description": "West Tool Window icon from General Tool Windows category.",
+  "description": "West Tool Window icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "west-tool-window",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-intention-bulb-grey",
   "type": "registry:ui",
   "title": "Intention Bulb Grey",
-  "description": "Intention Bulb Grey icon from Editor Icons category.",
+  "description": "Intention Bulb Grey icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

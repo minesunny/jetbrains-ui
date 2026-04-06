@@ -3,7 +3,7 @@
   "name": "icons-file-types-qrc",
   "type": "registry:ui",
   "title": "Qrc",
-  "description": "Qrc icon from File Types category.",
+  "description": "Qrc icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

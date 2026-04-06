@@ -22,7 +22,7 @@ const InformationDialogLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="14" cy="14" r="12" fill="#4682FA" />
+    <circle cx={14} cy={14} r={12} fill="#4682FA" />
     <path
       d="M13 20a1 1 0 1 0 2 0v-6a1 1 0 1 0-2 0zM14 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"
       fill="#fff"
@@ -49,7 +49,7 @@ const InformationDialogDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <g clipPath="url(#a)">
-      <circle cx="14" cy="14" r="12" fill="#548AF7" />
+      <circle cx={14} cy={14} r={12} fill="#548AF7" />
       <path
         d="M13 20a1 1 0 1 0 2 0v-6a1 1 0 1 0-2 0zM14 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"
         fill="#fff"

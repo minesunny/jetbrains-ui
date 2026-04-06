@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-find-external-usages",
   "type": "registry:ui",
   "title": "Find External Usages",
-  "description": "Find External Usages icon from General Tool Windows category.",
+  "description": "Find External Usages icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "find-external-usages",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-file-types-coffeescript",
   "type": "registry:ui",
   "title": "Coffeescript",
-  "description": "Coffeescript icon from File Types category.",
+  "description": "Coffeescript icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

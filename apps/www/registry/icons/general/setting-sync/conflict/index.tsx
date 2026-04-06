@@ -22,7 +22,7 @@ const ConflictLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="7.5" cy="7.5" r="7.5" fill="#F7F8FA" />
+    <circle cx={7.5} cy={7.5} r={7.5} fill="#F7F8FA" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -50,7 +50,7 @@ const ConflictDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="7.5" cy="7.5" r="7.5" fill="#2B2D30" />
+    <circle cx={7.5} cy={7.5} r={7.5} fill="#2B2D30" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

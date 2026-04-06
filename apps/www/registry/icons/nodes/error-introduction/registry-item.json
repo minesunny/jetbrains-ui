@@ -3,7 +3,7 @@
   "name": "icons-nodes-error-introduction",
   "type": "registry:ui",
   "title": "Error Introduction",
-  "description": "Error Introduction icon from Nodes category.",
+  "description": "Error Introduction icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

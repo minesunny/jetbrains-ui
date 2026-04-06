@@ -27,7 +27,7 @@ const RecursiveMethodLight: FC<SvgProps> = ({
       stroke="#6C707E"
       strokeLinecap="round"
     />
-    <circle cx="7" cy="7" r="2" fill="#55A76A" />
+    <circle cx={7} cy={7} r={2} fill="#55A76A" />
   </svg>
 );
 
@@ -54,7 +54,7 @@ const RecursiveMethodDark: FC<SvgProps> = ({
       stroke="#CED0D6"
       strokeLinecap="round"
     />
-    <circle cx="7" cy="7" r="2" fill="#57965C" />
+    <circle cx={7} cy={7} r={2} fill="#57965C" />
   </svg>
 );
 

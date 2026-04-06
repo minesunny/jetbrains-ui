@@ -22,7 +22,7 @@ const ClassInitializerLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#FFF4EB" stroke="#E66D17" />
+    <circle cx={8} cy={8} r={6.5} fill="#FFF4EB" stroke="#E66D17" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -50,7 +50,7 @@ const ClassInitializerDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#45322B" stroke="#C77D55" />
+    <circle cx={8} cy={8} r={6.5} fill="#45322B" stroke="#C77D55" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

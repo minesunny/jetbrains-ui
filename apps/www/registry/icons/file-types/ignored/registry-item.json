@@ -3,7 +3,7 @@
   "name": "icons-file-types-ignored",
   "type": "registry:ui",
   "title": "Ignored",
-  "description": "Ignored icon from File Types category.",
+  "description": "Ignored icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

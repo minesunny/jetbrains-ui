@@ -3,7 +3,7 @@
   "name": "icons-database-couchbase",
   "type": "registry:ui",
   "title": "Couchbase",
-  "description": "Couchbase icon from Database category.",
+  "description": "Couchbase icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

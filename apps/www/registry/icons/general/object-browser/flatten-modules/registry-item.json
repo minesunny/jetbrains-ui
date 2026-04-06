@@ -3,7 +3,7 @@
   "name": "icons-general-object-browser-flatten-modules",
   "type": "registry:ui",
   "title": "Flatten Modules",
-  "description": "Flatten Modules icon from General Object Browser category.",
+  "description": "Flatten Modules icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "flatten-modules",
       "icon",
       "general",
-      "object-browser",
       "jetbrains"
     ]
   }

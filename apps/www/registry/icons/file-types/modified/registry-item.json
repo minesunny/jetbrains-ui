@@ -3,7 +3,7 @@
   "name": "icons-file-types-modified",
   "type": "registry:ui",
   "title": "Modified",
-  "description": "Modified icon from File Types category.",
+  "description": "Modified icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

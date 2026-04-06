@@ -22,7 +22,7 @@ const StepIntoLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="14" width="12" height="1" rx=".5" fill="#6C707E" />
+    <rect x={2} y={14} width={12} height={1} rx={0.5} fill="#6C707E" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -50,7 +50,7 @@ const StepIntoDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="14" width="12" height="1" rx=".5" fill="#CED0D6" />
+    <rect x={2} y={14} width={12} height={1} rx={0.5} fill="#CED0D6" />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

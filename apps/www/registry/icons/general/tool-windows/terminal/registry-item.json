@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-terminal",
   "type": "registry:ui",
   "title": "Terminal",
-  "description": "Terminal icon from General Tool Windows category.",
+  "description": "Terminal icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "terminal",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

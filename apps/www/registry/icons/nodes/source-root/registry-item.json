@@ -3,7 +3,7 @@
   "name": "icons-nodes-source-root",
   "type": "registry:ui",
   "title": "Source Root",
-  "description": "Source Root icon from Nodes category.",
+  "description": "Source Root icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-endpoints",
   "type": "registry:ui",
   "title": "Endpoints",
-  "description": "Endpoints icon from General Tool Windows category.",
+  "description": "Endpoints icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "endpoints",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

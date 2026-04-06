@@ -3,7 +3,7 @@
   "name": "icons-file-types-eclipse",
   "type": "registry:ui",
   "title": "Eclipse",
-  "description": "Eclipse icon from File Types category.",
+  "description": "Eclipse icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

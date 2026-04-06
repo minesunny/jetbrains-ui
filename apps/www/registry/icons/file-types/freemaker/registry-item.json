@@ -3,7 +3,7 @@
   "name": "icons-file-types-freemaker",
   "type": "registry:ui",
   "title": "Freemaker",
-  "description": "Freemaker icon from File Types category.",
+  "description": "Freemaker icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

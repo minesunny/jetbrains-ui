@@ -3,7 +3,7 @@
   "name": "icons-general-new-ui-system-theme",
   "type": "registry:ui",
   "title": "System Theme",
-  "description": "System Theme icon from General New Ui category.",
+  "description": "System Theme icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "system-theme",
       "icon",
       "general",
-      "new-ui",
       "jetbrains"
     ]
   }

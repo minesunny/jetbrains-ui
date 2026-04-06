@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-ai-assistant-tool-window",
   "type": "registry:ui",
   "title": "Ai Assistant Tool Window",
-  "description": "Ai Assistant Tool Window icon from General Tool Windows category.",
+  "description": "Ai Assistant Tool Window icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "ai-assistant-tool-window",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

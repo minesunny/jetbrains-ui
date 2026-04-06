@@ -3,7 +3,7 @@
   "name": "icons-file-types-assembler-go",
   "type": "registry:ui",
   "title": "Assembler Go",
-  "description": "Assembler Go icon from File Types category.",
+  "description": "Assembler Go icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

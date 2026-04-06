@@ -22,7 +22,7 @@ const PauseHoveredLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle opacity=".2" cx="8" cy="8" r="8" fill="#313547" />
+    <circle opacity={0.2} cx={8} cy={8} r={8} fill="#313547" />
     <path
       d="M5.5 4a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-.5-.5M10.5 4a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-.5-.5"
       fill="#818594"
@@ -48,7 +48,7 @@ const PauseHoveredDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle opacity=".19" cx="8" cy="8" r="8" fill="#F0F1F2" />
+    <circle opacity={0.19} cx={8} cy={8} r={8} fill="#F0F1F2" />
     <path
       d="M5.5 4a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-.5-.5M10.5 4a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-.5-.5"
       fill="#868A91"

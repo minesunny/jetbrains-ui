@@ -3,7 +3,7 @@
   "name": "icons-database-level-two-inherited",
   "type": "registry:ui",
   "title": "Level Two Inherited",
-  "description": "Level Two Inherited icon from Database category.",
+  "description": "Level Two Inherited icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

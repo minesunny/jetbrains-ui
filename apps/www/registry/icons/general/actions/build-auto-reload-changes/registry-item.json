@@ -3,7 +3,7 @@
   "name": "icons-general-actions-build-auto-reload-changes",
   "type": "registry:ui",
   "title": "Build Auto Reload Changes",
-  "description": "Build Auto Reload Changes icon from General Actions category.",
+  "description": "Build Auto Reload Changes icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "build-auto-reload-changes",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

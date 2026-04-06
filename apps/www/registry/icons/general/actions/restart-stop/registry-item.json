@@ -3,7 +3,7 @@
   "name": "icons-general-actions-restart-stop",
   "type": "registry:ui",
   "title": "Restart Stop",
-  "description": "Restart Stop icon from General Actions category.",
+  "description": "Restart Stop icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "restart-stop",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

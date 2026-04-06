@@ -3,7 +3,7 @@
   "name": "icons-general-object-browser-sort-by-visibility",
   "type": "registry:ui",
   "title": "Sort By Visibility",
-  "description": "Sort By Visibility icon from General Object Browser category.",
+  "description": "Sort By Visibility icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "sort-by-visibility",
       "icon",
       "general",
-      "object-browser",
       "jetbrains"
     ]
   }

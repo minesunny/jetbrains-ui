@@ -3,7 +3,7 @@
   "name": "icons-general-general-move-to-bottom-left",
   "type": "registry:ui",
   "title": "Move To Bottom Left",
-  "description": "Move To Bottom Left icon from General General category.",
+  "description": "Move To Bottom Left icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "move-to-bottom-left",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

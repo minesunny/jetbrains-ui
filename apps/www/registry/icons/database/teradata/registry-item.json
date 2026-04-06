@@ -3,7 +3,7 @@
   "name": "icons-database-teradata",
   "type": "registry:ui",
   "title": "Teradata",
-  "description": "Teradata icon from Database category.",
+  "description": "Teradata icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-general-project-configurable",
   "type": "registry:ui",
   "title": "Project Configurable",
-  "description": "Project Configurable icon from General General category.",
+  "description": "Project Configurable icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "project-configurable",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

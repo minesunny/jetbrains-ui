@@ -3,7 +3,7 @@
   "name": "icons-database-redshift",
   "type": "registry:ui",
   "title": "Redshift",
-  "description": "Redshift icon from Database category.",
+  "description": "Redshift icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

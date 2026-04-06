@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-statistics-event-log",
   "type": "registry:ui",
   "title": "Statistics Event Log",
-  "description": "Statistics Event Log icon from General Tool Windows category.",
+  "description": "Statistics Event Log icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "statistics-event-log",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-general-windows-collapse",
   "type": "registry:ui",
   "title": "Collapse",
-  "description": "Collapse icon from General Windows category.",
+  "description": "Collapse icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "collapse",
       "icon",
       "general",
-      "windows",
       "jetbrains"
     ]
   }

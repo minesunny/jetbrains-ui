@@ -3,7 +3,7 @@
   "name": "icons-general-windows-restore-inactive",
   "type": "registry:ui",
   "title": "Restore Inactive",
-  "description": "Restore Inactive icon from General Windows category.",
+  "description": "Restore Inactive icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "restore-inactive",
       "icon",
       "general",
-      "windows",
       "jetbrains"
     ]
   }

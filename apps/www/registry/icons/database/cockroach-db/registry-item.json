@@ -3,7 +3,7 @@
   "name": "icons-database-cockroach-db",
   "type": "registry:ui",
   "title": "Cockroach Db",
-  "description": "Cockroach Db icon from Database category.",
+  "description": "Cockroach Db icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

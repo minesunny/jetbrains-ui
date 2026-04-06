@@ -3,7 +3,7 @@
   "name": "icons-general-object-browser-abbreviate-package-names",
   "type": "registry:ui",
   "title": "Abbreviate Package Names",
-  "description": "Abbreviate Package Names icon from General Object Browser category.",
+  "description": "Abbreviate Package Names icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "abbreviate-package-names",
       "icon",
       "general",
-      "object-browser",
       "jetbrains"
     ]
   }

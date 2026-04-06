@@ -3,7 +3,7 @@
   "name": "icons-file-types-java-class",
   "type": "registry:ui",
   "title": "Java Class",
-  "description": "Java Class icon from File Types category.",
+  "description": "Java Class icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

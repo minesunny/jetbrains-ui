@@ -3,7 +3,7 @@
   "name": "icons-general-actions-deploy",
   "type": "registry:ui",
   "title": "Deploy",
-  "description": "Deploy icon from General Actions category.",
+  "description": "Deploy icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "deploy",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

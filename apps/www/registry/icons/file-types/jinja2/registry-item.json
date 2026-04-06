@@ -3,7 +3,7 @@
   "name": "icons-file-types-jinja2",
   "type": "registry:ui",
   "title": "Jinja2",
-  "description": "Jinja2 icon from File Types category.",
+  "description": "Jinja2 icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

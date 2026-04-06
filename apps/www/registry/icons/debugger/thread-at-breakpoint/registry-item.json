@@ -3,7 +3,7 @@
   "name": "icons-debugger-thread-at-breakpoint",
   "type": "registry:ui",
   "title": "Thread At Breakpoint",
-  "description": "Thread At Breakpoint icon from Debugger category.",
+  "description": "Thread At Breakpoint icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

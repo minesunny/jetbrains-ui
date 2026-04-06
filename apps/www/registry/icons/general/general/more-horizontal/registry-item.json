@@ -3,7 +3,7 @@
   "name": "icons-general-general-more-horizontal",
   "type": "registry:ui",
   "title": "More Horizontal",
-  "description": "More Horizontal icon from General General category.",
+  "description": "More Horizontal icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "more-horizontal",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -3,7 +3,7 @@
   "name": "icons-file-types-archive",
   "type": "registry:ui",
   "title": "Archive",
-  "description": "Archive icon from File Types category.",
+  "description": "Archive icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

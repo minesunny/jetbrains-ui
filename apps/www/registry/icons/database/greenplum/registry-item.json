@@ -3,7 +3,7 @@
   "name": "icons-database-greenplum",
   "type": "registry:ui",
   "title": "Greenplum",
-  "description": "Greenplum icon from Database category.",
+  "description": "Greenplum icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

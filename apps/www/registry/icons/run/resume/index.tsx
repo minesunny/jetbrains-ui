@@ -23,11 +23,11 @@ const ResumeLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="1.5"
-      y="2.5"
-      width="3"
-      height="11"
-      rx=".5"
+      x={1.5}
+      y={2.5}
+      width={3}
+      height={11}
+      rx={0.5}
       fill="#F2FCF3"
       stroke="#208A3C"
     />
@@ -58,11 +58,11 @@ const ResumeDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="1.5"
-      y="2.5"
-      width="3"
-      height="11"
-      rx=".5"
+      x={1.5}
+      y={2.5}
+      width={3}
+      height={11}
+      rx={0.5}
       fill="#253627"
       stroke="#57965C"
     />

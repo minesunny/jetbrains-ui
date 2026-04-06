@@ -3,7 +3,7 @@
   "name": "icons-database-spark",
   "type": "registry:ui",
   "title": "Spark",
-  "description": "Spark icon from Database category.",
+  "description": "Spark icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-editor-right-align",
   "type": "registry:ui",
   "title": "Right Align",
-  "description": "Right Align icon from General Editor category.",
+  "description": "Right Align icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "right-align",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

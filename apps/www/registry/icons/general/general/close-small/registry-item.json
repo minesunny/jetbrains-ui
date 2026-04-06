@@ -3,7 +3,7 @@
   "name": "icons-general-general-close-small",
   "type": "registry:ui",
   "title": "Close Small",
-  "description": "Close Small icon from General General category.",
+  "description": "Close Small icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "close-small",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

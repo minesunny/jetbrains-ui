@@ -29,14 +29,14 @@ const DownloadLight: FC<SvgProps> = ({
       fill="#6C707E"
     />
     <rect
-      width="12"
-      height="1"
-      rx=".5"
+      width={12}
+      height={1}
+      rx={0.5}
       transform="matrix(1 0 0 -1 2 14)"
       fill="#6C707E"
     />
-    <rect x="2" y="10" width="1" height="4" rx=".5" fill="#6C707E" />
-    <rect x="13" y="10" width="1" height="4" rx=".5" fill="#6C707E" />
+    <rect x={2} y={10} width={1} height={4} rx={0.5} fill="#6C707E" />
+    <rect x={13} y={10} width={1} height={4} rx={0.5} fill="#6C707E" />
   </svg>
 );
 
@@ -65,14 +65,14 @@ const DownloadDark: FC<SvgProps> = ({
       fill="#CED0D6"
     />
     <rect
-      width="12"
-      height="1"
-      rx=".5"
+      width={12}
+      height={1}
+      rx={0.5}
       transform="matrix(1 0 0 -1 2 14)"
       fill="#CED0D6"
     />
-    <rect x="2" y="10" width="1" height="4" rx=".5" fill="#CED0D6" />
-    <rect x="13" y="10" width="1" height="4" rx=".5" fill="#CED0D6" />
+    <rect x={2} y={10} width={1} height={4} rx={0.5} fill="#CED0D6" />
+    <rect x={13} y={10} width={1} height={4} rx={0.5} fill="#CED0D6" />
   </svg>
 );
 

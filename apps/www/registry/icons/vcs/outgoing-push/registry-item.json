@@ -3,7 +3,7 @@
   "name": "icons-vcs-outgoing-push",
   "type": "registry:ui",
   "title": "Outgoing Push",
-  "description": "Outgoing Push icon from Vcs category.",
+  "description": "Outgoing Push icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

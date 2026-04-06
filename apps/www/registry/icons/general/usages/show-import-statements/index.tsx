@@ -22,10 +22,10 @@ const ShowImportStatementsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="7" y="2" width="2" height="2" rx="1" fill="#6C707E" />
-    <rect x="8" y="6" width="1" height="8" rx=".5" fill="#6C707E" />
-    <rect x="5" y="6" width="4" height="1" rx=".5" fill="#6C707E" />
-    <rect x="4" y="13" width="8" height="1" rx=".5" fill="#6C707E" />
+    <rect x={7} y={2} width={2} height={2} rx={1} fill="#6C707E" />
+    <rect x={8} y={6} width={1} height={8} rx={0.5} fill="#6C707E" />
+    <rect x={5} y={6} width={4} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={4} y={13} width={8} height={1} rx={0.5} fill="#6C707E" />
   </svg>
 );
 
@@ -47,10 +47,10 @@ const ShowImportStatementsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="7" y="2" width="2" height="2" rx="1" fill="#CED0D6" />
-    <rect x="8" y="6" width="1" height="8" rx=".5" fill="#CED0D6" />
-    <rect x="5" y="6" width="4" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="4" y="13" width="8" height="1" rx=".5" fill="#CED0D6" />
+    <rect x={7} y={2} width={2} height={2} rx={1} fill="#CED0D6" />
+    <rect x={8} y={6} width={1} height={8} rx={0.5} fill="#CED0D6" />
+    <rect x={5} y={6} width={4} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={4} y={13} width={8} height={1} rx={0.5} fill="#CED0D6" />
   </svg>
 );
 

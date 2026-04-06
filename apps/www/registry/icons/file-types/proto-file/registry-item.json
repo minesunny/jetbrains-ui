@@ -3,7 +3,7 @@
   "name": "icons-file-types-proto-file",
   "type": "registry:ui",
   "title": "Proto File",
-  "description": "Proto File icon from File Types category.",
+  "description": "Proto File icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

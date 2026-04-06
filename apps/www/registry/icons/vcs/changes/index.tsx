@@ -22,9 +22,9 @@ const ChangesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="5" width="7" height="1" rx=".5" fill="#6C707E" />
-    <rect x="2" y="8" width="5" height="1" rx=".5" fill="#6C707E" />
-    <rect x="2" y="2" width="12" height="1" rx=".5" fill="#6C707E" />
+    <rect x={2} y={5} width={7} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={2} y={8} width={5} height={1} rx={0.5} fill="#6C707E" />
+    <rect x={2} y={2} width={12} height={1} rx={0.5} fill="#6C707E" />
     <path
       d="m8.5 14.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
       stroke="#3574F0"
@@ -52,9 +52,9 @@ const ChangesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2" y="5" width="7" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="2" y="8" width="5" height="1" rx=".5" fill="#CED0D6" />
-    <rect x="2" y="2" width="12" height="1" rx=".5" fill="#CED0D6" />
+    <rect x={2} y={5} width={7} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={2} y={8} width={5} height={1} rx={0.5} fill="#CED0D6" />
+    <rect x={2} y={2} width={12} height={1} rx={0.5} fill="#CED0D6" />
     <path
       d="m8.5 14.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
       stroke="#548AF7"

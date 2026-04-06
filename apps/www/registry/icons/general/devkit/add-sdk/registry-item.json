@@ -3,7 +3,7 @@
   "name": "icons-general-devkit-add-sdk",
   "type": "registry:ui",
   "title": "Add Sdk",
-  "description": "Add Sdk icon from General Devkit category.",
+  "description": "Add Sdk icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "add-sdk",
       "icon",
       "general",
-      "devkit",
       "jetbrains"
     ]
   }

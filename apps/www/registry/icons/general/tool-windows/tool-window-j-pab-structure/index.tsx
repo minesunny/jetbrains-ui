@@ -36,7 +36,7 @@ const ToolWindowJPabStructureLight: FC<SvgProps> = ({
         stroke="#6C707E"
         strokeLinecap="round"
       />
-      <circle cx="9.5" cy="5.5" r=".5" fill="#6C707E" />
+      <circle cx={9.5} cy={5.5} r={0.5} fill="#6C707E" />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -84,7 +84,7 @@ const ToolWindowJPabStructureDark: FC<SvgProps> = ({
         stroke="#CED0D6"
         strokeLinecap="round"
       />
-      <circle cx="9.5" cy="5.5" r=".5" fill="#CED0D6" />
+      <circle cx={9.5} cy={5.5} r={0.5} fill="#CED0D6" />
       <path
         fillRule="evenodd"
         clipRule="evenodd"

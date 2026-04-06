@@ -3,7 +3,7 @@
   "name": "icons-nodes-method-abstract",
   "type": "registry:ui",
   "title": "Method Abstract",
-  "description": "Method Abstract icon from Nodes category.",
+  "description": "Method Abstract icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

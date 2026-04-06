@@ -22,19 +22,19 @@ const ProblemsLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" stroke="#6C707E" />
+    <circle cx={8} cy={8} r={6.5} stroke="#6C707E" />
     <circle
-      cx="8.001"
-      cy="10.7"
-      r=".5"
+      cx={8.001}
+      cy={10.7}
+      r={0.5}
       fill="#6C707E"
       stroke="#6C707E"
-      strokeWidth=".4"
+      strokeWidth={0.4}
     />
     <path
       d="M8 4.6v3.8"
       stroke="#6C707E"
-      strokeWidth="1.2"
+      strokeWidth={1.2}
       strokeLinecap="round"
     />
   </svg>
@@ -58,19 +58,19 @@ const ProblemsDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" stroke="#CED0D6" />
+    <circle cx={8} cy={8} r={6.5} stroke="#CED0D6" />
     <circle
-      cx="8.001"
-      cy="10.7"
-      r=".5"
+      cx={8.001}
+      cy={10.7}
+      r={0.5}
       fill="#CED0D6"
       stroke="#CED0D6"
-      strokeWidth=".4"
+      strokeWidth={0.4}
     />
     <path
       d="M8 4.6v3.8"
       stroke="#CED0D6"
-      strokeWidth="1.2"
+      strokeWidth={1.2}
       strokeLinecap="round"
     />
   </svg>

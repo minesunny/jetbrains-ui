@@ -22,7 +22,7 @@ const TerminalLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" stroke="#6C707E" />
+    <rect x={1.5} y={2.5} width={13} height={11} rx={1.5} stroke="#6C707E" />
     <path
       d="M7.5 10.5h3M4.48 9.48 6.46 7.5 4.48 5.52"
       stroke="#6C707E"
@@ -49,7 +49,7 @@ const TerminalDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="1.5" y="2.5" width="13" height="11" rx="1.5" stroke="#CED0D6" />
+    <rect x={1.5} y={2.5} width={13} height={11} rx={1.5} stroke="#CED0D6" />
     <path
       d="M7.5 10.5h3M4.48 9.48 6.46 7.5 4.48 5.52"
       stroke="#CED0D6"

@@ -3,7 +3,7 @@
   "name": "icons-file-types-vue-js",
   "type": "registry:ui",
   "title": "Vue Js",
-  "description": "Vue Js icon from File Types category.",
+  "description": "Vue Js icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

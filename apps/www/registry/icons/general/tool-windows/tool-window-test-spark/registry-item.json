@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-test-spark",
   "type": "registry:ui",
   "title": "Tool Window Test Spark",
-  "description": "Tool Window Test Spark icon from General Tool Windows category.",
+  "description": "Tool Window Test Spark icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-test-spark",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

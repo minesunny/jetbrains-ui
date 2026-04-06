@@ -3,7 +3,7 @@
   "name": "icons-debugger-db-array",
   "type": "registry:ui",
   "title": "Db Array",
-  "description": "Db Array icon from Debugger category.",
+  "description": "Db Array icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

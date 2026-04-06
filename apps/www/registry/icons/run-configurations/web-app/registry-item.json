@@ -3,7 +3,7 @@
   "name": "icons-run-configurations-web-app",
   "type": "registry:ui",
   "title": "Web App",
-  "description": "Web App icon from Run Configurations category.",
+  "description": "Web App icon from run-configurations category.",
   "registryDependencies": [
     "icons-run-configurations-types"
   ],

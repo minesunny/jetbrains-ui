@@ -3,7 +3,7 @@
   "name": "icons-database-pin-selected",
   "type": "registry:ui",
   "title": "Pin Selected",
-  "description": "Pin Selected icon from Database category.",
+  "description": "Pin Selected icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

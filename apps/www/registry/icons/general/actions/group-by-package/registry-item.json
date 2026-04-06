@@ -3,7 +3,7 @@
   "name": "icons-general-actions-group-by-package",
   "type": "registry:ui",
   "title": "Group By Package",
-  "description": "Group By Package icon from General Actions category.",
+  "description": "Group By Package icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "group-by-package",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

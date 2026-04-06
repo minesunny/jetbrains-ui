@@ -3,7 +3,7 @@
   "name": "icons-database-editor-output",
   "type": "registry:ui",
   "title": "Editor Output",
-  "description": "Editor Output icon from Database category.",
+  "description": "Editor Output icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

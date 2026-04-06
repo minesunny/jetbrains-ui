@@ -3,7 +3,7 @@
   "name": "icons-file-types-num-py",
   "type": "registry:ui",
   "title": "Num Py",
-  "description": "Num Py icon from File Types category.",
+  "description": "Num Py icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

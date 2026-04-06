@@ -3,7 +3,7 @@
   "name": "icons-run-restart",
   "type": "registry:ui",
   "title": "Restart",
-  "description": "Restart icon from Run category.",
+  "description": "Restart icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

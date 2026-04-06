@@ -3,7 +3,7 @@
   "name": "icons-database-scroll-up",
   "type": "registry:ui",
   "title": "Scroll Up",
-  "description": "Scroll Up icon from Database category.",
+  "description": "Scroll Up icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-general-class-hierarchy",
   "type": "registry:ui",
   "title": "Class Hierarchy",
-  "description": "Class Hierarchy icon from General General category.",
+  "description": "Class Hierarchy icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "class-hierarchy",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

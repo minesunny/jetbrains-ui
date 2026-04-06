@@ -3,7 +3,7 @@
   "name": "icons-database-single-record-view",
   "type": "registry:ui",
   "title": "Single Record View",
-  "description": "Single Record View icon from Database category.",
+  "description": "Single Record View icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

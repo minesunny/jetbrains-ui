@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-bean-validator",
   "type": "registry:ui",
   "title": "Tool Window Bean Validator",
-  "description": "Tool Window Bean Validator icon from General Tool Windows category.",
+  "description": "Tool Window Bean Validator icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-bean-validator",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

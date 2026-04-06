@@ -3,7 +3,7 @@
   "name": "icons-general-duplicates-send-to-the-right-grayed",
   "type": "registry:ui",
   "title": "Send To The Right Grayed",
-  "description": "Send To The Right Grayed icon from General Duplicates category.",
+  "description": "Send To The Right Grayed icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "send-to-the-right-grayed",
       "icon",
       "general",
-      "duplicates",
       "jetbrains"
     ]
   }

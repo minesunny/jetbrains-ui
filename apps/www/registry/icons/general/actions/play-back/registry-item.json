@@ -3,7 +3,7 @@
   "name": "icons-general-actions-play-back",
   "type": "registry:ui",
   "title": "Play Back",
-  "description": "Play Back icon from General Actions category.",
+  "description": "Play Back icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "play-back",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

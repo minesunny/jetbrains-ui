@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-run-error",
   "type": "registry:ui",
   "title": "Run Error",
-  "description": "Run Error icon from Editor Icons category.",
+  "description": "Run Error icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-modifiers-locked",
   "type": "registry:ui",
   "title": "Locked",
-  "description": "Locked icon from General Modifiers category.",
+  "description": "Locked icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "locked",
       "icon",
       "general",
-      "modifiers",
       "jetbrains"
     ]
   }

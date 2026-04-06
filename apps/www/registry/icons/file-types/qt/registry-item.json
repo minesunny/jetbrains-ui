@@ -3,7 +3,7 @@
   "name": "icons-file-types-qt",
   "type": "registry:ui",
   "title": "Qt",
-  "description": "Qt icon from File Types category.",
+  "description": "Qt icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-database-foreign-partion-table",
   "type": "registry:ui",
   "title": "Foreign Partion Table",
-  "description": "Foreign Partion Table icon from Database category.",
+  "description": "Foreign Partion Table icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

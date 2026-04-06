@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-sharp",
   "type": "registry:ui",
   "title": "Sharp",
-  "description": "Sharp icon from Editor Icons category.",
+  "description": "Sharp icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

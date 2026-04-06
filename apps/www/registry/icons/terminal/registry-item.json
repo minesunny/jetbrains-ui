@@ -33,13 +33,5 @@
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/terminal/other/index.tsx"
     }
-  ],
-  "meta": {
-    "keywords": [
-      "icons",
-      "terminal",
-      "jetbrains",
-      "icon-pack"
-    ]
-  }
+  ]
 }

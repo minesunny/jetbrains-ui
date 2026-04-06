@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-rec",
   "type": "registry:ui",
   "title": "Rec",
-  "description": "Rec icon from Editor Icons category.",
+  "description": "Rec icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

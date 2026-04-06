@@ -3,7 +3,7 @@
   "name": "icons-run-kill-process",
   "type": "registry:ui",
   "title": "Kill Process",
-  "description": "Kill Process icon from Run category.",
+  "description": "Kill Process icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

@@ -22,7 +22,7 @@ const ExceptionLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#FFFAEB" stroke="#C27D04" />
+    <circle cx={8} cy={8} r={6.5} fill="#FFFAEB" stroke="#C27D04" />
     <path d="M9 4.5 6 8h4l-3 3.5" stroke="#C27D04" strokeLinecap="round" />
   </svg>
 );
@@ -45,7 +45,7 @@ const ExceptionDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#3D3223" stroke="#D6AE58" />
+    <circle cx={8} cy={8} r={6.5} fill="#3D3223" stroke="#D6AE58" />
     <path d="M9 4.5 6 8h4l-3 3.5" stroke="#D6AE58" strokeLinecap="round" />
   </svg>
 );

@@ -3,7 +3,7 @@
   "name": "icons-general-general-sort-by-visibility",
   "type": "registry:ui",
   "title": "Sort By Visibility",
-  "description": "Sort By Visibility icon from General General category.",
+  "description": "Sort By Visibility icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "sort-by-visibility",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

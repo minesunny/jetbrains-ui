@@ -3,7 +3,7 @@
   "name": "icons-general-actions-toggle-visibility",
   "type": "registry:ui",
   "title": "Toggle Visibility",
-  "description": "Toggle Visibility icon from General Actions category.",
+  "description": "Toggle Visibility icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "toggle-visibility",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

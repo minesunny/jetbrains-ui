@@ -3,7 +3,7 @@
   "name": "icons-file-types-protobuf",
   "type": "registry:ui",
   "title": "Protobuf",
-  "description": "Protobuf icon from File Types category.",
+  "description": "Protobuf icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-run-run-to-cursor",
   "type": "registry:ui",
   "title": "Run To Cursor",
-  "description": "Run To Cursor icon from Run category.",
+  "description": "Run To Cursor icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

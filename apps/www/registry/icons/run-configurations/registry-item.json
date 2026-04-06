@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icons-run-configurations",
   "type": "registry:ui",
-  "title": "Run Configurations Icons",
-  "description": "All 15 icons from the Run Configurations category.",
+  "title": "RunConfigurations Icons",
+  "description": "All 15 icons from the RunConfigurations category.",
   "registryDependencies": [
     "icons-run-configurations-types"
   ],
@@ -88,13 +88,5 @@
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/run-configurations/web-app/index.tsx"
     }
-  ],
-  "meta": {
-    "keywords": [
-      "icons",
-      "run-configurations",
-      "jetbrains",
-      "icon-pack"
-    ]
-  }
+  ]
 }

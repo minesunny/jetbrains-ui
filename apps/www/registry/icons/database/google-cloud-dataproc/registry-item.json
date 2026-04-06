@@ -3,7 +3,7 @@
   "name": "icons-database-google-cloud-dataproc",
   "type": "registry:ui",
   "title": "Google Cloud Dataproc",
-  "description": "Google Cloud Dataproc icon from Database category.",
+  "description": "Google Cloud Dataproc icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

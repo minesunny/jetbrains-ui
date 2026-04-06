@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-kubernetes",
   "type": "registry:ui",
   "title": "Tool Window Kubernetes",
-  "description": "Tool Window Kubernetes icon from General Tool Windows category.",
+  "description": "Tool Window Kubernetes icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-kubernetes",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-cypress",
   "type": "registry:ui",
   "title": "Cypress",
-  "description": "Cypress icon from General Tool Windows category.",
+  "description": "Cypress icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "cypress",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

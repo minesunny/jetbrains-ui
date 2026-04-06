@@ -3,7 +3,7 @@
   "name": "icons-general-actions-play-forward",
   "type": "registry:ui",
   "title": "Play Forward",
-  "description": "Play Forward icon from General Actions category.",
+  "description": "Play Forward icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "play-forward",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

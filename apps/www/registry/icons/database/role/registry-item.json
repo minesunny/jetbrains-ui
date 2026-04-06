@@ -3,7 +3,7 @@
   "name": "icons-database-role",
   "type": "registry:ui",
   "title": "Role",
-  "description": "Role icon from Database category.",
+  "description": "Role icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

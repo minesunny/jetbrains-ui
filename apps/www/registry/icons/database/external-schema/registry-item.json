@@ -3,7 +3,7 @@
   "name": "icons-database-external-schema",
   "type": "registry:ui",
   "title": "External Schema",
-  "description": "External Schema icon from Database category.",
+  "description": "External Schema icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

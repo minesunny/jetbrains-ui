@@ -27,7 +27,7 @@ const GroupByClassLight: FC<SvgProps> = ({
       stroke="#6C707E"
       strokeLinecap="round"
     />
-    <circle cx="8" cy="8" r="4.5" fill="#EDF3FF" stroke="#3574F0" />
+    <circle cx={8} cy={8} r={4.5} fill="#EDF3FF" stroke="#3574F0" />
     <path
       d="M6.5 8a1.5 1.5 0 0 1 2.618-1h1.174a2.5 2.5 0 1 0 0 2H9.118A1.5 1.5 0 0 1 6.5 8"
       fill="#3574F0"
@@ -58,7 +58,7 @@ const GroupByClassDark: FC<SvgProps> = ({
       stroke="#CED0D6"
       strokeLinecap="round"
     />
-    <circle cx="8" cy="8" r="4.5" fill="#25324D" stroke="#548AF7" />
+    <circle cx={8} cy={8} r={4.5} fill="#25324D" stroke="#548AF7" />
     <path
       d="M6.5 8a1.5 1.5 0 0 1 2.618-1h1.174a2.5 2.5 0 1 0 0 2H9.118A1.5 1.5 0 0 1 6.5 8"
       fill="#548AF7"

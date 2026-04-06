@@ -23,15 +23,15 @@ const IdeaModuleLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#EBECF0"
       stroke="#6C707E"
     />
-    <rect x="5" y="10" width="4" height="1" rx=".5" fill="#6C707E" />
+    <rect x={5} y={10} width={4} height={1} rx={0.5} fill="#6C707E" />
   </svg>
 );
 
@@ -54,15 +54,15 @@ const IdeaModuleDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="2.5"
-      y="2.5"
-      width="11"
-      height="11"
-      rx="1.5"
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       fill="#43454A"
       stroke="#CED0D6"
     />
-    <rect x="5" y="10" width="4" height="1" rx=".5" fill="#CED0D6" />
+    <rect x={5} y={10} width={4} height={1} rx={0.5} fill="#CED0D6" />
   </svg>
 );
 

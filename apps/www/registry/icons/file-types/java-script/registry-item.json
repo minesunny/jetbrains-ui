@@ -3,7 +3,7 @@
   "name": "icons-file-types-java-script",
   "type": "registry:ui",
   "title": "Java Script",
-  "description": "Java Script icon from File Types category.",
+  "description": "Java Script icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-general-chevron-down-hovered",
   "type": "registry:ui",
   "title": "Chevron Down Hovered",
-  "description": "Chevron Down Hovered icon from General General category.",
+  "description": "Chevron Down Hovered icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "chevron-down-hovered",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

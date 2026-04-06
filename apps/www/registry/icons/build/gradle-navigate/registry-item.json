@@ -3,7 +3,7 @@
   "name": "icons-build-gradle-navigate",
   "type": "registry:ui",
   "title": "Gradle Navigate",
-  "description": "Gradle Navigate icon from Build category.",
+  "description": "Gradle Navigate icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

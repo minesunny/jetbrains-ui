@@ -3,7 +3,7 @@
   "name": "icons-debugger-db-primitive",
   "type": "registry:ui",
   "title": "Db Primitive",
-  "description": "Db Primitive icon from Debugger category.",
+  "description": "Db Primitive icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

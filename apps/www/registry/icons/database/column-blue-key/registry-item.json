@@ -3,7 +3,7 @@
   "name": "icons-database-column-blue-key",
   "type": "registry:ui",
   "title": "Column Blue Key",
-  "description": "Column Blue Key icon from Database category.",
+  "description": "Column Blue Key icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

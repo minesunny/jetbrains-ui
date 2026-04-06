@@ -3,7 +3,7 @@
   "name": "icons-general-usages-show-import-statements",
   "type": "registry:ui",
   "title": "Show Import Statements",
-  "description": "Show Import Statements icon from General Usages category.",
+  "description": "Show Import Statements icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "show-import-statements",
       "icon",
       "general",
-      "usages",
       "jetbrains"
     ]
   }

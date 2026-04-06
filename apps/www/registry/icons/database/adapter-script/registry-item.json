@@ -3,7 +3,7 @@
   "name": "icons-database-adapter-script",
   "type": "registry:ui",
   "title": "Adapter Script",
-  "description": "Adapter Script icon from Database category.",
+  "description": "Adapter Script icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

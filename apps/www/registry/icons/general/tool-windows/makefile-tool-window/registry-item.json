@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-makefile-tool-window",
   "type": "registry:ui",
   "title": "Makefile Tool Window",
-  "description": "Makefile Tool Window icon from General Tool Windows category.",
+  "description": "Makefile Tool Window icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "makefile-tool-window",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

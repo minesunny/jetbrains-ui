@@ -3,7 +3,7 @@
   "name": "icons-general-new-ui-dark-theme-selected",
   "type": "registry:ui",
   "title": "Dark Theme Selected",
-  "description": "Dark Theme Selected icon from General New Ui category.",
+  "description": "Dark Theme Selected icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "dark-theme-selected",
       "icon",
       "general",
-      "new-ui",
       "jetbrains"
     ]
   }

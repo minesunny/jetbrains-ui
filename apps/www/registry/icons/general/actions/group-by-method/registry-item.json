@@ -3,7 +3,7 @@
   "name": "icons-general-actions-group-by-method",
   "type": "registry:ui",
   "title": "Group By Method",
-  "description": "Group By Method icon from General Actions category.",
+  "description": "Group By Method icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "group-by-method",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

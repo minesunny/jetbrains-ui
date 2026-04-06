@@ -3,7 +3,7 @@
   "name": "icons-database-ddl-dbms",
   "type": "registry:ui",
   "title": "Ddl Dbms",
-  "description": "Ddl Dbms icon from Database category.",
+  "description": "Ddl Dbms icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

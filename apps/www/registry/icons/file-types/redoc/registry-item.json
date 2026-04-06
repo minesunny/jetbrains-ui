@@ -3,7 +3,7 @@
   "name": "icons-file-types-redoc",
   "type": "registry:ui",
   "title": "Redoc",
-  "description": "Redoc icon from File Types category.",
+  "description": "Redoc icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

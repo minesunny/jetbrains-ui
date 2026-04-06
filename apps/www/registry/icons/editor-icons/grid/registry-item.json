@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-grid",
   "type": "registry:ui",
   "title": "Grid",
-  "description": "Grid icon from Editor Icons category.",
+  "description": "Grid icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

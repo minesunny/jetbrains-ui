@@ -3,7 +3,7 @@
   "name": "icons-general-actions-diff-with-clipboard",
   "type": "registry:ui",
   "title": "Diff With Clipboard",
-  "description": "Diff With Clipboard icon from General Actions category.",
+  "description": "Diff With Clipboard icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "diff-with-clipboard",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

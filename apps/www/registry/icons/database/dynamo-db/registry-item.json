@@ -3,7 +3,7 @@
   "name": "icons-database-dynamo-db",
   "type": "registry:ui",
   "title": "Dynamo Db",
-  "description": "Dynamo Db icon from Database category.",
+  "description": "Dynamo Db icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-ai-assistant-dislike",
   "type": "registry:ui",
   "title": "Dislike",
-  "description": "Dislike icon from General Ai Assistant category.",
+  "description": "Dislike icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "dislike",
       "icon",
       "general",
-      "ai-assistant",
       "jetbrains"
     ]
   }

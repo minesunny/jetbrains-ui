@@ -3,7 +3,7 @@
   "name": "icons-database-pin",
   "type": "registry:ui",
   "title": "Pin",
-  "description": "Pin icon from Database category.",
+  "description": "Pin icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

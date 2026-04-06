@@ -3,7 +3,7 @@
   "name": "icons-nodes-library",
   "type": "registry:ui",
   "title": "Library",
-  "description": "Library icon from Nodes category.",
+  "description": "Library icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

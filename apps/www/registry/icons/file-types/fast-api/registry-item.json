@@ -3,7 +3,7 @@
   "name": "icons-file-types-fast-api",
   "type": "registry:ui",
   "title": "Fast Api",
-  "description": "Fast Api icon from File Types category.",
+  "description": "Fast Api icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

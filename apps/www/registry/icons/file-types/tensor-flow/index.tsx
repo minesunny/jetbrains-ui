@@ -33,14 +33,14 @@ const TensorFlowLight: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="c"
-        x1="1"
-        y1="8"
-        x2="15"
-        y2="8"
+        x1={1}
+        y1={8}
+        x2={15}
+        y2={8}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF7200" />
-        <stop offset="1" stopColor="#FFA100" />
+        <stop offset={1} stopColor="#FFA100" />
       </linearGradient>
       <clipPath id="a">
         <path fill="#fff" d="M0 0H16V16H0z" />
@@ -81,14 +81,14 @@ const TensorFlowDark: FC<SvgProps> = ({
     <defs>
       <linearGradient
         id="c"
-        x1="1"
-        y1="8"
-        x2="15"
-        y2="8"
+        x1={1}
+        y1={8}
+        x2={15}
+        y2={8}
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#FF7200" />
-        <stop offset="1" stopColor="#FFA100" />
+        <stop offset={1} stopColor="#FFA100" />
       </linearGradient>
       <clipPath id="a">
         <path fill="#fff" d="M0 0H16V16H0z" />

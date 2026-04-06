@@ -3,7 +3,7 @@
   "name": "icons-database-user-driver",
   "type": "registry:ui",
   "title": "User Driver",
-  "description": "User Driver icon from Database category.",
+  "description": "User Driver icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

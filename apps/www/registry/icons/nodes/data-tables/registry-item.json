@@ -3,7 +3,7 @@
   "name": "icons-nodes-data-tables",
   "type": "registry:ui",
   "title": "Data Tables",
-  "description": "Data Tables icon from Nodes category.",
+  "description": "Data Tables icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-run-show-passed",
   "type": "registry:ui",
   "title": "Show Passed",
-  "description": "Show Passed icon from Run category.",
+  "description": "Show Passed icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

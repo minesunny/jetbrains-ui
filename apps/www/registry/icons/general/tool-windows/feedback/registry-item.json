@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-feedback",
   "type": "registry:ui",
   "title": "Feedback",
-  "description": "Feedback icon from General Tool Windows category.",
+  "description": "Feedback icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "feedback",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

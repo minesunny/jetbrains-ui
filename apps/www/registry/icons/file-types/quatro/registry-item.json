@@ -3,7 +3,7 @@
   "name": "icons-file-types-quatro",
   "type": "registry:ui",
   "title": "Quatro",
-  "description": "Quatro icon from File Types category.",
+  "description": "Quatro icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

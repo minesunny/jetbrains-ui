@@ -3,7 +3,7 @@
   "name": "icons-debugger-threads",
   "type": "registry:ui",
   "title": "Threads",
-  "description": "Threads icon from Debugger category.",
+  "description": "Threads icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

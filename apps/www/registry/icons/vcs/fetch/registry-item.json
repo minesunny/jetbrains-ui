@@ -3,7 +3,7 @@
   "name": "icons-vcs-fetch",
   "type": "registry:ui",
   "title": "Fetch",
-  "description": "Fetch icon from Vcs category.",
+  "description": "Fetch icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

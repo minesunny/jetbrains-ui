@@ -3,7 +3,7 @@
   "name": "icons-file-types-acync-api",
   "type": "registry:ui",
   "title": "Acync Api",
-  "description": "Acync Api icon from File Types category.",
+  "description": "Acync Api icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-database-index-cluster",
   "type": "registry:ui",
   "title": "Index Cluster",
-  "description": "Index Cluster icon from Database category.",
+  "description": "Index Cluster icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

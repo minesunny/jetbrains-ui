@@ -3,7 +3,7 @@
   "name": "icons-nodes-resource-bundle",
   "type": "registry:ui",
   "title": "Resource Bundle",
-  "description": "Resource Bundle icon from Nodes category.",
+  "description": "Resource Bundle icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

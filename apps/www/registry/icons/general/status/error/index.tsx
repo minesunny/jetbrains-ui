@@ -22,7 +22,7 @@ const ErrorLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="7" fill="#E55765" />
+    <circle cx={8} cy={8} r={7} fill="#E55765" />
     <path
       d="M9 5a1 1 0 0 0-2 0v2.5a1 1 0 1 0 2 0zM8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
       fill="#fff"
@@ -48,7 +48,7 @@ const ErrorDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="7" fill="#DB5C5C" />
+    <circle cx={8} cy={8} r={7} fill="#DB5C5C" />
     <path
       d="M9 5a1 1 0 0 0-2 0v2.5a1 1 0 1 0 2 0zM8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
       fill="#fff"

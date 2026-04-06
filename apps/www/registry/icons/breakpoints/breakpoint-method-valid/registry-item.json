@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-method-valid",
   "type": "registry:ui",
   "title": "Breakpoint Method Valid",
-  "description": "Breakpoint Method Valid icon from Breakpoints category.",
+  "description": "Breakpoint Method Valid icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

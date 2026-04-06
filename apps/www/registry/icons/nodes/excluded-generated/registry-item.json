@@ -3,7 +3,7 @@
   "name": "icons-nodes-excluded-generated",
   "type": "registry:ui",
   "title": "Excluded Generated",
-  "description": "Excluded Generated icon from Nodes category.",
+  "description": "Excluded Generated icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

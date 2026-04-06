@@ -3,7 +3,7 @@
   "name": "icons-database-apache-phoenix",
   "type": "registry:ui",
   "title": "Apache Phoenix",
-  "description": "Apache Phoenix icon from Database category.",
+  "description": "Apache Phoenix icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

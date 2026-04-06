@@ -3,7 +3,7 @@
   "name": "icons-general-general-close-small-hovered",
   "type": "registry:ui",
   "title": "Close Small Hovered",
-  "description": "Close Small Hovered icon from General General category.",
+  "description": "Close Small Hovered icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "close-small-hovered",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

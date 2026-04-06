@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-run-success",
   "type": "registry:ui",
   "title": "Run Success",
-  "description": "Run Success icon from Editor Icons category.",
+  "description": "Run Success icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

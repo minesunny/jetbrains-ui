@@ -3,7 +3,7 @@
   "name": "icons-database-scroll-down",
   "type": "registry:ui",
   "title": "Scroll Down",
-  "description": "Scroll Down icon from Database category.",
+  "description": "Scroll Down icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

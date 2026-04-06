@@ -3,7 +3,7 @@
   "name": "icons-run-configurations-php-remote",
   "type": "registry:ui",
   "title": "Php Remote",
-  "description": "Php Remote icon from Run Configurations category.",
+  "description": "Php Remote icon from run-configurations category.",
   "registryDependencies": [
     "icons-run-configurations-types"
   ],

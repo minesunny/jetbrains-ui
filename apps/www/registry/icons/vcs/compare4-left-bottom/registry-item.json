@@ -3,7 +3,7 @@
   "name": "icons-vcs-compare4-left-bottom",
   "type": "registry:ui",
   "title": "Compare4 Left Bottom",
-  "description": "Compare4 Left Bottom icon from Vcs category.",
+  "description": "Compare4 Left Bottom icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

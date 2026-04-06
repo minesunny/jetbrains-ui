@@ -3,7 +3,7 @@
   "name": "icons-general-general-scroll-down",
   "type": "registry:ui",
   "title": "Scroll Down",
-  "description": "Scroll Down icon from General General category.",
+  "description": "Scroll Down icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "scroll-down",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

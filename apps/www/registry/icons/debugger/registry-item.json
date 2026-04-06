@@ -103,13 +103,5 @@
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/debugger/watch-last-return-value/index.tsx"
     }
-  ],
-  "meta": {
-    "keywords": [
-      "icons",
-      "debugger",
-      "jetbrains",
-      "icon-pack"
-    ]
-  }
+  ]
 }

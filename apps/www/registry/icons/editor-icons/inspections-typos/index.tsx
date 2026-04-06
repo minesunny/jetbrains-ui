@@ -31,7 +31,7 @@ const InspectionsTyposLight: FC<SvgProps> = ({
     <path
       d="m3 7 3 3 6.5-6.5"
       stroke="#55A76A"
-      strokeWidth="2"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -65,7 +65,7 @@ const InspectionsTyposDark: FC<SvgProps> = ({
     <path
       d="m3 7 3 3 6.5-6.5"
       stroke="#57965C"
-      strokeWidth="2"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
     />

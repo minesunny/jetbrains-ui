@@ -3,7 +3,7 @@
   "name": "icons-general-actions-group-by-module",
   "type": "registry:ui",
   "title": "Group By Module",
-  "description": "Group By Module icon from General Actions category.",
+  "description": "Group By Module icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "group-by-module",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

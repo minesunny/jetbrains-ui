@@ -3,7 +3,7 @@
   "name": "icons-general-status-info",
   "type": "registry:ui",
   "title": "Info",
-  "description": "Info icon from General Status category.",
+  "description": "Info icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "info",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

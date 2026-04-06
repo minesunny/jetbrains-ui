@@ -3,7 +3,7 @@
   "name": "icons-database-hive-file-type",
   "type": "registry:ui",
   "title": "Hive File Type",
-  "description": "Hive File Type icon from Database category.",
+  "description": "Hive File Type icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-file-types-python",
   "type": "registry:ui",
   "title": "Python",
-  "description": "Python icon from File Types category.",
+  "description": "Python icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

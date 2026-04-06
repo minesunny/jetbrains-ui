@@ -3,7 +3,7 @@
   "name": "icons-general-general-help",
   "type": "registry:ui",
   "title": "Help",
-  "description": "Help icon from General General category.",
+  "description": "Help icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "help",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

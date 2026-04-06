@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-preview-only",
   "type": "registry:ui",
   "title": "Preview Only",
-  "description": "Preview Only icon from Editor Icons category.",
+  "description": "Preview Only icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

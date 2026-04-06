@@ -3,7 +3,7 @@
   "name": "icons-general-ai-assistant-feature-answer",
   "type": "registry:ui",
   "title": "Feature Answer",
-  "description": "Feature Answer icon from General Ai Assistant category.",
+  "description": "Feature Answer icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "feature-answer",
       "icon",
       "general",
-      "ai-assistant",
       "jetbrains"
     ]
   }

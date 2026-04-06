@@ -22,8 +22,8 @@ const TestIgnoredLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.25" stroke="#818594" strokeWidth="1.5" />
-    <path d="m3.5 12.5 9-9" stroke="#818594" strokeWidth="1.5" />
+    <circle cx={8} cy={8} r={6.25} stroke="#818594" strokeWidth={1.5} />
+    <path d="m3.5 12.5 9-9" stroke="#818594" strokeWidth={1.5} />
   </svg>
 );
 
@@ -45,8 +45,8 @@ const TestIgnoredDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.25" stroke="#CED0D6" strokeWidth="1.5" />
-    <path d="m3.5 12.5 9-9" stroke="#CED0D6" strokeWidth="1.5" />
+    <circle cx={8} cy={8} r={6.25} stroke="#CED0D6" strokeWidth={1.5} />
+    <path d="m3.5 12.5 9-9" stroke="#CED0D6" strokeWidth={1.5} />
   </svg>
 );
 

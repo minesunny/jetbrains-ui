@@ -3,7 +3,7 @@
   "name": "icons-file-types-amper",
   "type": "registry:ui",
   "title": "Amper",
-  "description": "Amper icon from File Types category.",
+  "description": "Amper icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

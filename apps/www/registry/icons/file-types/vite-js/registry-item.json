@@ -3,7 +3,7 @@
   "name": "icons-file-types-vite-js",
   "type": "registry:ui",
   "title": "Vite Js",
-  "description": "Vite Js icon from File Types category.",
+  "description": "Vite Js icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

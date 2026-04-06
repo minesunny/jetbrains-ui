@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-recursive-method",
   "type": "registry:ui",
   "title": "Recursive Method",
-  "description": "Recursive Method icon from Editor Icons category.",
+  "description": "Recursive Method icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

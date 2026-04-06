@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type InspectionsOKEmptyProps = SvgProps;
+export type SqlGroupByTypeProps = SvgProps;
 
-const InspectionsOKEmptyLight: FC<SvgProps> = ({
+const SqlGroupByTypeLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -23,16 +23,14 @@ const InspectionsOKEmptyLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path
-      clipRule="evenodd"
-      d="M13.202 5.146a.5.5 0 0 1 0 .708L6.5 12.556 2.842 8.847a.5.5 0 0 1-.004-.698l.805-.834a.5.5 0 0 1 .717-.003L6.5 9.5 11.646 4.3a.5.5 0 0 1 .71-.001z"
-      stroke="#369650"
+      d="M3.5 13.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1M12.5 13.5h1a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1h-1M4.5 8h7M4.5 10.5h7M4.5 5.5h7"
+      stroke="#6C707E"
       strokeLinecap="round"
-      strokeLinejoin="round"
     />
   </svg>
 );
 
-const InspectionsOKEmptyDark: FC<SvgProps> = ({
+const SqlGroupByTypeDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -51,16 +49,14 @@ const InspectionsOKEmptyDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path
-      clipRule="evenodd"
-      d="M13.202 5.146a.5.5 0 0 1 0 .708L6.5 12.556 2.842 8.847a.5.5 0 0 1-.004-.698l.805-.834a.5.5 0 0 1 .717-.003L6.5 9.5 11.646 4.3a.5.5 0 0 1 .71-.001z"
-      stroke="#57965C"
+      d="M3.5 13.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1M12.5 13.5h1a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1h-1M4.5 8h7M4.5 10.5h7M4.5 5.5h7"
+      stroke="#CED0D6"
       strokeLinecap="round"
-      strokeLinejoin="round"
     />
   </svg>
 );
 
-export const InspectionsOKEmpty: FC<InspectionsOKEmptyProps> = ({
+export const SqlGroupByType: FC<SqlGroupByTypeProps> = ({
   size = 'md',
   mode = 'light',
   className,
@@ -68,7 +64,7 @@ export const InspectionsOKEmpty: FC<InspectionsOKEmptyProps> = ({
   ...props
 }) => {
   const SvgComponent =
-    mode === 'light' ? InspectionsOKEmptyLight : InspectionsOKEmptyDark;
+    mode === 'light' ? SqlGroupByTypeLight : SqlGroupByTypeDark;
 
   return (
     <SvgComponent

@@ -3,7 +3,7 @@
   "name": "icons-vcs-add-emoji",
   "type": "registry:ui",
   "title": "Add Emoji",
-  "description": "Add Emoji icon from Vcs category.",
+  "description": "Add Emoji icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

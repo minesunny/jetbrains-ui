@@ -29,7 +29,7 @@ const UnselectAllLight: FC<SvgProps> = ({
     <path
       d="M4.75 8h6.5"
       stroke="#6C707E"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
     />
   </svg>
@@ -60,7 +60,7 @@ const UnselectAllDark: FC<SvgProps> = ({
     <path
       d="M4.75 8h6.5"
       stroke="#CED0D6"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
     />
   </svg>

@@ -22,7 +22,7 @@ const ScheduledEventLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" stroke="#6C707E" />
+    <circle cx={8} cy={8} r={6.5} stroke="#6C707E" />
     <path d="M12.472 8.5A4.5 4.5 0 0 1 8.5 12.47V8.5z" stroke="#6C707E" />
   </svg>
 );
@@ -45,7 +45,7 @@ const ScheduledEventDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" stroke="#CED0D6" />
+    <circle cx={8} cy={8} r={6.5} stroke="#CED0D6" />
     <path d="M12.472 8.5A4.5 4.5 0 0 1 8.5 12.47V8.5z" stroke="#CED0D6" />
   </svg>
 );

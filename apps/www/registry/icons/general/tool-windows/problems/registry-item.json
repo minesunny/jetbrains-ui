@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-problems",
   "type": "registry:ui",
   "title": "Problems",
-  "description": "Problems icon from General Tool Windows category.",
+  "description": "Problems icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "problems",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-lambda",
   "type": "registry:ui",
   "title": "Breakpoint Lambda",
-  "description": "Breakpoint Lambda icon from Breakpoints category.",
+  "description": "Breakpoint Lambda icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

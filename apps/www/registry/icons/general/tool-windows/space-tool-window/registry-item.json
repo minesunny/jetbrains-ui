@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-space-tool-window",
   "type": "registry:ui",
   "title": "Space Tool Window",
-  "description": "Space Tool Window icon from General Tool Windows category.",
+  "description": "Space Tool Window icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "space-tool-window",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

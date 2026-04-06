@@ -3,7 +3,7 @@
   "name": "icons-file-types-aspect-j",
   "type": "registry:ui",
   "title": "Aspect J",
-  "description": "Aspect J icon from File Types category.",
+  "description": "Aspect J icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

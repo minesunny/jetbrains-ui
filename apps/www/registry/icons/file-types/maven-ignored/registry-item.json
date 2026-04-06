@@ -3,7 +3,7 @@
   "name": "icons-file-types-maven-ignored",
   "type": "registry:ui",
   "title": "Maven Ignored",
-  "description": "Maven Ignored icon from File Types category.",
+  "description": "Maven Ignored icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

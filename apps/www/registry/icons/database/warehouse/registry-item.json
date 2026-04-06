@@ -3,7 +3,7 @@
   "name": "icons-database-warehouse",
   "type": "registry:ui",
   "title": "Warehouse",
-  "description": "Warehouse icon from Database category.",
+  "description": "Warehouse icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

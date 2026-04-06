@@ -3,7 +3,7 @@
   "name": "icons-database-oracle",
   "type": "registry:ui",
   "title": "Oracle",
-  "description": "Oracle icon from Database category.",
+  "description": "Oracle icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

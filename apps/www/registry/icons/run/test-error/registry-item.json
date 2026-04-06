@@ -3,7 +3,7 @@
   "name": "icons-run-test-error",
   "type": "registry:ui",
   "title": "Test Error",
-  "description": "Test Error icon from Run category.",
+  "description": "Test Error icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

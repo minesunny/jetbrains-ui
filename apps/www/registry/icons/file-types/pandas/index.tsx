@@ -22,14 +22,14 @@ const PandasLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="11" y="1" width="2" height="10" rx=".5" fill="#130754" />
-    <rect x="2" y="5" width="2" height="10" rx=".5" fill="#130754" />
-    <rect x="5" y="1" width="2" height="4" rx=".5" fill="#130754" />
-    <rect x="5" y="9" width="2" height="4" rx=".5" fill="#130754" />
-    <rect x="5" y="6" width="2" height="2" rx=".5" fill="#FFCA00" />
-    <rect x="8" y="3" width="2" height="4" rx=".5" fill="#130754" />
-    <rect x="8" y="8" width="2" height="2" rx=".5" fill="#E70488" />
-    <rect x="8" y="11" width="2" height="4" rx=".5" fill="#130754" />
+    <rect x={11} y={1} width={2} height={10} rx={0.5} fill="#130754" />
+    <rect x={2} y={5} width={2} height={10} rx={0.5} fill="#130754" />
+    <rect x={5} y={1} width={2} height={4} rx={0.5} fill="#130754" />
+    <rect x={5} y={9} width={2} height={4} rx={0.5} fill="#130754" />
+    <rect x={5} y={6} width={2} height={2} rx={0.5} fill="#FFCA00" />
+    <rect x={8} y={3} width={2} height={4} rx={0.5} fill="#130754" />
+    <rect x={8} y={8} width={2} height={2} rx={0.5} fill="#E70488" />
+    <rect x={8} y={11} width={2} height={4} rx={0.5} fill="#130754" />
   </svg>
 );
 
@@ -51,14 +51,14 @@ const PandasDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="11" y="1" width="2" height="10" rx=".5" fill="#fff" />
-    <rect x="2" y="5" width="2" height="10" rx=".5" fill="#fff" />
-    <rect x="5" y="1" width="2" height="4" rx=".5" fill="#fff" />
-    <rect x="5" y="9" width="2" height="4" rx=".5" fill="#fff" />
-    <rect x="5" y="6" width="2" height="2" rx=".5" fill="#FFCA00" />
-    <rect x="8" y="3" width="2" height="4" rx=".5" fill="#fff" />
-    <rect x="8" y="8" width="2" height="2" rx=".5" fill="#E70488" />
-    <rect x="8" y="11" width="2" height="4" rx=".5" fill="#fff" />
+    <rect x={11} y={1} width={2} height={10} rx={0.5} fill="#fff" />
+    <rect x={2} y={5} width={2} height={10} rx={0.5} fill="#fff" />
+    <rect x={5} y={1} width={2} height={4} rx={0.5} fill="#fff" />
+    <rect x={5} y={9} width={2} height={4} rx={0.5} fill="#fff" />
+    <rect x={5} y={6} width={2} height={2} rx={0.5} fill="#FFCA00" />
+    <rect x={8} y={3} width={2} height={4} rx={0.5} fill="#fff" />
+    <rect x={8} y={8} width={2} height={2} rx={0.5} fill="#E70488" />
+    <rect x={8} y={11} width={2} height={4} rx={0.5} fill="#fff" />
   </svg>
 );
 

@@ -3,7 +3,7 @@
   "name": "icons-general-status-information-dialog",
   "type": "registry:ui",
   "title": "Information Dialog",
-  "description": "Information Dialog icon from General Status category.",
+  "description": "Information Dialog icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "information-dialog",
       "icon",
       "general",
-      "status",
       "jetbrains"
     ]
   }

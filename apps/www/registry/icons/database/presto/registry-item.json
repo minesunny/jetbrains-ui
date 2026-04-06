@@ -3,7 +3,7 @@
   "name": "icons-database-presto",
   "type": "registry:ui",
   "title": "Presto",
-  "description": "Presto icon from Database category.",
+  "description": "Presto icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

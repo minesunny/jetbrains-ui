@@ -3,7 +3,7 @@
   "name": "icons-general-duplicates-send-to-the-right",
   "type": "registry:ui",
   "title": "Send To The Right",
-  "description": "Send To The Right icon from General Duplicates category.",
+  "description": "Send To The Right icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "send-to-the-right",
       "icon",
       "general",
-      "duplicates",
       "jetbrains"
     ]
   }

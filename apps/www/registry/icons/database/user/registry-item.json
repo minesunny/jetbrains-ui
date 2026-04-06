@@ -3,7 +3,7 @@
   "name": "icons-database-user",
   "type": "registry:ui",
   "title": "User",
-  "description": "User icon from Database category.",
+  "description": "User icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

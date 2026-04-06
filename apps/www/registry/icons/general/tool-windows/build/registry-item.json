@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-build",
   "type": "registry:ui",
   "title": "Build",
-  "description": "Build icon from General Tool Windows category.",
+  "description": "Build icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "build",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -22,19 +22,19 @@ const PrettierLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="3" y="2" width="8" height="1" rx=".5" fill="#588CF3" />
-    <rect x="3" y="4" width="5" height="1" rx=".5" fill="#588CF3" />
-    <rect x="3" y="6" width="3" height="1" rx=".5" fill="#834DF0" />
-    <rect x="9" y="4" width="4" height="1" rx=".5" fill="#834DF0" />
-    <rect x="10" y="6" width="4" height="1" rx=".5" fill="#C27D04" />
-    <rect x="9" y="8" width="4" height="1" rx=".5" fill="#588CF3" />
-    <rect x="3" y="8" width="3" height="1" rx=".5" fill="#DB3B4B" />
-    <rect x="7" y="8" width="1" height="1" rx=".5" fill="#C27D04" />
-    <rect x="3" y="12" width="2" height="1" rx=".5" fill="#588CF3" />
-    <rect x="6" y="12" width="1" height="1" rx=".5" fill="#834DF0" />
-    <rect x="3" y="14" width="4" height="1" rx=".5" fill="#DB3B4B" />
-    <rect x="5" y="10" width="6" height="1" rx=".5" fill="#C27D04" />
-    <rect x="3" y="10" width="1" height="1" rx=".5" fill="#834DF0" />
+    <rect x={3} y={2} width={8} height={1} rx={0.5} fill="#588CF3" />
+    <rect x={3} y={4} width={5} height={1} rx={0.5} fill="#588CF3" />
+    <rect x={3} y={6} width={3} height={1} rx={0.5} fill="#834DF0" />
+    <rect x={9} y={4} width={4} height={1} rx={0.5} fill="#834DF0" />
+    <rect x={10} y={6} width={4} height={1} rx={0.5} fill="#C27D04" />
+    <rect x={9} y={8} width={4} height={1} rx={0.5} fill="#588CF3" />
+    <rect x={3} y={8} width={3} height={1} rx={0.5} fill="#DB3B4B" />
+    <rect x={7} y={8} width={1} height={1} rx={0.5} fill="#C27D04" />
+    <rect x={3} y={12} width={2} height={1} rx={0.5} fill="#588CF3" />
+    <rect x={6} y={12} width={1} height={1} rx={0.5} fill="#834DF0" />
+    <rect x={3} y={14} width={4} height={1} rx={0.5} fill="#DB3B4B" />
+    <rect x={5} y={10} width={6} height={1} rx={0.5} fill="#C27D04" />
+    <rect x={3} y={10} width={1} height={1} rx={0.5} fill="#834DF0" />
   </svg>
 );
 
@@ -56,19 +56,19 @@ const PrettierDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="3" y="2" width="8" height="1" rx=".5" fill="#548AF7" />
-    <rect x="3" y="4" width="5" height="1" rx=".5" fill="#548AF7" />
-    <rect x="3" y="6" width="3" height="1" rx=".5" fill="#A571E6" />
-    <rect x="9" y="4" width="4" height="1" rx=".5" fill="#A571E6" />
-    <rect x="10" y="6" width="4" height="1" rx=".5" fill="#D6AE58" />
-    <rect x="9" y="8" width="4" height="1" rx=".5" fill="#548AF7" />
-    <rect x="3" y="8" width="3" height="1" rx=".5" fill="#DB5C5C" />
-    <rect x="7" y="8" width="1" height="1" rx=".5" fill="#D6AE58" />
-    <rect x="3" y="12" width="2" height="1" rx=".5" fill="#548AF7" />
-    <rect x="6" y="12" width="1" height="1" rx=".5" fill="#A571E6" />
-    <rect x="3" y="14" width="4" height="1" rx=".5" fill="#DB5C5C" />
-    <rect x="5" y="10" width="6" height="1" rx=".5" fill="#D6AE58" />
-    <rect x="3" y="10" width="1" height="1" rx=".5" fill="#A571E6" />
+    <rect x={3} y={2} width={8} height={1} rx={0.5} fill="#548AF7" />
+    <rect x={3} y={4} width={5} height={1} rx={0.5} fill="#548AF7" />
+    <rect x={3} y={6} width={3} height={1} rx={0.5} fill="#A571E6" />
+    <rect x={9} y={4} width={4} height={1} rx={0.5} fill="#A571E6" />
+    <rect x={10} y={6} width={4} height={1} rx={0.5} fill="#D6AE58" />
+    <rect x={9} y={8} width={4} height={1} rx={0.5} fill="#548AF7" />
+    <rect x={3} y={8} width={3} height={1} rx={0.5} fill="#DB5C5C" />
+    <rect x={7} y={8} width={1} height={1} rx={0.5} fill="#D6AE58" />
+    <rect x={3} y={12} width={2} height={1} rx={0.5} fill="#548AF7" />
+    <rect x={6} y={12} width={1} height={1} rx={0.5} fill="#A571E6" />
+    <rect x={3} y={14} width={4} height={1} rx={0.5} fill="#DB5C5C" />
+    <rect x={5} y={10} width={6} height={1} rx={0.5} fill="#D6AE58" />
+    <rect x={3} y={10} width={1} height={1} rx={0.5} fill="#A571E6" />
   </svg>
 );
 

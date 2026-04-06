@@ -3,7 +3,7 @@
   "name": "icons-database-yugabyte",
   "type": "registry:ui",
   "title": "Yugabyte",
-  "description": "Yugabyte icon from Database category.",
+  "description": "Yugabyte icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

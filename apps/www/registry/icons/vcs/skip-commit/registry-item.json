@@ -3,7 +3,7 @@
   "name": "icons-vcs-skip-commit",
   "type": "registry:ui",
   "title": "Skip Commit",
-  "description": "Skip Commit icon from Vcs category.",
+  "description": "Skip Commit icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

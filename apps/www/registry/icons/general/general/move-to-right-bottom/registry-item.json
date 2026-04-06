@@ -3,7 +3,7 @@
   "name": "icons-general-general-move-to-right-bottom",
   "type": "registry:ui",
   "title": "Move To Right Bottom",
-  "description": "Move To Right Bottom icon from General General category.",
+  "description": "Move To Right Bottom icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "move-to-right-bottom",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

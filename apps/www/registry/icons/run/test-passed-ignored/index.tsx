@@ -26,7 +26,7 @@ const TestPassedIgnoredLight: FC<SvgProps> = ({
       <path
         d="m3 7.5 3 3L12.5 4"
         stroke="#55A76A"
-        strokeWidth="2"
+        strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -68,7 +68,7 @@ const TestPassedIgnoredDark: FC<SvgProps> = ({
         <path
           d="m3 7.5 3 3L12.5 4"
           stroke="#55A76A"
-          strokeWidth="2"
+          strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
         />

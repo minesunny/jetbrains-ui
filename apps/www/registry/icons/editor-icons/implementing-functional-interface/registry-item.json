@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-implementing-functional-interface",
   "type": "registry:ui",
   "title": "Implementing Functional Interface",
-  "description": "Implementing Functional Interface icon from Editor Icons category.",
+  "description": "Implementing Functional Interface icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-database-text-auto-generate",
   "type": "registry:ui",
   "title": "Text Auto Generate",
-  "description": "Text Auto Generate icon from Database category.",
+  "description": "Text Auto Generate icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

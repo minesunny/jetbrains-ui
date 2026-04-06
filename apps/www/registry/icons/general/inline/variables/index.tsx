@@ -22,10 +22,10 @@ const VariablesLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2.5" y="1.5" width="11" height="13" rx="1.5" stroke="#A8ADBD" />
-    <rect x="5" y="5" width="6" height="1" rx=".5" fill="#A8ADBD" />
-    <rect x="5" y="7.5" width="6" height="1" rx=".5" fill="#A8ADBD" />
-    <rect x="5" y="10" width="6" height="1" rx=".5" fill="#A8ADBD" />
+    <rect x={2.5} y={1.5} width={11} height={13} rx={1.5} stroke="#A8ADBD" />
+    <rect x={5} y={5} width={6} height={1} rx={0.5} fill="#A8ADBD" />
+    <rect x={5} y={7.5} width={6} height={1} rx={0.5} fill="#A8ADBD" />
+    <rect x={5} y={10} width={6} height={1} rx={0.5} fill="#A8ADBD" />
   </svg>
 );
 
@@ -47,10 +47,10 @@ const VariablesDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="2.5" y="1.5" width="11" height="13" rx="1.5" stroke="#868A91" />
-    <rect x="5" y="5" width="6" height="1" rx=".5" fill="#868A91" />
-    <rect x="5" y="7.5" width="6" height="1" rx=".5" fill="#868A91" />
-    <rect x="5" y="10" width="6" height="1" rx=".5" fill="#868A91" />
+    <rect x={2.5} y={1.5} width={11} height={13} rx={1.5} stroke="#868A91" />
+    <rect x={5} y={5} width={6} height={1} rx={0.5} fill="#868A91" />
+    <rect x={5} y={7.5} width={6} height={1} rx={0.5} fill="#868A91" />
+    <rect x={5} y={10} width={6} height={1} rx={0.5} fill="#868A91" />
   </svg>
 );
 

@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-amazon-emr",
   "type": "registry:ui",
   "title": "Amazon Emr",
-  "description": "Amazon Emr icon from General Tool Windows category.",
+  "description": "Amazon Emr icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "amazon-emr",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

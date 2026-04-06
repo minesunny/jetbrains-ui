@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inspections-pause",
   "type": "registry:ui",
   "title": "Inspections Pause",
-  "description": "Inspections Pause icon from Editor Icons category.",
+  "description": "Inspections Pause icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

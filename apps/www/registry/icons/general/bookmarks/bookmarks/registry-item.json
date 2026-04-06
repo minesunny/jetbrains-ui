@@ -3,7 +3,7 @@
   "name": "icons-general-bookmarks-bookmarks",
   "type": "registry:ui",
   "title": "Bookmarks",
-  "description": "Bookmarks icon from General Bookmarks category.",
+  "description": "Bookmarks icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "bookmarks",
       "icon",
       "general",
-      "bookmarks",
       "jetbrains"
     ]
   }

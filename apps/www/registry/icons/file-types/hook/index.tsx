@@ -28,7 +28,7 @@ const HookLight: FC<SvgProps> = ({
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <circle cx="13.5" cy="2.5" r="1" stroke="#6C707E" />
+    <circle cx={13.5} cy={2.5} r={1} stroke="#6C707E" />
   </svg>
 );
 
@@ -56,7 +56,7 @@ const HookDark: FC<SvgProps> = ({
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <circle cx="13.5" cy="2.5" r="1" stroke="#CED0D6" />
+    <circle cx={13.5} cy={2.5} r={1} stroke="#CED0D6" />
   </svg>
 );
 

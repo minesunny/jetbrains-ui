@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-messages",
   "type": "registry:ui",
   "title": "Messages",
-  "description": "Messages icon from General Tool Windows category.",
+  "description": "Messages icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "messages",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

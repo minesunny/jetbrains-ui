@@ -28,7 +28,7 @@ const OpenInToolWindowLight: FC<SvgProps> = ({
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#6C707E" />
+    <rect x={2.5} y={2.5} width={11} height={11} rx={1.5} stroke="#6C707E" />
   </svg>
 );
 
@@ -56,7 +56,7 @@ const OpenInToolWindowDark: FC<SvgProps> = ({
       strokeLinecap="round"
       strokeLinejoin="round"
     />
-    <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#CED0D6" />
+    <rect x={2.5} y={2.5} width={11} height={11} rx={1.5} stroke="#CED0D6" />
   </svg>
 );
 

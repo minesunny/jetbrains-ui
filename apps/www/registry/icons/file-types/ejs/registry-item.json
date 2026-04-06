@@ -3,7 +3,7 @@
   "name": "icons-file-types-ejs",
   "type": "registry:ui",
   "title": "Ejs",
-  "description": "Ejs icon from File Types category.",
+  "description": "Ejs icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

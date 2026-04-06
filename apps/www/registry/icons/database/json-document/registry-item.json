@@ -3,7 +3,7 @@
   "name": "icons-database-json-document",
   "type": "registry:ui",
   "title": "Json Document",
-  "description": "Json Document icon from Database category.",
+  "description": "Json Document icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

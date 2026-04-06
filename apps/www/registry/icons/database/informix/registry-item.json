@@ -3,7 +3,7 @@
   "name": "icons-database-informix",
   "type": "registry:ui",
   "title": "Informix",
-  "description": "Informix icon from Database category.",
+  "description": "Informix icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

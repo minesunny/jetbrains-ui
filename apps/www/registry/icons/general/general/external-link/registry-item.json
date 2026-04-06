@@ -3,7 +3,7 @@
   "name": "icons-general-general-external-link",
   "type": "registry:ui",
   "title": "External Link",
-  "description": "External Link icon from General General category.",
+  "description": "External Link icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "external-link",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

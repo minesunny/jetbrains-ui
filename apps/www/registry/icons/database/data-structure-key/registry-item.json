@@ -3,7 +3,7 @@
   "name": "icons-database-data-structure-key",
   "type": "registry:ui",
   "title": "Data Structure Key",
-  "description": "Data Structure Key icon from Database category.",
+  "description": "Data Structure Key icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

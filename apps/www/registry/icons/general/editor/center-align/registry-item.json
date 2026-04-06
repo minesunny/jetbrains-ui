@@ -3,7 +3,7 @@
   "name": "icons-general-editor-center-align",
   "type": "registry:ui",
   "title": "Center Align",
-  "description": "Center Align icon from General Editor category.",
+  "description": "Center Align icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "center-align",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

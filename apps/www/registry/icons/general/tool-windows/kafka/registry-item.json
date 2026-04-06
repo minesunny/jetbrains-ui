@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-kafka",
   "type": "registry:ui",
   "title": "Kafka",
-  "description": "Kafka icon from General Tool Windows category.",
+  "description": "Kafka icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "kafka",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

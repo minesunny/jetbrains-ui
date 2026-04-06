@@ -3,7 +3,7 @@
   "name": "icons-general-ai-assistant-feature-comment",
   "type": "registry:ui",
   "title": "Feature Comment",
-  "description": "Feature Comment icon from General Ai Assistant category.",
+  "description": "Feature Comment icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "feature-comment",
       "icon",
       "general",
-      "ai-assistant",
       "jetbrains"
     ]
   }

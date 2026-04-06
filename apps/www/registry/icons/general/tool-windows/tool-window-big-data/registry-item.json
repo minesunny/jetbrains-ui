@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-big-data",
   "type": "registry:ui",
   "title": "Tool Window Big Data",
-  "description": "Tool Window Big Data icon from General Tool Windows category.",
+  "description": "Tool Window Big Data icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-big-data",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

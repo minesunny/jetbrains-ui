@@ -3,7 +3,7 @@
   "name": "icons-general-new-ui-light-theme-selected",
   "type": "registry:ui",
   "title": "Light Theme Selected",
-  "description": "Light Theme Selected icon from General New Ui category.",
+  "description": "Light Theme Selected icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "light-theme-selected",
       "icon",
       "general",
-      "new-ui",
       "jetbrains"
     ]
   }

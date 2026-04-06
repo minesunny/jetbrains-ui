@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type MongoDBProps = SvgProps;
+export type MongoDbProps = SvgProps;
 
-const MongoDBLight: FC<SvgProps> = ({
+const MongoDbLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -37,7 +37,7 @@ const MongoDBLight: FC<SvgProps> = ({
   </svg>
 );
 
-const MongoDBDark: FC<SvgProps> = ({
+const MongoDbDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -70,14 +70,14 @@ const MongoDBDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const MongoDB: FC<MongoDBProps> = ({
+export const MongoDb: FC<MongoDbProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? MongoDBLight : MongoDBDark;
+  const SvgComponent = mode === 'light' ? MongoDbLight : MongoDbDark;
 
   return (
     <SvgComponent

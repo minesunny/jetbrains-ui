@@ -3,7 +3,7 @@
   "name": "icons-file-types-shell",
   "type": "registry:ui",
   "title": "Shell",
-  "description": "Shell icon from File Types category.",
+  "description": "Shell icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

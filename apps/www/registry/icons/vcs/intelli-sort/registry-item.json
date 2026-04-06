@@ -3,7 +3,7 @@
   "name": "icons-vcs-intelli-sort",
   "type": "registry:ui",
   "title": "Intelli Sort",
-  "description": "Intelli Sort icon from Vcs category.",
+  "description": "Intelli Sort icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

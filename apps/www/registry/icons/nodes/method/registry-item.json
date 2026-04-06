@@ -3,7 +3,7 @@
   "name": "icons-nodes-method",
   "type": "registry:ui",
   "title": "Method",
-  "description": "Method icon from Nodes category.",
+  "description": "Method icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

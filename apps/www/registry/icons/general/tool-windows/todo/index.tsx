@@ -23,11 +23,11 @@ const TodoLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path d="M5.5 11.5h8" stroke="#6C707E" strokeLinecap="round" />
-    <ellipse cx="2.7" cy="11.5" rx=".7" ry=".7" fill="#6C707E" />
+    <ellipse cx={2.7} cy={11.5} rx={0.7} ry={0.7} fill="#6C707E" />
     <path d="M5.5 8h8" stroke="#6C707E" strokeLinecap="round" />
-    <ellipse cx="2.7" cy="8" rx=".7" ry=".7" fill="#6C707E" />
+    <ellipse cx={2.7} cy={8} rx={0.7} ry={0.7} fill="#6C707E" />
     <path d="M5.5 4.5h8" stroke="#6C707E" strokeLinecap="round" />
-    <ellipse cx="2.7" cy="4.5" rx=".7" ry=".7" fill="#6C707E" />
+    <ellipse cx={2.7} cy={4.5} rx={0.7} ry={0.7} fill="#6C707E" />
   </svg>
 );
 
@@ -50,11 +50,11 @@ const TodoDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <path d="M5.5 11.5h8" stroke="#CED0D6" strokeLinecap="round" />
-    <ellipse cx="2.7" cy="11.5" rx=".7" ry=".7" fill="#CED0D6" />
+    <ellipse cx={2.7} cy={11.5} rx={0.7} ry={0.7} fill="#CED0D6" />
     <path d="M5.5 8h8" stroke="#CED0D6" strokeLinecap="round" />
-    <ellipse cx="2.7" cy="8" rx=".7" ry=".7" fill="#CED0D6" />
+    <ellipse cx={2.7} cy={8} rx={0.7} ry={0.7} fill="#CED0D6" />
     <path d="M5.5 4.5h8" stroke="#CED0D6" strokeLinecap="round" />
-    <ellipse cx="2.7" cy="4.5" rx=".7" ry=".7" fill="#CED0D6" />
+    <ellipse cx={2.7} cy={4.5} rx={0.7} ry={0.7} fill="#CED0D6" />
   </svg>
 );
 

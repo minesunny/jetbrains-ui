@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../types';
 
-export type SubmitDBProps = SvgProps;
+export type SubmitDbProps = SvgProps;
 
-const SubmitDBLight: FC<SvgProps> = ({
+const SubmitDbLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -30,7 +30,7 @@ const SubmitDBLight: FC<SvgProps> = ({
   </svg>
 );
 
-const SubmitDBDark: FC<SvgProps> = ({
+const SubmitDbDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -56,14 +56,14 @@ const SubmitDBDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const SubmitDB: FC<SubmitDBProps> = ({
+export const SubmitDb: FC<SubmitDbProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? SubmitDBLight : SubmitDBDark;
+  const SvgComponent = mode === 'light' ? SubmitDbLight : SubmitDbDark;
 
   return (
     <SvgComponent

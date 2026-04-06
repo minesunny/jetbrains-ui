@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-structure",
   "type": "registry:ui",
   "title": "Structure",
-  "description": "Structure icon from General Tool Windows category.",
+  "description": "Structure icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "structure",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -33,7 +33,7 @@ const LightThemeSelectedLight: FC<SvgProps> = ({
         d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0m-1 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0"
         fill="#3574F0"
       />
-      <circle cx="8" cy="8" r="3" fill="#EDF3FF" />
+      <circle cx={8} cy={8} r={3} fill="#EDF3FF" />
     </g>
     <defs>
       <clipPath id="a">
@@ -72,7 +72,7 @@ const LightThemeSelectedDark: FC<SvgProps> = ({
         d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0m-1 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0"
         fill="#548AF7"
       />
-      <circle cx="8" cy="8" r="3" fill="#25324D" />
+      <circle cx={8} cy={8} r={3} fill="#25324D" />
     </g>
     <defs>
       <clipPath id="a">

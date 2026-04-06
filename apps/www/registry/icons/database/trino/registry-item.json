@@ -3,7 +3,7 @@
   "name": "icons-database-trino",
   "type": "registry:ui",
   "title": "Trino",
-  "description": "Trino icon from Database category.",
+  "description": "Trino icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-editor-code-span",
   "type": "registry:ui",
   "title": "Code Span",
-  "description": "Code Span icon from General Editor category.",
+  "description": "Code Span icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "code-span",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

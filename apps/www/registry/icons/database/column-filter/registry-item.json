@@ -3,7 +3,7 @@
   "name": "icons-database-column-filter",
   "type": "registry:ui",
   "title": "Column Filter",
-  "description": "Column Filter icon from Database category.",
+  "description": "Column Filter icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

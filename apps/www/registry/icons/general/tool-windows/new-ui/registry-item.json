@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-new-ui",
   "type": "registry:ui",
   "title": "New Ui",
-  "description": "New Ui icon from General Tool Windows category.",
+  "description": "New Ui icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "new-ui",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -22,11 +22,11 @@ const CollectionTypeLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#EDF3FF" stroke="#3574F0" />
-    <circle cx="11" cy="8" r="1" fill="#3574F0" />
-    <circle cx="8" cy="11" r="1" fill="#3574F0" />
-    <circle cx="8" cy="5" r="1" fill="#3574F0" />
-    <circle cx="5" cy="8" r="1" fill="#3574F0" />
+    <circle cx={8} cy={8} r={6.5} fill="#EDF3FF" stroke="#3574F0" />
+    <circle cx={11} cy={8} r={1} fill="#3574F0" />
+    <circle cx={8} cy={11} r={1} fill="#3574F0" />
+    <circle cx={8} cy={5} r={1} fill="#3574F0" />
+    <circle cx={5} cy={8} r={1} fill="#3574F0" />
   </svg>
 );
 
@@ -48,11 +48,11 @@ const CollectionTypeDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#25324D" stroke="#548AF7" />
-    <circle cx="11" cy="8" r="1" fill="#548AF7" />
-    <circle cx="8" cy="11" r="1" fill="#548AF7" />
-    <circle cx="8" cy="5" r="1" fill="#548AF7" />
-    <circle cx="5" cy="8" r="1" fill="#548AF7" />
+    <circle cx={8} cy={8} r={6.5} fill="#25324D" stroke="#548AF7" />
+    <circle cx={11} cy={8} r={1} fill="#548AF7" />
+    <circle cx={8} cy={11} r={1} fill="#548AF7" />
+    <circle cx={8} cy={5} r={1} fill="#548AF7" />
+    <circle cx={5} cy={8} r={1} fill="#548AF7" />
   </svg>
 );
 

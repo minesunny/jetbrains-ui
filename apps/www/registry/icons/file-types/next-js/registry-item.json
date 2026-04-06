@@ -3,7 +3,7 @@
   "name": "icons-file-types-next-js",
   "type": "registry:ui",
   "title": "Next Js",
-  "description": "Next Js icon from File Types category.",
+  "description": "Next Js icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

@@ -22,8 +22,8 @@ const TestPausedLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="10" y="2" width="2" height="12" rx="1" fill="#818594" />
-    <rect x="4" y="2" width="2" height="12" rx="1" fill="#818594" />
+    <rect x={10} y={2} width={2} height={12} rx={1} fill="#818594" />
+    <rect x={4} y={2} width={2} height={12} rx={1} fill="#818594" />
   </svg>
 );
 
@@ -45,8 +45,8 @@ const TestPausedDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <rect x="10" y="2" width="2" height="12" rx="1" fill="#CED0D6" />
-    <rect x="4" y="2" width="2" height="12" rx="1" fill="#CED0D6" />
+    <rect x={10} y={2} width={2} height={12} rx={1} fill="#CED0D6" />
+    <rect x={4} y={2} width={2} height={12} rx={1} fill="#CED0D6" />
   </svg>
 );
 

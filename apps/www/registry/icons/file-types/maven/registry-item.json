@@ -3,7 +3,7 @@
   "name": "icons-file-types-maven",
   "type": "registry:ui",
   "title": "Maven",
-  "description": "Maven icon from File Types category.",
+  "description": "Maven icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

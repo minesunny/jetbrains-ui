@@ -3,7 +3,7 @@
   "name": "icons-file-types-json",
   "type": "registry:ui",
   "title": "Json",
-  "description": "Json icon from File Types category.",
+  "description": "Json icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

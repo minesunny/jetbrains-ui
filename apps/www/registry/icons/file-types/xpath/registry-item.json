@@ -3,7 +3,7 @@
   "name": "icons-file-types-xpath",
   "type": "registry:ui",
   "title": "Xpath",
-  "description": "Xpath icon from File Types category.",
+  "description": "Xpath icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

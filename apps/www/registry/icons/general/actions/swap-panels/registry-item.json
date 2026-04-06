@@ -3,7 +3,7 @@
   "name": "icons-general-actions-swap-panels",
   "type": "registry:ui",
   "title": "Swap Panels",
-  "description": "Swap Panels icon from General Actions category.",
+  "description": "Swap Panels icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "swap-panels",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

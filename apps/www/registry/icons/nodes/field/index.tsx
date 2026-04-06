@@ -22,7 +22,7 @@ const FieldLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#FFF4EB" stroke="#E66D17" />
+    <circle cx={8} cy={8} r={6.5} fill="#FFF4EB" stroke="#E66D17" />
     <path
       d="M7.257 12h1.017V7.327H9.83V6.43H8.274v-.95c0-.36.246-.606.6-.606H9.88V4H8.777c-.903 0-1.52.571-1.52 1.406V6.43H6.12v.897h1.137z"
       fill="#E66D17"
@@ -48,7 +48,7 @@ const FieldDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="6.5" fill="#45322B" stroke="#C77D55" />
+    <circle cx={8} cy={8} r={6.5} fill="#45322B" stroke="#C77D55" />
     <path
       d="M7.257 12h1.017V7.327H9.83V6.43H8.274v-.95c0-.36.246-.606.6-.606H9.88V4H8.777c-.903 0-1.52.571-1.52 1.406V6.43H6.12v.897h1.137z"
       fill="#C77D55"

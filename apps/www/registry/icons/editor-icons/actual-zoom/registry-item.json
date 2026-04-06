@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-actual-zoom",
   "type": "registry:ui",
   "title": "Actual Zoom",
-  "description": "Actual Zoom icon from Editor Icons category.",
+  "description": "Actual Zoom icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

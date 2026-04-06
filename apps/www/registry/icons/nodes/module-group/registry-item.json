@@ -3,7 +3,7 @@
   "name": "icons-nodes-module-group",
   "type": "registry:ui",
   "title": "Module Group",
-  "description": "Module Group icon from Nodes category.",
+  "description": "Module Group icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

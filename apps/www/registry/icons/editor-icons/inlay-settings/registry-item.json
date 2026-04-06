@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-inlay-settings",
   "type": "registry:ui",
   "title": "Inlay Settings",
-  "description": "Inlay Settings icon from Editor Icons category.",
+  "description": "Inlay Settings icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

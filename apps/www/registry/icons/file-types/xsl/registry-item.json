@@ -3,7 +3,7 @@
   "name": "icons-file-types-xsl",
   "type": "registry:ui",
   "title": "Xsl",
-  "description": "Xsl icon from File Types category.",
+  "description": "Xsl icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

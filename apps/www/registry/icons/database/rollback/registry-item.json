@@ -3,7 +3,7 @@
   "name": "icons-database-rollback",
   "type": "registry:ui",
   "title": "Rollback",
-  "description": "Rollback icon from Database category.",
+  "description": "Rollback icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

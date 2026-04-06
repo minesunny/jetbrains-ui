@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-rebuild",
   "type": "registry:ui",
   "title": "Rebuild",
-  "description": "Rebuild icon from General Tool Windows category.",
+  "description": "Rebuild icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "rebuild",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-general-general-edit",
   "type": "registry:ui",
   "title": "Edit",
-  "description": "Edit icon from General General category.",
+  "description": "Edit icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "edit",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

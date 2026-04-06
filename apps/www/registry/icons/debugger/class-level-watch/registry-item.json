@@ -3,7 +3,7 @@
   "name": "icons-debugger-class-level-watch",
   "type": "registry:ui",
   "title": "Class Level Watch",
-  "description": "Class Level Watch icon from Debugger category.",
+  "description": "Class Level Watch icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

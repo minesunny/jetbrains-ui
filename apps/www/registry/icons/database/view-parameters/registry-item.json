@@ -3,7 +3,7 @@
   "name": "icons-database-view-parameters",
   "type": "registry:ui",
   "title": "View Parameters",
-  "description": "View Parameters icon from Database category.",
+  "description": "View Parameters icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

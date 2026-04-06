@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-fold-bottom",
   "type": "registry:ui",
   "title": "Fold Bottom",
-  "description": "Fold Bottom icon from Editor Icons category.",
+  "description": "Fold Bottom icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-method",
   "type": "registry:ui",
   "title": "Breakpoint Method",
-  "description": "Breakpoint Method icon from Breakpoints category.",
+  "description": "Breakpoint Method icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

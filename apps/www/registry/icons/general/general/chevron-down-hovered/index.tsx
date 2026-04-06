@@ -22,7 +22,7 @@ const ChevronDownHoveredLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle opacity=".1" cx="8" cy="8" r="8" fill="#313547" />
+    <circle opacity={0.1} cx={8} cy={8} r={8} fill="#313547" />
     <path
       d="M11.5 6.25 8 9.75l-3.5-3.5"
       stroke="#818594"
@@ -49,7 +49,7 @@ const ChevronDownHoveredDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle opacity=".13" cx="8" cy="8" r="8" fill="#F0F1F2" />
+    <circle opacity={0.13} cx={8} cy={8} r={8} fill="#F0F1F2" />
     <path
       d="M11.5 6.25 8 9.75l-3.5-3.5"
       stroke="#868A91"

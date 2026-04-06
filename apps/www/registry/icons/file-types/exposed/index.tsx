@@ -107,7 +107,7 @@ const ExposedLight: FC<SvgProps> = ({
         d="M7.786 5.88c.29.325-.036.578.326.433.18-.072-.035.181.18.181.216 0 .363-.362.58-.362.215 0 .556.556.541.615.061-.104.037-.021.037-.144 0-.43-.362-.904-1.158-.977-.473-.043-.976.144-1.012.506-.004.042.065.648.072.688-.156-.61.332-1.055.434-.94"
         fill="url(#j)"
       />
-      <g opacity=".8">
+      <g opacity={0.8}>
         <path
           d="M11.593 5.9c-.003.014-.021.011-.018.026-.013.005-.033.002-.038-.01l.004-.017c.017 0 .042-.01.052 0M10.881 6.048c0 .006-.009.011-.014.014q-.006-.004-.001-.014c.006-.006.011-.002.016 0M11.101 6.163c-.002.011.003.02 0 .032a.08.08 0 0 1-.078.016c-.007-.002-.006-.013-.002-.018.019-.019.034-.04.061-.04.023-.012 0 .026.02.01M10.732 6.231l.01-.005c0 .006-.018.016-.017.024l.024-.002c.001.009-.008.01-.014.013.023.018.012.038.033.06l-.024.005c-.002.012.008.02.004.03-.026-.005-.022.026-.038.04-.01.001-.033.01-.047.006a.1.1 0 0 1-.013.04l-.005-.01q-.018.01-.011.022c-.006-.009-.02.008-.026.009.006.018.032.02.026.048-.005.015-.018.025-.03.04-.012-.012-.04-.004-.046-.012.008-.018-.011-.035.011-.053q-.01-.005-.029-.002c-.009.013.009.018 0 .03-.021-.009-.026-.017-.043-.03l-.009.01c.004-.029-.044-.04-.041-.057a.2.2 0 0 1 .053-.099c.021.009.032-.024.044-.03.008.002.005.017.017.005.01-.021-.02-.01.006-.033.03.001.063-.036.089-.047.028-.014.018.026.046.002-.01-.01.008-.006.012-.014.012-.002.014.002.016.01zM10.93 6.498c.003.008-.009.014-.014.02-.014.015-.026 0-.032-.008 0-.011.01-.021.022-.028.017-.01.021.007.024.015M10.639 6.566c0 .009.005.016-.002.026-.013.01-.026.02-.039.017-.01-.009-.023-.01-.015-.03.01-.022.047-.031.055-.014M11.308 6.563c.016.018-.011.03-.024.046-.032-.011-.022.034-.05.025-.006-.003-.013-.009-.008-.019.035-.01.003-.05.038-.058.017-.009.031 0 .044.006M11.041 6.591c.001.01-.01.024-.02.027-.012.005-.018-.005-.021-.013-.002-.01.01-.024.02-.025.014-.002.015.006.022.011M10.895 6.627c-.002.007-.008.007-.012.014-.012.004-.013-.008-.016-.012l.01-.017c.012 0 .013.006.018.014M11.019 6.642a.05.05 0 0 1-.023.023c-.01-.005-.025-.007-.016-.023.002-.01.012-.012.021-.02q.015.005.017.02M10.873 6.676q.002.015.012.022c-.013.011-.01.03-.015.04-.011-.01-.026.013-.041.018-.023-.003-.042-.03-.026-.06.02-.01.035-.046.053-.027.005.003.008.01.017.007M10.59 6.727l.011.033c-.015.022-.05.033-.059.045-.012-.006-.016-.038-.04-.02-.017-.005-.024-.022-.018-.042.027-.035.07.005.087-.034q-.006.018.018.018M11.01 6.685q-.002.016-.01.031c-.01-.002-.021.002-.032.002 0-.012-.002-.028.012-.039.01-.008.027-.006.03.006M11.038 6.751c-.018.018-.025 0-.04 0q-.006-.008 0-.022.011-.014.029-.014c.014.007.002.026.01.036M11.264 6.767c.004.012-.01.015-.019.022q-.014 0-.015-.016c.004-.02.03-.024.034-.006M10.95 6.928c0 .01-.02.018-.024.008l.01-.02c.005.004.014.003.013.012M12.567 6.945q0 .001-.003.005v-.006q0 .001.003.001M11.53 7.114c-.011.02-.052.045-.028.055.038.003.02.041.043.057-.012.005-.02.02-.01.03q.006.007.016.003c-.009.01-.043.029-.049.051-.027.012-.065.024-.08.034-.004.008.01.002.002.011-.006-.015-.032-.02-.049-.03l-.005.009c-.022 0-.026-.024-.029-.038-.004-.007-.016.005-.02.004-.001-.004.027-.029.013-.04l-.024.002c.011-.008.027-.002.032-.019 0-.009-.004-.015-.003-.02.025-.008.024-.045.052-.053.016.012.029-.01.037-.022l-.004.018c.018-.018.035-.018.054-.021l-.002.01c.025 0 .037-.033.055-.04"
           fill="#F4EC4F"
@@ -155,137 +155,137 @@ const ExposedLight: FC<SvgProps> = ({
     <defs>
       <radialGradient
         id="b"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(7.039 7.48)scale(2.69558)"
       >
         <stop stopColor="#C700D4" />
-        <stop offset=".04" stopColor="#CD13C0" />
-        <stop offset=".14" stopColor="#DA3A98" />
-        <stop offset=".25" stopColor="#E55C76" />
-        <stop offset=".36" stopColor="#EF775A" />
-        <stop offset=".48" stopColor="#F68C44" />
-        <stop offset=".61" stopColor="#FB9B35" />
-        <stop offset=".77" stopColor="#FEA42C" />
-        <stop offset="1" stopColor="#FFA72A" />
+        <stop offset={0.04} stopColor="#CD13C0" />
+        <stop offset={0.14} stopColor="#DA3A98" />
+        <stop offset={0.25} stopColor="#E55C76" />
+        <stop offset={0.36} stopColor="#EF775A" />
+        <stop offset={0.48} stopColor="#F68C44" />
+        <stop offset={0.61} stopColor="#FB9B35" />
+        <stop offset={0.77} stopColor="#FEA42C" />
+        <stop offset={1} stopColor="#FFA72A" />
       </radialGradient>
       <radialGradient
         id="c"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(-2.487 3.92)scale(8.33247)"
       >
         <stop stopColor="#C700D4" />
-        <stop offset=".12" stopColor="#CF19B9" />
-        <stop offset=".42" stopColor="#E3557C" />
-        <stop offset=".68" stopColor="#F2814F" />
-        <stop offset=".88" stopColor="#FB9C34" />
-        <stop offset="1" stopColor="#FFA72A" />
+        <stop offset={0.12} stopColor="#CF19B9" />
+        <stop offset={0.42} stopColor="#E3557C" />
+        <stop offset={0.68} stopColor="#F2814F" />
+        <stop offset={0.88} stopColor="#FB9C34" />
+        <stop offset={1} stopColor="#FFA72A" />
       </radialGradient>
       <radialGradient
         id="d"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(4.99 3.893)scale(8.12104)"
       >
-        <stop offset=".21" stopColor="#FFA72A" />
-        <stop offset=".3" stopColor="#FF9937" />
-        <stop offset=".46" stopColor="#FF775A" />
-        <stop offset=".67" stopColor="#FF3F95" />
+        <stop offset={0.21} stopColor="#FFA72A" />
+        <stop offset={0.3} stopColor="#FF9937" />
+        <stop offset={0.46} stopColor="#FF775A" />
+        <stop offset={0.67} stopColor="#FF3F95" />
       </radialGradient>
       <radialGradient
         id="e"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="rotate(9.88 -29.661 25.46)scale(7.5758 3.75807)"
       >
-        <stop offset=".23" stopColor="#FF9E15" />
-        <stop offset=".44" stopColor="#009DFF" />
-        <stop offset=".46" stopColor="#0498FF" />
-        <stop offset=".73" stopColor="#5258FF" />
+        <stop offset={0.23} stopColor="#FF9E15" />
+        <stop offset={0.44} stopColor="#009DFF" />
+        <stop offset={0.46} stopColor="#0498FF" />
+        <stop offset={0.73} stopColor="#5258FF" />
       </radialGradient>
       <radialGradient
         id="f"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(10.493 13.104)scale(4.72312)"
       >
         <stop stopColor="#F229FF" />
-        <stop offset=".26" stopColor="#F651BA" />
-        <stop offset=".52" stopColor="#F9767C" />
-        <stop offset=".73" stopColor="#FC904F" />
-        <stop offset=".9" stopColor="#FEA034" />
-        <stop offset="1" stopColor="#FFA72A" />
+        <stop offset={0.26} stopColor="#F651BA" />
+        <stop offset={0.52} stopColor="#F9767C" />
+        <stop offset={0.73} stopColor="#FC904F" />
+        <stop offset={0.9} stopColor="#FEA034" />
+        <stop offset={1} stopColor="#FFA72A" />
       </radialGradient>
       <radialGradient
         id="g"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(11.655 10.935)scale(2.67532)"
       >
         <stop stopColor="#FFB700" />
-        <stop offset=".08" stopColor="#FFB504" />
-        <stop offset=".66" stopColor="#FFAA1F" />
-        <stop offset="1" stopColor="#FFA72A" />
+        <stop offset={0.08} stopColor="#FFB504" />
+        <stop offset={0.66} stopColor="#FFAA1F" />
+        <stop offset={1} stopColor="#FFA72A" />
       </radialGradient>
       <radialGradient
         id="h"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(9.377 9.948)scale(6.75636)"
       >
         <stop stopColor="#EF00FF" />
-        <stop offset=".02" stopColor="#F00CEE" />
-        <stop offset=".09" stopColor="#F330C1" />
-        <stop offset=".16" stopColor="#F65098" />
-        <stop offset=".24" stopColor="#F96B76" />
-        <stop offset=".32" stopColor="#FB815A" />
-        <stop offset=".41" stopColor="#FC9144" />
-        <stop offset=".51" stopColor="#FE9D35" />
-        <stop offset=".62" stopColor="#FEA42C" />
-        <stop offset=".78" stopColor="#FFA72A" />
+        <stop offset={0.02} stopColor="#F00CEE" />
+        <stop offset={0.09} stopColor="#F330C1" />
+        <stop offset={0.16} stopColor="#F65098" />
+        <stop offset={0.24} stopColor="#F96B76" />
+        <stop offset={0.32} stopColor="#FB815A" />
+        <stop offset={0.41} stopColor="#FC9144" />
+        <stop offset={0.51} stopColor="#FE9D35" />
+        <stop offset={0.62} stopColor="#FEA42C" />
+        <stop offset={0.78} stopColor="#FFA72A" />
       </radialGradient>
       <radialGradient
         id="i"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="matrix(.78286 0 0 .78286 8.38 6.585)"
       >
         <stop stopColor="#00B2E9" />
-        <stop offset=".31" stopColor="#01AFE9" />
-        <stop offset=".49" stopColor="#06A7EB" />
-        <stop offset=".64" stopColor="#0F99EE" />
-        <stop offset=".77" stopColor="#1B85F2" />
-        <stop offset=".88" stopColor="#2C6BF7" />
-        <stop offset=".99" stopColor="#3F4CFE" />
-        <stop offset="1" stopColor="#4249FF" />
+        <stop offset={0.31} stopColor="#01AFE9" />
+        <stop offset={0.49} stopColor="#06A7EB" />
+        <stop offset={0.64} stopColor="#0F99EE" />
+        <stop offset={0.77} stopColor="#1B85F2" />
+        <stop offset={0.88} stopColor="#2C6BF7" />
+        <stop offset={0.99} stopColor="#3F4CFE" />
+        <stop offset={1} stopColor="#4249FF" />
       </radialGradient>
       <radialGradient
         id="j"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(8.367 6.22)scale(.87792)"
       >
         <stop stopColor="#FFF915" />
-        <stop offset="1" stopColor="#FFA72A" />
+        <stop offset={1} stopColor="#FFA72A" />
       </radialGradient>
       <clipPath id="a">
         <path fill="#fff" transform="translate(0 4)" d="M0 0H16V10.493H0z" />
@@ -397,7 +397,7 @@ const ExposedDark: FC<SvgProps> = ({
         d="M7.786 5.88c.29.325-.036.578.326.433.18-.072-.035.181.18.181.216 0 .363-.362.58-.362.215 0 .556.556.541.615.061-.104.037-.021.037-.144 0-.43-.362-.904-1.158-.977-.473-.043-.976.144-1.012.506-.004.042.065.648.072.688-.156-.61.332-1.055.434-.94"
         fill="url(#j)"
       />
-      <g opacity=".8">
+      <g opacity={0.8}>
         <path
           d="M11.593 5.9c-.003.014-.021.011-.018.026-.013.005-.033.002-.038-.01l.004-.017c.017 0 .042-.01.052 0M10.881 6.048c0 .006-.009.011-.014.014q-.006-.004-.001-.014c.006-.006.011-.002.016 0M11.101 6.163c-.002.011.003.02 0 .032a.08.08 0 0 1-.078.016c-.007-.002-.006-.013-.002-.018.019-.019.034-.04.061-.04.023-.012 0 .026.02.01M10.732 6.231l.01-.005c0 .006-.018.016-.017.024l.024-.002c.001.009-.008.01-.014.013.023.018.012.038.033.06l-.024.005c-.002.012.008.02.004.03-.026-.005-.022.026-.038.04-.01.001-.033.01-.047.006a.1.1 0 0 1-.013.04l-.005-.01q-.018.01-.011.022c-.006-.009-.02.008-.026.009.006.018.032.02.026.048-.005.015-.018.025-.03.04-.012-.012-.04-.004-.046-.012.008-.018-.011-.035.011-.053q-.01-.005-.029-.002c-.009.013.009.018 0 .03-.021-.009-.026-.017-.043-.03l-.009.01c.004-.029-.044-.04-.041-.057a.2.2 0 0 1 .053-.099c.021.009.032-.024.044-.03.008.002.005.017.017.005.01-.021-.02-.01.006-.033.03.001.063-.036.089-.047.028-.014.018.026.046.002-.01-.01.008-.006.012-.014.012-.002.014.002.016.01zM10.93 6.498c.003.008-.009.014-.014.02-.014.015-.026 0-.032-.008 0-.011.01-.021.022-.028.017-.01.021.007.024.015M10.639 6.566c0 .009.005.016-.002.026-.013.01-.026.02-.039.017-.01-.009-.023-.01-.015-.03.01-.022.047-.031.055-.014M11.308 6.563c.016.018-.011.03-.024.046-.032-.011-.022.034-.05.025-.006-.003-.013-.009-.008-.019.035-.01.003-.05.038-.058.017-.009.031 0 .044.006M11.041 6.591c.001.01-.01.024-.02.027-.012.005-.018-.005-.021-.013-.002-.01.01-.024.02-.025.014-.002.015.006.022.011M10.895 6.627c-.002.007-.008.007-.012.014-.012.004-.013-.008-.016-.012l.01-.017c.012 0 .013.006.018.014M11.019 6.642a.05.05 0 0 1-.023.023c-.01-.005-.025-.007-.016-.023.002-.01.012-.012.021-.02q.015.005.017.02M10.873 6.676q.002.015.012.022c-.013.011-.01.03-.015.04-.011-.01-.026.013-.041.018-.023-.003-.042-.03-.026-.06.02-.01.035-.046.053-.027.005.003.008.01.017.007M10.59 6.727l.011.033c-.015.022-.05.033-.059.045-.012-.006-.016-.038-.04-.02-.017-.005-.024-.022-.018-.042.027-.035.07.005.087-.034q-.006.018.018.018M11.01 6.685q-.002.016-.01.031c-.01-.002-.021.002-.032.002 0-.012-.002-.028.012-.039.01-.008.027-.006.03.006M11.038 6.751c-.018.018-.025 0-.04 0q-.006-.008 0-.022.011-.014.029-.014c.014.007.002.026.01.036M11.264 6.767c.004.012-.01.015-.019.022q-.014 0-.015-.016c.004-.02.03-.024.034-.006M10.95 6.928c0 .01-.02.018-.024.008l.01-.02c.005.004.014.003.013.012M12.567 6.945q0 .001-.003.005v-.006q0 .001.003.001M11.53 7.114c-.011.02-.052.045-.028.055.038.003.02.041.043.057-.012.005-.02.02-.01.03q.006.007.016.003c-.009.01-.043.029-.049.051-.027.012-.065.024-.08.034-.004.008.01.002.002.011-.006-.015-.032-.02-.049-.03l-.005.009c-.022 0-.026-.024-.029-.038-.004-.007-.016.005-.02.004-.001-.004.027-.029.013-.04l-.024.002c.011-.008.027-.002.032-.019 0-.009-.004-.015-.003-.02.025-.008.024-.045.052-.053.016.012.029-.01.037-.022l-.004.018c.018-.018.035-.018.054-.021l-.002.01c.025 0 .037-.033.055-.04"
           fill="#F4EC4F"
@@ -445,137 +445,137 @@ const ExposedDark: FC<SvgProps> = ({
     <defs>
       <radialGradient
         id="b"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(7.039 7.48)scale(2.69558)"
       >
         <stop stopColor="#C700D4" />
-        <stop offset=".04" stopColor="#CD13C0" />
-        <stop offset=".14" stopColor="#DA3A98" />
-        <stop offset=".25" stopColor="#E55C76" />
-        <stop offset=".36" stopColor="#EF775A" />
-        <stop offset=".48" stopColor="#F68C44" />
-        <stop offset=".61" stopColor="#FB9B35" />
-        <stop offset=".77" stopColor="#FEA42C" />
-        <stop offset="1" stopColor="#FFA72A" />
+        <stop offset={0.04} stopColor="#CD13C0" />
+        <stop offset={0.14} stopColor="#DA3A98" />
+        <stop offset={0.25} stopColor="#E55C76" />
+        <stop offset={0.36} stopColor="#EF775A" />
+        <stop offset={0.48} stopColor="#F68C44" />
+        <stop offset={0.61} stopColor="#FB9B35" />
+        <stop offset={0.77} stopColor="#FEA42C" />
+        <stop offset={1} stopColor="#FFA72A" />
       </radialGradient>
       <radialGradient
         id="c"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(-2.487 3.92)scale(8.33247)"
       >
         <stop stopColor="#C700D4" />
-        <stop offset=".12" stopColor="#CF19B9" />
-        <stop offset=".42" stopColor="#E3557C" />
-        <stop offset=".68" stopColor="#F2814F" />
-        <stop offset=".88" stopColor="#FB9C34" />
-        <stop offset="1" stopColor="#FFA72A" />
+        <stop offset={0.12} stopColor="#CF19B9" />
+        <stop offset={0.42} stopColor="#E3557C" />
+        <stop offset={0.68} stopColor="#F2814F" />
+        <stop offset={0.88} stopColor="#FB9C34" />
+        <stop offset={1} stopColor="#FFA72A" />
       </radialGradient>
       <radialGradient
         id="d"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(4.99 3.893)scale(8.12104)"
       >
-        <stop offset=".21" stopColor="#FFA72A" />
-        <stop offset=".3" stopColor="#FF9937" />
-        <stop offset=".46" stopColor="#FF775A" />
-        <stop offset=".67" stopColor="#FF3F95" />
+        <stop offset={0.21} stopColor="#FFA72A" />
+        <stop offset={0.3} stopColor="#FF9937" />
+        <stop offset={0.46} stopColor="#FF775A" />
+        <stop offset={0.67} stopColor="#FF3F95" />
       </radialGradient>
       <radialGradient
         id="e"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="rotate(9.88 -29.661 25.46)scale(7.5758 3.75807)"
       >
-        <stop offset=".23" stopColor="#FF9E15" />
-        <stop offset=".44" stopColor="#009DFF" />
-        <stop offset=".46" stopColor="#0498FF" />
-        <stop offset=".73" stopColor="#5258FF" />
+        <stop offset={0.23} stopColor="#FF9E15" />
+        <stop offset={0.44} stopColor="#009DFF" />
+        <stop offset={0.46} stopColor="#0498FF" />
+        <stop offset={0.73} stopColor="#5258FF" />
       </radialGradient>
       <radialGradient
         id="f"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(10.493 13.104)scale(4.72312)"
       >
         <stop stopColor="#F229FF" />
-        <stop offset=".26" stopColor="#F651BA" />
-        <stop offset=".52" stopColor="#F9767C" />
-        <stop offset=".73" stopColor="#FC904F" />
-        <stop offset=".9" stopColor="#FEA034" />
-        <stop offset="1" stopColor="#FFA72A" />
+        <stop offset={0.26} stopColor="#F651BA" />
+        <stop offset={0.52} stopColor="#F9767C" />
+        <stop offset={0.73} stopColor="#FC904F" />
+        <stop offset={0.9} stopColor="#FEA034" />
+        <stop offset={1} stopColor="#FFA72A" />
       </radialGradient>
       <radialGradient
         id="g"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(11.655 10.935)scale(2.67532)"
       >
         <stop stopColor="#FFB700" />
-        <stop offset=".08" stopColor="#FFB504" />
-        <stop offset=".66" stopColor="#FFAA1F" />
-        <stop offset="1" stopColor="#FFA72A" />
+        <stop offset={0.08} stopColor="#FFB504" />
+        <stop offset={0.66} stopColor="#FFAA1F" />
+        <stop offset={1} stopColor="#FFA72A" />
       </radialGradient>
       <radialGradient
         id="h"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(9.377 9.948)scale(6.75636)"
       >
         <stop stopColor="#EF00FF" />
-        <stop offset=".02" stopColor="#F00CEE" />
-        <stop offset=".09" stopColor="#F330C1" />
-        <stop offset=".16" stopColor="#F65098" />
-        <stop offset=".24" stopColor="#F96B76" />
-        <stop offset=".32" stopColor="#FB815A" />
-        <stop offset=".41" stopColor="#FC9144" />
-        <stop offset=".51" stopColor="#FE9D35" />
-        <stop offset=".62" stopColor="#FEA42C" />
-        <stop offset=".78" stopColor="#FFA72A" />
+        <stop offset={0.02} stopColor="#F00CEE" />
+        <stop offset={0.09} stopColor="#F330C1" />
+        <stop offset={0.16} stopColor="#F65098" />
+        <stop offset={0.24} stopColor="#F96B76" />
+        <stop offset={0.32} stopColor="#FB815A" />
+        <stop offset={0.41} stopColor="#FC9144" />
+        <stop offset={0.51} stopColor="#FE9D35" />
+        <stop offset={0.62} stopColor="#FEA42C" />
+        <stop offset={0.78} stopColor="#FFA72A" />
       </radialGradient>
       <radialGradient
         id="i"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="matrix(.78286 0 0 .78286 8.38 6.585)"
       >
         <stop stopColor="#00B2E9" />
-        <stop offset=".31" stopColor="#01AFE9" />
-        <stop offset=".49" stopColor="#06A7EB" />
-        <stop offset=".64" stopColor="#0F99EE" />
-        <stop offset=".77" stopColor="#1B85F2" />
-        <stop offset=".88" stopColor="#2C6BF7" />
-        <stop offset=".99" stopColor="#3F4CFE" />
-        <stop offset="1" stopColor="#4249FF" />
+        <stop offset={0.31} stopColor="#01AFE9" />
+        <stop offset={0.49} stopColor="#06A7EB" />
+        <stop offset={0.64} stopColor="#0F99EE" />
+        <stop offset={0.77} stopColor="#1B85F2" />
+        <stop offset={0.88} stopColor="#2C6BF7" />
+        <stop offset={0.99} stopColor="#3F4CFE" />
+        <stop offset={1} stopColor="#4249FF" />
       </radialGradient>
       <radialGradient
         id="j"
-        cx="0"
-        cy="0"
-        r="1"
+        cx={0}
+        cy={0}
+        r={1}
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(8.367 6.22)scale(.87792)"
       >
         <stop stopColor="#FFF915" />
-        <stop offset="1" stopColor="#FFA72A" />
+        <stop offset={1} stopColor="#FFA72A" />
       </radialGradient>
       <clipPath id="a">
         <path fill="#fff" transform="translate(0 4)" d="M0 0H16V10.493H0z" />

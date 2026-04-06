@@ -3,7 +3,7 @@
   "name": "icons-run-step-out",
   "type": "registry:ui",
   "title": "Step Out",
-  "description": "Step Out icon from Run category.",
+  "description": "Step Out icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

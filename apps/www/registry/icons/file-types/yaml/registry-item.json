@@ -3,7 +3,7 @@
   "name": "icons-file-types-yaml",
   "type": "registry:ui",
   "title": "Yaml",
-  "description": "Yaml icon from File Types category.",
+  "description": "Yaml icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

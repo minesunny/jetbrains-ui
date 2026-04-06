@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import { cn } from '@/lib/utils';
 import { type SvgProps, sizeMap } from '../../types';
 
-export type AddSDKProps = SvgProps;
+export type AddSdkProps = SvgProps;
 
-const AddSDKLight: FC<SvgProps> = ({
+const AddSdkLight: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -35,7 +35,7 @@ const AddSDKLight: FC<SvgProps> = ({
   </svg>
 );
 
-const AddSDKDark: FC<SvgProps> = ({
+const AddSdkDark: FC<SvgProps> = ({
   size,
   className,
   role,
@@ -66,14 +66,14 @@ const AddSDKDark: FC<SvgProps> = ({
   </svg>
 );
 
-export const AddSDK: FC<AddSDKProps> = ({
+export const AddSdk: FC<AddSdkProps> = ({
   size = 'md',
   mode = 'light',
   className,
   'aria-label': ariaLabel,
   ...props
 }) => {
-  const SvgComponent = mode === 'light' ? AddSDKLight : AddSDKDark;
+  const SvgComponent = mode === 'light' ? AddSdkLight : AddSdkDark;
 
   return (
     <SvgComponent

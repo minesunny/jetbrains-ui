@@ -26,7 +26,7 @@ const ThreadCurrentLight: FC<SvgProps> = ({
       <path
         d="m2.5 8.25 3.5 3.5 7.5-7.5"
         stroke="#E66D17"
-        strokeWidth="1.5"
+        strokeWidth={1.5}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -61,7 +61,7 @@ const ThreadCurrentDark: FC<SvgProps> = ({
       <path
         d="m2.5 8.25 3.5 3.5 7.5-7.5"
         stroke="#C77D55"
-        strokeWidth="1.5"
+        strokeWidth={1.5}
         strokeLinecap="round"
         strokeLinejoin="round"
       />

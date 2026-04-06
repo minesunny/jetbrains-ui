@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-todo",
   "type": "registry:ui",
   "title": "Todo",
-  "description": "Todo icon from General Tool Windows category.",
+  "description": "Todo icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "todo",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

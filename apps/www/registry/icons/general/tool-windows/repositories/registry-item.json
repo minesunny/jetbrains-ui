@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-repositories",
   "type": "registry:ui",
   "title": "Repositories",
-  "description": "Repositories icon from General Tool Windows category.",
+  "description": "Repositories icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "repositories",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

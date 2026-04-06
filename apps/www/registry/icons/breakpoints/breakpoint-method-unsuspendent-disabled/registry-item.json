@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-method-unsuspendent-disabled",
   "type": "registry:ui",
   "title": "Breakpoint Method Unsuspendent Disabled",
-  "description": "Breakpoint Method Unsuspendent Disabled icon from Breakpoints category.",
+  "description": "Breakpoint Method Unsuspendent Disabled icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

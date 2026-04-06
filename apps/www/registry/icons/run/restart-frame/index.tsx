@@ -23,11 +23,11 @@ const RestartFrameLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="9.5"
-      y="9.5"
-      width="6"
-      height="6"
-      rx="1.5"
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1.5}
       fill="#EBECF0"
       stroke="#6C707E"
     />
@@ -57,11 +57,11 @@ const RestartFrameDark: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <rect
-      x="9.5"
-      y="9.5"
-      width="6"
-      height="6"
-      rx="1.5"
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1.5}
       fill="#43454A"
       stroke="#CED0D6"
     />

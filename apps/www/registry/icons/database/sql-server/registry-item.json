@@ -3,7 +3,7 @@
   "name": "icons-database-sql-server",
   "type": "registry:ui",
   "title": "Sql Server",
-  "description": "Sql Server icon from Database category.",
+  "description": "Sql Server icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

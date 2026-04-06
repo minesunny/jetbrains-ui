@@ -3,7 +3,7 @@
   "name": "icons-file-types-jsp",
   "type": "registry:ui",
   "title": "Jsp",
-  "description": "Jsp icon from File Types category.",
+  "description": "Jsp icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

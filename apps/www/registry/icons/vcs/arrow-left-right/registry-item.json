@@ -3,7 +3,7 @@
   "name": "icons-vcs-arrow-left-right",
   "type": "registry:ui",
   "title": "Arrow Left Right",
-  "description": "Arrow Left Right icon from Vcs category.",
+  "description": "Arrow Left Right icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-nodes-warning-introduction",
   "type": "registry:ui",
   "title": "Warning Introduction",
-  "description": "Warning Introduction icon from Nodes category.",
+  "description": "Warning Introduction icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

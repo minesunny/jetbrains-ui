@@ -3,7 +3,7 @@
   "name": "icons-file-types-angular-js",
   "type": "registry:ui",
   "title": "Angular Js",
-  "description": "Angular Js icon from File Types category.",
+  "description": "Angular Js icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

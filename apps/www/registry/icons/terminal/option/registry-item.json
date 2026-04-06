@@ -3,7 +3,7 @@
   "name": "icons-terminal-option",
   "type": "registry:ui",
   "title": "Option",
-  "description": "Option icon from Terminal category.",
+  "description": "Option icon from terminal category.",
   "registryDependencies": [
     "icons-terminal-types"
   ],

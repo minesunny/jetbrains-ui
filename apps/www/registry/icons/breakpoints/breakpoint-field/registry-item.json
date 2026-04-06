@@ -3,7 +3,7 @@
   "name": "icons-breakpoints-breakpoint-field",
   "type": "registry:ui",
   "title": "Breakpoint Field",
-  "description": "Breakpoint Field icon from Breakpoints category.",
+  "description": "Breakpoint Field icon from breakpoints category.",
   "registryDependencies": [
     "icons-breakpoints-types"
   ],

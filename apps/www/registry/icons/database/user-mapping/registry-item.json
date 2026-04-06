@@ -3,7 +3,7 @@
   "name": "icons-database-user-mapping",
   "type": "registry:ui",
   "title": "User Mapping",
-  "description": "User Mapping icon from Database category.",
+  "description": "User Mapping icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

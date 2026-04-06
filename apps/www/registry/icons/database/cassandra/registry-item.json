@@ -3,7 +3,7 @@
   "name": "icons-database-cassandra",
   "type": "registry:ui",
   "title": "Cassandra",
-  "description": "Cassandra icon from Database category.",
+  "description": "Cassandra icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

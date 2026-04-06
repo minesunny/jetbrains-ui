@@ -3,7 +3,7 @@
   "name": "icons-terminal-command",
   "type": "registry:ui",
   "title": "Command",
-  "description": "Command icon from Terminal category.",
+  "description": "Command icon from terminal category.",
   "registryDependencies": [
     "icons-terminal-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-tool-windows-tool-window-meson",
   "type": "registry:ui",
   "title": "Tool Window Meson",
-  "description": "Tool Window Meson icon from General Tool Windows category.",
+  "description": "Tool Window Meson icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "tool-window-meson",
       "icon",
       "general",
-      "tool-windows",
       "jetbrains"
     ]
   }

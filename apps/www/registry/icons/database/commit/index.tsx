@@ -25,7 +25,7 @@ const CommitLight: FC<SvgProps> = ({
     <path
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
       stroke="#55A76A"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
     />
   </svg>
@@ -52,7 +52,7 @@ const CommitDark: FC<SvgProps> = ({
     <path
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
       stroke="#57965C"
-      strokeWidth="1.5"
+      strokeWidth={1.5}
       strokeLinecap="round"
     />
   </svg>

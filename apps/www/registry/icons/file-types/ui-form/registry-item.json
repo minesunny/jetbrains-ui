@@ -3,7 +3,7 @@
   "name": "icons-file-types-ui-form",
   "type": "registry:ui",
   "title": "Ui Form",
-  "description": "Ui Form icon from File Types category.",
+  "description": "Ui Form icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

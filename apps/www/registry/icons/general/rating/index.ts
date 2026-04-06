@@ -6,5 +6,3 @@ export { FeedbackRatingFocusedOn } from './feedback-rating-focused-on';
 export type { FeedbackRatingFocusedOnProps } from './feedback-rating-focused-on';
 export { FeedbackRatingOn } from './feedback-rating-on';
 export type { FeedbackRatingOnProps } from './feedback-rating-on';
-export { svgNames } from '../types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

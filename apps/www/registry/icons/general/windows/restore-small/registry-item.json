@@ -3,7 +3,7 @@
   "name": "icons-general-windows-restore-small",
   "type": "registry:ui",
   "title": "Restore Small",
-  "description": "Restore Small icon from General Windows category.",
+  "description": "Restore Small icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "restore-small",
       "icon",
       "general",
-      "windows",
       "jetbrains"
     ]
   }

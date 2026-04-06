@@ -3,7 +3,7 @@
   "name": "icons-database-reset",
   "type": "registry:ui",
   "title": "Reset",
-  "description": "Reset icon from Database category.",
+  "description": "Reset icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

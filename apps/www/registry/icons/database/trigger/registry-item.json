@@ -3,7 +3,7 @@
   "name": "icons-database-trigger",
   "type": "registry:ui",
   "title": "Trigger",
-  "description": "Trigger icon from Database category.",
+  "description": "Trigger icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

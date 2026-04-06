@@ -3,7 +3,7 @@
   "name": "icons-general-setting-sync-status-enabled",
   "type": "registry:ui",
   "title": "Status Enabled",
-  "description": "Status Enabled icon from General Setting Sync category.",
+  "description": "Status Enabled icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "status-enabled",
       "icon",
       "general",
-      "setting-sync",
       "jetbrains"
     ]
   }

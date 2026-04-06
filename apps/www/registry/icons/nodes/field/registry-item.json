@@ -3,7 +3,7 @@
   "name": "icons-nodes-field",
   "type": "registry:ui",
   "title": "Field",
-  "description": "Field icon from Nodes category.",
+  "description": "Field icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],

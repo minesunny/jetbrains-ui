@@ -3,7 +3,7 @@
   "name": "icons-database-projection",
   "type": "registry:ui",
   "title": "Projection",
-  "description": "Projection icon from Database category.",
+  "description": "Projection icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

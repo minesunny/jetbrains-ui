@@ -3,7 +3,7 @@
   "name": "icons-run-configurations-java-scratch",
   "type": "registry:ui",
   "title": "Java Scratch",
-  "description": "Java Scratch icon from Run Configurations category.",
+  "description": "Java Scratch icon from run-configurations category.",
   "registryDependencies": [
     "icons-run-configurations-types"
   ],

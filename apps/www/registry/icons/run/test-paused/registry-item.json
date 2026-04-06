@@ -3,7 +3,7 @@
   "name": "icons-run-test-paused",
   "type": "registry:ui",
   "title": "Test Paused",
-  "description": "Test Paused icon from Run category.",
+  "description": "Test Paused icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

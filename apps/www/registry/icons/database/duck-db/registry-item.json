@@ -3,7 +3,7 @@
   "name": "icons-database-duck-db",
   "type": "registry:ui",
   "title": "Duck Db",
-  "description": "Duck Db icon from Database category.",
+  "description": "Duck Db icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

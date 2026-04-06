@@ -3,7 +3,7 @@
   "name": "icons-run-test-runner-watch",
   "type": "registry:ui",
   "title": "Test Runner Watch",
-  "description": "Test Runner Watch icon from Run category.",
+  "description": "Test Runner Watch icon from run category.",
   "registryDependencies": [
     "icons-run-types"
   ],

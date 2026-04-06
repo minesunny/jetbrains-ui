@@ -3,7 +3,7 @@
   "name": "icons-debugger-prompt-input",
   "type": "registry:ui",
   "title": "Prompt Input",
-  "description": "Prompt Input icon from Debugger category.",
+  "description": "Prompt Input icon from debugger category.",
   "registryDependencies": [
     "icons-debugger-types"
   ],

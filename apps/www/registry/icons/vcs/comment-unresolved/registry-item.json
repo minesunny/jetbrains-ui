@@ -3,7 +3,7 @@
   "name": "icons-vcs-comment-unresolved",
   "type": "registry:ui",
   "title": "Comment Unresolved",
-  "description": "Comment Unresolved icon from Vcs category.",
+  "description": "Comment Unresolved icon from vcs category.",
   "registryDependencies": [
     "icons-vcs-types"
   ],

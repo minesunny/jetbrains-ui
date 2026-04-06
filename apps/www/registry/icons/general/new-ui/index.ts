@@ -10,5 +10,3 @@ export { SystemTheme } from './system-theme';
 export type { SystemThemeProps } from './system-theme';
 export { SystemThemeSelected } from './system-theme-selected';
 export type { SystemThemeSelectedProps } from './system-theme-selected';
-export { svgNames } from '../types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from '../types';

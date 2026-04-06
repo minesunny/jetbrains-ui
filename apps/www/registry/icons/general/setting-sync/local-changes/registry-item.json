@@ -3,7 +3,7 @@
   "name": "icons-general-setting-sync-local-changes",
   "type": "registry:ui",
   "title": "Local Changes",
-  "description": "Local Changes icon from General Setting Sync category.",
+  "description": "Local Changes icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "local-changes",
       "icon",
       "general",
-      "setting-sync",
       "jetbrains"
     ]
   }

@@ -3,7 +3,7 @@
   "name": "icons-database-tarantool",
   "type": "registry:ui",
   "title": "Tarantool",
-  "description": "Tarantool icon from Database category.",
+  "description": "Tarantool icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

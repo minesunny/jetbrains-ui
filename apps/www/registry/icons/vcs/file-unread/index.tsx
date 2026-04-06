@@ -22,7 +22,7 @@ const FileUnreadLight: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="3" fill="#4682FA" />
+    <circle cx={8} cy={8} r={3} fill="#4682FA" />
   </svg>
 );
 
@@ -44,7 +44,7 @@ const FileUnreadDark: FC<SvgProps> = ({
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
   >
-    <circle cx="8" cy="8" r="3" fill="#548AF7" />
+    <circle cx={8} cy={8} r={3} fill="#548AF7" />
   </svg>
 );
 

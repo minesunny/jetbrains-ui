@@ -3,7 +3,7 @@
   "name": "icons-general-general-split-horizontally",
   "type": "registry:ui",
   "title": "Split Horizontally",
-  "description": "Split Horizontally icon from General General category.",
+  "description": "Split Horizontally icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -18,7 +18,6 @@
     "keywords": [
       "split-horizontally",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

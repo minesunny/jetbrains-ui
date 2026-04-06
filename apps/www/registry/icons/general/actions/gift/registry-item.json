@@ -3,7 +3,7 @@
   "name": "icons-general-actions-gift",
   "type": "registry:ui",
   "title": "Gift",
-  "description": "Gift icon from General Actions category.",
+  "description": "Gift icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "gift",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

@@ -23,7 +23,7 @@ const FeedbackRatingFocusedLight: FC<SvgProps> = ({
     aria-hidden={ariaHidden}
   >
     <g clipPath="url(#a)">
-      <circle cx="16" cy="16" r="16" fill="#D4E2FF" />
+      <circle cx={16} cy={16} r={16} fill="#D4E2FF" />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -59,7 +59,7 @@ const FeedbackRatingFocusedDark: FC<SvgProps> = ({
   >
     <g clipPath="url(#a)">
       <g clipPath="url(#b)">
-        <circle cx="16" cy="16" r="16" fill="#25324D" />
+        <circle cx={16} cy={16} r={16} fill="#25324D" />
         <path
           fillRule="evenodd"
           clipRule="evenodd"

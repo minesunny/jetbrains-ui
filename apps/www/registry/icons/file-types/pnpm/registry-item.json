@@ -3,7 +3,7 @@
   "name": "icons-file-types-pnpm",
   "type": "registry:ui",
   "title": "Pnpm",
-  "description": "Pnpm icon from File Types category.",
+  "description": "Pnpm icon from file-types category.",
   "registryDependencies": [
     "icons-file-types-types"
   ],

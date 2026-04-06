@@ -3,7 +3,7 @@
   "name": "icons-editor-icons-unfold",
   "type": "registry:ui",
   "title": "Unfold",
-  "description": "Unfold icon from Editor Icons category.",
+  "description": "Unfold icon from editor-icons category.",
   "registryDependencies": [
     "icons-editor-icons-types"
   ],

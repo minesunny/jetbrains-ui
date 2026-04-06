@@ -3,7 +3,7 @@
   "name": "icons-build-maven-checksum",
   "type": "registry:ui",
   "title": "Maven Checksum",
-  "description": "Maven Checksum icon from Build category.",
+  "description": "Maven Checksum icon from build category.",
   "registryDependencies": [
     "icons-build-types"
   ],

@@ -3,7 +3,7 @@
   "name": "icons-general-progress-bar-resume",
   "type": "registry:ui",
   "title": "Resume",
-  "description": "Resume icon from General Progress Bar category.",
+  "description": "Resume icon from general category.",
   "registryDependencies": [
     "icons-general-types"
   ],
@@ -19,7 +19,6 @@
       "resume",
       "icon",
       "general",
-      "progress-bar",
       "jetbrains"
     ]
   }

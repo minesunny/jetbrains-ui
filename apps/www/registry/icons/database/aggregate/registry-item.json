@@ -3,7 +3,7 @@
   "name": "icons-database-aggregate",
   "type": "registry:ui",
   "title": "Aggregate",
-  "description": "Aggregate icon from Database category.",
+  "description": "Aggregate icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

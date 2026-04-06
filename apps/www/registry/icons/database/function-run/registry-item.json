@@ -3,7 +3,7 @@
   "name": "icons-database-function-run",
   "type": "registry:ui",
   "title": "Function Run",
-  "description": "Function Run icon from Database category.",
+  "description": "Function Run icon from database category.",
   "registryDependencies": [
     "icons-database-types"
   ],

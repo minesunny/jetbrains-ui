@@ -3,7 +3,7 @@
   "name": "icons-nodes-pp-web",
   "type": "registry:ui",
   "title": "Pp Web",
-  "description": "Pp Web icon from Nodes category.",
+  "description": "Pp Web icon from nodes category.",
   "registryDependencies": [
     "icons-nodes-types"
   ],
