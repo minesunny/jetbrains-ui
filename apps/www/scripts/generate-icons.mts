@@ -4,7 +4,7 @@ import { transform } from '@svgr/core';
 
 // ─── Configuration ───────────────────────────────────────────────────────────
 
-const SOURCE_ROOT = path.join(process.cwd(), '..', '..', 'public', 'icons');
+const SOURCE_ROOT = path.join(process.cwd(), 'registry', 'icons');
 const REGISTRY_ROOT = path.join(process.cwd(), 'registry', 'icons');
 
 const CATEGORY_MAP: Record<string, string> = {
@@ -18,7 +18,7 @@ const CATEGORY_MAP: Record<string, string> = {
   Nodes: 'nodes',
   Run: 'run',
   Run_Configurations: 'run-configurations',
-  Termial: 'terminal',
+  Terminal: 'terminal',
   VCS: 'vcs',
 };
 
@@ -40,7 +40,7 @@ const FLATTEN_CATEGORIES = new Set([
 // Manual override map for General subcategory names
 // Source directory name → registry subcategory name
 const GENERAL_SUBCATEGORY_MAP: Record<string, string> = {
-  'AI_Asisstant': 'ai-assistant',
+  'AI_Assistant': 'ai-assistant',
   'Access_Modifiers': 'access-modifiers',
   'Actions': 'actions',
   'Bookmarks': 'bookmarks',
@@ -53,7 +53,7 @@ const GENERAL_SUBCATEGORY_MAP: Record<string, string> = {
   'New_UI': 'new-ui',
   'Object_Browser': 'object-browser',
   'Progress_bar': 'progress-bar',
-  'Raiting': 'rating',
+  'Rating': 'rating',
   'Setting_Sync': 'setting-sync',
   'Spinner': 'spinner',
   'Status': 'status',
@@ -291,11 +291,7 @@ function generateRegistryItemJson(
       type: 'registry:ui',
       title: entry.pascalName.replace(/([A-Z])/gu, ' $1').trim(),
       description: `${entry.pascalName.replace(/([A-Z])/gu, ' $1').trim()} icon from ${entry.category} category.`,
-      registryDependencies: [
-        entry.subcategory
-          ? `icons-${entry.category}-types`
-          : `icons-${entry.category}-types`,
-      ],
+      registryDependencies: [`icons-${entry.category}-types`],
       files: [
         {
           path: `registry/icons/${iconPath}/index.tsx`,
