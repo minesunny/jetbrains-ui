@@ -2,8 +2,7 @@
 
 import * as React from 'react';
 import * as SelectPrimitive from '@radix-ui/react-select';
-import { ChevronDown } from '@/registry/icons/general/general/chevron-down';
-import { Checkmark } from '@/registry/icons/general/general/checkmark';
+import { SVG } from '@/registry/components/svg';
 
 import { cn } from '@workspace/ui/lib/utils';
 
@@ -73,7 +72,7 @@ const ComboBoxTrigger = React.forwardRef<
       'dark:[&[aria-invalid=true]:focus-visible]:border-red-7 dark:[&[aria-invalid=true]:focus-visible_[data-slot=combo-box-icon]]:border-l-red-7',
       "dark:[&[aria-invalid=true][data-state='open']]:border-red-7 dark:[&[aria-invalid=true][data-state='open']_[data-slot=combo-box-icon]]:border-l-red-7",
       "dark:[&[aria-invalid=true][data-active='true']]:border-red-7 dark:[&[aria-invalid=true][data-active='true']_[data-slot=combo-box-icon]]:border-l-red-7",
-      size === 'md' ? 'w-[224px]' : 'w-[224px]',
+      size === 'md' ? 'w-[224px]' : 'w-full',
       className,
     )}
     {...props}
@@ -84,12 +83,12 @@ const ComboBoxTrigger = React.forwardRef<
       className="inline-flex h-full w-7 shrink-0 items-center justify-center self-stretch border-l"
     >
       <span className="inline-flex transition-transform duration-150">
-        <ChevronDown size="md" className="[&>path]:stroke-current" />
+        <SVG name="general/general/chevron-down" size="md" />
       </span>
     </SelectPrimitive.Icon>
   </SelectPrimitive.Trigger>
 ));
-ComboBoxTrigger.displayName = SelectPrimitive.Trigger.displayName;
+ComboBoxTrigger.displayName = 'ComboBoxTrigger';
 
 const ComboBoxContent = React.forwardRef<
   React.ComponentRef<typeof SelectPrimitive.Content>,
@@ -114,7 +113,7 @@ const ComboBoxContent = React.forwardRef<
     </SelectPrimitive.Content>
   </SelectPrimitive.Portal>
 ));
-ComboBoxContent.displayName = SelectPrimitive.Content.displayName;
+ComboBoxContent.displayName = 'ComboBoxContent';
 
 const ComboBoxLabel = React.forwardRef<
   React.ComponentRef<typeof SelectPrimitive.Label>,
@@ -129,7 +128,7 @@ const ComboBoxLabel = React.forwardRef<
     {...props}
   />
 ));
-ComboBoxLabel.displayName = SelectPrimitive.Label.displayName;
+ComboBoxLabel.displayName = 'ComboBoxLabel';
 
 const ComboBoxItem = React.forwardRef<
   React.ComponentRef<typeof SelectPrimitive.Item>,
@@ -152,13 +151,13 @@ const ComboBoxItem = React.forwardRef<
   >
     <span className="absolute left-2 inline-flex size-[14px] items-center justify-center text-blue-4 dark:text-blue-6">
       <SelectPrimitive.ItemIndicator>
-        <Checkmark size="xs" />
+        <SVG name="general/general/checkmark" size="xs" />
       </SelectPrimitive.ItemIndicator>
     </span>
     <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
   </SelectPrimitive.Item>
 ));
-ComboBoxItem.displayName = SelectPrimitive.Item.displayName;
+ComboBoxItem.displayName = 'ComboBoxItem';
 
 const ComboBoxSeparator = React.forwardRef<
   React.ComponentRef<typeof SelectPrimitive.Separator>,
@@ -170,7 +169,7 @@ const ComboBoxSeparator = React.forwardRef<
     {...props}
   />
 ));
-ComboBoxSeparator.displayName = SelectPrimitive.Separator.displayName;
+ComboBoxSeparator.displayName = 'ComboBoxSeparator';
 
 export {
   ComboBox,

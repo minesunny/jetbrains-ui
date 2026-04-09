@@ -5,7 +5,6 @@ import { AlertDialog as AlertPrimitive } from 'radix-ui';
 
 import { cn } from '@workspace/ui/lib/utils';
 import { SVG } from '@/registry/components/svg';
-import { QuestionMark } from '@/registry/icons/general/general';
 import { buttonVariants } from '@/registry/components/button';
 import { Checkbox } from '@/registry/components/checkbox';
 
@@ -120,6 +119,7 @@ function AlertHeader({
   ...props
 }: React.ComponentProps<'div'>) {
   const { check } = React.useContext(AlertContentContext);
+  const checkboxId = React.useId();
 
   return (
     <div
@@ -133,9 +133,9 @@ function AlertHeader({
       {children}
       {check && (
         <div className="flex items-center gap-2 py-2">
-          <Checkbox id="alert-do-not-ask" />
+          <Checkbox id={checkboxId} />
           <label
-            htmlFor="alert-do-not-ask"
+            htmlFor={checkboxId}
             className="text-[13px] leading-4 font-medium"
           >
             Do not ask again
@@ -205,7 +205,7 @@ function AlertFooter({
       )}
       {...props}
     >
-      {help && <QuestionMark />}
+      {help && <SVG name="general/general/question-mark" />}
       {children}
     </div>
   );

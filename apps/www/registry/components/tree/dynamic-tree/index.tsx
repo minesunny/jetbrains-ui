@@ -58,12 +58,12 @@ function TreeItemDisclosure({
   onToggle: () => void;
 }) {
   return (
-    <span
+    <button
+      type="button"
       data-slot="tree-item-disclosure"
       data-value={itemId}
       data-expanded={isExpanded ? 'true' : undefined}
       data-loading={isLoading ? 'true' : undefined}
-      role="button"
       tabIndex={isDisabled ? -1 : 0}
       aria-label={
         isLoading
@@ -72,18 +72,12 @@ function TreeItemDisclosure({
             ? `Collapse ${itemLabel}`
             : `Expand ${itemLabel}`
       }
-      aria-disabled={isDisabled ? true : undefined}
+      aria-expanded={isExpanded}
+      disabled={isDisabled}
       className="relative z-10 inline-flex size-4 shrink-0 items-center justify-center cursor-default outline-none disabled:cursor-not-allowed"
       onClick={(event) => {
         event.stopPropagation();
         onToggle();
-      }}
-      onKeyDown={(event) => {
-        if (isDisabled) return;
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          onToggle();
-        }
       }}
     >
       <SVG
@@ -91,15 +85,15 @@ function TreeItemDisclosure({
           isLoading
             ? 'general/spinner/loader'
             : isExpanded
-              ? 'chevron-down'
-              : 'chevron-right'
+              ? 'general/general/chevrondown'
+              : 'general/general/chevronright'
         }
         size="md"
         className={
           isLoading ? 'animate-spin [animation-duration:900ms]' : undefined
         }
       />
-    </span>
+    </button>
   );
 }
 
@@ -117,8 +111,14 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
   const itemLabel = itemData?.label ?? item.getId();
   const isDisabled = itemData?.disabled;
 
+  const level = item.getItemMeta().level;
+
   return (
     <div
+      role="treeitem"
+      aria-level={level}
+      aria-expanded={item.isFolder() ? item.isExpanded() : undefined}
+      aria-selected={item.isSelected()}
       data-slot="tree-item"
       data-value={item.getId()}
       className="my-0.5 w-full p-0"
@@ -134,7 +134,6 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
           item.isFolder() && item.isExpanded() ? 'true' : undefined
         }
         data-loading={item.isLoading() ? 'true' : undefined}
-        aria-selected={item.isSelected()}
         aria-disabled={isDisabled ? true : undefined}
         aria-busy={item.isLoading() ? true : undefined}
         tabIndex={isDisabled ? -1 : (resolvedTabIndex ?? -1)}
@@ -143,8 +142,8 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
             ...resolvedStyle,
             paddingLeft: `${
               16 +
-              item.getItemMeta().level * indent +
-              Math.max(0, item.getItemMeta().level - 1) * 2
+              level * indent +
+              Math.max(0, level - 1) * 2
             }px`,
           } as React.CSSProperties
         }
