@@ -1,6 +1,6 @@
 ---
 title: Icons
-description: JetBrains-style icon library with multiple sizes and light/dark themes.
+description: JetBrains-style icon library using SVG sprites with light/dark theme support.
 ---
 
 import { SVG } from '@/registry/components/svg';
@@ -8,20 +8,90 @@ import { IconUsagePreview } from '@/components/docs/icons/icon-usage-preview';
 
 ## Overview
 
-A JetBrains UI icon library provided as standalone React components with TypeScript support. It includes 20 categories such as General, Tool Windows, Actions, and Editor.
+JetBrains UI icons are provided as SVG sprites with automatic light/dark theme switching. The icons are stored in `registry/icons` and compiled into a sprite sheet at build time.
 
-### Usage
+## Usage
 
 <IconUsagePreview />
 
 ```tsx
-import { Add } from '@/components/jetbrains-ui/icons/general/general';
+import { SVG } from '@/registry/components/svg';
 
-<Add />
+// Basic usage with icon name
+<SVG name="general/spinner/loader" />
 
-<Add size="lg" mode="dark" />
+// With size
+<SVG name="general/spinner/loader" size="lg" />
 
-<Add aria-label="Add icon" />
+// With accessibility label
+<SVG name="general/spinner/loader" aria-label="Loading" />
+```
+
+### Installation
+
+1. Ensure SVG files are placed in `registry/icons/{Category}/{IconName}/` with naming pattern `{IconName}_Theme-Light.svg` and `{IconName}_Theme-Dark.svg`
+
+2. Configure webpack to load SVGs as sprites:
+
+```js
+// next.config.js
+{
+  webpack: (config) => {
+    const fileLoaderRule = config.module.rules.find(
+      (rule) => rule.test?.test?.('.svg'),
+    );
+
+    config.module.rules.push({
+      test: /\.svg$/i,
+      include: path.join(process.cwd(), 'registry', 'icons'),
+      use: [
+        {
+          loader: 'svg-sprite-loader',
+          options: {
+            symbolId: (filePath) => {
+              // Generate sprite ID from file path
+              // e.g., registry/icons/General/Spinner/loader/loader_Theme-Light.svg
+              // -> icon-general-spinner-loader-light
+              const relativePath = filePath
+                .replace(/^.*\/registry\/icons\//, '')
+                .replace(/\.svg$/i, '');
+
+              const themeMatch = relativePath.match(/_Theme-(Light|Dark)$/);
+              const theme = themeMatch ? themeMatch[1].toLowerCase() : 'light';
+              const pathWithoutTheme = relativePath.replace(/_Theme-(Light|Dark)$/, '');
+              const parts = pathWithoutTheme.split('/');
+              const category = parts[0]?.replace(/_/g, '-').toLowerCase() ?? '';
+              const iconName = parts[parts.length - 1]?.replace(/_/g, '-').toLowerCase() ?? '';
+
+              let subcategory = '';
+              if (parts.length > 2) {
+                subcategory = parts.slice(1, -1).map(p => p.replace(/_/g, '-').toLowerCase()).join('-');
+              }
+
+              if (subcategory) {
+                return `icon-${category}-${subcategory}-${iconName}-${theme}`;
+              }
+              return `icon-${category}-${iconName}-${theme}`;
+            },
+          },
+        },
+        'svg-transform-loader',
+      ],
+    });
+
+    if (fileLoaderRule) {
+      fileLoaderRule.exclude = path.join(process.cwd(), 'registry', 'icons');
+    }
+
+    return config;
+  },
+}
+```
+
+3. Generate registry metadata:
+
+```bash
+pnpm --filter jetbrains-ui icons:registry
 ```
 
 ## Browse Icons
