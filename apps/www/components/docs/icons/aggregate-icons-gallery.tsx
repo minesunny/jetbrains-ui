@@ -3,6 +3,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { cn } from '@workspace/ui/lib/utils';
 import { useIconMode } from '@/components/docs/icons/use-icon-mode';
+import { CopyButton } from '@/components/docs/icons/shared';
 
 type SvgSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 type SvgMode = 'light' | 'dark';
@@ -53,23 +54,6 @@ function extractSvgsFromPack(pack: SvgPackLoader, mod: SvgModule): SvgEntry[] {
 
     return acc;
   }, []);
-}
-
-function CopyButton({ text }: { text: string }) {
-  const [copied, setCopied] = useState(false);
-
-  return (
-    <button
-      onClick={async () => {
-        await navigator.clipboard.writeText(text);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 1500);
-      }}
-      className="shrink-0 px-2 py-0.5 text-[10px] rounded bg-fd-muted hover:bg-fd-accent text-fd-muted-foreground transition-colors"
-    >
-      {copied ? 'Copied!' : 'Copy'}
-    </button>
-  );
 }
 
 export function AggregateIconsGallery({
