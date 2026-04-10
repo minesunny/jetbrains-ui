@@ -8,7 +8,7 @@
     "icons:registry": "tsx ./scripts/generate-registry-items.mts",
     "start": "next start",
     "postinstall": "fumadocs-mdx",
-    "registry:build:ci": "tsx ./scripts/build-registry.mts",
+    "registry:build:ci": "tsx ./scripts/generate-registry-items.mts && tsx ./scripts/build-registry.mts",
     "registry:build": "pnpm format:write && tsx ./scripts/build-registry.mts && pnpm format:write",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
