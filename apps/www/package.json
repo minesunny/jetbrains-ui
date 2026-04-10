@@ -64,6 +64,7 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^5.1.4",
+    "@workspace/eslint-config": "workspace:^",
     "eslint": "^9.34.0",
     "jsdom": "^28.1.0",
     "postcss": "^8.5.6",
