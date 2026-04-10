@@ -3,85 +3,60 @@
 import * as React from 'react';
 import { useTheme } from 'next-themes';
 
-import { SVG_REGISTRY } from './svg-registry';
-import type { SvgProps, SvgSize } from '@/registry/icons/general/types';
+// Auto-import all SVGs from registry/icons via webpack require.context
+// svg-sprite-loader processes each into the global sprite sheet
+// @ts-expect-error webpack-specific API
+const svgIcons = require.context('@registry/icons/', true, /\.svg$/);
+svgIcons.keys().forEach(svgIcons);
 
-const iconPixelSizeMap: Record<SvgSize, number> = {
+const sizeMap = {
   xs: 12,
   sm: 14,
   md: 16,
   lg: 20,
   xl: 24,
-};
-
-const ARTBOARD_RATIO = 14 / 16;
-
-function toIconSize(size: SvgSize | number = 'md'): SvgSize {
-  if (typeof size !== 'number') {
-    return size;
-  }
-
-  if (size <= 12) return 'xs';
-  if (size <= 14) return 'sm';
-  if (size <= 18) return 'md';
-  if (size <= 22) return 'lg';
-  return 'xl';
-}
-
-export type SVGProps = Pick<SvgProps, 'className' | 'aria-label'> & {
-  name: string;
-  size?: SvgSize | number;
-};
+} as const;
 
 export function SVG({
   name,
   size = 'md',
   className,
   'aria-label': ariaLabel,
-}: SVGProps) {
+}: {
+  name: string;
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | number;
+  className?: string;
+  'aria-label'?: string;
+}) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
-  const loader = SVG_REGISTRY[name];
-  const LazyIcon = React.useMemo(
-    () => (loader ? React.lazy(loader) : null),
-    [loader],
-  );
 
   React.useEffect(() => {
     setMounted(true);
   }, []);
 
-  if (!LazyIcon) {
-    return null;
-  }
-
   const mode = mounted && resolvedTheme === 'dark' ? 'dark' : 'light';
-  const iconSize = toIconSize(size);
-  const artboardSize = typeof size === 'number' ? size : iconPixelSizeMap[size];
-  const renderedSize = iconPixelSizeMap[iconSize];
-  const scale = (artboardSize * ARTBOARD_RATIO) / renderedSize;
+  const spriteId = `icon-${name.replace(/\//g, '-').toLowerCase()}-${mode}`;
+
+  const renderedSize = typeof size === 'number' ? size : sizeMap[size];
 
   return (
-    <React.Suspense fallback={null}>
-      <span
-        data-slot="svg"
-        className="inline-flex shrink-0 items-center justify-center align-middle leading-none"
-        style={{ width: `${artboardSize}px`, height: `${artboardSize}px` }}
+    <span
+      data-slot="svg"
+      className="inline-flex shrink-0 items-center justify-center align-middle leading-none"
+      style={{ width: `${renderedSize}px`, height: `${renderedSize}px` }}
+    >
+      <svg
+        data-slot="svg-artboard"
+        className={className}
+        width={renderedSize}
+        height={renderedSize}
+        viewBox="0 0 16 16"
+        aria-label={ariaLabel}
       >
-        <span
-          data-slot="svg-artboard"
-          className="inline-flex items-center justify-center"
-          style={{ transform: `scale(${scale})`, transformOrigin: 'center' }}
-        >
-          <LazyIcon
-            size={iconSize}
-            mode={mode}
-            className={className}
-            aria-label={ariaLabel}
-          />
-        </span>
-      </span>
-    </React.Suspense>
+        <use href={`#${spriteId}`} />
+      </svg>
+    </span>
   );
 }
 

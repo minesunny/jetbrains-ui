@@ -57,7 +57,7 @@ Checkbox 用于在列表中选择多个项目。
 ```tsx
 const [checked, setChecked] = React.useState<boolean | 'indeterminate'>(false);
 
-<Checkbox indeterminate checked={checked} onCheckedChange={setChecked} />;
+<Checkbox checked={checked} onCheckedChange={setChecked} />;
 ```
 
 ### 错误状态
@@ -94,12 +94,6 @@ const [checked, setChecked] = React.useState<boolean | 'indeterminate'>(false);
       description: '选中状态变化时的回调',
       type: '(checked: boolean | "indeterminate") => void',
       required: false,
-    },
-    indeterminate: {
-      description: '开启三态模式（未选中 -> 已选中 -> 半选中）',
-      type: 'boolean',
-      required: false,
-      default: 'false',
     },
     label: {
       description: '复选框标签文案或自定义 React 节点',

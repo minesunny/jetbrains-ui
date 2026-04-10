@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-general-search",
+  "name": "icons-general-General/search",
   "type": "registry:ui",
-  "title": "Search",
-  "description": "Search icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "General/search",
+  "description": "General/search icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/general/search/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/search/index.tsx"
+      "path": "registry/icons/General/General/search/search_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/General/search/search_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "search",
+      "General/search",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

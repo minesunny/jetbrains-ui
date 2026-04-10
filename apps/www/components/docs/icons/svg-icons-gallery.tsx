@@ -4,7 +4,11 @@ import React, { useState, useMemo } from 'react';
 import { SVG } from '@/registry/components/svg';
 import { cn } from '@workspace/ui/lib/utils';
 import { useIconMode } from '@/components/docs/icons/use-icon-mode';
-import { CopyButton, SizeToggle, ModeToggle } from '@/components/docs/icons/shared';
+import {
+  CopyButton,
+  SizeToggle,
+  ModeToggle,
+} from '@/components/docs/icons/shared';
 import type { SvgSize } from '@/components/docs/icons/shared';
 
 interface SvgIcon {
@@ -99,13 +103,12 @@ export function SvgIconsGallery({
         <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-2">
           {filteredIcons.map((icon) => {
             const isExpanded = expandedIcon === icon.name;
-            const displayName = icon.label ?? icon.name.split('/').pop() ?? icon.name;
+            const displayName =
+              icon.label ?? icon.name.split('/').pop() ?? icon.name;
             return (
               <div key={icon.name} className="relative">
                 <button
-                  onClick={() =>
-                    setExpandedIcon(isExpanded ? null : icon.name)
-                  }
+                  onClick={() => setExpandedIcon(isExpanded ? null : icon.name)}
                   aria-label={displayName}
                   className={cn(
                     'w-full aspect-square flex flex-col items-center justify-start p-3 border rounded-lg transition-all',

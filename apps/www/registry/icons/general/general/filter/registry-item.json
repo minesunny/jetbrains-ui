@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-general-filter",
+  "name": "icons-general-General/filter",
   "type": "registry:ui",
-  "title": "Filter",
-  "description": "Filter icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "General/filter",
+  "description": "General/filter icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/general/filter/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/filter/index.tsx"
+      "path": "registry/icons/General/General/filter/filter_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/General/filter/filter_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "filter",
+      "General/filter",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

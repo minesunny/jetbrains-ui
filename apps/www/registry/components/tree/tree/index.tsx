@@ -3,8 +3,7 @@
 import * as React from 'react';
 
 import { cn } from '@workspace/ui/lib/utils';
-import { ChevronDown } from '@/registry/icons/general/general/chevron-down';
-import { ChevronRight } from '@/registry/icons/general/general/chevron-right';
+import { SVG } from '@/registry/components/svg';
 import { ScrollArea, ScrollViewport } from '@/registry/components/scroll-area';
 
 type TreeContextValue = {
@@ -404,9 +403,17 @@ function TreeItem({
             disabled={disabled}
           >
             {expanded ? (
-              <ChevronDown className="scale-[0.78]" size="md" />
+              <SVG
+                name="general/general/chevron-down"
+                className="scale-[0.78]"
+                size="md"
+              />
             ) : (
-              <ChevronRight className="scale-[0.78]" size="md" />
+              <SVG
+                name="general/general/chevron-right"
+                className="scale-[0.78]"
+                size="md"
+              />
             )}
           </button>
         ) : (

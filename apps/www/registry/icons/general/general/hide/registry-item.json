@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-general-hide",
+  "name": "icons-general-General/hide",
   "type": "registry:ui",
-  "title": "Hide",
-  "description": "Hide icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "General/hide",
+  "description": "General/hide icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/general/hide/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/hide/index.tsx"
+      "path": "registry/icons/General/General/hide/hide_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/General/hide/hide_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "hide",
+      "General/hide",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

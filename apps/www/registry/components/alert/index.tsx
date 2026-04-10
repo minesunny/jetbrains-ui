@@ -22,8 +22,6 @@ const AlertContentContext = React.createContext<AlertContentContextValue>({
   size: 'auto',
 });
 
-
-
 function Alert({ ...props }: React.ComponentProps<typeof AlertPrimitive.Root>) {
   return <AlertPrimitive.Root data-slot="alert" {...props} />;
 }
@@ -124,10 +122,7 @@ function AlertHeader({
   return (
     <div
       data-slot="alert-header"
-      className={cn(
-        'flex min-h-0 flex-col items-start gap-2',
-        className,
-      )}
+      className={cn('flex min-h-0 flex-col items-start gap-2', className)}
       {...props}
     >
       {children}

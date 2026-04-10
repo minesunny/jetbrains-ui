@@ -33,6 +33,7 @@ dist
 apps/www/__registry__/index.tsx
 apps/www/public/r/
 apps/www/registry/components/svg/registry.ts
+apps/www/registry/icons/**/registry-item.json
 
 
 # Debug

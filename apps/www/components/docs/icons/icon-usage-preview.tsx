@@ -4,7 +4,12 @@ import React, { useState } from 'react';
 import { SVG } from '@/registry/components/svg';
 import { cn } from '@workspace/ui/lib/utils';
 import { useIconMode } from '@/components/docs/icons/use-icon-mode';
-import { sizes, sizeLabels, SizeToggle, ModeToggle } from '@/components/docs/icons/shared';
+import {
+  sizes,
+  sizeLabels,
+  SizeToggle,
+  ModeToggle,
+} from '@/components/docs/icons/shared';
 
 const iconNames = [
   'general/general/search',

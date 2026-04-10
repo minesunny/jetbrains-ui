@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-general-subtypes",
+  "name": "icons-general-General/subtypes",
   "type": "registry:ui",
-  "title": "Subtypes",
-  "description": "Subtypes icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "General/subtypes",
+  "description": "General/subtypes icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/general/subtypes/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/subtypes/index.tsx"
+      "path": "registry/icons/General/General/subtypes/subtypes_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/General/subtypes/subtypes_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "subtypes",
+      "General/subtypes",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

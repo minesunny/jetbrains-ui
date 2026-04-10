@@ -141,9 +141,7 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
           {
             ...resolvedStyle,
             paddingLeft: `${
-              16 +
-              level * indent +
-              Math.max(0, level - 1) * 2
+              16 + level * indent + Math.max(0, level - 1) * 2
             }px`,
           } as React.CSSProperties
         }
