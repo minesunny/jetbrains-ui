@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-actions-deploy",
+  "name": "icons-general-Actions/deploy",
   "type": "registry:ui",
-  "title": "Deploy",
-  "description": "Deploy icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "Actions/deploy",
+  "description": "Actions/deploy icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/actions/deploy/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/actions/deploy/index.tsx"
+      "path": "registry/icons/General/Actions/deploy/deploy_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Actions/deploy/deploy_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "deploy",
+      "Actions/deploy",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

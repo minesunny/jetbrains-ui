@@ -3,12 +3,7 @@
 import * as React from 'react';
 
 import { Tree, TreeItem } from '@/registry/components/tree/tree';
-import {
-  Ignored,
-  Markdown,
-  React as ReactFileType,
-} from '@/registry/icons/file-types';
-import { Folder } from '@/registry/icons/nodes';
+import { SVG } from '@/registry/components/svg';
 
 type TreeDemoState = 'default' | 'selected' | 'disabled' | 'collapsed';
 
@@ -45,49 +40,57 @@ export default function TreeDemo({ state = 'default' }: TreeDemoProps) {
         <TreeItem
           value="tree-root"
           label="jetbrains-ui"
-          icon={<Folder />}
+          icon={<SVG name="nodes/nodes/folder" />}
           endContent="12"
         >
-          <TreeItem value="tree-git" label=".gitignore" icon={<Ignored />} />
+          <TreeItem
+            value="tree-git"
+            label=".gitignore"
+            icon={<SVG name="file-types/fileTypes/ignored" />}
+          />
 
           <TreeItem
             value="tree-components"
             label="components"
-            icon={<Folder />}
+            icon={<SVG name="nodes/nodes/folder" />}
             endContent="4"
           >
             <TreeItem
               value="tree-dialog"
               label="dialog"
-              icon={<Folder />}
+              icon={<SVG name="nodes/nodes/folder" />}
               endContent="2"
             >
               <TreeItem
                 value="tree-file-banner"
                 label="banner.tsx"
-                icon={<ReactFileType />}
+                icon={<SVG name="file-types/fileTypes/react" />}
                 disabled={lockBannerFile}
               />
               <TreeItem
                 value="tree-file-rd-dialog"
                 label="rd-dialog.tsx"
-                icon={<ReactFileType />}
+                icon={<SVG name="file-types/fileTypes/react" />}
               />
             </TreeItem>
 
             <TreeItem
               value="tree-tree"
               label="tree.tsx"
-              icon={<ReactFileType />}
+              icon={<SVG name="file-types/fileTypes/react" />}
             />
             <TreeItem
               value="tree-toggle"
               label="toggle.tsx"
-              icon={<ReactFileType />}
+              icon={<SVG name="file-types/fileTypes/react" />}
             />
           </TreeItem>
 
-          <TreeItem value="tree-readme" label="README.md" icon={<Markdown />} />
+          <TreeItem
+            value="tree-readme"
+            label="README.md"
+            icon={<SVG name="file-types/fileTypes/markdown" />}
+          />
         </TreeItem>
       </Tree>
     </div>

@@ -4,14 +4,15 @@
   "type": "registry:ui",
   "title": "Breakpoint",
   "description": "Breakpoint icon from breakpoints category.",
-  "registryDependencies": [
-    "icons-breakpoints-types"
-  ],
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/breakpoints/breakpoint/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint/index.tsx"
+      "path": "registry/icons/Breakpoints/breakpoint/breakpoint_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Breakpoints/breakpoint/breakpoint_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
@@ -20,6 +21,8 @@
       "icon",
       "breakpoints",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

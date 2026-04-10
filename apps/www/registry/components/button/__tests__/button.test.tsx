@@ -51,7 +51,7 @@ describe('Button', () => {
     render(<Button variant="secondary">Secondary</Button>);
     const btn = screen.getByRole('button');
     expect(btn).toHaveAttribute('data-variant', 'secondary');
-    expect(btn.className).toContain('bg-transparent');
+    expect(btn.className).toContain('bg-blue-4');
   });
 
   it('passes className through', () => {
@@ -129,7 +129,7 @@ describe('buttonVariants', () => {
 
   it('includes secondary-specific classes for secondary variant', () => {
     const result = buttonVariants({ variant: 'secondary' });
-    expect(result).toContain('bg-transparent');
+    expect(result).toContain('bg-blue-4');
   });
 
   it('defaults to primary variant when no variant specified', () => {

@@ -18,6 +18,7 @@
     "paths": {
       "@/.source": ["./.source/index.ts"],
       "@/*": ["./*"],
+      "@registry/*": ["./registry/*"],
       "@components/*": ["./registry/components/*"],
       "components/*": ["./registry/components/*"]
     },

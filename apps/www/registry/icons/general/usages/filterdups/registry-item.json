@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-usages-filterdups",
+  "name": "icons-general-Usages/filterdups",
   "type": "registry:ui",
-  "title": "Filterdups",
-  "description": "Filterdups icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "Usages/filterdups",
+  "description": "Usages/filterdups icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/usages/filterdups/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/usages/filterdups/index.tsx"
+      "path": "registry/icons/General/Usages/filterdups/filterdups_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Usages/filterdups/filterdups_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "filterdups",
+      "Usages/filterdups",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-general-pin",
+  "name": "icons-general-General/pin",
   "type": "registry:ui",
-  "title": "Pin",
-  "description": "Pin icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "General/pin",
+  "description": "General/pin icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/general/pin/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/pin/index.tsx"
+      "path": "registry/icons/General/General/pin/pin_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/General/pin/pin_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "pin",
+      "General/pin",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

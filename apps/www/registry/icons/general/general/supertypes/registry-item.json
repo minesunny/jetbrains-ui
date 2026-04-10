@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-general-supertypes",
+  "name": "icons-general-General/supertypes",
   "type": "registry:ui",
-  "title": "Supertypes",
-  "description": "Supertypes icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "General/supertypes",
+  "description": "General/supertypes icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/general/supertypes/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/supertypes/index.tsx"
+      "path": "registry/icons/General/General/supertypes/supertypes_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/General/supertypes/supertypes_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "supertypes",
+      "General/supertypes",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

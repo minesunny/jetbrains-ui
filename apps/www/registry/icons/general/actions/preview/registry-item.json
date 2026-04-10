@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-actions-preview",
+  "name": "icons-general-Actions/preview",
   "type": "registry:ui",
-  "title": "Preview",
-  "description": "Preview icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "Actions/preview",
+  "description": "Actions/preview icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/actions/preview/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/actions/preview/index.tsx"
+      "path": "registry/icons/General/Actions/preview/preview_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/Actions/preview/preview_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "preview",
+      "Actions/preview",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

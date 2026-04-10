@@ -4,14 +4,15 @@
   "type": "registry:ui",
   "title": "Frame",
   "description": "Frame icon from debugger category.",
-  "registryDependencies": [
-    "icons-debugger-types"
-  ],
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/debugger/frame/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/frame/index.tsx"
+      "path": "registry/icons/Debugger/frame/frame_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Debugger/frame/frame_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
@@ -20,6 +21,8 @@
       "icon",
       "debugger",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

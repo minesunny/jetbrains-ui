@@ -3,1095 +3,884 @@
   "name": "icons-database",
   "type": "registry:ui",
   "title": "Database Icons",
-  "description": "All 216 icons from the Database category.",
-  "registryDependencies": [
-    "icons-database-types"
-  ],
+  "description": "All icons from the database category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/database/index.ts",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/index.ts"
+      "path": "registry/icons/Database/DataGrip/SQLDMLStatement/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sqldml-statement/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sqldml-statement/index.tsx"
+      "path": "registry/icons/Database/DataGrip/SQLGroupByType/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sql-group-by-type/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sql-group-by-type/index.tsx"
+      "path": "registry/icons/Database/DataGrip/SQLOtherStatement/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sql-other-statement/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sql-other-statement/index.tsx"
+      "path": "registry/icons/Database/DataGrip/SQLSelectStatement/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sql-select-statement/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sql-select-statement/index.tsx"
+      "path": "registry/icons/Database/DataGrip/UDFScript/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/udf-script/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/udf-script/index.tsx"
+      "path": "registry/icons/Database/DataGrip/accessMethod/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/access-method/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/access-method/index.tsx"
+      "path": "registry/icons/Database/DataGrip/adapterScript/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/adapter-script/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/adapter-script/index.tsx"
+      "path": "registry/icons/Database/DataGrip/aggregate/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/aggregate/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/aggregate/index.tsx"
+      "path": "registry/icons/Database/DataGrip/argument/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/argument/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/argument/index.tsx"
+      "path": "registry/icons/Database/DataGrip/binaryData/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/binary-data/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/binary-data/index.tsx"
+      "path": "registry/icons/Database/DataGrip/blueKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/blue-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/blue-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/body/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/body/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/body/index.tsx"
+      "path": "registry/icons/Database/DataGrip/cassandraFileType/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/cassandra-file-type/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/cassandra-file-type/index.tsx"
+      "path": "registry/icons/Database/DataGrip/checkConstraint/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/check-constraint/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/check-constraint/index.tsx"
+      "path": "registry/icons/Database/DataGrip/collation/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/collation/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/collation/index.tsx"
+      "path": "registry/icons/Database/DataGrip/collection/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/collection/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/collection/index.tsx"
+      "path": "registry/icons/Database/DataGrip/collectionKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/collection-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/collection-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/collectionType/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/collection-type/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/collection-type/index.tsx"
+      "path": "registry/icons/Database/DataGrip/column/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnBlueKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-blue-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-blue-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnBlueKeyDot/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-blue-key-dot/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-blue-key-dot/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnBlueKeyDotIndex/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-blue-key-dot-index/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-blue-key-dot-index/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnBlueKeyIndex/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-blue-key-index/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-blue-key-index/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnDot/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-dot/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-dot/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnDotIndex/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-dot-index/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-dot-index/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnFilter/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-filter/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-filter/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnGoldBlueKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-gold-blue-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-gold-blue-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnGoldBlueKeyDot/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-gold-blue-key-dot/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-gold-blue-key-dot/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnGoldBlueKeyDotIndex/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-gold-blue-key-dot-index/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-gold-blue-key-dot-index/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnGoldBlueKeyIndex/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-gold-blue-key-index/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-gold-blue-key-index/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnGoldKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-gold-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-gold-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnGoldKeyDot/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-gold-key-dot/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-gold-key-dot/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnGoldKeyDotIndex/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-gold-key-dot-index/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-gold-key-dot-index/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnGoldKeyIndex/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-gold-key-index/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-gold-key-index/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnGreyKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-grey-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-grey-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/columnIndex/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/column-index/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/column-index/index.tsx"
+      "path": "registry/icons/Database/DataGrip/commit/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/commit/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/commit/index.tsx"
+      "path": "registry/icons/Database/DataGrip/connector/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/connector/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/connector/index.tsx"
+      "path": "registry/icons/Database/DataGrip/consoleRun/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/console-run/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/console-run/index.tsx"
+      "path": "registry/icons/Database/DataGrip/consoleShowPlan/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/console-show-plan/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/console-show-plan/index.tsx"
+      "path": "registry/icons/Database/DataGrip/dataFile/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/data-file/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/data-file/index.tsx"
+      "path": "registry/icons/Database/DataGrip/dataSchema/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/data-schema/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/data-schema/index.tsx"
+      "path": "registry/icons/Database/DataGrip/dataShare/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/data-share/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/data-share/index.tsx"
+      "path": "registry/icons/Database/DataGrip/dataStructure/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/data-structure/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/data-structure/index.tsx"
+      "path": "registry/icons/Database/DataGrip/dataStructureKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/data-structure-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/data-structure-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/database/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/database/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/database/index.tsx"
+      "path": "registry/icons/Database/DataGrip/databaseExternal/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/database-external/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/database-external/index.tsx"
+      "path": "registry/icons/Database/DataGrip/databaseLink/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/database-link/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/database-link/index.tsx"
+      "path": "registry/icons/Database/DataGrip/databaseObjectsGroup/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/database-objects-group/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/database-objects-group/index.tsx"
+      "path": "registry/icons/Database/DataGrip/ddlDataSourceOverlay/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/ddl-data-source-overlay/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/ddl-data-source-overlay/index.tsx"
+      "path": "registry/icons/Database/DataGrip/ddlDbms/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/ddl-dbms/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/ddl-dbms/index.tsx"
+      "path": "registry/icons/Database/DataGrip/defaultConstraint/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/default-constraint/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/default-constraint/index.tsx"
+      "path": "registry/icons/Database/DataGrip/editData/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/edit-data/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/edit-data/index.tsx"
+      "path": "registry/icons/Database/DataGrip/editorOutput/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/editor-output/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/editor-output/index.tsx"
+      "path": "registry/icons/Database/DataGrip/extension/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/extension/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/extension/index.tsx"
+      "path": "registry/icons/Database/DataGrip/externalSchema/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/external-schema/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/external-schema/index.tsx"
+      "path": "registry/icons/Database/DataGrip/fileFormat/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/file-format/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/file-format/index.tsx"
+      "path": "registry/icons/Database/DataGrip/foreignDatawrapper/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/foreign-datawrapper/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/foreign-datawrapper/index.tsx"
+      "path": "registry/icons/Database/DataGrip/foreignPartionTable/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/foreign-partion-table/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/foreign-partion-table/index.tsx"
+      "path": "registry/icons/Database/DataGrip/foreignServer/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/foreign-server/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/foreign-server/index.tsx"
+      "path": "registry/icons/Database/DataGrip/foreignTable/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/foreign-table/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/foreign-table/index.tsx"
+      "path": "registry/icons/Database/DataGrip/function/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/function/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/function/index.tsx"
+      "path": "registry/icons/Database/DataGrip/functionExternal/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/function-external/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/function-external/index.tsx"
+      "path": "registry/icons/Database/DataGrip/functionRun/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/function-run/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/function-run/index.tsx"
+      "path": "registry/icons/Database/DataGrip/goToTable/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/go-to-table/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/go-to-table/index.tsx"
+      "path": "registry/icons/Database/DataGrip/goldKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/gold-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/gold-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/greyKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/grey-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/grey-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/hashCluster/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/hash-cluster/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/hash-cluster/index.tsx"
+      "path": "registry/icons/Database/DataGrip/hashTable/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/hash-table/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/hash-table/index.tsx"
+      "path": "registry/icons/Database/DataGrip/hashTableKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/hash-table-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/hash-table-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/hiveFileType/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/hive-file-type/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/hive-file-type/index.tsx"
+      "path": "registry/icons/Database/DataGrip/index/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/index-icon/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/index-icon/index.tsx"
+      "path": "registry/icons/Database/DataGrip/indexCluster/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/index-cluster/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/index-cluster/index.tsx"
+      "path": "registry/icons/Database/DataGrip/indexFun/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/index-fun/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/index-fun/index.tsx"
+      "path": "registry/icons/Database/DataGrip/indexFunUnique/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/index-fun-unique/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/index-fun-unique/index.tsx"
+      "path": "registry/icons/Database/DataGrip/indexUnique/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/index-unique/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/index-unique/index.tsx"
+      "path": "registry/icons/Database/DataGrip/jsonDocument/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/json-document/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/json-document/index.tsx"
+      "path": "registry/icons/Database/DataGrip/jsonDocumentKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/json-document-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/json-document-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/killDataSourceProcess/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/kill-data-source-process/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/kill-data-source-process/index.tsx"
+      "path": "registry/icons/Database/DataGrip/levelAuto/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/level-auto/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/level-auto/index.tsx"
+      "path": "registry/icons/Database/DataGrip/levelOneDeclared/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/level-one-declared/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/level-one-declared/index.tsx"
+      "path": "registry/icons/Database/DataGrip/levelOneDetails/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/level-one-details/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/level-one-details/index.tsx"
+      "path": "registry/icons/Database/DataGrip/levelOneInherited/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/level-one-inherited/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/level-one-inherited/index.tsx"
+      "path": "registry/icons/Database/DataGrip/levelThreeDeclared/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/level-three-declared/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/level-three-declared/index.tsx"
+      "path": "registry/icons/Database/DataGrip/levelThreeDetails/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/level-three-details/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/level-three-details/index.tsx"
+      "path": "registry/icons/Database/DataGrip/levelThreeInherited/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/level-three-inherited/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/level-three-inherited/index.tsx"
+      "path": "registry/icons/Database/DataGrip/levelTwoDeclared/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/level-two-declared/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/level-two-declared/index.tsx"
+      "path": "registry/icons/Database/DataGrip/levelTwoDetails/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/level-two-details/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/level-two-details/index.tsx"
+      "path": "registry/icons/Database/DataGrip/levelTwoInherited/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/level-two-inherited/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/level-two-inherited/index.tsx"
+      "path": "registry/icons/Database/DataGrip/list/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/list/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/list/index.tsx"
+      "path": "registry/icons/Database/DataGrip/listKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/list-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/list-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/locked/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/locked/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/locked/index.tsx"
+      "path": "registry/icons/Database/DataGrip/macro/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/macro/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/macro/index.tsx"
+      "path": "registry/icons/Database/DataGrip/manageDataSources/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/manage-data-sources/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/manage-data-sources/index.tsx"
+      "path": "registry/icons/Database/DataGrip/materializedLog/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/materialized-log/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/materialized-log/index.tsx"
+      "path": "registry/icons/Database/DataGrip/materializedView/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/materialized-view/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/materialized-view/index.tsx"
+      "path": "registry/icons/Database/DataGrip/mongoDB@14x14/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/mongo-field/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/mongo-field/index.tsx"
+      "path": "registry/icons/Database/DataGrip/mongoField/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/mongo-field-gold-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/mongo-field-gold-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/mongoField@14x14/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/object-group/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/object-group/index.tsx"
+      "path": "registry/icons/Database/DataGrip/mongoFieldGoldKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/object-type-attribute/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/object-type-attribute/index.tsx"
+      "path": "registry/icons/Database/DataGrip/mongoFieldGoldKey@14x14/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/operator/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/operator/index.tsx"
+      "path": "registry/icons/Database/DataGrip/objectGroup/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/operator-class/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/operator-class/index.tsx"
+      "path": "registry/icons/Database/DataGrip/objectTypeAttribute/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/operator-family/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/operator-family/index.tsx"
+      "path": "registry/icons/Database/DataGrip/operator/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/package/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/package/index.tsx"
+      "path": "registry/icons/Database/DataGrip/operatorClass/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/partion/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/partion/index.tsx"
+      "path": "registry/icons/Database/DataGrip/operatorFamily/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/partion-table/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/partion-table/index.tsx"
+      "path": "registry/icons/Database/DataGrip/package/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/pin/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/pin/index.tsx"
+      "path": "registry/icons/Database/DataGrip/partion/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/pin-hovered/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/pin-hovered/index.tsx"
+      "path": "registry/icons/Database/DataGrip/partionTable/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/pin-selected/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/pin-selected/index.tsx"
+      "path": "registry/icons/Database/DataGrip/pin/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/pin-selected-hovered/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/pin-selected-hovered/index.tsx"
+      "path": "registry/icons/Database/DataGrip/pinHovered/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/preview-changes/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/preview-changes/index.tsx"
+      "path": "registry/icons/Database/DataGrip/pinSelected/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/procedure/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/procedure/index.tsx"
+      "path": "registry/icons/Database/DataGrip/pinSelectedHovered/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/procedure-group/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/procedure-group/index.tsx"
+      "path": "registry/icons/Database/DataGrip/previewChanges/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/procedure-run/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/procedure-run/index.tsx"
+      "path": "registry/icons/Database/DataGrip/procedure/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/projection/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/projection/index.tsx"
+      "path": "registry/icons/Database/DataGrip/procedureGroup/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/redis-file-type/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/redis-file-type/index.tsx"
+      "path": "registry/icons/Database/DataGrip/procedureRun/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/refresh-materialized-view/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/refresh-materialized-view/index.tsx"
+      "path": "registry/icons/Database/DataGrip/projection/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/reset/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/reset/index.tsx"
+      "path": "registry/icons/Database/DataGrip/redisFileType/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/role/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/role/index.tsx"
+      "path": "registry/icons/Database/DataGrip/refreshMaterializedView/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/rollback/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/rollback/index.tsx"
+      "path": "registry/icons/Database/DataGrip/reset/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/routine/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/routine/index.tsx"
+      "path": "registry/icons/Database/DataGrip/role/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/run-database-script/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/run-database-script/index.tsx"
+      "path": "registry/icons/Database/DataGrip/rollback/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/scheduled-event/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/scheduled-event/index.tsx"
+      "path": "registry/icons/Database/DataGrip/routine/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/schema/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/schema/index.tsx"
+      "path": "registry/icons/Database/DataGrip/runDatabaseScript/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/scripting-script/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/scripting-script/index.tsx"
+      "path": "registry/icons/Database/DataGrip/scheduledEvent/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/scroll-down/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/scroll-down/index.tsx"
+      "path": "registry/icons/Database/DataGrip/schema/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/scroll-up/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/scroll-up/index.tsx"
+      "path": "registry/icons/Database/DataGrip/scriptingScript/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sequence/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sequence/index.tsx"
+      "path": "registry/icons/Database/DataGrip/scrollDown/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/server-objects-group/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/server-objects-group/index.tsx"
+      "path": "registry/icons/Database/DataGrip/scrollUp/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/set/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/set/index.tsx"
+      "path": "registry/icons/Database/DataGrip/sequence/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/set-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/set-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/serverObjectsGroup/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/single-record-view/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/single-record-view/index.tsx"
+      "path": "registry/icons/Database/DataGrip/set/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sorted-set/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sorted-set/index.tsx"
+      "path": "registry/icons/Database/DataGrip/setKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sorted-set-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sorted-set-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/singleRecordView/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/stream/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/stream/index.tsx"
+      "path": "registry/icons/Database/DataGrip/sortedSet/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/stream-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/stream-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/sortedSetKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/string/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/string/index.tsx"
+      "path": "registry/icons/Database/DataGrip/stream/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/string-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/string-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/streamKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/submit-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/submit-db/index.tsx"
+      "path": "registry/icons/Database/DataGrip/string/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/synonym/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/synonym/index.tsx"
+      "path": "registry/icons/Database/DataGrip/stringKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/table/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/table/index.tsx"
+      "path": "registry/icons/Database/DataGrip/submitDB/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/table-heatmap/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/table-heatmap/index.tsx"
+      "path": "registry/icons/Database/DataGrip/synonym/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/table-mapping/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/table-mapping/index.tsx"
+      "path": "registry/icons/Database/DataGrip/table/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/tablespace/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/tablespace/index.tsx"
+      "path": "registry/icons/Database/DataGrip/tableHeatmap/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/text-auto-generate/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/text-auto-generate/index.tsx"
+      "path": "registry/icons/Database/DataGrip/tableMapping/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/trigger/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/trigger/index.tsx"
+      "path": "registry/icons/Database/DataGrip/tablespace/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/unspecified-cluster/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/unspecified-cluster/index.tsx"
+      "path": "registry/icons/Database/DataGrip/textAutoGenerate/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/user/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/user/index.tsx"
+      "path": "registry/icons/Database/DataGrip/trigger/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/user-driver/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/user-driver/index.tsx"
+      "path": "registry/icons/Database/DataGrip/unspecifiedCluster/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/user-group/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/user-group/index.tsx"
+      "path": "registry/icons/Database/DataGrip/user/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/user-mapping/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/user-mapping/index.tsx"
+      "path": "registry/icons/Database/DataGrip/userDriver/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/view-parameters/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/view-parameters/index.tsx"
+      "path": "registry/icons/Database/DataGrip/userGroup/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/virtual-column/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/virtual-column/index.tsx"
+      "path": "registry/icons/Database/DataGrip/userMapping/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/virtual-folder/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/virtual-folder/index.tsx"
+      "path": "registry/icons/Database/DataGrip/viewParameters/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/virtual-key/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/virtual-key/index.tsx"
+      "path": "registry/icons/Database/DataGrip/virtualColumn/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/virtual-view/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/virtual-view/index.tsx"
+      "path": "registry/icons/Database/DataGrip/virtualFolder/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/denodo/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/denodo/index.tsx"
+      "path": "registry/icons/Database/DataGrip/virtualKey/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/apache/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/apache/index.tsx"
+      "path": "registry/icons/Database/DataGrip/virtualView/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/apache-derby/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/apache-derby/index.tsx"
+      "path": "registry/icons/Database/Providers/denodo/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/apache-ignite/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/apache-ignite/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/apache/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/apache-phoenix/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/apache-phoenix/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/apacheDerby/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/athena/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/athena/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/apacheIgnite/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/azure/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/azure/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/apachePhoenix/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/big-query/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/big-query/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/athena/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/cassandra/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/cassandra/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/azure/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/click-house/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/click-house/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/bigQuery/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/cockroach-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/cockroach-db/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/cassandra/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/couchbase/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/couchbase/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/clickHouse/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/databricks/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/databricks/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/cockroachDB/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/db2/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/db2/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/couchbase/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/document-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/document-db/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/databricks/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/duck-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/duck-db/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/db2/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/dynamo-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/dynamo-db/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/documentDB/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/elasticsearch/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/elasticsearch/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/duckDB/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/exasol/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/exasol/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/dynamoDB/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/firebird/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/firebird/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/elasticsearch/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/google-cloud-dataproc/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/google-cloud-dataproc/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/exasol/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/google-cloud-spanner/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/google-cloud-spanner/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/firebird/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/greenplum/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/greenplum/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/googleCloudDataproc/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/h2/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/h2/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/googleCloudSpanner/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/hana/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/hana/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/greenplum/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/hive/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/hive/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/h2/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/hsqldb/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/hsqldb/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/hana/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/ibm/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/ibm/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/hive/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/impala/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/impala/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/hsqldb/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/informix/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/informix/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/ibm/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/intersystem-cache/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/intersystem-cache/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/impala/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/mariadb/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/mariadb/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/informix/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/microsoft/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/microsoft/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/intersystemCache/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/mimer-sql/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/mimer-sql/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/mariadb/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/mongo-db/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/mongo-db/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/microsoft/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/mysql/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/mysql/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/mimerSQL/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/netezza/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/netezza/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/mongoDB/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/openedge/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/openedge/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/mysql/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/oracle/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/oracle/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/netezza/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/postgresql/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/postgresql/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/openedge/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/presto/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/presto/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/oracle/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/redshift/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/redshift/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/postgresql/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/singlestore/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/singlestore/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/presto/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/snowflake/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/snowflake/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/redshift/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/spark/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/spark/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/singlestore/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sql-server/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sql-server/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/snowflake/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sqlite/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sqlite/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/spark/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sun/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sun/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/sqlServer/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/sybase/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/sybase/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/sqlite/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/t-sq-lt/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/t-sq-lt/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/sun/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/tarantool/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/tarantool/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/sybase/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/teradata/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/teradata/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/tSQLt/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/tibero/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/tibero/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/tarantool/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/tidb/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/tidb/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/teradata/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/trino/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/trino/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/tibero/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/ut-plsql/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/ut-plsql/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/tidb/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/vertica/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/vertica/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/trino/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/warehouse/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/warehouse/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/utPLSQL/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/yugabyte/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/yugabyte/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/vertica/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/database/redis/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/database/redis/index.tsx"
+      "path": "registry/icons/Database/Providers/providers/warehouse/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Database/Providers/providers/yugabyte/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/Database/Providers/redis/registry-item.json",
+      "type": "registry:item"
     }
   ]
 }

@@ -57,7 +57,7 @@ This implementation is built on Radix UI Checkbox with JetBrains UI styling.
 ```tsx
 const [checked, setChecked] = React.useState<boolean | 'indeterminate'>(false);
 
-<Checkbox indeterminate checked={checked} onCheckedChange={setChecked} />;
+<Checkbox checked={checked} onCheckedChange={setChecked} />;
 ```
 
 ### Invalid State
@@ -94,13 +94,6 @@ const [checked, setChecked] = React.useState<boolean | 'indeterminate'>(false);
       description: 'Callback fired when checked state changes',
       type: '(checked: boolean | "indeterminate") => void',
       required: false,
-    },
-    indeterminate: {
-      description:
-        'Enable three-state mode (unchecked -> checked -> indeterminate)',
-      type: 'boolean',
-      required: false,
-      default: 'false',
     },
     label: {
       description: 'Checkbox label text or custom React node',

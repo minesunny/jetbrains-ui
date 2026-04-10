@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-general-open",
+  "name": "icons-general-General/open",
   "type": "registry:ui",
-  "title": "Open",
-  "description": "Open icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "General/open",
+  "description": "General/open icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/general/open/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/open/index.tsx"
+      "path": "registry/icons/General/General/open/open_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/General/open/open_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "open",
+      "General/open",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

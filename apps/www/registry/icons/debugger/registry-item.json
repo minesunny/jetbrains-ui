@@ -3,105 +3,80 @@
   "name": "icons-debugger",
   "type": "registry:ui",
   "title": "Debugger Icons",
-  "description": "All 18 icons from the Debugger category.",
-  "registryDependencies": [
-    "icons-debugger-types"
-  ],
+  "description": "All icons from the debugger category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/debugger/index.ts",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/index.ts"
+      "path": "registry/icons/Debugger/addToWatch/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/add-to-watch/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/add-to-watch/index.tsx"
+      "path": "registry/icons/Debugger/classLevelWatch/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/class-level-watch/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/class-level-watch/index.tsx"
+      "path": "registry/icons/Debugger/dbArray/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/db-array/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/db-array/index.tsx"
+      "path": "registry/icons/Debugger/dbPrimitive/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/db-primitive/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/db-primitive/index.tsx"
+      "path": "registry/icons/Debugger/evaluationResult/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/evaluation-result/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/evaluation-result/index.tsx"
+      "path": "registry/icons/Debugger/frame/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/frame/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/frame/index.tsx"
+      "path": "registry/icons/Debugger/promptInput/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/prompt-input/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/prompt-input/index.tsx"
+      "path": "registry/icons/Debugger/promptInputHistory/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/prompt-input-history/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/prompt-input-history/index.tsx"
+      "path": "registry/icons/Debugger/selfReference/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/self-reference/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/self-reference/index.tsx"
+      "path": "registry/icons/Debugger/threadAtBreakpoint/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/thread-at-breakpoint/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/thread-at-breakpoint/index.tsx"
+      "path": "registry/icons/Debugger/threadCurrent/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/thread-current/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/thread-current/index.tsx"
+      "path": "registry/icons/Debugger/threadFrozen/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/thread-frozen/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/thread-frozen/index.tsx"
+      "path": "registry/icons/Debugger/threadGroupCurrent/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/thread-group-current/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/thread-group-current/index.tsx"
+      "path": "registry/icons/Debugger/threadRunning/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/thread-running/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/thread-running/index.tsx"
+      "path": "registry/icons/Debugger/threads/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/threads/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/threads/index.tsx"
+      "path": "registry/icons/Debugger/value/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/value/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/value/index.tsx"
+      "path": "registry/icons/Debugger/variablesTab/registry-item.json",
+      "type": "registry:item"
     },
     {
-      "path": "registry/icons/debugger/variables-tab/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/variables-tab/index.tsx"
-    },
-    {
-      "path": "registry/icons/debugger/watch-last-return-value/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/debugger/watch-last-return-value/index.tsx"
+      "path": "registry/icons/Debugger/watchLastReturnValue/registry-item.json",
+      "type": "registry:item"
     }
   ]
 }

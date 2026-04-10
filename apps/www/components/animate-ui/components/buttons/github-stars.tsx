@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { Star } from '@/registry/icons/nodes/star';
+import { StarIcon } from './star-icon';
 
 import {
   Button as ButtonPrimitive,
@@ -98,7 +98,7 @@ function GitHubStarsButton({
         <GithubStarsNumber />
         <GithubStarsParticles className="text-yellow-500">
           <GithubStarsIcon
-            icon={Star}
+            icon={StarIcon}
             data-variant={variant}
             className={cn(buttonStarVariants({ variant }))}
             activeClassName="text-yellow-500"

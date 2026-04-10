@@ -4,14 +4,15 @@
   "type": "registry:ui",
   "title": "Config",
   "description": "Config icon from nodes category.",
-  "registryDependencies": [
-    "icons-nodes-types"
-  ],
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/nodes/config/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/nodes/config/index.tsx"
+      "path": "registry/icons/Nodes/config/config_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/Nodes/config/config_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
@@ -20,6 +21,8 @@
       "icon",
       "nodes",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

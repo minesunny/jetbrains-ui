@@ -215,9 +215,7 @@ describe('ComboBoxTrigger', () => {
       </ComboBox>,
     );
 
-    expect(screen.getByRole('combobox')).toHaveClass(
-      'combo-box-trigger--size-md',
-    );
+    expect(screen.getByRole('combobox')).toHaveClass('w-[224px]');
   });
 });
 

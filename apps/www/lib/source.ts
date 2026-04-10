@@ -9,13 +9,15 @@ import {
 } from 'fumadocs-core/source';
 import { createElement } from 'react';
 import type { Locale } from '@/lib/i18n/shared';
-import { Component as JavaEeComponent } from '@/registry/icons/plugins/java-ee/component';
-import { Colors } from '@/registry/icons/editor-icons/colors';
+import {
+  JavaEeComponentIcon,
+  ColorsIcon,
+} from '@/components/docs/icon-wrappers';
 import { Search } from 'lucide-react';
 
 const docsIcons = {
-  Component: JavaEeComponent,
-  Palette: Colors,
+  Component: JavaEeComponentIcon,
+  Palette: ColorsIcon,
 } as const;
 
 export const source = loader({
