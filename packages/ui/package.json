@@ -29,7 +29,10 @@
     "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@workspace/eslint-config": "workspace:^",
+    "eslint": "^9.34.0",
     "jsdom": "^28.1.0",
+    "typescript-eslint": "^8.40.0",
     "vitest": "^4.0.18"
   },
   "exports": {
