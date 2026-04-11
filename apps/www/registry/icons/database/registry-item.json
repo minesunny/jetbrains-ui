@@ -391,7 +391,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/Database/DataGrip/mongoDB@14x14/registry-item.json",
+      "path": "registry/icons/Database/DataGrip/mongoDB/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -399,15 +399,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/Database/DataGrip/mongoField@14x14/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/Database/DataGrip/mongoFieldGoldKey/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/Database/DataGrip/mongoFieldGoldKey@14x14/registry-item.json",
       "type": "registry:item"
     },
     {

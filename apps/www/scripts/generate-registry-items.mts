@@ -61,6 +61,13 @@ async function collectIcons(
     const hasSvgDirectly = svgFiles.some((f) => f.endsWith('.svg'));
 
     if (hasSvgDirectly) {
+      // Skip @size variants when the base icon directory exists
+      if (entry.name.includes('@')) {
+        const baseName = entry.name.replace(/@.*$/, '');
+        const baseDir = path.join(dir, baseName);
+        if (await hasSvgFiles(baseDir)) continue;
+      }
+
       // This is an icon - store the relative path from category root
       const iconName = entry.name.replace(/@.*$/, '');
       const registryPath = basePath ? `${basePath}/${iconName}` : iconName;

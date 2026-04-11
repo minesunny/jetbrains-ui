@@ -11,10 +11,6 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/aiAssistant@28x28/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/AI_Asisstant/aiAssistantColored/registry-item.json",
       "type": "registry:item"
     },
@@ -263,15 +259,15 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/DevKit/descriptionFile@14x14/registry-item.json",
+      "path": "registry/icons/General/DevKit/descriptionFile/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/DevKit/diff@14x14/registry-item.json",
+      "path": "registry/icons/General/DevKit/diff/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/DevKit/plugin@14x14/registry-item.json",
+      "path": "registry/icons/General/DevKit/plugin/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -279,7 +275,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/DevKit/properties@14x14/registry-item.json",
+      "path": "registry/icons/General/DevKit/properties/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -375,6 +371,10 @@
       "type": "registry:item"
     },
     {
+      "path": "registry/icons/General/General/add/registry-item.json",
+      "type": "registry:item"
+    },
+    {
       "path": "registry/icons/General/General/autoscrollFromSource/registry-item.json",
       "type": "registry:item"
     },
@@ -383,27 +383,15 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/General/chevronDownHovered/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/classHierarchy/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/configFile/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/add/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/General/checkmark/registry-item.json",
       "type": "registry:item"
     },
     {
       "path": "registry/icons/General/General/chevronDown/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/chevronDownHovered/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -427,6 +415,10 @@
       "type": "registry:item"
     },
     {
+      "path": "registry/icons/General/General/classHierarchy/registry-item.json",
+      "type": "registry:item"
+    },
+    {
       "path": "registry/icons/General/General/close/registry-item.json",
       "type": "registry:item"
     },
@@ -440,6 +432,10 @@
     },
     {
       "path": "registry/icons/General/General/collapseAll/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/configFile/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -487,6 +483,10 @@
       "type": "registry:item"
     },
     {
+      "path": "registry/icons/General/General/graphLayout/registry-item.json",
+      "type": "registry:item"
+    },
+    {
       "path": "registry/icons/General/General/groups/registry-item.json",
       "type": "registry:item"
     },
@@ -503,7 +503,15 @@
       "type": "registry:item"
     },
     {
+      "path": "registry/icons/General/General/ideUpdate/registry-item.json",
+      "type": "registry:item"
+    },
+    {
       "path": "registry/icons/General/General/import/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/keyboard/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -527,11 +535,11 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/General/moreHorizontal/registry-item.json",
+      "path": "registry/icons/General/General/minimap/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/General/moreHorizontal@20x20/registry-item.json",
+      "path": "registry/icons/General/General/moreHorizontal/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -591,6 +599,14 @@
       "type": "registry:item"
     },
     {
+      "path": "registry/icons/General/General/pin/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/pluginUpdate/registry-item.json",
+      "type": "registry:item"
+    },
+    {
       "path": "registry/icons/General/General/previewHorizontally/registry-item.json",
       "type": "registry:item"
     },
@@ -600,6 +616,10 @@
     },
     {
       "path": "registry/icons/General/General/print/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/projectConfigurable/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -615,7 +635,19 @@
       "type": "registry:item"
     },
     {
+      "path": "registry/icons/General/General/questionMark/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/readerMode/registry-item.json",
+      "type": "registry:item"
+    },
+    {
       "path": "registry/icons/General/General/redo/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/reformatCode/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -628,6 +660,10 @@
     },
     {
       "path": "registry/icons/General/General/right/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/run/widget/more/stroke/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -651,15 +687,15 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/General/search@20x20/registry-item.json",
+      "path": "registry/icons/General/General/separatorHorizontal/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/settingSync/registry-item.json",
       "type": "registry:item"
     },
     {
       "path": "registry/icons/General/General/settings/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/settings@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -675,7 +711,27 @@
       "type": "registry:item"
     },
     {
+      "path": "registry/icons/General/General/sortAlphabetically/registry-item.json",
+      "type": "registry:item"
+    },
+    {
       "path": "registry/icons/General/General/sortBy/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/sortByDuration/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/sortByType/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/sortByUsage/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/sortByVisibility/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -684,6 +740,14 @@
     },
     {
       "path": "registry/icons/General/General/splitVertically/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/subtypes/registry-item.json",
+      "type": "registry:item"
+    },
+    {
+      "path": "registry/icons/General/General/supertypes/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -707,87 +771,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/General/windowsMenu@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/graphLayout/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/ideUpdate/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/keyboard/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/minimap/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/pin/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/pluginUpdate/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/projectConfigurable/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/questionMark/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/readerMode/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/reformatCode/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/run/widget/more/stroke/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/separatorHorizontal/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/settingSync/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/sortAlphabetically/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/sortByDuration/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/sortByType/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/sortByUsage/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/sortByVisibility/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/subtypes/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/General/supertypes/registry-item.json",
+      "path": "registry/icons/General/General/windowsMenu/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1027,10 +1011,6 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Spinner/loader@34x34/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Status/status/error/registry-item.json",
       "type": "registry:item"
     },
@@ -1087,15 +1067,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/CMakeToolWindow@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/ConcurrencyDiagramToolwindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/ConcurrencyDiagramToolwindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1103,15 +1075,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/aiAssistantToolWindow@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/amazonEMR/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/amazonEMR@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1119,15 +1083,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/appEngineToolWindow@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/awsGlueToolWindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/awsGlueToolWindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1135,15 +1091,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/buildServerProtocol@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/cdiToolWindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/cdiToolWindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1151,15 +1099,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/cwmAccess@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/cwmUsers/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/cwmUsers@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1167,15 +1107,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/dataprocToolWindow@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/donate/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/donate@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1183,15 +1115,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/exceptionAnalyzer@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/feedback/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/feedback@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1199,15 +1123,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/gitLabToolWindow@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/graphQLToolWindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/graphQLToolWindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1215,15 +1131,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/hive@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/javaEEToolWindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/javaEEToolWindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1231,15 +1139,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/jpaConsoleToolWindow@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/jpaToolWindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/jpaToolWindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1247,15 +1147,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/jupyterToolWindow@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/kafka/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/kafka@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1263,15 +1155,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/kotlinToolWindow@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/makefileToolWindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/makefileToolWindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1279,15 +1163,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/packageManager@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/persistence/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/persistence@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1295,7 +1171,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/rToolWindow@20x20/registry-item.json",
+      "path": "registry/icons/General/Tool_Windows/rToolWindow/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1303,15 +1179,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/sbtIcon@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/sbtShell/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/sbtShell@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1319,15 +1187,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/scalaProfiler@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/spaceToolWindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/spaceToolWindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1335,15 +1195,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowBazel@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowBeanValidator/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowBeanValidator@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1351,15 +1203,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowBigData@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowCadence/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowCadence@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1367,15 +1211,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowCellExplorer@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowCheckDetails/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowCheckDetails@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1387,15 +1223,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowDart@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowDataView/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowDataView@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1403,15 +1231,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowDefault@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowDuplicates/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowDuplicates@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1419,15 +1239,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowEJB@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowEduCourseTask/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowEduCourseTask@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1435,15 +1247,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowHadoop@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowHuggingFace/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowHuggingFace@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1451,15 +1255,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowJPabStructure@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowJsonPath/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowJsonPath@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1467,15 +1263,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowKotlinNotebooks@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowKubernetes/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowKubernetes@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1483,15 +1271,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowMeson@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowModelChecker/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowModelChecker@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1499,15 +1279,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowPlatformIO@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowPubServe/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowPubServe@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1515,15 +1287,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowRGraph@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowRHtml/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowRHtml@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1531,15 +1295,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowRPackages@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowRecordDebug/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowRecordDebug@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1547,15 +1303,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowRunWithCoverage@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowTeamCity/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowTeamCity@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1563,15 +1311,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowTestSpark@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowTimer/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowTimer@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1579,15 +1319,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowTypeTraceView@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolWindowVariableView/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolWindowVariableView@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1595,15 +1327,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowYouTrack@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/ant/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/ant@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1611,15 +1335,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/bookmarks@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/build/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/build@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1627,19 +1343,11 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/changes@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/commit/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/commit@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/coverage@20x20/registry-item.json",
+      "path": "registry/icons/General/Tool_Windows/toolwindow/coverage/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1647,15 +1355,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/cypress@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/databaseChanges/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/databaseChanges@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1663,15 +1363,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/databricksToolWindow@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/dbms/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/dbms@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1679,15 +1371,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/debug@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/dependencies/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/dependencies@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1695,15 +1379,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/documentation@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/endpoints/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/endpoints@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1711,15 +1387,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/find@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/findExternalUsages/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/findExternalUsages@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1727,15 +1395,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/gradle@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/hierarchy/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/hierarchy@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1743,15 +1403,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/learn@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/maven/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/maven@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1759,15 +1411,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/messages@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/newUI/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/newUI@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1775,15 +1419,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/notifications@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/npm/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/npm@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1791,23 +1427,11 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/problems@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/profiler/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/profiler@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/profilerAndroid/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/profilerAndroid@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1819,15 +1443,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/pullRequests@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/pythonConsoleToolWindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/pythonConsoleToolWindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1835,15 +1451,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/rebuild@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/repositories/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/repositories@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1851,15 +1459,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/run@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/rust/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/rust@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1867,15 +1467,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/sciView@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/services/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/services@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1883,15 +1475,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/settingSync@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/spark/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/spark@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1899,15 +1483,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/spring@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/statisticsEventLog/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/statisticsEventLog@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1915,15 +1491,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/structure@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/task/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/task@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1931,15 +1499,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/terminal@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/todo/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/todo@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1947,15 +1507,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/toolWindowDjango@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/vcs/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/vcs@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1963,15 +1515,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/web@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindow/writerside/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/writerside@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1979,15 +1523,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/writersidePreview@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/toolwindowFlink/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/toolwindowFlink@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -1995,15 +1531,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/transfer@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/transferToolWindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/transferToolWindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -2011,15 +1539,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/unknown@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/webInspector/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/webInspector@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -2027,15 +1547,7 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/webServer@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/General/Tool_Windows/westToolWindow/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/General/Tool_Windows/westToolWindow@20x20/registry-item.json",
       "type": "registry:item"
     },
     {

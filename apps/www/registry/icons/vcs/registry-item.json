@@ -51,11 +51,11 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/Diff/arrow@14x14/registry-item.json",
+      "path": "registry/icons/VCS/Diff/arrow/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/Diff/arrowLeftDown@14x14/registry-item.json",
+      "path": "registry/icons/VCS/Diff/arrowLeftDown/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -63,11 +63,11 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/Diff/arrowRight@14x14/registry-item.json",
+      "path": "registry/icons/VCS/Diff/arrowRight/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/Diff/arrowRightDown@14x14/registry-item.json",
+      "path": "registry/icons/VCS/Diff/arrowRightDown/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -111,19 +111,19 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/Diff/gutterCheckBox@14x14/registry-item.json",
+      "path": "registry/icons/VCS/Diff/gutterCheckBox/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/Diff/gutterCheckBoxIndeterminate@14x14/registry-item.json",
+      "path": "registry/icons/VCS/Diff/gutterCheckBoxIndeterminate/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/Diff/gutterCheckBoxSelected@14x14/registry-item.json",
+      "path": "registry/icons/VCS/Diff/gutterCheckBoxSelected/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/Diff/magicResolve@14x14/registry-item.json",
+      "path": "registry/icons/VCS/Diff/magicResolve/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -131,11 +131,11 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/Diff/remove@14x14/registry-item.json",
+      "path": "registry/icons/VCS/Diff/remove/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/Diff/revert@14x14/registry-item.json",
+      "path": "registry/icons/VCS/Diff/revert/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -167,11 +167,11 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/VCS/vcs/changesPush@12x12/registry-item.json",
+      "path": "registry/icons/VCS/VCS/vcs/changesPush/registry-item.json",
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/VCS/vcs/changesUpdate@12x12/registry-item.json",
+      "path": "registry/icons/VCS/VCS/vcs/changesUpdate/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -203,10 +203,6 @@
       "type": "registry:item"
     },
     {
-      "path": "registry/icons/VCS/VCS/vcs/fetch@20x20/registry-item.json",
-      "type": "registry:item"
-    },
-    {
       "path": "registry/icons/VCS/VCS/vcs/incomingUpdate/registry-item.json",
       "type": "registry:item"
     },
@@ -224,10 +220,6 @@
     },
     {
       "path": "registry/icons/VCS/VCS/vcs/push/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/VCS/VCS/vcs/push@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
@@ -252,10 +244,6 @@
     },
     {
       "path": "registry/icons/VCS/VCS/vcs/update/registry-item.json",
-      "type": "registry:item"
-    },
-    {
-      "path": "registry/icons/VCS/VCS/vcs/update@20x20/registry-item.json",
       "type": "registry:item"
     },
     {
