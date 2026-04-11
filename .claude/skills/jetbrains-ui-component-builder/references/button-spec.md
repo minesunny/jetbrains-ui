@@ -1,5 +1,39 @@
 # Button Component Design Spec
 
+## Typography: ui-default
+
+| Property | Figma Value | Tailwind CSS |
+|----------|------------|-------------|
+| Font | Inter | `font-sans` |
+| Weight | 500 (Medium) | `font-medium` |
+| Size | 13px | `text-[13px]` |
+| Line height | 16px | `leading-4` |
+| Letter spacing | 0px | `tracking-normal` |
+
+## Figma Auto Layout
+
+### Default Size
+
+| Property | Figma Value | Tailwind CSS |
+|----------|------------|-------------|
+| Direction | Horizontal | `flex flex-row` |
+| Width | Hug (72px) | `min-w-[72px]` |
+| Height | Hug (28px) | `h-7` |
+| Padding | — | `px-3` (12px) |
+| Gap | — | `gap-2` (8px) |
+| Radius | 4px | `rounded` |
+
+### Slim Size
+
+| Property | Figma Value | Tailwind CSS |
+|----------|------------|-------------|
+| Direction | Horizontal | `flex flex-row` |
+| Width | Hug (72px) | `min-w-[72px]` |
+| Height | Hug (24px) | `h-6` |
+| Padding | — | `px-3` (12px) |
+| Gap | — | `gap-2` (8px) |
+| Radius | 4px | `rounded` |
+
 ## Technical Requirements
 
 - Based on Radix UI Slot (`@radix-ui/react-slot`) for `asChild` polymorphism
