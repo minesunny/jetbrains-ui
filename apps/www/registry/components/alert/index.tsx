@@ -32,7 +32,7 @@ function AlertTrigger({ className, ...props }: AlertTriggerProps) {
   return (
     <AlertPrimitive.Trigger
       data-slot="alert-trigger"
-      className={cn(buttonVariants({ variant: 'secondary' }), className)}
+      className={cn(buttonVariants({ variant: 'primary' }), className)}
       {...props}
     />
   );
@@ -94,7 +94,7 @@ function AlertContent({
           data-type={type}
           data-size={size}
           className={cn(
-            "fixed left-1/2 top-1/2 z-[var(--z-modal)] flex max-w-[calc(100vw-2rem)] -translate-x-1/2 -translate-y-1/2 flex-col rounded-[8px] border border-blue-11 bg-blue-13 pb-[66px] pl-[60px] pr-5 pt-5 text-gray-1 opacity-0 shadow-[var(--shadow-xl)] outline-none transition-[opacity,transform] duration-150 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=closed]:scale-95 data-[state=closed]:opacity-0 dark:border-blue-2 dark:bg-blue-1 dark:text-gray-12 [&[data-type='error']]:border-red-9 [&[data-type='error']]:bg-red-11 [&[data-type='error']]:text-gray-1 dark:[&[data-type='error']]:border-red-3 dark:[&[data-type='error']]:bg-red-1 dark:[&[data-type='error']]:text-gray-12 [&[data-type='warning']]:border-yellow-9 [&[data-type='warning']]:bg-yellow-11 [&[data-type='warning']]:text-gray-1 dark:[&[data-type='warning']]:border-yellow-3 dark:[&[data-type='warning']]:bg-yellow-1 dark:[&[data-type='warning']]:text-gray-12 [&[data-type='question']]:border-blue-11 [&[data-type='question']]:bg-blue-13 [&[data-type='question']]:text-gray-1 dark:[&[data-type='question']]:border-blue-2 dark:[&[data-type='question']]:bg-blue-1 dark:[&[data-type='question']]:text-gray-12 data-[size=default]:w-[370px] data-[size=wide]:w-[420px] data-[size=auto]:w-fit data-[size=auto]:min-w-[370px]",
+            "fixed left-1/2 top-1/2 z-[var(--z-modal)] flex max-w-[calc(100vw-2rem)] -translate-x-1/2 -translate-y-1/2 flex-col rounded-lg border border-gray-10 bg-gray-13 pb-[66px] pl-[60px] pr-5 pt-5 text-gray-1 opacity-0 shadow-[var(--shadow-dialog)] outline-none transition-[opacity,transform] duration-150 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=closed]:scale-95 data-[state=closed]:opacity-0 dark:border-gray-4 dark:bg-gray-2 dark:text-gray-12 data-[size=default]:w-[370px] data-[size=wide]:w-[420px] data-[size=auto]:w-fit data-[size=auto]:min-w-[370px]",
             className,
           )}
           {...props}
@@ -102,7 +102,7 @@ function AlertContent({
           <SVG
             name={iconName}
             size="lg"
-            className="absolute left-[18px] top-[18px] shrink-0"
+            className="absolute left-5 top-5 shrink-0"
           />
           {children}
         </AlertPrimitive.Content>
@@ -151,7 +151,7 @@ function AlertTitle({
     <AlertPrimitive.Title
       data-slot="alert-title"
       className={cn(
-        'w-full text-base font-semibold leading-5',
+        'w-full text-base font-medium leading-5',
         size === 'auto' && 'max-w-[480px]',
         className,
       )}
@@ -173,7 +173,7 @@ function AlertDescription({
     <AlertPrimitive.Description
       data-slot="alert-description"
       className={cn(
-        'w-full text-[13px] leading-[18px] font-medium text-gray-7 dark:text-gray-8',
+        'w-full text-[13px] leading-[18px] font-medium text-gray-1 dark:text-gray-12',
         size === 'auto' && 'max-w-[480px]',
         className,
       )}
@@ -195,7 +195,7 @@ function AlertFooter({
     <div
       data-slot="alert-footer"
       className={cn(
-        'absolute bottom-[16px] left-[18px] right-[18px] flex h-10 shrink-0 items-center gap-3',
+        'absolute bottom-5 left-5 right-5 flex h-10 shrink-0 items-center gap-3',
         className,
       )}
       {...props}

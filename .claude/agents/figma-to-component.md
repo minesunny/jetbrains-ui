@@ -87,6 +87,35 @@ Quick reference for common mappings:
 | Medium 500 | `font-medium` |
 | Semibold 600 | `font-semibold` |
 
+### Named Typography Styles
+
+When the Figma text style is named (e.g. "UI/Default"), map to the predefined style:
+
+| Style Name | Tailwind Combined |
+|-----------|------------------|
+| UI/Default | `font-sans text-[13px] leading-4 font-medium tracking-normal` |
+
+## Auto Layout → Tailwind CSS Mapping
+
+See `.claude/skills/jetbrains-ui-component-builder/references/figma-auto-layout-to-tailwind.md` for the full mapping table. Key rules:
+
+### Layout Direction
+- Figma "Direction: Horizontal" → `flex flex-row`
+- Figma "Direction: Vertical" → `flex flex-col`
+
+### Sizing Constraints
+- **Fill container** → `w-full` / `h-full`
+- **Hug contents** → `w-fit` / `h-fit` (or omit for auto)
+- **Fixed N px** → `w-[Npx]` / `h-[Npx]`
+- **Fill remaining** → `flex-1`
+
+### Alignment
+- Primary axis: Min → `justify-start`, Center → `justify-center`, Max → `justify-end`, Space Between → `justify-between`
+- Cross axis: Min → `items-start`, Center → `items-center`, Max → `items-end`, Baseline → `items-baseline`, Stretch → `items-stretch`
+
+### Gap
+- Use Tailwind `gap-*` scale: 4px → `gap-1`, 8px → `gap-2`, 12px → `gap-3`, 16px → `gap-4`
+
 ## Processing Workflow
 
 1. **Parse input**: Extract component name, parts, states, variants, and all visual properties.
@@ -97,6 +126,11 @@ Quick reference for common mappings:
    - Multiple sub-parts → compound component pattern
 
 3. **Map visual values**:
+   - Auto Layout direction → `flex flex-row` / `flex flex-col`
+   - Auto Layout alignment → `items-*` / `justify-*`
+   - Auto Layout gap → `gap-*`
+   - Auto Layout padding → `p-*` / `px-*` / `py-*`
+   - Sizing constraints → `w-full` / `w-fit` / `w-[Npx]`
    - Colors → closest JetBrains tokens (read `tokens.css` for exact values)
    - Spacing → Tailwind spacing utilities
    - Radius → Tailwind rounded utilities

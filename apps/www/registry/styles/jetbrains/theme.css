@@ -101,4 +101,11 @@
   --color-purple-8: var(--purple-8);
   --color-purple-9: var(--purple-9);
   --color-purple-10: var(--purple-10);
+
+  /* JetBrains Typography */
+  --text-sm: 0.75rem; /* 12px */
+  --text-sm--line-height: 1.375rem; /* 22px */
+
+  --text-default: 0.8125rem; /* 13px */
+  --text-default--line-height: 1.375rem; /* 22px */
 }

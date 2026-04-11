@@ -82,9 +82,9 @@ describe('Alert context props', () => {
 
     expect(header).toHaveClass('gap-2');
     expect(footer).toHaveClass('absolute');
-    expect(footer).toHaveClass('bottom-[16px]');
-    expect(footer).toHaveClass('left-[18px]');
-    expect(footer).toHaveClass('right-[18px]');
+    expect(footer).toHaveClass('bottom-5');
+    expect(footer).toHaveClass('left-5');
+    expect(footer).toHaveClass('right-5');
     expect(footer).toHaveClass('h-10');
     expect(footer).toHaveClass('shrink-0');
     expect(footer).toHaveClass('gap-3');
