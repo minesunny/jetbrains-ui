@@ -55,22 +55,18 @@ function ContextMenu({
   return <ContextMenuPrimitive.Root data-slot="context-menu" {...props} />;
 }
 
-type ContextMenuTriggerProps = React.ComponentProps<
-  typeof ContextMenuPrimitive.Trigger
->;
-
 function ContextMenuTrigger({
   className,
   asChild,
   ...props
-}: ContextMenuTriggerProps) {
+}: React.ComponentProps<typeof ContextMenuPrimitive.Trigger>) {
   return (
     <ContextMenuPrimitive.Trigger
       data-slot="context-menu-trigger"
       asChild={asChild}
       className={cn(
         !asChild &&
-          'inline-flex h-7 min-w-[72px] select-none items-center justify-center gap-2 rounded-[4px] border border-gray-9 bg-transparent px-3 font-sans text-[13px] leading-4 font-medium text-gray-1 outline-none transition-[background-color,border-color,color,box-shadow] duration-150 ease-in-out hover:bg-gray-12 active:bg-gray-11 focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-14 dark:border-gray-5 dark:bg-gray-5 dark:text-gray-12 dark:hover:bg-gray-6 dark:active:bg-gray-4 dark:focus-visible:ring-blue-6 dark:focus-visible:ring-offset-gray-2',
+          'group inline-flex h-10 min-w-0 items-center justify-between gap-2 rounded border border-gray-9 bg-gray-14 py-1.5 pl-[9px] pr-0 text-default text-gray-1 shadow-none transition-[border-color,box-shadow] duration-150 ease-in-out outline-none dark:border-gray-5 dark:bg-gray-2 dark:text-gray-12 [&>span[data-placeholder]]:text-gray-7 dark:[&>span[data-placeholder]]:text-gray-8 focus-visible:border-2 focus-visible:border-blue-4 focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-0 dark:focus-visible:border-blue-6 dark:focus-visible:ring-blue-6 data-[state=open]:border-2 data-[state=open]:border-blue-4 data-[state=open]:ring-2 data-[state=open]:ring-blue-4 data-[state=open]:ring-offset-0 dark:data-[state=open]:border-blue-6 dark:data-[state=open]:ring-blue-6 disabled:cursor-not-allowed disabled:border disabled:border-gray-13 disabled:bg-gray-13 disabled:text-gray-8 dark:disabled:border-gray-5 dark:disabled:bg-gray-2 dark:disabled:text-gray-7',
         className,
       )}
       {...props}
@@ -95,7 +91,7 @@ function ContextMenuContent({
       <ContextMenuPrimitive.Content
         data-slot="context-menu-content"
         className={cn(
-          'z-[var(--z-popover)] min-w-[220px] overflow-hidden rounded-[8px] border border-gray-9 bg-white p-1 shadow-[0_4px_12px_rgba(0,0,0,0.15)] dark:border-gray-5 dark:bg-gray-2 dark:shadow-[0_4px_12px_rgba(0,0,0,0.4)] data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:origin-top data-[side=bottom]:slide-in-from-top-2 data-[side=left]:origin-right data-[side=left]:slide-in-from-right-2 data-[side=right]:origin-left data-[side=right]:slide-in-from-left-2 data-[side=top]:origin-bottom data-[side=top]:slide-in-from-bottom-2',
+          'z-[var(--z-popover)] w-[293px] overflow-hidden rounded-[8px] border-[0.5px] border-gray-9 bg-gray-14 p-1 shadow-[var(--shadow-popover)] dark:border-gray-3 dark:bg-gray-2 dark:shadow-[var(--shadow-popover-dark)] data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:origin-top data-[side=bottom]:slide-in-from-top-2 data-[side=left]:origin-right data-[side=left]:slide-in-from-right-2 data-[side=right]:origin-left data-[side=right]:slide-in-from-left-2 data-[side=top]:origin-bottom data-[side=top]:slide-in-from-bottom-2',
           className,
         )}
         {...props}
@@ -130,19 +126,14 @@ function ContextMenuItem({
       data-inset={inset || undefined}
       data-variant={variant}
       className={cn(
-        'relative flex min-h-6 w-full cursor-default select-none items-center gap-2 rounded-[3px] bg-transparent px-2 py-1 font-sans text-[13px] leading-4 font-medium text-gray-1 outline-none transition-[background-color,color] duration-75',
+        'relative flex h-6 w-full cursor-default select-none items-center gap-2 rounded bg-transparent px-2 py-1 text-default text-gray-1 outline-none transition-[background-color] duration-75',
         'data-[highlighted]:bg-blue-11 data-[highlighted]:text-gray-1',
         'data-[state=open]:bg-blue-11 data-[state=open]:text-gray-1',
-        'data-[state=checked]:bg-blue-12 data-[state=checked]:text-blue-1',
-        'data-[disabled]:pointer-events-none data-[disabled]:text-gray-8',
-        'dark:text-gray-12',
-        'dark:data-[highlighted]:bg-blue-2 dark:data-[highlighted]:text-gray-12',
-        'dark:data-[state=open]:bg-blue-2 dark:data-[state=open]:text-gray-12',
-        'dark:data-[state=checked]:bg-blue-2 dark:data-[state=checked]:text-gray-12',
-        'dark:data-[disabled]:text-gray-7',
+        'data-[disabled]:pointer-events-none data-[disabled]:cursor-not-allowed data-[disabled]:text-gray-8',
+        'dark:text-gray-12 dark:data-[highlighted]:bg-blue-2 dark:data-[highlighted]:text-gray-12 dark:data-[state=open]:bg-blue-2 dark:data-[state=open]:text-gray-12 dark:data-[disabled]:text-gray-7',
         'data-[inset]:pl-7',
         'data-[variant=destructive]:text-red-3 data-[variant=destructive]:data-[highlighted]:bg-red-10',
-        'dark:data-[variant=destructive]:text-red-7 dark:data-[variant=destructive]:data-[highlighted]:bg-mix-blend-multiply',
+        'dark:data-[variant=destructive]:text-red-7',
         className,
       )}
       {...props}
@@ -170,16 +161,12 @@ function ContextMenuCheckboxItem({
       data-slot="context-menu-checkbox-item"
       checked={checked}
       className={cn(
-        'relative flex min-h-6 w-full cursor-default select-none items-center gap-2 rounded-[3px] bg-transparent py-1 pl-7 pr-2 font-sans text-[13px] leading-4 font-medium text-gray-1 outline-none transition-[background-color,color] duration-75',
-        'data-[highlighted]:bg-gray-12 data-[highlighted]:text-gray-1',
-        'data-[state=open]:bg-gray-12 data-[state=open]:text-gray-1',
+        'relative flex h-6 w-full cursor-default select-none items-center gap-2 rounded bg-transparent py-1 pl-7 pr-2 text-default text-gray-1 outline-none transition-[background-color] duration-75',
+        'data-[highlighted]:bg-blue-11 data-[highlighted]:text-gray-1',
+        'data-[state=open]:bg-blue-11 data-[state=open]:text-gray-1',
         'data-[state=checked]:bg-blue-12 data-[state=checked]:text-blue-1',
-        'data-[disabled]:pointer-events-none data-[disabled]:text-gray-8',
-        'dark:text-gray-12',
-        'dark:data-[highlighted]:bg-gray-4 dark:data-[highlighted]:text-gray-12',
-        'dark:data-[state=open]:bg-gray-4 dark:data-[state=open]:text-gray-12',
-        'dark:data-[state=checked]:bg-blue-2 dark:data-[state=checked]:text-gray-12',
-        'dark:data-[disabled]:text-gray-7',
+        'data-[disabled]:pointer-events-none data-[disabled]:cursor-not-allowed data-[disabled]:text-gray-8',
+        'dark:text-gray-12 dark:data-[highlighted]:bg-blue-2 dark:data-[highlighted]:text-gray-12 dark:data-[state=open]:bg-blue-2 dark:data-[state=open]:text-gray-12 dark:data-[state=checked]:bg-blue-2 dark:data-[state=checked]:text-gray-12 dark:data-[disabled]:text-gray-7',
         className,
       )}
       {...props}
@@ -214,16 +201,12 @@ function ContextMenuRadioItem({
     <ContextMenuPrimitive.RadioItem
       data-slot="context-menu-radio-item"
       className={cn(
-        'relative flex min-h-6 w-full cursor-default select-none items-center gap-2 rounded-[3px] bg-transparent py-1 pl-7 pr-2 font-sans text-[13px] leading-4 font-medium text-gray-1 outline-none transition-[background-color,color] duration-75',
-        'data-[highlighted]:bg-gray-12 data-[highlighted]:text-gray-1',
-        'data-[state=open]:bg-gray-12 data-[state=open]:text-gray-1',
+        'relative flex h-6 w-full cursor-default select-none items-center gap-2 rounded bg-transparent py-1 pl-7 pr-2 text-default text-gray-1 outline-none transition-[background-color] duration-75',
+        'data-[highlighted]:bg-blue-11 data-[highlighted]:text-gray-1',
+        'data-[state=open]:bg-blue-11 data-[state=open]:text-gray-1',
         'data-[state=checked]:bg-blue-12 data-[state=checked]:text-blue-1',
-        'data-[disabled]:pointer-events-none data-[disabled]:text-gray-8',
-        'dark:text-gray-12',
-        'dark:data-[highlighted]:bg-gray-4 dark:data-[highlighted]:text-gray-12',
-        'dark:data-[state=open]:bg-gray-4 dark:data-[state=open]:text-gray-12',
-        'dark:data-[state=checked]:bg-blue-2 dark:data-[state=checked]:text-gray-12',
-        'dark:data-[disabled]:text-gray-7',
+        'data-[disabled]:pointer-events-none data-[disabled]:cursor-not-allowed data-[disabled]:text-gray-8',
+        'dark:text-gray-12 dark:data-[highlighted]:bg-blue-2 dark:data-[highlighted]:text-gray-12 dark:data-[state=open]:bg-blue-2 dark:data-[state=open]:text-gray-12 dark:data-[state=checked]:bg-blue-2 dark:data-[state=checked]:text-gray-12 dark:data-[disabled]:text-gray-7',
         className,
       )}
       {...props}
@@ -250,7 +233,7 @@ function ContextMenuLabel({
       data-slot="context-menu-label"
       data-inset={inset || undefined}
       className={cn(
-        'px-2 py-1.5 font-sans text-xs leading-4 font-semibold text-gray-6 dark:text-gray-8 data-[inset]:pl-7',
+        'px-2 py-1.5 text-xs leading-4 font-medium text-gray-6 dark:text-gray-8 data-[inset]:pl-7',
         className,
       )}
       {...props}
@@ -265,7 +248,7 @@ function ContextMenuSeparator({
   return (
     <ContextMenuPrimitive.Separator
       data-slot="context-menu-separator"
-      className={cn('-mx-1 my-1 h-px bg-gray-11 dark:bg-gray-5', className)}
+      className={cn('-mx-1 my-1 h-px bg-gray-12 dark:bg-gray-3', className)}
       {...props}
     />
   );
@@ -306,16 +289,11 @@ function ContextMenuSubTrigger({
       data-slot="context-menu-sub-trigger"
       data-inset={inset || undefined}
       className={cn(
-        'relative flex min-h-6 w-full cursor-default select-none items-center gap-2 rounded-[3px] bg-transparent pl-2 py-1 pr-1.5 font-sans text-[13px] leading-4 font-medium text-gray-1 outline-none transition-[background-color,color] duration-75',
+        'relative flex h-6 w-full cursor-default select-none items-center gap-2 rounded bg-transparent pl-2 py-1 pr-1.5 text-default text-gray-1 outline-none transition-[background-color] duration-75',
         'data-[highlighted]:bg-blue-11 data-[highlighted]:text-gray-1',
         'data-[state=open]:bg-blue-11 data-[state=open]:text-gray-1',
-        'data-[state=checked]:bg-blue-12 data-[state=checked]:text-blue-1',
         'data-[disabled]:pointer-events-none data-[disabled]:text-gray-8',
-        'dark:text-gray-12',
-        'dark:data-[highlighted]:bg-blue-2 dark:data-[highlighted]:text-gray-12',
-        'dark:data-[state=open]:bg-blue-2 dark:data-[state=open]:text-gray-12',
-        'dark:data-[state=checked]:bg-blue-2 dark:data-[state=checked]:text-gray-12',
-        'dark:data-[disabled]:text-gray-7',
+        'dark:text-gray-12 dark:data-[highlighted]:bg-blue-2 dark:data-[highlighted]:text-gray-12 dark:data-[state=open]:bg-blue-2 dark:data-[state=open]:text-gray-12 dark:data-[disabled]:text-gray-7',
         'data-[inset]:pl-7',
         className,
       )}
@@ -336,7 +314,7 @@ function ContextMenuSubContent({
     <ContextMenuPrimitive.SubContent
       data-slot="context-menu-sub-content"
       className={cn(
-        'z-[var(--z-popover)] min-w-[196px] overflow-hidden rounded-[8px] border border-gray-9 bg-white p-1 shadow-[0_4px_12px_rgba(0,0,0,0.15)] dark:border-gray-5 dark:bg-gray-2 dark:shadow-[0_4px_12px_rgba(0,0,0,0.4)] data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:origin-top data-[side=bottom]:slide-in-from-top-2 data-[side=left]:origin-right data-[side=left]:slide-in-from-right-2 data-[side=right]:origin-left data-[side=right]:slide-in-from-left-2 data-[side=top]:origin-bottom data-[side=top]:slide-in-from-bottom-2',
+        'z-[var(--z-popover)] min-w-[196px] overflow-hidden rounded-[8px] border-[0.5px] border-gray-9 bg-gray-14 p-1 shadow-[var(--shadow-popover)] dark:border-gray-3 dark:bg-gray-2 dark:shadow-[var(--shadow-popover-dark)] data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:origin-top data-[side=bottom]:slide-in-from-top-2 data-[side=left]:origin-right data-[side=left]:slide-in-from-right-2 data-[side=right]:origin-left data-[side=right]:slide-in-from-left-2 data-[side=top]:origin-bottom data-[side=top]:slide-in-from-bottom-2',
         className,
       )}
       sideOffset={sideOffset}

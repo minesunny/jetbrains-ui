@@ -114,6 +114,8 @@ Use global tokens defined in `tokens.css` → `--shadow-*`.
 | `--shadow-xl` | `0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)` | — | Extra large elevation |
 | `--shadow-dialog` | `0px 8px 40px 0px rgba(0, 0, 0, 0.3)` | `Light/Shadow/Dialog` | Alert / Dialog |
 | `--shadow-tooltip` | `0px 3px 12px 0px rgba(27, 31, 38, 0.51)` | — | Tooltip |
+| `--shadow-popover` | `0px 6px 20px 0px rgba(145, 145, 145, 0.47)` | — | Select / ContextMenu (Light) |
+| `--shadow-popover-dark` | `0px 8px 32px 0px rgba(0, 0, 0, 0.4)` | — | Select / ContextMenu (Dark) |
 
 ### Figma → Token Mapping
 
@@ -121,6 +123,8 @@ Use global tokens defined in `tokens.css` → `--shadow-*`.
 |-------------------|-------|----------|
 | `Light/Shadow/Dialog` | `--shadow-dialog` | `shadow-[var(--shadow-dialog)]` |
 | Tooltip shadow | `--shadow-tooltip` | `shadow-[var(--shadow-tooltip)]` |
+| Popover (light) | `--shadow-popover` | `shadow-[var(--shadow-popover)]` |
+| Popover (dark) | `--shadow-popover-dark` | `dark:shadow-[var(--shadow-popover-dark)]` |
 
 When encountering a Figma shadow not listed above, add it as a new token in `tokens.css` under `--shadow-{name}`.
 

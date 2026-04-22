@@ -269,6 +269,10 @@
       0px 8px 40px 0px rgba(0, 0, 0, 0.3);
     --shadow-tooltip:
       0px 3px 12px 0px rgba(27, 31, 38, 0.51);
+    --shadow-popover:
+      0px 6px 20px 0px rgba(145, 145, 145, 0.47);
+    --shadow-popover-dark:
+      0px 8px 32px 0px rgba(0, 0, 0, 0.4);
 
     /* ===== Transitions 过渡动画 ===== */
     --transition-fast: 100ms;
