@@ -14,7 +14,7 @@ function Input({
       type={type}
       data-slot="input"
       className={cn(
-        'flex h-10 w-[224px] min-w-0 rounded border border-gray-9 bg-gray-14 py-1.5 text-default text-gray-1 shadow-none transition-[border-color,box-shadow] duration-150 ease-in-out outline-none placeholder:text-gray-7 dark:border-gray-5 dark:bg-gray-2 dark:text-gray-12 dark:placeholder:text-gray-8',
+        'flex h-7 w-[224px] min-w-0 rounded border border-gray-9 bg-gray-14 px-2 text-default text-gray-1 shadow-none transition-[border-color,box-shadow] duration-150 ease-in-out outline-none placeholder:text-gray-7 dark:border-gray-5 dark:bg-gray-2 dark:text-gray-12 dark:placeholder:text-gray-8',
         // Focus
         'focus-visible:border-2 focus-visible:border-blue-4 focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-0 dark:focus-visible:border-blue-6 dark:focus-visible:ring-blue-6',
         // Validated (error, unfocused)
