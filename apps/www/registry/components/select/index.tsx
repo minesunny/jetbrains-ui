@@ -30,7 +30,7 @@ const SelectTrigger = React.forwardRef<
     data-active={active || undefined}
     className={cn(
       // Base (same as Input / ComboBoxTrigger)
-      'group inline-flex h-10 min-w-0 items-center justify-between gap-2 rounded border border-gray-9 bg-gray-14 py-1.5 pl-[9px] pr-0 text-default text-gray-1 shadow-none transition-[border-color,box-shadow] duration-150 ease-in-out outline-none dark:border-gray-5 dark:bg-gray-2 dark:text-gray-12',
+      'group inline-flex h-7 min-w-0 items-center justify-between gap-2 rounded border border-gray-9 bg-gray-14 px-2 text-default text-gray-1 shadow-none transition-[border-color,box-shadow] duration-150 ease-in-out outline-none dark:border-gray-5 dark:bg-gray-2 dark:text-gray-12',
       // Placeholder
       '[&>span[data-placeholder]]:text-gray-7 dark:[&>span[data-placeholder]]:text-gray-8',
       // Focus

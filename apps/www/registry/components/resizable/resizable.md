@@ -32,12 +32,11 @@ const ResizablePanel = React.forwardRef<
 >(...)
 
 // 3. ResizableHandle — wraps Separator with themed colors + optional grip
-const ResizableHandle = React.forwardRef<
-  HTMLDivElement,
-  React.ComponentPropsWithoutRef<typeof Separator> & {
+function ResizableHandle(
+  props: React.ComponentPropsWithoutRef<typeof Separator> & {
     withHandle?: boolean;
   }
->(...)
+)
 ```
 
 ## Design Specifications

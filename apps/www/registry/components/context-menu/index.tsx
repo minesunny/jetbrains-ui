@@ -66,7 +66,7 @@ function ContextMenuTrigger({
       asChild={asChild}
       className={cn(
         !asChild &&
-          'group inline-flex h-10 min-w-0 items-center justify-between gap-2 rounded border border-gray-9 bg-gray-14 py-1.5 pl-[9px] pr-0 text-default text-gray-1 shadow-none transition-[border-color,box-shadow] duration-150 ease-in-out outline-none dark:border-gray-5 dark:bg-gray-2 dark:text-gray-12 [&>span[data-placeholder]]:text-gray-7 dark:[&>span[data-placeholder]]:text-gray-8 focus-visible:border-2 focus-visible:border-blue-4 focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-0 dark:focus-visible:border-blue-6 dark:focus-visible:ring-blue-6 data-[state=open]:border-2 data-[state=open]:border-blue-4 data-[state=open]:ring-2 data-[state=open]:ring-blue-4 data-[state=open]:ring-offset-0 dark:data-[state=open]:border-blue-6 dark:data-[state=open]:ring-blue-6 disabled:cursor-not-allowed disabled:border disabled:border-gray-13 disabled:bg-gray-13 disabled:text-gray-8 dark:disabled:border-gray-5 dark:disabled:bg-gray-2 dark:disabled:text-gray-7',
+          'group inline-flex h-7 min-w-0 items-center justify-between gap-2 rounded border border-gray-9 bg-gray-14 px-2 text-default text-gray-1 shadow-none transition-[border-color,box-shadow] duration-150 ease-in-out outline-none dark:border-gray-5 dark:bg-gray-2 dark:text-gray-12 [&>span[data-placeholder]]:text-gray-7 dark:[&>span[data-placeholder]]:text-gray-8 focus-visible:border-2 focus-visible:border-blue-4 focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-0 dark:focus-visible:border-blue-6 dark:focus-visible:ring-blue-6 data-[state=open]:border-2 data-[state=open]:border-blue-4 data-[state=open]:ring-2 data-[state=open]:ring-blue-4 data-[state=open]:ring-offset-0 dark:data-[state=open]:border-blue-6 dark:data-[state=open]:ring-blue-6 disabled:cursor-not-allowed disabled:border disabled:border-gray-13 disabled:bg-gray-13 disabled:text-gray-8 dark:disabled:border-gray-5 dark:disabled:bg-gray-2 dark:disabled:text-gray-7',
         className,
       )}
       {...props}
@@ -138,12 +138,10 @@ function ContextMenuItem({
       )}
       {...props}
     >
-      {icon ? (
+      {icon && (
         <span className="inline-flex size-4 shrink-0 items-center justify-center">
           <SVG name={icon} size="md" />
         </span>
-      ) : (
-        <span className="inline-flex size-4 shrink-0" />
       )}
       {children}
     </ContextMenuPrimitive.Item>
