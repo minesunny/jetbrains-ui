@@ -21,7 +21,20 @@ export default defineConfig({
     setupFiles: ['./src/__tests__/setup.ts'],
     css: false,
     coverage: {
+      provider: 'v8',
+      reporter: ['text', 'text-summary', 'html'],
       include: ['registry/components/**'],
+      exclude: [
+        'registry/components/**/registry-item.json',
+        'registry/components/**/*.md',
+        'registry/components/**/.DS_Store',
+      ],
+      thresholds: {
+        statements: 70,
+        branches: 70,
+        functions: 70,
+        lines: 70,
+      },
     },
   },
 });
