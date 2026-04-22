@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select",
+  "type": "registry:ui",
+  "title": "Select",
+  "description": "A dropdown select component built on Radix UI Select with JetBrains styling.",
+  "dependencies": [
+    "@radix-ui/react-select"
+  ],
+  "files": [
+    {
+      "path": "registry/components/select/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/select.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "select",
+      "dropdown",
+      "form",
+      "component"
+    ],
+    "category": "form",
+    "docs": {
+      "description": "A dropdown select component with JetBrains theme styling.",
+      "features": [
+        "ComboBox-like trigger styling",
+        "Themed dropdown content",
+        "Keyboard navigation"
+      ]
+    }
+  }
+}
