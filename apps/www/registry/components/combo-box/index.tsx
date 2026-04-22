@@ -29,49 +29,28 @@ const ComboBoxTrigger = React.forwardRef<
     data-slot="combo-box-trigger"
     data-active={active || undefined}
     className={cn(
-      'group inline-flex h-6 items-center justify-between gap-2 overflow-hidden rounded border border-gray-8 bg-white px-0 pl-3 font-sans text-[13px] leading-4 font-medium text-gray-1 outline-none transition-[background-color,border-color,color,border-width] duration-150',
-      'hover:border-gray-6 hover:bg-gray-13',
-      'active:border-blue-4 active:bg-gray-12',
-      'focus-visible:border-2 focus-visible:border-blue-4 focus-visible:pl-[11px]',
-      'disabled:cursor-not-allowed disabled:border-gray-10 disabled:bg-gray-12 disabled:text-gray-8',
-      '[&>span[data-placeholder]]:text-gray-7',
-      'disabled:[&>span[data-placeholder]]:text-gray-8',
-      '[&_[data-slot=combo-box-icon]]:border-l-gray-11 [&_[data-slot=combo-box-icon]]:text-gray-6',
-      'active:[&_[data-slot=combo-box-icon]]:border-l-blue-4',
-      'focus-visible:[&_[data-slot=combo-box-icon]]:border-l-blue-4',
-      'disabled:[&_[data-slot=combo-box-icon]]:border-l-gray-10 disabled:[&_[data-slot=combo-box-icon]]:text-gray-8',
-      "[&[data-state='open']_[data-slot=combo-box-icon]]:border-l-blue-4",
-      "[&[data-active='true']_[data-slot=combo-box-icon]]:border-l-blue-4",
-      '[&[data-state=open]]:border-blue-4 [&[data-state=open]]:bg-gray-12',
-      '[&[data-active=true]]:border-blue-4 [&[[data-active=true]]:bg-gray-12',
-      "[&[aria-invalid='true']]:border-red-9 [&[aria-invalid='true']:hover]:border-red-9",
-      "[&[aria-invalid='true']_[data-slot=combo-box-icon]]:border-l-red-9",
-      "[&[aria-invalid='true']:active]:border-red-4 [&[aria-invalid='true']:active_[data-slot=combo-box-icon]]:border-l-red-4",
-      "[&[aria-invalid='true']:focus-visible]:border-red-4 [&[aria-invalid='true']:focus-visible_[data-slot=combo-box-icon]]:border-l-red-4",
-      "[&[aria-invalid='true'][data-state='open']]:border-red-4 [&[aria-invalid='true'][data-state='open']_[data-slot=combo-box-icon]]:border-l-red-4",
-      "[&[aria-invalid='true'][data-active='true']]:border-red-4 [&[aria-invalid='true'][data-active='true']_[data-slot=combo-box-icon]]:border-l-red-4",
+      // Base (same as Input)
+      'group inline-flex h-10 min-w-0 items-center justify-between gap-2 rounded border border-gray-9 bg-gray-14 py-1.5 pl-[9px] pr-0 text-default text-gray-1 shadow-none transition-[border-color,box-shadow] duration-150 ease-in-out outline-none dark:border-gray-5 dark:bg-gray-2 dark:text-gray-12',
+      // Placeholder
+      '[&>span[data-placeholder]]:text-gray-7 dark:[&>span[data-placeholder]]:text-gray-8',
+      // Focus (same as Input)
+      'focus-visible:border-2 focus-visible:border-blue-4 focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-0 dark:focus-visible:border-blue-6 dark:focus-visible:ring-blue-6',
+      // Open state (same visual as focus)
+      'data-[state=open]:border-2 data-[state=open]:border-blue-4 data-[state=open]:ring-2 data-[state=open]:ring-blue-4 data-[state=open]:ring-offset-0 dark:data-[state=open]:border-blue-6 dark:data-[state=open]:ring-blue-6',
+      // Validated (error, unfocused) (same as Input)
+      "[&[aria-invalid='true']]:border-2 [&[aria-invalid='true']]:border-red-9 dark:[&[aria-invalid='true']]:border-red-2",
+      // Validated + focused (same as Input)
+      "[&[aria-invalid='true']:focus-visible]:border-red-4 [&[aria-invalid='true']:focus-visible]:ring-2 [&[aria-invalid='true']:focus-visible]:ring-red-4 [&[aria-invalid='true']:focus-visible]:ring-offset-0 dark:[&[aria-invalid='true']:focus-visible]:border-red-6 dark:[&[aria-invalid='true']:focus-visible]:ring-red-6",
+      // Validated + open
+      "[&[aria-invalid='true'][data-state=open]]:border-red-4 [&[aria-invalid='true'][data-state=open]]:ring-2 [&[aria-invalid='true'][data-state=open]]:ring-red-4 [&[aria-invalid='true'][data-state=open]]:ring-offset-0 dark:[&[aria-invalid='true'][data-state=open]]:border-red-6 dark:[&[aria-invalid='true'][data-state=open]]:ring-red-6",
+      // Disabled (same as Input)
+      'disabled:cursor-not-allowed disabled:border disabled:border-gray-13 disabled:bg-gray-13 disabled:text-gray-8 dark:disabled:border-gray-5 dark:disabled:bg-gray-2 dark:disabled:text-gray-7',
+      'disabled:[&>span[data-placeholder]]:text-gray-8 dark:disabled:[&>span[data-placeholder]]:text-gray-7',
+      // Icon
+      '[&_[data-slot=combo-box-icon]]:text-gray-6 dark:[&_[data-slot=combo-box-icon]]:text-gray-8',
+      'disabled:[&_[data-slot=combo-box-icon]]:text-gray-8 dark:disabled:[&_[data-slot=combo-box-icon]]:text-gray-7',
       '[&[data-state=open]_[data-slot=combo-box-icon]]:rotate-180',
-      // dark
-      'dark:border-gray-6 dark:bg-gray-3 dark:text-gray-12',
-      'dark:hover:border-gray-7 dark:hover:bg-gray-4',
-      'dark:active:border-blue-6 dark:active:bg-gray-5',
-      'dark:focus-visible:border-blue-6',
-      'dark:disabled:border-gray-5 dark:disabled:bg-gray-4 dark:disabled:text-gray-7',
-      'dark:[&>span[data-placeholder]]:text-gray-8',
-      'dark:[&_[data-slot=combo-box-icon]]:border-l-gray-5 dark:[&_[data-slot=combo-box-icon]]:text-gray-8',
-      'dark:active:[&_[data-slot=combo-box-icon]]:border-l-blue-6',
-      'dark:focus-visible:[&_[data-slot=combo-box-icon]]:border-l-blue-6',
-      'dark:disabled:[&_[data-slot=combo-box-icon]]:border-l-gray-5 dark:disabled:[&_[data-slot=combo-box-icon]]:text-gray-7',
-      "dark:[&[data-state='open']_[data-slot=combo-box-icon]]:border-l-blue-6",
-      "dark:[&[data-active='true']_[data-slot=combo-box-icon]]:border-l-blue-6",
-      'dark:[&[data-state=open]]:border-blue-6 dark:[&[data-state=open]]:bg-gray-5',
-      'dark:[&[data-active=true]]:border-blue-6 dark:[&[data-active=true]]:bg-gray-5',
-      'dark:[&[aria-invalid=true]]:border-red-3 dark:[&[aria-invalid=true]]:hover:border-red-3',
-      'dark:[&[aria-invalid=true]_[data-slot=combo-box-icon]]:border-l-red-3',
-      'dark:[&[aria-invalid=true]:active]:border-red-7 dark:[&[aria-invalid=true]:active_[data-slot=combo-box-icon]]:border-l-red-7',
-      'dark:[&[aria-invalid=true]:focus-visible]:border-red-7 dark:[&[aria-invalid=true]:focus-visible_[data-slot=combo-box-icon]]:border-l-red-7',
-      "dark:[&[aria-invalid=true][data-state='open']]:border-red-7 dark:[&[aria-invalid=true][data-state='open']_[data-slot=combo-box-icon]]:border-l-red-7",
-      "dark:[&[aria-invalid=true][data-active='true']]:border-red-7 dark:[&[aria-invalid=true][data-active='true']_[data-slot=combo-box-icon]]:border-l-red-7",
+      // Size
       size === 'md' ? 'w-[224px]' : 'w-full',
       className,
     )}
@@ -80,7 +59,7 @@ const ComboBoxTrigger = React.forwardRef<
     {children}
     <SelectPrimitive.Icon
       data-slot="combo-box-icon"
-      className="inline-flex h-full w-7 shrink-0 items-center justify-center self-stretch border-l"
+      className="inline-flex h-full w-7 shrink-0 items-center justify-center self-stretch"
     >
       <span className="inline-flex transition-transform duration-150">
         <SVG name="general/general/chevron-down" size="md" />

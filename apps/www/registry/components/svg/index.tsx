@@ -52,6 +52,7 @@ export function SVG({
         width={renderedSize}
         height={renderedSize}
         viewBox="0 0 16 16"
+        role={ariaLabel ? 'img' : 'presentation'}
         aria-label={ariaLabel}
       >
         <use href={`#${spriteId}`} />

@@ -113,12 +113,14 @@ Use global tokens defined in `tokens.css` → `--shadow-*`.
 | `--shadow-lg` | `0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)` | — | Large elevation |
 | `--shadow-xl` | `0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)` | — | Extra large elevation |
 | `--shadow-dialog` | `0px 8px 40px 0px rgba(0, 0, 0, 0.3)` | `Light/Shadow/Dialog` | Alert / Dialog |
+| `--shadow-tooltip` | `0px 3px 12px 0px rgba(27, 31, 38, 0.51)` | — | Tooltip |
 
 ### Figma → Token Mapping
 
 | Figma Effect Name | Token | Tailwind |
 |-------------------|-------|----------|
 | `Light/Shadow/Dialog` | `--shadow-dialog` | `shadow-[var(--shadow-dialog)]` |
+| Tooltip shadow | `--shadow-tooltip` | `shadow-[var(--shadow-tooltip)]` |
 
 When encountering a Figma shadow not listed above, add it as a new token in `tokens.css` under `--shadow-{name}`.
 
