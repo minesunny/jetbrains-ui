@@ -1,0 +1,189 @@
+---
+title: Dialog
+description: Modal dialog component styled with the JetBrains UI design language.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-04-23
+---
+
+<ComponentPreview name="demo-dialog" />
+
+## Overview
+
+A dialog is a window overlaid on the primary window, used for forms, confirmations, and other tasks.
+This component is built with Radix `Dialog` primitives, with a composable header/content/footer API.
+
+## Installation
+
+<ComponentInstallation name="dialog" />
+
+## Usage
+
+```tsx
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/jetbrains-ui/dialog';
+import { Button } from '@/components/jetbrains-ui/buttons';
+
+<Dialog>
+  <DialogTrigger asChild>
+    <Button variant="secondary">Open Dialog</Button>
+  </DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+      <DialogTitle>Edit Profile</DialogTitle>
+    </DialogHeader>
+    <div className="px-5 py-4">
+      <DialogDescription>Make changes to your profile here.</DialogDescription>
+    </div>
+    <DialogFooter>
+      <div className="ml-auto flex items-center gap-3">
+        <DialogClose asChild>
+          <Button variant="secondary">Cancel</Button>
+        </DialogClose>
+        <DialogClose asChild>
+          <Button>Save Changes</Button>
+        </DialogClose>
+      </div>
+    </DialogFooter>
+  </DialogContent>
+</Dialog>;
+```
+
+## Structure
+
+- **DialogHeader**: Top section with `border-bottom` separator and `rounded-t-[5px]`. Contains `DialogTitle`.
+- **DialogFooter**: Bottom section with `border-top` separator and `rounded-b-[10px]`. Contains action buttons.
+- **DialogContent**: Root panel with `border-[0.5px]`, `rounded-lg` (8px), and themed shadow.
+
+## Styling
+
+- Light: `bg-gray-13 border-gray-12 shadow-[var(--shadow-dialog)]`
+- Dark: `dark:bg-gray-2 dark:border-gray-3 dark:shadow-[var(--shadow-dialog-dark)]`
+- Header border: `border-gray-12` / `dark:border-gray-3`
+- Footer border: `border-gray-12` / `dark:border-gray-3`
+
+## API Reference
+
+### Dialog
+
+<TypeTable
+  type={{
+    '...props': {
+      description: 'Props passed to Radix Dialog Root',
+      type: 'React.ComponentProps<typeof Dialog.Root>',
+      required: false,
+    },
+  }}
+/>
+
+### DialogContent
+
+<TypeTable
+  type={{
+    className: {
+      description: 'Additional CSS classes',
+      type: 'string',
+      required: false,
+    },
+    '...props': {
+      description: 'Props passed to Radix Dialog Content',
+      type: 'React.ComponentProps<typeof Dialog.Content>',
+      required: false,
+    },
+  }}
+/>
+
+### DialogHeader
+
+<TypeTable
+  type={{
+    className: {
+      description: 'Additional CSS classes',
+      type: 'string',
+      required: false,
+    },
+    children: {
+      description: 'Usually DialogTitle',
+      type: 'React.ReactNode',
+      required: false,
+    },
+  }}
+/>
+
+### DialogFooter
+
+<TypeTable
+  type={{
+    className: {
+      description: 'Additional CSS classes',
+      type: 'string',
+      required: false,
+    },
+    children: {
+      description: 'Usually action buttons',
+      type: 'React.ReactNode',
+      required: false,
+    },
+  }}
+/>
+
+### DialogTitle
+
+<TypeTable
+  type={{
+    className: {
+      description: 'Additional CSS classes',
+      type: 'string',
+      required: false,
+    },
+    '...props': {
+      description: 'Props passed to Radix Dialog Title',
+      type: 'React.ComponentProps<typeof Dialog.Title>',
+      required: false,
+    },
+  }}
+/>
+
+### DialogDescription
+
+<TypeTable
+  type={{
+    className: {
+      description: 'Additional CSS classes',
+      type: 'string',
+      required: false,
+    },
+    '...props': {
+      description: 'Props passed to Radix Dialog Description',
+      type: 'React.ComponentProps<typeof Dialog.Description>',
+      required: false,
+    },
+  }}
+/>
+
+### DialogTrigger / DialogClose
+
+<TypeTable
+  type={{
+    asChild: {
+      description: 'Render custom element instead of default',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    '...props': {
+      description: 'Props passed to Radix Dialog Trigger/Close',
+      type: 'React.ComponentProps<typeof Dialog.Trigger>',
+      required: false,
+    },
+  }}
+/>

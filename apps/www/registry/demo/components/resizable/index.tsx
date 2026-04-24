@@ -23,10 +23,7 @@ export default function ResizableDemo({
   return (
     <ResizablePanelGroup
       orientation={direction}
-      className={cn(
-        'w-full rounded-lg border',
-        vertical ? 'h-72' : 'h-48',
-      )}
+      className={cn('w-full rounded-lg border', vertical ? 'h-72' : 'h-48')}
     >
       <ResizablePanel defaultSize={45} minSize={20}>
         <div className="h-full min-h-0 min-w-0 p-3 text-sm">

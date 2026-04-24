@@ -14,7 +14,8 @@ export function useIconMode() {
     setMounted(true);
   }, []);
 
-  const siteMode: IconMode = mounted && resolvedTheme === 'dark' ? 'dark' : 'light';
+  const siteMode: IconMode =
+    mounted && resolvedTheme === 'dark' ? 'dark' : 'light';
 
   return [manualMode ?? siteMode, setManualMode] as const;
 }

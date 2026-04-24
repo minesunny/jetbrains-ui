@@ -94,7 +94,7 @@ function AlertContent({
           data-type={type}
           data-size={size}
           className={cn(
-            "fixed left-1/2 top-1/2 z-[var(--z-modal)] flex max-w-[calc(100vw-2rem)] -translate-x-1/2 -translate-y-1/2 flex-col rounded-lg border border-gray-10 bg-gray-13 pb-[66px] pl-[60px] pr-5 pt-5 text-gray-1 opacity-0 shadow-[var(--shadow-dialog)] outline-none transition-[opacity,transform] duration-150 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=closed]:scale-95 data-[state=closed]:opacity-0 dark:border-gray-4 dark:bg-gray-2 dark:text-gray-12 data-[size=default]:w-[370px] data-[size=wide]:w-[420px] data-[size=auto]:w-fit data-[size=auto]:min-w-[370px]",
+            'fixed left-1/2 top-1/2 z-[var(--z-modal)] flex max-w-[calc(100vw-2rem)] -translate-x-1/2 -translate-y-1/2 flex-col rounded-lg border border-gray-10 bg-gray-13 pb-[66px] pl-[60px] pr-5 pt-5 text-gray-1 opacity-0 shadow-[var(--shadow-dialog)] outline-none transition-[opacity,transform] duration-150 data-[state=open]:scale-100 data-[state=open]:opacity-100 data-[state=closed]:scale-95 data-[state=closed]:opacity-0 dark:border-gray-4 dark:bg-gray-2 dark:text-gray-12 data-[size=default]:w-[370px] data-[size=wide]:w-[420px] data-[size=auto]:w-fit data-[size=auto]:min-w-[370px]',
             className,
           )}
           {...props}
@@ -226,7 +226,10 @@ function AlertCancel({
   return (
     <AlertPrimitive.Cancel
       data-slot="alert-cancel"
-      className={cn(buttonVariants({ variant: 'secondary' }), className)}
+      className={cn(
+        'inline-flex h-7 min-w-[72px] items-center justify-center gap-2 rounded border border-gray-9 bg-gray-13 px-3 font-sans text-[13px] leading-4 font-medium text-gray-1 transition-[background-color,color,border-color,box-shadow] duration-150 ease-in-out dark:border-gray-5 dark:bg-gray-2 dark:text-gray-12',
+        className,
+      )}
       {...props}
     />
   );

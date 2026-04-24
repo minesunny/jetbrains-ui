@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-General/exit",
+  "name": "icons-general-general-exit",
   "type": "registry:ui",
-  "title": "General/exit",
-  "description": "General/exit icon from general category.",
-  "registryDependencies": [],
+  "title": "Exit",
+  "description": "Exit icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/General/exit/exit_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/General/exit/exit_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/general/exit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/exit/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "General/exit",
+      "exit",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

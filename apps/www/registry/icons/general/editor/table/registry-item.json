@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-Editor/table",
+  "name": "icons-general-editor-table",
   "type": "registry:ui",
-  "title": "Editor/table",
-  "description": "Editor/table icon from general category.",
-  "registryDependencies": [],
+  "title": "Table",
+  "description": "Table icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/Editor/table/table_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/Editor/table/table_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/editor/table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/table/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "Editor/table",
+      "table",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

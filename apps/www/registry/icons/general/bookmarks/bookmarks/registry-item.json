@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-Bookmarks/bookmarks",
+  "name": "icons-general-bookmarks-bookmarks",
   "type": "registry:ui",
-  "title": "Bookmarks/bookmarks",
-  "description": "Bookmarks/bookmarks icon from general category.",
-  "registryDependencies": [],
+  "title": "Bookmarks",
+  "description": "Bookmarks icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/Bookmarks/bookmarks/bookmarks_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/Bookmarks/bookmarks/bookmarks_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/bookmarks/bookmarks/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/bookmarks/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "Bookmarks/bookmarks",
+      "bookmarks",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

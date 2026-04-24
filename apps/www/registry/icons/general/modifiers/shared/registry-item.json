@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-Modifiers/shared",
+  "name": "icons-general-modifiers-shared",
   "type": "registry:ui",
-  "title": "Modifiers/shared",
-  "description": "Modifiers/shared icon from general category.",
-  "registryDependencies": [],
+  "title": "Shared",
+  "description": "Shared icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/Modifiers/shared/shared_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/Modifiers/shared/shared_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/modifiers/shared/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/shared/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "Modifiers/shared",
+      "shared",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

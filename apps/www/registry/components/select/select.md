@@ -62,7 +62,7 @@ interface SelectSeparatorProps
 
 #### Base
 
-- `inline-flex h-10 min-w-0 items-center justify-between gap-2 rounded border border-gray-9 bg-gray-14 py-1.5 pl-[9px] pr-0 text-default text-gray-1 shadow-none transition-[border-color,box-shadow] duration-150 ease-in-out outline-none`
+- `inline-flex h-7 min-w-0 items-center justify-between gap-2 rounded border border-gray-9 bg-gray-14 px-2 text-default text-gray-1 shadow-none transition-[border-color,box-shadow] duration-150 ease-in-out outline-none`
 - Dark: `dark:border-gray-5 dark:bg-gray-2 dark:text-gray-12`
 
 #### Placeholder text
@@ -118,8 +118,8 @@ Default: `fluid`
 
 #### Base
 
-- `w-[164px] overflow-hidden rounded-[8px] border-[0.5px] border-gray-9 bg-gray-14 p-0 shadow-[0_6px_20px_0px_#91919178]`
-- Dark: `dark:border-gray-3 dark:bg-gray-2 dark:shadow-[0_8px_32px_0px_#00000066]`
+- `w-[164px] overflow-hidden rounded-[8px] border-[0.5px] border-gray-9 bg-gray-14 p-0 shadow-[var(--shadow-popover)]`
+- Dark: `dark:border-gray-3 dark:bg-gray-2 dark:shadow-[var(--shadow-popover-dark)]`
 - `z-[var(--z-popover)]`
 
 #### Position offsets (popper mode)

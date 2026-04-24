@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-types",
+  "type": "registry:ui",
+  "title": "General Icons Types",
+  "description": "Shared types and utilities for General icon components.",
+  "files": [
+    {
+      "path": "registry/icons/general/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/types.ts"
+    }
+  ]
+}

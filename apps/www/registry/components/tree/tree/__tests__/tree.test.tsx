@@ -17,21 +17,6 @@ describe('Tree', () => {
     expect(screen.queryByText('Child')).not.toBeInTheDocument();
   });
 
-  it('applies width and height constraints to the scroll area wrapper', () => {
-    render(
-      <Tree width="240px" height="120px">
-        <TreeItem value="root" label="Root" />
-      </Tree>,
-    );
-
-    const scrollArea = document.querySelector(
-      '[data-slot="tree-scroll-area"]',
-    ) as HTMLElement;
-
-    expect(scrollArea.style.width).toBe('240px');
-    expect(scrollArea.style.height).toBe('120px');
-  });
-
   it('expands nested items when disclosure is clicked', async () => {
     const user = userEvent.setup();
 

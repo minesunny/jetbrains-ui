@@ -29,13 +29,13 @@ const buttonVariants = cva(
           // Light
           'border-gray-9 bg-gray-14 text-gray-1',
           'hover:bg-gray-14 hover:text-gray-1 hover:border-gray-7',
-          'active:bg-gray-13 active:text-gray-1 active:border-gray-7',
+          'active:bg-gray-13 active:text-gray-1 active:border-gray-9',
           'focus-visible:bg-gray-14 focus-visible:border-blue-4 focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-14',
           'disabled:bg-gray-12 disabled:text-gray-8 disabled:border-transparent',
           // Dark
           'dark:border-transparent dark:bg-gray-2 dark:text-gray-12',
           'dark:hover:bg-gray-2 dark:hover:text-gray-12 dark:hover:border-transparent',
-          'dark:active:bg-gray-2 dark:active:text-gray-1 dark:active:border-gray-7',
+          'dark:active:bg-gray-2 dark:active:text-gray-1 dark:active:border-gray-5',
           'dark:focus-visible:ring-blue-6 dark:focus-visible:ring-offset-gray-2',
           'dark:disabled:bg-gray-5 dark:disabled:text-gray-8 dark:disabled:border-transparent',
         ),
