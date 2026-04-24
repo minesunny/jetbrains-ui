@@ -264,6 +264,43 @@
       }
     },
     {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "JetBrains-style modal dialog built on Radix Dialog with themed header and footer.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/components/dialog/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/dialog.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "dialog",
+          "modal",
+          "jetbrains",
+          "ui",
+          "component"
+        ],
+        "category": "overlay",
+        "docs": {
+          "description": "JetBrains-style dialog component for modal interactions.",
+          "features": [
+            "Built on Radix Dialog",
+            "Themed header with border-bottom separator",
+            "Themed footer with border-top separator",
+            "Token-driven light/dark theme support",
+            "Keyboard and screen-reader accessible",
+            "Composable header/content/footer API"
+          ]
+        }
+      }
+    },
+    {
       "name": "dropdown-menu",
       "type": "registry:ui",
       "title": "Dropdown Menu",
@@ -1003,9 +1040,6 @@
             },
             "slim": {
               "value": false
-            },
-            "tooltip": {
-              "value": ""
             }
           }
         }
@@ -1102,6 +1136,27 @@
         }
       ],
       "meta": {}
+    },
+    {
+      "name": "demo-dialog",
+      "type": "registry:ui",
+      "title": "Dialog Demo",
+      "description": "Demo showing dialog component",
+      "dependencies": [],
+      "registryDependencies": [
+        "@jetbrains-ui/dialog",
+        "@jetbrains-ui/buttons"
+      ],
+      "files": [
+        {
+          "path": "registry/demo/components/dialog/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/demo/dialog.tsx"
+        }
+      ],
+      "meta": {
+        "demoProps": {}
+      }
     },
     {
       "name": "demo-dropdown-menu",

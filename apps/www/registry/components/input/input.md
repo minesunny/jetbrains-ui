@@ -32,9 +32,9 @@ interface InputProps extends React.ComponentProps<'input'> {
 
 | 属性 | 值 |
 |------|------|
-| 高度 | `h-10` (40px) |
+| 高度 | `h-7` (28px) |
 | 宽度 | `w-[224px]`（默认） |
-| 内边距 | `py-1.5` |
+| 内边距 | `px-2` |
 | 圆角 | `rounded`（3px，由 `--radius-default` 决定） |
 
 ### Typography

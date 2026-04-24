@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-General/help",
+  "name": "icons-general-general-help",
   "type": "registry:ui",
-  "title": "General/help",
-  "description": "General/help icon from general category.",
-  "registryDependencies": [],
+  "title": "Help",
+  "description": "Help icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/General/help/help_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/General/help/help_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/general/help/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/help/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "General/help",
+      "help",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

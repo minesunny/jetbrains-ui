@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-Editor/link",
+  "name": "icons-general-editor-link",
   "type": "registry:ui",
-  "title": "Editor/link",
-  "description": "Editor/link icon from general category.",
-  "registryDependencies": [],
+  "title": "Link",
+  "description": "Link icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/Editor/link/link_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/Editor/link/link_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/editor/link/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/link/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "Editor/link",
+      "link",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

@@ -32,7 +32,7 @@ vi.mock('@/registry/components/svg', async () => {
     const resolvedSize =
       typeof props.size === 'number'
         ? props.size
-        : sizeMap[props.size ?? 'md'] ?? 16;
+        : (sizeMap[props.size ?? 'md'] ?? 16);
 
     return createElement(
       'span',

@@ -11,7 +11,7 @@ function CheckboxIcon({ state }: { state: boolean | 'indeterminate' }) {
       <SVG
         name="general/actions/unselectAll"
         size="sm"
-        className="size-3.5 [&_path:first-of-type]:hidden [&_path:last-of-type]:stroke-current"
+        className="size-3.5 [&_path:first-of-type]:hidden stroke-current"
         aria-hidden="true"
       />
     );
@@ -20,7 +20,7 @@ function CheckboxIcon({ state }: { state: boolean | 'indeterminate' }) {
     <SVG
       name="general/actions/checked"
       size="sm"
-      className="size-3.5 [&_path]:stroke-current"
+      className="size-3.5 stroke-current"
       aria-hidden="true"
     />
   );

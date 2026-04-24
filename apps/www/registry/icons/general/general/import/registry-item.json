@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-General/import",
+  "name": "icons-general-general-import",
   "type": "registry:ui",
-  "title": "General/import",
-  "description": "General/import icon from general category.",
-  "registryDependencies": [],
+  "title": "Import",
+  "description": "Import icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/General/import/import_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/General/import/import_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/general/import/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/import/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "General/import",
+      "import",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

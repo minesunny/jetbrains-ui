@@ -40,10 +40,14 @@ describe('Resizable', () => {
   it('renders panel group, panels, and handle', () => {
     renderResizable({ withHandle: true });
 
-    const group = screen.getByText('Panel A').closest('[data-slot="resizable-panel-group"]');
+    const group = screen
+      .getByText('Panel A')
+      .closest('[data-slot="resizable-panel-group"]');
     expect(group).toBeInTheDocument();
 
-    const panel = screen.getByText('Panel A').closest('[data-slot="resizable-panel"]');
+    const panel = screen
+      .getByText('Panel A')
+      .closest('[data-slot="resizable-panel"]');
     expect(panel).toBeInTheDocument();
 
     const handle = screen.getByRole('separator');

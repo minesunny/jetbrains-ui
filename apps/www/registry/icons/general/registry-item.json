@@ -3,1632 +3,2060 @@
   "name": "icons-general",
   "type": "registry:ui",
   "title": "General Icons",
-  "description": "All icons from the general category.",
-  "registryDependencies": [],
+  "description": "All 409 icons from the General category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/AI_Asisstant/aiAssistant/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/index.ts"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/aiAssistantColored/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/ai-assistant/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/ai-assistant/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/aiAssistantDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/ai-assistant-colored/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/ai-assistant-colored/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/attached/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/ai-assistant-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/ai-assistant-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/dislike/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/attached/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/attached/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/dislikeSelected/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/dislike/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/dislike/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/featureAnswer/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/dislike-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/dislike-selected/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/featureCodeBlock/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/feature-answer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/feature-answer/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/featureComment/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/feature-code-block/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/feature-code-block/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/featureCommit/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/feature-comment/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/feature-comment/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/featureContext/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/feature-commit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/feature-commit/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/featureDocs/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/feature-context/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/feature-context/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/like/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/feature-docs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/feature-docs/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/likeSelected/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/like/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/like/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/send/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/like-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/like-selected/index.tsx"
     },
     {
-      "path": "registry/icons/General/AI_Asisstant/sendToEditor/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/send/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/send/index.tsx"
     },
     {
-      "path": "registry/icons/General/Access_Modifiers/accessLocal/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/ai-asisstant/send-to-editor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/send-to-editor/index.tsx"
     },
     {
-      "path": "registry/icons/General/Access_Modifiers/accessPrivate/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/access-modifiers/access-local/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/access-modifiers/access-local/index.tsx"
     },
     {
-      "path": "registry/icons/General/Access_Modifiers/accessProtected/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/access-modifiers/access-private/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/access-modifiers/access-private/index.tsx"
     },
     {
-      "path": "registry/icons/General/Access_Modifiers/accessPublic/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/access-modifiers/access-protected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/access-modifiers/access-protected/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/GroupByModule/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/access-modifiers/access-public/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/access-modifiers/access-public/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/addFile/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/group-by-module/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-module/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/buildAutoReloadChanges/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/add-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/add-file/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/checked/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/build-auto-reload-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/build-auto-reload-changes/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/deploy/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/checked/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/checked/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/diagramDiff/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/deploy/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/deploy/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/diffWithClipboard/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/diagram-diff/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/diagram-diff/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/gift/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/diff-with-clipboard/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/diff-with-clipboard/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/groupByClass/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/gift/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/gift/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/groupByFile/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/group-by-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-class/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/groupByMethod/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/group-by-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-file/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/groupByPackage/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/group-by-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-method/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/groupByTestProduction/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/group-by-package/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-package/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/inSelection/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/group-by-test-production/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/group-by-test-production/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/lightning/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/in-selection/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/in-selection/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/moveToButton/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/lightning/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/lightning/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/openApi/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/move-to-button/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/move-to-button/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/playBack/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/open-api/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/open-api/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/playFirst/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/play-back/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/play-back/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/playForward/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/play-first/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/play-first/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/playLast/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/play-forward/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/play-forward/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/preview/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/play-last/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/play-last/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/profileCPU/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/preview/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/preview/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/profileMemory/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/profile-cpu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/profile-cpu/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/profileRed/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/profile-memory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/profile-memory/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/projectDirectory/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/profile-red/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/profile-red/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/replace/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/project-directory/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/project-directory/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/report/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/replace/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/replace/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/restartStop/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/report/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/report/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/runAll/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/restart-stop/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/restart-stop/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/selectAll/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/run-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/run-all/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/shortcutFilter/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/select-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/select-all/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/showToImplement/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/shortcut-filter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/shortcut-filter/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/split/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/show-to-implement/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/show-to-implement/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/startMemoryProfile/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/split/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/split/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/suggestedRefactoringBulb/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/start-memory-profile/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/start-memory-profile/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/swapPanels/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/suggested-refactoring-bulb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/suggested-refactoring-bulb/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/synchronizeScrolling/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/swap-panels/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/swap-panels/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/toggleVisibility/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/synchronize-scrolling/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/synchronize-scrolling/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/unselectAll/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/toggle-visibility/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/toggle-visibility/index.tsx"
     },
     {
-      "path": "registry/icons/General/Actions/writeReview/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/unselect-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/unselect-all/index.tsx"
     },
     {
-      "path": "registry/icons/General/Bookmarks/bookmarks/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/actions/write-review/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/actions/write-review/index.tsx"
     },
     {
-      "path": "registry/icons/General/DevKit/addSDK/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/bookmarks/bookmarks/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/bookmarks/index.tsx"
     },
     {
-      "path": "registry/icons/General/DevKit/descriptionFile/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/bookmarks/add-bookmarks-list/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/add-bookmarks-list/index.tsx"
     },
     {
-      "path": "registry/icons/General/DevKit/diff/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/bookmarks/bookmark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/bookmark/index.tsx"
     },
     {
-      "path": "registry/icons/General/DevKit/plugin/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/bookmarks/bookmarks-list/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/bookmarks-list/index.tsx"
     },
     {
-      "path": "registry/icons/General/DevKit/pluginV2/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/bookmarks/mnemonic/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/bookmarks/mnemonic/index.tsx"
     },
     {
-      "path": "registry/icons/General/DevKit/properties/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/devkit/add-sdk/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/add-sdk/index.tsx"
     },
     {
-      "path": "registry/icons/General/DevKit/sdkClosed/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/devkit/description-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/description-file/index.tsx"
     },
     {
-      "path": "registry/icons/General/Duplicates/sendToTheLeft/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/devkit/diff/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/diff/index.tsx"
     },
     {
-      "path": "registry/icons/General/Duplicates/sendToTheLeftGrayed/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/devkit/plugin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/plugin/index.tsx"
     },
     {
-      "path": "registry/icons/General/Duplicates/sendToTheRight/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/devkit/plugin-v2/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/plugin-v2/index.tsx"
     },
     {
-      "path": "registry/icons/General/Duplicates/sendToTheRightGrayed/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/devkit/properties/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/properties/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/addColumnLeft/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/devkit/sdk-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/sdk-closed/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/addColumnRight/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/duplicates/send-to-the-left/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/addRowAbove/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/duplicates/send-to-the-left-grayed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left-grayed/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/addRowBelow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/duplicates/send-to-the-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-right/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/bold/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/duplicates/send-to-the-right-grayed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-right-grayed/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/bulletList/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/add-column-left/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/add-column-left/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/centerAlign/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/add-column-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/add-column-right/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/checkmarkList/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/add-row-above/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/add-row-above/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/codeSpan/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/add-row-below/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/add-row-below/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/headerLevelDown/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/bold/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/bold/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/headerLevelUp/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/bullet-list/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/bullet-list/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/italic/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/center-align/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/center-align/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/leftAlign/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/checkmark-list/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/checkmark-list/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/link/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/code-span/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/code-span/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/numberedList/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/header-level-down/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/header-level-down/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/rightAlign/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/header-level-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/header-level-up/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/strikeThrough/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/italic/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/italic/index.tsx"
     },
     {
-      "path": "registry/icons/General/Editor/table/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/left-align/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/left-align/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/add/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/link/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/link/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/autoscrollFromSource/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/numbered-list/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/numbered-list/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/autoscrollToSource/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/right-align/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/right-align/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/checkmark/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/strike-through/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/strike-through/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/chevronDown/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/editor/table/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/editor/table/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/chevronDownHovered/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/add/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/add/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/chevronDownLarge/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/autoscroll-from-source/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/autoscroll-from-source/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/chevronLeft/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/autoscroll-to-source/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/autoscroll-to-source/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/chevronRight/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/checkmark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/checkmark/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/chevronUp/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/chevron-down/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/chevron-down/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/chevronUpLarge/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/chevron-down-hovered/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/chevron-down-hovered/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/classHierarchy/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/chevron-down-large/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/chevron-down-large/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/close/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/chevron-left/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/chevron-left/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/closeSmall/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/chevron-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/chevron-right/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/closeSmallHovered/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/chevron-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/chevron-up/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/collapseAll/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/chevron-up-large/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/chevron-up-large/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/configFile/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/class-hierarchy/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/class-hierarchy/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/copy/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/close/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/close/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/cut/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/close-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/close-small/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/delete/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/close-small-hovered/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/close-small-hovered/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/down/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/collapse-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/collapse-all/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/download/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/config-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/config-file/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/edit/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/copy/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/copy/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/exit/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/cut/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/cut/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/expandAll/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/delete/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/delete/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/export/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/down/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/down/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/externalLink/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/download/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/download/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/filter/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/edit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/edit/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/graphLayout/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/exit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/exit/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/groups/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/expand-all/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/expand-all/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/help/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/export/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/export/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/hide/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/external-link/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/external-link/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/history/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/filter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/filter/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/ideUpdate/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/graph-layout/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/graph-layout/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/import/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/groups/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/groups/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/keyboard/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/help/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/help/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/layout/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/hide/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/hide/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/left/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/history/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/history/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/listFiles/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/ide-update/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/ide-update/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/locate/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/import/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/import/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/locked/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/keyboard/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/keyboard/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/minimap/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/layout/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/layout/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/moreHorizontal/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/left/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/left/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/moreVertical/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/list-files/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/list-files/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/moveDown/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/locate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/locate/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/moveToBottomLeft/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/locked/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/locked/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/moveToBottomRight/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/minimap/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/minimap/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/moveToLeftBottom/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/more-horizontal/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/more-horizontal/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/moveToLeftTop/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/more-vertical/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/more-vertical/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/moveToRightBottom/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/move-down/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-down/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/moveToRightTop/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/move-to-bottom-left/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-to-bottom-left/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/moveUp/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/move-to-bottom-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-to-bottom-right/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/open/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/move-to-left-bottom/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-to-left-bottom/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/openInToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/move-to-left-top/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-to-left-top/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/openNewTab/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/move-to-right-bottom/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-to-right-bottom/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/pagination/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/move-to-right-top/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-to-right-top/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/paste/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/move-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/move-up/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/pin/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/open/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/open/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/pluginUpdate/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/open-in-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/open-in-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/previewHorizontally/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/open-new-tab/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/open-new-tab/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/previewVertically/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/pagination/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/pagination/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/print/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/paste/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/paste/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/projectConfigurable/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/pin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/pin/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/projectStructure/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/plugin-update/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/plugin-update/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/projectWideAnalysisOff/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/preview-horizontally/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/preview-horizontally/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/projectWideAnalysisOn/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/preview-vertically/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/preview-vertically/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/questionMark/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/print/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/print/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/readerMode/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/project-configurable/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/project-configurable/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/redo/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/project-structure/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/project-structure/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/reformatCode/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/project-wide-analysis-off/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/project-wide-analysis-off/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/refresh/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/project-wide-analysis-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/project-wide-analysis-on/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/remove/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/question-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/question-mark/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/right/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/reader-mode/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/reader-mode/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/run/widget/more/stroke/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/redo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/redo/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/runAnything/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/reformat-code/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/reformat-code/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/save/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/refresh/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/refresh/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/scrollDown/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/remove/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/remove/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/scrollUp/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/right/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/search/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/run-anything/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/run-anything/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/separatorHorizontal/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/save/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/save/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/settingSync/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/scroll-down/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/scroll-down/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/settings/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/scroll-up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/scroll-up/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/show/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/search/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/search/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/showAsTree/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/separator-horizontal/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/separator-horizontal/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/softWrap/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/setting-sync/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/setting-sync/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/sortAlphabetically/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/settings/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/settings/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/sortBy/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/show/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/show/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/sortByDuration/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/show-as-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/show-as-tree/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/sortByType/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/soft-wrap/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/soft-wrap/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/sortByUsage/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/sort-alphabetically/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/sort-alphabetically/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/sortByVisibility/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/sort-by/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/sort-by/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/splitHorizontally/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/sort-by-duration/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/sort-by-duration/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/splitVertically/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/sort-by-type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/sort-by-type/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/subtypes/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/sort-by-usage/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/sort-by-usage/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/supertypes/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/sort-by-visibility/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/sort-by-visibility/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/undo/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/split-horizontally/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/split-horizontally/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/unlocked/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/split-vertically/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/split-vertically/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/up/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/subtypes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/subtypes/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/upload/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/supertypes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/supertypes/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/vcs/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/undo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/undo/index.tsx"
     },
     {
-      "path": "registry/icons/General/General/windowsMenu/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/unlocked/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/unlocked/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/browse/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/up/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/collapse/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/upload/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/upload/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/copy/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/vcs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/vcs/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/exactWords/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/general/windows-menu/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/windows-menu/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/expand/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/browse/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/browse/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/filterHistory/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/collapse/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/collapse/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/inlineAdd/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/copy/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/copy/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/inlineEdit/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/exact-words/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/exact-words/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/inlineSettings/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/expand/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/expand/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/matchCase/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/filter-history/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/filter-history/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/newLine/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/inline-add/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/inline-add/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/preserveCase/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/inline-edit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/inline-edit/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/refresh/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/inline-settings/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/inline-settings/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/regex/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/match-case/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/match-case/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/searchHistory/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/new-line/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/new-line/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/sortHistory/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/preserve-case/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/preserve-case/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/inline/variables/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/refresh/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/refresh/index.tsx"
     },
     {
-      "path": "registry/icons/General/Inline/statisticsPanel/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/regex/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/regex/index.tsx"
     },
     {
-      "path": "registry/icons/General/Modifiers/finalMark/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/search-history/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/search-history/index.tsx"
     },
     {
-      "path": "registry/icons/General/Modifiers/junitTestMark/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/sort-history/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/sort-history/index.tsx"
     },
     {
-      "path": "registry/icons/General/Modifiers/locked/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/variables/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/variables/index.tsx"
     },
     {
-      "path": "registry/icons/General/Modifiers/processMark/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/inline/statistics-panel/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/inline/statistics-panel/index.tsx"
     },
     {
-      "path": "registry/icons/General/Modifiers/runnableMark/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/modifiers/final-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/final-mark/index.tsx"
     },
     {
-      "path": "registry/icons/General/Modifiers/shared/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/modifiers/junit-test-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/junit-test-mark/index.tsx"
     },
     {
-      "path": "registry/icons/General/Modifiers/staticMark/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/modifiers/locked/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/locked/index.tsx"
     },
     {
-      "path": "registry/icons/General/Modifiers/symlink/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/modifiers/process-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/process-mark/index.tsx"
     },
     {
-      "path": "registry/icons/General/Modifiers/tabAlert/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/modifiers/runnable-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/runnable-mark/index.tsx"
     },
     {
-      "path": "registry/icons/General/New_UI/newUI/darkTheme/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/modifiers/shared/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/shared/index.tsx"
     },
     {
-      "path": "registry/icons/General/New_UI/newUI/darkThemeSelected/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/modifiers/static-mark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/static-mark/index.tsx"
     },
     {
-      "path": "registry/icons/General/New_UI/newUI/lightTheme/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/modifiers/symlink/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/symlink/index.tsx"
     },
     {
-      "path": "registry/icons/General/New_UI/newUI/lightThemeSelected/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/modifiers/tab-alert/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/modifiers/tab-alert/index.tsx"
     },
     {
-      "path": "registry/icons/General/New_UI/newUI/systemTheme/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/new-ui/dark-theme/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/dark-theme/index.tsx"
     },
     {
-      "path": "registry/icons/General/New_UI/newUI/systemThemeSelected/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/new-ui/dark-theme-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/dark-theme-selected/index.tsx"
     },
     {
-      "path": "registry/icons/General/Object_Browser/abbreviatePackageNames/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/new-ui/light-theme/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/light-theme/index.tsx"
     },
     {
-      "path": "registry/icons/General/Object_Browser/compactEmptyPackages/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/new-ui/light-theme-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/light-theme-selected/index.tsx"
     },
     {
-      "path": "registry/icons/General/Object_Browser/flattenModules/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/new-ui/system-theme/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/system-theme/index.tsx"
     },
     {
-      "path": "registry/icons/General/Object_Browser/flattenPackages/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/new-ui/system-theme-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/new-ui/system-theme-selected/index.tsx"
     },
     {
-      "path": "registry/icons/General/Object_Browser/showLibraryContents/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/object-browser/abbreviate-package-names/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/abbreviate-package-names/index.tsx"
     },
     {
-      "path": "registry/icons/General/Object_Browser/showMembers/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/object-browser/compact-empty-packages/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/compact-empty-packages/index.tsx"
     },
     {
-      "path": "registry/icons/General/Object_Browser/sortAlphabetically/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/object-browser/flatten-modules/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/flatten-modules/index.tsx"
     },
     {
-      "path": "registry/icons/General/Object_Browser/sortByType/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/object-browser/flatten-packages/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/flatten-packages/index.tsx"
     },
     {
-      "path": "registry/icons/General/Object_Browser/sortByUsage/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/object-browser/show-library-contents/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/show-library-contents/index.tsx"
     },
     {
-      "path": "registry/icons/General/Object_Browser/sortByVisibility/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/object-browser/show-members/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/show-members/index.tsx"
     },
     {
-      "path": "registry/icons/General/Progress_bar/progress/pause/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/object-browser/sort-alphabetically/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/sort-alphabetically/index.tsx"
     },
     {
-      "path": "registry/icons/General/Progress_bar/progress/pauseHovered/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/object-browser/sort-by-type/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/sort-by-type/index.tsx"
     },
     {
-      "path": "registry/icons/General/Progress_bar/progress/resume/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/object-browser/sort-by-usage/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/sort-by-usage/index.tsx"
     },
     {
-      "path": "registry/icons/General/Progress_bar/progress/resumeHovered/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/object-browser/sort-by-visibility/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/object-browser/sort-by-visibility/index.tsx"
     },
     {
-      "path": "registry/icons/General/Progress_bar/progress/stop/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/progress-bar/pause/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/pause/index.tsx"
     },
     {
-      "path": "registry/icons/General/Progress_bar/progress/stopHovered/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/progress-bar/pause-hovered/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/pause-hovered/index.tsx"
     },
     {
-      "path": "registry/icons/General/Raiting/feedbackRating/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/progress-bar/resume/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/resume/index.tsx"
     },
     {
-      "path": "registry/icons/General/Raiting/feedbackRatingFocused/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/progress-bar/resume-hovered/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/resume-hovered/index.tsx"
     },
     {
-      "path": "registry/icons/General/Raiting/feedbackRatingFocusedOn/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/progress-bar/stop/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/stop/index.tsx"
     },
     {
-      "path": "registry/icons/General/Raiting/feedbackRatingOn/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/progress-bar/stop-hovered/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/progress-bar/stop-hovered/index.tsx"
     },
     {
-      "path": "registry/icons/General/Setting_Sync/Conflict/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/raiting/feedback-rating/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating/index.tsx"
     },
     {
-      "path": "registry/icons/General/Setting_Sync/LocalChanges/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/raiting/feedback-rating-focused/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating-focused/index.tsx"
     },
     {
-      "path": "registry/icons/General/Setting_Sync/RemoteChanges/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/raiting/feedback-rating-focused-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating-focused-on/index.tsx"
     },
     {
-      "path": "registry/icons/General/Setting_Sync/statusDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/raiting/feedback-rating-on/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating-on/index.tsx"
     },
     {
-      "path": "registry/icons/General/Setting_Sync/statusEnabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/setting-sync/conflict/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/conflict/index.tsx"
     },
     {
-      "path": "registry/icons/General/Spinner/loader/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/setting-sync/local-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/local-changes/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/error/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/setting-sync/remote-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/remote-changes/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/errorDialog/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/setting-sync/status-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/status-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/errorOutline/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/setting-sync/status-enabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/setting-sync/status-enabled/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/info/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/spinner/loader/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/spinner/loader/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/infoOutline/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/error/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/error/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/informationDialog/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/error-dialog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/error-dialog/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/questionDialog/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/error-outline/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/error-outline/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/success/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/info/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/info/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/successDialog/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/info-outline/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/info-outline/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/warning/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/information-dialog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/information-dialog/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/warningDialog/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/question-dialog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/question-dialog/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/status/warningOutline/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/success/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/success/index.tsx"
     },
     {
-      "path": "registry/icons/General/Status/successLogin/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/success-dialog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/success-dialog/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/CMakeToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/warning/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/warning/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/ConcurrencyDiagramToolwindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/warning-dialog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/warning-dialog/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/aiAssistantToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/warning-outline/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/warning-outline/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/amazonEMR/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/status/success-login/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/status/success-login/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/appEngineToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/c-make-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/c-make-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/awsGlueToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/concurrency-diagram-toolwindow/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/concurrency-diagram-toolwindow/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/buildServerProtocol/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/ai-assistant-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/ai-assistant-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/cdiToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/amazon-emr/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/amazon-emr/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/cwmAccess/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/app-engine-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/app-engine-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/cwmUsers/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/aws-glue-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/aws-glue-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/dataprocToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/build-server-protocol/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/build-server-protocol/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/donate/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/cdi-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/cdi-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/exceptionAnalyzer/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/cwm-access/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/cwm-access/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/feedback/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/cwm-users/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/cwm-users/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/gitLabToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/dataproc-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/dataproc-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/graphQLToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/donate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/donate/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/hive/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/exception-analyzer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/exception-analyzer/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/javaEEToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/feedback/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/feedback/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/jpaConsoleToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/git-lab-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/git-lab-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/jpaToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/graph-ql-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/graph-ql-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/jupyterToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/hive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/hive/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/kafka/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/java-ee-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/java-ee-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/kotlinToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/jpa-console-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/jpa-console-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/makefileToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/jpa-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/jpa-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/packageManager/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/jupyter-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/jupyter-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/persistence/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/kafka/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/kafka/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/rEngineToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/kotlin-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/kotlin-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/rToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/makefile-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/makefile-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/sbtIcon/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/package-manager/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/package-manager/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/sbtShell/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/persistence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/persistence/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/scalaProfiler/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/r-engine-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/r-engine-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/spaceToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/r-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/r-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowBazel/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/sbt-icon/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/sbt-icon/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowBeanValidator/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/sbt-shell/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/sbt-shell/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowBigData/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/scala-profiler/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/scala-profiler/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowCadence/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/space-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/space-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowCellExplorer/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-bazel/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-bazel/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowCheckDetails/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-bean-validator/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-bean-validator/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowClock/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-big-data/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-big-data/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowDart/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-cadence/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-cadence/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowDataView/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-cell-explorer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-cell-explorer/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowDefault/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-check-details/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-check-details/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowDuplicates/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-clock/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-clock/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowEJB/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-dart/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-dart/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowEduCourseTask/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-data-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-data-view/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowHadoop/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-default/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-default/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowHuggingFace/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-duplicates/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-duplicates/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowJPabStructure/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-ejb/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-ejb/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowJsonPath/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-edu-course-task/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-edu-course-task/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowKotlinNotebooks/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-hadoop/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-hadoop/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowKubernetes/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-hugging-face/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-hugging-face/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowMeson/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-j-pab-structure/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-j-pab-structure/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowModelChecker/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-json-path/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-json-path/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowPlatformIO/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-kotlin-notebooks/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-kotlin-notebooks/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowPubServe/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-kubernetes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-kubernetes/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowRGraph/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-meson/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-meson/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowRHtml/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-model-checker/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-model-checker/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowRPackages/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-platform-io/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-platform-io/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowRecordDebug/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-pub-serve/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-pub-serve/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowRunWithCoverage/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-r-graph/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-r-graph/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowTeamCity/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-r-html/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-r-html/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowTestSpark/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-r-packages/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-r-packages/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowTimer/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-record-debug/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-record-debug/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowTypeTraceView/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-run-with-coverage/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-run-with-coverage/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowVariableView/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-team-city/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-team-city/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolWindowYouTrack/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-test-spark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-test-spark/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/ant/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-timer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-timer/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/bookmarks/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-type-trace-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-type-trace-view/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/build/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-variable-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-variable-view/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/changes/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-you-track/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-you-track/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/commit/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/ant/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/ant/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/coverage/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/bookmarks/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/bookmarks/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/cypress/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/build/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/build/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/databaseChanges/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/changes/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/databricksToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/commit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/commit/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/dbms/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/coverage/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/coverage/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/debug/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/cypress/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/cypress/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/dependencies/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/database-changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/database-changes/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/documentation/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/databricks-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/databricks-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/endpoints/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/dbms/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/dbms/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/find/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/debug/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/debug/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/findExternalUsages/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/dependencies/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/dependencies/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/gradle/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/documentation/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/documentation/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/hierarchy/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/endpoints/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/endpoints/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/learn/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/find/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/find/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/maven/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/find-external-usages/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/find-external-usages/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/messages/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/gradle/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/gradle/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/newUI/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/hierarchy/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/hierarchy/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/notifications/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/learn/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/learn/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/npm/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/maven/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/maven/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/problems/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/messages/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/messages/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/profiler/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/new-ui/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/new-ui/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/profilerAndroid/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/notifications/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/notifications/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/project/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/npm/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/npm/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/pullRequests/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/problems/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/problems/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/pythonConsoleToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/profiler/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/profiler/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/rebuild/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/profiler-android/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/profiler-android/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/repositories/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/project/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/project/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/run/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/pull-requests/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/pull-requests/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/rust/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/python-console-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/python-console-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/sciView/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/rebuild/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/rebuild/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/services/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/repositories/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/repositories/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/settingSync/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/run/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/run/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/spark/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/rust/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/rust/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/spring/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/sci-view/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/sci-view/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/statisticsEventLog/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/services/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/services/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/structure/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/setting-sync/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/setting-sync/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/task/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/spark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/spark/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/terminal/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/spring/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/spring/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/todo/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/statistics-event-log/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/statistics-event-log/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/toolWindowDjango/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/structure/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/structure/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/vcs/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/task/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/task/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/web/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/terminal/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/terminal/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/writerside/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/todo/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/todo/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindow/writersidePreview/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/tool-window-django/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/tool-window-django/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/toolwindowFlink/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/vcs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/vcs/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/transfer/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/web/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/web/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/transferToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/writerside/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/writerside/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/unknown/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/writerside-preview/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/writerside-preview/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/webInspector/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/toolwindow-flink/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/toolwindow-flink/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/webServer/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/transfer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/transfer/index.tsx"
     },
     {
-      "path": "registry/icons/General/Tool_Windows/westToolWindow/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/transfer-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/transfer-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Usages/filterdups/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/unknown/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/unknown/index.tsx"
     },
     {
-      "path": "registry/icons/General/Usages/showImportStatements/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/web-inspector/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/web-inspector/index.tsx"
     },
     {
-      "path": "registry/icons/General/Usages/showReadAccess/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/web-server/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/web-server/index.tsx"
     },
     {
-      "path": "registry/icons/General/Usages/showWriteAccess/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/tool-windows/west-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/west-tool-window/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/close/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/usages/filterdups/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/usages/filterdups/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/closeHover/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/usages/show-import-statements/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/usages/show-import-statements/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/closeInactive/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/usages/show-read-access/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/usages/show-read-access/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/closeSmall/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/usages/show-write-access/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/usages/show-write-access/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/collapse/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/close/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/close/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/help/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/close-hover/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/close-hover/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/helpInactive/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/close-inactive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/close-inactive/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/maximize/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/close-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/close-small/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/maximizeInactive/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/collapse/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/collapse/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/maximizeSmall/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/help/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/help/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/minimize/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/help-inactive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/help-inactive/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/minimizeInactive/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/maximize/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/maximize/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/minimizeSmall/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/maximize-inactive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/maximize-inactive/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/restore/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/maximize-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/maximize-small/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/restoreInactive/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/minimize/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/minimize/index.tsx"
     },
     {
-      "path": "registry/icons/General/Windows/windows/restoreSmall/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/general/windows/minimize-inactive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/minimize-inactive/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/minimize-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/minimize-small/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/restore/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/restore/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/restore-inactive/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/restore-inactive/index.tsx"
+    },
+    {
+      "path": "registry/icons/general/windows/restore-small/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/windows/restore-small/index.tsx"
     }
   ]
 }

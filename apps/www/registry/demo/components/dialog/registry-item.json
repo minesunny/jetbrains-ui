@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "demo-dialog",
+  "type": "registry:ui",
+  "title": "Dialog Demo",
+  "description": "Demo showing dialog component",
+  "dependencies": [],
+  "registryDependencies": [
+    "@jetbrains-ui/dialog",
+    "@jetbrains-ui/buttons"
+  ],
+  "files": [
+    {
+      "path": "registry/demo/components/dialog/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/demo/dialog.tsx"
+    }
+  ],
+  "meta": {
+    "demoProps": {}
+  }
+}

@@ -86,10 +86,10 @@ function ContextMenuSubContent(props: React.ComponentProps<typeof ContextMenuPri
 When `asChild=false` (default), renders as a styled trigger button. When `asChild=true`, the child element is used as the trigger and no default styling is applied.
 
 **Base (asChild=false):**
-- Layout: `inline-flex h-10 min-w-0 items-center justify-between gap-2`
+- Layout: `inline-flex h-7 min-w-0 items-center justify-between gap-2`
 - Shape: `rounded border`
 - Colors: `border-gray-9 bg-gray-14 text-gray-1`
-- Padding: `py-1.5 pl-[9px] pr-0`
+- Padding: `px-2`
 - Typography: `text-default`
 - Shadow: `shadow-none`
 - Transition: `transition-[border-color,box-shadow] duration-150 ease-in-out outline-none`
@@ -122,13 +122,13 @@ When `asChild=false` (default), renders as a styled trigger button. When `asChil
 - `bg-gray-14`
 
 **Shadow:**
-- `shadow-[0_6px_20px_0px_#91919178]`
+- `shadow-[var(--shadow-popover)]`
 
 **Z-index:**
 - `z-[var(--z-popover)]`
 
 **Dark mode:**
-- `border-gray-3 bg-gray-2 shadow-[0_8px_32px_0px_#00000066]`
+- `border-gray-3 bg-gray-2 shadow-[var(--shadow-popover-dark)]`
 
 **Animation:**
 - `data-[state=open]:animate-in data-[state=closed]:animate-out`
@@ -166,7 +166,7 @@ When `asChild=false` (default), renders as a styled trigger button. When `asChil
 
 **Icon:**
 - Renders an `<SVG>` in a `size-4` container when `icon` prop is provided
-- Empty `size-4` spacer when no icon (keeps alignment consistent)
+- No spacer rendered when no icon
 
 **Dark mode:**
 - `text-gray-12`

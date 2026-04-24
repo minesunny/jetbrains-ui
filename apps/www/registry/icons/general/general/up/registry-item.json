@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-General/up",
+  "name": "icons-general-general-up",
   "type": "registry:ui",
-  "title": "General/up",
-  "description": "General/up icon from general category.",
-  "registryDependencies": [],
+  "title": "Up",
+  "description": "Up icon from general category.",
+  "registryDependencies": [
+    "icons-general-types"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/General/up/up_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/General/up/up_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/general/up/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/up/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "General/up",
+      "up",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }
