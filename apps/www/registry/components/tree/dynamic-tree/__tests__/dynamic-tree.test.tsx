@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useRef, useMemo, type CSSProperties, type ComponentPropsWithoutRef } from 'react';
 import { act, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {
@@ -82,12 +82,12 @@ function DynamicTreeTestHarness({
   ) =>
     | DynamicTreeLoadedItem<DynamicTreeItemData>[]
     | Promise<DynamicTreeLoadedItem<DynamicTreeItemData>[]>;
-  width?: React.CSSProperties['width'];
-  height?: React.CSSProperties['height'];
+  width?: CSSProperties['width'];
+  height?: CSSProperties['height'];
   item?: DynamicTreeItemComponent<DynamicTreeItemData>;
 }) {
-  const loadedItemsRef = React.useRef<Record<string, DynamicTreeItemData>>({});
-  const dataLoader = React.useMemo<TreeDataLoader<DynamicTreeItemData>>(
+  const loadedItemsRef = useRef<Record<string, DynamicTreeItemData>>({});
+  const dataLoader = useMemo<TreeDataLoader<DynamicTreeItemData>>(
     () => ({
       getItem: async (itemId: string) => {
         const [realItemId] = itemId.split('@');
@@ -129,7 +129,7 @@ function DynamicTreeTestHarness({
   return (
     <DynamicTree
       containerProps={
-        tree.getContainerProps('Tree') as React.ComponentPropsWithoutRef<'div'>
+        tree.getContainerProps('Tree') as ComponentPropsWithoutRef<'div'>
       }
       items={tree.getItems()}
       item={item}

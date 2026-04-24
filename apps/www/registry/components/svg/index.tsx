@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 
 // Auto-import all SVGs from registry/icons via webpack require.context
@@ -29,9 +29,9 @@ export function SVG({
   'aria-label'?: string;
 }) {
   const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = React.useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setMounted(true);
   }, []);
 

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { type ComponentProps } from 'react';
 import { render, screen } from '@testing-library/react';
 
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '../index';
@@ -18,8 +18,8 @@ afterAll(() => {
 });
 
 function renderResizable(
-  handleProps?: Partial<React.ComponentProps<typeof ResizableHandle>>,
-  groupProps?: Partial<React.ComponentProps<typeof ResizablePanelGroup>>,
+  handleProps?: Partial<ComponentProps<typeof ResizableHandle>>,
+  groupProps?: Partial<ComponentProps<typeof ResizablePanelGroup>>,
 ) {
   return render(
     <div style={{ width: 640, height: 320 }}>

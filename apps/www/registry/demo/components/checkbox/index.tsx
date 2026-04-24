@@ -1,9 +1,9 @@
 'use client';
 
-import * as React from 'react';
+import { type ComponentProps, type ReactNode, useEffect, useState } from 'react';
 import { Checkbox } from '@/registry/components/checkbox';
 
-type CheckboxRootProps = React.ComponentProps<typeof Checkbox>;
+type CheckboxRootProps = ComponentProps<typeof Checkbox>;
 
 interface CheckboxDemoProps
   extends Omit<
@@ -12,7 +12,7 @@ interface CheckboxDemoProps
   > {
   state: 'unchecked' | 'checked' | 'indeterminate';
   invalid?: boolean;
-  label?: React.ReactNode;
+  label?: ReactNode;
   onCheckedChange?: CheckboxRootProps['onCheckedChange'];
 }
 
@@ -44,10 +44,10 @@ export default function CheckboxDemo({
   onCheckedChange,
   ...props
 }: CheckboxDemoProps) {
-  const [state, setState] = React.useState(initialState);
+  const [state, setState] = useState(initialState);
   const threeState = initialState === 'indeterminate';
 
-  React.useEffect(() => {
+  useEffect(() => {
     setState(initialState);
   }, [initialState]);
 

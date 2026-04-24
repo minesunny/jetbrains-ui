@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import type { ComponentProps } from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 
@@ -56,7 +56,7 @@ type ButtonVariant = NonNullable<
   VariantProps<typeof buttonVariants>['variant']
 >;
 
-type ButtonProps = React.ComponentProps<'button'> & {
+type ButtonProps = ComponentProps<'button'> & {
   variant?: ButtonVariant;
   slim?: boolean;
   asChild?: boolean;

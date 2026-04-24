@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { useEffect, useState } from 'react';
 
 import { Tree, TreeItem } from '@/registry/components/tree/tree';
 import { SVG } from '@/registry/components/svg';
@@ -13,11 +13,11 @@ interface TreeDemoProps {
 
 export default function TreeDemo({ state = 'default' }: TreeDemoProps) {
   const initialSelectedId = state === 'selected' ? 'tree-file-banner' : null;
-  const [selectedId, setSelectedId] = React.useState<string | null>(
+  const [selectedId, setSelectedId] = useState<string | null>(
     initialSelectedId,
   );
 
-  React.useEffect(() => {
+  useEffect(() => {
     setSelectedId(initialSelectedId);
   }, [initialSelectedId]);
 

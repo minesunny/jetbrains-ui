@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import { type ReactNode, type ComponentPropsWithoutRef, type CSSProperties } from 'react';
 
 import { type ItemInstance } from '@headless-tree/core';
 import { SVG } from '@/registry/components/svg';
@@ -10,7 +10,7 @@ export { asyncDataLoaderFeature } from './feature';
 export interface DynamicTreeItemData {
   label?: string;
   icon?: string;
-  endContent?: React.ReactNode;
+  endContent?: ReactNode;
   disabled?: boolean;
   isFolder?: boolean;
 }
@@ -25,21 +25,21 @@ export interface DynamicTreeItemProps<
 export interface DynamicTreeItemComponent<
   TItem extends DynamicTreeItemData = DynamicTreeItemData,
 > {
-  (props: DynamicTreeItemProps<TItem>): React.ReactNode;
+  (props: DynamicTreeItemProps<TItem>): ReactNode;
 }
 
 export interface DynamicTreeProps<
   TItem extends DynamicTreeItemData = DynamicTreeItemData,
 > extends Omit<
-    React.ComponentPropsWithoutRef<'div'>,
+    ComponentPropsWithoutRef<'div'>,
     'children' | 'className' | 'style'
   > {
-  containerProps: React.ComponentPropsWithoutRef<'div'>;
+  containerProps: ComponentPropsWithoutRef<'div'>;
   items: ItemInstance<TItem>[];
   indent?: number;
   item?: DynamicTreeItemComponent<TItem>;
-  width?: React.CSSProperties['width'];
-  height?: React.CSSProperties['height'];
+  width?: CSSProperties['width'];
+  height?: CSSProperties['height'];
 }
 
 function TreeItemDisclosure({
@@ -105,7 +105,7 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
     style: resolvedStyle,
     tabIndex: resolvedTabIndex,
     ...resolvedProps
-  } = item.getProps() as React.ComponentPropsWithoutRef<'div'>;
+  } = item.getProps() as ComponentPropsWithoutRef<'div'>;
 
   const itemData = item.getItemData() as TItem | null;
   const itemLabel = itemData?.label ?? item.getId();
@@ -143,7 +143,7 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
             paddingLeft: `${
               16 + level * indent + Math.max(0, level - 1) * 2
             }px`,
-          } as React.CSSProperties
+          } as CSSProperties
         }
         className={
           "relative box-border flex h-6 w-full min-w-0 cursor-default items-center gap-0.5 pr-4 select-none text-gray-1 outline-none transition-[background-color,color] duration-75 data-[disabled=true]:cursor-not-allowed data-[disabled=true]:text-gray-8 [&_[data-slot=tree-item-disclosure]]:text-gray-7 [&_[data-slot=tree-item-icon]]:text-gray-6 [&:focus_[data-slot=tree-item-disclosure]]:text-current [&:focus_[data-slot=tree-item-icon]]:text-current [&[data-disabled='true']_[data-slot=tree-item-disclosure]]:text-gray-8 [&:hover:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:bg-blue-11 [&:focus_[data-slot=tree-item-overlay]]:bg-blue-11 [&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-2 [&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-blue-4 [&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-offset-1 [&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-offset-white dark:text-gray-12 dark:data-[disabled=true]:text-gray-7 dark:[&_[data-slot=tree-item-disclosure]]:text-gray-10 dark:[&_[data-slot=tree-item-icon]]:text-gray-10 dark:[&[data-disabled=true]_[data-slot=tree-item-disclosure]]:text-gray-7 dark:[&:hover:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:bg-blue-2 dark:[&:focus_[data-slot=tree-item-overlay]]:bg-blue-2 dark:[&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-blue-6 dark:[&:focus-visible:not([data-disabled='true'])_[data-slot=tree-item-overlay]]:ring-offset-gray-2"

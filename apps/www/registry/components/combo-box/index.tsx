@@ -1,6 +1,7 @@
 'use client';
 
-import * as React from 'react';
+import { forwardRef } from 'react';
+import type { ComponentRef, ComponentPropsWithoutRef } from 'react';
 import * as SelectPrimitive from '@radix-ui/react-select';
 import { SVG } from '@/registry/components/svg';
 
@@ -15,13 +16,13 @@ const ComboBoxValue = SelectPrimitive.Value;
 type ComboBoxTriggerSize = 'fluid' | 'md';
 
 interface ComboBoxTriggerProps
-  extends React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger> {
+  extends ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger> {
   active?: boolean;
   size?: ComboBoxTriggerSize;
 }
 
-const ComboBoxTrigger = React.forwardRef<
-  React.ComponentRef<typeof SelectPrimitive.Trigger>,
+const ComboBoxTrigger = forwardRef<
+  ComponentRef<typeof SelectPrimitive.Trigger>,
   ComboBoxTriggerProps
 >(({ className, children, active = false, size = 'fluid', ...props }, ref) => (
   <SelectPrimitive.Trigger
@@ -69,9 +70,9 @@ const ComboBoxTrigger = React.forwardRef<
 ));
 ComboBoxTrigger.displayName = 'ComboBoxTrigger';
 
-const ComboBoxContent = React.forwardRef<
-  React.ComponentRef<typeof SelectPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content>
+const ComboBoxContent = forwardRef<
+  ComponentRef<typeof SelectPrimitive.Content>,
+  ComponentPropsWithoutRef<typeof SelectPrimitive.Content>
 >(({ className, children, position = 'popper', ...props }, ref) => (
   <SelectPrimitive.Portal>
     <SelectPrimitive.Content
@@ -94,9 +95,9 @@ const ComboBoxContent = React.forwardRef<
 ));
 ComboBoxContent.displayName = 'ComboBoxContent';
 
-const ComboBoxLabel = React.forwardRef<
-  React.ComponentRef<typeof SelectPrimitive.Label>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Label>
+const ComboBoxLabel = forwardRef<
+  ComponentRef<typeof SelectPrimitive.Label>,
+  ComponentPropsWithoutRef<typeof SelectPrimitive.Label>
 >(({ className, ...props }, ref) => (
   <SelectPrimitive.Label
     ref={ref}
@@ -109,9 +110,9 @@ const ComboBoxLabel = React.forwardRef<
 ));
 ComboBoxLabel.displayName = 'ComboBoxLabel';
 
-const ComboBoxItem = React.forwardRef<
-  React.ComponentRef<typeof SelectPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item>
+const ComboBoxItem = forwardRef<
+  ComponentRef<typeof SelectPrimitive.Item>,
+  ComponentPropsWithoutRef<typeof SelectPrimitive.Item>
 >(({ className, children, ...props }, ref) => (
   <SelectPrimitive.Item
     ref={ref}
@@ -138,9 +139,9 @@ const ComboBoxItem = React.forwardRef<
 ));
 ComboBoxItem.displayName = 'ComboBoxItem';
 
-const ComboBoxSeparator = React.forwardRef<
-  React.ComponentRef<typeof SelectPrimitive.Separator>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Separator>
+const ComboBoxSeparator = forwardRef<
+  ComponentRef<typeof SelectPrimitive.Separator>,
+  ComponentPropsWithoutRef<typeof SelectPrimitive.Separator>
 >(({ className, ...props }, ref) => (
   <SelectPrimitive.Separator
     ref={ref}

@@ -1,6 +1,7 @@
 'use client';
 
-import * as React from 'react';
+import { createContext, useMemo, useContext, useId } from 'react';
+import type { ComponentProps } from 'react';
 import { AlertDialog as AlertPrimitive } from 'radix-ui';
 
 import { cn } from '@workspace/ui/lib/utils';
@@ -15,18 +16,18 @@ type AlertContentContextValue = {
   size: 'default' | 'wide' | 'auto';
 };
 
-const AlertContentContext = React.createContext<AlertContentContextValue>({
+const AlertContentContext = createContext<AlertContentContextValue>({
   help: false,
   check: false,
   type: 'info',
   size: 'auto',
 });
 
-function Alert({ ...props }: React.ComponentProps<typeof AlertPrimitive.Root>) {
+function Alert({ ...props }: ComponentProps<typeof AlertPrimitive.Root>) {
   return <AlertPrimitive.Root data-slot="alert" {...props} />;
 }
 
-type AlertTriggerProps = React.ComponentProps<typeof AlertPrimitive.Trigger>;
+type AlertTriggerProps = ComponentProps<typeof AlertPrimitive.Trigger>;
 
 function AlertTrigger({ className, ...props }: AlertTriggerProps) {
   return (
@@ -40,14 +41,14 @@ function AlertTrigger({ className, ...props }: AlertTriggerProps) {
 
 function AlertPortal({
   ...props
-}: React.ComponentProps<typeof AlertPrimitive.Portal>) {
+}: ComponentProps<typeof AlertPrimitive.Portal>) {
   return <AlertPrimitive.Portal data-slot="alert-portal" {...props} />;
 }
 
 function AlertOverlay({
   className,
   ...props
-}: React.ComponentProps<typeof AlertPrimitive.Overlay>) {
+}: ComponentProps<typeof AlertPrimitive.Overlay>) {
   return (
     <AlertPrimitive.Overlay
       data-slot="alert-overlay"
@@ -68,14 +69,14 @@ function AlertContent({
   help = false,
   check = false,
   ...props
-}: React.ComponentProps<typeof AlertPrimitive.Content> & {
+}: ComponentProps<typeof AlertPrimitive.Content> & {
   type?: 'info' | 'error' | 'warning' | 'question';
   size?: 'default' | 'wide' | 'auto';
   help?: boolean;
   check?: boolean;
 }) {
   const iconName = `general/status/${type === 'info' ? 'information' : type}-dialog`;
-  const contentContextValue = React.useMemo(
+  const contentContextValue = useMemo(
     () => ({
       help,
       check,
@@ -115,9 +116,9 @@ function AlertHeader({
   className,
   children,
   ...props
-}: React.ComponentProps<'div'>) {
-  const { check } = React.useContext(AlertContentContext);
-  const checkboxId = React.useId();
+}: ComponentProps<'div'>) {
+  const { check } = useContext(AlertContentContext);
+  const checkboxId = useId();
 
   return (
     <div
@@ -145,8 +146,8 @@ function AlertTitle({
   className,
   children,
   ...props
-}: React.ComponentProps<typeof AlertPrimitive.Title>) {
-  const { size } = React.useContext(AlertContentContext);
+}: ComponentProps<typeof AlertPrimitive.Title>) {
+  const { size } = useContext(AlertContentContext);
   return (
     <AlertPrimitive.Title
       data-slot="alert-title"
@@ -166,8 +167,8 @@ function AlertDescription({
   className,
   children,
   ...props
-}: React.ComponentProps<typeof AlertPrimitive.Description>) {
-  const { size } = React.useContext(AlertContentContext);
+}: ComponentProps<typeof AlertPrimitive.Description>) {
+  const { size } = useContext(AlertContentContext);
 
   return (
     <AlertPrimitive.Description
@@ -188,8 +189,8 @@ function AlertFooter({
   className,
   children,
   ...props
-}: React.ComponentProps<'div'>) {
-  const { help } = React.useContext(AlertContentContext);
+}: ComponentProps<'div'>) {
+  const { help } = useContext(AlertContentContext);
 
   return (
     <div
@@ -206,7 +207,7 @@ function AlertFooter({
   );
 }
 
-function AlertActions({ className, ...props }: React.ComponentProps<'div'>) {
+function AlertActions({ className, ...props }: ComponentProps<'div'>) {
   return (
     <div
       data-slot="alert-actions"
@@ -222,7 +223,7 @@ function AlertActions({ className, ...props }: React.ComponentProps<'div'>) {
 function AlertCancel({
   className,
   ...props
-}: React.ComponentProps<typeof AlertPrimitive.Cancel>) {
+}: ComponentProps<typeof AlertPrimitive.Cancel>) {
   return (
     <AlertPrimitive.Cancel
       data-slot="alert-cancel"
@@ -238,8 +239,8 @@ function AlertCancel({
 function AlertAction({
   className,
   ...props
-}: React.ComponentProps<typeof AlertPrimitive.Action>) {
-  const { type } = React.useContext(AlertContentContext);
+}: ComponentProps<typeof AlertPrimitive.Action>) {
+  const { type } = useContext(AlertContentContext);
 
   return (
     <AlertPrimitive.Action

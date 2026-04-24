@@ -1,12 +1,12 @@
 'use client';
 
-import * as React from 'react';
+import { forwardRef, type ComponentPropsWithoutRef } from 'react';
 
 import { cn } from '@workspace/ui/lib/utils';
 
-const Toolbar = React.forwardRef<
+const Toolbar = forwardRef<
   HTMLDivElement,
-  React.ComponentPropsWithoutRef<'div'> & {
+  ComponentPropsWithoutRef<'div'> & {
     direction?: 'horizontal' | 'vertical' | 'floating';
   }
 >(({ className, direction = 'horizontal', ...props }, ref) => {
@@ -35,9 +35,9 @@ const Toolbar = React.forwardRef<
 });
 Toolbar.displayName = 'Toolbar';
 
-const ToolbarItem = React.forwardRef<
+const ToolbarItem = forwardRef<
   HTMLButtonElement,
-  React.ComponentPropsWithoutRef<'button'> & {
+  ComponentPropsWithoutRef<'button'> & {
     separator?: 'horizontal' | 'vertical';
   }
 >(({ className, separator, type = 'button', ...props }, ref) => {

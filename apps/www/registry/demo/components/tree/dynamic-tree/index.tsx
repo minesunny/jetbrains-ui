@@ -1,6 +1,11 @@
 'use client';
 
-import * as React from 'react';
+import {
+  type ComponentPropsWithoutRef,
+  useCallback,
+  useMemo,
+  useRef,
+} from 'react';
 import {
   hotkeysCoreFeature,
   selectionFeature,
@@ -155,9 +160,9 @@ function resolveDemoItemData(
 }
 
 export default function DynamicTreeDemo() {
-  const loadedItemsRef = React.useRef<Record<string, DemoTreeItem>>({});
+  const loadedItemsRef = useRef<Record<string, DemoTreeItem>>({});
 
-  const loadData = React.useCallback(
+  const loadData = useCallback(
     async (itemId: string | null): Promise<DemoLoadedItem[]> => {
       await wait(120);
 
@@ -172,7 +177,7 @@ export default function DynamicTreeDemo() {
     },
     [],
   );
-  const dataLoader = React.useMemo<TreeDataLoader<DemoTreeItem>>(
+  const dataLoader = useMemo<TreeDataLoader<DemoTreeItem>>(
     () => ({
       getItem: async (itemId: string) => {
         const [realItemId] = itemId.split('@');
@@ -219,7 +224,7 @@ export default function DynamicTreeDemo() {
         containerProps={
           tree.getContainerProps(
             'Tree',
-          ) as React.ComponentPropsWithoutRef<'div'>
+          ) as ComponentPropsWithoutRef<'div'>
         }
         items={tree.getItems()}
         height="400px"
