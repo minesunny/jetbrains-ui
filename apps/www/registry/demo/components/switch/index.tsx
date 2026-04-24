@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState } from 'react';
 import { Switch } from '@/registry/components/switch';
 
 interface SwitchDemoProps {
@@ -6,7 +6,7 @@ interface SwitchDemoProps {
 }
 
 export default function SwitchDemo({ disabled = false }: SwitchDemoProps) {
-  const [checked, setChecked] = React.useState(true);
+  const [checked, setChecked] = useState(true);
 
   return (
     <div className="flex items-center gap-3">

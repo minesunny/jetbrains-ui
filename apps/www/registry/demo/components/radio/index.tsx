@@ -1,6 +1,5 @@
 'use client';
 
-import * as React from 'react';
 import { RadioGroup, RadioGroupItem } from '@/registry/components/radio';
 
 interface RadioDemoProps {

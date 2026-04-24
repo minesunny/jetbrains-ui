@@ -1,10 +1,10 @@
 'use client';
 
-import * as React from 'react';
+import type { ReactNode } from 'react';
 
 import { Toolbar, ToolbarItem } from '@/registry/components/toolbar';
 
-function DemoIcon({ children }: { children: React.ReactNode }) {
+function DemoIcon({ children }: { children: ReactNode }) {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
       {children}

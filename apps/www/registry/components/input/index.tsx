@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import type { ComponentProps } from 'react';
 
 import { cn } from '@workspace/ui/lib/utils';
 
@@ -8,7 +8,7 @@ function Input({
   className,
   type = 'text',
   ...props
-}: React.ComponentProps<'input'>) {
+}: ComponentProps<'input'>) {
   return (
     <input
       type={type}
