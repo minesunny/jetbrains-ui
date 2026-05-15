@@ -38,8 +38,7 @@ interface TreeProps extends ComponentPropsWithoutRef<'ul'> {
   indent?: number;
 }
 
-interface TreeItemProps
-  extends Omit<ComponentProps<'li'>, 'children' | 'id'> {
+interface TreeItemProps extends Omit<ComponentProps<'li'>, 'children' | 'id'> {
   value: string;
   label: string;
   icon?: ReactNode;
@@ -172,9 +171,7 @@ function Tree({
   );
 
   return (
-    <TreeContext.Provider value={contextValue}>
-      {treeList}
-    </TreeContext.Provider>
+    <TreeContext.Provider value={contextValue}>{treeList}</TreeContext.Provider>
   );
 }
 

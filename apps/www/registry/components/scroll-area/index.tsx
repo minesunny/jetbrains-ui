@@ -1,4 +1,8 @@
-import { forwardRef, type ComponentRef, type ComponentPropsWithoutRef } from 'react';
+import {
+  forwardRef,
+  type ComponentRef,
+  type ComponentPropsWithoutRef,
+} from 'react';
 import { ScrollArea as ScrollAreaPrimitive } from 'radix-ui';
 
 import { cn } from '@workspace/ui/lib/utils';

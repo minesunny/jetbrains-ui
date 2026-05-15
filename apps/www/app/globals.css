@@ -255,10 +255,10 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-sans);
-    font-size: var(--typography-ui-default-font-size);
-    line-height: var(--typography-ui-default-line-height);
-    font-weight: var(--typography-ui-default-font-weight);
+    font-family: var(--jb-font-sans);
+    font-size: var(--jb-typography-ui-default-font-size);
+    line-height: var(--jb-typography-ui-default-line-height);
+    font-weight: var(--jb-typography-ui-default-font-weight);
     overscroll-behavior: none;
   }
 

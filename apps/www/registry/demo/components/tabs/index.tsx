@@ -17,9 +17,7 @@ export default function TabsDemo({ orientation }: TabsDemoProps) {
       defaultValue="overview"
       orientation={orientation}
       className={
-        vertical
-          ? 'flex w-full max-w-[520px] gap-3'
-          : 'w-full max-w-[520px]'
+        vertical ? 'flex w-full max-w-[520px] gap-3' : 'w-full max-w-[520px]'
       }
     >
       <TabsList
