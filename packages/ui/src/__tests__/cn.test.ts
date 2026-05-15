@@ -10,6 +10,6 @@ describe('cn', () => {
   });
 
   it('filters falsy entries', () => {
-    expect(cn('base', false && 'hidden', 'block')).toBe('base block');
+    expect(cn('base', false ? 'hidden' : '', 'block')).toBe('base block');
   });
 });
