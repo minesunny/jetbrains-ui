@@ -219,7 +219,7 @@ When a spec references Button, Checkbox, SVG, or other existing components, pref
 |-----------|-------------|-------|
 | **Button** (primary) | `buttonVariants({ variant: 'primary' })` | 28px tall, 72px min-w, blue-4 bg |
 | **Button** (secondary) | `buttonVariants({ variant: 'secondary' })` | Gray-9 border, white bg |
-| **Checkbox** | `<Checkbox />` | 16×16px, auto-styled |
+| **Checkbox** | `<Checkbox />` | 16x16px, auto-styled |
 | **SVG** (icon) | `<SVG name="..." size="md" />` | md=16px, lg=20px, xl=24px |
 
 Do not override these components' internal padding, border-radius, or typography unless the Figma design explicitly differs.

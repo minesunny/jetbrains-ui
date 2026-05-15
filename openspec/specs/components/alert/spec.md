@@ -13,7 +13,7 @@ Source: [Int UI Kit (Community) — Alert](https://www.figma.com/design/Nvs9fjI2
 | **Error** | `general/status/error-dialog` | Error / destructive actions |
 | **Question** | `general/status/question-dialog` | Confirmation / question dialogs |
 
-Each type has Light and Dark theme variants. Icon rendered via `<SVG name={...} size="lg" />` (20×20px visual in 28×28px box).
+Each type has Light and Dark theme variants. Icon rendered via `<SVG name={...} size="lg" />` (20x20px visual in 28x28px box).
 
 ---
 
@@ -61,7 +61,7 @@ Each type has Light and Dark theme variants. Icon rendered via `<SVG name={...} 
 
 ## Text Content
 
-Use typography tokens — see `figma-auto-layout-to-tailwind.md` for full reference.
+Use typography tokens — see `openspec/specs/foundation/figma-to-tailwind/` for full reference.
 
 | Element | Token | Tailwind Classes | Color |
 |---------|-------|-----------------|-------|
@@ -109,7 +109,7 @@ Uses default `<Button>` component — `buttonVariants({ variant: 'primary' })` a
 
 | Property | Value |
 |----------|-------|
-| Component | `<SVG name="general/general/question-mark" />` (default `size="md"`, 16×16px) |
+| Component | `<SVG name="general/general/question-mark" />` (default `size="md"`, 16x16px) |
 | Visible | When `help={true}` |
 
 ---

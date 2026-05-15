@@ -68,7 +68,7 @@ Source: [Int UI Kit (Community) — ComboBox States](https://www.figma.com/desig
 |----------|-------|
 | Style | UI/Default |
 | Font | Inter, 13px, weight 500 → 400 (Regular) |
-| Line height | 16px (1.23×) |
+| Line height | 16px (1.23x) |
 | Sizing | Fill horizontal, hug vertical |
 
 ---
