@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-breakpoints-types",
+  "type": "registry:ui",
+  "title": "Breakpoints Icons Types",
+  "description": "Shared types and utilities for Breakpoints icon components.",
+  "files": [
+    {
+      "path": "registry/icons/breakpoints/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/types.ts"
+    }
+  ]
+}

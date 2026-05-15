@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-database-types",
+  "type": "registry:ui",
+  "title": "Database Icons Types",
+  "description": "Shared types and utilities for Database icon components.",
+  "files": [
+    {
+      "path": "registry/icons/database/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/database/types.ts"
+    }
+  ]
+}

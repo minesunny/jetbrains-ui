@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-actions-replace",
+  "name": "icons-general-actions/replace",
   "type": "registry:ui",
-  "title": "Replace",
-  "description": "Replace icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "Actions/replace",
+  "description": "Actions/replace icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/actions/replace/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/actions/replace/index.tsx"
+      "path": "registry/icons/General/actions/replace/replace_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/actions/replace/replace_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "replace",
+      "actions/replace",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }

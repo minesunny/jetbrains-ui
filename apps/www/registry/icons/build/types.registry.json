@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-build-types",
+  "type": "registry:ui",
+  "title": "Build Icons Types",
+  "description": "Shared types and utilities for Build icon components.",
+  "files": [
+    {
+      "path": "registry/icons/build/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/build/types.ts"
+    }
+  ]
+}

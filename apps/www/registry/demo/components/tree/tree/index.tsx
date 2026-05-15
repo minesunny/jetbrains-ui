@@ -31,8 +31,6 @@ export default function TreeDemo({ state = 'default' }: TreeDemoProps) {
     <div className="w-[280px] space-y-2">
       <Tree
         className="w-full"
-        width="220px"
-        height="156px"
         selectedId={selectedId}
         onSelectedIdChange={setSelectedId}
         defaultExpandedIds={defaultExpandedIds}

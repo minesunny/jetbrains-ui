@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-actions-lightning",
+  "name": "icons-general-actions/lightning",
   "type": "registry:ui",
-  "title": "Lightning",
-  "description": "Lightning icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "Actions/lightning",
+  "description": "Actions/lightning icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/actions/lightning/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/actions/lightning/index.tsx"
+      "path": "registry/icons/General/actions/lightning/lightning_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/actions/lightning/lightning_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "lightning",
+      "actions/lightning",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }
