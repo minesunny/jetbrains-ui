@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { useTheme } from 'next-themes';
 
+import { escapeHtml } from '@workspace/ui/lib/escape-html';
 import { cn } from '@workspace/ui/lib/utils';
 import {
   Tabs,
@@ -71,7 +72,12 @@ function CodeTabs({
         setHighlightedCodes(newHighlightedCodes);
       } catch (error) {
         console.error('Error highlighting codes', error);
-        setHighlightedCodes(codes);
+        const fallback: Record<string, string> = {};
+        for (const [command, val] of Object.entries(codes)) {
+          fallback[command] =
+            `<pre class="shiki"><code>${escapeHtml(val)}</code></pre>`;
+        }
+        setHighlightedCodes(fallback);
       }
     }
     loadHighlightedCode();

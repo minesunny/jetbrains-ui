@@ -1,6 +1,10 @@
 'use client';
 
-import { forwardRef, type ComponentRef, type ComponentPropsWithoutRef } from 'react';
+import {
+  forwardRef,
+  type ComponentRef,
+  type ComponentPropsWithoutRef,
+} from 'react';
 import * as RadioPrimitive from '@radix-ui/react-radio-group';
 
 import { cn } from '@workspace/ui/lib/utils';

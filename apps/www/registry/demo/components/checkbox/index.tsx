@@ -1,6 +1,11 @@
 'use client';
 
-import { type ComponentProps, type ReactNode, useEffect, useState } from 'react';
+import {
+  type ComponentProps,
+  type ReactNode,
+  useEffect,
+  useState,
+} from 'react';
 import { Checkbox } from '@/registry/components/checkbox';
 
 type CheckboxRootProps = ComponentProps<typeof Checkbox>;

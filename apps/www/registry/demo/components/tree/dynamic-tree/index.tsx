@@ -222,9 +222,7 @@ export default function DynamicTreeDemo() {
     <div className="w-[280px] rounded border">
       <DynamicTree<DemoTreeItem>
         containerProps={
-          tree.getContainerProps(
-            'Tree',
-          ) as ComponentPropsWithoutRef<'div'>
+          tree.getContainerProps('Tree') as ComponentPropsWithoutRef<'div'>
         }
         items={tree.getItems()}
         height="400px"

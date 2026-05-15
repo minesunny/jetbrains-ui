@@ -112,11 +112,7 @@ function AlertContent({
   );
 }
 
-function AlertHeader({
-  className,
-  children,
-  ...props
-}: ComponentProps<'div'>) {
+function AlertHeader({ className, children, ...props }: ComponentProps<'div'>) {
   const { check } = useContext(AlertContentContext);
   const checkboxId = useId();
 
@@ -185,11 +181,7 @@ function AlertDescription({
   );
 }
 
-function AlertFooter({
-  className,
-  children,
-  ...props
-}: ComponentProps<'div'>) {
+function AlertFooter({ className, children, ...props }: ComponentProps<'div'>) {
   const { help } = useContext(AlertContentContext);
 
   return (

@@ -26,10 +26,7 @@ function MenuCheckIcon({ className, ...props }: ComponentProps<'svg'>) {
   );
 }
 
-function MenuChevronRightIcon({
-  className,
-  ...props
-}: ComponentProps<'svg'>) {
+function MenuChevronRightIcon({ className, ...props }: ComponentProps<'svg'>) {
   return (
     <svg
       viewBox="0 0 16 16"
@@ -252,10 +249,7 @@ function ContextMenuSeparator({
   );
 }
 
-function ContextMenuShortcut({
-  className,
-  ...props
-}: ComponentProps<'span'>) {
+function ContextMenuShortcut({ className, ...props }: ComponentProps<'span'>) {
   return (
     <span
       data-slot="context-menu-shortcut"

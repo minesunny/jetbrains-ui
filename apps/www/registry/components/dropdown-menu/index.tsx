@@ -25,10 +25,7 @@ function MenuCheckIcon({ className, ...props }: ComponentProps<'svg'>) {
   );
 }
 
-function MenuChevronRightIcon({
-  className,
-  ...props
-}: ComponentProps<'svg'>) {
+function MenuChevronRightIcon({ className, ...props }: ComponentProps<'svg'>) {
   return (
     <svg
       viewBox="0 0 16 16"
@@ -221,10 +218,7 @@ function DropdownMenuSeparator({
   );
 }
 
-function DropdownMenuShortcut({
-  className,
-  ...props
-}: ComponentProps<'span'>) {
+function DropdownMenuShortcut({ className, ...props }: ComponentProps<'span'>) {
   return (
     <span
       data-slot="dropdown-menu-shortcut"

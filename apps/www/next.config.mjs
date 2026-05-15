@@ -9,7 +9,8 @@ const config = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**',
+        hostname: 'vercel.com',
+        pathname: '/oss/**',
       },
     ],
   },

@@ -1,6 +1,10 @@
 'use client';
 
-import { type ReactNode, type ComponentPropsWithoutRef, type CSSProperties } from 'react';
+import {
+  type ReactNode,
+  type ComponentPropsWithoutRef,
+  type CSSProperties,
+} from 'react';
 
 import { type ItemInstance } from '@headless-tree/core';
 import { SVG } from '@/registry/components/svg';

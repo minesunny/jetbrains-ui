@@ -21,9 +21,9 @@ const Toolbar = forwardRef<
       data-direction={direction}
       data-orientation={orientation}
       className={cn(
-        'inline-flex shrink-0 rounded-[6px] border border-transparent bg-transparent text-[11px] leading-4 text-gray-6 shadow-none dark:text-gray-10 [font-family:var(--font-sans),sans-serif]',
-        'data-[direction=floating]:border-gray-10 data-[direction=floating]:bg-[color-mix(in_srgb,var(--gray-14)_94%,transparent)] data-[direction=floating]:shadow-[0_3px_10px_rgba(39,40,46,0.12)]',
-        'dark:data-[direction=floating]:border-gray-5 dark:data-[direction=floating]:bg-[color-mix(in_srgb,var(--gray-2)_94%,transparent)] dark:data-[direction=floating]:shadow-[0_6px_18px_rgba(0,0,0,0.32)]',
+        'inline-flex shrink-0 rounded-[6px] border border-transparent bg-transparent text-[11px] leading-4 text-gray-6 shadow-none dark:text-gray-10 [font-family:var(--jb-font-sans),sans-serif]',
+        'data-[direction=floating]:border-gray-10 data-[direction=floating]:bg-[color-mix(in_srgb,var(--jb-gray-14)_94%,transparent)] data-[direction=floating]:shadow-[0_3px_10px_rgba(39,40,46,0.12)]',
+        'dark:data-[direction=floating]:border-gray-5 dark:data-[direction=floating]:bg-[color-mix(in_srgb,var(--jb-gray-2)_94%,transparent)] dark:data-[direction=floating]:shadow-[0_6px_18px_rgba(0,0,0,0.32)]',
         orientation === 'horizontal'
           ? 'flex-row items-center gap-0 px-1 py-1.5'
           : 'flex-col items-center gap-0 px-1.5 py-1',
