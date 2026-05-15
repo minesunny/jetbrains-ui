@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-types",
+  "type": "registry:ui",
+  "title": "Vcs Icons Types",
+  "description": "Shared types and utilities for Vcs icon components.",
+  "files": [
+    {
+      "path": "registry/icons/vcs/types.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/types.ts"
+    }
+  ]
+}

@@ -1,25 +1,28 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-general-down",
+  "name": "icons-general-General/down",
   "type": "registry:ui",
-  "title": "Down",
-  "description": "Down icon from general category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "title": "General/down",
+  "description": "General/down icon from general category.",
+  "registryDependencies": [],
   "files": [
     {
-      "path": "registry/icons/general/general/down/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/general/general/down/index.tsx"
+      "path": "registry/icons/General/General/down/down_Theme-Dark.svg",
+      "type": "registry:source"
+    },
+    {
+      "path": "registry/icons/General/General/down/down_Theme-Light.svg",
+      "type": "registry:source"
     }
   ],
   "meta": {
     "keywords": [
-      "down",
+      "General/down",
       "icon",
       "general",
       "jetbrains"
-    ]
+    ],
+    "hasLight": true,
+    "hasDark": true
   }
 }
