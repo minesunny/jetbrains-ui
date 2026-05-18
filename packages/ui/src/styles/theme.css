@@ -108,4 +108,7 @@
 
   --text-default: 0.8125rem; /* 13px */
   --text-default--line-height: 1.375rem; /* 22px */
+
+  /* Z-Index */
+  --z-popover: var(--jb-z-popover);
 }

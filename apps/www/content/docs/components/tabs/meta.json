@@ -2,5 +2,5 @@
   "title": "Tabs",
   "description": "Tabs docs with Tabs component.",
   "defaultOpen": false,
-  "pages": ["base-tabs"]
+  "pages": ["base-tabs", "dynamic-tabs"]
 }

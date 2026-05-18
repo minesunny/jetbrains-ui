@@ -4,7 +4,10 @@ description: Tabs component variants.
 ---
 
 <Cards>
-  {[{ title: 'Tabs', slug: 'base-tabs' }].map(({ title, slug }) => (
+  {[
+    { title: 'Tabs', slug: 'base-tabs' },
+    { title: 'Dynamic Tabs', slug: 'dynamic-tabs' },
+  ].map(({ title, slug }) => (
     <Card
       key={slug}
       href={`/docs/components/tabs/${slug}`}

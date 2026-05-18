@@ -1,0 +1,146 @@
+---
+title: 代码编辑器
+description: 基于 Ace Editor 的复合代码编辑器组件，具有 JetBrains 风格语法高亮、标签栏和状态栏。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-05-17
+---
+
+<ComponentPreview name="code-editor-demo" />
+
+## 概述
+
+`CodeEditor` 是一个复合组件，封装了 Ace Editor（`ace-builds`），提供 JetBrains 风格的语法高亮、标签栏（通过 `DynamicTabsList`）和状态栏。开箱即用的 IDE 编辑体验。
+
+## 安装
+
+<ComponentInstallation name="code-editor" />
+
+## 使用
+
+### 基础用法
+
+```tsx
+import {
+  CodeEditor,
+  CodeEditorPane,
+  CodeEditorStatusBar,
+} from '@/components/jetbrains-ui/code-editor';
+
+function BasicEditor() {
+  return (
+    <CodeEditor className="h-[400px]">
+      <CodeEditorPane
+        mode="typescript"
+        value="const hello = 'world';"
+        onChange={(value) => console.log(value)}
+      />
+      <CodeEditorStatusBar />
+    </CodeEditor>
+  );
+}
+```
+
+### 多标签页与修改指示器
+
+```tsx
+import { useState, useCallback } from 'react';
+import {
+  CodeEditor,
+  CodeEditorTabs,
+  CodeEditorPane,
+  CodeEditorStatusBar,
+  type EditorTabItem,
+} from '@/components/jetbrains-ui/code-editor';
+
+const files = {
+  'app.tsx': {
+    mode: 'typescript',
+    content: 'export default function App() {}',
+  },
+  'style.css': { mode: 'css', content: 'body { margin: 0; }' },
+};
+
+function MultiTabEditor() {
+  const [tabs, setTabs] = useState<EditorTabItem[]>([
+    { id: 'app.tsx', label: 'app.tsx', mode: 'typescript' },
+    { id: 'style.css', label: 'style.css', mode: 'css' },
+  ]);
+  const [activeTab, setActiveTab] = useState('app.tsx');
+  const [modified, setModified] = useState<Record<string, boolean>>({});
+
+  const tabItems = tabs.map((t) => ({
+    ...t,
+    modified: !!modified[t.id],
+  }));
+
+  return (
+    <CodeEditor className="h-[500px]">
+      <CodeEditorTabs
+        items={tabItems}
+        activeTab={activeTab}
+        onActiveChange={setActiveTab}
+        closeTabs={(ids) =>
+          setTabs((prev) => prev.filter((t) => !ids.includes(t.id)))
+        }
+      />
+      <CodeEditorPane
+        key={activeTab}
+        mode={files[activeTab]?.mode}
+        value={files[activeTab]?.content}
+        onChange={() => setModified((prev) => ({ ...prev, [activeTab]: true }))}
+      />
+      <CodeEditorStatusBar />
+    </CodeEditor>
+  );
+}
+```
+
+## API 参考
+
+### CodeEditor
+
+根容器。接受所有 `<div>` 属性以及 `children`。
+
+### CodeEditorTabs
+
+封装 `DynamicTabsList`。接受所有 `DynamicTabsList` 属性（`items`、`activeTab`、`onActiveChange`、`closeTabs` 等）。设置了 `modified: true` 的标签项会显示蓝色圆点指示器。
+
+### CodeEditorPane
+
+Ace 编辑器实例。
+
+| 属性       | 类型                      | 默认值        | 描述                                       |
+| ---------- | ------------------------- | ------------- | ------------------------------------------ |
+| `mode`     | `string`                  | —             | Ace 语言模式（如 `'typescript'`、`'css'`） |
+| `value`    | `string`                  | —             | 编辑器内容                                 |
+| `onChange` | `(value: string) => void` | —             | 内容变化时回调                             |
+| `readOnly` | `boolean`                 | `false`       | 只读模式                                   |
+| `theme`    | `string`                  | `'jetbrains'` | Ace 主题名称                               |
+| `options`  | `Record<string, unknown>` | —             | 附加 Ace 编辑器选项                        |
+
+### CodeEditorStatusBar
+
+| 属性         | 类型     | 默认值        | 描述         |
+| ------------ | -------- | ------------- | ------------ |
+| `encoding`   | `string` | `'UTF-8'`     | 文件编码显示 |
+| `indentInfo` | `string` | `'Spaces: 2'` | 缩进信息显示 |
+
+### EditorTabItem
+
+扩展 `DynamicTabItem`：
+
+| 字段      | 类型     | 描述                  |
+| --------- | -------- | --------------------- |
+| `mode`    | `string` | 此标签的 Ace 语言模式 |
+| `content` | `string` | 此标签的编辑器内容    |
+
+## 主题
+
+内置的 `ace-jetbrains` 主题从 `--jb-*` CSS 设计令牌中读取颜色，自动适应明暗模式。无需额外主题设置。
+
+## 备注
+
+- 多标签页会话管理（保留每个标签的撤销历史）计划在后续版本中实现。
+- 每个 `CodeEditorPane` 创建自己的 Ace 实例。切换标签时请使用 `key` 属性重新挂载。

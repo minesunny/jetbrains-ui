@@ -1,0 +1,43 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "idea-window",
+  "type": "registry:ui",
+  "title": "IDEA Window",
+  "description": "IntelliJ IDEA-style window layout with resizable, collapsible panels, fixed bars, and layout persistence.",
+  "dependencies": [
+    "react-resizable-panels",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "@jetbrains-ui/resizable",
+    "@jetbrains-ui/scroll-area"
+  ],
+  "files": [
+    {
+      "path": "registry/components/idea-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/idea-window.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "idea-window",
+      "layout",
+      "resizable",
+      "collapsible",
+      "panel",
+      "ide"
+    ],
+    "category": "layout",
+    "docs": {
+      "description": "IntelliJ IDEA-style window layout with resizable, collapsible panels, fixed bars, and layout persistence.",
+      "features": [
+        "Compound component API with 8 sub-components",
+        "Resizable panels with drag handles",
+        "Collapsible left, right, and bottom panels",
+        "Fixed top/bottom bars and left/right toolbar strips",
+        "Layout persistence via localStorage"
+      ]
+    }
+  }
+}

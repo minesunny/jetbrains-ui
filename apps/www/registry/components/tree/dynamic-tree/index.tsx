@@ -4,10 +4,19 @@ import {
   type ReactNode,
   type ComponentPropsWithoutRef,
   type CSSProperties,
+  useMemo,
 } from 'react';
 
 import { type ItemInstance } from '@headless-tree/core';
 import { SVG } from '@/registry/components/svg';
+import { useJetBrainsLocale } from '@/registry/components/provider';
+import {
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuSeparator,
+  ContextMenuTrigger,
+} from '@/registry/components/context-menu';
 
 export { asyncDataLoaderFeature } from './feature';
 
@@ -21,7 +30,7 @@ export interface DynamicTreeItemData {
 
 export interface DynamicTreeItemProps<
   TItem extends DynamicTreeItemData = DynamicTreeItemData,
-> {
+> extends Omit<ComponentPropsWithoutRef<'div'>, 'children'> {
   item: ItemInstance<TItem>;
   indent: number;
 }
@@ -32,11 +41,28 @@ export interface DynamicTreeItemComponent<
   (props: DynamicTreeItemProps<TItem>): ReactNode;
 }
 
+export interface TreeItemActions<
+  TItem extends DynamicTreeItemData = DynamicTreeItemData,
+> {
+  /** Refresh item data and children from the data loader. Built-in. */
+  refresh: (item: ItemInstance<TItem>) => void;
+  /** Clear cached children and collapse the folder. Built-in. */
+  clearChildren: (item: ItemInstance<TItem>) => void;
+  /** Add a child item. Calls the addItem prop. Undefined if not provided. */
+  add?: (item: ItemInstance<TItem>) => void;
+  /** Delete this item. Calls the deleteItem prop. Undefined if not provided. */
+  delete?: (item: ItemInstance<TItem>) => void;
+}
+
+export type DynamicTreeContextMenuFn<
+  TItem extends DynamicTreeItemData = DynamicTreeItemData,
+> = (item: ItemInstance<TItem>, actions: TreeItemActions<TItem>) => ReactNode;
+
 export interface DynamicTreeProps<
   TItem extends DynamicTreeItemData = DynamicTreeItemData,
 > extends Omit<
     ComponentPropsWithoutRef<'div'>,
-    'children' | 'className' | 'style'
+    'children' | 'className' | 'style' | 'contextMenu'
   > {
   containerProps: ComponentPropsWithoutRef<'div'>;
   items: ItemInstance<TItem>[];
@@ -44,6 +70,9 @@ export interface DynamicTreeProps<
   item?: DynamicTreeItemComponent<TItem>;
   width?: CSSProperties['width'];
   height?: CSSProperties['height'];
+  contextMenu?: DynamicTreeContextMenuFn<TItem> | null;
+  addItem?: (item: ItemInstance<TItem>) => void;
+  deleteItem?: (item: ItemInstance<TItem>) => void;
 }
 
 function TreeItemDisclosure({
@@ -61,6 +90,7 @@ function TreeItemDisclosure({
   isDisabled?: boolean;
   onToggle: () => void;
 }) {
+  const { t } = useJetBrainsLocale();
   return (
     <button
       type="button"
@@ -71,10 +101,10 @@ function TreeItemDisclosure({
       tabIndex={isDisabled ? -1 : 0}
       aria-label={
         isLoading
-          ? `Loading ${itemLabel}`
+          ? t('dynamicTree.loading', { label: itemLabel })
           : isExpanded
-            ? `Collapse ${itemLabel}`
-            : `Expand ${itemLabel}`
+            ? t('dynamicTree.collapse', { label: itemLabel })
+            : t('dynamicTree.expand', { label: itemLabel })
       }
       aria-expanded={isExpanded}
       disabled={isDisabled}
@@ -104,6 +134,7 @@ function TreeItemDisclosure({
 function DynamicTreeItem<TItem extends DynamicTreeItemData>({
   indent,
   item,
+  ...rest
 }: DynamicTreeItemProps<TItem>) {
   const {
     style: resolvedStyle,
@@ -119,13 +150,14 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
 
   return (
     <div
+      {...rest}
       role="treeitem"
       aria-level={level}
       aria-expanded={item.isFolder() ? item.isExpanded() : undefined}
       aria-selected={item.isSelected()}
       data-slot="tree-item"
       data-value={item.getId()}
-      className="my-0.5 w-full p-0"
+      className="group my-0.5 w-full p-0"
     >
       <div
         {...resolvedProps}
@@ -156,7 +188,7 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
         <span
           aria-hidden="true"
           data-slot="tree-item-overlay"
-          className="pointer-events-none absolute inset-y-0 left-3 right-3 rounded-[4px] bg-transparent transition-[background-color,box-shadow] duration-150 ease-in-out"
+          className="pointer-events-none absolute inset-y-0 left-3 right-3 rounded-[4px] bg-transparent transition-[background-color,box-shadow] duration-150 ease-in-out group-data-[state=open]:bg-blue-11 dark:group-data-[state=open]:bg-blue-2"
         />
 
         {item.isFolder() ? (
@@ -213,6 +245,53 @@ function DynamicTreeItem<TItem extends DynamicTreeItemData>({
   );
 }
 
+function DynamicTreeItemContextMenu<TItem extends DynamicTreeItemData>({
+  item,
+  actions,
+}: {
+  item: ItemInstance<TItem>;
+  actions: TreeItemActions<TItem>;
+}) {
+  const isFolder = item.isFolder();
+  const { t } = useJetBrainsLocale();
+
+  return (
+    <>
+      {isFolder && (
+        <ContextMenuItem
+          icon="general/general/add"
+          disabled={!actions.add}
+          onSelect={() => actions.add?.(item)}
+        >
+          {t('dynamicTree.add')}
+        </ContextMenuItem>
+      )}
+      <ContextMenuItem
+        icon="general/general/refresh"
+        onSelect={() => actions.refresh(item)}
+      >
+        {t('dynamicTree.refresh')}
+      </ContextMenuItem>
+      {isFolder && (
+        <ContextMenuItem
+          icon="general/general/remove"
+          onSelect={() => actions.clearChildren(item)}
+        >
+          {t('dynamicTree.clearChildren')}
+        </ContextMenuItem>
+      )}
+      <ContextMenuSeparator />
+      <ContextMenuItem
+        icon="general/general/delete"
+        disabled={!actions.delete}
+        onSelect={() => actions.delete?.(item)}
+      >
+        {t('dynamicTree.delete')}
+      </ContextMenuItem>
+    </>
+  );
+}
+
 function DynamicTree<TItem extends DynamicTreeItemData>({
   containerProps,
   items,
@@ -220,9 +299,35 @@ function DynamicTree<TItem extends DynamicTreeItemData>({
   item: customItem,
   width,
   height,
+  contextMenu: contextMenuFn,
+  addItem,
+  deleteItem,
   ...props
 }: DynamicTreeProps<TItem>) {
   const ItemComponent = customItem ?? DynamicTreeItem;
+
+  const actions = useMemo<TreeItemActions<TItem>>(
+    () => ({
+      refresh: (item) => {
+        const instance = item as ItemInstance<TItem> & {
+          invalidateItemData: (optimistic?: boolean) => Promise<void>;
+          invalidateChildrenIds: () => Promise<void>;
+        };
+        void instance.invalidateItemData(true);
+        void instance.invalidateChildrenIds();
+      },
+      clearChildren: (item) => {
+        const instance = item as ItemInstance<TItem> & {
+          clearCachedChildren: () => void;
+        };
+        instance.clearCachedChildren();
+        if (item.isExpanded()) item.collapse();
+      },
+      add: addItem ? (item) => addItem(item) : undefined,
+      delete: deleteItem ? (item) => deleteItem(item) : undefined,
+    }),
+    [addItem, deleteItem],
+  );
 
   return (
     <div
@@ -232,9 +337,28 @@ function DynamicTree<TItem extends DynamicTreeItemData>({
       style={{ width, height }}
       {...props}
     >
-      {items.map((item) => (
-        <ItemComponent key={item.getKey()} item={item} indent={indent} />
-      ))}
+      {items.map((item) => {
+        const itemKey = item.getKey();
+
+        if (contextMenuFn === null) {
+          return <ItemComponent key={itemKey} item={item} indent={indent} />;
+        }
+
+        const menuContent = contextMenuFn ? (
+          contextMenuFn(item, actions)
+        ) : (
+          <DynamicTreeItemContextMenu item={item} actions={actions} />
+        );
+
+        return (
+          <ContextMenu key={itemKey}>
+            <ContextMenuTrigger asChild>
+              <ItemComponent item={item} indent={indent} />
+            </ContextMenuTrigger>
+            <ContextMenuContent>{menuContent}</ContextMenuContent>
+          </ContextMenu>
+        );
+      })}
     </div>
   );
 }

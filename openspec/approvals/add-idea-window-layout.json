@@ -1,0 +1,45 @@
+{
+  "changeId": "add-idea-window-layout",
+  "status": "pending_approval",
+  "approvals": [
+    {
+      "approver": "user",
+      "approvedAt": "2026-05-17T09:43:36.391Z"
+    }
+  ],
+  "rejections": [],
+  "history": [
+    {
+      "action": "request_approval",
+      "by": "user",
+      "at": "2026-05-17T03:11:43.954Z"
+    },
+    {
+      "action": "reset_to_draft",
+      "by": "user",
+      "at": "2026-05-17T03:11:45.750Z"
+    },
+    {
+      "action": "request_approval",
+      "by": "user",
+      "at": "2026-05-17T04:08:43.083Z"
+    },
+    {
+      "action": "approved",
+      "by": "user",
+      "at": "2026-05-17T09:43:36.391Z"
+    },
+    {
+      "action": "completed",
+      "by": "user",
+      "at": "2026-05-17T09:43:37.529Z"
+    },
+    {
+      "action": "request_approval",
+      "by": "user",
+      "at": "2026-05-17T09:43:57.380Z"
+    }
+  ],
+  "requestedAt": "2026-05-17T09:43:57.380Z",
+  "requestedBy": "user"
+}

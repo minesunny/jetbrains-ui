@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-dynamic-tabs-demo",
+  "type": "registry:example",
+  "title": "Dynamic Tabs Demo",
+  "description": "Demo showing DynamicTabsList with close, pin, and context menu.",
+  "registryDependencies": ["dynamic-tabs"],
+  "files": [
+    {
+      "path": "registry/demo/components/tabs/dynamic-tabs/index.tsx",
+      "type": "registry:example",
+      "target": "components/jetbrains-ui/tabs-dynamic-tabs-demo.tsx"
+    }
+  ]
+}

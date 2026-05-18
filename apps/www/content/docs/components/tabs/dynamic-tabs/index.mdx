@@ -1,0 +1,197 @@
+---
+title: Dynamic Tabs
+description: Data-driven tab bar with per-tab context menu, close, and pin support.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-05-17
+---
+
+<ComponentPreview name="tabs-dynamic-tabs-demo" />
+
+## Overview
+
+`DynamicTabsList` renders a data-driven tab bar from an items array. Each tab has a close/pin button and a right-click context menu with built-in actions. Content rendering is consumer-controlled — the component only manages the tab bar.
+
+## Installation
+
+<ComponentInstallation name="dynamic-tabs" />
+
+## Usage
+
+### Basic
+
+```tsx
+import { useState, useCallback, memo } from 'react';
+import {
+  DynamicTabsList,
+  type DynamicTabItem,
+} from '@/components/jetbrains-ui/tabs/dynamic-tabs';
+
+const tabs: DynamicTabItem[] = [
+  { id: 'main', label: 'main.ts', pinned: true },
+  { id: 'app', label: 'app.tsx' },
+  { id: 'utils', label: 'utils.ts' },
+];
+
+function Example() {
+  const [items, setItems] = useState(tabs);
+  const [activeId, setActiveId] = useState('main');
+
+  const closeTabs = useCallback((ids: string[]) => {
+    setItems((prev) => prev.filter((t) => !ids.includes(t.id)));
+  }, []);
+
+  const togglePin = useCallback((tabId: string) => {
+    setItems((prev) =>
+      prev.map((t) => (t.id === tabId ? { ...t, pinned: !t.pinned } : t)),
+    );
+  }, []);
+
+  return (
+    <>
+      <DynamicTabsList
+        items={items}
+        activeTab={activeId}
+        onActiveChange={setActiveId}
+        closeTabs={closeTabs}
+        togglePin={togglePin}
+      />
+      <div>
+        {items.map((tab) => (
+          <div
+            key={tab.id}
+            style={{ display: tab.id === activeId ? undefined : 'none' }}
+          >
+            <MemoizedContent tabId={tab.id} />
+          </div>
+        ))}
+      </div>
+    </>
+  );
+}
+```
+
+### Prevent Content Re-renders
+
+Use `React.memo` on content components and `display: none` for inactive tabs. This keeps heavy content (editors, tables) mounted but hidden, preventing re-renders on tab switch:
+
+```tsx
+const MemoizedContent = memo(function Content({ tabId }: { tabId: string }) {
+  return <Editor tabId={tabId} />;
+});
+```
+
+### Disable Context Menu
+
+```tsx
+<DynamicTabsList items={items} contextMenu={null} />
+```
+
+### Custom Context Menu
+
+```tsx
+<DynamicTabsList
+  items={items}
+  contextMenu={(tab, index, actions) => (
+    <>
+      <ContextMenuItem onSelect={() => actions.close?.()}>
+        Custom Close
+      </ContextMenuItem>
+    </>
+  )}
+/>
+```
+
+## Context Menu Actions
+
+| Action              | Description                      | Disabled When                                     |
+| ------------------- | -------------------------------- | ------------------------------------------------- |
+| Pin Tab / Unpin Tab | Toggle pinned state              | No `togglePin` prop                               |
+| Close               | Close the current tab            | Tab is pinned, or no `closeTabs` prop             |
+| Close Others        | Close all other unpinned tabs    | No `closeTabs` prop                               |
+| Close Left Tabs     | Close unpinned tabs to the left  | No unpinned tabs on left, or no `closeTabs` prop  |
+| Close Right Tabs    | Close unpinned tabs to the right | No unpinned tabs on right, or no `closeTabs` prop |
+
+All close-range actions automatically skip pinned tabs.
+
+## API Reference
+
+### DynamicTabsList
+
+<TypeTable
+  type={{
+    items: {
+      description: 'Array of tab items to render',
+      type: 'DynamicTabItem[]',
+      required: true,
+    },
+    activeTab: {
+      description: 'Controlled active tab ID',
+      type: 'string',
+      required: false,
+    },
+    defaultActiveTab: {
+      description: 'Default active tab ID (uncontrolled)',
+      type: 'string',
+      required: false,
+    },
+    onActiveChange: {
+      description: 'Callback fired when active tab changes',
+      type: '(tabId: string) => void',
+      required: false,
+    },
+    closeTabs: {
+      description:
+        'Callback to close tabs by ID. Receives an array of IDs to close.',
+      type: '(tabIds: string[]) => void',
+      required: false,
+    },
+    togglePin: {
+      description: 'Callback to toggle pin state of a tab',
+      type: '(tabId: string) => void',
+      required: false,
+    },
+    contextMenu: {
+      description: 'Custom context menu render function, or null to disable',
+      type: 'DynamicTabContextMenuFn | null',
+      required: false,
+      default: 'default context menu',
+    },
+  }}
+/>
+
+### DynamicTabItem
+
+<TypeTable
+  type={{
+    id: {
+      description: 'Unique identifier for the tab',
+      type: 'string',
+      required: true,
+    },
+    label: {
+      description: 'Display text for the tab',
+      type: 'string',
+      required: true,
+    },
+    icon: {
+      description: 'Icon name (from SVG registry) displayed before the label',
+      type: 'string',
+      required: false,
+    },
+    pinned: {
+      description:
+        'Whether the tab is pinned. Pinned tabs show pin icon instead of close, and are protected from close actions.',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+    disabled: {
+      description: 'Whether the tab is disabled',
+      type: 'boolean',
+      required: false,
+      default: 'false',
+    },
+  }}
+/>

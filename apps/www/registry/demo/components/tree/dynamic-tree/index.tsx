@@ -9,6 +9,7 @@ import {
 import {
   hotkeysCoreFeature,
   selectionFeature,
+  type ItemInstance,
   type TreeDataLoader,
 } from '@headless-tree/core';
 import { useTree } from '@headless-tree/react';
@@ -161,6 +162,9 @@ function resolveDemoItemData(
 
 export default function DynamicTreeDemo() {
   const loadedItemsRef = useRef<Record<string, DemoTreeItem>>({});
+  const itemsRef = useRef<DemoTreeItems>({ ...initialItems });
+  const childrenRef = useRef<DemoTreeChildren>({ ...initialChildren });
+  const nextIdRef = useRef(0);
 
   const loadData = useCallback(
     async (itemId: string | null): Promise<DemoLoadedItem[]> => {
@@ -168,10 +172,14 @@ export default function DynamicTreeDemo() {
 
       const parentId = itemId ?? DEMO_ROOT_ID;
 
-      return (initialChildren[parentId] ?? []).map(
+      return (childrenRef.current[parentId] ?? []).map(
         (childId): DemoLoadedItem => ({
           id: childId,
-          data: resolveDemoItemData(initialItems, initialChildren, childId),
+          data: resolveDemoItemData(
+            itemsRef.current,
+            childrenRef.current,
+            childId,
+          ),
         }),
       );
     },
@@ -181,6 +189,10 @@ export default function DynamicTreeDemo() {
     () => ({
       getItem: async (itemId: string) => {
         const [realItemId] = itemId.split('@');
+
+        if (itemId.includes('@refresh')) {
+          await wait(500);
+        }
 
         if (realItemId === DEMO_ROOT_ID) {
           return {
@@ -201,6 +213,10 @@ export default function DynamicTreeDemo() {
       getChildrenWithData: async (itemId: string) => {
         const [realItemId] = itemId.split('@');
 
+        if (itemId.includes('@refresh')) {
+          await wait(500);
+        }
+
         return loadData(realItemId === DEMO_ROOT_ID ? null : realItemId);
       },
     }),
@@ -218,6 +234,42 @@ export default function DynamicTreeDemo() {
     features: [asyncDataLoaderFeature, selectionFeature, hotkeysCoreFeature],
   });
 
+  const treeRef = useRef(tree);
+  treeRef.current = tree;
+
+  const addItem = useCallback((item: ItemInstance<DemoTreeItem>) => {
+    const parentId = item.getId();
+    const id = `new-${nextIdRef.current++}`;
+    const parentData = item.getItemData();
+
+    itemsRef.current[id] = {
+      label: `New Item`,
+      kind: 'file',
+      path: `${parentData?.path ?? parentId}/${id}`,
+    };
+    childrenRef.current[parentId] = [
+      ...(childrenRef.current[parentId] ?? []),
+      id,
+    ];
+    void item.invalidateChildrenIds();
+  }, []);
+
+  const deleteItem = useCallback((item: ItemInstance<DemoTreeItem>) => {
+    const itemId = item.getId();
+
+    delete itemsRef.current[itemId];
+
+    for (const [parentId, childIds] of Object.entries(childrenRef.current)) {
+      const idx = childIds.indexOf(itemId);
+      if (idx !== -1) {
+        childrenRef.current[parentId] = childIds.filter((id) => id !== itemId);
+        break;
+      }
+    }
+
+    treeRef.current.rebuildTree();
+  }, []);
+
   return (
     <div className="w-[280px] rounded border">
       <DynamicTree<DemoTreeItem>
@@ -226,6 +278,8 @@ export default function DynamicTreeDemo() {
         }
         items={tree.getItems()}
         height="400px"
+        addItem={addItem}
+        deleteItem={deleteItem}
       />
     </div>
   );

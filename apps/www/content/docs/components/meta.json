@@ -20,6 +20,8 @@
     "combo-box",
     "tabs",
     "tree",
+    "idea-window",
+    "code-editor",
     "toggle",
     "tooltip"
   ]

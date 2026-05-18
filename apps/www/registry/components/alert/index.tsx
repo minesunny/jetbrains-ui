@@ -8,6 +8,7 @@ import { cn } from '@workspace/ui/lib/utils';
 import { SVG } from '@/registry/components/svg';
 import { buttonVariants } from '@/registry/components/button';
 import { Checkbox } from '@/registry/components/checkbox';
+import { useJetBrainsLocale } from '@/registry/components/provider';
 
 type AlertContentContextValue = {
   help: boolean;
@@ -115,6 +116,7 @@ function AlertContent({
 function AlertHeader({ className, children, ...props }: ComponentProps<'div'>) {
   const { check } = useContext(AlertContentContext);
   const checkboxId = useId();
+  const { t } = useJetBrainsLocale();
 
   return (
     <div
@@ -130,7 +132,7 @@ function AlertHeader({ className, children, ...props }: ComponentProps<'div'>) {
             htmlFor={checkboxId}
             className="text-[13px] leading-4 font-medium"
           >
-            Do not ask again
+            {t('alert.doNotAskAgain')}
           </label>
         </div>
       )}

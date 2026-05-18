@@ -8,7 +8,10 @@
   "registryDependencies": [
     "scroll-area",
     "context-menu",
+    "icons-general-general-add",
     "icons-general-general-delete",
+    "icons-general-general-refresh",
+    "icons-general-general-remove",
     "icons-general-general-chevron-down",
     "icons-general-general-chevron-right",
     "icons-general-spinner-loader"
