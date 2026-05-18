@@ -4,11 +4,18 @@ import {
   type CSSProperties,
   type ComponentPropsWithoutRef,
 } from 'react';
-import { act, render, screen, waitFor } from '@testing-library/react';
+import {
+  act,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {
   hotkeysCoreFeature,
   selectionFeature,
+  type ItemInstance,
   type TreeDataLoader,
 } from '@headless-tree/core';
 import { useTree } from '@headless-tree/react';
@@ -16,6 +23,7 @@ import { useTree } from '@headless-tree/react';
 import {
   DynamicTree,
   asyncDataLoaderFeature,
+  type DynamicTreeContextMenuFn,
   type DynamicTreeItemComponent,
   type DynamicTreeItemProps,
   type DynamicTreeItemData,
@@ -81,6 +89,9 @@ function DynamicTreeTestHarness({
   width,
   height,
   item,
+  contextMenu,
+  addItem,
+  deleteItem,
 }: {
   loadData: (
     itemId: string | null,
@@ -90,6 +101,9 @@ function DynamicTreeTestHarness({
   width?: CSSProperties['width'];
   height?: CSSProperties['height'];
   item?: DynamicTreeItemComponent<DynamicTreeItemData>;
+  contextMenu?: DynamicTreeContextMenuFn<DynamicTreeItemData> | null;
+  addItem?: (item: ItemInstance<DynamicTreeItemData>) => void;
+  deleteItem?: (item: ItemInstance<DynamicTreeItemData>) => void;
 }) {
   const loadedItemsRef = useRef<Record<string, DynamicTreeItemData>>({});
   const dataLoader = useMemo<TreeDataLoader<DynamicTreeItemData>>(
@@ -140,6 +154,9 @@ function DynamicTreeTestHarness({
       item={item}
       width={width}
       height={height}
+      contextMenu={contextMenu}
+      addItem={addItem}
+      deleteItem={deleteItem}
     />
   );
 }
@@ -306,5 +323,126 @@ describe('DynamicTree', () => {
     ) as HTMLDivElement;
 
     expect(readmeItem).toHaveAttribute('data-disabled', 'true');
+  });
+
+  describe('context menu', () => {
+    async function openContextMenu(
+      user: ReturnType<typeof userEvent.setup>,
+      itemId: string,
+    ) {
+      const item = document.querySelector(
+        `[data-slot="tree-item"][data-value="${itemId}"]`,
+      ) as HTMLElement;
+      await user.pointer([
+        { target: item },
+        { keys: '[MouseRight]', target: item },
+      ]);
+    }
+
+    it('shows default context menu with all actions for folder items', async () => {
+      const user = userEvent.setup();
+      const loadData = createLoadData(fixture);
+      render(<DynamicTreeTestHarness loadData={loadData} />);
+
+      await screen.findByText('src');
+      await openContextMenu(user, 'src');
+
+      expect(
+        await screen.findByRole('menuitem', { name: 'Add' }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('menuitem', { name: 'Refresh' }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('menuitem', { name: 'Clear Children' }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('menuitem', { name: 'Delete' }),
+      ).toBeInTheDocument();
+    });
+
+    it('shows limited actions for leaf items', async () => {
+      const user = userEvent.setup();
+      const loadData = createLoadData(fixture);
+      render(<DynamicTreeTestHarness loadData={loadData} />);
+
+      await screen.findByText('README.md');
+      await openContextMenu(user, 'readme');
+
+      expect(
+        await screen.findByRole('menuitem', { name: 'Refresh' }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('menuitem', { name: 'Delete' }),
+      ).toBeInTheDocument();
+      expect(
+        screen.queryByRole('menuitem', { name: 'Add' }),
+      ).not.toBeInTheDocument();
+      expect(
+        screen.queryByRole('menuitem', { name: 'Clear Children' }),
+      ).not.toBeInTheDocument();
+    });
+
+    it('disables Add and Delete when handlers are not provided', async () => {
+      const user = userEvent.setup();
+      const loadData = createLoadData(fixture);
+      render(<DynamicTreeTestHarness loadData={loadData} />);
+
+      await screen.findByText('src');
+      await openContextMenu(user, 'src');
+
+      const addItem = await screen.findByRole('menuitem', { name: 'Add' });
+      const deleteItem = screen.getByRole('menuitem', { name: 'Delete' });
+
+      expect(addItem).toHaveAttribute('data-disabled');
+      expect(deleteItem).toHaveAttribute('data-disabled');
+    });
+
+    it('does not render context menu when contextMenu is null', async () => {
+      const loadData = createLoadData(fixture);
+      render(<DynamicTreeTestHarness loadData={loadData} contextMenu={null} />);
+
+      await screen.findByText('src');
+
+      expect(
+        document.querySelectorAll('[data-slot="context-menu"]').length,
+      ).toBe(0);
+    });
+
+    it('renders custom context menu from render function', async () => {
+      const user = userEvent.setup();
+      const loadData = createLoadData(fixture);
+      const customMenu: DynamicTreeContextMenuFn<DynamicTreeItemData> = (
+        item,
+        actions,
+      ) => (
+        <>
+          <div data-testid="custom-label">
+            {item.getItemData()?.label ?? item.getId()}
+          </div>
+          <button
+            type="button"
+            data-testid="custom-action"
+            onClick={() => actions.refresh(item)}
+          >
+            Custom Refresh
+          </button>
+        </>
+      );
+
+      render(
+        <DynamicTreeTestHarness loadData={loadData} contextMenu={customMenu} />,
+      );
+
+      await screen.findByText('src');
+      await openContextMenu(user, 'src');
+
+      expect(await screen.findByTestId('custom-label')).toHaveTextContent(
+        'src',
+      );
+      expect(screen.getByTestId('custom-action')).toHaveTextContent(
+        'Custom Refresh',
+      );
+    });
   });
 });

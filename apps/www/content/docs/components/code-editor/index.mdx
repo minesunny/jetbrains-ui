@@ -1,0 +1,146 @@
+---
+title: Code Editor
+description: A compound code editor component built on Ace Editor with JetBrains-themed syntax highlighting, tab bar, and status bar.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2026-05-17
+---
+
+<ComponentPreview name="code-editor-demo" />
+
+## Overview
+
+`CodeEditor` is a compound component that wraps Ace Editor (`ace-builds`) with a JetBrains-themed syntax highlighting, a tab bar (via `DynamicTabsList`), and a status bar. It provides an IDE-like editing experience out of the box.
+
+## Installation
+
+<ComponentInstallation name="code-editor" />
+
+## Usage
+
+### Basic
+
+```tsx
+import {
+  CodeEditor,
+  CodeEditorPane,
+  CodeEditorStatusBar,
+} from '@/components/jetbrains-ui/code-editor';
+
+function BasicEditor() {
+  return (
+    <CodeEditor className="h-[400px]">
+      <CodeEditorPane
+        mode="typescript"
+        value="const hello = 'world';"
+        onChange={(value) => console.log(value)}
+      />
+      <CodeEditorStatusBar />
+    </CodeEditor>
+  );
+}
+```
+
+### Multi-Tab with Modified Indicators
+
+```tsx
+import { useState, useCallback } from 'react';
+import {
+  CodeEditor,
+  CodeEditorTabs,
+  CodeEditorPane,
+  CodeEditorStatusBar,
+  type EditorTabItem,
+} from '@/components/jetbrains-ui/code-editor';
+
+const files = {
+  'app.tsx': {
+    mode: 'typescript',
+    content: 'export default function App() {}',
+  },
+  'style.css': { mode: 'css', content: 'body { margin: 0; }' },
+};
+
+function MultiTabEditor() {
+  const [tabs, setTabs] = useState<EditorTabItem[]>([
+    { id: 'app.tsx', label: 'app.tsx', mode: 'typescript' },
+    { id: 'style.css', label: 'style.css', mode: 'css' },
+  ]);
+  const [activeTab, setActiveTab] = useState('app.tsx');
+  const [modified, setModified] = useState<Record<string, boolean>>({});
+
+  const tabItems = tabs.map((t) => ({
+    ...t,
+    modified: !!modified[t.id],
+  }));
+
+  return (
+    <CodeEditor className="h-[500px]">
+      <CodeEditorTabs
+        items={tabItems}
+        activeTab={activeTab}
+        onActiveChange={setActiveTab}
+        closeTabs={(ids) =>
+          setTabs((prev) => prev.filter((t) => !ids.includes(t.id)))
+        }
+      />
+      <CodeEditorPane
+        key={activeTab}
+        mode={files[activeTab]?.mode}
+        value={files[activeTab]?.content}
+        onChange={() => setModified((prev) => ({ ...prev, [activeTab]: true }))}
+      />
+      <CodeEditorStatusBar />
+    </CodeEditor>
+  );
+}
+```
+
+## API Reference
+
+### CodeEditor
+
+Root container. Accepts all `<div>` props plus `children`.
+
+### CodeEditorTabs
+
+Wraps `DynamicTabsList`. Accepts all `DynamicTabsList` props (`items`, `activeTab`, `onActiveChange`, `closeTabs`, etc.). Tab items with `modified: true` show a blue dot indicator.
+
+### CodeEditorPane
+
+The Ace Editor instance.
+
+| Prop       | Type                      | Default       | Description                                      |
+| ---------- | ------------------------- | ------------- | ------------------------------------------------ |
+| `mode`     | `string`                  | —             | Ace language mode (e.g. `'typescript'`, `'css'`) |
+| `value`    | `string`                  | —             | Editor content                                   |
+| `onChange` | `(value: string) => void` | —             | Called when content changes                      |
+| `readOnly` | `boolean`                 | `false`       | Read-only mode                                   |
+| `theme`    | `string`                  | `'jetbrains'` | Ace theme name                                   |
+| `options`  | `Record<string, unknown>` | —             | Additional Ace editor options                    |
+
+### CodeEditorStatusBar
+
+| Prop         | Type     | Default       | Description           |
+| ------------ | -------- | ------------- | --------------------- |
+| `encoding`   | `string` | `'UTF-8'`     | File encoding display |
+| `indentInfo` | `string` | `'Spaces: 2'` | Indentation display   |
+
+### EditorTabItem
+
+Extends `DynamicTabItem` with:
+
+| Field     | Type     | Description                    |
+| --------- | -------- | ------------------------------ |
+| `mode`    | `string` | Ace language mode for this tab |
+| `content` | `string` | Editor content for this tab    |
+
+## Theme
+
+The built-in `ace-jetbrains` theme reads from `--jb-*` CSS design tokens for automatic light/dark mode adaptation. No additional theme setup is required.
+
+## Notes
+
+- Multi-tab session management (preserving undo history per tab) is planned for a future release.
+- Each `CodeEditorPane` creates its own Ace instance. Use the `key` prop to remount when switching tabs.

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "provider",
+  "type": "registry:ui",
+  "title": "JetBrainsUIProvider",
+  "description": "JetBrains UI 全局 Provider，提供组件国际化（i18n）的 locale 上下文。内置 en 和 zh-CN，支持自定义覆盖。",
+  "files": [
+    {
+      "path": "registry/components/provider/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/provider.tsx"
+    },
+    {
+      "path": "registry/components/provider/use-locale.ts",
+      "type": "registry:ui",
+      "target": "hooks/use-jetbrains-locale.ts"
+    }
+  ],
+  "meta": {
+    "keywords": ["provider", "i18n", "locale", "internationalization", "jetbrains", "ui"],
+    "category": "provider",
+    "docs": {
+      "description": "JetBrains UI 的全局 Provider，为组件提供国际化上下文。内置 en 和 zh-CN 两种语言，开发者可通过 messages 属性覆盖或扩展翻译。",
+      "features": [
+        "内置 en / zh-CN 两种语言",
+        "useJetBrainsLocale() hook 获取 t() 翻译函数",
+        "支持 {key} 模板插值",
+        "支持自定义 locale 覆盖",
+        "无外部 i18n 依赖",
+        "不使用 Provider 时自动回退到 en"
+      ]
+    }
+  }
+}

@@ -19,6 +19,7 @@ import {
 
 import { cn } from '@workspace/ui/lib/utils';
 import { SVG } from '@/registry/components/svg';
+import { useJetBrainsLocale } from '@/registry/components/provider';
 
 type TreeContextValue = {
   selectedId: string | null;
@@ -187,6 +188,7 @@ function TreeItem({
 }: TreeItemProps) {
   const { selectedId, setSelectedId, expandedIds, toggleExpanded, indent } =
     useTreeContext();
+  const { t } = useJetBrainsLocale();
   const level = useContext(TreeLevelContext);
 
   const hasChildren = Children.count(children) > 0;
@@ -384,7 +386,9 @@ function TreeItem({
             type="button"
             className="relative z-10 inline-flex size-4 shrink-0 items-center justify-center border-0 bg-transparent p-0 outline-none disabled:cursor-not-allowed"
             aria-label={
-              expanded ? `Collapse ${textLabel}` : `Expand ${textLabel}`
+              expanded
+                ? t('tree.collapse', { label: textLabel })
+                : t('tree.expand', { label: textLabel })
             }
             onClick={handleToggle}
             disabled={disabled}

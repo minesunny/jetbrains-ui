@@ -2,5 +2,5 @@
   "title": "Tabs",
   "description": "Tabs 文档。",
   "defaultOpen": false,
-  "pages": ["base-tabs"]
+  "pages": ["base-tabs", "dynamic-tabs"]
 }

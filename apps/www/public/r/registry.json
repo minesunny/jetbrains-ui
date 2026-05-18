@@ -174,6 +174,63 @@
       }
     },
     {
+      "name": "code-editor",
+      "type": "registry:ui",
+      "title": "Code Editor",
+      "description": "A compound code editor component built on Ace Editor with JetBrains-themed syntax highlighting, tab bar with modified indicators, and status bar.",
+      "dependencies": [
+        "ace-builds"
+      ],
+      "registryDependencies": [
+        "@jetbrains-ui/dynamic-tabs",
+        "@jetbrains-ui/scroll-area",
+        "@jetbrains-ui/separator"
+      ],
+      "files": [
+        {
+          "path": "registry/components/code-editor/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/code-editor/index.tsx"
+        },
+        {
+          "path": "registry/components/code-editor/use-ace-editor.ts",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/code-editor/use-ace-editor.ts"
+        },
+        {
+          "path": "registry/components/code-editor/theme.ts",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/code-editor/theme.ts"
+        },
+        {
+          "path": "registry/components/code-editor/ace-jetbrains.css",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/code-editor/ace-jetbrains.css"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "editor",
+          "code",
+          "ace",
+          "ide",
+          "syntax-highlighting"
+        ],
+        "category": "editor",
+        "docs": {
+          "description": "A compound code editor component with Ace Editor backend, JetBrains-themed syntax highlighting, multi-tab support via dynamic-tabs, and a status bar showing cursor position, encoding, and language mode.",
+          "features": [
+            "Ace Editor backend with 120+ language support",
+            "Custom JetBrains theme using design tokens (--jb-* CSS variables)",
+            "Light and dark mode support via CSS variables",
+            "Tab bar with modified (dirty) state indicators",
+            "Status bar with cursor position, encoding, language mode",
+            "Compound component pattern for flexible composition"
+          ]
+        }
+      }
+    },
+    {
       "name": "combo-box",
       "type": "registry:ui",
       "title": "Combo Box",
@@ -337,6 +394,48 @@
       }
     },
     {
+      "name": "idea-window",
+      "type": "registry:ui",
+      "title": "IDEA Window",
+      "description": "IntelliJ IDEA-style window layout with resizable, collapsible panels, fixed bars, and layout persistence.",
+      "dependencies": [
+        "react-resizable-panels",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@jetbrains-ui/resizable",
+        "@jetbrains-ui/scroll-area"
+      ],
+      "files": [
+        {
+          "path": "registry/components/idea-window/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/idea-window.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "idea-window",
+          "layout",
+          "resizable",
+          "collapsible",
+          "panel",
+          "ide"
+        ],
+        "category": "layout",
+        "docs": {
+          "description": "IntelliJ IDEA-style window layout with resizable, collapsible panels, fixed bars, and layout persistence.",
+          "features": [
+            "Compound component API with 8 sub-components",
+            "Resizable panels with drag handles",
+            "Collapsible left, right, and bottom panels",
+            "Fixed top/bottom bars and left/right toolbar strips",
+            "Layout persistence via localStorage"
+          ]
+        }
+      }
+    },
+    {
       "name": "input",
       "type": "registry:ui",
       "title": "Input",
@@ -418,6 +517,46 @@
             "Composable API",
             "Accessible by default",
             "Supports light and dark themes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "provider",
+      "type": "registry:ui",
+      "title": "JetBrainsUIProvider",
+      "description": "JetBrains UI 全局 Provider，提供组件国际化（i18n）的 locale 上下文。内置 en 和 zh-CN，支持自定义覆盖。",
+      "files": [
+        {
+          "path": "registry/components/provider/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/provider.tsx"
+        },
+        {
+          "path": "registry/components/provider/use-locale.ts",
+          "type": "registry:ui",
+          "target": "hooks/use-jetbrains-locale.ts"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "provider",
+          "i18n",
+          "locale",
+          "internationalization",
+          "jetbrains",
+          "ui"
+        ],
+        "category": "provider",
+        "docs": {
+          "description": "JetBrains UI 的全局 Provider，为组件提供国际化上下文。内置 en 和 zh-CN 两种语言，开发者可通过 messages 属性覆盖或扩展翻译。",
+          "features": [
+            "内置 en / zh-CN 两种语言",
+            "useJetBrainsLocale() hook 获取 t() 翻译函数",
+            "支持 {key} 模板插值",
+            "支持自定义 locale 覆盖",
+            "无外部 i18n 依赖",
+            "不使用 Provider 时自动回退到 en"
           ]
         }
       }
@@ -723,6 +862,57 @@
       }
     },
     {
+      "name": "dynamic-tabs",
+      "type": "registry:ui",
+      "title": "Dynamic Tabs",
+      "description": "Data-driven tab bar with per-tab context menu, close/pin actions, and pinned tab protection.",
+      "registryDependencies": [
+        "@jetbrains-ui/context-menu",
+        "@jetbrains-ui/scroll-area",
+        "@jetbrains-ui/icons-general-general-close",
+        "@jetbrains-ui/icons-general-general-pin"
+      ],
+      "files": [
+        {
+          "path": "registry/components/tabs/dynamic-tabs/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/tabs/dynamic-tabs/index.tsx"
+        },
+        {
+          "path": "registry/components/tabs/dynamic-tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/tabs/dynamic-tabs/dynamic-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "tabs",
+          "dynamic",
+          "context-menu",
+          "pin",
+          "close",
+          "navigation",
+          "jetbrains",
+          "ui",
+          "component"
+        ],
+        "category": "navigation",
+        "docs": {
+          "description": "Data-driven tab bar with built-in context menu, close, and pin support.",
+          "features": [
+            "Data-driven tab items",
+            "Per-tab context menu (default ON)",
+            "Close, Close Others, Close Left/Right actions",
+            "Pin/Unpin tab support",
+            "Pinned tabs protected from close actions",
+            "Custom context menu render function",
+            "Controlled and uncontrolled active tab",
+            "Token-driven light/dark theme support"
+          ]
+        }
+      }
+    },
+    {
       "name": "toggle",
       "type": "registry:ui",
       "title": "Toggle",
@@ -891,7 +1081,10 @@
       "registryDependencies": [
         "@jetbrains-ui/scroll-area",
         "@jetbrains-ui/context-menu",
+        "@jetbrains-ui/icons-general-general-add",
         "@jetbrains-ui/icons-general-general-delete",
+        "@jetbrains-ui/icons-general-general-refresh",
+        "@jetbrains-ui/icons-general-general-remove",
         "@jetbrains-ui/icons-general-general-chevron-down",
         "@jetbrains-ui/icons-general-general-chevron-right",
         "@jetbrains-ui/icons-general-spinner-loader"
@@ -1079,6 +1272,22 @@
       }
     },
     {
+      "name": "code-editor-demo",
+      "type": "registry:example",
+      "title": "Code Editor Demo",
+      "description": "Demo for the CodeEditor compound component.",
+      "registryDependencies": [
+        "@jetbrains-ui/code-editor"
+      ],
+      "files": [
+        {
+          "path": "registry/demo/components/code-editor/index.tsx",
+          "type": "registry:example",
+          "target": "components/jetbrains-ui/demo/code-editor/index.tsx"
+        }
+      ]
+    },
+    {
       "name": "demo-combo-box",
       "type": "registry:ui",
       "title": "Combo Box Demo",
@@ -1170,6 +1379,44 @@
         }
       ],
       "meta": {}
+    },
+    {
+      "name": "demo-idea-window",
+      "type": "registry:ui",
+      "title": "IDEA Window Demo",
+      "description": "Demo showing IDEA window layout with real project tree, code editor, and operation log",
+      "dependencies": [
+        "ace-builds"
+      ],
+      "registryDependencies": [
+        "@jetbrains-ui/idea-window",
+        "@jetbrains-ui/dynamic-tree",
+        "@jetbrains-ui/code-editor"
+      ],
+      "files": [
+        {
+          "path": "registry/demo/components/idea-window/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/demo/idea-window.tsx"
+        },
+        {
+          "path": "registry/demo/components/idea-window/project-data.ts",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/demo/idea-window-project-data.ts"
+        }
+      ],
+      "meta": {
+        "demoProps": {
+          "IdeaWindowDemo": {
+            "autoSaveId": {
+              "value": "idea-window-demo"
+            },
+            "collapsible": {
+              "value": true
+            }
+          }
+        }
+      }
     },
     {
       "name": "demo-input",
@@ -1435,6 +1682,22 @@
           }
         }
       }
+    },
+    {
+      "name": "tabs-dynamic-tabs-demo",
+      "type": "registry:example",
+      "title": "Dynamic Tabs Demo",
+      "description": "Demo showing DynamicTabsList with close, pin, and context menu.",
+      "registryDependencies": [
+        "@jetbrains-ui/dynamic-tabs"
+      ],
+      "files": [
+        {
+          "path": "registry/demo/components/tabs/dynamic-tabs/index.tsx",
+          "type": "registry:example",
+          "target": "components/jetbrains-ui/tabs-dynamic-tabs-demo.tsx"
+        }
+      ]
     },
     {
       "name": "demo-toggle",

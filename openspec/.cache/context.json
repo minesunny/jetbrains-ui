@@ -1,0 +1,115 @@
+{
+  "stack": {
+    "languages": [
+      {
+        "name": "JSON",
+        "fileCount": 1250,
+        "lineCount": 186084,
+        "percentage": 83
+      },
+      {
+        "name": "TypeScript",
+        "fileCount": 77,
+        "lineCount": 11402,
+        "percentage": 5
+      },
+      {
+        "name": "HTML",
+        "fileCount": 41,
+        "lineCount": 10835,
+        "percentage": 5
+      },
+      {
+        "name": "YAML",
+        "fileCount": 4,
+        "lineCount": 12103,
+        "percentage": 5
+      },
+      {
+        "name": "Markdown",
+        "fileCount": 22,
+        "lineCount": 1918,
+        "percentage": 1
+      },
+      {
+        "name": "CSS",
+        "fileCount": 6,
+        "lineCount": 759,
+        "percentage": 0
+      },
+      {
+        "name": "JavaScript",
+        "fileCount": 12,
+        "lineCount": 861,
+        "percentage": 0
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "npm",
+    "buildTools": []
+  },
+  "structure": {
+    "rootFiles": [
+      "CLAUDE.md",
+      "CODE_OF_CONDUCT.md",
+      "CONTRIBUTING.md",
+      "LICENSE.md",
+      "README.md",
+      "commitlint.config.mjs",
+      "package.json",
+      "pnpm-lock.yaml",
+      "pnpm-workspace.yaml",
+      "tsconfig.json",
+      "turbo.json"
+    ],
+    "mainDirectories": [
+      {
+        "name": "apps",
+        "purpose": "项目目录",
+        "fileCount": 2267,
+        "path": "apps"
+      },
+      {
+        "name": "packages",
+        "purpose": "项目目录",
+        "fileCount": 70,
+        "path": "packages"
+      },
+      {
+        "name": "openspec",
+        "purpose": "项目目录",
+        "fileCount": 17,
+        "path": "openspec"
+      }
+    ],
+    "entryPoints": []
+  },
+  "patterns": {
+    "architecture": "monorepo",
+    "codeStyle": [
+      "Prettier",
+      "TypeScript"
+    ],
+    "conventions": [
+      "GitHub workflows",
+      "OpenSpec",
+      "Husky git hooks"
+    ]
+  },
+  "stats": {
+    "totalFiles": 1459,
+    "totalLines": 223962,
+    "byLanguage": {
+      "JSON": 186084,
+      "TypeScript": 11402,
+      "HTML": 10835,
+      "YAML": 12103,
+      "Markdown": 1918,
+      "CSS": 759,
+      "JavaScript": 861
+    }
+  },
+  "analyzedAt": "2026-05-17T03:13:05.061Z",
+  "projectRoot": "/Users/maien/minesunny/jetbrains-ui",
+  "projectName": "jetbrains-ui"
+}

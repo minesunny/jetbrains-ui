@@ -1,0 +1,119 @@
+---
+title: IDEA Window
+description: IntelliJ IDEA 风格的窗口布局组件，支持可调整、可折叠的面板。
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-05-17
+---
+
+<ComponentPreview name="demo-idea-window" />
+
+## 概述
+
+复现 IntelliJ IDEA 窗口布局的组合组件，包含固定工具栏、可调整面板、可折叠的侧边栏和底部面板，以及布局持久化。
+
+## 安装
+
+<ComponentInstallation name="idea-window" />
+
+## 用法
+
+```tsx
+import {
+  IdeaWindow,
+  IdeaTopBar,
+  IdeaBottomBar,
+  IdeaLeftBar,
+  IdeaRightBar,
+  IdeaPanel,
+  IdeaBottomPanel,
+} from '@/components/jetbrains-ui/idea-window';
+
+<IdeaWindow autoSaveId="my-layout">
+  <IdeaTopBar>
+    <span>菜单</span>
+  </IdeaTopBar>
+
+  <IdeaLeftBar>
+    <ToolIcons />
+  </IdeaLeftBar>
+
+  <IdeaPanel id="left" defaultSize={20} collapsible>
+    <ProjectTree />
+  </IdeaPanel>
+  <IdeaPanel id="center" defaultSize={60}>
+    <EditorArea />
+  </IdeaPanel>
+  <IdeaPanel id="right" defaultSize={20} collapsible>
+    <DebugPanel />
+  </IdeaPanel>
+
+  <IdeaRightBar>
+    <ToolIcons />
+  </IdeaRightBar>
+
+  <IdeaBottomPanel id="bottom" defaultSize={25} collapsible>
+    <Terminal />
+  </IdeaBottomPanel>
+
+  <IdeaBottomBar>
+    <StatusBar />
+  </IdeaBottomBar>
+</IdeaWindow>;
+```
+
+## 组件
+
+### IdeaWindow
+
+根容器。将子组件分发到正确的布局位置。
+
+| 属性         | 类型     | 默认值 | 说明                    |
+| ------------ | -------- | ------ | ----------------------- |
+| `autoSaveId` | `string` | —      | localStorage 持久化键名 |
+| `className`  | `string` | —      | 根容器样式类            |
+
+### IdeaPanel / IdeaBottomPanel
+
+可调整面板。`IdeaPanel` 为水平方向（左/中/右），`IdeaBottomPanel` 全宽垂直方向。
+
+| 属性                | 类型                           | 默认值  | 说明                  |
+| ------------------- | ------------------------------ | ------- | --------------------- |
+| `id`                | `string`                       | 必填    | 面板唯一标识          |
+| `defaultSize`       | `number`                       | —       | 初始百分比            |
+| `minSize`           | `number`                       | `5`     | 最小百分比            |
+| `maxSize`           | `number`                       | —       | 最大百分比            |
+| `collapsible`       | `boolean`                      | `false` | 启用折叠/展开         |
+| `defaultCollapsed`  | `boolean`                      | `false` | 初始折叠              |
+| `onCollapsedChange` | `(collapsed: boolean) => void` | —       | 折叠状态回调          |
+| `ref`               | `PanelImperativeHandle`        | —       | 用于编程控制折叠/展开 |
+
+### IdeaTopBar / IdeaBottomBar / IdeaLeftBar / IdeaRightBar
+
+固定位置的工具栏插槽。接受所有标准 `div` 属性和 `children`。
+
+## 折叠/展开
+
+在任意子组件中使用 `useIdeaWindow()` 通过面板 ID 控制面板：
+
+```tsx
+import { useIdeaWindow } from '@/components/jetbrains-ui/idea-window';
+
+function ToolbarButton() {
+  const { toggle, collapse, expand, isCollapsed } = useIdeaWindow();
+
+  return (
+    <button onClick={() => toggle('left')}>
+      {isCollapsed('left') ? '显示' : '隐藏'} 项目
+    </button>
+  );
+}
+```
+
+| 方法          | 签名                           | 说明           |
+| ------------- | ------------------------------ | -------------- |
+| `collapse`    | `(panelId: string) => void`    | 折叠面板       |
+| `expand`      | `(panelId: string) => void`    | 展开面板       |
+| `toggle`      | `(panelId: string) => void`    | 切换折叠/展开  |
+| `isCollapsed` | `(panelId: string) => boolean` | 判断是否已折叠 |

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "code-editor",
+  "type": "registry:ui",
+  "title": "Code Editor",
+  "description": "A compound code editor component built on Ace Editor with JetBrains-themed syntax highlighting, tab bar with modified indicators, and status bar.",
+  "dependencies": ["ace-builds"],
+  "registryDependencies": ["dynamic-tabs", "scroll-area", "separator"],
+  "files": [
+    {
+      "path": "registry/components/code-editor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/code-editor/index.tsx"
+    },
+    {
+      "path": "registry/components/code-editor/use-ace-editor.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/code-editor/use-ace-editor.ts"
+    },
+    {
+      "path": "registry/components/code-editor/theme.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/code-editor/theme.ts"
+    },
+    {
+      "path": "registry/components/code-editor/ace-jetbrains.css",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/code-editor/ace-jetbrains.css"
+    }
+  ],
+  "meta": {
+    "keywords": ["editor", "code", "ace", "ide", "syntax-highlighting"],
+    "category": "editor",
+    "docs": {
+      "description": "A compound code editor component with Ace Editor backend, JetBrains-themed syntax highlighting, multi-tab support via dynamic-tabs, and a status bar showing cursor position, encoding, and language mode.",
+      "features": [
+        "Ace Editor backend with 120+ language support",
+        "Custom JetBrains theme using design tokens (--jb-* CSS variables)",
+        "Light and dark mode support via CSS variables",
+        "Tab bar with modified (dirty) state indicators",
+        "Status bar with cursor position, encoding, language mode",
+        "Compound component pattern for flexible composition"
+      ]
+    }
+  }
+}

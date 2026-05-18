@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "code-editor-demo",
+  "type": "registry:example",
+  "title": "Code Editor Demo",
+  "description": "Demo for the CodeEditor compound component.",
+  "registryDependencies": ["code-editor"],
+  "files": [
+    {
+      "path": "registry/demo/components/code-editor/index.tsx",
+      "type": "registry:example",
+      "target": "components/jetbrains-ui/demo/code-editor/index.tsx"
+    }
+  ]
+}
