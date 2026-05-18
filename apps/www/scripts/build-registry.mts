@@ -107,7 +107,20 @@ function normalizeRegistryItem(item: any) {
   return normalizedItem;
 }
 
+async function ensureRegistryJson() {
+  try {
+    await fs.access(REGISTRY_JSON_PATH);
+  } catch {
+    await fs.mkdir(path.dirname(REGISTRY_JSON_PATH), { recursive: true });
+    await fs.writeFile(
+      REGISTRY_JSON_PATH,
+      JSON.stringify({ name: 'jetbrains-ui', items: [] }, null, 2),
+    );
+  }
+}
+
 async function buildRegistryFile() {
+<<<<<<< HEAD
   await fs.mkdir(path.dirname(REGISTRY_JSON_PATH), { recursive: true });
   let registryJsonContent: string;
   try {
@@ -115,6 +128,10 @@ async function buildRegistryFile() {
   } catch {
     registryJsonContent = '{ "items": [] }';
   }
+=======
+  await ensureRegistryJson();
+  const registryJsonContent = await fs.readFile(REGISTRY_JSON_PATH, 'utf-8');
+>>>>>>> cb03b549 (fix: auto-create registry.json when missing in build script)
   const registryData = JSON.parse(registryJsonContent);
   const registryFolderPath = path.join(process.cwd(), 'registry');
   const newItems = (await getRegistryItemsFromFolder(registryFolderPath)).map(
@@ -308,10 +325,7 @@ async function buildRegistry() {
     }),
   );
 
-  const registryContent = await fs.readFile(
-    path.join(process.cwd(), 'public/r/registry.json'),
-    'utf-8',
-  );
+  const registryContent = await fs.readFile(REGISTRY_JSON_PATH, 'utf-8');
   const registry = JSON.parse(registryContent);
 
   await Promise.all(
