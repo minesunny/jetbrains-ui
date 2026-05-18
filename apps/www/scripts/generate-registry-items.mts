@@ -90,10 +90,27 @@ async function generateRegistryItems() {
 
   for (const sourceCategory of categories) {
     const registryCategory = CATEGORY_MAP[sourceCategory];
-    const categoryPath = path.join(ICONS_ROOT, sourceCategory);
 
-    if (!(await fs.stat(categoryPath).catch(() => null))) {
-      console.warn(`Category not found: ${categoryPath}`);
+    // Resolve actual directory name (case-sensitive filesystems like Vercel/Linux)
+    // Git may store dirs as lowercase (e.g. 'vcs', 'general') while CATEGORY_MAP
+    // keys are PascalCase (e.g. 'VCS', 'General'). Use fs.readdir to find the
+    // actual on-disk name with correct casing.
+    let categoryPath: string | null = null;
+    let actualCategoryName: string | null = null;
+    const parentEntries = await fs.readdir(ICONS_ROOT, { withFileTypes: true });
+    for (const candidate of [sourceCategory, registryCategory]) {
+      const match = parentEntries.find(
+        (e) => e.isDirectory() && e.name === candidate,
+      );
+      if (match) {
+        categoryPath = path.join(ICONS_ROOT, match.name);
+        actualCategoryName = match.name;
+        break;
+      }
+    }
+
+    if (!categoryPath || !actualCategoryName) {
+      console.warn(`Category not found: ${sourceCategory} or ${registryCategory}`);
       continue;
     }
 
@@ -129,7 +146,7 @@ async function generateRegistryItems() {
         files: iconFiles
           .filter((f) => f.endsWith('.svg'))
           .map((f) => ({
-            path: `registry/icons/${sourceCategory}/${icon.sourceDir}/${f}`,
+            path: `registry/icons/${actualCategoryName}/${icon.sourceDir}/${f}`,
             type: 'registry:source',
           })),
         meta: {
@@ -153,7 +170,7 @@ async function generateRegistryItems() {
       description: `All icons from the ${registryCategory} category.`,
       registryDependencies: [],
       files: icons.map((icon) => ({
-        path: `registry/icons/${sourceCategory}/${icon.sourceDir}/registry-item.json`,
+        path: `registry/icons/${actualCategoryName}/${icon.sourceDir}/registry-item.json`,
         type: 'registry:item',
       })),
     };

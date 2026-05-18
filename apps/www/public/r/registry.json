@@ -23981,50 +23981,6 @@
           "type": "registry:item"
         },
         {
-          "path": "registry/icons/General/DevKit/addSDK/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/DevKit/descriptionFile/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/DevKit/diff/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/DevKit/plugin/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/DevKit/pluginV2/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/DevKit/properties/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/DevKit/sdkClosed/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheLeft/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheLeftGrayed/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheRight/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheRightGrayed/registry-item.json",
-          "type": "registry:item"
-        },
-        {
           "path": "registry/icons/General/Editor/addColumnLeft/registry-item.json",
           "type": "registry:item"
         },
@@ -24501,78 +24457,6 @@
           "type": "registry:item"
         },
         {
-          "path": "registry/icons/General/Inline/inline/browse/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/collapse/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/copy/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/exactWords/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/expand/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/filterHistory/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/inlineAdd/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/inlineEdit/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/inlineSettings/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/matchCase/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/newLine/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/preserveCase/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/refresh/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/regex/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/searchHistory/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/sortHistory/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/variables/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Inline/statisticsPanel/registry-item.json",
-          "type": "registry:item"
-        },
-        {
           "path": "registry/icons/General/Modifiers/finalMark/registry-item.json",
           "type": "registry:item"
         },
@@ -24697,22 +24581,6 @@
           "type": "registry:item"
         },
         {
-          "path": "registry/icons/General/Raiting/feedbackRating/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Raiting/feedbackRatingFocused/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Raiting/feedbackRatingFocusedOn/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Raiting/feedbackRatingOn/registry-item.json",
-          "type": "registry:item"
-        },
-        {
           "path": "registry/icons/General/Setting_Sync/Conflict/registry-item.json",
           "type": "registry:item"
         },
@@ -24734,58 +24602,6 @@
         },
         {
           "path": "registry/icons/General/Spinner/loader/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/error/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/errorDialog/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/errorOutline/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/info/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/infoOutline/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/informationDialog/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/questionDialog/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/success/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/successDialog/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/warning/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/warningDialog/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/status/warningOutline/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Status/successLogin/registry-item.json",
           "type": "registry:item"
         },
         {
@@ -25293,70 +25109,6 @@
           "type": "registry:item"
         },
         {
-          "path": "registry/icons/General/Windows/windows/close/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/closeHover/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/closeInactive/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/closeSmall/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/collapse/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/help/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/helpInactive/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/maximize/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/maximizeInactive/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/maximizeSmall/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/minimize/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/minimizeInactive/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/minimizeSmall/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/restore/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/restoreInactive/registry-item.json",
-          "type": "registry:item"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/restoreSmall/registry-item.json",
-          "type": "registry:item"
-        },
-        {
           "path": "registry/icons/General/actions/GroupByModule/registry-item.json",
           "type": "registry:item"
         },
@@ -25518,6 +25270,254 @@
         },
         {
           "path": "registry/icons/General/actions/writeReview/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/devkit/addSDK/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/devkit/descriptionFile/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/devkit/diff/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/devkit/plugin/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/devkit/pluginV2/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/devkit/properties/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/devkit/sdkClosed/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/duplicates/sendToTheLeft/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/duplicates/sendToTheLeftGrayed/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/duplicates/sendToTheRight/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/duplicates/sendToTheRightGrayed/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/browse/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/collapse/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/copy/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/exactWords/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/expand/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/filterHistory/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/inlineAdd/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/inlineEdit/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/inlineSettings/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/matchCase/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/newLine/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/preserveCase/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/refresh/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/regex/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/searchHistory/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/sortHistory/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/variables/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/inline/statisticsPanel/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/raiting/feedbackRating/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/raiting/feedbackRatingFocused/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/raiting/feedbackRatingFocusedOn/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/raiting/feedbackRatingOn/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/error/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/errorDialog/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/errorOutline/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/info/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/infoOutline/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/informationDialog/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/questionDialog/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/success/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/successDialog/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/warning/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/warningDialog/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/status/warningOutline/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/status/successLogin/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/close/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/closeHover/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/closeInactive/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/closeSmall/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/collapse/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/help/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/helpInactive/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/maximize/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/maximizeInactive/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/maximizeSmall/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/minimize/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/minimizeInactive/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/minimizeSmall/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/restore/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/restoreInactive/registry-item.json",
+          "type": "registry:item"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/restoreSmall/registry-item.json",
           "type": "registry:item"
         }
       ]
@@ -26175,484 +26175,6 @@
           "general",
           "jetbrains"
         ]
-      }
-    },
-    {
-      "name": "icons-general-devkit-add-sdk",
-      "type": "registry:ui",
-      "title": "Add Sdk",
-      "description": "Add Sdk icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/devkit/add-sdk/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/devkit/add-sdk/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "add-sdk",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-DevKit/addSDK",
-      "type": "registry:ui",
-      "title": "DevKit/addSDK",
-      "description": "DevKit/addSDK icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/DevKit/addSDK/addSDK_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/DevKit/addSDK/addSDK_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "DevKit/addSDK",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-devkit-description-file",
-      "type": "registry:ui",
-      "title": "Description File",
-      "description": "Description File icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/devkit/description-file/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/devkit/description-file/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "description-file",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-DevKit/descriptionFile",
-      "type": "registry:ui",
-      "title": "DevKit/descriptionFile",
-      "description": "DevKit/descriptionFile icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/DevKit/descriptionFile/descriptionFile_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/DevKit/descriptionFile/descriptionFile_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "DevKit/descriptionFile",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-DevKit/diff",
-      "type": "registry:ui",
-      "title": "DevKit/diff",
-      "description": "DevKit/diff icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/DevKit/diff/diff_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/DevKit/diff/diff_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "DevKit/diff",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-DevKit/plugin",
-      "type": "registry:ui",
-      "title": "DevKit/plugin",
-      "description": "DevKit/plugin icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/DevKit/plugin/plugin_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/DevKit/plugin/plugin_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "DevKit/plugin",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-devkit-plugin-v2",
-      "type": "registry:ui",
-      "title": "Plugin V2",
-      "description": "Plugin V2 icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/devkit/plugin-v2/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/devkit/plugin-v2/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "plugin-v2",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-DevKit/pluginV2",
-      "type": "registry:ui",
-      "title": "DevKit/pluginV2",
-      "description": "DevKit/pluginV2 icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/DevKit/pluginV2/pluginV2_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/DevKit/pluginV2/pluginV2_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "DevKit/pluginV2",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-DevKit/properties",
-      "type": "registry:ui",
-      "title": "DevKit/properties",
-      "description": "DevKit/properties icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/DevKit/properties/properties_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/DevKit/properties/properties_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "DevKit/properties",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-devkit-sdk-closed",
-      "type": "registry:ui",
-      "title": "Sdk Closed",
-      "description": "Sdk Closed icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/devkit/sdk-closed/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/devkit/sdk-closed/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "sdk-closed",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-DevKit/sdkClosed",
-      "type": "registry:ui",
-      "title": "DevKit/sdkClosed",
-      "description": "DevKit/sdkClosed icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/DevKit/sdkClosed/sdkClosed_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/DevKit/sdkClosed/sdkClosed_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "DevKit/sdkClosed",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-duplicates-send-to-the-left",
-      "type": "registry:ui",
-      "title": "Send To The Left",
-      "description": "Send To The Left icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/duplicates/send-to-the-left/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "send-to-the-left",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-duplicates-send-to-the-left-grayed",
-      "type": "registry:ui",
-      "title": "Send To The Left Grayed",
-      "description": "Send To The Left Grayed icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/duplicates/send-to-the-left-grayed/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left-grayed/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "send-to-the-left-grayed",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-duplicates-send-to-the-right",
-      "type": "registry:ui",
-      "title": "Send To The Right",
-      "description": "Send To The Right icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/duplicates/send-to-the-right/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-right/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "send-to-the-right",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-duplicates-send-to-the-right-grayed",
-      "type": "registry:ui",
-      "title": "Send To The Right Grayed",
-      "description": "Send To The Right Grayed icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/duplicates/send-to-the-right-grayed/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-right-grayed/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "send-to-the-right-grayed",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-Duplicates/sendToTheLeft",
-      "type": "registry:ui",
-      "title": "Duplicates/sendToTheLeft",
-      "description": "Duplicates/sendToTheLeft icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheLeft/sendToTheLeft_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheLeft/sendToTheLeft_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Duplicates/sendToTheLeft",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Duplicates/sendToTheLeftGrayed",
-      "type": "registry:ui",
-      "title": "Duplicates/sendToTheLeftGrayed",
-      "description": "Duplicates/sendToTheLeftGrayed icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheLeftGrayed/sendToTheLeftGrayed_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheLeftGrayed/sendToTheLeftGrayed_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Duplicates/sendToTheLeftGrayed",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Duplicates/sendToTheRight",
-      "type": "registry:ui",
-      "title": "Duplicates/sendToTheRight",
-      "description": "Duplicates/sendToTheRight icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheRight/sendToTheRight_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheRight/sendToTheRight_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Duplicates/sendToTheRight",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Duplicates/sendToTheRightGrayed",
-      "type": "registry:ui",
-      "title": "Duplicates/sendToTheRightGrayed",
-      "description": "Duplicates/sendToTheRightGrayed icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheRightGrayed/sendToTheRightGrayed_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Duplicates/sendToTheRightGrayed/sendToTheRightGrayed_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Duplicates/sendToTheRightGrayed",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
       }
     },
     {
@@ -31450,906 +30972,6 @@
       }
     },
     {
-      "name": "icons-general-inline-browse",
-      "type": "registry:ui",
-      "title": "Browse",
-      "description": "Browse icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/browse/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/browse/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "browse",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-collapse",
-      "type": "registry:ui",
-      "title": "Collapse",
-      "description": "Collapse icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/collapse/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/collapse/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "collapse",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-copy",
-      "type": "registry:ui",
-      "title": "Copy",
-      "description": "Copy icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/copy/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/copy/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "copy",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-exact-words",
-      "type": "registry:ui",
-      "title": "Exact Words",
-      "description": "Exact Words icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/exact-words/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/exact-words/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "exact-words",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-expand",
-      "type": "registry:ui",
-      "title": "Expand",
-      "description": "Expand icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/expand/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/expand/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "expand",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-filter-history",
-      "type": "registry:ui",
-      "title": "Filter History",
-      "description": "Filter History icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/filter-history/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/filter-history/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "filter-history",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/browse",
-      "type": "registry:ui",
-      "title": "Inline/inline/browse",
-      "description": "Inline/inline/browse icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/browse/browse_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/browse/browse_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/browse",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/collapse",
-      "type": "registry:ui",
-      "title": "Inline/inline/collapse",
-      "description": "Inline/inline/collapse icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/collapse/collapse_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/collapse/collapse_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/collapse",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/copy",
-      "type": "registry:ui",
-      "title": "Inline/inline/copy",
-      "description": "Inline/inline/copy icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/copy/copy_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/copy/copy_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/copy",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/exactWords",
-      "type": "registry:ui",
-      "title": "Inline/inline/exactWords",
-      "description": "Inline/inline/exactWords icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/exactWords/exactWords_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/exactWords/exactWords_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/exactWords",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/expand",
-      "type": "registry:ui",
-      "title": "Inline/inline/expand",
-      "description": "Inline/inline/expand icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/expand/expand_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/expand/expand_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/expand",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/filterHistory",
-      "type": "registry:ui",
-      "title": "Inline/inline/filterHistory",
-      "description": "Inline/inline/filterHistory icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/filterHistory/filterHistory_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/filterHistory/filterHistory_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/filterHistory",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/inlineAdd",
-      "type": "registry:ui",
-      "title": "Inline/inline/inlineAdd",
-      "description": "Inline/inline/inlineAdd icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/inlineAdd/inlineAdd_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/inlineAdd/inlineAdd_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/inlineAdd",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/inlineEdit",
-      "type": "registry:ui",
-      "title": "Inline/inline/inlineEdit",
-      "description": "Inline/inline/inlineEdit icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/inlineEdit/inlineEdit_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/inlineEdit/inlineEdit_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/inlineEdit",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/inlineSettings",
-      "type": "registry:ui",
-      "title": "Inline/inline/inlineSettings",
-      "description": "Inline/inline/inlineSettings icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/inlineSettings/inlineSettings_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/inlineSettings/inlineSettings_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/inlineSettings",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/matchCase",
-      "type": "registry:ui",
-      "title": "Inline/inline/matchCase",
-      "description": "Inline/inline/matchCase icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/matchCase/matchCase_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/matchCase/matchCase_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/matchCase",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/newLine",
-      "type": "registry:ui",
-      "title": "Inline/inline/newLine",
-      "description": "Inline/inline/newLine icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/newLine/newLine_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/newLine/newLine_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/newLine",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/preserveCase",
-      "type": "registry:ui",
-      "title": "Inline/inline/preserveCase",
-      "description": "Inline/inline/preserveCase icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/preserveCase/preserveCase_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/preserveCase/preserveCase_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/preserveCase",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/refresh",
-      "type": "registry:ui",
-      "title": "Inline/inline/refresh",
-      "description": "Inline/inline/refresh icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/refresh/refresh_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/refresh/refresh_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/refresh",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/regex",
-      "type": "registry:ui",
-      "title": "Inline/inline/regex",
-      "description": "Inline/inline/regex icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/regex/regex_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/regex/regex_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/regex",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/searchHistory",
-      "type": "registry:ui",
-      "title": "Inline/inline/searchHistory",
-      "description": "Inline/inline/searchHistory icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/searchHistory/searchHistory_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/searchHistory/searchHistory_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/searchHistory",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/sortHistory",
-      "type": "registry:ui",
-      "title": "Inline/inline/sortHistory",
-      "description": "Inline/inline/sortHistory icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/sortHistory/sortHistory_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/sortHistory/sortHistory_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/sortHistory",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Inline/inline/variables",
-      "type": "registry:ui",
-      "title": "Inline/inline/variables",
-      "description": "Inline/inline/variables icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/inline/variables/variables_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/inline/variables/variables_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/inline/variables",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-inline-inline-add",
-      "type": "registry:ui",
-      "title": "Inline Add",
-      "description": "Inline Add icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/inline-add/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/inline-add/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "inline-add",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-inline-edit",
-      "type": "registry:ui",
-      "title": "Inline Edit",
-      "description": "Inline Edit icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/inline-edit/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/inline-edit/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "inline-edit",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-inline-settings",
-      "type": "registry:ui",
-      "title": "Inline Settings",
-      "description": "Inline Settings icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/inline-settings/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/inline-settings/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "inline-settings",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-match-case",
-      "type": "registry:ui",
-      "title": "Match Case",
-      "description": "Match Case icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/match-case/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/match-case/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "match-case",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-new-line",
-      "type": "registry:ui",
-      "title": "New Line",
-      "description": "New Line icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/new-line/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/new-line/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "new-line",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-preserve-case",
-      "type": "registry:ui",
-      "title": "Preserve Case",
-      "description": "Preserve Case icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/preserve-case/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/preserve-case/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "preserve-case",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-refresh",
-      "type": "registry:ui",
-      "title": "Refresh",
-      "description": "Refresh icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/refresh/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/refresh/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "refresh",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-regex",
-      "type": "registry:ui",
-      "title": "Regex",
-      "description": "Regex icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/regex/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/regex/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "regex",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-search-history",
-      "type": "registry:ui",
-      "title": "Search History",
-      "description": "Search History icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/search-history/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/search-history/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "search-history",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-sort-history",
-      "type": "registry:ui",
-      "title": "Sort History",
-      "description": "Sort History icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/sort-history/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/sort-history/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "sort-history",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-inline-statistics-panel",
-      "type": "registry:ui",
-      "title": "Statistics Panel",
-      "description": "Statistics Panel icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/statistics-panel/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/statistics-panel/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "statistics-panel",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-Inline/statisticsPanel",
-      "type": "registry:ui",
-      "title": "Inline/statisticsPanel",
-      "description": "Inline/statisticsPanel icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Inline/statisticsPanel/statisticsPanel_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Inline/statisticsPanel/statisticsPanel_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Inline/statisticsPanel",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-inline-variables",
-      "type": "registry:ui",
-      "title": "Variables",
-      "description": "Variables icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/inline/variables/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/inline/variables/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "variables",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
       "name": "icons-general-modifiers-final-mark",
       "type": "registry:ui",
       "title": "Final Mark",
@@ -33300,206 +31922,6 @@
       }
     },
     {
-      "name": "icons-general-raiting-feedback-rating",
-      "type": "registry:ui",
-      "title": "Feedback Rating",
-      "description": "Feedback Rating icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/raiting/feedback-rating/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "feedback-rating",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-raiting-feedback-rating-focused",
-      "type": "registry:ui",
-      "title": "Feedback Rating Focused",
-      "description": "Feedback Rating Focused icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/raiting/feedback-rating-focused/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating-focused/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "feedback-rating-focused",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-raiting-feedback-rating-focused-on",
-      "type": "registry:ui",
-      "title": "Feedback Rating Focused On",
-      "description": "Feedback Rating Focused On icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/raiting/feedback-rating-focused-on/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating-focused-on/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "feedback-rating-focused-on",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-raiting-feedback-rating-on",
-      "type": "registry:ui",
-      "title": "Feedback Rating On",
-      "description": "Feedback Rating On icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/raiting/feedback-rating-on/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating-on/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "feedback-rating-on",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-Raiting/feedbackRating",
-      "type": "registry:ui",
-      "title": "Raiting/feedbackRating",
-      "description": "Raiting/feedbackRating icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Raiting/feedbackRating/feedbackRating_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Raiting/feedbackRating/feedbackRating_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Raiting/feedbackRating",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Raiting/feedbackRatingFocused",
-      "type": "registry:ui",
-      "title": "Raiting/feedbackRatingFocused",
-      "description": "Raiting/feedbackRatingFocused icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Raiting/feedbackRatingFocused/feedbackRatingFocused_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Raiting/feedbackRatingFocused/feedbackRatingFocused_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Raiting/feedbackRatingFocused",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Raiting/feedbackRatingFocusedOn",
-      "type": "registry:ui",
-      "title": "Raiting/feedbackRatingFocusedOn",
-      "description": "Raiting/feedbackRatingFocusedOn icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Raiting/feedbackRatingFocusedOn/feedbackRatingFocusedOn_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Raiting/feedbackRatingFocusedOn/feedbackRatingFocusedOn_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Raiting/feedbackRatingFocusedOn",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Raiting/feedbackRatingOn",
-      "type": "registry:ui",
-      "title": "Raiting/feedbackRatingOn",
-      "description": "Raiting/feedbackRatingOn icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Raiting/feedbackRatingOn/feedbackRatingOn_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Raiting/feedbackRatingOn/feedbackRatingOn_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Raiting/feedbackRatingOn",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
       "name": "icons-general-Setting_Sync/Conflict",
       "type": "registry:ui",
       "title": "Setting_Sync/Conflict",
@@ -33653,656 +32075,6 @@
         ],
         "hasLight": true,
         "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-status-error",
-      "type": "registry:ui",
-      "title": "Error",
-      "description": "Error icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/error/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/error/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "error",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-status-error-dialog",
-      "type": "registry:ui",
-      "title": "Error Dialog",
-      "description": "Error Dialog icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/error-dialog/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/error-dialog/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "error-dialog",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-status-error-outline",
-      "type": "registry:ui",
-      "title": "Error Outline",
-      "description": "Error Outline icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/error-outline/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/error-outline/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "error-outline",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-status-info",
-      "type": "registry:ui",
-      "title": "Info",
-      "description": "Info icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/info/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/info/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "info",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-status-info-outline",
-      "type": "registry:ui",
-      "title": "Info Outline",
-      "description": "Info Outline icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/info-outline/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/info-outline/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "info-outline",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-status-information-dialog",
-      "type": "registry:ui",
-      "title": "Information Dialog",
-      "description": "Information Dialog icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/information-dialog/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/information-dialog/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "information-dialog",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-status-question-dialog",
-      "type": "registry:ui",
-      "title": "Question Dialog",
-      "description": "Question Dialog icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/question-dialog/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/question-dialog/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "question-dialog",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-Status/status/error",
-      "type": "registry:ui",
-      "title": "Status/status/error",
-      "description": "Status/status/error icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/error/error_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/error/error_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/error",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/errorDialog",
-      "type": "registry:ui",
-      "title": "Status/status/errorDialog",
-      "description": "Status/status/errorDialog icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/errorDialog/errorDialog_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/errorDialog/errorDialog_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/errorDialog",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/errorOutline",
-      "type": "registry:ui",
-      "title": "Status/status/errorOutline",
-      "description": "Status/status/errorOutline icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/errorOutline/errorOutline_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/errorOutline/errorOutline_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/errorOutline",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/info",
-      "type": "registry:ui",
-      "title": "Status/status/info",
-      "description": "Status/status/info icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/info/info_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/info/info_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/info",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/infoOutline",
-      "type": "registry:ui",
-      "title": "Status/status/infoOutline",
-      "description": "Status/status/infoOutline icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/infoOutline/infoOutline_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/infoOutline/infoOutline_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/infoOutline",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/informationDialog",
-      "type": "registry:ui",
-      "title": "Status/status/informationDialog",
-      "description": "Status/status/informationDialog icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/informationDialog/informationDialog_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/informationDialog/informationDialog_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/informationDialog",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/questionDialog",
-      "type": "registry:ui",
-      "title": "Status/status/questionDialog",
-      "description": "Status/status/questionDialog icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/questionDialog/questionDialog_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/questionDialog/questionDialog_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/questionDialog",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/success",
-      "type": "registry:ui",
-      "title": "Status/status/success",
-      "description": "Status/status/success icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/success/success_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/success/success_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/success",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/successDialog",
-      "type": "registry:ui",
-      "title": "Status/status/successDialog",
-      "description": "Status/status/successDialog icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/successDialog/successDialog_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/successDialog/successDialog_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/successDialog",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/warning",
-      "type": "registry:ui",
-      "title": "Status/status/warning",
-      "description": "Status/status/warning icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/warning/warning_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/warning/warning_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/warning",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/warningDialog",
-      "type": "registry:ui",
-      "title": "Status/status/warningDialog",
-      "description": "Status/status/warningDialog icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/warningDialog/warningDialog_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/warningDialog/warningDialog_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/warningDialog",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Status/status/warningOutline",
-      "type": "registry:ui",
-      "title": "Status/status/warningOutline",
-      "description": "Status/status/warningOutline icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/status/warningOutline/warningOutline_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/status/warningOutline/warningOutline_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/status/warningOutline",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-status-success",
-      "type": "registry:ui",
-      "title": "Success",
-      "description": "Success icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/success/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/success/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "success",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-status-success-dialog",
-      "type": "registry:ui",
-      "title": "Success Dialog",
-      "description": "Success Dialog icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/success-dialog/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/success-dialog/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "success-dialog",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-status-success-login",
-      "type": "registry:ui",
-      "title": "Success Login",
-      "description": "Success Login icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/success-login/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/success-login/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "success-login",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-Status/successLogin",
-      "type": "registry:ui",
-      "title": "Status/successLogin",
-      "description": "Status/successLogin icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Status/successLogin/successLogin_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Status/successLogin/successLogin_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Status/successLogin",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-status-warning",
-      "type": "registry:ui",
-      "title": "Warning",
-      "description": "Warning icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/warning/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/warning/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "warning",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-status-warning-dialog",
-      "type": "registry:ui",
-      "title": "Warning Dialog",
-      "description": "Warning Dialog icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/warning-dialog/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/warning-dialog/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "warning-dialog",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-status-warning-outline",
-      "type": "registry:ui",
-      "title": "Warning Outline",
-      "description": "Warning Outline icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/status/warning-outline/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/status/warning-outline/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "warning-outline",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
       }
     },
     {
@@ -37654,806 +35426,6 @@
       }
     },
     {
-      "name": "icons-general-windows-close",
-      "type": "registry:ui",
-      "title": "Close",
-      "description": "Close icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/close/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/close/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "close",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-close-hover",
-      "type": "registry:ui",
-      "title": "Close Hover",
-      "description": "Close Hover icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/close-hover/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/close-hover/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "close-hover",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-close-inactive",
-      "type": "registry:ui",
-      "title": "Close Inactive",
-      "description": "Close Inactive icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/close-inactive/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/close-inactive/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "close-inactive",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-close-small",
-      "type": "registry:ui",
-      "title": "Close Small",
-      "description": "Close Small icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/close-small/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/close-small/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "close-small",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-collapse",
-      "type": "registry:ui",
-      "title": "Collapse",
-      "description": "Collapse icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/collapse/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/collapse/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "collapse",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-help",
-      "type": "registry:ui",
-      "title": "Help",
-      "description": "Help icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/help/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/help/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "help",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-help-inactive",
-      "type": "registry:ui",
-      "title": "Help Inactive",
-      "description": "Help Inactive icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/help-inactive/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/help-inactive/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "help-inactive",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-maximize",
-      "type": "registry:ui",
-      "title": "Maximize",
-      "description": "Maximize icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/maximize/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/maximize/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "maximize",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-maximize-inactive",
-      "type": "registry:ui",
-      "title": "Maximize Inactive",
-      "description": "Maximize Inactive icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/maximize-inactive/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/maximize-inactive/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "maximize-inactive",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-maximize-small",
-      "type": "registry:ui",
-      "title": "Maximize Small",
-      "description": "Maximize Small icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/maximize-small/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/maximize-small/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "maximize-small",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-minimize",
-      "type": "registry:ui",
-      "title": "Minimize",
-      "description": "Minimize icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/minimize/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/minimize/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "minimize",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-minimize-inactive",
-      "type": "registry:ui",
-      "title": "Minimize Inactive",
-      "description": "Minimize Inactive icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/minimize-inactive/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/minimize-inactive/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "minimize-inactive",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-minimize-small",
-      "type": "registry:ui",
-      "title": "Minimize Small",
-      "description": "Minimize Small icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/minimize-small/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/minimize-small/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "minimize-small",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-restore",
-      "type": "registry:ui",
-      "title": "Restore",
-      "description": "Restore icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/restore/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/restore/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "restore",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-restore-inactive",
-      "type": "registry:ui",
-      "title": "Restore Inactive",
-      "description": "Restore Inactive icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/restore-inactive/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/restore-inactive/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "restore-inactive",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-windows-restore-small",
-      "type": "registry:ui",
-      "title": "Restore Small",
-      "description": "Restore Small icon from general category.",
-      "registryDependencies": [
-        "@jetbrains-ui/icons-general-types"
-      ],
-      "files": [
-        {
-          "path": "registry/icons/general/windows/restore-small/index.tsx",
-          "type": "registry:ui",
-          "target": "components/jetbrains-ui/icons/general/windows/restore-small/index.tsx"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "restore-small",
-          "icon",
-          "general",
-          "jetbrains"
-        ]
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/close",
-      "type": "registry:ui",
-      "title": "Windows/windows/close",
-      "description": "Windows/windows/close icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/close/close_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/close/close_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/close",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/closeHover",
-      "type": "registry:ui",
-      "title": "Windows/windows/closeHover",
-      "description": "Windows/windows/closeHover icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/closeHover/closeHover_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/closeHover/closeHover_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/closeHover",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/closeInactive",
-      "type": "registry:ui",
-      "title": "Windows/windows/closeInactive",
-      "description": "Windows/windows/closeInactive icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/closeInactive/closeInactive_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/closeInactive/closeInactive_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/closeInactive",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/closeSmall",
-      "type": "registry:ui",
-      "title": "Windows/windows/closeSmall",
-      "description": "Windows/windows/closeSmall icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/closeSmall/closeSmall_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/closeSmall/closeSmall_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/closeSmall",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/collapse",
-      "type": "registry:ui",
-      "title": "Windows/windows/collapse",
-      "description": "Windows/windows/collapse icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/collapse/collapse_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/collapse/collapse_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/collapse",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/help",
-      "type": "registry:ui",
-      "title": "Windows/windows/help",
-      "description": "Windows/windows/help icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/help/help_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/help/help_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/help",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/helpInactive",
-      "type": "registry:ui",
-      "title": "Windows/windows/helpInactive",
-      "description": "Windows/windows/helpInactive icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/helpInactive/helpInactive_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/helpInactive/helpInactive_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/helpInactive",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/maximize",
-      "type": "registry:ui",
-      "title": "Windows/windows/maximize",
-      "description": "Windows/windows/maximize icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/maximize/maximize_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/maximize/maximize_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/maximize",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/maximizeInactive",
-      "type": "registry:ui",
-      "title": "Windows/windows/maximizeInactive",
-      "description": "Windows/windows/maximizeInactive icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/maximizeInactive/maximizeInactive_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/maximizeInactive/maximizeInactive_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/maximizeInactive",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/maximizeSmall",
-      "type": "registry:ui",
-      "title": "Windows/windows/maximizeSmall",
-      "description": "Windows/windows/maximizeSmall icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/maximizeSmall/maximizeSmall_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/maximizeSmall/maximizeSmall_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/maximizeSmall",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/minimize",
-      "type": "registry:ui",
-      "title": "Windows/windows/minimize",
-      "description": "Windows/windows/minimize icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/minimize/minimize_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/minimize/minimize_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/minimize",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/minimizeInactive",
-      "type": "registry:ui",
-      "title": "Windows/windows/minimizeInactive",
-      "description": "Windows/windows/minimizeInactive icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/minimizeInactive/minimizeInactive_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/minimizeInactive/minimizeInactive_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/minimizeInactive",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/minimizeSmall",
-      "type": "registry:ui",
-      "title": "Windows/windows/minimizeSmall",
-      "description": "Windows/windows/minimizeSmall icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/minimizeSmall/minimizeSmall_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/minimizeSmall/minimizeSmall_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/minimizeSmall",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/restore",
-      "type": "registry:ui",
-      "title": "Windows/windows/restore",
-      "description": "Windows/windows/restore icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/restore/restore_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/restore/restore_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/restore",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/restoreInactive",
-      "type": "registry:ui",
-      "title": "Windows/windows/restoreInactive",
-      "description": "Windows/windows/restoreInactive icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/restoreInactive/restoreInactive_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/restoreInactive/restoreInactive_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/restoreInactive",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
-      "name": "icons-general-Windows/windows/restoreSmall",
-      "type": "registry:ui",
-      "title": "Windows/windows/restoreSmall",
-      "description": "Windows/windows/restoreSmall icon from general category.",
-      "files": [
-        {
-          "path": "registry/icons/General/Windows/windows/restoreSmall/restoreSmall_Theme-Dark.svg",
-          "type": "registry:source"
-        },
-        {
-          "path": "registry/icons/General/Windows/windows/restoreSmall/restoreSmall_Theme-Light.svg",
-          "type": "registry:source"
-        }
-      ],
-      "meta": {
-        "keywords": [
-          "Windows/windows/restoreSmall",
-          "icon",
-          "general",
-          "jetbrains"
-        ],
-        "hasLight": true,
-        "hasDark": true
-      }
-    },
-    {
       "name": "icons-general-access-modifiers-access-local",
       "type": "registry:ui",
       "title": "Access Local",
@@ -40792,6 +37764,1384 @@
       }
     },
     {
+      "name": "icons-general-devkit-add-sdk",
+      "type": "registry:ui",
+      "title": "Add Sdk",
+      "description": "Add Sdk icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/devkit/add-sdk/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/devkit/add-sdk/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "add-sdk",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-devkit/addSDK",
+      "type": "registry:ui",
+      "title": "Devkit/addSDK",
+      "description": "Devkit/addSDK icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/devkit/addSDK/addSDK_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/devkit/addSDK/addSDK_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "devkit/addSDK",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-devkit-description-file",
+      "type": "registry:ui",
+      "title": "Description File",
+      "description": "Description File icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/devkit/description-file/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/devkit/description-file/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "description-file",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-devkit/descriptionFile",
+      "type": "registry:ui",
+      "title": "Devkit/descriptionFile",
+      "description": "Devkit/descriptionFile icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/devkit/descriptionFile/descriptionFile_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/devkit/descriptionFile/descriptionFile_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "devkit/descriptionFile",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-devkit/diff",
+      "type": "registry:ui",
+      "title": "Devkit/diff",
+      "description": "Devkit/diff icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/devkit/diff/diff_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/devkit/diff/diff_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "devkit/diff",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-devkit/plugin",
+      "type": "registry:ui",
+      "title": "Devkit/plugin",
+      "description": "Devkit/plugin icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/devkit/plugin/plugin_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/devkit/plugin/plugin_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "devkit/plugin",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-devkit-plugin-v2",
+      "type": "registry:ui",
+      "title": "Plugin V2",
+      "description": "Plugin V2 icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/devkit/plugin-v2/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/devkit/plugin-v2/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "plugin-v2",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-devkit/pluginV2",
+      "type": "registry:ui",
+      "title": "Devkit/pluginV2",
+      "description": "Devkit/pluginV2 icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/devkit/pluginV2/pluginV2_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/devkit/pluginV2/pluginV2_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "devkit/pluginV2",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-devkit/properties",
+      "type": "registry:ui",
+      "title": "Devkit/properties",
+      "description": "Devkit/properties icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/devkit/properties/properties_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/devkit/properties/properties_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "devkit/properties",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-devkit-sdk-closed",
+      "type": "registry:ui",
+      "title": "Sdk Closed",
+      "description": "Sdk Closed icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/devkit/sdk-closed/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/devkit/sdk-closed/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "sdk-closed",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-devkit/sdkClosed",
+      "type": "registry:ui",
+      "title": "Devkit/sdkClosed",
+      "description": "Devkit/sdkClosed icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/devkit/sdkClosed/sdkClosed_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/devkit/sdkClosed/sdkClosed_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "devkit/sdkClosed",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-duplicates-send-to-the-left",
+      "type": "registry:ui",
+      "title": "Send To The Left",
+      "description": "Send To The Left icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/duplicates/send-to-the-left/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "send-to-the-left",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-duplicates-send-to-the-left-grayed",
+      "type": "registry:ui",
+      "title": "Send To The Left Grayed",
+      "description": "Send To The Left Grayed icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/duplicates/send-to-the-left-grayed/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-left-grayed/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "send-to-the-left-grayed",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-duplicates-send-to-the-right",
+      "type": "registry:ui",
+      "title": "Send To The Right",
+      "description": "Send To The Right icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/duplicates/send-to-the-right/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-right/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "send-to-the-right",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-duplicates-send-to-the-right-grayed",
+      "type": "registry:ui",
+      "title": "Send To The Right Grayed",
+      "description": "Send To The Right Grayed icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/duplicates/send-to-the-right-grayed/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/duplicates/send-to-the-right-grayed/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "send-to-the-right-grayed",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-duplicates/sendToTheLeft",
+      "type": "registry:ui",
+      "title": "Duplicates/sendToTheLeft",
+      "description": "Duplicates/sendToTheLeft icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/duplicates/sendToTheLeft/sendToTheLeft_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/duplicates/sendToTheLeft/sendToTheLeft_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "duplicates/sendToTheLeft",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-duplicates/sendToTheLeftGrayed",
+      "type": "registry:ui",
+      "title": "Duplicates/sendToTheLeftGrayed",
+      "description": "Duplicates/sendToTheLeftGrayed icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/duplicates/sendToTheLeftGrayed/sendToTheLeftGrayed_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/duplicates/sendToTheLeftGrayed/sendToTheLeftGrayed_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "duplicates/sendToTheLeftGrayed",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-duplicates/sendToTheRight",
+      "type": "registry:ui",
+      "title": "Duplicates/sendToTheRight",
+      "description": "Duplicates/sendToTheRight icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/duplicates/sendToTheRight/sendToTheRight_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/duplicates/sendToTheRight/sendToTheRight_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "duplicates/sendToTheRight",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-duplicates/sendToTheRightGrayed",
+      "type": "registry:ui",
+      "title": "Duplicates/sendToTheRightGrayed",
+      "description": "Duplicates/sendToTheRightGrayed icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/duplicates/sendToTheRightGrayed/sendToTheRightGrayed_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/duplicates/sendToTheRightGrayed/sendToTheRightGrayed_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "duplicates/sendToTheRightGrayed",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline-browse",
+      "type": "registry:ui",
+      "title": "Browse",
+      "description": "Browse icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/browse/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/browse/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "browse",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-collapse",
+      "type": "registry:ui",
+      "title": "Collapse",
+      "description": "Collapse icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/collapse/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/collapse/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "collapse",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-copy",
+      "type": "registry:ui",
+      "title": "Copy",
+      "description": "Copy icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/copy/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/copy/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "copy",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-exact-words",
+      "type": "registry:ui",
+      "title": "Exact Words",
+      "description": "Exact Words icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/exact-words/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/exact-words/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "exact-words",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-expand",
+      "type": "registry:ui",
+      "title": "Expand",
+      "description": "Expand icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/expand/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/expand/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "expand",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-filter-history",
+      "type": "registry:ui",
+      "title": "Filter History",
+      "description": "Filter History icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/filter-history/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/filter-history/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "filter-history",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/browse",
+      "type": "registry:ui",
+      "title": "Inline/inline/browse",
+      "description": "Inline/inline/browse icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/browse/browse_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/browse/browse_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/browse",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/collapse",
+      "type": "registry:ui",
+      "title": "Inline/inline/collapse",
+      "description": "Inline/inline/collapse icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/collapse/collapse_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/collapse/collapse_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/collapse",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/copy",
+      "type": "registry:ui",
+      "title": "Inline/inline/copy",
+      "description": "Inline/inline/copy icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/copy/copy_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/copy/copy_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/copy",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/exactWords",
+      "type": "registry:ui",
+      "title": "Inline/inline/exactWords",
+      "description": "Inline/inline/exactWords icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/exactWords/exactWords_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/exactWords/exactWords_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/exactWords",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/expand",
+      "type": "registry:ui",
+      "title": "Inline/inline/expand",
+      "description": "Inline/inline/expand icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/expand/expand_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/expand/expand_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/expand",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/filterHistory",
+      "type": "registry:ui",
+      "title": "Inline/inline/filterHistory",
+      "description": "Inline/inline/filterHistory icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/filterHistory/filterHistory_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/filterHistory/filterHistory_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/filterHistory",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/inlineAdd",
+      "type": "registry:ui",
+      "title": "Inline/inline/inlineAdd",
+      "description": "Inline/inline/inlineAdd icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/inlineAdd/inlineAdd_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/inlineAdd/inlineAdd_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/inlineAdd",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/inlineEdit",
+      "type": "registry:ui",
+      "title": "Inline/inline/inlineEdit",
+      "description": "Inline/inline/inlineEdit icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/inlineEdit/inlineEdit_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/inlineEdit/inlineEdit_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/inlineEdit",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/inlineSettings",
+      "type": "registry:ui",
+      "title": "Inline/inline/inlineSettings",
+      "description": "Inline/inline/inlineSettings icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/inlineSettings/inlineSettings_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/inlineSettings/inlineSettings_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/inlineSettings",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/matchCase",
+      "type": "registry:ui",
+      "title": "Inline/inline/matchCase",
+      "description": "Inline/inline/matchCase icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/matchCase/matchCase_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/matchCase/matchCase_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/matchCase",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/newLine",
+      "type": "registry:ui",
+      "title": "Inline/inline/newLine",
+      "description": "Inline/inline/newLine icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/newLine/newLine_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/newLine/newLine_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/newLine",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/preserveCase",
+      "type": "registry:ui",
+      "title": "Inline/inline/preserveCase",
+      "description": "Inline/inline/preserveCase icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/preserveCase/preserveCase_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/preserveCase/preserveCase_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/preserveCase",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/refresh",
+      "type": "registry:ui",
+      "title": "Inline/inline/refresh",
+      "description": "Inline/inline/refresh icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/refresh/refresh_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/refresh/refresh_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/refresh",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/regex",
+      "type": "registry:ui",
+      "title": "Inline/inline/regex",
+      "description": "Inline/inline/regex icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/regex/regex_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/regex/regex_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/regex",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/searchHistory",
+      "type": "registry:ui",
+      "title": "Inline/inline/searchHistory",
+      "description": "Inline/inline/searchHistory icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/searchHistory/searchHistory_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/searchHistory/searchHistory_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/searchHistory",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/sortHistory",
+      "type": "registry:ui",
+      "title": "Inline/inline/sortHistory",
+      "description": "Inline/inline/sortHistory icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/sortHistory/sortHistory_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/sortHistory/sortHistory_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/sortHistory",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline/inline/variables",
+      "type": "registry:ui",
+      "title": "Inline/inline/variables",
+      "description": "Inline/inline/variables icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/inline/variables/variables_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/inline/variables/variables_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/inline/variables",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline-inline-add",
+      "type": "registry:ui",
+      "title": "Inline Add",
+      "description": "Inline Add icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/inline-add/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/inline-add/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline-add",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-inline-edit",
+      "type": "registry:ui",
+      "title": "Inline Edit",
+      "description": "Inline Edit icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/inline-edit/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/inline-edit/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline-edit",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-inline-settings",
+      "type": "registry:ui",
+      "title": "Inline Settings",
+      "description": "Inline Settings icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/inline-settings/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/inline-settings/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline-settings",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-match-case",
+      "type": "registry:ui",
+      "title": "Match Case",
+      "description": "Match Case icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/match-case/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/match-case/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "match-case",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-new-line",
+      "type": "registry:ui",
+      "title": "New Line",
+      "description": "New Line icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/new-line/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/new-line/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "new-line",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-preserve-case",
+      "type": "registry:ui",
+      "title": "Preserve Case",
+      "description": "Preserve Case icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/preserve-case/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/preserve-case/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "preserve-case",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-refresh",
+      "type": "registry:ui",
+      "title": "Refresh",
+      "description": "Refresh icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/refresh/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/refresh/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "refresh",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-regex",
+      "type": "registry:ui",
+      "title": "Regex",
+      "description": "Regex icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/regex/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/regex/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "regex",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-search-history",
+      "type": "registry:ui",
+      "title": "Search History",
+      "description": "Search History icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/search-history/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/search-history/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "search-history",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-sort-history",
+      "type": "registry:ui",
+      "title": "Sort History",
+      "description": "Sort History icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/sort-history/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/sort-history/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "sort-history",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline-statistics-panel",
+      "type": "registry:ui",
+      "title": "Statistics Panel",
+      "description": "Statistics Panel icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/statistics-panel/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/statistics-panel/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "statistics-panel",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-inline/statisticsPanel",
+      "type": "registry:ui",
+      "title": "Inline/statisticsPanel",
+      "description": "Inline/statisticsPanel icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/inline/statisticsPanel/statisticsPanel_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/inline/statisticsPanel/statisticsPanel_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "inline/statisticsPanel",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-inline-variables",
+      "type": "registry:ui",
+      "title": "Variables",
+      "description": "Variables icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/inline/variables/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/inline/variables/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "variables",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
       "name": "icons-general-new-ui-dark-theme",
       "type": "registry:ui",
       "title": "Dark Theme",
@@ -41320,6 +39670,206 @@
       }
     },
     {
+      "name": "icons-general-raiting-feedback-rating",
+      "type": "registry:ui",
+      "title": "Feedback Rating",
+      "description": "Feedback Rating icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/raiting/feedback-rating/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "feedback-rating",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-raiting-feedback-rating-focused",
+      "type": "registry:ui",
+      "title": "Feedback Rating Focused",
+      "description": "Feedback Rating Focused icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/raiting/feedback-rating-focused/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating-focused/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "feedback-rating-focused",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-raiting-feedback-rating-focused-on",
+      "type": "registry:ui",
+      "title": "Feedback Rating Focused On",
+      "description": "Feedback Rating Focused On icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/raiting/feedback-rating-focused-on/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating-focused-on/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "feedback-rating-focused-on",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-raiting-feedback-rating-on",
+      "type": "registry:ui",
+      "title": "Feedback Rating On",
+      "description": "Feedback Rating On icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/raiting/feedback-rating-on/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/raiting/feedback-rating-on/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "feedback-rating-on",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-raiting/feedbackRating",
+      "type": "registry:ui",
+      "title": "Raiting/feedbackRating",
+      "description": "Raiting/feedbackRating icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/raiting/feedbackRating/feedbackRating_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/raiting/feedbackRating/feedbackRating_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "raiting/feedbackRating",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-raiting/feedbackRatingFocused",
+      "type": "registry:ui",
+      "title": "Raiting/feedbackRatingFocused",
+      "description": "Raiting/feedbackRatingFocused icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/raiting/feedbackRatingFocused/feedbackRatingFocused_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/raiting/feedbackRatingFocused/feedbackRatingFocused_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "raiting/feedbackRatingFocused",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-raiting/feedbackRatingFocusedOn",
+      "type": "registry:ui",
+      "title": "Raiting/feedbackRatingFocusedOn",
+      "description": "Raiting/feedbackRatingFocusedOn icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/raiting/feedbackRatingFocusedOn/feedbackRatingFocusedOn_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/raiting/feedbackRatingFocusedOn/feedbackRatingFocusedOn_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "raiting/feedbackRatingFocusedOn",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-raiting/feedbackRatingOn",
+      "type": "registry:ui",
+      "title": "Raiting/feedbackRatingOn",
+      "description": "Raiting/feedbackRatingOn icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/raiting/feedbackRatingOn/feedbackRatingOn_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/raiting/feedbackRatingOn/feedbackRatingOn_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "raiting/feedbackRatingOn",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
       "name": "icons-general-setting-sync-conflict",
       "type": "registry:ui",
       "title": "Conflict",
@@ -41433,6 +39983,656 @@
       "meta": {
         "keywords": [
           "status-enabled",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-error",
+      "type": "registry:ui",
+      "title": "Error",
+      "description": "Error icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/error/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/error/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "error",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-error-dialog",
+      "type": "registry:ui",
+      "title": "Error Dialog",
+      "description": "Error Dialog icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/error-dialog/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/error-dialog/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "error-dialog",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-error-outline",
+      "type": "registry:ui",
+      "title": "Error Outline",
+      "description": "Error Outline icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/error-outline/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/error-outline/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "error-outline",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-info",
+      "type": "registry:ui",
+      "title": "Info",
+      "description": "Info icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/info/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/info/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "info",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-info-outline",
+      "type": "registry:ui",
+      "title": "Info Outline",
+      "description": "Info Outline icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/info-outline/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/info-outline/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "info-outline",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-information-dialog",
+      "type": "registry:ui",
+      "title": "Information Dialog",
+      "description": "Information Dialog icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/information-dialog/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/information-dialog/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "information-dialog",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-question-dialog",
+      "type": "registry:ui",
+      "title": "Question Dialog",
+      "description": "Question Dialog icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/question-dialog/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/question-dialog/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "question-dialog",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status/status/error",
+      "type": "registry:ui",
+      "title": "Status/status/error",
+      "description": "Status/status/error icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/error/error_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/error/error_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/error",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/errorDialog",
+      "type": "registry:ui",
+      "title": "Status/status/errorDialog",
+      "description": "Status/status/errorDialog icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/errorDialog/errorDialog_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/errorDialog/errorDialog_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/errorDialog",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/errorOutline",
+      "type": "registry:ui",
+      "title": "Status/status/errorOutline",
+      "description": "Status/status/errorOutline icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/errorOutline/errorOutline_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/errorOutline/errorOutline_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/errorOutline",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/info",
+      "type": "registry:ui",
+      "title": "Status/status/info",
+      "description": "Status/status/info icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/info/info_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/info/info_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/info",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/infoOutline",
+      "type": "registry:ui",
+      "title": "Status/status/infoOutline",
+      "description": "Status/status/infoOutline icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/infoOutline/infoOutline_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/infoOutline/infoOutline_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/infoOutline",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/informationDialog",
+      "type": "registry:ui",
+      "title": "Status/status/informationDialog",
+      "description": "Status/status/informationDialog icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/informationDialog/informationDialog_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/informationDialog/informationDialog_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/informationDialog",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/questionDialog",
+      "type": "registry:ui",
+      "title": "Status/status/questionDialog",
+      "description": "Status/status/questionDialog icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/questionDialog/questionDialog_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/questionDialog/questionDialog_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/questionDialog",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/success",
+      "type": "registry:ui",
+      "title": "Status/status/success",
+      "description": "Status/status/success icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/success/success_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/success/success_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/success",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/successDialog",
+      "type": "registry:ui",
+      "title": "Status/status/successDialog",
+      "description": "Status/status/successDialog icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/successDialog/successDialog_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/successDialog/successDialog_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/successDialog",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/warning",
+      "type": "registry:ui",
+      "title": "Status/status/warning",
+      "description": "Status/status/warning icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/warning/warning_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/warning/warning_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/warning",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/warningDialog",
+      "type": "registry:ui",
+      "title": "Status/status/warningDialog",
+      "description": "Status/status/warningDialog icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/warningDialog/warningDialog_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/warningDialog/warningDialog_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/warningDialog",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status/status/warningOutline",
+      "type": "registry:ui",
+      "title": "Status/status/warningOutline",
+      "description": "Status/status/warningOutline icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/status/warningOutline/warningOutline_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/status/warningOutline/warningOutline_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/status/warningOutline",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status-success",
+      "type": "registry:ui",
+      "title": "Success",
+      "description": "Success icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/success/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/success/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "success",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-success-dialog",
+      "type": "registry:ui",
+      "title": "Success Dialog",
+      "description": "Success Dialog icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/success-dialog/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/success-dialog/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "success-dialog",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-success-login",
+      "type": "registry:ui",
+      "title": "Success Login",
+      "description": "Success Login icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/success-login/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/success-login/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "success-login",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status/successLogin",
+      "type": "registry:ui",
+      "title": "Status/successLogin",
+      "description": "Status/successLogin icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/status/successLogin/successLogin_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/status/successLogin/successLogin_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "status/successLogin",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-status-warning",
+      "type": "registry:ui",
+      "title": "Warning",
+      "description": "Warning icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/warning/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/warning/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "warning",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-warning-dialog",
+      "type": "registry:ui",
+      "title": "Warning Dialog",
+      "description": "Warning Dialog icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/warning-dialog/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/warning-dialog/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "warning-dialog",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-status-warning-outline",
+      "type": "registry:ui",
+      "title": "Warning Outline",
+      "description": "Warning Outline icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/status/warning-outline/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/status/warning-outline/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "warning-outline",
           "icon",
           "general",
           "jetbrains"
@@ -44365,6 +43565,806 @@
           "general",
           "jetbrains"
         ]
+      }
+    },
+    {
+      "name": "icons-general-windows-close",
+      "type": "registry:ui",
+      "title": "Close",
+      "description": "Close icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/close/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/close/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "close",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-close-hover",
+      "type": "registry:ui",
+      "title": "Close Hover",
+      "description": "Close Hover icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/close-hover/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/close-hover/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "close-hover",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-close-inactive",
+      "type": "registry:ui",
+      "title": "Close Inactive",
+      "description": "Close Inactive icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/close-inactive/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/close-inactive/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "close-inactive",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-close-small",
+      "type": "registry:ui",
+      "title": "Close Small",
+      "description": "Close Small icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/close-small/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/close-small/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "close-small",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-collapse",
+      "type": "registry:ui",
+      "title": "Collapse",
+      "description": "Collapse icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/collapse/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/collapse/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "collapse",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-help",
+      "type": "registry:ui",
+      "title": "Help",
+      "description": "Help icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/help/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/help/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "help",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-help-inactive",
+      "type": "registry:ui",
+      "title": "Help Inactive",
+      "description": "Help Inactive icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/help-inactive/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/help-inactive/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "help-inactive",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-maximize",
+      "type": "registry:ui",
+      "title": "Maximize",
+      "description": "Maximize icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/maximize/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/maximize/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "maximize",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-maximize-inactive",
+      "type": "registry:ui",
+      "title": "Maximize Inactive",
+      "description": "Maximize Inactive icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/maximize-inactive/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/maximize-inactive/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "maximize-inactive",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-maximize-small",
+      "type": "registry:ui",
+      "title": "Maximize Small",
+      "description": "Maximize Small icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/maximize-small/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/maximize-small/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "maximize-small",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-minimize",
+      "type": "registry:ui",
+      "title": "Minimize",
+      "description": "Minimize icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/minimize/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/minimize/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "minimize",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-minimize-inactive",
+      "type": "registry:ui",
+      "title": "Minimize Inactive",
+      "description": "Minimize Inactive icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/minimize-inactive/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/minimize-inactive/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "minimize-inactive",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-minimize-small",
+      "type": "registry:ui",
+      "title": "Minimize Small",
+      "description": "Minimize Small icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/minimize-small/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/minimize-small/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "minimize-small",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-restore",
+      "type": "registry:ui",
+      "title": "Restore",
+      "description": "Restore icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/restore/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/restore/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "restore",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-restore-inactive",
+      "type": "registry:ui",
+      "title": "Restore Inactive",
+      "description": "Restore Inactive icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/restore-inactive/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/restore-inactive/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "restore-inactive",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows-restore-small",
+      "type": "registry:ui",
+      "title": "Restore Small",
+      "description": "Restore Small icon from general category.",
+      "registryDependencies": [
+        "@jetbrains-ui/icons-general-types"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/general/windows/restore-small/index.tsx",
+          "type": "registry:ui",
+          "target": "components/jetbrains-ui/icons/general/windows/restore-small/index.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "restore-small",
+          "icon",
+          "general",
+          "jetbrains"
+        ]
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/close",
+      "type": "registry:ui",
+      "title": "Windows/windows/close",
+      "description": "Windows/windows/close icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/close/close_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/close/close_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/close",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/closeHover",
+      "type": "registry:ui",
+      "title": "Windows/windows/closeHover",
+      "description": "Windows/windows/closeHover icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/closeHover/closeHover_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/closeHover/closeHover_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/closeHover",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/closeInactive",
+      "type": "registry:ui",
+      "title": "Windows/windows/closeInactive",
+      "description": "Windows/windows/closeInactive icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/closeInactive/closeInactive_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/closeInactive/closeInactive_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/closeInactive",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/closeSmall",
+      "type": "registry:ui",
+      "title": "Windows/windows/closeSmall",
+      "description": "Windows/windows/closeSmall icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/closeSmall/closeSmall_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/closeSmall/closeSmall_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/closeSmall",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/collapse",
+      "type": "registry:ui",
+      "title": "Windows/windows/collapse",
+      "description": "Windows/windows/collapse icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/collapse/collapse_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/collapse/collapse_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/collapse",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/help",
+      "type": "registry:ui",
+      "title": "Windows/windows/help",
+      "description": "Windows/windows/help icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/help/help_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/help/help_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/help",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/helpInactive",
+      "type": "registry:ui",
+      "title": "Windows/windows/helpInactive",
+      "description": "Windows/windows/helpInactive icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/helpInactive/helpInactive_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/helpInactive/helpInactive_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/helpInactive",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/maximize",
+      "type": "registry:ui",
+      "title": "Windows/windows/maximize",
+      "description": "Windows/windows/maximize icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/maximize/maximize_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/maximize/maximize_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/maximize",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/maximizeInactive",
+      "type": "registry:ui",
+      "title": "Windows/windows/maximizeInactive",
+      "description": "Windows/windows/maximizeInactive icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/maximizeInactive/maximizeInactive_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/maximizeInactive/maximizeInactive_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/maximizeInactive",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/maximizeSmall",
+      "type": "registry:ui",
+      "title": "Windows/windows/maximizeSmall",
+      "description": "Windows/windows/maximizeSmall icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/maximizeSmall/maximizeSmall_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/maximizeSmall/maximizeSmall_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/maximizeSmall",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/minimize",
+      "type": "registry:ui",
+      "title": "Windows/windows/minimize",
+      "description": "Windows/windows/minimize icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/minimize/minimize_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/minimize/minimize_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/minimize",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/minimizeInactive",
+      "type": "registry:ui",
+      "title": "Windows/windows/minimizeInactive",
+      "description": "Windows/windows/minimizeInactive icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/minimizeInactive/minimizeInactive_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/minimizeInactive/minimizeInactive_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/minimizeInactive",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/minimizeSmall",
+      "type": "registry:ui",
+      "title": "Windows/windows/minimizeSmall",
+      "description": "Windows/windows/minimizeSmall icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/minimizeSmall/minimizeSmall_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/minimizeSmall/minimizeSmall_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/minimizeSmall",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/restore",
+      "type": "registry:ui",
+      "title": "Windows/windows/restore",
+      "description": "Windows/windows/restore icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/restore/restore_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/restore/restore_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/restore",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/restoreInactive",
+      "type": "registry:ui",
+      "title": "Windows/windows/restoreInactive",
+      "description": "Windows/windows/restoreInactive icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/restoreInactive/restoreInactive_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/restoreInactive/restoreInactive_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/restoreInactive",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
+      }
+    },
+    {
+      "name": "icons-general-windows/windows/restoreSmall",
+      "type": "registry:ui",
+      "title": "Windows/windows/restoreSmall",
+      "description": "Windows/windows/restoreSmall icon from general category.",
+      "files": [
+        {
+          "path": "registry/icons/General/windows/windows/restoreSmall/restoreSmall_Theme-Dark.svg",
+          "type": "registry:source"
+        },
+        {
+          "path": "registry/icons/General/windows/windows/restoreSmall/restoreSmall_Theme-Light.svg",
+          "type": "registry:source"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "windows/windows/restoreSmall",
+          "icon",
+          "general",
+          "jetbrains"
+        ],
+        "hasLight": true,
+        "hasDark": true
       }
     },
     {
