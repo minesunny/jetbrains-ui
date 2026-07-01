@@ -33,72 +33,65 @@ export const Separator = ({
   );
 };
 
+// Map separator names (both en/zh) to icon + display config
+const SEPARATOR_MAP: Record<
+  string,
+  { icon: React.ReactNode; display: string }
+> = {
+  'JetBrains UI': {
+    icon: <JetBrainsUIIcon className="!size-3" />,
+    display: 'JetBrains UI',
+  },
+  'Radix UI': {
+    icon: <RadixIcon className="!size-2.5" />,
+    display: 'Radix UI',
+  },
+  'Base UI': { icon: <BaseUIIcon />, display: 'Base UI' },
+  'Headless UI': { icon: <HeadlessUIIcon />, display: 'Headless UI' },
+  Effects: {
+    icon: <SVG name="general/ai-assistant/ai-assistant" />,
+    display: 'Effects',
+  },
+  Community: { icon: <CommunityIcon />, display: 'Community' },
+  Backgrounds: {
+    icon: <ImageIcon strokeWidth={5} />,
+    display: 'Backgrounds',
+  },
+  Texts: { icon: <SVG name="file-types/text" />, display: 'Texts' },
+  Icons: { icon: <Search strokeWidth={2} />, display: 'Icons' },
+  图标: { icon: <Search strokeWidth={2} />, display: '图标' },
+  Usage: {
+    icon: <SVG name="terminal/command" />,
+    display: 'Usage',
+  },
+  Guide: {
+    icon: <SVG name="terminal/command" />,
+    display: 'Usage',
+  },
+  Menu: {
+    icon: <SVG name="plugins/code-with-me/cwm-icon-modificator-menu" />,
+    display: 'Menu',
+  },
+  菜单: {
+    icon: <SVG name="plugins/code-with-me/cwm-icon-modificator-menu" />,
+    display: '菜单',
+  },
+  Components: {
+    icon: <SVG name="plugins/java-ee/component" />,
+    display: 'Components',
+  },
+  组件: {
+    icon: <SVG name="plugins/java-ee/component" />,
+    display: '组件',
+  },
+};
+
 export const attachSeparator: BuildPageTreeOptions['attachSeparator'] = (
   node,
 ) => {
-  switch (node.name) {
-    case 'JetBrains UI':
-      node.name = (
-        <Separator
-          icon={<JetBrainsUIIcon className="!size-3" />}
-          name="JetBrains UI"
-        />
-      );
-      break;
-    case 'Radix UI':
-      node.name = (
-        <Separator icon={<RadixIcon className="!size-2.5" />} name="Radix UI" />
-      );
-      break;
-    case 'Base UI':
-      node.name = <Separator icon={<BaseUIIcon />} name="Base UI" />;
-      break;
-    case 'Headless UI':
-      node.name = <Separator icon={<HeadlessUIIcon />} name="Headless UI" />;
-      break;
-    case 'Effects':
-      node.name = (
-        <Separator
-          icon={<SVG name="general/ai-assistant/ai-assistant" />}
-          name="Effects"
-        />
-      );
-      break;
-    case 'Community':
-      node.name = <Separator icon={<CommunityIcon />} name="Community" />;
-      break;
-    case 'Backgrounds':
-      node.name = (
-        <Separator icon={<ImageIcon strokeWidth={5} />} name="Backgrounds" />
-      );
-      break;
-    case 'Texts':
-      node.name = (
-        <Separator icon={<SVG name="file-types/text" />} name="Texts" />
-      );
-      break;
-    case 'Icons':
-      node.name = <Separator icon={<Search strokeWidth={2} />} name="Icons" />;
-      break;
-    case 'Usage':
-      node.name = (
-        <Separator icon={<SVG name="terminal/command" />} name="Usage" />
-      );
-      break;
-    case 'Guide':
-      node.name = (
-        <Separator icon={<SVG name="terminal/command" />} name="Usage" />
-      );
-      break;
-    case 'Menu':
-      node.name = (
-        <Separator
-          icon={<SVG name="plugins/code-with-me/cwm-icon-modificator-menu" />}
-          name="Menu"
-        />
-      );
-      break;
+  const match = SEPARATOR_MAP[node.name as string];
+  if (match) {
+    node.name = <Separator icon={match.icon} name={match.display} />;
   }
-
   return node;
 };

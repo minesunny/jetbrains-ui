@@ -19,7 +19,10 @@ function createTestEditor() {
   return { editor, div };
 }
 
-function cleanupEditor(editor: InstanceType<typeof ace.Editor>, div: HTMLDivElement) {
+function cleanupEditor(
+  editor: InstanceType<typeof ace.Editor>,
+  div: HTMLDivElement,
+) {
   editor.destroy();
   div.remove();
 }

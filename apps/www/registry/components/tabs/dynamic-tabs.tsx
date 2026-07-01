@@ -1,8 +1,9 @@
 'use client';
 
-import {
-  type ReactNode,
+import React, {
   type ComponentPropsWithoutRef,
+  createContext,
+  useContext,
   useState,
   useCallback,
 } from 'react';
@@ -16,60 +17,102 @@ import {
   ContextMenuContent,
   ContextMenuItem,
   ContextMenuSeparator,
+  ContextMenuSub,
+  ContextMenuSubContent,
+  ContextMenuSubTrigger,
   ContextMenuTrigger,
 } from '@/registry/components/context-menu';
 
-export interface DynamicTabItem {
+// ---------------------------------------------------------------------------
+// Public types
+// ---------------------------------------------------------------------------
+
+export interface DynamicTabsProps {
   id: string;
   label: string;
   icon?: string;
   pinned?: boolean;
   disabled?: boolean;
   modified?: boolean;
+  key?: string;
+  index?: number;
 }
 
-export interface DynamicTabActions {
-  add?: () => void;
-  close?: () => void;
-  closeOthers?: () => void;
-  closeLeft?: () => void;
-  closeRight?: () => void;
-  pin?: () => void;
+export interface DynamicTabContextMenuProps {
+  key: string;
+  label?: string;
+  icon?: string;
+  index?: number;
+  separator?: boolean;
+  children?: DynamicTabContextMenuProps[];
+  action?: (tab: DynamicTabsProps) => void;
 }
-
-export type DynamicTabContextMenuFn = (
-  tab: DynamicTabItem,
-  index: number,
-  actions: DynamicTabActions,
-) => ReactNode;
 
 export interface DynamicTabsListProps
-  extends Omit<ComponentPropsWithoutRef<'div'>, 'children' | 'contextMenu'> {
-  items: DynamicTabItem[];
+  extends Omit<
+    ComponentPropsWithoutRef<'div'>,
+    'children' | 'contextMenu' | 'onClick'
+  > {
+  items: DynamicTabsProps[];
   activeTab?: string;
   defaultActiveTab?: string;
-  onActiveChange?: (tabId: string) => void;
-  closeTabs?: (tabIds: string[]) => void;
-  togglePin?: (tabId: string) => void;
-  addTab?: () => void;
-  contextMenu?: DynamicTabContextMenuFn | null;
+  /** Fired when the active tab changes */
+  onActive?: (prev: DynamicTabsProps | null, next: DynamicTabsProps) => void;
+  /** Fired when a tab is clicked (regardless of whether it becomes active) */
+  onClick?: (item: DynamicTabsProps) => void;
+  /** Fired when tabs are closed */
+  onClose?: (items: DynamicTabsProps | DynamicTabsProps[]) => void;
+  /** Fired when a tab is pinned or unpinned */
+  onTogglePin?: (item: DynamicTabsProps, pinned: boolean) => void;
+  /** Add new tab — returns the new tab item */
+  add?: () => DynamicTabsProps | undefined;
+  /** Custom context menu config, null to disable */
+  contextMenu?: DynamicTabContextMenuProps[] | null;
 }
 
-function DynamicTabItemButton({
+// ---------------------------------------------------------------------------
+// List context (internal)
+// ---------------------------------------------------------------------------
+
+interface DynamicTabsListContextValue {
+  items: DynamicTabsProps[];
+  activeTab: string | undefined;
+  handleClick: (tab: DynamicTabsProps) => void;
+  onActive?: (prev: DynamicTabsProps | null, next: DynamicTabsProps) => void;
+  onClick?: (item: DynamicTabsProps) => void;
+  onClose?: (items: DynamicTabsProps | DynamicTabsProps[]) => void;
+  onTogglePin?: (item: DynamicTabsProps, pinned: boolean) => void;
+  add?: () => DynamicTabsProps | undefined;
+}
+
+const DynamicTabsListContext =
+  createContext<DynamicTabsListContextValue | null>(null);
+
+function useDynamicTabsListContext() {
+  const ctx = useContext(DynamicTabsListContext);
+  if (!ctx) {
+    throw new Error(
+      'useDynamicTabsListContext must be used within DynamicTabsList',
+    );
+  }
+  return ctx;
+}
+
+// ---------------------------------------------------------------------------
+// DynamicTabsTrigger
+// ---------------------------------------------------------------------------
+
+function DynamicTabsTrigger({
   item,
-  isActive,
-  onClick,
-  onClose,
-  onTogglePin,
   ...rest
 }: {
-  item: DynamicTabItem;
-  isActive: boolean;
-  onClick?: () => void;
-  onClose?: () => void;
-  onTogglePin?: () => void;
+  item: DynamicTabsProps;
 } & Omit<ComponentPropsWithoutRef<'button'>, 'children'>) {
   const { t } = useJetBrainsLocale();
+  const { activeTab, handleClick, onClose, onTogglePin } =
+    useDynamicTabsListContext();
+  const isActive = item.id === activeTab;
+
   return (
     <button
       {...rest}
@@ -81,8 +124,8 @@ function DynamicTabItemButton({
       data-modified={item.modified || undefined}
       data-disabled={item.disabled || undefined}
       disabled={item.disabled}
+      onClick={() => handleClick(item)}
       className="inline-flex shrink-0 items-center gap-1.5 rounded-md px-2.5 py-1 text-default leading-4 font-normal opacity-[0.67] text-gray-1 dark:text-gray-12 outline-none transition-[background-color,color,box-shadow,opacity] duration-100 ease-in-out hover:opacity-100 hover:bg-gray-12 dark:hover:bg-gray-3 focus-visible:ring-2 focus-visible:ring-blue-4 dark:focus-visible:ring-blue-6 data-[state=active]:opacity-100 data-[state=active]:bg-blue-12 dark:data-[state=active]:bg-blue-2 data-[state=active]:text-gray-1 dark:data-[state=active]:text-gray-12 data-[state=active]:border data-[state=active]:border-blue-5 disabled:pointer-events-none disabled:opacity-50"
-      onClick={onClick}
     >
       {item.icon ? (
         <span className="inline-flex size-4 shrink-0 items-center justify-center">
@@ -106,13 +149,13 @@ function DynamicTabItemButton({
           className="ml-0.5 inline-flex size-4 shrink-0 cursor-default items-center justify-center rounded-sm text-gray-6 hover:text-gray-1 dark:text-gray-10 dark:hover:text-gray-12"
           onClick={(e) => {
             e.stopPropagation();
-            onTogglePin?.();
+            onTogglePin?.(item, false);
           }}
           onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {
               e.preventDefault();
               e.stopPropagation();
-              onTogglePin?.();
+              onTogglePin?.(item, false);
             }
           }}
         >
@@ -126,13 +169,13 @@ function DynamicTabItemButton({
           className="ml-0.5 inline-flex size-4 shrink-0 cursor-default items-center justify-center rounded-sm text-gray-6 hover:text-gray-1 dark:text-gray-10 dark:hover:text-gray-12"
           onClick={(e) => {
             e.stopPropagation();
-            onClose?.();
+            onClose?.(item);
           }}
           onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {
               e.preventDefault();
               e.stopPropagation();
-              onClose?.();
+              onClose?.(item);
             }
           }}
         >
@@ -143,190 +186,287 @@ function DynamicTabItemButton({
   );
 }
 
-function DynamicTabItemContextMenu({
+// ---------------------------------------------------------------------------
+// Context menu (internal)
+// ---------------------------------------------------------------------------
+
+const DEFAULT_CONTEXT_MENU: DynamicTabContextMenuProps[] = [
+  { key: 'pin', icon: 'general/general/pin' },
+  { key: 'add' },
+  { key: 'sep', separator: true },
+  { key: 'close', icon: 'general/general/close' },
+  { key: 'closeLeft', icon: 'general/general/close' },
+  { key: 'closeRight', icon: 'general/general/close' },
+  { key: 'closeOthers', icon: 'general/general/close' },
+];
+
+interface ResolvedMenuItem {
+  label: string;
+  disabled: boolean;
+  handleSelect: (() => void) | undefined;
+}
+
+function resolveMenuItem(
+  key: string,
+  tab: DynamicTabsProps,
+  label: string,
+  ctx: {
+    onClose: ((items: DynamicTabsProps | DynamicTabsProps[]) => void) | undefined;
+    onTogglePin: ((item: DynamicTabsProps, pinned: boolean) => void) | undefined;
+    add: (() => DynamicTabsProps | undefined) | undefined;
+    closableLeft: DynamicTabsProps[];
+    closableRight: DynamicTabsProps[];
+    closableOthers: DynamicTabsProps[];
+    t: (key: string) => string;
+  },
+): ResolvedMenuItem {
+  let disabled = false;
+  let handleSelect: (() => void) | undefined;
+
+  switch (key) {
+    case 'pin':
+      if (!label)
+        label = tab.pinned
+          ? ctx.t('dynamicTabs.unpinTabLabel')
+          : ctx.t('dynamicTabs.pinTabLabel');
+      disabled = !ctx.onTogglePin;
+      handleSelect = ctx.onTogglePin
+        ? () => ctx.onTogglePin!(tab, !tab.pinned)
+        : undefined;
+      break;
+    case 'add':
+      if (!label) label = ctx.t('dynamicTabs.addTab');
+      disabled = !ctx.add;
+      handleSelect = ctx.add ? () => ctx.add!() : undefined;
+      break;
+    case 'close':
+      if (!label) label = ctx.t('dynamicTabs.close');
+      disabled = tab.pinned || !ctx.onClose;
+      handleSelect =
+        ctx.onClose && !tab.pinned ? () => ctx.onClose!(tab) : undefined;
+      break;
+    case 'closeLeft':
+      if (!label) label = ctx.t('dynamicTabs.closeLeftTabs');
+      disabled = ctx.closableLeft.length === 0 || !ctx.onClose;
+      handleSelect =
+        ctx.onClose && ctx.closableLeft.length > 0
+          ? () => ctx.onClose!(ctx.closableLeft)
+          : undefined;
+      break;
+    case 'closeRight':
+      if (!label) label = ctx.t('dynamicTabs.closeRightTabs');
+      disabled = ctx.closableRight.length === 0 || !ctx.onClose;
+      handleSelect =
+        ctx.onClose && ctx.closableRight.length > 0
+          ? () => ctx.onClose!(ctx.closableRight)
+          : undefined;
+      break;
+    case 'closeOthers':
+      if (!label) label = ctx.t('dynamicTabs.closeOthers');
+      disabled = ctx.closableOthers.length === 0 || !ctx.onClose;
+      handleSelect =
+        ctx.onClose && ctx.closableOthers.length > 0
+          ? () => ctx.onClose!(ctx.closableOthers)
+          : undefined;
+      break;
+  }
+
+  return { label, disabled, handleSelect };
+}
+
+function DynamicTabsContextMenu({
   tab,
-  actions,
-  hasClosableLeft,
-  hasClosableRight,
+  contextMenu,
 }: {
-  tab: DynamicTabItem;
-  actions: DynamicTabActions;
-  hasClosableLeft: boolean;
-  hasClosableRight: boolean;
+  tab: DynamicTabsProps;
+  contextMenu?: DynamicTabContextMenuProps[] | null;
 }) {
-  const isPinned = tab.pinned;
   const { t } = useJetBrainsLocale();
+  const { items, onClose, onTogglePin, add } = useDynamicTabsListContext();
+  const index = items.findIndex((i) => i.id === tab.id);
+  const closableLeft = items.slice(0, index).filter((i) => !i.pinned);
+  const closableRight = items.slice(index + 1).filter((i) => !i.pinned);
+  const closableOthers = items.filter(
+    (i, idx) => idx !== index && !i.pinned,
+  );
+
+  const resolveCtx = {
+    onClose,
+    onTogglePin,
+    add,
+    closableLeft,
+    closableRight,
+    closableOthers,
+    t,
+  };
+
+  const menuItems = (contextMenu ?? DEFAULT_CONTEXT_MENU)
+    .map(function sortByName(
+      item: DynamicTabContextMenuProps,
+    ): DynamicTabContextMenuProps {
+      return {
+        ...item,
+        children: item.children
+          ?.map(sortByName)
+          .sort((a, b) => (a.index ?? 0) - (b.index ?? 0)),
+      };
+    })
+    .sort((a, b) => (a.index ?? 0) - (b.index ?? 0));
 
   return (
     <>
-      <ContextMenuItem
-        icon="general/general/pin"
-        disabled={!actions.pin}
-        onSelect={() => actions.pin?.()}
-      >
-        {isPinned
-          ? t('dynamicTabs.unpinTabLabel')
-          : t('dynamicTabs.pinTabLabel')}
-      </ContextMenuItem>
-      <ContextMenuItem disabled={!actions.add} onSelect={() => actions.add?.()}>
-        {t('dynamicTabs.addTab')}
-      </ContextMenuItem>
-      <ContextMenuSeparator />
-      <ContextMenuItem
-        icon="general/general/close"
-        disabled={isPinned || !actions.close}
-        onSelect={() => actions.close?.()}
-      >
-        {t('dynamicTabs.close')}
-      </ContextMenuItem>
-      <ContextMenuItem
-        icon="general/general/close"
-        disabled={!hasClosableLeft || !actions.closeLeft}
-        onSelect={() => actions.closeLeft?.()}
-      >
-        {t('dynamicTabs.closeLeftTabs')}
-      </ContextMenuItem>
-      <ContextMenuItem
-        icon="general/general/close"
-        disabled={!hasClosableRight || !actions.closeRight}
-        onSelect={() => actions.closeRight?.()}
-      >
-        {t('dynamicTabs.closeRightTabs')}
-      </ContextMenuItem>
-      <ContextMenuItem
-        icon="general/general/close"
-        disabled={!actions.closeOthers}
-        onSelect={() => actions.closeOthers?.()}
-      >
-        {t('dynamicTabs.closeOthers')}
-      </ContextMenuItem>
+      {menuItems.map((item) => {
+        let separatorEl = item.separator ? (
+          <ContextMenuSeparator key={`${item.key}-sep`} />
+        ) : null;
+
+        if (
+          !item.key ||
+          (item.separator && !item.label && !item.children?.length)
+        ) {
+          return separatorEl;
+        }
+
+        const resolved = resolveMenuItem(
+          item.key,
+          tab,
+          item.label ?? '',
+          resolveCtx,
+        );
+        if (item.action) resolved.handleSelect = () => item.action!(tab);
+
+        if (item.children?.length) {
+          return (
+            <React.Fragment key={item.key}>
+              {separatorEl}
+              <ContextMenuSub>
+                <ContextMenuSubTrigger disabled={resolved.disabled}>
+                  {item.icon && <SVG name={item.icon} size="xs" />}
+                  {resolved.label}
+                </ContextMenuSubTrigger>
+                <ContextMenuSubContent>
+                  {item.children.map((child) => (
+                    <ContextMenuItem
+                      key={child.key}
+                      icon={child.icon}
+                      onSelect={
+                        child.action ? () => child.action!(tab) : undefined
+                      }
+                    >
+                      {child.label}
+                    </ContextMenuItem>
+                  ))}
+                </ContextMenuSubContent>
+              </ContextMenuSub>
+            </React.Fragment>
+          );
+        }
+
+        return (
+          <React.Fragment key={item.key}>
+            {separatorEl}
+            <ContextMenuItem
+              icon={item.icon}
+              disabled={resolved.disabled}
+              onSelect={resolved.handleSelect}
+            >
+              {resolved.label}
+            </ContextMenuItem>
+          </React.Fragment>
+        );
+      })}
     </>
   );
 }
+
+// ---------------------------------------------------------------------------
+// DynamicTabsList
+// ---------------------------------------------------------------------------
 
 function DynamicTabsList({
   items,
   activeTab: controlledActive,
   defaultActiveTab,
-  onActiveChange,
-  closeTabs,
-  togglePin,
-  addTab,
-  contextMenu: contextMenuFn,
+  onActive,
+  onClick,
+  onClose,
+  onTogglePin,
+  add,
+  contextMenu: contextMenuConfig,
   className,
-  ...props
+  ...rest
 }: DynamicTabsListProps) {
   const [internalActive, setInternalActive] = useState(defaultActiveTab);
   const activeTab = controlledActive ?? internalActive;
 
-  const handleActiveChange = useCallback(
-    (tabId: string) => {
-      if (!controlledActive) {
-        setInternalActive(tabId);
+  const handleClick = useCallback(
+    (tab: DynamicTabsProps) => {
+      if (tab.disabled) return;
+      onClick?.(tab);
+
+      const prevId = activeTab;
+      if (prevId !== tab.id) {
+        if (!controlledActive) {
+          setInternalActive(tab.id);
+        }
+        const prevItem = prevId
+          ? (items.find((t) => t.id === prevId) ?? null)
+          : null;
+        onActive?.(prevItem, tab);
       }
-      onActiveChange?.(tabId);
     },
-    [controlledActive, onActiveChange],
+    [activeTab, controlledActive, items, onClick, onActive],
   );
 
-  const buildActions = useCallback(
-    (tab: DynamicTabItem, index: number): DynamicTabActions => ({
-      close: closeTabs
-        ? () => {
-            if (!tab.pinned) closeTabs([tab.id]);
-          }
-        : undefined,
-      closeOthers: closeTabs
-        ? () => {
-            const ids = items
-              .filter((t, i) => i !== index && !t.pinned)
-              .map((t) => t.id);
-            if (ids.length > 0) closeTabs(ids);
-          }
-        : undefined,
-      closeLeft: closeTabs
-        ? () => {
-            const ids = items
-              .slice(0, index)
-              .filter((t) => !t.pinned)
-              .map((t) => t.id);
-            if (ids.length > 0) closeTabs(ids);
-          }
-        : undefined,
-      closeRight: closeTabs
-        ? () => {
-            const ids = items
-              .slice(index + 1)
-              .filter((t) => !t.pinned)
-              .map((t) => t.id);
-            if (ids.length > 0) closeTabs(ids);
-          }
-        : undefined,
-      pin: togglePin ? () => togglePin(tab.id) : undefined,
-      add: addTab ? () => addTab() : undefined,
-    }),
-    [items, closeTabs, togglePin, addTab],
-  );
+  const ctx: DynamicTabsListContextValue = {
+    items,
+    activeTab,
+    handleClick,
+    onActive,
+    onClick,
+    onClose,
+    onTogglePin,
+    add,
+  };
 
   return (
-    <ScrollArea
-      role="tablist"
-      data-slot="dynamic-tabs-list"
-      orientation="horizontal"
-      className={cn(
-        'w-full h-8 bg-gray-12 dark:bg-gray-2 rounded-md',
-        className,
-      )}
-    >
-      <div className="inline-flex h-8 items-center gap-1 p-1 min-w-full">
-        {items.map((tab, index) => {
-          const isActive = tab.id === activeTab;
-          const actions = buildActions(tab, index);
-          const hasClosableLeft = items.slice(0, index).some((t) => !t.pinned);
-          const hasClosableRight = items
-            .slice(index + 1)
-            .some((t) => !t.pinned);
+    <DynamicTabsListContext.Provider value={ctx}>
+      <ScrollArea
+        role="tablist"
+        data-slot="dynamic-tabs-list"
+        orientation="horizontal"
+        className={cn(
+          'w-full h-8 bg-gray-12 dark:bg-gray-2 rounded-md overscroll-contain',
+          className,
+        )}
+      >
+        <div className="inline-flex h-8 items-center gap-1 p-1 min-w-full">
+          {items.map((tab) => {
+            const button = <DynamicTabsTrigger key={tab.id} item={tab} />;
 
-          const button = (
-            <DynamicTabItemButton
-              item={tab}
-              isActive={isActive}
-              onClick={
-                tab.disabled ? undefined : () => handleActiveChange(tab.id)
-              }
-              onClose={closeTabs ? () => closeTabs([tab.id]) : undefined}
-              onTogglePin={togglePin ? () => togglePin(tab.id) : undefined}
-            />
-          );
+            if (contextMenuConfig === null) {
+              return (
+                <div key={tab.id} className="shrink-0">
+                  {button}
+                </div>
+              );
+            }
 
-          if (contextMenuFn === null) {
             return (
-              <div key={tab.id} className="shrink-0">
-                {button}
-              </div>
+              <ContextMenu key={tab.id}>
+                <ContextMenuTrigger asChild>{button}</ContextMenuTrigger>
+                <ContextMenuContent>
+                  <DynamicTabsContextMenu
+                    tab={tab}
+                    contextMenu={contextMenuConfig}
+                  />
+                </ContextMenuContent>
+              </ContextMenu>
             );
-          }
-
-          const menuContent = contextMenuFn ? (
-            contextMenuFn(tab, index, actions)
-          ) : (
-            <DynamicTabItemContextMenu
-              tab={tab}
-              actions={actions}
-              hasClosableLeft={hasClosableLeft}
-              hasClosableRight={hasClosableRight}
-            />
-          );
-
-          return (
-            <ContextMenu key={tab.id}>
-              <ContextMenuTrigger asChild>{button}</ContextMenuTrigger>
-              <ContextMenuContent>{menuContent}</ContextMenuContent>
-            </ContextMenu>
-          );
-        })}
-      </div>
-    </ScrollArea>
+          })}
+        </div>
+      </ScrollArea>
+    </DynamicTabsListContext.Provider>
   );
 }
 

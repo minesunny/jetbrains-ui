@@ -37,13 +37,13 @@ function Checkbox({
         'group relative inline-flex size-4 shrink-0 items-center justify-center rounded-[3px] border outline-none transition-[background-color,border-color,color,box-shadow] duration-150 ease-in-out',
         // light · unchecked
         'border-gray-8 bg-white text-gray-14',
-        'hover:border-gray-8 hover:bg-white',
+        'hover:border-gray-6 hover:bg-white',
         'focus-visible:border-blue-4 focus-visible:ring-2 focus-visible:ring-blue-4',
         'disabled:pointer-events-none disabled:cursor-not-allowed disabled:border-gray-11 disabled:bg-gray-13 disabled:text-gray-13',
         "[&[aria-invalid='true']]:border-red-4 [&[aria-invalid='true']:focus-visible]:ring-red-4",
         // dark · unchecked
-        'dark:border-gray-8 dark:bg-transparent dark:text-gray-14',
-        'dark:hover:border-gray-8 dark:hover:bg-transparent',
+        'dark:border-gray-6 dark:bg-transparent dark:text-gray-14',
+        'dark:hover:border-gray-7 dark:hover:bg-transparent',
         'dark:focus-visible:ring-blue-6',
         'dark:disabled:border-gray-11 dark:disabled:bg-gray-3 dark:disabled:text-gray-13',
         "dark:[&[aria-invalid='true']]:border-red-4 dark:[&[aria-invalid='true']:focus-visible]:ring-red-4",

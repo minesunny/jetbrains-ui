@@ -1,8 +1,7 @@
 export {
   DynamicTabsList,
   default,
-  type DynamicTabItem,
-  type DynamicTabActions,
-  type DynamicTabContextMenuFn,
+  type DynamicTabsProps,
   type DynamicTabsListProps,
+  type DynamicTabContextMenuProps,
 } from '../dynamic-tabs';

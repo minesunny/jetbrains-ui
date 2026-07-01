@@ -119,8 +119,8 @@ function TreeItemDisclosure({
           isLoading
             ? 'general/spinner/loader'
             : isExpanded
-              ? 'general/general/chevrondown'
-              : 'general/general/chevronright'
+              ? 'general/general/chevron-down'
+              : 'general/general/chevron-right'
         }
         size="md"
         className={

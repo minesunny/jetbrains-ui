@@ -2,6 +2,7 @@ import type { JetBrainsLocaleMessages } from './types';
 
 export const zhCN: JetBrainsLocaleMessages = {
   dynamicTabs: {
+    defaultTrigger: '标签页',
     modified: '已修改',
     unpinTab: '取消固定',
     closeTab: '关闭标签页',

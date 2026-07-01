@@ -421,8 +421,13 @@ function EditorPanel({
       <CodeEditorTabs
         items={tabItems}
         activeTab={activeFile ?? undefined}
-        onActiveChange={onSwitchFile}
-        closeTabs={(ids) => ids.forEach((id) => onCloseFile(id))}
+        onActive={(_prev, next) => onSwitchFile(next.id)}
+        onClose={(itemOrItems) => {
+          const ids = Array.isArray(itemOrItems)
+            ? itemOrItems.map((t) => t.id)
+            : [itemOrItems.id];
+          ids.forEach((id) => onCloseFile(id));
+        }}
       />
       {currentFile && (
         <CodeEditorPane

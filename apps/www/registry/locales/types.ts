@@ -12,6 +12,7 @@ export type DeepPartial<T> = {
 
 export interface JetBrainsLocaleMessages {
   dynamicTabs: {
+    defaultTrigger: string;
     modified: string;
     unpinTab: string;
     closeTab: string;

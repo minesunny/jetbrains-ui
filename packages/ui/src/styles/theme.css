@@ -111,4 +111,8 @@
 
   /* Z-Index */
   --z-popover: var(--jb-z-popover);
+
+  /* Shadows */
+  --shadow-popover: var(--jb-shadow-popover);
+  --shadow-popover-dark: var(--jb-shadow-popover-dark);
 }

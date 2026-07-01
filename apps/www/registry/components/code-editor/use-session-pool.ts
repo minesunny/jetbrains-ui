@@ -42,22 +42,32 @@ export function useStorageSessionPool(): StorageSessionPool {
     [],
   );
 
-  const switchTo = useCallback((editor: InstanceType<typeof ace.Editor>, tabId: string) => {
-    const session = poolRef.current.get(tabId);
-    if (!session) return;
+  const switchTo = useCallback(
+    (editor: InstanceType<typeof ace.Editor>, tabId: string) => {
+      const session = poolRef.current.get(tabId);
+      if (!session) return;
 
-    session.touch();
-    const { scrollTop, scrollLeft } = session.toJSON();
+      session.touch();
+      const scrollTop = session.getScrollTop();
+      const scrollLeft = session.getScrollLeft();
 
-    editor.setSession(session as unknown as InstanceType<typeof ace.EditSession>);
+      editor.setSession(
+        session as unknown as InstanceType<typeof ace.EditSession>,
+      );
 
-    // Scroll position is managed by VirtualRenderer, restore after layout
-    requestAnimationFrame(() => {
-      // ace-builds types are incomplete — setScrollTop/setScrollLeft exist at runtime
-      (editor as unknown as { setScrollTop(v: number): void }).setScrollTop(scrollTop);
-      (editor as unknown as { setScrollLeft(v: number): void }).setScrollLeft(scrollLeft);
-    });
-  }, []);
+      // Scroll position is managed by VirtualRenderer, restore after layout
+      requestAnimationFrame(() => {
+        // ace-builds types are incomplete — setScrollTop/setScrollLeft exist at runtime
+        (editor as unknown as { setScrollTop(v: number): void }).setScrollTop(
+          scrollTop,
+        );
+        (editor as unknown as { setScrollLeft(v: number): void }).setScrollLeft(
+          scrollLeft,
+        );
+      });
+    },
+    [],
+  );
 
   const close = useCallback(
     (tabId: string): StorageSessionSnapshot | undefined => {

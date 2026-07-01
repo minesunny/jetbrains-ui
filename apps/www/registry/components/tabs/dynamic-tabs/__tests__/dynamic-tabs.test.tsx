@@ -3,11 +3,10 @@ import userEvent from '@testing-library/user-event';
 
 import {
   DynamicTabsList,
-  type DynamicTabItem,
-  type DynamicTabContextMenuFn,
+  type DynamicTabsProps,
 } from '@/registry/components/tabs/dynamic-tabs';
 
-const fixture: DynamicTabItem[] = [
+const fixture: DynamicTabsProps[] = [
   { id: 'main', label: 'main.ts', pinned: true },
   { id: 'app', label: 'app.tsx' },
   { id: 'utils', label: 'utils.ts' },
@@ -19,27 +18,30 @@ function DynamicTabsTestHarness({
   items = fixture,
   activeTab,
   defaultActiveTab,
-  onActiveChange,
-  closeTabs,
-  togglePin,
+  onActive,
+  onClick,
+  onClose,
+  onTogglePin,
   contextMenu,
 }: {
-  items?: DynamicTabItem[];
+  items?: DynamicTabsProps[];
   activeTab?: string;
   defaultActiveTab?: string;
-  onActiveChange?: (tabId: string) => void;
-  closeTabs?: (tabIds: string[]) => void;
-  togglePin?: (tabId: string) => void;
-  contextMenu?: DynamicTabContextMenuFn | null;
+  onActive?: (prev: DynamicTabsProps | null, next: DynamicTabsProps) => void;
+  onClick?: (item: DynamicTabsProps) => void;
+  onClose?: (itemOrItems: DynamicTabsProps | DynamicTabsProps[]) => void;
+  onTogglePin?: (item: DynamicTabsProps, pinned: boolean) => void;
+  contextMenu?: DynamicTabsProps | null;
 }) {
   return (
     <DynamicTabsList
       items={items}
       activeTab={activeTab}
       defaultActiveTab={defaultActiveTab}
-      onActiveChange={onActiveChange}
-      closeTabs={closeTabs}
-      togglePin={togglePin}
+      onActive={onActive}
+      onClick={onClick}
+      onClose={onClose}
+      onTogglePin={onTogglePin}
       contextMenu={contextMenu}
     />
   );
@@ -76,18 +78,18 @@ describe('DynamicTabsList', () => {
     );
   });
 
-  it('calls onActiveChange when a tab is clicked', async () => {
+  it('calls onActive when a tab is clicked', async () => {
     const user = userEvent.setup();
-    const onActiveChange = vi.fn();
+    const onActive = vi.fn();
     render(
-      <DynamicTabsTestHarness
-        activeTab="main"
-        onActiveChange={onActiveChange}
-      />,
+      <DynamicTabsTestHarness activeTab="main" onActive={onActive} />,
     );
 
     await user.click(screen.getByRole('tab', { name: /app\.tsx/ }));
-    expect(onActiveChange).toHaveBeenCalledWith('app');
+    expect(onActive).toHaveBeenCalledWith(
+      expect.objectContaining({ id: 'main' }),
+      expect.objectContaining({ id: 'app' }),
+    );
   });
 
   it('shows pin icon for pinned tabs', () => {
@@ -103,30 +105,35 @@ describe('DynamicTabsList', () => {
     expect(tab.querySelector('[aria-label="Close tab"]')).toBeTruthy();
   });
 
-  it('calls closeTabs when close button is clicked', async () => {
+  it('calls onClose when close button is clicked', async () => {
     const user = userEvent.setup();
-    const closeTabs = vi.fn();
-    render(<DynamicTabsTestHarness closeTabs={closeTabs} />);
+    const onClose = vi.fn();
+    render(<DynamicTabsTestHarness onClose={onClose} />);
 
     const closeBtn = screen
       .getByRole('tab', { name: /app\.tsx/ })
       .querySelector('[aria-label="Close tab"]') as HTMLElement;
     await user.click(closeBtn);
 
-    expect(closeTabs).toHaveBeenCalledWith(['app']);
+    expect(onClose).toHaveBeenCalledWith(
+      expect.objectContaining({ id: 'app' }),
+    );
   });
 
-  it('calls togglePin when pin icon is clicked', async () => {
+  it('calls onTogglePin when pin icon is clicked', async () => {
     const user = userEvent.setup();
-    const togglePin = vi.fn();
-    render(<DynamicTabsTestHarness togglePin={togglePin} />);
+    const onTogglePin = vi.fn();
+    render(<DynamicTabsTestHarness onTogglePin={onTogglePin} />);
 
     const pinBtn = screen
       .getByRole('tab', { name: /main\.ts/ })
       .querySelector('[aria-label="Unpin tab"]') as HTMLElement;
     await user.click(pinBtn);
 
-    expect(togglePin).toHaveBeenCalledWith('main');
+    expect(onTogglePin).toHaveBeenCalledWith(
+      expect.objectContaining({ id: 'main' }),
+      false,
+    );
   });
 
   it('renders disabled tabs with disabled state', () => {
@@ -138,10 +145,10 @@ describe('DynamicTabsList', () => {
   describe('context menu', () => {
     it('shows default context menu with all actions for unpinned tab', async () => {
       const user = userEvent.setup();
-      const closeTabs = vi.fn();
-      const togglePin = vi.fn();
+      const onClose = vi.fn();
+      const onTogglePin = vi.fn();
       render(
-        <DynamicTabsTestHarness closeTabs={closeTabs} togglePin={togglePin} />,
+        <DynamicTabsTestHarness onClose={onClose} onTogglePin={onTogglePin} />,
       );
 
       await openContextMenu(user, 'app.tsx');
@@ -166,7 +173,7 @@ describe('DynamicTabsList', () => {
     it('disables Close for pinned tab and shows Unpin', async () => {
       const user = userEvent.setup();
       render(
-        <DynamicTabsTestHarness closeTabs={vi.fn()} togglePin={vi.fn()} />,
+        <DynamicTabsTestHarness onClose={vi.fn()} onTogglePin={vi.fn()} />,
       );
 
       await openContextMenu(user, 'main.ts');
@@ -181,8 +188,8 @@ describe('DynamicTabsList', () => {
 
     it('close-range actions skip pinned tabs', async () => {
       const user = userEvent.setup();
-      const closeTabs = vi.fn();
-      render(<DynamicTabsTestHarness closeTabs={closeTabs} />);
+      const onClose = vi.fn();
+      render(<DynamicTabsTestHarness onClose={onClose} />);
 
       // items: [main(pinned), app, utils, styles, test(disabled)]
       // Right-click "utils" (index 2)
@@ -194,13 +201,15 @@ describe('DynamicTabsList', () => {
       await user.click(closeLeftItem);
 
       // Should skip main (pinned), only close app
-      expect(closeTabs).toHaveBeenCalledWith(['app']);
+      expect(onClose).toHaveBeenCalledWith([
+        expect.objectContaining({ id: 'app' }),
+      ]);
     });
 
     it('Close Others skips pinned tabs', async () => {
       const user = userEvent.setup();
-      const closeTabs = vi.fn();
-      render(<DynamicTabsTestHarness closeTabs={closeTabs} />);
+      const onClose = vi.fn();
+      render(<DynamicTabsTestHarness onClose={onClose} />);
 
       await openContextMenu(user, 'utils.ts');
 
@@ -210,7 +219,11 @@ describe('DynamicTabsList', () => {
       await user.click(closeOthersItem);
 
       // Skip main (pinned), skip test (disabled is still closable)
-      expect(closeTabs).toHaveBeenCalledWith(['app', 'styles', 'test']);
+      expect(onClose).toHaveBeenCalledWith([
+        expect.objectContaining({ id: 'app' }),
+        expect.objectContaining({ id: 'styles' }),
+        expect.objectContaining({ id: 'test' }),
+      ]);
     });
 
     it('does not render context menu when contextMenu is null', () => {
@@ -220,40 +233,9 @@ describe('DynamicTabsList', () => {
       ).toBe(0);
     });
 
-    it('renders custom context menu from render function', async () => {
+    it('disables all close actions when onClose is not provided', async () => {
       const user = userEvent.setup();
-      const customMenu: DynamicTabContextMenuFn = (tab, index, actions) => (
-        <>
-          <div data-testid="custom-label">
-            {tab.label}:{index}
-          </div>
-          <button
-            type="button"
-            data-testid="custom-action"
-            onClick={() => actions.close?.()}
-          >
-            Custom Close
-          </button>
-        </>
-      );
-
-      render(
-        <DynamicTabsTestHarness contextMenu={customMenu} closeTabs={vi.fn()} />,
-      );
-
-      await openContextMenu(user, 'app.tsx');
-
-      expect(await screen.findByTestId('custom-label')).toHaveTextContent(
-        'app.tsx:1',
-      );
-      expect(screen.getByTestId('custom-action')).toHaveTextContent(
-        'Custom Close',
-      );
-    });
-
-    it('disables all close actions when closeTabs is not provided', async () => {
-      const user = userEvent.setup();
-      render(<DynamicTabsTestHarness togglePin={vi.fn()} />);
+      render(<DynamicTabsTestHarness onTogglePin={vi.fn()} />);
 
       await openContextMenu(user, 'app.tsx');
 
@@ -273,9 +255,9 @@ describe('DynamicTabsList', () => {
       ).toHaveAttribute('data-disabled');
     });
 
-    it('disables Pin/Unpin when togglePin is not provided', async () => {
+    it('disables Pin/Unpin when onTogglePin is not provided', async () => {
       const user = userEvent.setup();
-      render(<DynamicTabsTestHarness closeTabs={vi.fn()} />);
+      render(<DynamicTabsTestHarness onClose={vi.fn()} />);
 
       await openContextMenu(user, 'app.tsx');
 

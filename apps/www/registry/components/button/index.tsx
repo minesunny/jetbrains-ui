@@ -34,7 +34,7 @@ const buttonVariants = cva(
           'disabled:bg-gray-12 disabled:text-gray-8 disabled:border-transparent',
           // Dark
           'dark:border-transparent dark:bg-gray-2 dark:text-gray-12',
-          'dark:hover:bg-gray-2 dark:hover:text-gray-12 dark:hover:border-transparent',
+          'dark:hover:bg-gray-3 dark:hover:text-gray-12 dark:hover:border-gray-5',
           'dark:active:bg-gray-2 dark:active:text-gray-1 dark:active:border-gray-5',
           'dark:focus-visible:ring-blue-6 dark:focus-visible:ring-offset-gray-2',
           'dark:disabled:bg-gray-5 dark:disabled:text-gray-8 dark:disabled:border-transparent',

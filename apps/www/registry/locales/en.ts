@@ -2,6 +2,7 @@ import type { JetBrainsLocaleMessages } from './types';
 
 export const en: JetBrainsLocaleMessages = {
   dynamicTabs: {
+    defaultTrigger: 'Tab',
     modified: 'Modified',
     unpinTab: 'Unpin tab',
     closeTab: 'Close tab',

@@ -9,6 +9,9 @@ import {
   CodeEditorStatusBar,
   type EditorTabItem,
 } from '@/registry/components/code-editor';
+import {
+  type DynamicTabsProps,
+} from '@/registry/components/tabs/dynamic-tabs';
 import { useStorageSessionPool } from '@/registry/components/code-editor/use-session-pool';
 import type { StorageSession } from '@/registry/components/code-editor/storage-session';
 import { EditorContext } from '@/registry/components/code-editor';
@@ -142,12 +145,18 @@ export default function CodeEditorDemo() {
     [activeTab],
   );
 
-  const handleActiveChange = useCallback((tabId: string) => {
-    setActiveTab(tabId);
-  }, []);
+  const handleActiveChange = useCallback(
+    (_prev: DynamicTabsProps | null, next: DynamicTabsProps) => {
+      setActiveTab(next.id);
+    },
+    [],
+  );
 
   const handleCloseTabs = useCallback(
-    (ids: string[]) => {
+    (itemOrItems: DynamicTabsProps | DynamicTabsProps[]) => {
+      const ids = Array.isArray(itemOrItems)
+        ? itemOrItems.map((t) => t.id)
+        : [itemOrItems.id];
       setTabs((prev) => prev.filter((t) => !ids.includes(t.id)));
       setModified((prev) => {
         const next = { ...prev };
@@ -182,8 +191,8 @@ export default function CodeEditorDemo() {
       <CodeEditorTabs
         items={tabItems}
         activeTab={activeTab}
-        onActiveChange={handleActiveChange}
-        closeTabs={handleCloseTabs}
+        onActive={handleActiveChange}
+        onClose={handleCloseTabs}
       />
       {initialSession ? (
         <CodeEditorPane session={initialSession} onChange={handleChange} />

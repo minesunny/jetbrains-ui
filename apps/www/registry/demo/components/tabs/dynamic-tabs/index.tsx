@@ -4,10 +4,10 @@ import { useState, useCallback, memo } from 'react';
 
 import {
   DynamicTabsList,
-  type DynamicTabItem,
+  type DynamicTabsProps,
 } from '@/registry/components/tabs/dynamic-tabs';
 
-const initialTabs: DynamicTabItem[] = [
+const initialTabs: DynamicTabsProps[] = [
   {
     id: 'main',
     label: 'main.ts',
@@ -40,27 +40,33 @@ export default function DynamicTabsDemo() {
   const [tabs, setTabs] = useState(initialTabs);
   const [activeId, setActiveId] = useState('main');
 
-  const closeTabs = useCallback((ids: string[]) => {
-    setTabs((prev) => {
-      const next = prev.filter((t) => !ids.includes(t.id));
-      return next;
-    });
-  }, []);
+  const handleClose = useCallback(
+    (itemOrItems: DynamicTabsProps | DynamicTabsProps[]) => {
+      const ids = Array.isArray(itemOrItems)
+        ? itemOrItems.map((t) => t.id)
+        : [itemOrItems.id];
+      setTabs((prev) => prev.filter((t) => !ids.includes(t.id)));
+    },
+    [],
+  );
 
-  const togglePin = useCallback((tabId: string) => {
-    setTabs((prev) =>
-      prev.map((t) => (t.id === tabId ? { ...t, pinned: !t.pinned } : t)),
-    );
-  }, []);
+  const handleTogglePin = useCallback(
+    (item: DynamicTabsProps, pinned: boolean) => {
+      setTabs((prev) =>
+        prev.map((t) => (t.id === item.id ? { ...t, pinned } : t)),
+      );
+    },
+    [],
+  );
 
   return (
     <div className="w-full max-w-[520px]">
       <DynamicTabsList
         items={tabs}
         activeTab={activeId}
-        onActiveChange={setActiveId}
-        closeTabs={closeTabs}
-        togglePin={togglePin}
+        onActive={(_prev, next) => setActiveId(next.id)}
+        onClose={handleClose}
+        onTogglePin={handleTogglePin}
       />
       <div className="mt-2 rounded-[4px] border border-gray-8 dark:border-gray-6 bg-white dark:bg-gray-3 p-3 min-h-[120px]">
         {tabs.map((tab) => (

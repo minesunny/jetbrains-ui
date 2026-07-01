@@ -16,7 +16,7 @@ import { cn } from '@workspace/ui/lib/utils';
 import { useJetBrainsLocale } from '@/registry/components/provider';
 import {
   DynamicTabsList,
-  type DynamicTabItem,
+  type DynamicTabsProps,
 } from '@/registry/components/tabs/dynamic-tabs';
 import { Separator } from '@/registry/components/separator';
 import { useAceEditor, type UseAceEditorOptions } from './use-ace-editor';
@@ -25,7 +25,7 @@ import { useAceEditor, type UseAceEditorOptions } from './use-ace-editor';
 // EditorTabItem
 // ---------------------------------------------------------------------------
 
-export interface EditorTabItem extends DynamicTabItem {
+export interface EditorTabItem extends DynamicTabsProps {
   /** Ace language mode, e.g. 'typescript', 'css' */
   mode?: string;
   /** Editor content for this tab */

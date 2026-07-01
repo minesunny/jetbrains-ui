@@ -4,15 +4,15 @@ import { useState, useCallback } from 'react';
 
 import {
   DynamicTabsList,
-  type DynamicTabItem,
+  type DynamicTabsProps,
 } from '@/registry/components/tabs/dynamic-tabs';
 
 // ---------------------------------------------------------------------------
-// 8.4 — Modified indicator tests (on DynamicTabItem)
+// 8.4 — Modified indicator tests (on DynamicTabsProps)
 // ---------------------------------------------------------------------------
 
 describe('DynamicTabsList — modified indicator', () => {
-  const items: DynamicTabItem[] = [
+  const items: DynamicTabsProps[] = [
     { id: 'main', label: 'main.ts' },
     { id: 'app', label: 'app.tsx', modified: true },
     { id: 'pinned', label: 'config.ts', pinned: true, modified: true },
@@ -45,7 +45,7 @@ describe('DynamicTabsList — modified indicator', () => {
       <DynamicTabsList
         items={items}
         defaultActiveTab="main"
-        closeTabs={() => {}}
+        onClose={() => {}}
       />,
     );
     const appTab = screen.getByRole('tab', { name: /app\.tsx/i });
