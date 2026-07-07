@@ -5,7 +5,7 @@
   "title": "Gutter Check Box Indeterminate",
   "description": "Gutter Check Box Indeterminate icon from vcs category.",
   "registryDependencies": [
-    "icons-vcs-types"
+    "icons-utils"
   ],
   "files": [
     {

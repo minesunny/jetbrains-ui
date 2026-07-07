@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-General/upload",
+  "name": "icons-general-general-upload",
   "type": "registry:ui",
-  "title": "General/upload",
-  "description": "General/upload icon from general category.",
-  "registryDependencies": [],
+  "title": "Upload",
+  "description": "Upload icon from general category.",
+  "registryDependencies": [
+    "icons-utils"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/General/upload/upload_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/General/upload/upload_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/general/upload/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/upload/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "General/upload",
+      "upload",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

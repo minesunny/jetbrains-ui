@@ -5,7 +5,7 @@
   "title": "Dislike Selected",
   "description": "Dislike Selected icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

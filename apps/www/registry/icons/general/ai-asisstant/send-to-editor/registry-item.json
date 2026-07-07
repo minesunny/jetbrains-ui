@@ -5,7 +5,7 @@
   "title": "Send To Editor",
   "description": "Send To Editor icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

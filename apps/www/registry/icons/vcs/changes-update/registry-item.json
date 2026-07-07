@@ -5,7 +5,7 @@
   "title": "Changes Update",
   "description": "Changes Update icon from vcs category.",
   "registryDependencies": [
-    "icons-vcs-types"
+    "icons-utils"
   ],
   "files": [
     {

@@ -248,5 +248,4 @@ export { Xsd } from './xsd';
 export type { XsdProps } from './xsd';
 export { YarnLock } from './yarn-lock';
 export type { YarnLockProps } from './yarn-lock';
-export { svgNames } from './types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';
+export type { SvgMode, SvgProps, SvgSize } from '../utils';

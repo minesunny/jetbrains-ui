@@ -5,7 +5,7 @@
   "title": "Feature Answer",
   "description": "Feature Answer icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

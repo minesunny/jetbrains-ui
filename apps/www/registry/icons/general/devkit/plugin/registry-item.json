@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-devkit/plugin",
+  "name": "icons-general-devkit-plugin",
   "type": "registry:ui",
-  "title": "Devkit/plugin",
-  "description": "Devkit/plugin icon from general category.",
-  "registryDependencies": [],
+  "title": "Plugin",
+  "description": "Plugin icon from general category.",
+  "registryDependencies": [
+    "icons-utils"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/devkit/plugin/plugin_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/devkit/plugin/plugin_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/devkit/plugin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/plugin/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "devkit/plugin",
+      "plugin",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

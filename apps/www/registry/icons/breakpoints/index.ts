@@ -76,5 +76,4 @@ export { MultipleBreakpointsMuted } from './multiple-breakpoints-muted';
 export type { MultipleBreakpointsMutedProps } from './multiple-breakpoints-muted';
 export { QuestionBadge } from './question-badge';
 export type { QuestionBadgeProps } from './question-badge';
-export { svgNames } from './types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';
+export type { SvgMode, SvgProps, SvgSize } from '../utils';

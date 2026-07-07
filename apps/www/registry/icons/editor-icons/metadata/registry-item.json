@@ -5,7 +5,7 @@
   "title": "Metadata",
   "description": "Metadata icon from editor-icons category.",
   "registryDependencies": [
-    "icons-editor-icons-types"
+    "icons-utils"
   ],
   "files": [
     {

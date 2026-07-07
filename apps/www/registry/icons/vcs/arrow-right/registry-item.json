@@ -5,7 +5,7 @@
   "title": "Arrow Right",
   "description": "Arrow Right icon from vcs category.",
   "registryDependencies": [
-    "icons-vcs-types"
+    "icons-utils"
   ],
   "files": [
     {

@@ -90,5 +90,4 @@ export { TestRunnerWatch } from './test-runner-watch';
 export type { TestRunnerWatchProps } from './test-runner-watch';
 export { Watch } from './watch';
 export type { WatchProps } from './watch';
-export { svgNames } from './types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';
+export type { SvgMode, SvgProps, SvgSize } from '../utils';

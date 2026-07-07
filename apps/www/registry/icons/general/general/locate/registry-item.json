@@ -1,28 +1,25 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "icons-general-General/locate",
+  "name": "icons-general-general-locate",
   "type": "registry:ui",
-  "title": "General/locate",
-  "description": "General/locate icon from general category.",
-  "registryDependencies": [],
+  "title": "Locate",
+  "description": "Locate icon from general category.",
+  "registryDependencies": [
+    "icons-utils"
+  ],
   "files": [
     {
-      "path": "registry/icons/General/General/locate/locate_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/General/General/locate/locate_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/general/general/locate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/general/locate/index.tsx"
     }
   ],
   "meta": {
     "keywords": [
-      "General/locate",
+      "locate",
       "icon",
       "general",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

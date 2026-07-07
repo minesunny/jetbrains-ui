@@ -5,7 +5,7 @@
   "title": "Suggested Refactoring Bulb",
   "description": "Suggested Refactoring Bulb icon from editor-icons category.",
   "registryDependencies": [
-    "icons-editor-icons-types"
+    "icons-utils"
   ],
   "files": [
     {

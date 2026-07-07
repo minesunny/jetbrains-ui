@@ -5,7 +5,7 @@
   "title": "Ai Assistant Colored",
   "description": "Ai Assistant Colored icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

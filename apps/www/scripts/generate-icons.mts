@@ -4,8 +4,15 @@ import { transform } from '@svgr/core';
 
 // ─── Configuration ───────────────────────────────────────────────────────────
 
-const SOURCE_ROOT = path.join(process.cwd(), 'registry', 'icons');
 const REGISTRY_ROOT = path.join(process.cwd(), 'registry', 'icons');
+
+// Standard JetBrains notice emitted at the top of every generated icon .tsx.
+// (Source .svg in this repo are stripped of the notice; the expui batch carries
+// it. Emitting the standard notice uniformly satisfies Apache-2.0 §4(c).)
+const COPYRIGHT_HEADER = `/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */`;
 
 const CATEGORY_MAP: Record<string, string> = {
   Breakpoints: 'breakpoints',
@@ -93,6 +100,8 @@ type GenerateOptions = {
   dryRun: boolean;
   allowUnpaired: boolean;
   list: boolean;
+  /** External source .svg root (PascalCase category dirs). Defaults to registry/icons. */
+  src: string;
 };
 
 // ─── Name Utilities ──────────────────────────────────────────────────────────
@@ -171,11 +180,12 @@ function generatePairedComponent(
   lightInnerJsx: string,
   darkInnerJsx: string,
   viewBox: string,
-  typesRelPath: string,
+  utilsRelPath: string,
 ): string {
-  return `import type { FC } from 'react';
+  return `${COPYRIGHT_HEADER}
+import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '${typesRelPath}';
+import { type SvgProps, sizeMap } from '${utilsRelPath}';
 
 export type ${pascalName}Props = SvgProps;
 
@@ -244,6 +254,8 @@ export const ${pascalName}: FC<${pascalName}Props> = ({
     />
   );
 };
+
+export default ${pascalName};
 `;
 }
 
@@ -251,11 +263,12 @@ function generateSingleComponent(
   pascalName: string,
   innerJsx: string,
   viewBox: string,
-  typesRelPath: string,
+  utilsRelPath: string,
 ): string {
-  return `import type { FC } from 'react';
+  return `${COPYRIGHT_HEADER}
+import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '${typesRelPath}';
+import { type SvgProps, sizeMap } from '${utilsRelPath}';
 
 export type ${pascalName}Props = SvgProps;
 
@@ -281,6 +294,8 @@ export const ${pascalName}: FC<${pascalName}Props> = ({
     ${innerJsx}
   </svg>
 );
+
+export default ${pascalName};
 `;
 }
 
@@ -298,7 +313,7 @@ function generateRegistryItemJson(
       type: 'registry:ui',
       title: entry.pascalName.replace(/([A-Z])/gu, ' $1').trim(),
       description: `${entry.pascalName.replace(/([A-Z])/gu, ' $1').trim()} icon from ${entry.category} category.`,
-      registryDependencies: [`icons-${entry.category}-types`],
+      registryDependencies: ['icons-utils'],
       files: [
         {
           path: `registry/icons/${iconPath}/index.tsx`,
@@ -315,14 +330,7 @@ function generateRegistryItemJson(
   );
 }
 
-function generateTypesFile(
-  iconNames: string[],
-): string {
-  const sortedNames = [...iconNames].sort();
-  const namesLiteral = sortedNames
-    .map((name) => `  '${name}',`)
-    .join('\n');
-
+function generateUtilsFile(): string {
   return `import type React from 'react';
 
 export type SvgSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
@@ -340,28 +348,22 @@ export const sizeMap: Record<SvgSize | number, number> = {
   lg: 20,
   xl: 24,
 };
-
-export const svgNames = [
-${namesLiteral}
-] as const;
-
-export type SvgName = (typeof svgNames)[number];
 `;
 }
 
-function generateTypesRegistryJson(category: string, title: string): string {
+function generateUtilsRegistryJson(): string {
   return JSON.stringify(
     {
       $schema: 'https://ui.shadcn.com/schema/registry-item.json',
-      name: `icons-${category}-types`,
+      name: 'icons-utils',
       type: 'registry:ui',
-      title: `${title} Icons Types`,
-      description: `Shared types and utilities for ${title} icon components.`,
+      title: 'Icon Utils',
+      description: 'Shared types and size map for icon components.',
       files: [
         {
-          path: `registry/icons/${category}/types.ts`,
+          path: 'registry/icons/utils.ts',
           type: 'registry:ui',
-          target: `components/jetbrains-ui/icons/${category}/types.ts`,
+          target: 'components/jetbrains-ui/icons/utils.ts',
         },
       ],
     },
@@ -401,7 +403,7 @@ function generateCategoryRegistryJson(
       type: 'registry:ui',
       title: `${title} Icons`,
       description: `All ${iconEntries.length} icons from the ${title} category.`,
-      registryDependencies: [`icons-${category}-types`],
+      registryDependencies: ['icons-utils'],
       files,
     },
     null,
@@ -417,9 +419,7 @@ function generateBarrelIndex(iconEntries: IconEntry[]): string {
     )
     .join('\n');
 
-  const category = iconEntries[0]?.category ?? '';
-  const typesRelPath = iconEntries[0]?.subcategory ? '../../types' : './types';
-  return `${lines}\nexport { svgNames } from '${typesRelPath}';\nexport type { SvgName, SvgMode, SvgProps, SvgSize } from '${typesRelPath}';\n`;
+  return `${lines}\nexport type { SvgMode, SvgProps, SvgSize } from '../utils';\n`;
 }
 
 function generateSubcategoryBarrelIndex(
@@ -693,6 +693,8 @@ async function formatWithPrettier(
 // ─── Main Generation Logic ───────────────────────────────────────────────────
 
 async function generateIcons(options: GenerateOptions) {
+  const SOURCE_ROOT = options.src;
+
   // Determine which categories to process
   let categoriesToProcess: string[];
 
@@ -717,6 +719,19 @@ async function generateIcons(options: GenerateOptions) {
     options.target.includes('/') && options.target !== 'all'
       ? options.target.split('/').slice(1).join('/')
       : null;
+
+  // Emit the shared utils.ts + its registry item once (shared across all domains).
+  if (!options.dryRun) {
+    const utilsCode = await formatWithPrettier(
+      generateUtilsFile(),
+      path.join(REGISTRY_ROOT, 'utils.ts'),
+    );
+    await fs.writeFile(path.join(REGISTRY_ROOT, 'utils.ts'), utilsCode);
+    await fs.writeFile(
+      path.join(REGISTRY_ROOT, 'utils.registry.json'),
+      generateUtilsRegistryJson() + '\n',
+    );
+  }
 
   let totalGenerated = 0;
 
@@ -797,9 +812,9 @@ async function generateIcons(options: GenerateOptions) {
       const targetDir = path.join(REGISTRY_ROOT, entry.registryDir);
       await fs.mkdir(targetDir, { recursive: true });
 
-      // Determine types relative path
-      const depth = entry.subcategory ? 2 : 1;
-      const typesRelPath = '../'.repeat(depth) + 'types';
+      // Determine utils relative path (shared at registry/icons/utils.ts)
+      const depth = entry.subcategory ? 3 : 2;
+      const utilsRelPath = '../'.repeat(depth) + 'utils';
 
       // Generate component
       let componentCode: string;
@@ -817,7 +832,7 @@ async function generateIcons(options: GenerateOptions) {
           lightInner,
           darkInner,
           viewBox,
-          typesRelPath,
+          utilsRelPath,
         );
       } else if (entry.variant === 'single') {
         const svg = await fs.readFile(entry.singleSvgPath!, 'utf-8');
@@ -827,7 +842,7 @@ async function generateIcons(options: GenerateOptions) {
           entry.pascalName,
           innerJsx,
           viewBox,
-          typesRelPath,
+          utilsRelPath,
         );
       } else if (entry.variant === 'light-only') {
         const lightSvg = await fs.readFile(entry.lightSvgPath!, 'utf-8');
@@ -837,7 +852,7 @@ async function generateIcons(options: GenerateOptions) {
           entry.pascalName,
           innerJsx,
           viewBox,
-          typesRelPath,
+          utilsRelPath,
         );
       } else {
         // dark-only
@@ -848,7 +863,7 @@ async function generateIcons(options: GenerateOptions) {
           entry.pascalName,
           innerJsx,
           viewBox,
-          typesRelPath,
+          utilsRelPath,
         );
       }
 
@@ -873,28 +888,6 @@ async function generateIcons(options: GenerateOptions) {
 
       totalGenerated++;
     }
-
-    // Generate types.ts
-    const allKebabNames = entries.map((e) => e.kebabName);
-    const typesCode = generateTypesFile(allKebabNames);
-    const formattedTypes = await formatWithPrettier(
-      typesCode,
-      path.join(REGISTRY_ROOT, registryCategory, 'types.ts'),
-    );
-    await fs.writeFile(
-      path.join(REGISTRY_ROOT, registryCategory, 'types.ts'),
-      formattedTypes,
-    );
-
-    // Generate types.registry.json
-    const typesRegistryJson = generateTypesRegistryJson(
-      registryCategory,
-      kebabToPascal(registryCategory),
-    );
-    await fs.writeFile(
-      path.join(REGISTRY_ROOT, registryCategory, 'types.registry.json'),
-      typesRegistryJson + '\n',
-    );
 
     // Generate barrel index files
     if (bySubcategory.size === 1 && bySubcategory.has(null)) {
@@ -962,7 +955,7 @@ async function generateIcons(options: GenerateOptions) {
 
       const categoryBarrel =
         categoryExports.join('\n') +
-        "\nexport { svgNames } from './types';\nexport type { SvgName, SvgMode, SvgProps, SvgSize } from './types';\n";
+        "\nexport type { SvgMode, SvgProps, SvgSize } from '../utils';\n";
       const formattedCategoryBarrel = await formatWithPrettier(
         categoryBarrel,
         path.join(REGISTRY_ROOT, registryCategory, 'index.ts'),
@@ -1000,6 +993,7 @@ function parseArgs(): GenerateOptions {
     dryRun: false,
     allowUnpaired: false,
     list: false,
+    src: path.join(process.cwd(), 'registry', 'icons'),
   };
 
   for (let i = 0; i < args.length; i++) {
@@ -1018,6 +1012,9 @@ function parseArgs(): GenerateOptions {
         break;
       case '--list':
         options.list = true;
+        break;
+      case '--src':
+        options.src = path.resolve(args[++i]);
         break;
       default:
         if (!args[i].startsWith('--')) {

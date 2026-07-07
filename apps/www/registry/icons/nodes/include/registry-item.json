@@ -4,15 +4,14 @@
   "type": "registry:ui",
   "title": "Include",
   "description": "Include icon from nodes category.",
-  "registryDependencies": [],
+  "registryDependencies": [
+    "icons-utils"
+  ],
   "files": [
     {
-      "path": "registry/icons/Nodes/include/include_Theme-Dark.svg",
-      "type": "registry:source"
-    },
-    {
-      "path": "registry/icons/Nodes/include/include_Theme-Light.svg",
-      "type": "registry:source"
+      "path": "registry/icons/nodes/include/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/nodes/include/index.tsx"
     }
   ],
   "meta": {
@@ -21,8 +20,6 @@
       "icon",
       "nodes",
       "jetbrains"
-    ],
-    "hasLight": true,
-    "hasDark": true
+    ]
   }
 }

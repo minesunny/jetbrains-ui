@@ -5,7 +5,7 @@
   "title": "R Tool Window",
   "description": "R Tool Window icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

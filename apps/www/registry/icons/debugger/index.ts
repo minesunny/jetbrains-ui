@@ -34,5 +34,4 @@ export { VariablesTab } from './variables-tab';
 export type { VariablesTabProps } from './variables-tab';
 export { WatchLastReturnValue } from './watch-last-return-value';
 export type { WatchLastReturnValueProps } from './watch-last-return-value';
-export { svgNames } from './types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';
+export type { SvgMode, SvgProps, SvgSize } from '../utils';

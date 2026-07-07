@@ -5,7 +5,7 @@
   "title": "Feature Context",
   "description": "Feature Context icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

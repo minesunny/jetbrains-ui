@@ -3,164 +3,210 @@
   "name": "icons-breakpoints",
   "type": "registry:ui",
   "title": "Breakpoints Icons",
-  "description": "All icons from the breakpoints category.",
-  "registryDependencies": [],
+  "description": "All 39 icons from the Breakpoints category.",
+  "registryDependencies": [
+    "icons-utils"
+  ],
   "files": [
     {
-      "path": "registry/icons/Breakpoints/breakpoint/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/index.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/index.ts"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointDependent/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-dependent/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-dependent/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointException/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointExceptionDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-exception/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-exception/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointField/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-exception-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-exception-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointFieldDependent/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointFieldDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-field-dependent/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-dependent/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointFieldMuted/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-field-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointFieldMutedDependent/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-field-muted/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-muted/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointFieldMutedDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-field-muted-dependent/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-muted-dependent/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointFieldUnsuspendent/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-field-muted-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-muted-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointFieldUnsuspendentDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-field-unsuspendent/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-unsuspendent/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointFieldUnsuspendentValid/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-field-unsuspendent-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-unsuspendent-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointFieldValid/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-field-unsuspendent-valid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-unsuspendent-valid/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointInvalid/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-field-valid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-field-valid/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointLambda/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-invalid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-invalid/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMethod/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-lambda/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-lambda/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMethodDependent/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-method/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMethodDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-method-dependent/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-dependent/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMethodMuted/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-method-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMethodMutedDependent/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-method-muted/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-muted/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMethodMutedDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-method-muted-dependent/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-muted-dependent/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMethodUnsuspendent/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-method-muted-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-muted-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMethodUnsuspendentDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-method-unsuspendent/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-unsuspendent/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMethodUnsuspendentValid/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-method-unsuspendent-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-unsuspendent-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMethodValid/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-method-unsuspendent-valid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-unsuspendent-valid/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMuted/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-method-valid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-method-valid/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMutedDependent/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-muted/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-muted/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointMutedDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-muted-dependent/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-muted-dependent/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointObsolete/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-muted-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-muted-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointUnsuspendent/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-obsolete/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-obsolete/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointUnsuspendentDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-unsuspendent/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-unsuspendent/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointUnsuspendentValid/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-unsuspendent-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-unsuspendent-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/breakpointValid/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-unsuspendent-valid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-unsuspendent-valid/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/multipleBreakpoints/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/breakpoint-valid/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/breakpoint-valid/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/multipleBreakpointsDisabled/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/multiple-breakpoints/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/multiple-breakpoints/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/multipleBreakpointsMuted/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/multiple-breakpoints-disabled/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/multiple-breakpoints-disabled/index.tsx"
     },
     {
-      "path": "registry/icons/Breakpoints/questionBadge/registry-item.json",
-      "type": "registry:item"
+      "path": "registry/icons/breakpoints/multiple-breakpoints-muted/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/multiple-breakpoints-muted/index.tsx"
+    },
+    {
+      "path": "registry/icons/breakpoints/question-badge/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/breakpoints/question-badge/index.tsx"
     }
   ]
 }

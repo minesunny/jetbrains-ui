@@ -112,5 +112,4 @@ export { Update } from './update';
 export type { UpdateProps } from './update';
 export { Vcs } from './vcs';
 export type { VcsProps } from './vcs';
-export { svgNames } from './types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';
+export type { SvgMode, SvgProps, SvgSize } from '../utils';

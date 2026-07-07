@@ -5,7 +5,7 @@
   "title": "Feature Comment",
   "description": "Feature Comment icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

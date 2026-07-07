@@ -1,6 +1,10 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
 import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../types';
+import { type SvgProps, sizeMap } from '../../utils';
 
 export type ViteJsProps = SvgProps;
 
@@ -137,3 +141,5 @@ export const ViteJs: FC<ViteJsProps> = ({
     />
   );
 };
+
+export default ViteJs;

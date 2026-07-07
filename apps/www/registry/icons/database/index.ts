@@ -430,5 +430,4 @@ export { Yugabyte } from './yugabyte';
 export type { YugabyteProps } from './yugabyte';
 export { Redis } from './redis';
 export type { RedisProps } from './redis';
-export { svgNames } from './types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';
+export type { SvgMode, SvgProps, SvgSize } from '../utils';

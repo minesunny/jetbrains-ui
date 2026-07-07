@@ -1,13 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { Suspense, lazy, useEffect, useState, type ComponentType } from 'react';
 import { useTheme } from 'next-themes';
-
-// Auto-import all SVGs from registry/icons via webpack require.context
-// svg-sprite-loader processes each into the global sprite sheet
-// @ts-expect-error webpack-specific API
-const svgIcons = require.context('@registry/icons/', true, /\.svg$/);
-svgIcons.keys().forEach(svgIcons);
+import {
+  iconRegistry,
+  slugIndex,
+  type IconPathname,
+} from '@/registry/icons/manifest';
 
 const sizeMap = {
   xs: 12,
@@ -17,17 +16,65 @@ const sizeMap = {
   xl: 24,
 } as const;
 
+export type SvgSize = keyof typeof sizeMap;
+
+interface SVGProps {
+  /** Full pathname (`"database/redis"`) or bare slug (`"redis"`). Case-insensitive. */
+  name: string;
+  size?: SvgSize | number;
+  className?: string;
+  'aria-label'?: string;
+}
+
+/**
+ * Resolve a `name` (pathname or bare slug) to a manifest pathname.
+ * - Pathname form (`domain/.../icon`) is looked up directly in `iconRegistry`.
+ * - Bare slug form is resolved via `slugIndex`; throws if ambiguous.
+ */
+function resolvePathname(name: string): IconPathname {
+  const key = name.toLowerCase();
+
+  if (key.includes('/')) {
+    if (!(key in iconRegistry)) {
+      throw new Error(`[SVG] Unknown icon pathname: "${name}"`);
+    }
+    return key as IconPathname;
+  }
+
+  const candidates = slugIndex[key];
+  if (!candidates || candidates.length === 0) {
+    throw new Error(`[SVG] Unknown icon name: "${name}"`);
+  }
+  if (candidates.length > 1) {
+    throw new Error(
+      `[SVG] Ambiguous icon name "${name}" matches: ${candidates.join(', ')}. Use the full pathname (e.g. "${candidates[0]}").`,
+    );
+  }
+  return candidates[0];
+}
+
+// Cache lazy components per pathname so they don't remount on every render.
+const lazyCache = new Map<IconPathname, ComponentType<any>>();
+
+function getLazy(pathname: IconPathname): ComponentType<any> {
+  let Component = lazyCache.get(pathname);
+  if (!Component) {
+    Component = lazy(
+      iconRegistry[pathname] as unknown as () => Promise<{
+        default: ComponentType<any>;
+      }>,
+    );
+    lazyCache.set(pathname, Component);
+  }
+  return Component;
+}
+
 export function SVG({
   name,
   size = 'md',
   className,
   'aria-label': ariaLabel,
-}: {
-  name: string;
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | number;
-  className?: string;
-  'aria-label'?: string;
-}) {
+}: SVGProps) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -36,9 +83,10 @@ export function SVG({
   }, []);
 
   const mode = mounted && resolvedTheme === 'dark' ? 'dark' : 'light';
-  const spriteId = `icon-${name.replace(/\//g, '-').toLowerCase()}-${mode}`;
-
   const renderedSize = typeof size === 'number' ? size : sizeMap[size];
+
+  const pathname = resolvePathname(name);
+  const LazyIcon = getLazy(pathname);
 
   return (
     <span
@@ -46,17 +94,15 @@ export function SVG({
       className="inline-flex shrink-0 items-center justify-center align-middle leading-none"
       style={{ width: `${renderedSize}px`, height: `${renderedSize}px` }}
     >
-      <svg
-        data-slot="svg-artboard"
-        className={className}
-        width={renderedSize}
-        height={renderedSize}
-        viewBox="0 0 16 16"
-        role={ariaLabel ? 'img' : 'presentation'}
-        aria-label={ariaLabel}
-      >
-        <use href={`#${spriteId}`} />
-      </svg>
+      <Suspense fallback={null}>
+        {/* Icon components derive role / aria-hidden from aria-label internally. */}
+        <LazyIcon
+          size={size}
+          mode={mode}
+          className={className}
+          aria-label={ariaLabel}
+        />
+      </Suspense>
     </span>
   );
 }

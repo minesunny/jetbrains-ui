@@ -5,7 +5,7 @@
   "title": "Magic Resolve",
   "description": "Magic Resolve icon from vcs category.",
   "registryDependencies": [
-    "icons-vcs-types"
+    "icons-utils"
   ],
   "files": [
     {

@@ -5,7 +5,7 @@
   "title": "Attached",
   "description": "Attached icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

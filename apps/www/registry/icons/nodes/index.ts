@@ -152,5 +152,4 @@ export { TextArea } from './text-area';
 export type { TextAreaProps } from './text-area';
 export { WebResources } from './web-resources';
 export type { WebResourcesProps } from './web-resources';
-export { svgNames } from './types';
-export type { SvgName, SvgMode, SvgProps, SvgSize } from './types';
+export type { SvgMode, SvgProps, SvgSize } from '../utils';

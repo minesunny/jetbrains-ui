@@ -5,7 +5,7 @@
   "title": "Feedback Rating",
   "description": "Feedback Rating icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

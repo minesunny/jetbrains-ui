@@ -5,7 +5,7 @@
   "title": "Dbms",
   "description": "Dbms icon from editor-icons category.",
   "registryDependencies": [
-    "icons-editor-icons-types"
+    "icons-utils"
   ],
   "files": [
     {

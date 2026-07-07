@@ -5,7 +5,7 @@
   "title": "Description File",
   "description": "Description File icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

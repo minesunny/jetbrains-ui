@@ -5,7 +5,7 @@
   "title": "Feedback Rating Focused On",
   "description": "Feedback Rating Focused On icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

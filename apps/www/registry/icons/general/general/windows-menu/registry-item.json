@@ -5,7 +5,7 @@
   "title": "Windows Menu",
   "description": "Windows Menu icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

@@ -5,7 +5,7 @@
   "title": "Like",
   "description": "Like icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-utils",
+  "type": "registry:ui",
+  "title": "Icon Utils",
+  "description": "Shared types and size map for icon components.",
+  "files": [
+    {
+      "path": "registry/icons/utils.ts",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/utils.ts"
+    }
+  ]
+}

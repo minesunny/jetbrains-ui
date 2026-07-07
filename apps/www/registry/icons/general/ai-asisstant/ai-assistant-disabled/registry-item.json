@@ -5,7 +5,7 @@
   "title": "Ai Assistant Disabled",
   "description": "Ai Assistant Disabled icon from general category.",
   "registryDependencies": [
-    "icons-general-types"
+    "icons-utils"
   ],
   "files": [
     {

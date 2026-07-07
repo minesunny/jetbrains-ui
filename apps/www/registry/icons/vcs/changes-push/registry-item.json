@@ -5,7 +5,7 @@
   "title": "Changes Push",
   "description": "Changes Push icon from vcs category.",
   "registryDependencies": [
-    "icons-vcs-types"
+    "icons-utils"
   ],
   "files": [
     {

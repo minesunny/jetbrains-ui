@@ -9,8 +9,11 @@ class ResizeObserverMock implements ResizeObserver {
 
 vi.stubGlobal('ResizeObserver', ResizeObserverMock);
 
-// Mock SVG component — the real one uses webpack require.context which
-// is unavailable in Vitest. Render a minimal stub that mirrors key attributes.
+// Mock <SVG> so the many tests that render it don't pull in the full icon graph
+// (registry/icons/manifest.ts + every lazy domain barrel) and the React.lazy /
+// Suspense machinery. The real dispatcher resolves names via the generated
+// manifest; its resolution logic is validated via the build + smoke check
+// (Phase 0.5) and unit-covered in Phase 1 (tasks 9.2).
 vi.mock('@/registry/components/svg', async () => {
   const { createElement } = await import('react');
 
