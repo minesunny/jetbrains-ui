@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type JunitTestMarkProps = SvgProps;
+export type JunitTestMarkProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const JunitTestMarkLight: FC<SvgProps> = ({
+const JunitTestMarkLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -41,7 +45,9 @@ const JunitTestMarkLight: FC<SvgProps> = ({
   </svg>
 );
 
-const JunitTestMarkDark: FC<SvgProps> = ({
+const JunitTestMarkDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -78,7 +84,7 @@ const JunitTestMarkDark: FC<SvgProps> = ({
 );
 
 export const JunitTestMark: FC<JunitTestMarkProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -89,8 +95,8 @@ export const JunitTestMark: FC<JunitTestMarkProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

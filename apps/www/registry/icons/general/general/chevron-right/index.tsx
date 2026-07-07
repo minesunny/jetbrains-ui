@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../../utils';
 
-export type ChevronRightProps = SvgProps;
+export type ChevronRightProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const ChevronRightLight: FC<SvgProps> = ({
+const ChevronRightLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -30,7 +34,9 @@ const ChevronRightLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ChevronRightDark: FC<SvgProps> = ({
+const ChevronRightDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -53,7 +59,7 @@ const ChevronRightDark: FC<SvgProps> = ({
 );
 
 export const ChevronRight: FC<ChevronRightProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -63,8 +69,8 @@ export const ChevronRight: FC<ChevronRightProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

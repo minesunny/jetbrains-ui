@@ -45,7 +45,7 @@ The `<SVG name>` dispatcher rewrite now lives in Phase 0 (task 0.2), since sprit
 
 - [x] **5.1** Delete `apps/www/scripts/generate-registry-items.mts`.
 - [x] **5.2** Update `apps/www/package.json`: remove it from `registry:build:ci`.
-- [ ] **5.3** Decide & document whether `generate-icons.mts` runs in CI (regenerate from committed source) or only on-demand (source not committed → CI skips).
+- [x] **5.3** Decide & document whether `generate-icons.mts` runs in CI (regenerate from committed source) or only on-demand (source not committed → CI skips).
 
 ## 6. Delete source `.svg` + remaining dead infra (PREREQUISITE: Phase 0 done + tasks 1–5)
 
@@ -56,23 +56,23 @@ The `<SVG name>` dispatcher rewrite now lives in Phase 0 (task 0.2), since sprit
 
 ## 7. expui import — coexist under `database/expui/`
 
-- [ ] **7.1** Point generator input at `/Users/maien/Downloads/expui` (170 icons, camelCase, light + dark pairs).
-- [ ] **7.2** Namespace output as `database/expui/<kebab>/` so expui **coexists** with existing `database/<kebab>/` (no overwrite). Pathname: `database/expui/<icon>`.
-- [ ] **7.3** Convert camelCase → kebab folder; PascalCase component. If a component name collides with an existing `database` export, disambiguate via the subdomain path (barrel under `database/expui/index.ts`).
-- [ ] **7.4** Verify expui copyright header (present in source) flows through to `.tsx`.
-- [ ] **7.5** Add 170 entries to `manifest.ts` + `database/expui` barrel; confirm `<SVG name="database/expui/access-method" />` renders.
+- [x] **7.1** Point generator input at `/Users/maien/Downloads/expui` (170 icons, camelCase, light + dark pairs).
+- [x] **7.2** Namespace output as `database/expui/<kebab>/` so expui **coexists** with existing `database/<kebab>/` (no overwrite). Pathname: `database/expui/<icon>`.
+- [x] **7.3** Convert camelCase → kebab folder; PascalCase component. If a component name collides with an existing `database` export, disambiguate via the subdomain path (barrel under `database/expui/index.ts`).
+- [x] **7.4** Verify expui copyright header (present in source) flows through to `.tsx`.
+- [x] **7.5** Add 170 entries to `manifest.ts` + `database/expui` barrel; confirm `<SVG name="database/expui/access-method" />` renders.
 
 ## 8. Gallery — install command + fuzzy search
 
-- [ ] **8.1** In `svg-icons-gallery.tsx` popup, add install-command row: `npx shadcn add icons-<domain>-<icon>` derived from pathname + copy button.
-- [ ] **8.2** Replace `includes()` substring filter with case-insensitive subsequence match (fuzzy): query matches if every char appears in order. Keep label matching.
+- [x] **8.1** In `svg-icons-gallery.tsx` popup, add install-command row: `npx shadcn add icons-<domain>-<icon>` derived from pathname + copy button.
+- [x] **8.2** Replace `includes()` substring filter with case-insensitive subsequence match (fuzzy): query matches if every char appears in order. Keep label matching.
 - [ ] **8.3** Source icon list from `manifest.ts` (`Object.keys(iconRegistry)`) where applicable.
-- [ ] **8.4** Keep the `n / total` count behavior.
+- [x] **8.4** Keep the `n / total` count behavior.
 
 ## 9. Validation
 
 - [x] **9.1** `pnpm --filter jetbrains-ui build` succeeds; `public/r/registry.json` now contains per-icon `database` entries.
-- [ ] **9.2** Dispatcher tests already updated in Phase 0.4 — remaining: add manifest-resolution tests against the generator-emitted manifest (pathname hit, unique bare-slug hit, ambiguous-throws-with-candidates).
-- [ ] **9.3** Smoke-check `npx shadcn add icons-database-redis` → single self-contained `.tsx`, no `.svg` / `../types` dependency.
+- [x] **9.2** Dispatcher tests already updated in Phase 0.4 — remaining: add manifest-resolution tests against the generator-emitted manifest (pathname hit, unique bare-slug hit, ambiguous-throws-with-candidates).
+- [x] **9.3** Smoke-check `npx shadcn add icons-database-redis` → single self-contained `.tsx`, no `.svg` / `../types` dependency.
 - [x] **9.4** Grep-confirm no remaining `svgNames`, `SvgName`, `from '../types'` across `apps/www` (sprite/`require.context` already confirmed gone in Phase 0.5).
-- [ ] **9.5** `pnpm registry:build`; `openspec validate refactor-icons-single-source --strict`.
+- [x] **9.5** `pnpm registry:build`; `openspec validate refactor-icons-single-source --strict`.

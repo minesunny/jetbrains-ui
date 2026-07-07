@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../../utils';
 
-export type LevelAutoInheritedProps = SvgProps;
+export type LevelAutoInheritedProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const LevelAutoInheritedLight: FC<SvgProps> = ({
+const LevelAutoInheritedLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -40,7 +44,9 @@ const LevelAutoInheritedLight: FC<SvgProps> = ({
   </svg>
 );
 
-const LevelAutoInheritedDark: FC<SvgProps> = ({
+const LevelAutoInheritedDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -73,7 +79,7 @@ const LevelAutoInheritedDark: FC<SvgProps> = ({
 );
 
 export const LevelAutoInherited: FC<LevelAutoInheritedProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -84,8 +90,8 @@ export const LevelAutoInherited: FC<LevelAutoInheritedProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

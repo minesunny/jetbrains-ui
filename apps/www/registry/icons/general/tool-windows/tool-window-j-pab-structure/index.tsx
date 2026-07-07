@@ -2,13 +2,20 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../../utils';
 
-export type ToolWindowJPabStructureProps = SvgProps;
+export type ToolWindowJPabStructureProps = Omit<
+  ComponentProps<'svg'>,
+  'size'
+> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const ToolWindowJPabStructureLight: FC<SvgProps> = ({
+const ToolWindowJPabStructureLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -56,7 +63,9 @@ const ToolWindowJPabStructureLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ToolWindowJPabStructureDark: FC<SvgProps> = ({
+const ToolWindowJPabStructureDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -105,7 +114,7 @@ const ToolWindowJPabStructureDark: FC<SvgProps> = ({
 );
 
 export const ToolWindowJPabStructure: FC<ToolWindowJPabStructureProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -118,8 +127,8 @@ export const ToolWindowJPabStructure: FC<ToolWindowJPabStructureProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

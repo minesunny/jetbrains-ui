@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type GradleSubprojectProps = SvgProps;
+export type GradleSubprojectProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const GradleSubprojectLight: FC<SvgProps> = ({
+const GradleSubprojectLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -43,7 +47,9 @@ const GradleSubprojectLight: FC<SvgProps> = ({
   </svg>
 );
 
-const GradleSubprojectDark: FC<SvgProps> = ({
+const GradleSubprojectDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -79,7 +85,7 @@ const GradleSubprojectDark: FC<SvgProps> = ({
 );
 
 export const GradleSubproject: FC<GradleSubprojectProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -90,8 +96,8 @@ export const GradleSubproject: FC<GradleSubprojectProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

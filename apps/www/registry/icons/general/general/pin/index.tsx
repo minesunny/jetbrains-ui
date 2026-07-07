@@ -2,13 +2,15 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../../utils';
 
-export type PinProps = SvgProps;
+export type PinProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const PinLight: FC<SvgProps> = ({
+const PinLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
   size,
   className,
   role,
@@ -36,7 +38,7 @@ const PinLight: FC<SvgProps> = ({
   </svg>
 );
 
-const PinDark: FC<SvgProps> = ({
+const PinDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
   size,
   className,
   role,
@@ -65,7 +67,7 @@ const PinDark: FC<SvgProps> = ({
 );
 
 export const Pin: FC<PinProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -75,8 +77,8 @@ export const Pin: FC<PinProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

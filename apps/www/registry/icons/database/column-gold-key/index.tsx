@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type ColumnGoldKeyProps = SvgProps;
+export type ColumnGoldKeyProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const ColumnGoldKeyLight: FC<SvgProps> = ({
+const ColumnGoldKeyLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -42,7 +46,9 @@ const ColumnGoldKeyLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ColumnGoldKeyDark: FC<SvgProps> = ({
+const ColumnGoldKeyDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -77,7 +83,7 @@ const ColumnGoldKeyDark: FC<SvgProps> = ({
 );
 
 export const ColumnGoldKey: FC<ColumnGoldKeyProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -88,8 +94,8 @@ export const ColumnGoldKey: FC<ColumnGoldKeyProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

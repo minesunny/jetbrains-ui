@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type AliasProps = SvgProps;
+export type AliasProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const AliasLight: FC<SvgProps> = ({
+const AliasLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -41,7 +45,7 @@ const AliasLight: FC<SvgProps> = ({
   </svg>
 );
 
-const AliasDark: FC<SvgProps> = ({
+const AliasDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
   size,
   className,
   role,
@@ -75,7 +79,7 @@ const AliasDark: FC<SvgProps> = ({
 );
 
 export const Alias: FC<AliasProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -85,8 +89,8 @@ export const Alias: FC<AliasProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

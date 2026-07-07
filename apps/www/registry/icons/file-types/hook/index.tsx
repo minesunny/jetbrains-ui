@@ -2,13 +2,15 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type HookProps = SvgProps;
+export type HookProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const HookLight: FC<SvgProps> = ({
+const HookLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
   size,
   className,
   role,
@@ -36,7 +38,7 @@ const HookLight: FC<SvgProps> = ({
   </svg>
 );
 
-const HookDark: FC<SvgProps> = ({
+const HookDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
   size,
   className,
   role,
@@ -65,7 +67,7 @@ const HookDark: FC<SvgProps> = ({
 );
 
 export const Hook: FC<HookProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -75,8 +77,8 @@ export const Hook: FC<HookProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

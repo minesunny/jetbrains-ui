@@ -2,13 +2,20 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type InspectionsPowerSaveModeProps = SvgProps;
+export type InspectionsPowerSaveModeProps = Omit<
+  ComponentProps<'svg'>,
+  'size'
+> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const InspectionsPowerSaveModeLight: FC<SvgProps> = ({
+const InspectionsPowerSaveModeLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -39,7 +46,9 @@ const InspectionsPowerSaveModeLight: FC<SvgProps> = ({
   </svg>
 );
 
-const InspectionsPowerSaveModeDark: FC<SvgProps> = ({
+const InspectionsPowerSaveModeDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -71,7 +80,7 @@ const InspectionsPowerSaveModeDark: FC<SvgProps> = ({
 );
 
 export const InspectionsPowerSaveMode: FC<InspectionsPowerSaveModeProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -84,8 +93,8 @@ export const InspectionsPowerSaveMode: FC<InspectionsPowerSaveModeProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

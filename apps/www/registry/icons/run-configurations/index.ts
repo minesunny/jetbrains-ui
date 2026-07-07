@@ -28,4 +28,3 @@ export { RunHttpRequest } from './run-http-request';
 export type { RunHttpRequestProps } from './run-http-request';
 export { WebApp } from './web-app';
 export type { WebAppProps } from './web-app';
-export type { SvgMode, SvgProps, SvgSize } from '../utils';

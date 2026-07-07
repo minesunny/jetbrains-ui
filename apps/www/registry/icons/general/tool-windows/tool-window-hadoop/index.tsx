@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../../utils';
 
-export type ToolWindowHadoopProps = SvgProps;
+export type ToolWindowHadoopProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const ToolWindowHadoopLight: FC<SvgProps> = ({
+const ToolWindowHadoopLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -35,7 +39,9 @@ const ToolWindowHadoopLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ToolWindowHadoopDark: FC<SvgProps> = ({
+const ToolWindowHadoopDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -63,7 +69,7 @@ const ToolWindowHadoopDark: FC<SvgProps> = ({
 );
 
 export const ToolWindowHadoop: FC<ToolWindowHadoopProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -74,8 +80,8 @@ export const ToolWindowHadoop: FC<ToolWindowHadoopProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

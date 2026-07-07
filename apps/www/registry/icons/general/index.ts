@@ -788,4 +788,3 @@ export { RestoreInactive } from './windows/restore-inactive';
 export type { RestoreInactiveProps } from './windows/restore-inactive';
 export { RestoreSmall } from './windows/restore-small';
 export type { RestoreSmallProps } from './windows/restore-small';
-export type { SvgMode, SvgProps, SvgSize } from '../utils';

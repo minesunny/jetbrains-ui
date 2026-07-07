@@ -44,4 +44,3 @@ export { MavenBindChecksum } from './maven-bind-checksum';
 export type { MavenBindChecksumProps } from './maven-bind-checksum';
 export { MavenChecksum } from './maven-checksum';
 export type { MavenChecksumProps } from './maven-checksum';
-export type { SvgMode, SvgProps, SvgSize } from '../utils';

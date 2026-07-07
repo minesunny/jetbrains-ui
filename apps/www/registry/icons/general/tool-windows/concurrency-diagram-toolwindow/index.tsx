@@ -2,13 +2,20 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../../utils';
 
-export type ConcurrencyDiagramToolwindowProps = SvgProps;
+export type ConcurrencyDiagramToolwindowProps = Omit<
+  ComponentProps<'svg'>,
+  'size'
+> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const ConcurrencyDiagramToolwindowLight: FC<SvgProps> = ({
+const ConcurrencyDiagramToolwindowLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -41,7 +48,9 @@ const ConcurrencyDiagramToolwindowLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ConcurrencyDiagramToolwindowDark: FC<SvgProps> = ({
+const ConcurrencyDiagramToolwindowDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -77,7 +86,7 @@ const ConcurrencyDiagramToolwindowDark: FC<SvgProps> = ({
 export const ConcurrencyDiagramToolwindow: FC<
   ConcurrencyDiagramToolwindowProps
 > = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -90,8 +99,8 @@ export const ConcurrencyDiagramToolwindow: FC<
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

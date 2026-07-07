@@ -48,33 +48,33 @@ const FLATTEN_CATEGORIES = new Set([
 // Manual override map for General subcategory names
 // Source directory name → registry subcategory name
 const GENERAL_SUBCATEGORY_MAP: Record<string, string> = {
-  'AI_Assistant': 'ai-assistant',
-  'Access_Modifiers': 'access-modifiers',
-  'Actions': 'actions',
-  'Bookmarks': 'bookmarks',
-  'DevKit': 'devkit',
-  'devkit': 'devkit',
-  'Duplicates': 'duplicates',
-  'duplicates': 'duplicates',
-  'Editor': 'editor',
-  'General': 'general',
-  'Inline': 'inline',
-  'inline': 'inline',
-  'Modifiers': 'modifiers',
-  'New_UI': 'new-ui',
-  'Object_Browser': 'object-browser',
-  'Progress_bar': 'progress-bar',
-  'Rating': 'rating',
-  'Raiting': 'raiting',
-  'raiting': 'raiting',
-  'Setting_Sync': 'setting-sync',
-  'Spinner': 'spinner',
-  'Status': 'status',
-  'status': 'status',
-  'Tool_Windows': 'tool-windows',
-  'Usages': 'usages',
-  'Windows': 'windows',
-  'windows': 'windows',
+  AI_Assistant: 'ai-assistant',
+  Access_Modifiers: 'access-modifiers',
+  Actions: 'actions',
+  Bookmarks: 'bookmarks',
+  DevKit: 'devkit',
+  devkit: 'devkit',
+  Duplicates: 'duplicates',
+  duplicates: 'duplicates',
+  Editor: 'editor',
+  General: 'general',
+  Inline: 'inline',
+  inline: 'inline',
+  Modifiers: 'modifiers',
+  New_UI: 'new-ui',
+  Object_Browser: 'object-browser',
+  Progress_bar: 'progress-bar',
+  Rating: 'rating',
+  Raiting: 'raiting',
+  raiting: 'raiting',
+  Setting_Sync: 'setting-sync',
+  Spinner: 'spinner',
+  Status: 'status',
+  status: 'status',
+  Tool_Windows: 'tool-windows',
+  Usages: 'usages',
+  Windows: 'windows',
+  windows: 'windows',
 };
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -119,9 +119,7 @@ function camelToKebab(name: string): string {
 }
 
 function kebabToPascal(name: string): string {
-  return name.replace(/(^|-)([a-z])/gu, (_, _sep, char) =>
-    char.toUpperCase(),
-  );
+  return name.replace(/(^|-)([a-z])/gu, (_, _sep, char) => char.toUpperCase());
 }
 
 function stripSizeSuffix(name: string): string {
@@ -163,9 +161,7 @@ async function extractSvgInnerJsx(svgContent: string): Promise<{
 
   // Extract the inner JSX from the generated component
   // The result looks like: export default ({...}) => ( <svg ...>inner</svg> )
-  const innerMatch = result.match(
-    /<svg[\s\S]*?>([\s\S]*?)<\/svg>/u,
-  );
+  const innerMatch = result.match(/<svg[\s\S]*?>([\s\S]*?)<\/svg>/u);
 
   if (!innerMatch) {
     throw new Error('Failed to extract inner JSX from SVG');
@@ -181,21 +177,27 @@ function generatePairedComponent(
   lightInnerJsx: string,
   darkInnerJsx: string,
   viewBox: string,
-  utilsRelPath: string,
 ): string {
   return `${COPYRIGHT_HEADER}
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '${utilsRelPath}';
 
-export type ${pascalName}Props = SvgProps;
+export type ${pascalName}Props = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const ${pascalName}Light: FC<SvgProps> = ({
+type ${pascalName}SvgProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size: number;
+};
+
+const ${pascalName}Light: FC<${pascalName}SvgProps> = ({
   size,
   className,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
+  ...rest
 }) => (
   <svg
     width={size}
@@ -207,17 +209,19 @@ const ${pascalName}Light: FC<SvgProps> = ({
     role={role}
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
+    {...rest}
   >
     ${lightInnerJsx}
   </svg>
 );
 
-const ${pascalName}Dark: FC<SvgProps> = ({
+const ${pascalName}Dark: FC<${pascalName}SvgProps> = ({
   size,
   className,
   role,
   'aria-label': ariaLabel,
   'aria-hidden': ariaHidden,
+  ...rest
 }) => (
   <svg
     width={size}
@@ -229,13 +233,14 @@ const ${pascalName}Dark: FC<SvgProps> = ({
     role={role}
     aria-label={ariaLabel}
     aria-hidden={ariaHidden}
+    {...rest}
   >
     ${darkInnerJsx}
   </svg>
 );
 
 export const ${pascalName}: FC<${pascalName}Props> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -246,8 +251,8 @@ export const ${pascalName}: FC<${pascalName}Props> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}
@@ -264,29 +269,30 @@ function generateSingleComponent(
   pascalName: string,
   innerJsx: string,
   viewBox: string,
-  utilsRelPath: string,
 ): string {
   return `${COPYRIGHT_HEADER}
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '${utilsRelPath}';
 
-export type ${pascalName}Props = SvgProps;
+export type ${pascalName}Props = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
 export const ${pascalName}: FC<${pascalName}Props> = ({
-  size = 'md',
+  size = 16,
   mode,
   className,
   'aria-label': ariaLabel,
   ...props
 }) => (
   <svg
-    width={sizeMap[size]}
-    height={sizeMap[size]}
+    width={size}
+    height={size}
     viewBox="${viewBox}"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={cn('inline-block flex-shrink-0', className)}
+    className={cn('inline-block shrink-0', className)}
     role={ariaLabel ? 'img' : 'presentation'}
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
@@ -300,9 +306,7 @@ export default ${pascalName};
 `;
 }
 
-function generateRegistryItemJson(
-  entry: IconEntry,
-): string {
+function generateRegistryItemJson(entry: IconEntry): string {
   const iconPath = entry.subcategory
     ? `${entry.category}/${entry.subcategory}/${entry.kebabName}`
     : `${entry.category}/${entry.kebabName}`;
@@ -314,7 +318,7 @@ function generateRegistryItemJson(
       type: 'registry:ui',
       title: entry.pascalName.replace(/([A-Z])/gu, ' $1').trim(),
       description: `${entry.pascalName.replace(/([A-Z])/gu, ' $1').trim()} icon from ${entry.category} category.`,
-      registryDependencies: ['icons-utils'],
+      registryDependencies: [],
       files: [
         {
           path: `registry/icons/${iconPath}/index.tsx`,
@@ -325,48 +329,6 @@ function generateRegistryItemJson(
       meta: {
         keywords: [entry.kebabName, 'icon', entry.category, 'jetbrains'],
       },
-    },
-    null,
-    2,
-  );
-}
-
-function generateUtilsFile(): string {
-  return `import type React from 'react';
-
-export type SvgSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-export type SvgMode = 'light' | 'dark';
-
-export type SvgProps = Omit<React.ComponentProps<'svg'>, 'size'> & {
-  size?: SvgSize | number;
-  mode?: SvgMode;
-};
-
-export const sizeMap: Record<SvgSize | number, number> = {
-  xs: 12,
-  sm: 14,
-  md: 16,
-  lg: 20,
-  xl: 24,
-};
-`;
-}
-
-function generateUtilsRegistryJson(): string {
-  return JSON.stringify(
-    {
-      $schema: 'https://ui.shadcn.com/schema/registry-item.json',
-      name: 'icons-utils',
-      type: 'registry:ui',
-      title: 'Icon Utils',
-      description: 'Shared types and size map for icon components.',
-      files: [
-        {
-          path: 'registry/icons/utils.ts',
-          type: 'registry:ui',
-          target: 'components/jetbrains-ui/icons/utils.ts',
-        },
-      ],
     },
     null,
     2,
@@ -404,7 +366,7 @@ function generateCategoryRegistryJson(
       type: 'registry:ui',
       title: `${title} Icons`,
       description: `All ${iconEntries.length} icons from the ${title} category.`,
-      registryDependencies: ['icons-utils'],
+      registryDependencies: [],
       files,
     },
     null,
@@ -423,9 +385,7 @@ function generateBarrelIndex(iconEntries: IconEntry[]): string {
   return `${lines}\nexport type { SvgMode, SvgProps, SvgSize } from '../utils';\n`;
 }
 
-function generateSubcategoryBarrelIndex(
-  iconEntries: IconEntry[],
-): string {
+function generateSubcategoryBarrelIndex(iconEntries: IconEntry[]): string {
   const lines = iconEntries
     .map(
       (entry) =>
@@ -502,9 +462,7 @@ async function discoverIcons(
           subcategory,
           registryDir,
           variant,
-          lightSvgPath: lightFile
-            ? path.join(fullPath, lightFile)
-            : null,
+          lightSvgPath: lightFile ? path.join(fullPath, lightFile) : null,
           darkSvgPath: darkFile ? path.join(fullPath, darkFile) : null,
           singleSvgPath: null,
         });
@@ -553,9 +511,7 @@ async function discoverIcons(
           childSubcategory = subcategory;
         } else {
           // Unknown top-level directory — use kebab-case as subcategory
-          childSubcategory = camelToKebab(
-            item.name.replace(/_/gu, '-'),
-          );
+          childSubcategory = camelToKebab(item.name.replace(/_/gu, '-'));
         }
         await scanDir(fullPath, childSubcategory);
       }
@@ -611,9 +567,7 @@ async function discoverIcons(
             subcategory: null,
             registryDir: `${registryCategory}/${kebabName}`,
             variant,
-            lightSvgPath: lightFile
-              ? path.join(fullPath, lightFile)
-              : null,
+            lightSvgPath: lightFile ? path.join(fullPath, lightFile) : null,
             darkSvgPath: darkFile ? path.join(fullPath, darkFile) : null,
             singleSvgPath: null,
           });
@@ -721,19 +675,6 @@ async function generateIcons(options: GenerateOptions) {
       ? options.target.split('/').slice(1).join('/')
       : null;
 
-  // Emit the shared utils.ts + its registry item once (shared across all domains).
-  if (!options.dryRun) {
-    const utilsCode = await formatWithPrettier(
-      generateUtilsFile(),
-      path.join(REGISTRY_ROOT, 'utils.ts'),
-    );
-    await fs.writeFile(path.join(REGISTRY_ROOT, 'utils.ts'), utilsCode);
-    await fs.writeFile(
-      path.join(REGISTRY_ROOT, 'utils.registry.json'),
-      generateUtilsRegistryJson() + '\n',
-    );
-  }
-
   let totalGenerated = 0;
 
   for (const [sourceCategory, registryCategory] of Object.entries(
@@ -754,9 +695,7 @@ async function generateIcons(options: GenerateOptions) {
 
     // Apply subcategory filter if specified
     if (subcategoryFilter) {
-      entries = entries.filter(
-        (e) => e.subcategory === subcategoryFilter,
-      );
+      entries = entries.filter((e) => e.subcategory === subcategoryFilter);
       console.log(`  Filtered to subcategory: ${subcategoryFilter}`);
     }
 
@@ -779,20 +718,17 @@ async function generateIcons(options: GenerateOptions) {
 
     // Clean mode: remove existing generated files
     if (options.clean) {
-      const registryCategoryDir = path.join(
-        REGISTRY_ROOT,
-        registryCategory,
-      );
+      const registryCategoryDir = path.join(REGISTRY_ROOT, registryCategory);
       if (await fs.stat(registryCategoryDir).catch(() => null)) {
         const existingDirs = await fs.readdir(registryCategoryDir, {
           withFileTypes: true,
         });
         for (const dir of existingDirs) {
           if (dir.isDirectory()) {
-            await fs.rm(
-              path.join(registryCategoryDir, dir.name),
-              { recursive: true, force: true },
-            );
+            await fs.rm(path.join(registryCategoryDir, dir.name), {
+              recursive: true,
+              force: true,
+            });
           }
         }
       }
@@ -813,10 +749,6 @@ async function generateIcons(options: GenerateOptions) {
       const targetDir = path.join(REGISTRY_ROOT, entry.registryDir);
       await fs.mkdir(targetDir, { recursive: true });
 
-      // Determine utils relative path (shared at registry/icons/utils.ts)
-      const depth = entry.subcategory ? 3 : 2;
-      const utilsRelPath = '../'.repeat(depth) + 'utils';
-
       // Generate component
       let componentCode: string;
 
@@ -833,7 +765,6 @@ async function generateIcons(options: GenerateOptions) {
           lightInner,
           darkInner,
           viewBox,
-          utilsRelPath,
         );
       } else if (entry.variant === 'single') {
         const svg = await fs.readFile(entry.singleSvgPath!, 'utf-8');
@@ -843,7 +774,6 @@ async function generateIcons(options: GenerateOptions) {
           entry.pascalName,
           innerJsx,
           viewBox,
-          utilsRelPath,
         );
       } else if (entry.variant === 'light-only') {
         const lightSvg = await fs.readFile(entry.lightSvgPath!, 'utf-8');
@@ -853,7 +783,6 @@ async function generateIcons(options: GenerateOptions) {
           entry.pascalName,
           innerJsx,
           viewBox,
-          utilsRelPath,
         );
       } else {
         // dark-only
@@ -864,7 +793,6 @@ async function generateIcons(options: GenerateOptions) {
           entry.pascalName,
           innerJsx,
           viewBox,
-          utilsRelPath,
         );
       }
 
@@ -875,10 +803,7 @@ async function generateIcons(options: GenerateOptions) {
       );
 
       // Write component
-      await fs.writeFile(
-        path.join(targetDir, 'index.tsx'),
-        formattedCode,
-      );
+      await fs.writeFile(path.join(targetDir, 'index.tsx'), formattedCode);
 
       // Write registry-item.json
       const registryJson = generateRegistryItemJson(entry);
@@ -921,10 +846,7 @@ async function generateIcons(options: GenerateOptions) {
             subBarrel,
             path.join(subDir, 'index.ts'),
           );
-          await fs.writeFile(
-            path.join(subDir, 'index.ts'),
-            formattedSubBarrel,
-          );
+          await fs.writeFile(path.join(subDir, 'index.ts'), formattedSubBarrel);
 
           // Add to category exports (skip duplicates)
           for (const entry of subEntries) {

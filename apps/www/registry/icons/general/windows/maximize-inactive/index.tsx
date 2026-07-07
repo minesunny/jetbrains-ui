@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../../utils';
 
-export type MaximizeInactiveProps = SvgProps;
+export type MaximizeInactiveProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const MaximizeInactiveLight: FC<SvgProps> = ({
+const MaximizeInactiveLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -30,7 +34,9 @@ const MaximizeInactiveLight: FC<SvgProps> = ({
   </svg>
 );
 
-const MaximizeInactiveDark: FC<SvgProps> = ({
+const MaximizeInactiveDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -53,7 +59,7 @@ const MaximizeInactiveDark: FC<SvgProps> = ({
 );
 
 export const MaximizeInactive: FC<MaximizeInactiveProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -64,8 +70,8 @@ export const MaximizeInactive: FC<MaximizeInactiveProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

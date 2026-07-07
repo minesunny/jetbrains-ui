@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type PromptInputHistoryProps = SvgProps;
+export type PromptInputHistoryProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const PromptInputHistoryLight: FC<SvgProps> = ({
+const PromptInputHistoryLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -42,7 +46,9 @@ const PromptInputHistoryLight: FC<SvgProps> = ({
   </svg>
 );
 
-const PromptInputHistoryDark: FC<SvgProps> = ({
+const PromptInputHistoryDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -77,7 +83,7 @@ const PromptInputHistoryDark: FC<SvgProps> = ({
 );
 
 export const PromptInputHistory: FC<PromptInputHistoryProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -88,8 +94,8 @@ export const PromptInputHistory: FC<PromptInputHistoryProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

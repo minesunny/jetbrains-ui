@@ -22,6 +22,8 @@ interface SVGProps {
   /** Full pathname (`"database/redis"`) or bare slug (`"redis"`). Case-insensitive. */
   name: string;
   size?: SvgSize | number;
+  /** Override the icon theme; defaults to the active next-themes resolved theme. */
+  mode?: 'light' | 'dark';
   className?: string;
   'aria-label'?: string;
 }
@@ -72,6 +74,7 @@ function getLazy(pathname: IconPathname): ComponentType<any> {
 export function SVG({
   name,
   size = 'md',
+  mode,
   className,
   'aria-label': ariaLabel,
 }: SVGProps) {
@@ -82,7 +85,10 @@ export function SVG({
     setMounted(true);
   }, []);
 
-  const mode = mounted && resolvedTheme === 'dark' ? 'dark' : 'light';
+  // Explicit mode wins; otherwise follow the active theme.
+  const resolvedMode =
+    mode ?? (mounted && resolvedTheme === 'dark' ? 'dark' : 'light');
+  // Icon components take size in px; map the public token (or pass-through number).
   const renderedSize = typeof size === 'number' ? size : sizeMap[size];
 
   const pathname = resolvePathname(name);
@@ -97,8 +103,8 @@ export function SVG({
       <Suspense fallback={null}>
         {/* Icon components derive role / aria-hidden from aria-label internally. */}
         <LazyIcon
-          size={size}
-          mode={mode}
+          size={renderedSize}
+          mode={resolvedMode}
           className={className}
           aria-label={ariaLabel}
         />

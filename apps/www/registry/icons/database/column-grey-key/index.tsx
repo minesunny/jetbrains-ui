@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type ColumnGreyKeyProps = SvgProps;
+export type ColumnGreyKeyProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const ColumnGreyKeyLight: FC<SvgProps> = ({
+const ColumnGreyKeyLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -42,7 +46,9 @@ const ColumnGreyKeyLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ColumnGreyKeyDark: FC<SvgProps> = ({
+const ColumnGreyKeyDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -77,7 +83,7 @@ const ColumnGreyKeyDark: FC<SvgProps> = ({
 );
 
 export const ColumnGreyKey: FC<ColumnGreyKeyProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -88,8 +94,8 @@ export const ColumnGreyKey: FC<ColumnGreyKeyProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

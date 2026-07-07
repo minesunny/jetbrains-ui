@@ -2,13 +2,20 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type SiblingInheritedMethodProps = SvgProps;
+export type SiblingInheritedMethodProps = Omit<
+  ComponentProps<'svg'>,
+  'size'
+> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const SiblingInheritedMethodLight: FC<SvgProps> = ({
+const SiblingInheritedMethodLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -54,7 +61,9 @@ const SiblingInheritedMethodLight: FC<SvgProps> = ({
   </svg>
 );
 
-const SiblingInheritedMethodDark: FC<SvgProps> = ({
+const SiblingInheritedMethodDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -101,7 +110,7 @@ const SiblingInheritedMethodDark: FC<SvgProps> = ({
 );
 
 export const SiblingInheritedMethod: FC<SiblingInheritedMethodProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -112,8 +121,8 @@ export const SiblingInheritedMethod: FC<SiblingInheritedMethodProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

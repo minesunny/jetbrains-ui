@@ -2,13 +2,20 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type HttpRequestsRunConfigurationProps = SvgProps;
+export type HttpRequestsRunConfigurationProps = Omit<
+  ComponentProps<'svg'>,
+  'size'
+> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const HttpRequestsRunConfigurationLight: FC<SvgProps> = ({
+const HttpRequestsRunConfigurationLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -48,7 +55,9 @@ const HttpRequestsRunConfigurationLight: FC<SvgProps> = ({
   </svg>
 );
 
-const HttpRequestsRunConfigurationDark: FC<SvgProps> = ({
+const HttpRequestsRunConfigurationDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -91,7 +100,7 @@ const HttpRequestsRunConfigurationDark: FC<SvgProps> = ({
 export const HttpRequestsRunConfiguration: FC<
   HttpRequestsRunConfigurationProps
 > = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -104,8 +113,8 @@ export const HttpRequestsRunConfiguration: FC<
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

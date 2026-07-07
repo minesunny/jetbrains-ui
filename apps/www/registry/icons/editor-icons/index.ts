@@ -140,4 +140,3 @@ export { MergeCallees } from './merge-callees';
 export type { MergeCalleesProps } from './merge-callees';
 export { Rec } from './rec';
 export type { RecProps } from './rec';
-export type { SvgMode, SvgProps, SvgSize } from '../utils';

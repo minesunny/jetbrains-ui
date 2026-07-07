@@ -112,4 +112,3 @@ export { Update } from './update';
 export type { UpdateProps } from './update';
 export { Vcs } from './vcs';
 export type { VcsProps } from './vcs';
-export type { SvgMode, SvgProps, SvgSize } from '../utils';

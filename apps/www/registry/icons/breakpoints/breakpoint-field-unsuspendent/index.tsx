@@ -2,13 +2,20 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type BreakpointFieldUnsuspendentProps = SvgProps;
+export type BreakpointFieldUnsuspendentProps = Omit<
+  ComponentProps<'svg'>,
+  'size'
+> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const BreakpointFieldUnsuspendentLight: FC<SvgProps> = ({
+const BreakpointFieldUnsuspendentLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -36,7 +43,9 @@ const BreakpointFieldUnsuspendentLight: FC<SvgProps> = ({
   </svg>
 );
 
-const BreakpointFieldUnsuspendentDark: FC<SvgProps> = ({
+const BreakpointFieldUnsuspendentDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -67,7 +76,7 @@ const BreakpointFieldUnsuspendentDark: FC<SvgProps> = ({
 export const BreakpointFieldUnsuspendent: FC<
   BreakpointFieldUnsuspendentProps
 > = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -80,8 +89,8 @@ export const BreakpointFieldUnsuspendent: FC<
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

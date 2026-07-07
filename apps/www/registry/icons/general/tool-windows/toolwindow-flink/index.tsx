@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../../utils';
 
-export type ToolwindowFlinkProps = SvgProps;
+export type ToolwindowFlinkProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const ToolwindowFlinkLight: FC<SvgProps> = ({
+const ToolwindowFlinkLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -39,7 +43,9 @@ const ToolwindowFlinkLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ToolwindowFlinkDark: FC<SvgProps> = ({
+const ToolwindowFlinkDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -71,7 +77,7 @@ const ToolwindowFlinkDark: FC<SvgProps> = ({
 );
 
 export const ToolwindowFlink: FC<ToolwindowFlinkProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -82,8 +88,8 @@ export const ToolwindowFlink: FC<ToolwindowFlinkProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

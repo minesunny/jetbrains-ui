@@ -4,1267 +4,2537 @@
 
 export const iconRegistry = {
   // Breakpoints (39)
-  'breakpoints/breakpoint': () => import('./Breakpoints').then((m) => ({ default: m.Breakpoint })),
-  'breakpoints/breakpoint-dependent': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointDependent })),
-  'breakpoints/breakpoint-disabled': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointDisabled })),
-  'breakpoints/breakpoint-exception': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointException })),
-  'breakpoints/breakpoint-exception-disabled': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointExceptionDisabled })),
-  'breakpoints/breakpoint-field': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointField })),
-  'breakpoints/breakpoint-field-dependent': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldDependent })),
-  'breakpoints/breakpoint-field-disabled': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldDisabled })),
-  'breakpoints/breakpoint-field-muted': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldMuted })),
-  'breakpoints/breakpoint-field-muted-dependent': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldMutedDependent })),
-  'breakpoints/breakpoint-field-muted-disabled': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldMutedDisabled })),
-  'breakpoints/breakpoint-field-unsuspendent': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldUnsuspendent })),
-  'breakpoints/breakpoint-field-unsuspendent-disabled': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldUnsuspendentDisabled })),
-  'breakpoints/breakpoint-field-unsuspendent-valid': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldUnsuspendentValid })),
-  'breakpoints/breakpoint-field-valid': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldValid })),
-  'breakpoints/breakpoint-invalid': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointInvalid })),
-  'breakpoints/breakpoint-lambda': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointLambda })),
-  'breakpoints/breakpoint-method': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMethod })),
-  'breakpoints/breakpoint-method-dependent': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodDependent })),
-  'breakpoints/breakpoint-method-disabled': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodDisabled })),
-  'breakpoints/breakpoint-method-muted': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodMuted })),
-  'breakpoints/breakpoint-method-muted-dependent': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodMutedDependent })),
-  'breakpoints/breakpoint-method-muted-disabled': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodMutedDisabled })),
-  'breakpoints/breakpoint-method-unsuspendent': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodUnsuspendent })),
-  'breakpoints/breakpoint-method-unsuspendent-disabled': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodUnsuspendentDisabled })),
-  'breakpoints/breakpoint-method-unsuspendent-valid': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodUnsuspendentValid })),
-  'breakpoints/breakpoint-method-valid': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodValid })),
-  'breakpoints/breakpoint-muted': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMuted })),
-  'breakpoints/breakpoint-muted-dependent': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMutedDependent })),
-  'breakpoints/breakpoint-muted-disabled': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointMutedDisabled })),
-  'breakpoints/breakpoint-obsolete': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointObsolete })),
-  'breakpoints/breakpoint-unsuspendent': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointUnsuspendent })),
-  'breakpoints/breakpoint-unsuspendent-disabled': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointUnsuspendentDisabled })),
-  'breakpoints/breakpoint-unsuspendent-valid': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointUnsuspendentValid })),
-  'breakpoints/breakpoint-valid': () => import('./Breakpoints').then((m) => ({ default: m.BreakpointValid })),
-  'breakpoints/multiple-breakpoints': () => import('./Breakpoints').then((m) => ({ default: m.MultipleBreakpoints })),
-  'breakpoints/multiple-breakpoints-disabled': () => import('./Breakpoints').then((m) => ({ default: m.MultipleBreakpointsDisabled })),
-  'breakpoints/multiple-breakpoints-muted': () => import('./Breakpoints').then((m) => ({ default: m.MultipleBreakpointsMuted })),
-  'breakpoints/question-badge': () => import('./Breakpoints').then((m) => ({ default: m.QuestionBadge })),
+  'breakpoints/breakpoint': () =>
+    import('./Breakpoints').then((m) => ({ default: m.Breakpoint })),
+  'breakpoints/breakpoint-dependent': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointDependent })),
+  'breakpoints/breakpoint-disabled': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointDisabled })),
+  'breakpoints/breakpoint-exception': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointException })),
+  'breakpoints/breakpoint-exception-disabled': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointExceptionDisabled,
+    })),
+  'breakpoints/breakpoint-field': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointField })),
+  'breakpoints/breakpoint-field-dependent': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointFieldDependent,
+    })),
+  'breakpoints/breakpoint-field-disabled': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointFieldDisabled,
+    })),
+  'breakpoints/breakpoint-field-muted': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldMuted })),
+  'breakpoints/breakpoint-field-muted-dependent': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointFieldMutedDependent,
+    })),
+  'breakpoints/breakpoint-field-muted-disabled': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointFieldMutedDisabled,
+    })),
+  'breakpoints/breakpoint-field-unsuspendent': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointFieldUnsuspendent,
+    })),
+  'breakpoints/breakpoint-field-unsuspendent-disabled': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointFieldUnsuspendentDisabled,
+    })),
+  'breakpoints/breakpoint-field-unsuspendent-valid': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointFieldUnsuspendentValid,
+    })),
+  'breakpoints/breakpoint-field-valid': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointFieldValid })),
+  'breakpoints/breakpoint-invalid': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointInvalid })),
+  'breakpoints/breakpoint-lambda': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointLambda })),
+  'breakpoints/breakpoint-method': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointMethod })),
+  'breakpoints/breakpoint-method-dependent': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointMethodDependent,
+    })),
+  'breakpoints/breakpoint-method-disabled': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointMethodDisabled,
+    })),
+  'breakpoints/breakpoint-method-muted': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodMuted })),
+  'breakpoints/breakpoint-method-muted-dependent': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointMethodMutedDependent,
+    })),
+  'breakpoints/breakpoint-method-muted-disabled': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointMethodMutedDisabled,
+    })),
+  'breakpoints/breakpoint-method-unsuspendent': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointMethodUnsuspendent,
+    })),
+  'breakpoints/breakpoint-method-unsuspendent-disabled': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointMethodUnsuspendentDisabled,
+    })),
+  'breakpoints/breakpoint-method-unsuspendent-valid': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointMethodUnsuspendentValid,
+    })),
+  'breakpoints/breakpoint-method-valid': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointMethodValid })),
+  'breakpoints/breakpoint-muted': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointMuted })),
+  'breakpoints/breakpoint-muted-dependent': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointMutedDependent,
+    })),
+  'breakpoints/breakpoint-muted-disabled': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointMutedDisabled,
+    })),
+  'breakpoints/breakpoint-obsolete': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointObsolete })),
+  'breakpoints/breakpoint-unsuspendent': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointUnsuspendent,
+    })),
+  'breakpoints/breakpoint-unsuspendent-disabled': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointUnsuspendentDisabled,
+    })),
+  'breakpoints/breakpoint-unsuspendent-valid': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.BreakpointUnsuspendentValid,
+    })),
+  'breakpoints/breakpoint-valid': () =>
+    import('./Breakpoints').then((m) => ({ default: m.BreakpointValid })),
+  'breakpoints/multiple-breakpoints': () =>
+    import('./Breakpoints').then((m) => ({ default: m.MultipleBreakpoints })),
+  'breakpoints/multiple-breakpoints-disabled': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.MultipleBreakpointsDisabled,
+    })),
+  'breakpoints/multiple-breakpoints-muted': () =>
+    import('./Breakpoints').then((m) => ({
+      default: m.MultipleBreakpointsMuted,
+    })),
+  'breakpoints/question-badge': () =>
+    import('./Breakpoints').then((m) => ({ default: m.QuestionBadge })),
 
   // Build (23)
   'build/build': () => import('./Build').then((m) => ({ default: m.Build })),
-  'build/dependency-analyzer': () => import('./Build').then((m) => ({ default: m.DependencyAnalyzer })),
+  'build/dependency-analyzer': () =>
+    import('./Build').then((m) => ({ default: m.DependencyAnalyzer })),
   'build/gradle': () => import('./Build').then((m) => ({ default: m.Gradle })),
-  'build/gradle-load-changes': () => import('./Build').then((m) => ({ default: m.GradleLoadChanges })),
-  'build/gradle-navigate': () => import('./Build').then((m) => ({ default: m.GradleNavigate })),
-  'build/gradle-subproject': () => import('./Build').then((m) => ({ default: m.GradleSubproject })),
-  'build/maven-bind': () => import('./Build').then((m) => ({ default: m.MavenBind })),
-  'build/maven-bind-checksum': () => import('./Build').then((m) => ({ default: m.MavenBindChecksum })),
-  'build/maven-checksum': () => import('./Build').then((m) => ({ default: m.MavenChecksum })),
-  'build/maven-children-projects': () => import('./Build').then((m) => ({ default: m.MavenChildrenProjects })),
-  'build/maven-flex': () => import('./Build').then((m) => ({ default: m.MavenFlex })),
-  'build/maven-load-changes': () => import('./Build').then((m) => ({ default: m.MavenLoadChanges })),
-  'build/maven-module': () => import('./Build').then((m) => ({ default: m.MavenModule })),
-  'build/maven-parent-projects': () => import('./Build').then((m) => ({ default: m.MavenParentProjects })),
-  'build/maven-plugin': () => import('./Build').then((m) => ({ default: m.MavenPlugin })),
-  'build/maven-plugin-goal': () => import('./Build').then((m) => ({ default: m.MavenPluginGoal })),
-  'build/maven-profiles': () => import('./Build').then((m) => ({ default: m.MavenProfiles })),
-  'build/maven-project': () => import('./Build').then((m) => ({ default: m.MavenProject })),
+  'build/gradle-load-changes': () =>
+    import('./Build').then((m) => ({ default: m.GradleLoadChanges })),
+  'build/gradle-navigate': () =>
+    import('./Build').then((m) => ({ default: m.GradleNavigate })),
+  'build/gradle-subproject': () =>
+    import('./Build').then((m) => ({ default: m.GradleSubproject })),
+  'build/maven-bind': () =>
+    import('./Build').then((m) => ({ default: m.MavenBind })),
+  'build/maven-bind-checksum': () =>
+    import('./Build').then((m) => ({ default: m.MavenBindChecksum })),
+  'build/maven-checksum': () =>
+    import('./Build').then((m) => ({ default: m.MavenChecksum })),
+  'build/maven-children-projects': () =>
+    import('./Build').then((m) => ({ default: m.MavenChildrenProjects })),
+  'build/maven-flex': () =>
+    import('./Build').then((m) => ({ default: m.MavenFlex })),
+  'build/maven-load-changes': () =>
+    import('./Build').then((m) => ({ default: m.MavenLoadChanges })),
+  'build/maven-module': () =>
+    import('./Build').then((m) => ({ default: m.MavenModule })),
+  'build/maven-parent-projects': () =>
+    import('./Build').then((m) => ({ default: m.MavenParentProjects })),
+  'build/maven-plugin': () =>
+    import('./Build').then((m) => ({ default: m.MavenPlugin })),
+  'build/maven-plugin-goal': () =>
+    import('./Build').then((m) => ({ default: m.MavenPluginGoal })),
+  'build/maven-profiles': () =>
+    import('./Build').then((m) => ({ default: m.MavenProfiles })),
+  'build/maven-project': () =>
+    import('./Build').then((m) => ({ default: m.MavenProject })),
   'build/task': () => import('./Build').then((m) => ({ default: m.Task })),
-  'build/task-group': () => import('./Build').then((m) => ({ default: m.TaskGroup })),
-  'build/toggle-offline-mode': () => import('./Build').then((m) => ({ default: m.ToggleOfflineMode })),
-  'build/toggle-skip-tests-mode': () => import('./Build').then((m) => ({ default: m.ToggleSkipTestsMode })),
-  'build/update-folders': () => import('./Build').then((m) => ({ default: m.UpdateFolders })),
+  'build/task-group': () =>
+    import('./Build').then((m) => ({ default: m.TaskGroup })),
+  'build/toggle-offline-mode': () =>
+    import('./Build').then((m) => ({ default: m.ToggleOfflineMode })),
+  'build/toggle-skip-tests-mode': () =>
+    import('./Build').then((m) => ({ default: m.ToggleSkipTestsMode })),
+  'build/update-folders': () =>
+    import('./Build').then((m) => ({ default: m.UpdateFolders })),
 
   // Database (379)
-  'database/access-method': () => import('./Database').then((m) => ({ default: m.AccessMethod })),
-  'database/adapter-script': () => import('./Database').then((m) => ({ default: m.AdapterScript })),
-  'database/aggregate': () => import('./Database').then((m) => ({ default: m.Aggregate })),
-  'database/apache': () => import('./Database').then((m) => ({ default: m.Apache })),
-  'database/apache-derby': () => import('./Database').then((m) => ({ default: m.ApacheDerby })),
-  'database/apache-ignite': () => import('./Database').then((m) => ({ default: m.ApacheIgnite })),
-  'database/apache-phoenix': () => import('./Database').then((m) => ({ default: m.ApachePhoenix })),
-  'database/argument': () => import('./Database').then((m) => ({ default: m.Argument })),
-  'database/athena': () => import('./Database').then((m) => ({ default: m.Athena })),
-  'database/azure': () => import('./Database').then((m) => ({ default: m.Azure })),
-  'database/big-query': () => import('./Database').then((m) => ({ default: m.BigQuery })),
-  'database/binary-data': () => import('./Database').then((m) => ({ default: m.BinaryData })),
-  'database/blue-key': () => import('./Database').then((m) => ({ default: m.BlueKey })),
-  'database/body': () => import('./Database').then((m) => ({ default: m.Body })),
-  'database/cassandra': () => import('./Database').then((m) => ({ default: m.Cassandra })),
-  'database/cassandra-file-type': () => import('./Database').then((m) => ({ default: m.CassandraFileType })),
-  'database/check-constraint': () => import('./Database').then((m) => ({ default: m.CheckConstraint })),
-  'database/click-house': () => import('./Database').then((m) => ({ default: m.ClickHouse })),
-  'database/cockroach-db': () => import('./Database').then((m) => ({ default: m.CockroachDb })),
-  'database/collation': () => import('./Database').then((m) => ({ default: m.Collation })),
-  'database/collection': () => import('./Database').then((m) => ({ default: m.Collection })),
-  'database/collection-key': () => import('./Database').then((m) => ({ default: m.CollectionKey })),
-  'database/collection-type': () => import('./Database').then((m) => ({ default: m.CollectionType })),
-  'database/column': () => import('./Database').then((m) => ({ default: m.Column })),
-  'database/column-blue-key': () => import('./Database').then((m) => ({ default: m.ColumnBlueKey })),
-  'database/column-blue-key-dot': () => import('./Database').then((m) => ({ default: m.ColumnBlueKeyDot })),
-  'database/column-blue-key-dot-index': () => import('./Database').then((m) => ({ default: m.ColumnBlueKeyDotIndex })),
-  'database/column-blue-key-index': () => import('./Database').then((m) => ({ default: m.ColumnBlueKeyIndex })),
-  'database/column-dot': () => import('./Database').then((m) => ({ default: m.ColumnDot })),
-  'database/column-dot-index': () => import('./Database').then((m) => ({ default: m.ColumnDotIndex })),
-  'database/column-filter': () => import('./Database').then((m) => ({ default: m.ColumnFilter })),
-  'database/column-gold-blue-key': () => import('./Database').then((m) => ({ default: m.ColumnGoldBlueKey })),
-  'database/column-gold-blue-key-dot': () => import('./Database').then((m) => ({ default: m.ColumnGoldBlueKeyDot })),
-  'database/column-gold-blue-key-dot-index': () => import('./Database').then((m) => ({ default: m.ColumnGoldBlueKeyDotIndex })),
-  'database/column-gold-blue-key-index': () => import('./Database').then((m) => ({ default: m.ColumnGoldBlueKeyIndex })),
-  'database/column-gold-key': () => import('./Database').then((m) => ({ default: m.ColumnGoldKey })),
-  'database/column-gold-key-dot': () => import('./Database').then((m) => ({ default: m.ColumnGoldKeyDot })),
-  'database/column-gold-key-dot-index': () => import('./Database').then((m) => ({ default: m.ColumnGoldKeyDotIndex })),
-  'database/column-gold-key-index': () => import('./Database').then((m) => ({ default: m.ColumnGoldKeyIndex })),
-  'database/column-grey-key': () => import('./Database').then((m) => ({ default: m.ColumnGreyKey })),
-  'database/column-index': () => import('./Database').then((m) => ({ default: m.ColumnIndex })),
-  'database/commit': () => import('./Database').then((m) => ({ default: m.Commit })),
-  'database/connector': () => import('./Database').then((m) => ({ default: m.Connector })),
-  'database/console-run': () => import('./Database').then((m) => ({ default: m.ConsoleRun })),
-  'database/console-show-plan': () => import('./Database').then((m) => ({ default: m.ConsoleShowPlan })),
-  'database/couchbase': () => import('./Database').then((m) => ({ default: m.Couchbase })),
-  'database/data-file': () => import('./Database').then((m) => ({ default: m.DataFile })),
-  'database/data-schema': () => import('./Database').then((m) => ({ default: m.DataSchema })),
-  'database/data-share': () => import('./Database').then((m) => ({ default: m.DataShare })),
-  'database/data-structure': () => import('./Database').then((m) => ({ default: m.DataStructure })),
-  'database/data-structure-key': () => import('./Database').then((m) => ({ default: m.DataStructureKey })),
-  'database/database': () => import('./Database').then((m) => ({ default: m.Database })),
-  'database/database-external': () => import('./Database').then((m) => ({ default: m.DatabaseExternal })),
-  'database/database-link': () => import('./Database').then((m) => ({ default: m.DatabaseLink })),
-  'database/database-objects-group': () => import('./Database').then((m) => ({ default: m.DatabaseObjectsGroup })),
-  'database/databricks': () => import('./Database').then((m) => ({ default: m.Databricks })),
+  'database/access-method': () =>
+    import('./Database').then((m) => ({ default: m.AccessMethod })),
+  'database/adapter-script': () =>
+    import('./Database').then((m) => ({ default: m.AdapterScript })),
+  'database/aggregate': () =>
+    import('./Database').then((m) => ({ default: m.Aggregate })),
+  'database/apache': () =>
+    import('./Database').then((m) => ({ default: m.Apache })),
+  'database/apache-derby': () =>
+    import('./Database').then((m) => ({ default: m.ApacheDerby })),
+  'database/apache-ignite': () =>
+    import('./Database').then((m) => ({ default: m.ApacheIgnite })),
+  'database/apache-phoenix': () =>
+    import('./Database').then((m) => ({ default: m.ApachePhoenix })),
+  'database/argument': () =>
+    import('./Database').then((m) => ({ default: m.Argument })),
+  'database/athena': () =>
+    import('./Database').then((m) => ({ default: m.Athena })),
+  'database/azure': () =>
+    import('./Database').then((m) => ({ default: m.Azure })),
+  'database/big-query': () =>
+    import('./Database').then((m) => ({ default: m.BigQuery })),
+  'database/binary-data': () =>
+    import('./Database').then((m) => ({ default: m.BinaryData })),
+  'database/blue-key': () =>
+    import('./Database').then((m) => ({ default: m.BlueKey })),
+  'database/body': () =>
+    import('./Database').then((m) => ({ default: m.Body })),
+  'database/cassandra': () =>
+    import('./Database').then((m) => ({ default: m.Cassandra })),
+  'database/cassandra-file-type': () =>
+    import('./Database').then((m) => ({ default: m.CassandraFileType })),
+  'database/check-constraint': () =>
+    import('./Database').then((m) => ({ default: m.CheckConstraint })),
+  'database/click-house': () =>
+    import('./Database').then((m) => ({ default: m.ClickHouse })),
+  'database/cockroach-db': () =>
+    import('./Database').then((m) => ({ default: m.CockroachDb })),
+  'database/collation': () =>
+    import('./Database').then((m) => ({ default: m.Collation })),
+  'database/collection': () =>
+    import('./Database').then((m) => ({ default: m.Collection })),
+  'database/collection-key': () =>
+    import('./Database').then((m) => ({ default: m.CollectionKey })),
+  'database/collection-type': () =>
+    import('./Database').then((m) => ({ default: m.CollectionType })),
+  'database/column': () =>
+    import('./Database').then((m) => ({ default: m.Column })),
+  'database/column-blue-key': () =>
+    import('./Database').then((m) => ({ default: m.ColumnBlueKey })),
+  'database/column-blue-key-dot': () =>
+    import('./Database').then((m) => ({ default: m.ColumnBlueKeyDot })),
+  'database/column-blue-key-dot-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnBlueKeyDotIndex })),
+  'database/column-blue-key-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnBlueKeyIndex })),
+  'database/column-dot': () =>
+    import('./Database').then((m) => ({ default: m.ColumnDot })),
+  'database/column-dot-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnDotIndex })),
+  'database/column-filter': () =>
+    import('./Database').then((m) => ({ default: m.ColumnFilter })),
+  'database/column-gold-blue-key': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldBlueKey })),
+  'database/column-gold-blue-key-dot': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldBlueKeyDot })),
+  'database/column-gold-blue-key-dot-index': () =>
+    import('./Database').then((m) => ({
+      default: m.ColumnGoldBlueKeyDotIndex,
+    })),
+  'database/column-gold-blue-key-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldBlueKeyIndex })),
+  'database/column-gold-key': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldKey })),
+  'database/column-gold-key-dot': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldKeyDot })),
+  'database/column-gold-key-dot-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldKeyDotIndex })),
+  'database/column-gold-key-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldKeyIndex })),
+  'database/column-grey-key': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGreyKey })),
+  'database/column-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnIndex })),
+  'database/commit': () =>
+    import('./Database').then((m) => ({ default: m.Commit })),
+  'database/connector': () =>
+    import('./Database').then((m) => ({ default: m.Connector })),
+  'database/console-run': () =>
+    import('./Database').then((m) => ({ default: m.ConsoleRun })),
+  'database/console-show-plan': () =>
+    import('./Database').then((m) => ({ default: m.ConsoleShowPlan })),
+  'database/couchbase': () =>
+    import('./Database').then((m) => ({ default: m.Couchbase })),
+  'database/data-file': () =>
+    import('./Database').then((m) => ({ default: m.DataFile })),
+  'database/data-schema': () =>
+    import('./Database').then((m) => ({ default: m.DataSchema })),
+  'database/data-share': () =>
+    import('./Database').then((m) => ({ default: m.DataShare })),
+  'database/data-structure': () =>
+    import('./Database').then((m) => ({ default: m.DataStructure })),
+  'database/data-structure-key': () =>
+    import('./Database').then((m) => ({ default: m.DataStructureKey })),
+  'database/database': () =>
+    import('./Database').then((m) => ({ default: m.Database })),
+  'database/database-external': () =>
+    import('./Database').then((m) => ({ default: m.DatabaseExternal })),
+  'database/database-link': () =>
+    import('./Database').then((m) => ({ default: m.DatabaseLink })),
+  'database/database-objects-group': () =>
+    import('./Database').then((m) => ({ default: m.DatabaseObjectsGroup })),
+  'database/databricks': () =>
+    import('./Database').then((m) => ({ default: m.Databricks })),
   'database/db2': () => import('./Database').then((m) => ({ default: m.Db2 })),
-  'database/ddl-data-source-overlay': () => import('./Database').then((m) => ({ default: m.DdlDataSourceOverlay })),
-  'database/ddl-dbms': () => import('./Database').then((m) => ({ default: m.DdlDbms })),
-  'database/default-constraint': () => import('./Database').then((m) => ({ default: m.DefaultConstraint })),
-  'database/denodo': () => import('./Database').then((m) => ({ default: m.Denodo })),
-  'database/document-db': () => import('./Database').then((m) => ({ default: m.DocumentDb })),
-  'database/duck-db': () => import('./Database').then((m) => ({ default: m.DuckDb })),
-  'database/dynamo-db': () => import('./Database').then((m) => ({ default: m.DynamoDb })),
-  'database/edit-data': () => import('./Database').then((m) => ({ default: m.EditData })),
-  'database/editor-output': () => import('./Database').then((m) => ({ default: m.EditorOutput })),
-  'database/elasticsearch': () => import('./Database').then((m) => ({ default: m.Elasticsearch })),
-  'database/exasol': () => import('./Database').then((m) => ({ default: m.Exasol })),
-  'database/expui/access-method': () => import('./Database').then((m) => ({ default: m.AccessMethod })),
-  'database/expui/adapter-script': () => import('./Database').then((m) => ({ default: m.AdapterScript })),
-  'database/expui/aggregate': () => import('./Database').then((m) => ({ default: m.Aggregate })),
-  'database/expui/argument': () => import('./Database').then((m) => ({ default: m.Argument })),
-  'database/expui/assembly': () => import('./Database').then((m) => ({ default: m.Assembly })),
-  'database/expui/blue-key': () => import('./Database').then((m) => ({ default: m.BlueKey })),
-  'database/expui/body': () => import('./Database').then((m) => ({ default: m.Body })),
-  'database/expui/check-constraint': () => import('./Database').then((m) => ({ default: m.CheckConstraint })),
-  'database/expui/class-instance': () => import('./Database').then((m) => ({ default: m.ClassInstance })),
-  'database/expui/cloud-service': () => import('./Database').then((m) => ({ default: m.CloudService })),
-  'database/expui/collation': () => import('./Database').then((m) => ({ default: m.Collation })),
-  'database/expui/collection': () => import('./Database').then((m) => ({ default: m.Collection })),
-  'database/expui/collection-key': () => import('./Database').then((m) => ({ default: m.CollectionKey })),
-  'database/expui/collection-type': () => import('./Database').then((m) => ({ default: m.CollectionType })),
-  'database/expui/column': () => import('./Database').then((m) => ({ default: m.Column })),
-  'database/expui/column-blue-key': () => import('./Database').then((m) => ({ default: m.ColumnBlueKey })),
-  'database/expui/column-blue-key-dot': () => import('./Database').then((m) => ({ default: m.ColumnBlueKeyDot })),
-  'database/expui/column-blue-key-dot-index': () => import('./Database').then((m) => ({ default: m.ColumnBlueKeyDotIndex })),
-  'database/expui/column-blue-key-index': () => import('./Database').then((m) => ({ default: m.ColumnBlueKeyIndex })),
-  'database/expui/column-dot': () => import('./Database').then((m) => ({ default: m.ColumnDot })),
-  'database/expui/column-dot-index': () => import('./Database').then((m) => ({ default: m.ColumnDotIndex })),
-  'database/expui/column-gold-blue-key': () => import('./Database').then((m) => ({ default: m.ColumnGoldBlueKey })),
-  'database/expui/column-gold-blue-key-dot': () => import('./Database').then((m) => ({ default: m.ColumnGoldBlueKeyDot })),
-  'database/expui/column-gold-blue-key-dot-index': () => import('./Database').then((m) => ({ default: m.ColumnGoldBlueKeyDotIndex })),
-  'database/expui/column-gold-blue-key-index': () => import('./Database').then((m) => ({ default: m.ColumnGoldBlueKeyIndex })),
-  'database/expui/column-gold-key': () => import('./Database').then((m) => ({ default: m.ColumnGoldKey })),
-  'database/expui/column-gold-key-dot': () => import('./Database').then((m) => ({ default: m.ColumnGoldKeyDot })),
-  'database/expui/column-gold-key-dot-index': () => import('./Database').then((m) => ({ default: m.ColumnGoldKeyDotIndex })),
-  'database/expui/column-gold-key-index': () => import('./Database').then((m) => ({ default: m.ColumnGoldKeyIndex })),
-  'database/expui/column-grey-key': () => import('./Database').then((m) => ({ default: m.ColumnGreyKey })),
-  'database/expui/column-index': () => import('./Database').then((m) => ({ default: m.ColumnIndex })),
-  'database/expui/commit': () => import('./Database').then((m) => ({ default: m.Commit })),
-  'database/expui/connector': () => import('./Database').then((m) => ({ default: m.Connector })),
-  'database/expui/console-run': () => import('./Database').then((m) => ({ default: m.ConsoleRun })),
-  'database/expui/console-show-plan': () => import('./Database').then((m) => ({ default: m.ConsoleShowPlan })),
-  'database/expui/data-file': () => import('./Database').then((m) => ({ default: m.DataFile })),
-  'database/expui/data-share': () => import('./Database').then((m) => ({ default: m.DataShare })),
-  'database/expui/data-structure': () => import('./Database').then((m) => ({ default: m.DataStructure })),
-  'database/expui/database': () => import('./Database').then((m) => ({ default: m.Database })),
-  'database/expui/database-changes': () => import('./Database').then((m) => ({ default: m.DatabaseChanges })),
-  'database/expui/database-external': () => import('./Database').then((m) => ({ default: m.DatabaseExternal })),
-  'database/expui/database-link': () => import('./Database').then((m) => ({ default: m.DatabaseLink })),
-  'database/expui/database-objects-group': () => import('./Database').then((m) => ({ default: m.DatabaseObjectsGroup })),
-  'database/expui/dbms': () => import('./Database').then((m) => ({ default: m.Dbms })),
-  'database/expui/dbms-output': () => import('./Database').then((m) => ({ default: m.DbmsOutput })),
-  'database/expui/ddl-data-source-overlay': () => import('./Database').then((m) => ({ default: m.DdlDataSourceOverlay })),
-  'database/expui/ddl-dbms': () => import('./Database').then((m) => ({ default: m.DdlDbms })),
-  'database/expui/default-constraint': () => import('./Database').then((m) => ({ default: m.DefaultConstraint })),
-  'database/expui/edit-data': () => import('./Database').then((m) => ({ default: m.EditData })),
-  'database/expui/editor-output': () => import('./Database').then((m) => ({ default: m.EditorOutput })),
-  'database/expui/extension': () => import('./Database').then((m) => ({ default: m.Extension })),
-  'database/expui/external-link': () => import('./Database').then((m) => ({ default: m.ExternalLink })),
-  'database/expui/external-schema': () => import('./Database').then((m) => ({ default: m.ExternalSchema })),
-  'database/expui/file-format': () => import('./Database').then((m) => ({ default: m.FileFormat })),
-  'database/expui/folder-template': () => import('./Database').then((m) => ({ default: m.FolderTemplate })),
-  'database/expui/foreign-datawrapper': () => import('./Database').then((m) => ({ default: m.ForeignDatawrapper })),
-  'database/expui/foreign-partion-table': () => import('./Database').then((m) => ({ default: m.ForeignPartionTable })),
-  'database/expui/foreign-server': () => import('./Database').then((m) => ({ default: m.ForeignServer })),
-  'database/expui/foreign-table': () => import('./Database').then((m) => ({ default: m.ForeignTable })),
-  'database/expui/function': () => import('./Database').then((m) => ({ default: m.Function })),
-  'database/expui/function-external': () => import('./Database').then((m) => ({ default: m.FunctionExternal })),
-  'database/expui/function-run': () => import('./Database').then((m) => ({ default: m.FunctionRun })),
-  'database/expui/funnel-regular': () => import('./Database').then((m) => ({ default: m.FunnelRegular })),
-  'database/expui/go-to-table': () => import('./Database').then((m) => ({ default: m.GoToTable })),
-  'database/expui/gold-key': () => import('./Database').then((m) => ({ default: m.GoldKey })),
-  'database/expui/green-bug-overlap': () => import('./Database').then((m) => ({ default: m.GreenBugOverlap })),
-  'database/expui/grey-key': () => import('./Database').then((m) => ({ default: m.GreyKey })),
-  'database/expui/hash-cluster': () => import('./Database').then((m) => ({ default: m.HashCluster })),
-  'database/expui/hash-table': () => import('./Database').then((m) => ({ default: m.HashTable })),
-  'database/expui/hash-table-key': () => import('./Database').then((m) => ({ default: m.HashTableKey })),
-  'database/expui/index-cluster': () => import('./Database').then((m) => ({ default: m.IndexCluster })),
-  'database/expui/index-fun': () => import('./Database').then((m) => ({ default: m.IndexFun })),
-  'database/expui/index-fun-unique': () => import('./Database').then((m) => ({ default: m.IndexFunUnique })),
-  'database/expui/index-icon': () => import('./Database').then((m) => ({ default: m.IndexIcon })),
-  'database/expui/index-unique': () => import('./Database').then((m) => ({ default: m.IndexUnique })),
-  'database/expui/json-document': () => import('./Database').then((m) => ({ default: m.JsonDocument })),
-  'database/expui/json-document-key': () => import('./Database').then((m) => ({ default: m.JsonDocumentKey })),
-  'database/expui/kill-data-source-process': () => import('./Database').then((m) => ({ default: m.KillDataSourceProcess })),
-  'database/expui/level-auto': () => import('./Database').then((m) => ({ default: m.LevelAuto })),
-  'database/expui/level-auto-inherited': () => import('./Database').then((m) => ({ default: m.LevelAutoInherited })),
-  'database/expui/level-one-declared': () => import('./Database').then((m) => ({ default: m.LevelOneDeclared })),
-  'database/expui/level-one-details': () => import('./Database').then((m) => ({ default: m.LevelOneDetails })),
-  'database/expui/level-one-inherited': () => import('./Database').then((m) => ({ default: m.LevelOneInherited })),
-  'database/expui/level-three-declared': () => import('./Database').then((m) => ({ default: m.LevelThreeDeclared })),
-  'database/expui/level-three-details': () => import('./Database').then((m) => ({ default: m.LevelThreeDetails })),
-  'database/expui/level-three-inherited': () => import('./Database').then((m) => ({ default: m.LevelThreeInherited })),
-  'database/expui/level-two-declared': () => import('./Database').then((m) => ({ default: m.LevelTwoDeclared })),
-  'database/expui/level-two-details': () => import('./Database').then((m) => ({ default: m.LevelTwoDetails })),
-  'database/expui/level-two-inherited': () => import('./Database').then((m) => ({ default: m.LevelTwoInherited })),
-  'database/expui/list': () => import('./Database').then((m) => ({ default: m.List })),
-  'database/expui/list-key': () => import('./Database').then((m) => ({ default: m.ListKey })),
-  'database/expui/lock-ultimate': () => import('./Database').then((m) => ({ default: m.LockUltimate })),
-  'database/expui/locked': () => import('./Database').then((m) => ({ default: m.Locked })),
-  'database/expui/log-overlap': () => import('./Database').then((m) => ({ default: m.LogOverlap })),
-  'database/expui/macro': () => import('./Database').then((m) => ({ default: m.Macro })),
-  'database/expui/manage-data-sources': () => import('./Database').then((m) => ({ default: m.ManageDataSources })),
-  'database/expui/materialized-log': () => import('./Database').then((m) => ({ default: m.MaterializedLog })),
-  'database/expui/materialized-view': () => import('./Database').then((m) => ({ default: m.MaterializedView })),
-  'database/expui/mongo-field': () => import('./Database').then((m) => ({ default: m.MongoField })),
-  'database/expui/mongo-field-gold-key': () => import('./Database').then((m) => ({ default: m.MongoFieldGoldKey })),
-  'database/expui/object-group': () => import('./Database').then((m) => ({ default: m.ObjectGroup })),
-  'database/expui/object-type-attribute': () => import('./Database').then((m) => ({ default: m.ObjectTypeAttribute })),
-  'database/expui/operator': () => import('./Database').then((m) => ({ default: m.Operator })),
-  'database/expui/operator-class': () => import('./Database').then((m) => ({ default: m.OperatorClass })),
-  'database/expui/operator-family': () => import('./Database').then((m) => ({ default: m.OperatorFamily })),
-  'database/expui/package': () => import('./Database').then((m) => ({ default: m.Package })),
-  'database/expui/partion-table': () => import('./Database').then((m) => ({ default: m.PartionTable })),
-  'database/expui/partition': () => import('./Database').then((m) => ({ default: m.Partition })),
-  'database/expui/play-back': () => import('./Database').then((m) => ({ default: m.PlayBack })),
-  'database/expui/play-first': () => import('./Database').then((m) => ({ default: m.PlayFirst })),
-  'database/expui/play-forward': () => import('./Database').then((m) => ({ default: m.PlayForward })),
-  'database/expui/play-last': () => import('./Database').then((m) => ({ default: m.PlayLast })),
-  'database/expui/postgres-cast': () => import('./Database').then((m) => ({ default: m.PostgresCast })),
-  'database/expui/preview-changes': () => import('./Database').then((m) => ({ default: m.PreviewChanges })),
-  'database/expui/procedure': () => import('./Database').then((m) => ({ default: m.Procedure })),
-  'database/expui/procedure-group': () => import('./Database').then((m) => ({ default: m.ProcedureGroup })),
-  'database/expui/procedure-run': () => import('./Database').then((m) => ({ default: m.ProcedureRun })),
-  'database/expui/projection': () => import('./Database').then((m) => ({ default: m.Projection })),
-  'database/expui/refresh-materialized-view': () => import('./Database').then((m) => ({ default: m.RefreshMaterializedView })),
-  'database/expui/role': () => import('./Database').then((m) => ({ default: m.Role })),
-  'database/expui/rollback': () => import('./Database').then((m) => ({ default: m.Rollback })),
-  'database/expui/routine': () => import('./Database').then((m) => ({ default: m.Routine })),
-  'database/expui/run-database-script': () => import('./Database').then((m) => ({ default: m.RunDatabaseScript })),
-  'database/expui/scheduled-event': () => import('./Database').then((m) => ({ default: m.ScheduledEvent })),
-  'database/expui/schema': () => import('./Database').then((m) => ({ default: m.Schema })),
-  'database/expui/scripting-script': () => import('./Database').then((m) => ({ default: m.ScriptingScript })),
-  'database/expui/sequence': () => import('./Database').then((m) => ({ default: m.Sequence })),
-  'database/expui/server-objects-group': () => import('./Database').then((m) => ({ default: m.ServerObjectsGroup })),
-  'database/expui/set': () => import('./Database').then((m) => ({ default: m.Set })),
-  'database/expui/set-key': () => import('./Database').then((m) => ({ default: m.SetKey })),
-  'database/expui/sorted-set': () => import('./Database').then((m) => ({ default: m.SortedSet })),
-  'database/expui/sorted-set-key': () => import('./Database').then((m) => ({ default: m.SortedSetKey })),
-  'database/expui/sql': () => import('./Database').then((m) => ({ default: m.Sql })),
-  'database/expui/sql-folder': () => import('./Database').then((m) => ({ default: m.SqlFolder })),
-  'database/expui/sql-group-by-type': () => import('./Database').then((m) => ({ default: m.SqlGroupByType })),
-  'database/expui/sql-other-statement': () => import('./Database').then((m) => ({ default: m.SqlOtherStatement })),
-  'database/expui/sql-script': () => import('./Database').then((m) => ({ default: m.SqlScript })),
-  'database/expui/sql-select-statement': () => import('./Database').then((m) => ({ default: m.SqlSelectStatement })),
-  'database/expui/sqldml-statement': () => import('./Database').then((m) => ({ default: m.SqldmlStatement })),
-  'database/expui/stream': () => import('./Database').then((m) => ({ default: m.Stream })),
-  'database/expui/stream-key': () => import('./Database').then((m) => ({ default: m.StreamKey })),
-  'database/expui/string': () => import('./Database').then((m) => ({ default: m.String })),
-  'database/expui/string-key': () => import('./Database').then((m) => ({ default: m.StringKey })),
-  'database/expui/submit-db': () => import('./Database').then((m) => ({ default: m.SubmitDb })),
-  'database/expui/synonym': () => import('./Database').then((m) => ({ default: m.Synonym })),
-  'database/expui/table': () => import('./Database').then((m) => ({ default: m.Table })),
-  'database/expui/table-mapping': () => import('./Database').then((m) => ({ default: m.TableMapping })),
-  'database/expui/tablespace': () => import('./Database').then((m) => ({ default: m.Tablespace })),
-  'database/expui/text-auto-generate': () => import('./Database').then((m) => ({ default: m.TextAutoGenerate })),
-  'database/expui/tool-window-console': () => import('./Database').then((m) => ({ default: m.ToolWindowConsole })),
-  'database/expui/tool-window-sql-generator': () => import('./Database').then((m) => ({ default: m.ToolWindowSqlGenerator })),
-  'database/expui/trigger': () => import('./Database').then((m) => ({ default: m.Trigger })),
-  'database/expui/udf-script': () => import('./Database').then((m) => ({ default: m.UdfScript })),
-  'database/expui/unspecified-cluster': () => import('./Database').then((m) => ({ default: m.UnspecifiedCluster })),
-  'database/expui/user': () => import('./Database').then((m) => ({ default: m.User })),
-  'database/expui/user-driver': () => import('./Database').then((m) => ({ default: m.UserDriver })),
-  'database/expui/user-group': () => import('./Database').then((m) => ({ default: m.UserGroup })),
-  'database/expui/user-mapping': () => import('./Database').then((m) => ({ default: m.UserMapping })),
-  'database/expui/view-parameters': () => import('./Database').then((m) => ({ default: m.ViewParameters })),
-  'database/expui/virtual-column': () => import('./Database').then((m) => ({ default: m.VirtualColumn })),
-  'database/expui/virtual-folder': () => import('./Database').then((m) => ({ default: m.VirtualFolder })),
-  'database/expui/virtual-foreign-key': () => import('./Database').then((m) => ({ default: m.VirtualForeignKey })),
-  'database/expui/virtual-view': () => import('./Database').then((m) => ({ default: m.VirtualView })),
-  'database/extension': () => import('./Database').then((m) => ({ default: m.Extension })),
-  'database/external-schema': () => import('./Database').then((m) => ({ default: m.ExternalSchema })),
-  'database/file-format': () => import('./Database').then((m) => ({ default: m.FileFormat })),
-  'database/firebird': () => import('./Database').then((m) => ({ default: m.Firebird })),
-  'database/foreign-datawrapper': () => import('./Database').then((m) => ({ default: m.ForeignDatawrapper })),
-  'database/foreign-partion-table': () => import('./Database').then((m) => ({ default: m.ForeignPartionTable })),
-  'database/foreign-server': () => import('./Database').then((m) => ({ default: m.ForeignServer })),
-  'database/foreign-table': () => import('./Database').then((m) => ({ default: m.ForeignTable })),
-  'database/function': () => import('./Database').then((m) => ({ default: m.Function })),
-  'database/function-external': () => import('./Database').then((m) => ({ default: m.FunctionExternal })),
-  'database/function-run': () => import('./Database').then((m) => ({ default: m.FunctionRun })),
-  'database/go-to-table': () => import('./Database').then((m) => ({ default: m.GoToTable })),
-  'database/gold-key': () => import('./Database').then((m) => ({ default: m.GoldKey })),
-  'database/google-cloud-dataproc': () => import('./Database').then((m) => ({ default: m.GoogleCloudDataproc })),
-  'database/google-cloud-spanner': () => import('./Database').then((m) => ({ default: m.GoogleCloudSpanner })),
-  'database/greenplum': () => import('./Database').then((m) => ({ default: m.Greenplum })),
-  'database/grey-key': () => import('./Database').then((m) => ({ default: m.GreyKey })),
+  'database/ddl-data-source-overlay': () =>
+    import('./Database').then((m) => ({ default: m.DdlDataSourceOverlay })),
+  'database/ddl-dbms': () =>
+    import('./Database').then((m) => ({ default: m.DdlDbms })),
+  'database/default-constraint': () =>
+    import('./Database').then((m) => ({ default: m.DefaultConstraint })),
+  'database/denodo': () =>
+    import('./Database').then((m) => ({ default: m.Denodo })),
+  'database/document-db': () =>
+    import('./Database').then((m) => ({ default: m.DocumentDb })),
+  'database/duck-db': () =>
+    import('./Database').then((m) => ({ default: m.DuckDb })),
+  'database/dynamo-db': () =>
+    import('./Database').then((m) => ({ default: m.DynamoDb })),
+  'database/edit-data': () =>
+    import('./Database').then((m) => ({ default: m.EditData })),
+  'database/editor-output': () =>
+    import('./Database').then((m) => ({ default: m.EditorOutput })),
+  'database/elasticsearch': () =>
+    import('./Database').then((m) => ({ default: m.Elasticsearch })),
+  'database/exasol': () =>
+    import('./Database').then((m) => ({ default: m.Exasol })),
+  'database/expui/access-method': () =>
+    import('./Database').then((m) => ({ default: m.AccessMethod })),
+  'database/expui/adapter-script': () =>
+    import('./Database').then((m) => ({ default: m.AdapterScript })),
+  'database/expui/aggregate': () =>
+    import('./Database').then((m) => ({ default: m.Aggregate })),
+  'database/expui/argument': () =>
+    import('./Database').then((m) => ({ default: m.Argument })),
+  'database/expui/assembly': () =>
+    import('./Database').then((m) => ({ default: m.Assembly })),
+  'database/expui/blue-key': () =>
+    import('./Database').then((m) => ({ default: m.BlueKey })),
+  'database/expui/body': () =>
+    import('./Database').then((m) => ({ default: m.Body })),
+  'database/expui/check-constraint': () =>
+    import('./Database').then((m) => ({ default: m.CheckConstraint })),
+  'database/expui/class-instance': () =>
+    import('./Database').then((m) => ({ default: m.ClassInstance })),
+  'database/expui/cloud-service': () =>
+    import('./Database').then((m) => ({ default: m.CloudService })),
+  'database/expui/collation': () =>
+    import('./Database').then((m) => ({ default: m.Collation })),
+  'database/expui/collection': () =>
+    import('./Database').then((m) => ({ default: m.Collection })),
+  'database/expui/collection-key': () =>
+    import('./Database').then((m) => ({ default: m.CollectionKey })),
+  'database/expui/collection-type': () =>
+    import('./Database').then((m) => ({ default: m.CollectionType })),
+  'database/expui/column': () =>
+    import('./Database').then((m) => ({ default: m.Column })),
+  'database/expui/column-blue-key': () =>
+    import('./Database').then((m) => ({ default: m.ColumnBlueKey })),
+  'database/expui/column-blue-key-dot': () =>
+    import('./Database').then((m) => ({ default: m.ColumnBlueKeyDot })),
+  'database/expui/column-blue-key-dot-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnBlueKeyDotIndex })),
+  'database/expui/column-blue-key-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnBlueKeyIndex })),
+  'database/expui/column-dot': () =>
+    import('./Database').then((m) => ({ default: m.ColumnDot })),
+  'database/expui/column-dot-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnDotIndex })),
+  'database/expui/column-gold-blue-key': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldBlueKey })),
+  'database/expui/column-gold-blue-key-dot': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldBlueKeyDot })),
+  'database/expui/column-gold-blue-key-dot-index': () =>
+    import('./Database').then((m) => ({
+      default: m.ColumnGoldBlueKeyDotIndex,
+    })),
+  'database/expui/column-gold-blue-key-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldBlueKeyIndex })),
+  'database/expui/column-gold-key': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldKey })),
+  'database/expui/column-gold-key-dot': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldKeyDot })),
+  'database/expui/column-gold-key-dot-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldKeyDotIndex })),
+  'database/expui/column-gold-key-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGoldKeyIndex })),
+  'database/expui/column-grey-key': () =>
+    import('./Database').then((m) => ({ default: m.ColumnGreyKey })),
+  'database/expui/column-index': () =>
+    import('./Database').then((m) => ({ default: m.ColumnIndex })),
+  'database/expui/commit': () =>
+    import('./Database').then((m) => ({ default: m.Commit })),
+  'database/expui/connector': () =>
+    import('./Database').then((m) => ({ default: m.Connector })),
+  'database/expui/console-run': () =>
+    import('./Database').then((m) => ({ default: m.ConsoleRun })),
+  'database/expui/console-show-plan': () =>
+    import('./Database').then((m) => ({ default: m.ConsoleShowPlan })),
+  'database/expui/data-file': () =>
+    import('./Database').then((m) => ({ default: m.DataFile })),
+  'database/expui/data-share': () =>
+    import('./Database').then((m) => ({ default: m.DataShare })),
+  'database/expui/data-structure': () =>
+    import('./Database').then((m) => ({ default: m.DataStructure })),
+  'database/expui/database': () =>
+    import('./Database').then((m) => ({ default: m.Database })),
+  'database/expui/database-changes': () =>
+    import('./Database').then((m) => ({ default: m.DatabaseChanges })),
+  'database/expui/database-external': () =>
+    import('./Database').then((m) => ({ default: m.DatabaseExternal })),
+  'database/expui/database-link': () =>
+    import('./Database').then((m) => ({ default: m.DatabaseLink })),
+  'database/expui/database-objects-group': () =>
+    import('./Database').then((m) => ({ default: m.DatabaseObjectsGroup })),
+  'database/expui/dbms': () =>
+    import('./Database').then((m) => ({ default: m.Dbms })),
+  'database/expui/dbms-output': () =>
+    import('./Database').then((m) => ({ default: m.DbmsOutput })),
+  'database/expui/ddl-data-source-overlay': () =>
+    import('./Database').then((m) => ({ default: m.DdlDataSourceOverlay })),
+  'database/expui/ddl-dbms': () =>
+    import('./Database').then((m) => ({ default: m.DdlDbms })),
+  'database/expui/default-constraint': () =>
+    import('./Database').then((m) => ({ default: m.DefaultConstraint })),
+  'database/expui/edit-data': () =>
+    import('./Database').then((m) => ({ default: m.EditData })),
+  'database/expui/editor-output': () =>
+    import('./Database').then((m) => ({ default: m.EditorOutput })),
+  'database/expui/extension': () =>
+    import('./Database').then((m) => ({ default: m.Extension })),
+  'database/expui/external-link': () =>
+    import('./Database').then((m) => ({ default: m.ExternalLink })),
+  'database/expui/external-schema': () =>
+    import('./Database').then((m) => ({ default: m.ExternalSchema })),
+  'database/expui/file-format': () =>
+    import('./Database').then((m) => ({ default: m.FileFormat })),
+  'database/expui/folder-template': () =>
+    import('./Database').then((m) => ({ default: m.FolderTemplate })),
+  'database/expui/foreign-datawrapper': () =>
+    import('./Database').then((m) => ({ default: m.ForeignDatawrapper })),
+  'database/expui/foreign-partion-table': () =>
+    import('./Database').then((m) => ({ default: m.ForeignPartionTable })),
+  'database/expui/foreign-server': () =>
+    import('./Database').then((m) => ({ default: m.ForeignServer })),
+  'database/expui/foreign-table': () =>
+    import('./Database').then((m) => ({ default: m.ForeignTable })),
+  'database/expui/function': () =>
+    import('./Database').then((m) => ({ default: m.Function })),
+  'database/expui/function-external': () =>
+    import('./Database').then((m) => ({ default: m.FunctionExternal })),
+  'database/expui/function-run': () =>
+    import('./Database').then((m) => ({ default: m.FunctionRun })),
+  'database/expui/funnel-regular': () =>
+    import('./Database').then((m) => ({ default: m.FunnelRegular })),
+  'database/expui/go-to-table': () =>
+    import('./Database').then((m) => ({ default: m.GoToTable })),
+  'database/expui/gold-key': () =>
+    import('./Database').then((m) => ({ default: m.GoldKey })),
+  'database/expui/green-bug-overlap': () =>
+    import('./Database').then((m) => ({ default: m.GreenBugOverlap })),
+  'database/expui/grey-key': () =>
+    import('./Database').then((m) => ({ default: m.GreyKey })),
+  'database/expui/hash-cluster': () =>
+    import('./Database').then((m) => ({ default: m.HashCluster })),
+  'database/expui/hash-table': () =>
+    import('./Database').then((m) => ({ default: m.HashTable })),
+  'database/expui/hash-table-key': () =>
+    import('./Database').then((m) => ({ default: m.HashTableKey })),
+  'database/expui/index-cluster': () =>
+    import('./Database').then((m) => ({ default: m.IndexCluster })),
+  'database/expui/index-fun': () =>
+    import('./Database').then((m) => ({ default: m.IndexFun })),
+  'database/expui/index-fun-unique': () =>
+    import('./Database').then((m) => ({ default: m.IndexFunUnique })),
+  'database/expui/index-icon': () =>
+    import('./Database').then((m) => ({ default: m.IndexIcon })),
+  'database/expui/index-unique': () =>
+    import('./Database').then((m) => ({ default: m.IndexUnique })),
+  'database/expui/json-document': () =>
+    import('./Database').then((m) => ({ default: m.JsonDocument })),
+  'database/expui/json-document-key': () =>
+    import('./Database').then((m) => ({ default: m.JsonDocumentKey })),
+  'database/expui/kill-data-source-process': () =>
+    import('./Database').then((m) => ({ default: m.KillDataSourceProcess })),
+  'database/expui/level-auto': () =>
+    import('./Database').then((m) => ({ default: m.LevelAuto })),
+  'database/expui/level-auto-inherited': () =>
+    import('./Database').then((m) => ({ default: m.LevelAutoInherited })),
+  'database/expui/level-one-declared': () =>
+    import('./Database').then((m) => ({ default: m.LevelOneDeclared })),
+  'database/expui/level-one-details': () =>
+    import('./Database').then((m) => ({ default: m.LevelOneDetails })),
+  'database/expui/level-one-inherited': () =>
+    import('./Database').then((m) => ({ default: m.LevelOneInherited })),
+  'database/expui/level-three-declared': () =>
+    import('./Database').then((m) => ({ default: m.LevelThreeDeclared })),
+  'database/expui/level-three-details': () =>
+    import('./Database').then((m) => ({ default: m.LevelThreeDetails })),
+  'database/expui/level-three-inherited': () =>
+    import('./Database').then((m) => ({ default: m.LevelThreeInherited })),
+  'database/expui/level-two-declared': () =>
+    import('./Database').then((m) => ({ default: m.LevelTwoDeclared })),
+  'database/expui/level-two-details': () =>
+    import('./Database').then((m) => ({ default: m.LevelTwoDetails })),
+  'database/expui/level-two-inherited': () =>
+    import('./Database').then((m) => ({ default: m.LevelTwoInherited })),
+  'database/expui/list': () =>
+    import('./Database').then((m) => ({ default: m.List })),
+  'database/expui/list-key': () =>
+    import('./Database').then((m) => ({ default: m.ListKey })),
+  'database/expui/lock-ultimate': () =>
+    import('./Database').then((m) => ({ default: m.LockUltimate })),
+  'database/expui/locked': () =>
+    import('./Database').then((m) => ({ default: m.Locked })),
+  'database/expui/log-overlap': () =>
+    import('./Database').then((m) => ({ default: m.LogOverlap })),
+  'database/expui/macro': () =>
+    import('./Database').then((m) => ({ default: m.Macro })),
+  'database/expui/manage-data-sources': () =>
+    import('./Database').then((m) => ({ default: m.ManageDataSources })),
+  'database/expui/materialized-log': () =>
+    import('./Database').then((m) => ({ default: m.MaterializedLog })),
+  'database/expui/materialized-view': () =>
+    import('./Database').then((m) => ({ default: m.MaterializedView })),
+  'database/expui/mongo-field': () =>
+    import('./Database').then((m) => ({ default: m.MongoField })),
+  'database/expui/mongo-field-gold-key': () =>
+    import('./Database').then((m) => ({ default: m.MongoFieldGoldKey })),
+  'database/expui/object-group': () =>
+    import('./Database').then((m) => ({ default: m.ObjectGroup })),
+  'database/expui/object-type-attribute': () =>
+    import('./Database').then((m) => ({ default: m.ObjectTypeAttribute })),
+  'database/expui/operator': () =>
+    import('./Database').then((m) => ({ default: m.Operator })),
+  'database/expui/operator-class': () =>
+    import('./Database').then((m) => ({ default: m.OperatorClass })),
+  'database/expui/operator-family': () =>
+    import('./Database').then((m) => ({ default: m.OperatorFamily })),
+  'database/expui/package': () =>
+    import('./Database').then((m) => ({ default: m.Package })),
+  'database/expui/partion-table': () =>
+    import('./Database').then((m) => ({ default: m.PartionTable })),
+  'database/expui/partition': () =>
+    import('./Database').then((m) => ({ default: m.Partition })),
+  'database/expui/play-back': () =>
+    import('./Database').then((m) => ({ default: m.PlayBack })),
+  'database/expui/play-first': () =>
+    import('./Database').then((m) => ({ default: m.PlayFirst })),
+  'database/expui/play-forward': () =>
+    import('./Database').then((m) => ({ default: m.PlayForward })),
+  'database/expui/play-last': () =>
+    import('./Database').then((m) => ({ default: m.PlayLast })),
+  'database/expui/postgres-cast': () =>
+    import('./Database').then((m) => ({ default: m.PostgresCast })),
+  'database/expui/preview-changes': () =>
+    import('./Database').then((m) => ({ default: m.PreviewChanges })),
+  'database/expui/procedure': () =>
+    import('./Database').then((m) => ({ default: m.Procedure })),
+  'database/expui/procedure-group': () =>
+    import('./Database').then((m) => ({ default: m.ProcedureGroup })),
+  'database/expui/procedure-run': () =>
+    import('./Database').then((m) => ({ default: m.ProcedureRun })),
+  'database/expui/projection': () =>
+    import('./Database').then((m) => ({ default: m.Projection })),
+  'database/expui/refresh-materialized-view': () =>
+    import('./Database').then((m) => ({ default: m.RefreshMaterializedView })),
+  'database/expui/role': () =>
+    import('./Database').then((m) => ({ default: m.Role })),
+  'database/expui/rollback': () =>
+    import('./Database').then((m) => ({ default: m.Rollback })),
+  'database/expui/routine': () =>
+    import('./Database').then((m) => ({ default: m.Routine })),
+  'database/expui/run-database-script': () =>
+    import('./Database').then((m) => ({ default: m.RunDatabaseScript })),
+  'database/expui/scheduled-event': () =>
+    import('./Database').then((m) => ({ default: m.ScheduledEvent })),
+  'database/expui/schema': () =>
+    import('./Database').then((m) => ({ default: m.Schema })),
+  'database/expui/scripting-script': () =>
+    import('./Database').then((m) => ({ default: m.ScriptingScript })),
+  'database/expui/sequence': () =>
+    import('./Database').then((m) => ({ default: m.Sequence })),
+  'database/expui/server-objects-group': () =>
+    import('./Database').then((m) => ({ default: m.ServerObjectsGroup })),
+  'database/expui/set': () =>
+    import('./Database').then((m) => ({ default: m.Set })),
+  'database/expui/set-key': () =>
+    import('./Database').then((m) => ({ default: m.SetKey })),
+  'database/expui/sorted-set': () =>
+    import('./Database').then((m) => ({ default: m.SortedSet })),
+  'database/expui/sorted-set-key': () =>
+    import('./Database').then((m) => ({ default: m.SortedSetKey })),
+  'database/expui/sql': () =>
+    import('./Database').then((m) => ({ default: m.Sql })),
+  'database/expui/sql-folder': () =>
+    import('./Database').then((m) => ({ default: m.SqlFolder })),
+  'database/expui/sql-group-by-type': () =>
+    import('./Database').then((m) => ({ default: m.SqlGroupByType })),
+  'database/expui/sql-other-statement': () =>
+    import('./Database').then((m) => ({ default: m.SqlOtherStatement })),
+  'database/expui/sql-script': () =>
+    import('./Database').then((m) => ({ default: m.SqlScript })),
+  'database/expui/sql-select-statement': () =>
+    import('./Database').then((m) => ({ default: m.SqlSelectStatement })),
+  'database/expui/sqldml-statement': () =>
+    import('./Database').then((m) => ({ default: m.SqldmlStatement })),
+  'database/expui/stream': () =>
+    import('./Database').then((m) => ({ default: m.Stream })),
+  'database/expui/stream-key': () =>
+    import('./Database').then((m) => ({ default: m.StreamKey })),
+  'database/expui/string': () =>
+    import('./Database').then((m) => ({ default: m.String })),
+  'database/expui/string-key': () =>
+    import('./Database').then((m) => ({ default: m.StringKey })),
+  'database/expui/submit-db': () =>
+    import('./Database').then((m) => ({ default: m.SubmitDb })),
+  'database/expui/synonym': () =>
+    import('./Database').then((m) => ({ default: m.Synonym })),
+  'database/expui/table': () =>
+    import('./Database').then((m) => ({ default: m.Table })),
+  'database/expui/table-mapping': () =>
+    import('./Database').then((m) => ({ default: m.TableMapping })),
+  'database/expui/tablespace': () =>
+    import('./Database').then((m) => ({ default: m.Tablespace })),
+  'database/expui/text-auto-generate': () =>
+    import('./Database').then((m) => ({ default: m.TextAutoGenerate })),
+  'database/expui/tool-window-console': () =>
+    import('./Database').then((m) => ({ default: m.ToolWindowConsole })),
+  'database/expui/tool-window-sql-generator': () =>
+    import('./Database').then((m) => ({ default: m.ToolWindowSqlGenerator })),
+  'database/expui/trigger': () =>
+    import('./Database').then((m) => ({ default: m.Trigger })),
+  'database/expui/udf-script': () =>
+    import('./Database').then((m) => ({ default: m.UdfScript })),
+  'database/expui/unspecified-cluster': () =>
+    import('./Database').then((m) => ({ default: m.UnspecifiedCluster })),
+  'database/expui/user': () =>
+    import('./Database').then((m) => ({ default: m.User })),
+  'database/expui/user-driver': () =>
+    import('./Database').then((m) => ({ default: m.UserDriver })),
+  'database/expui/user-group': () =>
+    import('./Database').then((m) => ({ default: m.UserGroup })),
+  'database/expui/user-mapping': () =>
+    import('./Database').then((m) => ({ default: m.UserMapping })),
+  'database/expui/view-parameters': () =>
+    import('./Database').then((m) => ({ default: m.ViewParameters })),
+  'database/expui/virtual-column': () =>
+    import('./Database').then((m) => ({ default: m.VirtualColumn })),
+  'database/expui/virtual-folder': () =>
+    import('./Database').then((m) => ({ default: m.VirtualFolder })),
+  'database/expui/virtual-foreign-key': () =>
+    import('./Database').then((m) => ({ default: m.VirtualForeignKey })),
+  'database/expui/virtual-view': () =>
+    import('./Database').then((m) => ({ default: m.VirtualView })),
+  'database/extension': () =>
+    import('./Database').then((m) => ({ default: m.Extension })),
+  'database/external-schema': () =>
+    import('./Database').then((m) => ({ default: m.ExternalSchema })),
+  'database/file-format': () =>
+    import('./Database').then((m) => ({ default: m.FileFormat })),
+  'database/firebird': () =>
+    import('./Database').then((m) => ({ default: m.Firebird })),
+  'database/foreign-datawrapper': () =>
+    import('./Database').then((m) => ({ default: m.ForeignDatawrapper })),
+  'database/foreign-partion-table': () =>
+    import('./Database').then((m) => ({ default: m.ForeignPartionTable })),
+  'database/foreign-server': () =>
+    import('./Database').then((m) => ({ default: m.ForeignServer })),
+  'database/foreign-table': () =>
+    import('./Database').then((m) => ({ default: m.ForeignTable })),
+  'database/function': () =>
+    import('./Database').then((m) => ({ default: m.Function })),
+  'database/function-external': () =>
+    import('./Database').then((m) => ({ default: m.FunctionExternal })),
+  'database/function-run': () =>
+    import('./Database').then((m) => ({ default: m.FunctionRun })),
+  'database/go-to-table': () =>
+    import('./Database').then((m) => ({ default: m.GoToTable })),
+  'database/gold-key': () =>
+    import('./Database').then((m) => ({ default: m.GoldKey })),
+  'database/google-cloud-dataproc': () =>
+    import('./Database').then((m) => ({ default: m.GoogleCloudDataproc })),
+  'database/google-cloud-spanner': () =>
+    import('./Database').then((m) => ({ default: m.GoogleCloudSpanner })),
+  'database/greenplum': () =>
+    import('./Database').then((m) => ({ default: m.Greenplum })),
+  'database/grey-key': () =>
+    import('./Database').then((m) => ({ default: m.GreyKey })),
   'database/h2': () => import('./Database').then((m) => ({ default: m.H2 })),
-  'database/hana': () => import('./Database').then((m) => ({ default: m.Hana })),
-  'database/hash-cluster': () => import('./Database').then((m) => ({ default: m.HashCluster })),
-  'database/hash-table': () => import('./Database').then((m) => ({ default: m.HashTable })),
-  'database/hash-table-key': () => import('./Database').then((m) => ({ default: m.HashTableKey })),
-  'database/hive': () => import('./Database').then((m) => ({ default: m.Hive })),
-  'database/hive-file-type': () => import('./Database').then((m) => ({ default: m.HiveFileType })),
-  'database/hsqldb': () => import('./Database').then((m) => ({ default: m.Hsqldb })),
+  'database/hana': () =>
+    import('./Database').then((m) => ({ default: m.Hana })),
+  'database/hash-cluster': () =>
+    import('./Database').then((m) => ({ default: m.HashCluster })),
+  'database/hash-table': () =>
+    import('./Database').then((m) => ({ default: m.HashTable })),
+  'database/hash-table-key': () =>
+    import('./Database').then((m) => ({ default: m.HashTableKey })),
+  'database/hive': () =>
+    import('./Database').then((m) => ({ default: m.Hive })),
+  'database/hive-file-type': () =>
+    import('./Database').then((m) => ({ default: m.HiveFileType })),
+  'database/hsqldb': () =>
+    import('./Database').then((m) => ({ default: m.Hsqldb })),
   'database/ibm': () => import('./Database').then((m) => ({ default: m.Ibm })),
-  'database/impala': () => import('./Database').then((m) => ({ default: m.Impala })),
-  'database/index-cluster': () => import('./Database').then((m) => ({ default: m.IndexCluster })),
-  'database/index-fun': () => import('./Database').then((m) => ({ default: m.IndexFun })),
-  'database/index-fun-unique': () => import('./Database').then((m) => ({ default: m.IndexFunUnique })),
-  'database/index-icon': () => import('./Database').then((m) => ({ default: m.IndexIcon })),
-  'database/index-unique': () => import('./Database').then((m) => ({ default: m.IndexUnique })),
-  'database/informix': () => import('./Database').then((m) => ({ default: m.Informix })),
-  'database/intersystem-cache': () => import('./Database').then((m) => ({ default: m.IntersystemCache })),
-  'database/json-document': () => import('./Database').then((m) => ({ default: m.JsonDocument })),
-  'database/json-document-key': () => import('./Database').then((m) => ({ default: m.JsonDocumentKey })),
-  'database/kill-data-source-process': () => import('./Database').then((m) => ({ default: m.KillDataSourceProcess })),
-  'database/level-auto': () => import('./Database').then((m) => ({ default: m.LevelAuto })),
-  'database/level-one-declared': () => import('./Database').then((m) => ({ default: m.LevelOneDeclared })),
-  'database/level-one-details': () => import('./Database').then((m) => ({ default: m.LevelOneDetails })),
-  'database/level-one-inherited': () => import('./Database').then((m) => ({ default: m.LevelOneInherited })),
-  'database/level-three-declared': () => import('./Database').then((m) => ({ default: m.LevelThreeDeclared })),
-  'database/level-three-details': () => import('./Database').then((m) => ({ default: m.LevelThreeDetails })),
-  'database/level-three-inherited': () => import('./Database').then((m) => ({ default: m.LevelThreeInherited })),
-  'database/level-two-declared': () => import('./Database').then((m) => ({ default: m.LevelTwoDeclared })),
-  'database/level-two-details': () => import('./Database').then((m) => ({ default: m.LevelTwoDetails })),
-  'database/level-two-inherited': () => import('./Database').then((m) => ({ default: m.LevelTwoInherited })),
-  'database/list': () => import('./Database').then((m) => ({ default: m.List })),
-  'database/list-key': () => import('./Database').then((m) => ({ default: m.ListKey })),
-  'database/locked': () => import('./Database').then((m) => ({ default: m.Locked })),
-  'database/macro': () => import('./Database').then((m) => ({ default: m.Macro })),
-  'database/manage-data-sources': () => import('./Database').then((m) => ({ default: m.ManageDataSources })),
-  'database/mariadb': () => import('./Database').then((m) => ({ default: m.Mariadb })),
-  'database/materialized-log': () => import('./Database').then((m) => ({ default: m.MaterializedLog })),
-  'database/materialized-view': () => import('./Database').then((m) => ({ default: m.MaterializedView })),
-  'database/microsoft': () => import('./Database').then((m) => ({ default: m.Microsoft })),
-  'database/mimer-sql': () => import('./Database').then((m) => ({ default: m.MimerSql })),
-  'database/mongo-db': () => import('./Database').then((m) => ({ default: m.MongoDb })),
-  'database/mongo-field': () => import('./Database').then((m) => ({ default: m.MongoField })),
-  'database/mongo-field-gold-key': () => import('./Database').then((m) => ({ default: m.MongoFieldGoldKey })),
-  'database/mysql': () => import('./Database').then((m) => ({ default: m.Mysql })),
-  'database/netezza': () => import('./Database').then((m) => ({ default: m.Netezza })),
-  'database/object-group': () => import('./Database').then((m) => ({ default: m.ObjectGroup })),
-  'database/object-type-attribute': () => import('./Database').then((m) => ({ default: m.ObjectTypeAttribute })),
-  'database/openedge': () => import('./Database').then((m) => ({ default: m.Openedge })),
-  'database/operator': () => import('./Database').then((m) => ({ default: m.Operator })),
-  'database/operator-class': () => import('./Database').then((m) => ({ default: m.OperatorClass })),
-  'database/operator-family': () => import('./Database').then((m) => ({ default: m.OperatorFamily })),
-  'database/oracle': () => import('./Database').then((m) => ({ default: m.Oracle })),
-  'database/package': () => import('./Database').then((m) => ({ default: m.Package })),
-  'database/partion': () => import('./Database').then((m) => ({ default: m.Partion })),
-  'database/partion-table': () => import('./Database').then((m) => ({ default: m.PartionTable })),
+  'database/impala': () =>
+    import('./Database').then((m) => ({ default: m.Impala })),
+  'database/index-cluster': () =>
+    import('./Database').then((m) => ({ default: m.IndexCluster })),
+  'database/index-fun': () =>
+    import('./Database').then((m) => ({ default: m.IndexFun })),
+  'database/index-fun-unique': () =>
+    import('./Database').then((m) => ({ default: m.IndexFunUnique })),
+  'database/index-icon': () =>
+    import('./Database').then((m) => ({ default: m.IndexIcon })),
+  'database/index-unique': () =>
+    import('./Database').then((m) => ({ default: m.IndexUnique })),
+  'database/informix': () =>
+    import('./Database').then((m) => ({ default: m.Informix })),
+  'database/intersystem-cache': () =>
+    import('./Database').then((m) => ({ default: m.IntersystemCache })),
+  'database/json-document': () =>
+    import('./Database').then((m) => ({ default: m.JsonDocument })),
+  'database/json-document-key': () =>
+    import('./Database').then((m) => ({ default: m.JsonDocumentKey })),
+  'database/kill-data-source-process': () =>
+    import('./Database').then((m) => ({ default: m.KillDataSourceProcess })),
+  'database/level-auto': () =>
+    import('./Database').then((m) => ({ default: m.LevelAuto })),
+  'database/level-one-declared': () =>
+    import('./Database').then((m) => ({ default: m.LevelOneDeclared })),
+  'database/level-one-details': () =>
+    import('./Database').then((m) => ({ default: m.LevelOneDetails })),
+  'database/level-one-inherited': () =>
+    import('./Database').then((m) => ({ default: m.LevelOneInherited })),
+  'database/level-three-declared': () =>
+    import('./Database').then((m) => ({ default: m.LevelThreeDeclared })),
+  'database/level-three-details': () =>
+    import('./Database').then((m) => ({ default: m.LevelThreeDetails })),
+  'database/level-three-inherited': () =>
+    import('./Database').then((m) => ({ default: m.LevelThreeInherited })),
+  'database/level-two-declared': () =>
+    import('./Database').then((m) => ({ default: m.LevelTwoDeclared })),
+  'database/level-two-details': () =>
+    import('./Database').then((m) => ({ default: m.LevelTwoDetails })),
+  'database/level-two-inherited': () =>
+    import('./Database').then((m) => ({ default: m.LevelTwoInherited })),
+  'database/list': () =>
+    import('./Database').then((m) => ({ default: m.List })),
+  'database/list-key': () =>
+    import('./Database').then((m) => ({ default: m.ListKey })),
+  'database/locked': () =>
+    import('./Database').then((m) => ({ default: m.Locked })),
+  'database/macro': () =>
+    import('./Database').then((m) => ({ default: m.Macro })),
+  'database/manage-data-sources': () =>
+    import('./Database').then((m) => ({ default: m.ManageDataSources })),
+  'database/mariadb': () =>
+    import('./Database').then((m) => ({ default: m.Mariadb })),
+  'database/materialized-log': () =>
+    import('./Database').then((m) => ({ default: m.MaterializedLog })),
+  'database/materialized-view': () =>
+    import('./Database').then((m) => ({ default: m.MaterializedView })),
+  'database/microsoft': () =>
+    import('./Database').then((m) => ({ default: m.Microsoft })),
+  'database/mimer-sql': () =>
+    import('./Database').then((m) => ({ default: m.MimerSql })),
+  'database/mongo-db': () =>
+    import('./Database').then((m) => ({ default: m.MongoDb })),
+  'database/mongo-field': () =>
+    import('./Database').then((m) => ({ default: m.MongoField })),
+  'database/mongo-field-gold-key': () =>
+    import('./Database').then((m) => ({ default: m.MongoFieldGoldKey })),
+  'database/mysql': () =>
+    import('./Database').then((m) => ({ default: m.Mysql })),
+  'database/netezza': () =>
+    import('./Database').then((m) => ({ default: m.Netezza })),
+  'database/object-group': () =>
+    import('./Database').then((m) => ({ default: m.ObjectGroup })),
+  'database/object-type-attribute': () =>
+    import('./Database').then((m) => ({ default: m.ObjectTypeAttribute })),
+  'database/openedge': () =>
+    import('./Database').then((m) => ({ default: m.Openedge })),
+  'database/operator': () =>
+    import('./Database').then((m) => ({ default: m.Operator })),
+  'database/operator-class': () =>
+    import('./Database').then((m) => ({ default: m.OperatorClass })),
+  'database/operator-family': () =>
+    import('./Database').then((m) => ({ default: m.OperatorFamily })),
+  'database/oracle': () =>
+    import('./Database').then((m) => ({ default: m.Oracle })),
+  'database/package': () =>
+    import('./Database').then((m) => ({ default: m.Package })),
+  'database/partion': () =>
+    import('./Database').then((m) => ({ default: m.Partion })),
+  'database/partion-table': () =>
+    import('./Database').then((m) => ({ default: m.PartionTable })),
   'database/pin': () => import('./Database').then((m) => ({ default: m.Pin })),
-  'database/pin-hovered': () => import('./Database').then((m) => ({ default: m.PinHovered })),
-  'database/pin-selected': () => import('./Database').then((m) => ({ default: m.PinSelected })),
-  'database/pin-selected-hovered': () => import('./Database').then((m) => ({ default: m.PinSelectedHovered })),
-  'database/postgresql': () => import('./Database').then((m) => ({ default: m.Postgresql })),
-  'database/presto': () => import('./Database').then((m) => ({ default: m.Presto })),
-  'database/preview-changes': () => import('./Database').then((m) => ({ default: m.PreviewChanges })),
-  'database/procedure': () => import('./Database').then((m) => ({ default: m.Procedure })),
-  'database/procedure-group': () => import('./Database').then((m) => ({ default: m.ProcedureGroup })),
-  'database/procedure-run': () => import('./Database').then((m) => ({ default: m.ProcedureRun })),
-  'database/projection': () => import('./Database').then((m) => ({ default: m.Projection })),
-  'database/redis': () => import('./Database').then((m) => ({ default: m.Redis })),
-  'database/redis-file-type': () => import('./Database').then((m) => ({ default: m.RedisFileType })),
-  'database/redshift': () => import('./Database').then((m) => ({ default: m.Redshift })),
-  'database/refresh-materialized-view': () => import('./Database').then((m) => ({ default: m.RefreshMaterializedView })),
-  'database/reset': () => import('./Database').then((m) => ({ default: m.Reset })),
-  'database/role': () => import('./Database').then((m) => ({ default: m.Role })),
-  'database/rollback': () => import('./Database').then((m) => ({ default: m.Rollback })),
-  'database/routine': () => import('./Database').then((m) => ({ default: m.Routine })),
-  'database/run-database-script': () => import('./Database').then((m) => ({ default: m.RunDatabaseScript })),
-  'database/scheduled-event': () => import('./Database').then((m) => ({ default: m.ScheduledEvent })),
-  'database/schema': () => import('./Database').then((m) => ({ default: m.Schema })),
-  'database/scripting-script': () => import('./Database').then((m) => ({ default: m.ScriptingScript })),
-  'database/scroll-down': () => import('./Database').then((m) => ({ default: m.ScrollDown })),
-  'database/scroll-up': () => import('./Database').then((m) => ({ default: m.ScrollUp })),
-  'database/sequence': () => import('./Database').then((m) => ({ default: m.Sequence })),
-  'database/server-objects-group': () => import('./Database').then((m) => ({ default: m.ServerObjectsGroup })),
+  'database/pin-hovered': () =>
+    import('./Database').then((m) => ({ default: m.PinHovered })),
+  'database/pin-selected': () =>
+    import('./Database').then((m) => ({ default: m.PinSelected })),
+  'database/pin-selected-hovered': () =>
+    import('./Database').then((m) => ({ default: m.PinSelectedHovered })),
+  'database/postgresql': () =>
+    import('./Database').then((m) => ({ default: m.Postgresql })),
+  'database/presto': () =>
+    import('./Database').then((m) => ({ default: m.Presto })),
+  'database/preview-changes': () =>
+    import('./Database').then((m) => ({ default: m.PreviewChanges })),
+  'database/procedure': () =>
+    import('./Database').then((m) => ({ default: m.Procedure })),
+  'database/procedure-group': () =>
+    import('./Database').then((m) => ({ default: m.ProcedureGroup })),
+  'database/procedure-run': () =>
+    import('./Database').then((m) => ({ default: m.ProcedureRun })),
+  'database/projection': () =>
+    import('./Database').then((m) => ({ default: m.Projection })),
+  'database/redis': () =>
+    import('./Database').then((m) => ({ default: m.Redis })),
+  'database/redis-file-type': () =>
+    import('./Database').then((m) => ({ default: m.RedisFileType })),
+  'database/redshift': () =>
+    import('./Database').then((m) => ({ default: m.Redshift })),
+  'database/refresh-materialized-view': () =>
+    import('./Database').then((m) => ({ default: m.RefreshMaterializedView })),
+  'database/reset': () =>
+    import('./Database').then((m) => ({ default: m.Reset })),
+  'database/role': () =>
+    import('./Database').then((m) => ({ default: m.Role })),
+  'database/rollback': () =>
+    import('./Database').then((m) => ({ default: m.Rollback })),
+  'database/routine': () =>
+    import('./Database').then((m) => ({ default: m.Routine })),
+  'database/run-database-script': () =>
+    import('./Database').then((m) => ({ default: m.RunDatabaseScript })),
+  'database/scheduled-event': () =>
+    import('./Database').then((m) => ({ default: m.ScheduledEvent })),
+  'database/schema': () =>
+    import('./Database').then((m) => ({ default: m.Schema })),
+  'database/scripting-script': () =>
+    import('./Database').then((m) => ({ default: m.ScriptingScript })),
+  'database/scroll-down': () =>
+    import('./Database').then((m) => ({ default: m.ScrollDown })),
+  'database/scroll-up': () =>
+    import('./Database').then((m) => ({ default: m.ScrollUp })),
+  'database/sequence': () =>
+    import('./Database').then((m) => ({ default: m.Sequence })),
+  'database/server-objects-group': () =>
+    import('./Database').then((m) => ({ default: m.ServerObjectsGroup })),
   'database/set': () => import('./Database').then((m) => ({ default: m.Set })),
-  'database/set-key': () => import('./Database').then((m) => ({ default: m.SetKey })),
-  'database/single-record-view': () => import('./Database').then((m) => ({ default: m.SingleRecordView })),
-  'database/singlestore': () => import('./Database').then((m) => ({ default: m.Singlestore })),
-  'database/snowflake': () => import('./Database').then((m) => ({ default: m.Snowflake })),
-  'database/sorted-set': () => import('./Database').then((m) => ({ default: m.SortedSet })),
-  'database/sorted-set-key': () => import('./Database').then((m) => ({ default: m.SortedSetKey })),
-  'database/spark': () => import('./Database').then((m) => ({ default: m.Spark })),
-  'database/sql-group-by-type': () => import('./Database').then((m) => ({ default: m.SqlGroupByType })),
-  'database/sql-other-statement': () => import('./Database').then((m) => ({ default: m.SqlOtherStatement })),
-  'database/sql-select-statement': () => import('./Database').then((m) => ({ default: m.SqlSelectStatement })),
-  'database/sql-server': () => import('./Database').then((m) => ({ default: m.SqlServer })),
-  'database/sqldml-statement': () => import('./Database').then((m) => ({ default: m.SqldmlStatement })),
-  'database/sqlite': () => import('./Database').then((m) => ({ default: m.Sqlite })),
-  'database/stream': () => import('./Database').then((m) => ({ default: m.Stream })),
-  'database/stream-key': () => import('./Database').then((m) => ({ default: m.StreamKey })),
-  'database/string': () => import('./Database').then((m) => ({ default: m.String })),
-  'database/string-key': () => import('./Database').then((m) => ({ default: m.StringKey })),
-  'database/submit-db': () => import('./Database').then((m) => ({ default: m.SubmitDb })),
+  'database/set-key': () =>
+    import('./Database').then((m) => ({ default: m.SetKey })),
+  'database/single-record-view': () =>
+    import('./Database').then((m) => ({ default: m.SingleRecordView })),
+  'database/singlestore': () =>
+    import('./Database').then((m) => ({ default: m.Singlestore })),
+  'database/snowflake': () =>
+    import('./Database').then((m) => ({ default: m.Snowflake })),
+  'database/sorted-set': () =>
+    import('./Database').then((m) => ({ default: m.SortedSet })),
+  'database/sorted-set-key': () =>
+    import('./Database').then((m) => ({ default: m.SortedSetKey })),
+  'database/spark': () =>
+    import('./Database').then((m) => ({ default: m.Spark })),
+  'database/sql-group-by-type': () =>
+    import('./Database').then((m) => ({ default: m.SqlGroupByType })),
+  'database/sql-other-statement': () =>
+    import('./Database').then((m) => ({ default: m.SqlOtherStatement })),
+  'database/sql-select-statement': () =>
+    import('./Database').then((m) => ({ default: m.SqlSelectStatement })),
+  'database/sql-server': () =>
+    import('./Database').then((m) => ({ default: m.SqlServer })),
+  'database/sqldml-statement': () =>
+    import('./Database').then((m) => ({ default: m.SqldmlStatement })),
+  'database/sqlite': () =>
+    import('./Database').then((m) => ({ default: m.Sqlite })),
+  'database/stream': () =>
+    import('./Database').then((m) => ({ default: m.Stream })),
+  'database/stream-key': () =>
+    import('./Database').then((m) => ({ default: m.StreamKey })),
+  'database/string': () =>
+    import('./Database').then((m) => ({ default: m.String })),
+  'database/string-key': () =>
+    import('./Database').then((m) => ({ default: m.StringKey })),
+  'database/submit-db': () =>
+    import('./Database').then((m) => ({ default: m.SubmitDb })),
   'database/sun': () => import('./Database').then((m) => ({ default: m.Sun })),
-  'database/sybase': () => import('./Database').then((m) => ({ default: m.Sybase })),
-  'database/synonym': () => import('./Database').then((m) => ({ default: m.Synonym })),
-  'database/t-sq-lt': () => import('./Database').then((m) => ({ default: m.TSqLt })),
-  'database/table': () => import('./Database').then((m) => ({ default: m.Table })),
-  'database/table-heatmap': () => import('./Database').then((m) => ({ default: m.TableHeatmap })),
-  'database/table-mapping': () => import('./Database').then((m) => ({ default: m.TableMapping })),
-  'database/tablespace': () => import('./Database').then((m) => ({ default: m.Tablespace })),
-  'database/tarantool': () => import('./Database').then((m) => ({ default: m.Tarantool })),
-  'database/teradata': () => import('./Database').then((m) => ({ default: m.Teradata })),
-  'database/text-auto-generate': () => import('./Database').then((m) => ({ default: m.TextAutoGenerate })),
-  'database/tibero': () => import('./Database').then((m) => ({ default: m.Tibero })),
-  'database/tidb': () => import('./Database').then((m) => ({ default: m.Tidb })),
-  'database/trigger': () => import('./Database').then((m) => ({ default: m.Trigger })),
-  'database/trino': () => import('./Database').then((m) => ({ default: m.Trino })),
-  'database/udf-script': () => import('./Database').then((m) => ({ default: m.UdfScript })),
-  'database/unspecified-cluster': () => import('./Database').then((m) => ({ default: m.UnspecifiedCluster })),
-  'database/user': () => import('./Database').then((m) => ({ default: m.User })),
-  'database/user-driver': () => import('./Database').then((m) => ({ default: m.UserDriver })),
-  'database/user-group': () => import('./Database').then((m) => ({ default: m.UserGroup })),
-  'database/user-mapping': () => import('./Database').then((m) => ({ default: m.UserMapping })),
-  'database/ut-plsql': () => import('./Database').then((m) => ({ default: m.UtPlsql })),
-  'database/vertica': () => import('./Database').then((m) => ({ default: m.Vertica })),
-  'database/view-parameters': () => import('./Database').then((m) => ({ default: m.ViewParameters })),
-  'database/virtual-column': () => import('./Database').then((m) => ({ default: m.VirtualColumn })),
-  'database/virtual-folder': () => import('./Database').then((m) => ({ default: m.VirtualFolder })),
-  'database/virtual-key': () => import('./Database').then((m) => ({ default: m.VirtualKey })),
-  'database/virtual-view': () => import('./Database').then((m) => ({ default: m.VirtualView })),
-  'database/warehouse': () => import('./Database').then((m) => ({ default: m.Warehouse })),
-  'database/yugabyte': () => import('./Database').then((m) => ({ default: m.Yugabyte })),
+  'database/sybase': () =>
+    import('./Database').then((m) => ({ default: m.Sybase })),
+  'database/synonym': () =>
+    import('./Database').then((m) => ({ default: m.Synonym })),
+  'database/t-sq-lt': () =>
+    import('./Database').then((m) => ({ default: m.TSqLt })),
+  'database/table': () =>
+    import('./Database').then((m) => ({ default: m.Table })),
+  'database/table-heatmap': () =>
+    import('./Database').then((m) => ({ default: m.TableHeatmap })),
+  'database/table-mapping': () =>
+    import('./Database').then((m) => ({ default: m.TableMapping })),
+  'database/tablespace': () =>
+    import('./Database').then((m) => ({ default: m.Tablespace })),
+  'database/tarantool': () =>
+    import('./Database').then((m) => ({ default: m.Tarantool })),
+  'database/teradata': () =>
+    import('./Database').then((m) => ({ default: m.Teradata })),
+  'database/text-auto-generate': () =>
+    import('./Database').then((m) => ({ default: m.TextAutoGenerate })),
+  'database/tibero': () =>
+    import('./Database').then((m) => ({ default: m.Tibero })),
+  'database/tidb': () =>
+    import('./Database').then((m) => ({ default: m.Tidb })),
+  'database/trigger': () =>
+    import('./Database').then((m) => ({ default: m.Trigger })),
+  'database/trino': () =>
+    import('./Database').then((m) => ({ default: m.Trino })),
+  'database/udf-script': () =>
+    import('./Database').then((m) => ({ default: m.UdfScript })),
+  'database/unspecified-cluster': () =>
+    import('./Database').then((m) => ({ default: m.UnspecifiedCluster })),
+  'database/user': () =>
+    import('./Database').then((m) => ({ default: m.User })),
+  'database/user-driver': () =>
+    import('./Database').then((m) => ({ default: m.UserDriver })),
+  'database/user-group': () =>
+    import('./Database').then((m) => ({ default: m.UserGroup })),
+  'database/user-mapping': () =>
+    import('./Database').then((m) => ({ default: m.UserMapping })),
+  'database/ut-plsql': () =>
+    import('./Database').then((m) => ({ default: m.UtPlsql })),
+  'database/vertica': () =>
+    import('./Database').then((m) => ({ default: m.Vertica })),
+  'database/view-parameters': () =>
+    import('./Database').then((m) => ({ default: m.ViewParameters })),
+  'database/virtual-column': () =>
+    import('./Database').then((m) => ({ default: m.VirtualColumn })),
+  'database/virtual-folder': () =>
+    import('./Database').then((m) => ({ default: m.VirtualFolder })),
+  'database/virtual-key': () =>
+    import('./Database').then((m) => ({ default: m.VirtualKey })),
+  'database/virtual-view': () =>
+    import('./Database').then((m) => ({ default: m.VirtualView })),
+  'database/warehouse': () =>
+    import('./Database').then((m) => ({ default: m.Warehouse })),
+  'database/yugabyte': () =>
+    import('./Database').then((m) => ({ default: m.Yugabyte })),
 
   // Debugger (18)
-  'debugger/add-to-watch': () => import('./Debugger').then((m) => ({ default: m.AddToWatch })),
-  'debugger/class-level-watch': () => import('./Debugger').then((m) => ({ default: m.ClassLevelWatch })),
-  'debugger/db-array': () => import('./Debugger').then((m) => ({ default: m.DbArray })),
-  'debugger/db-primitive': () => import('./Debugger').then((m) => ({ default: m.DbPrimitive })),
-  'debugger/evaluation-result': () => import('./Debugger').then((m) => ({ default: m.EvaluationResult })),
-  'debugger/frame': () => import('./Debugger').then((m) => ({ default: m.Frame })),
-  'debugger/prompt-input': () => import('./Debugger').then((m) => ({ default: m.PromptInput })),
-  'debugger/prompt-input-history': () => import('./Debugger').then((m) => ({ default: m.PromptInputHistory })),
-  'debugger/self-reference': () => import('./Debugger').then((m) => ({ default: m.SelfReference })),
-  'debugger/thread-at-breakpoint': () => import('./Debugger').then((m) => ({ default: m.ThreadAtBreakpoint })),
-  'debugger/thread-current': () => import('./Debugger').then((m) => ({ default: m.ThreadCurrent })),
-  'debugger/thread-frozen': () => import('./Debugger').then((m) => ({ default: m.ThreadFrozen })),
-  'debugger/thread-group-current': () => import('./Debugger').then((m) => ({ default: m.ThreadGroupCurrent })),
-  'debugger/thread-running': () => import('./Debugger').then((m) => ({ default: m.ThreadRunning })),
-  'debugger/threads': () => import('./Debugger').then((m) => ({ default: m.Threads })),
-  'debugger/value': () => import('./Debugger').then((m) => ({ default: m.Value })),
-  'debugger/variables-tab': () => import('./Debugger').then((m) => ({ default: m.VariablesTab })),
-  'debugger/watch-last-return-value': () => import('./Debugger').then((m) => ({ default: m.WatchLastReturnValue })),
+  'debugger/add-to-watch': () =>
+    import('./Debugger').then((m) => ({ default: m.AddToWatch })),
+  'debugger/class-level-watch': () =>
+    import('./Debugger').then((m) => ({ default: m.ClassLevelWatch })),
+  'debugger/db-array': () =>
+    import('./Debugger').then((m) => ({ default: m.DbArray })),
+  'debugger/db-primitive': () =>
+    import('./Debugger').then((m) => ({ default: m.DbPrimitive })),
+  'debugger/evaluation-result': () =>
+    import('./Debugger').then((m) => ({ default: m.EvaluationResult })),
+  'debugger/frame': () =>
+    import('./Debugger').then((m) => ({ default: m.Frame })),
+  'debugger/prompt-input': () =>
+    import('./Debugger').then((m) => ({ default: m.PromptInput })),
+  'debugger/prompt-input-history': () =>
+    import('./Debugger').then((m) => ({ default: m.PromptInputHistory })),
+  'debugger/self-reference': () =>
+    import('./Debugger').then((m) => ({ default: m.SelfReference })),
+  'debugger/thread-at-breakpoint': () =>
+    import('./Debugger').then((m) => ({ default: m.ThreadAtBreakpoint })),
+  'debugger/thread-current': () =>
+    import('./Debugger').then((m) => ({ default: m.ThreadCurrent })),
+  'debugger/thread-frozen': () =>
+    import('./Debugger').then((m) => ({ default: m.ThreadFrozen })),
+  'debugger/thread-group-current': () =>
+    import('./Debugger').then((m) => ({ default: m.ThreadGroupCurrent })),
+  'debugger/thread-running': () =>
+    import('./Debugger').then((m) => ({ default: m.ThreadRunning })),
+  'debugger/threads': () =>
+    import('./Debugger').then((m) => ({ default: m.Threads })),
+  'debugger/value': () =>
+    import('./Debugger').then((m) => ({ default: m.Value })),
+  'debugger/variables-tab': () =>
+    import('./Debugger').then((m) => ({ default: m.VariablesTab })),
+  'debugger/watch-last-return-value': () =>
+    import('./Debugger').then((m) => ({ default: m.WatchLastReturnValue })),
 
   // editor-icons (71)
-  'editor-icons/actual-zoom': () => import('./editor-icons').then((m) => ({ default: m.ActualZoom })),
-  'editor-icons/back-trace': () => import('./editor-icons').then((m) => ({ default: m.BackTrace })),
-  'editor-icons/bookmark': () => import('./editor-icons').then((m) => ({ default: m.Bookmark })),
-  'editor-icons/chessboard': () => import('./editor-icons').then((m) => ({ default: m.Chessboard })),
-  'editor-icons/collapse-node': () => import('./editor-icons').then((m) => ({ default: m.CollapseNode })),
-  'editor-icons/color-picker': () => import('./editor-icons').then((m) => ({ default: m.ColorPicker })),
-  'editor-icons/colors': () => import('./editor-icons').then((m) => ({ default: m.Colors })),
-  'editor-icons/data-schema': () => import('./editor-icons').then((m) => ({ default: m.DataSchema })),
-  'editor-icons/dbms': () => import('./editor-icons').then((m) => ({ default: m.Dbms })),
-  'editor-icons/dropdown-gutter': () => import('./editor-icons').then((m) => ({ default: m.DropdownGutter })),
-  'editor-icons/editor-only': () => import('./editor-icons').then((m) => ({ default: m.EditorOnly })),
-  'editor-icons/editor-preview': () => import('./editor-icons').then((m) => ({ default: m.EditorPreview })),
-  'editor-icons/editor-preview-vertical': () => import('./editor-icons').then((m) => ({ default: m.EditorPreviewVertical })),
-  'editor-icons/expand-node': () => import('./editor-icons').then((m) => ({ default: m.ExpandNode })),
-  'editor-icons/ext-annotation': () => import('./editor-icons').then((m) => ({ default: m.ExtAnnotation })),
-  'editor-icons/fit-content': () => import('./editor-icons').then((m) => ({ default: m.FitContent })),
-  'editor-icons/flame': () => import('./editor-icons').then((m) => ({ default: m.Flame })),
-  'editor-icons/fold': () => import('./editor-icons').then((m) => ({ default: m.Fold })),
-  'editor-icons/fold-bottom': () => import('./editor-icons').then((m) => ({ default: m.FoldBottom })),
-  'editor-icons/grid': () => import('./editor-icons').then((m) => ({ default: m.Grid })),
-  'editor-icons/implemented-method': () => import('./editor-icons').then((m) => ({ default: m.ImplementedMethod })),
-  'editor-icons/implementing-functional-interface': () => import('./editor-icons').then((m) => ({ default: m.ImplementingFunctionalInterface })),
-  'editor-icons/implementing-method': () => import('./editor-icons').then((m) => ({ default: m.ImplementingMethod })),
-  'editor-icons/inaly-qarkus': () => import('./editor-icons').then((m) => ({ default: m.InalyQarkus })),
-  'editor-icons/inlay-globe': () => import('./editor-icons').then((m) => ({ default: m.InlayGlobe })),
-  'editor-icons/inlay-micronaut': () => import('./editor-icons').then((m) => ({ default: m.InlayMicronaut })),
-  'editor-icons/inlay-rename-in-comments': () => import('./editor-icons').then((m) => ({ default: m.InlayRenameInComments })),
-  'editor-icons/inlay-rename-in-comments-active': () => import('./editor-icons').then((m) => ({ default: m.InlayRenameInCommentsActive })),
-  'editor-icons/inlay-rename-in-no-code-files': () => import('./editor-icons').then((m) => ({ default: m.InlayRenameInNoCodeFiles })),
-  'editor-icons/inlay-rename-in-no-code-files-active': () => import('./editor-icons').then((m) => ({ default: m.InlayRenameInNoCodeFilesActive })),
-  'editor-icons/inlay-secured-shield': () => import('./editor-icons').then((m) => ({ default: m.InlaySecuredShield })),
-  'editor-icons/inlay-settings': () => import('./editor-icons').then((m) => ({ default: m.InlaySettings })),
-  'editor-icons/inlay-spring': () => import('./editor-icons').then((m) => ({ default: m.InlaySpring })),
-  'editor-icons/inlay-web-inspector': () => import('./editor-icons').then((m) => ({ default: m.InlayWebInspector })),
-  'editor-icons/inspections-eye': () => import('./editor-icons').then((m) => ({ default: m.InspectionsEye })),
-  'editor-icons/inspections-mixed': () => import('./editor-icons').then((m) => ({ default: m.InspectionsMixed })),
-  'editor-icons/inspections-ok': () => import('./editor-icons').then((m) => ({ default: m.InspectionsOk })),
-  'editor-icons/inspections-ok-empty': () => import('./editor-icons').then((m) => ({ default: m.InspectionsOkEmpty })),
-  'editor-icons/inspections-pause': () => import('./editor-icons').then((m) => ({ default: m.InspectionsPause })),
-  'editor-icons/inspections-power-save-mode': () => import('./editor-icons').then((m) => ({ default: m.InspectionsPowerSaveMode })),
-  'editor-icons/inspections-traffic-off': () => import('./editor-icons').then((m) => ({ default: m.InspectionsTrafficOff })),
-  'editor-icons/inspections-typos': () => import('./editor-icons').then((m) => ({ default: m.InspectionsTypos })),
-  'editor-icons/intention-bulb': () => import('./editor-icons').then((m) => ({ default: m.IntentionBulb })),
-  'editor-icons/intention-bulb-grey': () => import('./editor-icons').then((m) => ({ default: m.IntentionBulbGrey })),
-  'editor-icons/javadoc-edit': () => import('./editor-icons').then((m) => ({ default: m.JavadocEdit })),
-  'editor-icons/javadoc-read': () => import('./editor-icons').then((m) => ({ default: m.JavadocRead })),
-  'editor-icons/merge-callees': () => import('./editor-icons').then((m) => ({ default: m.MergeCallees })),
-  'editor-icons/metadata': () => import('./editor-icons').then((m) => ({ default: m.Metadata })),
-  'editor-icons/mnemonic': () => import('./editor-icons').then((m) => ({ default: m.Mnemonic })),
-  'editor-icons/overriden-method': () => import('./editor-icons').then((m) => ({ default: m.OverridenMethod })),
-  'editor-icons/overriding-method': () => import('./editor-icons').then((m) => ({ default: m.OverridingMethod })),
-  'editor-icons/overriding-property': () => import('./editor-icons').then((m) => ({ default: m.OverridingProperty })),
-  'editor-icons/preview-only': () => import('./editor-icons').then((m) => ({ default: m.PreviewOnly })),
-  'editor-icons/quickfix-bulb': () => import('./editor-icons').then((m) => ({ default: m.QuickfixBulb })),
-  'editor-icons/quickfix-off-bulb': () => import('./editor-icons').then((m) => ({ default: m.QuickfixOffBulb })),
-  'editor-icons/read-access': () => import('./editor-icons').then((m) => ({ default: m.ReadAccess })),
-  'editor-icons/rec': () => import('./editor-icons').then((m) => ({ default: m.Rec })),
-  'editor-icons/recursive-method': () => import('./editor-icons').then((m) => ({ default: m.RecursiveMethod })),
-  'editor-icons/rerun': () => import('./editor-icons').then((m) => ({ default: m.Rerun })),
-  'editor-icons/run': () => import('./editor-icons').then((m) => ({ default: m.Run })),
-  'editor-icons/run-error': () => import('./editor-icons').then((m) => ({ default: m.RunError })),
-  'editor-icons/run-failed': () => import('./editor-icons').then((m) => ({ default: m.RunFailed })),
-  'editor-icons/run-success': () => import('./editor-icons').then((m) => ({ default: m.RunSuccess })),
-  'editor-icons/sharp': () => import('./editor-icons').then((m) => ({ default: m.Sharp })),
-  'editor-icons/sibling-inherited-method': () => import('./editor-icons').then((m) => ({ default: m.SiblingInheritedMethod })),
-  'editor-icons/suggested-refactoring-bulb': () => import('./editor-icons').then((m) => ({ default: m.SuggestedRefactoringBulb })),
-  'editor-icons/suggested-refactoring-disabled': () => import('./editor-icons').then((m) => ({ default: m.SuggestedRefactoringDisabled })),
-  'editor-icons/unfold': () => import('./editor-icons').then((m) => ({ default: m.Unfold })),
-  'editor-icons/write-access': () => import('./editor-icons').then((m) => ({ default: m.WriteAccess })),
-  'editor-icons/zoom-in': () => import('./editor-icons').then((m) => ({ default: m.ZoomIn })),
-  'editor-icons/zoom-out': () => import('./editor-icons').then((m) => ({ default: m.ZoomOut })),
+  'editor-icons/actual-zoom': () =>
+    import('./editor-icons').then((m) => ({ default: m.ActualZoom })),
+  'editor-icons/back-trace': () =>
+    import('./editor-icons').then((m) => ({ default: m.BackTrace })),
+  'editor-icons/bookmark': () =>
+    import('./editor-icons').then((m) => ({ default: m.Bookmark })),
+  'editor-icons/chessboard': () =>
+    import('./editor-icons').then((m) => ({ default: m.Chessboard })),
+  'editor-icons/collapse-node': () =>
+    import('./editor-icons').then((m) => ({ default: m.CollapseNode })),
+  'editor-icons/color-picker': () =>
+    import('./editor-icons').then((m) => ({ default: m.ColorPicker })),
+  'editor-icons/colors': () =>
+    import('./editor-icons').then((m) => ({ default: m.Colors })),
+  'editor-icons/data-schema': () =>
+    import('./editor-icons').then((m) => ({ default: m.DataSchema })),
+  'editor-icons/dbms': () =>
+    import('./editor-icons').then((m) => ({ default: m.Dbms })),
+  'editor-icons/dropdown-gutter': () =>
+    import('./editor-icons').then((m) => ({ default: m.DropdownGutter })),
+  'editor-icons/editor-only': () =>
+    import('./editor-icons').then((m) => ({ default: m.EditorOnly })),
+  'editor-icons/editor-preview': () =>
+    import('./editor-icons').then((m) => ({ default: m.EditorPreview })),
+  'editor-icons/editor-preview-vertical': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.EditorPreviewVertical,
+    })),
+  'editor-icons/expand-node': () =>
+    import('./editor-icons').then((m) => ({ default: m.ExpandNode })),
+  'editor-icons/ext-annotation': () =>
+    import('./editor-icons').then((m) => ({ default: m.ExtAnnotation })),
+  'editor-icons/fit-content': () =>
+    import('./editor-icons').then((m) => ({ default: m.FitContent })),
+  'editor-icons/flame': () =>
+    import('./editor-icons').then((m) => ({ default: m.Flame })),
+  'editor-icons/fold': () =>
+    import('./editor-icons').then((m) => ({ default: m.Fold })),
+  'editor-icons/fold-bottom': () =>
+    import('./editor-icons').then((m) => ({ default: m.FoldBottom })),
+  'editor-icons/grid': () =>
+    import('./editor-icons').then((m) => ({ default: m.Grid })),
+  'editor-icons/implemented-method': () =>
+    import('./editor-icons').then((m) => ({ default: m.ImplementedMethod })),
+  'editor-icons/implementing-functional-interface': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.ImplementingFunctionalInterface,
+    })),
+  'editor-icons/implementing-method': () =>
+    import('./editor-icons').then((m) => ({ default: m.ImplementingMethod })),
+  'editor-icons/inaly-qarkus': () =>
+    import('./editor-icons').then((m) => ({ default: m.InalyQarkus })),
+  'editor-icons/inlay-globe': () =>
+    import('./editor-icons').then((m) => ({ default: m.InlayGlobe })),
+  'editor-icons/inlay-micronaut': () =>
+    import('./editor-icons').then((m) => ({ default: m.InlayMicronaut })),
+  'editor-icons/inlay-rename-in-comments': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.InlayRenameInComments,
+    })),
+  'editor-icons/inlay-rename-in-comments-active': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.InlayRenameInCommentsActive,
+    })),
+  'editor-icons/inlay-rename-in-no-code-files': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.InlayRenameInNoCodeFiles,
+    })),
+  'editor-icons/inlay-rename-in-no-code-files-active': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.InlayRenameInNoCodeFilesActive,
+    })),
+  'editor-icons/inlay-secured-shield': () =>
+    import('./editor-icons').then((m) => ({ default: m.InlaySecuredShield })),
+  'editor-icons/inlay-settings': () =>
+    import('./editor-icons').then((m) => ({ default: m.InlaySettings })),
+  'editor-icons/inlay-spring': () =>
+    import('./editor-icons').then((m) => ({ default: m.InlaySpring })),
+  'editor-icons/inlay-web-inspector': () =>
+    import('./editor-icons').then((m) => ({ default: m.InlayWebInspector })),
+  'editor-icons/inspections-eye': () =>
+    import('./editor-icons').then((m) => ({ default: m.InspectionsEye })),
+  'editor-icons/inspections-mixed': () =>
+    import('./editor-icons').then((m) => ({ default: m.InspectionsMixed })),
+  'editor-icons/inspections-ok': () =>
+    import('./editor-icons').then((m) => ({ default: m.InspectionsOk })),
+  'editor-icons/inspections-ok-empty': () =>
+    import('./editor-icons').then((m) => ({ default: m.InspectionsOkEmpty })),
+  'editor-icons/inspections-pause': () =>
+    import('./editor-icons').then((m) => ({ default: m.InspectionsPause })),
+  'editor-icons/inspections-power-save-mode': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.InspectionsPowerSaveMode,
+    })),
+  'editor-icons/inspections-traffic-off': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.InspectionsTrafficOff,
+    })),
+  'editor-icons/inspections-typos': () =>
+    import('./editor-icons').then((m) => ({ default: m.InspectionsTypos })),
+  'editor-icons/intention-bulb': () =>
+    import('./editor-icons').then((m) => ({ default: m.IntentionBulb })),
+  'editor-icons/intention-bulb-grey': () =>
+    import('./editor-icons').then((m) => ({ default: m.IntentionBulbGrey })),
+  'editor-icons/javadoc-edit': () =>
+    import('./editor-icons').then((m) => ({ default: m.JavadocEdit })),
+  'editor-icons/javadoc-read': () =>
+    import('./editor-icons').then((m) => ({ default: m.JavadocRead })),
+  'editor-icons/merge-callees': () =>
+    import('./editor-icons').then((m) => ({ default: m.MergeCallees })),
+  'editor-icons/metadata': () =>
+    import('./editor-icons').then((m) => ({ default: m.Metadata })),
+  'editor-icons/mnemonic': () =>
+    import('./editor-icons').then((m) => ({ default: m.Mnemonic })),
+  'editor-icons/overriden-method': () =>
+    import('./editor-icons').then((m) => ({ default: m.OverridenMethod })),
+  'editor-icons/overriding-method': () =>
+    import('./editor-icons').then((m) => ({ default: m.OverridingMethod })),
+  'editor-icons/overriding-property': () =>
+    import('./editor-icons').then((m) => ({ default: m.OverridingProperty })),
+  'editor-icons/preview-only': () =>
+    import('./editor-icons').then((m) => ({ default: m.PreviewOnly })),
+  'editor-icons/quickfix-bulb': () =>
+    import('./editor-icons').then((m) => ({ default: m.QuickfixBulb })),
+  'editor-icons/quickfix-off-bulb': () =>
+    import('./editor-icons').then((m) => ({ default: m.QuickfixOffBulb })),
+  'editor-icons/read-access': () =>
+    import('./editor-icons').then((m) => ({ default: m.ReadAccess })),
+  'editor-icons/rec': () =>
+    import('./editor-icons').then((m) => ({ default: m.Rec })),
+  'editor-icons/recursive-method': () =>
+    import('./editor-icons').then((m) => ({ default: m.RecursiveMethod })),
+  'editor-icons/rerun': () =>
+    import('./editor-icons').then((m) => ({ default: m.Rerun })),
+  'editor-icons/run': () =>
+    import('./editor-icons').then((m) => ({ default: m.Run })),
+  'editor-icons/run-error': () =>
+    import('./editor-icons').then((m) => ({ default: m.RunError })),
+  'editor-icons/run-failed': () =>
+    import('./editor-icons').then((m) => ({ default: m.RunFailed })),
+  'editor-icons/run-success': () =>
+    import('./editor-icons').then((m) => ({ default: m.RunSuccess })),
+  'editor-icons/sharp': () =>
+    import('./editor-icons').then((m) => ({ default: m.Sharp })),
+  'editor-icons/sibling-inherited-method': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.SiblingInheritedMethod,
+    })),
+  'editor-icons/suggested-refactoring-bulb': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.SuggestedRefactoringBulb,
+    })),
+  'editor-icons/suggested-refactoring-disabled': () =>
+    import('./editor-icons').then((m) => ({
+      default: m.SuggestedRefactoringDisabled,
+    })),
+  'editor-icons/unfold': () =>
+    import('./editor-icons').then((m) => ({ default: m.Unfold })),
+  'editor-icons/write-access': () =>
+    import('./editor-icons').then((m) => ({ default: m.WriteAccess })),
+  'editor-icons/zoom-in': () =>
+    import('./editor-icons').then((m) => ({ default: m.ZoomIn })),
+  'editor-icons/zoom-out': () =>
+    import('./editor-icons').then((m) => ({ default: m.ZoomOut })),
 
   // file-types (125)
-  'file-types/action-script': () => import('./file-types').then((m) => ({ default: m.ActionScript })),
-  'file-types/acync-api': () => import('./file-types').then((m) => ({ default: m.AcyncApi })),
-  'file-types/amper': () => import('./file-types').then((m) => ({ default: m.Amper })),
-  'file-types/angular-js': () => import('./file-types').then((m) => ({ default: m.AngularJs })),
-  'file-types/angular-js-monochrome': () => import('./file-types').then((m) => ({ default: m.AngularJsMonochrome })),
-  'file-types/any-type': () => import('./file-types').then((m) => ({ default: m.AnyType })),
-  'file-types/api': () => import('./file-types').then((m) => ({ default: m.Api })),
-  'file-types/archive': () => import('./file-types').then((m) => ({ default: m.Archive })),
-  'file-types/aspect-j': () => import('./file-types').then((m) => ({ default: m.AspectJ })),
-  'file-types/assembler-go': () => import('./file-types').then((m) => ({ default: m.AssemblerGo })),
-  'file-types/bun': () => import('./file-types').then((m) => ({ default: m.Bun })),
-  'file-types/chameleon': () => import('./file-types').then((m) => ({ default: m.Chameleon })),
-  'file-types/changed-file': () => import('./file-types').then((m) => ({ default: m.ChangedFile })),
-  'file-types/changed-files': () => import('./file-types').then((m) => ({ default: m.ChangedFiles })),
-  'file-types/coffeescript': () => import('./file-types').then((m) => ({ default: m.Coffeescript })),
-  'file-types/conditional-statement': () => import('./file-types').then((m) => ({ default: m.ConditionalStatement })),
-  'file-types/contexts': () => import('./file-types').then((m) => ({ default: m.Contexts })),
-  'file-types/contexts-modifier': () => import('./file-types').then((m) => ({ default: m.ContextsModifier })),
-  'file-types/css': () => import('./file-types').then((m) => ({ default: m.Css })),
-  'file-types/cucumber': () => import('./file-types').then((m) => ({ default: m.Cucumber })),
-  'file-types/cython-file': () => import('./file-types').then((m) => ({ default: m.CythonFile })),
-  'file-types/deno': () => import('./file-types').then((m) => ({ default: m.Deno })),
-  'file-types/diagram': () => import('./file-types').then((m) => ({ default: m.Diagram })),
-  'file-types/dictionary': () => import('./file-types').then((m) => ({ default: m.Dictionary })),
-  'file-types/dts': () => import('./file-types').then((m) => ({ default: m.Dts })),
-  'file-types/dts-property': () => import('./file-types').then((m) => ({ default: m.DtsProperty })),
-  'file-types/dts-sub-node': () => import('./file-types').then((m) => ({ default: m.DtsSubNode })),
-  'file-types/eclipse': () => import('./file-types').then((m) => ({ default: m.Eclipse })),
-  'file-types/editor-config': () => import('./file-types').then((m) => ({ default: m.EditorConfig })),
-  'file-types/ejs': () => import('./file-types').then((m) => ({ default: m.Ejs })),
-  'file-types/exposed': () => import('./file-types').then((m) => ({ default: m.Exposed })),
-  'file-types/fast-api': () => import('./file-types').then((m) => ({ default: m.FastApi })),
-  'file-types/flask': () => import('./file-types').then((m) => ({ default: m.Flask })),
-  'file-types/freemaker': () => import('./file-types').then((m) => ({ default: m.Freemaker })),
-  'file-types/haskell': () => import('./file-types').then((m) => ({ default: m.Haskell })),
-  'file-types/hook': () => import('./file-types').then((m) => ({ default: m.Hook })),
-  'file-types/html': () => import('./file-types').then((m) => ({ default: m.Html })),
-  'file-types/http-header': () => import('./file-types').then((m) => ({ default: m.HttpHeader })),
-  'file-types/http-requests-run-configuration': () => import('./file-types').then((m) => ({ default: m.HttpRequestsRunConfiguration })),
-  'file-types/i18n': () => import('./file-types').then((m) => ({ default: m.I18n })),
-  'file-types/idea-module': () => import('./file-types').then((m) => ({ default: m.IdeaModule })),
-  'file-types/idl': () => import('./file-types').then((m) => ({ default: m.Idl })),
-  'file-types/ignored': () => import('./file-types').then((m) => ({ default: m.Ignored })),
-  'file-types/image': () => import('./file-types').then((m) => ({ default: m.Image })),
-  'file-types/java': () => import('./file-types').then((m) => ({ default: m.Java })),
-  'file-types/java-class': () => import('./file-types').then((m) => ({ default: m.JavaClass })),
-  'file-types/java-script': () => import('./file-types').then((m) => ({ default: m.JavaScript })),
-  'file-types/jest': () => import('./file-types').then((m) => ({ default: m.Jest })),
-  'file-types/jfr': () => import('./file-types').then((m) => ({ default: m.Jfr })),
-  'file-types/jinja2': () => import('./file-types').then((m) => ({ default: m.Jinja2 })),
-  'file-types/js-config': () => import('./file-types').then((m) => ({ default: m.JsConfig })),
-  'file-types/js-doc-closure': () => import('./file-types').then((m) => ({ default: m.JsDocClosure })),
-  'file-types/json': () => import('./file-types').then((m) => ({ default: m.Json })),
-  'file-types/json-schema': () => import('./file-types').then((m) => ({ default: m.JsonSchema })),
-  'file-types/jsp': () => import('./file-types').then((m) => ({ default: m.Jsp })),
-  'file-types/jspx': () => import('./file-types').then((m) => ({ default: m.Jspx })),
-  'file-types/jupyter-notebook': () => import('./file-types').then((m) => ({ default: m.JupyterNotebook })),
-  'file-types/kotlin': () => import('./file-types').then((m) => ({ default: m.Kotlin })),
-  'file-types/less': () => import('./file-types').then((m) => ({ default: m.Less })),
-  'file-types/manifest': () => import('./file-types').then((m) => ({ default: m.Manifest })),
-  'file-types/markdown': () => import('./file-types').then((m) => ({ default: m.Markdown })),
-  'file-types/maven': () => import('./file-types').then((m) => ({ default: m.Maven })),
-  'file-types/maven-ignored': () => import('./file-types').then((m) => ({ default: m.MavenIgnored })),
-  'file-types/micronaut': () => import('./file-types').then((m) => ({ default: m.Micronaut })),
-  'file-types/microsoft-windows': () => import('./file-types').then((m) => ({ default: m.MicrosoftWindows })),
-  'file-types/modified': () => import('./file-types').then((m) => ({ default: m.Modified })),
-  'file-types/next-js': () => import('./file-types').then((m) => ({ default: m.NextJs })),
-  'file-types/nodejs-test-runner': () => import('./file-types').then((m) => ({ default: m.NodejsTestRunner })),
-  'file-types/num-py': () => import('./file-types').then((m) => ({ default: m.NumPy })),
-  'file-types/open-rewrite': () => import('./file-types').then((m) => ({ default: m.OpenRewrite })),
-  'file-types/open-tofu': () => import('./file-types').then((m) => ({ default: m.OpenTofu })),
-  'file-types/package-json': () => import('./file-types').then((m) => ({ default: m.PackageJson })),
-  'file-types/package-lock': () => import('./file-types').then((m) => ({ default: m.PackageLock })),
-  'file-types/pandas': () => import('./file-types').then((m) => ({ default: m.Pandas })),
-  'file-types/patch': () => import('./file-types').then((m) => ({ default: m.Patch })),
-  'file-types/perl': () => import('./file-types').then((m) => ({ default: m.Perl })),
-  'file-types/pnpm': () => import('./file-types').then((m) => ({ default: m.Pnpm })),
-  'file-types/pnpm-lock': () => import('./file-types').then((m) => ({ default: m.PnpmLock })),
-  'file-types/polars': () => import('./file-types').then((m) => ({ default: m.Polars })),
-  'file-types/prettier': () => import('./file-types').then((m) => ({ default: m.Prettier })),
-  'file-types/properties': () => import('./file-types').then((m) => ({ default: m.Properties })),
-  'file-types/proto-file': () => import('./file-types').then((m) => ({ default: m.ProtoFile })),
-  'file-types/proto-message': () => import('./file-types').then((m) => ({ default: m.ProtoMessage })),
-  'file-types/protobuf': () => import('./file-types').then((m) => ({ default: m.Protobuf })),
-  'file-types/py-torch': () => import('./file-types').then((m) => ({ default: m.PyTorch })),
-  'file-types/python': () => import('./file-types').then((m) => ({ default: m.Python })),
-  'file-types/qml': () => import('./file-types').then((m) => ({ default: m.Qml })),
-  'file-types/qrc': () => import('./file-types').then((m) => ({ default: m.Qrc })),
-  'file-types/qt': () => import('./file-types').then((m) => ({ default: m.Qt })),
-  'file-types/quatro': () => import('./file-types').then((m) => ({ default: m.Quatro })),
-  'file-types/react': () => import('./file-types').then((m) => ({ default: m.React })),
-  'file-types/redoc': () => import('./file-types').then((m) => ({ default: m.Redoc })),
-  'file-types/regexp': () => import('./file-types').then((m) => ({ default: m.Regexp })),
-  'file-types/rst': () => import('./file-types').then((m) => ({ default: m.Rst })),
-  'file-types/sarif': () => import('./file-types').then((m) => ({ default: m.Sarif })),
-  'file-types/sass': () => import('./file-types').then((m) => ({ default: m.Sass })),
-  'file-types/scala': () => import('./file-types').then((m) => ({ default: m.Scala })),
-  'file-types/scratch': () => import('./file-types').then((m) => ({ default: m.Scratch })),
-  'file-types/scratches': () => import('./file-types').then((m) => ({ default: m.Scratches })),
-  'file-types/scss': () => import('./file-types').then((m) => ({ default: m.Scss })),
-  'file-types/shell': () => import('./file-types').then((m) => ({ default: m.Shell })),
-  'file-types/source-map': () => import('./file-types').then((m) => ({ default: m.SourceMap })),
-  'file-types/sql': () => import('./file-types').then((m) => ({ default: m.Sql })),
-  'file-types/svelte': () => import('./file-types').then((m) => ({ default: m.Svelte })),
-  'file-types/team-city': () => import('./file-types').then((m) => ({ default: m.TeamCity })),
-  'file-types/tensor-flow': () => import('./file-types').then((m) => ({ default: m.TensorFlow })),
-  'file-types/terraform': () => import('./file-types').then((m) => ({ default: m.Terraform })),
-  'file-types/text': () => import('./file-types').then((m) => ({ default: m.Text })),
-  'file-types/ts-config': () => import('./file-types').then((m) => ({ default: m.TsConfig })),
-  'file-types/ts-doc': () => import('./file-types').then((m) => ({ default: m.TsDoc })),
-  'file-types/ui-form': () => import('./file-types').then((m) => ({ default: m.UiForm })),
-  'file-types/unknown': () => import('./file-types').then((m) => ({ default: m.Unknown })),
-  'file-types/vite-js': () => import('./file-types').then((m) => ({ default: m.ViteJs })),
-  'file-types/vitest': () => import('./file-types').then((m) => ({ default: m.Vitest })),
-  'file-types/vue-js': () => import('./file-types').then((m) => ({ default: m.VueJs })),
-  'file-types/workspace': () => import('./file-types').then((m) => ({ default: m.Workspace })),
-  'file-types/wsdl': () => import('./file-types').then((m) => ({ default: m.Wsdl })),
-  'file-types/xhtml': () => import('./file-types').then((m) => ({ default: m.Xhtml })),
-  'file-types/xml': () => import('./file-types').then((m) => ({ default: m.Xml })),
-  'file-types/xpath': () => import('./file-types').then((m) => ({ default: m.Xpath })),
-  'file-types/xsd': () => import('./file-types').then((m) => ({ default: m.Xsd })),
-  'file-types/xsl': () => import('./file-types').then((m) => ({ default: m.Xsl })),
-  'file-types/yaml': () => import('./file-types').then((m) => ({ default: m.Yaml })),
-  'file-types/yarn': () => import('./file-types').then((m) => ({ default: m.Yarn })),
-  'file-types/yarn-lock': () => import('./file-types').then((m) => ({ default: m.YarnLock })),
+  'file-types/action-script': () =>
+    import('./file-types').then((m) => ({ default: m.ActionScript })),
+  'file-types/acync-api': () =>
+    import('./file-types').then((m) => ({ default: m.AcyncApi })),
+  'file-types/amper': () =>
+    import('./file-types').then((m) => ({ default: m.Amper })),
+  'file-types/angular-js': () =>
+    import('./file-types').then((m) => ({ default: m.AngularJs })),
+  'file-types/angular-js-monochrome': () =>
+    import('./file-types').then((m) => ({ default: m.AngularJsMonochrome })),
+  'file-types/any-type': () =>
+    import('./file-types').then((m) => ({ default: m.AnyType })),
+  'file-types/api': () =>
+    import('./file-types').then((m) => ({ default: m.Api })),
+  'file-types/archive': () =>
+    import('./file-types').then((m) => ({ default: m.Archive })),
+  'file-types/aspect-j': () =>
+    import('./file-types').then((m) => ({ default: m.AspectJ })),
+  'file-types/assembler-go': () =>
+    import('./file-types').then((m) => ({ default: m.AssemblerGo })),
+  'file-types/bun': () =>
+    import('./file-types').then((m) => ({ default: m.Bun })),
+  'file-types/chameleon': () =>
+    import('./file-types').then((m) => ({ default: m.Chameleon })),
+  'file-types/changed-file': () =>
+    import('./file-types').then((m) => ({ default: m.ChangedFile })),
+  'file-types/changed-files': () =>
+    import('./file-types').then((m) => ({ default: m.ChangedFiles })),
+  'file-types/coffeescript': () =>
+    import('./file-types').then((m) => ({ default: m.Coffeescript })),
+  'file-types/conditional-statement': () =>
+    import('./file-types').then((m) => ({ default: m.ConditionalStatement })),
+  'file-types/contexts': () =>
+    import('./file-types').then((m) => ({ default: m.Contexts })),
+  'file-types/contexts-modifier': () =>
+    import('./file-types').then((m) => ({ default: m.ContextsModifier })),
+  'file-types/css': () =>
+    import('./file-types').then((m) => ({ default: m.Css })),
+  'file-types/cucumber': () =>
+    import('./file-types').then((m) => ({ default: m.Cucumber })),
+  'file-types/cython-file': () =>
+    import('./file-types').then((m) => ({ default: m.CythonFile })),
+  'file-types/deno': () =>
+    import('./file-types').then((m) => ({ default: m.Deno })),
+  'file-types/diagram': () =>
+    import('./file-types').then((m) => ({ default: m.Diagram })),
+  'file-types/dictionary': () =>
+    import('./file-types').then((m) => ({ default: m.Dictionary })),
+  'file-types/dts': () =>
+    import('./file-types').then((m) => ({ default: m.Dts })),
+  'file-types/dts-property': () =>
+    import('./file-types').then((m) => ({ default: m.DtsProperty })),
+  'file-types/dts-sub-node': () =>
+    import('./file-types').then((m) => ({ default: m.DtsSubNode })),
+  'file-types/eclipse': () =>
+    import('./file-types').then((m) => ({ default: m.Eclipse })),
+  'file-types/editor-config': () =>
+    import('./file-types').then((m) => ({ default: m.EditorConfig })),
+  'file-types/ejs': () =>
+    import('./file-types').then((m) => ({ default: m.Ejs })),
+  'file-types/exposed': () =>
+    import('./file-types').then((m) => ({ default: m.Exposed })),
+  'file-types/fast-api': () =>
+    import('./file-types').then((m) => ({ default: m.FastApi })),
+  'file-types/flask': () =>
+    import('./file-types').then((m) => ({ default: m.Flask })),
+  'file-types/freemaker': () =>
+    import('./file-types').then((m) => ({ default: m.Freemaker })),
+  'file-types/haskell': () =>
+    import('./file-types').then((m) => ({ default: m.Haskell })),
+  'file-types/hook': () =>
+    import('./file-types').then((m) => ({ default: m.Hook })),
+  'file-types/html': () =>
+    import('./file-types').then((m) => ({ default: m.Html })),
+  'file-types/http-header': () =>
+    import('./file-types').then((m) => ({ default: m.HttpHeader })),
+  'file-types/http-requests-run-configuration': () =>
+    import('./file-types').then((m) => ({
+      default: m.HttpRequestsRunConfiguration,
+    })),
+  'file-types/i18n': () =>
+    import('./file-types').then((m) => ({ default: m.I18n })),
+  'file-types/idea-module': () =>
+    import('./file-types').then((m) => ({ default: m.IdeaModule })),
+  'file-types/idl': () =>
+    import('./file-types').then((m) => ({ default: m.Idl })),
+  'file-types/ignored': () =>
+    import('./file-types').then((m) => ({ default: m.Ignored })),
+  'file-types/image': () =>
+    import('./file-types').then((m) => ({ default: m.Image })),
+  'file-types/java': () =>
+    import('./file-types').then((m) => ({ default: m.Java })),
+  'file-types/java-class': () =>
+    import('./file-types').then((m) => ({ default: m.JavaClass })),
+  'file-types/java-script': () =>
+    import('./file-types').then((m) => ({ default: m.JavaScript })),
+  'file-types/jest': () =>
+    import('./file-types').then((m) => ({ default: m.Jest })),
+  'file-types/jfr': () =>
+    import('./file-types').then((m) => ({ default: m.Jfr })),
+  'file-types/jinja2': () =>
+    import('./file-types').then((m) => ({ default: m.Jinja2 })),
+  'file-types/js-config': () =>
+    import('./file-types').then((m) => ({ default: m.JsConfig })),
+  'file-types/js-doc-closure': () =>
+    import('./file-types').then((m) => ({ default: m.JsDocClosure })),
+  'file-types/json': () =>
+    import('./file-types').then((m) => ({ default: m.Json })),
+  'file-types/json-schema': () =>
+    import('./file-types').then((m) => ({ default: m.JsonSchema })),
+  'file-types/jsp': () =>
+    import('./file-types').then((m) => ({ default: m.Jsp })),
+  'file-types/jspx': () =>
+    import('./file-types').then((m) => ({ default: m.Jspx })),
+  'file-types/jupyter-notebook': () =>
+    import('./file-types').then((m) => ({ default: m.JupyterNotebook })),
+  'file-types/kotlin': () =>
+    import('./file-types').then((m) => ({ default: m.Kotlin })),
+  'file-types/less': () =>
+    import('./file-types').then((m) => ({ default: m.Less })),
+  'file-types/manifest': () =>
+    import('./file-types').then((m) => ({ default: m.Manifest })),
+  'file-types/markdown': () =>
+    import('./file-types').then((m) => ({ default: m.Markdown })),
+  'file-types/maven': () =>
+    import('./file-types').then((m) => ({ default: m.Maven })),
+  'file-types/maven-ignored': () =>
+    import('./file-types').then((m) => ({ default: m.MavenIgnored })),
+  'file-types/micronaut': () =>
+    import('./file-types').then((m) => ({ default: m.Micronaut })),
+  'file-types/microsoft-windows': () =>
+    import('./file-types').then((m) => ({ default: m.MicrosoftWindows })),
+  'file-types/modified': () =>
+    import('./file-types').then((m) => ({ default: m.Modified })),
+  'file-types/next-js': () =>
+    import('./file-types').then((m) => ({ default: m.NextJs })),
+  'file-types/nodejs-test-runner': () =>
+    import('./file-types').then((m) => ({ default: m.NodejsTestRunner })),
+  'file-types/num-py': () =>
+    import('./file-types').then((m) => ({ default: m.NumPy })),
+  'file-types/open-rewrite': () =>
+    import('./file-types').then((m) => ({ default: m.OpenRewrite })),
+  'file-types/open-tofu': () =>
+    import('./file-types').then((m) => ({ default: m.OpenTofu })),
+  'file-types/package-json': () =>
+    import('./file-types').then((m) => ({ default: m.PackageJson })),
+  'file-types/package-lock': () =>
+    import('./file-types').then((m) => ({ default: m.PackageLock })),
+  'file-types/pandas': () =>
+    import('./file-types').then((m) => ({ default: m.Pandas })),
+  'file-types/patch': () =>
+    import('./file-types').then((m) => ({ default: m.Patch })),
+  'file-types/perl': () =>
+    import('./file-types').then((m) => ({ default: m.Perl })),
+  'file-types/pnpm': () =>
+    import('./file-types').then((m) => ({ default: m.Pnpm })),
+  'file-types/pnpm-lock': () =>
+    import('./file-types').then((m) => ({ default: m.PnpmLock })),
+  'file-types/polars': () =>
+    import('./file-types').then((m) => ({ default: m.Polars })),
+  'file-types/prettier': () =>
+    import('./file-types').then((m) => ({ default: m.Prettier })),
+  'file-types/properties': () =>
+    import('./file-types').then((m) => ({ default: m.Properties })),
+  'file-types/proto-file': () =>
+    import('./file-types').then((m) => ({ default: m.ProtoFile })),
+  'file-types/proto-message': () =>
+    import('./file-types').then((m) => ({ default: m.ProtoMessage })),
+  'file-types/protobuf': () =>
+    import('./file-types').then((m) => ({ default: m.Protobuf })),
+  'file-types/py-torch': () =>
+    import('./file-types').then((m) => ({ default: m.PyTorch })),
+  'file-types/python': () =>
+    import('./file-types').then((m) => ({ default: m.Python })),
+  'file-types/qml': () =>
+    import('./file-types').then((m) => ({ default: m.Qml })),
+  'file-types/qrc': () =>
+    import('./file-types').then((m) => ({ default: m.Qrc })),
+  'file-types/qt': () =>
+    import('./file-types').then((m) => ({ default: m.Qt })),
+  'file-types/quatro': () =>
+    import('./file-types').then((m) => ({ default: m.Quatro })),
+  'file-types/react': () =>
+    import('./file-types').then((m) => ({ default: m.React })),
+  'file-types/redoc': () =>
+    import('./file-types').then((m) => ({ default: m.Redoc })),
+  'file-types/regexp': () =>
+    import('./file-types').then((m) => ({ default: m.Regexp })),
+  'file-types/rst': () =>
+    import('./file-types').then((m) => ({ default: m.Rst })),
+  'file-types/sarif': () =>
+    import('./file-types').then((m) => ({ default: m.Sarif })),
+  'file-types/sass': () =>
+    import('./file-types').then((m) => ({ default: m.Sass })),
+  'file-types/scala': () =>
+    import('./file-types').then((m) => ({ default: m.Scala })),
+  'file-types/scratch': () =>
+    import('./file-types').then((m) => ({ default: m.Scratch })),
+  'file-types/scratches': () =>
+    import('./file-types').then((m) => ({ default: m.Scratches })),
+  'file-types/scss': () =>
+    import('./file-types').then((m) => ({ default: m.Scss })),
+  'file-types/shell': () =>
+    import('./file-types').then((m) => ({ default: m.Shell })),
+  'file-types/source-map': () =>
+    import('./file-types').then((m) => ({ default: m.SourceMap })),
+  'file-types/sql': () =>
+    import('./file-types').then((m) => ({ default: m.Sql })),
+  'file-types/svelte': () =>
+    import('./file-types').then((m) => ({ default: m.Svelte })),
+  'file-types/team-city': () =>
+    import('./file-types').then((m) => ({ default: m.TeamCity })),
+  'file-types/tensor-flow': () =>
+    import('./file-types').then((m) => ({ default: m.TensorFlow })),
+  'file-types/terraform': () =>
+    import('./file-types').then((m) => ({ default: m.Terraform })),
+  'file-types/text': () =>
+    import('./file-types').then((m) => ({ default: m.Text })),
+  'file-types/ts-config': () =>
+    import('./file-types').then((m) => ({ default: m.TsConfig })),
+  'file-types/ts-doc': () =>
+    import('./file-types').then((m) => ({ default: m.TsDoc })),
+  'file-types/ui-form': () =>
+    import('./file-types').then((m) => ({ default: m.UiForm })),
+  'file-types/unknown': () =>
+    import('./file-types').then((m) => ({ default: m.Unknown })),
+  'file-types/vite-js': () =>
+    import('./file-types').then((m) => ({ default: m.ViteJs })),
+  'file-types/vitest': () =>
+    import('./file-types').then((m) => ({ default: m.Vitest })),
+  'file-types/vue-js': () =>
+    import('./file-types').then((m) => ({ default: m.VueJs })),
+  'file-types/workspace': () =>
+    import('./file-types').then((m) => ({ default: m.Workspace })),
+  'file-types/wsdl': () =>
+    import('./file-types').then((m) => ({ default: m.Wsdl })),
+  'file-types/xhtml': () =>
+    import('./file-types').then((m) => ({ default: m.Xhtml })),
+  'file-types/xml': () =>
+    import('./file-types').then((m) => ({ default: m.Xml })),
+  'file-types/xpath': () =>
+    import('./file-types').then((m) => ({ default: m.Xpath })),
+  'file-types/xsd': () =>
+    import('./file-types').then((m) => ({ default: m.Xsd })),
+  'file-types/xsl': () =>
+    import('./file-types').then((m) => ({ default: m.Xsl })),
+  'file-types/yaml': () =>
+    import('./file-types').then((m) => ({ default: m.Yaml })),
+  'file-types/yarn': () =>
+    import('./file-types').then((m) => ({ default: m.Yarn })),
+  'file-types/yarn-lock': () =>
+    import('./file-types').then((m) => ({ default: m.YarnLock })),
 
   // General (395)
-  'general/access-modifiers/access-local': () => import('./General').then((m) => ({ default: m.AccessLocal })),
-  'general/access-modifiers/access-private': () => import('./General').then((m) => ({ default: m.AccessPrivate })),
-  'general/access-modifiers/access-protected': () => import('./General').then((m) => ({ default: m.AccessProtected })),
-  'general/access-modifiers/access-public': () => import('./General').then((m) => ({ default: m.AccessPublic })),
-  'general/actions/add-file': () => import('./General').then((m) => ({ default: m.AddFile })),
-  'general/actions/build-auto-reload-changes': () => import('./General').then((m) => ({ default: m.BuildAutoReloadChanges })),
-  'general/actions/checked': () => import('./General').then((m) => ({ default: m.Checked })),
-  'general/actions/deploy': () => import('./General').then((m) => ({ default: m.Deploy })),
-  'general/actions/diagram-diff': () => import('./General').then((m) => ({ default: m.DiagramDiff })),
-  'general/actions/diff-with-clipboard': () => import('./General').then((m) => ({ default: m.DiffWithClipboard })),
-  'general/actions/gift': () => import('./General').then((m) => ({ default: m.Gift })),
-  'general/actions/group-by-class': () => import('./General').then((m) => ({ default: m.GroupByClass })),
-  'general/actions/group-by-file': () => import('./General').then((m) => ({ default: m.GroupByFile })),
-  'general/actions/group-by-method': () => import('./General').then((m) => ({ default: m.GroupByMethod })),
-  'general/actions/group-by-module': () => import('./General').then((m) => ({ default: m.GroupByModule })),
-  'general/actions/group-by-package': () => import('./General').then((m) => ({ default: m.GroupByPackage })),
-  'general/actions/group-by-test-production': () => import('./General').then((m) => ({ default: m.GroupByTestProduction })),
-  'general/actions/in-selection': () => import('./General').then((m) => ({ default: m.InSelection })),
-  'general/actions/lightning': () => import('./General').then((m) => ({ default: m.Lightning })),
-  'general/actions/move-to-button': () => import('./General').then((m) => ({ default: m.MoveToButton })),
-  'general/actions/open-api': () => import('./General').then((m) => ({ default: m.OpenApi })),
-  'general/actions/play-back': () => import('./General').then((m) => ({ default: m.PlayBack })),
-  'general/actions/play-first': () => import('./General').then((m) => ({ default: m.PlayFirst })),
-  'general/actions/play-forward': () => import('./General').then((m) => ({ default: m.PlayForward })),
-  'general/actions/play-last': () => import('./General').then((m) => ({ default: m.PlayLast })),
-  'general/actions/preview': () => import('./General').then((m) => ({ default: m.Preview })),
-  'general/actions/profile-cpu': () => import('./General').then((m) => ({ default: m.ProfileCpu })),
-  'general/actions/profile-memory': () => import('./General').then((m) => ({ default: m.ProfileMemory })),
-  'general/actions/profile-red': () => import('./General').then((m) => ({ default: m.ProfileRed })),
-  'general/actions/project-directory': () => import('./General').then((m) => ({ default: m.ProjectDirectory })),
-  'general/actions/replace': () => import('./General').then((m) => ({ default: m.Replace })),
-  'general/actions/report': () => import('./General').then((m) => ({ default: m.Report })),
-  'general/actions/restart-stop': () => import('./General').then((m) => ({ default: m.RestartStop })),
-  'general/actions/run-all': () => import('./General').then((m) => ({ default: m.RunAll })),
-  'general/actions/select-all': () => import('./General').then((m) => ({ default: m.SelectAll })),
-  'general/actions/shortcut-filter': () => import('./General').then((m) => ({ default: m.ShortcutFilter })),
-  'general/actions/show-to-implement': () => import('./General').then((m) => ({ default: m.ShowToImplement })),
-  'general/actions/split': () => import('./General').then((m) => ({ default: m.Split })),
-  'general/actions/start-memory-profile': () => import('./General').then((m) => ({ default: m.StartMemoryProfile })),
-  'general/actions/suggested-refactoring-bulb': () => import('./General').then((m) => ({ default: m.SuggestedRefactoringBulb })),
-  'general/actions/swap-panels': () => import('./General').then((m) => ({ default: m.SwapPanels })),
-  'general/actions/synchronize-scrolling': () => import('./General').then((m) => ({ default: m.SynchronizeScrolling })),
-  'general/actions/toggle-visibility': () => import('./General').then((m) => ({ default: m.ToggleVisibility })),
-  'general/actions/unselect-all': () => import('./General').then((m) => ({ default: m.UnselectAll })),
-  'general/actions/write-review': () => import('./General').then((m) => ({ default: m.WriteReview })),
-  'general/ai-asisstant/ai-assistant': () => import('./General').then((m) => ({ default: m.AiAssistant })),
-  'general/ai-asisstant/ai-assistant-colored': () => import('./General').then((m) => ({ default: m.AiAssistantColored })),
-  'general/ai-asisstant/ai-assistant-disabled': () => import('./General').then((m) => ({ default: m.AiAssistantDisabled })),
-  'general/ai-asisstant/attached': () => import('./General').then((m) => ({ default: m.Attached })),
-  'general/ai-asisstant/dislike': () => import('./General').then((m) => ({ default: m.Dislike })),
-  'general/ai-asisstant/dislike-selected': () => import('./General').then((m) => ({ default: m.DislikeSelected })),
-  'general/ai-asisstant/feature-answer': () => import('./General').then((m) => ({ default: m.FeatureAnswer })),
-  'general/ai-asisstant/feature-code-block': () => import('./General').then((m) => ({ default: m.FeatureCodeBlock })),
-  'general/ai-asisstant/feature-comment': () => import('./General').then((m) => ({ default: m.FeatureComment })),
-  'general/ai-asisstant/feature-commit': () => import('./General').then((m) => ({ default: m.FeatureCommit })),
-  'general/ai-asisstant/feature-context': () => import('./General').then((m) => ({ default: m.FeatureContext })),
-  'general/ai-asisstant/feature-docs': () => import('./General').then((m) => ({ default: m.FeatureDocs })),
-  'general/ai-asisstant/like': () => import('./General').then((m) => ({ default: m.Like })),
-  'general/ai-asisstant/like-selected': () => import('./General').then((m) => ({ default: m.LikeSelected })),
-  'general/ai-asisstant/send': () => import('./General').then((m) => ({ default: m.Send })),
-  'general/ai-asisstant/send-to-editor': () => import('./General').then((m) => ({ default: m.SendToEditor })),
-  'general/bookmarks/add-bookmarks-list': () => import('./General').then((m) => ({ default: m.AddBookmarksList })),
-  'general/bookmarks/bookmark': () => import('./General').then((m) => ({ default: m.Bookmark })),
-  'general/bookmarks/bookmarks': () => import('./General').then((m) => ({ default: m.Bookmarks })),
-  'general/bookmarks/bookmarks-list': () => import('./General').then((m) => ({ default: m.BookmarksList })),
-  'general/bookmarks/mnemonic': () => import('./General').then((m) => ({ default: m.Mnemonic })),
-  'general/devkit/add-sdk': () => import('./General').then((m) => ({ default: m.AddSdk })),
-  'general/devkit/description-file': () => import('./General').then((m) => ({ default: m.DescriptionFile })),
-  'general/devkit/diff': () => import('./General').then((m) => ({ default: m.Diff })),
-  'general/devkit/plugin': () => import('./General').then((m) => ({ default: m.Plugin })),
-  'general/devkit/plugin-v2': () => import('./General').then((m) => ({ default: m.PluginV2 })),
-  'general/devkit/properties': () => import('./General').then((m) => ({ default: m.Properties })),
-  'general/devkit/sdk-closed': () => import('./General').then((m) => ({ default: m.SdkClosed })),
-  'general/duplicates/send-to-the-left': () => import('./General').then((m) => ({ default: m.SendToTheLeft })),
-  'general/duplicates/send-to-the-left-grayed': () => import('./General').then((m) => ({ default: m.SendToTheLeftGrayed })),
-  'general/duplicates/send-to-the-right': () => import('./General').then((m) => ({ default: m.SendToTheRight })),
-  'general/duplicates/send-to-the-right-grayed': () => import('./General').then((m) => ({ default: m.SendToTheRightGrayed })),
-  'general/editor/add-column-left': () => import('./General').then((m) => ({ default: m.AddColumnLeft })),
-  'general/editor/add-column-right': () => import('./General').then((m) => ({ default: m.AddColumnRight })),
-  'general/editor/add-row-above': () => import('./General').then((m) => ({ default: m.AddRowAbove })),
-  'general/editor/add-row-below': () => import('./General').then((m) => ({ default: m.AddRowBelow })),
-  'general/editor/bold': () => import('./General').then((m) => ({ default: m.Bold })),
-  'general/editor/bullet-list': () => import('./General').then((m) => ({ default: m.BulletList })),
-  'general/editor/center-align': () => import('./General').then((m) => ({ default: m.CenterAlign })),
-  'general/editor/checkmark-list': () => import('./General').then((m) => ({ default: m.CheckmarkList })),
-  'general/editor/code-span': () => import('./General').then((m) => ({ default: m.CodeSpan })),
-  'general/editor/header-level-down': () => import('./General').then((m) => ({ default: m.HeaderLevelDown })),
-  'general/editor/header-level-up': () => import('./General').then((m) => ({ default: m.HeaderLevelUp })),
-  'general/editor/italic': () => import('./General').then((m) => ({ default: m.Italic })),
-  'general/editor/left-align': () => import('./General').then((m) => ({ default: m.LeftAlign })),
-  'general/editor/link': () => import('./General').then((m) => ({ default: m.Link })),
-  'general/editor/numbered-list': () => import('./General').then((m) => ({ default: m.NumberedList })),
-  'general/editor/right-align': () => import('./General').then((m) => ({ default: m.RightAlign })),
-  'general/editor/strike-through': () => import('./General').then((m) => ({ default: m.StrikeThrough })),
-  'general/editor/table': () => import('./General').then((m) => ({ default: m.Table })),
-  'general/general/add': () => import('./General').then((m) => ({ default: m.Add })),
-  'general/general/autoscroll-from-source': () => import('./General').then((m) => ({ default: m.AutoscrollFromSource })),
-  'general/general/autoscroll-to-source': () => import('./General').then((m) => ({ default: m.AutoscrollToSource })),
-  'general/general/checkmark': () => import('./General').then((m) => ({ default: m.Checkmark })),
-  'general/general/chevron-down': () => import('./General').then((m) => ({ default: m.ChevronDown })),
-  'general/general/chevron-down-hovered': () => import('./General').then((m) => ({ default: m.ChevronDownHovered })),
-  'general/general/chevron-down-large': () => import('./General').then((m) => ({ default: m.ChevronDownLarge })),
-  'general/general/chevron-left': () => import('./General').then((m) => ({ default: m.ChevronLeft })),
-  'general/general/chevron-right': () => import('./General').then((m) => ({ default: m.ChevronRight })),
-  'general/general/chevron-up': () => import('./General').then((m) => ({ default: m.ChevronUp })),
-  'general/general/chevron-up-large': () => import('./General').then((m) => ({ default: m.ChevronUpLarge })),
-  'general/general/class-hierarchy': () => import('./General').then((m) => ({ default: m.ClassHierarchy })),
-  'general/general/close': () => import('./General').then((m) => ({ default: m.Close })),
-  'general/general/close-small': () => import('./General').then((m) => ({ default: m.CloseSmall })),
-  'general/general/close-small-hovered': () => import('./General').then((m) => ({ default: m.CloseSmallHovered })),
-  'general/general/collapse-all': () => import('./General').then((m) => ({ default: m.CollapseAll })),
-  'general/general/config-file': () => import('./General').then((m) => ({ default: m.ConfigFile })),
-  'general/general/copy': () => import('./General').then((m) => ({ default: m.Copy })),
-  'general/general/cut': () => import('./General').then((m) => ({ default: m.Cut })),
-  'general/general/delete': () => import('./General').then((m) => ({ default: m.Delete })),
-  'general/general/down': () => import('./General').then((m) => ({ default: m.Down })),
-  'general/general/download': () => import('./General').then((m) => ({ default: m.Download })),
-  'general/general/edit': () => import('./General').then((m) => ({ default: m.Edit })),
-  'general/general/exit': () => import('./General').then((m) => ({ default: m.Exit })),
-  'general/general/expand-all': () => import('./General').then((m) => ({ default: m.ExpandAll })),
-  'general/general/export': () => import('./General').then((m) => ({ default: m.Export })),
-  'general/general/external-link': () => import('./General').then((m) => ({ default: m.ExternalLink })),
-  'general/general/filter': () => import('./General').then((m) => ({ default: m.Filter })),
-  'general/general/graph-layout': () => import('./General').then((m) => ({ default: m.GraphLayout })),
-  'general/general/groups': () => import('./General').then((m) => ({ default: m.Groups })),
-  'general/general/help': () => import('./General').then((m) => ({ default: m.Help })),
-  'general/general/hide': () => import('./General').then((m) => ({ default: m.Hide })),
-  'general/general/history': () => import('./General').then((m) => ({ default: m.History })),
-  'general/general/ide-update': () => import('./General').then((m) => ({ default: m.IdeUpdate })),
-  'general/general/import': () => import('./General').then((m) => ({ default: m.Import })),
-  'general/general/keyboard': () => import('./General').then((m) => ({ default: m.Keyboard })),
-  'general/general/layout': () => import('./General').then((m) => ({ default: m.Layout })),
-  'general/general/left': () => import('./General').then((m) => ({ default: m.Left })),
-  'general/general/list-files': () => import('./General').then((m) => ({ default: m.ListFiles })),
-  'general/general/locate': () => import('./General').then((m) => ({ default: m.Locate })),
-  'general/general/locked': () => import('./General').then((m) => ({ default: m.Locked })),
-  'general/general/minimap': () => import('./General').then((m) => ({ default: m.Minimap })),
-  'general/general/more-horizontal': () => import('./General').then((m) => ({ default: m.MoreHorizontal })),
-  'general/general/more-vertical': () => import('./General').then((m) => ({ default: m.MoreVertical })),
-  'general/general/move-down': () => import('./General').then((m) => ({ default: m.MoveDown })),
-  'general/general/move-to-bottom-left': () => import('./General').then((m) => ({ default: m.MoveToBottomLeft })),
-  'general/general/move-to-bottom-right': () => import('./General').then((m) => ({ default: m.MoveToBottomRight })),
-  'general/general/move-to-left-bottom': () => import('./General').then((m) => ({ default: m.MoveToLeftBottom })),
-  'general/general/move-to-left-top': () => import('./General').then((m) => ({ default: m.MoveToLeftTop })),
-  'general/general/move-to-right-bottom': () => import('./General').then((m) => ({ default: m.MoveToRightBottom })),
-  'general/general/move-to-right-top': () => import('./General').then((m) => ({ default: m.MoveToRightTop })),
-  'general/general/move-up': () => import('./General').then((m) => ({ default: m.MoveUp })),
-  'general/general/open': () => import('./General').then((m) => ({ default: m.Open })),
-  'general/general/open-in-tool-window': () => import('./General').then((m) => ({ default: m.OpenInToolWindow })),
-  'general/general/open-new-tab': () => import('./General').then((m) => ({ default: m.OpenNewTab })),
-  'general/general/pagination': () => import('./General').then((m) => ({ default: m.Pagination })),
-  'general/general/paste': () => import('./General').then((m) => ({ default: m.Paste })),
-  'general/general/pin': () => import('./General').then((m) => ({ default: m.Pin })),
-  'general/general/plugin-update': () => import('./General').then((m) => ({ default: m.PluginUpdate })),
-  'general/general/preview-horizontally': () => import('./General').then((m) => ({ default: m.PreviewHorizontally })),
-  'general/general/preview-vertically': () => import('./General').then((m) => ({ default: m.PreviewVertically })),
-  'general/general/print': () => import('./General').then((m) => ({ default: m.Print })),
-  'general/general/project-configurable': () => import('./General').then((m) => ({ default: m.ProjectConfigurable })),
-  'general/general/project-structure': () => import('./General').then((m) => ({ default: m.ProjectStructure })),
-  'general/general/project-wide-analysis-off': () => import('./General').then((m) => ({ default: m.ProjectWideAnalysisOff })),
-  'general/general/project-wide-analysis-on': () => import('./General').then((m) => ({ default: m.ProjectWideAnalysisOn })),
-  'general/general/question-mark': () => import('./General').then((m) => ({ default: m.QuestionMark })),
-  'general/general/reader-mode': () => import('./General').then((m) => ({ default: m.ReaderMode })),
-  'general/general/redo': () => import('./General').then((m) => ({ default: m.Redo })),
-  'general/general/reformat-code': () => import('./General').then((m) => ({ default: m.ReformatCode })),
-  'general/general/refresh': () => import('./General').then((m) => ({ default: m.Refresh })),
-  'general/general/remove': () => import('./General').then((m) => ({ default: m.Remove })),
-  'general/general/right': () => import('./General').then((m) => ({ default: m.Right })),
-  'general/general/run-anything': () => import('./General').then((m) => ({ default: m.RunAnything })),
-  'general/general/save': () => import('./General').then((m) => ({ default: m.Save })),
-  'general/general/scroll-down': () => import('./General').then((m) => ({ default: m.ScrollDown })),
-  'general/general/scroll-up': () => import('./General').then((m) => ({ default: m.ScrollUp })),
-  'general/general/search': () => import('./General').then((m) => ({ default: m.Search })),
-  'general/general/separator-horizontal': () => import('./General').then((m) => ({ default: m.SeparatorHorizontal })),
-  'general/general/setting-sync': () => import('./General').then((m) => ({ default: m.SettingSync })),
-  'general/general/settings': () => import('./General').then((m) => ({ default: m.Settings })),
-  'general/general/show': () => import('./General').then((m) => ({ default: m.Show })),
-  'general/general/show-as-tree': () => import('./General').then((m) => ({ default: m.ShowAsTree })),
-  'general/general/soft-wrap': () => import('./General').then((m) => ({ default: m.SoftWrap })),
-  'general/general/sort-alphabetically': () => import('./General').then((m) => ({ default: m.SortAlphabetically })),
-  'general/general/sort-by': () => import('./General').then((m) => ({ default: m.SortBy })),
-  'general/general/sort-by-duration': () => import('./General').then((m) => ({ default: m.SortByDuration })),
-  'general/general/sort-by-type': () => import('./General').then((m) => ({ default: m.SortByType })),
-  'general/general/sort-by-usage': () => import('./General').then((m) => ({ default: m.SortByUsage })),
-  'general/general/sort-by-visibility': () => import('./General').then((m) => ({ default: m.SortByVisibility })),
-  'general/general/split-horizontally': () => import('./General').then((m) => ({ default: m.SplitHorizontally })),
-  'general/general/split-vertically': () => import('./General').then((m) => ({ default: m.SplitVertically })),
-  'general/general/subtypes': () => import('./General').then((m) => ({ default: m.Subtypes })),
-  'general/general/supertypes': () => import('./General').then((m) => ({ default: m.Supertypes })),
-  'general/general/undo': () => import('./General').then((m) => ({ default: m.Undo })),
-  'general/general/unlocked': () => import('./General').then((m) => ({ default: m.Unlocked })),
-  'general/general/up': () => import('./General').then((m) => ({ default: m.Up })),
-  'general/general/upload': () => import('./General').then((m) => ({ default: m.Upload })),
-  'general/general/vcs': () => import('./General').then((m) => ({ default: m.Vcs })),
-  'general/general/windows-menu': () => import('./General').then((m) => ({ default: m.WindowsMenu })),
-  'general/inline/browse': () => import('./General').then((m) => ({ default: m.Browse })),
-  'general/inline/collapse': () => import('./General').then((m) => ({ default: m.Collapse })),
-  'general/inline/exact-words': () => import('./General').then((m) => ({ default: m.ExactWords })),
-  'general/inline/expand': () => import('./General').then((m) => ({ default: m.Expand })),
-  'general/inline/filter-history': () => import('./General').then((m) => ({ default: m.FilterHistory })),
-  'general/inline/inline-add': () => import('./General').then((m) => ({ default: m.InlineAdd })),
-  'general/inline/inline-edit': () => import('./General').then((m) => ({ default: m.InlineEdit })),
-  'general/inline/inline-settings': () => import('./General').then((m) => ({ default: m.InlineSettings })),
-  'general/inline/match-case': () => import('./General').then((m) => ({ default: m.MatchCase })),
-  'general/inline/new-line': () => import('./General').then((m) => ({ default: m.NewLine })),
-  'general/inline/preserve-case': () => import('./General').then((m) => ({ default: m.PreserveCase })),
-  'general/inline/regex': () => import('./General').then((m) => ({ default: m.Regex })),
-  'general/inline/search-history': () => import('./General').then((m) => ({ default: m.SearchHistory })),
-  'general/inline/sort-history': () => import('./General').then((m) => ({ default: m.SortHistory })),
-  'general/inline/statistics-panel': () => import('./General').then((m) => ({ default: m.StatisticsPanel })),
-  'general/inline/variables': () => import('./General').then((m) => ({ default: m.Variables })),
-  'general/modifiers/final-mark': () => import('./General').then((m) => ({ default: m.FinalMark })),
-  'general/modifiers/junit-test-mark': () => import('./General').then((m) => ({ default: m.JunitTestMark })),
-  'general/modifiers/process-mark': () => import('./General').then((m) => ({ default: m.ProcessMark })),
-  'general/modifiers/runnable-mark': () => import('./General').then((m) => ({ default: m.RunnableMark })),
-  'general/modifiers/shared': () => import('./General').then((m) => ({ default: m.Shared })),
-  'general/modifiers/static-mark': () => import('./General').then((m) => ({ default: m.StaticMark })),
-  'general/modifiers/symlink': () => import('./General').then((m) => ({ default: m.Symlink })),
-  'general/modifiers/tab-alert': () => import('./General').then((m) => ({ default: m.TabAlert })),
-  'general/new-ui/dark-theme': () => import('./General').then((m) => ({ default: m.DarkTheme })),
-  'general/new-ui/dark-theme-selected': () => import('./General').then((m) => ({ default: m.DarkThemeSelected })),
-  'general/new-ui/light-theme': () => import('./General').then((m) => ({ default: m.LightTheme })),
-  'general/new-ui/light-theme-selected': () => import('./General').then((m) => ({ default: m.LightThemeSelected })),
-  'general/new-ui/system-theme': () => import('./General').then((m) => ({ default: m.SystemTheme })),
-  'general/new-ui/system-theme-selected': () => import('./General').then((m) => ({ default: m.SystemThemeSelected })),
-  'general/object-browser/abbreviate-package-names': () => import('./General').then((m) => ({ default: m.AbbreviatePackageNames })),
-  'general/object-browser/compact-empty-packages': () => import('./General').then((m) => ({ default: m.CompactEmptyPackages })),
-  'general/object-browser/flatten-modules': () => import('./General').then((m) => ({ default: m.FlattenModules })),
-  'general/object-browser/flatten-packages': () => import('./General').then((m) => ({ default: m.FlattenPackages })),
-  'general/object-browser/show-library-contents': () => import('./General').then((m) => ({ default: m.ShowLibraryContents })),
-  'general/object-browser/show-members': () => import('./General').then((m) => ({ default: m.ShowMembers })),
-  'general/progress-bar/pause': () => import('./General').then((m) => ({ default: m.Pause })),
-  'general/progress-bar/pause-hovered': () => import('./General').then((m) => ({ default: m.PauseHovered })),
-  'general/progress-bar/resume': () => import('./General').then((m) => ({ default: m.Resume })),
-  'general/progress-bar/resume-hovered': () => import('./General').then((m) => ({ default: m.ResumeHovered })),
-  'general/progress-bar/stop': () => import('./General').then((m) => ({ default: m.Stop })),
-  'general/progress-bar/stop-hovered': () => import('./General').then((m) => ({ default: m.StopHovered })),
-  'general/raiting/feedback-rating': () => import('./General').then((m) => ({ default: m.FeedbackRating })),
-  'general/raiting/feedback-rating-focused': () => import('./General').then((m) => ({ default: m.FeedbackRatingFocused })),
-  'general/raiting/feedback-rating-focused-on': () => import('./General').then((m) => ({ default: m.FeedbackRatingFocusedOn })),
-  'general/raiting/feedback-rating-on': () => import('./General').then((m) => ({ default: m.FeedbackRatingOn })),
-  'general/setting-sync/conflict': () => import('./General').then((m) => ({ default: m.Conflict })),
-  'general/setting-sync/local-changes': () => import('./General').then((m) => ({ default: m.LocalChanges })),
-  'general/setting-sync/remote-changes': () => import('./General').then((m) => ({ default: m.RemoteChanges })),
-  'general/setting-sync/status-disabled': () => import('./General').then((m) => ({ default: m.StatusDisabled })),
-  'general/setting-sync/status-enabled': () => import('./General').then((m) => ({ default: m.StatusEnabled })),
-  'general/spinner/loader': () => import('./General').then((m) => ({ default: m.Loader })),
-  'general/status/error': () => import('./General').then((m) => ({ default: m.Error })),
-  'general/status/error-dialog': () => import('./General').then((m) => ({ default: m.ErrorDialog })),
-  'general/status/error-outline': () => import('./General').then((m) => ({ default: m.ErrorOutline })),
-  'general/status/info': () => import('./General').then((m) => ({ default: m.Info })),
-  'general/status/info-outline': () => import('./General').then((m) => ({ default: m.InfoOutline })),
-  'general/status/information-dialog': () => import('./General').then((m) => ({ default: m.InformationDialog })),
-  'general/status/question-dialog': () => import('./General').then((m) => ({ default: m.QuestionDialog })),
-  'general/status/success': () => import('./General').then((m) => ({ default: m.Success })),
-  'general/status/success-dialog': () => import('./General').then((m) => ({ default: m.SuccessDialog })),
-  'general/status/success-login': () => import('./General').then((m) => ({ default: m.SuccessLogin })),
-  'general/status/warning': () => import('./General').then((m) => ({ default: m.Warning })),
-  'general/status/warning-dialog': () => import('./General').then((m) => ({ default: m.WarningDialog })),
-  'general/status/warning-outline': () => import('./General').then((m) => ({ default: m.WarningOutline })),
-  'general/tool-windows/ai-assistant-tool-window': () => import('./General').then((m) => ({ default: m.AiAssistantToolWindow })),
-  'general/tool-windows/amazon-emr': () => import('./General').then((m) => ({ default: m.AmazonEmr })),
-  'general/tool-windows/ant': () => import('./General').then((m) => ({ default: m.Ant })),
-  'general/tool-windows/app-engine-tool-window': () => import('./General').then((m) => ({ default: m.AppEngineToolWindow })),
-  'general/tool-windows/aws-glue-tool-window': () => import('./General').then((m) => ({ default: m.AwsGlueToolWindow })),
-  'general/tool-windows/build': () => import('./General').then((m) => ({ default: m.Build })),
-  'general/tool-windows/build-server-protocol': () => import('./General').then((m) => ({ default: m.BuildServerProtocol })),
-  'general/tool-windows/c-make-tool-window': () => import('./General').then((m) => ({ default: m.CMakeToolWindow })),
-  'general/tool-windows/cdi-tool-window': () => import('./General').then((m) => ({ default: m.CdiToolWindow })),
-  'general/tool-windows/changes': () => import('./General').then((m) => ({ default: m.Changes })),
-  'general/tool-windows/commit': () => import('./General').then((m) => ({ default: m.Commit })),
-  'general/tool-windows/concurrency-diagram-toolwindow': () => import('./General').then((m) => ({ default: m.ConcurrencyDiagramToolwindow })),
-  'general/tool-windows/coverage': () => import('./General').then((m) => ({ default: m.Coverage })),
-  'general/tool-windows/cwm-access': () => import('./General').then((m) => ({ default: m.CwmAccess })),
-  'general/tool-windows/cwm-users': () => import('./General').then((m) => ({ default: m.CwmUsers })),
-  'general/tool-windows/cypress': () => import('./General').then((m) => ({ default: m.Cypress })),
-  'general/tool-windows/database-changes': () => import('./General').then((m) => ({ default: m.DatabaseChanges })),
-  'general/tool-windows/databricks-tool-window': () => import('./General').then((m) => ({ default: m.DatabricksToolWindow })),
-  'general/tool-windows/dataproc-tool-window': () => import('./General').then((m) => ({ default: m.DataprocToolWindow })),
-  'general/tool-windows/dbms': () => import('./General').then((m) => ({ default: m.Dbms })),
-  'general/tool-windows/debug': () => import('./General').then((m) => ({ default: m.Debug })),
-  'general/tool-windows/dependencies': () => import('./General').then((m) => ({ default: m.Dependencies })),
-  'general/tool-windows/documentation': () => import('./General').then((m) => ({ default: m.Documentation })),
-  'general/tool-windows/donate': () => import('./General').then((m) => ({ default: m.Donate })),
-  'general/tool-windows/endpoints': () => import('./General').then((m) => ({ default: m.Endpoints })),
-  'general/tool-windows/exception-analyzer': () => import('./General').then((m) => ({ default: m.ExceptionAnalyzer })),
-  'general/tool-windows/feedback': () => import('./General').then((m) => ({ default: m.Feedback })),
-  'general/tool-windows/find': () => import('./General').then((m) => ({ default: m.Find })),
-  'general/tool-windows/find-external-usages': () => import('./General').then((m) => ({ default: m.FindExternalUsages })),
-  'general/tool-windows/git-lab-tool-window': () => import('./General').then((m) => ({ default: m.GitLabToolWindow })),
-  'general/tool-windows/gradle': () => import('./General').then((m) => ({ default: m.Gradle })),
-  'general/tool-windows/graph-ql-tool-window': () => import('./General').then((m) => ({ default: m.GraphQlToolWindow })),
-  'general/tool-windows/hierarchy': () => import('./General').then((m) => ({ default: m.Hierarchy })),
-  'general/tool-windows/hive': () => import('./General').then((m) => ({ default: m.Hive })),
-  'general/tool-windows/java-ee-tool-window': () => import('./General').then((m) => ({ default: m.JavaEeToolWindow })),
-  'general/tool-windows/jpa-console-tool-window': () => import('./General').then((m) => ({ default: m.JpaConsoleToolWindow })),
-  'general/tool-windows/jpa-tool-window': () => import('./General').then((m) => ({ default: m.JpaToolWindow })),
-  'general/tool-windows/jupyter-tool-window': () => import('./General').then((m) => ({ default: m.JupyterToolWindow })),
-  'general/tool-windows/kafka': () => import('./General').then((m) => ({ default: m.Kafka })),
-  'general/tool-windows/kotlin-tool-window': () => import('./General').then((m) => ({ default: m.KotlinToolWindow })),
-  'general/tool-windows/learn': () => import('./General').then((m) => ({ default: m.Learn })),
-  'general/tool-windows/makefile-tool-window': () => import('./General').then((m) => ({ default: m.MakefileToolWindow })),
-  'general/tool-windows/maven': () => import('./General').then((m) => ({ default: m.Maven })),
-  'general/tool-windows/messages': () => import('./General').then((m) => ({ default: m.Messages })),
-  'general/tool-windows/new-ui': () => import('./General').then((m) => ({ default: m.NewUi })),
-  'general/tool-windows/notifications': () => import('./General').then((m) => ({ default: m.Notifications })),
-  'general/tool-windows/npm': () => import('./General').then((m) => ({ default: m.Npm })),
-  'general/tool-windows/package-manager': () => import('./General').then((m) => ({ default: m.PackageManager })),
-  'general/tool-windows/persistence': () => import('./General').then((m) => ({ default: m.Persistence })),
-  'general/tool-windows/problems': () => import('./General').then((m) => ({ default: m.Problems })),
-  'general/tool-windows/profiler': () => import('./General').then((m) => ({ default: m.Profiler })),
-  'general/tool-windows/profiler-android': () => import('./General').then((m) => ({ default: m.ProfilerAndroid })),
-  'general/tool-windows/project': () => import('./General').then((m) => ({ default: m.Project })),
-  'general/tool-windows/pull-requests': () => import('./General').then((m) => ({ default: m.PullRequests })),
-  'general/tool-windows/python-console-tool-window': () => import('./General').then((m) => ({ default: m.PythonConsoleToolWindow })),
-  'general/tool-windows/r-engine-tool-window': () => import('./General').then((m) => ({ default: m.REngineToolWindow })),
-  'general/tool-windows/r-tool-window': () => import('./General').then((m) => ({ default: m.RToolWindow })),
-  'general/tool-windows/rebuild': () => import('./General').then((m) => ({ default: m.Rebuild })),
-  'general/tool-windows/repositories': () => import('./General').then((m) => ({ default: m.Repositories })),
-  'general/tool-windows/run': () => import('./General').then((m) => ({ default: m.Run })),
-  'general/tool-windows/rust': () => import('./General').then((m) => ({ default: m.Rust })),
-  'general/tool-windows/sbt-icon': () => import('./General').then((m) => ({ default: m.SbtIcon })),
-  'general/tool-windows/sbt-shell': () => import('./General').then((m) => ({ default: m.SbtShell })),
-  'general/tool-windows/scala-profiler': () => import('./General').then((m) => ({ default: m.ScalaProfiler })),
-  'general/tool-windows/sci-view': () => import('./General').then((m) => ({ default: m.SciView })),
-  'general/tool-windows/services': () => import('./General').then((m) => ({ default: m.Services })),
-  'general/tool-windows/space-tool-window': () => import('./General').then((m) => ({ default: m.SpaceToolWindow })),
-  'general/tool-windows/spark': () => import('./General').then((m) => ({ default: m.Spark })),
-  'general/tool-windows/spring': () => import('./General').then((m) => ({ default: m.Spring })),
-  'general/tool-windows/statistics-event-log': () => import('./General').then((m) => ({ default: m.StatisticsEventLog })),
-  'general/tool-windows/structure': () => import('./General').then((m) => ({ default: m.Structure })),
-  'general/tool-windows/task': () => import('./General').then((m) => ({ default: m.Task })),
-  'general/tool-windows/terminal': () => import('./General').then((m) => ({ default: m.Terminal })),
-  'general/tool-windows/todo': () => import('./General').then((m) => ({ default: m.Todo })),
-  'general/tool-windows/tool-window-bazel': () => import('./General').then((m) => ({ default: m.ToolWindowBazel })),
-  'general/tool-windows/tool-window-bean-validator': () => import('./General').then((m) => ({ default: m.ToolWindowBeanValidator })),
-  'general/tool-windows/tool-window-big-data': () => import('./General').then((m) => ({ default: m.ToolWindowBigData })),
-  'general/tool-windows/tool-window-cadence': () => import('./General').then((m) => ({ default: m.ToolWindowCadence })),
-  'general/tool-windows/tool-window-cell-explorer': () => import('./General').then((m) => ({ default: m.ToolWindowCellExplorer })),
-  'general/tool-windows/tool-window-check-details': () => import('./General').then((m) => ({ default: m.ToolWindowCheckDetails })),
-  'general/tool-windows/tool-window-clock': () => import('./General').then((m) => ({ default: m.ToolWindowClock })),
-  'general/tool-windows/tool-window-dart': () => import('./General').then((m) => ({ default: m.ToolWindowDart })),
-  'general/tool-windows/tool-window-data-view': () => import('./General').then((m) => ({ default: m.ToolWindowDataView })),
-  'general/tool-windows/tool-window-default': () => import('./General').then((m) => ({ default: m.ToolWindowDefault })),
-  'general/tool-windows/tool-window-django': () => import('./General').then((m) => ({ default: m.ToolWindowDjango })),
-  'general/tool-windows/tool-window-duplicates': () => import('./General').then((m) => ({ default: m.ToolWindowDuplicates })),
-  'general/tool-windows/tool-window-edu-course-task': () => import('./General').then((m) => ({ default: m.ToolWindowEduCourseTask })),
-  'general/tool-windows/tool-window-ejb': () => import('./General').then((m) => ({ default: m.ToolWindowEjb })),
-  'general/tool-windows/tool-window-hadoop': () => import('./General').then((m) => ({ default: m.ToolWindowHadoop })),
-  'general/tool-windows/tool-window-hugging-face': () => import('./General').then((m) => ({ default: m.ToolWindowHuggingFace })),
-  'general/tool-windows/tool-window-j-pab-structure': () => import('./General').then((m) => ({ default: m.ToolWindowJPabStructure })),
-  'general/tool-windows/tool-window-json-path': () => import('./General').then((m) => ({ default: m.ToolWindowJsonPath })),
-  'general/tool-windows/tool-window-kotlin-notebooks': () => import('./General').then((m) => ({ default: m.ToolWindowKotlinNotebooks })),
-  'general/tool-windows/tool-window-kubernetes': () => import('./General').then((m) => ({ default: m.ToolWindowKubernetes })),
-  'general/tool-windows/tool-window-meson': () => import('./General').then((m) => ({ default: m.ToolWindowMeson })),
-  'general/tool-windows/tool-window-model-checker': () => import('./General').then((m) => ({ default: m.ToolWindowModelChecker })),
-  'general/tool-windows/tool-window-platform-io': () => import('./General').then((m) => ({ default: m.ToolWindowPlatformIo })),
-  'general/tool-windows/tool-window-pub-serve': () => import('./General').then((m) => ({ default: m.ToolWindowPubServe })),
-  'general/tool-windows/tool-window-r-graph': () => import('./General').then((m) => ({ default: m.ToolWindowRGraph })),
-  'general/tool-windows/tool-window-r-html': () => import('./General').then((m) => ({ default: m.ToolWindowRHtml })),
-  'general/tool-windows/tool-window-r-packages': () => import('./General').then((m) => ({ default: m.ToolWindowRPackages })),
-  'general/tool-windows/tool-window-record-debug': () => import('./General').then((m) => ({ default: m.ToolWindowRecordDebug })),
-  'general/tool-windows/tool-window-run-with-coverage': () => import('./General').then((m) => ({ default: m.ToolWindowRunWithCoverage })),
-  'general/tool-windows/tool-window-team-city': () => import('./General').then((m) => ({ default: m.ToolWindowTeamCity })),
-  'general/tool-windows/tool-window-test-spark': () => import('./General').then((m) => ({ default: m.ToolWindowTestSpark })),
-  'general/tool-windows/tool-window-timer': () => import('./General').then((m) => ({ default: m.ToolWindowTimer })),
-  'general/tool-windows/tool-window-type-trace-view': () => import('./General').then((m) => ({ default: m.ToolWindowTypeTraceView })),
-  'general/tool-windows/tool-window-variable-view': () => import('./General').then((m) => ({ default: m.ToolWindowVariableView })),
-  'general/tool-windows/tool-window-you-track': () => import('./General').then((m) => ({ default: m.ToolWindowYouTrack })),
-  'general/tool-windows/toolwindow-flink': () => import('./General').then((m) => ({ default: m.ToolwindowFlink })),
-  'general/tool-windows/transfer': () => import('./General').then((m) => ({ default: m.Transfer })),
-  'general/tool-windows/transfer-tool-window': () => import('./General').then((m) => ({ default: m.TransferToolWindow })),
-  'general/tool-windows/unknown': () => import('./General').then((m) => ({ default: m.Unknown })),
-  'general/tool-windows/web': () => import('./General').then((m) => ({ default: m.Web })),
-  'general/tool-windows/web-inspector': () => import('./General').then((m) => ({ default: m.WebInspector })),
-  'general/tool-windows/web-server': () => import('./General').then((m) => ({ default: m.WebServer })),
-  'general/tool-windows/west-tool-window': () => import('./General').then((m) => ({ default: m.WestToolWindow })),
-  'general/tool-windows/writerside': () => import('./General').then((m) => ({ default: m.Writerside })),
-  'general/tool-windows/writerside-preview': () => import('./General').then((m) => ({ default: m.WritersidePreview })),
-  'general/usages/filterdups': () => import('./General').then((m) => ({ default: m.Filterdups })),
-  'general/usages/show-import-statements': () => import('./General').then((m) => ({ default: m.ShowImportStatements })),
-  'general/usages/show-read-access': () => import('./General').then((m) => ({ default: m.ShowReadAccess })),
-  'general/usages/show-write-access': () => import('./General').then((m) => ({ default: m.ShowWriteAccess })),
-  'general/windows/close-hover': () => import('./General').then((m) => ({ default: m.CloseHover })),
-  'general/windows/close-inactive': () => import('./General').then((m) => ({ default: m.CloseInactive })),
-  'general/windows/help-inactive': () => import('./General').then((m) => ({ default: m.HelpInactive })),
-  'general/windows/maximize': () => import('./General').then((m) => ({ default: m.Maximize })),
-  'general/windows/maximize-inactive': () => import('./General').then((m) => ({ default: m.MaximizeInactive })),
-  'general/windows/maximize-small': () => import('./General').then((m) => ({ default: m.MaximizeSmall })),
-  'general/windows/minimize': () => import('./General').then((m) => ({ default: m.Minimize })),
-  'general/windows/minimize-inactive': () => import('./General').then((m) => ({ default: m.MinimizeInactive })),
-  'general/windows/minimize-small': () => import('./General').then((m) => ({ default: m.MinimizeSmall })),
-  'general/windows/restore': () => import('./General').then((m) => ({ default: m.Restore })),
-  'general/windows/restore-inactive': () => import('./General').then((m) => ({ default: m.RestoreInactive })),
-  'general/windows/restore-small': () => import('./General').then((m) => ({ default: m.RestoreSmall })),
+  'general/access-modifiers/access-local': () =>
+    import('./General').then((m) => ({ default: m.AccessLocal })),
+  'general/access-modifiers/access-private': () =>
+    import('./General').then((m) => ({ default: m.AccessPrivate })),
+  'general/access-modifiers/access-protected': () =>
+    import('./General').then((m) => ({ default: m.AccessProtected })),
+  'general/access-modifiers/access-public': () =>
+    import('./General').then((m) => ({ default: m.AccessPublic })),
+  'general/actions/add-file': () =>
+    import('./General').then((m) => ({ default: m.AddFile })),
+  'general/actions/build-auto-reload-changes': () =>
+    import('./General').then((m) => ({ default: m.BuildAutoReloadChanges })),
+  'general/actions/checked': () =>
+    import('./General').then((m) => ({ default: m.Checked })),
+  'general/actions/deploy': () =>
+    import('./General').then((m) => ({ default: m.Deploy })),
+  'general/actions/diagram-diff': () =>
+    import('./General').then((m) => ({ default: m.DiagramDiff })),
+  'general/actions/diff-with-clipboard': () =>
+    import('./General').then((m) => ({ default: m.DiffWithClipboard })),
+  'general/actions/gift': () =>
+    import('./General').then((m) => ({ default: m.Gift })),
+  'general/actions/group-by-class': () =>
+    import('./General').then((m) => ({ default: m.GroupByClass })),
+  'general/actions/group-by-file': () =>
+    import('./General').then((m) => ({ default: m.GroupByFile })),
+  'general/actions/group-by-method': () =>
+    import('./General').then((m) => ({ default: m.GroupByMethod })),
+  'general/actions/group-by-module': () =>
+    import('./General').then((m) => ({ default: m.GroupByModule })),
+  'general/actions/group-by-package': () =>
+    import('./General').then((m) => ({ default: m.GroupByPackage })),
+  'general/actions/group-by-test-production': () =>
+    import('./General').then((m) => ({ default: m.GroupByTestProduction })),
+  'general/actions/in-selection': () =>
+    import('./General').then((m) => ({ default: m.InSelection })),
+  'general/actions/lightning': () =>
+    import('./General').then((m) => ({ default: m.Lightning })),
+  'general/actions/move-to-button': () =>
+    import('./General').then((m) => ({ default: m.MoveToButton })),
+  'general/actions/open-api': () =>
+    import('./General').then((m) => ({ default: m.OpenApi })),
+  'general/actions/play-back': () =>
+    import('./General').then((m) => ({ default: m.PlayBack })),
+  'general/actions/play-first': () =>
+    import('./General').then((m) => ({ default: m.PlayFirst })),
+  'general/actions/play-forward': () =>
+    import('./General').then((m) => ({ default: m.PlayForward })),
+  'general/actions/play-last': () =>
+    import('./General').then((m) => ({ default: m.PlayLast })),
+  'general/actions/preview': () =>
+    import('./General').then((m) => ({ default: m.Preview })),
+  'general/actions/profile-cpu': () =>
+    import('./General').then((m) => ({ default: m.ProfileCpu })),
+  'general/actions/profile-memory': () =>
+    import('./General').then((m) => ({ default: m.ProfileMemory })),
+  'general/actions/profile-red': () =>
+    import('./General').then((m) => ({ default: m.ProfileRed })),
+  'general/actions/project-directory': () =>
+    import('./General').then((m) => ({ default: m.ProjectDirectory })),
+  'general/actions/replace': () =>
+    import('./General').then((m) => ({ default: m.Replace })),
+  'general/actions/report': () =>
+    import('./General').then((m) => ({ default: m.Report })),
+  'general/actions/restart-stop': () =>
+    import('./General').then((m) => ({ default: m.RestartStop })),
+  'general/actions/run-all': () =>
+    import('./General').then((m) => ({ default: m.RunAll })),
+  'general/actions/select-all': () =>
+    import('./General').then((m) => ({ default: m.SelectAll })),
+  'general/actions/shortcut-filter': () =>
+    import('./General').then((m) => ({ default: m.ShortcutFilter })),
+  'general/actions/show-to-implement': () =>
+    import('./General').then((m) => ({ default: m.ShowToImplement })),
+  'general/actions/split': () =>
+    import('./General').then((m) => ({ default: m.Split })),
+  'general/actions/start-memory-profile': () =>
+    import('./General').then((m) => ({ default: m.StartMemoryProfile })),
+  'general/actions/suggested-refactoring-bulb': () =>
+    import('./General').then((m) => ({ default: m.SuggestedRefactoringBulb })),
+  'general/actions/swap-panels': () =>
+    import('./General').then((m) => ({ default: m.SwapPanels })),
+  'general/actions/synchronize-scrolling': () =>
+    import('./General').then((m) => ({ default: m.SynchronizeScrolling })),
+  'general/actions/toggle-visibility': () =>
+    import('./General').then((m) => ({ default: m.ToggleVisibility })),
+  'general/actions/unselect-all': () =>
+    import('./General').then((m) => ({ default: m.UnselectAll })),
+  'general/actions/write-review': () =>
+    import('./General').then((m) => ({ default: m.WriteReview })),
+  'general/ai-asisstant/ai-assistant': () =>
+    import('./General').then((m) => ({ default: m.AiAssistant })),
+  'general/ai-asisstant/ai-assistant-colored': () =>
+    import('./General').then((m) => ({ default: m.AiAssistantColored })),
+  'general/ai-asisstant/ai-assistant-disabled': () =>
+    import('./General').then((m) => ({ default: m.AiAssistantDisabled })),
+  'general/ai-asisstant/attached': () =>
+    import('./General').then((m) => ({ default: m.Attached })),
+  'general/ai-asisstant/dislike': () =>
+    import('./General').then((m) => ({ default: m.Dislike })),
+  'general/ai-asisstant/dislike-selected': () =>
+    import('./General').then((m) => ({ default: m.DislikeSelected })),
+  'general/ai-asisstant/feature-answer': () =>
+    import('./General').then((m) => ({ default: m.FeatureAnswer })),
+  'general/ai-asisstant/feature-code-block': () =>
+    import('./General').then((m) => ({ default: m.FeatureCodeBlock })),
+  'general/ai-asisstant/feature-comment': () =>
+    import('./General').then((m) => ({ default: m.FeatureComment })),
+  'general/ai-asisstant/feature-commit': () =>
+    import('./General').then((m) => ({ default: m.FeatureCommit })),
+  'general/ai-asisstant/feature-context': () =>
+    import('./General').then((m) => ({ default: m.FeatureContext })),
+  'general/ai-asisstant/feature-docs': () =>
+    import('./General').then((m) => ({ default: m.FeatureDocs })),
+  'general/ai-asisstant/like': () =>
+    import('./General').then((m) => ({ default: m.Like })),
+  'general/ai-asisstant/like-selected': () =>
+    import('./General').then((m) => ({ default: m.LikeSelected })),
+  'general/ai-asisstant/send': () =>
+    import('./General').then((m) => ({ default: m.Send })),
+  'general/ai-asisstant/send-to-editor': () =>
+    import('./General').then((m) => ({ default: m.SendToEditor })),
+  'general/bookmarks/add-bookmarks-list': () =>
+    import('./General').then((m) => ({ default: m.AddBookmarksList })),
+  'general/bookmarks/bookmark': () =>
+    import('./General').then((m) => ({ default: m.Bookmark })),
+  'general/bookmarks/bookmarks': () =>
+    import('./General').then((m) => ({ default: m.Bookmarks })),
+  'general/bookmarks/bookmarks-list': () =>
+    import('./General').then((m) => ({ default: m.BookmarksList })),
+  'general/bookmarks/mnemonic': () =>
+    import('./General').then((m) => ({ default: m.Mnemonic })),
+  'general/devkit/add-sdk': () =>
+    import('./General').then((m) => ({ default: m.AddSdk })),
+  'general/devkit/description-file': () =>
+    import('./General').then((m) => ({ default: m.DescriptionFile })),
+  'general/devkit/diff': () =>
+    import('./General').then((m) => ({ default: m.Diff })),
+  'general/devkit/plugin': () =>
+    import('./General').then((m) => ({ default: m.Plugin })),
+  'general/devkit/plugin-v2': () =>
+    import('./General').then((m) => ({ default: m.PluginV2 })),
+  'general/devkit/properties': () =>
+    import('./General').then((m) => ({ default: m.Properties })),
+  'general/devkit/sdk-closed': () =>
+    import('./General').then((m) => ({ default: m.SdkClosed })),
+  'general/duplicates/send-to-the-left': () =>
+    import('./General').then((m) => ({ default: m.SendToTheLeft })),
+  'general/duplicates/send-to-the-left-grayed': () =>
+    import('./General').then((m) => ({ default: m.SendToTheLeftGrayed })),
+  'general/duplicates/send-to-the-right': () =>
+    import('./General').then((m) => ({ default: m.SendToTheRight })),
+  'general/duplicates/send-to-the-right-grayed': () =>
+    import('./General').then((m) => ({ default: m.SendToTheRightGrayed })),
+  'general/editor/add-column-left': () =>
+    import('./General').then((m) => ({ default: m.AddColumnLeft })),
+  'general/editor/add-column-right': () =>
+    import('./General').then((m) => ({ default: m.AddColumnRight })),
+  'general/editor/add-row-above': () =>
+    import('./General').then((m) => ({ default: m.AddRowAbove })),
+  'general/editor/add-row-below': () =>
+    import('./General').then((m) => ({ default: m.AddRowBelow })),
+  'general/editor/bold': () =>
+    import('./General').then((m) => ({ default: m.Bold })),
+  'general/editor/bullet-list': () =>
+    import('./General').then((m) => ({ default: m.BulletList })),
+  'general/editor/center-align': () =>
+    import('./General').then((m) => ({ default: m.CenterAlign })),
+  'general/editor/checkmark-list': () =>
+    import('./General').then((m) => ({ default: m.CheckmarkList })),
+  'general/editor/code-span': () =>
+    import('./General').then((m) => ({ default: m.CodeSpan })),
+  'general/editor/header-level-down': () =>
+    import('./General').then((m) => ({ default: m.HeaderLevelDown })),
+  'general/editor/header-level-up': () =>
+    import('./General').then((m) => ({ default: m.HeaderLevelUp })),
+  'general/editor/italic': () =>
+    import('./General').then((m) => ({ default: m.Italic })),
+  'general/editor/left-align': () =>
+    import('./General').then((m) => ({ default: m.LeftAlign })),
+  'general/editor/link': () =>
+    import('./General').then((m) => ({ default: m.Link })),
+  'general/editor/numbered-list': () =>
+    import('./General').then((m) => ({ default: m.NumberedList })),
+  'general/editor/right-align': () =>
+    import('./General').then((m) => ({ default: m.RightAlign })),
+  'general/editor/strike-through': () =>
+    import('./General').then((m) => ({ default: m.StrikeThrough })),
+  'general/editor/table': () =>
+    import('./General').then((m) => ({ default: m.Table })),
+  'general/general/add': () =>
+    import('./General').then((m) => ({ default: m.Add })),
+  'general/general/autoscroll-from-source': () =>
+    import('./General').then((m) => ({ default: m.AutoscrollFromSource })),
+  'general/general/autoscroll-to-source': () =>
+    import('./General').then((m) => ({ default: m.AutoscrollToSource })),
+  'general/general/checkmark': () =>
+    import('./General').then((m) => ({ default: m.Checkmark })),
+  'general/general/chevron-down': () =>
+    import('./General').then((m) => ({ default: m.ChevronDown })),
+  'general/general/chevron-down-hovered': () =>
+    import('./General').then((m) => ({ default: m.ChevronDownHovered })),
+  'general/general/chevron-down-large': () =>
+    import('./General').then((m) => ({ default: m.ChevronDownLarge })),
+  'general/general/chevron-left': () =>
+    import('./General').then((m) => ({ default: m.ChevronLeft })),
+  'general/general/chevron-right': () =>
+    import('./General').then((m) => ({ default: m.ChevronRight })),
+  'general/general/chevron-up': () =>
+    import('./General').then((m) => ({ default: m.ChevronUp })),
+  'general/general/chevron-up-large': () =>
+    import('./General').then((m) => ({ default: m.ChevronUpLarge })),
+  'general/general/class-hierarchy': () =>
+    import('./General').then((m) => ({ default: m.ClassHierarchy })),
+  'general/general/close': () =>
+    import('./General').then((m) => ({ default: m.Close })),
+  'general/general/close-small': () =>
+    import('./General').then((m) => ({ default: m.CloseSmall })),
+  'general/general/close-small-hovered': () =>
+    import('./General').then((m) => ({ default: m.CloseSmallHovered })),
+  'general/general/collapse-all': () =>
+    import('./General').then((m) => ({ default: m.CollapseAll })),
+  'general/general/config-file': () =>
+    import('./General').then((m) => ({ default: m.ConfigFile })),
+  'general/general/copy': () =>
+    import('./General').then((m) => ({ default: m.Copy })),
+  'general/general/cut': () =>
+    import('./General').then((m) => ({ default: m.Cut })),
+  'general/general/delete': () =>
+    import('./General').then((m) => ({ default: m.Delete })),
+  'general/general/down': () =>
+    import('./General').then((m) => ({ default: m.Down })),
+  'general/general/download': () =>
+    import('./General').then((m) => ({ default: m.Download })),
+  'general/general/edit': () =>
+    import('./General').then((m) => ({ default: m.Edit })),
+  'general/general/exit': () =>
+    import('./General').then((m) => ({ default: m.Exit })),
+  'general/general/expand-all': () =>
+    import('./General').then((m) => ({ default: m.ExpandAll })),
+  'general/general/export': () =>
+    import('./General').then((m) => ({ default: m.Export })),
+  'general/general/external-link': () =>
+    import('./General').then((m) => ({ default: m.ExternalLink })),
+  'general/general/filter': () =>
+    import('./General').then((m) => ({ default: m.Filter })),
+  'general/general/graph-layout': () =>
+    import('./General').then((m) => ({ default: m.GraphLayout })),
+  'general/general/groups': () =>
+    import('./General').then((m) => ({ default: m.Groups })),
+  'general/general/help': () =>
+    import('./General').then((m) => ({ default: m.Help })),
+  'general/general/hide': () =>
+    import('./General').then((m) => ({ default: m.Hide })),
+  'general/general/history': () =>
+    import('./General').then((m) => ({ default: m.History })),
+  'general/general/ide-update': () =>
+    import('./General').then((m) => ({ default: m.IdeUpdate })),
+  'general/general/import': () =>
+    import('./General').then((m) => ({ default: m.Import })),
+  'general/general/keyboard': () =>
+    import('./General').then((m) => ({ default: m.Keyboard })),
+  'general/general/layout': () =>
+    import('./General').then((m) => ({ default: m.Layout })),
+  'general/general/left': () =>
+    import('./General').then((m) => ({ default: m.Left })),
+  'general/general/list-files': () =>
+    import('./General').then((m) => ({ default: m.ListFiles })),
+  'general/general/locate': () =>
+    import('./General').then((m) => ({ default: m.Locate })),
+  'general/general/locked': () =>
+    import('./General').then((m) => ({ default: m.Locked })),
+  'general/general/minimap': () =>
+    import('./General').then((m) => ({ default: m.Minimap })),
+  'general/general/more-horizontal': () =>
+    import('./General').then((m) => ({ default: m.MoreHorizontal })),
+  'general/general/more-vertical': () =>
+    import('./General').then((m) => ({ default: m.MoreVertical })),
+  'general/general/move-down': () =>
+    import('./General').then((m) => ({ default: m.MoveDown })),
+  'general/general/move-to-bottom-left': () =>
+    import('./General').then((m) => ({ default: m.MoveToBottomLeft })),
+  'general/general/move-to-bottom-right': () =>
+    import('./General').then((m) => ({ default: m.MoveToBottomRight })),
+  'general/general/move-to-left-bottom': () =>
+    import('./General').then((m) => ({ default: m.MoveToLeftBottom })),
+  'general/general/move-to-left-top': () =>
+    import('./General').then((m) => ({ default: m.MoveToLeftTop })),
+  'general/general/move-to-right-bottom': () =>
+    import('./General').then((m) => ({ default: m.MoveToRightBottom })),
+  'general/general/move-to-right-top': () =>
+    import('./General').then((m) => ({ default: m.MoveToRightTop })),
+  'general/general/move-up': () =>
+    import('./General').then((m) => ({ default: m.MoveUp })),
+  'general/general/open': () =>
+    import('./General').then((m) => ({ default: m.Open })),
+  'general/general/open-in-tool-window': () =>
+    import('./General').then((m) => ({ default: m.OpenInToolWindow })),
+  'general/general/open-new-tab': () =>
+    import('./General').then((m) => ({ default: m.OpenNewTab })),
+  'general/general/pagination': () =>
+    import('./General').then((m) => ({ default: m.Pagination })),
+  'general/general/paste': () =>
+    import('./General').then((m) => ({ default: m.Paste })),
+  'general/general/pin': () =>
+    import('./General').then((m) => ({ default: m.Pin })),
+  'general/general/plugin-update': () =>
+    import('./General').then((m) => ({ default: m.PluginUpdate })),
+  'general/general/preview-horizontally': () =>
+    import('./General').then((m) => ({ default: m.PreviewHorizontally })),
+  'general/general/preview-vertically': () =>
+    import('./General').then((m) => ({ default: m.PreviewVertically })),
+  'general/general/print': () =>
+    import('./General').then((m) => ({ default: m.Print })),
+  'general/general/project-configurable': () =>
+    import('./General').then((m) => ({ default: m.ProjectConfigurable })),
+  'general/general/project-structure': () =>
+    import('./General').then((m) => ({ default: m.ProjectStructure })),
+  'general/general/project-wide-analysis-off': () =>
+    import('./General').then((m) => ({ default: m.ProjectWideAnalysisOff })),
+  'general/general/project-wide-analysis-on': () =>
+    import('./General').then((m) => ({ default: m.ProjectWideAnalysisOn })),
+  'general/general/question-mark': () =>
+    import('./General').then((m) => ({ default: m.QuestionMark })),
+  'general/general/reader-mode': () =>
+    import('./General').then((m) => ({ default: m.ReaderMode })),
+  'general/general/redo': () =>
+    import('./General').then((m) => ({ default: m.Redo })),
+  'general/general/reformat-code': () =>
+    import('./General').then((m) => ({ default: m.ReformatCode })),
+  'general/general/refresh': () =>
+    import('./General').then((m) => ({ default: m.Refresh })),
+  'general/general/remove': () =>
+    import('./General').then((m) => ({ default: m.Remove })),
+  'general/general/right': () =>
+    import('./General').then((m) => ({ default: m.Right })),
+  'general/general/run-anything': () =>
+    import('./General').then((m) => ({ default: m.RunAnything })),
+  'general/general/save': () =>
+    import('./General').then((m) => ({ default: m.Save })),
+  'general/general/scroll-down': () =>
+    import('./General').then((m) => ({ default: m.ScrollDown })),
+  'general/general/scroll-up': () =>
+    import('./General').then((m) => ({ default: m.ScrollUp })),
+  'general/general/search': () =>
+    import('./General').then((m) => ({ default: m.Search })),
+  'general/general/separator-horizontal': () =>
+    import('./General').then((m) => ({ default: m.SeparatorHorizontal })),
+  'general/general/setting-sync': () =>
+    import('./General').then((m) => ({ default: m.SettingSync })),
+  'general/general/settings': () =>
+    import('./General').then((m) => ({ default: m.Settings })),
+  'general/general/show': () =>
+    import('./General').then((m) => ({ default: m.Show })),
+  'general/general/show-as-tree': () =>
+    import('./General').then((m) => ({ default: m.ShowAsTree })),
+  'general/general/soft-wrap': () =>
+    import('./General').then((m) => ({ default: m.SoftWrap })),
+  'general/general/sort-alphabetically': () =>
+    import('./General').then((m) => ({ default: m.SortAlphabetically })),
+  'general/general/sort-by': () =>
+    import('./General').then((m) => ({ default: m.SortBy })),
+  'general/general/sort-by-duration': () =>
+    import('./General').then((m) => ({ default: m.SortByDuration })),
+  'general/general/sort-by-type': () =>
+    import('./General').then((m) => ({ default: m.SortByType })),
+  'general/general/sort-by-usage': () =>
+    import('./General').then((m) => ({ default: m.SortByUsage })),
+  'general/general/sort-by-visibility': () =>
+    import('./General').then((m) => ({ default: m.SortByVisibility })),
+  'general/general/split-horizontally': () =>
+    import('./General').then((m) => ({ default: m.SplitHorizontally })),
+  'general/general/split-vertically': () =>
+    import('./General').then((m) => ({ default: m.SplitVertically })),
+  'general/general/subtypes': () =>
+    import('./General').then((m) => ({ default: m.Subtypes })),
+  'general/general/supertypes': () =>
+    import('./General').then((m) => ({ default: m.Supertypes })),
+  'general/general/undo': () =>
+    import('./General').then((m) => ({ default: m.Undo })),
+  'general/general/unlocked': () =>
+    import('./General').then((m) => ({ default: m.Unlocked })),
+  'general/general/up': () =>
+    import('./General').then((m) => ({ default: m.Up })),
+  'general/general/upload': () =>
+    import('./General').then((m) => ({ default: m.Upload })),
+  'general/general/vcs': () =>
+    import('./General').then((m) => ({ default: m.Vcs })),
+  'general/general/windows-menu': () =>
+    import('./General').then((m) => ({ default: m.WindowsMenu })),
+  'general/inline/browse': () =>
+    import('./General').then((m) => ({ default: m.Browse })),
+  'general/inline/collapse': () =>
+    import('./General').then((m) => ({ default: m.Collapse })),
+  'general/inline/exact-words': () =>
+    import('./General').then((m) => ({ default: m.ExactWords })),
+  'general/inline/expand': () =>
+    import('./General').then((m) => ({ default: m.Expand })),
+  'general/inline/filter-history': () =>
+    import('./General').then((m) => ({ default: m.FilterHistory })),
+  'general/inline/inline-add': () =>
+    import('./General').then((m) => ({ default: m.InlineAdd })),
+  'general/inline/inline-edit': () =>
+    import('./General').then((m) => ({ default: m.InlineEdit })),
+  'general/inline/inline-settings': () =>
+    import('./General').then((m) => ({ default: m.InlineSettings })),
+  'general/inline/match-case': () =>
+    import('./General').then((m) => ({ default: m.MatchCase })),
+  'general/inline/new-line': () =>
+    import('./General').then((m) => ({ default: m.NewLine })),
+  'general/inline/preserve-case': () =>
+    import('./General').then((m) => ({ default: m.PreserveCase })),
+  'general/inline/regex': () =>
+    import('./General').then((m) => ({ default: m.Regex })),
+  'general/inline/search-history': () =>
+    import('./General').then((m) => ({ default: m.SearchHistory })),
+  'general/inline/sort-history': () =>
+    import('./General').then((m) => ({ default: m.SortHistory })),
+  'general/inline/statistics-panel': () =>
+    import('./General').then((m) => ({ default: m.StatisticsPanel })),
+  'general/inline/variables': () =>
+    import('./General').then((m) => ({ default: m.Variables })),
+  'general/modifiers/final-mark': () =>
+    import('./General').then((m) => ({ default: m.FinalMark })),
+  'general/modifiers/junit-test-mark': () =>
+    import('./General').then((m) => ({ default: m.JunitTestMark })),
+  'general/modifiers/process-mark': () =>
+    import('./General').then((m) => ({ default: m.ProcessMark })),
+  'general/modifiers/runnable-mark': () =>
+    import('./General').then((m) => ({ default: m.RunnableMark })),
+  'general/modifiers/shared': () =>
+    import('./General').then((m) => ({ default: m.Shared })),
+  'general/modifiers/static-mark': () =>
+    import('./General').then((m) => ({ default: m.StaticMark })),
+  'general/modifiers/symlink': () =>
+    import('./General').then((m) => ({ default: m.Symlink })),
+  'general/modifiers/tab-alert': () =>
+    import('./General').then((m) => ({ default: m.TabAlert })),
+  'general/new-ui/dark-theme': () =>
+    import('./General').then((m) => ({ default: m.DarkTheme })),
+  'general/new-ui/dark-theme-selected': () =>
+    import('./General').then((m) => ({ default: m.DarkThemeSelected })),
+  'general/new-ui/light-theme': () =>
+    import('./General').then((m) => ({ default: m.LightTheme })),
+  'general/new-ui/light-theme-selected': () =>
+    import('./General').then((m) => ({ default: m.LightThemeSelected })),
+  'general/new-ui/system-theme': () =>
+    import('./General').then((m) => ({ default: m.SystemTheme })),
+  'general/new-ui/system-theme-selected': () =>
+    import('./General').then((m) => ({ default: m.SystemThemeSelected })),
+  'general/object-browser/abbreviate-package-names': () =>
+    import('./General').then((m) => ({ default: m.AbbreviatePackageNames })),
+  'general/object-browser/compact-empty-packages': () =>
+    import('./General').then((m) => ({ default: m.CompactEmptyPackages })),
+  'general/object-browser/flatten-modules': () =>
+    import('./General').then((m) => ({ default: m.FlattenModules })),
+  'general/object-browser/flatten-packages': () =>
+    import('./General').then((m) => ({ default: m.FlattenPackages })),
+  'general/object-browser/show-library-contents': () =>
+    import('./General').then((m) => ({ default: m.ShowLibraryContents })),
+  'general/object-browser/show-members': () =>
+    import('./General').then((m) => ({ default: m.ShowMembers })),
+  'general/progress-bar/pause': () =>
+    import('./General').then((m) => ({ default: m.Pause })),
+  'general/progress-bar/pause-hovered': () =>
+    import('./General').then((m) => ({ default: m.PauseHovered })),
+  'general/progress-bar/resume': () =>
+    import('./General').then((m) => ({ default: m.Resume })),
+  'general/progress-bar/resume-hovered': () =>
+    import('./General').then((m) => ({ default: m.ResumeHovered })),
+  'general/progress-bar/stop': () =>
+    import('./General').then((m) => ({ default: m.Stop })),
+  'general/progress-bar/stop-hovered': () =>
+    import('./General').then((m) => ({ default: m.StopHovered })),
+  'general/raiting/feedback-rating': () =>
+    import('./General').then((m) => ({ default: m.FeedbackRating })),
+  'general/raiting/feedback-rating-focused': () =>
+    import('./General').then((m) => ({ default: m.FeedbackRatingFocused })),
+  'general/raiting/feedback-rating-focused-on': () =>
+    import('./General').then((m) => ({ default: m.FeedbackRatingFocusedOn })),
+  'general/raiting/feedback-rating-on': () =>
+    import('./General').then((m) => ({ default: m.FeedbackRatingOn })),
+  'general/setting-sync/conflict': () =>
+    import('./General').then((m) => ({ default: m.Conflict })),
+  'general/setting-sync/local-changes': () =>
+    import('./General').then((m) => ({ default: m.LocalChanges })),
+  'general/setting-sync/remote-changes': () =>
+    import('./General').then((m) => ({ default: m.RemoteChanges })),
+  'general/setting-sync/status-disabled': () =>
+    import('./General').then((m) => ({ default: m.StatusDisabled })),
+  'general/setting-sync/status-enabled': () =>
+    import('./General').then((m) => ({ default: m.StatusEnabled })),
+  'general/spinner/loader': () =>
+    import('./General').then((m) => ({ default: m.Loader })),
+  'general/status/error': () =>
+    import('./General').then((m) => ({ default: m.Error })),
+  'general/status/error-dialog': () =>
+    import('./General').then((m) => ({ default: m.ErrorDialog })),
+  'general/status/error-outline': () =>
+    import('./General').then((m) => ({ default: m.ErrorOutline })),
+  'general/status/info': () =>
+    import('./General').then((m) => ({ default: m.Info })),
+  'general/status/info-outline': () =>
+    import('./General').then((m) => ({ default: m.InfoOutline })),
+  'general/status/information-dialog': () =>
+    import('./General').then((m) => ({ default: m.InformationDialog })),
+  'general/status/question-dialog': () =>
+    import('./General').then((m) => ({ default: m.QuestionDialog })),
+  'general/status/success': () =>
+    import('./General').then((m) => ({ default: m.Success })),
+  'general/status/success-dialog': () =>
+    import('./General').then((m) => ({ default: m.SuccessDialog })),
+  'general/status/success-login': () =>
+    import('./General').then((m) => ({ default: m.SuccessLogin })),
+  'general/status/warning': () =>
+    import('./General').then((m) => ({ default: m.Warning })),
+  'general/status/warning-dialog': () =>
+    import('./General').then((m) => ({ default: m.WarningDialog })),
+  'general/status/warning-outline': () =>
+    import('./General').then((m) => ({ default: m.WarningOutline })),
+  'general/tool-windows/ai-assistant-tool-window': () =>
+    import('./General').then((m) => ({ default: m.AiAssistantToolWindow })),
+  'general/tool-windows/amazon-emr': () =>
+    import('./General').then((m) => ({ default: m.AmazonEmr })),
+  'general/tool-windows/ant': () =>
+    import('./General').then((m) => ({ default: m.Ant })),
+  'general/tool-windows/app-engine-tool-window': () =>
+    import('./General').then((m) => ({ default: m.AppEngineToolWindow })),
+  'general/tool-windows/aws-glue-tool-window': () =>
+    import('./General').then((m) => ({ default: m.AwsGlueToolWindow })),
+  'general/tool-windows/build': () =>
+    import('./General').then((m) => ({ default: m.Build })),
+  'general/tool-windows/build-server-protocol': () =>
+    import('./General').then((m) => ({ default: m.BuildServerProtocol })),
+  'general/tool-windows/c-make-tool-window': () =>
+    import('./General').then((m) => ({ default: m.CMakeToolWindow })),
+  'general/tool-windows/cdi-tool-window': () =>
+    import('./General').then((m) => ({ default: m.CdiToolWindow })),
+  'general/tool-windows/changes': () =>
+    import('./General').then((m) => ({ default: m.Changes })),
+  'general/tool-windows/commit': () =>
+    import('./General').then((m) => ({ default: m.Commit })),
+  'general/tool-windows/concurrency-diagram-toolwindow': () =>
+    import('./General').then((m) => ({
+      default: m.ConcurrencyDiagramToolwindow,
+    })),
+  'general/tool-windows/coverage': () =>
+    import('./General').then((m) => ({ default: m.Coverage })),
+  'general/tool-windows/cwm-access': () =>
+    import('./General').then((m) => ({ default: m.CwmAccess })),
+  'general/tool-windows/cwm-users': () =>
+    import('./General').then((m) => ({ default: m.CwmUsers })),
+  'general/tool-windows/cypress': () =>
+    import('./General').then((m) => ({ default: m.Cypress })),
+  'general/tool-windows/database-changes': () =>
+    import('./General').then((m) => ({ default: m.DatabaseChanges })),
+  'general/tool-windows/databricks-tool-window': () =>
+    import('./General').then((m) => ({ default: m.DatabricksToolWindow })),
+  'general/tool-windows/dataproc-tool-window': () =>
+    import('./General').then((m) => ({ default: m.DataprocToolWindow })),
+  'general/tool-windows/dbms': () =>
+    import('./General').then((m) => ({ default: m.Dbms })),
+  'general/tool-windows/debug': () =>
+    import('./General').then((m) => ({ default: m.Debug })),
+  'general/tool-windows/dependencies': () =>
+    import('./General').then((m) => ({ default: m.Dependencies })),
+  'general/tool-windows/documentation': () =>
+    import('./General').then((m) => ({ default: m.Documentation })),
+  'general/tool-windows/donate': () =>
+    import('./General').then((m) => ({ default: m.Donate })),
+  'general/tool-windows/endpoints': () =>
+    import('./General').then((m) => ({ default: m.Endpoints })),
+  'general/tool-windows/exception-analyzer': () =>
+    import('./General').then((m) => ({ default: m.ExceptionAnalyzer })),
+  'general/tool-windows/feedback': () =>
+    import('./General').then((m) => ({ default: m.Feedback })),
+  'general/tool-windows/find': () =>
+    import('./General').then((m) => ({ default: m.Find })),
+  'general/tool-windows/find-external-usages': () =>
+    import('./General').then((m) => ({ default: m.FindExternalUsages })),
+  'general/tool-windows/git-lab-tool-window': () =>
+    import('./General').then((m) => ({ default: m.GitLabToolWindow })),
+  'general/tool-windows/gradle': () =>
+    import('./General').then((m) => ({ default: m.Gradle })),
+  'general/tool-windows/graph-ql-tool-window': () =>
+    import('./General').then((m) => ({ default: m.GraphQlToolWindow })),
+  'general/tool-windows/hierarchy': () =>
+    import('./General').then((m) => ({ default: m.Hierarchy })),
+  'general/tool-windows/hive': () =>
+    import('./General').then((m) => ({ default: m.Hive })),
+  'general/tool-windows/java-ee-tool-window': () =>
+    import('./General').then((m) => ({ default: m.JavaEeToolWindow })),
+  'general/tool-windows/jpa-console-tool-window': () =>
+    import('./General').then((m) => ({ default: m.JpaConsoleToolWindow })),
+  'general/tool-windows/jpa-tool-window': () =>
+    import('./General').then((m) => ({ default: m.JpaToolWindow })),
+  'general/tool-windows/jupyter-tool-window': () =>
+    import('./General').then((m) => ({ default: m.JupyterToolWindow })),
+  'general/tool-windows/kafka': () =>
+    import('./General').then((m) => ({ default: m.Kafka })),
+  'general/tool-windows/kotlin-tool-window': () =>
+    import('./General').then((m) => ({ default: m.KotlinToolWindow })),
+  'general/tool-windows/learn': () =>
+    import('./General').then((m) => ({ default: m.Learn })),
+  'general/tool-windows/makefile-tool-window': () =>
+    import('./General').then((m) => ({ default: m.MakefileToolWindow })),
+  'general/tool-windows/maven': () =>
+    import('./General').then((m) => ({ default: m.Maven })),
+  'general/tool-windows/messages': () =>
+    import('./General').then((m) => ({ default: m.Messages })),
+  'general/tool-windows/new-ui': () =>
+    import('./General').then((m) => ({ default: m.NewUi })),
+  'general/tool-windows/notifications': () =>
+    import('./General').then((m) => ({ default: m.Notifications })),
+  'general/tool-windows/npm': () =>
+    import('./General').then((m) => ({ default: m.Npm })),
+  'general/tool-windows/package-manager': () =>
+    import('./General').then((m) => ({ default: m.PackageManager })),
+  'general/tool-windows/persistence': () =>
+    import('./General').then((m) => ({ default: m.Persistence })),
+  'general/tool-windows/problems': () =>
+    import('./General').then((m) => ({ default: m.Problems })),
+  'general/tool-windows/profiler': () =>
+    import('./General').then((m) => ({ default: m.Profiler })),
+  'general/tool-windows/profiler-android': () =>
+    import('./General').then((m) => ({ default: m.ProfilerAndroid })),
+  'general/tool-windows/project': () =>
+    import('./General').then((m) => ({ default: m.Project })),
+  'general/tool-windows/pull-requests': () =>
+    import('./General').then((m) => ({ default: m.PullRequests })),
+  'general/tool-windows/python-console-tool-window': () =>
+    import('./General').then((m) => ({ default: m.PythonConsoleToolWindow })),
+  'general/tool-windows/r-engine-tool-window': () =>
+    import('./General').then((m) => ({ default: m.REngineToolWindow })),
+  'general/tool-windows/r-tool-window': () =>
+    import('./General').then((m) => ({ default: m.RToolWindow })),
+  'general/tool-windows/rebuild': () =>
+    import('./General').then((m) => ({ default: m.Rebuild })),
+  'general/tool-windows/repositories': () =>
+    import('./General').then((m) => ({ default: m.Repositories })),
+  'general/tool-windows/run': () =>
+    import('./General').then((m) => ({ default: m.Run })),
+  'general/tool-windows/rust': () =>
+    import('./General').then((m) => ({ default: m.Rust })),
+  'general/tool-windows/sbt-icon': () =>
+    import('./General').then((m) => ({ default: m.SbtIcon })),
+  'general/tool-windows/sbt-shell': () =>
+    import('./General').then((m) => ({ default: m.SbtShell })),
+  'general/tool-windows/scala-profiler': () =>
+    import('./General').then((m) => ({ default: m.ScalaProfiler })),
+  'general/tool-windows/sci-view': () =>
+    import('./General').then((m) => ({ default: m.SciView })),
+  'general/tool-windows/services': () =>
+    import('./General').then((m) => ({ default: m.Services })),
+  'general/tool-windows/space-tool-window': () =>
+    import('./General').then((m) => ({ default: m.SpaceToolWindow })),
+  'general/tool-windows/spark': () =>
+    import('./General').then((m) => ({ default: m.Spark })),
+  'general/tool-windows/spring': () =>
+    import('./General').then((m) => ({ default: m.Spring })),
+  'general/tool-windows/statistics-event-log': () =>
+    import('./General').then((m) => ({ default: m.StatisticsEventLog })),
+  'general/tool-windows/structure': () =>
+    import('./General').then((m) => ({ default: m.Structure })),
+  'general/tool-windows/task': () =>
+    import('./General').then((m) => ({ default: m.Task })),
+  'general/tool-windows/terminal': () =>
+    import('./General').then((m) => ({ default: m.Terminal })),
+  'general/tool-windows/todo': () =>
+    import('./General').then((m) => ({ default: m.Todo })),
+  'general/tool-windows/tool-window-bazel': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowBazel })),
+  'general/tool-windows/tool-window-bean-validator': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowBeanValidator })),
+  'general/tool-windows/tool-window-big-data': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowBigData })),
+  'general/tool-windows/tool-window-cadence': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowCadence })),
+  'general/tool-windows/tool-window-cell-explorer': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowCellExplorer })),
+  'general/tool-windows/tool-window-check-details': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowCheckDetails })),
+  'general/tool-windows/tool-window-clock': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowClock })),
+  'general/tool-windows/tool-window-dart': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowDart })),
+  'general/tool-windows/tool-window-data-view': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowDataView })),
+  'general/tool-windows/tool-window-default': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowDefault })),
+  'general/tool-windows/tool-window-django': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowDjango })),
+  'general/tool-windows/tool-window-duplicates': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowDuplicates })),
+  'general/tool-windows/tool-window-edu-course-task': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowEduCourseTask })),
+  'general/tool-windows/tool-window-ejb': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowEjb })),
+  'general/tool-windows/tool-window-hadoop': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowHadoop })),
+  'general/tool-windows/tool-window-hugging-face': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowHuggingFace })),
+  'general/tool-windows/tool-window-j-pab-structure': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowJPabStructure })),
+  'general/tool-windows/tool-window-json-path': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowJsonPath })),
+  'general/tool-windows/tool-window-kotlin-notebooks': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowKotlinNotebooks })),
+  'general/tool-windows/tool-window-kubernetes': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowKubernetes })),
+  'general/tool-windows/tool-window-meson': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowMeson })),
+  'general/tool-windows/tool-window-model-checker': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowModelChecker })),
+  'general/tool-windows/tool-window-platform-io': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowPlatformIo })),
+  'general/tool-windows/tool-window-pub-serve': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowPubServe })),
+  'general/tool-windows/tool-window-r-graph': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowRGraph })),
+  'general/tool-windows/tool-window-r-html': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowRHtml })),
+  'general/tool-windows/tool-window-r-packages': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowRPackages })),
+  'general/tool-windows/tool-window-record-debug': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowRecordDebug })),
+  'general/tool-windows/tool-window-run-with-coverage': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowRunWithCoverage })),
+  'general/tool-windows/tool-window-team-city': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowTeamCity })),
+  'general/tool-windows/tool-window-test-spark': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowTestSpark })),
+  'general/tool-windows/tool-window-timer': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowTimer })),
+  'general/tool-windows/tool-window-type-trace-view': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowTypeTraceView })),
+  'general/tool-windows/tool-window-variable-view': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowVariableView })),
+  'general/tool-windows/tool-window-you-track': () =>
+    import('./General').then((m) => ({ default: m.ToolWindowYouTrack })),
+  'general/tool-windows/toolwindow-flink': () =>
+    import('./General').then((m) => ({ default: m.ToolwindowFlink })),
+  'general/tool-windows/transfer': () =>
+    import('./General').then((m) => ({ default: m.Transfer })),
+  'general/tool-windows/transfer-tool-window': () =>
+    import('./General').then((m) => ({ default: m.TransferToolWindow })),
+  'general/tool-windows/unknown': () =>
+    import('./General').then((m) => ({ default: m.Unknown })),
+  'general/tool-windows/web': () =>
+    import('./General').then((m) => ({ default: m.Web })),
+  'general/tool-windows/web-inspector': () =>
+    import('./General').then((m) => ({ default: m.WebInspector })),
+  'general/tool-windows/web-server': () =>
+    import('./General').then((m) => ({ default: m.WebServer })),
+  'general/tool-windows/west-tool-window': () =>
+    import('./General').then((m) => ({ default: m.WestToolWindow })),
+  'general/tool-windows/writerside': () =>
+    import('./General').then((m) => ({ default: m.Writerside })),
+  'general/tool-windows/writerside-preview': () =>
+    import('./General').then((m) => ({ default: m.WritersidePreview })),
+  'general/usages/filterdups': () =>
+    import('./General').then((m) => ({ default: m.Filterdups })),
+  'general/usages/show-import-statements': () =>
+    import('./General').then((m) => ({ default: m.ShowImportStatements })),
+  'general/usages/show-read-access': () =>
+    import('./General').then((m) => ({ default: m.ShowReadAccess })),
+  'general/usages/show-write-access': () =>
+    import('./General').then((m) => ({ default: m.ShowWriteAccess })),
+  'general/windows/close-hover': () =>
+    import('./General').then((m) => ({ default: m.CloseHover })),
+  'general/windows/close-inactive': () =>
+    import('./General').then((m) => ({ default: m.CloseInactive })),
+  'general/windows/help-inactive': () =>
+    import('./General').then((m) => ({ default: m.HelpInactive })),
+  'general/windows/maximize': () =>
+    import('./General').then((m) => ({ default: m.Maximize })),
+  'general/windows/maximize-inactive': () =>
+    import('./General').then((m) => ({ default: m.MaximizeInactive })),
+  'general/windows/maximize-small': () =>
+    import('./General').then((m) => ({ default: m.MaximizeSmall })),
+  'general/windows/minimize': () =>
+    import('./General').then((m) => ({ default: m.Minimize })),
+  'general/windows/minimize-inactive': () =>
+    import('./General').then((m) => ({ default: m.MinimizeInactive })),
+  'general/windows/minimize-small': () =>
+    import('./General').then((m) => ({ default: m.MinimizeSmall })),
+  'general/windows/restore': () =>
+    import('./General').then((m) => ({ default: m.Restore })),
+  'general/windows/restore-inactive': () =>
+    import('./General').then((m) => ({ default: m.RestoreInactive })),
+  'general/windows/restore-small': () =>
+    import('./General').then((m) => ({ default: m.RestoreSmall })),
 
   // Nodes (77)
-  'nodes/abstract-exception': () => import('./Nodes').then((m) => ({ default: m.AbstractException })),
+  'nodes/abstract-exception': () =>
+    import('./Nodes').then((m) => ({ default: m.AbstractException })),
   'nodes/add-any': () => import('./Nodes').then((m) => ({ default: m.AddAny })),
   'nodes/alias': () => import('./Nodes').then((m) => ({ default: m.Alias })),
-  'nodes/annotation': () => import('./Nodes').then((m) => ({ default: m.Annotation })),
-  'nodes/annotation-folder': () => import('./Nodes').then((m) => ({ default: m.AnnotationFolder })),
+  'nodes/annotation': () =>
+    import('./Nodes').then((m) => ({ default: m.Annotation })),
+  'nodes/annotation-folder': () =>
+    import('./Nodes').then((m) => ({ default: m.AnnotationFolder })),
   'nodes/class': () => import('./Nodes').then((m) => ({ default: m.Class })),
-  'nodes/class-abstract': () => import('./Nodes').then((m) => ({ default: m.ClassAbstract })),
-  'nodes/class-anonymous': () => import('./Nodes').then((m) => ({ default: m.ClassAnonymous })),
-  'nodes/class-initializer': () => import('./Nodes').then((m) => ({ default: m.ClassInitializer })),
+  'nodes/class-abstract': () =>
+    import('./Nodes').then((m) => ({ default: m.ClassAbstract })),
+  'nodes/class-anonymous': () =>
+    import('./Nodes').then((m) => ({ default: m.ClassAnonymous })),
+  'nodes/class-initializer': () =>
+    import('./Nodes').then((m) => ({ default: m.ClassInitializer })),
   'nodes/config': () => import('./Nodes').then((m) => ({ default: m.Config })),
-  'nodes/constant': () => import('./Nodes').then((m) => ({ default: m.Constant })),
-  'nodes/controller': () => import('./Nodes').then((m) => ({ default: m.Controller })),
-  'nodes/copy-of-folder': () => import('./Nodes').then((m) => ({ default: m.CopyOfFolder })),
-  'nodes/data-column': () => import('./Nodes').then((m) => ({ default: m.DataColumn })),
-  'nodes/data-tables': () => import('./Nodes').then((m) => ({ default: m.DataTables })),
-  'nodes/desktop': () => import('./Nodes').then((m) => ({ default: m.Desktop })),
-  'nodes/edit-folder': () => import('./Nodes').then((m) => ({ default: m.EditFolder })),
+  'nodes/constant': () =>
+    import('./Nodes').then((m) => ({ default: m.Constant })),
+  'nodes/controller': () =>
+    import('./Nodes').then((m) => ({ default: m.Controller })),
+  'nodes/copy-of-folder': () =>
+    import('./Nodes').then((m) => ({ default: m.CopyOfFolder })),
+  'nodes/data-column': () =>
+    import('./Nodes').then((m) => ({ default: m.DataColumn })),
+  'nodes/data-tables': () =>
+    import('./Nodes').then((m) => ({ default: m.DataTables })),
+  'nodes/desktop': () =>
+    import('./Nodes').then((m) => ({ default: m.Desktop })),
+  'nodes/edit-folder': () =>
+    import('./Nodes').then((m) => ({ default: m.EditFolder })),
   'nodes/enum': () => import('./Nodes').then((m) => ({ default: m.Enum })),
-  'nodes/error-introduction': () => import('./Nodes').then((m) => ({ default: m.ErrorIntroduction })),
-  'nodes/exception': () => import('./Nodes').then((m) => ({ default: m.Exception })),
-  'nodes/exclude-root': () => import('./Nodes').then((m) => ({ default: m.ExcludeRoot })),
-  'nodes/excluded-generated': () => import('./Nodes').then((m) => ({ default: m.ExcludedGenerated })),
-  'nodes/favorites': () => import('./Nodes').then((m) => ({ default: m.Favorites })),
+  'nodes/error-introduction': () =>
+    import('./Nodes').then((m) => ({ default: m.ErrorIntroduction })),
+  'nodes/exception': () =>
+    import('./Nodes').then((m) => ({ default: m.Exception })),
+  'nodes/exclude-root': () =>
+    import('./Nodes').then((m) => ({ default: m.ExcludeRoot })),
+  'nodes/excluded-generated': () =>
+    import('./Nodes').then((m) => ({ default: m.ExcludedGenerated })),
+  'nodes/favorites': () =>
+    import('./Nodes').then((m) => ({ default: m.Favorites })),
   'nodes/field': () => import('./Nodes').then((m) => ({ default: m.Field })),
   'nodes/folder': () => import('./Nodes').then((m) => ({ default: m.Folder })),
-  'nodes/function': () => import('./Nodes').then((m) => ({ default: m.Function })),
-  'nodes/generated': () => import('./Nodes').then((m) => ({ default: m.Generated })),
-  'nodes/generated-source': () => import('./Nodes').then((m) => ({ default: m.GeneratedSource })),
-  'nodes/generated-test-root': () => import('./Nodes').then((m) => ({ default: m.GeneratedTestRoot })),
-  'nodes/gvariable': () => import('./Nodes').then((m) => ({ default: m.Gvariable })),
-  'nodes/home-folder': () => import('./Nodes').then((m) => ({ default: m.HomeFolder })),
-  'nodes/idea-project': () => import('./Nodes').then((m) => ({ default: m.IdeaProject })),
-  'nodes/include': () => import('./Nodes').then((m) => ({ default: m.Include })),
-  'nodes/interface': () => import('./Nodes').then((m) => ({ default: m.Interface })),
+  'nodes/function': () =>
+    import('./Nodes').then((m) => ({ default: m.Function })),
+  'nodes/generated': () =>
+    import('./Nodes').then((m) => ({ default: m.Generated })),
+  'nodes/generated-source': () =>
+    import('./Nodes').then((m) => ({ default: m.GeneratedSource })),
+  'nodes/generated-test-root': () =>
+    import('./Nodes').then((m) => ({ default: m.GeneratedTestRoot })),
+  'nodes/gvariable': () =>
+    import('./Nodes').then((m) => ({ default: m.Gvariable })),
+  'nodes/home-folder': () =>
+    import('./Nodes').then((m) => ({ default: m.HomeFolder })),
+  'nodes/idea-project': () =>
+    import('./Nodes').then((m) => ({ default: m.IdeaProject })),
+  'nodes/include': () =>
+    import('./Nodes').then((m) => ({ default: m.Include })),
+  'nodes/interface': () =>
+    import('./Nodes').then((m) => ({ default: m.Interface })),
   'nodes/jdk': () => import('./Nodes').then((m) => ({ default: m.Jdk })),
   'nodes/lambda': () => import('./Nodes').then((m) => ({ default: m.Lambda })),
-  'nodes/library': () => import('./Nodes').then((m) => ({ default: m.Library })),
-  'nodes/library-folder': () => import('./Nodes').then((m) => ({ default: m.LibraryFolder })),
-  'nodes/local-scope': () => import('./Nodes').then((m) => ({ default: m.LocalScope })),
+  'nodes/library': () =>
+    import('./Nodes').then((m) => ({ default: m.Library })),
+  'nodes/library-folder': () =>
+    import('./Nodes').then((m) => ({ default: m.LibraryFolder })),
+  'nodes/local-scope': () =>
+    import('./Nodes').then((m) => ({ default: m.LocalScope })),
   'nodes/method': () => import('./Nodes').then((m) => ({ default: m.Method })),
-  'nodes/method-abstract': () => import('./Nodes').then((m) => ({ default: m.MethodAbstract })),
-  'nodes/method-reference': () => import('./Nodes').then((m) => ({ default: m.MethodReference })),
-  'nodes/model-class': () => import('./Nodes').then((m) => ({ default: m.ModelClass })),
+  'nodes/method-abstract': () =>
+    import('./Nodes').then((m) => ({ default: m.MethodAbstract })),
+  'nodes/method-reference': () =>
+    import('./Nodes').then((m) => ({ default: m.MethodReference })),
+  'nodes/model-class': () =>
+    import('./Nodes').then((m) => ({ default: m.ModelClass })),
   'nodes/module': () => import('./Nodes').then((m) => ({ default: m.Module })),
-  'nodes/module-group': () => import('./Nodes').then((m) => ({ default: m.ModuleGroup })),
-  'nodes/module-java': () => import('./Nodes').then((m) => ({ default: m.ModuleJava })),
-  'nodes/module8x8': () => import('./Nodes').then((m) => ({ default: m.Module8x8 })),
-  'nodes/new-folder': () => import('./Nodes').then((m) => ({ default: m.NewFolder })),
-  'nodes/package': () => import('./Nodes').then((m) => ({ default: m.Package })),
-  'nodes/parameter': () => import('./Nodes').then((m) => ({ default: m.Parameter })),
+  'nodes/module-group': () =>
+    import('./Nodes').then((m) => ({ default: m.ModuleGroup })),
+  'nodes/module-java': () =>
+    import('./Nodes').then((m) => ({ default: m.ModuleJava })),
+  'nodes/module8x8': () =>
+    import('./Nodes').then((m) => ({ default: m.Module8x8 })),
+  'nodes/new-folder': () =>
+    import('./Nodes').then((m) => ({ default: m.NewFolder })),
+  'nodes/package': () =>
+    import('./Nodes').then((m) => ({ default: m.Package })),
+  'nodes/parameter': () =>
+    import('./Nodes').then((m) => ({ default: m.Parameter })),
   'nodes/plugin': () => import('./Nodes').then((m) => ({ default: m.Plugin })),
   'nodes/pp-web': () => import('./Nodes').then((m) => ({ default: m.PpWeb })),
-  'nodes/property': () => import('./Nodes').then((m) => ({ default: m.Property })),
+  'nodes/property': () =>
+    import('./Nodes').then((m) => ({ default: m.Property })),
   'nodes/record': () => import('./Nodes').then((m) => ({ default: m.Record })),
-  'nodes/resource-bundle': () => import('./Nodes').then((m) => ({ default: m.ResourceBundle })),
-  'nodes/resources-root': () => import('./Nodes').then((m) => ({ default: m.ResourcesRoot })),
+  'nodes/resource-bundle': () =>
+    import('./Nodes').then((m) => ({ default: m.ResourceBundle })),
+  'nodes/resources-root': () =>
+    import('./Nodes').then((m) => ({ default: m.ResourcesRoot })),
   'nodes/server': () => import('./Nodes').then((m) => ({ default: m.Server })),
-  'nodes/servlet': () => import('./Nodes').then((m) => ({ default: m.Servlet })),
-  'nodes/shared-scope': () => import('./Nodes').then((m) => ({ default: m.SharedScope })),
-  'nodes/source-root': () => import('./Nodes').then((m) => ({ default: m.SourceRoot })),
+  'nodes/servlet': () =>
+    import('./Nodes').then((m) => ({ default: m.Servlet })),
+  'nodes/shared-scope': () =>
+    import('./Nodes').then((m) => ({ default: m.SharedScope })),
+  'nodes/source-root': () =>
+    import('./Nodes').then((m) => ({ default: m.SourceRoot })),
   'nodes/star': () => import('./Nodes').then((m) => ({ default: m.Star })),
-  'nodes/star-empty': () => import('./Nodes').then((m) => ({ default: m.StarEmpty })),
+  'nodes/star-empty': () =>
+    import('./Nodes').then((m) => ({ default: m.StarEmpty })),
   'nodes/static': () => import('./Nodes').then((m) => ({ default: m.Static })),
-  'nodes/template': () => import('./Nodes').then((m) => ({ default: m.Template })),
+  'nodes/template': () =>
+    import('./Nodes').then((m) => ({ default: m.Template })),
   'nodes/test': () => import('./Nodes').then((m) => ({ default: m.Test })),
-  'nodes/test-group': () => import('./Nodes').then((m) => ({ default: m.TestGroup })),
-  'nodes/test-ignored': () => import('./Nodes').then((m) => ({ default: m.TestIgnored })),
-  'nodes/test-resources-root': () => import('./Nodes').then((m) => ({ default: m.TestResourcesRoot })),
-  'nodes/test-root': () => import('./Nodes').then((m) => ({ default: m.TestRoot })),
-  'nodes/test-source-folder': () => import('./Nodes').then((m) => ({ default: m.TestSourceFolder })),
-  'nodes/text-area': () => import('./Nodes').then((m) => ({ default: m.TextArea })),
+  'nodes/test-group': () =>
+    import('./Nodes').then((m) => ({ default: m.TestGroup })),
+  'nodes/test-ignored': () =>
+    import('./Nodes').then((m) => ({ default: m.TestIgnored })),
+  'nodes/test-resources-root': () =>
+    import('./Nodes').then((m) => ({ default: m.TestResourcesRoot })),
+  'nodes/test-root': () =>
+    import('./Nodes').then((m) => ({ default: m.TestRoot })),
+  'nodes/test-source-folder': () =>
+    import('./Nodes').then((m) => ({ default: m.TestSourceFolder })),
+  'nodes/text-area': () =>
+    import('./Nodes').then((m) => ({ default: m.TextArea })),
   'nodes/type': () => import('./Nodes').then((m) => ({ default: m.Type })),
-  'nodes/unloaded-module': () => import('./Nodes').then((m) => ({ default: m.UnloadedModule })),
-  'nodes/up-folder': () => import('./Nodes').then((m) => ({ default: m.UpFolder })),
-  'nodes/variable': () => import('./Nodes').then((m) => ({ default: m.Variable })),
-  'nodes/warning-introduction': () => import('./Nodes').then((m) => ({ default: m.WarningIntroduction })),
-  'nodes/web-resources': () => import('./Nodes').then((m) => ({ default: m.WebResources })),
+  'nodes/unloaded-module': () =>
+    import('./Nodes').then((m) => ({ default: m.UnloadedModule })),
+  'nodes/up-folder': () =>
+    import('./Nodes').then((m) => ({ default: m.UpFolder })),
+  'nodes/variable': () =>
+    import('./Nodes').then((m) => ({ default: m.Variable })),
+  'nodes/warning-introduction': () =>
+    import('./Nodes').then((m) => ({ default: m.WarningIntroduction })),
+  'nodes/web-resources': () =>
+    import('./Nodes').then((m) => ({ default: m.WebResources })),
 
   // Run (46)
-  'run/attach-to-process': () => import('./Run').then((m) => ({ default: m.AttachToProcess })),
+  'run/attach-to-process': () =>
+    import('./Run').then((m) => ({ default: m.AttachToProcess })),
   'run/debug': () => import('./Run').then((m) => ({ default: m.Debug })),
-  'run/dump-threads': () => import('./Run').then((m) => ({ default: m.DumpThreads })),
-  'run/evaluate-expression': () => import('./Run').then((m) => ({ default: m.EvaluateExpression })),
-  'run/failed-in-progress': () => import('./Run').then((m) => ({ default: m.FailedInProgress })),
-  'run/force-run-to-cursor': () => import('./Run').then((m) => ({ default: m.ForceRunToCursor })),
-  'run/force-step-into': () => import('./Run').then((m) => ({ default: m.ForceStepInto })),
-  'run/force-step-over': () => import('./Run').then((m) => ({ default: m.ForceStepOver })),
-  'run/kill-process': () => import('./Run').then((m) => ({ default: m.KillProcess })),
-  'run/mute-breakpoints': () => import('./Run').then((m) => ({ default: m.MuteBreakpoints })),
+  'run/dump-threads': () =>
+    import('./Run').then((m) => ({ default: m.DumpThreads })),
+  'run/evaluate-expression': () =>
+    import('./Run').then((m) => ({ default: m.EvaluateExpression })),
+  'run/failed-in-progress': () =>
+    import('./Run').then((m) => ({ default: m.FailedInProgress })),
+  'run/force-run-to-cursor': () =>
+    import('./Run').then((m) => ({ default: m.ForceRunToCursor })),
+  'run/force-step-into': () =>
+    import('./Run').then((m) => ({ default: m.ForceStepInto })),
+  'run/force-step-over': () =>
+    import('./Run').then((m) => ({ default: m.ForceStepOver })),
+  'run/kill-process': () =>
+    import('./Run').then((m) => ({ default: m.KillProcess })),
+  'run/mute-breakpoints': () =>
+    import('./Run').then((m) => ({ default: m.MuteBreakpoints })),
   'run/pause': () => import('./Run').then((m) => ({ default: m.Pause })),
   'run/profile': () => import('./Run').then((m) => ({ default: m.Profile })),
   'run/rerun': () => import('./Run').then((m) => ({ default: m.Rerun })),
-  'run/rerun-automatically': () => import('./Run').then((m) => ({ default: m.RerunAutomatically })),
+  'run/rerun-automatically': () =>
+    import('./Run').then((m) => ({ default: m.RerunAutomatically })),
   'run/restart': () => import('./Run').then((m) => ({ default: m.Restart })),
-  'run/restart-debug': () => import('./Run').then((m) => ({ default: m.RestartDebug })),
-  'run/restart-failed-tests': () => import('./Run').then((m) => ({ default: m.RestartFailedTests })),
-  'run/restart-frame': () => import('./Run').then((m) => ({ default: m.RestartFrame })),
+  'run/restart-debug': () =>
+    import('./Run').then((m) => ({ default: m.RestartDebug })),
+  'run/restart-failed-tests': () =>
+    import('./Run').then((m) => ({ default: m.RestartFailedTests })),
+  'run/restart-frame': () =>
+    import('./Run').then((m) => ({ default: m.RestartFrame })),
   'run/resume': () => import('./Run').then((m) => ({ default: m.Resume })),
   'run/run': () => import('./Run').then((m) => ({ default: m.Run })),
-  'run/run-to-cursor': () => import('./Run').then((m) => ({ default: m.RunToCursor })),
-  'run/run-with-coverage': () => import('./Run').then((m) => ({ default: m.RunWithCoverage })),
-  'run/show-current-frame': () => import('./Run').then((m) => ({ default: m.ShowCurrentFrame })),
-  'run/show-ignored': () => import('./Run').then((m) => ({ default: m.ShowIgnored })),
-  'run/show-passed': () => import('./Run').then((m) => ({ default: m.ShowPassed })),
-  'run/smart-step-into': () => import('./Run').then((m) => ({ default: m.SmartStepInto })),
+  'run/run-to-cursor': () =>
+    import('./Run').then((m) => ({ default: m.RunToCursor })),
+  'run/run-with-coverage': () =>
+    import('./Run').then((m) => ({ default: m.RunWithCoverage })),
+  'run/show-current-frame': () =>
+    import('./Run').then((m) => ({ default: m.ShowCurrentFrame })),
+  'run/show-ignored': () =>
+    import('./Run').then((m) => ({ default: m.ShowIgnored })),
+  'run/show-passed': () =>
+    import('./Run').then((m) => ({ default: m.ShowPassed })),
+  'run/smart-step-into': () =>
+    import('./Run').then((m) => ({ default: m.SmartStepInto })),
   'run/step-into': () => import('./Run').then((m) => ({ default: m.StepInto })),
   'run/step-out': () => import('./Run').then((m) => ({ default: m.StepOut })),
-  'run/step-out-code-block': () => import('./Run').then((m) => ({ default: m.StepOutCodeBlock })),
+  'run/step-out-code-block': () =>
+    import('./Run').then((m) => ({ default: m.StepOutCodeBlock })),
   'run/step-over': () => import('./Run').then((m) => ({ default: m.StepOver })),
   'run/stop': () => import('./Run').then((m) => ({ default: m.Stop })),
-  'run/test-custom': () => import('./Run').then((m) => ({ default: m.TestCustom })),
-  'run/test-error': () => import('./Run').then((m) => ({ default: m.TestError })),
-  'run/test-failed': () => import('./Run').then((m) => ({ default: m.TestFailed })),
-  'run/test-ignored': () => import('./Run').then((m) => ({ default: m.TestIgnored })),
-  'run/test-not-run-yet': () => import('./Run').then((m) => ({ default: m.TestNotRunYet })),
-  'run/test-passed': () => import('./Run').then((m) => ({ default: m.TestPassed })),
-  'run/test-passed-ignored': () => import('./Run').then((m) => ({ default: m.TestPassedIgnored })),
-  'run/test-paused': () => import('./Run').then((m) => ({ default: m.TestPaused })),
-  'run/test-runner-watch': () => import('./Run').then((m) => ({ default: m.TestRunnerWatch })),
-  'run/test-skipped': () => import('./Run').then((m) => ({ default: m.TestSkipped })),
-  'run/test-terminated': () => import('./Run').then((m) => ({ default: m.TestTerminated })),
-  'run/test-unknown': () => import('./Run').then((m) => ({ default: m.TestUnknown })),
-  'run/trace-stream': () => import('./Run').then((m) => ({ default: m.TraceStream })),
-  'run/view-breakpoints': () => import('./Run').then((m) => ({ default: m.ViewBreakpoints })),
+  'run/test-custom': () =>
+    import('./Run').then((m) => ({ default: m.TestCustom })),
+  'run/test-error': () =>
+    import('./Run').then((m) => ({ default: m.TestError })),
+  'run/test-failed': () =>
+    import('./Run').then((m) => ({ default: m.TestFailed })),
+  'run/test-ignored': () =>
+    import('./Run').then((m) => ({ default: m.TestIgnored })),
+  'run/test-not-run-yet': () =>
+    import('./Run').then((m) => ({ default: m.TestNotRunYet })),
+  'run/test-passed': () =>
+    import('./Run').then((m) => ({ default: m.TestPassed })),
+  'run/test-passed-ignored': () =>
+    import('./Run').then((m) => ({ default: m.TestPassedIgnored })),
+  'run/test-paused': () =>
+    import('./Run').then((m) => ({ default: m.TestPaused })),
+  'run/test-runner-watch': () =>
+    import('./Run').then((m) => ({ default: m.TestRunnerWatch })),
+  'run/test-skipped': () =>
+    import('./Run').then((m) => ({ default: m.TestSkipped })),
+  'run/test-terminated': () =>
+    import('./Run').then((m) => ({ default: m.TestTerminated })),
+  'run/test-unknown': () =>
+    import('./Run').then((m) => ({ default: m.TestUnknown })),
+  'run/trace-stream': () =>
+    import('./Run').then((m) => ({ default: m.TraceStream })),
+  'run/view-breakpoints': () =>
+    import('./Run').then((m) => ({ default: m.ViewBreakpoints })),
   'run/watch': () => import('./Run').then((m) => ({ default: m.Watch })),
 
   // run-configurations (15)
-  'run-configurations/application': () => import('./run-configurations').then((m) => ({ default: m.Application })),
-  'run-configurations/application-remote': () => import('./run-configurations').then((m) => ({ default: m.ApplicationRemote })),
-  'run-configurations/compound': () => import('./run-configurations').then((m) => ({ default: m.Compound })),
-  'run-configurations/ignored-test': () => import('./run-configurations').then((m) => ({ default: m.IgnoredTest })),
-  'run-configurations/invalid-configuration-layer': () => import('./run-configurations').then((m) => ({ default: m.InvalidConfigurationLayer })),
-  'run-configurations/java-scratch': () => import('./run-configurations').then((m) => ({ default: m.JavaScratch })),
-  'run-configurations/java-script-debug-configuration': () => import('./run-configurations').then((m) => ({ default: m.JavaScriptDebugConfiguration })),
-  'run-configurations/java-script-remote': () => import('./run-configurations').then((m) => ({ default: m.JavaScriptRemote })),
-  'run-configurations/junit': () => import('./run-configurations').then((m) => ({ default: m.Junit })),
-  'run-configurations/junit-test-mark': () => import('./run-configurations').then((m) => ({ default: m.JunitTestMark })),
-  'run-configurations/php-local': () => import('./run-configurations').then((m) => ({ default: m.PhpLocal })),
-  'run-configurations/php-remote': () => import('./run-configurations').then((m) => ({ default: m.PhpRemote })),
-  'run-configurations/php-web': () => import('./run-configurations').then((m) => ({ default: m.PhpWeb })),
-  'run-configurations/run-http-request': () => import('./run-configurations').then((m) => ({ default: m.RunHttpRequest })),
-  'run-configurations/web-app': () => import('./run-configurations').then((m) => ({ default: m.WebApp })),
+  'run-configurations/application': () =>
+    import('./run-configurations').then((m) => ({ default: m.Application })),
+  'run-configurations/application-remote': () =>
+    import('./run-configurations').then((m) => ({
+      default: m.ApplicationRemote,
+    })),
+  'run-configurations/compound': () =>
+    import('./run-configurations').then((m) => ({ default: m.Compound })),
+  'run-configurations/ignored-test': () =>
+    import('./run-configurations').then((m) => ({ default: m.IgnoredTest })),
+  'run-configurations/invalid-configuration-layer': () =>
+    import('./run-configurations').then((m) => ({
+      default: m.InvalidConfigurationLayer,
+    })),
+  'run-configurations/java-scratch': () =>
+    import('./run-configurations').then((m) => ({ default: m.JavaScratch })),
+  'run-configurations/java-script-debug-configuration': () =>
+    import('./run-configurations').then((m) => ({
+      default: m.JavaScriptDebugConfiguration,
+    })),
+  'run-configurations/java-script-remote': () =>
+    import('./run-configurations').then((m) => ({
+      default: m.JavaScriptRemote,
+    })),
+  'run-configurations/junit': () =>
+    import('./run-configurations').then((m) => ({ default: m.Junit })),
+  'run-configurations/junit-test-mark': () =>
+    import('./run-configurations').then((m) => ({ default: m.JunitTestMark })),
+  'run-configurations/php-local': () =>
+    import('./run-configurations').then((m) => ({ default: m.PhpLocal })),
+  'run-configurations/php-remote': () =>
+    import('./run-configurations').then((m) => ({ default: m.PhpRemote })),
+  'run-configurations/php-web': () =>
+    import('./run-configurations').then((m) => ({ default: m.PhpWeb })),
+  'run-configurations/run-http-request': () =>
+    import('./run-configurations').then((m) => ({ default: m.RunHttpRequest })),
+  'run-configurations/web-app': () =>
+    import('./run-configurations').then((m) => ({ default: m.WebApp })),
 
   // VCS (57)
   'vcs/abort': () => import('./VCS').then((m) => ({ default: m.Abort })),
   'vcs/add-emoji': () => import('./VCS').then((m) => ({ default: m.AddEmoji })),
-  'vcs/apply-not-conflicts': () => import('./VCS').then((m) => ({ default: m.ApplyNotConflicts })),
-  'vcs/apply-not-conflicts-left': () => import('./VCS').then((m) => ({ default: m.ApplyNotConflictsLeft })),
-  'vcs/apply-not-conflicts-right': () => import('./VCS').then((m) => ({ default: m.ApplyNotConflictsRight })),
+  'vcs/apply-not-conflicts': () =>
+    import('./VCS').then((m) => ({ default: m.ApplyNotConflicts })),
+  'vcs/apply-not-conflicts-left': () =>
+    import('./VCS').then((m) => ({ default: m.ApplyNotConflictsLeft })),
+  'vcs/apply-not-conflicts-right': () =>
+    import('./VCS').then((m) => ({ default: m.ApplyNotConflictsRight })),
   'vcs/arrow': () => import('./VCS').then((m) => ({ default: m.Arrow })),
-  'vcs/arrow-left-down': () => import('./VCS').then((m) => ({ default: m.ArrowLeftDown })),
-  'vcs/arrow-left-right': () => import('./VCS').then((m) => ({ default: m.ArrowLeftRight })),
-  'vcs/arrow-right': () => import('./VCS').then((m) => ({ default: m.ArrowRight })),
-  'vcs/arrow-right-down': () => import('./VCS').then((m) => ({ default: m.ArrowRightDown })),
+  'vcs/arrow-left-down': () =>
+    import('./VCS').then((m) => ({ default: m.ArrowLeftDown })),
+  'vcs/arrow-left-right': () =>
+    import('./VCS').then((m) => ({ default: m.ArrowLeftRight })),
+  'vcs/arrow-right': () =>
+    import('./VCS').then((m) => ({ default: m.ArrowRight })),
+  'vcs/arrow-right-down': () =>
+    import('./VCS').then((m) => ({ default: m.ArrowRightDown })),
   'vcs/branch': () => import('./VCS').then((m) => ({ default: m.Branch })),
-  'vcs/changelist': () => import('./VCS').then((m) => ({ default: m.Changelist })),
+  'vcs/changelist': () =>
+    import('./VCS').then((m) => ({ default: m.Changelist })),
   'vcs/changes': () => import('./VCS').then((m) => ({ default: m.Changes })),
-  'vcs/changes-push': () => import('./VCS').then((m) => ({ default: m.ChangesPush })),
-  'vcs/changes-update': () => import('./VCS').then((m) => ({ default: m.ChangesUpdate })),
-  'vcs/checkmark': () => import('./VCS').then((m) => ({ default: m.Checkmark })),
-  'vcs/cherry-pick': () => import('./VCS').then((m) => ({ default: m.CherryPick })),
+  'vcs/changes-push': () =>
+    import('./VCS').then((m) => ({ default: m.ChangesPush })),
+  'vcs/changes-update': () =>
+    import('./VCS').then((m) => ({ default: m.ChangesUpdate })),
+  'vcs/checkmark': () =>
+    import('./VCS').then((m) => ({ default: m.Checkmark })),
+  'vcs/cherry-pick': () =>
+    import('./VCS').then((m) => ({ default: m.CherryPick })),
   'vcs/comment': () => import('./VCS').then((m) => ({ default: m.Comment })),
-  'vcs/comment-read': () => import('./VCS').then((m) => ({ default: m.CommentRead })),
-  'vcs/comment-regular': () => import('./VCS').then((m) => ({ default: m.CommentRegular })),
-  'vcs/comment-resolved': () => import('./VCS').then((m) => ({ default: m.CommentResolved })),
-  'vcs/comment-unread': () => import('./VCS').then((m) => ({ default: m.CommentUnread })),
-  'vcs/comment-unresolved': () => import('./VCS').then((m) => ({ default: m.CommentUnresolved })),
+  'vcs/comment-read': () =>
+    import('./VCS').then((m) => ({ default: m.CommentRead })),
+  'vcs/comment-regular': () =>
+    import('./VCS').then((m) => ({ default: m.CommentRegular })),
+  'vcs/comment-resolved': () =>
+    import('./VCS').then((m) => ({ default: m.CommentResolved })),
+  'vcs/comment-unread': () =>
+    import('./VCS').then((m) => ({ default: m.CommentUnread })),
+  'vcs/comment-unresolved': () =>
+    import('./VCS').then((m) => ({ default: m.CommentUnresolved })),
   'vcs/commit': () => import('./VCS').then((m) => ({ default: m.Commit })),
-  'vcs/compare3-left-middle': () => import('./VCS').then((m) => ({ default: m.Compare3LeftMiddle })),
-  'vcs/compare3-left-right': () => import('./VCS').then((m) => ({ default: m.Compare3LeftRight })),
-  'vcs/compare3-middle-right': () => import('./VCS').then((m) => ({ default: m.Compare3MiddleRight })),
-  'vcs/compare4-left-bottom': () => import('./VCS').then((m) => ({ default: m.Compare4LeftBottom })),
-  'vcs/compare4-left-middle': () => import('./VCS').then((m) => ({ default: m.Compare4LeftMiddle })),
-  'vcs/compare4-left-right': () => import('./VCS').then((m) => ({ default: m.Compare4LeftRight })),
-  'vcs/compare4-middle-bottom': () => import('./VCS').then((m) => ({ default: m.Compare4MiddleBottom })),
-  'vcs/compare4-middle-right': () => import('./VCS').then((m) => ({ default: m.Compare4MiddleRight })),
-  'vcs/compare4-right-bottom': () => import('./VCS').then((m) => ({ default: m.Compare4RightBottom })),
-  'vcs/current-branch': () => import('./VCS').then((m) => ({ default: m.CurrentBranch })),
-  'vcs/current-branch-favorite': () => import('./VCS').then((m) => ({ default: m.CurrentBranchFavorite })),
+  'vcs/compare3-left-middle': () =>
+    import('./VCS').then((m) => ({ default: m.Compare3LeftMiddle })),
+  'vcs/compare3-left-right': () =>
+    import('./VCS').then((m) => ({ default: m.Compare3LeftRight })),
+  'vcs/compare3-middle-right': () =>
+    import('./VCS').then((m) => ({ default: m.Compare3MiddleRight })),
+  'vcs/compare4-left-bottom': () =>
+    import('./VCS').then((m) => ({ default: m.Compare4LeftBottom })),
+  'vcs/compare4-left-middle': () =>
+    import('./VCS').then((m) => ({ default: m.Compare4LeftMiddle })),
+  'vcs/compare4-left-right': () =>
+    import('./VCS').then((m) => ({ default: m.Compare4LeftRight })),
+  'vcs/compare4-middle-bottom': () =>
+    import('./VCS').then((m) => ({ default: m.Compare4MiddleBottom })),
+  'vcs/compare4-middle-right': () =>
+    import('./VCS').then((m) => ({ default: m.Compare4MiddleRight })),
+  'vcs/compare4-right-bottom': () =>
+    import('./VCS').then((m) => ({ default: m.Compare4RightBottom })),
+  'vcs/current-branch': () =>
+    import('./VCS').then((m) => ({ default: m.CurrentBranch })),
+  'vcs/current-branch-favorite': () =>
+    import('./VCS').then((m) => ({ default: m.CurrentBranchFavorite })),
   'vcs/diff': () => import('./VCS').then((m) => ({ default: m.Diff })),
-  'vcs/disable-editing': () => import('./VCS').then((m) => ({ default: m.DisableEditing })),
+  'vcs/disable-editing': () =>
+    import('./VCS').then((m) => ({ default: m.DisableEditing })),
   'vcs/fetch': () => import('./VCS').then((m) => ({ default: m.Fetch })),
-  'vcs/file-unread': () => import('./VCS').then((m) => ({ default: m.FileUnread })),
-  'vcs/gutter-check-box': () => import('./VCS').then((m) => ({ default: m.GutterCheckBox })),
-  'vcs/gutter-check-box-indeterminate': () => import('./VCS').then((m) => ({ default: m.GutterCheckBoxIndeterminate })),
-  'vcs/gutter-check-box-selected': () => import('./VCS').then((m) => ({ default: m.GutterCheckBoxSelected })),
-  'vcs/incoming-update': () => import('./VCS').then((m) => ({ default: m.IncomingUpdate })),
-  'vcs/intelli-sort': () => import('./VCS').then((m) => ({ default: m.IntelliSort })),
-  'vcs/magic-resolve': () => import('./VCS').then((m) => ({ default: m.MagicResolve })),
-  'vcs/magic-resolve-toolbar': () => import('./VCS').then((m) => ({ default: m.MagicResolveToolbar })),
-  'vcs/outgoing-push': () => import('./VCS').then((m) => ({ default: m.OutgoingPush })),
+  'vcs/file-unread': () =>
+    import('./VCS').then((m) => ({ default: m.FileUnread })),
+  'vcs/gutter-check-box': () =>
+    import('./VCS').then((m) => ({ default: m.GutterCheckBox })),
+  'vcs/gutter-check-box-indeterminate': () =>
+    import('./VCS').then((m) => ({ default: m.GutterCheckBoxIndeterminate })),
+  'vcs/gutter-check-box-selected': () =>
+    import('./VCS').then((m) => ({ default: m.GutterCheckBoxSelected })),
+  'vcs/incoming-update': () =>
+    import('./VCS').then((m) => ({ default: m.IncomingUpdate })),
+  'vcs/intelli-sort': () =>
+    import('./VCS').then((m) => ({ default: m.IntelliSort })),
+  'vcs/magic-resolve': () =>
+    import('./VCS').then((m) => ({ default: m.MagicResolve })),
+  'vcs/magic-resolve-toolbar': () =>
+    import('./VCS').then((m) => ({ default: m.MagicResolveToolbar })),
+  'vcs/outgoing-push': () =>
+    import('./VCS').then((m) => ({ default: m.OutgoingPush })),
   'vcs/patch': () => import('./VCS').then((m) => ({ default: m.Patch })),
   'vcs/push': () => import('./VCS').then((m) => ({ default: m.Push })),
   'vcs/remove': () => import('./VCS').then((m) => ({ default: m.Remove })),
-  'vcs/resolve-continue': () => import('./VCS').then((m) => ({ default: m.ResolveContinue })),
+  'vcs/resolve-continue': () =>
+    import('./VCS').then((m) => ({ default: m.ResolveContinue })),
   'vcs/revert': () => import('./VCS').then((m) => ({ default: m.Revert })),
-  'vcs/skip-commit': () => import('./VCS').then((m) => ({ default: m.SkipCommit })),
+  'vcs/skip-commit': () =>
+    import('./VCS').then((m) => ({ default: m.SkipCommit })),
   'vcs/stash': () => import('./VCS').then((m) => ({ default: m.Stash })),
   'vcs/unshelve': () => import('./VCS').then((m) => ({ default: m.Unshelve })),
   'vcs/update': () => import('./VCS').then((m) => ({ default: m.Update })),
@@ -1274,7 +2544,9 @@ export const iconRegistry = {
 export type IconPathname = keyof typeof iconRegistry;
 
 export const slugIndex: Record<string, IconPathname[]> = {
-  'abbreviate-package-names': ['general/object-browser/abbreviate-package-names'],
+  'abbreviate-package-names': [
+    'general/object-browser/abbreviate-package-names',
+  ],
   abort: ['vcs/abort'],
   'abstract-exception': ['nodes/abstract-exception'],
   'access-local': ['general/access-modifiers/access-local'],
@@ -1285,7 +2557,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'action-script': ['file-types/action-script'],
   'actual-zoom': ['editor-icons/actual-zoom'],
   'acync-api': ['file-types/acync-api'],
-  'adapter-script': ['database/adapter-script', 'database/expui/adapter-script'],
+  'adapter-script': [
+    'database/adapter-script',
+    'database/expui/adapter-script',
+  ],
   add: ['general/general/add'],
   'add-any': ['nodes/add-any'],
   'add-bookmarks-list': ['general/bookmarks/add-bookmarks-list'],
@@ -1353,16 +2628,28 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'breakpoint-dependent': ['breakpoints/breakpoint-dependent'],
   'breakpoint-disabled': ['breakpoints/breakpoint-disabled'],
   'breakpoint-exception': ['breakpoints/breakpoint-exception'],
-  'breakpoint-exception-disabled': ['breakpoints/breakpoint-exception-disabled'],
+  'breakpoint-exception-disabled': [
+    'breakpoints/breakpoint-exception-disabled',
+  ],
   'breakpoint-field': ['breakpoints/breakpoint-field'],
   'breakpoint-field-dependent': ['breakpoints/breakpoint-field-dependent'],
   'breakpoint-field-disabled': ['breakpoints/breakpoint-field-disabled'],
   'breakpoint-field-muted': ['breakpoints/breakpoint-field-muted'],
-  'breakpoint-field-muted-dependent': ['breakpoints/breakpoint-field-muted-dependent'],
-  'breakpoint-field-muted-disabled': ['breakpoints/breakpoint-field-muted-disabled'],
-  'breakpoint-field-unsuspendent': ['breakpoints/breakpoint-field-unsuspendent'],
-  'breakpoint-field-unsuspendent-disabled': ['breakpoints/breakpoint-field-unsuspendent-disabled'],
-  'breakpoint-field-unsuspendent-valid': ['breakpoints/breakpoint-field-unsuspendent-valid'],
+  'breakpoint-field-muted-dependent': [
+    'breakpoints/breakpoint-field-muted-dependent',
+  ],
+  'breakpoint-field-muted-disabled': [
+    'breakpoints/breakpoint-field-muted-disabled',
+  ],
+  'breakpoint-field-unsuspendent': [
+    'breakpoints/breakpoint-field-unsuspendent',
+  ],
+  'breakpoint-field-unsuspendent-disabled': [
+    'breakpoints/breakpoint-field-unsuspendent-disabled',
+  ],
+  'breakpoint-field-unsuspendent-valid': [
+    'breakpoints/breakpoint-field-unsuspendent-valid',
+  ],
   'breakpoint-field-valid': ['breakpoints/breakpoint-field-valid'],
   'breakpoint-invalid': ['breakpoints/breakpoint-invalid'],
   'breakpoint-lambda': ['breakpoints/breakpoint-lambda'],
@@ -1370,19 +2657,33 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'breakpoint-method-dependent': ['breakpoints/breakpoint-method-dependent'],
   'breakpoint-method-disabled': ['breakpoints/breakpoint-method-disabled'],
   'breakpoint-method-muted': ['breakpoints/breakpoint-method-muted'],
-  'breakpoint-method-muted-dependent': ['breakpoints/breakpoint-method-muted-dependent'],
-  'breakpoint-method-muted-disabled': ['breakpoints/breakpoint-method-muted-disabled'],
-  'breakpoint-method-unsuspendent': ['breakpoints/breakpoint-method-unsuspendent'],
-  'breakpoint-method-unsuspendent-disabled': ['breakpoints/breakpoint-method-unsuspendent-disabled'],
-  'breakpoint-method-unsuspendent-valid': ['breakpoints/breakpoint-method-unsuspendent-valid'],
+  'breakpoint-method-muted-dependent': [
+    'breakpoints/breakpoint-method-muted-dependent',
+  ],
+  'breakpoint-method-muted-disabled': [
+    'breakpoints/breakpoint-method-muted-disabled',
+  ],
+  'breakpoint-method-unsuspendent': [
+    'breakpoints/breakpoint-method-unsuspendent',
+  ],
+  'breakpoint-method-unsuspendent-disabled': [
+    'breakpoints/breakpoint-method-unsuspendent-disabled',
+  ],
+  'breakpoint-method-unsuspendent-valid': [
+    'breakpoints/breakpoint-method-unsuspendent-valid',
+  ],
   'breakpoint-method-valid': ['breakpoints/breakpoint-method-valid'],
   'breakpoint-muted': ['breakpoints/breakpoint-muted'],
   'breakpoint-muted-dependent': ['breakpoints/breakpoint-muted-dependent'],
   'breakpoint-muted-disabled': ['breakpoints/breakpoint-muted-disabled'],
   'breakpoint-obsolete': ['breakpoints/breakpoint-obsolete'],
   'breakpoint-unsuspendent': ['breakpoints/breakpoint-unsuspendent'],
-  'breakpoint-unsuspendent-disabled': ['breakpoints/breakpoint-unsuspendent-disabled'],
-  'breakpoint-unsuspendent-valid': ['breakpoints/breakpoint-unsuspendent-valid'],
+  'breakpoint-unsuspendent-disabled': [
+    'breakpoints/breakpoint-unsuspendent-disabled',
+  ],
+  'breakpoint-unsuspendent-valid': [
+    'breakpoints/breakpoint-unsuspendent-valid',
+  ],
   'breakpoint-valid': ['breakpoints/breakpoint-valid'],
   browse: ['general/inline/browse'],
   build: ['build/build', 'general/tool-windows/build'],
@@ -1402,7 +2703,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   changes: ['general/tool-windows/changes', 'vcs/changes'],
   'changes-push': ['vcs/changes-push'],
   'changes-update': ['vcs/changes-update'],
-  'check-constraint': ['database/check-constraint', 'database/expui/check-constraint'],
+  'check-constraint': [
+    'database/check-constraint',
+    'database/expui/check-constraint',
+  ],
   checked: ['general/actions/checked'],
   checkmark: ['general/general/checkmark', 'vcs/checkmark'],
   'checkmark-list': ['general/editor/checkmark-list'],
@@ -1437,27 +2741,75 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'collapse-node': ['editor-icons/collapse-node'],
   collation: ['database/collation', 'database/expui/collation'],
   collection: ['database/collection', 'database/expui/collection'],
-  'collection-key': ['database/collection-key', 'database/expui/collection-key'],
-  'collection-type': ['database/collection-type', 'database/expui/collection-type'],
+  'collection-key': [
+    'database/collection-key',
+    'database/expui/collection-key',
+  ],
+  'collection-type': [
+    'database/collection-type',
+    'database/expui/collection-type',
+  ],
   'color-picker': ['editor-icons/color-picker'],
   colors: ['editor-icons/colors'],
   column: ['database/column', 'database/expui/column'],
-  'column-blue-key': ['database/column-blue-key', 'database/expui/column-blue-key'],
-  'column-blue-key-dot': ['database/column-blue-key-dot', 'database/expui/column-blue-key-dot'],
-  'column-blue-key-dot-index': ['database/column-blue-key-dot-index', 'database/expui/column-blue-key-dot-index'],
-  'column-blue-key-index': ['database/column-blue-key-index', 'database/expui/column-blue-key-index'],
+  'column-blue-key': [
+    'database/column-blue-key',
+    'database/expui/column-blue-key',
+  ],
+  'column-blue-key-dot': [
+    'database/column-blue-key-dot',
+    'database/expui/column-blue-key-dot',
+  ],
+  'column-blue-key-dot-index': [
+    'database/column-blue-key-dot-index',
+    'database/expui/column-blue-key-dot-index',
+  ],
+  'column-blue-key-index': [
+    'database/column-blue-key-index',
+    'database/expui/column-blue-key-index',
+  ],
   'column-dot': ['database/column-dot', 'database/expui/column-dot'],
-  'column-dot-index': ['database/column-dot-index', 'database/expui/column-dot-index'],
+  'column-dot-index': [
+    'database/column-dot-index',
+    'database/expui/column-dot-index',
+  ],
   'column-filter': ['database/column-filter'],
-  'column-gold-blue-key': ['database/column-gold-blue-key', 'database/expui/column-gold-blue-key'],
-  'column-gold-blue-key-dot': ['database/column-gold-blue-key-dot', 'database/expui/column-gold-blue-key-dot'],
-  'column-gold-blue-key-dot-index': ['database/column-gold-blue-key-dot-index', 'database/expui/column-gold-blue-key-dot-index'],
-  'column-gold-blue-key-index': ['database/column-gold-blue-key-index', 'database/expui/column-gold-blue-key-index'],
-  'column-gold-key': ['database/column-gold-key', 'database/expui/column-gold-key'],
-  'column-gold-key-dot': ['database/column-gold-key-dot', 'database/expui/column-gold-key-dot'],
-  'column-gold-key-dot-index': ['database/column-gold-key-dot-index', 'database/expui/column-gold-key-dot-index'],
-  'column-gold-key-index': ['database/column-gold-key-index', 'database/expui/column-gold-key-index'],
-  'column-grey-key': ['database/column-grey-key', 'database/expui/column-grey-key'],
+  'column-gold-blue-key': [
+    'database/column-gold-blue-key',
+    'database/expui/column-gold-blue-key',
+  ],
+  'column-gold-blue-key-dot': [
+    'database/column-gold-blue-key-dot',
+    'database/expui/column-gold-blue-key-dot',
+  ],
+  'column-gold-blue-key-dot-index': [
+    'database/column-gold-blue-key-dot-index',
+    'database/expui/column-gold-blue-key-dot-index',
+  ],
+  'column-gold-blue-key-index': [
+    'database/column-gold-blue-key-index',
+    'database/expui/column-gold-blue-key-index',
+  ],
+  'column-gold-key': [
+    'database/column-gold-key',
+    'database/expui/column-gold-key',
+  ],
+  'column-gold-key-dot': [
+    'database/column-gold-key-dot',
+    'database/expui/column-gold-key-dot',
+  ],
+  'column-gold-key-dot-index': [
+    'database/column-gold-key-dot-index',
+    'database/expui/column-gold-key-dot-index',
+  ],
+  'column-gold-key-index': [
+    'database/column-gold-key-index',
+    'database/expui/column-gold-key-index',
+  ],
+  'column-grey-key': [
+    'database/column-grey-key',
+    'database/expui/column-grey-key',
+  ],
   'column-index': ['database/column-index', 'database/expui/column-index'],
   comment: ['vcs/comment'],
   'comment-read': ['vcs/comment-read'],
@@ -1465,7 +2817,12 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'comment-resolved': ['vcs/comment-resolved'],
   'comment-unread': ['vcs/comment-unread'],
   'comment-unresolved': ['vcs/comment-unresolved'],
-  commit: ['database/commit', 'database/expui/commit', 'general/tool-windows/commit', 'vcs/commit'],
+  commit: [
+    'database/commit',
+    'database/expui/commit',
+    'general/tool-windows/commit',
+    'vcs/commit',
+  ],
   'compact-empty-packages': ['general/object-browser/compact-empty-packages'],
   'compare3-left-middle': ['vcs/compare3-left-middle'],
   'compare3-left-right': ['vcs/compare3-left-right'],
@@ -1477,14 +2834,19 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'compare4-middle-right': ['vcs/compare4-middle-right'],
   'compare4-right-bottom': ['vcs/compare4-right-bottom'],
   compound: ['run-configurations/compound'],
-  'concurrency-diagram-toolwindow': ['general/tool-windows/concurrency-diagram-toolwindow'],
+  'concurrency-diagram-toolwindow': [
+    'general/tool-windows/concurrency-diagram-toolwindow',
+  ],
   'conditional-statement': ['file-types/conditional-statement'],
   config: ['nodes/config'],
   'config-file': ['general/general/config-file'],
   conflict: ['general/setting-sync/conflict'],
   connector: ['database/connector', 'database/expui/connector'],
   'console-run': ['database/console-run', 'database/expui/console-run'],
-  'console-show-plan': ['database/console-show-plan', 'database/expui/console-show-plan'],
+  'console-show-plan': [
+    'database/console-show-plan',
+    'database/expui/console-show-plan',
+  ],
   constant: ['nodes/constant'],
   contexts: ['file-types/contexts'],
   'contexts-modifier': ['file-types/contexts-modifier'],
@@ -1508,26 +2870,48 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'data-file': ['database/data-file', 'database/expui/data-file'],
   'data-schema': ['database/data-schema', 'editor-icons/data-schema'],
   'data-share': ['database/data-share', 'database/expui/data-share'],
-  'data-structure': ['database/data-structure', 'database/expui/data-structure'],
+  'data-structure': [
+    'database/data-structure',
+    'database/expui/data-structure',
+  ],
   'data-structure-key': ['database/data-structure-key'],
   'data-tables': ['nodes/data-tables'],
   database: ['database/database', 'database/expui/database'],
-  'database-changes': ['database/expui/database-changes', 'general/tool-windows/database-changes'],
-  'database-external': ['database/database-external', 'database/expui/database-external'],
+  'database-changes': [
+    'database/expui/database-changes',
+    'general/tool-windows/database-changes',
+  ],
+  'database-external': [
+    'database/database-external',
+    'database/expui/database-external',
+  ],
   'database-link': ['database/database-link', 'database/expui/database-link'],
-  'database-objects-group': ['database/database-objects-group', 'database/expui/database-objects-group'],
+  'database-objects-group': [
+    'database/database-objects-group',
+    'database/expui/database-objects-group',
+  ],
   databricks: ['database/databricks'],
   'databricks-tool-window': ['general/tool-windows/databricks-tool-window'],
   'dataproc-tool-window': ['general/tool-windows/dataproc-tool-window'],
   'db-array': ['debugger/db-array'],
   'db-primitive': ['debugger/db-primitive'],
   db2: ['database/db2'],
-  dbms: ['database/expui/dbms', 'editor-icons/dbms', 'general/tool-windows/dbms'],
+  dbms: [
+    'database/expui/dbms',
+    'editor-icons/dbms',
+    'general/tool-windows/dbms',
+  ],
   'dbms-output': ['database/expui/dbms-output'],
-  'ddl-data-source-overlay': ['database/ddl-data-source-overlay', 'database/expui/ddl-data-source-overlay'],
+  'ddl-data-source-overlay': [
+    'database/ddl-data-source-overlay',
+    'database/expui/ddl-data-source-overlay',
+  ],
   'ddl-dbms': ['database/ddl-dbms', 'database/expui/ddl-dbms'],
   debug: ['general/tool-windows/debug', 'run/debug'],
-  'default-constraint': ['database/default-constraint', 'database/expui/default-constraint'],
+  'default-constraint': [
+    'database/default-constraint',
+    'database/expui/default-constraint',
+  ],
   delete: ['general/general/delete'],
   deno: ['file-types/deno'],
   denodo: ['database/denodo'],
@@ -1589,8 +2973,14 @@ export const slugIndex: Record<string, IconPathname[]> = {
   exposed: ['file-types/exposed'],
   'ext-annotation': ['editor-icons/ext-annotation'],
   extension: ['database/expui/extension', 'database/extension'],
-  'external-link': ['database/expui/external-link', 'general/general/external-link'],
-  'external-schema': ['database/expui/external-schema', 'database/external-schema'],
+  'external-link': [
+    'database/expui/external-link',
+    'general/general/external-link',
+  ],
+  'external-schema': [
+    'database/expui/external-schema',
+    'database/external-schema',
+  ],
   'failed-in-progress': ['run/failed-in-progress'],
   'fast-api': ['file-types/fast-api'],
   favorites: ['nodes/favorites'],
@@ -1628,14 +3018,26 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'force-run-to-cursor': ['run/force-run-to-cursor'],
   'force-step-into': ['run/force-step-into'],
   'force-step-over': ['run/force-step-over'],
-  'foreign-datawrapper': ['database/expui/foreign-datawrapper', 'database/foreign-datawrapper'],
-  'foreign-partion-table': ['database/expui/foreign-partion-table', 'database/foreign-partion-table'],
-  'foreign-server': ['database/expui/foreign-server', 'database/foreign-server'],
+  'foreign-datawrapper': [
+    'database/expui/foreign-datawrapper',
+    'database/foreign-datawrapper',
+  ],
+  'foreign-partion-table': [
+    'database/expui/foreign-partion-table',
+    'database/foreign-partion-table',
+  ],
+  'foreign-server': [
+    'database/expui/foreign-server',
+    'database/foreign-server',
+  ],
   'foreign-table': ['database/expui/foreign-table', 'database/foreign-table'],
   frame: ['debugger/frame'],
   freemaker: ['file-types/freemaker'],
   function: ['database/expui/function', 'database/function', 'nodes/function'],
-  'function-external': ['database/expui/function-external', 'database/function-external'],
+  'function-external': [
+    'database/expui/function-external',
+    'database/function-external',
+  ],
   'function-run': ['database/expui/function-run', 'database/function-run'],
   'funnel-regular': ['database/expui/funnel-regular'],
   generated: ['nodes/generated'],
@@ -1672,7 +3074,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   hana: ['database/hana'],
   'hash-cluster': ['database/expui/hash-cluster', 'database/hash-cluster'],
   'hash-table': ['database/expui/hash-table', 'database/hash-table'],
-  'hash-table-key': ['database/expui/hash-table-key', 'database/hash-table-key'],
+  'hash-table-key': [
+    'database/expui/hash-table-key',
+    'database/hash-table-key',
+  ],
   haskell: ['file-types/haskell'],
   'header-level-down': ['general/editor/header-level-down'],
   'header-level-up': ['general/editor/header-level-up'],
@@ -1688,7 +3093,9 @@ export const slugIndex: Record<string, IconPathname[]> = {
   hsqldb: ['database/hsqldb'],
   html: ['file-types/html'],
   'http-header': ['file-types/http-header'],
-  'http-requests-run-configuration': ['file-types/http-requests-run-configuration'],
+  'http-requests-run-configuration': [
+    'file-types/http-requests-run-configuration',
+  ],
   i18n: ['file-types/i18n'],
   ibm: ['database/ibm'],
   'ide-update': ['general/general/ide-update'],
@@ -1700,7 +3107,9 @@ export const slugIndex: Record<string, IconPathname[]> = {
   image: ['file-types/image'],
   impala: ['database/impala'],
   'implemented-method': ['editor-icons/implemented-method'],
-  'implementing-functional-interface': ['editor-icons/implementing-functional-interface'],
+  'implementing-functional-interface': [
+    'editor-icons/implementing-functional-interface',
+  ],
   'implementing-method': ['editor-icons/implementing-method'],
   import: ['general/general/import'],
   'in-selection': ['general/actions/in-selection'],
@@ -1709,7 +3118,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'incoming-update': ['vcs/incoming-update'],
   'index-cluster': ['database/expui/index-cluster', 'database/index-cluster'],
   'index-fun': ['database/expui/index-fun', 'database/index-fun'],
-  'index-fun-unique': ['database/expui/index-fun-unique', 'database/index-fun-unique'],
+  'index-fun-unique': [
+    'database/expui/index-fun-unique',
+    'database/index-fun-unique',
+  ],
   'index-icon': ['database/expui/index-icon', 'database/index-icon'],
   'index-unique': ['database/expui/index-unique', 'database/index-unique'],
   info: ['general/status/info'],
@@ -1719,9 +3131,15 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'inlay-globe': ['editor-icons/inlay-globe'],
   'inlay-micronaut': ['editor-icons/inlay-micronaut'],
   'inlay-rename-in-comments': ['editor-icons/inlay-rename-in-comments'],
-  'inlay-rename-in-comments-active': ['editor-icons/inlay-rename-in-comments-active'],
-  'inlay-rename-in-no-code-files': ['editor-icons/inlay-rename-in-no-code-files'],
-  'inlay-rename-in-no-code-files-active': ['editor-icons/inlay-rename-in-no-code-files-active'],
+  'inlay-rename-in-comments-active': [
+    'editor-icons/inlay-rename-in-comments-active',
+  ],
+  'inlay-rename-in-no-code-files': [
+    'editor-icons/inlay-rename-in-no-code-files',
+  ],
+  'inlay-rename-in-no-code-files-active': [
+    'editor-icons/inlay-rename-in-no-code-files-active',
+  ],
   'inlay-secured-shield': ['editor-icons/inlay-secured-shield'],
   'inlay-settings': ['editor-icons/inlay-settings'],
   'inlay-spring': ['editor-icons/inlay-spring'],
@@ -1742,14 +3160,18 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'intention-bulb-grey': ['editor-icons/intention-bulb-grey'],
   interface: ['nodes/interface'],
   'intersystem-cache': ['database/intersystem-cache'],
-  'invalid-configuration-layer': ['run-configurations/invalid-configuration-layer'],
+  'invalid-configuration-layer': [
+    'run-configurations/invalid-configuration-layer',
+  ],
   italic: ['general/editor/italic'],
   java: ['file-types/java'],
   'java-class': ['file-types/java-class'],
   'java-ee-tool-window': ['general/tool-windows/java-ee-tool-window'],
   'java-scratch': ['run-configurations/java-scratch'],
   'java-script': ['file-types/java-script'],
-  'java-script-debug-configuration': ['run-configurations/java-script-debug-configuration'],
+  'java-script-debug-configuration': [
+    'run-configurations/java-script-debug-configuration',
+  ],
   'java-script-remote': ['run-configurations/java-script-remote'],
   'javadoc-edit': ['editor-icons/javadoc-edit'],
   'javadoc-read': ['editor-icons/javadoc-read'],
@@ -1763,17 +3185,26 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'js-doc-closure': ['file-types/js-doc-closure'],
   json: ['file-types/json'],
   'json-document': ['database/expui/json-document', 'database/json-document'],
-  'json-document-key': ['database/expui/json-document-key', 'database/json-document-key'],
+  'json-document-key': [
+    'database/expui/json-document-key',
+    'database/json-document-key',
+  ],
   'json-schema': ['file-types/json-schema'],
   jsp: ['file-types/jsp'],
   jspx: ['file-types/jspx'],
   junit: ['run-configurations/junit'],
-  'junit-test-mark': ['general/modifiers/junit-test-mark', 'run-configurations/junit-test-mark'],
+  'junit-test-mark': [
+    'general/modifiers/junit-test-mark',
+    'run-configurations/junit-test-mark',
+  ],
   'jupyter-notebook': ['file-types/jupyter-notebook'],
   'jupyter-tool-window': ['general/tool-windows/jupyter-tool-window'],
   kafka: ['general/tool-windows/kafka'],
   keyboard: ['general/general/keyboard'],
-  'kill-data-source-process': ['database/expui/kill-data-source-process', 'database/kill-data-source-process'],
+  'kill-data-source-process': [
+    'database/expui/kill-data-source-process',
+    'database/kill-data-source-process',
+  ],
   'kill-process': ['run/kill-process'],
   kotlin: ['file-types/kotlin'],
   'kotlin-tool-window': ['general/tool-windows/kotlin-tool-window'],
@@ -1785,15 +3216,42 @@ export const slugIndex: Record<string, IconPathname[]> = {
   less: ['file-types/less'],
   'level-auto': ['database/expui/level-auto', 'database/level-auto'],
   'level-auto-inherited': ['database/expui/level-auto-inherited'],
-  'level-one-declared': ['database/expui/level-one-declared', 'database/level-one-declared'],
-  'level-one-details': ['database/expui/level-one-details', 'database/level-one-details'],
-  'level-one-inherited': ['database/expui/level-one-inherited', 'database/level-one-inherited'],
-  'level-three-declared': ['database/expui/level-three-declared', 'database/level-three-declared'],
-  'level-three-details': ['database/expui/level-three-details', 'database/level-three-details'],
-  'level-three-inherited': ['database/expui/level-three-inherited', 'database/level-three-inherited'],
-  'level-two-declared': ['database/expui/level-two-declared', 'database/level-two-declared'],
-  'level-two-details': ['database/expui/level-two-details', 'database/level-two-details'],
-  'level-two-inherited': ['database/expui/level-two-inherited', 'database/level-two-inherited'],
+  'level-one-declared': [
+    'database/expui/level-one-declared',
+    'database/level-one-declared',
+  ],
+  'level-one-details': [
+    'database/expui/level-one-details',
+    'database/level-one-details',
+  ],
+  'level-one-inherited': [
+    'database/expui/level-one-inherited',
+    'database/level-one-inherited',
+  ],
+  'level-three-declared': [
+    'database/expui/level-three-declared',
+    'database/level-three-declared',
+  ],
+  'level-three-details': [
+    'database/expui/level-three-details',
+    'database/level-three-details',
+  ],
+  'level-three-inherited': [
+    'database/expui/level-three-inherited',
+    'database/level-three-inherited',
+  ],
+  'level-two-declared': [
+    'database/expui/level-two-declared',
+    'database/level-two-declared',
+  ],
+  'level-two-details': [
+    'database/expui/level-two-details',
+    'database/level-two-details',
+  ],
+  'level-two-inherited': [
+    'database/expui/level-two-inherited',
+    'database/level-two-inherited',
+  ],
   library: ['nodes/library'],
   'library-folder': ['nodes/library-folder'],
   'light-theme': ['general/new-ui/light-theme'],
@@ -1810,19 +3268,32 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'local-scope': ['nodes/local-scope'],
   locate: ['general/general/locate'],
   'lock-ultimate': ['database/expui/lock-ultimate'],
-  locked: ['database/expui/locked', 'database/locked', 'general/general/locked'],
+  locked: [
+    'database/expui/locked',
+    'database/locked',
+    'general/general/locked',
+  ],
   'log-overlap': ['database/expui/log-overlap'],
   macro: ['database/expui/macro', 'database/macro'],
   'magic-resolve': ['vcs/magic-resolve'],
   'magic-resolve-toolbar': ['vcs/magic-resolve-toolbar'],
   'makefile-tool-window': ['general/tool-windows/makefile-tool-window'],
-  'manage-data-sources': ['database/expui/manage-data-sources', 'database/manage-data-sources'],
+  'manage-data-sources': [
+    'database/expui/manage-data-sources',
+    'database/manage-data-sources',
+  ],
   manifest: ['file-types/manifest'],
   mariadb: ['database/mariadb'],
   markdown: ['file-types/markdown'],
   'match-case': ['general/inline/match-case'],
-  'materialized-log': ['database/expui/materialized-log', 'database/materialized-log'],
-  'materialized-view': ['database/expui/materialized-view', 'database/materialized-view'],
+  'materialized-log': [
+    'database/expui/materialized-log',
+    'database/materialized-log',
+  ],
+  'materialized-view': [
+    'database/expui/materialized-view',
+    'database/materialized-view',
+  ],
   maven: ['file-types/maven', 'general/tool-windows/maven'],
   'maven-bind': ['build/maven-bind'],
   'maven-bind-checksum': ['build/maven-bind-checksum'],
@@ -1863,7 +3334,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   module8x8: ['nodes/module8x8'],
   'mongo-db': ['database/mongo-db'],
   'mongo-field': ['database/expui/mongo-field', 'database/mongo-field'],
-  'mongo-field-gold-key': ['database/expui/mongo-field-gold-key', 'database/mongo-field-gold-key'],
+  'mongo-field-gold-key': [
+    'database/expui/mongo-field-gold-key',
+    'database/mongo-field-gold-key',
+  ],
   'more-horizontal': ['general/general/more-horizontal'],
   'more-vertical': ['general/general/more-vertical'],
   'move-down': ['general/general/move-down'],
@@ -1876,7 +3350,9 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'move-to-right-top': ['general/general/move-to-right-top'],
   'move-up': ['general/general/move-up'],
   'multiple-breakpoints': ['breakpoints/multiple-breakpoints'],
-  'multiple-breakpoints-disabled': ['breakpoints/multiple-breakpoints-disabled'],
+  'multiple-breakpoints-disabled': [
+    'breakpoints/multiple-breakpoints-disabled',
+  ],
   'multiple-breakpoints-muted': ['breakpoints/multiple-breakpoints-muted'],
   'mute-breakpoints': ['run/mute-breakpoints'],
   mysql: ['database/mysql'],
@@ -1891,7 +3367,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'num-py': ['file-types/num-py'],
   'numbered-list': ['general/editor/numbered-list'],
   'object-group': ['database/expui/object-group', 'database/object-group'],
-  'object-type-attribute': ['database/expui/object-type-attribute', 'database/object-type-attribute'],
+  'object-type-attribute': [
+    'database/expui/object-type-attribute',
+    'database/object-type-attribute',
+  ],
   open: ['general/general/open'],
   'open-api': ['general/actions/open-api'],
   'open-in-tool-window': ['general/general/open-in-tool-window'],
@@ -1900,8 +3379,14 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'open-tofu': ['file-types/open-tofu'],
   openedge: ['database/openedge'],
   operator: ['database/expui/operator', 'database/operator'],
-  'operator-class': ['database/expui/operator-class', 'database/operator-class'],
-  'operator-family': ['database/expui/operator-family', 'database/operator-family'],
+  'operator-class': [
+    'database/expui/operator-class',
+    'database/operator-class',
+  ],
+  'operator-family': [
+    'database/expui/operator-family',
+    'database/operator-family',
+  ],
   oracle: ['database/oracle'],
   'outgoing-push': ['vcs/outgoing-push'],
   'overriden-method': ['editor-icons/overriden-method'],
@@ -1932,7 +3417,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'pin-selected-hovered': ['database/pin-selected-hovered'],
   'play-back': ['database/expui/play-back', 'general/actions/play-back'],
   'play-first': ['database/expui/play-first', 'general/actions/play-first'],
-  'play-forward': ['database/expui/play-forward', 'general/actions/play-forward'],
+  'play-forward': [
+    'database/expui/play-forward',
+    'general/actions/play-forward',
+  ],
   'play-last': ['database/expui/play-last', 'general/actions/play-last'],
   plugin: ['general/devkit/plugin', 'nodes/plugin'],
   'plugin-update': ['general/general/plugin-update'],
@@ -1947,14 +3435,20 @@ export const slugIndex: Record<string, IconPathname[]> = {
   presto: ['database/presto'],
   prettier: ['file-types/prettier'],
   preview: ['general/actions/preview'],
-  'preview-changes': ['database/expui/preview-changes', 'database/preview-changes'],
+  'preview-changes': [
+    'database/expui/preview-changes',
+    'database/preview-changes',
+  ],
   'preview-horizontally': ['general/general/preview-horizontally'],
   'preview-only': ['editor-icons/preview-only'],
   'preview-vertically': ['general/general/preview-vertically'],
   print: ['general/general/print'],
   problems: ['general/tool-windows/problems'],
   procedure: ['database/expui/procedure', 'database/procedure'],
-  'procedure-group': ['database/expui/procedure-group', 'database/procedure-group'],
+  'procedure-group': [
+    'database/expui/procedure-group',
+    'database/procedure-group',
+  ],
   'procedure-run': ['database/expui/procedure-run', 'database/procedure-run'],
   'process-mark': ['general/modifiers/process-mark'],
   profile: ['run/profile'],
@@ -1981,7 +3475,9 @@ export const slugIndex: Record<string, IconPathname[]> = {
   push: ['vcs/push'],
   'py-torch': ['file-types/py-torch'],
   python: ['file-types/python'],
-  'python-console-tool-window': ['general/tool-windows/python-console-tool-window'],
+  'python-console-tool-window': [
+    'general/tool-windows/python-console-tool-window',
+  ],
   qml: ['file-types/qml'],
   qrc: ['file-types/qrc'],
   qt: ['file-types/qt'],
@@ -2007,7 +3503,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   redshift: ['database/redshift'],
   'reformat-code': ['general/general/reformat-code'],
   refresh: ['general/general/refresh'],
-  'refresh-materialized-view': ['database/expui/refresh-materialized-view', 'database/refresh-materialized-view'],
+  'refresh-materialized-view': [
+    'database/expui/refresh-materialized-view',
+    'database/refresh-materialized-view',
+  ],
   regex: ['general/inline/regex'],
   regexp: ['file-types/regexp'],
   'remote-changes': ['general/setting-sync/remote-changes'],
@@ -2041,7 +3540,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   run: ['editor-icons/run', 'general/tool-windows/run', 'run/run'],
   'run-all': ['general/actions/run-all'],
   'run-anything': ['general/general/run-anything'],
-  'run-database-script': ['database/expui/run-database-script', 'database/run-database-script'],
+  'run-database-script': [
+    'database/expui/run-database-script',
+    'database/run-database-script',
+  ],
   'run-error': ['editor-icons/run-error'],
   'run-failed': ['editor-icons/run-failed'],
   'run-http-request': ['run-configurations/run-http-request'],
@@ -2057,12 +3559,18 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'sbt-shell': ['general/tool-windows/sbt-shell'],
   scala: ['file-types/scala'],
   'scala-profiler': ['general/tool-windows/scala-profiler'],
-  'scheduled-event': ['database/expui/scheduled-event', 'database/scheduled-event'],
+  'scheduled-event': [
+    'database/expui/scheduled-event',
+    'database/scheduled-event',
+  ],
   schema: ['database/expui/schema', 'database/schema'],
   'sci-view': ['general/tool-windows/sci-view'],
   scratch: ['file-types/scratch'],
   scratches: ['file-types/scratches'],
-  'scripting-script': ['database/expui/scripting-script', 'database/scripting-script'],
+  'scripting-script': [
+    'database/expui/scripting-script',
+    'database/scripting-script',
+  ],
   'scroll-down': ['database/scroll-down', 'general/general/scroll-down'],
   'scroll-up': ['database/scroll-up', 'general/general/scroll-up'],
   scss: ['file-types/scss'],
@@ -2080,7 +3588,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'separator-horizontal': ['general/general/separator-horizontal'],
   sequence: ['database/expui/sequence', 'database/sequence'],
   server: ['nodes/server'],
-  'server-objects-group': ['database/expui/server-objects-group', 'database/server-objects-group'],
+  'server-objects-group': [
+    'database/expui/server-objects-group',
+    'database/server-objects-group',
+  ],
   services: ['general/tool-windows/services'],
   servlet: ['nodes/servlet'],
   set: ['database/expui/set', 'database/set'],
@@ -2118,7 +3629,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'sort-by-visibility': ['general/general/sort-by-visibility'],
   'sort-history': ['general/inline/sort-history'],
   'sorted-set': ['database/expui/sorted-set', 'database/sorted-set'],
-  'sorted-set-key': ['database/expui/sorted-set-key', 'database/sorted-set-key'],
+  'sorted-set-key': [
+    'database/expui/sorted-set-key',
+    'database/sorted-set-key',
+  ],
   'source-map': ['file-types/source-map'],
   'source-root': ['nodes/source-root'],
   'space-tool-window': ['general/tool-windows/space-tool-window'],
@@ -2129,12 +3643,24 @@ export const slugIndex: Record<string, IconPathname[]> = {
   spring: ['general/tool-windows/spring'],
   sql: ['database/expui/sql', 'file-types/sql'],
   'sql-folder': ['database/expui/sql-folder'],
-  'sql-group-by-type': ['database/expui/sql-group-by-type', 'database/sql-group-by-type'],
-  'sql-other-statement': ['database/expui/sql-other-statement', 'database/sql-other-statement'],
+  'sql-group-by-type': [
+    'database/expui/sql-group-by-type',
+    'database/sql-group-by-type',
+  ],
+  'sql-other-statement': [
+    'database/expui/sql-other-statement',
+    'database/sql-other-statement',
+  ],
   'sql-script': ['database/expui/sql-script'],
-  'sql-select-statement': ['database/expui/sql-select-statement', 'database/sql-select-statement'],
+  'sql-select-statement': [
+    'database/expui/sql-select-statement',
+    'database/sql-select-statement',
+  ],
   'sql-server': ['database/sql-server'],
-  'sqldml-statement': ['database/expui/sqldml-statement', 'database/sqldml-statement'],
+  'sqldml-statement': [
+    'database/expui/sqldml-statement',
+    'database/sqldml-statement',
+  ],
   sqlite: ['database/sqlite'],
   star: ['nodes/star'],
   'star-empty': ['nodes/star-empty'],
@@ -2163,8 +3689,13 @@ export const slugIndex: Record<string, IconPathname[]> = {
   success: ['general/status/success'],
   'success-dialog': ['general/status/success-dialog'],
   'success-login': ['general/status/success-login'],
-  'suggested-refactoring-bulb': ['editor-icons/suggested-refactoring-bulb', 'general/actions/suggested-refactoring-bulb'],
-  'suggested-refactoring-disabled': ['editor-icons/suggested-refactoring-disabled'],
+  'suggested-refactoring-bulb': [
+    'editor-icons/suggested-refactoring-bulb',
+    'general/actions/suggested-refactoring-bulb',
+  ],
+  'suggested-refactoring-disabled': [
+    'editor-icons/suggested-refactoring-disabled',
+  ],
   sun: ['database/sun'],
   supertypes: ['general/general/supertypes'],
   svelte: ['file-types/svelte'],
@@ -2209,7 +3740,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'test-unknown': ['run/test-unknown'],
   text: ['file-types/text'],
   'text-area': ['nodes/text-area'],
-  'text-auto-generate': ['database/expui/text-auto-generate', 'database/text-auto-generate'],
+  'text-auto-generate': [
+    'database/expui/text-auto-generate',
+    'database/text-auto-generate',
+  ],
   'thread-at-breakpoint': ['debugger/thread-at-breakpoint'],
   'thread-current': ['debugger/thread-current'],
   'thread-frozen': ['debugger/thread-frozen'],
@@ -2223,11 +3757,17 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'toggle-skip-tests-mode': ['build/toggle-skip-tests-mode'],
   'toggle-visibility': ['general/actions/toggle-visibility'],
   'tool-window-bazel': ['general/tool-windows/tool-window-bazel'],
-  'tool-window-bean-validator': ['general/tool-windows/tool-window-bean-validator'],
+  'tool-window-bean-validator': [
+    'general/tool-windows/tool-window-bean-validator',
+  ],
   'tool-window-big-data': ['general/tool-windows/tool-window-big-data'],
   'tool-window-cadence': ['general/tool-windows/tool-window-cadence'],
-  'tool-window-cell-explorer': ['general/tool-windows/tool-window-cell-explorer'],
-  'tool-window-check-details': ['general/tool-windows/tool-window-check-details'],
+  'tool-window-cell-explorer': [
+    'general/tool-windows/tool-window-cell-explorer',
+  ],
+  'tool-window-check-details': [
+    'general/tool-windows/tool-window-check-details',
+  ],
   'tool-window-clock': ['general/tool-windows/tool-window-clock'],
   'tool-window-console': ['database/expui/tool-window-console'],
   'tool-window-dart': ['general/tool-windows/tool-window-dart'],
@@ -2235,29 +3775,43 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'tool-window-default': ['general/tool-windows/tool-window-default'],
   'tool-window-django': ['general/tool-windows/tool-window-django'],
   'tool-window-duplicates': ['general/tool-windows/tool-window-duplicates'],
-  'tool-window-edu-course-task': ['general/tool-windows/tool-window-edu-course-task'],
+  'tool-window-edu-course-task': [
+    'general/tool-windows/tool-window-edu-course-task',
+  ],
   'tool-window-ejb': ['general/tool-windows/tool-window-ejb'],
   'tool-window-hadoop': ['general/tool-windows/tool-window-hadoop'],
   'tool-window-hugging-face': ['general/tool-windows/tool-window-hugging-face'],
-  'tool-window-j-pab-structure': ['general/tool-windows/tool-window-j-pab-structure'],
+  'tool-window-j-pab-structure': [
+    'general/tool-windows/tool-window-j-pab-structure',
+  ],
   'tool-window-json-path': ['general/tool-windows/tool-window-json-path'],
-  'tool-window-kotlin-notebooks': ['general/tool-windows/tool-window-kotlin-notebooks'],
+  'tool-window-kotlin-notebooks': [
+    'general/tool-windows/tool-window-kotlin-notebooks',
+  ],
   'tool-window-kubernetes': ['general/tool-windows/tool-window-kubernetes'],
   'tool-window-meson': ['general/tool-windows/tool-window-meson'],
-  'tool-window-model-checker': ['general/tool-windows/tool-window-model-checker'],
+  'tool-window-model-checker': [
+    'general/tool-windows/tool-window-model-checker',
+  ],
   'tool-window-platform-io': ['general/tool-windows/tool-window-platform-io'],
   'tool-window-pub-serve': ['general/tool-windows/tool-window-pub-serve'],
   'tool-window-r-graph': ['general/tool-windows/tool-window-r-graph'],
   'tool-window-r-html': ['general/tool-windows/tool-window-r-html'],
   'tool-window-r-packages': ['general/tool-windows/tool-window-r-packages'],
   'tool-window-record-debug': ['general/tool-windows/tool-window-record-debug'],
-  'tool-window-run-with-coverage': ['general/tool-windows/tool-window-run-with-coverage'],
+  'tool-window-run-with-coverage': [
+    'general/tool-windows/tool-window-run-with-coverage',
+  ],
   'tool-window-sql-generator': ['database/expui/tool-window-sql-generator'],
   'tool-window-team-city': ['general/tool-windows/tool-window-team-city'],
   'tool-window-test-spark': ['general/tool-windows/tool-window-test-spark'],
   'tool-window-timer': ['general/tool-windows/tool-window-timer'],
-  'tool-window-type-trace-view': ['general/tool-windows/tool-window-type-trace-view'],
-  'tool-window-variable-view': ['general/tool-windows/tool-window-variable-view'],
+  'tool-window-type-trace-view': [
+    'general/tool-windows/tool-window-type-trace-view',
+  ],
+  'tool-window-variable-view': [
+    'general/tool-windows/tool-window-variable-view',
+  ],
   'tool-window-you-track': ['general/tool-windows/tool-window-you-track'],
   'toolwindow-flink': ['general/tool-windows/toolwindow-flink'],
   'trace-stream': ['run/trace-stream'],
@@ -2277,7 +3831,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   unlocked: ['general/general/unlocked'],
   'unselect-all': ['general/actions/unselect-all'],
   unshelve: ['vcs/unshelve'],
-  'unspecified-cluster': ['database/expui/unspecified-cluster', 'database/unspecified-cluster'],
+  'unspecified-cluster': [
+    'database/expui/unspecified-cluster',
+    'database/unspecified-cluster',
+  ],
   up: ['general/general/up'],
   'up-folder': ['nodes/up-folder'],
   update: ['vcs/update'],
@@ -2295,9 +3852,18 @@ export const slugIndex: Record<string, IconPathname[]> = {
   vcs: ['general/general/vcs', 'vcs/vcs'],
   vertica: ['database/vertica'],
   'view-breakpoints': ['run/view-breakpoints'],
-  'view-parameters': ['database/expui/view-parameters', 'database/view-parameters'],
-  'virtual-column': ['database/expui/virtual-column', 'database/virtual-column'],
-  'virtual-folder': ['database/expui/virtual-folder', 'database/virtual-folder'],
+  'view-parameters': [
+    'database/expui/view-parameters',
+    'database/view-parameters',
+  ],
+  'virtual-column': [
+    'database/expui/virtual-column',
+    'database/virtual-column',
+  ],
+  'virtual-folder': [
+    'database/expui/virtual-folder',
+    'database/virtual-folder',
+  ],
   'virtual-foreign-key': ['database/expui/virtual-foreign-key'],
   'virtual-key': ['database/virtual-key'],
   'virtual-view': ['database/expui/virtual-view', 'database/virtual-view'],

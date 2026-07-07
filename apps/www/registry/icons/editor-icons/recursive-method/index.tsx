@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type RecursiveMethodProps = SvgProps;
+export type RecursiveMethodProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const RecursiveMethodLight: FC<SvgProps> = ({
+const RecursiveMethodLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -35,7 +39,9 @@ const RecursiveMethodLight: FC<SvgProps> = ({
   </svg>
 );
 
-const RecursiveMethodDark: FC<SvgProps> = ({
+const RecursiveMethodDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -63,7 +69,7 @@ const RecursiveMethodDark: FC<SvgProps> = ({
 );
 
 export const RecursiveMethod: FC<RecursiveMethodProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -74,8 +80,8 @@ export const RecursiveMethod: FC<RecursiveMethodProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

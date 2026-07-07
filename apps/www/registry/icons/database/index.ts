@@ -430,7 +430,6 @@ export { Yugabyte } from './yugabyte';
 export type { YugabyteProps } from './yugabyte';
 export { Redis } from './redis';
 export type { RedisProps } from './redis';
-export type { SvgMode, SvgProps, SvgSize } from '../utils';
 
 // expui icon pack (coexists with the root database icons).
 export * from './expui';

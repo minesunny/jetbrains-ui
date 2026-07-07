@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../../utils';
 
-export type ProfileMemoryProps = SvgProps;
+export type ProfileMemoryProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const ProfileMemoryLight: FC<SvgProps> = ({
+const ProfileMemoryLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -52,7 +56,9 @@ const ProfileMemoryLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ProfileMemoryDark: FC<SvgProps> = ({
+const ProfileMemoryDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -97,7 +103,7 @@ const ProfileMemoryDark: FC<SvgProps> = ({
 );
 
 export const ProfileMemory: FC<ProfileMemoryProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -108,8 +114,8 @@ export const ProfileMemory: FC<ProfileMemoryProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

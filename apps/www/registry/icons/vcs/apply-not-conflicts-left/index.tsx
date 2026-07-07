@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../utils';
 
-export type ApplyNotConflictsLeftProps = SvgProps;
+export type ApplyNotConflictsLeftProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const ApplyNotConflictsLeftLight: FC<SvgProps> = ({
+const ApplyNotConflictsLeftLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -34,7 +38,9 @@ const ApplyNotConflictsLeftLight: FC<SvgProps> = ({
   </svg>
 );
 
-const ApplyNotConflictsLeftDark: FC<SvgProps> = ({
+const ApplyNotConflictsLeftDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -61,7 +67,7 @@ const ApplyNotConflictsLeftDark: FC<SvgProps> = ({
 );
 
 export const ApplyNotConflictsLeft: FC<ApplyNotConflictsLeftProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -72,8 +78,8 @@ export const ApplyNotConflictsLeft: FC<ApplyNotConflictsLeftProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}

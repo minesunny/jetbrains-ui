@@ -2,13 +2,17 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
-import { type SvgProps, sizeMap } from '../../../utils';
 
-export type DdlDataSourceOverlayProps = SvgProps;
+export type DdlDataSourceOverlayProps = Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+  mode?: 'light' | 'dark';
+};
 
-const DdlDataSourceOverlayLight: FC<SvgProps> = ({
+const DdlDataSourceOverlayLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -42,7 +46,9 @@ const DdlDataSourceOverlayLight: FC<SvgProps> = ({
   </svg>
 );
 
-const DdlDataSourceOverlayDark: FC<SvgProps> = ({
+const DdlDataSourceOverlayDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
   size,
   className,
   role,
@@ -77,7 +83,7 @@ const DdlDataSourceOverlayDark: FC<SvgProps> = ({
 );
 
 export const DdlDataSourceOverlay: FC<DdlDataSourceOverlayProps> = ({
-  size = 'md',
+  size = 16,
   mode = 'light',
   className,
   'aria-label': ariaLabel,
@@ -88,8 +94,8 @@ export const DdlDataSourceOverlay: FC<DdlDataSourceOverlayProps> = ({
 
   return (
     <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
+      size={size}
+      className={cn('inline-block shrink-0', className)}
       role={ariaLabel ? 'img' : 'presentation'}
       aria-label={ariaLabel}
       aria-hidden={!ariaLabel}
