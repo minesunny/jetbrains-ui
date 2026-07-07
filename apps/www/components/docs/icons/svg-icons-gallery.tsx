@@ -23,6 +23,18 @@ interface SvgIconsGalleryProps {
   searchPlaceholder?: string;
 }
 
+// Case-insensitive subsequence match: every char of `query` appears in `target`
+// in order (fzf-style). Lets "dbcommit" match "database/commit".
+function fuzzyMatch(query: string, target: string): boolean {
+  const q = query.toLowerCase();
+  const t = target.toLowerCase();
+  let qi = 0;
+  for (let ti = 0; ti < t.length && qi < q.length; ti++) {
+    if (t[ti] === q[qi]) qi++;
+  }
+  return qi === q.length;
+}
+
 export function SvgIconsGallery({
   icons,
   searchPlaceholder = 'Search icons...',
@@ -34,11 +46,10 @@ export function SvgIconsGallery({
 
   const filteredIcons = useMemo(() => {
     if (!searchQuery) return [...icons];
-    const query = searchQuery.toLowerCase();
     return icons.filter(
       (icon) =>
-        icon.name.toLowerCase().includes(query) ||
-        (icon.label?.toLowerCase().includes(query) ?? false),
+        fuzzyMatch(searchQuery, icon.name) ||
+        (icon.label ? fuzzyMatch(searchQuery, icon.label) : false),
     );
   }, [icons, searchQuery]);
 
@@ -155,6 +166,15 @@ export function SvgIconsGallery({
                     <div className="flex items-center gap-1.5 mb-1.5">
                       <code className="flex-1 text-[9px] p-1.5 rounded bg-fd-muted font-mono truncate">{`<SVG name="${icon.name}" />`}</code>
                       <CopyButton text={`<SVG name="${icon.name}" />`} />
+                    </div>
+                    <p className="text-[9px] text-fd-muted-foreground mb-1">
+                      Install
+                    </p>
+                    <div className="flex items-center gap-1.5">
+                      <code className="flex-1 text-[9px] p-1.5 rounded bg-fd-muted font-mono truncate">{`npx shadcn@latest add icons-${icon.name.replace(/\//g, '-')}`}</code>
+                      <CopyButton
+                        text={`npx shadcn@latest add icons-${icon.name.replace(/\//g, '-')}`}
+                      />
                     </div>
                   </div>
                 )}
