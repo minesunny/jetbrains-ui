@@ -1,0 +1,98 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type SvgProps, sizeMap } from '../../../utils';
+
+export type ProjectionProps = SvgProps;
+
+const ProjectionLight: FC<SvgProps> = ({
+  size,
+  className,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3 2C1.89543 2 1 2.89543 1 4V12C1 13.1046 1.89543 14 3 14H8V13H6V6H10V8H11V6H14V8H15V4C15 2.89543 14.1046 2 13 2H3ZM10 3H6V5H10V3ZM3 3H5V5H2V4C2 3.44772 2.44772 3 3 3ZM2 12V6H5V13H3C2.44772 13 2 12.5523 2 12ZM14 4V5H11V3H13C13.5523 3 14 3.44772 14 4Z"
+      fill="#6C707E"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9 9H10V10L9 10V9ZM12 10H11V9H12V10ZM14 10H13V9H14V10ZM15 10V9H16V10H15ZM10 11V12H9V11H10ZM15 12V11H16V12H15ZM10 13V14H9V13H10ZM15 14V13H16V14H15ZM9 15H10L10 16H9V15ZM11 15H12V16H11V15ZM13 15H14V16H13V15ZM15 15H16V16H15V15Z"
+      fill="#3574F0"
+    />
+  </svg>
+);
+
+const ProjectionDark: FC<SvgProps> = ({
+  size,
+  className,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3 2C1.89543 2 1 2.89543 1 4V12C1 13.1046 1.89543 14 3 14H8V13H6V6H10V8H11V6H14V8H15V4C15 2.89543 14.1046 2 13 2H3ZM10 3H6V5H10V3ZM3 3H5V5H2V4C2 3.44772 2.44772 3 3 3ZM2 12V6H5V13H3C2.44772 13 2 12.5523 2 12ZM14 4V5H11V3H13C13.5523 3 14 3.44772 14 4Z"
+      fill="#CED0D6"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9 9H10V10L9 10V9ZM12 10H11V9H12V10ZM14 10H13V9H14V10ZM15 10V9H16V10H15ZM10 11V12H9V11H10ZM15 12V11H16V12H15ZM10 13V14H9V13H10ZM15 14V13H16V14H15ZM9 15H10L10 16H9V15ZM11 15H12V16H11V15ZM13 15H14V16H13V15ZM15 15H16V16H15V15Z"
+      fill="#548AF7"
+    />
+  </svg>
+);
+
+export const Projection: FC<ProjectionProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? ProjectionLight : ProjectionDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};
+
+export default Projection;

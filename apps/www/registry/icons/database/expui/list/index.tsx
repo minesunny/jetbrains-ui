@@ -1,0 +1,90 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type SvgProps, sizeMap } from '../../../utils';
+
+export type ListProps = SvgProps;
+
+const ListLight: FC<SvgProps> = ({
+  size,
+  className,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    <path
+      d="M5 2C4.44772 2 4 2.44772 4 3V13C4 13.5523 4.44772 14 5 14H7V13H5V3L7 3V2H5Z"
+      fill="#6C707E"
+    />
+    <path
+      d="M9 3H11V13H9V14H11C11.5523 14 12 13.5523 12 13V3C12 2.44772 11.5523 2 11 2H9V3Z"
+      fill="#6C707E"
+    />
+  </svg>
+);
+
+const ListDark: FC<SvgProps> = ({
+  size,
+  className,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    <path
+      d="M5 2C4.44772 2 4 2.44772 4 3V13C4 13.5523 4.44772 14 5 14H7V13H5V3L7 3V2H5Z"
+      fill="#CED0D6"
+    />
+    <path
+      d="M9 3H11V13H9V14H11C11.5523 14 12 13.5523 12 13V3C12 2.44772 11.5523 2 11 2H9V3Z"
+      fill="#CED0D6"
+    />
+  </svg>
+);
+
+export const List: FC<ListProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? ListLight : ListDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};
+
+export default List;

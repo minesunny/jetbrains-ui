@@ -27,7 +27,10 @@ interface Entry {
 // Matches: export { Redis } from './redis';
 //      and: export { AiAssistant } from './ai-asisstant/ai-assistant';
 const EXPORT_RE =
-  /^\s*export\s+\{\s*([A-Z][A-Za-z0-9_]*)\s*\}\s*from\s+['"]\.\/([^'"]+)['"]\s*;?\s*$/;
+  /^\s*export\s+\{\s*([A-Z][A-Za-z0-9_]*)\s*\}\s+from\s+['"]\.\/([^'"]+)['"]\s*;?\s*$/;
+
+// Matches: export * from './expui'  (wildcard re-export of a subcategory barrel)
+const WILDCARD_RE = /^\s*export\s+\*\s+from\s+['"]\.\/([^'"]+)['"]\s*;?\s*$/;
 
 async function dirHasBarrel(d: string): Promise<boolean> {
   try {
@@ -60,6 +63,34 @@ async function collectEntries(): Promise<Entry[]> {
       const [, component, relPath] = match;
       const pathname = `${domainOnDisk}/${relPath}`.toLowerCase();
       entries.push({ pathname, domain: domainOnDisk, component });
+    }
+
+    // Follow `export * from './<sub>'` — resolve the subcategory barrel so
+    // namespaced packs (e.g. database/expui/<icon>) are reachable via the
+    // root domain barrel (loader still imports the root, so chunking holds).
+    for (const line of barrelSrc.split('\n')) {
+      const wc = WILDCARD_RE.exec(line);
+      if (!wc) continue;
+      const sub = wc[1];
+      let subSrc: string;
+      try {
+        subSrc = await fs.readFile(
+          path.join(domainDir, sub, 'index.ts'),
+          'utf8',
+        );
+      } catch {
+        continue;
+      }
+      for (const subLine of subSrc.split('\n')) {
+        const sm = EXPORT_RE.exec(subLine);
+        if (!sm) continue;
+        const [, component, relPath] = sm;
+        entries.push({
+          pathname: `${domainOnDisk}/${sub}/${relPath}`.toLowerCase(),
+          domain: domainOnDisk,
+          component,
+        });
+      }
     }
   }
 

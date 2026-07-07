@@ -1,0 +1,122 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type SvgProps, sizeMap } from '../../../utils';
+
+export type IndexClusterProps = SvgProps;
+
+const IndexClusterLight: FC<SvgProps> = ({
+  size,
+  className,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    <path
+      d="M3.5 9.5V3.5H7.5V9.5H3.5Z"
+      stroke="#6C707E"
+      strokeLinejoin="round"
+    />
+    <path d="M4 5.5H7" stroke="#6C707E" />
+    <path d="M4 7.5H7" stroke="#6C707E" />
+    <path
+      d="M2 3.5C2 2.67157 2.67157 2 3.5 2H12.5C13.3284 2 14 2.67157 14 3.5V6.5H15V3.5C15 2.11929 13.8807 1 12.5 1H3.5C2.11929 1 1 2.11929 1 3.5V12.5C1 13.8807 2.11929 15 3.5 15H10.5V14H3.5C2.67157 14 2 13.3284 2 12.5V3.5Z"
+      fill="#6C707E"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12 10H13.5C13.7761 10 14 10.2239 14 10.5V15H13V11H12V10Z"
+      fill="#3574F0"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M15.5 16H11.5V15H15.5V16Z"
+      fill="#3574F0"
+    />
+    <path d="M12.5 7.5H14V9H12.5V7.5Z" fill="#3574F0" />
+  </svg>
+);
+
+const IndexClusterDark: FC<SvgProps> = ({
+  size,
+  className,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    <path
+      d="M3.5 9.5V3.5H7.5V9.5H3.5Z"
+      stroke="#CED0D6"
+      strokeLinejoin="round"
+    />
+    <path d="M4 5.5H7" stroke="#CED0D6" />
+    <path d="M4 7.5H7" stroke="#CED0D6" />
+    <path
+      d="M2 3.5C2 2.67157 2.67157 2 3.5 2H12.5C13.3284 2 14 2.67157 14 3.5V6.5H15V3.5C15 2.11929 13.8807 1 12.5 1H3.5C2.11929 1 1 2.11929 1 3.5V12.5C1 13.8807 2.11929 15 3.5 15H10.5V14H3.5C2.67157 14 2 13.3284 2 12.5V3.5Z"
+      fill="#CED0D6"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12 10H13.5C13.7761 10 14 10.2239 14 10.5V15H13V11H12V10Z"
+      fill="#548AF7"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M15.5 16H11.5V15H15.5V16Z"
+      fill="#548AF7"
+    />
+    <path d="M12.5 7.5H14V9H12.5V7.5Z" fill="#548AF7" />
+  </svg>
+);
+
+export const IndexCluster: FC<IndexClusterProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}) => {
+  const SvgComponent = mode === 'light' ? IndexClusterLight : IndexClusterDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};
+
+export default IndexCluster;

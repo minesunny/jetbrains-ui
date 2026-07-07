@@ -22,6 +22,16 @@ describe('SVG dispatcher — real (smoke)', () => {
     );
   }, 10000);
 
+  it('renders an expui icon via the subcategory pathname', async () => {
+    const { container } = render(<SVG name="database/expui/access-method" />);
+    await waitFor(
+      () => {
+        expect(container.querySelector('svg')).toBeInTheDocument();
+      },
+      { timeout: 5000 },
+    );
+  }, 10000);
+
   it('throws on unknown pathname', () => {
     expect(() => render(<SVG name="nope/nope" />)).toThrow(/Unknown icon/);
   });

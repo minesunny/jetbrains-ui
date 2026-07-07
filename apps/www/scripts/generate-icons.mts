@@ -30,10 +30,11 @@ const CATEGORY_MAP: Record<string, string> = {
 };
 
 // Categories where subdirectories should be flattened into the category root
+// Note: 'database' is NOT flattened so icon packs can be namespaced under
+// subcategories (e.g. database/expui/<icon>) and coexist with the root icons.
 const FLATTEN_CATEGORIES = new Set([
   'breakpoints',
   'build',
-  'database',
   'debugger',
   'editor-icons',
   'file-types',

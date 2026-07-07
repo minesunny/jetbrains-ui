@@ -1,0 +1,117 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { FC } from 'react';
+import { cn } from '@/lib/utils';
+import { type SvgProps, sizeMap } from '../../../utils';
+
+export type ColumnGoldKeyIndexProps = SvgProps;
+
+const ColumnGoldKeyIndexLight: FC<SvgProps> = ({
+  size,
+  className,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    <path
+      d="M2 4C2 3.44772 2.44772 3 3 3H5V13H3C2.44772 13 2 12.5523 2 12V4Z"
+      fill="#EDF3FF"
+    />
+    <path
+      d="M13 2H6V3H13C13.5523 3 14 3.44772 14 4V6.03544C14.3531 6.08595 14.6891 6.18915 15 6.33682V4C15 2.89543 14.1046 2 13 2Z"
+      fill="#6C707E"
+    />
+    <path d="M6 13V14H12V13H6Z" fill="#6C707E" />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3 2C1.89543 2 1 2.89543 1 4V12C1 13.1046 1.89543 14 3 14H6V2H3ZM5 3H3C2.44772 3 2 3.44772 2 4V12C2 12.5523 2.44772 13 3 13H5V3Z"
+      fill="#3574F0"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M14 11.95C15.1411 11.7184 16 10.7095 16 9.5C16 8.11929 14.8807 7 13.5 7C12.1193 7 11 8.11929 11 9.5C11 10.7095 11.8589 11.7184 13 11.95V16H14V15H16V14H14V11.95ZM15 9.5C15 10.3284 14.3284 11 13.5 11C12.6716 11 12 10.3284 12 9.5C12 8.67157 12.6716 8 13.5 8C14.3284 8 15 8.67157 15 9.5Z"
+      fill="#E66D17"
+    />
+  </svg>
+);
+
+const ColumnGoldKeyIndexDark: FC<SvgProps> = ({
+  size,
+  className,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    <path
+      d="M2 4C2 3.44772 2.44772 3 3 3H5V13H3C2.44772 13 2 12.5523 2 12V4Z"
+      fill="#25324D"
+    />
+    <path
+      d="M13 2H6V3H13C13.5523 3 14 3.44772 14 4V6.03544C14.3531 6.08595 14.6891 6.18915 15 6.33682V4C15 2.89543 14.1046 2 13 2Z"
+      fill="#CED0D6"
+    />
+    <path d="M6 13V14H12V13H6Z" fill="#CED0D6" />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3 2C1.89543 2 1 2.89543 1 4V12C1 13.1046 1.89543 14 3 14H6V2H3ZM5 3H3C2.44772 3 2 3.44772 2 4V12C2 12.5523 2.44772 13 3 13H5V3Z"
+      fill="#548AF7"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M14 11.95C15.1411 11.7184 16 10.7095 16 9.5C16 8.11929 14.8807 7 13.5 7C12.1193 7 11 8.11929 11 9.5C11 10.7095 11.8589 11.7184 13 11.95V16H14V15H16V14H14V11.95ZM15 9.5C15 10.3284 14.3284 11 13.5 11C12.6716 11 12 10.3284 12 9.5C12 8.67157 12.6716 8 13.5 8C14.3284 8 15 8.67157 15 9.5Z"
+      fill="#F2C55C"
+    />
+  </svg>
+);
+
+export const ColumnGoldKeyIndex: FC<ColumnGoldKeyIndexProps> = ({
+  size = 'md',
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? ColumnGoldKeyIndexLight : ColumnGoldKeyIndexDark;
+
+  return (
+    <SvgComponent
+      size={sizeMap[size]}
+      className={cn('inline-block flex-shrink-0', className)}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};
+
+export default ColumnGoldKeyIndex;
