@@ -120,18 +120,13 @@ async function ensureRegistryJson() {
 }
 
 async function buildRegistryFile() {
-<<<<<<< HEAD
-  await fs.mkdir(path.dirname(REGISTRY_JSON_PATH), { recursive: true });
+  await ensureRegistryJson();
   let registryJsonContent: string;
   try {
     registryJsonContent = await fs.readFile(REGISTRY_JSON_PATH, 'utf-8');
   } catch {
     registryJsonContent = '{ "items": [] }';
   }
-=======
-  await ensureRegistryJson();
-  const registryJsonContent = await fs.readFile(REGISTRY_JSON_PATH, 'utf-8');
->>>>>>> cb03b549 (fix: auto-create registry.json when missing in build script)
   const registryData = JSON.parse(registryJsonContent);
   const registryFolderPath = path.join(process.cwd(), 'registry');
   const newItems = (await getRegistryItemsFromFolder(registryFolderPath)).map(
@@ -142,10 +137,7 @@ async function buildRegistryFile() {
     normalizeRegistryItem({
       name: 'index',
       type: 'registry:style',
-      dependencies: [
-        'tw-animate-css',
-        'class-variance-authority',
-      ],
+      dependencies: ['tw-animate-css', 'class-variance-authority'],
       registryDependencies: ['utils'],
       cssVars: {},
       files: [],
@@ -349,17 +341,25 @@ async function buildRegistry() {
                 console.error(`Error reading file ${filePath}:`, error);
               }
 
-              if (typeof file === 'string') {
-                return {
-                  path: filePath,
-                  type: 'unknown',
-                  target: '',
-                  content,
-                };
+              let fileType =
+                typeof file === 'string' ? 'unknown' : file.type || 'unknown';
+              let fileTarget =
+                typeof file === 'string' ? '' : file.target || '';
+
+              if (item.name.startsWith('icons-')) {
+                if (fileType === 'registry:source' || fileType === 'unknown') {
+                  fileType = 'registry:file';
+                }
+                if (!fileTarget) {
+                  const relPath = filePath.replace(/^registry\/icons\//i, '');
+                  fileTarget = `components/jetbrains-ui/icons/${relPath}`;
+                }
               }
 
               return {
-                ...file,
+                path: filePath,
+                type: fileType,
+                target: fileTarget,
                 content,
               };
             },
