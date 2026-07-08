@@ -32,12 +32,27 @@ describe('SVG dispatcher — real (smoke)', () => {
     );
   }, 10000);
 
-  it('throws on unknown pathname', () => {
-    expect(() => render(<SVG name="nope/nope" />)).toThrow(/Unknown icon/);
+  it('renders an empty fallback (no throw) for unknown pathname', () => {
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const { container } = render(<SVG name="nope/nope" />);
+    // No <svg> rendered — just the sized fallback span.
+    expect(container.querySelector('svg')).not.toBeInTheDocument();
+    expect(container.querySelector('[data-slot="svg"]')).toBeInTheDocument();
+    expect(warn).toHaveBeenCalledWith(expect.stringMatching(/Unknown icon name/));
+    warn.mockRestore();
   });
 
-  it('throws on ambiguous bare slug with candidate list', () => {
+  it('warns and picks the first candidate for an ambiguous bare slug', async () => {
     // 'commit' exists in vcs, database, and general/tool-windows.
-    expect(() => render(<SVG name="commit" />)).toThrow(/Ambiguous/);
-  });
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const { container } = render(<SVG name="commit" />);
+    await waitFor(
+      () => {
+        expect(container.querySelector('svg')).toBeInTheDocument();
+      },
+      { timeout: 5000 },
+    );
+    expect(warn).toHaveBeenCalledWith(expect.stringMatching(/Ambiguous/));
+    warn.mockRestore();
+  }, 10000);
 });

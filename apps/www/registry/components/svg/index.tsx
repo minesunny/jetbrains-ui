@@ -33,23 +33,23 @@ interface SVGProps {
  * - Pathname form (`domain/.../icon`) is looked up directly in `iconRegistry`.
  * - Bare slug form is resolved via `slugIndex`; throws if ambiguous.
  */
-function resolvePathname(name: string): IconPathname {
+// Resolve a `name` (pathname or bare slug) to a manifest pathname.
+// Returns `null` for unknown/ambiguous names so <SVG> can render a graceful
+// fallback instead of throwing — the codebase has placeholder usages
+// (e.g. header's github icon, icon-wrappers "may not exist" entries) that
+// rely on missing icons not crashing the page.
+function resolvePathname(name: string): IconPathname | null {
   const key = name.toLowerCase();
 
   if (key.includes('/')) {
-    if (!(key in iconRegistry)) {
-      throw new Error(`[SVG] Unknown icon pathname: "${name}"`);
-    }
-    return key as IconPathname;
+    return key in iconRegistry ? (key as IconPathname) : null;
   }
 
   const candidates = slugIndex[key];
-  if (!candidates || candidates.length === 0) {
-    throw new Error(`[SVG] Unknown icon name: "${name}"`);
-  }
+  if (!candidates || candidates.length === 0) return null;
   if (candidates.length > 1) {
-    throw new Error(
-      `[SVG] Ambiguous icon name "${name}" matches: ${candidates.join(', ')}. Use the full pathname (e.g. "${candidates[0]}").`,
+    console.warn(
+      `[SVG] Ambiguous icon name "${name}" matches: ${candidates.join(', ')}. Using the first; pass the full pathname to disambiguate.`,
     );
   }
   return candidates[0];
@@ -92,6 +92,19 @@ export function SVG({
   const renderedSize = typeof size === 'number' ? size : sizeMap[size];
 
   const pathname = resolvePathname(name);
+  if (!pathname) {
+    if (process.env.NODE_ENV !== 'production') {
+      console.warn(`[SVG] Unknown icon name: "${name}" — rendering empty fallback.`);
+    }
+    return (
+      <span
+        data-slot="svg"
+        aria-hidden
+        className="inline-flex shrink-0 items-center justify-center align-middle leading-none"
+        style={{ width: `${renderedSize}px`, height: `${renderedSize}px` }}
+      />
+    );
+  }
   const LazyIcon = getLazy(pathname);
 
   return (
