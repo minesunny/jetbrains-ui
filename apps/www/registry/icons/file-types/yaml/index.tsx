@@ -29,6 +29,14 @@ export const Yaml = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
+      className="fill-[#FFF7F7] dark:fill-[#402929] stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
+    />
     <path
       d="M8.593 11.5H7.45V8.845L5 4.5h1.258l1.58 2.88.19.395.19-.405L9.756 4.5H11L8.593 8.835z"
       className="fill-[#DB3B4B] dark:fill-[#DB5C5C]"

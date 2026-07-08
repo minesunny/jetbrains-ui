@@ -30,8 +30,8 @@ export const Filter = ({
     {...props}
   >
     <path
-      strokeLinejoin="round"
       d="M13.5 2.5h-11l4 5V14l3-2V7.5z"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

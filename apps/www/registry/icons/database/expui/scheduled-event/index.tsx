@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { cn } from '@/lib/utils';
 
 export type ScheduledEventProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,31 +10,90 @@ export type ScheduledEventProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-export const ScheduledEvent = ({
-  size = 16,
-  mode: _mode,
+const ScheduledEventLight: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
+  size,
   className,
+  role,
   'aria-label': ariaLabel,
-  ...props
-}: ScheduledEventProps) => (
+  'aria-hidden': ariaHidden,
+}) => (
   <svg
     width={size}
     height={size}
     viewBox="0 0 16 16"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={cn('inline-block shrink-0', className)}
-    role={ariaLabel ? 'img' : 'presentation'}
+    className={className}
+    role={role}
     aria-label={ariaLabel}
-    aria-hidden={!ariaLabel}
-    {...props}
+    aria-hidden={ariaHidden}
   >
-    <path d="M13 8.00006C13 10.7615 10.7614 13.0001 8 13.0001L8 8L13 8.00006Z" />
+    <circle cx={8} cy={8} r={6.5} stroke="#6C707E" />
+    <mask id="path-2-inside-1_2624_35656" fill="white">
+      <path d="M13 8.00006C13 10.7615 10.7614 13.0001 8 13.0001L8 8L13 8.00006Z" />
+    </mask>
     <path
       d="M13 8.00006H14V7.00007L13 7.00006L13 8.00006ZM8 13.0001L7 13.0001L7 14.0001H8V13.0001ZM8 8L8.00002 7L7 6.99999L7 8L8 8ZM12 8.00006C12 10.2092 10.2091 12.0001 8 12.0001V14.0001C11.3137 14.0001 14 11.3138 14 8.00006H12ZM9 13.0001L9 8L7 8L7 13.0001L9 13.0001ZM7.99999 9L13 9.00006L13 7.00006L8.00002 7L7.99999 9Z"
-      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+      fill="#6C707E"
+      mask="url(#path-2-inside-1_2624_35656)"
     />
   </svg>
 );
+
+const ScheduledEventDark: FC<
+  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
+> = ({
+  size,
+  className,
+  role,
+  'aria-label': ariaLabel,
+  'aria-hidden': ariaHidden,
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    role={role}
+    aria-label={ariaLabel}
+    aria-hidden={ariaHidden}
+  >
+    <circle cx={8} cy={8} r={6.5} stroke="#CED0D6" />
+    <mask id="path-2-inside-1_2624_35758" fill="white">
+      <path d="M13 8.00006C13 10.7615 10.7614 13.0001 8 13.0001L8 8L13 8.00006Z" />
+    </mask>
+    <path
+      d="M13 8.00006H14V7.00007L13 7.00006L13 8.00006ZM8 13.0001L7 13.0001L7 14.0001H8V13.0001ZM8 8L8.00002 7L7 6.99999L7 8L8 8ZM12 8.00006C12 10.2092 10.2091 12.0001 8 12.0001V14.0001C11.3137 14.0001 14 11.3138 14 8.00006H12ZM9 13.0001L9 8L7 8L7 13.0001L9 13.0001ZM7.99999 9L13 9.00006L13 7.00006L8.00002 7L7.99999 9Z"
+      fill="#CED0D6"
+      mask="url(#path-2-inside-1_2624_35758)"
+    />
+  </svg>
+);
+
+export const ScheduledEvent: FC<ScheduledEventProps> = ({
+  size = 16,
+  mode = 'light',
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}) => {
+  const SvgComponent =
+    mode === 'light' ? ScheduledEventLight : ScheduledEventDark;
+
+  return (
+    <SvgComponent
+      size={size}
+      className={cn('inline-block shrink-0', className)}
+      role={ariaLabel ? 'img' : 'presentation'}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+      {...props}
+    />
+  );
+};
 
 export default ScheduledEvent;

@@ -40,8 +40,8 @@ export const ApplicationRemote = ({
       className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
     <path
-      strokeLinecap="round"
       d="M4 5.5h1M7 5.5h1"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

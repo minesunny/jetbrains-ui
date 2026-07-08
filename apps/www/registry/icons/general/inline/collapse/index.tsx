@@ -30,9 +30,9 @@ export const Collapse = ({
     {...props}
   >
     <path
+      d="M1.5 14.5 6 10m8.5-8.5L10 6M2.5 9.5h4v4m7-7h-4v-4"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M1.5 14.5 6 10m8.5-8.5L10 6M2.5 9.5h4v4m7-7h-4v-4"
       className="stroke-[#A8ADBD] dark:stroke-[#868A91]"
     />
   </svg>

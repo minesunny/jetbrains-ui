@@ -29,8 +29,22 @@ export const Image = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
+      className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
     <path
       d="m2.5 9.336 1.682-1.667A1 1 0 0 1 5.56 7.64l6.426 5.86"
+      className="stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+    <circle
+      cx={10}
+      cy={6}
+      r={1.5}
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
   </svg>

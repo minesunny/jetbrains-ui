@@ -30,9 +30,9 @@ export const HomeFolder = ({
     {...props}
   >
     <path
+      d="M7.668 2.632a.5.5 0 0 1 .664 0l5 4.443a.5.5 0 0 1 .168.374V13a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-2a1.5 1.5 0 0 0-3 0v2a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V7.45a.5.5 0 0 1 .168-.375z"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M7.668 2.632a.5.5 0 0 1 .664 0l5 4.443a.5.5 0 0 1 .168.374V13a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-2a1.5 1.5 0 0 0-3 0v2a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V7.45a.5.5 0 0 1 .168-.375z"
       className="fill-[#EBECF0] dark:fill-[#43454A] stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

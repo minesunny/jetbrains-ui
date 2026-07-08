@@ -29,6 +29,12 @@ export const Error = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={7}
+      className="fill-[#E55765] dark:fill-[#DB5C5C]"
+    />
     <path
       d="M9 5a1 1 0 0 0-2 0v2.5a1 1 0 1 0 2 0zM8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
       className="fill-[#fff]"

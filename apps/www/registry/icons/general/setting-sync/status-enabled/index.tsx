@@ -30,8 +30,9 @@ export const StatusEnabled = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="m2.5 8.25 3.5 3.5 7.5-7.5"
+      strokeWidth={1.5}
+      strokeLinecap="round"
       className="stroke-[#55A76A] dark:stroke-[#57965C]"
     />
   </svg>

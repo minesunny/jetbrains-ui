@@ -34,8 +34,8 @@ export const PackageJson = ({
       className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
     <path
-      strokeLinejoin="round"
       d="M12 15.5 8.5 14v-4m3.5 5.5 3.5-1.5v-4M12 15.5v-4M8.5 10l3.5 1.5M8.5 10 12 8.5l3.5 1.5M12 11.5l3.5-1.5"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

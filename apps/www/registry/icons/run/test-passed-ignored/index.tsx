@@ -30,9 +30,10 @@ export const TestPassedIgnored = ({
     {...props}
   >
     <path
+      d="m3 7.5 3 3L12.5 4"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m3 7.5 3 3L12.5 4"
       className="stroke-[#55A76A]"
     />
     <path

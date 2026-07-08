@@ -35,6 +35,12 @@ export const DataSchema = ({
       d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v7c0-1.014-.378-1.94-1-2.646V6h-3v1q-.519.001-1 .126V6H6v7h1.535c.218.376.495.714.82 1H3a2 2 0 0 1-2-2zm5-1h4v2H6zM5 3H3a1 1 0 0 0-1 1v1h3zM2 6v6a1 1 0 0 0 1 1h2V6zm12-1V4a1 1 0 0 0-1-1h-2v2z"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
+    <circle
+      cx={11}
+      cy={11}
+      r={2}
+      className="fill-[#EDF3FF] dark:fill-[#25324D]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

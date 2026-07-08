@@ -30,14 +30,14 @@ export const Template = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M3.5 13.5h9"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      d="M14 11.5H2a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h5L5.546 4.412A1.5 1.5 0 0 1 6.99 2.5H9.01a1.5 1.5 0 0 1 1.443 1.912L9 9.5h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M14 11.5H2a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h5L5.546 4.412A1.5 1.5 0 0 1 6.99 2.5H9.01a1.5 1.5 0 0 1 1.443 1.912L9 9.5h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

@@ -29,6 +29,14 @@ export const Resume = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={1.5}
+      y={2.5}
+      width={3}
+      height={11}
+      rx={0.5}
+      className="fill-[#F2FCF3] dark:fill-[#253627] stroke-[#208A3C] dark:stroke-[#57965C]"
+    />
     <path
       d="M14.356 7.26a1 1 0 0 1 0 1.512L9.158 13.27a1 1 0 0 1-1.655-.756V3.516a1 1 0 0 1 1.655-.756z"
       className="fill-[#F2FCF3] dark:fill-[#253627] stroke-[#208A3C] dark:stroke-[#57965C]"

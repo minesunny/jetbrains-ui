@@ -29,6 +29,14 @@ export const RestartStop = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1.5}
+      className="fill-[#FFF7F7] dark:fill-[#402929] stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
+    />
     <path
       d="M14 1.5a.5.5 0 0 0-1 0v3.182A6 6 0 1 0 8 14v-1a5 5 0 1 1 4-8H9.5a.5.5 0 0 0 0 1H14z"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"

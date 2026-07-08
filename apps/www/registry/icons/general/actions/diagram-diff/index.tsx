@@ -30,9 +30,9 @@ export const DiagramDiff = ({
     {...props}
   >
     <path
+      d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
     <path

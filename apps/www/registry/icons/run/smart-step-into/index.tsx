@@ -29,6 +29,38 @@ export const SmartStepInto = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={9}
+      y={12}
+      width={6}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={9}
+      y={9}
+      width={6}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={9}
+      y={6}
+      width={6}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={9}
+      y={3}
+      width={6}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

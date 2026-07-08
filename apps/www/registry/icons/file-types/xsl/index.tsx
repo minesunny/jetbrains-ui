@@ -30,9 +30,9 @@ export const Xsl = ({
     {...props}
   >
     <path
+      d="M1.5 4.5 5 8l-3.5 3.5m13 0L11 8l3.5-3.5m-5-2-3 11"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M1.5 4.5 5 8l-3.5 3.5m13 0L11 8l3.5-3.5m-5-2-3 11"
       className="stroke-[#369650] dark:stroke-[#57965C]"
     />
   </svg>

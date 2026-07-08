@@ -33,6 +33,14 @@ export const Compare4LeftBottom = ({
       d="M2 1.5h2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V2a.5.5 0 0 1 .5-.5ZM8 2.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V3a.5.5 0 0 1 .5-.5ZM13 2.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V3a.5.5 0 0 1 .5-.5Z"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
+    <rect
+      x={1.5}
+      y={11.5}
+      width={13}
+      height={3}
+      rx={0.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
   </svg>
 );
 

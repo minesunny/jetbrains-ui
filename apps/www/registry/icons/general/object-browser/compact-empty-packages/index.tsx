@@ -40,14 +40,14 @@ export const CompactEmptyPackages = ({
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="M4.5 7.5v3m4 3h-3a1 1 0 0 1-1-1v-2m0 0h4"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      d="m12.5 2.5-2 2m2-2 2 2m-2-2v11"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m12.5 2.5-2 2m2-2 2 2m-2-2v11"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

@@ -29,6 +29,12 @@ export const MethodReference = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="fill-[#FFF7F7] dark:fill-[#402929] stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
+    />
     <path
       d="m6 4 .211-.106a4 4 0 0 1 3.578 0L10 4"
       className="stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"

@@ -30,8 +30,8 @@ export const SqlSelectStatement = ({
     {...props}
   >
     <path
-      strokeLinejoin="round"
       d="M13.5 9.5L13.5 6.5L6.5 6.5L6.5 3.5L2 8L6.5 12.5L6.5 9.5L13.5 9.5Z"
+      strokeLinejoin="round"
       className="fill-[#EBECF0] dark:fill-[#43454A] stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

@@ -29,6 +29,12 @@ export const FeedbackRatingFocused = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={16}
+      cy={16}
+      r={16}
+      className="fill-[#D4E2FF] dark:fill-[#25324D]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

@@ -30,20 +30,20 @@ export const ConditionalStatement = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
       d="M2.5 10.5v3h3M13.5 10.5v3h-3"
-      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
-    />
-    <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M7.5 2.5v6l-5 5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      d="M7.5 2.5v6l-5 5"
       strokeLinecap="round"
+      strokeLinejoin="round"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <path
       d="m13.5 13.5-4-4"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

@@ -29,9 +29,15 @@ export const Exception = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="fill-[#FFFAEB] dark:fill-[#3D3223] stroke-[#C27D04] dark:stroke-[#D6AE58]"
+    />
     <path
-      strokeLinecap="round"
       d="M9 4.5 6 8h4l-3 3.5"
+      strokeLinecap="round"
       className="stroke-[#C27D04] dark:stroke-[#D6AE58]"
     />
   </svg>

@@ -29,10 +29,16 @@ export const History = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
+      d="M8 5v3l2.5 1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M8 5v3l2.5 1.5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

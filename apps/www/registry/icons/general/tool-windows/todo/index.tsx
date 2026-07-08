@@ -30,19 +30,40 @@ export const Todo = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M5.5 11.5h8"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
+    <ellipse
+      cx={2.7}
+      cy={11.5}
+      rx={0.7}
+      ry={0.7}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
     <path
-      strokeLinecap="round"
       d="M5.5 8h8"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
+    <ellipse
+      cx={2.7}
+      cy={8}
+      rx={0.7}
+      ry={0.7}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
     <path
-      strokeLinecap="round"
       d="M5.5 4.5h8"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <ellipse
+      cx={2.7}
+      cy={4.5}
+      rx={0.7}
+      ry={0.7}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
   </svg>
 );

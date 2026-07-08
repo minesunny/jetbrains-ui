@@ -30,9 +30,9 @@ export const FilterHistory = ({
     {...props}
   >
     <path
+      d="M12.5 2.5h-11l4 5V14l3-2V7.5z"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M12.5 2.5h-11l4 5V14l3-2V7.5z"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

@@ -29,9 +29,23 @@ export const Problems = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <circle
+      cx={8.001}
+      cy={10.7}
+      r={0.5}
+      strokeWidth={0.4}
+      className="fill-[#6C707E] dark:fill-[#CED0D6] stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
-      strokeLinecap="round"
       d="M8 4.6v3.8"
+      strokeWidth={1.2}
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

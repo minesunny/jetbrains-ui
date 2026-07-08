@@ -34,9 +34,10 @@ export const SelectAll = ({
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      d="M4.75 7.75 7 10l4.242-4.242"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M4.75 7.75 7 10l4.242-4.242"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

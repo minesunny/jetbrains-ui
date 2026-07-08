@@ -29,10 +29,17 @@ export const SuccessDialog = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={14}
+      cy={14}
+      r={12}
+      className="fill-[#55A76A] dark:fill-[#57965C]"
+    />
     <path
+      d="M20 10.5 12.5 18l-4-4"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M20 10.5 12.5 18l-4-4"
       className="stroke-[#fff]"
     />
   </svg>

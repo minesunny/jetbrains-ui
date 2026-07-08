@@ -29,6 +29,12 @@ export const Conflict = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={7.5}
+      cy={7.5}
+      r={7.5}
+      className="fill-[#F7F8FA] dark:fill-[#2B2D30]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

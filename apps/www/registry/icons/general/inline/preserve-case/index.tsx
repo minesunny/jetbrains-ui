@@ -34,8 +34,8 @@ export const PreserveCase = ({
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="m7 5.813 2.406-2.407L7 1"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

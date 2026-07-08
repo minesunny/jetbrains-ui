@@ -33,6 +33,12 @@ export const ShowMembers = ({
       d="M9.5 3h1.243A5.5 5.5 0 1 0 3 10.743V9.5A6.5 6.5 0 0 1 9.5 3"
       className="fill-[#FFF7F7] dark:fill-[#402929]"
     />
+    <circle
+      cx={9.5}
+      cy={9.5}
+      r={5}
+      className="fill-[#FFF4EB] dark:fill-[#45322B] stroke-[#E66D17] dark:stroke-[#C77D55]"
+    />
     <path
       d="M9.5 13V7.5a1 1 0 0 1 1-1h1M11.5 8.5H8"
       className="stroke-[#E66D17] dark:stroke-[#C77D55]"

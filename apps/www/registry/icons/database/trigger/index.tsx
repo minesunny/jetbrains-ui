@@ -30,13 +30,13 @@ export const Trigger = ({
     {...props}
   >
     <path
-      strokeLinejoin="round"
       d="M12.5 13.5h2v-11h-2zM6.37 13.088l1.932.518 2.33-8.694-1.933-.517z"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinejoin="round"
       d="m1 12.63 1.732 1L5.982 8 4.25 7z"
+      strokeLinejoin="round"
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
   </svg>

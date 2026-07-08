@@ -33,9 +33,9 @@ export const ToolWindowCheckDetails = ({
     {...props}
   >
     <path
+      d="M11.5 2.5h3M8.5 7.5h6M5.5 12.5h9M7.5 4.5 3 9 .5 6.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M11.5 2.5h3M8.5 7.5h6M5.5 12.5h9M7.5 4.5 3 9 .5 6.5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

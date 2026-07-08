@@ -28,7 +28,16 @@ export const ModuleJava = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
+      className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+  </svg>
 );
 
 export default ModuleJava;

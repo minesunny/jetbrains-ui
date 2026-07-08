@@ -28,7 +28,42 @@ export const Grid = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={11}
+      y={2}
+      width={1}
+      height={12}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={14}
+      y={11}
+      width={1}
+      height={12}
+      rx={0.5}
+      transform="rotate(90 14 11)"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={4}
+      y={2}
+      width={1}
+      height={12}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={14}
+      y={4}
+      width={1}
+      height={12}
+      rx={0.5}
+      transform="rotate(90 14 4)"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default Grid;

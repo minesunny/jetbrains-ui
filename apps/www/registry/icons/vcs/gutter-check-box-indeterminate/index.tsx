@@ -37,8 +37,9 @@ export const GutterCheckBoxIndeterminate = ({
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="M3.75 7h6.5"
+      strokeWidth={1.5}
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

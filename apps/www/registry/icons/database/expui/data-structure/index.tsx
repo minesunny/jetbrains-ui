@@ -30,31 +30,52 @@ export const DataStructure = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
       d="M1.5 10.5V14.5H6.5V10.5H1.5Z"
-      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
-    />
-    <path
       strokeLinecap="round"
       strokeLinejoin="round"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <path
       d="M9.5 10.5V14.5H14.5V10.5H9.5Z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinejoin="round"
       d="M5.5 4.5V0.5H10.5V4.5H5.5Z"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinejoin="round"
       d="M8 5V7"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinejoin="round"
       d="M4.5 10V7.5H8H11.5V10"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <rect
+      x={2}
+      y={11}
+      width={4}
+      height={3}
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
+    />
+    <rect
+      x={10}
+      y={11}
+      width={4}
+      height={3}
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
+    />
+    <rect
+      x={6}
+      y={1}
+      width={4}
+      height={3}
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
   </svg>
 );

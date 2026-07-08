@@ -28,7 +28,72 @@ export const EvaluateExpression = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <rect
+      x={4.5}
+      y={4.5}
+      width={7}
+      height={2}
+      rx={0.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <rect
+      x={4.3}
+      y={8}
+      width={1.4}
+      height={1.4}
+      rx={0.7}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={7.3}
+      y={8}
+      width={1.4}
+      height={1.4}
+      rx={0.7}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={10.3}
+      y={8}
+      width={1.4}
+      height={1.4}
+      rx={0.7}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={4.3}
+      y={10.6}
+      width={1.4}
+      height={1.4}
+      rx={0.7}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={7.3}
+      y={10.6}
+      width={1.4}
+      height={1.4}
+      rx={0.7}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={10.3}
+      y={10.6}
+      width={1.4}
+      height={1.4}
+      rx={0.7}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default EvaluateExpression;

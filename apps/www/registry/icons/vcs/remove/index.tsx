@@ -30,8 +30,8 @@ export const Remove = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="m1.5 12.5 11-11M12.5 12.5l-11-11"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

@@ -33,6 +33,24 @@ export const LevelAutoInherited = ({
       d="M8 4C8 3.44772 8.44772 3 9 3H11C11.5523 3 12 3.44772 12 4V12C12 12.5523 11.5523 13 11 13H9C8.44772 13 8 12.5523 8 12V4Z"
       className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
+    <circle
+      cx={10}
+      cy={11}
+      r={1}
+      className="fill-[#AFAFAF] dark:fill-[#8A8A8A]"
+    />
+    <circle
+      cx={10}
+      cy={8}
+      r={1}
+      className="fill-[#AFAFAF] dark:fill-[#8A8A8A]"
+    />
+    <circle
+      cx={10}
+      cy={5}
+      r={1}
+      className="fill-[#AFAFAF] dark:fill-[#8A8A8A]"
+    />
     <path
       d="M9 2.5H11C11.8284 2.5 12.5 3.17157 12.5 4V12C12.5 12.8284 11.8284 13.5 11 13.5H9C8.17157 13.5 7.5 12.8284 7.5 12V4C7.5 3.17157 8.17157 2.5 9 2.5Z"
       className="stroke-[#AFAFAF] dark:stroke-[#8A8A8A]"

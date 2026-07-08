@@ -39,6 +39,30 @@ export const Properties = ({
       d="M5.854.44A1.5 1.5 0 0 1 6.914 0H10.5A1.5 1.5 0 0 1 12 1.5v4.768A2 2 0 0 0 11 8V1.5a.5.5 0 0 0-.5-.5H7v2.5A1.5 1.5 0 0 1 5.5 5H3v7.5a.5.5 0 0 0 .5.5H5v1H3.5A1.5 1.5 0 0 1 2 12.5V4.914c0-.398.158-.78.44-1.06zM3.707 4 6 1.707V3.5a.5.5 0 0 1-.5.5z"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
+    <rect
+      x={12}
+      y={7}
+      width={2}
+      height={7}
+      rx={1}
+      className="fill-[#55A76A] dark:fill-[#57965C]"
+    />
+    <rect
+      x={9}
+      y={9}
+      width={2}
+      height={5}
+      rx={1}
+      className="fill-[#FFAF0F] dark:fill-[#F2C55C]"
+    />
+    <rect
+      x={6}
+      y={11}
+      width={2}
+      height={3}
+      rx={1}
+      className="fill-[#E55765] dark:fill-[#DB5C5C]"
+    />
   </svg>
 );
 

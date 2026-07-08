@@ -28,7 +28,83 @@ export const Loader = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      opacity={0.93}
+      x={2.35}
+      y={3.764}
+      width={2}
+      height={4}
+      rx={1}
+      transform="rotate(-45 2.35 3.764)"
+      className="fill-[#A8ADBD] dark:fill-[#6F737A]"
+    />
+    <rect
+      opacity={0.78}
+      x={1}
+      y={7}
+      width={4}
+      height={2}
+      rx={1}
+      className="fill-[#A8ADBD] dark:fill-[#6F737A]"
+    />
+    <rect
+      opacity={0.69}
+      x={5.179}
+      y={9.41}
+      width={2}
+      height={4}
+      rx={1}
+      transform="rotate(45 5.179 9.41)"
+      className="fill-[#A8ADBD] dark:fill-[#6F737A]"
+    />
+    <rect
+      opacity={0.62}
+      x={7}
+      y={11}
+      width={2}
+      height={4}
+      rx={1}
+      className="fill-[#A8ADBD] dark:fill-[#6F737A]"
+    />
+    <rect
+      opacity={0.48}
+      x={9.41}
+      y={10.824}
+      width={2}
+      height={4}
+      rx={1}
+      transform="rotate(-45 9.41 10.824)"
+      className="fill-[#A8ADBD] dark:fill-[#6F737A]"
+    />
+    <rect
+      opacity={0.38}
+      x={11}
+      y={7}
+      width={4}
+      height={2}
+      rx={1}
+      className="fill-[#A8ADBD] dark:fill-[#6F737A]"
+    />
+    <rect
+      opacity={0.3}
+      x={12.238}
+      y={2.35}
+      width={2}
+      height={4}
+      rx={1}
+      transform="rotate(45 12.238 2.35)"
+      className="fill-[#A8ADBD] dark:fill-[#6F737A]"
+    />
+    <rect
+      x={7}
+      y={1}
+      width={2}
+      height={4}
+      rx={1}
+      className="fill-[#A8ADBD] dark:fill-[#6F737A]"
+    />
+  </svg>
 );
 
 export default Loader;

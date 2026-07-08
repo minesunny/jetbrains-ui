@@ -28,7 +28,14 @@ export const TestNotRunYet = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <circle
+      cx={8}
+      cy={8}
+      r={2}
+      className="fill-[#818594] dark:fill-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default TestNotRunYet;

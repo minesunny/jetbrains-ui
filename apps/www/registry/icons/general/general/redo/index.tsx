@@ -30,8 +30,8 @@ export const Redo = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M1.5 10.5s0-5 5-5C10 5.5 14 10 14 10m-2.5.5h3v-3"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

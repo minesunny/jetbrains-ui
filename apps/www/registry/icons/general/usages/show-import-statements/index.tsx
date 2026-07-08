@@ -28,7 +28,40 @@ export const ShowImportStatements = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={7}
+      y={2}
+      width={2}
+      height={2}
+      rx={1}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={8}
+      y={6}
+      width={1}
+      height={8}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={5}
+      y={6}
+      width={4}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={4}
+      y={13}
+      width={8}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default ShowImportStatements;

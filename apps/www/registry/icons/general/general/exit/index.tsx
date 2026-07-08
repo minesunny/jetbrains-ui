@@ -36,9 +36,9 @@ export const Exit = ({
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
     <path
+      d="M2.5 8H11m0 0L8.5 5.5M11 8l-2.5 2.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M2.5 8H11m0 0L8.5 5.5M11 8l-2.5 2.5"
       className="stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
     />
   </svg>

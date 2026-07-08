@@ -30,26 +30,26 @@ export const CheckConstraint = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
       d="M11.5 3.5H14.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
       d="M8.5 8H14.5"
-      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
-    />
-    <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M5.5 12.5H14.5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      d="M5.5 12.5H14.5"
       strokeLinecap="round"
+      strokeLinejoin="round"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <path
       d="M8.5 4.5L4 9L1.5 6.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

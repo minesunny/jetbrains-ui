@@ -28,7 +28,31 @@ export const ZoomIn = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={7.5}
+      y={4}
+      width={1}
+      height={8}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={12}
+      y={7.5}
+      width={1}
+      height={8}
+      rx={0.5}
+      transform="rotate(90 12 7.5)"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default ZoomIn;

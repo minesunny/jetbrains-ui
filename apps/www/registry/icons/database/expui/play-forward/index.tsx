@@ -30,8 +30,8 @@ export const PlayForward = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M6 12.5L10.5 8L6 3.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

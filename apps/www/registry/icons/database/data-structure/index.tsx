@@ -30,14 +30,14 @@ export const DataStructure = ({
     {...props}
   >
     <path
+      d="M1.5 10.5v4h5v-4zM9.5 10.5v4h5v-4z"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M1.5 10.5v4h5v-4zM9.5 10.5v4h5v-4z"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinejoin="round"
       d="M5.5 4.5v-4h5v4zM8 5v2M4.5 10V7.5h7V10"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path d="M2 11H6V14H2z" className="fill-[#EBECF0] dark:fill-[#43454A]" />

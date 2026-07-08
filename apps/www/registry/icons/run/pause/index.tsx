@@ -28,7 +28,24 @@ export const Pause = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={3.5}
+      y={2.5}
+      width={3}
+      height={11}
+      rx={0.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <rect
+      x={9.5}
+      y={2.5}
+      width={3}
+      height={11}
+      rx={0.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default Pause;

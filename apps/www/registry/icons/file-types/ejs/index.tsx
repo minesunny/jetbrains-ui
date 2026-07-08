@@ -34,9 +34,9 @@ export const Ejs = ({
       className="fill-[#DB3B4B] dark:fill-[#DB5C5C]"
     />
     <path
+      d="M2.5 10.5.5 8l2-2.5M13.5 5.5l2 2.5-2 2.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M2.5 10.5.5 8l2-2.5M13.5 5.5l2 2.5-2 2.5"
       className="stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
     />
   </svg>

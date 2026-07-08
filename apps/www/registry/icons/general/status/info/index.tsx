@@ -29,6 +29,12 @@ export const Info = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={7}
+      className="fill-[#4682FA] dark:fill-[#548AF7]"
+    />
     <path
       d="M7 11a1 1 0 1 0 2 0V8.5a1 1 0 1 0-2 0zM8 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
       className="fill-[#fff]"

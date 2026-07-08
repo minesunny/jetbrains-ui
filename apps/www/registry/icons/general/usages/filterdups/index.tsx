@@ -35,6 +35,46 @@ export const Filterdups = ({
       d="M4.646 7.854a.5.5 0 1 1 .708-.708L7.5 9.293V2.5a.5.5 0 0 1 1 0v6.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3-.354.353-.354-.353z"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
+    <rect
+      x={1}
+      y={2}
+      width={5}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={10}
+      y={2}
+      width={5}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={1}
+      y={4}
+      width={5}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={1}
+      y={13}
+      width={14}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={10}
+      y={4}
+      width={5}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
   </svg>
 );
 

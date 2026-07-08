@@ -30,8 +30,8 @@ export const SubmitDb = ({
     {...props}
   >
     <path
-      strokeLinejoin="round"
       d="M2.5 7.5L8 2.5L13.5 7.5H9.5V13.5H6.5V7.5H2.5Z"
+      strokeLinejoin="round"
       className="stroke-[#369650] dark:stroke-[#57965C]"
     />
   </svg>

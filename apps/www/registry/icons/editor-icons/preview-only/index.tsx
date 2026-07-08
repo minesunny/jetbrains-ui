@@ -29,8 +29,22 @@ export const PreviewOnly = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
       d="m2.357 9.5 1.826-1.825a1 1 0 0 1 1.38-.033L12 13.5"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <circle
+      cx={10}
+      cy={6}
+      r={1.5}
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

@@ -29,6 +29,14 @@ export const TextArea = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
+      className="fill-[#EBECF0] dark:fill-[#43454A] stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

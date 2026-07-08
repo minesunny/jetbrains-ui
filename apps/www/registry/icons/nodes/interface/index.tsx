@@ -29,6 +29,12 @@ export const Interface = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="fill-[#F2FCF3] dark:fill-[#253627] stroke-[#208A3C] dark:stroke-[#57965C]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

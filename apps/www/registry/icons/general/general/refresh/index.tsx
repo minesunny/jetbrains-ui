@@ -30,13 +30,13 @@ export const Refresh = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M2.5 9V8A5.5 5.5 0 0 1 11 3.39M5 12.61A5.5 5.5 0 0 0 13.5 8V7"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="m.5 7.5 2 2 2-2M11.5 8.5l2-2 2 2"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

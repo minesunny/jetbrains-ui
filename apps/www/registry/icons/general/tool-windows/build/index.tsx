@@ -29,16 +29,8 @@ export const Build = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
-    <path
-      strokeLinejoin="round"
-      d="M3.6 1.5h-2v3.2h2l.8-.4h1.2l1 .8h2.2l1.6-1.2c1.2 0 2 0 4 1.4-1.2-3.8-3.6-3.8-4.8-3.8h-3l-1 .4H4.4z"
-      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
-    />
-    <path
-      strokeLinejoin="round"
-      d="M6 14.5h3.4V9.426a5 5 0 0 0-.404-1.97L8.8 7V5H6.6v2l-.196.457A5 5 0 0 0 6 9.427z"
-      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
-    />
+    <path d="M3.6 1.5h-2v3.2h2l.8-.4h1.2l1 .8h2.2l1.6-1.2c1.2 0 2 0 4 1.4-1.2-3.8-3.6-3.8-4.8-3.8h-3l-1 .4H4.4z" strokeLinejoin="round" className="stroke-[#6C707E] dark:stroke-[#CED0D6]" />
+    <path d="M6 14.5h3.4V9.426a5 5 0 0 0-.404-1.97L8.8 7V5H6.6v2l-.196.457A5 5 0 0 0 6 9.427z" strokeLinejoin="round" className="stroke-[#6C707E] dark:stroke-[#CED0D6]" />
   </svg>
 );
 

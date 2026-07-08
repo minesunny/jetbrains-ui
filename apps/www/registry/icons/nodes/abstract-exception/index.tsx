@@ -40,8 +40,8 @@ export const AbstractException = ({
       className="fill-[#C27D04] dark:fill-[#D6AE58]"
     />
     <path
-      strokeLinecap="round"
       d="M9 4.5 6 8h4l-3 3.5"
+      strokeLinecap="round"
       className="stroke-[#C27D04] dark:stroke-[#D6AE58]"
     />
   </svg>

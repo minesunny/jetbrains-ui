@@ -34,18 +34,18 @@ export const VirtualForeignKey = ({
       className="stroke-[#955AE0] dark:stroke-[#B589EC]"
     />
     <path
-      strokeLinecap="round"
       d="M7.5 8.5L7.5 14.5"
+      strokeLinecap="round"
       className="stroke-[#955AE0] dark:stroke-[#B589EC]"
     />
     <path
-      strokeLinecap="round"
       d="M8 13.5H10.5"
+      strokeLinecap="round"
       className="stroke-[#955AE0] dark:stroke-[#B589EC]"
     />
     <path
-      strokeLinecap="round"
       d="M8 11.5H10.5"
+      strokeLinecap="round"
       className="stroke-[#955AE0] dark:stroke-[#B589EC]"
     />
   </svg>

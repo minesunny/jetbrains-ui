@@ -30,20 +30,20 @@ export const EditorOutput = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
       d="M2.5 2.5H13.5"
-      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
-    />
-    <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M2.5 13.5H13.5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      d="M2.5 13.5H13.5"
+      strokeLinecap="round"
       strokeLinejoin="round"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <path
       d="M2.5 10V6C2.5 5.17157 3.17157 4.5 4 4.5H12C12.8284 4.5 13.5 5.17157 13.5 6V10C13.5 10.8284 12.8284 11.5 12 11.5H4C3.17157 11.5 2.5 10.8284 2.5 10Z"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path d="M5.5 5V11" className="stroke-[#6C707E] dark:stroke-[#CED0D6]" />

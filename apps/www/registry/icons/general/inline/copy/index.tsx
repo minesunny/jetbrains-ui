@@ -29,6 +29,38 @@ export const Copy = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={2.5}
+      y={3.5}
+      width={9}
+      height={10}
+      rx={1.5}
+      className="stroke-[#A8ADBD] dark:stroke-[#868A91]"
+    />
+    <rect
+      x={5}
+      y={10}
+      width={4}
+      height={1}
+      rx={0.5}
+      className="fill-[#A8ADBD] dark:fill-[#868A91]"
+    />
+    <rect
+      x={5}
+      y={8}
+      width={4}
+      height={1}
+      rx={0.5}
+      className="fill-[#A8ADBD] dark:fill-[#868A91]"
+    />
+    <rect
+      x={5}
+      y={6}
+      width={4}
+      height={1}
+      rx={0.5}
+      className="fill-[#A8ADBD] dark:fill-[#868A91]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

@@ -30,8 +30,8 @@ export const Restart = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M13.5 1.5v4h-.6m-3.4 0h3.4m0 0a5.5 5.5 0 1 0 0 5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

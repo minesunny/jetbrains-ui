@@ -38,9 +38,9 @@ export const PhpRemote = ({
       className="fill-[#3574F0]"
     />
     <path
+      d="M12.5 1.5h3v3"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M12.5 1.5h3v3"
       className="stroke-[#3574F0]"
     />
   </svg>

@@ -30,9 +30,9 @@ export const Revert = ({
     {...props}
   >
     <path
+      d="M4.667 12.5h4.791a3.958 3.958 0 0 0 0-7.917H.5m0 0L4.5.5m-4 4.083 4 3.917"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M4.667 12.5h4.791a3.958 3.958 0 0 0 0-7.917H.5m0 0L4.5.5m-4 4.083 4 3.917"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

@@ -29,10 +29,17 @@ export const SuccessLogin = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={24}
+      cy={24}
+      r={22}
+      className="fill-[#55A76A] dark:fill-[#57965C]"
+    />
     <path
+      d="m15 24 7 7 12-13"
+      strokeWidth={3}
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m15 24 7 7 12-13"
       className="stroke-[#fff]"
     />
   </svg>

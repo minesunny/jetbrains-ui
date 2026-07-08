@@ -29,9 +29,26 @@ export const Writerside = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={2.5}
+      y={3.5}
+      width={10}
+      height={10}
+      rx={1.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <rect
+      x={5}
+      y={10.25}
+      width={4}
+      height={0.5}
+      rx={0.25}
+      strokeWidth={0.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
-      strokeLinecap="round"
       d="M4.5 1.5H12A2.5 2.5 0 0 1 14.5 4v7.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

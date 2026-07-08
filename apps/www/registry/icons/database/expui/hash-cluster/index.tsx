@@ -30,8 +30,8 @@ export const HashCluster = ({
     {...props}
   >
     <path
-      strokeLinejoin="round"
       d="M3.5 9.5V3.5H7.5V9.5H3.5Z"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path d="M4 5.5H7" className="stroke-[#6C707E] dark:stroke-[#CED0D6]" />

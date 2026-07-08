@@ -28,7 +28,32 @@ export const ShowCurrentFrame = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={2}
+      y={3}
+      width={12}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={2.5}
+      y={6.5}
+      width={11}
+      height={3}
+      rx={0.5}
+      className="stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+    <rect
+      x={2}
+      y={12}
+      width={12}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default ShowCurrentFrame;

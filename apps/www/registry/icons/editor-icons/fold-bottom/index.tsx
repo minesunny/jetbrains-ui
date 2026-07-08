@@ -30,8 +30,8 @@ export const FoldBottom = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="m9 7.25-3.5-3.5L2 7.25"
+      strokeLinecap="round"
       className="stroke-[#A8ADBD] dark:stroke-[#6F737A]"
     />
   </svg>

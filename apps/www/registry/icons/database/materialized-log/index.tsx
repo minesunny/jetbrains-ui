@@ -30,9 +30,9 @@ export const MaterializedLog = ({
     {...props}
   >
     <path
+      d="M15.5 8 14 3.5l-3 9-3-9-3 9-3-9L.5 8"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M15.5 8 14 3.5l-3 9-3-9-3 9-3-9L.5 8"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

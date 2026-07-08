@@ -69,12 +69,82 @@ export const PartionTable = ({
       d="M5 14V12H6V14H5Z"
       className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
+    <rect
+      x={10}
+      y={6}
+      width={1}
+      height={2}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={10}
+      y={9}
+      width={1}
+      height={2}
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <rect
+      x={10}
+      y={11}
+      width={1}
+      height={3}
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <rect
+      x={14}
+      y={6}
+      width={1}
+      height={2}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={14}
+      y={9}
+      width={1}
+      height={3}
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
     <path
       d="M2 12H1C1 13.1046 1.89543 14 3 14V13C2.44772 13 2 12.5523 2 12Z"
       className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
     <path
       d="M13 13L13 14C14.1046 14 15 13.1046 15 12L14 12C14 12.5523 13.5523 13 13 13Z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <rect
+      x={1}
+      y={6}
+      width={1}
+      height={2}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={1}
+      y={9}
+      width={1}
+      height={3}
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <rect
+      x={3}
+      y={13}
+      width={2}
+      height={1}
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <rect
+      x={11}
+      y={13}
+      width={2}
+      height={1}
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <rect
+      x={6}
+      y={13}
+      width={4}
+      height={1}
       className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
   </svg>

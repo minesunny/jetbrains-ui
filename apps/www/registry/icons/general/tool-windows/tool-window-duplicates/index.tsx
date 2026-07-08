@@ -29,14 +29,22 @@ export const ToolWindowDuplicates = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
-    <path
-      strokeLinecap="round"
-      d="M4.5 3.5H11A1.5 1.5 0 0 1 12.5 5v6.5"
+    <rect
+      x={1.5}
+      y={5.5}
+      width={9}
+      height={9}
+      rx={1.5}
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      d="M4.5 3.5H11A1.5 1.5 0 0 1 12.5 5v6.5"
       strokeLinecap="round"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <path
       d="M6.5 1.5H13A1.5 1.5 0 0 1 14.5 3v6.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

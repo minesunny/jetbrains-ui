@@ -30,8 +30,8 @@ export const ArrowRight = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M7.5 11.5 12 7 7.5 2.5m-5 9L7 7 2.5 2.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

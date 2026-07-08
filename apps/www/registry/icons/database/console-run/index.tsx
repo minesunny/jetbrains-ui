@@ -29,11 +29,20 @@ export const ConsoleRun = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={1.5}
+      y={2.5}
+      width={13}
+      height={11}
+      rx={1.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
       d="M7.95 9.327a.2.2 0 0 1 0 .346l-3.15 1.82a.2.2 0 0 1-.3-.175V7.682a.2.2 0 0 1 .3-.174z"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      strokeWidth={0.5}
       d="M1.25 5.25H14.75V5.75H1.25z"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />

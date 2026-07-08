@@ -34,8 +34,8 @@ export const SciView = ({
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="m2 8 5.571-5.143L11 5l3-3"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

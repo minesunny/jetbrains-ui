@@ -34,6 +34,12 @@ export const SystemTheme = ({
       className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
     <path d="M8 2v12" className="stroke-[#6C707E] dark:stroke-[#CED0D6]" />
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
   </svg>
 );
 

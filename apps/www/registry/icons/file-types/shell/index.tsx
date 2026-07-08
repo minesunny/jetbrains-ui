@@ -29,9 +29,17 @@ export const Shell = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={1.5}
+      y={2.5}
+      width={13}
+      height={11}
+      rx={1.5}
+      className="fill-[#EBECF0] dark:fill-[#43454A] stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
-      strokeLinecap="round"
       d="m4 6 2 2-2 2M7.5 10.5h4"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

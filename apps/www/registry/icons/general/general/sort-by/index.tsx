@@ -30,9 +30,9 @@ export const SortBy = ({
     {...props}
   >
     <path
+      d="M2.5 3.5h12m-12 5H12m-9.5 5h7"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M2.5 3.5h12m-12 5H12m-9.5 5h7"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

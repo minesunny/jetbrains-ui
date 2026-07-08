@@ -30,8 +30,9 @@ export const InlayRenameInComments = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="m10.4 2-5 8M6.6 2l-5 8"
+      strokeWidth={1.5}
+      strokeLinecap="round"
       className="stroke-[#818594] dark:stroke-[#9DA0A8]"
     />
   </svg>

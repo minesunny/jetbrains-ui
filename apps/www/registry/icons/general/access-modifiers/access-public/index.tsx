@@ -31,9 +31,9 @@ export const AccessPublic = ({
   >
     <path d="M6 8H10V11H6z" className="fill-[#F2FCF3] dark:fill-[#253627]" />
     <path
+      d="M9.5 7V6a1.5 1.5 0 0 1 3 0v1.5M6 7.5h4a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M9.5 7V6a1.5 1.5 0 0 1 3 0v1.5M6 7.5h4a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5"
       className="stroke-[#208A3C] dark:stroke-[#57965C]"
     />
   </svg>

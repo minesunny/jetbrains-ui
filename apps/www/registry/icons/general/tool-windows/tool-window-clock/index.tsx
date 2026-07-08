@@ -30,14 +30,20 @@ export const ToolWindowClock = ({
     {...props}
   >
     <path
+      d="M8 6v3l-2.5 1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M8 6v3l-2.5 1.5"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <circle
+      cx={8}
+      cy={9}
+      r={5.5}
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="M5.5 1.5h5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

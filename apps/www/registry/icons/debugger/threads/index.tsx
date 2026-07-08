@@ -30,13 +30,13 @@ export const Threads = ({
     {...props}
   >
     <path
-      strokeLinejoin="round"
       d="m11.5 10.5 2 3h-11l2-3v-5l-2-3h11l-2 3z"
+      strokeLinejoin="round"
       className="fill-[#EBECF0] dark:fill-[#43454A] stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinejoin="round"
       d="M4.5 5.5h7m-7 5h7"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

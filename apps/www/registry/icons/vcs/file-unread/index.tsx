@@ -28,7 +28,14 @@ export const FileUnread = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <circle
+      cx={8}
+      cy={8}
+      r={3}
+      className="fill-[#4682FA] dark:fill-[#548AF7]"
+    />
+  </svg>
 );
 
 export default FileUnread;

@@ -48,9 +48,9 @@ export const Body = ({
       className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
     <path
+      d="M8 7.5L14.5 4.5M8 7.5V14.5M8 7.5L1.5 4.5M14.5 4.5V11.5199L8 14.5M14.5 4.5L7.99998 1.5L1.5 4.5M8 14.5L1.5 11.5199V4.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M8 7.5L14.5 4.5M8 7.5V14.5M8 7.5L1.5 4.5M14.5 4.5V11.5199L8 14.5M14.5 4.5L7.99998 1.5L1.5 4.5M8 14.5L1.5 11.5199V4.5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

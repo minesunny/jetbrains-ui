@@ -30,9 +30,9 @@ export const ScrollUp = ({
     {...props}
   >
     <path
+      d="M1.5 3.5h13M1.5 8h5M1.5 12.5h5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M1.5 3.5h13M1.5 8h5M1.5 12.5h5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

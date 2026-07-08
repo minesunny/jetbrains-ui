@@ -30,28 +30,28 @@ export const UserDriver = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M2.5 11.5v-7"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="M13.5 11.5v-7"
+      strokeLinecap="round"
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
     <path
-      strokeLinecap="round"
       d="M4.5 2.5h7"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="M4.5 13.5h7M6.5 13v-1m3 1v-1M13 9.5h-1m1-3h-1"
+      strokeLinecap="round"
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
     <path
-      strokeLinecap="round"
       d="M9.5 3v1m-3-1v1M3 6.5h1m-1 3h1"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

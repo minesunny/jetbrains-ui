@@ -30,8 +30,8 @@ export const PlayBack = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M10 12.5L5.5 8L10 3.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

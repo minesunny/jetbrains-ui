@@ -28,7 +28,40 @@ export const Messages = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={2}
+      y={12}
+      width={12}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={2}
+      y={9}
+      width={10}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={2}
+      y={6}
+      width={9}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={2}
+      y={3}
+      width={12}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default Messages;

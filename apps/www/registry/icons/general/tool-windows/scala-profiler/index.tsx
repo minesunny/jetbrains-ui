@@ -30,9 +30,9 @@ export const ScalaProfiler = ({
     {...props}
   >
     <path
+      d="m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

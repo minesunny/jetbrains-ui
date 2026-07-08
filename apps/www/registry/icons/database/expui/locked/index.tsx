@@ -29,6 +29,13 @@ export const Locked = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={1}
+      y={12}
+      width={4}
+      height={3}
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

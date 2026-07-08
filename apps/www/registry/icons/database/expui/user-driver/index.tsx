@@ -30,8 +30,8 @@ export const UserDriver = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M2.5 11.5V4.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
@@ -39,8 +39,8 @@ export const UserDriver = ({
       className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
     <path
-      strokeLinecap="round"
       d="M4.5 2.5H11.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
@@ -48,18 +48,18 @@ export const UserDriver = ({
       className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
     <path
-      strokeLinecap="round"
       d="M6.5 13V12M9.5 13V12"
+      strokeLinecap="round"
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
     <path
-      strokeLinecap="round"
       d="M13 9.5H12M13 6.5H12"
+      strokeLinecap="round"
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
     <path
-      strokeLinecap="round"
       d="M9.5 3V4M6.5 3V4M3 6.5H4M3 9.5H4"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

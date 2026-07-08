@@ -28,7 +28,112 @@ export const Prettier = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={3}
+      y={2}
+      width={8}
+      height={1}
+      rx={0.5}
+      className="fill-[#588CF3] dark:fill-[#548AF7]"
+    />
+    <rect
+      x={3}
+      y={4}
+      width={5}
+      height={1}
+      rx={0.5}
+      className="fill-[#588CF3] dark:fill-[#548AF7]"
+    />
+    <rect
+      x={3}
+      y={6}
+      width={3}
+      height={1}
+      rx={0.5}
+      className="fill-[#834DF0] dark:fill-[#A571E6]"
+    />
+    <rect
+      x={9}
+      y={4}
+      width={4}
+      height={1}
+      rx={0.5}
+      className="fill-[#834DF0] dark:fill-[#A571E6]"
+    />
+    <rect
+      x={10}
+      y={6}
+      width={4}
+      height={1}
+      rx={0.5}
+      className="fill-[#C27D04] dark:fill-[#D6AE58]"
+    />
+    <rect
+      x={9}
+      y={8}
+      width={4}
+      height={1}
+      rx={0.5}
+      className="fill-[#588CF3] dark:fill-[#548AF7]"
+    />
+    <rect
+      x={3}
+      y={8}
+      width={3}
+      height={1}
+      rx={0.5}
+      className="fill-[#DB3B4B] dark:fill-[#DB5C5C]"
+    />
+    <rect
+      x={7}
+      y={8}
+      width={1}
+      height={1}
+      rx={0.5}
+      className="fill-[#C27D04] dark:fill-[#D6AE58]"
+    />
+    <rect
+      x={3}
+      y={12}
+      width={2}
+      height={1}
+      rx={0.5}
+      className="fill-[#588CF3] dark:fill-[#548AF7]"
+    />
+    <rect
+      x={6}
+      y={12}
+      width={1}
+      height={1}
+      rx={0.5}
+      className="fill-[#834DF0] dark:fill-[#A571E6]"
+    />
+    <rect
+      x={3}
+      y={14}
+      width={4}
+      height={1}
+      rx={0.5}
+      className="fill-[#DB3B4B] dark:fill-[#DB5C5C]"
+    />
+    <rect
+      x={5}
+      y={10}
+      width={6}
+      height={1}
+      rx={0.5}
+      className="fill-[#C27D04] dark:fill-[#D6AE58]"
+    />
+    <rect
+      x={3}
+      y={10}
+      width={1}
+      height={1}
+      rx={0.5}
+      className="fill-[#834DF0] dark:fill-[#A571E6]"
+    />
+  </svg>
 );
 
 export default Prettier;

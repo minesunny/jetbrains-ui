@@ -34,6 +34,7 @@ export const GoogleCloudSpanner = ({
       className="fill-[#4485F9]"
     />
     <path
+      opacity={0.5}
       d="M14.902 9.921 9.467 4.486 8.46 4v.921L7.539 4l-1.007.486v1.497l.866.46v1.464l-1.27.732-.831-.52L4 8.87l.083 1.115.674.674-.214.123L8.763 15h2.657a1 1 0 0 0 .868-.504z"
       className="fill-[#417BDC]"
     />

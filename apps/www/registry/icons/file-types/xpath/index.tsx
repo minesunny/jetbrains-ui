@@ -34,9 +34,9 @@ export const Xpath = ({
       className="fill-[#FFF4EB] dark:fill-[#45322B] stroke-[#E66D17] dark:stroke-[#C77D55]"
     />
     <path
+      d="m7.5 5.5-2 5m5-5-2 5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m7.5 5.5-2 5m5-5-2 5"
       className="stroke-[#E66D17] dark:stroke-[#C77D55]"
     />
   </svg>

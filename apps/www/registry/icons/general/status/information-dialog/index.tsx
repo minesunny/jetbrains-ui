@@ -29,6 +29,12 @@ export const InformationDialog = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={14}
+      cy={14}
+      r={12}
+      className="fill-[#4682FA] dark:fill-[#548AF7]"
+    />
     <path
       d="M13 20a1 1 0 1 0 2 0v-6a1 1 0 1 0-2 0zM14 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"
       className="fill-[#fff]"

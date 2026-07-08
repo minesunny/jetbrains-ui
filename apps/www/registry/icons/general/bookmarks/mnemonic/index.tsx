@@ -28,7 +28,16 @@ export const Mnemonic = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={1.5}
+      y={1.5}
+      width={13}
+      height={13}
+      rx={1.5}
+      className="fill-[#FFFAEB] dark:fill-[#3D3223] stroke-[#FFAF0F] dark:stroke-[#F2C55C]"
+    />
+  </svg>
 );
 
 export default Mnemonic;

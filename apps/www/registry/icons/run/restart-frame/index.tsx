@@ -29,6 +29,14 @@ export const RestartFrame = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1.5}
+      className="fill-[#EBECF0] dark:fill-[#43454A] stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
       d="M14 1.5a.5.5 0 0 0-1 0v3.182A6 6 0 1 0 8 14v-1a5 5 0 1 1 4-8H9.5a.5.5 0 0 0 0 1H14z"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"

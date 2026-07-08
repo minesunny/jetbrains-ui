@@ -29,6 +29,30 @@ export const ResourceBundle = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={14}
+      y={9}
+      width={2}
+      height={7}
+      rx={1}
+      className="fill-[#55A76A] dark:fill-[#57965C]"
+    />
+    <rect
+      x={11}
+      y={11}
+      width={2}
+      height={5}
+      rx={1}
+      className="fill-[#FFAF0F] dark:fill-[#F2C55C]"
+    />
+    <rect
+      x={8}
+      y={13}
+      width={2}
+      height={3}
+      rx={1}
+      className="fill-[#E55765] dark:fill-[#DB5C5C]"
+    />
     <path
       d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v2a2 2 0 0 0-2 2h-1a2 2 0 0 0-2 2H9a2 2 0 0 0-2 2H2.633C1.731 14 1 13.164 1 12.133z"
       className="fill-[#EBECF0] dark:fill-[#43454A]"

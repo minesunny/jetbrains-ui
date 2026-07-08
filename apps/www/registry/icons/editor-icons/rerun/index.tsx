@@ -40,8 +40,8 @@ export const Rerun = ({
       className="fill-[#208A3C] dark:fill-[#57965C]"
     />
     <path
-      strokeLinecap="round"
       d="m6.857 1.5 5.5 4.76a1 1 0 0 1 0 1.512L6.892 12.5"
+      strokeLinecap="round"
       className="stroke-[#208A3C] dark:stroke-[#57965C]"
     />
   </svg>

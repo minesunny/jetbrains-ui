@@ -30,9 +30,9 @@ export const Ant = ({
     {...props}
   >
     <path
+      d="M12.4 14.4v-3.6799999999999997l-1.994-.841M3.598 14.4v-3.6799999999999997l1.994-.841M12.4 4.4v2.4L10 8.4M3.6 4.4v2.4L6 8.4"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M12.4 14.4v-3.6799999999999997l-1.994-.841M3.598 14.4v-3.6799999999999997l1.994-.841M12.4 4.4v2.4L10 8.4M3.6 4.4v2.4L6 8.4"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
@@ -40,9 +40,9 @@ export const Ant = ({
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
     <path
+      d="m9.6 3.2.8-2M6.4 3.2l-.8-2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m9.6 3.2.8-2M6.4 3.2l-.8-2"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

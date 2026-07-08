@@ -28,7 +28,16 @@ export const Stop = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
+      className="fill-[#FFF7F7] dark:fill-[#5E3838] stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
+    />
+  </svg>
 );
 
 export default Stop;

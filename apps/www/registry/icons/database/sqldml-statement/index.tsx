@@ -30,8 +30,8 @@ export const SqldmlStatement = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M14.44 7.646a.5.5 0 0 1 0 .708L8.5 14.293V10.5H2a.5.5 0 0 1-.5-.5V6a.5.5 0 0 1 .5-.5h6.5V1.707z"
+      strokeLinecap="round"
       className="fill-[#EBECF0] dark:fill-[#43454A] stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

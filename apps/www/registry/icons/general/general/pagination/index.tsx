@@ -30,14 +30,14 @@ export const Pagination = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M1.5 2.5h13M1.5 13.5h13"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      d="m4.5 5-3 3 3 3m7-6 3 3-3 3"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m4.5 5-3 3 3 3m7-6 3 3-3 3"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

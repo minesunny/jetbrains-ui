@@ -35,6 +35,15 @@ export const Patch = ({
       d="M8 1a.5.5 0 0 0-.5.5v4h-4a.5.5 0 0 0 0 1h4v4a.5.5 0 0 0 1 0v-4h4a.5.5 0 0 0 0-1h-4v-4A.5.5 0 0 0 8 1"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
+    <rect
+      x={13}
+      y={13}
+      width={1}
+      height={10}
+      rx={0.5}
+      transform="rotate(90 13 13)"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
   </svg>
 );
 

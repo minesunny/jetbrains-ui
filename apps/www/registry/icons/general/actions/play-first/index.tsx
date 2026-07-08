@@ -30,8 +30,8 @@ export const PlayFirst = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M4.5 12.5v-9M12 12.5 7.5 8 12 3.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

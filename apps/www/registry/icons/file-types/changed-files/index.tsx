@@ -34,8 +34,8 @@ export const ChangedFiles = ({
       className="fill-[#EBECF0] dark:fill-[#43454A] stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="M5.5 2.5H12A1.5 1.5 0 0 1 13.5 4v6.5M5 10.5h4m-4-3h4"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

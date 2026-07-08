@@ -30,8 +30,8 @@ export const Sharp = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="m2.5 13.5 3-13M8.5 13.5l3-13M2 3.5h11.5M.5 10.5H12"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

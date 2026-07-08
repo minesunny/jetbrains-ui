@@ -28,7 +28,14 @@ export const Modified = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <circle
+      cx={6.5}
+      cy={6.5}
+      r={3}
+      className="fill-[#4682FA] dark:fill-[#548AF7]"
+    />
+  </svg>
 );
 
 export default Modified;

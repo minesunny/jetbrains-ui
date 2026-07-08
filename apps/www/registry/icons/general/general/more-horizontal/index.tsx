@@ -28,7 +28,29 @@ export const MoreHorizontal = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <circle
+      cx={3}
+      cy={8}
+      r={1}
+      transform="rotate(-90 3 8)"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <circle
+      cx={8}
+      cy={8}
+      r={1}
+      transform="rotate(-90 8 8)"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <circle
+      cx={13}
+      cy={8}
+      r={1}
+      transform="rotate(-90 13 8)"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default MoreHorizontal;

@@ -34,8 +34,8 @@ export const Flame = ({
       className="stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
     />
     <path
-      strokeLinecap="round"
       d="M5.5 10c.01-.849.798-1.798 1.5-2.5.702.702 1.49 1.651 1.5 2.5"
+      strokeLinecap="round"
       className="stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
     />
   </svg>

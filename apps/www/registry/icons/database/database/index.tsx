@@ -34,8 +34,8 @@ export const Database = ({
       className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
     <path
-      strokeLinecap="round"
       d="M5.5 2.5H12A1.5 1.5 0 0 1 13.5 4v6.5"
+      strokeLinecap="round"
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
   </svg>

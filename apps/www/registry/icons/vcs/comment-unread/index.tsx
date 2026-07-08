@@ -30,8 +30,8 @@ export const CommentUnread = ({
     {...props}
   >
     <path
-      strokeLinejoin="round"
       d="M4 2.5h8A1.5 1.5 0 0 1 13.5 4v9.96l-4.187-3.35A.5.5 0 0 0 9 10.5H4A1.5 1.5 0 0 1 2.5 9V4A1.5 1.5 0 0 1 4 2.5Z"
+      strokeLinejoin="round"
       className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
   </svg>

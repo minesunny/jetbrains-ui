@@ -40,8 +40,8 @@ export const RunAll = ({
       className="fill-[#208A3C] dark:fill-[#57965C]"
     />
     <path
-      strokeLinecap="round"
       d="m7.858 2.5 5.499 4.76a1 1 0 0 1 0 1.512L7.893 13.5"
+      strokeLinecap="round"
       className="stroke-[#208A3C] dark:stroke-[#57965C]"
     />
   </svg>

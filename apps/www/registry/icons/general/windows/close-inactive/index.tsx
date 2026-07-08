@@ -30,10 +30,15 @@ export const CloseInactive = ({
     {...props}
   >
     <path
+      transform="rotate(45 3.758 3.05)"
       d="M3.758 3.05H16.758V4.05H3.758z"
       className="fill-[#818594] dark:fill-[#6F737A]"
     />
-    <path d="M0 0H13V1H0z" className="fill-[#818594] dark:fill-[#6F737A]" />
+    <path
+      transform="scale(-1 1)rotate(45 -9.804 -13.254)"
+      d="M0 0H13V1H0z"
+      className="fill-[#818594] dark:fill-[#6F737A]"
+    />
   </svg>
 );
 

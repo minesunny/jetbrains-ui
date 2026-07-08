@@ -30,9 +30,9 @@ export const Expand = ({
     {...props}
   >
     <path
+      d="M6.5 9.5 2 14m7.5-7.5L14 2M5.5 14.5h-4v-4m9-9h4v4"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M6.5 9.5 2 14m7.5-7.5L14 2M5.5 14.5h-4v-4m9-9h4v4"
       className="stroke-[#A8ADBD] dark:stroke-[#868A91]"
     />
   </svg>

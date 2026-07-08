@@ -29,6 +29,12 @@ export const ErrorOutline = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
       d="M9 5a1 1 0 0 0-2 0v3a1 1 0 1 0 2 0zM8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"

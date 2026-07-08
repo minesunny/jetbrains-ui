@@ -38,8 +38,9 @@ export const Coverage = ({
       className="fill-[#6C707E]"
     />
     <path
-      strokeLinecap="round"
       d="M17.25 4.99V10c0 3.183-1.813 5.491-3.723 7.043a15.7 15.7 0 0 1-3.484 2.127l-.043.017-.043-.017a15.743 15.743 0 0 1-3.484-2.127C4.563 15.491 2.75 13.183 2.75 10V4.99L10 1.818z"
+      strokeWidth={1.5}
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

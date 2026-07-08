@@ -41,9 +41,15 @@ export const ToolWindowJPabStructure = ({
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="M9.5 13s-.008-1.36.187-2.14C9.883 10.077 10.5 9 10.5 9M5.5 6s-.177.143-.515.55"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <circle
+      cx={9.5}
+      cy={5.5}
+      r={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
     <path
       fillRule="evenodd"

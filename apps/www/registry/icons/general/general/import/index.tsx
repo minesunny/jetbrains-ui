@@ -36,8 +36,8 @@ export const Import = ({
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="M2.5 4.5V12A1.5 1.5 0 0 0 4 13.5h7.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

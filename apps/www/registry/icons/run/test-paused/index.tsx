@@ -28,7 +28,24 @@ export const TestPaused = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={10}
+      y={2}
+      width={2}
+      height={12}
+      rx={1}
+      className="fill-[#818594] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={4}
+      y={2}
+      width={2}
+      height={12}
+      rx={1}
+      className="fill-[#818594] dark:fill-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default TestPaused;

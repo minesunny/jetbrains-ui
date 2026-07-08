@@ -29,9 +29,15 @@ export const Search = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={7}
+      cy={7}
+      r={4.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
-      strokeLinecap="round"
       d="m10.2 10.2 3.3 3.296"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

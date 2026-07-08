@@ -34,9 +34,9 @@ export const SendToTheRight = ({
       className="fill-[#369650] dark:fill-[#57965C]"
     />
     <path
+      d="M13.5 11.5v-8"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M13.5 11.5v-8"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

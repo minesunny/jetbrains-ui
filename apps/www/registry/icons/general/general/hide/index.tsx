@@ -30,8 +30,8 @@ export const Hide = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M2.5 7.5h11"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

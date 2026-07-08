@@ -34,8 +34,8 @@ export const Dependencies = ({
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="m14.276 8.317-5.84 2.836a1 1 0 0 1-.873 0L1.724 8.317M14.276 11.544l-5.84 2.836a1 1 0 0 1-.873 0l-5.839-2.836"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

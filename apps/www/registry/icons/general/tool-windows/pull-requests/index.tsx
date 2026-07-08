@@ -29,16 +29,34 @@ export const PullRequests = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={12.25}
+      cy={12}
+      r={2}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
       d="M12.25 10V5.6a1.6 1.6 0 0 0-1.6-1.6H8"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinecap="round"
       d="m9.75 6-2-2 2-2"
+      strokeLinecap="round"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <circle
+      cx={3.75}
+      cy={12}
+      r={2}
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path d="M3.75 6v4" className="stroke-[#6C707E] dark:stroke-[#CED0D6]" />
+    <circle
+      cx={3.75}
+      cy={4}
+      r={2}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
   </svg>
 );
 

@@ -30,8 +30,8 @@ export const ApplyNotConflicts = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="m4.5 2.5 3 3-3 3m-4 0 3-3-3-3M11.5 13.5l-3-3 3-3m4 0-3 3 3 3"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

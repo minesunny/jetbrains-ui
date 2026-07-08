@@ -30,15 +30,16 @@ export const InspectionsTypos = ({
     {...props}
   >
     <path
+      d="m2.5 14.5 2-2 2 2 2-2 2 2 2-2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m2.5 14.5 2-2 2 2 2-2 2 2 2-2"
       className="stroke-[#55A76A] dark:stroke-[#57965C]"
     />
     <path
+      d="m3 7 3 3 6.5-6.5"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m3 7 3 3 6.5-6.5"
       className="stroke-[#55A76A] dark:stroke-[#57965C]"
     />
   </svg>

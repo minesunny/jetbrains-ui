@@ -29,6 +29,12 @@ export const ErrorDialog = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={14}
+      cy={14}
+      r={12}
+      className="fill-[#E55765] dark:fill-[#DB5C5C]"
+    />
     <path
       d="M15 8a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0zM14 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
       className="fill-[#fff]"

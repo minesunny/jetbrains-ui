@@ -30,8 +30,8 @@ export const SearchHistory = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="m8.5 10.497 3 2.999M9.5 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

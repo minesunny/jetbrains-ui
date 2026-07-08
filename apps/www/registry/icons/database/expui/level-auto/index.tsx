@@ -33,6 +33,18 @@ export const LevelAuto = ({
       d="M8 4C8 3.44772 8.44772 3 9 3H11C11.5523 3 12 3.44772 12 4V12C12 12.5523 11.5523 13 11 13H9C8.44772 13 8 12.5523 8 12V4Z"
       className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
+    <circle
+      cx={10}
+      cy={11}
+      r={1}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <circle
+      cx={10}
+      cy={5}
+      r={1}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
     <path
       d="M11 8C11 8.55228 10.5523 9 10 9C9.44772 9 9 8.55228 9 8C9 7.44772 9.44772 7 10 7C10.5523 7 11 7.44772 11 8Z"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"

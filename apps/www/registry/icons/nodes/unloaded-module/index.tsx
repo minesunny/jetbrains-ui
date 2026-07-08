@@ -41,6 +41,14 @@ export const UnloadedModule = ({
       d="m7.803 4.717.29.283H13a1 1 0 0 1 1 1v2c.35 0 .687.06 1 .17V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14H8v-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867h3.288z"
       className="fill-[#E66D17] dark:fill-[#C77D55]"
     />
+    <rect
+      x={9.5}
+      y={9.5}
+      width={6}
+      height={6}
+      rx={1.5}
+      className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
   </svg>
 );
 

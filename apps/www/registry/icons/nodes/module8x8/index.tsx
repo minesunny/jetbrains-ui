@@ -28,7 +28,16 @@ export const Module8x8 = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={0.5}
+      y={0.5}
+      width={7}
+      height={7}
+      rx={1.5}
+      className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+  </svg>
 );
 
 export default Module8x8;

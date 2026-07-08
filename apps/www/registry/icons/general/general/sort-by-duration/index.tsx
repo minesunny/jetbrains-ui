@@ -30,9 +30,9 @@ export const SortByDuration = ({
     {...props}
   >
     <path
+      d="M7.5 3.5h7M9.5 8h5M11.5 12.5h3"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M7.5 3.5h7M9.5 8h5M11.5 12.5h3"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

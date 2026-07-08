@@ -29,6 +29,12 @@ export const Field = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="fill-[#FFF4EB] dark:fill-[#45322B] stroke-[#E66D17] dark:stroke-[#C77D55]"
+    />
     <path
       d="M7.257 12h1.017V7.327H9.83V6.43H8.274v-.95c0-.36.246-.606.6-.606H9.88V4H8.777c-.903 0-1.52.571-1.52 1.406V6.43H6.12v.897h1.137z"
       className="fill-[#E66D17] dark:fill-[#C77D55]"

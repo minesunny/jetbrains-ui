@@ -36,8 +36,9 @@ export const TestSkipped = ({
       className="fill-[#FFAF0F] dark:fill-[#F2C55C]"
     />
     <path
-      strokeLinecap="round"
       d="M6 8h4"
+      strokeWidth={2}
+      strokeLinecap="round"
       className="stroke-[#FFAF0F] dark:stroke-[#F2C55C]"
     />
   </svg>

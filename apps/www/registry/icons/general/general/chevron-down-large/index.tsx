@@ -30,8 +30,8 @@ export const ChevronDownLarge = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M12.5 5.75 8 10.25l-4.5-4.5"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

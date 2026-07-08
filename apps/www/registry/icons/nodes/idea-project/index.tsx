@@ -29,10 +29,11 @@ export const IdeaProject = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect x={9} y={9} width={7} height={7} rx={1} className="fill-[#000]" />
     <path
+      d="M10.5 14.5h2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M10.5 14.5h2"
       className="stroke-[#fff] dark:stroke-[#CED0D6]"
     />
     <path

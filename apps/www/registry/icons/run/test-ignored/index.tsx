@@ -29,8 +29,16 @@ export const TestIgnored = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.25}
+      strokeWidth={1.5}
+      className="stroke-[#818594] dark:stroke-[#CED0D6]"
+    />
     <path
       d="m3.5 12.5 9-9"
+      strokeWidth={1.5}
       className="stroke-[#818594] dark:stroke-[#CED0D6]"
     />
   </svg>

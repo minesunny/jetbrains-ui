@@ -28,7 +28,50 @@ export const FitContent = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={11}
+      y={7}
+      width={1}
+      height={4}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={12}
+      y={10}
+      width={1}
+      height={4}
+      rx={0.5}
+      transform="rotate(90 12 10)"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={4}
+      y={5}
+      width={1}
+      height={4}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={8}
+      y={5}
+      width={1}
+      height={4}
+      rx={0.5}
+      transform="rotate(90 8 5)"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={1.5}
+      y={2.5}
+      width={13}
+      height={11}
+      rx={1.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default FitContent;

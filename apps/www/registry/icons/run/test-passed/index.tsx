@@ -30,9 +30,10 @@ export const TestPassed = ({
     {...props}
   >
     <path
+      d="m3 8.5 3 3L12.5 5"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m3 8.5 3 3L12.5 5"
       className="stroke-[#55A76A] dark:stroke-[#57965C]"
     />
   </svg>

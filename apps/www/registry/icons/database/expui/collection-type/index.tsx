@@ -28,7 +28,38 @@ export const CollectionType = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+    <circle
+      cx={11}
+      cy={8}
+      r={1}
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <circle
+      cx={8}
+      cy={11}
+      r={1}
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <circle
+      cx={8}
+      cy={5}
+      r={1}
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <circle
+      cx={5}
+      cy={8}
+      r={1}
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+  </svg>
 );
 
 export default CollectionType;

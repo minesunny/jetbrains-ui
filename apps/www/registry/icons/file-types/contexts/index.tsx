@@ -29,9 +29,17 @@ export const Contexts = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={2.5}
+      y={4.5}
+      width={9}
+      height={9}
+      rx={1.5}
+      className="fill-[#EDF3FF] dark:fill-[#2E436E] stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
     <path
-      strokeLinecap="round"
       d="M13.5 10.5V4A1.5 1.5 0 0 0 12 2.5H5.5"
+      strokeLinecap="round"
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
   </svg>

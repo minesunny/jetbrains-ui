@@ -33,7 +33,12 @@ export const RunError = ({
       d="M10.968 6.096Q11 5.802 11 5.5a5.5 5.5 0 1 0-5 5.478V7.502c0-1.963 2.159-3.16 3.824-2.12z"
       className="fill-[#E55765]"
     />
-    <path strokeLinecap="round" d="M5.5 2.5V6" className="stroke-[#fff]" />
+    <path
+      d="M5.5 2.5V6"
+      strokeWidth={1.2}
+      strokeLinecap="round"
+      className="stroke-[#fff]"
+    />
     <path
       d="M6.25 8.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0"
       className="fill-[#fff]"

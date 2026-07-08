@@ -29,9 +29,17 @@ export const Terminal = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={1.5}
+      y={2.5}
+      width={13}
+      height={11}
+      rx={1.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
-      strokeLinecap="round"
       d="M7.5 10.5h3M4.48 9.48 6.46 7.5 4.48 5.52"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

@@ -30,8 +30,8 @@ export const ScriptingScript = ({
     {...props}
   >
     <path
-      strokeLinejoin="round"
       d="M7.5 13.5H6m0 0h3m-3 0A1.5 1.5 0 0 1 4.5 12V4.5m0 0V4A1.5 1.5 0 0 0 3 2.5m1.5 2h-3V4A1.5 1.5 0 0 1 3 2.5m0 0h7.5a2 2 0 0 1 2 2V8"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

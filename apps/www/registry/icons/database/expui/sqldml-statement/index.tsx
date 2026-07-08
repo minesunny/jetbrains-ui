@@ -30,8 +30,8 @@ export const SqldmlStatement = ({
     {...props}
   >
     <path
-      strokeLinejoin="round"
       d="M2.5 6.5V9.5H9.5V12.5L14 8L9.5 3.5V6.5H2.5Z"
+      strokeLinejoin="round"
       className="fill-[#EBECF0] dark:fill-[#43454A] stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

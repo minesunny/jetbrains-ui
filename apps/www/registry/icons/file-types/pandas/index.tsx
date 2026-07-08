@@ -28,7 +28,72 @@ export const Pandas = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={11}
+      y={1}
+      width={2}
+      height={10}
+      rx={0.5}
+      className="fill-[#130754] dark:fill-[#fff]"
+    />
+    <rect
+      x={2}
+      y={5}
+      width={2}
+      height={10}
+      rx={0.5}
+      className="fill-[#130754] dark:fill-[#fff]"
+    />
+    <rect
+      x={5}
+      y={1}
+      width={2}
+      height={4}
+      rx={0.5}
+      className="fill-[#130754] dark:fill-[#fff]"
+    />
+    <rect
+      x={5}
+      y={9}
+      width={2}
+      height={4}
+      rx={0.5}
+      className="fill-[#130754] dark:fill-[#fff]"
+    />
+    <rect
+      x={5}
+      y={6}
+      width={2}
+      height={2}
+      rx={0.5}
+      className="fill-[#FFCA00]"
+    />
+    <rect
+      x={8}
+      y={3}
+      width={2}
+      height={4}
+      rx={0.5}
+      className="fill-[#130754] dark:fill-[#fff]"
+    />
+    <rect
+      x={8}
+      y={8}
+      width={2}
+      height={2}
+      rx={0.5}
+      className="fill-[#E70488]"
+    />
+    <rect
+      x={8}
+      y={11}
+      width={2}
+      height={4}
+      rx={0.5}
+      className="fill-[#130754] dark:fill-[#fff]"
+    />
+  </svg>
 );
 
 export default Pandas;

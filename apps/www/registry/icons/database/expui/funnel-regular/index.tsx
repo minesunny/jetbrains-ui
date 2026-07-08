@@ -30,6 +30,7 @@ export const FunnelRegular = ({
     {...props}
   >
     <path
+      id="Union"
       d="M14 2H2V2.85714L6.5 8V14H9.5V8L14 2.85714V2Z"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />

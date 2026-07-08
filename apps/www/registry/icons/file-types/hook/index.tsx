@@ -30,9 +30,15 @@ export const Hook = ({
     {...props}
   >
     <path
+      d="M13.5 3.5V10a4.5 4.5 0 1 1-9 0V7.5l2 2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M13.5 3.5V10a4.5 4.5 0 1 1-9 0V7.5l2 2"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <circle
+      cx={13.5}
+      cy={2.5}
+      r={1}
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

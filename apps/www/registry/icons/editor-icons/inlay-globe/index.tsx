@@ -29,6 +29,12 @@ export const InlayGlobe = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={6}
+      cy={6}
+      r={5.5}
+      className="stroke-[#818594] dark:stroke-[#9DA0A8]"
+    />
     <path
       d="M6 .5c.537 0 1.158.449 1.674 1.481C8.175 2.984 8.5 4.404 8.5 6s-.325 3.016-.826 4.019C7.158 11.05 6.537 11.5 6 11.5s-1.158-.449-1.674-1.481C3.825 9.016 3.5 7.596 3.5 6s.325-3.016.826-4.019C4.842.95 5.463.5 6 .5ZM11 4.5H1M11 7.5H1"
       className="stroke-[#818594] dark:stroke-[#9DA0A8]"

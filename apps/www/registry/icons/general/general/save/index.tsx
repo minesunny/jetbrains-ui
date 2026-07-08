@@ -30,8 +30,8 @@ export const Save = ({
     {...props}
   >
     <path
-      strokeLinejoin="round"
       d="M5.5 3v2.5h5V3m-6 10V9.5h7V13m-9 .5v-11h9l2 2v9z"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

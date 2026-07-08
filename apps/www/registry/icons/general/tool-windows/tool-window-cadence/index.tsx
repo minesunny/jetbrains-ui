@@ -30,8 +30,8 @@ export const ToolWindowCadence = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M14.5 13.5v-11m-2 9.5V4m-2 7V5m-8 9.5v-13m2 12.5V2m2 11V3m2 9V4"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

@@ -30,9 +30,9 @@ export const SortHistory = ({
     {...props}
   >
     <path
+      d="M1.5 3.5h9m-9 4h7m-7 4h5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M1.5 3.5h9m-9 4h7m-7 4h5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

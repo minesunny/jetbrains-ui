@@ -28,7 +28,26 @@ export const MoreVertical = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <circle
+      cx={8}
+      cy={3}
+      r={1}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <circle
+      cx={8}
+      cy={8}
+      r={1}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <circle
+      cx={8}
+      cy={13}
+      r={1}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default MoreVertical;

@@ -29,6 +29,7 @@ export const FastApi = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle cx={8} cy={8} r={7} className="fill-[#019486]" />
     <path d="M7.5 4 4 12l7-5H8l4-3z" className="fill-[#fff]" />
   </svg>
 );

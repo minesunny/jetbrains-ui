@@ -28,7 +28,40 @@ export const Groups = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={1.5}
+      y={1.5}
+      width={5}
+      height={5}
+      rx={0.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <rect
+      x={1.5}
+      y={8.5}
+      width={5}
+      height={5}
+      rx={0.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <rect
+      x={8.5}
+      y={8.5}
+      width={5}
+      height={5}
+      rx={0.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <rect
+      x={8.5}
+      y={1.5}
+      width={5}
+      height={5}
+      rx={0.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+  </svg>
 );
 
 export default Groups;

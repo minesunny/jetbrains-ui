@@ -37,9 +37,10 @@ export const GutterCheckBoxSelected = ({
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      d="M3.75 6.75 6 9l4.242-4.242"
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M3.75 6.75 6 9l4.242-4.242"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

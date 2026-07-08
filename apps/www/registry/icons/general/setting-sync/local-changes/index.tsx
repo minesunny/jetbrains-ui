@@ -28,7 +28,9 @@ export const LocalChanges = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <circle cx={7.5} cy={8} r={2.5} className="fill-[#6C707E]" />
+  </svg>
 );
 
 export default LocalChanges;

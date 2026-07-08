@@ -34,9 +34,10 @@ export const RunSuccess = ({
       className="fill-[#55A76A] dark:fill-[#57965C]"
     />
     <path
+      d="m2.5 5.5 2 2 4-4"
+      strokeWidth={1.2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m2.5 5.5 2 2 4-4"
       className="stroke-[#fff]"
     />
     <path

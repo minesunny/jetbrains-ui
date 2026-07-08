@@ -34,8 +34,9 @@ export const UnselectAll = ({
       className="stroke-[currentColor]"
     />
     <path
-      strokeLinecap="round"
       d="M4.75 8h6.5"
+      strokeWidth={1.5}
+      strokeLinecap="round"
       className="stroke-[currentColor]"
     />
   </svg>

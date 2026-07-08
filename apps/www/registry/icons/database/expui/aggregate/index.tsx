@@ -29,6 +29,12 @@ export const Aggregate = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="fill-[#E7EFFD] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
     <path
       d="M7.47083 4.97998H8.53293L10.799 11H9.79713L9.26823 9.51648H6.79143L6.30123 11H5.27783L7.47083 4.97998ZM8.99303 8.72958L8.09003 6.22268L7.99543 5.84858L7.90083 6.22268L7.04513 8.72958H8.99303Z"
       className="fill-[#3574F0] dark:fill-[#548AF7]"

@@ -30,9 +30,15 @@ export const RecursiveMethod = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M13.5 1.4h-4V2m0 3.4V2m0 0a5.5 5.5 0 1 1-5 0"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <circle
+      cx={7}
+      cy={7}
+      r={2}
+      className="fill-[#55A76A] dark:fill-[#57965C]"
     />
   </svg>
 );

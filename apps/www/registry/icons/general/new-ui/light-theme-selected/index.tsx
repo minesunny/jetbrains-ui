@@ -39,6 +39,12 @@ export const LightThemeSelected = ({
       d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0m-1 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0"
       className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
+    <circle
+      cx={8}
+      cy={8}
+      r={3}
+      className="fill-[#EDF3FF] dark:fill-[#25324D]"
+    />
   </svg>
 );
 

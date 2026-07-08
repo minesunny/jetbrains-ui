@@ -35,6 +35,14 @@ export const MoveUp = ({
       d="M11.854 5.854a.5.5 0 0 1-.708.707L8.5 3.914v7.593a.5.5 0 0 1-1 0V3.914L4.854 6.561a.5.5 0 1 1-.708-.707l3.5-3.5L8 2l.354.354z"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
+    <rect
+      x={2}
+      y={13.007}
+      width={12}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
   </svg>
 );
 

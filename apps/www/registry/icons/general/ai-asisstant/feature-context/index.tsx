@@ -28,7 +28,33 @@ export const FeatureContext = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <circle
+      cx={8}
+      cy={9}
+      r={5.042}
+      strokeWidth={0.917}
+      className="stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+    <circle
+      cx={8}
+      cy={3.5}
+      r={2}
+      className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+    <circle
+      cx={3.5}
+      cy={11.5}
+      r={2}
+      className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+    <circle
+      cx={12.5}
+      cy={11.5}
+      r={2}
+      className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+  </svg>
 );
 
 export default FeatureContext;

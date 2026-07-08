@@ -32,6 +32,12 @@ export const ToolWindowTypeTraceView = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

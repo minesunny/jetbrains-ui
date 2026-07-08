@@ -29,14 +29,26 @@ export const Vcs = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={4.5}
+      cy={4}
+      r={2}
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
     <path
       d="M4.5 11.5h4a2 2 0 0 0 2-2V8"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
+      d="M4.5 6.5v8"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M4.5 6.5v8"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <circle
+      cx={10.5}
+      cy={6}
+      r={2}
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

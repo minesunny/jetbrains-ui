@@ -34,6 +34,7 @@ export const BreakpointUnsuspendentDisabled = ({
   >
     <path
       d="M7 .75a6.25 6.25 0 1 1 0 12.5A6.25 6.25 0 0 1 7 .75Z"
+      strokeWidth={1.5}
       className="stroke-[#FFAF0F] dark:stroke-[#F2C55C]"
     />
   </svg>

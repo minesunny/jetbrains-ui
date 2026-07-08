@@ -30,8 +30,9 @@ export const Checkmark = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="m1.5 7.25 3.5 3.5 7.5-7.5"
+      strokeWidth={1.5}
+      strokeLinecap="round"
       className="stroke-[#fff]"
     />
   </svg>

@@ -29,6 +29,14 @@ export const StepOutCodeBlock = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={2}
+      y={13}
+      width={5}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

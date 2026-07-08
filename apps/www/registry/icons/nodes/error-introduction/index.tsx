@@ -29,10 +29,24 @@ export const ErrorIntroduction = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <circle
+      cx={8}
+      cy={8}
+      r={6.5}
+      className="fill-[#FFF7F7] dark:fill-[#402929] stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
+    />
     <path
-      strokeLinecap="round"
       d="M8 4.5v4"
+      strokeWidth={1.2}
+      strokeLinecap="round"
       className="stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
+    />
+    <circle
+      cx={8}
+      cy={10.8}
+      r={0.5}
+      strokeWidth={0.6}
+      className="fill-[#DB3B4B] dark:fill-[#DB5C5C] stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
     />
   </svg>
 );

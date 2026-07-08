@@ -35,6 +35,12 @@ export const CurrentBranch = ({
       d="M7.707 2.293 1.295 8.705a1 1 0 0 0 0 1.414l4.586 4.586a1 1 0 0 0 1.414 0l6.412-6.412A1 1 0 0 0 14 7.586V3a1 1 0 0 0-1-1H8.414a1 1 0 0 0-.707.293m-5.705 7.12L8.414 3H13v4.586l-6.412 6.412z"
       className="fill-[#FFAF0F] dark:fill-[#F2C55C]"
     />
+    <circle
+      cx={10}
+      cy={6}
+      r={1.5}
+      className="stroke-[#FFAF0F] dark:stroke-[#F2C55C]"
+    />
   </svg>
 );
 

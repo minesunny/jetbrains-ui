@@ -34,8 +34,8 @@ export const UnspecifiedCluster = ({
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path
-      strokeLinejoin="round"
       d="M3.5 9.5v-6h4v6z"
+      strokeLinejoin="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

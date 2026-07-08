@@ -30,9 +30,17 @@ export const OpenInToolWindow = ({
     {...props}
   >
     <path
+      d="m9 7-3.5 3.5M8.5 10.5h-3v-3"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m9 7-3.5 3.5M8.5 10.5h-3v-3"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <rect
+      x={2.5}
+      y={2.5}
+      width={11}
+      height={11}
+      rx={1.5}
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

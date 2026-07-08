@@ -30,9 +30,17 @@ export const GroupByModule = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M3.5 13.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1M12.5 13.5h1a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1h-1"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <rect
+      x={4.5}
+      y={4.5}
+      width={7}
+      height={7}
+      rx={1.5}
+      className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
   </svg>
 );

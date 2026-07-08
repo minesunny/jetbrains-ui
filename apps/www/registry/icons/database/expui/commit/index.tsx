@@ -30,8 +30,9 @@ export const Commit = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M2.5 8.25L6 11.75L13.5 4.25"
+      strokeWidth={1.5}
+      strokeLinecap="round"
       className="stroke-[#55A76A] dark:stroke-[#57965C]"
     />
   </svg>

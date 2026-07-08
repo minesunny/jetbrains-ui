@@ -34,8 +34,8 @@ export const VirtualKey = ({
       className="stroke-[#955AE0] dark:stroke-[#B589EC]"
     />
     <path
-      strokeLinecap="round"
       d="M7.5 8.5v6M8 13.5h2.5M8 11.5h2.5"
+      strokeLinecap="round"
       className="stroke-[#955AE0] dark:stroke-[#B589EC]"
     />
   </svg>

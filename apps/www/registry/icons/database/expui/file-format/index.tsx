@@ -30,8 +30,8 @@ export const FileFormat = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M12.5 15.5V9.5M9.90193 14L15.0981 11M15.0981 14L9.90192 11"
+      strokeLinecap="round"
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
     <path

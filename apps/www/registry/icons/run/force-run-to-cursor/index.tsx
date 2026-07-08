@@ -29,6 +29,38 @@ export const ForceRunToCursor = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={13}
+      y={14}
+      width={2}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={10}
+      y={14}
+      width={2}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={13}
+      y={7}
+      width={2}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={10}
+      y={7}
+      width={2}
+      height={1}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
     <path
       fillRule="evenodd"
       clipRule="evenodd"

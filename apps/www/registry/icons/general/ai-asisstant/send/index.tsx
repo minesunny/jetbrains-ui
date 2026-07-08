@@ -30,9 +30,9 @@ export const Send = ({
     {...props}
   >
     <path
+      d="M9.5 8h-6l-1 6.5 12-6.5-12-6.5.692 4.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M9.5 8h-6l-1 6.5 12-6.5-12-6.5.692 4.5"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

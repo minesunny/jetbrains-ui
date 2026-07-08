@@ -35,6 +35,29 @@ export const Download = ({
       d="M10.854 8.354a.5.5 0 1 0-.707-.707L8.5 9.293V2.5a.5.5 0 0 0-1 0v6.793L5.853 7.646a.5.5 0 0 0-.707.708l2.5 2.5a.5.5 0 0 0 .708 0z"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
+    <rect
+      width={12}
+      height={1}
+      rx={0.5}
+      transform="matrix(1 0 0 -1 2 14)"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={2}
+      y={10}
+      width={1}
+      height={4}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <rect
+      x={13}
+      y={10}
+      width={1}
+      height={4}
+      rx={0.5}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
   </svg>
 );
 

@@ -42,9 +42,9 @@ export const Package = ({
       className="fill-[#EDF3FF] dark:fill-[#25324D]"
     />
     <path
+      d="m8 7.5 6.5-3M8 7.5v7m0-7-6.5-3m13 0v7.02L8 14.5m6.5-10L8 1.5l-6.5 3m6.5 10-6.5-2.98V4.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m8 7.5 6.5-3M8 7.5v7m0-7-6.5-3m13 0v7.02L8 14.5m6.5-10L8 1.5l-6.5 3m6.5 10-6.5-2.98V4.5"
       className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
   </svg>

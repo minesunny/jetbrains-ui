@@ -31,7 +31,32 @@ export const InlayRenameInNoCodeFiles = ({
     aria-label={ariaLabel}
     aria-hidden={!ariaLabel}
     {...props}
-  ></svg>
+  >
+    <rect
+      x={1}
+      y={5}
+      width={10}
+      height={1.5}
+      rx={0.75}
+      className="fill-[#818594] dark:fill-[#9DA0A8]"
+    />
+    <rect
+      x={1}
+      y={9}
+      width={6}
+      height={1.5}
+      rx={0.75}
+      className="fill-[#818594] dark:fill-[#9DA0A8]"
+    />
+    <rect
+      x={1}
+      y={1}
+      width={10}
+      height={1.5}
+      rx={0.75}
+      className="fill-[#818594] dark:fill-[#9DA0A8]"
+    />
+  </svg>
 );
 
 export default InlayRenameInNoCodeFiles;

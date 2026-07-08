@@ -41,9 +41,21 @@ export const AddEmoji = ({
       d="M2 8a6 6 0 1 1 11.659 2h1.051A7 7 0 1 0 10 14.71V13.66A6 6 0 0 1 2 8"
       className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
+    <circle
+      cx={6}
+      cy={6}
+      r={1}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <circle
+      cx={10}
+      cy={6}
+      r={1}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
     <path
-      strokeLinecap="round"
       d="M10.763 9.438c-1.019 2.13-4.518 2.09-5.544-.002"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

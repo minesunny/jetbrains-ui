@@ -30,8 +30,8 @@ export const Diagram = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M1.5 13.5h13M1.5 2.5h13"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
     <path

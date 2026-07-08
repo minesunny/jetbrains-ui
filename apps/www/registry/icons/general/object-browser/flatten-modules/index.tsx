@@ -29,6 +29,14 @@ export const FlattenModules = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
+    <rect
+      x={11}
+      y={5}
+      width={3}
+      height={3}
+      rx={1}
+      className="fill-[#4682FA] dark:fill-[#548AF7]"
+    />
     <path
       d="M11 14a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"
       className="fill-[#4682FA] dark:fill-[#548AF7]"

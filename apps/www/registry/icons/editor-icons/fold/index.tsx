@@ -30,9 +30,9 @@ export const Fold = ({
     {...props}
   >
     <path
+      d="M9 4 5.5 7.5 2 4"
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M9 4 5.5 7.5 2 4"
       className="stroke-[#A8ADBD] dark:stroke-[#6F737A]"
     />
   </svg>

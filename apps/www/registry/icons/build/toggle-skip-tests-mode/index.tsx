@@ -29,10 +29,8 @@ export const ToggleSkipTestsMode = ({
     aria-hidden={!ariaLabel}
     {...props}
   >
-    <path
-      d="m3.5 12.5 9-9"
-      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
-    />
+    <circle cx={8} cy={8} r={6.5} className="stroke-[#6C707E] dark:stroke-[#CED0D6]" />
+    <path d="m3.5 12.5 9-9" className="stroke-[#6C707E] dark:stroke-[#CED0D6]" />
   </svg>
 );
 

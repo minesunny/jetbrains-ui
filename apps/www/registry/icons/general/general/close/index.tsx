@@ -30,8 +30,8 @@ export const Close = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="m2.5 13.5 11-11m0 11-11-11"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>

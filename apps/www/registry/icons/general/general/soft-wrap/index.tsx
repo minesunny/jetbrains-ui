@@ -30,8 +30,8 @@ export const SoftWrap = ({
     {...props}
   >
     <path
-      strokeLinecap="round"
       d="M1.5 3.5h13M1.5 8h10.75a2.25 2.25 0 0 1 0 4.5H8.5m0 0 2-2m-2 2 2 2m-9-2h4"
+      strokeLinecap="round"
       className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
   </svg>
