@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Magic Resolve",
   "description": "Magic Resolve icon from vcs category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/vcs/magic-resolve/index.tsx",

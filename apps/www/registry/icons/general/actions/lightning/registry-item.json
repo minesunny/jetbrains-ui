@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Lightning",
   "description": "Lightning icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/actions/lightning/index.tsx",

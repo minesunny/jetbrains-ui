@@ -5,18 +5,14 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export type ChevronDownProps = Omit<ComponentProps<'svg'>, 'size'> & {
-  size?: 12 | 14 | 16 | 20 | 24;
-  mode?: 'light' | 'dark';
-};
-
 export const ChevronDown = ({
   size = 16,
-  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}: ChevronDownProps) => (
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
   <svg
     width={size}
     height={size}

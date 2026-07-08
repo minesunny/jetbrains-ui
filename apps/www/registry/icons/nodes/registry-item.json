@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Nodes Icons",
   "description": "All 77 icons from the Nodes category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/nodes/index.ts",

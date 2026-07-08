@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Delete",
   "description": "Delete icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/delete/index.tsx",

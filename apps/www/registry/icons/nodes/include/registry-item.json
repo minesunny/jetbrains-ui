@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Include",
   "description": "Include icon from nodes category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/nodes/include/index.tsx",

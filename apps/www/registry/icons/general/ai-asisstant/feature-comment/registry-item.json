@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Feature Comment",
   "description": "Feature Comment icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/ai-asisstant/feature-comment/index.tsx",

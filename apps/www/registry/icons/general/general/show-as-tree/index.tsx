@@ -5,18 +5,14 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export type ShowAsTreeProps = Omit<ComponentProps<'svg'>, 'size'> & {
-  size?: 12 | 14 | 16 | 20 | 24;
-  mode?: 'light' | 'dark';
-};
-
 export const ShowAsTree = ({
   size = 16,
-  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}: ShowAsTreeProps) => (
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
   <svg
     width={size}
     height={size}

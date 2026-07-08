@@ -5,18 +5,14 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export type YugabyteProps = Omit<ComponentProps<'svg'>, 'size'> & {
-  size?: 12 | 14 | 16 | 20 | 24;
-  mode?: 'light' | 'dark';
-};
-
 export const Yugabyte = ({
   size = 16,
-  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}: YugabyteProps) => (
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
   <svg
     width={size}
     height={size}

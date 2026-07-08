@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Build Icons",
   "description": "All 23 icons from the Build category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/build/index.ts",

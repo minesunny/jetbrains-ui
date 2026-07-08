@@ -5,18 +5,14 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export type DownProps = Omit<ComponentProps<'svg'>, 'size'> & {
-  size?: 12 | 14 | 16 | 20 | 24;
-  mode?: 'light' | 'dark';
-};
-
 export const Down = ({
   size = 16,
-  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}: DownProps) => (
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
   <svg
     width={size}
     height={size}

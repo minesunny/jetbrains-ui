@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Exit",
   "description": "Exit icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/exit/index.tsx",

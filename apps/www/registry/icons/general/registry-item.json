@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "General Icons",
   "description": "All 409 icons from the General category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/index.ts",

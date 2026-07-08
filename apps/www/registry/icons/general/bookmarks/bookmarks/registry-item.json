@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Bookmarks",
   "description": "Bookmarks icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/bookmarks/bookmarks/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Arrow Right",
   "description": "Arrow Right icon from vcs category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/vcs/arrow-right/index.tsx",

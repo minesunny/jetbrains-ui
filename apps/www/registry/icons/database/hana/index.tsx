@@ -5,18 +5,14 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export type HanaProps = Omit<ComponentProps<'svg'>, 'size'> & {
-  size?: 12 | 14 | 16 | 20 | 24;
-  mode?: 'light' | 'dark';
-};
-
 export const Hana = ({
   size = 16,
-  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}: HanaProps) => (
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
   <svg
     width={size}
     height={size}

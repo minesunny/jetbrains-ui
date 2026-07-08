@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Subtypes",
   "description": "Subtypes icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/subtypes/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Threads",
   "description": "Threads icon from debugger category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/debugger/threads/index.tsx",

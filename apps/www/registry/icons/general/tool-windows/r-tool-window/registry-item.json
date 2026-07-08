@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "R Tool Window",
   "description": "R Tool Window icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/tool-windows/r-tool-window/index.tsx",

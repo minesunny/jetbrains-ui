@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cut",
   "description": "Cut icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/cut/index.tsx",

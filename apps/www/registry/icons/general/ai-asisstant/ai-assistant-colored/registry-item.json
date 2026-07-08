@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Ai Assistant Colored",
   "description": "Ai Assistant Colored icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/ai-asisstant/ai-assistant-colored/index.tsx",

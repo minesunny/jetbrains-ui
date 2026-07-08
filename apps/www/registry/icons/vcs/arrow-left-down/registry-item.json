@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Arrow Left Down",
   "description": "Arrow Left Down icon from vcs category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/vcs/arrow-left-down/index.tsx",

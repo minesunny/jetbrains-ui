@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Copy",
   "description": "Copy icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/copy/index.tsx",

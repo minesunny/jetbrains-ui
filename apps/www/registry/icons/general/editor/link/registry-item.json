@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Link",
   "description": "Link icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/editor/link/index.tsx",

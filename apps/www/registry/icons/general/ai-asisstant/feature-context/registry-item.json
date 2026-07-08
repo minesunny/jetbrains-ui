@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Feature Context",
   "description": "Feature Context icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/ai-asisstant/feature-context/index.tsx",

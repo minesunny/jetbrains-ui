@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Gutter Check Box Selected",
   "description": "Gutter Check Box Selected icon from vcs category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/vcs/gutter-check-box-selected/index.tsx",

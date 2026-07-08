@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Symlink",
   "description": "Symlink icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/modifiers/symlink/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Send To Editor",
   "description": "Send To Editor icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/ai-asisstant/send-to-editor/index.tsx",

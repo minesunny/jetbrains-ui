@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Save",
   "description": "Save icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/save/index.tsx",

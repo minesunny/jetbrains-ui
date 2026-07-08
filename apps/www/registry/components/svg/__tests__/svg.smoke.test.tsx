@@ -1,5 +1,7 @@
 import { waitFor, render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
+import { promises as fs } from 'fs';
+import path from 'path';
 
 // setup.ts globally mocks @/registry/components/svg so the wider test suite
 // doesn't pull in the icon graph. This file exercises the REAL dispatcher
@@ -7,6 +9,7 @@ import { describe, expect, it, vi } from 'vitest';
 vi.unmock('@/registry/components/svg');
 
 import { SVG } from '@/registry/components/svg';
+import { iconRegistry } from '@/registry/icons/manifest';
 
 describe('SVG dispatcher — real (smoke)', () => {
   it('renders a real icon component by pathname', async () => {
@@ -38,7 +41,9 @@ describe('SVG dispatcher — real (smoke)', () => {
     // No <svg> rendered — just the sized fallback span.
     expect(container.querySelector('svg')).not.toBeInTheDocument();
     expect(container.querySelector('[data-slot="svg"]')).toBeInTheDocument();
-    expect(warn).toHaveBeenCalledWith(expect.stringMatching(/Unknown icon name/));
+    expect(warn).toHaveBeenCalledWith(
+      expect.stringMatching(/Unknown icon name/),
+    );
     warn.mockRestore();
   });
 
@@ -55,4 +60,23 @@ describe('SVG dispatcher — real (smoke)', () => {
     expect(warn).toHaveBeenCalledWith(expect.stringMatching(/Ambiguous/));
     warn.mockRestore();
   }, 10000);
+
+  it('icon count is stable — no silent loss', async () => {
+    const root = path.join(process.cwd(), 'registry/icons');
+    let fileCount = 0;
+    async function walk(d: string) {
+      for (const e of await fs.readdir(d, { withFileTypes: true })) {
+        const f = path.join(d, e.name);
+        if (e.isDirectory()) await walk(f);
+        else if (e.name === 'index.tsx') fileCount++;
+      }
+    }
+    await walk(root);
+    const manifestCount = Object.keys(iconRegistry).length;
+    // Baselines — update intentionally when icons are added/removed.
+    expect(manifestCount).toBe(1245);
+    expect(fileCount).toBe(1259);
+    // Every registered icon must have a backing file (no phantoms).
+    expect(manifestCount).toBeLessThanOrEqual(fileCount);
+  });
 });

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Changes Update",
   "description": "Changes Update icon from vcs category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/vcs/changes-update/index.tsx",

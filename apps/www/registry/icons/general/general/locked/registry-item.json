@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Locked",
   "description": "Locked icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/locked/index.tsx",

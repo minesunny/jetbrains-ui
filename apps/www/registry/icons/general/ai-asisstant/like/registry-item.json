@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Like",
   "description": "Like icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/ai-asisstant/like/index.tsx",

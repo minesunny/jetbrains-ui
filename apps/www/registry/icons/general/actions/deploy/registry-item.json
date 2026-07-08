@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Deploy",
   "description": "Deploy icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/actions/deploy/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Feedback Rating Focused",
   "description": "Feedback Rating Focused icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/raiting/feedback-rating-focused/index.tsx",

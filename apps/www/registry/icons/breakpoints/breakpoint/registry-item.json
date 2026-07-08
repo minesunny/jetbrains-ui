@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Breakpoint",
   "description": "Breakpoint icon from breakpoints category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/breakpoints/breakpoint/index.tsx",

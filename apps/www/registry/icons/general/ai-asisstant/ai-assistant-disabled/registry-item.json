@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Ai Assistant Disabled",
   "description": "Ai Assistant Disabled icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/ai-asisstant/ai-assistant-disabled/index.tsx",

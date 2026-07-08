@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Right",
   "description": "Right icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/right/index.tsx",

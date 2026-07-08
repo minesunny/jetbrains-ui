@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Import",
   "description": "Import icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/import/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Description File",
   "description": "Description File icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/devkit/description-file/index.tsx",

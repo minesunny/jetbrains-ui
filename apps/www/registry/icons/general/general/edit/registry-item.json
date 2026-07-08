@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Edit",
   "description": "Edit icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/edit/index.tsx",

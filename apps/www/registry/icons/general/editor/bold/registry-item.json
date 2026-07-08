@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Bold",
   "description": "Bold icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/editor/bold/index.tsx",

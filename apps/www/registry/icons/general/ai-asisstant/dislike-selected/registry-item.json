@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Dislike Selected",
   "description": "Dislike Selected icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/ai-asisstant/dislike-selected/index.tsx",

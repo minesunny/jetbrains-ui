@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Config",
   "description": "Config icon from nodes category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/nodes/config/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Arrow Right Down",
   "description": "Arrow Right Down icon from vcs category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/vcs/arrow-right-down/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Feature Answer",
   "description": "Feature Answer icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/ai-asisstant/feature-answer/index.tsx",

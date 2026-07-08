@@ -1,7 +1,6 @@
 'use client';
 
-import { Suspense, lazy, useEffect, useState, type ComponentType } from 'react';
-import { useTheme } from 'next-themes';
+import { Suspense, lazy, type ComponentType } from 'react';
 import {
   iconRegistry,
   slugIndex,
@@ -22,8 +21,6 @@ interface SVGProps {
   /** Full pathname (`"database/redis"`) or bare slug (`"redis"`). Case-insensitive. */
   name: string;
   size?: SvgSize | number;
-  /** Override the icon theme; defaults to the active next-themes resolved theme. */
-  mode?: 'light' | 'dark';
   className?: string;
   'aria-label'?: string;
 }
@@ -74,27 +71,20 @@ function getLazy(pathname: IconPathname): ComponentType<any> {
 export function SVG({
   name,
   size = 'md',
-  mode,
   className,
   'aria-label': ariaLabel,
 }: SVGProps) {
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  // Explicit mode wins; otherwise follow the active theme.
-  const resolvedMode =
-    mode ?? (mounted && resolvedTheme === 'dark' ? 'dark' : 'light');
   // Icon components take size in px; map the public token (or pass-through number).
+  // Theme is CSS-driven: icons use Tailwind `dark:` variants and follow the
+  // nearest `.dark` ancestor (next-themes sets it on <html>).
   const renderedSize = typeof size === 'number' ? size : sizeMap[size];
 
   const pathname = resolvePathname(name);
   if (!pathname) {
     if (process.env.NODE_ENV !== 'production') {
-      console.warn(`[SVG] Unknown icon name: "${name}" — rendering empty fallback.`);
+      console.warn(
+        `[SVG] Unknown icon name: "${name}" — rendering empty fallback.`,
+      );
     }
     return (
       <span
@@ -117,7 +107,6 @@ export function SVG({
         {/* Icon components derive role / aria-hidden from aria-label internally. */}
         <LazyIcon
           size={renderedSize}
-          mode={resolvedMode}
           className={className}
           aria-label={ariaLabel}
         />

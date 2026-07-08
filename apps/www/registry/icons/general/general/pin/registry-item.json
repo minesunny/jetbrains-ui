@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Pin",
   "description": "Pin icon from general category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/general/general/pin/index.tsx",

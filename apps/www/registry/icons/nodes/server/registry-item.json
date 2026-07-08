@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Server",
   "description": "Server icon from nodes category.",
-  "registryDependencies": [
-    "icons-utils"
-  ],
   "files": [
     {
       "path": "registry/icons/nodes/server/index.tsx",

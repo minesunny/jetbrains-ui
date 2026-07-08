@@ -157,11 +157,7 @@ export function SvgIconsGallery({
                   )}
                 >
                   <div className="flex items-center justify-center h-8 mb-1.5">
-                    <SVG
-                      name={icon.name}
-                      size={selectedSize}
-                      mode={selectedMode}
-                    />
+                    <SVG name={icon.name} size={selectedSize} />
                   </div>
                   <span
                     className="mt-0.5 block w-full truncate px-1 text-center text-[10px] leading-tight text-fd-muted-foreground"
@@ -174,7 +170,7 @@ export function SvgIconsGallery({
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 z-20 w-80 p-3 bg-fd-card border rounded-xl shadow-lg">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-fd-muted">
-                        <SVG name={icon.name} size="xl" mode={selectedMode} />
+                        <SVG name={icon.name} size="xl" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium truncate">
@@ -188,7 +184,7 @@ export function SvgIconsGallery({
                           key={s}
                           className="flex flex-col items-center gap-1"
                         >
-                          <SVG name={icon.name} size={s} mode={selectedMode} />
+                          <SVG name={icon.name} size={s} />
                           <span className="text-[9px] text-fd-muted-foreground">
                             {s}
                           </span>
