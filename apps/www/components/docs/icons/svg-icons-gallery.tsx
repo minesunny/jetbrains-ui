@@ -10,6 +10,7 @@ import {
   ModeToggle,
 } from '@/components/docs/icons/shared';
 import type { SvgSize } from '@/components/docs/icons/shared';
+import { CodeTabs } from '@/components/docs/code-tabs';
 
 interface SvgIcon {
   /** Full icon name e.g., "breakpoints/breakpoint" */
@@ -33,6 +34,28 @@ function fuzzyMatch(query: string, target: string): boolean {
     if (t[ti] === q[qi]) qi++;
   }
   return qi === q.length;
+}
+
+// PascalCase component name from a pathname's last segment.
+// 'breakpoints/breakpoint' -> 'Breakpoint', 'database/access-method' -> 'AccessMethod'
+function componentName(name: string): string {
+  const last = name.split('/').pop() ?? name;
+  return last
+    .split('-')
+    .map((p) => p.charAt(0).toUpperCase() + p.slice(1))
+    .join('');
+}
+
+// Install commands per package manager, with the @jetbrains-ui registry prefix
+// (matches component-manual-installation's registry-deps mapping).
+function installCommands(name: string): Record<string, string> {
+  const item = `@jetbrains-ui/icons-${name.replace(/\//g, '-')}`;
+  return {
+    npm: `npx shadcn@latest add ${item}`,
+    pnpm: `pnpm dlx shadcn@latest add ${item}`,
+    yarn: `npx shadcn@latest add ${item}`,
+    bun: `bun x --bun shadcn@latest add ${item}`,
+  };
 }
 
 export function SvgIconsGallery({
@@ -111,7 +134,12 @@ export function SvgIconsGallery({
           <p className="text-sm font-medium">No icons found</p>
         </div>
       ) : (
-        <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-2">
+        <div
+          className={cn(
+            'grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-2',
+            selectedMode === 'dark' && 'dark',
+          )}
+        >
           {filteredIcons.map((icon) => {
             const isExpanded = expandedIcon === icon.name;
             const displayName =
@@ -143,7 +171,7 @@ export function SvgIconsGallery({
                   </span>
                 </button>
                 {isExpanded && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 z-20 w-72 p-3 bg-fd-card border rounded-xl shadow-lg">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 z-20 w-80 p-3 bg-fd-card border rounded-xl shadow-lg">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-fd-muted">
                         <SVG name={icon.name} size="xl" mode={selectedMode} />
@@ -167,19 +195,26 @@ export function SvgIconsGallery({
                         </div>
                       ))}
                     </div>
+                    <p className="text-[9px] text-fd-muted-foreground mb-1">
+                      Usage
+                    </p>
                     <div className="flex items-center gap-1.5 mb-1.5">
                       <code className="flex-1 text-[9px] p-1.5 rounded bg-fd-muted font-mono truncate">{`<SVG name="${icon.name}" />`}</code>
                       <CopyButton text={`<SVG name="${icon.name}" />`} />
                     </div>
                     <p className="text-[9px] text-fd-muted-foreground mb-1">
-                      Install
+                      Import
                     </p>
-                    <div className="flex items-center gap-1.5">
-                      <code className="flex-1 text-[9px] p-1.5 rounded bg-fd-muted font-mono truncate">{`npx shadcn@latest add icons-${icon.name.replace(/\//g, '-')}`}</code>
+                    <div className="flex items-center gap-1.5 mb-1.5">
+                      <code className="flex-1 text-[9px] p-1.5 rounded bg-fd-muted font-mono truncate">{`import { ${componentName(icon.name)} } from '@/components/jetbrains-ui/icons/${icon.name}'`}</code>
                       <CopyButton
-                        text={`npx shadcn@latest add icons-${icon.name.replace(/\//g, '-')}`}
+                        text={`import { ${componentName(icon.name)} } from '@/components/jetbrains-ui/icons/${icon.name}'`}
                       />
                     </div>
+                    <p className="text-[9px] text-fd-muted-foreground mb-1">
+                      Install
+                    </p>
+                    <CodeTabs codes={installCommands(icon.name)} />
                   </div>
                 )}
               </div>

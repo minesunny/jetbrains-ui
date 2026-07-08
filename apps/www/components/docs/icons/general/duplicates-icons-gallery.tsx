@@ -1,14 +1,9 @@
 'use client';
 
 import { SvgIconsGallery } from '@/components/docs/icons/svg-icons-gallery';
+import { domainIconNames } from '@/components/docs/icons/icon-list';
 
-const icons = [
-  'general/duplicates/editor',
-  'general/duplicates/inalyQarkus',
-  'general/duplicates/inlayMicronaut',
-  'general/duplicates/inlaySpring',
-  'general/duplicates/inlayWebInspector',
-] as const;
+const icons = domainIconNames('general/duplicates');
 
 export function DuplicatesIconsGallery() {
   return <SvgIconsGallery icons={icons.map((name) => ({ name }))} />;

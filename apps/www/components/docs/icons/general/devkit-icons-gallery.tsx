@@ -1,16 +1,9 @@
 'use client';
 
 import { SvgIconsGallery } from '@/components/docs/icons/svg-icons-gallery';
+import { domainIconNames } from '@/components/docs/icons/icon-list';
 
-const icons = [
-  'general/devkit/addSDK',
-  'general/devkit/descriptionFile',
-  'general/devkit/diff',
-  'general/devkit/plugin',
-  'general/devkit/pluginV2',
-  'general/devkit/properties',
-  'general/devkit/sdkClosed',
-] as const;
+const icons = domainIconNames('general/devkit');
 
 export function DevkitIconsGallery() {
   return <SvgIconsGallery icons={icons.map((name) => ({ name }))} />;

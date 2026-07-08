@@ -1,12 +1,9 @@
 'use client';
 
 import { SvgIconsGallery } from '@/components/docs/icons/svg-icons-gallery';
+import { domainIconNames } from '@/components/docs/icons/icon-list';
 
-const icons = [
-  'general/inline/filter',
-  'general/inline/filterdups',
-  'general/inline/statisticsPanel',
-] as const;
+const icons = domainIconNames('general/inline');
 
 export function InlineIconsGallery() {
   return <SvgIconsGallery icons={icons.map((name) => ({ name }))} />;
