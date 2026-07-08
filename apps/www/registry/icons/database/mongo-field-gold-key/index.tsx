@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type MongoFieldGoldKeyProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,92 +10,36 @@ export type MongoFieldGoldKeyProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const MongoFieldGoldKeyLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M3.605 8.855q.398.345.383.923l-.03 1.792q-.007.735.315 1.282.33.555.93.848.608.3 1.41.3H7.5v-1.005h-.88q-.712 0-1.132-.397-.413-.39-.398-1.05l.03-1.778q.015-.697-.412-1.185-.428-.495-1.155-.63.728-.052 1.155-.532.427-.488.412-1.253l-.03-1.567q-.007-.735.443-1.163.457-.435 1.237-.435h.73V2h-.737q-.863 0-1.5.315-.638.315-.983.9-.337.585-.322 1.365l.03 1.583q.015.577-.383.922-.397.345-1.072.345H2v1.08h.533q.675 0 1.072.345M11.856 12.59a3.5 3.5 0 0 1-.96-.752q-.066.46-.389.76-.412.396-1.125.397H8.5V14h.89q.802 0 1.402-.3.607-.292.93-.848.075-.125.134-.261M12.015 6.163q-.002.084.004.165a3.5 3.5 0 0 0-.984.687 2 2 0 0 1-.153-.845l.03-1.567q.008-.735-.45-1.163-.45-.435-1.23-.435H8.5V2h.74q.862 0 1.5.315t.974.9q.345.585.33 1.365z"
-      fill="#6C707E"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M14 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1h-2zm1-2.45a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-      fill="#E66D17"
-    />
-  </svg>
-);
-
-const MongoFieldGoldKeyDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M3.605 8.855q.398.345.383.923l-.03 1.792q-.007.735.315 1.282.33.555.93.848.608.3 1.41.3H7.5v-1.005h-.88q-.712 0-1.132-.397-.413-.39-.398-1.05l.03-1.778q.015-.697-.412-1.185-.428-.495-1.155-.63.728-.052 1.155-.532.427-.488.412-1.253l-.03-1.567q-.007-.735.443-1.163.457-.435 1.237-.435h.73V2h-.737q-.863 0-1.5.315-.638.315-.983.9-.337.585-.322 1.365l.03 1.583q.015.577-.383.922-.397.345-1.072.345H2v1.08h.533q.675 0 1.072.345M11.856 12.59a3.5 3.5 0 0 1-.96-.752q-.066.46-.389.76-.412.396-1.125.397H8.5V14h.89q.802 0 1.402-.3.607-.292.93-.848.075-.125.134-.261M12.015 6.163q-.002.084.004.165a3.5 3.5 0 0 0-.984.687 2 2 0 0 1-.153-.845l.03-1.567q.008-.735-.45-1.163-.45-.435-1.23-.435H8.5V2h.74q.862 0 1.5.315t.974.9q.345.585.33 1.365z"
-      fill="#CED0D6"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M14 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1h-2zm1-2.45a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-      fill="#F2C55C"
-    />
-  </svg>
-);
-
-export const MongoFieldGoldKey: FC<MongoFieldGoldKeyProps> = ({
+export const MongoFieldGoldKey = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? MongoFieldGoldKeyLight : MongoFieldGoldKeyDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: MongoFieldGoldKeyProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M3.605 8.855q.398.345.383.923l-.03 1.792q-.007.735.315 1.282.33.555.93.848.608.3 1.41.3H7.5v-1.005h-.88q-.712 0-1.132-.397-.413-.39-.398-1.05l.03-1.778q.015-.697-.412-1.185-.428-.495-1.155-.63.728-.052 1.155-.532.427-.488.412-1.253l-.03-1.567q-.007-.735.443-1.163.457-.435 1.237-.435h.73V2h-.737q-.863 0-1.5.315-.638.315-.983.9-.337.585-.322 1.365l.03 1.583q.015.577-.383.922-.397.345-1.072.345H2v1.08h.533q.675 0 1.072.345M11.856 12.59a3.5 3.5 0 0 1-.96-.752q-.066.46-.389.76-.412.396-1.125.397H8.5V14h.89q.802 0 1.402-.3.607-.292.93-.848.075-.125.134-.261M12.015 6.163q-.002.084.004.165a3.5 3.5 0 0 0-.984.687 2 2 0 0 1-.153-.845l.03-1.567q.008-.735-.45-1.163-.45-.435-1.23-.435H8.5V2h.74q.862 0 1.5.315t.974.9q.345.585.33 1.365z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M14 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1h-2zm1-2.45a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+      className="fill-[#E66D17] dark:fill-[#F2C55C]"
+    />
+  </svg>
+);
 
 export default MongoFieldGoldKey;

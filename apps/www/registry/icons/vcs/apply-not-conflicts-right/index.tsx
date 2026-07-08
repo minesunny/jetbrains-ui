@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type ApplyNotConflictsRightProps = Omit<
@@ -13,82 +13,31 @@ export type ApplyNotConflictsRightProps = Omit<
   mode?: 'light' | 'dark';
 };
 
-const ApplyNotConflictsRightLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M7.5 3.5 3 8l4.5 4.5m5-9L8 8l4.5 4.5"
-      stroke="#6C707E"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-const ApplyNotConflictsRightDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M7.5 3.5 3 8l4.5 4.5m5-9L8 8l4.5 4.5"
-      stroke="#CED0D6"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-export const ApplyNotConflictsRight: FC<ApplyNotConflictsRightProps> = ({
+export const ApplyNotConflictsRight = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? ApplyNotConflictsRightLight : ApplyNotConflictsRightDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: ApplyNotConflictsRightProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      strokeLinecap="round"
+      d="M7.5 3.5 3 8l4.5 4.5m5-9L8 8l4.5 4.5"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default ApplyNotConflictsRight;

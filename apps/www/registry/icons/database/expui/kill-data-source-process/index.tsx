@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type KillDataSourceProcessProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,92 +10,36 @@ export type KillDataSourceProcessProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const KillDataSourceProcessLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M12 3H4C3.44772 3 3 3.44772 3 4V12C3 12.5523 3.44772 13 4 13H7V14H4C2.89543 14 2 13.1046 2 12V4C2 2.89543 2.89543 2 4 2H12C13.1046 2 14 2.89543 14 4V9H13V4C13 3.44772 12.5523 3 12 3Z"
-      fill="#DB3B4B"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M9.05001 12C9.28164 10.8589 10.2905 10 11.5 10H13.5C13.7761 10 14 10.2239 14 10.5V11H15.5C15.7761 11 16 11.2239 16 11.5C16 11.7761 15.7761 12 15.5 12H14V14H15.5C15.7761 14 16 14.2239 16 14.5C16 14.7761 15.7761 15 15.5 15H14V15.5C14 15.7761 13.7761 16 13.5 16H11.5C10.2905 16 9.28164 15.1411 9.05001 14H8.5C8.22386 14 8 13.7761 8 13.5V12.5C8 12.2239 8.22386 12 8.5 12H9.05001ZM10 13.5V12.5C10 11.6716 10.6716 11 11.5 11H13V15H11.5C10.6716 15 10 14.3284 10 13.5Z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const KillDataSourceProcessDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M12 3H4C3.44772 3 3 3.44772 3 4V12C3 12.5523 3.44772 13 4 13H7V14H4C2.89543 14 2 13.1046 2 12V4C2 2.89543 2.89543 2 4 2H12C13.1046 2 14 2.89543 14 4V9H13V4C13 3.44772 12.5523 3 12 3Z"
-      fill="#DB5C5C"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M9.05001 12C9.28164 10.8589 10.2905 10 11.5 10H13.5C13.7761 10 14 10.2239 14 10.5V11H15.5C15.7761 11 16 11.2239 16 11.5C16 11.7761 15.7761 12 15.5 12H14V14H15.5C15.7761 14 16 14.2239 16 14.5C16 14.7761 15.7761 15 15.5 15H14V15.5C14 15.7761 13.7761 16 13.5 16H11.5C10.2905 16 9.28164 15.1411 9.05001 14H8.5C8.22386 14 8 13.7761 8 13.5V12.5C8 12.2239 8.22386 12 8.5 12H9.05001ZM10 13.5V12.5C10 11.6716 10.6716 11 11.5 11H13V15H11.5C10.6716 15 10 14.3284 10 13.5Z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const KillDataSourceProcess: FC<KillDataSourceProcessProps> = ({
+export const KillDataSourceProcess = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? KillDataSourceProcessLight : KillDataSourceProcessDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: KillDataSourceProcessProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M12 3H4C3.44772 3 3 3.44772 3 4V12C3 12.5523 3.44772 13 4 13H7V14H4C2.89543 14 2 13.1046 2 12V4C2 2.89543 2.89543 2 4 2H12C13.1046 2 14 2.89543 14 4V9H13V4C13 3.44772 12.5523 3 12 3Z"
+      className="fill-[#DB3B4B] dark:fill-[#DB5C5C]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9.05001 12C9.28164 10.8589 10.2905 10 11.5 10H13.5C13.7761 10 14 10.2239 14 10.5V11H15.5C15.7761 11 16 11.2239 16 11.5C16 11.7761 15.7761 12 15.5 12H14V14H15.5C15.7761 14 16 14.2239 16 14.5C16 14.7761 15.7761 15 15.5 15H14V15.5C14 15.7761 13.7761 16 13.5 16H11.5C10.2905 16 9.28164 15.1411 9.05001 14H8.5C8.22386 14 8 13.7761 8 13.5V12.5C8 12.2239 8.22386 12 8.5 12H9.05001ZM10 13.5V12.5C10 11.6716 10.6716 11 11.5 11H13V15H11.5C10.6716 15 10 14.3284 10 13.5Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default KillDataSourceProcess;

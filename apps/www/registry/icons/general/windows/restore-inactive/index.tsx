@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type RestoreInactiveProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,96 +10,38 @@ export type RestoreInactiveProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const RestoreInactiveLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M5 3h8v8h-3v-1h2V4H6v2H5z"
-      fill="#818594"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M11 5H3v8h8zm-1 1H4v6h6z"
-      fill="#818594"
-    />
-  </svg>
-);
-
-const RestoreInactiveDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M5 3h8v8h-3v-1h2V4H6v2H5z"
-      fill="#6F737A"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M11 5H3v8h8zm-1 1H4v6h6z"
-      fill="#6F737A"
-    />
-  </svg>
-);
-
-export const RestoreInactive: FC<RestoreInactiveProps> = ({
+export const RestoreInactive = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? RestoreInactiveLight : RestoreInactiveDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: RestoreInactiveProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M5 3h8v8h-3v-1h2V4H6v2H5z"
+      className="fill-[#818594] dark:fill-[#6F737A]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11 5H3v8h8zm-1 1H4v6h6z"
+      className="fill-[#818594] dark:fill-[#6F737A]"
+    />
+  </svg>
+);
 
 export default RestoreInactive;

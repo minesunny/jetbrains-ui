@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type ColumnProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,109 +10,36 @@ export type ColumnProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const ColumnLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <g clipPath="url(#a)">
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2zm2-1h2v10H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m3 0v10h7a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
-        fill="#6C707E"
-      />
-      <path d="M2 4a1 1 0 0 1 1-1h2v10H3a1 1 0 0 1-1-1z" fill="#EBECF0" />
-    </g>
-    <defs>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0H16V16H0z" />
-      </clipPath>
-    </defs>
-  </svg>
-);
-
-const ColumnDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <g clipPath="url(#a)">
-      <g clipPath="url(#b)">
-        <g clipPath="url(#c)">
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2zm2-1h2v10H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m3 0v10h7a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
-            fill="#CED0D6"
-          />
-          <path d="M2 4a1 1 0 0 1 1-1h2v10H3a1 1 0 0 1-1-1z" fill="#43454A" />
-        </g>
-      </g>
-    </g>
-    <defs>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0H16V16H0z" />
-      </clipPath>
-      <clipPath id="b">
-        <path fill="#fff" d="M0 0H16V16H0z" />
-      </clipPath>
-      <clipPath id="c">
-        <path fill="#fff" d="M0 0H16V16H0z" />
-      </clipPath>
-    </defs>
-  </svg>
-);
-
-export const Column: FC<ColumnProps> = ({
+export const Column = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? ColumnLight : ColumnDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: ColumnProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2zm2-1h2v10H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m3 0v10h7a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+    <path
+      d="M2 4a1 1 0 0 1 1-1h2v10H3a1 1 0 0 1-1-1z"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
+    />
+  </svg>
+);
 
 export default Column;

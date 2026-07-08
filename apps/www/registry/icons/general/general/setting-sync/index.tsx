@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type SettingSyncProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,105 +10,46 @@ export type SettingSyncProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const SettingSyncLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path d="M11.998 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#3574F0" />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M13.12 15.676a.5.5 0 0 1-.469.324h-1.307a.5.5 0 0 1-.468-.324l-.25-.666a.5.5 0 0 0-.55-.317l-.7.116a.5.5 0 0 1-.516-.243l-.653-1.132a.5.5 0 0 1 .047-.568l.451-.548a.5.5 0 0 0 0-.636l-.451-.548a.5.5 0 0 1-.047-.568l.653-1.132a.5.5 0 0 1 .515-.243l.701.116a.5.5 0 0 0 .55-.317l.25-.666A.5.5 0 0 1 11.344 8h1.307a.5.5 0 0 1 .468.324l.25.666a.5.5 0 0 0 .55.317l.7-.116a.5.5 0 0 1 .516.243l.653 1.132a.5.5 0 0 1-.046.568l-.452.548a.5.5 0 0 0 0 .636l.452.548a.5.5 0 0 1 .046.568l-.653 1.132a.5.5 0 0 1-.515.243l-.701-.116a.5.5 0 0 0-.55.317zM11.69 15h.615l.127-.34a1.5 1.5 0 0 1 1.65-.954l.36.06.307-.532-.231-.281a1.5 1.5 0 0 1 0-1.906l.231-.281-.307-.532-.36.06a1.5 1.5 0 0 1-1.65-.953L12.305 9h-.614l-.128.34a1.5 1.5 0 0 1-1.651.954l-.36-.06-.306.532.231.281a1.5 1.5 0 0 1 0 1.906l-.231.281.307.532.359-.06a1.5 1.5 0 0 1 1.65.953z"
-      fill="#3574F0"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.309 15h-.614l-.128-.34a1.5 1.5 0 0 0-1.65-.954l-.36.06-.307-.532.231-.281a1.5 1.5 0 0 0 0-1.906l-.231-.281.307-.532.36.06a1.5 1.5 0 0 0 1.65-.953L11.695 9h.614l.127.34a1.5 1.5 0 0 0 1.651.954l.36-.06.306.532-.231.281a1.5 1.5 0 0 0 0 1.906l.231.281-.307.532-.359-.06a1.5 1.5 0 0 0-1.65.953zm.693-3a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
-      fill="#EDF3FF"
-    />
-    <path
-      d="M10 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-2.182a6 6 0 0 1 2.653 4.403 5 5 0 0 0-1.055-.32A5 5 0 0 0 11 4v1.5a.5.5 0 0 1-1 0v-3M5.5 10a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1h2.182A6.002 6.002 0 0 1 6.91 2.099a.5.5 0 1 1 .181.983A5.002 5.002 0 0 0 5 12v-1.5a.5.5 0 0 1 .5-.5"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const SettingSyncDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path d="M11.998 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#548AF7" />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M13.12 15.676a.5.5 0 0 1-.469.324h-1.307a.5.5 0 0 1-.468-.324l-.25-.666a.5.5 0 0 0-.55-.317l-.7.116a.5.5 0 0 1-.516-.243l-.653-1.132a.5.5 0 0 1 .047-.568l.451-.548a.5.5 0 0 0 0-.636l-.451-.548a.5.5 0 0 1-.047-.568l.653-1.132a.5.5 0 0 1 .515-.243l.701.116a.5.5 0 0 0 .55-.317l.25-.666A.5.5 0 0 1 11.344 8h1.307a.5.5 0 0 1 .468.324l.25.666a.5.5 0 0 0 .55.317l.7-.116a.5.5 0 0 1 .516.243l.653 1.132a.5.5 0 0 1-.046.568l-.452.548a.5.5 0 0 0 0 .636l.452.548a.5.5 0 0 1 .046.568l-.653 1.132a.5.5 0 0 1-.515.243l-.701-.116a.5.5 0 0 0-.55.317zM11.69 15h.615l.127-.34a1.5 1.5 0 0 1 1.65-.954l.36.06.307-.532-.231-.281a1.5 1.5 0 0 1 0-1.906l.231-.281-.307-.532-.36.06a1.5 1.5 0 0 1-1.65-.953L12.305 9h-.614l-.128.34a1.5 1.5 0 0 1-1.651.954l-.36-.06-.306.532.231.281a1.5 1.5 0 0 1 0 1.906l-.231.281.307.532.359-.06a1.5 1.5 0 0 1 1.65.953z"
-      fill="#548AF7"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.309 15h-.614l-.128-.34a1.5 1.5 0 0 0-1.65-.954l-.36.06-.307-.532.231-.281a1.5 1.5 0 0 0 0-1.906l-.231-.281.307-.532.36.06a1.5 1.5 0 0 0 1.65-.953L11.695 9h.614l.127.34a1.5 1.5 0 0 0 1.651.954l.36-.06.306.532-.231.281a1.5 1.5 0 0 0 0 1.906l.231.281-.307.532-.359-.06a1.5 1.5 0 0 0-1.65.953zm.693-3a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
-      fill="#25324D"
-    />
-    <path
-      d="M10 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-2.182a6 6 0 0 1 2.653 4.403 5 5 0 0 0-1.055-.32A5 5 0 0 0 11 4v1.5a.5.5 0 0 1-1 0v-3M5.5 10a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1h2.182A6.002 6.002 0 0 1 6.91 2.099a.5.5 0 1 1 .181.983A5.002 5.002 0 0 0 5 12v-1.5a.5.5 0 0 1 .5-.5"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const SettingSync: FC<SettingSyncProps> = ({
+export const SettingSync = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? SettingSyncLight : SettingSyncDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: SettingSyncProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M11.998 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M13.12 15.676a.5.5 0 0 1-.469.324h-1.307a.5.5 0 0 1-.468-.324l-.25-.666a.5.5 0 0 0-.55-.317l-.7.116a.5.5 0 0 1-.516-.243l-.653-1.132a.5.5 0 0 1 .047-.568l.451-.548a.5.5 0 0 0 0-.636l-.451-.548a.5.5 0 0 1-.047-.568l.653-1.132a.5.5 0 0 1 .515-.243l.701.116a.5.5 0 0 0 .55-.317l.25-.666A.5.5 0 0 1 11.344 8h1.307a.5.5 0 0 1 .468.324l.25.666a.5.5 0 0 0 .55.317l.7-.116a.5.5 0 0 1 .516.243l.653 1.132a.5.5 0 0 1-.046.568l-.452.548a.5.5 0 0 0 0 .636l.452.548a.5.5 0 0 1 .046.568l-.653 1.132a.5.5 0 0 1-.515.243l-.701-.116a.5.5 0 0 0-.55.317zM11.69 15h.615l.127-.34a1.5 1.5 0 0 1 1.65-.954l.36.06.307-.532-.231-.281a1.5 1.5 0 0 1 0-1.906l.231-.281-.307-.532-.36.06a1.5 1.5 0 0 1-1.65-.953L12.305 9h-.614l-.128.34a1.5 1.5 0 0 1-1.651.954l-.36-.06-.306.532.231.281a1.5 1.5 0 0 1 0 1.906l-.231.281.307.532.359-.06a1.5 1.5 0 0 1 1.65.953z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12.309 15h-.614l-.128-.34a1.5 1.5 0 0 0-1.65-.954l-.36.06-.307-.532.231-.281a1.5 1.5 0 0 0 0-1.906l-.231-.281.307-.532.36.06a1.5 1.5 0 0 0 1.65-.953L11.695 9h.614l.127.34a1.5 1.5 0 0 0 1.651.954l.36-.06.306.532-.231.281a1.5 1.5 0 0 0 0 1.906l.231.281-.307.532-.359-.06a1.5 1.5 0 0 0-1.65.953zm.693-3a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+      className="fill-[#EDF3FF] dark:fill-[#25324D]"
+    />
+    <path
+      d="M10 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-2.182a6 6 0 0 1 2.653 4.403 5 5 0 0 0-1.055-.32A5 5 0 0 0 11 4v1.5a.5.5 0 0 1-1 0v-3M5.5 10a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1h2.182A6.002 6.002 0 0 1 6.91 2.099a.5.5 0 1 1 .181.983A5.002 5.002 0 0 0 5 12v-1.5a.5.5 0 0 1 .5-.5"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default SettingSync;

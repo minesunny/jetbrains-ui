@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type UtPlsqlProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,83 +10,32 @@ export type UtPlsqlProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const UtPlsqlLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M4 1a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h6.28l1.22 1H15l-1.879-1.879A3 3 0 0 0 14 11V4a3 3 0 0 0-3-3zm3.5 6C4 7 3 6 3 6v1s1 1 4.5 1S12 7 12 7V6s-1 1-4.5 1m0-1C9.985 6 12 5.328 12 4.5S9.985 3 7.5 3 3 3.672 3 4.5 5.015 6 7.5 6m0 3C4 9 3 8 3 8v1s1 1 4.5 1S12 9 12 9V8s-1 1-4.5 1M3 10s1 1 4.5 1 4.5-1 4.5-1v1s-1 1-4.5 1S3 11 3 11z"
-      fill="#3574F0"
-    />
-  </svg>
-);
-
-const UtPlsqlDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M4 1a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h6.28l1.22 1H15l-1.879-1.879A3 3 0 0 0 14 11V4a3 3 0 0 0-3-3zm3.5 6C4 7 3 6 3 6v1s1 1 4.5 1S12 7 12 7V6s-1 1-4.5 1m0-1C9.985 6 12 5.328 12 4.5S9.985 3 7.5 3 3 3.672 3 4.5 5.015 6 7.5 6m0 3C4 9 3 8 3 8v1s1 1 4.5 1S12 9 12 9V8s-1 1-4.5 1M3 10s1 1 4.5 1 4.5-1 4.5-1v1s-1 1-4.5 1S3 11 3 11z"
-      fill="#548AF7"
-    />
-  </svg>
-);
-
-export const UtPlsql: FC<UtPlsqlProps> = ({
+export const UtPlsql = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? UtPlsqlLight : UtPlsqlDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: UtPlsqlProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M4 1a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h6.28l1.22 1H15l-1.879-1.879A3 3 0 0 0 14 11V4a3 3 0 0 0-3-3zm3.5 6C4 7 3 6 3 6v1s1 1 4.5 1S12 7 12 7V6s-1 1-4.5 1m0-1C9.985 6 12 5.328 12 4.5S9.985 3 7.5 3 3 3.672 3 4.5 5.015 6 7.5 6m0 3C4 9 3 8 3 8v1s1 1 4.5 1S12 9 12 9V8s-1 1-4.5 1M3 10s1 1 4.5 1 4.5-1 4.5-1v1s-1 1-4.5 1S3 11 3 11z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
-  );
-};
+  </svg>
+);
 
 export default UtPlsql;

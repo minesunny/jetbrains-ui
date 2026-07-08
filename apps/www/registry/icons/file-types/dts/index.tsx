@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type DtsProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,99 +10,42 @@ export type DtsProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const DtsLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M12 2a2 2 0 0 1 2 2v3.054a3.6 3.6 0 0 0-3.175 1.002l-2.77 2.77A3.6 3.6 0 0 0 7.055 14H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"
-      fill="#3574F0"
-    />
-    <path
-      d="M11.562 10.148a.5.5 0 1 1-.707-.708l.677-.677a2.615 2.615 0 0 1 3.699.006 2.615 2.615 0 0 1 .006 3.699l-.677.677a.5.5 0 1 1-.708-.707l.678-.677a1.615 1.615 0 0 0-.006-2.285 1.615 1.615 0 0 0-2.285-.006zM10.148 10.855a.5.5 0 0 1 0 .707l-.678.677a1.615 1.615 0 0 0 .006 2.285 1.615 1.615 0 0 0 2.285.006l.677-.678a.5.5 0 0 1 .707.707l-.677.678a2.615 2.615 0 0 1-3.699-.006 2.615 2.615 0 0 1-.006-3.699l.677-.677a.5.5 0 0 1 .708 0"
-      fill="#6C707E"
-    />
-    <path
-      d="M13.854 10.854a.5.5 0 0 0-.708-.708l-3 3a.5.5 0 0 0 .708.708z"
-      fill="#6C707E"
-    />
-    <path
-      d="m10.494 8.387-.795.795a1.7 1.7 0 0 1-.38-.204 1.6 1.6 0 0 1-.495-.577 1.7 1.7 0 0 1-.171-.765q0-.496.256-.89a1.75 1.75 0 0 1 .723-.62 2.34 2.34 0 0 1 1.043-.226q.594 0 1.056.218.466.218.726.607.111.165.176.352a3.6 3.6 0 0 0-.946.341.8.8 0 0 0-.106-.24.84.84 0 0 0-.359-.303 1.3 1.3 0 0 0-.534-.107q-.303 0-.535.102a.83.83 0 0 0-.359.291.76.76 0 0 0-.128.436q0 .29.188.505.188.21.492.26zM7.872 6H3.135v1H5v5h1V7h1.872z"
-      fill="#fff"
-    />
-  </svg>
-);
-
-const DtsDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M12 2a2 2 0 0 1 2 2v3.054a3.6 3.6 0 0 0-3.175 1.002l-2.77 2.77A3.6 3.6 0 0 0 7.055 14H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"
-      fill="#548AF7"
-    />
-    <path
-      d="M11.562 10.148a.5.5 0 1 1-.707-.708l.677-.677a2.615 2.615 0 0 1 3.699.006 2.615 2.615 0 0 1 .006 3.699l-.677.677a.5.5 0 1 1-.708-.707l.678-.677a1.615 1.615 0 0 0-.006-2.285 1.615 1.615 0 0 0-2.285-.006zM10.148 10.855a.5.5 0 0 1 0 .707l-.678.677a1.615 1.615 0 0 0 .006 2.285 1.615 1.615 0 0 0 2.285.006l.677-.678a.5.5 0 0 1 .707.707l-.677.678a2.615 2.615 0 0 1-3.699-.006 2.615 2.615 0 0 1-.006-3.699l.677-.677a.5.5 0 0 1 .708 0"
-      fill="#CED0D6"
-    />
-    <path
-      d="M13.854 10.854a.5.5 0 0 0-.708-.708l-3 3a.5.5 0 0 0 .708.708z"
-      fill="#CED0D6"
-    />
-    <path
-      d="m10.494 8.387-.795.795a1.7 1.7 0 0 1-.38-.204 1.6 1.6 0 0 1-.495-.577 1.7 1.7 0 0 1-.171-.765q0-.496.256-.89a1.75 1.75 0 0 1 .723-.62 2.34 2.34 0 0 1 1.043-.226q.594 0 1.056.218.466.218.726.607.111.165.176.352a3.6 3.6 0 0 0-.946.341.8.8 0 0 0-.106-.24.84.84 0 0 0-.359-.303 1.3 1.3 0 0 0-.534-.107q-.303 0-.535.102a.83.83 0 0 0-.359.291.76.76 0 0 0-.128.436q0 .29.188.505.188.21.492.26zM7.872 6H3.135v1H5v5h1V7h1.872z"
-      fill="#fff"
-    />
-  </svg>
-);
-
-export const Dts: FC<DtsProps> = ({
+export const Dts = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? DtsLight : DtsDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: DtsProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M12 2a2 2 0 0 1 2 2v3.054a3.6 3.6 0 0 0-3.175 1.002l-2.77 2.77A3.6 3.6 0 0 0 7.055 14H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
-  );
-};
+    <path
+      d="M11.562 10.148a.5.5 0 1 1-.707-.708l.677-.677a2.615 2.615 0 0 1 3.699.006 2.615 2.615 0 0 1 .006 3.699l-.677.677a.5.5 0 1 1-.708-.707l.678-.677a1.615 1.615 0 0 0-.006-2.285 1.615 1.615 0 0 0-2.285-.006zM10.148 10.855a.5.5 0 0 1 0 .707l-.678.677a1.615 1.615 0 0 0 .006 2.285 1.615 1.615 0 0 0 2.285.006l.677-.678a.5.5 0 0 1 .707.707l-.677.678a2.615 2.615 0 0 1-3.699-.006 2.615 2.615 0 0 1-.006-3.699l.677-.677a.5.5 0 0 1 .708 0"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="M13.854 10.854a.5.5 0 0 0-.708-.708l-3 3a.5.5 0 0 0 .708.708z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="m10.494 8.387-.795.795a1.7 1.7 0 0 1-.38-.204 1.6 1.6 0 0 1-.495-.577 1.7 1.7 0 0 1-.171-.765q0-.496.256-.89a1.75 1.75 0 0 1 .723-.62 2.34 2.34 0 0 1 1.043-.226q.594 0 1.056.218.466.218.726.607.111.165.176.352a3.6 3.6 0 0 0-.946.341.8.8 0 0 0-.106-.24.84.84 0 0 0-.359-.303 1.3 1.3 0 0 0-.534-.107q-.303 0-.535.102a.83.83 0 0 0-.359.291.76.76 0 0 0-.128.436q0 .29.188.505.188.21.492.26zM7.872 6H3.135v1H5v5h1V7h1.872z"
+      className="fill-[#fff]"
+    />
+  </svg>
+);
 
 export default Dts;

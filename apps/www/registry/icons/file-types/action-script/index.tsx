@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type ActionScriptProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,79 +10,30 @@ export type ActionScriptProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const ActionScriptLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2.54 13 4.46 2.5h1.816L8.233 13H6.801L5.466 4.773l-.098-.698-.097.698L4.01 13zm1.11-2.722V9.1h3.36v1.178zM10.943 13.18q-.818 0-1.357-.345-.54-.345-.81-1.043-.263-.697-.263-1.784h1.432q0 .66.105 1.087.113.427.338.637a.82.82 0 0 0 .57.203.75.75 0 0 0 .533-.195q.21-.195.307-.585.105-.398.105-1.02 0-.667-.195-1.072a1.32 1.32 0 0 0-.592-.63l-.84-.405a3.3 3.3 0 0 1-.893-.683 2.6 2.6 0 0 1-.517-.907A3.9 3.9 0 0 1 8.7 5.253q0-.997.24-1.65t.727-.968 1.23-.315q.75 0 1.245.323.495.315.742.96t.255 1.657h-1.432q0-.585-.09-.952-.09-.375-.263-.555a.57.57 0 0 0-.442-.188q-.405 0-.6.405-.195.397-.195 1.26 0 .563.188.923.187.36.577.577l.885.435q.532.285.877.698.345.405.518.96.172.555.172 1.274 0 1.05-.262 1.733t-.795 1.02q-.533.33-1.335.33"
-      fill="#DB3B4B"
-    />
-  </svg>
-);
-
-const ActionScriptDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2.54 13 4.46 2.5h1.816L8.233 13H6.801L5.466 4.773l-.098-.698-.097.698L4.01 13zm1.11-2.722V9.1h3.36v1.178zM10.943 13.18q-.818 0-1.357-.345-.54-.345-.81-1.043-.263-.697-.263-1.784h1.432q0 .66.105 1.087.113.427.338.637a.82.82 0 0 0 .57.203.75.75 0 0 0 .533-.195q.21-.195.307-.585.105-.398.105-1.02 0-.667-.195-1.072a1.32 1.32 0 0 0-.592-.63l-.84-.405a3.3 3.3 0 0 1-.893-.683 2.6 2.6 0 0 1-.517-.907A3.9 3.9 0 0 1 8.7 5.253q0-.997.24-1.65t.727-.968 1.23-.315q.75 0 1.245.323.495.315.742.96t.255 1.657h-1.432q0-.585-.09-.952-.09-.375-.263-.555a.57.57 0 0 0-.442-.188q-.405 0-.6.405-.195.397-.195 1.26 0 .563.188.923.187.36.577.577l.885.435q.532.285.877.698.345.405.518.96.172.555.172 1.274 0 1.05-.262 1.733t-.795 1.02q-.533.33-1.335.33"
-      fill="#DB5C5C"
-    />
-  </svg>
-);
-
-export const ActionScript: FC<ActionScriptProps> = ({
+export const ActionScript = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? ActionScriptLight : ActionScriptDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: ActionScriptProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M2.54 13 4.46 2.5h1.816L8.233 13H6.801L5.466 4.773l-.098-.698-.097.698L4.01 13zm1.11-2.722V9.1h3.36v1.178zM10.943 13.18q-.818 0-1.357-.345-.54-.345-.81-1.043-.263-.697-.263-1.784h1.432q0 .66.105 1.087.113.427.338.637a.82.82 0 0 0 .57.203.75.75 0 0 0 .533-.195q.21-.195.307-.585.105-.398.105-1.02 0-.667-.195-1.072a1.32 1.32 0 0 0-.592-.63l-.84-.405a3.3 3.3 0 0 1-.893-.683 2.6 2.6 0 0 1-.517-.907A3.9 3.9 0 0 1 8.7 5.253q0-.997.24-1.65t.727-.968 1.23-.315q.75 0 1.245.323.495.315.742.96t.255 1.657h-1.432q0-.585-.09-.952-.09-.375-.263-.555a.57.57 0 0 0-.442-.188q-.405 0-.6.405-.195.397-.195 1.26 0 .563.188.923.187.36.577.577l.885.435q.532.285.877.698.345.405.518.96.172.555.172 1.274 0 1.05-.262 1.733t-.795 1.02q-.533.33-1.335.33"
+      className="fill-[#DB3B4B] dark:fill-[#DB5C5C]"
     />
-  );
-};
+  </svg>
+);
 
 export default ActionScript;

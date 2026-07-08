@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type PluginProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,83 +10,32 @@ export type PluginProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const PluginLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M11 4H7a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h4V4m1 1V4a1 1 0 0 0-1-1H7a4 4 0 0 0-3.874 3H1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2.126c.444 1.725 2.01 3 3.874 3h4a1 1 0 0 0 1-1v-1h3.5a.5.5 0 0 0 0-1H12V6h3.5a.5.5 0 0 0 0-1zM3 7v2H1V7z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const PluginDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M11 4H7a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h4V4m1 1V4a1 1 0 0 0-1-1H7a4 4 0 0 0-3.874 3H1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2.126c.444 1.725 2.01 3 3.874 3h4a1 1 0 0 0 1-1v-1h3.5a.5.5 0 0 0 0-1H12V6h3.5a.5.5 0 0 0 0-1zM3 7v2H1V7z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const Plugin: FC<PluginProps> = ({
+export const Plugin = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? PluginLight : PluginDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: PluginProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11 4H7a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3h4V4m1 1V4a1 1 0 0 0-1-1H7a4 4 0 0 0-3.874 3H1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2.126c.444 1.725 2.01 3 3.874 3h4a1 1 0 0 0 1-1v-1h3.5a.5.5 0 0 0 0-1H12V6h3.5a.5.5 0 0 0 0-1zM3 7v2H1V7z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default Plugin;

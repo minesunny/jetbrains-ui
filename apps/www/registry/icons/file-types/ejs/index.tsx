@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type EjsProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,87 +10,36 @@ export type EjsProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const EjsLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M10.307 4.02h1.191L5.668 12H4.475zM5.975 7.736q-.559 0-1.003-.245a1.8 1.8 0 0 1-.69-.684 2 2 0 0 1-.245-.997q0-.559.245-.998a1.8 1.8 0 0 1 .69-.684q.444-.245 1.003-.245.57 0 1.009.245.444.246.69.684.25.439.25.998t-.25.997q-.246.439-.69.684a2.03 2.03 0 0 1-1.009.245m0-.923a.94.94 0 0 0 .49-.125.9.9 0 0 0 .337-.36 1.1 1.1 0 0 0 .12-.518 1.1 1.1 0 0 0-.12-.519.91.91 0 0 0-.827-.49.9.9 0 0 0-.484.131.87.87 0 0 0-.331.36 1.14 1.14 0 0 0-.114.518q0 .29.114.518.12.228.33.36a.95.95 0 0 0 .485.125M10 12.137q-.558 0-1.003-.245a1.8 1.8 0 0 1-.69-.679 2 2 0 0 1-.245-1.003q0-.559.245-.997a1.8 1.8 0 0 1 .69-.684q.445-.245 1.003-.245.57 0 1.015.245.45.245.695.684.251.439.251.997 0 .564-.25 1.003a1.73 1.73 0 0 1-.696.679 2.07 2.07 0 0 1-1.015.245m0-.918a1 1 0 0 0 .496-.125.9.9 0 0 0 .337-.36q.125-.233.125-.524t-.126-.519a.86.86 0 0 0-.336-.353.94.94 0 0 0-.496-.131.9.9 0 0 0-.484.131.87.87 0 0 0-.33.353 1.14 1.14 0 0 0-.115.52q0 .29.114.524.12.227.33.359a.95.95 0 0 0 .485.125"
-      fill="#DB3B4B"
-    />
-    <path
-      d="M2.5 10.5.5 8l2-2.5M13.5 5.5l2 2.5-2 2.5"
-      stroke="#DB3B4B"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const EjsDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M10.307 4.02h1.191L5.668 12H4.475zM5.975 7.736q-.559 0-1.003-.245a1.8 1.8 0 0 1-.69-.684 2 2 0 0 1-.245-.997q0-.559.245-.998a1.8 1.8 0 0 1 .69-.684q.444-.245 1.003-.245.57 0 1.009.245.444.246.69.684.25.439.25.998t-.25.997q-.246.439-.69.684a2.03 2.03 0 0 1-1.009.245m0-.923a.94.94 0 0 0 .49-.125.9.9 0 0 0 .337-.36 1.1 1.1 0 0 0 .12-.518 1.1 1.1 0 0 0-.12-.519.91.91 0 0 0-.827-.49.9.9 0 0 0-.484.131.87.87 0 0 0-.331.36 1.14 1.14 0 0 0-.114.518q0 .29.114.518.12.228.33.36a.95.95 0 0 0 .485.125M10 12.137q-.558 0-1.003-.245a1.8 1.8 0 0 1-.69-.679 2 2 0 0 1-.245-1.003q0-.559.245-.997a1.8 1.8 0 0 1 .69-.684q.445-.245 1.003-.245.57 0 1.015.245.45.245.695.684.251.439.251.997 0 .564-.25 1.003a1.73 1.73 0 0 1-.696.679 2.07 2.07 0 0 1-1.015.245m0-.918a1 1 0 0 0 .496-.125.9.9 0 0 0 .337-.36q.125-.233.125-.524t-.126-.519a.86.86 0 0 0-.336-.353.94.94 0 0 0-.496-.131.9.9 0 0 0-.484.131.87.87 0 0 0-.33.353 1.14 1.14 0 0 0-.115.52q0 .29.114.524.12.227.33.359a.95.95 0 0 0 .485.125"
-      fill="#DB5C5C"
-    />
-    <path
-      d="M2.5 10.5.5 8l2-2.5M13.5 5.5l2 2.5-2 2.5"
-      stroke="#DB5C5C"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-export const Ejs: FC<EjsProps> = ({
+export const Ejs = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? EjsLight : EjsDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: EjsProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M10.307 4.02h1.191L5.668 12H4.475zM5.975 7.736q-.559 0-1.003-.245a1.8 1.8 0 0 1-.69-.684 2 2 0 0 1-.245-.997q0-.559.245-.998a1.8 1.8 0 0 1 .69-.684q.444-.245 1.003-.245.57 0 1.009.245.444.246.69.684.25.439.25.998t-.25.997q-.246.439-.69.684a2.03 2.03 0 0 1-1.009.245m0-.923a.94.94 0 0 0 .49-.125.9.9 0 0 0 .337-.36 1.1 1.1 0 0 0 .12-.518 1.1 1.1 0 0 0-.12-.519.91.91 0 0 0-.827-.49.9.9 0 0 0-.484.131.87.87 0 0 0-.331.36 1.14 1.14 0 0 0-.114.518q0 .29.114.518.12.228.33.36a.95.95 0 0 0 .485.125M10 12.137q-.558 0-1.003-.245a1.8 1.8 0 0 1-.69-.679 2 2 0 0 1-.245-1.003q0-.559.245-.997a1.8 1.8 0 0 1 .69-.684q.445-.245 1.003-.245.57 0 1.015.245.45.245.695.684.251.439.251.997 0 .564-.25 1.003a1.73 1.73 0 0 1-.696.679 2.07 2.07 0 0 1-1.015.245m0-.918a1 1 0 0 0 .496-.125.9.9 0 0 0 .337-.36q.125-.233.125-.524t-.126-.519a.86.86 0 0 0-.336-.353.94.94 0 0 0-.496-.131.9.9 0 0 0-.484.131.87.87 0 0 0-.33.353 1.14 1.14 0 0 0-.115.52q0 .29.114.524.12.227.33.359a.95.95 0 0 0 .485.125"
+      className="fill-[#DB3B4B] dark:fill-[#DB5C5C]"
     />
-  );
-};
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M2.5 10.5.5 8l2-2.5M13.5 5.5l2 2.5-2 2.5"
+      className="stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
+    />
+  </svg>
+);
 
 export default Ejs;

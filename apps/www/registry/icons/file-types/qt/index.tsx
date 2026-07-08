@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type QtProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,75 +10,30 @@ export type QtProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const QtLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M7.104 15.106q-.78 0-1.21-.39-.422-.39-.428-1.105l-.007-1.014h1.144l.007.949q0 .234.143.364.143.136.403.136h.682v1.06zM6.07 11.973a.7.7 0 0 0 .56-.26q.22-.267.33-.884.118-.624.118-1.716V7.787q0-1.092-.117-1.71-.11-.623-.332-.883a.7.7 0 0 0-.559-.267.7.7 0 0 0-.565.267q-.221.26-.338.883-.11.618-.11 1.71v1.326q0 1.092.11 1.716.117.618.338.884.221.26.565.26m0 1.183q-.76 0-1.287-.442-.519-.449-.793-1.346-.266-.897-.266-2.255V7.787q0-1.358.266-2.255.273-.897.793-1.34.527-.448 1.287-.448t1.28.442q.528.442.794 1.346.273.897.273 2.255v1.326q0 1.359-.273 2.262-.267.897-.793 1.339-.52.442-1.28.442M8.47 3.9h4.192v1.241h-1.45V13H9.906V5.142H8.469z"
-      fill="#369650"
-    />
-  </svg>
-);
-
-const QtDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M7.104 15.106q-.78 0-1.21-.39-.422-.39-.428-1.105l-.007-1.014h1.144l.007.949q0 .234.143.364.143.136.403.136h.682v1.06zM6.07 11.973a.7.7 0 0 0 .56-.26q.22-.267.33-.884.118-.624.118-1.716V7.787q0-1.092-.117-1.71-.11-.623-.332-.883a.7.7 0 0 0-.559-.267.7.7 0 0 0-.565.267q-.221.26-.338.883-.11.618-.11 1.71v1.326q0 1.092.11 1.716.117.618.338.884.221.26.565.26m0 1.183q-.76 0-1.287-.442-.519-.449-.793-1.346-.266-.897-.266-2.255V7.787q0-1.358.266-2.255.273-.897.793-1.34.527-.448 1.287-.448t1.28.442q.528.442.794 1.346.273.897.273 2.255v1.326q0 1.359-.273 2.262-.267.897-.793 1.339-.52.442-1.28.442M8.47 3.9h4.192v1.241h-1.45V13H9.906V5.142H8.469z"
-      fill="#57965C"
-    />
-  </svg>
-);
-
-export const Qt: FC<QtProps> = ({
+export const Qt = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? QtLight : QtDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: QtProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M7.104 15.106q-.78 0-1.21-.39-.422-.39-.428-1.105l-.007-1.014h1.144l.007.949q0 .234.143.364.143.136.403.136h.682v1.06zM6.07 11.973a.7.7 0 0 0 .56-.26q.22-.267.33-.884.118-.624.118-1.716V7.787q0-1.092-.117-1.71-.11-.623-.332-.883a.7.7 0 0 0-.559-.267.7.7 0 0 0-.565.267q-.221.26-.338.883-.11.618-.11 1.71v1.326q0 1.092.11 1.716.117.618.338.884.221.26.565.26m0 1.183q-.76 0-1.287-.442-.519-.449-.793-1.346-.266-.897-.266-2.255V7.787q0-1.358.266-2.255.273-.897.793-1.34.527-.448 1.287-.448t1.28.442q.528.442.794 1.346.273.897.273 2.255v1.326q0 1.359-.273 2.262-.267.897-.793 1.339-.52.442-1.28.442M8.47 3.9h4.192v1.241h-1.45V13H9.906V5.142H8.469z"
+      className="fill-[#369650] dark:fill-[#57965C]"
     />
-  );
-};
+  </svg>
+);
 
 export default Qt;

@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type REngineToolWindowProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,93 +10,38 @@ export type REngineToolWindowProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const REngineToolWindowLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
+export const REngineToolWindow = ({
+  size = 16,
+  mode: _mode,
   className,
-  role,
   'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
+  ...props
+}: REngineToolWindowProps) => (
   <svg
     width={size}
     height={size}
     viewBox="0 0 16 16"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
     aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
+    aria-hidden={!ariaLabel}
+    {...props}
   >
     <path
       fillRule="evenodd"
       clipRule="evenodd"
       d="M12.182 10.032s.484.142.766.28c.097.047.266.143.388.268.12.122.178.247.178.247l1.908 3.114-3.084.001-1.443-2.621s-.295-.492-.477-.634c-.151-.119-.216-.161-.366-.161H9.32l.001 3.414-2.73.001V5.22h5.481s2.497.044 2.497 2.342-2.386 2.47-2.386 2.47m-1.187-2.92L9.343 7.11v1.483h1.652s.766-.003.766-.755c0-.767-.766-.727-.766-.727"
-      fill="#6C707E"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
       d="M15.187 9.467c.52-.689.813-1.463.813-2.281C16 4.322 12.418 2 8 2S0 4.322 0 7.186c0 2.385 2.484 4.394 5.866 5v-1.657c-1.64-.635-2.722-1.722-2.722-2.956 0-1.958 2.722-3.545 6.08-3.545s5.837 1.085 5.837 3.545c0 .76-.236 1.388-.661 1.894z"
-      fill="#6C707E"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
   </svg>
 );
-
-const REngineToolWindowDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <g clipPath="url(#a)" fillRule="evenodd" clipRule="evenodd" fill="#CED0D6">
-      <path d="M12.182 10.032s.484.142.766.28c.097.047.266.143.388.268.12.122.178.247.178.247l1.908 3.114-3.084.001-1.443-2.621s-.295-.492-.477-.634c-.151-.119-.216-.161-.366-.161H9.32l.001 3.414-2.73.001V5.22h5.481s2.497.044 2.497 2.342-2.386 2.47-2.386 2.47m-1.187-2.92L9.343 7.11v1.483h1.652s.766-.003.766-.755c0-.767-.766-.727-.766-.727" />
-      <path d="M15.187 9.467c.52-.689.813-1.463.813-2.281C16 4.322 12.418 2 8 2S0 4.322 0 7.186c0 2.385 2.484 4.394 5.866 5v-1.657c-1.64-.635-2.722-1.722-2.722-2.956 0-1.958 2.722-3.545 6.08-3.545s5.837 1.085 5.837 3.545c0 .76-.236 1.388-.661 1.894z" />
-    </g>
-    <defs>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0H16V16H0z" />
-      </clipPath>
-    </defs>
-  </svg>
-);
-
-export const REngineToolWindow: FC<REngineToolWindowProps> = ({
-  size = 16,
-  mode = 'light',
-  className,
-  'aria-label': ariaLabel,
-  ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? REngineToolWindowLight : REngineToolWindowDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
-    />
-  );
-};
 
 export default REngineToolWindow;

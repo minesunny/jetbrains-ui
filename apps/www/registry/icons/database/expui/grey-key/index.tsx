@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type GreyKeyProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,83 +10,32 @@ export type GreyKeyProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const GreyKeyLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 8.96905C9.97316 8.723 11.5 7.03981 11.5 5C11.5 2.79086 9.70914 1 7.5 1C5.29086 1 3.5 2.79086 3.5 5C3.5 7.03981 5.02684 8.723 7 8.96905V14.5C7 14.7761 7.22386 15 7.5 15C7.77614 15 8 14.7761 8 14.5V14H9.5C9.77614 14 10 13.7761 10 13.5C10 13.2239 9.77614 13 9.5 13H8V12H9.5C9.77614 12 10 11.7761 10 11.5C10 11.2239 9.77614 11 9.5 11H8V8.96905ZM10.5 5C10.5 6.65685 9.15685 8 7.5 8C5.84315 8 4.5 6.65685 4.5 5C4.5 3.34315 5.84315 2 7.5 2C9.15685 2 10.5 3.34315 10.5 5Z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const GreyKeyDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 8.96905C9.97316 8.723 11.5 7.03981 11.5 5C11.5 2.79086 9.70914 1 7.5 1C5.29086 1 3.5 2.79086 3.5 5C3.5 7.03981 5.02684 8.723 7 8.96905V14.5C7 14.7761 7.22386 15 7.5 15C7.77614 15 8 14.7761 8 14.5V14H9.5C9.77614 14 10 13.7761 10 13.5C10 13.2239 9.77614 13 9.5 13H8V12H9.5C9.77614 12 10 11.7761 10 11.5C10 11.2239 9.77614 11 9.5 11H8V8.96905ZM10.5 5C10.5 6.65685 9.15685 8 7.5 8C5.84315 8 4.5 6.65685 4.5 5C4.5 3.34315 5.84315 2 7.5 2C9.15685 2 10.5 3.34315 10.5 5Z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const GreyKey: FC<GreyKeyProps> = ({
+export const GreyKey = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? GreyKeyLight : GreyKeyDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: GreyKeyProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8 8.96905C9.97316 8.723 11.5 7.03981 11.5 5C11.5 2.79086 9.70914 1 7.5 1C5.29086 1 3.5 2.79086 3.5 5C3.5 7.03981 5.02684 8.723 7 8.96905V14.5C7 14.7761 7.22386 15 7.5 15C7.77614 15 8 14.7761 8 14.5V14H9.5C9.77614 14 10 13.7761 10 13.5C10 13.2239 9.77614 13 9.5 13H8V12H9.5C9.77614 12 10 11.7761 10 11.5C10 11.2239 9.77614 11 9.5 11H8V8.96905ZM10.5 5C10.5 6.65685 9.15685 8 7.5 8C5.84315 8 4.5 6.65685 4.5 5C4.5 3.34315 5.84315 2 7.5 2C9.15685 2 10.5 3.34315 10.5 5Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default GreyKey;

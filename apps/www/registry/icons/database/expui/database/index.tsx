@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type DatabaseProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,91 +10,35 @@ export type DatabaseProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const DatabaseLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2.5 12V6C2.5 5.17157 3.17157 4.5 4 4.5H10C10.8284 4.5 11.5 5.17157 11.5 6V12C11.5 12.8284 10.8284 13.5 10 13.5H4C3.17157 13.5 2.5 12.8284 2.5 12Z"
-      fill="#EDF3FF"
-      stroke="#3574F0"
-    />
-    <path
-      d="M5.5 2.5H12C12.8284 2.5 13.5 3.17157 13.5 4V10.5"
-      stroke="#3574F0"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-const DatabaseDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2.5 12V6C2.5 5.17157 3.17157 4.5 4 4.5H10C10.8284 4.5 11.5 5.17157 11.5 6V12C11.5 12.8284 10.8284 13.5 10 13.5H4C3.17157 13.5 2.5 12.8284 2.5 12Z"
-      fill="#25324D"
-      stroke="#548AF7"
-    />
-    <path
-      d="M5.5 2.5H12C12.8284 2.5 13.5 3.17157 13.5 4V10.5"
-      stroke="#548AF7"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-export const Database: FC<DatabaseProps> = ({
+export const Database = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? DatabaseLight : DatabaseDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: DatabaseProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M2.5 12V6C2.5 5.17157 3.17157 4.5 4 4.5H10C10.8284 4.5 11.5 5.17157 11.5 6V12C11.5 12.8284 10.8284 13.5 10 13.5H4C3.17157 13.5 2.5 12.8284 2.5 12Z"
+      className="fill-[#EDF3FF] dark:fill-[#25324D] stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
-  );
-};
+    <path
+      strokeLinecap="round"
+      d="M5.5 2.5H12C12.8284 2.5 13.5 3.17157 13.5 4V10.5"
+      className="stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+  </svg>
+);
 
 export default Database;

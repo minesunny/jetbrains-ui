@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type JupyterNotebookProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,84 +10,30 @@ export type JupyterNotebookProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const JupyterNotebookLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M13.657 5.752c-1.387-1.034-3.58-1.95-5.652-1.95-2.08 0-4.266.913-5.65 1.947-.187.14-.443-.052-.314-.248.613-.933 1.524-1.892 2.305-2.409A6.63 6.63 0 0 1 8.005 2c1.308 0 2.585.381 3.659 1.092.782.518 1.694 1.478 2.307 2.412.129.195-.127.388-.314.248M2.355 10.248c1.387 1.034 3.58 1.95 5.652 1.95 2.079 0 4.265-.913 5.65-1.947.187-.14.443.052.314.248-.613.933-1.524 1.892-2.306 2.409A6.63 6.63 0 0 1 8.007 14a6.63 6.63 0 0 1-3.659-1.092c-.782-.518-1.694-1.478-2.307-2.412-.129-.196.127-.388.314-.248"
-      fill="#E66D17"
-    />
-  </svg>
-);
-
-const JupyterNotebookDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <g clipPath="url(#a)" fill="#E08855">
-      <path d="M13.657 5.752c-1.387-1.034-3.58-1.95-5.652-1.95-2.08 0-4.266.913-5.65 1.947-.187.14-.443-.052-.314-.248.613-.933 1.524-1.892 2.305-2.409A6.63 6.63 0 0 1 8.005 2c1.308 0 2.585.381 3.659 1.092.782.518 1.694 1.478 2.307 2.412.129.195-.127.388-.314.248M2.355 10.248c1.387 1.034 3.58 1.95 5.652 1.95 2.079 0 4.265-.913 5.65-1.947.187-.14.443.052.314.248-.613.933-1.524 1.892-2.306 2.409A6.63 6.63 0 0 1 8.007 14a6.63 6.63 0 0 1-3.659-1.092c-.782-.518-1.694-1.478-2.307-2.412-.129-.196.127-.388.314-.248" />
-    </g>
-    <defs>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0H16V16H0z" />
-      </clipPath>
-    </defs>
-  </svg>
-);
-
-export const JupyterNotebook: FC<JupyterNotebookProps> = ({
+export const JupyterNotebook = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? JupyterNotebookLight : JupyterNotebookDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: JupyterNotebookProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M13.657 5.752c-1.387-1.034-3.58-1.95-5.652-1.95-2.08 0-4.266.913-5.65 1.947-.187.14-.443-.052-.314-.248.613-.933 1.524-1.892 2.305-2.409A6.63 6.63 0 0 1 8.005 2c1.308 0 2.585.381 3.659 1.092.782.518 1.694 1.478 2.307 2.412.129.195-.127.388-.314.248M2.355 10.248c1.387 1.034 3.58 1.95 5.652 1.95 2.079 0 4.265-.913 5.65-1.947.187-.14.443.052.314.248-.613.933-1.524 1.892-2.306 2.409A6.63 6.63 0 0 1 8.007 14a6.63 6.63 0 0 1-3.659-1.092c-.782-.518-1.694-1.478-2.307-2.412-.129-.196.127-.388.314-.248"
+      className="fill-[#E66D17] dark:fill-[#E08855]"
     />
-  );
-};
+  </svg>
+);
 
 export default JupyterNotebook;

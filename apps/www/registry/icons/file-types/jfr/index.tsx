@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type JfrProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,75 +10,30 @@ export type JfrProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const JfrLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2.096 13v-1.02h.52a.53.53 0 0 0 .494-.287q.162-.285.162-.877V3.9h1.086v6.981q0 .722-.182 1.196-.182.468-.553.696-.37.227-.942.227zM5.667 13V3.9H8.76v1.027H6.752v3.12h1.749v1.027H6.752V13zM12.375 13 11.27 8.84h1.118L13.552 13zm-2.658 0V3.9h1.56q.747 0 1.215.286.474.285.696.871.227.585.227 1.482 0 .91-.227 1.501-.228.585-.715.871-.482.286-1.248.286h-.423V13zm1.56-4.817q.526 0 .754-.39.227-.396.227-1.254 0-.839-.227-1.229-.228-.396-.754-.396h-.475v3.27z"
-      fill="#E66D17"
-    />
-  </svg>
-);
-
-const JfrDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2.096 13v-1.02h.52a.53.53 0 0 0 .494-.287q.162-.285.162-.877V3.9h1.086v6.981q0 .722-.182 1.196-.182.468-.553.696-.37.227-.942.227zM5.667 13V3.9H8.76v1.027H6.752v3.12h1.749v1.027H6.752V13zM12.375 13 11.27 8.84h1.118L13.552 13zm-2.658 0V3.9h1.56q.747 0 1.215.286.474.285.696.871.227.585.227 1.482 0 .91-.227 1.501-.228.585-.715.871-.482.286-1.248.286h-.423V13zm1.56-4.817q.526 0 .754-.39.227-.396.227-1.254 0-.839-.227-1.229-.228-.396-.754-.396h-.475v3.27z"
-      fill="#E08855"
-    />
-  </svg>
-);
-
-export const Jfr: FC<JfrProps> = ({
+export const Jfr = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? JfrLight : JfrDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: JfrProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M2.096 13v-1.02h.52a.53.53 0 0 0 .494-.287q.162-.285.162-.877V3.9h1.086v6.981q0 .722-.182 1.196-.182.468-.553.696-.37.227-.942.227zM5.667 13V3.9H8.76v1.027H6.752v3.12h1.749v1.027H6.752V13zM12.375 13 11.27 8.84h1.118L13.552 13zm-2.658 0V3.9h1.56q.747 0 1.215.286.474.285.696.871.227.585.227 1.482 0 .91-.227 1.501-.228.585-.715.871-.482.286-1.248.286h-.423V13zm1.56-4.817q.526 0 .754-.39.227-.396.227-1.254 0-.839-.227-1.229-.228-.396-.754-.396h-.475v3.27z"
+      className="fill-[#E66D17] dark:fill-[#E08855]"
     />
-  );
-};
+  </svg>
+);
 
 export default Jfr;

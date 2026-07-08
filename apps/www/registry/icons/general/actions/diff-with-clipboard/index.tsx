@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type DiffWithClipboardProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,104 +10,42 @@ export type DiffWithClipboardProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const DiffWithClipboardLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
-      stroke="#3574F0"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M10.915 2H12a2 2 0 0 1 2 2v3.489a1.495 1.495 0 0 0-1-1.404V4a1 1 0 0 0-1-1h-1.085A1.5 1.5 0 0 1 9.5 4h-3a1.5 1.5 0 0 1-1.415-1H4a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1v1a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h1.085A1.5 1.5 0 0 1 6.5 1h3a1.5 1.5 0 0 1 1.415 1M6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"
-      fill="#6C707E"
-    />
-    <path
-      d="m7.879 10-.44.44a1.5 1.5 0 0 0-.354.56H5.5a.5.5 0 0 1 0-1zM9.879 8l-1 1H5.5a.5.5 0 0 1 0-1zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const DiffWithClipboardDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
-      stroke="#548AF7"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M10.915 2H12a2 2 0 0 1 2 2v3.489a1.495 1.495 0 0 0-1-1.404V4a1 1 0 0 0-1-1h-1.085A1.5 1.5 0 0 1 9.5 4h-3a1.5 1.5 0 0 1-1.415-1H4a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1v1a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h1.085A1.5 1.5 0 0 1 6.5 1h3a1.5 1.5 0 0 1 1.415 1M6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"
-      fill="#CED0D6"
-    />
-    <path
-      d="m7.879 10-.44.44a1.5 1.5 0 0 0-.354.56H5.5a.5.5 0 0 1 0-1zM9.879 8l-1 1H5.5a.5.5 0 0 1 0-1zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const DiffWithClipboard: FC<DiffWithClipboardProps> = ({
+export const DiffWithClipboard = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? DiffWithClipboardLight : DiffWithClipboardDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: DiffWithClipboardProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m8.5 15.5 2-2-2-2m-3 2H10m2.5-2-2-2 2-2m3 2H11"
+      className="stroke-[#3574F0] dark:stroke-[#548AF7]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M10.915 2H12a2 2 0 0 1 2 2v3.489a1.495 1.495 0 0 0-1-1.404V4a1 1 0 0 0-1-1h-1.085A1.5 1.5 0 0 1 9.5 4h-3a1.5 1.5 0 0 1-1.415-1H4a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1v1a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h1.085A1.5 1.5 0 0 1 6.5 1h3a1.5 1.5 0 0 1 1.415 1M6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="m7.879 10-.44.44a1.5 1.5 0 0 0-.354.56H5.5a.5.5 0 0 1 0-1zM9.879 8l-1 1H5.5a.5.5 0 0 1 0-1zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default DiffWithClipboard;

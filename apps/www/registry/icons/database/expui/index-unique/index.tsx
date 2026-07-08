@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type IndexUniqueProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,95 +10,38 @@ export type IndexUniqueProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const IndexUniqueLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 17"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M13.2249 16.12C12.6749 16.12 12.1866 16.0033 11.7599 15.77C11.3332 15.5333 11.0016 15.2033 10.7649 14.78C10.5282 14.3567 10.4099 13.8733 10.4099 13.33V9H11.4249V13.325C11.4249 13.6917 11.4999 14.0183 11.6499 14.305C11.7999 14.5917 12.0099 14.8133 12.2799 14.97C12.5532 15.1267 12.8682 15.205 13.2249 15.205C13.5749 15.205 13.8816 15.1267 14.1449 14.97C14.4116 14.81 14.6182 14.5883 14.7649 14.305C14.9116 14.0183 14.9849 13.6917 14.9849 13.325V9H15.9999V13.33C15.9999 13.8733 15.8816 14.3567 15.6449 14.78C15.4116 15.2033 15.0849 15.5333 14.6649 15.77C14.2482 16.0033 13.7682 16.12 13.2249 16.12Z"
-      fill="#6C707E"
-    />
-    <path
-      d="M6.5 2.5C6.5 2.22386 6.72386 2 7 2H8C8.27614 2 8.5 2.22386 8.5 2.5V3.47426C8.5 3.75041 8.27614 3.97426 8 3.97426H7C6.72386 3.97426 6.5 3.75041 6.5 3.47426V2.5Z"
-      fill="#3574F0"
-    />
-    <path
-      d="M5 6C4.72386 6 4.5 6.22386 4.5 6.5C4.5 6.77614 4.72386 7 5 7H7V14H4.5C4.22386 14 4 14.2239 4 14.5C4 14.7761 4.22386 15 4.5 15H9.75636C9.61145 14.6821 9.5139 14.3475 9.46017 14H8V6.5C8 6.22386 7.77614 6 7.5 6H5Z"
-      fill="#3574F0"
-    />
-  </svg>
-);
-
-const IndexUniqueDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 17"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M13.2249 16.12C12.6749 16.12 12.1866 16.0033 11.7599 15.77C11.3332 15.5333 11.0016 15.2033 10.7649 14.78C10.5282 14.3567 10.4099 13.8733 10.4099 13.33V9H11.4249V13.325C11.4249 13.6917 11.4999 14.0183 11.6499 14.305C11.7999 14.5917 12.0099 14.8133 12.2799 14.97C12.5532 15.1267 12.8682 15.205 13.2249 15.205C13.5749 15.205 13.8816 15.1267 14.1449 14.97C14.4116 14.81 14.6182 14.5883 14.7649 14.305C14.9116 14.0183 14.9849 13.6917 14.9849 13.325V9H15.9999V13.33C15.9999 13.8733 15.8816 14.3567 15.6449 14.78C15.4116 15.2033 15.0849 15.5333 14.6649 15.77C14.2482 16.0033 13.7682 16.12 13.2249 16.12Z"
-      fill="#CED0D6"
-    />
-    <path
-      d="M6.5 2.5C6.5 2.22386 6.72386 2 7 2H8C8.27614 2 8.5 2.22386 8.5 2.5V3.47426C8.5 3.75041 8.27614 3.97426 8 3.97426H7C6.72386 3.97426 6.5 3.75041 6.5 3.47426V2.5Z"
-      fill="#548AF7"
-    />
-    <path
-      d="M5 6C4.72386 6 4.5 6.22386 4.5 6.5C4.5 6.77614 4.72386 7 5 7H7V14H4.5C4.22386 14 4 14.2239 4 14.5C4 14.7761 4.22386 15 4.5 15H9.75636C9.61145 14.6821 9.5139 14.3475 9.46017 14H8V6.5C8 6.22386 7.77614 6 7.5 6H5Z"
-      fill="#548AF7"
-    />
-  </svg>
-);
-
-export const IndexUnique: FC<IndexUniqueProps> = ({
+export const IndexUnique = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? IndexUniqueLight : IndexUniqueDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: IndexUniqueProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 17"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M13.2249 16.12C12.6749 16.12 12.1866 16.0033 11.7599 15.77C11.3332 15.5333 11.0016 15.2033 10.7649 14.78C10.5282 14.3567 10.4099 13.8733 10.4099 13.33V9H11.4249V13.325C11.4249 13.6917 11.4999 14.0183 11.6499 14.305C11.7999 14.5917 12.0099 14.8133 12.2799 14.97C12.5532 15.1267 12.8682 15.205 13.2249 15.205C13.5749 15.205 13.8816 15.1267 14.1449 14.97C14.4116 14.81 14.6182 14.5883 14.7649 14.305C14.9116 14.0183 14.9849 13.6917 14.9849 13.325V9H15.9999V13.33C15.9999 13.8733 15.8816 14.3567 15.6449 14.78C15.4116 15.2033 15.0849 15.5333 14.6649 15.77C14.2482 16.0033 13.7682 16.12 13.2249 16.12Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+    <path
+      d="M6.5 2.5C6.5 2.22386 6.72386 2 7 2H8C8.27614 2 8.5 2.22386 8.5 2.5V3.47426C8.5 3.75041 8.27614 3.97426 8 3.97426H7C6.72386 3.97426 6.5 3.75041 6.5 3.47426V2.5Z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      d="M5 6C4.72386 6 4.5 6.22386 4.5 6.5C4.5 6.77614 4.72386 7 5 7H7V14H4.5C4.22386 14 4 14.2239 4 14.5C4 14.7761 4.22386 15 4.5 15H9.75636C9.61145 14.6821 9.5139 14.3475 9.46017 14H8V6.5C8 6.22386 7.77614 6 7.5 6H5Z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+  </svg>
+);
 
 export default IndexUnique;

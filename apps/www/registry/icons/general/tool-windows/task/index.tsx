@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type TaskProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,79 +10,32 @@ export type TaskProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const TaskLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 14.053a.5.5 0 0 1-.391-.15c-2.02-2.1-4.321-1.282-5.606-.526-.408.24-1.003-.047-1.003-.52V3.47c0-.285.153-.545.412-.661C2.562 2.292 5.86 1.095 8 3.202c2.141-2.107 5.438-.91 6.588-.393.26.116.412.376.412.66v9.388c0 .473-.595.76-1.003.52-1.284-.756-3.586-1.575-5.606.526a.5.5 0 0 1-.391.15M7.5 4.13c-.772-.902-1.781-1.164-2.826-1.128-1.055.037-2.066.383-2.674.64v8.6c.672-.334 1.534-.638 2.493-.673a4.77 4.77 0 0 1 3.007.917zm1 8.356a4.77 4.77 0 0 1 3.007-.917c.959.035 1.82.34 2.493.672V3.643c-.608-.257-1.619-.603-2.674-.64-1.045-.036-2.054.226-2.826 1.128z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const TaskDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 14.053a.5.5 0 0 1-.391-.15c-2.02-2.1-4.321-1.282-5.606-.526-.408.24-1.003-.047-1.003-.52V3.47c0-.285.153-.545.412-.661C2.562 2.292 5.86 1.095 8 3.202c2.141-2.107 5.438-.91 6.588-.393.26.116.412.376.412.66v9.388c0 .473-.595.76-1.003.52-1.284-.756-3.586-1.575-5.606.526a.5.5 0 0 1-.391.15M7.5 4.13c-.772-.902-1.781-1.164-2.826-1.128-1.055.037-2.066.383-2.674.64v8.6c.672-.334 1.534-.638 2.493-.673a4.77 4.77 0 0 1 3.007.917zm1 8.356a4.77 4.77 0 0 1 3.007-.917c.959.035 1.82.34 2.493.672V3.643c-.608-.257-1.619-.603-2.674-.64-1.045-.036-2.054.226-2.826 1.128z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const Task: FC<TaskProps> = ({
+export const Task = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? TaskLight : TaskDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: TaskProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8 14.053a.5.5 0 0 1-.391-.15c-2.02-2.1-4.321-1.282-5.606-.526-.408.24-1.003-.047-1.003-.52V3.47c0-.285.153-.545.412-.661C2.562 2.292 5.86 1.095 8 3.202c2.141-2.107 5.438-.91 6.588-.393.26.116.412.376.412.66v9.388c0 .473-.595.76-1.003.52-1.284-.756-3.586-1.575-5.606.526a.5.5 0 0 1-.391.15M7.5 4.13c-.772-.902-1.781-1.164-2.826-1.128-1.055.037-2.066.383-2.674.64v8.6c.672-.334 1.534-.638 2.493-.673a4.77 4.77 0 0 1 3.007.917zm1 8.356a4.77 4.77 0 0 1 3.007-.917c.959.035 1.82.34 2.493.672V3.643c-.608-.257-1.619-.603-2.674-.64-1.045-.036-2.054.226-2.826 1.128z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default Task;

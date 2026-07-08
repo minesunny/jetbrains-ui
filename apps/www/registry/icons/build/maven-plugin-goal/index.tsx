@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type MavenPluginGoalProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,92 +10,36 @@ export type MavenPluginGoalProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const MavenPluginGoalLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M9.05 12a2.5 2.5 0 0 1 2.45-2h2a.5.5 0 0 1 .5.5v.5h1.5a.5.5 0 0 1 0 1H14v2h1.5a.5.5 0 0 1 0 1H14v.5a.5.5 0 0 1-.5.5h-2a2.5 2.5 0 0 1-2.45-2H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm.95 1.5v-1a1.5 1.5 0 0 1 1.5-1.5H13v4h-1.5a1.5 1.5 0 0 1-1.5-1.5"
-      fill="#6C707E"
-    />
-    <path
-      d="M15.224 6.499c.358-1.563 0-3.298-2.062-3.298-1.577 0-2.54.588-3.678 1.561-.197-.867-.8-1.53-2.035-1.556-1.265-.07-2.372.46-3.321 1.207.1-.453-.113-.926-.629-1.03-.454-.093-.9.183-.996.616l-1.828 8.19c-.097.433.193.858.647.95s.9-.185.996-.617l1.42-6.355.002-.003v.007c.71-.995 1.982-1.541 2.91-1.442.78.097 1.317.647 1.055 1.766L6.45 12.182c-.089.4.154.794.55.922V12.5a1.5 1.5 0 0 1 1.333-1.49 4 4 0 0 1 .193-.355l1-4.488c1.313-1.84 4.548-2.147 3.977.332L12.953 9h.547c.42 0 .8.173 1.072.45z"
-      fill="#3574F0"
-    />
-  </svg>
-);
-
-const MavenPluginGoalDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M9.05 12a2.5 2.5 0 0 1 2.45-2h2a.5.5 0 0 1 .5.5v.5h1.5a.5.5 0 0 1 0 1H14v2h1.5a.5.5 0 0 1 0 1H14v.5a.5.5 0 0 1-.5.5h-2a2.5 2.5 0 0 1-2.45-2H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm.95 1.5v-1a1.5 1.5 0 0 1 1.5-1.5H13v4h-1.5a1.5 1.5 0 0 1-1.5-1.5"
-      fill="#CED0D6"
-    />
-    <path
-      d="M15.224 6.499c.358-1.563 0-3.298-2.062-3.298-1.577 0-2.54.588-3.678 1.561-.197-.867-.8-1.53-2.035-1.556-1.265-.07-2.372.46-3.321 1.207.1-.453-.113-.926-.629-1.03-.454-.093-.9.183-.996.616l-1.828 8.19c-.097.433.193.858.647.95s.9-.185.996-.617l1.42-6.355.002-.003v.007c.71-.995 1.982-1.541 2.91-1.442.78.097 1.317.647 1.055 1.766L6.45 12.182c-.089.4.154.794.55.922V12.5a1.5 1.5 0 0 1 1.333-1.49 4 4 0 0 1 .193-.355l1-4.488c1.313-1.84 4.548-2.147 3.977.332L12.953 9h.547c.42 0 .8.173 1.072.45z"
-      fill="#548AF7"
-    />
-  </svg>
-);
-
-export const MavenPluginGoal: FC<MavenPluginGoalProps> = ({
+export const MavenPluginGoal = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? MavenPluginGoalLight : MavenPluginGoalDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: MavenPluginGoalProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9.05 12a2.5 2.5 0 0 1 2.45-2h2a.5.5 0 0 1 .5.5v.5h1.5a.5.5 0 0 1 0 1H14v2h1.5a.5.5 0 0 1 0 1H14v.5a.5.5 0 0 1-.5.5h-2a2.5 2.5 0 0 1-2.45-2H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm.95 1.5v-1a1.5 1.5 0 0 1 1.5-1.5H13v4h-1.5a1.5 1.5 0 0 1-1.5-1.5"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+    <path
+      d="M15.224 6.499c.358-1.563 0-3.298-2.062-3.298-1.577 0-2.54.588-3.678 1.561-.197-.867-.8-1.53-2.035-1.556-1.265-.07-2.372.46-3.321 1.207.1-.453-.113-.926-.629-1.03-.454-.093-.9.183-.996.616l-1.828 8.19c-.097.433.193.858.647.95s.9-.185.996-.617l1.42-6.355.002-.003v.007c.71-.995 1.982-1.541 2.91-1.442.78.097 1.317.647 1.055 1.766L6.45 12.182c-.089.4.154.794.55.922V12.5a1.5 1.5 0 0 1 1.333-1.49 4 4 0 0 1 .193-.355l1-4.488c1.313-1.84 4.548-2.147 3.977.332L12.953 9h.547c.42 0 .8.173 1.072.45z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+  </svg>
+);
 
 export default MavenPluginGoal;

@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type CollectionKeyProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,84 +10,32 @@ export type CollectionKeyProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const CollectionKeyLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8.96905 8C8.723 9.97316 7.03981 11.5 5 11.5C2.79086 11.5 1 9.70914 1 7.5C1 5.29086 2.79086 3.5 5 3.5C7.03981 3.5 8.723 5.02684 8.96905 7L14.5 7C14.7761 7 15 7.22386 15 7.5C15 7.77614 14.7761 8 14.5 8L14 8L14 10.5C14 10.7761 13.7761 11 13.5 11C13.2239 11 13 10.7761 13 10.5L13 8L12 8L12 10.5C12 10.7761 11.7761 11 11.5 11C11.2239 11 11 10.7761 11 10.5L11 8L8.96905 8ZM5 10.5C6.65685 10.5 8 9.15685 8 7.5C8 5.84315 6.65685 4.5 5 4.5C3.34315 4.5 2 5.84315 2 7.5C2 9.15685 3.34315 10.5 5 10.5Z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const CollectionKeyDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8.96905 8C8.723 9.97316 7.03981 11.5 5 11.5C2.79086 11.5 1 9.70914 1 7.5C1 5.29086 2.79086 3.5 5 3.5C7.03981 3.5 8.723 5.02684 8.96905 7L14.5 7C14.7761 7 15 7.22386 15 7.5C15 7.77614 14.7761 8 14.5 8L14 8L14 10.5C14 10.7761 13.7761 11 13.5 11C13.2239 11 13 10.7761 13 10.5L13 8L12 8L12 10.5C12 10.7761 11.7761 11 11.5 11C11.2239 11 11 10.7761 11 10.5L11 8L8.96905 8ZM5 10.5C6.65685 10.5 8 9.15685 8 7.5C8 5.84315 6.65685 4.5 5 4.5C3.34315 4.5 2 5.84315 2 7.5C2 9.15685 3.34315 10.5 5 10.5Z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const CollectionKey: FC<CollectionKeyProps> = ({
+export const CollectionKey = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? CollectionKeyLight : CollectionKeyDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: CollectionKeyProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8.96905 8C8.723 9.97316 7.03981 11.5 5 11.5C2.79086 11.5 1 9.70914 1 7.5C1 5.29086 2.79086 3.5 5 3.5C7.03981 3.5 8.723 5.02684 8.96905 7L14.5 7C14.7761 7 15 7.22386 15 7.5C15 7.77614 14.7761 8 14.5 8L14 8L14 10.5C14 10.7761 13.7761 11 13.5 11C13.2239 11 13 10.7761 13 10.5L13 8L12 8L12 10.5C12 10.7761 11.7761 11 11.5 11C11.2239 11 11 10.7761 11 10.5L11 8L8.96905 8ZM5 10.5C6.65685 10.5 8 9.15685 8 7.5C8 5.84315 6.65685 4.5 5 4.5C3.34315 4.5 2 5.84315 2 7.5C2 9.15685 3.34315 10.5 5 10.5Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default CollectionKey;

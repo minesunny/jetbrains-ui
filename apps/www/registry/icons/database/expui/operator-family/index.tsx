@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type OperatorFamilyProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,104 +10,42 @@ export type OperatorFamilyProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const OperatorFamilyLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M11 9H15.5V9.945H12.01V12H15V12.945H12.01V16H11V9Z"
-      fill="#3574F0"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 14C8.70127 14 9.37444 13.8797 10 13.6586V14.7101C9.36629 14.8987 8.69497 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8H14C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
-      fill="#6C707E"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M7.9918 11C6.22951 11 5 9.64917 5 8.01657V8C5 6.3674 6.2459 5 8.0082 5C9.77049 5 11 6.35083 11 7.98343V8C11 9.6326 9.7541 11 7.9918 11ZM8.0082 10.0552C9.14754 10.0552 9.94262 9.14365 9.94262 8.01657V8C9.94262 6.87293 9.13115 5.94475 7.9918 5.94475C6.85246 5.94475 6.05738 6.85635 6.05738 7.98343V8C6.05738 9.12707 6.86885 10.0552 8.0082 10.0552Z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const OperatorFamilyDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M11 9H15.5V9.945H12.01V12H15V12.945H12.01V16H11V9Z"
-      fill="#548AF7"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 14C8.70127 14 9.37444 13.8797 10 13.6586V14.7101C9.36629 14.8987 8.69497 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8H14C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
-      fill="#CED0D6"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M7.9918 11C6.22951 11 5 9.64917 5 8.01657V8C5 6.3674 6.2459 5 8.0082 5C9.77049 5 11 6.35083 11 7.98343V8C11 9.6326 9.7541 11 7.9918 11ZM8.0082 10.0552C9.14754 10.0552 9.94262 9.14365 9.94262 8.01657V8C9.94262 6.87293 9.13115 5.94475 7.9918 5.94475C6.85246 5.94475 6.05738 6.85635 6.05738 7.98343V8C6.05738 9.12707 6.86885 10.0552 8.0082 10.0552Z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const OperatorFamily: FC<OperatorFamilyProps> = ({
+export const OperatorFamily = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? OperatorFamilyLight : OperatorFamilyDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: OperatorFamilyProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M11 9H15.5V9.945H12.01V12H15V12.945H12.01V16H11V9Z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8 14C8.70127 14 9.37444 13.8797 10 13.6586V14.7101C9.36629 14.8987 8.69497 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8H14C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M7.9918 11C6.22951 11 5 9.64917 5 8.01657V8C5 6.3674 6.2459 5 8.0082 5C9.77049 5 11 6.35083 11 7.98343V8C11 9.6326 9.7541 11 7.9918 11ZM8.0082 10.0552C9.14754 10.0552 9.94262 9.14365 9.94262 8.01657V8C9.94262 6.87293 9.13115 5.94475 7.9918 5.94475C6.85246 5.94475 6.05738 6.85635 6.05738 7.98343V8C6.05738 9.12707 6.86885 10.0552 8.0082 10.0552Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default OperatorFamily;

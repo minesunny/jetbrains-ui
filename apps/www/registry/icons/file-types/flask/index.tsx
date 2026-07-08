@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type FlaskProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,77 +10,30 @@ export type FlaskProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const FlaskLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M7.334 5.762 2.206 8.128a19 19 0 0 1-1.092-2.733.48.48 0 0 1 .256-.571l5.478-2.627c.178-.086.386.06.372.257-.044.645-.085 1.901.114 3.308M3.682 10.566l4.272-2.33c-.184-.479-.327-.97-.436-1.457L2.673 9.014c.294.518.629 1.045 1.009 1.552M14.853 11.99a.5.5 0 0 0-.613-.354l-.966.26a.5.5 0 0 0-.355.357c-2.318-.28-3.715-1.549-4.548-3.105l-4.044 2.206c1.928 2.155 4.795 3.622 8.854 1.864a.5.5 0 0 0 .481.127l.967-.259a.5.5 0 0 0 .354-.613z"
-      fill="#59A5BA"
-    />
-  </svg>
-);
-
-const FlaskDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M7.334 5.762 2.206 8.128a19 19 0 0 1-1.092-2.733.48.48 0 0 1 .256-.571l5.478-2.627c.178-.086.386.06.372.257-.044.645-.085 1.901.114 3.308M3.682 10.566l4.272-2.33c-.184-.479-.327-.97-.436-1.457L2.673 9.014c.294.518.629 1.045 1.009 1.552M14.853 11.99a.5.5 0 0 0-.613-.354l-.966.26a.5.5 0 0 0-.355.357c-2.318-.28-3.715-1.549-4.548-3.105l-4.044 2.206c1.928 2.155 4.795 3.622 8.854 1.864a.5.5 0 0 0 .481.127l.967-.259a.5.5 0 0 0 .354-.613z"
-      fill="#59A5BA"
-    />
-  </svg>
-);
-
-export const Flask: FC<FlaskProps> = ({
+export const Flask = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? FlaskLight : FlaskDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: FlaskProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M7.334 5.762 2.206 8.128a19 19 0 0 1-1.092-2.733.48.48 0 0 1 .256-.571l5.478-2.627c.178-.086.386.06.372.257-.044.645-.085 1.901.114 3.308M3.682 10.566l4.272-2.33c-.184-.479-.327-.97-.436-1.457L2.673 9.014c.294.518.629 1.045 1.009 1.552M14.853 11.99a.5.5 0 0 0-.613-.354l-.966.26a.5.5 0 0 0-.355.357c-2.318-.28-3.715-1.549-4.548-3.105l-4.044 2.206c1.928 2.155 4.795 3.622 8.854 1.864a.5.5 0 0 0 .481.127l.967-.259a.5.5 0 0 0 .354-.613z"
+      className="fill-[#59A5BA]"
     />
-  );
-};
+  </svg>
+);
 
 export default Flask;

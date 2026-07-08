@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type NotificationsProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,92 +10,35 @@ export type NotificationsProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const NotificationsLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M9.049 14.458a1.141 1.141 0 0 1-2.091 0z"
-      stroke="#6C707E"
-      strokeWidth={0.916}
-    />
-    <path
-      d="M8.009 1.5c.914.002 1.91.305 2.672 1C11.43 3.185 12 4.292 12 6v2a.5.5 0 0 0 .053.224l1.797 3.592a.473.473 0 0 1-.423.684H2.573a.473.473 0 0 1-.423-.684l1.797-3.592A.5.5 0 0 0 4 8V6c0-1.707.571-2.815 1.324-3.5.764-.695 1.763-.998 2.677-1z"
-      stroke="#6C707E"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const NotificationsDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M9.049 14.458a1.141 1.141 0 0 1-2.091 0z"
-      stroke="#CED0D6"
-      strokeWidth={0.916}
-    />
-    <path
-      d="M8.009 1.5c.914.002 1.91.305 2.672 1C11.43 3.185 12 4.292 12 6v2a.5.5 0 0 0 .053.224l1.797 3.592a.473.473 0 0 1-.423.684H2.573a.473.473 0 0 1-.423-.684l1.797-3.592A.5.5 0 0 0 4 8V6c0-1.707.571-2.815 1.324-3.5.764-.695 1.763-.998 2.677-1z"
-      stroke="#CED0D6"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-export const Notifications: FC<NotificationsProps> = ({
+export const Notifications = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? NotificationsLight : NotificationsDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: NotificationsProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M9.049 14.458a1.141 1.141 0 0 1-2.091 0z"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
-  );
-};
+    <path
+      strokeLinejoin="round"
+      d="M8.009 1.5c.914.002 1.91.305 2.672 1C11.43 3.185 12 4.292 12 6v2a.5.5 0 0 0 .053.224l1.797 3.592a.473.473 0 0 1-.423.684H2.573a.473.473 0 0 1-.423-.684l1.797-3.592A.5.5 0 0 0 4 8V6c0-1.707.571-2.815 1.324-3.5.764-.695 1.763-.998 2.677-1z"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default Notifications;

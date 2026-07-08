@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type UserProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,107 +10,46 @@ export type UserProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const UserLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M7.99951 7C9.65637 7 10.9995 5.65685 10.9995 4C10.9995 2.34315 9.65637 1 7.99951 1C6.34266 1 4.99951 2.34315 4.99951 4C4.99951 5.65685 6.34266 7 7.99951 7Z"
-      fill="#EBECF0"
-    />
-    <path
-      d="M2.10272 13.008C2.39906 11.3034 3.54766 8 7.99969 8C12.4517 8 13.6003 11.3034 13.8967 13.008C13.9912 13.5521 13.552 14 12.9997 14H2.99969C2.4474 14 2.00813 13.5521 2.10272 13.008Z"
-      fill="#EBECF0"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M10.9995 4C10.9995 5.65685 9.65637 7 7.99951 7C6.34266 7 4.99951 5.65685 4.99951 4C4.99951 2.34315 6.34266 1 7.99951 1C9.65637 1 10.9995 2.34315 10.9995 4ZM9.99951 4C9.99951 5.10457 9.10408 6 7.99951 6C6.89494 6 5.99951 5.10457 5.99951 4C5.99951 2.89543 6.89494 2 7.99951 2C9.10408 2 9.99951 2.89543 9.99951 4Z"
-      fill="#6C707E"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M7.99969 8C3.54766 8 2.39906 11.3034 2.10272 13.008C2.00813 13.5521 2.4474 14 2.99969 14H12.9997C13.552 14 13.9912 13.5521 13.8967 13.008C13.6003 11.3034 12.4517 8 7.99969 8ZM11.7438 10.5114C12.4081 11.2951 12.7281 12.2552 12.8778 13H3.12154C3.27126 12.2552 3.59131 11.2951 4.25563 10.5114C4.94028 9.70375 6.05804 9 7.99969 9C9.94134 9 11.0591 9.70375 11.7438 10.5114Z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const UserDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M7.99951 7C9.65637 7 10.9995 5.65685 10.9995 4C10.9995 2.34315 9.65637 1 7.99951 1C6.34266 1 4.99951 2.34315 4.99951 4C4.99951 5.65685 6.34266 7 7.99951 7Z"
-      fill="#43454A"
-    />
-    <path
-      d="M2.10272 13.008C2.39906 11.3034 3.54766 8 7.99969 8C12.4517 8 13.6003 11.3034 13.8967 13.008C13.9912 13.5521 13.552 14 12.9997 14H2.99969C2.4474 14 2.00813 13.5521 2.10272 13.008Z"
-      fill="#43454A"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M10.9995 4C10.9995 5.65685 9.65637 7 7.99951 7C6.34266 7 4.99951 5.65685 4.99951 4C4.99951 2.34315 6.34266 1 7.99951 1C9.65637 1 10.9995 2.34315 10.9995 4ZM9.99951 4C9.99951 5.10457 9.10408 6 7.99951 6C6.89494 6 5.99951 5.10457 5.99951 4C5.99951 2.89543 6.89494 2 7.99951 2C9.10408 2 9.99951 2.89543 9.99951 4Z"
-      fill="#CED0D6"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M7.99969 8C3.54766 8 2.39906 11.3034 2.10272 13.008C2.00813 13.5521 2.4474 14 2.99969 14H12.9997C13.552 14 13.9912 13.5521 13.8967 13.008C13.6003 11.3034 12.4517 8 7.99969 8ZM11.7438 10.5114C12.4081 11.2951 12.7281 12.2552 12.8778 13H3.12154C3.27126 12.2552 3.59131 11.2951 4.25563 10.5114C4.94028 9.70375 6.05804 9 7.99969 9C9.94134 9 11.0591 9.70375 11.7438 10.5114Z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const User: FC<UserProps> = ({
+export const User = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? UserLight : UserDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: UserProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M7.99951 7C9.65637 7 10.9995 5.65685 10.9995 4C10.9995 2.34315 9.65637 1 7.99951 1C6.34266 1 4.99951 2.34315 4.99951 4C4.99951 5.65685 6.34266 7 7.99951 7Z"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
-  );
-};
+    <path
+      d="M2.10272 13.008C2.39906 11.3034 3.54766 8 7.99969 8C12.4517 8 13.6003 11.3034 13.8967 13.008C13.9912 13.5521 13.552 14 12.9997 14H2.99969C2.4474 14 2.00813 13.5521 2.10272 13.008Z"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M10.9995 4C10.9995 5.65685 9.65637 7 7.99951 7C6.34266 7 4.99951 5.65685 4.99951 4C4.99951 2.34315 6.34266 1 7.99951 1C9.65637 1 10.9995 2.34315 10.9995 4ZM9.99951 4C9.99951 5.10457 9.10408 6 7.99951 6C6.89494 6 5.99951 5.10457 5.99951 4C5.99951 2.89543 6.89494 2 7.99951 2C9.10408 2 9.99951 2.89543 9.99951 4Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M7.99969 8C3.54766 8 2.39906 11.3034 2.10272 13.008C2.00813 13.5521 2.4474 14 2.99969 14H12.9997C13.552 14 13.9912 13.5521 13.8967 13.008C13.6003 11.3034 12.4517 8 7.99969 8ZM11.7438 10.5114C12.4081 11.2951 12.7281 12.2552 12.8778 13H3.12154C3.27126 12.2552 3.59131 11.2951 4.25563 10.5114C4.94028 9.70375 6.05804 9 7.99969 9C9.94134 9 11.0591 9.70375 11.7438 10.5114Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default User;

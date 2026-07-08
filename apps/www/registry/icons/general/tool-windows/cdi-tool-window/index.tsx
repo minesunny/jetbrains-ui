@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type CdiToolWindowProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,84 +10,32 @@ export type CdiToolWindowProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const CdiToolWindowLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.421 3.543c2.865 2.866 3.656 6.772.76 9.668-2.897 2.897-6.953 2.003-9.692-.736C.75 9.736-.065 5.634 2.77 2.8s6.787-2.122 9.652.743m-.708.709c1.312 1.312 2.09 2.806 2.253 4.227.143 1.253-.182 2.514-1.154 3.655L3.846 3.17c1.115-.943 2.372-1.273 3.63-1.138 1.429.153 2.93.915 4.237 2.22m-8.574-.374 8.964 8.964c-1.137.958-2.425 1.272-3.71 1.12-1.454-.173-2.954-.954-4.195-2.195-1.236-1.235-2-2.743-2.163-4.205-.144-1.29.174-2.574 1.104-3.684"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const CdiToolWindowDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.421 3.543c2.865 2.866 3.656 6.772.76 9.668-2.897 2.897-6.953 2.003-9.692-.736C.75 9.736-.065 5.634 2.77 2.8s6.787-2.122 9.652.743m-.708.709c1.312 1.312 2.09 2.806 2.253 4.227.143 1.253-.182 2.514-1.154 3.655L3.846 3.17c1.115-.943 2.372-1.273 3.63-1.138 1.429.153 2.93.915 4.237 2.22m-8.574-.374 8.964 8.964c-1.137.958-2.425 1.272-3.71 1.12-1.454-.173-2.954-.954-4.195-2.195-1.236-1.235-2-2.743-2.163-4.205-.144-1.29.174-2.574 1.104-3.684"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const CdiToolWindow: FC<CdiToolWindowProps> = ({
+export const CdiToolWindow = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? CdiToolWindowLight : CdiToolWindowDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: CdiToolWindowProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12.421 3.543c2.865 2.866 3.656 6.772.76 9.668-2.897 2.897-6.953 2.003-9.692-.736C.75 9.736-.065 5.634 2.77 2.8s6.787-2.122 9.652.743m-.708.709c1.312 1.312 2.09 2.806 2.253 4.227.143 1.253-.182 2.514-1.154 3.655L3.846 3.17c1.115-.943 2.372-1.273 3.63-1.138 1.429.153 2.93.915 4.237 2.22m-8.574-.374 8.964 8.964c-1.137.958-2.425 1.272-3.71 1.12-1.454-.173-2.954-.954-4.195-2.195-1.236-1.235-2-2.743-2.163-4.205-.144-1.29.174-2.574 1.104-3.684"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default CdiToolWindow;

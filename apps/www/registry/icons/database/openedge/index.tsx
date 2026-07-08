@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type OpenedgeProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,89 +10,35 @@ export type OpenedgeProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const OpenedgeLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path d="M4.714 14.263v-3.807l-3.193 1.842z" fill="#5CE400" />
-    <path
-      d="M6.188 9.596V15l3.255-1.903V7.754L4.714 4.991 1.521 6.895z"
-      fill="#5CE400"
-    />
-    <path
-      d="M8.03 1 4.47 3.088l6.509 3.807v7.491l3.5-2.088V4.746z"
-      fill="#5CE400"
-    />
-  </svg>
-);
-
-const OpenedgeDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path d="M4.714 14.263v-3.807l-3.193 1.842z" fill="#5CE400" />
-    <path
-      d="M6.188 9.596V15l3.255-1.903V7.754L4.714 4.991 1.521 6.895z"
-      fill="#5CE400"
-    />
-    <path
-      d="M8.03 1 4.47 3.088l6.509 3.807v7.491l3.5-2.088V4.746z"
-      fill="#5CE400"
-    />
-  </svg>
-);
-
-export const Openedge: FC<OpenedgeProps> = ({
+export const Openedge = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? OpenedgeLight : OpenedgeDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: OpenedgeProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path d="M4.714 14.263v-3.807l-3.193 1.842z" className="fill-[#5CE400]" />
+    <path
+      d="M6.188 9.596V15l3.255-1.903V7.754L4.714 4.991 1.521 6.895z"
+      className="fill-[#5CE400]"
     />
-  );
-};
+    <path
+      d="M8.03 1 4.47 3.088l6.509 3.807v7.491l3.5-2.088V4.746z"
+      className="fill-[#5CE400]"
+    />
+  </svg>
+);
 
 export default Openedge;

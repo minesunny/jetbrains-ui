@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type RefreshProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,91 +10,36 @@ export type RefreshProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const RefreshLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2.5 9V8A5.5 5.5 0 0 1 11 3.39M5 12.61A5.5 5.5 0 0 0 13.5 8V7"
-      stroke="#A8ADBD"
-      strokeLinecap="round"
-    />
-    <path
-      d="m.5 7.5 2 2 2-2M11.5 8.5l2-2 2 2"
-      stroke="#A8ADBD"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-const RefreshDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2.5 9V8A5.5 5.5 0 0 1 11 3.39M5 12.61A5.5 5.5 0 0 0 13.5 8V7"
-      stroke="#868A91"
-      strokeLinecap="round"
-    />
-    <path
-      d="m.5 7.5 2 2 2-2M11.5 8.5l2-2 2 2"
-      stroke="#868A91"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-export const Refresh: FC<RefreshProps> = ({
+export const Refresh = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? RefreshLight : RefreshDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: RefreshProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      strokeLinecap="round"
+      d="M2.5 9V8A5.5 5.5 0 0 1 11 3.39M5 12.61A5.5 5.5 0 0 0 13.5 8V7"
+      className="stroke-[#A8ADBD] dark:stroke-[#868A91]"
     />
-  );
-};
+    <path
+      strokeLinecap="round"
+      d="m.5 7.5 2 2 2-2M11.5 8.5l2-2 2 2"
+      className="stroke-[#A8ADBD] dark:stroke-[#868A91]"
+    />
+  </svg>
+);
 
 export default Refresh;

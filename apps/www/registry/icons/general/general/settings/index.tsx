@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type SettingsProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,83 +10,32 @@ export type SettingsProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const SettingsLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M3.227 4.37c-.305.4-.56.838-.757 1.306l.84 1.418c.33.559.33 1.253 0 1.812l-.84 1.418c.197.468.452.907.757 1.306l1.646-.018c.649-.007 1.25.34 1.568.906l.808 1.435a6 6 0 0 0 1.51 0l.808-1.435c.318-.566.92-.913 1.568-.906l1.647.018c.304-.4.559-.838.756-1.306l-.84-1.418a1.78 1.78 0 0 1 0-1.812l.84-1.418a6 6 0 0 0-.756-1.306l-1.647.018a1.78 1.78 0 0 1-1.568-.906l-.808-1.435a6 6 0 0 0-1.51 0l-.808 1.435c-.318.566-.92.913-1.568.906zM10.655 8a2.651 2.651 0 1 1-5.302 0 2.651 2.651 0 0 1 5.302 0M4.884 3.388a.78.78 0 0 0 .686-.397l.868-1.542a.73.73 0 0 1 .526-.372 7 7 0 0 1 2.08 0 .73.73 0 0 1 .526.372l.868 1.542c.14.248.402.4.686.397l1.77-.02a.73.73 0 0 1 .584.269 7 7 0 0 1 1.043 1.802.73.73 0 0 1-.06.64l-.902 1.525a.78.78 0 0 0 0 .792l.902 1.525c.115.194.142.43.06.64a7 7 0 0 1-1.043 1.802.73.73 0 0 1-.584.269l-1.77-.02a.78.78 0 0 0-.686.396l-.868 1.543a.73.73 0 0 1-.526.372 7 7 0 0 1-2.08 0 .73.73 0 0 1-.526-.372l-.868-1.543a.78.78 0 0 0-.686-.396l-1.77.02a.73.73 0 0 1-.584-.269 7 7 0 0 1-1.043-1.802.73.73 0 0 1 .06-.64l.902-1.525a.78.78 0 0 0 0-.792l-.902-1.525a.73.73 0 0 1-.06-.64A7 7 0 0 1 2.53 3.637a.73.73 0 0 1 .584-.269zM9.655 8a1.651 1.651 0 1 1-3.302 0 1.651 1.651 0 0 1 3.302 0"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const SettingsDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M3.227 4.37c-.305.4-.56.838-.757 1.306l.84 1.418c.33.559.33 1.253 0 1.812l-.84 1.418c.197.468.452.907.757 1.306l1.646-.018c.649-.007 1.25.34 1.568.906l.808 1.435a6 6 0 0 0 1.51 0l.808-1.435c.318-.566.92-.913 1.568-.906l1.647.018c.304-.4.559-.838.756-1.306l-.84-1.418a1.78 1.78 0 0 1 0-1.812l.84-1.418a6 6 0 0 0-.756-1.306l-1.647.018a1.78 1.78 0 0 1-1.568-.906l-.808-1.435a6 6 0 0 0-1.51 0l-.808 1.435c-.318.566-.92.913-1.568.906zM10.655 8a2.651 2.651 0 1 1-5.302 0 2.651 2.651 0 0 1 5.302 0M4.884 3.388a.78.78 0 0 0 .686-.397l.868-1.542a.73.73 0 0 1 .526-.372 7 7 0 0 1 2.08 0 .73.73 0 0 1 .526.372l.868 1.542c.14.248.402.4.686.397l1.77-.02a.73.73 0 0 1 .584.269 7 7 0 0 1 1.043 1.802.73.73 0 0 1-.06.64l-.902 1.525a.78.78 0 0 0 0 .792l.902 1.525c.115.194.142.43.06.64a7 7 0 0 1-1.043 1.802.73.73 0 0 1-.584.269l-1.77-.02a.78.78 0 0 0-.686.396l-.868 1.543a.73.73 0 0 1-.526.372 7 7 0 0 1-2.08 0 .73.73 0 0 1-.526-.372l-.868-1.543a.78.78 0 0 0-.686-.396l-1.77.02a.73.73 0 0 1-.584-.269 7 7 0 0 1-1.043-1.802.73.73 0 0 1 .06-.64l.902-1.525a.78.78 0 0 0 0-.792l-.902-1.525a.73.73 0 0 1-.06-.64A7 7 0 0 1 2.53 3.637a.73.73 0 0 1 .584-.269zM9.655 8a1.651 1.651 0 1 1-3.302 0 1.651 1.651 0 0 1 3.302 0"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const Settings: FC<SettingsProps> = ({
+export const Settings = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? SettingsLight : SettingsDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: SettingsProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3.227 4.37c-.305.4-.56.838-.757 1.306l.84 1.418c.33.559.33 1.253 0 1.812l-.84 1.418c.197.468.452.907.757 1.306l1.646-.018c.649-.007 1.25.34 1.568.906l.808 1.435a6 6 0 0 0 1.51 0l.808-1.435c.318-.566.92-.913 1.568-.906l1.647.018c.304-.4.559-.838.756-1.306l-.84-1.418a1.78 1.78 0 0 1 0-1.812l.84-1.418a6 6 0 0 0-.756-1.306l-1.647.018a1.78 1.78 0 0 1-1.568-.906l-.808-1.435a6 6 0 0 0-1.51 0l-.808 1.435c-.318.566-.92.913-1.568.906zM10.655 8a2.651 2.651 0 1 1-5.302 0 2.651 2.651 0 0 1 5.302 0M4.884 3.388a.78.78 0 0 0 .686-.397l.868-1.542a.73.73 0 0 1 .526-.372 7 7 0 0 1 2.08 0 .73.73 0 0 1 .526.372l.868 1.542c.14.248.402.4.686.397l1.77-.02a.73.73 0 0 1 .584.269 7 7 0 0 1 1.043 1.802.73.73 0 0 1-.06.64l-.902 1.525a.78.78 0 0 0 0 .792l.902 1.525c.115.194.142.43.06.64a7 7 0 0 1-1.043 1.802.73.73 0 0 1-.584.269l-1.77-.02a.78.78 0 0 0-.686.396l-.868 1.543a.73.73 0 0 1-.526.372 7 7 0 0 1-2.08 0 .73.73 0 0 1-.526-.372l-.868-1.543a.78.78 0 0 0-.686-.396l-1.77.02a.73.73 0 0 1-.584-.269 7 7 0 0 1-1.043-1.802.73.73 0 0 1 .06-.64l.902-1.525a.78.78 0 0 0 0-.792l-.902-1.525a.73.73 0 0 1-.06-.64A7 7 0 0 1 2.53 3.637a.73.73 0 0 1 .584-.269zM9.655 8a1.651 1.651 0 1 1-3.302 0 1.651 1.651 0 0 1 3.302 0"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default Settings;

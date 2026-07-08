@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type ConnectorProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,83 +10,32 @@ export type ConnectorProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const ConnectorLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12 5V4C12 3.44772 11.5523 3 11 3H7C5.13616 3 3.57006 4.27477 3.12602 6H1C0.447715 6 0 6.44772 0 7V9C0 9.55228 0.447715 10 1 10H3.12602C3.57006 11.7252 5.13616 13 7 13H11C11.5523 13 12 12.5523 12 12V11H15.5C15.7761 11 16 10.7761 16 10.5C16 10.2239 15.7761 10 15.5 10H12V6H15.5C15.7761 6 16 5.77614 16 5.5C16 5.22386 15.7761 5 15.5 5H12ZM11 4H7C5.34315 4 4 5.34315 4 7V9C4 10.6569 5.34315 12 7 12H11V4ZM3 7V9H1V7L3 7Z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const ConnectorDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12 5V4C12 3.44772 11.5523 3 11 3H7C5.13616 3 3.57006 4.27477 3.12602 6H1C0.447715 6 0 6.44772 0 7V9C0 9.55228 0.447715 10 1 10H3.12602C3.57006 11.7252 5.13616 13 7 13H11C11.5523 13 12 12.5523 12 12V11H15.5C15.7761 11 16 10.7761 16 10.5C16 10.2239 15.7761 10 15.5 10H12V6H15.5C15.7761 6 16 5.77614 16 5.5C16 5.22386 15.7761 5 15.5 5H12ZM11 4H7C5.34315 4 4 5.34315 4 7V9C4 10.6569 5.34315 12 7 12H11V4ZM3 7V9H1V7L3 7Z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const Connector: FC<ConnectorProps> = ({
+export const Connector = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? ConnectorLight : ConnectorDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: ConnectorProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12 5V4C12 3.44772 11.5523 3 11 3H7C5.13616 3 3.57006 4.27477 3.12602 6H1C0.447715 6 0 6.44772 0 7V9C0 9.55228 0.447715 10 1 10H3.12602C3.57006 11.7252 5.13616 13 7 13H11C11.5523 13 12 12.5523 12 12V11H15.5C15.7761 11 16 10.7761 16 10.5C16 10.2239 15.7761 10 15.5 10H12V6H15.5C15.7761 6 16 5.77614 16 5.5C16 5.22386 15.7761 5 15.5 5H12ZM11 4H7C5.34315 4 4 5.34315 4 7V9C4 10.6569 5.34315 12 7 12H11V4ZM3 7V9H1V7L3 7Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default Connector;

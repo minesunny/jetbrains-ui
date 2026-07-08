@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type SingleRecordViewProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,110 +10,48 @@ export type SingleRecordViewProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const SingleRecordViewLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path d="M12 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#6C707E" />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12 16c-3 0-4-3-4-3s1-3 4-3 4 3 4 3-1 3-4 3m2.902-3.021.011.021-.01.021a4.4 4.4 0 0 1-.546.839C13.86 14.456 13.119 15 12 15s-1.86-.544-2.357-1.14a4.4 4.4 0 0 1-.545-.838L9.087 13l.01-.021c.116-.231.295-.537.546-.839C10.14 11.544 10.881 11 12 11s1.86.544 2.357 1.14c.251.302.43.607.545.838"
-      fill="#6C707E"
-    />
-    <path
-      d="M14 6H2v4h7c.74-.563 1.727-1 3-1 .767 0 1.432.16 2 .41z"
-      fill="#EDF3FF"
-    />
-    <path
-      d="M15 5H1v6h6.993q.054-.07.113-.14c.244-.293.54-.59.894-.86H2V6h12v3.41c.374.164.707.368 1 .591z"
-      fill="#3574F0"
-    />
-    <path
-      d="M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.352a7 7 0 0 1-.23-.496l-.048-.126q-.047-.131-.09-.264L6.947 13H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v5.41c.374.164.707.368 1 .591V4a2 2 0 0 0-2-2z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const SingleRecordViewDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path d="M12 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" fill="#CED0D6" />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12 16c-3 0-4-3-4-3s1-3 4-3 4 3 4 3-1 3-4 3m2.902-3.021.011.021-.01.021a4.4 4.4 0 0 1-.546.839C13.86 14.456 13.119 15 12 15s-1.86-.544-2.357-1.14a4.4 4.4 0 0 1-.545-.838L9.087 13l.01-.021c.116-.231.295-.537.546-.839C10.14 11.544 10.881 11 12 11s1.86.544 2.357 1.14c.251.302.43.607.545.838"
-      fill="#CED0D6"
-    />
-    <path
-      d="M14 6H2v4h7c.74-.563 1.727-1 3-1 .767 0 1.432.16 2 .41z"
-      fill="#25324D"
-    />
-    <path
-      d="M15 5H1v6h6.993q.054-.07.113-.14c.244-.293.54-.59.894-.86H2V6h12v3.41c.374.164.707.368 1 .591z"
-      fill="#548AF7"
-    />
-    <path
-      d="M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.352a7 7 0 0 1-.23-.496l-.048-.126q-.047-.131-.09-.264L6.947 13H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v5.41c.374.164.707.368 1 .591V4a2 2 0 0 0-2-2z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const SingleRecordView: FC<SingleRecordViewProps> = ({
+export const SingleRecordView = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? SingleRecordViewLight : SingleRecordViewDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: SingleRecordViewProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M12 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12 16c-3 0-4-3-4-3s1-3 4-3 4 3 4 3-1 3-4 3m2.902-3.021.011.021-.01.021a4.4 4.4 0 0 1-.546.839C13.86 14.456 13.119 15 12 15s-1.86-.544-2.357-1.14a4.4 4.4 0 0 1-.545-.838L9.087 13l.01-.021c.116-.231.295-.537.546-.839C10.14 11.544 10.881 11 12 11s1.86.544 2.357 1.14c.251.302.43.607.545.838"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="M14 6H2v4h7c.74-.563 1.727-1 3-1 .767 0 1.432.16 2 .41z"
+      className="fill-[#EDF3FF] dark:fill-[#25324D]"
+    />
+    <path
+      d="M15 5H1v6h6.993q.054-.07.113-.14c.244-.293.54-.59.894-.86H2V6h12v3.41c.374.164.707.368 1 .591z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      d="M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4.352a7 7 0 0 1-.23-.496l-.048-.126q-.047-.131-.09-.264L6.947 13H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v5.41c.374.164.707.368 1 .591V4a2 2 0 0 0-2-2z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default SingleRecordView;

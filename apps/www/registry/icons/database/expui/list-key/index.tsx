@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type ListKeyProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,113 +10,40 @@ export type ListKeyProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const ListKeyLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <g clipPath="url(#clip0_4613_50051)">
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12.95 14C12.7184 15.1411 11.7095 16 10.5 16C9.11929 16 8 14.8807 8 13.5C8 12.1193 9.11929 11 10.5 11C11.7095 11 12.7184 11.8589 12.95 13L16 13L16 14L15 14L15 16L14 16L14 14L12.95 14ZM10.5 15C11.3284 15 12 14.3284 12 13.5C12 12.6716 11.3284 12 10.5 12C9.67157 12 9 12.6716 9 13.5C9 14.3284 9.67157 15 10.5 15Z"
-        fill="#6C707E"
-      />
-      <path
-        d="M5 2C4.44772 2 4 2.44772 4 3V13C4 13.5523 4.44772 14 5 14H7V13H5V3L7 3V2H5Z"
-        fill="#6C707E"
-      />
-      <path
-        d="M12 10.3367C11.6892 10.1891 11.3531 10.0859 11 10.0354V3H9V2H11C11.5523 2 12 2.44772 12 3V10.3367Z"
-        fill="#6C707E"
-      />
-    </g>
-    <defs>
-      <clipPath id="clip0_4613_50051">
-        <rect width={16} height={16} fill="white" />
-      </clipPath>
-    </defs>
-  </svg>
-);
-
-const ListKeyDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <g clipPath="url(#clip0_4613_50053)">
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12.95 14C12.7184 15.1411 11.7095 16 10.5 16C9.11929 16 8 14.8807 8 13.5C8 12.1193 9.11929 11 10.5 11C11.7095 11 12.7184 11.8589 12.95 13L16 13L16 14L15 14L15 16L14 16L14 14L12.95 14ZM10.5 15C11.3284 15 12 14.3284 12 13.5C12 12.6716 11.3284 12 10.5 12C9.67157 12 9 12.6716 9 13.5C9 14.3284 9.67157 15 10.5 15Z"
-        fill="#CED0D6"
-      />
-      <path
-        d="M5 2C4.44772 2 4 2.44772 4 3V13C4 13.5523 4.44772 14 5 14H7V13H5V3L7 3V2H5Z"
-        fill="#CED0D6"
-      />
-      <path
-        d="M12 10.3367C11.6892 10.1891 11.3531 10.0859 11 10.0354V3H9V2H11C11.5523 2 12 2.44772 12 3V10.3367Z"
-        fill="#CED0D6"
-      />
-    </g>
-    <defs>
-      <clipPath id="clip0_4613_50053">
-        <rect width={16} height={16} fill="white" />
-      </clipPath>
-    </defs>
-  </svg>
-);
-
-export const ListKey: FC<ListKeyProps> = ({
+export const ListKey = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? ListKeyLight : ListKeyDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: ListKeyProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12.95 14C12.7184 15.1411 11.7095 16 10.5 16C9.11929 16 8 14.8807 8 13.5C8 12.1193 9.11929 11 10.5 11C11.7095 11 12.7184 11.8589 12.95 13L16 13L16 14L15 14L15 16L14 16L14 14L12.95 14ZM10.5 15C11.3284 15 12 14.3284 12 13.5C12 12.6716 11.3284 12 10.5 12C9.67157 12 9 12.6716 9 13.5C9 14.3284 9.67157 15 10.5 15Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+    <path
+      d="M5 2C4.44772 2 4 2.44772 4 3V13C4 13.5523 4.44772 14 5 14H7V13H5V3L7 3V2H5Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="M12 10.3367C11.6892 10.1891 11.3531 10.0859 11 10.0354V3H9V2H11C11.5523 2 12 2.44772 12 3V10.3367Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default ListKey;

@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type GreenplumProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,95 +10,38 @@ export type GreenplumProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const GreenplumLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.267 5.392a5 5 0 1 0-6.534 7.066c.156.079.75.114 1.267-.458.273-.302.543-.739.836-1.212.374-.605.785-1.27 1.286-1.788.524-.543 1.184-1.078 1.773-1.556.435-.353.83-.674 1.105-.944.494-.485.302-1.051.267-1.108M9.89 6.46a2.43 2.43 0 0 0-1.843-.845 2.45 2.45 0 0 0-2.442 2.458 2.46 2.46 0 0 0 1.02 2c.425.305.737-.145 1.158-.75.193-.278.408-.588.667-.872.233-.256.491-.488.729-.702.573-.515 1.027-.923.71-1.289"
-      fill="#8AC831"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m0-1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"
-      fill="#8AC831"
-    />
-  </svg>
-);
-
-const GreenplumDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.267 5.392a5 5 0 1 0-6.534 7.066c.156.079.75.114 1.267-.458.273-.302.543-.739.836-1.212.374-.605.785-1.27 1.286-1.788.524-.543 1.184-1.078 1.773-1.556.435-.353.83-.674 1.105-.944.494-.485.302-1.051.267-1.108M9.89 6.46a2.43 2.43 0 0 0-1.843-.845 2.45 2.45 0 0 0-2.442 2.458 2.46 2.46 0 0 0 1.02 2c.425.305.737-.145 1.158-.75.193-.278.408-.588.667-.872.233-.256.491-.488.729-.702.573-.515 1.027-.923.71-1.289"
-      fill="#8AC831"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m0-1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"
-      fill="#8AC831"
-    />
-  </svg>
-);
-
-export const Greenplum: FC<GreenplumProps> = ({
+export const Greenplum = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? GreenplumLight : GreenplumDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: GreenplumProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12.267 5.392a5 5 0 1 0-6.534 7.066c.156.079.75.114 1.267-.458.273-.302.543-.739.836-1.212.374-.605.785-1.27 1.286-1.788.524-.543 1.184-1.078 1.773-1.556.435-.353.83-.674 1.105-.944.494-.485.302-1.051.267-1.108M9.89 6.46a2.43 2.43 0 0 0-1.843-.845 2.45 2.45 0 0 0-2.442 2.458 2.46 2.46 0 0 0 1.02 2c.425.305.737-.145 1.158-.75.193-.278.408-.588.667-.872.233-.256.491-.488.729-.702.573-.515 1.027-.923.71-1.289"
+      className="fill-[#8AC831]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m0-1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"
+      className="fill-[#8AC831]"
+    />
+  </svg>
+);
 
 export default Greenplum;

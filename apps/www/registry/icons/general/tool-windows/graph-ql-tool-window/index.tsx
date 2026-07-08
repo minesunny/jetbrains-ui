@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type GraphQlToolWindowProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,84 +10,32 @@ export type GraphQlToolWindowProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const GraphQlToolWindowLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M9.5 2q0 .121-.019.239l3.017 1.645A1.5 1.5 0 1 1 14 6.414v3.171a1.5 1.5 0 1 1-1.502 2.531l-3.017 1.646q.02.116.019.238a1.5 1.5 0 1 1-2.981-.238l-3.017-1.646A1.5 1.5 0 1 1 2 9.585v-3.17a1.5 1.5 0 1 1 1.502-2.531L6.52 2.239A1.5 1.5 0 1 1 9.5 2M7.015 3.132l-.017-.016-3.017 1.646q.02.116.019.238a1.5 1.5 0 0 1-1 1.415v3.141zm.95.368L3.902 10h8.196L8.035 3.5zm1.02-.368L13 9.557V6.415a1.5 1.5 0 0 1-.981-1.653L9.002 3.116zM12 11H4q0 .121-.019.239l3.017 1.645A1.5 1.5 0 0 1 8 12.5c.385 0 .737.145 1.002.384l3.017-1.645A1.5 1.5 0 0 1 12 11"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const GraphQlToolWindowDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M9.5 2q0 .121-.019.239l3.017 1.645A1.5 1.5 0 1 1 14 6.414v3.171a1.5 1.5 0 1 1-1.502 2.531l-3.017 1.646q.02.116.019.238a1.5 1.5 0 1 1-2.981-.238l-3.017-1.646A1.5 1.5 0 1 1 2 9.585v-3.17a1.5 1.5 0 1 1 1.502-2.531L6.52 2.239A1.5 1.5 0 1 1 9.5 2M7.015 3.132l-.017-.016-3.017 1.646q.02.116.019.238a1.5 1.5 0 0 1-1 1.415v3.141zm.95.368L3.902 10h8.196L8.035 3.5zm1.02-.368L13 9.557V6.415a1.5 1.5 0 0 1-.981-1.653L9.002 3.116zM12 11H4q0 .121-.019.239l3.017 1.645A1.5 1.5 0 0 1 8 12.5c.385 0 .737.145 1.002.384l3.017-1.645A1.5 1.5 0 0 1 12 11"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const GraphQlToolWindow: FC<GraphQlToolWindowProps> = ({
+export const GraphQlToolWindow = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? GraphQlToolWindowLight : GraphQlToolWindowDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: GraphQlToolWindowProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9.5 2q0 .121-.019.239l3.017 1.645A1.5 1.5 0 1 1 14 6.414v3.171a1.5 1.5 0 1 1-1.502 2.531l-3.017 1.646q.02.116.019.238a1.5 1.5 0 1 1-2.981-.238l-3.017-1.646A1.5 1.5 0 1 1 2 9.585v-3.17a1.5 1.5 0 1 1 1.502-2.531L6.52 2.239A1.5 1.5 0 1 1 9.5 2M7.015 3.132l-.017-.016-3.017 1.646q.02.116.019.238a1.5 1.5 0 0 1-1 1.415v3.141zm.95.368L3.902 10h8.196L8.035 3.5zm1.02-.368L13 9.557V6.415a1.5 1.5 0 0 1-.981-1.653L9.002 3.116zM12 11H4q0 .121-.019.239l3.017 1.645A1.5 1.5 0 0 1 8 12.5c.385 0 .737.145 1.002.384l3.017-1.645A1.5 1.5 0 0 1 12 11"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default GraphQlToolWindow;

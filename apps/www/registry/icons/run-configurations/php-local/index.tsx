@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type PhpLocalProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,122 +10,42 @@ export type PhpLocalProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const PhpLocalLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <g clipPath="url(#a)">
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M11.5 4.477V8h-2V7H6L5 8h-.5V4.477a.5.5 0 0 1 .192-.394l3-2.343a.5.5 0 0 1 .616 0l3 2.343a.5.5 0 0 1 .192.394"
-        fill="#EBECF0"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M8.616 1.346a1 1 0 0 0-1.231 0l-3 2.343A1 1 0 0 0 4 4.477V8h1V4.477l3-2.343 3 2.343V8h1V4.477a1 1 0 0 0-.384-.788z"
-        fill="#6C707E"
-      />
-      <path
-        d="M1.266 9.69H3.64q1.044.01 1.514.603t.31 1.62q-.062.47-.275.921a2.7 2.7 0 0 1-.566.815q-.442.46-.948.584a4.4 4.4 0 0 1-1.044.124H1.567l-.336 1.682H0zm1.036 1.01-.531 2.657q.052.008.106.008h.124q.85.009 1.417-.168.566-.186.761-1.293.16-.93-.319-1.07-.47-.143-1.177-.134-.107.01-.204.01h-.186zM6.865 8h1.222L7.74 9.691H8.84q.902.018 1.346.372.452.354.266 1.346l-.594 2.948h-1.24l.568-2.815q.088-.444-.054-.629-.142-.186-.61-.186l-.983-.009-.726 3.64H5.59zM11.762 9.69h2.373q1.045.01 1.514.603t.31 1.62q-.062.47-.274.921a2.7 2.7 0 0 1-.567.815q-.443.46-.947.584a4.4 4.4 0 0 1-1.045.124h-1.063l-.336 1.682h-1.23zm1.036 1.01-.531 2.657q.052.008.106.008h.124q.85.009 1.417-.168.566-.186.761-1.293.16-.93-.319-1.07-.469-.143-1.177-.134-.106.01-.204.01h-.186z"
-        fill="#676BD7"
-      />
-    </g>
-    <defs>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0H16V16H0z" />
-      </clipPath>
-    </defs>
-  </svg>
-);
-
-const PhpLocalDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <g clipPath="url(#a)">
-      <g clipPath="url(#b)">
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M11.5 4.477V8h-2V7H6L5 8h-.5V4.477a.5.5 0 0 1 .192-.394l3-2.343a.5.5 0 0 1 .616 0l3 2.343a.5.5 0 0 1 .192.394"
-          fill="#43454A"
-        />
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M8.616 1.346a1 1 0 0 0-1.231 0l-3 2.343A1 1 0 0 0 4 4.477V8h1V4.477l3-2.343 3 2.343V8h1V4.477a1 1 0 0 0-.384-.788z"
-          fill="#CED0D6"
-        />
-        <path
-          d="M1.266 9.69H3.64q1.044.01 1.514.603t.31 1.62q-.062.47-.275.921a2.7 2.7 0 0 1-.566.815q-.442.46-.948.584a4.4 4.4 0 0 1-1.044.124H1.567l-.336 1.682H0zm1.036 1.01-.531 2.657q.052.008.106.008h.124q.85.009 1.417-.168.566-.186.761-1.293.16-.93-.319-1.07-.47-.143-1.177-.134-.107.01-.204.01h-.186zM6.865 8h1.222L7.74 9.691H8.84q.902.018 1.346.372.452.354.266 1.346l-.594 2.948h-1.24l.568-2.815q.088-.444-.054-.629-.142-.186-.61-.186l-.983-.009-.726 3.64H5.59zM11.762 9.69h2.373q1.045.01 1.514.603t.31 1.62q-.062.47-.274.921a2.7 2.7 0 0 1-.567.815q-.443.46-.947.584a4.4 4.4 0 0 1-1.045.124h-1.063l-.336 1.682h-1.23zm1.036 1.01-.531 2.657q.052.008.106.008h.124q.85.009 1.417-.168.566-.186.761-1.293.16-.93-.319-1.07-.469-.143-1.177-.134-.106.01-.204.01h-.186z"
-          fill="#999DF6"
-        />
-      </g>
-    </g>
-    <defs>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0H16V16H0z" />
-      </clipPath>
-      <clipPath id="b">
-        <path fill="#fff" d="M0 0H16V16H0z" />
-      </clipPath>
-    </defs>
-  </svg>
-);
-
-export const PhpLocal: FC<PhpLocalProps> = ({
+export const PhpLocal = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? PhpLocalLight : PhpLocalDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: PhpLocalProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.5 4.477V8h-2V7H6L5 8h-.5V4.477a.5.5 0 0 1 .192-.394l3-2.343a.5.5 0 0 1 .616 0l3 2.343a.5.5 0 0 1 .192.394"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8.616 1.346a1 1 0 0 0-1.231 0l-3 2.343A1 1 0 0 0 4 4.477V8h1V4.477l3-2.343 3 2.343V8h1V4.477a1 1 0 0 0-.384-.788z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="M1.266 9.69H3.64q1.044.01 1.514.603t.31 1.62q-.062.47-.275.921a2.7 2.7 0 0 1-.566.815q-.442.46-.948.584a4.4 4.4 0 0 1-1.044.124H1.567l-.336 1.682H0zm1.036 1.01-.531 2.657q.052.008.106.008h.124q.85.009 1.417-.168.566-.186.761-1.293.16-.93-.319-1.07-.47-.143-1.177-.134-.107.01-.204.01h-.186zM6.865 8h1.222L7.74 9.691H8.84q.902.018 1.346.372.452.354.266 1.346l-.594 2.948h-1.24l.568-2.815q.088-.444-.054-.629-.142-.186-.61-.186l-.983-.009-.726 3.64H5.59zM11.762 9.69h2.373q1.045.01 1.514.603t.31 1.62q-.062.47-.274.921a2.7 2.7 0 0 1-.567.815q-.443.46-.947.584a4.4 4.4 0 0 1-1.045.124h-1.063l-.336 1.682h-1.23zm1.036 1.01-.531 2.657q.052.008.106.008h.124q.85.009 1.417-.168.566-.186.761-1.293.16-.93-.319-1.07-.469-.143-1.177-.134-.106.01-.204.01h-.186z"
+      className="fill-[#676BD7] dark:fill-[#999DF6]"
+    />
+  </svg>
+);
 
 export default PhpLocal;

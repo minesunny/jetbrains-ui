@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type CssProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,77 +10,34 @@ export type CssProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const CssLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path d="m7.992 15-5.051-1.4L1.815 1h12.37l-1.127 12.599z" fill="#4682FA" />
-    <path
-      d="m4.257 5.121-.14-1.545h7.757l-.28 3.128-.037.415-.388 4.33-3.17.876-.006.002-3.173-.879-.216-2.426h1.554l.11 1.232 1.725.465h.002l1.727-.466.18-2.004H4.534l-.138-1.545h5.64l.14-1.583z"
-      fill="#fff"
-    />
-  </svg>
-);
-
-const CssDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path d="m7.992 15-5.051-1.4L1.815 1h12.37l-1.127 12.599z" fill="#548AF7" />
-    <path
-      d="m4.257 5.121-.14-1.545h7.757l-.28 3.128-.037.415-.388 4.33-3.17.876-.006.002-3.173-.879-.216-2.426h1.554l.11 1.232 1.725.465h.002l1.727-.466.18-2.004H4.534l-.138-1.545h5.64l.14-1.583z"
-      fill="#fff"
-    />
-  </svg>
-);
-
-export const Css: FC<CssProps> = ({
+export const Css = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? CssLight : CssDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: CssProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="m7.992 15-5.051-1.4L1.815 1h12.37l-1.127 12.599z"
+      className="fill-[#4682FA] dark:fill-[#548AF7]"
     />
-  );
-};
+    <path
+      d="m4.257 5.121-.14-1.545h7.757l-.28 3.128-.037.415-.388 4.33-3.17.876-.006.002-3.173-.879-.216-2.426h1.554l.11 1.232 1.725.465h.002l1.727-.466.18-2.004H4.534l-.138-1.545h5.64l.14-1.583z"
+      className="fill-[#fff]"
+    />
+  </svg>
+);
 
 export default Css;

@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type ForeignTableProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,103 +10,42 @@ export type ForeignTableProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const ForeignTableLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M3 2C1.89543 2 1 2.89543 1 4V12C1 13.1046 1.89543 14 3 14H9.87868L11 12.8787V11.9146C10.4174 11.7087 10 11.1531 10 10.5C10 9.67157 10.6716 9 11.5 9H15V4C15 2.89543 14.1046 2 13 2H3Z"
-      fill="#EBECF0"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M11 10.5C11 10.2239 11.2239 10 11.5 10H15.5C15.7761 10 16 10.2239 16 10.5V14.5C16 14.7761 15.7761 15 15.5 15C15.2239 15 15 14.7761 15 14.5V11.7071L10.8536 15.8536C10.6583 16.0488 10.3417 16.0488 10.1464 15.8536C9.95118 15.6583 9.95118 15.3417 10.1464 15.1464L14.2929 11H11.5C11.2239 11 11 10.7761 11 10.5Z"
-      fill="#3574F0"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M1 4C1 2.89543 1.89543 2 3 2H13C14.1046 2 15 2.89543 15 4V9H14V6H11V9.08535C10.4174 9.29127 10 9.84689 10 10.5V6H6V13H10V10.5C10 11.1531 10.4174 11.7087 11 11.9146V12.8787L9.87868 14H3C1.89543 14 1 13.1046 1 12V4ZM6 3H10V5H6V3ZM5 3H3C2.44772 3 2 3.44772 2 4V5H5V3ZM2 6V12C2 12.5523 2.44772 13 3 13H5V6H2ZM14 5V4C14 3.44772 13.5523 3 13 3H11V5H14Z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const ForeignTableDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M3 2C1.89543 2 1 2.89543 1 4V12C1 13.1046 1.89543 14 3 14H9.87868L11 12.8787V11.9146C10.4174 11.7087 10 11.1531 10 10.5C10 9.67157 10.6716 9 11.5 9H15V4C15 2.89543 14.1046 2 13 2H3Z"
-      fill="#43454A"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M11 10.5C11 10.2239 11.2239 10 11.5 10H15.5C15.7761 10 16 10.2239 16 10.5V14.5C16 14.7761 15.7761 15 15.5 15C15.2239 15 15 14.7761 15 14.5V11.7071L10.8536 15.8536C10.6583 16.0488 10.3417 16.0488 10.1464 15.8536C9.95118 15.6583 9.95118 15.3417 10.1464 15.1464L14.2929 11H11.5C11.2239 11 11 10.7761 11 10.5Z"
-      fill="#548AF7"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M1 4C1 2.89543 1.89543 2 3 2H13C14.1046 2 15 2.89543 15 4V9H14V6H11V9.08535C10.4174 9.29127 10 9.84689 10 10.5V6H6V13H10V10.5C10 11.1531 10.4174 11.7087 11 11.9146V12.8787L9.87868 14H3C1.89543 14 1 13.1046 1 12V4ZM6 3H10V5H6V3ZM5 3H3C2.44772 3 2 3.44772 2 4V5H5V3ZM2 6V12C2 12.5523 2.44772 13 3 13H5V6H2ZM14 5V4C14 3.44772 13.5523 3 13 3H11V5H14Z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const ForeignTable: FC<ForeignTableProps> = ({
+export const ForeignTable = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? ForeignTableLight : ForeignTableDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: ForeignTableProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M3 2C1.89543 2 1 2.89543 1 4V12C1 13.1046 1.89543 14 3 14H9.87868L11 12.8787V11.9146C10.4174 11.7087 10 11.1531 10 10.5C10 9.67157 10.6716 9 11.5 9H15V4C15 2.89543 14.1046 2 13 2H3Z"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11 10.5C11 10.2239 11.2239 10 11.5 10H15.5C15.7761 10 16 10.2239 16 10.5V14.5C16 14.7761 15.7761 15 15.5 15C15.2239 15 15 14.7761 15 14.5V11.7071L10.8536 15.8536C10.6583 16.0488 10.3417 16.0488 10.1464 15.8536C9.95118 15.6583 9.95118 15.3417 10.1464 15.1464L14.2929 11H11.5C11.2239 11 11 10.7761 11 10.5Z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1 4C1 2.89543 1.89543 2 3 2H13C14.1046 2 15 2.89543 15 4V9H14V6H11V9.08535C10.4174 9.29127 10 9.84689 10 10.5V6H6V13H10V10.5C10 11.1531 10.4174 11.7087 11 11.9146V12.8787L9.87868 14H3C1.89543 14 1 13.1046 1 12V4ZM6 3H10V5H6V3ZM5 3H3C2.44772 3 2 3.44772 2 4V5H5V3ZM2 6V12C2 12.5523 2.44772 13 3 13H5V6H2ZM14 5V4C14 3.44772 13.5523 3 13 3H11V5H14Z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default ForeignTable;

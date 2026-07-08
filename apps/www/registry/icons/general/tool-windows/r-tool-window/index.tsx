@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type RToolWindowProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,92 +10,38 @@ export type RToolWindowProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const RToolWindowLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
+export const RToolWindow = ({
+  size = 16,
+  mode: _mode,
   className,
-  role,
   'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
+  ...props
+}: RToolWindowProps) => (
   <svg
     width={size}
     height={size}
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
     aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
+    aria-hidden={!ariaLabel}
+    {...props}
   >
     <path
       fillRule="evenodd"
       clipRule="evenodd"
       d="M15.228 13.04s.605.177.957.35c.122.059.333.178.485.335.15.153.222.309.222.309l2.385 3.892-3.855.002-1.803-3.277s-.37-.614-.596-.792c-.19-.148-.27-.201-.458-.201h-.916v4.268H8.24v-10.9h6.85s3.12.054 3.12 2.927-2.981 3.087-2.981 3.087m-1.484-3.65-2.065-.001-.002 1.853h2.067s.957-.003.957-.943c0-.96-.957-.91-.957-.91"
-      fill="#6C707E"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
       d="M18.984 12.333c.65-.86 1.016-1.828 1.016-2.85C20 5.902 15.523 3 10 3S0 5.902 0 9.482c0 2.982 3.104 5.493 7.332 6.25V13.66c-2.05-.794-3.402-2.152-3.402-3.695 0-2.447 3.403-4.432 7.6-4.432 4.199 0 7.296 1.358 7.296 4.432 0 .95-.295 1.735-.826 2.367z"
-      fill="#6C707E"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
   </svg>
 );
-
-const RToolWindowDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 20 20"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <g clipPath="url(#a)" fillRule="evenodd" clipRule="evenodd" fill="#CED0D6">
-      <path d="M15.228 13.04s.605.177.957.35c.122.059.333.178.485.335.15.153.222.309.222.309l2.385 3.892-3.855.002-1.803-3.277s-.37-.614-.596-.792c-.19-.148-.27-.201-.458-.201h-.916v4.268H8.24v-10.9h6.85s3.12.054 3.12 2.927-2.981 3.087-2.981 3.087m-1.484-3.65-2.065-.001-.002 1.853h2.067s.957-.003.957-.943c0-.96-.957-.91-.957-.91" />
-      <path d="M18.984 12.333c.65-.86 1.016-1.828 1.016-2.85C20 5.902 15.523 3 10 3S0 5.902 0 9.482c0 2.982 3.104 5.493 7.332 6.25V13.66c-2.05-.794-3.402-2.152-3.402-3.695 0-2.447 3.403-4.432 7.6-4.432 4.199 0 7.296 1.358 7.296 4.432 0 .95-.295 1.735-.826 2.367z" />
-    </g>
-    <defs>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0H20V20H0z" />
-      </clipPath>
-    </defs>
-  </svg>
-);
-
-export const RToolWindow: FC<RToolWindowProps> = ({
-  size = 16,
-  mode = 'light',
-  className,
-  'aria-label': ariaLabel,
-  ...props
-}) => {
-  const SvgComponent = mode === 'light' ? RToolWindowLight : RToolWindowDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
-    />
-  );
-};
 
 export default RToolWindow;

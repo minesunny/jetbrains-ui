@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type TestSourceFolderProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,112 +10,46 @@ export type TestSourceFolderProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const TestSourceFolderLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
-      fill="#55A76A"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
-      fill="#E55765"
-    />
-    <path
-      d="M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v4.96l-1.63-1.566c-.562-.54-1.36-.487-1.871-.064-.512-.422-1.31-.474-1.87.066l-2.7 2.595A1.4 1.4 0 0 0 6.92 14H2.75C1.784 14 1 13.164 1 12.133z"
-      fill="#EBECF0"
-    />
-    <path
-      d="m6.038 3 2.056 2H13a1 1 0 0 1 1 1v4l1 .96V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h4.17a1.4 1.4 0 0 1-.42-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const TestSourceFolderDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
-      fill="#57965C"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
-      fill="#DB5C5C"
-    />
-    <path
-      d="M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v4.96l-1.63-1.566c-.562-.54-1.36-.487-1.871-.064-.512-.422-1.31-.474-1.87.066l-2.7 2.595A1.4 1.4 0 0 0 6.92 14H2.75C1.784 14 1 13.164 1 12.133z"
-      fill="#43454A"
-    />
-    <path
-      d="m6.038 3 2.056 2H13a1 1 0 0 1 1 1v4l1 .96V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h4.17a1.4 1.4 0 0 1-.42-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const TestSourceFolder: FC<TestSourceFolderProps> = ({
+export const TestSourceFolder = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? TestSourceFolderLight : TestSourceFolderDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: TestSourceFolderProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
+      className="fill-[#55A76A] dark:fill-[#57965C]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
+      className="fill-[#E55765] dark:fill-[#DB5C5C]"
+    />
+    <path
+      d="M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v4.96l-1.63-1.566c-.562-.54-1.36-.487-1.871-.064-.512-.422-1.31-.474-1.87.066l-2.7 2.595A1.4 1.4 0 0 0 6.92 14H2.75C1.784 14 1 13.164 1 12.133z"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
+    />
+    <path
+      d="m6.038 3 2.056 2H13a1 1 0 0 1 1 1v4l1 .96V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h4.17a1.4 1.4 0 0 1-.42-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default TestSourceFolder;

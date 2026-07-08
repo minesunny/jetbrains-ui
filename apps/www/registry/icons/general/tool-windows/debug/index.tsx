@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type DebugProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,97 +10,40 @@ export type DebugProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const DebugLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M13.967 13.533a.5.5 0 1 0 .5-.866zm-2.217-1.28 2.217 1.28.5-.866-2.217-1.28zM14.9 9.5a.5.5 0 0 0 0-1zm-2.5 0h2.5v-1h-2.5zM14.455 5.24a.5.5 0 0 0-.476-.88zm-2.217 1.2 2.217-1.2-.476-.88-2.217 1.2zM2.03 13.533a.5.5 0 0 1-.5-.866zm2.22-1.282-2.22 1.282-.5-.866 2.22-1.282zM1.1 9.5a.5.5 0 0 1 0-1zm2.5 0H1.1v-1h2.5zM1.542 5.24a.5.5 0 0 1 .476-.88zm2.22 1.2-2.22-1.2.476-.88 2.22 1.2z"
-      fill="#6C707E"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M6.3 4.2a1.7 1.7 0 1 1 3.201.8h.999q.04 0 .08.002a2.7 2.7 0 1 0-5.158 0Q5.46 4.999 5.5 5h1c-.127-.238-.2-.51-.2-.8"
-      fill="#6C707E"
-    />
-    <path
-      d="M4 7.5a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3V10a4 4 0 0 1-8 0z"
-      stroke="#6C707E"
-    />
-  </svg>
-);
-
-const DebugDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M13.967 13.533a.5.5 0 1 0 .5-.866zm-2.217-1.28 2.217 1.28.5-.866-2.217-1.28zM14.9 9.5a.5.5 0 0 0 0-1zm-2.5 0h2.5v-1h-2.5zM14.455 5.24a.5.5 0 0 0-.476-.88zm-2.217 1.2 2.217-1.2-.476-.88-2.217 1.2zM2.03 13.533a.5.5 0 0 1-.5-.866zm2.22-1.282-2.22 1.282-.5-.866 2.22-1.282zM1.1 9.5a.5.5 0 0 1 0-1zm2.5 0H1.1v-1h2.5zM1.542 5.24a.5.5 0 0 1 .476-.88zm2.22 1.2-2.22-1.2.476-.88 2.22 1.2z"
-      fill="#CED0D6"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M6.3 4.2a1.7 1.7 0 1 1 3.201.8h.999q.04 0 .08.002a2.7 2.7 0 1 0-5.158 0Q5.46 4.999 5.5 5h1c-.127-.238-.2-.51-.2-.8"
-      fill="#CED0D6"
-    />
-    <path
-      d="M4 7.5a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3V10a4 4 0 0 1-8 0z"
-      stroke="#CED0D6"
-    />
-  </svg>
-);
-
-export const Debug: FC<DebugProps> = ({
+export const Debug = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? DebugLight : DebugDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: DebugProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M13.967 13.533a.5.5 0 1 0 .5-.866zm-2.217-1.28 2.217 1.28.5-.866-2.217-1.28zM14.9 9.5a.5.5 0 0 0 0-1zm-2.5 0h2.5v-1h-2.5zM14.455 5.24a.5.5 0 0 0-.476-.88zm-2.217 1.2 2.217-1.2-.476-.88-2.217 1.2zM2.03 13.533a.5.5 0 0 1-.5-.866zm2.22-1.282-2.22 1.282-.5-.866 2.22-1.282zM1.1 9.5a.5.5 0 0 1 0-1zm2.5 0H1.1v-1h2.5zM1.542 5.24a.5.5 0 0 1 .476-.88zm2.22 1.2-2.22-1.2.476-.88 2.22 1.2z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M6.3 4.2a1.7 1.7 0 1 1 3.201.8h.999q.04 0 .08.002a2.7 2.7 0 1 0-5.158 0Q5.46 4.999 5.5 5h1c-.127-.238-.2-.51-.2-.8"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="M4 7.5a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3V10a4 4 0 0 1-8 0z"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default Debug;

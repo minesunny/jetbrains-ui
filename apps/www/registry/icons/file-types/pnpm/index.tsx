@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type PnpmProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,83 +10,34 @@ export type PnpmProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const PnpmLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path fill="#FFAF0F" d="M2 2H5V5H2z" />
-    <path fill="#FFAF0F" d="M6 2H9V5H6z" />
-    <path fill="#FFAF0F" d="M10 2H13V5H10z" />
-    <path fill="#FFAF0F" d="M10 6H13V9H10z" />
-    <path fill="#6C707E" d="M6 6H9V9H6z" />
-    <path fill="#6C707E" d="M6 10H9V13H6z" />
-    <path fill="#6C707E" d="M10 10H13V13H10z" />
-    <path fill="#6C707E" d="M2 10H5V13H2z" />
-  </svg>
-);
-
-const PnpmDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path fill="#F2C55C" d="M2 2H5V5H2z" />
-    <path fill="#F2C55C" d="M6 2H9V5H6z" />
-    <path fill="#F2C55C" d="M10 2H13V5H10z" />
-    <path fill="#F2C55C" d="M10 6H13V9H10z" />
-    <path fill="#CED0D6" d="M6 6H9V9H6z" />
-    <path fill="#CED0D6" d="M6 10H9V13H6z" />
-    <path fill="#CED0D6" d="M10 10H13V13H10z" />
-    <path fill="#CED0D6" d="M2 10H5V13H2z" />
-  </svg>
-);
-
-export const Pnpm: FC<PnpmProps> = ({
+export const Pnpm = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? PnpmLight : PnpmDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
-    />
-  );
-};
+}: PnpmProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path d="M2 2H5V5H2z" className="fill-[#FFAF0F] dark:fill-[#F2C55C]" />
+    <path d="M6 2H9V5H6z" className="fill-[#FFAF0F] dark:fill-[#F2C55C]" />
+    <path d="M10 2H13V5H10z" className="fill-[#FFAF0F] dark:fill-[#F2C55C]" />
+    <path d="M10 6H13V9H10z" className="fill-[#FFAF0F] dark:fill-[#F2C55C]" />
+    <path d="M6 6H9V9H6z" className="fill-[#6C707E] dark:fill-[#CED0D6]" />
+    <path d="M6 10H9V13H6z" className="fill-[#6C707E] dark:fill-[#CED0D6]" />
+    <path d="M10 10H13V13H10z" className="fill-[#6C707E] dark:fill-[#CED0D6]" />
+    <path d="M2 10H5V13H2z" className="fill-[#6C707E] dark:fill-[#CED0D6]" />
+  </svg>
+);
 
 export default Pnpm;

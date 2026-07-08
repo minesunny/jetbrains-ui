@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type TidbProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,77 +10,31 @@ export type TidbProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const TidbLight: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path d="M1.5 4.5 8 .5l6.5 4v7l-6.5 4-6.5-4z" fill="#E30C34" />
-    <path
-      d="M8.002 3 3.68 5.49v2.528L5.84 6.76l.019 5.002L8.002 13V5.504l2.137-1.242zM12.325 5.48l-2.122 1.301v4.989l2.122-1.247z"
-      fill="#fff"
-    />
-  </svg>
-);
-
-const TidbDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path d="M1.5 4.5 8 .5l6.5 4v7l-6.5 4-6.5-4z" fill="#E30C34" />
-    <path
-      d="M8.002 3 3.68 5.49v2.528L5.84 6.76l.019 5.002L8.002 13V5.504l2.137-1.242zM12.325 5.48l-2.122 1.301v4.989l2.122-1.247z"
-      fill="#fff"
-    />
-  </svg>
-);
-
-export const Tidb: FC<TidbProps> = ({
+export const Tidb = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? TidbLight : TidbDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: TidbProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path d="M1.5 4.5 8 .5l6.5 4v7l-6.5 4-6.5-4z" className="fill-[#E30C34]" />
+    <path
+      d="M8.002 3 3.68 5.49v2.528L5.84 6.76l.019 5.002L8.002 13V5.504l2.137-1.242zM12.325 5.48l-2.122 1.301v4.989l2.122-1.247z"
+      className="fill-[#fff]"
     />
-  );
-};
+  </svg>
+);
 
 export default Tidb;

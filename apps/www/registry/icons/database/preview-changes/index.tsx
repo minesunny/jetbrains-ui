@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type PreviewChangesProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,112 +10,46 @@ export type PreviewChangesProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const PreviewChangesLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M9.707 11.5h.793a.5.5 0 0 1 .5.5v3h2v-3a.5.5 0 0 1 .5-.5h.793L12 9.207z"
-      fill="#F2FCF3"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M11.647 8.146a.5.5 0 0 1 .707 0l3.5 3.5a.5.5 0 0 1-.354.854H14v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3H8.5a.5.5 0 0 1-.354-.854zM9.707 11.5h.793a.5.5 0 0 1 .5.5v3h2v-3a.5.5 0 0 1 .5-.5h.793L12 9.207z"
-      fill="#208A3C"
-    />
-    <path
-      d="M8.345 13.492Q8.172 13.5 8 13.5C4.5 13.5 1 11 0 8c1-3 4.5-5.5 8-5.5S15 5 16 8a6.7 6.7 0 0 1-.789 1.59l-.723-.723A6 6 0 0 0 14.934 8c-.467-1.142-1.379-2.227-2.568-3.054C11.072 4.046 9.518 3.5 8 3.5s-3.072.545-4.366 1.446C2.445 5.773 1.533 6.858 1.066 8c.467 1.142 1.379 2.227 2.568 3.054 1.028.716 2.221 1.207 3.43 1.379q.02.071.05.141a1.5 1.5 0 0 0 1.23.918"
-      fill="#6C707E"
-    />
-    <path
-      d="M10.946 7.432a3.001 3.001 0 1 0-3.514 3.514l.007-.007.985-.984Q8.218 10 8 10a2 2 0 1 1 1.955-1.576l.984-.985z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const PreviewChangesDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M9.707 11.5h.793a.5.5 0 0 1 .5.5v3h2v-3a.5.5 0 0 1 .5-.5h.793L12 9.207z"
-      fill="#253627"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M11.647 8.146a.5.5 0 0 1 .707 0l3.5 3.5a.5.5 0 0 1-.354.854H14v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3H8.5a.5.5 0 0 1-.354-.854zM9.707 11.5h.793a.5.5 0 0 1 .5.5v3h2v-3a.5.5 0 0 1 .5-.5h.793L12 9.207z"
-      fill="#57965C"
-    />
-    <path
-      d="M8.345 13.492Q8.172 13.5 8 13.5C4.5 13.5 1 11 0 8c1-3 4.5-5.5 8-5.5S15 5 16 8a6.7 6.7 0 0 1-.789 1.59l-.723-.723A6 6 0 0 0 14.934 8c-.467-1.142-1.379-2.227-2.568-3.054C11.072 4.046 9.518 3.5 8 3.5s-3.072.545-4.366 1.446C2.445 5.773 1.533 6.858 1.066 8c.467 1.142 1.379 2.227 2.568 3.054 1.028.716 2.221 1.207 3.43 1.379q.02.071.05.141a1.5 1.5 0 0 0 1.23.918"
-      fill="#CED0D6"
-    />
-    <path
-      d="M10.946 7.432a3.001 3.001 0 1 0-3.514 3.514l.007-.007.985-.984Q8.218 10 8 10a2 2 0 1 1 1.955-1.576l.984-.985z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const PreviewChanges: FC<PreviewChangesProps> = ({
+export const PreviewChanges = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? PreviewChangesLight : PreviewChangesDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: PreviewChangesProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9.707 11.5h.793a.5.5 0 0 1 .5.5v3h2v-3a.5.5 0 0 1 .5-.5h.793L12 9.207z"
+      className="fill-[#F2FCF3] dark:fill-[#253627]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.647 8.146a.5.5 0 0 1 .707 0l3.5 3.5a.5.5 0 0 1-.354.854H14v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3H8.5a.5.5 0 0 1-.354-.854zM9.707 11.5h.793a.5.5 0 0 1 .5.5v3h2v-3a.5.5 0 0 1 .5-.5h.793L12 9.207z"
+      className="fill-[#208A3C] dark:fill-[#57965C]"
+    />
+    <path
+      d="M8.345 13.492Q8.172 13.5 8 13.5C4.5 13.5 1 11 0 8c1-3 4.5-5.5 8-5.5S15 5 16 8a6.7 6.7 0 0 1-.789 1.59l-.723-.723A6 6 0 0 0 14.934 8c-.467-1.142-1.379-2.227-2.568-3.054C11.072 4.046 9.518 3.5 8 3.5s-3.072.545-4.366 1.446C2.445 5.773 1.533 6.858 1.066 8c.467 1.142 1.379 2.227 2.568 3.054 1.028.716 2.221 1.207 3.43 1.379q.02.071.05.141a1.5 1.5 0 0 0 1.23.918"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="M10.946 7.432a3.001 3.001 0 1 0-3.514 3.514l.007-.007.985-.984Q8.218 10 8 10a2 2 0 1 1 1.955-1.576l.984-.985z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default PreviewChanges;

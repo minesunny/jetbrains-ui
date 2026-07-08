@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type BuildAutoReloadChangesProps = Omit<
@@ -13,92 +13,36 @@ export type BuildAutoReloadChangesProps = Omit<
   mode?: 'light' | 'dark';
 };
 
-const BuildAutoReloadChangesLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5.5a.5.5 0 0 0-1 0v2a.5.5 0 0 0 .146.354l1.415 1.414a.5.5 0 0 0 .707-.707L13 12.293z"
-      fill="#4682FA"
-    />
-    <path
-      d="M8 3a5 5 0 0 0-5 5v.293l1.146-1.146a.5.5 0 0 1 .708.707L2.5 10.207.146 7.854a.5.5 0 0 1 .708-.707L2 8.293V8a6 6 0 0 1 9.273-5.03.5.5 0 1 1-.546.838A4.97 4.97 0 0 0 8 3M8 13a4.97 4.97 0 0 1-2.727-.808.5.5 0 1 0-.546.837 5.97 5.97 0 0 0 3.527.966A4.5 4.5 0 0 1 8.027 13zM12.703 8.004a4.6 4.6 0 0 0-1.623.225.5.5 0 0 1 .066-.083L13.5 5.793l2.354 2.353a.5.5 0 0 1-.707.707L14 7.707V8q0 .128-.005.254A4.5 4.5 0 0 0 13 8.027v-.32z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const BuildAutoReloadChangesDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5.5a.5.5 0 0 0-1 0v2a.5.5 0 0 0 .146.354l1.415 1.414a.5.5 0 0 0 .707-.707L13 12.293z"
-      fill="#548AF7"
-    />
-    <path
-      d="M8 3a5 5 0 0 0-5 5v.293l1.146-1.146a.5.5 0 0 1 .708.707L2.5 10.207.146 7.854a.5.5 0 0 1 .708-.707L2 8.293V8a6 6 0 0 1 9.273-5.03.5.5 0 1 1-.546.838A4.97 4.97 0 0 0 8 3M8 13a4.97 4.97 0 0 1-2.727-.808.5.5 0 1 0-.546.837 5.97 5.97 0 0 0 3.527.966A4.5 4.5 0 0 1 8.027 13zM12.703 8.004a4.6 4.6 0 0 0-1.623.225.5.5 0 0 1 .066-.083L13.5 5.793l2.354 2.353a.5.5 0 0 1-.707.707L14 7.707V8q0 .128-.005.254A4.5 4.5 0 0 0 13 8.027v-.32z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const BuildAutoReloadChanges: FC<BuildAutoReloadChangesProps> = ({
+export const BuildAutoReloadChanges = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? BuildAutoReloadChangesLight : BuildAutoReloadChangesDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: BuildAutoReloadChangesProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5.5a.5.5 0 0 0-1 0v2a.5.5 0 0 0 .146.354l1.415 1.414a.5.5 0 0 0 .707-.707L13 12.293z"
+      className="fill-[#4682FA] dark:fill-[#548AF7]"
     />
-  );
-};
+    <path
+      d="M8 3a5 5 0 0 0-5 5v.293l1.146-1.146a.5.5 0 0 1 .708.707L2.5 10.207.146 7.854a.5.5 0 0 1 .708-.707L2 8.293V8a6 6 0 0 1 9.273-5.03.5.5 0 1 1-.546.838A4.97 4.97 0 0 0 8 3M8 13a4.97 4.97 0 0 1-2.727-.808.5.5 0 1 0-.546.837 5.97 5.97 0 0 0 3.527.966A4.5 4.5 0 0 1 8.027 13zM12.703 8.004a4.6 4.6 0 0 0-1.623.225.5.5 0 0 1 .066-.083L13.5 5.793l2.354 2.353a.5.5 0 0 1-.707.707L14 7.707V8q0 .128-.005.254A4.5 4.5 0 0 0 13 8.027v-.32z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default BuildAutoReloadChanges;

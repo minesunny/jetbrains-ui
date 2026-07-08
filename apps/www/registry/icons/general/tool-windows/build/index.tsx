@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type BuildProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,89 +10,36 @@ export type BuildProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const BuildLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M3.6 1.5h-2v3.2h2l.8-.4h1.2l1 .8h2.2l1.6-1.2c1.2 0 2 0 4 1.4-1.2-3.8-3.6-3.8-4.8-3.8h-3l-1 .4H4.4z"
-      stroke="#6C707E"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M6 14.5h3.4V9.426a5 5 0 0 0-.404-1.97L8.8 7V5H6.6v2l-.196.457A5 5 0 0 0 6 9.427z"
-      stroke="#6C707E"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const BuildDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M3.6 1.5h-2v3.2h2l.8-.4h1.2l1 .8h2.2l1.6-1.2c1.2 0 2 0 4 1.4-1.2-3.8-3.6-3.8-4.8-3.8h-3l-1 .4H4.4z"
-      stroke="#CED0D6"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M6 14.5h3.4V9.426a5 5 0 0 0-.404-1.97L8.8 7V5H6.6v2l-.196.457A5 5 0 0 0 6 9.427z"
-      stroke="#CED0D6"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-export const Build: FC<BuildProps> = ({
+export const Build = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? BuildLight : BuildDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: BuildProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      strokeLinejoin="round"
+      d="M3.6 1.5h-2v3.2h2l.8-.4h1.2l1 .8h2.2l1.6-1.2c1.2 0 2 0 4 1.4-1.2-3.8-3.6-3.8-4.8-3.8h-3l-1 .4H4.4z"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
-  );
-};
+    <path
+      strokeLinejoin="round"
+      d="M6 14.5h3.4V9.426a5 5 0 0 0-.404-1.97L8.8 7V5H6.6v2l-.196.457A5 5 0 0 0 6 9.427z"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default Build;

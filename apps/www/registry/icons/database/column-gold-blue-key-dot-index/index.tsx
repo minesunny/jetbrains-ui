@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type ColumnGoldBlueKeyDotIndexProps = Omit<
@@ -13,134 +13,56 @@ export type ColumnGoldBlueKeyDotIndexProps = Omit<
   mode?: 'light' | 'dark';
 };
 
-const ColumnGoldBlueKeyDotIndexLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2 4a1 1 0 0 1 1-1h2v4.05a3.49 3.49 0 0 0-.885 3.344A3.5 3.5 0 0 0 2 10.035z"
-      fill="#EDF3FF"
-    />
-    <path
-      d="M6 3V2h7a2 2 0 0 1 2 2v2.337a3.5 3.5 0 0 0-1-.302V4a1 1 0 0 0-1-1z"
-      fill="#6C707E"
-    />
-    <path
-      d="M5 3H3a1 1 0 0 0-1 1v6.035c-.353.05-.69.154-1 .302V4a2 2 0 0 1 2-2h3v4.337c-.375.178-.713.42-1 .714z"
-      fill="#3574F0"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1H8zM9 9.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-      fill="#3574F0"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M14 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1h-2zm1-2.45a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-      fill="#E66D17"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M5 13.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m-1 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const ColumnGoldBlueKeyDotIndexDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2 4a1 1 0 0 1 1-1h2v4.05a3.49 3.49 0 0 0-.885 3.344A3.5 3.5 0 0 0 2 10.035z"
-      fill="#25324D"
-    />
-    <path
-      d="M6 3V2h7a2 2 0 0 1 2 2v2.337a3.5 3.5 0 0 0-1-.302V4a1 1 0 0 0-1-1z"
-      fill="#CED0D6"
-    />
-    <path
-      d="M5 3H3a1 1 0 0 0-1 1v6.035c-.353.05-.69.154-1 .302V4a2 2 0 0 1 2-2h3v4.337c-.375.178-.713.42-1 .714z"
-      fill="#548AF7"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1H8zM9 9.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-      fill="#548AF7"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M14 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1h-2zm1-2.45a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-      fill="#F2C55C"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M5 13.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m-1 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const ColumnGoldBlueKeyDotIndex: FC<ColumnGoldBlueKeyDotIndexProps> = ({
+export const ColumnGoldBlueKeyDotIndex = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light'
-      ? ColumnGoldBlueKeyDotIndexLight
-      : ColumnGoldBlueKeyDotIndexDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: ColumnGoldBlueKeyDotIndexProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M2 4a1 1 0 0 1 1-1h2v4.05a3.49 3.49 0 0 0-.885 3.344A3.5 3.5 0 0 0 2 10.035z"
+      className="fill-[#EDF3FF] dark:fill-[#25324D]"
     />
-  );
-};
+    <path
+      d="M6 3V2h7a2 2 0 0 1 2 2v2.337a3.5 3.5 0 0 0-1-.302V4a1 1 0 0 0-1-1z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="M5 3H3a1 1 0 0 0-1 1v6.035c-.353.05-.69.154-1 .302V4a2 2 0 0 1 2-2h3v4.337c-.375.178-.713.42-1 .714z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1H8zM9 9.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M14 11.95a2.5 2.5 0 1 0-1 0V16h1v-1h2v-1h-2zm1-2.45a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+      className="fill-[#E66D17] dark:fill-[#F2C55C]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M5 13.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m-1 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default ColumnGoldBlueKeyDotIndex;

@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type EvaluateExpressionProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,88 +10,25 @@ export type EvaluateExpressionProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const EvaluateExpressionLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <rect x={2.5} y={2.5} width={11} height={11} rx={1.5} stroke="#6C707E" />
-    <rect x={4.5} y={4.5} width={7} height={2} rx={0.5} stroke="#6C707E" />
-    <rect x={4.3} y={8} width={1.4} height={1.4} rx={0.7} fill="#6C707E" />
-    <rect x={7.3} y={8} width={1.4} height={1.4} rx={0.7} fill="#6C707E" />
-    <rect x={10.3} y={8} width={1.4} height={1.4} rx={0.7} fill="#6C707E" />
-    <rect x={4.3} y={10.6} width={1.4} height={1.4} rx={0.7} fill="#6C707E" />
-    <rect x={7.3} y={10.6} width={1.4} height={1.4} rx={0.7} fill="#6C707E" />
-    <rect x={10.3} y={10.6} width={1.4} height={1.4} rx={0.7} fill="#6C707E" />
-  </svg>
-);
-
-const EvaluateExpressionDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <rect x={2.5} y={2.5} width={11} height={11} rx={1.5} stroke="#CED0D6" />
-    <rect x={4.5} y={4.5} width={7} height={2} rx={0.5} stroke="#CED0D6" />
-    <rect x={4.3} y={8} width={1.4} height={1.4} rx={0.7} fill="#CED0D6" />
-    <rect x={7.3} y={8} width={1.4} height={1.4} rx={0.7} fill="#CED0D6" />
-    <rect x={10.3} y={8} width={1.4} height={1.4} rx={0.7} fill="#CED0D6" />
-    <rect x={4.3} y={10.6} width={1.4} height={1.4} rx={0.7} fill="#CED0D6" />
-    <rect x={7.3} y={10.6} width={1.4} height={1.4} rx={0.7} fill="#CED0D6" />
-    <rect x={10.3} y={10.6} width={1.4} height={1.4} rx={0.7} fill="#CED0D6" />
-  </svg>
-);
-
-export const EvaluateExpression: FC<EvaluateExpressionProps> = ({
+export const EvaluateExpression = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? EvaluateExpressionLight : EvaluateExpressionDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
-    />
-  );
-};
+}: EvaluateExpressionProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  ></svg>
+);
 
 export default EvaluateExpression;

@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type TestRunnerWatchProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,116 +10,48 @@ export type TestRunnerWatchProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const TestRunnerWatchLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
-      fill="#55A76A"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
-      fill="#E55765"
-    />
-    <path
-      d="M7.006 11.918C4.74 11.548 2.655 9.965 2 8c.75-2.25 3.375-4 6-4s5.25 1.75 6 4a4.9 4.9 0 0 1-.698 1.333 1.37 1.37 0 0 0-1.016-.326c.267-.316.485-.655.642-1.007C12.194 6.353 10.122 5 8 5S3.806 6.353 3.072 8c.73 1.637 2.78 2.983 4.888 3z"
-      fill="#6C707E"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const TestRunnerWatchDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
-      fill="#57965C"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
-      fill="#DB5C5C"
-    />
-    <path
-      d="M7.006 11.918C4.74 11.548 2.655 9.965 2 8c.75-2.25 3.375-4 6-4s5.25 1.75 6 4a4.9 4.9 0 0 1-.698 1.333 1.37 1.37 0 0 0-1.016-.326c.267-.316.485-.655.642-1.007C12.194 6.353 10.122 5 8 5S3.806 6.353 3.072 8c.73 1.637 2.78 2.983 4.888 3z"
-      fill="#CED0D6"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const TestRunnerWatch: FC<TestRunnerWatchProps> = ({
+export const TestRunnerWatch = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? TestRunnerWatchLight : TestRunnerWatchDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: TestRunnerWatchProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
+      className="fill-[#55A76A] dark:fill-[#57965C]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
+      className="fill-[#E55765] dark:fill-[#DB5C5C]"
+    />
+    <path
+      d="M7.006 11.918C4.74 11.548 2.655 9.965 2 8c.75-2.25 3.375-4 6-4s5.25 1.75 6 4a4.9 4.9 0 0 1-.698 1.333 1.37 1.37 0 0 0-1.016-.326c.267-.316.485-.655.642-1.007C12.194 6.353 10.122 5 8 5S3.806 6.353 3.072 8c.73 1.637 2.78 2.983 4.888 3z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0-1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default TestRunnerWatch;

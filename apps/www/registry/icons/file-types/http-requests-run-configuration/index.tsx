@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type HttpRequestsRunConfigurationProps = Omit<
@@ -13,114 +13,48 @@ export type HttpRequestsRunConfigurationProps = Omit<
   mode?: 'light' | 'dark';
 };
 
-const HttpRequestsRunConfigurationLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
-      fill="#55A76A"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
-      fill="#E55765"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 10.962V4h1.774q.762 0 1.252.29.497.288.735.873.24.585.239 1.471 0 .894-.245 1.478a1.74 1.74 0 0 1-.763.889h-.41a1.36 1.36 0 0 0-.82.28h-.5940000000000001v.558zm1.761-2.74q.535 0 .768-.38.24-.386.239-1.208 0-.81-.239-1.188-.232-.386-.768-.386h-.593v3.161zM6.784 12.155 5.34 4.005H3.811L2.25 13h1.22l.34-2.345h1.575L5.745 13H6.5c0-.298.095-.597.284-.845M4.66 5.932l.574 3.733h-1.28l.54-3.733.083-.597z"
-      fill="#3574F0"
-    />
-    <path d="M14 10V4.004h-1v5.13q.196.094.37.26z" fill="#3574F0" />
-  </svg>
-);
-
-const HttpRequestsRunConfigurationDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
-      fill="#57965C"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
-      fill="#DB5C5C"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8 10.962V4h1.774q.762 0 1.252.29.497.288.735.873.24.585.239 1.471 0 .894-.245 1.478a1.74 1.74 0 0 1-.763.889h-.41a1.36 1.36 0 0 0-.82.28h-.5940000000000001v.558zm1.761-2.74q.535 0 .768-.38.24-.386.239-1.208 0-.81-.239-1.188-.232-.386-.768-.386h-.593v3.161zM6.784 12.155 5.34 4.005H3.811L2.25 13h1.22l.34-2.345h1.575L5.745 13H6.5c0-.298.095-.597.284-.845M4.66 5.932l.574 3.733h-1.28l.54-3.733.083-.597z"
-      fill="#548AF7"
-    />
-    <path d="M14 10V4.004h-1v5.13q.196.094.37.26z" fill="#548AF7" />
-  </svg>
-);
-
-export const HttpRequestsRunConfiguration: FC<
-  HttpRequestsRunConfigurationProps
-> = ({
+export const HttpRequestsRunConfiguration = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light'
-      ? HttpRequestsRunConfigurationLight
-      : HttpRequestsRunConfigurationDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: HttpRequestsRunConfigurationProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M15.38 12.712a.4.4 0 0 1 0 .576l-2.703 2.6a.4.4 0 0 1-.677-.289v-5.195a.4.4 0 0 1 .677-.289z"
+      className="fill-[#55A76A] dark:fill-[#57965C]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M7.623 13.288a.4.4 0 0 1 0-.576l2.699-2.596a.4.4 0 0 1 .677.289v5.194a.4.4 0 0 1-.678.288z"
+      className="fill-[#E55765] dark:fill-[#DB5C5C]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8 10.962V4h1.774q.762 0 1.252.29.497.288.735.873.24.585.239 1.471 0 .894-.245 1.478a1.74 1.74 0 0 1-.763.889h-.41a1.36 1.36 0 0 0-.82.28h-.5940000000000001v.558zm1.761-2.74q.535 0 .768-.38.24-.386.239-1.208 0-.81-.239-1.188-.232-.386-.768-.386h-.593v3.161zM6.784 12.155 5.34 4.005H3.811L2.25 13h1.22l.34-2.345h1.575L5.745 13H6.5c0-.298.095-.597.284-.845M4.66 5.932l.574 3.733h-1.28l.54-3.733.083-.597z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      d="M14 10V4.004h-1v5.13q.196.094.37.26z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+  </svg>
+);
 
 export default HttpRequestsRunConfiguration;

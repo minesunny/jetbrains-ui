@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type PandasProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,87 +10,25 @@ export type PandasProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const PandasLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <rect x={11} y={1} width={2} height={10} rx={0.5} fill="#130754" />
-    <rect x={2} y={5} width={2} height={10} rx={0.5} fill="#130754" />
-    <rect x={5} y={1} width={2} height={4} rx={0.5} fill="#130754" />
-    <rect x={5} y={9} width={2} height={4} rx={0.5} fill="#130754" />
-    <rect x={5} y={6} width={2} height={2} rx={0.5} fill="#FFCA00" />
-    <rect x={8} y={3} width={2} height={4} rx={0.5} fill="#130754" />
-    <rect x={8} y={8} width={2} height={2} rx={0.5} fill="#E70488" />
-    <rect x={8} y={11} width={2} height={4} rx={0.5} fill="#130754" />
-  </svg>
-);
-
-const PandasDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <rect x={11} y={1} width={2} height={10} rx={0.5} fill="#fff" />
-    <rect x={2} y={5} width={2} height={10} rx={0.5} fill="#fff" />
-    <rect x={5} y={1} width={2} height={4} rx={0.5} fill="#fff" />
-    <rect x={5} y={9} width={2} height={4} rx={0.5} fill="#fff" />
-    <rect x={5} y={6} width={2} height={2} rx={0.5} fill="#FFCA00" />
-    <rect x={8} y={3} width={2} height={4} rx={0.5} fill="#fff" />
-    <rect x={8} y={8} width={2} height={2} rx={0.5} fill="#E70488" />
-    <rect x={8} y={11} width={2} height={4} rx={0.5} fill="#fff" />
-  </svg>
-);
-
-export const Pandas: FC<PandasProps> = ({
+export const Pandas = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? PandasLight : PandasDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
-    />
-  );
-};
+}: PandasProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  ></svg>
+);
 
 export default Pandas;

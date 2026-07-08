@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type ShellProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,89 +10,31 @@ export type ShellProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const ShellLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <rect
-      x={1.5}
-      y={2.5}
-      width={13}
-      height={11}
-      rx={1.5}
-      fill="#EBECF0"
-      stroke="#6C707E"
-    />
-    <path d="m4 6 2 2-2 2M7.5 10.5h4" stroke="#6C707E" strokeLinecap="round" />
-  </svg>
-);
-
-const ShellDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <rect
-      x={1.5}
-      y={2.5}
-      width={13}
-      height={11}
-      rx={1.5}
-      fill="#43454A"
-      stroke="#CED0D6"
-    />
-    <path d="m4 6 2 2-2 2M7.5 10.5h4" stroke="#CED0D6" strokeLinecap="round" />
-  </svg>
-);
-
-export const Shell: FC<ShellProps> = ({
+export const Shell = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? ShellLight : ShellDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: ShellProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      strokeLinecap="round"
+      d="m4 6 2 2-2 2M7.5 10.5h4"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default Shell;

@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type ExtAnnotationProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,80 +10,30 @@ export type ExtAnnotationProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const ExtAnnotationLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 14 14"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M8.73 4.385v.974H8.7c-.345-.669-.984-1.054-1.829-1.054-1.488 0-2.607 1.174-2.607 2.735s1.119 2.736 2.607 2.736c.94 0 1.717-.437 2.132-1.122.439.682 1.257 1.098 2.286 1.098C12.922 9.752 14 8.602 14 6.92 14 3.114 10.854 0 7 0S0 3.186 0 7.08C0 10.886 3.146 14 7 14c1.85 0 3.516-.764 4.433-1.593l-.724-.797A5.63 5.63 0 0 1 7 12.994c-3.299 0-5.994-2.663-5.994-5.914C1.006 3.741 3.7 1.006 7 1.006s5.994 2.663 5.994 5.914c0 1.11-.668 1.866-1.705 1.866-.942 0-1.634-.595-1.634-1.464V4.385zM6.96 8.891c-.966 0-1.69-.797-1.69-1.85 0-1.055.724-1.851 1.69-1.851.965 0 1.69.796 1.69 1.85s-.725 1.85-1.69 1.85"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const ExtAnnotationDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 14 14"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M8.73 4.385v.974H8.7c-.345-.669-.984-1.054-1.829-1.054-1.488 0-2.607 1.174-2.607 2.735s1.119 2.736 2.607 2.736c.94 0 1.717-.437 2.132-1.122.439.682 1.257 1.098 2.286 1.098C12.922 9.752 14 8.602 14 6.92 14 3.114 10.854 0 7 0S0 3.186 0 7.08C0 10.886 3.146 14 7 14c1.85 0 3.516-.764 4.433-1.593l-.724-.797A5.63 5.63 0 0 1 7 12.994c-3.299 0-5.994-2.663-5.994-5.914C1.006 3.741 3.7 1.006 7 1.006s5.994 2.663 5.994 5.914c0 1.11-.668 1.866-1.705 1.866-.942 0-1.634-.595-1.634-1.464V4.385zM6.96 8.891c-.966 0-1.69-.797-1.69-1.85 0-1.055.724-1.851 1.69-1.851.965 0 1.69.796 1.69 1.85s-.725 1.85-1.69 1.85"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const ExtAnnotation: FC<ExtAnnotationProps> = ({
+export const ExtAnnotation = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? ExtAnnotationLight : ExtAnnotationDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: ExtAnnotationProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M8.73 4.385v.974H8.7c-.345-.669-.984-1.054-1.829-1.054-1.488 0-2.607 1.174-2.607 2.735s1.119 2.736 2.607 2.736c.94 0 1.717-.437 2.132-1.122.439.682 1.257 1.098 2.286 1.098C12.922 9.752 14 8.602 14 6.92 14 3.114 10.854 0 7 0S0 3.186 0 7.08C0 10.886 3.146 14 7 14c1.85 0 3.516-.764 4.433-1.593l-.724-.797A5.63 5.63 0 0 1 7 12.994c-3.299 0-5.994-2.663-5.994-5.914C1.006 3.741 3.7 1.006 7 1.006s5.994 2.663 5.994 5.914c0 1.11-.668 1.866-1.705 1.866-.942 0-1.634-.595-1.634-1.464V4.385zM6.96 8.891c-.966 0-1.69-.797-1.69-1.85 0-1.055.724-1.851 1.69-1.851.965 0 1.69.796 1.69 1.85s-.725 1.85-1.69 1.85"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default ExtAnnotation;

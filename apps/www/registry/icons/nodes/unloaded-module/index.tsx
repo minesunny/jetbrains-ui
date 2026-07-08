@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type UnloadedModuleProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,114 +10,38 @@ export type UnloadedModuleProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const UnloadedModuleLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v2.17c-.313-.11-.65-.17-1-.17h-3a3 3 0 0 0-3 3v3H2.75C1.784 14 1 13.164 1 12.133z"
-      fill="#FFF4EB"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="m7.803 4.717.29.283H13a1 1 0 0 1 1 1v2c.35 0 .687.06 1 .17V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14H8v-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867h3.288z"
-      fill="#E66D17"
-    />
-    <rect
-      x={9.5}
-      y={9.5}
-      width={6}
-      height={6}
-      rx={1.5}
-      fill="#EDF3FF"
-      stroke="#3574F0"
-    />
-  </svg>
-);
-
-const UnloadedModuleDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v2.17c-.313-.11-.65-.17-1-.17h-3a3 3 0 0 0-3 3v3H2.75C1.784 14 1 13.164 1 12.133z"
-      fill="#45322B"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="m7.803 4.717.29.283H13a1 1 0 0 1 1 1v2c.35 0 .687.06 1 .17V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14H8v-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867h3.288z"
-      fill="#C77D55"
-    />
-    <rect
-      x={9.5}
-      y={9.5}
-      width={6}
-      height={6}
-      rx={1.5}
-      fill="#25324D"
-      stroke="#548AF7"
-    />
-  </svg>
-);
-
-export const UnloadedModule: FC<UnloadedModuleProps> = ({
+export const UnloadedModule = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? UnloadedModuleLight : UnloadedModuleDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: UnloadedModuleProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1 3.867C1 2.836 1.784 2 2.75 2h3.288a1 1 0 0 1 .698.283L8.5 4H13a2 2 0 0 1 2 2v2.17c-.313-.11-.65-.17-1-.17h-3a3 3 0 0 0-3 3v3H2.75C1.784 14 1 13.164 1 12.133z"
+      className="fill-[#FFF4EB] dark:fill-[#45322B]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="m7.803 4.717.29.283H13a1 1 0 0 1 1 1v2c.35 0 .687.06 1 .17V6a2 2 0 0 0-2-2H8.5L6.736 2.283A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14H8v-1H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867h3.288z"
+      className="fill-[#E66D17] dark:fill-[#C77D55]"
+    />
+  </svg>
+);
 
 export default UnloadedModule;

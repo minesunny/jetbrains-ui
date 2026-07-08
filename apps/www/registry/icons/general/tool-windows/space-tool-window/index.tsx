@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type SpaceToolWindowProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,82 +10,31 @@ export type SpaceToolWindowProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const SpaceToolWindowLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2.783 1.552c2.607-.29 8.43.521 11.558 5.388M2.783 1.552c1.738.58 4.953 2.78 6.691 5.388M2.783 1.552C.784 5.636 1.653 11.719 3.826 14.5M14.34 6.94c-1.825 5.214-7.474 7.56-10.515 7.56M14.34 6.94H9.474M3.826 14.5c2.462-1.303 5.214-4.519 5.648-7.56"
-      stroke="#6C707E"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const SpaceToolWindowDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M2.783 1.552c2.607-.29 8.43.521 11.558 5.388M2.783 1.552c1.738.58 4.953 2.78 6.691 5.388M2.783 1.552C.784 5.636 1.653 11.719 3.826 14.5M14.34 6.94c-1.825 5.214-7.474 7.56-10.515 7.56M14.34 6.94H9.474M3.826 14.5c2.462-1.303 5.214-4.519 5.648-7.56"
-      stroke="#CED0D6"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-export const SpaceToolWindow: FC<SpaceToolWindowProps> = ({
+export const SpaceToolWindow = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? SpaceToolWindowLight : SpaceToolWindowDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: SpaceToolWindowProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      strokeLinejoin="round"
+      d="M2.783 1.552c2.607-.29 8.43.521 11.558 5.388M2.783 1.552c1.738.58 4.953 2.78 6.691 5.388M2.783 1.552C.784 5.636 1.653 11.719 3.826 14.5M14.34 6.94c-1.825 5.214-7.474 7.56-10.515 7.56M14.34 6.94H9.474M3.826 14.5c2.462-1.303 5.214-4.519 5.648-7.56"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
 
 export default SpaceToolWindow;

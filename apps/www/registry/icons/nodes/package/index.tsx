@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type PackageProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,95 +10,38 @@ export type PackageProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const PackageLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v6.133C15 13.164 14.269 14 13.367 14H2.633C1.731 14 1 13.164 1 12.133zM6 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
-      fill="#EBECF0"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8.04 5 6.122 3H2.633C2.405 3 2 3.258 2 3.867v8.266c0 .609.405.867.633.867h10.734c.228 0 .633-.258.633-.867V6a1 1 0 0 0-1-1zm.427-1L6.843 2.308A1 1 0 0 0 6.122 2H2.633C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14h10.734c.902 0 1.633-.836 1.633-1.867V6a2 2 0 0 0-2-2zM4 9a2 2 0 1 1 4 0 2 2 0 0 1-4 0m3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const PackageDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v6.133C15 13.164 14.269 14 13.367 14H2.633C1.731 14 1 13.164 1 12.133zM6 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
-      fill="#43454A"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8.04 5 6.122 3H2.633C2.405 3 2 3.258 2 3.867v8.266c0 .609.405.867.633.867h10.734c.228 0 .633-.258.633-.867V6a1 1 0 0 0-1-1zm.427-1L6.843 2.308A1 1 0 0 0 6.122 2H2.633C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14h10.734c.902 0 1.633-.836 1.633-1.867V6a2 2 0 0 0-2-2zM4 9a2 2 0 1 1 4 0 2 2 0 0 1-4 0m3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const Package: FC<PackageProps> = ({
+export const Package = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? PackageLight : PackageDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: PackageProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M1 3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v6.133C15 13.164 14.269 14 13.367 14H2.633C1.731 14 1 13.164 1 12.133zM6 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8.04 5 6.122 3H2.633C2.405 3 2 3.258 2 3.867v8.266c0 .609.405.867.633.867h10.734c.228 0 .633-.258.633-.867V6a1 1 0 0 0-1-1zm.427-1L6.843 2.308A1 1 0 0 0 6.122 2H2.633C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14h10.734c.902 0 1.633-.836 1.633-1.867V6a2 2 0 0 0-2-2zM4 9a2 2 0 1 1 4 0 2 2 0 0 1-4 0m3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default Package;

@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type UpFolderProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,99 +10,40 @@ export type UpFolderProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const UpFolderLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M12.5 9A1.5 1.5 0 0 1 11 7.5V5H8V3.514l-1.264-1.23A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h10.5c.966 0 1.75-.836 1.75-1.867V9z"
-      fill="#EBECF0"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L13 1.707V7.5a.5.5 0 0 1-1 0V1.707L9.854 3.854a.5.5 0 1 1-.708-.708z"
-      fill="#3574F0"
-    />
-    <path
-      d="M14 9v3.133c0 .54-.396.867-.75.867H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867h3.288L8 4.909V3.514l-1.264-1.23A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h10.5c.966 0 1.75-.836 1.75-1.867V9z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const UpFolderDark: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <path
-      d="M12.5 9A1.5 1.5 0 0 1 11 7.5V5H8V3.514l-1.264-1.23A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h10.5c.966 0 1.75-.836 1.75-1.867V9z"
-      fill="#43454A"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L13 1.707V7.5a.5.5 0 0 1-1 0V1.707L9.854 3.854a.5.5 0 1 1-.708-.708z"
-      fill="#548AF7"
-    />
-    <path
-      d="M14 9v3.133c0 .54-.396.867-.75.867H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867h3.288L8 4.909V3.514l-1.264-1.23A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h10.5c.966 0 1.75-.836 1.75-1.867V9z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const UpFolder: FC<UpFolderProps> = ({
+export const UpFolder = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? UpFolderLight : UpFolderDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: UpFolderProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M12.5 9A1.5 1.5 0 0 1 11 7.5V5H8V3.514l-1.264-1.23A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h10.5c.966 0 1.75-.836 1.75-1.867V9z"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
-  );
-};
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L13 1.707V7.5a.5.5 0 0 1-1 0V1.707L9.854 3.854a.5.5 0 1 1-.708-.708z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      d="M14 9v3.133c0 .54-.396.867-.75.867H2.75c-.354 0-.75-.326-.75-.867V3.867c0-.54.396-.867.75-.867h3.288L8 4.909V3.514l-1.264-1.23A1 1 0 0 0 6.038 2H2.75C1.784 2 1 2.836 1 3.867v8.266C1 13.164 1.784 14 2.75 14h10.5c.966 0 1.75-.836 1.75-1.867V9z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
 
 export default UpFolder;

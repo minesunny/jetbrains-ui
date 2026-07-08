@@ -2,7 +2,7 @@
  * Copyright 2000-2024 JetBrains s.r.o. and contributors.
  * Use of this source code is governed by the Apache 2.0 license.
  */
-import type { ComponentProps, FC } from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
 export type MacroProps = Omit<ComponentProps<'svg'>, 'size'> & {
@@ -10,79 +10,30 @@ export type MacroProps = Omit<ComponentProps<'svg'>, 'size'> & {
   mode?: 'light' | 'dark';
 };
 
-const MacroLight: FC<
-  Omit<ComponentProps<'svg'>, 'size'> & { size: number }
-> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <circle cx={8} cy={8} r={6.5} fill="#E7EFFD" stroke="#3574F0" />
-    <path
-      d="M10.0657 5.24573C9.25361 5.24573 8.636 5.6473 8.29593 6.31537C8.00368 5.64257 7.40552 5.24573 6.6071 5.24573C5.84915 5.24573 5.28147 5.60946 4.96189 6.24862V5.37188H4V10.7543H4.99869V7.59001C4.99869 6.68068 5.5138 6.10775 6.32852 6.10775C7.0749 6.10775 7.50591 6.61761 7.50591 7.43758V10.7543H8.49409V7.59001C8.49409 6.68068 9.01971 6.10775 9.82392 6.10775C10.5756 6.10775 11.0013 6.61761 11.0013 7.43758V10.7543H12V7.35874C12 6.07096 11.2168 5.24573 10.0657 5.24573Z"
-      fill="#3574F0"
-    />
-  </svg>
-);
-
-const MacroDark: FC<Omit<ComponentProps<'svg'>, 'size'> & { size: number }> = ({
-  size,
-  className,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    <circle cx={8} cy={8} r={6.5} fill="#25324D" stroke="#548AF7" />
-    <path
-      d="M10.0657 5.24573C9.25361 5.24573 8.636 5.6473 8.29593 6.31537C8.00368 5.64257 7.40552 5.24573 6.6071 5.24573C5.84915 5.24573 5.28147 5.60946 4.96189 6.24862V5.37188H4V10.7543H4.99869V7.59001C4.99869 6.68068 5.5138 6.10775 6.32852 6.10775C7.0749 6.10775 7.50591 6.61761 7.50591 7.43758V10.7543H8.49409V7.59001C8.49409 6.68068 9.01971 6.10775 9.82392 6.10775C10.5756 6.10775 11.0013 6.61761 11.0013 7.43758V10.7543H12V7.35874C12 6.07096 11.2168 5.24573 10.0657 5.24573Z"
-      fill="#548AF7"
-    />
-  </svg>
-);
-
-export const Macro: FC<MacroProps> = ({
+export const Macro = ({
   size = 16,
-  mode = 'light',
+  mode: _mode,
   className,
   'aria-label': ariaLabel,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? MacroLight : MacroDark;
-
-  return (
-    <SvgComponent
-      size={size}
-      className={cn('inline-block shrink-0', className)}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: MacroProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M10.0657 5.24573C9.25361 5.24573 8.636 5.6473 8.29593 6.31537C8.00368 5.64257 7.40552 5.24573 6.6071 5.24573C5.84915 5.24573 5.28147 5.60946 4.96189 6.24862V5.37188H4V10.7543H4.99869V7.59001C4.99869 6.68068 5.5138 6.10775 6.32852 6.10775C7.0749 6.10775 7.50591 6.61761 7.50591 7.43758V10.7543H8.49409V7.59001C8.49409 6.68068 9.01971 6.10775 9.82392 6.10775C10.5756 6.10775 11.0013 6.61761 11.0013 7.43758V10.7543H12V7.35874C12 6.07096 11.2168 5.24573 10.0657 5.24573Z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
     />
-  );
-};
+  </svg>
+);
 
 export default Macro;
