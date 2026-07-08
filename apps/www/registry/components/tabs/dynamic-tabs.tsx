@@ -211,8 +211,12 @@ function resolveMenuItem(
   tab: DynamicTabsProps,
   label: string,
   ctx: {
-    onClose: ((items: DynamicTabsProps | DynamicTabsProps[]) => void) | undefined;
-    onTogglePin: ((item: DynamicTabsProps, pinned: boolean) => void) | undefined;
+    onClose:
+      | ((items: DynamicTabsProps | DynamicTabsProps[]) => void)
+      | undefined;
+    onTogglePin:
+      | ((item: DynamicTabsProps, pinned: boolean) => void)
+      | undefined;
     add: (() => DynamicTabsProps | undefined) | undefined;
     closableLeft: DynamicTabsProps[];
     closableRight: DynamicTabsProps[];
@@ -286,9 +290,7 @@ function DynamicTabsContextMenu({
   const index = items.findIndex((i) => i.id === tab.id);
   const closableLeft = items.slice(0, index).filter((i) => !i.pinned);
   const closableRight = items.slice(index + 1).filter((i) => !i.pinned);
-  const closableOthers = items.filter(
-    (i, idx) => idx !== index && !i.pinned,
-  );
+  const closableOthers = items.filter((i, idx) => idx !== index && !i.pinned);
 
   const resolveCtx = {
     onClose,

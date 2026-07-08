@@ -9,9 +9,7 @@ import {
   CodeEditorStatusBar,
   type EditorTabItem,
 } from '@/registry/components/code-editor';
-import {
-  type DynamicTabsProps,
-} from '@/registry/components/tabs/dynamic-tabs';
+import { type DynamicTabsProps } from '@/registry/components/tabs/dynamic-tabs';
 import { useStorageSessionPool } from '@/registry/components/code-editor/use-session-pool';
 import type { StorageSession } from '@/registry/components/code-editor/storage-session';
 import { EditorContext } from '@/registry/components/code-editor';

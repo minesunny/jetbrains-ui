@@ -57,13 +57,14 @@ export function useStorageSessionPool(): StorageSessionPool {
 
       // Scroll position is managed by VirtualRenderer, restore after layout
       requestAnimationFrame(() => {
-        // ace-builds types are incomplete — setScrollTop/setScrollLeft exist at runtime
-        (editor as unknown as { setScrollTop(v: number): void }).setScrollTop(
-          scrollTop,
-        );
-        (editor as unknown as { setScrollLeft(v: number): void }).setScrollLeft(
-          scrollLeft,
-        );
+        // ace-builds types are incomplete — setScrollTop/setScrollLeft exist
+        // at runtime (real browser) but not in jsdom; guard so tests don't throw.
+        const e = editor as unknown as {
+          setScrollTop?: (v: number) => void;
+          setScrollLeft?: (v: number) => void;
+        };
+        e.setScrollTop?.(scrollTop);
+        e.setScrollLeft?.(scrollLeft);
       });
     },
     [],

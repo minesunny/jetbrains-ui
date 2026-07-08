@@ -4,6 +4,7 @@ import userEvent from '@testing-library/user-event';
 import {
   DynamicTabsList,
   type DynamicTabsProps,
+  type DynamicTabContextMenuProps,
 } from '@/registry/components/tabs/dynamic-tabs';
 
 const fixture: DynamicTabsProps[] = [
@@ -31,7 +32,7 @@ function DynamicTabsTestHarness({
   onClick?: (item: DynamicTabsProps) => void;
   onClose?: (itemOrItems: DynamicTabsProps | DynamicTabsProps[]) => void;
   onTogglePin?: (item: DynamicTabsProps, pinned: boolean) => void;
-  contextMenu?: DynamicTabsProps | null;
+  contextMenu?: DynamicTabContextMenuProps[] | null;
 }) {
   return (
     <DynamicTabsList
@@ -81,9 +82,7 @@ describe('DynamicTabsList', () => {
   it('calls onActive when a tab is clicked', async () => {
     const user = userEvent.setup();
     const onActive = vi.fn();
-    render(
-      <DynamicTabsTestHarness activeTab="main" onActive={onActive} />,
-    );
+    render(<DynamicTabsTestHarness activeTab="main" onActive={onActive} />);
 
     await user.click(screen.getByRole('tab', { name: /app\.tsx/ }));
     expect(onActive).toHaveBeenCalledWith(
