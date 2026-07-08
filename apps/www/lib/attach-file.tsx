@@ -47,7 +47,7 @@ export const attachFile: BuildPageTreeOptions['attachFile'] = (node, file) => {
     node.name = (
       <Badge
         name={node.name}
-        className="bg-gradient-to-br text-pink-600 dark:text-pink-400"
+        className="bg-linear-to-br text-pink-600 dark:text-pink-400"
       >
         alpha
       </Badge>
