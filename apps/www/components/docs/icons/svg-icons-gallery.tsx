@@ -76,6 +76,13 @@ export function SvgIconsGallery({
     );
   }, [icons, searchQuery]);
 
+  // Wrap an icon so it follows the gallery's selectedMode (Tailwind `dark:`)
+  // without affecting surrounding chrome — popup cards and grid cells stay on
+  // the system/site theme, only the icon glyph swaps to dark.
+  const themed = (svg: React.ReactNode) => (
+    <span className={selectedMode === 'dark' ? 'dark' : undefined}>{svg}</span>
+  );
+
   return (
     <div className="not-prose">
       <div className="sticky top-14 z-10 -mx-2 px-2 py-3 bg-fd-background/95 backdrop-blur-sm border-b mb-4">
@@ -134,12 +141,7 @@ export function SvgIconsGallery({
           <p className="text-sm font-medium">No icons found</p>
         </div>
       ) : (
-        <div
-          className={cn(
-            'grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-2',
-            selectedMode === 'dark' && 'dark',
-          )}
-        >
+        <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-2">
           {filteredIcons.map((icon) => {
             const isExpanded = expandedIcon === icon.name;
             const displayName =
@@ -157,7 +159,7 @@ export function SvgIconsGallery({
                   )}
                 >
                   <div className="flex items-center justify-center h-8 mb-1.5">
-                    <SVG name={icon.name} size={selectedSize} />
+                    {themed(<SVG name={icon.name} size={selectedSize} />)}
                   </div>
                   <span
                     className="mt-0.5 block w-full truncate px-1 text-center text-[10px] leading-tight text-fd-muted-foreground"
@@ -170,7 +172,7 @@ export function SvgIconsGallery({
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1.5 z-20 w-80 p-3 bg-fd-card border rounded-xl shadow-lg">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-fd-muted">
-                        <SVG name={icon.name} size="xl" />
+                        {themed(<SVG name={icon.name} size="xl" />)}
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium truncate">
@@ -184,7 +186,7 @@ export function SvgIconsGallery({
                           key={s}
                           className="flex flex-col items-center gap-1"
                         >
-                          <SVG name={icon.name} size={s} />
+                          {themed(<SVG name={icon.name} size={s} />)}
                           <span className="text-[9px] text-fd-muted-foreground">
                             {s}
                           </span>
