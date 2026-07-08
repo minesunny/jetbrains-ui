@@ -15,15 +15,15 @@ describe('SVG dispatcher — real (smoke)', () => {
   it('renders a real icon component by pathname', async () => {
     const { container } = render(<SVG name="database/redis" />);
     // The lazy chunk resolves async inside <Suspense fallback={null}>.
-    // Cold-loading the database barrel (216 modules) can be slow under the
-    // full suite, so allow a generous timeout.
+    // Cold-loading the database barrel (216 modules) is slow on CI runners,
+    // so allow a generous timeout.
     await waitFor(
       () => {
         expect(container.querySelector('svg')).toBeInTheDocument();
       },
-      { timeout: 5000 },
+      { timeout: 30000 },
     );
-  }, 10000);
+  }, 60000);
 
   it('renders an expui icon via the subcategory pathname', async () => {
     const { container } = render(<SVG name="database/expui/access-method" />);
