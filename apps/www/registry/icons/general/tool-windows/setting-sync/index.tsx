@@ -5,7 +5,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export const SettingSync = ({
+export const ToolWindowsSettingSync = ({
   size = 16,
   className,
   'aria-label': ariaLabel,
@@ -38,4 +38,4 @@ export const SettingSync = ({
   </svg>
 );
 
-export default SettingSync;
+export default ToolWindowsSettingSync;

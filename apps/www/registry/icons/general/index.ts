@@ -393,3 +393,18 @@ export { MinimizeSmall } from './windows/minimize-small';
 export { Restore } from './windows/restore';
 export { RestoreInactive } from './windows/restore-inactive';
 export { RestoreSmall } from './windows/restore-small';
+
+export { InlineCopy } from './inline/copy';
+export { InlineRefresh } from './inline/refresh';
+export { ModifiersLocked } from './modifiers/locked';
+export { ObjectBrowserSortAlphabetically } from './object-browser/sort-alphabetically';
+export { ObjectBrowserSortByType } from './object-browser/sort-by-type';
+export { ObjectBrowserSortByUsage } from './object-browser/sort-by-usage';
+export { ObjectBrowserSortByVisibility } from './object-browser/sort-by-visibility';
+export { ToolWindowsBookmarks } from './tool-windows/bookmarks';
+export { ToolWindowsSettingSync } from './tool-windows/setting-sync';
+export { ToolWindowsVcs } from './tool-windows/vcs';
+export { WindowsClose } from './windows/close';
+export { WindowsCloseSmall } from './windows/close-small';
+export { WindowsCollapse } from './windows/collapse';
+export { WindowsHelp } from './windows/help';

@@ -1,6 +1,6 @@
 export { FinalMark } from './final-mark';
 export { JunitTestMark } from './junit-test-mark';
-export { Locked } from './locked';
+export { ModifiersLocked } from './locked';
 export { ProcessMark } from './process-mark';
 export { RunnableMark } from './runnable-mark';
 export { Shared } from './shared';

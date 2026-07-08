@@ -5,7 +5,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export const Collapse = ({
+export const WindowsCollapse = ({
   size = 16,
   className,
   'aria-label': ariaLabel,
@@ -34,4 +34,4 @@ export const Collapse = ({
   </svg>
 );
 
-export default Collapse;
+export default WindowsCollapse;

@@ -1,6 +1,6 @@
 export { Browse } from './browse';
 export { Collapse } from './collapse';
-export { Copy } from './copy';
+export { InlineCopy } from './copy';
 export { ExactWords } from './exact-words';
 export { Expand } from './expand';
 export { FilterHistory } from './filter-history';
@@ -10,7 +10,7 @@ export { InlineSettings } from './inline-settings';
 export { MatchCase } from './match-case';
 export { NewLine } from './new-line';
 export { PreserveCase } from './preserve-case';
-export { Refresh } from './refresh';
+export { InlineRefresh } from './refresh';
 export { Regex } from './regex';
 export { SearchHistory } from './search-history';
 export { SortHistory } from './sort-history';

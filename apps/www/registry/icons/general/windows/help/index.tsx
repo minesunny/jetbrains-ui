@@ -5,7 +5,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export const Help = ({
+export const WindowsHelp = ({
   size = 16,
   className,
   'aria-label': ariaLabel,
@@ -35,4 +35,4 @@ export const Help = ({
   </svg>
 );
 
-export default Help;
+export default WindowsHelp;

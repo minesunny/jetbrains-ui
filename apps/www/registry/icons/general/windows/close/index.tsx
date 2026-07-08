@@ -5,7 +5,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export const Close = ({
+export const WindowsClose = ({
   size = 16,
   className,
   'aria-label': ariaLabel,
@@ -38,4 +38,4 @@ export const Close = ({
   </svg>
 );
 
-export default Close;
+export default WindowsClose;

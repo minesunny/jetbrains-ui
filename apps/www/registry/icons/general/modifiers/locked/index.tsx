@@ -5,7 +5,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export const Locked = ({
+export const ModifiersLocked = ({
   size = 16,
   className,
   'aria-label': ariaLabel,
@@ -35,4 +35,4 @@ export const Locked = ({
   </svg>
 );
 
-export default Locked;
+export default ModifiersLocked;

@@ -1388,7 +1388,7 @@ export const iconRegistry = {
   'file-types/yarn-lock': () =>
     import('./file-types').then((m) => ({ default: m.YarnLock })),
 
-  // general (395)
+  // general (409)
   'general/access-modifiers/access-local': () =>
     import('./general').then((m) => ({ default: m.AccessLocal })),
   'general/access-modifiers/access-private': () =>
@@ -1783,6 +1783,8 @@ export const iconRegistry = {
     import('./general').then((m) => ({ default: m.Browse })),
   'general/inline/collapse': () =>
     import('./general').then((m) => ({ default: m.Collapse })),
+  'general/inline/copy': () =>
+    import('./general').then((m) => ({ default: m.InlineCopy })),
   'general/inline/exact-words': () =>
     import('./general').then((m) => ({ default: m.ExactWords })),
   'general/inline/expand': () =>
@@ -1801,6 +1803,8 @@ export const iconRegistry = {
     import('./general').then((m) => ({ default: m.NewLine })),
   'general/inline/preserve-case': () =>
     import('./general').then((m) => ({ default: m.PreserveCase })),
+  'general/inline/refresh': () =>
+    import('./general').then((m) => ({ default: m.InlineRefresh })),
   'general/inline/regex': () =>
     import('./general').then((m) => ({ default: m.Regex })),
   'general/inline/search-history': () =>
@@ -1815,6 +1819,8 @@ export const iconRegistry = {
     import('./general').then((m) => ({ default: m.FinalMark })),
   'general/modifiers/junit-test-mark': () =>
     import('./general').then((m) => ({ default: m.JunitTestMark })),
+  'general/modifiers/locked': () =>
+    import('./general').then((m) => ({ default: m.ModifiersLocked })),
   'general/modifiers/process-mark': () =>
     import('./general').then((m) => ({ default: m.ProcessMark })),
   'general/modifiers/runnable-mark': () =>
@@ -1851,6 +1857,18 @@ export const iconRegistry = {
     import('./general').then((m) => ({ default: m.ShowLibraryContents })),
   'general/object-browser/show-members': () =>
     import('./general').then((m) => ({ default: m.ShowMembers })),
+  'general/object-browser/sort-alphabetically': () =>
+    import('./general').then((m) => ({
+      default: m.ObjectBrowserSortAlphabetically,
+    })),
+  'general/object-browser/sort-by-type': () =>
+    import('./general').then((m) => ({ default: m.ObjectBrowserSortByType })),
+  'general/object-browser/sort-by-usage': () =>
+    import('./general').then((m) => ({ default: m.ObjectBrowserSortByUsage })),
+  'general/object-browser/sort-by-visibility': () =>
+    import('./general').then((m) => ({
+      default: m.ObjectBrowserSortByVisibility,
+    })),
   'general/progress-bar/pause': () =>
     import('./general').then((m) => ({ default: m.Pause })),
   'general/progress-bar/pause-hovered': () =>
@@ -1919,6 +1937,8 @@ export const iconRegistry = {
     import('./general').then((m) => ({ default: m.AppEngineToolWindow })),
   'general/tool-windows/aws-glue-tool-window': () =>
     import('./general').then((m) => ({ default: m.AwsGlueToolWindow })),
+  'general/tool-windows/bookmarks': () =>
+    import('./general').then((m) => ({ default: m.ToolWindowsBookmarks })),
   'general/tool-windows/build': () =>
     import('./general').then((m) => ({ default: m.Build })),
   'general/tool-windows/build-server-protocol': () =>
@@ -2043,6 +2063,8 @@ export const iconRegistry = {
     import('./general').then((m) => ({ default: m.SciView })),
   'general/tool-windows/services': () =>
     import('./general').then((m) => ({ default: m.Services })),
+  'general/tool-windows/setting-sync': () =>
+    import('./general').then((m) => ({ default: m.ToolWindowsSettingSync })),
   'general/tool-windows/space-tool-window': () =>
     import('./general').then((m) => ({ default: m.SpaceToolWindow })),
   'general/tool-windows/spark': () =>
@@ -2137,6 +2159,8 @@ export const iconRegistry = {
     import('./general').then((m) => ({ default: m.TransferToolWindow })),
   'general/tool-windows/unknown': () =>
     import('./general').then((m) => ({ default: m.Unknown })),
+  'general/tool-windows/vcs': () =>
+    import('./general').then((m) => ({ default: m.ToolWindowsVcs })),
   'general/tool-windows/web': () =>
     import('./general').then((m) => ({ default: m.Web })),
   'general/tool-windows/web-inspector': () =>
@@ -2157,10 +2181,18 @@ export const iconRegistry = {
     import('./general').then((m) => ({ default: m.ShowReadAccess })),
   'general/usages/show-write-access': () =>
     import('./general').then((m) => ({ default: m.ShowWriteAccess })),
+  'general/windows/close': () =>
+    import('./general').then((m) => ({ default: m.WindowsClose })),
   'general/windows/close-hover': () =>
     import('./general').then((m) => ({ default: m.CloseHover })),
   'general/windows/close-inactive': () =>
     import('./general').then((m) => ({ default: m.CloseInactive })),
+  'general/windows/close-small': () =>
+    import('./general').then((m) => ({ default: m.WindowsCloseSmall })),
+  'general/windows/collapse': () =>
+    import('./general').then((m) => ({ default: m.WindowsCollapse })),
+  'general/windows/help': () =>
+    import('./general').then((m) => ({ default: m.WindowsHelp })),
   'general/windows/help-inactive': () =>
     import('./general').then((m) => ({ default: m.HelpInactive })),
   'general/windows/maximize': () =>
@@ -2621,7 +2653,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   body: ['database/body', 'database/expui/body'],
   bold: ['general/editor/bold'],
   bookmark: ['editor-icons/bookmark', 'general/bookmarks/bookmark'],
-  bookmarks: ['general/bookmarks/bookmarks'],
+  bookmarks: ['general/bookmarks/bookmarks', 'general/tool-windows/bookmarks'],
   'bookmarks-list': ['general/bookmarks/bookmarks-list'],
   branch: ['vcs/branch'],
   breakpoint: ['breakpoints/breakpoint'],
@@ -2727,16 +2759,16 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'class-instance': ['database/expui/class-instance'],
   'class-level-watch': ['debugger/class-level-watch'],
   'click-house': ['database/click-house'],
-  close: ['general/general/close'],
+  close: ['general/general/close', 'general/windows/close'],
   'close-hover': ['general/windows/close-hover'],
   'close-inactive': ['general/windows/close-inactive'],
-  'close-small': ['general/general/close-small'],
+  'close-small': ['general/general/close-small', 'general/windows/close-small'],
   'close-small-hovered': ['general/general/close-small-hovered'],
   'cloud-service': ['database/expui/cloud-service'],
   'cockroach-db': ['database/cockroach-db'],
   'code-span': ['general/editor/code-span'],
   coffeescript: ['file-types/coffeescript'],
-  collapse: ['general/inline/collapse'],
+  collapse: ['general/inline/collapse', 'general/windows/collapse'],
   'collapse-all': ['general/general/collapse-all'],
   'collapse-node': ['editor-icons/collapse-node'],
   collation: ['database/collation', 'database/expui/collation'],
@@ -2851,7 +2883,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   contexts: ['file-types/contexts'],
   'contexts-modifier': ['file-types/contexts-modifier'],
   controller: ['nodes/controller'],
-  copy: ['general/general/copy'],
+  copy: ['general/general/copy', 'general/inline/copy'],
   'copy-of-folder': ['nodes/copy-of-folder'],
   couchbase: ['database/couchbase'],
   coverage: ['general/tool-windows/coverage'],
@@ -3081,7 +3113,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   haskell: ['file-types/haskell'],
   'header-level-down': ['general/editor/header-level-down'],
   'header-level-up': ['general/editor/header-level-up'],
-  help: ['general/general/help'],
+  help: ['general/general/help', 'general/windows/help'],
   'help-inactive': ['general/windows/help-inactive'],
   hide: ['general/general/hide'],
   hierarchy: ['general/tool-windows/hierarchy'],
@@ -3272,6 +3304,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'database/expui/locked',
     'database/locked',
     'general/general/locked',
+    'general/modifiers/locked',
   ],
   'log-overlap': ['database/expui/log-overlap'],
   macro: ['database/expui/macro', 'database/macro'],
@@ -3502,7 +3535,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   redoc: ['file-types/redoc'],
   redshift: ['database/redshift'],
   'reformat-code': ['general/general/reformat-code'],
-  refresh: ['general/general/refresh'],
+  refresh: ['general/general/refresh', 'general/inline/refresh'],
   'refresh-materialized-view': [
     'database/expui/refresh-materialized-view',
     'database/refresh-materialized-view',
@@ -3596,7 +3629,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
   servlet: ['nodes/servlet'],
   set: ['database/expui/set', 'database/set'],
   'set-key': ['database/expui/set-key', 'database/set-key'],
-  'setting-sync': ['general/general/setting-sync'],
+  'setting-sync': [
+    'general/general/setting-sync',
+    'general/tool-windows/setting-sync',
+  ],
   settings: ['general/general/settings'],
   shared: ['general/modifiers/shared'],
   'shared-scope': ['nodes/shared-scope'],
@@ -3621,12 +3657,24 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'smart-step-into': ['run/smart-step-into'],
   snowflake: ['database/snowflake'],
   'soft-wrap': ['general/general/soft-wrap'],
-  'sort-alphabetically': ['general/general/sort-alphabetically'],
+  'sort-alphabetically': [
+    'general/general/sort-alphabetically',
+    'general/object-browser/sort-alphabetically',
+  ],
   'sort-by': ['general/general/sort-by'],
   'sort-by-duration': ['general/general/sort-by-duration'],
-  'sort-by-type': ['general/general/sort-by-type'],
-  'sort-by-usage': ['general/general/sort-by-usage'],
-  'sort-by-visibility': ['general/general/sort-by-visibility'],
+  'sort-by-type': [
+    'general/general/sort-by-type',
+    'general/object-browser/sort-by-type',
+  ],
+  'sort-by-usage': [
+    'general/general/sort-by-usage',
+    'general/object-browser/sort-by-usage',
+  ],
+  'sort-by-visibility': [
+    'general/general/sort-by-visibility',
+    'general/object-browser/sort-by-visibility',
+  ],
   'sort-history': ['general/inline/sort-history'],
   'sorted-set': ['database/expui/sorted-set', 'database/sorted-set'],
   'sorted-set-key': [
@@ -3849,7 +3897,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   variable: ['nodes/variable'],
   variables: ['general/inline/variables'],
   'variables-tab': ['debugger/variables-tab'],
-  vcs: ['general/general/vcs', 'vcs/vcs'],
+  vcs: ['general/general/vcs', 'general/tool-windows/vcs', 'vcs/vcs'],
   vertica: ['database/vertica'],
   'view-breakpoints': ['run/view-breakpoints'],
   'view-parameters': [

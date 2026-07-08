@@ -1,9 +1,9 @@
-export { Close } from './close';
+export { WindowsClose } from './close';
 export { CloseHover } from './close-hover';
 export { CloseInactive } from './close-inactive';
-export { CloseSmall } from './close-small';
-export { Collapse } from './collapse';
-export { Help } from './help';
+export { WindowsCloseSmall } from './close-small';
+export { WindowsCollapse } from './collapse';
+export { WindowsHelp } from './help';
 export { HelpInactive } from './help-inactive';
 export { Maximize } from './maximize';
 export { MaximizeInactive } from './maximize-inactive';

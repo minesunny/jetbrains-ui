@@ -5,7 +5,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export const Refresh = ({
+export const InlineRefresh = ({
   size = 16,
   className,
   'aria-label': ariaLabel,
@@ -38,4 +38,4 @@ export const Refresh = ({
   </svg>
 );
 
-export default Refresh;
+export default InlineRefresh;

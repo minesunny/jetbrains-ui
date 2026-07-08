@@ -5,7 +5,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export const SortByType = ({
+export const ObjectBrowserSortByType = ({
   size = 16,
   className,
   'aria-label': ariaLabel,
@@ -38,4 +38,4 @@ export const SortByType = ({
   </svg>
 );
 
-export default SortByType;
+export default ObjectBrowserSortByType;

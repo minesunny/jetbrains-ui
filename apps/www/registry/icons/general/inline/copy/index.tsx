@@ -5,7 +5,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export const Copy = ({
+export const InlineCopy = ({
   size = 16,
   className,
   'aria-label': ariaLabel,
@@ -66,4 +66,4 @@ export const Copy = ({
   </svg>
 );
 
-export default Copy;
+export default InlineCopy;

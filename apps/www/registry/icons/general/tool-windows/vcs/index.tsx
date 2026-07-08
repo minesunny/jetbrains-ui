@@ -5,7 +5,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export const Vcs = ({
+export const ToolWindowsVcs = ({
   size = 16,
   className,
   'aria-label': ariaLabel,
@@ -50,4 +50,4 @@ export const Vcs = ({
   </svg>
 );
 
-export default Vcs;
+export default ToolWindowsVcs;
