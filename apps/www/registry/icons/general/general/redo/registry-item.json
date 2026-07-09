@@ -3,10 +3,7 @@
   "name": "icons-general-general-redo",
   "type": "registry:ui",
   "title": "Redo",
-  "description": "Redo icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Redo icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/redo/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "redo",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

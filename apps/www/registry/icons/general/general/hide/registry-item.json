@@ -3,10 +3,7 @@
   "name": "icons-general-general-hide",
   "type": "registry:ui",
   "title": "Hide",
-  "description": "Hide icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Hide icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/hide/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "hide",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

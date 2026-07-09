@@ -1,104 +1,46 @@
-import type { FC } from 'react';
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
 
-export type OpenTofuProps = IconProps;
-
-const OpenTofuLight: FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title ? <title>{title}</title> : null}
-    <path d="M8.5 7.82 14 5.281V11.2l-5.5 2.522z" fill="#fff" />
-    <path
-      d="M2.693 4.5 8 2.05l5.307 2.45L8 6.95zM7.5 7.82v5.9L2 11.2V5.281z"
-      fill="#E7C200"
-    />
-    <path
-      d="M2.5 8.56v.401l2 .923v-.403c0-.671-.39-1.28-1-1.561a.705.705 0 0 0-1 .64M7 11.039v-.398c0-.671-.39-1.28-1-1.561a.705.705 0 0 0-1 .64v.395z"
-      fill="#0D1A2B"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8.21 1.046a.5.5 0 0 0-.42 0l-6.5 3A.5.5 0 0 0 1 4.5v7.02a.5.5 0 0 0 .292.454l6.5 2.98a.5.5 0 0 0 .416 0l6.5-2.98A.5.5 0 0 0 15 11.52V4.5a.5.5 0 0 0-.29-.454zM2.693 4.5 8 2.05l5.307 2.45L8 6.95zM8.5 7.82 14 5.28V11.2l-5.5 2.522zm-1 0v5.9L2 11.2V5.28z"
-      fill="#0D1A2B"
-    />
-  </svg>
-);
-
-const OpenTofuDark: FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title ? <title>{title}</title> : null}
-    <path d="M8.5 7.82 14 5.281V11.2l-5.5 2.522z" fill="#fff" />
-    <path
-      d="M2.693 4.5 8 2.05l5.307 2.45L8 6.95zM7.5 7.82v5.9L2 11.2V5.281z"
-      fill="#E7C200"
-    />
-    <path
-      d="M2.5 8.56v.401l2 .923v-.403c0-.671-.39-1.28-1-1.561a.705.705 0 0 0-1 .64M7 11.039v-.398c0-.671-.39-1.28-1-1.561a.705.705 0 0 0-1 .64v.395z"
-      fill="#0D1A2B"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M8.21 1.046a.5.5 0 0 0-.42 0l-6.5 3A.5.5 0 0 0 1 4.5v7.02a.5.5 0 0 0 .292.454l6.5 2.98a.5.5 0 0 0 .416 0l6.5-2.98A.5.5 0 0 0 15 11.52V4.5a.5.5 0 0 0-.29-.454zM2.693 4.5 8 2.05l5.307 2.45L8 6.95zM8.5 7.82 14 5.28V11.2l-5.5 2.522zm-1 0v5.9L2 11.2V5.28z"
-      fill="#0D1A2B"
-    />
-  </svg>
-);
-
-export const OpenTofu: FC<OpenTofuProps> = ({
-  size = 'md',
-  mode = 'light',
+export const OpenTofu = ({
+  size = 16,
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? OpenTofuLight : OpenTofuDark;
-
-  return (
-    <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
-      title={title}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path d="M8.5 7.82 14 5.281V11.2l-5.5 2.522z" className="fill-[#fff]" />
+    <path
+      d="M2.693 4.5 8 2.05l5.307 2.45L8 6.95zM7.5 7.82v5.9L2 11.2V5.281z"
+      className="fill-[#E7C200]"
     />
-  );
-};
+    <path
+      d="M2.5 8.56v.401l2 .923v-.403c0-.671-.39-1.28-1-1.561a.705.705 0 0 0-1 .64M7 11.039v-.398c0-.671-.39-1.28-1-1.561a.705.705 0 0 0-1 .64v.395z"
+      className="fill-[#0D1A2B]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M8.21 1.046a.5.5 0 0 0-.42 0l-6.5 3A.5.5 0 0 0 1 4.5v7.02a.5.5 0 0 0 .292.454l6.5 2.98a.5.5 0 0 0 .416 0l6.5-2.98A.5.5 0 0 0 15 11.52V4.5a.5.5 0 0 0-.29-.454zM2.693 4.5 8 2.05l5.307 2.45L8 6.95zM8.5 7.82 14 5.28V11.2l-5.5 2.522zm-1 0v5.9L2 11.2V5.28z"
+      className="fill-[#0D1A2B]"
+    />
+  </svg>
+);
+
+export default OpenTofu;

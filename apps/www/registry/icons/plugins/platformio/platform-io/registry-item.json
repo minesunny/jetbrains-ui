@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Platform Io",
   "description": "Platform Io icon from Plugins Platformio category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/platformio/platform-io/index.tsx",

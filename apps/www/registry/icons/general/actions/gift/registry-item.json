@@ -3,10 +3,7 @@
   "name": "icons-general-actions-gift",
   "type": "registry:ui",
   "title": "Gift",
-  "description": "Gift icon from General Actions category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Gift icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/actions/gift/index.tsx",
@@ -19,7 +16,6 @@
       "gift",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

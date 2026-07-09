@@ -6,11 +6,11 @@ import { getBaseOptions } from '@/app/layout.config';
 import { getSource } from '@/lib/source';
 import { ThemeSwitcher } from '@/components/animate/theme-switcher';
 import { VirtualScrollbar } from '@/components/docs/virtual-scrollbar';
-
-import { SIDEBAR_TABS } from '@/lib/sidebar';
+import { getSidebarTabData } from '@/lib/sidebar';
 import { Nav } from '@/components/docs/nav';
 import { getServerLocale } from '@/lib/i18n/server';
 import type { Locale } from '@/lib/i18n/shared';
+import { ClientDocsLayout } from '@/components/docs/client-layout';
 
 function createDocsLayoutProps(locale: Locale): DocsLayoutProps {
   const baseOptions = getBaseOptions(locale);
@@ -18,9 +18,7 @@ function createDocsLayoutProps(locale: Locale): DocsLayoutProps {
 
   return {
     tree: docsSource.pageTree,
-    sidebar: {
-      tabs: SIDEBAR_TABS,
-    },
+    sidebar: {},
     githubUrl: 'https://github.com/minesunny/jetbrains-ui',
     themeSwitch: {
       component: <ThemeSwitcher />,
@@ -33,21 +31,16 @@ function createDocsLayoutProps(locale: Locale): DocsLayoutProps {
 export default async function Layout({ children }: { children: ReactNode }) {
   const locale = await getServerLocale();
   const docsLayoutProps = createDocsLayoutProps(locale);
+  const tabData = getSidebarTabData(locale);
 
   return (
-    <>
-      <DocsLayout
-        {...docsLayoutProps}
-        sidebar={{
-          component: <DocsSidebar {...docsLayoutProps} />,
-        }}
-        nav={{
-          component: <Nav />,
-        }}
-      >
-        {children}
-      </DocsLayout>
+    <ClientDocsLayout
+      docsLayoutProps={docsLayoutProps}
+      tabData={tabData}
+      locale={locale}
+    >
+      {children}
       <VirtualScrollbar />
-    </>
+    </ClientDocsLayout>
   );
 }

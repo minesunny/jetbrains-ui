@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Class Initializer Kotlin",
   "description": "Class Initializer Kotlin icon from Plugins Kotlin category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kotlin/class-initializer-kotlin/index.tsx",

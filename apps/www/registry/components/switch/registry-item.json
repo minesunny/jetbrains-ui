@@ -7,9 +7,6 @@
   "dependencies": [
     "radix-ui"
   ],
-  "registryDependencies": [
-    "utils"
-  ],
   "files": [
     {
       "path": "registry/components/switch/index.tsx",

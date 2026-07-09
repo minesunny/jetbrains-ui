@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Rbenv Run Anything",
   "description": "Rbenv Run Anything icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/rbenv-run-anything/index.tsx",

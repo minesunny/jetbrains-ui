@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Remote File Systems",
   "description": "Remote File Systems icon from Plugins Bdt category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bdt/remote-file-systems/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Bazel Icons",
   "description": "All 7 icons from the Plugins Bazel category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bazel/index.ts",

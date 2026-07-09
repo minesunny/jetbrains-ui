@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Spark Run",
   "description": "Spark Run icon from Plugins Bdt category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bdt/spark-run/index.tsx",

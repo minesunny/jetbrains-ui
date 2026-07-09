@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Spring Icons",
   "description": "All 41 icons from the Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/index.ts",

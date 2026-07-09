@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Code Assistant Parameter",
   "description": "Code Assistant Parameter icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/code-assistant-parameter/index.tsx",

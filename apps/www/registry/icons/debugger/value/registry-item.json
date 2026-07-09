@@ -3,10 +3,7 @@
   "name": "icons-debugger-value",
   "type": "registry:ui",
   "title": "Value",
-  "description": "Value icon from Debugger category.",
-  "registryDependencies": [
-    "icons-debugger-types"
-  ],
+  "description": "Value icon from debugger category.",
   "files": [
     {
       "path": "registry/icons/debugger/value/index.tsx",

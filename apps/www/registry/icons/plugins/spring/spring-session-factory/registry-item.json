@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Spring Session Factory",
   "description": "Spring Session Factory icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/spring-session-factory/index.tsx",

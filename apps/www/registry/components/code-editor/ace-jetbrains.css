@@ -1,0 +1,384 @@
+/* ==========================================================================
+   Ace Editor — JetBrains Theme
+   Reads from --jb-* CSS design tokens for automatic light/dark adaptation.
+   ========================================================================== */
+
+/* ---------------------------------------------------------------------------
+   Light mode (default)
+   --------------------------------------------------------------------------- */
+
+.ace-jetbrains {
+  background-color: var(--jb-gray-12);
+  color: var(--jb-gray-1);
+  font-family: var(--jb-font-mono);
+  font-size: var(--jb-typography-editor-default-font-size, 13px);
+  line-height: var(--jb-typography-editor-default-line-height, 22px);
+}
+
+.ace-jetbrains .ace_gutter {
+  background: var(--jb-gray-11);
+  color: var(--jb-gray-7);
+}
+
+.ace-jetbrains .ace_gutter-active-line {
+  background: var(--jb-gray-10);
+}
+
+.ace-jetbrains .ace_print-margin {
+  width: 1px;
+  background: var(--jb-gray-9);
+}
+
+.ace-jetbrains .ace_cursor {
+  color: var(--jb-gray-1);
+}
+
+.ace-jetbrains .ace_marker-layer .ace_selection {
+  background: var(--jb-blue-9);
+}
+
+.ace-jetbrains .ace_marker-layer .ace_active-line {
+  background: var(--jb-blue-11);
+}
+
+.ace-jetbrains .ace_marker-layer .ace_selected-word {
+  background: var(--jb-blue-10);
+  border: 1px solid var(--jb-blue-7);
+}
+
+.ace-jetbrains .ace_marker-layer .ace_bracket {
+  border: 1px solid var(--jb-gray-6);
+}
+
+.ace-jetbrains .ace_marker-layer .ace_step {
+  background: var(--jb-yellow-6);
+}
+
+.ace-jetbrains .ace_marker-layer .ace_stack {
+  background: var(--jb-red-5);
+}
+
+.ace-jetbrains .ace_fold {
+  background-color: var(--jb-blue-8);
+}
+
+.ace-jetbrains .ace_invisible {
+  color: var(--jb-gray-8);
+}
+
+/* --- Syntax tokens --- */
+
+.ace-jetbrains .ace_keyword,
+.ace-jetbrains .ace_storage {
+  color: var(--jb-blue-8);
+}
+
+.ace-jetbrains .ace_keyword.ace_operator {
+  color: var(--jb-gray-1);
+}
+
+.ace-jetbrains .ace_constant.ace_language {
+  color: var(--jb-orange-6);
+}
+
+.ace-jetbrains .ace_constant.ace_buildin {
+  color: var(--jb-purple-6);
+}
+
+.ace-jetbrains .ace_constant.ace_library {
+  color: var(--jb-green-6);
+}
+
+.ace-jetbrains .ace_constant.ace_numeric {
+  color: var(--jb-blue-8);
+}
+
+.ace-jetbrains .ace_invalid {
+  background-color: var(--jb-red-5);
+  color: var(--jb-gray-12);
+}
+
+.ace-jetbrains .ace_invalid.ace_deprecated {
+  color: var(--jb-orange-7);
+  text-decoration: line-through;
+}
+
+.ace-jetbrains .ace_support.ace_function {
+  color: var(--jb-yellow-7);
+}
+
+.ace-jetbrains .ace_support.ace_constant {
+  color: var(--jb-green-6);
+}
+
+.ace-jetbrains .ace_support.ace_type,
+.ace-jetbrains .ace_support.ace_class {
+  color: var(--jb-teal-7);
+}
+
+.ace-jetbrains .ace_string {
+  color: var(--jb-green-7);
+}
+
+.ace-jetbrains .ace_string.ace_regex {
+  color: var(--jb-red-6);
+}
+
+.ace-jetbrains .ace_comment {
+  color: var(--jb-gray-8);
+  font-style: italic;
+}
+
+.ace-jetbrains .ace_comment.ace_doc {
+  color: var(--jb-gray-7);
+}
+
+.ace-jetbrains .ace_comment.ace_doc.ace_tag {
+  color: var(--jb-blue-6);
+}
+
+.ace-jetbrains .ace_variable {
+  color: var(--jb-gray-1);
+}
+
+.ace-jetbrains .ace_variable.ace_language {
+  color: var(--jb-orange-6);
+}
+
+.ace-jetbrains .ace_entity.ace_name.ace_function {
+  color: var(--jb-purple-7);
+}
+
+.ace-jetbrains .ace_entity.ace_name.ace_tag {
+  color: var(--jb-blue-8);
+}
+
+.ace-jetbrains .ace_entity.ace_other.ace_attribute-name {
+  color: var(--jb-yellow-7);
+}
+
+.ace-jetbrains .ace_meta.ace_tag {
+  color: var(--jb-blue-8);
+}
+
+.ace-jetbrains .ace_meta.ace_selector {
+  color: var(--jb-blue-8);
+}
+
+.ace-jetbrains .ace_xml-pe {
+  color: var(--jb-gray-6);
+}
+
+.ace-jetbrains .ace_heading {
+  color: var(--jb-blue-8);
+}
+
+.ace-jetbrains .ace_list {
+  color: var(--jb-orange-6);
+}
+
+.ace-jetbrains .ace_block-quote {
+  color: var(--jb-gray-6);
+  font-style: italic;
+}
+
+.ace-jetbrains .ace_bold {
+  font-weight: bold;
+}
+
+.ace-jetbrains .ace_italic {
+  font-style: italic;
+}
+
+.ace-jetbrains .ace_link {
+  color: var(--jb-blue-8);
+  text-decoration: underline;
+}
+
+.ace-jetbrains .ace_markup.ace_underline {
+  text-decoration: underline;
+}
+
+.ace-jetbrains .ace_indent-guide {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;
+}
+
+.ace-jetbrains .ace_indent-guide-active {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAZSURBVHjaYvj///9/hivKyv8BAAAA//8DACLqBhbvk+/eAAAAAElFTkSuQmCC") right repeat-y;
+}
+
+/* ---------------------------------------------------------------------------
+   Dark mode
+   --------------------------------------------------------------------------- */
+
+.dark .ace-jetbrains {
+  background-color: var(--jb-gray-2);
+  color: var(--jb-gray-12);
+}
+
+.dark .ace-jetbrains .ace_gutter {
+  background: var(--jb-gray-3);
+  color: var(--jb-gray-7);
+}
+
+.dark .ace-jetbrains .ace_gutter-active-line {
+  background: var(--jb-gray-4);
+}
+
+.dark .ace-jetbrains .ace_print-margin {
+  background: var(--jb-gray-5);
+}
+
+.dark .ace-jetbrains .ace_cursor {
+  color: var(--jb-gray-12);
+}
+
+.dark .ace-jetbrains .ace_marker-layer .ace_selection {
+  background: var(--jb-blue-4);
+}
+
+.dark .ace-jetbrains .ace_marker-layer .ace_active-line {
+  background: var(--jb-blue-2);
+}
+
+.dark .ace-jetbrains .ace_marker-layer .ace_selected-word {
+  background: var(--jb-blue-3);
+  border-color: var(--jb-blue-5);
+}
+
+.dark .ace-jetbrains .ace_marker-layer .ace_bracket {
+  border-color: var(--jb-gray-6);
+}
+
+.dark .ace-jetbrains .ace_marker-layer .ace_step {
+  background: var(--jb-yellow-8);
+}
+
+.dark .ace-jetbrains .ace_marker-layer .ace_stack {
+  background: var(--jb-red-8);
+}
+
+.dark .ace-jetbrains .ace_fold {
+  background-color: var(--jb-blue-6);
+}
+
+.dark .ace-jetbrains .ace_invisible {
+  color: var(--jb-gray-6);
+}
+
+/* --- Dark syntax tokens --- */
+
+.dark .ace-jetbrains .ace_keyword,
+.dark .ace-jetbrains .ace_storage {
+  color: var(--jb-blue-6);
+}
+
+.dark .ace-jetbrains .ace_keyword.ace_operator {
+  color: var(--jb-gray-12);
+}
+
+.dark .ace-jetbrains .ace_constant.ace_language {
+  color: var(--jb-orange-7);
+}
+
+.dark .ace-jetbrains .ace_constant.ace_buildin {
+  color: var(--jb-purple-7);
+}
+
+.dark .ace-jetbrains .ace_constant.ace_library {
+  color: var(--jb-green-7);
+}
+
+.dark .ace-jetbrains .ace_constant.ace_numeric {
+  color: var(--jb-blue-6);
+}
+
+.dark .ace-jetbrains .ace_invalid {
+  background-color: var(--jb-red-8);
+  color: var(--jb-gray-1);
+}
+
+.dark .ace-jetbrains .ace_invalid.ace_deprecated {
+  color: var(--jb-orange-8);
+}
+
+.dark .ace-jetbrains .ace_support.ace_function {
+  color: var(--jb-yellow-7);
+}
+
+.dark .ace-jetbrains .ace_support.ace_constant {
+  color: var(--jb-green-7);
+}
+
+.dark .ace-jetbrains .ace_support.ace_type,
+.dark .ace-jetbrains .ace_support.ace_class {
+  color: var(--jb-teal-6);
+}
+
+.dark .ace-jetbrains .ace_string {
+  color: var(--jb-green-7);
+}
+
+.dark .ace-jetbrains .ace_string.ace_regex {
+  color: var(--jb-red-7);
+}
+
+.dark .ace-jetbrains .ace_comment {
+  color: var(--jb-gray-6);
+}
+
+.dark .ace-jetbrains .ace_comment.ace_doc {
+  color: var(--jb-gray-7);
+}
+
+.dark .ace-jetbrains .ace_comment.ace_doc.ace_tag {
+  color: var(--jb-blue-7);
+}
+
+.dark .ace-jetbrains .ace_variable {
+  color: var(--jb-gray-12);
+}
+
+.dark .ace-jetbrains .ace_variable.ace_language {
+  color: var(--jb-orange-7);
+}
+
+.dark .ace-jetbrains .ace_entity.ace_name.ace_function {
+  color: var(--jb-purple-6);
+}
+
+.dark .ace-jetbrains .ace_entity.ace_name.ace_tag {
+  color: var(--jb-blue-6);
+}
+
+.dark .ace-jetbrains .ace_entity.ace_other.ace_attribute-name {
+  color: var(--jb-yellow-7);
+}
+
+.dark .ace-jetbrains .ace_meta.ace_tag {
+  color: var(--jb-blue-6);
+}
+
+.dark .ace-jetbrains .ace_meta.ace_selector {
+  color: var(--jb-blue-6);
+}
+
+.dark .ace-jetbrains .ace_xml-pe {
+  color: var(--jb-gray-7);
+}
+
+.dark .ace-jetbrains .ace_heading {
+  color: var(--jb-blue-6);
+}
+
+.dark .ace-jetbrains .ace_list {
+  color: var(--jb-orange-7);
+}
+
+.dark .ace-jetbrains .ace_block-quote {
+  color: var(--jb-gray-7);
+}
+
+.dark .ace-jetbrains .ace_link {
+  color: var(--jb-blue-6);
+}

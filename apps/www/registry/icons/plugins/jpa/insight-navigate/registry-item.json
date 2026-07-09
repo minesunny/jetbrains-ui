@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Insight Navigate",
   "description": "Insight Navigate icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/insight-navigate/index.tsx",

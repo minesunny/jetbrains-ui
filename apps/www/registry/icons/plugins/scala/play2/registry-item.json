@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Play2",
   "description": "Play2 icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/play2/index.tsx",

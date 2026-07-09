@@ -1,4 +1,6 @@
-import * as React from 'react';
+'use client';
+
+import { useState } from 'react';
 
 import { Button } from '@/registry/components/button';
 import {
@@ -18,8 +20,8 @@ import {
 } from '@/registry/components/context-menu';
 
 export default function ContextMenuDemo() {
-  const [showLineNumbers, setShowLineNumbers] = React.useState(true);
-  const [indentStyle, setIndentStyle] = React.useState('spaces');
+  const [showLineNumbers, setShowLineNumbers] = useState(true);
+  const [indentStyle, setIndentStyle] = useState('spaces');
 
   return (
     <ContextMenu>

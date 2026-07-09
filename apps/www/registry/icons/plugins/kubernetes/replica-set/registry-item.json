@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Replica Set",
   "description": "Replica Set icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/replica-set/index.tsx",

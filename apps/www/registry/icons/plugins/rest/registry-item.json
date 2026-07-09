@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Rest Icons",
   "description": "All 1 icons from the Plugins Rest category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/rest/index.ts",

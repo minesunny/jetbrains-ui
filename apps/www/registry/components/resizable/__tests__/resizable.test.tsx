@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { type ComponentProps } from 'react';
 import { render, screen } from '@testing-library/react';
 
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '../index';
@@ -18,18 +18,17 @@ afterAll(() => {
 });
 
 function renderResizable(
-  firstPanelProps?: Partial<React.ComponentProps<typeof ResizablePanel>>,
-  secondPanelProps?: Partial<React.ComponentProps<typeof ResizablePanel>>,
-  handleProps?: Partial<React.ComponentProps<typeof ResizableHandle>>,
+  handleProps?: Partial<ComponentProps<typeof ResizableHandle>>,
+  groupProps?: Partial<ComponentProps<typeof ResizablePanelGroup>>,
 ) {
   return render(
     <div style={{ width: 640, height: 320 }}>
-      <ResizablePanelGroup direction="horizontal">
-        <ResizablePanel defaultSize={50} minSize={20} {...firstPanelProps}>
+      <ResizablePanelGroup orientation="horizontal" {...groupProps}>
+        <ResizablePanel defaultSize={50} minSize={20}>
           <div>Panel A</div>
         </ResizablePanel>
         <ResizableHandle {...handleProps} />
-        <ResizablePanel defaultSize={50} minSize={20} {...secondPanelProps}>
+        <ResizablePanel defaultSize={50} minSize={20}>
           <div>Panel B</div>
         </ResizablePanel>
       </ResizablePanelGroup>
@@ -38,64 +37,51 @@ function renderResizable(
 }
 
 describe('Resizable', () => {
-  it('renders panel group, panels, and handle with decoupled style classes', () => {
-    renderResizable(undefined, undefined, { withHandle: true });
+  it('renders panel group, panels, and handle', () => {
+    renderResizable({ withHandle: true });
 
-    expect(
-      screen.getByText('Panel A').closest('[data-slot="resizable-panel"]'),
-    ).toHaveClass('resizable-panel');
+    const group = screen
+      .getByText('Panel A')
+      .closest('[data-slot="resizable-panel-group"]');
+    expect(group).toBeInTheDocument();
+
+    const panel = screen
+      .getByText('Panel A')
+      .closest('[data-slot="resizable-panel"]');
+    expect(panel).toBeInTheDocument();
 
     const handle = screen.getByRole('separator');
     expect(handle).toHaveAttribute('data-slot', 'resizable-handle');
-    expect(handle).toHaveClass('resizable-handle');
     expect(handle).toHaveAttribute('data-with-handle', 'true');
-    expect(handle.querySelector('.resizable-handle__grip')).toBeInTheDocument();
   });
 
-  it('renders panel content directly without the scroll viewport wrapper', () => {
-    renderResizable({ defaultSize: 20, minSize: 20 });
+  it('renders grip when withHandle is true', () => {
+    renderResizable({ withHandle: true });
 
-    expect(
-      screen
-        .getByText('Panel A')
-        .closest('[data-slot="resizable-panel-viewport"]'),
-    ).not.toBeInTheDocument();
+    const handle = screen.getByRole('separator');
+    const grip = handle.querySelector('[class*="rounded"]');
+    expect(grip).toBeInTheDocument();
   });
 
-  it('uses custom handle children instead of the default grip', () => {
-    renderResizable(undefined, undefined, {
+  it('renders custom handle children', () => {
+    renderResizable({
       children: <span>Custom Grip</span>,
       withHandle: true,
     });
 
-    const handle = screen.getByRole('separator');
     expect(screen.getByText('Custom Grip')).toBeInTheDocument();
-    expect(
-      handle.querySelector('.resizable-handle__grip'),
-    ).not.toBeInTheDocument();
   });
 
-  it('does not enable drag-to-collapse when only collapsedSize is provided', () => {
-    renderResizable({ collapsedSize: 0 });
+  it('applies flex-col for vertical orientation', () => {
+    renderResizable(undefined, { orientation: 'vertical' });
 
-    expect(
-      screen.getByText('Panel A').closest('[data-slot="resizable-panel"]'),
-    ).not.toHaveAttribute('data-panel-collapsible');
+    const group = document.querySelector('[data-slot="resizable-panel-group"]');
+    expect(group).toHaveClass('flex-col');
   });
 
-  it('treats collapsedSize={-1} as collapse disabled', () => {
-    renderResizable({ collapsedSize: -1, collapsed: true });
-
-    expect(
-      screen.getByText('Panel A').closest('[data-slot="resizable-panel"]'),
-    ).not.toHaveAttribute('data-panel-collapsible');
-  });
-
-  it('uses 0 as the default collapsedSize', () => {
-    renderResizable({ collapsed: true });
-
-    expect(
-      screen.getByText('Panel A').closest('[data-slot="resizable-panel"]'),
-    ).toHaveAttribute('data-panel-collapsible', 'true');
+  it('sets displayName for all components', () => {
+    expect(ResizablePanelGroup.displayName).toBeDefined();
+    expect(ResizablePanel.displayName).toBeDefined();
+    expect(ResizableHandle.displayName).toBeDefined();
   });
 });

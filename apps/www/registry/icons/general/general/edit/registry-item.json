@@ -3,10 +3,7 @@
   "name": "icons-general-general-edit",
   "type": "registry:ui",
   "title": "Edit",
-  "description": "Edit icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Edit icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/edit/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "edit",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

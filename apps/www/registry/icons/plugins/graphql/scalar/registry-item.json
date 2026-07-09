@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Scalar",
   "description": "Scalar icon from Plugins Graphql category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/graphql/scalar/index.tsx",

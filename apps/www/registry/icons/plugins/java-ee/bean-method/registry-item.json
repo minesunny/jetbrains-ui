@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Bean Method",
   "description": "Bean Method icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/bean-method/index.tsx",

@@ -3,10 +3,7 @@
   "name": "icons-general-general-groups",
   "type": "registry:ui",
   "title": "Groups",
-  "description": "Groups icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Groups icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/groups/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "groups",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

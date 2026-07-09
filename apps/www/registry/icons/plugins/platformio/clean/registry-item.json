@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Clean",
   "description": "Clean icon from Plugins Platformio category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/platformio/clean/index.tsx",

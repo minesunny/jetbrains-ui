@@ -3,10 +3,7 @@
   "name": "icons-general-actions-checked",
   "type": "registry:ui",
   "title": "Checked",
-  "description": "Checked icon from General Actions category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Checked icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/actions/checked/index.tsx",
@@ -19,7 +16,6 @@
       "checked",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

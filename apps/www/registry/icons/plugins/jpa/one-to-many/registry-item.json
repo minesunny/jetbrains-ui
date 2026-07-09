@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "One To Many",
   "description": "One To Many icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/one-to-many/index.tsx",

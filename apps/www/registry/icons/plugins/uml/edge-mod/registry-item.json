@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Edge Mod",
   "description": "Edge Mod icon from Plugins Uml category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/uml/edge-mod/index.tsx",

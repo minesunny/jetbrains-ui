@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Mutation",
   "description": "Mutation icon from Plugins Graphql category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/graphql/mutation/index.tsx",

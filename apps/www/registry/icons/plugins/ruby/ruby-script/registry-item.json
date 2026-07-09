@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Ruby Script",
   "description": "Ruby Script icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/ruby-script/index.tsx",

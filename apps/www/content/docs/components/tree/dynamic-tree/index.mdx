@@ -15,7 +15,7 @@ releaseDate: 2026-03-21
 
 ## Installation
 
-<ComponentInstallation name="tree/dynamic-tree" />
+<ComponentInstallation name="dynamic-tree" />
 
 ## Usage
 
@@ -30,7 +30,6 @@ import { useTree } from '@headless-tree/react';
 import {
   type DynamicTreeItemProps,
   DynamicTree,
-  DynamicTreeItemContextMenu,
   asyncDataLoaderFeature,
   type DynamicTreeItemData,
 } from '@/components/jetbrains-ui/tree/dynamic-tree';
@@ -137,13 +136,71 @@ function Example() {
       }
       items={tree.getItems()}
       item={FileItem}
-      contextMenu={DynamicTreeItemContextMenu}
       width="220px"
       height="160px"
     />
   );
 }
 ```
+
+## Context Menu
+
+Right-clicking any tree item opens a context menu. The default menu is enabled automatically and provides four actions:
+
+| Action         | Folders | Leaves | Implementation                      | Requires Prop |
+| -------------- | ------- | ------ | ----------------------------------- | ------------- |
+| Add            | Yes     | No     | Calls `addItem` prop                | `addItem`     |
+| Refresh        | Yes     | Yes    | Built-in (invalidates data cache)   | -             |
+| Clear Children | Yes     | No     | Built-in (clears cache + collapses) | -             |
+| Delete         | Yes     | Yes    | Calls `deleteItem` prop             | `deleteItem`  |
+
+Actions without a provided handler appear **disabled** in the menu.
+
+### With action handlers
+
+```tsx
+<DynamicTree
+  containerProps={tree.getContainerProps('Tree')}
+  items={tree.getItems()}
+  addItem={(item) => createChildNode(item.getId())}
+  deleteItem={(item) => removeNode(item.getId())}
+/>
+```
+
+### Disable context menu
+
+```tsx
+<DynamicTree contextMenu={null} ... />
+```
+
+### Custom context menu
+
+```tsx
+import {
+  ContextMenuItem,
+  ContextMenuSeparator,
+} from '@/components/jetbrains-ui/context-menu';
+
+<DynamicTree
+  contextMenu={(item, actions) => (
+    <>
+      <ContextMenuItem onSelect={() => actions.refresh(item)}>
+        Refresh
+      </ContextMenuItem>
+      <ContextMenuSeparator />
+      <ContextMenuItem
+        variant="destructive"
+        onSelect={() => actions.delete?.(item)}
+      >
+        Delete
+      </ContextMenuItem>
+    </>
+  )}
+  deleteItem={(item) => removeNode(item.getId())}
+/>;
+```
+
+The render function receives the `ItemInstance` and a `TreeItemActions` object with pre-wired helpers: `actions.refresh(item)`, `actions.clearChildren(item)`, `actions.add?.(item)`, and `actions.delete?.(item)`.
 
 ## Scrolling
 
@@ -153,9 +210,11 @@ function Example() {
 
 - `DynamicTree<TItem>`: presentational layer that renders the tree from `containerProps` and `items`.
 - `asyncDataLoaderFeature`: recommended built-in async feature with refreshable item-data cache.
-- `DynamicTreeItemContextMenu`: built-in item context menu with refresh, clear-children and delete actions.
 - `item`: lets you replace the default `DynamicTreeItem` with your own item component.
-- `contextMenu`: replace the default shared item context menu, or pass `null` to disable it.
+- `contextMenu`: `undefined` for the built-in menu (default), `null` to disable, or a render function `(item, actions) => ReactNode` for a custom menu.
+- `addItem`: callback to add a child item. Called by the default menu's Add action and available via `actions.add` in custom menus.
+- `deleteItem`: callback to delete an item. Called by the default menu's Delete action and available via `actions.delete` in custom menus.
+- `TreeItemActions<TItem>`: type for the actions object passed to the context menu render function.
 - `containerProps` and `items`: provide these directly from your own `@headless-tree` setup.
 - `width` and `height`: constrain the outer scroll area and enable scrolling when content overflows.
 - Data loading, selection and keyboard behavior are defined by your own `@headless-tree` configuration.

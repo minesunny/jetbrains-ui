@@ -17,11 +17,14 @@ describe('CheckboxDemo', () => {
     expect(checkbox).toHaveAttribute('data-state', 'unchecked');
   });
 
-  it('cycles through three states when indeterminate is enabled', async () => {
+  it('cycles through three states when initialState is indeterminate', async () => {
     const user = userEvent.setup();
-    render(<CheckboxDemo state="unchecked" indeterminate />);
+    render(<CheckboxDemo state="indeterminate" />);
     const checkbox = screen.getByRole('checkbox');
 
+    expect(checkbox).toHaveAttribute('data-state', 'indeterminate');
+
+    await user.click(checkbox);
     expect(checkbox).toHaveAttribute('data-state', 'unchecked');
 
     await user.click(checkbox);
@@ -29,16 +32,13 @@ describe('CheckboxDemo', () => {
 
     await user.click(checkbox);
     expect(checkbox).toHaveAttribute('data-state', 'indeterminate');
-
-    await user.click(checkbox);
-    expect(checkbox).toHaveAttribute('data-state', 'unchecked');
   });
 
-  it('normalizes initial indeterminate state to unchecked in two-state mode', () => {
-    render(<CheckboxDemo state="indeterminate" />);
+  it('starts checked when state is checked', () => {
+    render(<CheckboxDemo state="checked" />);
     expect(screen.getByRole('checkbox')).toHaveAttribute(
       'data-state',
-      'unchecked',
+      'checked',
     );
   });
 });

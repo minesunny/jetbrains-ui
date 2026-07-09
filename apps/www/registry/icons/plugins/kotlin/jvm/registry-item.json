@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Jvm",
   "description": "Jvm icon from Plugins Kotlin category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kotlin/jvm/index.tsx",

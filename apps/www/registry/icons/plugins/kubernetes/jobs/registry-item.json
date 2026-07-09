@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Jobs",
   "description": "Jobs icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/jobs/index.tsx",

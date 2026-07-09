@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Warning Point",
   "description": "Warning Point icon from Plugins Dart category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/dart/warning-point/index.tsx",

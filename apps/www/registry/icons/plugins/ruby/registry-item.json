@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Ruby Icons",
   "description": "All 66 icons from the Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/index.ts",

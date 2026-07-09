@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Scheduled Event",
   "description": "Scheduled Event icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/scheduled-event/index.tsx",

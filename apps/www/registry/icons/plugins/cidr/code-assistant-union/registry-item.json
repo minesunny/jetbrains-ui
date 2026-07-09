@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Code Assistant Union",
   "description": "Code Assistant Union icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/code-assistant-union/index.tsx",

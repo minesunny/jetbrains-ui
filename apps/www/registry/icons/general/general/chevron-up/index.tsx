@@ -1,76 +1,36 @@
-import type { FC } from 'react';
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
 
-export type ChevronUpProps = IconProps;
-
-const ChevronUpLight: FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title ? <title>{title}</title> : null}
-    <path d="M4.5 9.75 8 6.25l3.5 3.5" stroke="#818594" strokeLinecap="round" />
-  </svg>
-);
-
-const ChevronUpDark: FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title ? <title>{title}</title> : null}
-    <path d="M4.5 9.75 8 6.25l3.5 3.5" stroke="#B4B8BF" strokeLinecap="round" />
-  </svg>
-);
-
-export const ChevronUp: FC<ChevronUpProps> = ({
-  size = 'md',
-  mode = 'light',
+export const ChevronUp = ({
+  size = 16,
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? ChevronUpLight : ChevronUpDark;
-
-  return (
-    <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
-      title={title}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M4.5 9.75 8 6.25l3.5 3.5"
+      strokeLinecap="round"
+      className="stroke-[#818594] dark:stroke-[#B4B8BF]"
     />
-  );
-};
+  </svg>
+);
+
+export default ChevronUp;

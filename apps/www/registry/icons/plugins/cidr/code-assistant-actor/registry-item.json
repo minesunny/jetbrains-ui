@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Code Assistant Actor",
   "description": "Code Assistant Actor icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/code-assistant-actor/index.tsx",

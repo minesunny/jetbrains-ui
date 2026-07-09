@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Safe All Tree Outline",
   "description": "Safe All Tree Outline icon from Plugins Package Checker category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/package-checker/safe-all-tree-outline/index.tsx",

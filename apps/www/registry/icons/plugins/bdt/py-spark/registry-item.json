@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Py Spark",
   "description": "Py Spark icon from Plugins Bdt category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bdt/py-spark/index.tsx",

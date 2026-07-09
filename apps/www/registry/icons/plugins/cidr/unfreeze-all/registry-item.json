@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Unfreeze All",
   "description": "Unfreeze All icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/unfreeze-all/index.tsx",

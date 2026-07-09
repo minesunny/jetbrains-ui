@@ -3,10 +3,7 @@
   "name": "icons-general-general-subtypes",
   "type": "registry:ui",
   "title": "Subtypes",
-  "description": "Subtypes icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Subtypes icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/subtypes/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "subtypes",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

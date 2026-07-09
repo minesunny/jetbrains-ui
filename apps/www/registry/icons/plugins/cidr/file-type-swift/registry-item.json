@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "File Type Swift",
   "description": "File Type Swift icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/file-type-swift/index.tsx",

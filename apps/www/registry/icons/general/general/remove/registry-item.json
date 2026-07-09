@@ -3,10 +3,7 @@
   "name": "icons-general-general-remove",
   "type": "registry:ui",
   "title": "Remove",
-  "description": "Remove icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Remove icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/remove/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "remove",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

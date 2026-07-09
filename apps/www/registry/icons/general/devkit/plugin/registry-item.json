@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-devkit-plugin",
+  "type": "registry:ui",
+  "title": "Plugin",
+  "description": "Plugin icon from general category.",
+  "files": [
+    {
+      "path": "registry/icons/general/devkit/plugin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/plugin/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "plugin",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

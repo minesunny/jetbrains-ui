@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Namespace Cpp",
   "description": "Namespace Cpp icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/namespace-cpp/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Code With Me Icons",
   "description": "All 25 icons from the Plugins Code With Me category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/code-with-me/index.ts",

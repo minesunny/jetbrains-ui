@@ -1,3 +1,4 @@
+import { escapeHtml } from '@workspace/ui/lib/escape-html';
 import { remark } from 'remark';
 import remarkGfm from 'remark-gfm';
 import remarkMdx from 'remark-mdx';
@@ -18,8 +19,12 @@ export async function getLLMText(page: InferPageType<typeof source>) {
     value: await fs.readFile(page.absolutePath),
   });
 
-  // note: it doesn't escape frontmatter, it's up to you.
-  return `# ${page.data.title}
+  const title = escapeHtml(String(page.data.title ?? '')).replace(
+    /\r\n|\n|\r/g,
+    ' ',
+  );
+
+  return `# ${title}
 URL: ${page.url}
 
 ${processed.value}`;

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Publisher",
   "description": "Publisher icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/publisher/index.tsx",

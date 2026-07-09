@@ -4,17 +4,25 @@
   "type": "registry:ui",
   "title": "Context Menu",
   "description": "JetBrains-style context menu component built with Radix UI.",
-  "dependencies": ["radix-ui"],
-  "registryDependencies": ["utils", "tooltip"],
+  "dependencies": [
+    "radix-ui"
+  ],
   "files": [
     {
       "path": "registry/components/context-menu/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/context-menu/index.tsx"
+      "target": "components/jetbrains-ui/context-menu.tsx"
     }
   ],
   "meta": {
-    "keywords": ["context-menu", "menu", "radix", "jetbrains", "ui", "组件"],
+    "keywords": [
+      "context-menu",
+      "menu",
+      "radix",
+      "jetbrains",
+      "ui",
+      "\u7ec4\u4ef6"
+    ],
     "category": "overlay",
     "docs": {
       "description": "JetBrains-style context menu component for right-click actions.",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Rspec Shared Group Ref",
   "description": "Rspec Shared Group Ref icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/rspec-shared-group-ref/index.tsx",

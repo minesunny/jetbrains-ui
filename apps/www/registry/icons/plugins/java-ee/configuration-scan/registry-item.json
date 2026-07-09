@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Configuration Scan",
   "description": "Configuration Scan icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/configuration-scan/index.tsx",

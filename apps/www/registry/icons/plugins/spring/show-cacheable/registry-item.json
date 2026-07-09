@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Show Cacheable",
   "description": "Show Cacheable icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/show-cacheable/index.tsx",

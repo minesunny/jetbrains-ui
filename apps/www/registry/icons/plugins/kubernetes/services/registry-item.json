@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Services",
   "description": "Services icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/services/index.tsx",

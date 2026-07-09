@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Bazel Reload",
   "description": "Bazel Reload icon from Plugins Bazel category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bazel/bazel-reload/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Debugger Icons",
   "description": "All 18 icons from the Debugger category.",
-  "registryDependencies": [
-    "icons-debugger-types"
-  ],
   "files": [
     {
       "path": "registry/icons/debugger/index.ts",
@@ -103,13 +100,5 @@
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/debugger/watch-last-return-value/index.tsx"
     }
-  ],
-  "meta": {
-    "keywords": [
-      "icons",
-      "debugger",
-      "jetbrains",
-      "icon-pack"
-    ]
-  }
+  ]
 }

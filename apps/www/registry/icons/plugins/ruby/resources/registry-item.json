@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Resources",
   "description": "Resources icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/resources/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Liquibase Update",
   "description": "Liquibase Update icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/liquibase-update/index.tsx",

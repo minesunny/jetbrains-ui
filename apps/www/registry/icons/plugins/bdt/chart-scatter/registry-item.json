@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Chart Scatter",
   "description": "Chart Scatter icon from Plugins Bdt category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bdt/chart-scatter/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Web Service",
   "description": "Web Service icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/web-service/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Code Assistant Protocol Extension",
   "description": "Code Assistant Protocol Extension icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/code-assistant-protocol-extension/index.tsx",

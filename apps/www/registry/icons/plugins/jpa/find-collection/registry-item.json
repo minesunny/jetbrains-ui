@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Find Collection",
   "description": "Find Collection icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/find-collection/index.tsx",

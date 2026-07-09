@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Rename Sequence",
   "description": "Rename Sequence icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/rename-sequence/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Minimalistic Mode",
   "description": "Minimalistic Mode icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/minimalistic-mode/index.tsx",

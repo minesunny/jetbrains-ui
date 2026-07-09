@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Full Line Completion",
   "description": "Full Line Completion icon from Plugins Full Line Completion category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/full-line-completion/full-line-completion/index.tsx",

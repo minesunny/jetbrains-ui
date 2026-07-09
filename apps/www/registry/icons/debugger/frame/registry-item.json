@@ -3,10 +3,7 @@
   "name": "icons-debugger-frame",
   "type": "registry:ui",
   "title": "Frame",
-  "description": "Frame icon from Debugger category.",
-  "registryDependencies": [
-    "icons-debugger-types"
-  ],
+  "description": "Frame icon from debugger category.",
   "files": [
     {
       "path": "registry/icons/debugger/frame/index.tsx",

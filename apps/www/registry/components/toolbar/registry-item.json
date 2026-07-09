@@ -5,16 +5,21 @@
   "title": "Toolbar",
   "description": "JetBrains-style toolbar primitives built from Toolbar and ToolbarItem.",
   "dependencies": [],
-  "registryDependencies": ["utils"],
   "files": [
     {
       "path": "registry/components/toolbar/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/toolbar/index.tsx"
+      "target": "components/jetbrains-ui/toolbar.tsx"
     }
   ],
   "meta": {
-    "keywords": ["toolbar", "action bar", "jetbrains", "ui", "component"],
+    "keywords": [
+      "toolbar",
+      "action bar",
+      "jetbrains",
+      "ui",
+      "component"
+    ],
     "category": "navigation",
     "docs": {
       "description": "JetBrains-style toolbar primitives with a minimal API: direction on Toolbar and direct separator orientation on ToolbarItem.",

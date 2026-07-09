@@ -1,107 +1,46 @@
-import type { FC } from 'react';
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
 
-export type QuestionBadgeProps = IconProps;
-
-const QuestionBadgeLight: FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 7 9"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title ? <title>{title}</title> : null}
-    <path
-      d="M3.5 0A3.5 3.5 0 0 0 .302 4.924l2.025 4.082h2.206l2.165-4.082A3.5 3.5 0 0 0 7 3.5 3.5 3.5 0 0 0 3.5 0"
-      fill="#fff"
-    />
-    <circle
-      cx="3.387"
-      cy="8.22"
-      r=".579"
-      fill="#6C707E"
-      stroke="#6C707E"
-      strokeWidth=".2"
-    />
-    <path
-      d="M4.155 2.35a1.23 1.23 0 0 0-.631-.159q-.382.002-.664.164a1.13 1.13 0 0 0-.437.455 1.3 1.3 0 0 0-.143.46c-.032.25-.234.484-.525.484h-.07a.5.5 0 0 1-.498-.518v-.011q.01-.099.027-.193.067-.395.256-.735v-.001q.306-.535.845-.827c.36-.198.767-.293 1.214-.293.436 0 .832.091 1.181.282.351.186.628.449.823.787q.294.512.292 1.15a2.27 2.27 0 0 1-.587 1.56l-.001.001-.587.56a7 7 0 0 0-.428.396q-.127.13-.217.312l-.001.002a.75.75 0 0 0-.08.348c0 .26-.21.47-.47.47h-.112a.497.497 0 0 1-.497-.496q-.001-.382.147-.703.14-.296.351-.522.199-.21.51-.482.309-.273.483-.463l.002-.002a1.5 1.5 0 0 0 .275-.418l.001-.003c.07-.15.11-.326.11-.532 0-.253-.053-.467-.152-.65a1.04 1.04 0 0 0-.414-.422z"
-      fill="#6C707E"
-    />
-  </svg>
-);
-
-const QuestionBadgeDark: FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 7 9"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title ? <title>{title}</title> : null}
-    <path
-      d="M3.5 0A3.5 3.5 0 0 0 .302 4.924l2.025 4.082h2.206l2.165-4.082A3.5 3.5 0 0 0 7 3.5 3.5 3.5 0 0 0 3.5 0"
-      fill="#1E1F22"
-    />
-    <circle
-      cx="3.387"
-      cy="8.22"
-      r=".579"
-      fill="#CED0D6"
-      stroke="#CED0D6"
-      strokeWidth=".2"
-    />
-    <path
-      d="M4.155 2.35a1.23 1.23 0 0 0-.631-.159q-.382.002-.664.164a1.13 1.13 0 0 0-.437.455 1.3 1.3 0 0 0-.143.46c-.032.25-.234.484-.525.484h-.07a.5.5 0 0 1-.498-.518v-.011q.01-.099.027-.193.067-.395.256-.735v-.001q.306-.535.845-.827c.36-.198.767-.293 1.214-.293.436 0 .832.091 1.181.282.351.186.628.449.823.787q.294.512.292 1.15a2.27 2.27 0 0 1-.587 1.56l-.001.001-.587.56a7 7 0 0 0-.428.396q-.127.13-.217.312l-.001.002a.75.75 0 0 0-.08.348c0 .26-.21.47-.47.47h-.112a.497.497 0 0 1-.497-.496q-.001-.382.147-.703.14-.296.351-.522.199-.21.51-.482.309-.273.483-.463l.002-.002a1.5 1.5 0 0 0 .275-.418l.001-.003c.07-.15.11-.326.11-.532 0-.253-.053-.467-.152-.65a1.04 1.04 0 0 0-.414-.422z"
-      fill="#CED0D6"
-    />
-  </svg>
-);
-
-export const QuestionBadge: FC<QuestionBadgeProps> = ({
-  size = 'md',
-  mode = 'light',
+export const QuestionBadge = ({
+  size = 16,
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
-}) => {
-  const SvgComponent =
-    mode === 'light' ? QuestionBadgeLight : QuestionBadgeDark;
-
-  return (
-    <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
-      title={title}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 7 9"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M3.5 0A3.5 3.5 0 0 0 .302 4.924l2.025 4.082h2.206l2.165-4.082A3.5 3.5 0 0 0 7 3.5 3.5 3.5 0 0 0 3.5 0"
+      className="fill-[#fff] dark:fill-[#1E1F22]"
     />
-  );
-};
+    <circle
+      cx={3.387}
+      cy={8.22}
+      r={0.579}
+      strokeWidth={0.2}
+      className="fill-[#6C707E] dark:fill-[#CED0D6] stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <path
+      d="M4.155 2.35a1.23 1.23 0 0 0-.631-.159q-.382.002-.664.164a1.13 1.13 0 0 0-.437.455 1.3 1.3 0 0 0-.143.46c-.032.25-.234.484-.525.484h-.07a.5.5 0 0 1-.498-.518v-.011q.01-.099.027-.193.067-.395.256-.735v-.001q.306-.535.845-.827c.36-.198.767-.293 1.214-.293.436 0 .832.091 1.181.282.351.186.628.449.823.787q.294.512.292 1.15a2.27 2.27 0 0 1-.587 1.56l-.001.001-.587.56a7 7 0 0 0-.428.396q-.127.13-.217.312l-.001.002a.75.75 0 0 0-.08.348c0 .26-.21.47-.47.47h-.112a.497.497 0 0 1-.497-.496q-.001-.382.147-.703.14-.296.351-.522.199-.21.51-.482.309-.273.483-.463l.002-.002a1.5 1.5 0 0 0 .275-.418l.001-.003c.07-.15.11-.326.11-.532 0-.253-.053-.467-.152-.65a1.04 1.04 0 0 0-.414-.422z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
+
+export default QuestionBadge;

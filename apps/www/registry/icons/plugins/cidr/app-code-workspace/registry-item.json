@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "App Code Workspace",
   "description": "App Code Workspace icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/app-code-workspace/index.tsx",

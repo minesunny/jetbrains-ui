@@ -3,10 +3,7 @@
   "name": "icons-general-general-open",
   "type": "registry:ui",
   "title": "Open",
-  "description": "Open icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Open icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/open/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "open",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Update Database",
   "description": "Update Database icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/update-database/index.tsx",

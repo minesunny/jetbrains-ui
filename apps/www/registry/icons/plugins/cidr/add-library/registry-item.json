@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Add Library",
   "description": "Add Library icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/add-library/index.tsx",

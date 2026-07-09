@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Debug Target Controller",
   "description": "Debug Target Controller icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/debug-target-controller/index.tsx",

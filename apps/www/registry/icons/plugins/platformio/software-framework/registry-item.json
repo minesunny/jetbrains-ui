@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Software Framework",
   "description": "Software Framework icon from Plugins Platformio category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/platformio/software-framework/index.tsx",

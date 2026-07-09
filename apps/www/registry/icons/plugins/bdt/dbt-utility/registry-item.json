@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Dbt Utility",
   "description": "Dbt Utility icon from Plugins Bdt category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bdt/dbt-utility/index.tsx",

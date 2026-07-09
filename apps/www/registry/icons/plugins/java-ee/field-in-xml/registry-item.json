@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Field In Xml",
   "description": "Field In Xml icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/field-in-xml/index.tsx",

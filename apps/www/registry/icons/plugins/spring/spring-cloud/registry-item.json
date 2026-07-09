@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Spring Cloud",
   "description": "Spring Cloud icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/spring-cloud/index.tsx",

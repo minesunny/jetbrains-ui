@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Helm Notes",
   "description": "Helm Notes icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/helm-notes/index.tsx",

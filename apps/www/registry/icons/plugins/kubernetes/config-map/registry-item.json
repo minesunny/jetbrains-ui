@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Config Map",
   "description": "Config Map icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/config-map/index.tsx",

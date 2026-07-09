@@ -14,8 +14,7 @@ import { DocsAuthor } from '@/components/docs/docs-author';
 import { ViewOptions, LLMCopyButton } from '@/components/docs/page-actions';
 import { Footer } from '@workspace/ui/components/docs/footer';
 import { Button } from '@/components/animate-ui/components/buttons/button';
-import { Left } from '@/registry/icons/general/general/left';
-import { Right } from '@/registry/icons/general/general/right';
+import { NavLeftIcon, NavRightIcon } from '@/components/docs/nav-icons';
 import Link from 'next/link';
 import { findNeighbour } from 'fumadocs-core/server';
 import { getBaseOptions } from '@/app/layout.config';
@@ -144,7 +143,7 @@ export default async function Page(props: {
               }
             >
               <Button variant="accent" size="icon-sm">
-                <Left />
+                <NavLeftIcon />
               </Button>
             </Link>
             <Link
@@ -160,7 +159,7 @@ export default async function Page(props: {
               }
             >
               <Button variant="accent" size="icon-sm">
-                <Right />
+                <NavRightIcon />
               </Button>
             </Link>
           </div>

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Chart Line",
   "description": "Chart Line icon from Plugins Bdt category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bdt/chart-line/index.tsx",

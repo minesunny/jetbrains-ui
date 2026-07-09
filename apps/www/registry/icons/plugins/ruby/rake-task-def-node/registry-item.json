@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Rake Task Def Node",
   "description": "Rake Task Def Node icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/rake-task-def-node/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Github Icons",
   "description": "All 2 icons from the Plugins Github category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/github/index.ts",

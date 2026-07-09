@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cwm Mic On",
   "description": "Cwm Mic On icon from Plugins Code With Me category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/code-with-me/cwm-mic-on/index.tsx",

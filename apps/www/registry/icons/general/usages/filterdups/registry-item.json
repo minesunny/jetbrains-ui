@@ -3,10 +3,7 @@
   "name": "icons-general-usages-filterdups",
   "type": "registry:ui",
   "title": "Filterdups",
-  "description": "Filterdups icon from General Usages category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Filterdups icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/usages/filterdups/index.tsx",
@@ -19,7 +16,6 @@
       "filterdups",
       "icon",
       "general",
-      "usages",
       "jetbrains"
     ]
   }

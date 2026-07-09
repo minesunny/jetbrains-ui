@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cwm Screen In Browser Off",
   "description": "Cwm Screen In Browser Off icon from Plugins Code With Me category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/code-with-me/cwm-screen-in-browser-off/index.tsx",

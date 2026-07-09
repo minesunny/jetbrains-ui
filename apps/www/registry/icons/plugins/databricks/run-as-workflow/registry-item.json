@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Run As Workflow",
   "description": "Run As Workflow icon from Plugins Databricks category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/databricks/run-as-workflow/index.tsx",

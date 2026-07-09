@@ -1,21 +1,23 @@
 'use client';
 
-import * as React from 'react';
-
+import {
+  type ComponentPropsWithoutRef,
+  useCallback,
+  useMemo,
+  useRef,
+} from 'react';
 import {
   hotkeysCoreFeature,
   selectionFeature,
+  type ItemInstance,
   type TreeDataLoader,
 } from '@headless-tree/core';
 import { useTree } from '@headless-tree/react';
 import {
   DynamicTree,
-  DynamicTreeItemContextMenu,
   asyncDataLoaderFeature,
   type DynamicTreeItemData,
 } from '@/registry/components/tree/dynamic-tree';
-import { Markdown, React as ReactFileType } from '@/registry/icons/file-types';
-import { Folder } from '@/registry/icons/nodes';
 
 const DEMO_ROOT_ID = 'dynamic-root';
 
@@ -33,85 +35,91 @@ type DemoLoadedItem = {
 type DemoTreeItems = Record<string, Omit<DemoTreeItem, 'endContent'>>;
 type DemoTreeChildren = Record<string, string[]>;
 
-const dynamicItems: DemoTreeItems = {
+const initialItems: DemoTreeItems = {
   [DEMO_ROOT_ID]: {
     label: 'jetbrains-ui',
     kind: 'folder',
     path: '/jetbrains-ui',
     isFolder: true,
-    icon: <Folder />,
+    icon: 'folder',
   },
   'dynamic-src': {
     label: 'src',
     kind: 'folder',
     path: '/jetbrains-ui/src',
     isFolder: true,
-    icon: <Folder />,
+    icon: 'folder',
   },
   'dynamic-components': {
     label: 'components',
     kind: 'folder',
     path: '/jetbrains-ui/src/components',
     isFolder: true,
-    icon: <Folder />,
+    icon: 'folder',
   },
   'dynamic-tree-file': {
     label: 'tree.tsx',
     kind: 'file',
     path: '/jetbrains-ui/src/components/tree.tsx',
-    icon: <ReactFileType />,
+    icon: 'react',
   },
   'dynamic-dynamic-tree-file': {
     label: 'dynamic-tree.tsx',
     kind: 'file',
     path: '/jetbrains-ui/src/components/dynamic-tree.tsx',
-    icon: <ReactFileType />,
+    icon: 'react',
   },
   'dynamic-lib': {
     label: 'lib',
     kind: 'folder',
     path: '/jetbrains-ui/src/lib',
     isFolder: true,
-    icon: <Folder />,
+    icon: 'folder',
   },
   'dynamic-utils-file': {
     label: 'utils.ts',
     kind: 'file',
     path: '/jetbrains-ui/src/lib/utils.ts',
-    icon: <ReactFileType />,
+    icon: 'react',
   },
   'dynamic-readme': {
     label: 'README.md',
     kind: 'file',
     path: '/jetbrains-ui/README.md',
-    icon: <Markdown />,
+    icon: 'markdown',
   },
   'dynamic-package': {
     label: 'package.json',
     kind: 'file',
     path: '/jetbrains-ui/package.json',
-    icon: <ReactFileType />,
+    icon: 'react',
   },
 };
 
-const dynamicChildren: DemoTreeChildren = {
+const initialChildren: DemoTreeChildren = {
   [DEMO_ROOT_ID]: ['dynamic-src', 'dynamic-readme', 'dynamic-package'],
   'dynamic-src': ['dynamic-components', 'dynamic-lib'],
   'dynamic-components': ['dynamic-tree-file', 'dynamic-dynamic-tree-file'],
   'dynamic-lib': ['dynamic-utils-file'],
 };
 
-function countDescendants(children: DemoTreeChildren, itemId: string) {
+function countDescendants(
+  children: DemoTreeChildren,
+  itemId: string,
+  visited?: Set<string>,
+) {
+  const seen = visited ?? new Set<string>();
   const queue = [...(children[itemId] ?? [])];
   let count = 0;
 
   while (queue.length > 0) {
     const currentId = queue.shift();
 
-    if (!currentId) {
+    if (!currentId || seen.has(currentId)) {
       continue;
     }
 
+    seen.add(currentId);
     count += 1;
     queue.push(...(children[currentId] ?? []));
   }
@@ -153,26 +161,38 @@ function resolveDemoItemData(
 }
 
 export default function DynamicTreeDemo() {
-  const loadedItemsRef = React.useRef<Record<string, DemoTreeItem>>({});
-  const loadData = React.useCallback(
+  const loadedItemsRef = useRef<Record<string, DemoTreeItem>>({});
+  const itemsRef = useRef<DemoTreeItems>({ ...initialItems });
+  const childrenRef = useRef<DemoTreeChildren>({ ...initialChildren });
+  const nextIdRef = useRef(0);
+
+  const loadData = useCallback(
     async (itemId: string | null): Promise<DemoLoadedItem[]> => {
       await wait(120);
 
       const parentId = itemId ?? DEMO_ROOT_ID;
 
-      return (dynamicChildren[parentId] ?? []).map(
+      return (childrenRef.current[parentId] ?? []).map(
         (childId): DemoLoadedItem => ({
           id: childId,
-          data: resolveDemoItemData(dynamicItems, dynamicChildren, childId),
+          data: resolveDemoItemData(
+            itemsRef.current,
+            childrenRef.current,
+            childId,
+          ),
         }),
       );
     },
     [],
   );
-  const dataLoader = React.useMemo<TreeDataLoader<DemoTreeItem>>(
+  const dataLoader = useMemo<TreeDataLoader<DemoTreeItem>>(
     () => ({
       getItem: async (itemId: string) => {
         const [realItemId] = itemId.split('@');
+
+        if (itemId.includes('@refresh')) {
+          await wait(500);
+        }
 
         if (realItemId === DEMO_ROOT_ID) {
           return {
@@ -193,6 +213,10 @@ export default function DynamicTreeDemo() {
       getChildrenWithData: async (itemId: string) => {
         const [realItemId] = itemId.split('@');
 
+        if (itemId.includes('@refresh')) {
+          await wait(500);
+        }
+
         return loadData(realItemId === DEMO_ROOT_ID ? null : realItemId);
       },
     }),
@@ -210,17 +234,52 @@ export default function DynamicTreeDemo() {
     features: [asyncDataLoaderFeature, selectionFeature, hotkeysCoreFeature],
   });
 
+  const treeRef = useRef(tree);
+  treeRef.current = tree;
+
+  const addItem = useCallback((item: ItemInstance<DemoTreeItem>) => {
+    const parentId = item.getId();
+    const id = `new-${nextIdRef.current++}`;
+    const parentData = item.getItemData();
+
+    itemsRef.current[id] = {
+      label: `New Item`,
+      kind: 'file',
+      path: `${parentData?.path ?? parentId}/${id}`,
+    };
+    childrenRef.current[parentId] = [
+      ...(childrenRef.current[parentId] ?? []),
+      id,
+    ];
+    void item.invalidateChildrenIds();
+  }, []);
+
+  const deleteItem = useCallback((item: ItemInstance<DemoTreeItem>) => {
+    const itemId = item.getId();
+
+    delete itemsRef.current[itemId];
+
+    for (const [parentId, childIds] of Object.entries(childrenRef.current)) {
+      const idx = childIds.indexOf(itemId);
+      if (idx !== -1) {
+        childrenRef.current[parentId] = childIds.filter((id) => id !== itemId);
+        break;
+      }
+    }
+
+    treeRef.current.rebuildTree();
+  }, []);
+
   return (
     <div className="w-[280px] rounded border">
       <DynamicTree<DemoTreeItem>
         containerProps={
-          tree.getContainerProps(
-            'Tree',
-          ) as React.ComponentPropsWithoutRef<'div'>
+          tree.getContainerProps('Tree') as ComponentPropsWithoutRef<'div'>
         }
         items={tree.getItems()}
-        contextMenu={DynamicTreeItemContextMenu}
         height="400px"
+        addItem={addItem}
+        deleteItem={deleteItem}
       />
     </div>
   );

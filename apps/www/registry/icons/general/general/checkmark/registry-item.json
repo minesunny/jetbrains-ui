@@ -3,10 +3,7 @@
   "name": "icons-general-general-checkmark",
   "type": "registry:ui",
   "title": "Checkmark",
-  "description": "Checkmark icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Checkmark icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/checkmark/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "checkmark",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

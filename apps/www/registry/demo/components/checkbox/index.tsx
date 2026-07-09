@@ -1,89 +1,76 @@
 'use client';
 
-import * as React from 'react';
+import {
+  type ComponentProps,
+  type ReactNode,
+  useEffect,
+  useState,
+} from 'react';
 import { Checkbox } from '@/registry/components/checkbox';
 
-type CheckboxState = 'unchecked' | 'checked' | 'indeterminate';
-type CheckboxRootProps = React.ComponentPropsWithoutRef<typeof Checkbox>;
+type CheckboxRootProps = ComponentProps<typeof Checkbox>;
 
 interface CheckboxDemoProps
   extends Omit<
     CheckboxRootProps,
     'checked' | 'defaultChecked' | 'onCheckedChange'
   > {
-  state: CheckboxState;
-  indeterminate?: boolean;
+  state: 'unchecked' | 'checked' | 'indeterminate';
   invalid?: boolean;
-  label?: React.ReactNode;
+  label?: ReactNode;
   onCheckedChange?: CheckboxRootProps['onCheckedChange'];
 }
 
-const getCheckedValue = (state: CheckboxState): boolean | 'indeterminate' => {
+const getCheckedValue = (
+  state: 'unchecked' | 'checked' | 'indeterminate',
+): boolean | 'indeterminate' => {
   if (state === 'checked') return true;
   if (state === 'indeterminate') return 'indeterminate';
   return false;
 };
 
-const normalizeState = (
-  state: CheckboxState,
-  indeterminate: boolean,
-): CheckboxState => {
-  if (!indeterminate && state === 'indeterminate') return 'unchecked';
-  return state;
-};
-
 const getNextState = (
-  state: CheckboxState,
-  indeterminate: boolean,
-): CheckboxState => {
-  if (!indeterminate) {
-    return state === 'checked' ? 'unchecked' : 'checked';
+  prev: 'unchecked' | 'checked' | 'indeterminate',
+  threeState: boolean,
+): 'unchecked' | 'checked' | 'indeterminate' => {
+  if (!threeState) {
+    return prev === 'checked' ? 'unchecked' : 'checked';
   }
-
-  if (state === 'unchecked') return 'checked';
-  if (state === 'checked') return 'indeterminate';
+  if (prev === 'unchecked') return 'checked';
+  if (prev === 'checked') return 'indeterminate';
   return 'unchecked';
 };
 
 export default function CheckboxDemo({
   state: initialState,
-  indeterminate = false,
   invalid = false,
   label = 'Checkbox label',
   id = 'checkbox-demo',
   onCheckedChange,
   ...props
 }: CheckboxDemoProps) {
-  const [state, setState] = React.useState<CheckboxState>(
-    normalizeState(initialState, indeterminate),
-  );
+  const [state, setState] = useState(initialState);
+  const threeState = initialState === 'indeterminate';
 
-  // 同步外部 props 变化
-  React.useEffect(() => {
-    setState(normalizeState(initialState, indeterminate));
-  }, [initialState, indeterminate]);
+  useEffect(() => {
+    setState(initialState);
+  }, [initialState]);
 
-  const checkedValue = getCheckedValue(state);
-  const ariaInvalid = invalid ? true : props['aria-invalid'];
-
-  const handleCheckedChange = () => {
-    setState((prev) => {
-      if (props.disabled) return prev;
-      const nextState = getNextState(prev, indeterminate);
-      onCheckedChange?.(getCheckedValue(nextState));
-      return nextState;
-    });
+  const handleCheckedChange = (checked: boolean | 'indeterminate') => {
+    if (props.disabled) return;
+    const nextState = getNextState(state, threeState);
+    setState(nextState);
+    onCheckedChange?.(checked);
   };
 
   return (
-    <div className="flex min-h-8 items-center gap-ui-control text-gray-1 dark:text-gray-12">
+    <div className="flex min-h-8 items-center gap-2 text-gray-1 dark:text-gray-12">
       <Checkbox
         {...props}
         id={id}
-        indeterminate={indeterminate}
-        checked={checkedValue}
+        checked={getCheckedValue(state)}
         onCheckedChange={handleCheckedChange}
-        aria-invalid={ariaInvalid}
+        aria-invalid={invalid ? true : props['aria-invalid']}
       />
       <label htmlFor={id} className="text-[13px] leading-4 font-medium">
         {label}

@@ -3,10 +3,7 @@
   "name": "icons-general-general-left",
   "type": "registry:ui",
   "title": "Left",
-  "description": "Left icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Left icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/left/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "left",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

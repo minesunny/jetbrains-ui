@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Rails Module Closed",
   "description": "Rails Module Closed icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/rails-module-closed/index.tsx",

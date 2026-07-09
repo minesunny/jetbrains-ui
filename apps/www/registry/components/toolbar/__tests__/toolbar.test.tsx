@@ -68,7 +68,9 @@ describe('ToolbarItem', () => {
 
     const item = screen.getByRole('button');
     expect(item).toHaveAttribute('data-separator', 'vertical');
-    expect(item.className).toContain('text-ui-default');
+    expect(item.className).toContain(
+      'font-sans text-[13px] leading-4 font-medium',
+    );
   });
 
   it('supports horizontal separators on items', () => {

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-remove",
+  "type": "registry:ui",
+  "title": "Remove",
+  "description": "Remove icon from vcs category.",
+  "files": [
+    {
+      "path": "registry/icons/vcs/remove/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/remove/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "remove",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

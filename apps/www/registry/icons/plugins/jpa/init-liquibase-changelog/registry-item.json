@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Init Liquibase Changelog",
   "description": "Init Liquibase Changelog icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/init-liquibase-changelog/index.tsx",

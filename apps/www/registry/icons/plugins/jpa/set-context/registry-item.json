@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Set Context",
   "description": "Set Context icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/set-context/index.tsx",

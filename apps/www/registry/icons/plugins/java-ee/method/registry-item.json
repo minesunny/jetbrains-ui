@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Method",
   "description": "Method icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/method/index.tsx",

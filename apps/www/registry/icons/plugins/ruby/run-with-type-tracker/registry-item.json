@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Run With Type Tracker",
   "description": "Run With Type Tracker icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/run-with-type-tracker/index.tsx",

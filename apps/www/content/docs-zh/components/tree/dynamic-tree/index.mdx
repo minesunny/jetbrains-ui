@@ -15,7 +15,7 @@ releaseDate: 2026-03-21
 
 ## 安装
 
-<ComponentInstallation name="tree/dynamic-tree" />
+<ComponentInstallation name="dynamic-tree" />
 
 ## 用法
 
@@ -30,7 +30,6 @@ import { useTree } from '@headless-tree/react';
 import {
   type DynamicTreeItemProps,
   DynamicTree,
-  DynamicTreeItemContextMenu,
   asyncDataLoaderFeature,
   type DynamicTreeItemData,
 } from '@/components/jetbrains-ui/tree/dynamic-tree';
@@ -137,13 +136,71 @@ function Example() {
       }
       items={tree.getItems()}
       item={FileItem}
-      contextMenu={DynamicTreeItemContextMenu}
       width="220px"
       height="160px"
     />
   );
 }
 ```
+
+## 右键菜单
+
+右键点击任意树节点会弹出上下文菜单。默认菜单自动启用，提供四个操作：
+
+| 操作     | 文件夹 | 叶子节点 | 实现方式                      | 需要的 Prop  |
+| -------- | ------ | -------- | ----------------------------- | ------------ |
+| 新增     | 是     | 否       | 调用 `addItem` prop           | `addItem`    |
+| 刷新     | 是     | 是       | 内置（使数据缓存失效）        | -            |
+| 清理子项 | 是     | 否       | 内置（清除缓存 + 收起文件夹） | -            |
+| 删除     | 是     | 是       | 调用 `deleteItem` prop        | `deleteItem` |
+
+没有提供处理函数的操作在菜单中显示为**禁用**状态。
+
+### 添加操作处理
+
+```tsx
+<DynamicTree
+  containerProps={tree.getContainerProps('Tree')}
+  items={tree.getItems()}
+  addItem={(item) => createChildNode(item.getId())}
+  deleteItem={(item) => removeNode(item.getId())}
+/>
+```
+
+### 禁用右键菜单
+
+```tsx
+<DynamicTree contextMenu={null} ... />
+```
+
+### 自定义右键菜单
+
+```tsx
+import {
+  ContextMenuItem,
+  ContextMenuSeparator,
+} from '@/components/jetbrains-ui/context-menu';
+
+<DynamicTree
+  contextMenu={(item, actions) => (
+    <>
+      <ContextMenuItem onSelect={() => actions.refresh(item)}>
+        刷新
+      </ContextMenuItem>
+      <ContextMenuSeparator />
+      <ContextMenuItem
+        variant="destructive"
+        onSelect={() => actions.delete?.(item)}
+      >
+        删除
+      </ContextMenuItem>
+    </>
+  )}
+  deleteItem={(item) => removeNode(item.getId())}
+/>;
+```
+
+渲染函数接收 `ItemInstance` 和一个 `TreeItemActions` 对象，包含预绑定的操作：`actions.refresh(item)`、`actions.clearChildren(item)`、`actions.add?.(item)` 和 `actions.delete?.(item)`。
 
 ## 滚动
 
@@ -153,9 +210,11 @@ function Example() {
 
 - `DynamicTree<TItem>`：展示层，负责根据 `containerProps` 和 `items` 渲染树。
 - `asyncDataLoaderFeature`：推荐内置的异步 feature，支持可刷新的 item data cache。
-- `DynamicTreeItemContextMenu`：内置默认 item context menu，提供刷新、清理子项和删除操作。
 - `item`：可以替换默认的 `DynamicTreeItem`，按你的 item 类型自定义组件。
-- `contextMenu`：用于替换默认的共享 item context menu，传 `null` 可关闭。
+- `contextMenu`：`undefined` 使用内置菜单（默认），`null` 禁用，或传入渲染函数 `(item, actions) => ReactNode` 自定义菜单。
+- `addItem`：新增子节点的回调。由默认菜单的「新增」操作调用，自定义菜单中通过 `actions.add` 使用。
+- `deleteItem`：删除节点的回调。由默认菜单的「删除」操作调用，自定义菜单中通过 `actions.delete` 使用。
+- `TreeItemActions<TItem>`：传入右键菜单渲染函数的 actions 对象类型。
 - `containerProps` 与 `items`：由你自己的 `@headless-tree` 配置直接提供。
 - `width` 与 `height`：限制外层滚动区域尺寸，内容超出时启用滚动。
 - 数据加载、选中和键盘行为由你自己定义的 `@headless-tree` 逻辑决定。

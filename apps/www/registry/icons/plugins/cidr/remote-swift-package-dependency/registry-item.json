@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Remote Swift Package Dependency",
   "description": "Remote Swift Package Dependency icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/remote-swift-package-dependency/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Add Changeset",
   "description": "Add Changeset icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/add-changeset/index.tsx",

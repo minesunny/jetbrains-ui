@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Dart Test",
   "description": "Dart Test icon from Plugins Dart category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/dart/dart-test/index.tsx",

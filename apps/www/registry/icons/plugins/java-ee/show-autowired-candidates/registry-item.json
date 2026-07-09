@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Show Autowired Candidates",
   "description": "Show Autowired Candidates icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/show-autowired-candidates/index.tsx",

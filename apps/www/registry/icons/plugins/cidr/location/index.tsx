@@ -1,82 +1,35 @@
-import React from 'react';
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
 
-export type LocationProps = IconProps;
-
-const LocationLight: React.FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title && <title>{title}</title>}
-    <path
-      d="M14.646 1.355 9.09 14.492l-1.61-5.63-.077-.266-.266-.076L1.52 6.91z"
-      stroke="#6C707E"
-    />
-  </svg>
-);
-
-const LocationDark: React.FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title && <title>{title}</title>}
-    <path
-      d="M14.646 1.355 9.09 14.492l-1.61-5.63-.077-.266-.266-.076L1.52 6.91z"
-      stroke="#CED0D6"
-    />
-  </svg>
-);
-
-export const Location: React.FC<LocationProps> = ({
-  size = 'md',
-  mode = 'light',
+export const Location = ({
+  size = 16,
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? LocationLight : LocationDark;
-
-  return (
-    <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
-      title={title}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M14.646 1.355 9.09 14.492l-1.61-5.63-.077-.266-.266-.076L1.52 6.91z"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
     />
-  );
-};
+  </svg>
+);
+
+export default Location;

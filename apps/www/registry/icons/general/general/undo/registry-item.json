@@ -3,10 +3,7 @@
   "name": "icons-general-general-undo",
   "type": "registry:ui",
   "title": "Undo",
-  "description": "Undo icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Undo icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/undo/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "undo",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

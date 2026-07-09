@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Show Cacheable",
   "description": "Show Cacheable icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/show-cacheable/index.tsx",

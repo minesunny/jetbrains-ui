@@ -3,10 +3,7 @@
   "name": "icons-general-general-supertypes",
   "type": "registry:ui",
   "title": "Supertypes",
-  "description": "Supertypes icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Supertypes icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/supertypes/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "supertypes",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

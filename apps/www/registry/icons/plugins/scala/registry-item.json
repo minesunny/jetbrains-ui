@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Scala Icons",
   "description": "All 55 icons from the Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/index.ts",

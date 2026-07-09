@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Field Variable",
   "description": "Field Variable icon from Plugins Kotlin category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kotlin/field-variable/index.tsx",

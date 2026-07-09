@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Run Spork Server",
   "description": "Run Spork Server icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/run-spork-server/index.tsx",

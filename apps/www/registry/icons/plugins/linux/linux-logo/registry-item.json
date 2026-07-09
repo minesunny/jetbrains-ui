@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Linux Logo",
   "description": "Linux Logo icon from Plugins Linux category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/linux/linux-logo/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Persistence Mapped Superclass",
   "description": "Persistence Mapped Superclass icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/persistence-mapped-superclass/index.tsx",

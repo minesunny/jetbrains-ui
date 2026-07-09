@@ -1,10 +1,10 @@
 'use client';
 
-import * as React from 'react';
+import type { ReactNode } from 'react';
 
 import { Toolbar, ToolbarItem } from '@/registry/components/toolbar';
 
-function DemoIcon({ children }: { children: React.ReactNode }) {
+function DemoIcon({ children }: { children: ReactNode }) {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
       {children}
@@ -68,8 +68,8 @@ function DemoRow({
   label: string;
 }) {
   return (
-    <div className="flex items-start justify-between gap-6 rounded-lg border border-[var(--gray-11)] bg-[var(--gray-14)] p-4 dark:border-[var(--gray-4)] dark:bg-[var(--gray-2)]">
-      <span className="pt-1 text-[11px] leading-4 font-medium text-[var(--gray-6)] dark:text-[var(--gray-8)]">
+    <div className="flex items-start justify-between gap-6 rounded-lg border border-[var(--jb-gray-11)] bg-[var(--jb-gray-14)] p-4 dark:border-[var(--jb-gray-4)] dark:bg-[var(--jb-gray-2)]">
+      <span className="pt-1 text-[11px] leading-4 font-medium text-[var(--jb-gray-6)] dark:text-[var(--jb-gray-8)]">
         {label}
       </span>
       <Toolbar aria-label={`${label} toolbar`} direction={direction}>
@@ -98,7 +98,7 @@ function DemoRow({
 
 export default function ToolbarDemo() {
   return (
-    <div className="mx-auto max-w-[420px] space-y-3 rounded-xl border bg-[var(--gray-13)] p-3 dark:border-[var(--gray-4)] dark:bg-[var(--gray-3)]">
+    <div className="mx-auto max-w-[420px] space-y-3 rounded-xl border bg-[var(--jb-gray-13)] p-3 dark:border-[var(--jb-gray-4)] dark:bg-[var(--jb-gray-3)]">
       <DemoRow direction="horizontal" label="Horizontal" />
       <DemoRow direction="vertical" label="Vertical" />
       <DemoRow direction="floating" label="Floating" />

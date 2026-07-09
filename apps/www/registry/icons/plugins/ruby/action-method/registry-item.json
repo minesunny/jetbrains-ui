@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Action Method",
   "description": "Action Method icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/action-method/index.tsx",

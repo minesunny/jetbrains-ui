@@ -3,10 +3,7 @@
   "name": "icons-general-general-import",
   "type": "registry:ui",
   "title": "Import",
-  "description": "Import icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Import icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/import/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "import",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

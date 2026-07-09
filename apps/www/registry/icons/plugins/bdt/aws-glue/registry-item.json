@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Aws Glue",
   "description": "Aws Glue icon from Plugins Bdt category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bdt/aws-glue/index.tsx",

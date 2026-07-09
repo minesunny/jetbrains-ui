@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Flink",
   "description": "Flink icon from Plugins Bdt category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bdt/flink/index.tsx",

@@ -3,10 +3,7 @@
   "name": "icons-general-general-right",
   "type": "registry:ui",
   "title": "Right",
-  "description": "Right icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Right icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/right/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "right",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -1,89 +1,43 @@
-'use client';
-
-import { cn } from '@workspace/ui/lib/utils';
+import type { Locale } from '@/lib/i18n/shared';
+import { getMessages } from '@/lib/i18n/shared';
 import { index } from '@/__registry__';
-import { Dancing_Script } from 'next/font/google';
-import { SVG } from '@/registry/components/svg';
-import { Search } from 'lucide-react';
 
-const dancing = Dancing_Script({ subsets: ['latin'] });
-
-const TabsDescription = ({
-  title,
-  count,
-}: {
+export interface SidebarTabData {
   title: string;
+  url: string;
+  icon: string;
   count: number;
-}) => {
-  return (
-    <span className="flex items-center flex-row gap-2">
-      <span>{title}</span>
-      <span className="pt-0.5 pb-px px-1.5 font-semibold rounded-full bg-foreground/10 text-[10px] text-foreground/50">
-        {count}
-      </span>
-    </span>
-  );
-};
+  beta?: boolean;
+}
 
-export const SIDEBAR_TABS = [
-  {
-    title: 'Components',
-    description: (
-      <TabsDescription
-        title="Animated Components"
-        count={
-          Object.values(index).filter((item) =>
-            item.name.startsWith('components-'),
-          ).length
-        }
-      />
-    ),
-    icon: (
-      <div className="[&_svg]:size-full rounded-lg size-full text-muted-foreground max-md:bg-(--tab-color)/10 max-md:border max-md:p-1.5">
-        <SVG name="plugins/java-ee/component" />
-      </div>
-    ),
-    url: '/docs/components',
-  },
-  {
-    title: 'Primitives',
-    description: (
-      <TabsDescription
-        title="Animated Primitives"
-        count={
-          Object.values(index).filter((item) =>
-            item.name.startsWith('primitives-'),
-          ).length
-        }
-      />
-    ),
-    icon: (
-      <div className="[&_svg]:size-full rounded-lg size-full text-muted-foreground max-md:bg-(--tab-color)/10 max-md:border max-md:p-1.5">
-        <SVG name="general/general/layout" />
-      </div>
-    ),
-    url: '/docs/primitives',
-  },
-  {
-    title: (
-      <span>
-        Icons{' '}
-        <span
-          className={cn(
-            dancing.className,
-            'text-sm ml-2 text-blue-600 dark:text-blue-400',
-          )}
-        >
-          beta
-        </span>
-      </span>
-    ),
-    description: <TabsDescription title="JetBrains Icons" count={99} />,
-    icon: (
-      <div className="[&_svg]:size-full rounded-lg size-full text-muted-foreground max-md:bg-(--tab-color)/10 max-md:border max-md:p-1.5">
-        <Search />
-      </div>
-    ),
-    url: '/docs/icons',
-  },
-];
+export function getSidebarTabData(locale: Locale): SidebarTabData[] {
+  const messages = getMessages(locale);
+  const componentsCount = Object.values(index).filter((item) =>
+    item.name.startsWith('components-'),
+  ).length;
+  const primitivesCount = Object.values(index).filter((item) =>
+    item.name.startsWith('primitives-'),
+  ).length;
+
+  return [
+    {
+      title: messages.docs.components,
+      url: '/docs/components',
+      icon: 'plugins/java-ee/component',
+      count: componentsCount,
+    },
+    {
+      title: messages.docs.primitives,
+      url: '/docs/primitives',
+      icon: 'general/general/layout',
+      count: primitivesCount,
+    },
+    {
+      title: messages.nav.icons,
+      url: '/docs/icons',
+      icon: 'general/general/search',
+      count: 99,
+      beta: true,
+    },
+  ];
+}

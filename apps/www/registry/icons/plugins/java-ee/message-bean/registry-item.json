@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Message Bean",
   "description": "Message Bean icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/message-bean/index.tsx",

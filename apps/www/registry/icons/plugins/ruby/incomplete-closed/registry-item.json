@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Incomplete Closed",
   "description": "Incomplete Closed icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/incomplete-closed/index.tsx",

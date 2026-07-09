@@ -3,14 +3,15 @@
   "name": "combo-box",
   "type": "registry:ui",
   "title": "Combo Box",
-  "description": "JetBrains UI 风格的组合框组件，基于 Radix UI Select",
-  "dependencies": ["@radix-ui/react-select"],
-  "registryDependencies": ["utils"],
+  "description": "JetBrains UI \u98ce\u683c\u7684\u7ec4\u5408\u6846\u7ec4\u4ef6\uff0c\u57fa\u4e8e Radix UI Select",
+  "dependencies": [
+    "@radix-ui/react-select"
+  ],
   "files": [
     {
       "path": "registry/components/combo-box/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/combo-box/index.tsx"
+      "target": "components/jetbrains-ui/combo-box.tsx"
     }
   ],
   "meta": {
@@ -20,20 +21,20 @@
       "dropdown",
       "jetbrains",
       "ui",
-      "组件",
-      "组合框"
+      "\u7ec4\u4ef6",
+      "\u7ec4\u5408\u6846"
     ],
     "category": "selects",
     "docs": {
-      "description": "JetBrains UI 风格的组合框组件，基于 Radix UI Select 构建，提供流畅的展开/收起动画效果。",
+      "description": "JetBrains UI \u98ce\u683c\u7684\u7ec4\u5408\u6846\u7ec4\u4ef6\uff0c\u57fa\u4e8e Radix UI Select \u6784\u5efa\uff0c\u63d0\u4f9b\u6d41\u7545\u7684\u5c55\u5f00/\u6536\u8d77\u52a8\u753b\u6548\u679c\u3002",
       "features": [
-        "流畅的展开/收起动画",
-        "支持分组和标签",
-        "完整的键盘导航",
-        "支持禁用选项",
-        "支持无效状态",
-        "优秀的无障碍支持",
-        "支持亮色/暗色主题"
+        "\u6d41\u7545\u7684\u5c55\u5f00/\u6536\u8d77\u52a8\u753b",
+        "\u652f\u6301\u5206\u7ec4\u548c\u6807\u7b7e",
+        "\u5b8c\u6574\u7684\u952e\u76d8\u5bfc\u822a",
+        "\u652f\u6301\u7981\u7528\u9009\u9879",
+        "\u652f\u6301\u65e0\u6548\u72b6\u6001",
+        "\u4f18\u79c0\u7684\u65e0\u969c\u788d\u652f\u6301",
+        "\u652f\u6301\u4eae\u8272/\u6697\u8272\u4e3b\u9898"
       ]
     },
     "demoProps": {

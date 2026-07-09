@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Graph Qlcongif",
   "description": "Graph Qlcongif icon from Plugins Graphql category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/graphql/graph-qlcongif/index.tsx",

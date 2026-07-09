@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "After Advice",
   "description": "After Advice icon from Plugins Aop category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/aop/after-advice/index.tsx",

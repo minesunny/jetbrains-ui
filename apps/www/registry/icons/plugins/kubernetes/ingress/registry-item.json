@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Ingress",
   "description": "Ingress icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/ingress/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Rvm Run Anything",
   "description": "Rvm Run Anything icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/rvm-run-anything/index.tsx",

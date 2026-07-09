@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Chart Area Range",
   "description": "Chart Area Range icon from Plugins Bdt category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bdt/chart-area-range/index.tsx",

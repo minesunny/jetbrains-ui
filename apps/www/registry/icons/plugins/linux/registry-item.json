@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Linux Icons",
   "description": "All 2 icons from the Plugins Linux category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/linux/index.ts",

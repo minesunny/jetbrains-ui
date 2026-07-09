@@ -3,10 +3,7 @@
   "name": "icons-general-modifiers-locked",
   "type": "registry:ui",
   "title": "Locked",
-  "description": "Locked icon from General Modifiers category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Locked icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/modifiers/locked/index.tsx",
@@ -19,7 +16,6 @@
       "locked",
       "icon",
       "general",
-      "modifiers",
       "jetbrains"
     ]
   }

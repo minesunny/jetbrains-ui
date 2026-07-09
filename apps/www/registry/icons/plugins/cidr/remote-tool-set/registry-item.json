@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Remote Tool Set",
   "description": "Remote Tool Set icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/remote-tool-set/index.tsx",

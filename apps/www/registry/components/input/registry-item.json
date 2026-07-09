@@ -3,27 +3,33 @@
   "name": "input",
   "type": "registry:ui",
   "title": "Input",
-  "description": "JetBrains UI 风格的单行输入框组件，支持 invalid/disabled 等常见状态",
+  "description": "JetBrains UI \u98ce\u683c\u7684\u5355\u884c\u8f93\u5165\u6846\u7ec4\u4ef6\uff0c\u652f\u6301 invalid/disabled \u7b49\u5e38\u89c1\u72b6\u6001",
   "dependencies": [],
-  "registryDependencies": ["utils"],
   "files": [
     {
       "path": "registry/components/input/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/input/index.tsx"
+      "target": "components/jetbrains-ui/input.tsx"
     }
   ],
   "meta": {
-    "keywords": ["input", "text-field", "jetbrains", "ui", "组件", "输入框"],
+    "keywords": [
+      "input",
+      "text-field",
+      "jetbrains",
+      "ui",
+      "\u7ec4\u4ef6",
+      "\u8f93\u5165\u6846"
+    ],
     "category": "inputs",
     "docs": {
-      "description": "JetBrains UI 风格的文本输入框组件，适用于表单和搜索场景，支持 hover/focus/invalid/disabled 状态。",
+      "description": "JetBrains UI \u98ce\u683c\u7684\u6587\u672c\u8f93\u5165\u6846\u7ec4\u4ef6\uff0c\u9002\u7528\u4e8e\u8868\u5355\u548c\u641c\u7d22\u573a\u666f\uff0c\u652f\u6301 hover/focus/invalid/disabled \u72b6\u6001\u3002",
       "features": [
-        "单行文本输入",
-        "支持 invalid 状态",
-        "支持 disabled 状态",
-        "基于 JetBrains 设计令牌",
-        "支持亮色/暗色主题"
+        "\u5355\u884c\u6587\u672c\u8f93\u5165",
+        "\u652f\u6301 invalid \u72b6\u6001",
+        "\u652f\u6301 disabled \u72b6\u6001",
+        "\u57fa\u4e8e JetBrains \u8bbe\u8ba1\u4ee4\u724c",
+        "\u652f\u6301\u4eae\u8272/\u6697\u8272\u4e3b\u9898"
       ]
     },
     "demoProps": {

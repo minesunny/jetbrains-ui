@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cwm Permission Full",
   "description": "Cwm Permission Full icon from Plugins Code With Me category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/code-with-me/cwm-permission-full/index.tsx",

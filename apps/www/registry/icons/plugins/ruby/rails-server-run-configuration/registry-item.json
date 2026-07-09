@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Rails Server Run Configuration",
   "description": "Rails Server Run Configuration icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/rails-server-run-configuration/index.tsx",

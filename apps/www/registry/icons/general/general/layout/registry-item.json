@@ -3,10 +3,7 @@
   "name": "icons-general-general-layout",
   "type": "registry:ui",
   "title": "Layout",
-  "description": "Layout icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Layout icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/layout/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "layout",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

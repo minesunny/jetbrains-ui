@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Sbt Load Changes",
   "description": "Sbt Load Changes icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/sbt-load-changes/index.tsx",

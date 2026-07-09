@@ -30,7 +30,7 @@ const loadItemData = async <T>(tree: TreeInstance<T>, itemId: string) => {
     });
   }
 
-  if (!dataRef.current.itemData[realItemId]) {
+  if (!dataRef.current.itemData[realItemId] || itemId !== realItemId) {
     tree.applySubStateUpdate('loadingItemData', (loadingItemData) => [
       ...loadingItemData,
       realItemId,

@@ -1,86 +1,37 @@
-import React from 'react';
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../../types';
 
-export type ReaderProps = IconProps;
-
-const ReaderLight: React.FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title && <title>{title}</title>}
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M4 14a2 2 0 1 1-4 0 2 2 0 0 1 4 0"
-      fill="#55A76A"
-    />
-  </svg>
-);
-
-const ReaderDark: React.FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title && <title>{title}</title>}
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M4 14a2 2 0 1 1-4 0 2 2 0 0 1 4 0"
-      fill="#57965C"
-    />
-  </svg>
-);
-
-export const Reader: React.FC<ReaderProps> = ({
-  size = 'md',
-  mode = 'light',
+export const Reader = ({
+  size = 16,
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? ReaderLight : ReaderDark;
-
-  return (
-    <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
-      title={title}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M4 14a2 2 0 1 1-4 0 2 2 0 0 1 4 0"
+      className="fill-[#55A76A] dark:fill-[#57965C]"
     />
-  );
-};
+  </svg>
+);
+
+export default Reader;

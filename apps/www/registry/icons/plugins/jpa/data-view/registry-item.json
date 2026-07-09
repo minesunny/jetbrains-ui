@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Data View",
   "description": "Data View icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/data-view/index.tsx",

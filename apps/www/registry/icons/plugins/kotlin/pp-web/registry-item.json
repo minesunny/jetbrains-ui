@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Pp Web",
   "description": "Pp Web icon from Plugins Kotlin category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kotlin/pp-web/index.tsx",

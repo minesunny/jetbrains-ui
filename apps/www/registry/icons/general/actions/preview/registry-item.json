@@ -3,10 +3,7 @@
   "name": "icons-general-actions-preview",
   "type": "registry:ui",
   "title": "Preview",
-  "description": "Preview icon from General Actions category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Preview icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/actions/preview/index.tsx",
@@ -19,7 +16,6 @@
       "preview",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

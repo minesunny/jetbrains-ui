@@ -3,10 +3,7 @@
   "name": "icons-general-spinner-loader",
   "type": "registry:ui",
   "title": "Loader",
-  "description": "Loader icon from General Spinner category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Loader icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/spinner/loader/index.tsx",
@@ -19,7 +16,6 @@
       "loader",
       "icon",
       "general",
-      "spinner",
       "jetbrains"
     ]
   }

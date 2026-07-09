@@ -3,10 +3,7 @@
   "name": "icons-general-actions-replace",
   "type": "registry:ui",
   "title": "Replace",
-  "description": "Replace icon from General Actions category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Replace icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/actions/replace/index.tsx",
@@ -19,7 +16,6 @@
       "replace",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

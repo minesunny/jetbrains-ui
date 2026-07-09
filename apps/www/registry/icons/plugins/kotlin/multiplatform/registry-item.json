@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Multiplatform",
   "description": "Multiplatform icon from Plugins Kotlin category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kotlin/multiplatform/index.tsx",

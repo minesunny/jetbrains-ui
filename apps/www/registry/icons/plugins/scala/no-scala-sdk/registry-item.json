@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "No Scala Sdk",
   "description": "No Scala Sdk icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/no-scala-sdk/index.tsx",

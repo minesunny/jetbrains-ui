@@ -122,7 +122,7 @@ export const ComponentManualInstallation = ({
               </CollapsibleContent>
               <div
                 className={cn(
-                  'absolute flex items-center justify-center bg-gradient-to-b rounded-t-xl from-neutral-300/30 to-white dark:from-neutral-700/30 dark:to-neutral-950 p-2',
+                  'absolute flex items-center justify-center bg-linear-to-b rounded-t-xl from-neutral-300/30 to-white dark:from-neutral-700/30 dark:to-neutral-950 p-2',
                   isOpened ? 'inset-x-0 bottom-0 h-12' : 'inset-0',
                 )}
               >

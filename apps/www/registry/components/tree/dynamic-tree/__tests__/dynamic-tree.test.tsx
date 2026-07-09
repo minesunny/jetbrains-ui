@@ -1,4 +1,9 @@
-import * as React from 'react';
+import {
+  useRef,
+  useMemo,
+  type CSSProperties,
+  type ComponentPropsWithoutRef,
+} from 'react';
 import {
   act,
   fireEvent,
@@ -10,19 +15,19 @@ import userEvent from '@testing-library/user-event';
 import {
   hotkeysCoreFeature,
   selectionFeature,
+  type ItemInstance,
   type TreeDataLoader,
 } from '@headless-tree/core';
 import { useTree } from '@headless-tree/react';
-import { ContextMenuItem } from '@/registry/components/context-menu';
 
 import {
   DynamicTree,
-  type DynamicTreeContextMenuComponent,
   asyncDataLoaderFeature,
+  type DynamicTreeContextMenuFn,
   type DynamicTreeItemComponent,
   type DynamicTreeItemProps,
   type DynamicTreeItemData,
-} from '../index';
+} from '@/registry/components/tree/dynamic-tree';
 
 type TreeFixture = {
   items: Record<string, DynamicTreeItemData>;
@@ -85,19 +90,23 @@ function DynamicTreeTestHarness({
   height,
   item,
   contextMenu,
+  addItem,
+  deleteItem,
 }: {
   loadData: (
     itemId: string | null,
   ) =>
     | DynamicTreeLoadedItem<DynamicTreeItemData>[]
     | Promise<DynamicTreeLoadedItem<DynamicTreeItemData>[]>;
-  width?: React.CSSProperties['width'];
-  height?: React.CSSProperties['height'];
+  width?: CSSProperties['width'];
+  height?: CSSProperties['height'];
   item?: DynamicTreeItemComponent<DynamicTreeItemData>;
-  contextMenu?: DynamicTreeContextMenuComponent<DynamicTreeItemData>;
+  contextMenu?: DynamicTreeContextMenuFn<DynamicTreeItemData> | null;
+  addItem?: (item: ItemInstance<DynamicTreeItemData>) => void;
+  deleteItem?: (item: ItemInstance<DynamicTreeItemData>) => void;
 }) {
-  const loadedItemsRef = React.useRef<Record<string, DynamicTreeItemData>>({});
-  const dataLoader = React.useMemo<TreeDataLoader<DynamicTreeItemData>>(
+  const loadedItemsRef = useRef<Record<string, DynamicTreeItemData>>({});
+  const dataLoader = useMemo<TreeDataLoader<DynamicTreeItemData>>(
     () => ({
       getItem: async (itemId: string) => {
         const [realItemId] = itemId.split('@');
@@ -139,13 +148,15 @@ function DynamicTreeTestHarness({
   return (
     <DynamicTree
       containerProps={
-        tree.getContainerProps('Tree') as React.ComponentPropsWithoutRef<'div'>
+        tree.getContainerProps('Tree') as ComponentPropsWithoutRef<'div'>
       }
       items={tree.getItems()}
       item={item}
-      contextMenu={contextMenu}
       width={width}
       height={height}
+      contextMenu={contextMenu}
+      addItem={addItem}
+      deleteItem={deleteItem}
     />
   );
 }
@@ -162,12 +173,10 @@ describe('DynamicTree', () => {
       />,
     );
 
-    const scrollArea = document.querySelector(
-      '[data-slot="tree-scroll-area"]',
-    ) as HTMLElement;
+    const tree = document.querySelector('[data-slot="tree"]') as HTMLElement;
 
-    expect(scrollArea.style.width).toBe('260px');
-    expect(scrollArea.style.height).toBe('140px');
+    expect(tree.style.width).toBe('260px');
+    expect(tree.style.height).toBe('140px');
   });
 
   it('loads and renders root nodes from loadData', async () => {
@@ -192,10 +201,10 @@ describe('DynamicTree', () => {
     const disclosure = await waitFor(() => {
       const element = document.querySelector(
         '[data-slot="tree-item-disclosure"][data-value="src"]',
-      ) as HTMLButtonElement | null;
+      ) as HTMLElement | null;
 
       expect(element).toBeTruthy();
-      return element as HTMLButtonElement;
+      return element as HTMLElement;
     });
 
     await user.click(disclosure);
@@ -240,7 +249,7 @@ describe('DynamicTree', () => {
 
     const disclosure = document.querySelector(
       '[data-slot="tree-item-disclosure"][data-value="src"]',
-    ) as HTMLButtonElement;
+    ) as HTMLElement;
 
     await user.click(disclosure);
 
@@ -266,7 +275,7 @@ describe('DynamicTree', () => {
 
     const disclosure = document.querySelector(
       '[data-slot="tree-item-disclosure"][data-value="src"]',
-    ) as HTMLButtonElement;
+    ) as HTMLElement;
 
     await user.click(disclosure);
 
@@ -316,158 +325,124 @@ describe('DynamicTree', () => {
     expect(readmeItem).toHaveAttribute('data-disabled', 'true');
   });
 
-  it('opens a shared context menu for the right-clicked item', async () => {
-    const user = userEvent.setup();
-    const loadData = createLoadData(fixture);
-    const onAction = vi.fn();
+  describe('context menu', () => {
+    async function openContextMenu(
+      user: ReturnType<typeof userEvent.setup>,
+      itemId: string,
+    ) {
+      const item = document.querySelector(
+        `[data-slot="tree-item"][data-value="${itemId}"]`,
+      ) as HTMLElement;
+      await user.pointer([
+        { target: item },
+        { keys: '[MouseRight]', target: item },
+      ]);
+    }
 
-    render(
-      <DynamicTreeTestHarness
-        loadData={loadData}
-        contextMenu={({ item }) => (
-          <ContextMenuItem
-            onSelect={() => {
-              onAction(item.getId());
-            }}
+    it('shows default context menu with all actions for folder items', async () => {
+      const user = userEvent.setup();
+      const loadData = createLoadData(fixture);
+      render(<DynamicTreeTestHarness loadData={loadData} />);
+
+      await screen.findByText('src');
+      await openContextMenu(user, 'src');
+
+      expect(
+        await screen.findByRole('menuitem', { name: 'Add' }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('menuitem', { name: 'Refresh' }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('menuitem', { name: 'Clear Children' }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('menuitem', { name: 'Delete' }),
+      ).toBeInTheDocument();
+    });
+
+    it('shows limited actions for leaf items', async () => {
+      const user = userEvent.setup();
+      const loadData = createLoadData(fixture);
+      render(<DynamicTreeTestHarness loadData={loadData} />);
+
+      await screen.findByText('README.md');
+      await openContextMenu(user, 'readme');
+
+      expect(
+        await screen.findByRole('menuitem', { name: 'Refresh' }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('menuitem', { name: 'Delete' }),
+      ).toBeInTheDocument();
+      expect(
+        screen.queryByRole('menuitem', { name: 'Add' }),
+      ).not.toBeInTheDocument();
+      expect(
+        screen.queryByRole('menuitem', { name: 'Clear Children' }),
+      ).not.toBeInTheDocument();
+    });
+
+    it('disables Add and Delete when handlers are not provided', async () => {
+      const user = userEvent.setup();
+      const loadData = createLoadData(fixture);
+      render(<DynamicTreeTestHarness loadData={loadData} />);
+
+      await screen.findByText('src');
+      await openContextMenu(user, 'src');
+
+      const addItem = await screen.findByRole('menuitem', { name: 'Add' });
+      const deleteItem = screen.getByRole('menuitem', { name: 'Delete' });
+
+      expect(addItem).toHaveAttribute('data-disabled');
+      expect(deleteItem).toHaveAttribute('data-disabled');
+    });
+
+    it('does not render context menu when contextMenu is null', async () => {
+      const loadData = createLoadData(fixture);
+      render(<DynamicTreeTestHarness loadData={loadData} contextMenu={null} />);
+
+      await screen.findByText('src');
+
+      expect(
+        document.querySelectorAll('[data-slot="context-menu"]').length,
+      ).toBe(0);
+    });
+
+    it('renders custom context menu from render function', async () => {
+      const user = userEvent.setup();
+      const loadData = createLoadData(fixture);
+      const customMenu: DynamicTreeContextMenuFn<DynamicTreeItemData> = (
+        item,
+        actions,
+      ) => (
+        <>
+          <div data-testid="custom-label">
+            {item.getItemData()?.label ?? item.getId()}
+          </div>
+          <button
+            type="button"
+            data-testid="custom-action"
+            onClick={() => actions.refresh(item)}
           >
-            Reveal {item.getId()}
-          </ContextMenuItem>
-        )}
-      />,
-    );
+            Custom Refresh
+          </button>
+        </>
+      );
 
-    await screen.findByText('src');
+      render(
+        <DynamicTreeTestHarness loadData={loadData} contextMenu={customMenu} />,
+      );
 
-    const srcItem = document.querySelector(
-      '[data-slot="tree-item-button"][data-value="src"]',
-    ) as HTMLDivElement;
+      await screen.findByText('src');
+      await openContextMenu(user, 'src');
 
-    fireEvent.contextMenu(srcItem);
-
-    expect(await screen.findByText('Reveal src')).toBeInTheDocument();
-    expect(srcItem).toHaveAttribute('data-selected', 'true');
-
-    await user.click(screen.getByText('Reveal src'));
-
-    expect(onAction).toHaveBeenCalledWith('src');
-  });
-
-  it('refreshes an item from the default context menu', async () => {
-    const user = userEvent.setup();
-    const loadData = createLoadData(fixture);
-
-    render(<DynamicTreeTestHarness loadData={loadData} />);
-
-    await screen.findByText('src');
-
-    const srcItem = document.querySelector(
-      '[data-slot="tree-item-button"][data-value="src"]',
-    ) as HTMLDivElement;
-
-    fireEvent.contextMenu(srcItem);
-    await user.click(await screen.findByText('Refresh'));
-
-    await waitFor(() => {
-      expect(loadData).toHaveBeenLastCalledWith('src');
+      expect(await screen.findByTestId('custom-label')).toHaveTextContent(
+        'src',
+      );
+      expect(screen.getByTestId('custom-action')).toHaveTextContent(
+        'Custom Refresh',
+      );
     });
-  });
-
-  it('deletes an item from the default context menu', async () => {
-    const user = userEvent.setup();
-    const loadData = createLoadData(fixture);
-
-    render(<DynamicTreeTestHarness loadData={loadData} />);
-
-    await screen.findByText('src');
-
-    const srcItem = document.querySelector(
-      '[data-slot="tree-item-button"][data-value="src"]',
-    ) as HTMLDivElement;
-
-    fireEvent.contextMenu(srcItem);
-    await user.click(await screen.findByText('Delete'));
-
-    await waitFor(() => {
-      expect(screen.queryByText('src')).not.toBeInTheDocument();
-    });
-  });
-
-  it('clears a folder children from the default context menu', async () => {
-    const user = userEvent.setup();
-    const loadData = createLoadData(fixture);
-
-    render(<DynamicTreeTestHarness loadData={loadData} />);
-
-    await screen.findByText('src');
-
-    const disclosure = document.querySelector(
-      '[data-slot="tree-item-disclosure"][data-value="src"]',
-    ) as HTMLButtonElement;
-
-    await user.click(disclosure);
-    expect(await screen.findByText('index.tsx')).toBeInTheDocument();
-
-    const srcItem = document.querySelector(
-      '[data-slot="tree-item-button"][data-value="src"]',
-    ) as HTMLDivElement;
-
-    fireEvent.contextMenu(srcItem);
-    await user.click(await screen.findByText('Clear Children'));
-
-    await waitFor(() => {
-      expect(screen.queryByText('index.tsx')).not.toBeInTheDocument();
-    });
-  });
-
-  it('refetches folder children after clearing and expanding again', async () => {
-    const user = userEvent.setup();
-    const nextFixture: TreeFixture = {
-      items: {
-        ...fixture.items,
-        util: {
-          label: 'util.ts',
-        },
-      },
-      children: {
-        ...fixture.children,
-        src: ['index'],
-      },
-    };
-    const loadData = createLoadData(nextFixture);
-
-    render(<DynamicTreeTestHarness loadData={loadData} />);
-
-    await screen.findByText('src');
-
-    let disclosure = document.querySelector(
-      '[data-slot="tree-item-disclosure"][data-value="src"]',
-    ) as HTMLButtonElement;
-
-    await user.click(disclosure);
-    expect(await screen.findByText('index.tsx')).toBeInTheDocument();
-
-    const srcItem = document.querySelector(
-      '[data-slot="tree-item-button"][data-value="src"]',
-    ) as HTMLDivElement;
-
-    fireEvent.contextMenu(srcItem);
-    await user.click(await screen.findByText('Clear Children'));
-
-    await waitFor(() => {
-      expect(screen.queryByText('index.tsx')).not.toBeInTheDocument();
-    });
-
-    nextFixture.children.src = ['util'];
-
-    disclosure = document.querySelector(
-      '[data-slot="tree-item-disclosure"][data-value="src"]',
-    ) as HTMLButtonElement;
-
-    await user.click(disclosure);
-
-    expect(await screen.findByText('util.ts')).toBeInTheDocument();
-    expect(
-      loadData.mock.calls.filter(([itemId]) => itemId === 'src'),
-    ).toHaveLength(2);
   });
 });

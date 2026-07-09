@@ -1,0 +1,30 @@
+{
+  "changeId": "dynamic-tree-context-menu",
+  "status": "completed",
+  "approvals": [
+    {
+      "approver": "user",
+      "approvedAt": "2026-05-17T04:08:34.920Z"
+    }
+  ],
+  "rejections": [],
+  "history": [
+    {
+      "action": "request_approval",
+      "by": "user",
+      "at": "2026-05-17T04:08:33.481Z"
+    },
+    {
+      "action": "approved",
+      "by": "user",
+      "at": "2026-05-17T04:08:34.920Z"
+    },
+    {
+      "action": "completed",
+      "by": "user",
+      "at": "2026-05-17T09:43:40.017Z"
+    }
+  ],
+  "requestedAt": "2026-05-17T04:08:33.481Z",
+  "requestedBy": "user"
+}

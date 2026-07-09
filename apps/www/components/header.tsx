@@ -83,7 +83,7 @@ export const Header = ({ transition }: { transition: boolean }) => {
               href="https://github.com/minesunny/jetbrains-ui"
               rel="noreferrer noopener"
               target="_blank"
-              className="sm:mt-1 group cursor-pointer justify-center rounded-md text-sm group font-medium transition-colors duration-300 ease-in-out disabled:pointer-events-none disabled:opacity-50 hover:bg-fd-accent hover:text-fd-accent-foreground p-1.5 [&_svg]:size-5 text-fd-muted-foreground sm:[&_svg]:size-5.5 flex items-center gap-x-2"
+              className="sm:mt-1 group cursor-pointer justify-center rounded-md text-sm font-medium transition-colors duration-300 ease-in-out disabled:pointer-events-none disabled:opacity-50 hover:bg-fd-accent hover:text-fd-accent-foreground p-1.5 [&_svg]:size-5 text-fd-muted-foreground sm:[&_svg]:size-5.5 flex items-center gap-x-2"
             >
               <SVG name="plugins/github/github" className="size-6" />
             </a>

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Annotation Kotlin",
   "description": "Annotation Kotlin icon from Plugins Kotlin category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kotlin/annotation-kotlin/index.tsx",

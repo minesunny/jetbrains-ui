@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Compilation Database Load Changes",
   "description": "Compilation Database Load Changes icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/compilation-database-load-changes/index.tsx",

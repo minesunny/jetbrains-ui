@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Constructor",
   "description": "Constructor icon from Plugins Uml category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/uml/constructor/index.tsx",

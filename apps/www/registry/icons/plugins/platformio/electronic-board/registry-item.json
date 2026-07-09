@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Electronic Board",
   "description": "Electronic Board icon from Plugins Platformio category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/platformio/electronic-board/index.tsx",

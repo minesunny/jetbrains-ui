@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Code Assistant Function Invocation",
   "description": "Code Assistant Function Invocation icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/code-assistant-function-invocation/index.tsx",

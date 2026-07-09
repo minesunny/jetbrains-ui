@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cwm Share",
   "description": "Cwm Share icon from Plugins Code With Me category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/code-with-me/cwm-share/index.tsx",

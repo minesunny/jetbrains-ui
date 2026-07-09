@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Code Assistant Local",
   "description": "Code Assistant Local icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/code-assistant-local/index.tsx",

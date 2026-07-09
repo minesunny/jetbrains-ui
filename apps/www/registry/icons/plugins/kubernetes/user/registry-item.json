@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "User",
   "description": "User icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/user/index.tsx",

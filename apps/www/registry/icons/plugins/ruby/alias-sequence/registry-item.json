@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Alias Sequence",
   "description": "Alias Sequence icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/alias-sequence/index.tsx",

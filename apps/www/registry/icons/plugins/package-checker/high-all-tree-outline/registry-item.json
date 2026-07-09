@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "High All Tree Outline",
   "description": "High All Tree Outline icon from Plugins Package Checker category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/package-checker/high-all-tree-outline/index.tsx",

@@ -3,10 +3,7 @@
   "name": "icons-general-general-refresh",
   "type": "registry:ui",
   "title": "Refresh",
-  "description": "Refresh icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Refresh icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/refresh/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "refresh",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

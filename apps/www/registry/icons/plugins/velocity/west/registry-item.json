@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "West",
   "description": "West icon from Plugins Velocity category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/velocity/west/index.tsx",

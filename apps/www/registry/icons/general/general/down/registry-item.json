@@ -3,10 +3,7 @@
   "name": "icons-general-general-down",
   "type": "registry:ui",
   "title": "Down",
-  "description": "Down icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Down icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/down/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "down",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

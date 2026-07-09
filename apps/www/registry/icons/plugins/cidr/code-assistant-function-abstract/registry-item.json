@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Code Assistant Function Abstract",
   "description": "Code Assistant Function Abstract icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/code-assistant-function-abstract/index.tsx",

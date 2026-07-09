@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Dev Containers",
   "description": "Dev Containers icon from Plugins Dev Containers category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/dev-containers/dev-containers/index.tsx",

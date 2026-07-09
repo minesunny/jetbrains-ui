@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Hibernate Event",
   "description": "Hibernate Event icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/hibernate-event/index.tsx",

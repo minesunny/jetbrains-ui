@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Bundle Run Anything",
   "description": "Bundle Run Anything icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/bundle-run-anything/index.tsx",

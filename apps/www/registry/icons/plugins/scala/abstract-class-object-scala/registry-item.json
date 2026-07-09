@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Abstract Class Object Scala",
   "description": "Abstract Class Object Scala icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/abstract-class-object-scala/index.tsx",

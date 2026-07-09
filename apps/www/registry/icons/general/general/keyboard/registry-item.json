@@ -3,10 +3,7 @@
   "name": "icons-general-general-keyboard",
   "type": "registry:ui",
   "title": "Keyboard",
-  "description": "Keyboard icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Keyboard icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/keyboard/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "keyboard",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

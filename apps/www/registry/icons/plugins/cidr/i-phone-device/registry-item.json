@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "I Phone Device",
   "description": "I Phone Device icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/i-phone-device/index.tsx",

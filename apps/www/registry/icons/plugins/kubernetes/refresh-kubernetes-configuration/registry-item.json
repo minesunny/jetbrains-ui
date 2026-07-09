@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Refresh Kubernetes Configuration",
   "description": "Refresh Kubernetes Configuration icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/refresh-kubernetes-configuration/index.tsx",

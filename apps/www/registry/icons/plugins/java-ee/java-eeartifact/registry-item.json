@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Java Eeartifact",
   "description": "Java Eeartifact icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/java-eeartifact/index.tsx",

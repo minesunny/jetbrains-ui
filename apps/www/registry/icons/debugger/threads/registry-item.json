@@ -3,10 +3,7 @@
   "name": "icons-debugger-threads",
   "type": "registry:ui",
   "title": "Threads",
-  "description": "Threads icon from Debugger category.",
-  "registryDependencies": [
-    "icons-debugger-types"
-  ],
+  "description": "Threads icon from debugger category.",
   "files": [
     {
       "path": "registry/icons/debugger/threads/index.tsx",

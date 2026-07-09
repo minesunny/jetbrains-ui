@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Module Target",
   "description": "Module Target icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/module-target/index.tsx",

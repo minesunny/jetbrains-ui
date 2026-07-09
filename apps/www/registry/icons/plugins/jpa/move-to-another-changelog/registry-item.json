@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Move To Another Changelog",
   "description": "Move To Another Changelog icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/move-to-another-changelog/index.tsx",

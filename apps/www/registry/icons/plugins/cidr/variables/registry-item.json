@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Variables",
   "description": "Variables icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/variables/index.tsx",

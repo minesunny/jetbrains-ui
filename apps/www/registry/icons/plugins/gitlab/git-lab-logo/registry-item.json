@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Git Lab Logo",
   "description": "Git Lab Logo icon from Plugins Gitlab category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/gitlab/git-lab-logo/index.tsx",

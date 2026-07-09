@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Mailers Folder",
   "description": "Mailers Folder icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/mailers-folder/index.tsx",

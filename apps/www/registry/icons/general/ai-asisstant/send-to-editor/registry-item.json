@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-ai-asisstant-send-to-editor",
+  "type": "registry:ui",
+  "title": "Send To Editor",
+  "description": "Send To Editor icon from general category.",
+  "files": [
+    {
+      "path": "registry/icons/general/ai-asisstant/send-to-editor/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/send-to-editor/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "send-to-editor",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Getter In Xml",
   "description": "Getter In Xml icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/getter-in-xml/index.tsx",

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-arrow",
+  "type": "registry:ui",
+  "title": "Arrow",
+  "description": "Arrow icon from vcs category.",
+  "files": [
+    {
+      "path": "registry/icons/vcs/arrow/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/arrow/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "arrow",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

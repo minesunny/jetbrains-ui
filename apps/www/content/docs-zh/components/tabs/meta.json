@@ -1,6 +1,6 @@
 {
   "title": "Tabs",
-  "description": "Tabs docs with Tabs and Dynamic Tabs.",
+  "description": "Tabs 文档。",
   "defaultOpen": false,
   "pages": ["base-tabs", "dynamic-tabs"]
 }

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Liquibase Mono",
   "description": "Liquibase Mono icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/liquibase-mono/index.tsx",

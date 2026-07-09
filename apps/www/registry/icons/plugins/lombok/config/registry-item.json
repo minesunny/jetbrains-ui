@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Config",
   "description": "Config icon from Plugins Lombok category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/lombok/config/index.tsx",

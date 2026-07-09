@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Breakpoints Icons",
   "description": "All 39 icons from the Breakpoints category.",
-  "registryDependencies": [
-    "icons-breakpoints-types"
-  ],
   "files": [
     {
       "path": "registry/icons/breakpoints/index.ts",
@@ -208,13 +205,5 @@
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/breakpoints/question-badge/index.tsx"
     }
-  ],
-  "meta": {
-    "keywords": [
-      "icons",
-      "breakpoints",
-      "jetbrains",
-      "icon-pack"
-    ]
-  }
+  ]
 }

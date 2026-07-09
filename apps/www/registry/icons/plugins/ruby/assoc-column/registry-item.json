@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Assoc Column",
   "description": "Assoc Column icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/assoc-column/index.tsx",

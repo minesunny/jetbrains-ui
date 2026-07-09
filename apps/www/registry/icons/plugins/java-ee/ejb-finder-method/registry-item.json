@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Ejb Finder Method",
   "description": "Ejb Finder Method icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/ejb-finder-method/index.tsx",

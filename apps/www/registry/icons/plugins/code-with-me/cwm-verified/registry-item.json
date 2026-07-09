@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cwm Verified",
   "description": "Cwm Verified icon from Plugins Code With Me category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/code-with-me/cwm-verified/index.tsx",

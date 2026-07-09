@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cwm Permission View",
   "description": "Cwm Permission View icon from Plugins Code With Me category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/code-with-me/cwm-permission-view/index.tsx",

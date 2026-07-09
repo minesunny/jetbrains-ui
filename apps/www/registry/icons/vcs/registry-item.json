@@ -3,10 +3,7 @@
   "name": "icons-vcs",
   "type": "registry:ui",
   "title": "Vcs Icons",
-  "description": "All 46 icons from the Vcs category.",
-  "registryDependencies": [
-    "icons-vcs-types"
-  ],
+  "description": "All 57 icons from the Vcs category.",
   "files": [
     {
       "path": "registry/icons/vcs/index.ts",
@@ -14,59 +11,9 @@
       "target": "components/jetbrains-ui/icons/vcs/index.ts"
     },
     {
-      "path": "registry/icons/vcs/abort/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/abort/index.tsx"
-    },
-    {
       "path": "registry/icons/vcs/add-emoji/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/vcs/add-emoji/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/apply-not-conflicts/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/apply-not-conflicts/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/apply-not-conflicts-left/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/apply-not-conflicts-left/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/apply-not-conflicts-right/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/apply-not-conflicts-right/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/arrow-left-right/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/arrow-left-right/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/branch/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/branch/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/changelist/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/changelist/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/changes/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/changes/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/checkmark/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/checkmark/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/cherry-pick/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/cherry-pick/index.tsx"
     },
     {
       "path": "registry/icons/vcs/comment/index.tsx",
@@ -99,9 +46,49 @@
       "target": "components/jetbrains-ui/icons/vcs/comment-unresolved/index.tsx"
     },
     {
-      "path": "registry/icons/vcs/commit/index.tsx",
+      "path": "registry/icons/vcs/file-unread/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/commit/index.tsx"
+      "target": "components/jetbrains-ui/icons/vcs/file-unread/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/apply-not-conflicts/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/apply-not-conflicts/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/apply-not-conflicts-left/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/apply-not-conflicts-left/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/apply-not-conflicts-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/apply-not-conflicts-right/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/arrow/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/arrow/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/arrow-left-down/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/arrow-left-down/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/arrow-left-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/arrow-left-right/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/arrow-right/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/arrow-right/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/arrow-right-down/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/arrow-right-down/index.tsx"
     },
     {
       "path": "registry/icons/vcs/compare3-left-middle/index.tsx",
@@ -149,6 +136,101 @@
       "target": "components/jetbrains-ui/icons/vcs/compare4-right-bottom/index.tsx"
     },
     {
+      "path": "registry/icons/vcs/disable-editing/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/disable-editing/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/gutter-check-box/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/gutter-check-box/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/gutter-check-box-indeterminate/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/gutter-check-box-indeterminate/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/gutter-check-box-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/gutter-check-box-selected/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/magic-resolve/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/magic-resolve/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/magic-resolve-toolbar/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/magic-resolve-toolbar/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/remove/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/remove/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/revert/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/revert/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/abort/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/abort/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/resolve-continue/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/resolve-continue/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/skip-commit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/skip-commit/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/branch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/branch/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/changelist/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/changelist/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/changes/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/changes/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/changes-push/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/changes-push/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/changes-update/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/changes-update/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/checkmark/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/checkmark/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/cherry-pick/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/cherry-pick/index.tsx"
+    },
+    {
+      "path": "registry/icons/vcs/commit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/commit/index.tsx"
+    },
+    {
       "path": "registry/icons/vcs/current-branch/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/vcs/current-branch/index.tsx"
@@ -164,19 +246,9 @@
       "target": "components/jetbrains-ui/icons/vcs/diff/index.tsx"
     },
     {
-      "path": "registry/icons/vcs/disable-editing/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/disable-editing/index.tsx"
-    },
-    {
       "path": "registry/icons/vcs/fetch/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/vcs/fetch/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/file-unread/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/file-unread/index.tsx"
     },
     {
       "path": "registry/icons/vcs/incoming-update/index.tsx",
@@ -187,11 +259,6 @@
       "path": "registry/icons/vcs/intelli-sort/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/vcs/intelli-sort/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/magic-resolve-toolbar/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/magic-resolve-toolbar/index.tsx"
     },
     {
       "path": "registry/icons/vcs/outgoing-push/index.tsx",
@@ -207,21 +274,6 @@
       "path": "registry/icons/vcs/push/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/vcs/push/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/resolve-continue/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/resolve-continue/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/revert/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/revert/index.tsx"
-    },
-    {
-      "path": "registry/icons/vcs/skip-commit/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/vcs/skip-commit/index.tsx"
     },
     {
       "path": "registry/icons/vcs/stash/index.tsx",
@@ -243,13 +295,5 @@
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/vcs/vcs/index.tsx"
     }
-  ],
-  "meta": {
-    "keywords": [
-      "icons",
-      "vcs",
-      "jetbrains",
-      "icon-pack"
-    ]
-  }
+  ]
 }

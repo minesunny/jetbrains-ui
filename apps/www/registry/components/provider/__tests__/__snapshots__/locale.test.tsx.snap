@@ -1,0 +1,79 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`locale snapshots > en locale matches snapshot 1`] = `
+{
+  "alert": {
+    "doNotAskAgain": "Do not ask again",
+  },
+  "codeEditor": {
+    "encoding": "UTF-8",
+    "indentInfo": "Spaces: 2",
+    "lineColumn": "Ln {line}, Col {column}",
+  },
+  "dynamicTabs": {
+    "addTab": "Add Tab",
+    "close": "Close",
+    "closeLeftTabs": "Close Left Tabs",
+    "closeOthers": "Close Others",
+    "closeRightTabs": "Close Right Tabs",
+    "closeTab": "Close tab",
+    "defaultTrigger": "Tab",
+    "modified": "Modified",
+    "pinTabLabel": "Pin Tab",
+    "unpinTab": "Unpin tab",
+    "unpinTabLabel": "Unpin Tab",
+  },
+  "dynamicTree": {
+    "add": "Add",
+    "clearChildren": "Clear Children",
+    "collapse": "Collapse {label}",
+    "delete": "Delete",
+    "expand": "Expand {label}",
+    "loading": "Loading {label}",
+    "refresh": "Refresh",
+  },
+  "tree": {
+    "collapse": "Collapse {label}",
+    "expand": "Expand {label}",
+  },
+}
+`;
+
+exports[`locale snapshots > zh-CN locale matches snapshot 1`] = `
+{
+  "alert": {
+    "doNotAskAgain": "不再询问",
+  },
+  "codeEditor": {
+    "encoding": "UTF-8",
+    "indentInfo": "空格: 2",
+    "lineColumn": "行 {line}, 列 {column}",
+  },
+  "dynamicTabs": {
+    "addTab": "新建标签页",
+    "close": "关闭",
+    "closeLeftTabs": "关闭左侧标签页",
+    "closeOthers": "关闭其他标签页",
+    "closeRightTabs": "关闭右侧标签页",
+    "closeTab": "关闭标签页",
+    "defaultTrigger": "标签页",
+    "modified": "已修改",
+    "pinTabLabel": "固定标签页",
+    "unpinTab": "取消固定",
+    "unpinTabLabel": "取消固定标签页",
+  },
+  "dynamicTree": {
+    "add": "添加",
+    "clearChildren": "清除子项",
+    "collapse": "折叠 {label}",
+    "delete": "删除",
+    "expand": "展开 {label}",
+    "loading": "正在加载 {label}",
+    "refresh": "刷新",
+  },
+  "tree": {
+    "collapse": "折叠 {label}",
+    "expand": "展开 {label}",
+  },
+}
+`;

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "styles-jetbrains-theme",
+  "type": "registry:style",
+  "title": "JetBrains Theme (Tailwind v4)",
+  "description": "Tailwind v4 @theme 桥接，将 --jb-* tokens 注册为 Tailwind 颜色工具类（如 bg-gray-1、text-blue-5）",
+  "files": [
+    {
+      "path": "registry/styles/jetbrains/theme.css",
+      "type": "registry:style",
+      "target": "styles/jetbrains-theme.css"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "jetbrains",
+      "theme",
+      "tailwind",
+      "css-variables",
+      "design-system"
+    ],
+    "docs": {
+      "description": "Tailwind v4 @theme 桥接文件，将 --jb-* JetBrains tokens 注册到 Tailwind 的设计系统中。必须在 tokens.css 之后导入。",
+      "features": [
+        "将 JetBrains 颜色调色板注册为 Tailwind 颜色工具类（bg-gray-1, text-blue-5 等）",
+        "JetBrains Typography 排版大小（text-sm, text-default）",
+        "需要在 tokens.css 之后导入"
+      ]
+    }
+  },
+  "registryDependencies": ["styles-jetbrains-tokens"]
+}

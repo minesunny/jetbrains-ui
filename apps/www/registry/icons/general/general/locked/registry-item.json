@@ -3,10 +3,7 @@
   "name": "icons-general-general-locked",
   "type": "registry:ui",
   "title": "Locked",
-  "description": "Locked icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Locked icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/locked/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "locked",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Stop Timer",
   "description": "Stop Timer icon from Plugins Tasks category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/tasks/stop-timer/index.tsx",

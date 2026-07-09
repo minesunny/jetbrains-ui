@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Lombok Icons",
   "description": "All 5 icons from the Plugins Lombok category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/lombok/index.ts",

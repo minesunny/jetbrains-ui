@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Diff Plugin Logo",
   "description": "Diff Plugin Logo icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/diff-plugin-logo/index.tsx",

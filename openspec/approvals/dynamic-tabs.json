@@ -1,0 +1,30 @@
+{
+  "changeId": "dynamic-tabs",
+  "status": "completed",
+  "approvals": [
+    {
+      "approver": "user",
+      "approvedAt": "2026-05-17T09:43:42.272Z"
+    }
+  ],
+  "rejections": [],
+  "history": [
+    {
+      "action": "request_approval",
+      "by": "user",
+      "at": "2026-05-17T09:43:35.306Z"
+    },
+    {
+      "action": "approved",
+      "by": "user",
+      "at": "2026-05-17T09:43:42.272Z"
+    },
+    {
+      "action": "completed",
+      "by": "user",
+      "at": "2026-05-17T09:43:51.401Z"
+    }
+  ],
+  "requestedAt": "2026-05-17T09:43:35.306Z",
+  "requestedBy": "user"
+}

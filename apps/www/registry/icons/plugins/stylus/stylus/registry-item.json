@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Stylus",
   "description": "Stylus icon from Plugins Stylus category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/stylus/stylus/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Doc Test",
   "description": "Doc Test icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/doc-test/index.tsx",

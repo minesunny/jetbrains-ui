@@ -52,12 +52,12 @@ export default function IconsExample() {
           </div>
 
           <div className="flex items-center gap-2">
-            <SVG name="rhtml" />
+            <SVG name="database/redis" />
             <span className="text-sm">R HTML</span>
           </div>
 
           <div className="flex items-center gap-2">
-            <SVG name="bean-validator-tool-window" />
+            <SVG name="general/general/checkmark" />
             <span className="text-sm">Bean Validator</span>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function IconsExample() {
             <p className="text-sm font-mono mb-2">{'// 基础用法'}</p>
             <pre className="text-sm">
               <code>{`<SVG name="feedback" />
-<SVG name="rhtml" size={20} />
+<SVG name="database/redis" size={20} />
 <SVG name="add" className="text-blue-500" />`}</code>
             </pre>
           </div>

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Spring Boot",
   "description": "Spring Boot icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/spring-boot/index.tsx",

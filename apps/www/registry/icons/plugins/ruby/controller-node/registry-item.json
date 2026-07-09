@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Controller Node",
   "description": "Controller Node icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/controller-node/index.tsx",

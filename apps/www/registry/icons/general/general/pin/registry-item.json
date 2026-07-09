@@ -3,10 +3,7 @@
   "name": "icons-general-general-pin",
   "type": "registry:ui",
   "title": "Pin",
-  "description": "Pin icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Pin icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/pin/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "pin",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

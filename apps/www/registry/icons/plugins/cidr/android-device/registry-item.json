@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Android Device",
   "description": "Android Device icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/android-device/index.tsx",

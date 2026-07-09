@@ -1,12 +1,11 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "tree/tree",
+  "name": "tree",
   "type": "registry:ui",
   "title": "Tree",
-  "description": "JetBrains-style static tree view with selectable and expandable items.",
-  "dependencies": ["@headless-tree/core", "@headless-tree/react"],
+  "description": "JetBrains-style static tree view with nested hierarchy, selection and collapse controls.",
+  "dependencies": [],
   "registryDependencies": [
-    "utils",
     "scroll-area",
     "icons-general-general-chevron-down",
     "icons-general-general-chevron-right"
@@ -15,7 +14,7 @@
     {
       "path": "registry/components/tree/tree/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/tree/tree/index.tsx"
+      "target": "components/jetbrains-ui/tree/tree.tsx"
     }
   ],
   "meta": {

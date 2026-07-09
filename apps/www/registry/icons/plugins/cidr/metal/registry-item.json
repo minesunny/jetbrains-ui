@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Metal",
   "description": "Metal icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/metal/index.tsx",

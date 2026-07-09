@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Attribute",
   "description": "Attribute icon from Plugins Graphql category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/graphql/attribute/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Lombok Field",
   "description": "Lombok Field icon from Plugins Lombok category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/lombok/lombok-field/index.tsx",

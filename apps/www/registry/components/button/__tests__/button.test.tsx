@@ -35,7 +35,9 @@ describe('Button', () => {
     expect(button).not.toHaveAttribute('data-size');
     expect(button).not.toHaveAttribute('data-slim');
     expect(button.className).toContain('h-7');
-    expect(button.className).toContain('text-ui-default');
+    expect(button.className).toContain(
+      'font-sans text-[13px] leading-4 font-medium',
+    );
   });
 
   it('applies primary variant by default', () => {
@@ -49,7 +51,7 @@ describe('Button', () => {
     render(<Button variant="secondary">Secondary</Button>);
     const btn = screen.getByRole('button');
     expect(btn).toHaveAttribute('data-variant', 'secondary');
-    expect(btn.className).toContain('bg-transparent');
+    expect(btn.className).toContain('bg-gray-14');
   });
 
   it('passes className through', () => {
@@ -67,17 +69,6 @@ describe('Button', () => {
     const btn = screen.getByRole('button');
     expect(btn).toHaveAttribute('data-slim', 'true');
     expect(btn.className).toContain('h-6');
-  });
-
-  it('renders tooltip content when tooltip prop is provided', async () => {
-    const user = userEvent.setup();
-    render(<Button tooltip="Button tooltip">With Tooltip</Button>);
-
-    const btn = screen.getByRole('button', { name: 'With Tooltip' });
-    await user.hover(btn);
-    expect(
-      await screen.findByRole('tooltip', { name: 'Button tooltip' }),
-    ).toBeInTheDocument();
   });
 
   it('fires onClick handler', async () => {
@@ -138,7 +129,7 @@ describe('buttonVariants', () => {
 
   it('includes secondary-specific classes for secondary variant', () => {
     const result = buttonVariants({ variant: 'secondary' });
-    expect(result).toContain('bg-transparent');
+    expect(result).toContain('bg-gray-14');
   });
 
   it('defaults to primary variant when no variant specified', () => {

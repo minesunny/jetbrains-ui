@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Persistent Volumes",
   "description": "Persistent Volumes icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/persistent-volumes/index.tsx",

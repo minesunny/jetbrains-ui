@@ -1,0 +1,36 @@
+{
+  "jsPlugins": ["oxlint-tailwindcss"],
+  "categories": {
+    "correctness": "off",
+    "perf": "off",
+    "pedantic": "off",
+    "style": "off",
+    "restriction": "off",
+    "nursery": "off"
+  },
+  "ignorePatterns": [
+    "**/.next/**",
+    "**/coverage/**",
+    "**/__registry__/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.turbo/**",
+    "**/*.min.js"
+  ],
+  "settings": {
+    "tailwindcss": {
+      "entryPoint": [
+        {
+          "files": "packages/ui/**",
+          "use": "packages/ui/src/styles/globals.css"
+        },
+        { "files": "apps/www/**", "use": "apps/www/app/globals.css" }
+      ]
+    }
+  },
+  "rules": {
+    "tailwindcss/no-deprecated-classes": "error",
+    "tailwindcss/no-duplicate-classes": "error",
+    "tailwindcss/no-unnecessary-whitespace": "error"
+  }
+}

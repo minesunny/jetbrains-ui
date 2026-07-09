@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Velocity",
   "description": "Velocity icon from Plugins Velocity category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/velocity/velocity/index.tsx",

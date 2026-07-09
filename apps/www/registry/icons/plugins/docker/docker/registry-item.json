@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Docker",
   "description": "Docker icon from Plugins Docker category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/docker/docker/index.tsx",

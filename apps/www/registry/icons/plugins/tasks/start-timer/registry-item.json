@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Start Timer",
   "description": "Start Timer icon from Plugins Tasks category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/tasks/start-timer/index.tsx",

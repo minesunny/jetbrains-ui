@@ -3,10 +3,7 @@
   "name": "icons-general-bookmarks-bookmarks",
   "type": "registry:ui",
   "title": "Bookmarks",
-  "description": "Bookmarks icon from General Bookmarks category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Bookmarks icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/bookmarks/bookmarks/index.tsx",
@@ -19,7 +16,6 @@
       "bookmarks",
       "icon",
       "general",
-      "bookmarks",
       "jetbrains"
     ]
   }

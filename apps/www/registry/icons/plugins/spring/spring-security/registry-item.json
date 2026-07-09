@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Spring Security",
   "description": "Spring Security icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/spring-security/index.tsx",

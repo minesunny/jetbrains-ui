@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Out Sight",
   "description": "Out Sight icon from Plugins Outsight category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/outsight/out-sight/index.tsx",

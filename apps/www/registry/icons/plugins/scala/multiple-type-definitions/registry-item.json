@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Multiple Type Definitions",
   "description": "Multiple Type Definitions icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/multiple-type-definitions/index.tsx",

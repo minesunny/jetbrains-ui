@@ -3,10 +3,7 @@
   "name": "icons-nodes-template",
   "type": "registry:ui",
   "title": "Template",
-  "description": "Template icon from Nodes category.",
-  "registryDependencies": [
-    "icons-nodes-types"
-  ],
+  "description": "Template icon from nodes category.",
   "files": [
     {
       "path": "registry/icons/nodes/template/index.tsx",

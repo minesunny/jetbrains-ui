@@ -3,10 +3,7 @@
   "name": "icons-general-general-paste",
   "type": "registry:ui",
   "title": "Paste",
-  "description": "Paste icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Paste icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/paste/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "paste",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Field Variable1",
   "description": "Field Variable1 icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/field-variable1/index.tsx",

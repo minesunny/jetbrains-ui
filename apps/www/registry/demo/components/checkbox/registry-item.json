@@ -27,9 +27,6 @@
         "disabled": {
           "value": false
         },
-        "indeterminate": {
-          "value": false
-        },
         "invalid": {
           "value": false
         }

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Docker Compose Service Up",
   "description": "Docker Compose Service Up icon from Plugins Docker category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/docker/docker-compose-service-up/index.tsx",

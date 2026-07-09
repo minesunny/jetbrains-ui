@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Request Mapping",
   "description": "Request Mapping icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/request-mapping/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Spring Models Dependency Graph",
   "description": "Spring Models Dependency Graph icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/spring-models-dependency-graph/index.tsx",

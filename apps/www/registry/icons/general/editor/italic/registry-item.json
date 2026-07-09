@@ -3,10 +3,7 @@
   "name": "icons-general-editor-italic",
   "type": "registry:ui",
   "title": "Italic",
-  "description": "Italic icon from General Editor category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Italic icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/editor/italic/index.tsx",
@@ -19,7 +16,6 @@
       "italic",
       "icon",
       "general",
-      "editor",
       "jetbrains"
     ]
   }

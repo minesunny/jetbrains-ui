@@ -3,10 +3,7 @@
   "name": "icons-run-watch",
   "type": "registry:ui",
   "title": "Watch",
-  "description": "Watch icon from Run category.",
-  "registryDependencies": [
-    "icons-run-types"
-  ],
+  "description": "Watch icon from run category.",
   "files": [
     {
       "path": "registry/icons/run/watch/index.tsx",

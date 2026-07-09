@@ -3,10 +3,7 @@
   "name": "icons-general-general-settings",
   "type": "registry:ui",
   "title": "Settings",
-  "description": "Settings icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Settings icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/settings/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "settings",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

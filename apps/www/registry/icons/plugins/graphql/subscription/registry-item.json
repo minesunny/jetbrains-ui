@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Subscription",
   "description": "Subscription icon from Plugins Graphql category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/graphql/subscription/index.tsx",

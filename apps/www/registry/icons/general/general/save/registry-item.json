@@ -3,10 +3,7 @@
   "name": "icons-general-general-save",
   "type": "registry:ui",
   "title": "Save",
-  "description": "Save icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Save icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/save/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "save",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

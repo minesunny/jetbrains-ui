@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Javaee App Module",
   "description": "Javaee App Module icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/javaee-app-module/index.tsx",

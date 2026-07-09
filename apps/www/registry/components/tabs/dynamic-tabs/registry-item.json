@@ -1,0 +1,52 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dynamic-tabs",
+  "type": "registry:ui",
+  "title": "Dynamic Tabs",
+  "description": "Data-driven tab bar with per-tab context menu, close/pin actions, and pinned tab protection.",
+  "registryDependencies": [
+    "context-menu",
+    "scroll-area",
+    "icons-general-general-close",
+    "icons-general-general-pin"
+  ],
+  "files": [
+    {
+      "path": "registry/components/tabs/dynamic-tabs/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tabs/dynamic-tabs/index.tsx"
+    },
+    {
+      "path": "registry/components/tabs/dynamic-tabs.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/tabs/dynamic-tabs/dynamic-tabs.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "tabs",
+      "dynamic",
+      "context-menu",
+      "pin",
+      "close",
+      "navigation",
+      "jetbrains",
+      "ui",
+      "component"
+    ],
+    "category": "navigation",
+    "docs": {
+      "description": "Data-driven tab bar with built-in context menu, close, and pin support.",
+      "features": [
+        "Data-driven tab items",
+        "Per-tab context menu (default ON)",
+        "Close, Close Others, Close Left/Right actions",
+        "Pin/Unpin tab support",
+        "Pinned tabs protected from close actions",
+        "Custom context menu render function",
+        "Controlled and uncontrolled active tab",
+        "Token-driven light/dark theme support"
+      ]
+    }
+  }
+}

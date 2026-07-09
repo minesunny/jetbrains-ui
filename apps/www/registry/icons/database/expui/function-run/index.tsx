@@ -1,0 +1,55 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
+import { cn } from '@/lib/utils';
+
+export const FunctionRun = ({
+  size = 16,
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M8 9.50399C8 7.54109 10.1585 6.34387 11.8237 7.38319L14.8811 9.29147C14.9592 8.87289 15 8.44121 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15C8.01618 15 8.03234 14.9999 8.04849 14.9998C8.01677 14.8397 8 14.6727 8 14.4997V9.50399Z"
+      className="fill-[#EDF3FF] dark:fill-[#25324D]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M6 5V11H7V9H9V8H7V6H10V5H6Z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      d="M2 8C2 11.3137 4.68629 14 8 14V14.4997C8 14.6727 8.01677 14.8397 8.04849 14.9998C8.03234 14.9999 8.01618 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 8.44121 14.9592 8.87289 14.8811 9.29147L13.9578 8.7152C13.9857 8.48068 14 8.24201 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8Z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9 9.50215C9 8.32441 10.2951 7.60608 11.2942 8.22967L15.2962 10.7275C16.2372 11.3149 16.2372 12.6851 15.2962 13.2725L11.2942 15.7703C10.2951 16.3939 9 15.6756 9 14.4978V9.50215ZM10.7647 9.07799C10.4317 8.87013 10 9.10957 10 9.50215V14.4978C10 14.8904 10.4317 15.1298 10.7647 14.922L14.7667 12.4241C15.0804 12.2284 15.0804 11.7716 14.7667 11.5758L10.7647 9.07799Z"
+      className="fill-[#208A3C] dark:fill-[#57965C]"
+    />
+    <path
+      d="M10 9.50214C10 9.10956 10.4317 8.87012 10.7647 9.07798L14.7667 11.5758C15.0804 11.7716 15.0804 12.2284 14.7667 12.4241L10.7647 14.922C10.4317 15.1298 10 14.8904 10 14.4978V9.50214Z"
+      className="fill-[#F2FCF3] dark:fill-[#253627]"
+    />
+  </svg>
+);
+
+export default FunctionRun;

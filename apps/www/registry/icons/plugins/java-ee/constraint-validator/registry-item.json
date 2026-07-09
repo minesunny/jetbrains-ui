@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Constraint Validator",
   "description": "Constraint Validator icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/constraint-validator/index.tsx",

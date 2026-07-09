@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Factory",
   "description": "Factory icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/factory/index.tsx",

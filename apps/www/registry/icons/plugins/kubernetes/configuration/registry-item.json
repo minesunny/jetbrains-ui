@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Configuration",
   "description": "Configuration icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/configuration/index.tsx",

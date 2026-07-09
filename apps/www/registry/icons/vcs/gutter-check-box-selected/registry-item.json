@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-gutter-check-box-selected",
+  "type": "registry:ui",
+  "title": "Gutter Check Box Selected",
+  "description": "Gutter Check Box Selected icon from vcs category.",
+  "files": [
+    {
+      "path": "registry/icons/vcs/gutter-check-box-selected/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/gutter-check-box-selected/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "gutter-check-box-selected",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

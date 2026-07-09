@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Persistence Relationship",
   "description": "Persistence Relationship icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/persistence-relationship/index.tsx",

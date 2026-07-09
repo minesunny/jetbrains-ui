@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cmake Modificator",
   "description": "Cmake Modificator icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/cmake-modificator/index.tsx",

@@ -3,10 +3,7 @@
   "name": "icons-general-general-add",
   "type": "registry:ui",
   "title": "Add",
-  "description": "Add icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Add icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/add/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "add",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

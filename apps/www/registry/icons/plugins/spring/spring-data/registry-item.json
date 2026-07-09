@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Spring Data",
   "description": "Spring Data icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/spring-data/index.tsx",

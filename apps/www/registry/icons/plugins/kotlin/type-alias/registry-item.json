@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Type Alias",
   "description": "Type Alias icon from Plugins Kotlin category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kotlin/type-alias/index.tsx",

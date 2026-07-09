@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Infrastructure Bean",
   "description": "Infrastructure Bean icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/infrastructure-bean/index.tsx",

@@ -3,10 +3,7 @@
   "name": "icons-general-actions-lightning",
   "type": "registry:ui",
   "title": "Lightning",
-  "description": "Lightning icon from General Actions category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Lightning icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/actions/lightning/index.tsx",
@@ -19,7 +16,6 @@
       "lightning",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

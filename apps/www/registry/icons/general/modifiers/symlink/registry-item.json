@@ -3,10 +3,7 @@
   "name": "icons-general-modifiers-symlink",
   "type": "registry:ui",
   "title": "Symlink",
-  "description": "Symlink icon from General Modifiers category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Symlink icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/modifiers/symlink/index.tsx",
@@ -19,7 +16,6 @@
       "symlink",
       "icon",
       "general",
-      "modifiers",
       "jetbrains"
     ]
   }

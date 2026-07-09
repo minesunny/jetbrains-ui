@@ -1,96 +1,55 @@
-import type { FC } from 'react';
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
 
-export type LevelAutoProps = IconProps;
-
-const LevelAutoLight: FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title ? <title>{title}</title> : null}
-    <path
-      d="M8 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z"
-      fill="#EBECF0"
-    />
-    <circle cx="10" cy="11" r="1" fill="#6C707E" />
-    <circle cx="10" cy="5" r="1" fill="#6C707E" />
-    <path d="M11 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0" fill="#6C707E" />
-    <path
-      d="M9 2.5h2A1.5 1.5 0 0 1 12.5 4v8a1.5 1.5 0 0 1-1.5 1.5H9A1.5 1.5 0 0 1 7.5 12V4A1.5 1.5 0 0 1 9 2.5Z"
-      stroke="#6C707E"
-    />
-  </svg>
-);
-
-const LevelAutoDark: FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title ? <title>{title}</title> : null}
-    <path
-      d="M8 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z"
-      fill="#43454A"
-    />
-    <circle cx="10" cy="11" r="1" fill="#CED0D6" />
-    <circle cx="10" cy="5" r="1" fill="#CED0D6" />
-    <path d="M11 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0" fill="#CED0D6" />
-    <path
-      d="M9 2.5h2A1.5 1.5 0 0 1 12.5 4v8a1.5 1.5 0 0 1-1.5 1.5H9A1.5 1.5 0 0 1 7.5 12V4A1.5 1.5 0 0 1 9 2.5Z"
-      stroke="#CED0D6"
-    />
-  </svg>
-);
-
-export const LevelAuto: FC<LevelAutoProps> = ({
-  size = 'md',
-  mode = 'light',
+export const LevelAuto = ({
+  size = 16,
   className,
   'aria-label': ariaLabel,
-  title,
   ...props
-}) => {
-  const SvgComponent = mode === 'light' ? LevelAutoLight : LevelAutoDark;
-
-  return (
-    <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
-      title={title}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M8 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
     />
-  );
-};
+    <circle
+      cx={10}
+      cy={11}
+      r={1}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <circle
+      cx={10}
+      cy={5}
+      r={1}
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="M11 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="M9 2.5h2A1.5 1.5 0 0 1 12.5 4v8a1.5 1.5 0 0 1-1.5 1.5H9A1.5 1.5 0 0 1 7.5 12V4A1.5 1.5 0 0 1 9 2.5Z"
+      className="stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+  </svg>
+);
+
+export default LevelAuto;

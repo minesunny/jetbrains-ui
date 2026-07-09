@@ -1,0 +1,119 @@
+---
+title: IDEA Window
+description: IntelliJ IDEA-style window layout with resizable, collapsible panels.
+author:
+  name: minesunny
+  url: https://github.com/minesunny
+releaseDate: 2025-05-17
+---
+
+<ComponentPreview name="demo-idea-window" />
+
+## Overview
+
+A compound component that recreates the IntelliJ IDEA window layout with fixed bars, resizable panels, and collapsible side/bottom panels with layout persistence.
+
+## Installation
+
+<ComponentInstallation name="idea-window" />
+
+## Usage
+
+```tsx
+import {
+  IdeaWindow,
+  IdeaTopBar,
+  IdeaBottomBar,
+  IdeaLeftBar,
+  IdeaRightBar,
+  IdeaPanel,
+  IdeaBottomPanel,
+} from '@/components/jetbrains-ui/idea-window';
+
+<IdeaWindow autoSaveId="my-layout">
+  <IdeaTopBar>
+    <span>Menu</span>
+  </IdeaTopBar>
+
+  <IdeaLeftBar>
+    <ToolIcons />
+  </IdeaLeftBar>
+
+  <IdeaPanel id="left" defaultSize={20} collapsible>
+    <ProjectTree />
+  </IdeaPanel>
+  <IdeaPanel id="center" defaultSize={60}>
+    <EditorArea />
+  </IdeaPanel>
+  <IdeaPanel id="right" defaultSize={20} collapsible>
+    <DebugPanel />
+  </IdeaPanel>
+
+  <IdeaRightBar>
+    <ToolIcons />
+  </IdeaRightBar>
+
+  <IdeaBottomPanel id="bottom" defaultSize={25} collapsible>
+    <Terminal />
+  </IdeaBottomPanel>
+
+  <IdeaBottomBar>
+    <StatusBar />
+  </IdeaBottomBar>
+</IdeaWindow>;
+```
+
+## Components
+
+### IdeaWindow
+
+Root container. Distributes child slots into the correct layout positions.
+
+| Prop         | Type     | Default | Description                      |
+| ------------ | -------- | ------- | -------------------------------- |
+| `autoSaveId` | `string` | —       | Persistence key for localStorage |
+| `className`  | `string` | —       | Root container class             |
+
+### IdeaPanel / IdeaBottomPanel
+
+Resizable panels. `IdeaPanel` is horizontal (left/center/right), `IdeaBottomPanel` spans full width vertically.
+
+| Prop                | Type                           | Default  | Description                      |
+| ------------------- | ------------------------------ | -------- | -------------------------------- |
+| `id`                | `string`                       | required | Unique panel identifier          |
+| `defaultSize`       | `number`                       | —        | Initial size percentage          |
+| `minSize`           | `number`                       | `5`      | Minimum size percentage          |
+| `maxSize`           | `number`                       | —        | Maximum size percentage          |
+| `collapsible`       | `boolean`                      | `false`  | Enable collapse/expand           |
+| `defaultCollapsed`  | `boolean`                      | `false`  | Start collapsed                  |
+| `onCollapsedChange` | `(collapsed: boolean) => void` | —        | Collapse state callback          |
+| `ref`               | `PanelImperativeHandle`        | —        | For programmatic collapse/expand |
+
+### IdeaTopBar / IdeaBottomBar / IdeaLeftBar / IdeaRightBar
+
+Fixed-position bar slots. Accept all standard `div` props and `children`.
+
+## Collapse/Expand
+
+Use `useIdeaWindow()` in any child component to control panels by ID:
+
+```tsx
+import { useIdeaWindow } from '@/components/jetbrains-ui/idea-window';
+
+function ToolbarButton() {
+  const { toggle, collapse, expand, isCollapsed } = useIdeaWindow();
+
+  return (
+    <button onClick={() => toggle('left')}>
+      {isCollapsed('left') ? 'Show' : 'Hide'} Project
+    </button>
+  );
+}
+```
+
+| Method        | Signature                      | Description            |
+| ------------- | ------------------------------ | ---------------------- |
+| `collapse`    | `(panelId: string) => void`    | Collapse a panel       |
+| `expand`      | `(panelId: string) => void`    | Expand a panel         |
+| `toggle`      | `(panelId: string) => void`    | Toggle collapse/expand |
+| `isCollapsed` | `(panelId: string) => boolean` | Check if collapsed     |

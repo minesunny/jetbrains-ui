@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-magic-resolve",
+  "type": "registry:ui",
+  "title": "Magic Resolve",
+  "description": "Magic Resolve icon from vcs category.",
+  "files": [
+    {
+      "path": "registry/icons/vcs/magic-resolve/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/magic-resolve/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "magic-resolve",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

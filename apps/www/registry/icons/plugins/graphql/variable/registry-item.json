@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Variable",
   "description": "Variable icon from Plugins Graphql category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/graphql/variable/index.tsx",

@@ -1,16 +1,15 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "buttons",
+  "name": "button",
   "type": "registry:ui",
   "title": "Buttons",
   "description": "JetBrains UI 风格的按钮组件集合，当前包含 Button。",
   "dependencies": ["@radix-ui/react-slot"],
-  "registryDependencies": ["utils", "tooltip"],
   "files": [
     {
       "path": "registry/components/button/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/buttons/index.tsx"
+      "target": "components/jetbrains-ui/button.tsx"
     }
   ],
   "meta": {

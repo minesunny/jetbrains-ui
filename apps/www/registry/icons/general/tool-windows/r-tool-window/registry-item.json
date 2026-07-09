@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-tool-windows-r-tool-window",
+  "type": "registry:ui",
+  "title": "R Tool Window",
+  "description": "R Tool Window icon from general category.",
+  "files": [
+    {
+      "path": "registry/icons/general/tool-windows/r-tool-window/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/tool-windows/r-tool-window/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "r-tool-window",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

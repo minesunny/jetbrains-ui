@@ -1,16 +1,17 @@
-import type { FC } from 'react';
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
-import { type IconProps, type SvgProps, sizeMap } from '../types';
 
-export type EclipseProps = IconProps;
-
-const EclipseLight: FC<SvgProps> = ({
-  size,
+export const Eclipse = ({
+  size = 16,
   className,
-  title,
-  role,
   'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
+  ...props
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
 }) => (
   <svg
     width={size}
@@ -18,171 +19,57 @@ const EclipseLight: FC<SvgProps> = ({
     viewBox="0 0 16 16"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
     aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
+    aria-hidden={!ariaLabel}
+    {...props}
   >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.853 9.81H2.707q.426 1.463 1.583 2.621 1.847 1.847 4.443 1.846.518 0 1.007-.074 1.955-.295 3.423-1.771 1.165-1.159 1.595-2.622H4.853M3.67 6.895H2.547a7 7 0 0 0-.082.756H15a7 7 0 0 0-.082-.756M2.466 8.353q.02.387.082.755h12.369000000000002q.063-.368.083-.755M14.758 6.193q-.428-1.467-1.595-2.634-1.464-1.462-3.413-1.757a7 7 0 0 0-1.017-.076q-2.597 0-4.443 1.833-1.158 1.167-1.584 2.634"
-      fill="#2C2255"
+      className="fill-[#2C2255] dark:hidden"
     />
     <path
       d="M2.094 8.002c0-3.311 2.486-6.062 5.72-6.546q-.12-.005-.241-.006C3.943 1.45 1 4.383 1 8.002s2.943 6.551 6.573 6.551q.122 0 .242-.006c-3.235-.483-5.721-3.234-5.721-6.545"
-      fill="#F7941E"
+      className="fill-[#F7941E] dark:hidden"
     />
     <path
       d="M12.998 7.65a4.3 4.3 0 0 0-.13-.755h-8.27a4.3 4.3 0 0 0-.13.755z"
-      fill="url(#a)"
+      className="fill-[url(#a)] dark:hidden"
     />
     <path
       d="M12.998 8.353h-8.53q.03.389.13.755h8.27a4.3 4.3 0 0 0 .13-.755"
-      fill="url(#b)"
+      className="fill-[url(#b)] dark:hidden"
     />
     <path
       d="M8.733 12.282a4.28 4.28 0 0 0 3.88-2.472h-7.76a4.28 4.28 0 0 0 3.88 2.472"
-      fill="url(#c)"
+      className="fill-[url(#c)] dark:hidden"
     />
-    <defs>
-      <linearGradient
-        id="a"
-        x1="8.733"
-        y1="15.129"
-        x2="8.733"
-        y2="5.689"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".872" stopColor="#2C2255" />
-      </linearGradient>
-      <linearGradient
-        id="b"
-        x1="8.733"
-        y1="15.13"
-        x2="8.733"
-        y2="5.689"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".872" stopColor="#2C2255" />
-      </linearGradient>
-      <linearGradient
-        id="c"
-        x1="8.733"
-        y1="15.129"
-        x2="8.733"
-        y2="5.689"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".863" stopColor="#2C2255" />
-      </linearGradient>
-    </defs>
-  </svg>
-);
-
-const EclipseDark: FC<SvgProps> = ({
-  size,
-  className,
-  title,
-  role,
-  'aria-label': ariaLabel,
-  'aria-hidden': ariaHidden,
-}) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 16 16"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    role={role}
-    aria-label={ariaLabel}
-    aria-hidden={ariaHidden}
-  >
-    {title ? <title>{title}</title> : null}
     <path
       d="M4.853 9.81H2.707q.426 1.463 1.583 2.622 1.847 1.845 4.443 1.845.518 0 1.007-.074 1.955-.295 3.423-1.771 1.165-1.159 1.595-2.622H4.853M3.67 6.895H2.547a7 7 0 0 0-.082.756H15a7 7 0 0 0-.082-.756M2.466 8.353q.02.387.082.755h12.369000000000002q.063-.369.083-.755M14.758 6.193q-.428-1.467-1.595-2.634-1.464-1.462-3.413-1.757a7 7 0 0 0-1.017-.076q-2.597 0-4.443 1.833-1.158 1.167-1.584 2.634"
-      fill="#2C2255"
+      className="fill-[#2C2255] hidden dark:block"
     />
     <path
       d="M2.094 8.002c0-3.311 2.486-6.062 5.72-6.546q-.12-.005-.241-.006C3.943 1.45 1 4.383 1 8.002s2.943 6.551 6.573 6.551q.122 0 .242-.006c-3.235-.483-5.721-3.234-5.721-6.545"
-      fill="#F7941E"
+      className="fill-[#F7941E] hidden dark:block"
     />
     <path
       d="M12.998 7.65a4.3 4.3 0 0 0-.13-.755h-8.27a4.3 4.3 0 0 0-.13.756z"
-      fill="url(#a)"
+      className="fill-[url(#a)] hidden dark:block"
     />
     <path
       d="M12.998 8.353h-8.53q.03.389.13.755h8.27a4.3 4.3 0 0 0 .13-.755"
-      fill="url(#b)"
+      className="fill-[url(#b)] hidden dark:block"
     />
     <path
       d="M8.733 12.282a4.28 4.28 0 0 0 3.88-2.472h-7.76a4.28 4.28 0 0 0 3.88 2.472"
-      fill="url(#c)"
+      className="fill-[url(#c)] hidden dark:block"
     />
     <path
       d="M3.836 8.353H14.99a6 6 0 0 0-.002-.703H2.466a6 6 0 0 0-.002.703zM4.828 6.193H2.706a6 6 0 0 0-.158.702h12.33a6 6 0 0 0-.169-.702M14.071 9.108H2.548c.042.24.09.474.158.702H14.75a6 6 0 0 0 .166-.702z"
-      fill="#fff"
+      className="fill-[#fff] hidden dark:block"
     />
-    <defs>
-      <linearGradient
-        id="a"
-        x1="8.733"
-        y1="15.129"
-        x2="8.733"
-        y2="5.689"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".872" stopColor="#2C2255" />
-      </linearGradient>
-      <linearGradient
-        id="b"
-        x1="8.733"
-        y1="15.13"
-        x2="8.733"
-        y2="5.689"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".872" stopColor="#2C2255" />
-      </linearGradient>
-      <linearGradient
-        id="c"
-        x1="8.733"
-        y1="15.129"
-        x2="8.733"
-        y2="5.689"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset=".303" stopColor="#473788" />
-        <stop offset=".863" stopColor="#2C2255" />
-      </linearGradient>
-    </defs>
   </svg>
 );
 
-export const Eclipse: FC<EclipseProps> = ({
-  size = 'md',
-  mode = 'light',
-  className,
-  'aria-label': ariaLabel,
-  title,
-  ...props
-}) => {
-  const SvgComponent = mode === 'light' ? EclipseLight : EclipseDark;
-
-  return (
-    <SvgComponent
-      size={sizeMap[size]}
-      className={cn('inline-block flex-shrink-0', className)}
-      title={title}
-      role={ariaLabel ? 'img' : 'presentation'}
-      aria-label={ariaLabel}
-      aria-hidden={!ariaLabel}
-      {...props}
-    />
-  );
-};
+export default Eclipse;

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Bazel Error",
   "description": "Bazel Error icon from Plugins Bazel category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/bazel/bazel-error/index.tsx",

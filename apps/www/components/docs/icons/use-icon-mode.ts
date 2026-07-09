@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 
 export type IconMode = 'light' | 'dark';
@@ -8,8 +8,14 @@ export type IconMode = 'light' | 'dark';
 export function useIconMode() {
   const { resolvedTheme } = useTheme();
   const [manualMode, setManualMode] = useState<IconMode | null>(null);
+  const [mounted, setMounted] = useState(false);
 
-  const siteMode: IconMode = resolvedTheme === 'dark' ? 'dark' : 'light';
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const siteMode: IconMode =
+    mounted && resolvedTheme === 'dark' ? 'dark' : 'light';
 
   return [manualMode ?? siteMode, setManualMode] as const;
 }

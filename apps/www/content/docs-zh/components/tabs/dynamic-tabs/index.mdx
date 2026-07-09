@@ -1,133 +1,196 @@
 ---
 title: Dynamic Tabs
-description: 基于 Tabs 的数据驱动封装组件。
+description: 数据驱动的标签栏组件，支持右键菜单、关闭和固定。
 author:
   name: minesunny
   url: https://github.com/minesunny
-releaseDate: 2025-03-01
+releaseDate: 2026-05-17
 ---
+
+<ComponentPreview name="tabs-dynamic-tabs-demo" />
 
 ## 概述
 
-`Dynamic Tabs` 由 `DynamicTabs` 组件实现，是对 `Tabs` 的封装，可通过 `items` 数组自动渲染触发器和内容区。
+`DynamicTabsList` 从 items 数组渲染数据驱动的标签栏。每个标签带有关闭/固定按钮和右键上下文菜单。内容渲染由消费者控制——组件只管理标签栏。
+
+## 安装
+
+<ComponentInstallation name="dynamic-tabs" />
 
 ## 用法
 
-### 基本用法
+### 基础用法
 
 ```tsx
-import { DynamicTabs } from '@/components/jetbrains-ui/tabs';
+import { useState, useCallback, memo } from 'react';
+import {
+  DynamicTabsList,
+  type DynamicTabItem,
+} from '@/components/jetbrains-ui/tabs/dynamic-tabs';
 
-const items = [
-  { value: 'overview', label: '概览', content: '概览内容' },
-  { value: 'settings', label: '设置', content: '设置内容' },
+const tabs: DynamicTabItem[] = [
+  { id: 'main', label: 'main.ts', pinned: true },
+  { id: 'app', label: 'app.tsx' },
+  { id: 'utils', label: 'utils.ts' },
 ];
 
-<DynamicTabs items={items} defaultValue="overview" />;
+function Example() {
+  const [items, setItems] = useState(tabs);
+  const [activeId, setActiveId] = useState('main');
+
+  const closeTabs = useCallback((ids: string[]) => {
+    setItems((prev) => prev.filter((t) => !ids.includes(t.id)));
+  }, []);
+
+  const togglePin = useCallback((tabId: string) => {
+    setItems((prev) =>
+      prev.map((t) => (t.id === tabId ? { ...t, pinned: !t.pinned } : t)),
+    );
+  }, []);
+
+  return (
+    <>
+      <DynamicTabsList
+        items={items}
+        activeTab={activeId}
+        onActiveChange={setActiveId}
+        closeTabs={closeTabs}
+        togglePin={togglePin}
+      />
+      <div>
+        {items.map((tab) => (
+          <div
+            key={tab.id}
+            style={{ display: tab.id === activeId ? undefined : 'none' }}
+          >
+            <MemoizedContent tabId={tab.id} />
+          </div>
+        ))}
+      </div>
+    </>
+  );
+}
 ```
 
-### 受控模式
+### 防止内容重复渲染
+
+在内容组件上使用 `React.memo`，非活动标签使用 `display: none` 隐藏。这保持重型内容（编辑器、表格）始终挂载但隐藏，避免标签切换时的重复渲染：
 
 ```tsx
-const [value, setValue] = React.useState('overview');
-
-<DynamicTabs
-  items={items}
-  value={value}
-  onValueChange={setValue}
-  orientation="horizontal"
-/>;
+const MemoizedContent = memo(function Content({ tabId }: { tabId: string }) {
+  return <Editor tabId={tabId} />;
+});
 ```
+
+### 禁用右键菜单
+
+```tsx
+<DynamicTabsList items={items} contextMenu={null} />
+```
+
+### 自定义右键菜单
+
+```tsx
+<DynamicTabsList
+  items={items}
+  contextMenu={(tab, index, actions) => (
+    <>
+      <ContextMenuItem onSelect={() => actions.close?.()}>
+        自定义关闭
+      </ContextMenuItem>
+    </>
+  )}
+/>
+```
+
+## 右键菜单操作
+
+| 操作            | 描述                     | 禁用条件                               |
+| --------------- | ------------------------ | -------------------------------------- |
+| 固定 / 取消固定 | 切换固定状态             | 未提供 `togglePin`                     |
+| 关闭            | 关闭当前标签             | 标签已固定，或未提供 `closeTabs`       |
+| 关闭其他        | 关闭其他所有未固定的标签 | 未提供 `closeTabs`                     |
+| 关闭左侧标签    | 关闭左侧未固定的标签     | 左侧无未固定标签，或未提供 `closeTabs` |
+| 关闭右侧标签    | 关闭右侧未固定的标签     | 右侧无未固定标签，或未提供 `closeTabs` |
+
+所有关闭范围操作自动跳过已固定的标签。
 
 ## API 参考
 
-### DynamicTabs
+### DynamicTabsList
 
 <TypeTable
   type={{
     items: {
-      description: '用于渲染触发器与内容区的数据源',
-      type: 'DynamicTabsItem[]',
+      description: '要渲染的标签项数组',
+      type: 'DynamicTabItem[]',
       required: true,
     },
-    value: {
-      description: '受控激活标签值',
+    activeTab: {
+      description: '受控的活动标签 ID',
       type: 'string',
       required: false,
     },
-    defaultValue: {
-      description: '默认激活标签值',
+    defaultActiveTab: {
+      description: '默认活动标签 ID（非受控模式）',
       type: 'string',
       required: false,
     },
-    onValueChange: {
-      description: '标签切换时触发回调',
-      type: '(value: string) => void',
+    onActiveChange: {
+      description: '活动标签变更时的回调',
+      type: '(tabId: string) => void',
       required: false,
     },
-    orientation: {
-      description: '标签方向',
-      type: '"horizontal" | "vertical"',
-      required: false,
-      default: '"horizontal"',
-    },
-    listClassName: {
-      description: 'TabsList 额外 className',
-      type: 'string',
+    closeTabs: {
+      description: '关闭标签的回调。接收要关闭的 ID 数组。',
+      type: '(tabIds: string[]) => void',
       required: false,
     },
-    triggerClassName: {
-      description: '所有 TabsTrigger 的额外 className',
-      type: 'string',
+    togglePin: {
+      description: '切换标签固定状态的回调',
+      type: '(tabId: string) => void',
       required: false,
     },
-    contentClassName: {
-      description: '所有 TabsContent 的额外 className',
-      type: 'string',
+    contextMenu: {
+      description: '自定义右键菜单渲染函数，传入 null 禁用',
+      type: 'DynamicTabContextMenuFn | null',
       required: false,
-    },
-    emptyContent: {
-      description: 'items 为空时的兜底内容',
-      type: 'React.ReactNode',
-      required: false,
+      default: '默认右键菜单',
     },
   }}
 />
 
-### DynamicTabsItem
+### DynamicTabItem
 
 <TypeTable
   type={{
-    value: {
-      description: '用于触发器与内容匹配的唯一值',
+    id: {
+      description: '标签的唯一标识符',
       type: 'string',
       required: true,
     },
     label: {
-      description: '触发器显示内容',
-      type: 'React.ReactNode',
+      description: '标签的显示文本',
+      type: 'string',
       required: true,
     },
-    content: {
-      description: '在 TabsContent 中渲染的内容',
-      type: 'React.ReactNode',
-      required: true,
+    icon: {
+      description: '标签前显示的图标名称（来自 SVG 注册表）',
+      type: 'string',
+      required: false,
     },
-    disabled: {
-      description: '是否禁用该标签项',
+    pinned: {
+      description:
+        '是否固定标签。固定的标签显示固定图标代替关闭按钮，且受保护不被关闭操作影响。',
       type: 'boolean',
       required: false,
       default: 'false',
     },
-    triggerClassName: {
-      description: '当前标签触发器的额外 className',
-      type: 'string',
+    disabled: {
+      description: '是否禁用标签',
+      type: 'boolean',
       required: false,
-    },
-    contentClassName: {
-      description: '当前标签内容区的额外 className',
-      type: 'string',
-      required: false,
+      default: 'false',
     },
   }}
 />

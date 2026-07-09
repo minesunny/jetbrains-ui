@@ -50,7 +50,7 @@ describe('ComboBox', () => {
     renderComboBox();
     const trigger = screen.getByRole('combobox');
     expect(trigger).toBeInTheDocument();
-    expect(trigger.className).toContain('text-ui-default');
+    expect(trigger.className).toContain('text-default');
   });
 
   it('shows placeholder text', () => {
@@ -213,9 +213,7 @@ describe('ComboBoxTrigger', () => {
       </ComboBox>,
     );
 
-    expect(screen.getByRole('combobox')).toHaveClass(
-      'combo-box-trigger--size-md',
-    );
+    expect(screen.getByRole('combobox')).toHaveClass('w-[224px]');
   });
 });
 

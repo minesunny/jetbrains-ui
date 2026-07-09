@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "High All",
   "description": "High All icon from Plugins Package Checker category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/package-checker/high-all/index.tsx",

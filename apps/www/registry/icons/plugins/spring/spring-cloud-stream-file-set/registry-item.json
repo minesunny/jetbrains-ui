@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Spring Cloud Stream File Set",
   "description": "Spring Cloud Stream File Set icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/spring-cloud-stream-file-set/index.tsx",

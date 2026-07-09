@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Tasks Icons",
   "description": "All 2 icons from the Plugins Tasks category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/tasks/index.ts",

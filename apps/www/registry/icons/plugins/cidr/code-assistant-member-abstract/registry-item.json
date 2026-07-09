@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Code Assistant Member Abstract",
   "description": "Code Assistant Member Abstract icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/code-assistant-member-abstract/index.tsx",

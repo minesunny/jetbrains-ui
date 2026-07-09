@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Scala Test",
   "description": "Scala Test icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/scala-test/index.tsx",

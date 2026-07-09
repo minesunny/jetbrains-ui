@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cmake Macro",
   "description": "Cmake Macro icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/cmake-macro/index.tsx",

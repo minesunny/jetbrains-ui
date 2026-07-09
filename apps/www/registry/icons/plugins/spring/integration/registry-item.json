@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Integration",
   "description": "Integration icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/integration/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Persistence Embeddable",
   "description": "Persistence Embeddable icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/persistence-embeddable/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Generic Ui",
   "description": "Generic Ui icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/generic-ui/index.tsx",

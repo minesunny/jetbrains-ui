@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Code Assistant Operator",
   "description": "Code Assistant Operator icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/code-assistant-operator/index.tsx",

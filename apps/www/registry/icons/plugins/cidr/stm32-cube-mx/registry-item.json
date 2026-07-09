@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Stm32 Cube Mx",
   "description": "Stm32 Cube Mx icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/stm32-cube-mx/index.tsx",

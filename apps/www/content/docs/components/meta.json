@@ -12,6 +12,7 @@
     "svg",
     "dropdown-menu",
     "context-menu",
+    "dialog",
     "input",
     "radio",
     "scroll-area",
@@ -19,6 +20,8 @@
     "combo-box",
     "tabs",
     "tree",
+    "idea-window",
+    "code-editor",
     "toggle",
     "tooltip"
   ]

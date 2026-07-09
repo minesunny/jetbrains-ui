@@ -1,0 +1,118 @@
+/**
+ * JetBrains Theme
+ * Tailwind v4 @theme 桥接，使 JetBrains tokens 在 Tailwind 中可用
+ * 必须在 tokens.css 之后导入
+ */
+
+@theme inline {
+  /* JetBrains Palette */
+  --color-gray-1: var(--jb-gray-1);
+  --color-gray-2: var(--jb-gray-2);
+  --color-gray-3: var(--jb-gray-3);
+  --color-gray-4: var(--jb-gray-4);
+  --color-gray-5: var(--jb-gray-5);
+  --color-gray-6: var(--jb-gray-6);
+  --color-gray-7: var(--jb-gray-7);
+  --color-gray-8: var(--jb-gray-8);
+  --color-gray-9: var(--jb-gray-9);
+  --color-gray-10: var(--jb-gray-10);
+  --color-gray-11: var(--jb-gray-11);
+  --color-gray-12: var(--jb-gray-12);
+  --color-gray-13: var(--jb-gray-13);
+  --color-gray-14: var(--jb-gray-14);
+
+  --color-blue-1: var(--jb-blue-1);
+  --color-blue-2: var(--jb-blue-2);
+  --color-blue-3: var(--jb-blue-3);
+  --color-blue-4: var(--jb-blue-4);
+  --color-blue-5: var(--jb-blue-5);
+  --color-blue-6: var(--jb-blue-6);
+  --color-blue-7: var(--jb-blue-7);
+  --color-blue-8: var(--jb-blue-8);
+  --color-blue-9: var(--jb-blue-9);
+  --color-blue-10: var(--jb-blue-10);
+  --color-blue-11: var(--jb-blue-11);
+  --color-blue-12: var(--jb-blue-12);
+  --color-blue-13: var(--jb-blue-13);
+
+  --color-green-1: var(--jb-green-1);
+  --color-green-2: var(--jb-green-2);
+  --color-green-3: var(--jb-green-3);
+  --color-green-4: var(--jb-green-4);
+  --color-green-5: var(--jb-green-5);
+  --color-green-6: var(--jb-green-6);
+  --color-green-7: var(--jb-green-7);
+  --color-green-8: var(--jb-green-8);
+  --color-green-9: var(--jb-green-9);
+  --color-green-10: var(--jb-green-10);
+  --color-green-11: var(--jb-green-11);
+
+  --color-yellow-1: var(--jb-yellow-1);
+  --color-yellow-2: var(--jb-yellow-2);
+  --color-yellow-3: var(--jb-yellow-3);
+  --color-yellow-4: var(--jb-yellow-4);
+  --color-yellow-5: var(--jb-yellow-5);
+  --color-yellow-6: var(--jb-yellow-6);
+  --color-yellow-7: var(--jb-yellow-7);
+  --color-yellow-8: var(--jb-yellow-8);
+  --color-yellow-9: var(--jb-yellow-9);
+  --color-yellow-10: var(--jb-yellow-10);
+
+  --color-red-1: var(--jb-red-1);
+  --color-red-2: var(--jb-red-2);
+  --color-red-3: var(--jb-red-3);
+  --color-red-4: var(--jb-red-4);
+  --color-red-5: var(--jb-red-5);
+  --color-red-6: var(--jb-red-6);
+  --color-red-7: var(--jb-red-7);
+  --color-red-8: var(--jb-red-8);
+  --color-red-9: var(--jb-red-9);
+  --color-red-10: var(--jb-red-10);
+  --color-red-11: var(--jb-red-11);
+  --color-red-12: var(--jb-red-12);
+
+  --color-orange-1: var(--jb-orange-1);
+  --color-orange-2: var(--jb-orange-2);
+  --color-orange-3: var(--jb-orange-3);
+  --color-orange-4: var(--jb-orange-4);
+  --color-orange-5: var(--jb-orange-5);
+  --color-orange-6: var(--jb-orange-6);
+  --color-orange-7: var(--jb-orange-7);
+  --color-orange-8: var(--jb-orange-8);
+  --color-orange-9: var(--jb-orange-9);
+
+  --color-teal-1: var(--jb-teal-1);
+  --color-teal-2: var(--jb-teal-2);
+  --color-teal-3: var(--jb-teal-3);
+  --color-teal-4: var(--jb-teal-4);
+  --color-teal-5: var(--jb-teal-5);
+  --color-teal-6: var(--jb-teal-6);
+  --color-teal-7: var(--jb-teal-7);
+  --color-teal-8: var(--jb-teal-8);
+  --color-teal-9: var(--jb-teal-9);
+
+  --color-purple-1: var(--jb-purple-1);
+  --color-purple-2: var(--jb-purple-2);
+  --color-purple-3: var(--jb-purple-3);
+  --color-purple-4: var(--jb-purple-4);
+  --color-purple-5: var(--jb-purple-5);
+  --color-purple-6: var(--jb-purple-6);
+  --color-purple-7: var(--jb-purple-7);
+  --color-purple-8: var(--jb-purple-8);
+  --color-purple-9: var(--jb-purple-9);
+  --color-purple-10: var(--jb-purple-10);
+
+  /* JetBrains Typography */
+  --text-sm: 0.75rem; /* 12px */
+  --text-sm--line-height: 1.375rem; /* 22px */
+
+  --text-default: 0.8125rem; /* 13px */
+  --text-default--line-height: 1.375rem; /* 22px */
+
+  /* Z-Index */
+  --z-popover: var(--jb-z-popover);
+
+  /* Shadows */
+  --shadow-popover: var(--jb-shadow-popover);
+  --shadow-popover-dark: var(--jb-shadow-popover-dark);
+}

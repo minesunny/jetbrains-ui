@@ -3,10 +3,7 @@
   "name": "icons-general-general-copy",
   "type": "registry:ui",
   "title": "Copy",
-  "description": "Copy icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Copy icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/copy/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "copy",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

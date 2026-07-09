@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Application Extension",
   "description": "Application Extension icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/application-extension/index.tsx",

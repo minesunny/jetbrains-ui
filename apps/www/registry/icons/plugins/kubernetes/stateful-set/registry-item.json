@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Stateful Set",
   "description": "Stateful Set icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/stateful-set/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Pod Security Policy",
   "description": "Pod Security Policy icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/pod-security-policy/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Value Muted",
   "description": "Value Muted icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/value-muted/index.tsx",

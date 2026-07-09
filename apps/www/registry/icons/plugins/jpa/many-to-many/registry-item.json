@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Many To Many",
   "description": "Many To Many icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/many-to-many/index.tsx",

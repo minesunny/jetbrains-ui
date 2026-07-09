@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Relay",
   "description": "Relay icon from Plugins Graphql category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/graphql/relay/index.tsx",

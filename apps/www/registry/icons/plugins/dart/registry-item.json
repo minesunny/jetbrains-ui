@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Dart Icons",
   "description": "All 6 icons from the Plugins Dart category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/dart/index.ts",

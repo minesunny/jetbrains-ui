@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-vcs-changes-update",
+  "type": "registry:ui",
+  "title": "Changes Update",
+  "description": "Changes Update icon from vcs category.",
+  "files": [
+    {
+      "path": "registry/icons/vcs/changes-update/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/vcs/changes-update/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "changes-update",
+      "icon",
+      "vcs",
+      "jetbrains"
+    ]
+  }
+}

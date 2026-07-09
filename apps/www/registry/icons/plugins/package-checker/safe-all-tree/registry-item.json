@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Safe All Tree",
   "description": "Safe All Tree icon from Plugins Package Checker category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/package-checker/safe-all-tree/index.tsx",

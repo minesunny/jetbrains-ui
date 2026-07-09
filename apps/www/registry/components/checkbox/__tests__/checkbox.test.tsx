@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Checkbox } from '../index';
-import { Checked, UnselectAll } from '@/registry/icons/general/actions';
 
 describe('Checkbox', () => {
   it('renders without crashing', () => {
@@ -79,51 +78,38 @@ describe('Checkbox', () => {
     expect(screen.getByRole('checkbox')).toHaveClass('my-checkbox');
   });
 
-  it('sets displayName', () => {
-    expect(Checkbox.displayName).toBeDefined();
-  });
-
-  it('cycles through three states when indeterminate is enabled', async () => {
-    const user = userEvent.setup();
-    const { container } = render(<Checkbox aria-label="test" indeterminate />);
-    const checkbox = screen.getByRole('checkbox');
-
-    expect(checkbox).toHaveAttribute('data-state', 'unchecked');
-    await user.click(checkbox);
-    expect(checkbox).toHaveAttribute('data-state', 'checked');
-    await user.click(checkbox);
-    expect(checkbox).toHaveAttribute('data-state', 'indeterminate');
-    expect(container.querySelector('svg path')).toBeInTheDocument();
-    await user.click(checkbox);
-    expect(checkbox).toHaveAttribute('data-state', 'unchecked');
-  });
-
-  it('normalizes controlled indeterminate state in two-state mode', () => {
-    render(<Checkbox aria-label="test" checked="indeterminate" />);
+  it('renders data-slot="checkbox"', () => {
+    render(<Checkbox aria-label="test" />);
     expect(screen.getByRole('checkbox')).toHaveAttribute(
-      'data-state',
-      'unchecked',
+      'data-slot',
+      'checkbox',
     );
   });
 
-  it('calls onCheckedChange with three-state values when indeterminate is enabled', async () => {
+  it('supports indeterminate checked state', () => {
+    const { container } = render(
+      <Checkbox aria-label="test" checked="indeterminate" />,
+    );
+    expect(screen.getByRole('checkbox')).toHaveAttribute(
+      'data-state',
+      'indeterminate',
+    );
+    expect(container.querySelector('svg')).toBeInTheDocument();
+  });
+
+  it('calls onCheckedChange with indeterminate value', async () => {
     const user = userEvent.setup();
     const onCheckedChange = vi.fn();
     render(
       <Checkbox
         aria-label="test"
-        indeterminate
+        checked="indeterminate"
         onCheckedChange={onCheckedChange}
       />,
     );
 
     await user.click(screen.getByRole('checkbox'));
-    await user.click(screen.getByRole('checkbox'));
-    await user.click(screen.getByRole('checkbox'));
-
-    expect(onCheckedChange).toHaveBeenNthCalledWith(1, true);
-    expect(onCheckedChange).toHaveBeenNthCalledWith(2, 'indeterminate');
-    expect(onCheckedChange).toHaveBeenNthCalledWith(3, false);
+    expect(onCheckedChange).toHaveBeenCalledWith(true);
   });
 
   it('forwards ref', () => {

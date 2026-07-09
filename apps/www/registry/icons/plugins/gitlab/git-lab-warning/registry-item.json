@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Git Lab Warning",
   "description": "Git Lab Warning icon from Plugins Gitlab category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/gitlab/git-lab-warning/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Abstract Field Variable1",
   "description": "Abstract Field Variable1 icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/abstract-field-variable1/index.tsx",

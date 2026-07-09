@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Http_request",
   "description": "Http_request icon from Plugins Rest category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/rest/http_request/index.tsx",

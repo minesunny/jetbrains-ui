@@ -1,0 +1,23 @@
+schema: spec-driven
+
+context: |
+  Tech stack: TypeScript, React 19, Next.js, Tailwind CSS v4
+  Monorepo: pnpm + Turborepo (apps/www + packages/ui)
+  Component system: Radix UI primitives + shadcn registry pattern
+  Design tokens: --jb-* CSS variables (tokens.css + theme.css)
+  Registry: apps/www/registry/ (components, demo, styles)
+  Conventional Commits: feat/fix/refactor/docs/chore
+
+rules:
+  proposal:
+    - Every new component MUST reference its Figma source URL
+    - Specify which design tokens are needed (check openspec/specs/foundation/colors/ first)
+  design:
+    - Use raw design tokens (gray-*, blue-*) directly, never component-specific semantic tokens (--checkbox-*, etc.)
+    - Use dark: prefix for dark mode overrides when light/dark values differ
+    - Inline all className in cn() or JSX, never extract to named constants
+    - Only create index.css for CSS custom properties, keyframes, or complex pseudo-elements
+    - Reference openspec/specs/foundation/ for shared design system specs
+  tasks:
+    - Each component task MUST specify: spec reference, files to create/modify, validation steps
+    - Include registry-item.json and demo updates as separate sub-tasks

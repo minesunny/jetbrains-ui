@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Docker Compose Service Stopped",
   "description": "Docker Compose Service Stopped icon from Plugins Docker category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/docker/docker-compose-service-stopped/index.tsx",

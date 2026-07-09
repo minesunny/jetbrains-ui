@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Horizontal Pod Autoscaler",
   "description": "Horizontal Pod Autoscaler icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/horizontal-pod-autoscaler/index.tsx",

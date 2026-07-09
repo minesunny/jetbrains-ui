@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-ai-asisstant-feature-comment",
+  "type": "registry:ui",
+  "title": "Feature Comment",
+  "description": "Feature Comment icon from general category.",
+  "files": [
+    {
+      "path": "registry/icons/general/ai-asisstant/feature-comment/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/feature-comment/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "feature-comment",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Add Note",
   "description": "Add Note icon from Plugins Uml category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/uml/add-note/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Scopes",
   "description": "Scopes icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/scopes/index.tsx",

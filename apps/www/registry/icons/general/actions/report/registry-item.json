@@ -3,10 +3,7 @@
   "name": "icons-general-actions-report",
   "type": "registry:ui",
   "title": "Report",
-  "description": "Report icon from General Actions category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Report icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/actions/report/index.tsx",
@@ -19,7 +16,6 @@
       "report",
       "icon",
       "general",
-      "actions",
       "jetbrains"
     ]
   }

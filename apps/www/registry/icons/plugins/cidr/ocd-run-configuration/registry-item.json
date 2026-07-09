@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Ocd Run Configuration",
   "description": "Ocd Run Configuration icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/ocd-run-configuration/index.tsx",

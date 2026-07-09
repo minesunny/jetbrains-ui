@@ -4,14 +4,21 @@
   "type": "registry:ui",
   "title": "Run Icons",
   "description": "All 46 icons from the Run category.",
-  "registryDependencies": [
-    "icons-run-types"
-  ],
   "files": [
     {
       "path": "registry/icons/run/index.ts",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/run/index.ts"
+    },
+    {
+      "path": "registry/icons/run/failed-in-progress/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/failed-in-progress/index.tsx"
+    },
+    {
+      "path": "registry/icons/run/rerun-automatically/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/rerun-automatically/index.tsx"
     },
     {
       "path": "registry/icons/run/attach-to-process/index.tsx",
@@ -32,11 +39,6 @@
       "path": "registry/icons/run/evaluate-expression/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/run/evaluate-expression/index.tsx"
-    },
-    {
-      "path": "registry/icons/run/failed-in-progress/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run/failed-in-progress/index.tsx"
     },
     {
       "path": "registry/icons/run/force-run-to-cursor/index.tsx",
@@ -79,11 +81,6 @@
       "target": "components/jetbrains-ui/icons/run/rerun/index.tsx"
     },
     {
-      "path": "registry/icons/run/rerun-automatically/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run/rerun-automatically/index.tsx"
-    },
-    {
       "path": "registry/icons/run/restart/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/run/restart/index.tsx"
@@ -117,11 +114,6 @@
       "path": "registry/icons/run/run-to-cursor/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/run/run-to-cursor/index.tsx"
-    },
-    {
-      "path": "registry/icons/run/run-with-coverage/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run/run-with-coverage/index.tsx"
     },
     {
       "path": "registry/icons/run/show-current-frame/index.tsx",
@@ -209,11 +201,6 @@
       "target": "components/jetbrains-ui/icons/run/test-paused/index.tsx"
     },
     {
-      "path": "registry/icons/run/test-runner-watch/index.tsx",
-      "type": "registry:ui",
-      "target": "components/jetbrains-ui/icons/run/test-runner-watch/index.tsx"
-    },
-    {
       "path": "registry/icons/run/test-skipped/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/run/test-skipped/index.tsx"
@@ -239,17 +226,19 @@
       "target": "components/jetbrains-ui/icons/run/view-breakpoints/index.tsx"
     },
     {
+      "path": "registry/icons/run/run-with-coverage/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/run-with-coverage/index.tsx"
+    },
+    {
+      "path": "registry/icons/run/test-runner-watch/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/run/test-runner-watch/index.tsx"
+    },
+    {
       "path": "registry/icons/run/watch/index.tsx",
       "type": "registry:ui",
       "target": "components/jetbrains-ui/icons/run/watch/index.tsx"
     }
-  ],
-  "meta": {
-    "keywords": [
-      "icons",
-      "run",
-      "jetbrains",
-      "icon-pack"
-    ]
-  }
+  ]
 }

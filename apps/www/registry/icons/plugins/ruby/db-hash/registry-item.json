@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Db Hash",
   "description": "Db Hash icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/db-hash/index.tsx",

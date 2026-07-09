@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-devkit-description-file",
+  "type": "registry:ui",
+  "title": "Description File",
+  "description": "Description File icon from general category.",
+  "files": [
+    {
+      "path": "registry/icons/general/devkit/description-file/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/devkit/description-file/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "description-file",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

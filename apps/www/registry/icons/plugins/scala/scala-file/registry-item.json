@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Scala File",
   "description": "Scala File icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/scala-file/index.tsx",

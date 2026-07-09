@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "From Arrow",
   "description": "From Arrow icon from Plugins Aop category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/aop/from-arrow/index.tsx",

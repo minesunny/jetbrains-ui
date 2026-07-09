@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Data Model",
   "description": "Data Model icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/data-model/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "To String",
   "description": "To String icon from Plugins Jpa category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/jpa/to-string/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Abstract Field",
   "description": "Abstract Field icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/abstract-field/index.tsx",

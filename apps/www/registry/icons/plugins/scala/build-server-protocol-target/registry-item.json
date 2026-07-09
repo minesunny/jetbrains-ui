@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Build Server Protocol Target",
   "description": "Build Server Protocol Target icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/build-server-protocol-target/index.tsx",

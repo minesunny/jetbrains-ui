@@ -3,10 +3,7 @@
   "name": "icons-nodes-server",
   "type": "registry:ui",
   "title": "Server",
-  "description": "Server icon from Nodes category.",
-  "registryDependencies": [
-    "icons-nodes-types"
-  ],
+  "description": "Server icon from nodes category.",
   "files": [
     {
       "path": "registry/icons/nodes/server/index.tsx",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cwm Enable Call",
   "description": "Cwm Enable Call icon from Plugins Code With Me category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/code-with-me/cwm-enable-call/index.tsx",

@@ -1,29 +1,48 @@
 'use client';
 
-import * as React from 'react';
+import type { ComponentProps } from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 
 import { cn } from '@workspace/ui/lib/utils';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from '@/registry/components/tooltip';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded border text-ui-default transition-[background-color,color,border-color,box-shadow] duration-150 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-14 disabled:pointer-events-none disabled:cursor-not-allowed disabled:border-transparent disabled:bg-gray-12 disabled:text-gray-8 dark:focus-visible:ring-blue-6 dark:focus-visible:ring-offset-gray-2 dark:disabled:bg-gray-4 dark:disabled:text-gray-7',
+  'inline-flex items-center justify-center whitespace-nowrap rounded border font-sans text-[13px] leading-4 font-medium transition-[background-color,color,border-color,box-shadow] duration-150 ease-in-out focus-visible:outline-none disabled:pointer-events-none disabled:cursor-not-allowed',
   {
     variants: {
       variant: {
-        primary:
-          'border-transparent bg-blue-4 text-gray-14 hover:bg-blue-3 hover:text-gray-14 active:bg-blue-2 active:text-gray-14 dark:bg-blue-6 dark:hover:bg-blue-5 dark:hover:text-gray-14 dark:active:bg-blue-4 dark:active:text-gray-14',
-        secondary:
-          'border-gray-9 bg-transparent text-gray-1 hover:bg-gray-12 hover:text-gray-1 active:bg-gray-11 active:text-gray-1 dark:border-gray-5 dark:bg-gray-5 dark:text-gray-12 dark:hover:bg-gray-6 dark:hover:text-gray-12 dark:active:bg-gray-4 dark:active:text-gray-12',
+        primary: cn(
+          // Light
+          'border-transparent bg-blue-4 text-gray-14',
+          'hover:bg-blue-3 hover:text-gray-14',
+          'active:bg-blue-2 active:text-gray-14',
+          'focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-14',
+          'disabled:bg-blue-4 disabled:text-gray-14 disabled:opacity-50',
+          // Dark
+          'dark:border-transparent dark:bg-blue-6 dark:text-gray-14',
+          'dark:hover:bg-blue-5 dark:hover:text-gray-14',
+          'dark:active:bg-blue-4 dark:active:text-gray-14',
+          'dark:focus-visible:ring-blue-6 dark:focus-visible:ring-offset-gray-2',
+          'dark:disabled:bg-gray-5 dark:disabled:text-gray-8 dark:disabled:opacity-100',
+        ),
+        secondary: cn(
+          // Light
+          'border-gray-9 bg-gray-14 text-gray-1',
+          'hover:bg-gray-14 hover:text-gray-1 hover:border-gray-7',
+          'active:bg-gray-13 active:text-gray-1 active:border-gray-9',
+          'focus-visible:bg-gray-14 focus-visible:border-blue-4 focus-visible:ring-2 focus-visible:ring-blue-4 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-14',
+          'disabled:bg-gray-12 disabled:text-gray-8 disabled:border-transparent',
+          // Dark
+          'dark:border-transparent dark:bg-gray-2 dark:text-gray-12',
+          'dark:hover:bg-gray-3 dark:hover:text-gray-12 dark:hover:border-gray-5',
+          'dark:active:bg-gray-2 dark:active:text-gray-1 dark:active:border-gray-5',
+          'dark:focus-visible:ring-blue-6 dark:focus-visible:ring-offset-gray-2',
+          'dark:disabled:bg-gray-5 dark:disabled:text-gray-8 dark:disabled:border-transparent',
+        ),
       },
       size: {
-        default: 'h-7 min-w-ui-button gap-ui-control px-ui-control',
-        slim: 'h-6 min-w-ui-button gap-ui-control px-ui-control',
+        default: 'h-7 min-w-[72px] gap-2 px-3',
+        slim: 'h-6 min-w-[72px] gap-2 px-3',
       },
     },
     defaultVariants: {
@@ -37,10 +56,9 @@ type ButtonVariant = NonNullable<
   VariantProps<typeof buttonVariants>['variant']
 >;
 
-type ButtonProps = React.ComponentProps<'button'> & {
+type ButtonProps = ComponentProps<'button'> & {
   variant?: ButtonVariant;
   slim?: boolean;
-  tooltip?: string;
   asChild?: boolean;
 };
 
@@ -48,7 +66,6 @@ function Button({
   className,
   variant = 'primary',
   slim = false,
-  tooltip,
   asChild = false,
   children,
   ...props
@@ -56,7 +73,7 @@ function Button({
   const Comp = asChild ? Slot : 'button';
   const size = slim ? 'slim' : 'default';
 
-  const button = (
+  return (
     <Comp
       data-slot="button"
       data-variant={variant}
@@ -66,17 +83,6 @@ function Button({
     >
       {children}
     </Comp>
-  );
-
-  if (!tooltip) {
-    return button;
-  }
-
-  return (
-    <Tooltip>
-      <TooltipTrigger asChild>{button}</TooltipTrigger>
-      <TooltipContent>{tooltip}</TooltipContent>
-    </Tooltip>
   );
 }
 

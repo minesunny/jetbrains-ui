@@ -4,10 +4,11 @@
   "type": "registry:ui",
   "title": "Alert",
   "description": "JetBrains-style alert dialog built on Radix AlertDialog with built-in status icons.",
-  "dependencies": ["radix-ui"],
+  "dependencies": [
+    "radix-ui"
+  ],
   "registryDependencies": [
-    "utils",
-    "buttons",
+    "button",
     "tooltip",
     "@jetbrains-ui/icons-general-status-information-dialog",
     "@jetbrains-ui/icons-general-status-error-dialog",
@@ -18,11 +19,17 @@
     {
       "path": "registry/components/alert/index.tsx",
       "type": "registry:ui",
-      "target": "components/jetbrains-ui/alert/index.tsx"
+      "target": "components/jetbrains-ui/alert.tsx"
     }
   ],
   "meta": {
-    "keywords": ["alert", "dialog", "jetbrains", "ui", "component"],
+    "keywords": [
+      "alert",
+      "dialog",
+      "jetbrains",
+      "ui",
+      "component"
+    ],
     "category": "overlay",
     "docs": {
       "description": "JetBrains-style alert dialog component for confirmation and critical actions.",

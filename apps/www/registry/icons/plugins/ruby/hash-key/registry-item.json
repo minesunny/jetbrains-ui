@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Hash Key",
   "description": "Hash Key icon from Plugins Ruby category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/ruby/hash-key/index.tsx",

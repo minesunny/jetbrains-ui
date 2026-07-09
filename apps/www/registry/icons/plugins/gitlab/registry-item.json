@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Gitlab Icons",
   "description": "All 2 icons from the Plugins Gitlab category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/gitlab/index.ts",

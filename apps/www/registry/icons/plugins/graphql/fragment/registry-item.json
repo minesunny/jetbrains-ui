@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Fragment",
   "description": "Fragment icon from Plugins Graphql category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/graphql/fragment/index.tsx",

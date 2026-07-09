@@ -82,4 +82,6 @@ export function Example() {
 
 ## Registry 生成
 
-当你在 `apps/www/registry/icons` 下新增或删除图标文件后，运行 `pnpm registry:build` 重新生成 `registry/components/svg/registry.ts`。
+当你在 `apps/www/registry/icons` 下新增或删除图标文件后，运行 `pnpm icons:build` 重新生成 `registry/components/svg/registry.ts`。
+
+此步骤通过 `predev` / `prebuild` 钩子在 `pnpm dev` 和 `pnpm build` 之前自动执行，通常只需在直接操作 registry 文件时手动运行。

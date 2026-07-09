@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Trait Companion Swapped",
   "description": "Trait Companion Swapped icon from Plugins Scala category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/scala/trait-companion-swapped/index.tsx",

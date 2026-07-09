@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Abstract Bean",
   "description": "Abstract Bean icon from Plugins Spring category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/spring/abstract-bean/index.tsx",

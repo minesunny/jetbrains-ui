@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Graphql Icons",
   "description": "All 16 icons from the Plugins Graphql category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/graphql/index.ts",

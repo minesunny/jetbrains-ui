@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Ejb Primary Key Class",
   "description": "Ejb Primary Key Class icon from Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/ejb-primary-key-class/index.tsx",

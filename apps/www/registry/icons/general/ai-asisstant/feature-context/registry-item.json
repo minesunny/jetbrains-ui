@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-general-ai-asisstant-feature-context",
+  "type": "registry:ui",
+  "title": "Feature Context",
+  "description": "Feature Context icon from general category.",
+  "files": [
+    {
+      "path": "registry/icons/general/ai-asisstant/feature-context/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/general/ai-asisstant/feature-context/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "feature-context",
+      "icon",
+      "general",
+      "jetbrains"
+    ]
+  }
+}

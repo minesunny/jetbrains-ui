@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Cluster Role Binding",
   "description": "Cluster Role Binding icon from Plugins Kubernetes category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/kubernetes/cluster-role-binding/index.tsx",

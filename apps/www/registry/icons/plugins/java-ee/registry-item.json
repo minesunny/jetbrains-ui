@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Plugins Java Ee Icons",
   "description": "All 92 icons from the Plugins Java Ee category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/java-ee/index.ts",

@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Custom Gdb Run Configuration",
   "description": "Custom Gdb Run Configuration icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/custom-gdb-run-configuration/index.tsx",

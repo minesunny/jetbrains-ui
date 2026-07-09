@@ -3,10 +3,7 @@
   "name": "icons-general-general-close",
   "type": "registry:ui",
   "title": "Close",
-  "description": "Close icon from General General category.",
-  "registryDependencies": [
-    "icons-general-types"
-  ],
+  "description": "Close icon from general category.",
   "files": [
     {
       "path": "registry/icons/general/general/close/index.tsx",
@@ -18,7 +15,6 @@
     "keywords": [
       "close",
       "icon",
-      "general",
       "general",
       "jetbrains"
     ]

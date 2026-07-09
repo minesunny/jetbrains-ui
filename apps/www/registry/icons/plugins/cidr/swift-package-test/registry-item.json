@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Swift Package Test",
   "description": "Swift Package Test icon from Plugins Cidr category.",
-  "registryDependencies": [
-    "icons-plugins-types"
-  ],
   "files": [
     {
       "path": "registry/icons/plugins/cidr/swift-package-test/index.tsx",
