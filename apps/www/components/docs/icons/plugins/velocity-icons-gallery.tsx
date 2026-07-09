@@ -1,9 +1,9 @@
 'use client';
 
 import { SvgIconsGallery } from '@/components/docs/icons/svg-icons-gallery';
+import { domainIconNames } from '@/components/docs/icons/icon-list';
 
-// Plugin icons are not yet available in the registry
-const icons = [] as const;
+const icons = domainIconNames('plugins/velocity');
 
 export function VelocityIconsGallery() {
   return <SvgIconsGallery icons={icons.map((name) => ({ name }))} />;
