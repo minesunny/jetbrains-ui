@@ -172,7 +172,7 @@ export const iconRegistry = {
   'build/update-folders': () =>
     import('./build').then((m) => ({ default: m.UpdateFolders })),
 
-  // database (379)
+  // database (380)
   'database/access-method': () =>
     import('./database').then((m) => ({ default: m.AccessMethod })),
   'database/adapter-script': () =>
@@ -887,6 +887,8 @@ export const iconRegistry = {
     import('./database').then((m) => ({ default: m.Tablespace })),
   'database/tarantool': () =>
     import('./database').then((m) => ({ default: m.Tarantool })),
+  'database/template': () =>
+    import('./database').then((m) => ({ default: m.Template })),
   'database/teradata': () =>
     import('./database').then((m) => ({ default: m.Teradata })),
   'database/text-auto-generate': () =>
@@ -5929,7 +5931,7 @@ export const slugIndex = {
   task: ['build/task', 'general/tool-windows/task'],
   'task-group': ['build/task-group'],
   'team-city': ['file-types/team-city'],
-  template: ['nodes/template'],
+  template: ['database/template', 'nodes/template'],
   'tensor-flow': ['file-types/tensor-flow'],
   teradata: ['database/teradata'],
   terminal: ['general/tool-windows/terminal'],

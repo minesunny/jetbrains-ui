@@ -74,7 +74,7 @@ describe('SVG dispatcher — real (smoke)', () => {
     await walk(root);
     const manifestCount = Object.keys(iconRegistry).length;
     // Baseline — update intentionally when icons are added/removed.
-    expect(fileCount).toBe(1958);
+    expect(fileCount).toBe(1959);
     // Every icon file must be registered (no orphans) and no phantoms.
     expect(manifestCount).toBe(fileCount);
   });

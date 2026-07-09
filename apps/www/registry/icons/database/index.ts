@@ -217,3 +217,4 @@ export { Redis } from './redis';
 
 // expui icon pack (coexists with the root database icons).
 export * from './expui';
+export { Template } from './template';
