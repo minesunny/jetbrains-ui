@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-ruby-ruby-remote",
+  "type": "registry:ui",
+  "title": "Ruby Remote",
+  "description": "Ruby Remote icon from Plugins Ruby category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/ruby-remote/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/ruby-remote/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ruby-remote",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

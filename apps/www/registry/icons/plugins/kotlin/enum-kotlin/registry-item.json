@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-kotlin-enum-kotlin",
+  "type": "registry:ui",
+  "title": "Enum Kotlin",
+  "description": "Enum Kotlin icon from Plugins Kotlin category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/kotlin/enum-kotlin/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kotlin/enum-kotlin/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "enum-kotlin",
+      "icon",
+      "plugins",
+      "kotlin",
+      "jetbrains"
+    ]
+  }
+}

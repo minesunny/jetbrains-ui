@@ -1,0 +1,41 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
+import { cn } from '@/lib/utils';
+
+export const ScalaHtml = ({
+  size = 16,
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
+    />
+    <path
+      d="M6.474 4.132a.6.6 0 0 1-.105.842L2.478 8l3.891 3.026a.6.6 0 0 1-.737.947L.523 8l5.11-3.974a.6.6 0 0 1 .841.106M9.527 4.132a.6.6 0 0 0 .105.842L13.523 8h1.955l-5.109-3.974a.6.6 0 0 0-.842.106"
+      className="fill-[#369650] dark:fill-[#57965C]"
+    />
+  </svg>
+);
+
+export default ScalaHtml;

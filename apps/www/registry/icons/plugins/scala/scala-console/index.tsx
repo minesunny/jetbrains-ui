@@ -1,0 +1,43 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
+import { cn } from '@/lib/utils';
+
+export const ScalaConsole = ({
+  size = 16,
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="m15.5 9.5-5 .5m5 2.25-5 .5m5 2.25-5 .5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="stroke-[#DB3B4B] dark:stroke-[#DB5C5C]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h6v-1H3a1 1 0 0 1-1-1V6h12v2.143l1-.1V4a2 2 0 0 0-2-2zm10 1H3a1 1 0 0 0-1 1v1h12V4a1 1 0 0 0-1-1"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
+
+export default ScalaConsole;

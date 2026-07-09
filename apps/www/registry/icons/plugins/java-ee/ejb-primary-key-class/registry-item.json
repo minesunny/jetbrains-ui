@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-java-ee-ejb-primary-key-class",
+  "type": "registry:ui",
+  "title": "Ejb Primary Key Class",
+  "description": "Ejb Primary Key Class icon from Plugins Java Ee category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/ejb-primary-key-class/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/ejb-primary-key-class/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "ejb-primary-key-class",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

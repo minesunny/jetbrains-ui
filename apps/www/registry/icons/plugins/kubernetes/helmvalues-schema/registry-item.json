@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-kubernetes-helmvalues-schema",
+  "type": "registry:ui",
+  "title": "Helmvalues Schema",
+  "description": "Helmvalues Schema icon from Plugins Kubernetes category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/kubernetes/helmvalues-schema/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/helmvalues-schema/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "helmvalues-schema",
+      "icon",
+      "plugins",
+      "kubernetes",
+      "jetbrains"
+    ]
+  }
+}

@@ -163,14 +163,19 @@ async function main() {
   lines.push('');
   lines.push('export type IconPathname = keyof typeof iconRegistry;');
   lines.push('');
-  lines.push('export const slugIndex: Record<string, IconPathname[]> = {');
+  // `as unknown as Record<...>` (not `: Record<...>`) so the `constructor` slug
+  // — a special Object.prototype key that TS won't contextually type — doesn't
+  // widen its value to string[]. Values are valid IconPathnames by construction.
+  lines.push(
+    'export const slugIndex = {',
+  );
   for (const [slug, pathnames] of [...slugIndex.entries()].sort((a, b) =>
     a[0].localeCompare(b[0]),
   )) {
     const pathnamesLiteral = `[${pathnames.map((p) => `'${p}'`).join(', ')}]`;
     lines.push(`  ${escapeKey(slug)}: ${pathnamesLiteral},`);
   }
-  lines.push('};');
+  lines.push('} as unknown as Record<string, IconPathname[]>;');
   lines.push('');
 
   await fs.writeFile(OUTPUT_PATH, lines.join('\n'));

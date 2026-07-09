@@ -1,0 +1,42 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
+import { cn } from '@/lib/utils';
+
+export const Fir = ({
+  size = 16,
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path d="M7 13H9V15H7z" className="fill-[#6C707E] dark:fill-[#CED0D6]" />
+    <path
+      d="M12.805 5.805A.7.7 0 0 1 12.31 7H11l1.805 1.805A.7.7 0 0 1 12.31 10H11l1.805 1.805A.7.7 0 0 1 12.31 13H3.69a.7.7 0 0 1-.495-1.195L5 10H3.69a.7.7 0 0 1-.495-1.195L5 7H3.69a.7.7 0 0 1-.495-1.195l4.451-4.452a.5.5 0 0 1 .707 0z"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.586 6 8 2.414 4.414 6h1.793a.5.5 0 0 1 .353.853L4.414 9h1.793a.5.5 0 0 1 .353.854L4.414 12h7.172L9.439 9.854A.5.5 0 0 1 9.793 9h1.793L9.439 6.854A.5.5 0 0 1 9.793 6zM11 10h1.31a1 1 0 0 0 .098-.006.7.7 0 0 0 .397-1.189L11 7h1.322q.044 0 .086-.006a.7.7 0 0 0 .397-1.189L8.353 1.353a.5.5 0 0 0-.707 0L3.195 5.805A.7.7 0 0 0 3.69 7H5L3.195 8.805A.7.7 0 0 0 3.69 10H5l-1.805 1.805A.7.7 0 0 0 3.69 13h8.62a.7.7 0 0 0 .495-1.195z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
+
+export default Fir;

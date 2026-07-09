@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-platformio-mod-platform-io",
+  "type": "registry:ui",
+  "title": "Mod Platform Io",
+  "description": "Mod Platform Io icon from Plugins Platformio category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/platformio/mod-platform-io/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/platformio/mod-platform-io/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "mod-platform-io",
+      "icon",
+      "plugins",
+      "platformio",
+      "jetbrains"
+    ]
+  }
+}

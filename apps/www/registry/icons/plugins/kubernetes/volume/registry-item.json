@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-kubernetes-volume",
+  "type": "registry:ui",
+  "title": "Volume",
+  "description": "Volume icon from Plugins Kubernetes category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/kubernetes/volume/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/kubernetes/volume/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "volume",
+      "icon",
+      "plugins",
+      "kubernetes",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
+import { cn } from '@/lib/utils';
+
+export const CustomFolder = ({
+  size = 16,
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M2.633 2C1.731 2 1 2.836 1 3.867v8.266C1 13.164 1.731 14 2.633 14h4.493a4.01 4.01 0 0 1 2.783-2.85A3 3 0 1 1 15 9V6a2 2 0 0 0-2-2H8.467L6.843 2.308A1 1 0 0 0 6.122 2z"
+      className="fill-[#EBECF0] dark:fill-[#43454A]"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-1 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M13 12h-2a3 3 0 0 0-3 3 1 1 0 0 0 1 1h6a1 1 0 0 0 1-1 3 3 0 0 0-3-3m-4 3a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+    <path
+      d="M12 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2M11 13a2 2 0 0 0-2 2h6a2 2 0 0 0-2-2z"
+      className="fill-[#EDF3FF] dark:fill-[#25324D]"
+    />
+    <path
+      d="M6.122 3H2.633C2.405 3 2 3.258 2 3.867v8.266c0 .609.405.867.633.867h4.902q-.27.466-.409 1H2.633C1.731 14 1 13.164 1 12.133V3.867C1 2.836 1.731 2 2.633 2h3.489a1 1 0 0 1 .721.308L8.467 4H13a2 2 0 0 1 2 2v3c0-.889-.386-1.687-1-2.236V6a1 1 0 0 0-1-1H8.04z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+  </svg>
+);
+
+export default CustomFolder;

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-spring-spring-java-config",
+  "type": "registry:ui",
+  "title": "Spring Java Config",
+  "description": "Spring Java Config icon from Plugins Spring category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/spring-java-config/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/spring-java-config/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "spring-java-config",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

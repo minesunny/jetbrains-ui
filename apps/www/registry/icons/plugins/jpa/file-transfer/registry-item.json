@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-jpa-file-transfer",
+  "type": "registry:ui",
+  "title": "File Transfer",
+  "description": "File Transfer icon from Plugins Jpa category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/jpa/file-transfer/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/jpa/file-transfer/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "file-transfer",
+      "icon",
+      "plugins",
+      "jpa",
+      "jetbrains"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-ruby-rails-module-closed",
+  "type": "registry:ui",
+  "title": "Rails Module Closed",
+  "description": "Rails Module Closed icon from Plugins Ruby category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/ruby/rails-module-closed/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/ruby/rails-module-closed/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "rails-module-closed",
+      "icon",
+      "plugins",
+      "ruby",
+      "jetbrains"
+    ]
+  }
+}

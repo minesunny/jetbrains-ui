@@ -1,0 +1,45 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
+import { cn } from '@/lib/utils';
+
+export const UnchechedAllTreeOutline = ({
+  size = 16,
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="m8 1 6 2.5v5.679c0 1.766-.892 3.057-2.032 4.079-.839.751-1.86 1.395-2.797 1.987-.31.196-.613.387-.896.573L8 16l-.275-.182a53 53 0 0 0-.896-.573c-.937-.592-1.958-1.236-2.797-1.987C2.892 12.236 2 10.945 2 9.178V3.5z"
+      className="fill-[#EDF3FF] dark:fill-[#25324D]"
+    />
+    <path
+      d="M13.5 3.833v5.346c0 1.571-.786 2.737-1.866 3.706-.802.718-1.786 1.342-2.73 1.937l-.904.58-.904-.58c-.944-.595-1.928-1.219-2.73-1.937C3.286 11.916 2.5 10.75 2.5 9.179V3.833L8 1.542z"
+      className="stroke-[#3574F0] dark:stroke-[#548AF7]"
+    />
+    <path
+      d="M7.483 9.081q0-.314.108-.555.112-.246.27-.423.161-.177.426-.418.25-.23.392-.388.147-.158.245-.374.102-.216.103-.486 0-.291-.128-.516a.85.85 0 0 0-.348-.35 1 1 0 0 0-.51-.127 1.1 1.1 0 0 0-.568.142.93.93 0 0 0-.377.394q-.132.25-.132.58H5.9q0-.62.265-1.087.27-.466.755-.717.49-.255 1.136-.256.618 0 1.083.236.466.231.716.659.255.423.25.978 0 .432-.138.757-.136.32-.328.536-.19.21-.5.472a7 7 0 0 0-.353.334 1.2 1.2 0 0 0-.21.3.8.8 0 0 0-.084.359v.186H7.483zm-.103 1.16h1.255V11.5H7.38z"
+      className="fill-[#3574F0] dark:fill-[#548AF7]"
+    />
+  </svg>
+);
+
+export default UnchechedAllTreeOutline;

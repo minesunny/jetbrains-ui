@@ -2351,6 +2351,1461 @@ export const iconRegistry = {
   'nodes/web-resources': () =>
     import('./nodes').then((m) => ({ default: m.WebResources })),
 
+  // plugins (699)
+  'plugins/aop/abstract-advice': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractAdvice })),
+  'plugins/aop/after-advice': () =>
+    import('./plugins').then((m) => ({ default: m.AfterAdvice })),
+  'plugins/aop/after-returning-advice': () =>
+    import('./plugins').then((m) => ({ default: m.AfterReturningAdvice })),
+  'plugins/aop/after-throwing-advice': () =>
+    import('./plugins').then((m) => ({ default: m.AfterThrowingAdvice })),
+  'plugins/aop/around-advice': () =>
+    import('./plugins').then((m) => ({ default: m.AroundAdvice })),
+  'plugins/aop/before-advice': () =>
+    import('./plugins').then((m) => ({ default: m.BeforeAdvice })),
+  'plugins/aop/from-arrow': () =>
+    import('./plugins').then((m) => ({ default: m.FromArrow })),
+  'plugins/aop/pointcut': () =>
+    import('./plugins').then((m) => ({ default: m.Pointcut })),
+  'plugins/aop/to-arrow': () =>
+    import('./plugins').then((m) => ({ default: m.ToArrow })),
+  'plugins/bazel/bazel': () =>
+    import('./plugins').then((m) => ({ default: m.Bazel })),
+  'plugins/bazel/bazel-config': () =>
+    import('./plugins').then((m) => ({ default: m.BazelConfig })),
+  'plugins/bazel/bazel-error': () =>
+    import('./plugins').then((m) => ({ default: m.BazelError })),
+  'plugins/bazel/bazel-reload': () =>
+    import('./plugins').then((m) => ({ default: m.BazelReload })),
+  'plugins/bazel/bazel-target': () =>
+    import('./plugins').then((m) => ({ default: m.BazelTarget })),
+  'plugins/bazel/bazel-warning': () =>
+    import('./plugins').then((m) => ({ default: m.BazelWarning })),
+  'plugins/bazel/build-and-reload': () =>
+    import('./plugins').then((m) => ({ default: m.BuildAndReload })),
+  'plugins/bdt/arbitrary-cluster': () =>
+    import('./plugins').then((m) => ({ default: m.ArbitraryCluster })),
+  'plugins/bdt/aws-glue': () =>
+    import('./plugins').then((m) => ({ default: m.AwsGlue })),
+  'plugins/bdt/chart-area': () =>
+    import('./plugins').then((m) => ({ default: m.ChartArea })),
+  'plugins/bdt/chart-area-range': () =>
+    import('./plugins').then((m) => ({ default: m.ChartAreaRange })),
+  'plugins/bdt/chart-bar': () =>
+    import('./plugins').then((m) => ({ default: m.ChartBar })),
+  'plugins/bdt/chart-bubble': () =>
+    import('./plugins').then((m) => ({ default: m.ChartBubble })),
+  'plugins/bdt/chart-histogram': () =>
+    import('./plugins').then((m) => ({ default: m.ChartHistogram })),
+  'plugins/bdt/chart-line': () =>
+    import('./plugins').then((m) => ({ default: m.ChartLine })),
+  'plugins/bdt/chart-pie': () =>
+    import('./plugins').then((m) => ({ default: m.ChartPie })),
+  'plugins/bdt/chart-scatter': () =>
+    import('./plugins').then((m) => ({ default: m.ChartScatter })),
+  'plugins/bdt/chart-stock': () =>
+    import('./plugins').then((m) => ({ default: m.ChartStock })),
+  'plugins/bdt/cluster': () =>
+    import('./plugins').then((m) => ({ default: m.Cluster })),
+  'plugins/bdt/dbt-utility': () =>
+    import('./plugins').then((m) => ({ default: m.DbtUtility })),
+  'plugins/bdt/flink': () =>
+    import('./plugins').then((m) => ({ default: m.Flink })),
+  'plugins/bdt/py-spark': () =>
+    import('./plugins').then((m) => ({ default: m.PySpark })),
+  'plugins/bdt/remote-file-systems': () =>
+    import('./plugins').then((m) => ({ default: m.RemoteFileSystems })),
+  'plugins/bdt/spark-run': () =>
+    import('./plugins').then((m) => ({ default: m.SparkRun })),
+  'plugins/bdt/zeppelin': () =>
+    import('./plugins').then((m) => ({ default: m.Zeppelin })),
+  'plugins/cidr/action-qualified-names': () =>
+    import('./plugins').then((m) => ({ default: m.ActionQualifiedNames })),
+  'plugins/cidr/add-executable': () =>
+    import('./plugins').then((m) => ({ default: m.AddExecutable })),
+  'plugins/cidr/add-library': () =>
+    import('./plugins').then((m) => ({ default: m.AddLibrary })),
+  'plugins/cidr/add-test': () =>
+    import('./plugins').then((m) => ({ default: m.AddTest })),
+  'plugins/cidr/android-device': () =>
+    import('./plugins').then((m) => ({ default: m.AndroidDevice })),
+  'plugins/cidr/app-code-project': () =>
+    import('./plugins').then((m) => ({ default: m.AppCodeProject })),
+  'plugins/cidr/app-code-workspace': () =>
+    import('./plugins').then((m) => ({ default: m.AppCodeWorkspace })),
+  'plugins/cidr/application': () =>
+    import('./plugins').then((m) => ({ default: m.Application })),
+  'plugins/cidr/application-extension': () =>
+    import('./plugins').then((m) => ({ default: m.ApplicationExtension })),
+  'plugins/cidr/assets': () =>
+    import('./plugins').then((m) => ({ default: m.Assets })),
+  'plugins/cidr/auto-reload': () =>
+    import('./plugins').then((m) => ({ default: m.AutoReload })),
+  'plugins/cidr/boost-test': () =>
+    import('./plugins').then((m) => ({ default: m.BoostTest })),
+  'plugins/cidr/c': () => import('./plugins').then((m) => ({ default: m.C })),
+  'plugins/cidr/c-test': () =>
+    import('./plugins').then((m) => ({ default: m.CTest })),
+  'plugins/cidr/catch-test': () =>
+    import('./plugins').then((m) => ({ default: m.CatchTest })),
+  'plugins/cidr/class-cpp': () =>
+    import('./plugins').then((m) => ({ default: m.ClassCpp })),
+  'plugins/cidr/cmake': () =>
+    import('./plugins').then((m) => ({ default: m.Cmake })),
+  'plugins/cidr/cmake-debug': () =>
+    import('./plugins').then((m) => ({ default: m.CmakeDebug })),
+  'plugins/cidr/cmake-function': () =>
+    import('./plugins').then((m) => ({ default: m.CmakeFunction })),
+  'plugins/cidr/cmake-load-changes': () =>
+    import('./plugins').then((m) => ({ default: m.CmakeLoadChanges })),
+  'plugins/cidr/cmake-macro': () =>
+    import('./plugins').then((m) => ({ default: m.CmakeMacro })),
+  'plugins/cidr/cmake-modificator': () =>
+    import('./plugins').then((m) => ({ default: m.CmakeModificator })),
+  'plugins/cidr/cmake-target-executable': () =>
+    import('./plugins').then((m) => ({ default: m.CmakeTargetExecutable })),
+  'plugins/cidr/cocoa-pods': () =>
+    import('./plugins').then((m) => ({ default: m.CocoaPods })),
+  'plugins/cidr/code-assistant-actor': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantActor })),
+  'plugins/cidr/code-assistant-actor-extension': () =>
+    import('./plugins').then((m) => ({
+      default: m.CodeAssistantActorExtension,
+    })),
+  'plugins/cidr/code-assistant-enum': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantEnum })),
+  'plugins/cidr/code-assistant-enum-const': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantEnumConst })),
+  'plugins/cidr/code-assistant-enum-extension': () =>
+    import('./plugins').then((m) => ({
+      default: m.CodeAssistantEnumExtension,
+    })),
+  'plugins/cidr/code-assistant-field': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantField })),
+  'plugins/cidr/code-assistant-field-optional': () =>
+    import('./plugins').then((m) => ({
+      default: m.CodeAssistantFieldOptional,
+    })),
+  'plugins/cidr/code-assistant-function': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantFunction })),
+  'plugins/cidr/code-assistant-function-abstract': () =>
+    import('./plugins').then((m) => ({
+      default: m.CodeAssistantFunctionAbstract,
+    })),
+  'plugins/cidr/code-assistant-function-invocation': () =>
+    import('./plugins').then((m) => ({
+      default: m.CodeAssistantFunctionInvocation,
+    })),
+  'plugins/cidr/code-assistant-global': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantGlobal })),
+  'plugins/cidr/code-assistant-local': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantLocal })),
+  'plugins/cidr/code-assistant-member-abstract': () =>
+    import('./plugins').then((m) => ({
+      default: m.CodeAssistantMemberAbstract,
+    })),
+  'plugins/cidr/code-assistant-operator': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantOperator })),
+  'plugins/cidr/code-assistant-parameter': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantParameter })),
+  'plugins/cidr/code-assistant-property': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantProperty })),
+  'plugins/cidr/code-assistant-property-optional': () =>
+    import('./plugins').then((m) => ({
+      default: m.CodeAssistantPropertyOptional,
+    })),
+  'plugins/cidr/code-assistant-protocol': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantProtocol })),
+  'plugins/cidr/code-assistant-protocol-extension': () =>
+    import('./plugins').then((m) => ({
+      default: m.CodeAssistantProtocolExtension,
+    })),
+  'plugins/cidr/code-assistant-struct': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantStruct })),
+  'plugins/cidr/code-assistant-struct-extension': () =>
+    import('./plugins').then((m) => ({
+      default: m.CodeAssistantStructExtension,
+    })),
+  'plugins/cidr/code-assistant-type': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantType })),
+  'plugins/cidr/code-assistant-union': () =>
+    import('./plugins').then((m) => ({ default: m.CodeAssistantUnion })),
+  'plugins/cidr/compilation-database-load-changes': () =>
+    import('./plugins').then((m) => ({
+      default: m.CompilationDatabaseLoadChanges,
+    })),
+  'plugins/cidr/cpp': () =>
+    import('./plugins').then((m) => ({ default: m.Cpp })),
+  'plugins/cidr/cu': () => import('./plugins').then((m) => ({ default: m.Cu })),
+  'plugins/cidr/cuh': () =>
+    import('./plugins').then((m) => ({ default: m.Cuh })),
+  'plugins/cidr/custom-folder': () =>
+    import('./plugins').then((m) => ({ default: m.CustomFolder })),
+  'plugins/cidr/custom-gdb-run-configuration': () =>
+    import('./plugins').then((m) => ({ default: m.CustomGdbRunConfiguration })),
+  'plugins/cidr/custom-target': () =>
+    import('./plugins').then((m) => ({ default: m.CustomTarget })),
+  'plugins/cidr/debug-target-computer': () =>
+    import('./plugins').then((m) => ({ default: m.DebugTargetComputer })),
+  'plugins/cidr/debug-target-controller': () =>
+    import('./plugins').then((m) => ({ default: m.DebugTargetController })),
+  'plugins/cidr/dependency': () =>
+    import('./plugins').then((m) => ({ default: m.Dependency })),
+  'plugins/cidr/doc-test': () =>
+    import('./plugins').then((m) => ({ default: m.DocTest })),
+  'plugins/cidr/executable-target': () =>
+    import('./plugins').then((m) => ({ default: m.ExecutableTarget })),
+  'plugins/cidr/extension-run-configuration': () =>
+    import('./plugins').then((m) => ({ default: m.ExtensionRunConfiguration })),
+  'plugins/cidr/file-type-swift': () =>
+    import('./plugins').then((m) => ({ default: m.FileTypeSwift })),
+  'plugins/cidr/framework': () =>
+    import('./plugins').then((m) => ({ default: m.Framework })),
+  'plugins/cidr/freeze': () =>
+    import('./plugins').then((m) => ({ default: m.Freeze })),
+  'plugins/cidr/freeze-all': () =>
+    import('./plugins').then((m) => ({ default: m.FreezeAll })),
+  'plugins/cidr/google-test': () =>
+    import('./plugins').then((m) => ({ default: m.GoogleTest })),
+  'plugins/cidr/group': () =>
+    import('./plugins').then((m) => ({ default: m.CidrGroup })),
+  'plugins/cidr/group-qualified-name': () =>
+    import('./plugins').then((m) => ({ default: m.GroupQualifiedName })),
+  'plugins/cidr/h': () => import('./plugins').then((m) => ({ default: m.H })),
+  'plugins/cidr/i-phone-device': () =>
+    import('./plugins').then((m) => ({ default: m.IPhoneDevice })),
+  'plugins/cidr/install': () =>
+    import('./plugins').then((m) => ({ default: m.Install })),
+  'plugins/cidr/iocfile-type': () =>
+    import('./plugins').then((m) => ({ default: m.IocfileType })),
+  'plugins/cidr/ld': () => import('./plugins').then((m) => ({ default: m.Ld })),
+  'plugins/cidr/library-target': () =>
+    import('./plugins').then((m) => ({ default: m.LibraryTarget })),
+  'plugins/cidr/load-swift-package-manager-changes': () =>
+    import('./plugins').then((m) => ({
+      default: m.LoadSwiftPackageManagerChanges,
+    })),
+  'plugins/cidr/local-swift-package-dependency': () =>
+    import('./plugins').then((m) => ({
+      default: m.LocalSwiftPackageDependency,
+    })),
+  'plugins/cidr/location': () =>
+    import('./plugins').then((m) => ({ default: m.Location })),
+  'plugins/cidr/m': () => import('./plugins').then((m) => ({ default: m.M })),
+  'plugins/cidr/makefile': () =>
+    import('./plugins').then((m) => ({ default: m.Makefile })),
+  'plugins/cidr/makefile-app': () =>
+    import('./plugins').then((m) => ({ default: m.MakefileApp })),
+  'plugins/cidr/makefile-load-changes': () =>
+    import('./plugins').then((m) => ({ default: m.MakefileLoadChanges })),
+  'plugins/cidr/metal': () =>
+    import('./plugins').then((m) => ({ default: m.Metal })),
+  'plugins/cidr/mm': () => import('./plugins').then((m) => ({ default: m.Mm })),
+  'plugins/cidr/module-target': () =>
+    import('./plugins').then((m) => ({ default: m.ModuleTarget })),
+  'plugins/cidr/modulemap': () =>
+    import('./plugins').then((m) => ({ default: m.Modulemap })),
+  'plugins/cidr/namespace-cpp': () =>
+    import('./plugins').then((m) => ({ default: m.NamespaceCpp })),
+  'plugins/cidr/ocd-run-configuration': () =>
+    import('./plugins').then((m) => ({ default: m.OcdRunConfiguration })),
+  'plugins/cidr/option-command': () =>
+    import('./plugins').then((m) => ({ default: m.OptionCommand })),
+  'plugins/cidr/precedence-group': () =>
+    import('./plugins').then((m) => ({ default: m.PrecedenceGroup })),
+  'plugins/cidr/preprocess-defines': () =>
+    import('./plugins').then((m) => ({ default: m.PreprocessDefines })),
+  'plugins/cidr/qt': () => import('./plugins').then((m) => ({ default: m.Qt })),
+  'plugins/cidr/register': () =>
+    import('./plugins').then((m) => ({ default: m.Register })),
+  'plugins/cidr/registers': () =>
+    import('./plugins').then((m) => ({ default: m.Registers })),
+  'plugins/cidr/remote-swift-package-dependency': () =>
+    import('./plugins').then((m) => ({
+      default: m.RemoteSwiftPackageDependency,
+    })),
+  'plugins/cidr/remote-tool-set': () =>
+    import('./plugins').then((m) => ({ default: m.RemoteToolSet })),
+  'plugins/cidr/reset-cache-and-reload-projects': () =>
+    import('./plugins').then((m) => ({
+      default: m.ResetCacheAndReloadProjects,
+    })),
+  'plugins/cidr/reset-mcu': () =>
+    import('./plugins').then((m) => ({ default: m.ResetMcu })),
+  'plugins/cidr/return-value': () =>
+    import('./plugins').then((m) => ({ default: m.ReturnValue })),
+  'plugins/cidr/stm32-cube-mx': () =>
+    import('./plugins').then((m) => ({ default: m.Stm32CubeMx })),
+  'plugins/cidr/swift-lang': () =>
+    import('./plugins').then((m) => ({ default: m.SwiftLang })),
+  'plugins/cidr/swift-package': () =>
+    import('./plugins').then((m) => ({ default: m.SwiftPackage })),
+  'plugins/cidr/swift-package-dependency': () =>
+    import('./plugins').then((m) => ({ default: m.SwiftPackageDependency })),
+  'plugins/cidr/swift-package-manifest': () =>
+    import('./plugins').then((m) => ({ default: m.SwiftPackageManifest })),
+  'plugins/cidr/swift-package-run': () =>
+    import('./plugins').then((m) => ({ default: m.SwiftPackageRun })),
+  'plugins/cidr/swift-package-test': () =>
+    import('./plugins').then((m) => ({ default: m.SwiftPackageTest })),
+  'plugins/cidr/target': () =>
+    import('./plugins').then((m) => ({ default: m.Target })),
+  'plugins/cidr/type-extension': () =>
+    import('./plugins').then((m) => ({ default: m.TypeExtension })),
+  'plugins/cidr/unfreeze': () =>
+    import('./plugins').then((m) => ({ default: m.Unfreeze })),
+  'plugins/cidr/unfreeze-all': () =>
+    import('./plugins').then((m) => ({ default: m.UnfreezeAll })),
+  'plugins/cidr/value-muted': () =>
+    import('./plugins').then((m) => ({ default: m.ValueMuted })),
+  'plugins/cidr/variables': () =>
+    import('./plugins').then((m) => ({ default: m.Variables })),
+  'plugins/cidr/vcpkg': () =>
+    import('./plugins').then((m) => ({ default: m.Vcpkg })),
+  'plugins/cidr/vhdl': () =>
+    import('./plugins').then((m) => ({ default: m.Vhdl })),
+  'plugins/code-with-me/cwm-cam-avatar-off': () =>
+    import('./plugins').then((m) => ({ default: m.CwmCamAvatarOff })),
+  'plugins/code-with-me/cwm-cam-avatar-on': () =>
+    import('./plugins').then((m) => ({ default: m.CwmCamAvatarOn })),
+  'plugins/code-with-me/cwm-cam-off': () =>
+    import('./plugins').then((m) => ({ default: m.CwmCamOff })),
+  'plugins/code-with-me/cwm-cam-on': () =>
+    import('./plugins').then((m) => ({ default: m.CwmCamOn })),
+  'plugins/code-with-me/cwm-disable-call': () =>
+    import('./plugins').then((m) => ({ default: m.CwmDisableCall })),
+  'plugins/code-with-me/cwm-enable-call': () =>
+    import('./plugins').then((m) => ({ default: m.CwmEnableCall })),
+  'plugins/code-with-me/cwm-icon-modificator': () =>
+    import('./plugins').then((m) => ({ default: m.CwmIconModificator })),
+  'plugins/code-with-me/cwm-icon-modificator-menu': () =>
+    import('./plugins').then((m) => ({ default: m.CwmIconModificatorMenu })),
+  'plugins/code-with-me/cwm-invite': () =>
+    import('./plugins').then((m) => ({ default: m.CwmInvite })),
+  'plugins/code-with-me/cwm-mic-avatar-off': () =>
+    import('./plugins').then((m) => ({ default: m.CwmMicAvatarOff })),
+  'plugins/code-with-me/cwm-mic-avatar-on': () =>
+    import('./plugins').then((m) => ({ default: m.CwmMicAvatarOn })),
+  'plugins/code-with-me/cwm-mic-off': () =>
+    import('./plugins').then((m) => ({ default: m.CwmMicOff })),
+  'plugins/code-with-me/cwm-mic-on': () =>
+    import('./plugins').then((m) => ({ default: m.CwmMicOn })),
+  'plugins/code-with-me/cwm-permission-edit': () =>
+    import('./plugins').then((m) => ({ default: m.CwmPermissionEdit })),
+  'plugins/code-with-me/cwm-permission-full': () =>
+    import('./plugins').then((m) => ({ default: m.CwmPermissionFull })),
+  'plugins/code-with-me/cwm-permission-view': () =>
+    import('./plugins').then((m) => ({ default: m.CwmPermissionView })),
+  'plugins/code-with-me/cwm-permissions': () =>
+    import('./plugins').then((m) => ({ default: m.CwmPermissions })),
+  'plugins/code-with-me/cwm-permissions-denied': () =>
+    import('./plugins').then((m) => ({ default: m.CwmPermissionsDenied })),
+  'plugins/code-with-me/cwm-permissions-granted': () =>
+    import('./plugins').then((m) => ({ default: m.CwmPermissionsGranted })),
+  'plugins/code-with-me/cwm-screen-in-browser-off': () =>
+    import('./plugins').then((m) => ({ default: m.CwmScreenInBrowserOff })),
+  'plugins/code-with-me/cwm-screen-in-browser-on': () =>
+    import('./plugins').then((m) => ({ default: m.CwmScreenInBrowserOn })),
+  'plugins/code-with-me/cwm-screen-off': () =>
+    import('./plugins').then((m) => ({ default: m.CwmScreenOff })),
+  'plugins/code-with-me/cwm-screen-on': () =>
+    import('./plugins').then((m) => ({ default: m.CwmScreenOn })),
+  'plugins/code-with-me/cwm-share': () =>
+    import('./plugins').then((m) => ({ default: m.CwmShare })),
+  'plugins/code-with-me/cwm-verified': () =>
+    import('./plugins').then((m) => ({ default: m.CwmVerified })),
+  'plugins/dart/dart': () =>
+    import('./plugins').then((m) => ({ default: m.Dart })),
+  'plugins/dart/dart-remote': () =>
+    import('./plugins').then((m) => ({ default: m.DartRemote })),
+  'plugins/dart/dart-test': () =>
+    import('./plugins').then((m) => ({ default: m.DartTest })),
+  'plugins/dart/dart-web': () =>
+    import('./plugins').then((m) => ({ default: m.DartWeb })),
+  'plugins/dart/observatory': () =>
+    import('./plugins').then((m) => ({ default: m.Observatory })),
+  'plugins/dart/warning-point': () =>
+    import('./plugins').then((m) => ({ default: m.WarningPoint })),
+  'plugins/databricks/run-as-workflow': () =>
+    import('./plugins').then((m) => ({ default: m.RunAsWorkflow })),
+  'plugins/dev-containers/dev-containers': () =>
+    import('./plugins').then((m) => ({ default: m.DevContainers })),
+  'plugins/docker/docker': () =>
+    import('./plugins').then((m) => ({ default: m.Docker })),
+  'plugins/docker/docker-compose': () =>
+    import('./plugins').then((m) => ({ default: m.DockerCompose })),
+  'plugins/docker/docker-compose-scaled-service-stopped': () =>
+    import('./plugins').then((m) => ({
+      default: m.DockerComposeScaledServiceStopped,
+    })),
+  'plugins/docker/docker-compose-scaled-service-up': () =>
+    import('./plugins').then((m) => ({
+      default: m.DockerComposeScaledServiceUp,
+    })),
+  'plugins/docker/docker-compose-service-stopped': () =>
+    import('./plugins').then((m) => ({
+      default: m.DockerComposeServiceStopped,
+    })),
+  'plugins/docker/docker-compose-service-up': () =>
+    import('./plugins').then((m) => ({ default: m.DockerComposeServiceUp })),
+  'plugins/docker/docker-registry': () =>
+    import('./plugins').then((m) => ({ default: m.DockerRegistry })),
+  'plugins/full-line-completion/full-line-completion': () =>
+    import('./plugins').then((m) => ({ default: m.FullLineCompletion })),
+  'plugins/full-line-completion/full-line-completion-outline': () =>
+    import('./plugins').then((m) => ({ default: m.FullLineCompletionOutline })),
+  'plugins/github/github': () =>
+    import('./plugins').then((m) => ({ default: m.Github })),
+  'plugins/github/github-warning': () =>
+    import('./plugins').then((m) => ({ default: m.GithubWarning })),
+  'plugins/gitlab/git-lab-logo': () =>
+    import('./plugins').then((m) => ({ default: m.GitLabLogo })),
+  'plugins/gitlab/git-lab-warning': () =>
+    import('./plugins').then((m) => ({ default: m.GitLabWarning })),
+  'plugins/graphql/apollo': () =>
+    import('./plugins').then((m) => ({ default: m.Apollo })),
+  'plugins/graphql/attribute': () =>
+    import('./plugins').then((m) => ({ default: m.Attribute })),
+  'plugins/graphql/enum': () =>
+    import('./plugins').then((m) => ({ default: m.GraphqlEnum })),
+  'plugins/graphql/field': () =>
+    import('./plugins').then((m) => ({ default: m.GraphqlField })),
+  'plugins/graphql/fragment': () =>
+    import('./plugins').then((m) => ({ default: m.Fragment })),
+  'plugins/graphql/graph-ql': () =>
+    import('./plugins').then((m) => ({ default: m.GraphQl })),
+  'plugins/graphql/graph-qlcongif': () =>
+    import('./plugins').then((m) => ({ default: m.GraphQlcongif })),
+  'plugins/graphql/graph-qlschema': () =>
+    import('./plugins').then((m) => ({ default: m.GraphQlschema })),
+  'plugins/graphql/interface': () =>
+    import('./plugins').then((m) => ({ default: m.GraphqlInterface })),
+  'plugins/graphql/mutation': () =>
+    import('./plugins').then((m) => ({ default: m.Mutation })),
+  'plugins/graphql/query': () =>
+    import('./plugins').then((m) => ({ default: m.GraphqlQuery })),
+  'plugins/graphql/relay': () =>
+    import('./plugins').then((m) => ({ default: m.Relay })),
+  'plugins/graphql/scalar': () =>
+    import('./plugins').then((m) => ({ default: m.Scalar })),
+  'plugins/graphql/subscription': () =>
+    import('./plugins').then((m) => ({ default: m.Subscription })),
+  'plugins/graphql/type': () =>
+    import('./plugins').then((m) => ({ default: m.Type })),
+  'plugins/graphql/variable': () =>
+    import('./plugins').then((m) => ({ default: m.GraphqlVariable })),
+  'plugins/java-ee/abstract-class': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractClass })),
+  'plugins/java-ee/abstract-field': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractField })),
+  'plugins/java-ee/abstract-method': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractMethod })),
+  'plugins/java-ee/abstract-property': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractProperty })),
+  'plugins/java-ee/annotation-type': () =>
+    import('./plugins').then((m) => ({ default: m.AnnotationType })),
+  'plugins/java-ee/application-xml': () =>
+    import('./plugins').then((m) => ({ default: m.ApplicationXml })),
+  'plugins/java-ee/bean': () =>
+    import('./plugins').then((m) => ({ default: m.Bean })),
+  'plugins/java-ee/bean-factory': () =>
+    import('./plugins').then((m) => ({ default: m.BeanFactory })),
+  'plugins/java-ee/bean-infrastructure': () =>
+    import('./plugins').then((m) => ({ default: m.BeanInfrastructure })),
+  'plugins/java-ee/bean-method': () =>
+    import('./plugins').then((m) => ({ default: m.BeanMethod })),
+  'plugins/java-ee/bean-property': () =>
+    import('./plugins').then((m) => ({ default: m.BeanProperty })),
+  'plugins/java-ee/build-on-frame-deactivation': () =>
+    import('./plugins').then((m) => ({ default: m.BuildOnFrameDeactivation })),
+  'plugins/java-ee/cdi': () =>
+    import('./plugins').then((m) => ({ default: m.Cdi })),
+  'plugins/java-ee/class': () =>
+    import('./plugins').then((m) => ({ default: m.Class })),
+  'plugins/java-ee/class-initializer': () =>
+    import('./plugins').then((m) => ({ default: m.ClassInitializer })),
+  'plugins/java-ee/component': () =>
+    import('./plugins').then((m) => ({ default: m.Component })),
+  'plugins/java-ee/configuration-scan': () =>
+    import('./plugins').then((m) => ({ default: m.ConfigurationScan })),
+  'plugins/java-ee/constraint-mappings': () =>
+    import('./plugins').then((m) => ({ default: m.ConstraintMappings })),
+  'plugins/java-ee/constraint-validator': () =>
+    import('./plugins').then((m) => ({ default: m.ConstraintValidator })),
+  'plugins/java-ee/constraints': () =>
+    import('./plugins').then((m) => ({ default: m.Constraints })),
+  'plugins/java-ee/converter': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEeConverter })),
+  'plugins/java-ee/decorator': () =>
+    import('./plugins').then((m) => ({ default: m.Decorator })),
+  'plugins/java-ee/deployments': () =>
+    import('./plugins').then((m) => ({ default: m.Deployments })),
+  'plugins/java-ee/ejb-artifact': () =>
+    import('./plugins').then((m) => ({ default: m.EjbArtifact })),
+  'plugins/java-ee/ejb-business-method': () =>
+    import('./plugins').then((m) => ({ default: m.EjbBusinessMethod })),
+  'plugins/java-ee/ejb-class': () =>
+    import('./plugins').then((m) => ({ default: m.EjbClass })),
+  'plugins/java-ee/ejb-cmp-field': () =>
+    import('./plugins').then((m) => ({ default: m.EjbCmpField })),
+  'plugins/java-ee/ejb-cmr-field': () =>
+    import('./plugins').then((m) => ({ default: m.EjbCmrField })),
+  'plugins/java-ee/ejb-create-method': () =>
+    import('./plugins').then((m) => ({ default: m.EjbCreateMethod })),
+  'plugins/java-ee/ejb-finder-method': () =>
+    import('./plugins').then((m) => ({ default: m.EjbFinderMethod })),
+  'plugins/java-ee/ejb-jar-xml': () =>
+    import('./plugins').then((m) => ({ default: m.EjbJarXml })),
+  'plugins/java-ee/ejb-module': () =>
+    import('./plugins').then((m) => ({ default: m.EjbModule })),
+  'plugins/java-ee/ejb-primary-key-class': () =>
+    import('./plugins').then((m) => ({ default: m.EjbPrimaryKeyClass })),
+  'plugins/java-ee/ejb-reference': () =>
+    import('./plugins').then((m) => ({ default: m.EjbReference })),
+  'plugins/java-ee/embedded-attribute-overlay': () =>
+    import('./plugins').then((m) => ({ default: m.EmbeddedAttributeOverlay })),
+  'plugins/java-ee/entity-bean': () =>
+    import('./plugins').then((m) => ({ default: m.EntityBean })),
+  'plugins/java-ee/enum': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEeEnum })),
+  'plugins/java-ee/er-diagram': () =>
+    import('./plugins').then((m) => ({ default: m.ErDiagram })),
+  'plugins/java-ee/event': () =>
+    import('./plugins').then((m) => ({ default: m.Event })),
+  'plugins/java-ee/field': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEeField })),
+  'plugins/java-ee/field-in-xml': () =>
+    import('./plugins').then((m) => ({ default: m.FieldInXml })),
+  'plugins/java-ee/general': () =>
+    import('./plugins').then((m) => ({ default: m.General })),
+  'plugins/java-ee/getter-in-xml': () =>
+    import('./plugins').then((m) => ({ default: m.GetterInXml })),
+  'plugins/java-ee/groovy': () =>
+    import('./plugins').then((m) => ({ default: m.Groovy })),
+  'plugins/java-ee/hibernate': () =>
+    import('./plugins').then((m) => ({ default: m.Hibernate })),
+  'plugins/java-ee/home': () =>
+    import('./plugins').then((m) => ({ default: m.Home })),
+  'plugins/java-ee/inherited-attribute-overlay': () =>
+    import('./plugins').then((m) => ({ default: m.InheritedAttributeOverlay })),
+  'plugins/java-ee/inteceptor-method': () =>
+    import('./plugins').then((m) => ({ default: m.InteceptorMethod })),
+  'plugins/java-ee/interceptor-class': () =>
+    import('./plugins').then((m) => ({ default: m.InterceptorClass })),
+  'plugins/java-ee/interceptors': () =>
+    import('./plugins').then((m) => ({ default: m.Interceptors })),
+  'plugins/java-ee/interface': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEeInterface })),
+  'plugins/java-ee/jakarta-ee': () =>
+    import('./plugins').then((m) => ({ default: m.JakartaEe })),
+  'plugins/java-ee/java-eeartifact': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEeartifact })),
+  'plugins/java-ee/javaee-app-module': () =>
+    import('./plugins').then((m) => ({ default: m.JavaeeAppModule })),
+  'plugins/java-ee/jpa-facet': () =>
+    import('./plugins').then((m) => ({ default: m.JpaFacet })),
+  'plugins/java-ee/lib-annotation': () =>
+    import('./plugins').then((m) => ({ default: m.LibAnnotation })),
+  'plugins/java-ee/lib-validator': () =>
+    import('./plugins').then((m) => ({ default: m.LibValidator })),
+  'plugins/java-ee/listener': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEeListener })),
+  'plugins/java-ee/managed-bean': () =>
+    import('./plugins').then((m) => ({ default: m.ManagedBean })),
+  'plugins/java-ee/message-bean': () =>
+    import('./plugins').then((m) => ({ default: m.MessageBean })),
+  'plugins/java-ee/method': () =>
+    import('./plugins').then((m) => ({ default: m.Method })),
+  'plugins/java-ee/navigation-rule': () =>
+    import('./plugins').then((m) => ({ default: m.NavigationRule })),
+  'plugins/java-ee/persistence-attribute': () =>
+    import('./plugins').then((m) => ({
+      default: m.JavaEePersistenceAttribute,
+    })),
+  'plugins/java-ee/persistence-embeddable': () =>
+    import('./plugins').then((m) => ({
+      default: m.JavaEePersistenceEmbeddable,
+    })),
+  'plugins/java-ee/persistence-id': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEePersistenceId })),
+  'plugins/java-ee/persistence-id-relationship': () =>
+    import('./plugins').then((m) => ({ default: m.PersistenceIdRelationship })),
+  'plugins/java-ee/persistence-mapped-superclass': () =>
+    import('./plugins').then((m) => ({
+      default: m.JavaEePersistenceMappedSuperclass,
+    })),
+  'plugins/java-ee/persistence-relationship': () =>
+    import('./plugins').then((m) => ({
+      default: m.JavaEePersistenceRelationship,
+    })),
+  'plugins/java-ee/persistence-unit': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEePersistenceUnit })),
+  'plugins/java-ee/property': () =>
+    import('./plugins').then((m) => ({ default: m.Property })),
+  'plugins/java-ee/publisher': () =>
+    import('./plugins').then((m) => ({ default: m.Publisher })),
+  'plugins/java-ee/record': () =>
+    import('./plugins').then((m) => ({ default: m.Record })),
+  'plugins/java-ee/remote': () =>
+    import('./plugins').then((m) => ({ default: m.Remote })),
+  'plugins/java-ee/renderer-kit': () =>
+    import('./plugins').then((m) => ({ default: m.RendererKit })),
+  'plugins/java-ee/request-mapping': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEeRequestMapping })),
+  'plugins/java-ee/scheduled-event': () =>
+    import('./plugins').then((m) => ({ default: m.ScheduledEvent })),
+  'plugins/java-ee/scopes': () =>
+    import('./plugins').then((m) => ({ default: m.Scopes })),
+  'plugins/java-ee/session-bean': () =>
+    import('./plugins').then((m) => ({ default: m.SessionBean })),
+  'plugins/java-ee/show-autowired-candidates': () =>
+    import('./plugins').then((m) => ({ default: m.ShowAutowiredCandidates })),
+  'plugins/java-ee/show-autowired-dependencies': () =>
+    import('./plugins').then((m) => ({
+      default: m.JavaEeShowAutowiredDependencies,
+    })),
+  'plugins/java-ee/show-cacheable': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEeShowCacheable })),
+  'plugins/java-ee/trait': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEeTrait })),
+  'plugins/java-ee/update-running-application': () =>
+    import('./plugins').then((m) => ({ default: m.UpdateRunningApplication })),
+  'plugins/java-ee/validator': () =>
+    import('./plugins').then((m) => ({ default: m.Validator })),
+  'plugins/java-ee/variable': () =>
+    import('./plugins').then((m) => ({ default: m.JavaEeVariable })),
+  'plugins/java-ee/web-artifact': () =>
+    import('./plugins').then((m) => ({ default: m.WebArtifact })),
+  'plugins/java-ee/web-module': () =>
+    import('./plugins').then((m) => ({ default: m.WebModule })),
+  'plugins/java-ee/web-module-group': () =>
+    import('./plugins').then((m) => ({ default: m.WebModuleGroup })),
+  'plugins/java-ee/web-service': () =>
+    import('./plugins').then((m) => ({ default: m.WebService })),
+  'plugins/java-ee/web-service-client': () =>
+    import('./plugins').then((m) => ({ default: m.WebServiceClient })),
+  'plugins/java-ee/web-xml': () =>
+    import('./plugins').then((m) => ({ default: m.WebXml })),
+  'plugins/java-ee/xml-service': () =>
+    import('./plugins').then((m) => ({ default: m.XmlService })),
+  'plugins/jpa/add-changelog': () =>
+    import('./plugins').then((m) => ({ default: m.AddChangelog })),
+  'plugins/jpa/add-changeset': () =>
+    import('./plugins').then((m) => ({ default: m.AddChangeset })),
+  'plugins/jpa/add-named-query': () =>
+    import('./plugins').then((m) => ({ default: m.AddNamedQuery })),
+  'plugins/jpa/blaze-persistence-entity-view': () =>
+    import('./plugins').then((m) => ({
+      default: m.BlazePersistenceEntityView,
+    })),
+  'plugins/jpa/changelog': () =>
+    import('./plugins').then((m) => ({ default: m.Changelog })),
+  'plugins/jpa/changeset': () =>
+    import('./plugins').then((m) => ({ default: m.Changeset })),
+  'plugins/jpa/check-constraint': () =>
+    import('./plugins').then((m) => ({ default: m.CheckConstraint })),
+  'plugins/jpa/column': () =>
+    import('./plugins').then((m) => ({ default: m.Column })),
+  'plugins/jpa/converter': () =>
+    import('./plugins').then((m) => ({ default: m.JpaConverter })),
+  'plugins/jpa/count': () =>
+    import('./plugins').then((m) => ({ default: m.Count })),
+  'plugins/jpa/create-column': () =>
+    import('./plugins').then((m) => ({ default: m.CreateColumn })),
+  'plugins/jpa/create-constraint': () =>
+    import('./plugins').then((m) => ({ default: m.CreateConstraint })),
+  'plugins/jpa/create-index': () =>
+    import('./plugins').then((m) => ({ default: m.CreateIndex })),
+  'plugins/jpa/create-sequence': () =>
+    import('./plugins').then((m) => ({ default: m.CreateSequence })),
+  'plugins/jpa/create-table': () =>
+    import('./plugins').then((m) => ({ default: m.CreateTable })),
+  'plugins/jpa/data-model': () =>
+    import('./plugins').then((m) => ({ default: m.DataModel })),
+  'plugins/jpa/data-stores': () =>
+    import('./plugins').then((m) => ({ default: m.DataStores })),
+  'plugins/jpa/data-view': () =>
+    import('./plugins').then((m) => ({ default: m.DataView })),
+  'plugins/jpa/db-changelog': () =>
+    import('./plugins').then((m) => ({ default: m.DbChangelog })),
+  'plugins/jpa/ddl-scripts': () =>
+    import('./plugins').then((m) => ({ default: m.DdlScripts })),
+  'plugins/jpa/delete': () =>
+    import('./plugins').then((m) => ({ default: m.Delete })),
+  'plugins/jpa/diff-liquibase-changelog': () =>
+    import('./plugins').then((m) => ({ default: m.DiffLiquibaseChangelog })),
+  'plugins/jpa/diff-plugin-logo': () =>
+    import('./plugins').then((m) => ({ default: m.DiffPluginLogo })),
+  'plugins/jpa/drop-column': () =>
+    import('./plugins').then((m) => ({ default: m.DropColumn })),
+  'plugins/jpa/drop-constraint': () =>
+    import('./plugins').then((m) => ({ default: m.DropConstraint })),
+  'plugins/jpa/drop-index': () =>
+    import('./plugins').then((m) => ({ default: m.DropIndex })),
+  'plugins/jpa/drop-sequence': () =>
+    import('./plugins').then((m) => ({ default: m.DropSequence })),
+  'plugins/jpa/drop-table': () =>
+    import('./plugins').then((m) => ({ default: m.DropTable })),
+  'plugins/jpa/dto': () =>
+    import('./plugins').then((m) => ({ default: m.Dto })),
+  'plugins/jpa/embedded': () =>
+    import('./plugins').then((m) => ({ default: m.Embedded })),
+  'plugins/jpa/equals-and-hashcode': () =>
+    import('./plugins').then((m) => ({ default: m.EqualsAndHashcode })),
+  'plugins/jpa/explorer': () =>
+    import('./plugins').then((m) => ({ default: m.Explorer })),
+  'plugins/jpa/file-transfer': () =>
+    import('./plugins').then((m) => ({ default: m.FileTransfer })),
+  'plugins/jpa/find-collection': () =>
+    import('./plugins').then((m) => ({ default: m.FindCollection })),
+  'plugins/jpa/find-instance': () =>
+    import('./plugins').then((m) => ({ default: m.FindInstance })),
+  'plugins/jpa/flyway-plugin-logo': () =>
+    import('./plugins').then((m) => ({ default: m.FlywayPluginLogo })),
+  'plugins/jpa/generic-ui': () =>
+    import('./plugins').then((m) => ({ default: m.GenericUi })),
+  'plugins/jpa/gold-key': () =>
+    import('./plugins').then((m) => ({ default: m.GoldKey })),
+  'plugins/jpa/hibernate-event': () =>
+    import('./plugins').then((m) => ({ default: m.HibernateEvent })),
+  'plugins/jpa/include': () =>
+    import('./plugins').then((m) => ({ default: m.Include })),
+  'plugins/jpa/init-liquibase-changelog': () =>
+    import('./plugins').then((m) => ({ default: m.InitLiquibaseChangelog })),
+  'plugins/jpa/init-scripts': () =>
+    import('./plugins').then((m) => ({ default: m.InitScripts })),
+  'plugins/jpa/insight-navigate': () =>
+    import('./plugins').then((m) => ({ default: m.InsightNavigate })),
+  'plugins/jpa/java-module-root': () =>
+    import('./plugins').then((m) => ({ default: m.JavaModuleRoot })),
+  'plugins/jpa/liquibase': () =>
+    import('./plugins').then((m) => ({ default: m.Liquibase })),
+  'plugins/jpa/liquibase-mono': () =>
+    import('./plugins').then((m) => ({ default: m.LiquibaseMono })),
+  'plugins/jpa/liquibase-plugin-logo': () =>
+    import('./plugins').then((m) => ({ default: m.LiquibasePluginLogo })),
+  'plugins/jpa/liquibase-snapshot': () =>
+    import('./plugins').then((m) => ({ default: m.LiquibaseSnapshot })),
+  'plugins/jpa/liquibase-update': () =>
+    import('./plugins').then((m) => ({ default: m.LiquibaseUpdate })),
+  'plugins/jpa/mailer': () =>
+    import('./plugins').then((m) => ({ default: m.JpaMailer })),
+  'plugins/jpa/main-changelog': () =>
+    import('./plugins').then((m) => ({ default: m.MainChangelog })),
+  'plugins/jpa/many-to-many': () =>
+    import('./plugins').then((m) => ({ default: m.ManyToMany })),
+  'plugins/jpa/many-to-one': () =>
+    import('./plugins').then((m) => ({ default: m.ManyToOne })),
+  'plugins/jpa/minimalistic-mode': () =>
+    import('./plugins').then((m) => ({ default: m.MinimalisticMode })),
+  'plugins/jpa/move-to-another-changelog': () =>
+    import('./plugins').then((m) => ({ default: m.MoveToAnotherChangelog })),
+  'plugins/jpa/one-to-many': () =>
+    import('./plugins').then((m) => ({ default: m.OneToMany })),
+  'plugins/jpa/one-to-one': () =>
+    import('./plugins').then((m) => ({ default: m.OneToOne })),
+  'plugins/jpa/persistence-attribute': () =>
+    import('./plugins').then((m) => ({ default: m.JpaPersistenceAttribute })),
+  'plugins/jpa/persistence-embeddable': () =>
+    import('./plugins').then((m) => ({ default: m.JpaPersistenceEmbeddable })),
+  'plugins/jpa/persistence-id': () =>
+    import('./plugins').then((m) => ({ default: m.JpaPersistenceId })),
+  'plugins/jpa/persistence-mapped-superclass': () =>
+    import('./plugins').then((m) => ({
+      default: m.JpaPersistenceMappedSuperclass,
+    })),
+  'plugins/jpa/persistence-relationship': () =>
+    import('./plugins').then((m) => ({
+      default: m.JpaPersistenceRelationship,
+    })),
+  'plugins/jpa/persistence-unit': () =>
+    import('./plugins').then((m) => ({ default: m.JpaPersistenceUnit })),
+  'plugins/jpa/plugin-logo': () =>
+    import('./plugins').then((m) => ({ default: m.PluginLogo })),
+  'plugins/jpa/project-properties': () =>
+    import('./plugins').then((m) => ({ default: m.ProjectProperties })),
+  'plugins/jpa/projection': () =>
+    import('./plugins').then((m) => ({ default: m.Projection })),
+  'plugins/jpa/query': () =>
+    import('./plugins').then((m) => ({ default: m.JpaQuery })),
+  'plugins/jpa/query-method': () =>
+    import('./plugins').then((m) => ({ default: m.QueryMethod })),
+  'plugins/jpa/reference-by': () =>
+    import('./plugins').then((m) => ({ default: m.ReferenceBy })),
+  'plugins/jpa/reference-to': () =>
+    import('./plugins').then((m) => ({ default: m.ReferenceTo })),
+  'plugins/jpa/remove': () =>
+    import('./plugins').then((m) => ({ default: m.Remove })),
+  'plugins/jpa/rename-column': () =>
+    import('./plugins').then((m) => ({ default: m.RenameColumn })),
+  'plugins/jpa/rename-constraint': () =>
+    import('./plugins').then((m) => ({ default: m.RenameConstraint })),
+  'plugins/jpa/rename-index': () =>
+    import('./plugins').then((m) => ({ default: m.RenameIndex })),
+  'plugins/jpa/rename-sequence': () =>
+    import('./plugins').then((m) => ({ default: m.RenameSequence })),
+  'plugins/jpa/rename-table': () =>
+    import('./plugins').then((m) => ({ default: m.RenameTable })),
+  'plugins/jpa/repository': () =>
+    import('./plugins').then((m) => ({ default: m.Repository })),
+  'plugins/jpa/restore-from-ignore': () =>
+    import('./plugins').then((m) => ({ default: m.RestoreFromIgnore })),
+  'plugins/jpa/save': () =>
+    import('./plugins').then((m) => ({ default: m.Save })),
+  'plugins/jpa/schema': () =>
+    import('./plugins').then((m) => ({ default: m.Schema })),
+  'plugins/jpa/screens': () =>
+    import('./plugins').then((m) => ({ default: m.Screens })),
+  'plugins/jpa/set-context': () =>
+    import('./plugins').then((m) => ({ default: m.SetContext })),
+  'plugins/jpa/set-label': () =>
+    import('./plugins').then((m) => ({ default: m.SetLabel })),
+  'plugins/jpa/settings': () =>
+    import('./plugins').then((m) => ({ default: m.Settings })),
+  'plugins/jpa/show-code': () =>
+    import('./plugins').then((m) => ({ default: m.ShowCode })),
+  'plugins/jpa/spring-icon': () =>
+    import('./plugins').then((m) => ({ default: m.SpringIcon })),
+  'plugins/jpa/sql': () =>
+    import('./plugins').then((m) => ({ default: m.Sql })),
+  'plugins/jpa/sql-file': () =>
+    import('./plugins').then((m) => ({ default: m.SqlFile })),
+  'plugins/jpa/table': () =>
+    import('./plugins').then((m) => ({ default: m.Table })),
+  'plugins/jpa/to-string': () =>
+    import('./plugins').then((m) => ({ default: m.ToString })),
+  'plugins/jpa/update': () =>
+    import('./plugins').then((m) => ({ default: m.Update })),
+  'plugins/jpa/update-database': () =>
+    import('./plugins').then((m) => ({ default: m.UpdateDatabase })),
+  'plugins/kotlin/abstract-class-kotlin': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractClassKotlin })),
+  'plugins/kotlin/abstract-extension-function': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractExtensionFunction })),
+  'plugins/kotlin/actual': () =>
+    import('./plugins').then((m) => ({ default: m.Actual })),
+  'plugins/kotlin/android': () =>
+    import('./plugins').then((m) => ({ default: m.Android })),
+  'plugins/kotlin/annotation-kotlin': () =>
+    import('./plugins').then((m) => ({ default: m.AnnotationKotlin })),
+  'plugins/kotlin/class-initializer-kotlin': () =>
+    import('./plugins').then((m) => ({ default: m.ClassInitializerKotlin })),
+  'plugins/kotlin/class-kotlin': () =>
+    import('./plugins').then((m) => ({ default: m.ClassKotlin })),
+  'plugins/kotlin/console': () =>
+    import('./plugins').then((m) => ({ default: m.Console })),
+  'plugins/kotlin/enum-kotlin': () =>
+    import('./plugins').then((m) => ({ default: m.EnumKotlin })),
+  'plugins/kotlin/expect': () =>
+    import('./plugins').then((m) => ({ default: m.Expect })),
+  'plugins/kotlin/field-value': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinFieldValue })),
+  'plugins/kotlin/field-variable': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinFieldVariable })),
+  'plugins/kotlin/fir': () =>
+    import('./plugins').then((m) => ({ default: m.Fir })),
+  'plugins/kotlin/interface-kotlin': () =>
+    import('./plugins').then((m) => ({ default: m.InterfaceKotlin })),
+  'plugins/kotlin/js': () =>
+    import('./plugins').then((m) => ({ default: m.Js })),
+  'plugins/kotlin/jvm': () =>
+    import('./plugins').then((m) => ({ default: m.Jvm })),
+  'plugins/kotlin/kotlin': () =>
+    import('./plugins').then((m) => ({ default: m.Kotlin })),
+  'plugins/kotlin/kotlin_activity': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinActivity })),
+  'plugins/kotlin/kotlin-gradle-script': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinGradleScript })),
+  'plugins/kotlin/kotlin-js': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinJs })),
+  'plugins/kotlin/kotlin-modifier': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinModifier })),
+  'plugins/kotlin/kotlin-notebooks': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinNotebooks })),
+  'plugins/kotlin/kotlin-notebooks-grey': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinNotebooksGrey })),
+  'plugins/kotlin/kotlin-notebooks-promo': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinNotebooksPromo })),
+  'plugins/kotlin/kotlin-script': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinScript })),
+  'plugins/kotlin/lambda': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinLambda })),
+  'plugins/kotlin/multiplatform': () =>
+    import('./plugins').then((m) => ({ default: m.Multiplatform })),
+  'plugins/kotlin/multiplatform-library': () =>
+    import('./plugins').then((m) => ({ default: m.MultiplatformLibrary })),
+  'plugins/kotlin/multiplatform-mobile': () =>
+    import('./plugins').then((m) => ({ default: m.MultiplatformMobile })),
+  'plugins/kotlin/multiplatform-mobile-library': () =>
+    import('./plugins').then((m) => ({
+      default: m.MultiplatformMobileLibrary,
+    })),
+  'plugins/kotlin/native': () =>
+    import('./plugins').then((m) => ({ default: m.Native })),
+  'plugins/kotlin/nodejs': () =>
+    import('./plugins').then((m) => ({ default: m.Nodejs })),
+  'plugins/kotlin/object-kotlin': () =>
+    import('./plugins').then((m) => ({ default: m.ObjectKotlin })),
+  'plugins/kotlin/pp-web': () =>
+    import('./plugins').then((m) => ({ default: m.PpWeb })),
+  'plugins/kotlin/type-alias': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinTypeAlias })),
+  'plugins/kotlin/value': () =>
+    import('./plugins').then((m) => ({ default: m.KotlinValue })),
+  'plugins/kubernetes/auto-refresh': () =>
+    import('./plugins').then((m) => ({ default: m.AutoRefresh })),
+  'plugins/kubernetes/cluster-role': () =>
+    import('./plugins').then((m) => ({ default: m.ClusterRole })),
+  'plugins/kubernetes/cluster-role-binding': () =>
+    import('./plugins').then((m) => ({ default: m.ClusterRoleBinding })),
+  'plugins/kubernetes/config-map': () =>
+    import('./plugins').then((m) => ({ default: m.ConfigMap })),
+  'plugins/kubernetes/configuration': () =>
+    import('./plugins').then((m) => ({ default: m.Configuration })),
+  'plugins/kubernetes/cron-jobs': () =>
+    import('./plugins').then((m) => ({ default: m.CronJobs })),
+  'plugins/kubernetes/custom-resource': () =>
+    import('./plugins').then((m) => ({ default: m.CustomResource })),
+  'plugins/kubernetes/custom-resource-definition': () =>
+    import('./plugins').then((m) => ({ default: m.CustomResourceDefinition })),
+  'plugins/kubernetes/custom-resources': () =>
+    import('./plugins').then((m) => ({ default: m.CustomResources })),
+  'plugins/kubernetes/daemon-set': () =>
+    import('./plugins').then((m) => ({ default: m.DaemonSet })),
+  'plugins/kubernetes/debug-with-telepresence': () =>
+    import('./plugins').then((m) => ({ default: m.DebugWithTelepresence })),
+  'plugins/kubernetes/deployment': () =>
+    import('./plugins').then((m) => ({ default: m.Deployment })),
+  'plugins/kubernetes/endpoints': () =>
+    import('./plugins').then((m) => ({ default: m.Endpoints })),
+  'plugins/kubernetes/events': () =>
+    import('./plugins').then((m) => ({ default: m.Events })),
+  'plugins/kubernetes/failed': () =>
+    import('./plugins').then((m) => ({ default: m.Failed })),
+  'plugins/kubernetes/forward-ports': () =>
+    import('./plugins').then((m) => ({ default: m.ForwardPorts })),
+  'plugins/kubernetes/group': () =>
+    import('./plugins').then((m) => ({ default: m.KubernetesGroup })),
+  'plugins/kubernetes/helm': () =>
+    import('./plugins').then((m) => ({ default: m.Helm })),
+  'plugins/kubernetes/helm-archive': () =>
+    import('./plugins').then((m) => ({ default: m.HelmArchive })),
+  'plugins/kubernetes/helm-chart': () =>
+    import('./plugins').then((m) => ({ default: m.HelmChart })),
+  'plugins/kubernetes/helm-chart-lock': () =>
+    import('./plugins').then((m) => ({ default: m.HelmChartLock })),
+  'plugins/kubernetes/helm-directory': () =>
+    import('./plugins').then((m) => ({ default: m.HelmDirectory })),
+  'plugins/kubernetes/helm-notes': () =>
+    import('./plugins').then((m) => ({ default: m.HelmNotes })),
+  'plugins/kubernetes/helm-requirments': () =>
+    import('./plugins').then((m) => ({ default: m.HelmRequirments })),
+  'plugins/kubernetes/helm-requirments-lock': () =>
+    import('./plugins').then((m) => ({ default: m.HelmRequirmentsLock })),
+  'plugins/kubernetes/helm-undeployable': () =>
+    import('./plugins').then((m) => ({ default: m.HelmUndeployable })),
+  'plugins/kubernetes/helmvalues-schema': () =>
+    import('./plugins').then((m) => ({ default: m.HelmvaluesSchema })),
+  'plugins/kubernetes/horizontal-pod-autoscaler': () =>
+    import('./plugins').then((m) => ({ default: m.HorizontalPodAutoscaler })),
+  'plugins/kubernetes/ingress': () =>
+    import('./plugins').then((m) => ({ default: m.Ingress })),
+  'plugins/kubernetes/jobs': () =>
+    import('./plugins').then((m) => ({ default: m.Jobs })),
+  'plugins/kubernetes/kubernetes-j': () =>
+    import('./plugins').then((m) => ({ default: m.KubernetesJ })),
+  'plugins/kubernetes/kubernetes-y': () =>
+    import('./plugins').then((m) => ({ default: m.KubernetesY })),
+  'plugins/kubernetes/kustomize': () =>
+    import('./plugins').then((m) => ({ default: m.Kustomize })),
+  'plugins/kubernetes/limits': () =>
+    import('./plugins').then((m) => ({ default: m.Limits })),
+  'plugins/kubernetes/mod-stop': () =>
+    import('./plugins').then((m) => ({ default: m.ModStop })),
+  'plugins/kubernetes/namespace': () =>
+    import('./plugins').then((m) => ({ default: m.Namespace })),
+  'plugins/kubernetes/namespaced-mark': () =>
+    import('./plugins').then((m) => ({ default: m.NamespacedMark })),
+  'plugins/kubernetes/network': () =>
+    import('./plugins').then((m) => ({ default: m.Network })),
+  'plugins/kubernetes/network-policy': () =>
+    import('./plugins').then((m) => ({ default: m.NetworkPolicy })),
+  'plugins/kubernetes/node': () =>
+    import('./plugins').then((m) => ({ default: m.Node })),
+  'plugins/kubernetes/pending': () =>
+    import('./plugins').then((m) => ({ default: m.Pending })),
+  'plugins/kubernetes/persistent-volume': () =>
+    import('./plugins').then((m) => ({ default: m.PersistentVolume })),
+  'plugins/kubernetes/persistent-volume-claim': () =>
+    import('./plugins').then((m) => ({ default: m.PersistentVolumeClaim })),
+  'plugins/kubernetes/persistent-volumes': () =>
+    import('./plugins').then((m) => ({ default: m.PersistentVolumes })),
+  'plugins/kubernetes/pod': () =>
+    import('./plugins').then((m) => ({ default: m.Pod })),
+  'plugins/kubernetes/pod-security-policy': () =>
+    import('./plugins').then((m) => ({ default: m.PodSecurityPolicy })),
+  'plugins/kubernetes/quota': () =>
+    import('./plugins').then((m) => ({ default: m.Quota })),
+  'plugins/kubernetes/refresh-kubernetes-configuration': () =>
+    import('./plugins').then((m) => ({
+      default: m.RefreshKubernetesConfiguration,
+    })),
+  'plugins/kubernetes/replica-set': () =>
+    import('./plugins').then((m) => ({ default: m.ReplicaSet })),
+  'plugins/kubernetes/role': () =>
+    import('./plugins').then((m) => ({ default: m.Role })),
+  'plugins/kubernetes/role-binding': () =>
+    import('./plugins').then((m) => ({ default: m.RoleBinding })),
+  'plugins/kubernetes/service-account': () =>
+    import('./plugins').then((m) => ({ default: m.ServiceAccount })),
+  'plugins/kubernetes/services': () =>
+    import('./plugins').then((m) => ({ default: m.Services })),
+  'plugins/kubernetes/show-logs': () =>
+    import('./plugins').then((m) => ({ default: m.ShowLogs })),
+  'plugins/kubernetes/stateful-set': () =>
+    import('./plugins').then((m) => ({ default: m.StatefulSet })),
+  'plugins/kubernetes/storage-class': () =>
+    import('./plugins').then((m) => ({ default: m.StorageClass })),
+  'plugins/kubernetes/succeded': () =>
+    import('./plugins').then((m) => ({ default: m.Succeded })),
+  'plugins/kubernetes/user': () =>
+    import('./plugins').then((m) => ({ default: m.User })),
+  'plugins/kubernetes/value-values': () =>
+    import('./plugins').then((m) => ({ default: m.ValueValues })),
+  'plugins/kubernetes/volume': () =>
+    import('./plugins').then((m) => ({ default: m.Volume })),
+  'plugins/kubernetes/werf': () =>
+    import('./plugins').then((m) => ({ default: m.Werf })),
+  'plugins/kubernetes/workloads': () =>
+    import('./plugins').then((m) => ({ default: m.Workloads })),
+  'plugins/linux/linux': () =>
+    import('./plugins').then((m) => ({ default: m.Linux })),
+  'plugins/linux/linux-logo': () =>
+    import('./plugins').then((m) => ({ default: m.LinuxLogo })),
+  'plugins/lombok/config': () =>
+    import('./plugins').then((m) => ({ default: m.Config })),
+  'plugins/lombok/lombok': () =>
+    import('./plugins').then((m) => ({ default: m.Lombok })),
+  'plugins/lombok/lombok-class': () =>
+    import('./plugins').then((m) => ({ default: m.LombokClass })),
+  'plugins/lombok/lombok-field': () =>
+    import('./plugins').then((m) => ({ default: m.LombokField })),
+  'plugins/lombok/lombok-method': () =>
+    import('./plugins').then((m) => ({ default: m.LombokMethod })),
+  'plugins/meson/meson': () =>
+    import('./plugins').then((m) => ({ default: m.Meson })),
+  'plugins/meson/meson-plugin-logo': () =>
+    import('./plugins').then((m) => ({ default: m.MesonPluginLogo })),
+  'plugins/meson/meson-rc': () =>
+    import('./plugins').then((m) => ({ default: m.MesonRc })),
+  'plugins/meson/meson-reload': () =>
+    import('./plugins').then((m) => ({ default: m.MesonReload })),
+  'plugins/outsight/out-sight': () =>
+    import('./plugins').then((m) => ({ default: m.OutSight })),
+  'plugins/outsight/out-sight-color': () =>
+    import('./plugins').then((m) => ({ default: m.OutSightColor })),
+  'plugins/package-checker/high-all': () =>
+    import('./plugins').then((m) => ({ default: m.HighAll })),
+  'plugins/package-checker/high-all-tree': () =>
+    import('./plugins').then((m) => ({ default: m.HighAllTree })),
+  'plugins/package-checker/high-all-tree-outline': () =>
+    import('./plugins').then((m) => ({ default: m.HighAllTreeOutline })),
+  'plugins/package-checker/low-all': () =>
+    import('./plugins').then((m) => ({ default: m.LowAll })),
+  'plugins/package-checker/low-all-tree': () =>
+    import('./plugins').then((m) => ({ default: m.LowAllTree })),
+  'plugins/package-checker/low-all-tree-outline': () =>
+    import('./plugins').then((m) => ({ default: m.LowAllTreeOutline })),
+  'plugins/package-checker/medium-all': () =>
+    import('./plugins').then((m) => ({ default: m.MediumAll })),
+  'plugins/package-checker/medium-all-tree': () =>
+    import('./plugins').then((m) => ({ default: m.MediumAllTree })),
+  'plugins/package-checker/medium-all-tree-outline': () =>
+    import('./plugins').then((m) => ({ default: m.MediumAllTreeOutline })),
+  'plugins/package-checker/safe-all': () =>
+    import('./plugins').then((m) => ({ default: m.SafeAll })),
+  'plugins/package-checker/safe-all-tree': () =>
+    import('./plugins').then((m) => ({ default: m.SafeAllTree })),
+  'plugins/package-checker/safe-all-tree-outline': () =>
+    import('./plugins').then((m) => ({ default: m.SafeAllTreeOutline })),
+  'plugins/package-checker/uncheched-all': () =>
+    import('./plugins').then((m) => ({ default: m.UnchechedAll })),
+  'plugins/package-checker/uncheched-all-tree': () =>
+    import('./plugins').then((m) => ({ default: m.UnchechedAllTree })),
+  'plugins/package-checker/uncheched-all-tree-outline': () =>
+    import('./plugins').then((m) => ({ default: m.UnchechedAllTreeOutline })),
+  'plugins/platformio/clean': () =>
+    import('./plugins').then((m) => ({ default: m.Clean })),
+  'plugins/platformio/component-vendor': () =>
+    import('./plugins').then((m) => ({ default: m.ComponentVendor })),
+  'plugins/platformio/electronic-board': () =>
+    import('./plugins').then((m) => ({ default: m.ElectronicBoard })),
+  'plugins/platformio/mod-platform-io': () =>
+    import('./plugins').then((m) => ({ default: m.ModPlatformIo })),
+  'plugins/platformio/platform-io': () =>
+    import('./plugins').then((m) => ({ default: m.PlatformIo })),
+  'plugins/platformio/software-framework': () =>
+    import('./plugins').then((m) => ({ default: m.SoftwareFramework })),
+  'plugins/rest/http_request': () =>
+    import('./plugins').then((m) => ({ default: m.HttpRequest })),
+  'plugins/ruby/action-method': () =>
+    import('./plugins').then((m) => ({ default: m.ActionMethod })),
+  'plugins/ruby/alias-factory': () =>
+    import('./plugins').then((m) => ({ default: m.AliasFactory })),
+  'plugins/ruby/alias-sequence': () =>
+    import('./plugins').then((m) => ({ default: m.AliasSequence })),
+  'plugins/ruby/assoc-column': () =>
+    import('./plugins').then((m) => ({ default: m.AssocColumn })),
+  'plugins/ruby/block': () =>
+    import('./plugins').then((m) => ({ default: m.Block })),
+  'plugins/ruby/bundle-run-anything': () =>
+    import('./plugins').then((m) => ({ default: m.BundleRunAnything })),
+  'plugins/ruby/channel': () =>
+    import('./plugins').then((m) => ({ default: m.Channel })),
+  'plugins/ruby/chef-cookbook': () =>
+    import('./plugins').then((m) => ({ default: m.ChefCookbook })),
+  'plugins/ruby/controller-folder': () =>
+    import('./plugins').then((m) => ({ default: m.ControllerFolder })),
+  'plugins/ruby/controller-node': () =>
+    import('./plugins').then((m) => ({ default: m.ControllerNode })),
+  'plugins/ruby/db-hash': () =>
+    import('./plugins').then((m) => ({ default: m.DbHash })),
+  'plugins/ruby/endpoint': () =>
+    import('./plugins').then((m) => ({ default: m.Endpoint })),
+  'plugins/ruby/factory': () =>
+    import('./plugins').then((m) => ({ default: m.Factory })),
+  'plugins/ruby/haml': () =>
+    import('./plugins').then((m) => ({ default: m.Haml })),
+  'plugins/ruby/hash-key': () =>
+    import('./plugins').then((m) => ({ default: m.HashKey })),
+  'plugins/ruby/helpers-folder-closed': () =>
+    import('./plugins').then((m) => ({ default: m.HelpersFolderClosed })),
+  'plugins/ruby/incomplete-closed': () =>
+    import('./plugins').then((m) => ({ default: m.IncompleteClosed })),
+  'plugins/ruby/jrails-module-closed': () =>
+    import('./plugins').then((m) => ({ default: m.JrailsModuleClosed })),
+  'plugins/ruby/jruby': () =>
+    import('./plugins').then((m) => ({ default: m.Jruby })),
+  'plugins/ruby/jruby-run-configuration': () =>
+    import('./plugins').then((m) => ({ default: m.JrubyRunConfiguration })),
+  'plugins/ruby/jruby-sdk-closed': () =>
+    import('./plugins').then((m) => ({ default: m.JrubySdkClosed })),
+  'plugins/ruby/mailer': () =>
+    import('./plugins').then((m) => ({ default: m.RubyMailer })),
+  'plugins/ruby/mailers-folder': () =>
+    import('./plugins').then((m) => ({ default: m.MailersFolder })),
+  'plugins/ruby/migrations-closed': () =>
+    import('./plugins').then((m) => ({ default: m.MigrationsClosed })),
+  'plugins/ruby/model-class': () =>
+    import('./plugins').then((m) => ({ default: m.ModelClass })),
+  'plugins/ruby/module': () =>
+    import('./plugins').then((m) => ({ default: m.Module })),
+  'plugins/ruby/not-defined': () =>
+    import('./plugins').then((m) => ({ default: m.NotDefined })),
+  'plugins/ruby/rails-module-closed': () =>
+    import('./plugins').then((m) => ({ default: m.RailsModuleClosed })),
+  'plugins/ruby/rails-server-run-configuration': () =>
+    import('./plugins').then((m) => ({
+      default: m.RailsServerRunConfiguration,
+    })),
+  'plugins/ruby/rake-run-configuration': () =>
+    import('./plugins').then((m) => ({ default: m.RakeRunConfiguration })),
+  'plugins/ruby/rake-task-def-node': () =>
+    import('./plugins').then((m) => ({ default: m.RakeTaskDefNode })),
+  'plugins/ruby/rbenv-run-anything': () =>
+    import('./plugins').then((m) => ({ default: m.RbenvRunAnything })),
+  'plugins/ruby/rbs-file': () =>
+    import('./plugins').then((m) => ({ default: m.RbsFile })),
+  'plugins/ruby/reader': () =>
+    import('./plugins').then((m) => ({ default: m.Reader })),
+  'plugins/ruby/resources': () =>
+    import('./plugins').then((m) => ({ default: m.Resources })),
+  'plugins/ruby/rhtml': () =>
+    import('./plugins').then((m) => ({ default: m.Rhtml })),
+  'plugins/ruby/rjs': () =>
+    import('./plugins').then((m) => ({ default: m.Rjs })),
+  'plugins/ruby/rspec-run-configuration': () =>
+    import('./plugins').then((m) => ({ default: m.RspecRunConfiguration })),
+  'plugins/ruby/rspec-shared-group-closed': () =>
+    import('./plugins').then((m) => ({ default: m.RspecSharedGroupClosed })),
+  'plugins/ruby/rspec-shared-group-ref': () =>
+    import('./plugins').then((m) => ({ default: m.RspecSharedGroupRef })),
+  'plugins/ruby/rspec-test': () =>
+    import('./plugins').then((m) => ({ default: m.RspecTest })),
+  'plugins/ruby/ruby': () =>
+    import('./plugins').then((m) => ({ default: m.Ruby })),
+  'plugins/ruby/ruby-gems': () =>
+    import('./plugins').then((m) => ({ default: m.RubyGems })),
+  'plugins/ruby/ruby-module-closed': () =>
+    import('./plugins').then((m) => ({ default: m.RubyModuleClosed })),
+  'plugins/ruby/ruby-remote': () =>
+    import('./plugins').then((m) => ({ default: m.RubyRemote })),
+  'plugins/ruby/ruby-script': () =>
+    import('./plugins').then((m) => ({ default: m.RubyScript })),
+  'plugins/ruby/ruby-test-unit': () =>
+    import('./plugins').then((m) => ({ default: m.RubyTestUnit })),
+  'plugins/ruby/run-configuration': () =>
+    import('./plugins').then((m) => ({ default: m.RunConfiguration })),
+  'plugins/ruby/run-rack-task': () =>
+    import('./plugins').then((m) => ({ default: m.RunRackTask })),
+  'plugins/ruby/run-spork-server': () =>
+    import('./plugins').then((m) => ({ default: m.RunSporkServer })),
+  'plugins/ruby/run-with-type-tracker': () =>
+    import('./plugins').then((m) => ({ default: m.RunWithTypeTracker })),
+  'plugins/ruby/rvm-run-anything': () =>
+    import('./plugins').then((m) => ({ default: m.RvmRunAnything })),
+  'plugins/ruby/rxml': () =>
+    import('./plugins').then((m) => ({ default: m.Rxml })),
+  'plugins/ruby/sequence': () =>
+    import('./plugins').then((m) => ({ default: m.Sequence })),
+  'plugins/ruby/slim': () =>
+    import('./plugins').then((m) => ({ default: m.Slim })),
+  'plugins/ruby/step-definition-file': () =>
+    import('./plugins').then((m) => ({ default: m.StepDefinitionFile })),
+  'plugins/ruby/structure-list-view': () =>
+    import('./plugins').then((m) => ({ default: m.StructureListView })),
+  'plugins/ruby/symbol': () =>
+    import('./plugins').then((m) => ({ default: m.Symbol })),
+  'plugins/ruby/system-dbfield': () =>
+    import('./plugins').then((m) => ({ default: m.SystemDbfield })),
+  'plugins/ruby/test-unit-file': () =>
+    import('./plugins').then((m) => ({ default: m.TestUnitFile })),
+  'plugins/ruby/trait': () =>
+    import('./plugins').then((m) => ({ default: m.RubyTrait })),
+  'plugins/ruby/undocumented-task': () =>
+    import('./plugins').then((m) => ({ default: m.UndocumentedTask })),
+  'plugins/ruby/variable': () =>
+    import('./plugins').then((m) => ({ default: m.RubyVariable })),
+  'plugins/ruby/web-root-file': () =>
+    import('./plugins').then((m) => ({ default: m.WebRootFile })),
+  'plugins/ruby/writer': () =>
+    import('./plugins').then((m) => ({ default: m.Writer })),
+  'plugins/ruby/zeus': () =>
+    import('./plugins').then((m) => ({ default: m.Zeus })),
+  'plugins/scala/abstract-class-object-scala': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractClassObjectScala })),
+  'plugins/scala/abstract-class-scala': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractClassScala })),
+  'plugins/scala/abstract-field-variable': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractFieldVariable })),
+  'plugins/scala/abstract-field-variable1': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractFieldVariable1 })),
+  'plugins/scala/abstract-type-alias': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractTypeAlias })),
+  'plugins/scala/add-clause': () =>
+    import('./plugins').then((m) => ({ default: m.AddClause })),
+  'plugins/scala/build-server-protocol': () =>
+    import('./plugins').then((m) => ({ default: m.BuildServerProtocol })),
+  'plugins/scala/build-server-protocol-load-changes': () =>
+    import('./plugins').then((m) => ({
+      default: m.BuildServerProtocolLoadChanges,
+    })),
+  'plugins/scala/build-server-protocol-target': () =>
+    import('./plugins').then((m) => ({ default: m.BuildServerProtocolTarget })),
+  'plugins/scala/class-companion': () =>
+    import('./plugins').then((m) => ({ default: m.ClassCompanion })),
+  'plugins/scala/class-companion-swapped': () =>
+    import('./plugins').then((m) => ({ default: m.ClassCompanionSwapped })),
+  'plugins/scala/class-object-scala': () =>
+    import('./plugins').then((m) => ({ default: m.ClassObjectScala })),
+  'plugins/scala/class-scala': () =>
+    import('./plugins').then((m) => ({ default: m.ClassScala })),
+  'plugins/scala/compile-server': () =>
+    import('./plugins').then((m) => ({ default: m.CompileServer })),
+  'plugins/scala/enum-object-scala': () =>
+    import('./plugins').then((m) => ({ default: m.EnumObjectScala })),
+  'plugins/scala/enum-scala': () =>
+    import('./plugins').then((m) => ({ default: m.EnumScala })),
+  'plugins/scala/field-value': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaFieldValue })),
+  'plugins/scala/field-value1': () =>
+    import('./plugins').then((m) => ({ default: m.FieldValue1 })),
+  'plugins/scala/field-variable': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaFieldVariable })),
+  'plugins/scala/field-variable1': () =>
+    import('./plugins').then((m) => ({ default: m.FieldVariable1 })),
+  'plugins/scala/lambda': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaLambda })),
+  'plugins/scala/lightbend-logo': () =>
+    import('./plugins').then((m) => ({ default: m.LightbendLogo })),
+  'plugins/scala/multiple-type-definitions': () =>
+    import('./plugins').then((m) => ({ default: m.MultipleTypeDefinitions })),
+  'plugins/scala/no-scala-sdk': () =>
+    import('./plugins').then((m) => ({ default: m.NoScalaSdk })),
+  'plugins/scala/object-companion': () =>
+    import('./plugins').then((m) => ({ default: m.ObjectCompanion })),
+  'plugins/scala/object-companion-swapped': () =>
+    import('./plugins').then((m) => ({ default: m.ObjectCompanionSwapped })),
+  'plugins/scala/object-scala': () =>
+    import('./plugins').then((m) => ({ default: m.ObjectScala })),
+  'plugins/scala/package-object': () =>
+    import('./plugins').then((m) => ({ default: m.PackageObject })),
+  'plugins/scala/package-with-object': () =>
+    import('./plugins').then((m) => ({ default: m.PackageWithObject })),
+  'plugins/scala/parameter': () =>
+    import('./plugins').then((m) => ({ default: m.Parameter })),
+  'plugins/scala/pattern-value': () =>
+    import('./plugins').then((m) => ({ default: m.PatternValue })),
+  'plugins/scala/play2': () =>
+    import('./plugins').then((m) => ({ default: m.Play2 })),
+  'plugins/scala/remove-clause': () =>
+    import('./plugins').then((m) => ({ default: m.RemoveClause })),
+  'plugins/scala/sbt-file': () =>
+    import('./plugins').then((m) => ({ default: m.SbtFile })),
+  'plugins/scala/sbt-folder': () =>
+    import('./plugins').then((m) => ({ default: m.SbtFolder })),
+  'plugins/scala/sbt-icon': () =>
+    import('./plugins').then((m) => ({ default: m.SbtIcon })),
+  'plugins/scala/sbt-load-changes': () =>
+    import('./plugins').then((m) => ({ default: m.SbtLoadChanges })),
+  'plugins/scala/sbt-shell': () =>
+    import('./plugins').then((m) => ({ default: m.SbtShell })),
+  'plugins/scala/scala-console': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaConsole })),
+  'plugins/scala/scala-file': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaFile })),
+  'plugins/scala/scala-html': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaHtml })),
+  'plugins/scala/scala-logo': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaLogo })),
+  'plugins/scala/scala-script': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaScript })),
+  'plugins/scala/scala-sdk': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaSdk })),
+  'plugins/scala/scala-test': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaTest })),
+  'plugins/scala/scala16': () =>
+    import('./plugins').then((m) => ({ default: m.Scala16 })),
+  'plugins/scala/trait-companion': () =>
+    import('./plugins').then((m) => ({ default: m.TraitCompanion })),
+  'plugins/scala/trait-companion-swapped': () =>
+    import('./plugins').then((m) => ({ default: m.TraitCompanionSwapped })),
+  'plugins/scala/trait-object-scala': () =>
+    import('./plugins').then((m) => ({ default: m.TraitObjectScala })),
+  'plugins/scala/trait-scala': () =>
+    import('./plugins').then((m) => ({ default: m.TraitScala })),
+  'plugins/scala/type-alias': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaTypeAlias })),
+  'plugins/scala/typed': () =>
+    import('./plugins').then((m) => ({ default: m.Typed })),
+  'plugins/scala/untyped': () =>
+    import('./plugins').then((m) => ({ default: m.Untyped })),
+  'plugins/scala/value': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaValue })),
+  'plugins/scala/variable': () =>
+    import('./plugins').then((m) => ({ default: m.ScalaVariable })),
+  'plugins/spring/abstract-bean': () =>
+    import('./plugins').then((m) => ({ default: m.AbstractBean })),
+  'plugins/spring/factory-method-bean': () =>
+    import('./plugins').then((m) => ({ default: m.FactoryMethodBean })),
+  'plugins/spring/file-set': () =>
+    import('./plugins').then((m) => ({ default: m.FileSet })),
+  'plugins/spring/implicit-bean': () =>
+    import('./plugins').then((m) => ({ default: m.ImplicitBean })),
+  'plugins/spring/infrastructure-bean': () =>
+    import('./plugins').then((m) => ({ default: m.InfrastructureBean })),
+  'plugins/spring/integration': () =>
+    import('./plugins').then((m) => ({ default: m.Integration })),
+  'plugins/spring/jpa': () =>
+    import('./plugins').then((m) => ({ default: m.Jpa })),
+  'plugins/spring/listener': () =>
+    import('./plugins').then((m) => ({ default: m.SpringListener })),
+  'plugins/spring/prototype-bean': () =>
+    import('./plugins').then((m) => ({ default: m.PrototypeBean })),
+  'plugins/spring/request-mapping': () =>
+    import('./plugins').then((m) => ({ default: m.SpringRequestMapping })),
+  'plugins/spring/show-autowired-dependencies': () =>
+    import('./plugins').then((m) => ({
+      default: m.SpringShowAutowiredDependencies,
+    })),
+  'plugins/spring/show-cacheable': () =>
+    import('./plugins').then((m) => ({ default: m.SpringShowCacheable })),
+  'plugins/spring/spring': () =>
+    import('./plugins').then((m) => ({ default: m.Spring })),
+  'plugins/spring/spring-batch': () =>
+    import('./plugins').then((m) => ({ default: m.SpringBatch })),
+  'plugins/spring/spring-bean': () =>
+    import('./plugins').then((m) => ({ default: m.SpringBean })),
+  'plugins/spring/spring-boot': () =>
+    import('./plugins').then((m) => ({ default: m.SpringBoot })),
+  'plugins/spring/spring-boot-application': () =>
+    import('./plugins').then((m) => ({ default: m.SpringBootApplication })),
+  'plugins/spring/spring-boot-endpoint': () =>
+    import('./plugins').then((m) => ({ default: m.SpringBootEndpoint })),
+  'plugins/spring/spring-boot-health': () =>
+    import('./plugins').then((m) => ({ default: m.SpringBootHealth })),
+  'plugins/spring/spring-boot-overlay': () =>
+    import('./plugins').then((m) => ({ default: m.SpringBootOverlay })),
+  'plugins/spring/spring-cloud': () =>
+    import('./plugins').then((m) => ({ default: m.SpringCloud })),
+  'plugins/spring/spring-cloud-file-set': () =>
+    import('./plugins').then((m) => ({ default: m.SpringCloudFileSet })),
+  'plugins/spring/spring-cloud-stream': () =>
+    import('./plugins').then((m) => ({ default: m.SpringCloudStream })),
+  'plugins/spring/spring-cloud-stream-file-set': () =>
+    import('./plugins').then((m) => ({ default: m.SpringCloudStreamFileSet })),
+  'plugins/spring/spring-config': () =>
+    import('./plugins').then((m) => ({ default: m.SpringConfig })),
+  'plugins/spring/spring-data': () =>
+    import('./plugins').then((m) => ({ default: m.SpringData })),
+  'plugins/spring/spring-integration': () =>
+    import('./plugins').then((m) => ({ default: m.SpringIntegration })),
+  'plugins/spring/spring-java-bean': () =>
+    import('./plugins').then((m) => ({ default: m.SpringJavaBean })),
+  'plugins/spring/spring-java-config': () =>
+    import('./plugins').then((m) => ({ default: m.SpringJavaConfig })),
+  'plugins/spring/spring-models-dependency-graph': () =>
+    import('./plugins').then((m) => ({
+      default: m.SpringModelsDependencyGraph,
+    })),
+  'plugins/spring/spring-profile': () =>
+    import('./plugins').then((m) => ({ default: m.SpringProfile })),
+  'plugins/spring/spring-property': () =>
+    import('./plugins').then((m) => ({ default: m.SpringProperty })),
+  'plugins/spring/spring-repository-run-mongo': () =>
+    import('./plugins').then((m) => ({ default: m.SpringRepositoryRunMongo })),
+  'plugins/spring/spring-security': () =>
+    import('./plugins').then((m) => ({ default: m.SpringSecurity })),
+  'plugins/spring/spring-session-factory': () =>
+    import('./plugins').then((m) => ({ default: m.SpringSessionFactory })),
+  'plugins/spring/spring-web': () =>
+    import('./plugins').then((m) => ({ default: m.SpringWeb })),
+  'plugins/spring/spring-web-flow': () =>
+    import('./plugins').then((m) => ({ default: m.SpringWebFlow })),
+  'plugins/spring/spring-web-flow-file': () =>
+    import('./plugins').then((m) => ({ default: m.SpringWebFlowFile })),
+  'plugins/spring/spring-web-services': () =>
+    import('./plugins').then((m) => ({ default: m.SpringWebServices })),
+  'plugins/spring/transaction-manager': () =>
+    import('./plugins').then((m) => ({ default: m.TransactionManager })),
+  'plugins/spring/web-overlay': () =>
+    import('./plugins').then((m) => ({ default: m.WebOverlay })),
+  'plugins/stylus/stylus': () =>
+    import('./plugins').then((m) => ({ default: m.Stylus })),
+  'plugins/tasks/start-timer': () =>
+    import('./plugins').then((m) => ({ default: m.StartTimer })),
+  'plugins/tasks/stop-timer': () =>
+    import('./plugins').then((m) => ({ default: m.StopTimer })),
+  'plugins/toml/toml': () =>
+    import('./plugins').then((m) => ({ default: m.Toml })),
+  'plugins/uml/add-note': () =>
+    import('./plugins').then((m) => ({ default: m.AddNote })),
+  'plugins/uml/constructor': () =>
+    import('./plugins').then((m) => ({ default: m.Constructor })),
+  'plugins/uml/dependencies': () =>
+    import('./plugins').then((m) => ({ default: m.Dependencies })),
+  'plugins/uml/edge-mod': () =>
+    import('./plugins').then((m) => ({ default: m.EdgeMod })),
+  'plugins/uml/inner-class': () =>
+    import('./plugins').then((m) => ({ default: m.InnerClass })),
+  'plugins/velocity/velocity': () =>
+    import('./plugins').then((m) => ({ default: m.Velocity })),
+  'plugins/velocity/velocity-plugin-logo': () =>
+    import('./plugins').then((m) => ({ default: m.VelocityPluginLogo })),
+  'plugins/velocity/west': () =>
+    import('./plugins').then((m) => ({ default: m.West })),
+
   // run (46)
   'run/attach-to-process': () =>
     import('./run').then((m) => ({ default: m.AttachToProcess })),
@@ -2575,18 +4030,34 @@ export const iconRegistry = {
 
 export type IconPathname = keyof typeof iconRegistry;
 
-export const slugIndex: Record<string, IconPathname[]> = {
+export const slugIndex = {
   'abbreviate-package-names': [
     'general/object-browser/abbreviate-package-names',
   ],
   abort: ['vcs/abort'],
+  'abstract-advice': ['plugins/aop/abstract-advice'],
+  'abstract-bean': ['plugins/spring/abstract-bean'],
+  'abstract-class': ['plugins/java-ee/abstract-class'],
+  'abstract-class-kotlin': ['plugins/kotlin/abstract-class-kotlin'],
+  'abstract-class-object-scala': ['plugins/scala/abstract-class-object-scala'],
+  'abstract-class-scala': ['plugins/scala/abstract-class-scala'],
   'abstract-exception': ['nodes/abstract-exception'],
+  'abstract-extension-function': ['plugins/kotlin/abstract-extension-function'],
+  'abstract-field': ['plugins/java-ee/abstract-field'],
+  'abstract-field-variable': ['plugins/scala/abstract-field-variable'],
+  'abstract-field-variable1': ['plugins/scala/abstract-field-variable1'],
+  'abstract-method': ['plugins/java-ee/abstract-method'],
+  'abstract-property': ['plugins/java-ee/abstract-property'],
+  'abstract-type-alias': ['plugins/scala/abstract-type-alias'],
   'access-local': ['general/access-modifiers/access-local'],
   'access-method': ['database/access-method', 'database/expui/access-method'],
   'access-private': ['general/access-modifiers/access-private'],
   'access-protected': ['general/access-modifiers/access-protected'],
   'access-public': ['general/access-modifiers/access-public'],
+  'action-method': ['plugins/ruby/action-method'],
+  'action-qualified-names': ['plugins/cidr/action-qualified-names'],
   'action-script': ['file-types/action-script'],
+  actual: ['plugins/kotlin/actual'],
   'actual-zoom': ['editor-icons/actual-zoom'],
   'acync-api': ['file-types/acync-api'],
   'adapter-script': [
@@ -2596,26 +4067,43 @@ export const slugIndex: Record<string, IconPathname[]> = {
   add: ['general/general/add'],
   'add-any': ['nodes/add-any'],
   'add-bookmarks-list': ['general/bookmarks/add-bookmarks-list'],
+  'add-changelog': ['plugins/jpa/add-changelog'],
+  'add-changeset': ['plugins/jpa/add-changeset'],
+  'add-clause': ['plugins/scala/add-clause'],
   'add-column-left': ['general/editor/add-column-left'],
   'add-column-right': ['general/editor/add-column-right'],
   'add-emoji': ['vcs/add-emoji'],
+  'add-executable': ['plugins/cidr/add-executable'],
   'add-file': ['general/actions/add-file'],
+  'add-library': ['plugins/cidr/add-library'],
+  'add-named-query': ['plugins/jpa/add-named-query'],
+  'add-note': ['plugins/uml/add-note'],
   'add-row-above': ['general/editor/add-row-above'],
   'add-row-below': ['general/editor/add-row-below'],
   'add-sdk': ['general/devkit/add-sdk'],
+  'add-test': ['plugins/cidr/add-test'],
   'add-to-watch': ['debugger/add-to-watch'],
+  'after-advice': ['plugins/aop/after-advice'],
+  'after-returning-advice': ['plugins/aop/after-returning-advice'],
+  'after-throwing-advice': ['plugins/aop/after-throwing-advice'],
   aggregate: ['database/aggregate', 'database/expui/aggregate'],
   'ai-assistant': ['general/ai-asisstant/ai-assistant'],
   'ai-assistant-colored': ['general/ai-asisstant/ai-assistant-colored'],
   'ai-assistant-disabled': ['general/ai-asisstant/ai-assistant-disabled'],
   'ai-assistant-tool-window': ['general/tool-windows/ai-assistant-tool-window'],
   alias: ['nodes/alias'],
+  'alias-factory': ['plugins/ruby/alias-factory'],
+  'alias-sequence': ['plugins/ruby/alias-sequence'],
   'amazon-emr': ['general/tool-windows/amazon-emr'],
   amper: ['file-types/amper'],
+  android: ['plugins/kotlin/android'],
+  'android-device': ['plugins/cidr/android-device'],
   'angular-js': ['file-types/angular-js'],
   'angular-js-monochrome': ['file-types/angular-js-monochrome'],
   annotation: ['nodes/annotation'],
   'annotation-folder': ['nodes/annotation-folder'],
+  'annotation-kotlin': ['plugins/kotlin/annotation-kotlin'],
+  'annotation-type': ['plugins/java-ee/annotation-type'],
   ant: ['general/tool-windows/ant'],
   'any-type': ['file-types/any-type'],
   apache: ['database/apache'],
@@ -2623,14 +4111,21 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'apache-ignite': ['database/apache-ignite'],
   'apache-phoenix': ['database/apache-phoenix'],
   api: ['file-types/api'],
+  apollo: ['plugins/graphql/apollo'],
+  'app-code-project': ['plugins/cidr/app-code-project'],
+  'app-code-workspace': ['plugins/cidr/app-code-workspace'],
   'app-engine-tool-window': ['general/tool-windows/app-engine-tool-window'],
-  application: ['run-configurations/application'],
+  application: ['plugins/cidr/application', 'run-configurations/application'],
+  'application-extension': ['plugins/cidr/application-extension'],
   'application-remote': ['run-configurations/application-remote'],
+  'application-xml': ['plugins/java-ee/application-xml'],
   'apply-not-conflicts': ['vcs/apply-not-conflicts'],
   'apply-not-conflicts-left': ['vcs/apply-not-conflicts-left'],
   'apply-not-conflicts-right': ['vcs/apply-not-conflicts-right'],
+  'arbitrary-cluster': ['plugins/bdt/arbitrary-cluster'],
   archive: ['file-types/archive'],
   argument: ['database/argument', 'database/expui/argument'],
+  'around-advice': ['plugins/aop/around-advice'],
   arrow: ['vcs/arrow'],
   'arrow-left-down': ['vcs/arrow-left-down'],
   'arrow-left-right': ['vcs/arrow-left-right'],
@@ -2639,22 +4134,45 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'aspect-j': ['file-types/aspect-j'],
   'assembler-go': ['file-types/assembler-go'],
   assembly: ['database/expui/assembly'],
+  assets: ['plugins/cidr/assets'],
+  'assoc-column': ['plugins/ruby/assoc-column'],
   athena: ['database/athena'],
   'attach-to-process': ['run/attach-to-process'],
   attached: ['general/ai-asisstant/attached'],
+  attribute: ['plugins/graphql/attribute'],
+  'auto-refresh': ['plugins/kubernetes/auto-refresh'],
+  'auto-reload': ['plugins/cidr/auto-reload'],
   'autoscroll-from-source': ['general/general/autoscroll-from-source'],
   'autoscroll-to-source': ['general/general/autoscroll-to-source'],
+  'aws-glue': ['plugins/bdt/aws-glue'],
   'aws-glue-tool-window': ['general/tool-windows/aws-glue-tool-window'],
   azure: ['database/azure'],
   'back-trace': ['editor-icons/back-trace'],
+  bazel: ['plugins/bazel/bazel'],
+  'bazel-config': ['plugins/bazel/bazel-config'],
+  'bazel-error': ['plugins/bazel/bazel-error'],
+  'bazel-reload': ['plugins/bazel/bazel-reload'],
+  'bazel-target': ['plugins/bazel/bazel-target'],
+  'bazel-warning': ['plugins/bazel/bazel-warning'],
+  bean: ['plugins/java-ee/bean'],
+  'bean-factory': ['plugins/java-ee/bean-factory'],
+  'bean-infrastructure': ['plugins/java-ee/bean-infrastructure'],
+  'bean-method': ['plugins/java-ee/bean-method'],
+  'bean-property': ['plugins/java-ee/bean-property'],
+  'before-advice': ['plugins/aop/before-advice'],
   'big-query': ['database/big-query'],
   'binary-data': ['database/binary-data'],
+  'blaze-persistence-entity-view': [
+    'plugins/jpa/blaze-persistence-entity-view',
+  ],
+  block: ['plugins/ruby/block'],
   'blue-key': ['database/blue-key', 'database/expui/blue-key'],
   body: ['database/body', 'database/expui/body'],
   bold: ['general/editor/bold'],
   bookmark: ['editor-icons/bookmark', 'general/bookmarks/bookmark'],
   bookmarks: ['general/bookmarks/bookmarks', 'general/tool-windows/bookmarks'],
   'bookmarks-list': ['general/bookmarks/bookmarks-list'],
+  'boost-test': ['plugins/cidr/boost-test'],
   branch: ['vcs/branch'],
   breakpoint: ['breakpoints/breakpoint'],
   'breakpoint-dependent': ['breakpoints/breakpoint-dependent'],
@@ -2719,29 +4237,61 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'breakpoint-valid': ['breakpoints/breakpoint-valid'],
   browse: ['general/inline/browse'],
   build: ['build/build', 'general/tool-windows/build'],
+  'build-and-reload': ['plugins/bazel/build-and-reload'],
   'build-auto-reload-changes': ['general/actions/build-auto-reload-changes'],
-  'build-server-protocol': ['general/tool-windows/build-server-protocol'],
+  'build-on-frame-deactivation': [
+    'plugins/java-ee/build-on-frame-deactivation',
+  ],
+  'build-server-protocol': [
+    'general/tool-windows/build-server-protocol',
+    'plugins/scala/build-server-protocol',
+  ],
+  'build-server-protocol-load-changes': [
+    'plugins/scala/build-server-protocol-load-changes',
+  ],
+  'build-server-protocol-target': [
+    'plugins/scala/build-server-protocol-target',
+  ],
   'bullet-list': ['general/editor/bullet-list'],
   bun: ['file-types/bun'],
+  'bundle-run-anything': ['plugins/ruby/bundle-run-anything'],
+  c: ['plugins/cidr/c'],
   'c-make-tool-window': ['general/tool-windows/c-make-tool-window'],
+  'c-test': ['plugins/cidr/c-test'],
   cassandra: ['database/cassandra'],
   'cassandra-file-type': ['database/cassandra-file-type'],
+  'catch-test': ['plugins/cidr/catch-test'],
+  cdi: ['plugins/java-ee/cdi'],
   'cdi-tool-window': ['general/tool-windows/cdi-tool-window'],
   'center-align': ['general/editor/center-align'],
   chameleon: ['file-types/chameleon'],
   'changed-file': ['file-types/changed-file'],
   'changed-files': ['file-types/changed-files'],
   changelist: ['vcs/changelist'],
+  changelog: ['plugins/jpa/changelog'],
   changes: ['general/tool-windows/changes', 'vcs/changes'],
   'changes-push': ['vcs/changes-push'],
   'changes-update': ['vcs/changes-update'],
+  changeset: ['plugins/jpa/changeset'],
+  channel: ['plugins/ruby/channel'],
+  'chart-area': ['plugins/bdt/chart-area'],
+  'chart-area-range': ['plugins/bdt/chart-area-range'],
+  'chart-bar': ['plugins/bdt/chart-bar'],
+  'chart-bubble': ['plugins/bdt/chart-bubble'],
+  'chart-histogram': ['plugins/bdt/chart-histogram'],
+  'chart-line': ['plugins/bdt/chart-line'],
+  'chart-pie': ['plugins/bdt/chart-pie'],
+  'chart-scatter': ['plugins/bdt/chart-scatter'],
+  'chart-stock': ['plugins/bdt/chart-stock'],
   'check-constraint': [
     'database/check-constraint',
     'database/expui/check-constraint',
+    'plugins/jpa/check-constraint',
   ],
   checked: ['general/actions/checked'],
   checkmark: ['general/general/checkmark', 'vcs/checkmark'],
   'checkmark-list': ['general/editor/checkmark-list'],
+  'chef-cookbook': ['plugins/ruby/chef-cookbook'],
   'cherry-pick': ['vcs/cherry-pick'],
   chessboard: ['editor-icons/chessboard'],
   'chevron-down': ['general/general/chevron-down'],
@@ -2751,13 +4301,24 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'chevron-right': ['general/general/chevron-right'],
   'chevron-up': ['general/general/chevron-up'],
   'chevron-up-large': ['general/general/chevron-up-large'],
-  class: ['nodes/class'],
+  class: ['nodes/class', 'plugins/java-ee/class'],
   'class-abstract': ['nodes/class-abstract'],
   'class-anonymous': ['nodes/class-anonymous'],
+  'class-companion': ['plugins/scala/class-companion'],
+  'class-companion-swapped': ['plugins/scala/class-companion-swapped'],
+  'class-cpp': ['plugins/cidr/class-cpp'],
   'class-hierarchy': ['general/general/class-hierarchy'],
-  'class-initializer': ['nodes/class-initializer'],
+  'class-initializer': [
+    'nodes/class-initializer',
+    'plugins/java-ee/class-initializer',
+  ],
+  'class-initializer-kotlin': ['plugins/kotlin/class-initializer-kotlin'],
   'class-instance': ['database/expui/class-instance'],
+  'class-kotlin': ['plugins/kotlin/class-kotlin'],
   'class-level-watch': ['debugger/class-level-watch'],
+  'class-object-scala': ['plugins/scala/class-object-scala'],
+  'class-scala': ['plugins/scala/class-scala'],
+  clean: ['plugins/platformio/clean'],
   'click-house': ['database/click-house'],
   close: ['general/general/close', 'general/windows/close'],
   'close-hover': ['general/windows/close-hover'],
@@ -2765,7 +4326,59 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'close-small': ['general/general/close-small', 'general/windows/close-small'],
   'close-small-hovered': ['general/general/close-small-hovered'],
   'cloud-service': ['database/expui/cloud-service'],
+  cluster: ['plugins/bdt/cluster'],
+  'cluster-role': ['plugins/kubernetes/cluster-role'],
+  'cluster-role-binding': ['plugins/kubernetes/cluster-role-binding'],
+  cmake: ['plugins/cidr/cmake'],
+  'cmake-debug': ['plugins/cidr/cmake-debug'],
+  'cmake-function': ['plugins/cidr/cmake-function'],
+  'cmake-load-changes': ['plugins/cidr/cmake-load-changes'],
+  'cmake-macro': ['plugins/cidr/cmake-macro'],
+  'cmake-modificator': ['plugins/cidr/cmake-modificator'],
+  'cmake-target-executable': ['plugins/cidr/cmake-target-executable'],
   'cockroach-db': ['database/cockroach-db'],
+  'cocoa-pods': ['plugins/cidr/cocoa-pods'],
+  'code-assistant-actor': ['plugins/cidr/code-assistant-actor'],
+  'code-assistant-actor-extension': [
+    'plugins/cidr/code-assistant-actor-extension',
+  ],
+  'code-assistant-enum': ['plugins/cidr/code-assistant-enum'],
+  'code-assistant-enum-const': ['plugins/cidr/code-assistant-enum-const'],
+  'code-assistant-enum-extension': [
+    'plugins/cidr/code-assistant-enum-extension',
+  ],
+  'code-assistant-field': ['plugins/cidr/code-assistant-field'],
+  'code-assistant-field-optional': [
+    'plugins/cidr/code-assistant-field-optional',
+  ],
+  'code-assistant-function': ['plugins/cidr/code-assistant-function'],
+  'code-assistant-function-abstract': [
+    'plugins/cidr/code-assistant-function-abstract',
+  ],
+  'code-assistant-function-invocation': [
+    'plugins/cidr/code-assistant-function-invocation',
+  ],
+  'code-assistant-global': ['plugins/cidr/code-assistant-global'],
+  'code-assistant-local': ['plugins/cidr/code-assistant-local'],
+  'code-assistant-member-abstract': [
+    'plugins/cidr/code-assistant-member-abstract',
+  ],
+  'code-assistant-operator': ['plugins/cidr/code-assistant-operator'],
+  'code-assistant-parameter': ['plugins/cidr/code-assistant-parameter'],
+  'code-assistant-property': ['plugins/cidr/code-assistant-property'],
+  'code-assistant-property-optional': [
+    'plugins/cidr/code-assistant-property-optional',
+  ],
+  'code-assistant-protocol': ['plugins/cidr/code-assistant-protocol'],
+  'code-assistant-protocol-extension': [
+    'plugins/cidr/code-assistant-protocol-extension',
+  ],
+  'code-assistant-struct': ['plugins/cidr/code-assistant-struct'],
+  'code-assistant-struct-extension': [
+    'plugins/cidr/code-assistant-struct-extension',
+  ],
+  'code-assistant-type': ['plugins/cidr/code-assistant-type'],
+  'code-assistant-union': ['plugins/cidr/code-assistant-union'],
   'code-span': ['general/editor/code-span'],
   coffeescript: ['file-types/coffeescript'],
   collapse: ['general/inline/collapse', 'general/windows/collapse'],
@@ -2783,7 +4396,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   ],
   'color-picker': ['editor-icons/color-picker'],
   colors: ['editor-icons/colors'],
-  column: ['database/column', 'database/expui/column'],
+  column: ['database/column', 'database/expui/column', 'plugins/jpa/column'],
   'column-blue-key': [
     'database/column-blue-key',
     'database/expui/column-blue-key',
@@ -2865,49 +4478,121 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'compare4-middle-bottom': ['vcs/compare4-middle-bottom'],
   'compare4-middle-right': ['vcs/compare4-middle-right'],
   'compare4-right-bottom': ['vcs/compare4-right-bottom'],
+  'compilation-database-load-changes': [
+    'plugins/cidr/compilation-database-load-changes',
+  ],
+  'compile-server': ['plugins/scala/compile-server'],
+  component: ['plugins/java-ee/component'],
+  'component-vendor': ['plugins/platformio/component-vendor'],
   compound: ['run-configurations/compound'],
   'concurrency-diagram-toolwindow': [
     'general/tool-windows/concurrency-diagram-toolwindow',
   ],
   'conditional-statement': ['file-types/conditional-statement'],
-  config: ['nodes/config'],
+  config: ['nodes/config', 'plugins/lombok/config'],
   'config-file': ['general/general/config-file'],
+  'config-map': ['plugins/kubernetes/config-map'],
+  configuration: ['plugins/kubernetes/configuration'],
+  'configuration-scan': ['plugins/java-ee/configuration-scan'],
   conflict: ['general/setting-sync/conflict'],
   connector: ['database/connector', 'database/expui/connector'],
+  console: ['plugins/kotlin/console'],
   'console-run': ['database/console-run', 'database/expui/console-run'],
   'console-show-plan': [
     'database/console-show-plan',
     'database/expui/console-show-plan',
   ],
   constant: ['nodes/constant'],
+  'constraint-mappings': ['plugins/java-ee/constraint-mappings'],
+  'constraint-validator': ['plugins/java-ee/constraint-validator'],
+  constraints: ['plugins/java-ee/constraints'],
+  constructor: ['plugins/uml/constructor'],
   contexts: ['file-types/contexts'],
   'contexts-modifier': ['file-types/contexts-modifier'],
   controller: ['nodes/controller'],
+  'controller-folder': ['plugins/ruby/controller-folder'],
+  'controller-node': ['plugins/ruby/controller-node'],
+  converter: ['plugins/java-ee/converter', 'plugins/jpa/converter'],
   copy: ['general/general/copy', 'general/inline/copy'],
   'copy-of-folder': ['nodes/copy-of-folder'],
   couchbase: ['database/couchbase'],
+  count: ['plugins/jpa/count'],
   coverage: ['general/tool-windows/coverage'],
+  cpp: ['plugins/cidr/cpp'],
+  'create-column': ['plugins/jpa/create-column'],
+  'create-constraint': ['plugins/jpa/create-constraint'],
+  'create-index': ['plugins/jpa/create-index'],
+  'create-sequence': ['plugins/jpa/create-sequence'],
+  'create-table': ['plugins/jpa/create-table'],
+  'cron-jobs': ['plugins/kubernetes/cron-jobs'],
   css: ['file-types/css'],
+  cu: ['plugins/cidr/cu'],
   cucumber: ['file-types/cucumber'],
+  cuh: ['plugins/cidr/cuh'],
   'current-branch': ['vcs/current-branch'],
   'current-branch-favorite': ['vcs/current-branch-favorite'],
+  'custom-folder': ['plugins/cidr/custom-folder'],
+  'custom-gdb-run-configuration': ['plugins/cidr/custom-gdb-run-configuration'],
+  'custom-resource': ['plugins/kubernetes/custom-resource'],
+  'custom-resource-definition': [
+    'plugins/kubernetes/custom-resource-definition',
+  ],
+  'custom-resources': ['plugins/kubernetes/custom-resources'],
+  'custom-target': ['plugins/cidr/custom-target'],
   cut: ['general/general/cut'],
   'cwm-access': ['general/tool-windows/cwm-access'],
+  'cwm-cam-avatar-off': ['plugins/code-with-me/cwm-cam-avatar-off'],
+  'cwm-cam-avatar-on': ['plugins/code-with-me/cwm-cam-avatar-on'],
+  'cwm-cam-off': ['plugins/code-with-me/cwm-cam-off'],
+  'cwm-cam-on': ['plugins/code-with-me/cwm-cam-on'],
+  'cwm-disable-call': ['plugins/code-with-me/cwm-disable-call'],
+  'cwm-enable-call': ['plugins/code-with-me/cwm-enable-call'],
+  'cwm-icon-modificator': ['plugins/code-with-me/cwm-icon-modificator'],
+  'cwm-icon-modificator-menu': [
+    'plugins/code-with-me/cwm-icon-modificator-menu',
+  ],
+  'cwm-invite': ['plugins/code-with-me/cwm-invite'],
+  'cwm-mic-avatar-off': ['plugins/code-with-me/cwm-mic-avatar-off'],
+  'cwm-mic-avatar-on': ['plugins/code-with-me/cwm-mic-avatar-on'],
+  'cwm-mic-off': ['plugins/code-with-me/cwm-mic-off'],
+  'cwm-mic-on': ['plugins/code-with-me/cwm-mic-on'],
+  'cwm-permission-edit': ['plugins/code-with-me/cwm-permission-edit'],
+  'cwm-permission-full': ['plugins/code-with-me/cwm-permission-full'],
+  'cwm-permission-view': ['plugins/code-with-me/cwm-permission-view'],
+  'cwm-permissions': ['plugins/code-with-me/cwm-permissions'],
+  'cwm-permissions-denied': ['plugins/code-with-me/cwm-permissions-denied'],
+  'cwm-permissions-granted': ['plugins/code-with-me/cwm-permissions-granted'],
+  'cwm-screen-in-browser-off': [
+    'plugins/code-with-me/cwm-screen-in-browser-off',
+  ],
+  'cwm-screen-in-browser-on': ['plugins/code-with-me/cwm-screen-in-browser-on'],
+  'cwm-screen-off': ['plugins/code-with-me/cwm-screen-off'],
+  'cwm-screen-on': ['plugins/code-with-me/cwm-screen-on'],
+  'cwm-share': ['plugins/code-with-me/cwm-share'],
   'cwm-users': ['general/tool-windows/cwm-users'],
+  'cwm-verified': ['plugins/code-with-me/cwm-verified'],
   cypress: ['general/tool-windows/cypress'],
   'cython-file': ['file-types/cython-file'],
+  'daemon-set': ['plugins/kubernetes/daemon-set'],
   'dark-theme': ['general/new-ui/dark-theme'],
   'dark-theme-selected': ['general/new-ui/dark-theme-selected'],
+  dart: ['plugins/dart/dart'],
+  'dart-remote': ['plugins/dart/dart-remote'],
+  'dart-test': ['plugins/dart/dart-test'],
+  'dart-web': ['plugins/dart/dart-web'],
   'data-column': ['nodes/data-column'],
   'data-file': ['database/data-file', 'database/expui/data-file'],
+  'data-model': ['plugins/jpa/data-model'],
   'data-schema': ['database/data-schema', 'editor-icons/data-schema'],
   'data-share': ['database/data-share', 'database/expui/data-share'],
+  'data-stores': ['plugins/jpa/data-stores'],
   'data-structure': [
     'database/data-structure',
     'database/expui/data-structure',
   ],
   'data-structure-key': ['database/data-structure-key'],
   'data-tables': ['nodes/data-tables'],
+  'data-view': ['plugins/jpa/data-view'],
   database: ['database/database', 'database/expui/database'],
   'database-changes': [
     'database/expui/database-changes',
@@ -2926,6 +4611,8 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'databricks-tool-window': ['general/tool-windows/databricks-tool-window'],
   'dataproc-tool-window': ['general/tool-windows/dataproc-tool-window'],
   'db-array': ['debugger/db-array'],
+  'db-changelog': ['plugins/jpa/db-changelog'],
+  'db-hash': ['plugins/ruby/db-hash'],
   'db-primitive': ['debugger/db-primitive'],
   db2: ['database/db2'],
   dbms: [
@@ -2934,38 +4621,73 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'general/tool-windows/dbms',
   ],
   'dbms-output': ['database/expui/dbms-output'],
+  'dbt-utility': ['plugins/bdt/dbt-utility'],
   'ddl-data-source-overlay': [
     'database/ddl-data-source-overlay',
     'database/expui/ddl-data-source-overlay',
   ],
   'ddl-dbms': ['database/ddl-dbms', 'database/expui/ddl-dbms'],
+  'ddl-scripts': ['plugins/jpa/ddl-scripts'],
   debug: ['general/tool-windows/debug', 'run/debug'],
+  'debug-target-computer': ['plugins/cidr/debug-target-computer'],
+  'debug-target-controller': ['plugins/cidr/debug-target-controller'],
+  'debug-with-telepresence': ['plugins/kubernetes/debug-with-telepresence'],
+  decorator: ['plugins/java-ee/decorator'],
   'default-constraint': [
     'database/default-constraint',
     'database/expui/default-constraint',
   ],
-  delete: ['general/general/delete'],
+  delete: ['general/general/delete', 'plugins/jpa/delete'],
   deno: ['file-types/deno'],
   denodo: ['database/denodo'],
-  dependencies: ['general/tool-windows/dependencies'],
+  dependencies: [
+    'general/tool-windows/dependencies',
+    'plugins/uml/dependencies',
+  ],
+  dependency: ['plugins/cidr/dependency'],
   'dependency-analyzer': ['build/dependency-analyzer'],
   deploy: ['general/actions/deploy'],
+  deployment: ['plugins/kubernetes/deployment'],
+  deployments: ['plugins/java-ee/deployments'],
   'description-file': ['general/devkit/description-file'],
   desktop: ['nodes/desktop'],
+  'dev-containers': ['plugins/dev-containers/dev-containers'],
   diagram: ['file-types/diagram'],
   'diagram-diff': ['general/actions/diagram-diff'],
   dictionary: ['file-types/dictionary'],
   diff: ['general/devkit/diff', 'vcs/diff'],
+  'diff-liquibase-changelog': ['plugins/jpa/diff-liquibase-changelog'],
+  'diff-plugin-logo': ['plugins/jpa/diff-plugin-logo'],
   'diff-with-clipboard': ['general/actions/diff-with-clipboard'],
   'disable-editing': ['vcs/disable-editing'],
   dislike: ['general/ai-asisstant/dislike'],
   'dislike-selected': ['general/ai-asisstant/dislike-selected'],
+  'doc-test': ['plugins/cidr/doc-test'],
+  docker: ['plugins/docker/docker'],
+  'docker-compose': ['plugins/docker/docker-compose'],
+  'docker-compose-scaled-service-stopped': [
+    'plugins/docker/docker-compose-scaled-service-stopped',
+  ],
+  'docker-compose-scaled-service-up': [
+    'plugins/docker/docker-compose-scaled-service-up',
+  ],
+  'docker-compose-service-stopped': [
+    'plugins/docker/docker-compose-service-stopped',
+  ],
+  'docker-compose-service-up': ['plugins/docker/docker-compose-service-up'],
+  'docker-registry': ['plugins/docker/docker-registry'],
   'document-db': ['database/document-db'],
   documentation: ['general/tool-windows/documentation'],
   donate: ['general/tool-windows/donate'],
   down: ['general/general/down'],
   download: ['general/general/download'],
+  'drop-column': ['plugins/jpa/drop-column'],
+  'drop-constraint': ['plugins/jpa/drop-constraint'],
+  'drop-index': ['plugins/jpa/drop-index'],
+  'drop-sequence': ['plugins/jpa/drop-sequence'],
+  'drop-table': ['plugins/jpa/drop-table'],
   'dropdown-gutter': ['editor-icons/dropdown-gutter'],
+  dto: ['plugins/jpa/dto'],
   dts: ['file-types/dts'],
   'dts-property': ['file-types/dts-property'],
   'dts-sub-node': ['file-types/dts-sub-node'],
@@ -2973,6 +4695,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'dump-threads': ['run/dump-threads'],
   'dynamo-db': ['database/dynamo-db'],
   eclipse: ['file-types/eclipse'],
+  'edge-mod': ['plugins/uml/edge-mod'],
   edit: ['general/general/edit'],
   'edit-data': ['database/edit-data', 'database/expui/edit-data'],
   'edit-folder': ['nodes/edit-folder'],
@@ -2981,30 +4704,57 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'editor-output': ['database/editor-output', 'database/expui/editor-output'],
   'editor-preview': ['editor-icons/editor-preview'],
   'editor-preview-vertical': ['editor-icons/editor-preview-vertical'],
+  'ejb-artifact': ['plugins/java-ee/ejb-artifact'],
+  'ejb-business-method': ['plugins/java-ee/ejb-business-method'],
+  'ejb-class': ['plugins/java-ee/ejb-class'],
+  'ejb-cmp-field': ['plugins/java-ee/ejb-cmp-field'],
+  'ejb-cmr-field': ['plugins/java-ee/ejb-cmr-field'],
+  'ejb-create-method': ['plugins/java-ee/ejb-create-method'],
+  'ejb-finder-method': ['plugins/java-ee/ejb-finder-method'],
+  'ejb-jar-xml': ['plugins/java-ee/ejb-jar-xml'],
+  'ejb-module': ['plugins/java-ee/ejb-module'],
+  'ejb-primary-key-class': ['plugins/java-ee/ejb-primary-key-class'],
+  'ejb-reference': ['plugins/java-ee/ejb-reference'],
   ejs: ['file-types/ejs'],
   elasticsearch: ['database/elasticsearch'],
-  endpoints: ['general/tool-windows/endpoints'],
-  enum: ['nodes/enum'],
+  'electronic-board': ['plugins/platformio/electronic-board'],
+  embedded: ['plugins/jpa/embedded'],
+  'embedded-attribute-overlay': ['plugins/java-ee/embedded-attribute-overlay'],
+  endpoint: ['plugins/ruby/endpoint'],
+  endpoints: ['general/tool-windows/endpoints', 'plugins/kubernetes/endpoints'],
+  'entity-bean': ['plugins/java-ee/entity-bean'],
+  enum: ['nodes/enum', 'plugins/graphql/enum', 'plugins/java-ee/enum'],
+  'enum-kotlin': ['plugins/kotlin/enum-kotlin'],
+  'enum-object-scala': ['plugins/scala/enum-object-scala'],
+  'enum-scala': ['plugins/scala/enum-scala'],
+  'equals-and-hashcode': ['plugins/jpa/equals-and-hashcode'],
+  'er-diagram': ['plugins/java-ee/er-diagram'],
   error: ['general/status/error'],
   'error-dialog': ['general/status/error-dialog'],
   'error-introduction': ['nodes/error-introduction'],
   'error-outline': ['general/status/error-outline'],
   'evaluate-expression': ['run/evaluate-expression'],
   'evaluation-result': ['debugger/evaluation-result'],
+  event: ['plugins/java-ee/event'],
+  events: ['plugins/kubernetes/events'],
   'exact-words': ['general/inline/exact-words'],
   exasol: ['database/exasol'],
   exception: ['nodes/exception'],
   'exception-analyzer': ['general/tool-windows/exception-analyzer'],
   'exclude-root': ['nodes/exclude-root'],
   'excluded-generated': ['nodes/excluded-generated'],
+  'executable-target': ['plugins/cidr/executable-target'],
   exit: ['general/general/exit'],
   expand: ['general/inline/expand'],
   'expand-all': ['general/general/expand-all'],
   'expand-node': ['editor-icons/expand-node'],
+  expect: ['plugins/kotlin/expect'],
+  explorer: ['plugins/jpa/explorer'],
   export: ['general/general/export'],
   exposed: ['file-types/exposed'],
   'ext-annotation': ['editor-icons/ext-annotation'],
   extension: ['database/expui/extension', 'database/extension'],
+  'extension-run-configuration': ['plugins/cidr/extension-run-configuration'],
   'external-link': [
     'database/expui/external-link',
     'general/general/external-link',
@@ -3013,6 +4763,9 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'database/expui/external-schema',
     'database/external-schema',
   ],
+  factory: ['plugins/ruby/factory'],
+  'factory-method-bean': ['plugins/spring/factory-method-bean'],
+  failed: ['plugins/kubernetes/failed'],
   'failed-in-progress': ['run/failed-in-progress'],
   'fast-api': ['file-types/fast-api'],
   favorites: ['nodes/favorites'],
@@ -3028,21 +4781,37 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'feedback-rating-focused-on': ['general/raiting/feedback-rating-focused-on'],
   'feedback-rating-on': ['general/raiting/feedback-rating-on'],
   fetch: ['vcs/fetch'],
-  field: ['nodes/field'],
+  field: ['nodes/field', 'plugins/graphql/field', 'plugins/java-ee/field'],
+  'field-in-xml': ['plugins/java-ee/field-in-xml'],
+  'field-value': ['plugins/kotlin/field-value', 'plugins/scala/field-value'],
+  'field-value1': ['plugins/scala/field-value1'],
+  'field-variable': [
+    'plugins/kotlin/field-variable',
+    'plugins/scala/field-variable',
+  ],
+  'field-variable1': ['plugins/scala/field-variable1'],
   'file-format': ['database/expui/file-format', 'database/file-format'],
+  'file-set': ['plugins/spring/file-set'],
+  'file-transfer': ['plugins/jpa/file-transfer'],
+  'file-type-swift': ['plugins/cidr/file-type-swift'],
   'file-unread': ['vcs/file-unread'],
   filter: ['general/general/filter'],
   'filter-history': ['general/inline/filter-history'],
   filterdups: ['general/usages/filterdups'],
   'final-mark': ['general/modifiers/final-mark'],
   find: ['general/tool-windows/find'],
+  'find-collection': ['plugins/jpa/find-collection'],
   'find-external-usages': ['general/tool-windows/find-external-usages'],
+  'find-instance': ['plugins/jpa/find-instance'],
+  fir: ['plugins/kotlin/fir'],
   firebird: ['database/firebird'],
   'fit-content': ['editor-icons/fit-content'],
   flame: ['editor-icons/flame'],
   flask: ['file-types/flask'],
   'flatten-modules': ['general/object-browser/flatten-modules'],
   'flatten-packages': ['general/object-browser/flatten-packages'],
+  flink: ['plugins/bdt/flink'],
+  'flyway-plugin-logo': ['plugins/jpa/flyway-plugin-logo'],
   fold: ['editor-icons/fold'],
   'fold-bottom': ['editor-icons/fold-bottom'],
   folder: ['nodes/folder'],
@@ -3063,8 +4832,18 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'database/foreign-server',
   ],
   'foreign-table': ['database/expui/foreign-table', 'database/foreign-table'],
+  'forward-ports': ['plugins/kubernetes/forward-ports'],
+  fragment: ['plugins/graphql/fragment'],
   frame: ['debugger/frame'],
+  framework: ['plugins/cidr/framework'],
   freemaker: ['file-types/freemaker'],
+  freeze: ['plugins/cidr/freeze'],
+  'freeze-all': ['plugins/cidr/freeze-all'],
+  'from-arrow': ['plugins/aop/from-arrow'],
+  'full-line-completion': ['plugins/full-line-completion/full-line-completion'],
+  'full-line-completion-outline': [
+    'plugins/full-line-completion/full-line-completion-outline',
+  ],
   function: ['database/expui/function', 'database/function', 'nodes/function'],
   'function-external': [
     'database/expui/function-external',
@@ -3072,39 +4851,60 @@ export const slugIndex: Record<string, IconPathname[]> = {
   ],
   'function-run': ['database/expui/function-run', 'database/function-run'],
   'funnel-regular': ['database/expui/funnel-regular'],
+  general: ['plugins/java-ee/general'],
   generated: ['nodes/generated'],
   'generated-source': ['nodes/generated-source'],
   'generated-test-root': ['nodes/generated-test-root'],
+  'generic-ui': ['plugins/jpa/generic-ui'],
+  'getter-in-xml': ['plugins/java-ee/getter-in-xml'],
   gift: ['general/actions/gift'],
+  'git-lab-logo': ['plugins/gitlab/git-lab-logo'],
   'git-lab-tool-window': ['general/tool-windows/git-lab-tool-window'],
+  'git-lab-warning': ['plugins/gitlab/git-lab-warning'],
+  github: ['plugins/github/github'],
+  'github-warning': ['plugins/github/github-warning'],
   'go-to-table': ['database/expui/go-to-table', 'database/go-to-table'],
-  'gold-key': ['database/expui/gold-key', 'database/gold-key'],
+  'gold-key': [
+    'database/expui/gold-key',
+    'database/gold-key',
+    'plugins/jpa/gold-key',
+  ],
   'google-cloud-dataproc': ['database/google-cloud-dataproc'],
   'google-cloud-spanner': ['database/google-cloud-spanner'],
+  'google-test': ['plugins/cidr/google-test'],
   gradle: ['build/gradle', 'general/tool-windows/gradle'],
   'gradle-load-changes': ['build/gradle-load-changes'],
   'gradle-navigate': ['build/gradle-navigate'],
   'gradle-subproject': ['build/gradle-subproject'],
   'graph-layout': ['general/general/graph-layout'],
+  'graph-ql': ['plugins/graphql/graph-ql'],
   'graph-ql-tool-window': ['general/tool-windows/graph-ql-tool-window'],
+  'graph-qlcongif': ['plugins/graphql/graph-qlcongif'],
+  'graph-qlschema': ['plugins/graphql/graph-qlschema'],
   'green-bug-overlap': ['database/expui/green-bug-overlap'],
   greenplum: ['database/greenplum'],
   'grey-key': ['database/expui/grey-key', 'database/grey-key'],
   grid: ['editor-icons/grid'],
+  groovy: ['plugins/java-ee/groovy'],
+  group: ['plugins/cidr/group', 'plugins/kubernetes/group'],
   'group-by-class': ['general/actions/group-by-class'],
   'group-by-file': ['general/actions/group-by-file'],
   'group-by-method': ['general/actions/group-by-method'],
   'group-by-module': ['general/actions/group-by-module'],
   'group-by-package': ['general/actions/group-by-package'],
   'group-by-test-production': ['general/actions/group-by-test-production'],
+  'group-qualified-name': ['plugins/cidr/group-qualified-name'],
   groups: ['general/general/groups'],
   'gutter-check-box': ['vcs/gutter-check-box'],
   'gutter-check-box-indeterminate': ['vcs/gutter-check-box-indeterminate'],
   'gutter-check-box-selected': ['vcs/gutter-check-box-selected'],
   gvariable: ['nodes/gvariable'],
+  h: ['plugins/cidr/h'],
   h2: ['database/h2'],
+  haml: ['plugins/ruby/haml'],
   hana: ['database/hana'],
   'hash-cluster': ['database/expui/hash-cluster', 'database/hash-cluster'],
+  'hash-key': ['plugins/ruby/hash-key'],
   'hash-table': ['database/expui/hash-table', 'database/hash-table'],
   'hash-table-key': [
     'database/expui/hash-table-key',
@@ -3113,21 +4913,41 @@ export const slugIndex: Record<string, IconPathname[]> = {
   haskell: ['file-types/haskell'],
   'header-level-down': ['general/editor/header-level-down'],
   'header-level-up': ['general/editor/header-level-up'],
+  helm: ['plugins/kubernetes/helm'],
+  'helm-archive': ['plugins/kubernetes/helm-archive'],
+  'helm-chart': ['plugins/kubernetes/helm-chart'],
+  'helm-chart-lock': ['plugins/kubernetes/helm-chart-lock'],
+  'helm-directory': ['plugins/kubernetes/helm-directory'],
+  'helm-notes': ['plugins/kubernetes/helm-notes'],
+  'helm-requirments': ['plugins/kubernetes/helm-requirments'],
+  'helm-requirments-lock': ['plugins/kubernetes/helm-requirments-lock'],
+  'helm-undeployable': ['plugins/kubernetes/helm-undeployable'],
+  'helmvalues-schema': ['plugins/kubernetes/helmvalues-schema'],
   help: ['general/general/help', 'general/windows/help'],
   'help-inactive': ['general/windows/help-inactive'],
+  'helpers-folder-closed': ['plugins/ruby/helpers-folder-closed'],
+  hibernate: ['plugins/java-ee/hibernate'],
+  'hibernate-event': ['plugins/jpa/hibernate-event'],
   hide: ['general/general/hide'],
   hierarchy: ['general/tool-windows/hierarchy'],
+  'high-all': ['plugins/package-checker/high-all'],
+  'high-all-tree': ['plugins/package-checker/high-all-tree'],
+  'high-all-tree-outline': ['plugins/package-checker/high-all-tree-outline'],
   history: ['general/general/history'],
   hive: ['database/hive', 'general/tool-windows/hive'],
   'hive-file-type': ['database/hive-file-type'],
+  home: ['plugins/java-ee/home'],
   'home-folder': ['nodes/home-folder'],
   hook: ['file-types/hook'],
+  'horizontal-pod-autoscaler': ['plugins/kubernetes/horizontal-pod-autoscaler'],
   hsqldb: ['database/hsqldb'],
   html: ['file-types/html'],
+  http_request: ['plugins/rest/http_request'],
   'http-header': ['file-types/http-header'],
   'http-requests-run-configuration': [
     'file-types/http-requests-run-configuration',
   ],
+  'i-phone-device': ['plugins/cidr/i-phone-device'],
   i18n: ['file-types/i18n'],
   ibm: ['database/ibm'],
   'ide-update': ['general/general/ide-update'],
@@ -3143,11 +4963,13 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'editor-icons/implementing-functional-interface',
   ],
   'implementing-method': ['editor-icons/implementing-method'],
+  'implicit-bean': ['plugins/spring/implicit-bean'],
   import: ['general/general/import'],
   'in-selection': ['general/actions/in-selection'],
   'inaly-qarkus': ['editor-icons/inaly-qarkus'],
-  include: ['nodes/include'],
+  include: ['nodes/include', 'plugins/jpa/include'],
   'incoming-update': ['vcs/incoming-update'],
+  'incomplete-closed': ['plugins/ruby/incomplete-closed'],
   'index-cluster': ['database/expui/index-cluster', 'database/index-cluster'],
   'index-fun': ['database/expui/index-fun', 'database/index-fun'],
   'index-fun-unique': [
@@ -3160,6 +4982,13 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'info-outline': ['general/status/info-outline'],
   'information-dialog': ['general/status/information-dialog'],
   informix: ['database/informix'],
+  'infrastructure-bean': ['plugins/spring/infrastructure-bean'],
+  ingress: ['plugins/kubernetes/ingress'],
+  'inherited-attribute-overlay': [
+    'plugins/java-ee/inherited-attribute-overlay',
+  ],
+  'init-liquibase-changelog': ['plugins/jpa/init-liquibase-changelog'],
+  'init-scripts': ['plugins/jpa/init-scripts'],
   'inlay-globe': ['editor-icons/inlay-globe'],
   'inlay-micronaut': ['editor-icons/inlay-micronaut'],
   'inlay-rename-in-comments': ['editor-icons/inlay-rename-in-comments'],
@@ -3179,6 +5008,8 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'inline-add': ['general/inline/inline-add'],
   'inline-edit': ['general/inline/inline-edit'],
   'inline-settings': ['general/inline/inline-settings'],
+  'inner-class': ['plugins/uml/inner-class'],
+  'insight-navigate': ['plugins/jpa/insight-navigate'],
   'inspections-eye': ['editor-icons/inspections-eye'],
   'inspections-mixed': ['editor-icons/inspections-mixed'],
   'inspections-ok': ['editor-icons/inspections-ok'],
@@ -3187,18 +5018,32 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'inspections-power-save-mode': ['editor-icons/inspections-power-save-mode'],
   'inspections-traffic-off': ['editor-icons/inspections-traffic-off'],
   'inspections-typos': ['editor-icons/inspections-typos'],
+  install: ['plugins/cidr/install'],
+  'inteceptor-method': ['plugins/java-ee/inteceptor-method'],
+  integration: ['plugins/spring/integration'],
   'intelli-sort': ['vcs/intelli-sort'],
   'intention-bulb': ['editor-icons/intention-bulb'],
   'intention-bulb-grey': ['editor-icons/intention-bulb-grey'],
-  interface: ['nodes/interface'],
+  'interceptor-class': ['plugins/java-ee/interceptor-class'],
+  interceptors: ['plugins/java-ee/interceptors'],
+  interface: [
+    'nodes/interface',
+    'plugins/graphql/interface',
+    'plugins/java-ee/interface',
+  ],
+  'interface-kotlin': ['plugins/kotlin/interface-kotlin'],
   'intersystem-cache': ['database/intersystem-cache'],
   'invalid-configuration-layer': [
     'run-configurations/invalid-configuration-layer',
   ],
+  'iocfile-type': ['plugins/cidr/iocfile-type'],
   italic: ['general/editor/italic'],
+  'jakarta-ee': ['plugins/java-ee/jakarta-ee'],
   java: ['file-types/java'],
   'java-class': ['file-types/java-class'],
   'java-ee-tool-window': ['general/tool-windows/java-ee-tool-window'],
+  'java-eeartifact': ['plugins/java-ee/java-eeartifact'],
+  'java-module-root': ['plugins/jpa/java-module-root'],
   'java-scratch': ['run-configurations/java-scratch'],
   'java-script': ['file-types/java-script'],
   'java-script-debug-configuration': [
@@ -3207,12 +5052,21 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'java-script-remote': ['run-configurations/java-script-remote'],
   'javadoc-edit': ['editor-icons/javadoc-edit'],
   'javadoc-read': ['editor-icons/javadoc-read'],
+  'javaee-app-module': ['plugins/java-ee/javaee-app-module'],
   jdk: ['nodes/jdk'],
   jest: ['file-types/jest'],
   jfr: ['file-types/jfr'],
   jinja2: ['file-types/jinja2'],
+  jobs: ['plugins/kubernetes/jobs'],
+  jpa: ['plugins/spring/jpa'],
   'jpa-console-tool-window': ['general/tool-windows/jpa-console-tool-window'],
+  'jpa-facet': ['plugins/java-ee/jpa-facet'],
   'jpa-tool-window': ['general/tool-windows/jpa-tool-window'],
+  'jrails-module-closed': ['plugins/ruby/jrails-module-closed'],
+  jruby: ['plugins/ruby/jruby'],
+  'jruby-run-configuration': ['plugins/ruby/jruby-run-configuration'],
+  'jruby-sdk-closed': ['plugins/ruby/jruby-sdk-closed'],
+  js: ['plugins/kotlin/js'],
   'js-config': ['file-types/js-config'],
   'js-doc-closure': ['file-types/js-doc-closure'],
   json: ['file-types/json'],
@@ -3231,6 +5085,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   ],
   'jupyter-notebook': ['file-types/jupyter-notebook'],
   'jupyter-tool-window': ['general/tool-windows/jupyter-tool-window'],
+  jvm: ['plugins/kotlin/jvm'],
   kafka: ['general/tool-windows/kafka'],
   keyboard: ['general/general/keyboard'],
   'kill-data-source-process': [
@@ -3238,10 +5093,22 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'database/kill-data-source-process',
   ],
   'kill-process': ['run/kill-process'],
-  kotlin: ['file-types/kotlin'],
+  kotlin: ['file-types/kotlin', 'plugins/kotlin/kotlin'],
+  kotlin_activity: ['plugins/kotlin/kotlin_activity'],
+  'kotlin-gradle-script': ['plugins/kotlin/kotlin-gradle-script'],
+  'kotlin-js': ['plugins/kotlin/kotlin-js'],
+  'kotlin-modifier': ['plugins/kotlin/kotlin-modifier'],
+  'kotlin-notebooks': ['plugins/kotlin/kotlin-notebooks'],
+  'kotlin-notebooks-grey': ['plugins/kotlin/kotlin-notebooks-grey'],
+  'kotlin-notebooks-promo': ['plugins/kotlin/kotlin-notebooks-promo'],
+  'kotlin-script': ['plugins/kotlin/kotlin-script'],
   'kotlin-tool-window': ['general/tool-windows/kotlin-tool-window'],
-  lambda: ['nodes/lambda'],
+  'kubernetes-j': ['plugins/kubernetes/kubernetes-j'],
+  'kubernetes-y': ['plugins/kubernetes/kubernetes-y'],
+  kustomize: ['plugins/kubernetes/kustomize'],
+  lambda: ['nodes/lambda', 'plugins/kotlin/lambda', 'plugins/scala/lambda'],
   layout: ['general/general/layout'],
+  ld: ['plugins/cidr/ld'],
   learn: ['general/tool-windows/learn'],
   left: ['general/general/left'],
   'left-align': ['general/editor/left-align'],
@@ -3284,21 +5151,41 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'database/expui/level-two-inherited',
     'database/level-two-inherited',
   ],
+  'lib-annotation': ['plugins/java-ee/lib-annotation'],
+  'lib-validator': ['plugins/java-ee/lib-validator'],
   library: ['nodes/library'],
   'library-folder': ['nodes/library-folder'],
+  'library-target': ['plugins/cidr/library-target'],
   'light-theme': ['general/new-ui/light-theme'],
   'light-theme-selected': ['general/new-ui/light-theme-selected'],
+  'lightbend-logo': ['plugins/scala/lightbend-logo'],
   lightning: ['general/actions/lightning'],
   like: ['general/ai-asisstant/like'],
   'like-selected': ['general/ai-asisstant/like-selected'],
+  limits: ['plugins/kubernetes/limits'],
   link: ['general/editor/link'],
+  linux: ['plugins/linux/linux'],
+  'linux-logo': ['plugins/linux/linux-logo'],
+  liquibase: ['plugins/jpa/liquibase'],
+  'liquibase-mono': ['plugins/jpa/liquibase-mono'],
+  'liquibase-plugin-logo': ['plugins/jpa/liquibase-plugin-logo'],
+  'liquibase-snapshot': ['plugins/jpa/liquibase-snapshot'],
+  'liquibase-update': ['plugins/jpa/liquibase-update'],
   list: ['database/expui/list', 'database/list'],
   'list-files': ['general/general/list-files'],
   'list-key': ['database/expui/list-key', 'database/list-key'],
+  listener: ['plugins/java-ee/listener', 'plugins/spring/listener'],
+  'load-swift-package-manager-changes': [
+    'plugins/cidr/load-swift-package-manager-changes',
+  ],
   loader: ['general/spinner/loader'],
   'local-changes': ['general/setting-sync/local-changes'],
   'local-scope': ['nodes/local-scope'],
+  'local-swift-package-dependency': [
+    'plugins/cidr/local-swift-package-dependency',
+  ],
   locate: ['general/general/locate'],
+  location: ['plugins/cidr/location'],
   'lock-ultimate': ['database/expui/lock-ultimate'],
   locked: [
     'database/expui/locked',
@@ -3307,15 +5194,32 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'general/modifiers/locked',
   ],
   'log-overlap': ['database/expui/log-overlap'],
+  lombok: ['plugins/lombok/lombok'],
+  'lombok-class': ['plugins/lombok/lombok-class'],
+  'lombok-field': ['plugins/lombok/lombok-field'],
+  'lombok-method': ['plugins/lombok/lombok-method'],
+  'low-all': ['plugins/package-checker/low-all'],
+  'low-all-tree': ['plugins/package-checker/low-all-tree'],
+  'low-all-tree-outline': ['plugins/package-checker/low-all-tree-outline'],
+  m: ['plugins/cidr/m'],
   macro: ['database/expui/macro', 'database/macro'],
   'magic-resolve': ['vcs/magic-resolve'],
   'magic-resolve-toolbar': ['vcs/magic-resolve-toolbar'],
+  mailer: ['plugins/jpa/mailer', 'plugins/ruby/mailer'],
+  'mailers-folder': ['plugins/ruby/mailers-folder'],
+  'main-changelog': ['plugins/jpa/main-changelog'],
+  makefile: ['plugins/cidr/makefile'],
+  'makefile-app': ['plugins/cidr/makefile-app'],
+  'makefile-load-changes': ['plugins/cidr/makefile-load-changes'],
   'makefile-tool-window': ['general/tool-windows/makefile-tool-window'],
   'manage-data-sources': [
     'database/expui/manage-data-sources',
     'database/manage-data-sources',
   ],
+  'managed-bean': ['plugins/java-ee/managed-bean'],
   manifest: ['file-types/manifest'],
+  'many-to-many': ['plugins/jpa/many-to-many'],
+  'many-to-one': ['plugins/jpa/many-to-one'],
   mariadb: ['database/mariadb'],
   markdown: ['file-types/markdown'],
   'match-case': ['general/inline/match-case'],
@@ -3344,27 +5248,45 @@ export const slugIndex: Record<string, IconPathname[]> = {
   maximize: ['general/windows/maximize'],
   'maximize-inactive': ['general/windows/maximize-inactive'],
   'maximize-small': ['general/windows/maximize-small'],
+  'medium-all': ['plugins/package-checker/medium-all'],
+  'medium-all-tree': ['plugins/package-checker/medium-all-tree'],
+  'medium-all-tree-outline': [
+    'plugins/package-checker/medium-all-tree-outline',
+  ],
   'merge-callees': ['editor-icons/merge-callees'],
+  meson: ['plugins/meson/meson'],
+  'meson-plugin-logo': ['plugins/meson/meson-plugin-logo'],
+  'meson-rc': ['plugins/meson/meson-rc'],
+  'meson-reload': ['plugins/meson/meson-reload'],
+  'message-bean': ['plugins/java-ee/message-bean'],
   messages: ['general/tool-windows/messages'],
   metadata: ['editor-icons/metadata'],
-  method: ['nodes/method'],
+  metal: ['plugins/cidr/metal'],
+  method: ['nodes/method', 'plugins/java-ee/method'],
   'method-abstract': ['nodes/method-abstract'],
   'method-reference': ['nodes/method-reference'],
   micronaut: ['file-types/micronaut'],
   microsoft: ['database/microsoft'],
   'microsoft-windows': ['file-types/microsoft-windows'],
+  'migrations-closed': ['plugins/ruby/migrations-closed'],
   'mimer-sql': ['database/mimer-sql'],
+  'minimalistic-mode': ['plugins/jpa/minimalistic-mode'],
   minimap: ['general/general/minimap'],
   minimize: ['general/windows/minimize'],
   'minimize-inactive': ['general/windows/minimize-inactive'],
   'minimize-small': ['general/windows/minimize-small'],
+  mm: ['plugins/cidr/mm'],
   mnemonic: ['editor-icons/mnemonic', 'general/bookmarks/mnemonic'],
-  'model-class': ['nodes/model-class'],
+  'mod-platform-io': ['plugins/platformio/mod-platform-io'],
+  'mod-stop': ['plugins/kubernetes/mod-stop'],
+  'model-class': ['nodes/model-class', 'plugins/ruby/model-class'],
   modified: ['file-types/modified'],
-  module: ['nodes/module'],
+  module: ['nodes/module', 'plugins/ruby/module'],
   'module-group': ['nodes/module-group'],
   'module-java': ['nodes/module-java'],
+  'module-target': ['plugins/cidr/module-target'],
   module8x8: ['nodes/module8x8'],
+  modulemap: ['plugins/cidr/modulemap'],
   'mongo-db': ['database/mongo-db'],
   'mongo-field': ['database/expui/mongo-field', 'database/mongo-field'],
   'mongo-field-gold-key': [
@@ -3374,6 +5296,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'more-horizontal': ['general/general/more-horizontal'],
   'more-vertical': ['general/general/more-vertical'],
   'move-down': ['general/general/move-down'],
+  'move-to-another-changelog': ['plugins/jpa/move-to-another-changelog'],
   'move-to-bottom-left': ['general/general/move-to-bottom-left'],
   'move-to-bottom-right': ['general/general/move-to-bottom-right'],
   'move-to-button': ['general/actions/move-to-button'],
@@ -3382,28 +5305,55 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'move-to-right-bottom': ['general/general/move-to-right-bottom'],
   'move-to-right-top': ['general/general/move-to-right-top'],
   'move-up': ['general/general/move-up'],
+  multiplatform: ['plugins/kotlin/multiplatform'],
+  'multiplatform-library': ['plugins/kotlin/multiplatform-library'],
+  'multiplatform-mobile': ['plugins/kotlin/multiplatform-mobile'],
+  'multiplatform-mobile-library': [
+    'plugins/kotlin/multiplatform-mobile-library',
+  ],
   'multiple-breakpoints': ['breakpoints/multiple-breakpoints'],
   'multiple-breakpoints-disabled': [
     'breakpoints/multiple-breakpoints-disabled',
   ],
   'multiple-breakpoints-muted': ['breakpoints/multiple-breakpoints-muted'],
+  'multiple-type-definitions': ['plugins/scala/multiple-type-definitions'],
+  mutation: ['plugins/graphql/mutation'],
   'mute-breakpoints': ['run/mute-breakpoints'],
   mysql: ['database/mysql'],
+  namespace: ['plugins/kubernetes/namespace'],
+  'namespace-cpp': ['plugins/cidr/namespace-cpp'],
+  'namespaced-mark': ['plugins/kubernetes/namespaced-mark'],
+  native: ['plugins/kotlin/native'],
+  'navigation-rule': ['plugins/java-ee/navigation-rule'],
   netezza: ['database/netezza'],
+  network: ['plugins/kubernetes/network'],
+  'network-policy': ['plugins/kubernetes/network-policy'],
   'new-folder': ['nodes/new-folder'],
   'new-line': ['general/inline/new-line'],
   'new-ui': ['general/tool-windows/new-ui'],
   'next-js': ['file-types/next-js'],
+  'no-scala-sdk': ['plugins/scala/no-scala-sdk'],
+  node: ['plugins/kubernetes/node'],
+  nodejs: ['plugins/kotlin/nodejs'],
   'nodejs-test-runner': ['file-types/nodejs-test-runner'],
+  'not-defined': ['plugins/ruby/not-defined'],
   notifications: ['general/tool-windows/notifications'],
   npm: ['general/tool-windows/npm'],
   'num-py': ['file-types/num-py'],
   'numbered-list': ['general/editor/numbered-list'],
+  'object-companion': ['plugins/scala/object-companion'],
+  'object-companion-swapped': ['plugins/scala/object-companion-swapped'],
   'object-group': ['database/expui/object-group', 'database/object-group'],
+  'object-kotlin': ['plugins/kotlin/object-kotlin'],
+  'object-scala': ['plugins/scala/object-scala'],
   'object-type-attribute': [
     'database/expui/object-type-attribute',
     'database/object-type-attribute',
   ],
+  observatory: ['plugins/dart/observatory'],
+  'ocd-run-configuration': ['plugins/cidr/ocd-run-configuration'],
+  'one-to-many': ['plugins/jpa/one-to-many'],
+  'one-to-one': ['plugins/jpa/one-to-one'],
   open: ['general/general/open'],
   'open-api': ['general/actions/open-api'],
   'open-in-tool-window': ['general/general/open-in-tool-window'],
@@ -3420,7 +5370,10 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'database/expui/operator-family',
     'database/operator-family',
   ],
+  'option-command': ['plugins/cidr/option-command'],
   oracle: ['database/oracle'],
+  'out-sight': ['plugins/outsight/out-sight'],
+  'out-sight-color': ['plugins/outsight/out-sight-color'],
   'outgoing-push': ['vcs/outgoing-push'],
   'overriden-method': ['editor-icons/overriden-method'],
   'overriding-method': ['editor-icons/overriding-method'],
@@ -3429,18 +5382,52 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'package-json': ['file-types/package-json'],
   'package-lock': ['file-types/package-lock'],
   'package-manager': ['general/tool-windows/package-manager'],
+  'package-object': ['plugins/scala/package-object'],
+  'package-with-object': ['plugins/scala/package-with-object'],
   pagination: ['general/general/pagination'],
   pandas: ['file-types/pandas'],
-  parameter: ['nodes/parameter'],
+  parameter: ['nodes/parameter', 'plugins/scala/parameter'],
   partion: ['database/partion'],
   'partion-table': ['database/expui/partion-table', 'database/partion-table'],
   partition: ['database/expui/partition'],
   paste: ['general/general/paste'],
   patch: ['file-types/patch', 'vcs/patch'],
+  'pattern-value': ['plugins/scala/pattern-value'],
   pause: ['general/progress-bar/pause', 'run/pause'],
   'pause-hovered': ['general/progress-bar/pause-hovered'],
+  pending: ['plugins/kubernetes/pending'],
   perl: ['file-types/perl'],
   persistence: ['general/tool-windows/persistence'],
+  'persistence-attribute': [
+    'plugins/java-ee/persistence-attribute',
+    'plugins/jpa/persistence-attribute',
+  ],
+  'persistence-embeddable': [
+    'plugins/java-ee/persistence-embeddable',
+    'plugins/jpa/persistence-embeddable',
+  ],
+  'persistence-id': [
+    'plugins/java-ee/persistence-id',
+    'plugins/jpa/persistence-id',
+  ],
+  'persistence-id-relationship': [
+    'plugins/java-ee/persistence-id-relationship',
+  ],
+  'persistence-mapped-superclass': [
+    'plugins/java-ee/persistence-mapped-superclass',
+    'plugins/jpa/persistence-mapped-superclass',
+  ],
+  'persistence-relationship': [
+    'plugins/java-ee/persistence-relationship',
+    'plugins/jpa/persistence-relationship',
+  ],
+  'persistence-unit': [
+    'plugins/java-ee/persistence-unit',
+    'plugins/jpa/persistence-unit',
+  ],
+  'persistent-volume': ['plugins/kubernetes/persistent-volume'],
+  'persistent-volume-claim': ['plugins/kubernetes/persistent-volume-claim'],
+  'persistent-volumes': ['plugins/kubernetes/persistent-volumes'],
   'php-local': ['run-configurations/php-local'],
   'php-remote': ['run-configurations/php-remote'],
   'php-web': ['run-configurations/php-web'],
@@ -3448,6 +5435,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'pin-hovered': ['database/pin-hovered'],
   'pin-selected': ['database/pin-selected'],
   'pin-selected-hovered': ['database/pin-selected-hovered'],
+  'platform-io': ['plugins/platformio/platform-io'],
   'play-back': ['database/expui/play-back', 'general/actions/play-back'],
   'play-first': ['database/expui/play-first', 'general/actions/play-first'],
   'play-forward': [
@@ -3455,15 +5443,22 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'general/actions/play-forward',
   ],
   'play-last': ['database/expui/play-last', 'general/actions/play-last'],
+  play2: ['plugins/scala/play2'],
   plugin: ['general/devkit/plugin', 'nodes/plugin'],
+  'plugin-logo': ['plugins/jpa/plugin-logo'],
   'plugin-update': ['general/general/plugin-update'],
   'plugin-v2': ['general/devkit/plugin-v2'],
   pnpm: ['file-types/pnpm'],
   'pnpm-lock': ['file-types/pnpm-lock'],
+  pod: ['plugins/kubernetes/pod'],
+  'pod-security-policy': ['plugins/kubernetes/pod-security-policy'],
+  pointcut: ['plugins/aop/pointcut'],
   polars: ['file-types/polars'],
   'postgres-cast': ['database/expui/postgres-cast'],
   postgresql: ['database/postgresql'],
-  'pp-web': ['nodes/pp-web'],
+  'pp-web': ['nodes/pp-web', 'plugins/kotlin/pp-web'],
+  'precedence-group': ['plugins/cidr/precedence-group'],
+  'preprocess-defines': ['plugins/cidr/preprocess-defines'],
   'preserve-case': ['general/inline/preserve-case'],
   presto: ['database/presto'],
   prettier: ['file-types/prettier'],
@@ -3493,19 +5488,27 @@ export const slugIndex: Record<string, IconPathname[]> = {
   project: ['general/tool-windows/project'],
   'project-configurable': ['general/general/project-configurable'],
   'project-directory': ['general/actions/project-directory'],
+  'project-properties': ['plugins/jpa/project-properties'],
   'project-structure': ['general/general/project-structure'],
   'project-wide-analysis-off': ['general/general/project-wide-analysis-off'],
   'project-wide-analysis-on': ['general/general/project-wide-analysis-on'],
-  projection: ['database/expui/projection', 'database/projection'],
+  projection: [
+    'database/expui/projection',
+    'database/projection',
+    'plugins/jpa/projection',
+  ],
   'prompt-input': ['debugger/prompt-input'],
   'prompt-input-history': ['debugger/prompt-input-history'],
   properties: ['file-types/properties', 'general/devkit/properties'],
-  property: ['nodes/property'],
+  property: ['nodes/property', 'plugins/java-ee/property'],
   'proto-file': ['file-types/proto-file'],
   'proto-message': ['file-types/proto-message'],
   protobuf: ['file-types/protobuf'],
+  'prototype-bean': ['plugins/spring/prototype-bean'],
+  publisher: ['plugins/java-ee/publisher'],
   'pull-requests': ['general/tool-windows/pull-requests'],
   push: ['vcs/push'],
+  'py-spark': ['plugins/bdt/py-spark'],
   'py-torch': ['file-types/py-torch'],
   python: ['file-types/python'],
   'python-console-tool-window': [
@@ -3513,45 +5516,89 @@ export const slugIndex: Record<string, IconPathname[]> = {
   ],
   qml: ['file-types/qml'],
   qrc: ['file-types/qrc'],
-  qt: ['file-types/qt'],
+  qt: ['file-types/qt', 'plugins/cidr/qt'],
   quatro: ['file-types/quatro'],
+  query: ['plugins/graphql/query', 'plugins/jpa/query'],
+  'query-method': ['plugins/jpa/query-method'],
   'question-badge': ['breakpoints/question-badge'],
   'question-dialog': ['general/status/question-dialog'],
   'question-mark': ['general/general/question-mark'],
   'quickfix-bulb': ['editor-icons/quickfix-bulb'],
   'quickfix-off-bulb': ['editor-icons/quickfix-off-bulb'],
+  quota: ['plugins/kubernetes/quota'],
   'r-engine-tool-window': ['general/tool-windows/r-engine-tool-window'],
   'r-tool-window': ['general/tool-windows/r-tool-window'],
+  'rails-module-closed': ['plugins/ruby/rails-module-closed'],
+  'rails-server-run-configuration': [
+    'plugins/ruby/rails-server-run-configuration',
+  ],
+  'rake-run-configuration': ['plugins/ruby/rake-run-configuration'],
+  'rake-task-def-node': ['plugins/ruby/rake-task-def-node'],
+  'rbenv-run-anything': ['plugins/ruby/rbenv-run-anything'],
+  'rbs-file': ['plugins/ruby/rbs-file'],
   react: ['file-types/react'],
   'read-access': ['editor-icons/read-access'],
+  reader: ['plugins/ruby/reader'],
   'reader-mode': ['general/general/reader-mode'],
   rebuild: ['general/tool-windows/rebuild'],
   rec: ['editor-icons/rec'],
-  record: ['nodes/record'],
+  record: ['nodes/record', 'plugins/java-ee/record'],
   'recursive-method': ['editor-icons/recursive-method'],
   redis: ['database/redis'],
   'redis-file-type': ['database/redis-file-type'],
   redo: ['general/general/redo'],
   redoc: ['file-types/redoc'],
   redshift: ['database/redshift'],
+  'reference-by': ['plugins/jpa/reference-by'],
+  'reference-to': ['plugins/jpa/reference-to'],
   'reformat-code': ['general/general/reformat-code'],
   refresh: ['general/general/refresh', 'general/inline/refresh'],
+  'refresh-kubernetes-configuration': [
+    'plugins/kubernetes/refresh-kubernetes-configuration',
+  ],
   'refresh-materialized-view': [
     'database/expui/refresh-materialized-view',
     'database/refresh-materialized-view',
   ],
   regex: ['general/inline/regex'],
   regexp: ['file-types/regexp'],
+  register: ['plugins/cidr/register'],
+  registers: ['plugins/cidr/registers'],
+  relay: ['plugins/graphql/relay'],
+  remote: ['plugins/java-ee/remote'],
   'remote-changes': ['general/setting-sync/remote-changes'],
-  remove: ['general/general/remove', 'vcs/remove'],
+  'remote-file-systems': ['plugins/bdt/remote-file-systems'],
+  'remote-swift-package-dependency': [
+    'plugins/cidr/remote-swift-package-dependency',
+  ],
+  'remote-tool-set': ['plugins/cidr/remote-tool-set'],
+  remove: ['general/general/remove', 'plugins/jpa/remove', 'vcs/remove'],
+  'remove-clause': ['plugins/scala/remove-clause'],
+  'rename-column': ['plugins/jpa/rename-column'],
+  'rename-constraint': ['plugins/jpa/rename-constraint'],
+  'rename-index': ['plugins/jpa/rename-index'],
+  'rename-sequence': ['plugins/jpa/rename-sequence'],
+  'rename-table': ['plugins/jpa/rename-table'],
+  'renderer-kit': ['plugins/java-ee/renderer-kit'],
   replace: ['general/actions/replace'],
+  'replica-set': ['plugins/kubernetes/replica-set'],
   report: ['general/actions/report'],
   repositories: ['general/tool-windows/repositories'],
+  repository: ['plugins/jpa/repository'],
+  'request-mapping': [
+    'plugins/java-ee/request-mapping',
+    'plugins/spring/request-mapping',
+  ],
   rerun: ['editor-icons/rerun', 'run/rerun'],
   'rerun-automatically': ['run/rerun-automatically'],
   reset: ['database/reset'],
+  'reset-cache-and-reload-projects': [
+    'plugins/cidr/reset-cache-and-reload-projects',
+  ],
+  'reset-mcu': ['plugins/cidr/reset-mcu'],
   'resolve-continue': ['vcs/resolve-continue'],
   'resource-bundle': ['nodes/resource-bundle'],
+  resources: ['plugins/ruby/resources'],
   'resources-root': ['nodes/resources-root'],
   restart: ['run/restart'],
   'restart-debug': ['run/restart-debug'],
@@ -3559,20 +5606,37 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'restart-frame': ['run/restart-frame'],
   'restart-stop': ['general/actions/restart-stop'],
   restore: ['general/windows/restore'],
+  'restore-from-ignore': ['plugins/jpa/restore-from-ignore'],
   'restore-inactive': ['general/windows/restore-inactive'],
   'restore-small': ['general/windows/restore-small'],
   resume: ['general/progress-bar/resume', 'run/resume'],
   'resume-hovered': ['general/progress-bar/resume-hovered'],
+  'return-value': ['plugins/cidr/return-value'],
   revert: ['vcs/revert'],
+  rhtml: ['plugins/ruby/rhtml'],
   right: ['general/general/right'],
   'right-align': ['general/editor/right-align'],
-  role: ['database/expui/role', 'database/role'],
+  rjs: ['plugins/ruby/rjs'],
+  role: ['database/expui/role', 'database/role', 'plugins/kubernetes/role'],
+  'role-binding': ['plugins/kubernetes/role-binding'],
   rollback: ['database/expui/rollback', 'database/rollback'],
   routine: ['database/expui/routine', 'database/routine'],
+  'rspec-run-configuration': ['plugins/ruby/rspec-run-configuration'],
+  'rspec-shared-group-closed': ['plugins/ruby/rspec-shared-group-closed'],
+  'rspec-shared-group-ref': ['plugins/ruby/rspec-shared-group-ref'],
+  'rspec-test': ['plugins/ruby/rspec-test'],
   rst: ['file-types/rst'],
+  ruby: ['plugins/ruby/ruby'],
+  'ruby-gems': ['plugins/ruby/ruby-gems'],
+  'ruby-module-closed': ['plugins/ruby/ruby-module-closed'],
+  'ruby-remote': ['plugins/ruby/ruby-remote'],
+  'ruby-script': ['plugins/ruby/ruby-script'],
+  'ruby-test-unit': ['plugins/ruby/ruby-test-unit'],
   run: ['editor-icons/run', 'general/tool-windows/run', 'run/run'],
   'run-all': ['general/actions/run-all'],
   'run-anything': ['general/general/run-anything'],
+  'run-as-workflow': ['plugins/databricks/run-as-workflow'],
+  'run-configuration': ['plugins/ruby/run-configuration'],
   'run-database-script': [
     'database/expui/run-database-script',
     'database/run-database-script',
@@ -3580,26 +5644,49 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'run-error': ['editor-icons/run-error'],
   'run-failed': ['editor-icons/run-failed'],
   'run-http-request': ['run-configurations/run-http-request'],
+  'run-rack-task': ['plugins/ruby/run-rack-task'],
+  'run-spork-server': ['plugins/ruby/run-spork-server'],
   'run-success': ['editor-icons/run-success'],
   'run-to-cursor': ['run/run-to-cursor'],
   'run-with-coverage': ['run/run-with-coverage'],
+  'run-with-type-tracker': ['plugins/ruby/run-with-type-tracker'],
   'runnable-mark': ['general/modifiers/runnable-mark'],
   rust: ['general/tool-windows/rust'],
+  'rvm-run-anything': ['plugins/ruby/rvm-run-anything'],
+  rxml: ['plugins/ruby/rxml'],
+  'safe-all': ['plugins/package-checker/safe-all'],
+  'safe-all-tree': ['plugins/package-checker/safe-all-tree'],
+  'safe-all-tree-outline': ['plugins/package-checker/safe-all-tree-outline'],
   sarif: ['file-types/sarif'],
   sass: ['file-types/sass'],
-  save: ['general/general/save'],
-  'sbt-icon': ['general/tool-windows/sbt-icon'],
-  'sbt-shell': ['general/tool-windows/sbt-shell'],
+  save: ['general/general/save', 'plugins/jpa/save'],
+  'sbt-file': ['plugins/scala/sbt-file'],
+  'sbt-folder': ['plugins/scala/sbt-folder'],
+  'sbt-icon': ['general/tool-windows/sbt-icon', 'plugins/scala/sbt-icon'],
+  'sbt-load-changes': ['plugins/scala/sbt-load-changes'],
+  'sbt-shell': ['general/tool-windows/sbt-shell', 'plugins/scala/sbt-shell'],
   scala: ['file-types/scala'],
+  'scala-console': ['plugins/scala/scala-console'],
+  'scala-file': ['plugins/scala/scala-file'],
+  'scala-html': ['plugins/scala/scala-html'],
+  'scala-logo': ['plugins/scala/scala-logo'],
   'scala-profiler': ['general/tool-windows/scala-profiler'],
+  'scala-script': ['plugins/scala/scala-script'],
+  'scala-sdk': ['plugins/scala/scala-sdk'],
+  'scala-test': ['plugins/scala/scala-test'],
+  scala16: ['plugins/scala/scala16'],
+  scalar: ['plugins/graphql/scalar'],
   'scheduled-event': [
     'database/expui/scheduled-event',
     'database/scheduled-event',
+    'plugins/java-ee/scheduled-event',
   ],
-  schema: ['database/expui/schema', 'database/schema'],
+  schema: ['database/expui/schema', 'database/schema', 'plugins/jpa/schema'],
   'sci-view': ['general/tool-windows/sci-view'],
+  scopes: ['plugins/java-ee/scopes'],
   scratch: ['file-types/scratch'],
   scratches: ['file-types/scratches'],
+  screens: ['plugins/jpa/screens'],
   'scripting-script': [
     'database/expui/scripting-script',
     'database/scripting-script',
@@ -3619,21 +5706,29 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'send-to-the-right': ['general/duplicates/send-to-the-right'],
   'send-to-the-right-grayed': ['general/duplicates/send-to-the-right-grayed'],
   'separator-horizontal': ['general/general/separator-horizontal'],
-  sequence: ['database/expui/sequence', 'database/sequence'],
+  sequence: [
+    'database/expui/sequence',
+    'database/sequence',
+    'plugins/ruby/sequence',
+  ],
   server: ['nodes/server'],
   'server-objects-group': [
     'database/expui/server-objects-group',
     'database/server-objects-group',
   ],
-  services: ['general/tool-windows/services'],
+  'service-account': ['plugins/kubernetes/service-account'],
+  services: ['general/tool-windows/services', 'plugins/kubernetes/services'],
   servlet: ['nodes/servlet'],
+  'session-bean': ['plugins/java-ee/session-bean'],
   set: ['database/expui/set', 'database/set'],
+  'set-context': ['plugins/jpa/set-context'],
   'set-key': ['database/expui/set-key', 'database/set-key'],
+  'set-label': ['plugins/jpa/set-label'],
   'setting-sync': [
     'general/general/setting-sync',
     'general/tool-windows/setting-sync',
   ],
-  settings: ['general/general/settings'],
+  settings: ['general/general/settings', 'plugins/jpa/settings'],
   shared: ['general/modifiers/shared'],
   'shared-scope': ['nodes/shared-scope'],
   sharp: ['editor-icons/sharp'],
@@ -3641,10 +5736,21 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'shortcut-filter': ['general/actions/shortcut-filter'],
   show: ['general/general/show'],
   'show-as-tree': ['general/general/show-as-tree'],
+  'show-autowired-candidates': ['plugins/java-ee/show-autowired-candidates'],
+  'show-autowired-dependencies': [
+    'plugins/java-ee/show-autowired-dependencies',
+    'plugins/spring/show-autowired-dependencies',
+  ],
+  'show-cacheable': [
+    'plugins/java-ee/show-cacheable',
+    'plugins/spring/show-cacheable',
+  ],
+  'show-code': ['plugins/jpa/show-code'],
   'show-current-frame': ['run/show-current-frame'],
   'show-ignored': ['run/show-ignored'],
   'show-import-statements': ['general/usages/show-import-statements'],
   'show-library-contents': ['general/object-browser/show-library-contents'],
+  'show-logs': ['plugins/kubernetes/show-logs'],
   'show-members': ['general/object-browser/show-members'],
   'show-passed': ['run/show-passed'],
   'show-read-access': ['general/usages/show-read-access'],
@@ -3654,9 +5760,11 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'single-record-view': ['database/single-record-view'],
   singlestore: ['database/singlestore'],
   'skip-commit': ['vcs/skip-commit'],
+  slim: ['plugins/ruby/slim'],
   'smart-step-into': ['run/smart-step-into'],
   snowflake: ['database/snowflake'],
   'soft-wrap': ['general/general/soft-wrap'],
+  'software-framework': ['plugins/platformio/software-framework'],
   'sort-alphabetically': [
     'general/general/sort-alphabetically',
     'general/object-browser/sort-alphabetically',
@@ -3685,11 +5793,44 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'source-root': ['nodes/source-root'],
   'space-tool-window': ['general/tool-windows/space-tool-window'],
   spark: ['database/spark', 'general/tool-windows/spark'],
+  'spark-run': ['plugins/bdt/spark-run'],
   split: ['general/actions/split'],
   'split-horizontally': ['general/general/split-horizontally'],
   'split-vertically': ['general/general/split-vertically'],
-  spring: ['general/tool-windows/spring'],
-  sql: ['database/expui/sql', 'file-types/sql'],
+  spring: ['general/tool-windows/spring', 'plugins/spring/spring'],
+  'spring-batch': ['plugins/spring/spring-batch'],
+  'spring-bean': ['plugins/spring/spring-bean'],
+  'spring-boot': ['plugins/spring/spring-boot'],
+  'spring-boot-application': ['plugins/spring/spring-boot-application'],
+  'spring-boot-endpoint': ['plugins/spring/spring-boot-endpoint'],
+  'spring-boot-health': ['plugins/spring/spring-boot-health'],
+  'spring-boot-overlay': ['plugins/spring/spring-boot-overlay'],
+  'spring-cloud': ['plugins/spring/spring-cloud'],
+  'spring-cloud-file-set': ['plugins/spring/spring-cloud-file-set'],
+  'spring-cloud-stream': ['plugins/spring/spring-cloud-stream'],
+  'spring-cloud-stream-file-set': [
+    'plugins/spring/spring-cloud-stream-file-set',
+  ],
+  'spring-config': ['plugins/spring/spring-config'],
+  'spring-data': ['plugins/spring/spring-data'],
+  'spring-icon': ['plugins/jpa/spring-icon'],
+  'spring-integration': ['plugins/spring/spring-integration'],
+  'spring-java-bean': ['plugins/spring/spring-java-bean'],
+  'spring-java-config': ['plugins/spring/spring-java-config'],
+  'spring-models-dependency-graph': [
+    'plugins/spring/spring-models-dependency-graph',
+  ],
+  'spring-profile': ['plugins/spring/spring-profile'],
+  'spring-property': ['plugins/spring/spring-property'],
+  'spring-repository-run-mongo': ['plugins/spring/spring-repository-run-mongo'],
+  'spring-security': ['plugins/spring/spring-security'],
+  'spring-session-factory': ['plugins/spring/spring-session-factory'],
+  'spring-web': ['plugins/spring/spring-web'],
+  'spring-web-flow': ['plugins/spring/spring-web-flow'],
+  'spring-web-flow-file': ['plugins/spring/spring-web-flow-file'],
+  'spring-web-services': ['plugins/spring/spring-web-services'],
+  sql: ['database/expui/sql', 'file-types/sql', 'plugins/jpa/sql'],
+  'sql-file': ['plugins/jpa/sql-file'],
   'sql-folder': ['database/expui/sql-folder'],
   'sql-group-by-type': [
     'database/expui/sql-group-by-type',
@@ -3713,27 +5854,37 @@ export const slugIndex: Record<string, IconPathname[]> = {
   star: ['nodes/star'],
   'star-empty': ['nodes/star-empty'],
   'start-memory-profile': ['general/actions/start-memory-profile'],
+  'start-timer': ['plugins/tasks/start-timer'],
   stash: ['vcs/stash'],
+  'stateful-set': ['plugins/kubernetes/stateful-set'],
   static: ['nodes/static'],
   'static-mark': ['general/modifiers/static-mark'],
   'statistics-event-log': ['general/tool-windows/statistics-event-log'],
   'statistics-panel': ['general/inline/statistics-panel'],
   'status-disabled': ['general/setting-sync/status-disabled'],
   'status-enabled': ['general/setting-sync/status-enabled'],
+  'step-definition-file': ['plugins/ruby/step-definition-file'],
   'step-into': ['run/step-into'],
   'step-out': ['run/step-out'],
   'step-out-code-block': ['run/step-out-code-block'],
   'step-over': ['run/step-over'],
+  'stm32-cube-mx': ['plugins/cidr/stm32-cube-mx'],
   stop: ['general/progress-bar/stop', 'run/stop'],
   'stop-hovered': ['general/progress-bar/stop-hovered'],
+  'stop-timer': ['plugins/tasks/stop-timer'],
+  'storage-class': ['plugins/kubernetes/storage-class'],
   stream: ['database/expui/stream', 'database/stream'],
   'stream-key': ['database/expui/stream-key', 'database/stream-key'],
   'strike-through': ['general/editor/strike-through'],
   string: ['database/expui/string', 'database/string'],
   'string-key': ['database/expui/string-key', 'database/string-key'],
   structure: ['general/tool-windows/structure'],
+  'structure-list-view': ['plugins/ruby/structure-list-view'],
+  stylus: ['plugins/stylus/stylus'],
   'submit-db': ['database/expui/submit-db', 'database/submit-db'],
+  subscription: ['plugins/graphql/subscription'],
   subtypes: ['general/general/subtypes'],
+  succeded: ['plugins/kubernetes/succeded'],
   success: ['general/status/success'],
   'success-dialog': ['general/status/success-dialog'],
   'success-login': ['general/status/success-login'],
@@ -3748,19 +5899,33 @@ export const slugIndex: Record<string, IconPathname[]> = {
   supertypes: ['general/general/supertypes'],
   svelte: ['file-types/svelte'],
   'swap-panels': ['general/actions/swap-panels'],
+  'swift-lang': ['plugins/cidr/swift-lang'],
+  'swift-package': ['plugins/cidr/swift-package'],
+  'swift-package-dependency': ['plugins/cidr/swift-package-dependency'],
+  'swift-package-manifest': ['plugins/cidr/swift-package-manifest'],
+  'swift-package-run': ['plugins/cidr/swift-package-run'],
+  'swift-package-test': ['plugins/cidr/swift-package-test'],
   sybase: ['database/sybase'],
+  symbol: ['plugins/ruby/symbol'],
   symlink: ['general/modifiers/symlink'],
   'synchronize-scrolling': ['general/actions/synchronize-scrolling'],
   synonym: ['database/expui/synonym', 'database/synonym'],
+  'system-dbfield': ['plugins/ruby/system-dbfield'],
   'system-theme': ['general/new-ui/system-theme'],
   'system-theme-selected': ['general/new-ui/system-theme-selected'],
   't-sq-lt': ['database/t-sq-lt'],
   'tab-alert': ['general/modifiers/tab-alert'],
-  table: ['database/expui/table', 'database/table', 'general/editor/table'],
+  table: [
+    'database/expui/table',
+    'database/table',
+    'general/editor/table',
+    'plugins/jpa/table',
+  ],
   'table-heatmap': ['database/table-heatmap'],
   'table-mapping': ['database/expui/table-mapping', 'database/table-mapping'],
   tablespace: ['database/expui/tablespace', 'database/tablespace'],
   tarantool: ['database/tarantool'],
+  target: ['plugins/cidr/target'],
   task: ['build/task', 'general/tool-windows/task'],
   'task-group': ['build/task-group'],
   'team-city': ['file-types/team-city'],
@@ -3785,6 +5950,7 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'test-skipped': ['run/test-skipped'],
   'test-source-folder': ['nodes/test-source-folder'],
   'test-terminated': ['run/test-terminated'],
+  'test-unit-file': ['plugins/ruby/test-unit-file'],
   'test-unknown': ['run/test-unknown'],
   text: ['file-types/text'],
   'text-area': ['nodes/text-area'],
@@ -3800,10 +5966,13 @@ export const slugIndex: Record<string, IconPathname[]> = {
   threads: ['debugger/threads'],
   tibero: ['database/tibero'],
   tidb: ['database/tidb'],
+  'to-arrow': ['plugins/aop/to-arrow'],
+  'to-string': ['plugins/jpa/to-string'],
   todo: ['general/tool-windows/todo'],
   'toggle-offline-mode': ['build/toggle-offline-mode'],
   'toggle-skip-tests-mode': ['build/toggle-skip-tests-mode'],
   'toggle-visibility': ['general/actions/toggle-visibility'],
+  toml: ['plugins/toml/toml'],
   'tool-window-bazel': ['general/tool-windows/tool-window-bazel'],
   'tool-window-bean-validator': [
     'general/tool-windows/tool-window-bean-validator',
@@ -3863,17 +6032,34 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'tool-window-you-track': ['general/tool-windows/tool-window-you-track'],
   'toolwindow-flink': ['general/tool-windows/toolwindow-flink'],
   'trace-stream': ['run/trace-stream'],
+  trait: ['plugins/java-ee/trait', 'plugins/ruby/trait'],
+  'trait-companion': ['plugins/scala/trait-companion'],
+  'trait-companion-swapped': ['plugins/scala/trait-companion-swapped'],
+  'trait-object-scala': ['plugins/scala/trait-object-scala'],
+  'trait-scala': ['plugins/scala/trait-scala'],
+  'transaction-manager': ['plugins/spring/transaction-manager'],
   transfer: ['general/tool-windows/transfer'],
   'transfer-tool-window': ['general/tool-windows/transfer-tool-window'],
   trigger: ['database/expui/trigger', 'database/trigger'],
   trino: ['database/trino'],
   'ts-config': ['file-types/ts-config'],
   'ts-doc': ['file-types/ts-doc'],
-  type: ['nodes/type'],
+  type: ['nodes/type', 'plugins/graphql/type'],
+  'type-alias': ['plugins/kotlin/type-alias', 'plugins/scala/type-alias'],
+  'type-extension': ['plugins/cidr/type-extension'],
+  typed: ['plugins/scala/typed'],
   'udf-script': ['database/expui/udf-script', 'database/udf-script'],
   'ui-form': ['file-types/ui-form'],
+  'uncheched-all': ['plugins/package-checker/uncheched-all'],
+  'uncheched-all-tree': ['plugins/package-checker/uncheched-all-tree'],
+  'uncheched-all-tree-outline': [
+    'plugins/package-checker/uncheched-all-tree-outline',
+  ],
   undo: ['general/general/undo'],
+  'undocumented-task': ['plugins/ruby/undocumented-task'],
   unfold: ['editor-icons/unfold'],
+  unfreeze: ['plugins/cidr/unfreeze'],
+  'unfreeze-all': ['plugins/cidr/unfreeze-all'],
   unknown: ['file-types/unknown', 'general/tool-windows/unknown'],
   'unloaded-module': ['nodes/unloaded-module'],
   unlocked: ['general/general/unlocked'],
@@ -3883,22 +6069,38 @@ export const slugIndex: Record<string, IconPathname[]> = {
     'database/expui/unspecified-cluster',
     'database/unspecified-cluster',
   ],
+  untyped: ['plugins/scala/untyped'],
   up: ['general/general/up'],
   'up-folder': ['nodes/up-folder'],
-  update: ['vcs/update'],
+  update: ['plugins/jpa/update', 'vcs/update'],
+  'update-database': ['plugins/jpa/update-database'],
   'update-folders': ['build/update-folders'],
+  'update-running-application': ['plugins/java-ee/update-running-application'],
   upload: ['general/general/upload'],
-  user: ['database/expui/user', 'database/user'],
+  user: ['database/expui/user', 'database/user', 'plugins/kubernetes/user'],
   'user-driver': ['database/expui/user-driver', 'database/user-driver'],
   'user-group': ['database/expui/user-group', 'database/user-group'],
   'user-mapping': ['database/expui/user-mapping', 'database/user-mapping'],
   'ut-plsql': ['database/ut-plsql'],
-  value: ['debugger/value'],
-  variable: ['nodes/variable'],
-  variables: ['general/inline/variables'],
+  validator: ['plugins/java-ee/validator'],
+  value: ['debugger/value', 'plugins/kotlin/value', 'plugins/scala/value'],
+  'value-muted': ['plugins/cidr/value-muted'],
+  'value-values': ['plugins/kubernetes/value-values'],
+  variable: [
+    'nodes/variable',
+    'plugins/graphql/variable',
+    'plugins/java-ee/variable',
+    'plugins/ruby/variable',
+    'plugins/scala/variable',
+  ],
+  variables: ['general/inline/variables', 'plugins/cidr/variables'],
   'variables-tab': ['debugger/variables-tab'],
+  vcpkg: ['plugins/cidr/vcpkg'],
   vcs: ['general/general/vcs', 'general/tool-windows/vcs', 'vcs/vcs'],
+  velocity: ['plugins/velocity/velocity'],
+  'velocity-plugin-logo': ['plugins/velocity/velocity-plugin-logo'],
   vertica: ['database/vertica'],
+  vhdl: ['plugins/cidr/vhdl'],
   'view-breakpoints': ['run/view-breakpoints'],
   'view-parameters': [
     'database/expui/view-parameters',
@@ -3917,29 +6119,44 @@ export const slugIndex: Record<string, IconPathname[]> = {
   'virtual-view': ['database/expui/virtual-view', 'database/virtual-view'],
   'vite-js': ['file-types/vite-js'],
   vitest: ['file-types/vitest'],
+  volume: ['plugins/kubernetes/volume'],
   'vue-js': ['file-types/vue-js'],
   warehouse: ['database/warehouse'],
   warning: ['general/status/warning'],
   'warning-dialog': ['general/status/warning-dialog'],
   'warning-introduction': ['nodes/warning-introduction'],
   'warning-outline': ['general/status/warning-outline'],
+  'warning-point': ['plugins/dart/warning-point'],
   watch: ['run/watch'],
   'watch-last-return-value': ['debugger/watch-last-return-value'],
   web: ['general/tool-windows/web'],
   'web-app': ['run-configurations/web-app'],
+  'web-artifact': ['plugins/java-ee/web-artifact'],
   'web-inspector': ['general/tool-windows/web-inspector'],
+  'web-module': ['plugins/java-ee/web-module'],
+  'web-module-group': ['plugins/java-ee/web-module-group'],
+  'web-overlay': ['plugins/spring/web-overlay'],
   'web-resources': ['nodes/web-resources'],
+  'web-root-file': ['plugins/ruby/web-root-file'],
   'web-server': ['general/tool-windows/web-server'],
+  'web-service': ['plugins/java-ee/web-service'],
+  'web-service-client': ['plugins/java-ee/web-service-client'],
+  'web-xml': ['plugins/java-ee/web-xml'],
+  werf: ['plugins/kubernetes/werf'],
+  west: ['plugins/velocity/west'],
   'west-tool-window': ['general/tool-windows/west-tool-window'],
   'windows-menu': ['general/general/windows-menu'],
+  workloads: ['plugins/kubernetes/workloads'],
   workspace: ['file-types/workspace'],
   'write-access': ['editor-icons/write-access'],
   'write-review': ['general/actions/write-review'],
+  writer: ['plugins/ruby/writer'],
   writerside: ['general/tool-windows/writerside'],
   'writerside-preview': ['general/tool-windows/writerside-preview'],
   wsdl: ['file-types/wsdl'],
   xhtml: ['file-types/xhtml'],
   xml: ['file-types/xml'],
+  'xml-service': ['plugins/java-ee/xml-service'],
   xpath: ['file-types/xpath'],
   xsd: ['file-types/xsd'],
   xsl: ['file-types/xsl'],
@@ -3947,6 +6164,8 @@ export const slugIndex: Record<string, IconPathname[]> = {
   yarn: ['file-types/yarn'],
   'yarn-lock': ['file-types/yarn-lock'],
   yugabyte: ['database/yugabyte'],
+  zeppelin: ['plugins/bdt/zeppelin'],
+  zeus: ['plugins/ruby/zeus'],
   'zoom-in': ['editor-icons/zoom-in'],
   'zoom-out': ['editor-icons/zoom-out'],
-};
+} as unknown as Record<string, IconPathname[]>;

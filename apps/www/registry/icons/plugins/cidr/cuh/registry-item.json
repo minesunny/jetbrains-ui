@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-cidr-cuh",
+  "type": "registry:ui",
+  "title": "Cuh",
+  "description": "Cuh icon from Plugins Cidr category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/cidr/cuh/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/cidr/cuh/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cuh",
+      "icon",
+      "plugins",
+      "cidr",
+      "jetbrains"
+    ]
+  }
+}

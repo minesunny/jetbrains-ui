@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-package-checker-safe-all-tree",
+  "type": "registry:ui",
+  "title": "Safe All Tree",
+  "description": "Safe All Tree icon from Plugins Package Checker category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/package-checker/safe-all-tree/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/package-checker/safe-all-tree/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "safe-all-tree",
+      "icon",
+      "plugins",
+      "package-checker",
+      "jetbrains"
+    ]
+  }
+}

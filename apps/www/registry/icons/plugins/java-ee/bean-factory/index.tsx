@@ -1,0 +1,43 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
+import { cn } from '@/lib/utils';
+
+export const BeanFactory = ({
+  size = 16,
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      d="M15.121 11.296a.5.5 0 0 1 .379.485V15a.5.5 0 0 1-.5.5H9a.5.5 0 0 1-.5-.5v-2.36l2 .5v-1.5l2 .5v-1.5z"
+      className="fill-[#EBECF0] dark:fill-[#43454A] stroke-[#6C707E] dark:stroke-[#CED0D6]"
+    />
+    <path
+      d="M14.96 9.71c.255-2.127-.727-4.355-2.539-6.167C9.556.678 5.603-.034 2.77 2.8s-2.02 6.936.72 9.675C4.517 13.504 5.731 14.272 7 14.677V12.64a1.5 1.5 0 0 1 1.864-1.455l.192.048q.009-.035.021-.068l.002-.006.004-.01a1.5 1.5 0 0 1 1.78-.964l.193.048.021-.068.002-.006.004-.01a1.5 1.5 0 0 1 1.78-.964z"
+      className="fill-[#FFF4EB] dark:fill-[#45322B]"
+    />
+    <path
+      d="M14.96 9.71c.255-2.127-.727-4.355-2.539-6.167C9.556.678 5.603-.034 2.77 2.8s-2.02 6.936.72 9.675C4.517 13.504 5.731 14.272 7 14.677v-1.06c-.99-.372-1.956-1.004-2.802-1.85-1.236-1.235-2-2.743-2.163-4.205-.144-1.29.174-2.574 1.104-3.684l6.52 6.52a1.49 1.49 0 0 1 1.204-.213L3.846 3.169c1.115-.943 2.372-1.273 3.63-1.138 1.429.153 2.93.915 4.237 2.22 1.312 1.313 2.09 2.807 2.253 4.228q.057.494.013.985z"
+      className="fill-[#E66D17] dark:fill-[#C77D55]"
+    />
+  </svg>
+);
+
+export default BeanFactory;

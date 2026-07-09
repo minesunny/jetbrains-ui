@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-java-ee-abstract-field",
+  "type": "registry:ui",
+  "title": "Abstract Field",
+  "description": "Abstract Field icon from Plugins Java Ee category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/abstract-field/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/abstract-field/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "abstract-field",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}

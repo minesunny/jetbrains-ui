@@ -1,0 +1,47 @@
+/**
+ * Copyright 2000-2024 JetBrains s.r.o. and contributors.
+ * Use of this source code is governed by the Apache 2.0 license.
+ */
+import type { ComponentProps } from 'react';
+import { cn } from '@/lib/utils';
+
+export const JavaEeListener = ({
+  size = 16,
+  className,
+  'aria-label': ariaLabel,
+  ...props
+}: Omit<ComponentProps<'svg'>, 'size'> & {
+  size?: 12 | 14 | 16 | 20 | 24;
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={cn('inline-block shrink-0', className)}
+    role={ariaLabel ? 'img' : 'presentation'}
+    aria-label={ariaLabel}
+    aria-hidden={!ariaLabel}
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M2.083 6a6.002 6.002 0 0 1 11.834 0H13a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V7A7 7 0 1 0 1 7v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zM2 7v2h1V7zm12 0h-1v2h1z"
+      className="fill-[#6C707E] dark:fill-[#CED0D6]"
+    />
+    <path
+      d="M4.23 10.578c.47-.367.771-.937.771-1.578V7a2 2 0 0 0-1.384-1.903q.263-.425.648-.811c2.024-2.025 4.848-1.516 6.894.53q.31.31.572.64C11.285 5.821 11 6.377 11 7v2a2 2 0 0 0 1.367 1.898q-.27.427-.666.824c-2.07 2.07-4.966 1.431-6.923-.525a7 7 0 0 1-.548-.62"
+      className="fill-[#FFF4EB] dark:fill-[#45322B]"
+    />
+    <path
+      d="M11.73 5.455a8 8 0 0 0-.57-.638C9.112 2.77 6.288 2.26 4.264 4.286a4.5 4.5 0 0 0-.648.81 2 2 0 0 1 .844.537q.087-.14.19-.276l5.98 5.98a3.08 3.08 0 0 1-2.315.639c-.964-.114-1.98-.636-2.83-1.487a5.7 5.7 0 0 1-.628-.744c-.133.33-.35.617-.627.833q.252.323.548.619c1.957 1.956 4.854 2.594 6.923.525q.395-.397.666-.824a2 2 0 0 1-.84-.545 4 4 0 0 1-.192.275L5.36 4.652a3.05 3.05 0 0 1 2.237-.633c.943.1 1.958.608 2.855 1.505q.383.383.672.785c.123-.336.335-.63.607-.854"
+      className="fill-[#E66D17] dark:fill-[#C77D55]"
+    />
+    <path d="M13 7H14V9H13z" className="fill-[#EBECF0] dark:fill-[#43454A]" />
+    <path d="M2 7H3V9H2z" className="fill-[#EBECF0] dark:fill-[#43454A]" />
+  </svg>
+);
+
+export default JavaEeListener;

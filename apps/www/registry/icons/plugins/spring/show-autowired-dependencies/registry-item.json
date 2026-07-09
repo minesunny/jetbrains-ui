@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-spring-show-autowired-dependencies",
+  "type": "registry:ui",
+  "title": "Show Autowired Dependencies",
+  "description": "Show Autowired Dependencies icon from Plugins Spring category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/spring/show-autowired-dependencies/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/spring/show-autowired-dependencies/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "show-autowired-dependencies",
+      "icon",
+      "plugins",
+      "spring",
+      "jetbrains"
+    ]
+  }
+}

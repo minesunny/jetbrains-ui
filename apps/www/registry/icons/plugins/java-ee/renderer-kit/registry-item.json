@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-plugins-java-ee-renderer-kit",
+  "type": "registry:ui",
+  "title": "Renderer Kit",
+  "description": "Renderer Kit icon from Plugins Java Ee category.",
+  "files": [
+    {
+      "path": "registry/icons/plugins/java-ee/renderer-kit/index.tsx",
+      "type": "registry:ui",
+      "target": "components/jetbrains-ui/icons/plugins/java-ee/renderer-kit/index.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "renderer-kit",
+      "icon",
+      "plugins",
+      "java-ee",
+      "jetbrains"
+    ]
+  }
+}
